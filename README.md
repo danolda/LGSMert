@@ -9,6 +9,7 @@ Tarayıcıda çalışan, kurulum gerektirmeyen bir LGS hazırlık sitesi.
 - Her sorunun ayrıntılı çözümü
 - Seçtiğin şıklar tarayıcıda (localStorage) saklanır; **Temizle** düğmesi o konudaki işaretlemeleri siler
 - Açık/koyu tema, mobil uyumlu
+- Toplam **55 konu, 1650 soru** (360'ı çıkmış LGS sorusu)
 
 ## Çalıştırma
 
@@ -34,3 +35,13 @@ img/past/*.webp          # çıkmış soruların görüntüleri (MEB kitapçıkl
 ```
 
 Çıkmış sorular MEB/ÖDSGM tarafından kamuya açık olarak yayımlanan soru kitapçıklarından alınmıştır.
+
+## Geliştirme araçları
+
+```bash
+node tools/validate.js            # her konuda 30 soru, cevap anahtarı ↔ çözüm uyumu, tekrar eden şık kontrolü
+node tools/show.js data/topics/ing-phone.js 3 7   # soruları düz metin olarak göster
+node tools/rebalance.js data/topics/<konu>.js   # doğru cevap harflerini şıklara dengeli dağıt
+```
+
+Yeni çıkmış sorular eklendiğinde `data/past/<ders>.js` dosyasına eşleşme/çözüm yazılır ve konudaki özgün soru sayısı azaltılarak toplam 30'da tutulur.
