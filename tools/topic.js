@@ -3,7 +3,7 @@
 //   node tools/topic.js assemble <id>                 work/<id>/summary.html + work/<id>/part*.js -> data/topics/<id>.js
 //   node tools/topic.js check <id> [dosya]            tüm denetimler (dosya verilirse yalnız o parça)
 //   node tools/topic.js show <id|dosya> [--blind] [n...]   soruları düz metin yazdır (--blind: cevap/çözüm gizli)
-//   node tools/topic.js render <id|dosya> <klasör> [--blind] [--summary] [--from n --to m]  PNG çıktısı (site CSS'iyle)
+//   node tools/topic.js render <id|parça.js|özet.html> <klasör> [--blind] [--summary] [--from n --to m]  PNG çıktısı (site CSS'iyle)
 const fs = require('fs'); const path = require('path');
 const root = path.join(__dirname, '..');
 const { required, target } = require('./targets');
@@ -125,15 +125,15 @@ if (cmd === 'info') {
 } else if (cmd === 'render') {
   const out = rest[0]; const blind = rest.includes('--blind'); const withSum = rest.includes('--summary');
   const fi = rest.indexOf('--from'), ti = rest.indexOf('--to');
-  const isPart = /\.js$/.test(arg);
-  const T = isPart ? { summary: '', qs: loadPart(arg) } : loadTopic(arg);
+  const isPart = /\.js$/.test(arg), isHtml = /\.html$/.test(arg);
+  const T = isHtml ? { summary: fs.readFileSync(arg, 'utf8'), qs: [] } : isPart ? { summary: '', qs: loadPart(arg) } : loadTopic(arg);
   const from = fi >= 0 ? +rest[fi + 1] : 1, to = ti >= 0 ? +rest[ti + 1] : T.qs.length;
   fs.mkdirSync(out, { recursive: true });
   const fmt = h => String(h).replace(/\{\{([^{}|]+)\|([^{}]+)\}\}/g, '<span class="fr"><span>$1</span><span>$2</span></span>');
   const css = fs.readFileSync(path.join(root, 'assets/css/style.css'), 'utf8');
   const page = (inner, w) => '<!doctype html><html><head><meta charset="utf-8"><style>' + css + '\nbody{background:#fff;color:#1d2433;width:' + w + 'px;padding:10px}.q{margin:10px 0;border:1px solid #ccc;border-radius:12px;padding:12px}.ch{display:grid;gap:6px}.opt{border:1px solid #ccc;border-radius:10px;padding:6px 10px}.ans{background:#dcfce7}.sol{background:#f8fafc;border-left:3px solid #64748b;padding:6px 10px;margin-top:8px;font-size:14px}</style></head><body>' + inner + '</body></html>';
   const jobs = [];
-  if (withSum && T.summary) jobs.push(['ozet.png', '<div class="sum">' + fmt(T.summary) + '</div>', 900]);
+  if ((withSum || isHtml) && T.summary) jobs.push(['ozet.png', '<div class="sum">' + fmt(T.summary) + '</div>', 900]);
   for (let i = from - 1; i < to; i += 4) {
     let h = '';
     for (let j = i; j < Math.min(i + 4, to); j++) {
