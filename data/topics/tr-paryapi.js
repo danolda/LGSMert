@@ -1,0 +1,96 @@
+LGS.add({
+id: "tr-paryapi",
+summary: `
+<h3>1. Paragrafın Bölümleri</h3>
+<div class="fig"><svg viewBox="0 0 560 150" width="540" role="img" aria-label="Paragrafın bölümleri">
+<defs><marker id="py1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<g font-size="12" text-anchor="middle">
+<rect x="10" y="20" width="160" height="70" rx="10" fill="#dbeafe" stroke="#2563eb"/><text x="90" y="45" font-weight="bold">Giriş cümlesi</text><text x="90" y="63">Konuyu tanıtır;</text><text x="90" y="78">bağlayıcı ifadeyle başlamaz</text>
+<rect x="200" y="20" width="160" height="70" rx="10" fill="#dcfce7" stroke="#16a34a"/><text x="280" y="45" font-weight="bold">Gelişme</text><text x="280" y="63">Örnekler, açıklamalar,</text><text x="280" y="78">ayrıntılar</text>
+<rect x="390" y="20" width="160" height="70" rx="10" fill="#fef3c7" stroke="#d97706"/><text x="470" y="45" font-weight="bold">Sonuç cümlesi</text><text x="470" y="63">Toparlar; “kısacası, bu</text><text x="470" y="78">yüzden, sonuç olarak”</text>
+<line x1="170" y1="55" x2="198" y2="55" stroke="#475569" stroke-width="2" marker-end="url(#py1)"/><line x1="360" y1="55" x2="388" y2="55" stroke="#475569" stroke-width="2" marker-end="url(#py1)"/>
+<text x="280" y="125" fill="#475569">Giriş cümlesi “bu, bunun, ayrıca, çünkü, ama, de” gibi önceki bir cümleye bağlanan sözlerle başlamaz.</text>
+</g></svg></div>
+<ul>
+<li><b>Akışı bozan cümle:</b> Paragrafın konusundan ya da düşünce akışından sapan cümledir. Konusu benzese bile farklı bir yöne giden cümleye dikkat et.</li>
+<li><b>Paragrafı ikiye bölme:</b> Konunun ya da bakış açısının değiştiği yer bulunur; ikinci paragraf yeni bir giriş cümlesi gibi başlar.</li>
+<li><b>Cümle sıralama:</b> Önce giriş cümlesini bul (bağlayıcı içermeyen, genel cümle); sonra “bu, bunun için, ayrıca, ancak” gibi bağlantı sözlerini takip et.</li>
+</ul>
+
+<h3>2. Anlatım Biçimleri</h3>
+<table class="rt"><tr><th>Anlatım biçimi</th><th>Özellik</th><th>İpucu</th></tr>
+<tr><td><b>Açıklayıcı</b></td><td>Bilgi verir, öğretir</td><td>Nesnel bilgiler, tanımlar</td></tr>
+<tr><td><b>Öyküleyici</b></td><td>Bir olayı zaman sırasıyla anlatır</td><td>Olay, kişi, zaman, yer; eylem bildiren fiiller</td></tr>
+<tr><td><b>Betimleyici</b></td><td>Bir varlığı sözcüklerle resmeder</td><td>Renk, ses, koku, tat, dokunma; sıfatlar</td></tr>
+<tr><td><b>Tartışmacı</b></td><td>Bir görüşü savunur, karşıt görüşü çürütür</td><td>“Bazıları … diyor, oysa …”, okura sorular</td></tr></table>
+
+<h3>3. Düşünceyi Geliştirme Yolları</h3>
+<table class="rt"><tr><th>Yol</th><th>Örnek ifade</th></tr>
+<tr><td><b>Tanımlama</b></td><td>“Masal, olağanüstü olayların anlatıldığı kısa yazılardır.”</td></tr>
+<tr><td><b>Örnekleme</b></td><td>“Örneğin…”, “mesela…”, somut durumlar</td></tr>
+<tr><td><b>Karşılaştırma</b></td><td>“…den daha”, “oysa”, “buna karşın”; iki şeyin benzer/farklı yönleri</td></tr>
+<tr><td><b>Tanık gösterme</b></td><td>Ünlü bir kişinin sözüne başvurma: “Yunus Emre’nin dediği gibi…”</td></tr>
+<tr><td><b>Sayısal verilerden yararlanma</b></td><td>Yüzde, istatistik, rakamlar</td></tr>
+<tr><td><b>Benzetme</b></td><td>“…gibi”, “sanki”; bir şeyi başka bir şeye benzetme</td></tr></table>
+<div class="note">Bir paragrafta birden fazla düşünceyi geliştirme yolu kullanılabilir. “Kullanılmamıştır” sorularında her yolu tek tek metinde ara.</div>
+`,
+qs: [
+{ q: `<p>(I) Kâğıt, insanlık tarihinin en önemli buluşlarından biridir. (II) İlk kâğıdın Çin’de, ağaç kabukları ve bez parçalarından yapıldığı bilinmektedir. (III) Kâğıt yapım tekniği, yüzyıllar içinde İpek Yolu üzerinden İslam dünyasına ve oradan Avrupa’ya ulaşmıştır. (IV) Çin, günümüzde dünyanın en kalabalık ülkelerinden biridir. (V) Kâğıdın yaygınlaşmasıyla bilgi daha kolay kaydedilmiş ve kuşaktan kuşağa aktarılmıştır.</p><p>Bu paragrafta numaralanmış cümlelerden hangisi düşüncenin akışını <b>bozmaktadır</b>?</p>`,
+  c: [`II.`, `III.`, `IV.`, `V.`], a: "C",
+  s: `<p>Paragrafın konusu kâğıdın icadı ve yayılmasıdır. II. cümle kâğıdın Çin’de nasıl yapıldığını, III. cümle yayılışını, V. cümle önemini anlatır.</p><p>IV. cümle ise Çin’in nüfusundan söz eder; “Çin” sözcüğü ortak olsa da kâğıtla ilgisi yoktur ve akışı bozar. Cevap <b>C</b>.</p>` },
+{ q: `<p>(I) Düzenli yürüyüş yapmak, sağlıklı yaşamın en kolay yollarından biridir. (II) Günde yarım saatlik tempolu bir yürüyüş, kalp ve damar sağlığını korur. (III) Yürüyüş aynı zamanda stresi azaltır ve uyku kalitesini artırır. (IV) Koşu ayakkabıları, yürüyüş ayakkabılarına göre daha pahalıdır. (V) Üstelik yürüyüş için özel bir ekipmana ya da spor salonuna ihtiyaç yoktur.</p><p>Bu paragrafta numaralanmış cümlelerden hangisi düşüncenin akışını <b>bozmaktadır</b>?</p>`,
+  c: [`II.`, `III.`, `IV.`, `V.`], a: "C",
+  s: `<p>Paragraf, yürüyüşün sağlığa yararlarını ve kolaylığını anlatıyor. V. cümle, yürüyüşün özel ekipman gerektirmediğini söyleyerek “kolay” olduğu düşüncesini destekler.</p><p>IV. cümle ise ayakkabı fiyatlarını karşılaştırır; paragrafın düşünce akışından sapar. Cevap <b>C</b>.</p>` },
+{ q: `<p>(I) Göç eden kuşlar, binlerce kilometrelik yolculuklarında yönlerini şaşırmadan hedeflerine ulaşır. (II) Bilim insanları, kuşların bu yolculukta Güneş’in ve yıldızların konumundan yararlandığını belirlemiştir. (III) Bazı kuş türlerinin ise Dünya’nın manyetik alanını algılayabildiği düşünülmektedir. (IV) Kuşların göçü sırasında karşılaştığı tehlikeler de oldukça fazladır. (V) Yüksek binalar, elektrik hatları ve ışık kirliliği her yıl milyonlarca kuşun ölümüne yol açmaktadır.</p><p>Bu paragraf iki paragrafa ayrılmak istenirse ikinci paragraf hangi cümleyle başlar?</p>`,
+  c: [`II.`, `III.`, `IV.`, `V.`], a: "C",
+  s: `<p>I–III. cümleler, göçmen kuşların <b>yön bulma</b> yollarını anlatır. IV. cümleden itibaren konu, göç sırasında karşılaşılan <b>tehlikelere</b> geçer; V. cümle de bu tehlikeleri örnekler.</p><p>Konunun değiştiği IV. cümle, ikinci paragrafın giriş cümlesidir. Cevap <b>C</b>.</p>` },
+{ q: `<p>(I) Bu yüzden bir gün eski kitapçıya gidip yazarın bütün kitaplarını satın aldım.<br>(II) Ortaokuldayken öğretmenim bana küçük bir öykü kitabı hediye etmişti.<br>(III) Kitabı bir gecede bitirdim ve yazarın sade anlatımına hayran kaldım.<br>(IV) O günden beri her yıl bu kitapları yeniden okurum.</p><p>Numaralanmış cümlelerle anlamlı bir paragraf oluşturulmak istenirse sıralama nasıl olmalıdır?</p>`,
+  c: [`II – III – I – IV`, `II – I – III – IV`, `III – II – IV – I`, `I – II – III – IV`], a: "A",
+  s: `<p>Giriş cümlesi, bağlayıcı içermeyen ve olayı başlatan II’dir (kitabın hediye edilmesi). Ardından kitabın okunup beğenilmesi (III), bu beğeninin sonucu olan kitapları satın alma (I – “Bu yüzden”) ve günümüze uzanan alışkanlık (IV – “O günden beri”) gelir.</p><p>Sıralama: II – III – I – IV. Cevap <b>A</b>.</p>` },
+{ q: `<p>(I) Ancak son yıllarda yapılan araştırmalar, ahtapotların oldukça zeki canlılar olduğunu göstermiştir.<br>(II) Uzun süre deniz canlılarının basit davranışlar sergilediği düşünülmüştür.<br>(III) Örneğin ahtapotlar kavanoz kapaklarını açabilmekte, labirentlerden çıkış yolunu bulabilmektedir.<br>(IV) Bu bulgular, zekânın yalnızca karada yaşayan canlılara özgü olmadığını ortaya koymuştur.</p><p>Numaralanmış cümlelerle anlamlı bir paragraf oluşturulursa sıralama nasıl olmalıdır?</p>`,
+  c: [`I – II – III – IV`, `II – I – III – IV`, `II – III – I – IV`, `III – I – II – IV`], a: "B",
+  s: `<p>Paragraf, eski düşünceyi bildiren II ile başlar. “Ancak” ile başlayan I, bu düşünceye karşı yeni bulguyu sunar. “Örneğin” ile başlayan III, ahtapotların zekâsını örnekler. “Bu bulgular” diye başlayan IV ise sonucu bildirir.</p><p>Sıralama: II – I – III – IV. Cevap <b>B</b>.</p>` },
+{ q: `<p>Aşağıdakilerden hangisi bir paragrafın <b>giriş cümlesi</b> olmaya en uygundur?</p>`,
+  c: [`Çocuk edebiyatı, çocukların duygu ve düşünce dünyasını besleyen önemli bir alandır.`, `Ayrıca masallar, çocukların hayal gücünü de geliştirir.`, `Bu nedenle çocukların kitapla erken yaşta tanışması gerekir.`, `Çünkü bu kitaplar, çocukların dil gelişimini destekler.`], a: "A",
+  s: `<p>Giriş cümlesi, önceki bir cümleye bağlanmayan, konuyu genel olarak tanıtan bir cümledir. A bu özellikleri taşır.</p><p>C “Bu nedenle” ile bir sonuç bildirir; B “Ayrıca” ile ek bilgi verir; D “Çünkü” ile bir gerekçe sunar. Bu bağlayıcılar, cümlenin önceki bir cümlenin devamı olduğunu gösterir. Cevap <b>A</b>.</p>` },
+{ q: `<p>Aşağıdakilerden hangisi bir paragrafın <b>sonuç cümlesi</b> olmaya en uygundur?</p>`,
+  c: [`Kısacası, iyi bir dinleyici olmak, iyi bir konuşmacı olmanın ilk koşuludur.`, `İletişim, insanların duygu ve düşüncelerini paylaşma yoludur.`, `Örneğin, karşımızdakinin sözünü kesmek onu kırabilir.`, `Bazı insanlar konuşmayı dinlemekten daha çok sever.`], a: "A",
+  s: `<p>Sonuç cümlesi, paragrafta anlatılanları toparlar ve genellikle “kısacası, sonuç olarak, bu yüzden” gibi ifadelerle başlar. A’daki “Kısacası” ifadesi ve genel yargı bunu gösterir.</p><p>B bir tanım cümlesidir (giriş olabilir); C “Örneğin” ile gelişme bölümüne ait bir örnek sunar; D de gelişme ya da giriş cümlesi olabilir. Cevap <b>A</b>.</p>` },
+{ q: `<p>Odanın tek penceresinden süzülen ince bir ışık, tozlu ahşap masanın üzerine düşüyordu. Masada sararmış sayfalı kalın bir defter, yanında mürekkebi kurumuş bir dolma kalem duruyordu. Duvardaki eski saatin tık tıkları odanın sessizliğini bölüyor, havada nemli kâğıt ve kurumuş lavanta kokusu dolaşıyordu.</p><p>Bu paragrafta ağırlıklı olarak kullanılan anlatım biçimi aşağıdakilerden hangisidir?</p>`,
+  c: [`Öyküleyici anlatım`, `Tartışmacı anlatım`, `Açıklayıcı anlatım`, `Betimleyici anlatım`], a: "D",
+  s: `<p>Paragrafta bir oda; ışık, toz, sararmış sayfalar (görme), saatin tık tıkları (işitme), nemli kâğıt ve lavanta kokusu (koklama) gibi ayrıntılarla <b>sözcüklerle resmedilmiştir</b>. Bir olay anlatılmamakta, bir yer tasvir edilmektedir → <b>betimleme</b>.</p><p>Olay akışı yoktur (öyküleme değil), bir görüş savunulmaz (tartışma değil), bilgi verilmez (açıklama değil). Cevap <b>D</b>.</p>` },
+{ q: `<p>Sabah erkenden yola çıktık. Köye vardığımızda dedem bizi kapının önünde bekliyordu. Hemen bavulları bırakıp onunla birlikte bağa gittik. Öğleye kadar üzüm topladık, sonra ağacın gölgesinde annemin hazırladığı yemekleri yedik. Akşam olunca yorgun ama mutlu bir şekilde eve döndük.</p><p>Bu paragrafın anlatımıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: [`Bir görüş savunulmuş ve karşıt görüş eleştirilmiştir.`, `Sayısal verilerle bir düşünce desteklenmiştir.`, `Bir kavram tanımlanarak bilgi verilmiştir.`, `Bir olay, zaman sırasına uygun olarak anlatılmıştır.`], a: "D",
+  s: `<p>Paragrafta yola çıkma, köye varma, bağa gitme, üzüm toplama, yemek yeme ve eve dönme olayları sabahtan akşama doğru <b>zaman sırasıyla</b> anlatılmıştır → öyküleyici anlatım.</p><p>Paragrafta görüş savunma, tanım ya da sayısal veri yoktur. Cevap <b>D</b>.</p>` },
+{ q: `<p>Bazı insanlar, ödevlerin öğrencilerin zamanını çaldığını ve gereksiz olduğunu savunur. Peki, ödev olmasaydı öğrenciler sınıfta öğrendiklerini nasıl pekiştirecekti? Bilginin kalıcı olması için tekrar şarttır ve ödev bu tekrarın en etkili yoludur. Elbette ödevlerin miktarı abartılmamalıdır; ancak tamamen kaldırılmaları öğrenmeyi olumsuz etkiler.</p><p>Bu paragrafta ağırlıklı olarak kullanılan anlatım biçimi aşağıdakilerden hangisidir?</p>`,
+  c: [`Tartışmacı anlatım`, `Öyküleyici anlatım`, `Betimleyici anlatım`, `Açıklayıcı anlatım`], a: "A",
+  s: `<p>Yazar, ödevlerin gereksiz olduğunu savunanların görüşünü aktarıyor, okura soru yöneltiyor (“Peki…?”) ve gerekçeler sunarak kendi görüşünü (ödev gereklidir) savunuyor. Karşıt görüşü çürütmeye çalışmak <b>tartışmacı anlatımın</b> temel özelliğidir. Cevap <b>A</b>.</p>` },
+{ q: `<p>Hoşgörü, toplum hayatının temelidir. Farklı düşüncelere saygı duymayan bir toplumda huzurdan söz edilemez. Mevlânâ’nın “Gel, ne olursan ol yine gel.” sözü, yüzyıllar öncesinden bize bu gerçeği hatırlatır. Bugün de birbirimizi anlamaya çalıştığımız ölçüde daha güzel bir dünyada yaşayabiliriz.</p><p>Bu paragrafta düşünceyi geliştirme yollarından hangisine başvurulmuştur?</p>`,
+  c: [`Sayısal verilerden yararlanma`, `Tanık gösterme`, `Karşılaştırma`, `Benzetme`], a: "B",
+  s: `<p>Yazar, hoşgörünün önemine ilişkin düşüncesini güçlendirmek için ünlü bir kişinin, <b>Mevlânâ</b>’nın sözüne başvurmuştur → <b>tanık gösterme</b>.</p><p>Paragrafta rakam, iki şeyin kıyaslanması ya da “gibi” ile kurulmuş bir benzetme yoktur. Cevap <b>B</b>.</p>` },
+{ q: `<p>Türkiye’de kitap okuma alışkanlığı her geçen yıl artıyor. Yapılan bir araştırmaya göre 2010 yılında kişi başına yılda ortalama 1,5 kitap okunurken bu sayı 2020’de 3,2’ye yükselmiş. Ancak bu oran, kişi başına yılda 15–20 kitap okunan bazı ülkelerin hâlâ çok gerisinde. Okuma kültürünün gelişmesi için ailelere ve okullara büyük görev düşüyor.</p><p>Bu paragrafta düşünceyi geliştirme yollarından hangileri kullanılmıştır?</p>`,
+  c: [`Tanımlama ve benzetme`, `Sayısal verilerden yararlanma ve karşılaştırma`, `Tanık gösterme ve örnekleme`, `Benzetme ve tanık gösterme`], a: "B",
+  s: `<p>Paragrafta kişi başına okunan kitap sayısı yıllara göre rakamlarla verilmiştir → <b>sayısal veriler</b>. Ayrıca Türkiye’deki oran, 2010 ile 2020 arasında ve diğer ülkelerle kıyaslanmıştır (“…gerisinde”) → <b>karşılaştırma</b>.</p><p>Tanım, benzetme ya da ünlü birinin sözü yoktur. Cevap <b>B</b>.</p>` },
+{ q: `<p>Ağaçlar, ormanın sessiz bekçileri gibidir. Köklerini toprağın derinliklerine salarak onu sımsıkı tutar, erozyona karşı bir kalkan oluşturur. Gövdeleri, kuşlara ve böceklere bir ev sunar. Yaprakları ise bir akciğer gibi havayı temizler.</p><p>Bu paragrafta aşağıdaki düşünceyi geliştirme yollarından hangisi <b>ağırlıklı</b> olarak kullanılmıştır?</p>`,
+  c: [`Benzetme`, `Sayısal verilerden yararlanma`, `Tanık gösterme`, `Karşılaştırma`], a: "A",
+  s: `<p>Paragrafta ağaçlar “sessiz bekçilere”, kökler “kalkana”, gövdeler “eve”, yapraklar “akciğere” benzetilmiştir. “gibi” edatı da benzetmenin ipucudur → <b>benzetme</b>.</p><p>Paragrafta rakam, ünlü birinin sözü ya da iki varlığın kıyaslanması yoktur. Cevap <b>A</b>.</p>` },
+{ q: `<p>Fabl, hayvanların ya da bitkilerin insan gibi konuşup davrandığı, sonunda bir ders verilen kısa öykülerdir. Bu türün dünyadaki en ünlü temsilcileri Ezop ve La Fontaine’dir. Fabllarda genellikle iyi ile kötü, çalışkan ile tembel gibi karşıt kişilikler bir araya getirilir. Örneğin “Ağustos Böceği ile Karınca” fablında çalışkan karınca ile eğlenceye düşkün ağustos böceği karşılaştırılır.</p><p>Bu paragrafta aşağıdaki düşünceyi geliştirme yollarından hangisi <b>kullanılmamıştır</b>?</p>`,
+  c: [`Tanımlama`, `Örnekleme`, `Sayısal verilerden yararlanma`, `Karşılaştırma`], a: "C",
+  s: `<p>İlk cümlede fablın ne olduğu açıklanmıştır → tanımlama. “Örneğin” ile bir fabl örneği verilmiştir → örnekleme. Karınca ile ağustos böceği kıyaslanmıştır → karşılaştırma.</p><p>Paragrafta herhangi bir rakam ya da istatistik yoktur. Cevap <b>C</b>.</p>` },
+{ q: `<p>Okulumuzun kütüphanesi, binanın en sessiz köşesindedir. (I) Raflarda roman, hikâye ve ansiklopedi gibi binlerce kitap bulunur. (II) Teneffüslerde pek çok öğrenci burada vakit geçirir. (III) Kütüphanenin girişinde ise yeni gelen kitapların sergilendiği bir pano vardır. (IV)</p><p>“Bu kitapların bir kısmı, mezun olan öğrencilerimizin bağışlarıyla toplanmıştır.” cümlesi bu paragrafta numaralanmış yerlerden hangisine getirilmelidir?</p>`,
+  c: [`I`, `II`, `III`, `IV`], a: "B",
+  s: `<p>Eklenecek cümle “Bu kitapların” diye başladığından, kitaplardan söz eden bir cümlenin hemen ardından gelmelidir. Kitaplardan söz eden cümle “Raflarda … binlerce kitap bulunur.” cümlesidir; bu cümleden sonraki yer <b>II</b> numaralı yerdir.</p><p>Diğer yerlere konursa “Bu kitapların” ifadesi bağlamsız kalır. Cevap <b>B</b>.</p>` },
+{ q: `<p>Kapıyı açtığımda ilk gördüğüm şey, masanın üzerindeki kocaman pastaydı. Arkadaşlarım bir anda saklandıkları yerlerden çıkıp “Sürpriz!” diye bağırdılar. O an ne diyeceğimi bilemedim; gözlerim doldu. Doğum günümü hatırladıklarını hiç tahmin etmemiştim.</p><p>Bu paragrafla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: [`Olay, olayın dışındaki bir gözlemci tarafından anlatılmıştır.`, `Olay, olayı bizzat yaşayan kahramanın ağzından anlatılmıştır.`, `Paragrafta bir görüş savunulmuştur.`, `Paragrafta bir kavram tanımlanmıştır.`], a: "B",
+  s: `<p>Paragrafta “açtığımda, gördüğüm, bilemedim, gözlerim” gibi 1. tekil kişi ifadeleri kullanılmıştır. Olay, onu <b>bizzat yaşayan kahramanın</b> ağzından anlatılmaktadır (kahraman anlatıcı).</p><p>Dışarıdan bir gözlemci yoktur (A ✗); görüş savunma ve tanım yoktur (C, D ✗). Cevap <b>B</b>.</p>` },
+{ q: `<p>(I) Mozaik, küçük taş, cam ya da seramik parçalarının bir araya getirilmesiyle yapılan bir süsleme sanatıdır. (II) Türkiye, dünyanın en önemli mozaik eserlerine ev sahipliği yapan ülkelerden biridir. (III) Gaziantep’teki Zeugma Mozaik Müzesi, sergilediği eserlerle dünyanın en büyük mozaik müzelerinden biri kabul edilir. (IV) Müzenin en ünlü eseri, hüzünlü bakışlarıyla bilinen “Çingene Kızı” mozaiğidir. (V) Gaziantep, aynı zamanda baklavası ve kebaplarıyla ünlü bir şehirdir.</p><p>Bu paragrafta numaralanmış cümlelerden hangisi düşüncenin akışını <b>bozmaktadır</b>?</p>`,
+  c: [`II.`, `III.`, `IV.`, `V.`], a: "D",
+  s: `<p>Paragraf mozaik sanatını ve Türkiye’deki önemli mozaik eserlerini anlatıyor. III. ve IV. cümleler Zeugma Müzesi’ni ve en ünlü eserini tanıtıyor.</p><p>V. cümle ise Gaziantep’in yemeklerinden söz ederek paragrafın konusundan sapar. Cevap <b>D</b>.</p>` },
+{ q: `<p>Sonbahar geldiğinde bahçemizdeki ceviz ağacının yaprakları sararır, rüzgârla birlikte hışırdayarak yere dökülür. Yere düşen yapraklar, ayaklarımızın altında çıtır çıtır sesler çıkarır. Havada ıslak toprak kokusu vardır. Annemin fırından yeni çıkardığı balkabağı tatlısının tarçınlı kokusu ise bütün evi sarar.</p><p>Bu paragrafta aşağıdaki duyulardan hangisine ait bir ayrıntıya <b>yer verilmemiştir</b>?</p>`,
+  c: [`Görme`, `İşitme`, `Koklama`, `Tatma`], a: "D",
+  s: `<p>Görme: “yapraklar sararır”. İşitme: “hışırdayarak”, “çıtır çıtır sesler”. Koklama: “ıslak toprak kokusu”, “tarçınlı kokusu”.</p><p>Tatlının kokusundan söz edilmiş ama <b>tadı</b> anlatılmamıştır; tatma duyusuna ait ayrıntı yoktur. Cevap <b>D</b>.</p>` },
+{ q: `<p>(I) Mantarlar, uzun süre bitki olarak kabul edilmiştir. (II) Ancak mantarlar bitkiler gibi fotosentez yapamaz, besinlerini çevrelerinden hazır olarak alır. (III) Bu yüzden bilim insanları mantarları ayrı bir canlı grubu olarak sınıflandırmıştır. (IV) Mantarlar doğada ölü canlıları ayrıştırarak madde döngüsüne katkı sağlar. (V) Bazı mantarlar ise ekmek, peynir gibi besinlerin yapımında kullanılır.</p><p>Bu paragraf iki paragrafa ayrılmak istenirse ikinci paragraf hangi cümleyle başlar?</p>`,
+  c: [`II.`, `III.`, `IV.`, `V.`], a: "C",
+  s: `<p>I–III. cümleler mantarların <b>sınıflandırılmasını</b> (neden bitki sayılmadığını) anlatır; III. cümle “Bu yüzden” ile bu bölümü bitirir. IV. cümleden itibaren mantarların doğadaki ve günlük hayattaki <b>yararlarına</b> geçilir.</p><p>Yeni bir konuyu başlatan IV. cümle, ikinci paragrafın giriş cümlesidir. Cevap <b>C</b>.</p>` }
+]
+});
