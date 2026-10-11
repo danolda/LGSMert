@@ -1,1 +1,36 @@
-# LGSMert
+# LGS 2027 Hazırlık
+
+Tarayıcıda çalışan, kurulum gerektirmeyen bir LGS hazırlık sitesi.
+
+- **6 ders:** Türkçe, Matematik, Fen Bilimleri, T.C. İnkılap Tarihi ve Atatürkçülük, Din Kültürü ve Ahlak Bilgisi, İngilizce
+- **Her konu için:** görsellerle desteklenmiş konu özeti + 30 soru
+  - MEB'in yayımladığı 2022, 2023, 2024 ve 2026 LGS sorularından ilgili olanlar (orijinal kitapçıktan görsel olarak)
+  - Kalanı LGS tarzında, orta zorlukta yeni nesil sorular
+- Her sorunun ayrıntılı çözümü
+- Seçtiğin şıklar tarayıcıda (localStorage) saklanır; **Temizle** düğmesi o konudaki işaretlemeleri siler
+- Açık/koyu tema, mobil uyumlu
+
+## Çalıştırma
+
+`index.html` dosyasını bir web sunucusuyla açman yeterli (konu dosyaları sonradan yüklendiği için sunucu önerilir):
+
+```bash
+python3 -m http.server 8000
+# tarayıcıda http://localhost:8000
+```
+
+GitHub Pages ile de yayınlanabilir (Settings → Pages → Branch).
+
+## Dosya yapısı
+
+```
+index.html
+assets/css/style.css     # tasarım
+assets/js/app.js         # uygulama (yönlendirme, soru işaretleme, kayıt)
+data/index.js            # ders ve konu listesi
+data/topics/<konu>.js    # konu özeti + yeni nesil sorular
+data/past/<ders>.js      # çıkmış soruların konu eşleşmesi, cevabı ve çözümü
+img/past/*.webp          # çıkmış soruların görüntüleri (MEB kitapçıklarından)
+```
+
+Çıkmış sorular MEB/ÖDSGM tarafından kamuya açık olarak yayımlanan soru kitapçıklarından alınmıştır.
