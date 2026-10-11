@@ -99,7 +99,7 @@
     }).join('');
     app.innerHTML =
       '<section class="hero"><h1>LGS 2027 Hazırlık</h1>' +
-      '<p>Konu özetleri, çıkmış LGS soruları ve yeni nesil sorular. Her konuda 30 soru, ayrıntılı çözümler.</p>' +
+      '<p>Konu özetleri, çıkmış LGS soruları ve yeni nesil sorular. Her konuda 30–45 soru, ayrıntılı çözümler.</p>' +
       '<div class="count"><div><b>' + LGS.subjects.length + '</b>ders</div><div><b>' + tTopics + '</b>konu</div><div><b>' + tQ + '</b>soru</div><div><b>' + tDone + '</b>çözdüğün</div></div></section>' +
       '<div class="grid">' + cards + '</div>' +
       '<p class="small" style="margin-top:18px">İpucu: Bir şıkka dokunduğunda cevabın kaydedilir ve çözüm açılır. Konu sayfasındaki <b>Temizle</b> düğmesi o konudaki tüm işaretlemeleri siler.</p>';
@@ -217,7 +217,7 @@
       (q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
     var body, choices;
     if (q.past) {
-      body = '<img class="past" loading="lazy" src="' + q.img + '" alt="LGS ' + q.year + ' sorusu">';
+      body = '<img class="past" loading="lazy" src="' + q.img + '" alt="LGS ' + q.year + ' sorusu" onload="this.style.width=Math.round(this.naturalWidth*0.82)+\'px\'">';
       choices = '<ul class="ch compact">' + LETTERS.map(function (L) {
         return '<li><button data-q="' + i + '" data-ch="' + L + '"><b>' + L + ')</b></button></li>';
       }).join('') + '</ul>';
