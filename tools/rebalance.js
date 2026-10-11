@@ -33,7 +33,8 @@ for (let i = 0; i < qs.length; i++) {
   if (count[low] >= target) continue;
   const xi = L.indexOf(q.a), yi = L.indexOf(low);
   // seçenekler sıralı bir yapıdaysa (ör. sayılar artan) bozmamak için sayısal sırayı kontrol et
-  const nums = q.c.map(c => parseFloat(String(c).replace(/<[^>]+>/g, '').replace(',', '.')));
+  const val = c => { const t = String(c).replace(/<[^>]+>/g, '').trim(); const f = t.match(/^(−|-)?\{\{(\d+)\|(\d+)\}\}$/); if (f) return (f[1] ? -1 : 1) * f[2] / f[3]; return /^[−-]?[\d.,]+$/.test(t) ? parseFloat(t.replace('−', '-').replace(/\.(?=\d{3})/g, '').replace(',', '.')) : NaN; };
+  const nums = q.c.map(val);
   const sortedNumeric = nums.every(n => !isNaN(n)) && nums.every((n, k) => k === 0 || nums[k - 1] <= n);
   const romanList = q.c.every(c => /^(Yalnız I|I|II|III|IV)/.test(String(c)));
   if (sortedNumeric || romanList) continue;
