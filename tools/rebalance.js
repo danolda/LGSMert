@@ -27,6 +27,8 @@ for (let i = 0; i < qs.length; i++) {
   if (count[q.a] <= target) continue;
   // stem standalone harf içeriyorsa (ör. "A noktası") atla
   if (hasStandalone(q.q.replace(/<[^>]+>/g, ' '))) continue;
+  // şıklarda da tek başına harf varsa (ör. DNA bazı “A”, nokta adı) atla
+  if (q.c.some(c => hasStandalone(String(c).replace(/<[^>]+>/g, ' ')))) continue;
   if (q.c.some(c => /^(Yalnız|I |I,|II|III|IV)/.test(c) && false)) continue;
   // en az olan hedef harf
   const low = L.filter(l => l !== q.a).sort((a, b) => count[a] - count[b])[0];
