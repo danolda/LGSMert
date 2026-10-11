@@ -43,10 +43,10 @@ qs: [
   s: `<p>C’de “yıkandı” fiilinde işi yapan “Ali”dir ve işi kendine yapmaktadır (kendini yıkadı). Öznesi belli olduğu için fiil <b>etkendir</b>; -n eki burada dönüşlülük bildirir.</p><p>A’da çamaşırları yıkayan, D’de kapıları kapatan belli değildir → edilgen. B’deki “taradı” -n eki almamıştır. Cevap <b>C</b>.</p>` },
 { q: `<p>Aşağıdaki cümlelerin hangisinde <b>sözde özne</b> vardır?</p>`,
   c: [`Postacıya bir mektup verdim.`, `Postacı mektupları dağıttı.`, `Postacı sabah erkenden yola çıktı.`, `Mektuplar postacı tarafından dağıtıldı.`], a: "D",
-  s: `<p>D’daki “dağıtıldı” fiili edilgendir. Edilgen cümlelerde işten etkilenen öge öznenin yerini alır: “mektuplar” → <b>sözde özne</b>. İşi yapan “postacı tarafından” ifadesiyle belirtilse de fiil edilgen olarak kalır.</p><p>B ve C’de “postacı” gerçek öznedir; A’de özne gizlidir (ben), “postacıya” dolaylı tümleçtir. Cevap <b>D</b>.</p>` },
+  s: `<p>D’deki “dağıtıldı” fiili edilgendir. Edilgen cümlelerde işten etkilenen öge öznenin yerini alır: “mektuplar” → <b>sözde özne</b>. İşi yapan “postacı tarafından” ifadesiyle belirtilse de fiil edilgen olarak kalır.</p><p>B ve C’de “postacı” gerçek öznedir; A’da özne gizlidir (ben), “postacıya” dolaylı tümleçtir. Cevap <b>D</b>.</p>` },
 { q: `<p>Aşağıdaki cümlelerin hangisinde geçişsiz bir fiil, aldığı ekle <b>geçişli</b> hâle getirilmiştir?</p>`,
   c: [`Çocuklar parkta koştu.`, `Bebek beşikte mışıl mışıl uyudu.`, `Kardeşim akşam erkenden yattı.`, `Annem ağlayan bebeği uyuttu.`], a: "D",
-  s: `<p>“Uyumak” geçişsiz bir fiildir. D’da “uyu-” fiiline <b>-t</b> ettirgenlik eki getirilmiş (uyut-) ve fiil nesne alabilir hâle gelmiştir: “Neyi/kimi uyuttu?” → “ağlayan bebeği”.</p><p>B, C ve A’deki “uyudu, yattı, koştu” fiilleri geçişsizdir ve nesne almamıştır. Cevap <b>D</b>.</p>` },
+  s: `<p>“Uyumak” geçişsiz bir fiildir. D’de “uyu-” fiiline <b>-t</b> ettirgenlik eki getirilmiş (uyut-) ve fiil nesne alabilir hâle gelmiştir: “Neyi/kimi uyuttu?” → “ağlayan bebeği”.</p><p>B, C ve A’daki “uyudu, yattı, koştu” fiilleri geçişsizdir ve nesne almamıştır. Cevap <b>D</b>.</p>` },
 { q: `<p>Bir öğrenci aşağıdaki cümlelerin yüklemlerini çatı özelliklerine göre sınıflandırmıştır.</p>
 <table class="rt"><tr><th>Cümle</th><th>Öznesine göre</th><th>Nesnesine göre</th></tr>
 <tr><td>1. Ağaçlar budandı.</td><td>Edilgen</td><td>Geçişsiz</td></tr>
