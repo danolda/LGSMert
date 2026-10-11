@@ -12,7 +12,8 @@ const NB = 'A-Za-zÇĞİÖŞÜçğıöşüâîû0-9';
 const tokenRe = new RegExp('(?<![' + NB + '])([ABCD])(?![' + NB + '])', 'g');
 const hasStandalone = s => new RegExp('(?<![' + NB + '])[ABCD](?![' + NB + '])').test(s);
 function swapLetters(str, x, y) {
-  return str.replace(tokenRe, m => (m === x ? y : m === y ? x : m));
+  // “…” tırnakları içindeki metinlere (ör. İngilizce alıntılar) dokunma
+  return str.split(/(“[^”]*”)/).map(part => part.startsWith('“') ? part : part.replace(tokenRe, m => (m === x ? y : m === y ? x : m))).join('');
 }
 // harf değişince ekin ünlü uyumunu düzelt: A’da / B’de
 const toA = { de: 'da', deki: 'daki', den: 'dan', ye: 'ya', nin: 'nın', yi: 'yı' };
