@@ -38,6 +38,10 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
     });
   }
+  // {{pay|payda}} -> kesir gösterimi
+  function fmt(html) {
+    return String(html == null ? '' : html).replace(/\{\{([^{}|]+)\|([^{}]+)\}\}/g, '<span class="fr"><span>$1</span><span>$2</span></span>');
+  }
   function subjOf(tid) {
     for (var i = 0; i < LGS.subjects.length; i++) {
       var s = LGS.subjects[i];
@@ -157,7 +161,7 @@
     var html = '<div style="--c:' + s.color + '">' +
       '<a class="back" href="#/d/' + s.id + '">← ' + esc(s.name) + '</a>' +
       '<h1>' + esc(meta.title) + '</h1>' +
-      '<details class="sumbox" open><summary>Konu Özeti</summary><div class="sum">' + (t.summary || '<p class="empty">Özet hazırlanıyor.</p>') + '</div></details>' +
+      '<details class="sumbox" open><summary>Konu Özeti</summary><div class="sum">' + (t.summary ? fmt(t.summary) : '<p class="empty">Özet hazırlanıyor.</p>') + '</div></details>' +
       '<div class="qhead"><h2>Sorular</h2><span class="score" id="score"></span>' +
       '<button class="btn red" id="clearBtn" title="Bu konudaki tüm işaretlemeleri sil">Temizle</button></div>' +
       '<div class="filters" id="filters">' +
@@ -218,15 +222,15 @@
         return '<li><button data-q="' + i + '" data-ch="' + L + '"><b>' + L + ')</b></button></li>';
       }).join('') + '</ul>';
     } else {
-      body = '<div class="stem">' + q.q + '</div>';
+      body = '<div class="stem">' + fmt(q.q) + '</div>';
       choices = '<ul class="ch">' + q.c.map(function (c, k) {
-        return '<li><button data-q="' + i + '" data-ch="' + LETTERS[k] + '"><b>' + LETTERS[k] + ')</b><span>' + c + '</span></button></li>';
+        return '<li><button data-q="' + i + '" data-ch="' + LETTERS[k] + '"><b>' + LETTERS[k] + ')</b><span>' + fmt(c) + '</span></button></li>';
       }).join('') + '</ul>';
     }
     return '<article class="q" id="q' + i + '">' + head + body + choices +
       '<div class="res" id="res' + i + '"></div>' +
       '<button class="btn ghost" style="margin-top:8px" data-show="' + i + '">Çözümü göster</button>' +
-      '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + q.s + '</div></article>';
+      '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + fmt(q.s) + '</div></article>';
   }
 
   function paint(tid, q, i) {
