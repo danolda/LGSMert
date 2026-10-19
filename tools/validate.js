@@ -4,16 +4,17 @@ const root = path.join(__dirname, '..');
 global.window = {}; global.LGS = null;
 require(path.join(root, 'data/index.js')); global.LGS = window.LGS;
 for (const f of fs.readdirSync(path.join(root, 'data/past'))) require(path.join(root, 'data/past', f));
+const { required } = require('./targets');
 let problems = 0, total = 0, done = 0;
 for (const s of LGS.subjects) for (const t of s.topics) {
   const fp = path.join(root, 'data/topics', t.id + '.js');
   const past = Object.values(LGS.past).filter(p => p.t === t.id).length;
-  if (!fs.existsSync(fp)) { console.log('EKSİK  ', t.id, 'çıkmış:', past, 'gereken özgün:', 30 - past); continue; }
+  if (!fs.existsSync(fp)) { console.log('EKSİK  ', t.id, 'çıkmış:', past, 'gereken özgün:', required(t.id, past) - past); continue; }
   try { require(fp); } catch (e) { console.log('HATA   ', t.id, e.message); problems++; continue; }
   const T = LGS.topics[t.id]; if (!T) { console.log('KAYIT YOK', t.id); problems++; continue; }
   const n = (T.qs || []).length; total += n + past; done++;
   const msg = [];
-  if (n + past !== 30) msg.push('toplam ' + (n + past));
+  if (n + past !== required(t.id, past)) msg.push('toplam ' + (n + past) + ' (gereken ' + required(t.id, past) + ')');
   if (!T.summary || T.summary.length < 500) msg.push('özet kısa');
   (T.qs || []).forEach((q, i) => {
     if (!Array.isArray(q.c) || q.c.length !== 4) msg.push('#' + (i + 1) + ' şık sayısı');
