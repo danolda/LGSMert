@@ -139,7 +139,16 @@ span.rt>span{border-top:1px solid currentColor;padding-left:1px}
 .fig svg,.q .stem svg,.sum svg{background:#fff;color:#1d2433;border-radius:10px;border:1px solid var(--line)}
 .fig img{background:#fff;border-radius:10px}
 
-@media (max-width: 600px) {
-  .q { padding: 12px 8px; }
-  .q img.past { width: 100% !important; max-width: 100% !important; border-radius: 6px; }
+
+/* Çıkmış soru görsellerini mobilde dikey ve okunabilir kılma */
+@media (max-width: 768px) {
+  .q img.past {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
 }
