@@ -138,3 +138,8 @@ span.rt>span{border-top:1px solid currentColor;padding-left:1px}
 .empty{color:var(--muted);font-style:italic}
 .fig svg,.q .stem svg,.sum svg{background:#fff;color:#1d2433;border-radius:10px;border:1px solid var(--line)}
 .fig img{background:#fff;border-radius:10px}
+
+@media (max-width: 600px) {
+  .q { padding: 12px 8px; }
+  .q img.past { width: 100% !important; max-width: 100% !important; border-radius: 6px; }
+}
