@@ -4,7 +4,7 @@ summary: `
 <h3>1. Dünya’nın Hareketleri ve Mevsimlerin Oluşumu</h3>
 <p>Dünya uzayda iki temel hareket yapar ve bu hareketlerin sonuçları LGS’de sıkça karşılaştırılır:</p>
 <ul>
-<li><b>Kendi ekseni etrafında dönme (Günlük hareket):</b> Batıdan doğuya (saat yönünün tersine) <b>24 saatte</b> tamamlanır. Sonucunda <b>gece ve gündüz</b> birbirini takip eder, Güneş ışınlarının gün içindeki geliş açısı değişir (sabah/akşam eğik, öğlen dik/dike yakın), <b>günlük sıcaklık farkları</b> ve cisimlerin <b>gün içindeki gölge boyu değişimleri</b> oluşur.</li>
+<li><b>Kendi ekseni etrafında dönme (Günlük hareket):</b> Batıdan doğuya (saat yönünün tersine) <b>24 saatte</b> tamamlanır. Sonucunda <b>gece ve gündüz</b> birbirini takip eder, Güneş ışınlarının gün içindeki geliş açısı değişir (sabah ve akşam eğik, öğlen dik veya dike yakın), <b>günlük sıcaklık farkları</b> ve cisimlerin <b>gün içindeki gölge boyu değişimleri</b> oluşur.</li>
 <li><b>Güneş etrafında dolanma (Yıllık hareket):</b> Eliptik bir yörüngede <b>365 gün 6 saatte</b> tamamlanır. Dönme ekseninin <b>23° 27′ (yaklaşık 23,5°) eğik</b> olmasıyla birlikte <b>mevsimlerin oluşmasını</b>, yıl içinde birim yüzeye düşen enerji miktarının, öğle vakti gölge boylarının ve <b>gece–gündüz sürelerinin değişmesini</b> sağlar.</li>
 </ul>
 
@@ -32,7 +32,7 @@ summary: `
 </g>
 </svg><figcaption>Dünya’nın Güneş etrafındaki dolanma hareketi. Kırmızı nokta Kuzey Kutbu’nu, kesikli çizgi Ekvator’u gösterir.</figcaption></div>
 
-<div class="note"><b>LGS Tuzağı 1 (Günberi – Günöte):</b> Dünya’nın Güneş’e olan uzaklığının değişmesi <b>mevsimleri etkilemez!</b> Dünya Güneş’e en yakın konumdayken (<b>3 Ocak – Günberi: ~147 milyon km</b>) Kuzey Yarım Küre’de kış yaşanır; en uzak konumdayken (<b>4 Temmuz – Günöte: ~152 milyon km</b>) Kuzey Yarım Küre’de yaz yaşanır.</div>
+<div class="note"><b>LGS Tuzağı 1 (Günberi – Günöte):</b> Dünya’nın Güneş’e olan uzaklığının değişmesi <b>mevsimleri etkilemez!</b> Dünya Güneş’e en yakın konumdayken (<b>3 Ocak – Günberi: yaklaşık 147 milyon km</b>) Kuzey Yarım Küre’de kış yaşanır; en uzak konumdayken (<b>4 Temmuz – Günöte: yaklaşık 152 milyon km</b>) Kuzey Yarım Küre’de yaz yaşanır.</div>
 <div class="note"><b>LGS Tuzağı 2 (Aydınlanma Çemberi):</b> Gece ile gündüzü birbirinden ayıran sınır çizgisine <b>aydınlanma çemberi</b> denir. Ekinoks tarihlerinde (21 Mart, 23 Eylül) tam <b>kutup noktalarından</b> geçer ve tüm paralelleri iki eşit parçaya böler. Gün dönümlerinde (21 Haziran, 21 Aralık) ise <b>kutup dairelerinden (66° 33′)</b> teğet geçer.</div>
 
 <h3>2. Işınların Geliş Açısı, Birim Yüzey Enerjisi ve Gölge Boyu</h3>
@@ -56,18 +56,14 @@ summary: `
 <ul>
 <li><b>Büyük Açı (Dik / Dike yakın):</b> Işık demeti <b>dar</b> bir alanı aydınlatır → Birim yüzeye düşen ışık enerjisi (J/cm²) <b>fazladır</b> → Yüzeydeki ısınma fazladır → Cisimlerin öğle vakti <b>gölge boyu kısa</b> (90° ise <b>sıfır</b>) olur.</li>
 <li><b>Küçük Açı (Eğik):</b> Aynı ışık demeti <b>geniş</b> bir alana dağılır → Birim yüzeye düşen enerji <b>azdır</b> → Isınma azdır → Öğle vakti <b>gölge boyu uzundur</b>.</li>
-<li><b>Önemli Kural:</b> İki ışık demetinin taşıdığı <b>toplam enerji eşittir</b>; değişen şey bu enerjinin yayıldığı alan ve <b>birim yüzeye düşen enerji miktarıdır</b>.</li>
+<li><b>Önemli Kural:</b> Özdeş iki ışık demetinin taşıdığı <b>toplam enerji eşittir</b>; değişen şey bu enerjinin yayıldığı alan ve <b>birim yüzeye düşen enerji miktarıdır</b>.</li>
 </ul>
 
 <h4>Güneş Işınları Nereye Kaç Kez Dik (90°) Düşer?</h4>
 <div class="fig"><svg viewBox="0 0 540 230" width="520" role="img" aria-label="Dönenceler ve Güneş ışınlarının dik geldiği kuşaklar">
 <circle cx="115" cy="115" r="95" fill="#e0f2fe" stroke="#1e3a8a" stroke-width="2"/>
 <rect x="27.5" y="77" width="175" height="76" fill="#fef08a" opacity="0.85"/>
-<clipPath id="earthClip"><circle cx="115" cy="115" r="95"/></clipPath>
-<g clip-path="url(#earthClip)">
-<rect x="20" y="77" width="190" height="76" fill="#fde047" opacity="0.6"/>
 <rect x="132" y="48" width="42" height="10" rx="2" fill="#dc2626"/>
-</g>
 <g stroke="#1e3a8a" stroke-width="1.5">
 <line x1="20" y1="115" x2="210" y2="115" stroke-width="2.2"/>
 <line x1="28" y1="77" x2="202" y2="77" stroke-dasharray="5 3"/>
@@ -75,13 +71,13 @@ summary: `
 <line x1="77" y1="28" x2="153" y2="28" stroke-dasharray="2 3"/>
 <line x1="77" y1="202" x2="153" y2="202" stroke-dasharray="2 3"/>
 </g>
-<g font-size="11">
-<text x="225" y="32"><b>Kuzey Kutup Dairesi (66°33′ K):</b> Işınlar asla dik gelmez (0 kez)</text>
-<text x="225" y="56" fill="#dc2626"><b>Türkiye (36°–42° K):</b> Dönence dışı → <b>Asla dik (90°) gelmez! (0 kez)</b></text>
-<text x="225" y="81" fill="#b45309"><b>Yengeç Dönencesi (23°27′ K):</b> Yılda <b>yalnızca 1 kez</b> dik gelir (21 Haziran)</text>
-<text x="225" y="118" fill="#1e3a8a"><b>Dönenceler Arası (Ekvator dahil):</b> Yılda <b>2 kez</b> dik gelir (Gölge 2 kez sıfır)</text>
-<text x="225" y="157" fill="#b45309"><b>Oğlak Dönencesi (23°27′ G):</b> Yılda <b>yalnızca 1 kez</b> dik gelir (21 Aralık)</text>
-<text x="225" y="205"><b>Güney Kutup Dairesi (66°33′ G):</b> Işınlar asla dik gelmez (0 kez)</text>
+<g font-size="10.5">
+<text x="222" y="32" font-weight="bold">Kuzey Kutup Dairesi (66°33′ K): Işınlar dik gelmez (0 kez)</text>
+<text x="222" y="56" fill="#dc2626" font-weight="bold">Türkiye (36°–42° K): Dönence dışı → Asla dik gelmez! (0 kez)</text>
+<text x="222" y="81" fill="#b45309" font-weight="bold">Yengeç Dönencesi (23°27′ K): Yılda 1 kez dik gelir (21 Haz)</text>
+<text x="222" y="118" fill="#1e3a8a" font-weight="bold">Dönenceler Arası (Ekvator dahil): Yılda 2 kez dik gelir</text>
+<text x="222" y="157" fill="#b45309" font-weight="bold">Oğlak Dönencesi (23°27′ G): Yılda 1 kez dik gelir (21 Ara)</text>
+<text x="222" y="205" font-weight="bold">Güney Kutup Dairesi (66°33′ G): Işınlar dik gelmez (0 kez)</text>
 </g>
 </svg></div>
 
@@ -119,7 +115,7 @@ summary: `
 <tr><td><b>21 Mar → 21 Haz</b></td><td>Ekvator’dan Yengeç’e kayar</td><td>Gündüzler uzamaya devam eder ve <b>gündüz &gt; gece</b>dir.</td><td>Gündüzler kısalmaya devam eder ve <b>gece &gt; gündüz</b>dür.</td></tr>
 </table>
 
-<div class="note"><b>LGS Tuzağı 3 (Kuzeye / Güneye Gidildikçe Gündüz Süresi):</b> <b>21 Haziran</b>’da Güney Kutbu’ndan Kuzey Kutbu’na (kuzeye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. <b>21 Aralık</b>’ta ise Kuzey Kutbu’ndan Güney Kutbu’na (güneye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. Ekvator’dan kutuplara doğru gidildikçe ise yıl içindeki <b>gece–gündüz süresi farkı</b> artar (Ekvator’da fark hep 0 saattir).</div>
+<div class="note"><b>LGS Tuzağı 3 (Kuzeye ve Güneye Gidildikçe Gündüz Süresi):</b> <b>21 Haziran</b>’da Güney Kutbu’ndan Kuzey Kutbu’na (kuzeye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. <b>21 Aralık</b>’ta ise Kuzey Kutbu’ndan Güney Kutbu’na (güneye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. Ekvator’dan kutuplara doğru gidildikçe ise yıl içindeki <b>gece–gündüz süresi farkı</b> artar (Ekvator’da fark hep 0 saattir).</div>
 
 <h3>4. Hava Olayları, İklim ve Yağış Türleri</h3>
 <table class="rt">
@@ -214,7 +210,7 @@ qs: [
   ],
   a: "B",
   s: `<p>Şekil 2’deki grafikte gölge boyu <b>21 Mart ile 21 Haziran arasında bir kez</b> ve <b>21 Haziran ile 23 Eylül arasında bir kez</b> olmak üzere yılda toplam <b>2 kez sıfır</b> olmuştur. Ayrıca gölge boyu 21 Aralık’ta en uzundur. Bu durum şehrin <b>Ekvator ile Yengeç Dönencesi arasında</b> (Kuzey Yarım Küre’de) yer aldığını gösterir → <b>M şehri</b>.</p>
-<p>K şehri Yengeç Dönencesi’nin kuzeyindedir (dönenceler dışındadır); bu nedenle K’ye Güneş ışınları hiçbir zaman 90° açıyla düşmez ve gölge boyu asla sıfır olmaz (<b>B doğru</b>). C ✗: 21 Aralık’ta Güney Yarım Küre’deki N’de yaz yaşanır, gündüz süresi K’den uzundur. D ✗: Dönenceler üzerindeki L ve N’ye ışınlar yılda yalnızca 1 kez dik düşer.</p>`
+<p>K şehri Yengeç Dönencesi’nin kuzeyindedir (dönenceler dışındadır); bu nedenle K’ye Güneş ışınları hiçbir zaman 90° açıyla düşmez ve gölge boyu asla sıfır olmaz (<b>B doğru</b>). C yanlıştır: 21 Aralık’ta Güney Yarım Küre’deki N’de yaz yaşanır, gündüz süresi K’den uzundur. D yanlıştır: Dönenceler üzerindeki L ve N’ye ışınlar yılda yalnızca 1 kez dik düşer.</p>`
 },
 {
   q: `<p>Özdeş cam borular, özdeş mumlar ve buz kalıpları kullanılarak rüzgâr oluşumunu gözlemlemek amacıyla aşağıdaki I, II ve III numaralı deney düzenekleri kuruluyor. Cam boruların tam ortasına serbestçe hareket edebilen özdeş tüy parçaları konuluyor.</p>
@@ -249,7 +245,7 @@ qs: [
 <text x="125" y="125" text-anchor="middle">M ucu (Buz)</text><text x="410" y="125" text-anchor="middle">N ucu (3 mum)</text>
 <text x="125" y="190" text-anchor="middle">P ucu (2 mum)</text><text x="410" y="190" text-anchor="middle">R ucu (2 mum)</text>
 </g>
-<text x="485" y="38" font-size="11">← 1 (Sol) | 2 (Sağ) →</text>
+<text x="475" y="38" font-size="10.5" font-weight="bold">← 1 (Sol) | 2 (Sağ) →</text>
 </svg></div>
 <p>Buna göre düzeneklerdeki tüy parçalarının hareket yönleri ve hızları ile ilgili aşağıdakilerden hangisi doğrudur?</p>`,
   c: [
@@ -305,8 +301,8 @@ qs: [
     `Dünya I konumundayken M şehrinde kış, K şehrinde yaz mevsimi başlar.`
   ],
   a: "B",
-  s: `<p>Şekil 2’de K şehrinde gündüz süresi 18 saat, gece 6 saattir (Gündüz &gt; Gece). K şehri <b>Güney Yarım Küre’de</b> olduğuna göre Güney Yarım Küre’de yaz yaşanmaktadır; yani bu konum Kuzey Kutbu’nun Güneş’ten uzağa eğik olduğu <b>III numaralı konumdur (21 Aralık)</b> (A ✗).</p>
-<p>21 Aralık’ta (III) L şehrinde gece = gündüz (12 saat) olduğundan <b>L Ekvator</b> üzerindedir (Ekvator’a ışınlar yılda yalnızca 2 kez dik düşer, C ✗). M şehrinde ise 21 Aralık’ta gece &gt; gündüz olduğundan <b>M Kuzey Yarım Küre’dedir</b> (D ✗: I konumunda yani 21 Haziran’da M’de yaz başlar).</p>
+  s: `<p>Şekil 2’de K şehrinde gündüz süresi 18 saat, gece 6 saattir (Gündüz &gt; Gece). K şehri <b>Güney Yarım Küre’de</b> olduğuna göre Güney Yarım Küre’de yaz yaşanmaktadır; yani bu konum Kuzey Kutbu’nun Güneş’ten uzağa eğik olduğu <b>III numaralı konumdur (21 Aralık)</b> (A yanlıştır).</p>
+<p>21 Aralık’ta (III) L şehrinde gece = gündüz (12 saat) olduğundan <b>L Ekvator</b> üzerindedir (Ekvator’a ışınlar yılda yalnızca 2 kez dik düşer, C yanlıştır). M şehrinde ise 21 Aralık’ta gece &gt; gündüz olduğundan <b>M Kuzey Yarım Küre’dedir</b> (D yanlıştır: I konumunda yani 21 Haziran’da M’de yaz başlar).</p>
 <p>Dünya III (21 Aralık) konumundan IV (21 Mart) konumuna giderken Kuzey Yarım Küre’deki M şehrinde en uzun gece geride kalmıştır; <b>gündüzler uzamaya başlar fakat 21 Mart’ta eşitlenene kadar gece süresi hâlâ gündüz süresinden uzundur</b> (<b>B kesinlikle doğru</b>).</p>`
 },
 {
@@ -347,10 +343,10 @@ qs: [
   a: "D",
   s: `<p>Panel yüzeyine ışınların dik düşmesi için <b>(Güneş ışınlarının yatay zemine geliş açısı) + (Panel eğim açısı α) = 90°</b> olmalıdır:</p>
 <ul>
-<li><b>21 Haziran:</b> $\\alpha = 16{,}5^\\circ \\Rightarrow$ Işınların yere geliş açısı $= 90^\\circ - 16{,}5^\\circ = 73{,}5^\\circ$ (En dik açı → Yaz başlangıcı → KYK).</li>
-<li><b>21 Aralık:</b> $\\alpha = 63{,}5^\\circ \\Rightarrow$ Işınların yere geliş açısı $= 90^\\circ - 63{,}5^\\circ = 26{,}5^\\circ$ (En eğik açı → Kış başlangıcı).</li>
+<li><b>21 Haziran:</b> α = 16,5° olduğundan ışınların yere geliş açısı = 90° − 16,5° = <b>73,5°</b> (En dik açı → Yaz başlangıcı → Kuzey Yarım Küre).</li>
+<li><b>21 Aralık:</b> α = 63,5° olduğundan ışınların yere geliş açısı = 90° − 63,5° = <b>26,5°</b> (En eğik açı → Kış başlangıcı).</li>
 </ul>
-<p>Gölge boyunun sıfır olması için ışınların yere <b>90°</b> açıyla gelmesi (yani panelin yere tamamen paralel olup $\\alpha = 0^\\circ$ olması) gerekirdi. $\\alpha = 16{,}5^\\circ$ olduğu için ışınlar 90° ile gelmemiştir; gölge boyu en kısa değerindedir ancak <b>sıfır olmaz</b>. Cevap <b>D</b>.</p>`
+<p>Gölge boyunun sıfır olması için ışınların yere <b>90°</b> açıyla gelmesi (yani panelin yere tamamen paralel olup α = 0° olması) gerekirdi. α = 16,5° olduğu için ışınlar 90° ile gelmemiştir; gölge boyu en kısa değerindedir ancak <b>sıfır olmaz</b>. Cevap <b>D</b>.</p>`
 },
 {
   q: `<p>Bir araştırmacı özdeş el fenerleri, özdeş termometreler ve özdeş siyah metal levhalar kullanarak aşağıdaki kontrollü deney düzeneğini kuruyor. Başlangıç sıcaklıkları 20 °C olan levhalara fenerler eşit uzaklıktan (15 cm) farklı açılarla 10 dakika boyunca tutuluyor ve son sıcaklıklar grafikteki gibi kaydediliyor.</p>
@@ -394,7 +390,7 @@ qs: [
   ],
   a: "C",
   s: `<p>Deneyde kullanılan el fenerleri <b>özdeştir</b> ve eşit süre (10 dk) açık tutulmuştur; dolayısıyla üç fenerin de <b>yaydığı toplam ışık enerjisi birbirine eşittir</b> (<b>C yanlıştır</b>).</p>
-<p>Sıcaklık artışlarının farklı olmasının nedeni fenerlerin yaydığı toplam enerji değil, ışığın düştüğü yüzey alanının ($S_3 > S_2 > S_1$) değişmesi ve buna bağlı olarak <b>birim yüzeye düşen enerji miktarının</b> ($E_1 > E_2 > E_3$) farklı olmasıdır. Cevap <b>C</b>.</p>`
+<p>Sıcaklık artışlarının farklı olmasının nedeni fenerlerin yaydığı toplam enerji değil, ışığın düştüğü yüzey alanının (S₃ &gt; S₂ &gt; S₁) değişmesi ve buna bağlı olarak <b>birim yüzeye düşen enerji miktarının</b> (E₁ &gt; E₂ &gt; E₃) farklı olmasıdır. Cevap <b>C</b>.</p>`
 },
 {
   q: `<p>Bir kıyı kasabasında yer alan Kara (X) ve Deniz (Y) bölgelerinin aynı gün içindeki 24 saatlik sıcaklık değişim grafiği aşağıda verilmiştir.</p>
@@ -428,8 +424,8 @@ qs: [
   s: `<p>Grafik incelendiğinde:</p>
 <ul>
 <li><b>00.00 – 08.00 arası (Gece):</b> Kara (X) sıcaklığı Deniz (Y) sıcaklığından düşüktür. Soğuk olan <b>X (Kara) Yüksek Basınç (YB)</b>, ılık olan <b>Y (Deniz) Alçak Basınç (AB)</b> alanıdır. Rüzgâr YB’den AB’ye yani <b>X’ten Y’ye (karadan denize)</b> doğru eser (<b>C doğru</b>).</li>
-<li><b>08.00 – 20.00 arası (Gündüz):</b> Kara (X) daha sıcaktır (AB), Deniz (Y) daha serindir (YB). Rüzgâr <b>Y’den X’e (denizden karaya)</b> eser (A ve B ✗).</li>
-<li><b>$t_1$ ve $t_2$ anları:</b> İki bölgenin sıcaklığı eşitlendiği için basınç farkı sıfırlanır ve <b>rüzgâr durur</b> (D ✗).</li>
+<li><b>08.00 – 20.00 arası (Gündüz):</b> Kara (X) daha sıcaktır (AB), Deniz (Y) daha serindir (YB). Rüzgâr <b>Y’den X’e (denizden karaya)</b> eser (A ve B yanlıştır).</li>
+<li><b>t₁ ve t₂ anları:</b> İki bölgenin sıcaklığı eşitlendiği için basınç farkı sıfırlanır ve <b>rüzgâr durur</b> (D yanlıştır).</li>
 </ul>`
 },
 {
@@ -456,9 +452,9 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
 <p>yargılarından hangileri doğrudur?</p>`,
   c: [`Yalnız I`, `I ve II`, `II ve III`, `I, II ve III`],
   a: "B",
-  s: `<p>Şekilde K bölgesinde oklar <b>aşağı doğru (alçalıcı hava hareketi)</b> ve yerde <b>merkezden çevreye</b> doğrudur; bu durum K’nin soğuk ve <b>Yüksek Basınç (YB)</b> alanı olduğunu gösterir (<b>I ✓</b>).</p>
-<p>L bölgesinde ise oklar <b>yukarı doğru (yükselici hava hareketi)</b> ve yerde <b>çevreden merkeze</b> doğrudur; L sıcak ve <b>Alçak Basınç (AB)</b> alanıdır. Yükselen nemli hava soğuyarak bulut ve yağış oluşturur (<b>II ✓</b>).</p>
-<p>III ✗: K bölgesi soğuk olduğu için sıcaklığı L’den <b>düşük</b>, tanecikler birbirine yakın olduğu için hava yoğunluğu L’den <b>fazladır</b>. Cevap <b>B</b>.</p>`
+  s: `<p>Şekilde K bölgesinde oklar <b>aşağı doğru (alçalıcı hava hareketi)</b> ve yerde <b>merkezden çevreye</b> doğrudur; bu durum K’nin soğuk ve <b>Yüksek Basınç (YB)</b> alanı olduğunu gösterir (<b>I doğru</b>).</p>
+<p>L bölgesinde ise oklar <b>yukarı doğru (yükselici hava hareketi)</b> ve yerde <b>çevreden merkeze</b> doğrudur; L sıcak ve <b>Alçak Basınç (AB)</b> alanıdır. Yükselen nemli hava soğuyarak bulut ve yağış oluşturur (<b>II doğru</b>).</p>
+<p>III yanlıştır: K bölgesi soğuk olduğu için sıcaklığı L’den <b>düşük</b>, tanecikler birbirine yakın olduğu için hava yoğunluğu L’den <b>fazladır</b>. Cevap <b>B</b>.</p>`
 },
 {
   q: `<p>Aşağıdaki grafikte Dünya üzerindeki X, Y ve Z şehirlerinde yıl boyunca birim yüzeye düşen ortalama Güneş enerjisi miktarının (J/cm²) aylara göre değişimi gösterilmiştir.</p>
@@ -493,10 +489,10 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
   s: `<p>Grafikte:</p>
 <ul>
 <li><b>X şehri (Kırmızı):</b> Birim yüzeye düşen enerji <b>21 Haziran</b>’da maksimum, 21 Aralık’ta minimumdur → <b>Kuzey Yarım Küre</b>.</li>
-<li><b>Y şehri (Mavi):</b> Birim yüzeye düşen enerji <b>21 Aralık</b>’ta maksimum, 21 Haziran’da minimumdur → <b>Güney Yarım Küre</b> (A ✗).</li>
+<li><b>Y şehri (Mavi):</b> Birim yüzeye düşen enerji <b>21 Aralık</b>’ta maksimum, 21 Haziran’da minimumdur → <b>Güney Yarım Küre</b> (A yanlıştır).</li>
 <li><b>Z şehri (Yeşil):</b> Birim yüzeye düşen enerji tam <b>21 Mart ve 23 Eylül</b>’de (ekinokslarda) en üst değere ulaşmakta ve yıl boyu yüksek seyretmektedir → <b>Ekvator</b> üzerindedir ve Ekvator’da yıl boyunca gece–gündüz eşittir (<b>B doğru</b>).</li>
 </ul>
-<p>C ✗: 21 Haziran’da X’e ışınlar daha dik geldiği için X’te gölge daha kısadır. D ✗: 21 Mart – 21 Haziran arasında KYK’deki X’te gündüzler uzar, GYK’deki Y’de kısalır.</p>`
+<p>C yanlıştır: 21 Haziran’da X’e ışınlar daha dik geldiği için X’te gölge daha kısadır. D yanlıştır: 21 Mart – 21 Haziran arasında KYK’deki X’te gündüzler uzar, GYK’deki Y’de kısalır.</p>`
 },
 {
   q: `<p>K şehrinde yaşayan Kerem, 21 Aralık günü uçakla önce L şehrine, birkaç gün sonra da M şehrine seyahat ediyor. Kerem’in seyahat rotası Şekil 1’de, gittiği şehirlerde aynı saatte (öğle vakti) kendi boyunun gölge uzunluğunu ölçerek çizdiği grafik ise Şekil 2’de verilmiştir.</p>
@@ -555,9 +551,9 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
   a: "B",
   s: `<p>Dönencelerin derecesi doğrudan <b>eksen eğikliği açısına</b> eşittir:</p>
 <ul>
-<li>Eksen eğikliği <b>40°</b> olsaydı Yengeç Dönencesi <b>40° K</b>, Oğlak Dönencesi <b>40° G</b> paralelinden geçerdi (Kutup daireleri ise $90^\\circ - 40^\\circ = 50^\\circ$ enlemlerine inerdi).</li>
-<li>Böylece Güneş ışınlarının dik gelebildiği kuşak <b>genişler</b> ve 36°–42° K arasında yer alan Türkiye’nin 36°–40° K arasındaki şehirlerine Güneş ışınları yılda 2 kez (40° K’ye 1 kez) <b>dik açıyla düşebilirdi</b> (<b>B doğru</b>, A ✗).</li>
-<li>Eğiklik arttığında yazlar çok daha sıcak, kışlar çok daha soğuk olur (yıllık sıcaklık farkı ve gece–gündüz süresi farkı <b>artar</b>, C ve D ✗).</li>
+<li>Eksen eğikliği <b>40°</b> olsaydı Yengeç Dönencesi <b>40° K</b>, Oğlak Dönencesi <b>40° G</b> paralelinden geçerdi (Kutup daireleri ise 90° − 40° = 50° enlemlerine inerdi).</li>
+<li>Böylece Güneş ışınlarının dik gelebildiği kuşak <b>genişler</b> ve 36°–42° K arasında yer alan Türkiye’nin 36°–40° K arasındaki şehirlerine Güneş ışınları yılda 2 kez (40° K’ye 1 kez) <b>dik açıyla düşebilirdi</b> (<b>B doğru</b>, A yanlıştır).</li>
+<li>Eğiklik arttığında yazlar çok daha sıcak, kışlar çok daha soğuk olur (yıllık sıcaklık farkı ve gece–gündüz süresi farkı <b>artar</b>, C ve D yanlıştır).</li>
 </ul>`
 },
 {
@@ -581,14 +577,14 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
 </svg></div>
 <p>Buna göre K, L ve M bölgelerinin hava sıcaklıkları (T) ve açık hava basınçları (P) arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
   c: [
-    `Sıcaklık: T_L > T_K > T_M  |  Basınç: P_M > P_K > P_L`,
-    `Sıcaklık: T_M > T_K > T_L  |  Basınç: P_L > P_K > P_M`,
-    `Sıcaklık: T_L > T_M > T_K  |  Basınç: P_K > P_M > P_L`,
-    `Sıcaklık: T_K > T_L > T_M  |  Basınç: P_M > P_L > P_K`
+    `Sıcaklık: T(L) > T(K) > T(M)  —  Basınç: P(M) > P(K) > P(L)`,
+    `Sıcaklık: T(M) > T(K) > T(L)  —  Basınç: P(L) > P(K) > P(M)`,
+    `Sıcaklık: T(L) > T(M) > T(K)  —  Basınç: P(K) > P(M) > P(L)`,
+    `Sıcaklık: T(K) > T(L) > T(M)  —  Basınç: P(M) > P(L) > P(K)`
   ],
   a: "A",
-  s: `<p>Her iki rüzgâr da <b>L bölgesine doğru</b> (K → L ve M → L) esmektedir. Rüzgâr yüksek basınçtan alçak basınca doğru estiği için <b>en düşük basınç ($P_L$)</b> ve <b>en yüksek sıcaklık ($T_L$)</b> L bölgesindedir.</p>
-<p>2. rüzgâr gülü (90 tur/dk), 1. rüzgâr gülünden (40 tur/dk) daha hızlı döndüğüne göre <b>M ile L arasındaki basınç ve sıcaklık farkı, K ile L arasındakinden daha büyüktür</b>. Dolayısıyla M’nin basıncı K’den daha yüksek ($P_M > P_K > P_L$), sıcaklığı ise K’den daha düşüktür ($T_L > T_K > T_M$). Cevap <b>A</b>.</p>`
+  s: `<p>Her iki rüzgâr da <b>L bölgesine doğru</b> (K → L ve M → L) esmektedir. Rüzgâr yüksek basınçtan alçak basınca doğru estiği için <b>en düşük basınç P(L)</b> ve <b>en yüksek sıcaklık T(L)</b> L bölgesindedir.</p>
+<p>2. rüzgâr gülü (90 tur/dk), 1. rüzgâr gülünden (40 tur/dk) daha hızlı döndüğüne göre <b>M ile L arasındaki basınç ve sıcaklık farkı, K ile L arasındakinden daha büyüktür</b>. Dolayısıyla M’nin basıncı K’den daha yüksek (<b>P(M) &gt; P(K) &gt; P(L)</b>), sıcaklığı ise K’den daha düşüktür (<b>T(L) &gt; T(K) &gt; T(M)</b>). Cevap <b>A</b>.</p>`
 },
 {
   q: `<p>Atmosferdeki su buharının yoğunlaşma (yoğuşma veya donma) yüksekliğine ve ortam sıcaklığına bağlı olarak oluşan hava olaylarını sınıflandırmak için aşağıdaki tanılayıcı dallanmış ağaç hazırlanmıştır.</p>
@@ -667,9 +663,9 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
   a: "C",
   s: `<p>Güneş ışınları soldan gelirken:</p>
 <ul>
-<li><b>I. Görünüm:</b> Kuzey Kutbu Güneş’e dönük ve tamamen aydınlıktır → <b>21 Haziran</b> (A ✗).</li>
-<li><b>II. Görünüm:</b> Aydınlanma çemberi tam kutup noktalarından geçerek Ekvator ve tüm paralelleri eşit bölmüştür → <b>21 Mart veya 23 Eylül (Ekinoks)</b>. Bu tarihte ışınlar <b>Ekvator’a</b> dik düşer (B ✗).</li>
-<li><b>III. Görünüm:</b> Güney Kutbu tamamen aydınlıktır → <b>21 Aralık</b>. Bu tarihte güneye gidildikçe gündüz süresi uzar, gece süresi kısalır (D ✗).</li>
+<li><b>I. Görünüm:</b> Kuzey Kutbu Güneş’e dönük ve tamamen aydınlıktır → <b>21 Haziran</b> (A yanlıştır).</li>
+<li><b>II. Görünüm:</b> Aydınlanma çemberi tam kutup noktalarından geçerek Ekvator ve tüm paralelleri eşit bölmüştür → <b>21 Mart veya 23 Eylül (Ekinoks)</b>. Bu tarihte ışınlar <b>Ekvator’a</b> dik düşer (B yanlıştır).</li>
+<li><b>III. Görünüm:</b> Güney Kutbu tamamen aydınlıktır → <b>21 Aralık</b>. Bu tarihte güneye gidildikçe gündüz süresi uzar, gece süresi kısalır (D yanlıştır).</li>
 </ul>
 <p>I. görünümden (21 Haziran) II. görünüme (23 Eylül) geçilirken Kuzey Yarım Küre’de gündüzler 15 saatten 12 saate doğru <b>kısalır</b> fakat 23 Eylül’e kadar <b>gündüz süresi hâlâ gece süresinden uzundur</b> (<b>C doğru</b>).</p>`
 },
@@ -746,7 +742,7 @@ III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu 
     `Grafikteki sıcaklık artışının temel nedeni, son 65 yılda Dünya’nın dönme ekseni eğikliğinin artmasıdır.`
   ],
   a: "D",
-  s: `<p>Grafikte atmosferdeki $\\text{CO}_2$ miktarı 315 ppm’den 425 ppm’e çıkarken küresel ortalama sıcaklığın da $+1{,}2\\text{ }^\\circ\\text{C}$ arttığı görülmektedir. Bu durum insan kaynaklı (fosil yakıtlar, sanayileşme, ormansızlaşma) <b>sera etkisi ve küresel ısınmanın</b> sonucudur (A, B ve C doğrudur).</p>
+  s: `<p>Grafikte atmosferdeki CO₂ miktarı 315 ppm’den 425 ppm’e çıkarken küresel ortalama sıcaklığın da +1,2 °C arttığı görülmektedir. Bu durum insan kaynaklı (fosil yakıtlar, sanayileşme, ormansızlaşma) <b>sera etkisi ve küresel ısınmanın</b> sonucudur (A, B ve C doğrudur).</p>
 <p>Son 65 yıldaki bu hızlı ısınmanın nedeni Dünya’nın eksen eğikliğinin değişmesi <b>değildir</b> (<b>D söylenemez</b>).</p>`
 },
 {
@@ -779,12 +775,12 @@ III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
   s: `<p>Tarih <b>21 Haziran</b>’dır:</p>
 <ul>
 <li>K şehrinde Güneş ışınları ufuk düzlemine <b>90°</b> açıyla gelmiştir. 21 Haziran’da ışınların 90° ile düştüğü tek yer <b>Yengeç Dönencesi</b>’dir (<b>I kesinlikle doğru</b>).</li>
-<li>Geliş açıları $90^\\circ (\\text{K}) > 50^\\circ (\\text{L}) > 22^\\circ (\\text{M})$ olduğundan ışınların en eğik geldiği M şehrinde gölge boyu en uzundur (<b>II kesinlikle doğru</b>).</li>
+<li>Geliş açıları 90° (K) &gt; 50° (L) &gt; 22° (M) olduğundan ışınların en eğik geldiği M şehrinde gölge boyu en uzundur (<b>II kesinlikle doğru</b>).</li>
 <li><b>III (Dikkat - MEB Tuzağı!):</b> 21 Haziran’da Yengeç Dönencesi’ne (23,5° K) 90° ile gelen ışınlar, hem Yengeç Dönencesi’nin 40° kuzeyindeki (63,5° K) bir yere hem de 40° güneyindeki (16,5° G – Güney Yarım Küre!) bir yere <b>50°</b> açıyla gelir. Dolayısıyla L şehri Kuzey Yarım Küre’de olabileceği gibi Güney Yarım Küre’de (Ekvator ile Oğlak Dönencesi arasında) de olabilir; <b>kesin değildir</b>. Cevap <b>B</b>.</li>
 </ul>`
 },
 {
-  q: `<p>Aşağıdaki şekilde özdeş üç ışık demetinin (I, II ve III) aynı anda Dünya üzerindeki K, L ve M bölgelerinde aydınlattığı yüzey alanları ($S$, $2S$ ve $3S$) gösterilmiştir.</p>
+  q: `<p>Aşağıdaki şekilde özdeş üç ışık demetinin (I, II ve III) aynı anda Dünya üzerindeki K, L ve M bölgelerinde aydınlattığı yüzey alanları (S, 2S ve 3S) gösterilmiştir.</p>
 <div class="fig"><svg viewBox="0 0 480 185" width="460" role="img" aria-label="Dünya üzerinde S, 2S ve 3S aydınlanma alanları">
 <g fill="#fef08a" opacity="0.6" stroke="#f59e0b" stroke-width="1.5">
 <polygon points="30,30 198,30 228,55 30,55"/>
@@ -812,8 +808,8 @@ III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
     `I. ışık demetinin taşıdığı enerji, II. ışık demetinin taşıdığı enerjinin 3 katıdır.`
   ],
   a: "C",
-  s: `<p>Görselde Dünya’nın Kuzey Kutbu Güneş’e (sola) doğru eğiktir ve Ekvator’un kuzeyinde yer alan <b>L bölgesinde</b> aydınlanan alan en dardır ($S$). Bu durum tarihin <b>21 Haziran</b> olduğunu ve ışınların <b>L’ye (Yengeç Dönencesi)</b> en dik açıyla düştüğünü gösterir.</p>
-<p>Alan daraldıkça ($S < 2S < 3S$) birim yüzeye düşen enerji artar ($E_L > E_M > E_K$, A ✗) ve öğle vakti gölge boyu en kısa <b>L bölgesinde</b> olur (<b>C doğru</b>). Özdeş demetlerin taşıdığı toplam enerjiler birbirine eşittir (D ✗).</p>`
+  s: `<p>Görselde Dünya’nın Kuzey Kutbu Güneş’e (sola) doğru eğiktir ve Ekvator’un kuzeyinde yer alan <b>L bölgesinde</b> aydınlanan alan en dardır (S). Bu durum tarihin <b>21 Haziran</b> olduğunu ve ışınların <b>L’ye (Yengeç Dönencesi)</b> en dik açıyla düştüğünü gösterir.</p>
+<p>Alan daraldıkça (S &lt; 2S &lt; 3S) birim yüzeye düşen enerji artar (E(L) &gt; E(M) &gt; E(K), A yanlıştır) ve öğle vakti gölge boyu en kısa <b>L bölgesinde</b> olur (<b>C doğru</b>). Özdeş demetlerin taşıdığı toplam enerjiler birbirine eşittir (D yanlıştır).</p>`
 },
 {
   q: `<p>Dünya’nın Güneş etrafındaki yörüngesinde 1, 2, 3 ve 4 numaralı zaman aralıkları ile Dünya üzerindeki X (Yengeç Dönencesi) ve Y (Ekvator) noktaları aşağıda verilmiştir.</p>
@@ -849,11 +845,11 @@ III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
   a: "B",
   s: `<p><b>4. aralık (21 Mart → 21 Haziran):</b></p>
 <ul>
-<li>21 Mart’ta Güneş ışınları <b>Y (Ekvator)</b> noktasına dik (90°) düşmektedir (Y’de gölge = 0, X’te gölge > 0).</li>
+<li>21 Mart’ta Güneş ışınları <b>Y (Ekvator)</b> noktasına dik (90°) düşmektedir (Y’de gölge = 0, X’te gölge &gt; 0).</li>
 <li>Dünya 21 Mart’tan 21 Haziran’a ilerlerken dik gelen ışınlar Ekvator’dan (Y) <b>Yengeç Dönencesi’ne (X)</b> doğru kayar.</li>
 <li>Bu süreçte <b>Y noktasında</b> ışınlar eğikleştiği için gölge boyu sıfırdan başlayarak <b>büyür</b>; <b>X noktasında</b> ise ışınlar dikleştiği için gölge boyu küçülerek 21 Haziran’da <b>sıfır</b> olur (<b>B doğru</b>).</li>
 </ul>
-<p>A ✗: 1. aralıkta (21 Haz → 23 Eyl) diklik X’ten Y’ye kayar; X’te gölge artar, Y’de azalır. C ✗: Ekvator’da (Y) gündüz süresi yıl boyu değişmez (hep 12 saat). D ✗: 3. aralıkta (21 Ara → 21 Mar) KYK’deki X’te kış yaşanır, gece > gündüzdür.</p>`
+<p>A yanlıştır: 1. aralıkta (21 Haz → 23 Eyl) diklik X’ten Y’ye kayar; X’te gölge artar, Y’de azalır. C yanlıştır: Ekvator’da (Y) gündüz süresi yıl boyu değişmez (hep 12 saat). D yanlıştır: 3. aralıkta (21 Ara → 21 Mar) KYK’deki X’te kış yaşanır, gece &gt; gündüzdür.</p>`
 },
 {
   q: `<p>Bir öğrenci özdeş iki balonun ağzını esnek bir boru ve vana ile birbirine bağlıyor. I. balonu 10 °C’luk soğuk su bulunan kaba, II. balonu ise 60 °C’luk sıcak su bulunan kaba daldırıyor. Yeterince bekledikten sonra borudaki vanayı açıyor.</p>
@@ -880,7 +876,7 @@ III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
   ],
   a: "C",
   s: `<p>Doğadaki rüzgâr oluşumunda <b>soğuk bölge (10 °C – I. kap)</b> taneciklerin yoğunlaştığı ve alçaldığı <b>Yüksek Basınç (YB)</b> alanını; <b>sıcak bölge (60 °C – II. kap)</b> ise havanın genleşip yükseldiği <b>Alçak Basınç (AB)</b> alanını temsil eder.</p>
-<p>Rüzgâr yüksek basınç alanından (soğuk - I) alçak basınç alanına (sıcak - II) doğru gerçekleşir (<b>C doğru</b>). Sıcaklık farkı azalırsa basınç farkı ve hava akımının hızı azalır (D ✗).</p>`
+<p>Rüzgâr yüksek basınç alanından (soğuk - I) alçak basınç alanına (sıcak - II) doğru gerçekleşir (<b>C doğru</b>). Sıcaklık farkı azalırsa basınç farkı ve hava akımının hızı azalır (D yanlıştır).</p>`
 },
 {
   q: `<p>Aşağıdaki tabloda P, R ve S şehirlerinde <b>21 Mart, 21 Haziran ve 21 Aralık</b> tarihlerinde ölçülen gündüz süreleri (saat) verilmiştir.</p>
