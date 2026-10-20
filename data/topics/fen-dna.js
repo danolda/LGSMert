@@ -66,6 +66,7 @@ summary: `
 <ul>
 <li>Sağlıklı bir DNA’da: <b>Adenin (A) = Timin (T)</b> ve <b>Guanin (G) = Sitozin (C)</b>.</li>
 <li><b>Toplam Nükleotit Sayısı</b> = Toplam Fosfat Sayısı = Toplam Deoksiriboz Şekeri Sayısı = Toplam Organik Baz Sayısı (A + T + G + C).</li>
+<li>Adenin ile Timin arasında <b>2’li zayıf hidrojen bağı</b>, Guanin ile Sitozin arasında <b>3’lü zayıf hidrojen bağı</b> bulunur.</li>
 </ul>
 
 <div class="note"><b>LGS Tuzağı 1 (Kromozom Sayısı):</b> Kromozom sayısının canlının <b>gelişmişliğiyle</b> veya <b>vücut büyüklüğüyle hiçbir ilgisi yoktur!</b> (Eğrelti otu = 500, Köpek = 78, İnsan = 46, Moli balığı = 46). Farklı türe ait canlıların kromozom sayısı eşit olabilir.</div>
@@ -85,7 +86,7 @@ summary: `
 <ul>
 <li>Hücre bölünmeden önce DNA kendini eşler: Zayıf hidrojen bağları fermuar gibi açılır, <b>sitoplazmadaki serbest nükleotitler çekirdek içine girer</b> ve uygun bazların karşısına yerleşir (A–T, G–C).</li>
 <li>Sonuçta başlangıçtaki DNA ile <b>birebir aynı nükleotit dizilimine sahip 2 yeni DNA</b> oluşur. Eşlenme sırasında <b>sitoplazmadaki serbest nükleotit, şeker ve fosfat sayısı azalır</b>; çekirdekteki miktar ise artar.</li>
-<li>Bir DNA art arda $n$ kez eşlenirse $2^n$ adet DNA oluşur; ancak kaç kez eşlenirse eşlensin <b>en baştaki ana DNA’nın eski ipliklerini taşıyan DNA sayısı daima 2’dir</b>.</li>
+<li>Bir DNA art arda n kez eşlenirse <b>2ⁿ</b> adet DNA oluşur (3 kez → 8 DNA); ancak kaç kez eşlenirse eşlensin <b>en baştaki ana DNA’nın eski ipliklerini taşıyan DNA sayısı daima 2’dir</b>.</li>
 </ul>
 
 <div class="fig"><svg viewBox="0 0 540 150" width="520" role="img" aria-label="DNA onarılabilir ve onarılamaz hasarlar">
@@ -154,6 +155,26 @@ summary: `
 <li><b>Klonlama:</b> Vücut hücresinin <b>çekirdeği</b> alınan canlının birebir genetik kopyasının üretilmesi (Dolly koyunu).</li>
 <li><b>Gen tedavisi ve Islah:</b> Hatalı genin sağlıklı genle değiştirilmesi (gen tedavisi); insanların istediği verimli özellikteki canlıları seçip üretmesi (<b>yapay seçilim / ıslah</b>).</li>
 </ul>
+
+<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="Klonlama Koyun Dolly şeması">
+<defs><marker id="klA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="10" y="15" width="140" height="50" rx="6" fill="#dbeafe" stroke="#1e3a8a"/>
+<text x="80" y="34" font-size="10.5" font-weight="bold" text-anchor="middle">A Koyunu (Meme Hücresi)</text>
+<text x="80" y="50" font-size="9.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Çekirdeği (DNA’sı) alınır</text>
+<rect x="10" y="75" width="140" height="50" rx="6" fill="#fef3c7" stroke="#b45309"/>
+<text x="80" y="94" font-size="10.5" font-weight="bold" text-anchor="middle">B Koyunu (Yumurta Hüc.)</text>
+<text x="80" y="110" font-size="9.5" fill="#b45309" text-anchor="middle">Çekirdeği çıkarılır (Sitoplazma)</text>
+<path d="M150,40 L195,62" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
+<path d="M150,100 L195,78" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
+<rect x="200" y="45" width="140" height="50" rx="6" fill="#f3e8ff" stroke="#7c3aed"/>
+<text x="270" y="65" font-size="10.5" font-weight="bold" text-anchor="middle">Kaynaştırma ve Embriyo</text>
+<text x="270" y="81" font-size="9.5" text-anchor="middle">C Koyununun (Taşıyıcı) rahmine</text>
+<path d="M340,70 L380,70" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
+<rect x="385" y="35" width="145" height="70" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="457" y="56" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Klon Kuzu (DOLLY)</text>
+<text x="457" y="73" font-size="9.5" text-anchor="middle">Genetik yapısı ve cinsiyeti</text>
+<text x="457" y="88" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">A Koyunu ile %100 aynıdır!</text>
+</svg></div>
 `,
 qs: [
 {
@@ -161,21 +182,21 @@ qs: [
 <div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="DNA modeli için malzeme kutuları">
 <rect x="15" y="15" width="160" height="110" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
 <text x="95" y="35" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">1. Kutu (Organik Bazlar)</text>
-<g font-size="10.5">
-<circle cx="35" cy="55" r="6" fill="#ef4444"/><text x="48" y="59">Kırmızı kart: <b>18 adet</b></text>
-<circle cx="35" cy="75" r="6" fill="#3b82f6"/><text x="48" y="79">Mavi kart: <b>14 adet</b></text>
-<circle cx="35" cy="95" r="6" fill="#10b981"/><text x="48" y="99">Yeşil kart: <b>22 adet</b></text>
-<circle cx="35" cy="115" r="6" fill="#eab308"/><text x="48" y="119">Sarı kart: <b>16 adet</b></text>
+<g font-size="10.5" font-weight="bold" fill="#1e293b">
+<circle cx="35" cy="55" r="6" fill="#ef4444"/><text x="48" y="59">Kırmızı kart: 18 adet</text>
+<circle cx="35" cy="75" r="6" fill="#3b82f6"/><text x="48" y="79">Mavi kart: 14 adet</text>
+<circle cx="35" cy="95" r="6" fill="#10b981"/><text x="48" y="99">Yeşil kart: 22 adet</text>
+<circle cx="35" cy="115" r="6" fill="#eab308"/><text x="48" y="119">Sarı kart: 16 adet</text>
 </g>
 <rect x="195" y="15" width="160" height="110" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
 <text x="275" y="35" font-size="11" font-weight="bold" fill="#075985" text-anchor="middle">2. Kutu (Deoksiriboz)</text>
 <polygon points="275,52 292,64 285,84 265,84 258,64" fill="#38bdf8" stroke="#0369a1"/>
-<text x="275" y="108" font-size="12" font-weight="bold" text-anchor="middle">56 adet Boncuk</text>
+<text x="275" y="108" font-size="12" font-weight="bold" fill="#075985" text-anchor="middle">56 adet Boncuk</text>
 <rect x="375" y="15" width="150" height="110" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
 <text x="450" y="35" font-size="11" font-weight="bold" fill="#5b21b6" text-anchor="middle">3. Kutu (Fosfat)</text>
 <circle cx="450" cy="68" r="15" fill="#a855f7" stroke="#6b21a8"/>
 <text x="450" y="73" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">P</text>
-<text x="450" y="108" font-size="12" font-weight="bold" text-anchor="middle">64 adet Raptiye</text>
+<text x="450" y="108" font-size="12" font-weight="bold" fill="#5b21b6" text-anchor="middle">64 adet Raptiye</text>
 </svg></div>
 <p>Öğrenci elindeki malzemelerle <b>en fazla sayıda</b> nükleotit içeren hatasız bir DNA modeli yaptığına göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
   c: [
@@ -251,7 +272,7 @@ qs: [
     `Eşlenme süresince çekirdekteki toplam fosfat sayısı azalmıştır.`
   ],
   a: "B",
-  s: `<p>1. ipliğin karşısına K ipliği geldiği için K’nin dizilimi 2. iplikle; 2. ipliğin karşısına L geldiği için L’nin dizilimi 1. iplikle aynıdır (A ✗).</p><p>Grafikte X ve Y’nin her birinden 120 − 40 = 80’er adet (toplam 160); Z ve T’nin her birinden 90 − 30 = 60’ar adet (toplam 120) kullanılmıştır. Toplam 160 + 120 = <b>280 nükleotit</b> sentezlendiği için sitoplazmadan çekirdeğe <b>280 adet deoksiriboz şekeri</b> geçmiştir (<b>B doğru</b>).</p>`
+  s: `<p>1. ipliğin karşısına K ipliği geldiği için K’nin dizilimi 2. iplikle; 2. ipliğin karşısına L geldiği için L’nin dizilimi 1. iplikle aynıdır (A yanlıştır).</p><p>Grafikte X ve Y’nin her birinden 120 − 40 = 80’er adet (toplam 160); Z ve T’nin her birinden 90 − 30 = 60’ar adet (toplam 120) kullanılmıştır. Toplam 160 + 120 = <b>280 nükleotit</b> sentezlendiği için sitoplazmadan çekirdeğe <b>280 adet deoksiriboz şekeri</b> geçmiştir (<b>B doğru</b>).</p>`
 },
 {
   q: `<p>Bir öğrenci DNA modeli yapmak için renkli boncuklar kullanmış ve her rengi bir baza karşılık getirmiştir: <b style="color:#dc2626">kırmızı</b> = adenin, <b style="color:#2563eb">mavi</b> = timin, <b style="color:#16a34a">yeşil</b> = guanin, <b style="color:#ca8a04">sarı</b> = sitozin.</p>
@@ -313,7 +334,7 @@ qs: [
 <text x="155" y="45" font-size="10.5" font-weight="bold" fill="#dc2626">← Timin: 250 adet</text>
 <rect x="275" y="22" width="170" height="90" rx="8" fill="#f8fafc" stroke="#64748b"/>
 <text x="360" y="45" font-size="11" font-weight="bold" text-anchor="middle">Art Arda 3 Eşlenme:</text>
-<text x="360" y="68" font-size="10.5" text-anchor="middle">1 → 2 → 4 → <b>8 DNA</b></text>
+<text x="360" y="68" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="middle">1 → 2 → 4 → 8 DNA</text>
 <text x="360" y="92" font-size="9.5" fill="#475569" text-anchor="middle">(İlk iplikleri taşıyan DNA = ?)</text>
 </svg></div>
 <p>Buna göre başlangıçtaki DNA molekülü ve 3. eşlenme sonundaki durumla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
@@ -324,7 +345,7 @@ qs: [
     `Başlangıçtaki DNA’da toplam 600 adet fosfat bulunur.`
   ],
   a: "B",
-  s: `<p>Başlangıçtaki 1200 nükleotitli DNA’da Timin = 250 ise Adenin = 250’dir (A + T = 500). Kalan 1200 − 500 = 700 nükleotit Guanin ve Sitozindir → <b>Guanin = Sitozin = 350</b> (Fosfat sayısı ise 1200’dür).</p><p>DNA 3 kez eşlendiğinde $2^3 = 8$ DNA oluşur; ancak en baştaki DNA’nın yalnızca <b>2 ipliği</b> olduğu ve bu iplikler parçalanmadığı için 8 DNA’dan <b>yalnızca 2 tanesi</b> ilk DNA’ya ait eski iplikleri taşır. Cevap <b>B</b>.</p>`
+  s: `<p>Başlangıçtaki 1200 nükleotitli DNA’da Timin = 250 ise Adenin = 250’dir (A + T = 500). Kalan 1200 − 500 = 700 nükleotit Guanin ve Sitozindir → <b>Guanin = Sitozin = 350</b> (Fosfat sayısı ise 1200’dür).</p><p>DNA 3 kez eşlendiğinde 2³ = 8 DNA oluşur; ancak en baştaki DNA’nın yalnızca <b>2 ipliği</b> olduğu ve bu iplikler parçalanmadığı için 8 DNA’dan <b>yalnızca 2 tanesi</b> ilk DNA’ya ait eski iplikleri taşır. Cevap <b>B</b>.</p>`
 },
 {
   q: `<p>Bezelyelerde mor çiçek rengi aleli (M), beyaz çiçek rengi aleline (m) baskındır. Fenotipleri bilinmeyen K ve L bezelyeleri çaprazlandığında oluşan 1. kuşak (F₁) bezelyelerin <b>fenotip</b> ve <b>genotip</b> oranları aşağıdaki grafiklerde verilmiştir.</p>
@@ -429,7 +450,7 @@ qs: [
     `F₁ kuşağında buruşuk tohum görülmemesi nedeniyle buruşuk tohum geninin tamamen yok olması`
   ],
   a: "A",
-  s: `<p>1. aşamada DD × dd çaprazlamasından oluşan F₁ dölünün tamamı (%100) <b>Dd (melez yuvarlak)</b> olur. 2. aşamada Dd × Dd çaprazlandığında olasılıklar: {{1|4}} DD (≈ 200 saf yuvarlak), {{2|4}} Dd (≈ 400 melez yuvarlak) ve {{1|4}} dd (≈ 200 buruşuk) şeklindedir. Cevap <b>A</b>.</p>`
+  s: `<p>1. aşamada DD × dd çaprazlamasından oluşan F₁ dölünün tamamı (%100) <b>Dd (melez yuvarlak)</b> olur. 2. aşamada Dd × Dd çaprazlandığında olasılıklar: {{1|4}} DD (yaklaşık 200 saf yuvarlak), {{2|4}} Dd (yaklaşık 400 melez yuvarlak) ve {{1|4}} dd (yaklaşık 200 buruşuk) şeklindedir. Cevap <b>A</b>.</p>`
 },
 {
   q: `<p>Bir genetik danışmanlık merkezinde, kuzen evliliği yapmayı düşünen sağlıklı görünümlü bir çifte aşağıdaki olasılık tablosu gösterilerek “Akraba evliliklerinde kalıtsal hastalıkların çocuklarda görülme olasılığı artar.” bilgisi veriliyor.</p>
@@ -576,27 +597,27 @@ qs: [
 <div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="Kutup tilkisi, Kutup ayısı ve Çöl tilkisi adaptasyon kartları">
 <rect x="10" y="10" width="165" height="125" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
 <text x="92" y="30" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Kutup Tilkisi</text>
-<g font-size="10" fill="#1e293b">
-<text x="20" y="52">• Ekosistem: <b>Kutup</b></text>
-<text x="20" y="70">• Kürk rengi: <b>Beyaz</b></text>
-<text x="20" y="88">• Kulak ve burun: <b>Küçük</b></text>
-<text x="20" y="106">• Deri altı yağ: <b>Kalın</b></text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="20" y="52">• Ekosistem: Kutup</text>
+<text x="20" y="70">• Kürk rengi: Beyaz</text>
+<text x="20" y="88">• Kulak ve burun: Küçük</text>
+<text x="20" y="106">• Deri altı yağ: Kalın</text>
 </g>
 <rect x="188" y="10" width="165" height="125" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
 <text x="270" y="30" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Kutup Ayısı</text>
-<g font-size="10" fill="#1e293b">
-<text x="198" y="52">• Ekosistem: <b>Kutup</b></text>
-<text x="198" y="70">• Kürk rengi: <b>Beyaz</b></text>
-<text x="198" y="88">• Kulak ve burun: <b>Küçük</b></text>
-<text x="198" y="106">• Deri altı yağ: <b>Kalın</b></text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="198" y="52">• Ekosistem: Kutup</text>
+<text x="198" y="70">• Kürk rengi: Beyaz</text>
+<text x="198" y="88">• Kulak ve burun: Küçük</text>
+<text x="198" y="106">• Deri altı yağ: Kalın</text>
 </g>
 <rect x="366" y="10" width="165" height="125" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
 <text x="448" y="30" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Çöl Tilkisi</text>
-<g font-size="10" fill="#1e293b">
-<text x="376" y="52">• Ekosistem: <b>Çöl</b></text>
-<text x="376" y="70">• Kürk rengi: <b>Kum rengi</b></text>
-<text x="376" y="88">• Kulak ve kuyruk: <b>Çok büyük</b></text>
-<text x="376" y="106">• Deri altı yağ: <b>İnce</b></text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="376" y="52">• Ekosistem: Çöl</text>
+<text x="376" y="70">• Kürk rengi: Kum rengi</text>
+<text x="376" y="88">• Kulak ve kuyruk: Çok büyük</text>
+<text x="376" y="106">• Deri altı yağ: İnce</text>
 </g>
 </svg></div>
 <p><b>Bilgi:</b> Kulaklar ince ve damarlıdır; kulak yüzeyi büyüdükçe vücuttan dışarıya verilen ısı miktarı artar.</p>
@@ -679,17 +700,17 @@ III. Bu bakterilerin bölünerek çoğalmasıyla oluşan yeni bakteriler insüli
 <p>yargılarından hangileri doğrudur?</p>`,
   c: [`Yalnız I`, `I ve II`, `I ve III`, `II ve III`],
   a: "B",
-  s: `<p>İnsandan alınan genin bakteriye aktarılması <b>gen aktarımı</b> (genetik mühendisliği) uygulamasıdır (I ✓) ve üretilen hormon insan insüliniyle aynıdır (II ✓). Gen bakterinin DNA’sına eklendiği için bakteri bölündüğünde yeni bakteriler de bu geni taşır (III ✗). Cevap <b>B</b>.</p>`
+  s: `<p>İnsandan alınan genin bakteriye aktarılması <b>gen aktarımı</b> (genetik mühendisliği) uygulamasıdır (I doğru) ve üretilen hormon insan insüliniyle aynıdır (II doğru). Gen bakterinin DNA’sına eklendiği için bakteri bölündüğünde yeni bakteriler de bu geni taşır (III yanlış). Cevap <b>B</b>.</p>`
 },
 {
   q: `<p>Bilim insanları, genetik kopyalama (klonlama) yöntemiyle X, Y ve Z koyunlarını kullanarak Klon Kuzu’yu aşağıdaki aşamalarla dünyaya getirmiştir.</p>
 <div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="X Y Z koyunları ile klonlama deneyi">
 <circle cx="65" cy="40" r="22" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
 <text x="65" y="44" font-size="11" font-weight="bold" text-anchor="middle">X Koyunu</text>
-<text x="155" y="44" font-size="10">→ Meme hücresinin <b>çekirdeği</b> alındı</text>
+<text x="98" y="44" font-size="10" font-weight="bold" fill="#1e3a8a">→ Meme hücresinin çekirdeği alındı</text>
 <circle cx="65" cy="95" r="22" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
 <text x="65" y="99" font-size="11" font-weight="bold" text-anchor="middle">Y Koyunu</text>
-<text x="155" y="99" font-size="10">→ Çekirdeği çıkarılmış <b>yumurta sitoplazması</b> alındı</text>
+<text x="98" y="99" font-size="10" font-weight="bold" fill="#b45309">→ Çekirdeksiz yumurta sitoplazması alındı</text>
 <rect x="330" y="30" width="175" height="75" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
 <text x="417" y="52" font-size="10.5" font-weight="bold" text-anchor="middle">Embriyo Z Koyununa</text>
 <text x="417" y="68" font-size="10" text-anchor="middle">aktarıldı ve doğum gerçekleşti:</text>
@@ -704,33 +725,6 @@ III. Bu bakterilerin bölünerek çoğalmasıyla oluşan yeni bakteriler insüli
   ],
   a: "A",
   s: `<p>Kalıtsal bilgileri taşıyan DNA hücrenin <b>çekirdeğinde</b> bulunur. Çekirdek <b>X koyunundan</b> alındığı için klon kuzunun genetik yapısı ve cinsiyeti <b>X koyunu ile birebir aynıdır</b>. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki grafikte dört farklı canlı türüne ait sağlıklı bireylerin vücut hücrelerindeki kromozom sayıları (2n) verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 460 155" width="440" role="img" aria-label="Dört farklı canlı türünün kromozom sayısı grafiği">
-<line x1="55" y1="125" x2="430" y2="125" stroke="#334155" stroke-width="1.5"/>
-<line x1="55" y1="15" x2="55" y2="125" stroke="#334155" stroke-width="1.5"/>
-<rect x="85" y="90" width="36" height="35" fill="#3b82f6"/>
-<rect x="175" y="90" width="36" height="35" fill="#10b981"/>
-<rect x="265" y="68" width="36" height="57" fill="#f59e0b"/>
-<rect x="355" y="25" width="36" height="100" fill="#8b5cf6"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="103" y="84">46</text><text x="103" y="142">İnsan</text>
-<text x="193" y="84">46</text><text x="193" y="142">Moli Balığı</text>
-<text x="283" y="62">78</text><text x="283" y="142">Köpek</text>
-<text x="373" y="20">500</text><text x="373" y="142">Eğrelti Otu</text>
-</g>
-<text x="22" y="70" font-size="10" font-weight="bold" transform="rotate(-90 22 70)" text-anchor="middle">Kromozom Sayısı</text>
-</svg></div>
-<p>Yalnızca bu grafikteki veriler incelenerek aşağıdaki sonuçlardan hangisine <b>ulaşılabilir</b>?</p>`,
-  c: [
-    `Eğrelti otu, kromozom sayısı en fazla olduğu için grafikteki en gelişmiş canlıdır.`,
-    `İnsan ve moli balığının kromozom sayıları eşit olduğundan gen dizilimleri de aynıdır.`,
-    `Farklı türe ait canlıların kromozom sayıları aynı olabileceği gibi, kromozom sayısı canlının gelişmişlik düzeyini belirlemez.`,
-    `Köpeğin vücut büyüklüğü eğrelti otundan fazla olduğu için kromozom sayısı da daha fazladır.`
-  ],
-  a: "C",
-  s: `<p>Grafikte İnsan (46) ve Moli balığının (46) kromozom sayılarının eşit olduğu; ancak ilkel bir bitki olan Eğrelti otunun (500) kromozom sayısının İnsandan çok daha fazla olduğu görülmektedir. Dolayısıyla <b>kromozom sayısı gelişmişliği veya vücut büyüklüğünü belirlemez</b>. Cevap <b>C</b>.</p>`
 }
 ]
 });
