@@ -1,730 +1,617 @@
 LGS.add({
-id: "fen-dna",
+id: "ink-uyanis",
 summary: `
-<h3>1. Hücreden Nükleotite: Kalıtsal Yapılar (KeDiGeNi)</h3>
-<p>Hücre çekirdeğinde bulunan ve canlıya ait tüm kalıtsal bilgileri taşıyan yapılar <b>karmaşıktan basite (büyükten küçüğe)</b> doğru <b>Kromozom – DNA – Gen – Nükleotit</b> şeklinde sıralanır (Kodlama: <b>Ke – Di – Ge – Ni</b>).</p>
-
-<div class="fig"><svg viewBox="0 0 560 155" width="540" role="img" aria-label="Kromozom, DNA, Gen ve Nükleotit büyüklük sıralaması">
-<defs><marker id="dnA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<g fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5">
-<rect x="10" y="15" width="115" height="105" rx="8"/>
-<rect x="155" y="15" width="115" height="105" rx="8"/>
-<rect x="300" y="15" width="115" height="105" rx="8"/>
-<rect x="445" y="15" width="105" height="105" rx="8"/>
-</g>
-<g stroke="#7c3aed" stroke-width="7" stroke-linecap="round">
-<line x1="52" y1="35" x2="82" y2="85"/><line x1="82" y1="35" x2="52" y2="85"/>
-</g>
-<circle cx="67" cy="60" r="5" fill="#fbbf24"/>
-<path d="M175,45 Q195,25 212,45 T250,45" fill="none" stroke="#2563eb" stroke-width="3"/>
-<path d="M175,70 Q195,90 212,70 T250,70" fill="none" stroke="#dc2626" stroke-width="3"/>
-<g stroke="#64748b" stroke-width="1.5"><line x1="185" y1="39" x2="185" y2="76"/><line x1="202" y1="39" x2="202" y2="76"/><line x1="222" y1="39" x2="222" y2="76"/><line x1="238" y1="39" x2="238" y2="76"/></g>
-<rect x="320" y="34" width="75" height="48" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-dasharray="4 2"/>
-<path d="M325,48 Q345,35 360,48 T390,48" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<path d="M325,68 Q345,81 360,68 T390,68" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<circle cx="465" cy="58" r="10" fill="#ef4444"/><text x="465" y="62" font-size="10" fill="#fff" font-weight="bold" text-anchor="middle">P</text>
-<polygon points="495,45 508,54 503,70 487,70 482,54" fill="#3b82f6"/><text x="495" y="63" font-size="9.5" fill="#fff" font-weight="bold" text-anchor="middle">D</text>
-<rect x="518" y="48" width="22" height="20" rx="3" fill="#16a34a"/><text x="529" y="62" font-size="10" fill="#fff" font-weight="bold" text-anchor="middle">A</text>
-<line x1="475" y1="58" x2="482" y2="58" stroke="#334155" stroke-width="2"/><line x1="508" y1="58" x2="518" y2="58" stroke="#334155" stroke-width="2"/>
-<path d="M128,67 L150,67" stroke="#475569" stroke-width="2" marker-end="url(#dnA)"/>
-<path d="M273,67 L295,67" stroke="#475569" stroke-width="2" marker-end="url(#dnA)"/>
-<path d="M418,67 L440,67" stroke="#475569" stroke-width="2" marker-end="url(#dnA)"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="67" y="108">1. KROMOZOM</text><text x="67" y="138" font-weight="normal" font-size="9.5">DNA + Özel Protein</text>
-<text x="212" y="108">2. DNA</text><text x="212" y="138" font-weight="normal" font-size="9.5">Yönetici Molekül</text>
-<text x="357" y="108">3. GEN</text><text x="357" y="138" font-weight="normal" font-size="9.5">Görev Birimi</text>
-<text x="497" y="108">4. NÜKLEOTİT</text><text x="497" y="138" font-weight="normal" font-size="9.5">Yapı Birimi (P+D+Baz)</text>
-</g>
-</svg></div>
-
-<div class="two">
-<div class="fig"><svg viewBox="0 0 230 140" width="230" role="img" aria-label="Nükleotitin yapısı">
-<circle cx="40" cy="70" r="22" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/><text x="40" y="74" font-size="11" text-anchor="middle">Fosfat</text>
-<line x1="62" y1="70" x2="85" y2="70" stroke="#333" stroke-width="3"/>
-<polygon points="115,40 145,60 135,98 95,98 85,60" fill="#fde68a" stroke="#a16207" stroke-width="2"/><text x="115" y="78" font-size="11" text-anchor="middle">Şeker</text>
-<line x1="145" y1="70" x2="165" y2="70" stroke="#333" stroke-width="3"/>
-<rect x="165" y="50" width="56" height="40" rx="4" fill="#93c5fd" stroke="#1d4ed8" stroke-width="2"/><text x="193" y="68" font-size="10" text-anchor="middle">Organik</text><text x="193" y="81" font-size="10" text-anchor="middle">baz</text>
-<text x="115" y="128" font-size="11" text-anchor="middle">Bir nükleotit = fosfat + şeker (deoksiriboz) + baz</text>
-</svg></div>
-<div class="fig"><svg viewBox="0 0 220 200" width="220" role="img" aria-label="DNA merdiveni ve baz eşleşmeleri">
-<g stroke="#334155" stroke-width="4"><line x1="40" y1="10" x2="40" y2="190"/><line x1="180" y1="10" x2="180" y2="190"/></g>
-<g stroke="#fff" stroke-width="1">
-<rect x="42" y="22" width="68" height="20" fill="#ef4444"/><rect x="110" y="22" width="68" height="20" fill="#3b82f6"/>
-<rect x="42" y="64" width="68" height="20" fill="#22c55e"/><rect x="110" y="64" width="68" height="20" fill="#eab308"/>
-<rect x="42" y="106" width="68" height="20" fill="#3b82f6"/><rect x="110" y="106" width="68" height="20" fill="#ef4444"/>
-<rect x="42" y="148" width="68" height="20" fill="#eab308"/><rect x="110" y="148" width="68" height="20" fill="#22c55e"/></g>
-<g font-size="11" fill="#fff" font-weight="bold" text-anchor="middle"><text x="76" y="36">Adenin</text><text x="144" y="36">Timin</text><text x="76" y="78">Guanin</text><text x="144" y="78">Sitozin</text><text x="76" y="120">Timin</text><text x="144" y="120">Adenin</text><text x="76" y="162">Sitozin</text><text x="144" y="162">Guanin</text></g>
-</svg><figcaption>Adenin–Timin (2’li bağ), Guanin–Sitozin (3’lü bağ) eşleşir.</figcaption></div>
-</div>
-
-<div class="key"><b>Hiyerarşi (büyükten küçüğe):</b> Hücre → Çekirdek → Kromozom → DNA → Gen → Nükleotit<br>
-• <b>Kromozom:</b> DNA’nın hücre bölünmesi öncesinde kısalıp kalınlaşarak özel protein kılıfla paketlenmiş hâlidir.<br>
-• <b>DNA:</b> Hücrenin yaşamsal olaylarını yöneten çift zincirli sarmal yönetici moleküldür (Watson ve Crick modeli).<br>
-• <b>Gen:</b> DNA üzerinde belirli bir kalıtsal karakterden sorumlu anlamlı görev birimidir. Bir DNA’da çok sayıda gen bulunur.<br>
-• <b>Nükleotit:</b> DNA’nın en küçük yapı birimidir; yapısındaki organik baza göre (Adenin, Timin, Guanin, Sitozin nükleotit) adlandırılır.</div>
-
+<h3>1. I. Dünya Savaşı (1914–1918) ve Osmanlı Devleti’nin Cepheleri</h3>
+<p>I. Dünya Savaşı’nın başlamasında devletler arası ekonomik ve siyasi rekabet etkili olmuştur:</p>
 <ul>
-<li>Sağlıklı bir DNA’da: <b>Adenin (A) = Timin (T)</b> ve <b>Guanin (G) = Sitozin (C)</b>.</li>
-<li><b>Toplam Nükleotit Sayısı</b> = Toplam Fosfat Sayısı = Toplam Deoksiriboz Şekeri Sayısı = Toplam Organik Baz Sayısı (A + T + G + C).</li>
-<li>Adenin ile Timin arasında <b>2’li zayıf hidrojen bağı</b>, Guanin ile Sitozin arasında <b>3’lü zayıf hidrojen bağı</b> bulunur.</li>
+<li><b>Genel Nedenler:</b> <b>Sanayi İnkılabı</b> sonucu ortaya çıkan <b>ham madde ve pazar arayışı</b>, <b>sömürgecilik</b> yarışı, <b>Fransız İhtilali</b>’nin yaydığı <b>milliyetçilik</b> akımı, silahlanma yarışı ve devletler arası bloklaşma.</li>
+<li><b>Özel Nedenler:</b> Almanya ile Fransa arasındaki <b>Alsas-Loren</b> (kömür yatakları) sorunu, Rusya’nın <b>Panslavizm</b> (Slavları birleştirme) ve sıcak denizlere inme politikası, Avusturya-Macaristan ile Rusya’nın Balkanlar’daki hâkimiyet mücadelesi.</li>
+<li><b>Savaşı Başlatan Kıvılcım:</b> Avusturya-Macaristan Veliahtı Ferdinand’ın Saraybosna’da bir Sırp milliyetçisi tarafından öldürülmesi (28 Haziran 1914).</li>
 </ul>
 
-<div class="note"><b>LGS Tuzağı 1 (Kromozom Sayısı):</b> Kromozom sayısının canlının <b>gelişmişliğiyle</b> veya <b>vücut büyüklüğüyle hiçbir ilgisi yoktur!</b> (Eğrelti otu = 500, Köpek = 78, İnsan = 46, Moli balığı = 46). Farklı türe ait canlıların kromozom sayısı eşit olabilir.</div>
-<div class="note"><b>LGS Tuzağı 2 (Canlıların Farklılığı):</b> Tüm canlıların DNA’larında aynı <b>4 çeşit</b> nükleotit (A, T, G, C) bulunur. Canlıları birbirinden farklı kılan şey nükleotit çeşidi <b>değil</b>, nükleotitlerin <b>sayısı ve dizilişidir (sırasıdır)</b>!</div>
-
-<h3>2. DNA’nın Kendini Eşlemesi ve Onarımı</h3>
-<div class="fig"><svg viewBox="0 -4 470 154" width="470" role="img" aria-label="DNA eşlenmesi">
-<g stroke-width="5"><line x1="20" y1="20" x2="20" y2="130" stroke="#1d4ed8"/><line x1="60" y1="20" x2="60" y2="130" stroke="#1d4ed8"/>
-<line x1="170" y1="20" x2="190" y2="130" stroke="#1d4ed8"/><line x1="240" y1="20" x2="220" y2="130" stroke="#1d4ed8"/>
-<line x1="330" y1="20" x2="330" y2="130" stroke="#1d4ed8"/><line x1="365" y1="20" x2="365" y2="130" stroke="#f97316"/>
-<line x1="410" y1="20" x2="410" y2="130" stroke="#f97316"/><line x1="445" y1="20" x2="445" y2="130" stroke="#1d4ed8"/></g>
-<g stroke="#94a3b8" stroke-width="2"><line x1="20" y1="45" x2="60" y2="45"/><line x1="20" y1="75" x2="60" y2="75"/><line x1="20" y1="105" x2="60" y2="105"/><line x1="330" y1="45" x2="365" y2="45"/><line x1="330" y1="75" x2="365" y2="75"/><line x1="330" y1="105" x2="365" y2="105"/><line x1="410" y1="45" x2="445" y2="45"/><line x1="410" y1="75" x2="445" y2="75"/><line x1="410" y1="105" x2="445" y2="105"/></g>
-<g font-size="22" fill="#64748b"><text x="85" y="82">→</text><text x="268" y="82">→</text></g>
-<g font-size="11" text-anchor="middle"><text x="40" y="146">Ana DNA</text><text x="205" y="146">İplikler ayrılır</text><text x="388" y="146">İki yeni DNA</text></g><g font-size="10" text-anchor="middle"><text x="388" y="12">mavi: eski iplik · turuncu: yeni iplik</text></g>
-</svg></div>
-
-<ul>
-<li>Hücre bölünmeden önce DNA kendini eşler: Zayıf hidrojen bağları fermuar gibi açılır, <b>sitoplazmadaki serbest nükleotitler çekirdek içine girer</b> ve uygun bazların karşısına yerleşir (A–T, G–C).</li>
-<li>Sonuçta başlangıçtaki DNA ile <b>birebir aynı nükleotit dizilimine sahip 2 yeni DNA</b> oluşur. Eşlenme sırasında <b>sitoplazmadaki serbest nükleotit, şeker ve fosfat sayısı azalır</b>; çekirdekteki miktar ise artar.</li>
-<li>Bir DNA art arda n kez eşlenirse <b>2ⁿ</b> adet DNA oluşur (3 kez → 8 DNA); ancak kaç kez eşlenirse eşlensin <b>en baştaki ana DNA’nın eski ipliklerini taşıyan DNA sayısı daima 2’dir</b>.</li>
-</ul>
-
-<div class="fig"><svg viewBox="0 0 540 150" width="520" role="img" aria-label="DNA onarılabilir ve onarılamaz hasarlar">
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="135" y="18" fill="#16a34a">1. Tek İplikte Eksiklik / Hata (ONARILIR ✓)</text>
-<text x="405" y="18" fill="#dc2626">2. Karşılıklı İki İplikte Eksiklik (ONARILAMAZ ✗)</text>
-</g>
-<rect x="20" y="28" width="230" height="108" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<rect x="290" y="28" width="230" height="108" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="55" y="40" width="32" height="20" rx="3" fill="#3b82f6"/><text x="71" y="54" fill="#fff">A</text>
-<rect x="175" y="40" width="32" height="20" rx="3" fill="#f59e0b"/><text x="191" y="54" fill="#fff">T</text>
-<rect x="55" y="70" width="32" height="20" rx="3" fill="#10b981"/><text x="71" y="84" fill="#fff">G</text>
-<rect x="175" y="70" width="32" height="20" rx="3" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="191" y="84" fill="#dc2626">?</text>
-<rect x="55" y="100" width="32" height="20" rx="3" fill="#8b5cf6"/><text x="71" y="114" fill="#fff">C</text>
-<rect x="175" y="100" width="32" height="20" rx="3" fill="#10b981"/><text x="191" y="114" fill="#fff">G</text>
-<line x1="87" y1="50" x2="175" y2="50" stroke="#475569" stroke-width="1.5"/>
-<line x1="87" y1="80" x2="175" y2="80" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 2"/>
-<line x1="87" y1="110" x2="175" y2="110" stroke="#475569" stroke-width="1.5"/>
-<rect x="325" y="40" width="32" height="20" rx="3" fill="#3b82f6"/><text x="341" y="54" fill="#fff">A</text>
-<rect x="445" y="40" width="32" height="20" rx="3" fill="#f59e0b"/><text x="461" y="54" fill="#fff">T</text>
-<rect x="325" y="70" width="32" height="20" rx="3" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="341" y="84" fill="#dc2626">?</text>
-<rect x="445" y="70" width="32" height="20" rx="3" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="461" y="84" fill="#dc2626">?</text>
-<rect x="325" y="100" width="32" height="20" rx="3" fill="#8b5cf6"/><text x="341" y="114" fill="#fff">C</text>
-<rect x="445" y="100" width="32" height="20" rx="3" fill="#10b981"/><text x="461" y="114" fill="#fff">G</text>
-<line x1="357" y1="50" x2="445" y2="50" stroke="#475569" stroke-width="1.5"/>
-<line x1="357" y1="80" x2="445" y2="80" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4 2"/>
-<line x1="357" y1="110" x2="445" y2="110" stroke="#475569" stroke-width="1.5"/>
-</g>
-</svg></div>
-
-<h3>3. Kalıtım, Çaprazlamalar ve Cinsiyet</h3>
-<ul>
-<li><b>Baskın gen</b> büyük harfle (M), <b>çekinik gen</b> küçük harfle (m) gösterilir. Çekinik özellik yalnızca <b>homozigot çekinik (mm)</b> genotipinde dış görünüşe yansır.</li>
-<li><b>Homozigot (saf/arı döl):</b> MM veya mm. <b>Heterozigot (melez döl):</b> Mm. <b>Genotip:</b> gen yapısı; <b>fenotip:</b> dış görünüş.</li>
-<li><b>Bezelyelerde Baskın Özellikler:</b> Mor çiçek (beyaza), <b>Sarı tohum</b> (yeşile), <b>Yeşil meyve</b> (sarıya), Yuvarlak/Düzgün tohum (buruşuğa), Uzun gövde (kısaya), Yanda çiçek (uçtaya) baskındır.</li>
-</ul>
-
-<div class="two">
-<table class="rt"><tr><th>Mm × Mm</th><th>M</th><th>m</th></tr><tr><th>M</th><td>MM</td><td>Mm</td></tr><tr><th>m</th><td>Mm</td><td>mm</td></tr></table>
-<div class="note"><b>Temel Çaprazlama Oranları:</b><br>
-• <b>MM × mm</b> → %100 Baskın (Mm - tamamı melez)<br>
-• <b>Mm × Mm</b> → Fenotip: {{3|4}} (%75) baskın, {{1|4}} (%25) çekinik · Genotip: {{1|4}} MM, {{2|4}} Mm, {{1|4}} mm (%50 saf, %50 melez)<br>
-• <b>Mm × mm</b> → {{1|2}} (%50) baskın (Mm), {{1|2}} (%50) çekinik (mm)<br>
-• İki baskın fenotipli bireyden çekinik (mm) yavru doğduysa ata bireylerin ikisi de <b>kesinlikle heterozigottur (Mm)</b>.</div>
-</div>
-
-<ul>
-<li><b>Soyağacı ve Akraba Evliliği:</b> Kare erkek, daire dişi; içi dolu şekil özelliği gösteren bireydir. Akraba evliliğinde aynı çekinik hastalık geninin (m) bir araya gelerek hasta çocuk (mm) oluşturma olasılığı artar.</li>
-<li><b>İnsanda Cinsiyet:</b> Dişi <b>44+XX</b>, erkek <b>44+XY</b>’dir. Çocuğun cinsiyetini <b>babadan gelen sperm hücresi (X veya Y)</b> belirler ve her doğumda kız veya erkek olma olasılığı daima <b>{{1|2}} (%50)</b>’dir.</li>
-</ul>
-
-<h3>4. Mutasyon, Modifikasyon ve Adaptasyon</h3>
 <table class="rt">
-<tr><th>Özellik</th><th>Mutasyon</th><th>Modifikasyon</th><th>Adaptasyon</th></tr>
-<tr><td><b>Tanım ve Gen</b></td><td>DNA diziliminde veya kromozom <b>yapısında/sayısında</b> oluşan değişimdir.</td><td>Çevre etkisiyle (ısı, ışık, besin) genlerin <b>işleyişinde</b> oluşan değişimdir. Gen yapısı değişmez!</td><td>Canlının ortamda <b>yaşama ve üreme şansını artıran</b> kalıtsal özelliklerdir.</td></tr>
-<tr><td><b>Kalıtsallık</b></td><td><b>Üreme hücresinde</b> ise kalıtsaldır; vücut hücresinde ise aktarılmaz.</td><td><b>Kesinlikle kalıtsal değildir!</b> Etken kalkınca eski hâline döner.</td><td><b>Kesinlikle kalıtsaldır</b>, nesilden nesile aktarılır.</td></tr>
-<tr><td><b>Örnekler</b></td><td>Albinizm, Down sendromu, orak hücreli anemi, hemofili, altı parmaklılık, dört boynuzlu keçi, Van kedisi gözü.</td><td>Çuha çiçeği (15–20 °C kırmızı, 30–35 °C beyaz), ortanca çiçeği, Himalaya tavşanı, arı larvaları, kas gelişimi, bronzlaşma.</td><td>Çöl tilkisinin büyük kulakları, kutup ayısının beyaz kürkü ve kalın yağ tabakası, kaktüsün diken yaprakları.</td></tr>
+<tr><th>Blok</th><th>Savaş Öncesi Üyeler</th><th>Sonradan Katılanlar ve Notlar</th></tr>
+<tr><td><b>İttifak (Bağlaşma) Devletleri</b></td><td>Almanya, Avusturya-Macaristan, İtalya</td><td><b>Osmanlı Devleti</b>, Bulgaristan.<br><i>Not:</i> <b>İtalya</b>, gizli Londra Antlaşması ile kendisine Batı Anadolu vaat edilince taraf değiştirerek <b>İtilaf bloğuna</b> geçmiştir.</td></tr>
+<tr><td><b>İtilaf (Anlaşma) Devletleri</b></td><td>İngiltere, Fransa, Rusya</td><td>İtalya, ABD, Sırbistan, Yunanistan, Japonya, Romanya.</td></tr>
 </table>
 
-<div class="note"><b>Doğal Seçilim ve Varyasyon:</b> Tür içi kalıtsal çeşitliliğe <b>varyasyon</b> denir. Ortam şartlarına uyum sağlayanların hayatta kalıp üremesi, uyum sağlayamayanların elenmesine <b>doğal seçilim</b> denir. Canlı ortama uymak için kendi isteğiyle genlerini değiştiremez; mevcut çeşitlilikten uygun olanlar seçilir.</div>
-
-<h3>5. Biyoteknoloji ve Genetik Mühendisliği</h3>
+<h4>Osmanlı Devleti Neden Almanya’nın Yanında Savaşa Girdi?</h4>
 <ul>
-<li><b>Gen aktarımı:</b> Bir canlıdan alınan genin başka bir canlıya aktarılması (İnsan insülin geninin bakteriye aktarılıp insülin üretilmesi, ateş böceği geninin tütüne aktarılması).</li>
-<li><b>Klonlama:</b> Vücut hücresinin <b>çekirdeği</b> alınan canlının birebir genetik kopyasının üretilmesi (Dolly koyunu).</li>
-<li><b>Gen tedavisi ve Islah:</b> Hatalı genin sağlıklı genle değiştirilmesi (gen tedavisi); insanların istediği verimli özellikteki canlıları seçip üretmesi (<b>yapay seçilim / ıslah</b>).</li>
+<li><b>Osmanlı’nın Amaçları:</b> Son savaşlarda (Trablusgarp, Balkan) kaybettiği toprakları geri almak, <b>siyasi yalnızlıktan kurtulmak</b>, <b>kapitülasyonları ve dış borçları kaldırmak</b>, savaşı Almanya’nın kazanacağına inanmak.</li>
+<li><b>Almanya’nın Osmanlı’yı İsteme Amaçları:</b> Osmanlı’nın <b>jeopolitik konumundan</b> yararlanarak yeni cepheler açıp kendi üzerindeki savaş yükünü hafifletmek, <b>Halifelik</b> makamının gücünü kullanarak İngiliz sömürgelerindeki Müslümanları ayaklandırmak (cihat ilanı), İngiltere’nin sömürgeleriyle bağlantısını kesmek ve <b>Musul–Kerkük (Ortadoğu) petrollerine</b> ulaşmak. *(Not: Almanya, Osmanlı’nın askerî/teknolojik gücünden değil, jeopolitik ve dinî gücünden yararlanmak istemiştir!)*</li>
 </ul>
 
-<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="Klonlama Koyun Dolly şeması">
-<defs><marker id="klA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<rect x="10" y="15" width="140" height="50" rx="6" fill="#dbeafe" stroke="#1e3a8a"/>
-<text x="80" y="34" font-size="10.5" font-weight="bold" text-anchor="middle">A Koyunu (Meme Hücresi)</text>
-<text x="80" y="50" font-size="9.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Çekirdeği (DNA’sı) alınır</text>
-<rect x="10" y="75" width="140" height="50" rx="6" fill="#fef3c7" stroke="#b45309"/>
-<text x="80" y="94" font-size="10.5" font-weight="bold" text-anchor="middle">B Koyunu (Yumurta Hüc.)</text>
-<text x="80" y="110" font-size="9.5" fill="#b45309" text-anchor="middle">Çekirdeği çıkarılır (Sitoplazma)</text>
-<path d="M150,40 L195,62" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
-<path d="M150,100 L195,78" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
-<rect x="200" y="45" width="140" height="50" rx="6" fill="#f3e8ff" stroke="#7c3aed"/>
-<text x="270" y="65" font-size="10.5" font-weight="bold" text-anchor="middle">Kaynaştırma ve Embriyo</text>
-<text x="270" y="81" font-size="9.5" text-anchor="middle">C Koyununun (Taşıyıcı) rahmine</text>
-<path d="M340,70 L380,70" stroke="#475569" stroke-width="1.8" marker-end="url(#klA)"/>
-<rect x="385" y="35" width="145" height="70" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-<text x="457" y="56" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Klon Kuzu (DOLLY)</text>
-<text x="457" y="73" font-size="9.5" text-anchor="middle">Genetik yapısı ve cinsiyeti</text>
-<text x="457" y="88" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">A Koyunu ile %100 aynıdır!</text>
+<div class="fig"><svg viewBox="0 0 560 175" width="540" role="img" aria-label="I. Dünya Savaşı'nda Osmanlı Cepheleri Şeması">
+<rect x="175" y="8" width="210" height="30" rx="6" fill="#1e3a8a"/>
+<text x="280" y="27" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">OSMANLI DEVLETİ’NİN CEPHELERİ</text>
+<line x1="280" y1="38" x2="280" y2="52" stroke="#475569" stroke-width="2"/>
+<line x1="95" y1="52" x2="465" y2="52" stroke="#475569" stroke-width="2"/>
+<line x1="95" y1="52" x2="95" y2="66" stroke="#475569" stroke-width="2"/>
+<line x1="280" y1="52" x2="280" y2="66" stroke="#475569" stroke-width="2"/>
+<line x1="465" y1="52" x2="465" y2="66" stroke="#475569" stroke-width="2"/>
+<rect x="15" y="66" width="160" height="98" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="95" y="84" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">1. TAARRUZ (Saldırı) - "2K"</text>
+<g font-size="10" fill="#1e293b">
+<text x="25" y="104" font-weight="bold">• Kafkas Cephesi</text>
+<text x="25" y="118">(Sarıkamış, Muş-Bitlis, Brest-Litowsk)</text>
+<text x="25" y="138" font-weight="bold">• Kanal (Süveyş) Cephesi</text>
+<text x="25" y="152">(İngiltere’nin sömürge yolu)</text>
+</g>
+<rect x="190" y="66" width="180" height="98" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="280" y="84" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">2. SAVUNMA CEPHELERİ</text>
+<g font-size="10" fill="#1e293b">
+<text x="200" y="102" font-weight="bold">• Çanakkale Cephesi (Tek zafer!)</text>
+<text x="200" y="118" font-weight="bold">• Irak Cephesi (Kut’ül Amare)</text>
+<text x="200" y="134" font-weight="bold">• Hicaz–Yemen (Kutsal yerler)</text>
+<text x="200" y="150" font-weight="bold">• Suriye–Filistin (Yıldırım Ord.)</text>
+</g>
+<rect x="385" y="66" width="160" height="98" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="465" y="84" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">3. YARDIM - "-ya" eki</text>
+<g font-size="10" fill="#1e293b">
+<text x="395" y="104" font-weight="bold">• Galiçya Cephesi</text>
+<text x="395" y="122" font-weight="bold">• Romanya Cephesi</text>
+<text x="395" y="140" font-weight="bold">• Makedonya Cephesi</text>
+<text x="395" y="155">(Sınırlarımız dışında!)</text>
+</g>
 </svg></div>
+
+<ul>
+<li><b>Kafkas Cephesi:</b> Rusları Doğu Anadolu’dan atmak, <b>Bakü petrollerine</b> ulaşmak ve Orta Asya Türkleriyle birleşmek (<b>Turancılık / Pantürkizm</b>) amacıyla açıldı. Sarıkamış Harekâtı’nda ağır kayıplar verildi. Ruslarla iş birliği yapan Ermeni çetelerine karşı <b>1915 Sevk ve İskân (Tehcir) Kanunu</b> çıkarıldı. Çanakkale’den sonra bölgeye atanan <b>Mustafa Kemal, Muş ve Bitlis’i</b> Ruslardan geri aldı. Rusya’da Bolşevik İhtilali çıkınca <b>Brest-Litowsk Antlaşması (1918)</b> ile Kars, Ardahan ve Batum Osmanlı’ya geri verildi (Toprak kazanılan tek cephe).</li>
+<li><b>Çanakkale Cephesi:</b> İtilaf Devletleri; İstanbul ve Boğazları alıp Osmanlı’yı savaş dışı bırakmak ve müttefikleri <b>Çarlık Rusya’ya yardım götürmek</b> için açtı. Mustafa Kemal’in Arıburnu, Conkbayırı ve Anafartalar’daki ileri görüşlülüğü ve başarısıyla <b>kazanılan tek cephedir</b>. Sonucunda I. Dünya Savaşı <b>en az 2 yıl uzadı</b>, Rusya’da <b>Bolşevik İhtilali</b> çıktı, <b>Bulgaristan</b> İttifak bloğunda savaşa girdi ve Mustafa Kemal tüm yurtta tanınarak <b>Millî Mücadele’nin lideri</b> oldu.</li>
+<li><b>Irak (Basra) ve Hicaz–Yemen Cepheleri:</b> İngilizler Musul–Abadan petrollerini ele geçirmek için Irak’a saldırdı; Halil (Kut) Paşa komutasındaki Türk ordusu <b>Kut’ül Amare</b>’de İngiliz tümenini esir aldıysa da cephe genelinde kaybedildi. Hicaz–Yemen ve Kanal cephelerinde Arap kabilelerinin İngilizlerle iş birliği yapması <b>Ümmetçilik (İslamcılık)</b> fikrinin geçerliliğini yitirdiğini gösterdi.</li>
+</ul>
+
+<div class="note"><b>Mustafa Kemal’in I. Dünya Savaşı’nda Savaştığı Cepheler (Kronolojik Sırayla - ÇiKaS):</b>
+<br><b>1. Çanakkale Cephesi</b> (1915) → <b>2. Kafkas Cephesi</b> (1916 - Muş ve Bitlis’i geri aldı, Generalliğe yükseldi) → <b>3. Suriye–Filistin Cephesi</b> (1917–1918 - Yıldırım Orduları Grup Komutanı olarak İngilizleri Halep’in kuzeyinde durdurdu).</div>
+
+<h3>2. Mondros Ateşkes Antlaşması (30 Ekim 1918) ve İşgaller</h3>
+<ul>
+<li>Savaştan çekilen Osmanlı adına Bahriye Nazırı Rauf (Orbay) Bey tarafından Limni Adası’nın Mondros Limanı’nda imzalandı.</li>
+<li><b>Askerî ve Ekonomik Hükümler:</b> Boğazlar açılacak, <b>Osmanlı ordusu terhis edilecek</b> (sınırların korunması hariç), silah ve cephaneler teslim edilecek (<b>Amaç:</b> Osmanlı’yı <b>savunmasız</b> bırakmak), tüm haberleşme istasyonları, demir yolları ve Toros tünelleri İtilaf Devletleri’nin denetimine verilecek (<b>Amaç:</b> İşgallere karşı Türk halkının <b>haberleşmesini ve örgütlenmesini</b> engellemek).</li>
+<li><b>7. Madde (En Tehlikeli Madde):</b> <i>“İtilaf Devletleri, güvenliklerini tehdit edecek bir durum ortaya çıkarsa herhangi bir stratejik noktayı işgal etme hakkına sahip olacaktır.”</i> → Anadolu’nun işgaline <b>hukuki zemin (kılıf)</b> hazırlamıştır[cite: 9].</li>
+<li><b>24. Madde:</b> <i>“Vilâyât-ı Sitte’de (Doğu Anadolu’daki altı il: <b>Erzurum, Van, Harput/Elazığ, Diyarbakır, Bitlis, Sivas</b> – Kodlama: <b>EV HDBS</b>) karışıklık çıkarsa İtilaf Devletleri buraları işgal edebilecektir.”</i> → Doğu Anadolu’da bağımsız bir <b>Ermeni devleti</b> kurmayı amaçlamıştır[cite: 9].</li>
+</ul>
+
+<table class="rt">
+<tr><th>Gelişme / Belge</th><th>Önemi ve Yorumu</th></tr>
+<tr><td><b>Wilson İlkeleri</b><br>(ABD Başkanı Wilson)</td><td>“Yenen devletler yenilenlerden toprak ve savaş tazminatı almayacak”, “Osmanlı’da Türklerin çoğunlukta olduğu bölgelere egemenlik verilecek.” maddeleri vardır. İtilaf Devletleri sömürgecilik adını <b>Manda ve Himaye</b> olarak değiştirerek bu ilkeleri delmiştir.</td></tr>
+<tr><td><b>Paris Barış Konferansı</b><br>(18 Ocak 1919)</td><td>Yenilen devletlerle yapılacak barış şartlarını görüşmek için toplandı. İngiltere, Akdeniz’de güçlü bir İtalya yerine <b>zayıf bir Yunanistan</b> istediği için daha önce İtalya’ya vaat edilen <b>İzmir ve çevresini Yunanistan’a</b> verdi (İtilaf Devletleri arasındaki <b>ilk görüş ayrılığı!</b>).</td></tr>
+<tr><td><b>İzmir’in İşgali</b><br>(15 Mayıs 1919)</td><td>Yunanlılar Paris Barış Konferansı’na dayanarak İzmir’i işgal etti. Gazeteci <b>Hasan Tahsin</b> ilk kurşunu atarak milli direnişi başlattı[cite: 9]. İşgal, <b>Kuvâ-yı Milliye</b> ruhunun doğmasını ve <b>Redd-i İlhak</b> cemiyetlerinin kurulmasını hızlandırdı.</td></tr>
+<tr><td><b>Amiral Bristol Raporu</b><br>(Ekim 1919)</td><td>ABD’li Amiral Bristol bölgeyi inceleyerek: “İzmir’de Türkler çoğunluktadır, katliamdan Yunanlılar sorumludur, işgal haksızdır.” raporunu yazdı. <b>Türk milletinin Millî Mücadele’deki haklılığını dünyaya duyuran İLK ULUSLARARASI BELGEDİR!</b></td></tr>
+</table>
+
+<div class="note"><b>Mondros ve İşgaller Karşısında Tutumlar:</b>
+<br>• <b>İstanbul Hükûmeti (Damat Ferit):</b> Teslimiyetçi, pasif ve uzlaşmacı davrandı; işgallere sessiz kaldı, Nasihat Heyetleri göndererek halkı sükûnete çağırdı.
+<br>• <b>Mustafa Kemal:</b> <i>“Geldikleri gibi giderler!”</i> diyerek kararlı, vatansever ve tam bağımsızlıkçı bir tutum sergiledi; teşkilatlanmayı başlattı.
+<br>• <b>Türk Halkı:</b> Müdafaa-i Hukuk cemiyetlerini ve Kuvâ-yı Milliye birliklerini kurarak vatanını savundu[cite: 9].</div>
+
+<h3>3. Cemiyetler ve Kuvâ-yı Milliye</h3>
+<table class="rt">
+<tr><th>Kategori</th><th>Cemiyet Adı</th><th>Kuruluş Amacı ve Faaliyet Bölgesi</th></tr>
+<tr><td rowspan="6"><b>Yararlı (Millî) Cemiyetler</b><br><i>(Bölgeseldir, milliyetçidir, Sivas Kongresi’nde tek çatı altında birleşmiştir)</i></td><td><b>Trakya-Paşaeli Müdafaa-i Hukuk</b></td><td>Doğu Trakya’nın Yunanistan’a katılmasını (Mavri Mira’yı) önlemek.</td></tr>
+<tr><td><b>İzmir Müdafaa-i Hukuk / Redd-i İlhak</b></td><td>İzmir ve Ege’nin Yunanlara verilmesini basın-yayın ve silahla engellemek.</td></tr>
+<tr><td><b>Doğu Anadolu (Şark Vilayetleri) M.H.</b></td><td>Doğu Anadolu’nun Ermenilere verilmesini önlemek; <i>Le Pays, Hadisat, Albayrak</i> gazetelerini çıkardı, Erzurum Kongresi’ni topladı.</td></tr>
+<tr><td><b>Trabzon Muhafaza-i Hukuk-ı Milliye</b></td><td>Karadeniz’de Pontus Rum Devleti kurulmasını engellemek.</td></tr>
+<tr><td><b>Kilikyalılar Cemiyeti</b></td><td><b>Çukurova (Adana ve çevresi)</b> bölgesini Fransız ve Ermeni işgaline karşı savunmak (İsmi yabancı gibi dursa da <b>YARARLIDIR!</b>)[cite: 9].</td></tr>
+<tr><td><b>Millî Kongre Cemiyeti</b></td><td>Doktor Esat Işık kurdu; <b>ulusal</b> çapta basın-yayın yoluyla Türklerin haklılığını dünyaya duyurdu, “<b>Kuvâ-yı Milliye</b>” tabirini ilk kez kullandı.</td></tr>
+<tr><td rowspan="3"><b>Azınlıkların Kurduğu Zararlı Cemiyetler</b></td><td><b>Mavri Mira ve Etnik-i Eterya</b> (Rum)</td><td>Megali İdea (Büyük Yunanistan) ve Bizans’ı yeniden canlandırmak[cite: 9].</td></tr>
+<tr><td><b>Pontus Rum Cemiyeti</b> (Rum)</td><td>Doğu Karadeniz’de Samsun–Trabzon merkezli Rum devleti kurmak.</td></tr>
+<tr><td><b>Taşnak ve Hınçak / Alyans İsrailit</b></td><td>Doğu Anadolu ve Çukurova’da Ermeni devleti; Filistin’de Yahudi devleti kurmak[cite: 9].</td></tr>
+<tr><td rowspan="3"><b>Millî Varlığa Düşman Cemiyetler</b><br><i>(Müslüman/Türklerin kurduğu zararlılar)</i></td><td><b>İngiliz Muhipleri Cemiyeti</b></td><td>Kurtuluşu <b>İngiliz mandasına</b> girmekte gören (Damat Ferit destekli) cemiyet[cite: 9].</td></tr>
+<tr><td><b>Wilson Prensipleri Cemiyeti</b></td><td>Kurtuluşu <b>ABD mandasına</b> girmekte gören cemiyet (Sivas’ta reddedildi)[cite: 9].</td></tr>
+<tr><td><b>Sulh ve Selamet-i Osmaniye / Teali İslam / Kürt Teali</b></td><td>Kurtuluşu padişah ve halifenin emirlerine uymakta gören veya Doğu’da ayrı devlet kurmak isteyen cemiyetler.</td></tr>
+</table>
+
+<ul>
+<li><b>Kuvâ-yı Milliye (Millî Kuvvetler):</b> Osmanlı ordusunun terhis edilmesi ve İstanbul Hükûmeti’nin işgallere sessiz kalması üzerine Türk halkının vatanseverlik duygusuyla kurduğu <b>düzensiz (milis) silahlı direniş birlikleridir</b>[cite: 9].
+<br><b>Olumlu Yönleri:</b> Düzenli ordu kurulana kadar düşmanı oyalayıp ilerleyişini yavaşlattı, TBMM’ye karşı çıkan iç ayaklanmaları bastırdı, ulusal bilinci uyandırdı[cite: 9].
+<br><b>Olumsuz Yönleri (Kaldırılma Nedenleri):</b> Askerî disiplinden yoksun olması, tek merkezden yönetilememesi, halktan zorla malzeme toplaması, suçluları kendi yöntemleriyle cezalandırması (hukuk devleti anlayışına aykırı) ve <b>düşmanı yurttan tamamen atacak güce sahip olmaması</b>.</li>
+</ul>
+
+<h3>4. Millî Mücadele’nin Hazırlık Dönemi (Genelgeler ve Kongreler)</h3>
+<div class="fig"><svg viewBox="0 0 640 190" width="620" role="img" aria-label="Millî Mücadele'nin hazırlık dönemi zaman çizelgesi">
+<line x1="20" y1="95" x2="620" y2="95" stroke="#475569" stroke-width="3"/>
+<g font-size="10" text-anchor="middle">
+<g fill="#dc2626"><circle cx="42" cy="95" r="6"/><circle cx="120" cy="95" r="6"/><circle cx="200" cy="95" r="6"/><circle cx="280" cy="95" r="6"/><circle cx="360" cy="95" r="6"/><circle cx="440" cy="95" r="6"/><circle cx="520" cy="95" r="6"/><circle cx="600" cy="95" r="6"/></g>
+<text x="42" y="80" font-weight="bold">19 May 1919</text><text x="42" y="118">Samsun’a</text><text x="42" y="131">Çıkış</text>
+<text x="120" y="70" font-weight="bold">28 May 1919</text><text x="120" y="42">Havza</text><text x="120" y="55">Genelgesi</text>
+<text x="200" y="118" font-weight="bold">22 Haz 1919</text><text x="200" y="133">Amasya</text><text x="200" y="146">Genelgesi</text>
+<text x="280" y="70" font-weight="bold">23 Tem 1919</text><text x="280" y="42">Erzurum</text><text x="280" y="55">Kongresi</text>
+<text x="360" y="118" font-weight="bold">4 Eyl 1919</text><text x="360" y="133">Sivas</text><text x="360" y="146">Kongresi</text>
+<text x="440" y="70" font-weight="bold">20 Eki 1919</text><text x="440" y="42">Amasya</text><text x="440" y="55">Görüşmeleri</text>
+<text x="520" y="118" font-weight="bold">28 Oca 1920</text><text x="520" y="133">Misak-ı</text><text x="520" y="146">Millî</text>
+<text x="600" y="70" font-weight="bold">23 Nis 1920</text><text x="600" y="42">TBMM’nin</text><text x="600" y="55">Açılışı</text>
+</g>
+</svg></div>
+
+<ul>
+<li><b>Samsun’a Çıkış (19 Mayıs 1919):</b> Mustafa Kemal <b>9. Ordu Müfettişi</b> olarak geniş yetkilerle (sivil ve askerî makamlara emretme yetkisi) Samsun’a çıktı[cite: 9]. <b>Samsun Raporu</b>’nda Karadeniz’deki karışıklıklardan Rumların sorumlu olduğunu, Türk milletinin yabancı mandasına tahammülü olmadığını bildirdi (İstanbul Hükûmeti ile ilk görüş ayrılığı).</li>
+<li><b>Havza Genelgesi (28 Mayıs 1919):</b> Mustafa Kemal’in <b>tek başına</b> yayımladığı ilk genelgedir. İşgallere karşı <b>mitingler düzenlenmesini</b>, İtilaf Devletleri ve İstanbul Hükûmeti’ne <b>protesto telgrafları çekilmesini</b> (<b>Amaç:</b> Millî bilinci uyandırmak ve heyecan yaratmak), mitinglerde <b>Hristiyan azınlıklara kötü davranılmamasını</b> (<b>Amaç:</b> Mondros’un 7. maddesine göre yeni işgallere bahane vermemek) istedi[cite: 9].</li>
+</ul>
+
+<h4>Amasya Genelgesi (22 Haziran 1919) – Kurtuluş Savaşı’nın Yol Haritası</h4>
+<p>Mustafa Kemal, kararı kişisellikten çıkarıp <b>halka mal etmek</b> için genelgeyi Rauf Bey, Refet Bele, Ali Fuat Cebesoy ve Kazım Karabekir’e de onaylatmıştır:</p>
+<table class="rt">
+<tr><th>Amasya Genelgesi Maddesi</th><th>LGS Yorumu (Anlamı)</th></tr>
+<tr><td>1. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</td><td>Kurtuluş Savaşı’nın <b>1. GEREKÇESİ</b> (Neden mücadele ediyoruz?)[cite: 9].</td></tr>
+<tr><td>2. İstanbul Hükûmeti üzerine aldığı sorumluluğu yerine getirememektedir. Bu durum milletimizi yok olmuş gibi göstermektedir.</td><td>Kurtuluş Savaşı’nın <b>2. GEREKÇESİ</b> (İlk kez İstanbul Hükûmeti’ne açıkça karşı çıkılmıştır)[cite: 9].</td></tr>
+<tr><td>3. Milletin bağımsızlığını (istiklalini), yine milletin <b>azim ve kararı</b> kurtaracaktır.</td><td><b>AMAÇ</b> (Milletin bağımsızlığı) ve <b>YÖNTEM</b> (Milletin azim ve kararı) belirlenmiştir[cite: 9]. İlk kez <b>Millî Egemenlik (Ulusal İrade)</b> kavramına üstü kapalı vurgu yapılmış, ileride <b>rejimin (yönetim şeklinin) değişeceğinin</b> sinyali verilmiştir!</td></tr>
+<tr><td>4. Milletin durumunu göz önünde tutmak ve haklarını dünyaya duyurmak için her türlü etki ve denetimden uzak <b>millî bir kurul (Temsil Heyeti)</b> oluşturulmalıdır.</td><td><b>Temsil Heyeti</b> kurma fikri ilk kez ortaya atılmıştır.</td></tr>
+<tr><td>5. Anadolu’nun her bakımdan en güvenli yeri olan <b>Sivas’ta</b> ulusal bir kongre toplanacaktır; her sancaktan <b>halkın güvenini kazanmış</b> 3 delege seçilecektir.</td><td>Kararların <b>millî iradeye</b> dayandırılmak istendiğini gösterir[cite: 9].</td></tr>
+</table>
+<div class="note"><b>Sine-i Millete Dönüş:</b> Amasya Genelgesi’nden sonra (Erzurum Kongresi’nden hemen önce, 7–8 Temmuz 1919 gecesi) Mustafa Kemal, çok sevdiği <b>askerlik görevinden ve 9. Ordu Müfettişliğinden istifa ederek</b> yoluna sivil bir vatandaş olarak devam etmiştir. Bu sırada 15. Kolordu Komutanı <b>Kazım Karabekir</b>, <i>“Ben ve kolordum emrinizdeyiz Paşam!”</i> diyerek Mustafa Kemal’e bağlılığını bildirmiştir.</div>
+
+<h4>Erzurum Kongresi (23 Temmuz – 7 Ağustos 1919) ve Sivas Kongresi (4–11 Eylül 1919)</h4>
+<table class="rt">
+<tr><th>Özellik / Karar</th><th>Erzurum Kongresi</th><th>Sivas Kongresi</th></tr>
+<tr><td><b>Toplanış ve Kararlar</b></td><td>Toplanışı <b>bölgesel</b> (Doğu Anadolu ve Trabzon cemiyetleri topladı), aldığı kararlar <b>ulusal</b>dır[cite: 9].</td><td>Hem toplanışı hem de aldığı kararlar <b>ulusal (millî)</b> niteliktedir[cite: 9].</td></tr>
+<tr><td><b>Millî Sınırlar</b></td><td><i>“Millî sınırlar içinde vatan bir bütündür, parçalanamaz.”</i> (İlk kez <b>millî sınırlardan</b> bahsedildi)[cite: 9].</td><td>Erzurum kararları genişletilerek aynen kabul edildi.</td></tr>
+<tr><td><b>Manda ve Himaye</b></td><td><i>“Manda ve himaye kabul edilemez.”</i> (<b>İlk kez</b> reddedildi → Tam bağımsızlık)[cite: 9].</td><td>Manda ve himaye <b>kesin olarak (bir daha gündeme gelmemek üzere)</b> reddedildi[cite: 9].</td></tr>
+<tr><td><b>Temsil Heyeti</b></td><td>Doğu illerini temsil eden 9 kişilik <b>Temsil Heyeti ilk kez kuruldu</b> (Başkanı: Mustafa Kemal)[cite: 9].</td><td>Temsil Heyeti 15 kişiye çıkarıldı ve <b>“bütün vatanı temsil eder”</b> hâle getirildi.</td></tr>
+<tr><td><b>Cemiyetler ve Yürütme</b></td><td>Doğu Anadolu’daki yararlı cemiyetler birleştirildi.</td><td>Tüm yararlı cemiyetler <b>“Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti”</b> adıyla tek çatı altında birleştirildi[cite: 9]. Temsil Heyeti, <b>Ali Fuat Paşa’yı Batı Cephesi Kuvâ-yı Milliye Komutanlığına</b> atayarak <b>ilk kez YÜRÜTME (hükûmet gibi) yetkisini</b> kullandı! Halkı doğru bilgilendirmek için <b>İrade-i Milliye</b> gazetesi çıkarıldı[cite: 9].</td></tr>
+</table>
+
+<div class="note"><b>Erzurum Kongresi’nin Özel Maddeleri ve Yorumları:</b>
+<br>• <i>“Kuvâ-yı Milliye’yi etkin, <b>millî iradeyi hâkim</b> kılmak esastır.”</i> → <b>Millî egemenlik / Cumhuriyet</b> mesajı.
+<br>• <i>“Mebusan Meclisi’nin derhal toplanmasına ve hükûmet işlerinin meclis tarafından denetlenmesine çalışılacaktır.”</i> → <b>Millî iradeye</b> verilen önem.
+<br>• <i>“Hristiyan azınlıklara siyasi hâkimiyetimizi ve sosyal dengemizi bozacak ayrıcalıklar verilemez.”</i> → <b>Bağımsızlık ve eşitlik</b> vurgusu.
+<br>• <i>“Sömürgecilik amacı taşımamak şartıyla dış yardım alınabilir.”</i> → <b>Tam bağımsızlığa</b> uygun dış politika.</div>
+
+<ul>
+<li><b>Damat Ferit Paşa’nın İstifası (Temsil Heyeti’nin İlk Siyasi Başarısı!):</b> Sivas Kongresi’ni engellemek isteyen Elazığ Valisi <b>Ali Galip</b>’in girişimi başarısız olunca Mustafa Kemal, İstanbul ile tüm haberleşmeyi kesti. Baskıya dayanamayan <b>Damat Ferit Paşa Hükûmeti istifa etti</b> ve yerine Millî Mücadele’ye daha ılımlı bakan <b>Ali Rıza Paşa Hükûmeti</b> kuruldu.</li>
+<li><b>Amasya Görüşmeleri (20–22 Ekim 1919):</b> Ali Rıza Paşa Hükûmeti adına Bahriye Nazırı <b>Salih Paşa</b> ile Temsil Heyeti Başkanı <b>Mustafa Kemal</b> görüştü. Bu görüşme ile <b>İstanbul Hükûmeti, Temsil Heyeti’nin hukuki varlığını resmen tanımış oldu!</b> Görüşmede alınan tek ortak karar olan <b>Osmanlı Mebusan Meclisi’nin açılması</b> kabul edildi.</li>
+<li><b>Temsil Heyeti’nin Ankara’ya Gelişi (27 Aralık 1919):</b> Ankara’nın merkez seçilme nedenleri; <b>güvenli ve merkezi konumu</b>, <b>Batı Cephesi’ne yakınlığı</b>, <b>demir yolu ve telgraf (haberleşme) ağına</b> sahip olması, İstanbul’daki Mebusan Meclisi çalışmalarını yakından takip edebilme imkânı ve Ankara halkının Millî Mücadele’yi coşkuyla desteklemesidir.</li>
+</ul>
+
+<h3>5. Misak-ı Millî, TBMM’nin Açılışı ve Sevr Antlaşması</h3>
+<ul>
+<li><b>Misak-ı Millî (Millî Yemin - 28 Ocak 1920):</b> Mustafa Kemal, İstanbul’a gidecek milletvekillerinden; kendisini Meclis Başkanı seçmelerini, mecliste <b>Müdafaa-i Hukuk Grubu</b> kurmalarını ve Misak-ı Millî’yi kabul etmelerini istedi. Vekiller padişah baskısından çekinerek Mustafa Kemal’i başkan seçemedi ve Müdafaa-i Hukuk yerine <b>Felah-ı Vatan Grubu</b>’nu kurdu; ancak <b>Misak-ı Millî kararlarını kabul ettiler</b> (Kodlama: <b>K-A-R-A-B-oğaz</b>):
+  <ol>
+  <li><b>K - Kapitülasyonlar:</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kaldırılacaktır → <b>Tam bağımsızlık ve ekonomik bağımsızlık</b>[cite: 9].</li>
+  <li><b>A - Azınlıklar:</b> Azınlık hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir → <b>Uluslararası eşitlik (mütekabiliyet)</b>[cite: 9].</li>
+  <li><b>R - Referandum (Halkoylaması):</b> Arap memleketleri, Batı Trakya ve <b>Elviye-i Selase (Kars, Ardahan, Batum)</b> için gerekirse halkoylamasına başvurulacaktır → <b>Halkın iradesine saygı ve bölgedeki Türk nüfus çoğunluğuna güven</b>[cite: 9].</li>
+  <li><b>A - Ateşkes Sınırı:</b> Mondros imzalandığı sırada işgal edilmemiş Türk ve İslam çoğunluğunun bulunduğu topraklar ayrılmaz bir bütündür → <b>Yeni Türk devletinin millî sınırları</b> çizilmiştir[cite: 9].</li>
+  <li><b>Boğazlar:</b> İstanbul ve Marmara’nın güvenliği sağlanırsa Boğazların dünya ticaretine açılmasına karar verilebilir.</li>
+  </ol>
+</li>
+<li><b>İstanbul’un Resmen İşgali (16 Mart 1920):</b> Misak-ı Millî’nin kabulüne tepki gösteren İtilaf Devletleri İstanbul’u resmen işgal etti, Mebusan Meclisi’ni dağıttı ve milletvekillerini Malta’ya sürgüne gönderdi. Bu olay <b>millî iradeye darbe</b> vurmuş, ancak Mustafa Kemal’in haklılığını kanıtlayarak <b>Ankara’da TBMM’nin açılmasını hızlandırmıştır</b>[cite: 9].</li>
+</ul>
+
+<h4>Büyük Millet Meclisi’nin Açılışı (23 Nisan 1920) ve 24 Nisan Önergesi</h4>
+<table class="rt">
+<tr><th>24 Nisan Önergesi Kararı</th><th>LGS Yorumu</th></tr>
+<tr><td>1. Hükûmet kurmak zorunludur.</td><td><b>Kurucu Meclis</b> niteliği taşır; yeni bir devletin temelleri atılmıştır.</td></tr>
+<tr><td>2. Geçici olarak bir hükûmet başkanı tanımak veya padişah vekili atamak doğru değildir.</td><td>Meclisin <b>sürekli ve bağımsız</b> olacağı, İstanbul’dan bağımsız hareket edeceği vurgulanmıştır.</td></tr>
+<tr><td>3. <b>TBMM’nin üstünde hiçbir güç yoktur.</b></td><td><b>İstanbul Hükûmeti ve Saltanat yok sayılmıştır</b>; <b>Millî Egemenlik</b> ilkesi kurumlaşmıştır.</td></tr>
+<tr><td>4. TBMM, <b>yasama ve yürütme</b> yetkilerini kendinde toplar (İstiklal Mahkemeleri ile <b>yargı</b> da eklendi).</td><td>Savaş ortamında <b>hızlı karar alıp uygulamak</b> için <b>Güçler Birliği</b> ilkesi benimsenmiştir (Demokratik değildir ama <b>olağanüstü meclis</b> şartlarının gereğidir)[cite: 9].</td></tr>
+<tr><td>5. Meclis içinden seçilen bir kurul hükûmet işlerine bakar; <b>Meclis Başkanı hükûmetin de başkanıdır</b>.</td><td><b>Meclis Hükûmeti Sistemi</b> benimsenmiştir.</td></tr>
+<tr><td>6. Padişah ve Halife, baskıdan kurtulduktan sonra meclisin düzenleyeceği kanun çerçevesinde yerini alır.</td><td><b>Birlik ve beraberliği korumak</b> (saltanat yanlılarının tepkisini çekmemek) amaçlanmış, aynı zamanda Padişah meclis iradesinin altına alınmıştır.</td></tr>
+</table>
+
+<h4>TBMM’ye Karşı Çıkan Ayaklanmalar ve Alınan Önlemler</h4>
+<ul>
+<li><b>Ayaklanmalar:</b> Doğrudan İstanbul Hükûmeti’nin çıkardığı (<b>Ahmet Anzavur, Kuvâ-yı İnzibatiye / Halifelik Ordusu</b>), İstanbul Hükûmeti ve İtilaf Devletleri’nin kışkırttığı (Bolu, Düzce, Hendek, Adapazarı, Konya, Yozgat, Milli Aşireti), <b>Eski Kuvâ-yı Milliyecilerin</b> düzenli orduya katılmak istemeyip çıkardığı (<b>Çerkez Ethem, Demirci Mehmet Efe</b>) ve Azınlık ayaklanmaları (Pontus Rum ve Ermeni).</li>
+<li><b>TBMM’nin Aldığı Önlemler (Yetki Eşleştirmesi Çok Sorulur!):</b>
+  <br>1. <b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b> çıkarıldı → TBMM’nin <b>YASAMA</b> yetkisini kullandığını gösterir[cite: 9].
+  <br>2. <b>İstiklal Mahkemeleri</b> kuruldu (Üyeleri milletvekillerinden seçildi) → TBMM’nin <b>YARGI</b> yetkisini kullandığını gösterir[cite: 9].
+  <br>3. İstanbul Şeyhülislamı Dürrizade’nin fetvasına karşı <b>Ankara Müftüsü Rıfat (Börekçi)</b> ve 153 müftüden Millî Mücadele’yi destekleyen <b>karşı fetva</b> alındı (Dinî önlem).
+  <br>4. Halkı doğru bilgilendirmek için <b>Anadolu Ajansı</b> (Halide Edip ve Yunus Nadi) kuruldu ve <b>Hakimiyet-i Milliye</b> gazetesi çıkarıldı (Basın-yayın önlemi).</li>
+<li><b>Sevr Barış Antlaşması (10 Ağustos 1920):</b> Paris’te değil, İtalya’nın <b>San Remo Konferansı</b>’nda taslağı hazırlandı. Osmanlı Saltanat Şûrası imzaladı. Osmanlı Mebusan Meclisi kapalı olduğu için <b>Kanun-i Esasi’ye göre meclis onayından geçmedi</b>; bu yüzden <b>hukuken geçersiz (“ölü doğmuş”)</b> bir antlaşmadır[cite: 9]. TBMM imzalayanları vatan haini ilan etti.</li>
+</ul>
 `,
 qs: [
 {
-  q: `<p>Bir öğrenci, elindeki renkli kartları, boncukları ve raptiyeleri kullanarak hatasız ve eksiksiz bir çift zincirli DNA modeli tasarlamak istiyor. Öğrencinin kutusunda bulunan malzemelerin sayıları aşağıdaki görselde verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="DNA modeli için malzeme kutuları">
-<rect x="15" y="15" width="160" height="110" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="95" y="35" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">1. Kutu (Organik Bazlar)</text>
-<g font-size="10.5" font-weight="bold" fill="#1e293b">
-<circle cx="35" cy="55" r="6" fill="#ef4444"/><text x="48" y="59">Kırmızı kart: 18 adet</text>
-<circle cx="35" cy="75" r="6" fill="#3b82f6"/><text x="48" y="79">Mavi kart: 14 adet</text>
-<circle cx="35" cy="95" r="6" fill="#10b981"/><text x="48" y="99">Yeşil kart: 22 adet</text>
-<circle cx="35" cy="115" r="6" fill="#eab308"/><text x="48" y="119">Sarı kart: 16 adet</text>
+  q: `<p>Aşağıdaki şemada I. Dünya Savaşı öncesinde Osmanlı Devleti ile Almanya’nın yakınlaşma nedenleri karşılıklı olarak gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Osmanlı ve Almanya'nın I. Dünya Savaşı amaçları şeması">
+<rect x="10" y="12" width="245" height="142" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="132" y="32" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">OSMANLI’NIN AMAÇLARI</text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="22" y="54">• Kaybettiği toprakları geri almak</text>
+<text x="22" y="74">• Siyasi yalnızlıktan kurtulmak</text>
+<text x="22" y="94">• Kapitülasyonları ve dış borçları</text>
+<text x="22" y="108">  kaldırarak ekonomik bağımsızlık</text>
+<text x="22" y="128">• İttihatçıların Alman hayranlığı</text>
 </g>
-<rect x="195" y="15" width="160" height="110" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-<text x="275" y="35" font-size="11" font-weight="bold" fill="#075985" text-anchor="middle">2. Kutu (Deoksiriboz)</text>
-<polygon points="275,52 292,64 285,84 265,84 258,64" fill="#38bdf8" stroke="#0369a1"/>
-<text x="275" y="108" font-size="12" font-weight="bold" fill="#075985" text-anchor="middle">56 adet Boncuk</text>
-<rect x="375" y="15" width="150" height="110" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
-<text x="450" y="35" font-size="11" font-weight="bold" fill="#5b21b6" text-anchor="middle">3. Kutu (Fosfat)</text>
-<circle cx="450" cy="68" r="15" fill="#a855f7" stroke="#6b21a8"/>
-<text x="450" y="73" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">P</text>
-<text x="450" y="108" font-size="12" font-weight="bold" fill="#5b21b6" text-anchor="middle">64 adet Raptiye</text>
+<rect x="285" y="12" width="245" height="142" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="407" y="32" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">ALMANYA’NIN AMAÇLARI</text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="297" y="54">• Yeni cepheler açarak kendi</text>
+<text x="297" y="68">  üzerindeki savaş yükünü azaltmak</text>
+<text x="297" y="88">• Halifelik gücüyle İngiliz sömürgelerini</text>
+<text x="297" y="102">  ayaklandırmak (Dinî güç)</text>
+<text x="297" y="122">• Boğazları kapatıp Rusya’ya yardımı</text>
+<text x="297" y="136">  kesmek ve petrollere ulaşmak</text>
+</g>
 </svg></div>
-<p>Öğrenci elindeki malzemelerle <b>en fazla sayıda</b> nükleotit içeren hatasız bir DNA modeli yaptığına göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+<p>Şemadaki bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
   c: [
-    `Oluşturulan DNA modelinde toplam 60 adet nükleotit bulunur ve 2. kutudaki boncukların tamamı kullanılır.`,
-    `Model tamamlandığında 2. kutudaki boncukların tamamı biter, 3. kutudan ise 8 adet raptiye artar.`,
-    `1. kutudaki yeşil kartların tamamı kullanılmış ve modelin bir zincirinde 30 nükleotit yer almıştır.`,
-    `Kırmızı kart Adenin bazını temsil ediyorsa karşısına kesinlikle yeşil kart gelmiştir.`
-  ],
-  a: "B",
-  s: `<p>1. kutudaki organik bazlarla en fazla: 18 Kırmızı – 22 Yeşil eşleşmesinden 18 çift (36 baz) ve 14 Mavi – 16 Sarı eşleşmesinden 14 çift (28 baz) olmak üzere toplam 64 bazlık çift çıkarılabilir. <b>Ancak</b> her nükleotitte 1 baz, 1 şeker (boncuk) ve 1 fosfat (raptiye) bulunmak zorundadır. 2. kutuda yalnızca <b>56 adet boncuk (şeker)</b> bulunduğu için en fazla <b>56 nükleotitlik</b> (28 çiftlik) bir DNA modeli yapılabilir.</p><p>Bu durumda 56 boncuğun tamamı biter, 64 raptiyeden 64 − 56 = <b>8 adet raptiye artar</b>. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Şekilde bir hücrenin çekirdeğinden başlayarak kalıtım materyalinin yapısı büyükten küçüğe doğru K, L, M ve N ile gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 140" width="480" role="img" aria-label="Kromozom DNA gen nükleotit">
-<circle cx="45" cy="65" r="38" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/><g stroke="#7c3aed" stroke-width="3" fill="none"><path d="M30,50 Q45,65 60,80"/><path d="M60,50 Q45,65 30,80"/><path d="M38,40 L48,52"/></g>
-<text x="45" y="125" font-size="11" text-anchor="middle">Çekirdek</text>
-<g stroke="#7c3aed" stroke-width="9" stroke-linecap="round"><line x1="120" y1="35" x2="150" y2="95"/><line x1="150" y1="35" x2="120" y2="95"/></g>
-<text x="135" y="125" font-size="14" font-weight="bold" text-anchor="middle">K</text>
-<path d="M200,30 C215,50 235,50 250,30 S285,10 300,30 S335,50 350,30" fill="none" stroke="#2563eb" stroke-width="3" transform="translate(0,35)"/>
-<path d="M200,30 C215,10 235,10 250,30 S285,50 300,30 S335,10 350,30" fill="none" stroke="#2563eb" stroke-width="3" transform="translate(0,35)"/>
-<rect x="246" y="38" width="58" height="54" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="4 3"/>
-<text x="275" y="125" font-size="14" font-weight="bold" text-anchor="middle">L</text><text x="275" y="33" font-size="13" font-weight="bold" fill="#16a34a" text-anchor="middle">M</text>
-<circle cx="405" cy="65" r="12" fill="#fca5a5" stroke="#b91c1c"/><polygon points="438,48 456,60 450,82 426,82 420,60" fill="#fde68a" stroke="#a16207"/><rect x="462" y="52" width="28" height="26" fill="#93c5fd" stroke="#1d4ed8"/>
-<line x1="417" y1="65" x2="421" y2="65" stroke="#333" stroke-width="2"/><line x1="456" y1="65" x2="462" y2="65" stroke="#333" stroke-width="2"/>
-<text x="450" y="125" font-size="14" font-weight="bold" text-anchor="middle">N</text>
-</svg></div>
-<p>Buna göre K, L, M ve N yapıları ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: [
-    `K, L’nin proteinlerle birlikte paketlenmesiyle oluşan kromozomdur ve sayısı aynı türün sağlıklı bireylerinde sabittir.`,
-    `M, belirli bir kalıtsal özelliğin ortaya çıkmasını sağlayan bilgiyi taşıyan gendir.`,
-    `N, yapısında fosfat, deoksiriboz şekeri ve organik baz bulunduran nükleotittir.`,
-    `Bir L molekülünde yalnızca bir tane M bulunur ve N’nin çeşidi canlıdan canlıya değişir.`
-  ],
-  a: "D",
-  s: `<p>K: Kromozom, L: DNA, M: Gen, N: Nükleotit yapısını gösterir (A, B ve C doğrudur).</p><p>Bir DNA (L) molekülünde <b>binlerce gen (M)</b> bulunur ve tüm canlılarda N (nükleotit) çeşidi 4 tanedir (A, T, G, C), canlıdan canlıya değişmez. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Sağlıklı bir DNA molekülünün eşlenme süreci Şekil 1’de, bu DNA molekülünün kendini hatasız eşlemesi sırasında <b>sitoplazmada</b> bulunan serbest organik baz sayılarının zamana bağlı değişimi ise Şekil 2’deki grafikte gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="DNA eşlenmesi zincirleri ve sitoplazmadaki baz değişim grafiği">
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="125" y="18">Şekil 1: DNA Eşlenmesi</text>
-<text x="395" y="18">Şekil 2: Sitoplazmadaki Serbest Baz Sayısı</text>
-</g>
-<path d="M55,30 L55,95 L25,145" fill="none" stroke="#1e3a8a" stroke-width="3.5"/>
-<path d="M195,30 L195,95 L225,145" fill="none" stroke="#1e3a8a" stroke-width="3.5"/>
-<path d="M55,95 L85,145" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="4 2"/>
-<path d="M195,95 L165,145" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="4 2"/>
-<g font-size="10" font-weight="bold">
-<text x="32" y="55" fill="#1e3a8a">1. İplik</text><text x="202" y="55" fill="#1e3a8a">2. İplik</text>
-<text x="72" y="160" fill="#dc2626">K ipliği</text><text x="152" y="160" fill="#dc2626">L ipliği</text>
-</g>
-<g font-size="10" text-anchor="middle" fill="#334155">
-<text x="72" y="45">A</text><text x="178" y="45">T</text><line x1="80" y1="41" x2="170" y2="41" stroke="#94a3b8"/>
-<text x="72" y="65">G</text><text x="178" y="65">C</text><line x1="80" y1="61" x2="170" y2="61" stroke="#94a3b8"/>
-<text x="72" y="85">G</text><text x="178" y="85">C</text><line x1="80" y1="81" x2="170" y2="81" stroke="#94a3b8"/>
-</g>
-<line x1="295" y1="145" x2="515" y2="145" stroke="#334155" stroke-width="1.5"/>
-<line x1="295" y1="30" x2="295" y2="145" stroke="#334155" stroke-width="1.5"/>
-<line x1="295" y1="42" x2="495" y2="115" stroke="#dc2626" stroke-width="2.2"/>
-<line x1="295" y1="68" x2="495" y2="128" stroke="#2563eb" stroke-width="2.2"/>
-<g font-size="9.5" text-anchor="end">
-<text x="290" y="45">120</text><text x="290" y="71">90</text><text x="290" y="118">40</text><text x="290" y="131">30</text>
-</g>
-<text x="505" y="115" font-size="10" font-weight="bold" fill="#dc2626">X ve Y</text>
-<text x="505" y="131" font-size="10" font-weight="bold" fill="#2563eb">Z ve T</text>
-<text x="405" y="162" font-size="10" text-anchor="middle">Zaman</text>
-</svg></div>
-<p>Buna göre DNA’nın bu eşlenme süreciyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Yeni oluşan K ipliğinin nükleotit dizilimi 1. iplikle, L ipliğinin nükleotit dizilimi ise 2. iplikle aynıdır.`,
-    `Eşlenme tamamlandığında sitoplazmadan çekirdeğe toplam 280 adet deoksiriboz şekeri geçmiştir.`,
-    `X bazı Guanin ise Y bazı kesinlikle Adenin’dir.`,
-    `Eşlenme süresince çekirdekteki toplam fosfat sayısı azalmıştır.`
-  ],
-  a: "B",
-  s: `<p>1. ipliğin karşısına K ipliği geldiği için K’nin dizilimi 2. iplikle; 2. ipliğin karşısına L geldiği için L’nin dizilimi 1. iplikle aynıdır (A yanlıştır).</p><p>Grafikte X ve Y’nin her birinden 120 − 40 = 80’er adet (toplam 160); Z ve T’nin her birinden 90 − 30 = 60’ar adet (toplam 120) kullanılmıştır. Toplam 160 + 120 = <b>280 nükleotit</b> sentezlendiği için sitoplazmadan çekirdeğe <b>280 adet deoksiriboz şekeri</b> geçmiştir (<b>B doğru</b>).</p>`
-},
-{
-  q: `<p>Bir öğrenci DNA modeli yapmak için renkli boncuklar kullanmış ve her rengi bir baza karşılık getirmiştir: <b style="color:#dc2626">kırmızı</b> = adenin, <b style="color:#2563eb">mavi</b> = timin, <b style="color:#16a34a">yeşil</b> = guanin, <b style="color:#ca8a04">sarı</b> = sitozin.</p>
-<div class="fig"><svg viewBox="0 0 260 250" width="230" role="img" aria-label="Boncuklu DNA modeli">
-<g stroke="#334155" stroke-width="4"><line x1="50" y1="10" x2="50" y2="240"/><line x1="210" y1="10" x2="210" y2="240"/></g>
-<g stroke="#333">
-<circle cx="95" cy="30" r="14" fill="#ef4444"/><circle cx="165" cy="30" r="14" fill="#3b82f6"/>
-<circle cx="95" cy="68" r="14" fill="#22c55e"/><circle cx="165" cy="68" r="14" fill="#eab308"/>
-<circle cx="95" cy="106" r="14" fill="#3b82f6"/><circle cx="165" cy="106" r="14" fill="#ef4444"/>
-<circle cx="95" cy="144" r="14" fill="#ef4444"/><circle cx="165" cy="144" r="14" fill="#22c55e"/>
-<circle cx="95" cy="182" r="14" fill="#eab308"/><circle cx="165" cy="182" r="14" fill="#22c55e"/>
-<circle cx="95" cy="220" r="14" fill="#3b82f6"/><circle cx="165" cy="220" r="14" fill="#ef4444"/></g>
-<g stroke="#94a3b8" stroke-width="2"><line x1="50" y1="30" x2="81" y2="30"/><line x1="179" y1="30" x2="210" y2="30"/><line x1="50" y1="68" x2="81" y2="68"/><line x1="179" y1="68" x2="210" y2="68"/><line x1="50" y1="106" x2="81" y2="106"/><line x1="179" y1="106" x2="210" y2="106"/><line x1="50" y1="144" x2="81" y2="144"/><line x1="179" y1="144" x2="210" y2="144"/><line x1="50" y1="182" x2="81" y2="182"/><line x1="179" y1="182" x2="210" y2="182"/><line x1="50" y1="220" x2="81" y2="220"/><line x1="179" y1="220" x2="210" y2="220"/></g>
-<g font-size="11" text-anchor="end"><text x="40" y="34">1</text><text x="40" y="72">2</text><text x="40" y="110">3</text><text x="40" y="148">4</text><text x="40" y="186">5</text><text x="40" y="224">6</text></g>
-</svg></div>
-<p>Öğretmen, modeldeki sol ipliğin doğru olduğunu ancak sağ iplikte bir boncuğun yanlış yerleştirildiğini söylemiştir. Öğrenci hatayı düzelttiğinde modeldeki toplam <b>guanin</b> ve <b>timin</b> bazı sayıları kaç olur?</p>`,
-  c: [`Guanin: 2, Timin: 4`, `Guanin: 3, Timin: 3`, `Guanin: 2, Timin: 3`, `Guanin: 1, Timin: 4`],
-  a: "A",
-  s: `<p>Eşleşmeler: adenin (kırmızı) – timin (mavi), guanin (yeşil) – sitozin (sarı). 4. sırada kırmızının (adenin) karşısına yeşil (guanin) konmuştur; doğrusu <b>mavi (timin)</b> olmalıdır.</p><p>Düzeltilmiş modelde Guanin (yeşil): 2. sıra sol + 5. sıra sağ = <b>2</b>. Timin (mavi): 1. sağ + 3. sol + 4. sağ + 6. sol = <b>4</b> olur. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Radyasyona maruz kalan bir hücredeki DNA molekülünün dört farklı bölgesinde (K, L, M ve N) meydana gelen değişimler aşağıda modellenmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="DNA üzerinde K L M N hasar bölgeleri">
-<line x1="30" y1="45" x2="510" y2="45" stroke="#1e3a8a" stroke-width="4"/>
-<line x1="30" y1="95" x2="510" y2="95" stroke="#1e3a8a" stroke-width="4"/>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<rect x="55" y="25" width="28" height="20" fill="#3b82f6"/><text x="69" y="39" fill="#fff">A</text>
-<rect x="55" y="95" width="28" height="20" fill="#f59e0b"/><text x="69" y="109" fill="#fff">T</text>
-<rect x="125" y="25" width="28" height="20" fill="#10b981"/><text x="139" y="39" fill="#fff">G</text>
-<rect x="125" y="95" width="28" height="20" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="139" y="109" fill="#dc2626">boş</text>
-<rect x="230" y="25" width="28" height="20" fill="#3b82f6"/><text x="244" y="39" fill="#fff">A</text>
-<rect x="230" y="95" width="28" height="20" fill="#10b981"/><text x="244" y="109" fill="#fff">G</text>
-<rect x="335" y="25" width="28" height="20" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="349" y="39" fill="#dc2626">boş</text>
-<rect x="335" y="95" width="28" height="20" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="349" y="109" fill="#dc2626">boş</text>
-<rect x="440" y="25" width="28" height="20" fill="#fff" stroke="#dc2626" stroke-dasharray="3 2"/><text x="454" y="39" fill="#dc2626">boş</text>
-<rect x="440" y="95" width="28" height="20" fill="#8b5cf6"/><text x="454" y="109" fill="#fff">C</text>
-<text x="139" y="132" fill="#dc2626">K Bölgesi</text>
-<text x="244" y="132" fill="#dc2626">L Bölgesi</text>
-<text x="349" y="132" fill="#dc2626">M Bölgesi</text>
-<text x="454" y="132" fill="#dc2626">N Bölgesi</text>
-</g>
-</svg></div>
-<p>DNA’nın onarım mekanizması dikkate alındığında K, L, M ve N bölgeleriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `K, L ve N bölgelerindeki hatalar onarılabilirken M bölgesindeki hata onarılamaz.`,
-    `Yalnızca L bölgesindeki yanlış eşleşme onarılabilir; K, M ve N bölgelerindeki eksiklikler onarılamaz.`,
-    `K ve N bölgeleri karşılıklı farklı ipliklerde boşluk içerdiği için ikisi de onarılamaz.`,
-    `M bölgesindeki hata sitoplazmadan rastgele iki nükleotit getirilerek hatasız şekilde onarılır.`
+    `Almanya, Osmanlı Devleti’nin gelişmiş sanayisinden ve modern silah teknolojisinden yararlanmak istemiştir.`,
+    `Osmanlı Devleti, savaş öncesinde kendisini ekonomik açıdan kısıtlayan ayrıcalıklardan kurtulmayı hedeflemiştir.`,
+    `Almanya, Osmanlı Devleti’nin hem jeopolitik konumundan hem de İslam dünyası üzerindeki dinî nüfuzundan faydalanmayı amaçlamıştır.`,
+    `İki devletin ittifak kurmasında karşılıklı siyasi ve askerî çıkarlar etkili olmuştur.`
   ],
   a: "A",
-  s: `<p>DNA onarım kurallarına göre: <b>K ve N bölgelerinde</b> yalnızca tek iplikte nükleotit eksikliği olduğu için karşı iplikteki baza bakılarak (K’ye C, N’ye G getirilerek) onarılır. <b>L bölgesindeki</b> yanlış eşleşme (A–G) de onarılır. Ancak <b>M bölgesinde</b> karşılıklı iki iplikte aynı anda baz kaybı olduğu için bu hasar <b>onarılamaz</b>. Cevap <b>A</b>.</p>`
+  s: `<p>Osmanlı Devleti Sanayi İnkılabı’nı gerçekleştirememiş, ekonomik ve teknolojik açıdan zayıf bir durumdaydı. Almanya, Osmanlı’nın teknolojik veya ekonomik gücünden değil; <b>jeopolitik konumundan</b> (Boğazlar, yeni cepheler) ve <b>Halifelik makamının dinî gücünden</b> yararlanmak istemiştir. Dolayısıyla <b>A</b> seçeneğine ulaşılamaz.</p>`
 },
 {
-  q: `<p>Toplam 1200 nükleotitten oluşan sağlıklı bir DNA molekülündeki Timin nükleotitlerinin sayısı aşağıdaki dairesel grafikte gösterilmiştir. Bu DNA molekülü hücre bölünmesi öncesinde art arda <b>3 kez</b> kendini hatasız eşliyor.</p>
-<div class="fig"><svg viewBox="0 0 460 135" width="440" role="img" aria-label="1200 nükleotitli DNA baz dağılımı ve 3 kez eşlenme">
-<circle cx="95" cy="68" r="52" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
-<path d="M95,68 L95,16 A52,52 0 0,1 145,82 Z" fill="#ef4444" stroke="#991b1b"/>
-<text x="95" y="72" font-size="10.5" font-weight="bold" text-anchor="middle">Toplam: 1200</text>
-<text x="155" y="45" font-size="10.5" font-weight="bold" fill="#dc2626">← Timin: 250 adet</text>
-<rect x="275" y="22" width="170" height="90" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<text x="360" y="45" font-size="11" font-weight="bold" text-anchor="middle">Art Arda 3 Eşlenme:</text>
-<text x="360" y="68" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="middle">1 → 2 → 4 → 8 DNA</text>
-<text x="360" y="92" font-size="9.5" fill="#475569" text-anchor="middle">(İlk iplikleri taşıyan DNA = ?)</text>
-</svg></div>
-<p>Buna göre başlangıçtaki DNA molekülü ve 3. eşlenme sonundaki durumla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Başlangıçtaki DNA’da Sitozin sayısı Timin sayısına eşittir ve 3. eşlenme sonunda 6 DNA ilk iplikleri taşır.`,
-    `Başlangıçtaki DNA’da 350 adet Guanin bulunur ve 3. eşlenme sonunda oluşan 8 DNA’dan yalnızca 2 tanesi ilk DNA’ya ait ipliklerden birini taşır.`,
-    `Başlangıçtaki DNA’da 250 adet Guanin bulunur ve 3. eşlenme sonunda oluşan 8 DNA’nın tamamı ilk DNA’nın ipliklerini taşır.`,
-    `Başlangıçtaki DNA’da toplam 600 adet fosfat bulunur.`
-  ],
-  a: "B",
-  s: `<p>Başlangıçtaki 1200 nükleotitli DNA’da Timin = 250 ise Adenin = 250’dir (A + T = 500). Kalan 1200 − 500 = 700 nükleotit Guanin ve Sitozindir → <b>Guanin = Sitozin = 350</b> (Fosfat sayısı ise 1200’dür).</p><p>DNA 3 kez eşlendiğinde 2³ = 8 DNA oluşur; ancak en baştaki DNA’nın yalnızca <b>2 ipliği</b> olduğu ve bu iplikler parçalanmadığı için 8 DNA’dan <b>yalnızca 2 tanesi</b> ilk DNA’ya ait eski iplikleri taşır. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bezelyelerde mor çiçek rengi aleli (M), beyaz çiçek rengi aleline (m) baskındır. Fenotipleri bilinmeyen K ve L bezelyeleri çaprazlandığında oluşan 1. kuşak (F₁) bezelyelerin <b>fenotip</b> ve <b>genotip</b> oranları aşağıdaki grafiklerde verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 520 170" width="500" role="img" aria-label="Çaprazlama sonucu fenotip ve genotip oranı grafikleri">
-<line x1="55" y1="135" x2="225" y2="135" stroke="#334155" stroke-width="1.5"/>
-<line x1="55" y1="25" x2="55" y2="135" stroke="#334155" stroke-width="1.5"/>
-<rect x="85" y="45" width="35" height="90" fill="#7c3aed"/>
-<rect x="155" y="105" width="35" height="30" fill="#cbd5e1" stroke="#64748b"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="102" y="40">%75</text><text x="102" y="150">Mor Çiçek</text>
-<text x="172" y="100">%25</text><text x="172" y="150">Beyaz Çiçek</text>
-<text x="140" y="165">Grafik 1: Fenotip Oranı</text>
-</g>
-<line x1="305" y1="135" x2="495" y2="135" stroke="#334155" stroke-width="1.5"/>
-<line x1="305" y1="25" x2="305" y2="135" stroke="#334155" stroke-width="1.5"/>
-<rect x="325" y="95" width="30" height="40" fill="#2563eb"/>
-<rect x="385" y="55" width="30" height="80" fill="#16a34a"/>
-<rect x="445" y="95" width="30" height="40" fill="#dc2626"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="340" y="90">%25</text><text x="340" y="150">MM</text>
-<text x="400" y="50">%50</text><text x="400" y="150">Mm</text>
-<text x="460" y="90">%25</text><text x="460" y="150">mm</text>
-<text x="400" y="165">Grafik 2: Genotip Oranı</text>
-</g>
-</svg></div>
-<p>Buna göre çaprazlanan K ve L ata bezelyeleri ile oluşan yavrular hakkında aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: [
-    `Çaprazlanan K ve L bezelyelerinin her ikisi de melez (Mm) genotipli ve mor çiçeklidir.`,
-    `Oluşan bezelyelerin {{1|2}}’si saf (homozigot) döl, {{1|2}}’si ise melez (heterozigot) döldür.`,
-    `Oluşan mor çiçekli bezelyelerin tamamı çekinik (beyaz çiçek) aleli taşımaktadır.`,
-    `1. kuşakta oluşan beyaz çiçekli bir bezelye ile K bezelyesi çaprazlanırsa {{1|2}} olasılıkla beyaz çiçekli bezelye oluşur.`
-  ],
-  a: "C",
-  s: `<p>%75 ({{3|4}}) Mor – %25 ({{1|4}}) Beyaz fenotip oranı yalnızca <b>Mm × Mm</b> çaprazlamasıyla elde edilir (A ve B doğru). Oluşan mor çiçekli bezelyeler MM, Mm ve Mm’dir; bunlardan <b>MM olanı çekinik alel (m) taşımaz</b>. Dolayısıyla mor çiçeklilerin tamamı çekinik alel taşır ifadesi yanlıştır. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki soyağacında çekinik bir genle aktarılan kalıtsal bir özelliğin bir ailedeki dağılımı gösterilmiştir. Kare erkek bireyleri, daire dişi bireyleri; içi dolu şekiller ise bu çekinik özelliği dış görünüşünde (fenotipinde) gösteren bireyleri temsil etmektedir.</p>
-<div class="fig"><svg viewBox="0 0 360 230" width="340" role="img" aria-label="Soyağacı">
-<g stroke="#333" stroke-width="2" fill="none"><line x1="95" y1="35" x2="175" y2="35"/><line x1="135" y1="35" x2="135" y2="70"/><line x1="85" y1="70" x2="185" y2="70"/><line x1="85" y1="70" x2="85" y2="95"/><line x1="185" y1="70" x2="185" y2="95"/>
-<line x1="200" y1="110" x2="265" y2="110"/><line x1="232" y1="110" x2="232" y2="150"/><line x1="190" y1="150" x2="275" y2="150"/><line x1="190" y1="150" x2="190" y2="170"/><line x1="275" y1="150" x2="275" y2="170"/></g>
-<rect x="65" y="20" width="30" height="30" fill="#fff" stroke="#333" stroke-width="2"/><circle cx="190" cy="35" r="15" fill="#fff" stroke="#333" stroke-width="2"/>
-<circle cx="85" cy="110" r="15" fill="#334155" stroke="#333" stroke-width="2"/><rect x="170" y="95" width="30" height="30" fill="#fff" stroke="#333" stroke-width="2"/><circle cx="280" cy="110" r="15" fill="#334155" stroke="#333" stroke-width="2"/>
-<rect x="175" y="170" width="30" height="30" fill="#fff" stroke="#333" stroke-width="2"/><circle cx="275" cy="185" r="15" fill="#334155" stroke="#333" stroke-width="2"/>
-<g font-size="13" font-weight="bold" text-anchor="middle"><text x="80" y="64">1</text><text x="190" y="64">2</text><text x="85" y="142">3</text><text x="185" y="142">4</text><text x="280" y="142">5</text><text x="190" y="218">6</text><text x="275" y="218">7</text></g>
-</svg></div>
-<p>Buna göre numaralandırılmış bireylerden hangilerinin bu özellik bakımından <b>kesinlikle heterozigot (melez)</b> olduğu söylenebilir?</p>`,
-  c: [`1 ve 2`, `1, 2 ve 4`, `4 ve 6`, `1, 2, 4 ve 6`],
-  a: "D",
-  s: `<p>Özellik çekinik olduğundan içi dolu bireyler (3, 5, 7) <b>mm</b> genotiplidir. 1 ve 2 özelliği göstermediği hâlde kızları 3 (mm) özelliği gösteriyor → <b>1 ve 2 kesinlikle Mm’dir</b>. 4 özelliği göstermiyor ama kızı 7 (mm) gösteriyor → <b>4 kesinlikle Mm’dir</b>. 6 özelliği göstermiyor ama annesi 5 (mm) ona mutlaka m vermiştir → <b>6 da kesinlikle Mm’dir</b>. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bezelyelerde sarı tohum rengi aleli (S), yeşil tohum rengi aleline (s) baskındır. Aşağıdaki şemada bir bezelye ailesindeki bireylerin tohum rengi fenotipleri gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 460 165" width="440" role="img" aria-label="Bezelye tohum rengi soyağacı">
-<circle cx="110" cy="30" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
-<circle cx="210" cy="30" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
-<line x1="128" y1="30" x2="192" y2="30" stroke="#334155" stroke-width="2"/>
-<line x1="160" y1="30" x2="160" y2="70" stroke="#334155" stroke-width="2"/>
-<line x1="70" y1="70" x2="250" y2="70" stroke="#334155" stroke-width="2"/>
-<line x1="70" y1="70" x2="70" y2="90" stroke="#334155" stroke-width="2"/>
-<line x1="160" y1="70" x2="160" y2="90" stroke="#334155" stroke-width="2"/>
-<line x1="250" y1="70" x2="250" y2="90" stroke="#334155" stroke-width="2"/>
-<circle cx="70" cy="108" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
-<circle cx="160" cy="108" r="18" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
-<circle cx="250" cy="108" r="18" fill="#fbbf24" stroke="#b45309" stroke-width="2"/>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="110" y="34">1</text><text x="210" y="34">2</text>
-<text x="70" y="112">3</text><text x="160" y="112" fill="#fff">4</text><text x="250" y="112">5</text>
-</g>
-<circle cx="330" cy="50" r="10" fill="#fbbf24" stroke="#b45309"/><text x="348" y="54" font-size="11">Sarı tohumlu bezelye</text>
-<circle cx="330" cy="80" r="10" fill="#22c55e" stroke="#15803d"/><text x="348" y="84" font-size="11">Yeşil tohumlu bezelye</text>
-</svg></div>
-<p>Şemadaki numaralandırılmış bezelyelerin genotipleri ile ilgili aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
-  c: [
-    `1 ve 2 numaralı bezelyelerin biri saf baskın (SS), diğeri melez (Ss) genotiplidir.`,
-    `3 ve 5 numaralı bezelyelerin genotipi kesinlikle melezdir (Ss).`,
-    `1, 2 ve 4 numaralı bezelyelerin tamamında çekinik tohum rengi aleli (s) bulunur.`,
-    `4 ve 5 numaralı bezelyeler çaprazlanırsa yeşil tohumlu bezelye oluşma ihtimali yoktur.`
-  ],
-  a: "C",
-  s: `<p>Yeşil tohumlu 4 numaralı bezelye <b>ss</b> genotiplidir; bu çekinik alellerin biri 1’den, diğeri 2’den geldiği için sarı görünen 1 ve 2 numaralı bezelyeler kesinlikle <b>Ss (melez)</b> genotiplidir. Dolayısıyla 1, 2 ve 4’ün tamamında çekinik alel (s) kesinlikle bulunur (<b>C doğru</b>). 3 ve 5 ise SS veya Ss olabilir.</p>`
-},
-{
-  q: `<p>Bezelyelerde tohum şekli bakımından yuvarlak tohum geni (D), buruşuk tohum genine (d) baskındır. Bir araştırmacı iki aşamalı bir çaprazlama deneyi yapıyor ve 2. aşama sonunda <b>800 adet</b> yeni tohum (F₂ dölü) elde ediyor.</p>
-<div class="fig"><svg viewBox="0 0 480 110" width="460" role="img" aria-label="1. ve 2. aşama bezelye çaprazlama şeması">
-<circle cx="55" cy="40" r="16" fill="#fde047" stroke="#ca8a04" stroke-width="2"/><text x="55" y="72" font-size="9.5" font-weight="bold" text-anchor="middle">Saf Yuvarlak</text>
-<text x="90" y="44" font-size="14" font-weight="bold">×</text>
-<polygon points="125,24 139,32 135,48 120,54 111,42" fill="#a3e635" stroke="#4d7c0f" stroke-width="2"/><text x="125" y="72" font-size="9.5" font-weight="bold" text-anchor="middle">Buruşuk</text>
-<line x1="150" y1="40" x2="195" y2="40" stroke="#334155" stroke-width="2"/>
-<rect x="200" y="20" width="95" height="40" rx="5" fill="#dbeafe" stroke="#2563eb"/>
-<text x="247" y="38" font-size="10.5" font-weight="bold" text-anchor="middle">F₁ Kuşağı</text>
-<text x="247" y="52" font-size="9.5" text-anchor="middle">(%100 Yuvarlak)</text>
-<line x1="295" y1="40" x2="340" y2="40" stroke="#334155" stroke-width="2"/>
-<rect x="345" y="15" width="120" height="55" rx="5" fill="#dcfce7" stroke="#16a34a"/>
-<text x="405" y="35" font-size="10.5" font-weight="bold" text-anchor="middle">F₂ Kuşağı (F₁ × F₁)</text>
-<text x="405" y="52" font-size="9.5" text-anchor="middle">800 adet tohum</text>
-</svg></div>
-<p>Elde edilen F₁ ve F₂ tohumlarıyla ilgili aşağıdakilerden hangisi <b>beklenir</b>?</p>`,
-  c: [
-    `F₂ kuşağındaki 800 tohumdan yaklaşık 200 tanesinin buruşuk (dd), 400 tanesinin melez yuvarlak (Dd), 200 tanesinin saf yuvarlak (DD) olması`,
-    `F₁ kuşağındaki yuvarlak tohumların yarısının saf (DD), yarısının melez (Dd) olması`,
-    `F₂ kuşağındaki yuvarlak tohumların tamamının heterozigot (Dd) olması`,
-    `F₁ kuşağında buruşuk tohum görülmemesi nedeniyle buruşuk tohum geninin tamamen yok olması`
-  ],
-  a: "A",
-  s: `<p>1. aşamada DD × dd çaprazlamasından oluşan F₁ dölünün tamamı (%100) <b>Dd (melez yuvarlak)</b> olur. 2. aşamada Dd × Dd çaprazlandığında olasılıklar: {{1|4}} DD (yaklaşık 200 saf yuvarlak), {{2|4}} Dd (yaklaşık 400 melez yuvarlak) ve {{1|4}} dd (yaklaşık 200 buruşuk) şeklindedir. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir genetik danışmanlık merkezinde, kuzen evliliği yapmayı düşünen sağlıklı görünümlü bir çifte aşağıdaki olasılık tablosu gösterilerek “Akraba evliliklerinde kalıtsal hastalıkların çocuklarda görülme olasılığı artar.” bilgisi veriliyor.</p>
-<div class="fig"><svg viewBox="0 0 440 125" width="420" role="img" aria-label="Taşıyıcı anne ve baba çaprazlama tablosu">
-<rect x="30" y="15" width="160" height="35" rx="5" fill="#fef3c7" stroke="#d97706"/>
-<text x="110" y="37" font-size="10.5" font-weight="bold" text-anchor="middle">Taşıyıcı Anne (Aa)</text>
-<rect x="250" y="15" width="160" height="35" rx="5" fill="#fef3c7" stroke="#d97706"/>
-<text x="330" y="37" font-size="10.5" font-weight="bold" text-anchor="middle">Taşıyıcı Baba (Aa)</text>
-<rect x="30" y="70" width="85" height="38" rx="4" fill="#dcfce7" stroke="#16a34a"/>
-<rect x="128" y="70" width="85" height="38" rx="4" fill="#e0f2fe" stroke="#0284c7"/>
-<rect x="226" y="70" width="85" height="38" rx="4" fill="#e0f2fe" stroke="#0284c7"/>
-<rect x="324" y="70" width="85" height="38" rx="4" fill="#fee2e2" stroke="#dc2626"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="72" y="93">AA (Sağlıklı)</text>
-<text x="170" y="93">Aa (Taşıyıcı)</text>
-<text x="268" y="93">Aa (Taşıyıcı)</text>
-<text x="366" y="93" fill="#dc2626">aa (%25 Hasta)</text>
-</g>
-</svg></div>
-<p>Bu bilginin bilimsel açıklaması aşağıdakilerden hangisidir?</p>`,
-  c: [
-    `Akraba bireylerin ortak atadan gelen aynı çekinik hastalık genini (a) taşıma olasılığı yüksek olduğundan bu genlerin çocukta (aa) bir araya gelme ihtimali artar.`,
-    `Akraba evliliklerinde anne ve babanın kromozom sayıları birbirinden farklı olur.`,
-    `Akraba evliliklerinde sağlıklı baskın genler (A) çekinik hâle dönüşür.`,
-    `Akraba evliliği yapan bireylerin üreme hücrelerinde her zaman radyasyon kaynaklı mutasyon oluşur.`
-  ],
-  a: "A",
-  s: `<p>Kalıtsal hastalıkların çoğu <b>çekinik genlerle (a)</b> taşınır. Kan bağı olan akraba bireylerin aynı çekinik hastalık genini taşıyıcı (Aa) olarak bulundurma ihtimali yüksek olduğundan, çocuklarında iki çekinik genin yan yana gelerek (<b>aa – {{1|4}} olasılıkla</b>) hastalığı ortaya çıkarma riski artar. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Sağlıklı bir anne ve babanın doğacak çocuklarının cinsiyet oluşum şeması aşağıda gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 460 140" width="440" role="img" aria-label="İnsanda cinsiyetin belirlenmesi çaprazlama şeması">
-<rect x="65" y="10" width="120" height="32" rx="5" fill="#fce7f3" stroke="#db2777"/>
-<text x="125" y="30" font-size="11" font-weight="bold" text-anchor="middle">Anne (44 + XX)</text>
-<rect x="275" y="10" width="120" height="32" rx="5" fill="#dbeafe" stroke="#2563eb"/>
-<text x="335" y="30" font-size="11" font-weight="bold" text-anchor="middle">Baba (44 + XY)</text>
-<g stroke="#64748b" stroke-width="1.5">
-<line x1="125" y1="42" x2="80" y2="90"/><line x1="335" y1="42" x2="80" y2="90"/>
-<line x1="125" y1="42" x2="180" y2="90"/><line x1="335" y1="42" x2="180" y2="90"/>
-<line x1="125" y1="42" x2="280" y2="90"/><line x1="335" y1="42" x2="280" y2="90"/>
-<line x1="125" y1="42" x2="380" y2="90"/><line x1="335" y1="42" x2="380" y2="90"/>
-</g>
-<rect x="45" y="90" width="70" height="34" rx="4" fill="#fce7f3" stroke="#db2777"/>
-<rect x="145" y="90" width="70" height="34" rx="4" fill="#dbeafe" stroke="#2563eb"/>
-<rect x="245" y="90" width="70" height="34" rx="4" fill="#fce7f3" stroke="#db2777"/>
-<rect x="345" y="90" width="70" height="34" rx="4" fill="#dbeafe" stroke="#2563eb"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="80" y="111">44+XX (Kız)</text>
-<text x="180" y="111">44+XY (Erkek)</text>
-<text x="280" y="111">44+XX (Kız)</text>
-<text x="380" y="111">44+XY (Erkek)</text>
-</g>
-</svg></div>
-<p>İlk üç çocuğu <b>erkek</b> olan bu ailenin 4. çocuklarının cinsiyeti ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `İlk üç çocuk erkek olduğu için 4. çocuğun kız olma ihtimali {{3|4}}’e yükselmiştir.`,
-    `4. çocuğun erkek olma ihtimali {{1|2}} (%50)’dir ve çocuğun cinsiyetini babadan gelen eşey kromozomu (X veya Y) belirler.`,
-    `Anneden çocuğa hem X hem de Y kromozomu aktarılabildiği için şans eşittir.`,
-    `Bu ailede sadece Y kromozomu taşıyan spermler üretildiği için 4. çocuk da kesinlikle erkek olur.`
-  ],
-  a: "B",
-  s: `<p>Her doğum birbirinden bağımsızdır; önceki çocukların cinsiyeti ne olursa olsun yeni doğacak çocuğun kız (XX) veya erkek (XY) olma olasılığı daima <b>{{1|2}} (%50)</b>’dir. Anneden sadece X gelebildiği için cinsiyeti babadan gelen sperm (X veya Y) belirler. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bir araştırmacı, kalıtsal ve kalıtsal olmayan değişimleri incelemek için <b>çuha bitkisi</b> ve <b>sirke sinekleri</b> üzerinde aşağıdaki iki ayrı deneyi gerçekleştiriyor.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Çuha çiçeği ve sirke sineği deneyleri">
-<rect x="10" y="15" width="250" height="140" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<text x="135" y="34" font-size="11" font-weight="bold" text-anchor="middle">1. Deney: Özdeş Çuha Bitkileri</text>
-<circle cx="70" cy="75" r="18" fill="#ef4444" stroke="#991b1b"/>
-<text x="70" y="112" font-size="10" font-weight="bold" text-anchor="middle">18 °C Ortam</text>
-<text x="70" y="126" font-size="10" fill="#dc2626" text-anchor="middle">Kırmızı Çiçek</text>
-<circle cx="200" cy="75" r="18" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
-<text x="200" y="112" font-size="10" font-weight="bold" text-anchor="middle">32 °C Ortam</text>
-<text x="200" y="126" font-size="10" fill="#475569" text-anchor="middle">Beyaz Çiçek</text>
-<text x="135" y="146" font-size="9.5" text-anchor="middle">Beyaz çiçekten alınan tohum 18 °C'de → Kırmızı</text>
-<rect x="280" y="15" width="250" height="140" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<text x="405" y="34" font-size="11" font-weight="bold" text-anchor="middle">2. Deney: Sirke Sinekleri</text>
-<ellipse cx="340" cy="75" rx="22" ry="12" fill="#3b82f6"/>
-<text x="340" y="112" font-size="10" font-weight="bold" text-anchor="middle">25 °C Larva</text>
-<text x="340" y="126" font-size="10" fill="#1e3a8a" text-anchor="middle">Kıvrık Kanat</text>
-<ellipse cx="470" cy="75" rx="22" ry="12" fill="#dc2626"/>
-<text x="470" y="112" font-size="10" font-weight="bold" text-anchor="middle">X-Işını Verilen</text>
-<text x="470" y="126" font-size="10" fill="#dc2626" text-anchor="middle">Beyaz Gözlü Sinek</text>
-<text x="405" y="146" font-size="9.5" text-anchor="middle">Beyaz gözlü sineğin tüm yavruları → Beyaz gözlü</text>
-</svg></div>
-<p>Yapılan bu iki deneyle ilgili aşağıdaki çıkarımlardan hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `1. deneyde sıcaklık değişimi çuha bitkisinin çiçek rengi geninin nükleotit dizilimini değiştirmiştir.`,
-    `2. deneyde 25 °C’de kıvrık kanat oluşması ve X-ışınıyla beyaz göz oluşmasının her ikisi de mutasyondur.`,
-    `1. deneydeki değişim genlerin işleyişini değiştiren modifikasyona, 2. deneydeki X-ışını uygulaması ise üreme hücrelerinde gerçekleşen kalıtsal mutasyona örnektir.`,
-    `Beyaz çiçekli çuha bitkisinden alınan tohumların 18 °C’de kırmızı çiçek açması modifikasyonların kalıtsal olduğunu kanıtlar.`
-  ],
-  a: "C",
-  s: `<p>1. deneyde sıcaklığa bağlı çiçek rengi değişimi <b>genin işleyişini değiştiren modifikasyondur</b> ve kalıtsal değildir. 2. deneyde ise X-ışını ile oluşan beyaz göz özelliğinin tüm yavrulara aktarılması <b>üreme hücrelerinde gerçekleşen kalıtsal mutasyondur</b>. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Himalaya tavşanlarının sırtındaki beyaz tüyler kazınıp üzerine <b>buz torbası</b> bağlandığında yeni çıkan tüylerin <b>siyah</b> olduğu (Şekil 1), bu siyah tüyler kazınıp tavşan <b>oda sıcaklığında (25 °C)</b> bekletildiğinde ise yeni çıkan tüylerin tekrar <b>beyaz</b> olduğu gözlemleniyor (Şekil 2).</p>
-<div class="fig"><svg viewBox="0 0 500 135" width="480" role="img" aria-label="Himalaya tavşanı buz torbası deneyi">
-<defs><marker id="hmA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<ellipse cx="85" cy="75" rx="45" ry="26" fill="#fff" stroke="#475569" stroke-width="2"/>
-<rect x="65" y="34" width="40" height="16" rx="3" fill="#38bdf8" stroke="#0284c7"/>
-<text x="85" y="45" font-size="9.5" font-weight="bold" fill="#fff" text-anchor="middle">BUZ</text>
-<text x="85" y="118" font-size="10.5" font-weight="bold" text-anchor="middle">Beyaz tüy kazınıp buz konuyor</text>
-<path d="M145,75 L185,75" stroke="#475569" stroke-width="2" marker-end="url(#hmA)"/>
-<ellipse cx="250" cy="75" rx="45" ry="26" fill="#fff" stroke="#475569" stroke-width="2"/>
-<rect x="230" y="49" width="40" height="12" rx="3" fill="#1e293b"/>
-<text x="250" y="118" font-size="10.5" font-weight="bold" text-anchor="middle">Şekil 1: Siyah tüy çıkıyor</text>
-<path d="M310,75 L350,75" stroke="#475569" stroke-width="2" marker-end="url(#hmA)"/>
-<ellipse cx="415" cy="75" rx="45" ry="26" fill="#fff" stroke="#475569" stroke-width="2"/>
-<text x="415" y="118" font-size="10.5" font-weight="bold" text-anchor="middle">Şekil 2: 25 °C'de tekrar beyaz</text>
-</svg></div>
-<p>Bu deneyden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: [
-    `Çevresel faktörler (sıcaklık), kürk renginden sorumlu genlerin çalışma şeklini (işleyişini) değiştirmiştir.`,
-    `Sırt bölgesinde siyah tüyleri çıkan bu tavşanın yavrularının da sırtı doğuştan siyah tüylü olur.`,
-    `Etken (buz torbası) ortadan kalktığında canlı eski fenotipine geri dönebilmektedir.`,
-    `Buz konulan bölgedeki deri hücrelerinin DNA’larındaki nükleotit dizilimi değişmemiştir.`
-  ],
-  a: "B",
-  s: `<p>Himalaya tavşanındaki bu değişim <b>modifikasyondur</b>. Modifikasyonlarda DNA dizilimi değişmez, yalnızca genin işleyişi değişir ve <b>yavrulara kalıtsal olarak aktarılmaz</b> (<b>B ulaşılamaz</b>).</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda canlılarda görülen beş farklı değişim numaralandırılarak verilmiştir.</p>
+  q: `<p>Aşağıdaki tabloda Osmanlı Devleti’nin I. Dünya Savaşı’nda mücadele ettiği bazı cepheler ve bu cephelerle ilgili önemli gelişmeler verilmiştir.</p>
 <table class="rt">
-<tr><th>No</th><th>Canlıda Görülen Değişim</th></tr>
-<tr><td><b>I</b></td><td>Ortanca bitkisinin çiçeklerinin asidik toprakta kırmızı/pembe, bazik toprakta mavi açması</td></tr>
-<tr><td><b>II</b></td><td>Radyasyona maruz kalan bir canlının üreme hücrelerindeki değişim nedeniyle yavrusunun albino doğması</td></tr>
-<tr><td><b>III</b></td><td>Düzenli ağırlık antrenmanı yapan bir sporcunun kol kaslarının gelişmesi</td></tr>
-<tr><td><b>IV</b></td><td>İnsanda üreme hücresi oluşurken kromozom ayrılmaması sonucu 47 kromozomlu (Down sendromlu) birey doğması</td></tr>
-<tr><td><b>V</b></td><td>Arı larvalarından arı sütüyle beslenenlerin kraliçe arı, çiçek tozuyla (polen) beslenenlerin işçi arı olması</td></tr>
+<tr><th>Cephe Adı</th><th>Cephe Türü</th><th>Önemli Gelişme ve Sonuçlar</th></tr>
+<tr><td><b>Kafkas</b></td><td>Taarruz</td><td>Bakü petrollerine ulaşmak ve Orta Asya Türkleriyle birleşmek istendi. Sarıkamış’ta ağır kayıplar verildi. Mustafa Kemal Muş ve Bitlis’i geri aldı. Brest-Litowsk Antlaşması ile Kars, Ardahan ve Batum geri alındı.</td></tr>
+<tr><td><b>Kanal</b></td><td>Taarruz</td><td>İngiltere’nin sömürgeleriyle bağlantısını kesmek ve Mısır’ı geri almak için açıldı; başarılı olunamadı.</td></tr>
+<tr><td><b>Çanakkale</b></td><td>Savunma</td><td>İtilaf Devletleri İstanbul’u alıp Rusya’ya yardım götürmek istedi. Türk ordusunun zaferiyle savaş uzadı, Rusya’da ihtilal çıktı, Bulgaristan İttifak bloğuna katıldı.</td></tr>
+<tr><td><b>Hicaz–Yemen</b></td><td>Savunma</td><td>Kutsal mekanları korumak için savaşıldı. Bazı Arap kabilelerinin İngilizlerle iş birliği yapması sonucu kaybedildi.</td></tr>
 </table>
-<p>Tablodaki değişimlerin <b>Mutasyon</b> ve <b>Modifikasyon</b> olarak doğru gruplandırılması aşağıdakilerden hangisidir?</p>`,
-  c: [
-    `Mutasyon: I ve III — Modifikasyon: II, IV ve V`,
-    `Mutasyon: II ve IV — Modifikasyon: I, III ve V`,
-    `Mutasyon: II, III ve V — Modifikasyon: I ve IV`,
-    `Mutasyon: I, IV ve V — Modifikasyon: II ve III`
-  ],
+<p>Tablodaki bilgilere göre Osmanlı Devleti’nin savaştığı cephelerle ilgili,</p>
+<p>I. Kafkas Cephesi’nin açılmasında <b>Turancılık (Pantürkizm)</b> fikri etkili olurken, Hicaz–Yemen Cephesi’ndeki gelişmeler <b>Ümmetçilik (İslamcılık)</b> fikrinin zayıfladığını göstermiştir.<br>
+II. Kafkas Cephesi’nde askerî kayıplar yaşanmasına rağmen diplomatik antlaşmayla toprak kazanımı elde edilmiştir.<br>
+III. Çanakkale Cephesi’nde kazanılan zafer, savaşın seyrini ve İttifak bloğunun sınırlarını etkilemiştir.<br>
+IV. Mustafa Kemal tabloda verilen cephelerin tamamında bizzat komutan olarak görev yapmıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: [`I ve II`, `I, II ve III`, `II, III ve IV`, `I, II, III ve IV`],
   a: "B",
-  s: `<p>DNA yapısında veya kromozom sayısında meydana gelen kalıcı değişimler (<b>II: Albinoluk</b> ve <b>IV: 47 kromozomlu Down sendromu</b>) <b>mutasyondur</b>. Toprak pH’ı (I), egzersiz (III) ve besin çeşidi (V) etkisiyle genlerin işleyişinde meydana gelen kalıtsal olmayan değişimler ise <b>modifikasyondur</b>. Cevap <b>B</b>.</p>`
+  s: `<p>Orta Asya Türkleriyle birleşme ideali <b>Turancılık</b>, Arap liderlerin İngilizlerle iş birliği yapması ise <b>Ümmetçilik</b> fikrinin çöktüğünü gösterir (<b>I doğru</b>). Kafkas Cephesi’nde Brest-Litowsk ile Kars, Ardahan, Batum geri alınmıştır (<b>II doğru</b>). Çanakkale Zaferi savaşı uzatmış ve Bulgaristan’ın savaşa girmesiyle Almanya–Osmanlı kara bağlantısını sağlamıştır (<b>III doğru</b>).</p>
+<p>Ancak Mustafa Kemal I. Dünya Savaşı’nda yalnızca <b>Çanakkale, Kafkas ve Suriye–Filistin (ÇiKaS)</b> cephelerinde görev yapmıştır; Kanal ve Hicaz–Yemen’de görev almamıştır (<b>IV yanlış</b>). Cevap <b>B</b>.</p>`
 },
 {
-  q: `<p>Aşağıdaki kartlarda üç farklı memeli hayvanın yaşadığı ekosistem ve sahip olduğu bazı kalıtsal özellikler verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="Kutup tilkisi, Kutup ayısı ve Çöl tilkisi adaptasyon kartları">
-<rect x="10" y="10" width="165" height="125" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-<text x="92" y="30" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Kutup Tilkisi</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="20" y="52">• Ekosistem: Kutup</text>
-<text x="20" y="70">• Kürk rengi: Beyaz</text>
-<text x="20" y="88">• Kulak ve burun: Küçük</text>
-<text x="20" y="106">• Deri altı yağ: Kalın</text>
+  q: `<p>30 Ekim 1918’de imzalanan Mondros Ateşkes Antlaşması’nın bazı maddeleri aşağıdaki şemada gruplandırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 540 150" width="520" role="img" aria-label="Mondros Ateşkes Antlaşması maddeleri analiz kartları">
+<rect x="10" y="10" width="165" height="130" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="92" y="30" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">7. Madde</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="20" y="50">“İtilaf Devletleri güvenliklerini</text>
+<text x="20" y="64">tehdit eden bir durum olursa</text>
+<text x="20" y="78">herhangi bir stratejik noktayı</text>
+<text x="20" y="92">işgal edebilecektir.”</text>
+<text x="20" y="118" font-weight="bold" fill="#dc2626">→ Hukuki gerekçe / kılıf</text>
 </g>
-<rect x="188" y="10" width="165" height="125" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-<text x="270" y="30" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">Kutup Ayısı</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="198" y="52">• Ekosistem: Kutup</text>
-<text x="198" y="70">• Kürk rengi: Beyaz</text>
-<text x="198" y="88">• Kulak ve burun: Küçük</text>
-<text x="198" y="106">• Deri altı yağ: Kalın</text>
+<rect x="187" y="10" width="165" height="130" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="270" y="30" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">24. Madde</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="197" y="50">“Vilâyât-ı Sitte’de (Altı Doğu</text>
+<text x="197" y="64">ilinde) karışıklık çıkarsa</text>
+<text x="197" y="78">İtilaf Devletleri bu illeri</text>
+<text x="197" y="92">işgal edebilecektir.”</text>
+<text x="197" y="118" font-weight="bold" fill="#b45309">→ Ermeni devleti planı</text>
 </g>
-<rect x="366" y="10" width="165" height="125" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="448" y="30" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Çöl Tilkisi</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="376" y="52">• Ekosistem: Çöl</text>
-<text x="376" y="70">• Kürk rengi: Kum rengi</text>
-<text x="376" y="88">• Kulak ve kuyruk: Çok büyük</text>
-<text x="376" y="106">• Deri altı yağ: İnce</text>
+<rect x="365" y="10" width="165" height="130" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="447" y="30" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Askerî ve İletişim</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="375" y="50">“Osmanlı ordusu terhis</text>
+<text x="375" y="64">edilecek; telsiz, telgraf ve</text>
+<text x="375" y="78">demir yolları İtilaf denetimine</text>
+<text x="375" y="92">bırakılacaktır.”</text>
+<text x="375" y="118" font-weight="bold" fill="#1e40af">→ Savunmasız bırakma</text>
 </g>
 </svg></div>
-<p><b>Bilgi:</b> Kulaklar ince ve damarlıdır; kulak yüzeyi büyüdükçe vücuttan dışarıya verilen ısı miktarı artar.</p>
-<p>Kartlardaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+<p>Mondros Ateşkes Antlaşması’nın bu hükümleri dikkate alındığında aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
   c: [
-    `Aynı ekosistemde yaşayan farklı türe ait canlılar (Kutup tilkisi ve Kutup ayısı), yaşama şanslarını artırmak için benzer adaptasyonlar geliştirmiştir.`,
-    `Farklı ekosistemlerde yaşayan yakın akraba türler (Kutup tilkisi ve Çöl tilkisi), ortamın sıcaklığına uygun farklı adaptasyonlara sahiptir.`,
-    `Bir çöl tilkisi kutup bölgesine götürülürse kulakları zamanla küçülür ve kürkü beyaza dönüşerek ortama uyum sağlar.`,
-    `Kulak büyüklüğü ve kürk rengindeki bu farklılıklar kalıtsal olup nesilden nesile aktarılır.`
+    `7. madde ile Osmanlı topraklarının tamamı işgale açık hâle getirilmiş ve yapılacak işgallere hukuki dayanak oluşturulmuştur.`,
+    `24. madde, Wilson İlkeleri’ndeki “Türklerin çoğunlukta olduğu bölgelere kesin egemenlik tanınacaktır.” ilkesini korumak amacıyla konulmuştur.`,
+    `Ordunun dağıtılması ve iletişim ağlarına el konulmasıyla Türk halkının işgallere karşı örgütlenip direnmesi engellenmek istenmiştir.`,
+    `Antlaşma, bir ateşkes belgesinden çok Osmanlı Devleti’ni fiilen sona erdiren ağır şartlar içermektedir.`
+  ],
+  a: "B",
+  s: `<p>Mondros’un 24. maddesi Wilson İlkeleri’ni korumak için değil, tam tersine Wilson İlkeleri’ne aykırı olarak Doğu Anadolu’da (Erzurum, Van, Harput, Diyarbakır, Bitlis, Sivas) bir <b>Ermeni devleti kurulmasına zemin hazırlamak</b> amacıyla konulmuştur[cite: 9]. Dolayısıyla <b>B</b> seçeneği söylenemez.</p>`
+},
+{
+  q: `<p>15 Mayıs 1919’da Yunan ordusunun İzmir’i işgal etmesi üzerine bölgede yaşanan olayları incelemek üzere görevlendirilen ABD’li <b>Amiral Bristol</b>’ün hazırladığı raporda yer alan maddeler aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="Amiral Bristol Raporu maddeleri">
+<rect x="20" y="10" width="480" height="120" rx="8" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+<rect x="20" y="10" width="480" height="28" rx="6" fill="#334155"/>
+<text x="260" y="28" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">AMİRAL BRİSTOL RAPORU (EKİM 1919)</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="35" y="56">1. İzmir ve çevresinde Hristiyan halkın katledildiği yönündeki haberler tamamen asılsızdır.</text>
+<text x="35" y="78">2. Bölgede nüfus çoğunluğu Rumlarda değil, açık ara Türklerdedir.</text>
+<text x="35" y="100">3. Bölgedeki katliam ve karışıklıklardan Yunan askerleri ve Rum çeteleri sorumludur.</text>
+<text x="35" y="120" font-weight="bold" fill="#dc2626">4. Yunan ordusu bölgeden derhal çekilmeli, yerine İtilaf kuvvetleri gelmelidir.</text>
+</g>
+</svg></div>
+<p>Amiral Bristol Raporu’nun bu maddelerine dayanarak aşağıdaki yargılardan hangisine <b>ulaşılamaz</b>?</p>`,
+  c: [
+    `Yunanların Paris Barış Konferansı’na sunduğu sahte nüfus ve katliam iddialarının gerçeği yansıtmadığı kanıtlanmıştır.`,
+    `Türk milletinin Millî Mücadele’deki haklılığı ilk kez uluslararası bir komisyon raporuyla dünya kamuoyuna duyurulmuştur.`,
+    `Raporun yayımlanmasıyla birlikte İtilaf Devletleri İzmir’in işgaline son vererek Yunan ordusunu Anadolu’dan geri çekmiştir.`,
+    `Raporun 4. maddesi, ABD’nin bölgede Yunan işgaline karşı çıkarken İtilaf Devletleri’nin varlığına tamamen karşı olmadığını göstermektedir.`
   ],
   a: "C",
-  s: `<p>Aynı ortamda yaşayan farklı türler benzer, farklı ortamda yaşayan yakın türler farklı adaptasyonlar gösterir ve adaptasyonlar kalıtsaldır (A, B, D doğru). Ancak adaptasyonlar bireyin yaşamı sırasında ortam değişince sonradan oluşmaz; kutba götürülen çöl tilkisinin kulakları küçülmez (<b>C söylenemez</b>).</p>`
+  s: `<p>Amiral Bristol Raporu, Türklerin Millî Mücadele’deki haklılığını ve Yunan işgalinin haksızlığını dünyaya kanıtlayan <b>ilk uluslararası belgedir</b> (A, B ve D doğrudur).</p>
+<p>Ancak İtilaf Devletleri bu raporu dikkate almamış ve Yunan ordusunu İzmir’den geri çekmemiştir; Yunan ordusu Anadolu’dan ancak Büyük Taarruz zaferiyle atılabilmiştir (<b>C ulaşılamaz</b>).</p>`
 },
 {
-  q: `<p>İngiltere’de sanayi devriminden önce ağaç gövdeleri açık renkli likenlerle kaplıydı. Fabrikalardan çıkan is, ağaç gövdelerini kararttı. Bir bölgedeki güve kelebeği türünde açık ve koyu renkli bireylerin oranları aşağıdaki grafikte verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 380 190" width="360" role="img" aria-label="Kelebek oranları grafiği">
-<line x1="50" y1="150" x2="370" y2="150" stroke="#333"/><line x1="50" y1="15" x2="50" y2="150" stroke="#333"/>
-<g font-size="10" text-anchor="end"><text x="45" y="153">0</text><text x="45" y="98">40</text><text x="45" y="43">80</text></g>
-<g stroke="#e5e7eb"><line x1="50" y1="95" x2="370" y2="95"/><line x1="50" y1="40" x2="370" y2="40"/></g>
-<rect x="80" y="26" width="40" height="124" fill="#e5e7eb" stroke="#64748b"/><rect x="125" y="137" width="40" height="13" fill="#334155"/>
-<rect x="240" y="123" width="40" height="27" fill="#e5e7eb" stroke="#64748b"/><rect x="285" y="40" width="40" height="110" fill="#334155"/>
-<g font-size="10" text-anchor="middle"><text x="100" y="20">%90</text><text x="145" y="131">%10</text><text x="260" y="117">%20</text><text x="305" y="34">%80</text>
-<text x="122" y="166">Sanayi devriminden önce</text><text x="282" y="166">Sanayi devriminden sonra</text></g>
-<rect x="60" y="174" width="12" height="10" fill="#e5e7eb" stroke="#64748b"/><text x="76" y="183" font-size="10">Açık renkli</text><rect x="150" y="174" width="12" height="10" fill="#334155"/><text x="166" y="183" font-size="10">Koyu renkli</text>
-<text x="14" y="85" font-size="10" transform="rotate(-90 14 85)" text-anchor="middle">Oran (%)</text>
+  q: `<p>Mondros Ateşkes Antlaşması sonrasında Anadolu’da kurulan cemiyetlerin sınıflandırma şeması aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Cemiyetler sınıflandırma şeması">
+<rect x="10" y="10" width="165" height="145" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+<text x="92" y="28" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Azınlık Cemiyetleri</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="20" y="48">• Mavri Mira (Rum)</text>
+<text x="20" y="64">• Etnik-i Eterya (Rum)</text>
+<text x="20" y="80">• Pontus Rum (Karadeniz)</text>
+<text x="20" y="96">• Taşnak ve Hınçak (Ermeni)</text>
+<text x="20" y="122" font-weight="bold" fill="#dc2626">Amaç: Osmanlı topraklarını</text>
+<text x="20" y="136" font-weight="bold" fill="#dc2626">parçalayıp devlet kurmak</text>
+</g>
+<rect x="187" y="10" width="165" height="145" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="270" y="28" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">Millî Varlığa Düşman</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="197" y="48">• İngiliz Muhipleri Cemiyeti</text>
+<text x="197" y="64">• Wilson Prensipleri Cem.</text>
+<text x="197" y="80">• Sulh ve Selamet-i Osm.</text>
+<text x="197" y="96">• Teali İslam / Kürt Teali</text>
+<text x="197" y="122" font-weight="bold" fill="#b45309">Amaç: Manda ve himaye</text>
+<text x="197" y="136" font-weight="bold" fill="#b45309">veya Padişaha bağlılık</text>
+</g>
+<rect x="365" y="10" width="165" height="145" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+<text x="447" y="28" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">Millî (Yararlı) Cemiyetler</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="375" y="48">• Trakya-Paşaeli M.H.C.</text>
+<text x="375" y="64">• İzmir Redd-i İlhak Cem.</text>
+<text x="375" y="80">• Doğu Anadolu M.H.C.</text>
+<text x="375" y="96">• Kilikyalılar / Millî Kongre</text>
+<text x="375" y="122" font-weight="bold" fill="#166534">Amaç: Bölgesel kurtuluş ve</text>
+<text x="375" y="136" font-weight="bold" fill="#166534">tam bağımsızlık</text>
+</g>
 </svg></div>
-<p>Bu durumla ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?</p>`,
+<p>Şemadaki cemiyetlerin kuruluş amaçları ve faaliyetleri dikkate alındığında aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
   c: [
-    `Kararmış ağaçlar üzerinde koyu renkli kelebekler kuşlar tarafından daha zor fark edilmiştir.`,
-    `Ortama uygun kalıtsal özellik taşıyan bireylerin hayatta kalma ve üreme şansı artmıştır (doğal seçilim).`,
-    `Açık renkli kelebekler isli ortama uyum sağlamak için kendi istekleriyle kanatlarının rengini koyulaştırmıştır.`,
-    `Başlangıçta hem açık hem koyu renkli kelebeklerin bulunması tür içi çeşitliliğe (varyasyona) örnektir.`
+    `Kilikyalılar Cemiyeti, Çukurova (Adana) bölgesinde bir Ermeni devleti kurmak amacıyla azınlıklar tarafından kurulmuştur.`,
+    `Wilson Prensipleri ve İngiliz Muhipleri cemiyetleri, tam bağımsızlık ilkesini savundukları için Millî Mücadele’ye destek vermiştir.`,
+    `Millî Kongre Cemiyeti diğer yararlı cemiyetlerden farklı olarak ulusal çapta basın-yayın yoluyla mücadele etmiş; diğer yararlı cemiyetler ise başlangıçta kendi bölgelerini savunmak için kurulmuştur.`,
+    `Yararlı cemiyetlerin tamamı Erzurum Kongresi’nde “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adıyla birleştirilmiştir.`
   ],
   a: "C",
-  s: `<p>Ağaçlar karardıktan sonra koyu renkli kelebekler kamufle olup avcılardan korunmuş ve üreyerek sayılarını artırmıştır (<b>doğal seçilim</b>). Açık renkli kelebekler kendi istekleriyle genlerini veya renklerini değiştiremez; mevcut varyasyonlardan uygun olanlar seçilmiştir. Cevap <b>C</b>.</p>`
+  s: `<p><b>Kilikyalılar Cemiyeti</b> (isminin antik çağdaki Kilikya’dan gelmesi öğrencileri yanıltmak için sıkça sorulur) Adana ve Çukurova’yı Fransız ve Ermeni işgaline karşı savunan <b>yararlı (millî) bir cemiyettir</b>[cite: 9] (A yanlış).</p>
+<p>Wilson Prensipleri ve İngiliz Muhipleri <b>manda ve himayeyi</b> savunduğu için tam bağımsızlığa karşıdır[cite: 9] (B yanlış). Tüm yararlı cemiyetlerin birleştirilmesi Erzurum’da değil, <b>Sivas Kongresi</b>’nde gerçekleşmiştir[cite: 9] (D yanlış).</p>
+<p><b>Millî Kongre Cemiyeti</b> ise bölgesel değil <b>ulusal</b> nitelikte olup basın-yayın yoluyla Türklerin haklılığını dünyaya duyurmaya çalışmıştır (<b>C doğru</b>).</p>`
 },
 {
-  q: `<p>Bir tarım arazisinde bitkilere zarar veren böcek türüne karşı <b>aynı miktar ve aynı içerikte</b> X tarım ilacı (pestisit) üç yıl üst üste uygulanmıştır. Her ilaçlama öncesinde ve sonrasında tarladaki canlı böcek sayısı kaydedilerek aşağıdaki grafik oluşturulmuştur.</p>
-<div class="fig"><svg viewBox="0 0 500 175" width="480" role="img" aria-label="Tarım ilacı uygulamasına göre böcek sayısı grafiği">
-<line x1="60" y1="140" x2="465" y2="140" stroke="#334155" stroke-width="1.5"/>
-<line x1="60" y1="20" x2="60" y2="140" stroke="#334155" stroke-width="1.5"/>
-<rect x="85" y="30" width="26" height="110" fill="#3b82f6"/>
-<rect x="115" y="125" width="26" height="15" fill="#ef4444"/>
-<rect x="215" y="35" width="26" height="105" fill="#3b82f6"/>
-<rect x="245" y="85" width="26" height="55" fill="#ef4444"/>
-<rect x="345" y="30" width="26" height="110" fill="#3b82f6"/>
-<rect x="375" y="38" width="26" height="102" fill="#ef4444"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="113" y="156">1. Uygulama</text>
-<text x="243" y="156">2. Uygulama</text>
-<text x="373" y="156">3. Uygulama</text>
-</g>
-<rect x="120" y="8" width="12" height="10" fill="#3b82f6"/><text x="137" y="17" font-size="10">İlaçlama öncesi böcek sayısı</text>
-<rect x="295" y="8" width="12" height="10" fill="#ef4444"/><text x="312" y="17" font-size="10">İlaçlama sonrası böcek sayısı</text>
-<text x="22" y="80" font-size="10" font-weight="bold" transform="rotate(-90 22 80)" text-anchor="middle">Böcek Sayısı</text>
-</svg></div>
-<p>Grafikteki değişimin nedeni aşağıdakilerden hangisiyle <b>en doğru</b> açıklanır?</p>`,
+  q: `<p>Mondros Ateşkes Antlaşması sonrasında başlayan işgaller karşısında İstanbul Hükûmeti, Mustafa Kemal Paşa ve Türk halkının sergilediği tutumlar aşağıdaki tabloda karşılaştırılmıştır.</p>
+<table class="rt">
+<tr><th>İstanbul Hükûmeti</th><th>Mustafa Kemal Paşa</th><th>Türk Halkı</th></tr>
+<tr><td>“İşgallere karşı çıkılmamalı, İtilaf Devletleri kızdırılmamalıdır. Padişahımızın ve saltanatın devamı için sükûnet korunmalıdır.”</td><td>“Geldikleri gibi giderler! Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır. Teşkilatlanmalıyız.”</td><td>“Ordumuz dağıtılmış ve hükûmet sessiz kalmış olsa da vatanımızı Kuvâ-yı Milliye birlikleri ve Müdafaa-i Hukuk cemiyetleriyle koruyacağız.”</td></tr>
+</table>
+<p>Tablodaki tutumlar değerlendirildiğinde aşağıdaki çıkarımlardan hangisi <b>yapılamaz</b>?</p>`,
   c: [
-    `X tarım ilacının etkisi zamanla bozulmuş ve 3. yılda zehirleme özelliğini kaybetmiştir.`,
-    `1. uygulamada doğuştan ilaca dirençli gen taşıyan az sayıdaki böcek hayatta kalmış, doğal seçilimle çoğalarak dirençli genleri yeni nesillere aktarmıştır.`,
-    `Böceklerde ilaçlama sonrasında gerçekleşen modifikasyon, yavru böceklere kalıtsal olarak geçmiştir.`,
-    `3. uygulamada böceklerin kromozom sayısı iki katına çıkarak ilaca karşı bağışıklık sağlamıştır.`
+    `İstanbul Hükûmeti işgaller karşısında teslimiyetçi, pasif ve uzlaşmacı bir politika izlemiştir.`,
+    `Mustafa Kemal Paşa karamsarlığa kapılmamış; ileri görüşlü, kararlı ve vatansever bir liderlik sergilemiştir.`,
+    `Kuvâ-yı Milliye birlikleri, İstanbul Hükûmeti’nin çıkardığı resmî kanun ve emirlerle kurulmuş düzenli ordulardır.`,
+    `Türk halkı bağımsızlığına ve vatan bütünlüğüne düşkün olduğunu kendi imkânlarıyla direnişe geçerek kanıtlamıştır.`
   ],
-  a: "B",
-  s: `<p>1. ilaçlamada dirençsiz böcekler ölmüş, popülasyonda <b>doğuştan direnç genine sahip olan az sayıdaki böcek hayatta kalıp üremiştir (Doğal Seçilim)</b>. Direnç geni yavrulara aktarıldığı için 3. uygulamada popülasyonun neredeyse tamamı ilaca dirençli bireylerden oluşmuştur. Cevap <b>B</b>.</p>`
+  a: "C",
+  s: `<p>Kuvâ-yı Milliye birlikleri İstanbul Hükûmeti’nin emriyle değil, tam tersine <b>İstanbul Hükûmeti’nin işgallere sessiz kalması ve ordunun dağıtılması üzerine</b> Türk halkının kendi imkânlarıyla kurduğu <b>düzensiz (milis)</b> direniş kuvvetleridir[cite: 9]. Dolayısıyla <b>C</b> seçeneği yanlıştır.</p>`
 },
 {
-  q: `<p>Aşağıda bakterilere insülin hormonu ürettirmek için yapılan çalışmanın basamakları verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 120" width="480" role="img" aria-label="İnsülin üretimi basamakları">
-<rect x="5" y="20" width="140" height="70" rx="8" fill="#fef3c7" stroke="#a16207"/><rect x="180" y="20" width="140" height="70" rx="8" fill="#dcfce7" stroke="#15803d"/><rect x="355" y="20" width="140" height="70" rx="8" fill="#dbeafe" stroke="#1d4ed8"/>
-<g font-size="22" fill="#64748b"><text x="152" y="62">→</text><text x="327" y="62">→</text></g>
-<g font-size="11" text-anchor="middle"><text x="75" y="42" font-weight="bold">1. basamak</text><text x="75" y="60">İnsan hücresinden</text><text x="75" y="75">insülin geni kesilir.</text>
-<text x="250" y="42" font-weight="bold">2. basamak</text><text x="250" y="60">Gen, bakterinin</text><text x="250" y="75">DNA’sına eklenir.</text>
-<text x="425" y="42" font-weight="bold">3. basamak</text><text x="425" y="60">Bakteriler çoğalır</text><text x="425" y="75">ve insülin üretir.</text></g>
+  q: `<p>22 Haziran 1919’da yayımlanan <b>Amasya Genelgesi</b>’nin bazı maddeleri ve bu maddelerin Millî Mücadele’deki işlevleri aşağıdaki şemada eşleştirilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Amasya Genelgesi maddeleri ve gerekçe amaç yöntem eşleştirmesi">
+<rect x="10" y="10" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="20" y="28" font-size="10" font-weight="bold">I. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</text>
+<text x="20" y="43" font-size="9.5" fill="#475569">   İstanbul Hükûmeti sorumluluğunu yerine getirememektedir.</text>
+<rect x="10" y="60" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="20" y="78" font-size="10" font-weight="bold">II. Milletin bağımsızlığını, yine milletin azim ve</text>
+<text x="20" y="93" font-size="10" font-weight="bold">    kararı kurtaracaktır.</text>
+<rect x="10" y="110" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="20" y="128" font-size="10" font-weight="bold">III. Her türlü etki ve denetimden uzak millî bir kurul</text>
+<text x="20" y="143" font-size="9.5" fill="#475569">     (Temsil Heyeti) oluşturulmalıdır.</text>
+<rect x="365" y="10" width="165" height="42" rx="5" fill="#dbeafe" stroke="#2563eb"/>
+<text x="447" y="35" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">( K )</text>
+<rect x="365" y="60" width="165" height="42" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+<text x="447" y="85" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">( L )</text>
+<rect x="365" y="110" width="165" height="42" rx="5" fill="#fef3c7" stroke="#d97706"/>
+<text x="447" y="135" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">( M )</text>
+<g stroke="#334155" stroke-width="2"><line x1="330" y1="31" x2="365" y2="31"/><line x1="330" y1="81" x2="365" y2="81"/><line x1="330" y1="131" x2="365" y2="131"/></g>
 </svg></div>
-<p>Bu çalışmayla ilgili,</p>
-<p>I. Bir genetik mühendisliği (gen aktarımı) uygulamasıdır.<br>
-II. Bakterilerin ürettiği insülin, insan vücudunda üretilen insülinle aynı yapıdadır.<br>
-III. Bu bakterilerin bölünerek çoğalmasıyla oluşan yeni bakteriler insülin genini taşımaz.</p>
-<p>yargılarından hangileri doğrudur?</p>`,
-  c: [`Yalnız I`, `I ve II`, `I ve III`, `II ve III`],
-  a: "B",
-  s: `<p>İnsandan alınan genin bakteriye aktarılması <b>gen aktarımı</b> (genetik mühendisliği) uygulamasıdır (I doğru) ve üretilen hormon insan insüliniyle aynıdır (II doğru). Gen bakterinin DNA’sına eklendiği için bakteri bölündüğünde yeni bakteriler de bu geni taşır (III yanlış). Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bilim insanları, genetik kopyalama (klonlama) yöntemiyle X, Y ve Z koyunlarını kullanarak Klon Kuzu’yu aşağıdaki aşamalarla dünyaya getirmiştir.</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="X Y Z koyunları ile klonlama deneyi">
-<circle cx="65" cy="40" r="22" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
-<text x="65" y="44" font-size="11" font-weight="bold" text-anchor="middle">X Koyunu</text>
-<text x="98" y="44" font-size="10" font-weight="bold" fill="#1e3a8a">→ Meme hücresinin çekirdeği alındı</text>
-<circle cx="65" cy="95" r="22" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
-<text x="65" y="99" font-size="11" font-weight="bold" text-anchor="middle">Y Koyunu</text>
-<text x="98" y="99" font-size="10" font-weight="bold" fill="#b45309">→ Çekirdeksiz yumurta sitoplazması alındı</text>
-<rect x="330" y="30" width="175" height="75" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
-<text x="417" y="52" font-size="10.5" font-weight="bold" text-anchor="middle">Embriyo Z Koyununa</text>
-<text x="417" y="68" font-size="10" text-anchor="middle">aktarıldı ve doğum gerçekleşti:</text>
-<text x="417" y="88" font-size="11.5" font-weight="bold" fill="#15803d" text-anchor="middle">KLON KUZU</text>
-</svg></div>
-<p>Bu klonlama işlemiyle ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>?</p>`,
+<p>Şemada <b>K, L ve M</b> kutularına yazılması gereken doğru kavramlar aşağıdakilerin hangisinde verilmiştir?</p>`,
   c: [
-    `Klon kuzunun çekirdek DNA’sındaki tüm kalıtsal bilgiler ve cinsiyeti X koyunu ile birebir aynıdır.`,
-    `Yumurta hücresi Y koyunundan alındığı için klon kuzunun göz ve post rengi Y koyununa benzer.`,
-    `Klon kuzu Z koyununun rahminde geliştiği için Z koyunu ile aynı genotipe sahiptir.`,
-    `Bu işlemde döllenme (sperm ve yumurta çekirdeğinin birleşmesi) gerçekleştiği için tür içi çeşitlilik artmıştır.`
+    `K: Mücadelenin Gerekçesi — L: Amaç, Yöntem ve Millî Egemenlik — M: Kurumsallaşma ve Teşkilatlanma`,
+    `K: Amaç ve Yöntem — L: Mücadelenin Gerekçesi — M: Saltanata Bağlılık`,
+    `K: Dış Politika — L: Ekonomik Bağımsızlık — M: Düzenli Orduya Geçiş`,
+    `K: Mücadelenin Gerekçesi — L: Manda ve Himayenin Reddi — M: Kuvvetler Ayrılığı`
   ],
   a: "A",
-  s: `<p>Kalıtsal bilgileri taşıyan DNA hücrenin <b>çekirdeğinde</b> bulunur. Çekirdek <b>X koyunundan</b> alındığı için klon kuzunun genetik yapısı ve cinsiyeti <b>X koyunu ile birebir aynıdır</b>. Cevap <b>A</b>.</p>`
+  s: `<p>Amasya Genelgesi’nde:</p>
+<ul>
+<li><b>I. öncül (K):</b> Vatanın tehlikede olması ve İstanbul Hükûmeti’nin görevini yapamaması Millî Mücadele’nin <b>Gerekçesidir</b> (Neden mücadele ediyoruz?)[cite: 9].</li>
+<li><b>II. öncül (L):</b> “Milletin bağımsızlığı” mücadelenin <b>Amacı</b>, “milletin azim ve kararı” ise <b>Yöntemidir</b>; ayrıca ilk kez <b>Millî Egemenlik</b> (rejimin değişeceği) mesajı verilmiştir[cite: 9].</li>
+<li><b>III. öncül (M):</b> Temsil Heyeti fikrinin ortaya atılması mücadelenin <b>kurumsallaşması ve teşkilatlanması</b> adımıdır. Cevap <b>A</b>.</li>
+</ul>`
+},
+{
+  q: `<p>Mustafa Kemal Paşa, 28 Mayıs 1919’da yayımladığı <b>Havza Genelgesi</b>’nde; işgallere karşı yurdun her yerinde mitingler düzenlenmesini, İtilaf Devletleri ve İstanbul Hükûmeti’ne protesto telgrafları çekilmesini, ancak bu gösteriler sırasında <b>Hristiyan azınlıklara kesinlikle kötü davranılmamasını ve saldırıda bulunulmamasını</b> istemiştir.</p>
+<p>Mustafa Kemal Paşa’nın Havza Genelgesi’nde Hristiyan halka zarar verilmemesini özellikle vurgulamasının temel amacı aşağıdakilerden hangisidir?</p>`,
+  c: [
+    `Azınlık cemiyetlerinin Millî Mücadele’ye katılmasını sağlamak`,
+    `Mondros Ateşkes Antlaşması’nın 7. maddesinin uygulanmasına ve yeni işgallere haklı bir bahane (gerekçe) oluşturulmasını engellemek`,
+    `İstanbul Hükûmeti’nin Anadolu’ya gönderdiği Nasihat Heyetlerine destek vermek`,
+    `Kapitülasyonların kaldırılması için Avrupa devletlerinden ekonomik yardım almak`
+  ],
+  a: "B",
+  s: `<p>Mondros Ateşkes Antlaşması’nın 7. maddesine göre İtilaf Devletleri, “güvenliklerini tehdit eden bir karışıklık çıkarsa” herhangi bir stratejik yeri işgal etme hakkına sahipti[cite: 9]. Mustafa Kemal, mitingler sırasında Hristiyan azınlıklara zarar verilmesini önleyerek <b>İtilaf Devletleri’nin 7. maddeyi bahane edip yeni işgaller yapmasının önüne geçmek</b> istemiştir. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki Venn şemasında <b>Erzurum Kongresi</b> ile <b>Sivas Kongresi</b>’nin özellikleri karşılaştırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Erzurum ve Sivas Kongreleri Venn şeması">
+<ellipse cx="185" cy="85" rx="155" ry="68" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
+<ellipse cx="355" cy="85" rx="155" ry="68" fill="#dcfce7" fill-opacity="0.6" stroke="#16a34a" stroke-width="2"/>
+<text x="115" y="38" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Erzurum Kongresi</text>
+<text x="425" y="38" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Sivas Kongresi</text>
+<g font-size="9.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="105" y="68">• Toplanış şekli</text>
+<text x="105" y="82">  bölgeseldir</text>
+<text x="105" y="102">• Millî sınırlardan</text>
+<text x="105" y="116">  ilk kez bahsedildi</text>
+<text x="270" y="72">• Kararları ulusaldır</text>
+<text x="270" y="92">• Manda ve himaye</text>
+<text x="270" y="106">  reddedilmiştir</text>
+<text x="270" y="126">• Bşk: Mustafa Kemal</text>
+<text x="435" y="68">• Toplanış şekli</text>
+<text x="435" y="82">  ulusaldır</text>
+<text x="435" y="102">• Tüm cemiyetler</text>
+<text x="435" y="116">  birleştirildi</text>
+<text x="435" y="134">• ( ? )</text>
+</g>
+</svg></div>
+<p>Şemaya göre her iki kongrenin özellikleri ve Sivas Kongresi’ne ait <b>( ? )</b> işaretiyle gösterilen yere yazılabilecek bilgi ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: [
+    `Erzurum Kongresi sadece Doğu Anadolu’yu ilgilendiren bölgesel kararlar almıştır.`,
+    `Her iki kongrede de Amerikan mandası fikri kabul görmüştür.`,
+    `Sivas Kongresi’ndeki ( ? ) yerine “İrade-i Milliye gazetesinin çıkarılması ve Temsil Heyeti’nin tüm vatanı temsil eder hâle getirilmesi” yazılabilir.`,
+    `Erzurum Kongresi’nde Misak-ı Millî kararları son şeklini alarak Osmanlı Mebusan Meclisi’nde onaylanmıştır.`
+  ],
+  a: "C",
+  s: `<p>Erzurum Kongresi toplanış bakımından bölgesel, aldığı kararlar bakımından <b>ulusaldır</b>[cite: 9] (A yanlış). Her iki kongrede de manda ve himaye <b>reddedilmiştir</b>[cite: 9] (B yanlış). Misak-ı Millî, Erzurum’da değil 28 Ocak 1920’de Son Osmanlı Mebusan Meclisi’nde kabul edilmiştir[cite: 9] (D yanlış).</p>
+<p>Sivas Kongresi’nde Temsil Heyeti tüm yurdu temsil eder hâle getirilmiş ve halkı doğru bilgilendirmek için <b>İrade-i Milliye</b> gazetesi çıkarılmıştır[cite: 9] (<b>C doğru</b>).</p>`
+},
+{
+  q: `<p>Sivas Kongresi sonrasında yaşanan iki önemli siyasi gelişme aşağıda verilmiştir:</p>
+<ul>
+<li><b>1. Gelişme:</b> Temsil Heyeti, Sivas Kongresi’nden hemen sonra <b>Ali Fuat (Cebesoy) Paşa’yı Batı Cephesi Kuvâ-yı Milliye Genel Komutanlığına</b> atamıştır.</li>
+<li><b>2. Gelişme:</b> Sivas Kongresi’ni engellemeye çalışan Damat Ferit Paşa Hükûmeti, Temsil Heyeti’nin İstanbul ile tüm haberleşmeyi kesmesi üzerine baskılara dayanamayarak <b>istifa etmiş</b> ve yerine Millî Mücadele’ye ılımlı yaklaşan Ali Rıza Paşa Hükûmeti kurulmuştur.</li>
+</ul>
+<p>Bu iki gelişmenin ortak yorumu aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: [
+    `1. gelişme Temsil Heyeti’nin bir hükûmet gibi YÜRÜTME yetkisini kullandığını; 2. gelişme ise Temsil Heyeti’nin İstanbul Hükûmeti karşısında ilk siyasi başarısını kazandığını gösterir.`,
+    `1. gelişme Temsil Heyeti’nin YARGI yetkisini kullandığını; 2. gelişme ise Saltanatın resmen kaldırıldığını gösterir.`,
+    `1. gelişme düzenli ordunun kurulduğunu; 2. gelişme ise İstanbul’un İtilaf Devletleri tarafından boşaltıldığını gösterir.`,
+    `Her iki gelişme de Temsil Heyeti’nin İstanbul Hükûmeti’ne bağlı bir kurum olarak çalıştığını kanıtlar.`
+  ],
+  a: "A",
+  s: `<p>Bir komutan veya vali atamak devletin <b>yürütme (hükûmet)</b> erkinin görevidir; Temsil Heyeti, Ali Fuat Paşa’yı Batı Cephesi’ne atayarak <b>ilk kez yürütme yetkisini</b> kullanmıştır.</p>
+<p>Damat Ferit Paşa Hükûmeti’nin istifa ettirilmesi ise Temsil Heyeti’nin İstanbul Hükûmeti karşısında elde ettiği <b>ilk siyasi zaferdir</b>. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Temsil Heyeti, 27 Aralık 1919’da Millî Mücadele’nin yönetim merkezi olarak <b>Ankara’yı</b> seçmiş ve çalışmalarını buradan yürütmeye başlamıştır. Ankara’nın merkez seçilmesinde etkili olan faktörler aşağıdaki harita kartında gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="Temsil Heyeti'nin Ankara'yı merkez seçme nedenleri">
+<rect x="15" y="10" width="490" height="120" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<circle cx="95" cy="70" r="38" fill="#dc2626"/>
+<text x="95" y="66" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">ANKARA</text>
+<text x="95" y="82" font-size="9.5" fill="#fde047" text-anchor="middle">(27 Aralık 1919)</text>
+<g font-size="10" font-weight="bold" fill="#1e293b">
+<text x="155" y="34">1. Anadolu’nun ortasında işgal edilmemiş güvenli bir konumda olması</text>
+<text x="155" y="56">2. Demir yolu ağı ve telgraf (haberleşme) hatlarının kavşak noktası olması</text>
+<text x="155" y="78">3. Yunanlarla savaşılan Batı Cephesi’ne yakın konumda bulunması</text>
+<text x="155" y="100">4. İstanbul’da toplanacak Mebusan Meclisi’ni yakından izleme imkânı</text>
+<text x="155" y="120">5. Ankara halkının ve 20. Kolordu’nun Millî Mücadele’yi desteklemesi</text>
+</g>
+</svg></div>
+<p>Karttaki bilgilere göre Ankara’nın merkez seçilmesinde aşağıdaki alanlardan hangisinin etkisinden <b>söz edilmemiştir</b>?</p>`,
+  c: [
+    `Ulaşım ve iletişim imkânları`,
+    `Askerî ve stratejik güvenlik`,
+    `Zengin yer altı madenleri ve ağır sanayi fabrikaları`,
+    `Siyasi gelişmeleri takip etme kolaylığı`
+  ],
+  a: "C",
+  s: `<p>Kartta; 2. maddede <b>ulaşım ve iletişim</b>, 1, 3 ve 5. maddelerde <b>askerî ve stratejik güvenlik</b>, 4. maddede ise <b>siyasi gelişmeleri takip etme</b> kolaylığı vurgulanmıştır. Ankara’nın yer altı madenleri veya ağır sanayi tesislerinden söz edilmemiştir. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Son Osmanlı Mebusan Meclisi’nde 28 Ocak 1920’de kabul edilen <b>Misak-ı Millî (Millî Yemin)</b> kararlarının bazıları ve bunların ilgili olduğu temel ilkeler aşağıdaki tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Misak-ı Millî Kararı</th><th>İlgili Olduğu Temel İlke / Kavram</th></tr>
+<tr><td><b>I.</b> Mondros Ateşkesi imzalandığında işgal edilmemiş, Türk çoğunluğunun bulunduğu topraklar ayrılmaz bir bütündür.</td><td>Vatanın bütünlüğü ve Millî Sınırlar</td></tr>
+<tr><td><b>II.</b> Kars, Ardahan, Batum (Elviye-i Selase) ve Batı Trakya’nın geleceği gerekirse halkoylamasıyla (referandumla) belirlenecektir.</td><td>Halkın iradesine saygı ve bölgedeki Türk nüfus çoğunluğuna güven</td></tr>
+<tr><td><b>III.</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kabul edilemez.</td><td>Tam bağımsızlık ve Ekonomik bağımsızlık</td></tr>
+<tr><td><b>IV.</b> Azınlıkların hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir.</td><td>Yabancı devletlerin iç işlerimize karışmasını sağlama</td></tr>
+</table>
+<p>Tablodaki numaralandırılmış eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>`,
+  c: [`I`, `II`, `III`, `IV`],
+  a: "D",
+  s: `<p>Misak-ı Millî’nin azınlıklarla ilgili <b>IV. maddesi</b>, yabancı devletlerin iç işlerimize karışmasını sağlamak için değil; tam tersine <b>uluslararası eşitlik (mütekabiliyet / karşılıklılık)</b> ilkesini sağlamak ve Avrupalı devletlerin azınlık haklarını bahane ederek iç işlerimize karışmasını engellemek amacıyla alınmıştır. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>23 Nisan 1920’de açılan Türkiye Büyük Millet Meclisi’nin kabul ettiği 24 Nisan Önergesi’ndeki bazı maddeler aşağıdaki diyagramda gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="23 Nisan 1920 TBMM özellikleri diyagramı">
+<rect x="190" y="8" width="160" height="30" rx="6" fill="#dc2626"/>
+<text x="270" y="27" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">I. TBMM (23 Nisan 1920)</text>
+<line x1="270" y1="38" x2="270" y2="52" stroke="#475569" stroke-width="2"/>
+<line x1="90" y1="52" x2="450" y2="52" stroke="#475569" stroke-width="2"/>
+<line x1="90" y1="52" x2="90" y2="65" stroke="#475569" stroke-width="2"/>
+<line x1="270" y1="52" x2="270" y2="65" stroke="#475569" stroke-width="2"/>
+<line x1="450" y1="52" x2="450" y2="65" stroke="#475569" stroke-width="2"/>
+<rect x="10" y="65" width="160" height="80" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+<text x="90" y="84" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Madde</text>
+<text x="90" y="102" font-size="9.5" text-anchor="middle">“Hükûmet kurmak zorunludur.</text>
+<text x="90" y="116" font-size="9.5" text-anchor="middle">TBMM’nin üstünde hiçbir</text>
+<text x="90" y="130" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">güç yoktur.”</text>
+<rect x="190" y="65" width="160" height="80" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
+<text x="270" y="84" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">2. Madde</text>
+<text x="270" y="102" font-size="9.5" text-anchor="middle">“TBMM yasama, yürütme ve</text>
+<text x="270" y="116" font-size="9.5" text-anchor="middle">yargı yetkilerini kendinde</text>
+<text x="270" y="130" font-size="9.5" font-weight="bold" fill="#166534" text-anchor="middle">toplamıştır.”</text>
+<rect x="370" y="65" width="160" height="80" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="450" y="84" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">3. Madde</text>
+<text x="450" y="102" font-size="9.5" text-anchor="middle">“Meclis Başkanı, meclis</text>
+<text x="450" y="116" font-size="9.5" text-anchor="middle">içinden seçilen hükûmetin</text>
+<text x="450" y="130" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">de başkanıdır.”</text>
+</svg></div>
+<p>Diyagramdaki maddelere göre I. TBMM ile ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: [
+    `1. madde ile İstanbul Hükûmeti yok sayılmış ve egemenliğin kayıtsız şartsız millete ait olduğu vurgulanmıştır.`,
+    `2. madde ile olağanüstü savaş koşullarında hızlı karar alıp uygulayabilmek için “Güçler Birliği” ilkesi benimsenmiştir.`,
+    `3. madde ile “Meclis Hükûmeti Sistemi” uygulanmış ve meclis başkanı aynı zamanda yürütmenin başı olmuştur.`,
+    `2. madde ile yasama, yürütme ve yargı güçleri birbirinden tamamen ayrılarak “Kuvvetler Ayrılığı” ilkesi hayata geçirilmiştir.`
+  ],
+  a: "D",
+  s: `<p>Yasama, yürütme ve yargı yetkilerinin tek bir organda (TBMM’de) toplanmasına <b>Güçler (Kuvvetler) Birliği</b> denir[cite: 9]. Bu uygulama savaş döneminde hızlı karar almak için yapılmıştır; kuvvetler ayrılığı ilkesi <b>değildir</b>. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>TBMM’nin açılmasından sonra Anadolu’nun çeşitli yerlerinde çıkan ayaklanmalara karşı Meclis’in aldığı önlemler aşağıdaki tabloda gösterilmiştir.</p>
+<table class="rt">
+<tr><th>Ayaklanma Nedeni / Kışkırtma</th><th>TBMM’nin Aldığı Karşı Önlem</th><th>İlgili Olduğu Alan / Yetki</th></tr>
+<tr><td>Ayaklananların ve bozguncuların hukuki olarak cezalandırılması ihtiyacı</td><td><b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b> çıkarıldı.</td><td><b>( 1 )</b></td></tr>
+<tr><td>Kanunu ihlal edenlerin ve asker kaçaklarının hızla yargılanması ihtiyacı</td><td>Üyeleri milletvekillerinden oluşan <b>İstiklal Mahkemeleri</b> kuruldu.</td><td><b>( 2 )</b></td></tr>
+<tr><td>İstanbul Şeyhülislamı Dürrizade’nin Millî Mücadele aleyhine yayımladığı fetva</td><td>Ankara Müftüsü <b>Rıfat (Börekçi)</b> ve 153 müftüden karşı fetva alındı.</td><td>Dinî Önlem</td></tr>
+<tr><td>İstanbul basınının halkı yanıltan kara propagandası</td><td><b>Anadolu Ajansı</b> kuruldu ve <i>Hakimiyet-i Milliye</i> gazetesi çıkarıldı.</td><td>Basın–Yayın ve İletişim</td></tr>
+</table>
+<p>Tabloda <b>( 1 )</b> ve <b>( 2 )</b> numaralı yerlere TBMM’nin kullandığı hangi yetkiler yazılmalıdır?</p>`,
+  c: [
+    `1: Yasama Yetkisi — 2: Yargı Yetkisi`,
+    `1: Yargı Yetkisi — 2: Yasama Yetkisi`,
+    `1: Yürütme Yetkisi — 2: Diplomasi Yetkisi`,
+    `1: Yargı Yetkisi — 2: Yürütme Yetkisi`
+  ],
+  a: "A",
+  s: `<p>Devlette <b>kanun çıkarma</b> yetkisi <b>Yasama</b> erkine aittir; TBMM Hıyanet-i Vataniye Kanunu’nu çıkararak <b>Yasama (1)</b> yetkisini kullanmıştır. Suçluları <b>mahkemelerde yargılama</b> yetkisi ise <b>Yargı</b> erkine aittir; TBMM kendi milletvekillerinden oluşan İstiklal Mahkemeleri’ni kurarak <b>Yargı (2)</b> yetkisini kullanmıştır. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>10 Ağustos 1920’de Osmanlı Saltanat Şûrası tarafından imzalanan <b>Sevr Antlaşması</b>’nın bazı maddeleri aşağıdaki şemada verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="Sevr Antlaşması maddeleri şeması">
+<rect x="10" y="10" width="165" height="135" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+<text x="92" y="28" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Sınırlar ve Boğazlar</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="20" y="48">• Doğu’da Ermeni ve Kürt</text>
+<text x="20" y="62">  devleti kurulacak.</text>
+<text x="20" y="80">• Boğazlar içinde Türk üye</text>
+<text x="20" y="94">  olmayan uluslararası bir</text>
+<text x="20" y="108">  komisyona bırakılacak.</text>
+</g>
+<rect x="187" y="10" width="165" height="135" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="270" y="28" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">Askerî Hükümler</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="197" y="48">• Zorunlu askerlik</text>
+<text x="197" y="62">  kaldırılacak.</text>
+<text x="197" y="80">• Orduda ağır silah, top ve</text>
+<text x="197" y="94">  uçak bulunmayacak; sadece</text>
+<text x="197" y="108">  50.700 jandarma olacak.</text>
+</g>
+<rect x="365" y="10" width="165" height="135" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+<text x="447" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Ekonomik ve Hukuki</text>
+<g font-size="9.5" fill="#1e293b">
+<text x="375" y="48">• Kapitülasyonlardan tüm</text>
+<text x="375" y="62">  devletler yararlanacak.</text>
+<text x="375" y="80">• Osmanlı maliyesi İtilaf</text>
+<text x="375" y="94">  Devletleri’nin komisyon</text>
+<text x="375" y="108">  denetiminde olacak.</text>
+</g>
+</svg></div>
+<p>Sevr Antlaşması’nın bu maddeleri ve onaylanma süreci dikkate alındığında aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: [
+    `Boğazlar Komisyonu’nda Türk üyenin bulunmaması egemenlik haklarımızı koruma amacı taşımaktadır.`,
+    `Osmanlı Anayasası’na (Kanun-i Esasi) göre bir antlaşmanın yürürlüğe girmesi için Mebusan Meclisi’nin onayı şart olduğundan, meclis onayından geçmeyen ve TBMM’nin tanımadığı Sevr hukuken geçersiz (“ölü doğmuş”) bir antlaşmadır.`,
+    `Ekonomik hükümlerle Osmanlı Devleti’nin dış borçları tamamen silinmiş ve bağımsız bütçe hakkı tanınmıştır.`,
+    `Sevr Antlaşması, Misak-ı Millî kararlarıyla birebir örtüştüğü için İstanbul Hükûmeti tarafından imzalanmıştır.`
+  ],
+  a: "B",
+  s: `<p>Osmanlı Anayasası (Kanun-i Esasi) gereği uluslararası bir antlaşmanın hukuken geçerli olabilmesi için <b>Mebusan Meclisi tarafından onaylanması</b> zorunluydu. Ancak Mebusan Meclisi dağıtılmış olduğu için Sevr onaylanmamış, ayrıca Türk milletinin tek temsilcisi olan <b>TBMM de bu antlaşmayı reddetmiştir</b>[cite: 9]. Bu nedenle Sevr hukuken geçersiz, <b>“ölü doğmuş”</b> bir antlaşmadır (<b>B doğru</b>).</p>`
 }
 ]
 });
