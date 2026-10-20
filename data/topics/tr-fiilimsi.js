@@ -4,10 +4,10 @@ summary: `
 <h3>1. Fiilimsi (Eylemsi) Nedir ve Temel Özellikleri Nelerdir?</h3>
 <p>Fiil kök veya gövdelerine belirli yapım eklerinin getirilmesiyle türetilen; fiil anlamını tamamen kaybetmeden cümlede <b>isim, sıfat veya zarf</b> görevinde kullanılan sözcüklere <b>fiilimsi (eylemsi)</b> denir.</p>
 <ul>
-<li><b>Kökü veya gövdesi mutlaka fiildir:</b> İsim soylu sözcüklere fiilimsi eki gelemez (Örn: <i>“evdeyken, çocukken”</i> sözcükleri fiilimsi <b>değildir</b>).</li>
-<li><b>Olumsuzu yapılabilir:</b> Tıpkı fiiller gibi <b>“-ma / -me”</b> olumsuzluk ekini alabilirler (<i>okumamak, gelmeyen, dinlenmeden</i>).</li>
-<li><b>Kip ve kişi (şahıs) eki alamazlar:</b> Çekimli fiiller gibi haber veya dilek kipleriyle çekimlenemezler.</li>
-<li><b>Yan cümlecik kurarlar:</b> Bir cümlede kaç tane fiilimsi varsa o kadar <b>yan cümlecik (yan yargı)</b> vardır.</li>
+<li><b>Kökü veya gövdesi mutlaka fiildir:</b> İsim soylu sözcüklere fiilimsi eki gelemez (Örn: <i>“evdeyken, çocukken, delicesine”</i> sözcükleri fiilimsi <b>değildir</b>).</li>
+<li><b>Olumsuzu yapılabilir:</b> Tıpkı fiiller gibi <b>“-ma / -me”</b> (veya zarf-fiilde <i>-madan, -maksızın</i>) olumsuzluk ekini alabilirler (<i>okumamak, gelmeyen, dinlenmeden</i>).</li>
+<li><b>Kip ve kişi (şahıs) eki alamazlar:</b> Çekimli fiiller gibi haber veya dilek kipleriyle çekimlenemezler; cümlede temel yargıyı değil, <b>yan yargıyı (yan cümleciği)</b> kurarlar.</li>
+<li><b>Yan cümlecik sayısı:</b> Bir cümlede kaç tane fiilimsi varsa o kadar <b>yan cümlecik (yan yargı)</b> vardır.</li>
 <li><b>Ek-fiil alarak yüklem olabilirler:</b> Fiilimsiler <i>idi, imiş, ise, -dır</i> ek-fiillerini alarak cümlenin yüklemi olabilir (Örn: <i>“En büyük tutkusu kitap <b>okumaktı</b>.”</i>).</li>
 </ul>
 
@@ -100,7 +100,7 @@ summary: `
 
 <div class="note"><b>Tuzak 5 ve 6 (“-ken / -casına” ve “-madan” Ayrımı):</b>
 <br>• <b>“-ken”</b> ve <b>“-casına”</b> ekleri <b>isim soylu</b> sözcüklere gelirse fiilimsi <b>OLMAZ</b>: <i>“<b>Çocukken</b> çok yaramazdı.”</i>, <i>“<b>Evdeyken</b> telefonum çaldı.”</i>, <i>“<b>Delicesine</b> sevindi.”</i> (Bunlar isimdir, zarf-fiil değildir!). Ancak <i>“<b>Okurken</b>, <b>giderken</b>, <b>uçarcasına</b>”</i> sözcüklerinde fiile geldiği için <b>zarf-fiildir</b>.
-<br>• <b>“-madan” Eki Tuzağı:</b> <i>“Yüksek sesle <b>konuşmadan</b> hoşlanmam.”</i> cümlesinde “konuş-<b>ma</b>-dan” sözcüğü <b>isim-fiildir</b> (Neden hoşlanmam?). <i>“Kimseyle <b>konuşmadan</b> dışarı çıktı.”</i> cümlesinde ise “Nasıl çıktı?” sorusuna cevap verdiği için <b>zarf-fiildir</b>!</div>
+<br>• <b>“-madan” Eki Tuzağı:</b> <i>“Yüksek sesle <b>konuşmadan</b> hoşlanmam.”</i> cümlesinde “konuş-<b>ma</b>-dan” sözcüğü <b>isim-fiildir</b> (Neyden hoşlanmam?). <i>“Kimseyle <b>konuşmadan</b> dışarı çıktı.”</i> cümlesinde ise “Nasıl çıktı?” sorusuna cevap verdiği için <b>zarf-fiildir</b>!</div>
 `,
 qs: [
 {
@@ -139,9 +139,8 @@ qs: [
 <ul>
 <li><b>I (yaprak sarması) ve M (danışma bankosu):</b> Eylem anlamını tamamen kaybedip bir yemeğin ve bir birimin adı olduğu için <b>Kalıcı İsimdir</b> (fiilimsi değildir).</li>
 <li><b>II (yarayı sarması) ve K (bireylere danışma alışkanlığı):</b> Eylem anlamını koruyan ve <i>“-ma”</i> isim-fiil eki alan <b>İsim-Fiillerdir</b>.</li>
-<li><b>III (sıkı sarma!) ve L (başkalarına danışma!):</b> Emir kipinin olumsuzuyla çekimlenmiş <b>Çekimli Fiillerdir</b> (fiilimsi değildir).</li>
-</ul>
-<p>Doğru eşleştirme <b>A</b> seçeneğindedir.</p>`
+<li><b>III (sıkı sarma!) ve L (başkalarına danışma!):</b> Emir kipinin olumsuzuyla çekimlenmiş <b>Çekimli Fiillerdir</b> (fiilimsi değildir). Cevap <b>A</b>.</li>
+</ul>`
 },
 {
   q: `<p>Bir öğrenci, aşağıdaki dört dizelik şiirde geçen <b>isim-fiil, sıfat-fiil ve zarf-fiil</b> sayılarını belirleyerek yandaki sütun grafiğini oluşturmak istiyor:</p>
@@ -180,7 +179,7 @@ qs: [
 <li><b>3. Dize:</b> <i>“Akşam <b>olmadan</b> (-madan → Zarf-fiil 3) köye <b>varmak</b> (-mak → İsim-fiil 1) tek dileğimizdi,”</i></li>
 <li><b>4. Dize:</b> <i>“Bizi <b>bekleyen</b> (-en → Sıfat-fiil 3) dedemin <b>gülüşüyle</b> (-üş → İsim-fiil 2) yorgunluğu unuttuk.”</i></li>
 </ul>
-<p>Toplamda: <b>2 İsim-fiil</b> (<i>varmak, gülüşüyle</i>), <b>3 Sıfat-fiil</b> (<i>sararan, dinmeyen, bekleyen</i>) ve <b>3 Zarf-fiil</b> (<i>toplayıp, dinleyerek, olmadan</i>) vardır. Cevap <b>A</b>.</p>`
+<p>Toplamda: <b>2 İsim-fiil</b>, <b>3 Sıfat-fiil</b> ve <b>3 Zarf-fiil</b> vardır. Cevap <b>A</b>.</p>`
 },
 {
   q: `<p>Bazı ekler (<i>-acak/-ecek, -mış/-miş, -ar/-er, -maz/-mez</i>) hem <b>sıfat-fiil eki</b> hem de <b>kip (zaman) eki</b> olarak kullanılabilir. Aşağıdaki tanılayıcı dallanmış ağaçta altı çizili sözcüklerin sıfat-fiil mi yoksa çekimli fiil mi olduğuna karar verilerek ilerlenecektir.</p>
@@ -214,12 +213,7 @@ qs: [
 <p>Şemadaki cümleler doğru değerlendirilerek ilerlendiğinde <b>kaçıncı çıkışa</b> ulaşılır?</p>`,
   c: [`1. Çıkış`, `2. Çıkış`, `3. Çıkış`, `4. Çıkış`],
   a: "A",
-  s: `<p>Adım adım ilerleyelim:</p>
-<ul>
-<li><b>1. Cümle:</b> <i>“Bize <b>anlatacak</b> çok güzel anıları varmış.”</i> → “anlatacak” sözcüğü “anı” ismini nitelediği için (nasıl anılar? anlatacak anılar) <b>Sıfat-Fiildir</b> (Sola gidilir).</li>
-<li><b>2. Cümle:</b> <i>“<b>Sararmış</b> ekinler rüzgârda dalgalanıyor.”</i> → “sararmış” sözcüğü “ekinler” ismini nitelediği için (nasıl ekinler? sararmış ekinler) <b>Sıfat-Fiildir</b>.</li>
-</ul>
-<p>Böylece <b>1. Çıkışa</b> ulaşılır. Cevap <b>A</b>.</p>`
+  s: `<p>1. Cümlede <i>“<b>anlatacak</b> çok güzel anılar”</i> derken “anlatacak” sözcüğü “anı” ismini nitelediği için <b>Sıfat-Fiildir</b> (sola gidilir). 2. Cümlede <i>“<b>Sararmış</b> ekinler”</i> derken “sararmış” sözcüğü “ekinler” ismini nitelediği için yine <b>Sıfat-Fiildir</b>. Böylece <b>1. Çıkışa</b> ulaşılır. Cevap <b>A</b>.</p>`
 },
 {
   q: `<p>Zarf-fiiller (bağ-fiiller) cümleye temel olarak <b>durum (nasıl?)</b> veya <b>zaman (ne zaman?)</b> anlamı katar. Aşağıdaki tabloda dört cümle ve içerdikleri zarf-fiillerin cümleye kattığı anlamlar eşleştirilmiştir.</p>
@@ -256,13 +250,7 @@ qs: [
     `İşleyen demir pas tutmaz.`
   ],
   a: "C",
-  s: `<p>Seçenekleri tek tek inceleyelim:</p>
-<ul>
-<li><b>A:</b> “Gülme” (olumsuz emir - çekimli fiil), “gelir” (geniş zaman - çekimli fiil) → Fiilimsi yoktur.</li>
-<li><b>B:</b> “Bilenlerle” (bilen kişilerle → adlaşmış sıfat-fiil) ve “bilmeyenler” (adlaşmış sıfat-fiil) vardır ama <b>isim-fiil yoktur</b>.</li>
-<li><b>C:</b> <i>“<b>Okumak</b> (-mak → <b>İsim-fiil</b>), <b>bilmeyenleri</b> (bilmeyen insanları → <b>Adlaşmış sıfat-fiil</b>) karanlıktan aydınlığa çıkarır.”</i> → Her ikisi de bir arada kullanılmıştır (<b>C doğru</b>).</li>
-<li><b>D:</b> “İşleyen demir” (normal sıfat-fiil, isim düşmemiştir).</li>
-</ul>`
+  s: `<p>C seçeneğinde <i>“<b>Okumak</b> (-mak → <b>İsim-fiil</b>), <b>bilmeyenleri</b> (bilmeyen insanları → <b>Adlaşmış sıfat-fiil</b>) karanlıktan aydınlığa çıkarır.”</i> cümlesinde her ikisi de bir arada kullanılmıştır. A’da fiilimsi yoktur, B’de yalnızca iki adlaşmış sıfat-fiil vardır, D’de normal sıfat-fiil vardır. Cevap <b>C</b>.</p>`
 },
 {
   q: `<p>Aşağıdaki görselde bir belediyenin çevre bilinci oluşturmak için hazırladığı afişte numaralanmış dört cümle yer almaktadır.</p>
@@ -285,7 +273,7 @@ qs: [
     `IV. cümlede bir sıfat-fiil (“kuruyan”) ve bir zarf-fiil (“budayıp”) kullanılmıştır.`
   ],
   a: "B",
-  s: `<p><b>Dikkat (“-ken” Eki Tuzağı!):</b> II. cümlede geçen <i>“<b>Küçükken</b>”</i> sözcüğünün kökü <b>“küçük” (isim/sıfat)</b> olduğu için bu sözcük bir fiilimsi (zarf-fiil) <b>değildir!</b> Fiilimsi ekleri yalnızca fiil kök veya gövdelerine gelir. II. cümlede yalnızca <i>“diktiğimiz” (-dik)</i> sıfat-fiili vardır. Dolayısıyla <b>B</b> seçeneği yanlıştır.</p>`
+  s: `<p>II. cümlede geçen <i>“<b>Küçükken</b>”</i> sözcüğünün kökü <b>“küçük” (isim/sıfat)</b> olduğu için bu sözcük bir fiilimsi (zarf-fiil) <b>değildir!</b> Fiilimsi ekleri yalnızca fiil kök veya gövdelerine gelir. II. cümlede yalnızca <i>“diktiğimiz” (-dik)</i> sıfat-fiili vardır. Cevap <b>B</b>.</p>`
 },
 {
   q: `<p>Fiilimsiler (isim-fiil, sıfat-fiil, zarf-fiil) normalde temel cümlenin yan yargısını oluşturur; ancak <b>ek-fiil (idi, imiş, ise, -dır)</b> alarak cümlenin <b>yüklemi</b> de olabilirler.</p>
@@ -297,13 +285,7 @@ qs: [
     `Yarın sabah erkenden kalkıp sahilde yürüyüş yapacağız.`
   ],
   a: "B",
-  s: `<p>Cümlelerin yüklemlerini inceleyelim:</p>
-<ul>
-<li>A’nın yüklemi: <i>“onarmıştı”</i> (Öğrenilen geçmiş zamanın hikâyesi → Çekimli fiil).</li>
-<li>C’nin yüklemi: <i>“sildik”</i> (Görülen geçmiş zaman → Çekimli fiil).</li>
-<li>D’nin yüklemi: <i>“yapacağız”</i> (Gelecek zaman → Çekimli fiil).</li>
-<li><b>B’nin yüklemi:</b> <i>“<b>çalışmaktır</b>”</i> (çalış-<b>mak</b> isim-fiili, <i>“-tır”</i> ek-fiilini alarak cümlenin yüklemi olmuştur). Cevap <b>B</b>.</li>
-</ul>`
+  s: `<p>A’da “onarmıştı”, C’de “sildik”, D’de “yapacağız” çekimli fiildir. <b>B</b> seçeneğinde ise yüklem <i>“<b>çalışmaktır</b>”</i> sözcüğüdür; <i>çalış-mak</i> isim-fiili <i>“-tır”</i> ek-fiilini alarak yüklem olmuştur. Cevap <b>B</b>.</p>`
 },
 {
   q: `<p>Türkçe öğretmeni, tahtaya <b>“-madan / -meden”</b> ekini alan dört cümle yazmış ve öğrencilerinden bu eklerin görevini (zarf-fiil eki mi, yoksa isim-fiil eki + ayrılma hâl eki mi olduğunu) bulmalarını istemiştir.</p>
@@ -319,8 +301,7 @@ qs: [
 <p>Tahtadaki numaralanmış cümlelerin hangisinde altı çizili sözcük <b>zarf-fiil (ulaç) değildir</b>?</p>`,
   c: [`1`, `2`, `3`, `4`],
   a: "C",
-  s: `<p>1. (<i>Nasıl geçmeyin? → okumadan</i>), 2. (<i>Nasıl ayrılmış? → haber vermeden</i>) ve 4. (<i>Ne zaman bitirdik? → güneş batmadan</i>) cümlelerdeki sözcükler fiili durum ve zaman yönünden niteleyen <b>zarf-fiillerdir</b>.</p>
-<p>Ancak <b>3. cümlede</b> <i>“Yüksek sesle <b>konuş-ma-dan</b> hiç hoşlanmam.”</i> derken “Neyden hoşlanmam?” sorusuna cevap verir; buradaki <b>“-ma” isim-fiil eki</b>, <b>“-dan” ise ayrılma hâl ekidir</b>. Dolayısıyla 3. cümledeki sözcük zarf-fiil değil, <b>isim-fiildir</b>. Cevap <b>C</b>.</p>`
+  s: `<p>1, 2 ve 4. cümlelerdeki altı çizili sözcükler fiili durum ve zaman yönünden niteleyen <b>zarf-fiillerdir</b>. Ancak <b>3. cümlede</b> <i>“Yüksek sesle <b>konuş-ma-dan</b> hiç hoşlanmam.”</i> derken “Neyden hoşlanmam?” sorusuna cevap verir; buradaki <b>“-ma” isim-fiil eki</b>, <b>“-dan” ise ayrılma hâl ekidir</b> (isim-fiildir). Cevap <b>C</b>.</p>`
 },
 {
   q: `<p>Aşağıdaki tabloda dört cümle ve bu cümlelerde yer alan fiilimsi türleri işaretlenmiştir.</p>
@@ -334,17 +315,11 @@ qs: [
 <p>Tablodaki numaralanmış cümlelerin hangisinde fiilimsi türlerinin işaretlenmesinde <b>yanlışlık</b> yapılmıştır?</p>`,
   c: [`I`, `II`, `III`, `IV`],
   a: "B",
-  s: `<p>Cümleleri kontrol edelim:</p>
-<ul>
-<li><b>I:</b> <i>“Bata çıka”</i> (-a...-a → Zarf-fiil ✓), <i>“ilerleyen”</i> (-en → Sıfat-fiil ✓) → Doğru.</li>
-<li><b>II:</b> <i>“tanıdık yazarlar”</i> (-dık → Sıfat-fiil ✓) vardır; ancak <i>“fuarın <b>girişinde</b>”</i> sözcüğü artık bir mekanın/kapının kalıcı adı olduğu için (<i>giriş - çıkış</i>) <b>kalıcı isimdir, isim-fiil değildir!</b> (<b>II yanlış işaretlenmiştir</b>).</li>
-<li><b>III:</b> <i>“yağdıkça”</i> (-dıkça → Zarf-fiil ✓), <i>“yükselmesi”</i> (-me → İsim-fiil ✓) → Doğru.</li>
-<li><b>IV:</b> <i>“görünmez”</i> (-mez → Sıfat-fiil ✓), <i>“önlemek”</i> (-mek → İsim-fiil ✓) → Doğru. Cevap <b>B</b>.</li>
-</ul>`
+  s: `<p>II. cümlede <i>“tanıdık yazarlar”</i> (-dık → Sıfat-fiil ✓) vardır; ancak <i>“fuarın <b>girişinde</b>”</i> sözcüğü artık bir kapının/bölümün kalıcı adı olduğu için <b>kalıcı isimdir, isim-fiil değildir!</b> Dolayısıyla II. satır yanlış işaretlenmiştir. Cevap <b>B</b>.</p>`
 },
 {
-  q: `<p>Aşağıdaki metinde bazı sözcükler numaralandırılarak altı çizilmiştir:</p>
-<p><i>“Sabahın ilk ışıklarıyla <b>(I) uyanan</b> kasaba halkı, meydanda <b>(II) kurulan</b> pazara doğru <b>(III) yürü현</b> komşularına selam vererek dükkânlarını açtı. Fırından yeni <b>(IV) çıkmış</b> sıcak <b>(V) ekmeklerin</b> kokusu tüm sokağı sarmıştı. Esnafın güler yüzle <b>(VI) çalışması</b> kasabaya ayrı bir huzur katıyordu.”</i></p>
+  q: `<p>Aşağıdaki metinde bazı sözcükler numaralandırılarak koyu yazılmıştır:</p>
+<p><i>“Sabahın ilk ışıklarıyla <b>(I) uyanan</b> kasaba halkı, meydanda <b>(II) kurulan</b> pazara doğru <b>(III) yürüyen</b> komşularına selam vererek dükkânlarını açtı. Fırından yeni <b>(IV) çıkmış</b> sıcak <b>(V) ekmeklerin</b> kokusu tüm sokağı sarmıştı. Esnafın güler yüzle <b>(VI) çalışması</b> kasabaya ayrı bir huzur katıyordu.”</i></p>
 <p>Metindeki numaralanmış sözcüklerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
   c: [
     `I, II, III ve IV numaralı sözcükler sıfat-fiil; V numaralı sözcük ise isim-fiildir.`,
@@ -353,13 +328,344 @@ qs: [
     `Metinde zarf-fiil türünde hiçbir sözcük kullanılmamıştır.`
   ],
   a: "B",
-  s: `<p>Numaralanmış sözcükleri inceleyelim:</p>
+  s: `<p>I (uyanan), II (kurulan), III (yürüyen) ve IV (çıkmış) <b>sıfat-fiildir</b>. <b>V (ekmeklerin)</b> temel bir besin maddesinin adı olduğu için <b>kalıcı isimdir</b> (fiilimsi değildir). <b>VI (çalışması)</b> ise <i>“-ma”</i> eki almış bir <b>isim-fiildir</b> (ayrıca metinde “vererek” zarf-fiili de vardır). Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Bir cümlede bulunan fiilimsi sayısı, o cümledeki <b>yan cümlecik (yan yargı)</b> sayısına eşittir. Aşağıdaki numaralanmış dört cümlenin içerdiği yan cümlecik sayıları sütun grafiğinde gösterilmiştir ancak bir cümlenin sütunu <b>hatalı</b> çizilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Cümlelerdeki yan cümlecik sayısı sütun grafiği">
+<rect x="10" y="10" width="320" height="145" rx="6" fill="#f8fafc" stroke="#64748b"/>
+<g font-size="9.5" fill="#1e293b">
+<text x="20" y="34"><tspan font-weight="bold" fill="#dc2626">I.</tspan> Sabah erkenden kalkıp kahvaltı yapmadan evden</text>
+<text x="20" y="48">   çıkan Ali, otobüse yetişmek için koştu.</text>
+<text x="20" y="72"><tspan font-weight="bold" fill="#2563eb">II.</tspan> Okuduğum romanın sürükleyici anlatımı beni</text>
+<text x="20" y="86">    derinden etkiledi.</text>
+<text x="20" y="110"><tspan font-weight="bold" fill="#16a34a">III.</tspan> Akşam yemeğinde annemin yaptığı sarmayı ve</text>
+<text x="20" y="124">     dondurmayı afiyetle yedik.</text>
+<text x="20" y="144"><tspan font-weight="bold" fill="#d97706">IV.</tspan> Gülerek yanımıza gelen çocuk, elindeki uçurtmayı</text>
+<text x="20" y="154">    gökyüzüne bırakıverdi.</text>
+</g>
+<line x1="365" y1="135" x2="525" y2="135" stroke="#334155" stroke-width="1.5"/>
+<line x1="365" y1="20" x2="365" y2="135" stroke="#334155" stroke-width="1.5"/>
+<rect x="380" y="35" width="24" height="100" fill="#dc2626"/>
+<rect x="418" y="110" width="24" height="25" fill="#2563eb"/>
+<rect x="456" y="60" width="24" height="75" fill="#16a34a"/>
+<rect x="494" y="85" width="24" height="50" fill="#d97706"/>
+<g font-size="10" font-weight="bold" text-anchor="middle">
+<text x="392" y="30">4</text><text x="392" y="150">I</text>
+<text x="430" y="105">1</text><text x="430" y="150">II</text>
+<text x="468" y="55">3</text><text x="468" y="150">III</text>
+<text x="506" y="80">2</text><text x="506" y="150">IV</text>
+</g>
+</svg></div>
+<p>Buna göre grafikte hangi cümleye ait yan cümlecik (fiilimsi) sayısı <b>yanlış</b> gösterilmiştir?</p>`,
+  c: [`I`, `II`, `III`, `IV`],
+  a: "C",
+  s: `<p>Cümlelerdeki fiilimsileri sayalım:</p>
 <ul>
-<li><b>I (uyanan), II (kurulan), III (yürüyen) ve IV (çıkmış):</b> Önlerindeki isimleri niteleyen <b>sıfat-fiillerdir</b> (C yanlış).</li>
-<li><b>V (ekmeklerin):</b> Temel bir besin maddesinin adı olduğu için <b>kalıcı isimdir</b>, fiilimsi değildir (A yanlış).</li>
-<li><b>VI (çalışması):</b> <i>“-ma”</i> eki almış bir <b>isim-fiildir</b> (<b>B doğru</b>).</li>
-<li>Ayrıca metinde geçen <i>“vererek” (-erek)</i> sözcüğü zarf-fiildir (D yanlış). Cevap <b>B</b>.</li>
+<li><b>I. cümle:</b> <i>kalkıp (1), yapmadan (2), çıkan (3), yetişmek (4)</i> → <b>4 adet</b> (Doğru).</li>
+<li><b>II. cümle:</b> <i>okuduğum (1)</i> (“anlatım” fiilimsi değildir, yapım eki almış isimdir) → <b>1 adet</b> (Doğru).</li>
+<li><b>III. cümle:</b> <i>yaptığı (1)</i> vardır; “yemeğinde”, “sarmayı” ve “dondurmayı” sözcükleri ise <b>kalıcı isimdir</b>, fiilimsi değildir! Dolayısıyla III. cümlede 3 değil, <b>yalnızca 1 fiilimsi</b> vardır (<b>III yanlış gösterilmiştir</b>).</li>
+<li><b>IV. cümle:</b> <i>gülerek (1), gelen (2)</i> (“uçurtmayı” kalıcı isimdir) → <b>2 adet</b> (Doğru). Cevap <b>C</b>.</li>
 </ul>`
+},
+{
+  q: `<p>Aşağıdaki hedef tahtası oyununda oyuncunun kurduğu cümledeki her <b>isim-fiil 10 puan</b>, her <b>sıfat-fiil 15 puan</b>, her <b>zarf-fiil ise 20 puan</b> kazandırmaktadır; <b>kalıcı isimler</b> ise puan kazandırmamaktadır.</p>
+<div class="fig"><svg viewBox="0 0 480 125" width="460" role="img" aria-label="Fiilimsi puanlama hedef tahtası">
+<circle cx="85" cy="62" r="52" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<circle cx="85" cy="62" r="36" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<circle cx="85" cy="62" r="18" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<g font-size="9.5" font-weight="bold" text-anchor="middle">
+<text x="85" y="66" fill="#1e40af">10p</text>
+<text x="85" y="38" fill="#166534">15p</text>
+<text x="85" y="20" fill="#b45309">20p</text>
+</g>
+<rect x="165" y="15" width="295" height="95" rx="8" fill="#f8fafc" stroke="#64748b"/>
+<g font-size="10.5" fill="#1e293b">
+<text x="180" y="38" font-weight="bold" fill="#2563eb">• Her İsim-Fiil: +10 Puan</text>
+<text x="180" y="60" font-weight="bold" fill="#166534">• Her Sıfat-Fiil: +15 Puan</text>
+<text x="180" y="82" font-weight="bold" fill="#d97706">• Her Zarf-Fiil: +20 Puan</text>
+<text x="180" y="102" font-size="9.5" fill="#dc2626" font-weight="bold">* Kalıcı isimler ve çekimli fiiller: 0 Puan</text>
+</g>
+</svg></div>
+<p>Oyunda Mert şu cümleyi kurmuştur:</p>
+<p><i>“Elindeki <b>kazmayı</b> kulübeye <b>bırakıp</b> bahçede <b>kuruyan</b> çiçekleri <b>sulamaya</b> başladı.”</i></p>
+<p>Buna göre Mert bu cümleden toplam <b>kaç puan</b> kazanmıştır?</p>`,
+  c: [`35`, `45`, `55`, `60`],
+  a: "B",
+  s: `<p>Mert’in cümlesindeki koyu yazılmış sözcükleri inceleyelim:</p>
+<ul>
+<li><b>kazmayı:</b> Bahçe aletinin adı olduğu için <b>kalıcı isimdir</b> → <b>0 puan</b>.</li>
+<li><b>bırakıp:</b> <i>“-ıp”</i> eki almış <b>zarf-fiildir</b> → <b>20 puan</b>.</li>
+<li><b>kuruyan:</b> <i>“-an”</i> eki almış <b>sıfat-fiildir</b> → <b>15 puan</b>.</li>
+<li><b>sulamaya:</b> <i>“-ma”</i> eki almış <b>isim-fiildir</b> → <b>10 puan</b>.</li>
+</ul>
+<p>Toplam puan: 20 + 15 + 10 = <b>45 puan</b>. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki tabloda <b>“-ar / -er”</b> ve <b>“-maz / -mez”</b> eklerini alan sözcüklerin bulunduğu dört cümle verilmiştir.</p>
+<table class="rt">
+<tr><th>No</th><th>Cümle</th></tr>
+<tr><td><b>I</b></td><td>Sabahları <u>çalar</u> saatin sesiyle erkenden uyanırım.</td></tr>
+<tr><td><b>II</b></td><td>Dedem her sabah kahvaltıdan önce mutlaka gazete <u>okur</u>.</td></tr>
+<tr><td><b>III</b></td><td>Yaşadığı bu <u>görünmez</u> kazadan şans eseri yara almadan kurtuldu.</td></tr>
+<tr><td><b>IV</b></td><td>Kış aylarında bu dağ köyünün yolları kolay kolay <u>açılmaz</u>.</td></tr>
+</table>
+<p>Numaralanmış cümlelerdeki altı çizili sözcüklerden hangileri <b>sıfat-fiil (ortaç)</b>, hangileri <b>çekimli fiildir</b>?</p>`,
+  c: [
+    `Sıfat-Fiil: I ve III — Çekimli Fiil: II ve IV`,
+    `Sıfat-Fiil: I ve II — Çekimli Fiil: III ve IV`,
+    `Sıfat-Fiil: II ve IV — Çekimli Fiil: I ve III`,
+    `Sıfat-Fiil: III ve IV — Çekimli Fiil: I ve II`
+  ],
+  a: "A",
+  s: `<p>I. cümledeki <i>“<b>çalar</b> saat”</i> ve III. cümledeki <i>“<b>görünmez</b> kaza”</i> sözcükleri önlerindeki isimleri nitelediği için <b>Sıfat-Fiildir</b>. II. cümledeki <i>“okur”</i> ve IV. cümledeki <i>“açılmaz”</i> sözcükleri ise cümlenin yüklemi olup geniş zaman kipiyle çekimlenmiş <b>Çekimli Fiillerdir</b>. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>“-casına / -cesine”</b> veya <b>“-a...-a / -e...-e”</b> ekiyle oluşturulmuş sözcük <b>zarf-fiil değildir</b>?</p>`,
+  c: [
+    `Sanki yıllardır birbirlerini tanıyormuşçasına samimi sohbet ettiler.`,
+    `Martılar, vapurun arkasından süzüle süzüle uçuyordu.`,
+    `Delicesine yağan yağmur kısa sürede bütün köy yollarını kapattı.`,
+    `Küçük çocuk, annesinin elini tuta tuta merdivenlerden indi.`
+  ],
+  a: "C",
+  s: `<p>A’da <i>“tanıyormuşçasına”</i> (tanı- fiili), B’de <i>“süzüle süzüle”</i> (süzül- fiili) ve D’de <i>“tuta tuta”</i> (tut- fiili) fiil kök/gövdelerinden türemiş <b>zarf-fiillerdir</b>.</p>
+<p>Ancak <b>C</b> seçeneğindeki <i>“<b>Delicesine</b>”</i> sözcüğünün kökü <b>“deli” (isim)</b> olduğu için bu sözcük zarf-fiil (fiilimsi) <b>değildir</b>, durum zarfıdır. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Fiil kök veya gövdelerinden yapım ekiyle türediği hâlde sıfat-fiil eklerini (<i>-an, -ası, -mez, -ar, -dık, -ecek, -mış</i>) almayan sözcükler <b>fiilimsi değil, türemiş (kalıcı) sıfattır</b>. (Örnek: <i>kırık cam, açık kapı, soğuk su, yorgun adam</i>).</p>
+<p>Bu kurala göre aşağıdaki cümlelerin hangisinde altı çizili sözcük <b>sıfat-fiil değildir</b>?</p>`,
+  c: [
+    `<u>Gelecek</u> hafta okulda bilim fuarı düzenlenecek.`,
+    `<u>Okunmamış</u> kitapları kütüphanenin üst rafına dizdi.`,
+    `Fırtınada oluşan <u>kırık</u> camları ustalar hemen değiştirdi.`,
+    `<u>Bilinmeyen</u> bir numaradan gelen çağrıyı açmadı.`
+  ],
+  a: "C",
+  s: `<p>A’daki <i>“gelecek” (-ecek)</i>, B’deki <i>“okunmamış” (-mış)</i> ve D’deki <i>“bilinmeyen” (-en)</i> sözcükleri sıfat-fiil ekleriyle türetilmiş <b>sıfat-fiillerdir</b>. C seçeneğindeki <i>“<b>kırık</b> cam”</i> sözcüğü ise <i>kır-</i> fiilinden <i>“-ık”</i> yapım ekiyle türemiş bir <b>türemiş sıfattır</b>; sıfat-fiil eki almadığı (ve <i>-ma/-me</i> ile olumsuz yapılamadığı) için fiilimsi değildir. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Aşağıda verilen iki bağımsız cümleyi, anlam ve dil bilgisi bakımından <b>tek bir zarf-fiil (ulaç)</b> kullanarak doğru birleştiren seçenek hangisidir?</p>
+<ul>
+<li><b>1. Cümle:</b> Güneş dağların ardından yavaşça battı.</li>
+<li><b>2. Cümle:</b> Kamp alanındaki izciler çadırlarının önünde ateş yaktı.</li>
+</ul>`,
+  c: [
+    `Güneş dağların ardından yavaşça batınca kamp alanındaki izciler çadırlarının önünde ateş yaktı.`,
+    `Güneşin dağların ardından yavaşça batmasıyla kamp alanındaki izciler ateş yaktı.`,
+    `Dağların ardından yavaşça batan güneşten sonra izciler çadırlarının önünde ateş yaktı.`,
+    `Güneş dağların ardından yavaşça battı ve izciler çadırlarının önünde ateş yaktı.`
+  ],
+  a: "A",
+  s: `<p>B seçeneğinde <i>“batmasıyla” (-ma → isim-fiil)</i>, C seçeneğinde <i>“batan” (-an → sıfat-fiil)</i>, D seçeneğinde ise <i>“ve”</i> bağlacı kullanılmıştır. İki cümleyi <b>zarf-fiil</b> ile birleştiren seçenek <i>“yavaşça <b>batınca</b> (-ınca → zarf-fiil)”</i> ifadesinin yer aldığı <b>A</b> seçeneğidir.</p>`
+},
+{
+  q: `<p>Dört arkadaşın okudukları kitaplar hakkında yazdıkları yorum kartları aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Dört öğrencinin kitap yorum kartları">
+<rect x="10" y="10" width="250" height="65" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+<text x="22" y="28" font-size="10" font-weight="bold" fill="#1e40af">Kaan’ın Kartı:</text>
+<text x="22" y="45" font-size="9.5">“Yazarın akıcı anlatımıyla büyülenen okurlar,</text>
+<text x="22" y="60" font-size="9.5">kitabı ellerinden bırakmadan bitiriyor.”</text>
+
+<rect x="280" y="10" width="250" height="65" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+<text x="292" y="28" font-size="10" font-weight="bold" fill="#166534">Zeynep’in Kartı:</text>
+<text x="292" y="45" font-size="9.5">“Geçmişte yaşanan olayları araştırarak roman</text>
+<text x="292" y="60" font-size="9.5">yazmak büyük bir sabır ve emek ister.”</text>
+
+<rect x="10" y="88" width="250" height="65" rx="8" fill="#fef3c7" stroke="#d97706"/>
+<text x="22" y="106" font-size="10" font-weight="bold" fill="#b45309">Arda’nın Kartı:</text>
+<text x="22" y="123" font-size="9.5">“Sayfaları çevirdikçe merak uyandıran bu</text>
+<text x="22" y="138" font-size="9.5">eseri bütün arkadaşlarıma tavsiye ederim.”</text>
+
+<rect x="280" y="88" width="250" height="65" rx="8" fill="#fef2f2" stroke="#dc2626"/>
+<text x="292" y="106" font-size="10" font-weight="bold" fill="#991b1b">Elif’in Kartı:</text>
+<text x="292" y="123" font-size="9.5">“Kitap okumayı seven herkesin kütüphanesinde</text>
+<text x="292" y="138" font-size="9.5">bulunması gereken bir başyapıt olmuş.”</text>
+</svg></div>
+<p>Buna göre hangi öğrencinin yorum kartında <b>üç fiilimsi türüne de (isim-fiil, sıfat-fiil ve zarf-fiil)</b> örnek vardır?</p>`,
+  c: [`Kaan`, `Zeynep`, `Arda`, `Elif`],
+  a: "B",
+  s: `<p>Kartlardaki fiilimsileri inceleyelim:</p>
+<ul>
+<li><b>Kaan:</b> <i>büyülenen</i> (sıfat-fiil), <i>bırakmadan</i> (zarf-fiil) → İsim-fiil yok.</li>
+<li><b>Zeynep:</b> <i><b>yaşanan</b> (-an → <b>sıfat-fiil</b>)</i>, <i><b>araştırarak</b> (-arak → <b>zarf-fiil</b>)</i>, <i><b>yazmak</b> (-mak → <b>isim-fiil</b>)</i> → <b>Üç fiilimsi türü de vardır!</b></li>
+<li><b>Arda:</b> <i>çevirdikçe</i> (zarf-fiil), <i>uyandıran</i> (sıfat-fiil) → İsim-fiil yok.</li>
+<li><b>Elif:</b> <i>okumayı, bulunması</i> (isim-fiil), <i>seven, gereken</i> (sıfat-fiil) → Zarf-fiil yok. Cevap <b>B</b>.</li>
+</ul>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>“-ış / -iş / -uş / -üş”</b> eki alan sözcük <b>isim-fiil</b> görevinde kullanılmıştır?</p>`,
+  c: [
+    `İki eski dost yıllar sonra karşılaşınca hasretle kucaklaştı.`,
+    `Alışveriş merkezinin çıkış kapısında uzun bir kuyruk oluşmuştu.`,
+    `Şairin şiir okuyuşu salondaki tüm dinleyicileri kendine hayran bıraktı.`,
+    `Bu konudaki farklı görüşleri yarınki toplantıda değerlendireceğiz.`
+  ],
+  a: "C",
+  s: `<p>A’da <i>“karşılaşınca”</i> zarf-fiil, <i>“kucaklaştı”</i> ise işteş çatılı çekimli fiildir. B’de <i>“alışveriş”</i> ve <i>“çıkış kapısı”</i>, D’de ise <i>“görüşleri” (fikirleri)</i> <b>kalıcı isimdir</b>. C seçeneğindeki <i>“şiir <b>okuyuşu</b>”</i> (okumama tarzı / eylemin adı) ise <b>isim-fiildir</b>. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>“-ası / -esi”</b> ekiyle yapılmış bir <b>sıfat-fiil (ortaç)</b> vardır?</p>`,
+  c: [
+    `Annesi onu okulun kapısında heyecanla bekliyordu.`,
+    `Kapadokya, peri bacalarıyla mutlaka görülesi bir yerdir.`,
+    `Kardeşimin resim yapma hevesi her geçen gün artıyor.`,
+    `Komşumuzun bahçesi ilkbaharda rengârenk çiçeklerle doluydu.`
+  ],
+  a: "B",
+  s: `<p>A’da <i>“annesi”</i>, C’de <i>“hevesi”</i>, D’de <i>“bahçesi”</i> sözcüklerindeki <i>“-si”</i> iyelik ekidir ve bu sözcükler isimdir. <b>B</b> seçeneğindeki <i>“<b>görülesi</b> bir yer”</i> (görülmeye değer yer) sözcüğü ise <i>gör-ül-</i> fiiline <b>“-esi”</b> sıfat-fiil ekinin gelmesiyle oluşmuş bir <b>sıfat-fiildir</b>[cite: 14]. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>“-r … -maz / -mez”</b> kalıbıyla oluşturulmuş bir <b>zarf-fiil</b> vardır?</p>`,
+  c: [
+    `Bu iş artık bitmez tükenmez bir hâl almaya başladı.`,
+    `Güzel haberi duyar duymaz sevinçle yola çıktı.`,
+    `O, antrenmanlarda hiç yorulmaz bir sporcudur.`,
+    `Kışın bu yayla yolu kar yağdığında kolay kolay açılmaz.`
+  ],
+  a: "B",
+  s: `<p>A’daki <i>“bitmez tükenmez”</i> ve C’deki <i>“yorulmaz”</i> sözcükleri ismi niteleyen <b>sıfat-fiillerdir</b>. D’deki <i>“açılmaz”</i> geniş zamanın olumsuzuyla çekimlenmiş fiildir. <b>B</b> seçeneğindeki <i>“<b>duyar duymaz</b>”</i> ikilemesi ise “duyduğu anda” anlamıyla fiili zaman yönünden niteleyen bir <b>zarf-fiildir</b>[cite: 14]. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde altı çizili zarf-fiil, bir eylemin başlangıcından itibaren geçen <b>süreyi</b> bildirmektedir?</p>`,
+  c: [
+    `Sınıfa <u>girer girmez</u> pencereleri açıp odayı havalandırdı.`,
+    `Uzun yola <u>çıkmadan</u> aracın lastik basınçlarını kontrol etti.`,
+    `Ailecek Samsun’a <u>taşınalı</u> tam beş yıl oldu.`,
+    `Sabahları müzik <u>dinleyerek</u> sahilde koşu yapıyor.`
+  ],
+  a: "C",
+  s: `<p>C seçeneğindeki <i>“<b>taşınalı</b>”</i> sözcüğü <i>taşın-</i> fiiline <b>“-alı”</b> zarf-fiil ekinin getirilmesiyle oluşmuştur ve taşınma eyleminin başlangıcından bu yana geçen süreyi (beş yıl) bildirir[cite: 14]. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>İsim-fiiller ve adlaşmış sıfat-fiiller, isim çekim eklerini (<i>çoğul eki, iyelik ekleri, hâl ekleri</i>) alabilirler.</p>
+<p>Buna göre aşağıdaki cümlelerin hangisinde <b>isim çekim eki almış birden fazla fiilimsi</b> bulunmaktadır?</p>`,
+  c: [
+    `Gelen gideni aratır derlerdi de inanmazdım.`,
+    `Yüzmek ve koşmak sağlığımız için çok faydalıdır.`,
+    `Onun şiir okuyuşunu ve sahnedeki duruşunu herkes alkışladı.`,
+    `Koşarak gelen çocuk, elindeki mektubu babasına verdi.`
+  ],
+  a: "C",
+  s: `<p>A’da sadece “gideni” çekim eki almıştır (“gelen” ek almamıştır). B’de “yüzmek” ve “koşmak” çekim eki almamıştır. D’de “koşarak” ve “gelen” çekim eki almamıştır. <b>C</b> seçeneğinde ise <i>“okuyuş-<b>u-n-u</b>”</i> ve <i>“duruş-<b>u-n-u</b>”</i> isim-fiillerinin her ikisi de hem iyelik hem belirtme hâl eki almıştır. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>“Kitabı <u>okudukça</u> yazarın kurduğu dünyaya daha çok bağlandım.”</p>
+<p>Bu cümlede altı çizili zarf-fiilin cümleye kattığı anlam aşağıdakilerin hangisinde vardır?</p>`,
+  c: [
+    `Soğuk su içince boğazı ağrımaya başladı.`,
+    `Antrenman yaptıkça kondisyonunun arttığını hissedeceksin.`,
+    `Kimseye görünmeden arka kapıdan bahçeye süzüldü.`,
+    `Eve vardığımızda saat gece yarısını geçiyordu.`
+  ],
+  a: "B",
+  s: `<p>Örnek cümledeki <i>“okudukça” (-dıkça)</i> zarf-fiili cümleye <b>eylemin sürekliliğine ve tekrarına bağlı değişim (zaman/artış)</b> anlamı katmıştır[cite: 14]. Aynı anlam ve ek <b>B</b> seçeneğindeki <i>“Antrenman <b>yaptıkça</b> kondisyonunun arttığını hissedeceksin.”</i> cümlesinde vardır. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>olumsuz</b> bir fiilimsi kullanılmıştır?</p>`,
+  c: [
+    `Planlı ders çalışmamak insanı hedeflediği başarıdan uzaklaştırır.`,
+    `Her akşam düzenli kitap okumak kelime dağarcığını geliştirir.`,
+    `Bu zorlu süreçte asla umudunu kaybetme ve çalışmaya devam et.`,
+    `Ödevlerini zamanında bitirince ailesiyle sinemaya gitti.`
+  ],
+  a: "A",
+  s: `<p>A seçeneğindeki <i>“<b>çalışmamak</b>”</i> sözcüğü <i>çalış-</i> fiiline önce <b>“-ma” olumsuzluk eki</b>, ardından <b>“-mak” isim-fiil eki</b> getirilerek türetilmiş <b>olumsuz bir isim-fiildir</b>[cite: 14]. (C’deki “kaybetme” olumsuz çekimli fiildir, fiilimsi değildir). Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki numaralanmış cümlelerin hangisinde <b>sıfat-fiil (ortaç)</b>, nitelediği isimle birlikte cümlenin <b>nesnesi</b> görevinde kullanılmıştır?</p>`,
+  c: [
+    `Bahçede oynayan çocuklar birden bastıran yağmurla eve koştu.`,
+    `Annem, fırından yeni çıkardığı tepsiyi mutfak masasına bıraktı.`,
+    `Yıllardır görmediğim memleketime gelecek ay gideceğim.`,
+    `Kurumuş yapraklar sonbahar rüzgârıyla sokaklara savruldu.`
+  ],
+  a: "B",
+  s: `<p>A’da “Bahçede oynayan çocuklar” ve D’de “Kurumuş yapraklar” özne görevindedir. C’de “Yıllardır görmediğim memleketime” yer tamlayıcısıdır. <b>B</b> seçeneğinde ise “Neyi bıraktı?” sorusunun cevabı olan <i>“<b>fırından yeni çıkardığı tepsiyi</b>”</i> sıfat-fiil grubu cümlenin <b>belirtili nesnesi</b> görevindedir. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>(I) Köye vardığımızda güneş çoktan batmıştı. (II) Dedem bizi bahçe kapısında gülümseyerek karşıladı. (III) Ninemin sac üzerinde pişirdiği gözlemelerin kokusu bütün avluyu sarmıştı. (IV) O akşam yıldızların altında hep birlikte akşam yemeği ve kavurma yedik.</p>
+<p>Bu parçadaki numaralanmış cümlelerin hangisinde <b>fiilimsi yoktur</b>?</p>`,
+  c: [`I`, `II`, `III`, `IV`],
+  a: "D",
+  s: `<p>I’de <i>“vardığımızda” (-dığında → zarf-fiil)</i>, II’de <i>“gülümseyerek” (-erek → zarf-fiil)</i>, III’te <i>“pişirdiği” (-dik → sıfat-fiil)</i> vardır. <b>IV. cümledeki</b> <i>“yemeği”</i> ve <i>“kavurma”</i> sözcükleri ise yiyecek adı olan <b>kalıcı isimlerdir</b>; “yedik” çekimli fiildir[cite: 14]. Dolayısıyla IV. cümlede fiilimsi yoktur. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde altı çizili sözcüklerde <b>ünsüz yumuşamasına (ünsüz değişimine)</b> uğramış bir <b>sıfat-fiil eki</b> vardır?</p>`,
+  c: [
+    `<u>Bildiğim</u> tüm gerçekleri ve <u>okuyacağı</u> kitapları ona tek tek anlattım.`,
+    `<u>Sararan</u> başaklar ve <u>kuruyan</u> dereler kuraklığın habercisiydi.`,
+    `<u>Koşarak</u> yanımıza geldi ve <u>gülümseyerek</u> elimizdeki paketi aldı.`,
+    `Sabah <u>yürüyüşü</u> yapmak ve erken <u>uyanmak</u> sağlığa yararlıdır.`
+  ],
+  a: "A",
+  s: `<p>A seçeneğindeki <i>“bil-<b>dik</b>-im → bil<b>diğ</b>im”</i> (-dık sıfat-fiil eki) ve <i>“oku-y-<b>acak</b>-ı → oku<b>yacağ</b>ı”</i> (-acak sıfat-fiil eki) sözcüklerinde sıfat-fiil eklerinin sonundaki <i>“k”</i> sert ünsüzü ünlüyle başlayan ek aldığında <i>“ğ”</i> sesine dönüşerek <b>ünsüz yumuşamasına</b> uğramıştır[cite: 14]. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>“Görülmeye değer bu tarihî kente gelen yerli ve yabancı turistler, dolaştıkları antik sokakların fotoğraflarını çekiyordu.”</p>
+<p>Bu cümlede yer alan fiilimsilerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: [
+    `Yalnızca sıfat-fiil türünde sözcükler kullanılmıştır.`,
+    `İsim-fiil ve sıfat-fiil vardır; ancak zarf-fiil yoktur.`,
+    `Üç fiilimsi türünün tamamına örnek bulunmaktadır.`,
+    `İsim-fiil ve zarf-fiil vardır; ancak sıfat-fiil yoktur.`
+  ],
+  a: "B",
+  s: `<p>Cümlede <i>“<b>Görülmeye</b>” (-me → <b>İsim-fiil</b>)</i> ile <i>“<b>gelen</b>” (-en → <b>Sıfat-fiil</b>)</i> ve <i>“<b>dolaştıkları</b>” (-dık → <b>Sıfat-fiil</b>)</i> sözcükleri bulunmaktadır. Cümlede zarf-fiil yoktur (“çekiyordu” çekimli fiildir)[cite: 14]. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde iki eylemi birbirine bağlayan <b>“-ıp / -ip / -up / -üp”</b> zarf-fiil eki kullanılmıştır?</p>`,
+  c: [
+    `Bahçedeki çamaşır ipi fırtınada kopunca çamaşırlar yere düştü.`,
+    `Masadaki kitaplarını çantasına koyup kütüphaneden hızla çıktı.`,
+    `Kalbi sanki yerinden çıkacakmış gibi hızlı hızlı çarpıyordu.`,
+    `Karanlıkta ipucu bulmak için el feneriyle her yeri aradılar.`
+  ],
+  a: "B",
+  s: `<p>A’da “ipi” ve D’de “ipucu” isimdir. <b>B</b> seçeneğindeki <i>“çantasına <b>koyup</b>”</i> sözcüğü ise <i>koy-</i> fiiline <b>“-up”</b> zarf-fiil ekinin gelmesiyle oluşmuş bir <b>zarf-fiildir</b>[cite: 14]. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>zarf-fiil</b>, cümleye <b>“koşul (şart)”</b> anlamı katmıştır?</p>`,
+  c: [
+    `Sebzeleri bol suyla yıkamadan kesinlikle doğramamalısın.`,
+    `Konuyu dikkatle dinledikçe testlerdeki netlerin yükselecektir.`,
+    `Hava kararınca sokak lambaları kendiliğinden yanmaya başladı.`,
+    `Bütün gün hiç dinlenmeksizin tarladaki ekinleri biçtiler.`
+  ],
+  a: "B",
+  s: `<p>B seçeneğindeki <i>“Konuyu dikkatle <b>dinledikçe</b> (dinlersen / dinlemen koşuluyla) testlerdeki netlerin yükselecektir.”</i> cümlesinde <i>“-dıkça”</i> zarf-fiili cümleye <b>koşul-sonuç</b> anlamı katmıştır. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>(I) Kardeşim macera romanları <u>okumayı</u> çok seviyor.<br>
+(II) Annem akşam için patates <u>kızartması</u> hazırladı.<br>
+(III) Okula <u>giderken</u> yağmura yakalanmamak için şemsiyesini aldı.<br>
+(IV) <u>Tanıdığım</u> en dürüst ve çalışkan insanlardan biriydi.</p>
+<p>Numaralanmış cümlelerin hangisinde altı çizili sözcük <b>fiilimsi değildir</b>?</p>`,
+  c: [`I`, `II`, `III`, `IV`],
+  a: "B",
+  s: `<p>I’de <i>“okumayı”</i> isim-fiil, III’te <i>“giderken”</i> zarf-fiil, IV’te <i>“tanıdığım”</i> sıfat-fiildir. <b>II. cümledeki</b> <i>“patates <b>kızartması</b>”</i> ise bir yemeğin kalıcı adı olduğu için <b>kalıcı isimdir</b>, fiilimsi değildir[cite: 14]. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki dörtlüklerin hangisinde <b>üç fiilimsi türüne de (isim-fiil, sıfat-fiil, zarf-fiil)</b> yer verilmiştir?</p>`,
+  c: [
+    `Geçti istemem gelmeni,\nYokluğunda buldum seni;\nBırak vehmimde gölgeni,\nGelme, artık neye yarar?`,
+    `Dönülmez akşamın ufkundayız, vakit çok geç;\nBu son fasıldır ey ömrüm, nasıl geçersen geç!\nCihana bir daha gelmek hayal edilse bile,\nAvunmak istemeyiz öyle bir teselliyle.`,
+    `Ağlasam sesimi duyar mısınız,\nMısralarımda;\nDokunabilir misiniz,\nGözyaşlarıma, ellerinizle?`,
+    `Gülerek bakan gözlerinle kalbimi ısıttın,\nSensiz geçen günleri unutmaya çalıştım,\nAdını fısıldayarak rüzgâra bıraktım,\nGel artık beklenen bahar gibi ömrüme.`
+  ],
+  a: "D",
+  s: `<p>D seçeneğindeki dizelerde: <i>“<b>Gülerek</b>, <b>fısıldayarak</b>”</i> (<b>Zarf-fiil</b>), <i>“<b>bakan</b>, <b>geçen</b>, <b>beklenen</b>”</i> (<b>Sıfat-fiil</b>) ve <i>“<b>unutmaya</b>”</i> (<b>İsim-fiil</b>) olmak üzere üç fiilimsi türü de bir arada kullanılmıştır. (A’da sadece “gelmeni” isim-fiil; B’de “dönülmez” sıfat-fiil ve “gelmek, avunmak” isim-fiil vardır, zarf-fiil yoktur; C’de hiç fiilimsi yoktur). Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki cümlelerin hangisinde <b>fiilimsi eki</b> aldığı hâlde kalıplaşarak bir varlığın kalıcı adı olmuş sözcük, <b>sıfat-fiil</b> ekiyle türetilmiştir?</p>`,
+  c: [
+    `Kış gelmeden kömürlüğe iki ton yakacak ve odun indirdik.`,
+    `Pazardan taze meyve ve dondurma alıp eve döndük.`,
+    `Uçurtma şenliğinde gökyüzü rengârenk görüntülere sahne oldu.`,
+    `Elindeki çakmak bozulunca kamp ateşini kibritle yaktı.`
+  ],
+  a: "A",
+  s: `<p>B’deki <i>“dondurma” (-ma)</i>, C’deki <i>“uçurtma” (-ma)</i> ve D’deki <i>“çakmak” (-mak)</i> <b>isim-fiil</b> ekleriyle kalıplaşmış kalıcı isimlerdir. <b>A</b> seçeneğindeki <i>“<b>yakacak</b>”</i> (kömür/odun anlamındaki kalıcı isim) ise <b>“-acak” sıfat-fiil ekiyle</b> kalıplaşmıştır. Cevap <b>A</b>.</p>`
 }
 ]
 });
