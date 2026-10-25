@@ -299,6 +299,8 @@
         a[q.key] = { c: pick, ok: pick === q.a };
         a._total = list.length;
         save(t.id, a);
+        logAnswer(t.id, pick === q.a);
+        if (pick !== q.a) remAdd(t.id, q.key);
         paint(t.id, q, i);
         updateScore(t.id, list);
         return;
@@ -394,6 +396,345 @@
       st.n + '/' + list.length + ' çözüldü · ' + st.ok + ' doğru · ' + st.bad + ' yanlış';
   }
 
+
+  /* =========================================================
+     KALICI İSTATİSTİK (Temizle ile silinmez)
+     ========================================================= */
+  var SKEY = KEY + 'stats', RKEY = KEY + 'rem', RDKEY = KEY + 'remDays', PKEY = KEY + 'profile';
+  function jget(k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }
+  function jset(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+  function ymd(d) { d = d || new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function addDays(n) { var d = new Date(); d.setDate(d.getDate() + n); return ymd(d); }
+  function getStats() {
+    var s = jget(SKEY, null);
+    if (!s || !s.t) {
+      // ilk açılış: daha önce işaretlenmiş cevapları kalıcı kayda aktar
+      s = { v: 1, t: {}, days: {} };
+      LGS.subjects.forEach(function (sb) {
+        sb.topics.forEach(function (tp) {
+          var a = load(tp.id), ok = 0, bad = 0;
+          for (var k in a) if (a.hasOwnProperty(k) && k.charAt(0) !== '_') { if (a[k].ok) ok++; else bad++; }
+          if (ok || bad) s.t[tp.id] = { ok: ok, bad: bad };
+        });
+      });
+      jset(SKEY, s);
+    }
+    return s;
+  }
+  function logAnswer(tid, ok) {
+    var s = getStats(), d = ymd();
+    var e = s.t[tid] || (s.t[tid] = { ok: 0, bad: 0 });
+    var g = s.days[d] || (s.days[d] = { ok: 0, bad: 0 });
+    if (ok) { e.ok++; g.ok++; } else { e.bad++; g.bad++; }
+    jset(SKEY, s);
+    if (window.LGSCloud) window.LGSCloud.push();
+  }
+  function subjectStats(s) {
+    var st = getStats(), ok = 0, bad = 0, topics = [];
+    s.topics.forEach(function (tp) {
+      var e = st.t[tp.id] || { ok: 0, bad: 0 };
+      ok += e.ok; bad += e.bad; topics.push({ id: tp.id, title: tp.title, ok: e.ok, bad: e.bad });
+    });
+    return { ok: ok, bad: bad, topics: topics };
+  }
+  function pct(ok, bad) { return ok + bad ? Math.round(ok * 100 / (ok + bad)) : 0; }
+  function summaryFor(statsObj) {
+    // sunucuya gönderilecek/karşılaştırılacak özet: ders ve konu bazında
+    var out = {};
+    LGS.subjects.forEach(function (s) {
+      var ok = 0, bad = 0, tp = {};
+      s.topics.forEach(function (t) { var e = statsObj.t[t.id]; if (e) { ok += e.ok; bad += e.bad; tp[t.id] = [e.ok, e.bad]; } });
+      out[s.id] = { ok: ok, bad: bad, t: tp };
+    });
+    return out;
+  }
+
+  /* =========================================================
+     HATIRLATICI (aralıklı tekrar kuyruğu)
+     ========================================================= */
+  function remDays() { var n = +jget(RDKEY, 3); return n >= 1 && n <= 60 ? n : 3; }
+  function remList() { return jget(RKEY, []); }
+  function remAdd(tid, key) {
+    var l = remList();
+    for (var i = 0; i < l.length; i++) if (l[i].tid === tid && l[i].key === key) return;
+    l.push({ tid: tid, key: key, due: addDays(remDays()), n: 0, added: ymd() });
+    jset(RKEY, l);
+    updateBadge();
+  }
+  function remDue() { var t = ymd(); return remList().filter(function (x) { return x.due <= t; }); }
+  function updateBadge() {
+    var b = document.getElementById('remBadge'), n = remDue().length;
+    if (b) { b.textContent = n; b.hidden = !n; }
+    var h = document.getElementById('navBadge');
+    if (h) { h.hidden = !n; }
+  }
+  function topicMeta(tid) { var i = subjOf(tid); return i ? { s: i.s, t: i.t } : null; }
+  function fmtDate(s) { var p = s.split('-'); return +p[2] + ' ' + AYLAR[+p[1] - 1]; }
+
+  function reminderPage() {
+    setCrumbs([{ text: 'Hatırlatıcı' }]);
+    document.title = 'Hatırlatıcı · LGS 2027';
+    var days = remDays(), all = remList(), today = ymd();
+    var due = all.filter(function (x) { return x.due <= today; });
+    var wait = all.filter(function (x) { return x.due > today; }).sort(function (a, b) { return a.due < b.due ? -1 : 1; });
+    var byDay = {};
+    wait.forEach(function (x) { byDay[x.due] = (byDay[x.due] || 0) + 1; });
+    var waitHtml = Object.keys(byDay).sort().map(function (d) {
+      return '<li><span>' + fmtDate(d) + '</span><b>' + byDay[d] + ' soru</b></li>';
+    }).join('');
+    app.innerHTML = '<div class="page-rem">' +
+      '<h1>🔁 Hatırlatıcı</h1>' +
+      '<p class="lead">Yanlış yaptığın sorular, seçtiğin gün sayısı kadar sonra burada tekrar karşına çıkar. Doğru çözersen listeden silinir; yine yanlış yaparsan aynı süre sonra tekrar gelir.</p>' +
+      '<div class="card rem-set"><label for="remDays">Yanlışlar kaç gün sonra tekrar gelsin?</label>' +
+      '<div class="rem-ctl"><button class="btn ghost" data-d="-1" aria-label="Azalt">−</button>' +
+      '<input id="remDays" type="number" min="1" max="60" inputmode="numeric" value="' + days + '"><span>gün</span>' +
+      '<button class="btn ghost" data-d="1" aria-label="Artır">+</button></div>' +
+      '<p class="small">Yeni yanlışlar bu süreye göre sıraya girer.</p></div>' +
+      '<div class="rem-sum"><div><b>' + due.length + '</b>bugün çözülecek</div><div><b>' + wait.length + '</b>bekleme kuyruğunda</div></div>' +
+      (wait.length ? '<details class="card rem-wait"><summary>Bekleme kuyruğu</summary><ul>' + waitHtml + '</ul></details>' : '') +
+      '<h2 class="rem-h">Bugün tekrar et</h2><div id="remQs">' +
+      (due.length ? '<p class="loading">Sorular yükleniyor…</p>' : '<p class="empty">Bugün tekrar edilecek soru yok. ' + (all.length ? 'Sıradaki sorular yukarıdaki kuyrukta.' : 'Bir konuda yanlış yaptığında soru buraya düşer.') + '</p>') +
+      '</div></div>';
+    var inp = document.getElementById('remDays');
+    function setDays(n) { n = Math.max(1, Math.min(60, Math.round(+n || 3))); inp.value = n; jset(RDKEY, n); }
+    inp.addEventListener('change', function () { setDays(inp.value); });
+    [].forEach.call(document.querySelectorAll('.rem-ctl button'), function (b) {
+      b.addEventListener('click', function () { setDays(+inp.value + +b.getAttribute('data-d')); });
+    });
+    if (due.length) renderDue(due);
+  }
+
+  function renderDue(due) {
+    var box = document.getElementById('remQs');
+    var tids = [];
+    due.forEach(function (x) { if (tids.indexOf(x.tid) < 0) tids.push(x.tid); });
+    var left = tids.length;
+    tids.forEach(function (tid) {
+      var m = topicMeta(tid);
+      if (!m) { if (!--left) draw(); return; }
+      loadTopic(m.s.id, tid, function () { if (!--left) draw(); });
+    });
+    function draw() {
+      var items = [];
+      due.forEach(function (x) {
+        var t = LGS.topics[x.tid], m = topicMeta(x.tid);
+        if (!t || !m) return;
+        var q = buildList(t).filter(function (y) { return y.key === x.key; })[0];
+        if (q) items.push({ r: x, q: q, m: m });
+      });
+      if (!items.length) { box.innerHTML = '<p class="empty">Bugün tekrar edilecek soru yok.</p>'; return; }
+      box.innerHTML = items.map(function (it, i) {
+        var h = qHtml(it.q, 9000 + i);
+        h = h.replace('<span class="num">' + (9001 + i) + '.</span>', '<span class="num">' + (i + 1) + '.</span>');
+        var tag = '<a class="tag topic" style="--c:' + it.m.s.color + '" href="#/k/' + it.r.tid + '">' + it.m.s.icon + ' ' + esc(it.m.t.title) + '</a>' +
+          (it.r.n ? '<span class="tag again">' + (it.r.n + 1) + '. tekrar</span>' : '');
+        return '<div style="--c:' + it.m.s.color + '">' + h.replace('</div>', tag + '</div>') + '</div>';
+      }).join('');
+      box.addEventListener('click', function (e) {
+        var b = e.target.closest('button[data-ch]');
+        if (b) {
+          var i = +b.getAttribute('data-q') - 9000, it = items[i];
+          if (!it || it.done) return;
+          it.done = true;
+          var pick = b.getAttribute('data-ch'), ok = pick === it.q.a;
+          var art = document.getElementById('q' + (9000 + i));
+          [].forEach.call(art.querySelectorAll('button[data-ch]'), function (x) {
+            var L = x.getAttribute('data-ch'); x.disabled = true;
+            if (L === it.q.a) x.classList.add('ok'); else if (L === pick) x.classList.add('bad');
+          });
+          var res = document.getElementById('res' + (9000 + i));
+          var l = remList().filter(function (y) { return !(y.tid === it.r.tid && y.key === it.r.key); });
+          if (ok) {
+            res.className = 'res ok'; res.textContent = '✓ Doğru! Soru hatırlatıcıdan silindi.';
+          } else {
+            var nd = addDays(remDays());
+            l.push({ tid: it.r.tid, key: it.r.key, due: nd, n: (it.r.n || 0) + 1, added: it.r.added });
+            res.className = 'res bad'; res.textContent = '✗ Yanlış. Doğru cevap: ' + it.q.a + ' · ' + fmtDate(nd) + ' tarihinde tekrar gelecek.';
+          }
+          jset(RKEY, l);
+          logAnswer(it.r.tid, ok);
+          updateBadge();
+          var sol = document.getElementById('sol' + (9000 + i)); sol.hidden = false;
+          var sb = art.querySelector('button[data-show]'); if (sb) sb.textContent = 'Çözümü gizle';
+          return;
+        }
+        var sb2 = e.target.closest('button[data-show]');
+        if (sb2) {
+          var el = document.getElementById('sol' + sb2.getAttribute('data-show'));
+          el.hidden = !el.hidden; sb2.textContent = el.hidden ? 'Çözümü göster' : 'Çözümü gizle';
+        }
+      });
+    }
+  }
+
+  /* =========================================================
+     PROFİL VE İSTATİSTİK
+     ========================================================= */
+  function getProfile() { return jget(PKEY, { name: '', photo: '' }); }
+  function setProfile(p) { var ok = jset(PKEY, p); drawNavUser(); if (window.LGSCloud) window.LGSCloud.push(); return ok; }
+  function avatarHtml(p, cls) {
+    var n = (p && p.name) || '';
+    if (p && p.photo) return '<img class="' + cls + '" src="' + esc(p.photo) + '" alt="">';
+    return '<span class="' + cls + ' ph">' + esc(n ? n.charAt(0).toLocaleUpperCase('tr') : '👤') + '</span>';
+  }
+  function short(n) { return { tr: 'TÜR', mat: 'MAT', fen: 'FEN', ink: 'İNK', din: 'DİN', ing: 'İNG' }[n] || n; }
+  var HEX = { tr: '#f43f5e', mat: '#38bdf8', fen: '#22c55e', ink: '#f59e0b', din: '#14b8a6', ing: '#a78bfa' };
+
+  // 6 ders için oyun tarzı yetenek (radar) dairesi
+  function radarSvg(vals) {
+    var W = 320, H = 300, cx = 160, cy = 152, R = 108, n = vals.length, out = '';
+    function pt(i, r) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; }
+    [0.25, 0.5, 0.75, 1].forEach(function (f) {
+      out += '<polygon points="' + vals.map(function (v, i) { return pt(i, R * f).join(','); }).join(' ') + '" class="rd-grid"/>';
+    });
+    vals.forEach(function (v, i) { var p = pt(i, R); out += '<line x1="' + cx + '" y1="' + cy + '" x2="' + p[0] + '" y2="' + p[1] + '" class="rd-axis"/>'; });
+    var poly = vals.map(function (v, i) { return pt(i, R * Math.max(0.03, v.p / 100)).join(','); }).join(' ');
+    out += '<polygon points="' + poly + '" class="rd-val"/>';
+    vals.forEach(function (v, i) {
+      var p = pt(i, R * Math.max(0.03, v.p / 100)); out += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="4.5" fill="' + v.c + '" stroke="#fff" stroke-width="1.5"/>';
+      var l = pt(i, R + 26);
+      out += '<text x="' + l[0] + '" y="' + (l[1] - 3) + '" text-anchor="middle" class="rd-l">' + v.l + '</text>' +
+        '<text x="' + l[0] + '" y="' + (l[1] + 12) + '" text-anchor="middle" class="rd-p" fill="' + v.c + '">%' + v.p + '</text>';
+    });
+    return '<svg class="radar" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Ders başarı dairesi">' +
+      '<defs><linearGradient id="rdg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity=".55"/><stop offset="1" stop-color="#6366f1" stop-opacity=".45"/></linearGradient></defs>' + out + '</svg>';
+  }
+  function ringSvg(p, c) {
+    var r = 26, C = 2 * Math.PI * r, d = C * p / 100;
+    return '<svg class="ring" viewBox="0 0 64 64"><circle cx="32" cy="32" r="' + r + '" class="ring-bg"/>' +
+      (p ? '<circle cx="32" cy="32" r="' + r + '" fill="none" stroke="' + c + '" stroke-width="7" stroke-linecap="round" stroke-dasharray="' + d.toFixed(1) + ' ' + C.toFixed(1) + '" transform="rotate(-90 32 32)"/>' : '') +
+      '<text x="32" y="37" text-anchor="middle" class="ring-t">%' + p + '</text></svg>';
+  }
+  // sum: summaryFor() biçimi
+  function statsBlock(sum) {
+    var tOk = 0, tBad = 0, vals = [];
+    LGS.subjects.forEach(function (s) { var e = sum[s.id] || { ok: 0, bad: 0 }; tOk += e.ok; tBad += e.bad; vals.push({ l: short(s.id), p: pct(e.ok, e.bad), c: HEX[s.id] }); });
+    var cards = LGS.subjects.map(function (s) {
+      var e = sum[s.id] || { ok: 0, bad: 0, t: {} };
+      var rows = s.topics.map(function (tp) {
+        var x = (e.t || {})[tp.id] || [0, 0], p = pct(x[0], x[1]);
+        return '<li><span class="tt">' + esc(tp.title) + '</span><span class="tbar"><i style="width:' + p + '%;background:' + HEX[s.id] + '"></i></span>' +
+          '<span class="tn">' + (x[0] + x[1] ? '%' + p + ' <small>' + x[0] + 'D ' + x[1] + 'Y</small>' : '<small>—</small>') + '</span></li>';
+      }).join('');
+      return '<details class="card subj-st" style="--c:' + HEX[s.id] + '"><summary>' + ringSvg(pct(e.ok, e.bad), HEX[s.id]) +
+        '<span class="nm">' + s.icon + ' ' + esc(s.name) + '<small>' + e.ok + ' doğru · ' + e.bad + ' yanlış</small></span></summary>' +
+        '<ul class="tlist">' + rows + '</ul></details>';
+    }).join('');
+    return '<div class="card st-top"><div class="st-radar">' + radarSvg(vals) + '</div>' +
+      '<div class="st-nums"><div><b>' + (tOk + tBad) + '</b>çözülen</div><div class="g"><b>' + tOk + '</b>doğru</div><div class="r"><b>' + tBad + '</b>yanlış</div><div><b>%' + pct(tOk, tBad) + '</b>başarı</div></div></div>' +
+      '<h2 class="rem-h">Ders ve konu başarısı</h2><p class="small">Bir derse dokun, konu konu başarı oranını gör.</p>' + cards;
+  }
+
+  function resizePhoto(file, cb) {
+    var rd = new FileReader();
+    rd.onload = function () {
+      var img = new Image();
+      img.onload = function () {
+        var S = 256, c = document.createElement('canvas'); c.width = c.height = S;
+        var k = Math.min(img.width, img.height), sx = (img.width - k) / 2, sy = (img.height - k) / 2;
+        c.getContext('2d').drawImage(img, sx, sy, k, k, 0, 0, S, S);
+        cb(c.toDataURL('image/jpeg', 0.82));
+      };
+      img.onerror = function () { cb(null); };
+      img.src = rd.result;
+    };
+    rd.readAsDataURL(file);
+  }
+
+  function profilePage() {
+    setCrumbs([{ text: 'Profil ve İstatistik' }]);
+    document.title = 'Profil ve İstatistik · LGS 2027';
+    var p = getProfile();
+    app.innerHTML = '<div class="page-prof">' +
+      '<div class="card prof-head">' +
+      '<label class="av-wrap" title="Profil fotoğrafı yükle">' + avatarHtml(p, 'av-big') + '<span class="av-cam">📷</span>' +
+      '<input id="photoIn" type="file" accept="image/*" hidden></label>' +
+      '<div class="prof-name"><label for="nameIn" class="small">Kullanıcı adı</label>' +
+      '<div class="name-row"><input id="nameIn" maxlength="24" autocomplete="nickname" placeholder="Adını yaz" value="' + esc(p.name || '') + '">' +
+      '<button class="btn" id="nameSave">Kaydet</button></div><p class="small" id="nameMsg"></p></div></div>' +
+      '<div class="card find"><label for="findIn"><b>🔎 Diğer kullanıcılar</b></label>' +
+      '<input id="findIn" placeholder="Kullanıcı adı ara" autocomplete="off"><ul id="findList" class="find-list"></ul>' +
+      '<p class="small" id="findMsg"></p></div>' +
+      '<h1 class="st-h">📊 İstatistiklerim</h1>' +
+      statsBlock(summaryFor(getStats())) +
+      '<p class="small">Bu kayıt konu sayfalarındaki “Temizle” düğmesiyle silinmez; çözdüğün her soru buraya eklenir.</p></div>';
+    var nameIn = document.getElementById('nameIn'), msg = document.getElementById('nameMsg');
+    document.getElementById('nameSave').addEventListener('click', function () {
+      var n = nameIn.value.trim().replace(/\s+/g, ' ');
+      if (n.length < 2) { msg.textContent = 'En az 2 karakter yaz.'; return; }
+      var done = function (err) {
+        if (err) { msg.textContent = err; return; }
+        var q = getProfile(); q.name = n; setProfile(q); msg.textContent = '✓ Kaydedildi.';
+        var a = document.querySelector('.av-big.ph'); if (a) a.textContent = n.charAt(0).toLocaleUpperCase('tr');
+      };
+      if (window.LGSCloud && window.LGSCloud.claim) { msg.textContent = 'Kontrol ediliyor…'; window.LGSCloud.claim(n, done); }
+      else done();
+    });
+    document.getElementById('photoIn').addEventListener('change', function () {
+      var f = this.files && this.files[0]; if (!f) return;
+      resizePhoto(f, function (url) {
+        if (!url) { msg.textContent = 'Fotoğraf okunamadı.'; return; }
+        var q = getProfile(); q.photo = url;
+        if (!setProfile(q)) { msg.textContent = 'Fotoğraf kaydedilemedi.'; return; }
+        var w = document.querySelector('.av-wrap'); var old = w.querySelector('.av-big');
+        var tmp = document.createElement('div'); tmp.innerHTML = avatarHtml(q, 'av-big'); w.replaceChild(tmp.firstChild, old);
+        msg.textContent = '✓ Profil fotoğrafı güncellendi.';
+      });
+    });
+    var findIn = document.getElementById('findIn'), list = document.getElementById('findList'), fmsg = document.getElementById('findMsg');
+    var tmr;
+    function search() {
+      if (!window.LGSCloud || !window.LGSCloud.search) { fmsg.textContent = 'Kullanıcı sunucusu hazırlanıyor; çok yakında burada diğer kullanıcıları görebileceksin.'; return; }
+      window.LGSCloud.search(findIn.value.trim(), function (rows) {
+        list.innerHTML = (rows || []).map(function (r) {
+          return '<li><a href="#/u/' + encodeURIComponent(r.username) + '">' + avatarHtml({ name: r.username, photo: r.photo }, 'av-sm') + '<span>' + esc(r.username) + '</span></a></li>';
+        }).join('');
+        fmsg.textContent = rows && rows.length ? '' : (findIn.value.trim() ? 'Bu adla kullanıcı bulunamadı.' : 'Henüz kayıtlı kullanıcı yok.');
+      });
+    }
+    findIn.addEventListener('focus', search);
+    findIn.addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(search, 250); });
+  }
+
+  function userPage(name) {
+    name = decodeURIComponent(name || '');
+    setCrumbs([{ text: 'Profil ve İstatistik', href: '#/profil' }, { text: name }]);
+    document.title = name + ' · LGS 2027';
+    app.innerHTML = '<p class="loading">Yükleniyor…</p>';
+    if (!window.LGSCloud || !window.LGSCloud.get) { app.innerHTML = '<p class="empty">Kullanıcı sunucusu henüz hazır değil.</p>'; return; }
+    window.LGSCloud.get(name, function (r) {
+      if (!r) { app.innerHTML = '<p class="empty">“' + esc(name) + '” adlı kullanıcı bulunamadı. <a href="#/profil">Geri dön</a></p>'; return; }
+      app.innerHTML = '<div class="page-prof"><a class="back" href="#/profil">← Profilim</a>' +
+        '<div class="card prof-head">' + avatarHtml({ name: r.username, photo: r.photo }, 'av-big') +
+        '<div class="prof-name"><h1 style="margin:0">' + esc(r.username) + '</h1>' +
+        (r.updated_at ? '<p class="small">Son etkinlik: ' + new Date(r.updated_at).toLocaleDateString('tr-TR') + '</p>' : '') + '</div></div>' +
+        statsBlock(r.stats || {}) + '</div>';
+    });
+  }
+
+  /* =========================================================
+     ÜÇ ÇİZGİLİ MENÜ
+     ========================================================= */
+  var drawer = document.getElementById('drawer'), navBtn = document.getElementById('navBtn'), shade = document.getElementById('shade');
+  function openNav(o) {
+    document.body.classList.toggle('nav-open', o);
+    if (navBtn) navBtn.setAttribute('aria-expanded', o ? 'true' : 'false');
+    if (drawer) drawer.setAttribute('aria-hidden', o ? 'false' : 'true');
+  }
+  if (navBtn) navBtn.addEventListener('click', function () { openNav(!document.body.classList.contains('nav-open')); });
+  if (shade) shade.addEventListener('click', function () { openNav(false); });
+  if (drawer) drawer.addEventListener('click', function (e) { if (e.target.closest('a')) openNav(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') openNav(false); });
+  function drawNavUser() {
+    var u = document.getElementById('navUser'); if (!u) return;
+    var p = getProfile();
+    u.innerHTML = avatarHtml(p, 'av-sm') + '<span>' + esc(p.name || 'Profilini oluştur') + '</span>';
+  }
+  function markNav(r) {
+    [].forEach.call(document.querySelectorAll('#drawer a[data-r]'), function (a) { a.classList.toggle('on', a.getAttribute('data-r') === r); });
+  }
+  window.LGSApp = { getStats: getStats, getProfile: getProfile, setProfile: setProfile, summaryFor: summaryFor, jget: jget, jset: jset, KEY: KEY };
+
   function notFound() {
     setCrumbs([]);
     app.innerHTML = '<p class="empty">Sayfa bulunamadı. <a href="#/">Ana sayfaya dön</a></p>';
@@ -402,10 +743,19 @@
   function route() {
     var h = location.hash.replace(/^#\/?/, '').split('/');
     window.scrollTo({ top: 0, behavior: 'instant' });
+    openNav(false);
+    var r = h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
+    markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
+    else if (h[0] === 'hatirlatici') reminderPage();
+    else if (h[0] === 'profil') profilePage();
+    else if (h[0] === 'u' && h[1]) userPage(h.slice(1).join('/'));
     else home();
+    updateBadge();
   }
   window.addEventListener('hashchange', route);
+  getStats(); drawNavUser();
+  window.LGSApp.route = route;
   route();
 })();

@@ -11,20 +11,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
 <script>try{var t=localStorage.getItem('lgs2027:theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-<link rel="stylesheet" href="assets/css/style.css?v=6">
+<link rel="stylesheet" href="assets/css/style.css?v=7">
 </head>
 <body>
 <header class="top">
+  <button class="navbtn" id="navBtn" aria-label="Menüyü aç" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span><i class="dot" id="navBadge" hidden></i></button>
   <a class="brand" href="#/"><span class="logo">LGS</span><span>2027 Hazırlık</span></a>
   <nav class="crumbs" id="crumbs"></nav>
   <button class="theme" id="themeBtn" title="Tema değiştir" aria-label="Tema değiştir">🌓</button>
 </header>
+<div class="shade" id="shade"></div>
+<nav class="drawer" id="drawer" aria-hidden="true" aria-label="Ana menü">
+  <a class="nav-user" id="navUser" href="#/profil"></a>
+  <a href="#/" data-r="home"><span class="ni">📚</span>Dersler</a>
+  <a href="#/hatirlatici" data-r="rem"><span class="ni">🔁</span>Hatırlatıcı<b class="badge" id="remBadge" hidden>0</b></a>
+  <a href="#/profil" data-r="prof"><span class="ni">📊</span>Profil ve İstatistik</a>
+</nav>
 <main id="app"><p class="loading">Yükleniyor…</p></main>
 <footer class="foot">
   <p>Çıkmış sorular MEB tarafından yayımlanan 2022, 2023, 2024 ve 2026 LGS kitapçıklarından alınmıştır. Cevapların yalnızca bu cihazda (tarayıcıda) saklanır.</p>
 </footer>
 <button class="totop" id="toTop" title="En üste çık" aria-label="En üste çık"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <script src="data/index.js"></script>
-<script src="assets/js/app.js?v=6"></script>
+<script src="assets/js/app.js?v=7"></script>
 </body>
 </html>
