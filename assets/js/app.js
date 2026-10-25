@@ -756,9 +756,9 @@
      EXP · SEVİYE · RÜTBE
      ========================================================= */
   var XKEY = KEY + 'xp';
-  var XPMAX = LGS.xpMax || 316725;            // tüm sorular 3 kez doğru = 100. seviye
+  var XPMAX = LGS.xpMax || 422300;            // tüm sorular 4 kez doğru = 100. seviye (sonrası EXP birikmeye devam eder)
   var XP_BASE = { kolay: 10, orta: 15, zor: 20, past: 20, 'new': 15 };
-  var COOL = 7 * 864e5, MAXREP = 3;
+  var COOL = 7 * 864e5;
   var RANKS = [
     { n: 'Çaylak', i: '🔰', c: '#9aa4b8' }, { n: 'Akıncı', i: '🗡️', c: '#c08457' },
     { n: 'Savaşçı', i: '⚔️', c: '#d1d5db' }, { n: 'Bahadır', i: '🛡️', c: '#60a5fa' },
@@ -795,10 +795,8 @@
   }
   function awardXP(tid, key) {
     var x = xpGet(), id = tid + '|' + key, r = x.q[id] || [0, 0], now = Date.now();
-    if (r[0] >= MAXREP) return { xp: 0, why: 'max' };
     if (r[1] && now - r[1] < COOL) return { xp: 0, why: 'cool', wait: Math.ceil((r[1] + COOL - now) / 864e5) };
-    var amt = Math.min(XP_BASE[grpOfKey(key)], XPMAX - x.total);
-    if (amt <= 0) return { xp: 0, why: 'max' };
+    var amt = XP_BASE[grpOfKey(key)];
     var before = x.total, d = istDay();
     x.q[id] = [r[0] + 1, now]; x.total += amt; x.days[d] = (x.days[d] || 0) + amt;
     jset(XKEY, x);
@@ -876,7 +874,6 @@
     var res = awardXP(tid, key);
     if (res.xp) gainFx(res, el);
     else if (res.why === 'cool') toast('Bu soru ' + res.wait + ' gün sonra tekrar EXP verir.');
-    else if (res.why === 'max') toast('Bu sorudan alınabilecek EXP doldu (3/3).');
   }
 
   /* =========================================================

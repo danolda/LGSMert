@@ -30,7 +30,7 @@ begin
       if k::date >= lim and k::date <= public.ist_today() then new_days := new_days || jsonb_build_object(k, v); end if;
     end loop;
   end if;
-  tot := least(greatest(coalesce((p_xp->>'total')::int, 0), 0), 316725);
+  tot := least(greatest(coalesce((p_xp->>'total')::int, 0), 0), 100000000);
   if me is null then
     insert into profiles(username, token_hash, photo, thumb, stats, xp_total, xp_days)
       values (n, h, p_photo, p_thumb, coalesce(p_stats, '{}'::jsonb), tot, new_days);
