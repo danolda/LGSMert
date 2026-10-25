@@ -1,106 +1,631 @@
 LGS.add({
 id: "fen-enerji",
-summary: `
-<h3>1. Besin Zinciri, Besin Ağı ve Enerji Piramidi</h3>
-<p>Canlıların ihtiyaç duydukları enerjiyi karşılamak için birbirleriyle oluşturdukları beslenme sırasına <b>besin zinciri</b>, birden fazla besin zincirinin iç içe geçmesiyle oluşan yapıya ise <b>besin ağı</b> denir[cite: 10]. Besin zincirindeki oklar daima <b>enerjinin aktarım yönünü (yenilenden yiyene / üreticiden tüketiciye doğru)</b> gösterir[cite: 10].</p>
+summary: `<div class="key"><b>Kazanımlar</b><ul>
+<li><b>F.8.6.1.1</b> Besin zincirindeki üretici, tüketici, ayrıştırıcılara örnekler verir. (Parazit besin zincirlerine girilmez; ekoloji piramitlerinde enerji aktarımı, vücut büyüklüğü, birey sayısı ve biyolojik birikim vurgulanır.)</li>
+<li><b>F.8.6.2.1</b> Bitkilerde besin üretiminde fotosentezin önemini fark eder. (Karbondioksit ve su kullanılır, besin ve oksijen üretilir; kimyasal denkleme girilmez; fotosentez yapay ışıkta da olur; fotosentez yapan canlılar üreticidir.)</li>
+<li><b>F.8.6.2.2</b> Fotosentez hızını etkileyen faktörler ile ilgili çıkarımlarda bulunur. (Işık rengi, karbondioksit miktarı, su miktarı, ışık şiddeti ve sıcaklık.)</li>
+<li><b>F.8.6.2.3</b> Canlılarda solunumun önemini belirtir. (Denkleme ve evrelere girilmez; bitkilerin gece ve gündüz solunum yaptığı vurgulanır; ATP’nin yalnızca adı verilir, enerji miktarları sayısal verilmez.)</li>
+<li><b>F.8.6.3.1</b> Madde döngülerini şema üzerinde göstererek açıklar.</li>
+<li><b>F.8.6.3.2</b> Madde döngülerinin yaşam açısından önemini sorgular.</li>
+<li><b>F.8.6.3.3</b> Küresel iklim değişikliklerinin nedenlerini ve olası sonuçlarını tartışır. (Sera etkisi, ekolojik ayak izi, Kyoto Protokolü.)</li>
+<li><b>F.8.6.4.1</b> Kaynakların kullanımında tasarruflu davranmaya özen gösterir.</li>
+<li><b>F.8.6.4.2</b> Kaynakların tasarruflu kullanımına yönelik proje tasarlar.</li>
+<li><b>F.8.6.4.3</b> Geri dönüşüm için katı atıkların ayrıştırılmasının önemini açıklar.</li>
+<li><b>F.8.6.4.4</b> Geri dönüşümün ülke ekonomisine katkısına ilişkin araştırma verilerini kullanarak çözüm önerileri sunar.</li>
+<li><b>F.8.6.4.5</b> Kaynakların tasarruflu kullanılmaması durumunda gelecekte karşılaşılabilecek problemleri belirterek çözüm önerileri sunar.</li>
+</ul></div>
 
-<div class="fig"><svg viewBox="0 0 520 65" width="500" role="img" aria-label="Besin zinciri şeması">
-<defs><marker id="ch1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs>
-<line x1="85" y1="32" x2="128" y2="32" stroke="#334155" stroke-width="2" marker-end="url(#ch1)"/>
-<line x1="200" y1="32" x2="243" y2="32" stroke="#334155" stroke-width="2" marker-end="url(#ch1)"/>
-<line x1="315" y1="32" x2="353" y2="32" stroke="#334155" stroke-width="2" marker-end="url(#ch1)"/>
-<line x1="425" y1="32" x2="443" y2="32" stroke="#334155" stroke-width="2" marker-end="url(#ch1)"/>
-<rect x="15" y="18" width="70" height="28" rx="6" fill="#bbf7d0" stroke="#166534"/><text x="50" y="36" font-size="11" font-weight="bold" text-anchor="middle">Ot</text>
-<rect x="130" y="18" width="70" height="28" rx="6" fill="#fef08a" stroke="#b45309"/><text x="165" y="36" font-size="11" font-weight="bold" text-anchor="middle">Çekirge</text>
-<rect x="245" y="18" width="70" height="28" rx="6" fill="#fed7aa" stroke="#c2410c"/><text x="280" y="36" font-size="11" font-weight="bold" text-anchor="middle">Kurbağa</text>
-<rect x="355" y="18" width="70" height="28" rx="6" fill="#fecaca" stroke="#991b1b"/><text x="390" y="36" font-size="11" font-weight="bold" text-anchor="middle">Yılan</text>
-<rect x="445" y="18" width="70" height="28" rx="6" fill="#fecaca" stroke="#991b1b"/><text x="480" y="36" font-size="11" font-weight="bold" text-anchor="middle">Kartal</text>
-</svg></div>
+<p>Bu ünite üç büyük soruya cevap verir: <b>Enerji canlılar arasında nasıl akar?</b> (besin zinciri, piramit), <b>Bu enerji nasıl üretilir ve kullanılır?</b> (fotosentez, solunum), <b>Madde doğada nasıl döner ve biz bu dengeyi nasıl bozuyoruz?</b> (madde döngüleri, küresel ısınma, sürdürülebilirlik). LGS’de bu üniteden her yıl yaklaşık 4 soru gelir ve soruların çoğu bir <b>deney düzeneği, grafik ya da şema</b> üzerine kuruludur.</p>
 
-<table class="rt">
-<tr><th>Canlı Grubu</th><th>Beslenme Özelliği ve Görevi</th><th>Örnek Canlılar</th></tr>
-<tr><td><b>1. Üreticiler</b></td><td>Güneş ışığını kullanarak <b>fotosentezle</b> kendi besinini üreten canlılardır; her besin zincirinin ilk basamağında yer alır[cite: 10].</td><td>Yeşil bitkiler, su yosunları (algler), siyanobakteriler (mavi-yeşil algler), öglena[cite: 10].</td></tr>
-<tr><td><b>2. Tüketiciler</b></td><td>Besinlerini dışarıdan hazır alan canlılardır[cite: 10]:<br>• <b>Otçullar (1. Tüketici):</b> Doğrudan üreticiyle beslenir[cite: 10].<br>• <b>Etçiller:</b> Diğer hayvanlarla beslenir[cite: 10].<br>• <b>Hepçiller:</b> Hem et hem otla beslenir[cite: 10].</td><td>• <b>Otçul:</b> Çekirge, tavşan, koyun, inek, geyik[cite: 10].<br>• <b>Etçil:</b> Kurbağa, yılan, kartal, aslan, tilki[cite: 10].<br>• <b>Hepçil:</b> İnsan, ayı, fare, serçe, tavuk[cite: 10].</td></tr>
-<tr><td><b>3. Ayrıştırıcılar</b><br>(Çürükçüller)</td><td>Besin piramidinin <b>tüm basamaklarında</b> yer alır; ölü organizmaları ve atıkları parçalayarak mineralleri toprağa geri kazandırır[cite: 10].</td><td>Bazı <b>bakteriler</b> ve <b>mantarlar</b> (küf ve şapkalı mantarlar)[cite: 10].</td></tr>
-</table>
-
-<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Ekoloji enerji piramidi ve değişen özellikler">
-<polygon points="195,12 245,56 145,56" fill="#fecaca" stroke="#991b1b"/>
-<polygon points="145,56 245,56 285,100 105,100" fill="#fed7aa" stroke="#c2410c"/>
-<polygon points="105,100 285,100 325,144 65,144" fill="#fef08a" stroke="#b45309"/>
-<polygon points="65,144 325,144 365,185 25,185" fill="#bbf7d0" stroke="#166534"/>
-<g font-size="10" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="195" y="42">3. Tüketiciler (10 kJ)</text>
-<text x="195" y="83">2. Tüketiciler (100 kJ)</text>
-<text x="195" y="127">1. Tüketiciler - Otçullar (1 000 kJ)</text>
-<text x="195" y="170">Üreticiler - Bitkiler (10 000 kJ)</text>
+<h3>1. Besin zinciri ve besin ağı (F.8.6.1.1)</h3>
+<p>Canlılar enerji ihtiyacını beslenerek karşılar. Canlıların “kim kimi yiyor” ilişkisiyle oluşan sıraya <b>besin zinciri</b>, bir ekosistemdeki birçok besin zincirinin birbirine bağlanmasıyla oluşan yapıya <b>besin ağı</b> denir. Zincirin enerji kaynağı <b>Güneş</b>’tir: üreticiler ışık enerjisini besindeki kimyasal enerjiye dönüştürür, bu enerji de beslenme yoluyla tüketicilere aktarılır.</p>
+<div class="fig"><svg viewBox="0 0 560 215" width="560" role="img" aria-label="Besin zinciri ve ayrıştırıcıların yeri">
+<defs><marker id="ez1a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="ez1b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#92400e"/></marker><marker id="ez1c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker></defs>
+<circle cx="32" cy="52" r="18" fill="#fbbf24"/><text x="32" y="88" font-size="11" font-weight="bold" text-anchor="middle" fill="#b45309">Güneş</text>
+<line x1="52" y1="55" x2="74" y2="55" stroke="#b45309" stroke-width="2" marker-end="url(#ez1c)"/>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<rect x="78" y="33" width="95" height="44" rx="7" fill="#bbf7d0" stroke="#166534"/><text x="125" y="51" fill="#14532d">Ot</text>
+<rect x="195" y="33" width="95" height="44" rx="7" fill="#fef08a" stroke="#a16207"/><text x="242" y="51" fill="#713f12">Çekirge</text>
+<rect x="312" y="33" width="95" height="44" rx="7" fill="#fed7aa" stroke="#c2410c"/><text x="359" y="51" fill="#7c2d12">Kurbağa</text>
+<rect x="429" y="33" width="95" height="44" rx="7" fill="#fecaca" stroke="#991b1b"/><text x="476" y="51" fill="#7f1d1d">Yılan</text>
 </g>
-<rect x="372" y="12" width="22" height="173" fill="#e9d5ff" stroke="#7c3aed"/>
-<text x="383" y="98" font-size="9.5" font-weight="bold" fill="#5b21b6" transform="rotate(-90 383 98)" text-anchor="middle">Ayrıştırıcılar (Her basamakta)</text>
-<line x1="410" y1="180" x2="410" y2="20" stroke="#dc2626" stroke-width="2.5"/>
-<polygon points="410,13 405,22 415,22" fill="#dc2626"/>
-<g font-size="9.5" fill="#1e293b">
-<text x="422" y="32" font-weight="bold" fill="#dc2626">Yukarı Çıkıldıkça:</text>
-<text x="422" y="52">• Aktarılan enerji <tspan font-weight="bold" fill="#dc2626">AZALIR (%10)</tspan></text>
-<text x="422" y="70">• Birey sayısı <tspan font-weight="bold" fill="#dc2626">AZALIR</tspan></text>
-<text x="422" y="88">• Toplam biyokütle <tspan font-weight="bold" fill="#dc2626">AZALIR</tspan></text>
-<text x="422" y="106">• Vücut büyüklüğü genellikle <tspan font-weight="bold" fill="#16a34a">ARTAR</tspan></text>
-<text x="422" y="124">• <tspan font-weight="bold" fill="#991b1b">Biyolojik birikim (zehir) ARTAR!</tspan></text>
+<g font-size="11" text-anchor="middle" fill="#1e293b">
+<text x="125" y="68">üretici</text><text x="242" y="68">1. tüketici</text><text x="359" y="68">2. tüketici</text><text x="476" y="68">3. tüketici</text>
 </g>
+<g stroke="#334155" stroke-width="2"><line x1="174" y1="55" x2="193" y2="55" marker-end="url(#ez1a)"/><line x1="291" y1="55" x2="310" y2="55" marker-end="url(#ez1a)"/><line x1="408" y1="55" x2="427" y2="55" marker-end="url(#ez1a)"/></g>
+<text x="300" y="20" font-size="11" text-anchor="middle" fill="#334155">Ok, enerjinin aktarıldığı yönü gösterir: yenilenden yiyene →</text>
+<g stroke="#92400e" stroke-width="1.6" stroke-dasharray="5 4"><line x1="140" y1="78" x2="235" y2="158" marker-end="url(#ez1b)"/><line x1="242" y1="78" x2="268" y2="157" marker-end="url(#ez1b)"/><line x1="359" y1="78" x2="318" y2="157" marker-end="url(#ez1b)"/><line x1="476" y1="78" x2="350" y2="158" marker-end="url(#ez1b)"/></g>
+<text x="398" y="152" font-size="11" fill="#92400e">ölü kalıntılar, atıklar</text>
+<rect x="200" y="160" width="190" height="44" rx="7" fill="#e7e5e4" stroke="#57534e"/>
+<text x="295" y="178" font-size="12" font-weight="bold" text-anchor="middle" fill="#292524">Ayrıştırıcılar</text>
+<text x="295" y="194" font-size="11" text-anchor="middle" fill="#292524">bazı bakteriler ve mantarlar</text>
+<rect x="18" y="160" width="140" height="44" rx="7" fill="#fef3c7" stroke="#a16207"/>
+<text x="88" y="178" font-size="12" font-weight="bold" text-anchor="middle" fill="#713f12">Toprak</text>
+<text x="88" y="194" font-size="11" text-anchor="middle" fill="#713f12">mineraller geri döner</text>
+<line x1="199" y1="182" x2="162" y2="182" stroke="#92400e" stroke-width="2" marker-end="url(#ez1b)"/>
+<line x1="60" y1="159" x2="95" y2="81" stroke="#166534" stroke-width="2" marker-end="url(#ez1a)"/>
+<text x="82" y="135" font-size="11" fill="#166534">kökle alınır</text>
 </svg></div>
-
-<div class="note"><b>%10 Enerji Yasası ve Biyolojik Birikim:</b> Her basamaktaki enerjinin yalnızca yaklaşık <b>%10’u</b> bir üst basamağa aktarılır; kalan %90’ı yaşamsal faaliyetler ve ısı olarak kaybedilir[cite: 10]. Tarım ilaçları (DDT) ve ağır metaller (cıva, kurşun) gibi zehirli maddelerin dokulardaki birikimi (<b>biyolojik birikim</b>) ise yukarı çıkıldıkça <b>artar</b>; en çok zararı en üstteki canlı görür[cite: 10].</div>
-
-<h3>2. Fotosentez ve Fotosentez Hızını Etkileyen Faktörler</h3>
-<div class="key">Karbondioksit (CO₂) + Su (H₂O) <span style="white-space:nowrap">—(Işık Enerjisi / Klorofil)→</span> Besin (Glikoz) + Oksijen (O₂)</div>
 <ul>
-<li>Fotosentez; bitkilerin, alglerin ve öglenanın <b>kloroplast</b> organelinde, siyanobakterilerin ise sitoplazmasındaki <b>klorofil</b> pigmentinde gerçekleşir[cite: 10]. Işık enerjisi <b>kimyasal bağ enerjisine</b> dönüştürülür[cite: 10].</li>
-<li>Fotosentezle üretilen glikozun fazlası <b>nişasta</b> olarak depolanır; nişasta varlığı <b>iyot (lugol) çözeltisi</b> damlatıldığında oluşan <b>mavi-mor</b> renkle anlaşılır[cite: 10]. (<i>Deneylerde kullanılan <b>KOH</b> veya <b>kireç suyu</b> ise ortamdaki <b>$CO_2$ gazını tutar!</b></i>)</li>
+<li><b>Üreticiler:</b> Fotosentezle kendi besinini üreten canlılardır; her besin zincirinin <b>ilk halkasıdır</b>. Örnek: yeşil bitkiler, su yosunları (algler), fitoplanktonlar, öglena, bazı bakteriler (siyanobakteriler).</li>
+<li><b>Tüketiciler:</b> Besinini dışarıdan hazır alır. Beslendiği basamağa göre 1. tüketici (doğrudan üreticiyle beslenir), 2. tüketici, 3. tüketici… diye adlandırılır. Besin türüne göre: <b>otçul</b> (yalnız bitkisel besin: tavşan, çekirge, inek), <b>etçil</b> (yalnız hayvansal besin: kurbağa, yılan, kartal, aslan), <b>hepçil</b> (hem bitkisel hem hayvansal: insan, ayı, fare, karga).</li>
+<li><b>Ayrıştırıcılar (çürükçüller):</b> Bazı bakteriler ve mantarlar. Ölü canlıları ve atıkları parçalayıp içlerindeki mineralleri ve diğer maddeleri <b>toprağa geri kazandırır</b>. Böylece madde döngüsü tamamlanır ve üreticiler bu maddeleri yeniden kullanır. Ayrıştırıcılar zincirin <b>tüm halkalarıyla</b> ilişkilidir.</li>
 </ul>
+<div class="tbl"><table>
+<tr><th>Grup</th><th>Besinini nasıl sağlar?</th><th>Zincirdeki yeri</th><th>Örnekler</th></tr>
+<tr><td><b>Üretici</b></td><td>Fotosentezle kendisi üretir</td><td>Her zaman ilk halka</td><td>Ot, ağaç, su yosunu, fitoplankton</td></tr>
+<tr><td><b>Otçul</b></td><td>Yalnızca üreticilerle beslenir</td><td>1. tüketici</td><td>Çekirge, tavşan, koyun, tırtıl</td></tr>
+<tr><td><b>Etçil</b></td><td>Yalnızca hayvanlarla beslenir</td><td>2., 3. … tüketici</td><td>Kurbağa, yılan, şahin, köpek balığı</td></tr>
+<tr><td><b>Hepçil</b></td><td>Hem bitki hem hayvanla beslenir</td><td>Birden çok basamakta olabilir</td><td>İnsan, ayı, fare, karga</td></tr>
+<tr><td><b>Ayrıştırıcı</b></td><td>Ölü kalıntıları ve atıkları ayrıştırır</td><td>Tüm halkalarla ilişkili</td><td>Bazı bakteriler, küf ve şapkalı mantarlar</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Ok, <b>yenen canlıdan yiyen canlıya</b> doğru çizilir; çünkü okun anlamı “enerji buraya aktarılıyor”dur. “Ot → tavşan” demek “tavşan otu yer” demektir. Oku ters okumak, LGS’de en sık yapılan hatadır.</p>
 
-<div class="fig"><svg viewBox="0 0 580 130" width="560" role="img" aria-label="Fotosentez hızını etkileyen faktörlerin grafikleri">
-<g font-size="9" font-weight="bold" text-anchor="middle">
-<rect x="6" y="8" width="182" height="114" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<text x="97" y="23" fill="#166534">1. Işık Şiddeti ve CO₂ Miktarı</text>
-<line x1="25" y1="98" x2="170" y2="98" stroke="#334155"/><line x1="25" y1="30" x2="25" y2="98" stroke="#334155"/>
-<path d="M25,98 L95,42 L165,42" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<text x="97" y="112" fill="#1e293b">Belli değere kadar artar, sonra sabitlenir</text>
-
-<rect x="198" y="8" width="182" height="114" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="289" y="23" fill="#92400e">2. Sıcaklık (En Uygun: 25–30 °C)</text>
-<line x1="218" y1="98" x2="362" y2="98" stroke="#334155"/><line x1="218" y1="30" x2="218" y2="98" stroke="#334155"/>
-<path d="M225,98 Q289,10 350,98" fill="none" stroke="#d97706" stroke-width="2.5"/>
-<text x="289" y="112" fill="#1e293b">Aşırı sıcakta enzim bozulur, hız sıfırlanır</text>
-
-<rect x="390" y="8" width="184" height="114" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="482" y="23" fill="#1e40af">3. Işığın Rengi (Dalga Boyu)</text>
-<line x1="410" y1="98" x2="555" y2="98" stroke="#334155"/><line x1="410" y1="30" x2="410" y2="98" stroke="#334155"/>
-<path d="M415,38 Q482,115 548,38" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<text x="425" y="112" fill="#7c3aed">Mor (Çok)</text>
-<text x="482" y="112" fill="#16a34a">Yeşil (En Az!)</text>
-<text x="540" y="112" fill="#dc2626">Kırmızı (Çok)</text>
-</g>
-</svg></div>
-
-<h3>3. Solunum (Oksijenli Solunum ve Fermantasyon)</h3>
-<table class="rt">
-<tr><th>Solunum Çeşidi</th><th>Denklemi</th><th>Gerçekleştiği Yer ve Önemi</th></tr>
-<tr><td><b>1. Oksijenli Solunum</b></td><td><b>Besin + Oksijen → Karbondioksit + Su + Enerji (Çok ATP)</b>[cite: 10]</td><td>• Gelişmiş hücrelerde <b>mitokondride</b> gerçekleşir[cite: 10].<br>• Bitkiler, hayvanlar ve insanlar <b>gece–gündüz kesintisiz</b> solunum yapar[cite: 10].</td></tr>
-<tr><td><b>2. Etil Alkol Fermantasyonu</b><br><i>(Oksijensiz)</i></td><td><b>Besin → Etil Alkol + Karbondioksit (CO₂) + Az Enerji (ATP)</b>[cite: 10]</td><td>• Sitoplazmada gerçekleşir. Bira mayası mantarlarının <b>hamuru kabartması</b> açığa çıkan <b>$CO_2$ gazı</b> sayesindedir[cite: 10].</td></tr>
-<tr><td><b>3. Laktik Asit Fermantasyonu</b><br><i>(Oksijensiz)</i></td><td><b>Besin → Laktik Asit + Az Enerji (ATP)</b><br><i>(Dikkat: Gaz çıkışı / CO₂ oluşumu YOKTUR!)</i>[cite: 10]</td><td>• Sütten <b>yoğurt</b> yapılması ve yoğun egzersizde <b>çizgili kas hücrelerinde</b> yorgunluk asidi birikmesi[cite: 10].</td></tr>
-</table>
-
-<h3>4. Madde Döngüleri ve Sürdürülebilir Kalkınma</h3>
+<h4>Besin ağı nasıl okunur?</h4>
+<p>Besin ağında bir canlının ne yediğini bulmak için <b>ona gelen oklara</b>, onu kimin yediğini bulmak için <b>ondan çıkan oklara</b> bakılır. Harflerle verilmiş bir ağda bile canlıların türünü oklardan çıkarabilirsin:</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Harflerle gösterilmiş besin ağı ve okuma kuralları"><defs><marker id="ez2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs>
+<line x1="86.5" y1="183.0" x2="64.8" y2="139.7" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="107.5" y1="185.7" x2="150.5" y2="136.6" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="269.6" y1="181.6" x2="279.7" y2="141.3" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="184.0" y1="120.0" x2="263.0" y2="120.0" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="65.8" y1="104.3" x2="97.5" y2="58.1" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="154.2" y1="104.3" x2="122.5" y2="58.1" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="278.3" y1="102.2" x2="262.7" y2="60.6" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<line x1="179.2" y1="107.4" x2="238.6" y2="54.6" stroke="#334155" stroke-width="1.8" marker-end="url(#ez2a)"/>
+<circle cx="95" cy="200" r="19" fill="#bbf7d0" stroke="#166534" stroke-width="1.5"/><text x="95" y="205" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">K</text>
+<circle cx="265" cy="200" r="19" fill="#bbf7d0" stroke="#166534" stroke-width="1.5"/><text x="265" y="205" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">L</text>
+<circle cx="55" cy="120" r="19" fill="#fef08a" stroke="#a16207" stroke-width="1.5"/><text x="55" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">M</text>
+<circle cx="165" cy="120" r="19" fill="#fef08a" stroke="#a16207" stroke-width="1.5"/><text x="165" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">S</text>
+<circle cx="285" cy="120" r="19" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5"/><text x="285" y="125" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">N</text>
+<circle cx="110" cy="40" r="19" fill="#fecaca" stroke="#991b1b" stroke-width="1.5"/><text x="110" y="45" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">T</text>
+<circle cx="255" cy="40" r="19" fill="#fecaca" stroke="#991b1b" stroke-width="1.5"/><text x="255" y="45" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">P</text>
+<rect x="330" y="14" width="222" height="204" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+<g font-size="11" fill="#1e293b">
+<text x="342" y="34" font-size="12" font-weight="bold">Ağ nasıl okunur?</text>
+<text x="342" y="56">• Yalnızca ok çıkan: <tspan font-weight="bold">üretici</tspan> (K, L)</text>
+<text x="342" y="76">• Yalnızca ok giren: en üst</text>
+<text x="352" y="91">tüketiciler (T, P)</text>
+<text x="342" y="111">• M ve S’ye yalnız üreticiden</text>
+<text x="352" y="126">ok gelir: <tspan font-weight="bold">otçul</tspan></text>
+<text x="342" y="146">• N’ye hem L (üretici) hem S</text>
+<text x="352" y="161">(tüketici) ok gönderir: <tspan font-weight="bold">hepçil</tspan></text>
+<text x="342" y="181">• S azalırsa N, T, P besin kaybeder,</text>
+<text x="352" y="196">K daha az tüketilir.</text>
+</g></svg></div>
 <ul>
-<li><b>Su Döngüsü:</b> Buharlaşma ve <b>terleme</b> (bitkiler) ile havaya karışan su buharı, atmosferde soğuyup <b>yoğuşarak</b> yağış hâlinde yeryüzüne döner[cite: 10].</li>
-<li><b>Karbon ve Oksijen Döngüsü:</b> Solunum, <b>fosil yakıtların yanması</b> ve çürüme havaya $CO_2$ verir; yalnızca <b>fotosentez</b> havadaki $CO_2$’yi alıp $O_2$ üretir[cite: 10]. Atmosferde $CO_2$ artışı <b>sera etkisine</b> ve <b>küresel ısınmaya</b> yol açar[cite: 10].</li>
-<li><b>Azot Döngüsü:</b> Havadaki %78 oranındaki azot gazı ($N_2$) canlılar tarafından doğrudan kullanılamaz[cite: 10]. <b>Yıldırım/şimşek</b> olayları ve <b>baklagillerin (yonca, fasulye, bezelye) köklerinde yaşayan azot bağlayıcı bakteriler</b> havadaki azotu toprağa bağlar; ayrıştırıcılar ve azot ayrıştırıcı bakteriler ise azotu tekrar havaya döndürür[cite: 10].</li>
-<li><b>Sürdürülebilir Kalkınma ve Ayak İzleri:</b> Doğal kaynakları gelecek nesillerin ihtiyaçlarını tehlikeye atmadan tasarruflu kullanmaya <b>sürdürülebilir kalkınma</b> denir[cite: 10]. Tüketim ve atıklarımızın doğaya yükünü gösteren <b>ekolojik ayak izi</b>, <b>karbon ayak izi</b> ve <b>su ayak izinin</b> küçültülmesi amaçlanır[cite: 10].</li>
+<li>Bir canlının sayısı azalırsa onu yiyenler <b>besin bulamayıp azalır</b>, onun yediği canlılar ise <b>daha az avlanıp çoğalır</b>. Çoğalan otçullar da üreticileri daha çok tüketir; etki zincir boyunca yayılır.</li>
+<li>Bir canlının birden çok besini varsa, besinlerinden biri azaldığında diğerine yönelebilir; bu yüzden besin ağları tek zincirlere göre <b>daha dengelidir</b>.</li>
+<li>Ağdaki zincirlerin uzunluğu farklı olabilir (ör. 3 halkalı ve 5 halkalı zincirler aynı ağda bulunabilir).</li>
 </ul>
+<div class="box"><b>Mini örnek 1.</b> Yukarıdaki ağda “N hem otçul hem etçildir” kararını verdiren bilgi hangisidir?<br>
+<b>Çözüm:</b> Hepçil demek için canlının hem bir <b>üreticiyle</b> hem bir <b>tüketiciyle</b> beslendiğini görmek gerekir. N’ye L’den (yalnızca ok çıkan, yani üretici) ve S’den (K’yi yiyen, yani tüketici) ok gelir. “N, L ve S ile beslenir” bilgisi yeterlidir. “N’yi P yer” bilgisi ise N’nin besinini söylemediği için işe yaramaz.</div>
+
+<h3>2. Ekoloji piramitleri ve biyolojik birikim (F.8.6.1.1)</h3>
+<p>Besin zincirindeki basamaklar üst üste dizilince bir <b>piramit</b> oluşur. Her basamakta canlılar aldıkları enerjinin büyük kısmını yaşamsal faaliyetlerinde kullanır ve ısı olarak kaybeder; bir üst basamağa yalnızca <b>küçük bir kısmı</b> (ders kitaplarındaki örneklerde yaklaşık %10’u) aktarılır.</p>
+<div class="fig"><svg viewBox="0 0 560 245" width="560" role="img" aria-label="Ekoloji piramidinde yukarı çıktıkça değişenler"><defs><marker id="ez3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker></defs>
+<polygon points="140.0,30 216.0,30 244.0,80 112.0,80" fill="#fecaca" stroke="#991b1b" stroke-width="1.5"/>
+<text x="178" y="52" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3. tüketiciler</text><text x="178" y="68" font-size="11" text-anchor="middle" fill="#1e293b">10 kJ</text>
+<polygon points="112.0,80 244.0,80 272.0,130 84.0,130" fill="#fed7aa" stroke="#c2410c" stroke-width="1.5"/>
+<text x="178" y="102" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2. tüketiciler</text><text x="178" y="118" font-size="11" text-anchor="middle" fill="#1e293b">100 kJ</text>
+<polygon points="84.0,130 272.0,130 300.0,180 56.0,180" fill="#fef08a" stroke="#a16207" stroke-width="1.5"/>
+<text x="178" y="152" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1. tüketiciler</text><text x="178" y="168" font-size="11" text-anchor="middle" fill="#1e293b">1 000 kJ</text>
+<polygon points="56.0,180 300.0,180 328.0,230 28.0,230" fill="#bbf7d0" stroke="#166534" stroke-width="1.5"/>
+<text x="178" y="202" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Üreticiler</text><text x="178" y="218" font-size="11" text-anchor="middle" fill="#1e293b">10 000 kJ</text>
+<line x1="345" y1="228" x2="345" y2="36" stroke="#1d4ed8" stroke-width="3" marker-end="url(#ez3a)"/>
+<text x="339" y="240" font-size="11" fill="#1d4ed8">yukarı çıktıkça</text>
+<g font-size="11" fill="#1e293b">
+<text x="360" y="48" font-size="12" font-weight="bold" fill="#b91c1c">ARTAR</text>
+<text x="360" y="66">• biyolojik birikim</text>
+<text x="370" y="81">(zehirli madde miktarı)</text>
+<text x="360" y="99">• vücut büyüklüğü (genellikle)</text>
+<text x="360" y="134" font-size="12" font-weight="bold" fill="#15803d">AZALIR</text>
+<text x="360" y="152">• aktarılan enerji</text>
+<text x="370" y="167">(üste yaklaşık %10’u geçer)</text>
+<text x="360" y="185">• birey sayısı</text>
+<text x="360" y="203">• toplam biyokütle</text>
+</g></svg></div>
+<div class="tbl"><table>
+<tr><th>Özellik</th><th>Piramitte yukarı çıktıkça</th><th>Neden?</th></tr>
+<tr><td>Aktarılan enerji</td><td><b>Azalır</b></td><td>Her basamak enerjinin çoğunu kendisi kullanır, ısı olarak kaybeder.</td></tr>
+<tr><td>Birey sayısı</td><td><b>Azalır</b> (genellikle)</td><td>Azalan enerji daha az sayıda canlıyı besleyebilir.</td></tr>
+<tr><td>Toplam biyokütle</td><td><b>Azalır</b></td><td>Aynı nedenle canlı madde miktarı da azalır.</td></tr>
+<tr><td>Vücut büyüklüğü</td><td><b>Artar</b> (genellikle)</td><td>Avcılar çoğu zaman avlarından büyüktür.</td></tr>
+<tr><td>Biyolojik birikim</td><td><b>Artar</b></td><td>Vücuttan atılamayan zehirli maddeler her basamakta birikerek üste aktarılır.</td></tr>
+</table></div>
+<p><b>Biyolojik birikim:</b> Tarım ilaçları (ör. DDT), cıva ve kurşun gibi ağır metaller canlının vücudundan kolayca atılamaz, yağ dokusunda birikir. Bir tüketici, yediği <b>çok sayıda</b> canlının içindeki zehri vücudunda toplar. Bu yüzden zehirli madde miktarı <b>en az üreticilerde, en fazla zincirin son halkasında</b> bulunur. Bir grafik veya tabloda birikim miktarları verilirse, en azdan en çoğa sıralayarak besin zincirini bulabilirsin.</p>
+<p class="note"><b>Dikkat!</b> Enerji ve birey sayısı yukarı doğru <b>azalır</b>, biyolojik birikim yukarı doğru <b>artar</b>. İkisini aynı yönde düşünmek klasik bir tuzaktır. Ayrıca %10 bir yaklaşık değerdir; soruda farklı bir oran verilirse soruda verilen oranı kullan.</p>
+<div class="box"><b>Mini örnek 2.</b> Bir zincirde üreticilerdeki enerji 50 000 kJ ve her basamağa öncekinin %10’u geçiyor. 2. tüketicilere kaç kJ aktarılır?<br>
+<b>Çözüm:</b> 1. tüketiciler: 50 000 × {{1|10}} = 5 000 kJ. 2. tüketiciler: 5 000 × {{1|10}} = <b>500 kJ</b>. Bu basamaktaki canlılarda biyolojik birikim, 1. tüketicilerden <b>daha fazladır</b>.</div>
+<p><b>Hafıza ipucu:</b> “<b>Yukarı çık, enerji kaçar, zehir birikir.</b>”</p>
+
+<h3>3. Fotosentez ve önemi (F.8.6.2.1)</h3>
+<p><b>Fotosentez</b>, üreticilerin ışık enerjisini kullanarak <b>karbondioksit ve sudan besin (glikoz) ve oksijen</b> üretmesidir. Bitkilerde yaprak hücrelerindeki <b>kloroplastlarda</b> bulunan yeşil renkli <b>klorofil</b> ışığı soğurur. Bu olayda <b>ışık enerjisi, besindeki kimyasal enerjiye</b> dönüşür.</p>
+<div class="key"><b>Sözel özet:</b> karbondioksit + su —(ışık, klorofil)→ besin (glikoz) + oksijen<br>(Programda kimyasal denkleme girilmez; maddeleri ve yönleri bilmen yeterlidir.)</div>
+<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Fotosentezde bitkiye giren ve çıkan maddeler">
+<defs><marker id="ez4a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><marker id="ez4b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ez4c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="ez4d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker><marker id="ez4e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#92400e"/></marker></defs>
+<circle cx="40" cy="40" r="22" fill="#fbbf24"/>
+<line x1="64" y1="52" x2="190" y2="96" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#ez4d)"/>
+<text x="70" y="86" font-size="11" font-weight="bold" fill="#b45309">ışık enerjisi</text>
+<rect x="0" y="200" width="560" height="50" fill="#fde68a" opacity=".55"/>
+<line x1="270" y1="200" x2="270" y2="110" stroke="#15803d" stroke-width="5"/>
+<path d="M270,120 Q215,70 180,105 Q225,140 270,120 Z" fill="#4ade80" stroke="#15803d" stroke-width="2"/>
+<path d="M270,140 Q330,95 365,128 Q315,165 270,140 Z" fill="#4ade80" stroke="#15803d" stroke-width="2"/>
+<g stroke="#92400e" stroke-width="2" fill="none"><path d="M270,200 L250,228"/><path d="M270,200 L272,236"/><path d="M270,200 L295,226"/></g>
+<line x1="470" y1="60" x2="345" y2="118" stroke="#475569" stroke-width="2.5" marker-end="url(#ez4a)"/>
+<text x="395" y="45" font-size="12" font-weight="bold" fill="#334155">Karbondioksit</text>
+<text x="395" y="60" font-size="11" fill="#334155">(havadan, gözeneklerle)</text>
+<line x1="150" y1="232" x2="255" y2="210" stroke="#2563eb" stroke-width="2.5" marker-end="url(#ez4b)"/>
+<text x="20" y="226" font-size="12" font-weight="bold" fill="#1e40af">Su</text>
+<text x="20" y="241" font-size="11" fill="#1e40af">(topraktan, köklerle)</text>
+<line x1="190" y1="112" x2="70" y2="150" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ez4c)"/>
+<text x="10" y="170" font-size="12" font-weight="bold" fill="#166534">Oksijen</text>
+<text x="10" y="185" font-size="11" fill="#166534">(havaya verilir)</text>
+<line x1="355" y1="140" x2="440" y2="170" stroke="#92400e" stroke-width="2.5" marker-end="url(#ez4e)"/>
+<text x="380" y="186" font-size="12" font-weight="bold" fill="#92400e">Besin (glikoz)</text>
+<text x="380" y="201" font-size="11" fill="#92400e">büyümede ve solunumda</text>
+<text x="380" y="215" font-size="11" fill="#92400e">kullanılır; fazlası nişasta</text><text x="380" y="229" font-size="11" fill="#92400e">olarak depolanır</text>
+<text x="215" y="22" font-size="11" fill="#1e293b">Yapraktaki kloroplastlarda klorofil ışığı soğurur.</text>
+</svg></div>
+<ul>
+<li><b>Gerekenler:</b> ışık, klorofil, karbondioksit (havadan, yapraktaki gözeneklerden), su (topraktan, köklerle). Ayrıca uygun sıcaklık gerekir.</li>
+<li><b>Ürünler:</b> besin (glikoz) ve oksijen. Glikoz büyümede, solunumda enerji kaynağı olarak kullanılır; fazlası <b>nişasta</b> olarak depolanır. Oksijen havaya ya da suya verilir.</li>
+<li><b>Yapay ışıkta da olur:</b> Lamba, el feneri gibi kaynakların ışığıyla da fotosentez gerçekleşir. Bunu test etmek için düzeneğe Güneş ışığının girmesi engellenmelidir (ışık geçirmez kutu + yapay ışık kaynağı).</li>
+<li><b>Önemi:</b> Fotosentez, Dünya’daki hemen hemen bütün canlıların besin ve enerji kaynağıdır; ayrıca atmosferin oksijenini üretir, havadaki karbondioksiti kullanır. Fotosentez olmasaydı besin zincirleri başlayamazdı.</li>
+</ul>
+<h4>Deneylerde kullanılan araçlar ve anlamları</h4>
+<div class="tbl"><table>
+<tr><th>Araç / gözlem</th><th>Ne işe yarar?</th><th>Ne anlama gelir?</th></tr>
+<tr><td>İyot (lugol) çözeltisi</td><td>Nişasta ayıracıdır</td><td>Mavi-mor renk → yaprakta nişasta (besin) üretilmiş</td></tr>
+<tr><td>KOH çözeltisi</td><td>Ortamdaki CO<sub>2</sub>’yi tutar</td><td>Fanusa konursa bitki CO<sub>2</sub> bulamaz, fotosentez yapamaz</td></tr>
+<tr><td>Kireç suyu</td><td>CO<sub>2</sub> ile karşılaşınca bulanır</td><td>Bulanma → ortama CO<sub>2</sub> verilmiş (genellikle solunum)</td></tr>
+<tr><td>Su bitkisinden çıkan kabarcıklar</td><td>Fotosentez hızını ölçmenin kolay yolu</td><td>Kabarcıklar <b>oksijendir</b>; sayı arttıkça hız artmıştır</td></tr>
+<tr><td>Fanustaki mumun yanma süresi</td><td>Ortamdaki oksijen miktarını gösterir</td><td>Mum uzun yanıyorsa ortama oksijen veriliyordur</td></tr>
+<tr><td>Önceden karanlıkta bekletme</td><td>Yapraktaki eski nişastayı harcatır</td><td>Sonradan görülen nişastanın deneyde üretildiği anlaşılır</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Fotosentezin <b>yapay ışıkta</b> olup olmadığını araştıran bir deneye KOH konmaz; KOH CO<sub>2</sub>’yi tutacağı için bitki ışık olsa bile fotosentez yapamaz ve deney yanlış sonuç verir. Ayrıca bir hipotezi test etmek için tek düzenek yetmez: test edilen değişkenin <b>olmadığı</b>, diğer her şeyi aynı bir <b>kontrol düzeneği</b> de gerekir.</p>
+
+<h3>4. Fotosentez hızını etkileyen faktörler (F.8.6.2.2)</h3>
+<p>Programda vurgulanan beş faktör: <b>ışık şiddeti, ışık rengi, karbondioksit miktarı, su miktarı ve sıcaklık</b>. Fotosentez hızı; birim zamanda çıkan oksijen kabarcığı sayısı, ortamdaki CO<sub>2</sub>’nin azalma hızı ya da üretilen besin (nişasta, glikoz) miktarı ile ölçülür.</p>
+<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Fotosentez hızını etkileyen faktörlerin grafikleri">
+<line x1="28" y1="160" x2="178" y2="160" stroke="#334155" stroke-width="2"/><line x1="28" y1="160" x2="28" y2="40" stroke="#334155" stroke-width="2"/>
+<text x="103" y="24" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Işık şiddeti, CO₂, su</text>
+<text x="103" y="178" font-size="11" text-anchor="middle" fill="#334155">miktar artar →</text><text x="103" y="192" font-size="11" text-anchor="middle" fill="#334155"></text>
+<text x="22" y="100" font-size="11" text-anchor="middle" fill="#334155" transform="rotate(-90 22 100)">fotosentez hızı</text>
+<path d="M28,158 Q70,80 110,62 L178,62" fill="none" stroke="#16a34a" stroke-width="3"/>
+<text x="140" y="54" font-size="11" text-anchor="middle" fill="#b91c1c">sabitlenir</text>
+<line x1="215" y1="160" x2="365" y2="160" stroke="#334155" stroke-width="2"/><line x1="215" y1="160" x2="215" y2="40" stroke="#334155" stroke-width="2"/>
+<text x="290" y="24" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Sıcaklık</text>
+<text x="290" y="178" font-size="11" text-anchor="middle" fill="#334155">sıcaklık artar →</text><text x="290" y="192" font-size="11" text-anchor="middle" fill="#334155"></text>
+<text x="209" y="100" font-size="11" text-anchor="middle" fill="#334155" transform="rotate(-90 209 100)">fotosentez hızı</text>
+<path d="M215,158 Q270,30 300,40 Q330,50 360,158" fill="none" stroke="#ea580c" stroke-width="3"/>
+<text x="292" y="112" font-size="11" text-anchor="middle" fill="#b91c1c">uygun</text><text x="292" y="126" font-size="11" text-anchor="middle" fill="#b91c1c">sıcaklık</text>
+<line x1="400" y1="160" x2="550" y2="160" stroke="#334155" stroke-width="2"/><line x1="400" y1="160" x2="400" y2="40" stroke="#334155" stroke-width="2"/>
+<text x="475" y="24" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Işık rengi</text>
+<rect x="402" y="60" width="22" height="100" fill="#7c3aed"/><text x="413" y="176" font-size="11" text-anchor="middle" fill="#334155">mor</text><rect x="431" y="74" width="22" height="86" fill="#2563eb"/><text x="442" y="190" font-size="11" text-anchor="middle" fill="#334155">mavi</text><rect x="460" y="138" width="22" height="22" fill="#16a34a"/><text x="471" y="176" font-size="11" text-anchor="middle" fill="#334155">yeşil</text><rect x="489" y="118" width="22" height="42" fill="#ca8a04"/><text x="500" y="190" font-size="11" text-anchor="middle" fill="#334155">sarı</text><rect x="518" y="64" width="22" height="96" fill="#dc2626"/><text x="529" y="176" font-size="11" text-anchor="middle" fill="#334155">kırmızı</text>
+
+</svg></div>
+<ul>
+<li><b>Işık şiddeti, CO<sub>2</sub> miktarı, su:</b> Artırıldıkça hız <b>bir noktaya kadar</b> artar, sonra <b>sabit kalır</b>. Bu noktada hızı artık başka bir faktör sınırlıyordur. Lambayı bitkiye yaklaştırmak ışık şiddetini artırır.</li>
+<li><b>Sıcaklık:</b> Hız uygun sıcaklığa kadar artar; çok yüksek sıcaklıkta <b>azalır</b>. Çok düşük sıcaklıkta da yavaştır.</li>
+<li><b>Işık rengi:</b> Klorofil en çok <b>mor (mavi-mor) ve kırmızı</b> ışığı soğurur; bu ışıklarda fotosentez en hızlıdır. <b>Yeşil</b> ışığın büyük kısmını yansıtır (yapraklar bu yüzden yeşil görünür); yeşil ışıkta fotosentez <b>en yavaştır</b>.</li>
+<li>Prizmayla renklerine ayrılmış ışık bir ipliksi algin üzerine düşürülürse, oksijen kullanan bakteriler en çok mor ve kırmızı ışık alan bölgelerde, en az yeşil bölgede toplanır; çünkü oksijen en çok bu bölgelerde üretilir.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> <b>Oksijen</b> fotosentezin <b>ürünüdür</b>; programdaki “hızı etkileyen faktörler” arasında yoktur. Sorularda “ortama oksijen eklemek fotosentez hızını artırır” gibi seçenekler genellikle çeldiricidir. Grafikte eğri yataylaştığında “hız azaldı” değil, “<b>sabit kaldı</b>” denir.</p>
+<h4>Değişken kontrolü: doğru düzenekleri seçmek</h4>
+<p>Bir faktörün etkisini görmek için iki düzenekte <b>yalnızca o faktör farklı</b>, diğer her şey aynı olmalıdır.</p>
+<ul>
+<li><b>Bağımsız değişken:</b> Araştırmacının bilerek değiştirdiği (ör. lambanın uzaklığı, ışığın rengi).</li>
+<li><b>Bağımlı değişken:</b> Buna bağlı olarak ölçülen sonuç (ör. kabarcık sayısı, fotosentez hızı).</li>
+<li><b>Kontrol edilen değişkenler:</b> Sabit tutulanlar (ör. bitkinin türü ve büyüklüğü, su sıcaklığı, CO<sub>2</sub> miktarı).</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Düzenek</th><th>Lamba sayısı</th><th>Sıcaklık</th><th>Işık rengi</th></tr>
+<tr><td>I</td><td>2</td><td>20 °C</td><td>Beyaz</td></tr>
+<tr><td>II</td><td>1</td><td>30 °C</td><td>Beyaz</td></tr>
+<tr><td>III</td><td>1</td><td>20 °C</td><td>Beyaz</td></tr>
+<tr><td>IV</td><td>1</td><td>20 °C</td><td>Yeşil</td></tr>
+</table></div>
+<div class="box"><b>Mini örnek 3.</b> Tablodaki özdeş su bitkileriyle (a) sıcaklığın, (b) ışık şiddetinin, (c) ışık renginin etkisi hangi düzenek çiftleriyle incelenir?<br>
+<b>Çözüm:</b> (a) Yalnızca sıcaklığı farklı olan çift: <b>II ve III</b>. (b) Yalnızca lamba sayısı farklı olan çift: <b>I ve III</b>. (c) Yalnızca ışık rengi farklı olan çift: <b>III ve IV</b>. I ile II karşılaştırılamaz; çünkü hem lamba sayısı hem sıcaklık farklıdır, sonucun hangi değişkenden kaynaklandığı anlaşılamaz.</div>
+
+<h3>5. Solunum: oksijenli ve oksijensiz (F.8.6.2.3)</h3>
+<p><b>Solunum</b>, hücrelerde besinlerin parçalanarak içlerindeki enerjinin canlının kullanabileceği hâle getirilmesidir. Açığa çıkan enerjinin bir kısmı <b>ATP</b> adlı enerji molekülünde depolanır, bir kısmı <b>ısı</b> olarak açığa çıkar. Canlı; büyüme, hareket, hücre bölünmesi, vücut sıcaklığını koruma gibi tüm yaşamsal faaliyetleri için bu enerjiyi kullanır. Solunum <b>bütün canlılarda</b>, <b>gece ve gündüz</b> kesintisiz sürer; yalnızca hayvanlar değil bitkiler, mantarlar ve bakteriler de solunum yapar.</p>
+<div class="tbl"><table>
+<tr><th></th><th>Oksijenli solunum</th><th>Etil alkol fermantasyonu</th><th>Laktik asit fermantasyonu</th></tr>
+<tr><td><b>Oksijen</b></td><td>Kullanılır</td><td>Kullanılmaz</td><td>Kullanılmaz</td></tr>
+<tr><td><b>Sözel özet</b></td><td>besin + oksijen → karbondioksit + su + enerji</td><td>besin → etil alkol + karbondioksit + enerji</td><td>besin → laktik asit + enerji</td></tr>
+<tr><td><b>CO<sub>2</sub> çıkışı</b></td><td>Var</td><td>Var</td><td><b>Yok</b></td></tr>
+<tr><td><b>Elde edilen enerji</b></td><td>Fazla</td><td>Az</td><td>Az</td></tr>
+<tr><td><b>Nerede?</b></td><td>Gelişmiş hücrelerde mitokondride</td><td>Bira mayası (maya mantarı), bazı bakteriler</td><td>Yoğurt bakterileri; oksijen yetmediğinde çizgili kas hücreleri</td></tr>
+<tr><td><b>Günlük hayat</b></td><td>Çimlenen tohumların ısınması, nefesimizdeki CO<sub>2</sub></td><td>Hamurun kabarması (CO<sub>2</sub> gazı)</td><td>Sütten yoğurt yapımı, yoğun egzersizde kas yorgunluğu</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Hamuru kabartan gaz <b>karbondioksittir</b>, oksijen değil; maya bir mantardır, fotosentez yapmaz. Laktik asit fermantasyonunda <b>gaz çıkmaz</b>. Oksijensiz solunumda, oksijenli solunuma göre <b>daha az</b> enerji elde edilir (sayısal değer sorulmaz).</p>
+<h4>Fotosentez ile solunumu karşılaştır</h4>
+<div class="tbl"><table>
+<tr><th>Özellik</th><th>Fotosentez</th><th>Oksijenli solunum</th></tr>
+<tr><td>Hangi canlılar?</td><td>Yalnızca üreticiler</td><td>Bütün canlılar</td></tr>
+<tr><td>Ne zaman?</td><td>Yalnızca ışık varken</td><td>Her zaman (gece ve gündüz)</td></tr>
+<tr><td>Nerede (bitkide)?</td><td>Kloroplast</td><td>Mitokondri</td></tr>
+<tr><td>Kullanılan</td><td>Karbondioksit, su (ışık enerjisi)</td><td>Besin, oksijen</td></tr>
+<tr><td>Oluşan</td><td>Besin, oksijen</td><td>Karbondioksit, su, enerji (ATP, ısı)</td></tr>
+<tr><td>Enerji dönüşümü</td><td>Işık enerjisi → kimyasal enerji (besinde)</td><td>Besindeki kimyasal enerji → ATP ve ısı</td></tr>
+</table></div>
+<div class="fig"><svg viewBox="0 0 560 205" width="560" role="img" aria-label="Bir bitkide gün boyunca fotosentez ve solunum hızı">
+<rect x="60" y="20" width="84" height="130" fill="#e2e8f0"/><rect x="370" y="20" width="84" height="130" fill="#e2e8f0"/>
+<text x="102" y="36" font-size="11" text-anchor="middle" fill="#334155">gece</text><text x="438" y="36" font-size="11" text-anchor="middle" fill="#334155">gece</text>
+<line x1="60" y1="150" x2="490" y2="150" stroke="#334155" stroke-width="2"/><line x1="60" y1="150" x2="60" y2="18" stroke="#334155" stroke-width="2"/>
+<line x1="60" y1="118" x2="480" y2="118" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M144,150 Q270,-80 396,150" fill="none" stroke="#16a34a" stroke-width="3"/>
+<g font-size="11" text-anchor="middle" fill="#1e293b">
+<text x="60" y="166">00.00</text><text x="144" y="166">06.00</text><text x="270" y="166">12.00</text><text x="370" y="166">18.00</text><text x="480" y="166">24.00</text>
+<text x="270" y="186">Fotosentez çizgisi solunum çizgisinin üstündeyken bitki dışarıya O₂ verir, CO₂ alır.</text>
+<text x="270" y="200">Gece yalnızca solunum vardır: bitki O₂ alır, CO₂ verir.</text>
+</g>
+<text x="270" y="84" font-size="11" font-weight="bold" text-anchor="middle" fill="#16a34a">fotosentez hızı</text>
+<text x="525" y="114" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">solunum</text>
+<text x="525" y="128" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">hızı</text>
+<text x="30" y="85" font-size="11" text-anchor="middle" fill="#334155" transform="rotate(-90 30 85)">olayın hızı</text>
+</svg></div>
+<ul>
+<li><b>Gündüz</b> bitki hem fotosentez hem solunum yapar. Işık yeterliyse fotosentez solunumdan hızlı olduğu için bitki dışarıya oksijen verir, karbondioksit alır.</li>
+<li><b>Gece</b> yalnızca solunum yapar: oksijen alır, karbondioksit verir. Grafikte iki çizginin kesiştiği anlarda (sabah ve akşam) iki olayın hızı eşittir; dışarıyla net gaz alışverişi görülmez.</li>
+<li><b>Kapalı kap yorumu:</b> Işıklı ortamdaki kapalı kapta bitki varsa CO<sub>2</sub> azalır, O<sub>2</sub> artar, bitkinin kütlesi (biyokütlesi) artar. Karanlıkta ise CO<sub>2</sub> artar, O<sub>2</sub> azalır, bitki depo besinini harcadığı için kuru kütlesi azalır.</li>
+<li><b>Fare-bitki fanusu:</b> Işıkta bitki + fare olan fanusta fare en uzun yaşar. Karanlıkta bitki fotosentez yapamaz ama oksijen tüketmeye devam ettiği için oksijen, yalnız fare olan fanustan bile daha çabuk biter.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> “Bitkiler gündüz yalnızca fotosentez, gece yalnızca solunum yapar.” cümlesinin ilk yarısı <b>yanlıştır</b>: bitkiler gündüz de solunum yapar. Solunum havaya <b>oksijen vermez</b>; karbondioksit verir.</p>
+
+<h3>6. Madde döngüleri ve önemi (F.8.6.3.1, F.8.6.3.2)</h3>
+<p>Enerji ekosistemde <b>tek yönlü</b> akar (Güneş’ten üreticiye, oradan tüketicilere; sonunda ısı olarak kaybolur). <b>Madde ise döner:</b> su, karbon, oksijen ve azot canlılarla cansız çevre arasında sürekli dolaşır. Döngüler sayesinde maddeler tükenmez ve canlılar yaşamını sürdürebilir.</p>
+<h4>Su döngüsü</h4>
+<ul>
+<li><b>Buharlaşma:</b> Deniz, göl, akarsu ve topraktaki su Güneş’in ısısıyla buharlaşır.</li>
+<li><b>Terleme:</b> Bitkiler yapraklarındaki gözeneklerden havaya su buharı verir. Canlılar solunum ve boşaltımla da su verir.</li>
+<li><b>Yoğuşma:</b> Yükselen su buharı soğuyarak bulutları oluşturur.</li>
+<li><b>Yağış:</b> Yağmur, kar, dolu olarak yeryüzüne döner.</li>
+<li><b>Akış ve sızma:</b> Su akarsularla denizlere ulaşır ya da toprağa sızıp yer altı suyu olur; bitkiler bu suyu kökleriyle alır.</li>
+</ul>
+<h4>Karbon ve oksijen döngüsü</h4>
+<div class="fig"><svg viewBox="0 0 560 270" width="560" role="img" aria-label="Karbon ve oksijen döngüsü">
+<defs><marker id="ez7g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="ez7r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="ez7k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><marker id="ez7b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker></defs>
+<rect x="170" y="8" width="220" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="280" y="26" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Atmosfer</text>
+<text x="280" y="41" font-size="11" text-anchor="middle" fill="#1e3a8a">karbondioksit (CO₂) ve oksijen (O₂)</text>
+<rect x="8" y="118" width="150" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="83" y="136" font-size="12" font-weight="bold" text-anchor="middle" fill="#14532d">Bitkiler</text>
+<text x="83" y="152" font-size="11" text-anchor="middle" fill="#14532d">fotosentez + solunum</text>
+<rect x="210" y="128" width="140" height="44" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="280" y="146" font-size="12" font-weight="bold" text-anchor="middle" fill="#713f12">Hayvanlar, insan</text>
+<text x="280" y="162" font-size="11" text-anchor="middle" fill="#713f12">solunum</text>
+<rect x="405" y="118" width="148" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="479" y="136" font-size="12" font-weight="bold" text-anchor="middle" fill="#7f1d1d">Fosil yakıtlar</text>
+<text x="479" y="152" font-size="11" text-anchor="middle" fill="#7f1d1d">fabrika, araç, soba</text>
+<rect x="190" y="220" width="180" height="42" rx="8" fill="#e7e5e4" stroke="#57534e" stroke-width="1.5"/>
+<text x="280" y="238" font-size="12" font-weight="bold" text-anchor="middle" fill="#292524">Ayrıştırıcılar</text>
+<text x="280" y="254" font-size="11" text-anchor="middle" fill="#292524">ölü kalıntıları ayrıştırır</text>
+<path d="M172,30 Q60,30 52,112" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ez7g)"/>
+<text x="72" y="64" font-size="11" font-weight="bold" fill="#16a34a">CO₂ alınır</text>
+<text x="72" y="78" font-size="11" fill="#16a34a">(fotosentez)</text>
+<path d="M140,116 Q150,70 196,50" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ez7b)"/>
+<text x="156" y="104" font-size="11" font-weight="bold" fill="#2563eb">O₂ verilir</text>
+<line x1="159" y1="145" x2="205" y2="148" stroke="#475569" stroke-width="2" marker-end="url(#ez7k)"/>
+<text x="166" y="140" font-size="11" fill="#475569">besin</text>
+<line x1="290" y1="126" x2="290" y2="54" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez7r)"/>
+<line x1="265" y1="54" x2="265" y2="122" stroke="#2563eb" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ez7b)"/>
+<text x="296" y="94" font-size="11" font-weight="bold" fill="#dc2626">CO₂</text>
+<text x="230" y="94" font-size="11" font-weight="bold" fill="#2563eb">O₂</text>
+<path d="M470,116 Q460,60 396,36" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez7r)"/>
+<text x="479" y="180" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">↑ CO₂ verilir</text>
+<text x="479" y="194" font-size="11" fill="#dc2626" text-anchor="middle">(yanma, O₂ harcanır)</text>
+<line x1="90" y1="163" x2="200" y2="226" stroke="#475569" stroke-width="2" marker-end="url(#ez7k)"/>
+<line x1="280" y1="173" x2="280" y2="216" stroke="#475569" stroke-width="2" marker-end="url(#ez7k)"/>
+<text x="60" y="210" font-size="11" fill="#475569">ölü kalıntı, atık</text>
+<path d="M372,238 Q400,190 382,52" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez7r)"/>
+<text x="402" y="232" font-size="11" font-weight="bold" fill="#dc2626">CO₂ (ayrışma)</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Olay</th><th>Havadaki CO<sub>2</sub></th><th>Havadaki O<sub>2</sub></th></tr>
+<tr><td>Fotosentez (üreticiler)</td><td><b>Azaltır</b></td><td><b>Artırır</b></td></tr>
+<tr><td>Solunum (bitki, hayvan, insan, mikroorganizma)</td><td>Artırır</td><td>Azaltır</td></tr>
+<tr><td>Ayrıştırıcıların ölü kalıntıları ayrıştırması</td><td>Artırır</td><td>Azaltır (oksijenli solunumla)</td></tr>
+<tr><td>Fosil yakıtların ve odunun yanması</td><td>Artırır</td><td>Azaltır</td></tr>
+<tr><td>Ormanların yok edilmesi</td><td>Artırır (fotosentez azalır)</td><td>Azaltır</td></tr>
+<tr><td>Ağaçlandırma</td><td>Azaltır</td><td>Artırır</td></tr>
+</table></div>
+<p>Karbon, bitkilere fotosentezle CO<sub>2</sub> olarak girer; besin olarak hayvanlara geçer; solunum, ayrışma ve yanma ile yeniden atmosfere döner. Milyonlarca yıl önce gömülen canlı kalıntılarından oluşan <b>kömür, petrol ve doğal gaz</b> (fosil yakıtlar) da karbon depolarıdır; yakıldıklarında bu karbon CO<sub>2</sub> olarak havaya çıkar.</p>
+<p class="note"><b>Dikkat!</b> Ayrıştırıcılar havadaki CO<sub>2</sub>’yi <b>azaltmaz</b>, ayrıştırma sırasında havaya CO<sub>2</sub> verir. Atmosfere CO<sub>2</sub> veren tek grup hayvanlar değildir: bitkiler de solunum yapar.</p>
+<p><b>Ozon tabakası:</b> Atmosferin üst kısımlarındaki ozon gazı, Güneş’ten gelen zararlı <b>morötesi (UV) ışınların</b> büyük kısmını tutar. Bazı spreylerde ve eski soğutucularda kullanılan gazlar ozon tabakasını inceltir. Ozon tabakasının incelmesi ile küresel ısınma <b>farklı</b> sorunlardır; karıştırma.</p>
+<h4>Azot döngüsü</h4>
+<p>Azot, canlıların <b>protein ve DNA</b> gibi temel moleküllerinin yapısında bulunur. Havanın yaklaşık %78’i azot gazıdır; ama bitkiler ve hayvanlar bu gazı <b>doğrudan kullanamaz</b>. Soluduğumuz azot gazı kullanılmadan geri verilir.</p>
+<div class="fig"><svg viewBox="0 0 560 270" width="560" role="img" aria-label="Azot döngüsü">
+<defs><marker id="ez8k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker><marker id="ez8b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ez8g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker></defs>
+<rect x="160" y="8" width="240" height="38" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="280" y="26" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Havadaki azot gazı</text>
+<text x="280" y="40" font-size="11" text-anchor="middle" fill="#1e3a8a">(havanın yaklaşık %78’i)</text>
+<rect x="24" y="112" width="118" height="36" rx="8" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
+<text x="83" y="135" font-size="12" font-weight="bold" text-anchor="middle" fill="#713f12">Yıldırım, şimşek</text>
+<rect x="6" y="222" width="168" height="42" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="90" y="239" font-size="11" font-weight="bold" text-anchor="middle" fill="#14532d">Azot bağlayıcı bakteriler</text>
+<text x="90" y="255" font-size="11" text-anchor="middle" fill="#14532d">(baklagil köklerinde)</text>
+<rect x="184" y="222" width="196" height="42" rx="8" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/>
+<text x="282" y="240" font-size="11" font-weight="bold" text-anchor="middle" fill="#713f12">Topraktaki</text>
+<text x="282" y="255" font-size="11" font-weight="bold" text-anchor="middle" fill="#713f12">azotlu bileşikler</text>
+<rect x="215" y="95" width="122" height="38" rx="8" fill="#bbf7d0" stroke="#166534" stroke-width="1.5"/>
+<text x="276" y="112" font-size="12" font-weight="bold" text-anchor="middle" fill="#14532d">Bitkiler</text>
+<text x="276" y="127" font-size="11" text-anchor="middle" fill="#14532d">kökleriyle alır</text>
+<rect x="392" y="95" width="122" height="38" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="453" y="112" font-size="12" font-weight="bold" text-anchor="middle" fill="#78350f">Hayvanlar</text>
+<text x="453" y="127" font-size="11" text-anchor="middle" fill="#78350f">besinle alır</text>
+<rect x="392" y="160" width="122" height="38" rx="8" fill="#e7e5e4" stroke="#57534e" stroke-width="1.5"/>
+<text x="453" y="177" font-size="12" font-weight="bold" text-anchor="middle" fill="#292524">Ayrıştırıcılar</text>
+<text x="453" y="192" font-size="11" text-anchor="middle" fill="#292524">ölü kalıntılar</text>
+<rect x="392" y="224" width="130" height="40" rx="8" fill="#e0e7ff" stroke="#4338ca" stroke-width="1.5"/>
+<text x="457" y="241" font-size="11" font-weight="bold" text-anchor="middle" fill="#312e81">Azot ayrıştırıcı</text>
+<text x="457" y="256" font-size="11" font-weight="bold" text-anchor="middle" fill="#312e81">bakteriler</text>
+<line x1="200" y1="46" x2="125" y2="108" stroke="#2563eb" stroke-width="2" marker-end="url(#ez8b)"/>
+<path d="M160,24 Q8,30 14,216" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#ez8b)"/>
+<line x1="142" y1="146" x2="222" y2="218" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="175" y1="243" x2="180" y2="243" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="276" y1="221" x2="276" y2="138" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ez8g)"/>
+<line x1="338" y1="114" x2="387" y2="114" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="330" y1="134" x2="388" y2="168" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="453" y1="134" x2="453" y2="155" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="400" y1="199" x2="366" y2="218" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<line x1="381" y1="250" x2="387" y2="250" stroke="#475569" stroke-width="2" marker-end="url(#ez8k)"/>
+<path d="M522,226 Q556,60 404,28" fill="none" stroke="#4338ca" stroke-width="2" marker-end="url(#ez8b)"/>
+<text x="150" y="80" font-size="11" fill="#2563eb">azot bağlanır</text>
+</svg></div>
+<ol>
+<li><b>Azotun bağlanması:</b> Havadaki azot gazı, <b>yıldırım ve şimşeklerin</b> etkisiyle ya da <b>azot bağlayıcı bakterilerle</b> (baklagillerin, yani fasulye, nohut, yonca, bezelyenin köklerinde yaşayanlar; topraktaki bazı serbest bakteriler) bitkilerin kullanabileceği <b>azotlu bileşiklere</b> dönüştürülür ve toprağa geçer.</li>
+<li><b>Bitkiler</b> azotlu bileşikleri topraktan <b>kökleriyle</b> alır (yapraklarıyla havadan almaz).</li>
+<li><b>Hayvanlar</b> azotu bitkileri ya da diğer hayvanları <b>yiyerek</b> alır.</li>
+<li><b>Ayrıştırıcılar</b> ölü canlıları ve atıkları ayrıştırır; içlerindeki azot azotlu bileşikler hâlinde yeniden <b>toprağa</b> katılır.</li>
+<li><b>Azot ayrıştırıcı bakteriler</b> topraktaki azotlu bileşikleri azot gazına dönüştürüp <b>havaya geri verir</b>.</li>
+</ol>
+<p class="note"><b>Dikkat!</b> <b>Azot bağlayıcı</b> ve <b>azot ayrıştırıcı</b> bakterilerin görevi birbirinin <b>tersidir</b>: biri havadan toprağa, öteki topraktan havaya. Yıldırım azotu bağlar ama bir mikroorganizma <b>değildir</b>. Çiftçinin tarlaya dönüşümlü olarak baklagil ekmesi toprağı azotça zenginleştirir, yapay gübre ihtiyacını azaltır.</p>
+
+<h3>7. Küresel iklim değişikliği ve sera etkisi (F.8.6.3.3)</h3>
+<p>Atmosferdeki <b>karbondioksit, metan ve su buharı</b> gibi gazlar, Güneş ışınlarıyla ısınan yeryüzünün yaydığı ısının bir kısmını tutar. Bu doğal olaya <b>sera etkisi</b> denir; sera etkisi olmasaydı Dünya canlıların yaşayamayacağı kadar soğuk olurdu. Sorun, insan etkinlikleriyle bu gazların <b>artması</b>dır: daha çok ısı tutulur ve Dünya’nın ortalama sıcaklığı yükselir. Buna <b>küresel ısınma</b>, bunun iklimlerde yol açtığı uzun süreli değişikliklere <b>küresel iklim değişikliği</b> denir.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Sera etkisinin oluşumu">
+<defs><marker id="ez9y" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker><marker id="ez9r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<circle cx="45" cy="40" r="26" fill="#fbbf24"/>
+<path d="M0,95 Q280,55 560,95 L560,120 Q280,80 0,120 Z" fill="#bfdbfe" opacity=".8"/>
+<text x="552" y="80" font-size="11" font-weight="bold" fill="#1e3a8a" text-anchor="end">sera gazları: CO₂, metan, su buharı</text>
+<path d="M0,190 Q280,150 560,190 L560,230 L0,230 Z" fill="#86efac"/>
+<text x="280" y="212" font-size="12" font-weight="bold" text-anchor="middle" fill="#14532d">Yeryüzü</text>
+<line x1="70" y1="62" x2="170" y2="168" stroke="#d97706" stroke-width="3" marker-end="url(#ez9y)"/>
+<line x1="100" y1="50" x2="230" y2="160" stroke="#d97706" stroke-width="3" marker-end="url(#ez9y)"/>
+<text x="80" y="22" font-size="11" fill="#92400e">1. Güneş ışınları atmosferden geçer</text>
+<path d="M300,165 Q310,140 300,120 Q290,100 300,82 Q306,70 300,55" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez9r)"/>
+<path d="M350,163 Q360,145 350,128 Q345,118 352,106" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez9r)"/>
+<path d="M356,104 Q380,120 392,150" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ez9r)"/>
+<text x="312" y="58" font-size="11" fill="#7f1d1d">bir kısım ısı uzaya gider</text>
+<text x="410" y="128" font-size="11" fill="#7f1d1d">2. Yeryüzü ısınır,</text><text x="422" y="142" font-size="11" fill="#7f1d1d">ısı yayar.</text>
+<text x="410" y="160" font-size="11" fill="#7f1d1d">3. Gazlar ısının bir</text>
+<text x="422" y="174" font-size="11" fill="#7f1d1d">kısmını tutar.</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Nedenler</th><th>Olası sonuçlar</th><th>Önlemler</th></tr>
+<tr><td>Fosil yakıtların (kömür, petrol, doğal gaz) yakılması; ormanların yok edilmesi; sanayi ve trafik; hayvancılık ve çöp alanlarından metan çıkışı</td><td>Buzulların erimesi ve deniz seviyesinin yükselmesi (kıyıların sular altında kalması); kuraklık, sel, fırtına gibi aşırı hava olaylarının artması; tatlı su kaynaklarının azalması; tarımın zarar görmesi; bazı türlerin yok olması</td><td>Güneş, rüzgâr, hidroelektrik, jeotermal gibi yenilenebilir enerji kaynaklarına yönelmek; ağaçlandırma; toplu taşıma, bisiklet, yürüyüş; binalarda ısı yalıtımı; enerji ve su tasarrufu; geri dönüşüm</td></tr>
+</table></div>
+<ul>
+<li><b>Ekolojik ayak izi:</b> Bir kişinin, toplumun ya da ülkenin tükettiği kaynakları üretmek ve oluşturduğu atıkları yok etmek için gereken doğa alanıdır. Ne kadar çok tüketirsek ayak izimiz o kadar büyür.</li>
+<li><b>Karbon ayak izi:</b> Etkinliklerimizin (ulaşım, ısınma, elektrik, alışveriş) atmosfere verdiği sera gazı miktarı.</li>
+<li><b>Su ayak izi:</b> Bir ürünün ham maddesinden tüketimine kadar harcanan toplam tatlı su. Yalnızca içtiğimiz su değildir: bir tişörtün, bir kilogram etin üretiminde binlerce litre su harcanır.</li>
+<li><b>Uluslararası önlemler:</b> Ülkeler sera gazı salımını azaltmak için anlaşmalar yapar; programda örnek olarak <b>Kyoto Protokolü</b> verilir.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Ağaç dikmek, yenilenebilir enerji kullanmak, ısı yalıtımı küresel ısınmayı <b>azaltır</b>; bunlar “CO<sub>2</sub> artışının sebebi” olamaz. Ozon tabakasını koruyan önlemler ise doğrudan sera etkisini azaltmaya yönelik değildir. “Tüm yeni teknolojik ürünleri almak” gibi tüketimi artıran davranışlar ayak izini büyütür.</p>
+
+<h3>8. Sürdürülebilir kalkınma, tasarruf ve geri dönüşüm (F.8.6.4.1 – F.8.6.4.5)</h3>
+<p><b>Sürdürülebilir kalkınma</b>, bugünün ihtiyaçlarını <b>gelecek nesillerin</b> ihtiyaçlarını karşılama olanağını tehlikeye atmadan karşılamaktır. Su, toprak, orman, maden ve fosil yakıt gibi kaynaklar sınırlıdır; bu nedenle tasarruflu kullanılmalı, atıklar azaltılmalı ve yeniden değerlendirilmelidir.</p>
+<div class="tbl"><table>
+<tr><th>Kavram</th><th>Anlamı</th><th>Örnek</th></tr>
+<tr><td><b>Tasarruf (azaltma)</b></td><td>Kaynağı daha az harcamak</td><td>Damla sulama, damlatan musluğu tamir ettirmek, kullanılmayan lambayı kapatmak, defteri sonuna kadar kullanmak</td></tr>
+<tr><td><b>Yeniden kullanım</b></td><td>Bir eşyayı <b>işlemden geçirmeden</b> başka bir amaçla tekrar kullanmak</td><td>Boş kavanozu kalemlik yapmak, bez çanta kullanmak</td></tr>
+<tr><td><b>Geri dönüşüm</b></td><td>Atığı <b>işleyerek</b> ham madde olarak yeniden üretime katmak</td><td>Metal kutulardan çöp kovası, atık kâğıttan yeni kâğıt, cam şişelerden yeni şişe üretmek</td></tr>
+<tr><td><b>Geri kazanım</b></td><td>Atıkların ekonomiye kazandırılması (geri dönüşüm, enerji elde etme vb.)</td><td>Organik atıklardan kompost (gübre) yapmak</td></tr>
+</table></div>
+<ul>
+<li><b>Katı atıkların kaynağında ayrıştırılması:</b> Kâğıt, plastik, cam, metal, pil ve elektronik atıklar ayrı kutulara atılmalıdır. Karışık atık geri dönüştürülemez ya da çok daha zor ve pahalı dönüştürülür. Atık piller toprağa ve suya ağır metal bulaştırabileceği için ayrı toplanmalıdır.</li>
+<li><b>Ekonomiye katkı:</b> Geri dönüşüm ham madde ve enerji tasarrufu sağlar, ithal edilen ham madde ihtiyacını azaltır, çöp alanlarının ömrünü uzatır ve yeni iş alanları oluşturur. Örneğin alüminyum kutuların geri dönüşümünde, cevherden üretime göre çok daha az enerji harcanır; atık kâğıdın geri dönüşümü ağaç kesimini azaltır.</li>
+<li><b>Su tasarrufu:</b> Yağmur suyunu toplayıp bahçe sulamada kullanmak, lavabo suyunu arıtıp yeniden kullanmak, nem ölçen sulama sistemleri. (Bir barajdaki suyu arıtmak suyu temizler ama harcanan su miktarını azaltmaz.)</li>
+<li><b>Tasarruf edilmezse:</b> Su kıtlığı ve kuraklık, fosil yakıtların ve madenlerin tükenmesi, enerji fiyatlarının artması, ormanların ve canlı çeşitliliğinin azalması, çevre kirliliğinin artması gibi sorunlar ortaya çıkar.</li>
+<li><b>Önleyici yaklaşım:</b> Çevreye zarar ortaya çıkmadan önlem almak, zarar oluştuktan sonra onarmaktan daha kolay ve ucuzdur (ör. atık suyu arıtmadan akarsuya vermemek).</li>
+<li><b>Proje tasarlama:</b> Okulda ya da evde tasarruf projesi hazırlarken önce sorun belirlenir (ör. çok kâğıt harcanıyor), ölçüm yapılır, çözüm uygulanır ve sonuç yeniden ölçülerek karşılaştırılır.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Kavanozu kalemlik yapmak <b>geri dönüşüm değil, yeniden kullanımdır</b>; madde işlemden geçmemiştir. Ormanı kesip tarla açmak, kısa vadede ürün getirse bile sürdürülebilir kalkınmaya <b>uygun değildir</b>.</p>
+
+<h3>LGS'de bu konu nasıl soruluyor?</h3>
+<p>2018-2026 arasında bu üniteden 28 soru çıktı (2020 ve 2023’te sınav kapsamı daraltıldığı için soru yok). Bunların ikisi (mercek ve ses) bugünkü programda bu ünitede yer almıyor. Kalan sorular üç ana başlıkta yoğunlaşıyor: <b>fotosentez ve hızı</b>, <b>besin zinciri-ağı-piramit</b> ve <b>madde döngüleri</b>; dördüncü soru genellikle küresel iklim ya da sürdürülebilirlikten geliyor.</p>
+<div class="tbl"><table>
+<tr><th>Soru tipi</th><th>Ne istenir?</th><th>Çıkmışlardan örnek bağlam</th></tr>
+<tr><td>Deney düzeneği / değişken kontrolü</td><td>Hangi iki düzenek karşılaştırılmalı, düzenek yeterli mi, hangi soruya cevap aranıyor?</td><td>Lamba sayısı-sıcaklık düzenekleri; mumlu fanusta kontrol düzeneği; yapay ışıkta fotosentez kutusu</td></tr>
+<tr><td>Grafik yorumlama</td><td>Eğri artıyor mu, sabitleniyor mu; neden değişti?</td><td>CO<sub>2</sub>-ışık şiddeti grafiği (plato); yıllara göre havadaki CO<sub>2</sub>; deniz samuru-denizkestanesi popülasyonları</td></tr>
+<tr><td>Besin ağı / piramit</td><td>Üretici, otçul, hepçil kararı; hangi hipotez desteklenmez; piramit şekli</td><td>Harfli besin ağı; sucul besin ağı; biyolojik birikime göre piramit (görsel şıklar)</td></tr>
+<tr><td>Resimli döngü şeması</td><td>Numaralı olayları tanı; yanlış/doğru yargıyı bul</td><td>Karbon döngüsü (solunum ve ayrışma CO<sub>2</sub> verir); azot döngüsü (bağlayıcı-ayrıştırıcı farkı)</td></tr>
+<tr><td>I-II-III yargıları</td><td>Hangi işlemler hızı değiştirir; kapalı kapta neler olur?</td><td>Işık rengi ve sıcaklık değişimi; sürekli ışıkta kapalı kapta CO<sub>2</sub>, O<sub>2</sub>, biyokütle</td></tr>
+<tr><td>Kısa metin / tanım</td><td>Tanıma uymayan uygulamayı bul</td><td>Ekolojik ayak izi, geri dönüşüm, tehlikeyi önleme, küresel ısınmayı azaltan önlem</td></tr>
+</table></div>
+<p><b>Sık kurulan tuzaklar:</b></p>
+<ul>
+<li>Oku “yer” yönünde okumak (ok, enerjinin gittiği yönü gösterir).</li>
+<li>Biyolojik birikimi enerjiyle aynı yönde düşünmek (birikim yukarı doğru artar).</li>
+<li>“Ayrıştırıcılar CO<sub>2</sub>’yi azaltır”, “solunum O<sub>2</sub> verir”, “bitkiler gündüz solunum yapmaz” gibi yargılar.</li>
+<li>Yıldırımı mikroorganizma saymak; azot bağlayıcı ile azot ayrıştırıcı bakterileri karıştırmak; bitkilerin azotu yapraktan aldığını sanmak.</li>
+<li>Oksijeni fotosentez hızını etkileyen faktör saymak; yapay ışık deneyine KOH koymak; grafikteki platoyu “azalma” diye okumak.</li>
+<li>Yeniden kullanımı geri dönüşümle, ozon incelmesini küresel ısınmayla karıştırmak.</li>
+</ul>
+<p><b>Strateji:</b></p>
+<ol>
+<li>Soru kökündeki <b>olumsuz ifadeyi</b> (yanlış, desteklenmez, sebebi olamaz, beklenmez) işaretle; bu ünitede çok sık kullanılır.</li>
+<li>Deney sorularında önce <b>değişen tek şeyi</b> bul; birden fazla şey değişmişse o karşılaştırma geçersizdir.</li>
+<li>Besin ağında önce <b>üreticileri</b> (yalnız ok çıkan) işaretle, sonra her canlıya gelen okları say.</li>
+<li>Döngü şemalarında her oka “CO<sub>2</sub> mi alınıyor, veriliyor mu?” diye sor; fotosentez dışındaki olayların hepsi havaya CO<sub>2</sub> verir.</li>
+<li>Grafik sorularında eksenleri ve birimleri oku; eğrinin <b>yatay</b> kısmını, en yüksek noktasını ve kesişme noktalarını ayrı ayrı yorumla.</li>
+</ol>
+
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2018-2026 LGS Fen Bilimleri testlerinde bu üniteye eşlenmiş <b>28 soru</b> var: 2018, 2019, 2021, 2022, 2024, 2025 ve 2026’da her yıl <b>4 soru</b>. 2020 ve 2023’te sınav yalnızca 8. sınıfın 1. dönem konularını kapsadığı için (2023 için MEB’in deprem sonrası kararı) bu 2. dönem ünitesinden soru gelmedi. Alt başlık sınıflandırması sorunun ölçtüğü ana kazanıma göre yapılmış bir <b>yorumdur</b>; iki başlığa dokunan sorular (* işaretli) baskın olan başlığa yazıldı.</p>
+<div class="fig"><svg viewBox="0 0 560 286" width="560" role="img" aria-label="Enerji Dönüşümleri ve Çevre Bilimi konusundan 2018-2026 LGS’de alt başlık ve yıllara göre soru sayıları ısı haritası">
+<rect x="0" y="0" width="560" height="286" fill="#ffffff"/>
+<text x="280" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Alt başlık × yıl: kaç soru geldi? (2018-2026, toplam 28)</text>
+<text x="189" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2018</text>
+<text x="227" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2019</text>
+<text x="265" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2020</text>
+<text x="303" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2021</text>
+<text x="341" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2022</text>
+<text x="379" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2023</text>
+<text x="417" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2024</text>
+<text x="455" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2025</text>
+<text x="493" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2026</text>
+<text x="532" y="38" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">Top.</text>
+<text x="164" y="63" font-size="11" text-anchor="end" fill="#1e293b">Besin zinciri ve piramit</text>
+<rect x="172" y="46" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="210" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="227" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="248" y="46" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="303" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="324" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="341" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="362" y="46" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="417" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="438" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="455" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="476" y="46" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<text x="532" y="63" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">6</text>
+<text x="164" y="91" font-size="11" text-anchor="end" fill="#1e293b">Fotosentez ve hızı</text>
+<rect x="172" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="189" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="210" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="227" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="248" y="74" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="303" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="324" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="341" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="362" y="74" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="417" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="438" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="455" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="476" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<text x="532" y="91" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">7</text>
+<text x="164" y="119" font-size="11" text-anchor="end" fill="#1e293b">Solunum (tek başına)</text>
+<rect x="172" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="210" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="248" y="102" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="324" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="362" y="102" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="438" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="102" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="532" y="119" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">0</text>
+<text x="164" y="147" font-size="11" text-anchor="end" fill="#1e293b">Madde döngüleri</text>
+<rect x="172" y="130" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="210" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="227" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="248" y="130" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="303" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="324" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="341" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="362" y="130" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="417" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="438" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="455" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="476" y="130" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<text x="532" y="147" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">6</text>
+<text x="164" y="175" font-size="11" text-anchor="end" fill="#1e293b">Küresel iklim değişikliği</text>
+<rect x="172" y="158" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="189" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="210" y="158" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="248" y="158" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="158" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="324" y="158" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="341" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="362" y="158" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="158" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="417" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="438" y="158" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="455" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="476" y="158" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="532" y="175" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">4</text>
+<text x="164" y="203" font-size="11" text-anchor="end" fill="#1e293b">Sürdürülebilir kalkınma</text>
+<rect x="172" y="186" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="210" y="186" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="227" y="203" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="248" y="186" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="186" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="303" y="203" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<rect x="324" y="186" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="362" y="186" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="186" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="438" y="186" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="186" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="203" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text>
+<text x="532" y="203" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3</text>
+<text x="164" y="231" font-size="11" text-anchor="end" fill="#1e293b">Kapsam dışı (mercek, ses)</text>
+<rect x="172" y="214" width="34" height="24" rx="3" fill="#60a5fa"/>
+<text x="189" y="231" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text>
+<rect x="210" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="248" y="214" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="286" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="324" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="362" y="214" width="34" height="24" rx="3" fill="#e5e7eb"/>
+<rect x="400" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="438" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="214" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="532" y="231" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<rect x="12" y="256" width="14" height="12" fill="#e5e7eb"/><text x="32" y="266" font-size="11" fill="#334155">2020 ve 2023: sınav 1. dönem konularıyla sınırlı, bu üniteden soru yok</text>
+<rect x="12" y="272" width="14" height="12" fill="#bfdbfe"/><text x="32" y="282" font-size="11" fill="#334155">1 soru</text><rect x="82" y="272" width="14" height="12" fill="#60a5fa"/><text x="102" y="282" font-size="11" fill="#334155">2 soru</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>
+<tr><td>2018</td><td>4</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Deney tasarımı: K canlısının oksijen verdiğini test etmek için kontrol düzeneği gerekir (mum + fanus)</td></tr>
+<tr><td>2018</td><td>5</td><td>Küresel iklim değişikliği</td><td>Resim karşılaştırma: kıyının sular altında kalmasına yol açan neden (fosil yakıt)</td></tr>
+<tr><td>2018</td><td>9</td><td>Kapsam dışı: mercekler</td><td>Işığı dağıtan (ince kenarlı) merceğin günlük hayattaki örneği</td></tr>
+<tr><td>2018</td><td>10</td><td>Kapsam dışı: ses</td><td>I-II-III: ses dalgasının balona enerji taşıması</td></tr>
+<tr><td>2019</td><td>1</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Görsel şıklar: ot-çekirge-kertenkele-yılan için birey sayısı piramidi</td></tr>
+<tr><td>2019</td><td>3</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Deney tasarımı: yapay ışıkta fotosentez (ışık geçirmez kutu, el feneri, O<sub>2</sub> ölçer; KOH tuzağı)</td></tr>
+<tr><td>2019</td><td>4</td><td>Madde döngüleri</td><td>Metin + numaralı azot döngüsü şeması: çam kozalağı mantarının görevi (ayrıştırıcı)</td></tr>
+<tr><td>2019</td><td>5</td><td>Sürdürülebilir kalkınma ve tasarruf</td><td>Su kıtlığını önlemeye yönelik olmayan uygulama</td></tr>
+<tr><td>2021</td><td>6</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Şema: bitki-tırtıl-fare zincirinde biyolojik birikim, ayrıştırıcı ve enerji yargıları</td></tr>
+<tr><td>2021</td><td>7</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Grafik: CO<sub>2</sub> miktarı ve ışık şiddetine göre fotosentez hızı (plato)</td></tr>
+<tr><td>2021</td><td>8</td><td>Madde döngüleri</td><td>Metin: eğrelti otundaki azot bağlayan bakteriler ve gübre ihtiyacı</td></tr>
+<tr><td>2021</td><td>9</td><td>Sürdürülebilir kalkınma ve tasarruf</td><td>Tanım metni: “Tehlikeyi Önleme İlkesi”ne uymayan uygulama</td></tr>
+<tr><td>2022</td><td>5</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Üç grafik: su yosunu-denizkestanesi-su samuru popülasyon değişiminin nedeni</td></tr>
+<tr><td>2022</td><td>6</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Değişken kontrolü: lamba sayısı ve sıcaklık için düzenek seçimi</td></tr>
+<tr><td>2022</td><td>7</td><td>Madde döngüleri</td><td>Resimli karbon döngüsü: yanlış yargı (ayrıştırıcılar CO<sub>2</sub>’yi azaltır)</td></tr>
+<tr><td>2022</td><td>8</td><td>Küresel iklim değişikliği</td><td>Ekolojik ayak izi tanımı + öğrenci ifadeleri: kabul edilemeyen öneri</td></tr>
+<tr><td>2024</td><td>5</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Görsel şıklar: biyolojik birikimi en az olan M’nin piramitteki yeri</td></tr>
+<tr><td>2024</td><td>6</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>I-II-III: sarı ışıktaki su bitkisinde glikoz üretimini değiştiren işlemler</td></tr>
+<tr><td>2024</td><td>7</td><td>Madde döngüleri</td><td>Metin: azot bağlayan mikroorganizma örneği (yıldırım çeldiricisi)</td></tr>
+<tr><td>2024</td><td>8</td><td>Küresel iklim değişikliği</td><td>Kısa metin: küresel ısınmayı doğrudan azaltan önlem</td></tr>
+<tr><td>2025</td><td>4</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Sucul besin ağı: desteklenmeyen hipotez</td></tr>
+<tr><td>2025</td><td>5</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Kapalı kap + sürekli ışık, I-II-III: CO<sub>2</sub>, O<sub>2</sub> ve biyokütle değişimi (solunumla birlikte)*</td></tr>
+<tr><td>2025</td><td>6</td><td>Madde döngüleri</td><td>Resimli azot döngüsü: doğru yargı (ayrıştırıcılar azotlu bileşikleri toprağa katar)</td></tr>
+<tr><td>2025</td><td>7</td><td>Küresel iklim değişikliği</td><td>Çizgi grafik: havadaki CO<sub>2</sub> artışının sebebi olamayacak durum*</td></tr>
+<tr><td>2026</td><td>4</td><td>Besin zinciri, ağı ve ekoloji piramidi</td><td>Harfli besin ağı: N’nin hem otçul hem etçil olduğuna karar verdiren bilgi</td></tr>
+<tr><td>2026</td><td>5</td><td>Fotosentez ve hızını etkileyen faktörler</td><td>Prizma + ipliksi alg + bakteri (Engelmann tipi), görsel şıklar: yeşil ışıkta en az fotosentez</td></tr>
+<tr><td>2026</td><td>6</td><td>Madde döngüleri</td><td>Numaralı karbon döngüsü: yanlış yargı (solunum O<sub>2</sub> verir)</td></tr>
+<tr><td>2026</td><td>7</td><td>Sürdürülebilir kalkınma ve tasarruf</td><td>Geri dönüşüm örneği (yeniden kullanım çeldiricisi)</td></tr>
+</table></div>
+<div class="note"><b>Not:</b> 2018-9 (mercekler) ve 2018-10 (ses dalgalarının enerji taşıması) eski programdaki “Işık ve Ses” konularından gelir ve sitede bu üniteye eşlenmiştir; <b>bugünkü 8. sınıf programında (F.8.6) bu konular yoktur</b>, yani LGS 2027 için kapsam dışıdır. Bu iki soruyu yalnızca okuma pratiği için çözmen yeterli.</div>
+<div class="note"><b>Kısa analiz</b><ul>
+<li><b>En çok sorulan:</b> Fotosentez ve fotosentez hızı (7 soru) ile besin zinciri-piramit ve madde döngüleri (6’şar soru). 2021’den beri her yıl bu üç başlığın her birinden soru geliyor; dördüncü soru dönüşümlü olarak küresel iklim ya da sürdürülebilirlikten.</li>
+<li><b>Soru tipi:</b> Bilgi ezberi değil, <b>deney düzeneği</b> (değişken kontrolü, kontrol grubu), <b>grafik</b> (plato, popülasyon değişimi) ve <b>resimli döngü şeması</b> okuma. Soruların çoğunda şema, grafik ya da düzenek görseli var; “yanlış olan / desteklenmeyen / sebebi olamaz” kökleri sık.</li>
+<li><b>Tipik tuzaklar:</b> ayrıştırıcıların CO<sub>2</sub>’yi “azalttığını” söylemek, solunumun O<sub>2</sub> verdiğini düşünmek, yıldırımı “mikroorganizma” saymak, KOH’u fotosentez deneyine koymak, yeniden kullanımı geri dönüşümle karıştırmak, biyolojik birikimi tersten okumak.</li>
+<li><b>Eğilim:</b> Solunum tek başına hiç sorulmadı ama 2025 ve 2026’da fotosentez ve karbon döngüsü sorularının içine yerleşti; besin ağı soruları 2025-2026’da harfli/çok halkalı ağlara ve hipotez değerlendirmeye kaydı.</li>
+</ul></div>
 `,
 qs: [
-{
-  q: `<p>Bir çayır ekosistemine ait besin ağı aşağıda verilmiştir. Oklar enerjinin aktarım yönünü göstermektedir[cite: 10].</p>
+{ lv: "kolay", q: `<p>Bir çayır ekosistemine ait besin ağı aşağıda verilmiştir. Oklar enerjinin aktarım yönünü göstermektedir.</p>
 <div class="fig"><svg viewBox="0 0 400 265" width="380" role="img" aria-label="Çayır ekosistemi besin ağı">
 <defs><marker id="web1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs>
 <line x1="176" y1="228" x2="94" y2="187" stroke="#334155" stroke-width="1.8" marker-end="url(#web1)"/>
@@ -121,190 +646,287 @@ qs: [
 <rect x="123" y="28" width="74" height="24" rx="6" fill="#fecaca" stroke="#991b1b"/><text x="160" y="44" font-size="11" font-weight="bold" text-anchor="middle">Yılan</text>
 <rect x="273" y="28" width="74" height="24" rx="6" fill="#fecaca" stroke="#991b1b"/><text x="310" y="44" font-size="11" font-weight="bold" text-anchor="middle">Şahin</text>
 </svg></div>
-<p>Bu besin ağına göre aşağıdakilerden hangisi <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [
-    `Yılan bu besin ağında yalnızca otla beslenen birincil tüketicidir.`,
-    `Şahin bu ağda yalnızca tek bir besin zincirinde yer alır.`,
-    `Çekirgelerin sayısı azalırsa kurbağaların sayısı hızla artar.`,
-    `Fare hem ot (bitkisel) hem de çekirge (hayvansal) ile beslendiği için hepçil bir canlıdır.`
-  ],
+<p>Bu besin ağına göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Yılan bu besin ağında yalnızca otla beslenen birincil tüketicidir.", "Şahin bu ağda yalnızca tek bir besin zincirinde yer alır.", "Çekirgelerin sayısı azalırsa kurbağaların sayısı hızla artar.", "Fare hem ot (bitkisel) hem de çekirge (hayvansal) ile beslendiği için hepçil bir canlıdır."],
   a: "D",
-  s: `<p>Besin ağında <b>fareye</b> hem ottan (üreticiden) hem de çekirgeden (hayvandan) ok gelmektedir; yani fare hem bitkisel hem hayvansal besin tüketen <b>hepçil</b> bir canlıdır (<b>D doğru</b>)[cite: 10]. Kurbağanın tek besini çekirge olduğu için çekirge azalırsa kurbağa da azalır[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bir ekosistemde üreticilerin besin olarak depoladığı enerji <b>20 000 kJ</b>’dür. Her beslenme basamağına, bir önceki basamaktaki enerjinin yaklaşık <b>%10’unun</b> aktarıldığı bilinmektedir[cite: 10].</p>
+  s: `<p>Besin ağında <b>fareye</b> hem ottan (üretici) hem de çekirgeden (tüketici) ok gelir; fare hem bitkisel hem hayvansal besin tükettiği için <b>hepçildir</b> (D ✓).</p><p>A: Yılana gelen oklar kurbağadan ve fareden gelir; yılan otla beslenmez, etçildir ✗. B: Şahin; tavşan, fare ve yılandan beslendiği için birden çok zincirde yer alır (ot → tavşan → şahin, ot → fare → şahin …) ✗. C: Kurbağanın tek besini çekirgedir; çekirge azalırsa kurbağa artmaz, <b>azalır</b> ✗. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir besin zincirini oluşturan <b>K, L, M ve N</b> canlı türlerinin dokularında biriken <b>zehirli madde (biyolojik birikim)</b> miktarlarını gösteren sütun grafiği aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 380 165" width="360" role="img" aria-label="K, L, M ve N canlılarının biyolojik birikim grafiği">
+<line x1="50" y1="135" x2="340" y2="135" stroke="#334155" stroke-width="2"/>
+<line x1="50" y1="15" x2="50" y2="135" stroke="#334155" stroke-width="2"/>
+<rect x="75" y="85" width="36" height="50" fill="#fde047" stroke="#b45309"/>
+<rect x="140" y="25" width="36" height="110" fill="#fca5a5" stroke="#991b1b"/>
+<rect x="205" y="115" width="36" height="20" fill="#86efac" stroke="#166534"/>
+<rect x="270" y="55" width="36" height="80" fill="#fed7aa" stroke="#c2410c"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="93" y="150">K</text><text x="158" y="150">L</text><text x="223" y="150">M</text><text x="288" y="150">N</text>
+<text x="18" y="75" font-size="11" transform="rotate(-90 18 75)">Biyolojik Birikim (Zehir)</text>
+</g>
+</svg></div>
+<p>Grafikteki verilere göre bu canlıların oluşturduğu <b>besin zinciri</b> ve özellikleriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Besin zinciri “M → K → N → L” şeklindedir; M üretici (bitki), K otçul (1. tüketici), L ise zincirin en üstündeki 3. tüketicidir.", "Besin zinciri “L → N → K → M” şeklindedir ve üretici canlı L’dir.", "Toplam biyokütlesi ve birey sayısı en fazla olan canlı türü L’dir.", "Güneş enerjisini doğrudan kimyasal bağ enerjisine dönüştüren canlı N’dir."],
+  a: "A",
+  s: `<p>Biyolojik birikim üreticiden son tüketiciye doğru <b>artar</b>. Grafikte birikim M &lt; K &lt; N &lt; L’dir. Zincir <b>M → K → N → L</b>’dir: M üretici, K 1. tüketici (otçul), N 2. tüketici, L 3. tüketicidir (A ✓).</p><p>B: Zincir ters yazılmıştır; birikimi en fazla olan L üretici olamaz ✗. C: Biyokütle ve birey sayısı en fazla olan, zincirin başındaki M’dir; L’de en azdır ✗. D: Güneş enerjisini kimyasal enerjiye dönüştüren üretici M’dir; N bir tüketicidir ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir ekosistemde üreticilerin besin olarak depoladığı enerji <b>20 000 kJ</b>’dür. Her beslenme basamağına, bir önceki basamaktaki enerjinin yaklaşık <b>%10’unun</b> aktarıldığı bilinmektedir.</p>
 <div class="fig"><svg viewBox="0 0 380 205" width="350" role="img" aria-label="Enerji piramidinde %10 aktarımı">
 <polygon points="190,12 235,58 145,58" fill="#fecaca" stroke="#991b1b"/>
 <polygon points="145,58 235,58 275,104 105,104" fill="#fed7aa" stroke="#c2410c"/>
 <polygon points="105,104 275,104 315,150 65,150" fill="#fef08a" stroke="#b45309"/>
 <polygon points="65,150 315,150 355,196 25,196" fill="#bbf7d0" stroke="#166534"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle" fill="#1e293b">
+<g font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">
 <text x="190" y="42">3. Tüketiciler: ? kJ</text>
 <text x="190" y="86">2. Tüketiciler</text>
 <text x="190" y="132">1. Tüketiciler (Otçullar)</text>
 <text x="190" y="178">Üreticiler: 20 000 kJ</text>
 </g>
 </svg></div>
-<p>Buna göre piramidin en üst basamağındaki <b>3. tüketicilere</b> aktarılan enerji yaklaşık <b>kaç kJ</b>’dür ve bu basamaktaki canlılarla ilgili hangisi söylenebilir[cite: 10]?</p>`,
-  c: [
-    `2 kJ — Biyokütlesi en fazla olan basamaktır.`,
-    `2 000 kJ — Birey sayısı en fazla olan basamaktır.`,
-    `200 kJ — Dokularında biyolojik birikim en azdır.`,
-    `20 kJ — Dokularında biyolojik (zehirli madde) birikimi en fazla olan basamaktır.`
-  ],
+<p>Buna göre piramidin en üst basamağındaki <b>3. tüketicilere</b> aktarılan enerji yaklaşık <b>kaç kJ</b>’dür ve bu basamaktaki canlılarla ilgili hangisi söylenebilir?</p>`,
+  c: ["2 kJ — Biyokütlesi en fazla olan basamaktır.", "2 000 kJ — Birey sayısı en fazla olan basamaktır.", "200 kJ — Dokularında biyolojik birikim en azdır.", "20 kJ — Dokularında biyolojik (zehirli madde) birikimi en fazla olan basamaktır."],
   a: "D",
-  s: `<p>Her basamakta enerjinin %10’u bir üste aktarılır: Üreticiler ($20.000\text{ kJ}$) $\rightarrow$ 1. Tüketiciler ($2.000\text{ kJ}$) $\rightarrow$ 2. Tüketiciler ($200\text{ kJ}$) $\rightarrow$ 3. Tüketiciler (<b>$20\text{ kJ}$</b>)[cite: 10]. Ayrıca piramidin en üst basamağında <b>biyolojik birikim en fazladır</b>[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p><b>Ot → Tavşan → Tilki</b> besin zincirinin bulunduğu bir bölgede, 1. yıldan itibaren tilkiler avcılar tarafından yoğun şekilde avlanmıştır. Bölgedeki tavşan sayısının yıllara göre değişimi grafikte verilmiştir[cite: 10].</p>
+  s: `<p>Her basamağa bir öncekinin yaklaşık %10’u aktarılır: üreticiler 20 000 kJ → 1. tüketiciler 2 000 kJ → 2. tüketiciler 200 kJ → 3. tüketiciler <b>20 kJ</b>. Zararlı maddeler basamak basamak biriktiği için en üstteki 3. tüketicilerde <b>biyolojik birikim en fazladır</b> (D ✓).</p><p>A: 2 kJ bir basamak fazla hesaplanmış değerdir; biyokütle en fazla üreticilerdedir ✗. B: 2 000 kJ 1. tüketicilerin enerjisidir; birey sayısı en fazla olan basamak üreticilerdir ✗. C: 200 kJ 2. tüketicilerin enerjisidir; en üst basamakta birikim en az değil en fazladır ✗. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p><b>Ot → Çekirge → Kurbağa → Yılan → Kartal</b> besin zincirinin bulunduğu bir tarım alanında, çiftçilerin kurbağaları topladığı ve bölgedeki <b>kurbağa sayısının hızla azaldığı</b> biliniyor.</p>
+<p>Kurbağa sayısının azalması sonucunda bu besin zincirindeki diğer canlıların sayısında kısa vadede nasıl bir değişim beklenir?</p>`,
+  c: ["Çekirge sayısı artar; çekirgeler daha çok ot yiyeceği için ot miktarı azalır; kurbağayla beslenen yılanların sayısı ise besin bulamadığı için azalır.", "Çekirge sayısı azalır, yılan sayısı artar, ot miktarı artar.", "Bütün canlıların sayısı aynı anda artar.", "Yalnızca kartal sayısı artar, diğer canlılar etkilenmez."],
+  a: "A",
+  s: `<p>Kurbağalar azalınca onların besini olan çekirgeler daha az avlanır ve <b>sayıları artar</b>; çoğalan çekirgeler daha çok ot yediği için <b>ot azalır</b>. Kurbağayla beslenen yılanlar besin bulamaz ve <b>azalır</b> (A ✓).</p><p>B: Avcısı azalan çekirge azalmaz, artar; besini azalan yılan artmaz ✗. C: Bir halkadaki azalma bütün canlıları aynı anda artırmaz ✗. D: Zincirdeki değişiklik diğer halkaları da etkiler; yılan azalırsa kartal da etkilenir ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p><b>Ot → Tavşan → Tilki</b> besin zincirinin bulunduğu bir bölgede, 1. yıldan itibaren tilkiler avcılar tarafından yoğun şekilde avlanmıştır. Bölgedeki tavşan sayısının yıllara göre değişimi grafikte verilmiştir.</p>
 <div class="fig"><svg viewBox="0 0 380 190" width="360" role="img" aria-label="Yıllara göre tavşan sayısı grafiği">
 <line x1="45" y1="155" x2="365" y2="155" stroke="#334155" stroke-width="2"/>
 <line x1="45" y1="12" x2="45" y2="155" stroke="#334155" stroke-width="2"/>
 <polyline points="45,130 90,128 140,80 190,32 240,55 290,110 340,125" fill="none" stroke="#a16207" stroke-width="3"/>
 <line x1="90" y1="15" x2="90" y2="155" stroke="#dc2626" stroke-dasharray="4 3"/>
-<text x="95" y="26" font-size="9.5" font-weight="bold" fill="#dc2626">Tilkiler avlanmaya başlanıyor</text>
-<g font-size="10" font-weight="bold" text-anchor="middle">
+<text x="95" y="26" font-size="11" font-weight="bold" fill="#dc2626">Tilkiler avlanmaya başlanıyor</text>
+<g font-size="11" font-weight="bold" text-anchor="middle">
 <text x="45" y="170">0</text><text x="90" y="170">1</text><text x="140" y="170">2</text>
 <text x="190" y="170" fill="#dc2626">3</text><text x="240" y="170">4</text><text x="290" y="170">5</text><text x="340" y="170">6</text>
 <text x="345" y="184">Yıl</text>
 <text x="16" y="85" transform="rotate(-90 16 85)">Tavşan Sayısı</text>
 </g>
 </svg></div>
-<p>Grafikte tavşan sayısının 1–3. yıllar arasında hızla arttıktan sonra, <b>3. yıldan itibaren tekrar azalmaya başlamasının</b> en önemli nedeni aşağıdakilerden hangisidir[cite: 10]?</p>`,
-  c: [
-    `Tilkilerin avlanmasının durdurulması`,
-    `Aşırı çoğalan tavşanların bölgedeki otları hızla tüketmesi sonucunda besin yetersizliğinin ve açlığın başlaması`,
-    `Tavşanların 3. yıldan sonra fotosentez yapmayı bırakması`,
-    `Bölgedeki ayrıştırıcı canlıların tamamen yok olması`
-  ],
+<p>Grafikte tavşan sayısının 1–3. yıllar arasında hızla arttıktan sonra, <b>3. yıldan itibaren tekrar azalmaya başlamasının</b> en önemli nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Tilkilerin avlanmasının durdurulması", "Aşırı çoğalan tavşanların bölgedeki otları hızla tüketmesi sonucunda besin yetersizliğinin ve açlığın başlaması", "Tavşanların 3. yıldan sonra fotosentez yapmayı bırakması", "Bölgedeki ayrıştırıcı canlıların tamamen yok olması"],
   a: "B",
-  s: `<p>Tilkiler avlanınca tavşanların avcısı azalmış ve tavşan sayısı 3. yıla kadar aşırı artmıştır[cite: 10]. Ancak aşırı artan tavşanlar tek besin kaynakları olan <b>otları tüketince</b> bölgede besin kıtlığı başlamış ve tavşan sayısı 3. yıldan sonra hızla düşmüştür[cite: 10]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bir orman ekosistemindeki tüm <b>ayrıştırıcı canlıların (çürükçül bakteri ve mantarların)</b> yok olduğu varsayılıyor[cite: 10].</p>
-<p>Bu durumda uzun vadede ekosistemde aşağıdakilerden hangisinin gerçekleşmesi <b>beklenir</b>[cite: 10]?</p>`,
-  c: [
-    `Ölü bitki ve hayvan kalıntıları ayrıştırılamayacağı için toprağa mineral dönüşü durur ve üretici bitkilerin gelişimi olumsuz etkilenir.`,
-    `Topraktaki azot ve минераl miktarı hızla artarak bitkilerin daha hızlı büyümesini sağlar.`,
-    `Üretici canlılar fotosentez için ihtiyaç duydukları güneş ışığını alamaz.`,
-    `Besin piramidinde bir üst basamağa aktarılan enerji oranı %10’dan %50’ye çıkar.`
-  ],
+  s: `<p>Tilkiler avlanınca tavşanların avcısı azalır ve tavşan sayısı 3. yıla kadar hızla artar. Aşırı çoğalan tavşanlar besinleri olan otları tüketir; besin yetersizliği başlayınca tavşan sayısı <b>azalmaya başlar</b> (B ✓).</p><p>A: Grafik avlanmanın başladığını gösterir; durdurulduğuna dair bilgi yoktur, ayrıca avcı azalırsa tavşan azalmaz ✗. C: Tavşanlar tüketicidir, hiçbir zaman fotosentez yapmaz ✗. D: Tavşan sayısını doğrudan belirleyen ayrıştırıcılar değil besin (ot) miktarıdır ✗. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir orman ekosistemindeki tüm <b>ayrıştırıcı canlıların (çürükçül bakteri ve mantarların)</b> yok olduğu varsayılıyor.</p>
+<p>Bu durumda uzun vadede ekosistemde aşağıdakilerden hangisinin gerçekleşmesi <b>beklenir</b>?</p>`,
+  c: ["Ölü bitki ve hayvan kalıntıları ayrıştırılamayacağı için toprağa mineral dönüşü durur ve üretici bitkilerin gelişimi olumsuz etkilenir.", "Topraktaki azot ve mineral miktarı hızla artarak bitkilerin daha hızlı büyümesini sağlar.", "Üretici canlılar fotosentez için ihtiyaç duydukları güneş ışığını alamaz.", "Besin piramidinde bir üst basamağa aktarılan enerji oranı %10’dan %50’ye çıkar."],
   a: "A",
-  s: `<p>Ayrıştırıcılar ölü organizmaları ve organik atıkları parçalayarak <b>mineralleri toprağa geri kazandıran</b> canlılardır[cite: 10]. Ayrıştırıcılar yok olursa doğada ölü atıklar birikir, toprağa mineral dönüşü durur ve madde döngüsü bozulur[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Şekilde yeşil bir bitki yaprağında gerçekleşen <b>fotosentez</b> olayında yaprağa giren ve yapraktan çıkan maddeler numaralandırılmıştır (2 numaralı madde kökler tarafından topraktan alınmaktadır)[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 380 200" width="350" role="img" aria-label="Yaprakta fotosentez giren ve çıkan maddeler">
+  s: `<p>Ayrıştırıcılar ölü bitki ve hayvan kalıntılarını ve atıkları parçalayıp içlerindeki <b>mineralleri toprağa geri kazandırır</b>. Ayrıştırıcılar yok olursa kalıntılar birikir, toprağa mineral dönüşü durur ve zamanla üreticiler gereken mineralleri bulamaz (A ✓).</p><p>B: Ayrıştırma olmadığı için toprağa azot ve mineral katılımı artmaz, azalır ✗. C: Güneş ışığının bitkilere ulaşması ayrıştırıcılara bağlı değildir ✗. D: Basamaklar arasındaki enerji aktarımı ayrıştırıcıların yokluğunda artmaz ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Şekilde yeşil bir bitki yaprağında gerçekleşen <b>fotosentez</b> olayında yaprağa giren ve yapraktan çıkan maddeler numaralandırılmıştır (2 numaralı madde kökler tarafından topraktan alınmaktadır).</p>
+<div class="fig"><svg viewBox="0 0 460 205" width="440" role="img" aria-label="Yaprakta fotosentezde giren ve çıkan maddeler">
 <circle cx="40" cy="38" r="20" fill="#fbbf24"/>
-<line x1="62" y1="52" x2="112" y2="78" stroke="#f59e0b" stroke-width="2.5"/><polygon points="118,81 112,73 107,81" fill="#f59e0b"/>
-<text x="70" y="80" font-size="11" font-weight="bold" fill="#d97706">Işık</text>
+<line x1="62" y1="52" x2="112" y2="78" stroke="#f59e0b" stroke-width="2.5"/><polygon points="118,81 110,72 106,81" fill="#f59e0b"/>
+<text x="62" y="84" font-size="12" font-weight="bold" fill="#b45309">Işık</text>
 <path d="M125,112 Q195,35 290,85 Q215,160 125,112 Z" fill="#4ade80" stroke="#15803d" stroke-width="2"/>
 <line x1="125" y1="112" x2="280" y2="87" stroke="#15803d"/>
-<line x1="325" y1="38" x2="268" y2="76" stroke="#64748b" stroke-width="2.5"/><polygon points="262,80 272,79 267,71" fill="#64748b"/>
-<text x="335" y="40" font-size="12" font-weight="bold" fill="#334155">1 (Havadan)</text>
-<line x1="145" y1="180" x2="168" y2="125" stroke="#2563eb" stroke-width="2.5"/><polygon points="170,120 162,126 171,130" fill="#2563eb"/>
-<text x="115" y="192" font-size="12" font-weight="bold" fill="#1e40af">2 (Kökten)</text>
-<line x1="235" y1="115" x2="292" y2="162" stroke="#16a34a" stroke-width="2.5"/><polygon points="297,166 293,157 287,164" fill="#16a34a"/>
-<text x="305" y="172" font-size="12" font-weight="bold" fill="#166534">3 (Havaya)</text>
-<line x1="210" y1="110" x2="228" y2="175" stroke="#a16207" stroke-width="2.5"/><polygon points="230,181 232,171 223,174" fill="#a16207"/>
-<text x="235" y="192" font-size="12" font-weight="bold" fill="#92400e">4 (Depolanır)</text>
+<line x1="330" y1="40" x2="270" y2="76" stroke="#64748b" stroke-width="2.5"/><polygon points="263,80 274,80 268,71" fill="#64748b"/>
+<text x="336" y="44" font-size="12" font-weight="bold" fill="#334155">1 (havadan)</text>
+<line x1="145" y1="180" x2="168" y2="125" stroke="#2563eb" stroke-width="2.5"/><polygon points="170,119 162,127 172,130" fill="#2563eb"/>
+<text x="100" y="196" font-size="12" font-weight="bold" fill="#1e40af">2 (kökten)</text>
+<line x1="240" y1="112" x2="320" y2="150" stroke="#16a34a" stroke-width="2.5"/><polygon points="326,153 318,145 315,154" fill="#16a34a"/>
+<text x="332" y="160" font-size="12" font-weight="bold" fill="#166534">3 (havaya)</text>
+<line x1="210" y1="110" x2="228" y2="172" stroke="#a16207" stroke-width="2.5"/><polygon points="230,180 233,169 223,171" fill="#a16207"/>
+<text x="215" y="196" font-size="12" font-weight="bold" fill="#92400e">4 (depolanır)</text>
 </svg></div>
-<p>Buna göre <b>1, 2, 3 ve 4</b> numaralı maddeler aşağıdakilerin hangisinde doğru eşleştirilmiştir[cite: 10]?</p>`,
-  c: [
-    `1: Karbondioksit — 2: Su — 3: Oksijen — 4: Besin (Glikoz)`,
-    `1: Oksijen — 2: Su — 3: Karbondioksit — 4: Besin (Glikoz)`,
-    `1: Karbondioksit — 2: Besin — 3: Oksijen — 4: Su`,
-    `1: Su — 2: Karbondioksit — 3: Besin — 4: Oksijen`
-  ],
+<p>Buna göre <b>1, 2, 3 ve 4</b> numaralı maddeler aşağıdakilerin hangisinde doğru eşleştirilmiştir?</p>`,
+  c: ["1: Karbondioksit — 2: Su — 3: Oksijen — 4: Besin (Glikoz)", "1: Oksijen — 2: Su — 3: Karbondioksit — 4: Besin (Glikoz)", "1: Karbondioksit — 2: Besin — 3: Oksijen — 4: Su", "1: Su — 2: Karbondioksit — 3: Besin — 4: Oksijen"],
   a: "A",
-  s: `<p>Fotosentezde yaprak havadan <b>1: Karbondioksit ($CO_2$)</b> alır, köklerden <b>2: Su ($H_2O$)</b> gelir; kloroplastta üretilen <b>3: Oksijen ($O_2$)</b> havaya verilirken, <b>4: Besin (Glikoz)</b> bitki tarafından kullanılır veya nişasta olarak depolanır[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir saksı bitkisi iki gün karanlık ortamda bekletildikten sonra bir yaprağının orta kısmı ışık geçirmeyen alüminyum folyoyla kapatılıyor ve bitki bir gün güneş ışığında bırakılıyor. Ardından yaprak koparılıp <b>iyot çözeltisi</b> damlatıldığında; açıkta kalan kısımların <b>mavi-mor</b> renk aldığı, folyoyla kapatılan orta kısmın ise renginin değişmediği gözleniyor[cite: 10].</p>
+  s: `<p>Fotosentezde yaprak havadan <b>karbondioksit</b> (1) alır, kökten <b>su</b> (2) gelir. Üretilen <b>oksijen</b> havaya verilir (3), <b>besin</b> (glikoz) ise bitkide kullanılır ya da nişasta olarak depolanır (4) (A ✓).</p><p>B: Yaprak fotosentezde havadan oksijen değil karbondioksit alır, havaya da karbondioksit değil oksijen verir ✗. C: Kökten besin değil su alınır; depolanan madde su değil besindir ✗. D: Su kökten, karbondioksit havadan gelir; eşleştirme terstir ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir saksı bitkisi iki gün karanlık ortamda bekletildikten sonra bir yaprağının orta kısmı ışık geçirmeyen alüminyum folyoyla kapatılıyor ve bitki bir gün güneş ışığında bırakılıyor. Ardından yaprak koparılıp <b>iyot çözeltisi</b> damlatıldığında; açıkta kalan kısımların <b>mavi-mor</b> renk aldığı, folyoyla kapatılan orta kısmın ise renginin değişmediği gözleniyor.</p>
 <div class="fig"><svg viewBox="0 0 500 155" width="460" role="img" aria-label="Yaprakta alüminyum folyo ve iyot testi deneyi">
 <path d="M20,80 Q110,5 220,55 Q120,150 20,80 Z" fill="#4ade80" stroke="#15803d" stroke-width="2"/>
 <rect x="100" y="34" width="55" height="75" fill="#cbd5e1" stroke="#475569"/>
-<text x="127" y="75" font-size="9.5" font-weight="bold" text-anchor="middle">Folyo</text>
+<text x="127" y="75" font-size="11" font-weight="bold" text-anchor="middle">Folyo</text>
 <path d="M270,80 Q360,5 470,55 Q370,150 270,80 Z" fill="#a855f7" stroke="#581c87" stroke-width="2"/>
 <rect x="350" y="34" width="55" height="75" fill="#fef08a" stroke="#b45309"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
+<g font-size="11" font-weight="bold" text-anchor="middle">
 <text x="120" y="142" fill="#166534">1. Güneşte Bekletilen Yaprak</text>
 <text x="370" y="142" fill="#581c87">2. İyot Testi Sonrası (Açık kısımlar mor)</text>
 </g>
 </svg></div>
 <p>Bu deneyle ilgili;</p>
-<p>I. Fotosentezle besin (nişasta) üretilebilmesi için ışık enerjisi gereklidir[cite: 10].<br>
-II. Bitkinin deney öncesinde karanlıkta bekletilmesinin amacı, yaprakta önceden var olan nişastanın tüketilmesini sağlamaktır[cite: 10].<br>
-III. Bu deney fotosentez sonucunda oksijen gazı açığa çıktığını kanıtlamak için tasarlanmıştır[cite: 10].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [`Yalnız I`, `I ve II`, `II ve III`, `I, II ve III`],
+<p>I. Fotosentezle besin (nişasta) üretilebilmesi için ışık enerjisi gereklidir.<br>
+II. Bitkinin deney öncesinde karanlıkta bekletilmesinin amacı, yaprakta önceden var olan nişastanın tüketilmesini sağlamaktır.<br>
+III. Bu deney fotosentez sonucunda oksijen gazı açığa çıktığını kanıtlamak için tasarlanmıştır.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
   a: "B",
-  s: `<p>İyot çözeltisi <b>nişasta (besin)</b> ayıracıdır; ışık alan yerlerin mavi-mor olması fotosentez için ışığın şart olduğunu (<b>I doğru</b>) ve karanlıkta bekletmenin eski nişastayı sıfırlamak için yapıldığını (<b>II doğru</b>) gösterir[cite: 10]. Deneyde oksijen gazı ölçülmemiştir (<b>III yanlış</b>)[cite: 10]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci, su bitkisi (<i>Elodea</i>) bulunan deney tüpünü farklı uzaklıklara yerleştirdiği özdeş ışık kaynağı ile aydınlatıyor ve bitkinin 1 dakikada çıkardığı gaz kabarcıklarını sayarak tabloya kaydediyor (Su sıcaklığı ve $CO_2$ miktarı sabittir)[cite: 10].</p>
-<table class="rt">
+  s: `<p>İyot çözeltisi <b>nişastanın ayıracıdır</b>; nişasta varsa mavi-mor renk oluşur. Işık alan kısımlar mavi-mor olmuş, folyolu kısım renk değiştirmemiştir: besin (nişasta) üretimi için <b>ışık gerekir</b> (I ✓). Bitki önceden karanlıkta bekletildiği için yapraktaki eski nişasta harcanmıştır; böylece sonradan görülen nişastanın deney sırasında üretildiği anlaşılır (II ✓). Deneyde oksijen ölçülmemiş, yalnızca nişasta aranmıştır (III ✗).</p><p>A, II’yi dışarıda bıraktığı için eksiktir; C ve D yanlış olan III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Potasyum hidroksit (<b>KOH</b>) ve <b>kireç suyu</b> çözeltileri, bulundukları ortamdaki <b>karbondioksit (CO<sub>2</sub>) gazını tutma (yakalama)</b> özelliğine sahiptir. Bir araştırmacı özdeş iki saksı bitkisini hava geçirmeyen cam fanuslara koyarak aşağıdaki düzeneği hazırlıyor (Diğer tüm koşullar özdeştir).</p>
+<div class="fig"><svg viewBox="0 0 420 160" width="400" role="img" aria-label="KOH çözeltisi ile fotosentezde karbondioksitin önemi deneyi">
+<path d="M35,135 L35,45 Q35,15 95,15 Q155,15 155,45 L155,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
+<line x1="20" y1="135" x2="170" y2="135" stroke="#475569" stroke-width="3"/>
+<rect x="85" y="105" width="20" height="30" fill="#a16207"/><circle cx="95" cy="88" r="18" fill="#22c55e"/>
+<text x="95" y="152" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">1. Fanus (Normal Hava)</text>
+
+<path d="M255,135 L255,45 Q255,15 315,15 Q375,15 375,45 L375,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
+<line x1="240" y1="135" x2="390" y2="135" stroke="#475569" stroke-width="3"/>
+<rect x="280" y="105" width="20" height="30" fill="#a16207"/><circle cx="290" cy="88" r="18" fill="#22c55e"/>
+<rect x="325" y="110" width="36" height="25" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/>
+<text x="343" y="126" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">KOH</text>
+<text x="315" y="152" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">2. Fanus (KOH Çözeltisi Var)</text>
+</svg></div>
+<p>Bir süre sonra 1. fanustaki bitkinin sağlıklı büyümeye devam ettiği, <b>2. fanustaki bitkinin ise fotosentez yapamadığı ve besin üretemediği</b> gözleniyor. Bu deney hangi soruya yanıt bulmak amacıyla tasarlanmıştır?</p>`,
+  c: ["Fotosentez olayının gerçekleşmesi için karbondioksit (CO<sub>2</sub>) gazı gerekli midir?", "Fotosentez hızı ışık şiddetine bağlı mıdır?", "Fotosentez sonucunda dış ortama su buharı verilir mi?", "Bitkiler karanlık ortamda oksijenli solunum yapar mı?"],
+  a: "A",
+  s: `<p>İki fanus arasındaki tek fark, 2. fanusta karbondioksiti tutan <b>KOH</b> çözeltisinin bulunmasıdır. KOH bulunan fanustaki bitki besin üretememiştir; deney fotosentez için <b>karbondioksitin gerekli olup olmadığını</b> araştırır (A ✓).</p><p>B: Işık şiddeti iki fanusta da aynıdır ✗. C: Su buharı ölçülmemiştir ✗. D: Fanuslar karanlıkta bekletilmemiş, solunum incelenmemiştir ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci, su bitkisi (<i>Elodea</i>) bulunan deney tüpünü farklı uzaklıklara yerleştirdiği özdeş ışık kaynağı ile aydınlatıyor ve bitkinin 1 dakikada çıkardığı gaz kabarcıklarını sayarak tabloya kaydediyor (Su sıcaklığı ve CO<sub>2</sub> miktarı sabittir).</p>
+<div class="tbl"><table>
 <tr><th>Işık Kaynağının Bitkiye Uzaklığı (cm)</th><th>10 cm</th><th>20 cm</th><th>30 cm</th><th>40 cm</th></tr>
 <tr><td><b>1 Dakikada Çıkan Kabarcık Sayısı</b></td><td>40</td><td>25</td><td>12</td><td>5</td></tr>
-</table>
-<p>Bu deneyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [
-    `Işık kaynağı bitkiye yaklaştırıldıkça ışık şiddeti artmış ve fotosentez hızı (oksijen kabarcığı sayısı) artmıştır.`,
-    `Bitkinin ışık altında çıkardığı kabarcıklardaki gaz karbondioksittir.`,
-    `Deneyin bağımlı değişkeni ışık kaynağının bitkiye olan uzaklığıdır.`,
-    `Deney sırasında suyun sıcaklığının 60 °C’ye çıkarılması kabarcık sayısını iki katına çıkarır.`
-  ],
+</table></div>
+<p>Bu deneyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Işık kaynağı bitkiye yaklaştırıldıkça ışık şiddeti artmış ve fotosentez hızı (oksijen kabarcığı sayısı) artmıştır.", "Bitkinin ışık altında çıkardığı kabarcıklardaki gaz karbondioksittir.", "Deneyin bağımlı değişkeni ışık kaynağının bitkiye olan uzaklığıdır.", "Deney sırasında suyun sıcaklığının 60 °C’ye çıkarılması kabarcık sayısını iki katına çıkarır."],
   a: "A",
-  s: `<p>Lamba yaklaştıkça (40 cm $\rightarrow$ 10 cm) bitkiye ulaşan <b>ışık şiddeti artar</b> ve bitkinin fotosentezle ürettiği <b>oksijen ($O_2$) kabarcığı sayısı</b> (bağımlı değişken) artar (<b>A doğru</b>)[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir bitkide sıcaklık ve karbondioksit miktarı sabit tutularak, <b>ışık şiddetine bağlı fotosentez hızı</b> ölçülmüş ve aşağıdaki grafik elde edilmiştir[cite: 10].</p>
+  s: `<p>Lamba 40 cm’den 10 cm’ye yaklaştıkça bitkiye ulaşan <b>ışık şiddeti artar</b>; kabarcık sayısı 5 → 12 → 25 → 40 olur. Kabarcıklar fotosentezle üretilen <b>oksijendir</b>, yani fotosentez hızı artmıştır (A ✓).</p><p>B: Işıkta su bitkisinin çıkardığı kabarcıklar karbondioksit değil oksijendir ✗. C: Uzaklık araştırmacının değiştirdiği <b>bağımsız</b> değişkendir; bağımlı değişken kabarcık sayısıdır ✗. D: Sıcaklık bu deneyde sabit tutulmuştur; tablo sıcaklığın etkisi hakkında bilgi vermez, üstelik çok yüksek sıcaklık fotosentezi yavaşlatır ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir bitkide sıcaklık ve karbondioksit miktarı sabit tutularak, <b>ışık şiddetine bağlı fotosentez hızı</b> ölçülmüş ve aşağıdaki grafik elde edilmiştir.</p>
 <div class="fig"><svg viewBox="0 0 360 170" width="340" role="img" aria-label="Işık şiddeti fotosentez hızı grafiği">
 <line x1="45" y1="140" x2="340" y2="140" stroke="#334155" stroke-width="2"/>
 <line x1="45" y1="12" x2="45" y2="140" stroke="#334155" stroke-width="2"/>
 <path d="M45,140 L175,38 Q195,28 220,28 L330,28" fill="none" stroke="#16a34a" stroke-width="3"/>
 <circle cx="205" cy="28" r="4.5" fill="#dc2626"/>
 <text x="205" y="20" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">P Noktası</text>
-<text x="240" y="158" font-size="10.5" font-weight="bold">Işık Şiddeti</text>
-<text x="16" y="78" font-size="10.5" font-weight="bold" transform="rotate(-90 16 78)" text-anchor="middle">Fotosentez Hızı</text>
+<text x="240" y="158" font-size="11" font-weight="bold">Işık Şiddeti</text>
+<text x="16" y="78" font-size="11" font-weight="bold" transform="rotate(-90 16 78)" text-anchor="middle">Fotosentez Hızı</text>
 </svg></div>
-<p>Bu grafiğe göre aşağıdakilerden hangisi <b>söylenebilir</b>[cite: 10]?</p>`,
-  c: [
-    `Işık şiddeti artırıldıkça fotosentez hızı sonsuza kadar sürekli artar.`,
-    `P noktasından sonra diğer şartlar sabitken yalnızca ışık şiddetini artırmak fotosentez hızını daha fazla artırmaz (hız sabit kalır).`,
-    `Işık şiddeti azaldıkça fotosentez hızı artmaktadır.`,
-    `Bitki yalnızca P noktasından sonra fotosentez yapmaya başlamıştır.`
-  ],
+<p>Bu grafiğe göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Işık şiddeti artırıldıkça fotosentez hızı sonsuza kadar sürekli artar.", "P noktasından sonra diğer şartlar sabitken yalnızca ışık şiddetini artırmak fotosentez hızını daha fazla artırmaz (hız sabit kalır).", "Işık şiddeti azaldıkça fotosentez hızı artmaktadır.", "Bitki yalnızca P noktasından sonra fotosentez yapmaya başlamıştır."],
   a: "B",
-  s: `<p>Grafikte ışık şiddeti P noktasına gelene kadar fotosentez hızı artmış, <b>P noktasından sonra ise hız sabitlenmiştir</b> (çünkü ortamdaki $CO_2$ miktarı veya klorofil kapasitesi sınırlayıcı olmuştur) (<b>B doğru</b>)[cite: 10]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Oksijenli solunumun genel denklemi şöyledir: <b>Besin + Oksijen → Karbondioksit + Su + Enerji (ATP + Isı)</b>[cite: 10].</p>
+  s: `<p>P noktasına kadar ışık şiddeti arttıkça fotosentez hızı artmış, P’den sonra grafik <b>yatay</b> olmuştur: diğer koşullar sabitken yalnızca ışık şiddetini artırmak hızı daha fazla artırmaz (B ✓). Bu noktadan sonra hızı sınırlayan başka bir faktördür (karbondioksit miktarı, sıcaklık gibi).</p><p>A: Hız sürekli artmıyor, sabitleniyor ✗. C: Grafikte ışık şiddeti azaldıkça hız da azalır ✗. D: Fotosentez P’den önce de gerçekleşir; düşük ışık şiddetinde de hız sıfırdan büyüktür ✗. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Klorofil pigmenti, güneş ışığının farklı renklerini (dalga boylarını) farklı oranlarda soğurur; en çok <b>mor ve kırmızı</b> ışığı soğururken, <b>yeşil ışığın</b> büyük kısmını yansıtır. Özdeş K, L ve M saksı bitkileri; sıcaklık, su ve karbondioksit miktarının eşit olduğu ortamlarda sırasıyla <b>Mor, Yeşil ve Kırmızı</b> ışık altında eşit süre bekletiliyor.</p>
+<div class="fig"><svg viewBox="0 0 520 170" width="500" role="img" aria-label="Mor, yeşil ve kırmızı ışık altındaki özdeş bitkiler">
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<rect x="15" y="10" width="150" height="150" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+<rect x="60" y="20" width="60" height="14" rx="4" fill="#7c3aed"/>
+<g stroke="#7c3aed" stroke-width="2"><line x1="70" y1="38" x2="62" y2="70"/><line x1="90" y1="38" x2="90" y2="70"/><line x1="110" y1="38" x2="118" y2="70"/></g>
+<rect x="80" y="108" width="20" height="25" fill="#a16207"/><circle cx="90" cy="92" r="16" fill="#22c55e"/>
+<text x="90" y="152" fill="#6d28d9">K: mor ışık</text>
+<rect x="185" y="10" width="150" height="150" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+<rect x="230" y="20" width="60" height="14" rx="4" fill="#16a34a"/>
+<g stroke="#16a34a" stroke-width="2"><line x1="240" y1="38" x2="232" y2="70"/><line x1="260" y1="38" x2="260" y2="70"/><line x1="280" y1="38" x2="288" y2="70"/></g>
+<rect x="250" y="108" width="20" height="25" fill="#a16207"/><circle cx="260" cy="92" r="16" fill="#22c55e"/>
+<text x="260" y="152" fill="#15803d">L: yeşil ışık</text>
+<rect x="355" y="10" width="150" height="150" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.5"/>
+<rect x="400" y="20" width="60" height="14" rx="4" fill="#dc2626"/>
+<g stroke="#dc2626" stroke-width="2"><line x1="410" y1="38" x2="402" y2="70"/><line x1="430" y1="38" x2="430" y2="70"/><line x1="450" y1="38" x2="458" y2="70"/></g>
+<rect x="420" y="108" width="20" height="25" fill="#a16207"/><circle cx="430" cy="92" r="16" fill="#22c55e"/>
+<text x="430" y="152" fill="#991b1b">M: kırmızı ışık</text>
+</g>
+</svg></div>
+<p>Bu deneyle ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Deneyin bağımsız değişkeni ışığın rengi, bağımlı değişkeni ise fotosentez hızıdır; fotosentez hızı L (yeşil ışık) düzeneğinde en düşüktür.", "Yeşil yapraklar yeşil ışığın tamamını soğurduğu için en hızlı fotosentez L düzeneğinde gerçekleşir.", "Mor ve kırmızı ışıkta bitkiler fotosentez yapamaz, yalnızca solunum yapar.", "Deneyin kontrol edilen (sabit tutulan) değişkeni ışığın rengidir."],
+  a: "A",
+  s: `<p>Deneyde değiştirilen tek değişken <b>ışığın rengidir</b> (bağımsız değişken); ölçülen sonuç <b>fotosentez hızıdır</b> (bağımlı değişken). Klorofil yeşil ışığın çoğunu yansıttığı için en az yeşil ışığı kullanır; fotosentez hızı L’de en düşüktür (A ✓).</p><p>B: Yeşil ışık soğurulmaz, büyük kısmı yansıtılır ✗. C: Klorofil mor ve kırmızı ışığı en çok soğurduğu için bu ışıklarda fotosentez en hızlıdır ✗. D: Işığın rengi değiştirilen değişkendir; sabit tutulanlar sıcaklık, su ve karbondioksit miktarıdır ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir araştırmacı, <b>“Suyun (nem miktarının) fotosentez hızına etkisini”</b> incelemek için özdeş saksı bitkileriyle kontrollü bir deney yapmak istiyor.</p>
+<div class="tbl"><table>
+<tr><th>Düzenek</th><th>Toprak Özelliği</th><th>Ortam Sıcaklığı</th><th>Işık Şiddeti ve Rengi</th></tr>
+<tr><td><b>K Düzeneği</b></td><td>Nemli Toprak (Sulanan)</td><td>28 °C</td><td>Yüksek – Beyaz Işık</td></tr>
+<tr><td><b>L Düzeneği</b></td><td>Kuru Toprak</td><td>28 °C</td><td>Düşük – Yeşil Işık</td></tr>
+<tr><td><b>M Düzeneği</b></td><td>Kuru Toprak</td><td>10 °C</td><td>Yüksek – Beyaz Işık</td></tr>
+<tr><td><b>N Düzeneği</b></td><td>Nemli Toprak (Sulanan)</td><td>10 °C</td><td>Düşük – Yeşil Işık</td></tr>
+</table></div>
+<p>Araştırmacı amacına ulaşabilmek için tablodaki düzeneklerden hangisini seçmeli veya nasıl bir değişiklik yapmalıdır?</p>`,
+  c: ["K ve M düzeneklerini seçip, M düzeneğinin sıcaklığını da 28 °C yaparak yalnızca toprak neminin farklı olmasını sağlamalıdır.", "Doğrudan K ve L düzeneklerini olduğu gibi kullanmalıdır.", "Doğrudan K ve N düzeneklerini olduğu gibi kullanmalıdır.", "L ve M düzeneklerini seçmelidir."],
+  a: "A",
+  s: `<p>Kontrollü deneyde yalnızca etkisi araştırılan değişken (<b>toprak nemi</b>) farklı, diğerleri aynı olmalıdır. K ile M’de ışık (yüksek, beyaz) aynı, toprak nemi farklıdır; ancak sıcaklıklar da farklıdır (28 °C ve 10 °C). M’nin sıcaklığı 28 °C yapılırsa tek fark nem olur (A ✓).</p><p>B: K ile L’de nemin yanında ışık şiddeti ve rengi de farklıdır ✗. C: K ile N’nin ikisi de nemli topraktır; değişen sıcaklık ve ışıktır ✗. D: L ile M’nin ikisi de kuru topraktır; nemin etkisi incelenemez ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Oksijenli solunumun sözel özeti şöyledir: <b>Besin + Oksijen → Karbondioksit + Su + Enerji (ATP + Isı)</b>.</p>
 <p>Buna göre oksijenli solunumla ilgili;</p>
-<p>I. Yeşil bitkiler de hayvanlar gibi hem gece hem gündüz kesintisiz solunum yapar[cite: 10].<br>
-II. Oksijenli solunumda besindeki enerjinin tamamı (%100’ü) ATP’ye dönüştürülür, dışarıya hiç ısı enerjisi çıkmaz[cite: 10].<br>
-III. Gelişmiş (ökaryot) hücrelerde oksijenli solunum <b>mitokondri</b> organelinde gerçekleşir[cite: 10].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [`Yalnız I`, `I ve II`, `I ve III`, `I, II ve III`],
+<p>I. Yeşil bitkiler de hayvanlar gibi hem gece hem gündüz kesintisiz solunum yapar.<br>
+II. Oksijenli solunumda besindeki enerjinin tamamı (%100’ü) ATP’ye dönüştürülür, dışarıya hiç ısı enerjisi çıkmaz.<br>
+III. Gelişmiş hücrelerde oksijenli solunum <b>mitokondri</b> organelinde gerçekleşir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
   a: "C",
-  s: `<p>Tüm canlılar gece–gündüz solunum yapar (<b>I doğru</b>) ve oksijenli solunum mitokondride gerçekleşir (<b>III doğru</b>)[cite: 10]. Ancak solunumda enerjinin bir kısmı <b>ısı</b> olarak açığa çıkar (vücut sıcaklığımızı ve çimlenen tohumların bulunduğu termostaki sıcaklık artışını bu ısı sağlar; <b>II yanlış</b>)[cite: 10]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci <b>Fotosentez</b> ve <b>Oksijenli Solunum</b> olaylarını karşılaştırmak için aşağıdaki tabloyu hazırlamıştır[cite: 10].</p>
-<table class="rt">
+  s: `<p>Bitkiler de hayvanlar gibi <b>gece ve gündüz</b> kesintisiz solunum yapar (I ✓). Gelişmiş hücrelerde oksijenli solunum <b>mitokondride</b> gerçekleşir (III ✓). Solunumda besindeki enerjinin bir kısmı ATP’de depolanır, bir kısmı ise <b>ısı</b> olarak açığa çıkar; vücut sıcaklığımız ve çimlenen tohumların bulunduğu kapta sıcaklığın artması bundandır (II ✗).</p><p>A, III’ü dışarıda bıraktığı için eksiktir; B ve D yanlış olan II’yi içerir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>İçinde <b>çimlenmekte olan ıslak fasulye tohumları</b> bulunan kapalı cam şişe, ince bir boruyla <b>kireç suyu</b> bulunan beherglasa bağlanmış ve şişenin içine bir termometre yerleştirilmiştir (Kireç suyu, karbondioksit gazı ile karşılaştığında <b>bulanır</b>).</p>
+<div class="fig"><svg viewBox="0 0 420 150" width="400" role="img" aria-label="Çimlenen tohumların solunumu ve kireç suyunun bulanması deneyi">
+<rect x="40" y="45" width="95" height="85" rx="8" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
+<g fill="#15803d"><ellipse cx="62" cy="118" rx="8" ry="5"/><ellipse cx="85" cy="118" rx="8" ry="5"/><ellipse cx="110" cy="118" rx="8" ry="5"/></g>
+<line x1="65" y1="15" x2="65" y2="95" stroke="#dc2626" stroke-width="3"/>
+<circle cx="65" cy="95" r="5" fill="#dc2626"/>
+<text x="55" y="14" font-size="11" font-weight="bold" fill="#dc2626">Termometre (Sıcaklık artar!)</text>
+<path d="M105,45 L105,25 L295,25 L295,110" fill="none" stroke="#334155" stroke-width="2.5"/>
+<rect x="250" y="60" width="90" height="70" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+<circle cx="295" cy="95" r="3" fill="#fff"/><circle cx="288" cy="82" r="4" fill="#fff"/>
+<text x="87" y="144" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Çimlenen Tohumlar</text>
+<text x="295" y="144" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Kireç Suyu (Bulanır!)</text>
+</svg></div>
+<p>Bir süre sonra termometredeki sıcaklığın yükseldiği ve kireç suyunun bulandığı gözlenmiştir. Henüz yeşil yaprakları çıkmamış olan çimlenen tohumlarla ilgili bu deney aşağıdakilerden hangisini <b>kanıtlar</b>?</p>`,
+  c: ["Çimlenen tohumların oksijenli solunum yaparak dışarıya karbondioksit (CO<sub>2</sub>) gazı ve ısı enerjisi verdiğini", "Çimlenen tohumların fotosentez yaparak oksijen ürettiğini", "Tohumların çimlenirken dış ortamdan karbondioksit aldığını", "Kireç suyunun fotosentez hızını artırdığını"],
+  a: "A",
+  s: `<p>Çimlenen tohumların henüz yeşil yaprağı yoktur, fotosentez yapamaz. Kireç suyunun bulanması <b>karbondioksit</b> çıkışını, sıcaklığın artması <b>ısı</b> açığa çıktığını gösterir; bu, tohumların oksijenli solunum yaptığını kanıtlar (A ✓).</p><p>B: Fotosentez için klorofil ve ışık gerekir; deneyde oksijen de ölçülmemiştir ✗. C: Kireç suyu bulandığına göre tohumlar karbondioksit almamış, vermiştir ✗. D: Kireç suyu fotosentezi etkilemez; yalnızca karbondioksitin varlığını gösterir ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Hava geçirmeyen özdeş cam fanuslarla aşağıdaki üç düzenek kuruluyor. <b>I ve II. düzenekler ışıklı ortamda</b>, <b>III. düzenek ise karanlık ortamda</b> bekletiliyor.</p>
+<div class="fig"><svg viewBox="0 0 480 190" width="460" role="img" aria-label="Işıklı ve karanlık fanuslarda fare ve bitki deneyi">
+<path d="M40,135 L40,50 Q40,18 80,18 Q120,18 120,50 L120,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
+<line x1="28" y1="135" x2="132" y2="135" stroke="#475569" stroke-width="3"/>
+<ellipse cx="85" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="97" cy="120" r="5" fill="#64748b"/>
+<text x="80" y="156" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">I. düzenek</text>
+<text x="80" y="173" font-size="11" text-anchor="middle" fill="#1e293b">Işıklı: yalnız fare</text>
+<path d="M200,135 L200,50 Q200,18 240,18 Q280,18 280,50 L280,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
+<line x1="188" y1="135" x2="292" y2="135" stroke="#475569" stroke-width="3"/>
+<rect x="212" y="110" width="16" height="25" fill="#a16207"/><circle cx="220" cy="95" r="14" fill="#22c55e"/>
+<ellipse cx="255" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="267" cy="120" r="5" fill="#64748b"/>
+<text x="240" y="156" font-size="12" font-weight="bold" text-anchor="middle" fill="#166534">II. düzenek</text>
+<text x="240" y="173" font-size="11" text-anchor="middle" fill="#166534">Işıklı: bitki + fare</text>
+<rect x="348" y="10" width="104" height="125" fill="#1e293b" opacity=".22"/>
+<path d="M360,135 L360,50 Q360,18 400,18 Q440,18 440,50 L440,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
+<line x1="348" y1="135" x2="452" y2="135" stroke="#475569" stroke-width="3"/>
+<rect x="372" y="110" width="16" height="25" fill="#a16207"/><circle cx="380" cy="95" r="14" fill="#22c55e"/>
+<ellipse cx="415" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="427" cy="120" r="5" fill="#64748b"/>
+<text x="400" y="156" font-size="12" font-weight="bold" text-anchor="middle" fill="#991b1b">III. düzenek</text>
+<text x="400" y="173" font-size="11" text-anchor="middle" fill="#991b1b">Karanlık: bitki + fare</text>
+</svg></div>
+<p>Deney sonucunda <b>II. düzenekteki farenin uzun süre rahatça yaşadığı</b>, I ve III. düzeneklerde ise kısa sürede oksijenin azaldığı ve farelerin zorlandığı gözlenmiştir. Üstelik III. düzenekte oksijen, I. düzenektekinden <b>daha önce</b> azalmıştır. Bunun nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Bitkiler ışıklı ortamda (II) fotosentezle farenin solunumu için oksijen üretirken; karanlık ortamda (III) fotosentez yapamaz, fareyle birlikte solunum yaparak oksijen tüketir.", "Bitkiler yalnızca karanlık ortamda oksijen üretir.", "Işıklı ortamda fareler fotosentez yaparak kendi oksijenini üretir.", "Bitkiler hiçbir zaman oksijenli solunum yapmaz."],
+  a: "A",
+  s: `<p>II. düzenekte bitki ışıkta <b>fotosentez</b> yaparak farenin solunumu için oksijen üretir, farenin verdiği karbondioksiti de kullanır; bu yüzden fare uzun süre yaşar. III. düzenekte ışık olmadığı için bitki fotosentez yapamaz ama <b>solunuma devam eder</b>; fanustaki oksijeni fareyle birlikte tükettiği için oksijen I. düzenekten bile önce azalır (A ✓).</p><p>B: Bitkiler oksijeni ışıkta, fotosentezle üretir; karanlıkta üretmez ✗. C: Fareler tüketicidir, fotosentez yapmaz ✗. D: Bitkiler gece ve gündüz oksijenli solunum yapar ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Yeşil bir bitki yaprağının 24 saat (1 gün) boyunca gerçekleştirdiği <b>Fotosentez Hızı</b> ve <b>Solunum Hızı</b> aşağıdaki grafikte karşılaştırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 420 180" width="420" role="img" aria-label="24 saatlik fotosentez ve solunum hızı grafiği">
+<line x1="45" y1="140" x2="395" y2="140" stroke="#334155" stroke-width="2"/>
+<line x1="45" y1="15" x2="45" y2="140" stroke="#334155" stroke-width="2"/>
+<line x1="45" y1="106.4" x2="381" y2="106.4" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M129,140 Q213,-80 297,140" fill="none" stroke="#16a34a" stroke-width="3"/>
+<circle cx="143" cy="106.4" r="4" fill="#1e40af"/><circle cx="283" cy="106.4" r="4" fill="#1e40af"/>
+<g stroke="#334155" stroke-width="1.5"><line x1="45" y1="140" x2="45" y2="145"/><line x1="129" y1="140" x2="129" y2="145"/><line x1="213" y1="140" x2="213" y2="145"/><line x1="297" y1="140" x2="297" y2="145"/><line x1="381" y1="140" x2="381" y2="145"/></g>
+<g font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">
+<text x="45" y="158">00.00</text><text x="129" y="158">06.00</text><text x="213" y="158">12.00</text><text x="297" y="158">18.00</text><text x="381" y="158">24.00</text>
+<text x="215" y="175">Saat</text>
+<text x="108" y="100" fill="#1e40af">K (07.00)</text>
+<text x="322" y="100" fill="#1e40af">L (17.00)</text>
+<text x="213" y="22" fill="#16a34a">Fotosentez hızı</text>
+<text x="350" y="125" fill="#dc2626">Solunum hızı</text>
+<text x="18" y="80" transform="rotate(-90 18 80)">Olayın hızı</text>
+</g>
+</svg></div>
+<p>Grafiğe göre bu bitkiyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Gece saatlerinde (00.00–06.00 arası) ışık olmadığı için fotosentez hızı sıfırdır; bitki yalnızca solunum yapar.", "Öğle saat 12.00’de fotosentez hızı solunum hızından çok daha yüksek olduğu için bitki dış ortama bol miktarda oksijen verir.", "Sabah 07.00 (K) ve akşam 17.00 (L) anlarında bitkinin fotosentez hızı ile solunum hızı birbirine eşittir (ürettiği oksijen tükettiği oksijene eşittir).", "Öğle saat 12.00’de fotosentez en üst seviyeye çıktığı için bitkinin solunumu tamamen durmuştur."],
+  a: "D",
+  s: `<p>Grafikte solunum hızı (kırmızı çizgi) 24 saat boyunca sıfırdan büyüktür; öğle saatinde fotosentez en yüksek olsa da <b>solunum durmaz</b>. Bu yüzden yanlış olan D’dir.</p><p>A doğrudur: 00.00–06.00 arasında fotosentez hızı sıfırdır, bitki yalnızca solunum yapar. B doğrudur: 12.00’de fotosentez solunumdan çok fazladır, bitki dışarıya oksijen verir. C doğrudur: K ve L noktalarında iki çizgi kesişir, hızlar eşittir. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki özet tablosunda “Enerji Dönüşümleri ve Çevre Bilimi” ünitesiyle ilgili dört temel bilimsel kural verilmiştir:</p>
+<div class="tbl"><table>
+<tr><th>Kural No</th><th>Bilimsel Kural</th></tr>
+<tr><td><b>1</b></td><td>Besin piramidinde üreticiden son tüketiciye doğru gidildikçe aktarılan enerji, toplam biyokütle ve birey sayısı azalırken; dokularda biriken zehir miktarı (biyolojik birikim) artar.</td></tr>
+<tr><td><b>2</b></td><td>Ayrıştırıcılar (bakteri ve mantarlar) besin piramidinin tüm basamaklarında görev yaparak organik atıkları inorganik maddelere dönüştürür.</td></tr>
+<tr><td><b>3</b></td><td>Yeşil bitkiler gündüzleri yalnızca fotosentez, geceleri ise yalnızca oksijenli solunum yapar.</td></tr>
+<tr><td><b>4</b></td><td>Fotosentezde ışık enerjisi kimyasal bağ enerjisine dönüştürülerek besinde depolanır; solunumda ise besindeki enerji ATP’ye dönüştürülür.</td></tr>
+</table></div>
+<p>Tablodaki numaralanmış kurallardan hangisi <b>yanlıştır</b>?</p>`,
+  c: ["1", "2", "3", "4"],
+  a: "C",
+  s: `<p>1. kural doğrudur: piramitte yukarı çıkıldıkça enerji, biyokütle ve birey sayısı azalır, biyolojik birikim artar. 2. kural doğrudur: ayrıştırıcılar her basamaktaki canlıların atık ve kalıntılarını ayrıştırır. 4. kural doğrudur.</p><p>3. kural yanlıştır: yeşil bitkiler gündüz fotosentezle birlikte <b>solunum da yapar</b>; solunum gece ve gündüz kesintisiz sürer. Yanlış kural 3’tür. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci <b>Fotosentez</b> ve <b>Oksijenli Solunum</b> olaylarını karşılaştırmak için aşağıdaki tabloyu hazırlamıştır.</p>
+<div class="tbl"><table>
 <tr><th>Karşılaştırılan Özellik</th><th>Fotosentez</th><th>Oksijenli Solunum</th></tr>
 <tr><td><b>1. Gerçekleştiği Organel</b></td><td>Kloroplast</td><td>Mitokondri</td></tr>
 <tr><td><b>2. Gerçekleşme Zamanı</b></td><td>Yalnızca ışıklı ortamda</td><td>Gece ve gündüz (Her zaman)</td></tr>
 <tr><td><b>3. Gaz Alışverişi</b></td><td>Oksijen alınır, karbondioksit verilir</td><td>Karbondioksit alınır, oksijen verilir</td></tr>
 <tr><td><b>4. Enerji Dönüşümü</b></td><td>Işık enerjisi kimyasal bağ enerjisine dönüşür</td><td>Kimyasal bağ enerjisi ATP’ye dönüşür</td></tr>
-</table>
-<p>Öğrenci tablodaki numaralanmış satırlardan hangisini <b>hatalı (ters)</b> doldurmuştur[cite: 10]?</p>`,
-  c: [`1. Gerçekleştiği Organel`, `2. Gerçekleşme Zamanı`, `3. Gaz Alışverişi`, `4. Enerji Dönüşümü`],
+</table></div>
+<p>Öğrenci tablodaki numaralanmış satırlardan hangisini <b>hatalı (ters)</b> doldurmuştur?</p>`,
+  c: ["1. Gerçekleştiği Organel", "2. Gerçekleşme Zamanı", "3. Gaz Alışverişi", "4. Enerji Dönüşümü"],
   a: "C",
-  s: `<p><b>3. satırda</b> gaz alışverişi ters yazılmıştır: Fotosentezde <b>karbondioksit ($CO_2$) alınır ve oksijen ($O_2$) verilir</b>; oksijenli solunumda ise <b>oksijen alınır ve karbondioksit verilir</b>[cite: 10]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci üç özdeş cam şişeye eşit miktarda <b>bira mayası mantarı, şeker ve su</b> koyarak şişelerin ağzına özdeş esnek balonlar geçiriyor. Şişeleri <b>5 °C, 35 °C ve 80 °C</b> sıcaklıktaki su banyolarında bir saat beklettiğinde balonların son durumları şekildeki gibi oluyor[cite: 10].</p>
+  s: `<p>Fotosentezde karbondioksit <b>alınır</b>, oksijen <b>verilir</b>; oksijenli solunumda ise oksijen alınır, karbondioksit verilir. Öğrenci 3. satırı ters yazmıştır (C ✓).</p><p>1. satır doğrudur: fotosentez kloroplastta, oksijenli solunum mitokondride gerçekleşir. 2. satır doğrudur: fotosentez ışık varken, solunum her zaman yapılır. 4. satır doğrudur: fotosentezde ışık enerjisi kimyasal enerjiye, solunumda besindeki enerji ATP’ye dönüşür. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci üç özdeş cam şişeye eşit miktarda <b>bira mayası mantarı, şeker ve su</b> koyarak şişelerin ağzına özdeş esnek balonlar geçiriyor. Şişeleri <b>5 °C, 35 °C ve 80 °C</b> sıcaklıktaki su banyolarında bir saat beklettiğinde balonların son durumları şekildeki gibi oluyor.</p>
 <div class="fig"><svg viewBox="0 -25 400 215" width="360" role="img" aria-label="Farklı sıcaklıklarda maya ve balon şişme deneyi">
 <path d="M45,160 L45,90 Q45,75 60,70 L60,50 L80,50 L80,70 Q95,75 95,90 L95,160 Z" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
 <ellipse cx="70" cy="40" rx="14" ry="12" fill="#f472b6" stroke="#be185d"/>
@@ -318,42 +940,21 @@ III. Gelişmiş (ökaryot) hücrelerde oksijenli solunum <b>mitokondri</b> organ
 <path d="M322,50 Q330,36 338,50" fill="#f472b6" stroke="#be185d"/>
 <text x="330" y="180" font-size="11" font-weight="bold" text-anchor="middle">3. Şişe (80 °C)</text>
 </svg></div>
-<p>Bu deneyle ilgili aşağıdaki yorumlardan hangisi <b>yanlıştır</b>[cite: 10]?</p>`,
-  c: [
-    `Balonların şişmesini sağlayan gaz, etil alkol fermantasyonu sonucunda açığa çıkan karbondioksit (CO₂) gazıdır.`,
-    `Maya mantarlarının fermantasyon hızı ortam sıcaklığından etkilenmektedir (en uygun sıcaklık 35 °C’dir).`,
-    `80 °C’deki şişede aşırı sıcaklık nedeniyle maya mantarlarının yapısı bozulmuş (ölmüş) ve gaz çıkışı olmamıştır.`,
-    `Maya mantarları bu deneyde oksijenli solunum ve fotosentez yaparak oksijen gazı üretmiştir.`
-  ],
+<p>Bu deneyle ilgili aşağıdaki yorumlardan hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Balonların şişmesini sağlayan gaz, etil alkol fermantasyonu sonucunda açığa çıkan karbondioksit (CO<sub>2</sub>) gazıdır.", "Maya mantarlarının gaz üretimi ortam sıcaklığından etkilenmektedir; denenen sıcaklıklar arasında en fazla gaz 35 °C’de üretilmiştir.", "80 °C’deki şişede aşırı sıcaklık nedeniyle maya mantarlarının yapısı bozulmuş (ölmüş) ve gaz çıkışı olmamıştır.", "Maya mantarları bu deneyde oksijenli solunum ve fotosentez yaparak oksijen gazı üretmiştir."],
   a: "D",
-  s: `<p>Maya mantarları <b>fotosentez yapmaz</b>; kapalı şişede şekeri parçalayarak <b>oksijensiz solunum (etil alkol fermantasyonu)</b> yapar ve <b>$CO_2$ gazı</b> çıkararak balonu şişirir (<b>D yanlıştır</b>)[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Ekmek yapımında hamura maya eklenir ve hamur ılık bir ortamda bekletilir. Bir süre sonra hamurun kabardığı ve içinde gözenekler oluştuğu görülür[cite: 10].</p>
-<p>Hamurun kabarmasını sağlayan <b>gaz</b> ve bu gazı oluşturan <b>biyolojik olay</b> aşağıdakilerin hangisinde doğru verilmiştir[cite: 10]?</p>`,
-  c: [
-    `Oksijen — Fotosentez`,
-    `Karbondioksit — Oksijensiz solunum (Etil alkol fermantasyonu)`,
-    `Azot — Azot bağlanması`,
-    `Laktik asit — Oksijenli solunum`
-  ],
+  s: `<p>Mayalar şişedeki şekeri oksijensiz ortamda parçalayarak <b>etil alkol fermantasyonu</b> yapar; açığa çıkan karbondioksit balonları şişirir (A doğru yorum). Balon 35 °C’de en büyük, 5 °C’de küçüktür; olayın hızı sıcaklıktan etkilenir (B doğru yorum). 80 °C’de balon şişmemiştir; aşırı sıcaklık mayalara zarar vermiştir (C doğru yorum).</p><p>Maya bir mantardır, klorofili yoktur; <b>fotosentez yapmaz</b> ve bu deneyde oksijen üretmez. Bu nedenle yanlış yorum D’dir. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Ekmek yapımında hamura maya eklenir ve hamur ılık bir ortamda bekletilir. Bir süre sonra hamurun kabardığı ve içinde gözenekler oluştuğu görülür.</p>
+<p>Hamurun kabarmasını sağlayan <b>gaz</b> ve bu gazı oluşturan <b>biyolojik olay</b> aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["Oksijen — Fotosentez", "Karbondioksit — Oksijensiz solunum (Etil alkol fermantasyonu)", "Azot — Azot bağlanması", "Laktik asit — Oksijenli solunum"],
   a: "B",
-  s: `<p>Hamurdaki maya mantarları <b>etil alkol fermantasyonu (oksijensiz solunum)</b> yapar; açığa çıkan <b>karbondioksit ($CO_2$)</b> gazı hamuru kabartır[cite: 10]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Yoğun bir koşu antrenmanından sonra Mert’in bacak kaslarında yorgunluk ve ağrı oluşmuştur. Antrenörü, koşu sırasında bacak kaslarına kan yoluyla yeterli oksijen yetişemediğini söylemiştir[cite: 10].</p>
-<p>Bu durumun bilimsel açıklaması aşağıdakilerden hangisidir[cite: 10]?</p>`,
-  c: [
-    `İnsan kas hücreleri yalnızca oksijensiz solunum yapabilen hücrelerdir.`,
-    `Oksijensiz solunumda, oksijenli solunuma göre çok daha fazla ATP enerjisi üretilir.`,
-    `Oksijen yetersiz kaldığında çizgili kas hücreleri laktik asit fermantasyonu (oksijensiz solunum) yaparak acil enerji üretir; biriken laktik asit yorgunluk verir.`,
-    `Kaslarda laktik asit fermantasyonu sırasında yoğun miktarda karbondioksit gazı çıkışı olur.`
-  ],
+  s: `<p>Hamurdaki maya mantarları şekeri <b>oksijensiz solunumla (etil alkol fermantasyonu)</b> parçalar; açığa çıkan <b>karbondioksit</b> gazı hamurda gözenekler oluşturup hamuru kabartır (B ✓).</p><p>A: Mayalar fotosentez yapmaz, oksijen üretmez ✗. C: Azot bağlanması bakterilerin havadaki azotu toprağa kazandırmasıdır; hamurla ilgisi yoktur ✗. D: Laktik asit bir gaz değildir ve oksijenli solunumun değil laktik asit fermantasyonunun ürünüdür ✗. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Yoğun bir koşu antrenmanından sonra Mert’in bacak kaslarında yorgunluk ve ağrı oluşmuştur. Antrenörü, koşu sırasında bacak kaslarına kan yoluyla yeterli oksijen yetişemediğini söylemiştir.</p>
+<p>Bu durumun bilimsel açıklaması aşağıdakilerden hangisidir?</p>`,
+  c: ["İnsan kas hücreleri yalnızca oksijensiz solunum yapabilen hücrelerdir.", "Oksijensiz solunumda, oksijenli solunuma göre çok daha fazla ATP enerjisi üretilir.", "Oksijen yetersiz kaldığında çizgili kas hücreleri laktik asit fermantasyonu (oksijensiz solunum) yaparak acil enerji üretir; biriken laktik asit yorgunluk verir.", "Kaslarda laktik asit fermantasyonu sırasında yoğun miktarda karbondioksit gazı çıkışı olur."],
   a: "C",
-  s: `<p>Çizgili kas hücrelerimiz normalde oksijenli solunum yapar; ancak yoğun egzersizde oksijen yetersiz kalınca takviye olarak <b>laktik asit fermantasyonu</b> yapar ve biriken <b>laktik asit</b> yorgunluk hissi verir (Laktik asit fermantasyonunda $CO_2$ gazı çıkmaz!) (<b>C doğru</b>)[cite: 10]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Şekilde doğadaki <b>su döngüsünün</b> temel aşamaları numaralandırılarak gösterilmiştir[cite: 10].</p>
+  s: `<p>Çizgili kas hücreleri normalde oksijenli solunum yapar. Yoğun egzersizde oksijen yetersiz kalınca enerji ihtiyacının bir kısmını <b>laktik asit fermantasyonuyla</b> karşılar; biriken laktik asit yorgunluk ve ağrı hissi oluşturur (C ✓).</p><p>A: Kas hücreleri oksijenli solunum da yapar ✗. B: Oksijensiz solunumda oksijenli solunuma göre çok daha <b>az</b> ATP üretilir ✗. D: Laktik asit fermantasyonunda karbondioksit oluşmaz ✗. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Şekilde doğadaki <b>su döngüsünün</b> temel aşamaları numaralandırılarak gösterilmiştir.</p>
 <div class="fig"><svg viewBox="0 0 420 185" width="400" role="img" aria-label="Su döngüsü aşamaları">
 <rect x="0" y="140" width="200" height="45" fill="#60a5fa"/>
 <path d="M200,185 L200,140 Q260,130 300,100 L420,100 L420,185 Z" fill="#a3a3a3"/>
@@ -371,387 +972,831 @@ III. Gelişmiş (ökaryot) hücrelerde oksijenli solunum <b>mitokondri</b> organ
 <line x1="300" y1="130" x2="225" y2="148" stroke="#0ea5e9" stroke-width="2.5"/><polygon points="220,150 230,152 227,143" fill="#0ea5e9"/>
 <text x="260" y="156" font-size="12" font-weight="bold" fill="#0369a1">5</text>
 </svg></div>
-<p>Buna göre numaralı aşamalarla ilgili aşağıdaki eşleştirmelerden hangisi <b>yanlıştır</b>[cite: 10]?</p>`,
-  c: [
-    `1 — Buharlaşma (Denizden yükselen su buharı)`,
-    `2 — Terleme (Bitkilerin havaya su buharı vermesi)`,
-    `3 — Yağış`,
-    `5 — Yüzey ve yer altı akışı`
-  ],
+<p>Buna göre numaralı aşamalarla ilgili aşağıdaki eşleştirmelerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["1 — Buharlaşma (Denizden yükselen su buharı)", "2 — Terleme (Bitkilerin havaya su buharı vermesi)", "3 — Yağış", "5 — Yüzey ve yer altı akışı"],
   a: "C",
-  s: `<p>Görselde <b>3 numara</b> su buharının atmosferde soğuyarak bulutları oluşturmasını (<b>yoğuşma</b>) göstermektedir; <b>yağış ise 4 numaralı</b> aşamadır[cite: 10]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir çiftçi, tarlasına bir yıl buğday, ertesi yıl ise <b>yonca veya fasulye (baklagil)</b> ekerek nöbetleşe (dönüşümlü) tarım yapmaktadır. Baklagillerin kök yumrularında, havadaki serbest azotu bağlayarak toprağa kazandıran <b>azot bağlayıcı bakteriler</b> yaşamaktadır[cite: 10].</p>
-<p>Çiftçinin uyguladığı bu yöntemle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [
-    `Bitkiler havadaki serbest azot gazını (N₂) yapraklarındaki gözeneklerden doğrudan alıp kullanabilir.`,
-    `Yonca (baklagil) ekimi, toprağın azotlu mineraller bakımından doğal yolla zenginleşmesini sağlayarak yapay gübre ihtiyacını azaltır.`,
-    `Baklagil ekiminin temel amacı topraktaki karbondioksit gazını artırmaktır.`,
-    `Azot, canlıların protein ve DNA yapısında hiç kullanılmayan bir elementtir.`
-  ],
+  s: `<p>1: Denizden su buharının yükselmesi (<b>buharlaşma</b>). 2: Bitkilerin yapraklarından su buharı vermesi (<b>terleme</b>). 3: Su buharının soğuyup yoğuşmasıyla oluşan bulutların karaya taşınması (<b>yoğuşma</b>). 4: Buluttan düşen su (<b>yağış</b>). 5: Karadan denize akış (<b>yüzey ve yer altı akışı</b>).</p><p>3 numara yağış değildir; yağış 4 numaradır. A, B ve D doğru eşleştirilmiştir; yanlış eşleştirme C’dir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir çiftçi, tarlasına bir yıl buğday, ertesi yıl ise <b>yonca veya fasulye (baklagil)</b> ekerek nöbetleşe (dönüşümlü) tarım yapmaktadır. Baklagillerin kök yumrularında, havadaki serbest azotu bağlayarak toprağa kazandıran <b>azot bağlayıcı bakteriler</b> yaşamaktadır.</p>
+<p>Çiftçinin uyguladığı bu yöntemle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Bitkiler havadaki serbest azot gazını (N<sub>2</sub>) yapraklarındaki gözeneklerden doğrudan alıp kullanabilir.", "Yonca (baklagil) ekimi, toprağın azotlu mineraller bakımından doğal yolla zenginleşmesini sağlayarak yapay gübre ihtiyacını azaltır.", "Baklagil ekiminin temel amacı topraktaki karbondioksit gazını artırmaktır.", "Azot, canlıların protein ve DNA yapısında hiç kullanılmayan bir elementtir."],
   a: "B",
-  s: `<p>Hiçbir bitki havadaki serbest azot gazını doğrudan kullanamaz[cite: 10]. Baklagillerin köklerinde yaşayan <b>azot bağlayıcı bakteriler</b> havadaki azotu toprağa bağlar ve toprağı azot bakımından zenginleştirir (<b>B doğru</b>)[cite: 10]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Hava geçirmeyen özdeş cam fanuslarla aşağıdaki üç düzenek kuruluyor. <b>I ve II. düzenekler ışıklı ortamda</b>, <b>III. düzenek ise karanlık ortamda</b> bekletiliyor[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 400 165" width="380" role="img" aria-label="Işıklı ve karanlık fanuslarda fare ve bitki deneyi">
-<path d="M20,135 L20,50 Q20,18 60,18 Q100,18 100,50 L100,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
-<line x1="10" y1="135" x2="110" y2="135" stroke="#475569" stroke-width="3"/>
-<ellipse cx="70" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="82" cy="120" r="5" fill="#64748b"/>
-<text x="60" y="154" font-size="10.5" font-weight="bold" text-anchor="middle">I (Işıklı - Sadece Fare)</text>
-
-<path d="M145,135 L145,50 Q145,18 185,18 Q225,18 225,50 L225,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
-<line x1="135" y1="135" x2="235" y2="135" stroke="#475569" stroke-width="3"/>
-<rect x="155" y="110" width="16" height="25" fill="#a16207"/><circle cx="163" cy="95" r="14" fill="#22c55e"/>
-<ellipse cx="200" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="212" cy="120" r="5" fill="#64748b"/>
-<text x="185" y="154" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">II (Işıklı - Bitki + Fare)</text>
-
-<rect x="260" y="12" width="100" height="123" fill="#1e293b" opacity=".2"/>
-<path d="M270,135 L270,50 Q270,18 310,18 Q350,18 350,50 L350,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
-<line x1="260" y1="135" x2="360" y2="135" stroke="#475569" stroke-width="3"/>
-<rect x="280" y="110" width="16" height="25" fill="#a16207"/><circle cx="288" cy="95" r="14" fill="#22c55e"/>
-<ellipse cx="325" cy="125" rx="14" ry="9" fill="#64748b"/><circle cx="337" cy="120" r="5" fill="#64748b"/>
-<text x="310" y="154" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">III (Karanlık - Bitki + Fare)</text>
+  s: `<p>Baklagillerin köklerindeki <b>azot bağlayıcı bakteriler</b> havadaki azotu bitkilerin kullanabileceği azotlu bileşiklere dönüştürür; toprak doğal yolla azotça zenginleşir ve yapay gübre ihtiyacı azalır (B ✓).</p><p>A: Bitkiler havadaki azot gazını yapraklarıyla doğrudan kullanamaz; azotu kökleriyle topraktaki azotlu bileşiklerden alır ✗. C: Baklagil ekiminin amacı toprağa karbondioksit değil azot kazandırmaktır ✗. D: Azot, proteinlerin ve DNA’nın yapısında bulunur ✗. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Doğadaki <b>Karbon ve Oksijen Döngüsü</b> aşağıdaki şemada özetlenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 165" width="560" role="img" aria-label="Karbon ve oksijen döngüsü şeması">
+<rect x="190" y="10" width="180" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="280" y="31" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Atmosferdeki CO₂ gazı</text>
+<rect x="15" y="105" width="170" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="100" y="124" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Yeşil bitkiler</text>
+<text x="100" y="139" font-size="11" fill="#166534" text-anchor="middle">(besin ve O₂ üretir)</text>
+<rect x="365" y="105" width="180" height="40" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="455" y="122" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">Canlılar, ayrıştırıcılar</text>
+<text x="455" y="138" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">ve fosil yakıtlar</text>
+<path d="M190,26 Q100,26 100,98" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+<polygon points="100,104 95,94 105,94" fill="#16a34a"/>
+<text x="110" y="74" font-size="11" font-weight="bold" fill="#166534">I. olay (fotosentez)</text>
+<path d="M455,105 Q455,26 376,26" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<polygon points="370,26 380,21 380,31" fill="#dc2626"/>
+<text x="436" y="74" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="end">II. olaylar (solunum, yanma)</text>
+<line x1="185" y1="125" x2="358" y2="125" stroke="#475569" stroke-width="2"/>
+<polygon points="364,125 354,120 354,130" fill="#475569"/>
+<text x="272" y="117" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">besin ve O₂ aktarımı</text>
 </svg></div>
-<p>Deney sonucunda <b>II. düzenekteki farenin çok uzun süre yaşadığı</b>, I ve III. düzeneklerdeki farelerin ise kısa sürede havasızlıktan öldüğü gözlenmiştir[cite: 10]. Hatta III. düzenekteki farenin I. düzenektekinden bile daha erken bayıldığı fark edilmiştir. Bunun nedeni aşağıdakilerden hangisidir[cite: 10]?</p>`,
-  c: [
-    `Bitkiler ışıklı ortamda (II) fotosentezle farenin solunumu için oksijen üretirken; karanlık ortamda (III) fotosentez yapamaz ve fareyle birlikte oksijen tüketip solunum yapar.`,
-    `Bitkiler yalnızca karanlık ortamda oksijen üretir.`,
-    `Işıklı ortamda fareler fotosentez yaparak kendi oksijenini üretir.`,
-    `Bitkiler hiçbir zaman oksijenli solunum yapmaz.`
-  ],
-  a: "A",
-  s: `<p>II. düzenekte bitki ışıkta <b>fotosentez</b> yaparak fareye $O_2$ üretir, farenin çıkardığı $CO_2$’yi ise kullanır[cite: 10]. III. düzenekte ise ortam <b>karanlık</b> olduğu için bitki fotosentez yapamaz; üstelik bitki de solunum yaparak fanustaki oksijeni fareyle birlikte tüketir (<b>A doğru</b>)[cite: 10]. Cevap <b>A</b>.</p>`
-},
-  {
-  q: `<p><b>Sürdürülebilir kalkınma</b>, bugünün ihtiyaçlarının gelecek nesillerin ihtiyaçlarını ve doğal kaynaklarını tehlikeye atmadan karşılanmasıdır.</p>
-<p>Buna göre aşağıdaki uygulamalardan hangisi sürdürülebilir kalkınma ilkesine <b>uygun değildir</b>[cite: 10]?</p>`,
-  c: [
-    `Tarım arazilerinde vahşi (salma) sulama yerine su tasarrufu sağlayan damla sulama yönteminin kullanılması`,
-    `Binaların çatılarında yağmur suyunun toplanarak bahçe sulamasında değerlendirilmesi`,
-    `Daha fazla tarım arazisi elde etmek amacıyla ormanların kesilerek tarlaya dönüştürülmesi`,
-    `Kamu binalarının ve sokak lambalarının elektrik ihtiyacının güneş panelleriyle karşılanması`
-  ],
+<p>Şemadaki karbon ve oksijen döngüsüyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Atmosferdeki karbondioksit (CO<sub>2</sub>) miktarını azaltıp oksijen (O<sub>2</sub>) miktarını artıran temel olay I numaralı fotosentez olayıdır.", "Solunum, ayrıştırıcıların faaliyeti ve fosil yakıtların yanması (II. olaylar) atmosferdeki CO<sub>2</sub> miktarını artırır.", "Fosil yakıt tüketiminin artması ve ormanların tahrip edilmesi atmosferde CO<sub>2</sub> birikimine (sera etkisine ve küresel ısınmaya) neden olur.", "Bitkiler yalnızca I. olayı (fotosentez) gerçekleştirir, II. olaylardan olan solunumu hiçbir zaman gerçekleştirmez."],
+  a: "D",
+  s: `<p>I numaralı olay <b>fotosentezdir</b>: havadan CO<sub>2</sub> alınır, O<sub>2</sub> verilir (A doğru). Solunum, ayrıştırıcıların faaliyeti ve fosil yakıtların yanması havaya CO<sub>2</sub> verir (B doğru). Fosil yakıt kullanımı artıp ormanlar azalınca havada CO<sub>2</sub> birikir, sera etkisi güçlenir (C doğru).</p><p>Bitkiler ışıkta fotosentezle birlikte <b>solunum da yapar</b>, karanlıkta yalnızca solunum yapar. “Bitkiler solunumu hiçbir zaman gerçekleştirmez” ifadesi yanlıştır (D). Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda doğadaki <b>Azot Döngüsü</b> sırasında görev yapan faktörler ve işlevleri verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>No</th><th>Görev Yapan Faktör / Canlı</th><th>Azot Döngüsündeki İşlevi</th></tr>
+<tr><td><b>1</b></td><td><b>Yıldırım ve Şimşek Olayları</b></td><td>Havadaki serbest azotun yağmurla toprağa bağlanmasını sağlar.</td></tr>
+<tr><td><b>2</b></td><td><b>Azot Bağlayıcı Bakteriler</b> (Baklagil köklerinde)</td><td>Havadaki azot gazını bağlayarak bitkilerin kullanabileceği azot tuzlarına dönüştürür.</td></tr>
+<tr><td><b>3</b></td><td><b>Ayrıştırıcılar</b> (Çürükçül bakteri ve mantarlar)</td><td>Ölü canlılardaki proteinleri parçalayarak toprağa azotlu bileşikler kazandırır.</td></tr>
+<tr><td><b>4</b></td><td><b>Azot Ayrıştırıcı Bakteriler</b></td><td>Topraktaki fazla azot bileşiklerini tekrar havaya serbest azot gazı (N<sub>2</sub>) olarak geri verir.</td></tr>
+</table></div>
+<p>Tablodaki bilgiler ve azot döngüsü dikkate alındığında aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Havadaki azotun toprağa bağlanmasında hem canlı faktörler (bakteriler) hem de cansız doğa olayları (yıldırım, şimşek) etkilidir.", "Bitkiler topraktan aldıkları azotlu bileşikleri protein ve DNA sentezinde kullanır; hayvanlar ise azot ihtiyacını bitkileri veya diğer hayvanları yiyerek karşılar.", "Topraktaki azotun yeniden atmosfere dönmesinde azot ayrıştırıcı bakteriler rol oynar.", "İnsanlar ve hayvanlar soluk alıp verirken akciğerleriyle havadaki azot gazını doğrudan kana geçirip protein üretir."],
+  a: "D",
+  s: `<p>A doğrudur: tabloda hem cansız bir olay (yıldırım, şimşek) hem de canlılar (azot bağlayıcı bakteriler) azotu toprağa bağlar. B doğrudur: bitkiler azotu kökleriyle topraktaki azotlu bileşiklerden alır ve protein, DNA gibi moleküllerin yapımında kullanır; hayvanlar ise azotu besinleriyle alır. C doğrudur: 4. satırda azot ayrıştırıcı bakterilerin azotu havaya geri verdiği yazılıdır.</p><p>D yanlıştır: soluduğumuz havadaki azot gazı kullanılmadan geri verilir; insanlar ve hayvanlar azot ihtiyacını solunumla değil <b>besinlerle</b> karşılar. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p><b>Sürdürülebilir kalkınma</b>, bugünün ihtiyaçlarının gelecek nesillerin ihtiyaçlarını ve doğal kaynaklarını tehlikeye atmadan karşılanmasıdır.</p>
+<p>Buna göre aşağıdaki uygulamalardan hangisi sürdürülebilir kalkınma ilkesine <b>uygun değildir</b>?</p>`,
+  c: ["Tarım arazilerinde vahşi (salma) sulama yerine su tasarrufu sağlayan damla sulama yönteminin kullanılması", "Binaların çatılarında yağmur suyunun toplanarak bahçe sulamasında değerlendirilmesi", "Daha fazla tarım arazisi elde etmek amacıyla ormanların kesilerek tarlaya dönüştürülmesi", "Kamu binalarının ve sokak lambalarının elektrik ihtiyacının güneş panelleriyle karşılanması"],
   a: "C",
-  s: `<p>Damla sulama, yağmur suyu hasadı ve güneş enerjisi kullanımı doğal kaynakları koruyarak gelecek nesillere aktarılmasını sağlar[cite: 10]. Ancak <b>ormanların kesilerek tarlaya dönüştürülmesi</b> biyoçeşitliliği yok eder, karbondioksit tüketimini azaltır ve ekolojik dengeyi bozar; bu nedenle sürdürülebilir kalkınmaya <b>uygun değildir</b>[cite: 10]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir ürünün ham madde aşamasından üretimine ve tüketimine kadar kullanılan toplam tatlı su miktarına o ürünün <b>su ayak izi</b> denir[cite: 10]. Bazı ürünlerin yaklaşık su ayak izleri aşağıdaki tabloda verilmiştir[cite: 10].</p>
-<table class="rt">
+  s: `<p>Damla sulama (A) ve yağmur suyunun toplanması (B) suyu, güneş panelleri (D) fosil yakıtları korur; üçü de bugünün ihtiyacını gelecek nesillerin kaynaklarını tüketmeden karşılar.</p><p>Ormanları kesip tarlaya çevirmek ise ormanları yok eder, fotosentezle havadan alınan karbondioksiti azaltır, canlı çeşitliliğine ve toprağa zarar verir. Bu uygulama sürdürülebilir kalkınmaya <b>uygun değildir</b> (C ✓). Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir ürünün ham madde aşamasından üretimine ve tüketimine kadar kullanılan toplam tatlı su miktarına o ürünün <b>su ayak izi</b> denir. Bazı ürünlerin yaklaşık su ayak izleri aşağıdaki tabloda verilmiştir.</p>
+<div class="tbl"><table>
 <tr><th>Ürün</th><th>Yaklaşık Su Ayak İzi (Litre)</th></tr>
 <tr><td><b>1 kg sığır eti</b></td><td>15 400 L</td></tr>
 <tr><td><b>1 pamuklu tişört</b></td><td>2 500 L</td></tr>
 <tr><td><b>1 kg buğday</b></td><td>1 800 L</td></tr>
 <tr><td><b>1 fincan kahve</b></td><td>130 L</td></tr>
-</table>
-<p>Tablodaki verilere göre aşağıdakilerden hangisi <b>söylenebilir</b>[cite: 10]?</p>`,
-  c: [
-    `Bir pamuklu tişörtün üretiminden tüketimine kadar harcanan su miktarı, bir fincan kahvenin su ayak izinin yaklaşık 19 katıdır.`,
-    `1 kg buğday üretmek için 1 kg sığır eti üretmekten daha fazla su harcanır.`,
-    `Bir ürünün su ayak izi yalnızca o ürünü yıkarken veya içerken kullandığımız su miktarıdır.`,
-    `Gereksiz kıyafet alışverişini artırmak bireyin su ayak izini küçültür.`
-  ],
+</table></div>
+<p>Tablodaki verilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Bir pamuklu tişörtün üretiminden tüketimine kadar harcanan su miktarı, bir fincan kahvenin su ayak izinin yaklaşık 19 katıdır.", "1 kg buğday üretmek için 1 kg sığır eti üretmekten daha fazla su harcanır.", "Bir ürünün su ayak izi yalnızca o ürünü yıkarken veya içerken kullandığımız su miktarıdır.", "Gereksiz kıyafet alışverişini artırmak bireyin su ayak izini küçültür."],
   a: "A",
-  s: `<p>Tabloya göre 1 pamuklu tişörtün su ayak izi ($2.500\text{ L}$), 1 fincan kahvenin su ayak izinin ($130\text{ L}$) yaklaşık <b>19 katıdır</b> ($2500 \div 130 \approx 19,2$)[cite: 10]. Su ayak izi yalnızca içilen suyu değil, üretim sürecindeki tüm suyu kapsar[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Klorofil pigmenti, güneş ışığının farklı renklerini (dalga boylarını) farklı oranlarda soğurur; en çok <b>mor ve kırmızı</b> ışığı soğururken, <b>yeşil ışığın</b> büyük kısmını yansıtır. Özdeş K, L ve M saksı bitkileri; sıcaklık, su ve karbondioksit miktarının eşit olduğu ortamlarda sırasıyla <b>Mor, Yeşil ve Kırmızı</b> ışık altında eşit süre bekletiliyor[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 460 150" width="440" role="img" aria-label="Mor, yeşil ve kırmızı ışık altında fotosentez hızı">
-<rect x="20" y="15" width="125" height="120" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/>
-<text x="82" y="34" font-size="10.5" font-weight="bold" fill="#6d28d9" text-anchor="middle">K Düzeneği (Mor Işık)</text>
-<rect x="72" y="95" width="20" height="25" fill="#a16207"/><circle cx="82" cy="80" r="16" fill="#22c55e"/>
-<text x="82" y="130" font-size="9.5" font-weight="bold" fill="#5b21b6" text-anchor="middle">Çok yüksek O₂ üretimi</text>
-
-<rect x="167" y="15" width="125" height="120" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="230" y="34" font-size="10.5" font-weight="bold" fill="#15803d" text-anchor="middle">L Düzeneği (Yeşil Işık)</text>
-<rect x="220" y="95" width="20" height="25" fill="#a16207"/><circle cx="230" cy="80" r="16" fill="#22c55e"/>
-<text x="230" y="130" font-size="9.5" font-weight="bold" fill="#166534" text-anchor="middle">En düşük O₂ üretimi!</text>
-
-<rect x="315" y="15" width="125" height="120" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="377" y="34" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">M Düzeneği (Kırmızı Işık)</text>
-<rect x="367" y="95" width="20" height="25" fill="#a16207"/><circle cx="377" cy="80" r="16" fill="#22c55e"/>
-<text x="377" y="130" font-size="9.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Yüksek O₂ üretimi</text>
-</svg></div>
-<p>Bu deneyle ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [
-    `Deneyin bağımsız değişkeni ışığın rengi, bağımlı değişkeni ise fotosentez hızıdır; fotosentez hızı L (yeşil ışık) düzeneğinde en düşüktür.`,
-    `Yeşil yapraklar yeşil ışığın tamamını soğurduğu için en hızlı fotosentez L düzeneğinde gerçekleşir.`,
-    `Mor ve kırmızı ışıkta bitkiler fotosentez yapamaz, yalnızca solunum yapar.`,
-    `Deneyin kontrol edilen (sabit tutulan) değişkeni ışığın rengidir.`
-  ],
-  a: "A",
-  s: `<p>Deneyde araştırmacının değiştirdiği değişken <b>ışığın rengidir (bağımsız değişken)</b>; buna bağlı olarak değişen <b>fotosentez hızı ise bağımlı değişkendir</b>[cite: 10]. Yapraklar yeşil ışığı yansıttığı için fotosentez hızı <b>yeşil ışıkta (L) en düşüktür</b> (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>Potasyum hidroksit (<b>KOH</b>) ve <b>kireç suyu</b> çözeltileri, bulundukları ortamdaki <b>karbondioksit ($CO_2$) gazını tutma (yakalama)</b> özelliğine sahiptir. Bir araştırmacı özdeş iki saksı bitkisini hava geçirmeyen cam fanuslara koyarak aşağıdaki düzeneği hazırlıyor (Diğer tüm koşullar özdeştir).</p>
-<div class="fig"><svg viewBox="0 0 420 160" width="400" role="img" aria-label="KOH çözeltisi ile fotosentezde karbondioksitin önemi deneyi">
-<path d="M35,135 L35,45 Q35,15 95,15 Q155,15 155,45 L155,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
-<line x1="20" y1="135" x2="170" y2="135" stroke="#475569" stroke-width="3"/>
-<rect x="85" y="105" width="20" height="30" fill="#a16207"/><circle cx="95" cy="88" r="18" fill="#22c55e"/>
-<text x="95" y="152" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">1. Fanus (Normal Hava)</text>
-
-<path d="M255,135 L255,45 Q255,15 315,15 Q375,15 375,45 L375,135" fill="#e0f2fe" fill-opacity=".5" stroke="#0369a1" stroke-width="2"/>
-<line x1="240" y1="135" x2="390" y2="135" stroke="#475569" stroke-width="3"/>
-<rect x="280" y="105" width="20" height="30" fill="#a16207"/><circle cx="290" cy="88" r="18" fill="#22c55e"/>
-<rect x="325" y="110" width="36" height="25" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/>
-<text x="343" y="126" font-size="8.5" font-weight="bold" fill="#991b1b" text-anchor="middle">KOH</text>
-<text x="315" y="152" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">2. Fanus (KOH Çözeltisi Var)</text>
-</svg></div>
-<p>Bir süre sonra 1. fanustaki bitkinin sağlıklı büyümeye devam ettiği, <b>2. fanustaki bitkinin ise fotosentez yapamadığı ve besin üretemediği</b> gözleniyor. Bu deney hangi soruya yanıt bulmak amacıyla tasarlanmıştır[cite: 10]?</p>`,
-  c: [
-    `Fotosentez olayının gerçekleşmesi için karbondioksit (CO₂) gazı gerekli midir?`,
-    `Fotosentez hızı ışık şiddetine bağlı mıdır?`,
-    `Fotosentez sonucunda dış ortama su buharı verilir mi?`,
-    `Bitkiler karanlık ortamda oksijenli solunum yapar mı?`
-  ],
-  a: "A",
-  s: `<p>İki fanus arasındaki tek fark 2. fanusta bulunan ve ortamdaki <b>karbondioksit ($CO_2$) gazını tutan KOH çözeltisidir</b>. KOH ortamdaki $CO_2$’yi tutunca bitki fotosentez yapamamıştır; dolayısıyla bu deney <b>fotosentez için $CO_2$’nin gerekli olduğunu</b> kanıtlar[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir besin zincirini oluşturan <b>K, L, M ve N</b> canlı türlerinin dokularında biriken <b>zehirli madde (biyolojik birikim)</b> miktarlarını gösteren sütun grafiği aşağıda verilmiştir[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 380 165" width="360" role="img" aria-label="K, L, M ve N canlılarının biyolojik birikim grafiği">
-<line x1="50" y1="135" x2="340" y2="135" stroke="#334155" stroke-width="2"/>
-<line x1="50" y1="15" x2="50" y2="135" stroke="#334155" stroke-width="2"/>
-<rect x="75" y="85" width="36" height="50" fill="#fde047" stroke="#b45309"/>
-<rect x="140" y="25" width="36" height="110" fill="#fca5a5" stroke="#991b1b"/>
-<rect x="205" y="115" width="36" height="20" fill="#86efac" stroke="#166534"/>
-<rect x="270" y="55" width="36" height="80" fill="#fed7aa" stroke="#c2410c"/>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="93" y="150">K</text><text x="158" y="150">L</text><text x="223" y="150">M</text><text x="288" y="150">N</text>
-<text x="18" y="75" font-size="9.5" transform="rotate(-90 18 75)">Biyolojik Birikim (Zehir)</text>
+  s: `<p>Tabloya göre tişörtün su ayak izi 2 500 L, bir fincan kahveninki 130 L’dir: 2 500 ÷ 130 ≈ 19,2. Tişörtün su ayak izi kahvenin yaklaşık <b>19 katıdır</b> (A ✓).</p><p>B: Buğday 1 800 L, sığır eti 15 400 L; buğday daha az su gerektirir ✗. C: Tanıma göre su ayak izi, ürünün ham maddesinden tüketimine kadar kullanılan <b>toplam</b> tatlı sudur; yalnızca içilen ya da yıkamada kullanılan su değildir ✗. D: Gereksiz kıyafet almak su ayak izini küçültmez, büyütür ✗. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Atmosferdeki karbondioksit (CO<sub>2</sub>), metan (CH<sub>4</sub>) ve su buharı gibi gazlar, yeryüzünün yaydığı ısının bir kısmını tutar; buna <b>sera etkisi</b> denir. Bu gazların insan etkinlikleriyle artması sera etkisini güçlendirir ve Dünya’nın ortalama sıcaklığını yükseltir; buna <b>küresel ısınma</b> denir.</p>
+<p>Bireylerin <b>karbon ayak izini</b> ve küresel ısınmayı azaltmak için aşağıdaki önlemlerden hangisini alması <b>beklenmez</b>?</p>`,
+  c: ["Binalarda ısı yalıtımı yaptırarak ısınma amaçlı kömür ve doğal gaz tüketimini azaltmak", "Kısa mesafelerde motorlu taşıtlar yerine yürüyüşü veya bisiklet kullanımını tercih etmek", "Kağıt, plastik, cam ve metal atıkları kaynağında ayrıştırarak geri dönüşüme kazandırmak", "Tek kullanımlık plastik ürünlerin tüketimini artırmak ve enerji ihtiyacını kömürlü termik santrallerden karşılamak"],
+  a: "D",
+  s: `<p>Isı yalıtımı yakıt tüketimini (A), yürüyüş ve bisiklet taşıt yakıtını (B), geri dönüşüm ham madde ve enerji kullanımını (C) azaltır; üçü de havaya verilen CO<sub>2</sub>’yi azaltır.</p><p>Tek kullanımlık plastik tüketimini artırmak üretim ve atık yükünü, kömürlü termik santraller ise CO<sub>2</sub> salımını artırır; karbon ayak izini büyütür. Beklenmeyen önlem D’dir. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Geri dönüşümün ülke ekonomisine ve doğaya katkısını araştıran bir öğrenci aşağıdaki bilgi kartını hazırlamıştır:</p>
+<div class="fig"><svg viewBox="0 0 560 175" width="560" role="img" aria-label="Geri dönüşümün kazanımları bilgi kartı">
+<rect x="8" y="8" width="544" height="159" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="280" y="30" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">GERİ DÖNÜŞÜMÜN KAZANIMLARI</text>
+<g font-size="12" fill="#1e293b">
+<text x="22" y="56">• <tspan font-weight="bold" fill="#166534">1 ton atık kâğıdın</tspan> geri dönüştürülmesiyle yaklaşık <tspan font-weight="bold">17 yetişkin ağacın</tspan></text>
+<text x="34" y="73">kesilmesi önlenir.</text>
+<text x="22" y="100">• <tspan font-weight="bold" fill="#1e40af">Alüminyum kutuların</tspan> geri dönüşümüyle, cevherden üretime göre yaklaşık</text>
+<text x="34" y="117"><tspan font-weight="bold">%95 enerji tasarrufu</tspan> sağlanır.</text>
+<text x="22" y="144">• <tspan font-weight="bold" fill="#b45309">Cam ve plastik</tspan> atıklar geri kazanılınca çöp depolama alanlarının ömrü uzar</text>
+<text x="34" y="161">ve ham madde korunur.</text>
 </g>
 </svg></div>
-<p>Grafikteki verilere göre bu canlıların oluşturduğu <b>besin zinciri</b> ve özellikleriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 10]?</p>`,
-  c: [
-    `Besin zinciri “M → K → N → L” şeklindedir; M üretici (bitki), K otçul (1. tüketici), L ise zincirin en üstündeki 3. tüketicidir.`,
-    `Besin zinciri “L → N → K → M” şeklindedir ve üretici canlı L’dir.`,
-    `Toplam biyokütlesi ve birey sayısı en fazla olan canlı türü L’dir.`,
-    `Güneş enerjisini doğrudan kimyasal bağ enerjisine dönüştüren canlı N’dir.`
-  ],
-  a: "A",
-  s: `<p>Biyolojik birikim (zehir miktarı) üreticiden son tüketiciye doğru <b>artar</b>[cite: 10].</p>
-<ul>
-<li>Zehir birikimi en az olan <b>M üreticidir</b> (1. basamak)[cite: 10].</li>
-<li>Sırasıyla <b>K (1. tüketici - otçul)</b>, <b>N (2. tüketici)</b> ve zehir birikimi en çok olan <b>L (3. tüketici)</b> gelir[cite: 10].</li>
-</ul>
-<p>Besin zinciri: <b>M → K → N → L</b> şeklindedir (<b>A doğru</b>)[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Doğadaki <b>Karbon ve Oksijen Döngüsü</b> aşağıdaki şemada özetlenmiştir[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 520 155" width="500" role="img" aria-label="Karbon ve oksijen döngüsü şeması">
-<rect x="175" y="10" width="170" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-<text x="260" y="30" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Atmosferdeki CO₂ Gazı</text>
-<rect x="20" y="105" width="150" height="36" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-<text x="95" y="127" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">Yeşil Bitkiler (Besin + O₂)</text>
-<rect x="350" y="105" width="150" height="36" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="425" y="122" font-size="9.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Canlılar, Ayrıştırıcılar ve</text>
-<text x="425" y="135" font-size="9.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Fosil Yakıtlar (Kömür, Petrol)</text>
-<path d="M175,26 Q95,26 95,100" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<polygon points="95,104 90,95 100,95" fill="#16a34a"/>
-<text x="72" y="55" font-size="10" font-weight="bold" fill="#166534">I. Olay (Fotosentez)</text>
-<path d="M425,105 Q425,26 350,26" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<polygon points="346,26 355,21 355,31" fill="#dc2626"/>
-<text x="435" y="55" font-size="10" font-weight="bold" fill="#dc2626">II. Olaylar (Solunum + Yanma)</text>
-<line x1="170" y1="123" x2="345" y2="123" stroke="#475569" stroke-width="2"/>
-<polygon points="349,123 340,118 340,128" fill="#475569"/>
-<text x="260" y="116" font-size="9.5" font-weight="bold" fill="#334155" text-anchor="middle">Besin ve O₂ Aktarımı</text>
-</svg></div>
-<p>Şemadaki karbon ve oksijen döngüsüyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 10]?</p>`,
-  c: [
-    `Atmosferdeki karbondioksit (CO₂) miktarını azaltıp oksijen (O₂) miktarını artıran temel olay I numaralı fotosentez olayıdır.`,
-    `Solunum, ayrıştırıcıların faaliyeti ve fosil yakıtların yanması (II. olaylar) atmosferdeki CO₂ miktarını artırır.`,
-    `Fosil yakıt tüketiminin artması ve ormanların tahrip edilmesi atmosferde CO₂ birikimine (sera etkisine ve küresel ısınmaya) neden olur.`,
-    `Bitkiler yalnızca I. olayı (fotosentez) gerçekleştirir, II. olaylardan olan solunumu hiçbir zaman gerçekleştirmez.`
-  ],
+<p>Bilgi kartına göre geri dönüşüm uygulamalarıyla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Ağaçların ve ham maddelerin tükenmesini yavaşlatarak sürdürülebilir kalkınmaya hizmet eder.", "Sanayide üretim için harcanan enerji miktarını büyük oranda azaltarak ülke ekonomisine katkı sağlar.", "Çevreye bırakılan katı atık (çöp) miktarını ve karbon ayak izini azaltır.", "Geri dönüştürülen ürünlerin üretim maliyeti, sıfırdan ham madde kullanılarak yapılan üretimden her zaman daha pahalıdır."],
   a: "D",
-  s: `<p>Yeşil bitkiler gündüzleri hem fotosentez (I) hem solunum (II) yaparken, geceleri (karanlıkta) yalnızca <b>solunum (II)</b> yaparak atmosfere $CO_2$ verirler[cite: 10]. Dolayısıyla “bitkiler hiçbir zaman solunum yapmaz” ifadesi <b>yanlıştır</b>[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda doğadaki <b>Azot Döngüsü</b> sırasında görev yapan faktörler ve işlevleri verilmiştir[cite: 10].</p>
-<table class="rt">
-<tr><th>No</th><th>Görev Yapan Faktör / Canlı</th><th>Azot Döngüsündeki İşlevi</th></tr>
-<tr><td><b>1</b></td><td><b>Yıldırım ve Şimşek Olayları</b></td><td>Havadaki serbest azotun yağmurla toprağa bağlanmasını sağlar[cite: 10].</td></tr>
-<tr><td><b>2</b></td><td><b>Azot Bağlayıcı Bakteriler</b> (Baklagil köklerinde)</td><td>Havadaki azot gazını bağlayarak bitkilerin kullanabileceği azot tuzlarına dönüştürür[cite: 10].</td></tr>
-<tr><td><b>3</b></td><td><b>Ayrıştırıcılar</b> (Çürükçül bakteri ve mantarlar)</td><td>Ölü canlılardaki proteinleri parçalayarak toprağa azotlu bileşikler kazandırır[cite: 10].</td></tr>
-<tr><td><b>4</b></td><td><b>Azot Ayrıştırıcı Bakteriler</b></td><td>Topraktaki fazla azot bileşiklerini tekrar havaya serbest azot gazı (N₂) olarak geri verir.</td></tr>
-</table>
-<p>Tablodaki bilgilere göre azot döngüsüyle ilgili aşağıdakilerden hangisine <b>ulaşılamaz</b>[cite: 10]?</p>`,
-  c: [
-    `Havadaki azotun toprağa bağlanmasında hem canlı faktörler (bakteriler) hem de cansız doğa olayları (yıldırım, şimşek) etkilidir.`,
-    `Bitkiler topraktan aldıkları azotlu bileşikleri protein ve DNA sentezinde kullanır; hayvanlar ise azot ihtiyacını bitkileri veya diğer hayvanları yiyerek karşılar.`,
-    `Topraktaki azotun yeniden atmosfere dönmesinde azot ayrıştırıcı bakteriler rol oynar.`,
-    `İnsanlar ve hayvanlar soluk alıp verirken akciğerleriyle havadaki azot gazını doğrudan kana geçirip protein üretir.`
-  ],
-  a: "D",
-  s: `<p>İnsanlar ve hayvanlar soluk alırken akciğerlerine giren azot gazını kullanamadan soluk verirken aynen dışarı atarlar; canlılar azot ihtiyacını solunumla değil, <b>besinler yoluyla</b> karşılar[cite: 10] (<b>D ulaşılamaz</b>). Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>İçinde <b>çimlenmekte olan ıslak fasulye tohumları</b> bulunan kapalı cam şişe, ince bir boruyla <b>kireç suyu</b> bulunan beherglasa bağlanmış ve şişenin içine bir termometre yerleştirilmiştir (Kireç suyu, karbondioksit gazı ile karşılaştığında <b>bulanır</b>).</p>
-<div class="fig"><svg viewBox="0 0 420 150" width="400" role="img" aria-label="Çimlenen tohumların solunumu ve kireç suyunun bulanması deneyi">
-<rect x="40" y="45" width="95" height="85" rx="8" fill="#fef3c7" stroke="#a16207" stroke-width="2"/>
-<g fill="#15803d"><ellipse cx="62" cy="118" rx="8" ry="5"/><ellipse cx="85" cy="118" rx="8" ry="5"/><ellipse cx="110" cy="118" rx="8" ry="5"/></g>
-<line x1="65" y1="15" x2="65" y2="95" stroke="#dc2626" stroke-width="3"/>
-<circle cx="65" cy="95" r="5" fill="#dc2626"/>
-<text x="55" y="14" font-size="9.5" font-weight="bold" fill="#dc2626">Termometre (Sıcaklık artar!)</text>
-<path d="M105,45 L105,25 L295,25 L295,110" fill="none" stroke="#334155" stroke-width="2.5"/>
-<rect x="250" y="60" width="90" height="70" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
-<circle cx="295" cy="95" r="3" fill="#fff"/><circle cx="288" cy="82" r="4" fill="#fff"/>
-<text x="87" y="144" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">Çimlenen Tohumlar</text>
-<text x="295" y="144" font-size="10" font-weight="bold" fill="#334155" text-anchor="middle">Kireç Suyu (Bulanır!)</text>
-</svg></div>
-<p>Bir süre sonra termometredeki sıcaklığın yükseldiği ve kireç suyunun bulandığı gözlenmiştir. Henüz yeşil yaprakları çıkmamış olan çimlenen tohumlarla ilgili bu deney aşağıdakilerden hangisini <b>kanıtlar</b>[cite: 10]?</p>`,
-  c: [
-    `Çimlenen tohumların oksijenli solunum yaparak dışarıya karbondioksit (CO₂) gazı ve ısı enerjisi verdiğini`,
-    `Çimlenen tohumların fotosentez yaparak oksijen ürettiğini`,
-    `Tohumların çimlenirken dış ortamdan karbondioksit aldığını`,
-    `Kireç suyunun fotosentez hızını artırdığını`
-  ],
-  a: "A",
-  s: `<p>Henüz yeşil yaprağı (klorofili) olmayan çimlenen tohumlar fotosentez yapamaz; yalnızca <b>oksijenli solunum</b> yapar[cite: 10]. Kireç suyunun bulanması solunum sonucu <b>$CO_2$ gazı</b> çıktığını, termometrenin yükselmesi ise solunumda <b>ısı</b> açığa çıktığını kanıtlar[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir araştırmacı, <b>“Suyun (nem miktarının) fotosentez hızına etkisini”</b> incelemek için özdeş saksı bitkileriyle kontrollü bir deney yapmak istiyor[cite: 10].</p>
-<table class="rt">
-<tr><th>Düzenek</th><th>Toprak Özelliği</th><th>Ortam Sıcaklığı</th><th>Işık Şiddeti ve Rengi</th></tr>
-<tr><td><b>K Düzeneği</b></td><td>Nemli Toprak (Sulanan)</td><td>28 °C</td><td>Yüksek – Beyaz Işık</td></tr>
-<tr><td><b>L Düzeneği</b></td><td>Kuru Toprak</td><td>28 °C</td><td>Düşük – Yeşil Işık</td></tr>
-<tr><td><b>M Düzeneği</b></td><td>Kuru Toprak</td><td>10 °C</td><td>Yüksek – Beyaz Işık</td></tr>
-<tr><td><b>N Düzeneği</b></td><td>Nemli Toprak (Sulanan)</td><td>10 °C</td><td>Düşük – Yeşil Işık</td></tr>
-</table>
-<p>Araştırmacı amacına ulaşabilmek için tablodaki düzeneklerden hangisini seçmeli veya nasıl bir değişiklik yapmalıdır[cite: 10]?</p>`,
-  c: [
-    `K ve M düzeneklerini seçip, M düzeneğinin sıcaklığını da 28 °C yaparak yalnızca toprak neminin farklı olmasını sağlamalıdır.`,
-    `Doğrudan K ve L düzeneklerini olduğu gibi kullanmalıdır.`,
-    `Doğrudan K ve N düzeneklerini olduğu gibi kullanmalıdır.`,
-    `L ve M düzeneklerini seçmelidir.`
-  ],
-  a: "A",
-  s: `<p>Kontrollü deneyde etkisi araştırılan değişken (<b>su / toprak nemi</b>) farklı, diğer tüm değişkenler (<b>sıcaklık, ışık şiddeti ve rengi</b>) <b>aynı</b> olmalıdır[cite: 10]. K (Nemli, 28 °C, Yüksek-Beyaz) ile M (Kuru, Yüksek-Beyaz) seçilip M’nin sıcaklığı da <b>28 °C</b> yapılırsa deney hatasız olur[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Yeşil bir bitki yaprağının 24 saat (1 gün) boyunca gerçekleştirdiği <b>Fotosentez Hızı</b> ve <b>Solunum Hızı</b> aşağıdaki grafikte karşılaştırılmıştır[cite: 10].</p>
-<div class="fig"><svg viewBox="0 0 420 175" width="400" role="img" aria-label="24 saatlik fotosentez ve solunum hızı grafiği">
-<line x1="45" y1="140" x2="390" y2="140" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="15" x2="45" y2="140" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="95" x2="380" y2="95" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M110,140 Q215,-10 320,140" fill="none" stroke="#16a34a" stroke-width="3"/>
-<circle cx="142" cy="95" r="4" fill="#1e40af"/><circle cx="288" cy="95" r="4" fill="#1e40af"/>
-<g font-size="9.5" font-weight="bold" text-anchor="middle">
-<text x="75" y="154">00.00 (Gece)</text>
-<text x="142" y="154" fill="#1e40af">07.00 (K)</text>
-<text x="215" y="154" fill="#16a34a">12.00 (Öğle)</text>
-<text x="288" y="154" fill="#1e40af">18.00 (L)</text>
-<text x="355" y="154">24.00 (Gece)</text>
-<text x="215" y="25" fill="#16a34a">Fotosentez Hızı</text>
-<text x="345" y="88" fill="#dc2626">Solunum Hızı</text>
-<text x="18" y="78" transform="rotate(-90 18 78)">Tepkime Hızı</text>
-</g>
-</svg></div>
-<p>Grafiğe göre bu bitkiyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 10]?</p>`,
-  c: [
-    `Gece saatlerinde (00.00–06.00 arası) ışık olmadığı için fotosentez hızı sıfırdır; bitki yalnızca solunum yapar.`,
-    `Öğle saat 12.00’de fotosentez hızı solunum hızından çok daha yüksek olduğu için bitki dış ortama bol miktarda oksijen verir.`,
-    `Sabah 07.00 (K) ve akşam 18.00 (L) anlarında bitkinin fotosentez hızı ile solunum hızı birbirine eşittir (ürettiği oksijen tükettiği oksijene eşittir).`,
-    `Öğle saat 12.00’de fotosentez en üst seviyeye çıktığı için bitkinin solunumu tamamen durmuştur.`
-  ],
-  a: "D",
-  s: `<p>Grafikteki kırmızı çizgiden de görüldüğü üzere, bitkilerde <b>solunum gece ve gündüz (24 saat boyunca) kesintisiz devam eder</b>; öğle vakti fotosentez yaparken de solunum asla durmaz (<b>D yanlıştır</b>)[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda üç farklı enerji üretim yolu olan <b>Oksijenli Solunum</b>, <b>Etil Alkol Fermantasyonu</b> ve <b>Laktik Asit Fermantasyonu</b> karşılaştırılmıştır[cite: 10].</p>
-<table class="rt">
-<tr><th>Özellik</th><th>Oksijenli Solunum</th><th>Etil Alkol Fermantasyonu</th><th>Laktik Asit Fermantasyonu</th></tr>
-<tr><td><b>1. Besin (Glikoz) Kullanımı</b></td><td>Kullanılır</td><td>Kullanılır</td><td>Kullanılır</td></tr>
-<tr><td><b>2. Oksijen (O₂) Kullanımı</b></td><td>Kullanılır</td><td>Kullanılmaz</td><td>Kullanılmaz</td></tr>
-<tr><td><b>3. Karbondioksit (CO₂) Çıkışı</b></td><td>Oluşur</td><td>Oluşur</td><td><b>Oluşmaz!</b></td></tr>
-<tr><td><b>4. Üretilen Enerji (ATP) Miktarı</b></td><td>Çok fazla</td><td>Az</td><td>Az</td></tr>
-</table>
-<p>Tablodaki verilere göre; <b>“Glikoz (besin) harcanıp ATP enerjisi üretildiği hâlde kapta karbondioksit ($CO_2$) gazı çıkışının görülmediği”</b> bir olay aşağıdakilerden hangisi olabilir[cite: 10]?</p>`,
-  c: [
-    `Sütten yoğurt yapan bakterilerin veya yorulan çizgili kas hücrelerinin gerçekleştirdiği laktik asit fermantasyonu`,
-    `Bira mayası mantarlarının hamuru kabartırken gerçekleştirdiği etil alkol fermantasyonu`,
-    `Çimlenen fasulye tohumlarının gerçekleştirdiği oksijenli solunum`,
-    `Karanlıkta bekletilen saksı bitkisinin gerçekleştirdiği oksijenli solunum`
-  ],
-  a: "A",
-  s: `<p>Tablonun 3. satırında açıkça belirtildiği gibi, <b>laktik asit fermantasyonunda</b> (yoğurt bakterileri ve çizgili kas hücreleri) karbondioksit ($CO_2$) gazı oluşmaz[cite: 10]. Oksijenli solunumda ve etil alkol fermantasyonunda ise $CO_2$ gazı açığa çıkar[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Atmosferde karbondioksit ($CO_2$), metan ($CH_4$) ve su buharı gibi gazların normalden fazla birikerek yeryüzünden yansıyan güneş ışınlarını tutmasına ve Dünya’nın ortalama sıcaklığının artmasına <b>sera etkisi ve küresel ısınma</b> denir[cite: 10].</p>
-<p>Bireylerin <b>karbon ayak izini</b> ve küresel ısınmayı azaltmak için aşağıdaki önlemlerden hangisini alması <b>beklenmez</b>[cite: 10]?</p>`,
-  c: [
-    `Binalarda ısı yalıtımı yaptırarak ısınma amaçlı kömür ve doğal gaz tüketimini azaltmak`,
-    `Kısa mesafelerde motorlu taşıtlar yerine yürüyüşü veya bisiklet kullanımını tercih etmek`,
-    `Kağıt, plastik, cam ve metal atıkları kaynağında ayrıştırarak geri dönüşüme kazandırmak`,
-    `Tek kullanımlık plastik ürünlerin tüketimini artırmak ve enerji ihtiyacını kömürlü termik santrallerden karşılamak`
-  ],
-  a: "D",
-  s: `<p>Tek kullanımlık plastikleri artırmak ve kömürlü termik santraller kullanmak atmosfere salınan $CO_2$ miktarını (karbon ayak izini) ve küresel ısınmayı <b>artırır</b>[cite: 10]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p><b>Ot → Çekirge → Kurbağa → Yılan → Kartal</b> besin zincirinin bulunduğu bir tarım alanında, çiftçilerin kurbağaları topladığı ve bölgedeki <b>kurbağa sayısının hızla azaldığı</b> biliniyor[cite: 10].</p>
-<p>Kurbağa sayısının azalması sonucunda bu besin zincirindeki diğer canlıların sayısında kısa vadede nasıl bir değişim beklenir[cite: 10]?</p>`,
-  c: [
-    `Çekirge sayısı artar; çekirgeler daha çok ot yiyeceği için ot miktarı azalır; kurbağayla beslenen yılanların sayısı ise besin bulamadığı için azalır.`,
-    `Çekirge sayısı azalır, yılan sayısı artar, ot miktarı artar.`,
-    `Bütün canlıların sayısı aynı anda artar.`,
-    `Yalnızca kartal sayısı artar, diğer canlılar etkilenmez.`
-  ],
-  a: "A",
-  s: `<p>Besin zincirinde <b>kurbağa azalırsa</b>[cite: 10]:</p>
-<ul>
-<li>Kurbağanın avı olan <b>çekirgeler</b> rahatlar ve sayısı <b>artar</b>[cite: 10].</li>
-<li>Sayısı artan çekirgeler <b>otları</b> aşırı tüketir ve ot miktarı <b>azalır</b>[cite: 10].</li>
-<li>Kurbağayla beslenen <b>yılanlar</b> ise besinsiz kaldığı için sayısı <b>azalır</b>[cite: 10]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Geri dönüşümün ülke ekonomisine ve doğaya katkısını araştıran bir öğrenci aşağıdaki bilgi kartını hazırlamıştır[cite: 10]:</p>
-<div class="fig"><svg viewBox="0 0 520 125" width="500" role="img" aria-label="Geri dönüşümün faydaları bilgi kartı">
-<rect x="10" y="10" width="500" height="105" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="260" y="30" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">GERİ DÖNÜŞÜMÜN KAZANIMLARI</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="24" y="52">• <tspan font-weight="bold" fill="#166534">1 ton atık kâğıdın</tspan> geri dönüştürülmesiyle <tspan font-weight="bold">17 yetişkin çam ağacının</tspan> kesilmesi önlenir.</text>
-<text x="24" y="72">• <tspan font-weight="bold" fill="#1e40af">Metal ve alüminyum</tspan> kutuların geri dönüşümüyle cevherden üretime göre <tspan font-weight="bold">%95 enerji tasarrufu</tspan> sağlanır.</text>
-<text x="24" y="92">• <tspan font-weight="bold" fill="#b45309">Cam ve plastik</tspan> atıkların geri kazanımıyla çöp depolama alanlarının ömrü uzar ve ham madde korunur.</text>
-</g>
-</svg></div>
-<p>Bilgi kartına göre geri dönüşüm uygulamalarıyla ilgili aşağıdakilerden hangisi <b>söylenemez</b>[cite: 10]?</p>`,
-  c: [
-    `Doğal kaynakların (ormanların, madenlerin ve suyun) tükenmesini yavaşlatarak sürdürülebilir kalkınmaya hizmet eder.`,
-    `Sanayide üretim için harcanan enerji miktarını büyük oranda azaltarak ülke ekonomisine katkı sağlar.`,
-    `Çevreye bırakılan katı atık (çöp) miktarını ve karbon ayak izini azaltır.`,
-    `Geri dönüştürülen ürünlerin üretim maliyeti, sıfırdan ham madde kullanılarak yapılan üretimden her zaman daha pahalıdır.`
-  ],
-  a: "D",
-  s: `<p>Geri dönüşüm, ham madde ve enerji maliyetini (%95’e varan oranda) düşürdüğü için sıfırdan üretime göre çok daha <b>ekonomik ve tasarrufludur</b>[cite: 10] (<b>D söylenemez</b>). Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Özdeş iki saksı bitkisinden <b>K bitkisi</b> sürekli güneş ışığı alan aydınlık bir ortama, <b>L bitkisi</b> ise hiç ışık almayan karanlık bir odaya konulup bir hafta boyunca düzenli sulanıyor[cite: 10].</p>
-<p>Bir hafta sonunda bitkilerin yapraklarındaki <b>kuru ağırlık (besin miktarı)</b> değişimi incelendiğinde aşağıdakilerden hangisi gözlenir[cite: 10]?</p>`,
-  c: [
-    `K bitkisi fotosentezle solunumda harcadığından daha fazla besin ürettiği için ağırlığı artar; L bitkisi ise karanlıkta fotosentez yapamayıp depo besinlerini solunumda harcadığı için ağırlığı azalır.`,
-    `Her iki bitkinin de ağırlığı eşit miktarda artar.`,
-    `K bitkisinin ağırlığı azalırken L bitkisinin ağırlığı artar.`,
-    `L bitkisi karanlıkta sulandığı için yalnızca su kullanarak nişasta üretir ve ağırlığı artar.`
-  ],
-  a: "A",
-  s: `<p>Işıklı ortamdaki <b>K bitkisi</b> fotosentezle besin ürettiği için kuru ağırlığı <b>artar</b>; karanlıktaki <b>L bitkisi</b> ise fotosentez yapamaz ve hayatta kalmak için önceden depoladığı besinleri <b>solunumla parçalayıp tükettiği için ağırlığı azalır</b> (<b>A doğru</b>)[cite: 10]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki özet tablosunda “Enerji Dönüşümleri ve Çevre Bilimi” ünitesiyle ilgili dört temel bilimsel kural verilmiştir[cite: 10]:</p>
-<table class="rt">
-<tr><th>Kural No</th><th>Bilimsel Kural</th></tr>
-<tr><td><b>1</b></td><td>Besin piramidinde üreticiden son tüketiciye doğru gidildikçe aktarılan enerji, toplam biyokütle ve birey sayısı azalırken; dokularda biriken zehir miktarı (biyolojik birikim) artar[cite: 10].</td></tr>
-<tr><td><b>2</b></td><td>Ayrıştırıcılar (bakteri ve mantarlar) besin piramidinin tüm basamaklarında görev yaparak organik atıkları inorganik maddelere dönüştürür[cite: 10].</td></tr>
-<tr><td><b>3</b></td><td>Yeşil bitkiler gündüzleri yalnızca fotosentez, geceleri ise yalnızca oksijenli solunum yapar.</td></tr>
-<tr><td><b>4</b></td><td>Fotosentezde ışık enerjisi kimyasal bağ enerjisine dönüştürülerek besinde depolanır; solunumda ise besindeki enerji ATP’ye dönüştürülür[cite: 10].</td></tr>
-</table>
-<p>Tablodaki numaralanmış kurallardan hangisi <b>yanlıştır</b>[cite: 10]?</p>`,
-  c: [`1`, `2`, `3`, `4`],
+  s: `<p>Kartta kâğıt geri dönüşümünün ağaçları, cam ve plastik geri kazanımının ham maddeyi koruduğu yazılıdır (A söylenebilir). Alüminyumda yaklaşık %95 enerji tasarrufu sağlandığı belirtilmiştir; enerji tasarrufu ülke ekonomisine katkıdır (B söylenebilir). Geri kazanılan atık çöp alanına gitmez, üretimde daha az enerji harcandığı için karbon ayak izi küçülür (C söylenebilir).</p><p>Kart, geri dönüşümün enerji ve ham madde tasarrufu sağladığını gösterir; geri dönüştürülen ürünlerin <b>her zaman daha pahalı</b> olduğu söylenemez (D). Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir orman ekosistemine ait besin ağı harflerle gösterilmiştir. Oklar enerjinin aktarım yönünü göstermektedir. K ve L fotosentez yapan canlılardır.</p>
+<div class="fig"><svg viewBox="0 0 420 262" width="400" role="img" aria-label="Harflerle gösterilmiş orman besin ağı" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><line x1="90.2" y1="221.8" x2="70.9" y2="190" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><path d="M117,229 Q240,215 268,120" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="246.2" y1="225" x2="205.3" y2="186.4" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="69.4" y1="155.5" x2="89.6" y2="120.2" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="175" y1="160.3" x2="116.6" y2="114.9" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="203.4" y1="158.6" x2="245.2" y2="116.8" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="114.3" y1="89.5" x2="164.2" y2="45.8" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><line x1="245.7" y1="89.5" x2="195.8" y2="45.8" stroke="#334155" stroke-width="1.8" marker-end="url(#o1)"/><circle cx="180" cy="32" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/><text x="180" y="37" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">T</text><circle cx="100" cy="102" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/><text x="100" y="107" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">R</text><circle cx="260" cy="102" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/><text x="260" y="107" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">S</text><circle cx="60" cy="172" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/><text x="60" y="177" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><circle cx="190" cy="172" r="18" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.8"/><text x="190" y="177" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">N</text><circle cx="100" cy="238" r="18" fill="#bbf7d0" stroke="#166534" stroke-width="1.8"/><text x="100" y="243" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><circle cx="260" cy="238" r="18" fill="#bbf7d0" stroke="#166534" stroke-width="1.8"/><text x="260" y="243" font-size="15" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="320" y="205" font-size="12" text-anchor="start" fill="#166534">K, L: üretici</text></svg></div>
+<p>Bu besin ağıyla ilgili;</p>
+<p>I. S, hem otçul hem etçil olarak beslenir.<br>II. T, yalnızca hayvansal besinlerle beslenir.<br>III. N'nin sayısı azalırsa yalnızca R'nin besin kaynaklarından biri azalır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Önce üreticileri işaretle: K ve L'den yalnızca ok çıkar. M (K'yi yer) ve N (L'yi yer) otçuldur, 1. tüketicidir.</p>
+<p>I ✓: S'ye K'den (üretici) ve N'den (tüketici) ok gelir; S hem bitkisel hem hayvansal besin alır, hepçildir.</p>
+<p>II ✓: T'ye yalnızca R ve S'den ok gelir; ikisi de tüketici olduğu için T etçildir.</p>
+<p>III ✗: N'den hem R'ye hem S'ye ok çıkar. N azalırsa S'nin de bir besin kaynağı azalır; "yalnızca R" denemez. Bu yargı oku ters okumaktan ya da S'nin besinlerini eksik saymaktan doğar.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir milli parkta <b>söğüt → geyik → kurt</b> besin zinciri bulunmaktadır. Parkta avlanarak yok olan kurtlar 1. yılda bölgeye yeniden getirilmiş ve yıllar içinde bazı ölçümler yapılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 540 185" width="540" role="img" aria-label="Kurt, geyik ve söğüt verilerinin yıllara göre değişimi" font-family="Arial, Helvetica, sans-serif"><text x="80" y="18" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Kurt sayısı</text><line x1="15" y1="160" x2="160" y2="160" stroke="#334155" stroke-width="1.6"/><line x1="15" y1="160" x2="15" y2="34" stroke="#334155" stroke-width="1.6"/><rect x="28" y="160" width="30" height="0" rx="0" fill="#94a3b8" stroke="#334155" stroke-width="1"/><text x="43" y="155" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">0</text><text x="43" y="176" font-size="11" text-anchor="middle" fill="#1e293b">1. yıl</text><rect x="73" y="112" width="30" height="48" rx="0" fill="#94a3b8" stroke="#334155" stroke-width="1"/><text x="88" y="107" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">20</text><text x="88" y="176" font-size="11" text-anchor="middle" fill="#1e293b">5. yıl</text><rect x="118" y="64" width="30" height="96" rx="0" fill="#94a3b8" stroke="#334155" stroke-width="1"/><text x="133" y="59" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">40</text><text x="133" y="176" font-size="11" text-anchor="middle" fill="#1e293b">10. yıl</text><text x="260" y="18" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Geyik sayısı (bin)</text><line x1="195" y1="160" x2="340" y2="160" stroke="#334155" stroke-width="1.6"/><line x1="195" y1="160" x2="195" y2="34" stroke="#334155" stroke-width="1.6"/><rect x="208" y="52" width="30" height="108" rx="0" fill="#fdba74" stroke="#334155" stroke-width="1"/><text x="223" y="47" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">18</text><text x="223" y="176" font-size="11" text-anchor="middle" fill="#1e293b">1. yıl</text><rect x="253" y="88" width="30" height="72" rx="0" fill="#fdba74" stroke="#334155" stroke-width="1"/><text x="268" y="83" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">12</text><text x="268" y="176" font-size="11" text-anchor="middle" fill="#1e293b">5. yıl</text><rect x="298" y="112" width="30" height="48" rx="0" fill="#fdba74" stroke="#334155" stroke-width="1"/><text x="313" y="107" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">8</text><text x="313" y="176" font-size="11" text-anchor="middle" fill="#1e293b">10. yıl</text><text x="440" y="18" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Söğüt alanı (hektar)</text><line x1="375" y1="160" x2="520" y2="160" stroke="#334155" stroke-width="1.6"/><line x1="375" y1="160" x2="375" y2="34" stroke="#334155" stroke-width="1.6"/><rect x="388" y="124" width="30" height="36" rx="0" fill="#86efac" stroke="#334155" stroke-width="1"/><text x="403" y="119" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">30</text><text x="403" y="176" font-size="11" text-anchor="middle" fill="#1e293b">1. yıl</text><rect x="433" y="94" width="30" height="66" rx="0" fill="#86efac" stroke="#334155" stroke-width="1"/><text x="448" y="89" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">55</text><text x="448" y="176" font-size="11" text-anchor="middle" fill="#1e293b">5. yıl</text><rect x="478" y="64" width="30" height="96" rx="0" fill="#86efac" stroke="#334155" stroke-width="1"/><text x="493" y="59" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">80</text><text x="493" y="176" font-size="11" text-anchor="middle" fill="#1e293b">10. yıl</text></svg></div>
+<p><b>Bu verilere göre aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["Kurt sayısının artması geyik sayısının azalmasında etkili olmuş olabilir.", "Geyik sayısındaki azalma, söğütlerin daha az tüketilmesini sağlamış olabilir.", "Kurtlar, söğütlerle doğrudan beslenerek söğüt alanının artmasını sağlamıştır.", "Bir tüketicinin sayısındaki değişim, zincirdeki üreticiyi dolaylı olarak etkileyebilir."],
   a: "C",
-  s: `<p>1, 2 ve 4 numaralı kurallar tamamen doğrudur[cite: 10]. Ancak <b>3 numaralı kural yanlıştır</b>; çünkü yeşil bitkiler gündüzleri (ışıkta) <b>YALNIZCA fotosentez yapmaz; hem fotosentez hem de oksijenli solunumu birlikte yapar!</b> (Solunum gece–gündüz kesintisiz devam eder)[cite: 10]. Cevap <b>C</b>.</p>`
-}
+  s: `<p>Zincirde kurt geyiği, geyik söğüdü yer. Kurt sayısı 0 → 40'a çıkarken geyik 18 → 8 bine inmiş (A ✓), geyik azaldıkça söğüt alanı 30 → 80 hektara çıkmıştır (B ✓).</p>
+<p>Kurt söğütle beslenmez; söğüde etkisi geyikler aracılığıyladır, yani <b>dolaylıdır</b> (D ✓). "Kurtlar söğütle doğrudan beslenmiştir" ifadesi besin zincirine aykırıdır, söylenemez (C).</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Tarım ilacındaki cıvanın karıştığı bir gölde yaşayan ve tek bir besin zinciri oluşturan X, Y, W ve Z canlılarının <b>birey sayısı piramidi</b> aşağıda verilmiştir. Cıva canlıların vücudundan atılamamaktadır.</p>
+<div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="Göl besin zincirinin birey sayısı piramidi" font-family="Arial, Helvetica, sans-serif"><rect x="165" y="14" width="50" height="30" rx="3" fill="#fecaca" stroke="#334155" stroke-width="1.5"/><text x="372" y="34" font-size="12" text-anchor="start" fill="#1e293b">Z: Turna balığı</text><rect x="125" y="52" width="130" height="30" rx="3" fill="#fde68a" stroke="#334155" stroke-width="1.5"/><text x="372" y="72" font-size="12" text-anchor="start" fill="#1e293b">W: Küçük balık</text><rect x="75" y="90" width="230" height="30" rx="3" fill="#bfdbfe" stroke="#334155" stroke-width="1.5"/><text x="372" y="110" font-size="12" text-anchor="start" fill="#1e293b">Y: Su piresi (zooplankton)</text><rect x="25" y="128" width="330" height="30" rx="3" fill="#bbf7d0" stroke="#334155" stroke-width="1.5"/><text x="372" y="148" font-size="12" text-anchor="start" fill="#1e293b">X: Fitoplankton</text></svg></div>
+<p>Buna göre;</p>
+<p>I. Bir bireyin vücudunda biriken cıva miktarının en fazla olması Z'de beklenir.<br>II. Y basamağına aktarılan enerji, W basamağına aktarılan enerjiden azdır.<br>III. Toplam cıva miktarı X'te, Y'dekinden daha fazladır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "A",
+  s: `<p>Zincir: X → Y → W → Z. Vücuttan atılamayan cıva, her basamakta yenilen çok sayıda canlının içinden toplanarak üste aktarılır (biyolojik birikim). En fazla birikim son halkada, Z'de beklenir (I ✓).</p>
+<p>II ✗: Enerji piramitte yukarı çıktıkça azalır. Y, W'nin altında olduğu için Y'ye aktarılan enerji W'ye aktarılandan <b>fazladır</b>. Bu yargı enerjiyi birikimle aynı yönde düşünmekten doğar.</p>
+<p>III ✗: Birikim yukarı doğru <b>artar</b>; X en az cıva içeren basamaktır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Hepçil beslenen Mert'in bir öğünde yediği besinler ve bu besinlerin kaynağıyla ilgili bilgiler tabloda verilmiştir.</p>
+<table><tr><th>Besin</th><th>Kaynağı ile ilgili bilgi</th></tr>
+<tr><td>Domates salatası</td><td>Domates bitkisinin meyvesi</td></tr>
+<tr><td>Peynir</td><td>Otla beslenen ineğin sütünden yapılmıştır.</td></tr>
+<tr><td>Haşlanmış yumurta</td><td>Buğday ve mısır taneleriyle beslenen tavuktan elde edilmiştir.</td></tr>
+<tr><td>Hamsi tava</td><td>Hamsi, fitoplanktonlarla beslenen zooplanktonları yer.</td></tr></table>
+<p><b>Buna göre Mert bu öğünde besin zincirinin hangi basamaklarında yer almıştır?</b></p>`,
+  c: ["Yalnızca 1. tüketici", "1. ve 2. tüketici", "1., 2. ve 3. tüketici", "2. ve 3. tüketici"],
+  a: "C",
+  s: `<p>Her besin için zinciri yaz:</p>
+<p>Domates → Mert: Mert üreticiyle beslendiği için <b>1. tüketici</b>.<br>Ot → inek → Mert ve buğday → tavuk → Mert: Mert <b>2. tüketici</b>.<br>Fitoplankton → zooplankton → hamsi → Mert: Mert <b>3. tüketici</b>.</p>
+<p>Hepçil bir canlı aynı öğünde birden çok basamakta yer alabilir. A ve B hamsiyi, D domatesi hesaba katmaz.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, özdeş kavanozlarla iki düzenek hazırlıyor. II. düzenekteki toprak önceden fırında yüksek sıcaklıkta bekletilerek içindeki canlılardan arındırılmıştır. Kavanozların kapakları hava geçiren ancak dışarıdan canlı girişini engelleyen filtrelerle kapatılmış ve düzenekler aynı ılık ve nemli ortamda bekletilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 220" width="540" role="img" aria-label="Yaprak ayrışması deney düzenekleri" font-family="Arial, Helvetica, sans-serif"><rect x="20" y="40" width="150" height="120" rx="10" fill="#ffffff" stroke="#334155" stroke-width="2"/><rect x="30" y="30" width="130" height="14" rx="3" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/><rect x="22" y="110" width="146" height="48" rx="0" fill="#d6b38a" stroke="#92400e" stroke-width="1"/><ellipse cx="42" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-30 42 102)"/><ellipse cx="69" cy="96" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(7 69 96)"/><ellipse cx="96" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-16 96 102)"/><ellipse cx="123" cy="96" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(21 123 96)"/><ellipse cx="150" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-2 150 102)"/><text x="95" y="20" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">I. düzenek</text><text x="95" y="180" font-size="12" text-anchor="middle" fill="#1e293b">Bahçe toprağı +</text><text x="95" y="196" font-size="12" text-anchor="middle" fill="#1e293b">40 g kuru yaprak</text><rect x="250" y="40" width="150" height="120" rx="10" fill="#ffffff" stroke="#334155" stroke-width="2"/><rect x="260" y="30" width="130" height="14" rx="3" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/><rect x="252" y="110" width="146" height="48" rx="0" fill="#d6b38a" stroke="#92400e" stroke-width="1"/><ellipse cx="272" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-30 272 102)"/><ellipse cx="299" cy="96" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(7 299 96)"/><ellipse cx="326" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-16 326 102)"/><ellipse cx="353" cy="96" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(21 353 96)"/><ellipse cx="380" cy="102" rx="13" ry="6" fill="#a3e635" stroke="#14532d" stroke-width="1" transform="rotate(-2 380 102)"/><text x="325" y="20" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">II. düzenek</text><text x="325" y="180" font-size="12" text-anchor="middle" fill="#1e293b">Fırında yüksek sıcaklıkta tutulmuş</text><text x="325" y="196" font-size="12" text-anchor="middle" fill="#1e293b">bahçe toprağı + 40 g kuru yaprak</text><text x="445" y="76" font-size="11" text-anchor="start" fill="#1e293b">Filtreli kapak</text><line x1="442" y1="72" x2="392" y2="38" stroke="#334155" stroke-width="1.8" marker-end="url(#o5)"/><defs><marker id="o5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs></svg></div>
+<p>Altı hafta sonra yapraklar tartıldığında I. düzenekteki yaprakların 12 g'a indiği, II. düzenekteki yaprakların ise 39 g olduğu görülmüştür.</p>
+<p><b>Bu deneyle ilgili aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["II. düzenekteki yapraklar fotosentez yapmaya devam ettiği için kütlesini korumuştur.", "Yaprakların ayrışması sırasında ortama oksijen verilmiştir.", "Yüksek sıcaklık, yaprakların ayrışmasını hızlandırmıştır.", "Yaprakların ayrışmasında topraktaki canlılar (ayrıştırıcılar) etkilidir."],
+  a: "D",
+  s: `<p>İki düzenek arasındaki tek fark topraktaki canlıların varlığıdır. Canlı içeren toprakta yapraklar 40 g'dan 12 g'a inmiş, canlısız toprakta neredeyse hiç değişmemiştir. Ayrışmayı topraktaki bakteri ve mantarlar, yani ayrıştırıcılar yapar (D ✓).</p>
+<p>A ✗: Kuru, kopmuş yapraklar fotosentez yapmaz. B ✗: Ayrıştırıcılar solunumla ortama oksijen değil karbondioksit verir. C ✗: Yüksek sıcaklık yalnızca II. düzenekteki toprağa uygulanmış ve orada ayrışma neredeyse olmamıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Kaynatılıp soğutulan suda çözünmüş karbondioksit neredeyse kalmaz. Suya bir miktar karbonat tozu eklenirse ise su bitkisi için ortama karbondioksit sağlanmış olur. Bir öğrenci özdeş su bitkileri ve özdeş lambalarla aşağıdaki dört düzeneği hazırlıyor.</p>
+<table><tr><th>Tüp</th><th>Tüpteki su</th><th>Işık</th><th>Su sıcaklığı</th></tr>
+<tr><td>1</td><td>Kaynatılıp soğutulmuş su</td><td>1 lamba, beyaz ışık</td><td>25 °C</td></tr>
+<tr><td>2</td><td>Karbonat eklenmiş su</td><td>1 lamba, beyaz ışık</td><td>25 °C</td></tr>
+<tr><td>3</td><td>Karbonat eklenmiş su</td><td>1 lamba, beyaz ışık</td><td>35 °C</td></tr>
+<tr><td>4</td><td>Kaynatılıp soğutulmuş su</td><td>Karanlık</td><td>35 °C</td></tr></table>
+<p>Öğrenci, bitkilerin bir dakikada çıkardığı gaz kabarcıklarını sayarak önce karbondioksit miktarının, sonra sıcaklığın fotosentez hızına etkisini inceleyecektir.</p>
+<p><b>Bu iki inceleme için hangi tüplerin sonuçlarını karşılaştırmalıdır?</b></p>`,
+  c: ["CO<sub>2</sub> etkisi: 1 ve 4 – Sıcaklık etkisi: 2 ve 3", "CO<sub>2</sub> etkisi: 1 ve 2 – Sıcaklık etkisi: 2 ve 3", "CO<sub>2</sub> etkisi: 1 ve 2 – Sıcaklık etkisi: 1 ve 3", "CO<sub>2</sub> etkisi: 2 ve 3 – Sıcaklık etkisi: 1 ve 4"],
+  a: "B",
+  s: `<p>Bir değişkenin etkisini görmek için iki tüpte yalnızca o değişken farklı, diğer her şey aynı olmalıdır.</p>
+<p>CO<sub>2</sub>: Işık ve sıcaklık aynı, su türü farklı → <b>1 ve 2</b>. (1 ve 4'te ışık ve sıcaklık da farklıdır.)</p>
+<p>Sıcaklık: Su türü ve ışık aynı, sıcaklık farklı → <b>2 ve 3</b>. (1 ve 3'te hem su hem sıcaklık farklıdır; 1 ve 4'te ışık, sıcaklık birlikte değişir; 2 ve 3 ise CO<sub>2</sub> için değil sıcaklık için uygundur.)</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir seracı, kışın bitkilerini LED lambalarla aydınlatmak istiyor. Lambaların hepsinin ışık şiddeti aynıdır ve yalnızca verdikleri ışığın rengi farklıdır. Seracı, klorofilin farklı renkteki ışıkları soğurma oranlarını gösteren aşağıdaki grafiği inceliyor.</p>
+<div class="fig"><svg viewBox="0 0 490 200" width="470" role="img" aria-label="Klorofilin ışık renklerini soğurma oranları" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="180" x2="470" y2="180" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="184" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="60" y1="142.5" x2="470" y2="142.5" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="146.5" font-size="11" text-anchor="end" fill="#1e293b">25</text><line x1="60" y1="105" x2="470" y2="105" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="109" font-size="11" text-anchor="end" fill="#1e293b">50</text><line x1="60" y1="67.5" x2="470" y2="67.5" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="71.5" font-size="11" text-anchor="end" fill="#1e293b">75</text><line x1="60" y1="30" x2="470" y2="30" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="34" font-size="11" text-anchor="end" fill="#1e293b">100</text><rect x="75" y="45" width="40" height="135" rx="0" fill="#7e22ce" stroke="#334155" stroke-width="1"/><text x="95" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Mor</text><rect x="142" y="60" width="40" height="120" rx="0" fill="#2563eb" stroke="#334155" stroke-width="1"/><text x="162" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Mavi</text><rect x="209" y="157.5" width="40" height="22.5" rx="0" fill="#16a34a" stroke="#334155" stroke-width="1"/><text x="229" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Yeşil</text><rect x="276" y="150" width="40" height="30" rx="0" fill="#eab308" stroke="#334155" stroke-width="1"/><text x="296" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Sarı</text><rect x="343" y="120" width="40" height="60" rx="0" fill="#f97316" stroke="#334155" stroke-width="1"/><text x="363" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Turuncu</text><rect x="410" y="52.5" width="40" height="127.5" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="430" y="196" font-size="12" text-anchor="middle" fill="#1e293b">Kırmızı</text><line x1="60" y1="180" x2="475" y2="180" stroke="#334155" stroke-width="2"/><line x1="60" y1="180" x2="60" y2="22" stroke="#334155" stroke-width="2"/><text x="16" y="105" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 16 105)">Klorofilin soğurduğu ışık (%)</text></svg></div>
+<p>Seracının grafiğe dayanarak yaptığı;</p>
+<p>I. Seraya yalnızca yeşil LED takılırsa bitkilerin fotosentez hızı en düşük olur.<br>II. Kırmızı ve mavi LED'lerin birlikte kullanılması, sarı LED kullanılmasına göre fotosentez hızını artırır.<br>III. Yapraklar yeşil ışığı en çok soğurduğu için yeşil görünür.</p>
+<p><b>çıkarımlarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Klorofil ne kadar çok ışık soğurursa fotosentez için o kadar çok enerji alınır. Grafikte en düşük soğurma yeşildedir (I ✓). Kırmızı (%85) ve mavi (%80), sarıdan (%20) çok daha fazla soğurulur (II ✓).</p>
+<p>III ✗: Yapraklar yeşil ışığı en <b>az</b> soğurur, büyük kısmını yansıtır; bu yüzden yeşil görünür. "Yeşil görünüyorsa yeşili soğurur" düşüncesi tipik bir yanılgıdır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Diğer koşullar aynı tutularak K ve L bitki türlerinin farklı sıcaklıklardaki fotosentez hızları ölçülmüş ve aşağıdaki grafik elde edilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 470 230" width="470" role="img" aria-label="K ve L bitkilerinde sıcaklık ve fotosentez hızı grafiği" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="185" x2="440" y2="185" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="189" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="60" y1="152" x2="440" y2="152" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="156" font-size="11" text-anchor="end" fill="#1e293b">20</text><line x1="60" y1="119" x2="440" y2="119" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="123" font-size="11" text-anchor="end" fill="#1e293b">40</text><line x1="60" y1="86" x2="440" y2="86" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="90" font-size="11" text-anchor="end" fill="#1e293b">60</text><line x1="60" y1="53" x2="440" y2="53" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="57" font-size="11" text-anchor="end" fill="#1e293b">80</text><line x1="60" y1="20" x2="440" y2="20" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="24" font-size="11" text-anchor="end" fill="#1e293b">100</text><line x1="60" y1="185" x2="60" y2="189" stroke="#334155" stroke-width="1.2"/><text x="60" y="202" font-size="11" text-anchor="middle" fill="#1e293b">0</text><line x1="107.5" y1="185" x2="107.5" y2="189" stroke="#334155" stroke-width="1.2"/><text x="107.5" y="202" font-size="11" text-anchor="middle" fill="#1e293b">5</text><line x1="155" y1="185" x2="155" y2="189" stroke="#334155" stroke-width="1.2"/><text x="155" y="202" font-size="11" text-anchor="middle" fill="#1e293b">10</text><line x1="202.5" y1="185" x2="202.5" y2="189" stroke="#334155" stroke-width="1.2"/><text x="202.5" y="202" font-size="11" text-anchor="middle" fill="#1e293b">15</text><line x1="250" y1="185" x2="250" y2="189" stroke="#334155" stroke-width="1.2"/><text x="250" y="202" font-size="11" text-anchor="middle" fill="#1e293b">20</text><line x1="297.5" y1="185" x2="297.5" y2="189" stroke="#334155" stroke-width="1.2"/><text x="297.5" y="202" font-size="11" text-anchor="middle" fill="#1e293b">25</text><line x1="345" y1="185" x2="345" y2="189" stroke="#334155" stroke-width="1.2"/><text x="345" y="202" font-size="11" text-anchor="middle" fill="#1e293b">30</text><line x1="392.5" y1="185" x2="392.5" y2="189" stroke="#334155" stroke-width="1.2"/><text x="392.5" y="202" font-size="11" text-anchor="middle" fill="#1e293b">35</text><line x1="440" y1="185" x2="440" y2="189" stroke="#334155" stroke-width="1.2"/><text x="440" y="202" font-size="11" text-anchor="middle" fill="#1e293b">40</text><line x1="60" y1="185" x2="448" y2="185" stroke="#334155" stroke-width="2"/><line x1="60" y1="185" x2="60" y2="12" stroke="#334155" stroke-width="2"/><path d="M60,168.5 L107.5,135.5 L155,94.2 L202.5,69.5 L250,86 L297.5,119 L345,152 L392.5,171.8 L440,181.7" fill="none" stroke="#2563eb" stroke-width="3"/><path d="M60,181.7 L107.5,176.8 L155,165.2 L202.5,143.8 L250,110.8 L297.5,77.8 L345,53 L392.5,86 L440,143.8" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="7 4"/><text x="250" y="219" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Sıcaklık (°C)</text><text x="14" y="102.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 102.5)">Fotosentez hızı</text><text x="183.5" y="59.6" font-size="14" text-anchor="middle" fill="#2563eb" font-weight="bold">K</text><text x="354.5" y="43.1" font-size="14" text-anchor="middle" fill="#dc2626" font-weight="bold">L</text></svg></div>
+<p><b>Bu grafiğe göre aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["Sıcaklık arttıkça L türünün fotosentez hızı sürekli artar.", "25 °C'de K türü, L türünden daha hızlı fotosentez yapar.", "K türünün fotosentezi 35 °C'den sonra tamamen durur.", "Ortalama sıcaklığı 10-15 °C olan bir bölgede K türünü yetiştirmek daha verimlidir."],
+  a: "D",
+  s: `<p>Grafiği aralık aralık oku. 10 °C'de K: 55, L: 12; 15 °C'de K: 70, L: 25. Bu aralıkta K'nin hızı belirgin şekilde yüksektir (D ✓).</p>
+<p>A ✗: L'nin hızı 30 °C'ye kadar artar, sonra azalır. B ✗: 25 °C'de K: 40, L: 65; L daha hızlıdır. C ✗: 35 °C'den sonra K'nin hızı azalır ama 40 °C'de bile sıfır olmaz; "azalır" ile "durur" farklıdır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Sıcaklığı sabit tutulan bir bitkinin fotosentez hızı, ortamdaki karbondioksit miktarı düşük ve yüksekken farklı ışık şiddetlerinde ölçülmüş; sonuçlar grafikte gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 470 235" width="470" role="img" aria-label="İki farklı karbondioksit düzeyinde ışık şiddeti ve fotosentez hızı" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="190" x2="440" y2="190" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="194" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="60" y1="156" x2="440" y2="156" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="160" font-size="11" text-anchor="end" fill="#1e293b">20</text><line x1="60" y1="122" x2="440" y2="122" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="126" font-size="11" text-anchor="end" fill="#1e293b">40</text><line x1="60" y1="88" x2="440" y2="88" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="92" font-size="11" text-anchor="end" fill="#1e293b">60</text><line x1="60" y1="54" x2="440" y2="54" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="58" font-size="11" text-anchor="end" fill="#1e293b">80</text><line x1="60" y1="20" x2="440" y2="20" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="24" font-size="11" text-anchor="end" fill="#1e293b">100</text><line x1="60" y1="190" x2="60" y2="194" stroke="#334155" stroke-width="1.2"/><text x="60" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="136" y1="190" x2="136" y2="194" stroke="#334155" stroke-width="1.2"/><text x="136" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="212" y1="190" x2="212" y2="194" stroke="#334155" stroke-width="1.2"/><text x="212" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="288" y1="190" x2="288" y2="194" stroke="#334155" stroke-width="1.2"/><text x="288" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="364" y1="190" x2="364" y2="194" stroke="#334155" stroke-width="1.2"/><text x="364" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="440" y1="190" x2="440" y2="194" stroke="#334155" stroke-width="1.2"/><text x="440" y="207" font-size="11" text-anchor="middle" fill="#1e293b"></text><line x1="60" y1="190" x2="448" y2="190" stroke="#334155" stroke-width="2"/><line x1="60" y1="190" x2="60" y2="12" stroke="#334155" stroke-width="2"/><path d="M60,190 L69.5,185.8 L79,181.5 L88.5,177.2 L98,173 L107.5,168.8 L117,164.5 L126.5,160.2 L136,156 L145.5,151.8 L155,147.5 L164.5,143.2 L174,139 L183.5,134.8 L193,130.5 L202.5,126.2 L212,122 L221.5,117.8 L231,113.5 L240.5,109.2 L250,105 L259.5,100.8 L269,96.5 L278.5,92.3 L288,88 L297.5,83.8 L307,79.5 L316.5,75.2 L326,71 L335.5,66.8 L345,62.6 L354.5,59.7 L364,57.8 L373.5,56.5 L383,55.6 L392.5,55.1 L402,54.7 L411.5,54.5 L421,54.3 L430.5,54.2 L440,54.1" fill="none" stroke="#16a34a" stroke-width="3"/><path d="M60,190 L69.5,185.8 L79,181.5 L88.5,177.2 L98,173 L107.5,168.8 L117,164.5 L126.5,160.2 L136,156 L145.5,151.8 L155,147.5 L164.5,143.2 L174,139 L183.5,134.8 L193,130.6 L202.5,127.7 L212,125.8 L221.5,124.5 L231,123.6 L240.5,123.1 L250,122.7 L259.5,122.5 L269,122.3 L278.5,122.2 L288,122.1 L297.5,122.1 L307,122.1 L316.5,122 L326,122 L335.5,122 L345,122 L354.5,122 L364,122 L373.5,122 L383,122 L392.5,122 L402,122 L411.5,122 L421,122 L430.5,122 L440,122" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 4"/><text x="250" y="224" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Işık şiddeti</text><text x="14" y="105" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 105)">Fotosentez hızı</text><circle cx="364" cy="122" r="5" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.5"/><text x="364" y="142" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">P</text><circle cx="136" cy="156" r="5" fill="#0f172a" stroke="#0f172a" stroke-width="1.5"/><text x="150" y="160" font-size="14" text-anchor="start" fill="#1e293b" font-weight="bold">R</text><text x="436.2" y="43.8" font-size="12" text-anchor="end" fill="#15803d" font-weight="bold">Yüksek CO2</text><text x="436.2" y="108.4" font-size="12" text-anchor="end" fill="#6d28d9" font-weight="bold">Düşük CO2</text></svg></div>
+<p><b>Düşük karbondioksit ortamındaki P ve R noktalarında fotosentez hızını artırmak için yapılması gereken değişiklikler hangi seçenekte doğru verilmiştir?</b></p>`,
+  c: ["P: Işık şiddetini artırmak – R: CO<sub>2</sub> miktarını artırmak", "P: CO<sub>2</sub> miktarını artırmak – R: Işık şiddetini artırmak", "P: Işık şiddetini artırmak – R: Işık şiddetini artırmak", "P: Ortama oksijen eklemek – R: CO<sub>2</sub> miktarını artırmak"],
+  a: "B",
+  s: `<p>P noktasında düşük CO<sub>2</sub> eğrisi yataylaşmıştır: ışık artsa da hız artmaz. Aynı ışık şiddetinde yüksek CO<sub>2</sub> eğrisi daha yukarıdadır; hızı artırmak için <b>CO<sub>2</sub></b> artırılmalıdır.</p>
+<p>R noktasında iki eğri üst üstedir: CO<sub>2</sub>'nin artırılması hızı değiştirmez, ama eğri hâlâ yükselmektedir; hızı <b>ışık şiddeti</b> artırır.</p>
+<p>A ve C platodaki noktada ışığı artırmanın işe yarayacağını sanmaktan, D oksijeni fotosentez hızını artıran bir faktör saymaktan doğar (oksijen fotosentezin ürünüdür).</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Hava geçirmeyen özdeş üç cam kaba fırında bekletilerek canlılardan arındırılmış eşit miktarda nemli toprak konuyor. Kaplara aşağıdaki işlemler uygulanıyor:</p>
+<p>1. kap: Toprağa bir saksı bitkisi dikiliyor; kap yeterli ışık alan bir ortamda bekletiliyor.<br>2. kap: Toprağa 1. kaptakiyle özdeş bir bitki dikiliyor; kap karanlık bir ortamda bekletiliyor.<br>3. kap: Bitki dikilmiyor; kap yeterli ışık alan bir ortamda bekletiliyor.</p>
+<p>Başlangıçta üç kaptaki karbondioksit miktarı 400 birimdir. 6 saat sonra yapılan ölçümler, hangi kaba ait olduğu belirtilmeden tabloya yazılmıştır.</p>
+<table><tr><th>Ölçüm</th><th>X</th><th>Y</th><th>Z</th></tr><tr><td>CO<sub>2</sub> miktarı (birim)</td><td>400</td><td>250</td><td>520</td></tr></table>
+<p><b>X, Y ve Z ölçümleri hangi kaplara aittir?</b></p>`,
+  c: ["X: 3. kap – Y: 1. kap – Z: 2. kap", "X: 1. kap – Y: 3. kap – Z: 2. kap", "X: 3. kap – Y: 2. kap – Z: 1. kap", "X: 2. kap – Y: 1. kap – Z: 3. kap"],
+  a: "A",
+  s: `<p>1. kap: Işıkta bitki hem fotosentez hem solunum yapar; yeterli ışıkta fotosentez daha hızlı olduğu için CO<sub>2</sub> <b>azalır</b> → 250 (Y).</p>
+<p>2. kap: Karanlıkta fotosentez olmaz, bitki yalnızca solunum yapar ve ortama CO<sub>2</sub> verir → <b>artar</b>, 520 (Z).</p>
+<p>3. kap: Toprak canlılardan arındırıldığı ve bitki olmadığı için CO<sub>2</sub> alan ya da veren canlı yoktur → <b>değişmez</b>, 400 (X).</p>
+<p>C, ışıkta CO<sub>2</sub>'nin arttığını; B, canlısız kapta değişim olacağını düşünmekten doğar.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>İçinde yalnızca bitkilerin bulunduğu, havalandırması kapalı bir serada 24 saat boyunca havadaki karbondioksit miktarı ölçülmüştür. Güneş 06.00'da doğmuş, 18.00'de batmıştır.</p>
+<div class="fig"><svg viewBox="0 0 480 235" width="480" role="img" aria-label="Kapalı bir serada 24 saat boyunca karbondioksit miktarı" font-family="Arial, Helvetica, sans-serif"><line x1="70" y1="190" x2="450" y2="190" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="194" font-size="11" text-anchor="end" fill="#1e293b">300</text><line x1="70" y1="141.4" x2="450" y2="141.4" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="145.4" font-size="11" text-anchor="end" fill="#1e293b">400</text><line x1="70" y1="92.9" x2="450" y2="92.9" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="96.9" font-size="11" text-anchor="end" fill="#1e293b">500</text><line x1="70" y1="44.3" x2="450" y2="44.3" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="48.3" font-size="11" text-anchor="end" fill="#1e293b">600</text><line x1="70" y1="190" x2="70" y2="194" stroke="#334155" stroke-width="1.2"/><text x="70" y="207" font-size="11" text-anchor="middle" fill="#1e293b">00.00</text><line x1="117.5" y1="190" x2="117.5" y2="194" stroke="#334155" stroke-width="1.2"/><text x="117.5" y="207" font-size="11" text-anchor="middle" fill="#1e293b">03.00</text><line x1="165" y1="190" x2="165" y2="194" stroke="#334155" stroke-width="1.2"/><text x="165" y="207" font-size="11" text-anchor="middle" fill="#1e293b">06.00</text><line x1="212.5" y1="190" x2="212.5" y2="194" stroke="#334155" stroke-width="1.2"/><text x="212.5" y="207" font-size="11" text-anchor="middle" fill="#1e293b">09.00</text><line x1="260" y1="190" x2="260" y2="194" stroke="#334155" stroke-width="1.2"/><text x="260" y="207" font-size="11" text-anchor="middle" fill="#1e293b">12.00</text><line x1="307.5" y1="190" x2="307.5" y2="194" stroke="#334155" stroke-width="1.2"/><text x="307.5" y="207" font-size="11" text-anchor="middle" fill="#1e293b">15.00</text><line x1="355" y1="190" x2="355" y2="194" stroke="#334155" stroke-width="1.2"/><text x="355" y="207" font-size="11" text-anchor="middle" fill="#1e293b">18.00</text><line x1="402.5" y1="190" x2="402.5" y2="194" stroke="#334155" stroke-width="1.2"/><text x="402.5" y="207" font-size="11" text-anchor="middle" fill="#1e293b">21.00</text><line x1="450" y1="190" x2="450" y2="194" stroke="#334155" stroke-width="1.2"/><text x="450" y="207" font-size="11" text-anchor="middle" fill="#1e293b">24.00</text><line x1="70" y1="190" x2="458" y2="190" stroke="#334155" stroke-width="2"/><line x1="70" y1="190" x2="70" y2="12" stroke="#334155" stroke-width="2"/><path d="M70,92.9 L117.5,63.7 L165,44.3 L212.5,102.6 L260,151.1 L307.5,170.6 L355,175.4 L402.5,131.7 L450,92.9" fill="none" stroke="#0f766e" stroke-width="3"/><text x="260" y="224" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Saat</text><text x="14" y="105" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 105)">Seradaki CO2 miktarı (birim)</text><circle cx="70" cy="92.9" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="117.5" cy="63.7" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="165" cy="44.3" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="212.5" cy="102.6" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="260" cy="151.1" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="307.5" cy="170.6" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="355" cy="175.4" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="402.5" cy="131.7" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/><circle cx="450" cy="92.9" r="3.5" fill="#0f766e" stroke="#0f766e" stroke-width="1.5"/></svg></div>
+<p><b>Grafiğe göre aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["06.00 ile 18.00 arasında bitkiler yalnızca fotosentez yapmıştır.", "Seradaki oksijen miktarı en fazla 06.00'da ölçülmüştür.", "12.00'de bitkilerin fotosentez hızı solunum hızından fazladır.", "21.00'deki CO<sub>2</sub> artışının nedeni bitkilerin havaya oksijen vermesidir."],
+  a: "C",
+  s: `<p>06.00-18.00 arasında CO<sub>2</sub> azalmaktadır. Bitkiler bu sırada da solunum yaptığı hâlde CO<sub>2</sub>'nin azalması, fotosentezle kullanılan CO<sub>2</sub>'nin solunumla verilenden fazla olduğunu gösterir. 12.00 bu aralıktadır (C ✓).</p>
+<p>A ✗: Bitkiler gündüz de solunum yapar. B ✗: 06.00'da CO<sub>2</sub> en fazladır; gece boyunca solunumla oksijen harcandığı için oksijen o saatte en azdır, en fazla oksijen akşama doğru (CO<sub>2</sub>'nin en az olduğu 18.00 civarında) beklenir. D ✗: Gece CO<sub>2</sub> artışının nedeni solunumdur; solunum oksijen vermez, oksijen kullanır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bozayılar sonbaharda çok fazla beslenerek vücutlarında yağ depolar. Kış uykusu boyunca aylarca hiçbir şey yemez ve su içmezler; bu sürede kalp atışları ve soluk alıp verme hızları çok yavaşlar. İlkbaharda uyandıklarında vücut kütlelerinin belirgin şekilde azaldığı görülür.</p>
+<p><b>Ayının kış uykusunda kütle kaybetmesinin en uygun açıklaması aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Kış uykusunda solunum tamamen durduğu için ayı enerji harcamaz; kütle kaybı yalnızca su kaybından kaynaklanır.", "Ayı uyurken de yaşamsal faaliyetlerini sürdürmek için depo besinlerini solunumla parçalayarak enerji (ATP) elde eder.", "Ayı vücut sıcaklığını yalnızca ortamdan aldığı ısıyla koruduğu için depo besinlerini kullanmaz.", "Kış uykusunda yalnızca kalp ve beyin hücreleri solunum yapar; diğer hücreler solunum yapmadığı için kütle azalır."],
+  a: "B",
+  s: `<p>Solunum, canlı yaşadığı sürece bütün hücrelerde kesintisiz sürer. Uyuyan ayı da kalbinin atması, vücut sıcaklığının korunması gibi faaliyetler için enerjiye ihtiyaç duyar. Bu enerjiyi depo yağları solunumla parçalayarak (ATP olarak) elde eder; harcanan depo besin kütle kaybına yol açar (B ✓).</p>
+<p>A ✗: Solunum yavaşlar ama durmaz. C ✗: Ayı vücut sıcaklığını besinlerden elde ettiği enerjiyle korur. D ✗: Yaşayan bütün hücreler solunum yapar.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, ağzına özdeş esnek balonlar geçirdiği üç kavanozu yaklaşık 37 °C'deki bir ortamda 6 saat bekletiyor. Kavanozların içerikleri ve gözlem sonuçları tabloda verilmiştir.</p>
+<table><tr><th>Kavanoz</th><th>İçerik</th><th>Gözlem</th></tr>
+<tr><td>1</td><td>Süt + canlı yoğurt bakterileri</td><td>Balon şişmedi; süt koyulaşıp ekşi tat kazandı.</td></tr>
+<tr><td>2</td><td>Şekerli su + canlı bira mayası</td><td>Balon şişti; alkol kokusu oluştu.</td></tr>
+<tr><td>3</td><td>Şekerli su + kaynatılarak öldürülmüş bira mayası</td><td>Hiçbir değişiklik olmadı.</td></tr></table>
+<p><b>Bu deneyle ilgili aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["2. kavanozda balonu şişiren gaz karbondioksittir.", "1. kavanozda gerçekleşen olayda gaz çıkışı olmamıştır.", "3. kavanoz, değişimlerin canlılar tarafından gerçekleştirildiğini göstermek için kurulmuştur.", "1. kavanozdaki bakteriler bu süreçte enerji elde etmemiştir."],
+  a: "D",
+  s: `<p>2. kavanozda maya mantarı etil alkol fermantasyonu yapar; alkol ve balonu şişiren <b>karbondioksit</b> oluşur (A ✓). 1. kavanozda yoğurt bakterileri laktik asit fermantasyonu yapar; bu olayda gaz çıkmaz, balon şişmez (B ✓). 3. kavanozdaki ölü maya hiçbir değişiklik oluşturmamıştır; bu düzenek canlı ile cansız mayayı karşılaştırmaya yarar (C ✓).</p>
+<p>D ✗: Fermantasyon da bir solunum çeşididir; canlı, oksijenli solunuma göre daha <b>az</b> da olsa enerji elde eder. "Gaz çıkmadıysa enerji de elde edilmemiştir" düşüncesi yanlıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şemada Güneş'ten gelen enerjinin, ekmek yiyen Ayşe'nin koşmasına kadar geçirdiği dönüşümler gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 545 125" width="545" role="img" aria-label="Güneşten koşan çocuğa enerji dönüşümü" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o14" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="10" y="30" width="120" height="62" rx="8" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.5"/><text x="70" y="54" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Güneş</text><text x="70" y="76" font-size="12" text-anchor="middle" fill="#1e293b">Işık enerjisi</text><rect x="145" y="30" width="120" height="62" rx="8" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.5"/><text x="205" y="52" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Buğday tanesi</text><text x="205" y="70" font-size="12" text-anchor="middle" fill="#1e293b">Besindeki kimyasal</text><text x="205" y="85" font-size="12" text-anchor="middle" fill="#1e293b">enerji</text><rect x="280" y="30" width="120" height="62" rx="8" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.5"/><text x="340" y="54" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Kas hücresi</text><text x="340" y="76" font-size="12" text-anchor="middle" fill="#1e293b">ATP</text><rect x="415" y="30" width="120" height="62" rx="8" fill="#f0f9ff" stroke="#0369a1" stroke-width="1.5"/><text x="475" y="54" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Koşan Ayşe</text><text x="475" y="76" font-size="12" text-anchor="middle" fill="#1e293b">Z enerjisi</text><line x1="132" y1="61" x2="153" y2="61" stroke="#334155" stroke-width="2" marker-end="url(#o14)"/><text x="142" y="112" font-size="12" text-anchor="middle" fill="#b45309" font-weight="bold">X olayı</text><line x1="267" y1="61" x2="288" y2="61" stroke="#334155" stroke-width="2" marker-end="url(#o14)"/><text x="277" y="112" font-size="12" text-anchor="middle" fill="#b45309" font-weight="bold">Y olayı</text><line x1="402" y1="61" x2="423" y2="61" stroke="#334155" stroke-width="2" marker-end="url(#o14)"/></svg></div>
+<p><b>Şemadaki X ve Y olayları ile Z enerjisi aşağıdakilerin hangisinde doğru verilmiştir?</b></p>`,
+  c: ["X: Solunum – Y: Fotosentez – Z: Hareket", "X: Fotosentez – Y: Sindirim – Z: Işık", "X: Fotosentez – Y: Solunum – Z: Hareket", "X: Fotosentez – Y: Solunum – Z: Işık"],
+  a: "C",
+  s: `<p>X: Işık enerjisini besindeki kimyasal enerjiye dönüştüren olay <b>fotosentezdir</b>. Y: Besindeki kimyasal enerjiyi hücrenin kullanabileceği ATP'ye dönüştüren olay <b>solunumdur</b>. Sindirim besinleri küçük parçalara ayırır ama ATP üretmez (B'deki yanılgı). Z: Koşan Ayşe'de ATP'deki enerji <b>hareket</b> enerjisine dönüşür (bir kısmı ısı olarak açığa çıkar); ışık enerjisi oluşmaz (D).</p>
+<p>A, iki olayın yerini karıştırır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir hayvanın üç farklı hücre türünde bulunan yaklaşık mitokondri sayıları tabloda verilmiştir. Hücreler aynı büyüklüktedir.</p>
+<table><tr><th>Hücre</th><th>K</th><th>L</th><th>M</th></tr><tr><td>Mitokondri sayısı (yaklaşık)</td><td>2500</td><td>800</td><td>100</td></tr></table>
+<p><b>Bu tabloya dayanarak aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["M hücresi solunum yapmaz.", "K hücresinin enerji ihtiyacı, L ve M hücrelerine göre daha fazla olabilir.", "L hücresi enerjisini fotosentezle karşılar.", "Mitokondri sayısı arttıkça hücrenin oksijen ihtiyacı azalır."],
+  a: "B",
+  s: `<p>Oksijenli solunum hücrede mitokondride gerçekleşir ve ATP üretilir. Mitokondrisi çok olan hücre daha çok ATP üretebilir; bu da o hücrenin enerji ihtiyacının fazla olabileceğini gösterir (B ✓; kas hücreleri bunun örneğidir).</p>
+<p>A ✗: M'de de mitokondri vardır, solunum yapar. C ✗: Hayvan hücreleri fotosentez yapmaz. D ✗: Oksijenli solunum oksijen kullanır; mitokondri sayısı arttıkça oksijen ihtiyacı artar.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><b>Haber:</b> Uydu ölçümleri, Antarktika üzerindeki ozon tabakasının her ilkbaharda belirgin şekilde inceldiğini gösteriyor. Bilim insanları bu incelmenin başlıca nedeni olarak geçmişte spreylerde ve eski tip buzdolaplarında kullanılan bazı gazları gösteriyor. Bu gazların kullanımı uluslararası anlaşmalarla sınırlandırıldıktan sonra tabakanın yavaş yavaş iyileşmeye başladığı bildiriliyor.</div>
+<p><b>Ozon tabakasının incelmesinin doğrudan sonucu olarak aşağıdakilerden hangisi beklenir?</b></p>`,
+  c: ["Buzulların erimesiyle deniz seviyesinin yükselmesi", "Havadaki karbondioksit miktarının artması", "Toprakta azot bağlayan bakterilerin artması", "Yeryüzüne ulaşan zararlı morötesi ışınların artmasıyla cilt hastalıklarının artması"],
+  a: "D",
+  s: `<p>Ozon tabakası, Güneş'ten gelen zararlı morötesi (UV) ışınların büyük kısmını tutar. Tabaka incelirse yeryüzüne daha çok UV ulaşır; bu da cilt hastalıklarının ve göz hasarının artmasına yol açabilir (D ✓).</p>
+<p>A ✗: Deniz seviyesinin yükselmesi küresel ısınmanın sonucudur; ozon incelmesi ile küresel ısınmayı karıştırmak tipik bir yanılgıdır. B ✗: CO<sub>2</sub> artışı fosil yakıt kullanımı ve ormansızlaşmayla ilgilidir. C ✗: Ozon incelmesinin azot bağlayan bakterilerle doğrudan ilişkisi yoktur.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Doğadaki karbon döngüsünün bir bölümü aşağıdaki şemada gösterilmiştir. Bazı aktarımlar numaralandırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 545 285" width="545" role="img" aria-label="Karbon döngüsü şeması" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o17" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="20" y="10" width="510" height="36" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/><text x="275" y="33" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">Atmosferdeki karbondioksit</text><rect x="20" y="120" width="100" height="34" rx="6" fill="#bbf7d0" stroke="#334155" stroke-width="1.5"/><text x="70" y="142" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Bitkiler</text><rect x="165" y="120" width="100" height="34" rx="6" fill="#fde68a" stroke="#334155" stroke-width="1.5"/><text x="215" y="142" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Hayvanlar</text><rect x="300" y="120" width="110" height="34" rx="6" fill="#e9d5ff" stroke="#334155" stroke-width="1.5"/><text x="355" y="142" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Ayrıştırıcılar</text><rect x="430" y="120" width="100" height="34" rx="6" fill="#d6d3d1" stroke="#334155" stroke-width="1.5"/><text x="480" y="142" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Fosil yakıtlar</text><rect x="150" y="240" width="240" height="34" rx="6" fill="#f5f5f4" stroke="#334155" stroke-width="1.5"/><text x="270" y="262" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Ölü canlılar ve atıklar</text><line x1="50" y1="46" x2="50" y2="118" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="38" cy="82" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="38" y="86.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">1</text><line x1="90" y1="120" x2="90" y2="48" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="102" cy="82" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="102" y="86.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">2</text><line x1="215" y1="120" x2="215" y2="48" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="227" cy="82" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="227" y="86.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">3</text><line x1="355" y1="120" x2="355" y2="48" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="367" cy="82" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="367" y="86.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">4</text><line x1="480" y1="120" x2="480" y2="48" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="492" cy="82" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="492" y="86.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">6</text><line x1="120" y1="137" x2="163" y2="137" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><line x1="80" y1="154" x2="180" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><line x1="215" y1="154" x2="240" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><line x1="330" y1="240" x2="350" y2="156" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><path d="M390,262 Q480,262 480,156" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#o17)"/><circle cx="470" cy="225" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="470" y="229.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">5</text></svg></div>
+<p><b>Bu şemayla ilgili aşağıdaki ifadelerden hangisi yanlıştır?</b></p>`,
+  c: ["1 numaralı olayı gerçekleştiren canlılar besin zincirinin ilk halkasını oluşturur.", "2 numaralı olay yalnızca gece gerçekleşir; bitkiler gündüz atmosfere karbon vermez.", "5 numaralı yolla oluşan maddelerin yakılması, 6 numaralı yolla atmosferdeki karbondioksiti artırır.", "Ormanların yakılması 1 numaralı olayı azaltırken atmosfere verilen karbondioksiti artırır."],
+  a: "B",
+  s: `<p>1: Bitkilerin fotosentezle CO<sub>2</sub> alması; fotosentez yapan canlılar üreticidir, zincirin ilk halkasıdır (A ✓). 2: Bitkilerin solunumla CO<sub>2</sub> vermesi. 3: Hayvanların solunumu. 4: Ayrıştırıcıların ölü canlıları ayrıştırırken CO<sub>2</sub> vermesi. 5: Ölü canlıların milyonlarca yılda fosil yakıta dönüşmesi. 6: Fosil yakıtların yanmasıyla CO<sub>2</sub> çıkışı (C ✓).</p>
+<p>B ✗: Bitkiler solunumu gece ve gündüz kesintisiz yapar. Gündüz fotosentez solunumdan hızlı olduğu için net olarak CO<sub>2</sub> alırlar, ama solunumla CO<sub>2</sub> vermeye devam ederler.</p>
+<p>D ✓: Ağaç sayısı azalınca fotosentez (1) azalır; yanan odundaki karbon CO<sub>2</sub> olarak havaya çıkar.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Azot döngüsünün bir bölümü aşağıdaki şemada gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 545 292" width="545" role="img" aria-label="Azot döngüsü şeması" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o18" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="15" y="10" width="515" height="36" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/><text x="272" y="33" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">Havadaki azot gazı</text><rect x="15" y="120" width="100" height="40" rx="6" fill="#fef9c3" stroke="#334155" stroke-width="1.5"/><text x="65" y="145" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Yıldırım</text><rect x="130" y="115" width="140" height="50" rx="6" fill="#dcfce7" stroke="#334155" stroke-width="1.5"/><text x="200" y="136" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Baklagil kökündeki</text><text x="200" y="153" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">bakteriler</text><rect x="330" y="120" width="90" height="40" rx="6" fill="#bbf7d0" stroke="#334155" stroke-width="1.5"/><text x="375" y="145" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Bitkiler</text><rect x="440" y="120" width="90" height="40" rx="6" fill="#fde68a" stroke="#334155" stroke-width="1.5"/><text x="485" y="145" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Hayvanlar</text><rect x="80" y="240" width="220" height="40" rx="6" fill="#f5f5f4" stroke="#334155" stroke-width="1.5"/><text x="190" y="265" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Topraktaki azotlu bileşikler</text><rect x="360" y="240" width="170" height="40" rx="6" fill="#f5f5f4" stroke="#334155" stroke-width="1.5"/><text x="445" y="265" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Ölü canlılar ve atıklar</text><line x1="65" y1="46" x2="65" y2="118" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><line x1="65" y1="160" x2="120" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><circle cx="80" cy="205" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="80" y="209.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">1</text><line x1="200" y1="46" x2="200" y2="113" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><line x1="200" y1="165" x2="200" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><circle cx="214" cy="205" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="214" y="209.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">2</text><line x1="358" y1="260" x2="302" y2="260" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><circle cx="330" cy="245" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="330" y="249.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">3</text><line x1="295" y1="240" x2="300" y2="48" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><circle cx="312" cy="100" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="312" y="104.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">4</text><line x1="260" y1="240" x2="352" y2="162" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><circle cx="282" cy="205" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="282" y="209.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">5</text><line x1="420" y1="140" x2="438" y2="140" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><line x1="395" y1="160" x2="420" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/><line x1="485" y1="160" x2="470" y2="238" stroke="#334155" stroke-width="1.8" marker-end="url(#o18)"/></svg></div>
+<div class="box">Uzun süre su altında kalan, havasız tarla topraklarında bazı bakteriler topraktaki azotlu bileşikleri azot gazına dönüştürerek havaya verir. Bu nedenle sel sonrası bu tarlalarda bitkilerin kullanabileceği azot azalır ve verim düşebilir.</div>
+<p><b>Metinde anlatılan olay, şemada hangi numarayla gösterilmiştir?</b></p>`,
+  c: ["2", "3", "4", "5"],
+  a: "C",
+  s: `<p>Okların yönünü oku: 1 ve 2 havadaki azotu (yıldırım ve azot bağlayıcı bakterilerle) toprağa bağlar. 3, ölü canlı ve atıklardaki azotun ayrıştırıcılarca azotlu bileşik hâlinde toprağa katılmasıdır. 5, bitkilerin azotlu bileşikleri kökleriyle almasıdır.</p>
+<p>Metindeki bakteriler topraktaki azotlu bileşikleri azot gazına çevirip <b>havaya</b> verir; topraktan havaya giden ok <b>4</b>'tür. A, azot bağlayıcı ile azot ayrıştırıcı bakterileri karıştırmaktan doğar; ikisinin görevi birbirinin tersidir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ormanlık bölgede yapılan araştırmada, bölgeye düşen yağmurun önemli bir kısmının ormandaki ağaçlardan havaya verilen su buharından oluştuğu belirlenmiştir. Aynı bölgede ağaç kesimi arttıkça yıllık yağış miktarının azaldığı gözlenmiştir.</p>
+<p><b>Ağaç kesimi ile yağıştaki azalma arasındaki ilişkiyi en iyi açıklayan ifade aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Ağaçlar azalınca yapraklardan terlemeyle havaya verilen su buharı azalır; bu da bulut oluşumunu ve yağışı azaltır.", "Ağaçlar azalınca fotosentez azalır ve havadaki oksijen artar; oksijen bulut oluşumunu engeller.", "Kesilen ağaçlar ayrıştırılamadığı için su döngüsü tamamen durur.", "Ağaçlar azalınca toprağa sızan su artar ve bölgede buharlaşma hiç gerçekleşmez."],
+  a: "A",
+  s: `<p>Su döngüsünde bitkiler kökleriyle aldıkları suyun bir kısmını yapraklarındaki gözeneklerden su buharı olarak havaya verir (terleme). Ağaçlar azaldıkça havaya verilen su buharı azalır, yoğuşup bulut oluşturacak su buharı da azalır; yağış düşer (A ✓).</p>
+<p>B ✗: Fotosentez azalırsa havadaki oksijen artmaz, azalır; oksijenin bulutla ilgisi yoktur. C ✗: Kesilen ağaçlar ayrıştırıcılarca ayrıştırılabilir ve su döngüsü durmaz. D ✗: Deniz, göl ve topraktan buharlaşma sürer.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Ağzı sıkıca kapatılmış bir cam şişeye nemli toprak ve küçük bir bitki konarak bir "şişe bahçesi" hazırlanmıştır. Pencere kenarında duran şişeye yıllarca hiç su eklenmemesine ve kapağı hiç açılmamasına rağmen bitki yaşamını sürdürmüştür.</p>
+<div class="fig"><svg viewBox="0 0 520 285" width="500" role="img" aria-label="Ağzı kapalı şişe bahçesi" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><path d="M150,40 L150,70 Q80,95 80,160 L80,250 Q80,268 98,268 L282,268 Q300,268 300,250 L300,160 Q300,95 230,70 L230,40 Z" fill="#f8fafc" stroke="#334155" stroke-width="2.5"/><rect x="140" y="26" width="100" height="18" rx="3" fill="#a16207" stroke="#713f12" stroke-width="1.5"/><path d="M82,215 L298,215 L298,250 Q298,266 282,266 L98,266 Q82,266 82,250 Z" fill="#d6b38a" stroke="#92400e" stroke-width="1"/><line x1="190" y1="215" x2="190" y2="140" stroke="#166534" stroke-width="3"/><ellipse cx="170" cy="165" rx="22" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.2" transform="rotate(-30 170 165)"/><ellipse cx="212" cy="150" rx="22" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.2" transform="rotate(30 212 150)"/><ellipse cx="168" cy="135" rx="22" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.2" transform="rotate(-25 168 135)"/><ellipse cx="210" cy="185" rx="22" ry="9" fill="#4ade80" stroke="#166534" stroke-width="1.2" transform="rotate(25 210 185)"/><ellipse cx="95" cy="120" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="100" cy="150" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="285" cy="125" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="282" cy="170" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="110" cy="100" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="270" cy="105" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="96" cy="185" rx="3" ry="4.5" fill="#93c5fd" stroke="#2563eb" stroke-width="0.8"/><ellipse cx="135" cy="210" rx="14" ry="5" fill="#a3a3a3" stroke="#525252"/><text x="380" y="80" font-size="12" text-anchor="start" fill="#1e293b">Sıkı kapak</text><line x1="377" y1="76" x2="242" y2="36" stroke="#334155" stroke-width="1.8" marker-end="url(#o20)"/><text x="380" y="125" font-size="12" text-anchor="start" fill="#1e293b">Cam yüzeydeki</text><text x="380" y="141" font-size="12" text-anchor="start" fill="#1e293b">su damlacıkları</text><line x1="377" y1="130" x2="290" y2="125" stroke="#334155" stroke-width="1.8" marker-end="url(#o20)"/><text x="380" y="185" font-size="12" text-anchor="start" fill="#1e293b">Bitki</text><line x1="377" y1="181" x2="225" y2="185" stroke="#334155" stroke-width="1.8" marker-end="url(#o20)"/><text x="380" y="225" font-size="12" text-anchor="start" fill="#1e293b">Ölü yaprak</text><line x1="377" y1="221" x2="152" y2="210" stroke="#334155" stroke-width="1.8" marker-end="url(#o20)"/><text x="380" y="255" font-size="12" text-anchor="start" fill="#1e293b">Bakteri ve mantar</text><text x="380" y="270" font-size="12" text-anchor="start" fill="#1e293b">içeren nemli toprak</text><line x1="377" y1="251" x2="300" y2="245" stroke="#334155" stroke-width="1.8" marker-end="url(#o20)"/></svg></div>
+<p>Bu şişe bahçesinde;</p>
+<p>I. Bitkinin terlemesiyle havaya verilen su buharı cam yüzeyde yoğuşarak yeniden toprağa döner.<br>II. Topraktaki ayrıştırıcılar ölü yaprakları ayrıştırarak içindeki maddeleri toprağa geri kazandırır.<br>III. Bitkinin fotosentezle ürettiği oksijen, şişedeki canlıların solunumunda kullanılır.</p>
+<p><b>olaylarından hangileri gerçekleşir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Kapalı şişede madde dışarıdan gelmez; canlılık maddelerin döngüyle yeniden kullanılmasıyla sürer. Yalnızca ışık enerjisi dışarıdan (pencereden) girer.</p>
+<p>I ✓: Terleme → yoğuşma (cam yüzeydeki damlalar) → toprağa dönüş: su döngüsü. II ✓: Ayrıştırıcılar ölü yaprakların maddelerini toprağa geri kazandırır; bitki bunları yeniden kullanır. III ✓: Fotosentezde üretilen oksijen bitkinin kendisi ve topraktaki canlılar tarafından solunumda kullanılır; solunumla çıkan CO<sub>2</sub> de fotosentezde kullanılır (karbon-oksijen döngüsü).</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci hava geçirmeyen özdeş iki cam kaba birer termometre yerleştiriyor. 1. kapta normal hava, 2. kapta ise karbondioksit oranı yüksek hava bulunuyor. Kapları özdeş lambaların altına aynı uzaklıkta koyarak sıcaklıklarını 20 dakika boyunca ölçüyor.</p>
+<div class="fig"><svg viewBox="0 0 470 235" width="470" role="img" aria-label="İki kaptaki sıcaklığın zamanla değişimi" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="190" x2="440" y2="190" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="194" font-size="11" text-anchor="end" fill="#1e293b">20</text><line x1="60" y1="161.7" x2="440" y2="161.7" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="165.7" font-size="11" text-anchor="end" fill="#1e293b">22</text><line x1="60" y1="133.3" x2="440" y2="133.3" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="137.3" font-size="11" text-anchor="end" fill="#1e293b">24</text><line x1="60" y1="105" x2="440" y2="105" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="109" font-size="11" text-anchor="end" fill="#1e293b">26</text><line x1="60" y1="76.7" x2="440" y2="76.7" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="80.7" font-size="11" text-anchor="end" fill="#1e293b">28</text><line x1="60" y1="48.3" x2="440" y2="48.3" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="52.3" font-size="11" text-anchor="end" fill="#1e293b">30</text><line x1="60" y1="20" x2="440" y2="20" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="24" font-size="11" text-anchor="end" fill="#1e293b">32</text><line x1="60" y1="190" x2="60" y2="194" stroke="#334155" stroke-width="1.2"/><text x="60" y="207" font-size="11" text-anchor="middle" fill="#1e293b">0</text><line x1="155" y1="190" x2="155" y2="194" stroke="#334155" stroke-width="1.2"/><text x="155" y="207" font-size="11" text-anchor="middle" fill="#1e293b">5</text><line x1="250" y1="190" x2="250" y2="194" stroke="#334155" stroke-width="1.2"/><text x="250" y="207" font-size="11" text-anchor="middle" fill="#1e293b">10</text><line x1="345" y1="190" x2="345" y2="194" stroke="#334155" stroke-width="1.2"/><text x="345" y="207" font-size="11" text-anchor="middle" fill="#1e293b">15</text><line x1="440" y1="190" x2="440" y2="194" stroke="#334155" stroke-width="1.2"/><text x="440" y="207" font-size="11" text-anchor="middle" fill="#1e293b">20</text><line x1="60" y1="190" x2="448" y2="190" stroke="#334155" stroke-width="2"/><line x1="60" y1="190" x2="60" y2="12" stroke="#334155" stroke-width="2"/><path d="M60,161.7 L155,133.3 L250,112.1 L345,97.9 L440,90.8" fill="none" stroke="#2563eb" stroke-width="3" stroke-dasharray="7 4"/><path d="M60,161.7 L155,119.2 L250,83.8 L345,55.4 L440,34.2" fill="none" stroke="#dc2626" stroke-width="3"/><text x="250" y="224" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Süre (dakika)</text><text x="14" y="105" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 105)">Sıcaklık (°C)</text><circle cx="60" cy="161.7" r="3.5" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/><circle cx="155" cy="133.3" r="3.5" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/><circle cx="250" cy="112.1" r="3.5" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/><circle cx="345" cy="97.9" r="3.5" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/><circle cx="440" cy="90.8" r="3.5" fill="#2563eb" stroke="#2563eb" stroke-width="1.5"/><circle cx="60" cy="161.7" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1.5"/><circle cx="155" cy="119.2" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1.5"/><circle cx="250" cy="83.8" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1.5"/><circle cx="345" cy="55.4" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1.5"/><circle cx="440" cy="34.2" r="3.5" fill="#dc2626" stroke="#dc2626" stroke-width="1.5"/><text x="430.5" y="24.2" font-size="12" text-anchor="end" fill="#dc2626" font-weight="bold">2. kap</text><text x="430.5" y="110.8" font-size="12" text-anchor="end" fill="#2563eb" font-weight="bold">1. kap</text></svg></div>
+<p><b>Bu deneyin sonucuna göre aşağıdakilerden hangisine ulaşılabilir?</b></p>`,
+  c: ["Karbondioksit, ozon tabakasını incelterek yeryüzüne ulaşan ışığı artırır.", "Lamba, 2. kaba 1. kaptan daha fazla ışık vermiştir.", "Havadaki karbondioksit miktarının artması, ısının daha fazla tutulmasına ve sıcaklığın daha çok artmasına yol açar.", "Karbondioksit fotosentezde kullanıldığı için 2. kaptaki sıcaklık daha çok artmıştır."],
+  a: "C",
+  s: `<p>İki kap arasındaki tek fark havadaki CO<sub>2</sub> miktarıdır. 20 dakikada 1. kap 22 → 27 °C (5 °C artış), 2. kap 22 → 31 °C (9 °C artış) olmuştur. CO<sub>2</sub> oranı yüksek kapta daha çok ısı tutulmuştur; bu, sera etkisinin bir modelidir (C ✓).</p>
+<p>A ✗: Deneyde ozon tabakası yoktur; ozon incelmesi ile sera etkisi farklı olaylardır. B ✗: Lambalar özdeş ve aynı uzaklıktadır (kontrol edilen değişken). D ✗: Kaplarda bitki yoktur, fotosentez gerçekleşmez.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ailenin yıllık karbon ayak izinin kalemlere göre dağılımı aşağıdaki grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 170" width="540" role="img" aria-label="Bir ailenin karbon ayak izinin kalemlere göre dağılımı" font-family="Arial, Helvetica, sans-serif"><text x="195" y="35" font-size="12" text-anchor="end" fill="#1e293b">Ulaşım</text><rect x="205" y="15" width="280" height="26" rx="3" fill="#f87171" stroke="#334155" stroke-width="1"/><text x="492" y="33" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">%40</text><text x="195" y="73" font-size="12" text-anchor="end" fill="#1e293b">Isınma</text><rect x="205" y="53" width="210" height="26" rx="3" fill="#fb923c" stroke="#334155" stroke-width="1"/><text x="422" y="71" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">%30</text><text x="195" y="111" font-size="12" text-anchor="end" fill="#1e293b">Beslenme</text><rect x="205" y="91" width="140" height="26" rx="3" fill="#facc15" stroke="#334155" stroke-width="1"/><text x="352" y="109" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">%20</text><text x="195" y="149" font-size="12" text-anchor="end" fill="#1e293b">Diğer (elektrik, alışveriş)</text><rect x="205" y="129" width="70" height="26" rx="3" fill="#a3a3a3" stroke="#334155" stroke-width="1"/><text x="282" y="147" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">%10</text></svg></div>
+<p>Aile, karbon ayak izini azaltmak için önce en büyük paya sahip kalemde değişiklik yapmaya karar veriyor.</p>
+<p><b>Buna göre ailenin ilk olarak uygulaması gereken öneri aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Evdeki eski ampulleri tasarruflu LED ampullerle değiştirmek", "Kısa mesafeli yolculuklarda otomobil yerine toplu taşıma veya bisiklet kullanmak", "Evin dış duvarlarına ısı yalıtımı yaptırmak", "Haftanın bazı günlerinde et yerine baklagil tüketmek"],
+  a: "B",
+  s: `<p>Grafikte en büyük pay %40 ile <b>ulaşıma</b> aittir. Ulaşımdan kaynaklanan sera gazını azaltan öneri, otomobil yerine toplu taşıma ya da bisiklet kullanmaktır (B ✓).</p>
+<p>Diğer öneriler de karbon ayak izini azaltır ama farklı kalemlere yöneliktir: A elektriğe (%10), C ısınmaya (%30), D beslenmeye (%20). Soru "en büyük paya sahip kalemi" sorduğu için doğru seçim B'dir.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ülkenin elektrik üretiminde kullandığı kaynakların paylarının 2010 ve 2025 yıllarındaki dağılımı aşağıda verilmiştir. İki yılda üretilen toplam elektrik miktarı yaklaşık aynıdır.</p>
+<div class="fig"><svg viewBox="0 0 520 165" width="520" role="img" aria-label="Bir ülkede elektrik üretiminde kaynakların payı" font-family="Arial, Helvetica, sans-serif"><text x="60" y="43" font-size="13" text-anchor="end" fill="#1e293b" font-weight="bold">2010</text><rect x="70" y="20" width="220" height="34" rx="0" fill="#57534e" stroke="#ffffff" stroke-width="1.5"/><text x="180" y="42" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">%50</text><rect x="290" y="20" width="132" height="34" rx="0" fill="#a8a29e" stroke="#ffffff" stroke-width="1.5"/><text x="356" y="42" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%30</text><rect x="422" y="20" width="66" height="34" rx="0" fill="#60a5fa" stroke="#ffffff" stroke-width="1.5"/><text x="455" y="42" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%15</text><rect x="488" y="20" width="22" height="34" rx="0" fill="#4ade80" stroke="#ffffff" stroke-width="1.5"/><text x="499" y="42" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%5</text><text x="60" y="98" font-size="13" text-anchor="end" fill="#1e293b" font-weight="bold">2025</text><rect x="70" y="75" width="110" height="34" rx="0" fill="#57534e" stroke="#ffffff" stroke-width="1.5"/><text x="125" y="97" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">%25</text><rect x="180" y="75" width="110" height="34" rx="0" fill="#a8a29e" stroke="#ffffff" stroke-width="1.5"/><text x="235" y="97" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%25</text><rect x="290" y="75" width="88" height="34" rx="0" fill="#60a5fa" stroke="#ffffff" stroke-width="1.5"/><text x="334" y="97" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%20</text><rect x="378" y="75" width="132" height="34" rx="0" fill="#4ade80" stroke="#ffffff" stroke-width="1.5"/><text x="444" y="97" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%30</text><rect x="70" y="140" width="14" height="14" rx="2" fill="#57534e" stroke="#334155" stroke-width="1"/><text x="89" y="152" font-size="11" text-anchor="start" fill="#1e293b">Kömür</text><rect x="131.5" y="140" width="14" height="14" rx="2" fill="#a8a29e" stroke="#334155" stroke-width="1"/><text x="150.5" y="152" font-size="11" text-anchor="start" fill="#1e293b">Doğal gaz</text><rect x="218.2" y="140" width="14" height="14" rx="2" fill="#60a5fa" stroke="#334155" stroke-width="1"/><text x="237.2" y="152" font-size="11" text-anchor="start" fill="#1e293b">Hidroelektrik</text><rect x="330.1" y="140" width="14" height="14" rx="2" fill="#4ade80" stroke="#334155" stroke-width="1"/><text x="349.1" y="152" font-size="11" text-anchor="start" fill="#1e293b">Rüzgâr ve güneş</text></svg></div>
+<p><b>Bu değişimin sonucu olarak aşağıdakilerden hangisi beklenir?</b></p>`,
+  c: ["Ozon tabakasındaki incelmenin hızlanması", "Fosil yakıtların elektrik üretimindeki payının artması", "Elektrik üretiminden kaynaklanan karbondioksit salımının artması", "Ülkenin, Kyoto Protokolü gibi anlaşmalardaki sera gazı azaltma hedeflerine yaklaşması"],
+  a: "D",
+  s: `<p>Fosil yakıtların (kömür + doğal gaz) payı 2010'da %50 + %30 = %80 iken 2025'te %25 + %25 = %50'ye inmiştir; yenilenebilir kaynakların payı %20'den %50'ye çıkmıştır. Toplam üretim aynı olduğuna göre fosil yakıt yakılması ve bununla oluşan CO<sub>2</sub> salımı azalır. Bu, Kyoto Protokolü gibi sera gazı salımını azaltmaya yönelik anlaşmaların hedefiyle uyumludur (D ✓).</p>
+<p>B ve C, verinin tersini söyler. A ✗: Ozon incelmesi elektrik üretim kaynaklarıyla değil, bazı sprey ve soğutucu gazlarla ilgilidir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir kasabada son 30 yılda yapılan gözlemler şöyledir:</p>
+<div class="box">• Kışın karla kaplı gün sayısı yarı yarıya azaldı.<br>• Yaz aylarında kuraklık ve orman yangınları arttı.<br>• Ani ve şiddetli sağanaklar nedeniyle sel olayları sıklaştı.<br>• Meyve ağaçları ilkbaharda eskisinden daha erken çiçek açmaya başladı.</div>
+<p>Uzmanlar bu değişikliklerin küresel iklim değişikliğiyle ilişkili olduğunu belirtiyor.</p>
+<p><b>Aşağıdakilerden hangisi küresel iklim değişikliğini yavaşlatmaya doğrudan katkı sağlamaz?</b></p>`,
+  c: ["Elektrik üretiminde kömür yerine güneş ve rüzgâr enerjisine yönelmek", "Binalarda ısı yalıtımı yaparak ısınmada harcanan yakıtı azaltmak", "Atık pilleri ayrı toplayarak içindeki ağır metallerin toprağa karışmasını önlemek", "Ağaçlandırma çalışmalarını artırmak"],
+  a: "C",
+  s: `<p>Küresel iklim değişikliğinin başlıca nedeni, sera gazlarının (özellikle CO<sub>2</sub>) artmasıdır. Doğrudan katkı sağlayan önlemler, sera gazı salımını azaltan ya da havadaki CO<sub>2</sub>'yi azaltan önlemlerdir: fosil yakıt yerine yenilenebilir enerji (A), yalıtımla daha az yakıt yakmak (B), fotosentezle CO<sub>2</sub> kullanan ağaçların artırılması (D).</p>
+<p>C ✗: Atık pillerin ayrı toplanması önemli bir çevre önlemidir ama toprak ve su kirliliğini önlemeye yöneliktir; sera gazı miktarını doğrudan azaltmaz.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir okulun öğrencileri, okulda çok su harcandığını fark ederek bir tasarruf projesi hazırlıyor. Önce birkaç ay su sayacını okuyarak tüketimi kaydediyorlar. Kasım ayı başında okuldaki tüm muslukları, el çekilince kendiliğinden kapanan sensörlü musluklarla değiştiriyorlar.</p>
+<table><tr><th>Ay</th><th>Öğrenci sayısı</th><th>Su tüketimi (m³)</th></tr>
+<tr><td>Eylül</td><td>600</td><td>100</td></tr><tr><td>Ekim</td><td>600</td><td>104</td></tr>
+<tr><td>Kasım</td><td>600</td><td>78</td></tr><tr><td>Aralık</td><td>600</td><td>76</td></tr></table>
+<p><b>Bu projeyle ilgili aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["Uygulamadan önce ölçüm yapılarak sorunun boyutu belirlenmiştir.", "Sensörlü musluklar, okulda içilen suyun kalitesini artırmıştır.", "Uygulamadan sonra aylık su tüketimi yaklaşık dörtte bir oranında azalmıştır.", "Öğrenci sayısının değişmemesi, tüketimlerin karşılaştırılmasını daha güvenilir kılmıştır."],
+  a: "B",
+  s: `<p>Önceki aylar ortalaması (100 + 104) / 2 = 102 m³, sonraki aylar ortalaması (78 + 76) / 2 = 77 m³. Azalma 25 m³'tür; 25 / 102 ≈ 0,25, yani yaklaşık dörtte bir (C ✓).</p>
+<p>A ✓: Proje, önce ölçüm yapılıp sorun belirlenerek başlamıştır. D ✓: Su tüketimini etkileyebilecek öğrenci sayısı sabit kaldığı için azalmanın musluklardan kaynaklandığı daha güvenle söylenebilir.</p>
+<p>B ✗: Tabloda suyun kalitesiyle ilgili hiçbir veri yoktur; sensörlü musluklar harcanan su <b>miktarını</b> azaltır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Kaynakların tasarruflu kullanımıyla ilgili bazı uygulamalar aşağıda verilmiştir.</p>
+<p>I. Eskiyen bir tişörtü keserek alışveriş için bez çanta dikmek<br>II. Atık cam şişelerin fabrikada eritilerek yeni şişelerin üretilmesi<br>III. Alışverişe ihtiyaç listesiyle giderek gereksiz ürün satın almamak</p>
+<p><b>Bu uygulamalar aşağıdaki kavramlarla hangi seçenekte doğru eşleştirilmiştir?</b></p>`,
+  c: ["I: Yeniden kullanım – II: Geri dönüşüm – III: Azaltma (tasarruf)", "I: Geri dönüşüm – II: Yeniden kullanım – III: Azaltma (tasarruf)", "I: Yeniden kullanım – II: Azaltma (tasarruf) – III: Geri dönüşüm", "I: Geri dönüşüm – II: Geri dönüşüm – III: Yeniden kullanım"],
+  a: "A",
+  s: `<p>I: Tişört ham maddeye dönüştürülmeden başka bir amaçla kullanılmıştır → <b>yeniden kullanım</b>. II: Atık cam eritilerek ham madde olarak yeniden üretime katılmıştır → <b>geri dönüşüm</b>. III: Kaynağı daha az harcamak, gereksiz tüketimi önlemek → <b>azaltma (tasarruf)</b>.</p>
+<p>B ve D, eşyanın işlenmeden yeni amaçla kullanılmasını (I) geri dönüşüm sanmaktan doğar; bu, kavanozu kalemlik yapmakla aynı mantıktır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir belediye 2023 yılında atıkların kaynağında ayrıştırılması için kampanya başlatmıştır. Kentte toplanan atıkların gönderildiği yerlere göre <b>yüzde</b> dağılımı aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 240" width="500" role="img" aria-label="Kent atıklarının gönderildiği yerlere göre yüzde dağılımı" font-family="Arial, Helvetica, sans-serif"><rect x="110" y="191" width="70" height="19" rx="0" fill="#4ade80" stroke="#ffffff" stroke-width="1.5"/><text x="145" y="205.5" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%10</text><rect x="110" y="181.5" width="70" height="9.5" rx="0" fill="#a16207" stroke="#ffffff" stroke-width="1.5"/><text x="104" y="191.2" font-size="12" text-anchor="end" fill="#1e293b" font-weight="bold">%5</text><rect x="110" y="20" width="70" height="161.5" rx="0" fill="#a8a29e" stroke="#ffffff" stroke-width="1.5"/><text x="145" y="105.8" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%85</text><text x="145" y="228" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">2022</text><rect x="250" y="143.5" width="70" height="66.5" rx="0" fill="#4ade80" stroke="#ffffff" stroke-width="1.5"/><text x="285" y="181.8" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%35</text><rect x="250" y="115" width="70" height="28.5" rx="0" fill="#a16207" stroke="#ffffff" stroke-width="1.5"/><text x="285" y="134.2" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">%15</text><rect x="250" y="20" width="70" height="95" rx="0" fill="#a8a29e" stroke="#ffffff" stroke-width="1.5"/><text x="285" y="72.5" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">%50</text><text x="285" y="228" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">2025</text><line x1="80" y1="210" x2="320" y2="210" stroke="#334155" stroke-width="2"/><rect x="350" y="60" width="16" height="16" rx="2" fill="#4ade80" stroke="#334155" stroke-width="1"/><text x="374" y="73" font-size="12" text-anchor="start" fill="#1e293b">Geri dönüşüm</text><rect x="350" y="90" width="16" height="16" rx="2" fill="#a16207" stroke="#334155" stroke-width="1"/><text x="374" y="103" font-size="12" text-anchor="start" fill="#1e293b">Kompost</text><rect x="350" y="120" width="16" height="16" rx="2" fill="#a8a29e" stroke="#334155" stroke-width="1"/><text x="374" y="133" font-size="12" text-anchor="start" fill="#1e293b">Depolama alanı</text></svg></div>
+<p><b>Grafiğe göre aşağıdakilerden hangisi kesinlikle söylenebilir?</b></p>`,
+  c: ["Kentte üretilen toplam atık miktarı azalmıştır.", "Kampanya, kentte cam ambalaj tüketimini azaltmıştır.", "Depolama alanına gönderilen atığın toplam atık içindeki payı azalmıştır.", "Geri dönüşüme gönderilen atıkların tamamı ambalaj atığıdır."],
+  a: "C",
+  s: `<p>Grafik yalnızca <b>yüzde</b> (pay) gösterir. Depolama alanına giden atığın payı %85'ten %50'ye inmiştir; bu kesinlikle söylenebilir (C ✓).</p>
+<p>A ✗: Yüzde dağılımından toplam atık miktarının arttığı ya da azaldığı anlaşılamaz. B ✗: Grafikte atık türlerine ya da tüketime ait veri yoktur. D ✗: Geri dönüşüme giden atığın içeriği verilmemiştir. Bu çeldiriciler, grafikte olmayan bilgiyi grafikten çıkarmaya çalışmaktan doğar.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aynı bölgede, aynı ürünün yetiştirildiği eşit büyüklükteki üç tarlada farklı sulama yöntemleri denenmiş ve bir sezon sonunda aşağıdaki sonuçlar elde edilmiştir.</p>
+<table><tr><th>Sulama yöntemi</th><th>Kullanılan su (ton)</th><th>Elde edilen ürün (kg)</th></tr>
+<tr><td>Salma (tarlayı su ile doldurma)</td><td>900</td><td>6000</td></tr>
+<tr><td>Yağmurlama</td><td>600</td><td>6300</td></tr>
+<tr><td>Damla sulama</td><td>400</td><td>6600</td></tr></table>
+<p><b>Bu verilere göre aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["Kullanılan su miktarı arttıkça elde edilen ürün miktarı artmıştır.", "Yağmurlama, hem su tasarrufu hem ürün miktarı bakımından en uygun yöntemdir.", "Damla sulamada, salma sulamaya göre kullanılan suyun dörtte üçü tasarruf edilmiştir.", "Damla sulama, daha az su kullanılarak daha fazla ürün elde edilmesini sağlamıştır."],
+  a: "D",
+  s: `<p>Damla sulamada en az su (400 ton) kullanılmış ve en fazla ürün (6600 kg) elde edilmiştir (D ✓).</p>
+<p>A ✗: Su azaldıkça ürün artmıştır. B ✗: Her iki bakımdan da en uygun yöntem damla sulamadır. C ✗: Tasarruf 900 − 400 = 500 ton; 500 / 900 ≈ %56, yani yarıdan biraz fazla. Dörtte üç (%75) değildir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Tarımın yoğun yapıldığı bir ovada, kuyularda yer altı suyuna ulaşılan derinliğin yıllara göre değişimi aşağıdaki grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 470 225" width="470" role="img" aria-label="Yıllara göre yer altı suyunun yüzeyden derinliği" font-family="Arial, Helvetica, sans-serif"><line x1="70" y1="180" x2="440" y2="180" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="184" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="70" y1="157.1" x2="440" y2="157.1" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="161.1" font-size="11" text-anchor="end" fill="#1e293b">10</text><line x1="70" y1="134.3" x2="440" y2="134.3" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="138.3" font-size="11" text-anchor="end" fill="#1e293b">20</text><line x1="70" y1="111.4" x2="440" y2="111.4" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="115.4" font-size="11" text-anchor="end" fill="#1e293b">30</text><line x1="70" y1="88.6" x2="440" y2="88.6" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="92.6" font-size="11" text-anchor="end" fill="#1e293b">40</text><line x1="70" y1="65.7" x2="440" y2="65.7" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="69.7" font-size="11" text-anchor="end" fill="#1e293b">50</text><line x1="70" y1="42.9" x2="440" y2="42.9" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="46.9" font-size="11" text-anchor="end" fill="#1e293b">60</text><line x1="70" y1="20" x2="440" y2="20" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="24" font-size="11" text-anchor="end" fill="#1e293b">70</text><line x1="70" y1="180" x2="70" y2="184" stroke="#334155" stroke-width="1.2"/><text x="70" y="197" font-size="11" text-anchor="middle" fill="#1e293b">2000</text><line x1="162.5" y1="180" x2="162.5" y2="184" stroke="#334155" stroke-width="1.2"/><text x="162.5" y="197" font-size="11" text-anchor="middle" fill="#1e293b">2005</text><line x1="255" y1="180" x2="255" y2="184" stroke="#334155" stroke-width="1.2"/><text x="255" y="197" font-size="11" text-anchor="middle" fill="#1e293b">2010</text><line x1="347.5" y1="180" x2="347.5" y2="184" stroke="#334155" stroke-width="1.2"/><text x="347.5" y="197" font-size="11" text-anchor="middle" fill="#1e293b">2015</text><line x1="440" y1="180" x2="440" y2="184" stroke="#334155" stroke-width="1.2"/><text x="440" y="197" font-size="11" text-anchor="middle" fill="#1e293b">2020</text><line x1="70" y1="180" x2="448" y2="180" stroke="#334155" stroke-width="2"/><line x1="70" y1="180" x2="70" y2="12" stroke="#334155" stroke-width="2"/><path d="M70,134.3 L162.5,116 L255,95.4 L347.5,70.3 L440,42.9" fill="none" stroke="#0369a1" stroke-width="3"/><text x="255" y="214" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Yıl</text><text x="14" y="100" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 100)">Yer altı suyu derinliği (m)</text><circle cx="70" cy="134.3" r="4" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/><text x="80" y="125.3" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">20</text><circle cx="162.5" cy="116" r="4" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/><text x="162.5" y="107" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">28</text><circle cx="255" cy="95.4" r="4" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/><text x="255" y="86.4" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">37</text><circle cx="347.5" cy="70.3" r="4" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/><text x="347.5" y="61.3" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">48</text><circle cx="440" cy="42.9" r="4" fill="#0369a1" stroke="#0369a1" stroke-width="1.5"/><text x="440" y="33.9" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">60</text></svg></div>
+<p>Uzmanlar, bu durum sürerse ovada su kıtlığı yaşanabileceğini ve tarımın zarar göreceğini belirtiyor.</p>
+<p><b>Aşağıdakilerden hangisi bu soruna yönelik uygun bir çözüm önerisi değildir?</b></p>`,
+  c: ["Tarlalarda salma sulama yerine damla sulamaya geçmek", "Daha derin yeni kuyular açarak daha fazla yer altı suyu çekmek", "Yağmur suyunu biriktirip sulamada kullanmak", "Arıtılmış atık suyu tarımsal sulamada kullanmak"],
+  a: "B",
+  s: `<p>Grafikte suya ulaşılan derinlik 20 yılda 20 m'den 60 m'ye çıkmıştır; yer altı suyu, yerine konandan daha hızlı çekilmektedir. Çözüm, çekilen suyu azaltmak ya da başka kaynaklar kullanmaktır: damla sulama (A), yağmur suyu (C), arıtılmış atık su (D).</p>
+<p>B ✗: Daha derin kuyularla daha çok su çekmek kısa vadede suya ulaşmayı sağlar ama yer altı suyunu daha da hızlı tüketir; sorunu büyütür, sürdürülebilir değildir.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir bahçede <b>meşe ağacı → tırtıl → serçe</b> besin zinciri bulunmaktadır. Zincirde 1 meşe ağacı, bu ağacın yapraklarıyla beslenen binlerce tırtıl ve tırtıllarla beslenen 5 serçe vardır.</p>
+<div class="fig"><svg viewBox="0 0 520 182" width="520" role="img" aria-label="Dört farklı ekolojik piramit şekli" font-family="Arial, Helvetica, sans-serif"><text x="60" y="18" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><rect x="5" y="120" width="110" height="26" rx="2" fill="#bbf7d0" stroke="#334155" stroke-width="1.2"/><rect x="25" y="90" width="70" height="26" rx="2" fill="#fde68a" stroke="#334155" stroke-width="1.2"/><rect x="45" y="60" width="30" height="26" rx="2" fill="#fecaca" stroke="#334155" stroke-width="1.2"/><text x="190" y="18" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><rect x="178" y="120" width="24" height="26" rx="2" fill="#bbf7d0" stroke="#334155" stroke-width="1.2"/><rect x="135" y="90" width="110" height="26" rx="2" fill="#fde68a" stroke="#334155" stroke-width="1.2"/><rect x="170" y="60" width="40" height="26" rx="2" fill="#fecaca" stroke="#334155" stroke-width="1.2"/><text x="320" y="18" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><rect x="305" y="120" width="30" height="26" rx="2" fill="#bbf7d0" stroke="#334155" stroke-width="1.2"/><rect x="285" y="90" width="70" height="26" rx="2" fill="#fde68a" stroke="#334155" stroke-width="1.2"/><rect x="265" y="60" width="110" height="26" rx="2" fill="#fecaca" stroke="#334155" stroke-width="1.2"/><text x="450" y="18" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text><rect x="395" y="120" width="110" height="26" rx="2" fill="#bbf7d0" stroke="#334155" stroke-width="1.2"/><rect x="435" y="90" width="30" height="26" rx="2" fill="#fde68a" stroke="#334155" stroke-width="1.2"/><rect x="415" y="60" width="70" height="26" rx="2" fill="#fecaca" stroke="#334155" stroke-width="1.2"/><text x="270" y="172" font-size="12" text-anchor="middle" fill="#1e293b">(Her şekilde alttaki basamak meşe ağacı, ortadaki tırtıllar, üstteki serçelerdir.)</text></svg></div>
+<p><b>Bu besin zincirinin birey sayısı piramidi ve enerji piramidi sırasıyla hangileridir?</b></p>`,
+  c: ["Birey sayısı: I – Enerji: I", "Birey sayısı: II – Enerji: II", "Birey sayısı: II – Enerji: I", "Birey sayısı: III – Enerji: I"],
+  a: "C",
+  s: `<p>Birey sayısı: 1 ağaç (çok dar), binlerce tırtıl (en geniş), 5 serçe (dar) → ortası en geniş şekil, <b>II</b>. Tek bir ağaç çok büyük olduğu için birçok tırtılı besleyebilir; bu yüzden birey sayısı piramidi her zaman düzgün olmaz.</p>
+<p>Enerji: Her basamak aldığı enerjinin büyük kısmını kullanır ve ısı olarak kaybeder; üst basamağa daha azı geçer. Enerji piramidi bu nedenle <b>her zaman</b> alttan üste daralır → <b>I</b>.</p>
+<p>B, enerji piramidinin de birey sayısı gibi değişebileceğini sanmaktan; A ve D, birey sayısını vücut büyüklüğüne göre değil "üretici en kalabalıktır" kalıbına göre düşünmekten doğar.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir gölde <b>fitoplankton → zooplankton → küçük balık → balıkçıl kuş</b> besin zinciri bulunmaktadır. Göle dışarıdan getirilen ve yalnızca küçük balıklarla beslenen yeni bir avcı balık türü bırakılmış, bu tür kısa sürede çoğalmıştır.</p>
+<p>Bir süre sonra bu gölde;</p>
+<p>I. Küçük balıkların sayısının azalması,<br>II. Zooplankton sayısının artması,<br>III. Balıkçıl kuşların besin bulmakta zorlanması</p>
+<p><b>durumlarından hangilerinin gerçekleşmesi beklenir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Yeni avcı küçük balıkları yer → küçük balıklar azalır (I ✓).</p>
+<p>Küçük balıklar azalınca onların besini olan zooplanktonlar daha az avlanır ve çoğalır (II ✓). Küçük balıklarla beslenen balıkçıl kuşların besini azalır ve yeni avcıyla rekabet ederler; besin bulmakta zorlanırlar (III ✓).</p>
+<p>Bir halkadaki değişim, zincirin hem üstündeki hem altındaki halkalara yayılır. Yalnızca I'i seçmek, etkinin zincir boyunca ilerlediğini gözden kaçırmaktır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci mikroskopla incelediği ya da araştırdığı dört canlıyla ilgili bilgileri tabloya yazmıştır.</p>
+<table><tr><th>Canlı</th><th>Özellikleri</th></tr>
+<tr><td>K</td><td>Tek hücrelidir, kamçısıyla suda hareket eder, hücresinde kloroplast bulunur.</td></tr>
+<tr><td>L</td><td>Çürümüş odunların üzerinde yaşar, ölü odunu parçalayarak beslenir, klorofili yoktur.</td></tr>
+<tr><td>M</td><td>Tek hücreli bir bakteridir, klorofil içerir ve ışıkta ortama oksijen verir.</td></tr>
+<tr><td>N</td><td>Tek hücreli bir mantardır, klorofili yoktur, şekerli ortamda karbondioksit ve alkol oluşturur.</td></tr></table>
+<p><b>Bu canlılardan hangileri besin zincirinde üretici olarak yer alır?</b></p>`,
+  c: ["K ve M", "Yalnız K", "K, L ve M", "L ve N"],
+  a: "A",
+  s: `<p>Üretici, fotosentezle kendi besinini üreten canlıdır. Fotosentez için klorofil gerekir.</p>
+<p>K (öglena benzeri): Kloroplast içerir, fotosentez yapar → üretici. Hareket etmesi üretici olmasına engel değildir (B'deki yanılgı). M (siyanobakteri benzeri): Klorofil içerir, ışıkta oksijen verir → fotosentez yapar, üreticidir.</p>
+<p>L ölü odunu ayrıştıran bir ayrıştırıcıdır; N ise oksijensiz solunum (etil alkol fermantasyonu) yapan maya mantarıdır. İkisinde de klorofil yoktur, besinlerini dışarıdan hazır alırlar (C ve D).</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir araştırmacı, kurutulup tartılmış toprakla doldurduğu büyük bir saksıya bir söğüt fidanı dikiyor. Saksının üstünü toz girmeyecek şekilde, yalnızca hava geçirecek biçimde örtüyor ve ağacı 5 yıl boyunca güneşli bir yerde yalnızca suyla suluyor. Sonuçlar şekilde verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 500 280" width="480" role="img" aria-label="Saksıdaki söğüt ağacının başlangıç ve 5 yıl sonraki kütleleri" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o33" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><text x="110" y="18" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Başlangıç</text><path d="M50,170 L65,230 L155,230 L170,170 Z" fill="#c2410c" stroke="#7c2d12" stroke-width="2"/><rect x="45" y="162" width="130" height="10" rx="2" fill="#9a3412" stroke="#7c2d12" stroke-width="1"/><line x1="110" y1="162" x2="110" y2="132" stroke="#78350f" stroke-width="5"/><ellipse cx="110" cy="132" rx="28" ry="17" fill="#4ade80" stroke="#166534" stroke-width="1.5"/><text x="110" y="252" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Ağaç: 2 kg</text><text x="110" y="268" font-size="12" text-anchor="middle" fill="#1e293b">Kuru toprak: 100 kg</text><text x="380" y="18" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">5 yıl sonra</text><path d="M320,170 L335,230 L425,230 L440,170 Z" fill="#c2410c" stroke="#7c2d12" stroke-width="2"/><rect x="315" y="162" width="130" height="10" rx="2" fill="#9a3412" stroke="#7c2d12" stroke-width="1"/><line x1="380" y1="162" x2="380" y2="67" stroke="#78350f" stroke-width="5"/><ellipse cx="380" cy="67" rx="49" ry="33" fill="#4ade80" stroke="#166534" stroke-width="1.5"/><text x="380" y="252" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Ağaç: 32 kg</text><text x="380" y="268" font-size="12" text-anchor="middle" fill="#1e293b">Kuru toprak: 99,9 kg</text><line x1="225" y1="140" x2="262" y2="140" stroke="#334155" stroke-width="2.5" marker-end="url(#o33)"/></svg></div>
+<p><b>Ağacın kütlesindeki artışın büyük kısmının kaynağı aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Kökler aracılığıyla topraktan alınan mineraller", "Fotosentezle havadan alınan karbondioksit ve topraktan alınan sudan üretilen besin", "Yalnızca kökler aracılığıyla alınan su", "Yapraklardan alınan oksijen gazı"],
+  a: "B",
+  s: `<p>Ağacın kütlesi 2 kg'dan 32 kg'a çıkmıştır: 30 kg artış. Topraktaki azalma yalnızca 100 − 99,9 = 0,1 kg'dır. Artışın çok küçük bir kısmı topraktan gelen minerallerle açıklanabilir (A ✗).</p>
+<p>Ağaç fotosentezle havadan aldığı <b>karbondioksit</b> ve topraktan aldığı <b>su</b> ile besin üretmiş; bu besinleri gövde, dal ve yaprak yapısında kullanarak büyümüştür (B ✓).</p>
+<p>C ✗: Su tek başına besin değildir; havadan alınan CO<sub>2</sub> olmadan besin üretilemez. (Bu deneyi ilk yapan bilim insanı da kütle artışını yalnızca suya bağlamıştı.) D ✗: Oksijen fotosentezin ürünüdür; bitki solunumda oksijen kullanır ama kütle artışının kaynağı oksijen değildir.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bazı süs bitkilerinin yapraklarının kenar bölgeleri beyaz, iç bölgeleri yeşildir. Bir öğrenci böyle bir saksı bitkisini 2 gün karanlıkta bekletiyor, ardından bir gün güneş ışığında bırakıyor. Daha sonra bir yaprağı koparıp kaynar suda ve alkolde bekleterek rengini açtıktan sonra üzerine iyot çözeltisi damlatıyor.</p>
+<div class="fig"><svg viewBox="0 0 520 262" width="500" role="img" aria-label="Alacalı yaprağın iyot testi öncesi ve sonrası" font-family="Arial, Helvetica, sans-serif"><text x="120" y="18" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Deneyden önce</text><path d="M30,150 Q120,40 210,150 Q120,260 30,150 Z" fill="#ffffff" stroke="#475569" stroke-width="2"/><path d="M62,150 Q120,82 178,150 Q120,218 62,150 Z" fill="#22c55e" stroke="#475569" stroke-width="1"/><line x1="22" y1="150" x2="210" y2="150" stroke="#475569" stroke-width="1.5"/><text x="120" y="236" font-size="12" text-anchor="middle" fill="#1e293b">İç bölge: yeşil</text><text x="120" y="252" font-size="12" text-anchor="middle" fill="#1e293b">Kenar bölge: beyaz</text><text x="390" y="18" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">İyot damlatıldıktan sonra</text><path d="M300,150 Q390,40 480,150 Q390,260 300,150 Z" fill="#fde68a" stroke="#475569" stroke-width="2"/><path d="M332,150 Q390,82 448,150 Q390,218 332,150 Z" fill="#5b21b6" stroke="#475569" stroke-width="1"/><line x1="292" y1="150" x2="480" y2="150" stroke="#475569" stroke-width="1.5"/><text x="390" y="236" font-size="12" text-anchor="middle" fill="#1e293b">İç bölge: mavi-mor</text><text x="390" y="252" font-size="12" text-anchor="middle" fill="#1e293b">Kenar bölge: sarı-kahverengi</text></svg></div>
+<p><b>Bu deneyin sonucuna göre aşağıdakilerden hangisine ulaşılabilir?</b></p>`,
+  c: ["Fotosentez için karbondioksit gereklidir.", "Fotosentez yapay ışıkta da gerçekleşir.", "Yaprağın beyaz bölgesindeki hücreler solunum yapmaz.", "Fotosentez için klorofil gereklidir."],
+  a: "D",
+  s: `<p>Bitkinin karanlıkta bekletilmesi yapraktaki eski nişastayı harcatır; sonradan görülen nişasta deney sırasında üretilmiştir. İyot, nişastayla mavi-mor renk verir.</p>
+<p>Yeşil (klorofil içeren) bölge mavi-mor olmuş, nişasta üretilmiştir; beyaz (klorofilsiz) bölge iyodun kendi rengini korumuş, nişasta üretilmemiştir. İki bölge aynı ışığı ve havayı aldığı için tek fark klorofildir → fotosentez için klorofil gereklidir (D ✓).</p>
+<p>A ✗: CO<sub>2</sub> miktarı değiştirilmemiştir. B ✗: Deneyde güneş ışığı kullanılmıştır. C ✗: Deney solunumla ilgili değildir; beyaz bölgedeki canlı hücreler de solunum yapar.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>25 °C'deki su içinde bulunan bir su bitkisi, mavi ışık veren bir lambayla aydınlatılmakta ve bitkiden bir dakikada çıkan gaz kabarcıkları sayılmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 520 210" width="500" role="img" aria-label="Mavi ışıkla aydınlatılan su bitkisi düzeneği" font-family="Arial, Helvetica, sans-serif"><defs><marker id="o35" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="30" y="70" width="70" height="26" rx="4" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1.5"/><text x="65" y="60" font-size="12" text-anchor="middle" fill="#1d4ed8" font-weight="bold">Mavi ışık</text><line x1="104" y1="73" x2="150" y2="63" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5 4"/><line x1="104" y1="83" x2="150" y2="83" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5 4"/><line x1="104" y1="93" x2="150" y2="103" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5 4"/><rect x="170" y="30" width="190" height="170" rx="6" fill="#e0f2fe" stroke="#334155" stroke-width="2"/><text x="265" y="22" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">25 °C su</text><rect x="240" y="50" width="50" height="140" rx="20" fill="#f0f9ff" stroke="#0369a1" stroke-width="2"/><line x1="265" y1="185" x2="265" y2="110" stroke="#15803d" stroke-width="3"/><ellipse cx="252" cy="150" rx="11" ry="5" fill="#4ade80" stroke="#166534" transform="rotate(-35 252 150)"/><ellipse cx="278" cy="135" rx="11" ry="5" fill="#4ade80" stroke="#166534" transform="rotate(35 278 135)"/><ellipse cx="254" cy="120" rx="11" ry="5" fill="#4ade80" stroke="#166534" transform="rotate(-30 254 120)"/><ellipse cx="277" cy="165" rx="11" ry="5" fill="#4ade80" stroke="#166534" transform="rotate(30 277 165)"/><circle cx="265" cy="95" r="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.2"/><circle cx="262" cy="80" r="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.2"/><circle cx="268" cy="66" r="4" fill="#ffffff" stroke="#0369a1" stroke-width="1.2"/><text x="390" y="75" font-size="12" text-anchor="start" fill="#1e293b">Gaz kabarcıkları</text><line x1="387" y1="72" x2="274" y2="80" stroke="#334155" stroke-width="1.8" marker-end="url(#o35)"/><text x="390" y="150" font-size="12" text-anchor="start" fill="#1e293b">Su bitkisi</text><line x1="387" y1="147" x2="288" y2="140" stroke="#334155" stroke-width="1.8" marker-end="url(#o35)"/></svg></div>
+<p>Düzenekte yalnızca biri yapılacak şekilde;</p>
+<p>I. Mavi ışık yerine aynı şiddette kırmızı ışık kullanmak,<br>II. Lambayı kapatıp düzeneği karanlık bir ortama almak,<br>III. Suyun sıcaklığını 30 °C'ye çıkarmak</p>
+<p><b>değişikliklerinden hangileri yapılırsa kabarcık sayısının kesinlikle azalması beklenir?</b></p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>Kabarcıklar fotosentezle oluşan oksijendir; sayıları fotosentez hızını gösterir.</p>
+<p>II ✓: Karanlıkta fotosentez olmaz, kabarcık çıkışı kesinlikle azalır (durur).</p>
+<p>I ✗: Klorofil hem mavi-mor hem kırmızı ışığı çok soğurur. Kırmızıya geçince hız biraz artabilir ya da azalabilir; "kesinlikle azalır" denemez. Yeşil ışık olsaydı azalırdı.</p>
+<p>III ✗: Fotosentez hızı uygun sıcaklığa kadar artar, sonra azalır. Bu bitki için uygun sıcaklık verilmediğinden 30 °C'de hızın artacağı da azalacağı da kesin değildir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir araştırmacı, aynı türden ve eşit büyüklükteki su bitkilerini (Elodea) içi su dolu özdeş deney tüplerine koyuyor. Tüpleri aşağıdaki tabloda belirtilen koşullarda 10 dakika bekletiyor ve her tüpte bitkiden çıkan gaz kabarcıklarını sayıyor. Lambaların hepsi özdeştir ve ışık rengi, lambanın önüne konan renkli bir filtreyle ayarlanmaktadır.</p>
+<table><thead><tr><th>Tüp</th><th>Işık rengi</th><th>Lambanın tüpe uzaklığı</th><th>Su sıcaklığı</th><th>Suya eklenen CO<sub>2</sub></th></tr></thead><tbody><tr><td>P</td><td>Kırmızı</td><td>20 cm</td><td>25 °C</td><td>Az</td></tr><tr><td>R</td><td>Kırmızı</td><td>20 cm</td><td>25 °C</td><td>Çok</td></tr><tr><td>S</td><td>Yeşil</td><td>20 cm</td><td>25 °C</td><td>Çok</td></tr><tr><td>T</td><td>Yeşil</td><td>40 cm</td><td>35 °C</td><td>Çok</td></tr><tr><td>U</td><td>Kırmızı</td><td>20 cm</td><td>35 °C</td><td>Az</td></tr></tbody></table>
+<p><b>Bu araştırmacı, yalnızca bu beş tüpten elde edeceği sonuçları kullanarak aşağıdaki araştırma sorularından hangisine cevap <u>arayamaz</u>?</b></p>`,
+  c: ["Işık rengi fotosentez hızını etkiler mi?", "Işık şiddeti fotosentez hızını etkiler mi?", "Ortamdaki karbondioksit miktarı fotosentez hızını etkiler mi?", "Sıcaklık fotosentez hızını etkiler mi?"],
+  a: "B",
+  s: `<p>Bir değişkenin etkisini görmek için <b>yalnızca o değişkeni farklı</b>, diğer bütün koşulları aynı olan iki tüp gerekir.</p>
+<p>• Işık rengi: R ve S yalnızca ışık rengiyle ayrılır (<b>A</b> cevaplanır).<br>• CO<sub>2</sub> miktarı: P ve R yalnızca eklenen CO<sub>2</sub> ile ayrılır (<b>C</b> cevaplanır).<br>• Sıcaklık: P ve U yalnızca su sıcaklığıyla ayrılır (<b>D</b> cevaplanır).<br>• Işık şiddeti, lambanın uzaklığıyla değiştirilir. Uzaklığı farklı olan tek tüp T’dir; ama T, S’den hem uzaklık hem sıcaklık bakımından farklıdır. Diğer tüplerle de birden fazla farkı vardır. Kabarcık sayısındaki değişimin uzaklıktan mı sıcaklıktan mı kaynaklandığı anlaşılamaz.</p>
+<p>Tipik yanılgı: T ile S’yi “uzaklıkları farklı” diye seçmek. İki değişken birlikte değiştiğinde karşılaştırma geçersizdir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir bitkinin fotosentez hızı, ortamdaki karbondioksit miktarı ve su miktarı sabit tutularak, iki farklı ışık şiddetinde ve farklı sıcaklıklarda ölçülmüş; sonuçlar aşağıdaki grafikte gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 450 250" width="450" role="img" aria-label="Sıcaklık-fotosentez hızı grafiği, iki ışık şiddeti" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="200" x2="330" y2="200" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="204" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="60" y1="161.1" x2="330" y2="161.1" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="165.1" font-size="11" text-anchor="end" fill="#1e293b">4</text><line x1="60" y1="122.2" x2="330" y2="122.2" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="126.2" font-size="11" text-anchor="end" fill="#1e293b">8</text><line x1="60" y1="83.3" x2="330" y2="83.3" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="87.3" font-size="11" text-anchor="end" fill="#1e293b">12</text><line x1="60" y1="44.4" x2="330" y2="44.4" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="48.4" font-size="11" text-anchor="end" fill="#1e293b">16</text><line x1="114" y1="200" x2="114" y2="204" stroke="#334155" stroke-width="1.2"/><text x="114" y="217" font-size="11" text-anchor="middle" fill="#1e293b">10</text><line x1="168" y1="200" x2="168" y2="204" stroke="#334155" stroke-width="1.2"/><text x="168" y="217" font-size="11" text-anchor="middle" fill="#1e293b">20</text><line x1="222" y1="200" x2="222" y2="204" stroke="#334155" stroke-width="1.2"/><text x="222" y="217" font-size="11" text-anchor="middle" fill="#1e293b">30</text><line x1="276" y1="200" x2="276" y2="204" stroke="#334155" stroke-width="1.2"/><text x="276" y="217" font-size="11" text-anchor="middle" fill="#1e293b">40</text><line x1="330" y1="200" x2="330" y2="204" stroke="#334155" stroke-width="1.2"/><text x="330" y="217" font-size="11" text-anchor="middle" fill="#1e293b">50</text><line x1="60" y1="200" x2="338" y2="200" stroke="#334155" stroke-width="2"/><line x1="60" y1="200" x2="60" y2="17" stroke="#334155" stroke-width="2"/><path d="M114,161.1 L168,102.8 L222,44.4 L276,112.5 L330,180.6" fill="none" stroke="#15803d" stroke-width="3"/><path d="M114,170.8 L168,141.7 L222,127.1 L276,151.4 L330,185.4" fill="none" stroke="#d97706" stroke-width="3" stroke-dasharray="7 4"/><text x="195" y="234" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Sıcaklık (°C)</text><text x="14" y="112.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 112.5)">Fotosentez hızı</text><line x1="345" y1="60" x2="375" y2="60" stroke="#15803d" stroke-width="3"/><text x="380" y="64" font-size="11" text-anchor="start" fill="#1e293b">Yüksek ışık</text><text x="380" y="78" font-size="11" text-anchor="start" fill="#1e293b">şiddeti</text><line x1="345" y1="105" x2="375" y2="105" stroke="#d97706" stroke-width="3" stroke-dasharray="7 4"/><text x="380" y="109" font-size="11" text-anchor="start" fill="#1e293b">Düşük ışık</text><text x="380" y="123" font-size="11" text-anchor="start" fill="#1e293b">şiddeti</text></svg></div>
+<p>Bu grafiğe göre,</p>
+<p>I. Ölçülen sıcaklıklar arasında, fotosentez hızının en yüksek olduğu sıcaklık her iki ışık şiddetinde de aynıdır.<br>
+II. 20 °C’de ışık şiddetinin artırılması fotosentez hızını artırmıştır.<br>
+III. 30 °C’den sonra fotosentez hızının azalmasının nedeni ortamdaki karbondioksitin tükenmesidir.</p>
+<p><b>yargılarından hangilerine ulaşılabilir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: İki eğri de en yüksek değerine 30 °C’de ulaşır.<br>
+II ✓: 20 °C’de yüksek ışık şiddetindeki hız (10), düşük ışık şiddetindekinden (6) fazladır; sıcaklık aynı, yalnızca ışık şiddeti farklıdır.<br>
+III ✗: Deneyde CO<sub>2</sub> miktarı <b>sabit tutulmuştur</b>; 30 °C’den sonraki azalma sıcaklığın uygun değeri aşmasından kaynaklanır. Grafikte CO<sub>2</sub>’nin tükendiğine dair bir veri yoktur. III’ü seçen öğrenci, sabit tutulan değişkeni sonucun nedeni sanmıştır.</p>
+<p>Cevap “I ve II” olur. (“I, II ve III” seçeneği bu yanılgının, “Yalnız I” ise II’deki ışık şiddeti karşılaştırmasını gözden kaçırmanın sonucudur.) Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir araştırmacı, altı delikli özdeş saksılarda yetişen aynı türden özdeş bitkileri iki gruba ayırıyor. Her iki gruptaki saksılara her gün farklı miktarlarda su veriyor; I. grubu normal ışık şiddetinde, II. grubu yüksek ışık şiddetinde aydınlatıyor. Sıcaklık ve havadaki karbondioksit miktarı bütün saksılarda aynıdır. Bitkilerin birim zamanda ürettiği oksijen miktarları tabloda verilmiştir.</p>
+<table><thead><tr><th>Günlük verilen su</th><th>50 mL</th><th>100 mL</th><th>150 mL</th><th>200 mL</th><th>250 mL</th></tr></thead><tbody><tr><td>I. grup (normal ışık)</td><td>4</td><td>8</td><td>12</td><td>12</td><td>12</td></tr><tr><td>II. grup (yüksek ışık)</td><td>4</td><td>8</td><td>12</td><td>16</td><td>16</td></tr></tbody></table>
+<p>(Oksijen miktarları birim olarak verilmiştir.)</p>
+<p><b>Bu verilere göre aşağıdaki yorumlardan hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["50 mL ve 100 mL su verilen saksılarda fotosentez hızını su miktarı sınırlamaktadır.", "Normal ışıkta günlük suyu 150 mL’nin üzerine çıkarmak fotosentez hızını artırmamıştır.", "Yüksek ışıkta 200 mL’den sonra oksijen miktarı artmadığına göre bu bitkiler fotosentezi durdurmuştur.", "200 mL su verilen bitkilerde ışık şiddetinin artırılması fotosentez hızını artırmıştır."],
+  a: "C",
+  s: `<p><b>A</b> doğru: 50 ve 100 mL’de iki grubun değerleri aynıdır; ışığı artırmak hızı değiştirmemiş, su artınca hız artmıştır. Bu miktarlarda hızı su sınırlar.<br>
+<b>B</b> doğru: I. grupta 150, 200 ve 250 mL’de değer hep 12’dir.<br>
+<b>D</b> doğru: 200 mL’de normal ışıkta 12, yüksek ışıkta 16 birim oksijen üretilmiştir.</p>
+<p><b>C</b> yanlış: Oksijen üretimi sıfıra inmemiş, 16’da <b>sabit kalmıştır</b>; fotosentez sürmektedir. Artık hızı su değil başka bir etken (ör. CO<sub>2</sub> miktarı ya da ışık şiddeti) sınırlar. Sabitlenmeyi “durma” diye okumak klasik bir yanılgıdır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğretmen, öğrencilerinden fotosentez hızını ölçmek için kullanılabilecek yöntemler önermelerini istiyor. Öğrencilerin önerileri şunlardır:</p>
+<div class="box"><p><b>Ece:</b> Işıktaki bir su bitkisinden 1 dakikada çıkan gaz kabarcıklarını saymak<br>
+<b>Can:</b> Işıktaki bitkinin bulunduğu kapalı kapta karbondioksit miktarının azalma hızını ölçmek<br>
+<b>Defne:</b> Karanlıktaki bitkinin bulunduğu kapalı kaba bağlı kireç suyunun bulanma süresini ölçmek<br>
+<b>Arda:</b> Önceden karanlıkta bekletilip belirli bir süre ışık alan yapraklarda iyotla oluşan mavi-mor rengin koyuluğunu karşılaştırmak</p></div>
+<p><b>Hangi öğrencilerin önerdiği yöntem fotosentez hızının bir ölçüsü olarak kullanılabilir?</b></p>`,
+  c: ["Ece ve Can", "Ece, Can ve Arda", "Can, Defne ve Arda", "Ece, Can, Defne ve Arda"],
+  a: "B",
+  s: `<p><b>Ece</b> ✓: Kabarcıklar fotosentezle üretilen oksijendir; sayıları hızın ölçüsüdür.<br>
+<b>Can</b> ✓: Fotosentezde CO<sub>2</sub> kullanılır; ışıkta CO<sub>2</sub>’nin azalma hızı fotosentezin solunumdan ne kadar hızlı olduğunu gösterir.<br>
+<b>Arda</b> ✓: Önceden karanlıkta bekletildiği için yapraklardaki nişasta deney sırasında üretilmiştir; rengin koyuluğu üretilen besin miktarını gösterir.<br>
+<b>Defne</b> ✗: Karanlıkta fotosentez olmaz; kireç suyunun bulanması, solunumla ortama verilen CO<sub>2</sub>’yi gösterir. Bu yöntem solunumla ilgilidir.</p>
+<p>Defne’nin önerisini seçen öğrenci, kireç suyu deneyini fotosentezle ilişkilendirmiş ve karanlıkta fotosentez olmadığını gözden kaçırmıştır. Cevap “Ece, Can ve Arda” olur. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Özdeş fasulye tohumlarından bir grup ışıklı, diğer grup karanlık ortamda nemli pamuk üzerinde çimlendiriliyor. Her iki günde bir her gruptan birkaç fide alınıp kurutuluyor ve ortalama <b>kuru kütle</b> (suyu uzaklaştırılmış kütle) ölçülüyor. Işıktaki fidelerde ilk yapraklar 6. gün açılıyor.</p><div class="fig"><svg viewBox="0 0 470 250" width="470" role="img" aria-label="Işıkta ve karanlıkta çimlenen fasulyelerin kuru kütlesi" font-family="Arial, Helvetica, sans-serif"><line x1="60" y1="200" x2="360" y2="200" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="204" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="60" y1="141.7" x2="360" y2="141.7" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="145.7" font-size="11" text-anchor="end" fill="#1e293b">4</text><line x1="60" y1="83.3" x2="360" y2="83.3" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="87.3" font-size="11" text-anchor="end" fill="#1e293b">8</text><line x1="60" y1="25" x2="360" y2="25" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="29" font-size="11" text-anchor="end" fill="#1e293b">12</text><line x1="60" y1="200" x2="60" y2="204" stroke="#334155" stroke-width="1.2"/><text x="60" y="217" font-size="11" text-anchor="middle" fill="#1e293b">0</text><line x1="102.9" y1="200" x2="102.9" y2="204" stroke="#334155" stroke-width="1.2"/><text x="102.9" y="217" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="145.7" y1="200" x2="145.7" y2="204" stroke="#334155" stroke-width="1.2"/><text x="145.7" y="217" font-size="11" text-anchor="middle" fill="#1e293b">4</text><line x1="188.6" y1="200" x2="188.6" y2="204" stroke="#334155" stroke-width="1.2"/><text x="188.6" y="217" font-size="11" text-anchor="middle" fill="#1e293b">6</text><line x1="231.4" y1="200" x2="231.4" y2="204" stroke="#334155" stroke-width="1.2"/><text x="231.4" y="217" font-size="11" text-anchor="middle" fill="#1e293b">8</text><line x1="274.3" y1="200" x2="274.3" y2="204" stroke="#334155" stroke-width="1.2"/><text x="274.3" y="217" font-size="11" text-anchor="middle" fill="#1e293b">10</text><line x1="317.1" y1="200" x2="317.1" y2="204" stroke="#334155" stroke-width="1.2"/><text x="317.1" y="217" font-size="11" text-anchor="middle" fill="#1e293b">12</text><line x1="360" y1="200" x2="360" y2="204" stroke="#334155" stroke-width="1.2"/><text x="360" y="217" font-size="11" text-anchor="middle" fill="#1e293b">14</text><line x1="60" y1="200" x2="368" y2="200" stroke="#334155" stroke-width="2"/><line x1="60" y1="200" x2="60" y2="17" stroke="#334155" stroke-width="2"/><path d="M60,54.2 L102.9,74.6 L145.7,89.2 L188.6,95 L231.4,89.2 L274.3,74.6 L317.1,54.2 L360,30.8" fill="none" stroke="#15803d" stroke-width="3"/><path d="M60,54.2 L102.9,74.6 L145.7,89.2 L188.6,97.9 L231.4,106.7 L274.3,115.4 L317.1,124.2 L360,132.9" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="7 4"/><text x="210" y="234" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Zaman (gün)</text><text x="14" y="112.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 112.5)">Ortalama kuru kütle (mg)</text><line x1="370" y1="60" x2="396" y2="60" stroke="#15803d" stroke-width="3"/><text x="402" y="64" font-size="12" text-anchor="start" fill="#1e293b">Işıkta</text><line x1="370" y1="85" x2="396" y2="85" stroke="#475569" stroke-width="3" stroke-dasharray="7 4"/><text x="402" y="89" font-size="12" text-anchor="start" fill="#1e293b">Karanlıkta</text><line x1="188.6" y1="200" x2="188.6" y2="25" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="192.6" y="40" font-size="11" text-anchor="start" fill="#1e293b">yapraklar açılıyor</text></svg></div>
+<p><b>Bu deneyle ilgili aşağıdaki yorumlardan hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["İlk 6 günde iki grupta da kuru kütlenin azalması, tohumdaki depo besinin solunumda kullanılmasındandır.", "Işıktaki grupta 6. günden sonra fotosentezle üretilen besin, solunumda harcanan besinden fazladır.", "Karanlıktaki grupta kuru kütlenin sürekli azalması, bu fidelerin solunum yapıp fotosentez yapamamasından kaynaklanır.", "Işıktaki fideler yapraklarını açtıktan sonra solunum yapmayı bırakmış, yalnızca fotosentez yapmıştır."],
+  a: "D",
+  s: `<p><b>A</b> doğru: Yaprak açılmadan fotosentez yapılamaz; fide büyümek için tohumdaki depo besini solunumla parçalar, kuru kütle azalır.<br>
+<b>B</b> doğru: 6. günden sonra ışıktaki fidelerin kuru kütlesi artmıştır; üretilen besin harcanandan fazladır.<br>
+<b>C</b> doğru: Karanlıkta fotosentez olmaz, solunum ise sürer; depo besin harcandıkça kuru kütle azalır.</p>
+<p><b>D</b> yanlış: Solunum bütün canlılarda gece-gündüz kesintisiz sürer. Kuru kütlenin artması solunumun durduğunu değil, fotosentezin solunumdan hızlı olduğunu gösterir. “Bitkiler gündüz yalnızca fotosentez yapar” yanılgısı bu seçeneğe götürür. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Eşit miktarda aynı su konulan dört özdeş tüpte aşağıdaki canlılar bulunuyor. Tüplerin ağzı kapatılıp 25 °C’de 6 saat bekletiliyor ve tüplerdeki suda çözünmüş CO<sub>2</sub> miktarındaki değişim ölçülüyor. Su bitkileri birbirinin, salyangozlar da birbirinin özdeşidir.</p>
+<table><thead><tr><th>Tüp</th><th>İçindeki canlılar</th><th>Ortam</th><th>CO<sub>2</sub> miktarındaki değişim</th></tr></thead><tbody><tr><td>K</td><td>Su bitkisi</td><td>Işıklı</td><td>Azaldı</td></tr><tr><td>L</td><td>Salyangoz</td><td>Işıklı</td><td>Arttı</td></tr><tr><td>M</td><td>Su bitkisi + salyangoz</td><td>Işıklı</td><td>Azaldı (K’den daha az)</td></tr><tr><td>N</td><td>Su bitkisi + salyangoz</td><td>Karanlık</td><td>Arttı</td></tr></tbody></table>
+<p><b>Bu deneyin sonuçlarına dayanarak aşağıdaki yargılardan hangisine <u>ulaşılamaz</u>?</b></p>`,
+  c: ["Işıklı ortamda su bitkisi sudaki CO<sub>2</sub> miktarını azaltır.", "Işıklı ortamda su bitkisinin kullandığı CO<sub>2</sub>, salyangozun suya verdiği CO<sub>2</sub>’den fazladır.", "Su bitkisi karanlık ortamda solunum yaparak suya CO<sub>2</sub> verir.", "Işığın varlığı, su bitkisinin sudaki CO<sub>2</sub> miktarını azaltmasında etkilidir."],
+  a: "C",
+  s: `<p><b>A</b>: K tüpünde CO<sub>2</sub> azalmıştır, ulaşılır.<br>
+<b>B</b>: M’de salyangoz CO<sub>2</sub> verdiği hâlde toplam CO<sub>2</sub> azalmıştır; bitkinin kullandığı CO<sub>2</sub> daha fazladır, ulaşılır.<br>
+<b>D</b>: M ve N yalnızca ışık bakımından farklıdır; aynı canlılar varken ışıkta CO<sub>2</sub> azalmış, karanlıkta artmıştır, ulaşılır.</p>
+<p><b>C</b>: Bilgi olarak doğrudur ama <b>bu deneyden</b> çıkarılamaz. Karanlıkta yalnızca su bitkisinin bulunduğu bir tüp yoktur. N’deki artış salyangozun solunumundan da kaynaklanabilir. Bilgi olarak doğru olan her yargının deneyden çıkarılabileceğini sanmak, “ulaşılamaz” sorularındaki en güçlü tuzaktır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>K ve L bitkilerinin, uygun sıcaklıkta ve farklı ışık şiddetlerinde dış ortamla yaptıkları <b>net</b> oksijen alışverişi aşağıdaki grafikte verilmiştir. Grafikteki değer, bitkinin fotosentezle ürettiği oksijen ile solunumda kullandığı oksijen arasındaki farkı gösterir.</p><div class="fig"><svg viewBox="0 0 480 290" width="480" role="img" aria-label="K ve L bitkilerinin ışık şiddetine göre net oksijen alışverişi" font-family="Arial, Helvetica, sans-serif"><line x1="70" y1="209.5" x2="400" y2="209.5" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="213.5" font-size="11" text-anchor="end" fill="#1e293b">-4</text><line x1="70" y1="168.5" x2="400" y2="168.5" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="172.5" font-size="11" text-anchor="end" fill="#1e293b">0</text><line x1="70" y1="127.5" x2="400" y2="127.5" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="131.5" font-size="11" text-anchor="end" fill="#1e293b">+4</text><line x1="70" y1="86.5" x2="400" y2="86.5" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="90.5" font-size="11" text-anchor="end" fill="#1e293b">+8</text><line x1="70" y1="45.5" x2="400" y2="45.5" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="49.5" font-size="11" text-anchor="end" fill="#1e293b">+12</text><line x1="70" y1="230" x2="70" y2="234" stroke="#334155" stroke-width="1.2"/><text x="70" y="247" font-size="11" text-anchor="middle" fill="#1e293b">0</text><line x1="111.2" y1="230" x2="111.2" y2="234" stroke="#334155" stroke-width="1.2"/><text x="111.2" y="247" font-size="11" text-anchor="middle" fill="#1e293b">1</text><line x1="152.5" y1="230" x2="152.5" y2="234" stroke="#334155" stroke-width="1.2"/><text x="152.5" y="247" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="193.8" y1="230" x2="193.8" y2="234" stroke="#334155" stroke-width="1.2"/><text x="193.8" y="247" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="235" y1="230" x2="235" y2="234" stroke="#334155" stroke-width="1.2"/><text x="235" y="247" font-size="11" text-anchor="middle" fill="#1e293b">4</text><line x1="276.2" y1="230" x2="276.2" y2="234" stroke="#334155" stroke-width="1.2"/><text x="276.2" y="247" font-size="11" text-anchor="middle" fill="#1e293b">5</text><line x1="317.5" y1="230" x2="317.5" y2="234" stroke="#334155" stroke-width="1.2"/><text x="317.5" y="247" font-size="11" text-anchor="middle" fill="#1e293b">6</text><line x1="358.8" y1="230" x2="358.8" y2="234" stroke="#334155" stroke-width="1.2"/><text x="358.8" y="247" font-size="11" text-anchor="middle" fill="#1e293b">7</text><line x1="400" y1="230" x2="400" y2="234" stroke="#334155" stroke-width="1.2"/><text x="400" y="247" font-size="11" text-anchor="middle" fill="#1e293b">8</text><line x1="70" y1="230" x2="408" y2="230" stroke="#334155" stroke-width="2"/><line x1="70" y1="230" x2="70" y2="17" stroke="#334155" stroke-width="2"/><path d="M70,189 L111.2,168.5 L152.5,132.6 L193.8,101.9 L235,86.5 L400,86.5" fill="none" stroke="#15803d" stroke-width="3"/><path d="M70,209.5 L131.9,189 L193.8,168.5 L255.6,117.2 L317.5,55.8 L358.8,45.5 L400,45.5" fill="none" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 4"/><text x="235" y="264" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Işık şiddeti (birim)</text><text x="14" y="127.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 127.5)">Net oksijen alışverişi</text><line x1="70" y1="168.5" x2="400" y2="168.5" stroke="#334155" stroke-width="1.5"/><line x1="410" y1="70" x2="435" y2="70" stroke="#15803d" stroke-width="3"/><text x="440" y="74" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">K</text><line x1="410" y1="95" x2="435" y2="95" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7 4"/><text x="440" y="99" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">L</text><text x="250" y="18" font-size="11" text-anchor="middle" fill="#1e293b">(+): bitki ortama oksijen verir    (−): bitki ortamdan oksijen alır</text></svg></div>
+<p>Bu grafiğe göre,</p>
+<p>I. Işık şiddeti sıfır iken her iki bitki de ortamdan oksijen alır.<br>
+II. Işık şiddeti 2 birim iken K bitkisi solunum yapmaz.<br>
+III. Işık şiddeti 3 birim iken L bitkisinin fotosentez hızı solunum hızına eşittir.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>I ✓: Işık yokken fotosentez olmaz, yalnızca solunum olur; iki bitkinin değeri de negatiftir, yani ortamdan O<sub>2</sub> alırlar.<br>
+II ✗: K’nin değerinin 2 birimde pozitif olması, fotosentezin solunumdan <b>hızlı</b> olduğunu gösterir; solunum durmaz, gece-gündüz sürer. Net değeri “yalnızca fotosentez” sanmak bu yanılgıya götürür.<br>
+III ✓: L’nin eğrisi 3 birimde sıfırdan geçer: üretilen ve kullanılan oksijen eşittir, yani fotosentez hızı solunum hızına eşittir. Bu noktada “L fotosentez yapmıyor” demek de bir yanılgıdır; L fotosentez yapar ama dışarıya net O<sub>2</sub> vermez.</p>
+<p>Cevap “I ve III” olur. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı türden dört özdeş saksı bitkisiyle aşağıdaki deney yapılıyor. Deneyin sonunda her bitkiden bir yaprak koparılıp rengi açıldıktan sonra üzerine iyot çözeltisi damlatılıyor.</p>
+<table><thead><tr><th>Bitki</th><th>Deneyden önce (2 gün)</th><th>Deney süresince (1 gün)</th><th>İyot damlatılınca</th></tr></thead><tbody><tr><td>P</td><td>Karanlıkta bekletildi</td><td>Işıkta bekletildi</td><td>Mavi-mor renk</td></tr><tr><td>R</td><td>Işıkta bekletildi</td><td>Işıkta bekletildi</td><td>Mavi-mor renk</td></tr><tr><td>S</td><td>Karanlıkta bekletildi</td><td>Karanlıkta bekletildi</td><td>Renk değişmedi</td></tr><tr><td>T</td><td>Işıkta bekletildi</td><td>Karanlıkta bekletildi</td><td>Mavi-mor renk</td></tr></tbody></table>
+<p><b>Bu deneyle ilgili aşağıdakilerden hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["T bitkisinde görülen mavi-mor renk, deneyden önce üretilip yaprakta depolanmış nişastadan kaynaklanır.", "Fotosentezle nişasta üretimi için ışığın gerekli olduğu, R ve T bitkilerinin sonuçları karşılaştırılarak gösterilebilir.", "Fotosentezle nişasta üretimi için ışığın gerekli olduğu, P ve S bitkilerinin sonuçları karşılaştırılarak gösterilebilir.", "Bitkilerin deneyden önce karanlıkta bekletilmesi, yapraktaki eski nişastanın harcanmasını sağlar."],
+  a: "B",
+  s: `<p>İyotla oluşan mavi-mor renk yaprakta nişasta olduğunu gösterir; ama bu nişastanın deney sırasında mı yoksa önceden mi üretildiğini söylemez.</p>
+<p><b>A</b> doğru: T deney süresince karanlıktaydı; buna rağmen nişasta vardır, demek ki nişasta önceden üretilmiştir.<br>
+<b>D</b> doğru: Karanlıkta fotosentez olmaz; bitki depo nişastayı solunumda harcar. Bu yüzden S’de renk değişmemiştir.<br>
+<b>C</b> doğru: P ve S’nin ikisi de önceden karanlıkta bekletilmiştir; yalnızca deney süresindeki ışık farklıdır. Işıktaki P’de nişasta var, karanlıktaki S’de yok.</p>
+<p><b>B</b> yanlış: R ve T önceden karanlıkta bekletilmediği için ikisinde de eski nişasta vardır; ikisinde de mavi-mor renk görülmüştür. Bu ikiliyle ışığın etkisi anlaşılamaz. Kontrolsüz eski nişastayı gözden kaçırmak bu sorudaki tuzaktır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Ayşe, “Su sıcaklığı arttıkça su bitkisinin fotosentez hızı artar.” hipotezini test etmek istiyor. Özdeş üç su bitkisini 15 °C, 25 °C ve 35 °C sıcaklıktaki sularla dolu özdeş beherlere koyuyor. Masası küçük olduğu için beherleri tek bir lambanın önüne sırayla diziyor:</p>
+<table><thead><tr><th>Beher</th><th>Su sıcaklığı</th><th>Lambaya uzaklık</th><th>5 dakikada çıkan kabarcık</th></tr></thead><tbody><tr><td>1</td><td>15 °C</td><td>10 cm</td><td>20</td></tr><tr><td>2</td><td>25 °C</td><td>20 cm</td><td>20</td></tr><tr><td>3</td><td>35 °C</td><td>30 cm</td><td>20</td></tr></tbody></table>
+<p>Ayşe, sonuçlara bakarak “Sıcaklık fotosentez hızını etkilemez.” diyor. Öğretmeni bu sonucun <b>geçerli olmadığını</b> söylüyor.</p>
+<p><b>Öğretmenin bu değerlendirmesinin nedeni ve deneyin düzeltilmesi için yapılması gereken aşağıdakilerin hangisinde birlikte doğru verilmiştir?</b></p>`,
+  c: ["Kabarcıklar karbondioksit olduğu için yanlış ölçüm yapılmıştır. / Kabarcık yerine sudaki oksijen ölçülmelidir.", "Sıcaklıkla birlikte ışık şiddeti de değiştirilmiştir. / Üç beherin su sıcaklığı da 25 °C yapılmalıdır.", "Sıcaklıkla birlikte ışık şiddeti de değiştirilmiştir. / Beherlerin hepsi lambaya eşit uzaklıkta olmalıdır.", "Deneyde yalnızca bir tür bitki kullanılmıştır. / Her beherde farklı türde bitki kullanılmalıdır."],
+  a: "C",
+  s: `<p>Sıcaklık arttıkça beher lambadan da uzaklaşmış, yani <b>ışık şiddeti azalmıştır</b>. İki değişken birlikte değiştiği için eşit kabarcık sayısı “sıcaklık etkisizdir” diye yorumlanamaz; sıcaklığın artırıcı etkisi ışığın azalmasıyla dengelenmiş olabilir. Düzeltme: Işık şiddetini kontrol edilen değişken yapmak, yani beherleri lambaya eşit uzaklığa koymak.</p>
+<p><b>B</b>: Neden doğru, ama sıcaklığı her beherde aynı yapmak bağımsız değişkeni ortadan kaldırır; hipotez test edilemez.<br>
+<b>A</b>: Su bitkisinden çıkan kabarcıklar fotosentezle üretilen <b>oksijendir</b>; bu, sık görülen bir kavram yanılgısıdır.<br>
+<b>D</b>: Bitki türü kontrol edilen değişkendir; tür değiştirmek yeni bir değişken ekler. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Güneş ışığı alan bir sınıfta öğrenciler, “Bitkiler el fenerinin ışığıyla fotosentez yapabilir mi?” sorusunu araştırmak istiyor. Özdeş saksı bitkileriyle, ortamdaki oksijen miktarını ölçen cihazların bulunduğu ve hava almayan aşağıdaki düzenekleri hazırlıyorlar.</p>
+<table><thead><tr><th>Düzenek</th><th>Kutunun özelliği</th><th>Kutunun içindeki ışık kaynağı</th><th>Kutuda KOH çözeltisi</th></tr></thead><tbody><tr><td>1</td><td>Işık geçirmez</td><td>Açık el feneri</td><td>Yok</td></tr><tr><td>2</td><td>Işık geçirmez</td><td>Yok</td><td>Yok</td></tr><tr><td>3</td><td>Şeffaf</td><td>Açık el feneri</td><td>Yok</td></tr><tr><td>4</td><td>Işık geçirmez</td><td>Açık el feneri</td><td>Var</td></tr><tr><td>5</td><td>Şeffaf</td><td>Yok</td><td>Yok</td></tr></tbody></table>
+<p>(KOH çözeltisi ortamdaki karbondioksiti tutar.)</p>
+<p><b>Öğrencilerin araştırma sorusuna güvenilir bir cevap bulabilmeleri için hangi iki düzeneğin oksijen ölçümlerini karşılaştırmaları gerekir?</b></p>`,
+  c: ["1 ve 2", "1 ve 3", "1 ve 4", "3 ve 5"],
+  a: "A",
+  s: `<p>Araştırılan değişken el fenerinin ışığıdır. Güneş ışığının etkisini ayırmak için kutular <b>ışık geçirmez</b> olmalı; bitkinin fotosentez yapabilmesi için de CO<sub>2</sub> bulunmalı, yani <b>KOH olmamalıdır</b>. Bu koşullarda yalnızca el fenerinin varlığı farklı olan düzenekler 1 ve 2’dir: 1’de oksijen artıp 2’de artmıyorsa el feneri ışığıyla fotosentez yapıldığı anlaşılır.</p>
+<p><b>B</b>: 3. kutu şeffaftır; Güneş ışığı da girer, fark kutunun özelliğinden kaynaklanır.<br>
+<b>C</b>: İkisinde de el feneri vardır; bu ikili CO<sub>2</sub>’nin etkisini araştırır. KOH’lu düzeneği yapay ışık deneyine katmak klasik hatadır.<br>
+<b>D</b>: İki kutuya da Güneş ışığı girer; bitki zaten fotosentez yapacağı için fenerin tek başına yeterli olup olmadığı anlaşılamaz. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir gölde aynı türden alglerin bulunduğu şeffaf kaplar farklı derinliklere yerleştirilmiş ve bir gün sonra alglerin fotosentezle ürettiği ve solunumla kullandığı oksijen miktarları belirlenmiştir.</p>
+<table><thead><tr><th>Derinlik</th><th>1 m</th><th>3 m</th><th>5 m</th><th>8 m</th><th>12 m</th></tr></thead><tbody><tr><td>Ulaşan ışık (yüzeydekine göre)</td><td>%80</td><td>%50</td><td>%25</td><td>%10</td><td>%0</td></tr><tr><td>Fotosentezle üretilen oksijen (birim)</td><td>20</td><td>13</td><td>7</td><td>3</td><td>0</td></tr><tr><td>Solunumla kullanılan oksijen (birim)</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr></tbody></table>
+<p><b>Bu verilere göre aşağıdakilerden hangisine <u>ulaşılamaz</u>?</b></p>`,
+  c: ["Ulaşan ışık miktarı azaldıkça alglerin fotosentez hızı azalmıştır.", "8 m derinlikte alglerin fotosentezle ürettiği oksijen, solunumla kullandığı oksijene eşittir.", "12 m derinlikteki algler fotosentez yapamamış ama solunum yapmıştır.", "Derinlik arttıkça suyun sıcaklığı düştüğü için alglerin fotosentez hızı azalmıştır."],
+  a: "D",
+  s: `<p><b>A</b> ulaşılır: Işık %80’den %0’a inerken üretilen oksijen 20’den 0’a inmiştir.<br>
+<b>B</b> ulaşılır: 8 m’de üretilen ve kullanılan oksijen 3’er birimdir; dışarıya net oksijen verilmez.<br>
+<b>C</b> ulaşılır: 12 m’de ışık yoktur, üretim 0’dır; ama solunumla 3 birim oksijen kullanılmıştır.</p>
+<p><b>D</b> ulaşılamaz: Tabloda suyun sıcaklığına ait hiçbir ölçüm yoktur. Sıcaklık fotosentez hızını etkileyen bir faktör olduğu için akla yatkın görünür; ama verilerle desteklenmeyen bir açıklamadır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Özdeş su bitkileri bulunan beş tüpün etrafı farklı renkte şeffaf selofanlarla sarılıyor ve tüpler özdeş beyaz ışık kaynaklarının önüne farklı uzaklıklarda yerleştiriliyor. Su sıcaklığı ve CO<sub>2</sub> miktarı bütün tüplerde aynıdır.</p>
+<table><thead><tr><th>Tüp</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr></thead><tbody><tr><td>Selofanın geçirdiği ışık</td><td>Kırmızı</td><td>Yeşil</td><td>Mavi-mor</td><td>Kırmızı</td><td>Yeşil</td></tr><tr><td>Işık kaynağına uzaklık</td><td>20 cm</td><td>20 cm</td><td>20 cm</td><td>40 cm</td><td>40 cm</td></tr><tr><td>5 dakikada çıkan kabarcık</td><td>24</td><td>6</td><td>22</td><td>12</td><td>3</td></tr></tbody></table>
+<p>Bu deneyle ilgili;</p>
+<p>I. Aynı uzaklıkta yeşil ışıktaki fotosentez hızı, kırmızı ve mavi-mor ışıktakinden düşüktür.<br>
+II. Işık şiddetinin fotosentez hızına etkisi 1 ve 4 ya da 2 ve 5 numaralı tüpler karşılaştırılarak incelenebilir.<br>
+III. 2 ve 4 numaralı tüpler karşılaştırılarak ışık renginin fotosentez hızına etkisi incelenebilir.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I ve III"],
+  a: "C",
+  s: `<p>I ✓: 20 cm’de kırmızı 24, mavi-mor 22, yeşil 6 kabarcık. Klorofil yeşil ışığın büyük kısmını yansıtır.<br>
+II ✓: 1–4 (ikisi de kırmızı) ve 2–5 (ikisi de yeşil) çiftlerinde yalnızca uzaklık, yani ışık şiddeti farklıdır.<br>
+III ✗: 2 ve 4 numaralı tüplerde hem ışık rengi hem uzaklık farklıdır; sonucun hangisinden kaynaklandığı anlaşılamaz. Işık rengi için aynı uzaklıktaki 1, 2, 3 (ya da 4 ve 5) karşılaştırılmalıdır.</p>
+<p>Cevap “I ve II” olur. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Şiddetli yağışlardan sonra çevredeki topraklar bir göle taşınıyor ve göl suyu haftalarca bulanık kalıyor. Bu süre içinde suyun derinliklerine ulaşan ışık miktarı belirgin şekilde azalıyor. Göldeki besin zinciri şöyledir:</p>
+<div class="box"><p style="text-align:center">Fitoplanktonlar → Zooplanktonlar → Küçük balıklar → Turna balıkları</p></div>
+<p>Bulanıklığın uzun sürmesi durumunda gölde;</p>
+<p>I. fitoplanktonların fotosentez hızının azalması,<br>
+II. suda çözünmüş oksijen miktarının azalması,<br>
+III. zamanla zooplankton ve küçük balık sayısının azalması</p>
+<p><b>durumlarından hangilerinin gerçekleşmesi beklenir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>I ✓: Işık şiddeti azalınca fitoplanktonların fotosentez hızı azalır.<br>
+II ✓: Göl suyundaki oksijenin önemli bir kısmı fotosentezle üretilir; üretim azalırken bütün canlıların solunumu sürdüğü için çözünmüş oksijen azalır.<br>
+III ✓: Üreticilerde üretilen besin, yani besin zincirine giren enerji azalır; buna bağlı olarak üreticilerle beslenen zooplanktonlar ve onlarla beslenen küçük balıklar zamanla azalır.</p>
+<p>“Yalnız I” seçeneği, fotosentezdeki azalmanın oksijene ve besin zincirine etkisini düşünmemekten kaynaklanır. Bu soru fotosentez, solunum ve enerji akışının birbirine bağlı olduğunu yoklar.</p>
+<p>Cevap “I, II ve III” olur. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir çöl ekosistemine ait besin ağı aşağıda verilmiştir. Oklar enerjinin aktarıldığı yönü göstermektedir.</p><div class="fig"><svg viewBox="0 0 480 300" width="470" role="img" aria-label="Çöl ekosistemi besin ağı" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m14" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><line x1="101.2" y1="265" x2="138" y2="216" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="303.8" y1="268.4" x2="177.2" y2="212.1" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="343.1" y1="265" x2="386" y2="216" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="405.6" y1="185" x2="424" y2="136" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="379.4" y1="185" x2="312" y2="136" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="400" y1="120" x2="340" y2="120" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="290" y1="105" x2="290" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="163.1" y1="185" x2="276" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="146.2" y1="185" x2="114" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="260" y1="40" x2="141" y2="40" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><line x1="256.2" y1="105" x2="141" y2="53.8" stroke="#334155" stroke-width="1.8" marker-end="url(#m14)"/><rect x="58.2" y="267" width="63.6" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="90" y="284.5" font-size="12" text-anchor="middle" fill="#1e293b">Kaktüs</text><rect x="305.8" y="267" width="48.4" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="330" y="284.5" font-size="12" text-anchor="middle" fill="#1e293b">Çalı</text><rect x="364.4" y="187" width="71.2" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="400" y="204.5" font-size="12" text-anchor="middle" fill="#1e293b">Çekirge</text><rect x="125.8" y="187" width="48.4" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="150" y="204.5" font-size="12" text-anchor="middle" fill="#1e293b">Fare</text><rect x="402" y="107" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="430" y="124.5" font-size="12" text-anchor="middle" fill="#1e293b">Akrep</text><rect x="243" y="107" width="94" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="290" y="124.5" font-size="12" text-anchor="middle" fill="#1e293b">Kertenkele</text><rect x="262" y="27" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="290" y="44.5" font-size="12" text-anchor="middle" fill="#1e293b">Yılan</text><rect x="82" y="27" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="110" y="44.5" font-size="12" text-anchor="middle" fill="#1e293b">Şahin</text></svg></div>
+<p>Bu besin ağıyla ilgili;</p>
+<p>I. Ağda 3 halkalı besin zinciri de 6 halkalı besin zinciri de bulunur.<br>
+II. Şahin bu ağda 2., 3., 4. ve 5. tüketici olarak yer alabilir.<br>
+III. Kertenkeleler yok olursa şahinler bu ekosistemde besin bulamaz.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Şahine ulaşan zincirler:<br>
+• Çalı (ya da Kaktüs) → Fare → Şahin: 3 halka, şahin <b>2.</b> tüketici<br>
+• Çalı → Çekirge → Kertenkele → Şahin: 4 halka, şahin <b>3.</b> tüketici<br>
+• Çalı → Çekirge → Kertenkele → Yılan → Şahin: 5 halka, şahin <b>4.</b> tüketici<br>
+• Çalı → Çekirge → Akrep → Kertenkele → Yılan → Şahin: 6 halka, şahin <b>5.</b> tüketici</p>
+<p>I ✓ ve II ✓.<br>
+III ✗: Şahin fareyle ve yılanla da beslenir; yılan da fareyle beslenebilir. Kertenkeleler yok olsa da şahinin besin kaynakları vardır. Besin ağlarının tek zincirlere göre daha dengeli olmasının nedeni budur.</p>
+<p>“Yalnız I” seçeneği şahinin yalnızca bir zincirine bakmaktan, III’ü içeren seçenekler ise ağı tek zincir gibi düşünmekten kaynaklanır. Cevap “I ve II” olur. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Kutup bölgesindeki bir okyanus ekosisteminde Fitoplankton → Kril → Penguen → Leopar foku besin zinciri bulunmaktadır. Bu türlerin birey sayılarının yıllara göre değişimi aşağıdaki grafiklerde verilmiştir. İlk üç yıl dengede olan birey sayıları 3. yıldan sonra değişmeye başlamıştır.</p><div class="fig"><svg viewBox="0 0 500 322" width="500" role="img" aria-label="Okyanustaki dört türün yıllara göre birey sayıları" font-family="Arial, Helvetica, sans-serif"><text x="145" y="30" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Leopar foku</text><line x1="50" y1="130" x2="240" y2="130" stroke="#334155" stroke-width="1.6"/><line x1="50" y1="130" x2="50" y2="40" stroke="#334155" stroke-width="1.6"/><path d="M65,55 L97,55 L129,55 L161,85 L193,107.5 L225,115" fill="none" stroke="#1d4ed8" stroke-width="3"/><text x="65" y="144" font-size="11" text-anchor="middle" fill="#1e293b">1</text><text x="97" y="144" font-size="11" text-anchor="middle" fill="#1e293b">2</text><text x="129" y="144" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="161" y="144" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="193" y="144" font-size="11" text-anchor="middle" fill="#1e293b">5</text><text x="225" y="144" font-size="11" text-anchor="middle" fill="#1e293b">6</text><text x="38" y="85" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 38 85)">Birey sayısı</text><line x1="129" y1="130" x2="129" y2="40" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="395" y="30" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Penguen</text><line x1="300" y1="130" x2="490" y2="130" stroke="#334155" stroke-width="1.6"/><line x1="300" y1="130" x2="300" y2="40" stroke="#334155" stroke-width="1.6"/><path d="M315,85 L347,85 L379,85 L411,70 L443,55 L475,47.5" fill="none" stroke="#0891b2" stroke-width="3"/><text x="315" y="144" font-size="11" text-anchor="middle" fill="#1e293b">1</text><text x="347" y="144" font-size="11" text-anchor="middle" fill="#1e293b">2</text><text x="379" y="144" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="411" y="144" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="443" y="144" font-size="11" text-anchor="middle" fill="#1e293b">5</text><text x="475" y="144" font-size="11" text-anchor="middle" fill="#1e293b">6</text><text x="288" y="85" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 288 85)">Birey sayısı</text><line x1="379" y1="130" x2="379" y2="40" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="145" y="190" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Kril</text><line x1="50" y1="290" x2="240" y2="290" stroke="#334155" stroke-width="1.6"/><line x1="50" y1="290" x2="50" y2="200" stroke="#334155" stroke-width="1.6"/><path d="M65,215 L97,215 L129,215 L161,230 L193,252.5 L225,260" fill="none" stroke="#b45309" stroke-width="3"/><text x="65" y="304" font-size="11" text-anchor="middle" fill="#1e293b">1</text><text x="97" y="304" font-size="11" text-anchor="middle" fill="#1e293b">2</text><text x="129" y="304" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="161" y="304" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="193" y="304" font-size="11" text-anchor="middle" fill="#1e293b">5</text><text x="225" y="304" font-size="11" text-anchor="middle" fill="#1e293b">6</text><text x="38" y="245" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 38 245)">Birey sayısı</text><line x1="129" y1="290" x2="129" y2="200" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="395" y="190" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Fitoplankton</text><line x1="300" y1="290" x2="490" y2="290" stroke="#334155" stroke-width="1.6"/><line x1="300" y1="290" x2="300" y2="200" stroke="#334155" stroke-width="1.6"/><path d="M315,252.5 L347,252.5 L379,252.5 L411,237.5 L443,222.5 L475,215" fill="none" stroke="#15803d" stroke-width="3"/><text x="315" y="304" font-size="11" text-anchor="middle" fill="#1e293b">1</text><text x="347" y="304" font-size="11" text-anchor="middle" fill="#1e293b">2</text><text x="379" y="304" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="411" y="304" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="443" y="304" font-size="11" text-anchor="middle" fill="#1e293b">5</text><text x="475" y="304" font-size="11" text-anchor="middle" fill="#1e293b">6</text><text x="288" y="245" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 288 245)">Birey sayısı</text><line x1="379" y1="290" x2="379" y2="200" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="275" y="315" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Yıl</text></svg></div>
+<p><b>Grafiklerdeki değişimi başlatan olay aşağıdakilerden hangisi olabilir?</b></p>`,
+  c: ["Bölgeye fitoplanktonlarla beslenen yeni bir türün gelmesi", "Krillerin bir hastalık nedeniyle hızla ölmesi", "Bölgeye penguenlerle beslenen yeni bir avcı türün gelmesi", "Leopar foklarının aşırı avlanması"],
+  a: "D",
+  s: `<p>3. yıldan sonra leopar foku azalmış, penguen artmış, kril azalmış, fitoplankton artmıştır. Değişim zincirin tepesinden başlayıp aşağı doğru yayılmıştır: Foklar azalınca penguenler daha az avlanıp çoğalır; çoğalan penguenler krilleri daha çok tüketir; kriller azalınca fitoplanktonlar daha az tüketilip artar. Bu tablo <b>D</b> ile açıklanır.</p>
+<p><b>A</b>: Fitoplanktonlar azalırdı; oysa artmıştır.<br>
+<b>B</b>: Krille beslenen penguenler besin bulamayıp azalırdı; oysa penguenler artmıştır.<br>
+<b>C</b>: Penguenler azalırdı; grafikte artmıştır. Fokların azalmasını açıklamak için bu seçenek cazip görünür ama penguen artışıyla çelişir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Ot → Çekirge → Serçe → Şahin besin zincirindeki canlılara ait iki farklı nicelik aşağıdaki sütun grafiklerinde gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 540 175" width="540" role="img" aria-label="Besin zincirindeki canlılara ait iki grafik" font-family="Arial, Helvetica, sans-serif"><line x1="50" y1="150" x2="240" y2="150" stroke="#334155" stroke-width="1.8"/><line x1="50" y1="150" x2="50" y2="34" stroke="#334155" stroke-width="1.8"/><rect x="59.5" y="128" width="28.5" height="22" rx="0" fill="#7c3aed" stroke="#334155" stroke-width="1"/><text x="73.8" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Ot</text><rect x="107" y="106" width="28.5" height="44" rx="0" fill="#7c3aed" stroke="#334155" stroke-width="1"/><text x="121.2" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Çekirge</text><rect x="154.5" y="73" width="28.5" height="77" rx="0" fill="#7c3aed" stroke="#334155" stroke-width="1"/><text x="168.8" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Serçe</text><rect x="202" y="40" width="28.5" height="110" rx="0" fill="#7c3aed" stroke="#334155" stroke-width="1"/><text x="216.2" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Şahin</text><text x="145" y="26" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">I. grafik</text><text x="38" y="95.0" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 38 95.0)">Miktar</text><line x1="320" y1="150" x2="510" y2="150" stroke="#334155" stroke-width="1.8"/><line x1="320" y1="150" x2="320" y2="34" stroke="#334155" stroke-width="1.8"/><rect x="329.5" y="40" width="28.5" height="110" rx="0" fill="#0d9488" stroke="#334155" stroke-width="1"/><text x="343.8" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Ot</text><rect x="377" y="84" width="28.5" height="66" rx="0" fill="#0d9488" stroke="#334155" stroke-width="1"/><text x="391.2" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Çekirge</text><rect x="424.5" y="114.8" width="28.5" height="35.2" rx="0" fill="#0d9488" stroke="#334155" stroke-width="1"/><text x="438.8" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Serçe</text><rect x="472" y="134.6" width="28.5" height="15.4" rx="0" fill="#0d9488" stroke="#334155" stroke-width="1"/><text x="486.2" y="165" font-size="11" text-anchor="middle" fill="#1e293b">Şahin</text><text x="415" y="26" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">II. grafik</text><text x="308" y="95.0" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 308 95.0)">Miktar</text></svg></div>
+<p><b>I. ve II. grafiklerin gösterdiği nicelikler aşağıdakilerden hangisinde birlikte doğru verilmiştir?</b></p>`,
+  c: ["Birey sayısı / Vücut büyüklüğü", "Biyolojik birikim (zararlı madde miktarı) / Bir üst basamağa aktarılan enerji", "Vücut büyüklüğü / Biyolojik birikim (zararlı madde miktarı)", "Toplam biyokütle / Birey sayısı"],
+  a: "B",
+  s: `<p>I. grafikte değer üreticiden son tüketiciye doğru <b>artıyor</b>, II. grafikte ise <b>azalıyor</b>.</p>
+<p>Besin zincirinde yukarı çıktıkça biyolojik birikim ve (genellikle) vücut büyüklüğü artar; aktarılan enerji, birey sayısı ve toplam biyokütle azalır. Buna göre I. grafik biyolojik birikim, II. grafik aktarılan enerji olabilir: <b>B</b>.</p>
+<p><b>A</b>: İkisi de ters eşleştirilmiştir. <b>C</b>: I doğru olabilir, ama biyolojik birikim azalan grafikle gösterilemez. <b>D</b>: II doğru olabilir, ama toplam biyokütle yukarı doğru azalır. Birikimi enerjiyle aynı yönde düşünmek bu sorudaki temel tuzaktır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir buğday tarlasında, yalnızca buğday bitkilerinin üzerine yıllarca vücuttan atılamayan bir böcek ilacı püskürtülmüştür. Tarlada tek bir besin zinciri oluşturan dört türün vücudundaki ilaç miktarları ölçülmüştür.</p>
+<table><thead><tr><th>Tür</th><th>Şahin</th><th>Buğday</th><th>Serçe</th><th>Çekirge</th></tr></thead><tbody><tr><td>İlaç miktarı (birim)</td><td>12</td><td>0,05</td><td>2,4</td><td>0,4</td></tr></tbody></table>
+<p><b>Bu bilgilere göre aşağıdakilerden hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["Besin zinciri Buğday → Çekirge → Serçe → Şahin şeklindedir.", "İlaç miktarı en az olan tür, zincirde toplam enerjinin en fazla olduğu basamakta yer alır.", "Serçelerin bir hastalıkla azalması, kısa süre içinde çekirge sayısının artmasına yol açabilir.", "Şahindeki ilacın en fazla olmasının nedeni, şahinin püskürtülen ilaçla en çok doğrudan temas eden canlı olmasıdır."],
+  a: "D",
+  s: `<p>Vücuttan atılamayan maddeler besin yoluyla üst basamaklara aktarılıp birikir (biyolojik birikim). Miktarı en azdan en çoğa sıralamak zinciri verir: Buğday (0,05) → Çekirge (0,4) → Serçe (2,4) → Şahin (12). <b>A</b> doğrudur.</p>
+<p><b>B</b> doğru: İlacın en az olduğu buğday üreticidir; enerji en çok bu basamaktadır.<br>
+<b>C</b> doğru: Çekirgeleri yiyen serçeler azalırsa çekirgeler daha az avlanır ve artabilir.</p>
+<p><b>D</b> yanlış: İlaç yalnızca buğdaya püskürtülmüştür; doğrudan temas eden canlı buğdaydır. Şahindeki ilaç, yediği çok sayıda serçenin vücudunda birikmiş ilaçtan gelir. Birikimi “ilaçla temas” ile açıklamak tipik bir yanılgıdır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, bir dağ eteği ekosistemindeki beslenme ilişkilerini aşağıdaki besin ağıyla göstermiştir. Oklar enerjinin aktarıldığı yönü göstermektedir.</p><div class="fig"><svg viewBox="0 0 460 295" width="460" role="img" aria-label="Orman besin ağı" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m18" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><line x1="68.2" y1="265" x2="61.9" y2="211" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="92.4" y1="271.7" x2="272.8" y2="205.1" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="324.7" y1="265" x2="305.6" y2="211" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="346.8" y1="265" x2="407.1" y2="211" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="313.1" y1="265" x2="168" y2="136" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="78" y1="180" x2="130.8" y2="136" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="150" y1="105" x2="150" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="285.5" y1="180" x2="165.5" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="301.9" y1="180" x2="317.9" y2="56" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="180" y1="40" x2="285.2" y2="40" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="425" y1="180" x2="425" y2="126" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><line x1="322.1" y1="180" x2="401.5" y2="126" stroke="#334155" stroke-width="1.8" marker-end="url(#m18)"/><rect x="49.6" y="267" width="40.8" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="70" y="284.5" font-size="12" text-anchor="middle" fill="#1e293b">Çam</text><rect x="302" y="267" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="330" y="284.5" font-size="12" text-anchor="middle" fill="#1e293b">Yonca</text><rect x="32" y="182" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="60" y="199.5" font-size="12" text-anchor="middle" fill="#1e293b">Larva</text><rect x="275.8" y="182" width="48.4" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="300" y="199.5" font-size="12" text-anchor="middle" fill="#1e293b">Fare</text><rect x="393.2" y="182" width="63.6" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="425" y="199.5" font-size="12" text-anchor="middle" fill="#1e293b">Tavşan</text><rect x="106.8" y="107" width="86.4" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="150" y="124.5" font-size="12" text-anchor="middle" fill="#1e293b">Bıldırcın</text><rect x="122" y="27" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="150" y="44.5" font-size="12" text-anchor="middle" fill="#1e293b">Yılan</text><rect x="288.2" y="27" width="63.6" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="320" y="44.5" font-size="12" text-anchor="middle" fill="#1e293b">Baykuş</text><rect x="397" y="97" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="425" y="114.5" font-size="12" text-anchor="middle" fill="#1e293b">Tilki</text></svg></div>
+<p><b>Bu öğrenci, yalnızca bu besin ağından yararlanarak aşağıdaki hipotezlerden hangisine destek <u>sağlayamaz</u>?</b></p>`,
+  c: ["Bir besin ağında birden fazla üretici tür bulunabilir.", "Bir tüketici, farklı besin zincirlerinde farklı beslenme basamaklarında yer alabilir.", "Bir besin ağındaki otçul canlıların her biri yalnızca bir üretici türüyle beslenir.", "Bir canlı hem birinci hem de ikinci tüketici olabilir."],
+  a: "C",
+  s: `<p><b>A</b> desteklenir: Çam ve yonca iki farklı üreticidir.<br>
+<b>B</b> desteklenir: Baykuş, Yonca → Fare → Baykuş zincirinde 2. tüketici, Çam → Larva → Bıldırcın → Yılan → Baykuş zincirinde 4. tüketicidir.<br>
+<b>D</b> desteklenir: Bıldırcın yoncayla (tohumlarıyla) beslenirken 1. tüketici, larvayla beslenirken 2. tüketicidir.</p>
+<p><b>C</b> desteklenmez: Fare hem çam (tohumları) hem yoncayla beslenen bir otçuldur. Ağda larva ve tavşan tek üreticiyle beslendiği için bu hipotez ilk bakışta doğru görünebilir; ama tek bir karşı örnek (fare) “her biri” genellemesini çürütür. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir ekosistemde şahinler hem farelerle hem de yılanlarla beslenebilmektedir. Şahine enerji aktaran iki yol aşağıda gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 600 116" width="560" role="img" aria-label="Şahinin iki farklı beslenme yolu" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m19" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="77" y="18" width="76" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="115" y="37" font-size="12" text-anchor="middle" fill="#1e293b">Ot</text><rect x="187" y="18" width="76" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="225" y="37" font-size="12" text-anchor="middle" fill="#1e293b">Fare</text><line x1="155" y1="32" x2="184" y2="32" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><rect x="297" y="18" width="76" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="335" y="37" font-size="12" text-anchor="middle" fill="#1e293b">Şahin</text><line x1="265" y1="32" x2="294" y2="32" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><rect x="73" y="78" width="84" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="115" y="97" font-size="12" text-anchor="middle" fill="#1e293b">Ot</text><rect x="183" y="78" width="84" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="225" y="97" font-size="12" text-anchor="middle" fill="#1e293b">Çekirge</text><line x1="159" y1="92" x2="180" y2="92" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><rect x="293" y="78" width="84" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="335" y="97" font-size="12" text-anchor="middle" fill="#1e293b">Kurbağa</text><line x1="269" y1="92" x2="290" y2="92" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><rect x="403" y="78" width="84" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="445" y="97" font-size="12" text-anchor="middle" fill="#1e293b">Yılan</text><line x1="379" y1="92" x2="400" y2="92" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><rect x="513" y="78" width="84" height="28" rx="5" fill="#ecfccb" stroke="#334155" stroke-width="1.5"/><text x="555" y="97" font-size="12" text-anchor="middle" fill="#1e293b">Şahin</text><line x1="489" y1="92" x2="510" y2="92" stroke="#334155" stroke-width="1.8" marker-end="url(#m19)"/><text x="8" y="37" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">1. yol</text><text x="8" y="97" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">2. yol</text></svg></div>
+<p>Bu ekosistemde her beslenme basamağına bir önceki basamaktaki enerjinin %10’unun aktarıldığı kabul ediliyor.</p>
+<p><b>Bir şahinin 20 kJ enerjiyi tamamen yılanlarla beslenerek elde etmesi için üreticilerde bulunması gereken enerji, aynı enerjiyi tamamen farelerle beslenerek elde etmesi için gereken enerjinin kaç katıdır?</b></p>`,
+  c: ["10", "100", "1 000", "10 000"],
+  a: "B",
+  s: `<p>Her basamakta enerji 10’da 1’ine düştüğü için geriye doğru her basamakta 10 ile çarpılır.</p>
+<p>1. yol (Ot → Fare → Şahin): Şahin 20 kJ → Fare 200 kJ → Ot <b>2 000 kJ</b>.<br>
+2. yol (Ot → Çekirge → Kurbağa → Yılan → Şahin): Şahin 20 kJ → Yılan 200 → Kurbağa 2 000 → Çekirge 20 000 → Ot <b>200 000 kJ</b>.</p>
+<p>200 000 ÷ 2 000 = <b>100 kat</b>. Uzun zincirde iki fazla basamak olduğu için enerji iki kez daha 10’da 1’ine düşer: 10 × 10 = 100.</p>
+<p>“10” seçeneği basamak farkını bir sanmaktan, “1 000” ve “10 000” ise halka sayısını basamak sayısı yerine kullanmaktan kaynaklanır. Bu sonuç, kısa besin zincirlerinin enerjiyi daha verimli aktardığını gösterir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir ekosistemde enerji ve madde aktarımı aşağıdaki şemada gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 500 228" width="500" role="img" aria-label="Ekosistemde enerji akışı ve madde döngüsü" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m20" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><defs><marker id="m20r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs><defs><marker id="m20g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker></defs><circle cx="45" cy="55" r="26" fill="#facc15" stroke="#ca8a04" stroke-width="2"/><text x="45" y="59" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Güneş</text><rect x="120" y="40" width="100" height="32" rx="6" fill="#dcfce7" stroke="#334155" stroke-width="1.5"/><text x="170" y="60" font-size="12" text-anchor="middle" fill="#1e293b">Üreticiler</text><rect x="250" y="40" width="100" height="32" rx="6" fill="#fef9c3" stroke="#334155" stroke-width="1.5"/><text x="300" y="60" font-size="12" text-anchor="middle" fill="#1e293b">Tüketiciler</text><rect x="380" y="40" width="100" height="32" rx="6" fill="#fae8ff" stroke="#334155" stroke-width="1.5"/><text x="430" y="60" font-size="12" text-anchor="middle" fill="#1e293b">Ayrıştırıcılar</text><line x1="72" y1="56" x2="117" y2="56" stroke="#334155" stroke-width="2.5" marker-end="url(#m20)"/><line x1="222" y1="56" x2="247" y2="56" stroke="#334155" stroke-width="2.5" marker-end="url(#m20)"/><line x1="352" y1="56" x2="377" y2="56" stroke="#334155" stroke-width="2.5" marker-end="url(#m20)"/><line x1="200" y1="74" x2="200" y2="110" stroke="#dc2626" stroke-width="2" marker-end="url(#m20r)"/><text x="200" y="124" font-size="11" text-anchor="middle" fill="#dc2626" font-weight="bold">ısı</text><line x1="330" y1="74" x2="330" y2="110" stroke="#dc2626" stroke-width="2" marker-end="url(#m20r)"/><text x="330" y="124" font-size="11" text-anchor="middle" fill="#dc2626" font-weight="bold">ısı</text><line x1="460" y1="74" x2="460" y2="110" stroke="#dc2626" stroke-width="2" marker-end="url(#m20r)"/><text x="460" y="124" font-size="11" text-anchor="middle" fill="#dc2626" font-weight="bold">ısı</text><path d="M410,74 Q410,170 290,170 Q150,170 150,74" fill="none" stroke="#15803d" stroke-width="2.5" marker-end="url(#m20g)" stroke-dasharray="7 4"/><text x="290" y="190" font-size="11" text-anchor="middle" fill="#15803d">mineraller, karbondioksit, azotlu bileşikler</text><line x1="250" y1="216" x2="280" y2="216" stroke="#334155" stroke-width="2.5" marker-end="url(#m20)"/><text x="286" y="220" font-size="11" text-anchor="start" fill="#1e293b">enerji aktarımı</text><line x1="390" y1="216" x2="420" y2="216" stroke="#15803d" stroke-width="2.5" marker-end="url(#m20g)" stroke-dasharray="7 4"/><text x="426" y="220" font-size="11" text-anchor="start" fill="#1e293b">madde</text></svg></div>
+<p>Bu şemayla ilgili;</p>
+<p>I. Güneş’ten gelen ışık enerjisi üreticiler tarafından besindeki kimyasal enerjiye dönüştürülür.<br>
+II. Ayrıştırıcılar, ölü kalıntılardaki enerjiyi üreticilere geri kazandırarak enerjinin ekosistemde döngü yapmasını sağlar.<br>
+III. Her basamakta enerjinin bir kısmı ısı olarak ekosistemden ayrılırken karbon ve azot gibi maddeler canlılarla çevre arasında döner.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>I ✓: Üreticiler fotosentezle ışık enerjisini besindeki kimyasal enerjiye dönüştürür.<br>
+III ✓: Her basamak enerjinin büyük kısmını yaşamsal faaliyetlerde kullanır ve ısı olarak kaybeder; madde ise döngüler hâlinde yeniden kullanılır.<br>
+II ✗: Ayrıştırıcılar ölü kalıntılardaki <b>maddeleri</b> (mineraller, CO<sub>2</sub>, azotlu bileşikler) toprağa ve havaya geri kazandırır; enerjiyi geri kazandırmaz. Ayrıştırıcıların aldığı enerji de sonunda ısı olarak kaybolur. Enerji ekosistemde tek yönlü akar, döngü yapmaz.</p>
+<p>“Madde döner, enerji akar” ilkesini karıştırmak II’yi doğru sandırır. Cevap “I ve III” olur. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, karbon döngüsünü anlatmak için bir karbon atomunun yolculuğunu numaralı aşamalarla yazmıştır.</p>
+<div class="box"><p><b>1.</b> Havadaki karbondioksitte bulunan karbon atomu, bir buğday yaprağına gözeneklerden girer ve fotosentezle üretilen glikozun yapısına katılır.<br>
+<b>2.</b> Glikoz buğday tanesinde nişasta olarak depolanır; bu taneleri bir fare yer ve karbon atomu farenin vücuduna katılır.<br>
+<b>3.</b> Fareyi bir yılan yer; karbon atomu yılanın vücuduna geçer.<br>
+<b>4.</b> Yılan öldükten sonra vücudu ayrıştırıcılarca parçalanır; ayrıştırıcılar bu karbonu fotosentezle kendi besinlerine katarak havadaki karbondioksiti azaltır.<br>
+<b>5.</b> Milyonlarca yıl önce toprağa gömülen canlı kalıntılarındaki karbon fosil yakıtlara dönüşmüştür; bu yakıtlar yakıldığında karbon yeniden karbondioksit olarak havaya döner.</p></div>
+<p><b>Öğrencinin yazdığı aşamalardan hangisinde bilimsel bir hata vardır?</b></p>`,
+  c: ["1", "2", "3", "4"],
+  a: "D",
+  s: `<p>1 ✓: Karbon bitkiye CO<sub>2</sub> olarak yapraktaki gözeneklerden girer ve fotosentezle besine katılır.<br>
+2 ✓ ve 3 ✓: Karbon besin zinciri boyunca beslenmeyle aktarılır.<br>
+5 ✓: Fosil yakıtlar uzun süre depolanmış karbon içerir; yanınca CO<sub>2</sub> açığa çıkar.</p>
+<p>4 ✗: Ayrıştırıcılar (bazı bakteriler ve mantarlar) fotosentez yapmaz. Ölü kalıntıları ayrıştırırken solunum yaparlar ve karbonu <b>CO<sub>2</sub> olarak havaya verirler</b>; yani havadaki CO<sub>2</sub>’yi azaltmaz, artırırlar. “Ayrıştırıcılar CO<sub>2</sub>’yi azaltır” LGS’de sık kullanılan bir çeldiricidir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir araştırmacı, içinde hiç azotlu bileşik bulunmayan yıkanmış kumla doldurduğu özdeş saksılarda aşağıdaki deneyi yapıyor. Saksılar aynı ışık, sıcaklık ve su koşullarında 6 hafta bekletiliyor.</p>
+<table><thead><tr><th>Saksı</th><th>Ekilen bitki</th><th>Kökte azot bağlayıcı bakteri</th><th>Kuma eklenen</th><th>6 hafta sonra bitkiler</th></tr></thead><tbody><tr><td>1</td><td>Fasulye</td><td>Var</td><td>Yalnızca su</td><td>Sağlıklı ve iri</td></tr><tr><td>2</td><td>Fasulye</td><td>Yok</td><td>Yalnızca su</td><td>Cılız, yaprakları sararmış</td></tr><tr><td>3</td><td>Buğday</td><td>Yok</td><td>Yalnızca su</td><td>Cılız, yaprakları sararmış</td></tr><tr><td>4</td><td>Buğday</td><td>Yok</td><td>Azotlu gübreli su</td><td>Sağlıklı ve iri</td></tr></tbody></table>
+<p><b>Bu deneyin sonuçlarına göre aşağıdakilerden hangisine <u>ulaşılamaz</u>?</b></p>`,
+  c: ["Fasulyenin azotsuz kumda sağlıklı gelişebilmesi köklerindeki bakterilere bağlıdır.", "Buğday, çevresindeki havada bulunan azot gazını doğrudan kullanamaz.", "Fasulye köklerindeki bakteriler, yan yana ekilen buğdayın azot ihtiyacını da karşılar.", "Topraktaki azotlu bileşikler bitkilerin gelişmesi için gereklidir."],
+  a: "C",
+  s: `<p><b>A</b>: 1 ve 2 numaralı saksılar yalnızca bakteri bakımından farklıdır; bakterili fasulye sağlıklıdır, ulaşılır.<br>
+<b>B</b>: 3 numaralı saksıdaki buğday havayla temas ettiği hâlde azot eksikliği belirtisi göstermiştir; havadaki azot gazını doğrudan kullanamadığı anlaşılır.<br>
+<b>D</b>: 3 ve 4 yalnızca azotlu gübre bakımından farklıdır; gübreli saksıdaki buğday sağlıklıdır, ulaşılır.</p>
+<p><b>C</b>: Deneyde fasulye ile buğdayın aynı saksıya ekildiği bir düzenek yoktur; bu yargı test edilmemiştir. (Nöbetleşe ekimde baklagiller toprağı zamanla azotça zenginleştirir, ama bu deney böyle bir sonucu göstermez.) Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci aynı miktarda sulanmış özdeş saksılarla dört düzenek hazırlıyor. I. düzenekte bitkinin tamamı saksısıyla birlikte, II. düzenekte yalnızca bitkinin toprak üstündeki kısmı şeffaf poşetle kapatılıyor. III. düzenekte yaprakları koparılmış bir bitkinin toprak üstündeki kısmı, IV. düzenekte ise bitki bulunmayan nemli topraklı saksı poşetle kapatılıyor. Poşetlerin ağzı sıkıca bağlanıyor.</p><div class="fig"><svg viewBox="0 0 530 248" width="530" role="img" aria-label="Dört saksı düzeneği ve şeffaf poşetler" font-family="Arial, Helvetica, sans-serif"><rect x="20" y="30" width="100" height="160" rx="18" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/><path d="M32,140 L108,140 L100,185 L40,185 Z" fill="#fb923c" stroke="#7c2d12" stroke-width="1.5"/><rect x="32" y="136" width="76" height="7" rx="1" fill="#78350f" stroke="none" stroke-width="1.5"/><line x1="70" y1="136" x2="70" y2="45" stroke="#166534" stroke-width="3"/><ellipse cx="52" cy="60" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="88" cy="75" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="52" cy="95" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="88" cy="110" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="56" cy="50" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><path d="M196,135 Q154,128 154,40 Q154,22 170,22 L230,22 Q246,22 246,40 Q246,128 204,135" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/><path d="M162,140 L238,140 L230,185 L170,185 Z" fill="#fb923c" stroke="#7c2d12" stroke-width="1.5"/><rect x="162" y="136" width="76" height="7" rx="1" fill="#78350f" stroke="none" stroke-width="1.5"/><line x1="200" y1="136" x2="200" y2="45" stroke="#166534" stroke-width="3"/><ellipse cx="182" cy="60" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="218" cy="75" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="182" cy="95" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="218" cy="110" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><ellipse cx="186" cy="50" rx="15" ry="7" fill="#4ade80" stroke="#166534" stroke-width="1"/><path d="M326,135 Q284,128 284,40 Q284,22 300,22 L360,22 Q376,22 376,40 Q376,128 334,135" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/><path d="M292,140 L368,140 L360,185 L300,185 Z" fill="#fb923c" stroke="#7c2d12" stroke-width="1.5"/><rect x="292" y="136" width="76" height="7" rx="1" fill="#78350f" stroke="none" stroke-width="1.5"/><line x1="330" y1="136" x2="330" y2="45" stroke="#166534" stroke-width="3"/><rect x="410" y="30" width="100" height="160" rx="18" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/><path d="M422,140 L498,140 L490,185 L430,185 Z" fill="#fb923c" stroke="#7c2d12" stroke-width="1.5"/><rect x="422" y="136" width="76" height="7" rx="1" fill="#78350f" stroke="none" stroke-width="1.5"/><text x="70" y="210" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">I. düzenek</text><text x="200" y="210" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">II. düzenek</text><text x="330" y="210" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">III. düzenek</text><text x="460" y="210" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">IV. düzenek</text><line x1="380" y1="236" x2="410" y2="236" stroke="#2563eb" stroke-width="2" stroke-dasharray="6 4"/><text x="416" y="240" font-size="11" text-anchor="start" fill="#1e293b">şeffaf poşet</text></svg></div>
+<p><b>Öğrenci, “Bitkiler yapraklarındaki gözeneklerden havaya su buharı verir.” hipotezini test etmek için düzeneklerden hangi ikisini karşılaştırmalıdır?</b></p>`,
+  c: ["I ve II", "I ve IV", "II ve III", "III ve IV"],
+  a: "C",
+  s: `<p>Test edilen değişken <b>yaprakların varlığıdır</b>. Topraktan buharlaşan suyun poşette biriken suya karışmaması için poşet yalnızca bitkinin toprak üstündeki kısmını kapatmalıdır. II ve III bu koşulları sağlar ve yalnızca yaprak bakımından farklıdır: II’deki poşette III’tekine göre çok daha fazla su damlacığı birikirse suyun yapraklardan verildiği anlaşılır.</p>
+<p><b>B</b>: İki poşette de topraktan buharlaşan su vardır; bitkinin su verdiği anlaşılsa da suyun yapraklardan geldiği anlaşılamaz.<br>
+<b>A</b>: İkisinde de yapraklı bitki vardır; fark yalnızca toprağın poşette olup olmamasıdır.<br>
+<b>D</b>: Bitkinin varlığı, poşetin kapattığı bölüm ve toprağın durumu gibi birden fazla koşul farklıdır.</p>
+<p>Bu deney, su döngüsünde bitkilerin terleme yoluyla atmosfere su buharı verdiğini gösterir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Tarım alanlarıyla çevrili bir gölde birkaç yıl içinde gözlenen olaylar sırasıyla aşağıda verilmiştir.</p><div class="fig"><svg viewBox="0 0 520 240" width="500" role="img" aria-label="Göldeki olayların sırası" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m24" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="20" y="18" width="480" height="30" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="260" y="37.5" font-size="12" text-anchor="middle" fill="#1e293b">Tarlalardan göle aşırı azotlu gübre karışır.</text><rect x="20" y="62" width="480" height="30" rx="6" fill="#ecfeff" stroke="#334155" stroke-width="1.5"/><text x="260" y="81.5" font-size="12" text-anchor="middle" fill="#1e293b">Algler hızla çoğalır, göl yüzeyini kaplar.</text><line x1="260" y1="49" x2="260" y2="60" stroke="#334155" stroke-width="1.8" marker-end="url(#m24)"/><rect x="20" y="106" width="480" height="30" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="260" y="125.5" font-size="12" text-anchor="middle" fill="#1e293b">Derindeki su bitkileri yeterli ışık alamaz ve ölür; algler de zamanla ölür.</text><line x1="260" y1="93" x2="260" y2="104" stroke="#334155" stroke-width="1.8" marker-end="url(#m24)"/><rect x="20" y="150" width="480" height="30" rx="6" fill="#ecfeff" stroke="#334155" stroke-width="1.5"/><text x="260" y="169.5" font-size="12" text-anchor="middle" fill="#1e293b">Ölü canlıları ayrıştıran mikroorganizmaların sayısı artar.</text><line x1="260" y1="137" x2="260" y2="148" stroke="#334155" stroke-width="1.8" marker-end="url(#m24)"/><rect x="20" y="194" width="480" height="30" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="260" y="213.5" font-size="12" text-anchor="middle" fill="#1e293b">Balık ölümleri görülür.</text><line x1="260" y1="181" x2="260" y2="192" stroke="#334155" stroke-width="1.8" marker-end="url(#m24)"/></svg></div>
+<p>Bu olaylarla ilgili;</p>
+<p>I. Göle karışan azotlu bileşikler alglerin çoğalmasını hızlandırmıştır.<br>
+II. Ölen canlıların ayrıştırılması sırasında sudaki çözünmüş oksijen azalmıştır.<br>
+III. Ayrıştırıcıların artması, ayrışma sırasında suya oksijen verdiği için balıkların yaşamını kolaylaştırmıştır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: Azot, canlıların temel moleküllerinin yapısında bulunur; algler için gerekli azotlu bileşiklerin çok artması onların hızla çoğalmasına yol açar.<br>
+II ✓: Ayrıştırıcı mikroorganizmalar oksijenli solunum yapar; sayıları artınca sudaki oksijeni hızla tüketir. Oksijenin azalması balık ölümlerini açıklar.<br>
+III ✗: Ayrışma sırasında suya oksijen değil, karbondioksit verilir. “Ayrıştırıcılar ortamı temizler, dolayısıyla faydalıdır” düşüncesi bu yanılgıya götürür.</p>
+<p>Bu olay, madde döngüsündeki dengenin insan etkisiyle bozulmasına bir örnektir. Cevap “I ve II” olur. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Azot döngüsündeki bazı olaylar aşağıdaki şemada numaralandırılmıştır.</p><div class="fig"><svg viewBox="0 0 530 312" width="530" role="img" aria-label="Azot döngüsü numaralı şema" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m25" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="155" y="12" width="230" height="32" rx="6" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="270" y="32.5" font-size="12" text-anchor="middle" fill="#1e293b">Havadaki azot gazı</text><rect x="12" y="94" width="96" height="32" rx="6" fill="#fef9c3" stroke="#334155" stroke-width="1.5"/><text x="60" y="114.5" font-size="12" text-anchor="middle" fill="#1e293b">Yıldırım</text><rect x="141" y="98" width="118" height="44" rx="6" fill="#dcfce7" stroke="#334155" stroke-width="1.5"/><text x="200" y="117.5" font-size="12" text-anchor="middle" fill="#1e293b">Fasulye kökündeki</text><text x="200" y="131.5" font-size="12" text-anchor="middle" fill="#1e293b">yumrular</text><rect x="145" y="274" width="250" height="32" rx="6" fill="#fde68a" stroke="#334155" stroke-width="1.5"/><text x="270" y="294.5" font-size="12" text-anchor="middle" fill="#1e293b">Topraktaki azotlu bileşikler</text><rect x="440" y="235" width="80" height="30" rx="6" fill="#dcfce7" stroke="#334155" stroke-width="1.5"/><text x="480" y="254.5" font-size="12" text-anchor="middle" fill="#1e293b">Bitki</text><rect x="440" y="125" width="80" height="30" rx="6" fill="#fef3c7" stroke="#334155" stroke-width="1.5"/><text x="480" y="144.5" font-size="12" text-anchor="middle" fill="#1e293b">Hayvan</text><rect x="328" y="168" width="104" height="44" rx="6" fill="#fae8ff" stroke="#334155" stroke-width="1.5"/><text x="380" y="187.5" font-size="12" text-anchor="middle" fill="#1e293b">Ölü kalıntılar</text><text x="380" y="201.5" font-size="12" text-anchor="middle" fill="#1e293b">ve atıklar</text><line x1="180" y1="44" x2="80" y2="94" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)" stroke-dasharray="5 3"/><line x1="60" y1="126" x2="170" y2="274" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="128" cy="200" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="128" y="204.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">1</text><line x1="230" y1="44" x2="210" y2="98" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)" stroke-dasharray="5 3"/><line x1="205" y1="142" x2="240" y2="274" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="235.5" cy="208" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="235.5" y="212.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">2</text><line x1="290" y1="274" x2="290" y2="44" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="303" cy="159" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="303" y="163.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">4</text><line x1="370" y1="212" x2="345" y2="274" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="370.5" cy="243" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="370.5" y="247.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">3</text><line x1="395" y1="290" x2="452" y2="266" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="436.5" cy="278" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="436.5" y="282.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">5</text><line x1="480" y1="235" x2="480" y2="155" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)"/><circle cx="493" cy="195" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="493" y="199.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">6</text><line x1="440" y1="152" x2="420" y2="168" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)" stroke-dasharray="5 3"/><line x1="440" y1="242" x2="420" y2="212" stroke="#334155" stroke-width="1.8" marker-end="url(#m25)" stroke-dasharray="5 3"/></svg></div>
+<div class="box"><p><b>(a)</b> Tarlaya verilen azotlu gübrenin bir kısmı, topraktaki bazı bakteriler tarafından azot gazına dönüştürülüp havaya verildiği için bitkilere ulaşmadan kaybolur.<br>
+<b>(b)</b> Bir çiftçi, nohut ektiği tarlaya ertesi yıl buğday ekerken daha az azotlu gübre kullanır.<br>
+<b>(c)</b> Hasattan sonra toprağa karıştırılan sap ve yapraklar, topraktaki mikroorganizmalar tarafından parçalanır; içlerindeki azot toprağa kazandırılır.</p></div>
+<p><b>Metindeki (a), (b) ve (c) durumları, şemadaki numaralı olaylardan hangileriyle sırasıyla ilişkilidir?</b></p>`,
+  c: ["2 – 4 – 3", "4 – 2 – 3", "4 – 1 – 3", "4 – 2 – 5"],
+  a: "B",
+  s: `<p>(a): Topraktaki azotlu bileşiklerin azot gazına dönüştürülüp havaya verilmesi, azot ayrıştırıcı bakterilerin işidir: <b>4</b>.<br>
+(b): Nohut bir baklagildir; köklerindeki yumrularda yaşayan azot bağlayıcı bakteriler havadaki azotu toprağa bağlar: <b>2</b>.<br>
+(c): Ölü kalıntıların mikroorganizmalarca ayrıştırılıp azotun toprağa katılması: <b>3</b>.</p>
+<p><b>A</b>: Azot bağlayıcı ve azot ayrıştırıcı bakterilerin görevleri birbirinin tersidir; bu seçenek ikisini karıştırır.<br>
+<b>C</b>: 1 numara yıldırımdır; yıldırım azotu bağlar ama bir canlı değildir ve nohutla ilgisi yoktur.<br>
+<b>D</b>: 5 numara bitkinin azotlu bileşikleri kökleriyle almasıdır; ayrıştırma değildir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p>Kömür, milyonlarca yıl önce yaşamış bitkilerin kalıntılarının toprak altında, havasız ortamda, yüksek basınç ve sıcaklık etkisiyle değişmesi sonucu oluşmuştur. Kömürdeki karbonun kaynağı, bu bitkilerin fotosentezle atmosferden aldığı karbondioksittir.</p></div>
+<p>Bu bilgiye göre,</p>
+<p>I. Kömür yakıldığında açığa çıkan karbondioksit, karbon döngüsünde çok uzun süre yer altında depolanmış karbonun atmosfere dönmesidir.<br>
+II. Kömürün yanmasıyla açığa çıkan enerjinin kaynağı, milyonlarca yıl önce bitkilerin besine dönüştürdüğü Güneş enerjisidir.<br>
+III. Bitkiler bugün de fotosentez yaptığı için kömür, kısa sürede yerine konabilen yenilenebilir bir enerji kaynağıdır.</p>
+<p><b>yargılarından hangilerine ulaşılabilir?</b></p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>I ✓: Kömürdeki karbon bitkilerin atmosferden aldığı karbondur; milyonlarca yıl toprak altında kalmış, yakılınca CO<sub>2</sub> olarak atmosfere döner. Bu yüzden fosil yakıt kullanımı havadaki CO<sub>2</sub>’yi artırır.<br>
+II ✓: Bitkiler fotosentezde ışık enerjisini besindeki kimyasal enerjiye dönüştürür; kömürdeki kimyasal enerji de bu besinden gelir.<br>
+III ✗: Kömürün oluşması milyonlarca yıl sürer; insan ömrüyle kıyaslanınca yerine konamaz, yenilenemez bir kaynaktır.</p>
+<p>Cevap “I ve II” olur. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Üç farklı canlı ya da hücrede gerçekleşen solunumla ilgili bazı bilgiler tabloda verilmiştir.</p>
+<table><thead><tr><th></th><th>Oksijen kullanılır mı?</th><th>Karbondioksit oluşur mu?</th><th>Oluşan maddelerden biri</th></tr></thead><tbody><tr><td>X</td><td>Hayır</td><td>Evet</td><td>Etil alkol</td></tr><tr><td>Y</td><td>Hayır</td><td>Hayır</td><td>Laktik asit</td></tr><tr><td>Z</td><td>Evet</td><td>Evet</td><td>Su</td></tr></tbody></table>
+<p><b>Buna göre aşağıdakilerden hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["X ve Y oksijen kullanmadığı için solunum yapmaz; besinden enerji elde edemez.", "X, hamurun kabarmasını sağlayan maya mantarı olabilir.", "Y, yoğun egzersiz sırasında oksijen yetersiz kaldığında çizgili kas hücresi olabilir.", "Aynı miktar besinden en fazla ATP’yi Z’deki solunum sağlar."],
+  a: "A",
+  s: `<p>X etil alkol fermantasyonu, Y laktik asit fermantasyonu, Z oksijenli solunum yapmaktadır.</p>
+<p><b>B</b> doğru: Maya mantarı etil alkol fermantasyonuyla CO<sub>2</sub> üretir; bu gaz hamuru kabartır.<br>
+<b>C</b> doğru: Kaslara yeterli oksijen ulaşmadığında kas hücreleri laktik asit fermantasyonu yapar; bu olayda CO<sub>2</sub> oluşmaz.<br>
+<b>D</b> doğru: Oksijenli solunumda, oksijensiz solunuma göre daha fazla enerji elde edilir.</p>
+<p><b>A</b> yanlış: Fermantasyon, <b>oksijensiz solunumdur</b>. X ve Y de besinleri parçalayarak enerji (ATP) elde eder, yalnızca daha az elde eder. “Solunum = oksijen kullanmak” düşüncesi bu yanılgının kaynağıdır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir şehrin merkezinde, 8. ve 14. günler arasında özel araç trafiği yasaklanmıştır. Şehir merkezindeki bir ölçüm istasyonunda havadaki karbondioksit miktarı her gün aynı saatte ölçülmüş ve sonuçlar grafikte gösterilmiştir. Ölçüm yapılan günlerde hava koşulları birbirine benzerdir.</p><div class="fig"><svg viewBox="0 0 500 250" width="500" role="img" aria-label="Şehir merkezindeki karbondioksit miktarının günlere göre değişimi" font-family="Arial, Helvetica, sans-serif"><rect x="210" y="25" width="120" height="175" rx="0" fill="#fde68a" stroke="none" stroke-width="0" fill-opacity="0.5"/><text x="270" y="42" font-size="11" text-anchor="middle" fill="#92400e" font-weight="bold">araç trafiği yasak</text><line x1="70" y1="200" x2="470" y2="200" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="204" font-size="11" text-anchor="end" fill="#1e293b">390</text><line x1="70" y1="165" x2="470" y2="165" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="169" font-size="11" text-anchor="end" fill="#1e293b">400</text><line x1="70" y1="130" x2="470" y2="130" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="134" font-size="11" text-anchor="end" fill="#1e293b">410</text><line x1="70" y1="95" x2="470" y2="95" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="99" font-size="11" text-anchor="end" fill="#1e293b">420</text><line x1="70" y1="60" x2="470" y2="60" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="64" font-size="11" text-anchor="end" fill="#1e293b">430</text><line x1="70" y1="25" x2="470" y2="25" stroke="#e2e8f0" stroke-width="1"/><text x="64" y="29" font-size="11" text-anchor="end" fill="#1e293b">440</text><line x1="70" y1="200" x2="70" y2="204" stroke="#334155" stroke-width="1.2"/><text x="70" y="217" font-size="11" text-anchor="middle" fill="#1e293b">1</text><line x1="130" y1="200" x2="130" y2="204" stroke="#334155" stroke-width="1.2"/><text x="130" y="217" font-size="11" text-anchor="middle" fill="#1e293b">4</text><line x1="210" y1="200" x2="210" y2="204" stroke="#334155" stroke-width="1.2"/><text x="210" y="217" font-size="11" text-anchor="middle" fill="#1e293b">8</text><line x1="270" y1="200" x2="270" y2="204" stroke="#334155" stroke-width="1.2"/><text x="270" y="217" font-size="11" text-anchor="middle" fill="#1e293b">11</text><line x1="330" y1="200" x2="330" y2="204" stroke="#334155" stroke-width="1.2"/><text x="330" y="217" font-size="11" text-anchor="middle" fill="#1e293b">14</text><line x1="390" y1="200" x2="390" y2="204" stroke="#334155" stroke-width="1.2"/><text x="390" y="217" font-size="11" text-anchor="middle" fill="#1e293b">17</text><line x1="470" y1="200" x2="470" y2="204" stroke="#334155" stroke-width="1.2"/><text x="470" y="217" font-size="11" text-anchor="middle" fill="#1e293b">21</text><line x1="70" y1="200" x2="478" y2="200" stroke="#334155" stroke-width="2"/><line x1="70" y1="200" x2="70" y2="17" stroke="#334155" stroke-width="2"/><path d="M70,60 L90,53 L110,67 L130,56.5 L150,49.5 L170,63.5 L190,60 L210,102 L230,130 L250,147.5 L270,151 L290,144 L310,147.5 L330,151 L350,77.5 L370,56.5 L390,49.5 L410,60 L430,63.5 L450,53 L470,56.5" fill="none" stroke="#1d4ed8" stroke-width="3"/><text x="270" y="234" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Gün</text><text x="14" y="112.5" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b" transform="rotate(-90 14 112.5)">Karbondioksit miktarı</text></svg></div>
+<p>(Karbondioksit miktarı “milyonda bir birim” cinsindendir.)</p>
+<p><b>Bu verilere göre aşağıdakilerden hangisine <u>ulaşılamaz</u>?</b></p>`,
+  c: ["Araç trafiği, şehir merkezindeki havaya karbondioksit veren kaynaklardan biridir.", "Bir haftalık trafik yasağı, Dünya’nın ortalama sıcaklığını düşürmüştür.", "Trafik yasağı kalkınca şehir merkezindeki karbondioksit miktarı yeniden yaklaşık eski düzeyine çıkmıştır.", "Trafik yasağı uygulanan günlerde ölçülen karbondioksit miktarı, yasaktan önceki günlerdekinden azdır."],
+  a: "B",
+  s: `<p><b>D</b> ulaşılır: Yasaktan önce yaklaşık 430 olan değer yasak günlerinde 404–418 arasındadır.<br>
+<b>A</b> ulaşılır: Hava koşulları benzer olduğu hâlde trafik kalkınca CO<sub>2</sub> azalmıştır.<br>
+<b>C</b> ulaşılır: 15. günden sonra değer yeniden yaklaşık 430’a çıkmıştır.</p>
+<p><b>B</b> ulaşılamaz: Ölçüm yalnızca bir şehir merkezinde ve bir haftada yapılmıştır; Dünya’nın ortalama sıcaklığına ait bir veri yoktur. Küresel ısınma, sera gazlarının uzun yıllar boyunca bütün atmosferde artmasıyla ilgilidir. Yerel ve kısa süreli bir ölçümden küresel bir sonuç çıkarmak bu sorudaki tuzaktır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki grafiklerde yıllara göre havadaki karbondioksit miktarı, Dünya’nın ortalama sıcaklığındaki artış ve bir bölgedeki buzul alanının değişimi yaklaşık değerlerle gösterilmiştir. (Sütunların başladığı değerler grafiklerde farklıdır.)</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Yıllara göre CO2 miktarı, sıcaklık artışı ve buzul alanı" font-family="Arial, Helvetica, sans-serif"><line x1="45" y1="150" x2="195" y2="150" stroke="#334155" stroke-width="1.8"/><line x1="45" y1="150" x2="45" y2="44" stroke="#334155" stroke-width="1.8"/><rect x="51" y="117.5" width="18" height="32.5" rx="0" fill="#64748b" stroke="#334155" stroke-width="1"/><text x="60" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1980</text><rect x="81" y="105" width="18" height="45" rx="0" fill="#64748b" stroke="#334155" stroke-width="1"/><text x="90" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1990</text><rect x="111" y="91.7" width="18" height="58.3" rx="0" fill="#64748b" stroke="#334155" stroke-width="1"/><text x="120" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2000</text><rect x="141" y="75" width="18" height="75" rx="0" fill="#64748b" stroke="#334155" stroke-width="1"/><text x="150" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2010</text><rect x="171" y="55.8" width="18" height="94.2" rx="0" fill="#64748b" stroke="#334155" stroke-width="1"/><text x="180" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2020</text><text x="120" y="36" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Havadaki karbondioksit</text><text x="60" y="113.5" font-size="11" text-anchor="middle" fill="#1e293b">339</text><text x="90" y="101" font-size="11" text-anchor="middle" fill="#1e293b">354</text><text x="120" y="87.7" font-size="11" text-anchor="middle" fill="#1e293b">370</text><text x="150" y="71" font-size="11" text-anchor="middle" fill="#1e293b">390</text><text x="180" y="51.8" font-size="11" text-anchor="middle" fill="#1e293b">413</text><line x1="225" y1="150" x2="375" y2="150" stroke="#334155" stroke-width="1.8"/><line x1="225" y1="150" x2="225" y2="44" stroke="#334155" stroke-width="1.8"/><rect x="231" y="131.8" width="18" height="18.2" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="240" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1980</text><text x="240" y="127.8" font-size="11" text-anchor="middle" fill="#1e293b">0,2</text><rect x="261" y="113.6" width="18" height="36.4" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="270" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1990</text><text x="270" y="109.6" font-size="11" text-anchor="middle" fill="#1e293b">0,4</text><rect x="291" y="104.5" width="18" height="45.5" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="300" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2000</text><text x="300" y="100.5" font-size="11" text-anchor="middle" fill="#1e293b">0,5</text><rect x="321" y="86.4" width="18" height="63.6" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="330" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2010</text><text x="330" y="82.4" font-size="11" text-anchor="middle" fill="#1e293b">0,7</text><rect x="351" y="59.1" width="18" height="90.9" rx="0" fill="#dc2626" stroke="#334155" stroke-width="1"/><text x="360" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2020</text><text x="360" y="55.1" font-size="11" text-anchor="middle" fill="#1e293b">1,0</text><text x="300" y="36" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Sıcaklık artışı</text><line x1="405" y1="150" x2="555" y2="150" stroke="#334155" stroke-width="1.8"/><line x1="405" y1="150" x2="405" y2="44" stroke="#334155" stroke-width="1.8"/><rect x="411" y="59.1" width="18" height="90.9" rx="0" fill="#0284c7" stroke="#334155" stroke-width="1"/><text x="420" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1980</text><text x="420" y="55.1" font-size="11" text-anchor="middle" fill="#1e293b">100</text><rect x="441" y="63.6" width="18" height="86.4" rx="0" fill="#0284c7" stroke="#334155" stroke-width="1"/><text x="450" y="165" font-size="11" text-anchor="middle" fill="#1e293b">1990</text><text x="450" y="59.6" font-size="11" text-anchor="middle" fill="#1e293b">95</text><rect x="471" y="70" width="18" height="80" rx="0" fill="#0284c7" stroke="#334155" stroke-width="1"/><text x="480" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2000</text><text x="480" y="66" font-size="11" text-anchor="middle" fill="#1e293b">88</text><rect x="501" y="77.3" width="18" height="72.7" rx="0" fill="#0284c7" stroke="#334155" stroke-width="1"/><text x="510" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2010</text><text x="510" y="73.3" font-size="11" text-anchor="middle" fill="#1e293b">80</text><rect x="531" y="86.4" width="18" height="63.6" rx="0" fill="#0284c7" stroke="#334155" stroke-width="1"/><text x="540" y="165" font-size="11" text-anchor="middle" fill="#1e293b">2020</text><text x="540" y="82.4" font-size="11" text-anchor="middle" fill="#1e293b">70</text><text x="480" y="36" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Buzul alanı</text><text x="120" y="192" font-size="11" text-anchor="middle" fill="#1e293b">(milyonda bir birim)</text><text x="300" y="192" font-size="11" text-anchor="middle" fill="#1e293b">(°C)</text><text x="480" y="192" font-size="11" text-anchor="middle" fill="#1e293b">(1980 = 100)</text></svg></div>
+<p><b>Bu grafiklerle ilgili aşağıdaki yorumlardan hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["Havadaki karbondioksit miktarı arttıkça ortalama sıcaklık da artma eğilimi göstermiştir.", "Grafiklerdeki değişimlerin temel nedeni ozon tabakasının incelmesidir.", "Buzul alanındaki azalma, ortalama sıcaklığın artmasıyla uyumludur.", "Fosil yakıt kullanımını azaltmak, karbondioksit artışını yavaşlatmaya yönelik bir önlemdir."],
+  a: "B",
+  s: `<p><b>A</b> doğru: 1980’den 2020’ye CO<sub>2</sub> sürekli artmış, sıcaklık artışı da büyümüştür.<br>
+<b>C</b> doğru: Sıcaklık arttıkça buzul alanı küçülmüştür.<br>
+<b>D</b> doğru: Fosil yakıtların yanması havaya CO<sub>2</sub> verir; kullanımını azaltmak artışı yavaşlatır.</p>
+<p><b>B</b> yanlış: Grafiklerdeki ısınma, sera gazlarının (özellikle CO<sub>2</sub>) artmasıyla güçlenen sera etkisinden kaynaklanır. Ozon tabakasının incelmesi, zararlı morötesi ışınların yeryüzüne daha çok ulaşmasıyla ilgili <b>ayrı</b> bir sorundur. Ozon incelmesi ile küresel ısınmayı karıştırmak LGS’de sık kullanılan bir çeldiricidir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Sera etkisiyle ilgili bazı olaylar aşağıdaki şemada numaralandırılmıştır. Sarı oklar Güneş ışınlarını, kırmızı oklar yeryüzünün yaydığı ısıyı göstermektedir.</p><div class="fig"><svg viewBox="0 0 520 250" width="500" role="img" aria-label="Sera etkisi şeması" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m30" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><defs><marker id="m30r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs><rect x="0" y="0" width="520" height="250" rx="0" fill="#ffffff" stroke="none" stroke-width="1.5"/><circle cx="45" cy="40" r="26" fill="#facc15" stroke="#ca8a04" stroke-width="2"/><text x="45" y="44" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Güneş</text><rect x="0" y="80" width="520" height="46" rx="0" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/><text x="440" y="108" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Sera gazları</text><rect x="0" y="205" width="520" height="45" rx="0" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/><text x="470" y="232" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Yeryüzü</text><line x1="70" y1="60" x2="170" y2="205" stroke="#ca8a04" stroke-width="2.5" marker-end="url(#m30)"/><circle cx="105" cy="135" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="105" y="139.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">1</text><line x1="180" y1="205" x2="230" y2="20" stroke="#ca8a04" stroke-width="2.5" marker-end="url(#m30)"/><circle cx="222" cy="120" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="222" y="124.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">2</text><path d="M260,205 Q275,180 290,160 T320,110 T350,20" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#m30r)"/><circle cx="300" cy="175" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="300" y="179.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">3</text><path d="M330,205 Q345,170 360,130 Q380,90 395,125 Q405,160 410,205" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#m30r)"/><circle cx="395" cy="165" r="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="395" y="169.5" font-size="12" text-anchor="middle" fill="#7c2d12" font-weight="bold">4</text><text x="260" y="15" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">Uzay</text></svg></div>
+<div class="box"><p>1: Güneş ışınlarının atmosferden geçerek yeryüzüne ulaşması<br>2: Işınların bir kısmının yansıyarak uzaya dönmesi<br>3: Yeryüzünün yaydığı ısının bir kısmının uzaya gitmesi<br>4: Yeryüzünün yaydığı ısının bir kısmının sera gazları tarafından tutularak yeryüzüne geri yayılması</p></div>
+<p><b>Buna göre aşağıdakilerden hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["Ozon tabakasının incelmesi, 4 numaralı olayı artıran ve küresel ısınmaya yol açan temel nedendir.", "Atmosferdeki sera gazlarının miktarı artarsa 4 numaralı olayın etkisi artar.", "4 numaralı olay hiç gerçekleşmeseydi, Dünya’nın ortalama sıcaklığı canlıların yaşamı için çok düşük olurdu.", "Ağaçlandırma, havadaki karbondioksiti azaltarak 4 numaralı olayın güçlenmesini sınırlayabilir."],
+  a: "A",
+  s: `<p>4 numaralı olay sera etkisidir.</p>
+<p><b>B</b> doğru: Sera gazları arttıkça daha fazla ısı tutulur; küresel ısınma budur.<br>
+<b>C</b> doğru: Sera etkisi doğal ve gerekli bir olaydır; olmasaydı Dünya canlılar için çok soğuk olurdu. “Sera etkisi tamamen zararlıdır” düşüncesi bir yanılgıdır.<br>
+<b>D</b> doğru: Ağaçlar fotosentezle havadaki CO<sub>2</sub>’yi kullanır.</p>
+<p><b>A</b> yanlış: Ozon tabakası Güneş’ten gelen zararlı morötesi ışınları tutar; incelmesi farklı bir çevre sorunudur. Küresel ısınmanın temel nedeni sera gazlarının artmasıdır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir ülkede her yıl 1 000 ton alüminyum içecek kutusu kullanılmaktadır. Kullanılan kutulardan geri dönüştürülmeyenlerin yerine cevherden yeni alüminyum üretilmektedir. Araştırma verileri şöyledir:</p>
+<table><thead><tr><th>Üretim yolu</th><th>1 ton alüminyum için gereken enerji</th></tr></thead><tbody><tr><td>Cevherden üretim</td><td>20 birim</td></tr><tr><td>Atık kutuların geri dönüşümüyle üretim</td><td>1 birim</td></tr></tbody></table>
+<p>Bu ülkede kutuların geri dönüşüm oranı %20’den %60’a çıkarılıyor.</p>
+<p><b>Buna göre ülkenin yıllık alüminyum kutu üretimi için harcadığı enerji kaç birim azalır?</b></p>`,
+  c: ["7 600", "8 000", "8 600", "16 200"],
+  a: "A",
+  s: `<p><b>Önce</b> (%20 geri dönüşüm): 200 ton geri dönüşümle (200 × 1 = 200 birim), 800 ton cevherden (800 × 20 = 16 000 birim) üretilir. Toplam: 16 200 birim.<br>
+<b>Sonra</b> (%60 geri dönüşüm): 600 ton geri dönüşümle (600 × 1 = 600 birim), 400 ton cevherden (400 × 20 = 8 000 birim) üretilir. Toplam: 8 600 birim.</p>
+<p>Azalma: 16 200 − 8 600 = <b>7 600 birim</b>. (Kısa yol: Fazladan geri dönüştürülen 400 tonun her tonu 20 − 1 = 19 birim tasarruf sağlar: 400 × 19 = 7 600.)</p>
+<p>“8 000” geri dönüşümün de enerji gerektirdiğini unutmaktan, “8 600” yeni toplamı azalma sanmaktan, “16 200” ise eski toplamı azalma sanmaktan kaynaklanır. Geri dönüşüm, ithal edilen cevher ve enerji ihtiyacını azaltarak ülke ekonomisine katkı sağlar. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p>Kyoto Protokolü, imzalayan ülkelerin karbondioksit ve metan gibi sera gazlarının salımını azaltmayı hedefleyen uluslararası bir anlaşmadır. Bu protokolü imzalayan bir ülke, hedefine ulaşmak için bazı uygulamalar planlıyor.</p></div>
+<p><b>Bu ülkenin planladığı aşağıdaki uygulamalardan hangisi Kyoto Protokolü’nün hedefine <u>doğrudan</u> katkı sağlamaz?</b></p>`,
+  c: ["Elektrik üretiminde kömürle çalışan santraller yerine rüzgâr ve güneş santrallerinin kullanılması", "Şehir içinde raylı sistemlerin ve bisiklet yollarının yaygınlaştırılması", "Fabrikaların atık sularını arıtmadan akarsulara vermesinin yasaklanması", "Yeni yapılacak binalarda ısı yalıtımının zorunlu hâle getirilmesi"],
+  a: "C",
+  s: `<p>Protokolün hedefi <b>sera gazı salımını azaltmaktır</b>.</p>
+<p><b>A</b>: Kömür yakılmadığı için CO<sub>2</sub> salımı azalır.<br>
+<b>B</b>: Özel araç kullanımı ve yakıt tüketimi azalır, CO<sub>2</sub> salımı azalır.<br>
+<b>D</b>: Isınma için daha az yakıt yakılır, CO<sub>2</sub> salımı azalır.</p>
+<p><b>C</b>: Akarsuların kirlenmesini önleyen çok önemli bir uygulamadır; ama su kirliliğiyle ilgilidir, sera gazı salımını doğrudan azaltmaz. Her çevre koruma önleminin küresel ısınmayı azalttığını sanmak bu sorudaki tuzaktır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, küresel iklim değişikliğiyle ilgili aşağıdaki neden-sonuç zincirini hazırlamış; bazı kutuları boş bırakarak I, II ve III ile göstermiştir.</p><div class="fig"><svg viewBox="0 0 510 160" width="500" role="img" aria-label="Neden-sonuç zinciri" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m33" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><rect x="5" y="16" width="140" height="48" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="75" y="37" font-size="12" text-anchor="middle" fill="#1e293b">Fosil yakıt</text><text x="75" y="53" font-size="12" text-anchor="middle" fill="#1e293b">kullanımının artması</text><rect x="185" y="16" width="140" height="48" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="255" y="45" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><rect x="365" y="16" width="140" height="48" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="435" y="37" font-size="12" text-anchor="middle" fill="#1e293b">Sera etkisinin</text><text x="435" y="53" font-size="12" text-anchor="middle" fill="#1e293b">güçlenmesi</text><rect x="365" y="106" width="140" height="48" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="435" y="135" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><rect x="185" y="106" width="140" height="48" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/><text x="255" y="127" font-size="12" text-anchor="middle" fill="#1e293b">Buzulların</text><text x="255" y="143" font-size="12" text-anchor="middle" fill="#1e293b">erimesi</text><rect x="5" y="106" width="140" height="48" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="75" y="135" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><line x1="146" y1="40" x2="181" y2="40" stroke="#334155" stroke-width="1.8" marker-end="url(#m33)"/><line x1="326" y1="40" x2="361" y2="40" stroke="#334155" stroke-width="1.8" marker-end="url(#m33)"/><line x1="435" y1="65" x2="435" y2="102" stroke="#334155" stroke-width="1.8" marker-end="url(#m33)"/><line x1="364" y1="130" x2="329" y2="130" stroke="#334155" stroke-width="1.8" marker-end="url(#m33)"/><line x1="184" y1="130" x2="149" y2="130" stroke="#334155" stroke-width="1.8" marker-end="url(#m33)"/></svg></div>
+<p><b>Öğrencinin I, II ve III ile gösterilen kutulara yazması gerekenler aşağıdakilerin hangisinde doğru verilmiştir?</b></p>`,
+  c: ["Atmosferdeki karbondioksit miktarının artması / Dünya’nın ortalama sıcaklığının artması / Deniz seviyesinin yükselmesi", "Ozon tabakasının incelmesi / Dünya’nın ortalama sıcaklığının artması / Deniz seviyesinin yükselmesi", "Atmosferdeki oksijen miktarının artması / Yağışların her bölgede artması / Deniz seviyesinin düşmesi", "Atmosferdeki karbondioksit miktarının artması / Dünya’nın ortalama sıcaklığının artması / Tatlı su kaynaklarının artması"],
+  a: "A",
+  s: `<p>Fosil yakıtlar yanınca atmosferdeki <b>CO<sub>2</sub> artar</b> (I). Sera gazı arttığı için sera etkisi güçlenir ve yeryüzünden yayılan ısının daha fazlası tutulur; <b>ortalama sıcaklık artar</b> (II). Sıcaklık artışı buzulları eritir; eriyen buzulların suyu denizlere karışır ve <b>deniz seviyesi yükselir</b> (III). Doğru sıra <b>A</b> seçeneğindedir.</p>
+<p><b>B</b>: Ozon incelmesi fosil yakıt kullanımının sera etkisini güçlendirme yolu değildir; sera etkisiyle karıştırılmıştır.<br>
+<b>C</b>: Yanma oksijeni artırmaz, tüketir; buzul erimesi deniz seviyesini düşürmez.<br>
+<b>D</b>: İlk iki kutu doğrudur; ama küresel ısınma tatlı su kaynaklarını artırmaz, kuraklıkla birlikte <b>azaltır</b>. Buzul erimesini “daha çok tatlı su” diye yorumlamak bu seçeneğin tuzağıdır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir ilde yapılan araştırmada, bazı atıkların geri dönüştürülmesiyle ham maddeden üretime göre sağlanan enerji tasarrufu ve bu atıkların ilde geri dönüşüm için toplanma oranları aşağıdaki gibi bulunmuştur.</p>
+<table><thead><tr><th>Atık türü</th><th>Ham maddeden üretime göre enerji tasarrufu</th><th>İlde geri dönüşüm için toplanma oranı</th></tr></thead><tbody><tr><td>Alüminyum kutu</td><td>%95</td><td>%30</td></tr><tr><td>Cam şişe</td><td>%30</td><td>%60</td></tr><tr><td>Kâğıt</td><td>%60</td><td>%45</td></tr><tr><td>Plastik</td><td>%70</td><td>%15</td></tr></tbody></table>
+<p><b>Bu verilere dayanarak yapılan aşağıdaki yorumlardan hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["Toplanma oranı en yüksek olan atık cam olduğu için ham maddeden üretime göre en yüksek oranda enerji tasarrufu cam şişelerin geri dönüşümünde sağlanır.", "Geri dönüşümde ham maddeden üretime göre en yüksek oranda enerji tasarrufu alüminyumda sağlanır.", "Toplanma oranı en düşük olan atık plastik olduğu için ilk ayrıştırma kampanyası plastik atıklar için düzenlenebilir.", "Alüminyum kutuların toplanma oranının artırılması, alüminyum üretimi için harcanan enerjinin azalmasına katkı sağlar."],
+  a: "A",
+  s: `<p><b>B</b> doğru: Tabloda en yüksek enerji tasarrufu oranı %95 ile alüminyumdadır.<br>
+<b>C</b> doğru: Plastiğin toplanma oranı %15 ile en düşüktür; kampanya için mantıklı bir önceliktir.<br>
+<b>D</b> doğru: Toplanan her alüminyum kutu, ham maddeden üretime göre %95 daha az enerjiyle yeniden üretime katılır.</p>
+<p><b>A</b> yanlış: Toplanma oranı ile enerji tasarrufu oranı farklı niceliklerdir. Cam en çok toplanan atıktır, ama geri dönüşümünde sağlanan enerji tasarrufu oranı (%30) tablodaki en düşük değerdir. İki sütunu birbirine karıştırmak tablo sorularındaki tipik tuzaktır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, evdeki bazı atıkları apartmanın önündeki ayrıştırma kutularına aşağıdaki gibi atmıştır.</p>
+<table><thead><tr><th>Atık</th><th>Atıldığı kutu</th></tr></thead><tbody><tr><td>Eski gazeteler</td><td>Kâğıt</td></tr><tr><td>Boş cam kavanoz</td><td>Cam</td></tr><tr><td>Boş konserve kutusu</td><td>Metal</td></tr><tr><td>Kumandanın biten pilleri</td><td>Plastik</td></tr><tr><td>Boş su şişesi (plastik)</td><td>Plastik</td></tr></tbody></table>
+<p><b>Öğrencinin yanlış kutuya attığı atık ve bu hatanın olası sonucu aşağıdakilerin hangisinde birlikte doğru verilmiştir?</b></p>`,
+  c: ["Boş konserve kutusu / Metal atıkların doğada kolayca çürüyüp toprağa karışması", "Biten piller / Plastik atıkların geri dönüşümünün kolaylaşması", "Boş cam kavanoz / Camın geri dönüştürülemeyip ham madde ihtiyacının artması", "Biten piller / Pillerdeki ağır metallerin toprağa ve suya karışma riskinin artması"],
+  a: "D",
+  s: `<p>Atık piller ayrı toplanmalıdır; içlerindeki ağır metaller toprağa ve suya karışarak canlılara zarar verebilir. Pillerin plastik kutusuna atılması hem bu riski artırır hem de plastiklerin geri dönüşümünü zorlaştırır: <b>D</b>.</p>
+<p><b>A</b> ve <b>C</b>: Konserve kutusu ve cam kavanoz doğru kutulara atılmıştır.<br>
+<b>B</b>: Hatalı atık doğru bulunmuş, ama karışık atık geri dönüşümü kolaylaştırmaz, zorlaştırır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir belediye binasında kâğıt tasarrufu projesi uygulanıyor. Ekim ayının 4 iş haftasında binada kullanılan kâğıt miktarı ölçülüyor. Kasım ayında çift taraflı çıktı alma ve müsvedde kâğıt kutusu uygulamaları başlatılıyor. Kasımda 1 hafta resmî tatil olduğu için ölçüm 3 iş haftasında yapılıyor.</p>
+<table><thead><tr><th>Ölçüm dönemi</th><th>Süre</th><th>Kullanılan toplam kâğıt</th></tr></thead><tbody><tr><td>Ekim (uygulamalardan önce)</td><td>4 hafta</td><td>120 kg</td></tr><tr><td>Kasım (uygulamalardan sonra)</td><td>3 hafta</td><td>72 kg</td></tr></tbody></table>
+<p><b>Bu projeyle ilgili aşağıdaki yorumlardan hangisi <u>yanlıştır</u>?</b></p>`,
+  c: ["Haftalık kâğıt kullanımı 30 kg’dan 24 kg’a inmiştir.", "Projenin etkisini doğru değerlendirmek için eşit sürelerdeki kâğıt kullanımları karşılaştırılmalıdır.", "Uygulamalar binadaki kâğıt kullanımını %40 azaltmıştır.", "Kâğıt tasarrufu, kâğıt üretimi için kesilen ağaç sayısını azaltarak ormanların korunmasına katkı sağlar."],
+  a: "C",
+  s: `<p>Ölçüm süreleri farklı olduğu için toplam miktarlar doğrudan karşılaştırılamaz; haftalık miktarlar bulunmalıdır (<b>B</b> doğru).</p>
+<p>Ekim: 120 ÷ 4 = 30 kg/hafta. Kasım: 72 ÷ 3 = 24 kg/hafta (<b>A</b> doğru). Azalma: 30 − 24 = 6 kg; 6 ÷ 30 = <b>%20</b>.</p>
+<p><b>C</b> yanlış: %40, toplamların (120 kg ve 72 kg) doğrudan karşılaştırılmasıyla bulunur; Kasım’daki tatil haftası hesaba katılmamıştır.<br>
+<b>D</b> doğru: Kâğıt ağaçtan üretildiği için tasarruf ağaç kesimini azaltır.</p>
+<p>Bu soru, tasarruf projelerinde “önce ölç, uygula, aynı koşullarda yeniden ölç” adımının önemini yoklar. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, kaynakların tasarruflu kullanılmaması durumunda gelecekte karşılaşılabilecek sorunlarla ilgili aşağıdaki yargıları yazmıştır.</p>
+<p>I. Kömür, petrol ve doğal gazın oluşması milyonlarca yıl sürdüğü için bu kaynaklar tasarrufsuz kullanılırsa tükenebilir.<br>
+II. Güneş ve rüzgâr yenilenebilir kaynaklar olduğu için bunlarla elektrik üreten santrallerin yapımında hiçbir doğal kaynak kullanılmaz.<br>
+III. Tatlı su döngüyle yenilenen bir kaynak olsa da bir bölgede tüketim yenilenme hızını aşarsa su kıtlığı yaşanabilir.</p>
+<p><b>Bu yargılardan hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I ve III"],
+  a: "D",
+  s: `<p>I ✓: Fosil yakıtların oluşumu insan ömrüyle kıyaslanamayacak kadar uzun sürer; yenilenemez kaynaklardır.<br>
+III ✓: Su döngüsü suyu yeniler; ama yer altı ve yüzey sularından yenilenme hızından fazla su çekilirse kaynak azalır ve su kıtlığı yaşanır.<br>
+II ✗: Güneş ışığı ve rüzgâr yenilenebilir enerji kaynaklarıdır; ama güneş panelleri ve rüzgâr türbinleri metal, cam gibi madenlerden üretilir. “Yenilenebilir” demek “hiç kaynak kullanmaz” demek değildir; bu santrallerin malzemelerinin de tasarruflu kullanılması ve geri dönüştürülmesi gerekir.</p>
+<p>Cevap “I ve III” olur. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p><b>Önleyici yaklaşım:</b> Çevreye zarar verebilecek bir durum için, zarar ortaya çıkmadan önce önlem almaktır. Zarar oluştuktan sonra onu gidermek, önlem almaktan çok daha zor ve pahalıdır.</p></div>
+<p><b>Aşağıdaki uygulamalardan hangisi önleyici yaklaşıma bir örnek <u>değildir</u>?</b></p>`,
+  c: ["Kıyısına uzun süre arıtılmamış atık su verilen ve balıkları ölen bir gölün temizlenmesi için kampanya düzenlenmesi", "Yeni kurulacak bir fabrikanın, üretime başlamadan önce bacasına filtre ve atık su arıtma tesisi kurması", "Atık pillerin toprağa ve suya karışmaması için okullara atık pil toplama kutuları konması", "Yeni yapılacak binaların, ısınmada daha az yakıt harcanması için yalıtımlı inşa edilmesi"],
+  a: "A",
+  s: `<p><b>B</b>: Fabrika kirlilik oluşmadan önce önlem almıştır; önleyicidir.<br>
+<b>C</b>: Piller çevreye ağır metal bulaştırmadan önce toplanır; önleyicidir.<br>
+<b>D</b>: Bina yapılırken yalıtılarak ileride fazla yakıt yakılması ve sera gazı salımı önlenir; önleyicidir.</p>
+<p><b>A</b>: Göl kirlenmiş ve balıklar ölmüştür; bu uygulama zarar <b>oluştuktan sonra</b> onu gidermeye yöneliktir. Çevreye faydalı olduğu için önleyici sanılabilir, ama tanımdaki “zarar ortaya çıkmadan önce” ölçütünü karşılamaz. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir araştırmacı, prizmadan geçirerek renklerine ayırdığı beyaz ışığı su içindeki ipliksi bir alg boyunca düşürüyor ve suya oksijenli solunum yapan bakteriler ekliyor. Bir süre sonra bakterilerin alg üzerindeki dağılımını aşağıdaki gibi gözlemliyor.</p><div class="fig"><svg viewBox="0 0 530 120" width="520" role="img" aria-label="Renklerine ayrılmış ışık altında ipliksi alg ve bakterilerin dağılımı" font-family="Arial, Helvetica, sans-serif"><rect x="40" y="30" width="75" height="60" rx="0" fill="#7c3aed" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="77.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Mor</text><circle cx="61.0" cy="62.3" r="2.6" fill="#111827"/><circle cx="69.3" cy="64.1" r="2.6" fill="#111827"/><circle cx="85.4" cy="48.0" r="2.6" fill="#111827"/><circle cx="46.8" cy="71.1" r="2.6" fill="#111827"/><circle cx="62.3" cy="53.0" r="2.6" fill="#111827"/><circle cx="108.7" cy="60.1" r="2.6" fill="#111827"/><circle cx="98.7" cy="60.3" r="2.6" fill="#111827"/><circle cx="86.3" cy="50.5" r="2.6" fill="#111827"/><circle cx="86.0" cy="72.0" r="2.6" fill="#111827"/><circle cx="79.0" cy="68.2" r="2.6" fill="#111827"/><circle cx="88.3" cy="47.9" r="2.6" fill="#111827"/><circle cx="93.8" cy="63.7" r="2.6" fill="#111827"/><rect x="115" y="30" width="75" height="60" rx="0" fill="#2563eb" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="152.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Mavi</text><circle cx="140.0" cy="46.9" r="2.6" fill="#111827"/><circle cx="175.5" cy="60.2" r="2.6" fill="#111827"/><circle cx="166.3" cy="72.4" r="2.6" fill="#111827"/><circle cx="166.0" cy="73.6" r="2.6" fill="#111827"/><circle cx="145.9" cy="70.0" r="2.6" fill="#111827"/><circle cx="149.0" cy="74.1" r="2.6" fill="#111827"/><circle cx="176.4" cy="48.9" r="2.6" fill="#111827"/><circle cx="129.6" cy="52.5" r="2.6" fill="#111827"/><rect x="190" y="30" width="75" height="60" rx="0" fill="#16a34a" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="227.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Yeşil</text><circle cx="256.8" cy="59.1" r="2.6" fill="#111827"/><circle cx="235.5" cy="55.0" r="2.6" fill="#111827"/><rect x="265" y="30" width="75" height="60" rx="0" fill="#eab308" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="302.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Sarı</text><circle cx="303.0" cy="57.6" r="2.6" fill="#111827"/><circle cx="293.1" cy="63.6" r="2.6" fill="#111827"/><circle cx="307.8" cy="73.1" r="2.6" fill="#111827"/><rect x="340" y="30" width="75" height="60" rx="0" fill="#f97316" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="377.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Turuncu</text><circle cx="389.0" cy="73.9" r="2.6" fill="#111827"/><circle cx="400.0" cy="75.7" r="2.6" fill="#111827"/><circle cx="388.3" cy="50.9" r="2.6" fill="#111827"/><circle cx="400.2" cy="74.9" r="2.6" fill="#111827"/><circle cx="403.0" cy="63.1" r="2.6" fill="#111827"/><rect x="415" y="30" width="75" height="60" rx="0" fill="#dc2626" stroke="none" stroke-width="0" fill-opacity="0.22"/><text x="452.5" y="22" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Kırmızı</text><circle cx="466.0" cy="52.3" r="2.6" fill="#111827"/><circle cx="473.4" cy="63.2" r="2.6" fill="#111827"/><circle cx="439.0" cy="47.9" r="2.6" fill="#111827"/><circle cx="474.8" cy="75.7" r="2.6" fill="#111827"/><circle cx="426.6" cy="70.0" r="2.6" fill="#111827"/><circle cx="446.9" cy="50.5" r="2.6" fill="#111827"/><circle cx="439.5" cy="69.1" r="2.6" fill="#111827"/><circle cx="476.0" cy="47.3" r="2.6" fill="#111827"/><circle cx="459.7" cy="47.3" r="2.6" fill="#111827"/><circle cx="466.3" cy="55.9" r="2.6" fill="#111827"/><circle cx="476.5" cy="75.4" r="2.6" fill="#111827"/><rect x="40" y="58" width="450" height="6" rx="3" fill="#15803d" stroke="#14532d" stroke-width="1"/><text x="265" y="110" font-size="11" text-anchor="middle" fill="#1e293b">ipliksi alg (yeşil şerit) ve bakteriler (siyah noktalar)</text></svg></div>
+<p>Araştırmacı deneyi aynı koşullarda tekrarlıyor; ancak bu kez ışık kaynağı ile prizma arasına <b>kırmızı ışığı geçirmeyen</b>, diğer renkleri olduğu gibi geçiren bir filtre yerleştiriyor.</p>
+<p><b>İkinci deneyde bakterilerin alg üzerindeki dağılımı ile ilgili aşağıdakilerden hangisi beklenir?</b></p>`,
+  c: ["Bakteriler ilk deneydeki gibi en çok mor ve kırmızı bölgelerde toplanır, yeşil bölgede seyrek bulunur.", "Bakteriler en çok mor-mavi ışığın düştüğü bölgede toplanır; yeşil bölgede ve kırmızı ışığın düşmesi gereken bölgede seyrek bulunur.", "Kırmızı ışık engellendiği için bakteriler en çok yeşil ışığın düştüğü bölgede toplanır.", "Işığın bir kısmı engellendiği için alg fotosentez yapamaz; bakteriler alg boyunca eşit ve seyrek dağılır."],
+  a: "B",
+  s: `<p>Bakteriler oksijenli solunum yaptığı için oksijenin, yani fotosentezin en çok olduğu bölgelerde toplanır. İlk deney, fotosentezin mor-mavi ve kırmızı ışıkta en hızlı, yeşil ışıkta en yavaş olduğunu gösterir.</p>
+<p>İkinci deneyde kırmızı ışık algin üzerine ulaşmaz; o bölgede fotosentez olmaz ya da çok azalır. Mor-mavi ışık ise ulaşmaya devam eder. Bu nedenle bakteriler mor-mavi bölgede toplanır; yeşil bölgede ve kırmızı ışık gelmeyen bölgede seyrek bulunur: <b>B</b>.</p>
+<p><b>A</b>: Filtrenin etkisi yok sayılmıştır.<br>
+<b>C</b>: Klorofil yeşil ışığın büyük kısmını yansıtır; kırmızı ışığın engellenmesi yeşil ışıkta fotosentezi artırmaz.<br>
+<b>D</b>: Diğer renkler hâlâ ulaştığı için fotosentez durmaz. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir pirinç tarlası ve çevresindeki besin ağı aşağıda verilmiştir.</p><div class="fig"><svg viewBox="0 0 420 233" width="400" role="img" aria-label="Pirinç tarlası besin ağı" font-family="Arial, Helvetica, sans-serif"><defs><marker id="m40" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker></defs><line x1="186" y1="200" x2="115.6" y2="156" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="234" y1="200" x2="304.4" y2="156" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="90" y1="125" x2="90" y2="81" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="127.6" y1="65" x2="179" y2="65" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="306" y1="125" x2="235.6" y2="81" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="127.6" y1="57.6" x2="295.2" y2="24.8" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><line x1="240" y1="53.2" x2="295.2" y2="31.6" stroke="#334155" stroke-width="1.8" marker-end="url(#m40)"/><rect x="178.2" y="202" width="63.6" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="210" y="219.5" font-size="12" text-anchor="middle" fill="#1e293b">Pirinç</text><rect x="54.4" y="127" width="71.2" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="90" y="144.5" font-size="12" text-anchor="middle" fill="#1e293b">Çekirge</text><rect x="305.8" y="127" width="48.4" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="330" y="144.5" font-size="12" text-anchor="middle" fill="#1e293b">Fare</text><rect x="54.4" y="52" width="71.2" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="90" y="69.5" font-size="12" text-anchor="middle" fill="#1e293b">Kurbağa</text><rect x="182" y="52" width="56" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="210" y="69.5" font-size="12" text-anchor="middle" fill="#1e293b">Yılan</text><rect x="298.2" y="5" width="63.6" height="26" rx="5" fill="#e0f2fe" stroke="#334155" stroke-width="1.5"/><text x="330" y="22.5" font-size="12" text-anchor="middle" fill="#1e293b">Leylek</text></svg></div>
+<p>Bu bölgeye, başka bir yerden getirilen ve <b>yalnızca çekirgelerle beslenen</b> bir kuş türü bırakılıyor. Bölgede bu kuşu avlayan bir canlı bulunmadığı için kuşların sayısı hızla artıyor ve çekirgeler azalmaya başlıyor.</p>
+<p>Buna göre;</p>
+<p>I. Çekirgelerle beslenen kurbağalar azalabilir; bu durumda yılanlar daha çok farelerle beslenmeye yönelebilir.<br>
+II. Çekirgelerin azalması, pirinç bitkileri üzerindeki tüketim baskısını azaltabilir.<br>
+III. Bölgeye bırakılan kuş türü, bu besin ağına 2. tüketici olarak katılır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>I ✓: Kurbağaların tek besini çekirgedir; çekirgeler azalınca kurbağalar da azalabilir. Yılanın iki besini (kurbağa ve fare) olduğu için fareye yönelebilir.<br>
+II ✓: Çekirgeler pirinçle beslenir; sayıları azalınca pirinç daha az tüketilir.<br>
+III ✓: Yeni tür, 1. tüketici olan çekirgelerle beslendiği için 2. tüketicidir.</p>
+<p>“Yalnız I” ya da “I ve III” seçenekleri, bir canlının azalmasının yalnızca onu yiyenleri etkilediğini sanıp yediği canlılara etkisini (II) gözden kaçırmaktan kaynaklanır. Cevap “I, II ve III” olur. Cevap <b>D</b>.</p>` }
 ]
 });
