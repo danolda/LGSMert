@@ -520,3 +520,17 @@ li.top1 .lb-rk,li.top2 .lb-rk,li.top3 .lb-rk{font-size:22px}
 .cd{display:flex;align-items:baseline;gap:10px;margin-top:6px}
 .cd b{font-family:var(--ff-h);font-size:40px;color:var(--gold2);line-height:1}
 .cd span{color:var(--muted);font-size:14px}
+
+/* PWA / indirme */
+.logo-img{width:34px;height:34px;border-radius:9px;box-shadow:0 0 0 1px rgba(212,168,75,.45),0 4px 14px -4px rgba(212,168,75,.5)}
+.page-dl{max-width:560px;margin:0 auto}
+.dl-hero{text-align:center;padding:10px 0 16px}
+.dl-hero img{width:132px;height:132px;border-radius:30px;box-shadow:0 0 0 2px rgba(212,168,75,.55),0 18px 50px -14px rgba(212,168,75,.55)}
+.dl-hero h1{margin:14px 0 4px;font-size:30px;letter-spacing:.04em}
+.dl-hero p{color:var(--muted);margin:0}
+.dl-btn{width:100%;font-size:17px;padding:14px;margin-bottom:12px}
+.dl-step h2{font-size:18px;margin:0 0 8px}
+.dl-step ol{margin:0;padding-left:22px;line-height:1.7}
+.dl-step .warn{color:var(--gold2)}
+.dl-ok{text-align:center;font-weight:700;color:var(--gold2)}
+.dl-note{margin-top:14px}

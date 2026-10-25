@@ -164,7 +164,7 @@
   /* ---------- ana sayfa ---------- */
   function home() {
     setCrumbs([]);
-    document.title = 'LGS 2027 Hazırlık';
+    document.title = 'LGS Kışlası';
     var tTopics = 0, tQ = 0, tDone = 0, tOk = 0;
     var cards = LGS.subjects.map(function (s) {
       var done = 0, ok = 0, tot = 0;
@@ -192,7 +192,7 @@
   function subjectPage(id) {
     var s = subj(id);
     if (!s) return notFound();
-    document.title = s.name + ' · LGS 2027';
+    document.title = s.name + ' · LGS Kışlası';
     setCrumbs([{ text: s.name }]);
     var items = s.topics.map(function (t, i) {
       var st = stats(t.id);
@@ -210,7 +210,7 @@
     if (!info) return notFound();
     var s = info.s, meta = info.t;
     setCrumbs([{ text: s.name, href: '#/d/' + s.id }, { text: meta.title }]);
-    document.title = meta.title + ' · LGS 2027';
+    document.title = meta.title + ' · LGS Kışlası';
     app.innerHTML = '<p class="loading">Konu yükleniyor…</p>';
     loadTopic(s.id, tid, function (t) {
       if (!t) { app.innerHTML = '<p class="empty">Bu konu yüklenemedi.</p>'; return; }
@@ -474,7 +474,7 @@
 
   function reminderPage() {
     setCrumbs([{ text: 'Hatırlatıcı' }]);
-    document.title = 'Hatırlatıcı · LGS 2027';
+    document.title = 'Hatırlatıcı · LGS Kışlası';
     var days = remDays(), all = remList(), today = ymd();
     var due = all.filter(function (x) { return x.due <= today; });
     var wait = all.filter(function (x) { return x.due > today; }).sort(function (a, b) { return a.due < b.due ? -1 : 1; });
@@ -656,7 +656,7 @@
   }
   function profilePage() {
     setCrumbs([{ text: 'Profil ve İstatistik' }]);
-    document.title = 'Profil ve İstatistik · LGS 2027';
+    document.title = 'Profil ve İstatistik · LGS Kışlası';
     var p = getProfile();
     app.innerHTML = '<div class="page-prof">' +
       '<div class="card prof-head">' +
@@ -714,7 +714,7 @@
   function userPage(name) {
     name = decodeURIComponent(name || '');
     setCrumbs([{ text: 'Profil ve İstatistik', href: '#/profil' }, { text: name }]);
-    document.title = name + ' · LGS 2027';
+    document.title = name + ' · LGS Kışlası';
     app.innerHTML = '<p class="loading">Yükleniyor…</p>';
     if (!window.LGSCloud || !window.LGSCloud.get) { app.innerHTML = '<p class="empty">Kullanıcı sunucusu henüz hazır değil.</p>'; return; }
     window.LGSCloud.get(name, function (r) {
@@ -895,7 +895,7 @@
   }
   function leaderPage() {
     setCrumbs([{ text: 'Lider Tablosu' }]);
-    document.title = 'Lider Tablosu · LGS 2027';
+    document.title = 'Lider Tablosu · LGS Kışlası';
     var tabs = [['day', 'Günlük'], ['week', 'Haftalık'], ['all', 'Genel']];
     app.innerHTML = '<div class="page-lb"><h1>🏆 Lider Tablosu</h1>' +
       '<div class="lb-tabs" id="lbTabs">' + tabs.map(function (t) { return '<button data-t="' + t[0] + '"' + (t[0] === lbTab ? ' class="on"' : '') + '>' + t[1] + '</button>'; }).join('') + '</div>' +
@@ -958,6 +958,32 @@
     });
   }
 
+  /* ---------- ana ekrana ekleme (PWA) ---------- */
+  var deferredPrompt = null;
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferredPrompt = e; var b = document.getElementById('instBtn'); if (b) b.hidden = false; });
+  window.addEventListener('appinstalled', function () { deferredPrompt = null; toast('LGS Kışlası ana ekrana eklendi!'); });
+  if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(function () {});
+  function installPage() {
+    setCrumbs([{ text: 'Uygulamayı İndir' }]);
+    document.title = 'Uygulamayı İndir · LGS Kışlası';
+    var ua = navigator.userAgent, ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
+    var standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+    var iosNotSafari = ios && /CriOS|FxiOS|EdgiOS|OPiOS/i.test(ua);
+    app.innerHTML = '<div class="page-dl"><div class="dl-hero"><img src="img/icons/icon-512.png" alt="LGS Kışlası"><h1>LGS Kışlası</h1><p>Uygulama gibi ana ekranından aç, tam ekran çalış.</p></div>' +
+      (standalone ? '<div class="card dl-ok">✓ Zaten uygulama olarak açtın. Kışlaya hoş geldin!</div>' :
+      '<button class="btn primary dl-btn" id="instBtn"' + (deferredPrompt ? '' : ' hidden') + '>📲 Ana ekrana ekle</button>' +
+      '<div class="card dl-step"><h2> iPhone / iPad</h2>' + (iosNotSafari ? '<p class="warn">Bu sayfayı <b>Safari</b>’de aç; Chrome’da da paylaş menüsünden ekleyebilirsin.</p>' : '') +
+        '<ol><li>Alttaki <b>Paylaş</b> düğmesine dokun (kare ve yukarı ok).</li><li>Listeyi kaydır, <b>Ana Ekrana Ekle</b>’yi seç.</li><li>Adı <b>LGS Kışlası</b> olarak kalsın, <b>Ekle</b>’ye dokun.</li></ol></div>' +
+      '<div class="card dl-step"><h2>🤖 Android</h2><ol><li>Chrome’da sağ üstteki <b>⋮</b> menüsüne dokun.</li><li><b>Uygulamayı yükle</b> ya da <b>Ana ekrana ekle</b>’yi seç.</li><li><b>Yükle</b>’ye dokun. Simge ana ekranına gelir.</li></ol>' +
+        '<p class="small">Yukarıda “Ana ekrana ekle” düğmesi çıktıysa tek dokunuşla da yükleyebilirsin.</p></div>') +
+      '<p class="small dl-note">iPhone’da ana ekran uygulaması Safari’den ayrı kayıt tutar; Safari’deki ilerlemen oraya taşınmaz. Bu yüzden ekledikten sonra hep uygulamadan gir.</p></div>';
+    var b = document.getElementById('instBtn');
+    if (b) b.addEventListener('click', function () {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function () { deferredPrompt = null; b.hidden = true; });
+    });
+  }
   function notFound() {
     setCrumbs([]);
     app.innerHTML = '<p class="empty">Sayfa bulunamadı. <a href="#/">Ana sayfaya dön</a></p>';
@@ -967,13 +993,14 @@
     var h = location.hash.replace(/^#\/?/, '').split('/');
     window.scrollTo({ top: 0, behavior: 'instant' });
     openNav(false);
-    var r = h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
+    var r = h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
     markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
     else if (h[0] === 'hatirlatici') reminderPage();
     else if (h[0] === 'profil') profilePage();
     else if (h[0] === 'lider') leaderPage();
+    else if (h[0] === 'indir') installPage();
     else if (h[0] === 'u' && h[1]) userPage(h.slice(1).join('/'));
     else home();
     updateBadge();

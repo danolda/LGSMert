@@ -1,0 +1,17 @@
+{
+  "name": "LGS Kışlası",
+  "short_name": "LGS Kışlası",
+  "description": "LGS 2027 hazırlık: konu anlatımı, binlerce soru, seviye, lider tablosu ve VS düelloları.",
+  "lang": "tr",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#07090f",
+  "theme_color": "#07090f",
+  "icons": [
+    { "src": "img/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
