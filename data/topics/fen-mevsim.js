@@ -1,186 +1,953 @@
 LGS.add({
 id: "fen-mevsim",
-summary: `
-<h3>1. Dünya’nın Hareketleri ve Mevsimlerin Oluşumu</h3>
-<p>Dünya uzayda iki temel hareket yapar ve bu hareketlerin sonuçları LGS’de sıkça karşılaştırılır:</p>
+summary: `<div class="key"><b>Kazanımlar</b><ul>
+<li><b>F.8.1.1.1</b> Mevsimlerin oluşumuna yönelik tahminlerde bulunur. (Dünya’nın dönme ekseni olduğu; dönme ekseni ile Güneş etrafındaki dolanma düzlemi arasındaki ilişki; ışığın birim yüzeye düşen enerji miktarının mevsimler üzerindeki etkisi.)</li>
+<li><b>F.8.1.2.1</b> İklim ve hava olayları arasındaki farkı açıklar.</li>
+<li><b>F.8.1.2.2</b> İklim biliminin (klimatoloji) bir bilim dalı olduğunu ve bu alanda çalışan uzmanlara iklim bilimci (klimatolog) adı verildiğini söyler.</li>
+</ul>Terimler: dönme ekseni, eksen eğikliği, dolanma (yörünge) düzlemi, Ekvator, Yengeç ve Oğlak Dönencesi, kutup daireleri, ekinoks, gün dönümü, aydınlanma çemberi, birim yüzeye düşen enerji, gölge boyu, hava olayı, iklim, meteoroloji, klimatoloji.</div>
+
+<h3>1. Dünya’nın iki hareketi: dönme ve dolanma (F.8.1.1.1)</h3>
+<p>Dünya aynı anda iki hareket yapar. LGS sorularında bir sonucun <b>hangi hareketten</b> kaynaklandığını ayırt etmen istenir.</p>
+<div class="tbl"><table>
+<tr><th></th><th>Kendi ekseni etrafında dönme (günlük hareket)</th><th>Güneş etrafında dolanma (yıllık hareket)</th></tr>
+<tr><td><b>Süre</b></td><td>Yaklaşık 24 saat (1 gün)</td><td>365 gün 6 saat (1 yıl)</td></tr>
+<tr><td><b>Yön</b></td><td>Batıdan doğuya</td><td>Güneş etrafında, elips şeklinde (çembere çok yakın) bir yörüngede</td></tr>
+<tr><td><b>Sonuçları</b></td><td>Gece ile gündüzün art arda gelmesi; Güneş’in doğudan doğup batıdan batıyormuş gibi görünmesi; gün içinde sıcaklığın ve gölge boyunun değişmesi (sabah ve akşam gölge uzun, öğle vakti en kısa)</td><td>Eksen eğikliğiyle birlikte: <b>mevsimlerin oluşması</b>, gece–gündüz sürelerinin yıl boyunca değişmesi, öğle vakti gölge boyunun ve birim yüzeye düşen enerjinin yıl içinde değişmesi</td></tr>
+</table></div>
+<p>Mevsimleri oluşturan iki etken birlikte çalışır: <b>Dünya’nın Güneş etrafında dolanması</b> ve <b>dönme ekseninin eğik olması</b>. Eksen eğik olmasaydı Dünya dolansa bile ışınlar her gün Ekvator’a dik gelir, belirgin mevsimler oluşmazdı.</p>
+<div class="fig"><svg viewBox="0 0 560 330" width="560" role="img" aria-label="Dünyanın Güneş etrafındaki dört önemli konumu">
+<defs><marker id="f1a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<ellipse cx="280" cy="165" rx="200" ry="95" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 4"/>
+<path d="M118,222 Q170,256 230,260" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#f1a)"/>
+<path d="M442,108 Q390,74 330,70" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#f1a)"/>
+<circle cx="280" cy="165" r="32" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
+<text x="280" y="169" font-size="12" font-weight="bold" fill="#78350f" text-anchor="middle">GÜNEŞ</text>
+<circle cx="80" cy="165" r="19" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<line x1="91" y1="140" x2="69" y2="190" stroke="#1e3a8a" stroke-width="2"/>
+<circle cx="91" cy="140" r="4" fill="#dc2626"/>
+<circle cx="280" cy="260" r="19" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<line x1="291" y1="235" x2="269" y2="285" stroke="#1e3a8a" stroke-width="2"/>
+<circle cx="291" cy="235" r="4" fill="#dc2626"/>
+<circle cx="480" cy="165" r="19" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<line x1="491" y1="140" x2="469" y2="190" stroke="#1e3a8a" stroke-width="2"/>
+<circle cx="491" cy="140" r="4" fill="#dc2626"/>
+<circle cx="280" cy="70" r="19" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<line x1="291" y1="45" x2="269" y2="95" stroke="#1e3a8a" stroke-width="2"/>
+<circle cx="291" cy="45" r="4" fill="#dc2626"/>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<text x="80" y="118">21 Haziran</text><text x="480" y="118">21 Aralık</text>
+<text x="185" y="52">21 Mart</text><text x="380" y="252">23 Eylül</text>
+</g><g font-size="11" text-anchor="middle" fill="#334155">
+<text x="80" y="208">KYK: yaz başlar</text><text x="80" y="222">GYK: kış başlar</text>
+<text x="480" y="208">KYK: kış başlar</text><text x="480" y="222">GYK: yaz başlar</text>
+<text x="185" y="66">KYK: ilkbahar</text><text x="185" y="80">GYK: sonbahar</text>
+<text x="380" y="266">KYK: sonbahar</text><text x="380" y="280">GYK: ilkbahar</text>
+</g>
+<circle cx="40" cy="318" r="4" fill="#dc2626"/><text x="50" y="322" font-size="11">Kuzey Kutbu (eksen hep aynı yöne eğik)</text>
+<text x="530" y="322" font-size="11" text-anchor="end">KYK: Kuzey, GYK: Güney Yarım Küre</text>
+</svg><figcaption>Dünya’nın dört önemli konumu. Eksen hep aynı yöne eğiktir; mevsimi belirleyen, Kuzey Kutbu’nun Güneş’e dönük olup olmadığıdır.</figcaption></div>
+<p>Şekilde dört önemli tarih görülüyor. Eksen uzayda <b>hep aynı yöne</b> eğik kalır (Kuzey Kutbu hep Kutup Yıldızı yönünü gösterir). Bu yüzden Dünya yörüngenin bir ucundayken Kuzey Kutbu Güneş’e dönük (21 Haziran), karşı uçtayken Güneş’ten uzağa dönüktür (21 Aralık). Arada kalan iki konumda eksen Güneş’e göre yana eğiktir (21 Mart ve 23 Eylül, ekinokslar).</p>
+<p class="note"><b>Dikkat!</b> Mevsimlerin nedeni Dünya’nın Güneş’e yaklaşıp uzaklaşması <b>değildir</b>. Dünya Güneş’e en yakın konumdayken (<b>3 Ocak</b>, yaklaşık 147 milyon km) Kuzey Yarım Küre’de <b>kış</b>, en uzak konumdayken (<b>4 Temmuz</b>, yaklaşık 152 milyon km) Kuzey Yarım Küre’de <b>yaz</b> yaşanır. Üstelik aynı anda iki yarım kürede zıt mevsimler vardır; uzaklık neden olsaydı tüm Dünya’da aynı mevsim yaşanırdı.</p>
+
+<h3>2. Eksen eğikliği, dönenceler ve kutup daireleri (F.8.1.1.1)</h3>
+<p>Dünya’nın dönme ekseni, dolanma (yörünge) düzlemine dik olan doğrultuyla <b>23° 27′</b> (yaklaşık 23,5°) açı yapar. Aynı açı Ekvator düzlemi ile yörünge düzlemi arasında da vardır. Bu eğiklik, Güneş ışınlarının yıl boyunca dik geldiği yerlerin sınırlarını belirler.</p>
+<div class="fig"><svg viewBox="0 0 560 330" width="560" role="img" aria-label="Dönme ekseninin eğikliği, dönenceler ve kutup daireleri">
+<defs><marker id="f2a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<line x1="12" y1="165" x2="360" y2="165" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="7 4"/>
+<text x="12" y="147" font-size="11" fill="#475569">Dolanma</text>
+<text x="12" y="160" font-size="11" fill="#475569">düzlemi</text>
+<circle cx="215" cy="165" r="105" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="215" y1="25" x2="215" y2="290" stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3"/>
+<line x1="271" y1="37" x2="163" y2="284" stroke="#dc2626" stroke-width="2.5"/>
+<circle cx="257" cy="69" r="4" fill="#dc2626"/>
+<path d="M215,38 A127,127 0 0,1 266,48" fill="none" stroke="#dc2626" stroke-width="1.6"/>
+<text x="239" y="32" font-size="12" font-weight="bold" fill="#dc2626">23° 27′</text>
+<text x="277" y="41" font-size="11" fill="#991b1b">Dönme ekseni</text>
+<text x="209" y="36" font-size="11" fill="#475569" text-anchor="end">Yörünge düzlemine dik</text>
+<line x1="215" y1="60" x2="292" y2="93" stroke="#0e7490" stroke-width="1.3" stroke-dasharray="2 3"/>
+<line x1="292" y1="93" x2="372" y2="48" stroke="#cbd5e1" stroke-width="1"/>
+<text x="376" y="52" font-size="11" fill="#1e3a8a">K. Kutup Dairesi (66° 33′ K)</text>
+<line x1="143" y1="88" x2="320" y2="165" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="320" y1="165" x2="372" y2="108" stroke="#cbd5e1" stroke-width="1"/>
+<text x="376" y="112" font-size="11" fill="#1e3a8a">Yengeç D. (23° 27′ K)</text>
+<line x1="119" y1="123" x2="311" y2="207" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="311" y1="207" x2="372" y2="168" stroke="#cbd5e1" stroke-width="1"/>
+<text x="376" y="172" font-size="11" fill="#1e3a8a">Ekvator (0°)</text>
+<line x1="110" y1="165" x2="287" y2="242" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/>
+<line x1="287" y1="242" x2="372" y2="228" stroke="#cbd5e1" stroke-width="1"/>
+<text x="376" y="232" font-size="11" fill="#1e3a8a">Oğlak D. (23° 27′ G)</text>
+<line x1="138" y1="237" x2="215" y2="270" stroke="#0e7490" stroke-width="1.3" stroke-dasharray="2 3"/>
+<line x1="215" y1="270" x2="372" y2="288" stroke="#cbd5e1" stroke-width="1"/>
+<text x="376" y="292" font-size="11" fill="#1e3a8a">G. Kutup Dairesi (66° 33′ G)</text>
+</svg><figcaption>Dönme ekseni yörünge düzlemine dik doğrultuyla 23° 27′ açı yapar; dönenceler ve kutup daireleri bu açıdan doğar.</figcaption></div>
 <ul>
-<li><b>Kendi ekseni etrafında dönme (Günlük hareket):</b> Batıdan doğuya (saat yönünün tersine) <b>24 saatte</b> tamamlanır. Sonucunda <b>gece ve gündüz</b> birbirini takip eder, Güneş ışınlarının gün içindeki geliş açısı değişir (sabah ve akşam eğik, öğlen dik veya dike yakın), <b>günlük sıcaklık farkları</b> ve cisimlerin <b>gün içindeki gölge boyu değişimleri</b> oluşur.</li>
-<li><b>Güneş etrafında dolanma (Yıllık hareket):</b> Eliptik bir yörüngede <b>365 gün 6 saatte</b> tamamlanır. Dönme ekseninin <b>23° 27′ (yaklaşık 23,5°) eğik</b> olmasıyla birlikte <b>mevsimlerin oluşmasını</b>, yıl içinde birim yüzeye düşen enerji miktarının, öğle vakti gölge boylarının ve <b>gece–gündüz sürelerinin değişmesini</b> sağlar.</li>
+<li><b>Ekvator (0°):</b> Dünya’yı Kuzey ve Güney Yarım Küre olarak ikiye ayıran en büyük paralel.</li>
+<li><b>Yengeç Dönencesi (23° 27′ K) ve Oğlak Dönencesi (23° 27′ G):</b> Güneş ışınlarının dik (90°) gelebildiği en kuzey ve en güney paraleller. Işınlar yıl boyunca yalnızca bu iki dönence arasındaki bir yere dik gelebilir.</li>
+<li><b>Kutup daireleri (66° 33′ K ve G):</b> 90° − 23° 27′ = 66° 33′. Gün dönümlerinde aydınlanma çemberi bu dairelere teğet geçer; 21 Haziran’da Kuzey Kutup Dairesi ve kuzeyinde 24 saat gündüz, Güney Kutup Dairesi ve güneyinde 24 saat gece yaşanır.</li>
 </ul>
+<p class="note"><b>Dikkat!</b> Dönencelerin enlemi eksen eğikliğine eşittir. Eğiklik daha büyük olsaydı dönenceler kutuplara yaklaşır, ışınların dik gelebildiği kuşak genişler, mevsimler arasındaki sıcaklık ve gündüz süresi farkları artardı. Eğiklik sıfır olsaydı ışınlar hep Ekvator’a dik gelir, mevsimler oluşmazdı.</p>
+<p><b>Türkiye nerede?</b> Türkiye yaklaşık 36°–42° Kuzey paralelleri arasındadır, yani Yengeç Dönencesi’nin kuzeyinde. Bu yüzden Türkiye’de Güneş ışınları <b>hiçbir zaman</b> 90° ile gelmez; öğle vakti gölge hiçbir gün sıfır olmaz ve hep kuzeye düşer.</p>
 
-<div class="fig"><svg viewBox="0 0 560 290" width="540" role="img" aria-label="Dünya'nın Güneş etrafındaki dört konumu ve mevsim geçişleri">
-<defs><marker id="mvA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<ellipse cx="280" cy="140" rx="210" ry="82" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 4"/>
-<path d="M160,210 Q210,222 245,222" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#mvA)"/>
-<path d="M395,205 Q435,190 460,170" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#mvA)"/>
-<path d="M395,75 Q350,60 315,58" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#mvA)"/>
-<path d="M165,75 Q125,90 100,110" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#mvA)"/>
-<circle cx="280" cy="140" r="30" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
-<text x="280" y="144" font-size="11" font-weight="bold" fill="#78350f" text-anchor="middle">GÜNEŞ</text>
-<g stroke="#1e3a8a" stroke-width="1.5">
-<circle cx="70" cy="140" r="20" fill="#93c5fd"/><line x1="61" y1="162" x2="79" y2="118" stroke-width="2"/><line x1="51" y1="132" x2="89" y2="148" stroke-dasharray="3 2"/>
-<circle cx="490" cy="140" r="20" fill="#93c5fd"/><line x1="481" y1="162" x2="499" y2="118" stroke-width="2"/><line x1="471" y1="132" x2="509" y2="148" stroke-dasharray="3 2"/>
-<circle cx="280" cy="222" r="20" fill="#93c5fd"/><line x1="271" y1="244" x2="289" y2="200" stroke-width="2"/><line x1="261" y1="214" x2="299" y2="230" stroke-dasharray="3 2"/>
-<circle cx="280" cy="58" r="20" fill="#93c5fd"/><line x1="271" y1="80" x2="289" y2="36" stroke-width="2"/><line x1="261" y1="50" x2="299" y2="66" stroke-dasharray="3 2"/>
-</g>
-<g fill="#dc2626"><circle cx="79" cy="118" r="3.5"/><circle cx="499" cy="118" r="3.5"/><circle cx="289" cy="200" r="3.5"/><circle cx="289" cy="36" r="3.5"/></g>
-<g font-size="10.5" text-anchor="middle">
-<text x="70" y="182" font-weight="bold">21 Haziran (Gün Dönümü)</text><text x="70" y="195">KYK: Yaz başlar (En uzun gündüz)</text><text x="70" y="208">GYK: Kış başlar (En uzun gece)</text>
-<text x="490" y="182" font-weight="bold">21 Aralık (Gün Dönümü)</text><text x="490" y="195">KYK: Kış başlar (En uzun gece)</text><text x="490" y="208">GYK: Yaz başlar (En uzun gündüz)</text>
-<text x="280" y="262" font-weight="bold">23 Eylül (Ekinoks)</text><text x="280" y="275">KYK: Sonbahar · GYK: İlkbahar (Gece = Gündüz)</text>
-<text x="280" y="16" font-weight="bold">21 Mart (Ekinoks)</text><text x="280" y="29">KYK: İlkbahar · GYK: Sonbahar (Gece = Gündüz)</text>
-</g>
-</svg><figcaption>Dünya’nın Güneş etrafındaki dolanma hareketi. Kırmızı nokta Kuzey Kutbu’nu, kesikli çizgi Ekvator’u gösterir.</figcaption></div>
+<h3>3. Işınların geliş açısı ve birim yüzeye düşen enerji (F.8.1.1.1)</h3>
+<p>Mevsimlerin asıl “motoru”, ışınların yere geliş açısıdır. Aynı ışık demeti dik geldiğinde dar bir alanı, eğik geldiğinde geniş bir alanı aydınlatır. Demetin taşıdığı <b>toplam enerji değişmez</b>; değişen, bu enerjinin paylaştırıldığı alan, yani <b>birim yüzeye düşen enerji</b>dir.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Aynı ışık demetinin dik ve eğik gelince aydınlattığı alan">
+<defs><marker id="f3a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<text x="140" y="18" font-size="12" font-weight="bold" text-anchor="middle">Dik gelen demet (90°)</text>
+<polygon points="110,30 170,30 170,170 110,170" fill="#fde68a" opacity="0.7"/>
+<line x1="120" y1="34" x2="120" y2="164" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="140" y1="34" x2="140" y2="164" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="160" y1="34" x2="160" y2="164" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="30" y1="170" x2="250" y2="170" stroke="#334155" stroke-width="3"/>
+<line x1="110" y1="170" x2="170" y2="170" stroke="#dc2626" stroke-width="6"/>
+<text x="140" y="190" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">Alan: S</text>
+<text x="140" y="208" font-size="11" text-anchor="middle">Birim yüzeye düşen enerji FAZLA</text>
+<text x="140" y="223" font-size="11" text-anchor="middle">Isınma fazla, gölge kısa</text>
+<text x="420" y="18" font-size="12" font-weight="bold" text-anchor="middle">Eğik gelen demet (30°)</text>
+<polygon points="286.4,127.5 316.4,75.5 480,170 360,170" fill="#fde68a" opacity="0.7"/>
+<line x1="295" y1="121" x2="373" y2="166" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="305" y1="104" x2="413" y2="166" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="315" y1="86" x2="453" y2="166" stroke="#d97706" stroke-width="2" marker-end="url(#f3a)"/>
+<line x1="300" y1="170" x2="540" y2="170" stroke="#334155" stroke-width="3"/>
+<line x1="360" y1="170" x2="480" y2="170" stroke="#dc2626" stroke-width="6"/>
+<path d="M452,170 A28,28 0 0,0 456,156" fill="none" stroke="#1e3a8a" stroke-width="1.5"/>
+<text x="484" y="184" font-size="11" fill="#1e3a8a">30°</text>
+<text x="420" y="190" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">Alan: 2S</text>
+<text x="420" y="208" font-size="11" text-anchor="middle">Birim yüzeye düşen enerji AZ</text>
+<text x="420" y="223" font-size="11" text-anchor="middle">Isınma az, gölge uzun</text>
+</svg><figcaption>Özdeş demet: toplam enerji aynı, aydınlanan alan farklı.</figcaption></div>
+<div class="tbl"><table>
+<tr><th>Işın dik veya dike yakın gelirse</th><th>Işın eğik gelirse</th></tr>
+<tr><td>Aydınlanan alan küçük</td><td>Aydınlanan alan büyük</td></tr>
+<tr><td>Birim yüzeye düşen enerji fazla</td><td>Birim yüzeye düşen enerji az</td></tr>
+<tr><td>Yüzey daha çok ısınır</td><td>Yüzey daha az ısınır</td></tr>
+<tr><td>Öğle vakti gölge kısa (90° ise gölge yok)</td><td>Öğle vakti gölge uzun</td></tr>
+<tr><td>O yarım kürede yaz mevsimi</td><td>O yarım kürede kış mevsimi</td></tr>
+</table></div>
+<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Güneş ışınlarının geliş açısına göre çubuğun gölge boyu">
+<line x1="10" y1="150" x2="195" y2="150" stroke="#334155" stroke-width="2.5"/>
+<line x1="85" y1="150" x2="85" y2="100" stroke="#78350f" stroke-width="5"/>
+<line x1="85" y1="10" x2="85" y2="96" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="85" cy="16" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<text x="85" y="172" font-size="12" font-weight="bold" text-anchor="middle">Gölge yok (0)</text>
+<text x="93" y="144" font-size="11" fill="#dc2626">90°</text>
+<line x1="180" y1="150" x2="365" y2="150" stroke="#334155" stroke-width="2.5"/>
+<line x1="255" y1="150" x2="255" y2="100" stroke="#78350f" stroke-width="5"/>
+<line x1="255" y1="150" x2="284" y2="150" stroke="#1f2937" stroke-width="6" opacity="0.75"/>
+<line x1="225" y1="48" x2="284" y2="150" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="219" cy="38" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<path d="M262,150 A22,22 0 0,0 273,131" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<text x="289" y="145" font-size="11" fill="#dc2626">60°</text>
+<text x="275" y="172" font-size="12" font-weight="bold" text-anchor="middle">Gölge kısa</text>
+<line x1="330" y1="150" x2="515" y2="150" stroke="#334155" stroke-width="2.5"/>
+<line x1="405" y1="150" x2="405" y2="100" stroke="#78350f" stroke-width="5"/>
+<line x1="405" y1="150" x2="492" y2="150" stroke="#1f2937" stroke-width="6" opacity="0.75"/>
+<line x1="353" y1="70" x2="492" y2="150" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 3"/>
+<circle cx="343" cy="64" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<path d="M470,150 A22,22 0 0,0 472,139" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<text x="497" y="145" font-size="11" fill="#dc2626">30°</text>
+<text x="425" y="172" font-size="12" font-weight="bold" text-anchor="middle">Gölge uzun</text>
+<text x="280" y="194" font-size="11" text-anchor="middle" fill="#334155">Işın eğikleştikçe gölge uzar, birim yüzeye düşen enerji azalır.</text>
+</svg><figcaption>Aynı boydaki çubuğun gölgesi, ışının geliş açısı küçüldükçe uzar.</figcaption></div>
+<p><b>Deney düzeneği okuma:</b> LGS’de bu kural çoğu zaman el feneri, termometre ve levhalarla kurulmuş bir deneyle sorulur. Özdeş fenerler aynı uzaklıktan farklı açılarla tutulur; <b>bağımsız değişken</b> ışığın geliş açısı, <b>bağımlı değişken</b> sıcaklık artışıdır; fener, uzaklık, süre ve levha türü <b>sabit tutulan</b> değişkenlerdir.</p>
+<p class="note"><b>Dikkat!</b> “Dik gelen fener daha çok enerji yaydı” ifadesi yanlıştır. Özdeş fenerlerin yaydığı toplam enerji eşittir; dik gelen ışık bu enerjiyi daha <b>küçük alana</b> verdiği için birim yüzey daha çok ısınır.</p>
+<p><b>Hafıza ipucu:</b> “<b>Dik → Dar alan → Dolu enerji</b>; Eğik → Engin alan → Eksik enerji.”</p>
 
-<div class="note"><b>LGS Tuzağı 1 (Günberi – Günöte):</b> Dünya’nın Güneş’e olan uzaklığının değişmesi <b>mevsimleri etkilemez!</b> Dünya Güneş’e en yakın konumdayken (<b>3 Ocak – Günberi: yaklaşık 147 milyon km</b>) Kuzey Yarım Küre’de kış yaşanır; en uzak konumdayken (<b>4 Temmuz – Günöte: yaklaşık 152 milyon km</b>) Kuzey Yarım Küre’de yaz yaşanır.</div>
-<div class="note"><b>LGS Tuzağı 2 (Aydınlanma Çemberi):</b> Gece ile gündüzü birbirinden ayıran sınır çizgisine <b>aydınlanma çemberi</b> denir. Ekinoks tarihlerinde (21 Mart, 23 Eylül) tam <b>kutup noktalarından</b> geçer ve tüm paralelleri iki eşit parçaya böler. Gün dönümlerinde (21 Haziran, 21 Aralık) ise <b>kutup dairelerinden (66° 33′)</b> teğet geçer.</div>
-
-<h3>2. Işınların Geliş Açısı, Birim Yüzey Enerjisi ve Gölge Boyu</h3>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Dik ve eğik gelen ışınların aydınlattığı alan ve enerji">
-<g stroke="#f59e0b" stroke-width="2.5">
-<line x1="90" y1="15" x2="90" y2="115"/><line x1="110" y1="15" x2="110" y2="115"/><line x1="130" y1="15" x2="130" y2="115"/>
-<line x1="290" y1="20" x2="400" y2="115"/><line x1="320" y1="20" x2="430" y2="115"/><line x1="350" y1="20" x2="460" y2="115"/>
+<h3>4. Dört önemli tarih ve aydınlanma çemberi (F.8.1.1.1)</h3>
+<p>Gece ile gündüzü ayıran sınıra <b>aydınlanma çemberi</b> denir. Bu çember her zaman Güneş ışınlarına diktir. Aydınlanma çemberinin paralelleri nasıl böldüğü, gece–gündüz sürelerini belirler.</p>
+<div class="fig"><svg viewBox="0 0 560 270" width="560" role="img" aria-label="21 Haziran, ekinoks ve 21 Aralıkta aydınlanma çemberi ve dik gelen ışınlar">
+<defs><marker id="f5a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<text x="95" y="22" font-size="12" font-weight="bold" text-anchor="middle">21 Haziran</text>
+<circle cx="95" cy="130" r="62" fill="#fef08a" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M95,68 A62,62 0 0,1 95,192 Z" fill="#334155" opacity="0.8"/>
+<line x1="33" y1="130" x2="137" y2="85" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="38" y1="155" x2="152" y2="105" stroke="#1e3a8a" stroke-width="1.8"/>
+<line x1="53" y1="175" x2="157" y2="130" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="50" y1="88" x2="95" y2="68" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="95" y1="192" x2="140" y2="172" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="66" y1="62" x2="124" y2="198" stroke="#dc2626" stroke-width="2"/>
+<circle cx="70" cy="73" r="3.5" fill="#dc2626"/>
+<line x1="1" y1="130" x2="30" y2="130" stroke="#d97706" stroke-width="2.2" marker-end="url(#f5a)"/>
+<text x="95" y="220" font-size="11" text-anchor="middle" fill="#92400e">Işınlar Yengeç’e dik</text>
+<text x="280" y="22" font-size="12" font-weight="bold" text-anchor="middle">21 Mart / 23 Eylül</text>
+<circle cx="280" cy="130" r="62" fill="#fef08a" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M280,68 A62,62 0 0,1 280,192 Z" fill="#334155" opacity="0.8"/>
+<line x1="223" y1="105" x2="337" y2="105" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="218" y1="130" x2="342" y2="130" stroke="#1e3a8a" stroke-width="1.8"/>
+<line x1="223" y1="155" x2="337" y2="155" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="255" y1="73" x2="305" y2="73" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="255" y1="187" x2="305" y2="187" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="280" y1="56" x2="280" y2="204" stroke="#dc2626" stroke-width="2"/>
+<circle cx="280" cy="68" r="3.5" fill="#dc2626"/>
+<line x1="186" y1="130" x2="215" y2="130" stroke="#d97706" stroke-width="2.2" marker-end="url(#f5a)"/>
+<text x="280" y="220" font-size="11" text-anchor="middle" fill="#92400e">Işınlar Ekvator’a dik</text>
+<text x="465" y="22" font-size="12" font-weight="bold" text-anchor="middle">21 Aralık</text>
+<circle cx="465" cy="130" r="62" fill="#fef08a" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M465,68 A62,62 0 0,1 465,192 Z" fill="#334155" opacity="0.8"/>
+<line x1="423" y1="85" x2="527" y2="130" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="408" y1="105" x2="522" y2="155" stroke="#1e3a8a" stroke-width="1.8"/>
+<line x1="403" y1="130" x2="507" y2="175" stroke="#1e3a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="465" y1="68" x2="510" y2="88" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="420" y1="172" x2="465" y2="192" stroke="#0e7490" stroke-width="1" stroke-dasharray="2 2"/>
+<line x1="494" y1="62" x2="436" y2="198" stroke="#dc2626" stroke-width="2"/>
+<circle cx="490" cy="73" r="3.5" fill="#dc2626"/>
+<line x1="371" y1="130" x2="400" y2="130" stroke="#d97706" stroke-width="2.2" marker-end="url(#f5a)"/>
+<text x="465" y="220" font-size="11" text-anchor="middle" fill="#92400e">Işınlar Oğlak’a dik</text>
+<g font-size="11" text-anchor="middle" fill="#334155">
+<text x="95" y="236">Kuzey Kutup Dairesi aydınlıkta</text>
+<text x="280" y="236">Sınır iki kutuptan geçer</text>
+<text x="465" y="236">Güney Kutup Dairesi aydınlıkta</text>
 </g>
-<line x1="20" y1="115" x2="220" y2="115" stroke="#64748b" stroke-width="3"/>
-<line x1="270" y1="115" x2="520" y2="115" stroke="#64748b" stroke-width="3"/>
-<line x1="90" y1="115" x2="130" y2="115" stroke="#dc2626" stroke-width="7"/>
-<line x1="400" y1="115" x2="460" y2="115" stroke="#fb923c" stroke-width="7"/>
-<g font-size="11.5" text-anchor="middle">
-<text x="110" y="136" font-weight="bold">Büyük Açı (90° - Dik / Dike Yakın)</text>
-<text x="110" y="152">Dar alan (S) · Birim yüzeye düşen enerji FAZLA</text>
-<text x="415" y="136" font-weight="bold">Küçük Açı (Eğik Işınlar)</text>
-<text x="415" y="152">Geniş alan (2S) · Birim yüzeye düşen enerji AZ</text>
-</g>
-</svg></div>
-
+<text x="280" y="258" font-size="11" text-anchor="middle" fill="#475569">Güneş solda. Sarı: gündüz, koyu: gece. Kırmızı nokta: Kuzey Kutbu.</text>
+</svg><figcaption>Aydınlanma çemberi ışınlara diktir; ekinokslarda kutuplardan geçer, gün dönümlerinde kutup dairelerine teğettir.</figcaption></div>
+<div class="tbl"><table>
+<tr><th>Tarih</th><th>Işınların dik geldiği yer</th><th>Kuzey Yarım Küre</th><th>Güney Yarım Küre</th></tr>
+<tr><td><b>21 Haziran</b> (gün dönümü)</td><td>Yengeç Dönencesi</td><td>Yaz başlar. Yılın en uzun gündüzü, en kısa gecesi. Kuzey Kutup Dairesi’nde 24 saat gündüz.</td><td>Kış başlar. Yılın en uzun gecesi, en kısa gündüzü.</td></tr>
+<tr><td><b>23 Eylül</b> (ekinoks)</td><td>Ekvator</td><td>Sonbahar başlar. Her yerde gece = gündüz (12’şer saat).</td><td>İlkbahar başlar. Gece = gündüz.</td></tr>
+<tr><td><b>21 Aralık</b> (gün dönümü)</td><td>Oğlak Dönencesi</td><td>Kış başlar. Yılın en uzun gecesi, en kısa gündüzü.</td><td>Yaz başlar. Yılın en uzun gündüzü; Güney Kutup Dairesi’nde 24 saat gündüz.</td></tr>
+<tr><td><b>21 Mart</b> (ekinoks)</td><td>Ekvator</td><td>İlkbahar başlar. Gece = gündüz.</td><td>Sonbahar başlar. Gece = gündüz.</td></tr>
+</table></div>
+<p><b>Tarih aralıkları</b> en çok hata yapılan yerdir. Gündüzün “uzaması” ile gündüzün “geceden uzun olması” farklı şeylerdir:</p>
+<div class="tbl"><table>
+<tr><th>Aralık</th><th>Dik ışınlar</th><th>Kuzey Yarım Küre’de gündüz</th><th>Güney Yarım Küre’de gündüz</th></tr>
+<tr><td>21 Mart → 21 Haziran</td><td>Ekvator’dan Yengeç’e kayar</td><td>Uzar; gündüz &gt; gece</td><td>Kısalır; gece &gt; gündüz</td></tr>
+<tr><td>21 Haziran → 23 Eylül</td><td>Yengeç’ten Ekvator’a kayar</td><td>Kısalır ama hâlâ gündüz &gt; gece</td><td>Uzar ama hâlâ gece &gt; gündüz</td></tr>
+<tr><td>23 Eylül → 21 Aralık</td><td>Ekvator’dan Oğlak’a kayar</td><td>Kısalır; gece &gt; gündüz</td><td>Uzar; gündüz &gt; gece</td></tr>
+<tr><td>21 Aralık → 21 Mart</td><td>Oğlak’tan Ekvator’a kayar</td><td>Uzar ama hâlâ gece &gt; gündüz</td><td>Kısalır ama hâlâ gündüz &gt; gece</td></tr>
+</table></div>
+<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Kuzey Yarım Küredeki enlemlerde 21 Haziran ve 21 Aralık gündüz süreleri">
+<line x1="60" y1="200" x2="545" y2="200" stroke="#334155" stroke-width="1.5"/>
+<line x1="60" y1="24" x2="60" y2="200" stroke="#334155" stroke-width="1.5"/>
+<text x="55" y="204" font-size="11" text-anchor="end">0</text>
+<text x="55" y="162" font-size="11" text-anchor="end">6</text>
+<line x1="60" y1="158" x2="545" y2="158" stroke="#e2e8f0"/>
+<text x="55" y="119" font-size="11" text-anchor="end">12</text>
+<line x1="60" y1="115" x2="545" y2="115" stroke="#e2e8f0"/>
+<text x="55" y="76" font-size="11" text-anchor="end">18</text>
+<line x1="60" y1="72" x2="545" y2="72" stroke="#e2e8f0"/>
+<text x="55" y="34" font-size="11" text-anchor="end">24</text>
+<line x1="60" y1="30" x2="545" y2="30" stroke="#e2e8f0"/>
+<line x1="60" y1="115" x2="545" y2="115" stroke="#94a3b8" stroke-dasharray="5 3"/>
+<rect x="88" y="115" width="30" height="85.0" fill="#f59e0b"/>
+<text x="103" y="111" font-size="11" text-anchor="middle" font-weight="bold">12</text>
+<rect x="122" y="115" width="30" height="85.0" fill="#1e40af"/>
+<text x="137" y="111" font-size="11" text-anchor="middle" font-weight="bold">12</text>
+<text x="120" y="216" font-size="11" text-anchor="middle">Ekvator (0°)</text>
+<rect x="208" y="105" width="30" height="95.2" fill="#f59e0b"/>
+<text x="223" y="101" font-size="11" text-anchor="middle" font-weight="bold">13,4</text>
+<rect x="242" y="125" width="30" height="74.8" fill="#1e40af"/>
+<text x="257" y="121" font-size="11" text-anchor="middle" font-weight="bold">10,6</text>
+<text x="240" y="216" font-size="11" text-anchor="middle">Yengeç D.</text>
+<rect x="328" y="94" width="30" height="105.9" fill="#f59e0b"/>
+<text x="343" y="90" font-size="11" text-anchor="middle" font-weight="bold">15</text>
+<rect x="362" y="136" width="30" height="64.1" fill="#1e40af"/>
+<text x="377" y="132" font-size="11" text-anchor="middle" font-weight="bold">9</text>
+<text x="360" y="216" font-size="11" text-anchor="middle">Samsun (41° K)</text>
+<rect x="448" y="30" width="30" height="170.0" fill="#f59e0b"/>
+<text x="463" y="26" font-size="11" text-anchor="middle" font-weight="bold">24</text>
+<rect x="482" y="200" width="30" height="0.0" fill="#1e40af"/>
+<text x="497" y="196" font-size="11" text-anchor="middle" font-weight="bold">0</text>
+<text x="480" y="216" font-size="11" text-anchor="middle">K. Kutup D.</text>
+<text x="18" y="115" font-size="11" font-weight="bold" transform="rotate(-90 18 115)" text-anchor="middle">Gündüz süresi (saat)</text>
+<rect x="80" y="6" width="12" height="12" fill="#f59e0b"/><text x="97" y="16" font-size="11">21 Haziran</text>
+<rect x="180" y="6" width="12" height="12" fill="#1e40af"/><text x="197" y="16" font-size="11">21 Aralık</text>
+<text x="300" y="240" font-size="11" text-anchor="middle" fill="#475569">Yaklaşık değerler. Güney Yarım Küre’de 21 Haziran ile 21 Aralık yer değiştirir.</text>
+</svg><figcaption>Kuzey Yarım Küre’de bazı enlemlerde gündüz süreleri (yaklaşık).</figcaption></div>
 <ul>
-<li><b>Büyük Açı (Dik / Dike yakın):</b> Işık demeti <b>dar</b> bir alanı aydınlatır → Birim yüzeye düşen ışık enerjisi (J/cm²) <b>fazladır</b> → Yüzeydeki ısınma fazladır → Cisimlerin öğle vakti <b>gölge boyu kısa</b> (90° ise <b>sıfır</b>) olur.</li>
-<li><b>Küçük Açı (Eğik):</b> Aynı ışık demeti <b>geniş</b> bir alana dağılır → Birim yüzeye düşen enerji <b>azdır</b> → Isınma azdır → Öğle vakti <b>gölge boyu uzundur</b>.</li>
-<li><b>Önemli Kural:</b> Özdeş iki ışık demetinin taşıdığı <b>toplam enerji eşittir</b>; değişen şey bu enerjinin yayıldığı alan ve <b>birim yüzeye düşen enerji miktarıdır</b>.</li>
+<li><b>Ekvator’da</b> yıl boyunca gece ve gündüz yaklaşık 12’şer saattir; gündüz süresi değişmez.</li>
+<li>Ekvator’dan kutuplara gidildikçe yıl içindeki <b>gece–gündüz farkı artar</b>. 21 Haziran’da kuzeye gidildikçe gündüz uzar; 21 Aralık’ta güneye gidildikçe gündüz uzar.</li>
+<li>Bir şehirde 21 Haziran’da gündüz 12 saatten uzunsa şehir Kuzey Yarım Küre’dedir; kısaysa Güney Yarım Küre’dedir; tam 12 saat ise Ekvator üzerindedir.</li>
 </ul>
+<p class="note"><b>Dikkat!</b> Ekinokslarda (21 Mart, 23 Eylül) aydınlanma çemberi iki kutuptan geçer ve bütün paralelleri iki eşit parçaya böler; bu yüzden <b>her yerde</b> gece ve gündüz eşittir. Gün dönümlerinde (21 Haziran, 21 Aralık) ise çember kutup dairelerine teğettir; Ekvator dışındaki paraleller eşit bölünmez.</p>
+<p><b>Hafıza ipucu:</b> Haziran’da Işık Yukarıda (Yengeç), Aralık’ta Aşağıda (Oğlak). Mart ve Eylül “Eşit”: ışık Ekvator’da, gece = gündüz.</p>
 
-<h4>Güneş Işınları Nereye Kaç Kez Dik (90°) Düşer?</h4>
-<div class="fig"><svg viewBox="0 0 540 230" width="520" role="img" aria-label="Dönenceler ve Güneş ışınlarının dik geldiği kuşaklar">
-<circle cx="115" cy="115" r="95" fill="#e0f2fe" stroke="#1e3a8a" stroke-width="2"/>
-<rect x="27.5" y="77" width="175" height="76" fill="#fef08a" opacity="0.85"/>
-<rect x="132" y="48" width="42" height="10" rx="2" fill="#dc2626"/>
-<g stroke="#1e3a8a" stroke-width="1.5">
-<line x1="20" y1="115" x2="210" y2="115" stroke-width="2.2"/>
-<line x1="28" y1="77" x2="202" y2="77" stroke-dasharray="5 3"/>
-<line x1="28" y1="153" x2="202" y2="153" stroke-dasharray="5 3"/>
-<line x1="77" y1="28" x2="153" y2="28" stroke-dasharray="2 3"/>
-<line x1="77" y1="202" x2="153" y2="202" stroke-dasharray="2 3"/>
+<h3>5. Işınlar nereye kaç kez dik gelir? Yıllık gölge boyu (F.8.1.1.1)</h3>
+<p>Dik ışınlar yıl boyunca iki dönence arasında gidip gelir: 21 Mart’ta Ekvator’dan kuzeye kalkar, 21 Haziran’da Yengeç’e varır, geri döner, 23 Eylül’de Ekvator’u geçer, 21 Aralık’ta Oğlak’a ulaşır ve 21 Mart’ta Ekvator’a döner. Bir yer bu yolun üstündeyse ışınlar oraya dik gelir ve öğle vakti gölge sıfır olur.</p>
+<div class="tbl"><table>
+<tr><th>Konum</th><th>Işınlar yılda kaç kez dik gelir?</th><th>Öğle gölgesi sıfır olur mu?</th></tr>
+<tr><td>Ekvator</td><td>2 kez (21 Mart, 23 Eylül)</td><td>Evet, 2 gün</td></tr>
+<tr><td>Ekvator ile dönenceler arası</td><td>2 kez (dönenceye yakın tarihlerde)</td><td>Evet, 2 gün</td></tr>
+<tr><td>Yengeç Dönencesi / Oğlak Dönencesi</td><td>1 kez (21 Haziran / 21 Aralık)</td><td>Evet, 1 gün</td></tr>
+<tr><td>Dönencelerin dışı (Türkiye dâhil)</td><td>Hiç</td><td>Hayır, hiçbir gün</td></tr>
+</table></div>
+<div class="fig"><svg viewBox="0 0 560 330" width="560" role="img" aria-label="Farklı enlemlerde yıl boyunca öğle vakti gölge boyu">
+<text x="40" y="22" font-size="12" font-weight="bold">Ekvator’da</text>
+<line x1="40" y1="125" x2="255" y2="125" stroke="#334155" stroke-width="1.4"/>
+<line x1="40" y1="30" x2="40" y2="125" stroke="#334155" stroke-width="1.4"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.2" points="40,125 43.5,116.5 47,108.1 50.6,99.8 54.1,91.8 57.6,83.9 61.1,76.4 64.7,69.3 68.2,62.8 71.7,56.8 75.2,51.5 78.8,46.9 82.3,43.3 85.8,40.5 89.3,38.7 92.9,38 96.4,38.3 99.9,39.6 103.4,41.9 107,45.2 110.5,49.4 114,54.4 117.5,60.1 121.1,66.4 124.6,73.3 128.1,80.6 131.6,88.3 135.2,96.3 138.7,104.5 142.2,112.8 145.7,121.3 149.3,120.2 152.8,111.8 156.3,103.5 159.8,95.3 163.4,87.3 166.9,79.7 170.4,72.4 173.9,65.6 177.5,59.3 181,53.7 184.5,48.8 188,44.8 191.6,41.6 195.1,39.4 198.6,38.2 202.1,38 205.7,38.9 209.2,40.8 212.7,43.7 216.2,47.5 219.8,52.1 223.3,57.5 226.8,63.5 230.3,70.2 233.9,77.3 237.4,84.9 240.9,92.8 244.4,100.9 248,109.2 251.5,117.6 255,123.9"/>
+<g stroke="#cbd5e1" stroke-dasharray="2 2"><line x1="40" y1="30" x2="40" y2="125"/><line x1="94" y1="30" x2="94" y2="125"/><line x1="149" y1="30" x2="149" y2="125"/><line x1="202" y1="30" x2="202" y2="125"/><line x1="254" y1="30" x2="254" y2="125"/></g>
+<g font-size="11" text-anchor="middle"><text x="40" y="139">21 Mar</text><text x="94" y="139">21 Haz</text><text x="149" y="139">23 Eyl</text><text x="202" y="139">21 Ara</text></g>
+<text x="44" y="155" font-size="11" fill="#991b1b" font-weight="bold">2 kez sıfır (21 Mart, 23 Eylül)</text>
+<text x="320" y="22" font-size="12" font-weight="bold">Ekvator–Yengeç arasında</text>
+<line x1="320" y1="125" x2="535" y2="125" stroke="#334155" stroke-width="1.4"/>
+<line x1="320" y1="30" x2="320" y2="125" stroke="#334155" stroke-width="1.4"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.2" points="320,99 323.5,104.3 327,109.6 330.6,114.6 334.1,119.5 337.6,124.1 341.1,121.6 344.7,117.5 348.2,113.8 351.7,110.5 355.2,107.5 358.8,105.1 362.3,103.1 365.8,101.6 369.3,100.7 372.9,100.3 376.4,100.4 379.9,101.1 383.4,102.4 387,104.1 390.5,106.4 394,109.1 397.5,112.3 401.1,115.9 404.6,119.8 408.1,124 411.6,121.5 415.2,116.8 418.7,111.8 422.2,106.6 425.7,101.4 429.3,96 432.8,90.5 436.3,85 439.8,79.5 443.4,74 446.9,68.7 450.4,63.5 453.9,58.6 457.5,54 461,49.9 464.5,46.2 468,43.2 471.6,40.7 475.1,39 478.6,38.1 482.1,38 485.7,38.7 489.2,40.1 492.7,42.3 496.2,45.2 499.8,48.7 503.3,52.7 506.8,57.1 510.3,61.9 513.9,67 517.4,72.3 520.9,77.7 524.4,83.2 528,88.8 531.5,94.2 535,99.7"/>
+<g stroke="#cbd5e1" stroke-dasharray="2 2"><line x1="320" y1="30" x2="320" y2="125"/><line x1="374" y1="30" x2="374" y2="125"/><line x1="429" y1="30" x2="429" y2="125"/><line x1="482" y1="30" x2="482" y2="125"/><line x1="534" y1="30" x2="534" y2="125"/></g>
+<g font-size="11" text-anchor="middle"><text x="320" y="139">21 Mar</text><text x="374" y="139">21 Haz</text><text x="429" y="139">23 Eyl</text><text x="482" y="139">21 Ara</text></g>
+<text x="324" y="155" font-size="11" fill="#991b1b" font-weight="bold">2 kez sıfır</text>
+<text x="40" y="177" font-size="12" font-weight="bold">Yengeç Dönencesi’nde</text>
+<line x1="40" y1="280" x2="255" y2="280" stroke="#334155" stroke-width="1.4"/>
+<line x1="40" y1="185" x2="40" y2="280" stroke="#334155" stroke-width="1.4"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.2" points="40,244.7 43.5,248.7 47,252.5 50.6,256.2 54.1,259.6 57.6,262.9 61.1,265.9 64.7,268.6 68.2,271.1 71.7,273.3 75.2,275.3 78.8,276.9 82.3,278.2 85.8,279.1 89.3,279.7 92.9,280 96.4,279.9 99.9,279.4 103.4,278.6 107,277.5 110.5,276 114,274.2 117.5,272.1 121.1,269.8 124.6,267.1 128.1,264.2 131.6,261.1 135.2,257.7 138.7,254.1 142.2,250.4 145.7,246.4 149.3,242.3 152.8,238.1 156.3,233.8 159.8,229.3 163.4,224.9 166.9,220.4 170.4,216 173.9,211.8 177.5,207.7 181,204 184.5,200.7 188,197.8 191.6,195.6 195.1,194 198.6,193.1 202.1,193 205.7,193.6 209.2,195 212.7,197.1 216.2,199.7 219.8,202.9 223.3,206.5 226.8,210.5 230.3,214.7 233.9,219 237.4,223.5 240.9,227.9 244.4,232.4 248,236.8 251.5,241 255,245.2"/>
+<g stroke="#cbd5e1" stroke-dasharray="2 2"><line x1="40" y1="185" x2="40" y2="280"/><line x1="94" y1="185" x2="94" y2="280"/><line x1="149" y1="185" x2="149" y2="280"/><line x1="202" y1="185" x2="202" y2="280"/><line x1="254" y1="185" x2="254" y2="280"/></g>
+<g font-size="11" text-anchor="middle"><text x="40" y="294">21 Mar</text><text x="94" y="294">21 Haz</text><text x="149" y="294">23 Eyl</text><text x="202" y="294">21 Ara</text></g>
+<text x="44" y="310" font-size="11" fill="#991b1b" font-weight="bold">1 kez sıfır (21 Haziran)</text>
+<text x="320" y="177" font-size="12" font-weight="bold">Yengeç’in kuzeyinde (Samsun)</text>
+<line x1="320" y1="280" x2="535" y2="280" stroke="#334155" stroke-width="1.4"/>
+<line x1="320" y1="185" x2="320" y2="280" stroke="#334155" stroke-width="1.4"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.2" points="320,243.8 323.5,246.8 327,249.5 330.6,252.1 334.1,254.4 337.6,256.5 341.1,258.4 344.7,260.1 348.2,261.7 351.7,263 355.2,264.1 358.8,265.1 362.3,265.8 365.8,266.3 369.3,266.7 372.9,266.8 376.4,266.8 379.9,266.5 383.4,266.1 387,265.4 390.5,264.6 394,263.5 397.5,262.3 401.1,260.8 404.6,259.2 408.1,257.4 411.6,255.3 415.2,253.1 418.7,250.7 422.2,248 425.7,245.1 429.3,242 432.8,238.7 436.3,235.2 439.8,231.4 443.4,227.4 446.9,223.3 450.4,219 453.9,214.7 457.5,210.4 461,206.2 464.5,202.4 468,199 471.6,196.3 475.1,194.3 478.6,193.2 482.1,193 485.7,193.8 489.2,195.5 492.7,198.1 496.2,201.3 499.8,205 503.3,209.1 506.8,213.3 510.3,217.6 513.9,221.9 517.4,226.1 520.9,230.2 524.4,234 528,237.6 531.5,241 535,244.2"/>
+<g stroke="#cbd5e1" stroke-dasharray="2 2"><line x1="320" y1="185" x2="320" y2="280"/><line x1="374" y1="185" x2="374" y2="280"/><line x1="429" y1="185" x2="429" y2="280"/><line x1="482" y1="185" x2="482" y2="280"/><line x1="534" y1="185" x2="534" y2="280"/></g>
+<g font-size="11" text-anchor="middle"><text x="320" y="294">21 Mar</text><text x="374" y="294">21 Haz</text><text x="429" y="294">23 Eyl</text><text x="482" y="294">21 Ara</text></g>
+<text x="324" y="310" font-size="11" fill="#991b1b" font-weight="bold">Hiç sıfır olmaz</text>
+<text x="280" y="325" font-size="11" text-anchor="middle" fill="#475569">Dikey eksen: öğle vakti gölge boyu (her grafiğin ölçeği kendi içindedir).</text>
+</svg><figcaption>Öğle vakti gölge boyunun yıl içindeki değişimi (hesapla çizilmiştir).</figcaption></div>
+<p>Yengeç Dönencesi’nin kuzeyindeki bir şehirde (Türkiye) öğle vakti gölge 21 Haziran’da <b>en kısa</b>, 21 Aralık’ta <b>en uzun</b> olur; 21 Mart ve 23 Eylül’de ışınlar aynı açıyla geldiği için gölge boyları <b>eşittir</b>. Oğlak Dönencesi’nin güneyindeki bir şehirde ise tam tersi geçerlidir.</p>
+<p class="note"><b>Dikkat!</b> Grafikte gölge boyu “sıfıra iniyor” ise o şehir kesinlikle iki dönence arasındadır. Gölge hiç sıfır olmuyorsa şehir dönencelerin dışındadır; en kısa gölge haziranda ise Kuzey, aralıkta ise Güney Yarım Küre’dedir.</p>
+
+<div class="box"><b>Mini örnek 1 (konum şeklinden mevsim)</b><br>Bir şekilde Güneş solda, Dünya’nın Kuzey Kutbu ise sağa, yani Güneş’ten uzağa eğik çizilmiştir. K şehri Ekvator’un kuzeyinde, L şehri güneyindedir. Hangisinde yaz yaşanır, hangisine ışınlar daha dik gelir?<br><b>Çözüm:</b> Kuzey Kutbu Güneş’ten uzakta → konum 21 Aralık’a aittir; ışınlar Oğlak Dönencesi’ne dik gelir. Güney Yarım Küre’deki <b>L’de yaz</b> yaşanır ve ışınlar L’ye daha dik gelir; L birim yüzeyde daha çok enerji alır, öğle gölgesi daha kısadır. Kuzey’deki K’de kış vardır, gündüz geceden kısadır.</div>
+
+<h3>6. Veriden yarım küre ve mevsim bulma (F.8.1.1.1)</h3>
+<p>Çıkmış soruların en sık kalıbı budur: sana bir sıcaklık tablosu, gölge grafiği ya da gündüz süreleri verilir; şehrin hangi yarım kürede olduğunu veya hangi mevsimi yaşadığını bulman istenir.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Kuzey ve Güney Yarım Küredeki iki şehrin aylık sıcaklık ortalamaları">
+<line x1="60" y1="185" x2="530" y2="185" stroke="#334155" stroke-width="1.5"/>
+<line x1="60" y1="25" x2="60" y2="185" stroke="#334155" stroke-width="1.5"/>
+<text x="55" y="189" font-size="11" text-anchor="end">0</text>
+<text x="55" y="136" font-size="11" text-anchor="end">10</text>
+<line x1="60" y1="132" x2="530" y2="132" stroke="#e2e8f0"/>
+<text x="55" y="82" font-size="11" text-anchor="end">20</text>
+<line x1="60" y1="78" x2="530" y2="78" stroke="#e2e8f0"/>
+<text x="55" y="29" font-size="11" text-anchor="end">30</text>
+<line x1="60" y1="25" x2="530" y2="25" stroke="#e2e8f0"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="70,147.7 110.9,147.7 151.8,142.3 192.7,121 233.6,99.7 274.5,73 315.5,62.3 356.4,57 397.3,78.3 438.2,99.7 479.1,121 520,137"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6 3" points="70,57 110.9,62.3 151.8,73 192.7,94.3 233.6,110.3 274.5,126.3 315.5,131.7 356.4,121 397.3,110.3 438.2,94.3 479.1,78.3 520,62.3"/>
+<text x="70" y="200" font-size="11" text-anchor="middle">O</text>
+<text x="111" y="200" font-size="11" text-anchor="middle">Ş</text>
+<text x="152" y="200" font-size="11" text-anchor="middle">M</text>
+<text x="193" y="200" font-size="11" text-anchor="middle">N</text>
+<text x="234" y="200" font-size="11" text-anchor="middle">M</text>
+<text x="274" y="200" font-size="11" text-anchor="middle">H</text>
+<text x="316" y="200" font-size="11" text-anchor="middle">T</text>
+<text x="356" y="200" font-size="11" text-anchor="middle">A</text>
+<text x="397" y="200" font-size="11" text-anchor="middle">E</text>
+<text x="438" y="200" font-size="11" text-anchor="middle">E</text>
+<text x="479" y="200" font-size="11" text-anchor="middle">K</text>
+<text x="520" y="200" font-size="11" text-anchor="middle">A</text>
+<text x="18" y="105" font-size="11" font-weight="bold" transform="rotate(-90 18 105)" text-anchor="middle">Sıcaklık (°C)</text>
+<line x1="120" y1="12" x2="145" y2="12" stroke="#dc2626" stroke-width="2.5"/><text x="150" y="16" font-size="11" font-weight="bold">K şehri</text>
+<line x1="250" y1="12" x2="275" y2="12" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6 3"/><text x="280" y="16" font-size="11" font-weight="bold">L şehri</text>
+<text x="295" y="222" font-size="11" text-anchor="middle" fill="#475569">Örnek veriler. Aylar: Ocak’tan Aralık’a baş harfleriyle.</text>
+</svg><figcaption>Yıl içinde ısınma–soğuma yönü yarım küreyi gösterir.</figcaption></div>
+<ul>
+<li><b>Ocak soğuk, temmuz sıcak</b> (sıcaklık ocaktan hazirana artıyor) → Kuzey Yarım Küre.</li>
+<li><b>Ocak sıcak, temmuz soğuk</b> (sıcaklık ocaktan hazirana azalıyor) → Güney Yarım Küre.</li>
+<li>Aynı tarihte iki yarım kürede <b>zıt mevsimler</b> yaşanır: Kuzey’de haziran–temmuz–ağustos yaz, aralık–ocak–şubat kıştır; Güney’de tam tersidir.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Elindeki bilgi</th><th>Ne söyleyebilirsin?</th></tr>
+<tr><td>Tarih + yarım küre</td><td>Mevsim <b>kesin</b> bulunur (ör. 10 Ocak, Güney Yarım Küre → yaz).</td></tr>
+<tr><td>Yalnızca sıcaklık</td><td>Mevsim <b>bulunamaz</b>; Ekvator’a yakın bir yer kışın bile sıcak olabilir.</td></tr>
+<tr><td>Yıl içindeki sıcaklık değişimi (aylık tablo)</td><td>Yarım küre bulunur: hangi aylarda ısınıyor, hangi aylarda soğuyor?</td></tr>
+<tr><td>İki şehrin aynı gündeki sıcaklıkları</td><td>Tek başına yarım küre ya da mevsim söylemez; sıcaklık Ekvator’a uzaklık ve yükseltiye de bağlıdır.</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Sorularda geçen “<b>eş yükseltide</b>” ifadesi, yükseltinin sıcaklığa etkisini ortadan kaldırmak içindir. “İki şehirde aynı mevsim yaşanıyor” deniyorsa şehirler <b>aynı yarım kürededir</b>; sıcaklıkları eşitse Ekvator’a eşit uzaklıkta olmaları ve ışınları aynı açıyla almaları mümkündür (“olabilir”), ama başka nedenlerle de eşit olabilir (“kesin” değildir).</p>
+
+<div class="box"><b>Mini örnek 2 (tablodan yarım küre)</b><br>Eş yükseltideki P’de ocak ortalaması 25 °C, temmuz ortalaması 12 °C; R’de ocak 3 °C, temmuz 26 °C’tur. Şehirler hangi yarım kürededir?<br><b>Çözüm:</b> P’de ocak sıcak, temmuz soğuk → <b>P Güney</b> Yarım Küre’de. R’de ocak soğuk, temmuz sıcak → <b>R Kuzey</b> Yarım Küre’de. “P, R’den daha sıcaktır” ya da “iki şehrin bir ayı eşittir” gibi bilgiler tek başına yarım küreyi göstermez; yarım küreyi gösteren, sıcaklığın yıl içindeki <b>değişim yönüdür</b>.</div>
+
+<h3>7. Hava olayları ve iklim (F.8.1.2.1)</h3>
+<p><b>Hava olayları:</b> Atmosferde kısa süre içinde ve dar bir alanda görülen olaylardır: yağmur, kar, dolu, sis, çiy, kırağı, rüzgâr, sıcaklık ve nem değişimleri gibi. Bugün güneşli olan bir yerde yarın sağanak görülebilir; hava olayları değişkendir ve önceden <b>tahmin</b> edilir.</p>
+<p><b>İklim:</b> Geniş bir bölgede <b>uzun yıllar</b> boyunca (genellikle 30–35 yıl ve daha uzun) gözlenen hava olaylarının ortalamasıdır. İklim, o bölgenin “kimliği” gibidir ve kolay değişmez: “Akdeniz kıyılarında yazlar sıcak ve kurak, kışlar ılık ve yağışlı geçer.”</p>
+<div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="Hava olayı ile iklimin zaman ve alan ölçeği">
+<defs><marker id="f9a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<line x1="30" y1="95" x2="530" y2="95" stroke="#475569" stroke-width="2" marker-end="url(#f9a)"/>
+<line x1="50" y1="89" x2="50" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="50" y="116" font-size="11" text-anchor="middle">saat</text>
+<line x1="110" y1="89" x2="110" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="110" y="116" font-size="11" text-anchor="middle">gün</text>
+<line x1="170" y1="89" x2="170" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="170" y="116" font-size="11" text-anchor="middle">hafta</text>
+<line x1="240" y1="89" x2="240" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="240" y="116" font-size="11" text-anchor="middle">ay</text>
+<line x1="330" y1="89" x2="330" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="330" y="116" font-size="11" text-anchor="middle">1 yıl</text>
+<line x1="470" y1="89" x2="470" y2="101" stroke="#475569" stroke-width="2"/>
+<text x="470" y="116" font-size="11" text-anchor="middle">30+ yıl</text>
+<text x="532" y="116" font-size="11" text-anchor="end" fill="#475569">zaman</text>
+<rect x="30" y="18" width="200" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="130" y="38" font-size="12" font-weight="bold" text-anchor="middle" fill="#075985">HAVA OLAYI</text>
+<text x="130" y="54" font-size="11" text-anchor="middle">kısa süre, dar alan</text>
+<text x="130" y="68" font-size="11" text-anchor="middle">“bugün, yarın, bu hafta”</text>
+<rect x="350" y="18" width="190" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+<text x="445" y="38" font-size="12" font-weight="bold" text-anchor="middle" fill="#166534">İKLİM</text>
+<text x="445" y="54" font-size="11" text-anchor="middle">uzun yılların ortalaması</text>
+<text x="445" y="68" font-size="11" text-anchor="middle">geniş alan, “genellikle”</text>
+<rect x="30" y="132" width="200" height="44" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+<text x="130" y="150" font-size="11" text-anchor="middle">İnceleyen: meteoroloji</text><text x="130" y="166" font-size="11" text-anchor="middle">Uzman: meteorolog</text>
+<rect x="350" y="132" width="190" height="44" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+<text x="445" y="150" font-size="11" text-anchor="middle">İnceleyen: klimatoloji</text><text x="445" y="166" font-size="11" text-anchor="middle">Uzman: klimatolog</text>
+</svg><figcaption>Zaman ve alan ölçeği: hava olayı kısa ve dar, iklim uzun ve geniş.</figcaption></div>
+<div class="tbl"><table>
+<tr><th>Özellik</th><th>Hava olayı</th><th>İklim</th></tr>
+<tr><td>Süre</td><td>Kısa (saat, gün, hafta)</td><td>Uzun yılların ortalaması</td></tr>
+<tr><td>Alan</td><td>Dar alan (bir şehir, bir bölge)</td><td>Geniş alan</td></tr>
+<tr><td>Değişkenlik</td><td>Kısa sürede değişebilir</td><td>Kolay değişmez</td></tr>
+<tr><td>İnceleyen bilim dalı</td><td>Meteoroloji</td><td>Klimatoloji (iklim bilimi)</td></tr>
+<tr><td>Uzman</td><td>Meteorolog</td><td>Klimatolog (iklim bilimci)</td></tr>
+<tr><td>İpucu sözcükler</td><td>bugün, yarın, bu hafta, o gün, öğleden sonra, bekleniyor, uyarı</td><td>genellikle, her yıl, uzun yıllardır, yazları/kışları, ortalama</td></tr>
+<tr><td>Örnek</td><td>“21 Temmuz’da şehirde sağanak yağış etkili oldu.”</td><td>“Bölgede yağışlar en çok kış aylarında düşer.”</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Tek bir sel, kar fırtınası veya sıcak gün o bölgenin <b>ikliminin değiştiğini göstermez</b>; o yalnızca bir hava olayıdır. İklim değişikliğinden söz etmek için uzun yıllık ortalamaların değişmesi gerekir. Ayrıca bir iklim haritası hazırlanırken en uygun veri, <b>uzun yıllar</b> boyunca ve <b>yılın bütün aylarında</b> toplanan ölçümlerin ortalamasıdır; yalnızca yaz ayları, tek bir yıl ya da tek bir gün yeterli değildir.</p>
+
+<h3>8. İklim bilimi ve iklim bilimci (F.8.1.2.2)</h3>
+<p>İklimi inceleyen bilim dalına <b>klimatoloji (iklim bilimi)</b>, bu alanda çalışan uzmana <b>klimatolog (iklim bilimci)</b> denir. Klimatologlar uzun yıllık sıcaklık, yağış, nem ve rüzgâr verilerini toplar, ortalamalarını alır, iklim haritaları hazırlar ve iklimin uzun dönemde nasıl değiştiğini araştırır.</p>
+<p>Hava olaylarını inceleyen bilim dalı ise <b>meteoroloji</b>, uzmanı <b>meteorolog</b>tur. Günlük ve haftalık hava tahminlerini meteorologlar yapar. Pilotlar, kaptanlar ve çiftçiler işlerini planlarken hava tahminlerinden yararlanır.</p>
+<p class="note"><b>Dikkat!</b> “Yarınki hava tahminini klimatolog yapar” veya “hava tahminini yalnızca iklim bilimciler yapar” ifadeleri yanlıştır. Kısa süreli tahmin = meteorolog; uzun yıllık ortalama = klimatolog.</p>
+
+<div class="box"><b>Mini örnek 3 (iklim mi, hava olayı mı?)</b><br>I. “Bu kış Erzurum’da kar beklenenden az yağdı.” II. “Karadeniz kıyılarında her mevsim yağış görülür.” III. “Önümüzdeki hafta sıcaklıklar mevsim normallerinin üzerinde seyredecek.”<br><b>Çözüm:</b> I tek bir kışı (kısa süre), III bir haftayı anlatır → hava olayı. II bölgenin her yıl tekrar eden genel özelliğidir → <b>iklim</b>. Yalnız II iklimle ilgilidir.</div>
+
+<h3>9. Ek bilgi: Hava olaylarının oluşumu (F.8.1.2.1 ile ilişkili)</h3>
+<p>Bu bölüm hava olaylarını anlamaya yardım eden destek bilgidir. 2018–2026 çıkmışlarında bu başlıktan doğrudan soru gelmemiştir; yine de bir metin veya deney sorusunda karşına çıkabilir.</p>
+<h4>Su buharı ve yağış türleri</h4>
+<p>Atmosferdeki su buharı soğuyunca yoğuşur (gaz → sıvı) veya kırağılaşır (gaz → katı). Nerede ve hangi sıcaklıkta olduğuna göre farklı hava olayları oluşur:</p>
+<div class="tbl"><table>
+<tr><th>Oluştuğu yer</th><th>Hava olayı</th><th>Nasıl oluşur?</th></tr>
+<tr><td rowspan="3">Gökyüzünde (bulutlarda)</td><td>Yağmur</td><td>Bulutlardaki su damlacıkları birleşip büyür ve sıvı hâlde düşer.</td></tr>
+<tr><td>Kar</td><td>Su buharı çok soğuk havada buz kristallerine dönüşür; kristaller kar tanesi olarak düşer.</td></tr>
+<tr><td>Dolu</td><td>Hızla yükselen hava akımlarıyla çok soğuk katmanlara taşınan su damlaları aniden donar, buz taneleri olarak düşer.</td></tr>
+<tr><td rowspan="3">Yeryüzüne yakın</td><td>Çiy</td><td>Serin gecelerde (0 °C’un üstünde) su buharı toprak, yaprak gibi soğuk yüzeylerde su damlacıkları olarak yoğuşur.</td></tr>
+<tr><td>Kırağı</td><td>Hava 0 °C’un altına düştüğünde su buharı sıvı olmadan doğrudan yüzeylerde ince buz kristallerine dönüşür.</td></tr>
+<tr><td>Sis</td><td>Yere yakın havadaki su buharı yoğuşarak havada asılı kalan küçük damlacıklar oluşturur; görüş mesafesi düşer.</td></tr>
+</table></div>
+<h4>Basınç farkı ve rüzgâr</h4>
+<p>Güneş yeryüzünü her yerde eşit ısıtmaz. Isınan hava genleşir, yoğunluğu azalır ve yükselir; o bölgede <b>alçak basınç (AB)</b> oluşur. Soğuyan hava sıkışır, yoğunluğu artar ve alçalır; orada <b>yüksek basınç (YB)</b> oluşur. Yeryüzüne yakın seviyede hava <b>yüksek basınçtan alçak basınca</b> doğru hareket eder; bu yatay hava hareketine <b>rüzgâr</b> denir. Basınç farkı ne kadar büyükse rüzgâr o kadar hızlı eser.</p>
+<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Alçak ve yüksek basınç alanlarında hava hareketleri ve rüzgâr">
+<defs><marker id="f10a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e3a8a"/></marker><marker id="f10b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="f10c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker></defs>
+<line x1="20" y1="170" x2="540" y2="170" stroke="#334155" stroke-width="3"/>
+<rect x="40" y="172" width="200" height="14" fill="#bfdbfe"/><rect x="320" y="172" width="200" height="14" fill="#fecaca"/>
+<text x="140" y="205" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Soğuk yüzey → YÜKSEK BASINÇ (YB)</text>
+<text x="420" y="205" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">Sıcak yüzey → ALÇAK BASINÇ (AB)</text>
+<line x1="110" y1="40" x2="110" y2="140" stroke="#1e3a8a" stroke-width="2.2" marker-end="url(#f10a)"/>
+<line x1="140" y1="40" x2="140" y2="140" stroke="#1e3a8a" stroke-width="2.2" marker-end="url(#f10a)"/>
+<line x1="170" y1="40" x2="170" y2="140" stroke="#1e3a8a" stroke-width="2.2" marker-end="url(#f10a)"/>
+<line x1="390" y1="150" x2="390" y2="50" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f10b)"/>
+<line x1="420" y1="150" x2="420" y2="50" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f10b)"/>
+<line x1="450" y1="150" x2="450" y2="50" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f10b)"/>
+<text x="140" y="30" font-size="11" text-anchor="middle">alçalıcı hava (yoğun, soğuk)</text>
+<text x="420" y="30" font-size="11" text-anchor="middle">yükselici hava (genleşmiş, sıcak)</text>
+<line x1="190" y1="155" x2="370" y2="155" stroke="#0f766e" stroke-width="4" marker-end="url(#f10c)"/>
+<text x="280" y="146" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f766e">RÜZGÂR (YB → AB)</text>
+<line x1="370" y1="60" x2="190" y2="60" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#f10c)"/>
+<text x="280" y="52" font-size="11" text-anchor="middle" fill="#475569">üst seviyede ters yönde akış</text>
+</svg><figcaption>Rüzgâr yeryüzüne yakın seviyede yüksek basınçtan alçak basınca doğru eser.</figcaption></div>
+<div class="tbl"><table>
+<tr><th></th><th>Alçak basınç alanı (AB)</th><th>Yüksek basınç alanı (YB)</th></tr>
+<tr><td>Sıcaklık ve yoğunluk</td><td>Hava sıcak, yoğunluk az</td><td>Hava soğuk, yoğunluk fazla</td></tr>
+<tr><td>Dikey hareket</td><td>Yükselici</td><td>Alçalıcı</td></tr>
+<tr><td>Yerdeki rüzgâr</td><td>Çevreden merkeze doğru</td><td>Merkezden çevreye doğru</td></tr>
+<tr><td>Bulut ve yağış</td><td>Yükselen nemli hava soğur; bulut ve yağış olasılığı yüksek</td><td>Genellikle açık ve kuru hava</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Ses benzerliğine kanma: <b>yüksek</b> basınçta <b>alçalıcı</b>, <b>alçak</b> basınçta <b>yükselici</b> hava hareketi vardır. Kıyıda gündüz kara daha çabuk ısındığı için rüzgâr denizden karaya, gece kara daha çabuk soğuduğu için karadan denize eser.</p>
+<p><b>Çevre bilimiyle bağlantı:</b> Atmosferdeki karbondioksit gibi sera gazlarının artması sera etkisini güçlendirerek küresel ortalama sıcaklığı artırır (küresel ısınma). Bu, uzun yıllık ortalamaları değiştirdiği için bir <b>iklim</b> konusudur. Son yüzyıldaki hızlı ısınmanın nedeni eksen eğikliğindeki bir değişim değil, büyük ölçüde fosil yakıt kullanımı ve ormansızlaşma gibi insan etkinlikleridir.</p>
+
+<h3>LGS'de bu konu nasıl soruluyor?</h3>
+<p>2018–2026 arası çıkmışlarda bu üniteden her yıl genellikle 1–3 soru gelmiştir. Sorular bilgiyi ezberden değil, <b>şekil, tablo ve metinden çıkarım</b> yaparak ölçer.</p>
+<div class="tbl"><table>
+<tr><th>Soru tipi</th><th>Örnek kalıp</th><th>Strateji</th></tr>
+<tr><td>Konum şekli → mevsim / ışın açısı</td><td>Güneş ve eğik eksenli Dünya çizilir, şehirler noktayla verilir (2019, 2022, 2023, 2026).</td><td>Önce “Kuzey Kutbu Güneş’e dönük mü?” diye bak. Dönükse 21 Haziran, uzaksa 21 Aralık. Sonra şehrin yarım küresini oku.</td></tr>
+<tr><td>Veriden yarım küre</td><td>Aylık sıcaklık tablosu, ocak–temmuz karşılaştırması (2019, 2025).</td><td>Sıcaklığın yıl içindeki değişim yönüne bak. Tek bir değer veya iki şehrin karşılaştırması yarım küre söylemez.</td></tr>
+<tr><td>Mevsim için gereken bilgi</td><td>“Hangi bilgiler bilinirse mevsim belirlenebilir?”, “hangileri doğru olabilir?” (2021, 2024).</td><td>Mevsim = tarih + yarım küre. Sıcaklık ayrıca Ekvator’a uzaklığa bağlıdır. “Olabilir” ile “kesin” ayrımına dikkat et.</td></tr>
+<tr><td>Gölge boyu</td><td>Yıllık gölge grafiği veya “K’nin gölgesi daha uzun” bilgisi (2020, 2023).</td><td>Kısa gölge = dik ışın = çok enerji. Işının dik geldiği paraleli (tarih) bul; ona yakın olan şehrin gölgesi kısadır.</td></tr>
+<tr><td>Birim yüzey enerjisi</td><td>21 Aralık’ta Ekvator’a eşit uzak iki şehir, enerji grafiği şıkları (2020, 2026).</td><td>Işının dik geldiği dönenceye hangi şehir daha yakınsa o daha çok enerji alır.</td></tr>
+<tr><td>İklim ↔ hava olayı</td><td>Haber metni, üç ifade, veri seçimi (2020, 2021, 2023).</td><td>Süre ve alan ipuçlarını işaretle: bir gün, bir hafta = hava olayı; uzun yıllar, genellikle = iklim.</td></tr>
+</table></div>
+<p><b>En sık tuzaklar:</b></p>
+<ul>
+<li>Güneş’e uzaklığı mevsim nedeni sanmak (3 Ocak’ta Dünya Güneş’e en yakındır, Kuzey’de kış vardır).</li>
+<li>“Gündüzler uzuyor” ile “gündüz geceden uzun” ifadelerini karıştırmak (21 Aralık → 21 Mart arasında Kuzey’de gündüz uzar ama gece hâlâ uzundur).</li>
+<li>Sıcaklık bilgisinden mevsim çıkarmak; Ekvator’a uzaklığın sıcaklığa etkisini unutmak.</li>
+<li>Özdeş ışık kaynaklarının toplam enerjisini farklı sanmak.</li>
+<li>Tek günlük olayı iklim değişikliği kanıtı saymak; hava tahminini klimatologa vermek.</li>
+<li>Ekvator’a yılda 2, dönencelere yılda 1 kez dik ışın geldiğini; Türkiye’ye hiç gelmediğini karıştırmak.</li>
+</ul>
+<p><b>Çözüm sırası (3 adım):</b> 1) Tarihi bul: ışınlar hangi paralele dik geliyor? 2) Şehrin yerini bul: hangi yarım küre, dik ışına ne kadar uzak? 3) Sonucu çıkar: mevsim, ışın açısı, enerji, gölge, gündüz süresi. Şıklarda “kesinlikle” ve “olabilir” sözcüklerinin altını çiz.</p>
+
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2018–2026 LGS’de bu konu etiketiyle <b>14 soru</b> var. Aşağıdaki ısı haritası ve tablo, her sorunun hangi alt başlıktan geldiğini gösterir. Alt başlık sınıflandırması bize aittir (yorum); bazı sorular iki alt başlığa birden dokunur, en baskın olanı yazılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 262" width="560" role="img" aria-label="Mevsimler ve İklim çıkmışlarının alt başlık ve yıllara göre dağılımı">
+<text x="10" y="18" font-size="12" font-weight="bold">Alt başlık × yıl (hücre: soru sayısı)</text>
+<g font-size="11" text-anchor="middle" font-weight="bold">
+<text x="213" y="32">’18</text>
+<text x="247" y="32">’19</text>
+<text x="281" y="32">’20</text>
+<text x="315" y="32">’21</text>
+<text x="349" y="32">’22</text>
+<text x="383" y="32">’23</text>
+<text x="417" y="32">’24</text>
+<text x="451" y="32">’25</text>
+<text x="485" y="32">’26</text>
+<text x="532" y="32">Top.</text>
 </g>
-<g font-size="10.5">
-<text x="222" y="32" font-weight="bold">Kuzey Kutup Dairesi (66°33′ K): Işınlar dik gelmez (0 kez)</text>
-<text x="222" y="56" fill="#dc2626" font-weight="bold">Türkiye (36°–42° K): Dönence dışı → Asla dik gelmez! (0 kez)</text>
-<text x="222" y="81" fill="#b45309" font-weight="bold">Yengeç Dönencesi (23°27′ K): Yılda 1 kez dik gelir (21 Haz)</text>
-<text x="222" y="118" fill="#1e3a8a" font-weight="bold">Dönenceler Arası (Ekvator dahil): Yılda 2 kez dik gelir</text>
-<text x="222" y="157" fill="#b45309" font-weight="bold">Oğlak Dönencesi (23°27′ G): Yılda 1 kez dik gelir (21 Ara)</text>
-<text x="222" y="205" font-weight="bold">Güney Kutup Dairesi (66°33′ G): Işınlar dik gelmez (0 kez)</text>
+<text x="190" y="61" font-size="11" text-anchor="end">Mevsim ve yarım küre belirleme</text>
+<rect x="196" y="40" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="230" y="40" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="247" y="61" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="264" y="40" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="298" y="40" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="315" y="61" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="332" y="40" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="366" y="40" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="383" y="61" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="400" y="40" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="417" y="61" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="434" y="40" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="451" y="61" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="468" y="40" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="510" y="48" width="30" height="18" fill="#f59e0b"/>
+<text x="544" y="61" font-size="11" font-weight="bold">5</text>
+<text x="190" y="95" font-size="11" text-anchor="end">Işın açısı ve birim yüzey enerjisi</text>
+<rect x="196" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="230" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="264" y="74" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="281" y="95" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="298" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="332" y="74" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="349" y="95" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="366" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="400" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="434" y="74" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="468" y="74" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="485" y="95" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="510" y="82" width="18" height="18" fill="#f59e0b"/>
+<text x="532" y="95" font-size="11" font-weight="bold">3</text>
+<text x="190" y="129" font-size="11" text-anchor="end">Gölge boyu</text>
+<rect x="196" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="230" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="264" y="108" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="281" y="129" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="298" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="332" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="366" y="108" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="383" y="129" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="400" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="434" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="468" y="108" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="510" y="116" width="12" height="18" fill="#f59e0b"/>
+<text x="526" y="129" font-size="11" font-weight="bold">2</text>
+<text x="190" y="163" font-size="11" text-anchor="end">İklim – hava olayı</text>
+<rect x="196" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="230" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="264" y="142" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="281" y="163" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="298" y="142" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="315" y="163" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="332" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="366" y="142" width="34" height="34" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+<text x="383" y="163" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="400" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="434" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="468" y="142" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="510" y="150" width="18" height="18" fill="#f59e0b"/>
+<text x="532" y="163" font-size="11" font-weight="bold">3</text>
+<text x="190" y="197" font-size="11" text-anchor="end">Deprem (etiket dışı, yorum)</text>
+<rect x="196" y="176" width="34" height="34" fill="#94a3b8" stroke="#ffffff" stroke-width="2"/>
+<text x="213" y="197" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="230" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="264" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="298" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="332" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="366" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="400" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="434" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="468" y="176" width="34" height="34" fill="#f1f5f9" stroke="#ffffff" stroke-width="2"/>
+<rect x="510" y="184" width="6" height="18" fill="#f59e0b"/>
+<text x="520" y="197" font-size="11" font-weight="bold">1</text>
+<text x="190" y="228" font-size="11" text-anchor="end" font-weight="bold">Yıl toplamı</text>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="213" y="228">1</text>
+<text x="247" y="228">1</text>
+<text x="281" y="228">3</text>
+<text x="315" y="228">2</text>
+<text x="349" y="228">1</text>
+<text x="383" y="228">3</text>
+<text x="417" y="228">1</text>
+<text x="451" y="228">1</text>
+<text x="485" y="228">1</text>
+<text x="532" y="228">14</text>
 </g>
-</svg></div>
-
-<h4>Bölgelere Göre Yıllık Gölge Boyu Grafikleri (Öğle Vakti)</h4>
-<div class="fig"><svg viewBox="0 0 560 155" width="540" role="img" aria-label="Üç farklı bölgede yıllık gölge boyu değişim grafikleri">
-<g stroke="#475569" stroke-width="1.5" fill="none">
-<polyline points="25,20 25,115 165,115"/>
-<polyline points="205,20 205,115 345,115"/>
-<polyline points="385,20 385,115 525,115"/>
-</g>
-<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="35,55 75,95 115,55 155,25"/>
-<polyline fill="none" stroke="#2563eb" stroke-width="2.5" points="215,115 255,65 295,115 335,65"/>
-<polyline fill="none" stroke="#16a34a" stroke-width="2.5" points="395,70 435,30 475,70 515,115"/>
-<g font-size="9.5" text-anchor="middle">
-<text x="35" y="128">21M</text><text x="75" y="128">21H</text><text x="115" y="128">23E</text><text x="155" y="128">21A</text>
-<text x="95" y="146" font-weight="bold" font-size="10.5">Türkiye (Yengeç Kuzeyi - Sıfır olmaz)</text>
-<text x="215" y="128">21M</text><text x="255" y="128">21H</text><text x="295" y="128">23E</text><text x="335" y="128">21A</text>
-<text x="275" y="146" font-weight="bold" font-size="10.5">Ekvator (21M ve 23E'de 0 olur)</text>
-<text x="395" y="128">21M</text><text x="435" y="128">21H</text><text x="475" y="128">23E</text><text x="515" y="128">21A</text>
-<text x="455" y="146" font-weight="bold" font-size="10.5">Oğlak Dönencesi (21A'da 0 olur)</text>
-</g>
-<g font-size="9" fill="#475569"><text x="8" y="28">Gölge</text><text x="18" y="118">0</text><text x="198" y="118">0</text><text x="378" y="118">0</text></g>
-</svg></div>
-
-<h3>3. Önemli Tarihler ve Tarih Aralıkları Analizi</h3>
-<table class="rt">
-<tr><th>Tarih / Dönem</th><th>Dik Geldiği Yer</th><th>Kuzey Yarım Küre (KYK)</th><th>Güney Yarım Küre (GYK)</th></tr>
-<tr><td><b>21 Haziran</b></td><td>Yengeç Dönencesi</td><td>Yaz başlar. <b>En uzun gündüz</b>, en kısa gece. Kuzey Kutup Dairesi’nde 24 saat gündüz.</td><td>Kış başlar. <b>En uzun gece</b>, en kısa gündüz. Güney Kutup Dairesi’nde 24 saat gece.</td></tr>
-<tr><td><b>21 Haz → 23 Eyl</b></td><td>Yengeç’ten Ekvator’a kayar</td><td>Gündüzler <b>kısalmaya</b> başlar ancak <b>hâlâ gündüz &gt; gece</b>dir!</td><td>Gündüzler <b>uzamaya</b> başlar ancak <b>hâlâ gece &gt; gündüz</b>dür!</td></tr>
-<tr><td><b>23 Eylül</b></td><td>Ekvator</td><td>Sonbahar başlar. Tüm Dünya’da <b>12 saat gece = 12 saat gündüz</b>.</td><td>İlkbahar başlar. Tüm Dünya’da <b>12 saat gece = 12 saat gündüz</b>.</td></tr>
-<tr><td><b>23 Eyl → 21 Ara</b></td><td>Ekvator’dan Oğlak’a kayar</td><td>Gündüzler kısalmaya devam eder ve artık <b>gece &gt; gündüz</b>dür.</td><td>Gündüzler uzamaya devam eder ve artık <b>gündüz &gt; gece</b>dir.</td></tr>
-<tr><td><b>21 Aralık</b></td><td>Oğlak Dönencesi</td><td>Kış başlar. <b>En uzun gece</b>, en kısa gündüz.</td><td>Yaz başlar. <b>En uzun gündüz</b>, en kısa gece.</td></tr>
-<tr><td><b>21 Ara → 21 Mar</b></td><td>Oğlak’tan Ekvator’a kayar</td><td>Gündüzler <b>uzamaya</b> başlar ancak <b>hâlâ gece &gt; gündüz</b>dür!</td><td>Gündüzler <b>kısalmaya</b> başlar ancak <b>hâlâ gündüz &gt; gece</b>dir!</td></tr>
-<tr><td><b>21 Mart</b></td><td>Ekvator</td><td>İlkbahar başlar. Tüm Dünya’da <b>gece = gündüz (12 saat)</b>.</td><td>Sonbahar başlar. Tüm Dünya’da <b>gece = gündüz (12 saat)</b>.</td></tr>
-<tr><td><b>21 Mar → 21 Haz</b></td><td>Ekvator’dan Yengeç’e kayar</td><td>Gündüzler uzamaya devam eder ve <b>gündüz &gt; gece</b>dir.</td><td>Gündüzler kısalmaya devam eder ve <b>gece &gt; gündüz</b>dür.</td></tr>
-</table>
-
-<div class="note"><b>LGS Tuzağı 3 (Kuzeye ve Güneye Gidildikçe Gündüz Süresi):</b> <b>21 Haziran</b>’da Güney Kutbu’ndan Kuzey Kutbu’na (kuzeye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. <b>21 Aralık</b>’ta ise Kuzey Kutbu’ndan Güney Kutbu’na (güneye doğru) gidildikçe <b>gündüz süresi kesintisiz artar</b>. Ekvator’dan kutuplara doğru gidildikçe ise yıl içindeki <b>gece–gündüz süresi farkı</b> artar (Ekvator’da fark hep 0 saattir).</div>
-
-<h3>4. Hava Olayları, İklim ve Yağış Türleri</h3>
-<table class="rt">
-<tr><th>Özellik</th><th>Hava Olayları</th><th>İklim</th></tr>
-<tr><td><b>Tanım ve Süre</b></td><td>Dar bir alanda, <b>kısa süre</b> (saat, gün, hafta) içinde etkili olan atmosfer koşullarıdır.</td><td>Geniş bir bölgede, <b>en az 30–40 yıllık</b> hava olaylarının ortalamasıdır.</td></tr>
-<tr><td><b>Kesinlik</b></td><td><b>Tahminidir</b>, değişkenliği fazladır (gün içinde bile değişebilir).</td><td><b>Kesinlik</b> bildirir, değişkenliği azdır.</td></tr>
-<tr><td><b>Bilim Dalı / Uzman</b></td><td><b>Meteoroloji</b> / <b>Meteorolog</b></td><td><b>Klimatoloji (İklim Bilimi)</b> / <b>Klimatolog</b></td></tr>
-<tr><td><b>Anahtar Kelimeler</b></td><td>“Bugün, yarın, bu hafta, öğleden sonra, sağanak bekleniyor, fırtına uyarısı…”</td><td>“Genellikle, her mevsim, yazları kurak, kışları ılık, yıllık yağış ortalaması…”</td></tr>
-</table>
-
-<h4>Yağış ve Yoğuşma Türleri (Oluşum Yerine Göre)</h4>
-<table class="rt">
-<tr><th>Oluşum Yeri</th><th>Tür</th><th>Oluşum Şekli ve Sıcaklık Koşulu</th></tr>
-<tr><td rowspan="3"><b>Gökyüzünde</b><br>(Atmosferin üst tabakalarında / bulutlarda)</td><td><b>Yağmur</b></td><td>Su buharının soğuk hava tabakasıyla karşılaşıp <b>yoğuşarak</b> (gaz → sıvı) su damlacıkları hâlinde yağmasıdır (0 °C üstü).</td></tr>
-<tr><td><b>Kar</b></td><td>Bulutlardaki su damlacıklarının 0 °C’un altındaki soğuk havayla karşılaşıp <b>buz kristallerine</b> dönüşerek yağmasıdır.</td></tr>
-<tr><td><b>Dolu</b></td><td>Isınarak <b>aniden yükselen</b> su damlacıklarının çok soğuk tabakada <b>aniden donarak</b> buz topları hâlinde düşmesidir.</td></tr>
-<tr><td rowspan="3"><b>Yeryüzüne Yakın</b><br>(Toprak, bitki, araç yüzeyinde veya havada)</td><td><b>Çiy</b></td><td>Gece serinleyen havadaki su buharının (0 °C üstünde) toprak ve yapraklar üzerinde <b>sıvı su damlacıkları</b> şeklinde yoğuşmasıdır.</td></tr>
-<tr><td><b>Kırağı</b></td><td>Çok soğuk gecelerde (0 °C altında) su buharının sıvı hâle geçmeden doğrudan <b>ince buz kristallerine</b> dönüşmesidir (kırağılaşma).</td></tr>
-<tr><td><b>Sis</b></td><td>Yeryüzüne yakın su buharının yoğuşarak veya donarak havada asılı kalan <b>yüzey bulutları</b> oluşturmasıdır (görüş mesafesini düşürür).</td></tr>
-</table>
-
-<h3>5. Basınç Alanları ve Rüzgârın Oluşumu</h3>
-<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Alçak basınç ve yüksek basınç alanlarında hava hareketleri">
-<defs>
-<marker id="arR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
-<marker id="arB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
-<marker id="arW" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker>
-</defs>
-<rect x="20" y="145" width="210" height="28" rx="4" fill="#fca5a5"/>
-<rect x="310" y="145" width="210" height="28" rx="4" fill="#93c5fd"/>
-<text x="125" y="163" font-size="11.5" font-weight="bold" fill="#7f1d1d" text-anchor="middle">ALÇAK BASINÇ (Sıcak Bölge)</text>
-<text x="415" y="163" font-size="11.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">YÜKSEK BASINÇ (Soğuk Bölge)</text>
-<g stroke="#dc2626" stroke-width="2.5" fill="none" marker-end="url(#arR)">
-<path d="M105,135 L105,60"/><path d="M145,135 L145,60"/>
-<path d="M40,138 L92,138"/><path d="M210,138 L158,138"/>
-</g>
-<g stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#arB)">
-<path d="M395,60 L395,135"/><path d="M435,60 L435,135"/>
-<path d="M382,138 L330,138"/><path d="M448,138 L500,138"/>
-</g>
-<path d="M315,112 L225,112" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arW)"/>
-<text x="270" y="102" font-size="12" font-weight="bold" fill="#0f766e" text-anchor="middle">RÜZGÂR (YB → AB)</text>
-<ellipse cx="125" cy="34" rx="52" ry="16" fill="#cbd5e1" stroke="#64748b"/>
-<text x="125" y="38" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">Bulutlu / Yağışlı</text>
-<circle cx="415" cy="34" r="15" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<text x="470" y="38" font-size="10" font-weight="bold" fill="#b45309">Açık / Güneşli</text>
-<g font-size="10" text-anchor="middle">
-<text x="125" y="185">Yükselici hava · Çevreden merkeze</text>
-<text x="415" y="185">Alçalıcı hava · Merkezden çevreye</text>
-</g>
-</svg></div>
-
-<table class="rt">
-<tr><th>Özellik</th><th>Alçak Basınç Alanı (AB)</th><th>Yüksek Basınç Alanı (YB)</th></tr>
-<tr><td><b>Sıcaklık ve Yoğunluk</b></td><td>Hava <b>sıcaktır</b>; genleşir, yoğunluğu (özkütlesi) <b>azalır</b>.</td><td>Hava <b>soğuktur</b>; sıkışır, yoğunluğu (özkütlesi) <b>artar</b>.</td></tr>
-<tr><td><b>Dikey Hava Hareketi</b></td><td><b>Yükselici</b> hava hareketi görülür (yukarı doğru).</td><td><b>Alçalıcı</b> hava hareketi görülür (aşağı doğru).</td></tr>
-<tr><td><b>Yatay Hava Hareketi</b></td><td><b>Çevreden merkeze</b> doğrudur.</td><td><b>Merkezden çevreye</b> doğrudur.</td></tr>
-<tr><td><b>Bulut ve Yağış</b></td><td>Buharlaşma ve nem fazladır; <b>bulutlanma ve yağış ihtimali yüksektir</b>.</td><td>Hava açıktır ve güneşlidir; <b>bulutlanma ve yağış görülmez</b>.</td></tr>
-</table>
-
-<div class="note"><b>LGS Tuzağı 4 (Kelime Benzerliği):</b> “<b>Yüksek</b> basınçta <b>yükselici</b> hava hareketi vardır” ifadesi <b>KESİNLİKLE YANLIŞTIR!</b> Tam tersine: <b>Yüksek</b> basınçta <b>alçalıcı</b>, <b>alçak</b> basınçta <b>yükselici</b> hava hareketi vardır.</div>
+<rect x="10" y="244" width="12" height="12" fill="#2563eb"/><text x="27" y="254" font-size="11">Bu üniteden soru</text>
+<rect x="140" y="244" width="12" height="12" fill="#94a3b8"/><text x="157" y="254" font-size="11">fen-mevsim etiketli ama güncel kazanım dışı</text>
+<rect x="420" y="244" width="12" height="12" fill="#f59e0b"/><text x="437" y="254" font-size="11">toplam</text>
+</svg><figcaption>En çok soru “mevsim ve yarım küre belirleme” alt başlığından gelmiştir (5 soru).</figcaption></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>
+<tr><td>2018</td><td>14</td><td>Deprem / fay hattı (bu ünitenin güncel kazanımları dışında; veride fen-mevsim etiketli)</td><td>Harita yorumlama, hangisi söylenebilir</td></tr>
+<tr><td>2019</td><td>13</td><td>Mevsim ve yarım küre belirleme</td><td>Dünya’nın iki konumu şekli + ocak/temmuz sıcaklık tablosu; ulaşılabilecek yargı</td></tr>
+<tr><td>2020</td><td>9</td><td>İklim – hava olayı</td><td>Haber metni; tek günlük sağanağın hava olayı olduğu</td></tr>
+<tr><td>2020</td><td>10</td><td>Gölge boyu</td><td>Yıllık gölge boyu grafiği → görsel şıklarda Dünya’nın mart/haziran konumu</td></tr>
+<tr><td>2020</td><td>12</td><td>Işın açısı ve birim yüzey enerjisi</td><td>21 Aralık küre şekli, Ekvator’a eşit uzak iki şehir → grafik şıklar</td></tr>
+<tr><td>2021</td><td>10</td><td>Mevsim ve yarım küre belirleme</td><td>Bilgi maddeleri; mevsim belirlemek için gereken bilgiler (hangisi doğru)</td></tr>
+<tr><td>2021</td><td>11</td><td>İklim – hava olayı</td><td>İklim haritası için en uygun veri seçimi</td></tr>
+<tr><td>2022</td><td>9</td><td>Işın açısı ve birim yüzey enerjisi</td><td>Ocak ayı, numaralı bölgeler; “daha eğik ışın alan” eşleştirmesi</td></tr>
+<tr><td>2023</td><td>9</td><td>Mevsim ve yarım küre belirleme</td><td>Dünya–Güneş konum şekli; şehirlerde yaşanan mevsim</td></tr>
+<tr><td>2023</td><td>10</td><td>Gölge boyu</td><td>Temmuz, gölge karşılaştırması → üç küre şeklinden “hangileri olabilir” (I-II-III)</td></tr>
+<tr><td>2023</td><td>11</td><td>İklim – hava olayı</td><td>Üç ifadeden hangileri iklimle ilgilidir (I-II-III)</td></tr>
+<tr><td>2024</td><td>9</td><td>Mevsim ve yarım küre belirleme</td><td>Aynı mevsim ve eşit sıcaklık → “hangileri doğru olabilir” (I-II-III)</td></tr>
+<tr><td>2025</td><td>10</td><td>Mevsim ve yarım küre belirleme</td><td>12 aylık sıcaklık tablosu → yarım küre hangi veriden bulundu</td></tr>
+<tr><td>2026</td><td>8</td><td>Işın açısı ve birim yüzey enerjisi</td><td>Küre üzerinde üç nokta; 21 Haziran / 21 Aralık enerji karşılaştırması</td></tr>
+</table></div>
+<div class="note"><b>Kısa analiz</b><ul>
+<li><b>En çok sorulan alt başlık:</b> Mevsim ve yarım küre belirleme (5 soru: 2019, 2021, 2023, 2024, 2025). Işın açısı/enerji ve iklim–hava olayı üçer soruyla onu izler. Gölge boyu 2 kez, ışın açısıyla birlikte sorulmuştur.</li>
+<li><b>Tipik tuzak:</b> Sıcaklıktan mevsim çıkarmak. Mevsim için tarih ve yarım küre gerekir; sıcaklık Ekvator’a uzaklığa da bağlıdır (2021, 2024). İklim sorularında ise tek günlük olayı iklim saymak (2020, 2023).</li>
+<li><b>Yıllara göre eğilim:</b> 2019–2022 arasında tek doğru şıkkı bulduran şekil ve metin soruları ağırlıktaydı; 2023 ve 2024’te “hangileri olabilir / doğru olabilir” biçiminde I-II-III yargılı sorular, 2025’te 12 aylık tablo okuma, 2026’da küre üzerinde enerji karşılaştırması geldi. 2020 ve 2023’te üniteden 3’er soru gelmiş, diğer yıllarda çoğunlukla 1 soru sorulmuştur.</li>
+<li><b>Görsel oranı:</b> 14 sorunun 9’unda şekil, grafik veya tablo vardır; Dünya–Güneş konum şekli ve küre üzerinde işaretli şehirler en sık kullanılan görseldir.</li>
+</ul></div>
 `,
 qs: [
-{
-  q: `<p>Aşağıdaki Şekil 1’de Dünya üzerinde farklı enlemlerde bulunan K, L, M ve N şehirlerinin konumları, Şekil 2’de ise bu şehirlerden birinde yatay zemine dik yerleştirilen özdeş bir çubuğun yıl boyunca öğle vakti ölçülen gölge boyu değişim grafiği verilmiştir.</p>
+{ lv: "kolay", q: `<p>Bir öğrenci, gazete ve internetten topladığı bazı cümleleri aşağıdaki panoya asmıştır.</p>
+<div class="box"><b>I.</b> Antalya’da yazlar sıcak ve kurak, kışlar ılık ve yağışlı geçer.<br><b>II.</b> Yarın Samsun’da öğleden sonra gök gürültülü sağanak yağış bekleniyor.<br><b>III.</b> Erzurum’da kışlar uzun yıllardır soğuk ve kar yağışlı geçmektedir.</div>
+<p>Bu cümlelerden hangileri <b>iklim</b> ile ilgilidir?</p>`,
+  c: ["I ve III", "Yalnız II", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p><b>İklim</b>, geniş bir bölgede uzun yıllar boyunca görülen hava olaylarının ortalamasıdır; “genellikle, uzun yıllardır, yazlar/kışlar … geçer” gibi ifadelerle anlatılır. <b>Hava olayı</b> ise kısa süreli ve dar alanda görülen durumdur; “bugün, yarın, bu hafta” gibi ifadeler ipucudur.</p>
+<p>I ve III bir bölgenin her yıl tekrar eden genel özelliğini anlatır → iklim ✓. II yalnızca yarına ait bir tahmindir → hava olayı ✗.</p>
+<p>B ✗ II iklim değil hava olayıdır. C ve D ✗ II’yi iklim saydığı için yanlıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Defne, “İklim ve Hava Olayları” konusu için aşağıdaki kavram tablosunu hazırlamıştır.</p>
+<div class="tbl"><table>
+<tr><th>Kavram</th><th>Defne’nin açıklaması</th></tr>
+<tr><td>Meteoroloji</td><td>Hava olaylarını inceleyen bilim dalıdır.</td></tr>
+<tr><td>Klimatolog</td><td>İklim bilimi alanında çalışan uzmandır.</td></tr>
+<tr><td>Hava olayı</td><td>Kısa sürede, dar bir alanda etkili olan atmosfer olaylarıdır.</td></tr>
+<tr><td>İklim</td><td>Bir bölgede bir hafta boyunca görülen hava durumunun ortalamasıdır.</td></tr>
+</table></div>
+<p>Öğretmeni, kavramlardan birinin açıklamasının yanlış olduğunu söylemiştir. Buna göre Defne hangi kavramın açıklamasını düzeltmelidir?</p>`,
+  c: ["Meteoroloji", "Klimatolog", "Hava olayı", "İklim"],
+  a: "D",
+  s: `<p>İklim, bir haftalık değil, geniş bir bölgede <b>uzun yıllar</b> (yaklaşık 30–35 yıl ve daha uzun) boyunca gözlenen hava olaylarının ortalamasıdır. Bir haftalık gözlem ancak hava durumu bilgisi verir. Bu yüzden düzeltilmesi gereken açıklama <b>iklim</b>dir (D ✓).</p>
+<p>A ✓ Hava olaylarını meteoroloji inceler; bu alanda çalışan uzmana meteorolog denir. B ✓ İklim bilimine klimatoloji, uzmanına klimatolog (iklim bilimci) denir. C ✓ Hava olayları kısa süreli ve dar alanda görülür. Bu üç açıklama doğrudur.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir araştırma raporu için Karadeniz Bölgesi’ndeki bir ilimize ait iki farklı veri tablosu hazırlanmıştır.</p>
+<table class="rt">
+<tr><th>Tablo 1: 1985 – 2025 Yılları Ortalaması</th><th>Tablo 2: 19 – 21 Ekim Günlük Tahmin</th></tr>
+<tr><td>• En fazla yağış sonbahar mevsiminde düşer.<br>• Kış ayları ılık, yaz ayları serin geçer.<br>• Yıllık ortalama yağış miktarı 1200 mm’dir.</td><td>• Pazartesi: Öğleden sonra kuvvetli sağanak yağışlı.<br>• Salı: Sabah saatlerinde yoğun sis ve pus bekleniyor.<br>• Çarşamba: Rüzgâr kuzeybatıdan 40 km/sa hızla esecek.</td></tr>
+</table>
+<p>Tablo 1 ve Tablo 2’deki verilerle ilgili aşağıdaki değerlendirmelerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Tablo 1’deki veriler klimatologlar tarafından, Tablo 2’deki veriler ise meteorologlar tarafından hazırlanmıştır.", "Tablo 2’deki tahminlerin birkaç saat içinde değişme olasılığı yüksekken Tablo 1’deki özellikler kolay değişmez.", "Tablo 1’deki veriler oluşturulurken uzun yıllar boyunca kaydedilen Tablo 2 benzeri günlük gözlem sonuçlarının ortalaması alınmıştır.", "Bir bölgede Salı günü yoğun sis görülmesi o bölgenin ikliminin değiştiğini kanıtlar."],
+  a: "D",
+  s: `<p>Tablo 1 <b>iklim</b> (klimatoloji – en az 30-40 yıllık ortalama), Tablo 2 ise <b>hava olayları</b> (meteoroloji – kısa süreli ve değişken tahminler) verilerini içerir (A, B ve C doğrudur).</p>
+<p>Kısa süreli bir hava olayı (bir gün sis görülmesi veya yağmur yağması) o bölgenin <b>ikliminin değiştiğini kanıtlamaz</b>; iklim değişikliğinden söz edebilmek için uzun yıllar süren kalıcı ortalama değişimleri gerekir (<b>D yanlıştır</b>).</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Can, “Dünya Güneş’e yaklaşınca yaz, Güneş’ten uzaklaşınca kış mevsimi yaşanır.” diyor. Öğretmeni, Dünya’nın yörüngesindeki iki konumu gösteren aşağıdaki şekli tahtaya çiziyor.</p>
+<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Dünyanın Güneşe en yakın ve en uzak olduğu konumlar">
+<defs><marker id="orbA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<ellipse cx="280" cy="95" rx="200" ry="62" fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="6 4"/>
+<circle cx="250" cy="95" r="28" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
+<text x="250" y="99" font-size="11" font-weight="bold" fill="#78350f" text-anchor="middle">Güneş</text>
+<circle cx="80" cy="95" r="15" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<circle cx="480" cy="95" r="15" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.6"/>
+<line x1="98" y1="95" x2="219" y2="95" stroke="#334155" stroke-width="1.2" marker-end="url(#orbA)"/>
+<line x1="282" y1="95" x2="462" y2="95" stroke="#334155" stroke-width="1.2" marker-end="url(#orbA)"/>
+<text x="160" y="88" font-size="11" text-anchor="middle">147 milyon km</text>
+<text x="372" y="88" font-size="11" text-anchor="middle">152 milyon km</text>
+<path d="M190,151 Q240,160 290,157" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#orbA)"/>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<text x="80" y="135">3 Ocak</text><text x="80" y="150" font-size="11" font-weight="normal">(Güneş’e en yakın)</text>
+<text x="480" y="135">4 Temmuz</text><text x="480" y="150" font-size="11" font-weight="normal">(Güneş’e en uzak)</text>
+</g>
+<text x="280" y="190" font-size="11" text-anchor="middle" fill="#475569">Şekil ölçeksizdir; yörünge gerçekte çembere çok yakındır.</text>
+</svg></div>
+<p>Buna göre Can’ın düşüncesinin <b>yanlış</b> olduğunu gösteren kanıt aşağıdakilerden hangisidir?</p>`,
+  c: ["Dünya Güneş’e en yakın konumdayken (3 Ocak) Kuzey Yarım Küre’de kış mevsimi yaşanması", "Dünya’nın Güneş etrafındaki bir dolanımını yaklaşık 365 gün 6 saatte tamamlaması", "Dünya’nın kendi ekseni etrafındaki bir dönüşünü yaklaşık 24 saatte tamamlaması", "Güneş’in Dünya’dan çok daha büyük olması"],
+  a: "A",
+  s: `<p>Can’ın düşüncesi doğru olsaydı Dünya Güneş’e en yakınken (3 Ocak) her yerde yaz yaşanırdı. Oysa 3 Ocak’ta <b>Kuzey Yarım Küre’de kış</b>, Güney Yarım Küre’de yaz vardır; Güneş’e en uzak olunan 4 Temmuz’da ise Kuzey Yarım Küre’de yaz yaşanır. Demek ki mevsimlerin nedeni Güneş’e olan uzaklık değil, <b>eksen eğikliği</b> ve Güneş etrafında dolanmadır (A ✓).</p>
+<p>B ✗ yılın uzunluğunu, C ✗ gece ile gündüzün oluşumunu açıklar; D ✗ Güneş’in büyüklüğü de mevsimlerin oluşumuyla ilgili bir kanıt değildir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki Şekil 1’de Dünya’nın Güneş etrafındaki yörüngesinde bulunduğu dört konum (I, II, III, IV), Şekil 2’de ise Dünya bu konumlardan birindeyken K, L ve M şehirlerinde ölçülen gündüz ve gece süreleri sütun grafiğiyle verilmiştir. Şekil 1’de Dünya’nın dolanma yönü oklarla, Kuzey Kutbu kırmızı noktayla gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Yörünge konumları ve gece gündüz sütun grafiği">
+<defs><marker id="q2A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><path d="M52,128 Q80,146 118,150" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#q2A)"/><path d="M238,62 Q210,44 172,40" fill="none" stroke="#475569" stroke-width="1.8" marker-end="url(#q2A)"/><g fill="#dc2626"><circle cx="36" cy="81" r="3.5"/><circle cx="266" cy="81" r="3.5"/><circle cx="151" cy="133" r="3.5"/><circle cx="151" cy="29" r="3.5"/></g><circle cx="210" cy="180" r="3.5" fill="#dc2626"/><text x="217" y="184" font-size="11">Kuzey Kutbu</text><ellipse cx="145" cy="95" rx="115" ry="52" fill="none" stroke="#94a3b8" stroke-dasharray="4 3"/>
+<circle cx="145" cy="95" r="18" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<g stroke="#1e3a8a" stroke-width="1.4">
+<circle cx="30" cy="95" r="13" fill="#93c5fd"/><line x1="24" y1="109" x2="36" y2="81"/>
+<circle cx="260" cy="95" r="13" fill="#93c5fd"/><line x1="254" y1="109" x2="266" y2="81"/>
+<circle cx="145" cy="147" r="13" fill="#93c5fd"/><line x1="139" y1="161" x2="151" y2="133"/>
+<circle cx="145" cy="43" r="13" fill="#93c5fd"/><line x1="139" y1="57" x2="151" y2="29"/>
+</g>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="30" y="125">I</text><text x="145" y="176">II</text><text x="260" y="125">III</text><text x="145" y="21">IV</text>
+<text x="80" y="188">Şekil 1</text>
+</g>
+<line x1="335" y1="150" x2="520" y2="150" stroke="#334155" stroke-width="1.5"/>
+<line x1="335" y1="25" x2="335" y2="150" stroke="#334155" stroke-width="1.5"/>
+<line x1="335" y1="88" x2="520" y2="88" stroke="#94a3b8" stroke-dasharray="4 3"/>
+<text x="330" y="91" font-size="11" text-anchor="end">12 sa</text>
+<text x="330" y="42" font-size="11" text-anchor="end">18 sa</text>
+<text x="330" y="135" font-size="11" text-anchor="end">6 sa</text>
+<rect x="355" y="40" width="16" height="110" fill="#fbbf24"/><rect x="373" y="130" width="16" height="20" fill="#1e3a8a"/>
+<rect x="415" y="88" width="16" height="62" fill="#fbbf24"/><rect x="433" y="88" width="16" height="62" fill="#1e3a8a"/>
+<rect x="475" y="120" width="16" height="30" fill="#fbbf24"/><rect x="493" y="55" width="16" height="95" fill="#1e3a8a"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="372" y="164">K</text><text x="432" y="164">L</text><text x="492" y="164">M</text>
+<text x="428" y="188">Şekil 2</text>
+</g>
+<rect x="355" y="12" width="10" height="10" fill="#fbbf24"/><text x="369" y="21" font-size="11">Gündüz</text>
+<rect x="420" y="12" width="10" height="10" fill="#1e3a8a"/><text x="434" y="21" font-size="11">Gece</text>
+</svg></div>
+<p>K şehrinin <b>Güney Yarım Küre’de</b> olduğu bilindiğine göre aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Şekil 2’deki ölçümler Dünya I numaralı konumdayken yapılmıştır.", "Dünya III konumundan IV konumuna giderken M şehrinde gündüzler uzamaya başlar ancak gece süresi hâlâ gündüz süresinden uzundur.", "L şehrine Güneş ışınları yıl boyunca hep dik açıyla düşer.", "Dünya I konumundayken M şehrinde kış, K şehrinde yaz mevsimi başlar."],
+  a: "B",
+  s: `<p>Şekil 2’de K şehrinde gündüz süresi 18 saat, gece 6 saattir (Gündüz &gt; Gece). K şehri <b>Güney Yarım Küre’de</b> olduğuna göre Güney Yarım Küre’de yaz yaşanmaktadır; yani bu konum Kuzey Kutbu’nun Güneş’ten uzağa eğik olduğu <b>III numaralı konumdur (21 Aralık)</b> (A yanlıştır).</p>
+<p>21 Aralık’ta (III) L şehrinde gece = gündüz (12 saat) olduğundan <b>L Ekvator</b> üzerindedir (Ekvator’a ışınlar yılda yalnızca 2 kez dik düşer, C yanlıştır). M şehrinde ise 21 Aralık’ta gece &gt; gündüz olduğundan <b>M Kuzey Yarım Küre’dedir</b> (D yanlıştır: I konumunda yani 21 Haziran’da M’de yaz başlar).</p>
+<p>Dünya III (21 Aralık) konumundan IV (21 Mart) konumuna giderken Kuzey Yarım Küre’deki M şehrinde en uzun gece geride kalmıştır; <b>gündüzler uzamaya başlar fakat 21 Mart’ta eşitlenene kadar gece süresi hâlâ gündüz süresinden uzundur</b> (<b>B kesinlikle doğru</b>).</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şekilde Dünya’nın Güneş’e göre bir konumu ve Dünya üzerindeki K, L ve M şehirleri gösterilmiştir. L şehri Ekvator üzerindedir.</p>
+<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Kuzey Kutbu Güneşe doğru eğik Dünya ve K, L, M şehirleri">
+<circle cx="-40" cy="110" r="110" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/>
+<text x="22" y="114" font-size="12" font-weight="bold" fill="#92400e">Güneş</text>
+<defs><marker id="sunA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<line x1="95" y1="35" x2="215" y2="35" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="65" x2="215" y2="65" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="95" x2="215" y2="95" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="125" x2="215" y2="125" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="155" x2="215" y2="155" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="185" x2="215" y2="185" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<text x="155" y="214" font-size="11" text-anchor="middle" fill="#92400e">Güneş ışınları</text>
+<circle cx="370" cy="110" r="75" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="332.9" y1="24.7" x2="407.1" y2="195.3" stroke="#334155" stroke-width="1.6" stroke-dasharray="5 3"/>
+<text x="332.9" y="19.7" font-size="11" font-weight="bold" text-anchor="middle">Kuzey</text>
+<text x="407.1" y="209.3" font-size="11" font-weight="bold" text-anchor="middle">Güney</text>
+<line x1="301.2" y1="139.9" x2="438.8" y2="80.1" stroke="#1e3a8a" stroke-width="2"/>
+<text x="444.8" y="84.1" font-size="11" fill="#1e3a8a">Ekvator</text>
+<line x1="295.0" y1="110.0" x2="421.1" y2="55.1" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="427.1" y="59.1" font-size="11" fill="#1e3a8a">Yengeç D.</text>
+<line x1="318.9" y1="164.9" x2="445.0" y2="110.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="451.0" y="114.0" font-size="11" fill="#1e3a8a">Oğlak D.</text>
+<circle cx="348.9" cy="61.4" r="4.5" fill="#dc2626"/>
+<text x="356.9" y="65.4" font-size="12" font-weight="bold" fill="#991b1b">K</text>
+<circle cx="370.0" cy="110.0" r="4.5" fill="#dc2626"/>
+<text x="354.0" y="114.0" font-size="12" font-weight="bold" fill="#991b1b">L</text>
+<circle cx="389.2" cy="154.2" r="4.5" fill="#dc2626"/>
+<text x="397.2" y="158.2" font-size="12" font-weight="bold" fill="#991b1b">M</text>
+</svg></div>
+<p>Dünya bu konumdayken aşağıdakilerden hangisi doğrudur?</p>`,
+  c: ["K şehrinde yaz mevsimi yaşanır.", "M şehrinde gündüz süresi gece süresinden uzundur.", "Güneş ışınları M şehrine K şehrinden daha dik açıyla gelir.", "L şehrinde gece süresi gündüz süresinden uzundur."],
+  a: "A",
+  s: `<p>Şekilde Dünya’nın <b>Kuzey Kutbu Güneş’e doğru eğiktir</b>. Bu durumda ışınlar Kuzey Yarım Küre’ye daha dik gelir: Kuzey Yarım Küre’de <b>yaz</b>, Güney Yarım Küre’de <b>kış</b> yaşanır (21 Haziran konumu).</p>
+<p>A ✓: K Kuzey Yarım Küre’dedir, yaz yaşanır. B ✗: M Güney Yarım Küre’dedir; kış yaşadığı için gece gündüzden uzundur. C ✗: Işınlar kışı yaşayan M’ye değil, yazı yaşayan K’ye daha dik gelir. D ✗: Ekvator’daki L’de yıl boyunca gece ve gündüz yaklaşık eşittir (12’şer saat).</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Eş yükseltideki P ve R şehirlerinde uzun yıllar boyunca ölçülen bazı aylara ait sıcaklık ortalamaları tabloda verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Şehir</th><th>Ocak</th><th>Nisan</th><th>Temmuz</th><th>Ekim</th></tr>
+<tr><td><b>P</b></td><td>24 °C</td><td>18 °C</td><td>9 °C</td><td>17 °C</td></tr>
+<tr><td><b>R</b></td><td>2 °C</td><td>13 °C</td><td>25 °C</td><td>14 °C</td></tr>
+</table></div>
+<p>Buna göre aşağıdakilerden hangisi söylenebilir?</p>`,
+  c: ["P ve R şehirleri aynı yarım kürededir.", "Temmuz ayında P şehrinde yaz mevsimi yaşanır.", "Ocak ayında R şehrinde yaz mevsimi yaşanır.", "P şehri Güney Yarım Küre’de, R şehri Kuzey Yarım Küre’dedir."],
+  a: "D",
+  s: `<p>Kuzey Yarım Küre’de ocak kış, temmuz yaz aylarıdır; Güney Yarım Küre’de mevsimler tam terstir.</p>
+<p>P’de ocak sıcak (24 °C), temmuz soğuk (9 °C) → P <b>Güney</b> Yarım Küre’dedir. R’de ocak soğuk (2 °C), temmuz sıcak (25 °C) → R <b>Kuzey</b> Yarım Küre’dedir (D ✓).</p>
+<p>A ✗ şehirler farklı yarım kürelerdedir. B ✗ temmuzda Güney Yarım Küre’deki P’de kış yaşanır. C ✗ ocakta Kuzey Yarım Küre’deki R’de kış yaşanır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şekilde özdeş üç ışık demetinin (I, II ve III) aynı anda Dünya üzerindeki K, L ve M bölgelerinde aydınlattığı yüzey alanları (S, 2S ve 3S) gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 480 185" width="460" role="img" aria-label="Dünya üzerinde S, 2S ve 3S aydınlanma alanları">
+<g fill="#fef08a" opacity="0.6" stroke="#f59e0b" stroke-width="1.5">
+<polygon points="30,30 198,30 228,55 30,55"/>
+<polygon points="30,85 165,85 170,105 30,105"/>
+<polygon points="30,135 190,135 208,155 30,155"/>
+</g>
+<circle cx="245" cy="95" r="80" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="220" y1="18" x2="270" y2="172" stroke="#1e3a8a" stroke-width="1.5"/>
+<line x1="168" y1="118" x2="322" y2="72" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4 3"/>
+<path d="M198,30 A80,80 0 0,1 228,55" fill="none" stroke="#dc2626" stroke-width="5"/>
+<path d="M165,85 A80,80 0 0,1 170,105" fill="none" stroke="#dc2626" stroke-width="5"/>
+<path d="M190,135 A80,80 0 0,1 208,155" fill="none" stroke="#dc2626" stroke-width="5"/>
+<g font-size="11" font-weight="bold">
+<text x="85" y="47">I. Demet</text><text x="235" y="45" fill="#dc2626">K (3S)</text>
+<text x="85" y="99">II. Demet</text><text x="180" y="99" fill="#dc2626">L (S)</text>
+<text x="85" y="149">III. Demet</text><text x="215" y="152" fill="#dc2626">M (2S)</text>
+<text x="328" y="75" fill="#1e3a8a" font-size="11">Ekvator</text>
+</g>
+</svg></div>
+<p>Buna göre bu konumda K, L ve M bölgeleri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Birim yüzeye düşen ışık enerjisi miktarı arasındaki ilişki K > M > L şeklindedir.", "Görseldeki konum 21 Aralık tarihine aittir ve L bölgesi Oğlak Dönencesi üzerindedir.", "Görseldeki konum 21 Haziran tarihine aittir ve L bölgesinde öğle vakti gölge boyu en kısadır.", "I. ışık demetinin taşıdığı enerji, II. ışık demetinin taşıdığı enerjinin 3 katıdır."],
+  a: "C",
+  s: `<p>Görselde Dünya’nın Kuzey Kutbu Güneş’e (sola) doğru eğiktir ve Ekvator’un kuzeyinde yer alan <b>L bölgesinde</b> aydınlanan alan en dardır (S). Bu durum tarihin <b>21 Haziran</b> olduğunu ve ışınların <b>L’ye (Yengeç Dönencesi)</b> en dik açıyla düştüğünü gösterir.</p>
+<p>Alan daraldıkça (S &lt; 2S &lt; 3S) birim yüzeye düşen enerji artar (E(L) &gt; E(M) &gt; E(K), A yanlıştır) ve öğle vakti gölge boyu en kısa <b>L bölgesinde</b> olur (<b>C doğru</b>). Özdeş demetlerin taşıdığı toplam enerjiler birbirine eşittir (D yanlıştır).</p>
+<p>B ✗: Kuzey Kutbu Güneş’e doğru eğik olduğu için tarih 21 Aralık değil 21 Haziran’dır; L de Oğlak değil Yengeç Dönencesi civarındadır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir araştırmacı özdeş el fenerleri, özdeş termometreler ve özdeş siyah metal levhalar kullanarak aşağıdaki kontrollü deney düzeneğini kuruyor. Başlangıç sıcaklıkları 20 °C olan levhalara fenerler eşit uzaklıktan (15 cm) farklı açılarla 10 dakika boyunca tutuluyor ve son sıcaklıklar grafikteki gibi kaydediliyor.</p>
+<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Fener açısı ve sıcaklık artışı deney düzeneği">
+<g stroke="#475569" stroke-width="3">
+<line x1="20" y1="130" x2="100" y2="130"/>
+<line x1="120" y1="130" x2="205" y2="130"/>
+<line x1="225" y1="130" x2="320" y2="130"/>
+</g>
+<g stroke="#f59e0b" stroke-width="2">
+<line x1="52" y1="35" x2="52" y2="130"/><line x1="68" y1="35" x2="68" y2="130"/>
+<line x1="130" y1="45" x2="160" y2="130"/><line x1="148" y1="45" x2="178" y2="130"/>
+<line x1="225" y1="65" x2="285" y2="130"/><line x1="245" y1="65" x2="305" y2="130"/>
+</g>
+<line x1="52" y1="130" x2="68" y2="130" stroke="#dc2626" stroke-width="6"/>
+<line x1="160" y1="130" x2="178" y2="130" stroke="#f97316" stroke-width="6"/>
+<line x1="285" y1="130" x2="305" y2="130" stroke="#eab308" stroke-width="6"/>
+<g font-size="11" text-anchor="middle">
+<text x="60" y="148" font-weight="bold">I. Levha (90°)</text><text x="60" y="162">Alan: S₁</text>
+<text x="162" y="148" font-weight="bold">II. Levha (60°)</text><text x="162" y="162">Alan: S₂</text>
+<text x="272" y="148" font-weight="bold">III. Levha (30°)</text><text x="272" y="162">Alan: S₃</text>
+</g>
+<line x1="365" y1="140" x2="520" y2="140" stroke="#334155" stroke-width="1.5"/>
+<line x1="365" y1="20" x2="365" y2="140" stroke="#334155" stroke-width="1.5"/>
+<rect x="385" y="35" width="26" height="105" fill="#dc2626"/>
+<rect x="432" y="62" width="26" height="78" fill="#f97316"/>
+<rect x="479" y="95" width="26" height="45" fill="#eab308"/>
+<g font-size="11" text-anchor="middle">
+<text x="398" y="30" font-weight="bold">34 °C</text><text x="398" y="154">I</text>
+<text x="445" y="57" font-weight="bold">29 °C</text><text x="445" y="154">II</text>
+<text x="492" y="90" font-weight="bold">24 °C</text><text x="492" y="154">III</text>
+<text x="445" y="170" font-weight="bold">Son Sıcaklık (°C)</text>
+</g>
+</svg></div>
+<p>Bu deneyle ilgili aşağıdaki çıkarımlardan hangisi <b>yapılamaz</b>?</p>`,
+  c: ["Deneyin bağımsız değişkeni ışınların yüzeye düşme açısı, bağımlı değişkeni ise levhalardaki sıcaklık artışıdır.", "Levhalar üzerinde aydınlanan bölgelerin alanları arasındaki ilişki S₃ > S₂ > S₁ şeklindedir.", "I. fenerin yaydığı toplam ışık enerjisi, III. fenerin yaydığı toplam ışık enerjisinden daha fazladır.", "21 Aralık öğle vakti Oğlak Dönencesi’ndeki bir yer I. levha gibi, Türkiye gibi orta kuşakta bulunan bir yer ise III. levha gibi ışık alır."],
+  a: "C",
+  s: `<p>Deneyde kullanılan el fenerleri <b>özdeştir</b> ve eşit süre (10 dk) açık tutulmuştur; dolayısıyla üç fenerin de <b>yaydığı toplam ışık enerjisi birbirine eşittir</b> (<b>C yanlıştır</b>).</p>
+<p>Sıcaklık artışlarının farklı olmasının nedeni fenerlerin yaydığı toplam enerji değil, ışığın düştüğü yüzey alanının (S₃ &gt; S₂ &gt; S₁) değişmesi ve buna bağlı olarak <b>birim yüzeye düşen enerji miktarının</b> (E₁ &gt; E₂ &gt; E₃) farklı olmasıdır.</p>
+<p>A ✓ Değiştirilen tek etken açıdır (bağımsız değişken), ölçülen sıcaklık artışıdır (bağımlı değişken). B ✓ Işık eğikleştikçe aynı demet daha geniş alana yayılır: S₃ &gt; S₂ &gt; S₁. D ✓ 21 Aralık’ta Oğlak Dönencesi’ne ışınlar 90° ile gelir; yaklaşık 40° K’deki bir yere ise 90° − 40° − 23,5° ≈ 26,5° ile, yani III. levhadaki gibi çok eğik gelir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şekilde Dünya’nın 21 Aralık’taki konumu ile Ekvator’a eşit uzaklıkta ve eş yükseltide bulunan K ve L şehirleri gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="21 Aralık konumunda Dünya ve Ekvatora eşit uzaklıktaki K ve L şehirleri">
+<circle cx="-40" cy="110" r="110" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/>
+<text x="22" y="114" font-size="12" font-weight="bold" fill="#92400e">Güneş</text>
+<defs><marker id="sunA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs>
+<line x1="95" y1="35" x2="215" y2="35" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="65" x2="215" y2="65" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="95" x2="215" y2="95" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="125" x2="215" y2="125" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="155" x2="215" y2="155" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<line x1="95" y1="185" x2="215" y2="185" stroke="#d97706" stroke-width="2" marker-end="url(#sunA)"/>
+<text x="155" y="214" font-size="11" text-anchor="middle" fill="#92400e">Güneş ışınları</text>
+<circle cx="370" cy="110" r="75" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="407.1" y1="24.7" x2="332.9" y2="195.3" stroke="#334155" stroke-width="1.6" stroke-dasharray="5 3"/>
+<text x="407.1" y="19.7" font-size="11" font-weight="bold" text-anchor="middle">Kuzey</text>
+<text x="332.9" y="209.3" font-size="11" font-weight="bold" text-anchor="middle">Güney</text>
+<line x1="301.2" y1="80.1" x2="438.8" y2="139.9" stroke="#1e3a8a" stroke-width="2"/>
+<text x="444.8" y="143.9" font-size="11" fill="#1e3a8a">Ekvator</text>
+<line x1="318.9" y1="55.1" x2="445.0" y2="110.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="451.0" y="114.0" font-size="11" fill="#1e3a8a">Yengeç D.</text>
+<line x1="295.0" y1="110.0" x2="421.1" y2="164.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="427.1" y="168.9" font-size="11" fill="#1e3a8a">Oğlak D.</text>
+<circle cx="387.2" cy="70.5" r="4.5" fill="#dc2626"/>
+<text x="369.2" y="74.5" font-size="12" font-weight="bold" fill="#991b1b">K</text>
+<circle cx="352.8" cy="149.5" r="4.5" fill="#dc2626"/>
+<text x="334.8" y="153.5" font-size="12" font-weight="bold" fill="#991b1b">L</text>
+</svg></div>
+<p>Buna göre 21 Aralık’ta bu şehirlerle ilgili aşağıdakilerden hangisi doğrudur?</p>`,
+  c: ["L şehrine Güneş ışınları K şehrine göre daha dik açıyla gelir.", "K şehrinde yaz mevsimi başlar.", "K ve L şehirlerinde gündüz süreleri birbirine eşittir.", "K şehrinde öğle vakti gölge boyu L şehrindekinden daha kısadır."],
+  a: "A",
+  s: `<p>21 Aralık’ta Kuzey Kutbu Güneş’ten uzağa eğiktir ve ışınlar <b>Oğlak Dönencesi</b>’ne dik gelir. Güney Yarım Küre’de yaz, Kuzey Yarım Küre’de kış başlar.</p>
+<p>A ✓: L Güney Yarım Küre’dedir ve Oğlak Dönencesi’ne daha yakındır; ışınlar L’ye K’ye göre daha dik gelir, L birim yüzeyde daha çok enerji alır.</p>
+<p>B ✗ K’de kış başlar. C ✗ 21 Aralık’ta güneye gidildikçe gündüz uzar; L’de gündüz K’den uzundur. D ✗ Işınlar K’ye daha eğik geldiği için K’de gölge daha uzundur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Samsun’da (yaklaşık 41° K) yaşayan Elif, bahçeye yere dik olarak diktiği 1 m uzunluğundaki çubuğun öğle vakti gölge boyunu dört önemli tarihte ölçerek aşağıdaki grafiği çiziyor.</p>
+<div class="fig"><svg viewBox="0 0 520 210" width="520" role="img" aria-label="Samsunda öğle vakti gölge boyları">
+<line x1="70" y1="175" x2="500" y2="175" stroke="#334155" stroke-width="1.5"/>
+<line x1="70" y1="20" x2="70" y2="175" stroke="#334155" stroke-width="1.5"/>
+<rect x="103.8" y="114.6" width="40" height="60.4" fill="#3b82f6"/>
+<text x="123.8" y="109.6" font-size="11" font-weight="bold" text-anchor="middle">87 cm</text>
+<text x="123.8" y="191" font-size="11" font-weight="bold" text-anchor="middle">21 Mart</text>
+<rect x="211.2" y="152.8" width="40" height="22.2" fill="#3b82f6"/>
+<text x="231.2" y="147.8" font-size="11" font-weight="bold" text-anchor="middle">32 cm</text>
+<text x="231.2" y="191" font-size="11" font-weight="bold" text-anchor="middle">21 Haziran</text>
+<rect x="318.8" y="114.6" width="40" height="60.4" fill="#3b82f6"/>
+<text x="338.8" y="109.6" font-size="11" font-weight="bold" text-anchor="middle">87 cm</text>
+<text x="338.8" y="191" font-size="11" font-weight="bold" text-anchor="middle">23 Eylül</text>
+<rect x="426.2" y="30.0" width="40" height="145.0" fill="#3b82f6"/>
+<text x="446.2" y="25.0" font-size="11" font-weight="bold" text-anchor="middle">209 cm</text>
+<text x="446.2" y="191" font-size="11" font-weight="bold" text-anchor="middle">21 Aralık</text>
+<text x="24" y="102" font-size="11" font-weight="bold" transform="rotate(-90 24 102)" text-anchor="middle">Gölge boyu (cm)</text>
+</svg></div>
+<p>Bu grafiğe göre aşağıdakilerden hangisi doğrudur?</p>`,
+  c: ["Güneş ışınları çubuğa en dik açıyla 21 Aralık’ta gelmiştir.", "21 Mart ve 23 Eylül’de birim yüzeye düşen enerji miktarları farklıdır.", "Bu şehirde yıl içinde öğle vakti gölge boyunun sıfır olduğu bir gün vardır.", "Birim yüzeye düşen Güneş enerjisi en fazla 21 Haziran’da olmuştur."],
+  a: "D",
+  s: `<p>Gölge ne kadar <b>kısa</b> ise ışınlar o kadar <b>dik</b> gelmiştir ve birim yüzeye düşen enerji o kadar <b>fazla</b>dır. En kısa gölge 21 Haziran’dadır (32 cm) → enerji en fazla 21 Haziran’da (D ✓).</p>
+<p>A ✗ 21 Aralık’ta gölge en uzundur (209 cm), ışınlar en eğik gelmiştir. B ✗ 21 Mart ve 23 Eylül’de gölge boyları eşittir, yani ışınlar aynı açıyla gelir ve enerji miktarları eşittir. C ✗ Samsun Yengeç Dönencesi’nin kuzeyindedir; ışınlar buraya hiçbir zaman 90° ile gelmez, gölge hiç sıfır olmaz.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Güney Yarım Küre’de ve Oğlak Dönencesi’nin güneyinde yer alan bir şehirde yaşayan öğrenci, bahçesindeki ağacın öğle vakti gölge boyunu dört önemli tarihte ölçerek aşağıdaki sütun grafiğini çizmiştir. Öğretmeni grafiği incelediğinde <b>iki tarihteki</b> sütunların birbiriyle yanlışlıkla yer değiştirildiğini fark etmiştir.</p>
+<div class="fig"><svg viewBox="0 0 460 180" width="440" role="img" aria-label="Hatalı çizilmiş gölge boyu sütun grafiği">
+<line x1="60" y1="145" x2="430" y2="145" stroke="#334155" stroke-width="1.5"/>
+<line x1="60" y1="20" x2="60" y2="145" stroke="#334155" stroke-width="1.5"/>
+<rect x="95" y="75" width="38" height="70" fill="#3b82f6"/>
+<rect x="180" y="110" width="38" height="35" fill="#3b82f6"/>
+<rect x="265" y="75" width="38" height="70" fill="#3b82f6"/>
+<rect x="350" y="30" width="38" height="115" fill="#3b82f6"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="114" y="70">80 cm</text><text x="114" y="162">21 Mart</text>
+<text x="199" y="105">40 cm</text><text x="199" y="162">21 Haziran</text>
+<text x="284" y="70">80 cm</text><text x="284" y="162">23 Eylül</text>
+<text x="369" y="25">130 cm</text><text x="369" y="162">21 Aralık</text>
+</g>
+<text x="25" y="85" font-size="11" font-weight="bold" transform="rotate(-90 25 85)" text-anchor="middle">Gölge Boyu (cm)</text>
+</svg></div>
+<p>Grafikteki hatanın düzeltilmesi için hangi iki tarihe ait sütunlar yer değiştirmelidir?</p>`,
+  c: ["21 Mart ile 23 Eylül", "21 Haziran ile 21 Aralık", "21 Mart ile 21 Haziran", "23 Eylül ile 21 Aralık"],
+  a: "B",
+  s: `<p>Şehir <b>Güney Yarım Küre’de (Oğlak Dönencesi’nin güneyinde)</b> yer almaktadır. Güney Yarım Küre’de:</p>
+<ul>
+<li><b>21 Aralık:</b> Yaz başlangıcıdır, Güneş ışınları en dik açıyla gelir → Gölge boyu <b>en kısa (40 cm)</b> olmalıdır.</li>
+<li><b>21 Haziran:</b> Kış başlangıcıdır, Güneş ışınları en eğik açıyla gelir → Gölge boyu <b>en uzun (130 cm)</b> olmalıdır.</li>
+</ul>
+<p>Grafikte 21 Haziran (40 cm) ve 21 Aralık (130 cm) ters çizilmiştir; bu iki sütun yer değiştirmelidir.</p>
+<p>21 Mart ve 23 Eylül’de ışınlar Ekvator’a dik gelir; bu iki tarihte şehre ışınlar aynı açıyla geldiği için gölge boyları eşittir (80 cm). Bu yüzden A, C ve D’de eşit ve doğru olan sütunlar bozulmuş olurdu.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir güneş enerjisi mühendisi, güneş panellerinden maksimum verim alabilmek için panel yüzeyine Güneş ışınlarının öğle vakti tam <b>dik (90°)</b> gelmesini sağlayan hareketli bir mekanizma tasarlamıştır. Aşağıdaki görselde sistemin çalışma prensibi, tabloda ise X şehrindeki panelin dört önemli tarihte öğle vakti yatay zeminle yaptığı <b>eğim açısı (α)</b> verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Güneş paneli eğim açısı düzeneği ve tablo">
+<line x1="20" y1="140" x2="230" y2="140" stroke="#475569" stroke-width="3"/>
+<line x1="70" y1="140" x2="175" y2="65" stroke="#1e3a8a" stroke-width="6"/>
+<line x1="145" y1="86" x2="145" y2="140" stroke="#64748b" stroke-width="2.5"/>
+<path d="M110,140 A40,40 0 0,0 102,117" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="118" y="132" font-size="12" font-weight="bold" fill="#dc2626">α</text>
+<g stroke="#f59e0b" stroke-width="2.2">
+<line x1="65" y1="20" x2="105" y2="76"/><line x1="95" y1="15" x2="135" y2="71"/><line x1="125" y1="10" x2="165" y2="66"/>
+</g>
+<rect x="108" y="75" width="9" height="9" fill="none" stroke="#dc2626" stroke-width="1.5" transform="rotate(-35.5 112 79)"/>
+<text x="125" y="158" font-size="11" text-anchor="middle">Panel ışığa dik: ışın açısı + α = 90°</text>
+<g font-size="11">
+<rect x="255" y="20" width="270" height="26" fill="#e2e8f0" stroke="#94a3b8"/>
+<rect x="255" y="46" width="270" height="24" fill="#fff" stroke="#94a3b8"/>
+<rect x="255" y="70" width="270" height="24" fill="#f8fafc" stroke="#94a3b8"/>
+<rect x="255" y="94" width="270" height="24" fill="#fff" stroke="#94a3b8"/>
+<rect x="255" y="118" width="270" height="24" fill="#f8fafc" stroke="#94a3b8"/>
+<line x1="385" y1="20" x2="385" y2="142" stroke="#94a3b8"/>
+<text x="320" y="37" font-weight="bold" text-anchor="middle">Tarih</text>
+<text x="455" y="37" font-weight="bold" text-anchor="middle">Panel Eğim Açısı (α)</text>
+<text x="320" y="62" text-anchor="middle">21 Mart</text><text x="455" y="62" text-anchor="middle">40°</text>
+<text x="320" y="86" text-anchor="middle">21 Haziran</text><text x="455" y="86" text-anchor="middle">16,5°</text>
+<text x="320" y="110" text-anchor="middle">23 Eylül</text><text x="455" y="110" text-anchor="middle">40°</text>
+<text x="320" y="134" text-anchor="middle">21 Aralık</text><text x="455" y="134" text-anchor="middle">63,5°</text>
+</g>
+</svg></div>
+<p>Yalnızca bu verilere göre X şehri ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Güneş ışınlarının yatay zemine en büyük açıyla (73,5°) düştüğü tarih 21 Haziran’dır.", "X şehri Kuzey Yarım Küre’de, Yengeç Dönencesi’nin kuzeyinde (Türkiye gibi orta kuşakta) yer almaktadır.", "21 Aralık’ta Güneş ışınları yatay zemine daha eğik geldiği için panel zemine göre daha dik (63,5°) konumlandırılmıştır.", "Panel eğim açısının (α) en küçük olduğu 21 Haziran’da X şehrindeki cisimlerin öğle vakti gölge boyu sıfır olur."],
+  a: "D",
+  s: `<p>Panel yüzeyine ışınların dik düşmesi için <b>(Güneş ışınlarının yatay zemine geliş açısı) + (Panel eğim açısı α) = 90°</b> olmalıdır:</p>
+<ul>
+<li><b>21 Haziran:</b> α = 16,5° olduğundan ışınların yere geliş açısı = 90° − 16,5° = <b>73,5°</b> (En dik açı → Yaz başlangıcı → Kuzey Yarım Küre).</li>
+<li><b>21 Aralık:</b> α = 63,5° olduğundan ışınların yere geliş açısı = 90° − 63,5° = <b>26,5°</b> (En eğik açı → Kış başlangıcı).</li>
+</ul>
+<p>Gölge boyunun sıfır olması için ışınların yere <b>90°</b> açıyla gelmesi (yani panelin yere tamamen paralel olup α = 0° olması) gerekirdi. α = 16,5° olduğu için ışınlar 90° ile gelmemiştir; gölge boyu en kısa değerindedir ancak <b>sıfır olmaz</b>.</p>
+<p>Diğer ifadeler doğrudur: A ✓ 21 Haziran’da ışınlar 90° − 16,5° = 73,5° ile en dik gelir. B ✓ En dik geliş 21 Haziran’da olduğundan şehir Kuzey Yarım Küre’dedir; 21 Mart’ta ışınlar 90° − 40° = 50° ile geldiğinden şehir yaklaşık 40° K enlemindedir, yani Yengeç Dönencesi’nin kuzeyindedir. C ✓ 21 Aralık’ta ışınlar 90° − 63,5° = 26,5° ile en eğik gelir; panelin ışığa dik durması için daha çok kaldırılması gerekir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aynı gün ölçülen gündüz ve gece süreleri, şehirlerin konumlarıyla birlikte aşağıdaki tabloda verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Şehir</th><th>Konumu</th><th>Gündüz süresi</th><th>Gece süresi</th></tr>
+<tr><td><b>K</b></td><td>40° Kuzey</td><td>12 saat</td><td>12 saat</td></tr>
+<tr><td><b>L</b></td><td>Ekvator (0°)</td><td>12 saat</td><td>12 saat</td></tr>
+<tr><td><b>M</b></td><td>35° Güney</td><td>12 saat</td><td>12 saat</td></tr>
+</table></div>
+<p>Buna göre bu ölçümler aşağıdaki tarihlerin hangisinde yapılmış olabilir?</p>`,
+  c: ["23 Eylül", "21 Haziran", "21 Aralık", "4 Temmuz"],
+  a: "A",
+  s: `<p>Farklı yarım kürelerdeki şehirlerde aynı gün gece ve gündüzün eşit olması, Güneş ışınlarının <b>Ekvator’a dik</b> geldiği ekinoks tarihlerinde (21 Mart ve 23 Eylül) olur. Bu tarihlerde aydınlanma çemberi kutuplardan geçer ve bütün paralelleri ikiye böler; her yerde 12 saat gündüz, 12 saat gece yaşanır (A ✓).</p>
+<p>B ✗ 21 Haziran’da Kuzey Yarım Küre’deki K’de gündüz, Güney’deki M’de gece daha uzundur. C ✗ 21 Aralık’ta durum tam tersidir. D ✗ 4 Temmuz’da da Kuzey Yarım Küre’de gündüzler geceden uzundur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki Şekil 1’de Dünya üzerinde farklı enlemlerde bulunan K, L, M ve N şehirlerinin konumları, Şekil 2’de ise bu şehirlerden birinde yatay zemine dik yerleştirilen özdeş bir çubuğun yıl boyunca öğle vakti ölçülen gölge boyu değişim grafiği verilmiştir.</p>
 <div class="fig"><svg viewBox="0 0 540 185" width="520" role="img" aria-label="Dünya üzerinde K L M N şehirleri ve gölge boyu grafiği">
 <circle cx="110" cy="95" r="78" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
 <line x1="32" y1="95" x2="188" y2="95" stroke="#1e3a8a" stroke-width="2"/>
@@ -188,33 +955,414 @@ qs: [
 <line x1="39" y1="128" x2="181" y2="128" stroke="#1e3a8a" stroke-dasharray="4 3"/>
 <g fill="#dc2626"><circle cx="95" cy="40" r="4.5"/><circle cx="130" cy="62" r="4.5"/><circle cx="105" cy="78" r="4.5"/><circle cx="120" cy="128" r="4.5"/></g>
 <g font-size="11" font-weight="bold"><text x="80" y="43">K</text><text x="138" y="59">L</text><text x="88" y="82">M</text><text x="130" y="125">N</text></g>
-<g font-size="9.5" fill="#1e3a8a"><text x="192" y="65">23°27′ K (Yengeç)</text><text x="192" y="98">0° (Ekvator)</text><text x="192" y="131">23°27′ G (Oğlak)</text></g>
+<g font-size="11" fill="#1e3a8a"><text x="192" y="65">Yengeç D.</text><text x="192" y="98">Ekvator</text><text x="192" y="131">Oğlak D.</text></g>
 <text x="110" y="182" font-size="11" font-weight="bold" text-anchor="middle">Şekil 1</text>
 <line x1="320" y1="150" x2="525" y2="150" stroke="#334155" stroke-width="1.5"/>
 <line x1="320" y1="20" x2="320" y2="150" stroke="#334155" stroke-width="1.5"/>
 <polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="335,105 368,150 392,125 416,150 450,105 495,45"/>
 <g stroke="#94a3b8" stroke-dasharray="3 2"><line x1="335" y1="105" x2="335" y2="150"/><line x1="392" y1="125" x2="392" y2="150"/><line x1="450" y1="105" x2="450" y2="150"/><line x1="495" y1="45" x2="495" y2="150"/></g>
-<g font-size="9.5" text-anchor="middle">
+<g font-size="11" text-anchor="middle">
 <text x="335" y="163">21 Mar</text><text x="392" y="163">21 Haz</text><text x="450" y="163">23 Eyl</text><text x="495" y="163">21 Ara</text>
 </g>
-<text x="313" y="153" font-size="10" text-anchor="end">0</text>
-<text x="298" y="85" font-size="10" transform="rotate(-90 298 85)" text-anchor="middle">Gölge boyu (cm)</text>
+<text x="313" y="153" font-size="11" text-anchor="end">0</text>
+<text x="298" y="85" font-size="11" transform="rotate(-90 298 85)" text-anchor="middle">Gölge boyu (cm)</text>
 <text x="425" y="182" font-size="11" font-weight="bold" text-anchor="middle">Şekil 2</text>
 </svg></div>
 <p>Buna göre Şekil 2’deki grafik hangi şehre aittir ve bu şehirlerle ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Grafik L şehrine aittir; L şehrinde 21 Haziran’da birim yüzeye düşen enerji yılın en büyük değerindedir.`,
-    `Grafik M şehrine aittir; K şehrinde öğle vakti gölge boyu yıl boyunca hiçbir zaman sıfır olmaz.`,
-    `Grafik M şehrine aittir; 21 Aralık tarihinde N şehrindeki gündüz süresi K şehrindekinden daha kısadır.`,
-    `Grafik N şehrine aittir; L ve N şehirlerine Güneş ışınları yılda ikişer kez dik açıyla düşer.`
-  ],
+  c: ["Grafik L şehrine aittir; L şehrinde 21 Haziran’da birim yüzeye düşen enerji yılın en büyük değerindedir.", "Grafik M şehrine aittir; K şehrinde öğle vakti gölge boyu yıl boyunca hiçbir zaman sıfır olmaz.", "Grafik M şehrine aittir; 21 Aralık tarihinde N şehrindeki gündüz süresi K şehrindekinden daha kısadır.", "Grafik N şehrine aittir; L ve N şehirlerine Güneş ışınları yılda ikişer kez dik açıyla düşer."],
   a: "B",
   s: `<p>Şekil 2’deki grafikte gölge boyu <b>21 Mart ile 21 Haziran arasında bir kez</b> ve <b>21 Haziran ile 23 Eylül arasında bir kez</b> olmak üzere yılda toplam <b>2 kez sıfır</b> olmuştur. Ayrıca gölge boyu 21 Aralık’ta en uzundur. Bu durum şehrin <b>Ekvator ile Yengeç Dönencesi arasında</b> (Kuzey Yarım Küre’de) yer aldığını gösterir → <b>M şehri</b>.</p>
-<p>K şehri Yengeç Dönencesi’nin kuzeyindedir (dönenceler dışındadır); bu nedenle K’ye Güneş ışınları hiçbir zaman 90° açıyla düşmez ve gölge boyu asla sıfır olmaz (<b>B doğru</b>). C yanlıştır: 21 Aralık’ta Güney Yarım Küre’deki N’de yaz yaşanır, gündüz süresi K’den uzundur. D yanlıştır: Dönenceler üzerindeki L ve N’ye ışınlar yılda yalnızca 1 kez dik düşer.</p>`
-},
-{
-  q: `<p>Özdeş cam borular, özdeş mumlar ve buz kalıpları kullanılarak rüzgâr oluşumunu gözlemlemek amacıyla aşağıdaki I, II ve III numaralı deney düzenekleri kuruluyor. Cam boruların tam ortasına serbestçe hareket edebilen özdeş tüy parçaları konuluyor.</p>
-<div class="fig"><svg viewBox="0 0 540 195" width="520" role="img" aria-label="Üç farklı cam boru ve mum deneyi düzeneği">
+<p>K şehri Yengeç Dönencesi’nin kuzeyindedir (dönenceler dışındadır); bu nedenle K’ye Güneş ışınları hiçbir zaman 90° açıyla düşmez ve gölge boyu asla sıfır olmaz (<b>B doğru</b>). C yanlıştır: 21 Aralık’ta Güney Yarım Küre’deki N’de yaz yaşanır, gündüz süresi K’den uzundur. D yanlıştır: Dönenceler üzerindeki L ve N’ye ışınlar yılda yalnızca 1 kez dik düşer.</p>
+<p>A ✗: Grafik L’ye değil M’ye aittir; ayrıca Yengeç Dönencesi’ndeki L’nin gölgesi 21 Haziran’da sıfır olur, grafikteki gibi yılda iki kez sıfırlanmaz.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şekilde Dünya’nın üç farklı tarihteki konumunda Güneş ışınlarının geliş yönü ve <b>aydınlanma çemberinin</b> (gece ile gündüzü ayıran sınırın) uzanışı gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Üç farklı tarihte aydınlanma çemberi">
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="90" y="18">I. Görünüm</text><text x="270" y="18">II. Görünüm</text><text x="450" y="18">III. Görünüm</text>
+</g>
+<circle cx="90" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M90,33 A55,55 0 0,1 90,143 Z" fill="#1e293b" opacity="0.75"/>
+<line x1="68" y1="38" x2="112" y2="138" stroke="#dc2626" stroke-width="2"/>
+<line x1="40" y1="110" x2="140" y2="66" stroke="#1e3a8a" stroke-dasharray="3 2"/>
+<circle cx="270" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M270,33 A55,55 0 0,1 270,143 Z" fill="#1e293b" opacity="0.75"/>
+<line x1="270" y1="33" x2="270" y2="143" stroke="#dc2626" stroke-width="2"/>
+<line x1="215" y1="88" x2="325" y2="88" stroke="#1e3a8a" stroke-dasharray="3 2"/>
+<circle cx="450" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
+<path d="M450,33 A55,55 0 0,1 450,143 Z" fill="#1e293b" opacity="0.75"/>
+<line x1="472" y1="38" x2="428" y2="138" stroke="#dc2626" stroke-width="2"/>
+<line x1="400" y1="66" x2="500" y2="110" stroke="#1e3a8a" stroke-dasharray="3 2"/>
+<g font-size="11" text-anchor="middle" fill="#334155">
+<text x="90" y="158">Kuzey Kutbu aydınlıkta</text>
+<text x="270" y="158">Sınır kutuplardan geçer</text>
+<text x="450" y="158">Güney Kutbu aydınlıkta</text>
+</g>
+</svg></div>
+<p>Güneş ışınlarının üç görünümde de <b>soldan</b> geldiği bilindiğine göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["I. görünüm 21 Aralık tarihine aittir ve Türkiye’de en uzun gündüz yaşanır.", "II. görünümde Güneş ışınları yalnızca Yengeç ve Oğlak Dönencelerine dik düşer.", "I. görünümden II. görünüme geçilirken Kuzey Yarım Küre’de gündüz süreleri kısalır ancak gündüz süresi hâlâ gece süresinden uzundur.", "III. görünümde Kuzey Yarım Küre’den Güney Yarım Küre’ye doğru gidildikçe gece süresi uzar."],
+  a: "C",
+  s: `<p>Güneş ışınları soldan gelirken:</p>
+<ul>
+<li><b>I. Görünüm:</b> Kuzey Kutbu Güneş’e dönük ve tamamen aydınlıktır → <b>21 Haziran</b> (A yanlıştır).</li>
+<li><b>II. Görünüm:</b> Aydınlanma çemberi tam kutup noktalarından geçerek Ekvator ve tüm paralelleri eşit bölmüştür → <b>21 Mart veya 23 Eylül (Ekinoks)</b>. Bu tarihte ışınlar <b>Ekvator’a</b> dik düşer (B yanlıştır).</li>
+<li><b>III. Görünüm:</b> Güney Kutbu tamamen aydınlıktır → <b>21 Aralık</b>. Bu tarihte güneye gidildikçe gündüz süresi uzar, gece süresi kısalır (D yanlıştır).</li>
+</ul>
+<p>I. görünümden (21 Haziran) II. görünüme (23 Eylül) geçilirken Kuzey Yarım Küre’de gündüzler 15 saatten 12 saate doğru <b>kısalır</b> fakat 23 Eylül’e kadar <b>gündüz süresi hâlâ gece süresinden uzundur</b> (<b>C doğru</b>).</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir sınıfta öğrenciler mevsimlerle ilgili şu konuşmayı yapıyor:</p>
+<div class="dialog"><div><b>Ece:</b> Termometre bugün 30 °C gösteriyor; demek ki burada kesinlikle yaz mevsimi yaşanıyor.</div><div><b>Arda:</b> Bence yalnızca sıcaklığa bakarak mevsime karar veremeyiz. Ekvator’a yakın yerler kışın bile sıcak olabilir.</div></div>
+<p>Arda haklıdır. Buna göre bir şehirde yaşanan mevsimi kesin olarak belirleyebilmek için aşağıdaki bilgilerden hangisinin birlikte bilinmesi gerekir?</p>`,
+  c: ["Şehrin o günkü sıcaklığı ve yağış miktarı", "Şehrin Ekvator’a uzaklığı ve deniz seviyesinden yüksekliği", "Tarih ve şehrin o günkü sıcaklığı", "Tarih ve şehrin bulunduğu yarım küre"],
+  a: "D",
+  s: `<p>Mevsimler, Dünya’nın eksen eğikliği ve Güneş etrafında dolanması sonucu oluşur. Aynı tarihte iki yarım kürede <b>zıt</b> mevsimler yaşanır. Bu yüzden mevsimi kesin bilmek için <b>tarih</b> ve şehrin <b>hangi yarım kürede</b> olduğu birlikte bilinmelidir (D ✓). Örneğin 15 Ocak’ta Kuzey Yarım Küre’deki bir şehirde kış yaşanır.</p>
+<p>A ✗ ve C ✗: Sıcaklık, Ekvator’a uzaklık ve yükselti gibi etkenlere de bağlıdır; sıcak bir gün yaz olduğunu kanıtlamaz. B ✗: Ekvator’a uzaklık ve yükselti sıcaklığı etkiler ama tarih bilinmeden mevsim söylenemez.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Dünya’nın Güneş etrafındaki yörüngesinde 1, 2, 3 ve 4 numaralı zaman aralıkları ile Dünya üzerindeki X (Yengeç Dönencesi) ve Y (Ekvator) noktaları aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 500 185" width="480" role="img" aria-label="Yörünge aralıkları 1 2 3 4 ve Dünya üzerindeki X Y noktaları">
+<ellipse cx="155" cy="92" rx="120" ry="58" fill="none" stroke="#64748b" stroke-width="1.8"/>
+<circle cx="155" cy="92" r="20" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<g stroke="#1e3a8a" stroke-width="1.4">
+<circle cx="35" cy="92" r="13" fill="#93c5fd"/><line x1="29" y1="106" x2="41" y2="78"/>
+<circle cx="275" cy="92" r="13" fill="#93c5fd"/><line x1="269" y1="106" x2="281" y2="78"/>
+<circle cx="155" cy="150" r="13" fill="#93c5fd"/><line x1="149" y1="164" x2="161" y2="136"/>
+<circle cx="155" cy="34" r="13" fill="#93c5fd"/><line x1="149" y1="48" x2="161" y2="20"/>
+</g>
+<g font-size="11" font-weight="bold" fill="#dc2626">
+<text x="75" y="142">1. Aralık</text><text x="215" y="142">2. Aralık</text>
+<text x="215" y="52">3. Aralık</text><text x="75" y="52">4. Aralık</text>
+</g>
+<g font-size="11" text-anchor="middle">
+<text x="35" y="120">21 Haz</text><text x="155" y="177">23 Eyl</text><text x="275" y="120">21 Ara</text><text x="155" y="15">21 Mar</text>
+</g>
+<circle cx="405" cy="92" r="55" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="350" y1="92" x2="460" y2="92" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="355" y1="68" x2="455" y2="68" stroke="#1e3a8a" stroke-dasharray="4 2"/>
+<circle cx="405" cy="68" r="4" fill="#dc2626"/><text x="413" y="65" font-size="11" font-weight="bold">X (23°27′ K)</text>
+<circle cx="405" cy="92" r="4" fill="#dc2626"/><text x="413" y="106" font-size="11" font-weight="bold">Y (0°)</text>
+</svg></div>
+<p>Dünya’nın numaralandırılmış yörünge aralıklarındaki hareketi sırasında X ve Y noktalarında gerçekleşen değişimlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["1. aralıkta X noktasında öğle vakti gölge boyu sürekli azalırken Y noktasında sürekli artar.", "4. aralıkta (21 Mart → 21 Haziran) Y noktasında öğle vakti gölge boyu büyürken X noktasında sıfıra doğru küçülür.", "2. ve 3. aralıklarda Y noktasında gündüz süresi önce kısalır, sonra uzar.", "X noktasında 3. aralık boyunca gündüz süresi gece süresinden uzundur."],
+  a: "B",
+  s: `<p><b>4. aralık (21 Mart → 21 Haziran):</b></p>
+<ul>
+<li>21 Mart’ta Güneş ışınları <b>Y (Ekvator)</b> noktasına dik (90°) düşmektedir (Y’de gölge = 0, X’te gölge &gt; 0).</li>
+<li>Dünya 21 Mart’tan 21 Haziran’a ilerlerken dik gelen ışınlar Ekvator’dan (Y) <b>Yengeç Dönencesi’ne (X)</b> doğru kayar.</li>
+<li>Bu süreçte <b>Y noktasında</b> ışınlar eğikleştiği için gölge boyu sıfırdan başlayarak <b>büyür</b>; <b>X noktasında</b> ise ışınlar dikleştiği için gölge boyu küçülerek 21 Haziran’da <b>sıfır</b> olur (<b>B doğru</b>).</li>
+</ul>
+<p>A yanlıştır: 1. aralıkta (21 Haz → 23 Eyl) diklik X’ten Y’ye kayar; X’te gölge artar, Y’de azalır. C yanlıştır: Ekvator’da (Y) gündüz süresi yıl boyu değişmez (hep 12 saat). D yanlıştır: 3. aralıkta (21 Ara → 21 Mar) KYK’deki X’te kış yaşanır, gece &gt; gündüzdür.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda P, R ve S şehirlerinde <b>21 Mart, 21 Haziran ve 21 Aralık</b> tarihlerinde ölçülen gündüz süreleri (saat) verilmiştir.</p>
+<table class="rt">
+<tr><th>Şehir</th><th>21 Mart</th><th>21 Haziran</th><th>21 Aralık</th></tr>
+<tr><td><b>P</b></td><td>12 saat</td><td>19 saat</td><td>5 saat</td></tr>
+<tr><td><b>R</b></td><td>12 saat</td><td>14 saat</td><td>10 saat</td></tr>
+<tr><td><b>S</b></td><td>12 saat</td><td>9 saat</td><td>15 saat</td></tr>
+</table>
+<p>Tablodaki verilere göre P, R ve S şehirlerinin Dünya üzerindeki konumları aşağıdakilerin hangisinde doğru gösterilmiştir?</p>`,
+  c: ["P ve R Kuzey Yarım Küre’de (P kutba daha yakın); S Güney Yarım Küre’de", "P ve R Güney Yarım Küre’de (P Ekvator’a daha yakın); S Kuzey Yarım Küre’de", "P Kuzey Yarım Küre’de; R Ekvator üzerinde; S Güney Yarım Küre’de", "P ve S Kuzey Yarım Küre’de; R Güney Yarım Küre’de"],
+  a: "A",
+  s: `<p>Tablodaki verileri analiz edelim:</p>
+<ul>
+<li><b>21 Haziran</b>’da gündüz süresi 12 saatten uzun olan <b>P (19 sa)</b> ve <b>R (14 sa)</b> şehirleri <b>Kuzey Yarım Küre’dedir</b>.</li>
+<li>Ekvator’dan kutuplara doğru gidildikçe gece–gündüz süresi farkı artar (21 Haziran’da kuzeye gidildikçe gündüz uzar). P’de gündüz 19 saat, R’de 14 saat olduğundan <b>P şehri Kuzey Kutbu’na R’den daha yakındır</b> (Ekvator’a daha uzaktır).</li>
+<li><b>S şehrinde</b> ise 21 Aralık’ta gündüz 15 saat, 21 Haziran’da 9 saat olduğundan S şehri <b>Güney Yarım Küre’dedir</b>.</li>
+</ul>
+<p>Buna göre doğru konumlandırma <b>A</b> seçeneğindedir.</p>
+<p>B ✗: 21 Haziran’da gündüzü 12 saatten uzun olan P ve R Kuzey Yarım Küre’dedir. C ✗: R’de gündüz süresi yıl içinde değiştiği için R Ekvator’da değildir (Ekvator’da her gün 12 saat). D ✗: S, 21 Haziran’da 9 saatlik gündüz yaşadığı için Güney Yarım Küre’dedir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki grafikte Dünya üzerindeki X, Y ve Z şehirlerinde yıl boyunca birim yüzeye düşen ortalama Güneş enerjisi miktarının aylara göre değişimi gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 215" width="500" role="img" aria-label="X, Y ve Z şehirlerinde birim yüzeye düşen enerjinin yıl içindeki değişimi">
+<line x1="55" y1="180" x2="475" y2="180" stroke="#334155" stroke-width="1.5"/>
+<line x1="55" y1="30" x2="55" y2="180" stroke="#334155" stroke-width="1.5"/>
+<g stroke="#cbd5e1" stroke-dasharray="3 3">
+<line x1="146.9" y1="30" x2="146.9" y2="180"/>
+<line x1="248.1" y1="30" x2="248.1" y2="180"/>
+<line x1="351.5" y1="30" x2="351.5" y2="180"/>
+<line x1="449.4" y1="30" x2="449.4" y2="180"/>
+</g>
+<polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="60.0,152.9 65.5,151.2 71.0,149.1 76.5,146.4 82.0,143.2 87.5,139.6 93.0,135.7 98.5,131.4 104.0,126.8 109.5,121.9 115.0,117.0 120.5,111.9 126.0,106.7 131.5,101.5 137.0,96.5 142.5,91.5 148.0,86.7 153.5,82.1 159.0,77.7 164.5,73.6 170.0,69.9 175.5,66.4 181.0,63.2 186.5,60.4 192.0,57.9 197.5,55.7 203.0,53.8 208.5,52.1 214.0,50.8 219.5,49.6 225.0,48.8 230.5,48.1 236.0,47.6 241.5,47.3 247.0,47.2 252.5,47.3 258.0,47.6 263.5,48.0 269.0,48.7 274.5,49.5 280.0,50.6 285.5,51.9 291.0,53.5 296.5,55.4 302.0,57.6 307.5,60.1 313.0,62.9 318.5,66.0 324.0,69.4 329.5,73.2 335.0,77.2 340.5,81.5 346.0,86.1 351.5,90.9 357.0,95.8 362.5,100.9 368.0,106.1 373.5,111.2 379.0,116.3 384.5,121.3 390.0,126.2 395.5,130.8 401.0,135.1 406.5,139.2 412.0,142.8 417.5,146.0 423.0,148.7 428.5,151.0 434.0,152.7 439.5,153.9 445.0,154.5 450.5,154.6 456.0,154.0 461.5,153.0"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="2.5" points="60.0,47.8 65.5,48.3 71.0,49.1 76.5,50.1 82.0,51.3 87.5,52.7 93.0,54.5 98.5,56.5 104.0,58.8 109.5,61.5 115.0,64.5 120.5,67.7 126.0,71.3 131.5,75.2 137.0,79.4 142.5,83.9 148.0,88.6 153.5,93.5 159.0,98.5 164.5,103.6 170.0,108.8 175.5,113.9 181.0,119.0 186.5,123.9 192.0,128.6 197.5,133.1 203.0,137.3 208.5,141.1 214.0,144.5 219.5,147.5 225.0,150.0 230.5,152.0 236.0,153.4 241.5,154.3 247.0,154.6 252.5,154.4 258.0,153.5 263.5,152.2 269.0,150.3 274.5,147.8 280.0,144.9 285.5,141.6 291.0,137.8 296.5,133.7 302.0,129.2 307.5,124.5 313.0,119.6 318.5,114.5 324.0,109.4 329.5,104.2 335.0,99.1 340.5,94.1 346.0,89.2 351.5,84.5 357.0,80.0 362.5,75.8 368.0,71.8 373.5,68.2 379.0,64.8 384.5,61.8 390.0,59.2 395.5,56.8 401.0,54.7 406.5,52.9 412.0,51.4 417.5,50.2 423.0,49.2 428.5,48.4 434.0,47.8 439.5,47.4 445.0,47.2 450.5,47.2 456.0,47.4 461.5,47.7"/>
+<polyline fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="6 3" points="60.0,55.1 65.5,54.4 71.0,53.4 76.5,52.3 82.0,51.1 87.5,49.7 93.0,48.2 98.5,46.7 104.0,45.3 109.5,43.8 115.0,42.5 120.5,41.3 126.0,40.3 131.5,39.5 137.0,38.9 142.5,38.6 148.0,38.5 153.5,38.7 159.0,39.1 164.5,39.8 170.0,40.7 175.5,41.8 181.0,43.0 186.5,44.4 192.0,45.8 197.5,47.3 203.0,48.8 208.5,50.2 214.0,51.6 219.5,52.8 225.0,53.8 230.5,54.7 236.0,55.3 241.5,55.7 247.0,55.8 252.5,55.7 258.0,55.4 263.5,54.8 269.0,53.9 274.5,52.9 280.0,51.7 285.5,50.4 291.0,49.0 296.5,47.5 302.0,46.0 307.5,44.6 313.0,43.2 318.5,41.9 324.0,40.8 329.5,39.9 335.0,39.2 340.5,38.7 346.0,38.5 351.5,38.6 357.0,38.9 362.5,39.4 368.0,40.2 373.5,41.2 379.0,42.4 384.5,43.7 390.0,45.1 395.5,46.5 401.0,48.0 406.5,49.5 412.0,50.9 417.5,52.2 423.0,53.3 428.5,54.3 434.0,55.0 439.5,55.5 445.0,55.8 450.5,55.8 456.0,55.6 461.5,55.1"/>
+<g font-size="11" text-anchor="middle">
+<text x="66" y="196">Ocak</text>
+<text x="146.9" y="196" font-weight="bold">21 Mart</text>
+<text x="248.1" y="196" font-weight="bold">21 Haz</text>
+<text x="351.5" y="196" font-weight="bold">23 Eyl</text>
+<text x="449.4" y="196" font-weight="bold">21 Ara</text>
+</g>
+<text x="22" y="105" font-size="11" font-weight="bold" transform="rotate(-90 22 105)" text-anchor="middle">Birim yüzey enerjisi</text>
+<line x1="90" y1="14" x2="115" y2="14" stroke="#dc2626" stroke-width="2.5"/><text x="120" y="18" font-size="11" font-weight="bold">X şehri</text>
+<line x1="210" y1="14" x2="235" y2="14" stroke="#2563eb" stroke-width="2.5"/><text x="240" y="18" font-size="11" font-weight="bold">Y şehri</text>
+<line x1="330" y1="14" x2="355" y2="14" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="6 3"/><text x="360" y="18" font-size="11" font-weight="bold">Z şehri</text>
+<text x="470" y="210" font-size="11" text-anchor="end">Zaman</text>
+</svg></div>
+<p>Grafikteki verilere göre X, Y ve Z şehirleriyle ilgili aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["X ve Y şehirleri aynı yarım kürede, farklı enlemlerde yer almaktadır.", "Z şehri Ekvator üzerinde olup yıl boyunca gece ve gündüz süreleri birbirine eşittir.", "21 Haziran’da Y şehrindeki öğle vakti gölge boyu, X şehrindekinden daha kısadır.", "21 Mart’tan 21 Haziran’a kadar geçen sürede Y şehrinde gündüzler uzarken X şehrinde kısalır."],
+  a: "B",
+  s: `<p>Grafikte:</p>
+<ul>
+<li><b>X şehri (Kırmızı):</b> Birim yüzeye düşen enerji <b>21 Haziran</b>’da maksimum, 21 Aralık’ta minimumdur → <b>Kuzey Yarım Küre</b>.</li>
+<li><b>Y şehri (Mavi):</b> Birim yüzeye düşen enerji <b>21 Aralık</b>’ta maksimum, 21 Haziran’da minimumdur → <b>Güney Yarım Küre</b> (A yanlıştır).</li>
+<li><b>Z şehri (Yeşil):</b> Birim yüzeye düşen enerji tam <b>21 Mart ve 23 Eylül</b>’de (ekinokslarda) en üst değere ulaşmakta ve yıl boyu yüksek seyretmektedir → <b>Ekvator</b> üzerindedir ve Ekvator’da yıl boyunca gece–gündüz eşittir (<b>B doğru</b>).</li>
+</ul>
+<p>C yanlıştır: 21 Haziran’da X’e ışınlar daha dik geldiği için X’te gölge daha kısadır. D yanlıştır: 21 Mart – 21 Haziran arasında KYK’deki X’te gündüzler uzar, GYK’deki Y’de kısalır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>K şehrinde yaşayan Kerem, 21 Aralık günü uçakla önce L şehrine, birkaç gün sonra da M şehrine seyahat ediyor. Kerem’in seyahat rotası Şekil 1’de, gittiği şehirlerde aynı saatte (öğle vakti) kendi boyunun gölge uzunluğunu ölçerek çizdiği grafik ise Şekil 2’de verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Kerem'in K L M seyahat rotası ve gölge boyu grafiği">
+<circle cx="115" cy="90" r="75" fill="#e0f2fe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="40" y1="90" x2="190" y2="90" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="47" y1="58" x2="183" y2="58" stroke="#1e3a8a" stroke-dasharray="4 3"/>
+<line x1="47" y1="122" x2="183" y2="122" stroke="#1e3a8a" stroke-dasharray="4 3"/>
+<g fill="#dc2626"><circle cx="100" cy="42" r="4.5"/><circle cx="130" cy="90" r="4.5"/><circle cx="110" cy="122" r="4.5"/></g>
+<path d="M100,42 Q125,65 130,90 Q125,110 110,122" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="3 2"/>
+<g font-size="11" font-weight="bold"><text x="83" y="45">K</text><text x="140" y="86">L</text><text x="92" y="126">M</text></g>
+<g font-size="11" fill="#1e3a8a"><text x="195" y="61">Yengeç Dön.</text><text x="195" y="93">Ekvator</text><text x="195" y="125">Oğlak Dön.</text></g>
+<text x="115" y="172" font-size="11" font-weight="bold" text-anchor="middle">Şekil 1 (21 Aralık)</text>
+<line x1="325" y1="145" x2="510" y2="145" stroke="#334155" stroke-width="1.5"/>
+<line x1="325" y1="25" x2="325" y2="145" stroke="#334155" stroke-width="1.5"/>
+<rect x="350" y="40" width="28" height="105" fill="#64748b"/>
+<rect x="410" y="95" width="28" height="50" fill="#64748b"/>
+<circle cx="484" cy="145" r="4" fill="#dc2626"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="364" y="160">K</text><text x="424" y="160">L</text><text x="484" y="160">M</text>
+<text x="484" y="135" fill="#dc2626">0 cm</text>
+<text x="420" y="172">Şekil 2 (Öğle Vakti Gölge Boyu)</text>
+</g>
+<text x="308" y="85" font-size="11" transform="rotate(-90 308 85)" text-anchor="middle">Gölge boyu</text>
+</svg></div>
+<p>Buna göre Kerem’in K → L → M yolculuğu boyunca yaşadığı değişimlerle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Yolculuk boyunca gittiği şehirlerde ölçülen gündüz süresi sürekli artmıştır (M > L > K).", "M şehri Oğlak Dönencesi üzerindedir ve 21 Aralık’ta Güneş ışınlarını 90° açıyla almıştır.", "Kerem aynı yolculuğu 21 Haziran’da yapsaydı gölge boyu yine M şehrinde en kısa olurdu.", "K şehrinden L şehrine gittiğinde kış mevsiminden gece–gündüz eşitliğinin yaşandığı kuşağa geçmiştir."],
+  a: "C",
+  s: `<p>21 Aralık’ta Güneş ışınları <b>Oğlak Dönencesi’ne (M)</b> dik (90°) gelir; bu yüzden M’de öğle vakti gölge oluşmaz (0 cm) ve kuzeyden güneye (K → L → M) gidildikçe gündüz süresi kesintisiz artar (A, B ve D doğrudur).</p>
+<p>Ancak <b>21 Haziran</b>’da Güneş ışınları Yengeç Dönencesi’ne dik gelir; bu tarihte Güney Yarım Küre’deki M şehrinde kış başlar ve ışınlar M’ye oldukça eğik düşer. Dolayısıyla 21 Haziran’da gölge boyu M’de en kısa değil, K’ye göre çok daha uzun olurdu (<b>C yanlıştır</b>).</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Aynı boylam (meridyen) üzerinde yer alan K, L ve M şehirlerinde <b>21 Haziran</b> günü öğle vakti Güneş’in ufuk düzlemi üzerindeki konumu (geliş açısı) aşağıda modellenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="K L M şehirlerinde Güneş'in ufuk düzlemi üzerindeki açısı">
+<g stroke="#334155" stroke-width="2" fill="none">
+<line x1="20" y1="115" x2="160" y2="115"/><path d="M40,115 A50,50 0 0,1 140,115" stroke-dasharray="3 2"/>
+<line x1="200" y1="115" x2="340" y2="115"/><path d="M220,115 A50,50 0 0,1 320,115" stroke-dasharray="3 2"/>
+<line x1="380" y1="115" x2="520" y2="115"/><path d="M400,115 A50,50 0 0,1 500,115" stroke-dasharray="3 2"/>
+</g>
+<line x1="90" y1="115" x2="90" y2="40" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="270" y1="115" x2="318" y2="62" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="450" y1="115" x2="515" y2="90" stroke="#f59e0b" stroke-width="2.5"/>
+<circle cx="90" cy="40" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="318" cy="62" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="515" cy="90" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="104" y="105" fill="#dc2626">90°</text><text x="90" y="135">K Şehri</text>
+<text x="298" y="108" fill="#dc2626">50°</text><text x="270" y="135">L Şehri</text>
+<text x="488" y="110" fill="#dc2626">22°</text><text x="450" y="135">M Şehri</text>
+</g>
+</svg></div>
+<p>M şehrinin <b>Güney Yarım Küre’de</b> olduğu bilindiğine göre,</p>
+<p>I. K şehri Yengeç Dönencesi üzerindedir.<br>
+II. 21 Haziran’da özdeş bir cismin öğle vakti gölge boyu en uzun M şehrindedir.<br>
+III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
+<p>ifadelerinden hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Tarih <b>21 Haziran</b>’dır:</p>
+<ul>
+<li>K şehrinde Güneş ışınları ufuk düzlemine <b>90°</b> açıyla gelmiştir. 21 Haziran’da ışınların 90° ile düştüğü tek yer <b>Yengeç Dönencesi</b>’dir (<b>I kesinlikle doğru</b>).</li>
+<li>Geliş açıları 90° (K) &gt; 50° (L) &gt; 22° (M) olduğundan ışınların en eğik geldiği M şehrinde gölge boyu en uzundur (<b>II kesinlikle doğru</b>).</li>
+<li><b>III (Dikkat, tuzak!):</b> 21 Haziran’da Yengeç Dönencesi’ne (23,5° K) 90° ile gelen ışınlar, hem Yengeç Dönencesi’nin 40° kuzeyindeki (63,5° K) bir yere hem de 40° güneyindeki (16,5° G – Güney Yarım Küre!) bir yere <b>50°</b> açıyla gelir. Dolayısıyla L şehri Kuzey Yarım Küre’de olabileceği gibi Güney Yarım Küre’de (Ekvator ile Oğlak Dönencesi arasında) de olabilir; <b>kesin değildir</b>.</li>
+</ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Atmosferdeki su buharının yoğuşması veya kırağılaşmasıyla oluşan hava olaylarını, oluştukları yere ve sıcaklığa göre sınıflandırmak için aşağıdaki tanılayıcı dallanmış ağaç hazırlanmıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 200" width="540" role="img" aria-label="Su buharından oluşan hava olayları için dallanmış ağaç">
+<rect x="160" y="8" width="240" height="30" rx="5" fill="#e2e8f0" stroke="#475569"/>
+<text x="280" y="28" font-size="12" font-weight="bold" text-anchor="middle">Atmosferdeki su buharı</text>
+<line x1="220" y1="38" x2="140" y2="62" stroke="#475569" stroke-width="1.5"/>
+<line x1="340" y1="38" x2="420" y2="62" stroke="#475569" stroke-width="1.5"/>
+<rect x="40" y="62" width="200" height="30" rx="4" fill="#dbeafe" stroke="#1e3a8a"/>
+<rect x="320" y="62" width="200" height="30" rx="4" fill="#fef3c7" stroke="#b45309"/>
+<text x="140" y="82" font-size="11" font-weight="bold" text-anchor="middle">Gökyüzünde (bulutlarda)</text>
+<text x="420" y="82" font-size="11" font-weight="bold" text-anchor="middle">Yeryüzüne yakın yüzeylerde</text>
+<line x1="100" y1="92" x2="75" y2="122" stroke="#475569" stroke-width="1.5"/>
+<line x1="180" y1="92" x2="205" y2="122" stroke="#475569" stroke-width="1.5"/>
+<line x1="380" y1="92" x2="355" y2="122" stroke="#475569" stroke-width="1.5"/>
+<line x1="460" y1="92" x2="485" y2="122" stroke="#475569" stroke-width="1.5"/>
+<rect x="15" y="122" width="120" height="66" rx="4" fill="#f8fafc" stroke="#64748b"/>
+<rect x="145" y="122" width="120" height="66" rx="4" fill="#f8fafc" stroke="#64748b"/>
+<rect x="295" y="122" width="120" height="66" rx="4" fill="#f8fafc" stroke="#64748b"/>
+<rect x="425" y="122" width="120" height="66" rx="4" fill="#f8fafc" stroke="#64748b"/>
+<g font-size="11" text-anchor="middle">
+<text x="75" y="140">Sıvı damlalar</text><text x="75" y="155">(0 °C üstü)</text>
+<text x="205" y="140">Yükselen damlalar</text><text x="205" y="155">aniden donar</text>
+<text x="355" y="140">Yüzeyde damlalar</text><text x="355" y="155">(0 °C üstü)</text>
+<text x="485" y="140">Yüzeyde buz</text><text x="485" y="155">kristali (0 °C altı)</text>
+</g>
+<g font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">
+<text x="75" y="178">( K )</text><text x="205" y="178">( L )</text><text x="355" y="178">( M )</text><text x="485" y="178">( N )</text>
+</g>
+</svg></div>
+<p>Şemada K, L, M ve N harfleriyle gösterilen kutulara aşağıdakilerden hangisi yazılmalıdır?</p>`,
+  c: ["K: Yağmur — L: Dolu — M: Çiy — N: Kırağı", "K: Çiy — L: Kar — M: Yağmur — N: Kırağı", "K: Yağmur — L: Kar — M: Kırağı — N: Çiy", "K: Sis — L: Dolu — M: Çiy — N: Kar"],
+  a: "A",
+  s: `<p>Oluşum yeri ve sıcaklık koşullarına göre:</p>
+<ul>
+<li><b>K (Gökyüzünde, 0 °C üstü sıvı damlacık):</b> <b>Yağmur</b></li>
+<li><b>L (Gökyüzünde, ani yükselen hava hareketiyle donan buz topları):</b> <b>Dolu</b></li>
+<li><b>M (Yeryüzüne yakın, 0 °C üstü yaprak/cisim üzerinde su damlacıkları):</b> <b>Çiy</b></li>
+<li><b>N (Yeryüzüne yakın, 0 °C altında doğrudan buz kristallerine dönüşüm):</b> <b>Kırağı</b></li>
+</ul>
+<p>Doğru eşleştirme <b>A</b> seçeneğindedir.</p>
+<p>B ✗ çiy gökyüzünde değil yüzeylerde oluşur; C ✗ kar ani yükselimle oluşan buz topu değildir, kırağı ile çiy de yer değiştirmiştir; D ✗ sis havada asılı kalan damlacıklardır, kar ise yüzeyde değil bulutlarda oluşur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki grafikte 1960–2025 yılları arasında atmosferdeki karbondioksit (CO₂) derişimi (ppm) ile küresel yüzey sıcaklığı ortalamasının 1960 yılına göre değişimi bir arada verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 540 185" width="520" role="img" aria-label="Karbondioksit ve küresel sıcaklık artışı grafiği">
+<line x1="55" y1="150" x2="455" y2="150" stroke="#334155" stroke-width="1.5"/>
+<line x1="55" y1="20" x2="55" y2="150" stroke="#334155" stroke-width="1.5"/>
+<line x1="455" y1="20" x2="455" y2="150" stroke="#334155" stroke-width="1.5"/>
+<polyline fill="none" stroke="#1e3a8a" stroke-width="2.5" points="70,135 130,122 190,108 250,90 310,70 370,50 435,28"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 2" points="70,130 130,134 190,115 250,102 310,82 370,62 435,35"/>
+<g font-size="11" text-anchor="middle">
+<text x="70" y="165">1960</text><text x="154" y="165">1975</text><text x="238" y="165">1990</text><text x="322" y="165">2005</text><text x="435" y="165">2025</text>
+</g>
+<g font-size="11" fill="#1e3a8a" text-anchor="end"><text x="50" y="138">315</text><text x="50" y="85">365</text><text x="50" y="32">425</text></g>
+<g font-size="11" fill="#dc2626"><text x="460" y="138">0,0 °C</text><text x="460" y="85">+0,6 °C</text><text x="460" y="32">+1,2 °C</text></g>
+<text x="15" y="85" font-size="11" font-weight="bold" fill="#1e3a8a" transform="rotate(-90 15 85)" text-anchor="middle">CO₂ Miktarı (ppm)</text>
+<text x="528" y="85" font-size="11" font-weight="bold" fill="#dc2626" transform="rotate(-90 528 85)" text-anchor="middle">Sıcaklık Farkı</text>
+</svg></div>
+<p>Grafikteki veriler ve küresel iklim değişikliği dikkate alındığında aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Atmosferdeki CO₂ miktarının artması, yeryüzünden yansıyan ısı enerjisinin uzaya kaçmasını engelleyerek sera etkisini güçlendirmiştir.", "Fosil yakıt tüketiminin azaltılıp ormanlık alanların artırılması grafikteki her iki eğrinin artış hızını yavaşlatabilir.", "Küresel sıcaklık artışı sonucunda kutup buzullarının erimesi, kıyı ekosistemlerinin sular altında kalması ve ekstrem hava olaylarının artması beklenir.", "Grafikteki sıcaklık artışının temel nedeni, son 65 yılda Dünya’nın dönme ekseni eğikliğinin artmasıdır."],
+  a: "D",
+  s: `<p>Grafikte atmosferdeki CO₂ miktarı 315 ppm’den 425 ppm’e çıkarken küresel ortalama sıcaklığın da +1,2 °C arttığı görülmektedir. Bu durum insan kaynaklı (fosil yakıtlar, sanayileşme, ormansızlaşma) <b>sera etkisi ve küresel ısınmanın</b> sonucudur (A, B ve C doğrudur).</p>
+<p>Son 65 yıldaki bu hızlı ısınmanın nedeni Dünya’nın eksen eğikliğinin değişmesi <b>değildir</b> (<b>D söylenemez</b>).</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Mevcut durumda Dünya’nın dönme ekseni yörünge düzlemine göre <b>23° 27′</b> eğiktir ve bu nedenle Yengeç ile Oğlak Dönenceleri 23° 27′ enlemlerinden, Kutup Daireleri ise 66° 33′ enlemlerinden geçmektedir. Bir bilim insanı, Dünya’nın eksen eğikliğinin 23° 27′ yerine <b>40°</b> olduğu varsayımsal bir model hazırlıyor.</p>
+<div class="fig"><svg viewBox="0 0 500 165" width="480" role="img" aria-label="23.5 derece ve 40 derece eksen eğikliği karşılaştırması">
+<circle cx="130" cy="82" r="62" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<line x1="105" y1="18" x2="155" y2="146" stroke="#dc2626" stroke-width="2"/>
+<line x1="68" y1="82" x2="192" y2="82" stroke="#1e3a8a" stroke-dasharray="4 2"/>
+<text x="130" y="158" font-size="11" font-weight="bold" text-anchor="middle">Mevcut Durum (Eğiklik: 23° 27′)</text>
+<circle cx="370" cy="82" r="62" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<line x1="325" y1="28" x2="415" y2="136" stroke="#dc2626" stroke-width="2"/>
+<line x1="308" y1="82" x2="432" y2="82" stroke="#b45309" stroke-dasharray="4 2"/>
+<text x="370" y="158" font-size="11" font-weight="bold" text-anchor="middle">Varsayımsal Model (Eğiklik: 40°)</text>
+</svg></div>
+<p>Dünya’nın eksen eğikliği 40° olsaydı Türkiye (36°–42° Kuzey paralelleri) ve Dünya genelinde aşağıdakilerden hangisi <b>gerçekleşirdi</b>?</p>`,
+  c: ["Güneş ışınlarının dik gelebildiği alan daralır ve Türkiye’ye ışınlar yine hiçbir zaman dik gelmezdi.", "Dönenceler 40° Kuzey ve 40° Güney enlemlerinden geçer; Türkiye’nin bir kısmına Güneş ışınları dik açıyla düşebilirdi.", "Türkiye’de yaz ve kış mevsimleri arasındaki yıllık sıcaklık farkı azalırdı.", "Ekvator’dan kutuplara gidildikçe gece ve gündüz süreleri arasındaki fark azalırdı."],
+  a: "B",
+  s: `<p>Dönencelerin derecesi doğrudan <b>eksen eğikliği açısına</b> eşittir:</p>
+<ul>
+<li>Eksen eğikliği <b>40°</b> olsaydı Yengeç Dönencesi <b>40° K</b>, Oğlak Dönencesi <b>40° G</b> paralelinden geçerdi (Kutup daireleri ise 90° − 40° = 50° enlemlerine inerdi).</li>
+<li>Böylece Güneş ışınlarının dik gelebildiği kuşak <b>genişler</b> ve 36°–42° K arasında yer alan Türkiye’nin 36°–40° K arasındaki şehirlerine Güneş ışınları yılda 2 kez (40° K’ye 1 kez) <b>dik açıyla düşebilirdi</b> (<b>B doğru</b>, A yanlıştır).</li>
+<li>Eğiklik arttığında yazlar çok daha sıcak, kışlar çok daha soğuk olur (yıllık sıcaklık farkı ve gece–gündüz süresi farkı <b>artar</b>, C ve D yanlıştır).</li>
+</ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir kıyı kasabasında yer alan Kara (X) ve Deniz (Y) bölgelerinin aynı gün içindeki 24 saatlik sıcaklık değişim grafiği aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 500 200" width="480" role="img" aria-label="Kara ve deniz 24 saatlik sıcaklık değişim grafiği">
+<line x1="55" y1="160" x2="475" y2="160" stroke="#334155" stroke-width="1.5"/>
+<line x1="55" y1="20" x2="55" y2="160" stroke="#334155" stroke-width="1.5"/>
+<path d="M70,135 Q130,145 170,105 Q250,20 330,105 Q380,145 450,138" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M70,100 Q130,110 170,105 Q250,80 330,105 Q380,112 450,102" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6 3"/>
+<g stroke="#94a3b8" stroke-dasharray="3 3">
+<line x1="170" y1="105" x2="170" y2="160"/>
+<line x1="250" y1="52" x2="250" y2="160"/>
+<line x1="330" y1="105" x2="330" y2="160"/>
+</g>
+<circle cx="170" cy="105" r="4" fill="#1e293b"/><circle cx="330" cy="105" r="4" fill="#1e293b"/>
+<g font-size="11" text-anchor="middle">
+<text x="70" y="175">00.00</text><text x="170" y="175" font-weight="bold">08.00 (t₁)</text><text x="250" y="175" font-weight="bold">14.00</text><text x="330" y="175" font-weight="bold">20.00 (t₂)</text><text x="450" y="175">24.00</text>
+<text x="265" y="193" font-weight="bold">Saatler</text>
+</g>
+<text x="20" y="90" font-size="11" font-weight="bold" transform="rotate(-90 20 90)" text-anchor="middle">Sıcaklık (°C)</text>
+<line x1="330" y1="25" x2="355" y2="25" stroke="#dc2626" stroke-width="2.5"/><text x="360" y="29" font-size="11">Kara (X)</text>
+<line x1="330" y1="42" x2="355" y2="42" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="5 2"/><text x="360" y="46" font-size="11">Deniz (Y)</text>
+</svg></div>
+<p>Grafiğe göre bu kıyı kasabasında gerçekleşen hava olayları ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["08.00 ile 20.00 saatleri arasında rüzgârın yönü X bölgesinden (Kara) Y bölgesine (Deniz) doğrudur.", "Saat 14.00’te Y bölgesinde (Deniz) yükselici hava hareketi görülürken X bölgesinde alçalıcı hava hareketi görülür.", "Saat 00.00 – 08.00 aralığında X bölgesi yüksek basınç alanıdır ve rüzgâr X’ten Y’ye doğru eser.", "t₁ (08.00) ve t₂ (20.00) anlarında X ve Y bölgeleri arasındaki rüzgâr hızı en yüksek değerine ulaşır."],
+  a: "C",
+  s: `<p>Grafik incelendiğinde:</p>
+<ul>
+<li><b>00.00 – 08.00 arası (Gece):</b> Kara (X) sıcaklığı Deniz (Y) sıcaklığından düşüktür. Soğuk olan <b>X (Kara) Yüksek Basınç (YB)</b>, ılık olan <b>Y (Deniz) Alçak Basınç (AB)</b> alanıdır. Rüzgâr YB’den AB’ye yani <b>X’ten Y’ye (karadan denize)</b> doğru eser (<b>C doğru</b>).</li>
+<li><b>08.00 – 20.00 arası (Gündüz):</b> Kara (X) daha sıcaktır (AB), Deniz (Y) daha serindir (YB). Rüzgâr <b>Y’den X’e (denizden karaya)</b> eser (A ve B yanlıştır).</li>
+<li><b>t₁ ve t₂ anları:</b> İki bölgenin sıcaklığı eşitlendiği için basınç farkı sıfırlanır ve <b>rüzgâr durur</b> (D yanlıştır).</li>
+</ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şekilde birbirine komşu K ve L bölgelerinde gerçekleşen dikey ve yatay yönlü hava hareketleri oklarla modellenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 480 175" width="460" role="img" aria-label="K ve L bölgelerinde dikey ve yatay hava hareketleri">
+<defs><marker id="q6A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs>
+<rect x="30" y="135" width="170" height="26" rx="4" fill="#cbd5e1" stroke="#475569"/>
+<rect x="280" y="135" width="170" height="26" rx="4" fill="#cbd5e1" stroke="#475569"/>
+<text x="115" y="153" font-size="13" font-weight="bold" text-anchor="middle">K Bölgesi</text>
+<text x="365" y="153" font-size="13" font-weight="bold" text-anchor="middle">L Bölgesi</text>
+<g stroke="#1e293b" stroke-width="2.2" fill="none" marker-end="url(#q6A)">
+<line x1="100" y1="35" x2="100" y2="120"/><line x1="130" y1="35" x2="130" y2="120"/>
+<line x1="350" y1="120" x2="350" y2="35"/><line x1="380" y1="120" x2="380" y2="35"/>
+<line x1="205" y1="125" x2="275" y2="125"/>
+<line x1="85" y1="125" x2="35" y2="125"/>
+<line x1="445" y1="125" x2="395" y2="125"/>
+<line x1="335" y1="30" x2="145" y2="30"/>
+</g>
+</svg></div>
+<p>Bu modele göre K ve L bölgeleri ile ilgili,</p>
+<p>I. K bölgesinde yüksek basınç alanı oluşmuştur ve hava hareketi merkezden çevreye doğrudur.<br>
+II. L bölgesinde bulutlanma ve yağış görülme ihtimali K bölgesine göre daha fazladır.<br>
+III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu ise L bölgesinden düşüktür.</p>
+<p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Şekilde K bölgesinde oklar <b>aşağı doğru (alçalıcı hava hareketi)</b> ve yerde <b>merkezden çevreye</b> doğrudur; bu durum K’nin soğuk ve <b>Yüksek Basınç (YB)</b> alanı olduğunu gösterir (<b>I doğru</b>).</p>
+<p>L bölgesinde ise oklar <b>yukarı doğru (yükselici hava hareketi)</b> ve yerde <b>çevreden merkeze</b> doğrudur; L sıcak ve <b>Alçak Basınç (AB)</b> alanıdır. Yükselen nemli hava soğuyarak bulut ve yağış oluşturur (<b>II doğru</b>).</p>
+<p>III yanlıştır: K bölgesi soğuk olduğu için sıcaklığı L’den <b>düşük</b>, tanecikler birbirine yakın olduğu için hava yoğunluğu L’den <b>fazladır</b>.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci rüzgârın oluşumunu modellemek için ön yüzü cam olan bir kutunun üstüne iki baca yerleştiriyor. I. bacanın tam altına yanan bir mum koyuyor, II. bacanın ağzına ise dumanı tüten bir tütsü tutuyor. Bir süre sonra tütsü dumanının II. bacadan aşağı inip kutunun içinde mumun olduğu tarafa ilerlediğini ve I. bacadan yukarı çıktığını gözlemliyor.</p>
+<div class="fig"><svg viewBox="0 0 560 215" width="560" role="img" aria-label="İki bacalı kutu ile rüzgâr modeli">
+<defs><marker id="smA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="120" y="80" width="320" height="105" fill="#f1f5f9" stroke="#334155" stroke-width="2"/>
+<rect x="165" y="20" width="36" height="62" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<rect x="355" y="20" width="36" height="62" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<rect x="167" y="78" width="32" height="5" fill="#f1f5f9"/><rect x="357" y="78" width="32" height="5" fill="#f1f5f9"/>
+<rect x="176" y="150" width="14" height="34" fill="#fca5a5" stroke="#b91c1c"/>
+<ellipse cx="183" cy="142" rx="5" ry="8" fill="#f59e0b"/>
+<line x1="440" y1="8" x2="398" y2="22" stroke="#78350f" stroke-width="3"/>
+<circle cx="398" cy="22" r="3" fill="#ef4444"/>
+<path d="M373,10 L373,120" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 4" fill="none" marker-end="url(#smA)"/>
+<path d="M365,135 L215,135" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 4" fill="none" marker-end="url(#smA)"/>
+<path d="M183,115 L183,8" stroke="#64748b" stroke-width="2.5" stroke-dasharray="6 4" fill="none" marker-end="url(#smA)"/>
+<g font-size="12" font-weight="bold">
+<text x="110" y="45" text-anchor="end">I. baca</text>
+<text x="405" y="60">II. baca</text>
+<text x="200" y="178">Mum</text>
+<text x="448" y="14">Tütsü</text>
+</g>
+<text x="280" y="205" font-size="11" text-anchor="middle" fill="#475569">Kesikli oklar: tütsü dumanının izlediği yol</text>
+</svg></div>
+<p>Bu deneyin doğadaki rüzgâr oluşumuyla ilişkilendirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?</p>`,
+  c: ["Mumun bulunduğu I. bacanın altı yüksek basınç alanını, II. bacanın altı alçak basınç alanını temsil eder.", "I. bacada ısınan havanın yoğunluğu arttığı için bu bacada alçalıcı hava hareketi görülür.", "Kutu içindeki duman hareketi, rüzgârın soğuk ve yüksek basınçlı bölgeden sıcak ve alçak basınçlı bölgeye doğru esmesini modeller.", "Mum söndürülüp kutu içindeki sıcaklık farkı ortadan kalkarsa duman daha hızlı hareket eder."],
+  a: "C",
+  s: `<p>Mum, I. bacanın altındaki havayı ısıtır. Isınan hava genleşir, yoğunluğu azalır ve <b>yükselir</b> (yükselici hava hareketi); burası <b>alçak basınç</b> alanı gibidir. II. bacanın altındaki hava daha soğuktur, yoğunluğu fazladır ve <b>alçalır</b>; burası <b>yüksek basınç</b> alanı gibidir.</p><p>Kutunun içinde hava (ve onu gösteren duman) II. bacanın altından I. bacanın altına, yani yüksek basınçtan alçak basınca doğru yatay hareket eder. Doğada bu yatay hava hareketine <b>rüzgâr</b> denir (C ✓).</p><p>A ✗: Sıcak olan I. bacanın altı alçak basınç, soğuk II. bacanın altı yüksek basınçtır. B ✗: Isınan havanın yoğunluğu <b>azalır</b> ve hava yükselir. D ✗: Sıcaklık farkı ortadan kalkarsa basınç farkı da kalkar; duman hareketi yavaşlar, sonunda durur.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Birbirine komşu K, L ve M şehirlerinin arasına rüzgâr hızını ölçen özdeş iki anemometre yerleştirilmiştir. Bir süre sonra 1. anemometrenin K’den L’ye doğru <b>dakikada 40 tur</b>, 2. anemometrenin ise M’den L’ye doğru <b>dakikada 90 tur</b> döndüğü gözlemleniyor.</p>
+<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="K L M bölgeleri arasında anemometreler">
+<defs><marker id="rgA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker></defs>
+<rect x="20" y="95" width="120" height="30" rx="4" fill="#93c5fd"/>
+<rect x="200" y="95" width="120" height="30" rx="4" fill="#fca5a5"/>
+<rect x="380" y="95" width="120" height="30" rx="4" fill="#60a5fa"/>
+<g font-size="13" font-weight="bold" text-anchor="middle">
+<text x="80" y="115">K Bölgesi</text><text x="260" y="115">L Bölgesi</text><text x="440" y="115">M Bölgesi</text>
+</g>
+<line x1="170" y1="55" x2="170" y2="95" stroke="#475569" stroke-width="3"/><circle cx="170" cy="55" r="14" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<line x1="350" y1="55" x2="350" y2="95" stroke="#475569" stroke-width="3"/><circle cx="350" cy="55" r="14" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M135,32 L205,32" stroke="#0f766e" stroke-width="2.5" marker-end="url(#rgA)"/>
+<path d="M385,32 L315,32" stroke="#0f766e" stroke-width="3.5" marker-end="url(#rgA)"/>
+<g font-size="11" font-weight="bold" text-anchor="middle" fill="#0f766e">
+<text x="170" y="22">1. Anemometre (40 tur/dk)</text>
+<text x="350" y="22">2. Anemometre (90 tur/dk)</text>
+</g>
+</svg></div>
+<p>Buna göre K, L ve M bölgelerinin hava sıcaklıkları (T) ve açık hava basınçları (P) arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["Sıcaklık: T(L) > T(K) > T(M)  —  Basınç: P(M) > P(K) > P(L)", "Sıcaklık: T(M) > T(K) > T(L)  —  Basınç: P(L) > P(K) > P(M)", "Sıcaklık: T(L) > T(M) > T(K)  —  Basınç: P(K) > P(M) > P(L)", "Sıcaklık: T(K) > T(L) > T(M)  —  Basınç: P(M) > P(L) > P(K)"],
+  a: "A",
+  s: `<p>Her iki rüzgâr da <b>L bölgesine doğru</b> (K → L ve M → L) esmektedir. Rüzgâr yüksek basınçtan alçak basınca doğru estiği için <b>en düşük basınç P(L)</b> ve <b>en yüksek sıcaklık T(L)</b> L bölgesindedir.</p>
+<p>2. anemometre (90 tur/dk), 1. anemometreden (40 tur/dk) daha hızlı döndüğüne göre <b>M ile L arasındaki basınç ve sıcaklık farkı, K ile L arasındakinden daha büyüktür</b>. Dolayısıyla M’nin basıncı K’den daha yüksek (<b>P(M) &gt; P(K) &gt; P(L)</b>), sıcaklığı ise K’den daha düşüktür (<b>T(L) &gt; T(K) &gt; T(M)</b>).</p>
+<p>B ✗ ve D ✗: Rüzgâr L’ye doğru estiği için L en sıcak ve basıncı en düşük bölgedir; bu seçeneklerde L en soğuk ya da basıncı yüksek gösterilmiştir. C ✗: M–L arasındaki rüzgâr daha hızlı olduğundan M’nin basıncı K’ninkinden büyük olmalıdır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Özdeş cam borular, özdeş mumlar ve buz kalıpları kullanılarak rüzgâr oluşumunu gözlemlemek amacıyla aşağıdaki I, II ve III numaralı deney düzenekleri kuruluyor. Cam boruların tam ortasına serbestçe hareket edebilen özdeş tüy parçaları konuluyor.</p>
+<div class="fig"><svg viewBox="0 0 540 222" width="520" role="img" aria-label="Üç farklı cam boru ve mum deneyi düzeneği">
 <g font-size="11" font-weight="bold">
 <text x="20" y="38">I. Düzenek</text><text x="20" y="103">II. Düzenek</text><text x="20" y="168">III. Düzenek</text>
 </g>
@@ -239,668 +1387,324 @@ qs: [
 <ellipse cx="396" cy="151" rx="3" ry="5"/><ellipse cx="408" cy="151" rx="3" ry="5"/>
 </g>
 <rect x="110" y="93" width="28" height="18" rx="3" fill="#38bdf8" stroke="#0284c7"/>
-<text x="124" y="105" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">BUZ</text>
-<g font-size="10" fill="#334155">
+<text x="124" y="105" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">BUZ</text>
+<g font-size="11" fill="#334155">
 <text x="125" y="60" text-anchor="middle">K ucu (3 mum)</text><text x="410" y="60" text-anchor="middle">L ucu (1 mum)</text>
 <text x="125" y="125" text-anchor="middle">M ucu (Buz)</text><text x="410" y="125" text-anchor="middle">N ucu (3 mum)</text>
 <text x="125" y="190" text-anchor="middle">P ucu (2 mum)</text><text x="410" y="190" text-anchor="middle">R ucu (2 mum)</text>
 </g>
-<text x="475" y="38" font-size="10.5" font-weight="bold">← 1 (Sol) | 2 (Sağ) →</text>
+<text x="270" y="214" font-size="12" font-weight="bold" text-anchor="middle">Yönler:  ← 1 (sola doğru)      2 (sağa doğru) →</text>
 </svg></div>
 <p>Buna göre düzeneklerdeki tüy parçalarının hareket yönleri ve hızları ile ilgili aşağıdakilerden hangisi doğrudur?</p>`,
-  c: [
-    `I. düzenekte tüy 2 yönünde hareket eder; K ucunda alçalıcı hava hareketi görülür.`,
-    `II. düzenekte tüy 1 yönünde hareket eder; N ucundaki hava yoğunluğu M ucundakinden fazladır.`,
-    `Tüyün en hızlı hareket ettiği düzenek II’dir ve bu düzenekte tüy 2 yönünde hareket eder.`,
-    `III. düzenekte P ve R uçlarında basınç farkı en fazla olduğundan tüy 1 yönünde hızla hareket eder.`
-  ],
+  c: ["I. düzenekte tüy 2 yönünde hareket eder; K ucunda alçalıcı hava hareketi görülür.", "II. düzenekte tüy 1 yönünde hareket eder; N ucundaki hava yoğunluğu M ucundakinden fazladır.", "Tüyün en hızlı hareket ettiği düzenek II’dir ve bu düzenekte tüy 2 yönünde hareket eder.", "III. düzenekte P ve R uçlarında basınç farkı en fazla olduğundan tüy 1 yönünde hızla hareket eder."],
   a: "C",
   s: `<p>Mum sayısı fazlaysa sıcaklık yüksek → <b>Alçak Basınç (AB)</b>; mum az veya buz varsa sıcaklık düşük → <b>Yüksek Basınç (YB)</b> oluşur. Rüzgâr (ve tüy) her zaman <b>soğuk uçtan (YB) sıcak uca (AB)</b> doğru hareket eder ve sıcaklık/basınç farkı arttıkça rüzgârın hızı artar:</p>
 <ul>
 <li><b>I. Düzenek:</b> L ucu (1 mum - YB) → K ucu (3 mum - AB), yani <b>1 (sol) yönünde</b> hareket eder.</li>
 <li><b>II. Düzenek:</b> M ucu (Buz - çok soğuk YB) → N ucu (3 mum - çok sıcak AB), yani <b>2 (sağ) yönünde</b> ve sıcaklık farkı en büyük olduğu için <b>en hızlı</b> hareket eder (<b>C doğru</b>).</li>
 <li><b>III. Düzenek:</b> İki uçta da 2 mum olduğundan sıcaklık ve basınç eşittir; rüzgâr oluşmaz, tüy hareket etmez.</li>
-</ul>`
-},
-{
-  q: `<p>Aşağıdaki Şekil 1’de Dünya’nın Güneş etrafındaki yörüngesinde bulunduğu dört konum (I, II, III, IV), Şekil 2’de ise Dünya bu konumlardan birindeyken K, L ve M şehirlerinde ölçülen gündüz ve gece süreleri sütun grafiğiyle verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Yörünge konumları ve gece gündüz sütun grafiği">
-<ellipse cx="145" cy="95" rx="115" ry="52" fill="none" stroke="#94a3b8" stroke-dasharray="4 3"/>
-<circle cx="145" cy="95" r="18" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<g stroke="#1e3a8a" stroke-width="1.4">
-<circle cx="30" cy="95" r="13" fill="#93c5fd"/><line x1="24" y1="109" x2="36" y2="81"/>
-<circle cx="260" cy="95" r="13" fill="#93c5fd"/><line x1="254" y1="109" x2="266" y2="81"/>
-<circle cx="145" cy="147" r="13" fill="#93c5fd"/><line x1="139" y1="161" x2="151" y2="133"/>
-<circle cx="145" cy="43" r="13" fill="#93c5fd"/><line x1="139" y1="57" x2="151" y2="29"/>
-</g>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="30" y="125">I</text><text x="145" y="176">II</text><text x="260" y="125">III</text><text x="145" y="21">IV</text>
-<text x="145" y="188">Şekil 1</text>
-</g>
-<line x1="335" y1="150" x2="520" y2="150" stroke="#334155" stroke-width="1.5"/>
-<line x1="335" y1="25" x2="335" y2="150" stroke="#334155" stroke-width="1.5"/>
-<line x1="335" y1="88" x2="520" y2="88" stroke="#94a3b8" stroke-dasharray="4 3"/>
-<text x="330" y="91" font-size="9.5" text-anchor="end">12 sa</text>
-<text x="330" y="42" font-size="9.5" text-anchor="end">18 sa</text>
-<text x="330" y="135" font-size="9.5" text-anchor="end">6 sa</text>
-<rect x="355" y="40" width="16" height="110" fill="#fbbf24"/><rect x="373" y="130" width="16" height="20" fill="#1e3a8a"/>
-<rect x="415" y="88" width="16" height="62" fill="#fbbf24"/><rect x="433" y="88" width="16" height="62" fill="#1e3a8a"/>
-<rect x="475" y="120" width="16" height="30" fill="#fbbf24"/><rect x="493" y="55" width="16" height="95" fill="#1e3a8a"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="372" y="164">K</text><text x="432" y="164">L</text><text x="492" y="164">M</text>
-<text x="428" y="188">Şekil 2</text>
-</g>
-<rect x="355" y="12" width="10" height="10" fill="#fbbf24"/><text x="369" y="21" font-size="9.5">Gündüz</text>
-<rect x="420" y="12" width="10" height="10" fill="#1e3a8a"/><text x="434" y="21" font-size="9.5">Gece</text>
-</svg></div>
-<p>K şehrinin <b>Güney Yarım Küre’de</b> olduğu bilindiğine göre aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
-  c: [
-    `Şekil 2’deki ölçümler Dünya I numaralı konumdayken yapılmıştır.`,
-    `Dünya III konumundan IV konumuna giderken M şehrinde gündüzler uzamaya başlar ancak gece süresi hâlâ gündüz süresinden uzundur.`,
-    `L şehrine Güneş ışınları yıl boyunca hep dik açıyla düşer.`,
-    `Dünya I konumundayken M şehrinde kış, K şehrinde yaz mevsimi başlar.`
-  ],
-  a: "B",
-  s: `<p>Şekil 2’de K şehrinde gündüz süresi 18 saat, gece 6 saattir (Gündüz &gt; Gece). K şehri <b>Güney Yarım Küre’de</b> olduğuna göre Güney Yarım Küre’de yaz yaşanmaktadır; yani bu konum Kuzey Kutbu’nun Güneş’ten uzağa eğik olduğu <b>III numaralı konumdur (21 Aralık)</b> (A yanlıştır).</p>
-<p>21 Aralık’ta (III) L şehrinde gece = gündüz (12 saat) olduğundan <b>L Ekvator</b> üzerindedir (Ekvator’a ışınlar yılda yalnızca 2 kez dik düşer, C yanlıştır). M şehrinde ise 21 Aralık’ta gece &gt; gündüz olduğundan <b>M Kuzey Yarım Küre’dedir</b> (D yanlıştır: I konumunda yani 21 Haziran’da M’de yaz başlar).</p>
-<p>Dünya III (21 Aralık) konumundan IV (21 Mart) konumuna giderken Kuzey Yarım Küre’deki M şehrinde en uzun gece geride kalmıştır; <b>gündüzler uzamaya başlar fakat 21 Mart’ta eşitlenene kadar gece süresi hâlâ gündüz süresinden uzundur</b> (<b>B kesinlikle doğru</b>).</p>`
-},
-{
-  q: `<p>Bir güneş enerjisi mühendisi, güneş panellerinden maksimum verim alabilmek için panel yüzeyine Güneş ışınlarının öğle vakti tam <b>dik (90°)</b> gelmesini sağlayan hareketli bir mekanizma tasarlamıştır. Aşağıdaki görselde sistemin çalışma prensibi, tabloda ise X şehrindeki panelin dört önemli tarihte öğle vakti yatay zeminle yaptığı <b>eğim açısı (α)</b> verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Güneş paneli eğim açısı düzeneği ve tablo">
-<line x1="20" y1="140" x2="230" y2="140" stroke="#475569" stroke-width="3"/>
-<line x1="70" y1="140" x2="175" y2="65" stroke="#1e3a8a" stroke-width="6"/>
-<line x1="145" y1="86" x2="145" y2="140" stroke="#64748b" stroke-width="2.5"/>
-<path d="M110,140 A40,40 0 0,0 102,117" fill="none" stroke="#dc2626" stroke-width="2"/>
-<text x="118" y="132" font-size="12" font-weight="bold" fill="#dc2626">α</text>
-<g stroke="#f59e0b" stroke-width="2.2">
-<line x1="65" y1="20" x2="105" y2="76"/><line x1="95" y1="15" x2="135" y2="71"/><line x1="125" y1="10" x2="165" y2="66"/>
-</g>
-<rect x="108" y="75" width="9" height="9" fill="none" stroke="#dc2626" stroke-width="1.5" transform="rotate(-35.5 112 79)"/>
-<text x="125" y="158" font-size="10.5" text-anchor="middle">Panel ışığa dik olduğunda: Işın açısı + α = 90°</text>
-<g font-size="10.5">
-<rect x="255" y="20" width="270" height="26" fill="#e2e8f0" stroke="#94a3b8"/>
-<rect x="255" y="46" width="270" height="24" fill="#fff" stroke="#94a3b8"/>
-<rect x="255" y="70" width="270" height="24" fill="#f8fafc" stroke="#94a3b8"/>
-<rect x="255" y="94" width="270" height="24" fill="#fff" stroke="#94a3b8"/>
-<rect x="255" y="118" width="270" height="24" fill="#f8fafc" stroke="#94a3b8"/>
-<line x1="385" y1="20" x2="385" y2="142" stroke="#94a3b8"/>
-<text x="320" y="37" font-weight="bold" text-anchor="middle">Tarih</text>
-<text x="455" y="37" font-weight="bold" text-anchor="middle">Panel Eğim Açısı (α)</text>
-<text x="320" y="62" text-anchor="middle">21 Mart</text><text x="455" y="62" text-anchor="middle">40°</text>
-<text x="320" y="86" text-anchor="middle">21 Haziran</text><text x="455" y="86" text-anchor="middle">16,5°</text>
-<text x="320" y="110" text-anchor="middle">23 Eylül</text><text x="455" y="110" text-anchor="middle">40°</text>
-<text x="320" y="134" text-anchor="middle">21 Aralık</text><text x="455" y="134" text-anchor="middle">63,5°</text>
-</g>
-</svg></div>
-<p>Yalnızca bu verilere göre X şehri ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: [
-    `Güneş ışınlarının yatay zemine en büyük açıyla (73,5°) düştüğü tarih 21 Haziran’dır.`,
-    `X şehri Kuzey Yarım Küre’de, Yengeç Dönencesi’nin kuzeyinde (Türkiye gibi orta kuşakta) yer almaktadır.`,
-    `21 Aralık’ta Güneş ışınları yatay zemine daha eğik geldiği için panel zemine göre daha dik (63,5°) konumlandırılmıştır.`,
-    `Panel eğim açısının (α) en küçük olduğu 21 Haziran’da X şehrindeki cisimlerin öğle vakti gölge boyu sıfır olur.`
-  ],
-  a: "D",
-  s: `<p>Panel yüzeyine ışınların dik düşmesi için <b>(Güneş ışınlarının yatay zemine geliş açısı) + (Panel eğim açısı α) = 90°</b> olmalıdır:</p>
-<ul>
-<li><b>21 Haziran:</b> α = 16,5° olduğundan ışınların yere geliş açısı = 90° − 16,5° = <b>73,5°</b> (En dik açı → Yaz başlangıcı → Kuzey Yarım Küre).</li>
-<li><b>21 Aralık:</b> α = 63,5° olduğundan ışınların yere geliş açısı = 90° − 63,5° = <b>26,5°</b> (En eğik açı → Kış başlangıcı).</li>
 </ul>
-<p>Gölge boyunun sıfır olması için ışınların yere <b>90°</b> açıyla gelmesi (yani panelin yere tamamen paralel olup α = 0° olması) gerekirdi. α = 16,5° olduğu için ışınlar 90° ile gelmemiştir; gölge boyu en kısa değerindedir ancak <b>sıfır olmaz</b>. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bir araştırmacı özdeş el fenerleri, özdeş termometreler ve özdeş siyah metal levhalar kullanarak aşağıdaki kontrollü deney düzeneğini kuruyor. Başlangıç sıcaklıkları 20 °C olan levhalara fenerler eşit uzaklıktan (15 cm) farklı açılarla 10 dakika boyunca tutuluyor ve son sıcaklıklar grafikteki gibi kaydediliyor.</p>
-<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Fener açısı ve sıcaklık artışı deney düzeneği">
-<g stroke="#475569" stroke-width="3">
-<line x1="20" y1="130" x2="100" y2="130"/>
-<line x1="120" y1="130" x2="205" y2="130"/>
-<line x1="225" y1="130" x2="320" y2="130"/>
-</g>
-<g stroke="#f59e0b" stroke-width="2">
-<line x1="52" y1="35" x2="52" y2="130"/><line x1="68" y1="35" x2="68" y2="130"/>
-<line x1="130" y1="45" x2="160" y2="130"/><line x1="148" y1="45" x2="178" y2="130"/>
-<line x1="225" y1="65" x2="285" y2="130"/><line x1="245" y1="65" x2="305" y2="130"/>
-</g>
-<line x1="52" y1="130" x2="68" y2="130" stroke="#dc2626" stroke-width="6"/>
-<line x1="160" y1="130" x2="178" y2="130" stroke="#f97316" stroke-width="6"/>
-<line x1="285" y1="130" x2="305" y2="130" stroke="#eab308" stroke-width="6"/>
-<g font-size="10.5" text-anchor="middle">
-<text x="60" y="148" font-weight="bold">I. Levha (90°)</text><text x="60" y="162">Alan: S₁</text>
-<text x="162" y="148" font-weight="bold">II. Levha (60°)</text><text x="162" y="162">Alan: S₂</text>
-<text x="272" y="148" font-weight="bold">III. Levha (30°)</text><text x="272" y="162">Alan: S₃</text>
-</g>
-<line x1="365" y1="140" x2="520" y2="140" stroke="#334155" stroke-width="1.5"/>
-<line x1="365" y1="20" x2="365" y2="140" stroke="#334155" stroke-width="1.5"/>
-<rect x="385" y="35" width="26" height="105" fill="#dc2626"/>
-<rect x="432" y="62" width="26" height="78" fill="#f97316"/>
-<rect x="479" y="95" width="26" height="45" fill="#eab308"/>
-<g font-size="10" text-anchor="middle">
-<text x="398" y="30" font-weight="bold">34 °C</text><text x="398" y="154">I</text>
-<text x="445" y="57" font-weight="bold">29 °C</text><text x="445" y="154">II</text>
-<text x="492" y="90" font-weight="bold">24 °C</text><text x="492" y="154">III</text>
-<text x="445" y="170" font-weight="bold">Son Sıcaklık (°C)</text>
-</g>
-</svg></div>
-<p>Bu deneyle ilgili aşağıdaki çıkarımlardan hangisi <b>yapılamaz</b>?</p>`,
-  c: [
-    `Deneyin bağımsız değişkeni ışınların yüzeye düşme açısı, bağımlı değişkeni ise levhalardaki sıcaklık artışıdır.`,
-    `Levhalar üzerinde aydınlanan bölgelerin alanları arasındaki ilişki S₃ > S₂ > S₁ şeklindedir.`,
-    `I. fenerin yaydığı toplam ışık enerjisi, III. fenerin yaydığı toplam ışık enerjisinden daha fazladır.`,
-    `21 Aralık öğle vakti Oğlak Dönencesi I. levhayı, Yengeç Dönencesi ise III. levhayı temsil edebilir.`
-  ],
-  a: "C",
-  s: `<p>Deneyde kullanılan el fenerleri <b>özdeştir</b> ve eşit süre (10 dk) açık tutulmuştur; dolayısıyla üç fenerin de <b>yaydığı toplam ışık enerjisi birbirine eşittir</b> (<b>C yanlıştır</b>).</p>
-<p>Sıcaklık artışlarının farklı olmasının nedeni fenerlerin yaydığı toplam enerji değil, ışığın düştüğü yüzey alanının (S₃ &gt; S₂ &gt; S₁) değişmesi ve buna bağlı olarak <b>birim yüzeye düşen enerji miktarının</b> (E₁ &gt; E₂ &gt; E₃) farklı olmasıdır. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir kıyı kasabasında yer alan Kara (X) ve Deniz (Y) bölgelerinin aynı gün içindeki 24 saatlik sıcaklık değişim grafiği aşağıda verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 200" width="480" role="img" aria-label="Kara ve deniz 24 saatlik sıcaklık değişim grafiği">
-<line x1="55" y1="160" x2="475" y2="160" stroke="#334155" stroke-width="1.5"/>
-<line x1="55" y1="20" x2="55" y2="160" stroke="#334155" stroke-width="1.5"/>
-<path d="M70,135 Q130,145 170,105 Q250,20 330,105 Q380,145 450,138" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M70,100 Q130,110 170,105 Q250,80 330,105 Q380,112 450,102" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6 3"/>
-<g stroke="#94a3b8" stroke-dasharray="3 3">
-<line x1="170" y1="105" x2="170" y2="160"/>
-<line x1="250" y1="52" x2="250" y2="160"/>
-<line x1="330" y1="105" x2="330" y2="160"/>
-</g>
-<circle cx="170" cy="105" r="4" fill="#1e293b"/><circle cx="330" cy="105" r="4" fill="#1e293b"/>
-<g font-size="10" text-anchor="middle">
-<text x="70" y="175">00.00</text><text x="170" y="175" font-weight="bold">08.00 (t₁)</text><text x="250" y="175" font-weight="bold">14.00</text><text x="330" y="175" font-weight="bold">20.00 (t₂)</text><text x="450" y="175">24.00</text>
-<text x="265" y="193" font-weight="bold">Saatler</text>
-</g>
-<text x="20" y="90" font-size="10.5" font-weight="bold" transform="rotate(-90 20 90)" text-anchor="middle">Sıcaklık (°C)</text>
-<line x1="330" y1="25" x2="355" y2="25" stroke="#dc2626" stroke-width="2.5"/><text x="360" y="29" font-size="10.5">Kara (X)</text>
-<line x1="330" y1="42" x2="355" y2="42" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="5 2"/><text x="360" y="46" font-size="10.5">Deniz (Y)</text>
-</svg></div>
-<p>Grafiğe göre bu kıyı kasabasında gerçekleşen hava olayları ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `08.00 ile 20.00 saatleri arasında rüzgârın yönü X bölgesinden (Kara) Y bölgesine (Deniz) doğrudur.`,
-    `Saat 14.00’te Y bölgesinde (Deniz) yükselici hava hareketi görülürken X bölgesinde alçalıcı hava hareketi görülür.`,
-    `Saat 00.00 – 08.00 aralığında X bölgesi yüksek basınç alanıdır ve rüzgâr X’ten Y’ye doğru eser.`,
-    `t₁ (08.00) ve t₂ (20.00) anlarında X ve Y bölgeleri arasındaki rüzgâr hızı en yüksek değerine ulaşır.`
-  ],
-  a: "C",
-  s: `<p>Grafik incelendiğinde:</p>
-<ul>
-<li><b>00.00 – 08.00 arası (Gece):</b> Kara (X) sıcaklığı Deniz (Y) sıcaklığından düşüktür. Soğuk olan <b>X (Kara) Yüksek Basınç (YB)</b>, ılık olan <b>Y (Deniz) Alçak Basınç (AB)</b> alanıdır. Rüzgâr YB’den AB’ye yani <b>X’ten Y’ye (karadan denize)</b> doğru eser (<b>C doğru</b>).</li>
-<li><b>08.00 – 20.00 arası (Gündüz):</b> Kara (X) daha sıcaktır (AB), Deniz (Y) daha serindir (YB). Rüzgâr <b>Y’den X’e (denizden karaya)</b> eser (A ve B yanlıştır).</li>
-<li><b>t₁ ve t₂ anları:</b> İki bölgenin sıcaklığı eşitlendiği için basınç farkı sıfırlanır ve <b>rüzgâr durur</b> (D yanlıştır).</li>
-</ul>`
-},
-{
-  q: `<p>Aşağıdaki şekilde birbirine komşu K ve L bölgelerinde gerçekleşen dikey ve yatay yönlü hava hareketleri oklarla modellenmiştir.</p>
-<div class="fig"><svg viewBox="0 0 480 175" width="460" role="img" aria-label="K ve L bölgelerinde dikey ve yatay hava hareketleri">
-<defs><marker id="q6A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs>
-<rect x="30" y="135" width="170" height="26" rx="4" fill="#cbd5e1" stroke="#475569"/>
-<rect x="280" y="135" width="170" height="26" rx="4" fill="#cbd5e1" stroke="#475569"/>
-<text x="115" y="153" font-size="13" font-weight="bold" text-anchor="middle">K Bölgesi</text>
-<text x="365" y="153" font-size="13" font-weight="bold" text-anchor="middle">L Bölgesi</text>
-<g stroke="#1e293b" stroke-width="2.2" fill="none" marker-end="url(#q6A)">
-<line x1="100" y1="35" x2="100" y2="120"/><line x1="130" y1="35" x2="130" y2="120"/>
-<line x1="350" y1="120" x2="350" y2="35"/><line x1="380" y1="120" x2="380" y2="35"/>
-<line x1="205" y1="125" x2="275" y2="125"/>
-<line x1="85" y1="125" x2="35" y2="125"/>
-<line x1="445" y1="125" x2="395" y2="125"/>
-<line x1="335" y1="30" x2="145" y2="30"/>
-</g>
-</svg></div>
-<p>Bu modele göre K ve L bölgeleri ile ilgili,</p>
-<p>I. K bölgesinde yüksek basınç alanı oluşmuştur ve hava hareketi merkezden çevreye doğrudur.<br>
-II. L bölgesinde bulutlanma ve yağış görülme ihtimali K bölgesine göre daha fazladır.<br>
-III. K bölgesindeki havanın sıcaklığı L bölgesinden yüksek, yoğunluğu ise L bölgesinden düşüktür.</p>
-<p>yargılarından hangileri doğrudur?</p>`,
-  c: [`Yalnız I`, `I ve II`, `II ve III`, `I, II ve III`],
-  a: "B",
-  s: `<p>Şekilde K bölgesinde oklar <b>aşağı doğru (alçalıcı hava hareketi)</b> ve yerde <b>merkezden çevreye</b> doğrudur; bu durum K’nin soğuk ve <b>Yüksek Basınç (YB)</b> alanı olduğunu gösterir (<b>I doğru</b>).</p>
-<p>L bölgesinde ise oklar <b>yukarı doğru (yükselici hava hareketi)</b> ve yerde <b>çevreden merkeze</b> doğrudur; L sıcak ve <b>Alçak Basınç (AB)</b> alanıdır. Yükselen nemli hava soğuyarak bulut ve yağış oluşturur (<b>II doğru</b>).</p>
-<p>III yanlıştır: K bölgesi soğuk olduğu için sıcaklığı L’den <b>düşük</b>, tanecikler birbirine yakın olduğu için hava yoğunluğu L’den <b>fazladır</b>. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki grafikte Dünya üzerindeki X, Y ve Z şehirlerinde yıl boyunca birim yüzeye düşen ortalama Güneş enerjisi miktarının (J/cm²) aylara göre değişimi gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 205" width="480" role="img" aria-label="X Y Z şehirlerinde birim yüzeye düşen enerji grafiği">
-<line x1="55" y1="165" x2="475" y2="165" stroke="#334155" stroke-width="1.5"/>
-<line x1="55" y1="20" x2="55" y2="165" stroke="#334155" stroke-width="1.5"/>
-<path d="M75,140 Q140,95 215,35 Q285,35 355,95 Q410,140 455,148" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M75,40 Q140,95 215,145 Q285,145 355,95 Q410,45 455,35" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<path d="M75,65 Q140,30 215,65 Q285,65 355,30 Q410,65 455,68" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="5 3"/>
-<g stroke="#cbd5e1" stroke-dasharray="3 3">
-<line x1="140" y1="20" x2="140" y2="165"/>
-<line x1="250" y1="20" x2="250" y2="165"/>
-<line x1="355" y1="20" x2="355" y2="165"/>
-<line x1="455" y1="20" x2="455" y2="165"/>
-</g>
-<g font-size="10" text-anchor="middle">
-<text x="75" y="180">Ocak</text><text x="140" y="180" font-weight="bold">21 Mart</text><text x="250" y="180" font-weight="bold">21 Haz</text><text x="355" y="180" font-weight="bold">23 Eyl</text><text x="455" y="180" font-weight="bold">21 Ara</text>
-</g>
-<text x="20" y="92" font-size="10" font-weight="bold" transform="rotate(-90 20 92)" text-anchor="middle">Birim Yüzey Enerjisi</text>
-<line x1="100" y1="15" x2="125" y2="15" stroke="#dc2626" stroke-width="2.5"/><text x="130" y="19" font-size="10.5" font-weight="bold">X şehri</text>
-<line x1="210" y1="15" x2="235" y2="15" stroke="#2563eb" stroke-width="2.5"/><text x="240" y="19" font-size="10.5" font-weight="bold">Y şehri</text>
-<line x1="320" y1="15" x2="345" y2="15" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="5 2"/><text x="350" y="19" font-size="10.5" font-weight="bold">Z şehri</text>
-</svg></div>
-<p>Grafikteki verilere göre X, Y ve Z şehirleriyle ilgili aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
-  c: [
-    `X ve Y şehirleri aynı yarım kürede, farklı enlemlerde yer almaktadır.`,
-    `Z şehri Ekvator üzerinde olup yıl boyunca gece ve gündüz süreleri birbirine eşittir.`,
-    `21 Haziran’da Y şehrindeki öğle vakti gölge boyu, X şehrindekinden daha kısadır.`,
-    `21 Mart’tan 21 Haziran’a kadar geçen sürede Y şehrinde gündüzler uzarken X şehrinde kısalır.`
-  ],
-  a: "B",
-  s: `<p>Grafikte:</p>
-<ul>
-<li><b>X şehri (Kırmızı):</b> Birim yüzeye düşen enerji <b>21 Haziran</b>’da maksimum, 21 Aralık’ta minimumdur → <b>Kuzey Yarım Küre</b>.</li>
-<li><b>Y şehri (Mavi):</b> Birim yüzeye düşen enerji <b>21 Aralık</b>’ta maksimum, 21 Haziran’da minimumdur → <b>Güney Yarım Küre</b> (A yanlıştır).</li>
-<li><b>Z şehri (Yeşil):</b> Birim yüzeye düşen enerji tam <b>21 Mart ve 23 Eylül</b>’de (ekinokslarda) en üst değere ulaşmakta ve yıl boyu yüksek seyretmektedir → <b>Ekvator</b> üzerindedir ve Ekvator’da yıl boyunca gece–gündüz eşittir (<b>B doğru</b>).</li>
-</ul>
-<p>C yanlıştır: 21 Haziran’da X’e ışınlar daha dik geldiği için X’te gölge daha kısadır. D yanlıştır: 21 Mart – 21 Haziran arasında KYK’deki X’te gündüzler uzar, GYK’deki Y’de kısalır.</p>`
-},
-{
-  q: `<p>K şehrinde yaşayan Kerem, 21 Aralık günü uçakla önce L şehrine, birkaç gün sonra da M şehrine seyahat ediyor. Kerem’in seyahat rotası Şekil 1’de, gittiği şehirlerde aynı saatte (öğle vakti) kendi boyunun gölge uzunluğunu ölçerek çizdiği grafik ise Şekil 2’de verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Kerem'in K L M seyahat rotası ve gölge boyu grafiği">
-<circle cx="115" cy="90" r="75" fill="#e0f2fe" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="40" y1="90" x2="190" y2="90" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="47" y1="58" x2="183" y2="58" stroke="#1e3a8a" stroke-dasharray="4 3"/>
-<line x1="47" y1="122" x2="183" y2="122" stroke="#1e3a8a" stroke-dasharray="4 3"/>
-<g fill="#dc2626"><circle cx="100" cy="42" r="4.5"/><circle cx="130" cy="90" r="4.5"/><circle cx="110" cy="122" r="4.5"/></g>
-<path d="M100,42 Q125,65 130,90 Q125,110 110,122" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="3 2"/>
-<g font-size="11" font-weight="bold"><text x="83" y="45">K</text><text x="140" y="86">L</text><text x="92" y="126">M</text></g>
-<g font-size="9.5" fill="#1e3a8a"><text x="195" y="61">Yengeç Dön.</text><text x="195" y="93">Ekvator</text><text x="195" y="125">Oğlak Dön.</text></g>
-<text x="115" y="172" font-size="11" font-weight="bold" text-anchor="middle">Şekil 1 (21 Aralık)</text>
-<line x1="325" y1="145" x2="510" y2="145" stroke="#334155" stroke-width="1.5"/>
-<line x1="325" y1="25" x2="325" y2="145" stroke="#334155" stroke-width="1.5"/>
-<rect x="350" y="40" width="28" height="105" fill="#64748b"/>
-<rect x="410" y="95" width="28" height="50" fill="#64748b"/>
-<circle cx="484" cy="145" r="4" fill="#dc2626"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="364" y="160">K</text><text x="424" y="160">L</text><text x="484" y="160">M</text>
-<text x="484" y="135" fill="#dc2626">0 cm</text>
-<text x="420" y="172">Şekil 2 (Öğle Vakti Gölge Boyu)</text>
-</g>
-<text x="308" y="85" font-size="10" transform="rotate(-90 308 85)" text-anchor="middle">Gölge boyu</text>
-</svg></div>
-<p>Buna göre Kerem’in K → L → M yolculuğu boyunca yaşadığı değişimlerle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: [
-    `Yolculuk boyunca gittiği şehirlerde ölçülen gündüz süresi sürekli artmıştır (M > L > K).`,
-    `M şehri Oğlak Dönencesi üzerindedir ve 21 Aralık’ta Güneş ışınlarını 90° açıyla almıştır.`,
-    `Kerem aynı yolculuğu 21 Haziran’da yapsaydı gölge boyu yine M şehrinde en kısa olurdu.`,
-    `K şehrinden L şehrine gittiğinde kış mevsiminden gece–gündüz eşitliğinin yaşandığı kuşağa geçmiştir.`
-  ],
-  a: "C",
-  s: `<p>21 Aralık’ta Güneş ışınları <b>Oğlak Dönencesi’ne (M)</b> dik (90°) gelir; bu yüzden M’de öğle vakti gölge oluşmaz (0 cm) ve kuzeyden güneye (K → L → M) gidildikçe gündüz süresi kesintisiz artar (A, B ve D doğrudur).</p>
-<p>Ancak <b>21 Haziran</b>’da Güneş ışınları Yengeç Dönencesi’ne dik gelir; bu tarihte Güney Yarım Küre’deki M şehrinde kış başlar ve ışınlar M’ye oldukça eğik düşer. Dolayısıyla 21 Haziran’da gölge boyu M’de en kısa değil, K’ye göre çok daha uzun olurdu (<b>C yanlıştır</b>).</p>`
-},
-{
-  q: `<p>Mevcut durumda Dünya’nın dönme ekseni yörünge düzlemine göre <b>23° 27′</b> eğiktir ve bu nedenle Yengeç ile Oğlak Dönenceleri 23° 27′ enlemlerinden, Kutup Daireleri ise 66° 33′ enlemlerinden geçmektedir. Bir bilim insanı, Dünya’nın eksen eğikliğinin 23° 27′ yerine <b>40°</b> olduğu varsayımsal bir model hazırlıyor.</p>
-<div class="fig"><svg viewBox="0 0 500 165" width="480" role="img" aria-label="23.5 derece ve 40 derece eksen eğikliği karşılaştırması">
-<circle cx="130" cy="82" r="62" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="105" y1="18" x2="155" y2="146" stroke="#dc2626" stroke-width="2"/>
-<line x1="68" y1="82" x2="192" y2="82" stroke="#1e3a8a" stroke-dasharray="4 2"/>
-<text x="130" y="158" font-size="11" font-weight="bold" text-anchor="middle">Mevcut Durum (Eğiklik: 23° 27′)</text>
-<circle cx="370" cy="82" r="62" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<line x1="325" y1="28" x2="415" y2="136" stroke="#dc2626" stroke-width="2"/>
-<line x1="308" y1="82" x2="432" y2="82" stroke="#b45309" stroke-dasharray="4 2"/>
-<text x="370" y="158" font-size="11" font-weight="bold" text-anchor="middle">Varsayımsal Model (Eğiklik: 40°)</text>
-</svg></div>
-<p>Dünya’nın eksen eğikliği 40° olsaydı Türkiye (36°–42° Kuzey paralelleri) ve Dünya genelinde aşağıdakilerden hangisi <b>gerçekleşirdi</b>?</p>`,
-  c: [
-    `Güneş ışınlarının dik gelebildiği alan daralır ve Türkiye’ye ışınlar yine hiçbir zaman dik gelmezdi.`,
-    `Dönenceler 40° Kuzey ve 40° Güney enlemlerinden geçer; Türkiye’nin bir kısmına Güneş ışınları dik açıyla düşebilirdi.`,
-    `Türkiye’de yaz ve kış mevsimleri arasındaki yıllık sıcaklık farkı azalırdı.`,
-    `Ekvator’dan kutuplara gidildikçe gece ve gündüz süreleri arasındaki fark azalırdı.`
-  ],
-  a: "B",
-  s: `<p>Dönencelerin derecesi doğrudan <b>eksen eğikliği açısına</b> eşittir:</p>
-<ul>
-<li>Eksen eğikliği <b>40°</b> olsaydı Yengeç Dönencesi <b>40° K</b>, Oğlak Dönencesi <b>40° G</b> paralelinden geçerdi (Kutup daireleri ise 90° − 40° = 50° enlemlerine inerdi).</li>
-<li>Böylece Güneş ışınlarının dik gelebildiği kuşak <b>genişler</b> ve 36°–42° K arasında yer alan Türkiye’nin 36°–40° K arasındaki şehirlerine Güneş ışınları yılda 2 kez (40° K’ye 1 kez) <b>dik açıyla düşebilirdi</b> (<b>B doğru</b>, A yanlıştır).</li>
-<li>Eğiklik arttığında yazlar çok daha sıcak, kışlar çok daha soğuk olur (yıllık sıcaklık farkı ve gece–gündüz süresi farkı <b>artar</b>, C ve D yanlıştır).</li>
-</ul>`
-},
-{
-  q: `<p>Birbirine komşu K, L ve M şehirlerinin arasına özdeş iki rüzgâr gülü (anemometre) yerleştirilmiştir. Bir süre sonra 1. rüzgâr gülünün K’den L’ye doğru <b>dakikada 40 tur</b>, 2. rüzgâr gülünün ise M’den L’ye doğru <b>dakikada 90 tur</b> döndüğü gözlemleniyor.</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="K L M bölgeleri arasında rüzgar gülleri">
-<defs><marker id="rgA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f766e"/></marker></defs>
-<rect x="20" y="95" width="120" height="30" rx="4" fill="#93c5fd"/>
-<rect x="200" y="95" width="120" height="30" rx="4" fill="#fca5a5"/>
-<rect x="380" y="95" width="120" height="30" rx="4" fill="#60a5fa"/>
-<g font-size="13" font-weight="bold" text-anchor="middle">
-<text x="80" y="115">K Bölgesi</text><text x="260" y="115">L Bölgesi</text><text x="440" y="115">M Bölgesi</text>
-</g>
-<line x1="170" y1="55" x2="170" y2="95" stroke="#475569" stroke-width="3"/><circle cx="170" cy="55" r="14" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<line x1="350" y1="55" x2="350" y2="95" stroke="#475569" stroke-width="3"/><circle cx="350" cy="55" r="14" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M135,32 L205,32" stroke="#0f766e" stroke-width="2.5" marker-end="url(#rgA)"/>
-<path d="M385,32 L315,32" stroke="#0f766e" stroke-width="3.5" marker-end="url(#rgA)"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle" fill="#0f766e">
-<text x="170" y="22">1. Rüzgâr Gülü (40 tur/dk)</text>
-<text x="350" y="22">2. Rüzgâr Gülü (90 tur/dk)</text>
-</g>
-</svg></div>
-<p>Buna göre K, L ve M bölgelerinin hava sıcaklıkları (T) ve açık hava basınçları (P) arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: [
-    `Sıcaklık: T(L) > T(K) > T(M)  —  Basınç: P(M) > P(K) > P(L)`,
-    `Sıcaklık: T(M) > T(K) > T(L)  —  Basınç: P(L) > P(K) > P(M)`,
-    `Sıcaklık: T(L) > T(M) > T(K)  —  Basınç: P(K) > P(M) > P(L)`,
-    `Sıcaklık: T(K) > T(L) > T(M)  —  Basınç: P(M) > P(L) > P(K)`
-  ],
+<p>A ✗: I. düzenekte tüy 1 yönünde gider; sıcak K ucunda <b>yükselici</b> hava hareketi olur. B ✗: II. düzenekte tüy 2 yönünde gider; sıcak N ucundaki havanın yoğunluğu soğuk M ucundakinden <b>azdır</b>. D ✗: III. düzenekte iki uç eşit ısıtıldığı için basınç farkı yoktur, tüy hareket etmez.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şekilde Dünya’nın Güneş etrafında dolanırken bulunduğu bir konum ile eş yükseltideki P, R, S ve T şehirleri gösterilmiştir. R şehri Yengeç Dönencesi, S şehri Ekvator üzerindedir.</p><div class="fig"><svg viewBox="0 0 520 270" width="500" role="img" aria-label="Dünya’nın bir konumu ve P, R, S, T şehirleri" font-family="sans-serif"><defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><circle cx="590" cy="135" r="140" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><text x="502.0" y="139.0" font-size="13" text-anchor="end" font-weight="bold" fill="#92400e">Güneş</text><line x1="435" y1="75" x2="300" y2="75" stroke="#d97706" stroke-width="2" marker-end="url(#a1)"/><line x1="435" y1="105" x2="300" y2="105" stroke="#d97706" stroke-width="2" marker-end="url(#a1)"/><line x1="435" y1="135" x2="300" y2="135" stroke="#d97706" stroke-width="2" marker-end="url(#a1)"/><line x1="435" y1="165" x2="300" y2="165" stroke="#d97706" stroke-width="2" marker-end="url(#a1)"/><line x1="435" y1="195" x2="300" y2="195" stroke="#d97706" stroke-width="2" marker-end="url(#a1)"/><circle cx="190" cy="135" r="95" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="102.9" y1="97.1" x2="277.1" y2="172.9" stroke="#1e3a8a" stroke-width="2.2"/><text x="97.9" y="101.1" font-size="11" text-anchor="end" fill="#1e3a8a">Ekvator</text><line x1="125.2" y1="65.5" x2="285.0" y2="135.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="120.2" y="69.5" font-size="11" text-anchor="end" fill="#1e3a8a">Yengeç D.</text><line x1="95.0" y1="135.0" x2="254.8" y2="204.5" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="90.0" y="139.0" font-size="11" text-anchor="end" fill="#1e3a8a">Oğlak D.</text><line x1="234.3" y1="33.2" x2="145.7" y2="236.8" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="234.3" y="28.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="145.7" y="250.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="211.9" cy="54.8" r="4" fill="#dc2626"/><text x="211.9" y="46.8" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">P</text><circle cx="181.1" cy="89.8" r="4" fill="#dc2626"/><text x="181.1" y="81.8" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">R</text><circle cx="163.9" cy="123.6" r="4" fill="#dc2626"/><text x="163.9" y="115.6" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">S</text><circle cx="145.6" cy="182.3" r="4" fill="#dc2626"/><text x="145.6" y="199.3" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">T</text><text x="395.0" y="230.0" font-size="11" text-anchor="middle" fill="#92400e">Güneş ışınları</text></svg></div><p><b>Dünya bu konumdayken bu şehirlerle ilgili aşağıdakilerden hangisi yanlıştır?</b></p>`,
+  c: ["Öğle vakti Güneş ışınları S şehrine R şehrinden daha dik açıyla gelir.", "R şehrinde yere dik duran bir çubuğun öğle vakti gölgesi oluşmaz.", "P şehrinde gündüz süresi gece süresinden uzundur.", "T şehrinde kış mevsimi başlar."],
   a: "A",
-  s: `<p>Her iki rüzgâr da <b>L bölgesine doğru</b> (K → L ve M → L) esmektedir. Rüzgâr yüksek basınçtan alçak basınca doğru estiği için <b>en düşük basınç P(L)</b> ve <b>en yüksek sıcaklık T(L)</b> L bölgesindedir.</p>
-<p>2. rüzgâr gülü (90 tur/dk), 1. rüzgâr gülünden (40 tur/dk) daha hızlı döndüğüne göre <b>M ile L arasındaki basınç ve sıcaklık farkı, K ile L arasındakinden daha büyüktür</b>. Dolayısıyla M’nin basıncı K’den daha yüksek (<b>P(M) &gt; P(K) &gt; P(L)</b>), sıcaklığı ise K’den daha düşüktür (<b>T(L) &gt; T(K) &gt; T(M)</b>). Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Atmosferdeki su buharının yoğunlaşma (yoğuşma veya donma) yüksekliğine ve ortam sıcaklığına bağlı olarak oluşan hava olaylarını sınıflandırmak için aşağıdaki tanılayıcı dallanmış ağaç hazırlanmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Yağış türleri karar şeması">
-<rect x="175" y="10" width="190" height="28" rx="5" fill="#e2e8f0" stroke="#475569"/>
-<text x="270" y="28" font-size="11" font-weight="bold" text-anchor="middle">Atmosferdeki Nem (Su Buharı)</text>
-<line x1="220" y1="38" x2="130" y2="62" stroke="#475569" stroke-width="1.5"/>
-<line x1="320" y1="38" x2="410" y2="62" stroke="#475569" stroke-width="1.5"/>
-<rect x="40" y="62" width="180" height="28" rx="4" fill="#dbeafe" stroke="#1e3a8a"/>
-<rect x="320" y="62" width="180" height="28" rx="4" fill="#fef3c7" stroke="#b45309"/>
-<text x="130" y="80" font-size="10.5" font-weight="bold" text-anchor="middle">Gökyüzünde (Üst Tabakada)</text>
-<text x="410" y="80" font-size="10.5" font-weight="bold" text-anchor="middle">Yeryüzüne Yakın (Zeminde)</text>
-<line x1="90" y1="90" x2="65" y2="120" stroke="#475569" stroke-width="1.5"/>
-<line x1="170" y1="90" x2="195" y2="120" stroke="#475569" stroke-width="1.5"/>
-<line x1="370" y1="90" x2="345" y2="120" stroke="#475569" stroke-width="1.5"/>
-<line x1="450" y1="90" x2="475" y2="120" stroke="#475569" stroke-width="1.5"/>
-<rect x="15" y="120" width="105" height="44" rx="4" fill="#f8fafc" stroke="#64748b"/>
-<rect x="140" y="120" width="115" height="44" rx="4" fill="#f8fafc" stroke="#64748b"/>
-<rect x="290" y="120" width="110" height="44" rx="4" fill="#f8fafc" stroke="#64748b"/>
-<rect x="420" y="120" width="110" height="44" rx="4" fill="#f8fafc" stroke="#64748b"/>
-<g font-size="9.5" text-anchor="middle">
-<text x="67" y="136">0 °C üstü sıvı</text><text x="67" y="154" font-weight="bold" font-size="11" fill="#dc2626">( K )</text>
-<text x="197" y="136">Ani yükselimle buz</text><text x="197" y="154" font-weight="bold" font-size="11" fill="#dc2626">( L )</text>
-<text x="345" y="136">0 °C üstü damlacık</text><text x="345" y="154" font-weight="bold" font-size="11" fill="#dc2626">( M )</text>
-<text x="475" y="136">0 °C altı kristalleşme</text><text x="475" y="154" font-weight="bold" font-size="11" fill="#dc2626">( N )</text>
-</g>
-</svg></div>
-<p>Şemada K, L, M ve N harfleriyle gösterilen kutulara aşağıdakilerden hangisi yazılmalıdır?</p>`,
-  c: [
-    `K: Yağmur — L: Dolu — M: Çiy — N: Kırağı`,
-    `K: Çiy — L: Kar — M: Yağmur — N: Kırağı`,
-    `K: Yağmur — L: Kar — M: Kırağı — N: Çiy`,
-    `K: Sis — L: Dolu — M: Çiy — N: Kar`
-  ],
-  a: "A",
-  s: `<p>Oluşum yeri ve sıcaklık koşullarına göre:</p>
-<ul>
-<li><b>K (Gökyüzünde, 0 °C üstü sıvı damlacık):</b> <b>Yağmur</b></li>
-<li><b>L (Gökyüzünde, ani yükselen hava hareketiyle donan buz topları):</b> <b>Dolu</b></li>
-<li><b>M (Yeryüzüne yakın, 0 °C üstü yaprak/cisim üzerinde su damlacıkları):</b> <b>Çiy</b></li>
-<li><b>N (Yeryüzüne yakın, 0 °C altında doğrudan buz kristallerine dönüşüm):</b> <b>Kırağı</b></li>
-</ul>
-<p>Doğru eşleştirme <b>A</b> seçeneğindedir.</p>`
-},
-{
-  q: `<p>Aşağıdaki şekilde Dünya’nın üç farklı tarihteki konumunda Güneş ışınlarının geliş yönü ve <b>aydınlanma çemberinin</b> (gece ile gündüzü ayıran sınırın) uzanışı gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Üç farklı tarihte aydınlanma çemberi">
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="90" y="18">I. Görünüm</text><text x="270" y="18">II. Görünüm</text><text x="450" y="18">III. Görünüm</text>
-</g>
-<circle cx="90" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
-<path d="M90,33 A55,55 0 0,1 90,143 Z" fill="#1e293b" opacity="0.75"/>
-<line x1="68" y1="38" x2="112" y2="138" stroke="#dc2626" stroke-width="2"/>
-<line x1="40" y1="110" x2="140" y2="66" stroke="#1e3a8a" stroke-dasharray="3 2"/>
-<circle cx="270" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
-<path d="M270,33 A55,55 0 0,1 270,143 Z" fill="#1e293b" opacity="0.75"/>
-<line x1="270" y1="33" x2="270" y2="143" stroke="#dc2626" stroke-width="2"/>
-<line x1="215" y1="88" x2="325" y2="88" stroke="#1e3a8a" stroke-dasharray="3 2"/>
-<circle cx="450" cy="88" r="55" fill="#fde047" stroke="#1e3a8a" stroke-width="1.8"/>
-<path d="M450,33 A55,55 0 0,1 450,143 Z" fill="#1e293b" opacity="0.75"/>
-<line x1="472" y1="38" x2="428" y2="138" stroke="#dc2626" stroke-width="2"/>
-<line x1="400" y1="66" x2="500" y2="110" stroke="#1e3a8a" stroke-dasharray="3 2"/>
-<g font-size="9.5" text-anchor="middle" fill="#334155">
-<text x="90" y="158">Kuzey Kutbu tamamen aydınlık</text>
-<text x="270" y="158">Kutup noktalarından teğet</text>
-<text x="450" y="158">Güney Kutbu tamamen aydınlık</text>
-</g>
-</svg></div>
-<p>Güneş ışınlarının üç görünümde de <b>soldan</b> geldiği bilindiğine göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `I. görünüm 21 Aralık tarihine aittir ve Türkiye’de en uzun gündüz yaşanır.`,
-    `II. görünümde Güneş ışınları yalnızca Yengeç ve Oğlak Dönencelerine dik düşer.`,
-    `I. görünümden II. görünüme geçilirken Kuzey Yarım Küre’de gündüz süreleri kısalır ancak gündüz süresi hâlâ gece süresinden uzundur.`,
-    `III. görünümde Kuzey Yarım Küre’den Güney Yarım Küre’ye doğru gidildikçe gece süresi uzar.`
-  ],
-  a: "C",
-  s: `<p>Güneş ışınları soldan gelirken:</p>
-<ul>
-<li><b>I. Görünüm:</b> Kuzey Kutbu Güneş’e dönük ve tamamen aydınlıktır → <b>21 Haziran</b> (A yanlıştır).</li>
-<li><b>II. Görünüm:</b> Aydınlanma çemberi tam kutup noktalarından geçerek Ekvator ve tüm paralelleri eşit bölmüştür → <b>21 Mart veya 23 Eylül (Ekinoks)</b>. Bu tarihte ışınlar <b>Ekvator’a</b> dik düşer (B yanlıştır).</li>
-<li><b>III. Görünüm:</b> Güney Kutbu tamamen aydınlıktır → <b>21 Aralık</b>. Bu tarihte güneye gidildikçe gündüz süresi uzar, gece süresi kısalır (D yanlıştır).</li>
-</ul>
-<p>I. görünümden (21 Haziran) II. görünüme (23 Eylül) geçilirken Kuzey Yarım Küre’de gündüzler 15 saatten 12 saate doğru <b>kısalır</b> fakat 23 Eylül’e kadar <b>gündüz süresi hâlâ gece süresinden uzundur</b> (<b>C doğru</b>).</p>`
-},
-{
-  q: `<p>Bir araştırma raporu için Karadeniz Bölgesi’ndeki bir ilimize ait iki farklı veri tablosu hazırlanmıştır.</p>
-<table class="rt">
-<tr><th>Tablo 1: 1985 – 2025 Yılları Ortalaması</th><th>Tablo 2: 19 – 21 Ekim Günlük Tahmin</th></tr>
-<tr><td>• En fazla yağış sonbahar mevsiminde düşer.<br>• Kış ayları ılık, yaz ayları serin geçer.<br>• Yıllık ortalama yağış miktarı 1200 mm’dir.</td><td>• Pazartesi: Öğleden sonra kuvvetli sağanak yağışlı.<br>• Salı: Sabah saatlerinde yoğun sis ve pus bekleniyor.<br>• Çarşamba: Rüzgâr kuzeybatıdan 40 km/sa hızla esecek.</td></tr>
-</table>
-<p>Tablo 1 ve Tablo 2’deki verilerle ilgili aşağıdaki değerlendirmelerden hangisi <b>yanlıştır</b>?</p>`,
-  c: [
-    `Tablo 1’deki veriler klimatologlar tarafından, Tablo 2’deki veriler ise meteorologlar tarafından hazırlanmıştır.`,
-    `Tablo 2’deki tahminlerin birkaç saat içinde değişme olasılığı yüksekken Tablo 1’deki özellikler kolay değişmez.`,
-    `Tablo 1’deki veriler oluşturulurken uzun yıllar boyunca kaydedilen Tablo 2 benzeri günlük gözlem sonuçlarının ortalaması alınmıştır.`,
-    `Bir bölgede Salı günü yoğun sis görülmesi o bölgenin ikliminin değiştiğini kanıtlar.`
-  ],
+  s: `<p>Şekilde Kuzey Kutbu Güneş’e doğru eğiktir; bu konum <b>21 Haziran</b>’a aittir ve Güneş ışınları öğle vakti <b>Yengeç Dönencesi</b>’ne dik (90°) gelir.</p><p><b>B</b> doğru: Işınlar R’ye dik geldiği için öğle vakti gölge oluşmaz. <b>C</b> doğru: 21 Haziran’da Kuzey Yarım Küre’de gündüzler geceden uzundur. <b>D</b> doğru: Güney Yarım Küre’deki T’de kış başlar.</p><p><b>A</b> yanlıştır: Dik ışın Yengeç Dönencesi’ndedir; Ekvator’daki S’ye ışınlar yaklaşık 66,5° ile, yani R’ye göre <b>daha eğik</b> gelir. “Ekvator her zaman en dik ışını alır” düşüncesi bir yanılgıdır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Eş yükseltideki K, L ve M şehirlerinde uzun yıllar boyunca yapılan ölçümlerden elde edilen aylık ortalama sıcaklıklar (°C) tabloda verilmiştir.</p><table><tr><th>Şehir</th><th>Oca</th><th>Şub</th><th>Mar</th><th>Nis</th><th>May</th><th>Haz</th><th>Tem</th><th>Ağu</th><th>Eyl</th><th>Eki</th><th>Kas</th><th>Ara</th></tr><tr><td>K</td><td>−2</td><td>0</td><td>5</td><td>11</td><td>16</td><td>21</td><td>24</td><td>23</td><td>18</td><td>12</td><td>6</td><td>1</td></tr><tr><td>L</td><td>22</td><td>21</td><td>19</td><td>15</td><td>11</td><td>8</td><td>7</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td></tr><tr><td>M</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td><td>27</td></tr></table><p><b>Tablodaki verilerden yararlanılarak aşağıdaki yargılardan hangisine ulaşılamaz?</b></p>`,
+  c: ["K ve L şehirleri farklı yarım kürelerdedir.", "M şehri Kuzey Yarım Küre’dedir.", "Temmuz ayında L şehrinde kış mevsimi yaşanır.", "Ocak ayında K şehrinde gece süresi gündüz süresinden uzundur."],
+  a: "B",
+  s: `<p>Yarım küreyi gösteren, sıcaklığın <b>yıl içindeki değişim yönüdür</b>. K’de sıcaklık ocaktan temmuza artıyor (−2 → 24 °C): K <b>Kuzey</b> Yarım Küre’de. L’de aynı dönemde azalıyor (22 → 7 °C): L <b>Güney</b> Yarım Küre’de.</p><p><b>A</b> ulaşılır: K kuzeyde, L güneyde. <b>C</b> ulaşılır: Temmuzda Güney Yarım Küre’de kış vardır. <b>D</b> ulaşılır: Ocakta Kuzey Yarım Küre’deki K kışı yaşar; kışın gece gündüzden uzundur.</p><p><b>B</b> ulaşılamaz: M’de sıcaklık bütün aylarda 27 °C’tur; ısınma–soğuma yönü olmadığı için hangi yarım kürede olduğu tablodan anlaşılamaz (yalnızca Ekvator’a çok yakın olabileceği düşünülebilir).</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Farklı şehirlerde yaşayan Aylin ve Bora aynı anda görüntülü konuşmaktadır.</p><div class="dialog"><div><b>Aylin (X şehri):</b> Bugün burada yaz mevsimi başladı. Yılın en uzun gündüzünü yaşıyoruz.</div><div><b>Bora (Y şehri):</b> Bizde ise bugün gece ve gündüz süreleri birbirine eşit, 12’şer saat.</div></div><p><b>Bu konuşmaya göre aşağıdakilerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["Görüşme 21 Haziran tarihinde yapılmıştır.", "X şehri Kuzey Yarım Küre’dedir.", "X şehrinde öğle vakti yere dik bir çubuğun gölgesi oluşmaz.", "Y şehri Ekvator üzerindedir."],
   a: "D",
-  s: `<p>Tablo 1 <b>iklim</b> (klimatoloji – en az 30-40 yıllık ortalama), Tablo 2 ise <b>hava olayları</b> (meteoroloji – kısa süreli ve değişken tahminler) verilerini içerir (A, B ve C doğrudur).</p>
-<p>Kısa süreli bir hava olayı (bir gün sis görülmesi veya yağmur yağması) o bölgenin <b>ikliminin değiştiğini kanıtlamaz</b>; iklim değişikliğinden söz edebilmek için uzun yıllar süren kalıcı ortalama değişimleri gerekir (<b>D yanlıştır</b>).</p>`
-},
-{
-  q: `<p>Güney Yarım Küre’de ve Oğlak Dönencesi’nin güneyinde yer alan bir şehirde yaşayan öğrenci, bahçesindeki ağacın öğle vakti gölge boyunu dört önemli tarihte ölçerek aşağıdaki sütun grafiğini çizmiştir. Öğretmeni grafiği incelediğinde <b>iki tarihteki</b> sütunların birbiriyle yanlışlıkla yer değiştirildiğini fark etmiştir.</p>
-<div class="fig"><svg viewBox="0 0 460 180" width="440" role="img" aria-label="Hatalı çizilmiş gölge boyu sütun grafiği">
-<line x1="60" y1="145" x2="430" y2="145" stroke="#334155" stroke-width="1.5"/>
-<line x1="60" y1="20" x2="60" y2="145" stroke="#334155" stroke-width="1.5"/>
-<rect x="95" y="75" width="38" height="70" fill="#3b82f6"/>
-<rect x="180" y="110" width="38" height="35" fill="#ef4444"/>
-<rect x="265" y="75" width="38" height="70" fill="#3b82f6"/>
-<rect x="350" y="30" width="38" height="115" fill="#ef4444"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="114" y="70">80 cm</text><text x="114" y="162">21 Mart</text>
-<text x="199" y="105">40 cm</text><text x="199" y="162">21 Haziran</text>
-<text x="284" y="70">80 cm</text><text x="284" y="162">23 Eylül</text>
-<text x="369" y="25">130 cm</text><text x="369" y="162">21 Aralık</text>
-</g>
-<text x="25" y="85" font-size="10.5" font-weight="bold" transform="rotate(-90 25 85)" text-anchor="middle">Gölge Boyu (cm)</text>
-</svg></div>
-<p>Grafikteki hatanın düzeltilmesi için hangi iki tarihe ait sütunlar yer değiştirmelidir?</p>`,
-  c: [
-    `21 Mart ile 23 Eylül`,
-    `21 Haziran ile 21 Aralık`,
-    `21 Mart ile 21 Haziran`,
-    `23 Eylül ile 21 Aralık`
-  ],
+  s: `<p>Yaz mevsiminin başladığı ve yılın en uzun gündüzünün yaşandığı gün bir <b>gün dönümüdür</b>: X Kuzey Yarım Küre’deyse 21 Haziran, Güney Yarım Küre’deyse 21 Aralık’tır.</p><p>Gün dönümlerinde aydınlanma çemberi kutup dairelerine teğettir ve paralelleri eşit bölmez; gece ile gündüzün eşit olduğu tek yer <b>Ekvator</b>’dur. Bu yüzden Y kesinlikle Ekvator üzerindedir (<b>D</b> ✓).</p><p><b>A</b> ve <b>B</b> kesin değildir: Tarih 21 Aralık ve X Güney Yarım Küre’de de olabilir. <b>C</b> kesin değildir: Gölgenin sıfır olması için X’in tam dönence üzerinde olması gerekir; bu bilinmiyor.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>21 Mart günü öğle vakti, eş yükseltideki K, L ve M şehirlerinde yatay zemine dik olarak yerleştirilen 1 m uzunluğundaki özdeş çubukların gölge boyları ölçülmüş ve tabloya yazılmıştır.</p><table><tr><th>Şehir</th><th>K</th><th>L</th><th>M</th></tr><tr><td>Gölge boyu</td><td>0 cm (gölge yok)</td><td>47 cm</td><td>84 cm</td></tr></table><p><b>Bu ölçümlere göre aşağıdakilerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["L şehri Kuzey Yarım Küre’dedir.", "M şehri Ekvator’a L şehrinden daha uzaktır.", "21 Haziran’da K şehrindeki çubuğun öğle vakti gölgesi yine oluşmaz.", "21 Aralık’ta M şehrindeki çubuğun öğle vakti gölgesi L şehrindekinden uzun olur."],
   a: "B",
-  s: `<p>Şehir <b>Güney Yarım Küre’de (Oğlak Dönencesi’nin güneyinde)</b> yer almaktadır. Güney Yarım Küre’de:</p>
-<ul>
-<li><b>21 Aralık:</b> Yaz başlangıcıdır, Güneş ışınları en dik açıyla gelir → Gölge boyu <b>en kısa (40 cm)</b> olmalıdır.</li>
-<li><b>21 Haziran:</b> Kış başlangıcıdır, Güneş ışınları en eğik açıyla gelir → Gölge boyu <b>en uzun (130 cm)</b> olmalıdır.</li>
-</ul>
-<p>Grafikte 21 Haziran (40 cm) ve 21 Aralık (130 cm) ters çizilmiştir; bu iki sütun yer değiştirmelidir. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki grafikte 1960–2025 yılları arasında atmosferdeki karbondioksit (CO₂) derişimi (ppm) ile küresel yüzey sıcaklığı ortalamasındaki değişim bir arada verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 185" width="480" role="img" aria-label="Karbondioksit ve küresel sıcaklık artışı grafiği">
-<line x1="55" y1="150" x2="455" y2="150" stroke="#334155" stroke-width="1.5"/>
-<line x1="55" y1="20" x2="55" y2="150" stroke="#334155" stroke-width="1.5"/>
-<line x1="455" y1="20" x2="455" y2="150" stroke="#334155" stroke-width="1.5"/>
-<polyline fill="none" stroke="#1e3a8a" stroke-width="2.5" points="70,135 130,122 190,108 250,90 310,70 370,50 435,28"/>
-<polyline fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 2" points="70,130 130,134 190,115 250,102 310,82 370,62 435,35"/>
-<g font-size="10" text-anchor="middle">
-<text x="70" y="165">1960</text><text x="160" y="165">1975</text><text x="250" y="165">1990</text><text x="340" y="165">2005</text><text x="435" y="165">2025</text>
-</g>
-<g font-size="9.5" fill="#1e3a8a" text-anchor="end"><text x="50" y="138">315</text><text x="50" y="85">365</text><text x="50" y="32">425</text></g>
-<g font-size="9.5" fill="#dc2626"><text x="460" y="138">0,0 °C</text><text x="460" y="85">+0,6 °C</text><text x="460" y="32">+1,2 °C</text></g>
-<text x="15" y="85" font-size="10" font-weight="bold" fill="#1e3a8a" transform="rotate(-90 15 85)" text-anchor="middle">CO₂ Miktarı (ppm)</text>
-<text x="492" y="85" font-size="10" font-weight="bold" fill="#dc2626" transform="rotate(-90 492 85)" text-anchor="middle">Sıcaklık Farkı</text>
-</svg></div>
-<p>Grafikteki veriler ve küresel iklim değişikliği dikkate alındığında aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: [
-    `Atmosferdeki CO₂ miktarının artması, yeryüzünden yansıyan ısı enerjisinin uzaya kaçmasını engelleyerek sera etkisini güçlendirmiştir.`,
-    `Fosil yakıt tüketiminin azaltılıp ormanlık alanların artırılması grafikteki her iki eğrinin artış hızını yavaşlatabilir.`,
-    `Küresel sıcaklık artışı sonucunda kutup buzullarının erimesi, kıyı ekosistemlerinin sular altında kalması ve ekstrem hava olaylarının artması beklenir.`,
-    `Grafikteki sıcaklık artışının temel nedeni, son 65 yılda Dünya’nın dönme ekseni eğikliğinin artmasıdır.`
-  ],
-  a: "D",
-  s: `<p>Grafikte atmosferdeki CO₂ miktarı 315 ppm’den 425 ppm’e çıkarken küresel ortalama sıcaklığın da +1,2 °C arttığı görülmektedir. Bu durum insan kaynaklı (fosil yakıtlar, sanayileşme, ormansızlaşma) <b>sera etkisi ve küresel ısınmanın</b> sonucudur (A, B ve C doğrudur).</p>
-<p>Son 65 yıldaki bu hızlı ısınmanın nedeni Dünya’nın eksen eğikliğinin değişmesi <b>değildir</b> (<b>D söylenemez</b>).</p>`
-},
-{
-  q: `<p>Aynı boylam (meridyen) üzerinde yer alan K, L ve M şehirlerinde <b>21 Haziran</b> günü öğle vakti Güneş’in ufuk düzlemi üzerindeki konumu (geliş açısı) aşağıda modellenmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="K L M şehirlerinde Güneş'in ufuk düzlemi üzerindeki açısı">
-<g stroke="#334155" stroke-width="2" fill="none">
-<line x1="20" y1="115" x2="160" y2="115"/><path d="M40,115 A50,50 0 0,1 140,115" stroke-dasharray="3 2"/>
-<line x1="200" y1="115" x2="340" y2="115"/><path d="M220,115 A50,50 0 0,1 320,115" stroke-dasharray="3 2"/>
-<line x1="380" y1="115" x2="520" y2="115"/><path d="M400,115 A50,50 0 0,1 500,115" stroke-dasharray="3 2"/>
-</g>
-<line x1="90" y1="115" x2="90" y2="40" stroke="#f59e0b" stroke-width="2.5"/>
-<line x1="270" y1="115" x2="318" y2="62" stroke="#f59e0b" stroke-width="2.5"/>
-<line x1="450" y1="115" x2="515" y2="90" stroke="#f59e0b" stroke-width="2.5"/>
-<circle cx="90" cy="40" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<circle cx="318" cy="62" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<circle cx="515" cy="90" r="10" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="104" y="105" fill="#dc2626">90°</text><text x="90" y="135">K Şehri</text>
-<text x="298" y="108" fill="#dc2626">50°</text><text x="270" y="135">L Şehri</text>
-<text x="488" y="110" fill="#dc2626">22°</text><text x="450" y="135">M Şehri</text>
-</g>
-</svg></div>
-<p>M şehrinin <b>Güney Yarım Küre’de</b> olduğu bilindiğine göre,</p>
-<p>I. K şehri Yengeç Dönencesi üzerindedir.<br>
-II. 21 Haziran’da özdeş bir cismin öğle vakti gölge boyu en uzun M şehrindedir.<br>
-III. L şehri kesinlikle Kuzey Yarım Küre’dedir.</p>
-<p>ifadelerinden hangileri <b>kesinlikle doğrudur</b>?</p>`,
-  c: [`Yalnız I`, `I ve II`, `II ve III`, `I, II ve III`],
-  a: "B",
-  s: `<p>Tarih <b>21 Haziran</b>’dır:</p>
-<ul>
-<li>K şehrinde Güneş ışınları ufuk düzlemine <b>90°</b> açıyla gelmiştir. 21 Haziran’da ışınların 90° ile düştüğü tek yer <b>Yengeç Dönencesi</b>’dir (<b>I kesinlikle doğru</b>).</li>
-<li>Geliş açıları 90° (K) &gt; 50° (L) &gt; 22° (M) olduğundan ışınların en eğik geldiği M şehrinde gölge boyu en uzundur (<b>II kesinlikle doğru</b>).</li>
-<li><b>III (Dikkat - MEB Tuzağı!):</b> 21 Haziran’da Yengeç Dönencesi’ne (23,5° K) 90° ile gelen ışınlar, hem Yengeç Dönencesi’nin 40° kuzeyindeki (63,5° K) bir yere hem de 40° güneyindeki (16,5° G – Güney Yarım Küre!) bir yere <b>50°</b> açıyla gelir. Dolayısıyla L şehri Kuzey Yarım Küre’de olabileceği gibi Güney Yarım Küre’de (Ekvator ile Oğlak Dönencesi arasında) de olabilir; <b>kesin değildir</b>. Cevap <b>B</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Aşağıdaki şekilde özdeş üç ışık demetinin (I, II ve III) aynı anda Dünya üzerindeki K, L ve M bölgelerinde aydınlattığı yüzey alanları (S, 2S ve 3S) gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 480 185" width="460" role="img" aria-label="Dünya üzerinde S, 2S ve 3S aydınlanma alanları">
-<g fill="#fef08a" opacity="0.6" stroke="#f59e0b" stroke-width="1.5">
-<polygon points="30,30 198,30 228,55 30,55"/>
-<polygon points="30,85 165,85 170,105 30,105"/>
-<polygon points="30,135 190,135 208,155 30,155"/>
-</g>
-<circle cx="245" cy="95" r="80" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="220" y1="18" x2="270" y2="172" stroke="#1e3a8a" stroke-width="1.5"/>
-<line x1="168" y1="118" x2="322" y2="72" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4 3"/>
-<path d="M198,30 A80,80 0 0,1 228,55" fill="none" stroke="#dc2626" stroke-width="5"/>
-<path d="M165,85 A80,80 0 0,1 170,105" fill="none" stroke="#dc2626" stroke-width="5"/>
-<path d="M190,135 A80,80 0 0,1 208,155" fill="none" stroke="#dc2626" stroke-width="5"/>
-<g font-size="10.5" font-weight="bold">
-<text x="85" y="47">I. Demet</text><text x="235" y="45" fill="#dc2626">K (3S)</text>
-<text x="85" y="99">II. Demet</text><text x="180" y="99" fill="#dc2626">L (S)</text>
-<text x="85" y="149">III. Demet</text><text x="215" y="152" fill="#dc2626">M (2S)</text>
-<text x="328" y="75" fill="#1e3a8a" font-size="10">Ekvator</text>
-</g>
-</svg></div>
-<p>Buna göre bu konumda K, L ve M bölgeleri ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Birim yüzeye düşen ışık enerjisi miktarı arasındaki ilişki K > M > L şeklindedir.`,
-    `Görseldeki konum 21 Aralık tarihine aittir ve L bölgesi Oğlak Dönencesi üzerindedir.`,
-    `Görseldeki konum 21 Haziran tarihine aittir ve L bölgesinde öğle vakti gölge boyu en kısadır.`,
-    `I. ışık demetinin taşıdığı enerji, II. ışık demetinin taşıdığı enerjinin 3 katıdır.`
-  ],
-  a: "C",
-  s: `<p>Görselde Dünya’nın Kuzey Kutbu Güneş’e (sola) doğru eğiktir ve Ekvator’un kuzeyinde yer alan <b>L bölgesinde</b> aydınlanan alan en dardır (S). Bu durum tarihin <b>21 Haziran</b> olduğunu ve ışınların <b>L’ye (Yengeç Dönencesi)</b> en dik açıyla düştüğünü gösterir.</p>
-<p>Alan daraldıkça (S &lt; 2S &lt; 3S) birim yüzeye düşen enerji artar (E(L) &gt; E(M) &gt; E(K), A yanlıştır) ve öğle vakti gölge boyu en kısa <b>L bölgesinde</b> olur (<b>C doğru</b>). Özdeş demetlerin taşıdığı toplam enerjiler birbirine eşittir (D yanlıştır).</p>`
-},
-{
-  q: `<p>Dünya’nın Güneş etrafındaki yörüngesinde 1, 2, 3 ve 4 numaralı zaman aralıkları ile Dünya üzerindeki X (Yengeç Dönencesi) ve Y (Ekvator) noktaları aşağıda verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 500 185" width="480" role="img" aria-label="Yörünge aralıkları 1 2 3 4 ve Dünya üzerindeki X Y noktaları">
-<ellipse cx="155" cy="92" rx="120" ry="58" fill="none" stroke="#64748b" stroke-width="1.8"/>
-<circle cx="155" cy="92" r="20" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
-<g stroke="#1e3a8a" stroke-width="1.4">
-<circle cx="35" cy="92" r="13" fill="#93c5fd"/><line x1="29" y1="106" x2="41" y2="78"/>
-<circle cx="275" cy="92" r="13" fill="#93c5fd"/><line x1="269" y1="106" x2="281" y2="78"/>
-<circle cx="155" cy="150" r="13" fill="#93c5fd"/><line x1="149" y1="164" x2="161" y2="136"/>
-<circle cx="155" cy="34" r="13" fill="#93c5fd"/><line x1="149" y1="48" x2="161" y2="20"/>
-</g>
-<g font-size="10.5" font-weight="bold" fill="#dc2626">
-<text x="75" y="142">1. Aralık</text><text x="215" y="142">2. Aralık</text>
-<text x="215" y="52">3. Aralık</text><text x="75" y="52">4. Aralık</text>
-</g>
-<g font-size="9.5" text-anchor="middle">
-<text x="35" y="120">21 Haz</text><text x="155" y="177">23 Eyl</text><text x="275" y="120">21 Ara</text><text x="155" y="15">21 Mar</text>
-</g>
-<circle cx="405" cy="92" r="55" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="350" y1="92" x2="460" y2="92" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="355" y1="68" x2="455" y2="68" stroke="#1e3a8a" stroke-dasharray="4 2"/>
-<circle cx="405" cy="68" r="4" fill="#dc2626"/><text x="413" y="65" font-size="11" font-weight="bold">X (23°27′ K)</text>
-<circle cx="405" cy="92" r="4" fill="#dc2626"/><text x="413" y="106" font-size="11" font-weight="bold">Y (0°)</text>
-</svg></div>
-<p>Dünya’nın numaralandırılmış yörünge aralıklarındaki hareketi sırasında X ve Y noktalarında gerçekleşen değişimlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `1. aralıkta X noktasında öğle vakti gölge boyu sürekli azalırken Y noktasında sürekli artar.`,
-    `4. aralıkta (21 Mart → 21 Haziran) Y noktasında öğle vakti gölge boyu büyürken X noktasında sıfıra doğru küçülür.`,
-    `2. ve 3. aralıklarda Y noktasında gündüz süresi önce kısalır, sonra uzar.`,
-    `X noktasında 3. aralık boyunca gündüz süresi gece süresinden uzundur.`
-  ],
-  a: "B",
-  s: `<p><b>4. aralık (21 Mart → 21 Haziran):</b></p>
-<ul>
-<li>21 Mart’ta Güneş ışınları <b>Y (Ekvator)</b> noktasına dik (90°) düşmektedir (Y’de gölge = 0, X’te gölge &gt; 0).</li>
-<li>Dünya 21 Mart’tan 21 Haziran’a ilerlerken dik gelen ışınlar Ekvator’dan (Y) <b>Yengeç Dönencesi’ne (X)</b> doğru kayar.</li>
-<li>Bu süreçte <b>Y noktasında</b> ışınlar eğikleştiği için gölge boyu sıfırdan başlayarak <b>büyür</b>; <b>X noktasında</b> ise ışınlar dikleştiği için gölge boyu küçülerek 21 Haziran’da <b>sıfır</b> olur (<b>B doğru</b>).</li>
-</ul>
-<p>A yanlıştır: 1. aralıkta (21 Haz → 23 Eyl) diklik X’ten Y’ye kayar; X’te gölge artar, Y’de azalır. C yanlıştır: Ekvator’da (Y) gündüz süresi yıl boyu değişmez (hep 12 saat). D yanlıştır: 3. aralıkta (21 Ara → 21 Mar) KYK’deki X’te kış yaşanır, gece &gt; gündüzdür.</p>`
-},
-{
-  q: `<p>Bir öğrenci özdeş iki balonun ağzını esnek bir boru ve vana ile birbirine bağlıyor. I. balonu 10 °C’luk soğuk su bulunan kaba, II. balonu ise 60 °C’luk sıcak su bulunan kaba daldırıyor. Yeterince bekledikten sonra borudaki vanayı açıyor.</p>
-<div class="fig"><svg viewBox="0 0 460 155" width="440" role="img" aria-label="Sıcak ve soğuk su kaplarındaki balon deneyi">
-<rect x="45" y="75" width="120" height="65" fill="#93c5fd" stroke="#1e3a8a" stroke-width="2"/>
-<rect x="295" y="75" width="120" height="65" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/>
-<circle cx="105" cy="58" r="24" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
-<circle cx="355" cy="52" r="30" fill="#fde047" stroke="#ca8a04" stroke-width="2"/>
-<line x1="129" y1="55" x2="325" y2="55" stroke="#475569" stroke-width="5"/>
-<rect x="218" y="46" width="24" height="18" rx="2" fill="#dc2626"/>
-<text x="230" y="41" font-size="10.5" font-weight="bold" text-anchor="middle">Vana</text>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="105" y="62">I</text><text x="355" y="56">II</text>
-<text x="105" y="120" fill="#1e3a8a">Soğuk Su (10 °C)</text>
-<text x="355" y="120" fill="#7f1d1d">Sıcak Su (60 °C)</text>
-</g>
-</svg></div>
-<p>Bu deneyin doğadaki rüzgâr oluşumuyla ilişkilendirilmesiyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `I. kap alçak basınç alanını, II. kap ise yüksek basınç alanını temsil etmektedir.`,
-    `II. kaptaki suyun bulunduğu bölgede tanecikler birbirine yaklaşarak alçalıcı hava hareketini modeller.`,
-    `Vana açıldığında hava akışı, soğuk bölgedeki (yüksek basınç) I. kaptan sıcak bölgedeki (alçak basınç) II. kaba doğru gerçekleşir.`,
-    `Kaplardaki su sıcaklıkları birbirine yaklaştırılırsa vana açıldığında oluşan hava akımının hızı artar.`
-  ],
-  a: "C",
-  s: `<p>Doğadaki rüzgâr oluşumunda <b>soğuk bölge (10 °C – I. kap)</b> taneciklerin yoğunlaştığı ve alçaldığı <b>Yüksek Basınç (YB)</b> alanını; <b>sıcak bölge (60 °C – II. kap)</b> ise havanın genleşip yükseldiği <b>Alçak Basınç (AB)</b> alanını temsil eder.</p>
-<p>Rüzgâr yüksek basınç alanından (soğuk - I) alçak basınç alanına (sıcak - II) doğru gerçekleşir (<b>C doğru</b>). Sıcaklık farkı azalırsa basınç farkı ve hava akımının hızı azalır (D yanlıştır).</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda P, R ve S şehirlerinde <b>21 Mart, 21 Haziran ve 21 Aralık</b> tarihlerinde ölçülen gündüz süreleri (saat) verilmiştir.</p>
-<table class="rt">
-<tr><th>Şehir</th><th>21 Mart</th><th>21 Haziran</th><th>21 Aralık</th></tr>
-<tr><td><b>P</b></td><td>12 saat</td><td>19 saat</td><td>5 saat</td></tr>
-<tr><td><b>R</b></td><td>12 saat</td><td>14 saat</td><td>10 saat</td></tr>
-<tr><td><b>S</b></td><td>12 saat</td><td>9 saat</td><td>15 saat</td></tr>
-</table>
-<p>Tablodaki verilere göre P, R ve S şehirlerinin Dünya üzerindeki konumları aşağıdakilerin hangisinde doğru gösterilmiştir?</p>`,
-  c: [
-    `P ve R Kuzey Yarım Küre’de (P kutba daha yakın); S Güney Yarım Küre’de`,
-    `P ve R Güney Yarım Küre’de (P Ekvator’a daha yakın); S Kuzey Yarım Küre’de`,
-    `P Kuzey Yarım Küre’de; R Ekvator üzerinde; S Güney Yarım Küre’de`,
-    `P ve S Kuzey Yarım Küre’de; R Güney Yarım Küre’de`
-  ],
+  s: `<p>21 Mart’ta Güneş ışınları öğle vakti <b>Ekvator</b>’a dik gelir. Gölgesi oluşmayan K Ekvator üzerindedir. Ekvator’dan uzaklaştıkça ışınlar eğikleşir ve gölge uzar; M’nin gölgesi L’ninkinden uzun olduğuna göre M Ekvator’a daha uzaktır (<b>B</b> ✓).</p><p><b>A</b> ✗: Ekinoksta ışınlar iki yarım küreye simetrik gelir; Ekvator’a eşit uzaklıktaki kuzey ve güney şehirlerinde gölge eşittir. Gölge boyundan yarım küre bulunamaz. <b>C</b> ✗: 21 Haziran’da dik ışın Yengeç Dönencesi’ndedir; Ekvator’daki K’de gölge oluşur. <b>D</b> kesin değil: L ile M’nin yarım küreleri bilinmiyor. Örneğin L kuzeyde, M güneyde olursa 21 Aralık’ta Oğlak Dönencesi’ne daha yakın olan M’nin gölgesi daha kısa olabilir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Yatay zemine dik olarak duran bir çubuğun öğle vakti gölge boyu bir yıl boyunca ölçülerek aşağıdaki grafik çizilmiştir. Grafikte gölgenin hiç oluşmadığı günler X ve Y ile işaretlenmiştir.</p><div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Bir yıl boyunca öğle vakti gölge boyu" font-family="sans-serif"><defs><marker id="a5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="200" x2="520" y2="200" stroke="#334155" stroke-width="1.5" marker-end="url(#a5)"/><line x1="60" y1="200" x2="60" y2="20" stroke="#334155" stroke-width="1.5" marker-end="url(#a5)"/><text x="520.0" y="230.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Aylar</text><text x="66.0" y="22.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Öğle vakti gölge boyu</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="60.0,53.4 62.3,54.3 64.7,55.4 67.0,56.7 69.3,58.0 71.6,59.5 74.0,61.1 76.3,62.8 78.6,64.7 81.0,66.6 83.3,68.6 85.6,70.8 87.9,73.0 90.3,75.3 92.6,77.6 94.9,80.1 97.3,82.6 99.6,85.2 101.9,87.8 104.2,90.5 106.6,93.2 108.9,96.0 111.2,98.7 113.6,101.6 115.9,104.4 118.2,107.3 120.5,110.2 122.9,113.1 125.2,116.1 127.5,119.0 129.9,121.9 132.2,124.9 134.5,127.8 136.8,130.7 139.2,133.7 141.5,136.6 143.8,139.5 146.2,142.4 148.5,145.3 150.8,148.1 153.2,151.0 155.5,153.8 157.8,156.6 160.1,159.4 162.5,162.1 164.8,164.8 167.1,167.5 169.5,170.1 171.8,172.7 174.1,175.3 176.4,177.8 178.8,180.3 181.1,182.8 183.4,185.2 185.8,187.5 188.1,189.9 190.4,192.1 192.7,194.3 195.1,196.5 197.4,198.6 199.7,199.4 202.1,197.4 204.4,195.4 206.7,193.6 209.0,191.8 211.4,190.0 213.7,188.4 216.0,186.8 218.4,185.3 220.7,183.8 223.0,182.5 225.3,181.2 227.7,180.0 230.0,178.8 232.3,177.8 234.7,176.8 237.0,175.9 239.3,175.1 241.6,174.4 244.0,173.8 246.3,173.3 248.6,172.9 251.0,172.5 253.3,172.3 255.6,172.1 257.9,172.1 260.3,172.1 262.6,172.2 264.9,172.4 267.3,172.8 269.6,173.2 271.9,173.7 274.2,174.2 276.6,174.9 278.9,175.7 281.2,176.5 283.6,177.5 285.9,178.5 288.2,179.6 290.5,180.8 292.9,182.0 295.2,183.4 297.5,184.8 299.9,186.3 302.2,187.9 304.5,189.5 306.8,191.2 309.2,193.0 311.5,194.9 313.8,196.8 316.2,198.7 318.5,199.2 320.8,197.2 323.2,195.0 325.5,192.8 327.8,190.6 330.1,188.3 332.5,185.9 334.8,183.5 337.1,181.1 339.5,178.6 341.8,176.1 344.1,173.5 346.4,170.9 348.8,168.3 351.1,165.6 353.4,162.9 355.8,160.2 358.1,157.5 360.4,154.7 362.7,151.9 365.1,149.0 367.4,146.2 369.7,143.3 372.1,140.4 374.4,137.5 376.7,134.6 379.0,131.7 381.4,128.7 383.7,125.8 386.0,122.9 388.4,119.9 390.7,117.0 393.0,114.0 395.3,111.1 397.7,108.2 400.0,105.3 402.3,102.5 404.7,99.6 407.0,96.8 409.3,94.0 411.6,91.3 414.0,88.6 416.3,86.0 418.6,83.4 421.0,80.9 423.3,78.4 425.6,76.0 427.9,73.7 430.3,71.4 432.6,69.3 434.9,67.2 437.3,65.3 439.6,63.4 441.9,61.6 444.2,60.0 446.6,58.5 448.9,57.1 451.2,55.8 453.6,54.7 455.9,53.7 458.2,52.8 460.5,52.1 462.9,51.5 465.2,51.0 467.5,50.8 469.9,50.6 472.2,50.6 474.5,50.8 476.8,51.1 479.2,51.5 481.5,52.1 483.8,52.8"/><line x1="76.3" y1="200" x2="76.3" y2="205" stroke="#334155"/><text x="76.3" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Oca</text><line x1="112.4" y1="200" x2="112.4" y2="205" stroke="#334155"/><text x="112.4" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Şub</text><line x1="145.0" y1="200" x2="145.0" y2="205" stroke="#334155"/><text x="145.0" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Mar</text><line x1="181.1" y1="200" x2="181.1" y2="205" stroke="#334155"/><text x="181.1" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Nis</text><line x1="216.0" y1="200" x2="216.0" y2="205" stroke="#334155"/><text x="216.0" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">May</text><line x1="252.1" y1="200" x2="252.1" y2="205" stroke="#334155"/><text x="252.1" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz</text><line x1="287.1" y1="200" x2="287.1" y2="205" stroke="#334155"/><text x="287.1" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Tem</text><line x1="323.2" y1="200" x2="323.2" y2="205" stroke="#334155"/><text x="323.2" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Ağu</text><line x1="359.2" y1="200" x2="359.2" y2="205" stroke="#334155"/><text x="359.2" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl</text><line x1="394.2" y1="200" x2="394.2" y2="205" stroke="#334155"/><text x="394.2" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Eki</text><line x1="430.3" y1="200" x2="430.3" y2="205" stroke="#334155"/><text x="430.3" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Kas</text><line x1="465.2" y1="200" x2="465.2" y2="205" stroke="#334155"/><text x="465.2" y="219.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara</text><circle cx="198.6" cy="200" r="4.5" fill="#1d4ed8"/><text x="198.6" y="190.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">X</text><circle cx="317.3" cy="200" r="4.5" fill="#1d4ed8"/><text x="317.3" y="190.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">Y</text></svg></div><p><b>Bu ölçümler aşağıdaki konumların hangisinde bulunan bir şehirde yapılmış olabilir?</b></p>`,
+  c: ["Ekvator ile Yengeç Dönencesi arasında", "Ekvator üzerinde", "Yengeç Dönencesi üzerinde", "Ekvator ile Oğlak Dönencesi arasında"],
   a: "A",
-  s: `<p>Tablodaki verileri analiz edelim:</p>
-<ul>
-<li><b>21 Haziran</b>’da gündüz süresi 12 saatten uzun olan <b>P (19 sa)</b> ve <b>R (14 sa)</b> şehirleri <b>Kuzey Yarım Küre’dedir</b>.</li>
-<li>Ekvator’dan kutuplara doğru gidildikçe gece–gündüz süresi farkı artar (21 Haziran’da kuzeye gidildikçe gündüz uzar). P’de gündüz 19 saat, R’de 14 saat olduğundan <b>P şehri Kuzey Kutbu’na R’den daha yakındır</b> (Ekvator’a daha uzaktır).</li>
-<li><b>S şehrinde</b> ise 21 Aralık’ta gündüz 15 saat, 21 Haziran’da 9 saat olduğundan S şehri <b>Güney Yarım Küre’dedir</b>.</li>
-</ul>
-<p>Buna göre doğru konumlandırma <b>A</b> seçeneğindedir.</p>`
-}
+  s: `<p>Gölgenin oluşmadığı günlerde Güneş ışınları öğle vakti dik gelir. Yılda <b>iki kez</b> dik ışın alan yer iki dönence arasındadır; dönencelerin üzerine yılda yalnız bir kez dik ışın gelir (<b>C</b> ✗).</p><p>Ekvator’a dik ışın 21 Mart ve 23 Eylül’de gelir; grafikteki X ise nisan–mayıs geçişinde, Y ağustos ayındadır (<b>B</b> ✗). X ve Y, dik ışınların Kuzey Yarım Küre’de olduğu 21 Mart – 23 Eylül dönemindedir. Ayrıca gölge en uzun aralıkta olmuştur; yani şehir aralıkta en eğik ışını alır ve kışı yaşar. Buna göre şehir <b>Ekvator ile Yengeç Dönencesi arasındadır</b> (<b>A</b> ✓).</p><p><b>D</b> ✗: Ekvator ile Oğlak Dönencesi arasındaki bir şehirde gölge kasım ve şubat civarında sıfırlanır, en uzun gölge ise haziranda olurdu.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şekilde Dünya’nın 21 Haziran’daki konumu ile eş yükseltideki K, L ve M şehirleri ve enlemleri gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 500 290" width="480" role="img" aria-label="21 Haziran konumunda K, L, M şehirleri" font-family="sans-serif"><defs><marker id="a6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><circle cx="-70" cy="135" r="140" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><text x="18.0" y="139.0" font-size="13" text-anchor="start" font-weight="bold" fill="#92400e">Güneş</text><line x1="85" y1="75" x2="160" y2="75" stroke="#d97706" stroke-width="2" marker-end="url(#a6)"/><line x1="85" y1="105" x2="160" y2="105" stroke="#d97706" stroke-width="2" marker-end="url(#a6)"/><line x1="85" y1="135" x2="160" y2="135" stroke="#d97706" stroke-width="2" marker-end="url(#a6)"/><line x1="85" y1="165" x2="160" y2="165" stroke="#d97706" stroke-width="2" marker-end="url(#a6)"/><line x1="85" y1="195" x2="160" y2="195" stroke="#d97706" stroke-width="2" marker-end="url(#a6)"/><circle cx="285" cy="135" r="100" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="193.3" y1="174.9" x2="376.7" y2="95.1" stroke="#1e3a8a" stroke-width="2.2"/><text x="384.7" y="99.1" font-size="11" text-anchor="start" fill="#1e3a8a">Ekvator</text><line x1="185.0" y1="135.0" x2="353.2" y2="61.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="361.2" y="65.9" font-size="11" text-anchor="start" fill="#1e3a8a">Yengeç D.</text><line x1="216.8" y1="208.1" x2="385.0" y2="135.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="393.0" y="139.0" font-size="11" text-anchor="start" fill="#1e3a8a">Oğlak D.</text><line x1="238.7" y1="28.6" x2="331.3" y2="241.4" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="238.7" y="23.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="331.3" y="255.4" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="300.7" cy="109.3" r="4" fill="#dc2626"/><text x="312.7" y="103.3" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><circle cx="284.9" cy="80.5" r="4" fill="#dc2626"/><text x="296.9" y="74.5" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><circle cx="324.8" cy="172.2" r="4" fill="#dc2626"/><text x="336.8" y="166.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">M</text><text x="150.0" y="278.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">K: 10° Kuzey</text><text x="270.0" y="278.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">L: 30° Kuzey</text><text x="390.0" y="278.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">M: 30° Güney</text></svg></div><p><b>Buna göre öğle vakti bu şehirlerde birim yüzeye düşen Güneş enerjisi miktarlarının karşılaştırılması aşağıdakilerden hangisidir?</b></p>`,
+  c: ["K &gt; L &gt; M", "K &gt; L = M", "M &gt; L &gt; K", "L &gt; K &gt; M"],
+  a: "D",
+  s: `<p>21 Haziran’da ışınlar öğle vakti Yengeç Dönencesi’ne (yaklaşık 23,5° K) dik gelir. Bir şehir dik ışının geldiği paralele ne kadar yakınsa ışınları o kadar dik alır ve birim yüzeye düşen enerji o kadar fazla olur.</p><p>Yengeç Dönencesi’ne uzaklıklar: L (30° K) yaklaşık 6,5°, K (10° K) yaklaşık 13,5°, M (30° G) yaklaşık 53,5°. Sıralama <b>L &gt; K &gt; M</b>’dir (<b>D</b> ✓).</p><p><b>A</b> Ekvator’a yakın olanın her zaman daha çok enerji alacağı yanılgısından gelir. <b>B</b> L ile M Ekvator’a eşit uzaklıkta diye eşit enerji aldıklarını düşünmekten gelir; oysa 21 Haziran’da kuzeydeki L yazı, güneydeki M kışı yaşar. <b>C</b> sıralamayı tersine çevirir.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki grafikte eş yükseltideki X ve Y şehirlerinde gündüz süresinin yıl içindeki değişimi verilmiştir.</p><div class="fig"><svg viewBox="0 0 540 270" width="540" role="img" aria-label="X ve Y şehirlerinde gündüz süresinin yıl içindeki değişimi" font-family="sans-serif"><defs><marker id="a7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="190.0" x2="500" y2="190.0" stroke="#e2e8f0"/><text x="54.0" y="194.0" font-size="11" text-anchor="end" fill="#0f172a">8 sa</text><line x1="60" y1="160.0" x2="500" y2="160.0" stroke="#e2e8f0"/><text x="54.0" y="164.0" font-size="11" text-anchor="end" fill="#0f172a">10 sa</text><line x1="60" y1="130.0" x2="500" y2="130.0" stroke="#e2e8f0"/><text x="54.0" y="134.0" font-size="11" text-anchor="end" fill="#0f172a">12 sa</text><line x1="60" y1="100.0" x2="500" y2="100.0" stroke="#e2e8f0"/><text x="54.0" y="104.0" font-size="11" text-anchor="end" fill="#0f172a">14 sa</text><line x1="60" y1="70.0" x2="500" y2="70.0" stroke="#e2e8f0"/><text x="54.0" y="74.0" font-size="11" text-anchor="end" fill="#0f172a">16 sa</text><line x1="60" y1="220" x2="520" y2="220" stroke="#334155" stroke-width="1.5" marker-end="url(#a7)"/><line x1="60" y1="220" x2="60" y2="20" stroke="#334155" stroke-width="1.5" marker-end="url(#a7)"/><text x="520.0" y="250.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Aylar</text><text x="66.0" y="22.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gündüz süresi</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="70.0,190.5 73.4,189.6 76.7,188.5 80.1,187.2 83.5,185.7 86.8,184.1 90.2,182.4 93.6,180.5 97.0,178.5 100.3,176.4 103.7,174.1 107.1,171.8 110.4,169.4 113.8,166.9 117.2,164.4 120.5,161.8 123.9,159.1 127.3,156.4 130.7,153.7 134.0,150.9 137.4,148.1 140.8,145.3 144.1,142.4 147.5,139.6 150.9,136.7 154.2,133.8 157.6,131.0 161.0,128.1 164.4,125.2 167.7,122.3 171.1,119.5 174.5,116.6 177.8,113.8 181.2,110.9 184.6,108.2 187.9,105.4 191.3,102.7 194.7,100.0 198.1,97.3 201.4,94.8 204.8,92.2 208.2,89.8 211.5,87.4 214.9,85.1 218.3,82.9 221.6,80.8 225.0,78.9 228.4,77.0 231.8,75.3 235.1,73.8 238.5,72.4 241.9,71.1 245.2,70.1 248.6,69.2 252.0,68.6 255.3,68.1 258.7,67.8 262.1,67.8 265.5,67.9 268.8,68.3 272.2,68.8 275.6,69.6 278.9,70.5 282.3,71.7 285.7,73.0 289.0,74.4 292.4,76.1 295.8,77.8 299.2,79.7 302.5,81.8 305.9,83.9 309.3,86.1 312.6,88.5 316.0,90.9 319.4,93.4 322.7,95.9 326.1,98.5 329.5,101.2 332.8,103.9 336.2,106.7 339.6,109.4 343.0,112.2 346.3,115.1 349.7,117.9 353.1,120.8 356.4,123.6 359.8,126.5 363.2,129.4 366.5,132.3 369.9,135.2 373.3,138.0 376.7,140.9 380.0,143.8 383.4,146.6 386.8,149.4 390.1,152.2 393.5,155.0 396.9,157.7 400.2,160.4 403.6,163.0 407.0,165.6 410.4,168.1 413.7,170.5 417.1,172.9 420.5,175.2 423.8,177.4 427.2,179.4 430.6,181.4 433.9,183.2 437.3,184.9 440.7,186.4 444.1,187.8 447.4,189.0 450.8,190.0 454.2,190.9 457.5,191.5 460.9,191.9 464.3,192.2 467.6,192.2 471.0,192.0 474.4,191.7 477.8,191.1"/><polyline fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4" points="70.0,101.7 73.4,102.1 76.7,102.6 80.1,103.2 83.5,103.8 86.8,104.5 90.2,105.3 93.6,106.1 97.0,107.0 100.3,108.0 103.7,109.0 107.1,110.1 110.4,111.2 113.8,112.3 117.2,113.5 120.5,114.8 123.9,116.0 127.3,117.3 130.7,118.6 134.0,119.9 137.4,121.3 140.8,122.6 144.1,124.0 147.5,125.4 150.9,126.7 154.2,128.1 157.6,129.5 161.0,130.9 164.4,132.3 167.7,133.7 171.1,135.1 174.5,136.5 177.8,137.8 181.2,139.2 184.6,140.5 187.9,141.9 191.3,143.1 194.7,144.4 198.1,145.7 201.4,146.9 204.8,148.0 208.2,149.2 211.5,150.3 214.9,151.3 218.3,152.3 221.6,153.3 225.0,154.1 228.4,155.0 231.8,155.7 235.1,156.4 238.5,157.0 241.9,157.5 245.2,158.0 248.6,158.4 252.0,158.7 255.3,158.9 258.7,159.0 262.1,159.0 265.5,158.9 268.8,158.8 272.2,158.5 275.6,158.2 278.9,157.8 282.3,157.3 285.7,156.7 289.0,156.1 292.4,155.4 295.8,154.6 299.2,153.7 302.5,152.8 305.9,151.9 309.3,150.8 312.6,149.8 316.0,148.7 319.4,147.5 322.7,146.3 326.1,145.1 329.5,143.8 332.8,142.6 336.2,141.2 339.6,139.9 343.0,138.6 346.3,137.2 349.7,135.8 353.1,134.5 356.4,133.1 359.8,131.7 363.2,130.3 366.5,128.9 369.9,127.5 373.3,126.1 376.7,124.7 380.0,123.3 383.4,122.0 386.8,120.6 390.1,119.3 393.5,118.0 396.9,116.7 400.2,115.4 403.6,114.2 407.0,113.0 410.4,111.8 413.7,110.7 417.1,109.6 420.5,108.6 423.8,107.6 427.2,106.6 430.6,105.8 433.9,104.9 437.3,104.2 440.7,103.5 444.1,102.9 447.4,102.4 450.8,102.0 454.2,101.6 457.5,101.3 460.9,101.1 464.3,101.0 467.6,101.0 471.0,101.1 474.4,101.3 477.8,101.5"/><text x="85.7" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Oca</text><text x="120.5" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Şub</text><text x="152.0" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Mar</text><text x="186.8" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Nis</text><text x="220.5" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">May</text><text x="255.3" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz</text><text x="289.0" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Tem</text><text x="323.9" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Ağu</text><text x="358.7" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl</text><text x="392.4" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Eki</text><text x="427.2" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Kas</text><text x="460.9" y="238.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara</text><line x1="330" y1="18" x2="356" y2="18" stroke="#dc2626" stroke-width="2.5"/><text x="361.0" y="22.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">X şehri</text><line x1="430" y1="18" x2="456" y2="18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/><text x="461.0" y="22.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">Y şehri</text></svg></div><p><b>Grafiğe göre aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["X şehri Kuzey Yarım Küre’de olup Ekvator’a Y şehrinden daha uzaktır.", "Ocak ayında X şehrinde yaz mevsimi yaşanır.", "21 Mart ile 21 Haziran arasında Y şehrinde gündüz süresi uzar.", "Yıl içindeki en uzun ve en kısa gündüz arasındaki fark Y şehrinde daha fazladır."],
+  a: "A",
+  s: `<p>X’te en uzun gündüz haziranda (yaklaşık 16 saat), en kısa gündüz aralıkta (yaklaşık 8 saat) yaşanır; X <b>Kuzey</b> Yarım Küre’dedir. Y’de en uzun gündüz aralıkta olduğundan Y Güney Yarım Küre’dedir.</p><p>Ekvator’dan kutuplara gidildikçe yıl içindeki gündüz süresi farkı artar. Fark X’te yaklaşık 8 saat, Y’de yaklaşık 4 saattir; X Ekvator’a daha uzaktır (<b>A</b> ✓). Bu yüzden <b>D</b> ✗.</p><p><b>B</b> ✗: Ocakta X’te gündüzler kısadır, kış yaşanır. <b>C</b> ✗: Martan hazirana Y’nin eğrisi alçalır; Güney Yarım Küre’deki Y’de gündüz kısalır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıda üç farklı kurumun iş ilanlarından bölümler verilmiştir.</p><div class="box"><p><b>I.</b> Havalimanımızda pilotlara kalkıştan önce rüzgâr, sis ve buzlanma uyarıları verecek uzman aranıyor.</p><p><b>II.</b> Kurumumuz, Türkiye’nin son 50 yıllık sıcaklık ve yağış ortalamalarını inceleyerek yeni bir iklim haritası hazırlayacak uzman arıyor.</p><p><b>III.</b> Belediyemiz, yarın sabah yollarda oluşabilecek buzlanmaya karşı tuzlama ekiplerini yönlendirecek tahmin uzmanı arıyor.</p></div><p><b>Bu ilanlarda aranan uzmanlar aşağıdakilerin hangisinde doğru eşleştirilmiştir?</b></p>`,
+  c: ["I: Klimatolog — II: Meteorolog — III: Klimatolog", "I: Meteorolog — II: Klimatolog — III: Meteorolog", "I: Meteorolog — II: Meteorolog — III: Klimatolog", "I: Klimatolog — II: Klimatolog — III: Meteorolog"],
+  a: "B",
+  s: `<p>Kısa süreli hava olaylarını inceleyen ve hava tahmini yapan uzman <b>meteorolog</b>, uzun yıllık verilerin ortalamasıyla iklimi inceleyen uzman <b>klimatolog (iklim bilimci)</b>dur.</p><p>I. ilanda kalkıştan hemen önceki rüzgâr ve sis durumu, III. ilanda yarın sabahki buzlanma söz konusudur; ikisi de kısa süreli tahmindir → meteorolog. II. ilanda 50 yıllık ortalamalarla iklim haritası hazırlanacaktır → klimatolog. Doğru eşleştirme <b>B</b> seçeneğindedir.</p><p>Diğer şıklarda en az bir ilanda kısa süreli tahmin klimatologa ya da uzun yıllık iklim çalışması meteorologa verilmiştir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ziraat mühendisi, K ve L illerinden hangisinin çay tarımına daha uygun olduğunu bu illerin <b>iklim</b> özelliklerine göre karşılaştırmak istiyor. Elindeki veri grupları tabloda verilmiştir.</p><table><tr><th>Veri grubu</th><th>Kapsadığı süre</th><th>Ölçüm yapılan aylar</th><th>Ölçülen veriler</th></tr><tr><td>1</td><td>2025 yılı</td><td>Bütün aylar</td><td>Sıcaklık, yağış, nem</td></tr><tr><td>2</td><td>1991 – 2020</td><td>Yalnızca yaz ayları</td><td>Sıcaklık, yağış, nem</td></tr><tr><td>3</td><td>1991 – 2020</td><td>Bütün aylar</td><td>Sıcaklık, yağış, nem</td></tr><tr><td>4</td><td>1 – 30 Haziran 2025</td><td>Her gün, saatlik</td><td>Sıcaklık, yağış, nem, rüzgâr</td></tr></table><p><b>Mühendisin amacına ulaşabilmesi için hangi veri grubunu kullanması en uygundur?</b></p>`,
+  c: ["1. veri grubu", "2. veri grubu", "3. veri grubu", "4. veri grubu"],
+  a: "C",
+  s: `<p>İklim, geniş bir alanda <b>uzun yıllar</b> boyunca gözlenen hava olaylarının ortalamasıdır. İklimi belirlemek için hem uzun bir süreyi hem de yılın <b>bütün mevsimlerini</b> kapsayan veriler gerekir.</p><p>3. grup 30 yıllık ve bütün ayları kapsar (<b>C</b> ✓). 1. grup tek bir yıla aittir; o yılın hava olaylarını yansıtır (<b>A</b> ✗). 2. grup uzun yıllık olsa da yalnız yaz aylarını kapsar; kış koşulları bilinmez (<b>B</b> ✗). 4. grup çok ayrıntılı olsa da yalnızca bir aylık hava durumu bilgisidir (<b>D</b> ✗).</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir haber sitesinde Doğu Karadeniz ile ilgili aşağıdaki metin yayımlanmıştır.</p><div class="box"><p>(I) Meteoroloji uyarısına göre yarın Doğu Karadeniz’de kuvvetli sağanak yağış bekleniyor. (II) Bölge, Türkiye’de yıllık ortalama yağış miktarının en fazla olduğu yerdir. (III) Uzmanlar, bu sağanak nedeniyle hafta sonu derelerde taşkın yaşanabileceğini belirtti. (IV) Bölgede yılın her mevsiminde yağış görülür; en yağışlı mevsim genellikle sonbahardır.</p></div><p><b>Metindeki numaralanmış cümlelerden hangileri iklim ile ilgilidir?</b></p>`,
+  c: ["II ve IV", "I ve III", "Yalnız IV", "I, II ve IV"],
+  a: "A",
+  s: `<p>İklim, uzun yıllar boyunca gözlenen hava olaylarının ortalamasını; hava olayı ise kısa süreli durumu anlatır.</p><p>(I) “yarın” ve (III) “hafta sonu” ifadeleri kısa süreli olayları anlatır → hava olayı. (II) “yıllık ortalama yağış” ve (IV) “her mevsim, genellikle” ifadeleri bölgenin uzun yıllar boyunca değişmeyen özelliklerini anlatır → iklim. Doğru seçenek <b>A</b>.</p><p><b>C</b> II’deki “ortalama” bilgisini gözden kaçırır. <b>D</b> ve <b>B</b> ise yarınki sağanağı (bir hava olayını) iklim sayar.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Akdeniz kıyısındaki bir ilçede yıllar sonra ilk kez kar yağmasıyla ilgili haberi okuyan öğrenciler şu yorumları yapıyor:</p><div class="dialog"><div><b>Ada:</b> Bu kar yağışı bir hava olayıdır.</div><div><b>Efe:</b> Bu olay, ilçenin ikliminin artık soğuk ve kar yağışlı olduğunu gösterir.</div><div><b>Su:</b> İlçenin iklimini belirlemek için uzun yıllar boyunca toplanan verilerin ortalamasına bakmak gerekir.</div><div><b>Kaan:</b> Böyle bir kar yağışını önceden tahmin edip halkı uyarmak iklim bilimcilerin görevidir.</div></div><p><b>Hangi öğrencilerin yorumları doğrudur?</b></p>`,
+  c: ["Ada ve Su", "Efe ve Kaan", "Ada, Su ve Kaan", "Yalnız Su"],
+  a: "A",
+  s: `<p>Belirli bir günde yağan kar kısa süreli bir olaydır, yani <b>hava olayıdır</b> (Ada ✓). İklim uzun yıllık ortalamalarla belirlenir (Su ✓).</p><p>Efe ✗: Tek bir kar yağışı iklimin değiştiğini göstermez. Kaan ✗: Kısa süreli hava tahminlerini ve uyarıları <b>meteorologlar</b> yapar; iklim bilimciler (klimatologlar) uzun yıllık verilerle çalışır.</p><p>Doğru yorumlar Ada ve Su’ya aittir; doğru seçenek <b>A</b>. <b>D</b> Ada’nın da doğru olduğunu gözden kaçırır; <b>C</b> Kaan’ın meteorolog ile klimatoloğu karıştıran yorumunu doğru sayar.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Şekillerde Dünya’nın Güneş etrafında dolanırken bulunduğu iki farklı konum, tabloda ise hangi yarım kürede oldukları belirtilmeyen K ve L şehirlerinde bu konumlarda ölçülen gündüz süreleri verilmiştir.</p><div class="fig"><svg viewBox="0 0 540 245" width="540" role="img" aria-label="Dünya’nın iki konumu" font-family="sans-serif"><defs><marker id="a12" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><defs><clipPath id="c12a"><rect x="5" y="5" width="260" height="210"/></clipPath><clipPath id="c12b"><rect x="275" y="5" width="260" height="210"/></clipPath></defs><g clip-path="url(#c12a)"><circle cx="330" cy="110" r="110" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><line x1="212" y1="60" x2="180" y2="60" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="212" y1="95" x2="180" y2="95" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="212" y1="130" x2="180" y2="130" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="212" y1="165" x2="180" y2="165" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><text x="240.0" y="115.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#92400e">Güneş</text></g><circle cx="95" cy="112" r="62" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="38.1" y1="87.3" x2="151.9" y2="136.7" stroke="#1e3a8a" stroke-width="2.2"/><line x1="126.1" y1="40.5" x2="63.9" y2="183.5" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="126.1" y="35.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="63.9" y="197.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><text x="95.0" y="140.0" font-size="11" text-anchor="middle" fill="#1e3a8a">Ekvator</text><g clip-path="url(#c12b)"><circle cx="210" cy="110" r="110" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><line x1="328" y1="60" x2="360" y2="60" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="328" y1="95" x2="360" y2="95" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="328" y1="130" x2="360" y2="130" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><line x1="328" y1="165" x2="360" y2="165" stroke="#d97706" stroke-width="2" marker-end="url(#a12)"/><text x="298.0" y="115.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#92400e">Güneş</text></g><circle cx="445" cy="112" r="62" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="388.1" y1="87.3" x2="501.9" y2="136.7" stroke="#1e3a8a" stroke-width="2.2"/><line x1="476.1" y1="40.5" x2="413.9" y2="183.5" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="476.1" y="35.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="413.9" y="197.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><text x="445.0" y="140.0" font-size="11" text-anchor="middle" fill="#1e3a8a">Ekvator</text><rect x="5" y="5" width="260" height="210" fill="none" stroke="#334155" stroke-width="1.5"/><rect x="275" y="5" width="260" height="210" fill="none" stroke="#334155" stroke-width="1.5"/><text x="135.0" y="236.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">I. Konum</text><text x="405.0" y="236.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">II. Konum</text></svg></div><table><tr><th>Şehir</th><th>I. konumda gündüz süresi</th><th>II. konumda gündüz süresi</th></tr><tr><td>K</td><td>10 sa 26 dk</td><td>13 sa 34 dk</td></tr><tr><td>L</td><td>15 sa 50 dk</td><td>8 sa 10 dk</td></tr></table><p><b>Buna göre aşağıdaki yargılardan hangisine ulaşılabilir?</b></p>`,
+  c: ["L şehri Ekvator’a K şehrinden daha yakındır.", "II. konumda K şehrinde yaz mevsimi yaşanır.", "I. konumda L şehrine Güneş ışınları öğle vakti dik açıyla gelir.", "II. konumda öğle vakti K şehrindeki bir çubuğun gölgesi, L şehrindeki özdeş çubuğun gölgesinden uzundur."],
+  a: "B",
+  s: `<p>I. konumda Kuzey Kutbu Güneş’e doğru eğiktir (21 Haziran), II. konumda Güneş’ten uzağa eğiktir (21 Aralık).</p><p>L’de I. konumda gündüz 12 saatten uzun → L Kuzey Yarım Küre’de. K’de I. konumda gündüz kısa, II. konumda uzun → K <b>Güney</b> Yarım Küre’de. II. konum (21 Aralık) Güney Yarım Küre’de yazdır: <b>B</b> ✓.</p><p><b>A</b> ✗: Yıl içindeki gündüz süresi farkı L’de (yaklaşık 7 sa 40 dk) K’dekinden (yaklaşık 3 saat) fazladır; L Ekvator’a daha <b>uzaktır</b>. <b>C</b> ✗: Uzun gündüz, ışının dik geldiği anlamına gelmez; dik ışın Yengeç Dönencesi’ndedir ve L’nin orada olduğuna dair bir bilgi yoktur. <b>D</b> ✗: II. konumda dik ışın Oğlak Dönencesi’ndedir; yazı yaşayan K, ışınları kışı yaşayan L’den daha dik alır ve gölgesi daha <b>kısadır</b>.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Mert, bir el fenerini kareli bir kâğıttan hep aynı uzaklıkta tutarak ışığın kâğıda düşme açısını değiştiriyor ve her denemede aydınlanan kareleri sayıyor.</p><div class="fig"><svg viewBox="0 0 500 175" width="500" role="img" aria-label="Kareli kâğıtta aydınlanan alanlar" font-family="sans-serif"><rect x="15" y="15" width="144" height="120" fill="#ffffff" stroke="#94a3b8"/><line x1="27" y1="15" x2="27" y2="135" stroke="#cbd5e1"/><line x1="39" y1="15" x2="39" y2="135" stroke="#cbd5e1"/><line x1="51" y1="15" x2="51" y2="135" stroke="#cbd5e1"/><line x1="63" y1="15" x2="63" y2="135" stroke="#cbd5e1"/><line x1="75" y1="15" x2="75" y2="135" stroke="#cbd5e1"/><line x1="87" y1="15" x2="87" y2="135" stroke="#cbd5e1"/><line x1="99" y1="15" x2="99" y2="135" stroke="#cbd5e1"/><line x1="111" y1="15" x2="111" y2="135" stroke="#cbd5e1"/><line x1="123" y1="15" x2="123" y2="135" stroke="#cbd5e1"/><line x1="135" y1="15" x2="135" y2="135" stroke="#cbd5e1"/><line x1="147" y1="15" x2="147" y2="135" stroke="#cbd5e1"/><line x1="15" y1="27" x2="159" y2="27" stroke="#cbd5e1"/><line x1="15" y1="39" x2="159" y2="39" stroke="#cbd5e1"/><line x1="15" y1="51" x2="159" y2="51" stroke="#cbd5e1"/><line x1="15" y1="63" x2="159" y2="63" stroke="#cbd5e1"/><line x1="15" y1="75" x2="159" y2="75" stroke="#cbd5e1"/><line x1="15" y1="87" x2="159" y2="87" stroke="#cbd5e1"/><line x1="15" y1="99" x2="159" y2="99" stroke="#cbd5e1"/><line x1="15" y1="111" x2="159" y2="111" stroke="#cbd5e1"/><line x1="15" y1="123" x2="159" y2="123" stroke="#cbd5e1"/><ellipse cx="87" cy="75" rx="23.5" ry="23.5" fill="#facc15" fill-opacity="0.65" stroke="#ca8a04" stroke-width="1.5"/><text x="87.0" y="158.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">1. deneme: 90°</text><rect x="180" y="15" width="144" height="120" fill="#ffffff" stroke="#94a3b8"/><line x1="192" y1="15" x2="192" y2="135" stroke="#cbd5e1"/><line x1="204" y1="15" x2="204" y2="135" stroke="#cbd5e1"/><line x1="216" y1="15" x2="216" y2="135" stroke="#cbd5e1"/><line x1="228" y1="15" x2="228" y2="135" stroke="#cbd5e1"/><line x1="240" y1="15" x2="240" y2="135" stroke="#cbd5e1"/><line x1="252" y1="15" x2="252" y2="135" stroke="#cbd5e1"/><line x1="264" y1="15" x2="264" y2="135" stroke="#cbd5e1"/><line x1="276" y1="15" x2="276" y2="135" stroke="#cbd5e1"/><line x1="288" y1="15" x2="288" y2="135" stroke="#cbd5e1"/><line x1="300" y1="15" x2="300" y2="135" stroke="#cbd5e1"/><line x1="312" y1="15" x2="312" y2="135" stroke="#cbd5e1"/><line x1="180" y1="27" x2="324" y2="27" stroke="#cbd5e1"/><line x1="180" y1="39" x2="324" y2="39" stroke="#cbd5e1"/><line x1="180" y1="51" x2="324" y2="51" stroke="#cbd5e1"/><line x1="180" y1="63" x2="324" y2="63" stroke="#cbd5e1"/><line x1="180" y1="75" x2="324" y2="75" stroke="#cbd5e1"/><line x1="180" y1="87" x2="324" y2="87" stroke="#cbd5e1"/><line x1="180" y1="99" x2="324" y2="99" stroke="#cbd5e1"/><line x1="180" y1="111" x2="324" y2="111" stroke="#cbd5e1"/><line x1="180" y1="123" x2="324" y2="123" stroke="#cbd5e1"/><ellipse cx="252" cy="75" rx="33.2" ry="23.5" fill="#facc15" fill-opacity="0.65" stroke="#ca8a04" stroke-width="1.5"/><text x="252.0" y="158.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">2. deneme: 45°</text><rect x="345" y="15" width="144" height="120" fill="#ffffff" stroke="#94a3b8"/><line x1="357" y1="15" x2="357" y2="135" stroke="#cbd5e1"/><line x1="369" y1="15" x2="369" y2="135" stroke="#cbd5e1"/><line x1="381" y1="15" x2="381" y2="135" stroke="#cbd5e1"/><line x1="393" y1="15" x2="393" y2="135" stroke="#cbd5e1"/><line x1="405" y1="15" x2="405" y2="135" stroke="#cbd5e1"/><line x1="417" y1="15" x2="417" y2="135" stroke="#cbd5e1"/><line x1="429" y1="15" x2="429" y2="135" stroke="#cbd5e1"/><line x1="441" y1="15" x2="441" y2="135" stroke="#cbd5e1"/><line x1="453" y1="15" x2="453" y2="135" stroke="#cbd5e1"/><line x1="465" y1="15" x2="465" y2="135" stroke="#cbd5e1"/><line x1="477" y1="15" x2="477" y2="135" stroke="#cbd5e1"/><line x1="345" y1="27" x2="489" y2="27" stroke="#cbd5e1"/><line x1="345" y1="39" x2="489" y2="39" stroke="#cbd5e1"/><line x1="345" y1="51" x2="489" y2="51" stroke="#cbd5e1"/><line x1="345" y1="63" x2="489" y2="63" stroke="#cbd5e1"/><line x1="345" y1="75" x2="489" y2="75" stroke="#cbd5e1"/><line x1="345" y1="87" x2="489" y2="87" stroke="#cbd5e1"/><line x1="345" y1="99" x2="489" y2="99" stroke="#cbd5e1"/><line x1="345" y1="111" x2="489" y2="111" stroke="#cbd5e1"/><line x1="345" y1="123" x2="489" y2="123" stroke="#cbd5e1"/><ellipse cx="417" cy="75" rx="46.9" ry="23.5" fill="#facc15" fill-opacity="0.65" stroke="#ca8a04" stroke-width="1.5"/><text x="417.0" y="158.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">3. deneme: 30°</text></svg></div><table><tr><th>Deneme</th><th>1. deneme</th><th>2. deneme</th><th>3. deneme</th></tr><tr><td>Işığın kâğıda düşme açısı</td><td>90°</td><td>45°</td><td>30°</td></tr><tr><td>Aydınlanan kare sayısı (yaklaşık)</td><td>12</td><td>17</td><td>24</td></tr></table><p><b>Bu etkinlikle ilgili aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["Bir kareye düşen ışık enerjisi 1. denemede, 3. denemedekinin yaklaşık 2 katıdır.", "Işığın düşme açısı küçüldükçe fenerin yaydığı toplam ışık enerjisi artar.", "Bir kareye düşen ışık enerjisi en fazla 3. denemede olur.", "Bir kareye düşen ışık enerjisi 2. denemede, 1. denemedekinin 2 katıdır."],
+  a: "A",
+  s: `<p>Fener aynı olduğu için her denemede kâğıda ulaşan <b>toplam enerji aynıdır</b>; değişen, bu enerjinin paylaştırıldığı alandır (<b>B</b> ✗).</p><p>Toplam enerji 1. denemede 12 kareye, 3. denemede 24 kareye paylaşılır. Bir kareye düşen enerji 1. denemede 3. denemedekinin {{24|12}} = 2 katıdır (<b>A</b> ✓).</p><p><b>C</b> ✗: En geniş alan 3. denemededir; kare başına enerji en <b>az</b> orada olur. <b>D</b> ✗: 2. denemede enerji 17 kareye yayılır; kare başına enerji 1. denemedekinden azdır (yaklaşık {{12|17}} katı).</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şekilde Dünya’nın Güneş etrafındaki bir konumunda gece ve gündüz yaşanan bölgeler ile K, L, M ve N şehirleri gösterilmiştir. L şehri Ekvator üzerindedir.</p><div class="fig"><svg viewBox="0 0 520 290" width="520" role="img" aria-label="Dünya’nın bir konumunda aydınlanma durumu" font-family="sans-serif"><defs><marker id="a14" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><circle cx="-70" cy="145" r="140" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><text x="18.0" y="149.0" font-size="13" text-anchor="start" font-weight="bold" fill="#92400e">Güneş</text><line x1="85" y1="85" x2="165" y2="85" stroke="#d97706" stroke-width="2" marker-end="url(#a14)"/><line x1="85" y1="115" x2="165" y2="115" stroke="#d97706" stroke-width="2" marker-end="url(#a14)"/><line x1="85" y1="145" x2="165" y2="145" stroke="#d97706" stroke-width="2" marker-end="url(#a14)"/><line x1="85" y1="175" x2="165" y2="175" stroke="#d97706" stroke-width="2" marker-end="url(#a14)"/><line x1="85" y1="205" x2="165" y2="205" stroke="#d97706" stroke-width="2" marker-end="url(#a14)"/><circle cx="290" cy="145" r="105" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><path d="M290,40 A105,105 0 0 1 290,250 Z" fill="#334155" fill-opacity="0.45"/><line x1="193.7" y1="103.1" x2="386.3" y2="186.9" stroke="#1e3a8a" stroke-width="2.2"/><text x="394.3" y="190.9" font-size="11" text-anchor="start" fill="#1e3a8a">Ekvator</text><line x1="218.4" y1="68.2" x2="395.0" y2="145.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="403.0" y="149.0" font-size="11" text-anchor="start" fill="#1e3a8a">Yengeç D.</text><line x1="185.0" y1="145.0" x2="361.6" y2="221.8" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="369.6" y="225.8" font-size="11" text-anchor="start" fill="#1e3a8a">Oğlak D.</text><line x1="290.0" y1="40.0" x2="366.8" y2="73.4" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="374.8" y="77.4" font-size="11" text-anchor="start" fill="#1e3a8a">K. Kutup D.</text><line x1="213.2" y1="216.6" x2="290.0" y2="250.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="298.0" y="254.0" font-size="11" text-anchor="start" fill="#1e3a8a">G. Kutup D.</text><line x1="338.2" y1="34.0" x2="241.8" y2="256.0" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="338.2" y="29.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="241.8" y="270.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="309.4" cy="54.3" r="4" fill="#dc2626"/><text x="297.4" y="58.3" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><circle cx="246.7" cy="126.2" r="4" fill="#dc2626"/><text x="236.7" y="119.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><circle cx="233.6" cy="194.1" r="4" fill="#dc2626"/><text x="221.6" y="198.1" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">M</text><circle cx="248.8" cy="239.8" r="4" fill="#dc2626"/><text x="236.8" y="243.8" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">N</text><text x="290.0" y="283.0" font-size="11" text-anchor="middle" fill="#0f172a">Koyu bölge: gece yaşanan yarım</text></svg></div><p><b>Dünya bu konumdan itibaren dolanmasına devam ederek yaklaşık 3 ay sonraki ekinoks konumuna ulaşıncaya kadar geçen sürede aşağıdakilerden hangisi gerçekleşir?</b></p>`,
+  c: ["M şehrinde gündüz süresi uzar.", "K şehrinde gündüz süresi uzar ancak gece süresi gündüzden uzun olmaya devam eder.", "L şehrinde gündüz süresi giderek kısalır.", "N şehrinde bu süre boyunca her gün 24 saat gündüz yaşanır."],
+  a: "B",
+  s: `<p>Şekilde Kuzey Kutbu Güneş’ten uzağa eğiktir ve aydınlanma çemberi kutup dairelerine teğettir: konum <b>21 Aralık</b>’a aittir. 3 ay sonra 21 Mart (ekinoks) gelir.</p><p>21 Aralık → 21 Mart arasında dik ışınlar Oğlak Dönencesi’nden Ekvator’a doğru kayar. Kuzey Yarım Küre’deki K’de gündüzler <b>uzar</b>, fakat 21 Mart’a kadar gece hâlâ gündüzden uzundur (<b>B</b> ✓).</p><p><b>A</b> ✗: Güney Yarım Küre’deki M’de bu dönemde gündüzler kısalır. <b>C</b> ✗: Ekvator’da gece ve gündüz yıl boyunca 12’şer saattir. <b>D</b> ✗: 21 Mart’ta her yerde gece ile gündüz eşittir; N’de 24 saat gündüz bu süre boyunca sürmez, ekinoksa yaklaşırken sona erer. “Gündüzün uzaması” ile “gündüzün geceden uzun olması” birbirinden farklıdır.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki tabloda eş yükseltideki bazı şehirlerin bulunduğu enlemler verilmiştir.</p><table><tr><th>Şehir</th><th>K</th><th>L</th><th>M</th><th>N</th><th>P</th></tr><tr><td>Enlem</td><td>42° Kuzey</td><td>21° Kuzey</td><td>1° Kuzey</td><td>34° Güney</td><td>23° 27′ Güney</td></tr></table><p><b>Bu şehirlerden hangilerinde yıl içinde iki farklı günde, öğle vakti yere dik duran bir çubuğun gölgesi oluşmaz?</b></p>`,
+  c: ["L ve M", "Yalnız P", "L, M ve P", "K ve N"],
+  a: "A",
+  s: `<p>Güneş ışınları yıl boyunca yalnızca Yengeç (23° 27′ K) ve Oğlak (23° 27′ G) Dönenceleri arasındaki yerlere dik gelebilir. Dik ışınların yolu iki dönence arasında gidip geldiği için bu aradaki her yer yılda <b>iki kez</b> dik ışın alır; dönencelerin üzerine ise yılda <b>bir kez</b> dik ışın gelir.</p><p>L (21° K) ve M (1° K) dönenceler arasındadır → yılda iki gün gölge oluşmaz (<b>A</b> ✓). P Oğlak Dönencesi üzerindedir → yalnız 21 Aralık’ta gölge oluşmaz; bu yüzden <b>B</b> ve <b>C</b> ✗. K (42° K) ve N (34° G) dönencelerin dışındadır → hiçbir gün dik ışın almaz, öğle gölgesi hiç sıfır olmaz (<b>D</b> ✗).</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki grafikte bir şehirde öğle vakti Güneş ışınlarının yatay zemine geliş açısının yıl içindeki değişimi verilmiştir.</p><div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="Öğle vakti ışınların geliş açısının yıl içindeki değişimi" font-family="sans-serif"><defs><marker id="a17" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="155.0" x2="500" y2="155.0" stroke="#e2e8f0"/><text x="54.0" y="159.0" font-size="11" text-anchor="end" fill="#0f172a">30°</text><line x1="60" y1="95.0" x2="500" y2="95.0" stroke="#e2e8f0"/><text x="54.0" y="99.0" font-size="11" text-anchor="end" fill="#0f172a">60°</text><line x1="60" y1="35.0" x2="500" y2="35.0" stroke="#e2e8f0"/><text x="54.0" y="39.0" font-size="11" text-anchor="end" fill="#0f172a">90°</text><line x1="60" y1="215" x2="520" y2="215" stroke="#334155" stroke-width="1.5" marker-end="url(#a17)"/><line x1="60" y1="215" x2="60" y2="15" stroke="#334155" stroke-width="1.5" marker-end="url(#a17)"/><text x="520.0" y="245.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Zaman</text><text x="66.0" y="17.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Öğle vakti ışınların geliş açısı</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="70.0,49.1 73.4,49.6 76.7,50.3 80.1,51.1 83.5,52.1 86.8,53.1 90.2,54.2 93.6,55.5 97.0,56.9 100.3,58.3 103.7,59.9 107.1,61.6 110.4,63.3 113.8,65.2 117.2,67.1 120.5,69.1 123.9,71.1 127.3,73.2 130.7,75.4 134.0,77.6 137.4,79.9 140.8,82.2 144.1,84.6 147.5,87.0 150.9,89.4 154.2,91.8 157.6,94.2 161.0,96.6 164.4,99.0 167.7,101.4 171.1,103.8 174.5,106.2 177.8,108.5 181.2,110.9 184.6,113.1 187.9,115.3 191.3,117.5 194.7,119.6 198.1,121.6 201.4,123.6 204.8,125.5 208.2,127.3 211.5,129.0 214.9,130.6 218.3,132.2 221.6,133.6 225.0,134.9 228.4,136.2 231.8,137.3 235.1,138.3 238.5,139.2 241.9,139.9 245.2,140.6 248.6,141.1 252.0,141.5 255.3,141.8 258.7,142.0 262.1,142.0 265.5,141.9 268.8,141.7 272.2,141.3 275.6,140.9 278.9,140.3 282.3,139.6 285.7,138.8 289.0,137.8 292.4,136.8 295.8,135.6 299.2,134.3 302.5,132.9 305.9,131.5 309.3,129.9 312.6,128.2 316.0,126.5 319.4,124.6 322.7,122.7 326.1,120.7 329.5,118.6 332.8,116.5 336.2,114.3 339.6,112.1 343.0,109.8 346.3,107.5 349.7,105.1 353.1,102.7 356.4,100.3 359.8,97.9 363.2,95.5 366.5,93.1 369.9,90.7 373.3,88.3 376.7,85.9 380.0,83.5 383.4,81.2 386.8,78.9 390.1,76.6 393.5,74.4 396.9,72.2 400.2,70.2 403.6,68.1 407.0,66.2 410.4,64.3 413.7,62.5 417.1,60.8 420.5,59.2 423.8,57.7 427.2,56.2 430.6,54.9 433.9,53.7 437.3,52.6 440.7,51.6 444.1,50.7 447.4,50.0 450.8,49.3 454.2,48.8 457.5,48.4 460.9,48.2 464.3,48.0 467.6,48.0 471.0,48.1 474.4,48.3 477.8,48.7"/><line x1="158.7" y1="215" x2="158.7" y2="95.0" stroke="#64748b" stroke-dasharray="3 3"/><circle cx="158.7" cy="95.0" r="3.5" fill="#dc2626"/><text x="158.7" y="87.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">60°</text><text x="158.7" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Mart</text><line x1="262.1" y1="215" x2="262.1" y2="142.0" stroke="#64748b" stroke-dasharray="3 3"/><circle cx="262.1" cy="142.0" r="3.5" fill="#dc2626"/><text x="262.1" y="134.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">36,5°</text><text x="262.1" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Haziran</text><line x1="367.7" y1="215" x2="367.7" y2="95.0" stroke="#64748b" stroke-dasharray="3 3"/><circle cx="367.7" cy="95.0" r="3.5" fill="#dc2626"/><text x="367.7" y="87.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">60°</text><text x="367.7" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">23 Eylül</text><line x1="467.6" y1="215" x2="467.6" y2="48.0" stroke="#64748b" stroke-dasharray="3 3"/><circle cx="467.6" cy="48.0" r="3.5" fill="#dc2626"/><text x="467.6" y="40.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">83,5°</text><text x="467.6" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Aralık</text></svg></div><p><b>Grafiğe göre bu şehirle ilgili aşağıdakilerden hangisi yanlıştır?</b></p>`,
+  c: ["Şehir Güney Yarım Küre’dedir.", "Bu şehirde yıl içinde öğle vakti gölgenin hiç oluşmadığı bir gün yoktur.", "23 Eylül’de öğle vakti birim yüzeye düşen enerji, 21 Mart’takinden fazladır.", "21 Aralık’ta öğle vakti yere dik bir çubuğun gölgesi, yılın en kısa öğle gölgesidir."],
+  a: "C",
+  s: `<p>Işınlar en dik (83,5°) 21 Aralık’ta, en eğik (36,5°) 21 Haziran’da gelmektedir. 21 Aralık’ta en dik ışını alan şehir <b>Güney</b> Yarım Küre’dedir (<b>A</b> doğru).</p><p>Geliş açısı hiçbir gün 90° olmadığı için gölge her gün oluşur (<b>B</b> doğru); şehir Oğlak Dönencesi’nin güneyindedir. En dik ışın 21 Aralık’ta geldiği için en kısa öğle gölgesi de o gündedir (<b>D</b> doğru).</p><p><b>C</b> yanlıştır: 21 Mart ve 23 Eylül’de ışınlar aynı açıyla (60°) gelir; birim yüzeye düşen enerji iki tarihte <b>eşittir</b>.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Kutup daireleri ile Ekvator arasında yer alan ve Ekvator üzerinde bulunmayan K ve L şehirlerinde 21 Haziran günü ölçülen gündüz sürelerinin birbirine eşit olduğu belirlenmiştir.</p><p>Buna göre K ve L şehirleriyle ilgili,</p><p>I. Farklı yarım kürelerde yer alırlar.<br>II. Aynı mevsimi yaşarlar.<br>III. Ekvator’a olan uzaklıkları farklıdır.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "Yalnız II"],
+  a: "D",
+  s: `<p>21 Haziran’da Kuzey Yarım Küre’de gündüz 12 saatten uzun, Güney Yarım Küre’de 12 saatten kısadır. Gündüz süreleri eşit olan iki şehir bu yüzden <b>aynı yarım kürededir</b> (I ✗) ve aynı mevsimi yaşar (II ✓).</p><p>Aynı tarihte aynı yarım kürede gündüz süresi Ekvator’dan uzaklaştıkça değişir (21 Haziran’da kuzeye gidildikçe uzar). Gündüz süreleri eşitse iki şehir Ekvator’a <b>eşit uzaklıktadır</b> (III ✗).</p><p>Kesinlikle doğru olan yalnız II’dir: <b>D</b>. <b>A</b> ve <b>B</b> ekinoks durumunu (her yerde gece = gündüz) 21 Haziran’a uygulamaktan doğan bir yanılgıdır.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Eş yükseltideki K ve L şehirlerinde uzun yıllar boyunca ölçülen aylık ortalama sıcaklıklar grafikte verilmiştir. Bir öğrenci grafiğe bakarak K şehrinin Güney Yarım Küre’de olduğu sonucuna varmıştır.</p><div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="K ve L şehirlerinin aylık ortalama sıcaklıkları" font-family="sans-serif"><defs><marker id="a19" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="55" y1="189.3" x2="500" y2="189.3" stroke="#e2e8f0"/><text x="49.0" y="193.3" font-size="11" text-anchor="end" fill="#0f172a">0</text><line x1="55" y1="137.9" x2="500" y2="137.9" stroke="#e2e8f0"/><text x="49.0" y="141.9" font-size="11" text-anchor="end" fill="#0f172a">10</text><line x1="55" y1="86.4" x2="500" y2="86.4" stroke="#e2e8f0"/><text x="49.0" y="90.4" font-size="11" text-anchor="end" fill="#0f172a">20</text><line x1="55" y1="35.0" x2="500" y2="35.0" stroke="#e2e8f0"/><text x="49.0" y="39.0" font-size="11" text-anchor="end" fill="#0f172a">30</text><line x1="55" y1="215" x2="520" y2="215" stroke="#334155" stroke-width="1.5" marker-end="url(#a19)"/><line x1="55" y1="215" x2="55" y2="15" stroke="#334155" stroke-width="1.5" marker-end="url(#a19)"/><text x="520.0" y="245.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Aylar</text><text x="61.0" y="17.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Aylık ortalama sıcaklık (°C)</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="80.0,65.9 116.8,65.9 153.6,76.1 190.5,91.6 227.3,107.0 264.1,122.4 300.9,127.6 337.7,122.4 374.5,112.1 411.4,96.7 448.2,81.3 485.0,71.0"/><polyline fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4" points="80.0,173.9 116.8,168.7 153.6,148.1 190.5,122.4 227.3,101.9 264.1,76.1 300.9,60.7 337.7,60.7 374.5,81.3 411.4,112.1 448.2,143.0 485.0,163.6"/><circle cx="80.0" cy="65.9" r="3" fill="#dc2626"/><circle cx="116.8" cy="65.9" r="3" fill="#dc2626"/><circle cx="153.6" cy="76.1" r="3" fill="#dc2626"/><circle cx="190.5" cy="91.6" r="3" fill="#dc2626"/><circle cx="227.3" cy="107.0" r="3" fill="#dc2626"/><circle cx="264.1" cy="122.4" r="3" fill="#dc2626"/><circle cx="300.9" cy="127.6" r="3" fill="#dc2626"/><circle cx="337.7" cy="122.4" r="3" fill="#dc2626"/><circle cx="374.5" cy="112.1" r="3" fill="#dc2626"/><circle cx="411.4" cy="96.7" r="3" fill="#dc2626"/><circle cx="448.2" cy="81.3" r="3" fill="#dc2626"/><circle cx="485.0" cy="71.0" r="3" fill="#dc2626"/><rect x="77.0" y="170.9" width="6" height="6" fill="#2563eb"/><rect x="113.8" y="165.7" width="6" height="6" fill="#2563eb"/><rect x="150.6" y="145.1" width="6" height="6" fill="#2563eb"/><rect x="187.5" y="119.4" width="6" height="6" fill="#2563eb"/><rect x="224.3" y="98.9" width="6" height="6" fill="#2563eb"/><rect x="261.1" y="73.1" width="6" height="6" fill="#2563eb"/><rect x="297.9" y="57.7" width="6" height="6" fill="#2563eb"/><rect x="334.7" y="57.7" width="6" height="6" fill="#2563eb"/><rect x="371.5" y="78.3" width="6" height="6" fill="#2563eb"/><rect x="408.4" y="109.1" width="6" height="6" fill="#2563eb"/><rect x="445.2" y="140.0" width="6" height="6" fill="#2563eb"/><rect x="482.0" y="160.6" width="6" height="6" fill="#2563eb"/><text x="80.0" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Oca</text><text x="116.8" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Şub</text><text x="153.6" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Mar</text><text x="190.5" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Nis</text><text x="227.3" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">May</text><text x="264.1" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz</text><text x="300.9" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Tem</text><text x="337.7" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Ağu</text><text x="374.5" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl</text><text x="411.4" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Eki</text><text x="448.2" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Kas</text><text x="485.0" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara</text><line x1="330" y1="16" x2="356" y2="16" stroke="#dc2626" stroke-width="2.5"/><text x="361.0" y="20.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">K şehri</text><line x1="430" y1="16" x2="456" y2="16" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/><text x="461.0" y="20.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">L şehri</text></svg></div><p><b>Öğrencinin bu sonuca ulaşmasını sağlayan bilgi aşağıdakilerden hangisidir?</b></p>`,
+  c: ["K şehrinin yıllık ortalama sıcaklığının L şehrininkinden yüksek olması", "Mayıs ayında iki şehrin sıcaklık ortalamalarının birbirine çok yakın olması", "K şehrinde en yüksek aylık ortalamaların aralık–ocak, en düşüklerin haziran–temmuz aylarında görülmesi", "K şehrinde yıl içindeki sıcaklık farkının L şehrindekinden az olması"],
+  a: "C",
+  s: `<p>Bir şehrin hangi yarım kürede olduğunu, sıcaklığın <b>yıl içindeki değişim yönü</b> gösterir. Güney Yarım Küre’de aralık–ocak–şubat yaz, haziran–temmuz–ağustos kıştır. K’de en sıcak aylar aralık–ocak, en soğuk aylar haziran–temmuz olduğu için K Güney Yarım Küre’dedir (<b>C</b> ✓).</p><p><b>A</b> ✗: Daha sıcak olmak yarım küreyi değil, Ekvator’a yakınlığı düşündürebilir. <b>B</b> ✗: Bir ayda değerlerin yakın olması yarım küre hakkında bilgi vermez. <b>D</b> ✗: Yıllık sıcaklık farkının az olması da Ekvator’a yakınlıkla ilgili olabilir; yarım küreyi göstermez.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir şehre ait yıllık ortalama sıcaklık değerleri tabloda verilmiştir.</p><table><tr><th>Dönem</th><th>1961 – 1990 ortalaması</th><th>1991 – 2020 ortalaması</th><th>Yalnızca 2025 yılı</th></tr><tr><td>Yıllık ortalama sıcaklık</td><td>13,1 °C</td><td>14,0 °C</td><td>12,6 °C</td></tr></table><div class="dialog"><div><b>Deniz:</b> 2025 yılı uzun yıllar ortalamasından daha soğuk geçmiş. Demek ki bu şehirde iklim ısınmıyor, tam tersine soğuyor.</div></div><p><b>Deniz’in çıkarımının hatalı olduğunu en iyi açıklayan ifade aşağıdakilerden hangisidir?</b></p>`,
+  c: ["2025 yılı verileri meteorologlar tarafından ölçüldüğü için iklim çalışmalarında kullanılamaz.", "İklimdeki ısınma yalnızca yaz aylarındaki sıcaklıkları etkiler.", "Bir yılın ortalaması 30 yıllık ortalamadan düşükse o yerin iklimi soğumuş demektir.", "Tek bir yılın ortalaması hava olaylarının değişkenliğini yansıtır; iklimdeki değişim uzun yıllık ortalamaların karşılaştırılmasıyla anlaşılır."],
+  a: "D",
+  s: `<p>İklim uzun yıllar boyunca gözlenen hava olaylarının ortalamasıdır. Tabloda iki 30 yıllık dönem karşılaştırıldığında ortalama 13,1 °C’tan 14,0 °C’a <b>yükselmiştir</b>. Tek bir yılın daha soğuk geçmesi kısa süreli değişkenliktir; iklimin değiştiğini göstermez (<b>D</b> ✓).</p><p><b>A</b> ✗: İklim çalışmalarında meteoroloji istasyonlarında yıllarca ölçülen veriler kullanılır. <b>B</b> ✗: Böyle bir bilgi yoktur; ortalamalar bütün ayları kapsar. <b>C</b> ✗: Deniz’in yanılgısını savunan bir ifadedir.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, kış aylarında dört farklı sabah evinin bahçesinde yaptığı gözlemleri tabloya kaydetmiştir.</p><table><tr><th>Gün</th><th>Hava sıcaklığı</th><th>Gözlem</th></tr><tr><td>1</td><td>6 °C</td><td>Çimenler ve araba camları küçük su damlacıklarıyla kaplı; gökyüzü açık.</td></tr><tr><td>2</td><td>−4 °C</td><td>Çimenlerin ve yaprakların üzeri ince, beyaz buz kristalleriyle kaplı; gökyüzü açık.</td></tr><tr><td>3</td><td>8 °C</td><td>Yere yakın havada asılı küçük su damlacıkları yüzünden görüş mesafesi 50 metreye düşmüş.</td></tr><tr><td>4</td><td>1 °C</td><td>Bulutlardan altıgen yapılı buz kristalleri yağıyor.</td></tr></table><p><b>Öğrencinin 1, 2, 3 ve 4. günlerde gözlediği hava olayları sırasıyla aşağıdakilerin hangisinde verilmiştir?</b></p>`,
+  c: ["Kırağı – Çiy – Sis – Kar", "Sis – Kırağı – Çiy – Dolu", "Çiy – Kar – Sis – Dolu", "Çiy – Kırağı – Sis – Kar"],
+  a: "D",
+  s: `<p>1. gün: Hava 0 °C’un üstündeyken su buharı soğuk yüzeylerde su damlacıkları hâlinde yoğuşmuş → <b>çiy</b>. 2. gün: Hava 0 °C’un altındayken su buharı yüzeylerde doğrudan buz kristallerine dönüşmüş → <b>kırağı</b>. 3. gün: Yere yakın havada asılı damlacıklar görüşü azaltmış → <b>sis</b>. 4. gün: Bulutlardan buz kristalleri yağıyor → <b>kar</b>. Doğru seçenek <b>D</b>.</p><p><b>A</b> çiy ile kırağıyı yer değiştirir (sıcaklığın 0 °C’un üstünde ya da altında olmasını gözden kaçırır). <b>B</b> ve <b>C</b> yeryüzünde oluşan kırağıyı gökten yağan kar sanır ya da kar kristallerini doluyla karıştırır.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Dünya’nın Güneş etrafındaki yörüngesi çembere çok yakın bir elipstir. Bir öğrenci, “Yörünge tam bir çember olsaydı Dünya ile Güneş arasındaki uzaklık hiç değişmezdi.” düşüncesinden yola çıkarak varsayımsal bir model hazırlıyor. Modelde Dünya’nın dönme ekseninin eğikliği bugünkü gibi 23° 27′ olarak korunuyor.</p><p><b>Bu modelde aşağıdakilerden hangisinin gerçekleşmesi beklenir?</b></p>`,
+  c: ["Yıl boyunca her yerde gece ve gündüz süreleri birbirine eşit olur.", "İki yarım kürede yine aynı anda zıt mevsimler yaşanır.", "Güneş ışınları yıl boyunca yalnızca Ekvator’a dik gelir.", "Dünya’nın her yerinde aynı anda aynı mevsim yaşanır."],
+  a: "B",
+  s: `<p>Mevsimlerin nedeni Dünya’nın Güneş’e olan uzaklığının değişmesi değil, <b>eksen eğikliği</b> ve Güneş etrafında dolanmadır. Eksen eğikliği korunduğuna göre Kuzey ve Güney Yarım Küre yıl içinde sırayla Güneş’e dönük olmaya devam eder; ışınların dik geldiği yer iki dönence arasında gidip gelir ve iki yarım kürede yine zıt mevsimler yaşanır (<b>B</b> ✓).</p><p><b>A</b> ve <b>C</b> eksen eğikliği <b>sıfır</b> olsaydı görülecek durumlardır. <b>D</b> mevsimleri uzaklığa bağlayan yanılgıdan gelir; gerçekte Dünya Güneş’e en yakın konumdayken (ocak başı) Kuzey Yarım Küre’de kış yaşanır.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Güney Yarım Küre’deki bir şehirde bazı tarihlerde ölçülen gündüz süreleri tabloda verilmiştir.</p><table><tr><th>Tarih</th><th>23 Eylül</th><th>22 Ekim</th><th>21 Kasım</th><th>21 Aralık</th></tr><tr><td>Gündüz süresi</td><td>12 sa 00 dk</td><td>13 sa 19 dk</td><td>14 sa 17 dk</td><td>14 sa 38 dk</td></tr></table><p>Aşağıdaki şekillerde ise Dünya’nın Eylül ve Aralık aylarındaki konumları dört farklı biçimde çizilmiştir. Şekillerde dolanma yönü ve dönme ekseninin Kuzey ucu gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 540 360" width="540" role="img" aria-label="Dört farklı yörünge çizimi" font-family="sans-serif"><defs><marker id="a24" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><rect x="5" y="5" width="260" height="168" fill="none" stroke="#94a3b8"/><ellipse cx="135" cy="85" rx="95" ry="48" fill="none" stroke="#64748b" stroke-width="1.6"/><path d="M175,41 L157,38" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><path d="M95,129 L113,132" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><circle cx="135" cy="85" r="17" fill="#fde047" stroke="#f59e0b" stroke-width="2"/><circle cx="135" cy="133" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="120" y1="139" x2="150" y2="127" stroke="#334155" stroke-width="1.6"/><circle cx="150" cy="127" r="3" fill="#dc2626"/><text x="165.0" y="147.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">Eylül</text><circle cx="230" cy="85" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="215" y1="91" x2="245" y2="79" stroke="#334155" stroke-width="1.6"/><circle cx="245" cy="79" r="3" fill="#dc2626"/><text x="248.0" y="107.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="15.0" y="25.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">I</text><rect x="275" y="5" width="260" height="168" fill="none" stroke="#94a3b8"/><ellipse cx="405" cy="85" rx="95" ry="48" fill="none" stroke="#64748b" stroke-width="1.6"/><path d="M445,41 L427,38" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><path d="M365,129 L383,132" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><circle cx="405" cy="85" r="17" fill="#fde047" stroke="#f59e0b" stroke-width="2"/><circle cx="405" cy="37" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="390" y1="43" x2="420" y2="31" stroke="#334155" stroke-width="1.6"/><circle cx="420" cy="31" r="3" fill="#dc2626"/><text x="451.0" y="33.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">Eylül</text><circle cx="500" cy="85" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="485" y1="91" x2="515" y2="79" stroke="#334155" stroke-width="1.6"/><circle cx="515" cy="79" r="3" fill="#dc2626"/><text x="518.0" y="107.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="285.0" y="25.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">II</text><rect x="5" y="180" width="260" height="168" fill="none" stroke="#94a3b8"/><ellipse cx="135" cy="260" rx="95" ry="48" fill="none" stroke="#64748b" stroke-width="1.6"/><path d="M175,216 L157,213" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><path d="M95,304 L113,307" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><circle cx="135" cy="260" r="17" fill="#fde047" stroke="#f59e0b" stroke-width="2"/><circle cx="135" cy="308" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="120" y1="314" x2="150" y2="302" stroke="#334155" stroke-width="1.6"/><circle cx="150" cy="302" r="3" fill="#dc2626"/><text x="165.0" y="322.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">Eylül</text><circle cx="40" cy="260" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="25" y1="266" x2="55" y2="254" stroke="#334155" stroke-width="1.6"/><circle cx="55" cy="254" r="3" fill="#dc2626"/><text x="22.0" y="282.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="15.0" y="200.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">III</text><rect x="275" y="180" width="260" height="168" fill="none" stroke="#94a3b8"/><ellipse cx="405" cy="260" rx="95" ry="48" fill="none" stroke="#64748b" stroke-width="1.6"/><path d="M445,216 L427,213" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><path d="M365,304 L383,307" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><circle cx="405" cy="260" r="17" fill="#fde047" stroke="#f59e0b" stroke-width="2"/><circle cx="310" cy="260" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="295" y1="266" x2="325" y2="254" stroke="#334155" stroke-width="1.6"/><circle cx="325" cy="254" r="3" fill="#dc2626"/><text x="292.0" y="282.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Eylül</text><circle cx="405" cy="212" r="11" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><line x1="390" y1="218" x2="420" y2="206" stroke="#334155" stroke-width="1.6"/><circle cx="420" cy="206" r="3" fill="#dc2626"/><text x="451.0" y="208.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">Aralık</text><text x="285.0" y="200.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">IV</text><circle cx="18" cy="352" r="3" fill="#dc2626"/><text x="26.0" y="356.0" font-size="11" text-anchor="start" fill="#0f172a">Dönme ekseninin Kuzey ucu</text><line x1="250" y1="352" x2="274" y2="352" stroke="#475569" stroke-width="2" marker-end="url(#a24)"/><text x="280.0" y="356.0" font-size="11" text-anchor="start" fill="#0f172a">Dolanma yönü</text></svg></div><p><b>Tablodaki gündüz süresi değişiminin gerçekleşmesi için Dünya’nın bu iki aydaki konumları hangi şekildeki gibi olmalıdır?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "A",
+  s: `<p>Tabloda gündüz 23 Eylül’de 12 saattir (ekinoks) ve 21 Aralık’a kadar uzar; Güney Yarım Küre’de en uzun gündüz 21 Aralık’ta, yani Kuzey Kutbu Güneş’ten <b>uzağa</b> dönükken yaşanır.</p><p>Şekillerde eksenin Kuzey ucu hep sağa doğrudur. Dünya Güneş’in <b>sağındayken</b> Kuzey ucu Güneş’ten uzağa bakar → Aralık. Güneş’in solundayken Kuzey ucu Güneş’e bakar → Haziran. Dolanma yönünde Haziran’dan (sol) sonra gelen alt konum Eylül, üst konum Mart’tır.</p><p>I’de Eylül altta, Aralık sağdadır (<b>A</b> ✓). II’de Eylül, Mart’a ait üst konumdadır. III’te Aralık, Haziran’a ait sol konumdadır; Kuzey ucu Güneş’e dönük olurdu. IV’te Eylül Haziran konumunda, Aralık Mart konumundadır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Özdeş güneş panelleri K ve L şehirlerinde yatay zemine yerleştiriliyor. Açık havada, öğle vakti panellerin ürettiği elektrik miktarı dört tarihte ölçülerek grafik çiziliyor. Panellerin ürettiği elektrik miktarı, birim yüzeye düşen Güneş enerjisiyle doğru orantılıdır.</p><div class="fig"><svg viewBox="0 0 520 250" width="520" role="img" aria-label="K ve L şehirlerinde panel üretimleri" font-family="sans-serif"><defs><marker id="a25" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="161.2" x2="470" y2="161.2" stroke="#e2e8f0"/><text x="54.0" y="165.2" font-size="11" text-anchor="end" fill="#0f172a">25</text><line x1="60" y1="117.5" x2="470" y2="117.5" stroke="#e2e8f0"/><text x="54.0" y="121.5" font-size="11" text-anchor="end" fill="#0f172a">50</text><line x1="60" y1="73.8" x2="470" y2="73.8" stroke="#e2e8f0"/><text x="54.0" y="77.8" font-size="11" text-anchor="end" fill="#0f172a">75</text><line x1="60" y1="30.0" x2="470" y2="30.0" stroke="#e2e8f0"/><text x="54.0" y="34.0" font-size="11" text-anchor="end" fill="#0f172a">100</text><line x1="60" y1="205" x2="490" y2="205" stroke="#334155" stroke-width="1.5" marker-end="url(#a25)"/><line x1="60" y1="205" x2="60" y2="10" stroke="#334155" stroke-width="1.5" marker-end="url(#a25)"/><text x="66.0" y="12.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Öğle vakti üretilen elektrik (birim)</text><rect x="90" y="66.8" width="26" height="138.2" fill="#dc2626" fill-opacity="0.8"/><text x="103.0" y="62.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">79</text><rect x="120" y="33.5" width="26" height="171.5" fill="#2563eb" fill-opacity="0.8"/><text x="133.0" y="29.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">98</text><text x="118.0" y="222.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Mart</text><rect x="192" y="35.2" width="26" height="169.8" fill="#dc2626" fill-opacity="0.8"/><text x="205.0" y="31.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">97</text><rect x="222" y="59.8" width="26" height="145.2" fill="#2563eb" fill-opacity="0.8"/><text x="235.0" y="55.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">83</text><text x="220.0" y="222.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Haziran</text><rect x="294" y="66.8" width="26" height="138.2" fill="#dc2626" fill-opacity="0.8"/><text x="307.0" y="62.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">79</text><rect x="324" y="33.5" width="26" height="171.5" fill="#2563eb" fill-opacity="0.8"/><text x="337.0" y="29.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">98</text><text x="322.0" y="222.0" font-size="11" text-anchor="middle" fill="#0f172a">23 Eylül</text><rect x="396" y="121.0" width="26" height="84.0" fill="#dc2626" fill-opacity="0.8"/><text x="409.0" y="117.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">48</text><rect x="426" y="35.2" width="26" height="169.8" fill="#2563eb" fill-opacity="0.8"/><text x="439.0" y="31.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">97</text><text x="424.0" y="222.0" font-size="11" text-anchor="middle" fill="#0f172a">21 Aralık</text><rect x="330" y="8" width="14" height="12" fill="#dc2626" fill-opacity="0.8"/><text x="349.0" y="19.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">K şehri</text><rect x="420" y="8" width="14" height="12" fill="#2563eb" fill-opacity="0.8"/><text x="439.0" y="19.0" font-size="12" text-anchor="start" font-weight="bold" fill="#0f172a">L şehri</text></svg></div><p><b>Grafiğe göre aşağıdakilerden hangisi söylenebilir?</b></p>`,
+  c: ["21 Haziran’da K şehrinde kış mevsimi yaşanır.", "23 Eylül’de iki şehirde birim yüzeye düşen Güneş enerjisi eşittir.", "L şehrinde öğle vakti yere dik bir çubuğun gölgesi, bu dört tarih içinde en uzun 21 Aralık’ta olur.", "L şehri Güney Yarım Küre’de olup Ekvator’a K şehrinden daha yakındır."],
+  a: "D",
+  s: `<p>K’de üretim en fazla 21 Haziran’da, en az 21 Aralık’ta → ışınlar K’ye haziranda daha dik gelir; K Kuzey Yarım Küre’dedir ve 21 Haziran’da yazı yaşar (<b>A</b> ✗).</p><p>L’de 21 Aralık’taki üretim (97) 21 Haziran’dakinden (83) fazladır; L ışınları aralıkta daha dik alır → Güney Yarım Küre’dedir. Ekinokslarda dik ışın Ekvator’dadır ve Ekvator’a yakın olan yer daha çok enerji alır; 21 Mart ve 23 Eylül’de L’nin üretimi (98) K’ninkinden (79) fazladır → L Ekvator’a daha yakındır (<b>D</b> ✓). Bu nedenle <b>B</b> ✗.</p><p><b>C</b> ✗: L’de 21 Aralık’ta birim yüzeye düşen enerji yüksektir, ışınlar dike yakındır; gölge bu dört tarih içinde en uzun 21 Haziran’da olur.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>21 Aralık günü öğle vakti, Antalya’da (yaklaşık 37° K) ve Sinop’ta (yaklaşık 42° K) deniz kıyısında yatay zemine dik olarak yerleştirilen 1 m uzunluğundaki özdeş çubukların gölge boyları ölçülmüştür.</p><table><tr><th>Şehir</th><th>Enlem</th><th>Gölge boyu (21 Aralık, öğle)</th></tr><tr><td>Antalya</td><td>yaklaşık 37° K</td><td>176 cm</td></tr><tr><td>Sinop</td><td>yaklaşık 42° K</td><td>219 cm</td></tr></table><p><b>Buna göre aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["21 Haziran’da öğle vakti Sinop’taki çubuğun gölgesi Antalya’dakinden kısa olur.", "Antalya’da yıl içinde öğle vakti çubuğun gölgesinin oluşmadığı bir gün vardır.", "21 Aralık’ta öğle vakti birim yüzeye düşen Güneş enerjisi Antalya’da Sinop’takinden fazladır.", "21 Aralık’ta Sinop’ta gündüz süresi Antalya’dakinden uzundur."],
+  a: "C",
+  s: `<p>Gölgenin daha kısa olduğu Antalya’ya ışınlar daha dik gelir; bu yüzden birim yüzeye düşen enerji Antalya’da daha fazladır (<b>C</b> ✓).</p><p><b>A</b> ✗: 21 Haziran’da dik ışın Yengeç Dönencesi’ndedir. Sinop bu dönenceye Antalya’dan daha uzak olduğu için ışınları yine daha eğik alır; gölgesi yine daha uzun olur. <b>B</b> ✗: Antalya Yengeç Dönencesi’nin kuzeyindedir; Türkiye’de hiçbir gün dik ışın gelmez. <b>D</b> ✗: 21 Aralık’ta Kuzey Yarım Küre’de kutba yaklaştıkça gündüz kısalır; Sinop’ta gündüz (yaklaşık 9 saat) Antalya’dakinden (yaklaşık 9,5 saat) kısadır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir çiftçinin bir yıl içinde aldığı bazı kararlar aşağıda verilmiştir.</p><div class="box"><p><b>I.</b> Bahçesine hangi meyve ağacını dikeceğine karar verirken bölgenin uzun yıllar boyunca ölçülen kış sıcaklığı ortalamalarını inceliyor.</p><p><b>II.</b> Ertesi gün öğleden sonra için yapılan dolu uyarısını duyunca serasının örtüsünü kontrol ediyor.</p><p><b>III.</b> Ürününü ilaçlamadan önce o günün rüzgâr ve yağış tahminine bakıyor.</p><p><b>IV.</b> Sulama göletinin büyüklüğünü belirlerken bölgenin yıllık ortalama yağış miktarını dikkate alıyor.</p></div><p><b>Çiftçinin bu kararlarından hangilerinde iklim bilgisinden yararlandığı söylenebilir?</b></p>`,
+  c: ["I ve IV", "II ve III", "I, II ve IV", "Yalnız IV"],
+  a: "A",
+  s: `<p>İklim bilgisi, uzun yıllar boyunca ölçülen verilerin ortalamasına dayanır. I’de uzun yıllık kış sıcaklığı ortalamaları, IV’te yıllık ortalama yağış miktarı kullanılmıştır → iklim bilgisi.</p><p>II’deki dolu uyarısı ve III’teki günlük rüzgâr–yağış tahmini kısa süreli <b>hava olaylarıyla</b> ilgilidir; meteorologların tahminlerine dayanır. Doğru seçenek <b>A</b>.</p><p><b>D</b> I’deki “uzun yıllar boyunca ölçülen ortalama” ifadesini gözden kaçırır; <b>C</b> dolu uyarısını iklim bilgisi sayar.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Grafikte bir şehirde 1–7 Ocak 2026 tarihlerinde ölçülen günlük en yüksek sıcaklıklar ile bu şehrin ocak ayına ait uzun yıllar ortalaması (en yüksek sıcaklık) birlikte verilmiştir.</p><div class="fig"><svg viewBox="0 0 520 250" width="520" role="img" aria-label="Bir haftalık sıcaklıklar ve uzun yıllar ortalaması" font-family="sans-serif"><defs><marker id="a29" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="191.8" x2="470" y2="191.8" stroke="#e2e8f0"/><text x="54.0" y="195.8" font-size="11" text-anchor="end" fill="#0f172a">-5</text><line x1="60" y1="150.5" x2="470" y2="150.5" stroke="#e2e8f0"/><text x="54.0" y="154.5" font-size="11" text-anchor="end" fill="#0f172a">0</text><line x1="60" y1="109.2" x2="470" y2="109.2" stroke="#e2e8f0"/><text x="54.0" y="113.2" font-size="11" text-anchor="end" fill="#0f172a">5</text><line x1="60" y1="68.0" x2="470" y2="68.0" stroke="#e2e8f0"/><text x="54.0" y="72.0" font-size="11" text-anchor="end" fill="#0f172a">10</text><line x1="60" y1="200" x2="490" y2="200" stroke="#334155" stroke-width="1.5" marker-end="url(#a29)"/><line x1="60" y1="200" x2="60" y2="15" stroke="#334155" stroke-width="1.5" marker-end="url(#a29)"/><text x="490.0" y="230.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Günler (Ocak 2026)</text><text x="66.0" y="17.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">En yüksek sıcaklık (°C)</text><line x1="60" y1="117.5" x2="470" y2="117.5" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="8 4"/><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="95.0,117.5 153.0,92.8 211.0,51.5 269.0,76.2 327.0,158.8 385.0,175.2 443.0,134.0"/><circle cx="95.0" cy="117.5" r="3.5" fill="#dc2626"/><text x="95.0" y="109.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">4</text><text x="95.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">1 Oca</text><circle cx="153.0" cy="92.8" r="3.5" fill="#dc2626"/><text x="153.0" y="84.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">7</text><text x="153.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">2 Oca</text><circle cx="211.0" cy="51.5" r="3.5" fill="#dc2626"/><text x="211.0" y="43.5" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">12</text><text x="211.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">3 Oca</text><circle cx="269.0" cy="76.2" r="3.5" fill="#dc2626"/><text x="269.0" y="68.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">9</text><text x="269.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">4 Oca</text><circle cx="327.0" cy="158.8" r="3.5" fill="#dc2626"/><text x="327.0" y="150.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">−1</text><text x="327.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">5 Oca</text><circle cx="385.0" cy="175.2" r="3.5" fill="#dc2626"/><text x="385.0" y="167.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">−3</text><text x="385.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">6 Oca</text><circle cx="443.0" cy="134.0" r="3.5" fill="#dc2626"/><text x="443.0" y="126.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">2</text><text x="443.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">7 Oca</text><line x1="250" y1="16" x2="276" y2="16" stroke="#dc2626" stroke-width="2.5"/><text x="281.0" y="20.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">1–7 Ocak ölçümleri</text><line x1="250" y1="34" x2="276" y2="34" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="8 4"/><text x="281.0" y="38.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Ocak ayı, uzun yıllar ortalaması</text></svg></div><p><b>Grafikle ilgili aşağıdaki yorumlardan hangisi doğrudur?</b></p>`,
+  c: ["3 Ocak’ta ölçülen 12 °C, şehrin kışlarının ılık geçtiğini gösterir.", "Kırmızı çizgideki veriler hava olaylarını, yeşil kesikli çizgi ise şehrin iklimini yansıtır.", "Yeşil kesikli çizgideki değer, meteorologların bu bir haftalık ölçümlerinin ortalaması alınarak bulunmuştur.", "5 ve 6 Ocak’ta sıcaklığın ortalamanın altına düşmesi, şehrin ikliminin soğuduğunu kanıtlar."],
+  a: "B",
+  s: `<p>Birkaç günlük ölçümler kısa sürede değişebilen <b>hava olaylarını</b>; uzun yıllar boyunca ölçülen değerlerin ortalaması ise <b>iklimi</b> yansıtır (<b>B</b> ✓).</p><p><b>A</b> ✗: Tek bir günün sıcaklığı iklim hakkında bilgi vermez; ocak ayının uzun yıllar ortalaması 4 °C’tur. <b>C</b> ✗: Uzun yıllar ortalaması bir haftalık ölçümden değil, onlarca yıllık verilerden hesaplanır. Bir haftanın ortalaması (yaklaşık 4,3 °C) ortalama çizgisine yakın çıksa da bu bir rastlantıdır. <b>D</b> ✗: Birkaç günlük soğuk hava bir hava olayıdır; iklim değişikliğini kanıtlamaz.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki grafikte bir yıl boyunca Güneş ışınlarının öğle vakti dik geldiği enlemin değişimi gösterilmiş, grafik üzerinde bazı tarihler K, L, M, N ve O harfleriyle işaretlenmiştir.</p><div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Güneş ışınlarının dik geldiği enlemin yıl içindeki değişimi" font-family="sans-serif"><defs><marker id="a31" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="110" y1="120" x2="515" y2="120" stroke="#334155" stroke-width="1.5" marker-end="url(#a31)"/><line x1="110" y1="215" x2="110" y2="25" stroke="#334155" stroke-width="1.5"/><line x1="110" y1="40.0" x2="500" y2="40.0" stroke="#cbd5e1" stroke-dasharray="4 3"/><text x="104.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">23° 27′ K</text><line x1="110" y1="120.0" x2="500" y2="120.0" stroke="#cbd5e1" stroke-dasharray="4 3"/><text x="104.0" y="124.0" font-size="11" text-anchor="end" fill="#0f172a">0° (Ekvator)</text><line x1="110" y1="200.0" x2="500" y2="200.0" stroke="#cbd5e1" stroke-dasharray="4 3"/><text x="104.0" y="204.0" font-size="11" text-anchor="end" fill="#0f172a">23° 27′ G</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="110.0,120.0 113.0,124.1 116.1,128.2 119.1,132.3 122.2,136.4 125.2,140.4 128.2,144.4 131.3,148.3 134.3,152.1 137.4,155.8 140.4,159.5 143.4,163.0 146.5,166.4 149.5,169.7 152.5,172.9 155.6,175.9 158.6,178.8 161.7,181.5 164.7,184.1 167.7,186.5 170.8,188.7 173.8,190.7 176.9,192.5 179.9,194.2 182.9,195.6 186.0,196.9 189.0,197.9 192.1,198.7 195.1,199.4 198.1,199.8 201.2,200.0 204.2,200.0 207.2,199.7 210.3,199.3 213.3,198.7 216.4,197.8 219.4,196.7 222.4,195.5 225.5,194.0 228.5,192.3 231.6,190.5 234.6,188.4 237.6,186.2 240.7,183.8 243.7,181.2 246.8,178.5 249.8,175.6 252.8,172.5 255.9,169.3 258.9,166.0 262.0,162.6 265.0,159.0 268.0,155.4 271.1,151.6 274.1,147.8 277.1,143.9 280.2,139.9 283.2,135.9 286.3,131.8 289.3,127.7 292.3,123.6 295.4,119.5 298.4,115.4 301.5,111.2 304.5,107.2 307.5,103.1 310.6,99.1 313.6,95.1 316.7,91.2 319.7,87.4 322.7,83.7 325.8,80.1 328.8,76.6 331.8,73.1 334.9,69.9 337.9,66.7 341.0,63.7 344.0,60.8 347.0,58.1 350.1,55.6 353.1,53.3 356.2,51.1 359.2,49.1 362.2,47.2 365.3,45.6 368.3,44.2 371.4,43.0 374.4,42.0 377.4,41.2 380.5,40.6 383.5,40.2 386.6,40.0 389.6,40.1 392.6,40.3 395.7,40.8 398.7,41.4 401.7,42.3 404.8,43.4 407.8,44.7 410.9,46.2 413.9,47.9 416.9,49.8 420.0,51.9 423.0,54.1 426.1,56.5 429.1,59.1 432.1,61.9 435.2,64.8 438.2,67.9 441.3,71.1 444.3,74.4 447.3,77.9 450.4,81.4 453.4,85.1 456.4,88.8 459.5,92.7 462.5,96.6 465.6,100.6 468.6,104.6 471.6,108.7 474.7,112.8 477.7,116.9"/><circle cx="110.0" cy="120.0" r="4.5" fill="#1d4ed8"/><text x="110.0" y="111.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">K</text><circle cx="202.5" cy="200.0" r="4.5" fill="#1d4ed8"/><text x="202.5" y="218.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">L</text><circle cx="295.0" cy="120.0" r="4.5" fill="#1d4ed8"/><text x="295.0" y="111.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">M</text><circle cx="387.5" cy="40.0" r="4.5" fill="#1d4ed8"/><text x="387.5" y="31.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">N</text><circle cx="480.0" cy="120.0" r="4.5" fill="#1d4ed8"/><text x="480.0" y="111.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">O</text><text x="132.3" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Eki</text><text x="163.7" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Kas</text><text x="194.1" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara</text><text x="225.5" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Oca</text><text x="256.9" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Şub</text><text x="285.2" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Mar</text><text x="316.7" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Nis</text><text x="347.0" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">May</text><text x="378.4" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz</text><text x="408.8" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Tem</text><text x="440.2" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Ağu</text><text x="471.6" y="232.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl</text><text x="20.0" y="22.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Güneş ışınlarının öğle vakti dik geldiği enlem</text></svg></div><p><b>Kuzey Yarım Küre’de gündüz sürelerinin uzadığı ancak gece sürelerinin gündüz sürelerinden uzun olduğu dönem, grafikteki hangi aralıktır?</b></p>`,
+  c: ["K ile L arası", "M ile N arası", "L ile M arası", "N ile O arası"],
+  a: "C",
+  s: `<p>Grafikten tarihler bulunur: Dik ışın Ekvator’da ve güneye kayıyorsa K = 23 Eylül; Oğlak Dönencesi’nde L = 21 Aralık; Ekvator’da ve kuzeye kayıyorsa M = 21 Mart; Yengeç Dönencesi’nde N = 21 Haziran; O = yeniden 23 Eylül.</p><p>L → M (21 Aralık → 21 Mart): Dik ışınlar Oğlak’tan Ekvator’a doğru kuzeye kayar; Kuzey Yarım Küre’de gündüzler uzar, ancak dik ışın hâlâ Güney Yarım Küre’de olduğundan gece gündüzden uzundur (<b>C</b> ✓).</p><p><b>A</b> K → L: gündüzler kısalır, gece uzundur. <b>B</b> M → N: gündüzler uzar ve gündüz geceden uzundur. <b>D</b> N → O: gündüzler kısalır ama gündüz hâlâ geceden uzundur.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Kutup bölgelerinde çalışan iki araştırma ekibi 21 Aralık günü şu gözlemleri bildirmiştir:</p><div class="box"><p><b>X istasyonu:</b> Güneş 24 saat boyunca hiç batmadı.</p><p><b>Y istasyonu:</b> Güneş 24 saat boyunca hiç doğmadı.</p></div><p><b>Bu gözlemlere göre aşağıdakilerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["X istasyonu Kuzey Kutup Dairesi’nin kuzeyindedir.", "21 Haziran’da X istasyonunda 24 saat gece yaşanır.", "Y istasyonunda 21 Aralık’ta yaz mevsimi başlar.", "21 Mart’ta X istasyonundaki gündüz süresi Y istasyonundakinden uzun olur."],
+  a: "B",
+  s: `<p>21 Aralık’ta Güney Kutbu Güneş’e dönüktür; aydınlanma çemberi kutup dairelerine teğettir. Güney Kutup Dairesi ve güneyinde 24 saat gündüz, Kuzey Kutup Dairesi ve kuzeyinde 24 saat gece yaşanır. Buna göre X Güney Kutup Dairesi’nin güneyinde (<b>A</b> ✗), Y Kuzey Kutup Dairesi’nin kuzeyindedir ve kışı yaşar (<b>C</b> ✗).</p><p>21 Haziran’da durum tersine döner; Güney Kutup Dairesi ve güneyinde 24 saat gece yaşanır (<b>B</b> ✓).</p><p><b>D</b> ✗: 21 Mart’ta (ekinoks) aydınlanma çemberi kutuplardan geçer; her yerde gece ve gündüz eşittir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir tur şirketinin broşüründe aşağıdaki tanıtım cümleleri yer almaktadır. Bu cümlelerde adı geçen Avustralya’nın Sidney kenti, Arjantin’in güneyi ve Güney Afrika’nın Cape Town kenti Güney Yarım Küre’dedir.</p><div class="box"><p><b>I.</b> Yılbaşını Sidney’de, yaz güneşi altında plajda karşılayın!</p><p><b>II.</b> Temmuz ayında Arjantin’in güneyindeki kayak merkezlerinde kış tatili!</p><p><b>III.</b> Aralık ayında Cape Town’da kısa gündüzler ve kış günleri sizi bekliyor!</p></div><p><b>Bu cümlelerden hangileri mevsimler açısından bilimsel olarak tutarlıdır?</b></p>`,
+  c: ["Yalnız III", "II ve III", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Güney Yarım Küre’de mevsimler Kuzey Yarım Küre’nin tersidir: Aralık–ocak–şubat yaz, haziran–temmuz–ağustos kıştır.</p><p>I ✓: Yılbaşında (ocak başı) Sidney’de yaz yaşanır. II ✓: Temmuzda Arjantin’in güneyinde kış yaşanır. III ✗: Aralıkta Cape Town’da yaz yaşanır; gündüzler kısa değil, uzundur. Doğru seçenek <b>C</b>.</p><p><b>A</b> ve <b>B</b> Türkiye’deki mevsimleri Güney Yarım Küre’ye uygulama yanılgısından gelir.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Öğrenciler, dönme ekseni 23° 27′ eğik olan bir küre modelinin üzerindeki K, L ve M noktalarına, yüzeye dik olacak şekilde özdeş kürdanlar yapıştırıyor. Modeli uzakta duran bir lambanın karşısına şekildeki gibi yerleştiriyorlar. Lambadan gelen ışınların modele paralel ulaştığı kabul ediliyor.</p><div class="fig"><svg viewBox="0 0 520 292" width="520" role="img" aria-label="Lamba ve kürdanlı küre modeli" font-family="sans-serif"><circle cx="55" cy="135" r="26" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/><rect x="20" y="126" width="12" height="18" fill="#64748b"/><text x="55.0" y="185.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Lamba</text><defs><marker id="a35" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><line x1="95" y1="75" x2="200" y2="75" stroke="#d97706" stroke-width="1.8" marker-end="url(#a35)"/><line x1="95" y1="105" x2="200" y2="105" stroke="#d97706" stroke-width="1.8" marker-end="url(#a35)"/><line x1="95" y1="135" x2="200" y2="135" stroke="#d97706" stroke-width="1.8" marker-end="url(#a35)"/><line x1="95" y1="165" x2="200" y2="165" stroke="#d97706" stroke-width="1.8" marker-end="url(#a35)"/><line x1="95" y1="195" x2="200" y2="195" stroke="#d97706" stroke-width="1.8" marker-end="url(#a35)"/><circle cx="320" cy="135" r="95" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="232.9" y1="172.9" x2="407.1" y2="97.1" stroke="#1e3a8a" stroke-width="2.2"/><text x="415.1" y="101.1" font-size="11" text-anchor="start" fill="#1e3a8a">Ekvator</text><line x1="225.0" y1="135.0" x2="384.8" y2="65.5" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="255.2" y1="204.5" x2="415.0" y2="135.0" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="275.7" y1="33.2" x2="364.3" y2="236.8" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="275.7" y="28.2" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="364.3" y="250.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><line x1="235.0" y1="92.6" x2="218.9" y2="84.6" stroke="#78350f" stroke-width="3"/><circle cx="235.0" cy="92.6" r="3.5" fill="#dc2626"/><text x="208.1" y="83.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><line x1="225.0" y1="135.0" x2="207.0" y2="135.0" stroke="#78350f" stroke-width="3"/><circle cx="225.0" cy="135.0" r="3.5" fill="#dc2626"/><text x="199.0" y="123.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><line x1="255.2" y1="204.5" x2="242.9" y2="217.6" stroke="#78350f" stroke-width="3"/><circle cx="255.2" cy="204.5" r="3.5" fill="#dc2626"/><text x="234.8" y="230.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">M</text><text x="150.0" y="282.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">K: 50° Kuzey</text><text x="290.0" y="282.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">L: 23° 27′ Kuzey</text><text x="440.0" y="282.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">M: 23° 27′ Güney</text></svg></div><p><b>Buna göre bu modelle ilgili aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["Model 21 Haziran’daki konumu temsil eder; kürdanların gölge boyları arasındaki ilişki K &gt; M &gt; L şeklindedir.", "Model 21 Haziran’daki konumu temsil eder; kürdanların gölge boyları arasındaki ilişki M &gt; K &gt; L şeklindedir.", "Model 21 Aralık’taki konumu temsil eder; kürdanların gölge boyları arasındaki ilişki M &gt; K &gt; L şeklindedir.", "Model 21 Aralık’taki konumu temsil eder; kürdanların gölge boyları arasındaki ilişki K &gt; M &gt; L şeklindedir."],
+  a: "B",
+  s: `<p>Modelde eksenin Kuzey ucu lambaya doğru eğiktir: Kuzey Yarım Küre ışık kaynağına dönüktür → <b>21 Haziran</b>. Bu konumda ışınlar Yengeç Dönencesi’ndeki L’ye dik gelir; L’deki kürdanın gölgesi oluşmaz.</p><p>Dik ışının geldiği paralelden uzaklaştıkça ışınlar eğikleşir ve gölge uzar. K (50° K) Yengeç Dönencesi’ne yaklaşık 26,5°, M (Oğlak Dönencesi) ise yaklaşık 47° uzaktır. Bu yüzden gölgeler <b>M &gt; K &gt; L</b>’dir (<b>B</b> ✓).</p><p><b>A</b> Ekvator’dan uzak olanın gölgesinin her zaman daha uzun olacağı yanılgısından gelir. <b>C</b> ve <b>D</b> konumu 21 Aralık sanar; Kuzey ucu ışık kaynağından uzağa eğik olsaydı 21 Aralık olurdu.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci bazı olayları, Dünya’nın hangi hareketinin sonucu olduklarına göre aşağıdaki tabloda eşleştirmiştir.</p><table><tr><th></th><th>Olay</th><th>Öğrencinin eşleştirmesi</th></tr><tr><td>I</td><td>Gece ile gündüzün art arda gelmesi</td><td>Dünya’nın kendi ekseni etrafında dönmesi</td></tr><tr><td>II</td><td>Gün içinde bir ağacın gölgesinin sabahtan öğleye doğru kısalması</td><td>Dünya’nın kendi ekseni etrafında dönmesi</td></tr><tr><td>III</td><td>Samsun’da öğle vakti gölge boyunun haziranda kısa, aralıkta uzun olması</td><td>Dünya’nın kendi ekseni etrafında dönmesi</td></tr><tr><td>IV</td><td>Gece ve gündüz sürelerinin yıl içinde değişmesi</td><td>Dünya’nın Güneş etrafında dolanması ve eksen eğikliği</td></tr></table><p><b>Öğrencinin yaptığı eşleştirmelerden hangisi yanlıştır?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "C",
+  s: `<p>Dünya’nın kendi ekseni etrafında dönmesi <b>bir gün</b> içindeki değişimleri açıklar: gece–gündüzün art arda gelmesi (I ✓) ve gün içinde gölge boyunun sabah uzun, öğle kısa olması (II ✓).</p><p><b>Yıl içindeki</b> değişimler ise Dünya’nın Güneş etrafında dolanması ve eksen eğikliğinin sonucudur: gece–gündüz sürelerinin değişmesi (IV ✓) ve öğle vakti gölge boyunun aylara göre değişmesi. III’teki olay yıl içindeki bir değişim olduğu için dönmeyle eşleştirilmesi yanlıştır (<b>C</b> ✓).</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Samsun’da (yaklaşık 41° K) yatay zemine dik olarak yerleştirilen 1 m uzunluğundaki bir çubuğun gölge boyu, iki farklı günde saat 09.00 ile 15.00 arasında ölçülerek grafik çizilmiştir. Ölçüm günlerinden biri 21 Haziran, diğeri 21 Aralık’tır.</p><div class="fig"><svg viewBox="0 0 520 260" width="520" role="img" aria-label="Samsun’da iki farklı günde gölge boyunun gün içindeki değişimi" font-family="sans-serif"><defs><marker id="a38" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><line x1="60" y1="175.0" x2="470" y2="175.0" stroke="#e2e8f0"/><text x="54.0" y="179.0" font-size="11" text-anchor="end" fill="#0f172a">1 m</text><line x1="60" y1="140.0" x2="470" y2="140.0" stroke="#e2e8f0"/><text x="54.0" y="144.0" font-size="11" text-anchor="end" fill="#0f172a">2 m</text><line x1="60" y1="105.0" x2="470" y2="105.0" stroke="#e2e8f0"/><text x="54.0" y="109.0" font-size="11" text-anchor="end" fill="#0f172a">3 m</text><line x1="60" y1="70.0" x2="470" y2="70.0" stroke="#e2e8f0"/><text x="54.0" y="74.0" font-size="11" text-anchor="end" fill="#0f172a">4 m</text><line x1="60" y1="35.0" x2="470" y2="35.0" stroke="#e2e8f0"/><text x="54.0" y="39.0" font-size="11" text-anchor="end" fill="#0f172a">5 m</text><line x1="60" y1="210" x2="490" y2="210" stroke="#334155" stroke-width="1.5" marker-end="url(#a38)"/><line x1="60" y1="210" x2="60" y2="15" stroke="#334155" stroke-width="1.5" marker-end="url(#a38)"/><text x="490.0" y="240.0" font-size="11" text-anchor="end" font-weight="bold" fill="#0f172a">Saat</text><text x="66.0" y="17.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gölge boyu</text><polyline fill="none" stroke="#dc2626" stroke-width="2.5" points="85.0,179.1 100.0,182.0 115.0,184.6 130.0,187.0 145.0,189.2 160.0,191.2 175.0,193.0 190.0,194.6 205.0,196.0 220.0,197.1 235.0,198.0 250.0,198.5 265.0,198.7 280.0,198.5 295.0,198.0 310.0,197.1 325.0,196.0 340.0,194.6 355.0,193.0 370.0,191.2 385.0,189.2 400.0,187.0 415.0,184.6 430.0,182.0 445.0,179.1"/><polyline fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4" points="85.0,58.3 100.0,77.7 115.0,92.0 130.0,102.9 145.0,111.4 160.0,118.0 175.0,123.3 190.0,127.4 205.0,130.6 220.0,132.9 235.0,134.6 250.0,135.5 265.0,135.8 280.0,135.5 295.0,134.6 310.0,132.9 325.0,130.6 340.0,127.4 355.0,123.3 370.0,118.0 385.0,111.4 400.0,102.9 415.0,92.0 430.0,77.7 445.0,58.3"/><text x="85.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">09.00</text><text x="145.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">10.00</text><text x="205.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">11.00</text><text x="265.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">12.00</text><text x="325.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">13.00</text><text x="385.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">14.00</text><text x="445.0" y="227.0" font-size="11" text-anchor="middle" fill="#0f172a">15.00</text><text x="269.0" y="190.7" font-size="13" text-anchor="start" font-weight="bold" fill="#dc2626">I</text><text x="269.0" y="127.8" font-size="13" text-anchor="start" font-weight="bold" fill="#2563eb">II</text></svg></div><p><b>Buna göre aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["II. eğri 21 Haziran’a aittir; çünkü yaz aylarında gündüzler uzun olduğu için gölgeler de uzun olur.", "I. eğri 21 Haziran’a aittir; gölgenin gün içinde kısalıp uzaması Dünya’nın Güneş etrafında dolanmasının sonucudur.", "Saat 12.00’de iki ölçüm gününde de birim yüzeye düşen Güneş enerjisi eşittir.", "I. eğri 21 Haziran’a aittir; gölgenin gün içinde kısalıp uzaması Dünya’nın kendi ekseni etrafında dönmesinin sonucudur."],
+  a: "D",
+  s: `<p>Samsun Kuzey Yarım Küre’dedir; 21 Haziran’da ışınlar daha dik geldiği için gölge daha <b>kısadır</b>. Kısa gölgeleri gösteren I. eğri 21 Haziran’a, uzun gölgeleri gösteren II. eğri 21 Aralık’a aittir. Gölgenin bir gün içinde sabahtan öğleye kısalıp öğleden sonra uzaması Dünya’nın kendi ekseni etrafında <b>dönmesinin</b> sonucudur (<b>D</b> ✓).</p><p><b>A</b> ✗: Gündüzün uzun olması gölgenin uzun olacağı anlamına gelmez; yazın ışınlar dik geldiği için gölge kısadır. <b>B</b> ✗: Gün içindeki değişim dolanmayla değil dönmeyle açıklanır; dolanma iki eğri arasındaki farkı (yıl içindeki değişimi) açıklar. <b>C</b> ✗: Saat 12.00’de I. eğride gölge yaklaşık 0,3 m, II. eğride yaklaşık 2,1 m’dir; ışınlar haziranda çok daha dik gelir ve birim yüzeye düşen enerji daha fazladır.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Dünya üzerinde eş yükseltideki I, II, III ve IV numaralı bölgeler şekilde gösterilmiştir. III. bölge Ekvator üzerindedir; II. ve IV. bölgeler Ekvator’a eşit uzaklıktadır.</p><div class="fig"><svg viewBox="0 0 400 290" width="380" role="img" aria-label="Numaralandırılmış bölgeler" font-family="sans-serif"><circle cx="180" cy="145" r="115" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="74.5" y1="145.0" x2="285.5" y2="145.0" stroke="#1e3a8a" stroke-width="2.2"/><text x="293.5" y="149.0" font-size="11" text-anchor="start" fill="#1e3a8a">Ekvator</text><line x1="83.3" y1="102.9" x2="276.7" y2="102.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="284.7" y="106.9" font-size="11" text-anchor="start" fill="#1e3a8a">Yengeç D.</text><line x1="83.3" y1="187.1" x2="276.7" y2="187.1" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="284.7" y="191.1" font-size="11" text-anchor="start" fill="#1e3a8a">Oğlak D.</text><line x1="180.0" y1="24.9" x2="180.0" y2="265.1" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="180.0" y="19.9" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="180.0" y="279.1" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="185.3" cy="53.7" r="4" fill="#dc2626"/><text x="199.3" y="58.7" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">I</text><circle cx="161.7" cy="92.3" r="4" fill="#dc2626"/><text x="177.7" y="97.3" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">II</text><circle cx="206.4" cy="145.0" r="4" fill="#dc2626"/><text x="222.4" y="139.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">III</text><circle cx="170.9" cy="197.7" r="4" fill="#dc2626"/><text x="187.9" y="202.7" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">IV</text></svg></div><p>Temmuz ayındaki bir günde, bu bölgelerden birinde bulunan M şehrinde gündüz süresinin, farklı bir bölgede bulunan N şehrindeki gündüz süresinden <b>daha kısa</b> olduğu belirleniyor.</p><p><b>Buna göre M ve N şehirlerinin bulunduğu bölgeler aşağıdakilerden hangisi olabilir?</b></p>`,
+  c: ["M → I, N → III", "M → II, N → IV", "M → III, N → IV", "M → IV, N → II"],
+  a: "D",
+  s: `<p>Temmuzda Güneş ışınları Kuzey Yarım Küre’ye daha dik gelir; Kuzey Yarım Küre’de gündüz 12 saatten uzun, Ekvator’da 12 saat, Güney Yarım Küre’de 12 saatten kısadır. Bu dönemde <b>kuzeye gidildikçe gündüz uzar</b>. Gündüz süreleri arasındaki ilişki I &gt; II &gt; III &gt; IV’tür.</p><p>M’nin gündüzü N’ninkinden kısa olduğuna göre M, N’nin güneyinde olmalıdır. <b>D</b>: M (IV) güneyde, N (II) kuzeyde ✓.</p><p><b>A</b> ✗: I’de gündüz Ekvator’dakinden uzundur. <b>B</b> ✗: II’de gündüz IV’tekinden uzundur; II ve IV Ekvator’a eşit uzaklıkta olsa da farklı yarım kürelerdedir. <b>C</b> ✗: Ekvator’da (12 saat) gündüz IV’tekinden uzundur.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aralık ayındaki bir günde, K ve L şehirlerinde yatay zemine dik olarak yerleştirilen özdeş çubukların gölge boyları öğle vakti ölçülüyor. K şehrindeki çubuğun gölgesinin L şehrindekinden <b>daha kısa</b> olduğu belirleniyor.</p><div class="fig"><svg viewBox="0 0 540 230" width="540" role="img" aria-label="Üç farklı konum seçeneği" font-family="sans-serif"><circle cx="85" cy="115" r="68" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="22.6" y1="115.0" x2="147.4" y2="115.0" stroke="#1e3a8a" stroke-width="2.2"/><line x1="27.8" y1="90.1" x2="142.2" y2="90.1" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="27.8" y1="139.9" x2="142.2" y2="139.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="85.0" y1="38.0" x2="85.0" y2="192.0" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="85.0" y="33.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="85.0" y="206.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="73.6" cy="139.9" r="4" fill="#dc2626"/><text x="60.6" y="143.9" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><circle cx="103.7" cy="115.0" r="4" fill="#dc2626"/><text x="115.7" y="109.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><text x="5.0" y="30.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">I.</text><circle cx="265" cy="115" r="68" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="202.6" y1="115.0" x2="327.4" y2="115.0" stroke="#1e3a8a" stroke-width="2.2"/><line x1="207.8" y1="90.1" x2="322.2" y2="90.1" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="207.8" y1="139.9" x2="322.2" y2="139.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="265.0" y1="38.0" x2="265.0" y2="192.0" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="265.0" y="33.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="265.0" y="206.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="270.4" cy="83.8" r="4" fill="#dc2626"/><text x="283.4" y="87.8" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><circle cx="261.9" cy="61.0" r="4" fill="#dc2626"/><text x="274.9" y="65.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><text x="185.0" y="30.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">II.</text><circle cx="445" cy="115" r="68" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/><line x1="382.6" y1="115.0" x2="507.4" y2="115.0" stroke="#1e3a8a" stroke-width="2.2"/><line x1="387.8" y1="90.1" x2="502.2" y2="90.1" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="387.8" y1="139.9" x2="502.2" y2="139.9" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><line x1="445.0" y1="38.0" x2="445.0" y2="192.0" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 3"/><text x="445.0" y="33.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="445.0" y="206.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="426.3" cy="115.0" r="4" fill="#dc2626"/><text x="416.3" y="109.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">K</text><circle cx="454.6" cy="155.1" r="4" fill="#dc2626"/><text x="467.6" y="159.1" font-size="12" text-anchor="middle" font-weight="bold" fill="#991b1b">L</text><text x="365.0" y="30.0" font-size="13" text-anchor="start" font-weight="bold" fill="#0f172a">III.</text><line x1="20" y1="218" x2="44" y2="218" stroke="#1e3a8a" stroke-width="2.2"/><text x="50.0" y="222.0" font-size="11" text-anchor="start" fill="#0f172a">Ekvator</text><line x1="130" y1="218" x2="154" y2="218" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="5 3"/><text x="160.0" y="222.0" font-size="11" text-anchor="start" fill="#0f172a">Yengeç (üstte) ve Oğlak (altta) Dönenceleri</text></svg></div><p><b>Buna göre K ve L şehirlerinin konumları yukarıdakilerden hangilerindeki gibi olabilir?</b></p>`,
+  c: ["Yalnız I", "I ve III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Aralıkta Güneş ışınları öğle vakti Oğlak Dönencesi’ne dik veya dike yakın gelir. Bir şehir Oğlak Dönencesi’ne ne kadar yakınsa ışınları o kadar dik alır ve gölgesi o kadar kısa olur. Bu yüzden K, Oğlak Dönencesi’ne L’den daha yakın olmalıdır.</p><p>I: K Oğlak Dönencesi üzerinde, L Ekvator’da → K daha yakın ✓. II: K ve L Kuzey Yarım Küre’de; K Ekvator’a, dolayısıyla Oğlak Dönencesi’ne daha yakın ✓. III: K Ekvator’da, L ise Oğlak Dönencesi’nin biraz güneyinde → L Oğlak Dönencesi’ne daha yakındır, gölgesi daha kısa olur ✗.</p><p>Doğru seçenek <b>C</b>. <b>B</b> Ekvator’daki şehrin her zaman en kısa gölgeye sahip olacağı yanılgısından gelir. <b>A</b> II’de iki şehrin de kışı yaşadığını görüp karşılaştırma yapılamayacağını düşünmekten gelir.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şekilde birbirine komşu X ve Y bölgelerinin yeryüzüne yakın seviyedeki basınç durumu verilmiştir.</p><div class="fig"><svg viewBox="0 0 520 200" width="500" role="img" aria-label="X ve Y bölgelerinin basınç durumu" font-family="sans-serif"><rect x="5" y="5" width="510" height="165" rx="12" fill="#f8fafc" stroke="#94a3b8"/><ellipse cx="140" cy="88" rx="105" ry="60" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><ellipse cx="380" cy="88" rx="105" ry="60" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/><text x="140.0" y="82.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">X bölgesi</text><text x="140.0" y="102.0" font-size="12" text-anchor="middle" fill="#1d4ed8">Yüksek basınç alanı</text><text x="380.0" y="82.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">Y bölgesi</text><text x="380.0" y="102.0" font-size="12" text-anchor="middle" fill="#b91c1c">Alçak basınç alanı</text><text x="260.0" y="192.0" font-size="11" text-anchor="middle" fill="#0f172a">Şekil yeryüzüne yakın seviyedeki basınç durumunu göstermektedir.</text></svg></div><p><b>Buna göre bu bölgelerle ilgili aşağıdakilerden hangisinin gerçekleşmesi beklenir?</b></p>`,
+  c: ["X bölgesinde yükselici, Y bölgesinde alçalıcı hava hareketlerinin görülmesi", "Y bölgesindeki havanın sıcaklığının X bölgesindekinden düşük, yoğunluğunun ise yüksek olması", "Yeryüzüne yakın seviyede rüzgârın X bölgesinden Y bölgesine doğru esmesi ve Y bölgesinde bulut oluşma ihtimalinin daha yüksek olması", "Yeryüzüne yakın seviyede rüzgârın Y bölgesinden X bölgesine doğru esmesi"],
+  a: "C",
+  s: `<p>Yüksek basınç alanında (X) hava soğuk ve yoğundur, <b>alçalıcı</b> hava hareketi görülür; hava genellikle açık ve kuru olur. Alçak basınç alanında (Y) hava sıcak ve az yoğundur, <b>yükselici</b> hava hareketi görülür; yükselen nemli hava soğuyarak bulut ve yağış oluşturur.</p><p>Rüzgâr yeryüzüne yakın seviyede yüksek basınçtan alçak basınca, yani X’ten Y’ye doğru eser. <b>C</b> ✓.</p><p><b>A</b> ✗: Ses benzerliği yanılgısıdır; yüksek basınçta alçalıcı, alçak basınçta yükselici hareket vardır. <b>B</b> ✗: Y’deki hava daha sıcak ve daha az yoğundur. <b>D</b> ✗: Rüzgârın yönünü ters verir.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki X, Y ve Z şehirlerinde yatay zemine dik olarak yerleştirilen 1 m uzunluğundaki özdeş çubukların öğle vakti gölge boylarının bir yıl boyunca değişimi aşağıdaki grafiklerde verilmiştir. (Grafiklerin dikey eksen ölçekleri birbirinden farklıdır. Mart: 21 Mart, Haz.: 21 Haziran, Eyl.: 23 Eylül, Ara.: 21 Aralık)</p><div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="X, Y ve Z şehirlerinde öğle vakti gölge boyunun yıl içindeki değişimi" font-family="Arial, sans-serif"><defs><marker id="ar1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="32.0" y1="180.0" x2="196.0" y2="180.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar1)"/><line x1="32.0" y1="180.0" x2="32.0" y2="28.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar1)"/><text x="36.0" y="24.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gölge boyu (m)</text><text x="112.0" y="222.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">X şehri</text><line x1="29.0" y1="133.3" x2="35.0" y2="133.3" stroke="#0f172a" stroke-width="1"/><text x="27.0" y="137.3" font-size="11" text-anchor="end" fill="#0f172a">0,2</text><line x1="29.0" y1="86.7" x2="35.0" y2="86.7" stroke="#0f172a" stroke-width="1"/><text x="27.0" y="90.7" font-size="11" text-anchor="end" fill="#0f172a">0,4</text><polyline points="38.0,81.4 38.4,81.8 38.7,82.2 39.1,82.7 39.4,83.2 39.8,83.8 40.1,84.4 40.5,85.0 40.9,85.6 41.2,86.3 41.6,87.0 41.9,87.7 42.3,88.5 42.6,89.2 43.0,90.1 43.4,90.9 43.7,91.8 44.1,92.7 44.4,93.6 44.8,94.5 45.1,95.5 45.5,96.5 45.9,97.5 46.2,98.5 46.6,99.6 46.9,100.7 47.3,101.8 47.6,102.9 48.0,104.1 48.4,105.2 48.7,106.4 49.1,107.6 49.4,108.9 49.8,110.1 50.1,111.4 50.5,112.7 50.9,114.0 51.2,115.3 51.6,116.6 51.9,118.0 52.3,119.3 52.6,120.7 53.0,122.1 53.4,123.5 53.7,124.9 54.1,126.4 54.4,127.8 54.8,129.3 55.1,130.8 55.5,132.2 55.9,133.7 56.2,135.2 56.6,136.8 56.9,138.3 57.3,139.8 57.6,141.4 58.0,142.9 58.4,144.5 58.7,146.0 59.1,147.6 59.4,149.2 59.8,150.8 60.1,152.4 60.5,153.9 60.9,155.6 61.2,157.2 61.6,158.8 61.9,160.4 62.3,162.0 62.6,163.6 63.0,165.3 63.4,166.9 63.7,168.5 64.1,170.2 64.4,171.8 64.8,173.4 65.1,175.1 65.5,176.7 65.9,178.4 66.2,180.0 66.6,178.4 66.9,176.7 67.3,175.1 67.6,173.4 68.0,171.8 68.4,170.2 68.7,168.5 69.1,166.9 69.4,165.3 69.8,163.6 70.1,162.0 70.5,160.4 70.9,158.8 71.2,157.2 71.6,155.6 71.9,153.9 72.3,152.4 72.6,150.8 73.0,149.2 73.4,147.6 73.7,146.0 74.1,144.5 74.4,142.9 74.8,141.4 75.1,139.8 75.5,138.3 75.9,136.8 76.2,135.2 76.6,133.7 76.9,132.2 77.3,130.8 77.6,129.3 78.0,127.8 78.4,126.4 78.7,124.9 79.1,123.5 79.4,122.1 79.8,120.7 80.1,119.3 80.5,118.0 80.9,116.6 81.2,115.3 81.6,114.0 81.9,112.7 82.3,111.4 82.6,110.1 83.0,108.9 83.4,107.6 83.7,106.4 84.1,105.2 84.4,104.1 84.8,102.9 85.1,101.8 85.5,100.7 85.9,99.6 86.2,98.5 86.6,97.5 86.9,96.5 87.3,95.5 87.6,94.5 88.0,93.6 88.4,92.7 88.7,91.8 89.1,90.9 89.4,90.1 89.8,89.2 90.1,88.5 90.5,87.7 90.9,87.0 91.2,86.3 91.6,85.6 91.9,85.0 92.3,84.4 92.6,83.8 93.0,83.2 93.4,82.7 93.7,82.2 94.1,81.8 94.4,81.4 94.8,81.0 95.1,80.6 95.5,80.3 95.9,80.0 96.2,79.7 96.6,79.5 96.9,79.3 97.3,79.1 97.6,79.0 98.0,78.9 98.4,78.9 98.7,78.8 99.1,78.8 99.4,78.9 99.8,79.0 100.1,79.1 100.5,79.2 100.9,79.4 101.2,79.6 101.6,79.8 101.9,80.1 102.3,80.4 102.6,80.7 103.0,81.1 103.4,81.5 103.7,81.9 104.1,82.4 104.4,82.9 104.8,83.4 105.1,84.0 105.5,84.6 105.9,85.2 106.2,85.9 106.6,86.5 106.9,87.3 107.3,88.0 107.6,88.8 108.0,89.5 108.4,90.4 108.7,91.2 109.1,92.1 109.4,93.0 109.8,93.9 110.1,94.9 110.5,95.9 110.9,96.9 111.2,97.9 111.6,98.9 111.9,100.0 112.3,101.1 112.6,102.2 113.0,103.3 113.4,104.5 113.7,105.7 114.1,106.9 114.4,108.1 114.8,109.3 115.1,110.6 115.5,111.9 115.9,113.2 116.2,114.5 116.6,115.8 116.9,117.1 117.3,118.5 117.6,119.9 118.0,121.2 118.4,122.6 118.7,124.1 119.1,125.5 119.4,126.9 119.8,128.4 120.1,129.8 120.5,131.3 120.9,132.8 121.2,134.3 121.6,135.8 121.9,137.3 122.3,138.9 122.6,140.4 123.0,141.9 123.4,143.5 123.7,145.0 124.1,146.6 124.4,148.2 124.8,149.8 125.1,151.4 125.5,153.0 125.9,154.5 126.2,156.2 126.6,157.8 126.9,159.4 127.3,161.0 127.6,162.6 128.0,164.2 128.4,165.9 128.7,167.5 129.1,169.1 129.4,170.8 129.8,172.4 130.1,174.0 130.5,175.7 130.9,177.3 131.2,179.0 131.6,179.4 131.9,177.7 132.3,176.1 132.6,174.5 133.0,172.8 133.4,171.2 133.7,169.5 134.1,167.9 134.4,166.3 134.8,164.6 135.1,163.0 135.5,161.4 135.9,159.8 136.2,158.2 136.6,156.6 136.9,155.0 137.3,153.3 137.6,151.8 138.0,150.2 138.4,148.6 138.7,147.0 139.1,145.4 139.4,143.9 139.8,142.3 140.1,140.8 140.5,139.2 140.9,137.7 141.2,136.2 141.6,134.7 141.9,133.2 142.3,131.7 142.6,130.2 143.0,128.7 143.4,127.3 143.7,125.8 144.1,124.4 144.4,123.0 144.8,121.6 145.1,120.2 145.5,118.8 145.9,117.5 146.2,116.1 146.6,114.8 146.9,113.5 147.3,112.2 147.6,110.9 148.0,109.6 148.4,108.4 148.7,107.2 149.1,106.0 149.4,104.8 149.8,103.6 150.1,102.5 150.5,101.4 150.9,100.3 151.2,99.2 151.6,98.1 151.9,97.1 152.3,96.1 152.6,95.1 153.0,94.2 153.4,93.2 153.7,92.3 154.1,91.4 154.4,90.6 154.8,89.8 155.1,89.0 155.5,88.2 155.9,87.4 156.2,86.7 156.6,86.0 156.9,85.4 157.3,84.7 157.6,84.1 158.0,83.6 158.4,83.0 158.7,82.5 159.1,82.1 159.4,81.6 159.8,81.2 160.1,80.8 160.5,80.5 160.9,80.2 161.2,79.9 161.6,79.6 161.9,79.4 162.3,79.2 162.6,79.1 163.0,79.0 163.4,78.9 163.7,78.8 164.1,78.8 164.4,78.9 164.8,78.9 165.1,79.0 165.5,79.1 165.9,79.3 166.2,79.4 166.6,79.7 166.9,79.9 167.3,80.2 167.6,80.5 168.0,80.9" fill="none" stroke="#c026d3" stroke-width="2.4" stroke-linejoin="round"/><line x1="66.2" y1="180.0" x2="66.2" y2="180.0" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="66.2" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Mart</text><line x1="99.1" y1="180.0" x2="99.1" y2="78.8" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="99.1" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz.</text><line x1="132.6" y1="180.0" x2="132.6" y2="174.5" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="132.6" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl.</text><line x1="164.4" y1="180.0" x2="164.4" y2="78.9" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="164.4" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara.</text><text x="27.0" y="184.0" font-size="11" text-anchor="end" fill="#0f172a">0</text><defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="214.0" y1="180.0" x2="378.0" y2="180.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar2)"/><line x1="214.0" y1="180.0" x2="214.0" y2="28.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar2)"/><text x="218.0" y="24.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gölge boyu (m)</text><text x="294.0" y="222.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Y şehri</text><line x1="211.0" y1="121.7" x2="217.0" y2="121.7" stroke="#0f172a" stroke-width="1"/><text x="209.0" y="125.7" font-size="11" text-anchor="end" fill="#0f172a">0,5</text><line x1="211.0" y1="63.3" x2="217.0" y2="63.3" stroke="#0f172a" stroke-width="1"/><text x="209.0" y="67.3" font-size="11" text-anchor="end" fill="#0f172a">1</text><polyline points="220.0,178.9 220.4,178.8 220.7,178.6 221.1,178.4 221.4,178.1 221.8,177.9 222.1,177.7 222.5,177.4 222.9,177.1 223.2,176.8 223.6,176.5 223.9,176.2 224.3,175.9 224.6,175.5 225.0,175.2 225.4,174.8 225.7,174.4 226.1,174.1 226.4,173.7 226.8,173.2 227.1,172.8 227.5,172.4 227.9,171.9 228.2,171.4 228.6,171.0 228.9,170.5 229.3,170.0 229.6,169.5 230.0,168.9 230.4,168.4 230.7,167.9 231.1,167.3 231.4,166.7 231.8,166.2 232.1,165.6 232.5,165.0 232.9,164.4 233.2,163.7 233.6,163.1 233.9,162.5 234.3,161.8 234.6,161.1 235.0,160.5 235.4,159.8 235.7,159.1 236.1,158.4 236.4,157.7 236.8,156.9 237.1,156.2 237.5,155.5 237.9,154.7 238.2,154.0 238.6,153.2 238.9,152.4 239.3,151.6 239.6,150.8 240.0,150.0 240.4,149.2 240.7,148.4 241.1,147.6 241.4,146.7 241.8,145.9 242.1,145.0 242.5,144.2 242.9,143.3 243.2,142.4 243.6,141.5 243.9,140.7 244.3,139.8 244.6,138.9 245.0,137.9 245.4,137.0 245.7,136.1 246.1,135.2 246.4,134.2 246.8,133.3 247.1,132.3 247.5,131.4 247.9,130.4 248.2,129.4 248.6,128.4 248.9,127.5 249.3,126.5 249.6,125.5 250.0,124.5 250.4,123.5 250.7,122.5 251.1,121.4 251.4,120.4 251.8,119.4 252.1,118.4 252.5,117.3 252.9,116.3 253.2,115.2 253.6,114.2 253.9,113.2 254.3,112.1 254.6,111.1 255.0,110.0 255.4,108.9 255.7,107.9 256.1,106.8 256.4,105.7 256.8,104.7 257.1,103.6 257.5,102.6 257.9,101.5 258.2,100.4 258.6,99.4 258.9,98.3 259.3,97.2 259.6,96.2 260.0,95.1 260.4,94.0 260.7,93.0 261.1,91.9 261.4,90.9 261.8,89.8 262.1,88.8 262.5,87.8 262.9,86.7 263.2,85.7 263.6,84.7 263.9,83.7 264.3,82.7 264.6,81.7 265.0,80.7 265.4,79.8 265.7,78.8 266.1,77.8 266.4,76.9 266.8,76.0 267.1,75.1 267.5,74.2 267.9,73.3 268.2,72.4 268.6,71.5 268.9,70.7 269.3,69.9 269.6,69.1 270.0,68.3 270.4,67.5 270.7,66.7 271.1,66.0 271.4,65.3 271.8,64.6 272.1,63.9 272.5,63.3 272.9,62.6 273.2,62.0 273.6,61.4 273.9,60.9 274.3,60.3 274.6,59.8 275.0,59.3 275.4,58.9 275.7,58.5 276.1,58.1 276.4,57.7 276.8,57.3 277.1,57.0 277.5,56.7 277.9,56.5 278.2,56.2 278.6,56.0 278.9,55.8 279.3,55.7 279.6,55.6 280.0,55.5 280.4,55.4 280.7,55.4 281.1,55.4 281.4,55.5 281.8,55.5 282.1,55.6 282.5,55.7 282.9,55.9 283.2,56.1 283.6,56.3 283.9,56.5 284.3,56.8 284.6,57.1 285.0,57.5 285.4,57.8 285.7,58.2 286.1,58.6 286.4,59.1 286.8,59.5 287.1,60.0 287.5,60.5 287.9,61.1 288.2,61.6 288.6,62.2 288.9,62.9 289.3,63.5 289.6,64.2 290.0,64.8 290.4,65.5 290.7,66.3 291.1,67.0 291.4,67.8 291.8,68.6 292.1,69.4 292.5,70.2 292.9,71.0 293.2,71.9 293.6,72.7 293.9,73.6 294.3,74.5 294.6,75.4 295.0,76.3 295.4,77.3 295.7,78.2 296.1,79.2 296.4,80.1 296.8,81.1 297.1,82.1 297.5,83.1 297.9,84.1 298.2,85.1 298.6,86.1 298.9,87.1 299.3,88.2 299.6,89.2 300.0,90.2 300.4,91.3 300.7,92.3 301.1,93.4 301.4,94.4 301.8,95.5 302.1,96.6 302.5,97.6 302.9,98.7 303.2,99.8 303.6,100.8 303.9,101.9 304.3,103.0 304.6,104.0 305.0,105.1 305.4,106.1 305.7,107.2 306.1,108.3 306.4,109.3 306.8,110.4 307.1,111.4 307.5,112.5 307.9,113.5 308.2,114.6 308.6,115.6 308.9,116.7 309.3,117.7 309.6,118.7 310.0,119.8 310.4,120.8 310.7,121.8 311.1,122.8 311.4,123.8 311.8,124.8 312.1,125.8 312.5,126.8 312.9,127.8 313.2,128.8 313.6,129.8 313.9,130.8 314.3,131.7 314.6,132.7 315.0,133.6 315.4,134.6 315.7,135.5 316.1,136.4 316.4,137.4 316.8,138.3 317.1,139.2 317.5,140.1 317.9,141.0 318.2,141.9 318.6,142.8 318.9,143.6 319.3,144.5 319.6,145.4 320.0,146.2 320.4,147.0 320.7,147.9 321.1,148.7 321.4,149.5 321.8,150.3 322.1,151.1 322.5,151.9 322.9,152.7 323.2,153.5 323.6,154.2 323.9,155.0 324.3,155.8 324.6,156.5 325.0,157.2 325.4,157.9 325.7,158.6 326.1,159.3 326.4,160.0 326.8,160.7 327.1,161.4 327.5,162.0 327.9,162.7 328.2,163.3 328.6,164.0 328.9,164.6 329.3,165.2 329.6,165.8 330.0,166.4 330.4,166.9 330.7,167.5 331.1,168.1 331.4,168.6 331.8,169.1 332.1,169.7 332.5,170.2 332.9,170.7 333.2,171.1 333.6,171.6 333.9,172.1 334.3,172.5 334.6,173.0 335.0,173.4 335.4,173.8 335.7,174.2 336.1,174.6 336.4,175.0 336.8,175.3 337.1,175.7 337.5,176.0 337.9,176.3 338.2,176.6 338.6,176.9 338.9,177.2 339.3,177.5 339.6,177.7 340.0,178.0 340.4,178.2 340.7,178.4 341.1,178.6 341.4,178.8 341.8,179.0 342.1,179.2 342.5,179.3 342.9,179.4 343.2,179.6 343.6,179.7 343.9,179.8 344.3,179.8 344.6,179.9 345.0,179.9 345.4,180.0 345.7,180.0 346.1,180.0 346.4,180.0 346.8,180.0 347.1,179.9 347.5,179.9 347.9,179.8 348.2,179.7 348.6,179.6 348.9,179.5 349.3,179.4 349.6,179.3 350.0,179.1" fill="none" stroke="#c026d3" stroke-width="2.4" stroke-linejoin="round"/><line x1="248.2" y1="180.0" x2="248.2" y2="129.4" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="248.2" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Mart</text><line x1="281.1" y1="180.0" x2="281.1" y2="55.4" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="281.1" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz.</text><line x1="314.6" y1="180.0" x2="314.6" y2="132.7" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="314.6" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl.</text><line x1="346.4" y1="180.0" x2="346.4" y2="180.0" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="346.4" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara.</text><text x="209.0" y="184.0" font-size="11" text-anchor="end" fill="#0f172a">0</text><defs><marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="396.0" y1="180.0" x2="560.0" y2="180.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar3)"/><line x1="396.0" y1="180.0" x2="396.0" y2="28.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar3)"/><text x="400.0" y="24.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gölge boyu (m)</text><text x="476.0" y="222.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Z şehri</text><line x1="393.0" y1="141.1" x2="399.0" y2="141.1" stroke="#0f172a" stroke-width="1"/><text x="391.0" y="145.1" font-size="11" text-anchor="end" fill="#0f172a">1</text><line x1="393.0" y1="102.2" x2="399.0" y2="102.2" stroke="#0f172a" stroke-width="1"/><text x="391.0" y="106.2" font-size="11" text-anchor="end" fill="#0f172a">2</text><line x1="393.0" y1="63.3" x2="399.0" y2="63.3" stroke="#0f172a" stroke-width="1"/><text x="391.0" y="67.3" font-size="11" text-anchor="end" fill="#0f172a">3</text><polyline points="402.0,53.5 402.4,54.2 402.7,54.9 403.1,55.7 403.4,56.5 403.8,57.3 404.1,58.2 404.5,59.2 404.9,60.1 405.2,61.1 405.6,62.2 405.9,63.2 406.3,64.3 406.6,65.4 407.0,66.5 407.4,67.7 407.7,68.9 408.1,70.0 408.4,71.2 408.8,72.4 409.1,73.7 409.5,74.9 409.9,76.1 410.2,77.4 410.6,78.6 410.9,79.9 411.3,81.1 411.6,82.4 412.0,83.6 412.4,84.9 412.7,86.1 413.1,87.4 413.4,88.6 413.8,89.8 414.1,91.0 414.5,92.3 414.9,93.5 415.2,94.7 415.6,95.9 415.9,97.0 416.3,98.2 416.6,99.4 417.0,100.5 417.4,101.6 417.7,102.8 418.1,103.9 418.4,105.0 418.8,106.0 419.1,107.1 419.5,108.2 419.9,109.2 420.2,110.2 420.6,111.3 420.9,112.3 421.3,113.3 421.6,114.2 422.0,115.2 422.4,116.1 422.7,117.1 423.1,118.0 423.4,118.9 423.8,119.8 424.1,120.7 424.5,121.5 424.9,122.4 425.2,123.2 425.6,124.0 425.9,124.9 426.3,125.7 426.6,126.4 427.0,127.2 427.4,128.0 427.7,128.7 428.1,129.5 428.4,130.2 428.8,130.9 429.1,131.6 429.5,132.3 429.9,133.0 430.2,133.7 430.6,134.3 430.9,135.0 431.3,135.6 431.6,136.2 432.0,136.8 432.4,137.4 432.7,138.0 433.1,138.6 433.4,139.2 433.8,139.7 434.1,140.3 434.5,140.8 434.9,141.4 435.2,141.9 435.6,142.4 435.9,142.9 436.3,143.4 436.6,143.9 437.0,144.4 437.4,144.9 437.7,145.3 438.1,145.8 438.4,146.2 438.8,146.7 439.1,147.1 439.5,147.5 439.9,147.9 440.2,148.3 440.6,148.7 440.9,149.1 441.3,149.5 441.6,149.9 442.0,150.3 442.4,150.6 442.7,151.0 443.1,151.3 443.4,151.7 443.8,152.0 444.1,152.3 444.5,152.7 444.9,153.0 445.2,153.3 445.6,153.6 445.9,153.9 446.3,154.1 446.6,154.4 447.0,154.7 447.4,155.0 447.7,155.2 448.1,155.5 448.4,155.7 448.8,156.0 449.1,156.2 449.5,156.4 449.9,156.6 450.2,156.9 450.6,157.1 450.9,157.3 451.3,157.5 451.6,157.7 452.0,157.8 452.4,158.0 452.7,158.2 453.1,158.4 453.4,158.5 453.8,158.7 454.1,158.8 454.5,159.0 454.9,159.1 455.2,159.2 455.6,159.3 455.9,159.5 456.3,159.6 456.6,159.7 457.0,159.8 457.4,159.9 457.7,160.0 458.1,160.0 458.4,160.1 458.8,160.2 459.1,160.2 459.5,160.3 459.9,160.4 460.2,160.4 460.6,160.4 460.9,160.5 461.3,160.5 461.6,160.5 462.0,160.5 462.4,160.6 462.7,160.6 463.1,160.6 463.4,160.6 463.8,160.5 464.1,160.5 464.5,160.5 464.9,160.5 465.2,160.4 465.6,160.4 465.9,160.3 466.3,160.3 466.6,160.2 467.0,160.2 467.4,160.1 467.7,160.0 468.1,159.9 468.4,159.8 468.8,159.7 469.1,159.6 469.5,159.5 469.9,159.4 470.2,159.3 470.6,159.2 470.9,159.0 471.3,158.9 471.6,158.8 472.0,158.6 472.4,158.5 472.7,158.3 473.1,158.1 473.4,158.0 473.8,157.8 474.1,157.6 474.5,157.4 474.9,157.2 475.2,157.0 475.6,156.8 475.9,156.6 476.3,156.3 476.6,156.1 477.0,155.9 477.4,155.6 477.7,155.4 478.1,155.1 478.4,154.9 478.8,154.6 479.1,154.3 479.5,154.0 479.9,153.8 480.2,153.5 480.6,153.2 480.9,152.9 481.3,152.5 481.6,152.2 482.0,151.9 482.4,151.5 482.7,151.2 483.1,150.9 483.4,150.5 483.8,150.1 484.1,149.8 484.5,149.4 484.9,149.0 485.2,148.6 485.6,148.2 485.9,147.8 486.3,147.4 486.6,146.9 487.0,146.5 487.4,146.1 487.7,145.6 488.1,145.2 488.4,144.7 488.8,144.2 489.1,143.7 489.5,143.2 489.9,142.7 490.2,142.2 490.6,141.7 490.9,141.2 491.3,140.6 491.6,140.1 492.0,139.5 492.4,139.0 492.7,138.4 493.1,137.8 493.4,137.2 493.8,136.6 494.1,136.0 494.5,135.4 494.9,134.7 495.2,134.1 495.6,133.4 495.9,132.7 496.3,132.0 496.6,131.4 497.0,130.6 497.4,129.9 497.7,129.2 498.1,128.5 498.4,127.7 498.8,126.9 499.1,126.2 499.5,125.4 499.9,124.6 500.2,123.7 500.6,122.9 500.9,122.1 501.3,121.2 501.6,120.3 502.0,119.5 502.4,118.6 502.7,117.6 503.1,116.7 503.4,115.8 503.8,114.8 504.1,113.9 504.5,112.9 504.9,111.9 505.2,110.9 505.6,109.9 505.9,108.8 506.3,107.8 506.6,106.7 507.0,105.6 507.4,104.6 507.7,103.5 508.1,102.3 508.4,101.2 508.8,100.1 509.1,98.9 509.5,97.8 509.9,96.6 510.2,95.4 510.6,94.2 510.9,93.0 511.3,91.8 511.6,90.6 512.0,89.4 512.4,88.1 512.7,86.9 513.1,85.6 513.4,84.4 513.8,83.2 514.1,81.9 514.5,80.6 514.9,79.4 515.2,78.2 515.6,76.9 515.9,75.7 516.3,74.4 516.6,73.2 517.0,72.0 517.4,70.8 517.7,69.6 518.1,68.4 518.4,67.3 518.8,66.1 519.1,65.0 519.5,63.9 519.9,62.8 520.2,61.8 520.6,60.8 520.9,59.8 521.3,58.8 521.6,57.9 522.0,57.0 522.4,56.2 522.7,55.4 523.1,54.6 523.4,53.9 523.8,53.2 524.1,52.6 524.5,52.0 524.9,51.5 525.2,51.0 525.6,50.6 525.9,50.2 526.3,49.9 526.6,49.7 527.0,49.5 527.4,49.3 527.7,49.2 528.1,49.2 528.4,49.2 528.8,49.3 529.1,49.5 529.5,49.7 529.9,50.0 530.2,50.3 530.6,50.6 530.9,51.1 531.3,51.6 531.6,52.1 532.0,52.7" fill="none" stroke="#c026d3" stroke-width="2.4" stroke-linejoin="round"/><line x1="430.2" y1="180.0" x2="430.2" y2="133.7" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="430.2" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Mart</text><line x1="463.1" y1="180.0" x2="463.1" y2="160.6" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="463.1" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Haz.</text><line x1="496.6" y1="180.0" x2="496.6" y2="131.4" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="496.6" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Eyl.</text><line x1="528.4" y1="180.0" x2="528.4" y2="49.2" stroke="#475569" stroke-width="1" stroke-dasharray="3 3"/><text x="528.4" y="193.0" font-size="11" text-anchor="middle" fill="#0f172a">Ara.</text><text x="391.0" y="184.0" font-size="11" text-anchor="end" fill="#0f172a">0</text></svg></div><p>Grafiklere göre,</p><p>I. X şehrinde yıl boyunca gece ve gündüz süreleri birbirine eşittir.<br>II. Y şehri Oğlak Dönencesi üzerindedir.<br>III. Z şehrinde 21 Haziran’da Güneş 24 saat boyunca batmaz.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Gölgenin sıfır olduğu gün, Güneş ışınlarının o şehre dik geldiği gündür. X’te gölge yalnızca 21 Mart ve 23 Eylül’de sıfırdır; bu tarihlerde ışınlar Ekvator’a dik gelir, yani X Ekvator üzerindedir. Ekvator’da yıl boyunca gece ve gündüz 12’şer saattir (I kesin doğru). Y’de gölge yılda yalnızca bir kez, 21 Aralık’ta sıfırdır; o gün ışınlar Oğlak Dönencesi’ne dik gelir, yani Y Oğlak Dönencesi üzerindedir (II kesin doğru). Z’de gölge hiç sıfır olmuyor ve en kısa 21 Haziran’da; Z, Yengeç Dönencesi’nin kuzeyindedir. Ancak kutup dairesinin kuzeyinde olduğu grafikten anlaşılamaz (Z örneğin 50° K’de de olabilir), bu yüzden III “olabilir” ama kesin değildir. “Aralık gölgesi çok uzun, o hâlde kutuptadır” düşüncesi yanılgıdır.</p><p>A) Yalnız I: Y’nin gölgesi yalnız 21 Aralık’ta sıfır olduğundan II de kesindir.<br>B) I ve II: Doğru.<br>C) II ve III: I kesin doğrudur; III ise yalnızca olabilir (Z’nin kutup dairesinin kuzeyinde olduğu bilinmiyor).<br>D) I, II ve III: III kesin değildir; uzun kış gölgesi kutup dairesinde olmayı gerektirmez.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tanılayıcı dallanmış ağaçta ifadeler, sorulara verilen “Evet” ya da “Hayır” cevaplarına göre çıkışlara ulaşmaktadır.</p><div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="İfadeleri sınıflandıran tanılayıcı dallanmış ağaç" font-family="Arial, sans-serif"><defs><marker id="ar10" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs><rect x="150.0" y="8.0" width="260.0" height="40.0" rx="6" fill="#eff6ff" stroke="#1e3a8a" stroke-width="1.4"/><text x="280.0" y="25.0" font-size="11" text-anchor="middle" fill="#0f172a">İfade, uzun yıllar boyunca gözlenen</text><text x="280.0" y="40.0" font-size="11" text-anchor="middle" fill="#0f172a">genel durumu mu anlatıyor?</text><rect x="20.0" y="92.0" width="120.0" height="32.0" rx="6" fill="#fef9c3" stroke="#1e3a8a" stroke-width="1.4"/><text x="80.0" y="109.0" font-size="11" text-anchor="middle" fill="#0f172a">1. çıkış</text><rect x="250.0" y="92.0" width="290.0" height="40.0" rx="6" fill="#eff6ff" stroke="#1e3a8a" stroke-width="1.4"/><text x="395.0" y="109.0" font-size="11" text-anchor="middle" fill="#0f172a">İfade, henüz gerçekleşmemiş bir olay</text><text x="395.0" y="124.0" font-size="11" text-anchor="middle" fill="#0f172a">için yapılan tahmin mi?</text><rect x="250.0" y="190.0" width="120.0" height="32.0" rx="6" fill="#fef9c3" stroke="#1e3a8a" stroke-width="1.4"/><text x="310.0" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">2. çıkış</text><rect x="420.0" y="190.0" width="120.0" height="32.0" rx="6" fill="#fef9c3" stroke="#1e3a8a" stroke-width="1.4"/><text x="480.0" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">3. çıkış</text><line x1="220.0" y1="48.0" x2="90.0" y2="90.0" stroke="#475569" stroke-width="1.5" marker-end="url(#ar10)"/><text x="140.0" y="66.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Evet</text><line x1="340.0" y1="48.0" x2="390.0" y2="90.0" stroke="#475569" stroke-width="1.5" marker-end="url(#ar10)"/><text x="385.0" y="66.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Hayır</text><line x1="360.0" y1="132.0" x2="315.0" y2="188.0" stroke="#475569" stroke-width="1.5" marker-end="url(#ar10)"/><text x="318.0" y="160.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Evet</text><line x1="430.0" y1="132.0" x2="475.0" y2="188.0" stroke="#475569" stroke-width="1.5" marker-end="url(#ar10)"/><text x="475.0" y="160.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Hayır</text></svg></div><div class="box">a) Geçen salı Rize’de üç saat içinde metrekareye 90 kg yağış düştü.<br>b) Hafta sonu İç Anadolu’da kuvvetli rüzgâr ve toz taşınımı bekleniyor.<br>c) Ege kıyılarında kışlar ılık ve yağışlı geçer.<br>d) Son 40 yılın kayıtlarına göre İstanbul’da kar yağışlı gün sayısı azalmıştır.</div><p><b>Buna göre hangi iki ifade aynı çıkışa ulaşır?</b></p>`,
+  c: ["a ve b", "a ve d", "b ve c", "c ve d"],
+  a: "D",
+  s: `<p>c, Ege kıyılarının her yıl tekrar eden genel özelliğidir; d, 40 yıllık kayıtlardan çıkarılan uzun dönemli bir değişimdir. İkisi de uzun yılların genel durumunu anlatır, “Evet” ile 1. çıkışa (iklim) ulaşır. b gelecekle ilgili bir tahmindir → 2. çıkış (hava tahmini). a belirli bir günde gerçekleşmiş bir olaydır → 3. çıkış (hava olayı).</p><p>A) Yanlış: a 3. çıkışa, b 2. çıkışa ulaşır.<br>B) Yanlış: İkisi de yağışla ilgili ve geçmiş zamanlı olsa da a tek bir günü (hava olayı), d 40 yıllık eğilimi (iklim) anlatır. “Konu kar/yağmur ise hava olayıdır” yanılgısı.<br>C) Yanlış: b 2. çıkışa, c 1. çıkışa ulaşır.<br>D) Doğru: c ve d 1. çıkışa ulaşır.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki şekilde Dünya’nın Güneş etrafındaki yörüngesinde bulunduğu dört önemli konum (P, R, S ve T), dönme ekseninin durumu ve dolanma yönü gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 260" width="560" role="img" aria-label="Dünya’nın yörüngede P, R, S, T konumları ve eğik dönme ekseni" font-family="Arial, sans-serif"><ellipse cx="280" cy="128" rx="200" ry="78" fill="none" stroke="#64748b" stroke-width="1.6"/><circle cx="280.0" cy="128.0" r="26.0" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/><text x="280.0" y="132.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#92400e">Güneş</text><circle cx="480.0" cy="128.0" r="17.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="464.4" y1="121.2" x2="495.6" y2="134.8" stroke="#1e3a8a" stroke-width="1.4"/><line x1="469.7" y1="151.9" x2="490.3" y2="104.1" stroke="#334155" stroke-width="1.6"/><text x="492.3" y="102.1" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="530.0" y="133.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#991b1b">P</text><circle cx="280.0" cy="50.0" r="17.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="264.4" y1="43.2" x2="295.6" y2="56.8" stroke="#1e3a8a" stroke-width="1.4"/><line x1="269.7" y1="73.9" x2="290.3" y2="26.1" stroke="#334155" stroke-width="1.6"/><text x="292.3" y="24.1" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="320.0" y="55.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#991b1b">R</text><circle cx="80.0" cy="128.0" r="17.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="64.4" y1="121.2" x2="95.6" y2="134.8" stroke="#1e3a8a" stroke-width="1.4"/><line x1="69.7" y1="151.9" x2="90.3" y2="104.1" stroke="#334155" stroke-width="1.6"/><text x="92.3" y="102.1" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="40.0" y="133.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#991b1b">S</text><circle cx="280.0" cy="206.0" r="17.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="264.4" y1="199.2" x2="295.6" y2="212.8" stroke="#1e3a8a" stroke-width="1.4"/><line x1="269.7" y1="229.9" x2="290.3" y2="182.1" stroke="#334155" stroke-width="1.6"/><text x="292.3" y="180.1" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="320.0" y="212.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#991b1b">T</text><defs><marker id="ar5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><path d="M495.9,154.7 L497.8,152.5 L499.6,150.3 L501.3,148.1 L502.7,145.8 L504.0,143.5 L505.1,141.2 L506.0,138.9 L506.8,136.6 L507.4,134.2 L507.8,131.9 L508.0,129.6 L508.0,127.2 L507.8,124.9 L507.5,122.5 L507.0,120.2 L506.3,117.9 L505.4,115.6 L504.4,113.3 L503.2,111.0 L501.8,108.7" fill="none" stroke="#0f172a" stroke-width="2" marker-end="url(#ar5)"/><text x="500.0" y="210.0" font-size="11" text-anchor="middle" fill="#0f172a">Dolanma yönü</text><text x="280.0" y="252.0" font-size="11" text-anchor="middle" fill="#475569">K harfi Dünya üzerinde Kuzey Kutbu’nu gösterir. Şekil ölçeksizdir.</text></svg></div><p><b>Türkiye’de gündüzlerin her gün biraz daha uzadığı hâlde gece süresinin gündüz süresinden uzun olduğu dönem, Dünya’nın hangi iki konumu arasındaki hareketi sırasında yaşanır?</b></p>`,
+  c: ["P → R", "R → S", "S → T", "T → P"],
+  a: "A",
+  s: `<p>Eksen her konumda sağa eğiktir. S konumunda (Güneş’in solunda) Kuzey Kutbu Güneş’e dönüktür → 21 Haziran. P konumunda (Güneş’in sağında) Kuzey Kutbu Güneş’ten uzağa dönüktür → 21 Aralık. Dolanma yönüne göre P’den sonra R (21 Mart), S’den sonra T (23 Eylül) gelir. Türkiye’de (Kuzey Yarım Küre) gündüzler 21 Aralık’tan sonra uzar; 21 Mart’a kadar gece hâlâ gündüzden uzundur. Bu dönem P → R arasıdır.</p><p>A) Doğru.<br>B) Yanlış: R → S (21 Mart – 21 Haziran) arasında gündüzler uzar ama gündüz geceden uzundur.<br>C) Yanlış: S → T (21 Haziran – 23 Eylül) arasında gündüzler kısalır.<br>D) Yanlış: T → P (23 Eylül – 21 Aralık) arasında gündüzler kısalır ve gece gündüzden uzundur.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K (45° Kuzey), L (Ekvator) ve M (35° Güney) şehirlerinde aynı yıl içinde, aralarında iki hafta bulunan iki farklı günde ölçülen gündüz süreleri tabloda verilmiştir.</p><table><tr><th>Şehir</th><th>1. ölçüm</th><th>2. ölçüm (iki hafta sonra)</th></tr><tr><td>K (45° K)</td><td>14 sa 06 dk</td><td>14 sa 41 dk</td></tr><tr><td>L (Ekvator)</td><td>12 sa 00 dk</td><td>12 sa 00 dk</td></tr><tr><td>M (35° G)</td><td>10 sa 32 dk</td><td>10 sa 08 dk</td></tr></table><p><b>Bu verilere göre aşağıdakilerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["İki ölçüm arasında geçen sürede M şehrinde gece süresi kısalmıştır.", "2. ölçüm gününde öğle vakti L şehrinde yere dik duran bir çubuğun gölgesi oluşmaz.", "1. ölçüm gününde M şehrinde ilkbahar mevsimi yaşanmaktadır.", "Ölçümler 21 Mart ile 21 Haziran tarihleri arasında yapılmıştır."],
+  a: "D",
+  s: `<p>Kuzey Yarım Küre’deki K’de gündüz 12 saatten uzun, yani ölçümler 21 Mart – 23 Eylül arasındadır. Üstelik K’de gündüz uzuyor; Kuzey Yarım Küre’de gündüzler yalnızca 21 Aralık – 21 Haziran arasında uzar. İki koşulun ortak aralığı 21 Mart – 21 Haziran’dır.</p><p>A) Yanlış: M’de gündüz 10 sa 32 dk’dan 10 sa 08 dk’ya kısalmış, gece ise 13 sa 28 dk’dan 13 sa 52 dk’ya uzamıştır (gece = 24 saat − gündüz).<br>B) Yanlış: Ekvator’da gölge yalnızca ışınların Ekvator’a dik geldiği 21 Mart ve 23 Eylül’de oluşmaz. 2. ölçüm günü bu aralığın içindedir ve 21 Mart değildir (K’de gündüz 12 saatten uzun); dik ışın Ekvator’un kuzeyindedir, L’de gölge oluşur. “Ekvator’da hiç gölge olmaz” yanılgısı.<br>C) Yanlış: 21 Mart – 21 Haziran arasında Güney Yarım Küre’de sonbahar yaşanır. “Kuzey’de ilkbahar ise her yerde ilkbahar” yanılgısı.<br>D) Doğru: gündüz &gt; gece ve gündüz uzuyor → 21 Mart – 21 Haziran.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğretmen, tahtaya aşağıdaki tabloyu çizip öğrencilerinden kartlardaki şehir ve tarihleri uygun kutulara yerleştirmelerini istiyor.</p><div class="fig"><svg viewBox="0 0 470 180" width="470" role="img" aria-label="Gündüz süresinin değişimine ve gece-gündüz karşılaştırmasına göre dört kutu" font-family="Arial, sans-serif"><text x="225.0" y="30.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Gündüz &gt; gece</text><text x="375.0" y="30.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Gece &gt; gündüz</text><text x="142.0" y="71.5" font-size="12" text-anchor="end" font-weight="bold" fill="#0f172a">Gündüz uzuyor</text><text x="142.0" y="126.5" font-size="12" text-anchor="end" font-weight="bold" fill="#0f172a">Gündüz kısalıyor</text><rect x="150.0" y="40.0" width="150.0" height="55.0" rx="0" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.4"/><text x="225.0" y="72.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e3a8a">1. kutu</text><rect x="300.0" y="40.0" width="150.0" height="55.0" rx="0" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.4"/><text x="375.0" y="72.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e3a8a">2. kutu</text><rect x="150.0" y="95.0" width="150.0" height="55.0" rx="0" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.4"/><text x="225.0" y="127.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e3a8a">3. kutu</text><rect x="300.0" y="95.0" width="150.0" height="55.0" rx="0" fill="#f8fafc" stroke="#1e3a8a" stroke-width="1.4"/><text x="375.0" y="127.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e3a8a">4. kutu</text></svg></div><div class="box">K: 40° Kuzey’deki bir şehir, 10 Mayıs<br>L: 35° Güney’deki bir şehir, 10 Mayıs<br>M: 40° Kuzey’deki bir şehir, 10 Şubat<br>N: 35° Güney’deki bir şehir, 10 Kasım</div><p><b>Buna göre kartların doğru yerleştirilmiş hâli aşağıdakilerden hangisidir?</b></p>`,
+  c: ["1. kutu: K ve N — 2. kutu: M — 3. kutu: boş — 4. kutu: L", "1. kutu: K — 2. kutu: M ve N — 3. kutu: boş — 4. kutu: L", "1. kutu: K ve N — 2. kutu: boş — 3. kutu: M — 4. kutu: L", "1. kutu: K — 2. kutu: M — 3. kutu: N — 4. kutu: L"],
+  a: "A",
+  s: `<p>Kuzey Yarım Küre’de gündüz 21 Aralık – 21 Haziran arasında uzar, 21 Mart – 23 Eylül arasında geceden uzundur; Güney’de tersidir. K (Kuzey, 10 Mayıs): uzuyor + gündüz &gt; gece → 1. kutu. L (Güney, 10 Mayıs): kısalıyor + gece &gt; gündüz → 4. kutu. M (Kuzey, 10 Şubat): uzuyor + gece &gt; gündüz → 2. kutu. N (Güney, 10 Kasım): Güney’de gündüz 21 Haziran’dan beri uzuyor ve 23 Eylül’den beri geceden uzun → 1. kutu. 3. kutuya kart düşmez.</p><p>A) Doğru.<br>B) Yanlış: N’de 10 Kasım’da gündüz geceden uzundur; 2. kutuya değil 1. kutuya girer.<br>C) Yanlış: M’de 10 Şubat’ta gündüz uzamaktadır; 3. kutu “kısalıyor” kutusudur. “Kışın gündüz kısadır, o hâlde kısalıyordur” yanılgısı.<br>D) Yanlış: N’de gündüz kısalmıyor, uzuyor; 3. kutuya giremez.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Şekillerde Dünya’nın Güneş etrafında dolanırken bulunduğu iki farklı konum, tabloda ise hangi yarım kürede oldukları belirtilmeyen eş yükseltideki K, L ve M şehirlerinin uzun yıllar boyunca ölçülen ocak ve temmuz sıcaklık ortalamaları verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Dünya’nın Güneş’e göre iki farklı konumu" font-family="Arial, sans-serif"><rect x="4.0" y="4.0" width="272.0" height="170.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><rect x="284.0" y="4.0" width="272.0" height="170.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><svg x="4" y="4" width="272" height="170" viewBox="0 0 272 170"><defs><marker id="ar8" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><circle cx="332.0" cy="85.0" r="93.0" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/><text x="264.0" y="89.0" font-size="12" text-anchor="end" font-weight="bold" fill="#92400e">Güneş</text><line x1="202.0" y1="32.5" x2="160.0" y2="32.5" stroke="#d97706" stroke-width="2" marker-end="url(#ar8)"/><line x1="202.0" y1="67.0" x2="160.0" y2="67.0" stroke="#d97706" stroke-width="2" marker-end="url(#ar8)"/><line x1="202.0" y1="103.0" x2="160.0" y2="103.0" stroke="#d97706" stroke-width="2" marker-end="url(#ar8)"/><line x1="202.0" y1="137.5" x2="160.0" y2="137.5" stroke="#d97706" stroke-width="2" marker-end="url(#ar8)"/><circle cx="90.0" cy="85.0" r="62.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="33.1" y1="60.3" x2="146.9" y2="109.7" stroke="#1e3a8a" stroke-width="2"/><line x1="120.2" y1="15.3" x2="59.8" y2="154.7" stroke="#334155" stroke-width="1.6" stroke-dasharray="5 3"/><text x="120.2" y="11.3" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="59.8" y="168.7" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><text x="101.0" y="104.0" font-size="11" text-anchor="middle" fill="#1e3a8a">Ekvator</text></svg><svg x="284" y="4" width="272" height="170" viewBox="0 0 272 170"><defs><marker id="ar9" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d97706"/></marker></defs><circle cx="-60" cy="85.0" r="93.0" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/><text x="8.0" y="89.0" font-size="12" text-anchor="start" font-weight="bold" fill="#92400e">Güneş</text><line x1="70.0" y1="32.5" x2="110.0" y2="32.5" stroke="#d97706" stroke-width="2" marker-end="url(#ar9)"/><line x1="70.0" y1="67.0" x2="110.0" y2="67.0" stroke="#d97706" stroke-width="2" marker-end="url(#ar9)"/><line x1="70.0" y1="103.0" x2="110.0" y2="103.0" stroke="#d97706" stroke-width="2" marker-end="url(#ar9)"/><line x1="70.0" y1="137.5" x2="110.0" y2="137.5" stroke="#d97706" stroke-width="2" marker-end="url(#ar9)"/><circle cx="185.0" cy="85.0" r="62.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="128.1" y1="60.3" x2="241.9" y2="109.7" stroke="#1e3a8a" stroke-width="2"/><line x1="215.2" y1="15.3" x2="154.8" y2="154.7" stroke="#334155" stroke-width="1.6" stroke-dasharray="5 3"/><text x="215.2" y="11.3" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="154.8" y="168.7" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><text x="196.0" y="104.0" font-size="11" text-anchor="middle" fill="#1e3a8a">Ekvator</text></svg><text x="140.0" y="192.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">I. konum</text><text x="420.0" y="192.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">II. konum</text></svg></div><table><tr><th>Şehir</th><th>Ocak ortalaması (°C)</th><th>Temmuz ortalaması (°C)</th></tr><tr><td>K</td><td>−4</td><td>23</td></tr><tr><td>L</td><td>26</td><td>27</td></tr><tr><td>M</td><td>21</td><td>8</td></tr></table><p><b>Buna göre aşağıdaki yargılardan hangisine ulaşılamaz?</b></p>`,
+  c: ["I. konumdayken K şehrinde gündüz süresi gece süresinden uzundur.", "II. konumdayken M şehrinde yaz mevsimi yaşanır.", "I. konumdayken L şehrinde kış mevsimi yaşanır.", "I. konumdayken M şehrinde gündüz süresi gece süresinden kısadır."],
+  a: "C",
+  s: `<p>I. konumda Kuzey Kutbu Güneş’e dönüktür (21 Haziran): Kuzey’de yaz, Güney’de kış. II. konumda Kuzey Kutbu Güneş’ten uzaktadır (21 Aralık): Kuzey’de kış, Güney’de yaz. K’de ocak soğuk, temmuz sıcak → Kuzey Yarım Küre. M’de ocak sıcak, temmuz soğuk → Güney Yarım Küre. L’de iki ay neredeyse eşit ve sıcaktır; L Ekvator’a yakındır ama hangi yarım kürede olduğu (ya da Ekvator üzerinde olup olmadığı) bu verilerle anlaşılamaz.</p><p>A) Ulaşılabilir: I. konumda Kuzey’deki K’de gündüz geceden uzundur.<br>B) Ulaşılabilir: II. konumda Güney’deki M’de yaz yaşanır.<br>C) Ulaşılamaz (cevap): L’nin yarım küresi belirlenemediği için mevsimi de belirlenemez. “Temmuz biraz daha sıcak, o hâlde Kuzey’dedir” çıkarımı yeterli değildir; Ekvator çevresinde yıl içindeki fark çok küçüktür.<br>D) Ulaşılabilir: I. konumda Güney’deki M’de gece gündüzden uzundur.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K, L, M ve N şehirlerinde aynı gün öğle vakti, yatay zemine dik olarak yerleştirilen 100 cm’lik özdeş çubukların gölge boyları ölçülmüştür. Ölçümün yapıldığı tarih bilinmemektedir.</p><div class="fig"><svg viewBox="0 0 560 175" width="560" role="img" aria-label="K, L, M ve N şehirlerinde aynı gün öğle vakti gölge boyları" font-family="Arial, sans-serif"><line x1="30.0" y1="125.0" x2="160.0" y2="125.0" stroke="#78350f" stroke-width="2.5"/><line x1="40.0" y1="125.0" x2="40.0" y2="35.0" stroke="#334155" stroke-width="4"/><text x="95.0" y="147.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">K şehri</text><text x="95.0" y="165.0" font-size="12" text-anchor="middle" fill="#0f172a">gölge yok</text><line x1="165.0" y1="125.0" x2="295.0" y2="125.0" stroke="#78350f" stroke-width="2.5"/><line x1="175.0" y1="125.0" x2="175.0" y2="35.0" stroke="#334155" stroke-width="4"/><rect x="175.0" y="122.0" width="32.4" height="6" fill="#475569" fill-opacity="0.65"/><text x="230.0" y="147.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">L şehri</text><text x="230.0" y="165.0" font-size="12" text-anchor="middle" fill="#0f172a">gölge: 36 cm</text><line x1="300.0" y1="125.0" x2="430.0" y2="125.0" stroke="#78350f" stroke-width="2.5"/><line x1="310.0" y1="125.0" x2="310.0" y2="35.0" stroke="#334155" stroke-width="4"/><rect x="310.0" y="122.0" width="107.1" height="6" fill="#475569" fill-opacity="0.65"/><text x="365.0" y="147.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">M şehri</text><text x="365.0" y="165.0" font-size="12" text-anchor="middle" fill="#0f172a">gölge: 119 cm</text><line x1="435.0" y1="125.0" x2="565.0" y2="125.0" stroke="#78350f" stroke-width="2.5"/><line x1="445.0" y1="125.0" x2="445.0" y2="35.0" stroke="#334155" stroke-width="4"/><rect x="445.0" y="122.0" width="32.4" height="6" fill="#475569" fill-opacity="0.65"/><text x="500.0" y="147.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">N şehri</text><text x="500.0" y="165.0" font-size="12" text-anchor="middle" fill="#0f172a">gölge: 36 cm</text><text x="10.0" y="20.0" font-size="11" text-anchor="start" fill="#475569">Çubuk boyu: 100 cm (ölçeksizdir)</text></svg></div><p>Buna göre,</p><p>I. K şehri Yengeç ve Oğlak Dönenceleri arasında (veya dönencelerden birinin üzerinde) yer alır.<br>II. L ve N şehirleri aynı paralel üzerindedir.<br>III. Ölçüm gününde öğle vakti birim yüzeye düşen Güneş enerjisi en az M şehrindedir.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>K’de gölge yoktur, yani o gün ışınlar K’ye dik gelir. Işınlar yalnızca iki dönence arasındaki (dönenceler dâhil) yerlere dik gelebilir (I kesin). L ve N’nin gölgeleri eşittir; bu, ışınların ikisine aynı açıyla geldiğini, yani dik ışının düştüğü paralele eşit uzaklıkta olduklarını gösterir. Bu iki şehir aynı paralel üzerinde olabileceği gibi biri dik ışının kuzeyinde, diğeri güneyinde de olabilir (II kesin değil). En uzun gölge M’dedir; ışınlar M’ye en eğik gelir, birim yüzeye düşen enerji en azdır (III kesin).</p><p>A) Eksik: III de kesindir.<br>B) Yanlış: II yalnızca olabilir; eşit gölge, dik ışına eşit uzaklık demektir.<br>C) Doğru.<br>D) Yanlış: II kesin değildir. “Eşit gölge = aynı enlem” yanılgısı.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrencinin “İklim bilimi” konulu sunumundan alınan cümleler aşağıda numaralandırılmıştır.</p><div class="box">(I) İklim bilimi (klimatoloji), geniş bir bölgede uzun yıllar boyunca gözlenen hava olaylarının ortalamasını inceler. (II) Klimatologlar, bir bölgenin sıcaklık ve yağış verilerinin en az 30–35 yıllık ortalamalarını kullanarak iklim haritaları hazırlar. (III) Havalimanlarında birkaç saat sonrası için sis ve rüzgâr tahmini yapıp pilotları uyaran uzmanlar da klimatologlardır. (IV) Bir bölgede tek bir yıl boyunca beklenenden çok yağış düşmesi, o bölgenin ikliminin değiştiğini tek başına göstermez. (V) Hava olayları kısa sürede değişebildiği için bir bölgenin iklimi de birkaç hafta içinde değişebilir.</div><p><b>Numaralanmış cümlelerden hangileri bilimsel olarak yanlıştır?</b></p>`,
+  c: ["I ve III", "III ve V", "II ve IV", "III, IV ve V"],
+  a: "B",
+  s: `<p>I, II ve IV doğrudur. III yanlıştır: Kısa süreli hava tahminlerini meteorologlar yapar. V yanlıştır: İklim uzun yılların ortalamasıdır ve kolay değişmez; birkaç haftalık değişim hava olaylarıyla ilgilidir.</p><p>A) Yanlış: I doğrudur.<br>B) Doğru.<br>C) Yanlış: II ve IV doğrudur.<br>D) Yanlış: IV doğrudur; tek yılın sapması iklim değişikliği kanıtı değildir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir bilgisayar simülasyonunda, aynı boylam üzerinde bulunan K, L ve M şehirlerine aynı gün öğle vakti gönderilen özdeş ışık demetlerinin yatay zeminde aydınlattığı alanlar ölçülmüştür. L Ekvator üzerindedir; K ve M Ekvator’a eşit uzaklıktadır.</p><div class="fig"><svg viewBox="0 0 560 150" width="560" role="img" aria-label="Özdeş ışık demetlerinin K, L ve M şehirlerinde aydınlattığı alanlar" font-family="Arial, sans-serif"><rect x="30.0" y="10.0" width="160.0" height="120.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="110.0" y="32.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">K şehri (Kuzey Yarım Küre)</text><ellipse cx="110.0" cy="80" rx="52.5" ry="16" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/><text x="110.0" y="118.0" font-size="11" text-anchor="middle" fill="#0f172a">Aydınlanan alan: 15 cm²</text><rect x="210.0" y="10.0" width="160.0" height="120.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="290.0" y="32.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">L şehri (Ekvator)</text><ellipse cx="290.0" cy="80" rx="35.0" ry="16" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/><text x="290.0" y="118.0" font-size="11" text-anchor="middle" fill="#0f172a">Aydınlanan alan: 10 cm²</text><rect x="390.0" y="10.0" width="160.0" height="120.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="470.0" y="32.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">M şehri (Güney Yarım Küre)</text><ellipse cx="470.0" cy="80" rx="38.5" ry="16" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/><text x="470.0" y="118.0" font-size="11" text-anchor="middle" fill="#0f172a">Aydınlanan alan: 11 cm²</text></svg></div><p>Buna göre ölçüm günüyle ilgili,</p><p>I. M şehrinde yaz mevsimi yaşanmaktadır.<br>II. K şehrinde gece süresi gündüz süresinden uzundur.<br>III. Güneş ışınları Ekvator’un güneyindeki bir yere dik gelmektedir.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "D",
+  s: `<p>Özdeş demet ne kadar dik gelirse o kadar küçük alanı aydınlatır. Ekvator’a eşit uzaklıktaki K ve M’den M’nin alanı daha küçüktür; ışınlar M’ye daha dik gelir, yani dik ışın Ekvator’un güneyindedir (III kesin). Dik ışın Güney Yarım Küre’deyse tarih 23 Eylül – 21 Mart arasıdır; bu aralıkta Kuzey Yarım Küre’deki K’de gece gündüzden uzundur (II kesin). Bu aralıkta Güney Yarım Küre’de 21 Aralık’tan önce ilkbahar, sonra yaz yaşanır; M’de yaz olduğu kesin değildir (I olabilir).</p><p>A) Yanlış: I kesin değildir; M’de ilkbahar da olabilir.<br>B) Yanlış: I kesin değildir.<br>C) Yanlış: I kesin değildir; II ise kesindir.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki şekilde Dünya’nın Güneş etrafındaki yörüngesinde bulunduğu dört önemli konum (I, II, III ve IV) ile dolanma yönü gösterilmiştir. Dünya I. konumdayken Kuzey Kutup Dairesi ve kuzeyinde 24 saat gece yaşanmaktadır.</p><div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Dünya’nın yörüngesindeki I, II, III ve IV konumları ve dolanma yönü" font-family="Arial, sans-serif"><ellipse cx="280" cy="125" rx="205" ry="78" fill="none" stroke="#64748b" stroke-width="1.6"/><circle cx="280.0" cy="125.0" r="26.0" fill="#fde68a" stroke="#f59e0b" stroke-width="3"/><text x="280.0" y="129.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#92400e">Güneş</text><circle cx="485.0" cy="125.0" r="15.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><text x="511.0" y="130.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">I</text><circle cx="280.0" cy="47.0" r="15.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><text x="280.0" y="23.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">II</text><circle cx="75.0" cy="125.0" r="15.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><text x="49.0" y="130.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">III</text><circle cx="280.0" cy="203.0" r="15.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><text x="310.0" y="208.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">IV</text><defs><marker id="ar4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><path d="M478.6,91.7 L477.3,89.8 L475.8,87.9 L474.3,86.1 L472.6,84.3 L470.8,82.4 L468.8,80.6 L466.8,78.8 L464.6,77.1 L462.3,75.3 L459.9,73.6 L457.4,71.9 L454.8,70.2 L452.0,68.6 L449.2,67.0 L446.2,65.4 L443.2,63.8 L440.0,62.3 L436.8,60.8 L433.4,59.3 L430.0,57.8" fill="none" stroke="#0f172a" stroke-width="2" marker-end="url(#ar4)"/><text x="470.0" y="40.0" font-size="11" text-anchor="middle" fill="#0f172a">Dolanma yönü</text><text x="280.0" y="243.0" font-size="11" text-anchor="middle" fill="#475569">Şekil ölçeksizdir.</text></svg></div><p><b>Dünya II. konumdan III. konuma giderken, Oğlak Dönencesi’nin güneyindeki P şehrinde aşağıdakilerden hangisi gerçekleşir?</b></p>`,
+  c: ["Gündüz süresi kısalır ve gece süresi gündüz süresinden uzundur.", "Gündüz süresi uzar ancak gece süresi hâlâ gündüz süresinden uzundur.", "Öğle vakti gölge boyu kısalır, birim yüzeye düşen enerji artar.", "İlkbahar mevsimi yaşanır."],
+  a: "A",
+  s: `<p>I. konumda Kuzey Kutup Dairesi’nde 24 saat gece varsa bu konum 21 Aralık’tır. Dolanma yönüne göre II. konum 21 Mart, III. konum 21 Haziran, IV. konum 23 Eylül’dür. II → III arası (21 Mart – 21 Haziran) dik ışınlar Ekvator’dan Yengeç Dönencesi’ne kayar; Güney Yarım Küre’deki P’den uzaklaşır. P’de sonbahar yaşanır, gündüz kısalır ve 21 Mart’tan sonra gece gündüzden uzundur.</p><p>A) Doğru.<br>B) Yanlış: Bu durum Kuzey Yarım Küre’de 21 Aralık – 21 Mart arasında (I → II) görülür; yarım küre ya da aralık karıştırılmıştır.<br>C) Yanlış: Dik ışınlar P’den uzaklaştığı için ışınlar daha eğik gelir; gölge uzar, birim yüzeye düşen enerji azalır.<br>D) Yanlış: 21 Mart – 21 Haziran arasında Güney Yarım Küre’de sonbahar yaşanır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki grafikte, bir yılın belirli bir gününde aynı boylam üzerindeki yerlerde öğle vakti birim yüzeye düşen Güneş enerjisi miktarının enleme göre değişimi verilmiştir. Grafikte enerjinin sıfır olduğu yerlerde o gün Güneş hiç görünmemektedir.</p><div class="fig"><svg viewBox="0 0 560 240" width="560" role="img" aria-label="Bir günde öğle vakti birim yüzeye düşen enerjinin enleme göre değişimi" font-family="Arial, sans-serif"><defs><marker id="ar11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="50.0" y1="190.0" x2="546.0" y2="190.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar11)"/><line x1="50.0" y1="190.0" x2="50.0" y2="26.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar11)"/><text x="54.0" y="22.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Öğle vakti birim yüzeye düşen enerji</text><polyline points="60.0,151.2 61.3,149.9 62.6,148.7 63.9,147.4 65.2,146.1 66.5,144.9 67.8,143.6 69.1,142.4 70.4,141.2 71.8,139.9 73.1,138.7 74.4,137.5 75.7,136.2 77.0,135.0 78.3,133.8 79.6,132.6 80.9,131.4 82.2,130.2 83.5,129.0 84.8,127.8 86.1,126.6 87.4,125.4 88.7,124.2 90.0,123.1 91.3,121.9 92.6,120.7 93.9,119.6 95.2,118.4 96.6,117.3 97.9,116.1 99.2,115.0 100.5,113.9 101.8,112.7 103.1,111.6 104.4,110.5 105.7,109.4 107.0,108.3 108.3,107.2 109.6,106.1 110.9,105.0 112.2,104.0 113.5,102.9 114.8,101.8 116.1,100.8 117.4,99.7 118.8,98.7 120.1,97.7 121.4,96.6 122.7,95.6 124.0,94.6 125.3,93.6 126.6,92.6 127.9,91.6 129.2,90.6 130.5,89.6 131.8,88.7 133.1,87.7 134.4,86.7 135.7,85.8 137.0,84.9 138.3,83.9 139.6,83.0 140.9,82.1 142.2,81.2 143.6,80.3 144.9,79.4 146.2,78.5 147.5,77.7 148.8,76.8 150.1,75.9 151.4,75.1 152.7,74.3 154.0,73.4 155.3,72.6 156.6,71.8 157.9,71.0 159.2,70.2 160.5,69.4 161.8,68.6 163.1,67.9 164.4,67.1 165.8,66.4 167.1,65.6 168.4,64.9 169.7,64.2 171.0,63.5 172.3,62.8 173.6,62.1 174.9,61.4 176.2,60.8 177.5,60.1 178.8,59.4 180.1,58.8 181.4,58.2 182.7,57.6 184.0,56.9 185.3,56.3 186.6,55.8 187.9,55.2 189.2,54.6 190.6,54.1 191.9,53.5 193.2,53.0 194.5,52.4 195.8,51.9 197.1,51.4 198.4,50.9 199.7,50.4 201.0,50.0 202.3,49.5 203.6,49.0 204.9,48.6 206.2,48.2 207.5,47.8 208.8,47.3 210.1,46.9 211.4,46.6 212.8,46.2 214.1,45.8 215.4,45.5 216.7,45.1 218.0,44.8 219.3,44.5 220.6,44.1 221.9,43.8 223.2,43.6 224.5,43.3 225.8,43.0 227.1,42.8 228.4,42.5 229.7,42.3 231.0,42.1 232.3,41.8 233.6,41.6 234.9,41.5 236.2,41.3 237.6,41.1 238.9,41.0 240.2,40.8 241.5,40.7 242.8,40.6 244.1,40.5 245.4,40.4 246.7,40.3 248.0,40.2 249.3,40.1 250.6,40.1 251.9,40.1 253.2,40.0 254.5,40.0 255.8,40.0 257.1,40.0 258.4,40.0 259.8,40.1 261.1,40.1 262.4,40.1 263.7,40.2 265.0,40.3 266.3,40.4 267.6,40.5 268.9,40.6 270.2,40.7 271.5,40.8 272.8,41.0 274.1,41.1 275.4,41.3 276.7,41.5 278.0,41.6 279.3,41.8 280.6,42.1 281.9,42.3 283.2,42.5 284.6,42.8 285.9,43.0 287.2,43.3 288.5,43.6 289.8,43.8 291.1,44.1 292.4,44.5 293.7,44.8 295.0,45.1 296.3,45.5 297.6,45.8 298.9,46.2 300.2,46.6 301.5,46.9 302.8,47.3 304.1,47.8 305.4,48.2 306.8,48.6 308.1,49.0 309.4,49.5 310.7,50.0 312.0,50.4 313.3,50.9 314.6,51.4 315.9,51.9 317.2,52.4 318.5,53.0 319.8,53.5 321.1,54.1 322.4,54.6 323.7,55.2 325.0,55.8 326.3,56.3 327.6,56.9 328.9,57.6 330.2,58.2 331.6,58.8 332.9,59.4 334.2,60.1 335.5,60.8 336.8,61.4 338.1,62.1 339.4,62.8 340.7,63.5 342.0,64.2 343.3,64.9 344.6,65.6 345.9,66.4 347.2,67.1 348.5,67.9 349.8,68.6 351.1,69.4 352.4,70.2 353.8,71.0 355.1,71.8 356.4,72.6 357.7,73.4 359.0,74.3 360.3,75.1 361.6,75.9 362.9,76.8 364.2,77.7 365.5,78.5 366.8,79.4 368.1,80.3 369.4,81.2 370.7,82.1 372.0,83.0 373.3,83.9 374.6,84.9 375.9,85.8 377.2,86.7 378.6,87.7 379.9,88.7 381.2,89.6 382.5,90.6 383.8,91.6 385.1,92.6 386.4,93.6 387.7,94.6 389.0,95.6 390.3,96.6 391.6,97.7 392.9,98.7 394.2,99.7 395.5,100.8 396.8,101.8 398.1,102.9 399.4,104.0 400.8,105.0 402.1,106.1 403.4,107.2 404.7,108.3 406.0,109.4 407.3,110.5 408.6,111.6 409.9,112.7 411.2,113.9 412.5,115.0 413.8,116.1 415.1,117.3 416.4,118.4 417.7,119.6 419.0,120.7 420.3,121.9 421.6,123.1 422.9,124.2 424.2,125.4 425.6,126.6 426.9,127.8 428.2,129.0 429.5,130.2 430.8,131.4 432.1,132.6 433.4,133.8 434.7,135.0 436.0,136.2 437.3,137.5 438.6,138.7 439.9,139.9 441.2,141.2 442.5,142.4 443.8,143.6 445.1,144.9 446.4,146.1 447.8,147.4 449.1,148.7 450.4,149.9 451.7,151.2 453.0,152.4 454.3,153.7 455.6,155.0 456.9,156.3 458.2,157.5 459.5,158.8 460.8,160.1 462.1,161.4 463.4,162.7 464.7,164.0 466.0,165.2 467.3,166.5 468.6,167.8 469.9,169.1 471.2,170.4 472.6,171.7 473.9,173.0 475.2,174.3 476.5,175.6 477.8,176.9 479.1,178.2 480.4,179.5 481.7,180.8 483.0,182.1 484.3,183.5 485.6,184.8 486.9,186.1 488.2,187.4 489.5,188.7 490.8,190.0 492.1,190.0 493.4,190.0 494.8,190.0 496.1,190.0 497.4,190.0 498.7,190.0 500.0,190.0 501.3,190.0 502.6,190.0 503.9,190.0 505.2,190.0 506.5,190.0 507.8,190.0 509.1,190.0 510.4,190.0 511.7,190.0 513.0,190.0 514.3,190.0 515.6,190.0 516.9,190.0 518.2,190.0 519.6,190.0 520.9,190.0 522.2,190.0 523.5,190.0 524.8,190.0 526.1,190.0 527.4,190.0 528.7,190.0 530.0,190.0" fill="none" stroke="#ea580c" stroke-width="2.6" stroke-linejoin="round"/><line x1="60.0" y1="190.0" x2="60.0" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="60.0" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">90° G</text><line x1="138.3" y1="190.0" x2="138.3" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="138.3" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">60° G</text><line x1="216.7" y1="190.0" x2="216.7" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="216.7" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">30° G</text><line x1="295.0" y1="190.0" x2="295.0" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="295.0" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">0°</text><line x1="373.3" y1="190.0" x2="373.3" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="373.3" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">30° K</text><line x1="451.7" y1="190.0" x2="451.7" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="451.7" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">60° K</text><line x1="530.0" y1="190.0" x2="530.0" y2="194.0" stroke="#0f172a" stroke-width="1.5"/><text x="530.0" y="207.0" font-size="11" text-anchor="middle" fill="#0f172a">90° K</text><line x1="233.8" y1="190.0" x2="233.8" y2="40.0" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/><text x="233.8" y="36.0" font-size="11" text-anchor="middle" fill="#334155">Oğlak D.</text><line x1="295.0" y1="190.0" x2="295.0" y2="40.0" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/><text x="295.0" y="50.0" font-size="11" text-anchor="middle" fill="#334155">Ekvator</text><line x1="356.2" y1="190.0" x2="356.2" y2="40.0" stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"/><text x="356.2" y="36.0" font-size="11" text-anchor="middle" fill="#334155">Yengeç D.</text><text x="540.0" y="224.0" font-size="12" text-anchor="end" font-weight="bold" fill="#0f172a">Enlem</text></svg></div><p><b>Grafiğe göre bu günle ilgili aşağıdakilerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["Kuzey Yarım Küre’deki bütün yerlerde gece süresi gündüz süresinden uzundur.", "Grafik 21 Aralık gününe aittir.", "Güney Yarım Küre’de yaz mevsimi yaşanmaktadır.", "Grafikte enerjinin sıfır olduğu bölgede o gün 24 saat gündüz yaşanmaktadır."],
+  a: "A",
+  s: `<p>Enerjinin en fazla olduğu yer, ışınların dik geldiği paraleldir. Grafikte en yüksek nokta Ekvator ile Oğlak Dönencesi arasındadır; dik ışın Güney Yarım Küre’dedir ama Oğlak üzerinde değildir. Bu durum 23 Eylül – 21 Aralık ya da 21 Aralık – 21 Mart arasındaki (gün dönümü olmayan) bir güne aittir. İki aralıkta da Kuzey Yarım Küre’de gece gündüzden uzundur.</p><p>A) Doğru.<br>B) Yanlış: 21 Aralık’ta en yüksek nokta Oğlak Dönencesi üzerinde olurdu.<br>C) Yanlış: Olabilir ama kesin değil; 23 Eylül – 21 Aralık arasındaysa Güney’de ilkbahar yaşanır.<br>D) Yanlış: Kuzey kutup bölgesinde Güneş hiç görünmüyorsa orada 24 saat gece vardır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Trabzon’da (yaklaşık 41° K) yatay zemine dik yerleştirilen 1 m’lik bir çubuğun öğle vakti gölge boyu 21 Mart’ta 0,87 m olarak ölçülmüştür. Aynı yıl içinde X tarihinde ve X’ten üç hafta sonraki Y tarihinde yapılan ölçümlerin sonuçları tabloda verilmiştir.</p><table><tr><th>Tarih</th><th>21 Mart</th><th>X</th><th>Y (X’ten üç hafta sonra)</th></tr><tr><td>Gölge boyu</td><td>0,87 m</td><td>0,64 m</td><td>0,48 m</td></tr></table><p>Buna göre,</p><p>I. X tarihinde Güneş ışınlarının dik geldiği paralel kuzeye doğru kaymaktadır.<br>II. X ve Y tarihlerinin ikisinde de Trabzon’da gündüz süresi gece süresinden uzundur.<br>III. Y tarihinde Trabzon’da yaz mevsimi yaşanmaktadır.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>X ve Y’deki gölgeler 21 Mart’takinden kısadır; ışınlar ekinokstakinden daha dik geliyor, yani dik ışın Kuzey Yarım Küre’dedir. Bu durum 21 Mart – 23 Eylül arasında olur ve bu aralıkta Trabzon’da gündüz geceden uzundur (II kesin). X’ten üç hafta sonra gölge kısalmıştır. X 21 Haziran’dan sonra olsaydı dik ışın 21 Aralık’a kadar güneye kayacağından gölge üç hafta boyunca hep uzardı; o hâlde X 21 Haziran’dan öncedir ve X’te dik ışın kuzeye kaymaktadır (I kesin). Y ise 21 Haziran’dan önce (ilkbahar) ya da hemen sonra (yaz) olabilir; III kesin değildir.</p><p>A) Eksik: II de kesindir.<br>B) Doğru.<br>C) Yanlış: III kesin değildir; Y ilkbahara da denk gelebilir.<br>D) Yanlış: III kesin değildir; I ise kesindir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Dört öğrenci, Dünya’nın haziran ve aralık aylarındaki konumlarını ve dönme ekseninin durumunu gösteren aşağıdaki modelleri çizmiştir. Modellerde Güneş ortadadır ve yörünge yandan bakılarak çizilmiştir.</p><div class="fig"><svg viewBox="0 0 554 182" width="554" role="img" aria-label="Dört öğrencinin Dünya’nın haziran ve aralık konumları için çizdiği modeller" font-family="Arial, sans-serif"><rect x="6.0" y="8.0" width="128.0" height="150.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><ellipse cx="70.0" cy="80.0" rx="40" ry="20" fill="none" stroke="#94a3b8" stroke-width="1.2"/><circle cx="70.0" cy="80.0" r="11.0" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><circle cx="30.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="20.8" y1="76.0" x2="39.2" y2="84.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="22.4" y1="97.4" x2="37.6" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="39.6" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><circle cx="110.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="100.8" y1="76.0" x2="119.2" y2="84.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="102.4" y1="97.4" x2="117.6" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="119.6" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="34.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="106.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Haziran</text><text x="70.0" y="150.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Ali</text><rect x="144.0" y="8.0" width="128.0" height="150.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><ellipse cx="208.0" cy="80.0" rx="40" ry="20" fill="none" stroke="#94a3b8" stroke-width="1.2"/><circle cx="208.0" cy="80.0" r="11.0" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><circle cx="168.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="158.8" y1="76.0" x2="177.2" y2="84.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="160.4" y1="97.4" x2="175.6" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="177.6" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><circle cx="248.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="238.8" y1="84.0" x2="257.2" y2="76.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="255.6" y1="97.4" x2="240.4" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="242.4" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="172.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Haziran</text><text x="244.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="208.0" y="150.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Bade</text><rect x="282.0" y="8.0" width="128.0" height="150.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><ellipse cx="346.0" cy="80.0" rx="40" ry="20" fill="none" stroke="#94a3b8" stroke-width="1.2"/><circle cx="346.0" cy="80.0" r="11.0" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><circle cx="306.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="296.0" y1="80.0" x2="316.0" y2="80.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="306.0" y1="99.0" x2="306.0" y2="61.0" stroke="#334155" stroke-width="1.6"/><text x="308.0" y="59.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><circle cx="386.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="376.0" y1="80.0" x2="396.0" y2="80.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="386.0" y1="99.0" x2="386.0" y2="61.0" stroke="#334155" stroke-width="1.6"/><text x="388.0" y="59.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="310.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Haziran</text><text x="382.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="346.0" y="150.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Cem</text><rect x="420.0" y="8.0" width="128.0" height="150.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2"/><ellipse cx="484.0" cy="80.0" rx="40" ry="20" fill="none" stroke="#94a3b8" stroke-width="1.2"/><circle cx="484.0" cy="80.0" r="11.0" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/><circle cx="444.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="434.8" y1="76.0" x2="453.2" y2="84.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="436.4" y1="97.4" x2="451.6" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="453.6" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><circle cx="524.0" cy="80.0" r="10.0" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.6"/><line x1="514.8" y1="76.0" x2="533.2" y2="84.0" stroke="#1e3a8a" stroke-width="1.4"/><line x1="516.4" y1="97.4" x2="531.6" y2="62.6" stroke="#334155" stroke-width="1.6"/><text x="533.6" y="60.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#334155">K</text><text x="448.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Haziran</text><text x="520.0" y="116.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Aralık</text><text x="484.0" y="150.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Duru</text><text x="280.0" y="176.0" font-size="11" text-anchor="middle" fill="#475569">K: Kuzey Kutbu. Modeller ölçeksizdir.</text></svg></div><p><b>Buna göre hangi öğrencinin modeli hem eksenin konumunu hem de ayları doğru göstermektedir?</b></p>`,
+  c: ["Ali", "Bade", "Cem", "Duru"],
+  a: "D",
+  s: `<p>Dönme ekseni uzayda hep aynı yöne eğik kalır; iki konumdaki eksenler birbirine paralel olmalıdır. Kuzey Kutbu’nun Güneş’e dönük olduğu konum haziran, Güneş’ten uzağa dönük olduğu konum aralıktır. Duru’nun modelinde eksenler paraleldir; soldaki Dünya’da Kuzey Kutbu sağa, yani Güneş’e doğru eğiktir ve bu konum haziran olarak doğru adlandırılmıştır.</p><p>A) Yanlış: Eksenler paralel, ancak aylar ters yazılmış; Kuzey Kutbu’nun Güneş’e dönük olduğu soldaki konum haziran olmalıdır.<br>B) Yanlış: Eksen her iki konumda da Güneş’e doğru eğik çizilmiş; eksenin yönü değişmez. Bu modelde iki konumda da Kuzey’de yaz olurdu.<br>C) Yanlış: Eksen eğik çizilmemiş; eğiklik olmasaydı belirgin mevsimler oluşmazdı.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir şehirde ölçüm yapılan günde yaşanan mevsimi belirlemek isteyen öğrencilere aşağıdaki bilgi kartları veriliyor.</p><div class="box">I. Şehir Ekvator’un güneyindedir.<br>II. Ölçüm 10 Ağustos’ta yapılmıştır.<br>III. Ölçüm günü öğle vakti hava sıcaklığı 8 °C’tur.<br>IV. Ölçüm günü şehirde gece süresi gündüz süresinden uzundur.</div><p><b>Öğrenciler bu kartlardan hangi ikisini birlikte kullanırsa şehirde yaşanan mevsimi kesin olarak belirleyebilir?</b></p>`,
+  c: ["II ve IV", "I ve III", "I ve IV", "II ve III"],
+  a: "A",
+  s: `<p>Mevsimi belirlemek için tarih ve yarım küre gerekir. II tarihi verir. 10 Ağustos’ta Kuzey Yarım Küre’de gündüz geceden uzun, Ekvator’da eşit, Güney Yarım Küre’de gece gündüzden uzundur. IV’e göre gece daha uzun olduğuna göre şehir Güney Yarım Küre’dedir; 10 Ağustos’ta Güney’de kış yaşanır. II ve IV birlikte mevsimi kesin verir.</p><p>A) Doğru.<br>B) Yanlış: Tarih yok; sıcaklık mevsimi göstermez (Ekvator’dan uzak bir yerde yazın da 8 °C olabilir).<br>C) Yanlış: Güney Yarım Küre’de gece 21 Mart – 23 Eylül arasında gündüzden uzundur; bu aralıkta hem sonbahar hem kış vardır, mevsim kesinleşmez.<br>D) Yanlış: Yarım küre bilinmiyor; sıcaklık yarım küreyi göstermez.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K ve L şehirlerine ait 1991–2020 yılları arasındaki aylık ortalama sıcaklık ve yağış değerleri aşağıdaki grafiklerde verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="K ve L şehirlerinin 1991-2020 aylık ortalama sıcaklık ve yağış grafikleri" font-family="Arial, sans-serif"><line x1="40.0" y1="185.0" x2="240.0" y2="185.0" stroke="#0f172a" stroke-width="1.5"/><line x1="40.0" y1="185.0" x2="40.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><line x1="240.0" y1="185.0" x2="240.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><rect x="42.0" y="73.8" width="12.7" height="111.2" fill="#60a5fa"/><rect x="58.7" y="93.2" width="12.7" height="91.8" fill="#60a5fa"/><rect x="75.3" y="117.3" width="12.7" height="67.7" fill="#60a5fa"/><rect x="92.0" y="141.5" width="12.7" height="43.5" fill="#60a5fa"/><rect x="108.7" y="160.8" width="12.7" height="24.2" fill="#60a5fa"/><rect x="125.3" y="177.3" width="12.7" height="7.7" fill="#60a5fa"/><rect x="142.0" y="182.1" width="12.7" height="2.9" fill="#60a5fa"/><rect x="158.7" y="181.1" width="12.7" height="3.9" fill="#60a5fa"/><rect x="175.3" y="167.6" width="12.7" height="17.4" fill="#60a5fa"/><rect x="192.0" y="131.8" width="12.7" height="53.2" fill="#60a5fa"/><rect x="208.7" y="98.0" width="12.7" height="87.0" fill="#60a5fa"/><rect x="225.3" y="64.2" width="12.7" height="120.8" fill="#60a5fa"/><polyline points="48.3,136.7 65.0,131.8 81.7,122.2 98.3,107.7 115.0,83.5 131.7,64.2 148.3,49.7 165.0,49.7 181.7,69.0 198.3,93.2 215.0,112.5 231.7,131.8" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><text x="244.0" y="140.7" font-size="11" text-anchor="start" fill="#0f172a">50</text><text x="244.0" y="92.3" font-size="11" text-anchor="start" fill="#0f172a">100</text><text x="244.0" y="44.0" font-size="11" text-anchor="start" fill="#0f172a">150</text><text x="36.0" y="140.7" font-size="11" text-anchor="end" fill="#0f172a">10</text><text x="36.0" y="92.3" font-size="11" text-anchor="end" fill="#0f172a">20</text><text x="36.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">30</text><text x="48.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">O</text><text x="65.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">Ş</text><text x="81.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="98.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">N</text><text x="115.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="131.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">H</text><text x="148.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">T</text><text x="165.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><text x="181.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="198.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="215.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">K</text><text x="231.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><text x="36.0" y="32.0" font-size="11" text-anchor="end" font-weight="bold" fill="#b91c1c">°C</text><text x="244.0" y="32.0" font-size="11" text-anchor="start" font-weight="bold" fill="#1d4ed8">mm</text><text x="140.0" y="222.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">K şehri</text><line x1="320.0" y1="185.0" x2="520.0" y2="185.0" stroke="#0f172a" stroke-width="1.5"/><line x1="320.0" y1="185.0" x2="320.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><line x1="520.0" y1="185.0" x2="520.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><rect x="322.0" y="173.4" width="12.7" height="11.6" fill="#60a5fa"/><rect x="338.7" y="170.5" width="12.7" height="14.5" fill="#60a5fa"/><rect x="355.3" y="165.7" width="12.7" height="19.3" fill="#60a5fa"/><rect x="372.0" y="141.5" width="12.7" height="43.5" fill="#60a5fa"/><rect x="388.7" y="107.7" width="12.7" height="77.3" fill="#60a5fa"/><rect x="405.3" y="93.2" width="12.7" height="91.8" fill="#60a5fa"/><rect x="422.0" y="98.0" width="12.7" height="87.0" fill="#60a5fa"/><rect x="438.7" y="112.5" width="12.7" height="72.5" fill="#60a5fa"/><rect x="455.3" y="141.5" width="12.7" height="43.5" fill="#60a5fa"/><rect x="472.0" y="156.0" width="12.7" height="29.0" fill="#60a5fa"/><rect x="488.7" y="167.6" width="12.7" height="17.4" fill="#60a5fa"/><rect x="505.3" y="171.5" width="12.7" height="13.5" fill="#60a5fa"/><polyline points="328.3,73.8 345.0,73.8 361.7,83.5 378.3,98.0 395.0,112.5 411.7,122.2 428.3,127.0 445.0,122.2 461.7,112.5 478.3,102.8 495.0,88.3 511.7,78.7" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><text x="524.0" y="140.7" font-size="11" text-anchor="start" fill="#0f172a">50</text><text x="524.0" y="92.3" font-size="11" text-anchor="start" fill="#0f172a">100</text><text x="524.0" y="44.0" font-size="11" text-anchor="start" fill="#0f172a">150</text><text x="316.0" y="140.7" font-size="11" text-anchor="end" fill="#0f172a">10</text><text x="316.0" y="92.3" font-size="11" text-anchor="end" fill="#0f172a">20</text><text x="316.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">30</text><text x="328.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">O</text><text x="345.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">Ş</text><text x="361.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="378.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">N</text><text x="395.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="411.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">H</text><text x="428.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">T</text><text x="445.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><text x="461.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="478.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="495.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">K</text><text x="511.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><text x="316.0" y="32.0" font-size="11" text-anchor="end" font-weight="bold" fill="#b91c1c">°C</text><text x="524.0" y="32.0" font-size="11" text-anchor="start" font-weight="bold" fill="#1d4ed8">mm</text><text x="420.0" y="222.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">L şehri</text><text x="280.0" y="14.0" font-size="11" text-anchor="middle" fill="#475569">Çizgi: aylık ortalama sıcaklık (°C)   Sütun: aylık ortalama yağış (mm)   (1991–2020)</text></svg></div><p><b>Bu grafiklere göre aşağıdakilerden hangisi yanlıştır?</b></p>`,
+  c: ["Ocak ayında iki şehirde de kış mevsimi yaşandığı için iki şehrin ocak ayı yağış miktarları birbirine yakındır.", "İki şehirde de yaz mevsimi kurak, kış mevsimi yağışlı geçer.", "L şehri Güney Yarım Küre’dedir.", "Grafikler, uzun yıllar boyunca ölçülen hava olaylarının ortalamasını gösterdiği için iki şehrin iklimi hakkında bilgi verir."],
+  a: "A",
+  s: `<p>K’de ocak serin, temmuz sıcak → Kuzey Yarım Küre; yağış kışın (aralık–şubat) fazla, yazın (haziran–ağustos) çok azdır. L’de ocak sıcak, temmuz serin → Güney Yarım Küre; Güney’de yaz aralık–şubat, kış haziran–ağustostur. L’de yağış haziran–ağustosta (kış) fazla, aralık–şubatta (yaz) azdır. Yani iki şehrin de yazı kurak, kışı yağışlıdır; yalnızca bu mevsimler farklı aylara denk gelir.</p><p>A) Yanlış yargı (cevap): Ocakta K’de kış, Güney Yarım Küre’deki L’de yaz yaşanır. K’nin ocak yağışı yaklaşık 115 mm, L’ninki yaklaşık 12 mm’dir; birbirine yakın değildir. “Ocak her yerde kıştır” yanılgısı.<br>B) Doğru bir yargıdır.<br>C) Doğru bir yargıdır.<br>D) Doğru bir yargıdır: 30 yıllık ortalamalar iklim verisidir.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Dönencelerin dışında bulunan K (Kuzey Yarım Küre) ve L (Güney Yarım Küre) şehirlerinde öğle vakti Güneş ışınlarının yatay zeminle yaptığı açılar üç tarihte ölçülmüş; bazı değerler tabloya yazılmamıştır.</p><table><tr><th>Şehir</th><th>21 Mart</th><th>21 Haziran</th><th>21 Aralık</th></tr><tr><td>K</td><td>50°</td><td>73,5°</td><td>?</td></tr><tr><td>L</td><td>60°</td><td>?</td><td>83,5°</td></tr></table><div class="box">Bilgi: Güneş ışınlarının dik geldiği paralel, 21 Mart’ta Ekvator’dadır; 21 Haziran’da yaklaşık 23,5° kuzeye (Yengeç Dönencesi), 21 Aralık’ta yaklaşık 23,5° güneye (Oğlak Dönencesi) kayar. Dik ışının düştüğü paralel bir şehre kaç derece yaklaşırsa öğle vakti ışınların o şehirde zeminle yaptığı açı o kadar derece büyür.</div><p><b>Buna göre tablodaki boş bırakılan değerler sırasıyla (K’nin 21 Aralık, L’nin 21 Haziran değeri) hangisidir?</b></p>`,
+  c: ["26,5° ve 83,5°", "73,5° ve 36,5°", "50° ve 60°", "26,5° ve 36,5°"],
+  a: "D",
+  s: `<p>K Kuzey Yarım Küre’de ve dönencenin dışındadır. 21 Mart’tan 21 Haziran’a dik ışın 23,5° kuzeye, K’ye yaklaşır; açı 50° → 73,5° olur. 21 Aralık’ta dik ışın Ekvator’dan 23,5° güneye kayar, K’den uzaklaşır; açı 50° − 23,5° = 26,5° olur. L Güney Yarım Küre’dedir: 21 Aralık’ta dik ışın L’ye yaklaşır (60° + 23,5° = 83,5°, tabloyla uyumlu); 21 Haziran’da ise uzaklaşır: 60° − 23,5° = 36,5°.</p><p>A) Yanlış: L’nin 21 Haziran değeri 21 Aralık değerine eşit sanılmış; Haziran’da dik ışın L’den uzaklaşır.<br>B) Yanlış: K için 21 Aralık değeri 21 Haziran’la aynı sanılmış; Aralık’ta K’de ışınlar en eğik gelir.<br>C) Yanlış: Gün dönümlerindeki değerler ekinoks değerleriyle karıştırılmış.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K, L ve M şehirlerinde aynı gün ölçülen gündüz süreleri tabloda verilmiştir. Ölçüm tarihi ve şehirlerin hangi yarım kürede olduğu belirtilmemiştir.</p><table><tr><th>Şehir</th><th>K</th><th>L</th><th>M</th></tr><tr><td>Gündüz süresi</td><td>13 sa 28 dk</td><td>12 sa 00 dk</td><td>10 sa 32 dk</td></tr></table><p>Buna göre,</p><p>I. L şehri Ekvator üzerindedir.<br>II. K ve M şehirleri farklı yarım kürelerdedir.<br>III. Ölçüm 21 Mart ile 23 Eylül tarihleri arasında yapılmıştır.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>K ve M’de gündüz 12 saat değildir; demek ki ölçüm günü bir ekinoks (21 Mart ya da 23 Eylül) değildir. Ekinoks dışındaki bir günde gündüzün tam 12 saat olduğu tek yer Ekvator’dur (I kesin). Aynı gün bir yarım kürede gündüz geceden uzunsa diğer yarım kürede kısadır; K’de gündüz uzun, M’de kısa olduğuna göre K ve M farklı yarım kürelerdedir (II kesin). Ancak hangisinin Kuzey’de olduğu bilinmiyor. K Kuzey’deyse tarih 21 Mart – 23 Eylül, K Güney’deyse 23 Eylül – 21 Mart arasıdır (III kesin değil).</p><p>A) Eksik: II de kesindir.<br>B) Doğru.<br>C) Yanlış: III kesin değildir; K’nin yarım küresi bilinmeden tarih aralığı bulunamaz.<br>D) Yanlış: III kesin değildir; I ise kesindir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı boylam üzerinde, eş yükseltide ve Ekvator’a eşit uzaklıkta bulunan K (Kuzey Yarım Küre) ve L (Güney Yarım Küre) şehirleri için bir öğrenci aşağıdaki tabloyu doldurmuştur.</p><table><tr><th>Tarih</th><th>Öğle vakti birim yüzeye daha çok enerji düşen şehir</th><th>Gündüz süresi daha uzun olan şehir</th></tr><tr><td>21 Mart</td><td>Eşit</td><td>Eşit</td></tr><tr><td>1 Mayıs</td><td>K</td><td>K</td></tr><tr><td>21 Haziran</td><td>K</td><td>K</td></tr><tr><td>23 Eylül</td><td>K</td><td>Eşit</td></tr><tr><td>15 Kasım</td><td>L</td><td>K</td></tr><tr><td>21 Aralık</td><td>L</td><td>L</td></tr></table><p><b>Buna göre öğrencinin tablosunda hangi tarihlere ait satırlarda hata yapılmıştır?</b></p>`,
+  c: ["Yalnız 15 Kasım", "23 Eylül ve 15 Kasım", "1 Mayıs ve 15 Kasım", "1 Mayıs, 23 Eylül ve 15 Kasım"],
+  a: "B",
+  s: `<p>21 Mart ve 23 Eylül’de ışınlar Ekvator’a dik gelir; Ekvator’a eşit uzaklıktaki K ve L’ye ışınlar aynı açıyla gelir ve her yerde gece = gündüz olur. Bu yüzden 23 Eylül satırında enerji “Eşit” olmalıdır (hata). 21 Mart – 23 Eylül arasında (1 Mayıs, 21 Haziran) dik ışın Kuzey’dedir: K daha çok enerji alır ve gündüzü daha uzundur (doğru). 23 Eylül – 21 Mart arasında (15 Kasım, 21 Aralık) dik ışın Güney’dedir: L daha çok enerji alır ve L’nin gündüzü daha uzundur. 15 Kasım satırındaki “K” hatalıdır.</p><p>A) Eksik: 23 Eylül satırındaki enerji hatası atlanmıştır.<br>B) Doğru: Hatalar 23 Eylül (enerji) ve 15 Kasım (gündüz süresi) satırlarındadır.<br>C) Yanlış: 1 Mayıs satırı doğrudur; dik ışın Kuzey’de olduğu için iki sütun da K’dir.<br>D) Yanlış: 1 Mayıs satırında hata yoktur.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K şehrinde, yatay zemine dik duran bir çubuğun öğle vakti gölgesinin hiç oluşmadığı günlerin yılda yalnızca iki gün olduğu ve bu günlerin 10 Mayıs ile 3 Ağustos olduğu belirlenmiştir.</p><p>Buna göre K şehriyle ilgili,</p><p>I. Ekvator ile Yengeç Dönencesi arasında yer alır.<br>II. 21 Haziran’da öğle vakti çubuğun gölgesi oluşur.<br>III. 10 Mayıs’ta gece ve gündüz süreleri birbirine eşittir.<br>IV. Öğle vakti çubuğun gölgesi yılın en uzun değerine 21 Aralık’ta ulaşır.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["I ve II", "I ve III", "I, II ve IV", "II, III ve IV"],
+  a: "C",
+  s: `<p>Gölgenin sıfır olduğu günler, dik ışınların K’den geçtiği günlerdir. Dik ışınlar 21 Mart – 23 Eylül arasında Kuzey Yarım Küre’de, Ekvator ile Yengeç Dönencesi arasında gidip gelir. 10 Mayıs’ta kuzeye giderken, 3 Ağustos’ta güneye dönerken K’den geçer; K Ekvator ile Yengeç arasındadır (I doğru). 21 Haziran’da dik ışın Yengeç Dönencesi’ndedir, K’nin kuzeyinde kalır; K’de gölge oluşur (II doğru). Gölgenin sıfır olması gece-gündüz eşitliği demek değildir; 10 Mayıs’ta Kuzey’de gündüz geceden uzundur (III yanlış). Dik ışın 21 Aralık’ta Oğlak Dönencesi’ndedir ve K’den en uzak konumdadır; ışınlar en eğik gelir, gölge en uzundur (IV doğru).</p><p>A) Eksik: IV de doğrudur.<br>B) Yanlış: III yanlıştır; gölgesiz gün ≠ gece-gündüz eşitliği.<br>C) Doğru.<br>D) Yanlış: III yanlış, I doğrudur.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>X şehrine ait iki grafik aşağıda verilmiştir. Grafik 1’de 15 Temmuz 2026 günü üçer saat arayla ölçülen hava sıcaklıkları, Grafik 2’de ise 1991–2020 yıllarında ölçülen aylık ortalama sıcaklıklar gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="X şehrinde 15 Temmuz saatlik sıcaklıklar ve uzun yıllar aylık ortalama sıcaklıklar" font-family="Arial, sans-serif"><defs><marker id="ar6" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="40.0" y1="185.0" x2="266.0" y2="185.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar6)"/><line x1="40.0" y1="185.0" x2="40.0" y2="28.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar6)"/><text x="44.0" y="24.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Sıcaklık (°C)</text><line x1="37.0" y1="148.8" x2="43.0" y2="148.8" stroke="#0f172a" stroke-width="1.5"/><text x="34.0" y="152.8" font-size="11" text-anchor="end" fill="#0f172a">20</text><line x1="37.0" y1="112.5" x2="43.0" y2="112.5" stroke="#0f172a" stroke-width="1.5"/><text x="34.0" y="116.5" font-size="11" text-anchor="end" fill="#0f172a">25</text><line x1="37.0" y1="76.2" x2="43.0" y2="76.2" stroke="#0f172a" stroke-width="1.5"/><text x="34.0" y="80.2" font-size="11" text-anchor="end" fill="#0f172a">30</text><line x1="37.0" y1="40.0" x2="43.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><text x="34.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">35</text><text x="48.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">00.00</text><text x="99.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">06.00</text><text x="150.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">12.00</text><text x="201.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">18.00</text><text x="252.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">24.00</text><polyline points="48.0,134.2 73.5,148.8 99.0,141.5 124.5,98.0 150.0,69.0 175.5,54.5 201.0,76.2 226.5,105.2 252.0,127.0" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><circle cx="48.0" cy="134.2" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="73.5" cy="148.8" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="99.0" cy="141.5" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="124.5" cy="98.0" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="150.0" cy="69.0" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="175.5" cy="54.5" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="201.0" cy="76.2" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="226.5" cy="105.2" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><circle cx="252.0" cy="127.0" r="3.0" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="150.0" y="222.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Grafik 1: 15 Temmuz 2026, saatlik</text><defs><marker id="ar7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="320.0" y1="185.0" x2="554.0" y2="185.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar7)"/><line x1="320.0" y1="185.0" x2="320.0" y2="28.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar7)"/><text x="324.0" y="24.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Sıcaklık (°C)</text><line x1="317.0" y1="136.7" x2="323.0" y2="136.7" stroke="#0f172a" stroke-width="1.5"/><text x="314.0" y="140.7" font-size="11" text-anchor="end" fill="#0f172a">10</text><line x1="317.0" y1="88.3" x2="323.0" y2="88.3" stroke="#0f172a" stroke-width="1.5"/><text x="314.0" y="92.3" font-size="11" text-anchor="end" fill="#0f172a">20</text><line x1="317.0" y1="40.0" x2="323.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><text x="314.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">30</text><text x="334.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">O</text><text x="352.7" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">Ş</text><text x="371.5" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="390.2" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">N</text><text x="408.9" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">M</text><text x="427.6" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">H</text><text x="446.4" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">T</text><text x="465.1" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><text x="483.8" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="502.5" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">E</text><text x="521.3" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">K</text><text x="540.0" y="199.0" font-size="11" text-anchor="middle" fill="#0f172a">A</text><polyline points="334.0,146.3 352.7,141.5 371.5,127.0 390.2,107.7 408.9,88.3 427.6,69.0 446.4,59.3 465.1,59.3 483.8,78.7 502.5,102.8 521.3,122.2 540.0,141.5" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><circle cx="334.0" cy="146.3" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="352.7" cy="141.5" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="371.5" cy="127.0" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="390.2" cy="107.7" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="408.9" cy="88.3" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="427.6" cy="69.0" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="446.4" cy="59.3" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="465.1" cy="59.3" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="483.8" cy="78.7" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="502.5" cy="102.8" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="521.3" cy="122.2" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="540.0" cy="141.5" r="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="435.0" y="222.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Grafik 2: 1991–2020 aylık ortalamaları</text></svg></div><p><b>Bu grafiklerle ilgili aşağıdaki yorumlardan hangisi yanlıştır?</b></p>`,
+  c: ["Grafik 1 bir hava olayına, Grafik 2 ise X şehrinin iklimine ait bilgi verir.", "Grafik 1’deki gün içi sıcaklık değişimi, Dünya’nın kendi ekseni etrafında dönmesinin bir sonucudur.", "Grafik 2’ye göre X şehri Kuzey Yarım Küre’dedir.", "15 Temmuz’da ölçülen en yüksek sıcaklığın temmuz ayı uzun yıllar ortalamasından yüksek olması, X şehrinin ikliminin değiştiğini gösterir."],
+  a: "D",
+  s: `<p>Grafik 1 tek bir günün ölçümleridir (hava olayı); Grafik 2 otuz yıllık ortalamalardır (iklim). Gün içinde sabah serin, öğleden sonra sıcak olması gece-gündüz döngüsünden, yani dönme hareketinden kaynaklanır. Grafik 2’de ocak soğuk, temmuz sıcaktır; sıcaklık ocaktan temmuza artar → Kuzey Yarım Küre.</p><p>A) Doğru bir yorumdur.<br>B) Doğru bir yorumdur.<br>C) Doğru bir yorumdur.<br>D) Yanlış yorum (cevap): Tek bir günün sıcaklığı hava olayıdır; bir günün en yüksek sıcaklığının aylık ortalamadan yüksek olması olağandır ve iklimin değiştiğini göstermez. İklim değişikliği uzun yıllık ortalamaların değişmesiyle anlaşılır.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki zaman çizelgesinde bir yıl, dört önemli tarihle 1, 2, 3 ve 4 numaralı dönemlere ayrılmıştır.</p><div class="fig"><svg viewBox="0 0 560 110" width="560" role="img" aria-label="Bir yılın dört döneme ayrıldığı zaman çizelgesi" font-family="Arial, sans-serif"><line x1="30.0" y1="55.0" x2="530.0" y2="55.0" stroke="#0f172a" stroke-width="2.5"/><line x1="30.0" y1="46.0" x2="30.0" y2="64.0" stroke="#0f172a" stroke-width="2"/><text x="30.0" y="83.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">21 Mart</text><line x1="155.0" y1="46.0" x2="155.0" y2="64.0" stroke="#0f172a" stroke-width="2"/><text x="155.0" y="83.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">21 Haziran</text><line x1="280.0" y1="46.0" x2="280.0" y2="64.0" stroke="#0f172a" stroke-width="2"/><text x="280.0" y="83.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">23 Eylül</text><line x1="405.0" y1="46.0" x2="405.0" y2="64.0" stroke="#0f172a" stroke-width="2"/><text x="405.0" y="83.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">21 Aralık</text><line x1="530.0" y1="46.0" x2="530.0" y2="64.0" stroke="#0f172a" stroke-width="2"/><text x="530.0" y="83.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">21 Mart</text><circle cx="92.5" cy="33.0" r="12.0" fill="#fef9c3" stroke="#a16207" stroke-width="1.4"/><text x="92.5" y="37.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#713f12">1</text><circle cx="217.5" cy="33.0" r="12.0" fill="#fef9c3" stroke="#a16207" stroke-width="1.4"/><text x="217.5" y="37.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#713f12">2</text><circle cx="342.5" cy="33.0" r="12.0" fill="#fef9c3" stroke="#a16207" stroke-width="1.4"/><text x="342.5" y="37.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#713f12">3</text><circle cx="467.5" cy="33.0" r="12.0" fill="#fef9c3" stroke="#a16207" stroke-width="1.4"/><text x="467.5" y="37.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#713f12">4</text></svg></div><p><b>Samsun’da (yaklaşık 41° K) öğle vakti gölge boyunun her gün biraz daha uzadığı, aynı zamanda Avustralya’daki Perth şehrinde (yaklaşık 32° G) gündüz süresinin gece süresinden uzun olduğu dönem hangisidir?</b></p>`,
+  c: ["1. dönem", "2. dönem", "3. dönem", "4. dönem"],
+  a: "C",
+  s: `<p>Samsun Yengeç Dönencesi’nin kuzeyindedir; dik ışınlar Samsun’dan uzaklaştığında, yani 21 Haziran – 21 Aralık arasında (2. ve 3. dönem) öğle gölgesi uzar. Perth Güney Yarım Küre’dedir; orada gündüz, dik ışın Güney Yarım Küre’deyken, yani 23 Eylül – 21 Mart arasında (3. ve 4. dönem) geceden uzundur. İki koşulun ortak olduğu dönem 3. dönemdir (23 Eylül – 21 Aralık).</p><p>A) Yanlış: 1. dönemde Samsun’da gölge kısalır; Perth’te gece gündüzden uzundur.<br>B) Yanlış: 2. dönemde Samsun’da gölge uzar ama Perth’te gece gündüzden uzundur (Perth’te gündüzler uzamaya başlamıştır, ancak hâlâ geceden kısadır).<br>C) Doğru.<br>D) Yanlış: 4. dönemde Perth’te gündüz geceden uzundur ama Samsun’da gölge kısalır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, “Işığın yüzeye geliş açısı dike yaklaştıkça birim yüzeye düşen ışık enerjisi artar.” hipotezini test etmek istiyor. Bunun için karanlık bir odada, ortasına ışık şiddeti ölçer (lüksmetre) yerleştirdiği bir levhayı farklı lambalarla farklı düzeneklerde aydınlatıyor. Kullanabileceği düzenekler tabloda verilmiştir.</p><table><tr><th>Düzenek</th><th>Lamba</th><th>Lamba – levha uzaklığı</th><th>Işığın levhaya geliş açısı</th></tr><tr><td>1</td><td>60 W</td><td>30 cm</td><td>90°</td></tr><tr><td>2</td><td>60 W</td><td>40 cm</td><td>45°</td></tr><tr><td>3</td><td>100 W</td><td>30 cm</td><td>45°</td></tr><tr><td>4</td><td>60 W</td><td>30 cm</td><td>45°</td></tr><tr><td>5</td><td>100 W</td><td>40 cm</td><td>90°</td></tr></table><p><b>Öğrencinin hangi iki düzeneği kullanması ve ölçümlerin hangisi gibi çıkması, hipotezini destekler?</b></p>`,
+  c: ["1 ve 2 düzenekleri; 1. düzenekte ölçülen değer daha büyük", "1 ve 4 düzenekleri; 4. düzenekte ölçülen değer daha büyük", "3 ve 4 düzenekleri; 3. düzenekte ölçülen değer daha büyük", "1 ve 4 düzenekleri; 1. düzenekte ölçülen değer daha büyük"],
+  a: "D",
+  s: `<p>Bağımsız değişken geliş açısıdır; lamba ve uzaklık sabit tutulmalıdır. Yalnızca açının farklı olduğu düzenekler 1 (90°) ve 4 (45°) düzenekleridir. Hipotez doğruysa dik (90°) gelen ışıkta birim yüzeye daha çok enerji düşer, yani 1. düzenekteki ölçüm daha büyük çıkar.</p><p>A) Yanlış: 1 ve 2’de hem açı hem uzaklık değişiyor; farkın hangi değişkenden kaynaklandığı anlaşılamaz.<br>B) Yanlış: Düzenek seçimi doğru, ancak eğik ışıkta daha büyük değer hipotezi çürütür, desteklemez.<br>C) Yanlış: 3 ve 4’te açı aynıdır, yalnızca lamba farklıdır; bu düzenekler açının etkisini değil lambanın etkisini test eder.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki grafikte, iki farklı günde (I ve II) aynı boylam üzerindeki yerlerde ölçülen gündüz sürelerinin enleme göre değişimi verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="İki farklı günde gündüz süresinin enleme göre değişimi" font-family="Arial, sans-serif"><defs><marker id="ar12" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="50.0" y1="200.0" x2="546.0" y2="200.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar12)"/><line x1="50.0" y1="200.0" x2="50.0" y2="26.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar12)"/><text x="54.0" y="22.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Gündüz süresi (saat)</text><line x1="47.0" y1="160.0" x2="53.0" y2="160.0" stroke="#0f172a" stroke-width="1.5"/><text x="44.0" y="164.0" font-size="11" text-anchor="end" fill="#0f172a">6</text><line x1="50.0" y1="160.0" x2="540.0" y2="160.0" stroke="#e2e8f0" stroke-width="1"/><line x1="47.0" y1="120.0" x2="53.0" y2="120.0" stroke="#0f172a" stroke-width="1.5"/><text x="44.0" y="124.0" font-size="11" text-anchor="end" fill="#0f172a">12</text><line x1="50.0" y1="120.0" x2="540.0" y2="120.0" stroke="#e2e8f0" stroke-width="1"/><line x1="47.0" y1="80.0" x2="53.0" y2="80.0" stroke="#0f172a" stroke-width="1.5"/><text x="44.0" y="84.0" font-size="11" text-anchor="end" fill="#0f172a">18</text><line x1="50.0" y1="80.0" x2="540.0" y2="80.0" stroke="#e2e8f0" stroke-width="1"/><line x1="47.0" y1="40.0" x2="53.0" y2="40.0" stroke="#0f172a" stroke-width="1.5"/><text x="44.0" y="44.0" font-size="11" text-anchor="end" fill="#0f172a">24</text><line x1="50.0" y1="40.0" x2="540.0" y2="40.0" stroke="#e2e8f0" stroke-width="1"/><polyline points="61.3,200.0 62.6,200.0 63.9,200.0 65.2,200.0 66.5,200.0 67.8,200.0 69.1,200.0 70.4,200.0 71.8,200.0 73.1,200.0 74.4,200.0 75.7,200.0 77.0,200.0 78.3,200.0 79.6,200.0 80.9,200.0 82.2,200.0 83.5,200.0 84.8,200.0 86.1,200.0 87.4,200.0 88.7,200.0 90.0,200.0 91.3,200.0 92.6,200.0 93.9,200.0 95.2,200.0 96.6,200.0 97.9,200.0 99.2,200.0 100.5,200.0 101.8,200.0 103.1,200.0 104.4,200.0 105.7,200.0 107.0,200.0 108.3,200.0 109.6,200.0 110.9,200.0 112.2,200.0 113.5,200.0 114.8,200.0 116.1,200.0 117.4,200.0 118.8,200.0 120.1,200.0 121.4,196.1 122.7,188.3 124.0,184.1 125.3,180.8 126.6,178.1 127.9,175.8 129.2,173.7 130.5,171.8 131.8,170.1 133.1,168.6 134.4,167.1 135.7,165.7 137.0,164.5 138.3,163.3 139.6,162.1 140.9,161.1 142.2,160.0 143.6,159.1 144.9,158.1 146.2,157.2 147.5,156.4 148.8,155.6 150.1,154.8 151.4,154.0 152.7,153.3 154.0,152.6 155.3,151.9 156.6,151.2 157.9,150.6 159.2,150.0 160.5,149.4 161.8,148.8 163.1,148.2 164.4,147.7 165.8,147.1 167.1,146.6 168.4,146.1 169.7,145.6 171.0,145.1 172.3,144.6 173.6,144.2 174.9,143.7 176.2,143.3 177.5,142.8 178.8,142.4 180.1,142.0 181.4,141.6 182.7,141.2 184.0,140.8 185.3,140.4 186.6,140.0 187.9,139.7 189.2,139.3 190.6,139.0 191.9,138.6 193.2,138.3 194.5,137.9 195.8,137.6 197.1,137.3 198.4,137.0 199.7,136.6 201.0,136.3 202.3,136.0 203.6,135.7 204.9,135.4 206.2,135.1 207.5,134.8 208.8,134.5 210.1,134.3 211.4,134.0 212.8,133.7 214.1,133.4 215.4,133.2 216.7,132.9 218.0,132.6 219.3,132.4 220.6,132.1 221.9,131.8 223.2,131.6 224.5,131.3 225.8,131.1 227.1,130.9 228.4,130.6 229.7,130.4 231.0,130.1 232.3,129.9 233.6,129.7 234.9,129.4 236.2,129.2 237.6,129.0 238.9,128.7 240.2,128.5 241.5,128.3 242.8,128.1 244.1,127.9 245.4,127.6 246.7,127.4 248.0,127.2 249.3,127.0 250.6,126.8 251.9,126.6 253.2,126.3 254.5,126.1 255.8,125.9 257.1,125.7 258.4,125.5 259.8,125.3 261.1,125.1 262.4,124.9 263.7,124.7 265.0,124.5 266.3,124.3 267.6,124.1 268.9,123.9 270.2,123.7 271.5,123.5 272.8,123.3 274.1,123.1 275.4,122.9 276.7,122.7 278.0,122.5 279.3,122.3 280.6,122.1 281.9,121.9 283.2,121.7 284.6,121.5 285.9,121.4 287.2,121.2 288.5,121.0 289.8,120.8 291.1,120.6 292.4,120.4 293.7,120.2 295.0,120.0 296.3,119.8 297.6,119.6 298.9,119.4 300.2,119.2 301.5,119.0 302.8,118.8 304.1,118.6 305.4,118.5 306.8,118.3 308.1,118.1 309.4,117.9 310.7,117.7 312.0,117.5 313.3,117.3 314.6,117.1 315.9,116.9 317.2,116.7 318.5,116.5 319.8,116.3 321.1,116.1 322.4,115.9 323.7,115.7 325.0,115.5 326.3,115.3 327.6,115.1 328.9,114.9 330.2,114.7 331.6,114.5 332.9,114.3 334.2,114.1 335.5,113.9 336.8,113.7 338.1,113.4 339.4,113.2 340.7,113.0 342.0,112.8 343.3,112.6 344.6,112.4 345.9,112.1 347.2,111.9 348.5,111.7 349.8,111.5 351.1,111.3 352.4,111.0 353.8,110.8 355.1,110.6 356.4,110.3 357.7,110.1 359.0,109.9 360.3,109.6 361.6,109.4 362.9,109.1 364.2,108.9 365.5,108.7 366.8,108.4 368.1,108.2 369.4,107.9 370.7,107.6 372.0,107.4 373.3,107.1 374.6,106.8 375.9,106.6 377.2,106.3 378.6,106.0 379.9,105.7 381.2,105.5 382.5,105.2 383.8,104.9 385.1,104.6 386.4,104.3 387.7,104.0 389.0,103.7 390.3,103.4 391.6,103.0 392.9,102.7 394.2,102.4 395.5,102.1 396.8,101.7 398.1,101.4 399.4,101.0 400.8,100.7 402.1,100.3 403.4,100.0 404.7,99.6 406.0,99.2 407.3,98.8 408.6,98.4 409.9,98.0 411.2,97.6 412.5,97.2 413.8,96.7 415.1,96.3 416.4,95.8 417.7,95.4 419.0,94.9 420.3,94.4 421.6,93.9 422.9,93.4 424.2,92.9 425.6,92.3 426.9,91.8 428.2,91.2 429.5,90.6 430.8,90.0 432.1,89.4 433.4,88.8 434.7,88.1 436.0,87.4 437.3,86.7 438.6,86.0 439.9,85.2 441.2,84.4 442.5,83.6 443.8,82.8 445.1,81.9 446.4,80.9 447.8,80.0 449.1,78.9 450.4,77.9 451.7,76.7 453.0,75.5 454.3,74.3 455.6,72.9 456.9,71.4 458.2,69.9 459.5,68.2 460.8,66.3 462.1,64.2 463.4,61.9 464.7,59.2 466.0,55.9 467.3,51.7 468.6,43.9 469.9,40.0 471.2,40.0 472.6,40.0 473.9,40.0 475.2,40.0 476.5,40.0 477.8,40.0 479.1,40.0 480.4,40.0 481.7,40.0 483.0,40.0 484.3,40.0 485.6,40.0 486.9,40.0 488.2,40.0 489.5,40.0 490.8,40.0 492.1,40.0 493.4,40.0 494.8,40.0 496.1,40.0 497.4,40.0 498.7,40.0 500.0,40.0 501.3,40.0 502.6,40.0 503.9,40.0 505.2,40.0 506.5,40.0 507.8,40.0 509.1,40.0 510.4,40.0 511.7,40.0 513.0,40.0 514.3,40.0 515.6,40.0 516.9,40.0 518.2,40.0 519.6,40.0 520.9,40.0 522.2,40.0 523.5,40.0 524.8,40.0 526.1,40.0 527.4,40.0 528.7,40.0" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-linejoin="round"/><text x="490.8" y="32.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">I. gün</text><polyline points="61.3,40.0 62.6,40.0 63.9,40.0 65.2,40.0 66.5,40.0 67.8,40.0 69.1,40.0 70.4,40.0 71.8,40.0 73.1,40.0 74.4,40.0 75.7,40.0 77.0,40.0 78.3,40.0 79.6,40.0 80.9,40.0 82.2,40.0 83.5,40.0 84.8,40.0 86.1,40.0 87.4,55.9 88.7,62.1 90.0,66.6 91.3,70.2 92.6,73.2 93.9,75.7 95.2,78.0 96.6,80.0 97.9,81.8 99.2,83.4 100.5,84.9 101.8,86.3 103.1,87.5 104.4,88.7 105.7,89.8 107.0,90.8 108.3,91.7 109.6,92.6 110.9,93.5 112.2,94.2 113.5,95.0 114.8,95.7 116.1,96.4 117.4,97.0 118.8,97.6 120.1,98.2 121.4,98.7 122.7,99.3 124.0,99.8 125.3,100.3 126.6,100.7 127.9,101.2 129.2,101.6 130.5,102.0 131.8,102.4 133.1,102.8 134.4,103.2 135.7,103.5 137.0,103.9 138.3,104.2 139.6,104.5 140.9,104.8 142.2,105.1 143.6,105.4 144.9,105.7 146.2,106.0 147.5,106.3 148.8,106.5 150.1,106.8 151.4,107.0 152.7,107.3 154.0,107.5 155.3,107.7 156.6,108.0 157.9,108.2 159.2,108.4 160.5,108.6 161.8,108.8 163.1,109.0 164.4,109.2 165.8,109.4 167.1,109.6 168.4,109.8 169.7,110.0 171.0,110.1 172.3,110.3 173.6,110.5 174.9,110.6 176.2,110.8 177.5,111.0 178.8,111.1 180.1,111.3 181.4,111.4 182.7,111.6 184.0,111.7 185.3,111.9 186.6,112.0 187.9,112.2 189.2,112.3 190.6,112.4 191.9,112.6 193.2,112.7 194.5,112.8 195.8,113.0 197.1,113.1 198.4,113.2 199.7,113.3 201.0,113.5 202.3,113.6 203.6,113.7 204.9,113.8 206.2,113.9 207.5,114.0 208.8,114.2 210.1,114.3 211.4,114.4 212.8,114.5 214.1,114.6 215.4,114.7 216.7,114.8 218.0,114.9 219.3,115.0 220.6,115.1 221.9,115.2 223.2,115.3 224.5,115.4 225.8,115.5 227.1,115.6 228.4,115.7 229.7,115.8 231.0,115.9 232.3,116.0 233.6,116.1 234.9,116.2 236.2,116.3 237.6,116.4 238.9,116.5 240.2,116.6 241.5,116.6 242.8,116.7 244.1,116.8 245.4,116.9 246.7,117.0 248.0,117.1 249.3,117.2 250.6,117.3 251.9,117.3 253.2,117.4 254.5,117.5 255.8,117.6 257.1,117.7 258.4,117.8 259.8,117.8 261.1,117.9 262.4,118.0 263.7,118.1 265.0,118.2 266.3,118.3 267.6,118.3 268.9,118.4 270.2,118.5 271.5,118.6 272.8,118.7 274.1,118.7 275.4,118.8 276.7,118.9 278.0,119.0 279.3,119.1 280.6,119.1 281.9,119.2 283.2,119.3 284.6,119.4 285.9,119.5 287.2,119.5 288.5,119.6 289.8,119.7 291.1,119.8 292.4,119.8 293.7,119.9 295.0,120.0 296.3,120.1 297.6,120.2 298.9,120.2 300.2,120.3 301.5,120.4 302.8,120.5 304.1,120.5 305.4,120.6 306.8,120.7 308.1,120.8 309.4,120.9 310.7,120.9 312.0,121.0 313.3,121.1 314.6,121.2 315.9,121.3 317.2,121.3 318.5,121.4 319.8,121.5 321.1,121.6 322.4,121.7 323.7,121.7 325.0,121.8 326.3,121.9 327.6,122.0 328.9,122.1 330.2,122.2 331.6,122.2 332.9,122.3 334.2,122.4 335.5,122.5 336.8,122.6 338.1,122.7 339.4,122.7 340.7,122.8 342.0,122.9 343.3,123.0 344.6,123.1 345.9,123.2 347.2,123.3 348.5,123.4 349.8,123.4 351.1,123.5 352.4,123.6 353.8,123.7 355.1,123.8 356.4,123.9 357.7,124.0 359.0,124.1 360.3,124.2 361.6,124.3 362.9,124.4 364.2,124.5 365.5,124.6 366.8,124.7 368.1,124.8 369.4,124.9 370.7,125.0 372.0,125.1 373.3,125.2 374.6,125.3 375.9,125.4 377.2,125.5 378.6,125.6 379.9,125.7 381.2,125.8 382.5,126.0 383.8,126.1 385.1,126.2 386.4,126.3 387.7,126.4 389.0,126.5 390.3,126.7 391.6,126.8 392.9,126.9 394.2,127.0 395.5,127.2 396.8,127.3 398.1,127.4 399.4,127.6 400.8,127.7 402.1,127.8 403.4,128.0 404.7,128.1 406.0,128.3 407.3,128.4 408.6,128.6 409.9,128.7 411.2,128.9 412.5,129.0 413.8,129.2 415.1,129.4 416.4,129.5 417.7,129.7 419.0,129.9 420.3,130.0 421.6,130.2 422.9,130.4 424.2,130.6 425.6,130.8 426.9,131.0 428.2,131.2 429.5,131.4 430.8,131.6 432.1,131.8 433.4,132.0 434.7,132.3 436.0,132.5 437.3,132.7 438.6,133.0 439.9,133.2 441.2,133.5 442.5,133.7 443.8,134.0 445.1,134.3 446.4,134.6 447.8,134.9 449.1,135.2 450.4,135.5 451.7,135.8 453.0,136.1 454.3,136.5 455.6,136.8 456.9,137.2 458.2,137.6 459.5,138.0 460.8,138.4 462.1,138.8 463.4,139.3 464.7,139.7 466.0,140.2 467.3,140.7 468.6,141.3 469.9,141.8 471.2,142.4 472.6,143.0 473.9,143.6 475.2,144.3 476.5,145.0 477.8,145.8 479.1,146.5 480.4,147.4 481.7,148.3 483.0,149.2 484.3,150.2 485.6,151.3 486.9,152.5 488.2,153.7 489.5,155.1 490.8,156.6 492.1,158.2 493.4,160.0 494.8,162.0 496.1,164.3 497.4,166.8 498.7,169.8 500.0,173.4 501.3,177.9 502.6,184.1 503.9,200.0 505.2,200.0 506.5,200.0 507.8,200.0 509.1,200.0 510.4,200.0 511.7,200.0 513.0,200.0 514.3,200.0 515.6,200.0 516.9,200.0 518.2,200.0 519.6,200.0 520.9,200.0 522.2,200.0 523.5,200.0 524.8,200.0 526.1,200.0 527.4,200.0 528.7,200.0" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-dasharray="6 4" stroke-linejoin="round"/><text x="99.2" y="75.4" font-size="12" text-anchor="middle" font-weight="bold" fill="#2563eb">II. gün</text><line x1="60.0" y1="200.0" x2="60.0" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="60.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">90° G</text><line x1="121.2" y1="200.0" x2="121.2" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="121.2" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">66,5° G</text><line x1="233.8" y1="200.0" x2="233.8" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="233.8" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">23,5° G</text><line x1="295.0" y1="200.0" x2="295.0" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="295.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">0°</text><line x1="356.2" y1="200.0" x2="356.2" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="356.2" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">23,5° K</text><line x1="468.8" y1="200.0" x2="468.8" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="468.8" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">66,5° K</text><line x1="530.0" y1="200.0" x2="530.0" y2="204.0" stroke="#0f172a" stroke-width="1.5"/><text x="530.0" y="217.0" font-size="11" text-anchor="middle" fill="#0f172a">90° K</text><text x="540.0" y="236.0" font-size="12" text-anchor="end" font-weight="bold" fill="#0f172a">Enlem</text></svg></div><p><b>Grafiğe göre aşağıdakilerden hangisi kesinlikle söylenemez?</b></p>`,
+  c: ["II. günde Kuzey Yarım Küre’de gündüzler her gün biraz daha uzamaktadır.", "I. günde Kuzey Kutup Dairesi’nin kuzeyinde Güneş 24 saat boyunca batmaz.", "II. günde Güneş ışınları Güney Yarım Küre’deki bir paralele dik gelmektedir.", "İki günde de Ekvator’daki bir şehirde gündüz süresi 12 saattir."],
+  a: "A",
+  s: `<p>I. günde Kuzey Kutup Dairesi ve kuzeyinde gündüz 24 saat, Güney Kutup Dairesi ve güneyinde 0 saattir → 21 Haziran. II. günde Kuzey’de gündüz 12 saatten kısa, Güney’de uzundur → dik ışın Güney Yarım Küre’dedir (23 Eylül – 21 Mart arası). Fakat Güney’de 24 saat gündüz yalnızca kutba çok yakın dar bir bölgede görülür, Güney Kutup Dairesi’nin tamamını kapsamaz; yani bu gün 21 Aralık değildir. Bu gün 21 Aralık’tan önceyse Kuzey’de gündüzler kısalıyor, sonraysa uzuyordur; grafik bunu göstermez.</p><p>A) Kesinlikle söylenemez (cevap): Tek bir günün grafiği gündüzlerin uzayıp kısaldığını göstermez.<br>B) Söylenebilir: I. eğride 66,5° K’nin kuzeyinde gündüz 24 saattir.<br>C) Söylenebilir: Güney’de gündüz 12 saatten uzun olduğuna göre dik ışın Güney Yarım Küre’dedir.<br>D) Söylenebilir: İki eğri de Ekvator’da 12 saatten geçer.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki I, II, III ve IV numaralı bölgelerin Dünya üzerindeki konumları şekilde gösterilmiştir. III. bölge Ekvator, IV. bölge Oğlak Dönencesi üzerindedir.</p><div class="fig"><svg viewBox="0 0 400 260" width="400" role="img" aria-label="Dünya üzerinde I, II, III ve IV numaralı bölgeler" font-family="Arial, sans-serif"><circle cx="170.0" cy="130.0" r="100.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="70.0" y1="130.0" x2="270.0" y2="130.0" stroke="#1e3a8a" stroke-width="2"/><text x="275.0" y="134.0" font-size="11" text-anchor="start" fill="#1e3a8a">Ekvator</text><line x1="78.3" y1="90.2" x2="261.7" y2="90.2" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><text x="266.7" y="94.2" font-size="11" text-anchor="start" fill="#1e3a8a">Yengeç D.</text><line x1="78.3" y1="169.8" x2="261.7" y2="169.8" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><text x="266.7" y="173.8" font-size="11" text-anchor="start" fill="#1e3a8a">Oğlak D.</text><line x1="170.0" y1="16.0" x2="170.0" y2="244.0" stroke="#334155" stroke-width="1.6" stroke-dasharray="5 3"/><text x="170.0" y="12.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Kuzey</text><text x="170.0" y="258.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">Güney</text><circle cx="177.5" cy="43.4" r="4.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="160.5" y="47.4" font-size="12" text-anchor="start" font-weight="bold" fill="#991b1b">I</text><circle cx="145.4" cy="72.6" r="4.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="120.4" y="76.6" font-size="12" text-anchor="start" font-weight="bold" fill="#991b1b">II</text><circle cx="205.0" cy="130.0" r="4.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="172.0" y="134.0" font-size="12" text-anchor="start" font-weight="bold" fill="#991b1b">III</text><circle cx="160.8" cy="169.8" r="4.5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="135.8" y="173.8" font-size="12" text-anchor="start" font-weight="bold" fill="#991b1b">IV</text></svg></div><p>Ekim ayındaki bir günde öğle vakti yapılan gözlemlere göre:</p><div class="box">• X şehrinde o gün gece süresi gündüz süresinden uzundur.<br>• Y şehrine Güneş ışınları X şehrine göre daha eğik gelmektedir.</div><p><b>Buna göre X ve Y şehirlerinin bulunduğu bölgeler aşağıdakilerden hangisindeki gibi olabilir?</b></p>`,
+  c: ["X → I, Y → II", "X → III, Y → I", "X → II, Y → I", "X → II, Y → IV"],
+  a: "C",
+  s: `<p>Ekim ayı 23 Eylül ile 21 Aralık arasındadır; dik ışın Ekvator ile Oğlak Dönencesi arasındadır. Bu dönemde gecenin gündüzden uzun olduğu yerler Kuzey Yarım Küre’dedir; X, I ya da II olabilir (Ekvator’daki III’te gece = gündüz). Y’ye ışınlar X’ten daha eğik gelmeli, yani Y dik ışından X’ten daha uzak olmalıdır. X = II iken Y = I bu koşulu sağlar.</p><p>A) Yanlış: II, I’e göre dik ışına daha yakındır; ışınlar II’ye daha dik gelir, Y koşulu sağlanmaz.<br>B) Yanlış: Ekvator’da (III) gece ve gündüz yıl boyunca eşittir; X koşulu sağlanmaz.<br>C) Doğru.<br>D) Yanlış: Ekimde dik ışın Güney Yarım Küre’dedir; Oğlak Dönencesi’ndeki IV’e ışınlar II’den daha dik gelir.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki P, R, S ve T şehirlerinde bir yıl içindeki en uzun gündüz süresi ile en kısa gündüz süresi arasındaki farklar grafikte verilmiştir.</p><div class="fig"><svg viewBox="0 0 460 230" width="460" role="img" aria-label="P, R, S ve T şehirlerinde yılın en uzun ve en kısa gündüzü arasındaki fark" font-family="Arial, sans-serif"><defs><marker id="ar13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/></marker></defs><line x1="60.0" y1="190.0" x2="440.0" y2="190.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar13)"/><line x1="60.0" y1="190.0" x2="60.0" y2="24.0" stroke="#0f172a" stroke-width="1.6" marker-end="url(#ar13)"/><text x="64.0" y="20.0" font-size="11" text-anchor="start" font-weight="bold" fill="#0f172a">Fark (saat)</text><line x1="57.0" y1="144.3" x2="63.0" y2="144.3" stroke="#0f172a" stroke-width="1.5"/><text x="54.0" y="148.3" font-size="11" text-anchor="end" fill="#0f172a">4</text><line x1="57.0" y1="98.6" x2="63.0" y2="98.6" stroke="#0f172a" stroke-width="1.5"/><text x="54.0" y="102.6" font-size="11" text-anchor="end" fill="#0f172a">8</text><line x1="57.0" y1="52.9" x2="63.0" y2="52.9" stroke="#0f172a" stroke-width="1.5"/><text x="54.0" y="56.9" font-size="11" text-anchor="end" fill="#0f172a">12</text><text x="112.0" y="184.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">0</text><text x="112.0" y="206.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">P</text><rect x="180.0" y="162.3" width="44" height="27.7" fill="#8b5cf6"/><text x="202.0" y="156.3" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">2 sa 25 dk</text><text x="202.0" y="206.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">R</text><rect x="270.0" y="125.0" width="44" height="65.0" fill="#8b5cf6"/><text x="292.0" y="119.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">5 sa 41 dk</text><text x="292.0" y="206.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">S</text><rect x="360.0" y="41.7" width="44" height="148.3" fill="#8b5cf6"/><text x="382.0" y="35.7" font-size="11" text-anchor="middle" font-weight="bold" fill="#0f172a">12 sa 59 dk</text><text x="382.0" y="206.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">T</text><text x="440.0" y="224.0" font-size="12" text-anchor="end" font-weight="bold" fill="#0f172a">Şehir</text></svg></div><p>Buna göre,</p><p>I. R ve S şehirleri aynı yarım kürededir.<br>II. P şehri Ekvator üzerindedir.<br>III. Bu şehirlerden Ekvator’a en uzak olanı T’dir.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "I ve III", "II ve III"],
+  a: "D",
+  s: `<p>Ekvator’da yıl boyunca gündüz 12 saattir; en uzun ve en kısa gündüz arasındaki farkın sıfır olduğu yer Ekvator’dur (II kesin). Ekvator’dan kutuplara gidildikçe yıl içindeki gece-gündüz farkı artar; farkı en büyük olan T, Ekvator’a en uzaktır (III kesin). Ancak bu fark her iki yarım kürede aynı şekilde artar; farkın büyüklüğü şehrin Kuzey’de mi Güney’de mi olduğunu göstermez (I kesin değil).</p><p>A) Eksik: III de kesindir.<br>B) Yanlış: I kesin değildir; fark yarım küreyi göstermez.<br>C) Yanlış: I kesin değildir.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Güney Yarım Küre’de, aynı boylam üzerinde ve eş yükseltide bulunan K ve L şehirlerinden L, K’nin güneyindedir. 21 Aralık günü öğle vakti iki şehre de Güneş ışınlarının aynı açıyla geldiği belirlenmiştir.</p><p>Buna göre,</p><p>I. K ve L şehirleri Oğlak Dönencesi’ne eşit uzaklıktadır.<br>II. 21 Aralık’ta L şehrinde gündüz süresi K şehrindekinden uzundur.<br>III. 21 Haziran’da öğle vakti K şehrinde özdeş bir çubuğun gölge boyu L şehrindekinden uzundur.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>21 Aralık’ta ışınlar Oğlak Dönencesi’ne dik gelir. Işınların iki şehre aynı açıyla gelmesi, şehirlerin dik ışının düştüğü Oğlak Dönencesi’ne eşit uzaklıkta olduğunu gösterir; K dönencenin kuzeyinde, L güneyindedir (I doğru). 21 Aralık’ta Güney Yarım Küre’de güneye gidildikçe gündüz uzar; L daha güneyde olduğu için gündüzü daha uzundur (II doğru). 21 Haziran’da ışınlar Yengeç Dönencesi’ne dik gelir; K buna L’den daha yakındır, ışınlar K’ye daha dik gelir ve K’nin gölgesi daha kısadır (III yanlış).</p><p>A) Eksik: II de doğrudur.<br>B) Doğru.<br>C) Yanlış: III’te K ile L yer değiştirmiştir; K Yengeç’e daha yakın olduğundan gölgesi kısadır.<br>D) Yanlış: I doğrudur, III yanlıştır. “Aynı açı = Ekvator’a eşit uzaklık” yanılgısı I’i yanlış saydırır.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir gezgin, bir yıl boyunca farklı tarihlerde gittiği şehirlerde yaptığı gözlemleri tabloya kaydetmiştir.</p><table><tr><th></th><th>Tarih</th><th>Şehrin konumu</th><th>Gezginin kaydı</th></tr><tr><td>I</td><td>10 Temmuz</td><td>Oğlak Dönencesi’nin güneyi</td><td>Öğle vakti gölgem, 21 Haziran’da aynı şehirde ölçtüğümden biraz kısaydı.</td></tr><tr><td>II</td><td>5 Ekim</td><td>40° Kuzey</td><td>Gündüz süresi gece süresinden uzundu.</td></tr><tr><td>III</td><td>15 Mart</td><td>30° Güney</td><td>Gündüz süresi gece süresinden uzundu ve gündüzler her gün biraz kısalıyordu.</td></tr><tr><td>IV</td><td>2 Ocak</td><td>Ekvator</td><td>Gece ve gündüz süreleri birbirine eşitti.</td></tr></table><p><b>Gezginin kayıtlarından hangisi bilimsel olarak gerçekleşemez?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "B",
+  s: `<p>23 Eylül’den sonra Kuzey Yarım Küre’nin her yerinde gece gündüzden uzundur. 5 Ekim’de 40° Kuzey’de gündüz geceden uzun olamaz; II gerçekleşemez.</p><p>A) Gerçekleşebilir: 21 Haziran’dan sonra dik ışınlar güneye, Oğlak’ın güneyindeki şehre doğru kayar; ışınlar daha dik gelir, gölge kısalır.<br>B) Gerçekleşemez (cevap).<br>C) Gerçekleşebilir: Güney’de 21 Aralık – 21 Mart arasında gündüz geceden uzundur ve kısalmaktadır.<br>D) Gerçekleşebilir: Ekvator’da yıl boyunca gece ve gündüz eşittir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir grup öğrenci, yaşadıkları ilin iklimini tanıtan bir rapor hazırlarken şu adımları izlemiştir:</p><div class="box">1. İldeki meteoroloji istasyonlarının 1991–2020 yıllarına ait aylık sıcaklık ve yağış kayıtlarını topladılar.<br>2. Her ay için 30 yıllık ortalama sıcaklık ve yağış değerlerini hesapladılar.<br>3. Okul bahçesinde 1–7 Kasım tarihlerinde kendi ölçtükleri sıcaklıkların ortalamasını, ilin kasım ayı ikliminin göstergesi olarak rapora eklediler.<br>4. Ortalamalara bakarak ilin yazlarının sıcak ve kurak, kışlarının ılık ve yağışlı geçtiği sonucuna vardılar.<br>5. Raporlarını incelemesi için bir iklim bilimciden (klimatolog) yardım istediler.</div><p><b>Öğrencilerin hangi adımlarında iklim kavramına uygun olmayan bir uygulama yapılmıştır?</b></p>`,
+  c: ["Yalnız 3", "2 ve 3", "3 ve 5", "1, 3 ve 5"],
+  a: "A",
+  s: `<p>İklim, geniş bir bölgede uzun yıllar boyunca gözlenen hava olaylarının ortalamasıdır. 1, 2 ve 4. adımlar uzun yıllık verilerle yapılmıştır; 5. adımda iklimi inceleyen doğru uzmana başvurulmuştur. 3. adımda ise tek bir noktada yalnızca bir haftalık ölçüm (hava olayı verisi) iklim göstergesi olarak kullanılmıştır; bu uygun değildir.</p><p>A) Doğru.<br>B) Yanlış: 2. adımda 30 yıllık ortalama alınmıştır; iklim için uygundur.<br>C) Yanlış: İklimi inceleyen uzman klimatologdur; 5. adım uygundur.<br>D) Yanlış: 1. ve 5. adımlar uygundur.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, gece ve gündüz sürelerinin yıl içindeki değişimiyle ilgili aşağıdaki ifadeleri yazmıştır.</p><div class="box">I. 21 Haziran’dan 23 Eylül’e kadar Kuzey Yarım Küre’de gündüzler kısalır ancak gündüz süresi gece süresinden uzundur.<br>II. 23 Eylül’den itibaren Güney Yarım Küre’de gündüzler uzamaya başlar.<br>III. 21 Aralık’tan 21 Mart’a kadar Güney Yarım Küre’de gündüzler kısalır ancak gündüz süresi gece süresinden uzundur.<br>IV. 21 Mart’ta Güney Yarım Küre’de gündüzler kısalmaya başlar.</div><p><b>Bu ifadelerden hangileri yanlıştır?</b></p>`,
+  c: ["I ve II", "II ve IV", "III ve IV", "I, II ve IV"],
+  a: "B",
+  s: `<p>Bir yarım kürede gündüzler, dik ışınlar o yarım küreye doğru kaydığı sürece uzar. Güney Yarım Küre’de gündüzler 21 Haziran’dan 21 Aralık’a kadar uzar, 21 Aralık’tan 21 Haziran’a kadar kısalır. I ve III doğrudur. II yanlıştır: Güney’de gündüzler 23 Eylül’de uzamaya “başlamaz”, 21 Haziran’dan beri uzamaktadır; 23 Eylül’de başlayan, gündüzün geceden uzun olmasıdır. IV yanlıştır: Güney’de gündüzler 21 Aralık’tan beri kısalmaktadır; 21 Mart’ta başlayan, gecenin gündüzden uzun olmasıdır. “Gündüz uzuyor” ile “gündüz geceden uzun” ifadeleri karıştırılmamalıdır.</p><p>A) Yanlış: I doğru bir ifadedir.<br>B) Doğru: Yanlış ifadeler II ve IV’tür.<br>C) Yanlış: III doğru bir ifadedir.<br>D) Yanlış: I doğru bir ifadedir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Samsun’daki (yaklaşık 41° K) bir okul ile Yeni Zelanda’daki Christchurch’teki (yaklaşık 43° G) bir okul ortak bir proje yürütüyor. İki okulun öğrencileri aynı gün, öğle vakti yatay zemine dik yerleştirdikleri 1 m’lik özdeş çubukların gölge boylarını ölçüyor ve o günün gündüz süresini kaydediyor. Öğrenciler ölçüm tarihini tabloya yazmayı unutmuştur.</p><table><tr><th>Okul</th><th>Öğle vakti gölge boyu</th><th>Gündüz süresi</th></tr><tr><td>Samsun</td><td>1,67 m</td><td>9 sa 48 dk</td></tr><tr><td>Christchurch</td><td>0,47 m</td><td>14 sa 25 dk</td></tr></table><p><b>Bu verilere göre aşağıdakilerden hangisi kesinlikle söylenebilir?</b></p>`,
+  c: ["Ölçüm gününde Christchurch’te yaz mevsimi yaşanmaktadır.", "Ölçüm gününden sonraki günlerde Samsun’da gündüzler kısalmaya devam eder.", "Christchurch’te birim yüzeye düşen enerjinin Samsun’dakinden fazla olmasının nedeni, Dünya’nın o gün Güneş’e en yakın konumda olmasıdır.", "Ölçüm gününde Güneş ışınları Ekvator’un güneyindeki bir yere dik gelmektedir."],
+  a: "D",
+  s: `<p>Kuzey Yarım Küre’deki Samsun’da gündüz 12 saatten kısa, Güney Yarım Küre’deki Christchurch’te uzundur. Bu durum yalnızca 23 Eylül – 21 Mart arasında yaşanır; bu aralıkta dik ışınlar Ekvator ile Oğlak Dönencesi arasına (21 Aralık’ta Oğlak’a) düşer, yani her zaman Ekvator’un güneyine. Ancak tarihin 21 Aralık’tan önce mi sonra mı olduğu verilerden anlaşılamaz.</p><p>A) Yanlış: Olabilir ama kesin değil. 23 Eylül – 21 Aralık arasında Christchurch’te ilkbahar, 21 Aralık – 21 Mart arasında yaz yaşanır.<br>B) Yanlış: Olabilir ama kesin değil. Tarih 21 Aralık’tan sonraysa Samsun’da gündüzler uzamaktadır.<br>C) Yanlış: Fark, ışınların Christchurch’e daha dik gelmesinden kaynaklanır; Güneş’e uzaklık mevsimlerin ve bu farkın nedeni değildir.<br>D) Doğru.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K şehrinde 5 Temmuz günü gündüz süresi yaklaşık 13 saat olarak ölçülmüştür. Aynı gün öğle vakti yere dik duran bir çubuğun gölgesinin, bir gün önce aynı saatte ölçülen gölgesinden biraz daha kısa olduğu gözlenmiştir.</p><p>Buna göre,</p><p>I. K şehri Ekvator ile Yengeç Dönencesi arasında yer alır.<br>II. 5 Temmuz’da K şehrinde yaz mevsimi yaşanmaktadır.<br>III. Önümüzdeki günlerde K şehrinde gündüz süresi uzamaya devam edecektir.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>5 Temmuz’da gündüzü 12 saatten uzun olan K, Kuzey Yarım Küre’dedir; tarih 21 Haziran – 23 Eylül arasında olduğu için K’de yaz yaşanır (II kesin). 21 Haziran’dan sonra dik ışınlar Yengeç Dönencesi’nden Ekvator’a doğru, yani güneye kayar. Yengeç’in kuzeyindeki bir şehirde bu dönemde dik ışın uzaklaştığı için gölge her gün uzar. K’de gölgenin kısalması, güneye kayan dik ışının K’ye yaklaştığını gösterir; K dik ışının güneyinde, yani Yengeç Dönencesi ile Ekvator arasındadır (I kesin). 21 Haziran’dan sonra Kuzey Yarım Küre’nin her yerinde gündüzler kısalır (III yanlış).</p><p>A) Eksik: II de kesindir.<br>B) Doğru.<br>C) Yanlış: III yanlıştır; 21 Haziran’dan sonra Kuzey’de gündüzler kısalır. “Gölge kısalıyorsa gündüz uzuyordur” yanılgısı.<br>D) Yanlış: III yanlış, I ise kesindir. “Temmuzda Kuzey’de gölge hep uzar” genellemesi dönenceler arasındaki şehirler için geçerli değildir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Erzurum’da (yaklaşık 40° K) yaşayan bir öğrenci, yatay zemine dik yerleştirdiği 1 m’lik bir çubuğun öğle vakti gölge boyunu bir yıl boyunca her ayın 21’inde ölçüp tabloya yazmıştır.</p><table><tr><th>Ay</th><th>Ocak</th><th>Şubat</th><th>Mart</th><th>Nisan</th><th>Mayıs</th><th>Haziran</th></tr><tr><td>Gölge (m)</td><td>1,73</td><td>1,23</td><td>0,84</td><td>0,53</td><td>0,36</td><td>0,30</td></tr></table><table><tr><th>Ay</th><th>Temmuz</th><th>Ağustos</th><th>Eylül</th><th>Ekim</th><th>Kasım</th><th>Aralık</th></tr><tr><td>Gölge (m)</td><td>0,36</td><td>0,33</td><td>0,86</td><td>1,28</td><td>1,77</td><td>2,00</td></tr></table><p>Öğretmeni, ölçümlerden yalnızca birinin hatalı olduğunu söylemiştir.</p><p><b>Buna göre hangi aya ait ölçüm kesinlikle hatalıdır?</b></p>`,
+  c: ["Mart", "Haziran", "Ağustos", "Kasım"],
+  a: "C",
+  s: `<p>Erzurum Yengeç Dönencesi’nin kuzeyindedir. 21 Haziran’dan 21 Aralık’a kadar dik ışınlar güneye kayar ve Erzurum’dan uzaklaşır; bu dönemde öğle gölgesi her ay bir öncekinden uzun olmalıdır. Ağustos değeri (0,33 m) temmuz değerinden (0,36 m) kısa yazılmıştır; bu mümkün değildir. Ayrıca dik ışın ağustos sonunda nisan sonundakine benzer bir konumdadır; ağustos değeri nisandakine (0,53 m) yakın olmalıydı.</p><p>A) Yanlış: Mart değeri (0,84) eylül değerine (0,86) yakındır; ekinokslarda gölge eşittir, uyumludur.<br>B) Yanlış: Haziran’da gölge yılın en kısa değerindedir; uyumludur.<br>C) Doğru.<br>D) Yanlış: Kasım değeri ekimden uzun, aralıktan kısadır; uyumludur.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bilim insanları, Dünya ile aynı şekle ve aynı dönme süresine sahip, Güneş etrafında çembere çok yakın bir yörüngede dolanan ancak dönme ekseni yörünge düzlemine dik olan (eksen eğikliği 0°) hayalî bir gezegen modeli tasarlıyor.</p><p>Bu gezegende,</p><p>I. Ekvator çevresinin kutup bölgelerinden daha sıcak olması<br>II. Aynı tarihte iki yarım kürede zıt mevsimlerin yaşanması<br>III. Ekvator’da gece ve gündüz sürelerinin yıl boyunca birbirine eşit olması<br>IV. Orta enlemlerdeki bir şehirde öğle vakti gölge boyunun yıl içinde belirgin şekilde değişmesi</p><p><b>durumlarından hangileri gözlenir?</b></p>`,
+  c: ["I ve III", "II ve IV", "I, III ve IV", "Yalnız III"],
+  a: "A",
+  s: `<p>Eksen eğik olmasaydı ışınlar her gün Ekvator’a dik gelirdi. Gezegen küre biçiminde olduğu için ışınlar Ekvator’dan kutuplara doğru yine giderek eğikleşir; Ekvator çevresi kutuplardan sıcak olur (I gözlenir). Ekvator’da gece ve gündüz zaten her zaman eşittir; eğiklik sıfır olunca her yerde her gün eşit olur (III gözlenir). Mevsimler eğiklik ile dolanmanın birlikte sonucudur; eğiklik yoksa belirgin mevsimler ve zıt mevsimler oluşmaz (II gözlenmez). Dik ışın hep Ekvator’da kalacağından bir şehirde öğle gölgesi yıl boyunca neredeyse aynı kalır (IV gözlenmez).</p><p>A) Doğru.<br>B) Yanlış: II ve IV eksen eğikliğinin sonuçlarıdır; eğiklik yoksa gözlenmez.<br>C) Yanlış: IV gözlenmez; dik ışın hep Ekvator’da kalır.<br>D) Eksik: I de gözlenir; sıcaklığın Ekvator’dan kutuplara azalması gezegenin küresel şeklinden kaynaklanır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Eş yükseltideki K ve L şehirlerinden K Kuzey Yarım Küre’de, L Güney Yarım Küre’dedir. Aynı gün öğle vakti iki şehirde ölçülen hava sıcaklıkları birbirine eşit çıkmıştır.</p><p>Buna göre ölçüm günüyle ilgili,</p><p>I. K ve L şehirlerine öğle vakti Güneş ışınları aynı açıyla geliyor olabilir.<br>II. K ve L şehirlerinde aynı mevsim yaşanıyor olabilir.<br>III. K ve L şehirlerinde gündüz süreleri birbirine eşit olabilir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>Sıcaklık tek başına mevsimi göstermez. I: Örneğin 21 Mart’ta Ekvator’a eşit uzaklıktaki iki şehre ışınlar aynı açıyla gelir; bu, eşit sıcaklıkla uyumludur (olabilir). II: Aynı tarihte iki yarım kürede her zaman zıt mevsimler yaşanır; farklı yarım kürelerdeki K ve L’de aynı mevsim yaşanamaz. 21 Mart’ta bile Kuzey’de ilkbahar, Güney’de sonbahar başlar (II yanlış). III: Ekinoks günlerinde (21 Mart, 23 Eylül) her yerde gündüz 12 saattir; gündüzler eşit olabilir (III doğru).</p><p>A) Eksik: III de olabilir.<br>B) Yanlış: II olamaz; farklı yarım kürelerde mevsimler zıttır.<br>C) Doğru.<br>D) Yanlış: II olamaz. “Sıcaklıkları eşitse mevsimleri de aynıdır” yanılgısı.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Öğretmen, “Türkiye’de yaz mevsiminin kış mevsiminden sıcak geçmesinin nedeni nedir?” diye soruyor. Öğrencilerin cevapları şöyledir:</p><div class="dialog"><div><b>Aslı:</b> Yazın Dünya Güneş’e daha yakın olduğu için.</div><div><b>Berk:</b> Dünya’nın dönme ekseni eğik olduğu için.</div><div><b>Ceyda:</b> Dünya, dönme ekseni hep aynı yöne eğik kalacak şekilde Güneş etrafında dolandığı için. Yazın Kuzey Yarım Küre Güneş’e dönük olur; ışınlar daha dik gelir, birim yüzeye düşen enerji artar ve gündüzler daha uzun olur.</div><div><b>Deniz:</b> Dünya kendi ekseni etrafında döndüğü için yazın gündüzler uzar, bu yüzden hava ısınır.</div></div><p><b>Buna göre hangi öğrencinin açıklaması bilimsel olarak doğru ve eksiksizdir?</b></p>`,
+  c: ["Aslı", "Berk", "Ceyda", "Deniz"],
+  a: "C",
+  s: `<p>Mevsimler, eksen eğikliği ile Dünya’nın Güneş etrafında dolanmasının birlikte sonucudur. Bu sayede yıl içinde ışınların geliş açısı ve dolayısıyla birim yüzeye düşen enerji ile gündüz süresi değişir. Ceyda bu üç unsuru (eğiklik, dolanma, ışın açısı/enerji ve gündüz süresi) birlikte açıklamıştır.</p><p>A) Yanlış: Dünya Güneş’e en yakın konuma ocakta gelir; o sırada Türkiye’de kış yaşanır. Uzaklık mevsimlerin nedeni değildir.<br>B) Eksik: Eğiklik tek başına yetmez; Dünya dolanmasaydı aynı yarım küre hep aynı açıyla ışık alırdı ve mevsim değişimi olmazdı.<br>C) Doğru.<br>D) Yanlış: Dönme hareketi gece-gündüz döngüsünü oluşturur; gündüz süresinin yıl içinde değişmesi dönmenin değil eğiklik ve dolanmanın sonucudur.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı yörenin dört bölgesine (A, B, C ve D) ait iki farklı harita aşağıda verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Aynı yöreye ait bir günlük hava durumu haritası ve uzun yıllık yağış haritası" font-family="Arial, sans-serif"><text x="135.0" y="18.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Harita 1: 12 Mart 2026, saat 14.00</text><text x="425.0" y="18.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">Harita 2: Yıllık ortalama yağış (1991–2020)</text><rect x="15.0" y="30.0" width="120.0" height="80.0" rx="0" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/><text x="75.0" y="60.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">A bölgesi</text><text x="75.0" y="82.0" font-size="11" text-anchor="middle" fill="#0f172a">Sağanak yağmur</text><rect x="305.0" y="30.0" width="120.0" height="80.0" rx="0" fill="#fef3c7" stroke="#334155" stroke-width="1.4"/><text x="365.0" y="60.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">A bölgesi</text><text x="365.0" y="82.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">250 mm</text><rect x="135.0" y="30.0" width="120.0" height="80.0" rx="0" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/><text x="195.0" y="60.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">B bölgesi</text><text x="195.0" y="82.0" font-size="11" text-anchor="middle" fill="#0f172a">Güneşli</text><rect x="425.0" y="30.0" width="120.0" height="80.0" rx="0" fill="#1d4ed8" stroke="#334155" stroke-width="1.4"/><text x="485.0" y="60.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#ffffff">B bölgesi</text><text x="485.0" y="82.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#ffffff">1200 mm</text><rect x="15.0" y="110.0" width="120.0" height="80.0" rx="0" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/><text x="75.0" y="140.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">C bölgesi</text><text x="75.0" y="162.0" font-size="11" text-anchor="middle" fill="#0f172a">Kuvvetli rüzgâr</text><rect x="305.0" y="110.0" width="120.0" height="80.0" rx="0" fill="#93c5fd" stroke="#334155" stroke-width="1.4"/><text x="365.0" y="140.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">C bölgesi</text><text x="365.0" y="162.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">600 mm</text><rect x="135.0" y="110.0" width="120.0" height="80.0" rx="0" fill="#f8fafc" stroke="#334155" stroke-width="1.4"/><text x="195.0" y="140.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">D bölgesi</text><text x="195.0" y="162.0" font-size="11" text-anchor="middle" fill="#0f172a">Parçalı bulutlu</text><rect x="425.0" y="110.0" width="120.0" height="80.0" rx="0" fill="#dbeafe" stroke="#334155" stroke-width="1.4"/><text x="485.0" y="140.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">D bölgesi</text><text x="485.0" y="162.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#0f172a">400 mm</text><text x="280.0" y="205.0" font-size="11" text-anchor="middle" fill="#475569">Haritalar aynı yöreye aittir ve temsilîdir.</text></svg></div><p><b>Bu haritalarla ilgili aşağıdaki yorumlardan hangisi yanlıştır?</b></p>`,
+  c: ["Harita 1’deki bilgiler kısa süre içinde değişebilir; Harita 2’deki bilgiler kolay değişmez.", "Harita 2, uzun yıllık verilerin ortalamasıyla hazırlandığı için bir iklim haritasıdır ve hazırlanmasında klimatologlar görev alır.", "B bölgesinde 12 Mart’ta güneşli bir hava görülmesi, bu bölgenin uzun yıllar boyunca en fazla yağış alan bölge olmasıyla çelişmez.", "A bölgesinde 12 Mart’ta sağanak yağmur görüldüğüne göre A, yörenin uzun yıllar boyunca en fazla yağış alan bölgesidir."],
+  a: "D",
+  s: `<p>Harita 1 belirli bir gün ve saatin hava durumunu (hava olayı), Harita 2 otuz yıllık ortalamayı (iklim) gösterir. Bir günlük hava durumu, bölgenin iklimi hakkında kesin bilgi vermez: Yıllık ortalamada en az yağış alan A’da bir gün sağanak, en çok yağış alan B’de bir gün güneşli hava görülebilir.</p><p>A) Doğru bir yorumdur.<br>B) Doğru bir yorumdur.<br>C) Doğru bir yorumdur: Tek günlük hava olayı iklimle çelişmez.<br>D) Yanlış yorum (cevap): Tek bir günün yağışı bölgenin iklimini belirlemez; Harita 2’ye göre A en az yağış alan bölgedir. “Bir günlük gözlemden iklim çıkarılır” yanılgısı.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı boylam üzerinde bulunan P, R, S ve T şehirlerinde 21 Haziran günü ölçülen gündüz süreleri tabloda verilmiştir.</p><table><tr><th>Şehir</th><th>P</th><th>R</th><th>S</th><th>T</th></tr><tr><td>Gündüz süresi (21 Haziran)</td><td>24 sa (Güneş batmıyor)</td><td>18 sa 29 dk</td><td>12 sa 00 dk</td><td>0 sa (Güneş doğmuyor)</td></tr></table><p><b>Buna göre aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["21 Aralık’ta R şehrinde gece süresi yaklaşık 18 sa 29 dk olur.", "S şehri Yengeç Dönencesi üzerindedir.", "P şehrinde 24 saat gündüz yaşanmasının nedeni, Dünya’nın bu tarihte Güneş’e en yakın konumda olmasıdır.", "P ve T şehirleri aynı yarım kürededir."],
+  a: "A",
+  s: `<p>21 Haziran’da Kuzey Kutbu Güneş’e dönüktür. Kuzey Kutup Dairesi ve kuzeyinde (P) 24 saat gündüz, Güney Kutup Dairesi ve güneyinde (T) 24 saat gece yaşanır. Gündüzü 12 saatten uzun olan R Kuzey Yarım Küre’dedir. 21 Aralık’ta durum tam tersine döner: Kuzey Yarım Küre yılın en uzun gecesini yaşar ve R’nin 21 Aralık’taki gece süresi, 21 Haziran’daki gündüz süresine (18 sa 29 dk) eşit olur.</p><p>A) Doğru.<br>B) Yanlış: 21 Haziran’da gündüz süresinin tam 12 saat olduğu yer yalnızca Ekvator’dur; Yengeç Dönencesi’nde gündüz 12 saatten uzundur.<br>C) Yanlış: Dünya Güneş’e en yakın konuma ocak başında gelir; 24 saat gündüzün nedeni eksen eğikliği ve Kuzey Kutbu’nun Güneş’e dönük olmasıdır.<br>D) Yanlış: P Kuzey Kutup Dairesi’nin, T Güney Kutup Dairesi’nin ötesindedir; farklı yarım kürelerdedir.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>21 Mart ve 23 Eylül tarihleriyle ilgili aşağıdaki ifadeler veriliyor.</p><div class="box">I. Bir şehirde bu iki tarihte aynı mevsim başlar.<br>II. Bu iki tarihte Dünya’nın her yerinde gece ve gündüz süreleri birbirine eşittir.<br>III. Bu iki tarihte Dünya üzerindeki bütün şehirlere öğle vakti Güneş ışınları aynı açıyla gelir.<br>IV. Bir şehirde bu iki tarihte öğle vakti yere dik duran özdeş çubukların gölge boyları birbirine eşittir.</div><p><b>Bu ifadelerden hangileri doğrudur?</b></p>`,
+  c: ["I ve III", "II ve III", "II ve IV", "I, II ve IV"],
+  a: "C",
+  s: `<p>İki tarihte de ışınlar Ekvator’a dik gelir ve aydınlanma çemberi kutuplardan geçer; her yerde gece = gündüz (II doğru). Işınlar bir şehre iki tarihte aynı açıyla gelir, gölge boyu eşittir (IV doğru). Ancak 21 Mart’ta Kuzey’de ilkbahar, 23 Eylül’de sonbahar başlar; aynı şehirde iki tarihte farklı mevsimler başlar (I yanlış). Işınlar Ekvator’a dik, Ekvator’dan uzaklaştıkça daha eğik gelir; bütün şehirlere aynı açıyla gelmez (III yanlış).</p><p>A) Yanlış: I ve III yanlıştır.<br>B) Yanlış: III yanlıştır. “Gece-gündüz eşitse ışın açısı da her yerde eşittir” yanılgısı.<br>C) Doğru.<br>D) Yanlış: I yanlıştır; gölge boyu eşit olsa da mevsimler farklıdır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Samsun’da yaşayan Mert, bir gün tuttuğu notu şöyle yazmıştır: “Bugün Samsun’da gündüz süresi gece süresinden kısaydı. Gündüzler bir süredir her gün biraz daha kısalıyor. Öğle vakti çubuğumun gölgesi de bir hafta önce ölçtüğümden daha uzundu. Takvime göre yarın gündüz bugünkünden de kısa olacak.” Aşağıdaki modellerde yıldız, Güneş ışınlarının öğle vakti dik geldiği yeri göstermektedir. Kuzey yukarıdadır.</p><div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="Güneş ışınlarının dik geldiği yeri gösteren dört küre modeli" font-family="Arial, sans-serif"><circle cx="70.0" cy="78.0" r="52.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="18.0" y1="78.0" x2="122.0" y2="78.0" stroke="#1e3a8a" stroke-width="2"/><line x1="22.3" y1="57.3" x2="117.7" y2="57.3" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><line x1="22.3" y1="98.7" x2="117.7" y2="98.7" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M70.0,46.3 l3,8 l8,0 l-6,5 l2,8 l-7,-5 l-7,5 l2,-8 l-6,-5 l8,0 z" fill="#f59e0b" stroke="#92400e" stroke-width="1"/><text x="70.0" y="152.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">I</text><circle cx="210.0" cy="78.0" r="52.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="158.0" y1="78.0" x2="262.0" y2="78.0" stroke="#1e3a8a" stroke-width="2"/><line x1="162.3" y1="57.3" x2="257.7" y2="57.3" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><line x1="162.3" y1="98.7" x2="257.7" y2="98.7" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M210.0,56.2 l3,8 l8,0 l-6,5 l2,8 l-7,-5 l-7,5 l2,-8 l-6,-5 l8,0 z" fill="#f59e0b" stroke="#92400e" stroke-width="1"/><text x="210.0" y="152.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">II</text><circle cx="350.0" cy="78.0" r="52.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="298.0" y1="78.0" x2="402.0" y2="78.0" stroke="#1e3a8a" stroke-width="2"/><line x1="302.3" y1="57.3" x2="397.7" y2="57.3" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><line x1="302.3" y1="98.7" x2="397.7" y2="98.7" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M350.0,77.8 l3,8 l8,0 l-6,5 l2,8 l-7,-5 l-7,5 l2,-8 l-6,-5 l8,0 z" fill="#f59e0b" stroke="#92400e" stroke-width="1"/><text x="350.0" y="152.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">III</text><circle cx="490.0" cy="78.0" r="52.0" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/><line x1="438.0" y1="78.0" x2="542.0" y2="78.0" stroke="#1e3a8a" stroke-width="2"/><line x1="442.3" y1="57.3" x2="537.7" y2="57.3" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><line x1="442.3" y1="98.7" x2="537.7" y2="98.7" stroke="#1e3a8a" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M490.0,87.7 l3,8 l8,0 l-6,5 l2,8 l-7,-5 l-7,5 l2,-8 l-6,-5 l8,0 z" fill="#f59e0b" stroke="#92400e" stroke-width="1"/><text x="490.0" y="152.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#0f172a">IV</text><text x="280.0" y="12.0" font-size="11" text-anchor="middle" fill="#475569">Düz çizgi: Ekvator   Kesikli çizgiler: Yengeç (üstte) ve Oğlak (altta) Dönenceleri   Yıldız: dik ışının düştüğü yer</text></svg></div><p><b>Mert’in not tuttuğu gün, dik ışının düştüğü yer hangi modeldeki gibi olabilir?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "C",
+  s: `<p>Samsun’da (Kuzey Yarım Küre) gündüz geceden kısa → tarih 23 Eylül – 21 Mart arasıdır. Gündüzler kısalıyor → 21 Haziran – 21 Aralık arasıdır. Ortak aralık 23 Eylül – 21 Aralık’tır; gölgenin uzaması da bununla uyumludur. Yarın da gündüz kısalacağına göre bugün 21 Aralık değildir. Bu dönemde dik ışın Ekvator’dan Oğlak Dönencesi’ne doğru, iki çizgi arasında güneye kayar. 21 Aralık’ta dik ışın Oğlak’a ulaşır ama o gün gündüzler artık kısalmayı bırakır ve ertesi gün uzamaya başlar.</p><p>A) Yanlış: Dik ışın Yengeç Dönencesi’nde ise tarih 21 Haziran’dır; Samsun’da gündüz yılın en uzunudur.<br>B) Yanlış: Dik ışın Ekvator ile Yengeç arasındaysa Samsun’da gündüz geceden uzundur.<br>C) Doğru.<br>D) Yanlış: Dik ışın Oğlak üzerindeyse gün 21 Aralık’tır; bu günden sonra gündüzler kısalmaz, uzar. Oysa Mert yarın gündüzün daha da kısalacağını yazmıştır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Ekvator çevresindeki bölgelerde yıl boyunca sıcaklıkların fazla değişmediği ve dört mevsimin belirgin olarak yaşanmadığı bilinmektedir.</p><p>Bu durumun nedenleriyle ilgili,</p><p>I. Ekvator’da gündüz süresinin yıl boyunca değişmemesi<br>II. Ekvator’a öğle vakti Güneş ışınlarının yıl boyunca dike yakın açılarla gelmesi ve bu açının yıl içinde çok az değişmesi<br>III. Ekvator’un Güneş’e kutuplardan daha yakın olması</p><p><b>açıklamalarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Ekvator’da gece ve gündüz yıl boyunca 12’şer saattir (I doğru). Dik ışınlar yıl boyunca iki dönence arasında gidip geldiği için Ekvator’a ışınlar hep dike yakın gelir; birim yüzeye düşen enerji yıl içinde az değişir (II doğru). Ekvator ile kutupların Güneş’e uzaklık farkı, Dünya–Güneş uzaklığının yanında önemsizdir; sıcaklık farkının nedeni uzaklık değil ışınların geliş açısıdır (III yanlış).</p><p>A) Eksik: II de doğrudur.<br>B) Doğru.<br>C) Yanlış: III bir yanılgıdır; II ise doğrudur.<br>D) Yanlış: III yanlıştır; “Güneş’e yakın olan daha sıcaktır” yanılgısı.</p><p>Cevap <b>B</b>.</p>` }
 ]
 });
