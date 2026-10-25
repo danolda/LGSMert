@@ -370,6 +370,570 @@ qs: [
   ],
   a: "C",
   s: `<p>Metnin son cümlesinde araştırmacılar gençlere; düzenli fiziksel egzersiz yapmalarını, yatmadan önce kitap okumalarını ve <b>uyumadan en az bir saat önce telefonlarını bırakmalarını</b> (<i>put their phones away at least one hour before sleeping</i>) tavsiye etmektedir (<b>C doğru</b>).</p>`
+},
+{
+  q: `<p>Ece wants to join a manga drawing course. Read her note and look at the four course cards below.</p>
+<p><i>“I’m crazy about drawing manga characters! I have school until 5 p.m., so I can only go on weekday evenings after 6 p.m. I don’t want to pay more than ₺1500 a month. Also, I’d rather draw with other teens than have lessons alone with a teacher.”</i></p>
+<div class="fig"><svg viewBox="0 0 560 190" width="540" role="img" aria-label="Dört manga kursu kartı">
+<g font-size="10.5" fill="#1e293b">
+<rect x="10" y="10" width="265" height="80" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="142" y="28" text-anchor="middle" font-weight="bold" font-size="11.5" fill="#1e40af">PENCIL CLUB</text>
+<text x="22" y="46">Days: Tuesday &amp; Thursday</text><text x="22" y="62">Time: 4 – 6 p.m. · Group lessons</text><text x="22" y="78">Price: ₺1200 a month</text>
+<rect x="285" y="10" width="265" height="80" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="417" y="28" text-anchor="middle" font-weight="bold" font-size="11.5" fill="#92400e">INK HOUSE</text>
+<text x="297" y="46">Days: Saturday</text><text x="297" y="62">Time: 7 – 9 p.m. · Group lessons</text><text x="297" y="78">Price: ₺1000 a month</text>
+<rect x="10" y="100" width="265" height="80" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
+<text x="142" y="118" text-anchor="middle" font-weight="bold" font-size="11.5" fill="#9d174d">PANEL ART</text>
+<text x="22" y="136">Days: Monday &amp; Wednesday</text><text x="22" y="152">Time: 7 – 9 p.m. · Private (1 student)</text><text x="22" y="168">Price: ₺1400 a month</text>
+<rect x="285" y="100" width="265" height="80" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="417" y="118" text-anchor="middle" font-weight="bold" font-size="11.5" fill="#166534">MANGA LAB</text>
+<text x="297" y="136">Days: Wednesday &amp; Friday</text><text x="297" y="152">Time: 6.30 – 8.30 p.m. · Group lessons</text><text x="297" y="168">Price: ₺1350 a month</text>
+</g>
+</svg></div>
+<p>According to the information above, which course should Ece choose?</p>`,
+  c: [`Pencil Club`, `Ink House`, `Panel Art`, `Manga Lab`],
+  a: "D",
+  s: `<p>Ece’nin üç koşulu var: (1) <b>hafta içi akşam 6’dan sonra</b>, (2) en fazla <b>₺1500</b>, (3) <b>grup dersi</b> (<i>I’d rather draw with other teens than have lessons alone</i> → yalnız ders istemiyor).</p>
+<ul>
+<li><b>Pencil Club:</b> Saat 4–6 → Ece o saatte okulda ✗</li>
+<li><b>Ink House:</b> Cumartesi → hafta sonu ✗ (saat ve fiyat uysa da)</li>
+<li><b>Panel Art:</b> Gün, saat ve fiyat uygun ama <b>özel ders (private)</b> ✗</li>
+<li><b>Manga Lab:</b> Çarşamba–Cuma (hafta içi), 6.30 p.m., grup dersi, ₺1350 ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Read the text messages between Mia and Zeynep.</p>
+<div class="fig"><svg viewBox="0 0 400 230" width="380" role="img" aria-label="Mia ve Zeynep arasındaki mesajlaşma ekranı">
+<rect x="10" y="5" width="380" height="220" rx="16" fill="#f1f5f9" stroke="#334155" stroke-width="2"/>
+<rect x="10" y="5" width="380" height="30" rx="14" fill="#334155"/>
+<text x="200" y="25" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Mia 💬</text>
+<g font-size="10.5">
+<rect x="22" y="45" width="270" height="36" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="32" y="60" fill="#1e293b">Hey! Do you fancy coming to the karaoke</text><text x="32" y="74" fill="#1e293b">night at the youth centre on Friday? 🎤</text>
+<rect x="108" y="89" width="270" height="50" rx="10" fill="#bbf7d0" stroke="#16a34a"/>
+<text x="118" y="104" fill="#14532d" font-weight="bold">---------------------------------------- .</text>
+<text x="118" y="118" fill="#14532d">I can’t stand singing in front of people.</text><text x="118" y="132" fill="#14532d">It’s so embarrassing! 😳</text>
+<rect x="22" y="147" width="270" height="22" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="32" y="162" fill="#1e293b">OK. What about bowling on Saturday then? 🎳</text>
+<rect x="208" y="177" width="170" height="36" rx="10" fill="#bbf7d0" stroke="#16a34a"/>
+<text x="218" y="192" fill="#14532d">Count me in! I’m really</text><text x="218" y="206" fill="#14532d">keen on bowling. 👍</text>
+</g>
+</svg></div>
+<p>Which of the following best completes Zeynep’s first message?</p>`,
+  c: [
+    `No way! Karaoke is not my cup of tea`,
+    `Sure! I’m really into singing on stage`,
+    `Why not? I’d love to join you`,
+    `I don’t mind it at all; it sounds terrific`
+  ],
+  a: "A",
+  s: `<p>Boşluktan sonra Zeynep <i>“I <b>can’t stand</b> singing in front of people. It’s so embarrassing!”</i> diyor; yani karaoke davetini <b>reddediyor</b>. Boşluğa olumsuz bir ifade gelmeli.</p>
+<p><b>No way! Karaoke is not my cup of tea</b> (Asla! Karaoke bana göre değil) bu duruma uyar. <i>“not my cup of tea”</i> = <i>“I don’t like it / It’s not for me”</i>.</p>
+<p>B (sahnede şarkı söylemeye bayılırım), C (katılmayı çok isterim) ve D (hiç sakıncası yok, harika) daveti <b>kabul eden</b> ifadelerdir ve “can’t stand” ile çelişir. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>200 students at Atatürk Secondary School answered the question <b>“What do you do most in your free time?”</b> The results are below.</p>
+<div class="fig"><svg viewBox="0 0 470 200" width="460" role="img" aria-label="Boş zaman etkinlikleri pasta grafiği">
+<path d="M120,100 L120.0,20.0 A80,80 0 0,1 167.0,164.7 Z" fill="#3b82f6" stroke="#fff" stroke-width="2"/>
+<path d="M120,100 L167.0,164.7 A80,80 0 0,1 55.3,147.0 Z" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+<path d="M120,100 L55.3,147.0 A80,80 0 0,1 43.9,75.3 Z" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+<path d="M120,100 L43.9,75.3 A80,80 0 0,1 73.0,35.3 Z" fill="#a855f7" stroke="#fff" stroke-width="2"/>
+<path d="M120,100 L73.0,35.3 A80,80 0 0,1 120.0,20.0 Z" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+<g font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+<text x="169" y="88">40%</text><text x="112" y="155">25%</text><text x="69" y="112">15%</text><text x="80" y="73">10%</text><text x="104" y="55">10%</text>
+</g>
+<g font-size="11" fill="#1e293b">
+<rect x="235" y="35" width="14" height="14" fill="#3b82f6"/><text x="256" y="46">Surfing the net</text>
+<rect x="235" y="63" width="14" height="14" fill="#22c55e"/><text x="256" y="74">Doing sports</text>
+<rect x="235" y="91" width="14" height="14" fill="#f59e0b"/><text x="256" y="102">Reading books</text>
+<rect x="235" y="119" width="14" height="14" fill="#a855f7"/><text x="256" y="130">Playing an instrument</text>
+<rect x="235" y="147" width="14" height="14" fill="#ef4444"/><text x="256" y="158">Hanging out with friends</text>
+</g>
+</svg></div>
+<p>According to the chart, which of the following is <b>NOT</b> correct?</p>`,
+  c: [
+    `Surfing the net is the most popular free-time activity among the students.`,
+    `Fifty students spend most of their free time doing sports.`,
+    `Reading books is as popular as hanging out with friends.`,
+    `Playing an instrument and hanging out with friends have the same percentage.`
+  ],
+  a: "C",
+  s: `<p>Grafikteki yüzdeleri kontrol edelim (toplam 200 öğrenci):</p>
+<ul>
+<li>A: İnternette gezinmek %40 ile en büyük dilim ✓</li>
+<li>B: Spor %25 → 200’ün %25’i = <b>50 öğrenci</b> ✓</li>
+<li>C: Kitap okuma <b>%15</b>, arkadaşlarla takılmak <b>%10</b>. “as popular as” (aynı derecede popüler) <b>yanlıştır</b> ✗</li>
+<li>D: Enstrüman çalmak ve arkadaşlarla vakit geçirmek ikisi de %10 ✓</li>
+</ul>
+<p>Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Read the text about Burak.</p>
+<p><i>“Burak is fifteen and he lives in Trabzon. He is a big fan of comics, so he spends most of his pocket money on them. He isn’t keen on team sports. He would rather go jogging alone by the sea early in the morning than play football with his classmates after school. At weekends, he usually helps his father in their small bakery, and in the evenings he sometimes draws his own comic stories.”</i></p>
+<p>Which of the following questions <b>CANNOT</b> be answered according to the text?</p>`,
+  c: [
+    `What does Burak spend most of his pocket money on?`,
+    `Which activity does Burak prefer to playing football?`,
+    `When does Burak go jogging?`,
+    `How much pocket money does Burak get every week?`
+  ],
+  a: "D",
+  s: `<p>Her sorunun cevabını metinde arayalım:</p>
+<ul>
+<li>A: Harçlığını <b>çizgi romanlara (comics)</b> harcıyor ✓</li>
+<li>B: <i>would rather go jogging … than play football</i> → futbol yerine <b>koşuyu</b> tercih ediyor ✓</li>
+<li>C: <b>Sabah erkenden (early in the morning)</b> koşuyor ✓</li>
+<li>D: Harçlığının <b>miktarı</b> metinde hiç geçmiyor ✗</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>The school is organizing a <b>Beatbox &amp; Rap Battle</b> on Saturday. Four students are talking about it.</p>
+<div class="fig"><svg viewBox="0 0 560 175" width="540" role="img" aria-label="Dört öğrencinin rap yarışması hakkındaki konuşma balonları">
+<g font-size="10.5" fill="#1e293b">
+<rect x="10" y="10" width="265" height="72" rx="10" fill="#fef2f2" stroke="#dc2626"/>
+<text x="22" y="28" font-weight="bold" fill="#991b1b">Ada:</text>
+<text x="22" y="45">“Rap isn’t really my thing, but my best</text><text x="22" y="60">friend is performing, so I’ll be in the front</text><text x="22" y="75">row to support her.”</text>
+<rect x="285" y="10" width="265" height="72" rx="10" fill="#eff6ff" stroke="#2563eb"/>
+<text x="297" y="28" font-weight="bold" fill="#1e40af">Efe:</text>
+<text x="297" y="45">“I’m really into beatbox! Unfortunately,</text><text x="297" y="60">my piano exam is on the same day.</text><text x="297" y="75">What a pity!”</text>
+<rect x="10" y="92" width="265" height="72" rx="10" fill="#f0fdf4" stroke="#16a34a"/>
+<text x="22" y="110" font-weight="bold" fill="#166534">Duru:</text>
+<text x="22" y="127">“I find rap battles thrilling! I’ve already</text><text x="22" y="142">bought my ticket.”</text>
+<rect x="285" y="92" width="265" height="72" rx="10" fill="#fef3c7" stroke="#d97706"/>
+<text x="297" y="110" font-weight="bold" fill="#92400e">Kerem:</text>
+<text x="297" y="127">“I don’t mind rap music, and I have nothing</text><text x="297" y="142">better to do on Saturday. Why not?”</text>
+</g>
+</svg></div>
+<p>According to the speech bubbles, who will <b>NOT</b> be at the event?</p>`,
+  c: [`Ada`, `Efe`, `Duru`, `Kerem`],
+  a: "B",
+  s: `<p><b>Tuzak:</b> Etkinliği sevmek ile etkinliğe katılmak farklı şeylerdir!</p>
+<ul>
+<li><b>Ada</b> rap sevmiyor (<i>isn’t really my thing</i>) ama arkadaşını desteklemek için <b>gidiyor</b> ✓</li>
+<li><b>Efe</b> beatbox’a bayılıyor ama <b>aynı gün piyano sınavı var</b> → <b>gidemiyor</b> ✗</li>
+<li><b>Duru</b> biletini almış, gidiyor ✓</li>
+<li><b>Kerem</b> <i>“I don’t mind … Why not?”</i> → gidiyor ✓</li>
+</ul>
+<p>Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p><b>Leyla:</b> What do you think about reality shows?<br><b>Her friend:</b> ----</p>
+<p>Which of the following is <b>NOT</b> a suitable answer to Leyla’s question?</p>`,
+  c: [
+    `I usually watch them on Sunday evenings with my sister.`,
+    `They are ridiculous. I can’t stand watching them.`,
+    `I find them entertaining, especially the cooking ones.`,
+    `In my opinion, they are a waste of time.`
+  ],
+  a: "A",
+  s: `<p>Leyla, realite şovlar hakkında <b>görüş (opinion)</b> soruyor: <i>“What do you think about…?”</i></p>
+<p>B (saçma, katlanamıyorum), C (eğlenceli buluyorum) ve D (bence zaman kaybı) görüş bildirir.</p>
+<p>A ise <b>ne zaman ve kiminle izlediğini</b> (sıklık/rutin) anlatır; bu cevap <i>“When / How often do you watch reality shows?”</i> sorusuna uygundur, görüş bildirmez. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Look at Melis’s weekly plan.</p>
+<div class="fig"><svg viewBox="0 0 580 130" width="560" role="img" aria-label="Melis'in haftalık planı">
+<rect x="10" y="10" width="560" height="26" fill="#0f766e"/>
+<g font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">
+<text x="50" y="28"> </text><text x="125" y="28">Mon</text><text x="195" y="28">Tue</text><text x="265" y="28">Wed</text><text x="335" y="28">Thu</text><text x="405" y="28">Fri</text><text x="475" y="28">Sat</text><text x="540" y="28">Sun</text>
+</g>
+<rect x="10" y="36" width="560" height="40" fill="#f0fdfa" stroke="#99f6e4"/>
+<rect x="10" y="76" width="560" height="40" fill="#ffffff" stroke="#99f6e4"/>
+<g stroke="#99f6e4"><line x1="90" y1="10" x2="90" y2="116"/><line x1="160" y1="10" x2="160" y2="116"/><line x1="230" y1="10" x2="230" y2="116"/><line x1="300" y1="10" x2="300" y2="116"/><line x1="370" y1="10" x2="370" y2="116"/><line x1="440" y1="10" x2="440" y2="116"/><line x1="510" y1="10" x2="510" y2="116"/></g>
+<g font-size="10" fill="#1e293b" text-anchor="middle">
+<text x="50" y="60" font-weight="bold">Afternoon</text>
+<text x="125" y="55">Volleyball</text><text x="125" y="68">training</text>
+<text x="195" y="60">Piano</text>
+<text x="265" y="55">Volleyball</text><text x="265" y="68">training</text>
+<text x="335" y="60" fill="#94a3b8">—</text>
+<text x="405" y="55">Volleyball</text><text x="405" y="68">training</text>
+<text x="475" y="60">Piano</text>
+<text x="540" y="60">Hiking</text>
+<text x="50" y="100" font-weight="bold">Evening</text>
+<text x="125" y="100">Homework</text>
+<text x="195" y="95">Watching</text><text x="195" y="108">series</text>
+<text x="265" y="100">Homework</text>
+<text x="335" y="100">Reading</text>
+<text x="405" y="95">Movie night</text><text x="405" y="108">with friends</text>
+<text x="475" y="100" fill="#94a3b8">—</text>
+<text x="540" y="95">Family</text><text x="540" y="108">dinner</text>
+</g>
+</svg></div>
+<p>According to the plan, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Melis goes to volleyball training every weekday.`,
+    `She has piano lessons more often than volleyball training.`,
+    `She spends both of her weekend evenings with her friends.`,
+    `She plays the piano twice a week, and she has no plans on Thursday afternoon.`
+  ],
+  a: "D",
+  s: `<p>Tabloyu tek tek kontrol edelim:</p>
+<ul>
+<li>A: Voleybol Pazartesi, Çarşamba, Cuma → <b>haftada 3 kez</b>, her hafta içi değil ✗</li>
+<li>B: Piyano Salı ve Cumartesi → <b>2 kez</b>; voleybol 3 kez. Piyano daha <b>az</b> ✗</li>
+<li>C: Cumartesi akşamı boş, Pazar akşamı <b>aile yemeği</b> ✗ (arkadaşlarla film gecesi Cuma)</li>
+<li>D: Piyano haftada iki kez ve Perşembe öğleden sonra boş (—) ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Oğuz wants to buy a book. Read what he says and look at the book cards.</p>
+<p><i>“I’m fond of stories full of mysteries and clues, but I can’t stand books with magic or dragons. I only read on the school bus, so I’m looking for a short book, under 200 pages.”</i></p>
+<div class="fig"><svg viewBox="0 0 580 120" width="560" role="img" aria-label="Dört kitap kartı">
+<g font-size="10.5" fill="#1e293b" text-anchor="middle">
+<rect x="10" y="10" width="132" height="100" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+<text x="76" y="32" font-weight="bold" fill="#5b21b6">The Dragon’s</text><text x="76" y="46" font-weight="bold" fill="#5b21b6">Secret</text>
+<text x="76" y="70">Fantasy / Mystery</text><text x="76" y="92">180 pages</text>
+<rect x="152" y="10" width="132" height="100" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="218" y="32" font-weight="bold" fill="#075985">Shadows on</text><text x="218" y="46" font-weight="bold" fill="#075985">Baker Street</text>
+<text x="218" y="70">Detective</text><text x="218" y="92">520 pages</text>
+<rect x="294" y="10" width="132" height="100" rx="8" fill="#fef3c7" stroke="#d97706"/>
+<text x="360" y="32" font-weight="bold" fill="#92400e">The Missing</text><text x="360" y="46" font-weight="bold" fill="#92400e">Violin</text>
+<text x="360" y="70">Detective</text><text x="360" y="92">140 pages</text>
+<rect x="436" y="10" width="132" height="100" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+<text x="502" y="32" font-weight="bold" fill="#166534">The Life of</text><text x="502" y="46" font-weight="bold" fill="#166534">Nikola Tesla</text>
+<text x="502" y="70">Biographical</text><text x="502" y="92">120 pages</text>
+</g>
+</svg></div>
+<p>Which book should Oğuz buy?</p>`,
+  c: [`The Dragon’s Secret`, `Shadows on Baker Street`, `The Missing Violin`, `The Life of Nikola Tesla`],
+  a: "C",
+  s: `<p>Koşullar: <b>gizem/ipucu dolu</b> (polisiye), <b>büyü ve ejderha yok</b>, <b>200 sayfadan kısa</b>.</p>
+<ul>
+<li>The Dragon’s Secret: gizem var ve kısa ama <b>ejderha/fantastik</b> ✗</li>
+<li>Shadows on Baker Street: polisiye ama <b>520 sayfa</b> ✗</li>
+<li>The Missing Violin: polisiye, 140 sayfa ✓</li>
+<li>The Life of Nikola Tesla: kısa ama <b>biyografi</b>, gizem yok ✗</li>
+</ul>
+<p>Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Which of the following sentences is <b>grammatically CORRECT</b>?</p>`,
+  c: [
+    `My brother is keen on collecting stamps, but he can’t stand doing puzzles.`,
+    `I’d rather to watch a documentary than going out tonight.`,
+    `She prefers listen to podcasts to read magazines.`,
+    `They enjoy to play video games with their cousins at weekends.`
+  ],
+  a: "A",
+  s: `<p>Kuralları hatırlayalım:</p>
+<ul>
+<li><b>be keen on / can’t stand / enjoy + V-ing</b></li>
+<li><b>would rather + V₁ + than + V₁</b></li>
+<li><b>prefer + V-ing + to + V-ing</b></li>
+</ul>
+<p>A: <i>keen on collecting</i>, <i>can’t stand doing</i> ✓<br>
+B: <i>I’d rather <b>watch</b> … than <b>go</b> out</i> olmalı ✗<br>
+C: <i>She prefers <b>listening</b> to podcasts to <b>reading</b> magazines</i> olmalı ✗<br>
+D: <i>They enjoy <b>playing</b></i> olmalı ✗</p>
+<p>Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Students rated four types of music from <b>1 (I can’t stand it)</b> to <b>5 (I’m crazy about it)</b>.</p>
+<div class="fig"><svg viewBox="0 0 480 160" width="460" role="img" aria-label="Öğrencilerin müzik türü puanları tablosu">
+<rect x="10" y="10" width="460" height="28" fill="#7c2d12"/>
+<g font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+<text x="65" y="29">Student</text><text x="167" y="29">Rock</text><text x="257" y="29">Jazz</text><text x="347" y="29">Folk</text><text x="432" y="29">Pop</text>
+</g>
+<rect x="10" y="38" width="460" height="28" fill="#fff7ed" stroke="#fed7aa"/>
+<rect x="10" y="66" width="460" height="28" fill="#ffffff" stroke="#fed7aa"/>
+<rect x="10" y="94" width="460" height="28" fill="#fff7ed" stroke="#fed7aa"/>
+<rect x="10" y="122" width="460" height="28" fill="#ffffff" stroke="#fed7aa"/>
+<g stroke="#fed7aa"><line x1="120" y1="10" x2="120" y2="150"/><line x1="212" y1="10" x2="212" y2="150"/><line x1="302" y1="10" x2="302" y2="150"/><line x1="392" y1="10" x2="392" y2="150"/></g>
+<g font-size="11" fill="#1e293b" text-anchor="middle">
+<text x="65" y="57" font-weight="bold">Arda</text><text x="167" y="57">5</text><text x="257" y="57">2</text><text x="347" y="57">1</text><text x="432" y="57">3</text>
+<text x="65" y="85" font-weight="bold">Bilge</text><text x="167" y="85">1</text><text x="257" y="85">4</text><text x="347" y="85">5</text><text x="432" y="85">2</text>
+<text x="65" y="113" font-weight="bold">Cenk</text><text x="167" y="113">4</text><text x="257" y="113">5</text><text x="347" y="113">3</text><text x="432" y="113">1</text>
+<text x="65" y="141" font-weight="bold">Dila</text><text x="167" y="141">2</text><text x="257" y="141">3</text><text x="347" y="141">4</text><text x="432" y="141">5</text>
+</g>
+</svg></div>
+<p>According to the table, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Arda prefers jazz to pop, but he is crazy about rock.`,
+    `Bilge and Cenk both find rock music unbearable.`,
+    `Cenk would rather listen to pop than folk music.`,
+    `Both Bilge and Dila prefer folk music to jazz.`
+  ],
+  a: "D",
+  s: `<p>Puanları karşılaştıralım (büyük puan = daha çok seviyor):</p>
+<ul>
+<li>A: Arda jazz 2, pop 3 → popu daha çok seviyor; “prefers jazz to pop” ✗</li>
+<li>B: Bilge rock 1 (katlanamıyor) ama Cenk rock 4 (seviyor) ✗</li>
+<li>C: Cenk pop 1, folk 3 → folk’u tercih eder ✗</li>
+<li>D: Bilge folk 5 &gt; jazz 4; Dila folk 4 &gt; jazz 3 → ikisi de folk’u jazz’a tercih eder ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Read part of an interview with Deniz, a 15-year-old skateboarder, in a teen magazine.</p>
+<div class="fig"><svg viewBox="0 0 520 210" width="500" role="img" aria-label="Genç kaykaycı Deniz ile röportaj">
+<rect x="10" y="10" width="500" height="190" rx="10" fill="#fafaf9" stroke="#57534e" stroke-width="1.5"/>
+<rect x="10" y="10" width="500" height="28" rx="9" fill="#57534e"/>
+<text x="260" y="29" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">TEEN TALK: MEET DENIZ (15) 🛹</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="24" y="58" font-weight="bold" fill="#b91c1c">Q: How often do you practise skateboarding?</text>
+<text x="24" y="74">Deniz: Almost every day after school, for about two hours.</text>
+<text x="24" y="98" font-weight="bold" fill="#b91c1c">Q: Why are you so keen on it?</text>
+<text x="24" y="114">Deniz: It makes me feel free, and I love learning new tricks.</text>
+<text x="24" y="138" font-weight="bold" fill="#b91c1c">Q: --------------------------------------------- ?</text>
+<text x="24" y="154">Deniz: Never! I’d rather spend my money on new wheels than on</text>
+<text x="24" y="170">designer clothes. A comfy T-shirt and old jeans are enough for me.</text>
+</g>
+</svg></div>
+<p>Which of the following questions best completes the interview?</p>`,
+  c: [
+    `What do you usually do at weekends?`,
+    `Do you ever go shopping for trendy clothes?`,
+    `How often do you practise new tricks?`,
+    `Who taught you how to skateboard?`
+  ],
+  a: "B",
+  s: `<p>Deniz’in cevabı: <i>“<b>Never!</b> I’d rather spend my money on new wheels than on <b>designer clothes</b>.”</i> Cevap hem bir <b>sıklık</b> (Never) hem de <b>kıyafet alışverişi</b> hakkında.</p>
+<p><i>“Do you ever go shopping for trendy clothes?”</i> (Hiç moda kıyafet alışverişine çıkar mısın?) sorusu iki bilgiyi de karşılar.</p>
+<p>C “How often…?” sıklık sorusu olduğu için çeldiricidir ama cevaptaki kıyafet ve para kısmıyla ilgisi yoktur; ayrıca antrenman sıklığı zaten ilk soruda sorulmuştur. A ve D’ye “Never!” ile cevap verilmez. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p><i>“I’ll never go to that concert hall again! The music was so loud and the crowd was so noisy that it was totally <b>(1) ----</b> . And the singer’s costume was <b>(2) ----</b> ; he was wearing a pink chicken suit on stage!”</i></p>
+<p>Which of the following options best completes the blanks?</p>`,
+  c: [
+    `(1) terrific — (2) trendy`,
+    `(1) relaxing — (2) stylish`,
+    `(1) impressive — (2) fashionable`,
+    `(1) unbearable — (2) ridiculous`
+  ],
+  a: "D",
+  s: `<p>Konuşmacı konseri hiç beğenmemiş: <i>“I’ll <b>never</b> go … again!”</i> ve müzik <i>“so loud”</i>, kalabalık <i>“so noisy”</i>. Bu yüzden (1) numaralı boşluğa olumsuz bir sıfat gelmeli: <b>unbearable</b> (katlanılmaz).</p>
+<p>Sahnede pembe tavuk kostümü giymek <b>gülünç / saçma</b> bir durumdur: (2) <b>ridiculous</b>.</p>
+<p><b>Tuzak:</b> A’daki <i>terrific</i> “korkunç” değil, “harika” demektir. B ve C’deki sıfatların hepsi olumludur. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Look at the after-school club cards and read what three students say.</p>
+<div class="fig"><svg viewBox="0 0 580 90" width="560" role="img" aria-label="Okul kulübü kartları">
+<g font-size="10.5" text-anchor="middle">
+<rect x="10" y="10" width="132" height="70" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+<text x="76" y="32" font-weight="bold" fill="#991b1b">DRAMA CLUB 🎭</text><text x="76" y="52" fill="#1e293b">acting on stage,</text><text x="76" y="67" fill="#1e293b">school plays</text>
+<rect x="152" y="10" width="132" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="218" y="32" font-weight="bold" fill="#075985">ROBOTICS CLUB 🤖</text><text x="218" y="52" fill="#1e293b">building robots,</text><text x="218" y="67" fill="#1e293b">coding</text>
+<rect x="294" y="10" width="132" height="70" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+<text x="360" y="32" font-weight="bold" fill="#166534">NATURE CLUB ⛺</text><text x="360" y="52" fill="#1e293b">camping, trekking,</text><text x="360" y="67" fill="#1e293b">bird-watching</text>
+<rect x="436" y="10" width="132" height="70" rx="8" fill="#f5f5f4" stroke="#57534e"/>
+<text x="502" y="32" font-weight="bold" fill="#44403c">CHESS CLUB ♟</text><text x="502" y="52" fill="#1e293b">strategy games,</text><text x="502" y="67" fill="#1e293b">tournaments</text>
+</g>
+</svg></div>
+<ul>
+<li><b>Tolga:</b> “I can spend hours taking things apart and writing programs on my laptop.”</li>
+<li><b>Asya:</b> “I’d rather sleep in a sleeping bag under the stars than stay in a luxury hotel.”</li>
+<li><b>Mert:</b> “Being on stage makes me nervous, but I enjoy games that make me think carefully before every move.”</li>
+</ul>
+<p>Which club is the best for each student?</p>`,
+  c: [
+    `Tolga: Robotics — Asya: Nature — Mert: Chess`,
+    `Tolga: Chess — Asya: Drama — Mert: Robotics`,
+    `Tolga: Robotics — Asya: Drama — Mert: Nature`,
+    `Tolga: Nature — Asya: Robotics — Mert: Drama`
+  ],
+  a: "A",
+  s: `<ul>
+<li><b>Tolga:</b> parçaları sökmek ve bilgisayarda program yazmak → <b>Robotics</b> (building robots, coding)</li>
+<li><b>Asya:</b> otelde kalmaktansa yıldızların altında uyku tulumunda uyumayı tercih ediyor → <b>Nature</b> (camping)</li>
+<li><b>Mert:</b> sahne onu geriyor (Drama ✗), her hamleden önce düşündüren oyunları seviyor → <b>Chess</b></li>
+</ul>
+<p>Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Read the group chat of three friends.</p>
+<div class="fig"><svg viewBox="0 0 420 260" width="400" role="img" aria-label="Üç arkadaşın grup sohbeti">
+<rect x="10" y="5" width="400" height="250" rx="16" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+<rect x="10" y="5" width="400" height="30" rx="14" fill="#1d4ed8"/>
+<text x="210" y="25" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Weekend Squad 👥</text>
+<g font-size="10.5" fill="#1e293b">
+<rect x="22" y="43" width="300" height="22" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="58"><tspan font-weight="bold" fill="#be185d">Elif:</tspan> What about ice-skating on Saturday? ⛸</text>
+<rect x="22" y="71" width="370" height="36" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="86"><tspan font-weight="bold" fill="#0369a1">Can:</tspan> Ice-skating? No way! I’d rather watch the new</text><text x="30" y="100">superhero film than freeze on the ice. 🎬</text>
+<rect x="22" y="113" width="370" height="36" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="128"><tspan font-weight="bold" fill="#15803d">Lara:</tspan> I don’t mind skating. But I have a dentist</text><text x="30" y="142">appointment on Saturday morning. 🦷</text>
+<rect x="22" y="155" width="300" height="22" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="170"><tspan font-weight="bold" fill="#be185d">Elif:</tspan> The rink is open from 2 p.m. to 8 p.m.</text>
+<rect x="22" y="183" width="240" height="22" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="198"><tspan font-weight="bold" fill="#15803d">Lara:</tspan> Then count me in! 🙌</text>
+<rect x="22" y="211" width="370" height="36" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="30" y="226"><tspan font-weight="bold" fill="#0369a1">Can:</tspan> OK, I’ll meet you there after my film, around</text><text x="30" y="240">5 p.m. But I won’t skate! 😅</text>
+</g>
+</svg></div>
+<p>According to the chat, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Can is keen on ice-skating, so he will skate with his friends on Saturday.`,
+    `Lara can’t join her friends because of her dentist appointment.`,
+    `Lara will go ice-skating on Saturday afternoon, although she isn’t crazy about it.`,
+    `All of the friends will watch the superhero film before going to the rink.`
+  ],
+  a: "C",
+  s: `<ul>
+<li>A: Can “No way!” diyor ve <i>“I won’t skate!”</i> → paten kaymayı sevmiyor ✗</li>
+<li>B: Lara’nın dişçi randevusu <b>sabah</b>; pist 2’de açılıyor, Lara “count me in” diyor → katılıyor ✗</li>
+<li>C: Lara <i>“I don’t mind skating”</i> (sakıncası yok; bayılmıyor ama itirazı da yok) ve öğleden sonra pistte olacak ✓</li>
+<li>D: Filmi sadece Can izleyecek ✗</li>
+</ul>
+<p>Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Put the sentences in the correct order to make a meaningful dialogue.</p>
+<p><b>I.</b> Not really. I’d rather stay at home and watch my favourite series.<br>
+<b>II.</b> Come on! It’s a sunny day. Let’s go cycling by the seaside.<br>
+<b>III.</b> Hey Ozan, are you interested in going out this afternoon?<br>
+<b>IV.</b> Hmm, cycling? OK, I don’t mind, if we stop for ice cream on the way.</p>`,
+  c: [
+    `III – II – I – IV`,
+    `I – III – IV – II`,
+    `II – IV – III – I`,
+    `III – I – II – IV`
+  ],
+  a: "D",
+  s: `<p>Diyalog bir <b>soru</b> ile başlamalı: <b>III</b> (Dışarı çıkmak ister misin?).</p>
+<p>Ozan isteksiz cevap verir: <b>I</b> (Pek değil, evde dizi izlemeyi tercih ederim).</p>
+<p>Arkadaşı ısrar edip öneri sunar: <b>II</b> (Hadi ama! Güneşli bir gün, bisiklete binelim).</p>
+<p>Ozan öneriyi şartlı kabul eder: <b>IV</b> (Bisiklet mi? Tamam, yolda dondurma için durursak sakıncası yok).</p>
+<p>A seçeneğinde II, I’den önce gelir; ama “Come on!” ancak bir ret cevabından sonra anlamlıdır. Doğru sıra III – I – II – IV. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>The bar chart shows how many minutes Doruk practised the guitar last week.</p>
+<div class="fig"><svg viewBox="0 0 480 200" width="460" role="img" aria-label="Doruk'un haftalık gitar çalışma süreleri grafiği">
+<line x1="50" y1="165" x2="465" y2="165" stroke="#334155" stroke-width="1.5"/>
+<line x1="50" y1="40" x2="50" y2="165" stroke="#334155" stroke-width="1.5"/>
+<g stroke="#e2e8f0"><line x1="50" y1="129" x2="465" y2="129"/><line x1="50" y1="93" x2="465" y2="93"/><line x1="50" y1="57" x2="465" y2="57"/></g>
+<g font-size="10.5" fill="#475569" text-anchor="end"><text x="44" y="169">0</text><text x="44" y="133">30</text><text x="44" y="97">60</text><text x="44" y="61">90</text></g>
+<text x="20" y="30" font-size="10.5" font-weight="bold" fill="#475569">minutes</text>
+<rect x="68" y="129" width="36" height="36" fill="#f97316"/>
+<rect x="186" y="93" width="36" height="72" fill="#f97316"/>
+<rect x="304" y="129" width="36" height="36" fill="#f97316"/>
+<rect x="363" y="57" width="36" height="108" fill="#f97316"/>
+<rect x="422" y="57" width="36" height="108" fill="#f97316"/>
+<g font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="86" y="182">Mon</text><text x="145" y="182">Tue</text><text x="204" y="182">Wed</text><text x="263" y="182">Thu</text><text x="322" y="182">Fri</text><text x="381" y="182">Sat</text><text x="440" y="182">Sun</text>
+<text x="145" y="160" fill="#94a3b8">0</text><text x="263" y="160" fill="#94a3b8">0</text>
+</g>
+</svg></div>
+<p>According to the chart, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Doruk didn’t practise on two weekdays, and he practised the longest at the weekend.`,
+    `He practised the guitar for an hour every weekday.`,
+    `He practised more on Wednesday than on Saturday.`,
+    `He practised for the same amount of time on Monday and Wednesday.`
+  ],
+  a: "A",
+  s: `<p>Grafikteki değerler: Pzt 30, Sal 0, Çar 60, Per 0, Cum 30, Cmt 90, Paz 90 dakika.</p>
+<ul>
+<li>A: Salı ve Perşembe (iki hafta içi günü) hiç çalışmamış; en uzun süre (90 dk) Cumartesi ve Pazar ✓</li>
+<li>B: Sadece Çarşamba 60 dk (1 saat) ✗</li>
+<li>C: Çarşamba 60 &lt; Cumartesi 90 ✗</li>
+<li>D: Pazartesi 30, Çarşamba 60 ✗</li>
+</ul>
+<p>Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Read Hannah’s e-mail to her Turkish e-pal.</p>
+<p><i>“Hi Ayşe! I’m crazy about ice hockey, so I practise three times a week. My parents are quite strict, though. I must finish my homework before I go to training. At weekends, I’m allowed to go out with my friends, but I have to be home by 9 p.m. My mum also says we mustn’t use our phones at the dinner table, because dinner is family time. It sometimes feels boring, but I know they are right!”</i></p>
+<p>Which of the following is <b>NOT</b> one of the rules in Hannah’s family?</p>`,
+  c: [
+    `Doing homework before hobbies`,
+    `Going to bed before 10 p.m.`,
+    `Not using phones during dinner`,
+    `Coming home by 9 p.m. at weekends`
+  ],
+  a: "B",
+  s: `<p>E-postadaki kurallar:</p>
+<ul>
+<li><i>I <b>must</b> finish my homework before I go to training</i> → A ✓</li>
+<li><i>we <b>mustn’t</b> use our phones at the dinner table</i> → C ✓</li>
+<li><i>I <b>have to</b> be home by 9 p.m.</i> (hafta sonları) → D ✓</li>
+</ul>
+<p><b>Yatma saati</b> hakkında hiçbir bilgi yok. <b>Tuzak:</b> “9 p.m.” saati eve dönüş saatidir, yatma saati değil. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Look at the programme of the <b>Teen Fest</b>.</p>
+<div class="fig"><svg viewBox="0 0 440 190" width="420" role="img" aria-label="Gençlik festivali programı">
+<rect x="10" y="10" width="420" height="170" rx="10" fill="#fdf4ff" stroke="#a21caf" stroke-width="2"/>
+<rect x="10" y="10" width="420" height="30" rx="9" fill="#a21caf"/>
+<text x="220" y="30" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">TEEN FEST – SATURDAY PROGRAMME 🎉</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="30" y="62" font-weight="bold">10.00 – 11.30</text><text x="140" y="62">Street Dance Show</text><text x="330" y="62" fill="#6b21a8">Stage A</text>
+<text x="30" y="88" font-weight="bold">12.00 – 13.00</text><text x="140" y="88">Poetry Reading</text><text x="330" y="88" fill="#6b21a8">Hall B</text>
+<text x="30" y="114" font-weight="bold">14.00 – 15.30</text><text x="140" y="114">Heavy Metal Concert</text><text x="330" y="114" fill="#6b21a8">Stage A</text>
+<text x="30" y="140" font-weight="bold">15.30 – 16.30</text><text x="140" y="140">Comic Book Workshop</text><text x="330" y="140" fill="#6b21a8">Hall B</text>
+<text x="30" y="166" font-weight="bold">18.00 – 20.00</text><text x="140" y="166">Jazz Night</text><text x="330" y="166" fill="#6b21a8">Stage A</text>
+</g>
+</svg></div>
+<p><i>Selin will arrive at the festival at noon and she must leave before 5 p.m. She can’t stand loud music, and she isn’t keen on poems. She is fond of sketching cartoon characters.</i></p>
+<p>Which activity will Selin probably attend?</p>`,
+  c: [`Street Dance Show`, `Heavy Metal Concert`, `Comic Book Workshop`, `Jazz Night`],
+  a: "C",
+  s: `<ul>
+<li>Street Dance Show 10.00’da → Selin öğlen (12.00) geliyor ✗</li>
+<li>Heavy Metal Concert → yüksek sesli müziğe katlanamıyor (<i>can’t stand loud music</i>) ✗</li>
+<li>Comic Book Workshop 15.30–16.30 → saat 5’ten önce bitiyor ve karikatür çizmeyi seviyor ✓</li>
+<li>Jazz Night 18.00’de → saat 5’ten önce ayrılmalı ✗</li>
+</ul>
+<p>Poetry Reading seçeneklerde yok ama şiirden de hoşlanmıyor. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Which of the following sentences has a <b>DIFFERENT</b> meaning from the others?</p>`,
+  c: [
+    `Melis prefers cycling to running.`,
+    `Melis would rather cycle than run.`,
+    `Melis likes cycling more than running.`,
+    `Melis enjoys running more than cycling.`
+  ],
+  a: "D",
+  s: `<p>A, B ve C cümlelerinde Melis’in tercih ettiği şey <b>bisiklet sürmek (cycling)</b>, tercih etmediği <b>koşmak (running)</b>:</p>
+<ul>
+<li>A: <i>prefer <b>cycling</b> to running</i> → ilk söylenen tercih edilir.</li>
+<li>B: <i>would rather <b>cycle</b> than run</i></li>
+<li>C: <i>likes <b>cycling</b> more than running</i></li>
+</ul>
+<p>D’de ise <i>enjoys <b>running</b> more than cycling</i> → koşmayı daha çok seviyor; anlam tam tersidir. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>A class of 8th graders joined a <b>Digital Detox Week</b>. The chart shows the average hours they spent on some activities <b>per day</b> before and after the week.</p>
+<div class="fig"><svg viewBox="0 0 500 215" width="480" role="img" aria-label="Dijital detoks haftası öncesi ve sonrası günlük saatler grafiği">
+<line x1="45" y1="175" x2="490" y2="175" stroke="#334155" stroke-width="1.5"/>
+<line x1="45" y1="35" x2="45" y2="175" stroke="#334155" stroke-width="1.5"/>
+<g stroke="#e2e8f0"><line x1="45" y1="145" x2="490" y2="145"/><line x1="45" y1="115" x2="490" y2="115"/><line x1="45" y1="85" x2="490" y2="85"/><line x1="45" y1="55" x2="490" y2="55"/></g>
+<g font-size="10.5" fill="#475569" text-anchor="end"><text x="40" y="179">0</text><text x="40" y="149">2</text><text x="40" y="119">4</text><text x="40" y="89">6</text><text x="40" y="59">8</text></g>
+<rect x="70" y="115" width="32" height="60" fill="#94a3b8"/><rect x="104" y="160" width="32" height="15" fill="#0ea5e9"/>
+<rect x="180" y="167.5" width="32" height="7.5" fill="#94a3b8"/><rect x="214" y="152.5" width="32" height="22.5" fill="#0ea5e9"/>
+<rect x="290" y="160" width="32" height="15" fill="#94a3b8"/><rect x="324" y="145" width="32" height="30" fill="#0ea5e9"/>
+<rect x="400" y="70" width="32" height="105" fill="#94a3b8"/><rect x="434" y="47.5" width="32" height="127.5" fill="#0ea5e9"/>
+<g font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="86" y="110">4</text><text x="120" y="155">1</text>
+<text x="196" y="162">0.5</text><text x="230" y="147">1.5</text>
+<text x="306" y="155">1</text><text x="340" y="140">2</text>
+<text x="416" y="65">7</text><text x="450" y="43">8.5</text>
+</g>
+<g font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="103" y="192">Social media</text><text x="213" y="192">Reading</text><text x="323" y="192">Sports</text><text x="433" y="192">Sleep</text>
+</g>
+<rect x="150" y="200" width="12" height="10" fill="#94a3b8"/><text x="167" y="209" font-size="10.5">Before</text>
+<rect x="260" y="200" width="12" height="10" fill="#0ea5e9"/><text x="277" y="209" font-size="10.5">After</text>
+<text x="10" y="25" font-size="10.5" font-weight="bold" fill="#475569">hours a day</text>
+</svg></div>
+<p>According to the chart, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `After the detox week, the students spent three hours less a day on social media, and they slept longer.`,
+    `The students spent less time doing sports after the detox week.`,
+    `The time the students spent reading didn’t change after the detox week.`,
+    `Before the detox week, the students spent more time reading than doing sports.`
+  ],
+  a: "A",
+  s: `<ul>
+<li>A: Sosyal medya 4 → 1 saat (<b>3 saat azalmış</b>), uyku 7 → 8,5 saat (artmış) ✓</li>
+<li>B: Spor 1 → 2 saat, <b>artmış</b> ✗</li>
+<li>C: Okuma 0,5 → 1,5 saat, <b>değişmiş</b> ✗</li>
+<li>D: Önce okuma 0,5 saat, spor 1 saat → spora daha çok zaman ayrılmış ✗</li>
+</ul>
+<p>Cevap <b>A</b>.</p>`
 }
 ]
 });
