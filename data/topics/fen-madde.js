@@ -1,944 +1,1544 @@
 LGS.add({
 id: "fen-madde",
-summary: `
-<h3>1. Periyodik Sistem ve Elementlerin Sınıflandırılması</h3>
-<p>Elementlerin fiziksel ve kimyasal özelliklerine göre sınıflandırıldığı tabloya <b>periyodik sistem</b> denir[cite: 12]. Periyodik sistemdeki yatay sıralara <b>periyot (7 tane)</b>, dikey sütunlara ise <b>grup (8 tane A, 10 tane B olmak üzere toplam 18 grup)</b> adı verilir[cite: 12].</p>
+summary: `<div class="key"><b>Kazanımlar</b><ul>
+<li><b>F.8.4.1.1</b> Periyodik sistemde grup ve periyotların nasıl oluşturulduğunu açıklar.</li>
+<li><b>F.8.4.1.2</b> Elementleri periyodik tablo üzerinde metal, yarı metal ve ametal olarak sınıflandırır.</li>
+<li><b>F.8.4.2.1</b> Fiziksel ve kimyasal değişim arasındaki farkları, çeşitli olayları gözlemleyerek açıklar.</li>
+<li><b>F.8.4.3.1</b> Bileşiklerin kimyasal tepkime sonucunda oluştuğunu bilir.</li>
+<li><b>F.8.4.4.1 – F.8.4.4.4</b> Asit ve bazların özelliklerini ve günlük örneklerini bilir; ayraç kullanır; pH değerleriyle çıkarım yapar.</li>
+<li><b>F.8.4.4.5 – F.8.4.4.7</b> Asit ve bazların maddelere etkisini gözlemler; temizlikte güvenlik tedbiri alır; asit yağmurlarına çözüm önerir.</li>
+<li><b>F.8.4.5.1</b> Isınmanın maddenin cinsine, kütlesine ve/veya sıcaklık değişimine bağlı olduğunu deney yaparak keşfeder.</li>
+<li><b>F.8.4.5.2 – F.8.4.5.4</b> Hâl değişimi için gereken ısının cinse ve kütleye bağlılığını keşfeder; ısınma grafiklerini yorumlar; günlük hâl değişimlerini ısı alışverişiyle ilişkilendirir.</li>
+<li><b>F.8.4.6.1 – F.8.4.6.2</b> Türkiye’de kimya endüstrisinin gelişimini ve meslekleri araştırır.</li>
+</ul></div>
 
-<table class="rt">
-<tr><th>Bilim İnsanı</th><th>Periyodik Sisteme Katkısı</th></tr>
-<tr><td><b>1. Johann Döbereiner</b></td><td>İlk çalışmayı yaptı; benzer özellik gösteren elementleri <b>üçlü gruplar (triadlar)</b> hâlinde sıraladı (Li – Na – K).</td></tr>
-<tr><td><b>2. John Newlands</b></td><td>Elementleri artan atom ağırlıklarına göre sıraladı; her 8. elementin 1. elemente benzediğini fark etti (<b>Oktavlar / Müzik Notaları Kuralı</b>).</td></tr>
-<tr><td><b>3. Dmitri Mendeleyev</b><br><i>(ve Lothar Meyer)</i></td><td>Elementleri <b>artan atom kütlelerine (ağırlıklarına)</b> göre sıraladı; henüz keşfedilmemiş elementlerin yerlerini boş bıraktı (Periyodik tablonun babası kabul edilir).</td></tr>
-<tr><td><b>4. Henry Moseley</b></td><td>X-ışınları deneyleriyle elementlerin kütle numarasına göre değil, <b>artan atom numaralarına (proton sayılarına)</b> göre sıralanması gerektiğini buldu[cite: 12].</td></tr>
-<tr><td><b>5. Glenn Seaborg</b></td><td>Tablonun altına <b>iki satır (lantanitler ve aktinitler)</b> ekleyerek periyodik sisteme günümüzdeki son şeklini verdi.</td></tr>
-</table>
-
-<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Periyodik sistemde ilk 18 element ve sınıflandırılması">
-<text x="43" y="16" font-size="9" font-weight="bold" text-anchor="middle">1A</text>
-<text x="69" y="16" font-size="9" font-weight="bold" text-anchor="middle">2A</text>
-<text x="355" y="16" font-size="9" font-weight="bold" text-anchor="middle">3A</text>
-<text x="381" y="16" font-size="9" font-weight="bold" text-anchor="middle">4A</text>
-<text x="407" y="16" font-size="9" font-weight="bold" text-anchor="middle">5A</text>
-<text x="433" y="16" font-size="9" font-weight="bold" text-anchor="middle">6A</text>
-<text x="459" y="16" font-size="9" font-weight="bold" text-anchor="middle">7A</text>
-<text x="485" y="16" font-size="9" font-weight="bold" text-anchor="middle">8A</text>
-<text x="16" y="41" font-size="9" font-weight="bold" text-anchor="middle">1.P</text>
-<rect x="30" y="24" width="26" height="26" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/><text x="43" y="41" font-size="10" font-weight="bold" text-anchor="middle">₁H</text>
-<rect x="472" y="24" width="26" height="26" fill="#c4b5fd" stroke="#6d28d9" stroke-width="2"/><text x="485" y="41" font-size="10" font-weight="bold" text-anchor="middle">₂He</text>
-<text x="16" y="67" font-size="9" font-weight="bold" text-anchor="middle">2.P</text>
-<rect x="30" y="50" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="43" y="67" font-size="10" text-anchor="middle">₃Li</text>
-<rect x="56" y="50" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="69" y="67" font-size="10" text-anchor="middle">₄Be</text>
-<rect x="342" y="50" width="26" height="26" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/><text x="355" y="67" font-size="10" font-weight="bold" text-anchor="middle">₅B</text>
-<rect x="368" y="50" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="381" y="67" font-size="10" text-anchor="middle">₆C</text>
-<rect x="394" y="50" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="407" y="67" font-size="10" text-anchor="middle">₇N</text>
-<rect x="420" y="50" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="433" y="67" font-size="10" text-anchor="middle">₈O</text>
-<rect x="446" y="50" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="459" y="67" font-size="10" text-anchor="middle">₉F</text>
-<rect x="472" y="50" width="26" height="26" fill="#c4b5fd" stroke="#475569"/><text x="485" y="67" font-size="10" text-anchor="middle">₁₀Ne</text>
-<text x="16" y="93" font-size="9" font-weight="bold" text-anchor="middle">3.P</text>
-<rect x="30" y="76" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="43" y="93" font-size="10" text-anchor="middle">₁₁Na</text>
-<rect x="56" y="76" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="69" y="93" font-size="10" text-anchor="middle">₁₂Mg</text>
-<rect x="342" y="76" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="355" y="93" font-size="10" text-anchor="middle">₁₃Al</text>
-<rect x="368" y="76" width="26" height="26" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/><text x="381" y="93" font-size="10" font-weight="bold" text-anchor="middle">₁₄Si</text>
-<rect x="394" y="76" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="407" y="93" font-size="10" text-anchor="middle">₁₅P</text>
-<rect x="420" y="76" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="433" y="93" font-size="10" text-anchor="middle">₁₆S</text>
-<rect x="446" y="76" width="26" height="26" fill="#fca5a5" stroke="#475569"/><text x="459" y="93" font-size="10" text-anchor="middle">₁₇Cl</text>
-<rect x="472" y="76" width="26" height="26" fill="#c4b5fd" stroke="#475569"/><text x="485" y="93" font-size="10" text-anchor="middle">₁₈Ar</text>
-<text x="16" y="119" font-size="9" font-weight="bold" text-anchor="middle">4.P</text>
-<rect x="30" y="102" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="43" y="119" font-size="10" text-anchor="middle">₁₉K</text>
-<rect x="56" y="102" width="26" height="26" fill="#93c5fd" stroke="#475569"/><text x="69" y="119" font-size="10" text-anchor="middle">₂₀Ca</text>
-<rect x="82" y="102" width="260" height="26" fill="#dbeafe" stroke="#475569"/><text x="212" y="119" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">B Grupları (Geçiş Metalleri - 4. Periyotta Başlar!)</text>
-<rect x="30" y="142" width="14" height="12" fill="#93c5fd" stroke="#475569"/><text x="48" y="152" font-size="10" font-weight="bold">Metaller</text>
-<rect x="130" y="142" width="14" height="12" fill="#fde68a" stroke="#475569"/><text x="148" y="152" font-size="10" font-weight="bold">Yarı Metaller (B, Si)</text>
-<rect x="275" y="142" width="14" height="12" fill="#fca5a5" stroke="#475569"/><text x="293" y="152" font-size="10" font-weight="bold">Ametaller (₁H dahil!)</text>
-<rect x="415" y="142" width="14" height="12" fill="#c4b5fd" stroke="#475569"/><text x="433" y="152" font-size="10" font-weight="bold">Soy Gazlar (8A)</text>
-</svg></div>
-
-<div class="note"><b>LGS Tuzağı 1 (Hidrojen ve Helyum İstisnaları – Her Yıl Sorulur!):</b>
-<br>• <b>Hidrojen (₁H) Tuzağı:</b> 1. periyot <b>1A grubunda</b> (metallerin üzerinde) yer almasına rağmen <b>metal DEĞİL, bir AMETALDİR!</b>[cite: 12] Dolayısıyla <i>“1A grubundaki tüm elementler metaldir”</i> veya <i>“Aynı gruptaki tüm elementlerin kimyasal özellikleri benzerdir”</i> ifadeleri Hidrojen yüzünden <b>YANLIŞTIR!</b>[cite: 12]
-<br>• <b>Helyum (₂He) Tuzağı:</b> Son katmanında (değerlik elektron sayısı) <b>2 elektron</b> bulunmasına rağmen 2A grubunda değil, <b>8A grubunda (Soy gazlarda)</b> yer alır! Dolayısıyla <i>“Aynı gruptaki tüm elementlerin son katman elektron sayıları eşittir”</i> ifadesi Helyum yüzünden <b>YANLIŞTIR!</b> (He: 2, Ne: 8, Ar: 8).
-<br>• <b>Bor (₅B) ve Silisyum (₁₄Si) Tuzağı:</b> İlk 18 element içindeki <b>₅B (2. periyot 3A)</b> ve <b>₁₄Si (3. periyot 4A)</b> birer <b>YARI METALDİR</b>[cite: 12]; hemen altındaki <b>₁₃Al (3. periyot 3A)</b> ise <b>METALDİR!</b>[cite: 12]</div>
-
-<table class="rt">
-<tr><th>Özellik</th><th>Metaller</th><th>Yarı Metaller</th><th>Ametaller</th><th>Soy Gazlar (8A)</th></tr>
-<tr><td><b>Fiziksel Hâl ve Görünüm</b></td><td>Yüzeyleri <b>parlaktır</b>; <b>cıva (Hg) hariç</b> tamamı oda sıcaklığında katıdır[cite: 12].</td><td>Parlak veya mat olabilir; tamamı oda sıcaklığında <b>katıdır</b> (Bor, Silisyum)[cite: 12].</td><td>Yüzeyleri <b>mattır</b>; oda sıcaklığında <b>katı</b> (C, S, P, I), <b>sıvı</b> (Br) veya <b>gaz</b> (H, O, N, Cl) olabilir[cite: 12].</td><td>Tamamı oda sıcaklığında tek atomlu <b>gaz</b> hâlindedir (He, Ne, Ar)[cite: 12].</td></tr>
-<tr><td><b>İşlenebilirlik ve İletkenlik</b></td><td>Eğilip bükülebilir, <b>tel ve levha</b> hâline getirilebilir; ısı ve elektriği <b>çok iyi iletir</b>[cite: 12].</td><td>Kırılgan değildir, <b>işlenebilir</b>; elektriği metallerden az, ametallerden çok iletir (<b>yarı iletken</b> → güneş paneli, çip)[cite: 12].</td><td><b>Kırılgandır</b>, tel ve levha hâline <b>getirilemez</b>; ısı ve elektriği <b>iletmez</b> (<i>grafit hariç</i>)[cite: 12].</td><td>Kararlı yapıdadır; elektriği iletmez, tel ve levha olmaz[cite: 12].</td></tr>
-<tr><td><b>Bileşik Oluşturma</b></td><td>Kendi aralarında bileşik yapmaz, <b>alaşım</b> (karışım) oluşturur; ametallerle bileşik yapar (+ yüklü iyon olur).</td><td>Hem metallerle hem ametallerle reaksiyona girebilir.</td><td>Hem metallerle hem de kendi aralarında bileşik oluşturur.</td><td>Katmanları tam dolu olduğu için <b>hiçbir elementle bağ/bileşik yapmaz!</b>[cite: 12]</td></tr>
-</table>
-
-<h3>2. Fiziksel–Kimyasal Değişimler ve Kimyasal Tepkimeler</h3>
-<div class="fig"><svg viewBox="0 0 600 155" width="580" role="img" aria-label="Fiziksel ve kimyasal değişim tanecik modeli ve kütle korunumu grafiği">
-<g font-size="9.5" text-anchor="middle">
-<rect x="6" y="8" width="188" height="140" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="100" y="25" font-size="10.5" font-weight="bold" fill="#1e40af">1. Fiziksel Değişim (Kimlik Korunur)</text>
-<circle cx="35" cy="60" r="8" fill="#2563eb"/><circle cx="51" cy="60" r="8" fill="#2563eb"/>
-<circle cx="38" cy="78" r="8" fill="#2563eb"/><circle cx="54" cy="78" r="8" fill="#2563eb"/>
-<text x="85" y="72" font-size="14" font-weight="bold">→</text>
-<circle cx="118" cy="52" r="8" fill="#2563eb"/><circle cx="134" cy="52" r="8" fill="#2563eb"/>
-<circle cx="145" cy="82" r="8" fill="#2563eb"/><circle cx="161" cy="82" r="8" fill="#2563eb"/>
-<text x="100" y="108" fill="#1e293b">Sadece tanecikler arası mesafe değişir!</text>
-<text x="100" y="122" font-weight="bold" fill="#1e40af">• Hal değişimleri (erime, buharlaşma, kırağı)</text>
-<text x="100" y="136" font-weight="bold" fill="#1e40af">• Çözünme (şekerli/tuzlu su), kırılma, gökkuşağı</text>
-
-<rect x="204" y="8" width="192" height="140" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="300" y="25" font-size="10.5" font-weight="bold" fill="#991b1b">2. Kimyasal Değişim (Bağlar Kırılır)</text>
-<circle cx="228" cy="55" r="7" fill="#dc2626"/><circle cx="242" cy="55" r="7" fill="#dc2626"/>
-<circle cx="235" cy="80" r="9" fill="#16a34a"/>
-<text x="275" y="70" font-size="14" font-weight="bold">→</text>
-<circle cx="315" cy="68" r="7" fill="#dc2626"/><circle cx="331" cy="68" r="9" fill="#16a34a"/><circle cx="347" cy="68" r="7" fill="#dc2626"/>
-<text x="300" y="108" fill="#1e293b">Eski bağlar kopar, <tspan font-weight="bold" fill="#dc2626">yeni bağlar</tspan> oluşur!</text>
-<text x="300" y="122" font-weight="bold" fill="#991b1b">• Yanma, paslanma, çürüme, küflenme</text>
-<text x="300" y="136" font-weight="bold" fill="#991b1b">• Mayalanma, fotosentez, solunum, sindirim</text>
-
-<rect x="406" y="8" width="188" height="140" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="500" y="25" font-size="10.5" font-weight="bold" fill="#166534">3. Tepkimede Kütle – Zaman Grafiği</text>
-<line x1="430" y1="100" x2="570" y2="100" stroke="#334155" stroke-width="1.5"/>
-<line x1="430" y1="35" x2="430" y2="100" stroke="#334155" stroke-width="1.5"/>
-<path d="M430,45 Q475,85 555,100" fill="none" stroke="#dc2626" stroke-width="2"/>
-<path d="M430,55 Q475,80 555,85" fill="none" stroke="#ea580c" stroke-width="2"/>
-<path d="M430,100 Q475,55 555,40" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<text x="562" y="43" font-size="8.5" font-weight="bold" fill="#16a34a">Z (Ürün)</text>
-<text x="562" y="85" font-size="8.5" font-weight="bold" fill="#ea580c">Y (Artan)</text>
-<text x="562" y="97" font-size="8.5" font-weight="bold" fill="#dc2626">X (Biten)</text>
-<text x="500" y="118" font-weight="bold" fill="#166534">Denklem: X + Y → Z</text>
-<text x="500" y="134" font-size="8.5" fill="#1e293b">Harcanan (X + Y) kütlesi = Oluşan Z kütlesi</text>
-</g>
-</svg></div>
-
+<h3>1. Periyodik sistem: grup ve periyot (F.8.4.1.1)</h3>
+<p>Bilinen 118 element, benzer özellikte olanlar alt alta gelecek şekilde <b>periyodik sistem</b>de dizilir. Günümüzdeki periyodik sistemde elementler <b>artan atom numarasına (proton sayısına)</b> göre sıralanmıştır.</p>
 <ul>
-<li><b>Kimyasal Tepkimelerde KORUNAN (Değişmeyen) Özellikler:</b> 1) <b>Toplam kütle</b>[cite: 12], 2) <b>Atomların türü (cinsi)</b>, 3) <b>Atomların sayısı</b>, 4) Toplam proton, nötron ve elektron sayısı. (<i>Not: Kimyasal tepkimede yeni atom oluşmaz, sadece atomlar arası bağlar yeniden düzenlenir!</i>)</li>
-<li><b>Kimyasal Tepkimelerde DEĞİŞEBİLEN Özellikler:</b> Molekül sayısı, toplam hacim, maddelerin fiziksel hâli, renk, koku ve taneciklerin kimyasal yapısı[cite: 12].</li>
+<li><b>Periyot:</b> Yatay sıralardır. <b>7 periyot</b> vardır. 1. periyotta yalnızca 2 element (H, He), 2. ve 3. periyotta 8’er element bulunur.</li>
+<li><b>Grup:</b> Dikey sütunlardır. <b>18 grup</b> vardır. Gruplar 1’den 18’e kadar numaralanır ya da A ve B harfleriyle gösterilir: 1, 2 ve 13-18. gruplar <b>A grupları</b> (1A-8A), 3-12. gruplar <b>B grupları</b>dır (geçiş metalleri).</li>
+<li>Tablonun altındaki iki ayrı sıra <b>lantanitler</b> ve <b>aktinitler</b>dir; tablo çok uzamasın diye aşağıda gösterilirler.</li>
+<li>Atom numarası bir periyotta <b>soldan sağa</b> birer birer artar; bir grupta <b>yukarıdan aşağıya</b> artar.</li>
+<li>Aynı gruptaki elementlerin <b>kimyasal özellikleri benzer</b>dir. Bazı grupların özel adları: 1A alkali metaller (hidrojen hariç), 2A toprak alkali metaller, 7A halojenler, 8A soy gazlar.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Bilim insanı</th><th>Periyodik sisteme katkısı</th></tr>
+<tr><td><b>Döbereiner</b></td><td>Benzer elementleri üçlü gruplara ayırdı (Li – Na – K).</td></tr>
+<tr><td><b>Newlands</b></td><td>Atom kütlesine göre dizdi; her 8. elementin 1.’ye benzediğini fark etti (oktavlar).</td></tr>
+<tr><td><b>Mendeleyev</b> (ve Meyer)</td><td>Atom kütlesine göre dizdi, benzerleri alt alta getirdi; bulunmamış elementlere boş yer bıraktı.</td></tr>
+<tr><td><b>Moseley</b></td><td>Elementlerin <b>atom numarasına</b> göre sıralanması gerektiğini gösterdi. Günümüzdeki sıralama budur.</td></tr>
+<tr><td><b>Seaborg</b></td><td>Lantanit ve aktinitleri tablonun altına iki sıra olarak yerleştirdi.</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Atom kütlesine göre sıralama bazı yerlerde bozulur: Argonun (atom numarası 18) atom kütlesi yaklaşık 39,9, potasyumunki (atom numarası 19) yaklaşık 39,1’dir. Kütleye göre dizilseydi K, Ar’dan önce gelirdi. Bu yüzden sıralama atom numarasına göredir (LGS 2019).</p>
+<p><b>Hafıza ipucu:</b> Atom numarası ardışık olan iki element ya yan yanadır ya da biri periyodun sonunda, diğeri sonraki periyodun başındadır. Her iki durumda da bu iki element <b>farklı gruplardadır</b>; aynı periyotta olmaları ise kesin değildir (LGS 2023).</p>
+
+<h3>2. Metaller, yarı metaller, ametaller ve soy gazlar (F.8.4.1.2)</h3>
+<p>Periyodik sistemde metaller <b>solda ve ortada</b>, ametaller <b>sağda</b> yer alır. Aralarındaki <b>merdiven</b> biçimli sınırın iki yanında yarı metaller bulunur. En sağdaki 18. grup <b>soy gazlar</b>dır. LGS’de en çok ilk 20 element kullanılır:</p>
+<div class="fig"><svg viewBox="0 0 560 182" width="560" role="img" aria-label="İlk 20 element: Li, Be, Na, Mg, Al, K, Ca metal; B ve Si yarı metal; H, C, N, O, F, P, S, Cl ametal; He, Ne, Ar soy gaz" font-size="12" fill="#1e293b" text-anchor="middle"><g stroke="#475569"><rect x="22" y="26" width="29" height="38" fill="#bbf7d0"/><rect x="515" y="26" width="29" height="38" fill="#e9d5ff"/><rect x="22" y="64" width="29" height="38" fill="#bfdbfe"/><rect x="51" y="64" width="29" height="38" fill="#bfdbfe"/><rect x="370" y="64" width="29" height="38" fill="#fde68a"/><rect x="399" y="64" width="29" height="38" fill="#bbf7d0"/><rect x="428" y="64" width="29" height="38" fill="#bbf7d0"/><rect x="457" y="64" width="29" height="38" fill="#bbf7d0"/><rect x="486" y="64" width="29" height="38" fill="#bbf7d0"/><rect x="515" y="64" width="29" height="38" fill="#e9d5ff"/><rect x="22" y="102" width="29" height="38" fill="#bfdbfe"/><rect x="51" y="102" width="29" height="38" fill="#bfdbfe"/><rect x="370" y="102" width="29" height="38" fill="#bfdbfe"/><rect x="399" y="102" width="29" height="38" fill="#fde68a"/><rect x="428" y="102" width="29" height="38" fill="#bbf7d0"/><rect x="457" y="102" width="29" height="38" fill="#bbf7d0"/><rect x="486" y="102" width="29" height="38" fill="#bbf7d0"/><rect x="515" y="102" width="29" height="38" fill="#e9d5ff"/><rect x="22" y="140" width="29" height="38" fill="#bfdbfe"/><rect x="51" y="140" width="29" height="38" fill="#bfdbfe"/></g><g font-size="11" text-anchor="start" fill="#334155"><text x="26" y="39">1</text><text x="519" y="39">2</text><text x="26" y="77">3</text><text x="55" y="77">4</text><text x="374" y="77">5</text><text x="403" y="77">6</text><text x="432" y="77">7</text><text x="461" y="77">8</text><text x="490" y="77">9</text><text x="519" y="77">10</text><text x="26" y="115">11</text><text x="55" y="115">12</text><text x="374" y="115">13</text><text x="403" y="115">14</text><text x="432" y="115">15</text><text x="461" y="115">16</text><text x="490" y="115">17</text><text x="519" y="115">18</text><text x="26" y="153">19</text><text x="55" y="153">20</text></g><g font-size="13" font-weight="bold"><text x="36.5" y="57">H</text><text x="529.5" y="57">He</text><text x="36.5" y="95">Li</text><text x="65.5" y="95">Be</text><text x="384.5" y="95">B</text><text x="413.5" y="95">C</text><text x="442.5" y="95">N</text><text x="471.5" y="95">O</text><text x="500.5" y="95">F</text><text x="529.5" y="95">Ne</text><text x="36.5" y="133">Na</text><text x="65.5" y="133">Mg</text><text x="384.5" y="133">Al</text><text x="413.5" y="133">Si</text><text x="442.5" y="133">P</text><text x="471.5" y="133">S</text><text x="500.5" y="133">Cl</text><text x="529.5" y="133">Ar</text><text x="36.5" y="171">K</text><text x="65.5" y="171">Ca</text></g><g font-size="11" fill="#475569" font-weight="bold"><text x="36.5" y="18">1</text><text x="65.5" y="18">2</text><text x="384.5" y="18">13</text><text x="413.5" y="18">14</text><text x="442.5" y="18">15</text><text x="471.5" y="18">16</text><text x="500.5" y="18">17</text><text x="529.5" y="18">18</text></g><polyline points="370,64 370,102 399,102 399,140" fill="none" stroke="#b91c1c" stroke-width="3" stroke-linejoin="round"/><rect x="86" y="32" width="18" height="16" fill="#bfdbfe" stroke="#475569" stroke-width="1"/><text x="110" y="45" text-anchor="start">Metal</text><rect x="236" y="32" width="18" height="16" fill="#fde68a" stroke="#475569" stroke-width="1"/><text x="260" y="45" text-anchor="start">Yarı metal</text><rect x="86" y="56" width="18" height="16" fill="#bbf7d0" stroke="#475569" stroke-width="1"/><text x="110" y="69" text-anchor="start">Ametal</text><rect x="236" y="56" width="18" height="16" fill="#e9d5ff" stroke="#475569" stroke-width="1"/><text x="260" y="69" text-anchor="start">Soy gaz</text><line x1="86" y1="90" x2="108" y2="90" stroke="#b91c1c" stroke-width="3"/><text x="114" y="94" text-anchor="start" fill="#b91c1c">metal / ametal sınırı (merdiven)</text><text x="86" y="120" text-anchor="start" fill="#334155" font-weight="bold">Hidrojen 1. grupta ama ametaldir.</text></svg></div>
+<div class="tbl"><table>
+<tr><th>Özellik</th><th>Metal</th><th>Yarı metal</th><th>Ametal</th></tr>
+<tr><td>Görünüm</td><td>Parlak</td><td>Parlak ya da mat</td><td>Mat</td></tr>
+<tr><td>Oda sıcaklığında hâl</td><td>Cıva hariç katı</td><td>Katı</td><td>Katı (C, S, P), sıvı (brom) ya da gaz (O₂, N₂, Cl₂)</td></tr>
+<tr><td>Isı ve elektrik iletimi</td><td>İyi iletir</td><td>Metallerden az, ametallerden iyi (yarı iletken)</td><td>İletmez (grafit hariç)</td></tr>
+<tr><td>Şekil verme</td><td>Tel ve levha hâline getirilebilir, dövülebilir</td><td>—</td><td>Kırılgandır (katı olanlar)</td></tr>
+<tr><td>Örnek</td><td>Bakır kablo, alüminyum folyo</td><td>Silisyum: güneş pili, çip</td><td>Azot: gübre; klor: su dezenfeksiyonu</td></tr>
+</table></div>
+<p><b>Soy gazlar (18. grup):</b> He, Ne, Ar… Oda sıcaklığında tek atomlu gazdır, kararlıdır ve normal koşullarda başka elementlerle tepkimeye girmez. Helyum balonlarda, neon reklam lambalarında, argon ampullerde kullanılır.</p>
+<p class="note"><b>Dikkat!</b> Hidrojen 1. grupta, metallerin üstünde durur ama <b>ametaldir</b>. Bu yüzden “1. gruptaki elementlerin hepsi metaldir” ifadesi yanlıştır. Helyum ise 2. gruba değil, 18. gruba (soy gazlar) yerleştirilir. İlk 20 elementte yalnızca <b>bor (B)</b> ve <b>silisyum (Si)</b> yarı metaldir; borun altındaki alüminyum (Al) metaldir.</p>
+<p class="note"><b>Dikkat!</b> LGS’de elementler çoğu zaman <b>desenli ya da renkli bir tabloyla</b> verilir. 2023-2025 sorularında soy gazlar ametallerle aynı desende gösterildi; 2020’de ise soy gazlara ayrı bir desen verildi. Desenin anlamı verilmişse ona, verilmemişse bildiğin elementlerden yola çıkarak çöz (1. ve 2. gruptaki Li, Be, Na, Mg metal; H ve sağ taraf ametal).</p>
+<div class="box"><b>Çözümlü örnek 1 (desenli tablo).</b> Aşağıdaki kesitte elementler üç farklı desenle gösterilmiştir; desenlerin hangi sınıfı gösterdiği verilmemiştir.
+<div class="fig"><svg viewBox="0 0 560 160" width="560" role="img" aria-label="Desenli periyodik tablo kesiti: 1. desen 1, 2. gruplar ve alüminyum; 2. desen bor ve silisyum; 3. desen hidrojen ve sağdaki elementler; üçgen 2. periyot 1. grupta, daire 3. periyot 14. grupta" font-size="12" fill="#1e293b" text-anchor="middle"><defs><pattern id="pd" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#fff"/><circle cx="3" cy="3" r="1.2" fill="#334155"/></pattern><pattern id="pl" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#fff"/><path d="M0,6 L6,0" stroke="#334155" stroke-width="1.2"/></pattern><pattern id="pv" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#fff"/><path d="M2.5,0 L2.5,5" stroke="#334155" stroke-width="1.2"/></pattern></defs><g stroke="#334155"><rect x="40" y="30" width="28" height="30" fill="url(#pd)"/><rect x="516" y="30" width="28" height="30" fill="url(#pd)"/><rect x="40" y="60" width="28" height="30" fill="url(#pl)"/><rect x="68" y="60" width="28" height="30" fill="url(#pl)"/><rect x="376" y="60" width="28" height="30" fill="url(#pv)"/><rect x="404" y="60" width="28" height="30" fill="url(#pd)"/><rect x="432" y="60" width="28" height="30" fill="url(#pd)"/><rect x="460" y="60" width="28" height="30" fill="url(#pd)"/><rect x="488" y="60" width="28" height="30" fill="url(#pd)"/><rect x="516" y="60" width="28" height="30" fill="url(#pd)"/><rect x="40" y="90" width="28" height="30" fill="url(#pl)"/><rect x="68" y="90" width="28" height="30" fill="url(#pl)"/><rect x="376" y="90" width="28" height="30" fill="url(#pl)"/><rect x="404" y="90" width="28" height="30" fill="url(#pv)"/><rect x="432" y="90" width="28" height="30" fill="url(#pd)"/><rect x="460" y="90" width="28" height="30" fill="url(#pd)"/><rect x="488" y="90" width="28" height="30" fill="url(#pd)"/><rect x="516" y="90" width="28" height="30" fill="url(#pd)"/></g><circle cx="418.0" cy="105.0" r="9" fill="#f43f5e" stroke="#fff" stroke-width="2"/><polygon points="54.0,65.0 63.0,82.0 45.0,82.0" fill="#22c55e" stroke="#fff" stroke-width="2"/><text x="54" y="22" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="22" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="22" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="22" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="22" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="22" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="22" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="22" font-size="11" fill="#475569" font-weight="bold">18</text><text x="32" y="49" text-anchor="end" fill="#475569" font-weight="bold">1.</text><text x="32" y="79" text-anchor="end" fill="#475569" font-weight="bold">2.</text><text x="32" y="109" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="134" width="22" height="18" fill="url(#pl)" stroke="#334155" stroke-width="1"/><text x="68" y="148" text-anchor="start">1. desen</text><rect x="140" y="134" width="22" height="18" fill="url(#pv)" stroke="#334155" stroke-width="1"/><text x="168" y="148" text-anchor="start">2. desen</text><rect x="240" y="134" width="22" height="18" fill="url(#pd)" stroke="#334155" stroke-width="1"/><text x="268" y="148" text-anchor="start">3. desen</text><text x="340" y="148" text-anchor="start" fill="#334155">(Desenlerin anlamı verilmemiştir.)</text></svg></div>
+Üçgen ve daire ile gösterilen elementlerin sınıfları nedir?<br>
+<b>Çözüm:</b> 1. ve 2. gruptaki Li, Be, Na, Mg metal olduğundan bunların deseni (1. desen) <b>metal</b>dir; aynı desendeki 3. periyot 13. grup elementi alüminyumdur. Hidrojen ve tablonun sağındaki elementler 3. desendedir → <b>ametal</b>. Geriye kalan 2. desen (bor ve silisyum) <b>yarı metal</b>dir. Üçgen 2. periyot 1. gruptadır (lityum) → <b>metal</b>; daire 3. periyot 14. gruptadır (silisyum) → <b>yarı metal</b>.</div>
+
+<h3>3. Fiziksel ve kimyasal değişim (F.8.4.2.1)</h3>
+<p><b>Fiziksel değişim</b>de maddenin yalnızca şekli, büyüklüğü ya da hâli değişir; <b>kimliği (tanecik yapısı) değişmez</b>. <b>Kimyasal değişim</b>de ise maddenin tanecik yapısı değişir ve özellikleri farklı <b>yeni maddeler</b> oluşur.</p>
+<div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Tanecik modelleri: hâl değişiminde ve çözünmede moleküller aynı kalır; kimyasal tepkimede bağlar kopar ve yeni moleküller oluşur" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="4" y="4" width="178" height="150" rx="10" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/><text x="93" y="24" font-size="13" fill="#1d4ed8" font-weight="bold">Hâl değişimi (fiziksel)</text><line x1="80" y1="68" x2="99.2" y2="68" stroke="#1e293b" stroke-width="2"/><polygon points="104.0,68.0 96.8,71.5 96.8,64.5" fill="#1e293b"/><rect x="190" y="4" width="178" height="150" rx="10" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.6"/><text x="279" y="24" font-size="13" fill="#1d4ed8" font-weight="bold">Çözünme (fiziksel)</text><line x1="266" y1="68" x2="285.2" y2="68" stroke="#1e293b" stroke-width="2"/><polygon points="290.0,68.0 282.8,71.5 282.8,64.5" fill="#1e293b"/><rect x="376" y="4" width="178" height="150" rx="10" fill="#ffffff" stroke="#b91c1c" stroke-width="1.6"/><text x="465" y="24" font-size="13" fill="#b91c1c" font-weight="bold">Kimyasal tepkime</text><line x1="452" y1="68" x2="471.2" y2="68" stroke="#1e293b" stroke-width="2"/><polygon points="476.0,68.0 468.8,71.5 468.8,64.5" fill="#1e293b"/><g stroke="#1e293b" stroke-width="1.2"><circle cx="18" cy="58" r="7" fill="#60a5fa"/><circle cx="30" cy="58" r="7" fill="#60a5fa"/><circle cx="46" cy="58" r="7" fill="#60a5fa"/><circle cx="58" cy="58" r="7" fill="#60a5fa"/><circle cx="18" cy="78" r="7" fill="#60a5fa"/><circle cx="30" cy="78" r="7" fill="#60a5fa"/><circle cx="46" cy="78" r="7" fill="#60a5fa"/><circle cx="58" cy="78" r="7" fill="#60a5fa"/><circle cx="118" cy="46" r="7" fill="#60a5fa"/><circle cx="130" cy="46" r="7" fill="#60a5fa"/><circle cx="156" cy="60" r="7" fill="#60a5fa"/><circle cx="168" cy="60" r="7" fill="#60a5fa"/><circle cx="122" cy="94" r="7" fill="#60a5fa"/><circle cx="134" cy="94" r="7" fill="#60a5fa"/><circle cx="158" cy="108" r="7" fill="#60a5fa"/><circle cx="170" cy="108" r="7" fill="#60a5fa"/><circle cx="212" cy="50" r="9" fill="#fbbf24"/><circle cx="212" cy="72" r="9" fill="#fbbf24"/><circle cx="234" cy="50" r="9" fill="#fbbf24"/><circle cx="234" cy="72" r="9" fill="#fbbf24"/><circle cx="296" cy="50" r="9" fill="#fbbf24"/><circle cx="340" cy="64" r="9" fill="#fbbf24"/><circle cx="308" cy="96" r="9" fill="#fbbf24"/><circle cx="350" cy="104" r="9" fill="#fbbf24"/><circle cx="320" cy="44" r="5" fill="#93c5fd"/><circle cx="294" cy="74" r="5" fill="#93c5fd"/><circle cx="326" cy="76" r="5" fill="#93c5fd"/><circle cx="352" cy="86" r="5" fill="#93c5fd"/><circle cx="332" cy="112" r="5" fill="#93c5fd"/><circle cx="298" cy="116" r="5" fill="#93c5fd"/><circle cx="396" cy="54" r="7" fill="#f87171"/><circle cx="408" cy="54" r="7" fill="#f87171"/><circle cx="396" cy="84" r="7" fill="#4ade80"/><circle cx="408" cy="84" r="7" fill="#4ade80"/><circle cx="426" cy="54" r="7" fill="#f87171"/><circle cx="438" cy="54" r="7" fill="#f87171"/><circle cx="426" cy="84" r="7" fill="#4ade80"/><circle cx="438" cy="84" r="7" fill="#4ade80"/><circle cx="498" cy="50" r="7" fill="#f87171"/><circle cx="510" cy="50" r="7" fill="#4ade80"/><circle cx="528" cy="62" r="7" fill="#f87171"/><circle cx="540" cy="62" r="7" fill="#4ade80"/><circle cx="498" cy="92" r="7" fill="#f87171"/><circle cx="510" cy="92" r="7" fill="#4ade80"/><circle cx="528" cy="104" r="7" fill="#f87171"/><circle cx="540" cy="104" r="7" fill="#4ade80"/></g><text x="93" y="140" font-size="13">Moleküller aynı kalır.</text><text x="279" y="140" font-size="13">Yeni madde oluşmaz.</text><text x="465" y="132" font-size="13">Bağlar kopar,</text><text x="465" y="147" font-size="13">yeni madde oluşur.</text></svg></div>
+<div class="tbl"><table>
+<tr><th></th><th>Fiziksel değişim</th><th>Kimyasal değişim</th></tr>
+<tr><td>Maddenin kimliği</td><td>Değişmez</td><td>Değişir, yeni madde oluşur</td></tr>
+<tr><td>Tanecikler</td><td>Aynı kalır; yalnızca arası ve düzeni değişir</td><td>Atomlar arasındaki bağlar kopar, yeni bağlar kurulur</td></tr>
+<tr><td>Örnekler</td><td>Hâl değişimleri (erime, donma, buharlaşma, süblimleşme…), çözünme, kırılma, kesilme, toz hâline getirme, genleşme</td><td>Yanma, paslanma, çürüme, mayalanma, ekmeğin pişmesi, sütün yoğurda dönüşmesi, şekerin ısıtılınca karamelleşmesi, fotosentez</td></tr>
+</table></div>
+<p><b>Kimyasal değişimin ipuçları:</b> renk değişimi, gaz çıkışı, çökelti oluşması, ısı-ışık açığa çıkması, koku. Örnek: İki renksiz çözelti karışınca sarı katı çökmesi (LGS 2021).</p>
+<p class="note"><b>Dikkat!</b> Bu ipuçları tek başına kesin kanıt değildir. Katı iyot ısıtılınca mor renkli gaza dönüşür; bu bir hâl değişimidir (süblimleşme), yani fizikseldir (LGS 2025). İyot suda çözününce suyun rengi değişir ama yeni madde oluşmaz (LGS 2019). Kaynayan sudaki kabarcıklar da yeni bir gaz değil, su buharıdır. <b>Kesin kanıt</b>, oluşan maddenin başlangıçtaki maddelerden farklı olduğunun belirlenmesidir (LGS 2023).</p>
+<p>Kütle ölçmek iki değişimi ayırt etmez: Kapalı kapta hem fiziksel hem kimyasal değişimde toplam kütle korunur.</p>
+
+<h3>4. Kimyasal tepkimeler ve bileşik oluşumu (F.8.4.3.1)</h3>
+<p>Kimyasal değişimlere <b>kimyasal tepkime</b> denir. Tepkimeye girenler (başlangıç maddeleri) → ürünler (oluşan maddeler) şeklinde gösterilir. <b>Element</b> tek tür atomdan, <b>bileşik</b> ise farklı tür atomların belirli oranda birleşmesinden oluşur. <b>Bileşikler kimyasal tepkimeyle oluşur</b> ve özellikleri, kendisini oluşturan elementlerin özelliklerinden farklıdır: Parlak bir metal olan sodyum ile zehirli, sarı-yeşil klor gazından beyaz yemek tuzu oluşur.</p>
+<div class="tbl"><table>
+<tr><th>Kimyasal tepkimede korunanlar</th><th>Değişebilenler</th></tr>
+<tr><td>Toplam kütle · Atomların türü ve sayısı · Toplam proton, elektron sayısı</td><td>Maddelerin kimliği ve özellikleri (her zaman değişir) · Molekül sayısı · Fiziksel hâl, renk, hacim</td></tr>
+</table></div>
+<p>Örneğin hidrojenin yanmasında 2 H₂ molekülü ile 1 O₂ molekülü (3 molekül) tepkimeye girer, 2 H₂O molekülü oluşur. Molekül sayısı değişmiş ama 4 H ve 2 O atomu korunmuştur.</p>
+<p class="note"><b>Dikkat!</b> Ağzı açık kapta gaz çıkışlı bir tepkimede (sirke + kabartma tozu gibi) terazinin daha az göstermesi “kütle korunmadı” demek değildir; oluşan gaz havaya karışmıştır. Aynı deney ağzı kapalı kapta yapılırsa terazideki değer değişmez.</p>
+<p><b>Atomlardan çıkarım yapma (LGS’nin sevdiği kalıp):</b> Ürünlerdeki her atom girenlerden gelir; tepkimede yeni atom oluşmaz, atom türü değişmez.</p>
+<ul>
+<li>Saf bir madde yalnız oksijenle yanarak CO₂ ve H₂O oluşturuyorsa C ve H atomları kesinlikle o maddeden gelmiştir; madde en az iki element içerdiği için <b>bileşiktir</b> (LGS 2020).</li>
+<li>Isıtılan yeşil bir katıdan kireç suyunu bulandıran CO₂ gazı çıkıyorsa katıda C ve O atomları vardır (LGS 2022).</li>
+<li>İki gaz tamamen tükenip yeni bir saf madde oluşmuşsa bu madde bir bileşiktir; buharlaştırma gibi fiziksel bir işlemle yeniden o gazlara ayrılamaz (LGS 2024).</li>
 </ul>
 
-<h3>3. Asitler, Bazlar ve Madde Etkileşimleri</h3>
-<table class="rt">
-<tr><th>Özellik / Kriter</th><th>Asitler (pH : 0 – 7 arası)</th><th>Bazlar (pH : 7 – 14 arası)</th></tr>
-<tr><td><b>Sulu Çözelti İyonu ve Tadı</b></td><td>Suya <b>H⁺ (Hidrojen)</b> iyonu verir; tatları <b>ekşidir</b>[cite: 12].</td><td>Suya <b>OH⁻ (Hidroksit)</b> iyonu verir; tatları <b>acıdır</b>, ele <b>kayganlık</b> verir[cite: 12].</td></tr>
-<tr><td><b>Belirteç (Ayıraç) Etkisi</b></td><td>• <b>Turnusol kâğıdını:</b> Maviden → <b>Kırmızıya</b> çevirir (Anne <b>K</b>ızartır)[cite: 12].<br>• <b>Metil oranj damlatılırsa:</b> <b>Kırmızı</b> renk alır.<br>• <b>Fenolftalein damlatılırsa:</b> <b>Renksiz</b> kalır.<br>• <b>Kırmızı lahana suyunu:</b> Pembe / Kırmızıya çevirir[cite: 12].</td><td>• <b>Turnusol kâğıdını:</b> Kırmızıdan → <b>Maviye / Mora</b> çevirir (Baba <b>M</b>orartır)[cite: 12].<br>• <b>Metil oranj damlatılırsa:</b> <b>Sarı</b> renk alır.<br>• <b>Fenolftalein damlatılırsa:</b> <b>Pembe / Kırmızı</b> renk alır.<br>• <b>Kırmızı lahana suyunu:</b> Mavi / Yeşile / Sarıya çevirir[cite: 12].</td></tr>
-<tr><td><b>Tahrip Ettiği Yüzeyler ve Saklama Kapları (Çok Sorulur!)</b></td><td>• <b>Metalleri</b> (Zn, Mg, Fe vb.) aşındırır ve <b>H₂ (Hidrojen) gazı</b> çıkarır (Bu yüzden asitler metal kapta saklanmaz, <b>cam veya plastik kapta</b> saklanır!)[cite: 12].<br>• <b>Mermeri</b> ve kireç taşını aşındırır (Limonun mermeri matlaştırması)[cite: 12].</td><td>• <b>Cam, kristal ve porselen</b> eşyaları zamanla aşındırır ve matlaştırır (Bulaşık makinesi deterjanının bardakları çizmesi; kuvvetli bazlar cam kapta değil, <b>plastik kapta</b> saklanır!).</td></tr>
-<tr><td><b>Sanayideki Sistematik Adlar ve Örnekler</b></td><td>• <b>HCl:</b> Hidroklorik asit (<b>Tuz ruhu</b>)<br>• <b>H₂SO₄:</b> Sülfürik asit (<b>Zaç yağı</b>)<br>• <b>HNO₃:</b> Nitrik asit (<b>Kezzap</b>)<br>• <i>Limon, elma (malik), çilek (folik), üzüm, sirke (asetik), yoğurt (laktik), gazoz, kahve, domates, süt (pH ≈ 6,5)</i>[cite: 12]</td><td>• <b>NaOH:</b> Sodyum hidroksit (<b>Sud kostik</b>)<br>• <b>KOH:</b> Potasyum hidroksit (<b>Potas kostik</b>)<br>• <b>Ca(OH)₂:</b> Kalsiyum hidroksit (<b>Sönmüş kireç</b>)<br>• <b>NH₃:</b> <b>Amonyak (Susuz baz – Formülünde OH görünmez ama BAZDIR!)</b><br>• <i>Sabun, deterjan, çamaşır suyu, diş macunu, kabartma tozu, kan, mide ilacı</i>[cite: 12]</td></tr>
-</table>
 
+<h3>5. Asitler ve bazlar (F.8.4.4.1 – F.8.4.4.2)</h3>
+<div class="tbl"><table>
+<tr><th>Özellik</th><th>Asitler</th><th>Bazlar</th></tr>
+<tr><td>Suda oluşturduğu iyon</td><td>H⁺ (hidrojen iyonu)</td><td>OH⁻ (hidroksit iyonu)</td></tr>
+<tr><td>pH</td><td>7’den küçük</td><td>7’den büyük</td></tr>
+<tr><td>Tat ve his</td><td>Ekşi</td><td>Acı; ele kayganlık hissi verir</td></tr>
+<tr><td>Turnusol kâğıdı</td><td>Mavi turnusolü <b>kırmızı</b> yapar</td><td>Kırmızı turnusolü <b>mavi</b> yapar</td></tr>
+<tr><td>Elektrik iletimi</td><td colspan="2">Sulu çözeltileri iyon içerdiği için elektriği iletir (saf su ve şekerli su iletmez).</td></tr>
+<tr><td>Günlük örnekler</td><td>Limon (sitrik asit), sirke (asetik asit), elma, yoğurt, gazlı içecekler, midedeki hidroklorik asit, akü asidi</td><td>Sabun, deterjan, çamaşır suyu, diş macunu, kabartma tozu, mide ilacı (antiasit), kireç suyu, amonyak</td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Formül</th><th>Adı</th><th>Yaygın adı</th><th>Sınıfı</th></tr>
+<tr><td>HCl</td><td>Hidroklorik asit</td><td>Tuz ruhu</td><td>Asit</td></tr>
+<tr><td>H₂SO₄</td><td>Sülfürik asit</td><td>Zaç yağı</td><td>Asit</td></tr>
+<tr><td>HNO₃</td><td>Nitrik asit</td><td>Kezzap</td><td>Asit</td></tr>
+<tr><td>NaOH</td><td>Sodyum hidroksit</td><td>Sud kostik</td><td>Baz</td></tr>
+<tr><td>KOH</td><td>Potasyum hidroksit</td><td>Potas kostik</td><td>Baz</td></tr>
+<tr><td>Ca(OH)₂</td><td>Kalsiyum hidroksit</td><td>Sönmüş kireç</td><td>Baz</td></tr>
+<tr><td>NH₃</td><td>Amonyak</td><td>Amonyak</td><td>Baz</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Formülünde H olan her madde asit değildir: <b>amonyak (NH₃)</b> formülünde OH görünmese de suda OH⁻ iyonu oluşturan bir <b>baz</b>dır. Laboratuvarda maddelerin tadına bakılmaz, elle dokunulmaz; asit-baz ayrımı ayraçla yapılır.</p>
+
+<h3>6. Ayraçlar, pH ve nötrleşme (F.8.4.4.3 – F.8.4.4.4)</h3>
+<p><b>pH cetveli</b> 0’dan 14’e kadardır. pH = 7 <b>nötr</b>dür (saf su). pH 7’den ne kadar küçükse asitlik, ne kadar büyükse bazlık o kadar fazladır.</p>
+<div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="pH cetveli 0-14: 7'den küçük asit, 7 nötr, 7'den büyük baz; örnek maddeler mide özsuyundan sud kostiğe" font-size="12" fill="#1e293b" text-anchor="middle"><g font-weight="bold"><rect x="25" y="50" width="34" height="30" fill="#dc2626"/><text x="42" y="70" fill="#fff">0</text><rect x="59" y="50" width="34" height="30" fill="#ea580c"/><text x="76" y="70" fill="#fff">1</text><rect x="93" y="50" width="34" height="30" fill="#f97316"/><text x="110" y="70" fill="#fff">2</text><rect x="127" y="50" width="34" height="30" fill="#f59e0b"/><text x="144" y="70" fill="#fff">3</text><rect x="161" y="50" width="34" height="30" fill="#eab308"/><text x="178" y="70" fill="#fff">4</text><rect x="195" y="50" width="34" height="30" fill="#facc15"/><text x="212" y="70">5</text><rect x="229" y="50" width="34" height="30" fill="#a3e635"/><text x="246" y="70">6</text><rect x="263" y="50" width="34" height="30" fill="#22c55e"/><text x="280" y="70" fill="#fff">7</text><rect x="297" y="50" width="34" height="30" fill="#14b8a6"/><text x="314" y="70" fill="#fff">8</text><rect x="331" y="50" width="34" height="30" fill="#06b6d4"/><text x="348" y="70" fill="#fff">9</text><rect x="365" y="50" width="34" height="30" fill="#0ea5e9"/><text x="382" y="70" fill="#fff">10</text><rect x="399" y="50" width="34" height="30" fill="#3b82f6"/><text x="416" y="70" fill="#fff">11</text><rect x="433" y="50" width="34" height="30" fill="#6366f1"/><text x="450" y="70" fill="#fff">12</text><rect x="467" y="50" width="34" height="30" fill="#7c3aed"/><text x="484" y="70" fill="#fff">13</text><rect x="501" y="50" width="34" height="30" fill="#6d28d9"/><text x="518" y="70" fill="#fff">14</text></g><text x="25" y="30" font-size="13" text-anchor="start" fill="#b91c1c" font-weight="bold">← asitlik artar</text><text x="280" y="30" font-size="13" fill="#15803d" font-weight="bold">nötr</text><text x="540" y="30" font-size="13" text-anchor="end" fill="#4338ca" font-weight="bold">bazlık artar →</text><text x="144" y="100" fill="#b91c1c" font-weight="bold">Asit örnekleri</text><text x="144" y="118" font-size="11.5">mide özsuyu (1-2), limon (2),</text><text x="144" y="134" font-size="11.5">sirke (3), domates (4), süt (6,5)</text><text x="280" y="100" fill="#15803d" font-weight="bold">Nötr</text><text x="280" y="118" font-size="11.5">saf su (7)</text><text x="416" y="100" fill="#4338ca" font-weight="bold">Baz örnekleri</text><text x="416" y="118" font-size="11.5">kan (7,4), kabartma tozu (8),</text><text x="416" y="134" font-size="11.5">sabunlu su (10), amonyak (11),</text><text x="416" y="150" font-size="11.5">çamaşır suyu (12), sud kostik (14)</text></svg></div>
+<p><b>Ayraç (belirteç):</b> Asidik ve bazik ortamda farklı renk alan maddedir. Hazır ayraçların yanında kırmızı lahana suyu, siyah üzüm suyu, zerdeçal ve çay gibi doğal ayraçlar da kullanılabilir.</p>
+<div class="tbl"><table>
+<tr><th>Ayraç</th><th>Asitte</th><th>Bazda</th></tr>
+<tr><td>Turnusol kâğıdı</td><td>Mavi turnusol → kırmızı</td><td>Kırmızı turnusol → mavi</td></tr>
+<tr><td>Fenolftalein</td><td>Renksiz</td><td>Pembe-kırmızı</td></tr>
+<tr><td>Metil oranj</td><td>Kırmızı</td><td>Sarı</td></tr>
+<tr><td>Kırmızı lahana suyu (nötrde mor)</td><td>Pembe-kırmızı</td><td>Mavi-yeşil-sarı</td></tr>
+<tr><td>Kongo kırmızısı</td><td>Mavi</td><td>Kırmızı</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> LGS ayraçların renklerini genellikle soruda tablo ya da metinle verir (kongo kırmızısı 2022, timol mavisi 2025, çay 2026). Ezbere değil, verilen bilgiye göre oku. Ayraç rengi bir çözeltinin asit mi baz mı olduğunu söyler; <b>aynı türden iki çözeltinin</b> (iki asit ya da iki baz) pH’larını karşılaştırmaya yetmez. Kesin olan yalnızca “asidin pH’ı bazınkinden küçüktür” bilgisidir (LGS 2023, 2025).</p>
+<p><b>Nötrleşme:</b> Asit + Baz → Tuz + Su. Asitli çözeltiye baz eklendikçe pH <b>artarak</b> 7’ye yaklaşır; bazik çözeltiye asit eklendikçe pH <b>azalarak</b> 7’ye yaklaşır. Günlük örnekler: mide yanmasında bazik mide ilacı içmek, karınca ısırığında karbonatlı su sürmek, asitleşmiş toprağa kireç atmak.</p>
+<div class="box"><b>Çözümlü örnek 2.</b> Bir ayraç asitlerde kırmızı, bazlarda sarı renk alıyor. K, L ve M çözeltilerine damlatılınca K kırmızı, L ve M sarı oluyor. Hangisi kesinlikle doğrudur?<br>
+I. K’nin pH değeri L’ninkinden küçüktür. II. L’nin pH değeri M’ninkinden büyüktür. III. M’nin pH değeri 7’den büyüktür.<br>
+<b>Çözüm:</b> K asit (pH &lt; 7), L ve M baz (pH &gt; 7). I ve III kesindir. L ile M ikisi de baz olduğu için hangisinin pH’ının büyük olduğu bilinemez; II kesin değildir. <b>Cevap: I ve III.</b></div>
+
+<h3>7. Asit ve bazların maddelere etkisi, güvenli kullanım ve asit yağmurları (F.8.4.4.5 – F.8.4.4.7)</h3>
+<div class="tbl"><table>
+<tr><th>Asitler</th><th>Bazlar</th></tr>
+<tr><td>Çinko, magnezyum, demir gibi <b>metalleri aşındırır</b>, hidrojen gazı oluşur → asitler metal kaplarda saklanmaz, <b>cam veya plastik</b> kaplarda saklanır.<br><b>Mermeri ve kireç taşını</b> aşındırır, karbondioksit gazı çıkar → mermer tezgâha limon, sirke dökülmemelidir.</td><td><b>Yağları çözer</b>; bu yüzden sabun ve deterjanlar temizlikte kullanılır.<br>Deriyi tahriş eder; kuvvetli bazlar <b>camı zamanla matlaştırır</b> ve alüminyum, çinko gibi bazı metalleri aşındırabilir → genellikle <b>plastik</b> kaplarda saklanır.</td></tr>
+</table></div>
+<p><b>Temizlikte güvenlik:</b> Etiketteki uyarılar okunur; ürünler birbirine <b>karıştırılmaz</b> (çamaşır suyu ile tuz ruhu karışınca zehirli klor gazı çıkar). Eldiven kullanılır, ortam havalandırılır, ürünler kendi kabında ve çocukların ulaşamayacağı yerde saklanır.</p>
+<div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Asit yağmurunun oluşumu: santral, fabrika ve taşıtlardan çıkan kükürt dioksit ve azot dioksit bulutlarda asit oluşturur; yağmur ağaçlara, göllere ve mermer eserlere zarar verir" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="0" y="0" width="560" height="210" fill="#f0f9ff"/><rect x="0" y="170" width="560" height="40" fill="#d9f99d"/><rect x="30" y="110" width="70" height="60" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/><rect x="70" y="70" width="14" height="40" fill="#64748b" stroke="#475569" stroke-width="1.5"/><circle cx="80" cy="58" r="9" fill="#9ca3af" opacity="0.8"/><circle cx="92" cy="44" r="12" fill="#9ca3af" opacity="0.8"/><circle cx="108" cy="30" r="14" fill="#9ca3af" opacity="0.8"/><text x="65" y="190" font-weight="bold">Santral, fabrika</text><rect x="140" y="150" width="56" height="18" rx="5" fill="#ef4444" stroke="#991b1b" stroke-width="1.2"/><circle cx="152" cy="170" r="6" fill="#111827" stroke="#1e293b" stroke-width="1.2"/><circle cx="186" cy="170" r="6" fill="#111827" stroke="#1e293b" stroke-width="1.2"/><circle cx="130" cy="150" r="7" fill="#9ca3af" opacity="0.8"/><text x="168" y="190" font-weight="bold">Taşıtlar</text><line x1="120" y1="40" x2="245.2" y2="40" stroke="#475569" stroke-width="2"/><polygon points="250.0,40.0 242.8,43.5 242.8,36.5" fill="#475569"/><text x="185" y="32" font-size="13" fill="#7f1d1d" font-weight="bold">SO₂, NO₂</text><circle cx="290" cy="44" r="22" fill="#cbd5e1"/><circle cx="318" cy="34" r="26" fill="#cbd5e1"/><circle cx="348" cy="44" r="22" fill="#cbd5e1"/><circle cx="318" cy="52" r="20" fill="#cbd5e1"/><text x="318" y="92">su buharı + gazlar</text><text x="318" y="108" fill="#b91c1c" font-weight="bold">→ sülfürik ve nitrik asit</text><line x1="290" y1="118" x2="284" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="300" y1="118" x2="294" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="310" y1="118" x2="304" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="320" y1="118" x2="314" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="330" y1="118" x2="324" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="340" y1="118" x2="334" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="350" y1="118" x2="344" y2="140" stroke="#2563eb" stroke-width="2"/><text x="318" y="158" font-size="13" fill="#1d4ed8" font-weight="bold">Asit yağmuru</text><polygon points="415,170 430,120 445,170" fill="#15803d"/><rect x="478" y="120" width="46" height="50" fill="#f8fafc" stroke="#64748b" stroke-width="1.2"/><rect x="483" y="110" width="36" height="10" fill="#e2e8f0" stroke="#64748b" stroke-width="1"/><text x="430" y="190" font-weight="bold">Ağaçlar</text><text x="502" y="190" font-weight="bold">Mermer eser</text><ellipse cx="360" cy="182" rx="26" ry="7" fill="#60a5fa"/><text x="360" y="204" font-weight="bold">Göller</text><line x1="370" y1="140" x2="400.2" y2="140" stroke="#475569" stroke-width="2"/><polygon points="405.0,140.0 397.8,143.5 397.8,136.5" fill="#475569"/></svg></div>
+<p><b>Asit yağmurları:</b> Kömür, petrol gibi fosil yakıtlar santrallerde, fabrikalarda ve taşıtlarda yakılınca havaya <b>kükürt dioksit (SO₂)</b> ve <b>azot oksitler (NO₂ gibi)</b> karışır. Bu gazlar bulutlardaki su ile tepkimeye girerek sülfürik asit ve nitrik asit oluşturur. Normal yağmur havadaki karbondioksit nedeniyle hafif asidiktir (pH yaklaşık 5,6); asit yağmurlarının pH’ı bundan daha düşüktür.</p>
 <ul>
-<li><b>Elektrik İletkenliği:</b> Hem asitlerin hem de bazların sulu çözeltileri iyon içerdiği için <b>elektrik akımını İLETİR!</b> (Saf su ve şekerli su iletmez).</li>
-<li><b>Asit Yağmurlarına Neden Olan 3 Gaz:</b> Fosil yakıtların (kömür, petrol) yanmasıyla havaya karışan <b>SO₂ (Kükürt dioksit)</b>, <b>NO₂ (Azot dioksit)</b> ve <b>CO₂ (Karbondioksit)</b> gazları bulutlardaki su buharıyla tepkimeye girerek sülfürik asit ($H_2SO_4$), nitrik asit ($HNO_3$) ve karbonik asit ($H_2CO_3$) oluşturur[cite: 12].</li>
+<li><b>Zararları:</b> Ağaçların yapraklarına zarar verir, toprağı ve gölleri asitleştirir (balıklar ölebilir), mermer ve kireç taşından yapılmış tarihi eserleri aşındırır, metal yapıları bozar.</li>
+<li><b>Önlemler:</b> Bacalara filtre takmak, kükürt oranı düşük yakıtlar ve doğal gaz kullanmak, güneş-rüzgâr gibi yenilenebilir enerjiye yönelmek, toplu taşımayı yaygınlaştırmak, enerji tasarrufu yapmak.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Deney tasarımı sorularında karşılaştırma için <b>tek bir değişken</b> farklı olmalıdır: Asit yağmurunun bitkiye etkisi araştırılıyorsa özdeş bitkilerden biri asitli suyla, diğeri saf suyla sulanır (LGS 2018). Kartta verilen bilgiden fazlasını genelleme: “Mermeri aşındırır” bilgisi “tüm yüzeyleri aşındırır” anlamına gelmez (LGS 2021).</p>
+
+<h3>8. Isı, sıcaklık ve ısınma (F.8.4.5.1)</h3>
+<div class="tbl"><table>
+<tr><th>Isı</th><th>Sıcaklık</th></tr>
+<tr><td>Sıcaklık farkı nedeniyle aktarılan <b>enerji</b>dir. Birimi joule (J) ya da kaloridir.</td><td>Taneciklerin <b>ortalama hareket enerjisinin</b> göstergesidir. Termometreyle ölçülür, birimi °C’tur.</td></tr>
+</table></div>
+<p>Isı her zaman <b>sıcaklığı yüksek olandan düşük olana</b> akar; sıcaklıklar eşitlenince akış durur (<b>ısıl denge</b>). Yalıtılmış bir ortamda sıcak maddenin verdiği ısı soğuk maddenin aldığı ısıya eşittir; son sıcaklık iki ilk sıcaklığın arasında bir değerdir.</p>
+<p><b>Bir maddenin aldığı ya da verdiği ısı üç şeye bağlıdır:</b></p>
+<ul>
+<li><b>Kütle:</b> Aynı madde, aynı sıcaklık değişimi için kütle iki katına çıkarsa gereken ısı da iki katına çıkar.</li>
+<li><b>Sıcaklık değişimi:</b> Sıcaklık ne kadar çok değişirse o kadar çok ısı alınır ya da verilir.</li>
+<li><b>Maddenin cinsi (öz ısı):</b> 1 g maddenin sıcaklığını 1 °C artırmak için gereken ısıya <b>öz ısı</b> denir. Öz ısı maddeler için <b>ayırt edici</b>dir, madde miktarına bağlı değildir. Öz ısısı büyük madde <b>geç ısınır, geç soğur</b>.</li>
+</ul>
+<p><b>Hafıza ipucu:</b> Bu ilişki kısaca Q = m · c · ΔT diye yazılır (Q: ısı, m: kütle, c: öz ısı, ΔT: sıcaklık değişimi). LGS’de hesap istenmez; “hangisi artarsa ısı artar” diye yorum yapmak için kullanılır. Özdeş ısıtıcılar eşit sürede eşit ısı verir; bu yüzden <b>ısıtma süresi ısı miktarını gösterir</b>.</p>
+<p class="note"><b>Dikkat!</b> Isı akışının yönünü kütle, hacim ya da öz ısı değil, yalnızca <b>sıcaklık farkı</b> belirler. Sıcaklıkları eşit iki su karıştırılırsa kütleleri farklı olsa da ısı akışı olmaz. İki suyun aldığı ısılar eşitse kütleleri de sıcaklık artışları da eşit olmak zorunda değildir: Kütlesi büyük olan daha az ısınır (LGS 2025).</p>
+<p>Suyun öz ısısı (yaklaşık 4,18 J/g·°C) toprağınkinden (yaklaşık 0,8) çok büyüktür: Kıyılarda gece-gündüz sıcaklık farkı azdır, sıcak su torbalarında su kullanılır.</p>
+<p><b>Deneylerde değişkenler:</b></p>
+<div class="tbl"><table>
+<tr><th>Değişken</th><th>Anlamı</th><th>Örnek: “Isınma kütleye bağlı mı?”</th></tr>
+<tr><td>Bağımsız</td><td>Deneyi yapanın bilerek değiştirdiği</td><td>Suyun kütlesi (100 g – 200 g)</td></tr>
+<tr><td>Bağımlı</td><td>Ölçülen, sonuç olarak değişen</td><td>Sıcaklık değişimi</td></tr>
+<tr><td>Kontrol (sabit)</td><td>Sonucu etkilememesi için aynı tutulan</td><td>Maddenin cinsi, ilk sıcaklık, ısıtıcı ve ısıtma süresi</td></tr>
+</table></div>
+<p>Bir etkenin etkisini görmek için iki düzenek arasında <b>yalnızca o etken</b> farklı olmalıdır. Hem kütle hem ısıtıcı sayısı farklıysa hiçbirinin etkisi ayrı ayrı belirlenemez (LGS 2024). Araştırılan değişken (örneğin kütle) sabit tutulamaz (LGS 2019).</p>
+
+<h3>9. Hâl değişimi ve ısınma grafikleri (F.8.4.5.2 – F.8.4.5.3)</h3>
+<div class="fig"><svg viewBox="0 0 560 208" width="560" role="img" aria-label="Hâl değişimleri: erime, buharlaşma ve süblimleşme ısı alarak; donma, yoğuşma ve kırağılaşma ısı vererek gerçekleşir" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="44" y="152" width="92" height="36" rx="18" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.8"/><text x="90" y="175" font-size="14" fill="#1e3a8a" font-weight="bold">KATI</text><rect x="424" y="152" width="92" height="36" rx="18" fill="#bae6fd" stroke="#1e3a8a" stroke-width="1.8"/><text x="470" y="175" font-size="14" fill="#1e3a8a" font-weight="bold">SIVI</text><rect x="234" y="22" width="92" height="36" rx="18" fill="#e0e7ff" stroke="#1e3a8a" stroke-width="1.8"/><text x="280" y="45" font-size="14" fill="#1e3a8a" font-weight="bold">GAZ</text><line x1="140" y1="162" x2="415.2" y2="162" stroke="#dc2626" stroke-width="2.4"/><polygon points="420.0,162.0 412.8,165.5 412.8,158.5" fill="#dc2626"/><text x="280" y="154" font-size="12.5" fill="#dc2626" font-weight="bold">Erime (ısı alır)</text><line x1="420" y1="182" x2="144.8" y2="182" stroke="#2563eb" stroke-width="2.4"/><polygon points="140.0,182.0 147.2,178.5 147.2,185.5" fill="#2563eb"/><text x="280" y="200" font-size="12.5" fill="#2563eb" font-weight="bold">Donma (ısı verir)</text><line x1="440" y1="150" x2="321.9" y2="62.8" stroke="#dc2626" stroke-width="2.4"/><polygon points="318.0,60.0 325.9,61.5 321.7,67.1" fill="#dc2626"/><text x="400" y="96" font-size="12.5" text-anchor="start" fill="#dc2626" font-weight="bold">Buharlaşma</text><text x="400" y="111" text-anchor="start" fill="#dc2626">(ısı alır)</text><line x1="300" y1="64" x2="414.1" y2="145.2" stroke="#2563eb" stroke-width="2.4"/><polygon points="418.0,148.0 410.1,146.7 414.1,141.0" fill="#2563eb"/><text x="372" y="124" font-size="12.5" text-anchor="end" fill="#2563eb" font-weight="bold">Yoğuşma</text><text x="372" y="139" text-anchor="end" fill="#2563eb">(ısı verir)</text><line x1="110" y1="150" x2="234.2" y2="56.9" stroke="#dc2626" stroke-width="2.4"/><polygon points="238.0,54.0 234.3,61.1 230.1,55.5" fill="#dc2626"/><text x="150" y="76" font-size="12.5" text-anchor="end" fill="#dc2626" font-weight="bold">Süblimleşme</text><text x="150" y="91" text-anchor="end" fill="#dc2626">(ısı alır)</text><line x1="256" y1="66" x2="136" y2="145.4" stroke="#2563eb" stroke-width="2.4"/><polygon points="132.0,148.0 136.1,141.1 139.9,146.9" fill="#2563eb"/><text x="184" y="124" font-size="12.5" text-anchor="start" fill="#2563eb" font-weight="bold">Kırağılaşma</text><text x="184" y="139" text-anchor="start" fill="#2563eb">(ısı verir)</text></svg></div>
+<ul>
+<li>Saf bir madde hâl değiştirirken <b>sıcaklığı sabit kalır</b>; alınan ısı tanecikler arasındaki çekimi yenmek için kullanılır. Grafikte bu bölüm <b>yatay</b>dır ve iki hâl bir arada bulunur.</li>
+<li>Bir maddenin <b>erime sıcaklığı donma sıcaklığına</b>, <b>kaynama sıcaklığı yoğuşma sıcaklığına</b> eşittir. Bu sıcaklıklar ayırt edicidir; kütleye bağlı değildir.</li>
+<li><b>Hâl değişimi için gereken ısı</b> maddenin <b>cinsine</b> ve <b>kütlesine</b> bağlıdır. Kütle iki katına çıkarsa erimek için gereken ısı da iki katına çıkar. 1 g maddenin erimesi için gereken ısıya erime ısısı denir; maddeden maddeye değişir.</li>
+</ul>
+<div class="fig"><svg viewBox="0 0 560 282" width="560" role="img" aria-label="Saf bir katının ısınma grafiği: katı ısınır, erime sırasında sıcaklık sabit, sıvı ısınır, kaynama sırasında sıcaklık sabit, gaz ısınır" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="60" y1="220" x2="535.2" y2="220" stroke="#1e293b" stroke-width="2"/><polygon points="540.0,220.0 532.8,223.5 532.8,216.5" fill="#1e293b"/><line x1="60" y1="220" x2="60" y2="28.8" stroke="#1e293b" stroke-width="2"/><polygon points="60.0,24.0 63.5,31.2 56.5,31.2" fill="#1e293b"/><text x="540" y="256" text-anchor="end" font-weight="bold">Zaman</text><text x="56" y="16" text-anchor="start" font-weight="bold">Sıcaklık</text><line x1="60" y1="150" x2="500" y2="150" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><line x1="60" y1="70" x2="500" y2="70" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="54" y="146" font-size="11" text-anchor="end">Erime</text><text x="54" y="160" font-size="11" text-anchor="end">noktası</text><text x="54" y="66" font-size="11" text-anchor="end">Kaynama</text><text x="54" y="80" font-size="11" text-anchor="end">noktası</text><polyline points="60,200 130,150 230,150 310,70 440,70 500,30" fill="none" stroke="#dc2626" stroke-width="3" stroke-linejoin="round"/><text x="112" y="202" text-anchor="start" font-weight="bold">katı ısınır</text><text x="180" y="142" font-weight="bold">erime: katı + sıvı</text><text x="300" y="132" text-anchor="start" font-weight="bold">sıvı ısınır</text><text x="375" y="62" font-weight="bold">kaynama: sıvı + gaz</text><text x="505" y="54" font-weight="bold">gaz</text><text x="180" y="172" font-size="11.5" fill="#b91c1c">sıcaklık sabit</text><text x="375" y="92" font-size="11.5" fill="#b91c1c">sıcaklık sabit</text><text x="300" y="274" fill="#334155" font-weight="bold">Madde hâl değiştirirken de ısı almaya devam eder.</text></svg></div>
+<p class="note"><b>Dikkat!</b> Grafikte sıcaklığın sabit kaldığı bölümde ısıtıcı çalışmaya devam ediyorsa madde <b>ısı almaya devam eder</b>. “Sıcaklık sabit, öyleyse ısı alışverişi yok” demek en sık yapılan hatadır.</p>
+<p><b>Kütle değişirse grafik nasıl değişir?</b> Aynı ısıtıcıyla kütle artırılırsa madde hâl değiştirme sıcaklığına <b>daha geç</b> ulaşır, hâl değişimi <b>daha uzun</b> sürer; ama hâl değiştirme sıcaklığı <b>aynı kalır</b> (LGS 2019, 2024).</p>
+<div class="fig"><svg viewBox="0 0 560 232" width="560" role="img" aria-label="Aynı maddenin m ve 2m kütleli örnekleri: 2m kütleli örnek erime sıcaklığına iki kat sürede ulaşıyor ve iki kat sürede eriyor; erime sıcaklığı ikisinde de 60 °C" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="64" y1="190" x2="535.2" y2="190" stroke="#1e293b" stroke-width="2"/><polygon points="540.0,190.0 532.8,193.5 532.8,186.5" fill="#1e293b"/><line x1="64" y1="190" x2="64" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="64.0,26.0 67.5,33.2 60.5,33.2" fill="#1e293b"/><text x="540" y="226" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="60" y="18" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="64" y1="58" x2="520" y2="58" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="58" y="62" text-anchor="end">60</text><text x="58" y="150" text-anchor="end">20</text><polyline points="64,146 152,58 240,58 284,22.8" fill="none" stroke="#dc2626" stroke-width="2.8" stroke-linejoin="round"/><polyline points="64,146 240,58 416,58 482,31.6" fill="none" stroke="#2563eb" stroke-width="2.8" stroke-linejoin="round"/><line x1="152" y1="190" x2="152" y2="58" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="152" y="208">4</text><line x1="240" y1="190" x2="240" y2="58" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="240" y="208">8</text><line x1="416" y1="190" x2="416" y2="58" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="416" y="208">16</text><text x="290" y="26.8" font-size="13" text-anchor="start" fill="#b91c1c" font-weight="bold">m</text><text x="488" y="35.6" font-size="13" text-anchor="start" fill="#1d4ed8" font-weight="bold">2m</text><text x="328" y="80" fill="#15803d" font-weight="bold">erime sıcaklığı aynı (60 °C)</text></svg></div>
+<div class="box"><b>Çözümlü örnek 3.</b> Yukarıdaki grafikte m kütleli katı 4. dakikada erimeye başlayıp 8. dakikada tamamen eriyor. Aynı maddeden 3m kütleli bir örnek aynı ilk sıcaklıktan aynı ısıtıcıyla ısıtılırsa erimeye kaçıncı dakikada başlar, erime kaç dakika sürer?<br>
+<b>Çözüm:</b> Kütle 3 katına çıkınca hem ısınma için hem erime için gereken ısı 3 katına çıkar. Isınma 4 × 3 = <b>12 dakika</b> sürer, madde 12. dakikada erimeye başlar; erime de 4 × 3 = <b>12 dakika</b> sürer (12. dakikadan 24. dakikaya kadar). Erime sıcaklığı yine 60 °C’tur.</div>
+<p><b>Grafik okuma kalıpları:</b></p>
+<ul>
+<li>Soğuyan bir maddenin grafiğindeki yatay bölüm <b>yoğuşma</b> ya da <b>donma</b> olabilir. Hangisi olduğunu söylemek için maddenin başlangıçtaki hâlini bilmek gerekir (LGS 2021).</li>
+<li>Sıcak bir sıvı soğuk bir katıyla temas ederse ısı alışverişi sürerken sıvı donma sıcaklığına inip donabilir; ısınan katı ise erime sıcaklığına ulaşmazsa hiç erimez (LGS 2018).</li>
+<li>İki örnekte hâl değişimi süreleri eşitse (aynı ısıtıcıyla) aldıkları ısı ve kütleleri eşittir; hâl değişimi sıcaklığına farklı sürelerde ulaşmaları ise ilk sıcaklıklarının farklı olduğunu gösterir (LGS 2026).</li>
 </ul>
 
-<h3>4. Maddenin Isı ile Etkileşimi (Öz Isı ve Hâl Değişimi)</h3>
-<div class="key">Alınan / Verilen Isı (Q) = Kütle (m) × Öz Isı (c) × Sıcaklık Değişimi (ΔT) &nbsp;&nbsp;|&nbsp;&nbsp; Hâl Değişim Isısı: Q = m · L<sub>e</sub> &nbsp;veya&nbsp; Q = m · L<sub>b</sub></div>
+<h3>10. Günlük hayatta hâl değişimi ve ısı (F.8.4.5.4)</h3>
+<div class="tbl"><table>
+<tr><th>Madde ısı alır, çevre serinler</th><th>Madde ısı verir, çevre ısınır</th></tr>
+<tr><td>Kolonyanın buharlaşırken eli serinletmesi<br>Ateşli hastanın alnına ıslak bez konması<br>Denizden çıkınca üşümek<br>Buzdolabında soğutucu sıvının buharlaşırken içeriden ısı alması<br>Buz eklenen içeceğin soğuması</td><td>Kışın meyve deposuna su dolu kaplar konması: Su donarken ısı verir, meyveler donmaz<br>Don tehlikesinde meyvelere su püskürtülmesi: Su donarken meyveye ısı verir (LGS 2022)<br>Kar yağarken havanın biraz ılıması<br>Banyoda buharın aynada yoğuşması<br>Kırağı oluşması</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Kışın yollara tuz dökülmesi “hâl değişiminde ısı alışverişi” ile değil, tuzlu suyun <b>donma sıcaklığının daha düşük</b> olmasıyla açıklanır. Denizden çıkan kişinin üşümesi de “erime” değil <b>buharlaşma</b> örneğidir (LGS 2018).</p>
+
+<h3>11. Türkiye’de kimya endüstrisi (F.8.4.6.1 – F.8.4.6.2)</h3>
+<p>Kimya endüstrisi ham maddeleri ilaç, plastik, boya, gübre, deterjan, yakıt gibi ürünlere dönüştürür. Osmanlı’da barut, boya ve sabun üretiliyordu; Cumhuriyetle devlet fabrikaları kuruldu, sonra PETKİM (1965) ve TÜPRAŞ (1983) gibi büyük tesisler açıldı. Türkiye dünya <b>bor</b> rezervlerinin büyük bölümüne sahiptir; bor madenini işleyip ileri teknoloji ürününe dönüştürmek ekonomik katkıyı artırır.</p>
 <ul>
-<li><b>Öz Isı (c):</b> 1 gram saf maddenin sıcaklığını 1 °C artırmak için gerekli ısı miktarıdır (Birimi: J/g°C veya cal/g°C) ve <b>maddeler için ayırt edici bir özelliktir</b> (madde miktarına bağlı değildir!)[cite: 12]. <b>Öz ısısı küçük olan madde</b> çabuk ısınır ve çabuk soğur; <b>öz ısısı büyük olan madde (örneğin su)</b> ise geç ısınır ve geç soğur[cite: 12].</li>
-<li><b>Hâl Değişimi ve Günlük Örnekler:</b>
-  <br>• <b>Isı Alan Olaylar (Çevreyi Soğutur):</b> Erime, Buharlaşma, Süblimleşme[cite: 12]. (<i>Örnek:</i> Kesilen karpuzun güneşte soğuması, ateşli hastanın alnına ıslak bez konulması, kolonya dökülen elin serinlemesi, testideki suyun soğuk kalması — sıvı buharlaşırken çevreden ısı alır!).
-  <br>• <b>Isı Veren Olaylar (Çevreyi Isıtır):</b> Donma, Yoğuşma, Kırağılaşma[cite: 12]. (<i>Örnek:</i> Kışın meyve-sebze depolarına büyük varillerle su konulması [su donarken ortama ısı verir, meyvelerin donmasını önler!], kar yağarken havanın ılıması).</li>
+<li>Ham petrol, doğal gaz ve bazı ilaç ham maddeleri gibi ürünlerde dışa bağımlılık vardır; plastik ürünler, boya, temizlik ürünleri ve bor ürünleri ihraç edilir.</li>
+<li><b>Meslekler:</b> kimya mühendisi, kimyager, kimya teknisyeni, eczacı, metalurji ve malzeme mühendisi, gıda mühendisi. Gelecekte yeşil kimya, biyobozunur plastik, batarya ve nanoteknoloji gibi alanlarda yeni meslekler önem kazanacaktır.</li>
 </ul>
+
+<h3>LGS'de bu konu nasıl soruluyor?</h3>
+<p>2018-2026 LGS’lerinde her yıl bu üniteden <b>4-6 soru</b> geldi (fen testinin son soruları).</p>
+<ul>
+<li><b>Desenli/sembollü periyodik tablo:</b> konum, atom numarası karşılaştırması ve sınıf sorulur. Tuzaklar: hidrojen, helyum, bor-alüminyum, “aynı gruptaki bütün elementler…” genellemesi.</li>
+<li><b>Gözlemden değişim türüne:</b> renk, gaz, çökelti, ısınma anlatılır; “kimyasal tepkimeyi hangisi kesin gösterir?” ya da I-II-III. Tuzaklar: süblimleşme ve çözünmedeki renk değişimi, kütle ölçümü.</li>
+<li><b>Atom ve kütle korunumu:</b> ürünlerden girenlerin atomlarını bulma, element-bileşik ayrımı; “atomların türü değişir” çeldiricisi.</li>
+<li><b>Ayraç + pH:</b> verilen renklerden asit-baz bulunur, pH eşleştirilir ya da “kesinlikle” karşılaştırılır. En sık çeldirici: aynı türden iki çözeltinin pH sırası.</li>
+<li><b>Asit-baz etkileri ve asit yağmuru:</b> deney sonucundan saklama kabı çıkarımı, karttaki bilgiyi genellememe, doğru deney düzeneğini seçme.</li>
+<li><b>Isı ve değişkenler:</b> kütle, öz ısı, sıcaklık değişiminden hangisi değişince daha çok ısı alınır/verilir; hangi düzenekler karşılaştırılır.</li>
+<li><b>Isınma-soğuma grafikleri:</b> kütle değişince grafik, yatay bölümün hangi hâl değişimi olduğu, iki maddenin hâl değişim sıcaklıkları.</li>
+<li><b>Strateji:</b> Önce tabloyu, deseni, grafiğin eksenlerini çöz; ısıtıcıların özdeş olup olmadığına bak. “Kesinlikle” sorularında yalnızca her durumda doğru olan bilgi seçilir.</li>
+</ul>
+
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2018-2026 LGS’lerinde bu konudan gelen <b>44 sorunun</b> her biri, özetteki alt başlıklardan hangisini ölçtüğüne göre sınıflandırıldı. Bazı sorular birden fazla alt başlığı kullanır; tabloda çözümde belirleyici olan alt başlık yazılıdır (* işaretli satırlarda sınıflandırma yoruma dayanır).</p>
+<div class="fig"><svg viewBox="0 0 560 291" width="560" role="img" aria-label="Isı haritası: 44 çıkmış sorunun alt başlıklara ve yıllara dağılımı; en çok fiziksel-kimyasal değişim ve ısınma (7'şer), sonra ayraç-pH ve hâl değişimi (6'şar)" font-size="12" fill="#1e293b" text-anchor="middle"><text x="8" y="18" font-size="13" text-anchor="start" font-weight="bold">Alt başlık × yıl (2018-2026)</text><text x="452" y="18" font-size="13" text-anchor="start" font-weight="bold">Toplam</text><g font-size="11" fill="#475569"><text x="208" y="38">18</text><text x="234" y="38">19</text><text x="260" y="38">20</text><text x="286" y="38">21</text><text x="312" y="38">22</text><text x="338" y="38">23</text><text x="364" y="38">24</text><text x="390" y="38">25</text><text x="416" y="38">26</text></g><text x="188" y="60" font-size="11.5" text-anchor="end">Konum, grup-periyot</text><rect x="196" y="44" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="222" y="44" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="234" y="59" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="248" y="44" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="44" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="286" y="59" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="300" y="44" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="312" y="59" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="326" y="44" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="338" y="59" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="352" y="44" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="378" y="44" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="404" y="44" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="416" y="59" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="452" y="47" width="55" height="16" rx="3" fill="#f59e0b"/><text x="513" y="60" text-anchor="start" font-weight="bold">5</text><text x="188" y="85" font-size="11.5" text-anchor="end">Metal/yarı metal/ametal</text><rect x="196" y="69" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="84" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="69" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="248" y="69" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="260" y="84" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="274" y="69" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="69" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="326" y="69" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="69" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="364" y="84" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="378" y="69" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="390" y="84" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="404" y="69" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="452" y="72" width="44" height="16" rx="3" fill="#f59e0b"/><text x="502" y="85" text-anchor="start" font-weight="bold">4</text><text x="188" y="110" font-size="11.5" text-anchor="end">Fiziksel-kimyasal değişim</text><rect x="196" y="94" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="109" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="94" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="234" y="109" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="248" y="94" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="94" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="286" y="109" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="300" y="94" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="326" y="94" width="24" height="22" rx="4" fill="#3b82f6"/><text x="338" y="109" font-size="12" fill="#fff" font-weight="bold">2</text><rect x="352" y="94" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="378" y="94" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="390" y="109" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="404" y="94" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="416" y="109" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="452" y="97" width="77" height="16" rx="3" fill="#f59e0b"/><text x="535" y="110" text-anchor="start" font-weight="bold">7</text><text x="188" y="135" font-size="11.5" text-anchor="end">Tepkime, atom-kütle korunumu</text><rect x="196" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="222" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="248" y="119" width="24" height="22" rx="4" fill="#3b82f6"/><text x="260" y="134" font-size="12" fill="#fff" font-weight="bold">2</text><rect x="274" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="119" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="312" y="134" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="326" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="119" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="364" y="134" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="378" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="404" y="119" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="452" y="122" width="44" height="16" rx="3" fill="#f59e0b"/><text x="502" y="135" text-anchor="start" font-weight="bold">4</text><text x="188" y="160" font-size="11.5" text-anchor="end">Ayraç ve pH</text><rect x="196" y="144" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="222" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="234" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="248" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="260" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="274" y="144" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="312" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="326" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="338" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="352" y="144" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="378" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="390" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="404" y="144" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="416" y="159" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="452" y="147" width="66" height="16" rx="3" fill="#f59e0b"/><text x="524" y="160" text-anchor="start" font-weight="bold">6</text><text x="188" y="185" font-size="11.5" text-anchor="end">Asit-baz etkileri, asit yağmuru</text><rect x="196" y="169" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="184" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="248" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="169" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="286" y="184" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="300" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="326" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="169" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="364" y="184" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="378" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="404" y="169" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="452" y="172" width="33" height="16" rx="3" fill="#f59e0b"/><text x="491" y="185" text-anchor="start" font-weight="bold">3</text><text x="188" y="210" font-size="11.5" text-anchor="end">Isınma ve değişkenler</text><rect x="196" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="234" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="248" y="194" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="286" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="300" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="312" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="326" y="194" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="364" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="378" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="390" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="404" y="194" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="416" y="209" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="452" y="197" width="77" height="16" rx="3" fill="#f59e0b"/><text x="535" y="210" text-anchor="start" font-weight="bold">7</text><text x="188" y="235" font-size="11.5" text-anchor="end">Hâl değişimi, grafikler</text><rect x="196" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="234" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="248" y="219" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="286" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="300" y="219" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="326" y="219" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="364" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="378" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="390" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="404" y="219" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="416" y="234" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="452" y="222" width="66" height="16" rx="3" fill="#f59e0b"/><text x="524" y="235" text-anchor="start" font-weight="bold">6</text><text x="188" y="260" font-size="11.5" text-anchor="end">Günlük hayatta hâl değişimi</text><rect x="196" y="244" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="208" y="259" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="222" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="248" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="274" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="244" width="24" height="22" rx="4" fill="#bfdbfe"/><text x="312" y="259" font-size="12" fill="#1e3a8a" font-weight="bold">1</text><rect x="326" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="352" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="378" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="404" y="244" width="24" height="22" rx="4" fill="#f1f5f9"/><rect x="452" y="247" width="22" height="16" rx="3" fill="#f59e0b"/><text x="480" y="260" text-anchor="start" font-weight="bold">2</text><g font-size="11"><rect x="196" y="273" width="14" height="12" rx="3" fill="#f1f5f9"/><text x="216" y="283" text-anchor="start">0</text><rect x="276" y="273" width="14" height="12" rx="3" fill="#bfdbfe"/><text x="296" y="283" text-anchor="start">1 soru</text><rect x="356" y="273" width="14" height="12" rx="3" fill="#3b82f6"/><text x="376" y="283" text-anchor="start">2 soru</text></g></svg></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi / bağlam</th></tr>
+<tr><td>2018</td><td>15</td><td>Metal, yarı metal, ametal sınıfı</td><td>Tablodaki 4 konumdan çaydanlık yapımına uygun (metal) elementi seçme</td></tr>
+<tr><td>2018</td><td>16</td><td>Fiziksel-kimyasal değişim (gözlem) *</td><td>Tanecik modelleri; hangisi kimyasal tepkime değildir (karışım)</td></tr>
+<tr><td>2018</td><td>17</td><td>Asit-baz etkileri, asit yağmuru</td><td>Asit yağmurunun bitkiye etkisi; doğru deney düzeneğini seçme</td></tr>
+<tr><td>2018</td><td>18</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Kütleleri farklı ısıtılmış demir parçaları; suyun son sıcaklıkları</td></tr>
+<tr><td>2018</td><td>19</td><td>Hâl değişimi ve grafikler</td><td>Sıcak sıvı ile soğuk katı; ısıl dengeye kadar sıcaklık-zaman grafiği</td></tr>
+<tr><td>2018</td><td>20</td><td>Günlük hayatta hâl değişimi-ısı</td><td>“Katı erirken ısı alır” ilkesiyle açıklanamayan olay</td></tr>
+<tr><td>2019</td><td>16</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>Gözlemlerden (ısınma, gaz, renk) hangileri kimyasal değişimi gösterir; I-II-III</td></tr>
+<tr><td>2019</td><td>17</td><td>Asit-baz: ayraç ve pH</td><td>Ayraç renk tablosu; I. ve II. çözelti ne olabilir</td></tr>
+<tr><td>2019</td><td>18</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Isınma-kütle deneyinde sabit tutulamayan değişken</td></tr>
+<tr><td>2019</td><td>19</td><td>Periyodik sistem: konum, grup-periyot *</td><td>Atom kütlesi - atom numarası sıralaması; Ar-K istisnası</td></tr>
+<tr><td>2019</td><td>20</td><td>Hâl değişimi ve grafikler</td><td>İki ısınma grafiği; değişen nicelik kütle</td></tr>
+<tr><td>2020</td><td>17</td><td>Kimyasal tepkime, atom-kütle korunumu</td><td>Isıtılan bileşikten oksijen çıkışı; I-II-III (atom türü değişmez)</td></tr>
+<tr><td>2020</td><td>18</td><td>Metal, yarı metal, ametal sınıfı</td><td>Desenli tablo; istenen üçlü komşuluk oluşturulamaz</td></tr>
+<tr><td>2020</td><td>19</td><td>Kimyasal tepkime, atom-kütle korunumu</td><td>Madde + O₂ → CO₂ + H₂O; hangisi söylenemez (bileşik, atom kaynağı)</td></tr>
+<tr><td>2020</td><td>20</td><td>Asit-baz: ayraç ve pH</td><td>Mavi ayraç asitte pembe, bazda yeşil; pH-renk eşleştirme</td></tr>
+<tr><td>2021</td><td>16</td><td>Periyodik sistem: konum, grup-periyot</td><td>Sembollü tablo; yıldız ve dairenin konumundan çıkarım</td></tr>
+<tr><td>2021</td><td>17</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>İki renksiz çözelti karışınca sarı çökelti; kimyasal tepkime</td></tr>
+<tr><td>2021</td><td>18</td><td>Asit-baz etkileri, asit yağmuru</td><td>Asit yağmuru bilgi kartı; hangisine ulaşılabilir (pH, mermer)</td></tr>
+<tr><td>2021</td><td>19</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Hatalı deney düzeneğini düzeltme (yalnız kütle değişmeli)</td></tr>
+<tr><td>2021</td><td>20</td><td>Hâl değişimi ve grafikler</td><td>Soğuma grafiği; yoğuşma mı donma mı, hangi bilgi gerekli</td></tr>
+<tr><td>2022</td><td>16</td><td>Periyodik sistem: konum, grup-periyot</td><td>Tablo kesiti; aynı periyot, grup, atom numarası yargıları</td></tr>
+<tr><td>2022</td><td>17</td><td>Kimyasal tepkime, atom-kütle korunumu</td><td>Isıtılan yeşil katı, kireç suyu bulanıklaşıyor; hangisi yanlış</td></tr>
+<tr><td>2022</td><td>18</td><td>Asit-baz: ayraç ve pH</td><td>Turnusol ve kongo kırmızısı; iki çözeltide de mavi renk</td></tr>
+<tr><td>2022</td><td>19</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Eşit ΔT; kütle-öz ısı ile ısıtma süreleri; I-II-III</td></tr>
+<tr><td>2022</td><td>20</td><td>Günlük hayatta hâl değişimi-ısı</td><td>Mandalinaya su püskürtme; donan su ısı verir</td></tr>
+<tr><td>2023</td><td>17</td><td>Periyodik sistem: konum, grup-periyot</td><td>Atom numarası ardışık iki element; kesinlikle doğru olan (farklı grup)</td></tr>
+<tr><td>2023</td><td>18</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>Küp şeker: toz hâline getirme, karamelleşme, çözünme</td></tr>
+<tr><td>2023</td><td>19</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>Sirke + kabartma tozu; kimyasal değişimi kesinleştiren ölçüm</td></tr>
+<tr><td>2023</td><td>20</td><td>Asit-baz: ayraç ve pH</td><td>Ayraç renkleri; pH karşılaştırmasında kesin olan</td></tr>
+<tr><td>2024</td><td>16</td><td>Metal, yarı metal, ametal sınıfı</td><td>Sınıflandırılmış tablo; grup/periyot yalnız ametal olabilir mi</td></tr>
+<tr><td>2024</td><td>17</td><td>Kimyasal tepkime, atom-kütle korunumu</td><td>İki gaz tükenip yeni saf madde oluşuyor; I-II-III</td></tr>
+<tr><td>2024</td><td>18</td><td>Asit-baz etkileri, asit yağmuru</td><td>Asidin demir, mermer ve cama etkisi; saklama kabı çıkarımı</td></tr>
+<tr><td>2024</td><td>19</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Üç düzenek (kütle, ısıtıcı, cins); hangi etkinin belirlenebileceği</td></tr>
+<tr><td>2024</td><td>20</td><td>Hâl değişimi ve grafikler</td><td>Isınma grafiği; kütle artırılırsa erime ne zaman başlar</td></tr>
+<tr><td>2025</td><td>16</td><td>Metal, yarı metal, ametal sınıfı</td><td>Desen anlamı verilmemiş tablo; yarı metalin sağ komşusunun sınıfı</td></tr>
+<tr><td>2025</td><td>17</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>İyotun süblimleşmesi ve kırağılaşması; fiziksel değişim</td></tr>
+<tr><td>2025</td><td>18</td><td>Asit-baz: ayraç ve pH</td><td>Üç ayraçlı tablo; pH değerleri hakkında doğru yargı</td></tr>
+<tr><td>2025</td><td>19</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Özdeş kürelerden suya ısı aktarımı; I-II-III</td></tr>
+<tr><td>2025</td><td>20</td><td>Hâl değişimi ve grafikler</td><td>Isıtılan ve soğutulan iki madde; hâl değişim sıcaklıkları; I-II-III</td></tr>
+<tr><td>2026</td><td>16</td><td>Periyodik sistem: konum, grup-periyot *</td><td>Sembollü tablo; atom numarası, sınıf, periyot yargıları</td></tr>
+<tr><td>2026</td><td>17</td><td>Fiziksel-kimyasal değişim (gözlem)</td><td>Mavi çözeltide çinko; renk kaybı ve yeni tabaka; I-II-III</td></tr>
+<tr><td>2026</td><td>18</td><td>Asit-baz: ayraç ve pH</td><td>Çay ayracı (asitte turuncu-sarı, bazda kırmızı); pH eşleştirme</td></tr>
+<tr><td>2026</td><td>19</td><td>Isınma: kütle, cins, ΔT, değişkenler</td><td>Kütle, öz ısı, ilk-son sıcaklık değişince verilen ısı; I-II-III</td></tr>
+<tr><td>2026</td><td>20</td><td>Hâl değişimi ve grafikler</td><td>Hâl değişim süreleri tablosu; kütle ve ilk sıcaklık; I-II-III</td></tr>
+</table></div>
+<div class="note"><b>Çıkmış analizi</b><ul>
+<li>Her yıl 4-6 soru geliyor. Ünitenin dört ana alanı neredeyse dengeli: periyodik sistem 9, değişim ve tepkime 11, asit-baz 9, ısı ve hâl değişimi 15 soru. En yoğun tek alt başlıklar <b>fiziksel-kimyasal değişim</b> ve <b>ısınma-değişkenler</b> (7’şer).</li>
+<li><b>Asit-baz</b> 2018’den beri her yıl en az bir soruyla geliyor; bunların 6’sı ayraç-pH sorusu (2019, 2020, 2022, 2023, 2025, 2026). Ayraç renkleri soruda verilir; tuzak, aynı türden iki çözeltinin pH sırasıdır.</li>
+<li>Periyodik sistemden her yıl bir soru var; 2020’den beri çoğunlukla <b>desenli ya da sembollü</b> tablo kullanılıyor ve hidrojen, helyum, bor-alüminyum ayrımı ölçülüyor.</li>
+<li>2022’den sonra I-II-III ve “kesinlikle” kalıbı belirgin şekilde arttı; özellikle ısı ve hâl değişimi sorularında bir bilginin “olabilir” mi “kesin” mi olduğu soruluyor.</li>
+</ul></div>
 `,
 qs: [
-{
-  q: `<p>Aşağıdaki periyodik sistem kesitinde yer alan <b>K, L, M, N ve P</b> elementlerinin konumları gösterilmiştir[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 510 135" width="490" role="img" aria-label="Periyodik sistemde K, L, M, N, P elementleri">
-<text x="43" y="16" font-size="9" font-weight="bold" text-anchor="middle">1A</text>
-<text x="69" y="16" font-size="9" font-weight="bold" text-anchor="middle">2A</text>
-<text x="355" y="16" font-size="9" font-weight="bold" text-anchor="middle">3A</text>
-<text x="381" y="16" font-size="9" font-weight="bold" text-anchor="middle">4A</text>
-<text x="407" y="16" font-size="9" font-weight="bold" text-anchor="middle">5A</text>
-<text x="433" y="16" font-size="9" font-weight="bold" text-anchor="middle">6A</text>
-<text x="459" y="16" font-size="9" font-weight="bold" text-anchor="middle">7A</text>
-<text x="485" y="16" font-size="9" font-weight="bold" text-anchor="middle">8A</text>
-<text x="16" y="41" font-size="9" font-weight="bold" text-anchor="middle">1.P</text>
-<rect x="30" y="24" width="26" height="26" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="43" y="42" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">K</text>
-<rect x="472" y="24" width="26" height="26" fill="#f3e8ff" stroke="#7c3aed" stroke-width="1.5"/><text x="485" y="42" font-size="12" font-weight="bold" fill="#6d28d9" text-anchor="middle">P</text>
-<text x="16" y="67" font-size="9" font-weight="bold" text-anchor="middle">2.P</text>
-<rect x="30" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="56" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="342" y="50" width="26" height="26" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/><text x="355" y="68" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">M</text>
-<rect x="368" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="394" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="420" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="446" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="472" y="50" width="26" height="26" fill="#fff" stroke="#475569"/>
-<text x="16" y="93" font-size="9" font-weight="bold" text-anchor="middle">3.P</text>
-<rect x="30" y="76" width="26" height="26" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/><text x="43" y="94" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">L</text>
-<rect x="56" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="342" y="76" width="26" height="26" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/><text x="355" y="94" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">N</text>
-<rect x="368" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="394" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="420" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="446" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-<rect x="472" y="76" width="26" height="26" fill="#fff" stroke="#475569"/>
-</svg></div>
-<p>Periyodik sistemdeki bu elementlerle ilgili aşağıda verilen ifadelerden hangisi <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `K ve L elementleri aynı grupta (1A) yer almalarına rağmen K bir ametal (Hidrojen), L ise bir metaldir; bu yüzden kimyasal özellikleri benzer değildir.`,
-    `M ve N elementlerinin her ikisi de 3A grubunda yer alan birer metaldir.`,
-    `P elementi (Helyum) 8A grubunda yer aldığı için son katmanında 8 elektron bulunur.`,
-    `Atom numarası (proton sayısı) en büyük olan element M’dir.`
-  ],
+{ lv: "kolay", q: `<p>Aşağıdaki periyodik sistem kesitinde <b>K, L, M, N ve P</b> elementlerinin yerleri gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 136" width="560" role="img" aria-label="Periyodik sistem kesiti: K 1. periyot 1. grup, L 3. periyot 1. grup, M 2. periyot 13. grup, N 3. periyot 13. grup, P 1. periyot 18. grup" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#fee2e2" stroke="#475569" stroke-width="1.2"/><text x="54" y="55" font-size="14" font-weight="bold">K</text><rect x="516" y="36" width="28" height="28" fill="#ede9fe" stroke="#475569" stroke-width="1.2"/><text x="530" y="55" font-size="14" font-weight="bold">P</text><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#fef3c7" stroke="#475569" stroke-width="1.2"/><text x="390" y="83" font-size="14" font-weight="bold">M</text><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#dbeafe" stroke="#475569" stroke-width="1.2"/><text x="54" y="111" font-size="14" font-weight="bold">L</text><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#dcfce7" stroke="#475569" stroke-width="1.2"/><text x="390" y="111" font-size="14" font-weight="bold">N</text><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div>
+<p>Bu elementlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["K ve L aynı grupta yer alır ama K ametal (hidrojen), L metaldir; bu yüzden kimyasal özellikleri benzer değildir.", "M ve N elementlerinin ikisi de 13. grupta yer alan birer metaldir.", "P elementi bir metaldir.", "Atom numarası en büyük olan element M’dir."],
   a: "A",
-  s: `<p>Periyodik sistemin en önemli istisnalarını kontrol edelim[cite: 12]:</p>
-<ul>
-<li><b>K (₁H - Hidrojen) ve L (₁₁Na - Sodyum):</b> İkisi de 1A grubundadır ancak K <b>ametal</b>, L ise <b>metaldir</b> (<b>A doğru ✓</b>)[cite: 12].</li>
-<li><b>M (₅B - Bor) ve N (₁₃Al - Alüminyum):</b> M bir <b>yarı metal</b>, N ise bir <b>metaldir</b> (B yanlış)[cite: 12].</li>
-<li><b>P (₂He - Helyum):</b> 8A grubunda (soy gaz) yer almasına rağmen son katmanında 8 değil, <b>2 elektron</b> bulunur (C yanlış).</li>
-<li>Atom numarası aşağı ve sağa doğru artar; en büyük olan 3. periyottaki <b>N</b>’dir (D yanlış)[cite: 12]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir öğrenci laboratuvarda incelediği <b>X, Y ve Z</b> elementlerinin fiziksel özelliklerini aşağıdaki tabloya kaydetmiştir[cite: 12].</p>
-<table class="rt">
-<tr><th>Element</th><th>Gözlenen Fiziksel Özellikler</th></tr>
-<tr><td><b>X Elementi</b></td><td>Yüzeyi parlaktır; ısı ve elektriği çok iyi iletir; haddelenerek tel ve levha hâline getirilebilir[cite: 12].</td></tr>
-<tr><td><b>Y Elementi</b></td><td>Yüzeyi mattır; ısı ve elektriği iletmez; katı hâldeyken çekiçle vurulduğunda kırılıp dağılır[cite: 12].</td></tr>
-<tr><td><b>Z Elementi</b></td><td>Oda sıcaklığında katıdır; kırılgan değildir ve işlenebilir; elektriği X kadar iyi iletmez ancak Y’den daha iyi iletir (yarı iletkendir)[cite: 12].</td></tr>
-</table>
-<p>Tablodaki gözlemlere göre X, Y ve Z elementlerinin sınıfları ve kullanım alanlarıyla ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `X ve Y elementlerinin periyodik sistemin tamamen aynı bölgesinde (sol tarafında) yer alması beklenir.`,
-    `Y elementi bir ametal olduğu için elektrik iletim kablolarının iç telinde kullanılması uygun değildir.`,
-    `Z elementi güneş panellerinin ve bilgisayar mikroçiplerinin yapımında kullanılan bir yarı metaldir (Silisyum veya Bor olabilir).`,
-    `X elementi mutfak tencereleri veya süs eşyaları yapımında kullanılabilen bir metaldir.`
-  ],
+  s: `<p>Kesitteki yerlere göre: K = 1. periyot 1. grup → <b>hidrojen (H)</b>; L = 3. periyot 1. grup → <b>sodyum (Na)</b>; M = 2. periyot 13. grup → <b>bor (B)</b>; N = 3. periyot 13. grup → <b>alüminyum (Al)</b>; P = 1. periyot 18. grup → <b>helyum (He)</b>.</p>
+<ul><li><b>A ✓</b> Hidrojen 1. grupta olmasına rağmen ametaldir; sodyum metaldir. Bu nedenle aynı gruptaki bu iki elementin kimyasal özellikleri benzemez.</li>
+<li><b>B ✗</b> Bor yarı metal, alüminyum metaldir.</li>
+<li><b>C ✗</b> Helyum 18. gruptaki bir soy gazdır; metal değildir.</li>
+<li><b>D ✗</b> Atom numarası periyotta soldan sağa, grupta yukarıdan aşağıya artar. En büyük atom numaralı element 3. periyotta en sağdaki N’dir (13); M’nin atom numarası 5’tir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci incelediği <b>X, Y ve Z</b> elementlerinin özelliklerini aşağıdaki tabloya kaydetmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Element</th><th>Gözlenen özellikler</th></tr>
+<tr><td><b>X</b></td><td>Yüzeyi parlaktır; ısı ve elektriği çok iyi iletir; tel ve levha hâline getirilebilir.</td></tr>
+<tr><td><b>Y</b></td><td>Yüzeyi mattır; ısı ve elektriği iletmez; çekiçle vurulduğunda kırılıp dağılır.</td></tr>
+<tr><td><b>Z</b></td><td>Oda sıcaklığında katıdır; elektriği X kadar iyi iletmez ama Y’den daha iyi iletir (yarı iletkendir).</td></tr>
+</table></div>
+<p>Buna göre aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["X ve Y elementlerinin periyodik sistemin aynı bölgesinde (sol tarafında) yer alması beklenir.", "Y elementi elektrik kablolarının iletken telinde kullanılmaya uygun değildir.", "Z elementi, silisyum gibi güneş pilleri ve bilgisayar çiplerinin yapımında kullanılan bir yarı metal olabilir.", "X elementi tencere ya da süs eşyası yapımında kullanılabilen bir metaldir."],
   a: "A",
-  s: `<p>Tablodaki özelliklere göre <b>X bir metal</b>, <b>Y bir ametal</b>, <b>Z ise bir yarı metaldir</b>[cite: 12]. Metaller (X) periyodik sistemin sol ve orta kısmında, ametaller (Y) ise (Hidrojen hariç) sağ tarafında yer alır; dolayısıyla aynı bölgede bulunmaları beklenmez (<b>A yanlıştır</b>)[cite: 12]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki görselde K ve L maddelerinde meydana gelen değişimler tanecik modelleriyle gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="I. ve II. olayların tanecik modelleri">
-<rect x="10" y="10" width="252" height="120" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="136" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">I. OLAY (K Maddesinin Değişimi)</text>
-<circle cx="42" cy="65" r="8" fill="#dc2626"/><circle cx="58" cy="65" r="8" fill="#3b82f6"/>
-<circle cx="42" cy="85" r="8" fill="#dc2626"/><circle cx="58" cy="85" r="8" fill="#3b82f6"/>
-<text x="105" y="78" font-size="16" font-weight="bold">→</text>
-<circle cx="155" cy="52" r="8" fill="#dc2626"/><circle cx="171" cy="52" r="8" fill="#3b82f6"/>
-<circle cx="195" cy="88" r="8" fill="#dc2626"/><circle cx="211" cy="88" r="8" fill="#3b82f6"/>
-<text x="136" y="116" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Molekül yapısı korunmuş, mesafe artmış</text>
-
-<rect x="278" y="10" width="252" height="120" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="404" y="28" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">II. OLAY (L ve M Maddelerinin Değişimi)</text>
-<circle cx="308" cy="58" r="8" fill="#16a34a"/><circle cx="324" cy="58" r="8" fill="#16a34a"/>
-<circle cx="308" cy="86" r="8" fill="#f59e0b"/><circle cx="324" cy="86" r="8" fill="#f59e0b"/>
-<text x="365" y="75" font-size="16" font-weight="bold">→</text>
-<circle cx="415" cy="58" r="8" fill="#16a34a"/><circle cx="431" cy="58" r="8" fill="#f59e0b"/>
-<circle cx="415" cy="86" r="8" fill="#16a34a"/><circle cx="431" cy="86" r="8" fill="#f59e0b"/>
-<text x="404" y="116" font-size="9.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Atomlar arası bağlar kopup yeni bağ oluşmuş</text>
-</svg></div>
-<p>Modellerde gösterilen <b>I. Olay</b> ve <b>II. Olay</b>a günlük hayattan verilebilecek doğru örnekler aşağıdakilerin hangisinde eşleştirilmiştir[cite: 12]?</p>`,
-  c: [
-    `I. Olay: Suyun buharlaşması veya şekerin suda çözünmesi (Fiziksel) — II. Olay: Demirin paslanması veya sütün mayalanıp yoğurt olması (Kimyasal)`,
-    `I. Olay: Kağıdın yanması (Kimyasal) — II. Olay: Camın kırılması (Fiziksel)`,
-    `I. Olay: Ekmeğin küflenmesi — II. Olay: Buzun erimesi`,
-    `I. Olay: Elmanın çürümesi — II. Olay: Gökkuşağının oluşması`
-  ],
+  s: `<p>Tabloya göre <b>X metal</b> (parlak, iletken, tel-levha olur), <b>Y ametal</b> (mat, iletmez, kırılgan), <b>Z yarı metal</b>dir (yarı iletken).</p>
+<ul><li><b>A ✗ (yanlış ifade)</b> Metaller periyodik sistemin sol ve orta kısmında, ametaller (hidrojen dışında) sağ tarafındadır. X ve Y’nin aynı bölgede olması beklenmez.</li>
+<li><b>B</b> doğrudur: Ametal elektriği iletmez.</li>
+<li><b>C</b> doğrudur: Silisyum gibi yarı metaller yarı iletken olduğu için güneş pili ve çip yapımında kullanılır.</li>
+<li><b>D</b> doğrudur: Metaller işlenebilir ve ısıyı iyi iletir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda günlük hayatta gerçekleşen altı olayın <b>fiziksel değişim</b> mi yoksa <b>kimyasal değişim</b> mi olduğu işaretlenmiştir.</p>
+<div class="tbl"><table>
+<tr><th>No</th><th>Olay</th><th>Fiziksel</th><th>Kimyasal</th></tr>
+<tr><td><b>1</b></td><td>Soyulan elmanın açık havada kararması</td><td></td><td>✓</td></tr>
+<tr><td><b>2</b></td><td>Çaya atılan küp şekerin suda çözünmesi</td><td>✓</td><td></td></tr>
+<tr><td><b>3</b></td><td>Hamurun mayalanıp fırında ekmeğe dönüşmesi</td><td></td><td>✓</td></tr>
+<tr><td><b>4</b></td><td>Kışın camda kırağı oluşması ve sonra buzun erimesi</td><td></td><td>✓</td></tr>
+<tr><td><b>5</b></td><td>Sütten yoğurt elde edilmesi</td><td></td><td>✓</td></tr>
+<tr><td><b>6</b></td><td>Güneş ışığının yağmur damlalarından geçerek gökkuşağı oluşturması</td><td>✓</td><td></td></tr>
+</table></div>
+<p>Tablodaki olaylardan hangisi <b>yanlış</b> sınıflandırılmıştır?</p>`,
+  c: ["2", "3", "4", "6"],
+  a: "C",
+  s: `<p>Kırağı oluşması (su buharının doğrudan buza dönüşmesi) ve buzun erimesi birer <b>hâl değişimi</b>dir. Hâl değişiminde suyun kimliği değişmez; bu olaylar <b>fiziksel değişim</b>dir. Tabloda kimyasal işaretlendiği için 4 yanlıştır.</p>
+<ul><li><b>2</b> doğru: Çözünmede yeni madde oluşmaz.</li>
+<li><b>3</b> doğru: Mayalanma ve pişmede yeni maddeler oluşur.</li>
+<li><b>6</b> doğru: Gökkuşağı ışığın kırılmasıyla oluşur, madde değişmez.</li>
+<li>1 ve 5 de doğru işaretlenmiştir (kararma ve yoğurt oluşumu kimyasaldır).</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Periyodik sistemin gelişiminde çalışma yapan bazı bilim insanları ve katkıları aşağıdaki zaman şeridinde gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 166" width="560" role="img" aria-label="Periyodik sistemin gelişimi: Döbereiner, Newlands, Mendeleyev, Moseley, Seaborg" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="10" y1="30" x2="550" y2="30" stroke="#64748b" stroke-width="2"/><circle cx="57" cy="30" r="6" fill="#2563eb" stroke="#2563eb" stroke-width="1.2"/><rect x="6" y="44" width="102" height="116" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/><text x="57" y="64" font-size="13" fill="#2563eb" font-weight="bold">Döbereiner</text><text x="57" y="82" font-size="11">Benzer</text><text x="57" y="97" font-size="11">elementleri üçlü</text><text x="57" y="112" font-size="11">gruplara ayırdı.</text><circle cx="167" cy="30" r="6" fill="#ca8a04" stroke="#ca8a04" stroke-width="1.2"/><rect x="116" y="44" width="102" height="116" rx="8" fill="#ffffff" stroke="#ca8a04" stroke-width="1.8"/><text x="167" y="64" font-size="13" fill="#ca8a04" font-weight="bold">Newlands</text><text x="167" y="82" font-size="11">Atom kütlesine</text><text x="167" y="97" font-size="11">göre dizdi; her 8.</text><text x="167" y="112" font-size="11">eleman 1.’ye</text><text x="167" y="127" font-size="11">benzer dedi.</text><circle cx="277" cy="30" r="6" fill="#16a34a" stroke="#16a34a" stroke-width="1.2"/><rect x="226" y="44" width="102" height="116" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/><text x="277" y="64" font-size="13" fill="#16a34a" font-weight="bold">Mendeleyev</text><text x="277" y="82" font-size="11">Atom kütlesine</text><text x="277" y="97" font-size="11">göre dizdi;</text><text x="277" y="112" font-size="11">bulunmamış</text><text x="277" y="127" font-size="11">elementlere yer</text><text x="277" y="142" font-size="11">bıraktı.</text><circle cx="387" cy="30" r="6" fill="#dc2626" stroke="#dc2626" stroke-width="1.2"/><rect x="336" y="44" width="102" height="116" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/><text x="387" y="64" font-size="13" fill="#dc2626" font-weight="bold">Moseley</text><text x="387" y="82" font-size="11">Elementleri</text><text x="387" y="97" font-size="11">artan atom</text><text x="387" y="112" font-size="11">numarasına göre</text><text x="387" y="127" font-size="11">sıraladı.</text><circle cx="497" cy="30" r="6" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.2"/><rect x="446" y="44" width="102" height="116" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.8"/><text x="497" y="64" font-size="13" fill="#7c3aed" font-weight="bold">Seaborg</text><text x="497" y="82" font-size="11">Lantanit ve</text><text x="497" y="97" font-size="11">aktinit sıralarını</text><text x="497" y="112" font-size="11">tablonun altına</text><text x="497" y="127" font-size="11">yerleştirdi.</text><text x="10" y="18" font-size="11" text-anchor="start" fill="#475569">Geçmiş</text><text x="550" y="18" font-size="11" text-anchor="end" fill="#475569">Günümüz</text></svg></div>
+<p>Bu şemaya göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Günümüzdeki periyodik sistemde elementler, Mendeleyev’in yaptığı gibi artan atom kütlelerine göre dizilmiştir.", "Moseley, elementlerin atom kütlesine göre değil atom numarasına göre sıralanması gerektiğini göstermiştir.", "Mendeleyev’in tabloda bazı yerleri boş bırakması, ileride yeni elementlerin bulunacağını öngördüğünü gösterir.", "Periyodik sistem tek bir bilim insanının değil, birçok bilim insanının çalışmalarıyla bugünkü hâlini almıştır."],
   a: "A",
-  s: `<p><b>I. Olayda</b> moleküllerin iç yapısı (kimliği) hiç değişmemiş, yalnızca tanecikler birbirinden uzaklaşmıştır → <b>Fiziksel değişim</b> (suyun buharlaşması, şekerin çözünmesi)[cite: 12].</p>
-<p><b>II. Olayda</b> ise yeşil ve turuncu atomlar arasındaki eski bağlar kopmuş ve farklı atomlar arasında yeni kimyasal bağlar kurularak yeni bir madde oluşmuştur → <b>Kimyasal değişim</b> (demirin paslanması, sütün yoğurda dönüşmesi)[cite: 12]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Kapalı bir kapta gerçekleşen bir kimyasal tepkimede <b>X, Y ve Z</b> maddelerinin kütlelerinin zamana bağlı değişimi aşağıdaki grafikte verilmiştir[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 360 185" width="340" role="img" aria-label="Kimyasal tepkimede kütle zaman grafiği hesaplama">
-<line x1="50" y1="155" x2="310" y2="155" stroke="#334155" stroke-width="2"/>
-<line x1="50" y1="15" x2="50" y2="155" stroke="#334155" stroke-width="2"/>
-<path d="M50,45 Q130,115 260,155" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M50,60 Q130,110 260,130" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<path d="M50,155 Q130,65 260,25" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<line x1="50" y1="130" x2="260" y2="130" stroke="#94a3b8" stroke-dasharray="3 3"/>
-<line x1="50" y1="25" x2="260" y2="25" stroke="#94a3b8" stroke-dasharray="3 3"/>
-<g font-size="10.5" font-weight="bold">
-<text x="38" y="29" text-anchor="end" fill="#16a34a">m</text>
-<text x="38" y="48" text-anchor="end" fill="#dc2626">24</text>
-<text x="38" y="64" text-anchor="end" fill="#2563eb">20</text>
-<text x="38" y="134" text-anchor="end" fill="#2563eb">4</text>
-<text x="38" y="158" text-anchor="end">0</text>
-<text x="268" y="28" fill="#16a34a">Z (Ürün)</text>
-<text x="268" y="133" fill="#2563eb">Y (Giren)</text>
-<text x="268" y="152" fill="#dc2626">X (Giren)</text>
-<text x="275" y="172" fill="#1e293b">Zaman</text>
-<text x="16" y="88" transform="rotate(-90 16 88)" text-anchor="middle" fill="#1e293b">Kütle (g)</text>
-</g>
-</svg></div>
-<p>Grafikteki verilere göre; tepkime sonunda oluşan <b>Z ürününün kütlesi (m)</b> ve tepkime bittiğinde <b>kapta bulunan toplam madde kütlesi</b> sırasıyla kaç gramdır[cite: 12]?</p>`,
-  c: [
-    `Oluşan Z kütlesi (m): 40 g — Kaptaki toplam madde kütlesi: 44 g`,
-    `Oluşan Z kütlesi (m): 44 g — Kaptaki toplam madde kütlesi: 44 g`,
-    `Oluşan Z kütlesi (m): 40 g — Kaptaki toplam madde kütlesi: 40 g`,
-    `Oluşan Z kütlesi (m): 36 g — Kaptaki toplam madde kütlesi: 44 g`
-  ],
+  s: `<p>Şemadaki son adımlar Moseley ve Seaborg’a aittir. Moseley elementleri <b>artan atom numarasına</b> göre sıralamıştır; günümüzdeki periyodik sistem de bu sıralamayı kullanır.</p>
+<ul><li><b>A</b> söylenemez: Günümüzde sıralama atom kütlesine değil, <b>atom numarasına</b> göredir.</li>
+<li><b>B</b> söylenebilir: Şemada Moseley’in elementleri atom numarasına göre sıraladığı yazıyor.</li>
+<li><b>C</b> söylenebilir: Bulunmamış elementlere yer bırakmak, o elementlerin varlığını öngörmektir.</li>
+<li><b>D</b> söylenebilir: Şemada beş farklı bilim insanının katkısı art arda gösterilmiştir; bilimsel bilgi zamanla gelişmiştir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Periyodik sistemde bir periyotta soldan sağa ve bir grupta yukarıdan aşağıya gidildikçe bazı niceliklerin nasıl değiştiği aşağıdaki şemada özetlenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 156" width="560" role="img" aria-label="Periyotta soldan sağa atom numarası ve grup numarası artar, periyot numarası değişmez; grupta yukarıdan aşağıya atom numarası ve periyot numarası artar, grup numarası değişmez" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="6" y="8" width="270" height="140" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.6"/><rect x="286" y="8" width="268" height="140" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="1.6"/><text x="141" y="30" font-size="13" fill="#1d4ed8" font-weight="bold">Bir periyotta soldan sağa</text><line x1="40" y1="46" x2="235.2" y2="46" stroke="#1d4ed8" stroke-width="2.4"/><polygon points="240.0,46.0 232.8,49.5 232.8,42.5" fill="#1d4ed8"/><text x="20" y="74" font-size="12.5" text-anchor="start">• Atom numarası artar.</text><text x="20" y="96" font-size="12.5" text-anchor="start">• Periyot numarası değişmez</text><text x="32" y="114" font-size="12.5" text-anchor="start">(hepsi aynı yatay sıradadır).</text><text x="20" y="136" font-size="12.5" text-anchor="start">• Grup numarası artar.</text><text x="420" y="30" font-size="13" fill="#a16207" font-weight="bold">Bir grupta yukarıdan aşağıya</text><line x1="530" y1="40" x2="530" y2="135.2" stroke="#a16207" stroke-width="2.4"/><polygon points="530.0,140.0 526.5,132.8 533.5,132.8" fill="#a16207"/><text x="300" y="74" font-size="12.5" text-anchor="start">• Atom numarası artar.</text><text x="300" y="96" font-size="12.5" text-anchor="start">• Periyot numarası artar.</text><text x="300" y="118" font-size="12.5" text-anchor="start">• Grup numarası değişmez.</text></svg></div>
+<p>Buna göre periyodik sistemin <b>aynı periyodunda</b> bulunan ve atom numarası <b>Y &gt; X</b> olan iki element için aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Y elementi periyodik sistemde X elementinin sağında yer alır.", "Y elementinin periyot numarası X elementininkinden büyüktür.", "X ve Y elementleri aynı grupta yer alır.", "Y elementi kesinlikle bir metaldir."],
   a: "A",
-  s: `<p>Grafikte kütlesi azalanlar tepkimeye girenler (X ve Y), kütlesi 0’dan artan ise üründür (Z)[cite: 12]:</p>
-<ul>
-<li><b>Harcanan X kütlesi:</b> 24 g’dan 0’a inmiş → <b>24 g</b> tamamen harcandı[cite: 12].</li>
-<li><b>Harcanan Y kütlesi:</b> 20 g’dan 4 g’a inmiş → 20 − 4 = <b>16 g</b> harcandı (<b>4 g Y arttı!</b>)[cite: 12].</li>
-<li><b>Oluşan Z ürünü (m):</b> Harcananların toplamına eşittir: 24 + 16 = <b>40 g</b>[cite: 12].</li>
-<li><b>Kaptaki toplam madde kütlesi:</b> Kap kapalı olduğu için oluşan 40 g Z ürünü + tepkimeye girmeden kapta bekleyen 4 g Y = <b>44 g</b> (veya başlangıçtaki 24 + 20 = 44 g) olur[cite: 12]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir öğrenci, ağzı açık bir beherglasa bir miktar sirke koyup üzerine kabartma tozu ekliyor ve hassas terazinin üzerine bırakıyor. Karışımın hızla köpürdüğünü, kabarcıklar (gaz) çıktığını ve tepkime sonunda terazide okunan değerin başlangıçtakinden daha küçük olduğunu gözlemliyor[cite: 12].</p>
-<p>Öğrencinin yaptığı bu deneyle ilgili;</p>
-<p>I. Gaz çıkışı gözlenmesi, sirke ve kabartma tozunun kimliği değişerek yeni bir maddeye dönüştüğünü kanıtlar[cite: 12].<br>
-II. Gerçekleşen olay bir kimyasal değişimdir (kimyasal tepkimedir)[cite: 12].<br>
-III. Terazideki değerin azalması, bazı kimyasal tepkimelerde toplam kütlenin korunmadığını gösterir[cite: 12].</p>
-<p>yorumlarından hangileri <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Yalnız I`,
-    `I ve II`,
-    `II ve III`,
-    `I, II ve III`
-  ],
+  s: `<p>İki element aynı periyotta, yani aynı yatay sıradadır. Periyotta soldan sağa gidildikçe atom numarası arttığına göre atom numarası büyük olan <b>Y, X’in sağındadır</b> (<b>A ✓</b>).</p>
+<ul><li><b>B ✗</b> Aynı periyottaki elementlerin periyot numaraları eşittir.</li>
+<li><b>C ✗</b> Aynı periyotta yan yana duran elementler farklı gruplardadır.</li>
+<li><b>D ✗</b> Periyodun sağına doğru metallerden yarı metallere ve ametallere geçilir; Y’nin metal olduğu kesin değildir, ametal olma olasılığı daha da yüksektir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci, ağzı açık bir beherglasa sirke koyup üzerine kabartma tozu ekliyor ve kabı hassas terazinin üzerine bırakıyor. Karışımın köpürdüğünü, gaz kabarcıkları çıktığını ve tepkime bitince terazide okunan değerin başlangıçtakinden <b>küçük</b> olduğunu gözlemliyor.</p>
+<p>Bu deneyle ilgili;</p>
+<p>I. Gaz çıkışı, sirke ve kabartma tozundan yeni bir madde oluştuğunu gösterir.<br>
+II. Gerçekleşen olay bir kimyasal değişimdir.<br>
+III. Terazideki değerin azalması, bazı kimyasal tepkimelerde toplam kütlenin korunmadığını gösterir.</p>
+<p>yorumlarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
   a: "B",
-  s: `<p>Gaz çıkışı ve köpürme kimyasal tepkimenin kanıtıdır (<b>I ve II doğru</b>)[cite: 12]. Ancak bütün kimyasal tepkimelerde <b>kütle daima korunur</b>; burada kütlenin azalmış görünmesinin tek nedeni <b>kabın ağzının açık olması ve oluşan gazın havaya karışmasıdır</b> (<b>III yanlış</b>)[cite: 12]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Asitlerin ve bazların farklı maddeler üzerindeki etkilerini araştıran bir öğrenci, aşağıdaki üç deney düzeneğini kuruyor:</p>
-<div class="fig"><svg viewBox="0 0 540 150" width="520" role="img" aria-label="Asit ve bazların metal, mermer ve cam üzerindeki etkileri">
-<rect x="10" y="10" width="168" height="130" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="94" y="28" font-size="10" font-weight="bold" fill="#991b1b" text-anchor="middle">1. Düzenek (Çinko + HCl)</text>
-<rect x="55" y="45" width="78" height="60" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/>
-<rect x="75" y="85" width="38" height="16" fill="#64748b"/>
-<circle cx="80" cy="70" r="3" fill="#fff"/><circle cx="95" cy="60" r="4" fill="#fff"/><circle cx="105" cy="72" r="3" fill="#fff"/>
-<text x="94" y="120" font-size="9" font-weight="bold" fill="#991b1b" text-anchor="middle">Metal aşınır, H₂ gazı çıkar!</text>
-
-<rect x="186" y="10" width="168" height="130" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="270" y="28" font-size="10" font-weight="bold" fill="#92400e" text-anchor="middle">2. Düzenek (Mermer + Limon)</text>
-<rect x="215" y="65" width="110" height="35" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
-<ellipse cx="270" cy="65" rx="30" ry="8" fill="#fde047"/>
-<text x="270" y="87" font-size="9.5" font-weight="bold" fill="#334155" text-anchor="middle">Mermer Tezgâh</text>
-<text x="270" y="120" font-size="9" font-weight="bold" fill="#92400e" text-anchor="middle">Mermer aşınır, CO₂ gazı çıkar!</text>
-
-<rect x="362" y="10" width="168" height="130" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="446" y="28" font-size="10" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">3. Düzenek (Cam + NaOH)</text>
-<rect x="407" y="45" width="78" height="60" fill="#93c5fd" stroke="#1e40af" stroke-width="1.5"/>
-<text x="446" y="80" font-size="9.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Cam Kapta Baz</text>
-<text x="446" y="120" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle">Cam ve porselen matlaşır!</text>
-</g>
-</svg></div>
-<p>Bu deney gözlemlerine ve asit–baz kurallarına göre aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `Asitler çinko, demir ve magnezyum gibi metallerle tepkimeye girerek Hidrojen (H₂) gazı açığa çıkardığı için metal kaplarda saklanmamalıdır.`,
-    `Mermer mutfak tezgâhlarının üzerinde limon kesilmesi veya sirke dökülmesi tezgâhın aşınmasına neden olur.`,
-    `Bulaşık makinesi deterjanları bazik özellikte olduğu için cam bardakları zamanla aşındırarak matlaştırır.`,
-    `Tuz ruhu (HCl) ve zaç yağı (H₂SO₄) gibi kuvvetli asitler cam kapları erittiği için yalnızca demir kaplarda saklanmalıdır.`
-  ],
-  a: "D",
-  s: `<p>Asitler metalleri aşındırır ancak <b>cam ve plastik kaplara etki etmez</b>; bu nedenle asitler <b>cam veya plastik kaplarda</b> saklanır (demir/metal kaplarda saklanırsa kabı deler ve $H_2$ gazı çıkarır!)[cite: 12]. Camı matlaştıran maddeler ise bazlardır. Dolayısıyla <b>D</b> seçeneği yanlıştır. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda günlük hayatta karşılaştığımız bazı maddelerin yaklaşık <b>pH değerleri</b> verilmiştir[cite: 12].</p>
-<table class="rt">
-<tr><th>Madde</th><th>Limon Suyu</th><th>Domates Suyu</th><th>Saf Su</th><th>Kan</th><th>Kabartma Tozu</th><th>Sabunlu Su</th></tr>
-<tr><td><b>pH Değeri</b></td><td>2,2</td><td>4,2</td><td>7,0</td><td>7,4</td><td>8,5</td><td>10,5</td></tr>
-</table>
-<p>Tablodaki verilere göre aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `Limon suyunun asitlik kuvveti (H⁺ iyonu derişimi), domates suyuna göre daha fazladır.`,
-    `Sabunlu su ele kayganlık hissi verir ve kırmızı turnusol kâğıdının rengini maviye çevirir.`,
-    `Kan ve kabartma tozu çözeltisi bazik özellik gösterir.`,
-    `İçinde kabartma tozu çözeltisi bulunan bir kaba yavaş yavaş limon suyu eklenirse kaptaki karışımın pH değeri zamanla yükselir (10’a doğru çıkar).`
-  ],
-  a: "D",
-  s: `<p>Kabartma tozu çözeltisinin başlangıç pH değeri <b>8,5</b>’tir (baz). Üzerine pH değeri <b>2,2</b> olan asidik limon suyu eklendikçe baz nötrleşmeye başlar ve kaptaki çözeltinin <b>pH değeri yükselmez, tam tersine 8,5’ten aşağıya doğru DÜŞER (azalır)!</b>[cite: 12] Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bal arısı soktuğunda insan derisine <b>asidik</b> bir sıvı salgılarken; eşek arısı soktuğunda deriye <b>bazik</b> bir sıvı salgılar[cite: 12]. Ayrıca midesinde aşırı <b>hidroklorik asit (HCl)</b> salgılanan bir hastada mide yanması görülür[cite: 12].</p>
-<p>Nötralleşme (Asit + Baz → Tuz + Su) tepkimesinden yararlanarak acıyı ve yanmayı dindirmek için uygulanması gereken doğru yöntemler aşağıdakilerin hangisinde verilmiştir[cite: 12]?</p>`,
-  c: [
-    `Bal arısı sokmasına: Karbonatlı su (baz) sürülmeli — Eşek arısı sokmasına: Sirke veya limon suyu (asit) sürülmeli — Mide yanmasına: Bazik mide ilacı (antiasit) içilmeli`,
-    `Bal arısı sokmasına: Sirke sürülmeli — Eşek arısı sokmasına: Sabunlu su sürülmeli — Mide yanmasına: Limonlu su içilmeli`,
-    `Her iki arı sokmasına da kuvvetli bir baz olan çamaşır suyu sürülmeli`,
-    `Bal arısı sokmasına: Tuz ruhu sürülmeli — Eşek arısı sokmasına: Sud kostik sürülmeli`
-  ],
+  s: `<ul><li><b>I ✓</b> Başlangıçta olmayan bir gazın oluşması yeni madde oluştuğunu gösterir.</li>
+<li><b>II ✓</b> Yeni madde oluştuğu için olay kimyasal değişimdir.</li>
+<li><b>III ✗</b> Kimyasal tepkimelerde toplam kütle <b>her zaman korunur</b>. Terazideki değerin azalmasının nedeni, kabın ağzı açık olduğu için oluşan gazın havaya karışmasıdır. Deney kapalı kapta yapılsaydı kütle değişmezdi.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki modellerde K ve L maddelerinde meydana gelen değişimler tanecik modelleriyle gösterilmiştir. Her renk farklı bir atom türünü gösterir.</p>
+<div class="fig"><svg viewBox="0 0 560 182" width="560" role="img" aria-label="I. olayda aynı iki atomlu moleküller birbirinden uzaklaşıyor; II. olayda kırmızı-kırmızı ve yeşil-yeşil moleküller kırmızı-yeşil moleküllere dönüşüyor" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="6" y="6" width="268" height="170" rx="10" fill="#f8fafc" stroke="#2563eb" stroke-width="1.6"/><rect x="286" y="6" width="268" height="170" rx="10" fill="#fff7f7" stroke="#dc2626" stroke-width="1.6"/><text x="140" y="28" font-size="14" fill="#1d4ed8" font-weight="bold">I. Olay (K maddesi)</text><text x="420" y="28" font-size="14" fill="#b91c1c" font-weight="bold">II. Olay (L maddesi)</text><circle cx="37.6" cy="78" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="50.4" cy="78" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="73.6" cy="78" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="86.4" cy="78" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="37.6" cy="106" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="50.4" cy="106" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="73.6" cy="106" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="86.4" cy="106" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><line x1="110" y1="92" x2="145.2" y2="92" stroke="#1e293b" stroke-width="2"/><polygon points="150.0,92.0 142.8,95.5 142.8,88.5" fill="#1e293b"/><circle cx="165.6" cy="60" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="178.4" cy="60" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="239.6" cy="72" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="252.4" cy="72" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="179.6" cy="128" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="192.4" cy="128" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="243.6" cy="132" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="256.4" cy="132" r="8" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><text x="62" y="166" fill="#475569">Önce</text><text x="212" y="166" fill="#475569">Sonra</text><circle cx="319.6" cy="78" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="332.4" cy="78" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="359.6" cy="78" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="372.4" cy="78" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="319.6" cy="110" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="332.4" cy="110" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="359.6" cy="110" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="372.4" cy="110" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><line x1="396" y1="94" x2="431.2" y2="94" stroke="#1e293b" stroke-width="2"/><polygon points="436.0,94.0 428.8,97.5 428.8,90.5" fill="#1e293b"/><circle cx="455.6" cy="72" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="468.4" cy="72" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="505.6" cy="72" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="518.4" cy="72" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="455.6" cy="116" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="468.4" cy="116" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><circle cx="505.6" cy="116" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="518.4" cy="116" r="8" fill="#4ade80" stroke="#1e293b" stroke-width="1.2"/><text x="346" y="166" fill="#475569">Önce</text><text x="487" y="166" fill="#475569">Sonra</text></svg></div>
+<p>Modellerdeki <b>I. Olay</b> ve <b>II. Olay</b>a günlük hayattan verilebilecek örnekler aşağıdakilerin hangisinde doğru eşleştirilmiştir?</p>`,
+  c: ["I. Olay: Suyun buharlaşması — II. Olay: Demirin paslanması", "I. Olay: Kâğıdın yanması — II. Olay: Camın kırılması", "I. Olay: Ekmeğin küflenmesi — II. Olay: Buzun erimesi", "I. Olay: Elmanın çürümesi — II. Olay: Gökkuşağının oluşması"],
   a: "A",
-  s: `<p>Nötralleşme kuralına göre asidin etkisini hafif bir <b>baz</b>, bazın etkisini ise hafif bir <b>asit</b> giderir[cite: 12]:</p>
-<ul>
-<li><b>Bal arısı (Asit):</b> Hafif bazik olan <b>karbonatlı (kabartma tozlu) su</b> sürülür[cite: 12].</li>
-<li><b>Eşek arısı (Baz):</b> Hafif asidik olan <b>sirke veya limon suyu</b> sürülür.</li>
-<li><b>Mide yanması (Asit):</b> Bazik özellikteki <b>mide şurubu / hapı (antiasit)</b> kullanılır[cite: 12]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Kırmızı lahana suyu doğal bir asit–baz ayıracıdır (indikatörüdür)[cite: 12]. Mor renkli kırmızı lahana suyu; <b>asidik</b> maddelerde <b>pembe/kırmızı</b>, <b>bazik</b> maddelerde ise <b>yeşil/sarı</b> renk alır[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 480 135" width="460" role="img" aria-label="Kırmızı lahana suyu ile K, L, M kaplarında renk değişimi">
-<g stroke="#334155" stroke-width="2">
-<rect x="45" y="45" width="75" height="70" fill="#f43f5e"/>
-<rect x="202" y="45" width="75" height="70" fill="#22c55e"/>
-<rect x="360" y="45" width="75" height="70" fill="#a855f7"/>
-</g>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="82" y="34" fill="#be123c">1. Kap (K Çözeltisi)</text>
-<text x="82" y="84" fill="#fff">Kırmızı oldu</text>
-<text x="240" y="34" fill="#15803d">2. Kap (L Çözeltisi)</text>
-<text x="240" y="84" fill="#fff">Yeşil oldu</text>
-<text x="397" y="34" fill="#6b21a8">3. Kap (M Çözeltisi)</text>
-<text x="397" y="84" fill="#fff">Mor kaldı (Değişmedi)</text>
-</g>
-</svg></div>
-<p>İçlerinde K, L ve M sıvıları bulunan kaplara eşit miktarda kırmızı lahana suyu eklendiğinde görseldeki renkler oluştuğuna göre; K, L ve M sıvıları aşağıdakilerden hangisi olabilir[cite: 12]?</p>`,
-  c: [
-    `K: Elma suyu (Asit) — L: Amonyak / Sabunlu su (Baz) — M: Saf su (Nötr)`,
-    `K: Çamaşır suyu (Baz) — L: Sirke (Asit) — M: Tuzlu su (Nötr)`,
-    `K: Saf su — L: Limon suyu — M: Diş macunu`,
-    `K: Portakal suyu — L: Tuz ruhu — M: Saf su`
-  ],
+  s: `<p><b>I. Olay:</b> Moleküller aynı kalmış, yalnızca birbirinden uzaklaşmıştır. Maddenin kimliği değişmediği için bu bir <b>fiziksel değişim</b>dir (örnek: suyun buharlaşması).</p>
+<p><b>II. Olay:</b> Kırmızı-kırmızı ve yeşil-yeşil moleküllerdeki bağlar kopmuş, kırmızı-yeşil yeni moleküller oluşmuştur. Yeni madde oluştuğu için bu bir <b>kimyasal değişim</b>dir (örnek: demirin paslanması).</p>
+<ul><li><b>A ✓</b> Fiziksel – kimyasal sırası doğru.</li>
+<li><b>B ✗</b> Kâğıdın yanması kimyasal, camın kırılması fizikseldir; sıra ters.</li>
+<li><b>C ✗</b> Küflenme kimyasal, erime fizikseldir; sıra ters.</li>
+<li><b>D ✗</b> Çürüme kimyasal, gökkuşağı fizikseldir; sıra ters.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Kapalı bir kapta gerçekleşen bir kimyasal tepkimede <b>X, Y ve Z</b> maddelerinin kütlelerinin zamanla değişimi aşağıdaki grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 500 244" width="470" role="img" aria-label="Kütle-zaman grafiği: X 24 g'dan 0'a, Y 20 g'dan 4 g'a azalıyor, Z 0'dan m değerine artıyor" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="70" y1="200" x2="465.2" y2="200" stroke="#1e293b" stroke-width="2"/><polygon points="470.0,200.0 462.8,203.5 462.8,196.5" fill="#1e293b"/><line x1="70" y1="200" x2="70" y2="24.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,20.0 73.5,27.2 66.5,27.2" fill="#1e293b"/><text x="470" y="236" text-anchor="end" font-weight="bold">Zaman</text><text x="66" y="12" text-anchor="start" font-weight="bold">Kütle (g)</text><line x1="70" y1="185.6" x2="420" y2="185.6" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="189.6" text-anchor="end">4</text><line x1="70" y1="128" x2="420" y2="128" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="132" text-anchor="end">20</text><line x1="70" y1="113.6" x2="420" y2="113.6" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="117.6" text-anchor="end">24</text><line x1="70" y1="56" x2="420" y2="56" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="60" font-size="13" text-anchor="end" fill="#15803d" font-weight="bold">m</text><text x="62" y="204" text-anchor="end">0</text><polyline points="70,113.6 300,200 420,200" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-linejoin="round"/><polyline points="70,128 300,185.6 420,185.6" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><polyline points="70,200 300,56 420,56" fill="none" stroke="#16a34a" stroke-width="2.6" stroke-linejoin="round"/><text x="428" y="60" font-size="14" text-anchor="start" fill="#15803d" font-weight="bold">Z</text><text x="428" y="183.6" font-size="14" text-anchor="start" fill="#1d4ed8" font-weight="bold">Y</text><text x="428" y="204" font-size="14" text-anchor="start" fill="#b91c1c" font-weight="bold">X</text><line x1="300" y1="200" x2="300" y2="56" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/></svg></div>
+<p>Buna göre tepkimede oluşan <b>Z’nin kütlesi (m)</b> ve tepkime bittiğinde <b>kaptaki toplam madde kütlesi</b> kaç gramdır?</p>`,
+  c: ["m = 40 g — Toplam kütle = 44 g", "m = 44 g — Toplam kütle = 44 g", "m = 40 g — Toplam kütle = 40 g", "m = 36 g — Toplam kütle = 44 g"],
   a: "A",
-  s: `<p>Renk değişimlerini yorumlayalım[cite: 12]:</p>
-<ul>
-<li><b>K (Kırmızı oldu):</b> Asittir → <b>Elma suyu</b> (malik asit)[cite: 12].</li>
-<li><b>L (Yeşil oldu):</b> Bazdır → <b>Amonyak veya sabunlu su</b>[cite: 12].</li>
-<li><b>M (Mor kaldı):</b> Nötr maddedir (pH = 7) → <b>Saf su</b>[cite: 12]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Termik santrallerde, fabrikalarda ve motorlu taşıtlarda fosil yakıtların (kömür, petrol) yakılması sonucunda atmosferde biriken <b>SO₂ (kükürt dioksit)</b>, <b>NO₂ (azot dioksit)</b> ve <b>CO₂ (karbondioksit)</b> gazları, bulutlardaki su buharıyla kimyasal tepkimeye girerek <b>asit yağmurlarını</b> oluşturur[cite: 12].</p>
-<p>Asit yağmurlarının oluşumunu ve çevreye verdiği zararları azaltmak için aşağıdaki uygulamalardan hangisinin yapılması <b>uygun değildir</b>[cite: 12]?</p>`,
-  c: [
-    `Fabrika ve termik santral bacalarına gaz tutucu filtre sistemlerinin takılması`,
-    `Şehir içi ulaşımda bireysel araçlar yerine elektrikli toplu taşıma araçlarının yaygınlaştırılması`,
-    `Enerji üretiminde güneş, rüzgâr ve jeotermal gibi yenilenebilir kaynakların payının artırılması`,
-    `Konutların ısıtılmasında doğal gaz yerine kükürt oranı yüksek linyit kömürü kullanımının teşvik edilmesi`
-  ],
+  s: `<p>Kütlesi azalan X ve Y tepkimeye girenler, kütlesi artan Z üründür.</p>
+<ul><li>Harcanan X: 24 − 0 = <b>24 g</b></li>
+<li>Harcanan Y: 20 − 4 = <b>16 g</b> (4 g Y artmıştır)</li>
+<li>Oluşan Z: 24 + 16 = <b>40 g</b> (kütle korunur)</li>
+<li>Kaptaki toplam kütle: başlangıçtaki 24 + 20 = <b>44 g</b> (sonda 40 g Z + 4 g artan Y = 44 g)</li></ul>
+<p>B’de artan 4 g Y de ürüne katılmış; C’de artan Y unutulmuş; D’de harcanan Y yanlış hesaplanmıştır. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Kapalı bir kapta gerçekleşen <b>metan (CH₄) gazının oksijen (O₂) ile yanması</b> tepkimesinin molekül modeli aşağıda gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Metanın yanması molekül modeli: 1 CH4 ve 2 O2 tepkimeye girerek 1 CO2 ve 2 H2O oluşturuyor" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="4" y="4" width="552" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><line x1="60" y1="66" x2="42" y2="52" stroke="#64748b" stroke-width="2"/><circle cx="42" cy="52" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><line x1="60" y1="66" x2="78" y2="52" stroke="#64748b" stroke-width="2"/><circle cx="78" cy="52" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><line x1="60" y1="66" x2="42" y2="80" stroke="#64748b" stroke-width="2"/><circle cx="42" cy="80" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><line x1="60" y1="66" x2="78" y2="80" stroke="#64748b" stroke-width="2"/><circle cx="78" cy="80" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><circle cx="60" cy="66" r="12" fill="#1f2937" stroke="#1e293b" stroke-width="1.2"/><text x="60" y="70" font-size="11" fill="#fff" font-weight="bold">C</text><text x="60" y="112" font-weight="bold">1 CH₄</text><text x="110" y="72" font-size="20" font-weight="bold">+</text><circle cx="152" cy="48" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="168" cy="48" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="152" cy="84" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="168" cy="84" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><text x="160" y="112" font-weight="bold">2 O₂</text><line x1="205" y1="66" x2="270.2" y2="66" stroke="#1d4ed8" stroke-width="2.4"/><polygon points="275.0,66.0 267.8,69.5 267.8,62.5" fill="#1d4ed8"/><text x="240" y="54" fill="#1d4ed8">tepkime</text><circle cx="315" cy="66" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="355" cy="66" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="335" cy="66" r="12" fill="#1f2937" stroke="#1e293b" stroke-width="1.2"/><text x="335" y="70" font-size="11" fill="#fff" font-weight="bold">C</text><text x="335" y="112" font-weight="bold">1 CO₂</text><text x="390" y="72" font-size="20" font-weight="bold">+</text><circle cx="437" cy="53" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><circle cx="463" cy="53" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><circle cx="450" cy="44" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><circle cx="437" cy="89" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><circle cx="463" cy="89" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><circle cx="450" cy="80" r="10" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><text x="450" y="112" font-weight="bold">2 H₂O</text><circle cx="500" cy="30" r="7" fill="#93c5fd" stroke="#1e293b" stroke-width="1.2"/><text x="512" y="34" text-anchor="start">H</text><circle cx="500" cy="52" r="7" fill="#ef4444" stroke="#1e293b" stroke-width="1.2"/><text x="512" y="56" text-anchor="start">O</text><circle cx="500" cy="74" r="7" fill="#1f2937" stroke="#1e293b" stroke-width="1.2"/><text x="512" y="78" text-anchor="start">C</text><text x="280" y="140" font-size="12.5" fill="#166534" font-weight="bold">Girenler: 1 C, 4 H, 4 O        Ürünler: 1 C, 4 H, 4 O</text></svg></div>
+<p>Bu tepkimeyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Tepkimeye giren moleküllerdeki atomlar arası bağlar kopmuş, CO₂ ve H₂O moleküllerinde yeni bağlar oluşmuştur.", "Tepkimede atomların türü ve toplam atom sayısı korunmuştur.", "Tepkime kapalı kapta gerçekleştiği için girenlerin toplam kütlesi, ürünlerin toplam kütlesine eşittir.", "Tepkime sonunda karbon ve oksijen atomları yok olmuş, yerlerine yeni element atomları oluşmuştur."],
   a: "D",
-  s: `<p>Kükürt oranı yüksek kömürlerin yakılması havaya çok yüksek miktarda <b>$SO_2$ (kükürt dioksit)</b> gazı salar ve bu gaz yağmur suyuyla birleşerek <b>sülfürik asit ($H_2SO_4$)</b> yağmurlarını artırır[cite: 12] (<b>D uygun değildir</b>)[cite: 12]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Özdeş K ve L beherglaslarında, sıcaklıkları birbirine eşit (<b>60 °C</b>) olan <b>200 g</b> ve <b>400 g</b> saf su bulunmaktadır[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 320 145" width="300" role="img" aria-label="Aynı sıcaklıkta farklı kütleli K ve L suları">
-<g stroke="#1e3a8a" stroke-width="2">
-<rect x="35" y="25" width="90" height="95" fill="#f8fafc"/>
-<rect x="35" y="75" width="90" height="45" fill="#93c5fd"/>
-<rect x="195" y="25" width="90" height="95" fill="#f8fafc"/>
-<rect x="195" y="40" width="90" height="80" fill="#93c5fd"/>
-</g>
-<g font-size="10.5" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="80" y="68" fill="#1e40af">200 g Su (60 °C)</text>
-<text x="240" y="34" fill="#1e40af">400 g Su (60 °C)</text>
-<text x="80" y="138" font-size="13" fill="#dc2626">K Kabı</text>
-<text x="240" y="138" font-size="13" fill="#16a34a">L Kabı</text>
-</g>
-</svg></div>
-<p>K ve L kaplarındaki sularla ilgili;</p>
-<p>I. Sıcaklıkları eşit olduğu için K ve L’deki su taneciklerinin ortalama hareket (kinetik) enerjileri birbirine eşittir[cite: 12].<br>
-II. L kabındaki suyun kütlesi daha fazla olduğu için aynı ortamda 60 °C’den 20 °C’ye soğurken dışarıya K’den daha fazla ısı verir[cite: 12].<br>
-III. K ve L kaplarındaki sular birbirine karıştırılırsa, kütlesi fazla olan L’den K’ye doğru ısı akışı gerçekleşir[cite: 12].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Yalnız I`,
-    `I ve II`,
-    `II ve III`,
-    `I, II ve III`
-  ],
+  s: `<p>Kimyasal tepkimede atomlar yok olmaz ve yeni atom oluşmaz; yalnızca atomlar arasındaki bağlar kopar ve yeni bağlar kurulur.</p>
+<ul><li><b>A</b> doğru: CH₄ ve O₂’deki bağlar kopmuş, CO₂ ve H₂O’da yeni bağlar kurulmuştur.</li>
+<li><b>B</b> doğru: Girenlerde de ürünlerde de 1 C, 4 H, 4 O atomu vardır (toplam 9 atom).</li>
+<li><b>C</b> doğru: Kapalı kapta toplam kütle korunur.</li>
+<li><b>D</b> yanlış: Model iki tarafta da aynı atomları gösteriyor; hiçbir atom yok olmamıştır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir kimyasal tepkimede incelenen bazı nicelikler ve bu niceliklerin değişim durumları aşağıdaki tabloda verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Seçenek</th><th>İncelenen nicelik</th><th>Değişim durumu</th></tr>
+<tr><td><b>A</b></td><td>Toplam kütle</td><td>Her zaman korunur.</td></tr>
+<tr><td><b>B</b></td><td>Atomların türü ve sayısı</td><td>Her zaman korunur.</td></tr>
+<tr><td><b>C</b></td><td>Toplam proton ve elektron sayısı</td><td>Her zaman korunur.</td></tr>
+<tr><td><b>D</b></td><td>Toplam molekül sayısı ve maddelerin kimyasal özellikleri</td><td>Her zaman korunur.</td></tr>
+</table></div>
+<p>Tablodaki bilgilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["A", "B", "C", "D"],
+  a: "D",
+  s: `<p>Kimyasal tepkimede atomlar korunduğu için atom türü ve sayısı (B), atomların içindeki proton ve elektronların toplam sayısı (C) ve toplam kütle (A) değişmez.</p>
+<p>Ancak tepkimede <b>yeni maddeler</b> oluştuğu için maddelerin kimyasal özellikleri değişir. Molekül sayısı da değişebilir: Örneğin hidrojenin yanmasında 2 hidrojen molekülü ve 1 oksijen molekülü (3 molekül) tepkimeye girer, 2 su molekülü oluşur. Bu yüzden D’deki bilgi yanlıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci <b>K kabına tuz ruhu (HCl) çözeltisi</b>, <b>L kabına sud kostik (NaOH) çözeltisi</b> koyarak aşağıdaki devreleri kuruyor ve iki ampulün de ışık verdiğini görüyor.</p>
+<div class="fig"><svg viewBox="0 0 560 182" width="560" role="img" aria-label="K kabında tuz ruhu, L kabında sud kostik çözeltisi bulunan iki devre; iki ampul de yanıyor" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="84" width="150" height="66" fill="#fecaca"/><path d="M40,60 L40,150 L190,150 L190,60" fill="none" stroke="#334155" stroke-width="2.2"/><line x1="80" y1="140" x2="80" y2="36" stroke="#334155" stroke-width="3"/><line x1="150" y1="140" x2="150" y2="36" stroke="#334155" stroke-width="3"/><line x1="80" y1="36" x2="105" y2="36" stroke="#334155" stroke-width="2"/><line x1="125" y1="36" x2="150" y2="36" stroke="#334155" stroke-width="2"/><rect x="70" y="22" width="14" height="10" fill="#111827" stroke="#111827" stroke-width="1"/><line x1="105.4" y1="30" x2="96.6" y2="24.5" stroke="#f59e0b" stroke-width="2"/><line x1="124.6" y1="30" x2="133.4" y2="24.5" stroke="#f59e0b" stroke-width="2"/><line x1="115" y1="24" x2="115" y2="13" stroke="#f59e0b" stroke-width="2"/><line x1="107.8" y1="25.2" x2="101.2" y2="15.3" stroke="#f59e0b" stroke-width="2"/><line x1="122.2" y1="25.2" x2="128.8" y2="15.3" stroke="#f59e0b" stroke-width="2"/><circle cx="115" cy="36" r="10" fill="#fde047" stroke="#a16207" stroke-width="1.6"/><text x="115" y="172" font-size="12.5" font-weight="bold">K: tuz ruhu (HCl) çözeltisi</text><rect x="310" y="84" width="150" height="66" fill="#bfdbfe"/><path d="M310,60 L310,150 L460,150 L460,60" fill="none" stroke="#334155" stroke-width="2.2"/><line x1="350" y1="140" x2="350" y2="36" stroke="#334155" stroke-width="3"/><line x1="420" y1="140" x2="420" y2="36" stroke="#334155" stroke-width="3"/><line x1="350" y1="36" x2="375" y2="36" stroke="#334155" stroke-width="2"/><line x1="395" y1="36" x2="420" y2="36" stroke="#334155" stroke-width="2"/><rect x="340" y="22" width="14" height="10" fill="#111827" stroke="#111827" stroke-width="1"/><line x1="375.4" y1="30" x2="366.6" y2="24.5" stroke="#f59e0b" stroke-width="2"/><line x1="394.6" y1="30" x2="403.4" y2="24.5" stroke="#f59e0b" stroke-width="2"/><line x1="385" y1="24" x2="385" y2="13" stroke="#f59e0b" stroke-width="2"/><line x1="377.8" y1="25.2" x2="371.2" y2="15.3" stroke="#f59e0b" stroke-width="2"/><line x1="392.2" y1="25.2" x2="398.8" y2="15.3" stroke="#f59e0b" stroke-width="2"/><circle cx="385" cy="36" r="10" fill="#fde047" stroke="#a16207" stroke-width="1.6"/><text x="385" y="172" font-size="12.5" font-weight="bold">L: sud kostik (NaOH) çözeltisi</text></svg></div>
+<p>Bu düzeneklerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Asit ve baz çözeltileri elektriği iletir; K’deki çözelti mavi turnusolü kırmızıya, L’deki çözelti kırmızı turnusolü maviye çevirir.", "Bazlar elektriği iletmediği için yalnızca K’deki ampulün ışık vermesi beklenirdi.", "K ve L’deki çözeltiler karıştırılırsa kimyasal tepkime gerçekleşmez.", "L’deki çözeltinin pH değeri 7’den küçüktür."],
+  a: "A",
+  s: `<ul><li><b>A ✓</b> Asitlerin ve bazların sulu çözeltilerinde iyonlar bulunduğu için ikisi de elektriği iletir; bu yüzden iki ampul de yanmıştır. Asit (HCl) mavi turnusolü kırmızıya, baz (NaOH) kırmızı turnusolü maviye çevirir.</li>
+<li><b>B ✗</b> Bazların sulu çözeltileri de elektriği iletir; zaten L’deki ampul de yanmıştır.</li>
+<li><b>C ✗</b> Asit ile baz karıştırılınca <b>nötrleşme tepkimesi</b> gerçekleşir (tuz ve su oluşur).</li>
+<li><b>D ✗</b> NaOH bir bazdır; pH değeri 7’den büyüktür.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Sanayide ve günlük yaşamda kullanılan bazı asit ve bazların formülleri, adları ve sınıfları aşağıdaki tabloda verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Formül</th><th>Adı</th><th>Yaygın adı</th><th>Sınıfı ve suda oluşturduğu iyon</th></tr>
+<tr><td><b>HCl</b></td><td>Hidroklorik asit</td><td>Tuz ruhu</td><td>Asit (H⁺)</td></tr>
+<tr><td><b>H₂SO₄</b></td><td>Sülfürik asit</td><td>Zaç yağı</td><td>Asit (H⁺)</td></tr>
+<tr><td><b>HNO₃</b></td><td>Nitrik asit</td><td>Kezzap</td><td>Asit (H⁺)</td></tr>
+<tr><td><b>NaOH</b></td><td>Sodyum hidroksit</td><td>Sud kostik</td><td>Baz (OH⁻)</td></tr>
+<tr><td><b>NH₃</b></td><td>Amonyak</td><td>Amonyak</td><td>Asit (H⁺)</td></tr>
+</table></div>
+<p>Tablodaki maddelerden hangisinin sınıfı ve suda oluşturduğu iyon <b>yanlış</b> yazılmıştır?</p>`,
+  c: ["HCl (tuz ruhu)", "H₂SO₄ (zaç yağı)", "NaOH (sud kostik)", "NH₃ (amonyak)"],
+  a: "D",
+  s: `<p>Formülünde H bulunan her madde asit değildir. <b>Amonyak (NH₃)</b> formülünde OH görünmese de suda çözündüğünde suyla etkileşerek <b>OH⁻ iyonu</b> oluşturur; yani bir <b>baz</b>dır. Temizlik ürünlerinde kullanılır ve kırmızı turnusol kâğıdını maviye çevirir.</p>
+<p>HCl, H₂SO₄ ve HNO₃ suda H⁺ iyonu oluşturan asitlerdir; NaOH suda OH⁻ iyonu oluşturan bir bazdır. Bunlar doğru yazılmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda günlük hayatta karşılaştığımız bazı maddelerin yaklaşık pH değerleri verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Madde</th><th>Limon suyu</th><th>Domates suyu</th><th>Saf su</th><th>Kan</th><th>Kabartma tozu çözeltisi</th><th>Sabunlu su</th></tr>
+<tr><td><b>pH</b></td><td>2,2</td><td>4,2</td><td>7,0</td><td>7,4</td><td>8,5</td><td>10,5</td></tr>
+</table></div>
+<p>Tablodaki verilere göre aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Limon suyu, domates suyundan daha asidiktir.", "Sabunlu su bazik olduğu için kırmızı turnusol kâğıdını maviye çevirir.", "Kan ve kabartma tozu çözeltisi bazik özellik gösterir.", "Kabartma tozu çözeltisine yavaş yavaş limon suyu eklenirse karışımın pH değeri yükselir."],
+  a: "D",
+  s: `<p>pH değeri 7’den küçük olanlar asidik, büyük olanlar baziktir; pH küçüldükçe asitlik artar.</p>
+<ul><li><b>A</b> doğru: 2,2 &lt; 4,2 olduğundan limon suyu daha asidiktir.</li>
+<li><b>B</b> doğru: pH = 10,5 → baz; bazlar kırmızı turnusolü maviye çevirir.</li>
+<li><b>C</b> doğru: 7,4 ve 8,5 değerleri 7’den büyüktür.</li>
+<li><b>D</b> yanlış: Bazik çözeltiye (pH 8,5) asit (pH 2,2) eklendikçe nötrleşme olur ve pH <b>düşer</b>, yükselmez.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>İçlerinde <b>asit</b>, <b>baz</b> ve <b>saf su</b> olduğu bilinen ama etiketleri düşmüş 1, 2 ve 3 numaralı şişelerdeki sıvılarla aşağıdaki deneyler yapılıyor.</p>
+<ul><li><b>1. şişedeki</b> sıvıya çinko parçaları atılınca gaz kabarcıkları çıkıyor ve çinko aşınıyor.</li>
+<li><b>2. şişedeki</b> sıvıya batırılan kırmızı turnusol kâğıdı maviye dönüyor.</li>
+<li><b>3. şişedeki</b> sıvıya batırılan kırmızı ve mavi turnusol kâğıtlarının renkleri değişmiyor.</li></ul>
+<p>Buna göre şişelerdeki sıvıların pH değerleri aşağıdakilerin hangisinde verilmiş <b>olabilir</b>?</p>`,
+  c: ["1. şişe: 2 — 2. şişe: 12 — 3. şişe: 7", "1. şişe: 13 — 2. şişe: 3 — 3. şişe: 7", "1. şişe: 7 — 2. şişe: 11 — 3. şişe: 1", "1. şişe: 5 — 2. şişe: 6 — 3. şişe: 14"],
+  a: "A",
+  s: `<ul><li>Çinko gibi metallerle tepkimeye girip hidrojen gazı çıkaran <b>1. şişe asittir</b> → pH &lt; 7.</li>
+<li>Kırmızı turnusolü maviye çeviren <b>2. şişe bazdır</b> → pH &gt; 7.</li>
+<li>Turnusolün rengini değiştirmeyen <b>3. şişe saf sudur</b> → pH = 7.</li></ul>
+<p>Bu koşulları yalnız A sağlar. B’de asit ile baz yer değiştirmiş; C’de 1. şişe nötr, 3. şişe asit verilmiş; D’de 2. şişe asit, 3. şişe baz verilmiştir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Kırmızı lahana suyu doğal bir asit-baz ayracıdır. Mor renkli kırmızı lahana suyu <b>asidik</b> maddelerde <b>pembe-kırmızı</b>, <b>bazik</b> maddelerde <b>yeşil-sarı</b> renk alır; nötr maddelerde mor kalır.</p>
+<div class="fig"><svg viewBox="0 0 560 156" width="560" role="img" aria-label="Kırmızı lahana suyu eklenince K kabı kırmızı, L kabı yeşil, M kabı mor renkte" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="50" y="48" width="90" height="72" fill="#ef4444"/><path d="M50,20 L50,120 L140,120 L140,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="95" y="92" font-size="18" fill="#ffffff" font-weight="bold">K</text><text x="95" y="144" font-size="13" font-weight="bold">Kırmızı</text><rect x="220" y="48" width="90" height="72" fill="#22c55e"/><path d="M220,20 L220,120 L310,120 L310,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="265" y="92" font-size="18" fill="#ffffff" font-weight="bold">L</text><text x="265" y="144" font-size="13" font-weight="bold">Yeşil</text><rect x="390" y="48" width="90" height="72" fill="#8b5cf6"/><path d="M390,20 L390,120 L480,120 L480,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="435" y="92" font-size="18" fill="#ffffff" font-weight="bold">M</text><text x="435" y="144" font-size="13" font-weight="bold">Mor (değişmedi)</text></svg></div>
+<p>İçlerinde K, L ve M sıvıları bulunan kaplara kırmızı lahana suyu eklendiğinde yukarıdaki renkler oluştuğuna göre K, L ve M aşağıdakilerden hangisi <b>olabilir</b>?</p>`,
+  c: ["K: Elma suyu — L: Sabunlu su — M: Saf su", "K: Çamaşır suyu — L: Sirke — M: Saf su", "K: Saf su — L: Limon suyu — M: Diş macunu çözeltisi", "K: Portakal suyu — L: Tuz ruhu — M: Saf su"],
+  a: "A",
+  s: `<ul><li><b>K kırmızı</b> olduğuna göre asittir (elma suyu, portakal suyu, sirke gibi).</li>
+<li><b>L yeşil</b> olduğuna göre bazdır (sabunlu su, çamaşır suyu gibi).</li>
+<li><b>M mor kaldığına</b> göre nötrdür (saf su).</li></ul>
+<p>A: elma suyu (asit), sabunlu su (baz), saf su (nötr) ✓. B’de K baz, L asit verilmiş; C’de K nötr, L asit verilmiş; D’de L (tuz ruhu) asittir, yeşil olmaz. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Asitlerin ve bazların bazı maddeler üzerindeki etkilerini inceleyen bir öğrenci aşağıdaki gözlemleri yapıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 196" width="560" role="img" aria-label="Üç düzenek: çinko ve tuz ruhu, mermer ve limon suyu, cam bardak ve bazik deterjan" font-size="12" fill="#1e293b" text-anchor="middle"><text x="95" y="20" font-size="13" font-weight="bold">1. düzenek</text><rect x="45" y="62" width="100" height="70" fill="#e0f2fe"/><path d="M45,32 L45,132 L145,132 L145,32" fill="none" stroke="#334155" stroke-width="2.2"/><rect x="80" y="100" width="30" height="26" fill="#9ca3af" stroke="#4b5563" stroke-width="1.2"/><circle cx="86" cy="90" r="3.5" fill="#fff" stroke="#0369a1" stroke-width="1.2"/><circle cx="100" cy="80" r="3.5" fill="#fff" stroke="#0369a1" stroke-width="1.2"/><circle cx="94" cy="66" r="3.5" fill="#fff" stroke="#0369a1" stroke-width="1.2"/><circle cx="108" cy="92" r="3.5" fill="#fff" stroke="#0369a1" stroke-width="1.2"/><circle cx="90" cy="76" r="3.5" fill="#fff" stroke="#0369a1" stroke-width="1.2"/><text x="95" y="152">Çinko parçası +</text><text x="95" y="167">tuz ruhu (HCl)</text><text x="95" y="186" font-size="11.5" fill="#b91c1c">Gaz çıkıyor, çinko aşınıyor</text><text x="280" y="20" font-size="13" font-weight="bold">2. düzenek</text><rect x="220" y="104" width="120" height="28" rx="3" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/><text x="280" y="123" fill="#475569">mermer</text><ellipse cx="280" cy="100" rx="30" ry="7" fill="#fde047" stroke="#ca8a04" stroke-width="1.2"/><circle cx="266" cy="90" r="3.5" fill="#fff" stroke="#ca8a04" stroke-width="1.2"/><circle cx="280" cy="84" r="3.5" fill="#fff" stroke="#ca8a04" stroke-width="1.2"/><circle cx="294" cy="90" r="3.5" fill="#fff" stroke="#ca8a04" stroke-width="1.2"/><circle cx="273" cy="78" r="3.5" fill="#fff" stroke="#ca8a04" stroke-width="1.2"/><circle cx="288" cy="76" r="3.5" fill="#fff" stroke="#ca8a04" stroke-width="1.2"/><text x="280" y="152">Mermer tezgâha</text><text x="280" y="167">limon suyu damlatılıyor</text><text x="280" y="186" font-size="11.5" fill="#b91c1c">Köpürme, yüzey matlaşıyor</text><text x="465" y="20" font-size="13" font-weight="bold">3. düzenek</text><path d="M440,40 L450,132 L480,132 L490,40" fill="#f8fafc" stroke="#334155" stroke-width="2"/><line x1="447" y1="60" x2="483" y2="60" stroke="#cbd5e1" stroke-width="3"/><line x1="447" y1="80" x2="483" y2="80" stroke="#cbd5e1" stroke-width="3"/><line x1="447" y1="100" x2="483" y2="100" stroke="#cbd5e1" stroke-width="3"/><line x1="447" y1="118" x2="483" y2="118" stroke="#cbd5e1" stroke-width="3"/><text x="465" y="152">Cam bardak, bazik bulaşık</text><text x="465" y="167">makinesi deterjanıyla yıkanıyor</text><text x="465" y="186" font-size="11.5" fill="#b91c1c">Bardak zamanla matlaşıyor</text></svg></div>
+<p>Bu gözlemlere göre aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Asitler çinko gibi metallerle tepkimeye girip gaz oluşturduğu için metal kaplarda saklanmamalıdır.", "Mermer tezgâh üzerinde limon kesmek veya sirke dökmek tezgâhı aşındırabilir.", "Bazik deterjanlar cam yüzeyleri zamanla aşındırıp matlaştırabilir.", "Tuz ruhu gibi asitler camı aşındırdığı için demir kaplarda saklanmalıdır."],
+  a: "D",
+  s: `<ul><li><b>A</b> doğru: 1. düzenekte asit çinkoyu aşındırıp hidrojen gazı oluşturmuştur; asitler metal kaplarda saklanmaz.</li>
+<li><b>B</b> doğru: 2. düzenekte limon suyu (asit) mermeri aşındırmıştır.</li>
+<li><b>C</b> doğru: 3. düzenekte bazik deterjan camı matlaştırmıştır.</li>
+<li><b>D</b> yanlış: Gözlemlerde asidin camı aşındırdığına dair bir bilgi yoktur; asitler genellikle <b>cam veya plastik</b> kaplarda saklanır. Demir bir metaldir; asit demiri aşındırır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Asit ile bazın tepkimesine <b>nötrleşme</b> denir: Asit + Baz → Tuz + Su. Günlük hayatta bir asidin ya da bazın zararlı etkisini azaltmak için nötrleşmeden yararlanılır.</p>
+<div class="tbl"><table>
+<tr><th>Durum</th><th>Nedeni</th></tr>
+<tr><td>Karınca ısırığında ciltte yanma</td><td>Karıncanın salgıladığı formik asit</td></tr>
+<tr><td>Mide yanması</td><td>Midede fazla salgılanan hidroklorik asit</td></tr>
+<tr><td>Tarla toprağının fazla asidik olması</td><td>Asit yağmurları, bilinçsiz gübre kullanımı</td></tr>
+</table></div>
+<p>Bu durumlarda yapılabilecek uygulamalar aşağıdakilerin hangisinde <b>doğru</b> verilmiştir?</p>`,
+  c: ["Isırık yerine karbonatlı su sürmek — Bazik mide ilacı (antiasit) almak — Toprağa kireç (baz) katmak", "Isırık yerine sirke sürmek — Limonlu su içmek — Toprağa sülfürik asit katmak", "Isırık yerine tuz ruhu sürmek — Sirke içmek — Toprağa limon suyu katmak", "Isırık yerine limon suyu sürmek — Bazik mide ilacı almak — Toprağa sirke katmak"],
+  a: "A",
+  s: `<p>Üç durumun nedeni de bir <b>asit</b>tir. Asidin etkisini azaltmak için hafif bir <b>baz</b> kullanılır:</p>
+<ul><li>Karınca ısırığı → hafif bazik <b>karbonatlı su</b> (kabartma tozlu su),</li>
+<li>Mide yanması → bazik <b>mide ilacı (antiasit)</b>,</li>
+<li>Asidik toprak → bazik <b>kireç</b>.</li></ul>
+<p>B, C ve D’deki sirke, limon suyu, tuz ruhu ve sülfürik asit asittir; asitliği artırır. Tuz ruhu gibi tehlikeli bir maddenin cilde sürülmesi ise ayrıca zararlıdır. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Termik santrallerde, fabrikalarda ve taşıtlarda kömür, petrol gibi fosil yakıtlar yakıldığında havaya başta <b>kükürt dioksit (SO₂)</b> ve <b>azot oksitler (NO₂ gibi)</b> karışır. Bu gazlar bulutlardaki su buharıyla tepkimeye girerek <b>asit yağmurlarını</b> oluşturur.</p>
+<p>Asit yağmurlarını azaltmak için aşağıdaki uygulamalardan hangisi <b>uygun değildir</b>?</p>`,
+  c: ["Fabrika ve santral bacalarına gaz tutucu filtreler takılması", "Şehir içi ulaşımda bireysel araçlar yerine toplu taşımanın yaygınlaştırılması", "Enerji üretiminde güneş, rüzgâr gibi yenilenebilir kaynakların payının artırılması", "Konutların ısıtılmasında kükürt oranı yüksek kömür kullanımının artırılması"],
+  a: "D",
+  s: `<p>Asit yağmurlarının nedeni fosil yakıtların yanmasıyla havaya karışan SO₂ ve azot oksitlerdir. Bu gazları azaltan her uygulama uygundur.</p>
+<ul><li><b>A</b> uygun: Filtreler gazların havaya karışmasını azaltır.</li>
+<li><b>B</b> uygun: Daha az araç, daha az egzoz gazı demektir.</li>
+<li><b>C</b> uygun: Yenilenebilir kaynaklar bu gazları oluşturmaz.</li>
+<li><b>D</b> uygun değil: Kükürt oranı yüksek kömür yandığında havaya çok fazla SO₂ karışır; asit yağmurları artar.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Isıca yalıtılmış bir ortamda birbirine dokundurulan <b>K ve L</b> katı cisimleri arasında ısı akışı şekildeki gibi <b>K’den L’ye</b> doğrudur.</p>
+<div class="fig"><svg viewBox="0 0 440 162" width="420" role="img" aria-label="Birbirine dokunan K ve L cisimleri; ısı K'den L'ye akıyor" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="70" y="30" width="150" height="80" rx="6" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><rect x="220" y="30" width="150" height="80" rx="6" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/><text x="145" y="76" font-size="22" fill="#7f1d1d" font-weight="bold">K</text><text x="295" y="76" font-size="22" fill="#1e3a8a" font-weight="bold">L</text><line x1="160" y1="132" x2="282.8" y2="132" stroke="#dc2626" stroke-width="3"/><polygon points="290.0,132.0 279.2,137.2 279.2,126.8" fill="#dc2626"/><text x="225" y="152" font-size="13" fill="#b91c1c" font-weight="bold">Isı akışı</text></svg></div>
+<p>Yalnızca ısı akışının yönü bilindiğine göre, K ve L’nin başlangıçtaki hangi nicelikleri <b>kesinlikle</b> karşılaştırılabilir?</p>`,
+  c: ["Sıcaklıkları (K’ninki L’ninkinden büyüktür)", "Kütleleri (K’ninki L’ninkinden büyüktür)", "Öz ısıları (K’ninki L’ninkinden büyüktür)", "Hacimleri (K’ninki L’ninkinden büyüktür)"],
+  a: "A",
+  s: `<p>Isı her zaman <b>sıcaklığı yüksek olandan düşük olana</b> akar. Isı akışının yönünü yalnızca sıcaklık farkı belirler; kütle, öz ısı ya da hacim belirlemez.</p>
+<p>Isı K’den L’ye aktığına göre başlangıçta K’nin sıcaklığı L’ninkinden kesinlikle büyüktür. Kütle, öz ısı ve hacim için bir şey söylenemez. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Özdeş K ve L kaplarında sıcaklıkları eşit (<b>60 °C</b>) olan <b>200 g</b> ve <b>400 g</b> saf su bulunmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 450 172" width="430" role="img" aria-label="Özdeş K ve L kaplarında 60 °C'ta 200 g ve 400 g su" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="60" y="95" width="110" height="45" fill="#93c5fd"/><path d="M60,30 L60,140 L170,140 L170,30" fill="none" stroke="#334155" stroke-width="2.2"/><rect x="280" y="50" width="110" height="90" fill="#93c5fd"/><path d="M280,30 L280,140 L390,140 L390,30" fill="none" stroke="#334155" stroke-width="2.2"/><text x="115" y="162" font-size="13" font-weight="bold">K: 200 g su, 60 °C</text><text x="335" y="162" font-size="13" font-weight="bold">L: 400 g su, 60 °C</text></svg></div>
+<p>Bu sularla ilgili;</p>
+<p>I. Sıcaklıkları eşit olduğu için K ve L’deki su taneciklerinin ortalama hareket enerjileri eşittir.<br>
+II. Aynı ortamda 60 °C’tan 20 °C’a soğurken L’deki su çevresine K’dekinden daha fazla ısı verir.<br>
+III. K ve L’deki sular karıştırılırsa kütlesi fazla olan L’den K’ye doğru ısı akar.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
   a: "B",
-  s: `<p>Isı ve sıcaklık kavramlarını ayırt edelim[cite: 12]:</p>
-<ul>
-<li><b>I (Doğru):</b> Sıcaklıklar eşit (60 °C) olduğu için taneciklerin <b>ortalama hareket enerjileri eşittir</b>[cite: 12].</li>
-<li><b>II (Doğru):</b> $Q = m \cdot c \cdot \Delta T$ bağıntısına göre L’nin kütlesi 2 kat fazla olduğu için soğurken çevreye 2 kat fazla ısı verir[cite: 12].</li>
-<li><b>III (Yanlış):</b> Isı alışverişinin tek şartı kütle farkı değil, <b>sıcaklık farkıdır!</b>[cite: 12] İki suyun da sıcaklığı 60 °C olduğu için aralarında <b>ısı alışverişi OLMAZ!</b>[cite: 12] Cevap <b>B</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Başlangıçta katı hâlde bulunan saf bir <b>X maddesi</b>, birim zamanda eşit ısı veren bir ısıtıcıyla düzenli olarak ısıtılıyor ve sıcaklığının zamana bağlı değişim grafiği aşağıdaki gibi çiziliyor[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 380 215" width="360" role="img" aria-label="X maddesinin ısınma ve hal değişim grafiği">
-<line x1="50" y1="185" x2="355" y2="185" stroke="#334155" stroke-width="2"/>
-<line x1="50" y1="15" x2="50" y2="185" stroke="#334155" stroke-width="2"/>
-<g stroke="#cbd5e1" stroke-dasharray="3 3">
-<line x1="50" y1="135" x2="355" y2="135"/>
-<line x1="50" y1="55" x2="355" y2="55"/>
-<line x1="85" y1="135" x2="85" y2="185"/>
-<line x1="145" y1="135" x2="145" y2="185"/>
-<line x1="195" y1="55" x2="195" y2="185"/>
-<line x1="285" y1="55" x2="285" y2="185"/>
-</g>
-<polyline points="50,175 85,135 145,135 195,55 285,55 320,22" fill="none" stroke="#dc2626" stroke-width="3"/>
-<g font-size="10" font-weight="bold" text-anchor="end">
-<text x="44" y="178">−20</text>
-<text x="44" y="139" fill="#1e40af">10</text>
-<text x="44" y="59" fill="#166534">70</text>
-<text x="44" y="25">90</text>
-</g>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="85" y="198">2</text>
-<text x="145" y="198">6</text>
-<text x="195" y="198">9</text>
-<text x="285" y="198">15</text>
-<text x="320" y="198">17</text>
-<text x="115" y="127" font-size="9" fill="#1e40af">Erime (Katı+Sıvı)</text>
-<text x="240" y="47" font-size="9" fill="#166534">Kaynama (Sıvı+Gaz)</text>
-<text x="330" y="210" fill="#1e293b">Zaman (dk)</text>
-<text x="80" y="18" fill="#1e293b">Sıcaklık (°C)</text>
-</g>
-</svg></div>
-<p>Grafiğe göre saf X maddesiyle ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `X maddesinin erime sıcaklığı (ve donma sıcaklığı) 10 °C, kaynama sıcaklığı ise 70 °C’dir.`,
-    `4. dakikada madde erimekte olduğu için kapta X maddesinin hem katı hem de sıvı hâli bir arada (heterojen görünümde) bulunur.`,
-    `9. ve 15. dakikalar arasında (kaynama süresince) X maddesi ısıtıcıdan ısı almamıştır, bu yüzden sıcaklığı 70 °C’de sabit kalmıştır.`,
-    `X maddesinin buharlaşma ısısı (L<sub>b</sub>), erime ısısından (L<sub>e</sub>) daha büyüktür (Kaynama 6 dk, erime 4 dk sürmüştür).`
-  ],
+  s: `<ul><li><b>I ✓</b> Sıcaklık, taneciklerin ortalama hareket enerjisinin göstergesidir. Sıcaklıklar eşit olduğundan ortalama hareket enerjileri eşittir.</li>
+<li><b>II ✓</b> Aynı madde aynı sıcaklık değişimini yaşarken kütlesi fazla olan daha fazla ısı verir. L’deki suyun kütlesi iki kat olduğundan iki kat ısı verir.</li>
+<li><b>III ✗</b> Isı alışverişi için <b>sıcaklık farkı</b> gerekir; kütle farkı ısı akışı sağlamaz. Sıcaklıklar eşit olduğu için ısı akışı olmaz.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>İlk sıcaklıkları ve kütleleri eşit olan saf <b>K, L ve M</b> sıvıları özdeş ısıtıcılarla eşit süre (5 dakika) ısıtılıyor. Sıvılarda hâl değişimi olmuyor ve sıcaklık artışları aşağıdaki tabloda veriliyor.</p>
+<div class="tbl"><table>
+<tr><th>Sıvı</th><th>Kütle</th><th>Isıtma süresi</th><th>Sıcaklık artışı</th></tr>
+<tr><td><b>K</b></td><td>100 g</td><td>5 dk</td><td>10 °C</td></tr>
+<tr><td><b>L</b></td><td>100 g</td><td>5 dk</td><td>20 °C</td></tr>
+<tr><td><b>M</b></td><td>100 g</td><td>5 dk</td><td>40 °C</td></tr>
+</table></div>
+<p>Buna göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Öz ısısı en büyük olan sıvı M’dir.", "5 dakika sonunda K, M’den daha az ısı almıştır.", "Isıtıcılar kapatılıp sıvılar aynı soğuk ortama bırakılırsa en çabuk soğuyan M olur.", "K’nin kütlesi iki katına çıkarılırsa K’nin öz ısısı da iki katına çıkar."],
   a: "C",
-  s: `<p>Hâl değişimi grafiklerinde en büyük tuzak C seçeneğidir: 2–6. dakikalar (erime) ve 9–15. dakikalar (kaynama) arasında ısıtıcı çalışmaya devam ettiği için <b>madde ısı almaya devam eder!</b>[cite: 12] Alınan bu ısı taneciklerin hızını (sıcaklığını) artırmak yerine <b>tanecikler arasındaki çekim kuvvetini yenmek (hâl değiştirmek)</b> için harcandığından sıcaklık sabit kalır (<b>C yanlıştır</b>)[cite: 12]. (Ayrıca kaynama 15 − 9 = 6 dk, erime ise 6 − 2 = 4 dk sürdüğü için $L_b > L_e$’dir; D doğrudur). Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>İlk sıcaklıkları ve kütleleri birbirine eşit olan saf <b>K, L ve M</b> sıvıları, özdeş ısıtıcılarla eşit süre (5 dakika) ısıtıldığında sıvılarda meydana gelen sıcaklık artışları aşağıdaki tabloda verilmiştir (Hal değişimi olmamıştır)[cite: 12].</p>
-<table class="rt">
-<tr><th>Sıvı</th><th>Kütlesi (m)</th><th>Verilen Isı (Q)</th><th>Sıcaklık Artışı (ΔT)</th></tr>
-<tr><td><b>K Sıvısı</b></td><td>100 g</td><td>Eşit (5 dk)</td><td>10 °C</td></tr>
-<tr><td><b>L Sıvısı</b></td><td>100 g</td><td>Eşit (5 dk)</td><td>20 °C</td></tr>
-<tr><td><b>M Sıvısı</b></td><td>100 g</td><td>Eşit (5 dk)</td><td>40 °C</td></tr>
-</table>
-<p>Tablodaki verilere göre K, L ve M sıvılarıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Öz ısısı en büyük olan sıvı M’dir (c<sub>M</sub> &gt; c<sub>L</sub> &gt; c<sub>K</sub>).`,
-    `Beş dakika sonunda K sıvısı, M sıvısına göre ısıtıcıdan daha az ısı almıştır.`,
-    `Isıtıcılar kapatılıp sıvılar aynı soğuk ortama bırakıldığında sıcaklığı en hızlı düşen (en çabuk soğuyan) sıvı öz ısısı en küçük olan M sıvısı olur.`,
-    `K sıvısının kütlesi iki katına çıkarılırsa K sıvısının öz ısısı da iki katına çıkar.`
-  ],
+  s: `<p>Özdeş ısıtıcılar eşit sürede eşit ısı verir; üç sıvı da <b>eşit ısı</b> almıştır. Kütleleri de eşit olduğuna göre sıcaklığı en çok artan sıvının <b>öz ısısı en küçük</b>tür: c<sub>K</sub> &gt; c<sub>L</sub> &gt; c<sub>M</sub>.</p>
+<ul><li><b>A ✗</b> M’nin öz ısısı en küçüktür.</li>
+<li><b>B ✗</b> Süreler ve ısıtıcılar aynı olduğundan aldıkları ısılar eşittir.</li>
+<li><b>C ✓</b> Öz ısısı küçük olan madde çabuk ısınır, çabuk soğur. En çabuk soğuyan M’dir.</li>
+<li><b>D ✗</b> Öz ısı ayırt edici bir özelliktir; madde miktarına bağlı değildir.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Gündüz deniz kıyısında karalar çabuk ısınır, deniz suyu ise geç ısınır ve daha serin kalır. Gece karalar hızla soğurken deniz suyu sıcaklığını uzun süre korur. Bu nedenle deniz kıyısındaki yerleşim yerlerinde gece ile gündüz arasındaki sıcaklık farkı azdır.</p>
+<p>Karaların denizlerden daha çabuk ısınıp soğumasının temel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Suyun öz ısısının, toprak ve kayaların öz ısısından büyük olması", "Güneş ışınlarının yalnızca karalara ulaşıp deniz yüzeyine ulaşmaması", "Deniz suyunun kütlesinin karaların kütlesinden az olması", "Toprağın öz ısısının suyun öz ısısından büyük olması"],
+  a: "A",
+  s: `<p>Öz ısısı büyük olan madde geç ısınır ve geç soğur; öz ısısı küçük olan madde çabuk ısınır ve çabuk soğur. Suyun öz ısısı (yaklaşık 4,18 J/g·°C), toprak ve kayalarınkinden (yaklaşık 0,8 J/g·°C) çok büyüktür (<b>A ✓</b>).</p>
+<p>B yanlıştır: Güneş ışınları denize de ulaşır. C’de denizin kütlesi az olsaydı daha çabuk ısınırdı; ayrıca deniz suyunun kütlesi çok büyüktür. D ise A’nın tam tersidir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>İlk sıcaklıkları <b>20 °C</b> olan, kütleleri farklı <b>saf su</b> örnekleri özdeş ısıtıcılarla <b>50 °C</b> olana kadar ısıtılıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 174" width="560" role="img" aria-label="Üç kapta 100 g, 200 g ve 300 g su; ısıtma süreleri t1, t2, t3" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="94" width="110" height="30" fill="#93c5fd"/><path d="M40,20 L40,124 L150,124 L150,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="95" y="146" font-size="13" font-weight="bold">1. kap: 100 g su</text><text x="95" y="164" font-size="12.5" fill="#b91c1c">Isıtma süresi: t₁</text><rect x="215" y="64" width="110" height="60" fill="#93c5fd"/><path d="M215,20 L215,124 L325,124 L325,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="270" y="146" font-size="13" font-weight="bold">2. kap: 200 g su</text><text x="270" y="164" font-size="12.5" fill="#b91c1c">Isıtma süresi: t₂</text><rect x="390" y="34" width="110" height="90" fill="#93c5fd"/><path d="M390,20 L390,124 L500,124 L500,20" fill="none" stroke="#334155" stroke-width="2.2"/><text x="445" y="146" font-size="13" font-weight="bold">3. kap: 300 g su</text><text x="445" y="164" font-size="12.5" fill="#b91c1c">Isıtma süresi: t₃</text></svg></div>
+<p>Buna göre ısıtma süreleri <b>t₁, t₂ ve t₃</b> arasındaki ilişki aşağıdakilerden hangisidir?</p>`,
+  c: ["t₃ &gt; t₂ &gt; t₁", "t₁ &gt; t₂ &gt; t₃", "t₁ = t₂ = t₃", "t₂ &gt; t₃ &gt; t₁"],
+  a: "A",
+  s: `<p>Üç kapta da madde aynı (su) ve sıcaklık artışı aynıdır (20 °C → 50 °C, yani 30 °C). Bu durumda gereken ısı yalnızca <b>kütleye</b> bağlıdır: Kütle arttıkça gereken ısı artar.</p>
+<p>Isıtıcılar özdeş olduğundan daha fazla ısı, daha uzun süre demektir. 300 g su en uzun, 100 g su en kısa sürede ısınır: <b>t₃ &gt; t₂ &gt; t₁</b>. C’de kütlenin etkisi unutulmuş, B’de ilişki ters kurulmuştur. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Başlangıçta katı hâlde bulunan saf bir <b>X</b> maddesi, birim zamanda eşit ısı veren bir ısıtıcıyla ısıtılıyor. Maddenin sıcaklık-zaman grafiği aşağıdaki gibidir.</p>
+<div class="fig"><svg viewBox="0 0 500 264" width="480" role="img" aria-label="Isınma grafiği: −20 °C'tan 2. dakikada 10 °C'a, 2-6. dakikalarda 10 °C'ta sabit, 9. dakikada 70 °C, 9-15. dakikalarda 70 °C'ta sabit, 17. dakikada 90 °C" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="60" y1="220" x2="465.2" y2="220" stroke="#1e293b" stroke-width="2"/><polygon points="470.0,220.0 462.8,223.5 462.8,216.5" fill="#1e293b"/><line x1="60" y1="220" x2="60" y2="24.8" stroke="#1e293b" stroke-width="2"/><polygon points="60.0,20.0 63.5,27.2 56.5,27.2" fill="#1e293b"/><text x="470" y="256" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="56" y="12" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="60" y1="204" x2="434" y2="204" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="208" text-anchor="end">−20</text><line x1="60" y1="156" x2="434" y2="156" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="160" text-anchor="end">10</text><line x1="60" y1="60" x2="434" y2="60" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="64" text-anchor="end">70</text><line x1="60" y1="28" x2="434" y2="28" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="32" text-anchor="end">90</text><line x1="104" y1="220" x2="104" y2="156" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="104" y="238">2</text><line x1="192" y1="220" x2="192" y2="156" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="192" y="238">6</text><line x1="258" y1="220" x2="258" y2="60" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="258" y="238">9</text><line x1="390" y1="220" x2="390" y2="60" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="390" y="238">15</text><line x1="434" y1="220" x2="434" y2="28" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="434" y="238">17</text><polyline points="60,204 104,156 192,156 258,60 390,60 434,28" fill="none" stroke="#dc2626" stroke-width="2.8" stroke-linejoin="round"/></svg></div>
+<p>Grafiğe göre X maddesiyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["X’in erime sıcaklığı 10 °C, kaynama sıcaklığı 70 °C’tur.", "4. dakikada kapta X’in katı ve sıvı hâlleri bir aradadır.", "9. ve 15. dakikalar arasında X ısıtıcıdan ısı almadığı için sıcaklığı sabit kalmıştır.", "Kaynama süresi erime süresinden uzun olduğu için X’in kaynaması için gereken ısı, erimesi için gereken ısıdan fazladır."],
   a: "C",
-  s: `<p>Eşit kütleli maddelere eşit ısı verildiğinde ($Q = m \cdot c \cdot \Delta T$), <b>sıcaklığı en çok artan M sıvısının öz ısısı en küçüktür ($c_K > c_L > c_M$)</b>[cite: 12]. Öz ısısı küçük olan madde (M) <b>hem en çabuk ısınır hem de en çabuk soğur</b> (<b>C doğru</b>)[cite: 12]. (Öz ısı ayırt edici özelliktir, kütleye bağlı değildir; D yanlış)[cite: 12]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Günlük hayatta karşılaştığımız bazı hâl değişimi olayları aşağıda numaralandırılarak verilmiştir:</p>
-<ol>
-<li>Elimize dökülen kolonyanın buharlaşırken elimizi serinletmesi</li>
-<li>Çok soğuk kış gecelerinde meyve-sebze depolarına konulan büyük su varillerindeki suyun donarken depoyu ısıtması ve meyvelerin donmasını önlemesi</li>
-<li>Denizden veya havuzdan çıkan bir kişinin üzerindeki su damlaları buharlaşırken üşümesi</li>
-<li>Kar yağarken havadaki su buharının donmasıyla havanın bir miktar ılıması</li>
-</ol>
-<p>Bu olaylardan hangileri <b>“maddenin hâl değiştirirken dış ortamdan ısı alması”</b>, hangileri ise <b>“dış ortama ısı vermesi”</b> ile gerçekleşir?</p>`,
-  c: [
-    `Ortamdan Isı Alanlar: 1 ve 3 (Buharlaşma) — Ortama Isı Verenler: 2 ve 4 (Donma / Kristalleşme)`,
-    `Ortamdan Isı Alanlar: 1 ve 2 — Ortama Isı Verenler: 3 ve 4`,
-    `Ortamdan Isı Alanlar: 2 ve 4 — Ortama Isı Verenler: 1 ve 3`,
-    `Dört olayın tamamı ortamdan ısı alarak gerçekleşir.`
-  ],
-  a: "A",
-  s: `<p><b>1 ve 3. olaylarda</b> sıvı (kolonya ve su) <b>buharlaşırken</b> ihtiyaç duyduğu ısıyı elimizden/vücudumuzdan <b>alır</b> ve bizi serinletir/üşütür. <b>2 ve 4. olaylarda</b> ise su <b>donarken</b> sahip olduğu ısıyı dış ortama <b>verir</b> ve ortamın aşırı soğumasını önler. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki grafikte katı hâldeki saf bir maddenin <b>100 gramının</b> ve <b>200 gramının</b> özdeş ısıtıcılarla ısıtılmasına ait iki ayrı sıcaklık–zaman eğrisi verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 380 175" width="360" role="img" aria-label="Aynı maddenin 100 g ve 200 g kütlelerinin ısınma grafiği">
-<line x1="45" y1="145" x2="355" y2="145" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="15" x2="45" y2="145" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="70" x2="355" y2="70" stroke="#94a3b8" stroke-dasharray="4 3"/>
-<polyline points="45,130 95,70 145,70 185,25" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<polyline points="45,130 145,70 245,70 325,25" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<g font-size="9.5" font-weight="bold">
-<text x="38" y="74" text-anchor="end" fill="#1e293b">T<sub>erime</sub></text>
-<text x="38" y="133" text-anchor="end" fill="#1e293b">T<sub>0</sub></text>
-<text x="180" y="22" fill="#dc2626">100 g X Katısı</text>
-<text x="315" y="22" fill="#2563eb">200 g X Katısı</text>
-<text x="95" y="158" text-anchor="middle">t</text>
-<text x="145" y="158" text-anchor="middle">2t</text>
-<text x="245" y="158" text-anchor="middle">4t</text>
-<text x="330" y="168">Zaman</text>
-<text x="16" y="80" transform="rotate(-90 16 80)" text-anchor="middle">Sıcaklık (°C)</text>
-</g>
-</svg></div>
-<p>Grafiğe göre, saf bir maddenin <b>kütlesi iki katına çıkarıldığında (100 g → 200 g)</b> aşağıdakilerden hangisi <b>değişmez</b>?</p>`,
-  c: [
-    `Maddenin erimeye başladığı süre (t → 2t)`,
-    `Maddenin tamamen erimesi için geçen hâl değişimi süresi (t → 2t)`,
-    `Maddenin erime sıcaklığı (T<sub>erime</sub>) ve öz ısısı (c)`,
-    `Maddenin erimesi için verilmesi gereken toplam ısı miktarı (Q)`
-  ],
+  s: `<p>Grafikte sıcaklığın sabit kaldığı iki bölüm vardır: 2-6. dakikalar (10 °C, <b>erime</b>) ve 9-15. dakikalar (70 °C, <b>kaynama</b>).</p>
+<ul><li><b>A</b> doğru: Erime 10 °C’ta, kaynama 70 °C’ta olmuştur.</li>
+<li><b>B</b> doğru: 4. dakika erime aralığındadır; katı ve sıvı birlikte bulunur.</li>
+<li><b>C</b> yanlış: Isıtıcı çalışmaya devam ettiği için madde <b>ısı almaya devam eder</b>. Alınan ısı sıcaklığı artırmak yerine hâl değiştirmek için kullanıldığından sıcaklık sabit kalır.</li>
+<li><b>D</b> doğru: Kaynama 6 dakika, erime 4 dakika sürmüştür. Isıtıcı aynı olduğundan kaynama için daha fazla ısı gerekmiştir.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Katı hâldeki saf bir maddenin <b>100 g</b> ve <b>200 g</b>’lık örnekleri, aynı ilk sıcaklıktan başlanarak özdeş ısıtıcılarla ısıtılıyor. Örneklere ait sıcaklık-zaman grafikleri aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 500 244" width="480" role="img" aria-label="100 g madde t anında erimeye başlıyor, 2t'de erimesi bitiyor; 200 g madde 2t'de erimeye başlıyor, 4t'de bitiyor; ikisi de aynı sıcaklıkta eriyor" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="72" y1="200" x2="465.2" y2="200" stroke="#1e293b" stroke-width="2"/><polygon points="470.0,200.0 462.8,203.5 462.8,196.5" fill="#1e293b"/><line x1="72" y1="200" x2="72" y2="24.8" stroke="#1e293b" stroke-width="2"/><polygon points="72.0,20.0 75.5,27.2 68.5,27.2" fill="#1e293b"/><text x="470" y="236" text-anchor="end" font-weight="bold">Zaman</text><text x="68" y="12" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="72" y1="90" x2="440" y2="90" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="66" y="88" font-size="11.5" text-anchor="end">Erime</text><text x="66" y="102" font-size="11.5" text-anchor="end">sıcaklığı</text><text x="66" y="168" font-size="11.5" text-anchor="end">İlk</text><text x="66" y="182" font-size="11.5" text-anchor="end">sıcaklık</text><polyline points="72,170 157,90 242,90 293,40" fill="none" stroke="#dc2626" stroke-width="2.8" stroke-linejoin="round"/><polyline points="72,170 242,90 412,90 446,50" fill="none" stroke="#2563eb" stroke-width="2.8" stroke-linejoin="round"/><line x1="157" y1="200" x2="157" y2="90" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="157" y="218" font-size="13">t</text><line x1="242" y1="200" x2="242" y2="90" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="242" y="218" font-size="13">2t</text><line x1="412" y1="200" x2="412" y2="90" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="412" y="218" font-size="13">4t</text><text x="287" y="34" font-size="13" text-anchor="end" fill="#b91c1c" font-weight="bold">100 g</text><text x="442" y="44" font-size="13" text-anchor="end" fill="#1d4ed8" font-weight="bold">200 g</text></svg></div>
+<p>Grafiğe göre maddenin kütlesi iki katına çıkarıldığında aşağıdakilerden hangisi <b>değişmez</b>?</p>`,
+  c: ["Maddenin erimeye başladığı an", "Erimenin başlayıp bitmesine kadar geçen süre", "Maddenin erime sıcaklığı ve öz ısısı", "Maddenin tamamen erimesi için gereken toplam ısı"],
   a: "C",
-  s: `<p>Aynı saf maddenin kütlesi 2 katına çıkarıldığında ısınma süresi ve erime süresi 2 katına çıkar (A, B ve D değişir); ancak <b>erime sıcaklığı ($T_{erime}$), kaynama sıcaklığı, öz ısı ($c$) ve erime ısısı ($L_e$)</b> maddeler için ayırt edici özellik olduğundan <b>madde miktarına bağlı değildir, DEĞİŞMEZ!</b> (Grafikte her ikisi de aynı $T_{erime}$ sıcaklığında erimiştir). Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>“Bor; ısıya dayanıklı cam, seramik, temizlik ürünleri ve tarım ilaçlarının yanı sıra roket yakıtı, nükleer teknoloji ve enerji depolama sistemlerinde kullanılan stratejik bir ham maddedir. Türkiye, dünyadaki toplam bor rezervlerinin yaklaşık <b>%73</b>’üne sahiptir. Bor madeni ham olarak satılmak yerine işlenip yüksek teknolojili uç ürünlere dönüştürüldükçe ülkemize sağladığı ekonomik katma değer katlanarak artmaktadır.”[cite: 12]</p>
-<p>Bu metne göre Türkiye’de kimya endüstrisi ve bor madeniyle ilgili aşağıdakilerden hangisi <b>söylenemez</b>[cite: 12]?</p>`,
-  c: [
-    `Bor, günlük temizlik ürünlerinden uzay ve savunma sanayisine kadar çok geniş bir kullanım alanına sahiptir.`,
-    `Ham maddenin işlenerek ileri teknoloji ürününe dönüştürülmesi ülke ekonomisine ve ihracata büyük katkı sağlar.`,
-    `Türkiye, dünya bor rezervlerinde açık ara ilk sırada yer almaktadır.`,
-    `Dünyadaki bor madeninin tamamı (%100’ü) yalnızca Türkiye topraklarında bulunmaktadır.`
-  ],
-  a: "D",
-  s: `<p>Metinde Türkiye’nin dünya bor rezervlerinin <b>%73’üne</b> sahip olduğu belirtilmiştir; dolayısıyla kalan %27’lik kısım başka ülkelerde bulunmaktadır (<b>D söylenemez</b>)[cite: 12]. Cevap <b>D</b>.</p>`
-},
-  {
-  q: `<p>Periyodik sistemin tarihsel gelişim sürecinde çalışma yapan bilim insanları ve görüşleri aşağıdaki zaman şemasında gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="Periyodik sistemin tarihsel gelişimi şeması">
-<rect x="8" y="12" width="122" height="115" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="69" y="30" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">1. J. Döbereiner</text>
-<g font-size="8.5" text-anchor="middle" fill="#1e293b">
-<text x="69" y="50">Elementleri benzer</text>
-<text x="69" y="64">özelliklerine göre</text>
-<text x="69" y="78" font-weight="bold" fill="#1e40af">üçlü gruplar (triadlar)</text>
-<text x="69" y="92">hâlinde sıraladı.</text>
-</g>
-<rect x="142" y="12" width="122" height="115" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="203" y="30" font-size="9.5" font-weight="bold" fill="#92400e" text-anchor="middle">2. J. Newlands</text>
-<g font-size="8.5" text-anchor="middle" fill="#1e293b">
-<text x="203" y="50">İlk 8 elementten sonra</text>
-<text x="203" y="64">özelliklerin tekrar</text>
-<text x="203" y="78">ettiğini söyleyerek</text>
-<text x="203" y="92" font-weight="bold" fill="#b45309">müzik notalarına</text>
-<text x="203" y="106">benzetti (Oktavlar).</text>
-</g>
-<rect x="276" y="12" width="122" height="115" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<text x="337" y="30" font-size="9.5" font-weight="bold" fill="#166534" text-anchor="middle">3. D. Mendeleyev</text>
-<g font-size="8.5" text-anchor="middle" fill="#1e293b">
-<text x="337" y="50">Elementleri artan</text>
-<text x="337" y="64" font-weight="bold" fill="#166534">atom ağırlıklarına</text>
-<text x="337" y="78">(kütlelerine) göre</text>
-<text x="337" y="92">sıraladı; bulunmamış</text>
-<text x="337" y="106">yerleri boş bıraktı.</text>
-</g>
-<rect x="410" y="12" width="122" height="115" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="471" y="30" font-size="9.5" font-weight="bold" fill="#991b1b" text-anchor="middle">4. H. Moseley</text>
-<g font-size="8.5" text-anchor="middle" fill="#1e293b">
-<text x="471" y="50">Elementleri artan</text>
-<text x="471" y="64" font-weight="bold" fill="#dc2626">atom numaralarına</text>
-<text x="471" y="78" font-weight="bold" fill="#dc2626">(proton sayılarına)</text>
-<text x="471" y="92">göre sıraladı[cite: 12]; Seaborg</text>
-<text x="471" y="106">son iki satırı ekledi.</text>
-</g>
-</svg></div>
-<p>Şemadaki bilgilere göre periyodik sistemin gelişimiyle ilgili aşağıdakilerden hangisi <b>söylenemez</b>[cite: 12]?</p>`,
-  c: [
-    `Günümüzde kullanılan modern periyodik sistemde elementler Mendeleyev’in önerdiği gibi artan atom ağırlıklarına (kütle numaralarına) göre dizilmiştir.`,
-    `Henry Moseley, elementlerin kimyasal özelliklerinin atom kütlesine değil, atom numarasına (proton sayısına) bağlı olduğunu kanıtlamıştır[cite: 12].`,
-    `Mendeleyev’in tabloda bazı kutucukları boş bırakması, ileride yeni elementlerin keşfedileceğini öngördüğünü gösterir.`,
-    `Bilimsel bilgi zamanla yeni keşiflerle gelişmiş ve Glenn Seaborg’un tablonun altına iki sıra eklemesiyle periyodik tablo son şeklini almıştır.`
-  ],
+  s: `<p>Grafikte 200 g’lık örnek erimeye t yerine 2t anında başlamış, erimesi t yerine 2t sürmüştür. Yani erimeye başlama anı (A), erime süresi (B) ve erime için gereken ısı (D) kütleyle birlikte değişmiştir.</p>
+<p>Oysa iki örnek de <b>aynı sıcaklıkta</b> erimiştir. Erime sıcaklığı ve öz ısı maddenin <b>ayırt edici</b> özellikleridir; madde miktarına bağlı değildir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Erime sıcaklığındaki 1 gram saf katının tamamen erimesi için gereken ısıya <b>erime ısısı</b> denir. Erime ısısı her madde için farklıdır; erime ısısı büyük olan maddeyi eritmek için daha fazla ısı gerekir. Bazı saf katıların yaklaşık erime ısıları aşağıdaki tabloda verilmiştir.</p>
+<div class="tbl"><table>
+<tr><th>Madde</th><th>Buz</th><th>Demir</th><th>Bakır</th><th>Kurşun</th></tr>
+<tr><td><b>Erime ısısı (J/g)</b></td><td>334</td><td>247</td><td>209</td><td>23</td></tr>
+</table></div>
+<p>Erime sıcaklığındaki <b>100’er gram</b> buz, demir, bakır ve kurşun özdeş ısıtıcılarla tamamen eritiliyor. Buna göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Buzun tamamen erimesi için gereken ısı ve geçen süre en fazladır.", "Kütleleri eşit olduğu için dördünün de erimesi için gereken ısı eşittir.", "En geç eriyen madde kurşundur.", "Erime sırasında kurşunun sıcaklığı sürekli artarken buzun sıcaklığı sabit kalır."],
   a: "A",
-  s: `<p>Günümüzde kullandığımız modern periyodik sistemde elementler Mendeleyev’in yaptığı gibi atom ağırlıklarına göre değil, <b>Henry Moseley</b>’in bulduğu gibi <b>artan atom numaralarına (proton sayılarına)</b> göre sıralanmıştır[cite: 12] (<b>A söylenemez</b>).</p>`
-},
-{
-  q: `<p>Nötr bir atomun elektron dağılımındaki <b>katman (yörünge) sayısı</b> o elementin <b>periyot numarasını</b>, <b>son katmanındaki elektron sayısı</b> ise (Helyum hariç) <b>A grup numarasını</b> verir.</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="X, Y ve Z atomlarının katman elektron dizilimi">
-<g stroke="#334155" stroke-width="1.5" fill="none">
-<circle cx="85" cy="75" r="14" fill="#dbeafe"/>
-<circle cx="85" cy="75" r="28" stroke-dasharray="3 2"/>
-<circle cx="85" cy="75" r="42" stroke-dasharray="3 2"/>
-<circle cx="255" cy="75" r="14" fill="#fee2e2"/>
-<circle cx="255" cy="75" r="32" stroke-dasharray="3 2"/>
-<circle cx="425" cy="75" r="14" fill="#f3e8ff"/>
-<circle cx="425" cy="75" r="32" stroke-dasharray="3 2"/>
-</g>
-<g font-size="10" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="85" y="20" fill="#1e40af">₁₂X Atomu: 2 ) 8 ) 2</text>
-<text x="85" y="79">12p</text>
-<text x="85" y="132" font-size="9" fill="#1e40af">3 Katman, Son Katman: 2e⁻</text>
-
-<text x="255" y="20" fill="#991b1b">₉Y Atomu: 2 ) 7</text>
-<text x="255" y="79">9p</text>
-<text x="255" y="132" font-size="9" fill="#991b1b">2 Katman, Son Katman: 7e⁻</text>
-
-<text x="425" y="20" fill="#6d28d9">₂Z Atomu: 2 )</text>
-<text x="425" y="79">2p</text>
-<text x="425" y="132" font-size="9" fill="#6d28d9">1 Katman, Son Katman: 2e⁻ (Tam dolu!)</text>
-</g>
-</svg></div>
-<p>Katman–elektron dizilimleri verilen nötr <b>₁₂X, ₉Y ve ₂Z</b> elementleriyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `X elementi 3. periyot 2A grubunda yer alan bir metaldir; ısı ve elektriği iyi iletir[cite: 12].`,
-    `Y elementi 2. periyot 7A grubunda (Halojenler) yer alan bir ametaldir[cite: 12].`,
-    `Z elementi 1. periyot 8A grubunda yer alan bir soy gazdır (Helyum) ve kararlı yapıdadır[cite: 12].`,
-    `X ve Z elementlerinin son katmanlarında 2 elektron bulunduğu için her ikisi de 2A grubunda yer alır ve kimyasal özellikleri benzerdir.`
-  ],
+  s: `<p>Kütleler eşit olduğuna göre erimesi için en fazla ısı gereken madde, erime ısısı en büyük olan <b>buz</b>dur. Isıtıcılar özdeş olduğundan buz en uzun sürede erir (<b>A ✓</b>).</p>
+<ul><li><b>B ✗</b> Kütleler eşit olsa da maddelerin cinsi farklıdır; erime ısıları farklı olduğundan gereken ısılar farklıdır.</li>
+<li><b>C ✗</b> Erime ısısı en küçük olan kurşun en kısa sürede erir.</li>
+<li><b>D ✗</b> Saf maddelerin hepsinin sıcaklığı erime boyunca sabit kalır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Başlangıçta <b>gaz</b> hâlinde bulunan saf bir <b>Y</b> maddesi soğutuluyor. Maddenin sıcaklık-zaman grafiği aşağıdaki gibidir.</p>
+<div class="fig"><svg viewBox="0 0 500 254" width="480" role="img" aria-label="Gaz hâlindeki saf Y maddesinin soğuma grafiği: 80 °C'ta I. bölgede, 15 °C'ta II. bölgede sıcaklık sabit" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="60" y1="210" x2="465.2" y2="210" stroke="#1e293b" stroke-width="2"/><polygon points="470.0,210.0 462.8,213.5 462.8,206.5" fill="#1e293b"/><line x1="60" y1="210" x2="60" y2="24.8" stroke="#1e293b" stroke-width="2"/><polygon points="60.0,20.0 63.5,27.2 56.5,27.2" fill="#1e293b"/><text x="470" y="246" text-anchor="end" font-weight="bold">Zaman</text><text x="56" y="12" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="60" y1="70" x2="440" y2="70" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="74" text-anchor="end">80</text><line x1="60" y1="160" x2="440" y2="160" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 4"/><text x="52" y="164" text-anchor="end">15</text><polyline points="60,30 130,70 210,70 290,160 380,160 440,196" fill="none" stroke="#2563eb" stroke-width="2.8" stroke-linejoin="round"/><text x="170" y="60" font-size="13" fill="#1d4ed8" font-weight="bold">I. bölge</text><text x="335" y="150" font-size="13" fill="#1d4ed8" font-weight="bold">II. bölge</text></svg></div>
+<p>Grafiğe göre Y maddesiyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Y’nin yoğuşma sıcaklığı 80 °C, donma sıcaklığı 15 °C’tur ve madde I. ve II. bölgelerde çevreye ısı vermektedir.", "Y maddesi 50 °C’ta katı hâldedir.", "Madde I. bölgede erimekte, II. bölgede kaynamaktadır.", "Soğuma boyunca madde çevreden ısı almıştır."],
+  a: "A",
+  s: `<p>Gaz hâlindeki madde soğurken önce <b>yoğuşur</b> (gaz → sıvı), sonra <b>donar</b> (sıvı → katı). Saf maddede bu olaylar sırasında sıcaklık sabit kalır: I. bölge (80 °C) yoğuşma, II. bölge (15 °C) donmadır.</p>
+<ul><li><b>A ✓</b> Yoğuşma ve donma, ısı verilerek gerçekleşen hâl değişimleridir.</li>
+<li><b>B ✗</b> 50 °C, 80 °C ile 15 °C arasındadır; madde bu sıcaklıkta sıvıdır.</li>
+<li><b>C ✗</b> Soğuma sırasında erime ve kaynama değil, yoğuşma ve donma olur.</li>
+<li><b>D ✗</b> Soğuyan madde çevresine ısı verir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda “Madde ve Endüstri” ünitesiyle ilgili dört kural yazılmıştır.</p>
+<div class="tbl"><table>
+<tr><th>No</th><th>Kural</th></tr>
+<tr><td><b>1</b></td><td>Öz ısı, erime ve kaynama sıcaklıkları saf maddeler için ayırt edici özelliklerdir; madde miktarına bağlı değildir.</td></tr>
+<tr><td><b>2</b></td><td>Kapalı bir kapta gerçekleşen kimyasal tepkimede toplam kütle, atom türü ve atom sayısı korunur.</td></tr>
+<tr><td><b>3</b></td><td>Bir çözeltinin pH değeri 0’a yaklaştıkça asitliği, 14’e yaklaştıkça bazlığı artar; pH = 7 ise çözelti nötrdür.</td></tr>
+<tr><td><b>4</b></td><td>Saf bir katı erirken veya saf bir sıvı kaynarken sıcaklığı sabit kaldığı için bu süre boyunca ısı alışverişi durur.</td></tr>
+</table></div>
+<p>Tablodaki kurallardan hangisi <b>yanlıştır</b>?</p>`,
+  c: ["1", "2", "3", "4"],
   a: "D",
-  s: `<p><b>₂Z elementi Helyumdur!</b> 1. katman en fazla 2 elektron alabildiği için Z’nin katmanı tam doludur ve Z elementi 2A grubunda değil, <b>1. periyot 8A grubunda (soy gazlarda)</b> yer alır[cite: 12]. Dolayısıyla 3. periyot 2A grubundaki metal X ile aynı grupta değildir (<b>D yanlıştır</b>)[cite: 12]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda günlük hayatta gerçekleşen altı farklı olayın <b>Fiziksel Değişim</b> mi yoksa <b>Kimyasal Değişim</b> mi olduğu işaretlenmiştir[cite: 12].</p>
-<table class="rt">
-<tr><th>No</th><th>Gerçekleşen Olay</th><th>Fiziksel Değişim</th><th>Kimyasal Değişim</th></tr>
-<tr><td><b>1</b></td><td>Soyulan elmanın açık havada bekletildiğinde kararması[cite: 12]</td><td></td><td><b>✓</b></td></tr>
-<tr><td><b>2</b></td><td>Çaya atılan küp şekerin karıştırıldığında suda çözünmesi[cite: 12]</td><td><b>✓</b></td><td></td></tr>
-<tr><td><b>3</b></td><td>Hamurun mayalanması ve fırında pişirilerek ekmek yapılması[cite: 12]</td><td></td><td><b>✓</b></td></tr>
-<tr><td><b>4</b></td><td>Kışın pencere camlarında kırağı oluşması ve buzun erimesi[cite: 12]</td><td></td><td><b>✓</b></td></tr>
-<tr><td><b>5</b></td><td>Sütten yoğurt ve peynir elde edilmesi[cite: 12]</td><td></td><td><b>✓</b></td></tr>
-<tr><td><b>6</b></td><td>Güneş ışığının yağmur damlalarından geçerken gökkuşağı oluşturması</td><td><b>✓</b></td><td></td></tr>
-</table>
-<p>Tablodaki numaralanmış olaylardan hangisi <b>yanlış</b> sınıflandırılmıştır[cite: 12]?</p>`,
-  c: [`2`, `3`, `4`, `6`],
+  s: `<p>1, 2 ve 3 numaralı kurallar doğrudur. 4 numaralı kural yanlıştır: Saf bir madde erirken ya da kaynarken sıcaklığı sabit kalsa da <b>ısı almaya devam eder</b>. Aldığı ısıyı sıcaklığını artırmak için değil, hâl değiştirmek için kullanır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Günlük hayatta karşılaştığımız bazı hâl değişimleri aşağıda numaralandırılmıştır.</p>
+<ol><li>Elimize dökülen kolonyanın buharlaşırken elimizi serinletmesi</li>
+<li>Soğuk kış gecelerinde meyve deposuna konulan su dolu varillerdeki suyun donarken depoyu ısıtması</li>
+<li>Denizden çıkan kişinin üzerindeki su damlaları buharlaşırken üşümesi</li>
+<li>Kar oluşurken (havadaki su buharı ve su damlacıkları buz kristallerine dönüşürken) havanın bir miktar ılıması</li></ol>
+<p>Bu olaylardan hangileri maddenin hâl değiştirirken <b>çevreden ısı alması</b>, hangileri <b>çevreye ısı vermesi</b> ile açıklanır?</p>`,
+  c: ["Isı alanlar: 1 ve 3 — Isı verenler: 2 ve 4", "Isı alanlar: 1 ve 2 — Isı verenler: 3 ve 4", "Isı alanlar: 2 ve 4 — Isı verenler: 1 ve 3", "Dört olayın hepsinde madde çevreden ısı alır."],
+  a: "A",
+  s: `<p>Erime, buharlaşma ve süblimleşme <b>ısı alarak</b>; donma, yoğuşma ve kırağılaşma <b>ısı vererek</b> gerçekleşir.</p>
+<ul><li><b>1 ve 3:</b> Sıvı (kolonya, su) buharlaşırken gereken ısıyı elimizden ve vücudumuzdan alır; serinleriz, üşürüz → ısı alır.</li>
+<li><b>2:</b> Su donarken çevresine ısı verir; depo çok soğumaz, meyveler donmaz → ısı verir.</li>
+<li><b>4:</b> Su buharı ve damlacıklar buz kristallerine dönüşürken (kırağılaşma ve donma) çevreye ısı verilir → ısı verir.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">“Bor; ısıya dayanıklı cam, seramik, temizlik ürünleri ve tarım ilaçlarının yanı sıra roket yakıtı, nükleer teknoloji ve enerji depolama sistemlerinde kullanılan stratejik bir ham maddedir. Türkiye, dünyadaki toplam bor rezervlerinin yaklaşık <b>%73</b>’üne sahiptir. Bor ham olarak satılmak yerine işlenip ileri teknoloji ürünlerine dönüştürüldükçe ülkemize sağladığı ekonomik katkı artmaktadır.”</div>
+<p>Bu metne göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Bor, temizlik ürünlerinden uzay ve savunma sanayisine kadar geniş bir kullanım alanına sahiptir.", "Ham maddenin işlenerek ileri teknoloji ürününe dönüştürülmesi ülke ekonomisine katkı sağlar.", "Türkiye, dünya bor rezervlerinde ilk sırada yer almaktadır.", "Dünyadaki bor rezervlerinin tamamı Türkiye’de bulunmaktadır."],
+  a: "D",
+  s: `<p>Metne göre Türkiye dünya bor rezervlerinin yaklaşık <b>%73</b>’üne sahiptir. Geriye kalan yaklaşık %27 başka ülkelerdedir; bu yüzden “tamamı Türkiye’de” denemez (<b>D</b>).</p>
+<p>A metindeki kullanım alanlarından, B “işlendikçe ekonomik katkı artar” cümlesinden çıkarılır. C de söylenebilir: %73’lük pay, diğer bütün ülkelerin toplamından fazladır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki periyodik tablo kesitinde dört element <b>kare, üçgen, daire</b> ve <b>elmas</b> sembolleriyle gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 130" width="560" role="img" aria-label="Periyodik tablo kesiti: kare 2. periyot 2. grup, üçgen 3. periyot 13. grup, daire 2. periyot 15. grup, elmas 3. periyot 17. grup" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="75" y="71" width="14" height="14" fill="#1e293b"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><circle cx="446" cy="78" r="7.5" fill="#1e293b" stroke="#1e293b" stroke-width="1"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><polygon points="390,98 398,113 382,113" fill="#1e293b"/><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><polygon points="502,97 510,106 502,115 494,106" fill="#1e293b"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Bu elementlerle ilgili;</p><p>I. Kare ve üçgenle gösterilen elementler metaldir.<br>
+II. Daire ve elmasla gösterilen elementler aynı periyottadır.<br>
+III. Elmasla gösterilen elementin atom numarası, daireyle gösterilen elementin atom numarasından büyüktür.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"],
   a: "C",
-  s: `<p><b>4 numaralı</b> kırağı oluşması (gazdan katıya geçiş) ve buzun erimesi (katıdan sıvıya geçiş) birer <b>hâl değişimi</b> olayıdır; suyun kimliği değişmediği için kimyasal değil, <b>Fiziksel Değişimdir</b>[cite: 12]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Kapalı bir kapta gerçekleşen <b>Metan gazının ($CH_4$) oksijenle ($O_2$) yanması</b> tepkimesinin molekül modeli aşağıda gösterilmiştir:</p>
-<div class="fig"><svg viewBox="0 0 540 135" width="520" role="img" aria-label="Metan gazının yanma tepkimesi molekül modeli">
-<rect x="10" y="10" width="520" height="115" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-<g font-size="9.5" font-weight="bold" text-anchor="middle">
-<circle cx="65" cy="58" r="13" fill="#1e293b"/><text x="65" y="62" fill="#fff">C</text>
-<circle cx="46" cy="42" r="7" fill="#3b82f6"/><circle cx="84" cy="42" r="7" fill="#3b82f6"/>
-<circle cx="46" cy="74" r="7" fill="#3b82f6"/><circle cx="84" cy="74" r="7" fill="#3b82f6"/>
-<text x="65" y="98" fill="#1e293b">1 tane CH₄</text>
-<text x="118" y="62" font-size="16">+</text>
-<circle cx="152" cy="48" r="9" fill="#dc2626"/><circle cx="170" cy="48" r="9" fill="#dc2626"/>
-<circle cx="152" cy="72" r="9" fill="#dc2626"/><circle cx="170" cy="72" r="9" fill="#dc2626"/>
-<text x="161" y="98" fill="#dc2626">2 tane O₂</text>
-<text x="230" y="55" font-size="11" fill="#1e40af">Tepkime</text>
-<text x="230" y="72" font-size="18" fill="#1e40af">⟶</text>
-<circle cx="305" cy="58" r="9" fill="#dc2626"/><circle cx="325" cy="58" r="13" fill="#1e293b"/><circle cx="345" cy="58" r="9" fill="#dc2626"/>
-<text x="325" y="62" fill="#fff">C</text>
-<text x="325" y="98" fill="#1e293b">1 tane CO₂</text>
-<text x="385" y="62" font-size="16">+</text>
-<circle cx="435" cy="46" r="9" fill="#dc2626"/><circle cx="421" cy="54" r="6" fill="#3b82f6"/><circle cx="449" cy="54" r="6" fill="#3b82f6"/>
-<circle cx="435" cy="74" r="9" fill="#dc2626"/><circle cx="421" cy="82" r="6" fill="#3b82f6"/><circle cx="449" cy="82" r="6" fill="#3b82f6"/>
-<text x="435" y="98" fill="#2563eb">2 tane H₂O</text>
-<text x="270" y="116" fill="#166534">Girenler: 1 C, 4 H, 4 O atomu (3 molekül)  =  Ürünler: 1 C, 4 H, 4 O atomu (3 molekül)</text>
-</g>
-</svg></div>
-<p>Modellenen bu kimyasal tepkimeyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [
-    `Tepkimeye giren CH₄ ve O₂ moleküllerindeki atomlar arası bağlar kopmuş, CO₂ ve H₂O moleküllerinde yeni bağlar oluşmuştur.`,
-    `Tepkimede atomların türü (Karbon, Hidrojen, Oksijen) ve toplam atom sayısı (9 atom) korunmuştur.`,
-    `Kapalı kapta gerçekleştiği için tepkimeye girenlerin toplam kütlesi, oluşan ürünlerin toplam kütlesine eşittir[cite: 12].`,
-    `Tepkime sonucunda Karbon ve Oksijen atomları yok olmuş, yerlerine tamamen yeni element atomları oluşmuştur.`
-  ],
+  s: `<p>Kare: 2. periyot 2. grup → berilyum (Be, atom numarası 4). Üçgen: 3. periyot 13. grup → alüminyum (Al, 13). Daire: 2. periyot 15. grup → azot (N, 7). Elmas: 3. periyot 17. grup → klor (Cl, 17).</p>
+<ul><li><b>I ✓</b> Be ve Al metaldir. Alüminyum, yarı metal olan borun altında olsa da metaldir.</li>
+<li><b>II ✗</b> Daire 2. periyotta, elmas 3. periyottadır; yatay sıraları farklıdır.</li>
+<li><b>III ✓</b> Klorun atom numarası (17), azotunkinden (7) büyüktür.</li>
+<li><b>Çeldiriciler</b> “Yalnız III” alüminyumu bor gibi yarı metal sanan öğrencinin, “I, II ve III” ise iki elementin aynı periyotta olduğunu düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki periyodik tablo kesitinde elementler metal, yarı metal ve ametal olmalarına göre üç farklı renkle boyanmıştır. Renklerin hangi sınıfı gösterdiği verilmemiştir. Soy gazlar ametallerle aynı renkte gösterilmiştir. 3. periyot 13. gruptaki <b>X</b> elementinin kutusu ise boyanmadan bırakılmıştır.</p><div class="fig"><svg viewBox="0 0 560 156" width="560" role="img" aria-label="Renkli periyodik tablo kesiti; renklerin anlamı verilmemiş; 3. periyot 13. gruptaki X boyanmamış" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="516" y="36" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="390" y="111" font-size="14" font-weight="bold">X</text><rect x="404" y="92" width="28" height="28" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text><rect x="90" y="129" width="18" height="18" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="116" y="143" font-size="13" text-anchor="start">1. renk</text><rect x="240" y="129" width="18" height="18" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><text x="266" y="143" font-size="13" text-anchor="start">2. renk</text><rect x="390" y="129" width="18" height="18" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="416" y="143" font-size="13" text-anchor="start">3. renk</text></svg></div><p>Buna göre X elementinin kutusu hangi elementlerle <b>aynı renge</b> boyanmalıdır?</p>`,
+  c: ["2. periyot 13. gruptaki elementle", "3. periyot 1. ve 2. gruptaki elementlerle", "3. periyot 14. gruptaki elementle", "1. periyot 1. gruptaki elementle"],
+  a: "B",
+  s: `<p>Önce renkler çözülür: 1. ve 2. gruptaki Li, Be, Na, Mg metal olduğuna göre bunların rengi (1. renk) <b>metal</b>dir. Hidrojen ve tablonun sağındaki elementlerin rengi (3. renk) <b>ametal</b>dir. Geriye kalan 2. renk (2. periyot 13. grup ve 3. periyot 14. grup: bor ve silisyum) <b>yarı metal</b>dir. X, 3. periyot 13. gruptaki <b>alüminyum</b>dur ve bir metaldir.</p>
+<ul><li><b>A ✗</b> Üstündeki bor yarı metaldir. “Aynı gruptaki elementler aynı sınıftadır” yanılgısı.</li>
+<li><b>B ✓</b> Na ve Mg metaldir; X (Al) de metal olduğu için 1. renge boyanmalıdır.</li>
+<li><b>C ✗</b> Sağındaki silisyum yarı metaldir. “Komşu elementler aynı sınıftadır” yanılgısı.</li>
+<li><b>D ✗</b> Hidrojen 1. grupta olsa da ametaldir.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Mert, periyodik tablodaki üç elementin yerini bulmak için aşağıdaki ipucu kartlarını hazırlamıştır.</p><div class="box"><b>1. kart:</b> X elementi 2. periyot 14. gruptadır.<br><b>2. kart:</b> Y elementinin atom numarası, X’in atom numarasından 1 fazladır.<br><b>3. kart:</b> Z elementi, Y ile aynı gruptadır ve periyodik tabloda Y’nin hemen altında yer alır.</div><p>Bu kartlara göre;</p><p>I. Z’nin atom numarası, Y’nin atom numarasından büyüktür.<br>
+II. X, Y ve Z elementlerinin üçü de ametaldir.<br>
+III. Z, X ile aynı periyottadır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>X: 2. periyot 14. grup → karbon (C, 6). Y’nin atom numarası 7 → azot (N), 2. periyot 15. grup. Z: 15. grupta azotun altı → fosfor (P, 15), 3. periyot.</p>
+<ul><li><b>I ✓</b> Bir grupta yukarıdan aşağıya atom numarası artar: 15 &gt; 7.</li>
+<li><b>II ✓</b> Karbon, azot ve fosfor ametaldir.</li>
+<li><b>III ✗</b> X 2. periyotta, Z 3. periyottadır.</li>
+<li><b>Şıklar</b> III’ün yanlış olduğunu gören öğrenci, II’yi doğru değerlendirirse “I ve II” cevabına ulaşır; fosforu metal sanan “Yalnız I”i seçer.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir firma üretimde kullanmak için üç farklı element arıyor:</p><p>I. Elektriği iyi ileten ve kolayca tel hâline getirilebilen bir <b>kablo</b> malzemesi<br>
+II. Elektriği metallerden az, ametallerden iyi ileten (yarı iletken) bir <b>güneş pili</b> malzemesi<br>
+III. Havadan hafif olan ve normal koşullarda başka maddelerle tepkimeye girmeyen bir <b>balon gazı</b></p><p>Aşağıdaki periyodik tablo kesitinde dört elementin yeri numaralarla gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 130" width="560" role="img" aria-label="Periyodik tablo kesiti: 1 3. periyot 14. grup, 2 1. periyot 18. grup, 3 3. periyot 13. grup, 4 2. periyot 17. grup" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="530" y="55" font-size="14" font-weight="bold">2</text><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="502" y="83" font-size="14" font-weight="bold">4</text><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="390" y="111" font-size="14" font-weight="bold">3</text><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="418" y="111" font-size="14" font-weight="bold">1</text><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Firmanın I, II ve III numaralı ihtiyaçları için seçmesi gereken elementler sırasıyla hangi numaralarla gösterilmiştir?</p>`,
+  c: ["1 – 3 – 2", "3 – 4 – 2", "4 – 1 – 3", "3 – 1 – 2"],
   a: "D",
-  s: `<p>Kimyasal tepkimelerde <b>atomların türü (cinsi) ve sayısı kesinlikle korunur</b>; hiçbir atom yok olmaz ve tepkimede yeni bir element atomu oluşmaz, yalnızca atomlar arasındaki bağlar yeniden düzenlenerek yeni <b>moleküller/bileşikler</b> oluşur (<b>D yanlıştır</b>).</p>`
-},
-{
-  q: `<p>Bir kimyasal tepkimede <b>her zaman korunan (değişmeyen)</b> nicelikler ile <b>değişebilen</b> nicelikleri karşılaştıran aşağıdaki tablodaki bilgilerden hangisi <b>yanlıştır</b>[cite: 12]?</p>
-<table class="rt">
-<tr><th>Seçenek</th><th>Kimyasal Tepkimede İncelenen Özellik</th><th>Değişim Durumu</th></tr>
-<tr><td><b>A</b></td><td>Toplam Kütle[cite: 12]</td><td>Her zaman korunur (Değişmez)[cite: 12].</td></tr>
-<tr><td><b>B</b></td><td>Atomların Türü (Cinsi) ve Sayısı</td><td>Her zaman korunur (Değişmez).</td></tr>
-<tr><td><b>C</b></td><td>Toplam Proton ve Elektron Sayısı</td><td>Her zaman korunur (Değişmez).</td></tr>
-<tr><td><b>D</b></td><td>Toplam Molekül Sayısı ve Maddelerin Kimyasal Özelliği[cite: 12]</td><td>Her zaman korunur (Değişmez).</td></tr>
-</table>`,
-  c: [`A`, `B`, `C`, `D`],
+  s: `<p>1: 3. periyot 14. grup → silisyum (yarı metal). 2: 1. periyot 18. grup → helyum (soy gaz). 3: 3. periyot 13. grup → alüminyum (metal). 4: 2. periyot 17. grup → flor (ametal, tepkimeye çok yatkın bir gaz).</p><p>Kablo için metal olan <b>3</b> (alüminyum), güneş pili için yarı metal olan <b>1</b> (silisyum), balon için hafif ve tepkimeye girmeyen soy gaz <b>2</b> (helyum) seçilir: 3 – 1 – 2.</p>
+<ul><li><b>A ✗</b> Silisyum ile alüminyumun yerleri karıştırılmıştır.</li>
+<li><b>B ✗</b> 4 (flor) ametaldir; yarı iletken değildir.</li>
+<li><b>C ✗</b> Flor ametaldir ve elektriği iletmez; alüminyum gaz değildir.</li>
+<li><b>D ✓</b> Üç ihtiyaç da doğru elementle eşleşir.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Mendeleyev elementleri atom kütlelerine göre sıralamıştı. Moseley ise elementlerin <b>atom numarasına</b> (proton sayısına) göre sıralanması gerektiğini gösterdi. Aşağıdaki tabloda, periyodik tabloda art arda gelen bazı element çiftlerinin atom numaraları ve yaklaşık atom kütleleri verilmiştir.</p><div class="tbl"><table>
+<tr><th>Element çifti</th><th>Atom numaraları</th><th>Atom kütleleri</th></tr>
+<tr><td>Ar – K</td><td>18 – 19</td><td>39,95 – 39,10</td></tr>
+<tr><td>Co – Ni</td><td>27 – 28</td><td>58,93 – 58,69</td></tr>
+<tr><td>Te – I</td><td>52 – 53</td><td>127,60 – 126,90</td></tr>
+<tr><td>Mg – Al</td><td>12 – 13</td><td>24,31 – 26,98</td></tr>
+</table></div><p>Bu tabloya göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Elementler atom kütlesine göre sıralansaydı K, Ar’dan önce yer alırdı.", "Mg ve Al’nin sırası iki sıralama yöntemine göre de aynıdır.", "Atom numarası büyük olan elementin atom kütlesi de her zaman büyüktür.", "Her çiftte ikinci elementin proton sayısı birinci elementinkinden fazladır."],
+  a: "C",
+  s: `<p>Tabloda Ar–K, Co–Ni ve Te–I çiftlerinde atom numarası büyük olan elementin atom kütlesi daha <b>küçüktür</b>. Bu yüzden sıralama atom kütlesine değil atom numarasına göre yapılır.</p>
+<ul><li><b>A ✓ söylenebilir</b> K’nin kütlesi (39,10) Ar’ınkinden (39,95) küçüktür; kütleye göre K önce gelirdi.</li>
+<li><b>B ✓ söylenebilir</b> Mg’nin hem atom numarası hem kütlesi Al’ninkinden küçüktür; iki yönteme göre de Mg önce gelir.</li>
+<li><b>C ✗ söylenemez</b> Üç çift bu genellemeyi bozar.</li>
+<li><b>D ✓ söylenebilir</b> Atom numarası proton sayısıdır; her çiftte ikinci elementin atom numarası 1 fazladır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki tabloda ilk 20 element sınıflarına göre renklendirilmiştir.</p><div class="fig"><svg viewBox="0 0 560 186" width="560" role="img" aria-label="Metal, yarı metal, ametal ve soy gazlara göre renklendirilmiş ilk 20 element" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="54" y="55" font-size="13" font-weight="bold">H</text><rect x="516" y="36" width="28" height="28" fill="#e9d5ff" stroke="#475569" stroke-width="1.2"/><text x="530" y="55" font-size="13" font-weight="bold">He</text><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="54" y="83" font-size="13" font-weight="bold">Li</text><rect x="68" y="64" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="82" y="83" font-size="13" font-weight="bold">Be</text><rect x="376" y="64" width="28" height="28" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><text x="390" y="83" font-size="13" font-weight="bold">B</text><rect x="404" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="418" y="83" font-size="13" font-weight="bold">C</text><rect x="432" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="446" y="83" font-size="13" font-weight="bold">N</text><rect x="460" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="474" y="83" font-size="13" font-weight="bold">O</text><rect x="488" y="64" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="502" y="83" font-size="13" font-weight="bold">F</text><rect x="516" y="64" width="28" height="28" fill="#e9d5ff" stroke="#475569" stroke-width="1.2"/><text x="530" y="83" font-size="13" font-weight="bold">Ne</text><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="54" y="111" font-size="13" font-weight="bold">Na</text><rect x="68" y="92" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="82" y="111" font-size="13" font-weight="bold">Mg</text><rect x="376" y="92" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="390" y="111" font-size="13" font-weight="bold">Al</text><rect x="404" y="92" width="28" height="28" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><text x="418" y="111" font-size="13" font-weight="bold">Si</text><rect x="432" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="446" y="111" font-size="13" font-weight="bold">P</text><rect x="460" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="474" y="111" font-size="13" font-weight="bold">S</text><rect x="488" y="92" width="28" height="28" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="502" y="111" font-size="13" font-weight="bold">Cl</text><rect x="516" y="92" width="28" height="28" fill="#e9d5ff" stroke="#475569" stroke-width="1.2"/><text x="530" y="111" font-size="13" font-weight="bold">Ar</text><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="120" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="54" y="139" font-size="13" font-weight="bold">K</text><rect x="68" y="120" width="28" height="28" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="82" y="139" font-size="13" font-weight="bold">Ca</text><text x="32" y="138" text-anchor="end" fill="#475569" font-weight="bold">4.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text><rect x="60" y="159" width="18" height="18" fill="#bfdbfe" stroke="#475569" stroke-width="1.2"/><text x="86" y="173" font-size="13" text-anchor="start">Metal</text><rect x="185" y="159" width="18" height="18" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><text x="211" y="173" font-size="13" text-anchor="start">Yarı metal</text><rect x="310" y="159" width="18" height="18" fill="#bbf7d0" stroke="#475569" stroke-width="1.2"/><text x="336" y="173" font-size="13" text-anchor="start">Ametal</text><rect x="435" y="159" width="18" height="18" fill="#e9d5ff" stroke="#475569" stroke-width="1.2"/><text x="461" y="173" font-size="13" text-anchor="start">Soy gaz</text></svg></div><p>Bu tabloya göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["2. periyotta metal, yarı metal ve ametal sınıflarının üçünden de element bulunur.", "3. periyottaki yarı metalin hemen sağındaki element bir metaldir.", "Bir grupta yukarıdan aşağıya inildikçe elementlerin sınıfı değişmez.", "Atom numarası ardışık olan iki element her zaman aynı sınıftadır."],
+  a: "A",
+  s: `<p>Tablo dikkatle okunmalı ve yalnızca tablodaki bilgiyle karar verilmelidir.</p>
+<ul><li><b>A ✓</b> 2. periyotta Li ve Be metal, B yarı metal, C, N, O, F ametaldir.</li>
+<li><b>B ✗</b> 3. periyottaki yarı metal Si’dir; sağındaki P ametaldir.</li>
+<li><b>C ✗</b> 1. grupta H ametal, Li metaldir; 13. grupta B yarı metal, Al metaldir.</li>
+<li><b>D ✗</b> Al (13, metal) ile Si (14, yarı metal) ardışıktır ama sınıfları farklıdır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Fen bilimleri dersinde öğrenciler periyodik sistemle ilgili şunları söylüyor:</p><div class="dialog"><div><b>Ece:</b> Hidrojen 1. grupta yer aldığı için bir metaldir.</div><div><b>Can:</b> Helyum 2. grupta değil, 18. grupta soy gazlarla birlikte yer alır.</div><div><b>Deniz:</b> Bor ile alüminyum aynı grupta olduğu için ikisi de yarı metaldir.</div><div><b>Selin:</b> Aynı gruptaki elementlerin kimyasal özellikleri benzerdir ama bir gruptaki elementlerin hepsi aynı sınıfta olmayabilir.</div></div><p>Buna göre hangi öğrencilerin söyledikleri <b>doğrudur</b>?</p>`,
+  c: ["Ece ve Can", "Can ve Selin", "Deniz ve Selin", "Ece, Can ve Selin"],
+  a: "B",
+  s: `<p>Periyodik sistemdeki en bilinen istisnalar hidrojen, helyum ve bor-alüminyum çiftidir.</p>
+<ul><li><b>Ece ✗</b> Hidrojen 1. grupta olsa da ametaldir.</li>
+<li><b>Can ✓</b> Helyum soy gazdır ve 18. grupta yer alır.</li>
+<li><b>Deniz ✗</b> Bor yarı metal, alüminyum metaldir.</li>
+<li><b>Selin ✓</b> Aynı gruptakilerin kimyasal özellikleri benzerdir; ama örneğin 1. grupta hidrojen ametal, diğerleri metaldir.</li>
+<li><b>Şıklar</b> Yalnızca Can ve Selin doğrudur. A ve D, Ece’nin hidrojen yanılgısını; C, Deniz’in bor-alüminyum yanılgısını içerir.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci gri demir tozu ile sarı kükürt tozunu bir kapta karıştırıp şekildeki adımları uyguluyor.</p><div class="fig"><svg viewBox="0 0 560 212" width="560" role="img" aria-label="Demir ve kükürt tozu deneyinin üç adımı" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="8" y="6" width="176" height="200" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="96" y="26" font-size="14" font-weight="bold">1. adım</text><rect x="192" y="6" width="176" height="200" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="280" y="26" font-size="14" font-weight="bold">2. adım</text><rect x="376" y="6" width="176" height="200" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="464" y="26" font-size="14" font-weight="bold">3. adım</text><path d="M28,150 Q96,175 164,150" fill="#e2e8f0" stroke="#334155" stroke-width="2"/><circle cx="70.8" cy="154.4" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="83.5" cy="154.8" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="108.1" cy="150.5" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="49.3" cy="156.7" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="72.9" cy="151.9" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="143.6" cy="153.8" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="128.3" cy="153.8" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="109.4" cy="151.2" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="108.9" cy="156.9" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="98.2" cy="155.9" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="112.5" cy="150.5" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="120.8" cy="154.7" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="76.9" cy="150.2" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="131.1" cy="153.8" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="117" cy="157" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="116.6" cy="157.4" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="85.9" cy="156.4" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="90.7" cy="157.5" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="132.4" cy="150.8" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="61.1" cy="151.7" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="140.7" cy="153.5" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="108.2" cy="152.4" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="96.7" cy="153.1" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="81.7" cy="154.7" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="104.1" cy="157.2" r="2.6" fill="#facc15" stroke="none" stroke-width="0"/><circle cx="113.5" cy="157.4" r="2.6" fill="#6b7280" stroke="none" stroke-width="0"/><path d="M78,62 L78,100 Q96,118 114,100 L114,62" fill="none" stroke="#dc2626" stroke-width="9"/><circle cx="80" cy="120" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="86.5" cy="124" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="93" cy="120" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="99.5" cy="124" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="106" cy="120" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><circle cx="112.5" cy="124" r="2.4" fill="#6b7280" stroke="none" stroke-width="0"/><text x="96" y="186">Gri demir tozu mıknatısa</text><text x="96" y="200">çekiliyor.</text><path d="M262,48 L262,130 Q280,150 298,130 L298,48" fill="#ffffff" stroke="#334155" stroke-width="2"/><path d="M264,112 L264,130 Q280,146 296,130 L296,112 Z" fill="#111827"/><path d="M270,172 Q280,146 290,172 Z" fill="#f97316"/><text x="280" y="186">Isıtılan karışımdan siyah</text><text x="280" y="200">renkli katı oluşuyor.</text><path d="M396,150 Q464,175 532,150" fill="#e2e8f0" stroke="#334155" stroke-width="2"/><path d="M436,152 Q464,140 492,152 Z" fill="#111827"/><path d="M446,62 L446,100 Q464,118 482,100 L482,62" fill="none" stroke="#dc2626" stroke-width="9"/><text x="464" y="186">Siyah katı mıknatısa</text><text x="464" y="200">çekilmiyor.</text></svg></div><p>Bu deneyle ilgili;</p><p>I. 1. adımda demir ve kükürt kimliklerini korumuştur.<br>
+II. 2. adımda oluşan siyah katı bir bileşiktir.<br>
+III. Siyah katı mıknatısa çekilmediğine göre yapısında demir atomu yoktur.</p><p>yorumlarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>1. adımda demir tozu mıknatısla ayrılabildiğine göre demir özelliğini korumuştur; karıştırma fiziksel bir değişimdir. 2. adımda ısıtılan karışımdan özellikleri farklı yeni bir madde (siyah katı) oluşmuştur; bu kimyasal değişimdir.</p>
+<ul><li><b>I ✓</b> Mıknatısla ayrılabilmesi demirin kimliğini koruduğunu gösterir.</li>
+<li><b>II ✓</b> Siyah katı demir ve kükürt atomlarının birleşmesiyle oluşmuştur; farklı tür atomlardan oluşan bu madde bir bileşiktir.</li>
+<li><b>III ✗</b> Kimyasal tepkimede atomlar yok olmaz; demir atomları siyah katının yapısındadır. Mıknatısa çekilmemesi, oluşan bileşiğin özelliklerinin demirden farklı olduğunu gösterir.</li>
+<li><b>Şıklar</b> “I, II ve III” seçeneği, özelliği değişen maddenin atomlarının da kaybolduğunu düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki tabloda dört olay ve bu olaylarda yapılan gözlemler verilmiştir.</p><div class="tbl"><table>
+<tr><th>No</th><th>Olay</th><th>Gözlem</th></tr>
+<tr><td>I</td><td>Bakır tel alevde bir süre ısıtılıyor.</td><td>Telin yüzeyinde siyah renkli bir tabaka oluşuyor.</td></tr>
+<tr><td>II</td><td>Berrak kireç suyuna pipetle nefes üfleniyor.</td><td>Su bulanıklaşıyor; dipte beyaz katı tanecikler oluşuyor.</td></tr>
+<tr><td>III</td><td>Dolaba konulan naftalin topları bekletiliyor.</td><td>Toplar zamanla küçülüyor ve dolapta koku yayılıyor.</td></tr>
+<tr><td>IV</td><td>Bir bardak suya birkaç damla mavi mürekkep damlatılıyor.</td><td>Suyun tamamı maviye boyanıyor.</td></tr>
+</table></div><p>Bu olaylardan hangilerinde <b>yeni bir madde</b> oluşmuştur?</p>`,
+  c: ["I ve III", "II ve IV", "III ve IV", "I ve II"],
   a: "D",
-  s: `<p>Kimyasal tepkimelerde maddelerin <b>kimyasal özellikleri (kimliği) kesinlikle değişir</b>[cite: 12]; ayrıca <b>toplam molekül sayısı</b> ve hacim tepkimeye göre <b>değişebilir</b> (Örn: $2H_2 + O_2 \rightarrow 2H_2O$ tepkimesinde 3 molekül girip 2 molekül çıkmıştır). Dolayısıyla <b>D</b> seçeneği yanlıştır.</p>`
-},
-{
-  q: `<p>Sanayide ve günlük yaşamda sıkça kullanılan bazı asit ve bazların <b>kimyasal formülleri</b>, <b>sistematik adları</b> ve <b>piyasa (yaygın) adları</b> aşağıdaki tabloda eşleştirilmiştir.</p>
-<table class="rt">
-<tr><th>Formülü</th><th>Sistematik Adı</th><th>Piyasa (Yaygın) Adı</th><th>Sınıfı ve Suya Verdiği İyon</th></tr>
-<tr><td><b>HCl</b></td><td>Hidroklorik asit</td><td>Tuz ruhu</td><td>Asit (H⁺ iyonu verir)[cite: 12]</td></tr>
-<tr><td><b>H₂SO₄</b></td><td>Sülfürik asit</td><td>Zaç yağı</td><td>Asit (H⁺ iyonu verir)[cite: 12]</td></tr>
-<tr><td><b>HNO₃</b></td><td>Nitrik asit</td><td>Kezzap</td><td>Asit (H⁺ iyonu verir)[cite: 12]</td></tr>
-<tr><td><b>NaOH</b></td><td>Sodyum hidroksit</td><td>Sud kostik</td><td>Baz (OH⁻ iyonu verir)[cite: 12]</td></tr>
-<tr><td><b>NH₃</b></td><td>Amonyak</td><td>Amonyak</td><td>Asit (H⁺ iyonu verir)</td></tr>
-</table>
-<p>Tablodaki maddelerden hangisinin sınıfı ve sulu çözeltiye verdiği iyon <b>yanlış</b> yazılmıştır[cite: 12]?</p>`,
-  c: [
-    `HCl (Tuz ruhu)`,
-    `H₂SO₄ (Zaç yağı)`,
-    `NaOH (Sud kostik)`,
-    `NH₃ (Amonyak)`
-  ],
+  s: `<p>Yeni madde oluşan olaylar kimyasal değişimdir. Renk değişimi ya da koku tek başına yeni madde oluştuğunu göstermez; olayın ne olduğuna bakılmalıdır.</p>
+<ul><li><b>I</b> Bakır havadaki oksijenle tepkimeye girerek siyah renkli yeni bir madde (bakır oksit) oluşturmuştur → kimyasal.</li>
+<li><b>II</b> Nefesteki karbondioksit kireç suyuyla tepkimeye girerek suda çözünmeyen beyaz katı (kireç taşı) oluşturmuştur → kimyasal.</li>
+<li><b>III</b> Naftalin katı hâlden doğrudan gaza geçmiştir (süblimleşme); koku yayılması bu gazdan kaynaklanır → fiziksel.</li>
+<li><b>IV</b> Mürekkep suya dağılmış (çözünmüş), yeni madde oluşmamıştır → fiziksel.</li>
+<li><b>Şıklar</b> Doğru cevap I ve II’dir (D). III ve IV’ü seçen öğrenci koku ve renk değişimini kimyasal değişimin kanıtı sanmıştır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci 2,4 g magnezyum şeridi açık havada tamamen yakıyor ve oluşan beyaz tozu tartıyor. Ölçümler şekilde verilmiştir. Magnezyumun yalnızca havadaki oksijenle tepkimeye girdiği ve oluşan tozun tamamının toplandığı bilinmektedir.</p><div class="fig"><svg viewBox="0 0 560 138" width="560" role="img" aria-label="Magnezyum şeridin yakılmadan önce 2,4 g, yakıldıktan sonra beyaz tozun 4,0 g geldiği teraziler" font-size="12" fill="#1e293b" text-anchor="middle"><text x="140" y="18" font-size="13" font-weight="bold">Yakmadan önce</text><text x="420" y="18" font-size="13" font-weight="bold">Yaktıktan sonra</text><rect x="65" y="92" width="150" height="34" rx="6" fill="#e2e8f0" stroke="#334155" stroke-width="1.6"/><rect x="105" y="100" width="70" height="20" rx="3" fill="#0f172a"/><text x="140" y="115" font-size="13" fill="#4ade80" font-weight="bold">2,4 g</text><rect x="85" y="84" width="110" height="8" fill="#94a3b8" stroke="#334155" stroke-width="1.2"/><rect x="95" y="52" width="90" height="10" fill="#cbd5e1" stroke="#334155" stroke-width="1"/><text x="140" y="46">magnezyum şerit</text><rect x="345" y="92" width="150" height="34" rx="6" fill="#e2e8f0" stroke="#334155" stroke-width="1.6"/><rect x="385" y="100" width="70" height="20" rx="3" fill="#0f172a"/><text x="420" y="115" font-size="13" fill="#4ade80" font-weight="bold">4,0 g</text><rect x="365" y="84" width="110" height="8" fill="#94a3b8" stroke="#334155" stroke-width="1.2"/><path d="M380,62 Q420,40 460,62 Z" fill="#ffffff" stroke="#334155" stroke-width="1.4"/><text x="420" y="36">beyaz toz</text><line x1="235" y1="100" x2="320.2" y2="100" stroke="#1e293b" stroke-width="2"/><polygon points="325.0,100.0 317.8,103.5 317.8,96.5" fill="#1e293b"/><text x="280" y="90">havada yakma</text></svg></div><p>Buna göre;</p><p>I. Bu tepkimede kütle korunmamıştır, çünkü katının kütlesi artmıştır.<br>
+II. Beyaz tozun yapısında magnezyum ve oksijen atomları vardır.<br>
+III. Tepkimeye havadan 1,6 g oksijen katılmıştır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "II ve III", "I ve III", "Yalnız II"],
+  a: "B",
+  s: `<p>Kimyasal tepkimelerde toplam kütle her zaman korunur. Terazide yalnızca magnezyum tartılmış, tepkimeye katılan oksijen tartılmamıştır.</p>
+<ul><li><b>I ✗</b> Kütle artışı, havadaki oksijenin tepkimeye katılmasından kaynaklanır; tepkimeye girenlerin toplam kütlesi ürünün kütlesine eşittir.</li>
+<li><b>II ✓</b> Ürün magnezyum ile oksijenden oluştuğu için iki tür atomu da içerir.</li>
+<li><b>III ✓</b> Magnezyum + oksijen = beyaz toz → 2,4 g + oksijen = 4,0 g → oksijen = 4,0 − 2,4 = 1,6 g.</li>
+<li><b>Şıklar</b> I’i doğru sanan öğrenci açık kaptaki kütle değişimini “kütle korunmadı” diye yorumlar.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Kapalı bir kapta gerçekleşen bir kimyasal tepkimenin tanecik modeli aşağıda verilmiştir. Tepkimeye giren moleküllerin tamamı tükenmiş ve yalnızca “?” ile gösterilen moleküller oluşmuştur.</p><div class="fig"><svg viewBox="0 0 560 160" width="560" role="img" aria-label="Bir K₂ molekülü ile üç L₂ molekülünden iki tane soru işaretli molekül oluşuyor" font-size="12" fill="#1e293b" text-anchor="middle"><circle cx="40" cy="70" r="14" fill="#334155" stroke="#1e293b" stroke-width="1.2"/><circle cx="64" cy="70" r="14" fill="#334155" stroke="#1e293b" stroke-width="1.2"/><text x="52" y="112" font-size="13" font-weight="bold">1 K₂</text><text x="96" y="75" font-size="22" font-weight="bold">+</text><circle cx="130" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><circle cx="148" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><circle cx="180" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><circle cx="198" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><circle cx="230" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><circle cx="248" cy="70" r="10" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><text x="189" y="112" font-size="13" font-weight="bold">3 L₂</text><line x1="260" y1="70" x2="315.2" y2="70" stroke="#1e293b" stroke-width="2"/><polygon points="320.0,70.0 312.8,73.5 312.8,66.5" fill="#1e293b"/><rect x="334" y="44" width="60" height="52" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/><text x="364" y="78" font-size="22" font-weight="bold">?</text><rect x="424" y="44" width="60" height="52" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.4"/><text x="454" y="78" font-size="22" font-weight="bold">?</text><text x="409" y="112" font-size="13" font-weight="bold">2 ?</text><circle cx="150" cy="140" r="10" fill="#334155" stroke="#1e293b" stroke-width="1.2"/><text x="166" y="145" text-anchor="start">K atomu</text><circle cx="290" cy="140" r="8" fill="#fbbf24" stroke="#1e293b" stroke-width="1.2"/><text x="304" y="145" text-anchor="start">L atomu</text></svg></div><p>Buna göre;</p><p>I. “?” ile gösterilen molekül bir K ve üç L atomundan oluşur.<br>
+II. Tepkimeye giren molekül sayısı, oluşan molekül sayısına eşittir.<br>
+III. Tepkimede oluşan madde bir bileşiktir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>Kimyasal tepkimede atomların türü ve sayısı korunur. Girenlerde 2 K ve 6 L atomu vardır. Bu atomlar 2 özdeş molekülde toplandığına göre her molekülde 1 K ve 3 L atomu bulunur (KL₃).</p>
+<ul><li><b>I ✓</b> 2 K ÷ 2 = 1 K, 6 L ÷ 2 = 3 L.</li>
+<li><b>II ✗</b> Giren molekül sayısı 1 + 3 = 4, oluşan molekül sayısı 2’dir. Molekül sayısı korunmak zorunda değildir.</li>
+<li><b>III ✓</b> Oluşan madde iki farklı tür atomdan oluştuğu için bileşiktir.</li>
+<li><b>Şıklar</b> “I ve II” seçeneği, atom sayısı gibi molekül sayısının da korunduğunu sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>İçine az miktarda madde eklenerek elektriği iletmesi sağlanan su, pile bağlı elektrotların bulunduğu bir düzenekte bir süre bekletiliyor. Tüplerde toplanan gazlardan birine yanan kibrit yaklaştırılınca “pıt” sesi duyuluyor (hidrojen), diğerine korlaşmış kıymık yaklaştırılınca kıymık alevleniyor (oksijen).</p><div class="fig"><svg viewBox="0 0 560 236" width="560" role="img" aria-label="Pile bağlı iki elektrotta sudan hidrojen ve oksijen gazlarının toplanması" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="90" y="80" width="380" height="110" fill="#dbeafe"/><path d="M80,40 L80,190 L480,190 L480,40" fill="none" stroke="#334155" stroke-width="2.2"/><rect x="148" y="30" width="44" height="140" rx="4" fill="#dbeafe" stroke="#334155" stroke-width="1.8"/><rect x="150" y="32" width="40" height="70" fill="#ffffff"/><rect x="166" y="150" width="8" height="28" fill="#475569"/><text x="170" y="22" font-weight="bold">Hidrojen gazı</text><rect x="368" y="30" width="44" height="140" rx="4" fill="#dbeafe" stroke="#334155" stroke-width="1.8"/><rect x="370" y="32" width="40" height="40" fill="#ffffff"/><rect x="386" y="150" width="8" height="28" fill="#475569"/><text x="390" y="22" font-weight="bold">Oksijen gazı</text><circle cx="166" cy="140" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="386" cy="140" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="174" cy="126" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="394" cy="124" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="166" cy="112" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="386" cy="108" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="174" cy="98" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="394" cy="92" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="166" cy="84" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><circle cx="386" cy="76" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1"/><line x1="170" y1="178" x2="170" y2="214" stroke="#1e293b" stroke-width="1.5"/><line x1="170" y1="214" x2="250" y2="214" stroke="#1e293b" stroke-width="1.5"/><line x1="310" y1="214" x2="390" y2="214" stroke="#1e293b" stroke-width="1.5"/><line x1="390" y1="214" x2="390" y2="178" stroke="#1e293b" stroke-width="1.5"/><rect x="250" y="200" width="60" height="28" rx="4" fill="#fef3c7" stroke="#334155" stroke-width="1.5"/><text x="280" y="219" font-size="13" font-weight="bold">Pil</text><text x="280" y="120" font-size="14" font-weight="bold">Su</text></svg></div><p>Bu deneyle ilgili;</p><p>I. Su bir bileşiktir.<br>
+II. Oluşan gazlarda suyun yapısında bulunmayan yeni atom türleri vardır.<br>
+III. Suyun hidrojen ve oksijen gazlarına ayrışması kimyasal bir değişimdir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Sıvı su, özellikleri sudan farklı iki gaza (hidrojen ve oksijen) dönüşmüştür. Yeni maddeler oluştuğu için olay kimyasal değişimdir.</p>
+<ul><li><b>I ✓</b> Sudan iki farklı element oluştuğuna göre su, hidrojen ve oksijen atomlarından oluşan bir bileşiktir.</li>
+<li><b>II ✗</b> Kimyasal tepkimelerde atom türü değişmez; gazlardaki hidrojen ve oksijen atomları sudan gelmiştir.</li>
+<li><b>III ✓</b> Oluşan gazlar su buharı değil, sudan farklı maddelerdir. “Sıvı gaza dönüştü, öyleyse hâl değişimidir” düşüncesi bu soruda yanlıştır.</li>
+<li><b>Şıklar</b> II’yi doğru sanan öğrenci, yeni madde oluşurken yeni atomların da oluştuğunu düşünmüştür.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Beyaz renkli saf bir katı, ağzı açık bir deney tüpünde ısıtılıyor. Isıtma sonunda tüpte kalan katının kütlesinin azaldığı görülüyor.</p><div class="dialog"><div><b>Ece:</b> Katı ısınınca yeni bir maddeye dönüşmüştür; bu bir kimyasal değişimdir.</div><div><b>Can:</b> Bence katının içindeki nem buharlaşmıştır; yalnızca fiziksel bir değişim olmuştur.</div></div><p>Ece’nin düşüncesinin doğru olduğunu <b>kesin</b> olarak göstermek için aşağıdaki gözlemlerden hangisi yapılmalıdır?</p>`,
+  c: ["Tüpün ağzına tutulan soğuk camda su damlacıkları oluştuğunun görülmesi", "Isıtma bittikten sonra tüpteki katının bir kez daha tartılması", "Tüpte kalan katının özelliklerinin başlangıçtaki katının özelliklerinden farklı olduğunun belirlenmesi", "Isıtma sırasında katının sıcaklığının arttığının ölçülmesi"],
+  a: "C",
+  s: `<p>Kimyasal değişimin kesin kanıtı, başlangıçtaki maddeden <b>farklı özellikte yeni bir madde</b> oluştuğunun belirlenmesidir.</p>
+<ul><li><b>A ✗</b> Su damlacıkları Can’ın söylediği nemin buharlaşmasıyla da oluşabilir; iki düşünceyi ayırt etmez.</li>
+<li><b>B ✗</b> Kütlenin azaldığı zaten biliniyor; kütle azalması hem buharlaşmada hem de gaz çıkışlı bir tepkimede görülür.</li>
+<li><b>C ✓</b> Kalan katının özellikleri farklıysa yeni bir madde oluşmuştur; bu kimyasal değişimi kesinleştirir.</li>
+<li><b>D ✗</b> Isıtılan her maddenin sıcaklığı artar; değişimin türünü göstermez.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Havası boşaltılmış kapalı bir kapta <b>10 g</b> saf X katısı ısıtılıyor. Tepkime tamamlandığında kapta yalnızca <b>5,6 g</b> kalsiyum oksit (CaO) katısı ve karbondioksit (CO₂) gazı bulunuyor.</p><p>Buna göre;</p><p>I. X; kalsiyum, karbon ve oksijen atomlarından oluşan bir bileşiktir.<br>
+II. Tepkimede kalsiyum atomlarının bir kısmı karbon atomlarına dönüşmüştür.<br>
+III. Oluşan karbondioksit gazının kütlesi 4,4 g’dır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I ve III"],
   a: "D",
-  s: `<p><b>LGS’nin En Meşhur Tuzağı:</b> Yapısında Hidrojen ($H$) atomu gördüğümüz her madde asit değildir! <b>$NH_3$ (Amonyak)</b> formülünde $OH$ grubu bulundurmamasına rağmen suda çözündüğünde suyla etkileşerek <b>$OH^-$ (hidroksit) iyonu oluşturan zayıf bir BAZDIR!</b>[cite: 12] Temizlik malzemelerinde kullanılır ve kırmızı turnusol kâğıdını maviye çevirir[cite: 12]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Asit ve baz çözeltilerinin elektrik iletkenliğini ve turnusol kâğıdına etkisini inceleyen bir öğrenci; <b>K kabına tuz ruhu (HCl) sulu çözeltisi</b>, <b>L kabına ise sud kostik (NaOH) sulu çözeltisi</b> koyarak aşağıdaki elektrik devrelerini kuruyor[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 460 150" width="440" role="img" aria-label="Asit ve baz çözeltilerinde elektrik iletkenliği ve turnusol deneyi">
-<g stroke="#334155" stroke-width="2">
-<rect x="45" y="55" width="110" height="75" fill="#fecdd3"/>
-<rect x="295" y="55" width="110" height="75" fill="#bfdbfe"/>
-<line x1="70" y1="25" x2="70" y2="105" stroke-width="3"/>
-<line x1="130" y1="25" x2="130" y2="105" stroke-width="3"/>
-<line x1="70" y1="25" x2="92" y2="25"/><line x1="108" y1="25" x2="130" y2="25"/>
-<circle cx="100" cy="25" r="10" fill="#fde047" stroke="#ca8a04"/>
-<line x1="320" y1="25" x2="320" y2="105" stroke-width="3"/>
-<line x1="380" y1="25" x2="380" y2="105" stroke-width="3"/>
-<line x1="320" y1="25" x2="342" y2="25"/><line x1="358" y1="25" x2="380" y2="25"/>
-<circle cx="350" cy="25" r="10" fill="#fde047" stroke="#ca8a04"/>
-</g>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="100" y="90" fill="#991b1b">HCl Çözeltisi (H⁺)</text>
-<text x="100" y="144" fill="#991b1b">K Kabı (Asit)</text>
-<text x="350" y="90" fill="#1e40af">NaOH Çözeltisi (OH⁻)</text>
-<text x="350" y="144" fill="#1e40af">L Kabı (Baz)</text>
-</g>
-</svg></div>
-<p>Bu iki düzenekle ilgili aşağıdaki ifadelerden hangisi <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Hem asitlerin hem de bazların sulu çözeltileri iyon içerdiği için her iki devredeki ampul de ışık verir; K kabı mavi turnusolu kırmızıya, L kabı ise kırmızı turnusolu maviye çevirir[cite: 12].`,
-    `Yalnızca K kabındaki ampul ışık verir, çünkü bazlar elektrik akımını iletmez.`,
-    `K ve L çözeltileri birbirine karıştırılırsa tepkime gerçekleşmez.`,
-    `L kabındaki çözeltiye çinko metali atılırsa hızla Hidrojen gazı açığa çıkar ve pH değeri 2 olur.`
-  ],
+  s: `<p>Kapta X’ten başka madde olmadığı için ürünlerdeki bütün atomlar X’ten gelmiştir. Kapalı kapta toplam kütle korunur.</p>
+<ul><li><b>I ✓</b> Ürünlerde Ca, C ve O atomları vardır; bunlar X’ten gelmiştir. Farklı tür atomlardan oluşan saf madde bileşiktir.</li>
+<li><b>II ✗</b> Kimyasal tepkimelerde atomların türü değişmez; bir atom başka bir atoma dönüşmez.</li>
+<li><b>III ✓</b> 10 g = 5,6 g + CO₂ → CO₂ = 10 − 5,6 = 4,4 g.</li>
+<li><b>Şıklar</b> II’yi doğru kabul eden öğrenci, kimyasal değişimde maddelerin kimliği gibi atomların da değiştiğini sanmıştır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki akış şemasında bir ağacın kesilmesinden sobada çay suyu kaynatılmasına kadar geçen aşamalar verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 238" width="560" role="img" aria-label="Odundan çay demlemeye uzanan beş aşamalı akış şeması" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="110" y="8" width="340" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/><circle cx="132" cy="25" r="12" fill="#1e40af" stroke="none" stroke-width="0"/><text x="132" y="30" font-size="13" fill="#ffffff" font-weight="bold">1</text><text x="156" y="30" font-size="13" text-anchor="start">Ağacın testereyle kesilmesi</text><line x1="280" y1="42" x2="280" y2="49.8" stroke="#1e293b" stroke-width="1.6"/><polygon points="280.0,54.0 277.0,47.7 283.0,47.7" fill="#1e293b"/><rect x="110" y="54" width="340" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/><circle cx="132" cy="71" r="12" fill="#1e40af" stroke="none" stroke-width="0"/><text x="132" y="76" font-size="13" fill="#ffffff" font-weight="bold">2</text><text x="156" y="76" font-size="13" text-anchor="start">Odunun öğütülüp talaş hâline getirilmesi</text><line x1="280" y1="88" x2="280" y2="95.8" stroke="#1e293b" stroke-width="1.6"/><polygon points="280.0,100.0 277.0,93.7 283.0,93.7" fill="#1e293b"/><rect x="110" y="100" width="340" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/><circle cx="132" cy="117" r="12" fill="#1e40af" stroke="none" stroke-width="0"/><text x="132" y="122" font-size="13" fill="#ffffff" font-weight="bold">3</text><text x="156" y="122" font-size="13" text-anchor="start">Talaşın preslenip briket yapılması</text><line x1="280" y1="134" x2="280" y2="141.8" stroke="#1e293b" stroke-width="1.6"/><polygon points="280.0,146.0 277.0,139.7 283.0,139.7" fill="#1e293b"/><rect x="110" y="146" width="340" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/><circle cx="132" cy="163" r="12" fill="#1e40af" stroke="none" stroke-width="0"/><text x="132" y="168" font-size="13" fill="#ffffff" font-weight="bold">4</text><text x="156" y="168" font-size="13" text-anchor="start">Briketin sobada yanması</text><line x1="280" y1="180" x2="280" y2="187.8" stroke="#1e293b" stroke-width="1.6"/><polygon points="280.0,192.0 277.0,185.7 283.0,185.7" fill="#1e293b"/><rect x="110" y="192" width="340" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.4"/><circle cx="132" cy="209" r="12" fill="#1e40af" stroke="none" stroke-width="0"/><text x="132" y="214" font-size="13" fill="#ffffff" font-weight="bold">5</text><text x="156" y="214" font-size="13" text-anchor="start">Soba üstündeki çaydanlıkta suyun kaynaması</text></svg></div><p>Bu aşamalardan hangilerinde <b>kimyasal değişim</b> gerçekleşir?</p>`,
+  c: ["3 ve 4", "Yalnız 4", "4 ve 5", "1, 2 ve 3"],
+  a: "B",
+  s: `<p>Kimyasal değişimde maddenin kimliği değişir ve yeni maddeler oluşur.</p>
+<ul><li><b>1, 2, 3</b> Kesme, öğütme ve presleme maddenin yalnızca şeklini ve büyüklüğünü değiştirir; briket yine odun talaşıdır → fiziksel.</li>
+<li><b>4</b> Yanmada odun, havadaki oksijenle tepkimeye girer; kül, karbondioksit, su buharı gibi yeni maddeler oluşur → kimyasal.</li>
+<li><b>5</b> Suyun kaynaması bir hâl değişimidir; kabarcıklar su buharıdır → fiziksel.</li>
+<li><b>Şıklar</b> Yalnız 4 kimyasaldır. “4 ve 5” kaynamadaki gaz çıkışını, “3 ve 4” preslemedeki şekil değişimini kimyasal sanmaktan gelir.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>İki ayracın asidik, nötr ve bazik ortamlardaki renkleri aşağıda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Ayraç</th><th>Asidik ortam</th><th>Nötr ortam</th><th>Bazik ortam</th></tr>
+<tr><td>Bromtimol mavisi</td><td>Sarı</td><td>Yeşil</td><td>Mavi</td></tr>
+<tr><td>Fenolftalein</td><td>Renksiz</td><td>Renksiz</td><td>Pembe</td></tr>
+</table></div><p>K, L, M ve N çözeltilerine bu ayraçlardan biri damlatılınca gözlenen renkler şunlardır:</p><div class="tbl"><table>
+<tr><th>Çözelti</th><th>K</th><th>L</th><th>M</th><th>N</th></tr>
+<tr><td>Damlatılan ayraç</td><td>Bromtimol mavisi</td><td>Fenolftalein</td><td>Bromtimol mavisi</td><td>Fenolftalein</td></tr>
+<tr><td>Gözlenen renk</td><td>Sarı</td><td>Pembe</td><td>Mavi</td><td>Renksiz</td></tr>
+</table></div><p>Buna göre aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["N’nin pH değeri 7’den küçüktür.", "L’nin pH değeri M’nin pH değerinden büyüktür.", "K’nin pH değeri L’nin pH değerinden küçüktür.", "M ile N karıştırılırsa nötrleşme tepkimesi gerçekleşir."],
+  a: "C",
+  s: `<p>K sarı → asit (pH &lt; 7). L pembe → baz (pH &gt; 7). M mavi → baz (pH &gt; 7). N renksiz → fenolftalein hem asitte hem nötr ortamda renksiz kaldığı için N asidik <b>ya da</b> nötr olabilir (pH ≤ 7).</p>
+<ul><li><b>A ✗</b> N nötr de olabilir (pH = 7). “Renksiz fenolftalein = asit” yanılgısı.</li>
+<li><b>B ✗</b> L ve M ikisi de bazdır; ayraç renginden hangisinin pH’ının büyük olduğu bilinemez.</li>
+<li><b>C ✓</b> Asidin pH’ı her zaman bazınkinden küçüktür: K asit, L baz.</li>
+<li><b>D ✗</b> N nötr olabilir; nötr bir çözeltiyle bazın karışması nötrleşme değildir.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci evde bir çiçekten doğal ayraç hazırlıyor. Ayracın asidik ortamda <b>kırmızı</b>, nötr ortamda <b>mor</b>, bazik ortamda <b>yeşil</b> renk aldığını biliyor. Bu ayracı pH değerleri verilen dört sıvıya damlatıyor.</p><div class="tbl"><table>
+<tr><th>Sıvı</th><th>1. Sirke</th><th>2. Saf su</th><th>3. Deniz suyu</th><th>4. Amonyaklı cam temizleyici</th></tr>
+<tr><td>pH</td><td>3</td><td>7</td><td>8</td><td>11</td></tr>
+</table></div><p>Öğrencinin gözlediği renkler 1, 2, 3 ve 4 numaralı sıvılar için sırasıyla aşağıdakilerden hangisidir?</p>`,
+  c: ["Kırmızı – Mor – Yeşil – Yeşil", "Kırmızı – Mor – Mor – Yeşil", "Yeşil – Mor – Kırmızı – Kırmızı", "Kırmızı – Yeşil – Yeşil – Yeşil"],
   a: "A",
-  s: `<p>Hem asitler ($H^+$ iyonu) hem de bazlar ($OH^-$ iyonu) suda iyonlaşarak çözündükleri için <b>her ikisinin sulu çözeltisi de elektrik akımını iletir</b> ve her iki ampul de ışık verir[cite: 12]. Asit olan K mavi turnusolu <b>kırmızıya</b>, baz olan L ise kırmızı turnusolu <b>maviye</b> çevirir[cite: 12] (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>Gündüzleri güneşin doğmasıyla birlikte deniz kıyısındaki <b>karalar çabuk ısınıp sıcaklığı hızla yükselirken</b>, <b>deniz suyu geç ısındığı için daha soğuk kalır</b> ve denizden karaya doğru serin rüzgâr (deniz meltemi) eser. Geceleri ise karalar hızla soğurken deniz suyu sıcaklığını korur[cite: 12].</p>
-<p>Deniz kıyılarında gece ile gündüz arasındaki sıcaklık farkının az olmasının ve karaların denizlerden daha çabuk ısınıp soğumasının temel nedeni aşağıdakilerden hangisidir[cite: 12]?</p>`,
-  c: [
-    `Deniz suyunun öz ısısının (c<sub>su</sub>), karaları oluşturan toprağın ve kayaların öz ısısından (c<sub>kara</sub>) çok daha büyük olması[cite: 12]`,
-    `Güneş ışınlarının yalnız karalara düşüp deniz yüzeyine hiç ulaşmaması`,
-    `Deniz suyunun kütlesinin karaların kütlesinden daha az olması`,
-    `Toprağın öz ısısının suyun öz ısısından daha büyük olması`
-  ],
-  a: "A",
-  s: `<p><b>Suyun öz ısısı ($c_{su} = 4,18\text{ J/g°C}$)</b> doğadaki pek çok maddeden ve karalardan ($c_{kara} \approx 0,8\text{ J/g°C}$) çok daha büyüktür[cite: 12]. Öz ısısı büyük olan su <b>geç ısınır ve geç soğur</b>; öz ısısı küçük olan kara ise <b>çabuk ısınır ve çabuk soğur</b>[cite: 12]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>İlk sıcaklıkları <b>20 °C</b> olan farklı kütlelerdeki <b>aynı cins (saf su)</b> sıvılar, özdeş ısıtıcılarla <b>50 °C</b> sıcaklığa ulaşana kadar ısıtılıyor.</p>
-<div class="fig"><svg viewBox="0 0 460 140" width="440" role="img" aria-label="100 g, 200 g ve 300 g suyun özdeş ısıtıcılarla ısıtılması">
-<g stroke="#1e3a8a" stroke-width="2">
-<rect x="35" y="35" width="75" height="80" fill="#f8fafc"/><rect x="35" y="85" width="75" height="30" fill="#93c5fd"/>
-<rect x="192" y="35" width="75" height="80" fill="#f8fafc"/><rect x="192" y="65" width="75" height="50" fill="#93c5fd"/>
-<rect x="350" y="35" width="75" height="80" fill="#f8fafc"/><rect x="350" y="45" width="75" height="70" fill="#93c5fd"/>
-</g>
-<g font-size="10" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="72" y="26" fill="#1e40af">1. Kap: 100 g Su</text>
-<text x="72" y="104">20 °C → 50 °C</text>
-<text x="72" y="130" fill="#dc2626">🔥 Özdeş Isıtıcı (t₁)</text>
-<text x="230" y="26" fill="#1e40af">2. Kap: 200 g Su</text>
-<text x="230" y="95">20 °C → 50 °C</text>
-<text x="230" y="130" fill="#dc2626">🔥 Özdeş Isıtıcı (t₂)</text>
-<text x="387" y="26" fill="#1e40af">3. Kap: 300 g Su</text>
-<text x="387" y="85">20 °C → 50 °C</text>
-<text x="387" y="130" fill="#dc2626">🔥 Özdeş Isıtıcı (t₃)</text>
-</g>
-</svg></div>
-<p>Üç kaptaki suyun da sıcaklığını 20 °C’den 50 °C’ye ($\Delta T = 30\text{ °C}$) çıkarmak için geçen ısıtma süreleri (<b>$t_1, t_2, t_3$</b>) arasındaki ilişki aşağıdakilerden hangisidir[cite: 12]?</p>`,
-  c: [
-    `t₃ > t₂ > t₁`,
-    `t₁ > t₂ > t₃`,
-    `t₁ = t₂ = t₃`,
-    `t₂ > t₃ > t₁`
-  ],
-  a: "A",
-  s: `<p>$Q = m \cdot c \cdot \Delta T$ bağıntısına göre aynı cins sıvılarda ($c$ aynı) aynı sıcaklık artışını ($\Delta T = 30\text{ °C}$) sağlamak için verilmesi gereken ısı (dolayısıyla ısıtma süresi), <b>maddenin kütlesiyle doğru orantılıdır</b>[cite: 12]. Kütlesi en büyük olan 3. kap en uzun sürede ısınır: <b>$t_3 > t_2 > t_1$</b>. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Erime sıcaklığındaki <b>1 gram</b> saf katı maddenin tamamen sıvı hâle geçmesi için gereken ısıya <b>erime ısısı ($L_e$)</b> denir ve $Q = m \cdot L_e$ formülüyle hesaplanır[cite: 12]. Aşağıdaki tabloda bazı saf katıların erime ısıları verilmiştir.</p>
-<table class="rt">
-<tr><th>Saf Madde</th><th>Erime Isısı ($L_e$ - J/g)</th></tr>
-<tr><td><b>Buz (Su)</b></td><td>334,4 J/g</td></tr>
-<tr><td><b>Alüminyum</b></td><td>321,0 J/g</td></tr>
-<tr><td><b>Demir</b></td><td>117,0 J/g</td></tr>
-<tr><td><b>Kurşun</b></td><td>22,5 J/g</td></tr>
-</table>
-<p>Erime sıcaklığında bulunan <b>100’er gram</b> buz, alüminyum, demir ve kurşun katıları özdeş ısıtıcılarla tamamen eritildiğinde aşağıdakilerden hangisi <b>söylenebilir</b>[cite: 12]?</p>`,
-  c: [
-    `Erime ısısı en büyük olan buz olduğu için, 100 g buzun tamamen erimesi için gereken ısı miktarı ve geçen süre en fazladır.`,
-    `Eşit kütlede oldukları için dördünün de tamamen erimesi için gereken ısı miktarı birbirine eşittir.`,
-    `En geç eriyen madde kurşundur.`,
-    `Erime sırasında kurşunun sıcaklığı sürekli artarken buzun sıcaklığı sabit kalır.`
-  ],
-  a: "A",
-  s: `<p>Eşit kütleli ($m = 100\text{ g}$) saf katılardan <b>erime ısısı ($L_e$) en büyük olan buz</b> ($Q = 100 \times 334,4 = 33.440\text{ J}$), tamamen erimek için en fazla ısıya ihtiyaç duyar ve özdeş ısıtıcıyla en uzun sürede erir; erime ısısı en küçük olan kurşun ise en kısa sürede erir (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>Başlangıçta <b>gaz</b> hâlinde bulunan saf bir <b>Y maddesinin</b> soğutulmasına ait sıcaklık–zaman grafiği aşağıda verilmiştir[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 380 185" width="360" role="img" aria-label="Saf Y maddesinin soğuma grafiği">
-<line x1="45" y1="155" x2="355" y2="155" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="15" x2="45" y2="155" stroke="#334155" stroke-width="2"/>
-<g stroke="#cbd5e1" stroke-dasharray="3 3">
-<line x1="45" y1="55" x2="355" y2="55"/>
-<line x1="45" y1="115" x2="355" y2="115"/>
-</g>
-<polyline points="45,20 90,55 155,55 205,115 275,115 320,148" fill="none" stroke="#2563eb" stroke-width="3"/>
-<g font-size="9.5" font-weight="bold">
-<text x="38" y="59" text-anchor="end" fill="#1e40af">80</text>
-<text x="38" y="119" text-anchor="end" fill="#166534">15</text>
-<text x="122" y="48" text-anchor="middle" fill="#1e40af">I. Bölge (Yoğuşma)</text>
-<text x="240" y="108" text-anchor="middle" fill="#166534">II. Bölge (Donma)</text>
-<text x="330" y="170">Zaman</text>
-<text x="16" y="85" transform="rotate(-90 16 85)" text-anchor="middle">Sıcaklık (°C)</text>
-</g>
-</svg></div>
-<p>Grafiğe göre saf Y maddesinin soğuma süreciyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Y maddesinin yoğuşma (ve kaynama) sıcaklığı 80 °C, donma (ve erime) sıcaklığı ise 15 °C’dir; madde I ve II. bölgelerde dış ortama ısı vermeye devam etmektedir[cite: 12].`,
-    `Y maddesi 50 °C sıcaklıkta katı hâlde bulunur.`,
-    `Madde I. bölgede erimekte, II. bölgede ise kaynamaktadır.`,
-    `Soğuma süresince madde dış ortamdan ısı almıştır.`
-  ],
-  a: "A",
-  s: `<p>Saf maddelerde <b>yoğuşma sıcaklığı kaynama sıcaklığına (80 °C)</b>, <b>donma sıcaklığı ise erime sıcaklığına (15 °C)</b> eşittir[cite: 12]. Madde 80 °C ile 15 °C arasında (örneğin 50 °C’de) <b>sıvı</b> hâldedir ve soğuma/hâl değişimi boyunca dış ortama <b>ısı verir</b>[cite: 12] (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>Isıca yalıtılmış bir ortamda birbirine dokundurulan <b>K ve L katı cisimleri</b> arasında ısı akışının yönü şekildeki gibi <b>K cisminden L cismine doğru</b> gerçekleşmektedir[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 380 115" width="360" role="img" aria-label="K cisminden L cismine ısı akışı">
-<rect x="45" y="25" width="120" height="65" rx="6" fill="#fca5a5" stroke="#dc2626" stroke-width="2"/>
-<rect x="215" y="25" width="120" height="65" rx="6" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
-<line x1="168" y1="57" x2="210" y2="57" stroke="#dc2626" stroke-width="3.5"/>
-<polygon points="203,50 214,57 203,64" fill="#dc2626"/>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="105" y="55" fill="#991b1b">K Cismi (T<sub>K</sub>)</text>
-<text x="275" y="55" fill="#1e40af">L Cismi (T<sub>L</sub>)</text>
-<text x="190" y="42" font-size="9.5" fill="#dc2626">Isı Akış Yönü</text>
-<text x="190" y="106" font-size="10" fill="#1e293b">Kural: Isı daima sıcaklığı yüksek olandan düşük olana akar[cite: 12]!</text>
-</g>
-</svg></div>
-<p>Yalnızca ısı akış yönü bilindiğine göre, başlangıçta K ve L cisimlerine ait aşağıdaki niceliklerden hangisi <b>kesinlikle</b> karşılaştırılabilir[cite: 12]?</p>`,
-  c: [
-    `Cisimlerin ilk sıcaklıkları (T<sub>K</sub> > T<sub>L</sub>)[cite: 12]`,
-    `Cisimlerin kütleleri (m<sub>K</sub> > m<sub>L</sub>)`,
-    `Cisimlerin öz ısıları (c<sub>K</sub> > c<sub>L</sub>)`,
-    `Cisimlerin hacimleri (V<sub>K</sub> > V<sub>L</sub>)`
-  ],
-  a: "A",
-  s: `<p>Isı akışının yönünü belirleyen <b>tek faktör sıcaklık farkıdır</b> (kütle, hacim veya öz ısıya bakılmaz!)[cite: 12]. Isı <b>K’den L’ye</b> doğru aktığına göre K’nin başlangıç sıcaklığı L’nin başlangıç sıcaklığından <b>kesinlikle daha büyüktür ($T_K > T_L$)</b>[cite: 12]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Türkiye’de kimya endüstrisinin dış ticaret (ithalat ve ihracat) yapısı ve bu sektörde çalışan meslek gruplarıyla ilgili aşağıdaki bilgilerden hangisi <b>doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Türkiye; mineral yakıtlar (ham petrol, doğal gaz), kauçuk ve eczacılık ürünlerinde dışa bağımlı olup daha çok ithalat yaparken; temizlik ürünleri, sabun, plastik mamuller ve bor bileşiklerinde önemli ihracat yapmaktadır[cite: 12].`,
-    `Türkiye’de kimya endüstrisinde üretilen hiçbir ürün yurt dışına ihraç edilmemektedir.`,
-    `Kimya sektöründe yalnızca ziraat mühendisleri ve mimarlar görev yapmaktadır.`,
-    `Kimya fabrikalarının kurulumunda çevre koruma ve atık arıtma önlemlerine ihtiyaç duyulmaz[cite: 12].`
-  ],
-  a: "A",
-  s: `<p>Ülkemiz kimya sektöründe ham petrol, mineral yağlar ve ilaç ham maddelerini daha çok <b>ithal ederken (dışarıdan alırken)</b>; plastik ürünler, sabun, deterjan, gübre, boya ve <b>bor ürünlerini ihraç etmektedir (dışarıya satmaktadır)</b>[cite: 12]. Bu alanda kimya mühendisleri, kimyagerler ve kimya teknisyenleri çalışır[cite: 12] (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>İçlerinde <b>Asit</b>, <b>Baz</b> ve <b>Saf Su (Nötr)</b> olduğu bilinen ancak etiketleri düşmüş olan <b>1, 2 ve 3</b> numaralı şişelerdeki sıvıları ayırt etmek için aşağıdaki işlemler yapılıyor[cite: 12]:</p>
-<ul>
-<li><b>1. Şişedeki sıvıya</b> küçük çinko metali parçaları atıldığında kapta <b>gaz kabarcıkları ($H_2$)</b> çıktığı ve metalin aşındığı görülüyor[cite: 12].</li>
-<li><b>2. Şişedeki sıvıya</b> kırmızı turnusol kâğıdı batırıldığında kâğıdın renginin <b>maviye</b> döndüğü ve sıvının ele kayganlık hissi verdiği görülüyor[cite: 12].</li>
-<li><b>3. Şişedeki sıvıya</b> hem kırmızı hem mavi turnusol kâğıdı batırıldığında renk değişimi olmadığı görülüyor[cite: 12].</li>
-</ul>
-<p>Buna göre 1, 2 ve 3 numaralı şişelerdeki sıvıların pH değerleri aşağıdakilerin hangisinde doğru verilmiş olabilir[cite: 12]?</p>`,
-  c: [
-    `1. Şişe: pH = 2 (Asit) — 2. Şişe: pH = 12 (Baz) — 3. Şişe: pH = 7 (Nötr)`,
-    `1. Şişe: pH = 13 (Baz) — 2. Şişe: pH = 3 (Asit) — 3. Şişe: pH = 7 (Nötr)`,
-    `1. Şişe: pH = 7 — 2. Şişe: pH = 11 — 3. Şişe: pH = 1`,
-    `1. Şişe: pH = 5 — 2. Şişe: pH = 6 — 3. Şişe: pH = 14`
-  ],
-  a: "A",
-  s: `<p>Metal ile tepkimeye girip $H_2$ gazı çıkaran <b>1. şişe Asittir ($pH < 7 \rightarrow 2$)</b>[cite: 12]; kırmızı turnusolu maviye çeviren <b>2. şişe Bazdır ($pH > 7 \rightarrow 12$)</b>[cite: 12]; turnusola etki etmeyen <b>3. şişe ise Nötrdür ($pH = 7$)</b>[cite: 12]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Periyodik sistemde aynı yatay sırada (periyotta) <b>soldan sağa doğru</b> ve aynı dikey sütunda (grupta) <b>yukarıdan aşağıya doğru</b> gidildikçe değişen özellikler aşağıdaki şemada özetlenmiştir[cite: 12].</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="Periyodik sistemde soldan sağa ve yukarıdan aşağıya değişen özellikler">
-<rect x="10" y="10" width="242" height="120" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-<text x="131" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Soldan Sağa Doğru (longrightarrow)</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="22" y="48">• Atom numarası (proton sayısı) <tspan font-weight="bold" fill="#16a34a">ARTAR</tspan>[cite: 12].</text>
-<text x="22" y="66">• Grup numarası ve son katman e⁻ <tspan font-weight="bold" fill="#16a34a">ARTAR</tspan>.</text>
-<text x="22" y="84">• Periyot (katman) sayısı <tspan font-weight="bold" fill="#dc2626">DEĞİŞMEZ</tspan>.</text>
-<text x="22" y="102">• Metalik özellik azalır, ametalik artar[cite: 12].</text>
-</g>
-<rect x="268" y="10" width="242" height="120" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="389" y="28" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">Yukarıdan Aşağıya Doğru (↓)</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="280" y="48">• Atom numarası (proton sayısı) <tspan font-weight="bold" fill="#16a34a">ARTAR</tspan>[cite: 12].</text>
-<text x="280" y="66">• Periyot (katman) sayısı <tspan font-weight="bold" fill="#16a34a">ARTAR</tspan>.</text>
-<text x="280" y="84">• Grup numarası <tspan font-weight="bold" fill="#dc2626">DEĞİŞMEZ</tspan>.</text>
-<text x="280" y="102">• Son katman e⁻ sayısı (He hariç) <tspan font-weight="bold" fill="#dc2626">DEĞİŞMEZ</tspan>.</text>
-</g>
-</svg></div>
-<p>Buna göre periyodik sistemin <b>aynı periyodunda</b> bulunan ve atom numarası <b>Y > X</b> olan iki element için aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>[cite: 12]?</p>`,
-  c: [
-    `Her ikisinin de katman (periyot) sayısı birbirine eşittir ve Y elementi periyodik tabloda X elementinin daha sağında yer alır[cite: 12].`,
-    `Y elementinin periyot numarası X elementinden daha büyüktür.`,
-    `X ve Y elementleri aynı grupta yer alır.`,
-    `Y elementi kesinlikle bir metaldir.`
-  ],
-  a: "A",
-  s: `<p>Aynı periyotta bulunan elementlerin <b>katman (periyot) sayıları birbirine eşittir</b>. Soldan sağa doğru gidildikçe atom numarası arttığına göre[cite: 12], atom numarası daha büyük olan <b>Y elementi X’in sağında</b> yer alır (<b>A kesinlikle doğrudur</b>).</p>`
-},
-{
-  q: `<p>Aşağıdaki özet tablosunda “Madde ve Endüstri” ünitesiyle ilgili dört temel bilimsel kural verilmiştir[cite: 12]:</p>
-<table class="rt">
-<tr><th>Kural No</th><th>Bilimsel Kural</th></tr>
-<tr><td><b>1</b></td><td>Öz ısı (c), erime ısısı (L<sub>e</sub>), buharlaşma ısısı (L<sub>b</sub>), erime ve kaynama sıcaklıkları saf maddeler için ayırt edici özelliklerdir ve madde miktarına (kütleye) bağlı değildir[cite: 12].</td></tr>
-<tr><td><b>2</b></td><td>Kapalı bir kapta gerçekleşen kimyasal tepkimede toplam kütle, atom türü ve atom sayısı her zaman korunur[cite: 12].</td></tr>
-<tr><td><b>3</b></td><td>Bir çözeltinin pH değeri 0’a yaklaştıkça asitlik kuvveti, 14’e yaklaştıkça bazlık kuvveti artar; pH = 7 ise çözelti nötrdür[cite: 12].</td></tr>
-<tr><td><b>4</b></td><td>Saf bir katı erirken veya saf bir sıvı kaynarken sıcaklığı sabit kaldığı için bu süre boyunca dışarıdan ısı alışverişi tamamen durur[cite: 12].</td></tr>
-</table>
-<p>Tablodaki numaralanmış kurallardan hangisi <b>yanlıştır</b>[cite: 12]?</p>`,
-  c: [`1`, `2`, `3`, `4`],
+  s: `<p>pH &lt; 7 asidik, pH = 7 nötr, pH &gt; 7 baziktir. Sirke (3) asidik → kırmızı; saf su (7) nötr → mor; deniz suyu (8) ve cam temizleyici (11) bazik → yeşil.</p>
+<ul><li><b>A ✓</b> Dört renk de doğru eşleşmiştir.</li>
+<li><b>B ✗</b> Deniz suyunun pH’ı 8’dir; 7’ye yakın olsa da baziktir ve yeşil olur.</li>
+<li><b>C ✗</b> Asit ve baz renkleri ters eşleştirilmiştir.</li>
+<li><b>D ✗</b> Saf su nötrdür; yeşil değil mor olur.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir hidroklorik asit (HCl) çözeltisine damla damla sodyum hidroksit (NaOH) çözeltisi ekleniyor ve karışımın pH değeri ölçülüyor. Elde edilen grafik aşağıdadır.</p><div class="fig"><svg viewBox="0 0 560 268" width="560" role="img" aria-label="Asit çözeltisine NaOH eklendikçe pH: 0 mL'de 1, 20 mL'de 7, 40 mL'de yaklaşık 13" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="210" x2="509.2" y2="210" stroke="#1e293b" stroke-width="2"/><polygon points="514.0,210.0 506.8,213.5 506.8,206.5" fill="#1e293b"/><line x1="70" y1="210" x2="70" y2="10.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,6.0 73.5,13.2 66.5,13.2" fill="#1e293b"/><text x="514" y="246" text-anchor="end" font-weight="bold">Eklenen NaOH çözeltisi (mL)</text><text x="66" y="-2" text-anchor="start" font-weight="bold">pH</text><line x1="66" y1="197.1" x2="490" y2="197.1" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="201.1" text-anchor="end">1</text><line x1="66" y1="120" x2="490" y2="120" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="124" text-anchor="end">7</text><line x1="66" y1="42.9" x2="490" y2="42.9" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/><text x="62" y="46.9" text-anchor="end">13</text><line x1="175" y1="210" x2="175" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="175" y="228">10</text><line x1="280" y1="210" x2="280" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="280" y="228">20</text><line x1="385" y1="210" x2="385" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="385" y="228">30</text><line x1="490" y1="210" x2="490" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="490" y="228">40</text><text x="62" y="226" text-anchor="end">0</text><polyline points="70,197.1 175,190.7 238,184.3 264.2,175.3 275.8,163.7 280,120 284.2,76.3 295.8,63.4 332.5,55.7 385,50.6 490,46.7" fill="none" stroke="#7c3aed" stroke-width="2.6" stroke-linejoin="round"/><line x1="280" y1="210" x2="280" y2="120" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/></g></svg></div><p>Bu grafiğe göre;</p><p>I. Başlangıçtaki çözelti asidiktir.<br>
+II. 20 mL NaOH çözeltisi eklendiğinde karışım nötr olur.<br>
+III. 10 mL NaOH çözeltisi eklendiğinde karışım mavi turnusol kâğıdının rengini değiştirmez.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Asit + baz → tuz + su (nötrleşme). Baz eklendikçe pH artarak 7’ye ulaşır, baz eklenmeye devam edilirse 7’nin üstüne çıkar.</p>
+<ul><li><b>I ✓</b> Başlangıçta pH = 1’dir (&lt; 7) → asidik.</li>
+<li><b>II ✓</b> 20 mL’de pH = 7 → nötr.</li>
+<li><b>III ✗</b> 10 mL’de pH yaklaşık 1,5’tir; karışım hâlâ asidiktir ve mavi turnusolü kırmızıya çevirir. “Baz eklendiyse asitlik bitti” yanılgısı.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci sodyum hidroksit (NaOH) çözeltisinin bazı maddelere etkisini inceliyor ve gözlemlerini tabloya yazıyor.</p><div class="tbl"><table>
+<tr><th>Deney</th><th>NaOH çözeltisinin döküldüğü madde</th><th>Gözlem</th></tr>
+<tr><td>1</td><td>Yağ lekeli bez parçası</td><td>Yağ lekesi çözünüp kayboluyor.</td></tr>
+<tr><td>2</td><td>Alüminyum folyo</td><td>Gaz kabarcıkları çıkıyor, folyo aşınıyor.</td></tr>
+<tr><td>3</td><td>Plastik kap</td><td>Kapta hiçbir değişiklik olmuyor.</td></tr>
+</table></div><p>Bu gözlemlere göre aşağıdaki yargılardan hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Bazlar yağları çözer.", "Bazik çözeltiler plastik kaplarda saklanabilir.", "Bazlar bazı metalleri aşındırabilir.", "Bazik çözeltiler cam kaplarda saklanmamalıdır."],
   a: "D",
-  s: `<p>1, 2 ve 3 numaralı kurallar tamamen doğrudur[cite: 12]. Ancak <b>4 numaralı kural yanlıştır</b>; çünkü saf bir madde erirken veya kaynarken sıcaklığı sabit kalsa da <b>dışarıdan ısı almaya devam eder</b> (aldığı ısıyı hâl değiştirmek için kullanır)[cite: 12]! Cevap <b>D</b>.</p>`
-}
+  s: `<p>Yalnızca yapılan deneylerin sonuçlarından yargıya varılabilir.</p>
+<ul><li><b>A ✓ ulaşılır</b> 1. deney yağın çözündüğünü gösterir.</li>
+<li><b>B ✓ ulaşılır</b> 3. deneyde plastik kap etkilenmemiştir.</li>
+<li><b>C ✓ ulaşılır</b> 2. deneyde alüminyum aşınmıştır.</li>
+<li><b>D ✗ ulaşılamaz</b> Deneylerde cam kullanılmamıştır; camla ilgili bir yargıya bu verilerle varılamaz.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, asit yağmurlarının mermer heykellere etkisini araştırmak için bir deney tasarlayacaktır. Hazırladığı düzenekler aşağıdaki tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Düzenek</th><th>Taş parçası</th><th>Taşın kütlesi</th><th>Üzerine dökülen sıvı (100 mL)</th></tr>
+<tr><td>1</td><td>Mermer</td><td>10 g</td><td>Seyreltik sülfürik asit çözeltisi</td></tr>
+<tr><td>2</td><td>Mermer</td><td>10 g</td><td>Saf su</td></tr>
+<tr><td>3</td><td>Granit</td><td>10 g</td><td>Seyreltik sülfürik asit çözeltisi</td></tr>
+<tr><td>4</td><td>Mermer</td><td>20 g</td><td>Saf su</td></tr>
+<tr><td>5</td><td>Mermer</td><td>10 g</td><td>Sodyum hidroksit çözeltisi</td></tr>
+</table></div><p>Öğrencinin araştırması için hangi iki düzeneği karşılaştırması <b>en uygundur</b>?</p>`,
+  c: ["1 ve 3", "1 ve 4", "1 ve 2", "2 ve 5"],
+  a: "C",
+  s: `<p>Asidin mermere etkisini görmek için özdeş mermer parçalarından birine asit, diğerine karşılaştırma amacıyla saf su dökülmeli; diğer bütün koşullar aynı olmalıdır.</p>
+<ul><li><b>A ✗</b> İki düzenekte de asit vardır, taşın cinsi değişmiştir; bu karşılaştırma asidin farklı taşlara etkisini araştırır.</li>
+<li><b>B ✗</b> Sıvıyla birlikte taşın kütlesi de farklıdır; iki değişken birden değişmiştir.</li>
+<li><b>C ✓</b> Yalnızca dökülen sıvı (asit / saf su) farklıdır.</li>
+<li><b>D ✗</b> İki düzenekte de asit yoktur; asit yağmurunun etkisi gözlenemez.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Evde temizlik yapan dört kişi şunları söylüyor:</p><div class="dialog"><div><b>Ayla:</b> Banyoyu daha iyi temizlemek için çamaşır suyuyla tuz ruhunu karıştırarak kullanırım.</div><div><b>Burak:</b> Temizlik ürünlerini kullanırken eldiven takar, pencereyi açarım.</div><div><b>Cem:</b> Bitmek üzere olan deterjanı boş bir su şişesine aktarıp mutfakta saklarım.</div><div><b>Duru:</b> Bir temizlik ürününü kullanmadan önce etiketindeki uyarıları okurum.</div></div><p>Bu kişilerden hangilerinin davranışı temizlik maddelerinin <b>güvenli kullanımına uygundur</b>?</p>`,
+  c: ["Ayla ve Burak", "Burak ve Duru", "Cem ve Duru", "Burak, Cem ve Duru"],
+  a: "B",
+  s: `<p>Temizlik maddeleri birbirine karıştırılmaz, kendi kaplarında saklanır; kullanırken eldiven takılır, ortam havalandırılır ve etiket okunur.</p>
+<ul><li><b>Ayla ✗</b> Çamaşır suyu ile tuz ruhu karışınca zehirli klor gazı çıkar.</li>
+<li><b>Burak ✓</b> Eldiven cildi korur, havalandırma zararlı buharların solunmasını önler.</li>
+<li><b>Cem ✗</b> Deterjanı su şişesinde saklamak yanlışlıkla içilmesine yol açabilir; ürün kendi kabında saklanmalıdır.</li>
+<li><b>Duru ✓</b> Etiketteki uyarılar ürünün güvenli kullanımını anlatır.</li>
+<li><b>Şıklar</b> Doğru olanlar yalnızca Burak ve Duru’dur.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Havadaki karbondioksit nedeniyle normal yağmur suyu hafif asidiktir ve pH değeri yaklaşık <b>5,6</b>’dır. pH değeri bundan küçük olan yağmurlar asit yağmuru olarak kabul edilir. Aşağıdaki grafikte K, L ve M şehirlerinde aynı gün ölçülen yağmur suyunun pH değerleri verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 254" width="560" role="img" aria-label="K, L ve M şehirlerinde yağmur suyu pH değerleri: 4,2; 5,6; 4,8. Kırmızı kesikli çizgi 5,6" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="80" y1="200" x2="515.2" y2="200" stroke="#1e293b" stroke-width="2"/><polygon points="520.0,200.0 512.8,203.5 512.8,196.5" fill="#1e293b"/><line x1="80" y1="200" x2="80" y2="20.8" stroke="#1e293b" stroke-width="2"/><polygon points="80.0,16.0 83.5,23.2 76.5,23.2" fill="#1e293b"/><text x="520" y="236" text-anchor="end" font-weight="bold">Şehir</text><text x="76" y="8" text-anchor="start" font-weight="bold">Yağmur suyunun pH değeri</text><line x1="76" y1="200" x2="80" y2="200" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="204" text-anchor="end">0</text><line x1="76" y1="177.1" x2="80" y2="177.1" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="181.1" text-anchor="end">1</text><line x1="76" y1="154.3" x2="80" y2="154.3" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="158.3" text-anchor="end">2</text><line x1="76" y1="131.4" x2="80" y2="131.4" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="135.4" text-anchor="end">3</text><line x1="76" y1="108.6" x2="80" y2="108.6" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="112.6" text-anchor="end">4</text><line x1="76" y1="85.7" x2="80" y2="85.7" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="89.7" text-anchor="end">5</text><line x1="76" y1="62.9" x2="80" y2="62.9" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="66.9" text-anchor="end">6</text><line x1="76" y1="40" x2="80" y2="40" stroke="#1e293b" stroke-width="1.5"/><text x="72" y="44" text-anchor="end">7</text><rect x="140" y="104" width="60" height="96" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.2"/><text x="170" y="98" font-size="13" font-weight="bold">4,2</text><text x="170" y="218" font-size="13" font-weight="bold">K</text><rect x="260" y="72" width="60" height="128" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.2"/><text x="290" y="66" font-size="13" font-weight="bold">5,6</text><text x="290" y="218" font-size="13" font-weight="bold">L</text><rect x="380" y="90.3" width="60" height="109.7" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.2"/><text x="410" y="84.3" font-size="13" font-weight="bold">4,8</text><text x="410" y="218" font-size="13" font-weight="bold">M</text><line x1="80" y1="72" x2="500" y2="72" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 4"/><text x="504" y="76" text-anchor="start" fill="#dc2626" font-weight="bold">5,6</text></g></svg></div><p>Buna göre;</p><p>I. K ve M şehirlerinde asit yağmuru yağmıştır.<br>
+II. Yağmur suyunun asitliği en fazla olan şehir M’dir.<br>
+III. Fosil yakıt kullanan fabrikaların bacalarına filtre takılması, K ve M’deki yağmur suyunun pH değerinin yükselmesine katkı sağlar.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>pH değeri küçüldükçe asitlik artar. K (4,2) ve M (4,8) 5,6’dan küçük olduğu için asit yağmurudur; L (5,6) normal yağmurdur.</p>
+<ul><li><b>I ✓</b> K ve M’nin pH değerleri 5,6’dan küçüktür.</li>
+<li><b>II ✗</b> pH’ı en küçük olan K’dir (4,2); asitliği en fazla olan K’dir. “pH büyükse asitlik büyük” yanılgısı.</li>
+<li><b>III ✓</b> Bacalara takılan filtreler havaya karışan kükürt dioksit ve azot oksit miktarını azaltır; yağmurun asitliği azalır, pH yükselir.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Bir akvaryumdaki balıklar için uygun pH aralığı <b>6,5 – 7,5</b>’tir. Akvaryum suyunun pH değeri ölçüldüğünde <b>8,5</b> bulunuyor.</div><p>Akvaryum sahibinin elinde sirkeli su (asidik), kabartma tozu çözeltisi (bazik) ve saf su bulunmaktadır. Buna göre;</p><p>I. Akvaryuma az miktarda sirkeli su eklenirse suyun pH değeri düşer.<br>
+II. Akvaryuma kabartma tozu çözeltisi eklenirse suyun pH değeri 7’ye yaklaşır.<br>
+III. Akvaryuma saf su eklenirse su asidik hâle gelir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["I ve II", "II ve III", "I, II ve III", "Yalnız I"],
+  a: "D",
+  s: `<p>Su bazik (pH 8,5) olduğu için pH’ı düşürmek, yani suyu nötre yaklaştırmak gerekir. Bunun için asidik bir madde eklenir (nötrleşme).</p>
+<ul><li><b>I ✓</b> Asit, bazik suyu kısmen nötrleştirir; pH düşer.</li>
+<li><b>II ✗</b> Kabartma tozu çözeltisi baziktir; bazik suya baz eklemek pH’ı düşürmez.</li>
+<li><b>III ✗</b> Saf su nötrdür (pH 7). Bazik suya nötr su eklemek onu asidik yapamaz.</li>
+<li><b>Şıklar</b> Yalnız I doğrudur. II’yi seçen öğrenci nötrleşmede asit ile bazın birbirini etkilediğini unutmuştur.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Kimya endüstrisinde ve kimyayla ilgili alanlarda çalışan dört kişinin görevleri aşağıda numaralandırılmıştır.</p><div class="tbl"><table>
+<tr><th>No</th><th>Görev</th></tr>
+<tr><td>1</td><td>Reçeteli ilaçları hazırlar, hastalara ilaçların doğru kullanımı hakkında bilgi verir.</td></tr>
+<tr><td>2</td><td>Bir fabrikada ham maddelerin ürüne dönüştürüldüğü üretim süreçlerini tasarlar ve verimini artırır.</td></tr>
+<tr><td>3</td><td>Metallerden yeni alaşımlar geliştirir, malzemelerin dayanıklılığını inceler.</td></tr>
+<tr><td>4</td><td>Gıdaların üretiminde hijyen ve kaliteyi denetler, yeni gıda ürünleri geliştirir.</td></tr>
+</table></div><p>Bu görevleri yapan meslek sahipleri 1, 2, 3 ve 4 numaralı görevler için sırasıyla aşağıdakilerden hangisidir?</p>`,
+  c: ["Kimya mühendisi – Eczacı – Gıda mühendisi – Metalurji ve malzeme mühendisi", "Eczacı – Kimya mühendisi – Metalurji ve malzeme mühendisi – Gıda mühendisi", "Eczacı – Gıda mühendisi – Kimya mühendisi – Metalurji ve malzeme mühendisi", "Kimya teknisyeni – Kimya mühendisi – Gıda mühendisi – Eczacı"],
+  a: "B",
+  s: `<p>İlaç hazırlayıp kullanımını anlatan <b>eczacı</b>, üretim süreçlerini tasarlayan <b>kimya mühendisi</b>, metal ve alaşımlarla çalışan <b>metalurji ve malzeme mühendisi</b>, gıda üretimini denetleyen <b>gıda mühendisi</b>dir.</p>
+<ul><li><b>A ✗</b> Eczacı ile kimya mühendisi, gıda mühendisi ile metalurji mühendisi yer değiştirmiştir.</li>
+<li><b>B ✓</b> Dört eşleşme de doğrudur.</li>
+<li><b>C ✗</b> 2, 3 ve 4 numaralı görevler yanlış eşleşmiştir.</li>
+<li><b>D ✗</b> İlaçları eczacı hazırlar; 3 ve 4 de yanlış eşleşmiştir.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Saf K ve L sıvıları özdeş ısıtıcılarla 4’er dakika ısıtılıyor. Sıvılarda hâl değişimi olmuyor ve ısı alışverişi yalnızca ısıtıcı ile sıvı arasında gerçekleşiyor.</p><div class="tbl"><table>
+<tr><th>Sıvı</th><th>Kütle</th><th>Isıtma süresi</th><th>Sıcaklık artışı</th></tr>
+<tr><td>K</td><td>100 g</td><td>4 dk</td><td>20 °C</td></tr>
+<tr><td>L</td><td>200 g</td><td>4 dk</td><td>10 °C</td></tr>
+</table></div><p>Buna göre;</p><p>I. K’nin aldığı ısı, L’nin aldığı ısıdan fazladır.<br>
+II. K ve L aynı madde olabilir.<br>
+III. L aynı ısıtıcıyla 4 dakika daha ısıtılırsa (hâl değişimi olmadan) sıcaklığı 10 °C daha artar.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Özdeş ısıtıcılar eşit sürede eşit ısı verir; K ve L eşit ısı almıştır. Alınan ısı kütleye, sıcaklık değişimine ve maddenin cinsine (öz ısı) bağlıdır. K: 100 g × 20 °C, L: 200 g × 10 °C; bu çarpımlar eşittir (2000). Eşit ısı eşit “kütle × sıcaklık artışı” sağladığına göre öz ısıları eşittir.</p>
+<ul><li><b>I ✗</b> Isıtma süreleri ve ısıtıcılar aynı olduğundan aldıkları ısılar eşittir. Sıcaklığı çok artanın daha çok ısı aldığını sanmak yanılgıdır.</li>
+<li><b>II ✓</b> Öz ısıları eşit olduğu için aynı madde olabilirler (aynı maddenin farklı kütleleri).</li>
+<li><b>III ✓</b> L’ye 4 dakikada yine aynı ısı verilir; hâl değişimi olmadıkça sıcaklığı yine 10 °C artar.</li>
+<li><b>Şıklar</b> Doğru cevap “II ve III”tür.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Isıca yalıtılmış bir kapta 60 °C’taki 100 g saf su ile 20 °C’taki 300 g saf su karıştırılıyor. Hâl değişimi olmuyor ve ısı alışverişi yalnızca iki su arasında gerçekleşiyor.</p><div class="fig"><svg viewBox="0 0 560 192" width="560" role="img" aria-label="100 g 60 °C su ile 300 g 20 °C su yalıtılmış kapta karıştırılıyor" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="42" y="120" width="96" height="38" fill="#fca5a5"/><path d="M40,50 L40,160 L140,160 L140,50" fill="none" stroke="#334155" stroke-width="2.2"/><text x="90" y="40" font-size="13" font-weight="bold">100 g su</text><text x="90" y="182" font-size="13" font-weight="bold">60 °C</text><rect x="192" y="65" width="96" height="93" fill="#93c5fd"/><path d="M190,50 L190,160 L290,160 L290,50" fill="none" stroke="#334155" stroke-width="2.2"/><text x="240" y="40" font-size="13" font-weight="bold">300 g su</text><text x="240" y="182" font-size="13" font-weight="bold">20 °C</text><line x1="305" y1="105" x2="350.2" y2="105" stroke="#1e293b" stroke-width="2"/><polygon points="355.0,105.0 347.8,108.5 347.8,101.5" fill="#1e293b"/><text x="330" y="95">karıştırma</text><rect x="368" y="40" width="150" height="130" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="1.6"/><rect x="395" y="70" width="96" height="88" fill="#c4b5fd"/><path d="M393,55 L393,160 L493,160 L493,55" fill="none" stroke="#334155" stroke-width="2.2"/><text x="443" y="182" font-size="13" font-weight="bold">Son sıcaklık ?</text><text x="443" y="34" fill="#475569">Yalıtılmış kap</text></svg></div><p>Isıl denge sağlandığında karışımla ilgili;</p><p>I. Son sıcaklık 20 °C ile 60 °C arasındadır.<br>
+II. Son sıcaklık 40 °C’tan düşüktür.<br>
+III. Sıcak suyun verdiği ısı, soğuk suyun aldığı ısıdan fazladır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Isı sıcak sudan soğuk suya akar; sıcaklıklar eşitlenince akış durur. Son sıcaklık iki ilk sıcaklığın arasındadır.</p>
+<ul><li><b>I ✓</b> Sıcak su soğur, soğuk su ısınır; son sıcaklık 20 °C ile 60 °C arasındadır.</li>
+<li><b>II ✓</b> Kütleler eşit olsaydı son sıcaklık tam ortada (40 °C) olurdu. Soğuk suyun kütlesi 3 kat olduğundan son sıcaklık soğuk suyun sıcaklığına daha yakındır (yaklaşık 30 °C) ve 40 °C’tan düşüktür.</li>
+<li><b>III ✗</b> Yalıtılmış ortamda sıcak suyun verdiği ısı soğuk suyun aldığı ısıya eşittir.</li>
+<li><b>Şıklar</b> “I, II ve III” seçeneği, ısının bir kısmının kaybolduğunu düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Kütleleri eşit, cinsleri farklı K ve L metal blokları 100 °C’a kadar ısıtılıyor. Daha sonra bloklar, özdeş ısıca yalıtılmış kaplardaki 20 °C’ta 200 g saf suya ayrı ayrı bırakılıyor. Isıl denge sağlandığında suların sıcaklıkları şekildeki gibi ölçülüyor. Isı alışverişi yalnızca su ile blok arasında gerçekleşiyor.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="K ve L kaplarındaki 200 g 20 °C suya 100 °C'taki K ve L metal blokları bırakılıyor; denge sıcaklıkları 26 ve 23 °C" font-size="12" fill="#1e293b" text-anchor="middle"><text x="130" y="20" font-size="14" font-weight="bold">K kabı</text><rect x="62" y="70" width="136" height="78" fill="#bfdbfe"/><path d="M60,40 L60,150 L200,150 L200,40" fill="none" stroke="#334155" stroke-width="2.2"/><circle cx="130" cy="128" r="16" fill="#9ca3af" stroke="#334155" stroke-width="1.5"/><text x="130" y="133" font-size="13" font-weight="bold">K</text><text x="130" y="172" font-size="13" font-weight="bold">Isıl denge: 26 °C</text><text x="130" y="190" fill="#475569">200 g su, ilk 20 °C</text><text x="380" y="20" font-size="14" font-weight="bold">L kabı</text><rect x="312" y="70" width="136" height="78" fill="#bfdbfe"/><path d="M310,40 L310,150 L450,150 L450,40" fill="none" stroke="#334155" stroke-width="2.2"/><circle cx="380" cy="128" r="16" fill="#d97706" stroke="#334155" stroke-width="1.5"/><text x="380" y="133" font-size="13" font-weight="bold">L</text><text x="380" y="172" font-size="13" font-weight="bold">Isıl denge: 23 °C</text><text x="380" y="190" fill="#475569">200 g su, ilk 20 °C</text></svg></div><p>Buna göre;</p><p>I. K’nin suya verdiği ısı, L’nin suya verdiği ısıdan fazladır.<br>
+II. K’nin sıcaklığındaki azalma, L’nin sıcaklığındaki azalmadan fazladır.<br>
+III. Isıl denge sağlandığında K bloğunun sıcaklığı 26 °C’tur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I ve III"],
+  a: "D",
+  s: `<p>Kaplardaki sular özdeştir (200 g, 20 °C). K kabındaki su 6 °C, L kabındaki su 3 °C ısınmıştır; aynı kütledeki aynı madde daha çok ısındıysa daha çok ısı almıştır. Suyun aldığı ısı, bloğun verdiği ısıya eşittir.</p>
+<ul><li><b>I ✓</b> K kabındaki su iki kat fazla ısınmıştır; K iki kat fazla ısı vermiştir.</li>
+<li><b>II ✗</b> K 100 °C’tan 26 °C’a (74 °C), L 100 °C’tan 23 °C’a (77 °C) soğumuştur; L’nin sıcaklığı daha çok azalmıştır.</li>
+<li><b>III ✓</b> Isıl dengede blok ve su aynı sıcaklıktadır: 26 °C.</li>
+<li><b>Not</b> K daha az soğuyup daha çok ısı verdiğine göre K’nin öz ısısı L’ninkinden büyüktür.</li>
+<li><b>Şıklar</b> “I ve II” seçeneği, daha çok ısı verenin sıcaklığının da daha çok düştüğünü sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, maddenin sıcaklık artışının <b>maddenin cinsine</b> ve <b>kütlesine</b> bağlı olup olmadığını iki ayrı karşılaştırmayla araştırmak istiyor. Özdeş ısıtıcılarla hazırladığı düzenekler tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Düzenek</th><th>Madde</th><th>Kütle</th><th>İlk sıcaklık</th><th>Isıtıcı sayısı</th><th>Isıtma süresi</th></tr>
+<tr><td>1</td><td>Su</td><td>100 g</td><td>20 °C</td><td>1</td><td>5 dk</td></tr>
+<tr><td>2</td><td>Zeytinyağı</td><td>100 g</td><td>20 °C</td><td>1</td><td>5 dk</td></tr>
+<tr><td>3</td><td>Zeytinyağı</td><td>200 g</td><td>20 °C</td><td>1</td><td>5 dk</td></tr>
+<tr><td>4</td><td>Su</td><td>100 g</td><td>30 °C</td><td>2</td><td>5 dk</td></tr>
+</table></div><p>Öğrencinin <b>cinsin etkisi</b> ve <b>kütlenin etkisi</b> için karşılaştırması gereken düzenekler sırasıyla hangileridir?</p>`,
+  c: ["1 ile 2 – 2 ile 3", "1 ile 2 – 1 ile 4", "1 ile 4 – 2 ile 3", "2 ile 4 – 3 ile 4"],
+  a: "A",
+  s: `<p>Bir etkenin etkisini görmek için karşılaştırılan iki düzenekte yalnızca o etken farklı olmalıdır.</p>
+<ul><li><b>A ✓</b> 1-2: yalnızca madde cinsi farklı. 2-3: yalnızca kütle farklı.</li>
+<li><b>B ✗</b> 1-4: ilk sıcaklık ve ısıtıcı sayısı birlikte farklıdır; kütle etkisi incelenemez.</li>
+<li><b>C ✗</b> 1-4 düzeneklerinde cins aynıdır; ayrıca iki değişken birden farklıdır.</li>
+<li><b>D ✗</b> 2-4 ve 3-4’te birden fazla değişken farklıdır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Cinsleri farklı, başlangıçta katı hâldeki saf K ve L maddeleri özdeş ısıtıcılarla ayrı ayrı ısıtılıyor. Maddelerin kütleleri bilinmiyor. Sıcaklık-zaman grafikleri aşağıdadır.</p><div class="fig"><svg viewBox="0 0 560 284" width="560" role="img" aria-label="K ve L katılarının ısınma grafiği: K 2-6. dakikalarda 40 °C'ta, L 4-10. dakikalarda 70 °C'ta sabit" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="230" x2="509.2" y2="230" stroke="#1e293b" stroke-width="2"/><polygon points="514.0,230.0 506.8,233.5 506.8,226.5" fill="#1e293b"/><line x1="70" y1="230" x2="70" y2="20.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,16.0 73.5,23.2 66.5,23.2" fill="#1e293b"/><text x="514" y="266" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="8" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="211" x2="490" y2="211" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="215" text-anchor="end">10</text><line x1="66" y1="154" x2="490" y2="154" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="158" text-anchor="end">40</text><line x1="66" y1="97" x2="490" y2="97" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="101" text-anchor="end">70</text><line x1="66" y1="40" x2="490" y2="40" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="44" text-anchor="end">100</text><line x1="130" y1="230" x2="130" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="130" y="248">2</text><line x1="190" y1="230" x2="190" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="190" y="248">4</text><line x1="250" y1="230" x2="250" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="250" y="248">6</text><line x1="310" y1="230" x2="310" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="310" y="248">8</text><line x1="370" y1="230" x2="370" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="370" y="248">10</text><line x1="430" y1="230" x2="430" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="430" y="248">12</text><line x1="490" y1="230" x2="490" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="490" y="248">14</text><text x="62" y="246" text-anchor="end">0</text><polyline points="70,192 130,154 250,154 310,78 340,40" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><polyline points="70,211 190,97 370,97 460,40" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="8 4"/><text x="190" y="146" font-size="14" fill="#2563eb" font-weight="bold">K</text><text x="280" y="89" font-size="14" fill="#dc2626" font-weight="bold">L</text></g></svg></div><p>Buna göre;</p><p>I. L’nin erime sıcaklığı K’ninkinden büyüktür.<br>
+II. Erime süresince L’nin aldığı ısı, K’nin aldığı ısıdan fazladır.<br>
+III. L’nin kütlesi K’nin kütlesinden büyüktür.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Grafikteki yatay bölümler erimedir. K 40 °C’ta 2-6. dakikalar arasında (4 dk), L 70 °C’ta 4-10. dakikalar arasında (6 dk) erimiştir.</p>
+<ul><li><b>I ✓</b> L 70 °C’ta, K 40 °C’ta erimiştir.</li>
+<li><b>II ✓</b> Özdeş ısıtıcılar eşit sürede eşit ısı verir; L 6 dakika, K 4 dakika ısı almıştır.</li>
+<li><b>III ✗</b> Erime için gereken ısı hem kütleye hem maddenin cinsine bağlıdır. K ve L farklı maddeler olduğu için L’nin daha çok ısı alması kütlesinin büyük olduğunu kesin göstermez.</li>
+<li><b>Şıklar</b> “I, II ve III” seçeneği, aynı madde için geçerli olan “uzun süren erime = büyük kütle” kuralını farklı maddelere uygulayan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Saf X maddesinin <b>200 g</b>’lık katı örneği bir ısıtıcıyla ısıtılıyor. Elde edilen sıcaklık-zaman grafiği aşağıdadır.</p><div class="fig"><svg viewBox="0 0 560 284" width="560" role="img" aria-label="200 g X maddesinin ısınma grafiği: 0-4 dk 10'dan 50 °C'a, 4-12 dk 50 °C'ta sabit, 12-32 dk 90 °C'a, 32. dakikadan sonra 90 °C'ta sabit" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="230" x2="509.2" y2="230" stroke="#1e293b" stroke-width="2"/><polygon points="514.0,230.0 506.8,233.5 506.8,226.5" fill="#1e293b"/><line x1="70" y1="230" x2="70" y2="20.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,16.0 73.5,23.2 66.5,23.2" fill="#1e293b"/><text x="514" y="266" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="8" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="211" x2="490" y2="211" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="215" text-anchor="end">10</text><line x1="66" y1="135" x2="490" y2="135" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="139" text-anchor="end">50</text><line x1="66" y1="59" x2="490" y2="59" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="63" text-anchor="end">90</text><line x1="112" y1="230" x2="112" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="112" y="248">4</text><line x1="196" y1="230" x2="196" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="196" y="248">12</text><line x1="406" y1="230" x2="406" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="406" y="248">32</text><line x1="490" y1="230" x2="490" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="490" y="248">40</text><text x="62" y="246" text-anchor="end">0</text><polyline points="70,211 112,135 196,135 406,59 490,59" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><line x1="112" y1="230" x2="112" y2="135" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="196" y1="230" x2="196" y2="135" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="406" y1="230" x2="406" y2="59" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="385" y="125.5" font-size="13" fill="#2563eb" font-weight="bold">200 g X</text></g></svg></div><p>Aynı maddenin <b>100 g</b>’lık katı örneği aynı ilk sıcaklıktan başlanarak aynı ısıtıcıyla ısıtılırsa 90 °C’taki hâl değişimine kaçıncı dakikada başlar?</p>`,
+  c: ["8", "16", "32", "64"],
+  a: "B",
+  s: `<p>200 g için: ısınma 0-4 dk (4 dk), erime 4-12 dk (8 dk), sıvının 50 °C’tan 90 °C’a ısınması 12-32 dk (20 dk).</p><p>Aynı ısıtıcıyla kütle yarıya inince her aşama için gereken ısı ve süre de yarıya iner: 2 dk + 4 dk + 10 dk = 16 dk. Hâl değişim sıcaklıkları (50 °C ve 90 °C) kütleye bağlı değildir.</p>
+<ul><li><b>A ✗</b> 8 dakika, yalnızca 200 g’ın erime süresi (ya da süreleri dörde bölmek) ile bulunur.</li>
+<li><b>B ✓</b> 100 g’lık örnek 16. dakikada 90 °C’a ulaşır ve hâl değiştirmeye başlar.</li>
+<li><b>C ✗</b> Kütlenin süreyi etkilemediğini düşünen öğrencinin cevabıdır.</li>
+<li><b>D ✗</b> Kütle azalınca sürenin arttığını (ters orantı) düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Başlangıçta <b>sıvı</b> hâlde bulunan saf bir madde soğuk bir ortamda soğutuluyor. Maddenin sıcaklığı 2 dakikada bir ölçülerek tabloya yazılıyor.</p><div class="tbl"><table>
+<tr><th>Zaman (dk)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th></tr>
+<tr><td>Sıcaklık (°C)</td><td>90</td><td>72</td><td>56</td><td>56</td><td>56</td><td>40</td><td>25</td></tr>
+</table></div><p>Buna göre;</p><p>I. 4. ve 8. dakikalar arasında madde donmaktadır.<br>
+II. 6. dakikada madde yalnızca katı hâldedir.<br>
+III. Maddenin erime sıcaklığı 56 °C’tur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>Soğuyan saf maddenin sıcaklığı hâl değiştirirken sabit kalır. Madde başlangıçta sıvı olduğu için 56 °C’taki sabit bölüm <b>donma</b>dır.</p>
+<ul><li><b>I ✓</b> 4-8. dakikalar arasında sıcaklık 56 °C’ta sabittir; sıvı madde donmaktadır (ısı vermeye devam eder).</li>
+<li><b>II ✗</b> Donma sürerken katı ve sıvı birlikte bulunur; 6. dakikada donma henüz bitmemiştir.</li>
+<li><b>III ✓</b> Saf bir maddenin erime sıcaklığı donma sıcaklığına eşittir: 56 °C.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Günlük hayatta karşılaşılan bazı olaylar aşağıda numaralandırılmıştır.</p><div class="tbl"><table>
+<tr><th>No</th><th>Olay</th></tr>
+<tr><td>1</td><td>Terleyen vücudun serinlemesi</td></tr>
+<tr><td>2</td><td>Sabahları çimenlerin üzerinde çiy damlalarının oluşması</td></tr>
+<tr><td>3</td><td>Toprak testideki suyun yazın serin kalması</td></tr>
+<tr><td>4</td><td>Kışın göl suyu donarken göl kenarındaki havanın daha az soğuması</td></tr>
+<tr><td>5</td><td>Dondurmanın ağızda erimesi</td></tr>
+</table></div><p>Bu olaylardan hangilerinde hâl değiştiren madde çevresine <b>ısı verir</b>?</p>`,
+  c: ["1 ve 3", "2 ve 5", "1, 3 ve 5", "2 ve 4"],
+  a: "D",
+  s: `<p>Erime ve buharlaşmada madde ısı alır; donma ve yoğuşmada madde ısı verir.</p>
+<ul><li><b>1</b> Ter buharlaşırken vücuttan ısı alır → ısı alır.</li>
+<li><b>2</b> Havadaki su buharı yoğuşurken çevreye ısı verir → ısı verir.</li>
+<li><b>3</b> Testinin gözeneklerinden sızan su buharlaşırken testiden ısı alır → ısı alır.</li>
+<li><b>4</b> Su donarken çevresine ısı verir → ısı verir.</li>
+<li><b>5</b> Dondurma erirken ağızdan ısı alır → ısı alır.</li>
+<li><b>Şıklar</b> Isı veren olaylar 2 ve 4’tür.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Bir metal bilye 80 °C’tan 30 °C’a soğurken çevresine <b>Q</b> kadar ısı veriyor.</div><p>Hâl değişimi olmadığına göre aşağıdaki durumların hangilerinde verilen ısı <b>Q’ya eşittir</b>?</p><p>I. Aynı bilyenin 100 °C’tan 50 °C’a soğuması<br>
+II. Aynı metalden yapılmış, kütlesi iki katı olan bir bilyenin 80 °C’tan 55 °C’a soğuması<br>
+III. Kütlesi aynı, öz ısısı daha büyük başka bir metalden yapılmış bilyenin 80 °C’tan 30 °C’a soğuması</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Verilen ısı kütleye, öz ısıya ve sıcaklık değişimine bağlıdır (Q ∝ m · c · ΔT). İlk durumda sıcaklık 50 °C azalmıştır.</p>
+<ul><li><b>I ✓</b> Aynı bilye (m ve c aynı), sıcaklık değişimi 100 − 50 = 50 °C → Q.</li>
+<li><b>II ✓</b> Kütle 2 kat, sıcaklık değişimi 80 − 55 = 25 °C (yarısı) → 2 × {{1|2}} = 1 → Q.</li>
+<li><b>III ✗</b> Kütle ve sıcaklık değişimi aynı, öz ısı büyük → Q’dan fazla ısı verir.</li>
+<li><b>Şıklar</b> “I ve III” seçeneği, verilen ısının yalnızca sıcaklık değişimine bağlı olduğunu sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Isıca yalıtılmış bir kaptaki 80 °C’ta su içine, 20 °C’taki bir metal blok bırakılıyor. Hâl değişimi olmuyor ve ısı alışverişi yalnızca su ile metal blok arasında gerçekleşiyor.</p><div class="fig"><svg viewBox="0 0 560 384" width="560" role="img" aria-label="Dört sıcaklık-zaman grafiği: I, II, III, IV; kırmızı çizgi su, mavi kesikli çizgi metal blok" font-size="12" fill="#1e293b" text-anchor="middle"><text x="20" y="24" font-size="14" text-anchor="start" font-weight="bold">I</text><line x1="60" y1="150" x2="259.8" y2="150" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,150.0 257.7,153.0 257.7,147.0" fill="#1e293b"/><line x1="60" y1="150" x2="60" y2="30.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,26.0 63.0,32.3 57.0,32.3" fill="#1e293b"/><text x="54" y="129.6" text-anchor="end">20</text><line x1="57" y1="125.6" x2="63" y2="125.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="56.2" text-anchor="end">80</text><line x1="57" y1="52.2" x2="63" y2="52.2" stroke="#1e293b" stroke-width="1.5"/><text x="250" y="168" text-anchor="end">Zaman</text><text x="64" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,52.2 123.3,71.8 186.7,76.7 250,76.7" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="60,125.6 123.3,86.4 186.7,76.7 250,76.7" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="295" y="24" font-size="14" text-anchor="start" font-weight="bold">II</text><line x1="335" y1="150" x2="534.8" y2="150" stroke="#1e293b" stroke-width="1.5"/><polygon points="539.0,150.0 532.7,153.0 532.7,147.0" fill="#1e293b"/><line x1="335" y1="150" x2="335" y2="30.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="335.0,26.0 338.0,32.3 332.0,32.3" fill="#1e293b"/><text x="329" y="129.6" text-anchor="end">20</text><line x1="332" y1="125.6" x2="338" y2="125.6" stroke="#1e293b" stroke-width="1.5"/><text x="329" y="56.2" text-anchor="end">80</text><line x1="332" y1="52.2" x2="338" y2="52.2" stroke="#1e293b" stroke-width="1.5"/><text x="525" y="168" text-anchor="end">Zaman</text><text x="339" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="335,52.2 419.4,69.3 525,69.3" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="335,125.6 419.4,96.2 525,96.2" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="20" y="199" font-size="14" text-anchor="start" font-weight="bold">III</text><line x1="60" y1="325" x2="259.8" y2="325" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,325.0 257.7,328.0 257.7,322.0" fill="#1e293b"/><line x1="60" y1="325" x2="60" y2="205.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,201.0 63.0,207.3 57.0,207.3" fill="#1e293b"/><text x="54" y="304.6" text-anchor="end">20</text><line x1="57" y1="300.6" x2="63" y2="300.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="231.2" text-anchor="end">80</text><line x1="57" y1="227.2" x2="63" y2="227.2" stroke="#1e293b" stroke-width="1.5"/><text x="250" y="343" text-anchor="end">Zaman</text><text x="64" y="197" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,227.2 250,227.2" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="60,300.6 165.6,232.1 207.8,227.2 250,227.2" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="295" y="199" font-size="14" text-anchor="start" font-weight="bold">IV</text><line x1="335" y1="325" x2="534.8" y2="325" stroke="#1e293b" stroke-width="1.5"/><polygon points="539.0,325.0 532.7,328.0 532.7,322.0" fill="#1e293b"/><line x1="335" y1="325" x2="335" y2="205.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="335.0,201.0 338.0,207.3 332.0,207.3" fill="#1e293b"/><text x="329" y="304.6" text-anchor="end">20</text><line x1="332" y1="300.6" x2="338" y2="300.6" stroke="#1e293b" stroke-width="1.5"/><text x="329" y="231.2" text-anchor="end">80</text><line x1="332" y1="227.2" x2="338" y2="227.2" stroke="#1e293b" stroke-width="1.5"/><text x="525" y="343" text-anchor="end">Zaman</text><text x="339" y="197" text-anchor="start">Sıcaklık (°C)</text><polyline points="335,227.2 398.3,249.2 461.7,261.4 525,261.4" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="335,300.6 398.3,254.1 461.7,239.4 525,239.4" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><line x1="120" y1="372" x2="150" y2="372" stroke="#dc2626" stroke-width="2.4"/><text x="156" y="376" text-anchor="start">Su</text><line x1="260" y1="372" x2="290" y2="372" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="6 4"/><text x="296" y="376" text-anchor="start">Metal blok</text></svg></div><p>Isıl denge sağlanıncaya kadar su ve metal bloğun sıcaklık-zaman değişimi yukarıdaki grafiklerden hangisindeki gibi olabilir?</p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "A",
+  s: `<p>Isı sıcak sudan soğuk bloğa akar: su soğur, blok ısınır. Sıcaklıklar eşitlenince ısı akışı durur; ikisi aynı anda, aynı son sıcaklığa ulaşır. Son sıcaklık 20 °C ile 80 °C arasındadır.</p>
+<ul><li><b>I ✓</b> Su soğuyor, blok ısınıyor ve ikisi aynı sıcaklıkta dengeye geliyor.</li>
+<li><b>II ✗</b> Sıcaklıklar farklıyken ısı akışı durmaz; farklı sıcaklıklarda sabit kalamazlar.</li>
+<li><b>III ✗</b> Blok ısı alıyorsa su ısı verir; suyun sıcaklığı sabit kalamaz (hâl değişimi yok).</li>
+<li><b>IV ✗</b> Bloğun sıcaklığı suyunkini geçemez; sıcaklıklar eşitlenince ısı akışı durur.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Erime sıcaklığındaki saf K, L ve M katıları özdeş ısıtıcılarla ısıtılıyor. Katıların tamamen erimesi için geçen süreler tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Katı</th><th>Kütle</th><th>Tamamen erime süresi</th></tr>
+<tr><td>K</td><td>50 g</td><td>3 dk</td></tr>
+<tr><td>L</td><td>100 g</td><td>6 dk</td></tr>
+<tr><td>M</td><td>50 g</td><td>5 dk</td></tr>
+</table></div><p>Buna göre;</p><p>I. K ve L aynı madde olabilir.<br>
+II. Erimek için en fazla ısı alan M’dir.<br>
+III. M’nin 1 gramını eritmek için gereken ısı, K’nin 1 gramını eritmek için gereken ısıdan fazladır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I ve III"],
+  a: "D",
+  s: `<p>Özdeş ısıtıcılarda erime süresi alınan ısıyı gösterir. 1 g’ın erimesi için gereken süre: K: 3 ÷ 50 = 0,06 dk; L: 6 ÷ 100 = 0,06 dk; M: 5 ÷ 50 = 0,1 dk.</p>
+<ul><li><b>I ✓</b> K ve L’nin 1 gramını eritmek için gereken ısı eşittir; aynı madde olabilirler.</li>
+<li><b>II ✗</b> En uzun süre (6 dk) L’de geçmiştir; en çok ısıyı L almıştır.</li>
+<li><b>III ✓</b> Kütleleri eşit olan K ve M’den M daha uzun sürede erimiştir; M’nin 1 gramı için daha fazla ısı gerekir.</li>
+<li><b>Şıklar</b> “I ve II” seçeneği, kütleyi hesaba katmadan yalnızca “1 gram başına” karşılaştırma yapan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Periyodik sistemin ilk 20 elementi arasından seçilen <b>X, Y</b> ve <b>Z</b> elementlerinin atom numaraları <b>ardışıktır</b> ve X &lt; Y &lt; Z’dir.<br>• X bir <b>ametaldir</b>.<br>• Y bir <b>soy gazdır</b>.<br>• Z bir <b>metaldir</b>.</div><p>Buna göre;</p><p>I. X ile Y aynı periyottadır.<br>
+II. Z, periyodik sistemin 1. grubunda yer alır.<br>
+III. X, 17. grupta yer alan bir halojendir.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız II", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>İlk 20 elementte soy gazlar He (2), Ne (10) ve Ar (18)’dir. Y bunlardan biri olabilir. Bir önceki elementler H (1), F (9), Cl (17) üçü de ametaldir; bir sonraki elementler Li (3), Na (11), K (19) üçü de metaldir. Yani üç olasılık vardır: H–He–Li, F–Ne–Na, Cl–Ar–K.</p>
+<ul><li><b>I ✓</b> H–He 1. periyotta, F–Ne 2. periyotta, Cl–Ar 3. periyotta. Üç olasılıkta da X ile Y aynı periyottadır.</li>
+<li><b>II ✓</b> Li, Na ve K’nin üçü de 1. gruptadır.</li>
+<li><b>III ✗</b> X, F ya da Cl ise 17. gruptadır; ama X hidrojen de olabilir. Hidrojen 1. gruptadır ve halojen değildir. Kesin değildir.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” hidrojeni unutan öğrencinin cevabıdır. “Yalnız II” ise soy gazın bir sonraki periyotta olduğunu sanıp X ile Y’yi farklı periyotlara koyan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci 1’den 20’ye kadar atom numaralarını kartlara yazmış ve kartları periyodik sistemdeki yerlerine yapıştırmaya başlamıştır. 1 ve 11 numaralı kartlar aşağıdaki gibi yerleştirilmiştir.</p><div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Boş periyodik tablo kesiti; 1. periyot 1. grupta 1, 3. periyot 1. grupta 11 numaralı kart" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="55" font-size="13" font-weight="bold">1</text><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="111" font-size="13" font-weight="bold">11</text><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="138" text-anchor="end" fill="#475569" font-weight="bold">4.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Öğrenci kalan kartları doğru yerleştirirse;</p><p>I. 2 numaralı kart, 10 ve 18 numaralı kartların bulunduğu sütunun en üstüne yapıştırılır.<br>
+II. 1 ve 2 numaralı kartlar yan yana, birbirine bitişik iki kutuya yapıştırılır.<br>
+III. 13 numaralı kart, 5 numaralı kartın hemen altındaki kutuya yapıştırılır.</p><p>ifadelerinden hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Atom numarası 2 olan helyum, özellikleri soy gazlara benzediği için 18. grubun en üstüne yerleştirilir. 10 (Ne) ve 18 (Ar) de 18. gruptadır.</p>
+<ul><li><b>I ✓</b> 2 numaralı kart (He) 18. grubun en üstündeki kutuya yapıştırılır.</li>
+<li><b>II ✗</b> 1. periyottaki iki element (H ve He) tablonun iki ucundadır: H 1. grupta, He 18. gruptadır. Aralarında boşluk vardır, bitişik değildir.</li>
+<li><b>III ✓</b> 5 (B) 2. periyot 13. grupta, 13 (Al) 3. periyot 13. gruptadır. 3. periyotta önce 11 ve 12 gelir, ardından 13 doğrudan 13. gruba geçer.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” helyumu 2. gruba, hidrojenin yanına koyan öğrencinin cevabıdır. “Yalnız III” ise He’yi 2. grupta sandığı için I’i de yanlış bulan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Periyodik sistemin bir kesitinde dört elementin yeri üçgen, kare, daire ve elmas sembolleriyle gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Periyodik tablo kesiti: üçgen 2. periyot 13. grup, kare 4. periyot 2. grup, daire 1. periyot 18. grup, elmas 3. periyot 15. grup" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><circle cx="530" cy="50" r="7.5" fill="#1e293b" stroke="#1e293b" stroke-width="1"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><polygon points="390,70 398,85 382,85" fill="#1e293b"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><polygon points="446,97 454,106 446,115 438,106" fill="#1e293b"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="75" y="127" width="14" height="14" fill="#1e293b"/><text x="32" y="138" text-anchor="end" fill="#475569" font-weight="bold">4.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Bu elementlerle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Kareyle gösterilen elementin atom numarası, diğer üç elementinkinden büyüktür.", "Daireyle gösterilen element, bulunduğu periyotta atom numarası en büyük olan elementtir.", "Üçgen ile elmasla gösterilen elementlerin atom numaraları arasındaki fark 10’dur.", "Üçgenle gösterilen elementin bulunduğu gruptaki elementlerin hepsi yarı metaldir."],
+  a: "D",
+  s: `<p>Üçgen: 2. periyot 13. grup → bor (B, 5). Kare: 4. periyot 2. grup → kalsiyum (Ca, 20). Daire: 1. periyot 18. grup → helyum (He, 2). Elmas: 3. periyot 15. grup → fosfor (P, 15).</p>
+<ul><li><b>A ✓</b> Kalsiyumun atom numarası (20) en büyüktür.</li>
+<li><b>B ✓</b> 1. periyotta yalnızca H (1) ve He (2) vardır; He bu periyodun atom numarası en büyük elementidir. Daire 18. grupta olduğu için 2. gruptaymış gibi düşünülmemelidir.</li>
+<li><b>C ✓</b> 15 − 5 = 10.</li>
+<li><b>D ✗</b> Borun altındaki alüminyum (Al) bir metaldir. “Aynı gruptaki elementler aynı sınıftadır” genellemesi yanlıştır (LGS’nin sevdiği B–Al tuzağı).</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci X, Y ve Z elementlerini inceleyip gözlemlerini tabloya yazıyor.</p><div class="tbl"><table>
+<tr><th>Element</th><th>Gözlemler</th></tr>
+<tr><td>X</td><td>Oda sıcaklığında katıdır. Yüzeyi parlaktır. Elektriği metallerden az, ametallerden iyi iletir. Çekiçle vurulunca kırılır.</td></tr>
+<tr><td>Y</td><td>Oda sıcaklığında katıdır. Yüzeyi mattır. Isı ve elektriği iletmez. Çekiçle vurulunca toz hâline gelir.</td></tr>
+<tr><td>Z</td><td>Oda sıcaklığında katıdır. Yüzeyi parlaktır. Isı ve elektriği iyi iletir. Tel ve levha hâline getirilebilir.</td></tr>
+</table></div><p>Aşağıdaki periyodik sistem kesitinde altı element 1’den 6’ya kadar numaralandırılmıştır.</p><div class="fig"><svg viewBox="0 0 560 130" width="560" role="img" aria-label="Periyodik tablo kesitinde 1-6 numaralı yerler" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="55" font-size="13" font-weight="bold">4</text><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="82" y="83" font-size="13" font-weight="bold">6</text><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="390" y="83" font-size="13" font-weight="bold">1</text><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="390" y="111" font-size="13" font-weight="bold">2</text><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="418" y="111" font-size="13" font-weight="bold">5</text><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="474" y="111" font-size="13" font-weight="bold">3</text><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Buna göre X, Y ve Z elementlerinin yerleri aşağıdakilerin hangisinde <b>doğru</b> verilmiştir?</p>`,
+  c: ["X: 2, Y: 3, Z: 6", "X: 5, Y: 4, Z: 2", "X: 1, Y: 3, Z: 6", "X: 5, Y: 3, Z: 1"],
+  a: "C",
+  s: `<p>Gözlemlere göre X yarı metal, Y oda sıcaklığında katı bir ametal, Z metaldir. Numaralı yerler: 1 bor (B, yarı metal), 2 alüminyum (Al, metal), 3 kükürt (S, katı ametal), 4 hidrojen (H, gaz hâlinde ametal), 5 silisyum (Si, yarı metal), 6 berilyum (Be, metal).</p><p>X: 1 ya da 5, Y: yalnızca 3 (hidrojen oda sıcaklığında gazdır), Z: 2 ya da 6 olabilir. Bu koşulları yalnızca C sağlar.</p>
+<ul><li><b>A ✗</b> 2 alüminyumdur; borun altında olduğu için yarı metal sanılır ama metaldir.</li>
+<li><b>B ✗</b> 4 hidrojendir; ametaldir ama oda sıcaklığında gazdır, “katı, çekiçle toz hâline gelir” gözlemine uymaz.</li>
+<li><b>D ✗</b> 1 bordur; yarı metaldir, tel ve levha hâline getirilemez.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki periyodik sistem kesitinde beş element R, S, T, U ve V harfleriyle gösterilmiştir. Harfler elementlerin gerçek sembolleri değildir.</p><div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Periyodik tablo kesitinde R, S, T, U, V harfleriyle gösterilen elementler" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="83" font-size="13" font-weight="bold">R</text><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="502" y="83" font-size="13" font-weight="bold">T</text><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="82" y="111" font-size="13" font-weight="bold">S</text><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="530" y="111" font-size="13" font-weight="bold">U</text><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="139" font-size="13" font-weight="bold">V</text><rect x="68" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="138" text-anchor="end" fill="#475569" font-weight="bold">4.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Buna göre;</p><p>I. R ile V’nin kimyasal özellikleri birbirine benzer.<br>
+II. T bir halojen, U bir soy gazdır.<br>
+III. V’nin atom numarası, U’nun atom numarasından 1 fazladır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>R: 2. periyot 1. grup (Li, 3). S: 3. periyot 2. grup (Mg, 12). T: 2. periyot 17. grup (F, 9). U: 3. periyot 18. grup (Ar, 18). V: 4. periyot 1. grup (K, 19).</p>
+<ul><li><b>I ✓</b> R ve V aynı gruptadır (1. grup, alkali metaller). Aynı gruptaki elementlerin kimyasal özellikleri benzerdir.</li>
+<li><b>II ✓</b> 17. grup halojenler, 18. grup soy gazlardır.</li>
+<li><b>III ✓</b> U 3. periyodun son elementi (18), V 4. periyodun ilk elementidir (19). Farklı periyotlarda ve tablonun iki ucunda olmalarına rağmen atom numaraları ardışıktır.</li>
+<li><b>Çeldiriciler</b> “I ve II”, tablonun iki ucundaki elementlerin atom numaralarının ardışık olamayacağını sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Ece:</b> Periyodik sistemin ilk 20 elementi arasından atom numaraları <b>ardışık</b> olan iki element seçtim. Bu elementlerden biri <b>metal</b>, diğeri <b>yarı metal</b>.</div><p>Ece’nin seçtiği elementlerle ilgili;</p><p>I. İki element aynı periyottadır.<br>
+II. Metal olan element 2. gruptadır.<br>
+III. Yarı metal olan elementin atom numarası, metal olanınkinden büyüktür.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>İlk 20 elementte yarı metaller yalnızca bor (5) ve silisyum (14)’dur. Atom numarası ardışık komşuları: 4 Be (metal), 6 C (ametal), 13 Al (metal), 15 P (ametal). Metal–yarı metal çiftleri iki tanedir: <b>Be–B</b> ve <b>Al–Si</b>.</p>
+<ul><li><b>I ✓</b> Be ve B 2. periyotta, Al ve Si 3. periyottadır. İki durumda da aynı periyottadırlar.</li>
+<li><b>II ✗</b> Be–B çiftinde metal 2. gruptadır, ama Al–Si çiftinde metal (Al) 13. gruptadır. Kesin değildir.</li>
+<li><b>III ✓</b> B (5) &gt; Be (4) ve Si (14) &gt; Al (13). İki durumda da yarı metalin atom numarası büyüktür.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” yalnızca Be–B çiftini düşünüp alüminyumu unutan öğrencinin cevabıdır. “Yalnız I” ise iki elementin hangisinin önce geldiğini belirleyemeyen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci bilinmeyen bir X elementini inceliyor ve şu özellikleri belirliyor: X yumuşak ve parlak bir metaldir, elektriği iyi iletir, suyla hızla tepkimeye girer ve klorla tepkimeye girdiğinde yemek tuzuna (NaCl) benzeyen beyaz bir bileşik oluşturur. Öğretmeni, X’in kimyasal özelliklerinin sodyumunkilere çok benzediğini söylüyor.</p><p>Aşağıdaki kesitte sodyumun yeri ile 1’den 5’e kadar numaralandırılmış yerler gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 158" width="560" role="img" aria-label="Periyodik tablo kesitinde sodyum ve 1-5 numaralı yerler" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="40" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="55" font-size="13" font-weight="bold">1</text><rect x="516" y="36" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="54" text-anchor="end" fill="#475569" font-weight="bold">1.</text><rect x="40" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="83" font-size="13" font-weight="bold">2</text><rect x="68" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="376" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="516" y="64" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="82" text-anchor="end" fill="#475569" font-weight="bold">2.</text><rect x="40" y="92" width="28" height="28" fill="#fde68a" stroke="#475569" stroke-width="1.2"/><text x="54" y="111" font-size="13" font-weight="bold">Na</text><rect x="68" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="82" y="111" font-size="13" font-weight="bold">4</text><rect x="376" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="404" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="432" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="460" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><rect x="488" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="502" y="111" font-size="13" font-weight="bold">5</text><rect x="516" y="92" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="110" text-anchor="end" fill="#475569" font-weight="bold">3.</text><rect x="40" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="54" y="139" font-size="13" font-weight="bold">3</text><rect x="68" y="120" width="28" height="28" fill="#ffffff" stroke="#475569" stroke-width="1.2"/><text x="32" y="138" text-anchor="end" fill="#475569" font-weight="bold">4.</text><text x="54" y="28" font-size="11" fill="#475569" font-weight="bold">1</text><text x="82" y="28" font-size="11" fill="#475569" font-weight="bold">2</text><text x="390" y="28" font-size="11" fill="#475569" font-weight="bold">13</text><text x="418" y="28" font-size="11" fill="#475569" font-weight="bold">14</text><text x="446" y="28" font-size="11" fill="#475569" font-weight="bold">15</text><text x="474" y="28" font-size="11" fill="#475569" font-weight="bold">16</text><text x="502" y="28" font-size="11" fill="#475569" font-weight="bold">17</text><text x="530" y="28" font-size="11" fill="#475569" font-weight="bold">18</text><text x="300" y="12" font-size="11" fill="#475569">Grup numaraları</text><text x="4" y="12" font-size="11" text-anchor="start" fill="#475569">Periyot</text></svg></div><p>Buna göre X elementi numaralı yerlerden hangilerinde bulunabilir?</p>`,
+  c: ["1, 2 ve 3", "2 ve 3", "2, 3 ve 4", "3 ve 4"],
+  a: "B",
+  s: `<p>Kimyasal özellikleri benzeyen elementler periyodik sistemde <b>aynı grupta</b> (alt alta) bulunur. Sodyum 1. gruptadır; X de 1. gruptaki metallerden biri olmalıdır.</p>
+<ul><li><b>1 ✗</b> 1. periyot 1. gruptaki element hidrojendir. Sodyumla aynı sütunda olsa da <b>ametaldir</b>, oda sıcaklığında gazdır; “yumuşak, parlak metal” olamaz.</li>
+<li><b>2 ✓, 3 ✓</b> Lityum (2. periyot) ve potasyum (4. periyot) sodyumla aynı gruptaki alkali metallerdir.</li>
+<li><b>4 ✗</b> Magnezyum sodyumun hemen yanındadır ve metaldir; ama farklı grupta olduğu için kimyasal özellikleri sodyumunkine “çok benzer” değildir. Komşuluk benzerlik demek değildir.</li>
+<li><b>5 ✗</b> Klor bir ametaldir.</li>
+<li><b>Çeldiriciler</b> “1, 2 ve 3” hidrojeni 1. grupta olduğu için alkali metal sanan, “2, 3 ve 4” aynı periyottaki komşuyu benzer sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Kapalı K, L ve M kaplarında gerçekleşen üç olayın başlangıç ve son durumları tanecik modelleriyle gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 500 346" width="500" role="img" aria-label="K, L ve M kaplarındaki değişimlerin tanecik modelleri" font-size="12" fill="#1e293b" text-anchor="middle"><text x="24" y="65" font-size="16" font-weight="bold">K</text><rect x="50" y="14" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="71.9" cy="44" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="88.1" cy="44" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="107.9" cy="44" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="124.1" cy="44" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="89.9" cy="72" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="106.1" cy="72" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><line x1="176" y1="59" x2="231.2" y2="59" stroke="#1e293b" stroke-width="2"/><polygon points="236.0,59.0 228.8,62.5 228.8,55.5" fill="#1e293b"/><rect x="252" y="14" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="267.9" cy="32" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="284.1" cy="32" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="329.9" cy="54" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="346.1" cy="54" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="277.9" cy="86" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="294.1" cy="86" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><text x="24" y="169" font-size="16" font-weight="bold">L</text><rect x="50" y="118" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="69.9" cy="140" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="86.1" cy="140" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="121.9" cy="140" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="138.1" cy="140" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="69.9" cy="184" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="86.1" cy="184" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="121.9" cy="184" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="138.1" cy="184" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><line x1="176" y1="163" x2="231.2" y2="163" stroke="#1e293b" stroke-width="2"/><polygon points="236.0,163.0 228.8,166.5 228.8,159.5" fill="#1e293b"/><rect x="252" y="118" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="271.9" cy="140" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="288.1" cy="140" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="323.9" cy="140" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="340.1" cy="140" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="271.9" cy="184" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="288.1" cy="184" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="323.9" cy="184" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="340.1" cy="184" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="24" y="273" font-size="16" font-weight="bold">M</text><rect x="50" y="222" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="68.5" cy="258.3" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="95.5" cy="258.3" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="82" cy="252" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="112.5" cy="286.3" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="139.5" cy="286.3" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="126" cy="280" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><line x1="176" y1="267" x2="231.2" y2="267" stroke="#1e293b" stroke-width="2"/><polygon points="236.0,267.0 228.8,270.5 228.8,263.5" fill="#1e293b"/><rect x="252" y="222" width="110" height="90" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><circle cx="273.9" cy="244" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="290.1" cy="244" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="325.9" cy="262" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="342.1" cy="262" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><circle cx="283.9" cy="292" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="300.1" cy="292" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="105" y="336" font-weight="bold">Başlangıç</text><text x="307" y="336" font-weight="bold">Son durum</text><circle cx="400" cy="120" r="9" fill="#60a5fa" stroke="#1e293b" stroke-width="1.2"/><text x="416" y="124" text-anchor="start">A atomu</text><circle cx="400" cy="150" r="9" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="416" y="154" text-anchor="start">B atomu</text></svg></div><p>Buna göre;</p><p>I. K kabında tanecikler arasındaki bağlar koptuğu için kimyasal değişim gerçekleşmiştir.<br>
+II. M kabında oluşan maddelerin hepsi elementtir.<br>
+III. L kabında molekül sayısı değişmediği hâlde kimyasal değişim gerçekleşmiştir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız II", "I ve III", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>K: Başlangıçta da sonda da aynı A₂ molekülleri vardır; yalnızca moleküller arasındaki uzaklık artmıştır (örneğin buharlaşma). L: A₂ ve B₂ moleküllerinden <b>AB</b> molekülleri oluşmuştur. M: A₂B moleküllerinden A₂ ve B₂ molekülleri oluşmuştur.</p>
+<ul><li><b>I ✗</b> K’de molekül içindeki bağlar kopmamış, moleküller aynı kalmıştır. Yalnızca tanecikler arası uzaklık değiştiği için bu bir <b>fiziksel</b> değişimdir (hâl değişimi).</li>
+<li><b>II ✓</b> M’de oluşan A₂ ve B₂ moleküllerinin her biri tek tür atomdan oluşur, yani elementtir. Atomlar korunmuştur: 4 A ve 2 B.</li>
+<li><b>III ✓</b> L’de 4 molekül tepkimeye girmiş, 4 molekül oluşmuştur; ama moleküller farklıdır (yeni madde). Kimyasal değişimde molekül sayısı değişebilir de değişmeyebilir de; ölçüt yeni madde oluşmasıdır.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” tanecikler arası uzaklığın değişmesini bağ kopması sanan, “Yalnız II” ise “molekül sayısı aynıysa tepkime yoktur” diye düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Mert deney defterine dört olayı, gözlemlerini ve bu gözlemlerden çıkardığı sonuçları yazmıştır.</p><div class="tbl"><table>
+<tr><th></th><th>Olay ve gözlem</th><th>Mert’in sonucu</th></tr>
+<tr><td>1</td><td>Tuzlu su ısıtılarak suyun tamamı buharlaştırılıyor; kabın dibinde beyaz bir katı kalıyor.</td><td>Kapta önceden olmayan beyaz bir katı oluştuğu için kimyasal değişim gerçekleşmiştir.</td></tr>
+<tr><td>2</td><td>Demir yünü (bulaşık teli) açık havada yakılıyor; yanma bitince kalan koyu renkli katının kütlesi, başlangıçtaki demir yününün kütlesinden fazla çıkıyor.</td><td>Demir havadaki oksijenle birleşerek yeni bir madde oluşturmuştur; kütle artışı kütlenin korunumuna aykırı değildir.</td></tr>
+<tr><td>3</td><td>Ağzı kapalı bir kaptaki buz eriyor; kabın kütlesi değişmiyor.</td><td>Kütle değişmediği için bu olayın fiziksel değişim olduğu kütle ölçümüyle kanıtlanmıştır.</td></tr>
+<tr><td>4</td><td>Mavi renkli bakır sülfat çözeltisine renksiz sodyum hidroksit çözeltisi ekleniyor; kabın dibinde açık mavi, jöle kıvamında bir katı çöküyor.</td><td>Başlangıçta olmayan bir katının çökmesi kimyasal değişim olduğunu gösterir.</td></tr>
+</table></div><p>Buna göre Mert’in hangi sonuçları <b>doğrudur</b>?</p>`,
+  c: ["1 ve 3", "2 ve 3", "2 ve 4", "1, 2 ve 4"],
+  a: "C",
+  s: `<p>Kimyasal değişimin ölçütü, başlangıçtaki maddelerden farklı yeni bir maddenin oluşmasıdır.</p>
+<ul><li><b>1 ✗</b> Beyaz katı zaten suda çözünmüş olan tuzdur. Su buharlaşınca geri kalmıştır; yeni madde oluşmamıştır. Bu fiziksel bir değişimdir.</li>
+<li><b>2 ✓</b> Yanma kimyasal bir değişimdir; koyu renkli katı, demirin oksijenle oluşturduğu yeni bir maddedir. Açık havada oksijen de tepkimeye katıldığı için kalan katının kütlesi demirinkinden fazladır; tepkimeye girenlerin (demir + oksijen) toplam kütlesi korunmuştur.</li>
+<li><b>3 ✗</b> Sonuç (fiziksel değişim) doğru olsa da gerekçe yanlıştır: Kapalı kapta kimyasal değişimde de kütle korunur. Kütle ölçümü iki değişimi ayırt etmez.</li>
+<li><b>4 ✓</b> Çöken katı, başlangıçtaki çözeltilerde olmayan yeni bir maddedir (çökelme tepkimesi).</li>
+<li><b>Çeldiriciler</b> “1, 2 ve 4” geri kazanılan tuzu yeni madde sanan, “2 ve 3” kütlenin korunmasını fiziksel değişimin kanıtı sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Evlerde kullanılan doğal gaz kokusuzdur. Gaz kaçağının fark edilebilmesi için doğal gaza çok az miktarda keskin kokulu bir <b>X</b> maddesi eklenir. Saf X maddesi, havası boşaltılmış kapalı bir kapta yalnızca oksijen gazıyla tamamen yakıldığında karbondioksit, su ve kükürt dioksit oluşuyor.</p><div class="fig"><svg viewBox="0 0 500 132" width="500" role="img" aria-label="X maddesinin oksijenle yanması sonucu CO2, H2O ve SO2 oluşması" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="10" y="20" width="120" height="70" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/><text x="70" y="50" font-size="18" font-weight="bold">X</text><text x="70" y="72" font-size="13">+ oksijen</text><line x1="140" y1="55" x2="191.2" y2="55" stroke="#1e293b" stroke-width="2"/><polygon points="196.0,55.0 188.8,58.5 188.8,51.5" fill="#1e293b"/><text x="168" y="44">yanma</text><circle cx="232" cy="55" r="10" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="250" cy="55" r="10" fill="#475569" stroke="#1e293b" stroke-width="1.2"/><circle cx="268" cy="55" r="10" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="250" y="88" font-size="13" font-weight="bold">CO₂</text><text x="300" y="60" font-size="16">+</text><circle cx="340" cy="62" r="9" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.2"/><circle cx="372" cy="62" r="9" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.2"/><circle cx="356" cy="48" r="11" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="356" y="88" font-size="13" font-weight="bold">H₂O</text><text x="400" y="60" font-size="16">+</text><circle cx="424" cy="62" r="10" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="470" cy="62" r="10" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><circle cx="447" cy="48" r="12" fill="#facc15" stroke="#1e293b" stroke-width="1.2"/><text x="447" y="88" font-size="13" font-weight="bold">SO₂</text><circle cx="120" cy="116" r="8" fill="#475569" stroke="#1e293b" stroke-width="1.2"/><text x="134" y="120" text-anchor="start">C atomu</text><circle cx="210" cy="116" r="8" fill="#f87171" stroke="#1e293b" stroke-width="1.2"/><text x="224" y="120" text-anchor="start">O atomu</text><circle cx="300" cy="116" r="8" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.2"/><text x="314" y="120" text-anchor="start">H atomu</text><circle cx="390" cy="116" r="8" fill="#facc15" stroke="#1e293b" stroke-width="1.2"/><text x="404" y="120" text-anchor="start">S atomu</text></svg></div><p>Buna göre X maddesiyle ilgili;</p><p>I. Bir bileşiktir.<br>
+II. Yapısında oksijen atomu kesinlikle bulunur.<br>
+III. Yapısında karbon, hidrojen ve kükürt atomları bulunur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I ve III"],
+  a: "D",
+  s: `<p>Kimyasal tepkimede atomların türü ve sayısı korunur; ürünlerdeki her atom tepkimeye girenlerden gelir. Tepkimeye yalnızca X ve oksijen girmiştir.</p>
+<ul><li><b>III ✓</b> Ürünlerdeki C, H ve S atomları oksijen gazından gelemez; bu atomlar X’ten gelmiştir.</li>
+<li><b>I ✓</b> Saf X en az üç farklı element (C, H, S) içerdiğine göre bir bileşiktir.</li>
+<li><b>II ✗</b> Ürünlerdeki oksijen atomlarının tamamı tepkimeye giren oksijen gazından gelmiş olabilir. X’te oksijen bulunup bulunmadığı bu bilgilerle kesin söylenemez.</li>
+<li><b>Çeldiriciler</b> “I ve II”, ürünlerde oksijen olduğu için X’te de oksijen olması gerektiğini düşünen öğrencinin cevabıdır. “Yalnız III” bileşik ile elementi ayıramayan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Sodyum metali ile klor gazının tepkimeye girmesiyle yemek tuzu (sodyum klorür) oluşur. Bu maddelerin bazı özellikleri tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Madde</th><th>Özellikler</th></tr>
+<tr><td>Sodyum (Na)</td><td>Gümüş renkli, parlak, bıçakla kesilebilecek kadar yumuşak bir metaldir. Suyla şiddetli tepkimeye girer.</td></tr>
+<tr><td>Klor (Cl₂)</td><td>Sarı-yeşil renkli, keskin kokulu, zehirli bir gazdır.</td></tr>
+<tr><td>Sodyum klorür (NaCl)</td><td>Beyaz, kristal yapılı bir katıdır. Yemeklerde kullanılır. 801 °C’ta erir.</td></tr>
+</table></div><p>Buna göre;</p><p>I. Yemek tuzu 801 °C’ta eritildiğinde sodyum metaline ve klor gazına ayrışır.<br>
+II. Yemek tuzunda sodyum ve klor atomları bulunur; tepkimede yeni bir atom türü oluşmamıştır.<br>
+III. Sodyum ile klordan yemek tuzu oluşması kimyasal değişimdir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız II", "II ve III", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Yemek tuzunun özellikleri, onu oluşturan sodyum ve klorun özelliklerinden tamamen farklıdır: Yeni bir madde (bileşik) oluşmuştur.</p>
+<ul><li><b>I ✗</b> Erime bir hâl değişimidir, yani fiziksel değişimdir. Eriyen tuz yine sodyum klorürdür; erimekle elementlerine ayrışmaz.</li>
+<li><b>II ✓</b> Kimyasal tepkimede atomların türü ve sayısı korunur. Tuzdaki Na ve Cl atomları tepkimeye giren sodyum ve klordan gelir.</li>
+<li><b>III ✓</b> Özellikleri farklı yeni bir madde oluştuğu için kimyasal değişimdir.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” erimeyi ayrışma sanan, “Yalnız II” ise atomlar korunduğu için olayın fiziksel olduğunu düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, günlük hayattaki olayları aşağıdaki karar şemasına göre K, L, M ve N kutularına yerleştiriyor.</p><div class="fig"><svg viewBox="0 0 520 290" width="520" role="img" aria-label="Olayları K, L, M, N kutularına ayıran karar şeması" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="170" y="8" width="200" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.3"/><text x="270" y="29">Yeni madde oluşuyor mu?</text><line x1="200" y1="42" x2="94.4" y2="86.1" stroke="#1e293b" stroke-width="2"/><polygon points="90.0,88.0 95.3,82.0 98.0,88.4" fill="#1e293b"/><text x="128" y="62" font-weight="bold">Evet</text><line x1="340" y1="42" x2="367.4" y2="84" stroke="#1e293b" stroke-width="2"/><polygon points="370.0,88.0 363.2,83.9 369.0,80.1" fill="#1e293b"/><text x="372" y="62" font-weight="bold">Hayır</text><rect x="50" y="90" width="80" height="34" rx="8" fill="#fde68a" stroke="#475569" stroke-width="1.3"/><text x="90" y="111" font-size="15" font-weight="bold">K</text><rect x="290" y="90" width="160" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.3"/><text x="370" y="111">Hâl değişimi mi?</text><line x1="320" y1="124" x2="263.9" y2="163.2" stroke="#1e293b" stroke-width="2"/><polygon points="260.0,166.0 263.9,159.0 267.9,164.7" fill="#1e293b"/><text x="274" y="146" font-weight="bold">Evet</text><line x1="420" y1="124" x2="466.3" y2="162.9" stroke="#1e293b" stroke-width="2"/><polygon points="470.0,166.0 462.2,164.0 466.7,158.7" fill="#1e293b"/><text x="470" y="146" font-weight="bold">Hayır</text><rect x="440" y="168" width="70" height="34" rx="8" fill="#fde68a" stroke="#475569" stroke-width="1.3"/><text x="475" y="189" font-size="15" font-weight="bold">L</text><rect x="170" y="168" width="190" height="34" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="1.3"/><text x="265" y="189">Madde ısı alıyor mu?</text><line x1="210" y1="202" x2="173.3" y2="240.5" stroke="#1e293b" stroke-width="2"/><polygon points="170.0,244.0 172.4,236.4 177.5,241.2" fill="#1e293b"/><text x="172" y="224" font-weight="bold">Evet</text><line x1="320" y1="202" x2="356.7" y2="240.5" stroke="#1e293b" stroke-width="2"/><polygon points="360.0,244.0 352.5,241.2 357.6,236.4" fill="#1e293b"/><text x="362" y="224" font-weight="bold">Hayır</text><rect x="130" y="246" width="70" height="34" rx="8" fill="#fde68a" stroke="#475569" stroke-width="1.3"/><text x="165" y="267" font-size="15" font-weight="bold">M</text><rect x="330" y="246" width="70" height="34" rx="8" fill="#fde68a" stroke="#475569" stroke-width="1.3"/><text x="365" y="267" font-size="15" font-weight="bold">N</text></svg></div><p>Buna göre aşağıdaki olaylardan hangisi <b>yanlış</b> kutuya yerleştirilmiştir?</p>`,
+  c: ["Derin dondurucunun iç duvarlarında karlanma (kırağı) oluşması → N", "Katı oda parfümünün zamanla küçülerek kokusunu yayması → M", "Toz şekerin sıcak çayda çözünmesi → M", "Sütün mayalanarak yoğurda dönüşmesi → K"],
+  a: "C",
+  s: `<p>Önce yeni madde oluşup oluşmadığına, sonra olayın hâl değişimi olup olmadığına, en son ısı alınıp verildiğine bakılır.</p>
+<ul><li><b>A ✓</b> Karlanma, dondurucudaki havada bulunan su buharının doğrudan katıya dönüşmesidir (kırağılaşma). Yeni madde yok, hâl değişimi var, su buharı ısı verir → N.</li>
+<li><b>B ✓</b> Katı oda parfümü sıvı olmadan doğrudan gaza geçer (süblimleşme). Yeni madde yok, hâl değişimi var, ısı alır → M.</li>
+<li><b>C ✗</b> Çözünme yeni madde oluşturmaz ama bir <b>hâl değişimi değildir</b>: Şeker tanecikleri suyun tanecikleri arasına dağılır, şeker erimez. Bu olay L kutusuna gitmelidir. Çözünmeyi erime ile karıştırmak sık yapılan bir hatadır.</li>
+<li><b>D ✓</b> Yoğurt sütten farklı özellikte yeni bir maddedir → K.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, oda sıcaklığındaki eşit miktarda su bulunan K, L ve M kaplarına üç farklı beyaz katı ekliyor ve gözlemlerini tabloya yazıyor. Daha sonra her kaptaki suyu buharlaştırıp kalan katıyı inceliyor.</p><div class="tbl"><table>
+<tr><th>Kap</th><th>Eklenen katı</th><th>Gözlem</th><th>Su buharlaştırıldıktan sonra</th></tr>
+<tr><td>K</td><td>Toz şeker</td><td>Şeker çözünüyor, sıcaklık değişmiyor.</td><td>Kalan katı şekerdir.</td></tr>
+<tr><td>L</td><td>Sönmemiş kireç (CaO)</td><td>Karışım ısınıyor; damlatılan fenolftalein pembe oluyor.</td><td>Kalan katının özellikleri sönmemiş kireçten farklıdır.</td></tr>
+<tr><td>M</td><td>Amonyum nitrat</td><td>Katı çözünüyor, kap soğuyor.</td><td>Kalan katı amonyum nitrattır.</td></tr>
+</table></div><p>Buna göre;</p><p>I. Sıcaklık değişimi gözlenen kaplarda kimyasal değişim gerçekleşmiştir.<br>
+II. L kabında yeni bir madde oluşmuştur.<br>
+III. M kabındaki gözlem, kimyasal tepkime olmadan da sıcaklığın değişebileceğini gösterir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız III", "II ve III", "I ve II", "I, II ve III"],
+  a: "B",
+  s: `<p>Kimyasal değişimin kesin kanıtı, oluşan maddenin başlangıçtaki maddeden farklı olduğunun belirlenmesidir. Isınma, soğuma ya da renk değişimi tek başına kesin kanıt değildir.</p>
+<ul><li><b>I ✗</b> M’de sıcaklık düşmüştür ama su buharlaştırılınca yine amonyum nitrat elde edilmiştir; yeni madde oluşmamıştır, yalnızca çözünme (fiziksel değişim) olmuştur.</li>
+<li><b>II ✓</b> L’de kalan katının özellikleri CaO’dan farklıdır ve çözelti bazik özellik göstermiştir: Sönmemiş kireç suyla tepkimeye girerek sönmüş kireci (kalsiyum hidroksit) oluşturmuştur.</li>
+<li><b>III ✓</b> Amonyum nitratın çözünmesi bir fiziksel değişimdir ve yine de sıcaklık düşmüştür.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” ve “I ve II”, her sıcaklık değişimini tepkime belirtisi sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Demirin paslanmasını inceleyen bir öğrenci, özdeş demir çivileri dört deney tüpüne yerleştiriyor. 2. tüpteki su, içinde çözünmüş hava uzaklaşsın diye önceden kaynatılıp soğutulmuştur. Bir hafta sonra yapılan gözlemler tabloda verilmiştir.</p><div class="fig"><svg viewBox="0 0 540 262" width="540" role="img" aria-label="Paslanma deneyindeki dört deney tüpü" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="47" y="26" width="42" height="16" fill="#a16207" stroke="#713f12" stroke-width="1"/><path d="M50,40 L50,172.0 A18.0,18.0 0 0 0 86,172.0 L86,40" fill="#f8fafc" stroke="#334155" stroke-width="1.6"/><line x1="68" y1="58" x2="68" y2="176" stroke="#475569" stroke-width="4"/><line x1="61" y1="58" x2="75" y2="58" stroke="#475569" stroke-width="4"/><rect x="54" y="166" width="28" height="14" fill="#e5e7eb" stroke="#64748b" stroke-width="1"/><text x="68" y="22" font-size="13" font-weight="bold">1. tüp</text><text x="68" y="214">Kuru hava</text><text x="68" y="229">(nem çekici</text><text x="68" y="244">madde var)</text><rect x="172" y="26" width="42" height="16" fill="#a16207" stroke="#713f12" stroke-width="1"/><path d="M175,40 L175,172.0 A18.0,18.0 0 0 0 211,172.0 L211,40" fill="#f8fafc" stroke="#334155" stroke-width="1.6"/><path d="M176.5,62.5 L176.5,172.0 A16.5,16.5 0 0 0 209.5,172.0 L209.5,62.5 Z" fill="#bfdbfe" stroke="none"/><rect x="176.5" y="54.5" width="33" height="8" fill="#facc15"/><line x1="193" y1="58" x2="193" y2="176" stroke="#475569" stroke-width="4"/><line x1="186" y1="58" x2="200" y2="58" stroke="#475569" stroke-width="4"/><text x="193" y="22" font-size="13" font-weight="bold">2. tüp</text><text x="193" y="214">Havası alınmış</text><text x="193" y="229">su, üstünde</text><text x="193" y="244">yağ tabakası</text><path d="M300,40 L300,172.0 A18.0,18.0 0 0 0 336,172.0 L336,40" fill="#f8fafc" stroke="#334155" stroke-width="1.6"/><path d="M301.5,122.5 L301.5,172.0 A16.5,16.5 0 0 0 334.5,172.0 L334.5,122.5 Z" fill="#bfdbfe" stroke="none"/><line x1="318" y1="58" x2="318" y2="176" stroke="#475569" stroke-width="4"/><line x1="311" y1="58" x2="325" y2="58" stroke="#475569" stroke-width="4"/><text x="318" y="22" font-size="13" font-weight="bold">3. tüp</text><text x="318" y="214">Musluk suyu</text><text x="318" y="229">ağzı açık</text><path d="M425,40 L425,172.0 A18.0,18.0 0 0 0 461,172.0 L461,40" fill="#f8fafc" stroke="#334155" stroke-width="1.6"/><path d="M426.5,122.5 L426.5,172.0 A16.5,16.5 0 0 0 459.5,172.0 L459.5,122.5 Z" fill="#a5f3fc" stroke="none"/><line x1="443" y1="58" x2="443" y2="176" stroke="#475569" stroke-width="4"/><line x1="436" y1="58" x2="450" y2="58" stroke="#475569" stroke-width="4"/><text x="443" y="22" font-size="13" font-weight="bold">4. tüp</text><text x="443" y="214">Tuzlu su</text><text x="443" y="229">ağzı açık</text></svg></div><div class="tbl"><table>
+<tr><th>Tüp</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+<tr><td>Bir hafta sonra</td><td>Paslanma yok</td><td>Paslanma yok</td><td>Paslanma var</td><td>Çok fazla paslanma var</td></tr>
+</table></div><p>Bu deneyle ilgili;</p><p>I. Demirin paslanması için su ve havanın birlikte bulunması gerekir.<br>
+II. Tuzlu su, demirin paslanmasını hızlandırır.<br>
+III. 2. tüpteki yağ tabakası, çivinin suyla temasını engellemek için konmuştur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Paslanma demirin su ve oksijenle tepkimeye girdiği kimyasal bir değişimdir. Tüpler karşılaştırılırken her seferinde tek bir etkene bakılır.</p>
+<ul><li><b>I ✓</b> 1. tüpte hava var ama su yok, 2. tüpte su var ama hava yok: İkisinde de paslanma olmamıştır. 3. tüpte ikisi birlikte bulunduğunda paslanma olmuştur.</li>
+<li><b>II ✓</b> 3. ve 4. tüpler arasındaki tek fark suyun tuzlu olmasıdır; tuzlu suda paslanma daha fazladır.</li>
+<li><b>III ✗</b> 2. tüpte çivi zaten suyun içindedir. Yağ tabakası, havanın suya yeniden karışmasını engellemek için konmuştur.</li>
+<li><b>Çeldiriciler</b> “II ve III” yağın görevini yanlış yorumlayan, “Yalnız II” ise 1. ve 2. tüpleri birlikte değerlendiremeyen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Mayalanmayı inceleyen bir öğrenci dört özdeş şişeye aşağıdaki maddeleri koyuyor ve şişelerin ağzına özdeş boş balonlar geçiriyor. Bir saat sonraki gözlemlerini tabloya yazıyor.</p><div class="tbl"><table>
+<tr><th>Şişe</th><th>İçindekiler</th><th>Su sıcaklığı</th><th>Bir saat sonra balon</th></tr>
+<tr><td>1</td><td>Maya + şeker + su</td><td>35 °C</td><td>Çok şişti.</td></tr>
+<tr><td>2</td><td>Maya + şeker + su</td><td>10 °C</td><td>Biraz şişti.</td></tr>
+<tr><td>3</td><td>Maya + su</td><td>35 °C</td><td>Şişmedi.</td></tr>
+<tr><td>4</td><td>Şeker + su</td><td>35 °C</td><td>Şişmedi.</td></tr>
+</table></div><p>Bu deneyle ilgili;</p><p>I. Balonu şişiren gazın oluşması için hem maya hem şeker gereklidir.<br>
+II. Sıcaklığın mayalanmaya etkisi 1. ve 2. şişeler karşılaştırılarak incelenebilir.<br>
+III. Balonu şişiren gaz yeni oluşan bir madde olduğundan mayalanma kimyasal bir değişimdir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız II", "I ve III", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Şişeler karşılaştırılırken yalnızca bir etkenin farklı olduğu çiftlere bakılır.</p>
+<ul><li><b>I ✓</b> 1. ve 3. şişelerin tek farkı şekerdir (şekersiz şişede balon şişmedi); 1. ve 4. şişelerin tek farkı mayadır (mayasız şişede balon şişmedi). Gaz oluşması için ikisi birlikte gereklidir.</li>
+<li><b>II ✓</b> 1. ve 2. şişelerde yalnızca su sıcaklığı farklıdır.</li>
+<li><b>III ✓</b> 3. ve 4. şişeler de 35 °C’taydı ama balonları şişmedi; demek ki gaz, suyun buharlaşmasından değil maya ile şekerden oluşan yeni bir maddeden (karbondioksit) kaynaklanır. Mayalanma kimyasal değişimdir.</li>
+<li><b>Çeldiriciler</b> “II ve III” 3. ve 4. şişeleri birlikte değerlendirmeyen; “Yalnız II” balonu su buharının şişirdiğini sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Petrokimya tesislerinde ham petrolden plastik boruya kadar uzanan bir üretim zincirinin aşamaları ve her aşamada elde edilen ürünün 1 kilogramının <b>temsilî</b> satış değeri tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Aşama</th><th>Yapılan işlem</th><th>Elde edilen ürün</th><th>1 kg ürünün değeri</th></tr>
+<tr><td>1</td><td>Ham petrol rafineride ısıtılarak kaynama sıcaklıkları farklı bileşenlerine ayrılır.</td><td>Nafta</td><td>0,5 birim</td></tr>
+<tr><td>2</td><td>Nafta yüksek sıcaklıkta parçalanarak yeni bir madde olan etilen gazına dönüştürülür.</td><td>Etilen</td><td>0,9 birim</td></tr>
+<tr><td>3</td><td>Etilen molekülleri birbirine bağlanarak polietilen (plastik) oluşturulur.</td><td>Polietilen granül</td><td>1,3 birim</td></tr>
+<tr><td>4</td><td>Polietilen granüller eritilip kalıplarda boru biçimine getirilir.</td><td>Plastik boru</td><td>2,4 birim</td></tr>
+</table></div><p>Buna göre;</p><p>I. Ham madde işlendikçe elde edilen ürünün 1 kilogramının değeri artmıştır.<br>
+II. Üretim zincirinin bütün aşamalarında kimyasal değişim gerçekleşmiştir.<br>
+III. Plastik boru üretip satmak, aynı miktar naftayı satmaktan daha fazla gelir sağlar.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Kimya endüstrisi ham maddeyi işleyerek değeri daha yüksek ürünlere dönüştürür. Tablodaki işlemlerin bazıları kimyasal, bazıları fiziksel değişimdir.</p>
+<ul><li><b>I ✓</b> 0,5 → 0,9 → 1,3 → 2,4: Her aşamada 1 kg ürünün değeri artmıştır.</li>
+<li><b>II ✗</b> 1. aşamada petrol bileşenlerine ayrılmıştır (yeni madde yok, fiziksel); 4. aşamada plastik eritilip şekillendirilmiştir (fiziksel). Yalnızca 2. ve 3. aşamalarda yeni madde oluşmuştur.</li>
+<li><b>III ✓</b> 1 kg plastik boru 2,4 birim, 1 kg nafta 0,5 birim değerindedir. Ham maddeyi işleyip satmak ülkeye daha fazla gelir sağlar.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” endüstrideki her işlemi kimyasal sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Üç farklı ayracın renkleri, ortamın pH değerine göre aşağıdaki tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Ayraç</th><th>Renkler</th></tr>
+<tr><td>1. ayraç</td><td>pH &lt; 4: kırmızı &nbsp;|&nbsp; pH &gt; 4: sarı</td></tr>
+<tr><td>2. ayraç</td><td>pH &lt; 6: sarı &nbsp;|&nbsp; 6 &lt; pH &lt; 8: yeşil &nbsp;|&nbsp; pH &gt; 8: mavi</td></tr>
+<tr><td>3. ayraç</td><td>pH &lt; 9: renksiz &nbsp;|&nbsp; pH &gt; 9: pembe</td></tr>
+</table></div><p>K, L, M ve N çözeltilerinden alınan örneklere bu ayraçlar ayrı ayrı damlatılıyor ve şu renkler gözleniyor:</p><div class="tbl"><table>
+<tr><th>Çözelti</th><th>1. ayraç</th><th>2. ayraç</th><th>3. ayraç</th></tr>
+<tr><td>K</td><td>sarı</td><td>sarı</td><td>renksiz</td></tr>
+<tr><td>L</td><td>sarı</td><td>yeşil</td><td>renksiz</td></tr>
+<tr><td>M</td><td>sarı</td><td>mavi</td><td>renksiz</td></tr>
+<tr><td>N</td><td>kırmızı</td><td>sarı</td><td>renksiz</td></tr>
+</table></div><p>Buna göre;</p><p>I. L çözeltisi nötrdür.<br>
+II. N’nin pH değeri K’nin pH değerinden küçüktür.<br>
+III. M çözeltisi kırmızı turnusol kâğıdını maviye çevirir.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız II", "I ve III", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Her çözeltinin pH aralığı, üç ayracın sonuçları birleştirilerek bulunur: K: 4 &lt; pH &lt; 6 (asidik); L: 6 &lt; pH &lt; 8; M: 8 &lt; pH &lt; 9 (bazik); N: pH &lt; 4 (asidik).</p>
+<ul><li><b>I ✗</b> L’nin pH’ı 6 ile 8 arasındadır. Bu aralıkta çözelti hafif asidik, nötr ya da hafif bazik olabilir; nötr olduğu kesin değildir.</li>
+<li><b>II ✓</b> N’nin pH’ı 4’ten küçük, K’ninki 4’ten büyüktür.</li>
+<li><b>III ✓</b> M’nin pH’ı 7’den büyüktür; M bazdır ve kırmızı turnusolü maviye çevirir.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” ve “I ve III” yeşil rengi doğrudan “nötr” sanan öğrencinin cevabıdır. 3. ayracın her çözeltide renksiz kalmasına bakıp hepsini asit sanan öğrenci ise III’ü yanlış bulur ve “Yalnız II”ye yönelir.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci beyaz kâğıda farklı sıvılarla harfler yazıp kurutuyor ve gizli mesajlar hazırlıyor. Aynı harfleri aynı sıvılarla iki ayrı kâğıda yazıyor.</p><div class="tbl"><table>
+<tr><th>Harf</th><th>K</th><th>A</th><th>L</th><th>E</th><th>M</th></tr>
+<tr><td>Yazıldığı sıvı</td><td>Limon suyu</td><td>Sabunlu su</td><td>Saf su</td><td>Elma suyu</td><td>Kireç suyu</td></tr>
+</table></div><p>1. kâğıda <b>X ayracı</b>, 2. kâğıda <b>Y ayracı</b> püskürtülüyor.</p><div class="box">• X ayracı: Asidik ve nötr ortamda <b>sarı</b>, bazik ortamda <b>kırmızı</b>.<br>• Y ayracı: Asidik ortamda <b>kırmızı</b>, nötr ve bazik ortamda <b>mavi</b>.<br>Kâğıt nötrdür; sıvılar kuruduktan sonra da asitlik ya da bazlık özelliklerini korur. Bir harf ancak zeminden farklı renk alırsa okunabilir.</div><p>Buna göre kâğıtlarda okunabilen harfler aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["1. kâğıt: A, M — 2. kâğıt: K, E", "1. kâğıt: A, L, M — 2. kâğıt: K, E", "1. kâğıt: K, E — 2. kâğıt: A, M", "1. kâğıt: A, M — 2. kâğıt: K, L, E"],
+  a: "A",
+  s: `<p>Limon suyu ve elma suyu asidik (K, E); sabunlu su ve kireç suyu bazik (A, M); saf su nötrdür (L). Zemin nötr olduğu için 1. kâğıdın zemini sarı, 2. kâğıdın zemini mavi olur.</p><p>1. kâğıt (X): Asidik ve nötr harfler zeminle aynı renkte (sarı) kalır, görünmez. Yalnızca bazik A ve M kırmızı olur ve okunur. 2. kâğıt (Y): Nötr ve bazik harfler zeminle aynı renkte (mavi) kalır. Yalnızca asidik K ve E kırmızı olur ve okunur.</p>
+<ul><li><b>B ✗</b> Saf suyu baz gibi düşünen öğrencinin cevabıdır.</li>
+<li><b>C ✗</b> Ayraçların renklerini ters okuyan öğrencinin cevabıdır.</li>
+<li><b>D ✗</b> Saf suyu asit gibi düşünen öğrencinin cevabıdır. Saf su nötrdür; her iki kâğıtta da zeminle aynı renkte kalır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir çiftçi tarlasının üç bölgesinden K, L ve M toprak örnekleri alıyor ve örnekleri suyla karıştırıp süzdükten sonra bir ayraç damlatıyor. Ayracın renkleri ve sonuçlar aşağıda verilmiştir.</p><div class="tbl"><table>
+<tr><th>pH aralığı</th><th>pH &lt; 5</th><th>5 – 6,5</th><th>6,5 – 7,5</th><th>pH &gt; 7,5</th></tr>
+<tr><td>Ayracın rengi</td><td>Kırmızı</td><td>Turuncu</td><td>Yeşil</td><td>Mavi</td></tr>
+</table></div><div class="tbl"><table>
+<tr><th>Toprak örneği</th><th>K</th><th>L</th><th>M</th></tr>
+<tr><td>Gözlenen renk</td><td>Turuncu</td><td>Kırmızı</td><td>Mavi</td></tr>
+</table></div><div class="tbl"><table>
+<tr><th>Bitki</th><th>Yetiştiği toprağın pH aralığı</th></tr>
+<tr><td>Çay</td><td>4,5 – 5,5</td></tr>
+<tr><td>Buğday</td><td>6 – 7,5</td></tr>
+</table></div><p>Buna göre;</p><p>I. L bölgesinin toprağı, pH değeri artırılmadan buğday yetiştirmeye uygun değildir.<br>
+II. K ve L bölgelerinin toprakları asidiktir.<br>
+III. M bölgesinde çay yetiştirmek için toprağa sönmüş kireç eklenmelidir.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Renklere göre K: 5 &lt; pH &lt; 6,5; L: pH &lt; 5; M: pH &gt; 7,5.</p>
+<ul><li><b>I ✓</b> L’nin pH’ı 5’ten küçüktür; buğday için en az 6 olmalıdır. Önce pH artırılmalıdır (örneğin bazik bir maddeyle).</li>
+<li><b>II ✓</b> K’nin pH’ı 6,5’ten, L’ninki 5’ten küçüktür; ikisi de 7’nin altındadır, yani asidiktir.</li>
+<li><b>III ✗</b> M’nin pH’ı 7,5’ten büyüktür; çay için pH’ın düşürülmesi gerekir. Sönmüş kireç bazdır, pH’ı daha da yükseltir. Toprağa asidik bir madde eklenmelidir.</li>
+<li><b>Çeldiriciler</b> “I ve III” ve “II ve III” kirecin toprağa her durumda iyi geldiğini düşünen ya da pH’ı düşürmek için baz gerektiğini sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, mide yanmasında kullanılan bir ilaç tabletinin etkisini incelemek için beş özdeş behere eşit hacimde aynı hidroklorik asit çözeltisinden koyuyor. Beherlere sırasıyla 0, 1, 2, 3 ve 4 tablet ekliyor; tepkime bittikten sonra her beherdeki karışımın pH değerini ölçüyor.</p><div class="fig"><svg viewBox="0 0 520 282" width="520" role="img" aria-label="Eklenen tablet sayısına göre pH: 0 tablet 1,5; 1 tablet 2,5; 2 tablet 4; 3 tablet 7; 4 tablet 8,5" font-size="12" fill="#1e293b" text-anchor="middle"><line x1="80" y1="230" x2="475.2" y2="230" stroke="#1e293b" stroke-width="2"/><polygon points="480.0,230.0 472.8,233.5 472.8,226.5" fill="#1e293b"/><line x1="80" y1="230" x2="80" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="80.0,26.0 83.5,33.2 76.5,33.2" fill="#1e293b"/><line x1="76" y1="194" x2="460" y2="194" stroke="#e2e8f0" stroke-width="1"/><text x="72" y="198" text-anchor="end">2</text><line x1="76" y1="158" x2="460" y2="158" stroke="#e2e8f0" stroke-width="1"/><text x="72" y="162" text-anchor="end">4</text><line x1="76" y1="122" x2="460" y2="122" stroke="#e2e8f0" stroke-width="1"/><text x="72" y="126" text-anchor="end">6</text><line x1="76" y1="86" x2="460" y2="86" stroke="#e2e8f0" stroke-width="1"/><text x="72" y="90" text-anchor="end">8</text><line x1="76" y1="50" x2="460" y2="50" stroke="#e2e8f0" stroke-width="1"/><text x="72" y="54" text-anchor="end">10</text><text x="72" y="234" text-anchor="end">0</text><rect x="110" y="203" width="40" height="27" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2"/><text x="130" y="197" font-weight="bold">1,5</text><text x="130" y="248" font-weight="bold">0</text><rect x="182" y="185" width="40" height="45" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2"/><text x="202" y="179" font-weight="bold">2,5</text><text x="202" y="248" font-weight="bold">1</text><rect x="254" y="158" width="40" height="72" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2"/><text x="274" y="152" font-weight="bold">4,0</text><text x="274" y="248" font-weight="bold">2</text><rect x="326" y="104" width="40" height="126" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2"/><text x="346" y="98" font-weight="bold">7,0</text><text x="346" y="248" font-weight="bold">3</text><rect x="398" y="77" width="40" height="153" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2"/><text x="418" y="71" font-weight="bold">8,5</text><text x="418" y="248" font-weight="bold">4</text><text x="280" y="268" font-weight="bold">Eklenen tablet sayısı</text><text x="74" y="20" text-anchor="start" font-weight="bold">pH</text></svg></div><p>Buna göre;</p><p>I. Eklenen tablet sayısı arttıkça beherlerdeki karışımın asitliği artmıştır.<br>
+II. 3 tablet eklenen beherdeki karışım nötrdür.<br>
+III. 4 tablet eklenen beherdeki karışım mavi turnusol kâğıdını kırmızıya çevirir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Tablet eklendikçe pH 1,5’ten 8,5’e yükselmiştir: Tablet bazik özellik gösterir ve asidi nötrleştirir.</p>
+<ul><li><b>I ✗</b> pH değeri arttıkça asitlik <b>azalır</b>. Tablet sayısı arttıkça karışımın asitliği azalmıştır.</li>
+<li><b>II ✓</b> 3 tablet eklenen beherde pH = 7’dir; karışım nötrdür.</li>
+<li><b>III ✗</b> 4 tablet eklenen beherde pH 8,5’tir; karışım baziktir. Bazlar mavi turnusolün rengini değiştirmez, kırmızı turnusolü maviye çevirir.</li>
+<li><b>Çeldiriciler</b> “I ve III” pH arttıkça asitliğin de arttığını sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Asit ve bazların bazı maddelere etkisini inceleyen bir öğrenci dört deney yapıyor.</p><div class="tbl"><table>
+<tr><th>Deney</th><th>Yapılan işlem</th><th>Gözlem</th></tr>
+<tr><td>1</td><td>Çinko levha seyreltik hidroklorik asit çözeltisine konuyor.</td><td>Gaz kabarcıkları çıkıyor, levha aşınıyor.</td></tr>
+<tr><td>2</td><td>Bakır levha seyreltik hidroklorik asit çözeltisine konuyor.</td><td>Bir değişim gözlenmiyor.</td></tr>
+<tr><td>3</td><td>Mermer parçasının üzerine sirke dökülüyor.</td><td>Köpürme ve gaz çıkışı oluyor, mermerin yüzeyi aşınıyor.</td></tr>
+<tr><td>4</td><td>Demir çivi sabunlu suda bir gün bekletiliyor.</td><td>Bir değişim gözlenmiyor.</td></tr>
+</table></div><p>Bu deneylerden;</p><p>I. Asitler bütün metalleri aşındırır.<br>
+II. Bazlar metalleri aşındırmaz.<br>
+III. Mermer tezgâhlar sirkeyle temizlenmemelidir.</p><p>sonuçlarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "Yalnız III", "II ve III"],
+  a: "C",
+  s: `<p>Bir deneyden yalnızca o deneyin gösterdiği sonuca ulaşılabilir; az sayıda gözlemle genelleme yapılmaz.</p>
+<ul><li><b>I ✗</b> 2. deneyde bakır seyreltik asitte aşınmamıştır. “Bütün metaller” genellemesi bu deneylerle çürütülür.</li>
+<li><b>II ✗</b> Yalnızca bir metal (demir) ve bir baz (sabunlu su) bir gün boyunca denenmiştir. Bu tek gözlemden bütün bazlar ve bütün metaller için sonuç çıkarılamaz (kuvvetli bazlar alüminyum, çinko gibi bazı metalleri aşındırabilir).</li>
+<li><b>III ✓</b> 3. deneyde asidik sirke mermeri aşındırmıştır; mermer yüzeyler sirke gibi asidik maddelerle temizlenmemelidir.</li>
+<li><b>Çeldiriciler</b> “II ve III” tek bir gözlemden genelleme yapan, “Yalnız I” ise 1. deneyi bütün metallere genelleyen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Etiketleri düşmüş iki şişedeki X ve Y sıvılarıyla aşağıdaki deneyler yapılıyor.</p><div class="tbl"><table>
+<tr><th>Sıvı</th><th>Deney</th><th>Gözlem</th></tr>
+<tr><td>X</td><td>Çinko parçası ekleniyor.</td><td>Gaz çıkıyor; gaza yanan kibrit yaklaştırılınca “pat” sesi duyuluyor.</td></tr>
+<tr><td>X</td><td>Mermer tozu ekleniyor.</td><td>Gaz çıkıyor; gaz kireç suyundan geçirilince kireç suyu bulanıklaşıyor.</td></tr>
+<tr><td>Y</td><td>Kırmızı turnusol kâğıdı batırılıyor.</td><td>Kâğıt maviye dönüyor.</td></tr>
+<tr><td>Y</td><td>Mermer tozu ekleniyor.</td><td>Bir değişim gözlenmiyor.</td></tr>
+</table></div><p>Hidrojen gazının yanan kibritle “pat” sesi çıkardığı, karbondioksit gazının ise kireç suyunu bulanıklaştırdığı bilinmektedir.</p><p>Buna göre;</p><p>I. X’in çinko ve mermer tozuyla tepkimelerinde aynı gaz oluşmuştur.<br>
+II. X’in pH değeri 7’den küçüktür.<br>
+III. Y, suda OH⁻ iyonu oluşturan bir maddedir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "D",
+  s: `<p>X hem metali (çinko) hem mermeri aşındırıp gaz çıkardığına göre asittir. Y kırmızı turnusolü maviye çevirdiğine göre bazdır.</p>
+<ul><li><b>I ✗</b> Çinkoyla oluşan gaz “pat” sesi çıkardığı için hidrojendir; mermerle oluşan gaz kireç suyunu bulanıklaştırdığı için karbondioksittir. Gazlar farklıdır.</li>
+<li><b>II ✓</b> X asit olduğu için pH’ı 7’den küçüktür.</li>
+<li><b>III ✓</b> Bazlar suda OH⁻ (hidroksit) iyonu oluşturur.</li>
+<li><b>Çeldiriciler</b> “I ve II” ve “I ve III”, asidin her tepkimesinde aynı gazın çıktığını düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki şemada asit yağmurlarının oluşumu ve etkilediği bazı yerler gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 500 270" width="500" role="img" aria-label="Asit yağmurunun oluşumu ve etkileri şeması" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="20" y="170" width="90" height="60" fill="#e2e8f0" stroke="#475569" stroke-width="1.3"/><rect x="70" y="100" width="18" height="70" fill="#cbd5e1" stroke="#475569" stroke-width="1.3"/><circle cx="84" cy="88" r="9" fill="#94a3b8" stroke="#64748b" stroke-width="1"/><circle cx="100" cy="74" r="11" fill="#94a3b8" stroke="#64748b" stroke-width="1"/><circle cx="116" cy="60" r="13" fill="#94a3b8" stroke="#64748b" stroke-width="1"/><text x="65" y="248">Fabrika, santral,</text><text x="65" y="262">taşıtlar</text><text x="170" y="120" font-weight="bold">SO₂, azot oksitler</text><line x1="130" y1="76" x2="245.3" y2="56.8" stroke="#1e293b" stroke-width="2"/><polygon points="250.0,56.0 243.5,60.6 242.3,53.8" fill="#1e293b"/><circle cx="300" cy="52" r="26" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="0.1"/><circle cx="330" cy="40" r="30" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="0.1"/><circle cx="362" cy="52" r="26" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="0.1"/><circle cx="330" cy="62" r="24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="0.1"/><text x="330" y="56" font-weight="bold">Bulut</text><text x="330" y="106">Gazlar su ile tepkimeye girer</text><line x1="300" y1="120" x2="294" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="312" y1="120" x2="306" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="324" y1="120" x2="318" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="336" y1="120" x2="330" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="348" y1="120" x2="342" y2="140" stroke="#2563eb" stroke-width="2"/><line x1="360" y1="120" x2="354" y2="140" stroke="#2563eb" stroke-width="2"/><text x="330" y="160" font-size="13" fill="#1d4ed8" font-weight="bold">Asit yağmuru</text><rect x="230" y="200" width="70" height="26" rx="12" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.2"/><text x="265" y="244">Göl</text><rect x="330" y="190" width="22" height="36" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/><circle cx="341" cy="182" r="9" fill="#f1f5f9" stroke="#475569" stroke-width="1.2"/><text x="341" y="244">Mermer heykel</text><polygon points="430,226 450,170 470,226" fill="#86efac" stroke="#166534" stroke-width="1.2"/><text x="450" y="244">Orman</text><line x1="330" y1="170" x2="270" y2="196" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/><line x1="340" y1="170" x2="341" y2="172" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/><line x1="350" y1="170" x2="440" y2="180" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/></svg></div><p>Buna göre;</p><p>I. Bacalara filtre takılması ve kükürt oranı düşük yakıt kullanılması, asit yağmurlarının oluşumunu azaltır.<br>
+II. Asitleşen bir göle kireç atılması göldeki asitliği azaltır, ancak asit yağmurlarının oluşmasını engellemez.<br>
+III. Asit yağmuru mermer heykeli aşındırırken heykelde yalnızca fiziksel değişim gerçekleşir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Asit yağmuru, fosil yakıtlardan havaya karışan kükürt dioksit ve azot oksitlerin bulutlardaki suyla tepkimeye girmesiyle oluşur.</p>
+<ul><li><b>I ✓</b> Filtre ve az kükürtlü yakıt, havaya karışan gazların miktarını azaltır; asit yağmuru kaynağında önlenir.</li>
+<li><b>II ✓</b> Kireç bazik özellik gösterir ve göldeki asidi nötrleştirir. Ama bu, zararı sonradan azaltmaktır; havaya karışan gazları ve yağmurun oluşmasını etkilemez.</li>
+<li><b>III ✗</b> Asit, mermerdeki kalsiyum karbonatla tepkimeye girer ve karbondioksit gazı çıkar; yeni maddeler oluştuğu için bu bir <b>kimyasal</b> değişimdir.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” aşınmayı kırılma ya da ufalanma gibi düşünen, “Yalnız I” ise göle kireç atmanın da yağmuru önlediğini sanıp II’nin ikinci kısmına itiraz eden öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir göldeki suyun pH değeri yıllar boyunca ölçülmüştür. 2022 ölçümünden sonra göle sönmüş kireç atılarak <b>kireçleme</b> yapılmıştır. Ölçüm sonuçları grafikte, göldeki üç sucul bitki türünün yaşayabildiği en düşük pH değerleri ise tabloda verilmiştir.</p><div class="fig"><svg viewBox="0 0 520 270" width="520" role="img" aria-label="Göl suyunun pH değeri: 2016 6,4; 2018 5,8; 2020 5,2; 2022 4,8; 2024 6,2. 2022 ile 2024 arasında kireçleme" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,10)"><line x1="70" y1="220" x2="485.2" y2="220" stroke="#1e293b" stroke-width="2"/><polygon points="490.0,220.0 482.8,223.5 482.8,216.5" fill="#1e293b"/><line x1="70" y1="220" x2="70" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,26.0 73.5,33.2 66.5,33.2" fill="#1e293b"/><line x1="66" y1="191.7" x2="470" y2="191.7" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="195.7" text-anchor="end">4,5</text><line x1="66" y1="163.3" x2="470" y2="163.3" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="167.3" text-anchor="end">5,0</text><line x1="66" y1="135" x2="470" y2="135" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="139" text-anchor="end">5,5</text><line x1="66" y1="106.7" x2="470" y2="106.7" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="110.7" text-anchor="end">6,0</text><line x1="66" y1="78.3" x2="470" y2="78.3" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="82.3" text-anchor="end">6,5</text><line x1="66" y1="50" x2="470" y2="50" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="54" text-anchor="end">7,0</text><line x1="100" y1="220" x2="100" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="100" y="238">2016</text><line x1="185" y1="220" x2="185" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="185" y="238">2018</text><line x1="270" y1="220" x2="270" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="270" y="238">2020</text><line x1="355" y1="220" x2="355" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="355" y="238">2022</text><line x1="440" y1="220" x2="440" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="440" y="238">2024</text><polyline points="100,84 185,118 270,152 355,174.7 440,95.3" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><circle cx="100" cy="84" r="4" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="100" y="74" font-weight="bold">6,4</text><circle cx="185" cy="118" r="4" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="185" y="108" font-weight="bold">5,8</text><circle cx="270" cy="152" r="4" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="270" y="142" font-weight="bold">5,2</text><circle cx="355" cy="174.7" r="4" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="355" y="164.7" font-weight="bold">4,8</text><circle cx="440" cy="95.3" r="4" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><text x="440" y="85.3" font-weight="bold">6,2</text><line x1="397.5" y1="220" x2="397.5" y2="50" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 4"/><text x="397.5" y="44" fill="#b91c1c" font-weight="bold">Kireçleme</text><text x="488" y="254" text-anchor="end" font-weight="bold">Yıl</text><text x="66" y="20" text-anchor="start" font-weight="bold">Göl suyunun pH değeri</text></g></svg></div><div class="tbl"><table>
+<tr><th>Bitki türü</th><th>X</th><th>Y</th><th>Z</th></tr>
+<tr><td>Yaşayabildiği en düşük pH</td><td>6,0</td><td>5,5</td><td>4,5</td></tr>
+</table></div><p>Buna göre;</p><p>I. 2016’dan 2022’ye kadar göl suyunun asitliği artmıştır.<br>
+II. 2022 ölçümünde göl suyu bu türlerden yalnızca Z’nin yaşamasına uygundur.<br>
+III. Kireçlemeden sonraki 2024 ölçümünde göl suyu üç türün de yaşamasına uygundur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Grafikte pH 2016’dan 2022’ye 6,4 → 4,8 düşmüş, kireçlemeden sonra 2024’te 6,2’ye yükselmiştir.</p>
+<ul><li><b>I ✓</b> pH değeri azaldıkça asitlik artar. 2016-2022 arasında pH sürekli azalmıştır.</li>
+<li><b>II ✓</b> 2022’de pH 4,8’dir. Z (4,5) yaşayabilir; Y (5,5) ve X (6,0) yaşayamaz.</li>
+<li><b>III ✓</b> 2024’te pH 6,2’dir; bu değer üç türün en düşük sınırından da (6,0; 5,5; 4,5) büyüktür. Bazik özellik gösteren kireç gölün asitliğini azaltmıştır.</li>
+<li><b>Çeldiriciler</b> “II ve III” pH azaldıkça asitliğin de azaldığını sanan öğrencinin cevabıdır. “I ve II” ise 6,2 ile 6,0’ı karşılaştırırken dikkatsizlik yapan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Isıca yalıtılmış bir kapta <b>80 °C</b>’taki K sıvısı ile <b>20 °C</b>’taki L sıvısı karıştırılıyor. K ve L farklı sıvılardır; tepkimeye girmiyorlar ve hâl değiştirmiyorlar. Isıl denge sağlandığında karışımın sıcaklığı <b>60 °C</b> oluyor.</p><p>Buna göre;</p><p>I. K’nin verdiği ısı, L’nin aldığı ısıya eşittir.<br>
+II. K’nin kütlesi L’nin kütlesinden büyüktür.<br>
+III. K’nin sıcaklık değişimi L’nin sıcaklık değişiminden küçüktür.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Yalıtılmış kapta sıcak sıvının verdiği ısı soğuk sıvının aldığı ısıya eşittir. Bir maddenin alıp verdiği ısı kütlesine, cinsine (öz ısısına) ve sıcaklık değişimine bağlıdır.</p>
+<ul><li><b>I ✓</b> Isı yalnızca iki sıvı arasında aktarılmıştır: verilen ısı = alınan ısı.</li>
+<li><b>III ✓</b> K’nin sıcaklığı 80 − 60 = 20 °C, L’ninki 60 − 20 = 40 °C değişmiştir.</li>
+<li><b>II ✗</b> Eşit ısıda K’nin sıcaklığı daha az değiştiğine göre K’nin “kütle × öz ısı” değeri daha büyüktür. Bu, K’nin kütlesinin büyük olmasından da öz ısısının büyük olmasından da kaynaklanabilir. Sıvılar farklı olduğu için kütle karşılaştırması kesin değildir.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” sıvıları aynı madde gibi düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Hâl değişimi olmadan K ve L sıvılarına özdeş ısıtıcılarla <b>eşit miktarda ısı</b> veriliyor. K’nin sıcaklığının L’nin sıcaklığından <b>daha fazla</b> arttığı gözleniyor.</p><p>Buna göre;</p><p>I. K’nin öz ısısı L’nin öz ısısından küçüktür.<br>
+II. K ile L’nin kütleleri eşitse K’nin öz ısısı L’ninkinden küçüktür.<br>
+III. K ile L aynı madde ise kütleleri eşittir.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Eşit ısı alan iki maddeden “kütle × öz ısı” değeri küçük olanın sıcaklığı daha çok artar.</p>
+<ul><li><b>I ✗</b> K’nin daha çok ısınması kütlesinin küçük olmasından da kaynaklanabilir. Kütleler bilinmeden öz ısılar karşılaştırılamaz.</li>
+<li><b>II ✓</b> Kütleler eşitse sıcaklık artışındaki farkı yalnızca öz ısı açıklar: K’nin öz ısısı küçüktür.</li>
+<li><b>III ✗</b> Aynı madde ise öz ısılar eşittir; eşit ısıyla daha çok ısınan K’nin kütlesi L’ninkinden <b>küçüktür</b>. Kütleler eşit olsaydı sıcaklık artışları da eşit olurdu.</li>
+<li><b>Çeldiriciler</b> “I ve III” ve “Yalnız I”, sıcaklık artışını yalnızca öz ısıya bağlayan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Isıca yalıtılmış bir ortamda katı K ve L cisimleri birbirine dokunduruluyor ve ısıl denge sağlanıncaya kadar bekleniyor. Bu sırada L’nin sıcaklığının arttığı gözleniyor. Ardından L, aynı ortamdaki katı M cismine dokunduruluyor ve yine ısıl denge sağlanıncaya kadar bekleniyor; bu sırada M’nin sıcaklığının azaldığı gözleniyor. Hâl değişimi olmuyor.</p><p>Buna göre;</p><p>I. M’nin ilk sıcaklığı, L’nin ilk sıcaklığından büyüktür.<br>
+II. K’nin ilk sıcaklığı, M’nin ilk sıcaklığından büyüktür.<br>
+III. İlk temasta K’nin verdiği ısı, L’nin aldığı ısıdan fazladır.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "A",
+  s: `<p>Isı her zaman sıcaklığı yüksek olandan düşük olana akar. İlk temasta L ısınmıştır: K’nin ilk sıcaklığı L’ninkinden büyüktür ve L’nin yeni sıcaklığı ilk sıcaklığından büyüktür. İkinci temasta M soğumuştur: M’nin ilk sıcaklığı L’nin yeni sıcaklığından büyüktür.</p>
+<ul><li><b>I ✓</b> M’nin ilk sıcaklığı &gt; L’nin yeni sıcaklığı &gt; L’nin ilk sıcaklığı.</li>
+<li><b>II ✗</b> K ve M’nin ilk sıcaklıkları ikisi de L’nin sıcaklıklarından büyüktür, ama birbirleriyle karşılaştırılamaz.</li>
+<li><b>III ✗</b> Ortam yalıtılmış olduğundan K’nin verdiği ısı L’nin aldığı ısıya eşittir.</li>
+<li><b>Çeldiriciler</b> “I ve II” ısının hep aynı yönde, K’den M’ye doğru bir sıra izlediğini sanan; “I ve III” ise ısının bir kısmının kaybolduğunu düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Alüminyum folyoya sarılı patatesler fırında ısıl dengeye gelinceye kadar bekletiliyor. Fırından çıkarıldıktan birkaç saniye sonra folyo elle tutulabiliyor, ama patatesin içi hâlâ ağzı yakacak kadar sıcak kalıyor.</p><div class="box">Alüminyumun öz ısısı yaklaşık 0,9 J/g·°C, suyun öz ısısı yaklaşık 4,2 J/g·°C’tır. Patatesin büyük kısmı sudur.</div><p>Bu durumla ilgili;</p><p>I. Folyonun kütlesi çok küçük olduğu için soğurken çevresine verebileceği ısı azdır.<br>
+II. Fırından çıkarıldıkları anda folyonun ve patatesin sıcaklıkları eşittir.<br>
+III. Folyonun öz ısısı patatesinkinden büyük olduğu için folyo çabuk soğur.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Sıcaklık ile ısı farklı kavramlardır. Aynı sıcaklıktaki iki maddeden kütlesi ve öz ısısı küçük olan daha az ısı verir ve daha çabuk soğur.</p>
+<ul><li><b>I ✓</b> İnce folyonun kütlesi çok küçüktür; aynı sıcaklık düşüşünde verdiği ısı azdır. Bu yüzden ele aktardığı ısı yakmaya yetmez ve çabuk soğur.</li>
+<li><b>II ✓</b> Folyo ve patates aynı fırında ısıl dengeye geldiği için fırından çıktıkları anda sıcaklıkları eşittir. Folyonun elle tutulabilmesi sıcaklığının baştan düşük olduğunu göstermez.</li>
+<li><b>III ✗</b> Verilen bilgiye göre alüminyumun öz ısısı suyunkinden küçüktür. Öz ısısı büyük olan madde geç soğur; patates bu yüzden uzun süre sıcak kalır.</li>
+<li><b>Çeldiriciler</b> “II ve III” öz ısının etkisini ters yorumlayan, “Yalnız I” ise folyonun fırından daha soğuk çıktığını sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Özdeş ısıtıcılarla yapılan deneylerin sonuçları tabloda verilmiştir. Deneylerde hâl değişimi olmuyor ve ısı alışverişi yalnızca ısıtıcı ile sıvı arasında gerçekleşiyor.</p><div class="tbl"><table>
+<tr><th>Deney</th><th>Sıvı</th><th>Kütle</th><th>İlk sıcaklık</th><th>Son sıcaklık</th><th>Isıtma süresi</th></tr>
+<tr><td>1</td><td>Su</td><td>100 g</td><td>20 °C</td><td>40 °C</td><td>4 dk</td></tr>
+<tr><td>2</td><td>Su</td><td>200 g</td><td>20 °C</td><td>30 °C</td><td><b>a</b></td></tr>
+<tr><td>3</td><td>Y sıvısı</td><td>100 g</td><td>20 °C</td><td>40 °C</td><td>2 dk</td></tr>
+<tr><td>4</td><td>Y sıvısı</td><td>300 g</td><td>20 °C</td><td><b>b</b></td><td>6 dk</td></tr>
+<tr><td>5</td><td>Su</td><td>50 g</td><td>30 °C</td><td><b>c</b></td><td>3 dk</td></tr>
+</table></div><p>Buna göre tablodaki <b>a, b</b> ve <b>c</b> yerine aşağıdakilerden hangisi yazılmalıdır?</p>`,
+  c: ["a: 4 dk, b: 40 °C, c: 60 °C", "a: 8 dk, b: 40 °C, c: 60 °C", "a: 4 dk, b: 80 °C, c: 60 °C", "a: 4 dk, b: 40 °C, c: 45 °C"],
+  a: "A",
+  s: `<p>Özdeş ısıtıcılar eşit sürede eşit ısı verir; ısıtma süresi verilen ısıyı gösterir. Bir maddenin aldığı ısı kütlesi ve sıcaklık artışıyla doğru orantılıdır (Q ∝ m · c · ΔT).</p>
+<ul><li><b>a</b> 1. deneyde 100 g su 20 °C ısınmak için 4 dk ısıtılmıştır. 2. deneyde kütle 2 katı, sıcaklık artışı yarısı (10 °C) → gereken ısı 2 × {{1|2}} = 1 katı → <b>4 dk</b>.</li>
+<li><b>b</b> 3. deneyde 100 g Y’nin 20 °C ısınması 2 dk sürmüştür. 300 g Y için 20 °C ısınma 3 × 2 = 6 dk sürer → son sıcaklık 20 + 20 = <b>40 °C</b>.</li>
+<li><b>c</b> 100 g su 4 dakikada 20 °C ısınıyorsa 50 g su 2 dakikada 20 °C ısınır; 3 dakikada 30 °C ısınır → 30 + 30 = <b>60 °C</b>.</li>
+<li><b>Çeldiriciler</b> B (a = 8 dk) sıcaklık artışının yarıya indiğini unutup yalnızca kütleye bakan, C (b = 80 °C) kütlenin 3 katına çıktığını unutan, D (c = 45 °C) kütlenin yarıya indiğini hesaba katmayan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci “Isınma maddenin cinsine bağlı mıdır?” sorusunu araştırmak için aşağıdaki düzenekleri hazırlıyor. Kapları özdeş ısıtıcılarla 5 dakika ısıtıp sıvıların <b>son sıcaklıklarını</b> karşılaştırıyor ve “Maddenin cinsi ısınmayı etkiler.” sonucuna varıyor.</p><div class="tbl"><table>
+<tr><th>Kap</th><th>Sıvı</th><th>Kütle</th><th>İlk sıcaklık</th><th>Isıtıcı sayısı</th><th>Isıtma süresi</th></tr>
+<tr><td>1</td><td>Su</td><td>100 g</td><td>20 °C</td><td>1</td><td>5 dk</td></tr>
+<tr><td>2</td><td>Zeytinyağı</td><td>150 g</td><td>30 °C</td><td>1</td><td>5 dk</td></tr>
+</table></div><p>Öğretmeni deney düzeneğinin bu sonuca varmak için uygun olmadığını söylüyor. Buna göre öğrencinin aşağıdaki değişikliklerden hangisini yapması gerekir?</p>`,
+  c: ["Yalnızca 2. kaptaki zeytinyağının kütlesini 100 g yapmalıdır.", "2. kaba zeytinyağı yerine 30 °C’ta 150 g su koymalıdır.", "2. kaptaki zeytinyağının kütlesini 100 g, ilk sıcaklığını 20 °C yapmalıdır.", "2. kaptaki zeytinyağını iki özdeş ısıtıcıyla 5 dakika ısıtmalıdır."],
+  a: "C",
+  s: `<p>Bir etkenin (burada maddenin cinsi) etkisini görmek için iki düzenek arasında <b>yalnızca o etken</b> farklı olmalıdır. Bu düzeneklerde cinsle birlikte kütle (100 g – 150 g) ve ilk sıcaklık (20 °C – 30 °C) da farklıdır. Son sıcaklıklar karşılaştırıldığı için ilk sıcaklığın farklı olması sonucu doğrudan etkiler.</p>
+<ul><li><b>A ✗</b> Kütle eşitlenir ama ilk sıcaklık farkı kalır; son sıcaklıklardaki fark yine cinse bağlanamaz.</li>
+<li><b>B ✗</b> İki kapta da su olur; araştırılan değişken (cins) ortadan kalkar.</li>
+<li><b>C ✓</b> Kütle ve ilk sıcaklık eşitlenir; kaplar arasında yalnızca sıvının cinsi farklı kalır.</li>
+<li><b>D ✗</b> Verilen ısı da farklı hâle gelir; değişken sayısı artar.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir kaptaki saf su, bir ısıtıcıyla ısıtılıyor ve suyun sıcaklığı ölçülüyor. 4. dakikada kapla ilgili bir işlem yapılıyor. Elde edilen sıcaklık-zaman grafiği aşağıdadır.</p><div class="fig"><svg viewBox="0 0 520 278" width="520" role="img" aria-label="Suyun sıcaklık-zaman grafiği: 0-4 dakika 20'den 30 °C'a, 4-8 dakika 30'dan 50 °C'a" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="220" x2="469.2" y2="220" stroke="#1e293b" stroke-width="2"/><polygon points="474.0,220.0 466.8,223.5 466.8,216.5" fill="#1e293b"/><line x1="70" y1="220" x2="70" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,26.0 73.5,33.2 66.5,33.2" fill="#1e293b"/><text x="474" y="254" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="20" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="191.7" x2="450" y2="191.7" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="195.7" text-anchor="end">10</text><line x1="66" y1="163.3" x2="450" y2="163.3" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="167.3" text-anchor="end">20</text><line x1="66" y1="135" x2="450" y2="135" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="139" text-anchor="end">30</text><line x1="66" y1="106.7" x2="450" y2="106.7" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="110.7" text-anchor="end">40</text><line x1="66" y1="78.3" x2="450" y2="78.3" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="82.3" text-anchor="end">50</text><line x1="66" y1="50" x2="450" y2="50" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="54" text-anchor="end">60</text><line x1="165" y1="220" x2="165" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="165" y="238">2</text><line x1="260" y1="220" x2="260" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="260" y="238">4</text><line x1="355" y1="220" x2="355" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="355" y="238">6</text><line x1="450" y1="220" x2="450" y2="224" stroke="#1e293b" stroke-width="1.5"/><text x="450" y="238">8</text><polyline points="70,163.3 260,135 450,78.3" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><line x1="260" y1="220" x2="260" y2="135" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/></g></svg></div><p>Isı alışverişi yalnızca ısıtıcılar ile su arasında olduğuna ve hâl değişimi olmadığına göre, 4. dakikada;</p><p>I. Kaba, ilk ısıtıcıyla özdeş ikinci bir ısıtıcı eklenmiştir.<br>
+II. Kaptaki suyun yarısı başka bir kaba alınmıştır.<br>
+III. Kaba, kaptaki su kadar 30 °C’ta su eklenmiştir.</p><p>işlemlerinden hangileri <b>yapılmış olabilir</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>0-4. dakikalarda sıcaklık dakikada 10 ÷ 4 = 2,5 °C, 4-8. dakikalarda dakikada 20 ÷ 4 = 5 °C artmıştır. Sıcaklık artış hızı <b>2 katına</b> çıkmıştır. Birim zamanda verilen ısı ile kütle oranı 2 katına çıkmalıdır.</p>
+<ul><li><b>I ✓</b> Isıtıcı sayısı 2 olursa aynı kütleye birim zamanda 2 kat ısı verilir; sıcaklık 2 kat hızlı artar.</li>
+<li><b>II ✓</b> Kütle yarıya inerse aynı ısıtıcıyla sıcaklık 2 kat hızlı artar.</li>
+<li><b>III ✗</b> Aynı sıcaklıkta eşit kütlede su eklenirse kütle 2 katına çıkar; sıcaklık yarı hızla artar, grafiğin eğimi azalırdı.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” su eklemenin ısınmayı hızlandıracağını sanan, “Yalnız I” ise kütlenin azalmasının da aynı sonucu doğurduğunu fark etmeyen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Kütleleri eşit, katı hâldeki saf K ve L maddeleri özdeş ısıtıcılarla ısıtılıyor. Maddelerin sıcaklık-zaman grafikleri aşağıda verilmiştir.</p><div class="fig"><svg viewBox="0 0 520 290" width="520" role="img" aria-label="K ve L'nin ısınma grafikleri: K 0-4 dk 10'dan 50 °C'a, 4-12 dk 50 °C'ta sabit, 12-16 dk 70 °C'a; L 0-4 dk 10'dan 30 °C'a, 4-8 dk 30 °C'ta sabit, 8-16 dk 70 °C'a" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="230" x2="489.2" y2="230" stroke="#1e293b" stroke-width="2"/><polygon points="494.0,230.0 486.8,233.5 486.8,226.5" fill="#1e293b"/><line x1="70" y1="230" x2="70" y2="20.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,16.0 73.5,23.2 66.5,23.2" fill="#1e293b"/><text x="494" y="264" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="10" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="206.2" x2="470" y2="206.2" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="210.2" text-anchor="end">10</text><line x1="66" y1="158.8" x2="470" y2="158.8" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="162.8" text-anchor="end">30</text><line x1="66" y1="111.2" x2="470" y2="111.2" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="115.2" text-anchor="end">50</text><line x1="66" y1="63.8" x2="470" y2="63.8" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="67.8" text-anchor="end">70</text><line x1="170" y1="230" x2="170" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="170" y="248">4</text><line x1="270" y1="230" x2="270" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="270" y="248">8</text><line x1="370" y1="230" x2="370" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="370" y="248">12</text><line x1="470" y1="230" x2="470" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="470" y="248">16</text><polyline points="70,206.2 170,111.2 370,111.2 470,63.8" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><polyline points="70,206.2 170,158.8 270,158.8 470,63.8" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="8 4"/><line x1="170" y1="230" x2="170" y2="204.2" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="270" y1="230" x2="270" y2="204.2" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="370" y1="230" x2="370" y2="204.2" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><text x="270" y="101.2" font-size="14" fill="#2563eb" font-weight="bold">K</text><text x="220" y="178.8" font-size="14" fill="#dc2626" font-weight="bold">L</text></g></svg></div><p>Buna göre;</p><p>I. Katı hâldeyken öz ısısı büyük olan madde L’dir.<br>
+II. Erime sıcaklığındaki 1 g K’yi tamamen eritmek için gereken ısı, 1 g L’yi eritmek için gereken ısıdan fazladır.<br>
+III. K ve L’nin sıvı hâldeki öz ısıları eşittir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Özdeş ısıtıcılar eşit sürede eşit ısı verir ve kütleler eşittir. Bu yüzden eşit sürede sıcaklığı daha az artan maddenin öz ısısı daha büyüktür; hâl değişimi daha uzun süren maddenin 1 gramı için daha fazla ısı gerekir.</p>
+<ul><li><b>I ✓</b> 0-4. dakikalarda K’nin sıcaklığı 40 °C, L’ninki 20 °C artmıştır. Eşit ısıyla daha az ısınan L’nin öz ısısı büyüktür.</li>
+<li><b>II ✓</b> K’nin erimesi 8 dk (4-12), L’ninki 4 dk (4-8) sürmüştür. Kütleler eşit olduğundan 1 g K’yi eritmek için 2 kat ısı gerekir.</li>
+<li><b>III ✓</b> Sıvı K 4 dakikada 20 °C (12-16. dk), sıvı L 8 dakikada 40 °C (8-16. dk) ısınmıştır; ikisi de dakikada 5 °C. Eşit kütle ve eşit ısıda eşit ısınma, öz ısıların eşit olduğunu gösterir.</li>
+<li><b>Çeldiriciler</b> “I ve II” sıvı bölümdeki eğimleri karşılaştırmayan öğrencinin cevabıdır. Erime süresini erime sıcaklığıyla karıştıran öğrenci ise II’yi yanlış bulup “Yalnız I”e yönelir.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı saf katının iki örneği aynı ilk sıcaklıktan ısıtılıyor. I. örnek 1 ısıtıcıyla, II. örnek ilk ısıtıcıyla özdeş 2 ısıtıcıyla birlikte ısıtılıyor. Örneklerin sıcaklık-zaman grafikleri aşağıdadır.</p><div class="fig"><svg viewBox="0 0 530 276" width="530" role="img" aria-label="I. örnek 1 ısıtıcıyla: 4. dakikada 60 °C, 4-10 dk sabit. II. örnek 2 özdeş ısıtıcıyla: 6. dakikada 60 °C, 6-15 dk sabit" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,6)"><line x1="56" y1="190" x2="247.8" y2="190" stroke="#1e293b" stroke-width="1.6"/><polygon points="252.0,190.0 245.7,193.0 245.7,187.0" fill="#1e293b"/><line x1="56" y1="190" x2="56" y2="38.2" stroke="#1e293b" stroke-width="1.6"/><polygon points="56.0,34.0 59.0,40.3 53.0,40.3" fill="#1e293b"/><line x1="52" y1="155" x2="60" y2="155" stroke="#1e293b" stroke-width="1.5"/><text x="48" y="159" text-anchor="end">20</text><line x1="52" y1="85" x2="60" y2="85" stroke="#1e293b" stroke-width="1.5"/><text x="48" y="89" text-anchor="end">60</text><line x1="56" y1="85" x2="168.5" y2="85" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="101" y1="190" x2="101" y2="85" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="101" y="208">4</text><line x1="168.5" y1="190" x2="168.5" y2="85" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="168.5" y="208">10</text><text x="48" y="206" text-anchor="end">0</text><polyline points="56,155 101,85 168.5,85 191,67.5" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><text x="58" y="28" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><text x="252" y="224" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="146" y="248" font-size="13" font-weight="bold">I. örnek</text><text x="146" y="264">1 ısıtıcı</text><line x1="321" y1="190" x2="512.8" y2="190" stroke="#1e293b" stroke-width="1.6"/><polygon points="517.0,190.0 510.7,193.0 510.7,187.0" fill="#1e293b"/><line x1="321" y1="190" x2="321" y2="38.2" stroke="#1e293b" stroke-width="1.6"/><polygon points="321.0,34.0 324.0,40.3 318.0,40.3" fill="#1e293b"/><line x1="317" y1="155" x2="325" y2="155" stroke="#1e293b" stroke-width="1.5"/><text x="313" y="159" text-anchor="end">20</text><line x1="317" y1="85" x2="325" y2="85" stroke="#1e293b" stroke-width="1.5"/><text x="313" y="89" text-anchor="end">60</text><line x1="321" y1="85" x2="489.8" y2="85" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="388.5" y1="190" x2="388.5" y2="85" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="388.5" y="208">6</text><line x1="489.8" y1="190" x2="489.8" y2="85" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="489.8" y="208">15</text><text x="313" y="206" text-anchor="end">0</text><polyline points="321,155 388.5,85 489.8,85 501,67.5" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><text x="323" y="28" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><text x="517" y="224" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="411" y="248" font-size="13" font-weight="bold">II. örnek</text><text x="411" y="264">2 özdeş ısıtıcı</text></g></svg></div><p>Isı alışverişi yalnızca ısıtıcılar ile katılar arasında olduğuna göre;</p><p>I. II. örneğin kütlesi I. örneğin kütlesinin 3 katıdır.<br>
+II. II. örneği tamamen eritmek için gereken ısı, I. örneği eritmek için gereken ısının 1,5 katıdır.<br>
+III. Isıtıcı sayısı arttığı için II. örnek erime sıcaklığına daha kısa sürede ulaşmıştır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I ve III"],
+  a: "A",
+  s: `<p>Bir ısıtıcının 1 dakikada verdiği ısıya 1 birim diyelim. 2 ısıtıcı 1 dakikada 2 birim ısı verir.</p>
+<ul><li><b>I ✓</b> I. örnek 60 °C’a 4 dakikada ulaşmıştır: 4 birim ısı. II. örnek 6 dakikada ulaşmıştır: 2 × 6 = 12 birim ısı. Aynı madde ve aynı sıcaklık artışı için 3 kat ısı gerektiğine göre kütle 3 katıdır. Erime de bunu doğrular: I’de 6 dk × 1 = 6 birim, II’de 9 dk × 2 = 18 birim (3 katı).</li>
+<li><b>II ✗</b> Erime süreleri 6 ve 9 dakikadır; oran 1,5 gibi görünür ama II. örnek 2 ısıtıcıyla ısıtılmıştır. Gereken ısı 18 ÷ 6 = 3 katıdır.</li>
+<li><b>III ✗</b> Grafiğe göre II. örnek erime sıcaklığına 6. dakikada, I. örnek 4. dakikada ulaşmıştır; II daha uzun sürede ulaşmıştır.</li>
+<li><b>Çeldiriciler</b> “I ve II” süreleri ısıtıcı sayısını hesaba katmadan karşılaştıran, “I ve III” grafiğe bakmadan “ısıtıcı artarsa süre kısalır” diye düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Erime sıcaklığı <b>40 °C</b> olan saf bir katının iki örneği, katı hâlden başlayarak özdeş ısıtıcılarla ayrı ayrı ısıtılıyor. Elde edilen sonuçlar tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Örnek</th><th>Kütle</th><th>İlk sıcaklık</th><th>Erime sıcaklığına ulaşma süresi</th><th>Erimenin sürdüğü süre</th></tr>
+<tr><td>1</td><td>m</td><td>10 °C</td><td>3 dk</td><td>6 dk</td></tr>
+<tr><td>2</td><td>?</td><td>?</td><td>9 dk</td><td>12 dk</td></tr>
+</table></div><p>Isı alışverişi yalnızca ısıtıcı ile katı arasında olduğuna göre;</p><p>I. 2. örneğin kütlesi 2m’dir.<br>
+II. 2. örneğin erirken aldığı ısı, 1. örneğin erirken aldığı ısının 2 katıdır.<br>
+III. 2. örneğin ilk sıcaklığı −5 °C’tır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Özdeş ısıtıcılarda süre, alınan ısıyı gösterir. Erime için gereken ısı kütleyle doğru orantılıdır.</p>
+<ul><li><b>II ✓</b> Erime 2. örnekte 12 dk, 1. örnekte 6 dk sürmüştür: 2. örnek erirken 2 kat ısı almıştır.</li>
+<li><b>I ✓</b> Aynı maddenin erimesi için 2 kat ısı gerekiyorsa kütlesi 2 katıdır: 2m.</li>
+<li><b>III ✓</b> 1. örnek (m) 3 dakikada 30 °C ısınmıştır. 2m kütleli örnek aynı ısıtıcıyla 30 °C ısınmak için 6 dakikaya ihtiyaç duyar; 9 dakikada 45 °C ısınır. İlk sıcaklığı 40 − 45 = −5 °C’tır.</li>
+<li><b>Çeldiriciler</b> “I ve II” erime sıcaklığına daha geç ulaşmanın yalnızca kütleden kaynaklandığını sanıp ilk sıcaklığı 10 °C kabul eden öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Saf bir maddenin m kütleli katı örneği bir ısıtıcıyla ısıtıldığında aşağıdaki sıcaklık-zaman grafiği elde ediliyor.</p><div class="fig"><svg viewBox="0 0 520 268" width="520" role="img" aria-label="m kütleli örneğin grafiği: 0-8 dk 10'dan 50 °C'a, 8-20 dk 50 °C'ta sabit, 20-24 dk 70 °C'a" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="210" x2="469.2" y2="210" stroke="#1e293b" stroke-width="2"/><polygon points="474.0,210.0 466.8,213.5 466.8,206.5" fill="#1e293b"/><line x1="70" y1="210" x2="70" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,26.0 73.5,33.2 66.5,33.2" fill="#1e293b"/><text x="474" y="244" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="20" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="190" x2="450" y2="190" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="194" text-anchor="end">10</text><line x1="66" y1="110" x2="450" y2="110" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="114" text-anchor="end">50</text><line x1="66" y1="70" x2="450" y2="70" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="74" text-anchor="end">70</text><line x1="133.3" y1="210" x2="133.3" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="133.3" y="228">4</text><line x1="196.7" y1="210" x2="196.7" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="196.7" y="228">8</text><line x1="260" y1="210" x2="260" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="260" y="228">12</text><line x1="323.3" y1="210" x2="323.3" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="323.3" y="228">16</text><line x1="386.7" y1="210" x2="386.7" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="386.7" y="228">20</text><line x1="450" y1="210" x2="450" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="450" y="228">24</text><polyline points="70,190 196.7,110 386.7,110 450,70" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><line x1="196.7" y1="210" x2="196.7" y2="110" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="386.7" y1="210" x2="386.7" y2="110" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="450" y1="210" x2="450" y2="70" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="291.7" y="100" fill="#1d4ed8" font-weight="bold">m kütleli örnek, 1 ısıtıcı</text></g></svg></div><p>Aynı maddenin <b>2m</b> kütleli katı örneği, aynı ilk sıcaklıktan başlanarak ilk ısıtıcıyla özdeş <b>iki ısıtıcıyla</b> birlikte ısıtılıyor. Bu örneğin sıcaklık-zaman grafiği aşağıdakilerden hangisi olabilir?</p><div class="fig"><svg viewBox="0 0 560 372" width="560" role="img" aria-label="Dört grafik: I 16-40 dk, II 8-20 dk, III 4-10 dk 50 °C'ta sabit; IV 8-20 dk 25 °C'ta sabit" font-size="12" fill="#1e293b" text-anchor="middle"><text x="16" y="22" font-size="14" text-anchor="start" font-weight="bold">I</text><line x1="60" y1="148" x2="259.8" y2="148" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,148.0 257.7,151.0 257.7,145.0" fill="#1e293b"/><line x1="60" y1="148" x2="60" y2="28.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,24.0 63.0,30.3 57.0,30.3" fill="#1e293b"/><text x="54" y="138.2" text-anchor="end">10</text><line x1="57" y1="134.2" x2="63" y2="134.2" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="117.6" text-anchor="end">25</text><line x1="57" y1="113.6" x2="63" y2="113.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="83.2" text-anchor="end">50</text><line x1="57" y1="79.2" x2="63" y2="79.2" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="55.8" text-anchor="end">70</text><line x1="57" y1="51.8" x2="63" y2="51.8" stroke="#1e293b" stroke-width="1.5"/><line x1="123.3" y1="148" x2="123.3" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="123.3" y="165">16</text><line x1="218.3" y1="148" x2="218.3" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="218.3" y="165">40</text><text x="264" y="180" text-anchor="end">Zaman</text><text x="64" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,134.2 123.3,79.2 218.3,79.2 250,51.8" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><text x="286" y="22" font-size="14" text-anchor="start" font-weight="bold">II</text><line x1="330" y1="148" x2="529.8" y2="148" stroke="#1e293b" stroke-width="1.5"/><polygon points="534.0,148.0 527.7,151.0 527.7,145.0" fill="#1e293b"/><line x1="330" y1="148" x2="330" y2="28.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="330.0,24.0 333.0,30.3 327.0,30.3" fill="#1e293b"/><text x="324" y="138.2" text-anchor="end">10</text><line x1="327" y1="134.2" x2="333" y2="134.2" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="117.6" text-anchor="end">25</text><line x1="327" y1="113.6" x2="333" y2="113.6" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="83.2" text-anchor="end">50</text><line x1="327" y1="79.2" x2="333" y2="79.2" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="55.8" text-anchor="end">70</text><line x1="327" y1="51.8" x2="333" y2="51.8" stroke="#1e293b" stroke-width="1.5"/><line x1="361.7" y1="148" x2="361.7" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="361.7" y="165">8</text><line x1="409.2" y1="148" x2="409.2" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="409.2" y="165">20</text><text x="534" y="180" text-anchor="end">Zaman</text><text x="334" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="330,134.2 361.7,79.2 409.2,79.2 425,51.8" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><text x="16" y="202" font-size="14" text-anchor="start" font-weight="bold">III</text><line x1="60" y1="328" x2="259.8" y2="328" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,328.0 257.7,331.0 257.7,325.0" fill="#1e293b"/><line x1="60" y1="328" x2="60" y2="208.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,204.0 63.0,210.3 57.0,210.3" fill="#1e293b"/><text x="54" y="318.2" text-anchor="end">10</text><line x1="57" y1="314.2" x2="63" y2="314.2" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="297.6" text-anchor="end">25</text><line x1="57" y1="293.6" x2="63" y2="293.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="263.2" text-anchor="end">50</text><line x1="57" y1="259.2" x2="63" y2="259.2" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="235.8" text-anchor="end">70</text><line x1="57" y1="231.8" x2="63" y2="231.8" stroke="#1e293b" stroke-width="1.5"/><line x1="75.8" y1="328" x2="75.8" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="75.8" y="345">4</text><line x1="99.6" y1="328" x2="99.6" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="99.6" y="345">10</text><text x="264" y="360" text-anchor="end">Zaman</text><text x="64" y="202" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,314.2 75.8,259.2 99.6,259.2 107.5,231.8" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/><text x="286" y="202" font-size="14" text-anchor="start" font-weight="bold">IV</text><line x1="330" y1="328" x2="529.8" y2="328" stroke="#1e293b" stroke-width="1.5"/><polygon points="534.0,328.0 527.7,331.0 527.7,325.0" fill="#1e293b"/><line x1="330" y1="328" x2="330" y2="208.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="330.0,204.0 333.0,210.3 327.0,210.3" fill="#1e293b"/><text x="324" y="318.2" text-anchor="end">10</text><line x1="327" y1="314.2" x2="333" y2="314.2" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="297.6" text-anchor="end">25</text><line x1="327" y1="293.6" x2="333" y2="293.6" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="263.2" text-anchor="end">50</text><line x1="327" y1="259.2" x2="333" y2="259.2" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="235.8" text-anchor="end">70</text><line x1="327" y1="231.8" x2="333" y2="231.8" stroke="#1e293b" stroke-width="1.5"/><line x1="361.7" y1="328" x2="361.7" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="361.7" y="345">8</text><line x1="409.2" y1="328" x2="409.2" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="409.2" y="345">20</text><text x="534" y="360" text-anchor="end">Zaman</text><text x="334" y="202" text-anchor="start">Sıcaklık (°C)</text><polyline points="330,314.2 361.7,293.6 409.2,293.6 425,266.1" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round"/></svg></div>`,
+  c: ["I", "II", "III", "IV"],
+  a: "B",
+  s: `<p>Kütle 2 katına çıkınca her aşama (katının ısınması, erime, sıvının ısınması) için gereken ısı 2 katına çıkar. Isıtıcı sayısı 2 olunca birim zamanda verilen ısı da 2 katına çıkar. İki etki birbirini dengeler; her aşama yine aynı sürede tamamlanır. Erime sıcaklığı ayırt edici olduğundan değişmez (50 °C).</p>
+<ul><li><b>II ✓</b> Erime sıcaklığına 8. dakikada ulaşılır, erime 8-20. dakikalarda sürer; grafik ilk grafikle aynıdır.</li>
+<li><b>I ✗</b> Süreler 2 katına çıkmıştır; yalnızca kütlenin arttığı hesaba katılmış, ısıtıcı sayısı unutulmuştur.</li>
+<li><b>III ✗</b> Süreler yarıya inmiştir; yalnızca ısıtıcı sayısı hesaba katılmış, kütlenin arttığı unutulmuştur.</li>
+<li><b>IV ✗</b> Süreler doğru, ama erime sıcaklığı 25 °C’a inmiştir. Erime sıcaklığı kütleye ve ısıtıcı sayısına bağlı değildir.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Saf K, L, M ve N maddelerinin erime ve kaynama sıcaklıkları tabloda verilmiştir.</p><div class="tbl"><table>
+<tr><th>Madde</th><th>K</th><th>L</th><th>M</th><th>N</th></tr>
+<tr><td>Erime sıcaklığı (°C)</td><td>−20</td><td>10</td><td>−100</td><td>60</td></tr>
+<tr><td>Kaynama sıcaklığı (°C)</td><td>40</td><td>120</td><td>−30</td><td>200</td></tr>
+</table></div><p>Bu maddelerden biri 0 °C’tan 100 °C’a kadar ısıtıldığında aşağıdaki sıcaklık-zaman grafiği elde ediliyor.</p><div class="fig"><svg viewBox="0 0 520 268" width="520" role="img" aria-label="Isıtılan maddenin grafiği: 0 °C'tan 2. dakikada 40 °C'a, 2-7 dk 40 °C'ta sabit, 10. dakikada 100 °C" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="210" x2="469.2" y2="210" stroke="#1e293b" stroke-width="2"/><polygon points="474.0,210.0 466.8,213.5 466.8,206.5" fill="#1e293b"/><line x1="70" y1="210" x2="70" y2="30.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,26.0 73.5,33.2 66.5,33.2" fill="#1e293b"/><text x="474" y="244" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="20" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="151.8" x2="450" y2="151.8" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="155.8" text-anchor="end">40</text><line x1="66" y1="64.5" x2="450" y2="64.5" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="68.5" text-anchor="end">100</text><line x1="146" y1="210" x2="146" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="146" y="228">2</text><line x1="336" y1="210" x2="336" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="336" y="228">7</text><line x1="450" y1="210" x2="450" y2="214" stroke="#1e293b" stroke-width="1.5"/><text x="450" y="228">10</text><polyline points="70,210 146,151.8 336,151.8 450,64.5" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><line x1="146" y1="210" x2="146" y2="151.8" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="336" y1="210" x2="336" y2="151.8" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><line x1="450" y1="210" x2="450" y2="64.5" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3"/><text x="62" y="214" text-anchor="end">0</text></g></svg></div><p>Buna göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Grafik K maddesine aittir; 2-7. dakikalar arasında K erimektedir.", "Grafik K maddesine aittir; 2-7. dakikalar arasında K’nin sıvı ve gaz hâlleri bir arada bulunur.", "Grafik L maddesine aittir; L 0 °C’ta katı hâldedir.", "Grafik N maddesine aittir; N 100 °C’ta sıvı hâldedir."],
+  a: "B",
+  s: `<p>Grafikte 0-100 °C arasında yalnızca bir yatay bölüm vardır (40 °C). Hâl değişim sıcaklıkları ayırt edici olduğundan madde, 0-100 °C arasında hâl değişim sıcaklığı yalnızca 40 °C olan maddedir: K’nin kaynama sıcaklığı 40 °C’tır, erime sıcaklığı (−20 °C) ise 0 °C’un altındadır.</p>
+<ul><li><b>A ✗</b> K 0 °C’ta sıvıdır (−20 °C’ta erimiş); 40 °C’taki yatay bölüm erime değil <b>kaynamadır</b>.</li>
+<li><b>B ✓</b> Kaynama sırasında sıvı ve gaz hâller bir arada bulunur; sıcaklık sabit kalır.</li>
+<li><b>C ✗</b> L 10 °C’ta erirdi; grafikte 10 °C’ta yatay bölüm yoktur. Kaynama sıcaklığı (120 °C) da 100 °C’un üzerindedir.</li>
+<li><b>D ✗</b> N 60 °C’ta erirdi; grafikteki yatay bölüm 40 °C’tadır.</li></ul>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Saf K ve L maddeleri aynı soğuk ortamda soğutuluyor. K’nin başlangıçta <b>gaz</b> hâlinde olduğu biliniyor; L’nin başlangıçtaki hâli ise bilinmiyor. Maddelerin sıcaklık-zaman grafikleri aşağıdadır.</p><div class="fig"><svg viewBox="0 0 520 290" width="520" role="img" aria-label="Soğutulan K ve L'nin grafikleri: K 90'dan 70 °C'a 2 dk, 2-6 dk 70 °C sabit, 10. dk 30 °C, 10-14 dk 30 °C sabit, 16. dk 10 °C; L 80'den 3. dk 50 °C, 3-9 dk 50 °C sabit, 16. dk 10 °C" font-size="12" fill="#1e293b" text-anchor="middle"><g transform="translate(0,14)"><line x1="70" y1="230" x2="489.2" y2="230" stroke="#1e293b" stroke-width="2"/><polygon points="494.0,230.0 486.8,233.5 486.8,226.5" fill="#1e293b"/><line x1="70" y1="230" x2="70" y2="20.8" stroke="#1e293b" stroke-width="2"/><polygon points="70.0,16.0 73.5,23.2 66.5,23.2" fill="#1e293b"/><text x="494" y="264" text-anchor="end" font-weight="bold">Zaman (dk)</text><text x="66" y="10" text-anchor="start" font-weight="bold">Sıcaklık (°C)</text><line x1="66" y1="211" x2="470" y2="211" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="215" text-anchor="end">10</text><line x1="66" y1="173" x2="470" y2="173" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="177" text-anchor="end">30</text><line x1="66" y1="135" x2="470" y2="135" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="139" text-anchor="end">50</text><line x1="66" y1="97" x2="470" y2="97" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="101" text-anchor="end">70</text><line x1="66" y1="59" x2="470" y2="59" stroke="#e2e8f0" stroke-width="1"/><text x="62" y="63" text-anchor="end">90</text><line x1="120" y1="230" x2="120" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="120" y="248">2</text><line x1="145" y1="230" x2="145" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="145" y="248">3</text><line x1="220" y1="230" x2="220" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="220" y="248">6</text><line x1="295" y1="230" x2="295" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="295" y="248">9</text><line x1="320" y1="230" x2="320" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="320" y="248">10</text><line x1="420" y1="230" x2="420" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="420" y="248">14</text><line x1="470" y1="230" x2="470" y2="234" stroke="#1e293b" stroke-width="1.5"/><text x="470" y="248">16</text><polyline points="70,59 120,97 220,97 320,173 420,173 470,211" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linejoin="round"/><polyline points="70,78 145,135 295,135 470,211" fill="none" stroke="#dc2626" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="8 4"/><text x="170" y="87" font-size="14" fill="#2563eb" font-weight="bold">K</text><text x="220" y="157" font-size="14" fill="#dc2626" font-weight="bold">L</text></g></svg></div><p>Buna göre;</p><p>I. L’nin 3-9. dakikalar arasındaki hâl değişimi donmadır.<br>
+II. K’nin erime sıcaklığı 30 °C’tır.<br>
+III. 3-9. dakikalar arasında L çevresine ısı vermektedir.</p><p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Soğuyan saf bir maddenin sıcaklığı sabit kalıyorsa madde hâl değiştiriyordur ve ısı vermeye devam eder.</p>
+<ul><li><b>I ✗</b> Isı verilerek gerçekleşen hâl değişimi yoğuşma (gaz → sıvı) ya da donma (sıvı → katı) olabilir. L’nin başlangıçtaki hâli bilinmediği için hangisi olduğu kesin değildir.</li>
+<li><b>II ✓</b> K gaz olarak başlamıştır: 70 °C’taki ilk yatay bölüm yoğuşma, 30 °C’taki ikinci yatay bölüm donmadır. Donma sıcaklığı erime sıcaklığına eşittir: 30 °C.</li>
+<li><b>III ✓</b> Sıcaklığın sabit kaldığı bölümde de madde soğuk ortama ısı verir; verdiği ısı hâl değişimi için kullanılır.</li>
+<li><b>Çeldiriciler</b> “I, II ve III” ve “I ve II” her soğuma grafiğindeki yatay bölümü donma sanan öğrencinin cevabıdır. “Yalnız II” ise sıcaklık sabitken ısı alışverişi olmadığını düşünen öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Isıca yalıtılmış bir kaptaki <b>50 °C</b>’taki suyun içine <b>−20 °C</b>’taki bir buz parçası atılıyor. Isıl denge sağlandığında kapta hem buz hem su bulunduğu ve buz parçasının kütlesinin azaldığı gözleniyor.</p><p>Isı alışverişi yalnızca su ile buz arasında olduğuna göre suyun ve buzun sıcaklık-zaman grafikleri aşağıdakilerden hangisi olabilir?</p><div class="fig"><svg viewBox="0 0 560 382" width="560" role="img" aria-label="Dört grafik: su ve buzun sıcaklıklarının zamanla değişimi" font-size="12" fill="#1e293b" text-anchor="middle"><text x="16" y="22" font-size="14" text-anchor="start" font-weight="bold">I</text><line x1="60" y1="148" x2="259.8" y2="148" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,148.0 257.7,151.0 257.7,145.0" fill="#1e293b"/><line x1="60" y1="148" x2="60" y2="28.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,24.0 63.0,30.3 57.0,30.3" fill="#1e293b"/><text x="54" y="152" text-anchor="end">-20</text><line x1="57" y1="148" x2="63" y2="148" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="120.6" text-anchor="end">0</text><line x1="57" y1="116.6" x2="63" y2="116.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="104.9" text-anchor="end">10</text><line x1="57" y1="100.9" x2="63" y2="100.9" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="42" text-anchor="end">50</text><line x1="57" y1="38" x2="63" y2="38" stroke="#1e293b" stroke-width="1.5"/><line x1="136" y1="148" x2="136" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="136" y="165">t₁</text><line x1="250" y1="148" x2="250" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="250" y="165">t₃</text><text x="264" y="180" text-anchor="end">Zaman</text><text x="64" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,38 250,116.6" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="60,148 136,116.6 250,116.6" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="286" y="22" font-size="14" text-anchor="start" font-weight="bold">II</text><line x1="330" y1="148" x2="529.8" y2="148" stroke="#1e293b" stroke-width="1.5"/><polygon points="534.0,148.0 527.7,151.0 527.7,145.0" fill="#1e293b"/><line x1="330" y1="148" x2="330" y2="28.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="330.0,24.0 333.0,30.3 327.0,30.3" fill="#1e293b"/><text x="324" y="152" text-anchor="end">-20</text><line x1="327" y1="148" x2="333" y2="148" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="120.6" text-anchor="end">0</text><line x1="327" y1="116.6" x2="333" y2="116.6" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="104.9" text-anchor="end">10</text><line x1="327" y1="100.9" x2="333" y2="100.9" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="42" text-anchor="end">50</text><line x1="327" y1="38" x2="333" y2="38" stroke="#1e293b" stroke-width="1.5"/><line x1="520" y1="148" x2="520" y2="152" stroke="#1e293b" stroke-width="1.5"/><text x="520" y="165">t₃</text><text x="534" y="180" text-anchor="end">Zaman</text><text x="334" y="22" text-anchor="start">Sıcaklık (°C)</text><polyline points="330,38 520,116.6" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="330,148 520,116.6" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="16" y="202" font-size="14" text-anchor="start" font-weight="bold">III</text><line x1="60" y1="328" x2="259.8" y2="328" stroke="#1e293b" stroke-width="1.5"/><polygon points="264.0,328.0 257.7,331.0 257.7,325.0" fill="#1e293b"/><line x1="60" y1="328" x2="60" y2="208.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="60.0,204.0 63.0,210.3 57.0,210.3" fill="#1e293b"/><text x="54" y="332" text-anchor="end">-20</text><line x1="57" y1="328" x2="63" y2="328" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="300.6" text-anchor="end">0</text><line x1="57" y1="296.6" x2="63" y2="296.6" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="284.9" text-anchor="end">10</text><line x1="57" y1="280.9" x2="63" y2="280.9" stroke="#1e293b" stroke-width="1.5"/><text x="54" y="222" text-anchor="end">50</text><line x1="57" y1="218" x2="63" y2="218" stroke="#1e293b" stroke-width="1.5"/><line x1="136" y1="328" x2="136" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="136" y="345">t₁</text><line x1="250" y1="328" x2="250" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="250" y="345">t₃</text><text x="264" y="360" text-anchor="end">Zaman</text><text x="64" y="202" text-anchor="start">Sıcaklık (°C)</text><polyline points="60,218 136,296.6 250,296.6" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="60,328 250,296.6" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><text x="286" y="202" font-size="14" text-anchor="start" font-weight="bold">IV</text><line x1="330" y1="328" x2="529.8" y2="328" stroke="#1e293b" stroke-width="1.5"/><polygon points="534.0,328.0 527.7,331.0 527.7,325.0" fill="#1e293b"/><line x1="330" y1="328" x2="330" y2="208.2" stroke="#1e293b" stroke-width="1.5"/><polygon points="330.0,204.0 333.0,210.3 327.0,210.3" fill="#1e293b"/><text x="324" y="332" text-anchor="end">-20</text><line x1="327" y1="328" x2="333" y2="328" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="300.6" text-anchor="end">0</text><line x1="327" y1="296.6" x2="333" y2="296.6" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="284.9" text-anchor="end">10</text><line x1="327" y1="280.9" x2="333" y2="280.9" stroke="#1e293b" stroke-width="1.5"/><text x="324" y="222" text-anchor="end">50</text><line x1="327" y1="218" x2="333" y2="218" stroke="#1e293b" stroke-width="1.5"/><line x1="406" y1="328" x2="406" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="406" y="345">t₁</text><line x1="463" y1="328" x2="463" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="463" y="345">t₂</text><line x1="520" y1="328" x2="520" y2="332" stroke="#1e293b" stroke-width="1.5"/><text x="520" y="345">t₃</text><text x="534" y="360" text-anchor="end">Zaman</text><text x="334" y="202" text-anchor="start">Sıcaklık (°C)</text><polyline points="330,218 520,280.9" fill="none" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><polyline points="330,328 406,296.6 463,296.6 520,280.9" fill="none" stroke="#2563eb" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="6 4"/><line x1="150" y1="370" x2="180" y2="370" stroke="#dc2626" stroke-width="2.4"/><text x="186" y="374" text-anchor="start">Su</text><line x1="270" y1="370" x2="300" y2="370" stroke="#2563eb" stroke-width="2.4" stroke-dasharray="6 4"/><text x="306" y="374" text-anchor="start">Buz</text></svg></div>`,
+  c: ["I", "II", "III", "IV"],
+  a: "A",
+  s: `<p>Buzun kütlesi azaldığına göre buzun bir kısmı erimiştir. Bunun için buz önce −20 °C’tan 0 °C’a ısınmalı, sonra 0 °C’ta sıcaklığı sabit kalarak erimelidir. Isıl dengede kapta hem buz hem su bulunduğuna göre son sıcaklık 0 °C’tır. Su ise 50 °C’tan 0 °C’a kadar sürekli soğur; ısıl denge su 0 °C’a indiğinde sağlanır.</p>
+<ul><li><b>I ✓</b> Buz t₁’de 0 °C’a ulaşıp t₁-t₃ arasında 0 °C’ta kalarak erir; su t₃’te 0 °C’a iner.</li>
+<li><b>II ✗</b> Buz 0 °C’a ancak denge anında (t₃) ulaşmıştır; erime için 0 °C’ta beklediği bir bölüm yoktur. Bu durumda buzun kütlesi azalmazdı.</li>
+<li><b>III ✗</b> Su t₁’de 0 °C’a inip sabit kalmıştır; bu, buz henüz 0 °C’un altındayken suyun donduğunu gösterir. Su donarsa buzun kütlesi artardı.</li>
+<li><b>IV ✗</b> Son sıcaklık 10 °C’tır; buzun tamamı erimiş olmalıdır. Oysa dengede kapta buz vardır.</li></ul>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Kütleleri eşit, <b>0 °C</b>’taki buz ile <b>0 °C</b>’taki su özdeş kaplara konuyor ve özdeş ısıtıcılarla 2 dakika ısıtılıyor. Bu sürenin sonunda buzun tamamının erimediği görülüyor.</p><p>Isı alışverişi yalnızca ısıtıcılar ile kaplardaki maddeler arasında olduğuna göre, 2. dakikanın sonunda;</p><p>I. Buz bulunan kaptaki buz–su karışımının sıcaklığı 0 °C’tır.<br>
+II. Su bulunan kaptaki suyun sıcaklığı 0 °C’tan büyüktür.<br>
+III. İki kaptaki maddelerin 2 dakikada aldıkları ısı miktarları eşittir.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Özdeş ısıtıcılar eşit sürede eşit ısı verir. Saf bir madde hâl değiştirirken aldığı ısı tanecikler arası çekimi yenmek için kullanılır, sıcaklık değişmez.</p>
+<ul><li><b>I ✓</b> Buzun tamamı erimediği için buz hâlâ erime sıcaklığındadır; buz–su karışımı 0 °C’tır.</li>
+<li><b>II ✓</b> Sudaki ısı sıcaklık artışına harcanır; suyun sıcaklığı 0 °C’un üzerine çıkar.</li>
+<li><b>III ✓</b> İki kap da 2 dakika boyunca özdeş ısıtıcılarla ısıtılmıştır; aldıkları ısılar eşittir. Sıcaklıkların farklı olması alınan ısının farklı olduğu anlamına gelmez.</li>
+<li><b>Çeldiriciler</b> “I ve II”, buzun sıcaklığı değişmediği için ısı almadığını sanan öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>İlke:</b> Gaz hâlindeki bir madde sıvı hâle geçerken (yoğuşurken) çevresine ısı verir.</div><p>Aşağıda günlük hayattan bazı olaylar verilmiştir.</p><p>I. 100 °C’taki su buharının deriye değdiğinde, 100 °C’taki kaynar sudan daha ağır yanık oluşturması<br>
+II. Soğuk kış sabahlarında otomobil camlarında kırağı oluşması<br>
+III. Sıcak duştan sonra banyo aynasının buğulanması<br>
+IV. Islak saçlar kurutulurken başın serinlemesi</p><p>Bu olaylardan hangileri yukarıdaki ilkeyle <b>açıklanabilir</b>?</p>`,
+  c: ["I ve II", "II ve IV", "I ve III", "I, III ve IV"],
+  a: "C",
+  s: `<p>İlke yalnızca <b>yoğuşma</b> (gaz → sıvı) ve bu sırada verilen ısıyla ilgilidir.</p>
+<ul><li><b>I ✓</b> Su buharı deriye değince önce yoğuşur ve bu sırada deriye ek ısı verir; sonra oluşan sıcak su da soğurken ısı verir. Bu yüzden buhar yanığı daha ağırdır.</li>
+<li><b>II ✗</b> Kırağı, su buharının sıvı olmadan doğrudan katıya dönüşmesidir (kırağılaşma). Bu olayda da ısı verilir, ama olay yoğuşma değildir; ilke bunu kapsamaz.</li>
+<li><b>III ✓</b> Banyodaki su buharı soğuk aynada yoğuşarak su damlacıkları oluşturur ve aynaya ısı verir.</li>
+<li><b>IV ✗</b> Saçtaki su buharlaşırken başımızdan ısı alır; olay yoğuşma değil buharlaşmadır.</li>
+<li><b>Çeldiriciler</b> “I ve II” ısı veren her hâl değişimini yoğuşma sanan, “I, III ve IV” buharlaşma ile yoğuşmayı karıştıran öğrencinin cevabıdır.</li></ul>
+<p>Cevap <b>C</b>.</p>` }
 ]
 });
