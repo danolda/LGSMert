@@ -1,0 +1,751 @@
+/* LGS Kışlası · VS Arena — iki kişilik canlı düello.
+   Zamanlama tamamen sunucu saatine bağlıdır: her istemci sunucu ile saat farkını ölçer,
+   geri sayım / süre / animasyon başlangıcı aynı sunucu anına göre çizilir. */
+(function () {
+  'use strict';
+  var A = window.LGSApp, C = window.LGSCloud;
+  if (!A || !C || !C.rpc) return;
+  var app = document.getElementById('app');
+  var LET = ['A', 'B', 'C', 'D'];
+  var esc = A.esc;
+
+  /* ---------- sunucu saati ---------- */
+  var off = 0, bestRtt = 1e9;
+  function now() { return Date.now() + off; }
+  function rpc(name, body, cb) {
+    var t0 = Date.now();
+    C.rpc(name, body, function (err, d) {
+      var t1 = Date.now(), rtt = t1 - t0;
+      if (!err && d && typeof d === 'object' && d.now) {
+        var o = d.now - (t0 + t1) / 2;
+        if (rtt <= bestRtt * 1.5 || bestRtt > 5000) { off = bestRtt > 5000 ? o : off * 0.6 + o * 0.4; if (rtt < bestRtt) { bestRtt = rtt; off = o; } }
+      }
+      cb && cb(err, d);
+    });
+  }
+
+  /* ---------- oyuncu ---------- */
+  function me() {
+    var p = A.getProfile();
+    return { name: C.name(), thumb: p.thumb || null, xp: A.xpGet().total };
+  }
+  function lvl(p) { return A.levelOf((p && p.xp) || 0); }
+  function plate(p, side, isMe) {
+    if (!p) return '<div class="vs-pl ' + side + ' empty"><div class="vs-wait-av"></div><b>Rakip bekleniyor</b><small>Oda listede görünüyor…</small></div>';
+    var L = lvl(p);
+    return '<div class="vs-pl ' + side + '">' + A.avatarHtml({ name: p.name, photo: p.thumb }, 'av-big') +
+      A.rankTag(L) + '<b>' + esc(p.name) + '</b><small>Seviye ' + L + (isMe ? ' · SEN' : '') + '</small></div>';
+  }
+
+  /* ---------- yaşam döngüsü ---------- */
+  var timer = null, raf = null, cur = null, roomId = null, alive = false;
+  function stop() {
+    alive = false;
+    if (timer) clearTimeout(timer); timer = null;
+    if (raf) cancelAnimationFrame(raf); raf = null;
+    document.body.classList.remove('vs-on');
+    if (cur && roomId && (cur.status === 'wait' || cur.status === 'play') && cur.role) rpc('vs_leave', { p_room: roomId, p_token: C.token() });
+    cur = null; roomId = null; G = null;
+  }
+  function page(id) {
+    stop(); alive = true;
+    if (!C.name()) {
+      A.setCrumbs([{ text: 'VS Arena' }]);
+      app.innerHTML = '<div class="vs-page"><h1>⚔️ VS Arena</h1><div class="card"><p>Düelloya girmek için önce bir kullanıcı adı belirlemelisin. Rakibin adını, rütbeni ve seviyeni görecek.</p><a class="btn primary" href="#/profil">Profiline git</a></div></div>';
+      return;
+    }
+    if (id) roomPage(id); else lobby();
+  }
+
+  /* =========================================================
+     LOBİ
+     ========================================================= */
+  function lobby() {
+    A.setCrumbs([{ text: 'VS Arena' }]);
+    document.title = 'VS Arena · LGS Kışlası';
+    app.innerHTML = '<div class="vs-page"><div class="vs-hero"><div class="vs-hero-t">VS</div><h1>Arena</h1><p>Oda kur ya da açık bir odaya katıl. Doğru ve hızlı cevap rakibine hasar verir.</p></div>' +
+      '<button class="btn primary vs-create" id="vsCreate">⚔️ Oda Kur</button>' +
+      '<h2 class="vs-h2">Açık Odalar</h2><div id="vsRooms"><p class="loading">Odalar yükleniyor…</p></div>' +
+      '<div class="card vs-rules"><h3>Kurallar</h3><ul>' +
+      '<li>Biri bilip diğeri bilemezse <b>kritik hasar</b>: soruların yarısı böyle giderse oyun biter.</li>' +
+      '<li>İkisi de bilirse <b>önce bilen</b> normal hasar verir.</li>' +
+      '<li>Rakibin canı <b>%70</b> ve <b>%30</b>’un altına indiğinde hareketini seçersin, kazanınca da <b>fatality</b>.</li>' +
+      '<li>Oyundan çıkan ya da 25 saniye bağlantısı kopan kaybeder.</li></ul></div></div>';
+    document.getElementById('vsCreate').addEventListener('click', function () {
+      this.disabled = true;
+      rpc('vs_create', { p_token: C.token(), p_me: me() }, function (err, d) {
+        if (err || !d) { A.toast('Oda kurulamadı, bağlantını kontrol et.'); document.getElementById('vsCreate').disabled = false; return; }
+        location.hash = '#/vs/' + d;
+      });
+    });
+    var poll = function () {
+      if (!alive || location.hash.indexOf('#/vs') !== 0 || location.hash.split('/')[2]) return;
+      rpc('vs_list', {}, function (err, d) {
+        var box = document.getElementById('vsRooms'); if (!box) return;
+        var rows = (d || []).filter(function (r) { return r.host && r.host.name !== C.name(); });
+        box.innerHTML = rows.length ? rows.map(function (r) {
+          var L = lvl(r.host), n = cfgCount(r.cfg);
+          return '<div class="vs-room">' + A.avatarHtml({ name: r.host.name, photo: r.host.thumb }, 'av-sm') +
+            '<div class="vs-room-b">' + A.rankTag(L) + '<b>' + esc(r.host.name) + '</b><small>Seviye ' + L + (n ? ' · ' + n + ' soru' : '') + '</small></div>' +
+            '<button class="btn primary" data-join="' + r.id + '">Katıl</button></div>';
+        }).join('') : '<p class="empty">Şu an açık oda yok. İlk odayı sen kur!</p>';
+        timer = setTimeout(poll, 2500);
+      });
+    };
+    document.getElementById('vsRooms').addEventListener('click', function (e) {
+      var b = e.target.closest('[data-join]'); if (!b) return;
+      b.disabled = true;
+      var id = b.getAttribute('data-join');
+      rpc('vs_join', { p_room: id, p_token: C.token(), p_me: me() }, function (err, d) {
+        if (d === 'ok' || d === 'host') location.hash = '#/vs/' + id;
+        else { A.toast(d === 'full' ? 'Bu odaya başkası katıldı.' : 'Oda kapanmış.'); b.disabled = false; }
+      });
+    });
+    poll();
+  }
+  function cfgCount(cfg) {
+    var n = 0, sb = (cfg && cfg.sb) || {};
+    for (var k in sb) if (sb.hasOwnProperty(k)) n += +sb[k].n || 0;
+    return n;
+  }
+
+  /* =========================================================
+     ODA
+     ========================================================= */
+  var TIMES = [10, 15, 20, 30, 45, 60, 90, 120, 180, 240, 300];
+  var DEF_T = { tr: 60, mat: 90, fen: 60, ink: 45, din: 45, ing: 30 };
+  function tLabel(t) { return t < 60 ? t + ' sn' : (t % 60 ? Math.floor(t / 60) + ' dk ' + (t % 60) + ' sn' : t / 60 + ' dk'); }
+  var cfg = null, cfgDirty = null, openSb = null;
+
+  function roomPage(id) {
+    roomId = id; cfg = null; G = null;
+    A.setCrumbs([{ href: '#/vs', text: 'VS Arena' }, { text: 'Oda' }]);
+    document.title = 'VS Odası · LGS Kışlası';
+    app.innerHTML = '<div class="vs-page"><p class="loading">Odaya bağlanılıyor…</p></div>';
+    var tick = function () {
+      if (!alive || roomId !== id) return;
+      rpc('vs_state', { p_room: id, p_token: C.token() }, function (err, d) {
+        if (!alive || roomId !== id) return;
+        if (!err && d) onState(d);
+        var fast = cur && cur.status === 'play';
+        timer = setTimeout(tick, err ? 1500 : fast ? 300 : 1000);
+      });
+    };
+    tick();
+  }
+
+  function onState(d) {
+    if (d.gone || d.status === 'closed') {
+      cur = null;
+      app.innerHTML = '<div class="vs-page"><div class="card"><p>Bu oda kapandı.</p><a class="btn primary" href="#/vs">Arenaya dön</a></div></div>';
+      return;
+    }
+    var prev = cur; cur = d;
+    if (!d.role) {
+      if (d.status === 'wait' && !d.guest) {
+        rpc('vs_join', { p_room: roomId, p_token: C.token(), p_me: me() }, function () {});
+        return;
+      }
+      app.innerHTML = '<div class="vs-page"><div class="card"><p>Bu oda dolu.</p><a class="btn primary" href="#/vs">Arenaya dön</a></div></div>';
+      return;
+    }
+    if (d.status === 'wait') drawWait(d, prev);
+    else gameState(d);
+  }
+
+  /* ---------- bekleme / ayar ---------- */
+  function defaultCfg() {
+    var sb = {};
+    LGS.subjects.forEach(function (s) { sb[s.id] = { n: s.id === 'mat' || s.id === 'tr' || s.id === 'fen' ? 3 : 0, t: DEF_T[s.id] || 60, tp: null }; });
+    return { sb: sb };
+  }
+  function drawWait(d, prev) {
+    var host = d.role === 'h';
+    if (host && !cfg) { cfg = d.cfg && d.cfg.sb ? d.cfg : defaultCfg(); pushCfg(); }
+    var c = host ? cfg : (d.cfg && d.cfg.sb ? d.cfg : null);
+    var total = c ? cfgCount(c) : 0;
+    var head = '<div class="vs-versus">' + plate(d.host, 'L', host) + '<div class="vs-x">VS</div>' + plate(d.guest, 'R', !host) + '</div>';
+    var key = JSON.stringify([d.guest && d.guest.name, host ? null : d.cfg, host]);
+    if (prev && prev.status === 'wait' && document.getElementById('vsWait') && document.getElementById('vsWait').getAttribute('data-k') === key) {
+      if (host) updateStart(d);
+      return;
+    }
+    var body;
+    if (host) {
+      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2><p class="small">Her ders için soru sayısını, soru başına süreyi ve konuları seç.</p>' +
+        LGS.subjects.map(function (s) {
+          var o = c.sb[s.id];
+          return '<div class="vs-sb" data-sb="' + s.id + '" style="--c:' + s.color + '"><div class="vs-sb-h"><span class="vs-sb-n">' + s.icon + ' ' + esc(s.name) + '</span>' +
+            '<span class="vs-step"><button data-d="-1">−</button><b>' + o.n + '</b><button data-d="1">+</button></span></div>' +
+            '<div class="vs-sb-r"><label>Süre <select data-t>' + TIMES.map(function (t) { return '<option value="' + t + '"' + (t === o.t ? ' selected' : '') + '>' + tLabel(t) + '</option>'; }).join('') + '</select></label>' +
+            '<button class="vs-tp-btn" data-tp>' + (o.tp ? o.tp.length + ' konu' : 'Tüm konular') + ' ▾</button></div>' +
+            '<div class="vs-tps"' + (openSb === s.id ? '' : ' hidden') + '>' + s.topics.map(function (t) {
+              var on = !o.tp || o.tp.indexOf(t.id) >= 0;
+              return '<button class="vs-tp' + (on ? ' on' : '') + '" data-tid="' + t.id + '">' + esc(t.title) + '</button>';
+            }).join('') + '</div></div>';
+        }).join('') +
+        '<div class="vs-total">Toplam <b id="vsTotal">' + total + '</b> soru</div>' +
+        '<button class="btn primary vs-start" id="vsStart">BAŞLA</button><p class="small vs-start-msg" id="vsStartMsg"></p></div>';
+    } else {
+      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2>' + (c ? '<ul class="vs-sum">' + LGS.subjects.filter(function (s) { return c.sb[s.id] && c.sb[s.id].n > 0; }).map(function (s) {
+        var o = c.sb[s.id];
+        return '<li style="--c:' + s.color + '"><span>' + s.icon + ' ' + esc(s.name) + '</span><b>' + o.n + ' soru</b><small>' + tLabel(o.t) + ' / soru' + (o.tp ? ' · ' + o.tp.length + ' konu' : '') + '</small></li>';
+      }).join('') + '</ul><div class="vs-total">Toplam <b>' + total + '</b> soru</div>' : '') +
+        '<p class="vs-waitmsg">Oda kurucusu ayarları yapıyor. Başladığında 3-2-1 ile düello açılacak.</p></div>';
+    }
+    app.innerHTML = '<div class="vs-page" id="vsWait" data-k="' + esc(key) + '">' + head + body +
+      '<a class="btn ghost vs-leave" href="#/vs">Odadan çık</a></div>';
+    if (host) bindSetup(d);
+  }
+  function updateStart(d) {
+    var b = document.getElementById('vsStart'), m = document.getElementById('vsStartMsg'); if (!b) return;
+    var total = cfgCount(cfg);
+    var ok = !!d.guest && total >= 2;
+    b.disabled = !ok;
+    m.textContent = !d.guest ? 'Başlamak için bir rakibin katılmasını bekle.' : total < 2 ? 'En az 2 soru seç.' : total > 100 ? 'En fazla 100 soru.' : '';
+    document.getElementById('vsTotal').textContent = total;
+  }
+  function pushCfg() {
+    if (cfgDirty) clearTimeout(cfgDirty);
+    cfgDirty = setTimeout(function () { rpc('vs_setup', { p_room: roomId, p_token: C.token(), p_cfg: cfg }); }, 500);
+  }
+  function bindSetup(d) {
+    var box = document.querySelector('.vs-setup');
+    updateStart(d);
+    box.addEventListener('click', function (e) {
+      var row = e.target.closest('[data-sb]'); if (!row) return;
+      var sid = row.getAttribute('data-sb'), o = cfg.sb[sid], s = LGS.subjects.filter(function (x) { return x.id === sid; })[0];
+      var st = e.target.closest('[data-d]');
+      if (st) {
+        o.n = Math.max(0, Math.min(30, o.n + +st.getAttribute('data-d')));
+        row.querySelector('.vs-step b').textContent = o.n;
+        pushCfg(); updateStart(cur); return;
+      }
+      if (e.target.closest('[data-tp]')) {
+        var tps = row.querySelector('.vs-tps'); tps.hidden = !tps.hidden; openSb = tps.hidden ? null : sid; return;
+      }
+      var tb = e.target.closest('[data-tid]');
+      if (tb) {
+        var all = s.topics.map(function (t) { return t.id; });
+        var sel = o.tp ? o.tp.slice() : all.slice(), tid = tb.getAttribute('data-tid'), k = sel.indexOf(tid);
+        if (k >= 0) { if (sel.length === 1) { A.toast('En az bir konu seçili olmalı.'); return; } sel.splice(k, 1); } else sel.push(tid);
+        o.tp = sel.length === all.length ? null : sel;
+        tb.classList.toggle('on', k < 0);
+        row.querySelector('[data-tp]').textContent = (o.tp ? o.tp.length + ' konu' : 'Tüm konular') + ' ▾';
+        pushCfg();
+      }
+    });
+    box.addEventListener('change', function (e) {
+      var sel = e.target.closest('[data-t]'); if (!sel) return;
+      var sid = e.target.closest('[data-sb]').getAttribute('data-sb');
+      cfg.sb[sid].t = +sel.value; pushCfg();
+    });
+    document.getElementById('vsStart').addEventListener('click', function () {
+      var b = this; b.disabled = true; b.textContent = 'Sorular hazırlanıyor…';
+      buildQuestions(cfg, function (qs) {
+        if (!qs || qs.length < 2) { b.textContent = 'BAŞLA'; b.disabled = false; A.toast('Soru yüklenemedi.'); return; }
+        if (cfgDirty) clearTimeout(cfgDirty);
+        rpc('vs_setup', { p_room: roomId, p_token: C.token(), p_cfg: cfg }, function () {
+          rpc('vs_start', { p_room: roomId, p_token: C.token(), p_qs: qs }, function (err, r) {
+            if (r !== 'ok') { b.textContent = 'BAŞLA'; b.disabled = false; A.toast(r === 'noguest' ? 'Rakip odadan çıktı.' : 'Başlatılamadı.'); }
+          });
+        });
+      });
+    });
+  }
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+  function ensureTopics(tids, cb) {
+    var left = tids.length; if (!left) return cb();
+    tids.forEach(function (tid) {
+      var m = A.subjOf(tid);
+      if (!m) { if (!--left) cb(); return; }
+      A.loadTopic(m.s.id, tid, function () { if (!--left) cb(); });
+    });
+  }
+  function buildQuestions(c, cb) {
+    var need = [];
+    LGS.subjects.forEach(function (s) {
+      var o = c.sb[s.id]; if (!o || !o.n) return;
+      (o.tp || s.topics.map(function (t) { return t.id; })).forEach(function (tid) { need.push(tid); });
+    });
+    ensureTopics(need, function () {
+      var out = [];
+      LGS.subjects.forEach(function (s) {
+        var o = c.sb[s.id]; if (!o || !o.n) return;
+        var pool = [];
+        (o.tp || s.topics.map(function (t) { return t.id; })).forEach(function (tid) {
+          var t = LGS.topics[tid]; if (!t) return;
+          A.buildList(t).forEach(function (q) { pool.push({ tid: tid, key: q.key, a: q.a, t: o.t, sb: s.id }); });
+        });
+        out = out.concat(shuffle(pool).slice(0, o.n));
+      });
+      cb(shuffle(out));
+    });
+  }
+
+  /* =========================================================
+     OYUN
+     ========================================================= */
+  var G = null;  // istemci oyun durumu
+  function sideOf(r) { return r === 'h' ? 'L' : 'R'; }
+  function pl(r) { return r === 'h' ? cur.host : cur.guest; }
+
+  function gameState(d) {
+    var st = d.st || {};
+    if (!G) {
+      G = { key: '', loaded: false, qi: -1, hpShown: { h: 100, g: 100 }, prevPh: null, revealed: -1, anim: null, mini: null, fx: [], parts: [], shake: 0, text: null, avatars: {} };
+      document.body.classList.add('vs-on');
+      buildGameDom(d);
+      var tids = []; (d.qs || []).forEach(function (q) { if (tids.indexOf(q.tid) < 0) tids.push(q.tid); });
+      ensureTopics(tids, function () { G && (G.loaded = true, G.key = ''); });
+      loop();
+    }
+    var key = st.ph + ':' + st.i + ':' + (st.ph === 'q' ? Object.keys(st.ans || {}).join('') : '') + (st.ph === 'pk' && st.mv != null ? ':m' : '');
+    if (key === G.key) return;
+    var oldPh = G.ph; G.key = key; G.ph = st.ph;
+    if (oldPh !== st.ph) G.prevPh = oldPh;
+    phase(d, st, oldPh);
+  }
+
+  function hpBar(r) {
+    var p = pl(r) || {}, L = lvl(p), isMe = cur.role === r;
+    return '<div class="hp ' + sideOf(r) + '"><div class="hp-who">' + A.avatarHtml({ name: p.name, photo: p.thumb }, 'av-sm') +
+      '<div class="hp-nm">' + A.rankTag(L) + '<b>' + esc(p.name || '') + '</b><small>Sv ' + L + (isMe ? ' · SEN' : '') + '</small></div></div>' +
+      '<div class="hp-bar"><i class="hp-d" id="hpd' + r + '"></i><i class="hp-f" id="hpf' + r + '"></i><span class="hp-v" id="hpv' + r + '">100</span></div></div>';
+  }
+  function buildGameDom(d) {
+    cv = null;
+    A.setCrumbs([{ href: '#/vs', text: 'VS Arena' }, { text: 'Düello' }]);
+    app.innerHTML = '<div class="vs-game">' +
+      '<div class="vs-hud">' + hpBar('h') + '<div class="vs-clock" id="vsClock">–</div>' + hpBar('g') + '</div>' +
+      '<div class="vs-stage" id="vsStage"><canvas id="vsCv"></canvas><div class="vs-cap" id="vsCap"></div></div>' +
+      '<div class="vs-q" id="vsQ"><p class="loading">Sorular yükleniyor…</p></div>' +
+      '<div class="vs-ov" id="vsOv" hidden></div></div>';
+    ['h', 'g'].forEach(function (r) {
+      var p = pl(r); if (p && p.thumb) { var im = new Image(); im.src = p.thumb; G.avatars[r] = im; }
+    });
+  }
+  function setHp(r, v, instant) {
+    var f = document.getElementById('hpf' + r), dd = document.getElementById('hpd' + r), t = document.getElementById('hpv' + r);
+    if (!f) return;
+    v = Math.max(0, Math.min(100, v));
+    f.style.width = v + '%'; f.classList.toggle('low', v < 30); f.classList.toggle('mid', v >= 30 && v < 70);
+    t.textContent = Math.ceil(v);
+    if (instant) dd.style.transition = 'none', dd.style.width = v + '%', dd.offsetWidth, dd.style.transition = '';
+    else setTimeout(function () { dd.style.width = v + '%'; }, 450);
+    G.hpShown[r] = v;
+  }
+  function ov(html, cls) {
+    var o = document.getElementById('vsOv'); if (!o) return null;
+    if (html == null) { o.hidden = true; o.innerHTML = ''; o.className = 'vs-ov'; return o; }
+    o.hidden = false; o.className = 'vs-ov ' + (cls || ''); o.innerHTML = html; return o;
+  }
+
+  function qObj(i) {
+    var q = cur.qs[i]; if (!q) return null;
+    var t = LGS.topics[q.tid]; if (!t) return null;
+    var it = A.buildList(t).filter(function (x) { return x.key === q.key; })[0];
+    return it ? { it: it, meta: q } : null;
+  }
+  function renderQ(i) {
+    var box = document.getElementById('vsQ'); if (!box) return;
+    var o = qObj(i);
+    if (!o) { box.innerHTML = '<p class="loading">Soru yükleniyor…</p>'; G.qi = -1; return; }
+    var s = LGS.subjects.filter(function (x) { return x.id === o.meta.sb; })[0] || {};
+    var tp = A.subjOf(o.meta.tid), q = o.it, body, ch;
+    if (q.past) {
+      body = '<img class="past" src="' + q.img + '" alt="Çıkmış soru">';
+      ch = '<ul class="ch compact vs-ch">' + LET.map(function (L) { return '<li><button data-c="' + L + '"><b>' + L + ')</b><span class="vs-mk"></span></button></li>'; }).join('') + '</ul>';
+    } else {
+      body = '<div class="stem">' + A.fmt(q.q) + '</div>';
+      ch = '<ul class="ch vs-ch">' + q.c.map(function (c, k) { return '<li><button data-c="' + LET[k] + '"><b>' + LET[k] + ')</b><span>' + A.fmt(c) + '</span><span class="vs-mk"></span></button></li>'; }).join('') + '</ul>';
+    }
+    box.innerHTML = '<div class="vs-qh"><span class="vs-qn">Soru ' + (i + 1) + '/' + cur.qs.length + '</span><span class="vs-qs" style="--c:' + (s.color || '#888') + '">' + (s.icon || '') + ' ' + esc(tp ? tp.t.title : '') + '</span></div>' +
+      '<div class="vs-tbar"><i id="vsTbar"></i></div><article class="q vs-qa">' + body + ch + '<div class="vs-status" id="vsStatus"></div></article>';
+    A.fitSvgs(box);
+    G.qi = i; G.myPick = null;
+    box.querySelector('.vs-ch').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-c]'); if (!b || b.disabled) return;
+      var st = cur.st;
+      if (st.ph !== 'q' || st.i !== i || now() < st.s || G.myPick || (st.ans || {})[cur.role]) return;
+      G.myPick = b.getAttribute('data-c');
+      b.classList.add('mine', cur.role === 'h' ? 'pb' : 'pr');
+      [].forEach.call(box.querySelectorAll('.vs-ch button'), function (x) { x.disabled = true; });
+      status();
+      if (navigator.vibrate) try { navigator.vibrate(12); } catch (er) {}
+      rpc('vs_answer', { p_room: roomId, p_token: C.token(), p_i: i, p_c: G.myPick }, function (err, d) { if (d && d.st) { cur = d; gameState(d); } });
+    });
+  }
+  function status() {
+    var el = document.getElementById('vsStatus'); if (!el || !cur) return;
+    var st = cur.st, ans = st.ans || {}, opp = cur.role === 'h' ? 'g' : 'h', mine = G.myPick || (ans[cur.role] && ans[cur.role].c);
+    el.innerHTML = (mine ? '<span class="ok">✓ Cevabın kilitlendi</span>' : '<span>Cevabını seç</span>') +
+      (ans[opp] ? '<span class="opp">⚡ Rakip cevapladı!</span>' : '<span class="muted">Rakip düşünüyor…</span>');
+  }
+
+  var MOVES = {
+    l: [['punch', '🥊', 'Yumruk Kombosu'], ['kick', '🦵', 'Ön Tekme'], ['sweep', '🤼', 'Yere Serme']],
+    h: [['spin', '🌪️', 'Döner Tekme'], ['knee', '💥', 'Uçan Diz'], ['slam', '🏋️', 'Kaldır Çarp']],
+    f: [['dragon', '🐉', 'Ejder Aparkatı'], ['combo', '💀', 'Ölüm Kombosu'], ['quake', '🌋', 'Deprem Darbesi']]
+  };
+
+  function phase(d, st, oldPh) {
+    var role = cur.role, opp = role === 'h' ? 'g' : 'h';
+    if (st.ph === 'q') {
+      if (G.anim && G.anim.done) G.anim = null;
+      document.getElementById('vsStage').classList.remove('big');
+      if (oldPh !== 'q') { ov(null); setHp('h', st.hp.h, oldPh == null); setHp('g', st.hp.g, oldPh == null); }
+      if (G.qi !== st.i && G.loaded) renderQ(st.i);
+      if (G.qi === st.i) {
+        var ans = st.ans || {};
+        if (ans[role] && !G.myPick) { G.myPick = ans[role].c; var mb = document.querySelector('.vs-ch button[data-c="' + G.myPick + '"]'); if (mb) mb.classList.add('mine', role === 'h' ? 'pb' : 'pr'); [].forEach.call(document.querySelectorAll('.vs-ch button'), function (x) { x.disabled = true; }); }
+        status();
+      } else G.key = ''; // sorular yüklenince tekrar dene
+      G.cdMode = (st.i === 0 || oldPh === 'an' || oldPh === 'pk' || oldPh == null) ? 'cd' : 'next';
+    } else if (st.ph === 'rv') {
+      if (G.qi !== st.i && G.loaded) renderQ(st.i);
+      reveal(st);
+    } else if (st.ph === 'pk') {
+      setHp('h', st.hp.h); setHp('g', st.hp.g);
+      var pk = st.pk, list = MOVES[pk.tier], att = pk.att === role;
+      var title = pk.tier === 'f' ? 'FATALITY' : pk.tier === 'h' ? 'AĞIR DARBE' : 'İLK KAN';
+      var sub = pk.tier === 'f' ? (att ? 'Kazandın! Bitirici hareketini seç.' : esc(pl(pk.att).name) + ' bitirici hareketini seçiyor…')
+        : (att ? 'Rakibin canı %' + (pk.tier === 'h' ? 30 : 70) + '’in altında! Hareketini seç.' : esc(pl(pk.att).name) + ' hareketini seçiyor…');
+      if (att && st.mv == null) {
+        var o = ov('<div class="pk-box ' + pk.tier + '"><div class="pk-t">' + title + '</div><p>' + sub + '</p><div class="pk-list">' +
+          list.map(function (m, k) { return '<button data-m="' + k + '"><span>' + m[1] + '</span><b>' + m[2] + '</b></button>'; }).join('') +
+          '</div><div class="pk-tm"><i id="pkT"></i></div></div>', 'pk');
+        o.querySelector('.pk-list').addEventListener('click', function (e) {
+          var b = e.target.closest('[data-m]'); if (!b) return;
+          [].forEach.call(this.children, function (x) { x.disabled = true; x.classList.toggle('sel', x === b); });
+          rpc('vs_move', { p_room: roomId, p_token: C.token(), p_m: +b.getAttribute('data-m') }, function (err, dd) { if (dd && dd.st) { cur = dd; gameState(dd); } });
+        });
+      } else {
+        ov('<div class="pk-box wait ' + pk.tier + '"><div class="pk-t">' + title + '</div><p>' + (att ? 'Hareketin seçildi!' : sub) + '</p><div class="pk-tm"><i id="pkT"></i></div></div>', 'pk');
+      }
+    } else if (st.ph === 'an') {
+      ov(null);
+      var m = MOVES[st.pk.tier][st.mv];
+      G.anim = { name: m[0], label: m[1] + ' ' + m[2], att: st.pk.att, t0: st.as, tl: TL[m[0]](), fired: {}, tier: st.pk.tier };
+      G.parts = []; G.text = null; G.quake = null;
+      document.getElementById('vsStage').classList.add('big');
+    } else if (st.ph === 'end') {
+      document.getElementById('vsStage').classList.remove('big');
+      setHp('h', st.hp.h); setHp('g', st.hp.g);
+      var won = st.win === role, draw = !st.win;
+      var why = st.why === 'left' ? (won ? 'Rakip düellodan ayrıldı.' : 'Düellodan ayrıldın.') : st.why === 'draw' ? 'Canlar eşit kaldı.' : won ? 'Rakibini yere serdin!' : 'Bu sefer yenildin. Rövanş al!';
+      ov('<div class="end-box ' + (draw ? 'draw' : won ? 'win' : 'lose') + '"><div class="end-t">' + (draw ? 'BERABERE' : won ? 'ZAFER' : 'YENİLGİ') + '</div>' +
+        '<p>' + why + '</p><div class="end-hp"><span class="b">' + esc(cur.host.name) + ' ' + Math.ceil(st.hp.h) + '</span><span class="r">' + esc(cur.guest.name) + ' ' + Math.ceil(st.hp.g) + '</span></div>' +
+        '<div class="end-btns"><a class="btn primary" href="#/vs">Arenaya dön</a></div></div>', 'end');
+      if (navigator.vibrate) try { navigator.vibrate(won ? [80, 50, 160] : 200); } catch (e) {}
+    }
+  }
+
+  function reveal(st) {
+    var res = st.res || {}, box = document.getElementById('vsQ');
+    if (G.revealed === res.i) return;
+    G.revealed = res.i;
+    if (box) {
+      [].forEach.call(box.querySelectorAll('.vs-ch button'), function (b) {
+        var c = b.getAttribute('data-c'), hb = res.hc === c, gb = res.gc === c;
+        b.disabled = true; b.classList.remove('mine', 'pb', 'pr');
+        if (hb && gb) b.classList.add('pbr'); else if (hb) b.classList.add('pb'); else if (gb) b.classList.add('pr');
+        if (c === res.a) b.classList.add('cor');
+        var mk = b.querySelector('.vs-mk');
+        if (mk) mk.innerHTML = (hb ? '<i class="b">' + esc(cur.host.name) + '</i>' : '') + (gb ? '<i class="r">' + esc(cur.guest.name) + '</i>' : '');
+      });
+      var el = document.getElementById('vsStatus');
+      var tm = function (t) { return t == null ? 'cevap yok' : (t / 1000).toFixed(1) + ' sn'; };
+      var msg = res.kind === 'crit' ? '<b class="crit">KRİTİK VURUŞ!</b> ' + esc(pl(res.hit === 'h' ? 'g' : 'h').name) + ' bildi, ' + esc(pl(res.hit).name) + ' bilemedi.'
+        : res.kind === 'fast' ? '<b class="fast">DAHA HIZLI!</b> İkiniz de bildiniz, ' + esc(pl(res.hit === 'h' ? 'g' : 'h').name) + ' önce cevapladı.'
+        : (res.hok && res.gok) ? '<b>Aynı anda!</b> Hasar yok.' : '<b>İkiniz de bilemediniz.</b> Hasar yok.';
+      if (el) el.innerHTML = '<div class="rv-msg">' + msg + '</div><div class="rv-t"><span class="b">' + esc(cur.host.name) + ': ' + tm(res.ht) + '</span><span class="r">' + esc(cur.guest.name) + ': ' + tm(res.gt) + '</span></div>';
+    }
+    if (res.hit) {
+      var att = res.hit === 'h' ? 'g' : 'h';
+      G.mini = { name: res.kind === 'crit' ? 'qcrit' : 'qjab', att: att, t0: now() + 500, tl: TL[res.kind === 'crit' ? 'qcrit' : 'qjab'](), fired: {} };
+      setTimeout(function () { if (G) { setHp(res.hit, st.hp[res.hit]); var hb = document.querySelector('.hp.' + sideOf(res.hit)); if (hb) { hb.classList.remove('hit'); void hb.offsetWidth; hb.classList.add('hit'); } } }, 800);
+      if (navigator.vibrate) setTimeout(function () { try { navigator.vibrate(res.kind === 'crit' ? [30, 20, 60] : 25); } catch (e) {} }, 800);
+    }
+  }
+
+  /* ---------- her kare: saat, geri sayım, sahne ---------- */
+  function loop() {
+    raf = requestAnimationFrame(loop);
+    if (!G || !cur) return;
+    var st = cur.st || {}, n = now();
+    var clock = document.getElementById('vsClock');
+    if (st.ph === 'q') {
+      var left = st.e - Math.max(n, st.s), tot = st.e - st.s;
+      if (clock) clock.textContent = Math.max(0, Math.ceil(left / 1000));
+      if (clock) clock.classList.toggle('warn', left < 5000 && n >= st.s);
+      var tb = document.getElementById('vsTbar'); if (tb) tb.style.width = Math.max(0, Math.min(100, left * 100 / tot)) + '%';
+      if (n < st.s) {
+        var r = st.s - n;
+        if (G.cdMode === 'cd' && r <= 3400) {
+          var k = Math.ceil(r / 1000), txt = k >= 1 ? String(Math.min(3, k)) : 'SAVAŞ!';
+          if (r < 400) txt = 'SAVAŞ!';
+          if (G.cdTxt !== txt) { G.cdTxt = txt; ov('<div class="cd-n' + (txt.length > 1 ? ' go' : '') + '">' + txt + '</div>', 'cd'); if (navigator.vibrate) try { navigator.vibrate(txt.length > 1 ? 60 : 15); } catch (e) {} }
+        } else if (G.cdMode === 'cd') {
+          if (G.cdTxt !== 'ready') { G.cdTxt = 'ready'; ov('<div class="cd-r">HAZIR OL</div>', 'cd'); }
+        } else if (G.cdTxt !== 'next' + st.i) { G.cdTxt = 'next' + st.i; ov('<div class="cd-r">SORU ' + (st.i + 1) + '</div>', 'cd'); }
+        if (G.qi === st.i) [].forEach.call(document.querySelectorAll('.vs-ch button'), function (x) { x.disabled = true; });
+      } else if (G.cdTxt) {
+        G.cdTxt = null; ov(null);
+        if (G.qi === st.i && !G.myPick) [].forEach.call(document.querySelectorAll('.vs-ch button'), function (x) { x.disabled = false; });
+      }
+    } else if (clock) { clock.textContent = st.ph === 'end' ? 'K.O.' : '–'; clock.classList.remove('warn'); }
+    if (st.ph === 'pk') { var pt = document.getElementById('pkT'); if (pt) pt.style.width = Math.max(0, Math.min(100, (st.u - n) / 100)) + '%'; }
+    draw(n);
+  }
+
+  /* =========================================================
+     ÇÖP ADAM DÖVÜŞÇÜLER (kafada avatar)
+     ========================================================= */
+  var IDLE = { x: 0, y: 0, rot: 0, sx: 1, tor: 6, nk: 0, ua1: 40, la1: 95, ua2: 22, la2: 110, th1: 18, sh1: -14, th2: -16, sh2: -6 };
+  var LIE = { y: 44, rot: 90, tor: 0, nk: 0, ua1: 150, la1: 0, ua2: 170, la2: 0, th1: 4, sh1: 0, th2: -4, sh2: 0 };
+  var UP = { y: 16, rot: 30, th1: 80, sh1: -120, th2: 30, sh2: -60, ua1: 60, la1: 40 };
+  var WIN = { ua1: 168, la1: 8, ua2: 165, la2: 10, tor: -4, nk: -10 };
+  function P(o) { var r = {}; for (var k in IDLE) r[k] = IDLE[k]; for (var j in o) r[j] = o[j]; return r; }
+  function M(a, b) { var r = {}; for (var k in a) r[k] = a[k]; for (var j in b) r[j] = b[j]; return r; }
+  var TL = {
+    qjab: function () { return { d: 1000, A: [[0, {}], [200, { x: 88, tor: 14 }], [280, { x: 94, tor: 20, ua1: 92, la1: 0 }], [420, { x: 88 }], [900, { x: 0 }]], D: [[0, {}], [280, {}], [330, { tor: -22, nk: -18, x: -10 }], [900, { x: 0 }]], fx: [[280, 'hit', 'head']] }; },
+    qcrit: function () { return { d: 1300, A: [[0, {}], [240, { x: 80, th1: 40, sh1: -80 }], [360, { x: 84, tor: -18, th1: 98, sh1: 0, ua2: 70 }], [560, { x: 82, th1: 50, sh1: -70 }], [1200, { x: 0 }]], D: [[0, {}], [360, {}], [420, { x: -34, tor: 28, nk: 20, ua1: -10, ua2: -20, th2: -30 }], [700, { x: -40, tor: 12 }], [1250, { x: 0 }]], fx: [[360, 'hit', 'body', { big: 1 }], [360, 'shake', 5]] }; },
+    punch: function () {
+      return { d: 2500, A: [[0, {}], [280, { x: 92, tor: 12 }], [360, { x: 95, tor: 18, ua1: 92, la1: 0 }], [480, { x: 92, tor: 10 }], [600, { x: 96, tor: 22, ua2: 95, la2: 0, ua1: 40 }], [760, { x: 92 }], [900, { x: 98, tor: 18, ua1: 120, la1: -10, y: -4 }], [1150, { x: 92 }], [2000, { x: 0 }]],
+        D: [[0, {}], [360, {}], [420, { tor: -18, nk: -15, x: -6 }], [600, { tor: -5, x: -6 }], [660, { tor: -25, nk: -20, x: -16 }], [900, { x: -16, tor: -8 }], [960, { tor: -36, nk: -28, x: -36, ua1: 10, ua2: -10 }], [1400, { x: -30, tor: -10 }], [2300, { x: 0 }]],
+        fx: [[360, 'hit', 'head'], [600, 'hit', 'head'], [900, 'hit', 'head', { big: 1 }], [900, 'shake', 5], [900, 'blood', { n: 5 }]] };
+    },
+    kick: function () {
+      return { d: 2500, A: [[0, {}], [300, { x: 82, tor: -5, th1: 40, sh1: -80 }], [420, { x: 86, tor: -18, th1: 98, sh1: 0, ua1: 20, ua2: 60 }], [620, { x: 84, th1: 50, sh1: -70, tor: -5 }], [800, { x: 80 }], [1700, { x: 0 }]],
+        D: [[0, {}], [420, {}], [480, { x: -30, tor: 30, nk: 22, ua1: -20, ua2: -30, th1: 5, th2: -30 }], [700, { x: -58, tor: 22 }], [1200, { x: -52, tor: 5 }], [2300, { x: 0 }]],
+        fx: [[420, 'hit', 'body', { big: 1 }], [420, 'shake', 6], [420, 'blood', { n: 4 }]] };
+    },
+    sweep: function () {
+      var crouch = { y: 28, tor: 22, th1: 80, sh1: -150, th2: -60, sh2: -30, ua1: 60, la1: 80 };
+      return { d: 2500, A: [[0, {}], [300, M(crouch, { x: 80 })], [480, M(crouch, { x: 86, tor: 32, th2: 88, sh2: 0, th1: 90, sh1: -160 })], [720, M(crouch, { x: 84 })], [950, { x: 80 }], [1800, { x: 0 }]],
+        D: [[0, {}], [480, {}], [560, { y: -10, rot: 40, th1: 70, th2: 60, sh1: 0, sh2: 0 }], [780, M(LIE, { x: -10 })], [1500, M(LIE, { x: -10 })], [1900, M(UP, { x: -8 })], [2350, { x: 0 }]],
+        fx: [[480, 'hit', 'foot'], [780, 'shake', 7], [780, 'dust']] };
+    },
+    spin: function () {
+      return { d: 3200, A: [[0, {}], [300, { x: 72 }], [420, { x: 76, sx: -1, th2: 30, tor: -10, y: -4 }], [560, { x: 80, sx: 1, th1: 108, sh1: 0, tor: -26, ua1: -30, ua2: 120, la2: 30, y: -8 }], [780, { x: 80, th1: 60, sh1: -60 }], [1050, { x: 74 }], [2100, { x: 0 }]],
+        D: [[0, {}], [560, {}], [620, { x: -40, y: -32, rot: 50, nk: -30, ua1: 160, ua2: 140, la1: 0, la2: 0 }], [900, { x: -90, y: 10, rot: 85 }], [1020, M(LIE, { x: -96 })], [2300, M(LIE, { x: -96 })], [2750, M(UP, { x: -45 })], [3150, { x: 0 }]],
+        fx: [[560, 'hit', 'head', { big: 1 }], [560, 'shake', 9], [560, 'flash'], [560, 'blood', { n: 10 }], [1020, 'dust'], [1020, 'shake', 5]] };
+    },
+    knee: function () {
+      return { d: 3200, A: [[0, {}], [250, { x: 50, y: 8, th1: 30, sh1: -60, tor: 14 }], [460, { x: 86, y: -36, tor: -10, th1: 125, sh1: -150, th2: -30, sh2: -60, ua1: 150, la1: 30, ua2: 150, la2: 30 }], [660, { x: 80, y: -12 }], [820, { x: 78, y: 0 }], [1900, { x: 0 }]],
+        D: [[0, {}], [460, {}], [510, { x: -22, tor: -48, nk: -40, y: -6, ua1: 120, ua2: 100 }], [820, { x: -62, y: 20, rot: 62 }], [1000, M(LIE, { x: -66 })], [2300, M(LIE, { x: -66 })], [2750, M(UP, { x: -24 })], [3150, { x: 0 }]],
+        fx: [[460, 'hit', 'head', { big: 1 }], [460, 'shake', 9], [460, 'blood', { n: 12 }], [1000, 'dust'], [1000, 'shake', 4]] };
+    },
+    slam: function () {
+      return { d: 3250, A: [[0, {}], [320, { x: 100, tor: 16, ua1: 86, la1: 0, ua2: 86, la2: 0 }], [750, { x: 100, y: 6, tor: -12, ua1: 172, la1: 0, ua2: 172, la2: 0, th1: 30, sh1: -30 }], [1100, { x: 100, y: 12, tor: 45, ua1: 100, la1: 0, ua2: 100, la2: 0, th1: 50, sh1: -60 }], [1550, { x: 96 }], [2300, { x: 0 }]],
+        D: [[0, {}], [320, {}], [420, { tor: 10, x: 4 }], [750, { x: 42, y: -78, rot: 185, ua1: 120, ua2: 140, th1: 30, th2: -10 }], [1100, M(LIE, { x: -4 })], [2350, M(LIE, { x: -4 })], [2800, M(UP, { x: -2 })], [3200, { x: 0 }]],
+        fx: [[1100, 'shake', 12], [1100, 'hit', 'body', { big: 1 }], [1100, 'dust'], [1100, 'blood', { n: 10 }], [1100, 'flash']] };
+    },
+    dragon: function () {
+      var crouch = { x: 85, y: 22, tor: 26, th1: 72, sh1: -125, th2: -50, sh2: -50, ua1: 20, la1: 120 };
+      return { d: 5200, A: [[0, {}], [420, crouch], [720, { x: 92, y: -42, tor: -10, ua1: 178, la1: 0, ua2: 30, th1: 20, sh1: -40, th2: -20 }], [1000, { x: 92, y: -20, ua1: 170 }], [1350, { x: 92, y: 0, tor: 5, ua1: 50 }], [2600, M(WIN, { x: 92 })], [5200, M(WIN, { x: 92 })]],
+        D: [[0, {}], [720, {}], [780, { y: -60, rot: 150, x: -10, nk: -40, ua1: 170, ua2: 160 }], [1150, { y: -150, rot: 360, x: -32, ua1: 170, ua2: 160 }], [1650, { y: -60, rot: 540, x: -58 }], [1950, M(LIE, { rot: 630, x: -72 })], [5200, M(LIE, { rot: 630, x: -72 })]],
+        fx: [[720, 'hit', 'head', { big: 1 }], [720, 'blood', { n: 34, up: 1 }], [720, 'shake', 11], [720, 'flash'], [1150, 'blood', { n: 12 }], [1950, 'shake', 13], [1950, 'blood', { n: 22, pool: 1 }], [1950, 'dust'], [2300, 'text', 'FATALITY']] };
+    },
+    combo: function () {
+      var A_ = [[0, {}], [300, { x: 92, tor: 12 }]], D_ = [[0, {}], [380, {}]], fx = [];
+      for (var k = 0; k < 6; k++) {
+        var t = 400 + k * 150, f = k % 2 === 0;
+        A_.push([t, f ? { x: 95 + k, tor: 20, ua1: 92 + (k % 3) * 8, la1: 0 } : { x: 95 + k, tor: 22, ua2: 95, la2: 0, ua1: 40 }]);
+        A_.push([t + 75, { x: 92 + k, tor: 12 }]);
+        D_.push([t + 30, { tor: -20 - k * 2, nk: -16, x: -4 - k * 3 }]); D_.push([t + 110, { tor: -8, x: -4 - k * 3 }]);
+        fx.push([t, 'hit', 'head', { big: k === 5 ? 1 : 0 }]); fx.push([t, 'blood', { n: 5 }]);
+      }
+      A_.push([1400, { x: 90, sx: -1, tor: -10 }], [1560, { x: 92, sx: 1, th1: 110, sh1: 0, tor: -26, y: -8, ua2: 120 }], [1800, { x: 90, th1: 50, sh1: -60 }], [2700, M(WIN, { x: 90 })], [5200, M(WIN, { x: 90 })]);
+      D_.push([1560, { x: -20, tor: -10 }], [1620, { x: -62, y: -40, rot: 72, nk: -30 }], [2000, M(LIE, { x: -116 })], [5200, M(LIE, { x: -116 })]);
+      fx.push([1560, 'hit', 'head', { big: 1 }], [1560, 'blood', { n: 30 }], [1560, 'shake', 12], [1560, 'flash'], [2000, 'shake', 8], [2000, 'blood', { n: 16, pool: 1 }], [2000, 'dust'], [2400, 'text', 'FATALITY']);
+      return { d: 5200, A: A_, D: D_, fx: fx };
+    },
+    quake: function () {
+      return { d: 5200, A: [[0, {}], [320, { y: 22, tor: 20, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [800, { x: 60, y: -150, tor: 0, th1: 60, sh1: -120, th2: -20, sh2: -90, ua1: 165, la1: 0, ua2: 165, la2: 0 }], [1150, { x: 138, y: -16, tor: 45, ua1: 120, la1: 0, ua2: 120, la2: 0, th1: 40, sh1: -80, th2: -10, sh2: -60 }], [1320, { x: 138, y: 22, tor: 50, th1: 75, sh1: -130, th2: -55, sh2: -60, ua1: 100, ua2: 100 }], [1900, { x: 138, y: 0 }], [2600, M(WIN, { x: 138 })], [5200, M(WIN, { x: 138 })]],
+        D: [[0, {}], [700, { nk: -35, tor: -12, ua1: 150, la1: 40, ua2: 140, la2: 40 }], [1150, { nk: -35, tor: -12, ua1: 150, ua2: 140 }], [1200, { y: 14, tor: 34, nk: 10 }], [1300, M(LIE, { x: -14 })], [5200, M(LIE, { x: -14 })]],
+        fx: [[1150, 'hit', 'head', { big: 1 }], [1150, 'shake', 18], [1150, 'flash'], [1150, 'blood', { n: 46 }], [1150, 'quake'], [1300, 'dust'], [1300, 'blood', { n: 18, pool: 1 }], [2100, 'text', 'FATALITY']] };
+    }
+  };
+  function ease(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+  function sample(keys, t) {
+    if (!keys || !keys.length) return P({});
+    if (t <= keys[0][0]) return P(keys[0][1]);
+    for (var i = 1; i < keys.length; i++) {
+      if (t <= keys[i][0]) {
+        var a = P(keys[i - 1][1]), b = P(keys[i][1]), k = ease((t - keys[i - 1][0]) / Math.max(1, keys[i][0] - keys[i - 1][0])), r = {};
+        for (var f in a) r[f] = a[f] + (b[f] - a[f]) * k;
+        return r;
+      }
+    }
+    return P(keys[keys.length - 1][1]);
+  }
+
+  var L_T = 34, L_U = 19, L_L = 19, L_TH = 25, L_SH = 24, HR = 13, GROUND = 172;
+  function rad(d) { return d * Math.PI / 180; }
+  function rig(p, bx, f) {
+    var H = { x: bx + p.x * f, y: GROUND - L_TH - L_SH + p.y };
+    var pts = {};
+    var tor = rad(p.tor);
+    pts.N = { x: H.x + Math.sin(tor) * f * L_T, y: H.y - Math.cos(tor) * L_T };
+    var hn = rad(p.tor + p.nk);
+    pts.Hd = { x: pts.N.x + Math.sin(hn) * f * (HR + 1), y: pts.N.y - Math.cos(hn) * (HR + 1) };
+    function limb(o, a, b, l1, l2, key) {
+      var a1 = rad(a), a2 = rad(a + b);
+      pts[key + 'e'] = { x: o.x + Math.sin(a1) * f * l1, y: o.y + Math.cos(a1) * l1 };
+      pts[key + 'h'] = { x: pts[key + 'e'].x + Math.sin(a2) * f * l2, y: pts[key + 'e'].y + Math.cos(a2) * l2 };
+    }
+    limb(pts.N, p.ua1, p.la1, L_U, L_L, 'a1'); limb(pts.N, p.ua2, p.la2, L_U, L_L, 'a2');
+    limb(H, p.th1, p.sh1, L_TH, L_SH, 'l1'); limb(H, p.th2, p.sh2, L_TH, L_SH, 'l2');
+    var th = rad(-p.rot * f), c = Math.cos(th), s = Math.sin(th);
+    for (var k in pts) {
+      var dx = (pts[k].x - H.x) * p.sx, dy = pts[k].y - H.y;
+      pts[k] = { x: H.x + c * dx - s * dy, y: H.y + s * dx + c * dy };
+    }
+    pts.H = H;
+    return pts;
+  }
+
+  var cv = null, ctx = null, lastT = 0;
+  function poseFor(r, n) {
+    var t = n / 1000, breathe = { y: Math.sin(t * 3 + (r === 'h' ? 0 : 1.3)) * 1.3, la1: 95 + Math.sin(t * 3) * 4 };
+    var an = G.anim && !G.anim.done ? G.anim : (G.mini && !G.mini.done ? G.mini : null);
+    if (an && n >= an.t0 - 50) {
+      var tt = n - an.t0;
+      if (tt > an.tl.d && an === G.mini) { G.mini.done = true; return P(breathe); }
+      var keys = r === an.att ? an.tl.A : an.tl.D;
+      return sample(keys, tt);
+    }
+    var st = cur.st || {};
+    if (st.ph === 'end' && st.why !== 'left' && st.win && st.win !== r && G.prevPh === 'an') return P(M(LIE, { x: -72 }));
+    if (st.ph === 'end' && st.win === r) return P(M(WIN, breathe));
+    return P(breathe);
+  }
+  function draw(n) {
+    var stage = document.getElementById('vsStage'); if (!stage) return;
+    if (!cv) { cv = document.getElementById('vsCv'); ctx = cv && cv.getContext('2d'); }
+    if (!cv || !cv.isConnected) { cv = document.getElementById('vsCv'); ctx = cv && cv.getContext('2d'); if (!cv) return; }
+    var dpr = Math.min(2.5, window.devicePixelRatio || 1), w = stage.clientWidth, h = stage.clientHeight;
+    if (cv.width !== Math.round(w * dpr) || cv.height !== Math.round(h * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+    var big = stage.classList.contains('big');
+    var sc = big ? Math.min(w / 320, h / 250) : Math.min(w / 360, h / 200);
+    var ox = w / 2 - 180 * sc, oy = big ? (h - 250 * sc) / 2 + 30 * sc : h - 200 * sc;
+    var dt = lastT ? Math.min(0.05, (n - lastT) / 1000) : 0.016; lastT = n;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    // arka plan
+    var g = ctx.createLinearGradient(0, 0, 0, h); g.addColorStop(0, big ? '#120d08' : '#0d1018'); g.addColorStop(1, '#05060a');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
+    // animasyon olayları
+    var an = G.anim && !G.anim.done ? G.anim : (G.mini && !G.mini.done ? G.mini : null);
+    var shx = 0, shy = 0;
+    if (an) {
+      var tt = n - an.t0;
+      an.tl.fx.forEach(function (e, k) {
+        if (tt >= e[0] && !an.fired[k]) { an.fired[k] = true; if (tt - e[0] < 600) fire(e, an); }
+      });
+      if (an === G.anim && tt > an.tl.d + 200) an.done = true;
+    }
+    if (G.shake > 0) { shx = (Math.random() - 0.5) * G.shake; shy = (Math.random() - 0.5) * G.shake; G.shake *= 0.88; if (G.shake < 0.3) G.shake = 0; }
+    ctx.save();
+    ctx.translate(ox + shx * sc, oy + shy * sc); ctx.scale(sc, sc);
+    // zemin
+    ctx.strokeStyle = 'rgba(212,168,75,.55)'; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(-200, GROUND + 0.5); ctx.lineTo(560, GROUND + 0.5); ctx.stroke();
+    var fg = ctx.createLinearGradient(0, GROUND, 0, GROUND + 40); fg.addColorStop(0, 'rgba(212,168,75,.14)'); fg.addColorStop(1, 'rgba(212,168,75,0)');
+    ctx.fillStyle = fg; ctx.fillRect(-200, GROUND, 760, 40);
+    if (G.quake) { ctx.strokeStyle = 'rgba(0,0,0,.9)'; ctx.lineWidth = 1.6; G.quake.forEach(function (c) { ctx.beginPath(); ctx.moveTo(c[0][0], c[0][1]); for (var i = 1; i < c.length; i++) ctx.lineTo(c[i][0], c[i][1]); ctx.stroke(); }); }
+    // kan gölü / parçacıklar (zeminde)
+    G.parts.forEach(function (p) { if (p.pool) { ctx.fillStyle = 'rgba(120,0,12,.85)'; ctx.beginPath(); ctx.ellipse(p.x, GROUND + 1, p.r * 2.4, p.r * 0.6, 0, 0, 7); ctx.fill(); } });
+    // dövüşçüler
+    var pts = { h: rig(poseFor('h', n), 110, 1), g: rig(poseFor('g', n), 250, -1) };
+    fighter(pts.h, 'h'); fighter(pts.g, 'g');
+    G.lastPts = pts;
+    // parçacıklar
+    G.parts = G.parts.filter(function (p) {
+      if (p.pool) return true;
+      p.vy += 520 * dt; p.x += p.vx * dt; p.y += p.vy * dt; p.life -= dt;
+      if (p.blood && p.y >= GROUND) { p.y = GROUND; p.pool = true; p.r = Math.max(1, p.r * 0.9); return true; }
+      if (p.life <= 0) return false;
+      ctx.globalAlpha = Math.max(0, Math.min(1, p.life * 2));
+      ctx.fillStyle = p.c; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill();
+      ctx.globalAlpha = 1; return true;
+    });
+    if (G.parts.length > 400) G.parts.splice(0, G.parts.length - 400);
+    // vuruş halkaları
+    G.fx = G.fx.filter(function (f) {
+      var k = (n - f.t) / 260; if (k > 1) return false;
+      ctx.strokeStyle = 'rgba(255,240,200,' + (1 - k) + ')'; ctx.lineWidth = f.big ? 3 : 2;
+      ctx.beginPath(); ctx.arc(f.x, f.y, 4 + k * (f.big ? 26 : 14), 0, 7); ctx.stroke();
+      for (var i = 0; i < 8; i++) { var a = i * Math.PI / 4 + f.t; ctx.beginPath(); ctx.moveTo(f.x + Math.cos(a) * (6 + k * 10), f.y + Math.sin(a) * (6 + k * 10)); ctx.lineTo(f.x + Math.cos(a) * (12 + k * (f.big ? 30 : 18)), f.y + Math.sin(a) * (12 + k * (f.big ? 30 : 18))); ctx.stroke(); }
+      return true;
+    });
+    ctx.restore();
+    // flaş
+    if (G.flash && n - G.flash < 160) { ctx.fillStyle = 'rgba(255,255,255,' + (0.55 * (1 - (n - G.flash) / 160)) + ')'; ctx.fillRect(0, 0, w, h); }
+    // yazılar
+    var cap = document.getElementById('vsCap');
+    if (G.anim && !G.anim.done && cap) {
+      var t2 = n - G.anim.t0;
+      var label = t2 < 1100 ? '<div class="cap-mv ' + G.anim.tier + '">' + esc(G.anim.label) + '</div>' : '';
+      var fat = G.text && n - G.text.t >= 0 ? '<div class="cap-fat">' + G.text.s + '</div><div class="cap-win">' + esc(pl(G.anim.att).name) + ' KAZANDI</div>' : '';
+      var html = label + fat;
+      if (cap._h !== html) { cap._h = html; cap.innerHTML = html; }
+    } else if (cap && cap._h) { cap._h = ''; cap.innerHTML = ''; }
+  }
+  function fighter(p, r) {
+    var col = r === 'h' ? '#3b82f6' : '#ef4444', hi = r === 'h' ? '#93c5fd' : '#fca5a5';
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    var seg = function (a, b, wdt, c) { ctx.strokeStyle = c; ctx.lineWidth = wdt; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); };
+    // gölge
+    ctx.fillStyle = 'rgba(0,0,0,.45)'; ctx.beginPath(); ctx.ellipse(p.H.x, GROUND + 2, 20, 3.5, 0, 0, 7); ctx.fill();
+    var chain = function (o, k, w2, c) { seg(o, p[k + 'e'], w2, c); seg(p[k + 'e'], p[k + 'h'], w2, c); };
+    // arka uzuvlar koyu
+    chain(p.N, 'a2', 5, shade(col)); chain(p.H, 'l2', 5.5, shade(col));
+    seg(p.H, p.N, 7, col); seg(p.H, p.N, 2, hi);
+    chain(p.H, 'l1', 5.5, col); chain(p.N, 'a1', 5, col);
+    // eller / ayaklar
+    ctx.fillStyle = hi; [p.a1h, p.a2h].forEach(function (q) { ctx.beginPath(); ctx.arc(q.x, q.y, 3.2, 0, 7); ctx.fill(); });
+    // kafa: avatar
+    var hd = p.Hd, im = G.avatars[r];
+    ctx.save(); ctx.beginPath(); ctx.arc(hd.x, hd.y, HR, 0, 7); ctx.closePath();
+    if (im && im.complete && im.naturalWidth) { ctx.clip(); ctx.drawImage(im, hd.x - HR, hd.y - HR, HR * 2, HR * 2); }
+    else { ctx.fillStyle = col; ctx.fill(); ctx.fillStyle = '#fff'; ctx.font = '700 13px Inter,system-ui,sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(((pl(r) || {}).name || '?').charAt(0).toLocaleUpperCase('tr'), hd.x, hd.y + 1); }
+    ctx.restore();
+    ctx.strokeStyle = col; ctx.lineWidth = 2.2; ctx.beginPath(); ctx.arc(hd.x, hd.y, HR, 0, 7); ctx.stroke();
+    // isim / rütbe / seviye
+    var pp = pl(r) || {}, L = lvl(pp), rk = A.rankOf(L);
+    var ty = Math.min(hd.y, p.H.y - 40) - HR - 6;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+    ctx.font = '700 9.5px Inter,system-ui,sans-serif'; ctx.fillStyle = '#fff';
+    ctx.shadowColor = 'rgba(0,0,0,.9)'; ctx.shadowBlur = 3;
+    ctx.fillText(pp.name || '', hd.x, ty - 9);
+    ctx.font = '700 7.5px Inter,system-ui,sans-serif'; ctx.fillStyle = rk.c;
+    ctx.fillText(rk.i + ' ' + rk.n.toLocaleUpperCase('tr') + ' · SV ' + L, hd.x, ty);
+    ctx.shadowBlur = 0;
+  }
+  function shade(c) { return c === '#3b82f6' ? '#1d4ed8' : '#b91c1c'; }
+  function fire(e, an) {
+    var type = e[1], opt = e[3] || {}, pts = G.lastPts; if (!pts) return;
+    var def = an.att === 'h' ? 'g' : 'h', dp = pts[def], ap = pts[an.att];
+    var at = e[2] === 'head' ? dp.Hd : e[2] === 'foot' ? dp.l1h : e[2] === 'body' ? { x: (dp.H.x + dp.N.x) / 2, y: (dp.H.y + dp.N.y) / 2 } : dp.Hd;
+    var dir = def === 'h' ? -1 : 1;  // savunanın geri yönü
+    if (type === 'hit') { G.fx.push({ x: at.x, y: at.y, t: now(), big: opt.big }); for (var i = 0; i < (opt.big ? 14 : 7); i++) G.parts.push({ x: at.x, y: at.y, vx: (Math.random() - 0.3) * 220 * dir, vy: -Math.random() * 180, r: 1 + Math.random() * 1.4, c: '#ffe8a3', life: 0.35 }); }
+    else if (type === 'blood') {
+      var b = e[3] && e[3].n ? e[3].n : 8, src = opt.pool ? { x: dp.H.x, y: GROUND - 6 } : dp.Hd;
+      for (var j = 0; j < b; j++) G.parts.push({ x: src.x, y: src.y, vx: (Math.random() * 1.2 - 0.2) * (opt.pool ? 70 : 190) * dir, vy: -(opt.up ? 260 : 120) * Math.random() - 40, r: 1 + Math.random() * 2.2, c: Math.random() < 0.5 ? '#b3001b' : '#7a0010', life: 1.6, blood: true });
+    }
+    else if (type === 'shake') G.shake = Math.max(G.shake, e[2]);
+    else if (type === 'flash') G.flash = now();
+    else if (type === 'dust') { for (var k = 0; k < 16; k++) G.parts.push({ x: dp.H.x + (Math.random() - 0.5) * 40, y: GROUND - 2, vx: (Math.random() - 0.5) * 120, vy: -Math.random() * 60, r: 1.5 + Math.random() * 2.5, c: 'rgba(180,170,150,.55)', life: 0.6 }); }
+    else if (type === 'quake') {
+      G.quake = [];
+      for (var q = 0; q < 6; q++) { var x0 = dp.H.x, y0 = GROUND + 1, c = [[x0, y0]], ang = (q / 6) * Math.PI + 0.2; for (var s = 1; s < 5; s++) { x0 += Math.cos(ang) * (8 + Math.random() * 8) * (q % 2 ? 1 : -1); y0 += Math.random() * 4; c.push([x0, y0]); } G.quake.push(c); }
+    }
+    else if (type === 'text') { G.text = { s: e[2], t: now() }; if (navigator.vibrate) try { navigator.vibrate([100, 60, 200]); } catch (er) {} }
+    if (type === 'hit' && navigator.vibrate && an === G.anim) try { navigator.vibrate(opt.big ? 40 : 15); } catch (er) {}
+  }
+
+  window.LGSVS = { page: page, stop: stop, _dbg: function () { return { off: off, rtt: bestRtt, now: now(), an: G && G.anim ? now() - G.anim.t0 : null, ph: cur && cur.st && cur.st.ph }; } };
+})();

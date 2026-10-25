@@ -993,7 +993,8 @@
     var h = location.hash.replace(/^#\/?/, '').split('/');
     window.scrollTo({ top: 0, behavior: 'instant' });
     openNav(false);
-    var r = h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
+    if (window.LGSVS) window.LGSVS.stop();
+    var r = h[0] === 'vs' ? 'vs' : h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
     markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
@@ -1001,6 +1002,7 @@
     else if (h[0] === 'profil') profilePage();
     else if (h[0] === 'lider') leaderPage();
     else if (h[0] === 'indir') installPage();
+    else if (h[0] === 'vs') { if (window.LGSVS) window.LGSVS.page(h[1]); else app.innerHTML = '<p class="empty">VS modu için internet bağlantısı gerekli.</p>'; }
     else if (h[0] === 'u' && h[1]) userPage(h.slice(1).join('/'));
     else home();
     updateBadge();
@@ -1008,5 +1010,8 @@
   window.addEventListener('hashchange', route);
   getStats(); xpBarSet(xpGet().total); drawNavUser();
   window.LGSApp.route = route;
-  route();
+  var A_ = window.LGSApp;
+  A_.buildList = buildList; A_.loadTopic = loadTopic; A_.subjOf = subjOf; A_.fmt = fmt; A_.esc = esc; A_.avatarHtml = avatarHtml;
+  A_.levelOf = levelOf; A_.rankOf = rankOf; A_.rankTag = rankTag; A_.setCrumbs = setCrumbs; A_.fitSvgs = fitSvgs; A_.toast = toast; A_.nf = nf;
+  setTimeout(route, 0);
 })();

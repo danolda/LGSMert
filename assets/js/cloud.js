@@ -48,6 +48,9 @@
         if (p.name && (!n || p.name === n)) save(p.name, function () {});
       }, 2500);
     },
+    rpc: function (name, body, cb) { req('POST', 'rpc/' + name, body, cb); },
+    token: function () { return token(); },
+    name: function () { return A.jget(A.KEY + 'cloudName', ''); },
     leaderboard: function (period, cb) {
       var n = A.jget(A.KEY + 'cloudName', '');
       req('POST', 'rpc/leaderboard', { p_period: period, p_token: n ? token() : null }, function (err, d) { cb(err ? null : d); });
