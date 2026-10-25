@@ -49,8 +49,42 @@
   }
   // {{pay|payda}} -> kesir gösterimi
   function fmt(html) {
-    return String(html == null ? '' : html).replace(/\{\{([^{}|]+)\|([^{}]+)\}\}/g, '<span class="fr"><span>$1</span><span>$2</span></span>');
+    return String(html == null ? '' : html).replace(/\{\{([^{}|]+)\|([^{}]+)\}\}/g, '<span class="fr"><span>$1</span><span>$2</span></span>')
+      .replace(/<table\b/g, '<div class="tbl"><table').replace(/<\/table>/g, '</table></div>');
   }
+
+  // SVG içeriği viewBox dışına taşıyorsa viewBox'ı içeriğe göre genişlet (kırpılmayı önler)
+  function fitSvgs(root) {
+    var svgs = (root || document).querySelectorAll('main svg:not([data-fit])');
+    for (var i = 0; i < svgs.length; i++) {
+      var sv = svgs[i];
+      if (sv.ownerSVGElement) continue;
+      var vb = sv.viewBox && sv.viewBox.baseVal;
+      if (!vb || !vb.width) { sv.setAttribute('data-fit', '1'); continue; }
+      var bb;
+      try { bb = sv.getBBox(); } catch (e) { continue; }
+      if (!bb || (!bb.width && !bb.height)) continue; // görünmüyor; sonra tekrar denenecek
+      sv.setAttribute('data-fit', '1');
+      var pad = 3, x0 = Math.min(vb.x, bb.x - pad), y0 = Math.min(vb.y, bb.y - pad);
+      var x1 = Math.max(vb.x + vb.width, bb.x + bb.width + pad), y1 = Math.max(vb.y + vb.height, bb.y + bb.height + pad);
+      if (x0 < vb.x - 0.5 || y0 < vb.y - 0.5 || x1 > vb.x + vb.width + 0.5 || y1 > vb.y + vb.height + 0.5) {
+        sv.setAttribute('viewBox', [x0, y0, x1 - x0, y1 - y0].map(function (n) { return Math.round(n * 10) / 10; }).join(' '));
+        var w = parseFloat(sv.getAttribute('width')), h = parseFloat(sv.getAttribute('height'));
+        if (w && h) sv.setAttribute('height', Math.round(w * (y1 - y0) / (x1 - x0)));
+      }
+    }
+  }
+  var fitPending = false;
+  function scheduleFit() {
+    if (fitPending) return; fitPending = true;
+    (window.requestAnimationFrame || setTimeout)(function () { fitPending = false; fitSvgs(document); });
+  }
+  if (window.MutationObserver) {
+    new MutationObserver(scheduleFit).observe(document.getElementById('app') || document.body,
+      { childList: true, subtree: true, attributes: true, attributeFilter: ['hidden', 'open', 'style', 'class'] });
+  }
+  document.addEventListener('toggle', scheduleFit, true);
+
   function subjOf(tid) {
     for (var i = 0; i < LGS.subjects.length; i++) {
       var s = LGS.subjects[i];

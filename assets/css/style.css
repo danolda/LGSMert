@@ -278,3 +278,23 @@ span.rt>span{border-top:1px solid currentColor;padding-left:1px}
 @media (max-width:520px){.totop{right:14px;bottom:14px;width:46px;height:46px}}
 
 @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important}}
+
+/* ---------- mobil taşma düzeltmeleri ---------- */
+main{overflow-x:clip}
+.sum,.q,.sol,.q .stem,.ch button>span,.two>*,.dialog div{min-width:0}
+.sum,.sol{overflow-wrap:break-word}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:12px 0}
+.tbl>table{margin:0 !important}
+.tbl .tbl{margin:0}
+main svg,main img{max-width:100%;height:auto}
+.sol svg{display:block;margin:10px auto;background:#fff;color:#1d2433;border-radius:12px;border:1px solid var(--line)}
+.ch button>span{overflow-wrap:anywhere}
+.sum td,.sum th,.sol td,.sol th,.q .stem td,.q .stem th{hyphens:auto;-webkit-hyphens:auto}
+.sol table{border-collapse:collapse;font-size:15px}
+.sol th,.sol td{border:1px solid var(--line2);padding:5px 9px}
+@media (max-width:600px){
+  .sum{padding:6px 14px 14px}
+  .sum table,.q .stem table,.sol table{font-size:13.5px}
+  .sum th,.sum td{padding:6px 7px}
+  .q .stem th,.q .stem td,.sol th,.sol td{padding:4px 6px}
+}
