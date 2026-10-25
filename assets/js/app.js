@@ -633,7 +633,9 @@
         var S = 256, c = document.createElement('canvas'); c.width = c.height = S;
         var k = Math.min(img.width, img.height), sx = (img.width - k) / 2, sy = (img.height - k) / 2;
         c.getContext('2d').drawImage(img, sx, sy, k, k, 0, 0, S, S);
-        cb(c.toDataURL('image/jpeg', 0.82));
+        var t = document.createElement('canvas'); t.width = t.height = 72;
+        t.getContext('2d').drawImage(c, 0, 0, 72, 72);
+        cb(c.toDataURL('image/jpeg', 0.82), t.toDataURL('image/jpeg', 0.8));
       };
       img.onerror = function () { cb(null); };
       img.src = rd.result;
@@ -651,7 +653,8 @@
       '<input id="photoIn" type="file" accept="image/*" hidden></label>' +
       '<div class="prof-name"><label for="nameIn" class="small">Kullanıcı adı</label>' +
       '<div class="name-row"><input id="nameIn" maxlength="24" autocomplete="nickname" placeholder="Adını yaz" value="' + esc(p.name || '') + '">' +
-      '<button class="btn" id="nameSave">Kaydet</button></div><p class="small" id="nameMsg"></p></div></div>' +
+      '<button class="btn" id="nameSave">Kaydet</button></div><p class="small" id="nameMsg"></p>' +
+      '<p class="small">Adın, fotoğrafın ve istatistiklerin diğer kullanıcılara görünür. Gerçek soyadını yazmamanı öneririz.</p></div></div>' +
       '<div class="card find"><label for="findIn"><b>🔎 Diğer kullanıcılar</b></label>' +
       '<input id="findIn" placeholder="Kullanıcı adı ara" autocomplete="off"><ul id="findList" class="find-list"></ul>' +
       '<p class="small" id="findMsg"></p></div>' +
@@ -672,9 +675,9 @@
     });
     document.getElementById('photoIn').addEventListener('change', function () {
       var f = this.files && this.files[0]; if (!f) return;
-      resizePhoto(f, function (url) {
+      resizePhoto(f, function (url, th) {
         if (!url) { msg.textContent = 'Fotoğraf okunamadı.'; return; }
-        var q = getProfile(); q.photo = url;
+        var q = getProfile(); q.photo = url; q.thumb = th;
         if (!setProfile(q)) { msg.textContent = 'Fotoğraf kaydedilemedi.'; return; }
         var w = document.querySelector('.av-wrap'); var old = w.querySelector('.av-big');
         var tmp = document.createElement('div'); tmp.innerHTML = avatarHtml(q, 'av-big'); w.replaceChild(tmp.firstChild, old);
@@ -687,7 +690,7 @@
       if (!window.LGSCloud || !window.LGSCloud.search) { fmsg.textContent = 'Kullanıcı sunucusu hazırlanıyor; çok yakında burada diğer kullanıcıları görebileceksin.'; return; }
       window.LGSCloud.search(findIn.value.trim(), function (rows) {
         list.innerHTML = (rows || []).map(function (r) {
-          return '<li><a href="#/u/' + encodeURIComponent(r.username) + '">' + avatarHtml({ name: r.username, photo: r.photo }, 'av-sm') + '<span>' + esc(r.username) + '</span></a></li>';
+          return '<li><a href="#/u/' + encodeURIComponent(r.username) + '">' + avatarHtml({ name: r.username, photo: r.thumb || r.photo }, 'av-sm') + '<span>' + esc(r.username) + '</span></a></li>';
         }).join('');
         fmsg.textContent = rows && rows.length ? '' : (findIn.value.trim() ? 'Bu adla kullanıcı bulunamadı.' : 'Henüz kayıtlı kullanıcı yok.');
       });
@@ -728,7 +731,7 @@
   function drawNavUser() {
     var u = document.getElementById('navUser'); if (!u) return;
     var p = getProfile();
-    u.innerHTML = avatarHtml(p, 'av-sm') + '<span>' + esc(p.name || 'Profilini oluştur') + '</span>';
+    u.innerHTML = avatarHtml({ name: p.name, photo: p.thumb || p.photo }, 'av-sm') + '<span>' + esc(p.name || 'Profilini oluştur') + '</span>';
   }
   function markNav(r) {
     [].forEach.call(document.querySelectorAll('#drawer a[data-r]'), function (a) { a.classList.toggle('on', a.getAttribute('data-r') === r); });
