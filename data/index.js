@@ -1,5 +1,7 @@
 window.LGS = {
-  version: 5,
+  version: 6,
+  xpMax: 316725,          // tüm sorular 3 kez doğru çözülünce toplanan EXP (100. seviye)
+  examDate: '2027-06-13', // LGS 2027 tahmini tarih; MEB açıklayınca güncelle
   topics: {},
   past: {},
   pastLoaded: {},

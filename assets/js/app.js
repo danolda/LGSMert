@@ -301,6 +301,7 @@
         save(t.id, a);
         logAnswer(t.id, pick === q.a);
         if (pick !== q.a) remAdd(t.id, q.key);
+        else onCorrect(t.id, q.key, b);
         paint(t.id, q, i);
         updateScore(t.id, list);
         return;
@@ -546,6 +547,7 @@
           var l = remList().filter(function (y) { return !(y.tid === it.r.tid && y.key === it.r.key); });
           if (ok) {
             res.className = 'res ok'; res.textContent = '✓ Doğru! Soru hatırlatıcıdan silindi.';
+            onCorrect(it.r.tid, it.r.key, b);
           } else {
             var nd = addDays(remDays());
             l.push({ tid: it.r.tid, key: it.r.key, due: nd, n: (it.r.n || 0) + 1, added: it.r.added });
@@ -643,6 +645,15 @@
     rd.readAsDataURL(file);
   }
 
+  function lvCard(x) {
+    var L = levelOf(x), r = rankOf(L), lo = needFor(L), hi = needFor(L + 1), p = L >= 100 ? 100 : (x - lo) * 100 / (hi - lo);
+    var nx = RANKS[Math.min(9, Math.floor(L / 10) + 1)], nxL = Math.min(100, (Math.floor(L / 10) + 1) * 10);
+    return '<div class="card lvcard" style="--rc:' + r.c + '"><div class="lvc-emb">' + r.i + '</div>' +
+      '<div class="lvc-b"><div class="lvc-t"><b>' + r.n + '</b><span>Seviye ' + L + '</span></div>' +
+      '<div class="lvc-bar"><i style="width:' + p.toFixed(1) + '%"></i></div>' +
+      '<div class="small">' + nf(x) + ' toplam EXP' + (L < 100 ? ' · sonraki seviyeye ' + nf(hi - x) : '') +
+      (L < 90 ? ' · ' + nxL + '. seviyede ' + nx.i + ' ' + nx.n : '') + '</div></div></div>';
+  }
   function profilePage() {
     setCrumbs([{ text: 'Profil ve İstatistik' }]);
     document.title = 'Profil ve İstatistik · LGS 2027';
@@ -658,6 +669,7 @@
       '<div class="card find"><label for="findIn"><b>🔎 Diğer kullanıcılar</b></label>' +
       '<input id="findIn" placeholder="Kullanıcı adı ara" autocomplete="off"><ul id="findList" class="find-list"></ul>' +
       '<p class="small" id="findMsg"></p></div>' +
+      lvCard(xpGet().total) +
       '<h1 class="st-h">📊 İstatistiklerim</h1>' +
       statsBlock(summaryFor(getStats())) +
       '<p class="small">Bu kayıt konu sayfalarındaki “Temizle” düğmesiyle silinmez; çözdüğün her soru buraya eklenir.</p></div>';
@@ -711,7 +723,7 @@
         '<div class="card prof-head">' + avatarHtml({ name: r.username, photo: r.photo }, 'av-big') +
         '<div class="prof-name"><h1 style="margin:0">' + esc(r.username) + '</h1>' +
         (r.updated_at ? '<p class="small">Son etkinlik: ' + new Date(r.updated_at).toLocaleDateString('tr-TR') + '</p>' : '') + '</div></div>' +
-        statsBlock(r.stats || {}) + '</div>';
+        lvCard(r.xp_total || 0) + statsBlock(r.stats || {}) + '</div>';
     });
   }
 
@@ -731,12 +743,223 @@
   function drawNavUser() {
     var u = document.getElementById('navUser'); if (!u) return;
     var p = getProfile();
-    u.innerHTML = avatarHtml({ name: p.name, photo: p.thumb || p.photo }, 'av-sm') + '<span>' + esc(p.name || 'Profilini oluştur') + '</span>';
+    var L = levelOf(xpGet().total);
+    u.innerHTML = avatarHtml({ name: p.name, photo: p.thumb || p.photo }, 'av-sm') + '<span class="nu-t">' + rankTag(L) + '<b>' + esc(p.name || 'Profilini oluştur') + '</b><small>Seviye ' + L + '</small></span>';
   }
   function markNav(r) {
     [].forEach.call(document.querySelectorAll('#drawer a[data-r]'), function (a) { a.classList.toggle('on', a.getAttribute('data-r') === r); });
   }
-  window.LGSApp = { getStats: getStats, getProfile: getProfile, setProfile: setProfile, summaryFor: summaryFor, jget: jget, jset: jset, KEY: KEY };
+  window.LGSApp = { xpGet: function () { return xpGet(); }, istDay: function (d) { return istDay(d); }, getStats: getStats, getProfile: getProfile, setProfile: setProfile, summaryFor: summaryFor, jget: jget, jset: jset, KEY: KEY };
+
+
+  /* =========================================================
+     EXP · SEVİYE · RÜTBE
+     ========================================================= */
+  var XKEY = KEY + 'xp';
+  var XPMAX = LGS.xpMax || 316725;            // tüm sorular 3 kez doğru = 100. seviye
+  var XP_BASE = { kolay: 10, orta: 15, zor: 20, past: 20, 'new': 15 };
+  var COOL = 7 * 864e5, MAXREP = 3;
+  var RANKS = [
+    { n: 'Çaylak', i: '🔰', c: '#9aa4b8' }, { n: 'Akıncı', i: '🗡️', c: '#c08457' },
+    { n: 'Savaşçı', i: '⚔️', c: '#d1d5db' }, { n: 'Bahadır', i: '🛡️', c: '#60a5fa' },
+    { n: 'Alp', i: '🏹', c: '#34d399' }, { n: 'Kartal', i: '🦅', c: '#fbbf24' },
+    { n: 'Bozkurt', i: '🐺', c: '#94a3b8' }, { n: 'Komutan', i: '🎖️', c: '#f97316' },
+    { n: 'Efsane', i: '🔥', c: '#ef4444' }, { n: 'Fatih', i: '👑', c: '#facc15' }
+  ];
+  function istDay(d) {
+    try { return (d || new Date()).toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' }); } catch (e) { return ymd(d); }
+  }
+  function grpOfKey(k) { return { p: 'past', ko: 'kolay', or: 'orta', zr: 'zor', o: 'new' }[String(k).split(':')[0]] || 'new'; }
+  function needFor(L) { return L <= 1 ? 0 : Math.round(XPMAX * Math.pow((Math.min(L, 100) - 1) / 99, 1.8)); }
+  function levelOf(x) { var L = 1; while (L < 100 && needFor(L + 1) <= x) L++; return L; }
+  function rankOf(L) { return RANKS[Math.min(9, Math.floor(L / 10))]; }
+  function rankTag(L) { var r = rankOf(L); return '<span class="rtag" style="--rc:' + r.c + '">' + r.i + ' ' + r.n + '</span>'; }
+  function xpGet() {
+    var x = jget(XKEY, null);
+    if (!x || !x.q) {
+      // ilk açılış: daha önce doğru yapılmış sorular bir kez EXP kazandırır
+      x = { v: 1, total: 0, q: {}, days: {} };
+      var now = Date.now(), d = istDay();
+      LGS.subjects.forEach(function (sb) {
+        sb.topics.forEach(function (tp) {
+          var a = load(tp.id);
+          for (var k in a) if (a.hasOwnProperty(k) && k.charAt(0) !== '_' && a[k].ok) {
+            var amt = XP_BASE[grpOfKey(k)]; x.q[tp.id + '|' + k] = [1, now]; x.total += amt;
+          }
+        });
+      });
+      x.days[d] = 0;
+      jset(XKEY, x);
+    }
+    return x;
+  }
+  function awardXP(tid, key) {
+    var x = xpGet(), id = tid + '|' + key, r = x.q[id] || [0, 0], now = Date.now();
+    if (r[0] >= MAXREP) return { xp: 0, why: 'max' };
+    if (r[1] && now - r[1] < COOL) return { xp: 0, why: 'cool', wait: Math.ceil((r[1] + COOL - now) / 864e5) };
+    var amt = Math.min(XP_BASE[grpOfKey(key)], XPMAX - x.total);
+    if (amt <= 0) return { xp: 0, why: 'max' };
+    var before = x.total, d = istDay();
+    x.q[id] = [r[0] + 1, now]; x.total += amt; x.days[d] = (x.days[d] || 0) + amt;
+    jset(XKEY, x);
+    if (window.LGSCloud) window.LGSCloud.push();
+    return { xp: amt, before: before, after: x.total, rep: r[0] + 1 };
+  }
+  function nf(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+
+  /* ---------- alttaki EXP barı ---------- */
+  var shownXP = null;
+  function xpBarSet(x, animate) {
+    var bar = document.getElementById('xpbar'); if (!bar) return;
+    var L = levelOf(x), lo = needFor(L), hi = needFor(L + 1), r = rankOf(L);
+    var p = L >= 100 ? 100 : Math.max(0, Math.min(100, (x - lo) * 100 / (hi - lo)));
+    bar.style.setProperty('--rc', r.c);
+    document.getElementById('xpRank').textContent = r.i;
+    document.getElementById('xpLv').textContent = L;
+    document.getElementById('xpName').textContent = r.n;
+    document.getElementById('xpFill').style.width = p + '%';
+    document.getElementById('xpTxt').textContent = L >= 100 ? nf(x) + ' EXP · Zirvedesin!' : nf(x - lo) + ' / ' + nf(hi - lo) + ' EXP';
+    document.getElementById('xpLeft').textContent = L >= 100 ? 'MAX' : nf(hi - x) + ' kaldı';
+    shownXP = x;
+  }
+  function countUp(from, to, ms) {
+    var t0 = performance.now();
+    (function step(t) {
+      var k = Math.min(1, (t - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+      xpBarSet(from + (to - from) * e);
+      if (k < 1) requestAnimationFrame(step);
+      else xpBarSet(to);
+    })(t0);
+  }
+  function gainFx(res, srcEl) {
+    var bar = document.getElementById('xpbar'); if (!bar) return;
+    var L0 = levelOf(res.before), L1 = levelOf(res.after);
+    // uçan +EXP
+    var f = document.createElement('div'); f.className = 'xpfly'; f.textContent = '+' + res.xp + ' EXP';
+    var r = srcEl && srcEl.getBoundingClientRect ? srcEl.getBoundingClientRect() : null;
+    f.style.left = (r ? Math.min(window.innerWidth - 90, Math.max(10, r.left + r.width / 2 - 40)) : window.innerWidth / 2 - 40) + 'px';
+    f.style.top = (r ? r.top : window.innerHeight - 140) + 'px';
+    document.body.appendChild(f);
+    setTimeout(function () { f.remove(); }, 1300);
+    bar.classList.remove('gain'); void bar.offsetWidth; bar.classList.add('gain');
+    var chip = document.getElementById('xpChip'); chip.textContent = '+' + res.xp; chip.classList.remove('on'); void chip.offsetWidth; chip.classList.add('on');
+    if (navigator.vibrate) try { navigator.vibrate(18); } catch (e) {}
+    countUp(shownXP == null ? res.before : shownXP, res.after, 900);
+    if (L1 > L0) setTimeout(function () { levelUpFx(L1, Math.floor(L1 / 10) > Math.floor(L0 / 10)); }, 750);
+  }
+  function levelUpFx(L, rankUp) {
+    var r = rankOf(L), o = document.createElement('div');
+    o.className = 'lvup' + (rankUp ? ' rank' : ''); o.style.setProperty('--rc', r.c);
+    var sparks = '';
+    for (var i = 0; i < 26; i++) {
+      var a = Math.random() * 360, d = 120 + Math.random() * 160;
+      sparks += '<i style="--a:' + a.toFixed(0) + 'deg;--d:' + d.toFixed(0) + 'px;--t:' + (0.5 + Math.random() * 0.6).toFixed(2) + 's;--s:' + (0.6 + Math.random()).toFixed(2) + '"></i>';
+    }
+    o.innerHTML = '<div class="lv-rays"></div><div class="lv-ring r1"></div><div class="lv-ring r2"></div><div class="lv-ring r3"></div>' +
+      '<div class="lv-sparks">' + sparks + '</div>' +
+      '<div class="lv-core"><div class="lv-kick">' + (rankUp ? 'YENİ RÜTBE' : 'SEVİYE ATLADIN') + '</div>' +
+      '<div class="lv-emb"><span>' + r.i + '</span></div>' +
+      '<div class="lv-num">' + L + '</div><div class="lv-rk">' + r.n.toLocaleUpperCase('tr') + '</div>' +
+      '<div class="lv-sub">' + (L >= 100 ? 'Zirveye ulaştın. Efsanesin.' : 'Sonraki seviyeye ' + nf(needFor(L + 1) - xpGet().total) + ' EXP') + '</div>' +
+      '<div class="lv-tap">devam etmek için dokun</div></div>';
+    document.body.appendChild(o);
+    if (navigator.vibrate) try { navigator.vibrate(rankUp ? [60, 40, 60, 40, 140] : [40, 30, 90]); } catch (e) {}
+    var close = function () { o.classList.add('out'); setTimeout(function () { o.remove(); }, 350); };
+    o.addEventListener('click', close);
+    setTimeout(close, rankUp ? 5200 : 3800);
+  }
+  function toast(msg) {
+    var t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.appendChild(t);
+    setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 2600);
+  }
+  function onCorrect(tid, key, el) {
+    var res = awardXP(tid, key);
+    if (res.xp) gainFx(res, el);
+    else if (res.why === 'cool') toast('Bu soru ' + res.wait + ' gün sonra tekrar EXP verir.');
+    else if (res.why === 'max') toast('Bu sorudan alınabilecek EXP doldu (3/3).');
+  }
+
+  /* =========================================================
+     LİDER TABLOSU
+     ========================================================= */
+  var EXAM = LGS.examDate || '2027-06-13';
+  var lbTab = 'day';
+  function lbRow(r, me) {
+    var L = levelOf(r.xp_total || 0), md = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : r.rank === 3 ? '🥉' : '#' + r.rank;
+    return '<li class="' + (me ? 'me' : '') + (r.rank <= 3 ? ' top' + r.rank : '') + '"><span class="lb-rk">' + md + '</span>' +
+      '<a href="#/u/' + encodeURIComponent(r.username) + '" class="lb-u">' + avatarHtml({ name: r.username, photo: r.thumb }, 'av-sm') +
+      '<span class="lb-n">' + rankTag(L) + '<b>' + esc(r.username) + '</b><small>Seviye ' + L + '</small></span></a>' +
+      '<span class="lb-xp">' + nf(r.xp) + '<small>EXP</small></span></li>';
+  }
+  function perLabel(p, tab) {
+    var d = dt(p);
+    if (tab === 'week') { var e = new Date(d); e.setDate(e.getDate() + 6); return d.getDate() + ' ' + AYLAR[d.getMonth()].slice(0, 3) + ' – ' + e.getDate() + ' ' + AYLAR[e.getMonth()].slice(0, 3); }
+    return d.getDate() + ' ' + AYLAR[d.getMonth()];
+  }
+  function leaderPage() {
+    setCrumbs([{ text: 'Lider Tablosu' }]);
+    document.title = 'Lider Tablosu · LGS 2027';
+    var tabs = [['day', 'Günlük'], ['week', 'Haftalık'], ['all', 'Genel']];
+    app.innerHTML = '<div class="page-lb"><h1>🏆 Lider Tablosu</h1>' +
+      '<div class="lb-tabs" id="lbTabs">' + tabs.map(function (t) { return '<button data-t="' + t[0] + '"' + (t[0] === lbTab ? ' class="on"' : '') + '>' + t[1] + '</button>'; }).join('') + '</div>' +
+      '<div id="lbBody"><p class="loading">Sıralama yükleniyor…</p></div></div>';
+    document.getElementById('lbTabs').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-t]'); if (!b) return;
+      lbTab = b.getAttribute('data-t');
+      [].forEach.call(this.children, function (x) { x.classList.toggle('on', x === b); });
+      drawLb();
+    });
+    drawLb();
+  }
+  function drawLb() {
+    var box = document.getElementById('lbBody'), tab = lbTab;
+    if (!window.LGSCloud || !window.LGSCloud.leaderboard) { box.innerHTML = '<p class="empty">Sunucuya bağlanılamadı.</p>'; return; }
+    box.innerHTML = '<p class="loading">Sıralama yükleniyor…</p>';
+    var info = { day: 'Bugün kazanılan EXP · her gece 00.00’da sıfırlanır', week: 'Bu hafta (Pazartesi–Pazar) kazanılan EXP', all: 'Toplam EXP · genel şampiyon LGS gününde belirlenir' }[tab];
+    window.LGSCloud.leaderboard(tab, function (d) {
+      if (tab !== lbTab) return;
+      if (!d) { box.innerHTML = '<p class="empty">Sıralama alınamadı. İnternet bağlantını kontrol et.</p>'; return; }
+      var top = d.top || [], me = d.me, inTop = me && top.some(function (r) { return r.username === me.username; });
+      var html = '<p class="small lb-info">' + info + '</p><ol class="lb">' +
+        (top.length ? top.map(function (r) { return lbRow(r, me && r.username === me.username); }).join('') : '<li class="lb-empty">Henüz puan alan yok. İlk sen ol!</li>') + '</ol>';
+      if (me) {
+        html += '<div class="lb-me"><span class="small">Senin sıran</span><ol class="lb">' +
+          lbRow({ rank: me.rank || '–', username: me.username, thumb: getProfile().thumb, xp: me.xp, xp_total: me.xp_total }, true) + '</ol>' +
+          '<p class="small">' + (me.rank ? (me.of + ' kişi arasında ' + me.rank + '. sıradasın' + (inTop ? '. İlk 10’dasın!' : '.')) : 'Bu dönemde henüz EXP kazanmadın.') + '</p></div>';
+      } else {
+        html += '<div class="lb-me"><p class="small">Sıralamada görünmek için <a href="#/profil">profilinde bir kullanıcı adı belirle</a>.</p></div>';
+      }
+      html += '<div id="lbChamp"></div>';
+      box.innerHTML = html;
+      drawChamp(tab);
+    });
+  }
+  function drawChamp(tab) {
+    var box = document.getElementById('lbChamp'); if (!box) return;
+    if (tab === 'all') {
+      var now = new Date(), ex = dt(EXAM), days = Math.max(0, Math.ceil((ex - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5));
+      box.innerHTML = '<div class="card champ"><div class="champ-h">👑 Sezon Şampiyonluğu</div>' +
+        '<p>Genel sıralamanın birincisi <b>LGS günü</b> sezon şampiyonu ilan edilecek.</p>' +
+        '<div class="cd"><b>' + days + '</b><span>gün kaldı · ' + perLabel(EXAM) + ' ' + ex.getFullYear() + ' (tahmini)</span></div></div>';
+      return;
+    }
+    window.LGSCloud.champions(tab, function (c) {
+      if (!c || tab !== lbTab) return;
+      var nm = tab === 'day' ? 'Günün Şampiyonu' : 'Haftanın Şampiyonu';
+      var rec = c.recent || [], cnt = c.counts || [];
+      var last = rec[0];
+      box.innerHTML = '<div class="card champ"><div class="champ-h">🏅 ' + nm + '</div>' +
+        (last ? '<a class="champ-last" href="#/u/' + encodeURIComponent(last.username) + '">' + avatarHtml({ name: last.username, photo: last.thumb }, 'av-big') +
+          '<span>' + rankTag(levelOf(last.xp_total || 0)) + '<b>' + esc(last.username) + '</b><small>' + perLabel(last.per, tab) + ' · ' + nf(last.xp) + ' EXP</small></span></a>'
+          : '<p class="small">İlk şampiyon ' + (tab === 'day' ? 'bu gece yarısı' : 'bu Pazar gece yarısı') + ' belli olacak.</p>') +
+        (cnt.length ? '<div class="champ-sub">En çok şampiyon olanlar</div><ol class="champ-list">' + cnt.map(function (r) {
+          return '<li><a href="#/u/' + encodeURIComponent(r.username) + '">' + avatarHtml({ name: r.username, photo: r.thumb }, 'av-sm') + '<span>' + esc(r.username) + '</span></a><b>' + r.wins + '×</b></li>';
+        }).join('') + '</ol>' : '') +
+        (rec.length > 1 ? '<div class="champ-sub">Son şampiyonlar</div><ul class="champ-rec">' + rec.map(function (r) {
+          return '<li><span>' + perLabel(r.per, tab) + '</span><span>' + esc(r.username) + '</span><b>' + nf(r.xp) + '</b></li>';
+        }).join('') + '</ul>' : '') + '</div>';
+    });
+  }
 
   function notFound() {
     setCrumbs([]);
@@ -747,18 +970,19 @@
     var h = location.hash.replace(/^#\/?/, '').split('/');
     window.scrollTo({ top: 0, behavior: 'instant' });
     openNav(false);
-    var r = h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
+    var r = h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
     markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
     else if (h[0] === 'hatirlatici') reminderPage();
     else if (h[0] === 'profil') profilePage();
+    else if (h[0] === 'lider') leaderPage();
     else if (h[0] === 'u' && h[1]) userPage(h.slice(1).join('/'));
     else home();
     updateBadge();
   }
   window.addEventListener('hashchange', route);
-  getStats(); drawNavUser();
+  getStats(); xpBarSet(xpGet().total); drawNavUser();
   window.LGSApp.route = route;
   route();
 })();

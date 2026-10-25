@@ -27,7 +27,8 @@
     var p = A.getProfile();
     req('POST', 'rpc/save_profile', {
       p_token: token(), p_username: name, p_photo: p.photo || null, p_thumb: p.thumb || null,
-      p_stats: A.summaryFor(A.getStats())
+      p_stats: A.summaryFor(A.getStats()),
+      p_xp: (function () { var x = A.xpGet(), t = A.istDay(), y = A.istDay(new Date(Date.now() - 864e5)), d = {}; d[t] = x.days[t] || 0; if (x.days[y] != null) d[y] = x.days[y]; return { total: x.total, days: d }; })()
     }, function (err, d) {
       if (err) return cb('Sunucuya ulaşılamadı, sonra tekrar denenecek.');
       if (d === 'taken') return cb('Bu kullanıcı adı başkası tarafından alınmış.');
@@ -47,13 +48,20 @@
         if (p.name && (!n || p.name === n)) save(p.name, function () {});
       }, 2500);
     },
+    leaderboard: function (period, cb) {
+      var n = A.jget(A.KEY + 'cloudName', '');
+      req('POST', 'rpc/leaderboard', { p_period: period, p_token: n ? token() : null }, function (err, d) { cb(err ? null : d); });
+    },
+    champions: function (period, cb) {
+      req('POST', 'rpc/champions', { p_period: period }, function (err, d) { cb(err ? null : d); });
+    },
     search: function (q, cb) {
-      var f = 'public_profiles?select=username,thumb,updated_at&order=updated_at.desc&limit=25';
+      var f = 'public_profiles?select=username,thumb,xp_total,updated_at&order=updated_at.desc&limit=25';
       if (q) f += '&username=ilike.' + encodeURIComponent('*' + q.replace(/[*,()]/g, '') + '*');
       req('GET', f, null, function (err, d) { cb(err ? [] : d || []); });
     },
     get: function (name, cb) {
-      req('GET', 'public_profiles?select=username,photo,stats,updated_at&username=ilike.' + encodeURIComponent(name.replace(/[*,()%_]/g, '')) + '&limit=1', null,
+      req('GET', 'public_profiles?select=username,photo,stats,xp_total,updated_at&username=ilike.' + encodeURIComponent(name.replace(/[*,()%_]/g, '')) + '&limit=1', null,
         function (err, d) { cb(!err && d && d[0] ? d[0] : null); });
     }
   };
