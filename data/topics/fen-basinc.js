@@ -1,126 +1,552 @@
 LGS.add({
 id: "fen-basinc",
-summary: `
-<h3>1. Katı Basıncı ve Özellikleri</h3>
-<p>Birim yüzeye <b>dik olarak</b> etki eden kuvvete <b>basınç (P)</b> denir[cite: 11]. Kuvvetin birimi <b>Newton (N)</b>, yüzey alanının birimi <b>m²</b> alındığında basıncın birimi <b>N/m² = Pascal (Pa)</b> olur[cite: 11]. Yatay düzlemde duran katı cisimlerin basıncı kendi <b>ağırlıklarından (G)</b> kaynaklanır[cite: 11]:</p>
-<div class="key">Katı Basıncı (P) = {{Dik Etki Eden Kuvvet (Ağırlık : G)|Temas Yüzey Alanı (S)}}</div>
+summary: `<div class="key"><b>Kazanımlar</b><ul>
+<li><b>F.8.3.1.1</b> Katı basıncını etkileyen değişkenleri deneyerek keşfeder. (Basınç birimi olarak Pascal verilir; matematiksel bağıntılara girilmez.)</li>
+<li><b>F.8.3.1.2</b> Sıvı basıncını etkileyen değişkenleri tahmin eder ve tahminlerini test eder. (Gazların da sıvılara benzer şekilde basınç uyguladığı belirtilir, açık hava basıncı örneklendirilir; gaz basıncını etkileyen değişkenlere girilmez.)</li>
+<li><b>F.8.3.1.3</b> Katı, sıvı ve gazların basınç özelliklerinin günlük yaşam ve teknolojideki uygulamalarına örnekler verir. (Pascal prensibinin uygulamaları; bilimsel bilgi türü olarak ilke ve prensip.)</li>
+</ul></div>
 
-<div class="fig"><svg viewBox="0 0 600 165" width="580" role="img" aria-label="Katı basıncının ağırlık ve yüzey alanına bağlılığı ve dik kesme kuralı">
-<g font-size="10" text-anchor="middle">
-<rect x="6" y="8" width="190" height="148" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
-<text x="101" y="26" font-size="11" font-weight="bold" fill="#9a3412">1. Yüzey Alanı İlişkisi (Ters Orantı)</text>
-<line x1="20" y1="115" x2="182" y2="115" stroke="#78716c" stroke-width="2.5"/>
-<rect x="28" y="93" width="66" height="22" fill="#f97316" stroke="#7c2d12"/>
-<rect x="132" y="55" width="22" height="60" fill="#f97316" stroke="#7c2d12"/>
-<text x="61" y="88" font-size="9" font-weight="bold">G (3S)</text>
-<text x="143" y="49" font-size="9" font-weight="bold">G (S)</text>
-<text x="101" y="132" fill="#1e293b">Ağırlık aynı; yüzey küçüldükçe</text>
-<text x="101" y="146" font-weight="bold" fill="#dc2626">basınç 3 katına çıkar! (P₂ = 3P₁)</text>
+<h3>1. Basınç nedir? Kuvvet ile basıncı ayırmak (F.8.3.1.1)</h3>
+<p><b>Basınç</b>, birim yüzeye <b>dik olarak</b> etki eden kuvvettir. Aynı kuvvet küçük bir yüzeye toplanırsa basınç büyük, geniş bir yüzeye dağılırsa basınç küçük olur. Basıncın birimi <b>Pascal (Pa)</b>’dır; 1 Pa, 1 metrekarelik yüzeye dik olarak etki eden 1 newtonluk kuvvetin oluşturduğu basınçtır. Kuvvetin birimi ise <b>newton (N)</b>’dur.</p>
+<ul>
+<li><b>Kuvvet</b> “ne kadar ittiğimizi”, <b>basınç</b> ise “bu itmenin ne kadar küçük bir alana toplandığını” anlatır.</li>
+<li>Yatay zeminde duran bir katının zemine uyguladığı dik kuvvet, cismin <b>ağırlığıdır</b>. Cisim hangi yüzeyi üzerine konursa konsun ağırlığı, yani zemine uyguladığı kuvvet <b>değişmez</b>.</li>
+<li>Kumda, süngerde, hamurda, karda oluşan <b>iz derinliği (batma miktarı)</b> basıncın göstergesidir: iz ne kadar derinse basınç o kadar büyüktür. LGS bu yüzden basıncı neredeyse her zaman “iz derinliği” ile ölçtürür.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Program gereği LGS’de basınç için <b>formülle hesap yaptırılmaz</b>. Sorular “hangisi artar, hangisi azalır, hangisi değişmez, hangi deney bu hipotezi test eder?” mantığıyla kurulur. Sayı verilse bile (örneğin 1 Pa, 2 Pa) bunlar <b>oran</b> düşünerek karşılaştırılır.</p>
 
-<rect x="205" y="8" width="190" height="148" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="300" y="26" font-size="11" font-weight="bold" fill="#1e40af">2. Dikey Kesme Kuralı (P Değişmez!)</text>
-<line x1="218" y1="115" x2="382" y2="115" stroke="#78716c" stroke-width="2.5"/>
-<rect x="235" y="65" width="60" height="50" fill="#60a5fa" stroke="#1e3a8a"/>
-<line x1="265" y1="58" x2="265" y2="120" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 2"/>
-<rect x="320" y="65" width="30" height="50" fill="#60a5fa" stroke="#1e3a8a"/>
-<text x="265" y="53" font-size="9" font-weight="bold">3G / 3S = P</text>
-<text x="335" y="53" font-size="9" font-weight="bold">G / S = P</text>
-<text x="300" y="132" fill="#1e293b">Düzgün cisim yukarıdan aşağı dik</text>
-<text x="300" y="146" font-weight="bold" fill="#1e40af">kesilirse G ve S aynı oranda azalır (P sabit!)</text>
+<h3>2. Katı basıncını etkileyen değişkenler (F.8.3.1.1)</h3>
+<p>Katı basıncı iki değişkene bağlıdır: <b>cismin ağırlığı (dik kuvvet)</b> ve <b>cismin zemine temas eden yüzey alanı</b>.</p>
+<ul>
+<li><b>Ağırlık:</b> Temas yüzeyi aynı kalırken ağırlık artarsa basınç <b>artar</b> (doğru orantı).</li>
+<li><b>Yüzey alanı:</b> Ağırlık aynı kalırken temas yüzeyi küçülürse basınç <b>artar</b>, büyürse basınç <b>azalır</b> (ters orantı).</li>
+<li>Maddenin cinsi, cismin rengi, cismin boyu tek başına basıncı belirlemez; önemli olan <b>ağırlık</b> ve <b>temas alanıdır</b>.</li>
+</ul>
+<div class="fig"><svg viewBox="0 0 560 240" width="560" role="img" aria-label="Kum havuzu deneyi: özdeş tuğlaların dört farklı dizilimi ve iz derinlikleri">
+<rect x="0" y="0" width="560" height="240" fill="#ffffff"/>
+<text x="280" y="20" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e293b">Kum havuzu deneyi: özdeş tuğlalar, farklı dizilimler</text>
+<rect x="8" y="140" width="544" height="36" fill="#fde68a"/>
+<rect x="47" y="128" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="194" y="116" width="28" height="36" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="321" y="104" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="321" y="122" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="321" y="140" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="430" y="128" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="486" y="128" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<rect x="8" y="140" width="544" height="36" fill="#fde68a" fill-opacity="0.7" stroke="#b45309" stroke-width="1.5"/>
+<line x1="8" y1="140" x2="552" y2="140" stroke="#b45309" stroke-width="2" stroke-dasharray="6 3"/>
+<g stroke="#dc2626" stroke-width="2.5">
+<line x1="112" y1="140" x2="112" y2="146"/><line x1="231" y1="140" x2="231" y2="152"/><line x1="386" y1="140" x2="386" y2="158"/><line x1="547" y1="140" x2="547" y2="146"/>
+</g>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">
+<text x="75" y="56">I</text><text x="208" y="56">II</text><text x="349" y="56">III</text><text x="486" y="56">IV</text>
+</g>
+<g font-size="11" text-anchor="middle" fill="#1e293b">
+<text x="75" y="74">1 tuğla, yatık</text><text x="208" y="74">1 tuğla, dik</text><text x="349" y="74">3 tuğla üst üste</text><text x="486" y="74">2 tuğla yan yana</text>
+<text x="75" y="194">Ağırlık: G</text><text x="208" y="194">Ağırlık: G</text><text x="349" y="194">Ağırlık: 3G</text><text x="486" y="194">Ağırlık: 2G</text>
+<text x="75" y="210">Alan: S</text><text x="208" y="210">Alan: S/2</text><text x="349" y="210">Alan: S</text><text x="486" y="210">Alan: 2S</text>
+</g>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<text x="75" y="230" fill="#15803d">İz: 1 birim</text><text x="208" y="230" fill="#b91c1c">İz: 2 birim</text><text x="349" y="230" fill="#b91c1c">İz: 3 birim</text><text x="486" y="230" fill="#15803d">İz: 1 birim</text>
+</g>
+<line x1="140" y1="40" x2="140" y2="232" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+<line x1="276" y1="40" x2="276" y2="232" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+<line x1="420" y1="40" x2="420" y2="232" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+</svg></div>
+<p>Şekli okuyalım: <b>I ile II</b> karşılaştırılırsa ağırlık aynı, alan yarıya inmiş; iz 2 katına çıkmıştır → <b>alan küçülünce basınç artar</b>. <b>I ile III</b> karşılaştırılırsa alan aynı, ağırlık 3 katına çıkmış; iz de 3 katına çıkmıştır → <b>ağırlık artınca basınç artar</b>. <b>I ile IV</b>’te ise ağırlık da alan da 2 katına çıktığı için basınç <b>değişmemiştir</b>.</p>
+<div class="tbl"><table>
+<tr><th>Ne değişti?</th><th>Ağırlık</th><th>Temas alanı</th><th>Basınç (iz derinliği)</th></tr>
+<tr><td>Tuğla yatıktan dik konuma getirildi</td><td>Değişmez</td><td>Azalır</td><td><b>Artar</b></td></tr>
+<tr><td>Tuğlanın üstüne aynı tuğla kondu</td><td>Artar</td><td>Değişmez</td><td><b>Artar</b></td></tr>
+<tr><td>Aynı tuğla yan yana eklendi</td><td>Artar (2 kat)</td><td>Artar (2 kat)</td><td><b>Değişmez</b></td></tr>
+<tr><td>Ayakların altına geniş tahta kondu</td><td>Değişmez</td><td>Artar</td><td><b>Azalır</b></td></tr>
+<tr><td>Cismin üstündeki yük alındı</td><td>Azalır</td><td>Değişmez</td><td><b>Azalır</b></td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Tuğla çevrildiğinde <b>zemine uygulanan kuvvet (ağırlık) değişmez</b>, yalnızca basınç değişir. “Dik konumda tuğla daha ağır basar, kuvveti artar” demek klasik yanılgıdır. Kuvvet ile basınç ayrı ayrı sorulduğunda: <b>kuvvetler eşit, basınçlar farklı</b>.</p>
 
-<rect x="404" y="8" width="190" height="148" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="499" y="26" font-size="11" font-weight="bold" fill="#991b1b">3. Çivi ve Raptiye Tuzağı!</text>
-<rect x="445" y="52" width="14" height="44" fill="#94a3b8" stroke="#334155"/>
-<polygon points="459,66 530,66 555,74 530,82 459,82" fill="#cbd5e1" stroke="#334155"/>
-<text x="452" y="45" font-size="9" font-weight="bold" fill="#1e40af">Baş (S₁)</text>
-<text x="550" y="60" font-size="9" font-weight="bold" fill="#dc2626">Uç (S₂)</text>
-<text x="499" y="112" font-weight="bold" fill="#166534">• Kuvvet aynen iletilir: F₁ = F₂</text>
-<text x="499" y="128" font-weight="bold" fill="#dc2626">• Sivri uçta basınç büyür: P₂ &gt; P₁</text>
-<text x="499" y="145" font-size="9" fill="#475569">(Katılar kuvveti aynen iletir, basıncı değil!)</text>
+<h4>Deney tasarımı: hangi değişken değişmeli, hangisi sabit kalmalı?</h4>
+<p>LGS’de katı basıncı sorularının çoğu bir <b>deney tasarımı</b> sorusudur. Kural tek: <b>yalnızca incelenen değişken değişir, diğerleri aynı tutulur</b>.</p>
+<div class="tbl"><table>
+<tr><th>Hipotez / araştırma sorusu</th><th>Değiştirilen (bağımsız) değişken</th><th>Sabit tutulan (kontrol edilen) değişkenler</th><th>Ölçülen (bağımlı) değişken</th></tr>
+<tr><td>“Katı basıncı yüzey alanına bağlıdır.”</td><td>Temas yüzey alanı</td><td>Ağırlık, zeminin cinsi</td><td>İz derinliği (basınç)</td></tr>
+<tr><td>“Katı basıncı ağırlığa bağlıdır.”</td><td>Ağırlık (kuvvet)</td><td>Temas yüzey alanı, zeminin cinsi</td><td>İz derinliği (basınç)</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> “Aynı cisim önce küçük, sonra büyük yüzeyi üzerine konuyor” ifadesi geçtiyse ağırlık <b>otomatik olarak sabittir</b> (cisim aynı). İki cisim yapıştırılıp çevriliyorsa önce “kuma kaç küp yüzü değiyor?” diye bak; 2020 LGS’de iki küpün her iki konumda da 2 yüzünün kuma değdiği, yani alanın aslında değişmediği bir çeldirici vardı.</p>
+<p><b>Hafıza ipucu:</b> <b>“Ağır ve sivri = derin iz; hafif ve geniş = sığ iz.”</b></p>
+
+<h3>3. Katılar kuvveti iletir; kesilen cisimler ve basınç (F.8.3.1.1)</h3>
+<p>Katılar kendilerine uygulanan <b>kuvveti</b> aynı doğrultuda ve aynı büyüklükte iletir. <b>Basıncı ise aynen iletmez</b>, çünkü iletilen kuvvetin etki ettiği yüzey değişebilir. Çivinin başına vurulan kuvvet sivri ucuna aynen ulaşır; uçtaki yüzey çok küçük olduğundan uçtaki basınç çok büyük olur ve çivi tahtaya girer.</p>
+<div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Dikey kesim, yatay kesim ve çivide kuvvetin aynen iletilmesi">
+<defs><marker id="fb-sum-ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<rect x="0" y="0" width="560" height="210" fill="#ffffff"/>
+<g font-size="13" font-weight="bold" text-anchor="middle">
+<text x="95" y="22" fill="#1e40af">Dikey kesim</text><text x="280" y="22" fill="#166534">Yatay kesim</text><text x="465" y="22" fill="#9a3412">Çivi</text>
+</g>
+<line x1="15" y1="140" x2="175" y2="140" stroke="#475569" stroke-width="3"/>
+<rect x="35" y="60" width="60" height="80" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/>
+<rect x="95" y="60" width="60" height="80" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="125" y="104" font-size="11" text-anchor="middle" fill="#475569">atılır</text>
+<line x1="95" y1="48" x2="95" y2="150" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+<line x1="200" y1="140" x2="360" y2="140" stroke="#475569" stroke-width="3"/>
+<rect x="220" y="100" width="120" height="40" fill="#4ade80" stroke="#166534" stroke-width="1.5"/>
+<rect x="220" y="60" width="120" height="40" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="280" y="84" font-size="11" text-anchor="middle" fill="#475569">atılır</text>
+<line x1="208" y1="100" x2="352" y2="100" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="400" y="140" width="130" height="24" fill="#d6a76c" stroke="#7c4a14" stroke-width="1.5"/>
+<text x="465" y="157" font-size="11" text-anchor="middle" fill="#3f2a0a">tahta</text>
+<rect x="440" y="70" width="50" height="9" fill="#64748b" stroke="#1e293b"/>
+<rect x="461" y="79" width="8" height="52" fill="#94a3b8" stroke="#1e293b"/>
+<polygon points="461,131 469,131 465,146" fill="#94a3b8" stroke="#1e293b"/>
+<line x1="465" y1="34" x2="465" y2="66" stroke="#dc2626" stroke-width="3" marker-end="url(#fb-sum-ar1)"/>
+<text x="478" y="50" font-size="12" font-weight="bold" fill="#dc2626">F</text>
+<text x="434" y="79" font-size="11" text-anchor="end" fill="#1e293b">baş: geniş</text>
+<text x="476" y="128" font-size="11" fill="#1e293b">uç: çok dar</text>
+<g font-size="11" text-anchor="middle" fill="#1e293b">
+<text x="95" y="168">Ağırlık ve alan</text><text x="95" y="183">aynı oranda azalır</text>
+<text x="280" y="168">Alan aynı kalır,</text><text x="280" y="183">ağırlık azalır</text>
+<text x="465" y="183">Kuvvet aynen iletilir,</text>
+</g>
+<g font-size="12" font-weight="bold" text-anchor="middle">
+<text x="95" y="201" fill="#1e40af">Basınç DEĞİŞMEZ</text><text x="280" y="201" fill="#166534">Basınç AZALIR</text><text x="465" y="201" fill="#9a3412">uçta basınç ÇOK BÜYÜK</text>
 </g>
 </svg></div>
-
 <ul>
-<li><b>Katı Basıncına Etki Eden Faktörler:</b>
-  <br>1. <b>Cismin Ağırlığı (Kuvvet - G):</b> Yüzey alanı sabitken ağırlık arttıkça katı basıncı <b>doğru orantılı</b> olarak artar[cite: 11].
-  <br>2. <b>Temas Yüzey Alanı (S):</b> Ağırlık sabitken zemine temas eden yüzey alanı küçüldükçe katı basıncı <b>ters orantılı</b> olarak artar[cite: 11]. (<i>Dikkat: Bir tuğla yatay durumdan dikey duruma getirildiğinde zemine uyguladığı <b>toplam dik kuvvet [ağırlık] değişmez</b>, yalnızca yüzey küçüldüğü için <b>basınç artar!</b></i>)[cite: 11]</li>
-<li><b>Günlük Hayatta Katı Basıncı:</b>
-  <br>• <b>Basıncı Artıran Durumlar (Yüzey Küçülür):</b> Bıçağın bilenmesi, çivi/iğne/raptiye uçlarının sivri olması, kramponların altındaki dişler, kışın araç lastiklerine zincir takılması, tavuk/ördek kıyaslamasında tavuğun ayaklarının ince olması, kesici dişler[cite: 11].
-  <br>• <b>Basıncı Azaltan Durumlar (Yüzey Büyür):</b> Kar ayakkabısı (hedik), iş makinelerinin ve tankların paletli olması, ağır tonajlı kamyonların ve trenlerin çok tekerlekli olması, fil/deve/ördek/kaz ayaklarının geniş ve perdeli olması, traktörlerin arka tekerleklerinin geniş yapılması, sırt çantalarının askılarının geniş olması[cite: 11].</li>
+<li><b>Dikey kesim:</b> Her yerinde aynı kalınlıkta (tabana göre düzgün) bir cisim yukarıdan aşağıya dik kesilirse kalan parçanın ağırlığı ve temas alanı <b>aynı oranda</b> azalır; basınç <b>değişmez</b>. Kitapların ayrı ayrı mı, yan yana mı durduğu da benzer mantıkla incelenir: her kitabın kendi basıncı, nerede durduğuna göre değişmez (2023 LGS).</li>
+<li><b>Yatay kesim:</b> Üst kısım atılırsa alan aynı kalır, ağırlık azalır; basınç <b>azalır</b>.</li>
+<li><b>Çivi, raptiye, iğne:</b> Kuvvet aynı, uçta alan çok küçük → uçta basınç çok büyük.</li>
 </ul>
+<p class="note"><b>Dikkat!</b> “Katılar basıncı aynen iletir” cümlesi <b>yanlıştır</b>. Katılar <b>kuvveti</b> aynen iletir; basıncı aynen ileten <b>sıvılardır</b> (Pascal prensibi, Bölüm 7).</p>
 
-<div class="note"><b>LGS Tuzağı 1 (Katıların Kuvveti İletmesi vs. Dikey Kesme):</b>
-<br>• <b>Çivi / Raptiye kuralı:</b> Katılar kendilerine uygulanan <b>KUVVETİ</b> aynı doğrultuda ve <b>eşit büyüklükte (F₁ = F₂)</b> iletir[cite: 11]. Ancak çivinin sivri ucundaki yüzey alanı (S₂) çok küçük olduğu için uçtaki <b>basınç (P₂) çok daha büyüktür (P₂ &gt; P₁)</b>!
-<br>• <b>Düzgün Katıları Dikey Kesme (Pasta/Silindir/Küp):</b> Tabana göre düzgün yükselen homojen bir katı cisim (küp, dikdörtgenler prizması, dik silindir) yukarıdan aşağıya <b>dikey olarak</b> eşit veya farklı parçalara bölündüğünde; her parçanın ağırlığı (G) ile taban alanı (S) <b>aynı oranda</b> küçüldüğü için <b>parçaların zemine uyguladığı basınç başlangıçtaki basınçla EŞİTTİR (P₁ = P₂ = P₃)</b>!</div>
+<h4>Günlük hayatta katı basıncı</h4>
+<div class="tbl"><table>
+<tr><th>Basıncı ARTIRMAK için (temas alanı küçültülür)</th><th>Basıncı AZALTMAK için (temas alanı büyütülür)</th></tr>
+<tr><td>Bıçak ve baltanın ağzının bilenmesi</td><td>Kar ayakkabısı (hedik) ve kayakla karda batmadan yürümek</td></tr>
+<tr><td>Çivi, raptiye, iğne, kürdan uçlarının sivri olması</td><td>İş makinelerinde ve tanklarda geniş palet kullanılması</td></tr>
+<tr><td>Kramponların altındaki dişler, buzda tutunmak için zincirli lastik</td><td>Tır ve trenlerde çok sayıda tekerlek kullanılması</td></tr>
+<tr><td>Kesici dişlerin ve pençelerin sivri olması</td><td>Deve ve ördek gibi hayvanların geniş tabanlı ayakları</td></tr>
+<tr><td>Zımbanın ve kalem ucunun ince olması</td><td>Sırt çantasının askılarının geniş yapılması, traktörlerin geniş arka tekerleği</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> “Çok tekerlek” basıncı azaltır; tekerlek sayısı artınca yük <b>daha büyük toplam alana</b> dağılır. 2025 LGS’de perde halkası sayısı azalınca toplam temas alanının küçülüp basıncın <b>arttığı</b> soruldu: Halka azalırsa izler derinleşir, halkalar genişlerse izler sığlaşır.</p>
 
-<h3>2. Sıvı Basıncı ve Pascal Prensibi</h3>
-<p>Sıvılar ağırlıklarından ve akışkan olmalarından dolayı temas ettikleri kabın hem tabanına hem de yan yüzeylerine basınç uygular[cite: 11]. Bir noktadaki sıvı basıncı; o noktanın sıvının <b>açık yüzeyine olan derinliğine (h)</b>, <b>sıvının yoğunluğuna (d)</b> ve yer çekimi ivmesine bağlıdır[cite: 11]:</p>
-<div class="key">Sıvı Basıncı (P) = Derinlik (h) × Sıvının Yoğunluğu (d)</div>
-
-<div class="fig"><svg viewBox="0 0 600 175" width="580" role="img" aria-label="Sıvı basıncının derinlik, yoğunluk ve kap şekline bağlılığı ve zaman grafikleri">
-<g font-size="9.5" text-anchor="middle">
-<rect x="6" y="8" width="188" height="158" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="100" y="25" font-size="10.5" font-weight="bold" fill="#1e40af">1. Kabın Şekline Bağlı Değildir!</text>
-<g stroke="#1e3a8a" stroke-width="1.5" fill="#93c5fd">
-<polygon points="18,110 62,110 52,55 28,55"/>
-<rect x="78" y="55" width="44" height="55"/>
-<polygon points="138,110 180,110 188,55 130,55"/>
+<h3>4. Sıvı basıncı ve onu etkileyen değişkenler (F.8.3.1.2)</h3>
+<p>Sıvılar ağırlıkları nedeniyle bulundukları kabın <b>tabanına</b> ve akışkan oldukları için temas ettikleri <b>yan yüzeylere</b>, hatta içlerindeki cisimlerin <b>her yüzeyine</b> basınç uygular. Sıvının içindeki bir noktada basınç <b>her yönde</b> etki eder: Aynı derinlikte ölçer yukarı, yana ya da aşağı çevrilse de aynı değeri gösterir.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Sıvı basıncı derinlikle artar: kap duvarlarına etki eden basınç okları ve deliklerden fışkıran su">
+<defs><marker id="fb-sum-ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
+<text x="130" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Sıvı her yüzeye basınç uygular</text>
+<text x="420" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Derin delik, güçlü fışkırma</text>
+<rect x="60" y="60" width="140" height="130" fill="#bfdbfe"/>
+<polyline points="60,40 60,190 200,190 200,40" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<line x1="60" y1="60" x2="200" y2="60" stroke="#2563eb" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="2.2" marker-end="url(#fb-sum-ar2)">
+<line x1="62" y1="85" x2="44" y2="85"/><line x1="198" y1="85" x2="216" y2="85"/>
+<line x1="62" y1="125" x2="32" y2="125"/><line x1="198" y1="125" x2="228" y2="125"/>
+<line x1="62" y1="165" x2="18" y2="165"/><line x1="198" y1="165" x2="242" y2="165"/>
+<line x1="95" y1="188" x2="95" y2="222"/><line x1="130" y1="188" x2="130" y2="222"/><line x1="165" y1="188" x2="165" y2="222"/>
 </g>
-<line x1="12" y1="55" x2="188" y2="55" stroke="#dc2626" stroke-dasharray="3 2"/>
-<text x="100" y="48" fill="#dc2626" font-weight="bold">Aynı sıvı (d), aynı derinlik (h)</text>
-<text x="100" y="128" font-weight="bold" fill="#1e40af">Taban sıvı basınçları EŞİTTİR:</text>
-<text x="100" y="143" font-weight="bold" fill="#dc2626">P₁ = P₂ = P₃</text>
-<text x="100" y="158" font-size="8.5" fill="#475569">(Sıvı miktarına/hacmine bağlı değildir!)</text>
-
-<rect x="204" y="8" width="192" height="158" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="300" y="25" font-size="10.5" font-weight="bold" fill="#166534">2. Sabit Debili Musluk Grafikleri</text>
-<line x1="225" y1="115" x2="375" y2="115" stroke="#334155" stroke-width="1.5"/>
-<line x1="225" y1="40" x2="225" y2="115" stroke="#334155" stroke-width="1.5"/>
-<path d="M225,115 Q255,105 285,42" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<line x1="225" y1="115" x2="330" y2="45" stroke="#2563eb" stroke-width="2.5"/>
-<path d="M225,115 Q280,65 365,55" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<text x="275" y="38" fill="#dc2626" font-weight="bold" font-size="8.5">Daralan</text>
-<text x="335" y="42" fill="#2563eb" font-weight="bold" font-size="8.5">Düzgün</text>
-<text x="362" y="50" fill="#16a34a" font-weight="bold" font-size="8.5">Genişleyen</text>
-<text x="300" y="130" font-size="9" fill="#1e293b">• Daralan kapta h giderek hızlı artar.</text>
-<text x="300" y="144" font-size="9" fill="#1e293b">• Genişleyen kapta h yavaşlayarak artar.</text>
-<text x="300" y="158" font-size="9" font-weight="bold" fill="#166534">• Düzgün kapta h sabit hızla artar.</text>
-
-<rect x="406" y="8" width="188" height="158" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="500" y="25" font-size="10.5" font-weight="bold" fill="#92400e">3. Pascal Prensibi (Hidrolik)</text>
-<path d="M425,55 L425,105 L570,105 L570,65 L520,65 L520,90 L455,90 L455,55 Z" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/>
-<rect x="425" y="50" width="30" height="8" fill="#475569"/>
-<rect x="520" y="58" width="50" height="8" fill="#475569"/>
-<text x="440" y="44" font-size="8.5" font-weight="bold">F₁ / S₁</text>
-<text x="545" y="52" font-size="8.5" font-weight="bold">G / S₂</text>
-<text x="500" y="122" font-weight="bold" fill="#991b1b">• Sıvılar BASINCI aynen iletir (P₁ = P₂)!</text>
-<text x="500" y="138" font-weight="bold" fill="#166534">• Küçük kuvvetle büyük yük kaldırılır.</text>
-<text x="500" y="154" font-size="8.5" fill="#1e293b">(Hidrolik fren, kriko, berber koltuğu)</text>
+<text x="130" y="110" font-size="11" text-anchor="middle" fill="#1e3a8a">Oklar derine</text>
+<text x="130" y="125" font-size="11" text-anchor="middle" fill="#1e3a8a">indikçe uzar</text>
+<rect x="320" y="45" width="70" height="160" fill="#bfdbfe"/>
+<polyline points="320,35 320,205 390,205 390,35" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<line x1="320" y1="45" x2="390" y2="45" stroke="#2563eb" stroke-width="1.5"/>
+<line x1="300" y1="207" x2="555" y2="207" stroke="#475569" stroke-width="3"/>
+<g fill="none" stroke="#2563eb" stroke-width="3">
+<path d="M390,90 Q412,92 428,205"/>
+<path d="M390,135 Q440,137 470,205"/>
+<path d="M390,180 Q470,180 520,205"/>
+</g>
+<g font-size="12" font-weight="bold" fill="#1e293b">
+<text x="302" y="94">K</text><text x="302" y="139">L</text><text x="302" y="184">M</text>
+</g>
+<g font-size="11" fill="#1e293b">
+<text x="405" y="66">Derinlik: K &lt; L &lt; M</text>
+<text x="405" y="82">Basınç: K &lt; L &lt; M</text>
 </g>
 </svg></div>
-
-<div class="note"><b>LGS Tuzağı 2 (Kap Ters Çevrildiğinde: Katı Basıncı vs. Sıvı Basıncı):</b>
-<br>Yarısına kadar su dolu, yukarı doğru <b>genişleyen</b> kapalı bir kap ters çevrilip dar ağzı üstüne konulursa:
-<br>1. <b>Kabın Zemine Uyguladığı Katı Basıncı:</b> Kabın toplam ağırlığı (G<sub>kap</sub> + G<sub>su</sub>) <b>değişmez</b>; ancak zemine değen yüzey alanı daraldığı için <b>Katı Basıncı ARTAR!</b>
-<br>2. <b>Kap Tabanındaki Sıvı Basıncı:</b> Su dar kısma dolacağı için suyun yüksekliği (<b>h</b>) artar; dolayısıyla <b>Sıvı Basıncı da ARTAR!</b></div>
-
+<p>Sıvı basıncını etkileyen değişkenler:</p>
 <ul>
-<li><b>Bileşik Kaplar:</b> Şekilleri ve kalınlıkları farklı olan boruların tabanlarından birleştirilmesiyle oluşan bileşik kaplara tek cins sıvı konulduğunda, kolların hepsinde <b>sıvı yüksekliği (h) ve taban sıvı basıncı birbirine eşit</b> olur.</li>
-<li><b>Pascal Prensibi Uygulamaları:</b> Kapalı bir kaptaki sıvıya uygulanan basınç, sıvı tarafından kabın iç yüzeyinin her noktasına <b>eşit büyüklükte ve dik olarak</b> iletilir[cite: 11]. <i>Hidrolik fren sistemleri, hidrolik krikolar (su cendereleri), itfaiye merdivenleri, berber koltukları, damperli kamyonlar, iş makinelerinin kepçeleri ve ilaç pompaları</i> Pascal prensibiyle çalışır[cite: 11].</li>
+<li><b>Derinlik:</b> Bir noktanın sıvının <b>açık yüzeyine</b> olan dik uzaklığıdır. Derinlik arttıkça sıvı basıncı <b>artar</b>; aynı sıvıda derinlik 2 katına çıkarsa basınç da 2 katına çıkar. Baraj duvarları bu yüzden tabana doğru kalınlaşır, dalgıçlar derine indikçe özel kıyafet giyer.</li>
+<li><b>Sıvının yoğunluğu (cinsi):</b> Aynı derinlikte, yoğunluğu büyük olan sıvının basıncı <b>daha büyüktür</b>. Örneğin aynı derinlikte tuzlu suyun basıncı saf sudan, saf suyun basıncı zeytinyağından büyüktür.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Derinlik <b>yukarıdan, sıvının serbest yüzeyinden aşağı doğru</b> ölçülür; tabandan yukarı doğru ölçülmez. Kabın dibine yakın bir nokta “yüksekte” değil, “derinde”dir. Tabandan eşit yükseklikteki iki nokta, sıvı seviyeleri farklıysa farklı derinliktedir.</p>
+
+<h4>Sıvı basıncı nelere BAĞLI DEĞİLDİR?</h4>
+<div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Şekilleri farklı kaplarda aynı derinlikte sıvı basıncı eşittir">
+<rect x="0" y="0" width="560" height="210" fill="#ffffff"/>
+<line x1="20" y1="60" x2="540" y2="60" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="256" y="55" font-size="11" fill="#dc2626">sıvı seviyesi</text>
+<line x1="20" y1="170" x2="540" y2="170" stroke="#475569" stroke-width="3"/>
+<rect x="40" y="60" width="110" height="110" fill="#93c5fd"/>
+<polyline points="40,40 40,170 150,170 150,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<rect x="210" y="60" width="40" height="110" fill="#93c5fd"/>
+<polyline points="210,40 210,170 250,170 250,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="310,170 410,170 388.8,60 331.2,60" fill="#93c5fd"/>
+<polyline points="335,40 310,170 410,170 385,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="470,170 500,170 529.6,60 440.4,60" fill="#93c5fd"/>
+<polyline points="435,40 470,170 500,170 535,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<g fill="#dc2626"><circle cx="95" cy="166" r="4"/><circle cx="230" cy="166" r="4"/><circle cx="360" cy="166" r="4"/><circle cx="485" cy="166" r="4"/></g>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">
+<text x="95" y="30">K</text><text x="230" y="30">L</text><text x="360" y="30">M</text><text x="485" y="30">N</text>
+</g>
+<text x="280" y="190" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">Aynı sıvı, aynı derinlik → tabandaki sıvı basınçları EŞİT</text>
+<text x="280" y="205" font-size="11" text-anchor="middle" fill="#475569">Kaplardaki sıvı miktarları (ağırlıkları) farklı olduğu hâlde sıvı basıncı aynıdır.</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Değişken</th><th>Sıvı basıncını etkiler mi?</th><th>LGS’deki görünümü</th></tr>
+<tr><td>Derinlik</td><td><b>Evet</b> (artınca artar)</td><td>Delikli şişe, baraj, dalgıç, yaylı piston, balonlu kafes</td></tr>
+<tr><td>Sıvının yoğunluğu</td><td><b>Evet</b> (artınca artar)</td><td>Cıva - etil alkol, su - zeytinyağı, U borulu düzenek</td></tr>
+<tr><td>Kabın şekli</td><td>Hayır</td><td>Eğri ve düz kaplarda aynı derinlikte eşit ölçüm (2024)</td></tr>
+<tr><td>Kabın genişliği, taban alanı</td><td>Hayır (derinlik aynıysa)</td><td>Geniş ve dar kapta aynı seviye → aynı basınç</td></tr>
+<tr><td>Sıvının miktarı (hacmi, ağırlığı)</td><td>Tek başına hayır</td><td>Miktar artınca basınç ancak <b>derinlik artarsa</b> artar</td></tr>
+<tr><td>Ölçerin baktığı yön</td><td>Hayır</td><td>Aynı derinlikte yukarı, yana, aşağı → eşit</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> “Kaba daha çok sıvı koyunca basınç artar” cümlesi ancak sıvının <b>derinliği arttıysa</b> doğrudur. 2023 LGS’de kabın tabanı genişletilince aynı miktar sıvının <b>derinliği azaldığı</b>, dolayısıyla basıncın azaldığı soruldu. Sıvı miktarı sabitken kap genişlerse derinlik azalır; kap daralırsa derinlik artar.</p>
+
+<h4>Kaba konulan sıvıda basınç ve katı basıncı birlikte</h4>
+<p>Kap sorularında iki ayrı basınç vardır: <b>kabın tabanına etki eden sıvı basıncı</b> (derinliğe ve yoğunluğa bağlı) ve <b>kabın zemine uyguladığı katı basıncı</b> (kap + sıvının toplam ağırlığına ve kabın zemine değen alanına bağlı). Taban alanları eşit, şekilleri farklı kaplarda aynı yükseklikte su varsa sıvı basınçları eşit olur; ama içindeki su daha fazla olan kabın zemine uyguladığı katı basıncı daha büyüktür.</p>
+<div class="tbl"><table>
+<tr><th>Durum</th><th>Tabandaki sıvı basıncı</th><th>Zemine yapılan katı basıncı</th></tr>
+<tr><td>Ağzı kapalı, yarısı dolu, yukarı doğru daralan kap ters çevrilip dar yüzü üzerine konuyor</td><td>Su dar kısımda daha yükseğe çıkar → <b>artar</b></td><td>Ağırlık aynı, alan küçülür → <b>artar</b></td></tr>
+<tr><td>Aynı kaba yoğunluğu daha büyük sıvıdan aynı yükseklikte konuyor</td><td><b>Artar</b></td><td>Ağırlık artar → <b>artar</b></td></tr>
+<tr><td>Kaptan bir miktar su boşaltılıyor</td><td>Derinlik azalır → <b>azalır</b></td><td>Ağırlık azalır → <b>azalır</b></td></tr>
+</table></div>
+
+<h3>5. Sıvı basıncının deneylerle test edilmesi (F.8.3.1.2)</h3>
+<p>Sıvı basıncı LGS’de çoğunlukla bir <b>ölçme düzeneği</b> üzerinden sorulur. En sık görülen düzenekler:</p>
+<ul>
+<li><b>Lastik zarlı huni + U borusu:</b> Zara etki eden sıvı basıncı hortumdaki havayı iter; huniye bağlı koldaki su <b>iner</b>, açık koldaki su <b>yükselir</b>. İki kol arasındaki seviye farkı ne kadar büyükse basınç o kadar büyüktür.</li>
+<li><b>Basınçölçer:</b> Ekrandaki değer doğrudan karşılaştırılır (örneğin 1 Pa, 2 Pa).</li>
+<li><b>Yaylı piston:</b> Piston ne kadar derindeyse yay o kadar çok sıkışır (2019 LGS).</li>
+<li><b>Elastik zar / balon:</b> Derindeki bölmede balon daha çok şişer (2026 LGS).</li>
+<li><b>Tüpe tutturulan levha:</b> Sıvının alttan yaptığı basınç levhayı tüpe bastırır; tüp yukarı çekilip derinlik azalınca levha düşer (2022 LGS).</li>
+</ul>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Lastik zarlı huni ve U borusu ile derinlik ve yoğunluk etkisinin ölçülmesi">
+<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
+<g font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">
+<text x="93" y="20">1) Su, derinlik h</text><text x="280" y="20">2) Su, derinlik 2h</text><text x="467" y="20">3) Tuzlu su, derinlik h</text>
+</g>
+<rect x="12" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="12,95 12,200 100,200 100,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<rect x="199" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="199,95 199,200 287,200 287,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<rect x="386" y="110" width="88" height="90" fill="#a5b4fc"/><polyline points="386,95 386,200 474,200 474,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<g fill="#fca5a5" stroke="#991b1b" stroke-width="1.5">
+<polygon points="56,127 42,145 70,145"/><polygon points="243,162 229,180 257,180"/><polygon points="430,127 416,145 444,145"/>
+</g>
+<g stroke="#991b1b" stroke-width="2.5"><line x1="42" y1="145" x2="70" y2="145"/><line x1="229" y1="180" x2="257" y2="180"/><line x1="416" y1="145" x2="444" y2="145"/></g>
+<g fill="none" stroke="#475569" stroke-width="3">
+<polyline points="56,127 56,40 134,40 134,58"/><polyline points="243,162 243,40 321,40 321,58"/><polyline points="430,127 430,40 508,40 508,58"/>
+</g>
+<g fill="#38bdf8">
+<rect x="130" y="124" width="8" height="54"/><rect x="156" y="108" width="8" height="70"/><rect x="130" y="170" width="34" height="8"/>
+<rect x="317" y="132" width="8" height="46"/><rect x="343" y="100" width="8" height="78"/><rect x="317" y="170" width="34" height="8"/>
+<rect x="504" y="126" width="8" height="52"/><rect x="530" y="106" width="8" height="72"/><rect x="504" y="170" width="34" height="8"/>
+</g>
+<g fill="none" stroke="#1e293b" stroke-width="1.5">
+<path d="M130,58 L130,178 L164,178 L164,58 M138,58 L138,170 L156,170 L156,58"/>
+<path d="M317,58 L317,178 L351,178 L351,58 M325,58 L325,170 L343,170 L343,58"/>
+<path d="M504,58 L504,178 L538,178 L538,58 M512,58 L512,170 L530,170 L530,58"/>
+</g>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2">
+<line x1="126" y1="124" x2="170" y2="124"/><line x1="126" y1="108" x2="170" y2="108"/>
+<line x1="313" y1="132" x2="357" y2="132"/><line x1="313" y1="100" x2="357" y2="100"/>
+<line x1="500" y1="126" x2="544" y2="126"/><line x1="500" y1="106" x2="544" y2="106"/>
+</g>
+<g font-size="11" text-anchor="middle" fill="#1e293b">
+<text x="93" y="218">Seviye farkı: küçük</text><text x="280" y="218">Fark, 1’dekinin 2 katı</text><text x="467" y="218">Fark, 1’dekinden büyük</text>
+</g>
+</svg></div>
+<p>1 ile 2 karşılaştırılınca sıvı aynı, <b>derinlik farklıdır</b>: derinliğin etkisi görülür. 1 ile 3 karşılaştırılınca derinlik aynı, <b>sıvının cinsi farklıdır</b>: yoğunluğun etkisi görülür. 2 ile 3 karşılaştırılamaz, çünkü iki değişken birden değişmiştir.</p>
+<h4>Basınç - derinlik grafiği nasıl okunur?</h4>
+<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Üç sıvı için sıvı basıncı - derinlik grafiği">
+<rect x="0" y="0" width="560" height="220" fill="#ffffff"/>
+<line x1="60" y1="185" x2="330" y2="185" stroke="#1e293b" stroke-width="2"/>
+<line x1="60" y1="185" x2="60" y2="20" stroke="#1e293b" stroke-width="2"/>
+<polygon points="330,185 322,181 322,189" fill="#1e293b"/><polygon points="60,20 56,28 64,28" fill="#1e293b"/>
+<text x="325" y="205" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text>
+<text x="66" y="22" font-size="12" fill="#1e293b">Sıvı basıncı</text>
+<line x1="60" y1="185" x2="300" y2="45" stroke="#dc2626" stroke-width="3"/>
+<line x1="60" y1="185" x2="300" y2="95" stroke="#2563eb" stroke-width="3"/>
+<line x1="60" y1="185" x2="300" y2="135" stroke="#16a34a" stroke-width="3"/>
+<text x="305" y="50" font-size="12" font-weight="bold" fill="#dc2626">X</text>
+<text x="305" y="99" font-size="12" font-weight="bold" fill="#2563eb">Y</text>
+<text x="305" y="139" font-size="12" font-weight="bold" fill="#16a34a">Z</text>
+<line x1="180" y1="185" x2="180" y2="40" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="180" y="200" font-size="11" text-anchor="middle" fill="#475569">aynı derinlik</text>
+<rect x="350" y="30" width="200" height="150" rx="8" fill="#f8fafc" stroke="#94a3b8"/>
+<g font-size="11" fill="#1e293b">
+<text x="360" y="52" font-weight="bold">Okuma kuralı</text>
+<text x="360" y="72">• Her doğru bir sıvıdır;</text>
+<text x="360" y="88">  derinlik artınca basınç artar.</text>
+<text x="360" y="108">• Kesikli çizgide (aynı derinlik)</text>
+<text x="360" y="124">  basınç X &gt; Y &gt; Z ise</text>
+<text x="360" y="140">  yoğunluk da X &gt; Y &gt; Z’dir.</text>
+<text x="360" y="160">• Dik doğru = yoğun sıvı.</text>
+</g>
+</svg></div>
+<p class="note"><b>Dikkat!</b> Grafik sorularında <b>zaman - basınç</b> grafiği ile <b>derinlik - basınç</b> grafiğini karıştırma. 2023 LGS’de basınç önce azalıp sonra eski değerine dönüyordu: dipten yüzeye yüzüp yeniden dibe dalan biri bu grafiğe uyar; sürekli boşalan bir kap ise uymaz, çünkü onda basınç hep azalır.</p>
+
+<h3>6. Gazların basıncı ve açık hava basıncı (F.8.3.1.2)</h3>
+<p>Gazlar da sıvılar gibi akışkandır; bulundukları kabın <b>her yüzeyine</b> basınç uygular. Dünya’yı saran hava tabakasının (atmosferin) ağırlığından kaynaklanan basınca <b>açık hava basıncı (atmosfer basıncı)</b> denir. Açık hava basıncı <b>barometre</b> ile ölçülür.</p>
+<ul>
+<li><b>Torricelli deneyi:</b> İtalyan bilim insanı Torricelli, deniz seviyesinde cıva dolu bir cam boruyu cıva dolu kaba ters çevirmiş; borudaki cıvanın kaptaki cıva yüzeyinden yaklaşık <b>76 cm</b> yükseklikte dengede kaldığını görmüştür. Kaptaki cıva yüzeyine etki eden açık hava basıncı, borudaki cıvanın basıncını dengeler.</li>
+<li>Borunun <b>kalınlığı, şekli, eğik durması</b> cıvanın dik yüksekliğini değiştirmez; çünkü sıvı basıncı kap şekline değil, derinliğe bağlıdır.</li>
+<li>Cıva yerine yoğunluğu çok daha küçük olan su kullanılsaydı, aynı basıncı dengelemek için su sütunu yaklaşık <b>10 m</b> yükselirdi. Torricelli bu yüzden yoğun bir sıvı olan cıvayı seçmiştir.</li>
+<li>Deniz seviyesinden <b>yükseklere çıkıldıkça</b> üstteki hava tabakası incelir ve seyrekleşir; açık hava basıncı <b>azalır</b>. Dağın tepesinde barometredeki cıva daha az yükselir.</li>
+</ul>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Torricelli deneyi ve yükseklikle açık hava basıncının azalması">
+<defs><marker id="fb-sum-ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker></defs>
+<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
+<text x="120" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Torricelli deneyi</text>
+<rect x="40" y="180" width="140" height="30" fill="#94a3b8"/>
+<polyline points="40,165 40,210 180,210 180,165" fill="none" stroke="#1e293b" stroke-width="2.5"/>
+<rect x="102" y="40" width="16" height="160" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+<rect x="104" y="80" width="12" height="118" fill="#94a3b8"/>
+<text x="124" y="58" font-size="11" fill="#475569">boşluk</text>
+<line x1="78" y1="180" x2="78" y2="80" stroke="#dc2626" stroke-width="1.8"/>
+<line x1="72" y1="80" x2="100" y2="80" stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"/>
+<line x1="72" y1="180" x2="84" y2="180" stroke="#dc2626" stroke-width="1.8"/>
+<text x="74" y="116" font-size="12" font-weight="bold" text-anchor="end" fill="#dc2626">76 cm</text>
+<g stroke="#7c3aed" stroke-width="2.2" marker-end="url(#fb-sum-ar3)">
+<line x1="54" y1="150" x2="54" y2="176"/><line x1="160" y1="150" x2="160" y2="176"/>
+</g>
+<text x="160" y="144" font-size="12" text-anchor="middle" fill="#7c3aed">P₀</text>
+<text x="54" y="144" font-size="12" text-anchor="middle" fill="#7c3aed">P₀</text>
+<text x="110" y="225" font-size="11" text-anchor="middle" fill="#1e293b">cıva dolu kap (deniz seviyesi)</text>
+<text x="400" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Yükseldikçe açık hava basıncı azalır</text>
+<polygon points="250,205 400,40 550,205" fill="#d9f99d" stroke="#3f6212" stroke-width="2"/>
+<line x1="240" y1="205" x2="556" y2="205" stroke="#0369a1" stroke-width="3"/>
+<circle cx="280" cy="188" r="7" fill="#f472b6" stroke="#9d174d"/>
+<circle cx="335" cy="125" r="10" fill="#f472b6" stroke="#9d174d"/>
+<circle cx="400" cy="55" r="14" fill="#f472b6" stroke="#9d174d"/>
+<g font-size="11" fill="#1e293b">
+<text x="420" y="60">Zirve: cıva ≈ 46 cm</text>
+<text x="420" y="74">balon en şişkin</text>
+<text x="350" y="122">Orta: cıva ≈ 60 cm</text>
+<text x="292" y="186">Deniz: 76 cm</text>
+</g>
+<text x="400" y="224" font-size="11" text-anchor="middle" fill="#475569">Ağzı bağlı esnek balon dış basınç azaldıkça büyür.</text>
+</svg></div>
+<h4>Açık hava basıncının günlük hayattaki etkileri</h4>
+<ul>
+<li><b>Pipetle içmek:</b> Pipetin içindeki havayı çekince pipet içindeki basınç azalır; bardaktaki sıvı yüzeyine etki eden açık hava basıncı sıvıyı pipete iter.</li>
+<li><b>Vantuz:</b> Vantuz bastırılınca altındaki hava dışarı çıkar; dışarıdaki açık hava basıncı vantuzu yüzeye bastırır.</li>
+<li><b>Su dolu bardak + kâğıt:</b> Ağzına kâğıt kapatılıp ters çevrilen dolu bardaktaki su dökülmez; kâğıda alttan etki eden açık hava basıncı suyu tutar.</li>
+<li><b>Magdeburg yarım küreleri:</b> İçindeki hava boşaltılan iki yarım küre, dışarıdan etki eden açık hava basıncı yüzünden zor ayrılır.</li>
+<li><b>Şişeye giren yumurta:</b> Şişedeki hava ısıtılıp bir kısmı çıktıktan sonra soğuyunca içerideki basınç düşer; açık hava basıncı yumurtayı şişeye iter.</li>
+<li><b>Şırınga:</b> Piston çekilince şırınganın içindeki basınç azalır, açık hava basıncı sıvıyı şırıngaya iter.</li>
+<li><b>Uçakta şişen şişe, kulak tıkanması:</b> Yükseklerde dış basınç azalır; ağzı kapalı esnek şişe dışa doğru şişer, kulakta basınç farkı hissedilir.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Pipet, vantuz, şırınga örneklerinde sıvıyı ya da cismi “çeken” bir kuvvet yoktur; olay <b>dışarıdaki açık hava basıncının itmesiyle</b> gerçekleşir. “İçerideki hava yumurtayı çekti” gibi şıklar yanlıştır. Ayrıca program gereği gaz basıncını etkileyen değişkenler (sıcaklık, tanecik sayısı vb.) LGS kapsamında <b>değildir</b>; gaz basıncı yalnızca “gazlar da basınç uygular” ve “açık hava basıncı” örnekleriyle sorulur.</p>
+
+<h3>7. Pascal prensibi ve basıncın teknolojideki uygulamaları (F.8.3.1.3)</h3>
+<p><b>Pascal prensibi:</b> Kapalı bir kaptaki sıvıya uygulanan basınç, sıvı tarafından kabın her noktasına ve <b>her yöne aynı büyüklükte</b> iletilir. Delikli bir topa (Pascal topu) bağlı pistonu ittiğimizde suyun bütün deliklerden fışkırması bunu gösterir. Pascal prensibi bir <b>bilimsel ilke (prensip)</b>dir: Pek çok gözlem ve deneyle desteklenen, doğada değişmeden geçerli olan bir genellemedir.</p>
+<div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Hidrolik sistemde basıncın aynen iletilmesi ve büyük pistonda kuvvetin büyümesi">
+<defs><marker id="fb-sum-ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="fb-sum-ar5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker></defs>
+<rect x="0" y="0" width="560" height="210" fill="#ffffff"/>
+<rect x="60" y="90" width="44" height="100" fill="#93c5fd"/>
+<rect x="104" y="155" width="296" height="35" fill="#93c5fd"/>
+<rect x="400" y="90" width="120" height="100" fill="#93c5fd"/>
+<path d="M60,40 L60,190 L520,190 L520,40 M104,40 L104,155 L400,155 L400,40" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<rect x="61" y="80" width="42" height="10" fill="#475569"/>
+<rect x="401" y="80" width="118" height="10" fill="#475569"/>
+<rect x="420" y="40" width="80" height="40" rx="6" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+<text x="460" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#713f12">yük</text>
+<line x1="82" y1="30" x2="82" y2="76" stroke="#dc2626" stroke-width="3" marker-end="url(#fb-sum-ar4)"/>
+<text x="112" y="44" font-size="12" font-weight="bold" fill="#dc2626">F₁ (küçük)</text>
+<g stroke="#1d4ed8" stroke-width="2" marker-end="url(#fb-sum-ar5)">
+<line x1="440" y1="130" x2="440" y2="96"/><line x1="480" y1="130" x2="480" y2="96"/><line x1="82" y1="120" x2="82" y2="100"/>
+</g>
+<g font-size="11" fill="#1e293b">
+<text x="130" y="76">Küçük pistonda alan küçük,</text>
+<text x="130" y="92">büyük pistonda alan büyük.</text>
+<text x="130" y="116" font-weight="bold" fill="#1d4ed8">Basınç aynen iletilir: P₁ = P₂</text>
+<text x="130" y="134" font-weight="bold" fill="#dc2626">Büyük pistonda kuvvet büyür: F₂ &gt; F₁</text>
+</g>
+<text x="280" y="206" font-size="11" text-anchor="middle" fill="#475569">Hidrolik kriko, fren, berber koltuğu, itfaiye merdiveni, damperli kamyon aynı ilkeyle çalışır.</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Madde hâli</th><th>Neyi iletir?</th><th>Basıncı nelere bağlıdır?</th><th>Uygulama örnekleri</th></tr>
+<tr><td>Katı</td><td><b>Kuvveti</b> aynen iletir</td><td>Ağırlık (dik kuvvet), temas yüzey alanı</td><td>Çivi, raptiye, bıçak, palet, kar ayakkabısı</td></tr>
+<tr><td>Sıvı</td><td><b>Basıncı</b> her yöne aynen iletir (Pascal)</td><td>Derinlik, sıvının yoğunluğu</td><td>Hidrolik fren, kriko, berber koltuğu, iş makinesi kepçesi, baraj duvarı, dalgıç kıyafeti, su kulesi</td></tr>
+<tr><td>Gaz</td><td>Her yüzeye basınç uygular</td><td>(LGS’de değişkenlere girilmez)</td><td>Pipet, vantuz, şırınga, barometre, lastik ve balon şişirme, düdüklü tencere</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Hidrolik sistemde büyüyen şey <b>kuvvettir</b>, basınç değil. “Büyük pistonun alanı 20 kat büyük olduğu için basınç da 20 kat büyüktür” cümlesi yanlıştır; iki pistondaki sıvı basıncı <b>eşittir</b>. Ayrıca 2020 LGS’de hareketli kapağa kuvvet uygulanınca tıpaların fırlaması “sıvı basıncı derinlikle artar” bilgisiyle değil, <b>sıvıların basıncı iletmesiyle</b> (Pascal) açıklanıyordu.</p>
+<p><b>Hafıza ipucu:</b> <b>“Katı kuvveti, sıvı basıncı taşır.”</b></p>
+
+<h3>8. Çözümlü mini örnekler (LGS tarzı)</h3>
+<p><b>Örnek 1 (katı basıncı, yargı sorusu):</b> Küp şeklindeki K ve L cisimleri kuma bırakılıyor; L’nin izi K’ninkinden derin. “I. Ağırlıklar eşitse K’nin temas alanı daha büyüktür. II. Alanlar eşitse L daha ağırdır. III. K’nin alanı daha küçükse K daha ağırdır.” Hangileri doğrudur?<br><i>Çözüm:</i> L’nin basıncı daha büyük. I: Ağırlık eşitken basıncı küçük olanın alanı büyüktür → doğru. II: Alan eşitken basıncı büyük olan daha ağırdır → doğru. III: K’nin alanı küçük olduğu hâlde basıncı da küçükse ağırlığı kesinlikle L’den küçüktür → yanlış. <b>Cevap: I ve II.</b></p>
+<p><b>Örnek 2 (sıvı basıncı, oran):</b> Su dolu bir kapta, su yüzeyinden 10 cm derindeki basınçölçer 1 Pa gösteriyor. Aynı kapta 30 cm derindeki ölçer kaç Pa gösterir? Aynı derinliğe zeytinyağı dolu kapta konan ölçer 1 Pa’dan büyük mü gösterir, küçük mü?<br><i>Çözüm:</i> Aynı sıvıda derinlik 3 katına çıkınca basınç da 3 katına çıkar → <b>3 Pa</b>. Zeytinyağının yoğunluğu sudan küçük olduğu için aynı derinlikte basıncı <b>1 Pa’dan küçük</b> olur.</p>
+<p><b>Örnek 3 (deney tasarımı):</b> Bir öğrenci “Sıvı basıncı sıvının cinsine bağlıdır.” hipotezini test etmek istiyor. İlk düzenekte özdeş kaplardan birine 200 mL su koyup tabandan 3 cm yükseğe basınçölçer takmıştır. İkinci düzenekte ne yapmalıdır?<br><i>Çözüm:</i> Yalnızca sıvının cinsi değişmeli. Özdeş kaba <b>200 mL farklı bir sıvı</b> (örneğin tuzlu su) konmalı ve ölçer yine <b>tabandan 3 cm yükseğe</b> takılmalıdır. Böylece sıvı yüksekliği ve ölçüm noktasının derinliği aynı kalır. Farklı miktarda sıvı koymak ya da ölçerin yerini değiştirmek derinliği de değiştirir.</p>
+
+<h3>LGS'de bu konu nasıl soruluyor?</h3>
+<p>2019-2026 arasındaki LGS’lerde bu konudan <b>22 soru</b> geldi: yaklaşık yarısı <b>katı basıncı</b>, yarısı <b>sıvı basıncı</b>. Neredeyse her soru görsellidir (deney düzeneği, grafik, günlük hayat çizimi). Açık hava basıncı ve Pascal prensibi şu ana kadar ayrı bir soru olarak gelmedi; Pascal yalnızca bir yargıda çeldirici olarak kullanıldı.</p>
+<div class="tbl"><table>
+<tr><th>Soru tipi</th><th>Ne istenir?</th><th>Tuzak</th><th>Strateji</th></tr>
+<tr><td>Deney tasarımı (en sık)</td><td>“Hangi iki düzenek karşılaştırılmalı?”, “İkinci düzenekte ne yapılmalı?”</td><td>Hem ağırlığın hem alanın, hem derinliğin hem cinsin değiştiği şıklar</td><td>Her şık için “ne değişti?” listesini yaz; tek değişken değişmeli</td></tr>
+<tr><td>Değişkenleri belirleme</td><td>Bağımsız, bağımlı, kontrol edilen değişken</td><td>Bağımlı değişkeni (iz derinliği) bağımsız sanmak</td><td>Bilerek değiştirilen = bağımsız, ölçülen = bağımlı</td></tr>
+<tr><td>I-II-III yargı</td><td>Gözlemden hangi sonuçlar çıkar?</td><td>Doğru ama deneyden çıkarılamayan bilgi; Pascal ile derinliği karıştırma</td><td>Yalnızca verilen gözleme dayan</td></tr>
+<tr><td>Grafik / ölçüm</td><td>İz derinliği grafiği, basınç - zaman grafiği, Pa değerleri</td><td>Derinliği tabandan ölçmek; “sonra” durumunu atlamak</td><td>Derinliği sıvı yüzeyinden ölç, oranla karşılaştır</td></tr>
+<tr><td>Günlük hayat</td><td>Ranza izi, perde halkası, depo bantları, delikli şişe</td><td>Çok tekerlek/halka sayısının alanı büyüttüğünü unutmak</td><td>Önce ağırlık mı alan mı değişti, sonra basınç yönü</td></tr>
+</table></div>
+<ul>
+<li><b>En çok sorulan alt başlık:</b> Sıvı basıncının <b>derinliğe</b> bağlılığı ve katı basıncının <b>yüzey alanına</b> bağlılığı. Hemen her yıl bu ikisinden biri, çoğu yıl ikisi birden gelir.</li>
+<li><b>Klasik tuzaklar:</b> kuvvet ile basıncı karıştırmak; sıvı miktarı artınca basıncın mutlaka arttığını sanmak; kabın şekline göre basıncın değiştiğini düşünmek; yan yana dizilen cisimlerde basıncın arttığını sanmak.</li>
+<li><b>Eğilim:</b> 2023’ten beri I-II-III yargı soruları ve “hangisine kesinlikle ulaşılamaz / hangisi doğru olabilir” kalıbı artıyor. Şekli dikkatle oku: kaç yüz değiyor, ölçer nerede, sıvı seviyesi nerede?</li>
 </ul>
 
-<h3>3. Gaz Basıncı, Açık Hava Basıncı ve Torricelli Deneyi</h3>
-<table class="rt">
-<tr><th>Kavram / Deney</th><th>Bilimsel Açıklaması ve LGS İpuçları</th></tr>
-<tr><td><b>1. Torricelli Deneyi (Açık Hava Basıncı)</b></td><td>İtalyan bilim insanı <b>Torricelli</b>, <b>deniz seviyesinde (0 m) ve 0 °C sıcaklıkta</b> 1 metrelik cam boruyu tamamen <b>cıva</b> (d = 13,6 g/cm³) ile doldurup cıva çanağına ters çevirmiş ve borudaki cıva seviyesinin <b>76 cm (760 mm)</b> yüksekliğinde dengede kaldığını bulmuştur[cite: 11]. Açık hava basıncı <b>barometre</b> ile ölçülür[cite: 11].</td></tr>
-<tr><td><b>2. Cıva Yüksekliğini (h = 76 cm) Etkileyenler ve Etkilemeyenler</b></td><td>• <b>ETKİLEYENLER:</b><br>1) <b>Deniz seviyesinden yükseklik:</b> Yukarılara çıkıldıkça üzerindeki hava tabakası azaldığı için açık hava basıncı ve cıva yüksekliği (h) <b>AZALIR!</b>[cite: 11]<br>2) <b>Kullanılan sıvının yoğunluğu (d):</b> Cıva yerine yoğunluğu daha küçük bir sıvı (örneğin <b>su</b>, d = 1 g/cm³) kullanılırsa sıvı yüksekliği <b>ARTAR</b> (Su kullanılsaydı yaklaşık <b>10,5 metre</b> uzunluğunda boru gerekirdi!).<br>3) <b>Havanın sıcaklığı ve nemi.</b><br>• <b>ETKİLEMEYENLER (Çok Sorulur!):</b> Cam borunun <b>kalınlığı (kesit alanı)</b>, <b>uzunluğu</b>, <b>şekli</b>, borunun çanağa <b>eğik daldırılması</b> veya çanaktaki cıva miktarı cıva yüksekliğini (h = 76 cm) <b>KESİNLİKLE DEĞİŞTİRMEZ!</b>[cite: 11]</td></tr>
-<tr><td><b>3. Esnek Balon vs. Kapalı Çelik Kap</b></td><td>• <b>Esnek çocuk balonu (veya plastik şişe):</b> Dış basınç ile iç basınç her zaman birbirini dengeler (<b>P<sub>iç</sub> = P<sub>dış</sub></b>). Balon yukarı çıktıkça dış açık hava basıncı azalır; balonun iç basıncı da dış basınca eşitlenmek için azalır ve <b>balonun hacmi BÜYÜR (şişer)</b>, bir süre sonra patlar.<br>• <b>Kapalı çelik kap (esnek olmayan):</b> Dış basınçtan etkilenmez; içindeki gaz basıncı yalnızca kaba <b>gaz eklenirse</b> veya <b>sıcaklık artırılırsa</b> artar[cite: 11].</td></tr>
-<tr><td><b>4. Açık Hava Basıncını Kanıtlayan Günlük Olaylar</b></td><td>• <b>Magdeburg Küreleri:</b> İçindeki hava boşaltılan iki yarım kürenin dıştan etki eden açık hava basıncı yüzünden atlarla bile ayrılamaması.<br>• <b>Haşlanmış Yumurta / Çöken Teneke Kutu:</b> İçinde kağıt yakılan cam şişenin veya ısıtılıp ağzı kapatılan teneke kutunun soğuduğunda iç basıncının düşmesi ve dış açık hava basıncının yumurtayı şişeye itmesi / tenekeyi büzüştürmesi.<br>• <b>Diğer Örnekler:</b> Pipetle meyve suyu içilmesi, vantuzların cama yapışması, çay tabağının bardağa yapışması, ağzına kağıt kapatılıp ters çevrilen su dolu bardaktan suyun dökülmemesi, elektrik süpürgesi, şırıngaya sıvı çekilmesi[cite: 11].</td></tr>
-</table>
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2019-2026 LGS Fen Bilimleri testlerinde Basınç konusundan <b>22 soru</b> çıktı (2018’de bu konuya eşlenmiş soru yok). Alt başlık sınıflandırması soruların ölçtüğü ana değişkene göre yapılmış bir yorumdur; birden fazla değişkene dokunan sorular baskın olan başlığa yazıldı.</p>
+<div class="fig"><svg viewBox="0 0 560 285" width="560" role="img" aria-label="Basınç konusundan 2019-2026 LGS’de alt başlık ve yıllara göre soru sayıları ısı haritası">
+<rect x="0" y="0" width="560" height="285" fill="#ffffff"/>
+<text x="280" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b">Alt başlık × yıl: kaç soru geldi? (2019-2026, toplam 22)</text>
+<text x="197" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2019</text>
+<text x="235" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2020</text>
+<text x="273" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2021</text>
+<text x="311" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2022</text>
+<text x="349" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2023</text>
+<text x="387" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2024</text>
+<text x="425" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2025</text>
+<text x="463" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">2026</text>
+<text x="505" y="36" font-size="11" font-weight="bold" text-anchor="middle" fill="#334155">Top.</text>
+<text x="170" y="61" font-size="11" text-anchor="end" fill="#1e293b">Katı: yüzey alanı</text>
+<rect x="179" y="45" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="197" y="61" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="217" y="45" width="36" height="24" rx="3" fill="#60a5fa"/>
+<text x="235" y="61" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">2</text>
+<rect x="255" y="45" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="293" y="45" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="311" y="61" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="331" y="45" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="369" y="45" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="387" y="61" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="407" y="45" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="445" y="45" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<text x="505" y="61" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">5</text>
+<text x="170" y="87" font-size="11" text-anchor="end" fill="#1e293b">Katı: ağırlık (kuvvet)</text>
+<rect x="179" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="255" y="71" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="273" y="87" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="293" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="331" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="369" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="407" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="445" y="71" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<text x="505" y="87" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">1</text>
+<text x="170" y="113" font-size="11" text-anchor="end" fill="#1e293b">Katı: ağırlık + alan birlikte</text>
+<rect x="179" y="97" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="97" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="235" y="113" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="255" y="97" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="293" y="97" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="331" y="97" width="36" height="24" rx="3" fill="#60a5fa"/>
+<text x="349" y="113" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">2</text>
+<rect x="369" y="97" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="407" y="97" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="425" y="113" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="445" y="97" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="463" y="113" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<text x="505" y="113" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">5</text>
+<text x="170" y="139" font-size="11" text-anchor="end" fill="#1e293b">Sıvı: derinlik</text>
+<rect x="179" y="123" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="197" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="217" y="123" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="235" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="255" y="123" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="273" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="293" y="123" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="311" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="331" y="123" width="36" height="24" rx="3" fill="#1d4ed8"/>
+<text x="349" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">3</text>
+<rect x="369" y="123" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="407" y="123" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="445" y="123" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="463" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<text x="505" y="139" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">8</text>
+<text x="170" y="165" font-size="11" text-anchor="end" fill="#1e293b">Sıvı: yoğunluk (cins)</text>
+<rect x="179" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="149" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="235" y="165" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="255" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="293" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="331" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="369" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="407" y="149" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="425" y="165" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="445" y="149" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<text x="505" y="165" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">2</text>
+<text x="170" y="191" font-size="11" text-anchor="end" fill="#1e293b">Sıvı: kap şekli / miktar</text>
+<rect x="179" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="255" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="293" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="331" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="369" y="175" width="36" height="24" rx="3" fill="#bfdbfe"/>
+<text x="387" y="191" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">1</text>
+<rect x="407" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="445" y="175" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<text x="505" y="191" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">1</text>
+<text x="170" y="217" font-size="11" text-anchor="end" fill="#1e293b">Açık hava basıncı, Pascal</text>
+<rect x="179" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="255" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="293" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="331" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="369" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="407" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="445" y="201" width="36" height="24" rx="3" fill="#f1f5f9"/>
+<text x="505" y="217" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">0</text>
+<line x1="20" y1="228" x2="545" y2="228" stroke="#94a3b8"/>
+<text x="170" y="246" font-size="11" font-weight="bold" text-anchor="end" fill="#1e293b">Yıl toplamı</text>
+<text x="197" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="235" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">5</text>
+<text x="273" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="311" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="349" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">5</text>
+<text x="387" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="425" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="463" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text>
+<text x="505" y="246" font-size="12" font-weight="bold" text-anchor="middle" fill="#b91c1c">22</text>
+<text x="20" y="270" font-size="11" fill="#475569">Renk:</text>
+<rect x="60" y="259" width="16" height="14" rx="2" fill="#f1f5f9" stroke="#94a3b8"/><text x="80" y="270" font-size="11" fill="#475569">0</text>
+<rect x="130" y="259" width="16" height="14" rx="2" fill="#bfdbfe" stroke="#94a3b8"/><text x="150" y="270" font-size="11" fill="#475569">1</text>
+<rect x="200" y="259" width="16" height="14" rx="2" fill="#60a5fa" stroke="#94a3b8"/><text x="220" y="270" font-size="11" fill="#475569">2</text>
+<rect x="270" y="259" width="16" height="14" rx="2" fill="#1d4ed8" stroke="#94a3b8"/><text x="290" y="270" font-size="11" fill="#475569">3 soru</text>
+<text x="345" y="270" font-size="11" fill="#475569">Katı 11 soru · Sıvı 11 soru</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>
+<tr><td>2019</td><td>10</td><td>Katı: yüzey alanı</td><td>Deney tasarımı: kuma batma grafiğine göre hipotezi test eden dizilim (görsel şıklar)</td></tr>
+<tr><td>2019</td><td>11</td><td>Sıvı: derinlik</td><td>Hipotez belirleme: yaylı pistonun üstündeki su arttırılıyor</td></tr>
+<tr><td>2020</td><td>11</td><td>Katı: ağırlık + alan</td><td>Günlük hayat: ranza ayağının halıdaki izini derinleştiren işlem</td></tr>
+<tr><td>2020</td><td>13</td><td>Katı: yüzey alanı</td><td>Deney tasarımı: ağırlık sabit, alan değişen uygulama (ters çevrilen şişe)</td></tr>
+<tr><td>2020</td><td>14</td><td>Sıvı: yoğunluk</td><td>Deney sonucu tahmini: civa ve etil alkolde U borusu seviyeleri (görsel şıklar)</td></tr>
+<tr><td>2020</td><td>15</td><td>Sıvı: derinlik</td><td>I-II-III: depo bantları, delikten fışkırma, tıpa fırlaması (Pascal çeldirici)</td></tr>
+<tr><td>2020</td><td>16</td><td>Katı: yüzey alanı</td><td>Değişken belirleme: sabit tutulmayan değişken</td></tr>
+<tr><td>2021</td><td>12</td><td>Sıvı: derinlik</td><td>Çıkarım: küpün yüzeylerine etki eden kuvvetlerden hangisi bilinmeli</td></tr>
+<tr><td>2021</td><td>13</td><td>Katı: ağırlık (kuvvet)</td><td>Deney tasarımı: alan aynı, kuvvet farklı iki düzenek seçimi</td></tr>
+<tr><td>2022</td><td>10</td><td>Katı: yüzey alanı</td><td>Deney tasarımı: yan yana / üst üste küpler, hangi iki düzenek</td></tr>
+<tr><td>2022</td><td>11</td><td>Sıvı: derinlik</td><td>Deney yorumu: tüpe tutturulan levhanın düşmesi</td></tr>
+<tr><td>2023</td><td>12</td><td>Katı: ağırlık + alan</td><td>I-II-III çıkarım: M levhaları üzerinde eşit iz → eşit ağırlık</td></tr>
+<tr><td>2023</td><td>13</td><td>Katı: ağırlık + alan</td><td>Yorum: masadaki kitapların ayrı ayrı basınçları (konum değişince)</td></tr>
+<tr><td>2023</td><td>14</td><td>Sıvı: derinlik</td><td>Ölçüm/oran: basınçölçer değerleri (1 Pa, 2 Pa)</td></tr>
+<tr><td>2023</td><td>15</td><td>Sıvı: derinlik</td><td>Grafik + I-II-III: basınç - zaman grafiğine uyan durumlar (yoğunluk çeldiricisi)</td></tr>
+<tr><td>2023</td><td>16</td><td>Sıvı: derinlik</td><td>Deney tasarımı: hareketli kap duvarıyla derinliği değiştirme</td></tr>
+<tr><td>2024</td><td>10</td><td>Katı: yüzey alanı</td><td>Deney - sonuç eşleştirme: pipetler üzerinde silgiler (görsel şıklar)</td></tr>
+<tr><td>2024</td><td>11</td><td>Sıvı: kap şekli / miktar</td><td>Hipotezi destekleyen ölçüm: farklı şekilli kaplarda aynı derinlik</td></tr>
+<tr><td>2025</td><td>8</td><td>Sıvı: yoğunluk</td><td>Deney tasarımı: zeytinyağıyla ikinci düzenek, derinliği sabit tutma</td></tr>
+<tr><td>2025</td><td>9</td><td>Katı: ağırlık + alan</td><td>Günlük hayat + I-II-III: perde halkalarının süngerdeki izi</td></tr>
+<tr><td>2026</td><td>9</td><td>Katı: ağırlık + alan</td><td>Grafik + I-II-III: iz derinliği grafiğinden ağırlık/alan çıkarımı</td></tr>
+<tr><td>2026</td><td>10</td><td>Sıvı: derinlik</td><td>I-II-III: bölmeli kafeste balonların şişmesi</td></tr>
+</table></div>
+<div class="note"><b>Çıkmış analizi</b><ul>
+<li>En çok sorulan alt başlık <b>sıvı basıncının derinliğe bağlılığı</b> (22 sorunun 8’i); onu katı basıncında <b>yüzey alanı</b> (5) ve <b>ağırlık + alanın birlikte</b> yorumlanması (5) izliyor. Katı ve sıvı basıncı 11’er soruyla tam dengede.</li>
+<li>Baskın soru tipi <b>deney tasarımı / değişken kontrolü</b>: “hangi iki düzenek karşılaştırılmalı”, “ikinci düzenekte ne yapılmalı”. Tipik tuzak, iki değişkenin birden değiştiği şıklar ile alanı aslında değişmeyen (iki yüzü yine kuma değen) dizilimlerdir.</li>
+<li>2023’ten beri <b>I-II-III yargı</b> ve <b>grafik</b> soruları ağırlık kazandı (2023-15, 2025-9, 2026-9, 2026-10). 2020 ve 2023 bu konudan 5’er soruyla en yoğun yıllar; diğer yıllarda 2’şer soru geldi.</li>
+<li>Açık hava basıncı, Torricelli ve Pascal prensibi şu ana kadar ayrı soru olarak gelmedi; Pascal yalnızca 2020-15’te çeldirici yargı olarak kullanıldı. Yine de F.8.3.1.3 kazanımı kapsamında olduğundan bu başlıklar hazırlıkta atlanmamalı.</li>
+</ul></div>
 `,
 qs: [
-{
-  q: `<p>Boyutları <b>5 cm × 10 cm × 20 cm</b> olan <b>40 N</b> ağırlığındaki homojen bir tuğla, yatay zemine şekildeki <b>K, L ve M</b> konumlarında ayrı ayrı konuluyor[cite: 11].</p>
+{ lv: "kolay", q: `<p>Boyutları <b>5 cm × 10 cm × 20 cm</b> olan <b>40 N</b> ağırlığındaki homojen bir tuğla, yatay zemine şekildeki <b>K, L ve M</b> konumlarında ayrı ayrı konuluyor.</p>
 <div class="fig"><svg viewBox="0 0 440 185" width="420" role="img" aria-label="Tuğlanın K, L ve M duruşlarında katı basıncı karşılaştırması">
 <line x1="10" y1="145" x2="430" y2="145" stroke="#78716c" stroke-width="3"/>
 <g stroke="#7c2d12" stroke-width="1.5">
@@ -128,77 +554,114 @@ qs: [
 <rect x="130" y="120" width="100" height="25" fill="#f97316"/><polygon points="130,120 154,96 254,96 230,120" fill="#fdba74"/><polygon points="230,120 254,96 254,121 230,145" fill="#c2410c"/>
 <rect x="290" y="95" width="100" height="50" fill="#f97316"/><polygon points="290,95 302,83 402,83 390,95" fill="#fdba74"/><polygon points="390,95 402,83 402,133 390,145" fill="#c2410c"/>
 </g>
-<g font-size="9.5" font-weight="bold" fill="#1e293b">
+<g font-size="11" font-weight="bold" fill="#1e293b">
 <text x="35" y="160">10 cm</text><text x="4" y="100">20</text><text x="85" y="45">5</text>
 <text x="165" y="160">20 cm</text><text x="114" y="137">5</text><text x="248" y="112">10</text>
 <text x="325" y="160">20 cm</text><text x="272" y="125">10</text><text x="402" y="95">5</text>
 </g>
 <g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e40af"><text x="55" y="178">K</text><text x="185" y="178">L</text><text x="345" y="178">M</text></g>
 </svg></div>
-<p>Tuğlanın K, L ve M durumlarında yatay zemine uyguladığı <b>dik kuvvetler (F<sub>K</sub>, F<sub>L</sub>, F<sub>M</sub>)</b> ile <b>katı basınçları (P<sub>K</sub>, P<sub>L</sub>, P<sub>M</sub>)</b> arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir[cite: 11]?</p>`,
-  c: [
-    `Kuvvetler: F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub> — Basınçlar: P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub>`,
-    `Kuvvetler: F<sub>K</sub> &gt; F<sub>M</sub> &gt; F<sub>L</sub> — Basınçlar: P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub>`,
-    `Kuvvetler: F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub> — Basınçlar: P<sub>L</sub> &gt; P<sub>M</sub> &gt; P<sub>K</sub>`,
-    `Kuvvetler: F<sub>L</sub> &gt; F<sub>M</sub> &gt; F<sub>K</sub> — Basınçlar: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>`
-  ],
+<p>Tuğlanın K, L ve M durumlarında yatay zemine uyguladığı <b>dik kuvvetler (F<sub>K</sub>, F<sub>L</sub>, F<sub>M</sub>)</b> ile <b>katı basınçları (P<sub>K</sub>, P<sub>L</sub>, P<sub>M</sub>)</b> arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["Kuvvetler: F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub> — Basınçlar: P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub>", "Kuvvetler: F<sub>K</sub> &gt; F<sub>M</sub> &gt; F<sub>L</sub> — Basınçlar: P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub>", "Kuvvetler: F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub> — Basınçlar: P<sub>L</sub> &gt; P<sub>M</sub> &gt; P<sub>K</sub>", "Kuvvetler: F<sub>L</sub> &gt; F<sub>M</sub> &gt; F<sub>K</sub> — Basınçlar: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>"],
   a: "A",
-  s: `<p>Aynı tuğla hangi yüzeyi üzerine konulursa konulsun ağırlığı (zemine uyguladığı dik kuvvet) değişmez: <b>F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub> = 40 N</b>[cite: 11].</p>
-<p>Basınç ise zemine temas eden yüzey alanıyla ters orantılıdır[cite: 11]:</p>
-<ul>
-<li><b>K:</b> S<sub>K</sub> = 10 × 5 = 50 cm² → P<sub>K</sub> = 40 / 50 = <b>0,8 Pa</b>[cite: 11]</li>
-<li><b>L:</b> S<sub>L</sub> = 20 × 10 = 200 cm² → P<sub>L</sub> = 40 / 200 = <b>0,2 Pa</b>[cite: 11]</li>
-<li><b>M:</b> S<sub>M</sub> = 20 × 5 = 100 cm² → P<sub>M</sub> = 40 / 100 = <b>0,4 Pa</b>[cite: 11]</li>
-</ul>
-<p>Buna göre basınç sıralaması: <b>P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub></b> olur[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Tabana göre düzgün yükselen homojen bir silindir (veya dikdörtgenler prizması), aşağıdaki şekillerde gösterildiği gibi üç farklı biçimde kesilerek taralı parçalar atılıyor ve kalan <b>I, II ve III</b> numaralı parçaların zemine uyguladığı basınçlar başlangıçtaki basınçla (<b>P<sub>0</sub></b>) karşılaştırılıyor.</p>
-<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="Katı cismin dikey, yatay ve çapraz kesilmesi durumunda basınç değişimi">
-<line x1="10" y1="125" x2="530" y2="125" stroke="#475569" stroke-width="2.5"/>
-<g font-size="9.5" text-anchor="middle">
-<rect x="30" y="45" width="55" height="80" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/>
-<rect x="85" y="45" width="35" height="80" fill="#e2e8f0" stroke="#64748b" stroke-dasharray="4 2"/>
-<line x1="85" y1="35" x2="85" y2="132" stroke="#dc2626" stroke-width="2"/>
-<text x="57" y="88" font-weight="bold" fill="#1e3a8a">I (Kalan)</text>
-<text x="102" y="88" fill="#64748b">Atıldı</text>
-<text x="75" y="25" font-weight="bold" fill="#1e40af">1. Dikey Kesim</text>
-<text x="75" y="144" font-weight="bold" fill="#1e40af">(G ve S aynı oranda azaldı)</text>
-
-<rect x="215" y="85" width="90" height="40" fill="#34d399" stroke="#065f46" stroke-width="1.5"/>
-<rect x="215" y="45" width="90" height="40" fill="#e2e8f0" stroke="#64748b" stroke-dasharray="4 2"/>
-<line x1="205" y1="85" x2="315" y2="85" stroke="#dc2626" stroke-width="2"/>
-<text x="260" y="108" font-weight="bold" fill="#065f46">II (Kalan)</text>
-<text x="260" y="68" fill="#64748b">Atıldı</text>
-<text x="260" y="25" font-weight="bold" fill="#166534">2. Yatay Kesim</text>
-<text x="260" y="144" font-weight="bold" fill="#166534">(S sabit kaldı, G azaldı)</text>
-
-<polygon points="400,125 490,125 400,45" fill="#fbbf24" stroke="#92400e" stroke-width="1.5"/>
-<polygon points="400,45 490,45 490,125" fill="#e2e8f0" stroke="#64748b" stroke-dasharray="4 2"/>
-<line x1="395" y1="40" x2="495" y2="130" stroke="#dc2626" stroke-width="2"/>
-<text x="430" y="108" font-weight="bold" fill="#92400e">III (Kalan)</text>
-<text x="465" y="72" fill="#64748b">Atıldı</text>
-<text x="445" y="25" font-weight="bold" fill="#b45309">3. Köşegen Kesim</text>
-<text x="445" y="144" font-weight="bold" fill="#b45309">(S sabit kaldı, G yarıya indi)</text>
+  s: `<p>Tuğla hangi yüzeyi üzerine konursa konsun <b>ağırlığı değişmez</b>; zemine uyguladığı dik kuvvetler eşittir: F<sub>K</sub> = F<sub>L</sub> = F<sub>M</sub>.</p>
+<p>Ağırlık aynıyken basınç, zemine değen yüzey küçüldükçe artar. Zemine değen yüzler: K’de 10 cm × 5 cm (en küçük), M’de 20 cm × 5 cm, L’de 20 cm × 10 cm (en büyük). Buna göre <b>P<sub>K</sub> &gt; P<sub>M</sub> &gt; P<sub>L</sub></b>.</p>
+<p>B ve D’de kuvvetin konuma göre değiştiği sanılmıştır (yanlış). C’de basınç sıralaması ters yazılmıştır; en geniş yüzey üzerinde duran L’nin basıncı en küçüktür.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci özdeş küpleri birbirine yapıştırarak oluşturduğu <b>K, L ve M</b> cisimlerini aynı kum havuzuna yavaşça bırakıyor ve cisimlerin ağırlıkları ile taban alanlarını aşağıdaki tabloya kaydediyor.</p>
+<table class="rt">
+<tr><th>Cisim</th><th>Toplam Ağırlık (N)</th><th>Kuma Değen Taban Alanı (cm²)</th></tr>
+<tr><td><b>K Cismi</b></td><td>60 N</td><td>20 cm²</td></tr>
+<tr><td><b>L Cismi</b></td><td>90 N</td><td>45 cm²</td></tr>
+<tr><td><b>M Cismi</b></td><td>40 N</td><td>10 cm²</td></tr>
+</table>
+<p>Buna göre K, L ve M cisimlerinin kumda oluşturdukları <b>batma derinlikleri (h<sub>K</sub>, h<sub>L</sub>, h<sub>M</sub>)</b> arasındaki ilişki aşağıdakilerden hangisidir?</p>`,
+  c: ["h<sub>L</sub> &gt; h<sub>K</sub> &gt; h<sub>M</sub>", "h<sub>M</sub> &gt; h<sub>K</sub> &gt; h<sub>L</sub>", "h<sub>K</sub> &gt; h<sub>M</sub> &gt; h<sub>L</sub>", "h<sub>K</sub> = h<sub>L</sub> = h<sub>M</sub>"],
+  a: "B",
+  s: `<p>Kumdaki batma derinliği, cismin kuma uyguladığı katı basıncıyla doğru orantılıdır. Basıncı karşılaştırmak için her cismin ağırlığının, kuma değen alanına oranına bakılır:</p>
+<ul><li>K: 60 N ÷ 20 cm² = 3 N/cm²</li><li>L: 90 N ÷ 45 cm² = 2 N/cm²</li><li>M: 40 N ÷ 10 cm² = 4 N/cm²</li></ul>
+<p>Basınç M &gt; K &gt; L olduğundan <b>h<sub>M</sub> &gt; h<sub>K</sub> &gt; h<sub>L</sub></b>. A’da yalnızca ağırlığa bakılmış (en ağır L en derine batar sanılmış), C’de yalnızca alana bakılmamış, D’de her cismin aynı derinliğe batacağı sanılmıştır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Özdeş tuğlalar kullanılarak yatay kum zemin üzerinde <b>I, II ve III</b> numaralı düzenekler kuruluyor. I. düzenekte tek tuğla, II. düzenekte üst üste konulmuş iki tuğla, III. düzenekte ise yan yana konulmuş iki tuğla bulunmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 460 145" width="440" role="img" aria-label="Özdeş tuğlaların üç farklı yerleşimi">
+<line x1="10" y1="115" x2="450" y2="115" stroke="#78716c" stroke-width="3"/>
+<g fill="#f97316" stroke="#7c2d12" stroke-width="1.5">
+<rect x="35" y="90" width="80" height="25"/>
+<rect x="180" y="90" width="80" height="25"/>
+<rect x="180" y="65" width="80" height="25"/>
+<rect x="295" y="90" width="70" height="25"/>
+<rect x="365" y="90" width="70" height="25"/>
+</g>
+<g font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">
+<text x="75" y="82">G / S</text>
+<text x="220" y="57">2G / S</text>
+<text x="365" y="82">2G / 2S</text>
+<text x="75" y="135" font-size="13" fill="#1e40af">I</text>
+<text x="220" y="135" font-size="13" fill="#dc2626">II</text>
+<text x="365" y="135" font-size="13" fill="#16a34a">III</text>
 </g>
 </svg></div>
+<p>Düzeneklerin kum zemine uyguladığı katı basınçları <b>P<sub>I</sub>, P<sub>II</sub> ve P<sub>III</sub></b> olduğuna göre, bunlar arasındaki büyüklük ilişkisi aşağıdakilerden hangisidir?</p>`,
+  c: ["P<sub>I</sub> = P<sub>II</sub> = P<sub>III</sub>", "P<sub>III</sub> &gt; P<sub>II</sub> &gt; P<sub>I</sub>", "P<sub>II</sub> = P<sub>III</sub> &gt; P<sub>I</sub>", "P<sub>II</sub> &gt; P<sub>I</sub> = P<sub>III</sub>"],
+  a: "D",
+  s: `<p>Bir tuğlanın ağırlığına <b>G</b>, geniş taban alanına <b>S</b> diyelim:</p>
+<ul>
+<li><b>I. Düzenek:</b> P<sub>I</sub> = G / S</li>
+<li><b>II. Düzenek:</b> Ağırlık 2 katına çıkmış (2G), yüzey alanı değişmemiştir (S) → P<sub>II</sub> = <b>2G / S</b></li>
+<li><b>III. Düzenek:</b> Ağırlık 2 katına çıkmış (2G), yüzey alanı da 2 katına çıkmıştır (2S) → P<sub>III</sub> = 2G / 2S = <b>G / S</b></li>
+</ul>
+<p>Buna göre basınç sıralaması: <b>P<sub>II</sub> &gt; P<sub>I</sub> = P<sub>III</sub></b> olur.</p>
+<p>A’da yan yana eklenen tuğlanın basıncı artırdığı ya da üst üste koymanın basıncı değiştirmediği sanılmıştır. B’de III’ün basıncı en büyük sanılmıştır; oysa III’te ağırlık ile alan birlikte iki katına çıkar. C’de II ile III eşit sanılmıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Her yerinde aynı kalınlıkta (türdeş) bir dikdörtgenler prizması, aşağıdaki şekillerde gösterildiği gibi üç farklı biçimde kesilerek taralı parçalar atılıyor ve kalan <b>I, II ve III</b> numaralı parçaların zemine uyguladığı basınçlar başlangıçtaki basınçla (<b>P<sub>0</sub></b>) karşılaştırılıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 215" width="560" role="img" aria-label="Dikdörtgenler prizmasının dikey, yatay ve köşegen kesilmesi">
+<rect x="0" y="0" width="560" height="215" fill="#ffffff"/>
+<g font-size="13" font-weight="bold" text-anchor="middle"><text x="95" y="22" fill="#1e40af">1. Dikey kesim</text><text x="280" y="22" fill="#166534">2. Yatay kesim</text><text x="465" y="22" fill="#9a3412">3. Köşegen kesim</text></g>
+<line x1="15" y1="160" x2="545" y2="160" stroke="#475569" stroke-width="3"/>
+<rect x="45" y="50" width="50" height="110" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/>
+<rect x="95" y="50" width="50" height="110" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="95" y1="40" x2="95" y2="168" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+<rect x="230" y="105" width="100" height="55" fill="#4ade80" stroke="#166534" stroke-width="1.5"/>
+<rect x="230" y="50" width="100" height="55" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="218" y1="105" x2="342" y2="105" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+<polygon points="415,50 515,50 515,160" fill="#e2e8f0" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<polygon points="415,50 415,160 515,160" fill="#facc15" stroke="#a16207" stroke-width="1.5"/>
+<line x1="405" y1="39" x2="525" y2="171" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+<g font-size="11" text-anchor="middle" fill="#475569"><text x="120" y="108">atılır</text><text x="280" y="82">atılır</text><text x="490" y="90">atılır</text></g>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b"><text x="70" y="182">I</text><text x="280" y="182">II</text><text x="440" y="182">III</text></g>
+<g font-size="11" text-anchor="middle" fill="#1e293b"><text x="95" y="202">Kalan parça: I</text><text x="280" y="202">Kalan parça: II</text><text x="465" y="202">Kalan parça: III</text></g>
+</svg></div>
 <p>Buna göre 1, 2 ve 3. işlemler sonucunda zeminde kalan <b>I, II ve III</b> numaralı parçaların zemine uyguladığı katı basınçlarının ilk duruma (P<sub>0</sub>) göre değişimi aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: [
-    `I: Değişmez — II: Azalır — III: Azalır (Yarıya iner)`,
-    `I: Azalır — II: Değişmez — III: Artar`,
-    `I: Değişmez — II: Artar — III: Değişmez`,
-    `I: Azalır — II: Azalır — III: Azalır`
-  ],
+  c: ["I: Değişmez — II: Azalır — III: Azalır (Yarıya iner)", "I: Azalır — II: Değişmez — III: Artar", "I: Değişmez — II: Artar — III: Değişmez", "I: Azalır — II: Azalır — III: Azalır"],
   a: "A",
   s: `<p>Üç kesim işlemini ayrı ayrı inceleyelim:</p>
 <ul>
 <li><b>1. Dikey Kesim (I):</b> Cisim yukarıdan aşağıya dikey kesildiğinde kalan parçanın ağırlığı (G) ve taban alanı (S) <b>aynı oranda</b> azaldığı için basınç <b>değişmez (P<sub>I</sub> = P<sub>0</sub>)</b>.</li>
 <li><b>2. Yatay Kesim (II):</b> Üst parça atıldığında taban alanı (S) değişmez ancak ağırlık (G) yarıya indiği için basınç <b>azalır</b>.</li>
-<li><b>3. Köşegen Kesim (III):</b> Üstteki üçgen parça atıldığında taban alanı (S) yine aynı kalmış ancak ağırlık (G) yarıya inmiştir; dolayısıyla basınç <b>azalır (yarıya iner)</b>. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Marangoz Ahmet Usta, tahta bloğa bir çiviyi çekiçle vurarak çakmaktadır. Çivinin geniş olan baş kısmının yüzey alanı <b>2S</b>, sivri olan uç kısmının yüzey alanı ise <b>S / 10</b>’dur.</p>
+<li><b>3. Köşegen Kesim (III):</b> Üstteki üçgen parça atıldığında taban alanı (S) yine aynı kalmış ancak ağırlık (G) yarıya inmiştir; dolayısıyla basınç <b>azalır (yarıya iner)</b>.</li>
+</ul>
+<p>B ve D’de dikey kesimde basıncın azaldığı sanılmıştır; oysa ağırlık ve alan birlikte azalır. B ve C’de yatay ya da köşegen kesimde basıncın artacağı ya da değişmeyeceği düşünülmüştür; bu kesimlerde alan aynı kaldığı hâlde ağırlık azalır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Ağırlıkları <b>eşit</b> olan K, L ve M cisimleri kum havuzuna ayrı ayrı bırakılıyor. Cisimlerin kumda oluşturduğu iz derinlikleri aşağıdaki grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 400 210" width="400" role="img" aria-label="K, L ve M cisimlerinin kumda oluşturduğu iz derinlikleri sütun grafiği">
+<rect x="0" y="0" width="400" height="210" fill="#ffffff"/>
+<line x1="70" y1="175" x2="350" y2="175" stroke="#1e293b" stroke-width="2"/>
+<line x1="70" y1="175" x2="70" y2="25" stroke="#1e293b" stroke-width="2"/>
+<g stroke="#e2e8f0"><line x1="70" y1="135" x2="350" y2="135"/><line x1="70" y1="95" x2="350" y2="95"/><line x1="70" y1="55" x2="350" y2="55"/></g>
+<g font-size="11" text-anchor="end" fill="#475569"><text x="64" y="179">0</text><text x="64" y="139">1</text><text x="64" y="99">2</text><text x="64" y="59">3</text></g>
+<rect x="100" y="55" width="50" height="120" fill="#f97316"/>
+<rect x="185" y="95" width="50" height="80" fill="#f59e0b"/>
+<rect x="270" y="135" width="50" height="40" fill="#facc15"/>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e293b"><text x="125" y="193">K</text><text x="210" y="193">L</text><text x="295" y="193">M</text></g>
+<text x="76" y="20" font-size="12" fill="#1e293b">İz derinliği (cm)</text>
+</svg></div>
+<p>Buna göre K, L ve M cisimlerinin kuma temas eden yüzey alanları arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["K &gt; L &gt; M", "K = L = M", "M &gt; L &gt; K", "L &gt; K &gt; M"],
+  a: "C",
+  s: `<p>İz derinliği basıncı gösterir: grafiğe göre basınçlar K &gt; L &gt; M’dir. Ağırlıklar eşit olduğunda temas alanı <b>küçük</b> olan cismin basıncı <b>büyük</b> olur. Bu yüzden en derin iz bırakan K’nin alanı en küçük, en sığ iz bırakan M’nin alanı en büyüktür: <b>M &gt; L &gt; K</b>.</p>
+<p>A’da iz derinliği ile alanın doğru orantılı olduğu sanılmıştır. B’de ağırlıklar eşit olduğu için alanların da eşit olacağı düşünülmüştür; alanlar eşit olsaydı izler de eşit olurdu. D grafikle ilgisiz bir sıralamadır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Marangoz Ahmet Usta, tahta bloğa bir çiviyi çekiçle vurarak çakmaktadır. Çivinin geniş olan baş kısmının yüzey alanı <b>2S</b>, sivri olan uç kısmının yüzey alanı ise <b>S / 10</b>’dur.</p>
 <div class="fig"><svg viewBox="0 0 480 120" width="460" role="img" aria-label="Çivinin kuvveti ve basıncı iletmesi şeması">
 <rect x="20" y="15" width="440" height="90" rx="8" fill="#f8fafc" stroke="#64748b"/>
 <rect x="115" y="30" width="16" height="60" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/>
@@ -206,159 +669,402 @@ qs: [
 <rect x="300" y="22" width="130" height="76" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
 <line x1="40" y1="60" x2="110" y2="60" stroke="#dc2626" stroke-width="3"/>
 <polygon points="103,54 114,60 103,66" fill="#dc2626"/>
-<g font-size="10" font-weight="bold">
+<g font-size="11" font-weight="bold">
 <text x="72" y="50" fill="#dc2626" text-anchor="middle">F₁ Kuvveti</text>
 <text x="123" y="25" fill="#1e40af" text-anchor="middle">Baş (K): 2S</text>
 <text x="285" y="42" fill="#991b1b" text-anchor="middle">Uç (L): S/10</text>
 <text x="365" y="64" fill="#92400e" text-anchor="middle">Tahta Blok</text>
 </g>
 </svg></div>
-<p>Ahmet Usta çivinin <b>K (baş)</b> kısmına dik olarak <b>F<sub>1</sub> kuvveti</b> ve <b>P<sub>K</sub> basıncı</b> uyguladığına göre, çivinin <b>L (sivri uç)</b> kısmında tahtaya iletilen <b>F<sub>2</sub> kuvveti</b> ve oluşan <b>P<sub>L</sub> basıncı</b> için aşağıdakilerden hangisi <b>doğrudur</b>[cite: 11]?</p>`,
-  c: [
-    `Kuvvet aynen iletilir (F<sub>1</sub> = F<sub>2</sub>); ancak yüzey alanı küçüldüğü için uçtaki basınç çok daha büyüktür (P<sub>L</sub> &gt; P<sub>K</sub>).`,
-    `Basınç aynen iletilir (P<sub>K</sub> = P<sub>L</sub>); ancak uçtaki kuvvet büyür (F<sub>2</sub> &gt; F<sub>1</sub>).`,
-    `Hem kuvvet hem de basınç aynen iletilir (F<sub>1</sub> = F<sub>2</sub> ve P<sub>K</sub> = P<sub>L</sub>).`,
-    `Uç kısımda yüzey alanı küçüldüğü için hem kuvvet hem basınç azalır.`
-  ],
+<p>Ahmet Usta çivinin <b>K (baş)</b> kısmına dik olarak <b>F<sub>1</sub> kuvveti</b> ve <b>P<sub>K</sub> basıncı</b> uyguladığına göre, çivinin <b>L (sivri uç)</b> kısmında tahtaya iletilen <b>F<sub>2</sub> kuvveti</b> ve oluşan <b>P<sub>L</sub> basıncı</b> için aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Kuvvet aynen iletilir (F<sub>1</sub> = F<sub>2</sub>); ancak yüzey alanı küçüldüğü için uçtaki basınç çok daha büyüktür (P<sub>L</sub> &gt; P<sub>K</sub>).", "Basınç aynen iletilir (P<sub>K</sub> = P<sub>L</sub>); ancak uçtaki kuvvet büyür (F<sub>2</sub> &gt; F<sub>1</sub>).", "Hem kuvvet hem de basınç aynen iletilir (F<sub>1</sub> = F<sub>2</sub> ve P<sub>K</sub> = P<sub>L</sub>).", "Uç kısımda yüzey alanı küçüldüğü için hem kuvvet hem basınç azalır."],
   a: "A",
-  s: `<p><b>Katılar</b>, kendilerine uygulanan <b>kuvveti</b> aynı doğrultuda ve <b>hiç değiştirmeden (aynen: F<sub>1</sub> = F<sub>2</sub>)</b> iletir[cite: 11]. Ancak basınç yüzey alanıyla ters orantılı olduğu için, çivinin sivri ucunda (L) yüzey alanı 20 kat küçüldüğünden basınç 20 kat büyür (<b>P<sub>L</sub> &gt; P<sub>K</sub></b>)[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Yarısına kadar su ile dolu olan, ağzı sıkıca kapalı kesik koni biçimindeki kap, <b>Şekil-1</b>’deki konumdan ters çevrilerek <b>Şekil-2</b>’deki gibi dar yüzeyi üzerine konuluyor.</p>
-<div class="fig"><svg viewBox="0 0 460 155" width="440" role="img" aria-label="Kesik koni kabın ters çevrilmesi katı ve sıvı basıncı">
-<line x1="15" y1="130" x2="445" y2="130" stroke="#475569" stroke-width="3"/>
-<g stroke="#1e3a8a" stroke-width="2">
-<polygon points="50,130 150,130 125,35 75,35" fill="#f8fafc"/>
-<polygon points="50,130 150,130 138,85 62,85" fill="#60a5fa"/>
-<polygon points="295,130 345,130 370,35 270,35" fill="#f8fafc"/>
-<polygon points="295,130 345,130 360,65 280,65" fill="#60a5fa"/>
-</g>
-<path d="M180,80 Q215,50 250,80" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<polygon points="246,72 254,82 242,84" fill="#dc2626"/>
-<g font-size="10" font-weight="bold" text-anchor="middle">
-<text x="100" y="25" fill="#1e40af">Şekil-1 (Geniş Taban: 2S)</text>
-<text x="100" y="112" fill="#1e3a8a">h₁</text>
-<text x="100" y="146" fill="#1e293b">Taban Alanı = 2S</text>
-<text x="215" y="55" fill="#dc2626">Ters Çevriliyor</text>
-<text x="320" y="25" fill="#991b1b">Şekil-2 (Dar Taban: S)</text>
-<text x="320" y="102" fill="#1e3a8a">h₂ (h₂ &gt; h₁)</text>
-<text x="320" y="146" fill="#1e293b">Taban Alanı = S</text>
-</g>
+  s: `<p><b>Katılar</b>, kendilerine uygulanan <b>kuvveti</b> aynı doğrultuda ve <b>hiç değiştirmeden (aynen: F<sub>1</sub> = F<sub>2</sub>)</b> iletir. Ancak basınç yüzey alanıyla ters orantılı olduğu için, çivinin sivri ucunda (L) yüzey alanı 20 kat küçüldüğünden basınç 20 kat büyür (<b>P<sub>L</sub> &gt; P<sub>K</sub></b>).</p>
+<p>B yanlıştır: basıncı aynen ileten sıvılardır, katılar kuvveti iletir. C yanlıştır: yüzey alanı farklı olduğu için basınç aynen iletilmez. D yanlıştır: kuvvet azalmaz, aynen iletilir; uçta basınç azalmaz, artar.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci, özdeş tuğlaları kum havuzuna aşağıdaki gibi dört farklı düzenekte yerleştirmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 185" width="560" role="img" aria-label="Kum havuzunda dört tuğla düzeneği">
+<rect x="0" y="0" width="560" height="185" fill="#ffffff"/>
+<rect x="8" y="120" width="544" height="26" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+<rect x="47" y="102" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/><rect x="194" y="84" width="28" height="36" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/><rect x="321" y="84" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/><rect x="321" y="102" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/><rect x="430" y="102" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/><rect x="486" y="102" width="56" height="18" fill="#f97316" stroke="#7c2d12" stroke-width="1.5"/>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a"><text x="75" y="40">I</text><text x="208" y="40">II</text><text x="349" y="40">III</text><text x="486" y="40">IV</text></g>
+<g font-size="11" text-anchor="middle" fill="#1e293b"><text x="75" y="58">1 tuğla, geniş yüzü</text><text x="208" y="58">1 tuğla, dar yüzü</text><text x="349" y="58">2 tuğla üst üste</text><text x="486" y="58">2 tuğla yan yana</text><text x="75" y="162">kuma değen:</text><text x="208" y="162">kuma değen:</text><text x="349" y="162">kuma değen:</text><text x="486" y="162">kuma değen:</text><text x="75" y="177">1 geniş yüz</text><text x="208" y="177">1 dar yüz</text><text x="349" y="177">1 geniş yüz</text><text x="486" y="177">2 geniş yüz</text></g>
+<g stroke="#cbd5e1" stroke-dasharray="4 3"><line x1="140" y1="25" x2="140" y2="170"/><line x1="276" y1="25" x2="276" y2="170"/><line x1="420" y1="25" x2="420" y2="180"/></g>
 </svg></div>
-<p>Kap Şekil-1’den Şekil-2’deki konuma getirildiğinde; <b>kabın zemine uyguladığı katı basıncı (P<sub>katı</sub>)</b> ve <b>kap tabanına etki eden sıvı basıncı (P<sub>sıvı</sub>)</b> nasıl değişir[cite: 11]?</p>`,
-  c: [
-    `P<sub>katı</sub>: Artar — P<sub>sıvı</sub>: Artar`,
-    `P<sub>katı</sub>: Değişmez — P<sub>sıvı</sub>: Artar`,
-    `P<sub>katı</sub>: Artar — P<sub>sıvı</sub>: Değişmez`,
-    `P<sub>katı</sub>: Azalır — P<sub>sıvı</sub>: Artar`
-  ],
-  a: "A",
-  s: `<p>LGS’de en çok sorulan iki basıncı ayrı ayrı inceleyelim[cite: 11]:</p>
+<p>Öğrenci <b>“Katı basıncı, cismin zemine temas eden yüzey alanına bağlıdır.”</b> hipotezini test etmek istiyor.</p>
+<p>Buna göre öğrenci hangi iki düzenekte oluşan iz derinliklerini karşılaştırmalıdır?</p>`,
+  c: ["I ve III", "I ve II", "II ve IV", "I ve IV"],
+  a: "B",
+  s: `<p>Yüzey alanının etkisini görmek için <b>ağırlık aynı</b>, <b>kuma değen yüzey alanı farklı</b> olmalıdır.</p>
+<p>I ve II’de birer tuğla vardır (ağırlık aynı); I’de geniş yüz, II’de dar yüz kuma değer (alan farklı). Doğru karşılaştırma budur.</p>
+<p>A’da (I ve III) alan aynı, ağırlık farklıdır; bu karşılaştırma ağırlığın etkisini gösterir. C’de (II ve IV) ve D’de (I ve IV) hem ağırlık hem alan değişmiştir; iz farkının hangi değişkenden kaynaklandığı anlaşılamaz.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir araştırmacı, katı basıncını etkileyen değişkenleri incelemek için eşit ağırlıktaki (<b>30 N</b>) üç farklı cismi kum havuzuna bırakarak aşağıdaki deney tablosunu oluşturuyor.</p>
+<table class="rt">
+<tr><th>Deney Düzeneği</th><th>Cismin Ağırlığı (N)</th><th>Temas Yüzey Alanı (cm²)</th><th>Kumda Batma Miktarı (cm)</th></tr>
+<tr><td><b>1. Düzenek</b></td><td>30 N</td><td>10 cm²</td><td>3,0 cm</td></tr>
+<tr><td><b>2. Düzenek</b></td><td>30 N</td><td>20 cm²</td><td>1,5 cm</td></tr>
+<tr><td><b>3. Düzenek</b></td><td>30 N</td><td>40 cm²</td><td>0,75 cm</td></tr>
+</table>
+<p>Bu deneydeki <b>bağımsız değişken</b>, <b>bağımlı değişken</b> ve <b>kontrol edilen (sabit tutulan) değişken</b> aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["Bağımsız: Cismin ağırlığı — Bağımlı: Batma miktarı — Kontrol edilen: Yüzey alanı", "Bağımsız: Batma miktarı — Bağımlı: Yüzey alanı — Kontrol edilen: Cismin ağırlığı", "Bağımsız: Yüzey alanı — Bağımlı: Cismin ağırlığı — Kontrol edilen: Batma miktarı", "Bağımsız: Yüzey alanı — Bağımlı: Batma miktarı (Katı basıncı) — Kontrol edilen: Cismin ağırlığı"],
+  a: "D",
+  s: `<p>Deney değişkenlerini belirleyelim:</p>
 <ul>
-<li><b>Katı Basıncı (P<sub>katı</sub>):</b> Kabın ve içindeki suyun toplam ağırlığı değişmemiştir; ancak zemine temas eden yüzey alanı <b>2S’den S’ye küçüldüğü</b> için kabın zemine uyguladığı <b>katı basıncı ARTAR</b>[cite: 11].</li>
-<li><b>Sıvı Basıncı (P<sub>sıvı</sub>):</b> Şekil-2’de alt kısım daha dar olduğu için aynı miktar su daha yüksek seviyeye (<b>h<sub>2</sub> &gt; h<sub>1</sub></b>) çıkar; derinlik arttığı için kap tabanındaki <b>sıvı basıncı da ARTAR</b>[cite: 11]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Boş olan <b>K, L ve M</b> kapları, birim zamanda eşit miktarda su akıtan (sabit debili) özdeş musluklarla doldurulmaya başlanıyor.</p>
-<div class="fig"><svg viewBox="0 0 540 160" width="520" role="img" aria-label="Düzgün, daralan ve genişleyen kaplarda sıvı basıncı zaman grafikleri">
-<g stroke="#1e3a8a" stroke-width="2" fill="#dbeafe">
-<rect x="25" y="45" width="60" height="80"/>
-<polygon points="120,125 185,125 168,45 137,45"/>
-<polygon points="225,125 270,125 290,45 205,45"/>
-</g>
-<g font-size="10.5" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="55" y="35" fill="#2563eb">K Kabı (Silindir)</text>
-<text x="152" y="35" fill="#dc2626">L Kabı (Daralan)</text>
-<text x="247" y="35" fill="#16a34a">M Kabı (Genişleyen)</text>
-</g>
-<rect x="315" y="15" width="215" height="130" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<line x1="345" y1="125" x2="510" y2="125" stroke="#334155" stroke-width="1.5"/>
-<line x1="345" y1="30" x2="345" y2="125" stroke="#334155" stroke-width="1.5"/>
-<path d="M345,125 Q380,115 415,35" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<line x1="345" y1="125" x2="465" y2="40" stroke="#2563eb" stroke-width="2.5"/>
-<path d="M345,125 Q405,65 505,55" fill="none" stroke="#16a34a" stroke-width="2.5"/>
-<g font-size="10" font-weight="bold">
-<text x="415" y="30" fill="#dc2626">1</text>
-<text x="470" y="38" fill="#2563eb">2</text>
-<text x="510" y="53" fill="#16a34a">3</text>
-<text x="435" y="140" font-size="9.5">Zaman (t)</text>
-<text x="330" y="80" font-size="9.5" transform="rotate(-90 330 80)" text-anchor="middle">Sıvı Basıncı (P)</text>
-</g>
+<li><b>Bağımsız değişken (bizim bilerek değiştirdiğimiz):</b> Temas yüzey alanı (10, 20, 40 cm²).</li>
+<li><b>Bağımlı değişken (yüzey alanına bağlı olarak değişen sonuç):</b> Kumda batma miktarı / Katı basıncı (3,0; 1,5; 0,75 cm).</li>
+<li><b>Kontrol edilen değişken (sabit tutulan):</b> Cismin ağırlığı (30 N) ve kum zeminin cinsi.</li>
+</ul>
+<p>A’da ağırlık bağımsız değişken sanılmıştır; oysa ağırlık her düzenekte 30 N’dur. B’de sonuç (batma miktarı) bağımsız değişken yapılmıştır. C’de sabit tutulan ağırlık bağımlı değişken, ölçülen batma miktarı kontrol değişkeni yapılmıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci aşağıdaki günlük yaşam örneklerinde katı basıncının <b>artırılmasının</b> mı yoksa <b>azaltılmasının</b> mı amaçlandığını tabloya işaretlemiştir.</p>
+<table class="rt">
+<tr><th>Günlük Yaşam Örneği</th><th>Basıncı Artırma</th><th>Basıncı Azaltma</th></tr>
+<tr><td><b>1.</b> Karda batmadan yürümek için geniş tabanlı kar ayakkabısı (hedik) giyilmesi</td><td></td><td><b>✓</b></td></tr>
+<tr><td><b>2.</b> Meyveleri kolay kesebilmek için bıçağın ağzının bilenerek inceltilmesi</td><td><b>✓</b></td><td></td></tr>
+<tr><td><b>3.</b> Yumuşak zeminde çalışan iş makinelerinde tekerlek yerine geniş palet kullanılması</td><td><b>✓</b></td><td></td></tr>
+<tr><td><b>4.</b> Duvara kolay çakılması için çivinin ve raptiyenin ucunun sivri yapılması</td><td><b>✓</b></td><td></td></tr>
+<tr><td><b>5.</b> Ağır yük taşıyan tır ve trenlerde çok sayıda tekerlek kullanılması</td><td><b>✓</b></td><td></td></tr>
+</table>
+<p>Buna göre öğrenci tabloda numaralanmış örneklerden hangilerini <b>hatalı</b> işaretlemiştir?</p>`,
+  c: ["1 ve 2", "2 ve 4", "3 ve 5", "1, 3 ve 5"],
+  a: "C",
+  s: `<p>İş makinelerinde geniş palet kullanılması (<b>3</b>) ve ağır kamyonlarda çok sayıda tekerlek bulunması (<b>5</b>) yüzey alanını büyüterek zemine batmayı önlemek, yani <b>basıncı azaltmak</b> içindir. Öğrenci <b>3 ve 5</b> numaralı örnekleri “Basıncı Artırma” olarak işaretlediği için hatalı yapmıştır.</p>
+<p>1 ve 2 doğru işaretlenmiştir: Kar ayakkabısı alanı büyütür (basıncı azaltır), bilenen bıçak alanı küçültür (basıncı artırır). 4 de doğrudur: sivri uç alanı küçültür. Bu yüzden 1, 2 veya 4’ü içeren A, B ve D seçenekleri yanlıştır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Yarısına kadar su ile dolu olan, ağzı sıkıca kapalı kesik koni biçimindeki kap, <b>Şekil-1</b>’deki konumdan ters çevrilerek <b>Şekil-2</b>’deki gibi dar yüzeyi üzerine konuluyor.</p>
+<div class="fig"><svg viewBox="0 0 475 215" width="475" role="img" aria-label="Ağzı kapalı kesik koni biçimli kabın geniş ve dar yüzeyi üzerinde durması">
+<rect x="0" y="0" width="475" height="215" fill="#ffffff"/>
+<line x1="10" y1="180" x2="450" y2="180" stroke="#475569" stroke-width="3"/>
+<polygon points="40,180 160,180 148.75,135 51.25,135" fill="#93c5fd"/>
+<polygon points="40,180 160,180 130,60 70,60" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<line x1="70" y1="60" x2="130" y2="60" stroke="#1e293b" stroke-width="5"/>
+<polygon points="330,180 390,180 406,116 314,116" fill="#93c5fd"/>
+<polygon points="330,180 390,180 420,60 300,60" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<line x1="300" y1="60" x2="420" y2="60" stroke="#1e293b" stroke-width="5"/>
+<g stroke="#dc2626" stroke-width="1.8"><line x1="175" y1="135" x2="175" y2="180"/><line x1="170" y1="135" x2="180" y2="135"/><line x1="435" y1="116" x2="435" y2="180"/><line x1="430" y1="116" x2="440" y2="116"/></g>
+<text x="183" y="162" font-size="13" font-weight="bold" fill="#dc2626">h₁</text>
+<text x="443" y="152" font-size="13" font-weight="bold" fill="#dc2626">h₂</text>
+<text x="100" y="50" font-size="11" text-anchor="middle" fill="#1e293b">kapak</text>
+<text x="100" y="200" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Şekil-1</text>
+<text x="360" y="200" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">Şekil-2</text>
 </svg></div>
-<p>Kapların tabanlarındaki sıvı basıncının zamana bağlı değişimini gösteren grafikteki <b>1, 2 ve 3</b> numaralı eğrilerin <b>K, L ve M</b> kaplarıyla doğru eşleştirilmesi aşağıdakilerin hangisinde verilmiştir?</p>`,
-  c: [
-    `1: L Kabı — 2: K Kabı — 3: M Kabı`,
-    `1: K Kabı — 2: L Kabı — 3: M Kabı`,
-    `1: M Kabı — 2: K Kabı — 3: L Kabı`,
-    `1: L Kabı — 2: M Kabı — 3: K Kabı`
-  ],
+<p>Kap Şekil-1’den Şekil-2’deki konuma getirildiğinde; <b>kabın zemine uyguladığı katı basıncı (P<sub>katı</sub>)</b> ve <b>kap tabanına etki eden sıvı basıncı (P<sub>sıvı</sub>)</b> nasıl değişir?</p>`,
+  c: ["P<sub>katı</sub>: Artar — P<sub>sıvı</sub>: Artar", "P<sub>katı</sub>: Değişmez — P<sub>sıvı</sub>: Artar", "P<sub>katı</sub>: Artar — P<sub>sıvı</sub>: Değişmez", "P<sub>katı</sub>: Azalır — P<sub>sıvı</sub>: Artar"],
   a: "A",
-  s: `<p>Kapların şekline göre sıvı yüksekliğinin (h) artış hızını inceleyelim:</p>
+  s: `<p>LGS’de en çok sorulan iki basıncı ayrı ayrı inceleyelim:</p>
 <ul>
-<li><b>L Kabı (Yukarı doğru daralan):</b> Kap daraldıkça su seviyesi her saniye daha hızlı yükselir → <b>1 numaralı hızlanan eğri</b>.</li>
-<li><b>K Kabı (Düzgün silindir):</b> Su seviyesi sabit hızla (doğrusal) yükselir → <b>2 numaralı doğru</b>.</li>
-<li><b>M Kabı (Yukarı doğru genişleyen):</b> Kap genişledikçe su seviyesi giderek daha yavaş yükselir → <b>3 numaralı yavaşlayan eğri</b>. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Özdeş K, L ve M kaplarına aşağıdaki tabloda yoğunlukları ve yükseklikleri verilen sıvılar konuluyor[cite: 11].</p>
+<li><b>Katı Basıncı (P<sub>katı</sub>):</b> Kabın ve içindeki suyun toplam ağırlığı değişmemiştir; ancak zemine temas eden yüzey alanı <b>küçüldüğü</b> için kabın zemine uyguladığı <b>katı basıncı ARTAR</b>.</li>
+<li><b>Sıvı Basıncı (P<sub>sıvı</sub>):</b> Şekil-2’de alt kısım daha dar olduğu için aynı miktar su daha yüksek seviyeye (<b>h<sub>2</sub> &gt; h<sub>1</sub></b>) çıkar; derinlik arttığı için kap tabanındaki <b>sıvı basıncı da ARTAR</b>.</li>
+</ul>
+<p>B’de ağırlık değişmediği için katı basıncının da değişmeyeceği sanılmıştır; oysa alan küçülmüştür. C’de sıvı miktarı aynı olduğu için sıvı basıncının değişmeyeceği sanılmıştır; oysa derinlik artmıştır. D’de alan küçüldüğü hâlde katı basıncının azaldığı yazılmıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Su dolu bir kabın yan yüzeyinde farklı derinliklerde açılmış <b>K, L ve M</b> delikleri bulunmaktadır. Tıpalar aynı anda açıldığında deliklerden fışkıran suların izlediği yollar şekildeki gibi olmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 280 185" width="260" role="img" aria-label="Farklı derinlikteki K, L ve M deliklerinden fışkıran su">
+<rect x="30" y="20" width="80" height="145" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<g fill="none" stroke="#2563eb" stroke-width="3">
+<path d="M110,55 Q130,55 148,165"/>
+<path d="M110,100 Q152,100 190,165"/>
+<path d="M110,140 Q175,140 245,165"/>
+</g>
+<g font-size="12" font-weight="bold" fill="#1e293b">
+<text x="12" y="59">K</text><text x="12" y="104">L</text><text x="12" y="144">M</text>
+<text x="145" y="180" font-size="11" fill="#1e40af">x₁ &lt; x₂ &lt; x₃ (Menzil)</text>
+</g>
+<line x1="10" y1="165" x2="265" y2="165" stroke="#78716c" stroke-width="2.5"/>
+</svg></div>
+<p>Bu deneyle ve sıvı basıncıyla ilgili;</p>
+<p>I. Sıvı basıncı sıvının derinliği arttıkça artar.<br>
+II. Kaptaki su boşaltılıp yerine aynı yükseklikte zeytinyağı konulursa M deliğinin bulunduğu derinlikteki sıvı basıncı ilk duruma göre azalır (d<sub>yağ</sub> &lt; d<sub>su</sub>).<br>
+III. Sıvılar yalnızca bulundukları kabın tabanına değil, temas ettikleri yan yüzeylere de basınç uygular.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>En derindeki M deliğinden çıkan suyun en uzağa gitmesi, <b>derinlik arttıkça sıvı basıncının arttığını</b> gösterir (I doğru).</p>
+<p>Suyun kabın <b>yan yüzeyindeki</b> deliklerden fışkırması, sıvıların yalnızca tabana değil yan yüzeylere de basınç uyguladığını gösterir (III doğru).</p>
+<p>Zeytinyağının yoğunluğu sudan küçüktür. Aynı derinlikte yoğunluğu küçük olan sıvının basıncı daha küçük olur (II doğru). Üç yargı da doğru olduğu için “Yalnız I”, “I ve II” ve “I ve III” seçenekleri eksiktir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Özdeş K, L ve M kaplarına aşağıdaki tabloda yoğunlukları ve yükseklikleri verilen sıvılar konuluyor.</p>
 <table class="rt">
 <tr><th>Kap</th><th>Konulan Sıvı</th><th>Sıvının Yoğunluğu (g/cm³)</th><th>Sıvı Yüksekliği / Derinlik (cm)</th></tr>
 <tr><td><b>K Kabı</b></td><td>Saf Su</td><td>1,0</td><td>20</td></tr>
 <tr><td><b>L Kabı</b></td><td>Tuzlu Su</td><td>1,2</td><td>15</td></tr>
 <tr><td><b>M Kabı</b></td><td>Zeytinyağı</td><td>0,8</td><td>25</td></tr>
 </table>
-<p>Buna göre K, L ve M kaplarının tabanlarına etki eden sıvı basınçları (<b>P<sub>K</sub>, P<sub>L</sub>, P<sub>M</sub></b>) arasındaki büyüklük ilişkisi aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `P<sub>K</sub> = P<sub>M</sub> &gt; P<sub>L</sub>`,
-    `P<sub>L</sub> &gt; P<sub>K</sub> &gt; P<sub>M</sub>`,
-    `P<sub>M</sub> &gt; P<sub>K</sub> &gt; P<sub>L</sub>`,
-    `P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>`
-  ],
+<p>Buna göre K, L ve M kaplarının tabanlarına etki eden sıvı basınçları (<b>P<sub>K</sub>, P<sub>L</sub>, P<sub>M</sub></b>) arasındaki büyüklük ilişkisi aşağıdakilerden hangisidir?</p>`,
+  c: ["P<sub>K</sub> = P<sub>M</sub> &gt; P<sub>L</sub>", "P<sub>L</sub> &gt; P<sub>K</sub> &gt; P<sub>M</sub>", "P<sub>M</sub> &gt; P<sub>K</sub> &gt; P<sub>L</sub>", "P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>"],
   a: "A",
-  s: `<p>Sıvı basıncı, derinlik (h) ile sıvının yoğunluğunun (d) çarpımıyla doğru orantılıdır (<b>P = h · d</b>)[cite: 11]:</p>
-<ul>
-<li><b>P<sub>K</sub>:</b> 20 × 1,0 = <b>20 birim</b>[cite: 11]</li>
-<li><b>P<sub>L</sub>:</b> 15 × 1,2 = <b>18 birim</b>[cite: 11]</li>
-<li><b>P<sub>M</sub>:</b> 25 × 0,8 = <b>20 birim</b>[cite: 11]</li>
-</ul>
-<p>Sonuç: <b>P<sub>K</sub> = P<sub>M</sub> &gt; P<sub>L</sub></b> olur[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Birbirine karışmayan <b>X, Y ve Z</b> sıvılarının derinliğe bağlı sıvı basıncı değişimleri ölçülerek aşağıdaki grafik çizilmiştir[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 320 185" width="300" role="img" aria-label="X, Y ve Z sıvılarının sıvı basıncı derinlik grafiği">
-<line x1="45" y1="155" x2="295" y2="155" stroke="#334155" stroke-width="2"/>
-<line x1="45" y1="15" x2="45" y2="155" stroke="#334155" stroke-width="2"/>
-<g stroke-width="2.5">
-<line x1="45" y1="155" x2="195" y2="20" stroke="#dc2626"/>
-<line x1="45" y1="155" x2="265" y2="55" stroke="#2563eb"/>
-<line x1="45" y1="155" x2="280" y2="110" stroke="#16a34a"/>
+  s: `<p>Sıvı basıncı hem <b>derinlikle</b> hem de <b>sıvının yoğunluğuyla</b> doğru orantılıdır. Kapları karşılaştırmak için her kaptaki derinlik ile yoğunluğun çarpımına bakılabilir:</p>
+<ul><li>K: 20 × 1,0 = 20</li><li>L: 15 × 1,2 = 18</li><li>M: 25 × 0,8 = 20</li></ul>
+<p>Buna göre <b>P<sub>K</sub> = P<sub>M</sub> &gt; P<sub>L</sub></b>. B’de yalnızca yoğunluğa bakılmış, C’de yalnızca derinliğe bakılmıştır; D’de kaplar özdeş olduğu için basınçların eşit olacağı sanılmıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Su dolu bir kabın yan yüzeyine, su yüzeyinden farklı derinliklerde K, L ve M basınçölçerleri takılmıştır. K basınçölçeri <b>2 Pa</b> değerini göstermektedir.</p>
+<div class="fig"><svg viewBox="0 0 400 220" width="400" role="img" aria-label="Su dolu kapta farklı derinliklere takılmış K, L ve M basınçölçerleri">
+<rect x="0" y="0" width="400" height="220" fill="#ffffff"/>
+<rect x="80" y="40" width="200" height="160" fill="#bfdbfe"/>
+<polyline points="80,20 80,200 280,200 280,20" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<line x1="80" y1="40" x2="280" y2="40" stroke="#2563eb" stroke-width="2"/>
+<g stroke="#64748b" stroke-width="1" stroke-dasharray="4 3"><line x1="80" y1="80" x2="280" y2="80"/><line x1="80" y1="120" x2="280" y2="120"/><line x1="80" y1="160" x2="280" y2="160"/></g>
+<g font-size="11" fill="#475569" text-anchor="end"><text x="74" y="44">0</text><text x="74" y="84">1</text><text x="74" y="124">2</text><text x="74" y="164">3</text><text x="74" y="204">4</text></g>
+<text x="12" y="16" font-size="11" fill="#475569">derinlik (birim)</text>
+<g fill="#ffffff" stroke="#1e293b" stroke-width="2"><circle cx="300" cy="80" r="14"/><circle cx="300" cy="120" r="14"/><circle cx="300" cy="160" r="14"/></g>
+<g stroke="#1e293b" stroke-width="3"><line x1="280" y1="80" x2="286" y2="80"/><line x1="280" y1="120" x2="286" y2="120"/><line x1="280" y1="160" x2="286" y2="160"/></g>
+<g font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b"><text x="300" y="84">K</text><text x="300" y="124">L</text><text x="300" y="164">M</text></g>
+<text x="322" y="84" font-size="12" font-weight="bold" fill="#dc2626">2 Pa</text>
+<text x="322" y="124" font-size="12" font-weight="bold" fill="#475569">?</text>
+<text x="322" y="164" font-size="12" font-weight="bold" fill="#475569">?</text>
+<text x="180" y="30" font-size="11" text-anchor="middle" fill="#1e3a8a">su yüzeyi</text>
+</svg></div>
+<p>Buna göre L ve M basınçölçerlerinin gösterdiği değerler aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["L: 2 Pa — M: 2 Pa", "L: 4 Pa — M: 6 Pa", "L: 3 Pa — M: 4 Pa", "L: 2 Pa — M: 4 Pa"],
+  a: "B",
+  s: `<p>Aynı sıvıda sıvı basıncı derinlikle <b>doğru orantılıdır</b>. Derinlikler su yüzeyinden ölçülür: K 1 birim, L 2 birim, M 3 birim derindedir.</p>
+<p>L, K’nin 2 katı derinde olduğu için 2 × 2 = <b>4 Pa</b>; M, K’nin 3 katı derinde olduğu için 3 × 2 = <b>6 Pa</b> gösterir.</p>
+<p>A’da basıncın her noktada eşit olduğu sanılmıştır. C’de her birim derinlikte basıncın 1 Pa arttığı sanılmıştır; oysa 1 birimlik derinlik 2 Pa’ya karşılık gelir. D’de L’nin basıncının K’ye eşit olduğu sanılmıştır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Birbirine karışmayan <b>X, Y ve Z</b> sıvılarının derinliğe bağlı sıvı basıncı değişimleri ölçülerek aşağıdaki grafik çizilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 420 220" width="420" role="img" aria-label="X, Y ve Z sıvıları için sıvı basıncı - derinlik grafiği">
+<rect x="0" y="0" width="420" height="220" fill="#ffffff"/>
+<line x1="60" y1="185" x2="360" y2="185" stroke="#1e293b" stroke-width="2"/>
+<line x1="60" y1="185" x2="60" y2="20" stroke="#1e293b" stroke-width="2"/>
+<polygon points="360,185 352,181 352,189" fill="#1e293b"/><polygon points="60,20 56,28 64,28" fill="#1e293b"/>
+<text x="360" y="205" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text>
+<text x="68" y="22" font-size="12" fill="#1e293b">Sıvı basıncı</text>
+<line x1="60" y1="185" x2="320" y2="40" stroke="#dc2626" stroke-width="3"/>
+<line x1="60" y1="185" x2="320" y2="95" stroke="#2563eb" stroke-width="3"/>
+<line x1="60" y1="185" x2="320" y2="140" stroke="#16a34a" stroke-width="3"/>
+<g font-size="13" font-weight="bold"><text x="326" y="44" fill="#dc2626">X</text><text x="326" y="99" fill="#2563eb">Y</text><text x="326" y="144" fill="#16a34a">Z</text></g>
+<line x1="200" y1="185" x2="200" y2="50" stroke="#64748b" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="200" y="202" font-size="11" text-anchor="middle" fill="#475569">h</text>
+</svg></div>
+<p>Bu üç sıvı aynı kaba dökülüp yeterince beklendiğinde, sıvıların kap içerisindeki konumları <b>en alttan en üste doğru</b> nasıl sıralanır?</p>`,
+  c: ["En altta X — Ortada Y — En üstte Z", "En altta Z — Ortada Y — En üstte X", "En altta Y — Ortada X — En üstte Z", "En altta X — Ortada Z — En üstte Y"],
+  a: "A",
+  s: `<p>Grafikte sabit bir derinlik (kesikli çizgi) seçtiğimizde sıvı basıncı sıralaması <b>P<sub>X</sub> &gt; P<sub>Y</sub> &gt; P<sub>Z</sub></b> şeklindedir. Derinlik aynı iken basıncı en büyük olan sıvının <b>yoğunluğu da en büyüktür (d<sub>X</sub> &gt; d<sub>Y</sub> &gt; d<sub>Z</sub>)</b>. Birbirine karışmayan sıvılardan yoğunluğu en büyük olan en alta çökeceği için <b>en altta X, ortada Y, en üstte Z</b> bulunur.</p>
+<p>B’de sıralama ters çevrilmiş; az yoğun sıvının dibe çökeceği sanılmıştır. C ve D’de grafikteki doğruların dikliği (aynı derinlikteki basınç) yanlış okunmuştur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Ucunda esnek lastik zar bulunan bir huni, plastik hortumla içinde renkli sıvı bulunan U borusuna bağlanarak sıvı basıncını ölçen bir <b>manometre</b> düzeneği hazırlanmıştır. Huni, su dolu kabın içinde <b>aynı derinlikte (h sabit)</b> tutularak zarın yönü sırasıyla yukarı (1), yana (2) ve aşağı (3) çevrilmiş; her üç durumda da U borusundaki sıvı seviyesi farkının (<b>Δx</b>) birbirine eşit olduğu gözlenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 225" width="560" role="img" aria-label="Lastik zarlı huni aynı derinlikte üç farklı yöne çevriliyor">
+<rect x="0" y="0" width="560" height="225" fill="#ffffff"/>
+<text x="93" y="22" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1) Zar yukarı bakıyor</text>
+<rect x="12" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="12,95 12,200 100,200 100,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="56,168 42,150 70,150" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="42" y1="150" x2="70" y2="150" stroke="#991b1b" stroke-width="3"/>
+<polyline points="56,168 56,176 86,176 86,40 134,40 134,58" fill="none" stroke="#475569" stroke-width="3"/>
+<g fill="#38bdf8"><rect x="130" y="124" width="8" height="54"/><rect x="156" y="108" width="8" height="70"/><rect x="130" y="170" width="34" height="8"/></g>
+<path d="M130,58 L130,178 L164,178 L164,58 M138,58 L138,170 L156,170 L156,58" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"><line x1="126" y1="124" x2="170" y2="124"/><line x1="126" y1="108" x2="170" y2="108"/></g>
+<text x="280" y="22" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2) Zar yana bakıyor</text>
+<rect x="199" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="199,95 199,200 287,200 287,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="225,150 243,136 243,164" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="243" y1="136" x2="243" y2="164" stroke="#991b1b" stroke-width="3"/>
+<polyline points="225,150 215,150 215,40 321,40 321,58" fill="none" stroke="#475569" stroke-width="3"/>
+<g fill="#38bdf8"><rect x="317" y="124" width="8" height="54"/><rect x="343" y="108" width="8" height="70"/><rect x="317" y="170" width="34" height="8"/></g>
+<path d="M317,58 L317,178 L351,178 L351,58 M325,58 L325,170 L343,170 L343,58" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"><line x1="313" y1="124" x2="357" y2="124"/><line x1="313" y1="108" x2="357" y2="108"/></g>
+<text x="467" y="22" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3) Zar aşağı bakıyor</text>
+<rect x="386" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="386,95 386,200 474,200 474,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="430,132 416,150 444,150" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="416" y1="150" x2="444" y2="150" stroke="#991b1b" stroke-width="3"/>
+<polyline points="430,132 430,40 508,40 508,58" fill="none" stroke="#475569" stroke-width="3"/>
+<g fill="#38bdf8"><rect x="504" y="124" width="8" height="54"/><rect x="530" y="108" width="8" height="70"/><rect x="504" y="170" width="34" height="8"/></g>
+<path d="M504,58 L504,178 L538,178 L538,58 M512,58 L512,170 L530,170 L530,58" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"><line x1="500" y1="124" x2="544" y2="124"/><line x1="500" y1="108" x2="544" y2="108"/></g>
+<g font-size="11" text-anchor="middle" fill="#1e293b"><text x="93" y="218">seviye farkı: Δx</text><text x="280" y="218">seviye farkı: Δx</text><text x="467" y="218">seviye farkı: Δx</text></g>
+</svg></div>
+<p>Yalnızca bu deneydeki gözlemlere dayanarak aşağıdaki bilimsel sonuçlardan hangisine ulaşılır?</p>`,
+  c: ["Sıvı basıncı sıvının derinliği arttıkça artar.", "Sıvı basıncı sıvının yoğunluğu ile doğru orantılıdır.", "Sıvılar, aynı derinlikteki bütün noktalarda her yöne eşit büyüklükte basınç uygular.", "Sıvı basıncı kabın şekline ve genişliğine bağlı değildir."],
+  a: "C",
+  s: `<p>Deneyde derinlik (h) ve sıvı cinsi sabit tutulmuş, yalnızca huninin ağzındaki zarın <b>baktığı yön (yukarı, yana, aşağı)</b> değiştirilmiş ve basıncın (Δx) değişmediği görülmüştür. Bu durum sıvıların <b>aynı derinlikte her yöne eşit büyüklükte basınç uyguladığını</b> kanıtlar.</p>
+<p>A’ya ulaşılamaz: derinlik değiştirilmemiştir. B’ye ulaşılamaz: sıvının cinsi değiştirilmemiştir. D’ye ulaşılamaz: tek bir kap kullanılmış, kabın şekli değiştirilmemiştir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Taban alanları birbirine eşit (<b>S</b>), şekilleri farklı olan boş ağırlıkları önemsiz <b>K, L ve M</b> kaplarına aynı cins sıvıdan eşit yükseklikte (<b>h</b>) konulmuştur.</p>
+<div class="fig"><svg viewBox="0 0 360 155" width="340" role="img" aria-label="Taban alanları eşit farklı şekilli K, L, M kapları">
+<line x1="10" y1="125" x2="350" y2="125" stroke="#475569" stroke-width="2.5"/>
+<g stroke="#1e3a8a" stroke-width="2">
+<polygon points="30,125 90,125 75,30 45,30" fill="#f8fafc"/>
+<polygon points="30,125 90,125 78,50 42,50" fill="#93c5fd"/>
+<rect x="145" y="30" width="60" height="95" fill="#f8fafc"/>
+<rect x="145" y="50" width="60" height="75" fill="#93c5fd"/>
+<polygon points="260,125 320,125 340,30 240,30" fill="#f8fafc"/>
+<polygon points="260,125 320,125 336,50 244,50" fill="#93c5fd"/>
 </g>
-<line x1="150" y1="15" x2="150" y2="155" stroke="#64748b" stroke-dasharray="4 3"/>
-<g font-size="12" font-weight="bold">
-<text x="200" y="24" fill="#dc2626">X Sıvısı</text>
-<text x="268" y="54" fill="#2563eb">Y Sıvısı</text>
-<text x="282" y="108" fill="#16a34a">Z Sıvısı</text>
-</g>
-<g font-size="10.5" font-weight="bold" fill="#1e293b">
-<text x="150" y="172" text-anchor="middle">Sabit Derinlik (h)</text>
-<text x="255" y="172">Derinlik</text>
-<text x="18" y="85" transform="rotate(-90 18 85)" text-anchor="middle">Sıvı Basıncı (P)</text>
+<line x1="10" y1="50" x2="350" y2="50" stroke="#dc2626" stroke-dasharray="5 3"/>
+<g font-size="11" font-weight="bold" text-anchor="middle">
+<text x="60" y="118" fill="#1e3a8a">S</text><text x="175" y="118" fill="#1e3a8a">S</text><text x="290" y="118" fill="#1e3a8a">S</text>
+<text x="60" y="144" fill="#1e40af">K (Daralan)</text>
+<text x="175" y="144" fill="#166534">L (Düzgün)</text>
+<text x="290" y="144" fill="#b45309">M (Genişleyen)</text>
 </g>
 </svg></div>
-<p>Bu üç sıvı aynı kaba dökülüp yeterince beklendiğinde, sıvıların kap içerisindeki konumları <b>en alttan en üste doğru</b> nasıl sıralanır[cite: 11]?</p>`,
-  c: [
-    `En altta X — Ortada Y — En üstte Z`,
-    `En altta Z — Ortada Y — En üstte X`,
-    `En altta Y — Ortada X — En üstte Z`,
-    `En altta X — Ortada Z — En üstte Y`
-  ],
+<p>Buna göre; <b>kapların tabanlarına etki eden sıvı basınçları (P<sub>sıvı</sub>)</b> ile <b>kapların yatay zemine uyguladıkları katı basınçları (P<sub>katı</sub>)</b> arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["Sıvı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub> — Katı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub>", "Sıvı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub> — Katı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>", "Sıvı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub> — Katı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>", "Sıvı Basınçları: P<sub>K</sub> &gt; P<sub>L</sub> &gt; P<sub>M</sub> — Katı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub>"],
   a: "A",
-  s: `<p>Grafikte sabit bir derinlik (kesikli çizgi) seçtiğimizde sıvı basıncı sıralaması <b>P<sub>X</sub> &gt; P<sub>Y</sub> &gt; P<sub>Z</sub></b> şeklindedir[cite: 11]. Derinlik aynı iken basıncı en büyük olan sıvının <b>yoğunluğu da en büyüktür (d<sub>X</sub> &gt; d<sub>Y</sub> &gt; d<sub>Z</sub>)</b>[cite: 11]. Birbirine karışmayan sıvılardan yoğunluğu en büyük olan en alta çökeceği için <b>en altta X, ortada Y, en üstte Z</b> bulunur[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>İtalyan bilim insanı Torricelli, deniz seviyesinde ve 0 °C sıcaklıkta 1 m uzunluğundaki cam boruyu cıva ile doldurup cıva dolu çanağa ters çevirdiğinde borudaki cıva yüksekliğinin <b>76 cm</b> olduğunu ölçmüştür[cite: 11].</p>
+  s: `<p>İki basıncı birbirinden ayırmak çok önemlidir:</p>
+<ul>
+<li><b>Kap tabanındaki sıvı basıncı (P = h · d):</b> Üç kapta da aynı sıvı (d) ve aynı derinlik (h) bulunduğu için sıvı basınçları <b>birbirine eşittir: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub></b>.</li>
+<li><b>Kabın zemine uyguladığı katı basıncı (P = G / S):</b> Üç kabın da taban alanı (S) eşittir; ancak M kabı yukarı doğru genişlediği için içindeki sıvı miktarı (ağırlığı) en fazladır (<b>G<sub>M</sub> &gt; G<sub>L</sub> &gt; G<sub>K</sub></b>). Bu nedenle zemine yapılan katı basınçları <b>P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub></b> olur.</li>
+</ul>
+<p>B’de sıvı basıncının sıvı miktarına bağlı olduğu sanılmıştır. C’de katı basıncının da eşit olacağı sanılmış, kaplardaki sıvı ağırlıklarının farklı olduğu gözden kaçırılmıştır. D’de her iki sıralama da yanlış kurulmuştur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci, özdeş kaplara aynı yükseklikte saf su ve tuzlu su koymuştur. Lastik zarlı huniyi iki kapta da <b>aynı derinliğe</b> yerleştirip U borusundaki seviye farklarını gözlemlemiştir.</p>
+<div class="fig"><svg viewBox="0 0 374 225" width="374" role="img" aria-label="Su ve tuzlu suda aynı derinlikteki lastik zarlı huni ve U borusu">
+<rect x="0" y="0" width="374" height="225" fill="#ffffff"/>
+<text x="93" y="22" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1. düzenek: saf su</text>
+<rect x="12" y="110" width="88" height="90" fill="#bfdbfe"/><polyline points="12,95 12,200 100,200 100,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="56,132 42,150 70,150" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="42" y1="150" x2="70" y2="150" stroke="#991b1b" stroke-width="3"/>
+<polyline points="56,132 56,40 134,40 134,58" fill="none" stroke="#475569" stroke-width="3"/>
+<g fill="#38bdf8"><rect x="130" y="124" width="8" height="54"/><rect x="156" y="108" width="8" height="70"/><rect x="130" y="170" width="34" height="8"/></g>
+<path d="M130,58 L130,178 L164,178 L164,58 M138,58 L138,170 L156,170 L156,58" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"><line x1="126" y1="124" x2="170" y2="124"/><line x1="126" y1="108" x2="170" y2="108"/></g>
+<text x="280" y="22" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2. düzenek: tuzlu su</text>
+<rect x="199" y="110" width="88" height="90" fill="#a5b4fc"/><polyline points="199,95 199,200 287,200 287,95" fill="none" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="243,132 229,150 257,150" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="229" y1="150" x2="257" y2="150" stroke="#991b1b" stroke-width="3"/>
+<polyline points="243,132 243,40 321,40 321,58" fill="none" stroke="#475569" stroke-width="3"/>
+<g fill="#38bdf8"><rect x="317" y="128" width="8" height="50"/><rect x="343" y="104" width="8" height="74"/><rect x="317" y="170" width="34" height="8"/></g>
+<path d="M317,58 L317,178 L351,178 L351,58 M325,58 L325,170 L343,170 L343,58" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+<g stroke="#dc2626" stroke-width="1.2" stroke-dasharray="3 2"><line x1="313" y1="128" x2="357" y2="128"/><line x1="313" y1="104" x2="357" y2="104"/></g>
+<g font-size="11" text-anchor="middle" fill="#1e293b"><text x="93" y="218">seviye farkı: küçük</text><text x="280" y="218">seviye farkı: daha büyük</text></g>
+</svg></div>
+<p>Bu deneyle aşağıdaki hipotezlerden hangisi test edilmiştir?</p>`,
+  c: ["Sıvı basıncı, derinlik arttıkça artar.", "Aynı derinlikte, yoğunluğu büyük olan sıvının basıncı daha büyüktür.", "Sıvı basıncı, kabın şekline bağlıdır.", "Sıvılar, üzerlerine uygulanan basıncı her yöne aynen iletir."],
+  a: "B",
+  s: `<p>İki düzenekte derinlik ve kap aynıdır; değiştirilen tek değişken <b>sıvının cinsi (yoğunluğu)</b>dur. Tuzlu suyun yoğunluğu saf sudan büyüktür ve tuzlu sudaki U borusunda seviye farkı daha büyüktür. Bu, aynı derinlikte yoğun sıvının basıncının daha büyük olduğunu gösterir.</p>
+<p>A’yı test etmek için derinlik değiştirilmeliydi. C’yi test etmek için farklı şekilli kaplar kullanılmalıydı. D, kapalı kaptaki sıvıya dışarıdan basınç uygulanmasını gerektirir (Pascal prensibi); bu deneyde böyle bir uygulama yoktur.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Boş olan <b>K, L ve M</b> kapları, birim zamanda eşit miktarda su akıtan (sabit debili) özdeş musluklarla doldurulmaya başlanıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Üç farklı biçimli kap ve tabandaki sıvı basıncı - zaman grafiği">
+<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
+<line x1="10" y1="180" x2="300" y2="180" stroke="#475569" stroke-width="3"/>
+<rect x="25" y="60" width="60" height="120" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="115,180 195,180 170,60 140,60" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
+<polygon points="235,180 275,180 295,60 215,60" fill="#eff6ff" stroke="#1e3a8a" stroke-width="2.5"/>
+<g font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a"><text x="55" y="200">K</text><text x="155" y="200">L</text><text x="255" y="200">M</text></g>
+<g font-size="11" text-anchor="middle" fill="#475569"><text x="55" y="216">düzgün</text><text x="155" y="216">yukarı daralan</text><text x="255" y="216">yukarı genişleyen</text></g>
+<g font-size="11" text-anchor="middle" fill="#2563eb"><text x="55" y="40">musluk ↓</text><text x="155" y="40">musluk ↓</text><text x="255" y="40">musluk ↓</text></g>
+<line x1="345" y1="185" x2="545" y2="185" stroke="#1e293b" stroke-width="2"/>
+<line x1="345" y1="185" x2="345" y2="30" stroke="#1e293b" stroke-width="2"/>
+<text x="545" y="203" font-size="12" text-anchor="end" fill="#1e293b">Zaman</text>
+<text x="350" y="26" font-size="11" fill="#1e293b">Tabandaki sıvı basıncı</text>
+<path d="M345,185 Q470,182 515,45" fill="none" stroke="#dc2626" stroke-width="3"/>
+<line x1="345" y1="185" x2="525" y2="85" stroke="#2563eb" stroke-width="3"/>
+<path d="M345,185 Q420,118 525,110" fill="none" stroke="#16a34a" stroke-width="3"/>
+<g font-size="13" font-weight="bold"><text x="520" y="45" fill="#dc2626">1</text><text x="530" y="85" fill="#2563eb">2</text><text x="530" y="114" fill="#16a34a">3</text></g>
+</svg></div>
+<p>Kapların tabanlarındaki sıvı basıncının zamana bağlı değişimini gösteren grafikteki <b>1, 2 ve 3</b> numaralı eğrilerin <b>K, L ve M</b> kaplarıyla doğru eşleştirilmesi aşağıdakilerin hangisinde verilmiştir?</p>`,
+  c: ["1: L Kabı — 2: K Kabı — 3: M Kabı", "1: K Kabı — 2: L Kabı — 3: M Kabı", "1: M Kabı — 2: K Kabı — 3: L Kabı", "1: L Kabı — 2: M Kabı — 3: K Kabı"],
+  a: "A",
+  s: `<p>Kapların şekline göre sıvı yüksekliğinin (h) artış hızını inceleyelim:</p>
+<ul>
+<li><b>L Kabı (Yukarı doğru daralan):</b> Kap daraldıkça su seviyesi her saniye daha hızlı yükselir → <b>1 numaralı hızlanan eğri</b>.</li>
+<li><b>K Kabı (Düzgün silindir):</b> Su seviyesi sabit hızla (doğrusal) yükselir → <b>2 numaralı doğru</b>.</li>
+<li><b>M Kabı (Yukarı doğru genişleyen):</b> Kap genişledikçe su seviyesi giderek daha yavaş yükselir → <b>3 numaralı yavaşlayan eğri</b>.</li>
+</ul>
+<p>B’de K ile L’nin yeri, C’de L ile M’nin yeri, D’de K ile M’nin yeri karıştırılmıştır. İpucu: Kap yukarıya doğru daralıyorsa grafik giderek dikleşir, genişliyorsa giderek yatıklaşır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Baraj duvarları inşa edilirken, duvarın üst kısmı daha ince, <b>tabana (dip kısma) doğru inildikçe ise gittikçe kalınlaşacak</b> şekilde tasarlanır.</p>
+<p>Aşağıdaki olaylardan hangisi baraj duvarlarının tabana doğru kalınlaşmasıyla <b>aynı bilimsel ilkeye (sıvı basıncının derinlikle artmasına)</b> dayanır?</p>`,
+  c: ["Yüksek dağların zirvesinde suyun 100 °C’den daha düşük sıcaklıkta kaynaması", "Karda batmadan yürüyebilmek için geniş yüzeyli kar ayakkabısı giyilmesi", "Derin denizlere dalan dalgıçların yüksek basınca dayanıklı özel dalış kıyafetleri giymesi", "Meyve suyunun pipet yardımıyla kutudan kolayca içilebilmesi"],
+  a: "C",
+  s: `<p>Baraj duvarlarının tabana doğru kalın yapılmasının nedeni, <b>derinlik arttıkça sıvı basıncının artmasıdır</b>. Dalgıçların derine indikçe artan su basıncından zarar görmemek için özel kıyafet giymesi de tamamen aynı ilkeye (<b>sıvı basıncı – derinlik ilişkisine</b>) dayanır. (A ve D açık hava basıncı, B ise katı basıncı ile ilgilidir).</p>
+<p>A ve D açık hava basıncıyla, B ise katı basıncıyla (yüzey alanını büyütme) ilgilidir; bu yüzden derinlik ilkesine dayanmaz.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Düşey kesiti verilen eşit bölmeli kabın ortasında, yüksekliği <b>h</b> kadar olan su geçirmez bir engel bulunmaktadır. Boş olan kap, K bölmesinin üzerindeki sabit debili musluk açılarak <b>6t</b> sürede tamamen dolduruluyor.</p>
+<div class="fig"><svg viewBox="0 0 400 215" width="400" role="img" aria-label="Eşit bölmeli, ortasında h yüksekliğinde engel bulunan kap">
+<rect x="0" y="0" width="400" height="215" fill="#ffffff"/>
+<g stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"><line x1="140" y1="40" x2="140" y2="100"/><line x1="220" y1="40" x2="220" y2="160"/><line x1="60" y1="100" x2="300" y2="100"/></g>
+<polyline points="60,40 60,160 300,160 300,40" fill="none" stroke="#1e293b" stroke-width="3"/>
+<line x1="140" y1="100" x2="140" y2="160" stroke="#1e293b" stroke-width="5"/>
+<rect x="88" y="14" width="24" height="12" fill="#475569"/><line x1="100" y1="26" x2="100" y2="38" stroke="#2563eb" stroke-width="3" stroke-dasharray="3 2"/>
+<text x="120" y="24" font-size="11" fill="#475569">musluk</text>
+<circle cx="100" cy="157" r="4" fill="#dc2626"/>
+<text x="100" y="180" font-size="13" font-weight="bold" text-anchor="middle" fill="#dc2626">K</text>
+<text x="260" y="140" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">L</text>
+<text x="148" y="125" font-size="11" fill="#1e293b">engel</text>
+<g stroke="#1e293b" stroke-width="1.5"><line x1="40" y1="40" x2="40" y2="160"/><line x1="35" y1="40" x2="45" y2="40"/><line x1="35" y1="100" x2="45" y2="100"/><line x1="35" y1="160" x2="45" y2="160"/></g>
+<g font-size="12" font-weight="bold" fill="#1e293b"><text x="22" y="74">h</text><text x="22" y="134">h</text></g>
+<text x="180" y="205" font-size="11" text-anchor="middle" fill="#475569">Bölmelerin hepsi eşittir; her bölme t sürede dolar.</text>
+</svg></div>
+<p>Her bir bölme <b>t</b> sürede dolduğuna göre, kabın tabanındaki <b>K noktasına</b> etki eden sıvı basıncının zamana bağlı değişimi aşağıdakilerden hangisinde doğru açıklanmıştır?</p>`,
+  c: ["0–t aralığında P’ye kadar artar; t–3t aralığında su yan bölmeye (L’ye) aktığı için P’de sabit kalır; 3t–6t aralığında ise 2P’ye kadar tekrar artar.", "0–6t aralığı boyunca hiç durmadan sabit hızla 2P’ye kadar artar.", "0–2t aralığında sıfır kalır; 2t–6t aralığında 2P’ye çıkar.", "0–3t aralığında artar; 3t–6t aralığında sabit kalır."],
+  a: "A",
+  s: `<p>Bölmeli kap sorularında suyun dolma sırasını takip edelim:</p>
+<ul>
+<li><b>0 – t aralığı:</b> K’nin üzerindeki 1 bölme dolar → K’deki sıvı yüksekliği h, basıncı <b>P</b> olur.</li>
+<li><b>t – 3t aralığı (2t süre):</b> Su engelden L tarafına taşar. L’nin altındaki 2 bölme dolana kadar (t’den 3t’ye kadar) K’nin üzerindeki su seviyesi <b>hiç yükselmez (h’de sabit kalır)</b> → K’deki sıvı basıncı <b>P’de sabit kalır!</b></li>
+<li><b>3t – 6t aralığı (3t süre):</b> Alt kısımlar tamamen dolduktan sonra üstteki 3 bölme birlikte yükselir ve K’deki sıvı yüksekliği 2h’ye, basıncı <b>2P’ye</b> çıkar.</li>
+</ul>
+<p>B’de engelin etkisi gözden kaçırılmıştır. C’de su önce L bölmesine akıyormuş gibi düşünülmüştür; oysa musluk K’nin üzerindedir ve K bölmesi ilk t sürede dolar. D’de son 3t’lik bölümde K’nin üzerindeki su seviyesinin yükselmeye devam ettiği unutulmuştur.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Düşey kesiti verilen bileşik kapta, kolları birbirinden ayıran <b>M musluğu</b> kapalıyken 1. kolda <b>2h</b> yüksekliğinde su bulunmakta, 2. kol ise tamamen boş bulunmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 420 215" width="420" role="img" aria-label="M musluğu kapalı bileşik kap: 1. kolda 2h su, 2. kol boş">
+<rect x="0" y="0" width="420" height="215" fill="#ffffff"/>
+<rect x="80" y="70" width="50" height="120" fill="#60a5fa"/>
+<rect x="130" y="180" width="40" height="10" fill="#60a5fa"/>
+<path d="M80,40 L80,190 L270,190 L270,40 M130,40 L130,180 L220,180 L220,40" fill="none" stroke="#1e293b" stroke-width="3"/>
+<rect x="170" y="174" width="12" height="22" fill="#dc2626"/>
+<text x="176" y="168" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">M</text>
+<g stroke="#1e3a8a" stroke-width="1.5"><line x1="62" y1="70" x2="62" y2="190"/><line x1="57" y1="70" x2="67" y2="70"/><line x1="57" y1="190" x2="67" y2="190"/></g>
+<text x="56" y="134" font-size="12" font-weight="bold" text-anchor="end" fill="#1e3a8a">2h</text>
+<circle cx="105" cy="186" r="4" fill="#dc2626"/><circle cx="245" cy="186" r="4" fill="#dc2626"/>
+<text x="105" y="208" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">K</text>
+<text x="245" y="208" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">L</text>
+<text x="105" y="32" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e3a8a">1. kol (S)</text>
+<text x="245" y="32" font-size="12" font-weight="bold" text-anchor="middle" fill="#166534">2. kol (S)</text>
+<text x="285" y="120" font-size="11" fill="#475569">Bağlantı borusunun</text>
+<text x="285" y="135" font-size="11" fill="#475569">hacmi önemsizdir.</text>
+</svg></div>
+<p>Kesit alanları birbirine eşit (<b>S</b>) olan bu bileşik kapta <b>M musluğu açılıp sıvı akışı durduğunda</b>, K ve L noktalarındaki sıvı basınçları (<b>P<sub>K</sub> ve P<sub>L</sub></b>) için aşağıdakilerden hangisi söylenebilir?</p>`,
+  c: ["1. koldaki suyun yarısı 2. kola geçer; her iki koldaki sıvı yüksekliği h olur ve K ile L noktalarındaki sıvı basınçları birbirine eşitlenir (P<sub>K</sub> = P<sub>L</sub>).", "K noktasındaki sıvı basıncı değişmez, L noktasındaki sıvı basıncı sıfır kalır.", "Suyun tamamı 2. kola geçer ve K noktasındaki sıvı basıncı sıfır olur.", "1. koldaki sıvı basıncı 2 katına çıkar."],
+  a: "A",
+  s: `<p>Bileşik kaplarda aradaki musluk açıldığında sıvı, her iki koldaki <b>sıvı seviyesi (ve taban sıvı basıncı) birbirine eşit olana kadar</b> yüksek koldan alçak kola akar. Kolların kesit alanları eşit (S) olduğu için yeni denge yüksekliği <b>h</b> olur; K’deki basınç yarıya inerken L’deki basınç ona eşitlenir (<b>P<sub>K</sub> = P<sub>L</sub></b>).</p>
+<p>B yanlıştır: musluk açılınca su 2. kola akar, K’deki basınç azalır, L’deki basınç artar. C yanlıştır: suyun tamamı geçmez; akış iki koldaki seviyeler eşitlenince durur. D yanlıştır: 1. koldaki su seviyesi azaldığı için basınç artmaz, yarıya iner.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Şekildeki hidrolik kaldırma sisteminde küçük pistonun yüzey alanı <b>10 cm²</b>, büyük pistonun yüzey alanı <b>200 cm²</b>’dir. Küçük pistona dik bir <b>F</b> kuvveti uygulanarak büyük piston üzerindeki araç kaldırılmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Küçük ve büyük pistonlu hidrolik kaldırma sistemi">
+<defs><marker id="fb-k8-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<rect x="0" y="0" width="560" height="200" fill="#ffffff"/>
+<rect x="60" y="90" width="44" height="100" fill="#93c5fd"/>
+<rect x="104" y="155" width="296" height="35" fill="#93c5fd"/>
+<rect x="400" y="90" width="120" height="100" fill="#93c5fd"/>
+<path d="M60,40 L60,190 L520,190 L520,40 M104,40 L104,155 L400,155 L400,40" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<rect x="61" y="80" width="42" height="10" fill="#475569"/>
+<rect x="401" y="80" width="118" height="10" fill="#475569"/>
+<rect x="420" y="40" width="80" height="40" rx="6" fill="#fde047" stroke="#a16207" stroke-width="2"/>
+<text x="460" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#713f12">araç</text>
+<line x1="82" y1="28" x2="82" y2="76" stroke="#dc2626" stroke-width="3" marker-end="url(#fb-k8-ar)"/>
+<text x="92" y="40" font-size="12" font-weight="bold" fill="#dc2626">F</text>
+<g font-size="12" font-weight="bold"><text x="130" y="100" fill="#1e3a8a">Küçük piston: 10 cm²</text><text x="130" y="122" fill="#166534">Büyük piston: 200 cm²</text></g>
+<text x="250" y="178" font-size="11" text-anchor="middle" fill="#1e3a8a">sıvı</text>
+</svg></div>
+<p>Pascal prensibine göre çalışan bu sistemle ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Küçük pistona uygulanan kuvvetin oluşturduğu basınç, sıvı tarafından büyük pistona iletilir.", "Büyük pistonun alt yüzeyine etki eden sıvı basıncı, küçük pistondaki basınca eşittir.", "Büyük pistona etki eden kuvvet, küçük pistona uygulanan F kuvvetinden büyüktür.", "Büyük pistonun yüzey alanı 20 kat büyük olduğu için büyük pistona iletilen basınç da 20 kat büyüktür."],
+  a: "D",
+  s: `<p>Kapalı kaptaki sıvı, kendisine uygulanan basıncı her yöne <b>aynen</b> iletir (Pascal prensibi). Bu yüzden iki pistondaki sıvı basıncı <b>eşittir</b> (A ve B doğru).</p>
+<p>Basınç eşit olduğu hâlde büyük pistonun yüzeyi daha büyük olduğundan büyük pistona etki eden <b>kuvvet</b> daha büyüktür; az kuvvetle ağır araç bu sayede kaldırılır (C doğru).</p>
+<p>D yanlıştır: büyük pistonda büyüyen şey basınç değil kuvvettir. Kuvvet ile basıncı karıştırmak bu konunun en bilinen yanılgısıdır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Üzerinde eşit büyüklükte çok sayıda delik bulunan içi su dolu küresel bir balon (Pascal topu), pistonlu bir boruya bağlanmıştır. Piston ok yönünde itildiğinde suyun bütün deliklerden aynı hızla ve dik olarak dışarı fışkırdığı gözlenmiştir.</p>
+<div class="fig"><svg viewBox="0 0 320 135" width="300" role="img" aria-label="Pascal topu deneyi">
+<rect x="15" y="52" width="110" height="30" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<rect x="25" y="52" width="10" height="30" fill="#475569"/>
+<line x1="2" y1="67" x2="25" y2="67" stroke="#dc2626" stroke-width="4"/>
+<circle cx="175" cy="67" r="46" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
+<g stroke="#2563eb" stroke-width="2.5">
+<line x1="175" y1="21" x2="175" y2="3"/>
+<line x1="221" y1="67" x2="242" y2="67"/>
+<line x1="175" y1="113" x2="175" y2="131"/>
+<line x1="208" y1="34" x2="223" y2="19"/>
+<line x1="208" y1="100" x2="223" y2="115"/>
+<line x1="142" y1="34" x2="127" y2="19"/>
+<line x1="142" y1="100" x2="127" y2="115"/>
+</g>
+<text x="50" y="98" font-size="11" font-weight="bold" fill="#1e293b">Piston itiliyor</text>
+</svg></div>
+<p>Bu deneyde gözlenen bilimsel ilkeden (Pascal prensibinden) aşağıdaki araçların hangisinde <b>yararlanılmaktadır</b>?</p>`,
+  c: ["Barometre ile açık hava basıncının ölçülmesinde", "Bıçak ve balta gibi kesici aletlerin ağız kısımlarının inceltilmesinde", "Otomobillerdeki hidrolik fren sistemlerinde ve itfaiye merdivenlerinde", "Askı vantuzlarının fayans yüzeylere yapıştırılmasında"],
+  a: "C",
+  s: `<p>Deney, kapalı bir kaptaki sıvıya uygulanan basıncın sıvı tarafından <b>her yöne ve eşit büyüklükte iletildiğini (Pascal prensibi)</b> göstermektedir. Otomobillerdeki <b>hidrolik fren sistemleri</b>, itfaiye merdivenleri, hidrolik krikolar ve berber koltukları bu ilkeyle çalışır.</p>
+<p>A açık hava basıncıyla, B katı basıncıyla (yüzeyi küçültme), D ise açık hava basıncıyla ilgilidir; bunlar Pascal prensibi uygulaması değildir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>İtalyan bilim insanı Torricelli, deniz seviyesinde ve 0 °C sıcaklıkta 1 m uzunluğundaki cam boruyu cıva ile doldurup cıva dolu çanağa ters çevirdiğinde borudaki cıva yüksekliğinin <b>76 cm</b> olduğunu ölçmüştür.</p>
 <div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Torricelli deneyinde boru kesiti, şekli ve eğiminin cıva yüksekliğine etkisi">
 <rect x="20" y="125" width="500" height="30" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
 <line x1="20" y1="55" x2="520" y2="55" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
@@ -374,7 +1080,7 @@ qs: [
 <polygon points="312,140 324,140 358,55 346,55"/>
 <path d="M447,140 L447,95 Q467,75 447,55 L461,55 Q481,75 461,95 L461,140 Z"/>
 </g>
-<g font-size="10" font-weight="bold" text-anchor="middle" fill="#1e293b">
+<g font-size="11" font-weight="bold" text-anchor="middle" fill="#1e293b">
 <text x="73" y="12" fill="#1e40af">1. İnce Boru (S)</text>
 <text x="193" y="12" fill="#166534">2. Kalın Boru (3S)</text>
 <text x="350" y="12" fill="#b45309">3. Eğik Boru</text>
@@ -382,168 +1088,72 @@ qs: [
 <text x="500" y="48" fill="#dc2626">h = 76 cm</text>
 </g>
 </svg></div>
-<p>Aynı ortamda (deniz seviyesinde ve 0 °C’de) 1, 2, 3 ve 4 numaralı farklı kesit, eğim ve şekillerdeki cam borularla yapılan Torricelli deneyinde cıva yüksekliğinin (<b>h = 76 cm</b>) dört boruda da <b>birbirine eşit</b> çıkmasının bilimsel nedeni aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `Sıvı basıncının ve bunu dengeleyen açık hava basıncının borunun kesit alanına, şekline, eğimine ve borudaki sıvı miktarına bağlı olmaması (yalnızca dik yüksekliğe ve yoğunluğa bağlı olması)`,
-    `Kalın boruda bulunan cıvanın yoğunluğunun ince borudakinden daha küçük olması`,
-    `Eğik boruya etki eden açık hava basıncının dik borudan daha fazla olması`,
-    `Boruların üst kısmındaki boşlukta yüksek basınçlı hava bulunması`
-  ],
+<p>Aynı ortamda (deniz seviyesinde ve 0 °C’de) 1, 2, 3 ve 4 numaralı farklı kesit, eğim ve şekillerdeki cam borularla yapılan Torricelli deneyinde cıva yüksekliğinin (<b>h = 76 cm</b>) dört boruda da <b>birbirine eşit</b> çıkmasının bilimsel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Cıvanın oluşturduğu sıvı basıncının borunun kalınlığına, şekline ve eğimine değil, yalnızca dik yüksekliğe bağlı olması", "Kalın boruda bulunan cıvanın yoğunluğunun ince borudakinden daha küçük olması", "Eğik boruya etki eden açık hava basıncının dik borudan daha fazla olması", "Boruların üst kısmındaki boşlukta yüksek basınçlı hava bulunması"],
   a: "A",
-  s: `<p>Açık hava basıncı borulardaki cıvanın yaptığı <b>sıvı basıncını (P = h · d)</b> dengeler[cite: 11]. Sıvı basıncı borunun kalınlığına (kesit alanına), şekline veya eğimine <b>bağlı değildir</b>; yalnızca dik yüksekliğe (h) ve sıvının yoğunluğuna (d) bağlıdır[cite: 11]. Bu nedenle dört boruda da dik yükseklik <b>76 cm</b> olur. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Şekildeki hidrolik kaldırma sisteminde (su cenderesinde) küçük pistonun yüzey alanı <b>10 cm²</b>, büyük pistonun yüzey alanı <b>200 cm²</b>’dir. Küçük pistona <b>50 N</b>’luk dik bir kuvvet uygulanarak büyük piston üzerindeki araç dengelenmektedir[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 380 150" width="360" role="img" aria-label="Hidrolik sistem su cenderesi hesaplama şeması">
-<path d="M35,30 L35,125 L335,125 L335,50 L245,50 L245,105 L80,105 L80,30" fill="#93c5fd" stroke="#1e3a8a" stroke-width="2"/>
-<rect x="35" y="50" width="45" height="12" fill="#475569"/>
-<rect x="245" y="60" width="90" height="12" fill="#475569"/>
-<line x1="57" y1="12" x2="57" y2="48" stroke="#dc2626" stroke-width="3"/>
-<polygon points="51,40 63,40 57,50" fill="#dc2626"/>
-<rect x="260" y="32" width="60" height="28" rx="4" fill="#fde047" stroke="#b45309" stroke-width="1.5"/>
-<g font-size="10.5" font-weight="bold">
-<text x="68" y="24" fill="#dc2626">F₁ = 50 N</text>
-<text x="57" y="140" fill="#1e40af" text-anchor="middle">S₁ = 10 cm²</text>
-<text x="290" y="140" fill="#166534" text-anchor="middle">S₂ = 200 cm²</text>
-<text x="290" y="50" fill="#92400e" text-anchor="middle">Yük (G)</text>
-<text x="160" y="120" fill="#1e3a8a" text-anchor="middle">Sıkıştırılamayan Sıvı</text>
-</g>
-</svg></div>
-<p>Pascal prensibine göre çalışan bu hidrolik sistemle ilgili aşağıdaki ifadelerden hangisi <b>yanlıştır</b>[cite: 11]?</p>`,
-  c: [
-    `Küçük pistonda oluşan sıvı basıncı 5 N/cm²’dir.`,
-    `Sıvı, küçük pistona uygulanan 5 N/cm²’lik basıncı büyük pistonun alt yüzeyine aynen iletir.`,
-    `Büyük pistonun kaldırabileceği yükün ağırlığı (kuvvet) 1000 N’dur.`,
-    `Büyük pistonun yüzey alanı 20 kat büyük olduğu için büyük pistona iletilen basınç da 20 kat büyüktür.`
-  ],
-  a: "D",
-  s: `<p>Hidrolik sistemlerde (Pascal prensibinde) en çok yapılan hata kuvvet ile basıncı karıştırmaktır[cite: 11]:</p>
-<ul>
-<li>Küçük pistondaki basınç: P<sub>1</sub> = 50 N / 10 cm² = <b>5 N/cm²</b> (A doğru)[cite: 11].</li>
-<li>Sıvılar basıncı her yöne <b>aynen (eşit büyüklükte)</b> iletir: P<sub>1</sub> = P<sub>2</sub> = <b>5 N/cm²</b> (B doğru)[cite: 11].</li>
-<li>Büyük pistondaki kuvvet: F<sub>2</sub> = P<sub>2</sub> × S<sub>2</sub> = 5 × 200 = <b>1000 N</b> (C doğru)[cite: 11].</li>
-</ul>
-<p>Büyük pistonda 20 kat büyüyen şey <b>basınç değil, kuvvettir</b>; basınç her iki pistonda da <b>eşittir</b> (<b>D yanlıştır</b>)[cite: 11]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci aşağıdaki günlük yaşam örneklerinde katı basıncının <b>artırılmasının</b> mı yoksa <b>azaltılmasının</b> mı amaçlandığını tabloya işaretlemiştir[cite: 11].</p>
-<table class="rt">
-<tr><th>Günlük Yaşam Örneği</th><th>Basıncı Artırma</th><th>Basıncı Azaltma</th></tr>
-<tr><td><b>1.</b> Karda batmadan yürümek için geniş tabanlı kar ayakkabısı (hedik) giyilmesi</td><td></td><td><b>✓</b></td></tr>
-<tr><td><b>2.</b> Meyveleri kolay kesebilmek için bıçağın ağzının bilenerek inceltilmesi</td><td><b>✓</b></td><td></td></tr>
-<tr><td><b>3.</b> Yumuşak zeminde çalışan iş makinelerinde tekerlek yerine geniş palet kullanılması</td><td><b>✓</b></td><td></td></tr>
-<tr><td><b>4.</b> Duvara kolay çakılması için çivinin ve raptiyenin ucunun sivri yapılması</td><td><b>✓</b></td><td></td></tr>
-<tr><td><b>5.</b> Ağır yük taşıyan tır ve trenlerde çok sayıda tekerlek kullanılması</td><td><b>✓</b></td><td></td></tr>
-</table>
-<p>Buna göre öğrenci tabloda numaralanmış örneklerden hangilerini <b>hatalı</b> işaretlemiştir[cite: 11]?</p>`,
-  c: [
-    `1 ve 2`,
-    `2 ve 4`,
-    `3 ve 5`,
-    `1, 3 ve 5`
-  ],
-  a: "C",
-  s: `<p>İş makinelerinde geniş palet kullanılması (<b>3</b>) ve ağır kamyonlarda çok sayıda tekerlek bulunması (<b>5</b>) yüzey alanını büyüterek zemine batmayı önlemek, yani <b>basıncı azaltmak</b> içindir[cite: 11]. Öğrenci <b>3 ve 5</b> numaralı örnekleri “Basıncı Artırma” olarak işaretlediği için hatalı yapmıştır[cite: 11]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda deniz seviyesinden farklı yüksekliklerde bulunan <b>K, L ve M</b> şehirlerinde özdeş barometrelerle ölçülen cıva yükseklikleri ve saf suyun kaynama sıcaklıkları verilmiştir[cite: 11].</p>
+  s: `<p>Açık hava basıncı borulardaki cıvanın yaptığı <b>sıvı basıncını (P = h · d)</b> dengeler. Sıvı basıncı borunun kalınlığına (kesit alanına), şekline veya eğimine <b>bağlı değildir</b>; yalnızca dik yüksekliğe (h) ve sıvının yoğunluğuna (d) bağlıdır. Bu nedenle dört boruda da dik yükseklik <b>76 cm</b> olur.</p>
+<p>B yanlıştır: aynı cıvanın yoğunluğu borunun kalınlığına göre değişmez. C yanlıştır: aynı ortamda bütün borulara aynı açık hava basıncı etki eder. D yanlıştır: boruların üst kısmında hava yoktur; cıva çekilince orada boşluk kalır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda deniz seviyesinden farklı yüksekliklerde bulunan <b>K, L ve M</b> şehirlerinde özdeş barometrelerle ölçülen cıva yükseklikleri ve saf suyun kaynama sıcaklıkları verilmiştir.</p>
 <table class="rt">
 <tr><th>Şehir</th><th>Deniz Seviyesinden Yükseklik (m)</th><th>Barometredeki Cıva Yüksekliği (cm-Hg)</th><th>Saf Suyun Kaynama Sıcaklığı (°C)</th></tr>
 <tr><td><b>K Şehri</b></td><td>0 m (Deniz kıyısı)</td><td>76 cm</td><td>100 °C</td></tr>
 <tr><td><b>L Şehri</b></td><td>2000 m</td><td>60 cm</td><td>93 °C</td></tr>
 <tr><td><b>M Şehri</b></td><td>4000 m</td><td>46 cm</td><td>87 °C</td></tr>
 </table>
-<p>Tablodaki verilere göre; <b>K şehrinden M şehrine doğru</b> çık하는 bir dağcı ve yanındaki esnek balonla ilgili aşağıdakilerden hangisi <b>söylenemez</b>[cite: 11]?</p>`,
-  c: [
-    `Deniz seviyesinden yükseklere çıkıldıkça atmosferdeki gaz yoğunluğu ve açık hava basıncı azalır.`,
-    `Açık hava basıncı azaldıkça sıvıların kaynama noktası düşer (su daha düşük sıcaklıkta kaynar).`,
-    `Dağcının elindeki ağzı bağlı esnek çocuk balonunun hacmi K’den M’ye çıkıldıkça dış basınç azaldığı için büyür (şişer).`,
-    `M şehrinde açık hava basıncı daha yüksek olduğu için barometredeki cıva seviyesi 46 cm’ye düşmüştür.`
-  ],
+<p>Tablodaki verilere göre; <b>K şehrinden M şehrine doğru</b> çıkan bir dağcı ve yanındaki esnek balonla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Deniz seviyesinden yükseklere çıkıldıkça atmosferdeki gaz yoğunluğu ve açık hava basıncı azalır.", "Açık hava basıncı azaldıkça sıvıların kaynama noktası düşer (su daha düşük sıcaklıkta kaynar).", "Dağcının elindeki ağzı bağlı esnek çocuk balonunun hacmi K’den M’ye çıkıldıkça dış basınç azaldığı için büyür (şişer).", "M şehrinde açık hava basıncı daha yüksek olduğu için barometredeki cıva seviyesi 46 cm’ye düşmüştür."],
   a: "D",
-  s: `<p>Deniz seviyesinden yükseklere çıkıldıkça (0 m → 4000 m) açık hava basıncı artmaz, <b>azalır</b> (76 cm-Hg → 46 cm-Hg)[cite: 11]. Dolayısıyla M şehrinde açık hava basıncı en düşüktür (<b>D söylenemez</b>)[cite: 11].</p>`
-},
-{
-  q: `<p>Ucunda esnek lastik zar bulunan bir huni, plastik hortumla içinde renkli sıvı bulunan U borusuna bağlanarak sıvı basıncını ölçen bir <b>manometre</b> düzeneği hazırlanmıştır[cite: 11]. Huni, su dolu kabın içinde <b>aynı derinlikte (h sabit)</b> tutularak zarın yönü sırasıyla yukarı (1), yana (2) ve aşağı (3) çevrilmiş; her üç durumda da U borusundaki sıvı seviyesi farkının (<b>Δx</b>) birbirine eşit olduğu gözlenmiştir[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 380 160" width="360" role="img" aria-label="Aynı derinlikte farklı yönlerde sıvı basıncı ölçümü">
-<rect x="15" y="25" width="205" height="125" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
-<line x1="15" y1="95" x2="220" y2="95" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
-<g fill="#fde047" stroke="#b45309" stroke-width="2">
-<polygon points="45,95 65,95 55,80"/>
-<polygon points="105,85 105,105 120,95"/>
-<polygon points="160,95 180,95 170,110"/>
+  s: `<p>Tablo, deniz seviyesinden yükseldikçe barometredeki cıva yüksekliğinin <b>azaldığını</b> (76 → 60 → 46 cm) gösteriyor. Yani yükseldikçe hava seyrekleşir ve <b>açık hava basıncı azalır</b> (A söylenebilir).</p>
+<p>Basıncın azaldığı yerlerde suyun daha düşük sıcaklıkta kaynadığı tablodan görülür (B söylenebilir). Ağzı bağlı esnek balonun dışındaki basınç azaldığı için balon büyür (C söylenebilir).</p>
+<p>D söylenemez: M şehrinde açık hava basıncı daha <b>yüksek</b> değil, en <b>düşüktür</b>; cıva seviyesinin 46 cm’ye inmesinin nedeni de budur.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Torricelli, açık hava basıncını ölçmek için yaptığı deneyde yoğunluğu oldukça büyük olan <b>cıva (d<sub>cıva</sub> ≈ 13,6 g/cm³)</b> sıvısını kullanmış ve cıva yüksekliğini <b>76 cm</b> olarak ölçmüştür.</p>
+<p>Eğer Torricelli aynı deneyi aynı ortamda cıva yerine yoğunluğu çok daha küçük olan <b>saf su (d<sub>su</sub> = 1 g/cm³)</b> kullanarak yapsaydı aşağıdakilerden hangisi gerçekleşirdi?</p>`,
+  c: ["Aynı açık hava basıncını dengelemek için borudaki su sütunu cıvanınkinden yaklaşık 13,6 kat yüksek (yaklaşık 10 m) olurdu.", "Borudaki su yüksekliği yine 76 cm olurdu.", "Suyun yoğunluğu küçük olduğu için borudaki sıvı yüksekliği 76 cm’den çok daha az (yaklaşık 5 cm) olurdu.", "Açık hava basıncı suyun yoğunluğuna bağlı olarak azalırdı."],
+  a: "A",
+  s: `<p>Açık hava basıncı sabitken (P<sub>0</sub> = h · d), kullanılan sıvının <b>yoğunluğu (d) küçülürse</b>, aynı basıncı oluşturabilmek için borudaki <b>sıvı yüksekliği (h) ters orantılı olarak artar!</b> Su, cıvadan 13,6 kat daha az yoğun olduğu için su yüksekliği 76 cm × 13,6 ≈ <b>1033 cm (10,3 metre)</b> olurdu.</p>
+<p>B yanlıştır: sıvının yoğunluğu değişince aynı basıncı oluşturan sıvı yüksekliği de değişir. C yanlıştır: yoğunluk azaldığında yükseklik azalmaz, artar. D yanlıştır: açık hava basıncı, deneyde kullanılan sıvıya bağlı değildir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Açık hava basıncının (atmosfer basıncının) varlığını ve gücünü kanıtlamak isteyen iki öğrenci laboratuvarda aşağıdaki iki klasik deneyi gerçekleştiriyor:</p>
+<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="Magdeburg küreleri ve haşlanmış yumurta deneyi">
+<rect x="10" y="10" width="252" height="125" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="136" y="28" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Deney: Magdeburg Küreleri</text>
+<g font-size="11" fill="#1e293b">
+<text x="20" y="48">İki metal yarım küre birleştirilip</text>
+<text x="20" y="62"><tspan font-weight="bold" fill="#dc2626">içindeki hava vakumla boşaltılıyor</tspan>.</text>
+<text x="20" y="76">Küreler zıt yönlerde kuvvetle çekilmesine</text>
+<text x="20" y="90">rağmen birbirinden ayrılmıyor; hava</text>
+<text x="20" y="104">musluğu açılıp içeri hava girdiğinde ise</text>
+<text x="20" y="118">kolayca ayrılıyor.</text>
 </g>
-<path d="M55,80 L55,10 L265,10 L265,135 L315,135 L315,35" stroke="#334155" stroke-width="2.5" fill="none"/>
-<rect x="259" y="75" width="12" height="60" fill="#ec4899"/>
-<rect x="309" y="50" width="12" height="85" fill="#ec4899"/>
-<line x1="275" y1="50" x2="275" y2="75" stroke="#1e293b" stroke-width="1.5"/>
-<g font-size="10" font-weight="bold">
-<text x="55" y="112" text-anchor="middle">1</text>
-<text x="112" y="118" text-anchor="middle">2</text>
-<text x="170" y="125" text-anchor="middle">3</text>
-<text x="115" y="142" fill="#dc2626" text-anchor="middle">Sabit Derinlik (h)</text>
-<text x="292" y="66" fill="#be185d">Δx</text>
+<rect x="278" y="10" width="252" height="125" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="404" y="28" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">2. Deney: Şişeye Giren Yumurta</text>
+<g font-size="11" fill="#1e293b">
+<text x="288" y="48">Cam şişenin içinde bir parça kağıt</text>
+<text x="288" y="62">yakılıp hemen ağzına soyulmuş</text>
+<text x="288" y="76">haşlanmış yumurta konuluyor. Ateş</text>
+<text x="288" y="90">sönüp şişe soğuduğunda yumurtanın</text>
+<text x="288" y="104"><tspan font-weight="bold" fill="#b45309">kendiliğinden şişenin içine düştüğü</tspan></text>
+<text x="288" y="118">gözleniyor.</text>
 </g>
 </svg></div>
-<p>Yalnızca bu deneydeki gözlemlere dayanarak aşağıdaki bilimsel sonuçlardan hangisine ulaşılır[cite: 11]?</p>`,
-  c: [
-    `Sıvı basıncı sıvının derinliği arttıkça artar.`,
-    `Sıvı basıncı sıvının yoğunluğu ile doğru orantılıdır.`,
-    `Sıvılar, aynı derinlikteki bütün noktalarda her yöne eşit büyüklükte basınç uygular.`,
-    `Sıvı basıncı kabın şekline ve genişliğine bağlı değildir.`
-  ],
-  a: "C",
-  s: `<p>Deneyde derinlik (h) ve sıvı cinsi sabit tutulmuş, yalnızca huninin ağzındaki zarın <b>baktığı yön (yukarı, yana, aşağı)</b> değiştirilmiş ve basıncın (Δx) değişmediği görülmüştür[cite: 11]. Bu durum sıvıların <b>aynı derinlikte her yöne eşit büyüklükte basınç uyguladığını</b> kanıtlar[cite: 11]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci özdeş küpleri birbirine yapıştırarak oluşturduğu <b>K, L ve M</b> cisimlerini aynı kum havuzuna yavaşça bırakıyor ve cisimlerin ağırlıkları ile taban alanlarını aşağıdaki tabloya kaydediyor[cite: 11].</p>
-<table class="rt">
-<tr><th>Cisim</th><th>Toplam Ağırlık (N)</th><th>Kuma Değen Taban Alanı (cm²)</th></tr>
-<tr><td><b>K Cismi</b></td><td>60 N</td><td>20 cm²</td></tr>
-<tr><td><b>L Cismi</b></td><td>90 N</td><td>45 cm²</td></tr>
-<tr><td><b>M Cismi</b></td><td>40 N</td><td>10 cm²</td></tr>
-</table>
-<p>Buna göre K, L ve M cisimlerinin kumda oluşturdukları <b>batma derinlikleri (h<sub>K</sub>, h<sub>L</sub>, h<sub>M</sub>)</b> arasındaki ilişki aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `h<sub>L</sub> &gt; h<sub>K</sub> &gt; h<sub>M</sub>`,
-    `h<sub>M</sub> &gt; h<sub>K</sub> &gt; h<sub>L</sub>`,
-    `h<sub>K</sub> &gt; h<sub>M</sub> &gt; h<sub>L</sub>`,
-    `h<sub>K</sub> = h<sub>L</sub> = h<sub>M</sub>`
-  ],
+<p>Bu iki deneyin gerçekleşme prensibiyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Her iki deneyde de kapalı ortamdaki iç gaz basıncı düşürülmüş; dışarıdaki açık hava basıncı (P<sub>0</sub>) iç basınçtan çok daha büyük kaldığı için küreleri birbirine bastırmış ve yumurtayı şişenin içine itmiştir.", "1. deneyde kürelerin ayrılmamasının nedeni metaller arasındaki mıknatıslanma kuvvetidir.", "2. deneyde şişenin içindeki gaz basıncı açık hava basıncından daha büyük olduğu için yumurtayı içeri çekmiştir.", "Her iki deney de yalnızca sıvıların basıncı her yöne iletmesi (Pascal prensibi) ile açıklanır."],
+  a: "A",
+  s: `<p>Her iki deney de <b>açık hava basıncının</b> varlığını ve büyüklüğünü gösterir.</p>
+<p>1. deneyde kürelerin içindeki hava boşaltılınca iç basınç çok azalır; dışarıdan etki eden açık hava basıncı küreleri birbirine bastırır. 2. deneyde şişedeki hava ısınıp bir kısmı dışarı çıkar; ateş sönüp şişe soğuyunca içerideki basınç düşer ve dışarıdaki açık hava basıncı yumurtayı şişeye <b>iter</b> (A doğru).</p>
+<p>B yanlıştır: kürelerin ayrılmaması mıknatıslanmayla değil, basınç farkıyla açıklanır. C yanlıştır: şişenin içindeki basınç dışarıdakinden <b>küçüktür</b> ve yumurtayı çeken bir kuvvet yoktur. D yanlıştır: deneylerde sıvı yoktur; Pascal prensibi kullanılmaz.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Dünya’yı saran hava tabakasının uyguladığı basınca açık hava basıncı denir. Ece, günlük hayatta karşılaştığı bazı olayları not etmiştir.</p>
+<div class="box"><b>Ece’nin notları</b><br>• Pipetle kutudan meyve suyu içmek<br>• Kar ayakkabısıyla karda batmadan yürümek<br>• Vantuzlu askıyı fayansa yapıştırmak<br>• Şırınganın pistonunu çekerek şişeden ilaç almak</div>
+<p>Buna göre aşağıdakilerden hangisi açık hava basıncının etkisiyle <b>açıklanamaz</b>?</p>`,
+  c: ["Pipetle kutudan meyve suyu içmek", "Kar ayakkabısıyla karda batmadan yürümek", "Vantuzlu askıyı fayansa yapıştırmak", "Şırınganın pistonunu çekerek şişeden ilaç almak"],
   a: "B",
-  s: `<p>Kumda oluşan batma derinliği, cismin kuma uyguladığı <b>katı basıncıyla (P = G / S)</b> doğru orantılıdır[cite: 11]:</p>
-<ul>
-<li><b>P<sub>K</sub>:</b> 60 / 20 = <b>3 N/cm²</b>[cite: 11]</li>
-<li><b>P<sub>L</sub>:</b> 90 / 45 = <b>2 N/cm²</b>[cite: 11]</li>
-<li><b>P<sub>M</sub>:</b> 40 / 10 = <b>4 N/cm²</b>[cite: 11]</li>
-</ul>
-<p>Basınç sıralaması P<sub>M</sub> &gt; P<sub>K</sub> &gt; P<sub>L</sub> olduğu için batma derinlikleri de <b>h<sub>M</sub> &gt; h<sub>K</sub> &gt; h<sub>L</sub></b> olur[cite: 11]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Bir araştırmacı, katı basıncını etkileyen değişkenleri incelemek için eşit ağırlıktaki (<b>30 N</b>) üç farklı cismi kum havuzuna bırakarak aşağıdaki deney tablosunu oluşturuyor[cite: 11].</p>
-<table class="rt">
-<tr><th>Deney Düzeneği</th><th>Cismin Ağırlığı (N)</th><th>Temas Yüzey Alanı (cm²)</th><th>Kumda Batma Miktarı (cm)</th></tr>
-<tr><td><b>1. Düzenek</b></td><td>30 N</td><td>10 cm²</td><td>3,0 cm</td></tr>
-<tr><td><b>2. Düzenek</b></td><td>30 N</td><td>20 cm²</td><td>1,5 cm</td></tr>
-<tr><td><b>3. Düzenek</b></td><td>30 N</td><td>40 cm²</td><td>0,75 cm</td></tr>
-</table>
-<p>Bu deneydeki <b>bağımsız değişken</b>, <b>bağımlı değişken</b> ve <b>kontrol edilen (sabit tutulan) değişken</b> aşağıdakilerin hangisinde doğru verilmiştir[cite: 11]?</p>`,
-  c: [
-    `Bağımsız: Cismin ağırlığı — Bağımlı: Batma miktarı — Kontrol edilen: Yüzey alanı`,
-    `Bağımsız: Batma miktarı — Bağımlı: Yüzey alanı — Kontrol edilen: Cismin ağırlığı`,
-    `Bağımsız: Yüzey alanı — Bağımlı: Cismin ağırlığı — Kontrol edilen: Batma miktarı`,
-    `Bağımsız: Yüzey alanı — Bağımlı: Batma miktarı (Katı basıncı) — Kontrol edilen: Cismin ağırlığı`
-  ],
-  a: "D",
-  s: `<p>Deney değişkenlerini belirleyelim[cite: 11]:</p>
-<ul>
-<li><b>Bağımsız değişken (bizim bilerek değiştirdiğimiz):</b> Temas yüzey alanı (10, 20, 40 cm²)[cite: 11].</li>
-<li><b>Bağımlı değişken (yüzey alanına bağlı olarak değişen sonuç):</b> Kumda batma miktarı / Katı basıncı (3,0; 1,5; 0,75 cm)[cite: 11].</li>
-<li><b>Kontrol edilen değişken (sabit tutulan):</b> Cismin ağırlığı (30 N) ve kum zeminin cinsi[cite: 11]. Cevap <b>D</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Alt kısmına yakın bir noktada küçük bir delik açılmış olan plastik su şişesi tamamen suyla dolduruluyor. Şişenin kapağı açıkken delikten suyun hızla fışkırdığı (<b>Şekil-1</b>), kapak sıkıca kapatıldığında ise su akışının kısa süre sonra tamamen durduğu (<b>Şekil-2</b>) gözlemleniyor[cite: 11].</p>
+  s: `<p>Kar ayakkabısı, ayağın kara değen yüzey alanını büyütür; ağırlık aynı kaldığı için karın üzerine uygulanan <b>katı basıncı azalır</b> ve kişi batmaz. Bu olay açık hava basıncıyla değil, katı basıncıyla açıklanır.</p>
+<p>A: Pipetteki hava çekilince içerideki basınç azalır; meyve suyunu pipete iten, kutudaki sıvı yüzeyine etki eden açık hava basıncıdır. C: Vantuzun altındaki hava dışarı çıkar; açık hava basıncı vantuzu fayansa bastırır. D: Piston çekilince şırınganın içindeki basınç azalır; açık hava basıncı ilacı şırıngaya iter.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Alt kısmına yakın bir noktada küçük bir delik açılmış olan plastik su şişesi tamamen suyla dolduruluyor. Şişenin kapağı açıkken delikten suyun hızla fışkırdığı (<b>Şekil-1</b>), kapak sıkıca kapatıldığında ise su akışının kısa süre sonra tamamen durduğu (<b>Şekil-2</b>) gözlemleniyor.</p>
 <div class="fig"><svg viewBox="0 0 420 155" width="400" role="img" aria-label="Kapağı açık ve kapalı delikli şişeden su akışı deneyi">
 <line x1="10" y1="135" x2="410" y2="135" stroke="#475569" stroke-width="2.5"/>
 <rect x="65" y="18" width="24" height="10" fill="#ef4444"/>
@@ -556,7 +1166,7 @@ qs: [
 <rect x="262" y="34" width="50" height="16" fill="#f8fafc"/>
 <line x1="345" y1="110" x2="316" y2="110" stroke="#dc2626" stroke-width="2.5"/>
 <polygon points="322,105 322,115 314,110" fill="#dc2626"/>
-<g font-size="9.5" font-weight="bold" text-anchor="middle">
+<g font-size="11" font-weight="bold" text-anchor="middle">
 <text x="125" y="16" fill="#dc2626">Kapak Açık (P₀ etki ediyor)</text>
 <text x="77" y="148" fill="#1e40af">Şekil-1: Su fışkırır</text>
 <text x="287" y="16" fill="#1e293b">Kapak Kapalı</text>
@@ -564,295 +1174,319 @@ qs: [
 <text x="287" y="148" fill="#991b1b">Şekil-2: Su akmaz!</text>
 </g>
 </svg></div>
-<p>Şekil-2’de kapak kapatıldığında delikten su akışının durmasının temel nedeni aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `Kapak kapatılınca suyun üst yüzeyine açık hava basıncının etki edememesi ve dışarıdan deliğe etki eden açık hava basıncının (P<sub>0</sub>) suyun akışını engellemesi`,
-    `Kapak kapatılınca şişe içindeki suyun yoğunluğunun sıfıra düşmesi`,
-    `Kapak kapatılınca yer çekimi kuvvetinin ortadan kalkması`,
-    `Kapak kapatılınca suyun katı hâle geçmesi`
-  ],
+<p>Şekil-2’de kapak kapatıldığında delikten su akışının durmasının temel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Kapak kapatılınca suyun üst yüzeyine açık hava basıncının etki edememesi ve deliğe dışarıdan etki eden açık hava basıncının, içerideki basınçla dengelenip akışı durdurması", "Kapak kapatılınca şişe içindeki suyun yoğunluğunun sıfıra düşmesi", "Kapak kapatılınca yer çekimi kuvvetinin ortadan kalkması", "Kapak kapatılınca suyun katı hâle geçmesi"],
   a: "A",
-  s: `<p>Şekil-1’de kapak açıkken suyun üstünden de açık hava basıncı (P<sub>0</sub>) bastırdığı için su kendi ağırlık basıncıyla delikten akar[cite: 11]. Şekil-2’de kapak kapatıldığında ise üstten açık hava basıncı etki edemez; <b>dışarıdan deliğe etki eden açık hava basıncı (P<sub>0</sub>)</b> su basıncını dengeleyerek suyun akmasını engeller[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Baraj duvarları inşa edilirken, duvarın üst kısmı daha ince, <b>tabana (dip kısma) doğru inildikçe ise gittikçe kalınlaşacak</b> şekilde tasarlanır[cite: 11].</p>
-<p>Aşağıdaki olaylardan hangisi baraj duvarlarının tabana doğru kalınlaşmasıyla <b>aynı bilimsel ilkeye (sıvı basıncının derinlikle artmasına)</b> dayanır[cite: 11]?</p>`,
-  c: [
-    `Yüksek dağların zirvesinde suyun 100 °C’den daha düşük sıcaklıkta kaynaması`,
-    `Karda batmadan yürüyebilmek için geniş yüzeyli kar ayakkabısı giyilmesi`,
-    `Derin denizlere dalan dalgıçların yüksek basınca dayanıklı özel dalış kıyafetleri giymesi`,
-    `Meyve suyunun pipet yardımıyla kutudan kolayca içilebilmesi`
-  ],
+  s: `<p>Şekil-1’de kapak açıkken suyun üst yüzeyine de açık hava basıncı etki eder; su, kendi basıncıyla delikten dışarı akar.</p>
+<p>Şekil-2’de kapak kapatılınca suyun üstündeki havaya dışarıdan açık hava basıncı ulaşamaz. Biraz su aktıktan sonra şişenin içindeki basınç, deliğe dışarıdan etki eden <b>açık hava basıncıyla dengelenir</b> ve akış durur.</p>
+<p>B, C ve D yanlıştır: Kapak kapatılınca suyun yoğunluğu değişmez, yer çekimi ortadan kalkmaz, su da katılaşmaz.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Uçakla seyahat eden Elif, uçak havalanmadan önce içindeki suyun yarısını içtiği plastik su şişesinin kapağını sıkıca kapatmıştır. Uçak yüksek irtifaya çıktığında şişenin dışa doğru <b>şiştiğini</b>, uçak tekrar havalimanına indiğinde ise şişenin içe doğru büzülerek eski hâline döndüğünü gözlemlemiştir (Uçak yükseldikçe kabin içindeki hava basıncı bir miktar azalmaktadır).</p>
+<p>Elif’in gözlemlediği bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Uçak yükseldiğinde kabin içindeki hava basıncı azaldığı için, şişenin içindeki havanın basıncı dış basınçtan büyük kalmış ve şişeyi dışa doğru şişirmiştir.", "Yüksek irtifada şişenin içindeki su miktarı arttığı için şişe genleşmiştir.", "Yükseklerde şişenin içindeki hava taneciklerinin sayısı arttığı için iç basınç artmıştır.", "Uçak inişe geçtiğinde kabin basıncı azaldığı için şişe eski hâline dönmüştür."],
+  a: "A",
+  s: `<p>Şişenin ağzı yerde (yüksek açık hava basıncında) kapatılmıştır. Uçak yükseldiğinde kabin içindeki dış basınç düşünce, <b>şişenin içindeki hava basıncı dış basınçtan büyük kalmış</b> ve iç–dış basınç dengelenene kadar şişe dışa doğru şişmiştir.</p>
+<p>B yanlıştır: kapalı şişedeki su miktarı değişmez. C yanlıştır: ağzı kapalı şişedeki hava taneciklerinin sayısı değişmez. D yanlıştır: uçak alçaldıkça kabindeki basınç artar; şişeyi eski hâline getiren, artan dış basınçtır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, boyutları 20 cm × 10 cm × 5 cm olan özdeş tuğlalarla aynı kum havuzunda I, II, III ve IV numaralı düzenekleri kuruyor. Her düzenekte tuğlaların kuma değen yüzleri şeklin altında yazılmıştır.</p><div class="fig"><svg viewBox="0 0 560 234" width="560" role="img" aria-label="Özdeş tuğlalarla kurulan I, II, III ve IV numaralı düzenekler"><rect x="0" y="0" width="560" height="234" fill="#ffffff"/><rect x="10" y="150" width="540" height="18" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="163" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><polygon points="30,135 48.0,123.0 108.0,123.0 90,135" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="90,135 108.0,123.0 108.0,138.0 90,150" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="30" y="135" width="60" height="15" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="150,135 168.0,123.0 228.0,123.0 210,135" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="210,135 228.0,123.0 228.0,138.0 210,150" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="150" y="135" width="60" height="15" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="150,120 168.0,108.0 228.0,108.0 210,120" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="210,120 228.0,108.0 228.0,123.0 210,135" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="150" y="120" width="60" height="15" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="265,120 274.0,114.0 334.0,114.0 325,120" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="325,120 334.0,114.0 334.0,144.0 325,150" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="265" y="120" width="60" height="30" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="330,120 339.0,114.0 399.0,114.0 390,120" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="390,120 399.0,114.0 399.0,144.0 390,150" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="330" y="120" width="60" height="30" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="450,120 459.0,114.0 519.0,114.0 510,120" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="510,120 519.0,114.0 519.0,144.0 510,150" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="450" y="120" width="60" height="30" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="450,90 459.0,84.0 519.0,84.0 510,90" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="510,90 519.0,84.0 519.0,114.0 510,120" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="450" y="90" width="60" height="30" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><text x="60" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><text x="180" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><text x="330" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><text x="485" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text><text x="60" y="210" font-size="11" text-anchor="middle" fill="#475569">20×10 yüzü</text><text x="60" y="225" font-size="11" text-anchor="middle" fill="#475569">kumda</text><text x="180" y="210" font-size="11" text-anchor="middle" fill="#475569">alttakinin 20×10</text><text x="180" y="225" font-size="11" text-anchor="middle" fill="#475569">yüzü kumda</text><text x="330" y="210" font-size="11" text-anchor="middle" fill="#475569">her birinin 20×5</text><text x="330" y="225" font-size="11" text-anchor="middle" fill="#475569">yüzü kumda</text><text x="485" y="210" font-size="11" text-anchor="middle" fill="#475569">alttakinin 20×5</text><text x="485" y="225" font-size="11" text-anchor="middle" fill="#475569">yüzü kumda</text><text x="280" y="22" font-size="12" text-anchor="middle" fill="#1e3a8a" font-weight="bold">Tuğla boyutları: 20 cm × 10 cm × 5 cm</text></svg></div><p><b>Öğrenci "Katıların zemine uyguladığı basınç, zemine temas eden yüzey alanına bağlıdır." hipotezini test etmek istediğine göre hangi iki düzeneği karşılaştırmalıdır?</b></p>`,
+  c: ["I ve II", "II ve III", "II ve IV", "I ve IV"],
   a: "C",
-  s: `<p>Baraj duvarlarının tabana doğru kalın yapılmasının nedeni, <b>derinlik arttıkça sıvı basıncının artmasıdır</b>[cite: 11]. Dalgıçların derine indikçe artan su basıncından zarar görmemek için özel kıyafet giymesi de tamamen aynı ilkeye (<b>sıvı basıncı – derinlik ilişkisine</b>) dayanır[cite: 11]. (A ve D açık hava basıncı, B ise katı basıncı ile ilgilidir)[cite: 11]. Cevap <b>C</b>.</p>`
-},
-  {
-  q: `<p>Özdeş tuğlalar kullanılarak yatay kum zemin üzerinde <b>I, II ve III</b> numaralı düzenekler kuruluyor. I. düzenekte tek tuğla, II. düzenekte üst üste konulmuş iki tuğla, III. düzenekte ise yan yana konulmuş iki tuğla bulunmaktadır[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 460 145" width="440" role="img" aria-label="Özdeş tuğlaların üç farklı yerleşimi">
-<line x1="10" y1="115" x2="450" y2="115" stroke="#78716c" stroke-width="3"/>
-<g fill="#f97316" stroke="#7c2d12" stroke-width="1.5">
-<rect x="35" y="90" width="80" height="25"/>
-<rect x="180" y="90" width="80" height="25"/>
-<rect x="180" y="65" width="80" height="25"/>
-<rect x="295" y="90" width="70" height="25"/>
-<rect x="365" y="90" width="70" height="25"/>
-</g>
-<g font-size="10" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="75" y="82">G / S</text>
-<text x="220" y="57">2G / S</text>
-<text x="365" y="82">2G / 2S</text>
-<text x="75" y="135" font-size="13" fill="#1e40af">I</text>
-<text x="220" y="135" font-size="13" fill="#dc2626">II</text>
-<text x="365" y="135" font-size="13" fill="#16a34a">III</text>
-</g>
-</svg></div>
-<p>Düzeneklerin kum zemine uyguladığı katı basınçları <b>P<sub>I</sub>, P<sub>II</sub> ve P<sub>III</sub></b> olduğuna göre, bunlar arasındaki büyüklük ilişkisi aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `P<sub>I</sub> = P<sub>II</sub> = P<sub>III</sub>`,
-    `P<sub>III</sub> &gt; P<sub>II</sub> &gt; P<sub>I</sub>`,
-    `P<sub>II</sub> = P<sub>III</sub> &gt; P<sub>I</sub>`,
-    `P<sub>II</sub> &gt; P<sub>I</sub> = P<sub>III</sub>`
-  ],
+  s: `<p>Yüzey alanının etkisini görmek için iki düzenekte <b>ağırlık aynı</b>, <b>kuma değen alan farklı</b> olmalıdır. Bir tuğlanın ağırlığı G olsun; 20×10 yüzün alanı 200 cm², 20×5 yüzün alanı 100 cm²dir.</p><p>I: G, 200 cm². II: 2G, 200 cm². III: 2G, 100 + 100 = 200 cm². IV: 2G, 100 cm².</p><p>II ve IV: ağırlıklar eşit (2G), alanlar farklı (200 cm² ve 100 cm²) ✓.</p><p>A (I ve II): alan aynı, ağırlık farklı; bu karşılaştırma ağırlığın etkisini gösterir. B (II ve III): görünüşleri farklı olsa da ağırlık da alan da eşittir (2G, 200 cm²); iki düzenekte basınç aynı olur, hipotez test edilemez. D (I ve IV): hem ağırlık hem alan değişmiştir. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Melis, salondaki dört ayaklı masanın ayaklarının halıda derin izler bıraktığını fark ediyor. Masanın üzerinde ağır bir saksı bulunmaktadır.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Halı üzerindeki dört ayaklı masa ve üzerindeki saksı"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="20" y="175" width="520" height="14" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/><text x="530" y="186" font-size="11" text-anchor="end" fill="#4c1d95">Halı</text><rect x="140" y="90" width="280" height="14" fill="#d6a86a" stroke="#7c5a2a" stroke-width="1.5"/><rect x="155" y="104" width="10" height="71" fill="#b7894f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="395" y="104" width="10" height="71" fill="#b7894f" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="250,90 310,90 318,55 242,55" fill="#ea8a5b" stroke="#9a3412" stroke-width="1.5"/><line x1="280" y1="55" x2="270" y2="25" stroke="#16a34a" stroke-width="3"/><line x1="280" y1="55" x2="292" y2="20" stroke="#16a34a" stroke-width="3"/><line x1="280" y1="55" x2="300" y2="35" stroke="#16a34a" stroke-width="3"/><text x="345" y="72" font-size="12" text-anchor="start" fill="#1e293b">Saksı</text><text x="60" y="130" font-size="12" text-anchor="start" fill="#1e293b">Masa ayağı</text><defs><marker id="k2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="125" y1="135" x2="152" y2="145" stroke="#1e293b" stroke-width="2" marker-end="url(#k2a)"/></svg></div><p>Melis, halıda masanın ayaklarından oluşacak yeni izlerin daha sığ olması için aşağıdaki işlemleri düşünüyor:</p><p>I. Masanın üzerindeki saksıyı kaldırmak<br>II. Her ayağın altına, ayak tabanından daha geniş ve ağırlığı önemsiz keçe pedler yapıştırmak<br>III. Masayı, aynı ağırlıkta fakat ayak tabanları daha küçük olan dört ayaklı bir masayla değiştirmek</p><p><b>Bu işlemlerden hangileri tek başına uygulandığında Melis amacına ulaşır?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>İzin sığlaşması için ayakların halıya uyguladığı <b>basınç azalmalıdır</b>. Basınç, ağırlık azalınca ya da temas yüzey alanı büyüyünce azalır.</p><p>I: Saksı kalkınca halıya etki eden ağırlık azalır, alan aynı kalır; basınç azalır ✓. II: Pedler temas alanını büyütür, ağırlık (neredeyse) aynı kalır; basınç azalır ✓. III: Ağırlık aynı, ayak tabanları küçük; temas alanı küçülür, basınç <b>artar</b> ve izler daha da derinleşir ✗.</p><p>"Yalnız I" II’yi, "I, II ve III" ile "II ve III" ise III’ün basıncı artırdığını gözden kaçırır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>İçinde su bulunan iki kabın yan yüzeylerine K, L ve M basınçölçerleri takılıyor. Kapların ve basınçölçerlerin konumları eşit aralıklı yatay çizgiler üzerinde gösterilmiştir. K basınçölçeri 2 Pa değerini göstermektedir.</p><div class="fig"><svg viewBox="0 0 560 232" width="560" role="img" aria-label="Kareli zemin üzerinde su dolu iki kap ve K, L, M basınçölçerleri"><rect x="0" y="0" width="560" height="232" fill="#ffffff"/><line x1="50" y1="200" x2="170" y2="200" stroke="#e2e8f0" stroke-width="1"/><line x1="50" y1="170" x2="170" y2="170" stroke="#e2e8f0" stroke-width="1"/><line x1="50" y1="140" x2="170" y2="140" stroke="#e2e8f0" stroke-width="1"/><line x1="50" y1="110" x2="170" y2="110" stroke="#e2e8f0" stroke-width="1"/><line x1="50" y1="80" x2="170" y2="80" stroke="#e2e8f0" stroke-width="1"/><line x1="50" y1="50" x2="170" y2="50" stroke="#e2e8f0" stroke-width="1"/><rect x="60" y="80" width="100" height="120" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="60" y1="80" x2="160" y2="80" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="60,50 60,200 160,200 160,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="48" cy="110" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="48" y1="110" x2="53" y2="104" stroke="#dc2626" stroke-width="1.8"/><text x="33" y="115" font-size="13" text-anchor="end" fill="#1e293b" font-weight="bold">K</text><circle cx="48" cy="170" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="48" y1="170" x2="53" y2="164" stroke="#dc2626" stroke-width="1.8"/><text x="33" y="175" font-size="13" text-anchor="end" fill="#1e293b" font-weight="bold">L</text><line x1="280" y1="200" x2="480" y2="200" stroke="#e2e8f0" stroke-width="1"/><line x1="280" y1="170" x2="480" y2="170" stroke="#e2e8f0" stroke-width="1"/><line x1="280" y1="140" x2="480" y2="140" stroke="#e2e8f0" stroke-width="1"/><line x1="280" y1="110" x2="480" y2="110" stroke="#e2e8f0" stroke-width="1"/><line x1="280" y1="80" x2="480" y2="80" stroke="#e2e8f0" stroke-width="1"/><line x1="280" y1="50" x2="480" y2="50" stroke="#e2e8f0" stroke-width="1"/><rect x="290" y="110" width="180" height="90" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="290" y1="110" x2="470" y2="110" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="290,50 290,200 470,200 470,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="482" cy="170" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="482" y1="170" x2="487" y2="164" stroke="#dc2626" stroke-width="1.8"/><text x="497" y="175" font-size="13" text-anchor="start" fill="#1e293b" font-weight="bold">M</text><text x="110" y="222" font-size="13" text-anchor="#1e3a8a" fill="True">1. kap</text><text x="380" y="222" font-size="13" text-anchor="#1e3a8a" fill="True">2. kap (daha geniş)</text><text x="280" y="18" font-size="12" text-anchor="middle" fill="#475569">Yatay çizgiler eşit aralıklıdır.</text></svg></div><p><b>Buna göre L ve M basınçölçerlerinin gösterdiği değerler aşağıdakilerden hangisidir?</b> (L – M)</p>`,
+  c: ["6 Pa – 6 Pa", "4 Pa – 6 Pa", "6 Pa – 2 Pa", "6 Pa – 4 Pa"],
   a: "D",
-  s: `<p>Bir tuğlanın ağırlığına <b>G</b>, geniş taban alanına <b>S</b> diyelim[cite: 11]:</p>
-<ul>
-<li><b>I. Düzenek:</b> P<sub>I</sub> = G / S[cite: 11]</li>
-<li><b>II. Düzenek:</b> Ağırlık 2 katına çıkmış (2G), yüzey alanı değişmemiştir (S) → P<sub>II</sub> = <b>2G / S</b>[cite: 11]</li>
-<li><b>III. Düzenek:</b> Ağırlık 2 katına çıkmış (2G), yüzey alanı da 2 katına çıkmıştır (2S) → P<sub>III</sub> = 2G / 2S = <b>G / S</b>[cite: 11]</li>
-</ul>
-<p>Buna göre basınç sıralaması: <b>P<sub>II</sub> &gt; P<sub>I</sub> = P<sub>III</sub></b> olur[cite: 11]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Su dolu bir kabın yan yüzeyinde farklı derinliklerde açılmış <b>K, L ve M</b> delikleri bulunmaktadır. Tıpalar aynı anda açıldığında deliklerden fışkıran suların izlediği yollar şekildeki gibi olmaktadır[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 280 185" width="260" role="img" aria-label="Farklı derinlikteki K, L ve M deliklerinden fışkıran su">
-<rect x="30" y="20" width="80" height="145" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
-<g fill="none" stroke="#2563eb" stroke-width="3">
-<path d="M110,55 Q130,55 148,165"/>
-<path d="M110,100 Q152,100 190,165"/>
-<path d="M110,140 Q175,140 245,165"/>
-</g>
-<g font-size="12" font-weight="bold" fill="#1e293b">
-<text x="12" y="59">K</text><text x="12" y="104">L</text><text x="12" y="144">M</text>
-<text x="145" y="180" font-size="10" fill="#1e40af">x₁ &lt; x₂ &lt; x₃ (Menzil)</text>
-</g>
-<line x1="10" y1="165" x2="265" y2="165" stroke="#78716c" stroke-width="2.5"/>
-</svg></div>
-<p>Bu deney gözlemine göre;</p>
-<p>I. Sıvı basıncı sıvının derinliği arttıkça artar[cite: 11].<br>
-II. Kaptaki su boşaltılıp yerine aynı yükseklikte zeytinyağı konulursa M deliğinden çıkan sıvının basıncı ilk duruma göre azalır (d<sub>yağ</sub> &lt; d<sub>su</sub>)[cite: 11].<br>
-III. Sıvılar yalnızca bulundukları kabın tabanına değil, temas ettikleri yan yüzeylere de basınç uygular[cite: 11].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 11]?</p>`,
-  c: [
-    `Yalnız I`,
-    `I ve II`,
-    `I ve III`,
-    `I, II ve III`
-  ],
+  s: `<p>Sıvı basıncı derinliğe bağlıdır ve derinlik, ölçüm noktasından <b>sıvının serbest yüzeyine</b> doğru ölçülür.</p><p>1. kapta su 4 aralık yüksekliktedir. K tabandan 3 aralık yukarıda, yani yüzeyden 1 aralık derindedir ve 2 Pa gösterir. L yüzeyden 3 aralık derindedir; derinlik 3 katı olduğundan L: 3 × 2 = 6 Pa.</p><p>2. kapta su 3 aralık yüksekliktedir; M tabandan 1 aralık yukarıda, yüzeyden 2 aralık derindedir. Aynı sıvıda 2 aralık derinlik 2 × 2 = 4 Pa eder. Kabın daha geniş olması sonucu değiştirmez.</p><p>A: M’nin derinliğini tabandan ölçüp L ile aynı sanmak. B: L ve M’yi karıştırmak. C: Geniş kapta basıncın daha küçük olacağını düşünmek. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>K, L ve M cisimleri, özellikleri her yerinde aynı olan kum zemine ayrı ayrı konuluyor. Cisimlerin kuma değen yüzey alanları ve kumda oluşan izlerin derinlikleri aşağıda verilmiştir. Bu etkinlikte iz derinliğinin, cismin kuma uyguladığı basınçla doğru orantılı olduğu kabul ediliyor.</p><div class="fig"><svg viewBox="0 0 560 218" width="560" role="img" aria-label="K, L ve M cisimlerinin iz derinliği grafiği: K 2, L 2, M 3 birim; alanlar S, 2S, S"><rect x="0" y="0" width="560" height="218" fill="#ffffff"/><defs><marker id="k3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="70" y1="190" x2="300" y2="190" stroke="#1e293b" stroke-width="2" marker-end="url(#k3a)"/><line x1="70" y1="190" x2="70" y2="25" stroke="#1e293b" stroke-width="2" marker-end="url(#k3a)"/><text x="300" y="208" font-size="12" text-anchor="end" fill="#1e293b">Cisim</text><text x="74" y="19" font-size="12" text-anchor="start" fill="#1e293b">İz derinliği (birim)</text><line x1="70" y1="155" x2="290" y2="155" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="160" font-size="12" text-anchor="end" fill="#1e293b">1</text><line x1="70" y1="120" x2="290" y2="120" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="125" font-size="12" text-anchor="end" fill="#1e293b">2</text><line x1="70" y1="85" x2="290" y2="85" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="90" font-size="12" text-anchor="end" fill="#1e293b">3</text><line x1="70" y1="50" x2="290" y2="50" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="55" font-size="12" text-anchor="end" fill="#1e293b">4</text><rect x="95" y="120" width="30" height="70" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/><text x="110" y="208" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><rect x="155" y="120" width="30" height="70" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/><text x="170" y="208" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><rect x="215" y="85" width="30" height="105" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/><text x="230" y="208" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><rect x="330" y="40" width="215" height="120" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="345" y="65" font-size="12" text-anchor="start" fill="#1e3a8a" font-weight="bold">Kuma değen yüzey alanları:</text><text x="345" y="92" font-size="13" text-anchor="start" fill="#1e293b">K → S</text><text x="345" y="117" font-size="13" text-anchor="start" fill="#1e293b">L → 2S</text><text x="345" y="142" font-size="13" text-anchor="start" fill="#1e293b">M → S</text></svg></div><p><b>Buna göre,</b></p><p>I. M’nin ağırlığı K’nin ağırlığından büyüktür.<br>II. L’nin ağırlığı K’nin ağırlığının 2 katıdır.<br>III. L’nin ağırlığı M’nin ağırlığından büyüktür.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
   a: "D",
-  s: `<p>En derindeki M deliğinden suyun en uzağa fışkırması derinlik arttıkça sıvı basıncının arttığını (<b>I doğru</b>) ve yan yüzeylerden su fışkırması sıvıların yan yüzeylere de basınç uyguladığını (<b>III doğru</b>) gösterir[cite: 11]. Kaba yoğunluğu sudan daha küçük olan zeytinyağı konulursa aynı derinlikteki sıvı basıncı azalır (<b>II doğru</b>)[cite: 11]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Taban alanları birbirine eşit (<b>S</b>), şekilleri farklı olan boş ağırlıkları önemsiz <b>K, L ve M</b> kaplarına aynı cins sıvıdan eşit yükseklikte (<b>h</b>) konulmuştur[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 360 155" width="340" role="img" aria-label="Taban alanları eşit farklı şekilli K, L, M kapları">
-<line x1="10" y1="125" x2="350" y2="125" stroke="#475569" stroke-width="2.5"/>
-<g stroke="#1e3a8a" stroke-width="2">
-<polygon points="30,125 90,125 75,30 45,30" fill="#f8fafc"/>
-<polygon points="30,125 90,125 78,50 42,50" fill="#93c5fd"/>
-<rect x="145" y="30" width="60" height="95" fill="#f8fafc"/>
-<rect x="145" y="50" width="60" height="75" fill="#93c5fd"/>
-<polygon points="260,125 320,125 340,30 240,30" fill="#f8fafc"/>
-<polygon points="260,125 320,125 336,50 244,50" fill="#93c5fd"/>
-</g>
-<line x1="10" y1="50" x2="350" y2="50" stroke="#dc2626" stroke-dasharray="5 3"/>
-<g font-size="10.5" font-weight="bold" text-anchor="middle">
-<text x="60" y="118" fill="#1e3a8a">S</text><text x="175" y="118" fill="#1e3a8a">S</text><text x="290" y="118" fill="#1e3a8a">S</text>
-<text x="60" y="144" fill="#1e40af">K (Daralan)</text>
-<text x="175" y="144" fill="#166534">L (Düzgün)</text>
-<text x="290" y="144" fill="#b45309">M (Genişleyen)</text>
-</g>
-</svg></div>
-<p>Buna göre; <b>kapların tabanlarına etki eden sıvı basınçları (P<sub>sıvı</sub>)</b> ile <b>kapların yatay zemine uyguladıkları katı basınçları (P<sub>katı</sub>)</b> arasındaki ilişki aşağıdakilerin hangisinde doğru verilmiştir[cite: 11]?</p>`,
-  c: [
-    `Sıvı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub> — Katı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub>`,
-    `Sıvı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub> — Katı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>`,
-    `Sıvı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub> — Katı Basınçları: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub>`,
-    `Sıvı Basınçları: P<sub>K</sub> &gt; P<sub>L</sub> &gt; P<sub>M</sub> — Katı Basınçları: P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub>`
-  ],
-  a: "A",
-  s: `<p>İki basıncı birbirinden ayırmak çok önemlidir[cite: 11]:</p>
-<ul>
-<li><b>Kap tabanındaki sıvı basıncı (P = h · d):</b> Üç kapta da aynı sıvı (d) ve aynı derinlik (h) bulunduğu için sıvı basınçları <b>birbirine eşittir: P<sub>K</sub> = P<sub>L</sub> = P<sub>M</sub></b>[cite: 11].</li>
-<li><b>Kabın zemine uyguladığı katı basıncı (P = G / S):</b> Üç kabın da taban alanı (S) eşittir; ancak M kabı yukarı doğru genişlediği için içindeki sıvı miktarı (ağırlığı) en fazladır (<b>G<sub>M</sub> &gt; G<sub>L</sub> &gt; G<sub>K</sub></b>). Bu nedenle zemine yapılan katı basınçları <b>P<sub>M</sub> &gt; P<sub>L</sub> &gt; P<sub>K</sub></b> olur. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Üzerinde eşit büyüklükte çok sayıda delik bulunan içi su dolu küresel bir balon (Pascal topu), pistonlu bir boruya bağlanmıştır. Piston ok yönünde itildiğinde suyun bütün deliklerden aynı hızla ve dik olarak dışarı fışkırdığı gözlenmiştir[cite: 11].</p>
-<div class="fig"><svg viewBox="0 0 320 135" width="300" role="img" aria-label="Pascal topu deneyi">
-<rect x="15" y="52" width="110" height="30" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
-<rect x="25" y="52" width="10" height="30" fill="#475569"/>
-<line x1="2" y1="67" x2="25" y2="67" stroke="#dc2626" stroke-width="4"/>
-<circle cx="175" cy="67" r="46" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2"/>
-<g stroke="#2563eb" stroke-width="2.5">
-<line x1="175" y1="21" x2="175" y2="3"/>
-<line x1="221" y1="67" x2="242" y2="67"/>
-<line x1="175" y1="113" x2="175" y2="131"/>
-<line x1="208" y1="34" x2="223" y2="19"/>
-<line x1="208" y1="100" x2="223" y2="115"/>
-<line x1="142" y1="34" x2="127" y2="19"/>
-<line x1="142" y1="100" x2="127" y2="115"/>
-</g>
-<text x="50" y="98" font-size="10.5" font-weight="bold" fill="#1e293b">Piston itiliyor</text>
-</svg></div>
-<p>Bu deneyde gözlenen bilimsel ilkeden (Pascal prensibinden) aşağıdaki araçların hangisinde <b>yararlanılmaktadır</b>[cite: 11]?</p>`,
-  c: [
-    `Barometre ile açık hava basıncının ölçülmesinde`,
-    `Bıçak ve balta gibi kesici aletlerin ağız kısımlarının inceltilmesinde`,
-    `Otomobillerdeki hidrolik fren sistemlerinde ve itfaiye merdivenlerinde`,
-    `Askı vantuzlarının fayans yüzeylere yapıştırılmasında`
-  ],
+  s: `<p>Basıncı iz derinliğiyle, ağırlığı ise "basınç × alan" mantığıyla karşılaştıralım (oran düşüncesi).</p><p>I: K ve M’nin alanları eşit (S), M’nin izi daha derin; aynı alana daha büyük basınç uygulayan M daha ağırdır ✓.</p><p>II: K ve L’nin izleri eşit, yani basınçları eşit. L’nin alanı 2 kat olduğuna göre aynı basıncı oluşturmak için ağırlığı da 2 kat olmalıdır ✓.</p><p>III: K’nin ağırlığına 2 × S = 2 pay dersek L’ninki 2 × 2S = 4 pay, M’ninki 3 × S = 3 paydır. L (4 pay) M’den (3 pay) ağırdır ✓. "İzi en derin olan en ağırdır" düşüncesi alanın etkisini unutur.</p><p>Üç yargı da doğrudur. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Lastik zarlı bir huni, hortumla U borusuna bağlanarak sıvı basıncını ölçen bir düzenek hazırlanıyor. Huni, genişlikleri farklı dört kapta şekilde gösterilen derinliklere yerleştirilip U borusundaki seviye farkları kaydediliyor. Kaplardaki sıvı yükseklikleri eşittir.</p><div class="fig"><svg viewBox="0 0 560 232" width="560" role="img" aria-label="Su ve zeytinyağı bulunan dört kapta farklı derinliklere yerleştirilen huniler"><rect x="0" y="0" width="560" height="232" fill="#ffffff"/><defs><marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><rect x="20" y="50" width="90" height="150" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="20" y1="50" x2="110" y2="50" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="20,35 20,200 110,200 110,35" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="51.0,110 79.0,110 68.0,96 62.0,96" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="50.0" y1="110" x2="80.0" y2="110" stroke="#7f1d1d" stroke-width="3"/><line x1="65.0" y1="96" x2="65.0" y2="40" stroke="#64748b" stroke-width="3"/><line x1="100" y1="50" x2="100" y2="110" stroke="#dc2626" stroke-width="1.5"/><line x1="95" y1="110" x2="105" y2="110" stroke="#dc2626" stroke-width="1.5"/><text x="96" y="85.0" font-size="12" text-anchor="end" fill="#dc2626" font-weight="bold">h</text><text x="65.0" y="192" font-size="11" text-anchor="middle" fill="#475569">Su</text><text x="65.0" y="222" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><rect x="150" y="50" width="70" height="150" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="150" y1="50" x2="220" y2="50" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="150,35 150,200 220,200 220,35" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="171.0,170 199.0,170 188.0,156 182.0,156" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="170.0" y1="170" x2="200.0" y2="170" stroke="#7f1d1d" stroke-width="3"/><line x1="185.0" y1="156" x2="185.0" y2="100" stroke="#64748b" stroke-width="3"/><line x1="210" y1="50" x2="210" y2="170" stroke="#dc2626" stroke-width="1.5"/><line x1="205" y1="170" x2="215" y2="170" stroke="#dc2626" stroke-width="1.5"/><text x="206" y="115.0" font-size="12" text-anchor="end" fill="#dc2626" font-weight="bold">2h</text><text x="185.0" y="192" font-size="11" text-anchor="middle" fill="#475569">Su</text><text x="185.0" y="222" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><rect x="270" y="50" width="130" height="150" fill="#fde68a" stroke="none" stroke-width="0"/><line x1="270" y1="50" x2="400" y2="50" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="270,35 270,200 400,200 400,35" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="321.0,110 349.0,110 338.0,96 332.0,96" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="320.0" y1="110" x2="350.0" y2="110" stroke="#7f1d1d" stroke-width="3"/><line x1="335.0" y1="96" x2="335.0" y2="40" stroke="#64748b" stroke-width="3"/><line x1="390" y1="50" x2="390" y2="110" stroke="#dc2626" stroke-width="1.5"/><line x1="385" y1="110" x2="395" y2="110" stroke="#dc2626" stroke-width="1.5"/><text x="386" y="85.0" font-size="12" text-anchor="end" fill="#dc2626" font-weight="bold">h</text><text x="335.0" y="192" font-size="11" text-anchor="middle" fill="#475569">Zeytinyağı</text><text x="335.0" y="222" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><rect x="430" y="50" width="110" height="150" fill="#fde68a" stroke="none" stroke-width="0"/><line x1="430" y1="50" x2="540" y2="50" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="430,35 430,200 540,200 540,35" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="471.0,140 499.0,140 488.0,126 482.0,126" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="470.0" y1="140" x2="500.0" y2="140" stroke="#7f1d1d" stroke-width="3"/><line x1="485.0" y1="126" x2="485.0" y2="70" stroke="#64748b" stroke-width="3"/><line x1="530" y1="50" x2="530" y2="140" stroke="#dc2626" stroke-width="1.5"/><line x1="525" y1="140" x2="535" y2="140" stroke="#dc2626" stroke-width="1.5"/><text x="526" y="100.0" font-size="12" text-anchor="end" fill="#dc2626" font-weight="bold">1,5h</text><text x="485.0" y="192" font-size="11" text-anchor="middle" fill="#475569">Zeytinyağı</text><text x="485.0" y="222" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text></svg></div><p><b>Sıvı basıncının sıvının yoğunluğuna (cinsine) bağlı olduğunu göstermek için hangi iki ölçümün sonuçları karşılaştırılmalıdır?</b></p>`,
+  c: ["I ve II", "II ve III", "I ve III", "II ve IV"],
   a: "C",
-  s: `<p>Deney, kapalı bir kaptaki sıvıya uygulanan basıncın sıvı tarafından <b>her yöne ve eşit büyüklükte iletildiğini (Pascal prensibi)</b> göstermektedir[cite: 11]. Otomobillerdeki <b>hidrolik fren sistemleri</b>, itfaiye merdivenleri, hidrolik krikolar ve berber koltukları bu ilkeyle çalışır[cite: 11]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir sürücü uzun bir yaz yolculuğuna çıkmadan önce sabah serinliğinde otomobil lastiklerinin hava basıncını ölçmüş; sıcak asfalt üzerinde saatlerce yol yaptıktan sonra mola yerinde ısınan lastiklerin basıncını tekrar ölçtüğünde <b>gaz basıncının arttığını</b> görmüştür (Lastiklerin hacmi sabit kabul edilmektedir)[cite: 11].</p>
-<p>Isınan lastiğin içindeki gaz basıncının artmasının bilimsel nedeni aşağıdakilerden hangisidir[cite: 11]?</p>`,
-  c: [
-    `Sıcaklık arttığı için lastik içindeki hava taneciklerinin kinetik enerjisinin (hızının) artması ve lastik çeperlerine birim zamanda daha sık ve şiddetli çarpması`,
-    `Yolculuk sırasında lastiğin içindeki hava taneciklerinin sayısının kendiliğinden artması`,
-    `Isınan hava taneciklerinin hacimlerinin ve kütlelerinin büyümesi`,
-    `Yüksek hızda giderken açık hava basıncının sıfıra düşmesi`
-  ],
+  s: `<p>Yoğunluğun etkisini görmek için iki ölçümde <b>sıvının cinsi farklı</b>, <b>huninin derinliği aynı</b> olmalıdır. Kabın genişliği sıvı basıncını etkilemez.</p><p>I ve III: Su ve zeytinyağı, huniler aynı derinlikte (h) ✓. Kapların genişliklerinin farklı olması sonucu değiştirmez.</p><p>A (I ve II): Sıvı aynı, derinlik farklı; derinliğin etkisini gösterir. B (II ve III) ve D (II ve IV): Hem sıvının cinsi hem derinlik değişmiştir. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, özdeş üç pet şişeye farklı miktarlarda su koyup kapaklarını kapatıyor. Şişeleri aynı süngerin farklı yerlerine tabanları üzerine dik olarak koyuyor ve süngerdeki çökme miktarlarını cetvelle ölçüyor.</p><div class="fig"><svg viewBox="0 0 560 222" width="560" role="img" aria-label="İçinde farklı miktarda su bulunan özdeş üç şişe süngerin üzerinde"><rect x="0" y="0" width="560" height="222" fill="#ffffff"/><rect x="20" y="160" width="520" height="30" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/><text x="530" y="182" font-size="11" text-anchor="end" fill="#854d0e">Sünger</text><rect x="65" y="160" width="50" height="4" fill="#fde047" stroke="none" stroke-width="0"/><rect x="65" y="144" width="50" height="20" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="80,44 80,56 65,69 65,164 115,164 115,69 100,56 100,44" fill="none" stroke="#1e3a8a" stroke-width="2"/><rect x="78" y="34" width="24" height="10" fill="#ef4444" stroke="#991b1b" stroke-width="1.2"/><text x="90" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1. şişe</text><rect x="235" y="160" width="50" height="9" fill="#fde047" stroke="none" stroke-width="0"/><rect x="235" y="114" width="50" height="55" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="250,49 250,61 235,74 235,169 285,169 285,74 270,61 270,49" fill="none" stroke="#1e3a8a" stroke-width="2"/><rect x="248" y="39" width="24" height="10" fill="#ef4444" stroke="#991b1b" stroke-width="1.2"/><text x="260" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2. şişe</text><rect x="405" y="160" width="50" height="15" fill="#fde047" stroke="none" stroke-width="0"/><rect x="405" y="80" width="50" height="95" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="420,55 420,67 405,80 405,175 455,175 455,80 440,67 440,55" fill="none" stroke="#1e3a8a" stroke-width="2"/><rect x="418" y="45" width="24" height="10" fill="#ef4444" stroke="#991b1b" stroke-width="1.2"/><text x="430" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">3. şişe</text></svg></div><p><b>Bu deneyde bağımsız (değiştirilen), bağımlı (ölçülen) ve kontrol edilen (sabit tutulan) değişkenler aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?</b></p>`,
+  c: ["Şişedeki su miktarı (ağırlık) – Süngerdeki çökme miktarı – Şişenin süngere değen yüzey alanı", "Süngerdeki çökme miktarı – Şişedeki su miktarı (ağırlık) – Süngerin cinsi", "Şişenin süngere değen yüzey alanı – Süngerdeki çökme miktarı – Şişedeki su miktarı (ağırlık)", "Şişedeki su miktarı (ağırlık) – Şişenin süngere değen yüzey alanı – Süngerdeki çökme miktarı"],
   a: "A",
-  s: `<p>Kapalı ve sabit hacimli bir kaptaki gazın sıcaklığı arttığında tanecik sayısı veya tanecik boyutu değişmez; ancak <b>taneciklerin hareket hızı (kinetik enerjisi) artar</b> ve kabın iç yüzeyine daha sık/şiddetli çarparak <b>gaz basıncını artırır</b>[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Uçakla seyahat eden Elif, uçak havalanmadan önce içindeki suyun yarısını içtiği plastik su şişesinin kapağını sıkıca kapatmıştır. Uçak yüksek irtifaya çıktığında şişenin dışa doğru <b>şiştiğini</b>, uçak tekrar havalimanına indiğinde ise şişenin içe doğru büzülerek eski hâline döndüğünü gözlemlemiştir (Uçak yükseldikçe kabin içindeki hava basıncı bir miktar azalmaktadır)[cite: 11].</p>
-<p>Elif’in gözlemlediği bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 11]?</p>`,
-  c: [
-    `Uçak yükseldiğinde kabin içindeki hava basıncı azaldığı için, şişenin içindeki havanın basıncı dış basınçtan büyük kalmış ve şişeyi dışa doğru şişirmiştir.`,
-    `Yüksek irtifada şişenin içindeki su miktarı arttığı için şişe genleşmiştir.`,
-    `Yükseklerde şişenin içindeki hava taneciklerinin sayısı arttığı için iç basınç artmıştır.`,
-    `Uçak inişe geçtiğinde kabin basıncı azaldığı için şişe eski hâline dönmüştür.`
-  ],
+  s: `<p>Öğrencinin bilerek değiştirdiği şey şişelerdeki su miktarı, yani şişelerin ağırlığıdır: <b>bağımsız değişken</b>. Değişikliğin sonucu olarak ölçtüğü şey süngerdeki çökme miktarıdır: <b>bağımlı değişken</b>. Şişeler özdeş ve hepsi tabanı üzerinde durduğu için süngere değen yüzey alanı (ve süngerin cinsi) aynı tutulmuştur: <b>kontrol edilen değişken</b>.</p><p>B’de bağımsız ve bağımlı değişkenler yer değiştirmiştir. C’de değiştirilen değişken yüzey alanı sanılmıştır; oysa alan sabittir. D’de ölçülen çökme miktarı sabit tutulan değişken gibi yazılmıştır. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, tuzlu su dolu bir akvaryumda basınçölçerin algılayıcı yüzeyini farklı derinliklerde farklı yönlere çevirerek ölçümler yapıyor ve sonuçları tabloya yazıyor.</p><table><tr><th>Ölçüm</th><th>Derinlik</th><th>Algılayıcı yüzeyin baktığı yön</th><th>Ölçülen değer</th></tr><tr><td>1</td><td>10 cm</td><td>Yukarı</td><td>4 birim</td></tr><tr><td>2</td><td>10 cm</td><td>Yana</td><td>4 birim</td></tr><tr><td>3</td><td>10 cm</td><td>Aşağı</td><td>4 birim</td></tr><tr><td>4</td><td>20 cm</td><td>Yana</td><td>8 birim</td></tr></table><p><b>Bu ölçümlere dayanarak aşağıdaki sonuçlardan hangisine ulaşılamaz?</b></p>`,
+  c: ["Sıvının içindeki bir noktada sıvı basıncı her yönde eşit büyüklüktedir.", "Sıvı basıncı, sıvının yoğunluğuna bağlıdır.", "Aynı sıvıda derinlik arttıkça sıvı basıncı artar.", "Aynı sıvıda derinlik 2 katına çıktığında sıvı basıncı da 2 katına çıkar."],
+  a: "B",
+  s: `<p>A: 1, 2 ve 3. ölçümler aynı derinlikte, farklı yönlerde eşit değer verir; ulaşılabilir. C ve D: 2. ve 4. ölçümlerde yön aynı, derinlik 10 cm’den 20 cm’ye (2 katı) çıkınca değer 4’ten 8’e (2 katı) çıkmıştır; ulaşılabilir.</p><p>B: Bütün ölçümler aynı sıvıda (tuzlu su) yapılmıştır. Sıvının cinsi hiç değiştirilmediği için yoğunluğun etkisi hakkında bir sonuca ulaşılamaz. Bu bilgi doğru olsa da bu deneyden çıkmaz ✓. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Ali ve kardeşi Can, özellikleri her yerinde aynı olan ıslak bir kumsalda ayakta duruyor. İkisinin ağırlıkları, giydikleri ayakkabılar ve kumda oluşan ayak izlerinin derinlikleri tabloda verilmiştir.</p><table><tr><th>Kişi</th><th>Ağırlık</th><th>Giydiği ayakkabı</th><th>İz derinliği</th></tr><tr><td>Ali</td><td>600 N</td><td>Geniş tabanlı sandalet</td><td>2 cm</td></tr><tr><td>Can</td><td>400 N</td><td>Spor ayakkabı</td><td>2 cm</td></tr></table><p><b>Buna göre,</b></p><p>I. Ali’nin ayakkabılarının kuma değen toplam yüzey alanı, Can’ınkinden büyüktür.<br>II. Ali’nin ve Can’ın kuma uyguladığı basınçlar eşittir.<br>III. Ali’nin ve Can’ın kuma uyguladığı kuvvetler eşittir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Aynı kumda iz derinlikleri eşit olduğuna göre ikisinin kuma uyguladığı <b>basınçlar eşittir</b> (II ✓).</p><p>Kuma uygulanan dik kuvvet kişinin ağırlığıdır: Ali 600 N, Can 400 N. Kuvvetler eşit değildir (III ✗). Bu, kuvvet ile basıncı karıştıran yanılgıdır.</p><p>Ali daha ağır olduğu hâlde aynı basıncı oluşturuyorsa ağırlığı daha büyük bir alana dağılmıştır; Ali’nin ayakkabılarının kuma değen alanı daha büyüktür (I ✓).</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Kenarları dik (düzgün prizma biçimli) K, L ve M kaplarının taban alanları sırasıyla 2S, S ve 4S’dir. Üç kaba eşit miktarda su konuluyor ve kapların tabanına basınçölçerler takılıyor. K kabındaki basınçölçer 4 Pa değerini gösteriyor.</p><div class="fig"><svg viewBox="0 0 560 222" width="560" role="img" aria-label="Taban alanları 2S, S ve 4S olan K, L, M kaplarında eşit miktarda su ve tabana yakın basınçölçerler"><rect x="0" y="0" width="560" height="222" fill="#ffffff"/><rect x="40" y="130" width="120" height="60" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="40" y1="130" x2="160" y2="130" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="40,50 40,190 160,190 160,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="173" cy="180" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="173" y1="180" x2="178" y2="174" stroke="#dc2626" stroke-width="1.8"/><text x="100.0" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">K (taban alanı 2S)</text><rect x="230" y="70" width="60" height="120" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="230" y1="70" x2="290" y2="70" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="230,50 230,190 290,190 290,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="303" cy="180" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="303" y1="180" x2="308" y2="174" stroke="#dc2626" stroke-width="1.8"/><text x="260.0" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">L (taban alanı S)</text><rect x="335" y="160" width="180" height="30" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="335" y1="160" x2="515" y2="160" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="335,50 335,190 515,190 515,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="528" cy="180" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="528" y1="180" x2="533" y2="174" stroke="#dc2626" stroke-width="1.8"/><text x="425.0" y="212" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">M (taban alanı 4S)</text></svg></div><p><b>Buna göre L ve M kaplarındaki basınçölçerlerin gösterdiği değerler aşağıdakilerden hangisidir?</b> (L – M)</p>`,
+  c: ["4 Pa – 4 Pa", "2 Pa – 8 Pa", "8 Pa – 8 Pa", "8 Pa – 2 Pa"],
+  a: "D",
+  s: `<p>Sıvı basıncı miktara değil, <b>derinliğe</b> bağlıdır. Su miktarı aynıyken taban alanı küçülürse su yüksekliği artar.</p><p>K’de taban 2S, su yüksekliği h olsun. L’nin tabanı yarı kadar (S) olduğu için aynı su 2h yüksekliğe çıkar; M’nin tabanı 2 katı (4S) olduğu için su {{h|2}} yüksekliğinde kalır.</p><p>Basınçlar derinlikle orantılı: L: 2 × 4 = 8 Pa; M: {{1|2}} × 4 = 2 Pa ✓.</p><p>A: Su miktarı aynı diye basıncı aynı sanmak. B: Tabanı geniş kapta basıncın büyük olacağını düşünmek. C: L’yi doğru bulup M’de miktar ile basıncı karıştırmak. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Yumuşak toprakta çalışacak araçlar tasarlayan bir mühendis, dört aracın özelliklerini aşağıdaki tabloya yazıyor. Araçlardaki tekerleklerin hepsi özdeştir ve her tekerleğin toprağa değen yüzey alanı eşittir.</p><table><tr><th>Araç</th><th>Ağırlığı</th><th>Tekerlek sayısı</th></tr><tr><td>K</td><td>2G</td><td>4</td></tr><tr><td>L</td><td>2G</td><td>8</td></tr><tr><td>M</td><td>G</td><td>4</td></tr><tr><td>N</td><td>G</td><td>2</td></tr></table><p><b>Buna göre toprağa en küçük basıncı uygulayan araç ya da araçlar hangileridir?</b></p>`,
+  c: ["Yalnız L", "L ve M", "M ve N", "K ve L"],
+  a: "B",
+  s: `<p>Ağırlık, tekerleklerin toprağa değen toplam alanına dağılır. Bir tekerleğin alanına 1 pay dersek toplam alan tekerlek sayısı kadardır. Basıncı "ağırlık ÷ tekerlek sayısı" oranıyla karşılaştıralım:</p><p>K: 2G ÷ 4 = {{G|2}}; L: 2G ÷ 8 = {{G|4}}; M: G ÷ 4 = {{G|4}}; N: G ÷ 2 = {{G|2}}.</p><p>En küçük basınç L ve M’de, birbirine eşittir ✓. "Yalnız L" yalnızca tekerlek sayısına bakar; M’nin de daha hafif olduğu için aynı basıncı uyguladığını atlar. "M ve N" yalnızca ağırlığa bakar. "K ve L" ise ağır araçların daha çok tekerlekle dengelendiğini hesaba katmaz. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir noktadaki sıvı basıncının 3 dakika boyunca zamana göre değişimi aşağıdaki grafikte verilmiştir.</p><div class="fig"><svg viewBox="0 0 400 232" width="400" role="img" aria-label="Basınç-zaman grafiği: 0-1 dk 4 Pa, 1-2 dk 4'ten 2'ye azalıyor, 2-3 dk 2 Pa"><rect x="0" y="0" width="400" height="232" fill="#ffffff"/><defs><marker id="s4a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="70" y1="190" x2="370" y2="190" stroke="#1e293b" stroke-width="2" marker-end="url(#s4a)"/><line x1="70" y1="190" x2="70" y2="25" stroke="#1e293b" stroke-width="2" marker-end="url(#s4a)"/><text x="370" y="224" font-size="12" text-anchor="end" fill="#1e293b">Zaman (dakika)</text><text x="74" y="19" font-size="12" text-anchor="start" fill="#1e293b">Basınç (Pa)</text><line x1="70" y1="155" x2="340" y2="155" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="160" font-size="12" text-anchor="end" fill="#1e293b">1</text><line x1="70" y1="120" x2="340" y2="120" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="125" font-size="12" text-anchor="end" fill="#1e293b">2</text><line x1="70" y1="85" x2="340" y2="85" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="90" font-size="12" text-anchor="end" fill="#1e293b">3</text><line x1="70" y1="50" x2="340" y2="50" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="60" y="55" font-size="12" text-anchor="end" fill="#1e293b">4</text><line x1="155" y1="190" x2="155" y2="40" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="155" y="208" font-size="12" text-anchor="middle" fill="#1e293b">1</text><line x1="240" y1="190" x2="240" y2="40" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="240" y="208" font-size="12" text-anchor="middle" fill="#1e293b">2</text><line x1="325" y1="190" x2="325" y2="40" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="325" y="208" font-size="12" text-anchor="middle" fill="#1e293b">3</text><text x="60" y="208" font-size="12" text-anchor="end" fill="#1e293b">0</text><polyline points="70,50 155,50 240,120 325,120" fill="none" stroke="#2563eb" stroke-width="3"/></svg></div><p><b>Buna göre bu grafik,</b></p><p>I. Havuzun tabanında 1 dakika bekleyen bir dalgıcın, sonra 1 dakikada havuzun yarı derinliğine yükselip orada 1 dakika daha beklemesi sırasında üzerine etki eden sıvı basıncı<br>II. Su dolu silindir biçimli bir kabın tabanındaki musluğun 1. dakikanın sonunda açılması ve su yüksekliği yarıya indiğinde (2. dakikada) kapatılması sırasında kabın tabanındaki sıvı basıncı<br>III. Dar ve uzun bir kaptaki suyun tamamının 1. dakikadan itibaren boş ve geniş bir kaba boşaltılması sırasında dar kabın tabanındaki sıvı basıncı</p><p><b>durumlarından hangilerine ait olabilir?</b></p>`,
+  c: ["I ve II", "Yalnız I", "Yalnız III", "II ve III"],
   a: "A",
-  s: `<p>Şişenin ağzı yerde (yüksek açık hava basıncında) kapatılmıştır[cite: 11]. Uçak yükseldiğinde kabin içindeki dış basınç düşünce, <b>şişenin içindeki hava basıncı dış basınçtan büyük kalmış</b> ve iç–dış basınç dengelenene kadar şişe dışa doğru şişmiştir[cite: 11]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Düşey kesiti verilen eşit bölmeli kabın ortasında, yüksekliği <b>h</b> kadar olan su geçirmez bir engel bulunmaktadır. Boş olan kap, K bölmesinin üzerindeki sabit debili musluk açılarak <b>6t</b> sürede tamamen dolduruluyor.</p>
-<div class="fig"><svg viewBox="0 0 480 155" width="460" role="img" aria-label="Bölmeli kapta K ve L noktalarının sıvı basıncı zaman değişimi">
-<rect x="35" y="12" width="18" height="10" fill="#475569"/>
-<path d="M44,22 L44,32" stroke="#2563eb" stroke-width="3" stroke-dasharray="3 2"/>
-<rect x="20" y="35" width="120" height="90" fill="none" stroke="#1e293b" stroke-width="2.5"/>
-<line x1="80" y1="80" x2="80" y2="125" stroke="#1e293b" stroke-width="3.5"/>
-<g stroke="#94a3b8" stroke-dasharray="3 3">
-<line x1="20" y1="80" x2="140" y2="80"/>
-<line x1="60" y1="35" x2="60" y2="125"/>
-<line x1="100" y1="35" x2="100" y2="125"/>
-</g>
-<g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="50" y="138" fill="#dc2626">K Noktası</text>
-<text x="110" y="138" fill="#1e40af">L Noktası</text>
-<text x="8" y="105" font-size="9.5">h</text>
-<text x="8" y="60" font-size="9.5">h</text>
-</g>
-<rect x="175" y="15" width="290" height="125" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<g font-size="9.5" fill="#1e293b">
-<text x="188" y="36"><tspan font-weight="bold" fill="#dc2626">• 0 – t arası:</tspan> K bölmesinin altındaki 1 bölme dolar.</text>
-<text x="188" y="58"><tspan font-weight="bold" fill="#1e40af">• t – 3t arası:</tspan> Su engeli aşar ve L’nin altındaki</text>
-<text x="188" y="72">  2 bölme dolarken K’deki su yüksekliği sabit kalır!</text>
-<text x="188" y="94"><tspan font-weight="bold" fill="#16a34a">• 3t – 6t arası:</tspan> Üstteki 3 bölme birlikte dolar ve</text>
-<text x="188" y="108">  hem K hem L’de basınç 2P’ye çıkar.</text>
-</g>
-</svg></div>
-<p>Her bir bölme <b>t</b> sürede dolduğuna göre, kabın tabanındaki <b>K noktasına</b> etki eden sıvı basıncının zamana bağlı değişimi aşağıdakilerden hangisinde doğru açıklanmıştır?</p>`,
-  c: [
-    `0–t aralığında P’ye kadar artar; t–3t aralığında su yan bölmeye (L’ye) aktığı için P’de sabit kalır; 3t–6t aralığında ise 2P’ye kadar tekrar artar.`,
-    `0–6t aralığı boyunca hiç durmadan sabit hızla 2P’ye kadar artar.`,
-    `0–2t aralığında sıfır kalır; 2t–6t aralığında 2P’ye çıkar.`,
-    `0–3t aralığında artar; 3t–6t aralığında sabit kalır.`
-  ],
+  s: `<p>Grafikte basınç 1 dakika sabit (4 Pa), sonra 1 dakikada yarıya (2 Pa) iniyor ve sonra sabit kalıyor. Aynı sıvıda basınç yarıya inmişse <b>derinlik yarıya inmiştir</b>.</p><p>I: Dalgıç tabanda beklerken basınç sabit; yarı derinliğe çıkarken derinlik yarıya iner, basınç 4 Pa’dan 2 Pa’ya düşer; orada beklerken sabit kalır ✓.</p><p>II: Musluk açılana kadar basınç sabit; su yüksekliği yarıya inince tabandaki basınç da yarıya iner; musluk kapanınca sabit kalır ✓.</p><p>III: Dar kaptaki suyun <b>tamamı</b> boşaltıldığı için dar kabın tabanındaki basınç sıfıra kadar düşer, 2 Pa’da sabit kalmaz ✗. Ayrıca geniş kaba bakıp "su oraya gitti" diye düşünmek soruyla ilgisizdir; ölçüm dar kabın tabanındadır.</p><p>Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>"Katıların zemine uyguladığı basınç, cismin ağırlığına bağlıdır." hipotezini test etmek isteyen Ece, özdeş tahta bloklarla şekildeki 1. düzeneği kuruyor ve süngerdeki çökme miktarını ölçüyor.</p><div class="fig"><svg viewBox="0 0 560 215" width="560" role="img" aria-label="Sünger üzerinde üst üste konmuş iki özdeş tahta blok"><rect x="0" y="0" width="560" height="215" fill="#ffffff"/><rect x="150" y="150" width="260" height="26" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/><text x="400" y="168" font-size="11" text-anchor="end" fill="#854d0e">Sünger</text><polygon points="240,136 260.4,122.4 330.4,122.4 310,136" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="310,136 330.4,122.4 330.4,144.4 310,158" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="240" y="136" width="70" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="240,114 260.4,100.4 330.4,100.4 310,114" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="310,114 330.4,100.4 330.4,122.4 310,136" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="240" y="114" width="70" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><text x="280" y="205" font-size="12" text-anchor="middle" fill="#475569">1. düzenek: iki özdeş blok üst üste</text></svg></div><p><b>Ece, ilk düzenekteki süngerle özdeş bir süngerle hazırlayacağı 2. düzenekte blokları nasıl yerleştirirse hipotezini test edebilir?</b></p>`,
+  c: ["Üç bloğu süngerin üzerine yan yana koymalıdır.", "İki bloğu süngerin üzerine yan yana koymalıdır.", "Dört bloğu süngerin üzerine üst üste koymalıdır.", "Tek bloğu, daha yumuşak bir süngerin üzerine koymalıdır."],
+  a: "C",
+  s: `<p>Ağırlığın etkisini görmek için yalnızca <b>ağırlık</b> değişmeli; süngere değen yüzey alanı ve süngerin cinsi aynı kalmalıdır. 1. düzenekte ağırlık 2G, alan bir bloğun taban alanı (S) kadardır.</p><p>C: Dört blok üst üste → ağırlık 4G, alan yine S ✓.</p><p>A: 3G ve 3S; hem ağırlık hem alan değişir. B: Ağırlık 2G’de kalır, alan 2S olur; bu düzenek alanın etkisini inceler. D: Ağırlık ile birlikte zeminin cinsi de değişir; iki değişken birden değiştiği için sonuç yorumlanamaz. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, iki ucu açık bir cam borunun alt ucunu esnek bir zarla kapatıyor ve boruya boyalı su koyuyor. Zar, borudaki suyun etkisiyle aşağı doğru şişiyor. Öğrenci boruyu su dolu bir kaba yavaş yavaş batırıyor ve boru belirli bir derinliğe geldiğinde zarın tamamen düzleştiğini görüyor. Boyalı suyun yoğunluğu kaptaki suyunkiyle aynı kabul ediliyor.</p><div class="fig"><svg viewBox="0 0 560 238" width="560" role="img" aria-label="Alt ucu esnek zarla kapatılmış, içinde boyalı su olan cam boru su dolu kaba batırılmış; zar düz"><rect x="0" y="0" width="560" height="238" fill="#ffffff"/><rect x="150" y="50" width="260" height="160" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="150" y1="50" x2="410" y2="50" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="150,20 150,210 410,210 410,20" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><rect x="255" y="50" width="50" height="125" fill="#a5b4fc" stroke="none" stroke-width="0"/><line x1="255" y1="20" x2="255" y2="175" stroke="#475569" stroke-width="2.5"/><line x1="305" y1="20" x2="305" y2="175" stroke="#475569" stroke-width="2.5"/><line x1="253" y1="175" x2="307" y2="175" stroke="#7f1d1d" stroke-width="3"/><line x1="60" y1="50" x2="500" y2="50" stroke="#64748b" stroke-width="1" stroke-dasharray="6 4"/><text x="415" y="44" font-size="11" text-anchor="start" fill="#475569">su yüzeyleri</text><defs><marker id="s5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="418" y1="150" x2="310" y2="172" stroke="#1e293b" stroke-width="2" marker-end="url(#s5)"/><text x="422" y="150" font-size="12" text-anchor="start" fill="#1e293b">Esnek zar (düz)</text><text x="230" y="135" font-size="11" text-anchor="end" fill="#3730a3">Boyalı su</text><text x="280" y="228" font-size="12" text-anchor="middle" fill="#475569">Cam boru belirli bir derinlikte tutuluyor</text></svg></div><p><b>Buna göre,</b></p><p>I. Zar düzleştiğinde zarın iki yüzüne etki eden sıvı basınçları eşittir.<br>II. Zar düzleştiğinde zarın borudaki su yüzeyine olan derinliği, kaptaki su yüzeyine olan derinliğine eşittir.<br>III. Boru bu konumdan biraz daha aşağı indirilirse zar yeniden aşağı doğru şişer.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Zar, hangi yüzüne daha büyük basınç etki ediyorsa öbür tarafa doğru şişer. Zarın düz durması, iki yüzüne etki eden basınçların eşit olduğunu gösterir (I ✓).</p><p>İki taraftaki sıvıların yoğunlukları aynı olduğuna göre basınçların eşit olması için zarın iki sıvıdaki derinlikleri de eşit olmalıdır; yani borudaki ve kaptaki su yüzeyleri aynı hizadadır (II ✓).</p><p>III: Boru daha aşağı indirilirse zarın kaptaki derinliği artar, borudaki suyun derinliği değişmez. Dıştaki basınç büyüyeceği için zar <b>yukarı (boruya doğru)</b> şişer; aşağı doğru şişmez ✗.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>İçi özdeş kitaplarla tamamen dolu, kapağı bantlı bir koli, yatay zemine Şekil I’deki gibi geniş yüzü üzerine konuyor. Daha sonra koliden kitapların yarısı çıkarılıyor ve koli, zemine değen yüzey alanı geniş yüzün {{1|4}}’ü kadar olan dar yüzü üzerine Şekil II’deki gibi konuyor. Kolinin kendi ağırlığı önemsizdir.</p><div class="fig"><svg viewBox="0 0 560 212" width="560" role="img" aria-label="Kitap dolu koli geniş yüzü üzerinde; yarısı boşaltılmış koli dar yüzü üzerinde"><rect x="0" y="0" width="560" height="212" fill="#ffffff"/><rect x="10" y="160" width="540" height="14" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><polygon points="50,110 86.0,86.0 236.0,86.0 200,110" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="200,110 236.0,86.0 236.0,136.0 200,160" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="50" y="110" width="150" height="50" fill="#e8c48a" stroke="#7c5a2a" stroke-width="1.5"/><text x="125" y="140" font-size="12" text-anchor="middle" fill="#1e293b">Kitap dolu</text><text x="125" y="200" font-size="13" text-anchor="#1e3a8a" fill="True">Şekil I</text><polygon points="360,40 396.0,16.0 446.0,16.0 410,40" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="410,40 446.0,16.0 446.0,136.0 410,160" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="360" y="40" width="50" height="120" fill="#e8c48a" stroke="#7c5a2a" stroke-width="1.5"/><text x="385" y="95" font-size="12" text-anchor="middle" fill="#1e293b">Yarısı</text><text x="385" y="112" font-size="12" text-anchor="middle" fill="#1e293b">boş</text><text x="395" y="200" font-size="13" text-anchor="#1e3a8a" fill="True">Şekil II</text></svg></div><p><b>Şekil I’den Şekil II’ye geçildiğinde kolinin zemine uyguladığı kuvvet ve basınç nasıl değişir?</b> (Kuvvet – Basınç)</p>`,
+  c: ["Değişmez – Artar", "Azalır – Azalır", "Azalır – Değişmez", "Azalır – Artar"],
+  a: "D",
+  s: `<p>Zemine uygulanan kuvvet kolinin ağırlığıdır. Kitapların yarısı çıkarıldığı için ağırlık yarıya iner: <b>kuvvet azalır</b>.</p><p>Basıncı oranla düşünelim: Şekil I’de ağırlık G, alan S ise basınç {{G|S}} kadardır. Şekil II’de ağırlık {{G|2}}, alan {{S|4}} olur. Ağırlık 2’ye bölünürken alan 4’e bölündüğü için basınç {{1|2}} × 4 = 2 katına çıkar: <b>basınç artar</b>.</p><p>A: Kitap çıkarıldığını, yani kuvvetin azaldığını unutmak. B: Yalnızca ağırlığa bakmak. C: Ağırlık ve alanın aynı oranda azaldığını sanmak (alan yarıya değil, {{1|4}}’e inmiştir). Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir köyde evlere su, tepedeki ağzı açık bir depodan borularla gelmektedir. Depoya bağlı K, L ve M evleri şekilde gösterildiği gibi farklı yüksekliklerde bulunmaktadır. Evlerdeki musluklar, evlerin zemin hizasındadır ve kapalıdır.</p><div class="fig"><svg viewBox="0 0 560 228" width="560" role="img" aria-label="Tepedeki su deposuna borularla bağlı farklı yükseklikteki K, L, M evleri"><rect x="0" y="0" width="560" height="228" fill="#ffffff"/><polygon points="10,220 10,120 120,70 230,150 380,190 550,205 550,220" fill="#d9f99d" stroke="#65a30d" stroke-width="1.5"/><rect x="40" y="20" width="70" height="60" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/><line x1="40" y1="30" x2="110" y2="30" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><rect x="45" y="80" width="8" height="30" fill="#94a3b8" stroke="#475569" stroke-width="1"/><rect x="97" y="80" width="8" height="30" fill="#94a3b8" stroke="#475569" stroke-width="1"/><text x="75" y="15" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Su deposu</text><polyline points="75,80 75,95 130,95 130,130 260,130 260,165 452,165 452,188" fill="none" stroke="#64748b" stroke-width="4"/><rect x="148" y="78" width="44" height="40" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/><polygon points="144,78 170,58 196,78" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/><text x="170" y="108" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><rect x="278" y="122" width="44" height="40" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/><polygon points="274,122 300,102 326,122" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/><text x="300" y="152" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><rect x="448" y="160" width="44" height="40" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/><polygon points="444,160 470,140 496,160" fill="#f87171" stroke="#991b1b" stroke-width="1.5"/><text x="470" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><line x1="110" y1="30" x2="545" y2="30" stroke="#2563eb" stroke-width="1" stroke-dasharray="6 4"/><text x="545" y="25" font-size="11" text-anchor="end" fill="#2563eb">depodaki su seviyesi</text></svg></div><p><b>Buna göre,</b></p><p>I. Musluklar kapalıyken musluklardaki su basıncı en büyük olan ev M’dir.<br>II. Depodaki su seviyesi azalırsa üç musluktaki su basıncı da azalır.<br>III. Depo, su yüksekliği aynı kalacak biçimde taban alanı daha büyük bir depoyla değiştirilirse musluklardaki su basıncı artar.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Musluklardaki su basıncı, musluğun depodaki su yüzeyinden ne kadar aşağıda olduğuna, yani derinliğe bağlıdır.</p><p>I: M en alçakta olduğu için depodaki su yüzeyine dik uzaklığı en büyüktür; basınç en büyüktür ✓.</p><p>II: Su seviyesi azalınca her musluğun su yüzeyine olan dik uzaklığı azalır; üçünde de basınç azalır ✓.</p><p>III: Sıvı basıncı kabın genişliğine bağlı değildir; su yüksekliği aynı kaldıkça basınç değişmez ✗. Daha çok su olunca basıncın artacağını düşünmek klasik yanılgıdır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, özdeş kâğıt ruloları masaya dik olarak diziyor, üzerlerine ağırlığı önemsiz geniş bir karton koyup kartonun üzerine özdeş kitaplar yerleştiriyor. Rulolardan herhangi biri ezilip büküldüğünde sonucu "çöktü" olarak kaydediyor. Dört denemenin sonuçları tablodaki gibidir.</p><table><tr><th>Deneme</th><th>Rulo sayısı</th><th>Kitap sayısı</th><th>Sonuç</th></tr><tr><td>1</td><td>8</td><td>4</td><td>Çökmedi</td></tr><tr><td>2</td><td>4</td><td>4</td><td>Çöktü</td></tr><tr><td>3</td><td>4</td><td>2</td><td>Çökmedi</td></tr><tr><td>4</td><td>8</td><td>2</td><td>Çökmedi</td></tr></table><p><b>"Ağırlık aynı kalmak koşuluyla yük daha az sayıda ruloya dağıldığında rulolara uygulanan basınç artar." sonucuna hangi iki denemenin sonuçları karşılaştırılarak ulaşılabilir?</b></p>`,
+  c: ["1 ve 2", "3 ve 4", "2 ve 3", "2 ve 4"],
   a: "A",
-  s: `<p>Bölmeli kap sorularında suyun dolma sırasını takip edelim:</p>
-<ul>
-<li><b>0 – t aralığı:</b> K’nin üzerindeki 1 bölme dolar → K’deki sıvı yüksekliği h, basıncı <b>P</b> olur.</li>
-<li><b>t – 3t aralığı (2t süre):</b> Su engelden L tarafına taşar. L’nin altındaki 2 bölme dolana kadar (t’den 3t’ye kadar) K’nin üzerindeki su seviyesi <b>hiç yükselmez (h’de sabit kalır)</b> → K’deki sıvı basıncı <b>P’de sabit kalır!</b></li>
-<li><b>3t – 6t aralığı (3t süre):</b> Alt kısımlar tamamen dolduktan sonra üstteki 3 bölme birlikte yükselir ve K’deki sıvı yüksekliği 2h’ye, basıncı <b>2P’ye</b> çıkar. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Açık hava basıncının (atmosfer basıncının) varlığını ve gücünü kanıtlamak isteyen iki öğrenci laboratuvarda aşağıdaki iki klasik deneyi gerçekleştiriyor:</p>
-<div class="fig"><svg viewBox="0 0 540 145" width="520" role="img" aria-label="Magdeburg küreleri ve haşlanmış yumurta deneyi">
-<rect x="10" y="10" width="252" height="125" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="136" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Deney: Magdeburg Küreleri</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="20" y="48">İki metal yarım küre birleştirilip</text>
-<text x="20" y="62"><tspan font-weight="bold" fill="#dc2626">içindeki hava vakumla boşaltılıyor</tspan>.</text>
-<text x="20" y="76">Küreler zıt yönlerde kuvvetle çekilmesine</text>
-<text x="20" y="90">rağmen birbirinden ayrılmıyor; hava</text>
-<text x="20" y="104">musluğu açılıp içeri hava girdiğinde ise</text>
-<text x="20" y="118">kolayca ayrılıyor.</text>
-</g>
-<rect x="278" y="10" width="252" height="125" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="404" y="28" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">2. Deney: Şişeye Giren Yumurta</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="288" y="48">Cam şişenin içinde bir parça kağıt</text>
-<text x="288" y="62">yakılıp hemen ağzına soyulmuş</text>
-<text x="288" y="76">haşlanmış yumurta konuluyor. Ateş</text>
-<text x="288" y="90">sönüp şişe soğuduğunda yumurtanın</text>
-<text x="288" y="104"><tspan font-weight="bold" fill="#b45309">kendiliğinden şişenin içine düştüğü</tspan></text>
-<text x="288" y="118">gözleniyor.</text>
-</g>
-</svg></div>
-<p>Bu iki deneyin gerçekleşme prensibiyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Her iki deneyde de kapalı ortamdaki iç gaz basıncı düşürülmüş; dışarıdaki açık hava basıncı (P<sub>0</sub>) iç basınçtan çok daha büyük kaldığı için küreleri birbirine bastırmış ve yumurtayı şişenin içine itmiştir.`,
-    `1. deneyde kürelerin ayrılmamasının nedeni metaller arasındaki mıknatıslanma kuvvetidir.`,
-    `2. deneyde şişenin içindeki gaz basıncı açık hava basıncından daha büyük olduğu için yumurtayı içeri çekmiştir.`,
-    `Her iki deney de yalnızca sıvıların basıncı her yöne iletmesi (Pascal prensibi) ile açıklanır.`
-  ],
+  s: `<p>Bu sonuç için iki denemede <b>kitap sayısı (ağırlık) aynı</b>, <b>rulo sayısı (toplam temas alanı) farklı</b> olmalı ve sonuçlar da farklı çıkmalıdır.</p><p>1 ve 2: İkisinde de 4 kitap var; 8 ruloda çökme yok, 4 ruloda çökme var. Yük daha az ruloya dağılınca basınç artmış ve rulolar çökmüştür ✓.</p><p>3 ve 4: Ağırlık aynı, rulo sayısı farklı ama iki denemede de çökme yok; basınçtaki fark gözlenemediği için bu sonuca ulaşılamaz. 2 ve 3: Rulo sayısı aynı, ağırlık farklı; bu karşılaştırma ağırlığın etkisini gösterir. 2 ve 4: Hem ağırlık hem rulo sayısı değişmiştir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Lastik zarlı bir huni, hortumla içinde renkli su bulunan bir U borusunun sol koluna bağlanıyor; U borusunun sağ kolu açıktır. Başlangıçta U borusunun iki kolundaki su seviyeleri eşittir. Huni, su dolu özdeş kaplarda önce h, sonra 2h derinliğine yerleştiriliyor.</p><div class="fig"><svg viewBox="0 0 560 240" width="560" role="img" aria-label="Su dolu iki özdeş kapta h ve 2h derinliğindeki lastik zarlı huniler"><rect x="0" y="0" width="560" height="240" fill="#ffffff"/><rect x="40" y="60" width="180" height="150" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="40" y1="60" x2="220" y2="60" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="40,40 40,210 220,210 220,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="96,110 124,110 113,96 107,96" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="95" y1="110" x2="125" y2="110" stroke="#7f1d1d" stroke-width="3"/><line x1="110" y1="96" x2="110" y2="40" stroke="#64748b" stroke-width="3"/><line x1="200" y1="60" x2="200" y2="110" stroke="#dc2626" stroke-width="1.5"/><text x="195" y="90.0" font-size="13" text-anchor="end" fill="#dc2626" font-weight="bold">h</text><polyline points="110,-10 110,0" fill="none" stroke="#64748b" stroke-width="3"/><rect x="300" y="60" width="180" height="150" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="300" y1="60" x2="480" y2="60" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="300,40 300,210 480,210 480,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="356,160 384,160 373,146 367,146" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="355" y1="160" x2="385" y2="160" stroke="#7f1d1d" stroke-width="3"/><line x1="370" y1="146" x2="370" y2="90" stroke="#64748b" stroke-width="3"/><line x1="460" y1="60" x2="460" y2="160" stroke="#dc2626" stroke-width="1.5"/><text x="455" y="115.0" font-size="13" text-anchor="end" fill="#dc2626" font-weight="bold">2h</text><polyline points="370,-10 370,0" fill="none" stroke="#64748b" stroke-width="3"/><text x="130" y="230" font-size="13" text-anchor="#1e3a8a" fill="True">1. ölçüm</text><text x="390" y="230" font-size="13" text-anchor="#1e3a8a" fill="True">2. ölçüm</text><text x="280" y="18" font-size="11" text-anchor="middle" fill="#475569">(Huniler hortumla birer U borusuna bağlıdır.)</text></svg></div><p><b>Buna göre 1. ve 2. ölçümlerde U borusunda oluşan su seviyeleri aşağıdakilerden hangisi gibi olabilir?</b> (Kesikli çizgi, başlangıçtaki seviyeyi göstermektedir.)</p>`,
+  c: ["<svg viewBox=\"0 0 230 172\" width=\"230\" role=\"img\" aria-label=\"U borusu seviyeleri A\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"172\" fill=\"#ffffff\"/><line x1=\"5\" y1=\"70\" x2=\"225\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><rect x=\"25\" y=\"52\" width=\"14\" height=\"78\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"61\" y=\"88\" width=\"14\" height=\"42\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"25\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"25,30 25,142 75,142 75,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"39,30 39,128 61,128 61,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><rect x=\"140\" y=\"36\" width=\"14\" height=\"94\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"176\" y=\"104\" width=\"14\" height=\"26\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"140\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"140,30 140,142 190,142 190,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"154,30 154,128 176,128 176,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"147\" y1=\"30\" x2=\"147\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"50\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">h</text><text x=\"165\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">2h</text></svg>", "<svg viewBox=\"0 0 230 172\" width=\"230\" role=\"img\" aria-label=\"U borusu seviyeleri B\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"172\" fill=\"#ffffff\"/><line x1=\"5\" y1=\"70\" x2=\"225\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><rect x=\"25\" y=\"90\" width=\"14\" height=\"40\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"61\" y=\"50\" width=\"14\" height=\"80\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"25\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"25,30 25,142 75,142 75,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"39,30 39,128 61,128 61,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><rect x=\"140\" y=\"110\" width=\"14\" height=\"20\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"176\" y=\"30\" width=\"14\" height=\"100\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"140\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"140,30 140,142 190,142 190,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"154,30 154,128 176,128 176,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"147\" y1=\"30\" x2=\"147\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"50\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">h</text><text x=\"165\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">2h</text></svg>", "<svg viewBox=\"0 0 230 172\" width=\"230\" role=\"img\" aria-label=\"U borusu seviyeleri C\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"172\" fill=\"#ffffff\"/><line x1=\"5\" y1=\"70\" x2=\"225\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><rect x=\"25\" y=\"90\" width=\"14\" height=\"40\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"61\" y=\"50\" width=\"14\" height=\"80\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"25\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"25,30 25,142 75,142 75,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"39,30 39,128 61,128 61,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><rect x=\"140\" y=\"90\" width=\"14\" height=\"40\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"176\" y=\"50\" width=\"14\" height=\"80\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"140\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"140,30 140,142 190,142 190,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"154,30 154,128 176,128 176,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"147\" y1=\"30\" x2=\"147\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"50\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">h</text><text x=\"165\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">2h</text></svg>", "<svg viewBox=\"0 0 230 172\" width=\"230\" role=\"img\" aria-label=\"U borusu seviyeleri D\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"172\" fill=\"#ffffff\"/><line x1=\"5\" y1=\"70\" x2=\"225\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><rect x=\"25\" y=\"110\" width=\"14\" height=\"20\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"61\" y=\"30\" width=\"14\" height=\"100\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"25\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"25,30 25,142 75,142 75,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"39,30 39,128 61,128 61,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"32\" y1=\"30\" x2=\"32\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><rect x=\"140\" y=\"90\" width=\"14\" height=\"40\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"176\" y=\"50\" width=\"14\" height=\"80\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><rect x=\"140\" y=\"128\" width=\"50\" height=\"14\" fill=\"#bfdbfe\" stroke=\"none\" stroke-width=\"0\"/><polyline points=\"140,30 140,142 190,142 190,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><polyline points=\"154,30 154,128 176,128 176,30\" fill=\"none\" stroke=\"#1e3a8a\" stroke-width=\"2\"/><line x1=\"147\" y1=\"30\" x2=\"147\" y2=\"12\" stroke=\"#64748b\" stroke-width=\"3\"/><text x=\"50\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">h</text><text x=\"165\" y=\"165\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">2h</text></svg>"],
+  a: "B",
+  s: `<p>Zara etki eden sıvı basıncı hortumdaki havayı iter. Huniye bağlı sol koldaki su <b>aşağı iner</b>, açık sağ koldaki su <b>yükselir</b>. Basınç ne kadar büyükse iki kol arasındaki seviye farkı o kadar büyük olur.</p><p>2h derinliğindeki basınç h derinliğindekinin 2 katıdır; bu yüzden 2. ölçümde seviye farkı daha büyük olmalıdır. B’de iki ölçümde de sol kol inmiş, sağ kol yükselmiş ve 2. ölçümdeki fark daha büyüktür ✓.</p><p>A: Sol kolun yükseldiği gösterilmiştir; zar havayı U borusuna doğru iter, yön tersdir. C: Derinlik değiştiği hâlde farklar eşit; derinliğin etkisi yok sayılmıştır. D: Sığ ölçümdeki fark daha büyük gösterilmiştir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Elif, ucu sivriltilmiş bir kurşun kalemi şekildeki gibi iki parmağı arasında yatay olarak tutup iki ucundan sıkıştırıyor. Kalem hareketsiz kalırken sivri uca değen 2. parmağının, düz uca değen 1. parmağından çok daha fazla acıdığını fark ediyor.</p><div class="fig"><svg viewBox="0 0 560 180" width="560" role="img" aria-label="Bir kurşun kalem iki parmak arasında sıkıştırılıyor; bir uç düz, diğer uç sivri"><rect x="0" y="0" width="560" height="180" fill="#ffffff"/><defs><marker id="k11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><polygon points="150,95 390,95 390,125 150,125" fill="#facc15" stroke="#a16207" stroke-width="2"/><polygon points="390,95 440,110 390,125" fill="#fde7c2" stroke="#a16207" stroke-width="2"/><polygon points="430,107 446,110 430,113" fill="#334155" stroke="#334155" stroke-width="1"/><rect x="120" y="95" width="30" height="30" fill="#f9a8d4" stroke="#9d174d" stroke-width="2"/><ellipse cx="95" cy="110" rx="22" ry="30" fill="#fcd5b5" stroke="#b45309" stroke-width="2"/><ellipse cx="470" cy="110" rx="22" ry="30" fill="#fcd5b5" stroke="#b45309" stroke-width="2"/><line x1="40" y1="110" x2="70" y2="110" stroke="#dc2626" stroke-width="2.5" marker-end="url(#k11)"/><line x1="525" y1="110" x2="495" y2="110" stroke="#dc2626" stroke-width="2.5" marker-end="url(#k11)"/><text x="55" y="100" font-size="13" text-anchor="middle" fill="#dc2626" font-weight="bold">F</text><text x="510" y="100" font-size="13" text-anchor="middle" fill="#dc2626" font-weight="bold">F</text><text x="95" y="165" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1. parmak</text><text x="470" y="165" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2. parmak</text><text x="135" y="80" font-size="11" text-anchor="middle" fill="#1e293b">Silgili (düz) uç</text><text x="420" y="80" font-size="11" text-anchor="middle" fill="#1e293b">Sivri uç</text></svg></div><p><b>Buna göre,</b></p><p>I. Kalemin iki parmağa uyguladığı kuvvetler eşit büyüklüktedir.<br>II. Kalemin 2. parmağa uyguladığı basınç, 1. parmağa uyguladığı basınçtan büyüktür.<br>III. Kalem, 1. parmağın uyguladığı basıncı 2. parmağa aynen iletir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve III", "II ve III", "I ve II"],
+  a: "D",
+  s: `<p>Katılar kendilerine uygulanan <b>kuvveti</b> aynen iletir. Kalem hareketsiz olduğuna göre iki parmağın uyguladığı kuvvetler eşit ve zıt yönlüdür; kalem de iki parmağa eşit büyüklükte kuvvet uygular (I ✓).</p><p>Aynı kuvvet sivri uçta çok küçük bir alana etki ettiği için 2. parmaktaki basınç büyüktür; acının fazla olması bunu gösterir (II ✓).</p><p>III: Katılar basıncı aynen iletmez; kuvvet aynen iletilir ama etki ettiği alan değiştiği için basınç değişir. Basıncı aynen ileten sıvılardır ✗.</p><p>III’ü içeren şıklar katı ile sıvının iletme özelliğini karıştırır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>İçinde su bulunan bir kabın yan yüzeyine, tabana yakın bir noktaya basınçölçer takılıyor. Kaba bir taş yavaşça bırakılınca taş kabın tabanına oturuyor, su taşmıyor ve basınçölçerin gösterdiği değerin arttığı gözleniyor. Taş, basınçölçere değmemektedir.</p><div class="fig"><svg viewBox="0 0 560 236" width="560" role="img" aria-label="Yan yüzeyinin altında basınçölçer olan su dolu kaba taş bırakılıyor, su seviyesi yükseliyor"><rect x="0" y="0" width="560" height="236" fill="#ffffff"/><rect x="60" y="90" width="160" height="110" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="60" y1="90" x2="220" y2="90" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="60,30 60,200 220,200 220,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="232" cy="185" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="232" y1="185" x2="237" y2="179" stroke="#dc2626" stroke-width="1.8"/><text x="140" y="225" font-size="13" text-anchor="#1e3a8a" fill="True">Önce</text><rect x="320" y="60" width="160" height="140" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="320" y1="60" x2="480" y2="60" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="320,30 320,200 480,200 480,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><ellipse cx="380" cy="183" rx="30" ry="17" fill="#a8a29e" stroke="#57534e" stroke-width="1.5"/><circle cx="492" cy="185" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="492" y1="185" x2="497" y2="179" stroke="#dc2626" stroke-width="1.8"/><text x="400" y="225" font-size="13" text-anchor="#1e3a8a" fill="True">Sonra</text><text x="545" y="165" font-size="11" text-anchor="end" fill="#475569">Basınçölçer</text></svg></div><p><b>Basınçölçerin gösterdiği değerin artmasının nedeni aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Taşın ağırlığının su tarafından basınçölçere aynen iletilmesi", "Kaptaki su miktarının artması", "Su seviyesi yükseldiği için basınçölçerin bulunduğu noktanın derinliğinin artması", "Taş bırakıldığında suyun yoğunluğunun artması"],
+  a: "C",
+  s: `<p>Taş suyun içine girince yer değiştirdiği su kadar su seviyesi yükselir. Basınçölçer yerinde durduğu hâlde su yüzeyi yükseldiği için ölçerin bulunduğu noktanın <b>derinliği artar</b>; sıvı basıncı derinliğe bağlı olduğundan ölçülen değer artar ✓.</p><p>A: Taş tabana oturur; ağırlığı tabana etki eder, su aracılığıyla ölçere "iletilen" bir ağırlık yoktur. B: Kaba su eklenmemiştir; su miktarı aynıdır. D: Taş suyun cinsini, yani yoğunluğunu değiştirmez. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Yan yüzeylerinde ve tabanlarında aynı büyüklükte esnek zarlar bulunan özdeş iki kaptan birinin içi, kabı tam dolduran bir tahta blokla, diğerinin içi suyla dolduruluyor. Kapların üstündeki pistonlara eşit F kuvvetleri uygulandığında 1. kapta yalnızca taban zarının, 2. kapta ise bütün zarların dışarı doğru şiştiği gözleniyor.</p><div class="fig"><svg viewBox="0 0 560 232" width="560" role="img" aria-label="Tahta blok ve su dolu iki kap; pistona F uygulanınca 1. kapta yalnız taban zarı, 2. kapta tüm zarlar şişiyor"><rect x="0" y="0" width="560" height="232" fill="#ffffff"/><rect x="60" y="60" width="140" height="130" fill="#e7c99a" stroke="none" stroke-width="0"/><rect x="60" y="50" width="140" height="10" fill="#334155" stroke="#334155" stroke-width="1"/><line x1="130" y1="50" x2="130" y2="15" stroke="#334155" stroke-width="4"/><polyline points="60,30 60,190 200,190 200,30" fill="none" stroke="#475569" stroke-width="2.5"/><text x="130" y="222" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1. kap: tahta blok</text><rect x="330" y="60" width="140" height="130" fill="#bfdbfe" stroke="none" stroke-width="0"/><rect x="330" y="50" width="140" height="10" fill="#334155" stroke="#334155" stroke-width="1"/><line x1="400" y1="50" x2="400" y2="15" stroke="#334155" stroke-width="4"/><polyline points="330,30 330,190 470,190 470,30" fill="none" stroke="#475569" stroke-width="2.5"/><text x="400" y="222" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2. kap: su</text><path d="M100,190 Q130,212 160,190" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/><line x1="60" y1="110" x2="60" y2="140" stroke="#991b1b" stroke-width="3"/><line x1="200" y1="110" x2="200" y2="140" stroke="#991b1b" stroke-width="3"/><path d="M370,190 Q400,212 430,190" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/><path d="M330,110 Q310,125 330,140" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/><path d="M470,110 Q490,125 470,140" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/><defs><marker id="p5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="150" y1="12" x2="150" y2="40" stroke="#dc2626" stroke-width="2.5" marker-end="url(#p5)"/><line x1="420" y1="12" x2="420" y2="40" stroke="#dc2626" stroke-width="2.5" marker-end="url(#p5)"/><text x="160" y="28" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">F</text><text x="430" y="28" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">F</text><text x="265" y="95" font-size="11" text-anchor="middle" fill="#475569">Esnek zarlar</text></svg></div><p><b>Bu gözlemlere dayanarak aşağıdaki çıkarımlardan hangisi yapılabilir?</b></p>`,
+  c: ["Tahta blok kuvveti uygulandığı doğrultuda iletirken su, kendisine uygulanan basıncı her yöne iletir.", "Tahta blok da su da kendilerine uygulanan basıncı her yöne aynen iletir.", "Tahta blok basıncı her yöne aynen iletirken su yalnızca kuvveti iletir.", "Tahta blok da su da kendilerine uygulanan kuvveti yalnızca aşağı doğru iletir."],
   a: "A",
-  s: `<p>Her iki deney de <b>açık hava basıncının (P<sub>0</sub>)</b> büyüklüğünü kanıtlar: 1. deneyde kürelerin içindeki hava boşaltılınca iç basınç sıfırlanmış ve dıştan etki eden <b>açık hava basıncı</b> küreleri sıkıştırmıştır. 2. deneyde ise şişe içindeki hava ısınıp bir kısmı dışarı çıkmış, ateş sönüp soğuduğunda iç basınç düşmüş ve dışarıdaki <b>açık hava basıncı yumurtayı içeri itmiştir</b> (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>Düşey kesiti verilen bileşik kapta, kolları birbirinden ayıran <b>M musluğu</b> kapalıyken 1. kolda <b>2h</b> yüksekliğinde su bulunmakta, 2. kol ise tamamen boş bulunmaktadır.</p>
-<div class="fig"><svg viewBox="0 0 420 155" width="400" role="img" aria-label="Bileşik kapta musluk açıldığında sıvı basıncı değişimi">
-<path d="M50,25 L50,130 L270,130 L270,25 L210,25 L210,105 L110,105 L110,25 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
-<path d="M51,45 L109,45 L109,129 L155,129 L155,106 L109,106 Z" fill="#60a5fa"/>
-<rect x="51" y="45" width="58" height="84" fill="#60a5fa"/>
-<rect x="152" y="102" width="16" height="32" fill="#dc2626"/>
-<line x1="15" y1="45" x2="50" y2="45" stroke="#64748b" stroke-dasharray="3 2"/>
-<line x1="15" y1="87" x2="275" y2="87" stroke="#16a34a" stroke-dasharray="4 3"/>
-<g font-size="10" font-weight="bold">
-<text x="80" y="20" fill="#1e40af" text-anchor="middle">1. Kol (Kesit: S)</text>
-<text x="240" y="20" fill="#166534" text-anchor="middle">2. Kol (Kesit: S)</text>
-<text x="80" y="145" fill="#1e40af" text-anchor="middle">K Noktası</text>
-<text x="240" y="145" fill="#166534" text-anchor="middle">L Noktası</text>
-<text x="160" y="96" fill="#dc2626" text-anchor="middle">M Musluğu</text>
-<text x="25" y="42" fill="#1e40af">2h</text>
-<text x="335" y="90" fill="#16a34a">Denge Seviyesi (h)</text>
-</g>
-</svg></div>
-<p>Kesit alanları birbirine eşit (<b>S</b>) olan bu bileşik kapta <b>M musluğu açılıp sıvı akışı durduğunda</b>, K ve L noktalarındaki sıvı basınçları (<b>P<sub>K</sub> ve P<sub>L</sub></b>) için aşağıdakilerden hangisi söylenebilir?</p>`,
-  c: [
-    `1. koldaki suyun yarısı 2. kola geçer; her iki koldaki sıvı yüksekliği h olur ve K ile L noktalarındaki sıvı basınçları birbirine eşitlenir (P<sub>K</sub> = P<sub>L</sub>).`,
-    `K noktasındaki sıvı basıncı değişmez, L noktasındaki sıvı basıncı sıfır kalır.`,
-    `Suyun tamamı 2. kola geçer ve K noktasındaki sıvı basıncı sıfır olur.`,
-    `1. koldaki sıvı basıncı 2 katına çıkar.`
-  ],
+  s: `<p>1. kapta yalnızca taban zarı şişmiştir: tahta blok pistona uygulanan kuvveti aynı doğrultuda (aşağı) iletmiş, yan zarlara bir etki iletmemiştir. 2. kapta bütün zarlar şişmiştir: su, kendisine uygulanan basıncı kabın her noktasına ve her yöne iletmiştir ✓.</p><p>B: Katının yan zarları şişirmediği gözlenmiştir. C: Katı ve sıvının özellikleri ters yazılmıştır; katılar basıncı değil kuvveti aynen iletir. D: 2. kapta yan zarların da şişmesi bu ifadeyle çelişir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Kum zemin üzerine yerleştirilen K ve L tablalarının üzerine özdeş bloklar birer birer üst üste konuyor ve her blok eklendiğinde tablaların kumda oluşturduğu izin derinliği ölçülüyor. L tablasının kuma değen yüzey alanı, K tablasınınkinin 2 katıdır.</p><div class="fig"><svg viewBox="0 0 560 196" width="560" role="img" aria-label="K ve L tablalarının üzerine üst üste konan özdeş bloklar"><rect x="0" y="0" width="560" height="196" fill="#ffffff"/><rect x="10" y="150" width="540" height="16" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="163" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><rect x="70" y="140" width="60" height="10" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/><polygon points="80,118 92.0,110.0 132.0,110.0 120,118" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="120,118 132.0,110.0 132.0,132.0 120,140" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="80" y="118" width="40" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="80,96 92.0,88.0 132.0,88.0 120,96" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="120,96 132.0,88.0 132.0,110.0 120,118" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="80" y="96" width="40" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><rect x="330" y="140" width="120" height="10" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/><polygon points="370,118 382.0,110.0 422.0,110.0 410,118" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="410,118 422.0,110.0 422.0,132.0 410,140" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="370" y="118" width="40" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="370,96 382.0,88.0 422.0,88.0 410,96" fill="#fbecd0" stroke="#7c5a2a" stroke-width="1.5"/><polygon points="410,96 422.0,88.0 422.0,110.0 410,118" fill="#d9b97f" stroke="#7c5a2a" stroke-width="1.5"/><rect x="370" y="96" width="40" height="22" fill="#f5deb3" stroke="#7c5a2a" stroke-width="1.5"/><text x="100" y="185" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">K tablası (alan S)</text><text x="390" y="185" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">L tablası (alan 2S)</text><text x="280" y="30" font-size="12" text-anchor="middle" fill="#475569">Tablaların ağırlığı önemsiz; bloklar özdeş</text></svg></div><p><b>İz derinliğinin basınçla doğru orantılı olduğu kabul edildiğine göre, ölçümlerden elde edilen iz derinliği – blok sayısı grafiği aşağıdakilerden hangisi olabilir?</b></p>`,
+  c: ["<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Çizgi grafiği A\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"hA\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"215\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hA)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hA)\"/><text x=\"215\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Blok sayısı</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><text x=\"75\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">1</text><text x=\"110\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">2</text><text x=\"145\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">3</text><text x=\"180\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">4</text><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"50\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"186\" y=\"104\" font-size=\"12\" text-anchor=\"start\" fill=\"#dc2626\" font-weight=\"bold\">K</text><text x=\"186\" y=\"54\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e3a8a\" font-weight=\"bold\">L</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Çizgi grafiği B\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"hB\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"215\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hB)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hB)\"/><text x=\"215\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Blok sayısı</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><text x=\"75\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">1</text><text x=\"110\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">2</text><text x=\"145\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">3</text><text x=\"180\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">4</text><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"50\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"50\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"186\" y=\"54\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\" font-weight=\"bold\">K ve L</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Çizgi grafiği C\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"hC\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"215\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hC)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hC)\"/><text x=\"215\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Blok sayısı</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><text x=\"75\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">1</text><text x=\"110\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">2</text><text x=\"145\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">3</text><text x=\"180\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">4</text><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"95\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"186\" y=\"44\" font-size=\"12\" text-anchor=\"start\" fill=\"#dc2626\" font-weight=\"bold\">K</text><text x=\"186\" y=\"99\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e3a8a\" font-weight=\"bold\">L</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Çizgi grafiği D\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"hD\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"215\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hD)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#hD)\"/><text x=\"215\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Blok sayısı</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><text x=\"75\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">1</text><text x=\"110\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">2</text><text x=\"145\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">3</text><text x=\"180\" y=\"166\" font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">4</text><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"40\" stroke=\"#dc2626\" stroke-width=\"3\"/><line x1=\"40\" y1=\"150\" x2=\"180\" y2=\"150\" stroke=\"#1e3a8a\" stroke-width=\"3\"/><text x=\"186\" y=\"44\" font-size=\"12\" text-anchor=\"start\" fill=\"#dc2626\" font-weight=\"bold\">K</text><text x=\"186\" y=\"142\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e3a8a\" font-weight=\"bold\">L</text></svg>"],
+  a: "C",
+  s: `<p>Blok sayısı arttıkça ağırlık artar, alan aynı kalır; iki tablanın izi de blok sayısıyla düzgün biçimde derinleşir. Aynı sayıda blokta ağırlıklar eşittir; K’nin alanı yarı kadar olduğu için K’nin basıncı, dolayısıyla izi L’ninkinin 2 katıdır. C’deki grafikte iki doğru da artıyor ve K’nin doğrusu L’ninkinin 2 katı eğimlidir ✓.</p><p>A: Alanı büyük olanın daha derin iz bırakacağını sanmak. B: Ağırlıklar eşit diye basınçları eşit sanmak (alanı yok saymak). D: L’de blok eklendikçe izin değişmediğini göstermektedir; L’de de ağırlık artarken alan sabit kaldığı için basınç artmalıdır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, lastik zarlı huniyi hortumla U borusuna bağlıyor. Huniyi aynı kaptaki tuzlu suyun içinde sırasıyla 5 cm, 10 cm ve 15 cm derinliğe indiriyor ve her seferinde U borusunun kolları arasındaki seviye farkını ölçüyor.</p><div class="fig"><svg viewBox="0 0 560 228" width="560" role="img" aria-label="Tuzlu su dolu kapta d derinliğindeki huni ve U borusundaki seviye farkı"><rect x="0" y="0" width="560" height="228" fill="#ffffff"/><rect x="60" y="45" width="200" height="170" fill="#93c5fd" stroke="none" stroke-width="0"/><line x1="60" y1="45" x2="260" y2="45" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="60,25 60,215 260,215 260,25" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polygon points="146,150 174,150 163,136 157,136" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><line x1="145" y1="150" x2="175" y2="150" stroke="#7f1d1d" stroke-width="3"/><line x1="160" y1="136" x2="160" y2="80" stroke="#64748b" stroke-width="3"/><line x1="100" y1="45" x2="100" y2="150" stroke="#dc2626" stroke-width="1.5"/><line x1="95" y1="150" x2="105" y2="150" stroke="#dc2626" stroke-width="1.5"/><text x="94" y="105" font-size="13" text-anchor="end" fill="#dc2626" font-weight="bold">d</text><polyline points="160,80 160,30 330,30 330,60" fill="none" stroke="#64748b" stroke-width="3"/><rect x="323" y="95" width="14" height="85" fill="#bfdbfe" stroke="none" stroke-width="0"/><rect x="363" y="55" width="14" height="125" fill="#bfdbfe" stroke="none" stroke-width="0"/><rect x="323" y="178" width="54" height="14" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="323,60 323,192 377,192 377,40" fill="none" stroke="#1e3a8a" stroke-width="2"/><polyline points="337,60 337,178 363,178 363,40" fill="none" stroke="#1e3a8a" stroke-width="2"/><line x1="385" y1="55" x2="385" y2="95" stroke="#dc2626" stroke-width="1.5"/><text x="392" y="80" font-size="12" text-anchor="start" fill="#dc2626">seviye farkı</text><text x="160" y="205" font-size="11" text-anchor="middle" fill="#475569">Tuzlu su</text><text x="345" y="215" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">U borusu</text></svg></div><p><b>Bu deneyde bağımsız (değiştirilen), bağımlı (ölçülen) ve kontrol edilen (sabit tutulan) değişkenler aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?</b></p>`,
+  c: ["Sıvının cinsi – Huninin derinliği – U borusundaki seviye farkı", "U borusundaki seviye farkı – Huninin derinliği – Sıvının cinsi", "Huninin derinliği – Sıvının cinsi – U borusundaki seviye farkı", "Huninin derinliği – U borusundaki seviye farkı – Sıvının cinsi"],
+  a: "D",
+  s: `<p>Öğrenci huniyi bilerek farklı derinliklere indiriyor: <b>bağımsız değişken huninin derinliğidir</b>. Her derinlikte ölçtüğü şey U borusundaki seviye farkıdır: <b>bağımlı değişken</b>. Bütün ölçümler aynı kaptaki tuzlu suda yapıldığı için <b>sıvının cinsi sabit tutulmuştur</b>.</p><p>A’da sabit tutulan sıvının cinsi bağımsız değişken gibi yazılmıştır. B’de bağımsız ve bağımlı değişkenler yer değiştirmiştir. C’de ölçülen seviye farkı sabit tutulan değişken sanılmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>K ve L cisimleri, Şekil I’de özellikleri her yerinde aynı olan kum zemine doğrudan konulduğunda kumda eşit derinlikte izler oluşuyor. Şekil II’de ise cisimler, ağırlığı önemsiz özdeş levhaların üzerine konulduğunda K’nin bulunduğu levhanın kumda oluşturduğu iz, L’nin bulunduğu levhanınkinden daha derin oluyor.</p><div class="fig"><svg viewBox="0 0 560 212" width="560" role="img" aria-label="Şekil I: K ve L doğrudan kumda, izler eşit. Şekil II: özdeş levhalar üzerinde, K'nin levhası daha derin"><rect x="0" y="0" width="560" height="212" fill="#ffffff"/><rect x="20" y="150" width="250" height="26" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="145" y="200" font-size="13" text-anchor="#1e3a8a" fill="True">Şekil I</text><rect x="290" y="150" width="250" height="26" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="415" y="200" font-size="13" text-anchor="#1e3a8a" fill="True">Şekil II</text><rect x="60" y="150" width="40" height="8" fill="#d6c08e" stroke="none" stroke-width="0"/><polygon points="60,88 74.4,78.4 114.4,78.4 100,88" fill="#fbecd0" stroke="#991b1b" stroke-width="1.5"/><polygon points="100,88 114.4,78.4 114.4,148.4 100,158" fill="#d9b97f" stroke="#991b1b" stroke-width="1.5"/><rect x="60" y="88" width="40" height="70" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><rect x="160" y="150" width="80" height="8" fill="#d6c08e" stroke="none" stroke-width="0"/><polygon points="160,124 174.4,114.4 254.4,114.4 240,124" fill="#fbecd0" stroke="#3730a3" stroke-width="1.5"/><polygon points="240,124 254.4,114.4 254.4,148.4 240,158" fill="#d9b97f" stroke="#3730a3" stroke-width="1.5"/><rect x="160" y="124" width="80" height="34" fill="#a5b4fc" stroke="#3730a3" stroke-width="1.5"/><text x="80" y="75" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="200" y="112" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><rect x="305" y="150" width="100" height="14" fill="#d6c08e" stroke="none" stroke-width="0"/><rect x="305" y="156" width="100" height="8" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/><polygon points="335,86 349.4,76.4 389.4,76.4 375,86" fill="#fbecd0" stroke="#991b1b" stroke-width="1.5"/><polygon points="375,86 389.4,76.4 389.4,146.4 375,156" fill="#d9b97f" stroke="#991b1b" stroke-width="1.5"/><rect x="335" y="86" width="40" height="70" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><rect x="420" y="150" width="100" height="7" fill="#d6c08e" stroke="none" stroke-width="0"/><rect x="420" y="149" width="100" height="8" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/><polygon points="430,115 444.4,105.4 524.4,105.4 510,115" fill="#fbecd0" stroke="#3730a3" stroke-width="1.5"/><polygon points="510,115 524.4,105.4 524.4,139.4 510,149" fill="#d9b97f" stroke="#3730a3" stroke-width="1.5"/><rect x="430" y="115" width="80" height="34" fill="#a5b4fc" stroke="#3730a3" stroke-width="1.5"/><text x="355" y="73" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="470" y="103" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="415" y="30" font-size="11" text-anchor="middle" fill="#475569">Özdeş levhalar (ağırlığı önemsiz)</text></svg></div><p><b>Buna göre,</b></p><p>I. K’nin ağırlığı L’nin ağırlığından büyüktür.<br>II. K’nin kuma temas eden yüzey alanı L’ninkinden küçüktür.<br>III. Şekil I’de K’nin ve L’nin kuma uyguladığı basınçlar eşittir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Şekil II’de levhalar özdeştir, yani kuma değen alanlar eşittir. Eşit alanda K’nin levhası daha derin iz bıraktığına göre K daha ağırdır (I ✓).</p><p>Şekil I’de izler eşit derinlikte olduğuna göre basınçlar eşittir (III ✓).</p><p>K daha ağır olduğu hâlde L ile aynı basıncı uyguluyorsa, K’nin ağırlığı daha büyük bir alana dağılmış olmalıdır; K’nin kuma temas eden yüzey alanı L’ninkinden <b>büyüktür</b> (II ✗). Şekle bakıp "K dar görünüyor" demek yanıltıcıdır; karar verileri vermelidir.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir araştırma ekibi, yalnızca sıvı basıncını ölçen özdeş basınçölçerlerle bir göl (tatlı su) ve denizde (tuzlu su) aşağıdaki ölçümleri yapıyor.</p><table><tr><th>Ölçüm yeri</th><th>Derinlik</th><th>Ölçülen sıvı basıncı</th></tr><tr><td>Göl</td><td>5 m</td><td>50 birim</td></tr><tr><td>Göl</td><td>10 m</td><td>100 birim</td></tr><tr><td>Deniz</td><td>5 m</td><td>51,5 birim</td></tr></table><p><b>Bu ölçümlere göre,</b></p><p>I. Aynı sıvıda derinlik arttıkça sıvı basıncı artar.<br>II. Deniz suyunun yoğunluğu göl suyunun yoğunluğundan büyüktür.<br>III. Denizde 10 m derinlikte ölçülecek sıvı basıncı 100 birimdir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>I: Gölde derinlik 5 m’den 10 m’ye çıkınca basınç 50 birimden 100 birime çıkmıştır ✓.</p><p>II: Aynı derinlikte (5 m) deniz suyunun basıncı (51,5) göl suyununkinden (50) büyüktür. Aynı derinlikte basıncı büyük olan sıvının yoğunluğu büyüktür ✓.</p><p>III: Denizde derinlik 2 katına çıkarsa basınç da 2 katına çıkar: 2 × 51,5 = 103 birim olur, 100 birim olmaz ✗. 100 birim gölde 10 m’deki değerdir; yoğunluk farkı unutulmuştur.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğretmen, "Kapalı bir kaptaki sıvıya uygulanan basınç, sıvı tarafından her yöne aynı büyüklükte iletilir." ilkesini anlattıktan sonra öğrencilerine üç durum veriyor.</p><div class="box"><p>I. Bir otomobilde fren pedalına basıldığında, pedala bağlı yağ dolu borular sayesinde dört tekerlekteki frenlerin aynı anda devreye girmesi</p><p>II. Baraj duvarlarının üst kısmı ince, tabana doğru gittikçe kalın yapılması</p><p>III. Berberin ayağıyla pompaya basarak hidrolik koltuğu yükseltmesi</p></div><p><b>Bu durumlardan hangileri öğretmenin anlattığı ilkeyle açıklanabilir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>I: Pedala uygulanan basınç, borulardaki fren yağı tarafından dört tekerleğe aynen iletilir ✓.</p><p>II: Baraj duvarının tabana doğru kalınlaşması, sıvı basıncının <b>derinlik arttıkça artmasıyla</b> açıklanır; sıvıların basıncı iletmesiyle ilgili değildir ✗.</p><p>III: Berber koltuğu hidrolik bir sistemdir; pompaya uygulanan basınç yağ tarafından koltuğun altındaki pistona iletilir ✓.</p><p>II’yi içeren şıklar, "sıvı basıncı derinlikle artar" bilgisi ile Pascal prensibini karıştırır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Özdeş üç küp birbirine yapıştırılarak L biçimli bir cisim yapılıyor. Bu cisim, özellikleri her yerinde aynı olan kum zemine şekildeki K, L ve M konumlarında ayrı ayrı yavaşça bırakılıyor.</p><div class="fig"><svg viewBox="0 0 560 226" width="560" role="img" aria-label="Üç özdeş küpten oluşan L biçimli cismin K, L ve M konumları"><rect x="0" y="0" width="560" height="226" fill="#ffffff"/><rect x="10" y="160" width="540" height="16" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="173" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><polygon points="60.4,112.4 80.8,98.80000000000001 114.80000000000001,98.80000000000001 94.4,112.4" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="94.4,112.4 114.80000000000001,98.80000000000001 114.80000000000001,132.8 94.4,146.4" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="60.4" y="112.4" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="40,126 60.4,112.4 94.4,112.4 74,126" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="74,126 94.4,112.4 94.4,146.4 74,160" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="40" y="126" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="74,126 94.4,112.4 128.4,112.4 108,126" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="108,126 128.4,112.4 128.4,146.4 108,160" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="74" y="126" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="220,126 240.4,112.4 274.4,112.4 254,126" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="254,126 274.4,112.4 274.4,146.4 254,160" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="220" y="126" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="254,126 274.4,112.4 308.4,112.4 288,126" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="288,126 308.4,112.4 308.4,146.4 288,160" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="254" y="126" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="220,92 240.4,78.4 274.4,78.4 254,92" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="254,92 274.4,78.4 274.4,112.4 254,126" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="220" y="92" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="400,126 420.4,112.4 454.4,112.4 434,126" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="434,126 454.4,112.4 454.4,146.4 434,160" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="400" y="126" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="400,92 420.4,78.4 454.4,78.4 434,92" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="434,92 454.4,78.4 454.4,112.4 434,126" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="400" y="92" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="434,92 454.4,78.4 488.4,78.4 468,92" fill="#dbeafe" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="468,92 488.4,78.4 488.4,112.4 468,126" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><rect x="434" y="92" width="34" height="34" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><text x="85" y="200" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="255" y="200" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="435" y="200" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><text x="85" y="216" font-size="11" text-anchor="middle" fill="#475569">3 küp yüzü kumda</text><text x="255" y="216" font-size="11" text-anchor="middle" fill="#475569">2 küp yüzü kumda</text><text x="435" y="216" font-size="11" text-anchor="middle" fill="#475569">1 küp yüzü kumda</text></svg></div><p><b>Cismin bu konumlarda kumda oluşturduğu izlerin derinliklerini gösteren grafik aşağıdakilerden hangisi olabilir?</b></p>`,
+  c: ["<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Sütun grafiği A\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"gA\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gA)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gA)\"/><text x=\"210\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Konum</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><rect x=\"68\" y=\"70\" width=\"24\" height=\"80\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"80\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">K</text><rect x=\"113\" y=\"70\" width=\"24\" height=\"80\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"125\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">L</text><rect x=\"158\" y=\"70\" width=\"24\" height=\"80\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"170\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">M</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Sütun grafiği B\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"gB\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gB)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gB)\"/><text x=\"210\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Konum</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><rect x=\"68\" y=\"45\" width=\"24\" height=\"105\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"80\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">K</text><rect x=\"113\" y=\"80\" width=\"24\" height=\"70\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"125\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">L</text><rect x=\"158\" y=\"115\" width=\"24\" height=\"35\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"170\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">M</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Sütun grafiği C\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"gC\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gC)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gC)\"/><text x=\"210\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Konum</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><rect x=\"68\" y=\"110\" width=\"24\" height=\"40\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"80\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">K</text><rect x=\"113\" y=\"110\" width=\"24\" height=\"40\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"125\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">L</text><rect x=\"158\" y=\"50\" width=\"24\" height=\"100\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"170\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">M</text></svg>", "<svg viewBox=\"0 0 230 190\" width=\"230\" role=\"img\" aria-label=\"Sütun grafiği D\"><rect x=\"0\" y=\"0\" width=\"230\" height=\"190\" fill=\"#ffffff\"/><defs><marker id=\"gD\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#1e293b\"/></marker></defs><line x1=\"40\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gD)\"/><line x1=\"40\" y1=\"150\" x2=\"40\" y2=\"25\" stroke=\"#1e293b\" stroke-width=\"2\" marker-end=\"url(#gD)\"/><text x=\"210\" y=\"184\" font-size=\"12\" text-anchor=\"end\" fill=\"#1e293b\">Konum</text><text x=\"44\" y=\"19\" font-size=\"12\" text-anchor=\"start\" fill=\"#1e293b\">İz derinliği</text><rect x=\"68\" y=\"115\" width=\"24\" height=\"35\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"80\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">K</text><rect x=\"113\" y=\"95\" width=\"24\" height=\"55\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"125\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">L</text><rect x=\"158\" y=\"45\" width=\"24\" height=\"105\" fill=\"#93c5fd\" stroke=\"#1e3a8a\" stroke-width=\"1.5\"/><text x=\"170\" y=\"166\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">M</text></svg>"],
+  a: "D",
+  s: `<p>Cisim her konumda aynıdır; kuma uyguladığı kuvvet (ağırlık) değişmez. Değişen tek şey kuma değen yüzey alanıdır: K’de 3, L’de 2, M’de 1 küp yüzü kuma değer.</p><p>Ağırlık sabitken alan küçüldükçe basınç ve iz derinliği artar: K &lt; L &lt; M. D’deki grafik bu sıralamaya uyar ✓.</p><p>A: Ağırlık aynı diye basıncı da aynı sanmak (kuvvet–basınç karışıklığı). B: Alanı büyük olanın daha derin batacağını düşünmek (ters ilişki). C: L’de de alanın değiştiğini gözden kaçırmak; K ve L’nin kuma değen alanları farklıdır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Geniş bir gövdesi ve tabana yakın yerden çıkan ince, eğik bir emziği olan kaba su konulmuştur. Emzik ile gövdedeki su yüzeyleri aynı hizadadır. Kap ve K, L, M noktaları eşit aralıklı yatay çizgiler üzerinde gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Geniş gövdeli ve ince eğik emzikli kapta K, L, M noktaları; kareli zemin"><rect x="0" y="0" width="560" height="220" fill="#ffffff"/><line x1="60" y1="200" x2="470" y2="200" stroke="#e2e8f0" stroke-width="1"/><line x1="60" y1="170" x2="470" y2="170" stroke="#e2e8f0" stroke-width="1"/><line x1="60" y1="140" x2="470" y2="140" stroke="#e2e8f0" stroke-width="1"/><line x1="60" y1="110" x2="470" y2="110" stroke="#e2e8f0" stroke-width="1"/><line x1="60" y1="80" x2="470" y2="80" stroke="#e2e8f0" stroke-width="1"/><line x1="60" y1="50" x2="470" y2="50" stroke="#e2e8f0" stroke-width="1"/><rect x="120" y="80" width="180" height="120" fill="#bfdbfe" stroke="none" stroke-width="0"/><polygon points="300,170 300,200 330,200 420.6,80 376.7,80" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="120,50 120,200 330,200 450,41" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polyline points="300,50 300,170 410,41" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="120" y1="80" x2="300" y2="80" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="376.7" y1="80" x2="420.6" y2="80" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><circle cx="210" cy="140" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="220" y="145" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">K</text><circle cx="316" cy="187" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="326" y="192" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">L</text><circle cx="160" cy="110" r="5" fill="#dc2626" stroke="#dc2626" stroke-width="1"/><text x="170" y="115" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">M</text></svg></div><p><b>K, L ve M noktalarındaki sıvı basınçları P<sub>K</sub>, P<sub>L</sub> ve P<sub>M</sub> arasındaki ilişki aşağıdakilerden hangisidir?</b></p>`,
+  c: ["P<sub>K</sub> &gt; P<sub>L</sub> &gt; P<sub>M</sub>", "P<sub>K</sub> = P<sub>L</sub> &gt; P<sub>M</sub>", "P<sub>L</sub> &gt; P<sub>K</sub> &gt; P<sub>M</sub>", "P<sub>M</sub> &gt; P<sub>K</sub> &gt; P<sub>L</sub>"],
+  a: "C",
+  s: `<p>Sıvı basıncı, noktanın sıvının serbest yüzeyine olan <b>dik uzaklığına</b> (derinliğe) bağlıdır; noktanın kabın geniş ya da dar kısmında olması önemli değildir.</p><p>Su yüzeyi tabandan 4 aralık yukarıdadır. M yüzeyden 1 aralık, K 2 aralık derindedir. L ise emziğin alt kısmında, tabanın hemen üstündedir; yüzeyden 3 aralıktan daha derindedir. Derinlik sırası L &gt; K &gt; M olduğundan P<sub>L</sub> &gt; P<sub>K</sub> &gt; P<sub>M</sub> ✓.</p><p>A: Dar emzikteki "az su" yüzünden basıncın küçük olacağını sanmak. B: L ile K’yi aynı derinlikte sanmak. D: Derinliği tabandan yukarı doğru ölçmek. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıda günlük hayattan dört olay ve bu olayları açıklayan dört bilgi verilmiştir.</p><table><tr><th>Olay</th><th>Bilgi</th></tr><tr><td>1. Hidrolik krikoyla bir otomobilin kaldırılması</td><td>a. Ağırlık daha büyük bir yüzeye dağıldığında katı basıncı azalır.</td></tr><tr><td>2. Dalgıçların derinlere inerken özel dalış kıyafeti giymesi</td><td>b. Sıvı basıncı derinlik arttıkça artar.</td></tr><tr><td>3. Ağzına kadar su dolu bardağın ağzı kartonla kapatılıp ters çevrildiğinde suyun dökülmemesi</td><td>c. Sıvılar kendilerine uygulanan basıncı her yöne aynen iletir.</td></tr><tr><td>4. Develerin geniş ayak tabanları sayesinde kumda fazla batmadan yürümesi</td><td>d. Açık hava basıncı cisimlere her yönden, aşağıdan yukarıya doğru da etki eder.</td></tr></table><p><b>Olaylar ile bilgilerin doğru eşleştirilmesi aşağıdakilerin hangisinde verilmiştir?</b></p>`,
+  c: ["1-c, 2-a, 3-d, 4-b", "1-b, 2-c, 3-d, 4-a", "1-d, 2-b, 3-c, 4-a", "1-c, 2-b, 3-d, 4-a"],
+  a: "D",
+  s: `<p>1: Krikoda küçük pistona uygulanan basınç sıvı tarafından büyük pistona iletilir → c.</p><p>2: Derine inildikçe dalgıca etki eden sıvı basıncı artar → b.</p><p>3: Kartona alttan etki eden açık hava basıncı suyun dökülmesini engeller; açık hava basıncı aşağıdan yukarıya doğru da etki eder → d.</p><p>4: Geniş taban, devenin ağırlığını büyük bir yüzeye dağıtır; basınç azalır → a.</p><p>Doğru eşleştirme 1-c, 2-b, 3-d, 4-a’dır. A’da derinlik ile katı basıncı, B’de Pascal ile derinlik, C’de Pascal ile açık hava basıncı karıştırılmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Kum havuzunda bir öğrenci aşağıdaki dört durumda ayakta duruyor ve her durumda ayağının (ayaklarının) kumda oluşturduğu izin derinliğini ölçüyor.</p><table><tr><th>Durum</th><th>Açıklama</th></tr><tr><td>I</td><td>İki ayağı üzerinde, sırtında çanta yok</td></tr><tr><td>II</td><td>Tek ayağı üzerinde, sırtında çanta yok</td></tr><tr><td>III</td><td>İki ayağı üzerinde, sırtında dolu çanta var</td></tr><tr><td>IV</td><td>Tek ayağı üzerinde, sırtında aynı dolu çanta var</td></tr></table><p><b>Bu durumlarla ilgili aşağıdaki ifadelerden hangisi kesinlikle doğrudur?</b></p>`,
+  c: ["IV. durumda oluşan iz en derindir.", "II. ve III. durumlarda oluşan izler eşit derinliktedir.", "I. ve II. durumlarda öğrencinin kuma uyguladığı kuvvetler farklıdır.", "III. durumda oluşan iz, II. durumda oluşan izden daha derindir."],
   a: "A",
-  s: `<p>Bileşik kaplarda aradaki musluk açıldığında sıvı, her iki koldaki <b>sıvı seviyesi (ve taban sıvı basıncı) birbirine eşit olana kadar</b> yüksek koldan alçak kola akar. Kolların kesit alanları eşit (S) olduğu için yeni denge yüksekliği <b>h</b> olur; K’deki basınç yarıya inerken L’deki basınç ona eşitlenir (<b>P<sub>K</sub> = P<sub>L</sub></b>). Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Torricelli, açık hava basıncını ölçmek için yaptığı deneyde yoğunluğu oldukça büyük olan <b>cıva (d<sub>cıva</sub> ≈ 13,6 g/cm³)</b> sıvısını kullanmış ve cıva yüksekliğini <b>76 cm</b> olarak ölçmüştür[cite: 11].</p>
-<p>Eğer Torricelli aynı deneyi aynı ortamda cıva yerine yoğunluğu çok daha küçük olan <b>saf su (d<sub>su</sub> = 1 g/cm³)</b> kullanarak yapsaydı aşağıdakilerden hangisi gerçekleşirdi?</p>`,
-  c: [
-    `Suyun yoğunluğu cıvadan 13,6 kat küçük olduğu için, aynı açık hava basıncını dengelemek amacıyla borudaki sıvı yüksekliği 13,6 kat daha fazla (yaklaşık 10,3 metre) olurdu ve daha uzun bir boru gerekirdi.`,
-    `Borudaki su yüksekliği yine 76 cm olurdu.`,
-    `Suyun yoğunluğu küçük olduğu için borudaki sıvı yüksekliği 76 cm’den çok daha az (yaklaşık 5 cm) olurdu.`,
-    `Açık hava basıncı suyun yoğunluğuna bağlı olarak azalırdı.`
-  ],
+  s: `<p>IV. durumda kuvvet en büyüktür (öğrenci + çanta) ve kuma değen alan en küçüktür (tek ayak). IV, II’ye göre daha ağır; III’e göre daha küçük alanlı; I’e göre hem daha ağır hem daha küçük alanlıdır. Bu yüzden IV’teki basınç ve iz kesinlikle en büyüktür ✓.</p><p>B ve D: II’de alan yarıya iner, III’te ağırlık artar. Çantanın ağırlığı bilinmediği için bu iki basınç karşılaştırılamaz; "eşittir" ya da "III daha derindir" kesin söylenemez. C: I ve II’de öğrencinin ağırlığı aynıdır; kuvvetler eşit, yalnızca basınçlar farklıdır. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Hastanelerde serum torbası, hastanın kolundan daha yükseğe asılır. Bir hemşire, serumun damara daha hızlı geçmesi gerektiğinde torbayı askıda daha yukarıya kaldırmaktadır.</p><div class="fig"><svg viewBox="0 0 560 222" width="560" role="img" aria-label="Askıdaki serum torbası hortumla hastanın koluna bağlı; torbadaki serum yüzeyi ile kol arasındaki yükseklik h"><rect x="0" y="0" width="560" height="222" fill="#ffffff"/><line x1="120" y1="10" x2="120" y2="210" stroke="#64748b" stroke-width="3"/><line x1="100" y1="210" x2="140" y2="210" stroke="#64748b" stroke-width="3"/><line x1="120" y1="20" x2="160" y2="20" stroke="#64748b" stroke-width="3"/><rect x="145" y="25" width="34" height="55" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/><rect x="147" y="45" width="30" height="33" fill="#bae6fd" stroke="none" stroke-width="0"/><line x1="147" y1="45" x2="177" y2="45" stroke="#0369a1" stroke-width="1.2" stroke-dasharray="4 3"/><polyline points="162,80 162,120 300,150 360,158" fill="none" stroke="#0ea5e9" stroke-width="2"/><rect x="300" y="155" width="160" height="22" fill="#fcd9a8" stroke="#b45309" stroke-width="1.5"/><text x="470" y="171" font-size="12" text-anchor="start" fill="#1e293b">Hastanın kolu</text><line x1="200" y1="45" x2="520" y2="45" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 4"/><line x1="380" y1="160" x2="520" y2="160" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5 4"/><line x1="505" y1="45" x2="505" y2="160" stroke="#dc2626" stroke-width="1.5"/><text x="498" y="108" font-size="13" text-anchor="end" fill="#dc2626" font-weight="bold">h</text><text x="185" y="60" font-size="12" text-anchor="start" fill="#1e293b">Serum torbası</text></svg></div><p><b>Torba yükseltildiğinde serumun daha hızlı akmasının nedeni aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Torba yükseldikçe serumun yoğunluğunun artması", "Torbadaki serum yüzeyi ile iğnenin ucu arasındaki dikey uzaklık arttığı için iğne ucundaki sıvı basıncının artması", "Torba yükseldikçe torbadaki serum miktarının artması", "Torba yükseldikçe serum yüzeyine etki eden açık hava basıncının artması"],
+  a: "B",
+  s: `<p>İğnenin ucundaki serum, torbadaki serum yüzeyinden <b>h</b> kadar aşağıdadır; bu nokta için h derinlik gibidir. Torba yükseltilince h artar, iğne ucundaki sıvı basıncı büyür ve serum damara daha kolay geçer ✓.</p><p>A: Serumun cinsi değişmediği için yoğunluğu da değişmez. C: Torbaya serum eklenmemiştir. D: Torba birkaç on santimetre yükseltildiğinde açık hava basıncında akışı etkileyecek bir değişiklik olmaz; ayrıca yükseğe çıkıldıkça açık hava basıncı artmaz, azalır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Ayşe, içine aynı kitapları koyduğu, kendi ağırlıkları eşit iki sırt çantasını sırayla omzuna takıyor. Askıları ince olan 1. çantanın omzunu, askıları geniş olan 2. çantadan daha çok acıttığını fark ediyor.</p><div class="fig"><svg viewBox="0 0 560 232" width="560" role="img" aria-label="Askıları ince ve geniş olan, içinde eşit yük bulunan iki sırt çantası"><rect x="0" y="0" width="560" height="232" fill="#ffffff"/><rect x="90" y="70" width="110" height="130" rx="14" fill="#60a5fa" stroke="#1e3a8a" stroke-width="2"/><rect x="110" y="130" width="70" height="45" fill="#3b82f6" stroke="#1e3a8a" stroke-width="1.5"/><path d="M110,75 Q145,20 180,75" fill="none" stroke="#1e293b" stroke-width="12"/><text x="145" y="222" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1. çanta: ince askı</text><rect x="360" y="70" width="110" height="130" rx="14" fill="#60a5fa" stroke="#1e3a8a" stroke-width="2"/><rect x="380" y="130" width="70" height="45" fill="#3b82f6" stroke="#1e3a8a" stroke-width="1.5"/><path d="M380,75 Q415,20 450,75" fill="none" stroke="#1e293b" stroke-width="34"/><text x="415" y="222" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2. çanta: geniş askı</text></svg></div><p><b>Buna göre,</b></p><p>I. 2. çantanın geniş askıları, ağırlığı daha büyük bir yüzeye dağıtarak omza uygulanan basıncı azaltır.<br>II. 2. çantaya kitap eklenirse omza uygulanan basınç artar.<br>III. 2. çantanın askılarının geniş olması, çantanın omza uyguladığı kuvveti azaltır.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>I: Geniş askı omza değen alanı büyütür; ağırlık aynı kaldığı için basınç azalır ve omuz daha az acır ✓.</p><p>II: Kitap eklenince çantanın ağırlığı artar, askıların omza değen alanı aynı kalır; basınç artar ✓.</p><p>III: Çantaların içindeki yük ve kendi ağırlıkları eşittir; omza uygulanan kuvvet (ağırlık) askı genişliğine bağlı değildir. Geniş askı kuvveti değil, <b>basıncı</b> azaltır ✗. Bu, kuvvet ile basıncı karıştıran klasik yanılgıdır.</p><p>Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Sıvının yoğunluğunun sıvı basıncına etkisini araştıran Kerem, kenarları dik bir kaba 300 mL su koyuyor ve kabın yan yüzeyine, tabandan 2 cm yukarıya bir basınçölçer takarak 1. düzeneği hazırlıyor. 2. düzenek için elinde yalnızca kenarları dik ve taban alanı ilk kabın yarısı kadar olan bir kap vardır.</p><div class="fig"><svg viewBox="0 0 560 222" width="560" role="img" aria-label="1. düzenekte geniş kapta 300 mL su ve tabandan 2 cm yukarıda basınçölçer; boş dar kap"><rect x="0" y="0" width="560" height="222" fill="#ffffff"/><rect x="80" y="100" width="160" height="90" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="80" y1="100" x2="240" y2="100" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="80,40 80,190 240,190 240,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="68" cy="160" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="68" y1="160" x2="73" y2="154" stroke="#dc2626" stroke-width="1.8"/><line x1="255" y1="160" x2="255" y2="190" stroke="#dc2626" stroke-width="1.5"/><text x="262" y="180" font-size="12" text-anchor="start" fill="#dc2626" font-weight="bold">2 cm</text><text x="160" y="120" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">300 mL su</text><text x="160" y="212" font-size="12" text-anchor="#1e3a8a" fill="True">1. düzenek (taban alanı A)</text><polyline points="360,40 360,190 440,190 440,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><text x="400" y="212" font-size="12" text-anchor="#1e3a8a" fill="True">2. kap (taban alanı A/2)</text></svg></div><p><b>Kerem’in 2. düzenekte sıvının cinsi ve miktarı ile basınçölçerin yerini aşağıdakilerden hangisi gibi seçmesi gerekir?</b></p>`,
+  c: ["Kaba 300 mL tuzlu su koymalı, basınçölçeri tabandan 2 cm yukarıya takmalıdır.", "Kaba 150 mL tuzlu su koymalı, basınçölçeri tabandan 1 cm yukarıya takmalıdır.", "Kaba 150 mL su koymalı, basınçölçeri tabandan 2 cm yukarıya takmalıdır.", "Kaba 150 mL tuzlu su koymalı, basınçölçeri tabandan 2 cm yukarıya takmalıdır."],
+  a: "D",
+  s: `<p>Yalnızca <b>sıvının cinsi</b> değişmeli; basınçölçerin bulunduğu noktanın <b>derinliği</b> aynı kalmalıdır. Derinliğin aynı kalması için hem sıvı yüksekliği hem de ölçerin tabandan yüksekliği aynı olmalıdır.</p><p>Yeni kabın taban alanı yarı kadar olduğu için 300 mL koyulursa sıvı yüksekliği 2 katına çıkar; aynı yüksekliği elde etmek için 150 mL koymak gerekir. Ölçer de yine tabandan 2 cm yukarıya takılırsa derinlik aynı kalır ✓ (D).</p><p>A: 300 mL ile sıvı yüksekliği, dolayısıyla ölçerin derinliği artar. B: Sıvı yüksekliği doğru ama ölçer aşağı alındığı için derinlik artar. C: Sıvının cinsi değişmemiştir; yoğunluğun etkisi görülemez. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Kuş suluğunda, su dolu bir şişe ters çevrilerek ağzı küçük bir kaptaki suyun içinde kalacak biçimde yerleştirilir. Şişedeki su, şişenin ağzı kaptaki suyun içinde kaldıkça dökülmez. Kuşlar su içip kaptaki su seviyesi şişenin ağzının altına inince şişeye hava kabarcıkları girer ve şişeden kaba bir miktar su akar; şişenin ağzı yeniden suyla kapanınca akış durur.</p><div class="fig"><svg viewBox="0 0 560 228" width="560" role="img" aria-label="Ters çevrilmiş su dolu şişenin ağzı küçük bir kaptaki suyun içinde: kuş suluğu"><rect x="0" y="0" width="560" height="228" fill="#ffffff"/><rect x="150" y="160" width="260" height="40" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="150,140 150,200 410,200 410,140" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="150" y1="160" x2="230" y2="160" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="330" y1="160" x2="410" y2="160" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polygon points="265,185 265,150 242,125 242,40 318,40 318,125 295,150 295,185" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="265,185 265,150 242,125 242,20 318,20 318,125 295,150 295,185" fill="none" stroke="#475569" stroke-width="2.5"/><text x="280" y="80" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">Su</text><text x="430" y="175" font-size="12" text-anchor="start" fill="#1e293b">Kaptaki su</text><text x="430" y="192" font-size="12" text-anchor="start" fill="#1e293b">yüzeyi</text><text x="330" y="32" font-size="12" text-anchor="start" fill="#1e293b">Ters çevrilmiş şişe</text><defs><marker id="p3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="250" y1="210" x2="275" y2="190" stroke="#1e293b" stroke-width="2" marker-end="url(#p3)"/><text x="245" y="218" font-size="12" text-anchor="end" fill="#1e293b">Şişenin ağzı</text></svg></div><p><b>Bu düzenekle ilgili,</b></p><p>I. Kaptaki su seviyesi şişenin ağzının altına inmedikçe şişeden kaba su akmaz.<br>II. Şişedeki suyun dökülmemesi, kaptaki su yüzeyine etki eden açık hava basıncıyla ilgilidir.<br>III. Şişedeki su, şişenin üst kısmında oluşan boşluk tarafından yukarı doğru çekildiği için dökülmez.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>I: Metinde, akışın yalnızca kaptaki su seviyesi şişenin ağzının altına inip şişeye hava girdiğinde başladığı belirtilmiştir ✓.</p><p>II: Kaptaki su yüzeyine etki eden açık hava basıncı, şişedeki suyun dökülmesini engeller ✓.</p><p>III: Vantuz, pipet ve şırınga örneklerinde olduğu gibi burada da suyu "çeken" bir kuvvet yoktur. Olay dışarıdaki açık hava basıncının itmesiyle açıklanır ✗.</p><p>Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, içleri su dolu küçük ve büyük iki şırıngayı su dolu bir hortumla birbirine bağlıyor. Küçük şırınganın pistonuna F kuvveti uyguladığında, büyük şırınganın pistonu üzerindeki ve F’den daha ağır olan yükün yukarı kalktığını gözlemliyor.</p><div class="fig"><svg viewBox="0 0 560 235" width="560" role="img" aria-label="Su dolu hortumla birbirine bağlı küçük ve büyük şırınga; küçük şırıngaya F kuvveti uygulanıyor"><rect x="0" y="0" width="560" height="235" fill="#ffffff"/><rect x="60" y="90" width="40" height="90" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="60,40 60,180 100,180 100,40" fill="none" stroke="#475569" stroke-width="2.5"/><rect x="62" y="82" width="36" height="8" fill="#334155" stroke="#334155" stroke-width="1"/><line x1="80" y1="82" x2="80" y2="30" stroke="#334155" stroke-width="4"/><line x1="66" y1="30" x2="94" y2="30" stroke="#334155" stroke-width="4"/><rect x="380" y="70" width="110" height="110" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="380,30 380,180 490,180 490,30" fill="none" stroke="#475569" stroke-width="2.5"/><rect x="382" y="62" width="106" height="8" fill="#334155" stroke="#334155" stroke-width="1"/><line x1="435" y1="62" x2="435" y2="35" stroke="#334155" stroke-width="4"/><rect x="405" y="15" width="60" height="20" fill="#fca5a5" stroke="#991b1b" stroke-width="1.5"/><text x="435" y="30" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Yük</text><rect x="100" y="195" width="280" height="10" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="1.5"/><rect x="75" y="180" width="10" height="25" fill="#bfdbfe" stroke="none" stroke-width="0"/><rect x="430" y="180" width="10" height="25" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="75" y1="180" x2="75" y2="205" stroke="#1e3a8a" stroke-width="1.5"/><line x1="85" y1="180" x2="85" y2="195" stroke="#1e3a8a" stroke-width="1.5"/><line x1="430" y1="195" x2="430" y2="180" stroke="#1e3a8a" stroke-width="1.5"/><line x1="440" y1="180" x2="440" y2="205" stroke="#1e3a8a" stroke-width="1.5"/><line x1="75" y1="205" x2="440" y2="205" stroke="#1e3a8a" stroke-width="1.5"/><defs><marker id="p4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="120" y1="25" x2="120" y2="60" stroke="#dc2626" stroke-width="2.5" marker-end="url(#p4)"/><text x="128" y="45" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">F</text><text x="80" y="225" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Küçük şırınga</text><text x="435" y="225" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Büyük şırınga</text><text x="240" y="190" font-size="11" text-anchor="middle" fill="#475569">Su dolu hortum</text></svg></div><p><b>Bu deneyle ilgili,</b></p><p>I. Küçük şırınganın pistonuna uygulanan basınç, su tarafından büyük şırınganın pistonuna iletilir.<br>II. Büyük şırınganın pistonuna etki eden kuvvet, küçük şırınganın pistonuna uygulanan kuvvetten büyüktür.<br>III. Büyük şırınganın pistonuna etki eden sıvı basıncı, küçük şırınganın pistonundakinden büyüktür.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I ve II"],
+  a: "D",
+  s: `<p>I: Kapalı sistemdeki su, küçük pistona uygulanan basıncı her yöne aynen iletir (Pascal prensibi) ✓.</p><p>II: İki pistondaki basınç eşittir; büyük pistonun yüzey alanı daha büyük olduğu için ona etki eden kuvvet daha büyüktür. F’den ağır yükün kalkması da bunu gösterir ✓.</p><p>III: Hidrolik sistemde büyüyen şey <b>kuvvettir</b>, basınç değil; iki pistondaki sıvı basıncı eşittir ✗.</p><p>Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Mert, bir pipeti bardaktaki suya daldırıyor (1. adım). Pipetin üst ucunu parmağıyla sıkıca kapatıp pipeti sudan çıkardığında pipetteki suyun dökülmediğini görüyor (2. adım). Parmağını pipetin üst ucundan kaldırdığında ise suyun hemen aşağı aktığını gözlemliyor (3. adım).</p><div class="fig"><svg viewBox="0 0 560 238" width="560" role="img" aria-label="Pipet suya daldırılıyor, üst ucu parmakla kapatılıp çıkarılınca su dökülmüyor, parmak kalkınca akıyor"><rect x="0" y="0" width="560" height="238" fill="#ffffff"/><rect x="60" y="100" width="170" height="110" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="60" y1="100" x2="230" y2="100" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="60,60 60,210 230,210 230,60" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><rect x="140" y="40" width="14" height="150" fill="#ffffff" stroke="#64748b" stroke-width="0"/><rect x="141" y="100" width="12" height="90" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="140" y1="40" x2="140" y2="190" stroke="#475569" stroke-width="2"/><line x1="154" y1="40" x2="154" y2="190" stroke="#475569" stroke-width="2"/><text x="145" y="228" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1. adım</text><line x1="340" y1="40" x2="340" y2="170" stroke="#475569" stroke-width="2"/><line x1="354" y1="40" x2="354" y2="170" stroke="#475569" stroke-width="2"/><rect x="341" y="90" width="12" height="80" fill="#bfdbfe" stroke="none" stroke-width="0"/><ellipse cx="347" cy="32" rx="16" ry="11" fill="#fcd5b5" stroke="#b45309" stroke-width="2"/><text x="347" y="228" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2. adım</text><line x1="470" y1="40" x2="470" y2="170" stroke="#475569" stroke-width="2"/><line x1="484" y1="40" x2="484" y2="170" stroke="#475569" stroke-width="2"/><rect x="471" y="150" width="12" height="20" fill="#bfdbfe" stroke="none" stroke-width="0"/><circle cx="477" cy="185" r="4" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/><circle cx="477" cy="200" r="4" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/><text x="477" y="228" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">3. adım</text><text x="372" y="36" font-size="11" text-anchor="start" fill="#1e293b">Parmak</text></svg></div><p><b>Bu gözlemlerin açıklaması aşağıdakilerden hangisidir?</b></p>`,
+  c: ["Parmak, pipetteki suyu yukarı doğru çektiği için su 2. adımda dökülmez.", "2. adımda pipetin alt ucundaki suya etki eden açık hava basıncı suyu tutar; parmak kalkınca açık hava basıncı üstten de etki eder ve su ağırlığıyla akar.", "Pipet ince olduğu için içindeki suyun ağırlığı yoktur; parmak kalkınca suyun ağırlığı oluşur.", "2. adımda pipetin içindeki su, pipetin duvarlarına uyguladığı sıvı basıncı sayesinde tutunur."],
+  a: "B",
+  s: `<p>2. adımda pipetin üst ucu kapalıdır; pipetteki suyun alt yüzeyine dışarıdan açık hava basıncı etki eder ve suyun dökülmesini engeller. Parmak kaldırılınca açık hava basıncı suya üstten de etki eder; alttan ve üstten etkiler dengelenince su kendi ağırlığıyla akar ✓.</p><p>A: Parmak suyu "çekmez"; olay açık havanın itmesiyle gerçekleşir. C: Pipetteki suyun ağırlığı her zaman vardır. D: Sıvının yan duvarlara uyguladığı basınç suyu yukarıda tutmaz. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Ağırlıkları önemsenmeyen ve süngere değen yüzey alanları sırasıyla S, 2S ve 3S olan K, L ve M tablaları, her yerinde aynı özellikteki bir süngerin üzerine konuyor. Tablaların üzerine şekildeki gibi özdeş ağırlıklar yerleştiriliyor. Bu durumda K ile M tablalarının süngerde oluşturduğu çökmelerin eşit, L tablasınınkinin ise en fazla olduğu gözleniyor.</p><div class="fig"><svg viewBox="0 0 560 222" width="560" role="img" aria-label="Sünger üzerindeki K, L, M tablaları ve özdeş ağırlıklar"><rect x="0" y="0" width="560" height="222" fill="#ffffff"/><rect x="10" y="150" width="540" height="22" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="163" font-size="11" text-anchor="end" fill="#6b4f1d">Sünger</text><rect x="40" y="140" width="60" height="10" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/><rect x="54.0" y="118" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="64.0" y="114" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="180" y="140" width="120" height="10" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/><rect x="224.0" y="118" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="234.0" y="114" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="224.0" y="96" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="234.0" y="92" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="224.0" y="74" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="234.0" y="70" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="370" y="140" width="180" height="10" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/><rect x="444.0" y="118" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="454.0" y="114" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="444.0" y="96" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="454.0" y="92" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><rect x="444.0" y="74" width="32" height="20" fill="#475569" stroke="#0f172a" stroke-width="1.5"/><rect x="454.0" y="70" width="12" height="4" fill="#475569" stroke="#0f172a" stroke-width="1"/><text x="70" y="195" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="240" y="195" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="460" y="195" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><text x="70" y="213" font-size="12" text-anchor="middle" fill="#475569">Alan: S</text><text x="240" y="213" font-size="12" text-anchor="middle" fill="#475569">Alan: 2S</text><text x="460" y="213" font-size="12" text-anchor="middle" fill="#475569">Alan: 3S</text></svg></div><p><b>Buna göre,</b><br>I. L tablasının üzerinden bir ağırlık alınırsa L’nin oluşturduğu çökme, K’ninkine eşit olur.<br>II. M tablasının üzerine bir ağırlık daha konursa M’nin oluşturduğu çökme, L’ninkinden fazla olur.<br>III. K ile M’nin oluşturduğu çökmelerin eşit olması, katı basıncının ağırlığa bağlı olmadığını gösterir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
   a: "A",
-  s: `<p>Açık hava basıncı sabitken (P<sub>0</sub> = h · d), kullanılan sıvının <b>yoğunluğu (d) küçülürse</b>, aynı basıncı oluşturabilmek için borudaki <b>sıvı yüksekliği (h) ters orantılı olarak artar!</b> Su, cıvadan 13,6 kat daha az yoğun olduğu için su yüksekliği 76 cm × 13,6 ≈ <b>1033 cm (10,3 metre)</b> olurdu. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Özdeş 4 küpün birbirine yapıştırılmasıyla oluştur
+  s: `<p>Bir ağırlığa G diyelim ve basınçları "ağırlık ÷ alan" oranıyla karşılaştıralım: K: {{G|S}}; L: {{3G|2S}} = 1,5 × {{G|S}}; M: {{3G|3S}} = {{G|S}}. Gözlem bu oranlarla uyumludur (K = M &lt; L).</p><p>I ✓: L’den bir ağırlık alınınca {{2G|2S}} = {{G|S}} olur; K ile aynı basınç, aynı çökme.</p><p>II ✗: M’ye bir ağırlık eklenince {{4G|3S}} ≈ 1,33 × {{G|S}} olur; bu, L’nin 1,5 × {{G|S}} değerinden küçüktür. "Ağırlık artınca en derin iz o olur" diye düşünmek alanı hesaba katmamaktır.</p><p>III ✗: K ile M’de hem ağırlık hem alan aynı oranda (3 kat) değişmiştir; basınç bu yüzden aynı kalmıştır. İki değişken birlikte değiştiği için bu karşılaştırmadan "ağırlığa bağlı değil" sonucu çıkmaz. Bu yargıyı seçenler değişken kontrolünü atlamıştır.</p><p>Doğru yargı yalnızca I’dir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir tiyatro ekibi, açık havada yumuşak çim zemine kuracağı sahne için küçük bir deneme yapıyor. Ağırlığı önemsenmeyen bir platformu, uçları özdeş olan ayaklar üzerine oturtup platformun üzerine özdeş kum torbaları koyuyor. Yük, ayaklara eşit olarak dağılmaktadır. Ekip ayak ve torba sayısını değiştirerek ayakların toprağa batıp batmadığını gözlüyor.</p><div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="Çim zemin üzerinde ayaklı platform ve kum torbaları"><rect x="0" y="0" width="560" height="190" fill="#ffffff"/><rect x="20" y="150" width="520" height="26" fill="#bbf7d0" stroke="#15803d" stroke-width="1.5"/><text x="530" y="168" font-size="11" text-anchor="end" fill="#166534">Yumuşak çim zemin</text><rect x="120" y="92" width="320" height="10" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/><text x="445" y="90" font-size="11" text-anchor="start" fill="#475569">Platform</text><rect x="131" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="189" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="247" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="305" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="363" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="421" y="102" width="8" height="48" fill="#475569" stroke="#1e293b" stroke-width="1"/><ellipse cx="200" cy="78" rx="22" ry="14" fill="#d6c39a" stroke="#8a6d3b" stroke-width="1.5"/><ellipse cx="250" cy="78" rx="22" ry="14" fill="#d6c39a" stroke="#8a6d3b" stroke-width="1.5"/><ellipse cx="300" cy="78" rx="22" ry="14" fill="#d6c39a" stroke="#8a6d3b" stroke-width="1.5"/><text x="250" y="54" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Özdeş kum torbaları</text><text x="70" y="128" font-size="11" text-anchor="middle" fill="#475569">Ayak</text><defs><marker id="k2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="84" y1="124" x2="128" y2="124" stroke="#1e293b" stroke-width="2" marker-end="url(#k2a)"/></svg></div><table class="rt"><tr><th>Deneme</th><th>Ayak sayısı</th><th>Kum torbası sayısı</th><th>Sonuç</th></tr><tr><td>1</td><td>8</td><td>2</td><td>Ayaklar toprağa batmadı</td></tr><tr><td>2</td><td>4</td><td>2</td><td>Ayaklar toprağa battı</td></tr><tr><td>3</td><td>6</td><td>2</td><td>Ayaklar toprağa batmadı</td></tr></table><p>Ayakların batması, ayakların toprağa uyguladığı basıncın belirli bir değeri aşmasına bağlıdır.</p><p><b>Buna göre aşağıdaki denemelerden hangisinin sonucu, tablodaki bilgilerle önceden kesin olarak tahmin edilemez?</b></p>`,
+  c: ["6 ayak – 3 torba", "12 ayak – 4 torba", "3 ayak – 2 torba", "8 ayak – 3 torba"],
+  a: "D",
+  s: `<p>Her ayağa düşen yükü "torba sayısı ÷ ayak sayısı" ile karşılaştıralım; ayak uçları özdeş olduğundan basınç bu oranla artar. 1. deneme: {{2|8}} = 0,25 → batmadı. 3. deneme: {{2|6}} ≈ 0,33 → batmadı. 2. deneme: {{2|4}} = 0,5 → battı. Demek ki batma sınırı 0,33 ile 0,5 arasındadır.</p><p>8 ayak – 3 torba: {{3|8}} ≈ 0,375. Bu değer 0,33’ten büyük, 0,5’ten küçüktür; sınırın tam yeri bilinmediğinden batıp batmayacağı <b>kesin söylenemez</b> ✓.</p><p>A: {{3|6}} = 0,5, 2. denemeyle aynı basınç → kesinlikle batar. B: {{4|12}} ≈ 0,33, 3. denemeyle aynı basınç → kesinlikle batmaz. Bu iki şıkkı seçenler yalnızca torba ya da ayak sayısına bakıp oranı düşünmemiştir. C: {{2|3}} ≈ 0,67, 2. denemeden de büyük → kesinlikle batar. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, aynı ağaçtan kesilmiş, her yerinde aynı özellikte (türdeş), yükseklikleri eşit ve taban alanları sırasıyla S, 2S ve 4S olan silindir biçimli K, L ve M kütüklerini aynı kum havuzuna dik olarak bırakıyor. Üç kütüğün kumda oluşturduğu izlerin derinliklerinin <b>eşit</b> olduğunu görüyor ve "Katı basıncı, zemine temas eden yüzey alanına bağlı değildir." sonucuna varıyor.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Aynı ağaçtan kesilmiş eşit yükseklikte K, L, M kütükleri"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="10" y="150" width="540" height="20" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="163" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><rect x="60" y="70" width="40" height="80" fill="#c08a4f" stroke="#8a5a2b" stroke-width="2"/><ellipse cx="80.0" cy="70" rx="20.0" ry="8" fill="#e8c48a" stroke="#8a5a2b" stroke-width="2"/><line x1="60" y1="150" x2="60" y2="154" stroke="#8a5a2b" stroke-width="2"/><line x1="100" y1="150" x2="100" y2="154" stroke="#8a5a2b" stroke-width="2"/><rect x="180" y="70" width="80" height="80" fill="#c08a4f" stroke="#8a5a2b" stroke-width="2"/><ellipse cx="220.0" cy="70" rx="40.0" ry="8" fill="#e8c48a" stroke="#8a5a2b" stroke-width="2"/><line x1="180" y1="150" x2="180" y2="154" stroke="#8a5a2b" stroke-width="2"/><line x1="260" y1="150" x2="260" y2="154" stroke="#8a5a2b" stroke-width="2"/><rect x="340" y="70" width="160" height="80" fill="#c08a4f" stroke="#8a5a2b" stroke-width="2"/><ellipse cx="420.0" cy="70" rx="80.0" ry="8" fill="#e8c48a" stroke="#8a5a2b" stroke-width="2"/><line x1="340" y1="150" x2="340" y2="154" stroke="#8a5a2b" stroke-width="2"/><line x1="500" y1="150" x2="500" y2="154" stroke="#8a5a2b" stroke-width="2"/><text x="80" y="188" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">K (taban alanı S)</text><text x="220" y="188" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">L (taban alanı 2S)</text><text x="420" y="188" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">M (taban alanı 4S)</text><text x="530" y="40" font-size="11" text-anchor="end" fill="#475569">Yükseklikler eşit</text></svg></div><p><b>Öğretmeni, öğrencinin ulaştığı sonucun hatalı olduğunu söylüyor. Aşağıdakilerden hangisi bu sonucun neden hatalı olduğunu doğru açıklar?</b></p>`,
+  c: ["Kütüklerin yükseklikleri eşit olduğundan ağırlıkları da eşittir; bu durumda alanı büyük olanın izi daha sığ olmalıdır.", "Kumda oluşan iz derinliği kütüklerin uyguladığı basıncı değil, uyguladığı kuvveti gösterir.", "Kütükler aynı ağaçtan kesildiği için maddenin cinsi sabit tutulmamıştır.", "Taban alanı büyüdükçe kütüğün ağırlığı da aynı oranda arttığı için deneyde ağırlık ile yüzey alanı birlikte değişmiştir."],
+  a: "D",
+  s: `<p>Kütükler türdeş ve eşit yükseklikte olduğundan taban alanı 2 kat olanın hacmi, dolayısıyla <b>ağırlığı da 2 kat</b>, alanı 4 kat olanın ağırlığı 4 kattır. Basınç oranları: K: {{G|S}}, L: {{2G|2S}}, M: {{4G|4S}}; hepsi eşittir. İzler bu yüzden eşit çıkmıştır.</p><p>Yüzey alanının etkisini görmek için ağırlık <b>sabit</b> tutulmalıydı. Bu deneyde ağırlık ve alan birlikte değiştiği için alanın etkisi görülemez ✓.</p><p>A: "Yükseklik eşitse ağırlık eşittir" yanılgısıdır; kalın kütük daha ağırdır. B: İz derinliği basıncın göstergesidir, kuvvetin değil (kuvvet–basınç karışıklığı). C: Aynı ağaçtan kesilmeleri maddenin cinsinin <b>sabit</b> tutulduğunu gösterir; sorun bu değildir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Her yerinde aynı özellikte (türdeş), kesik piramit biçimli dolu bir beton blok, yatay zemine I. durumda geniş tabanı üzerine konuyor. II. durumda cisim ters çevrilerek dar tabanı üzerine konuyor. III. durumda ise II. durumdaki bloğun yanına, özdeş ikinci bir blok aynı biçimde (dar tabanı üzerine) yerleştiriliyor.</p><div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="Kesik piramit biçimli beton bloğun I, II, III durumları"><rect x="0" y="0" width="560" height="190" fill="#ffffff"/><line x1="10" y1="150" x2="550" y2="150" stroke="#78716c" stroke-width="3"/><polygon points="40,150 140,150 115,80 65,80" fill="#a5b4fc" stroke="#3730a3" stroke-width="2"/><polygon points="220,80 320,80 295,150 245,150" fill="#a5b4fc" stroke="#3730a3" stroke-width="2"/><polygon points="360,80 450,80 427,150 383,150" fill="#a5b4fc" stroke="#3730a3" stroke-width="2"/><polygon points="458,80 548,80 525,150 481,150" fill="#a5b4fc" stroke="#3730a3" stroke-width="2"/><text x="90" y="178" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><text x="270" y="178" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><text x="460" y="178" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text></svg></div><p><b>Bu üç durumda blokların zemine uyguladığı toplam kuvvet ve toplam basınç için aşağıdaki karşılaştırmalardan hangisi doğrudur?</b></p>`,
+  c: ["Kuvvet: I = II = III — Basınç: I &lt; II = III", "Kuvvet: I = II &lt; III — Basınç: I &lt; II &lt; III", "Kuvvet: I = II &lt; III — Basınç: I &lt; II = III", "Kuvvet: I &lt; II &lt; III — Basınç: I &lt; II &lt; III"],
+  a: "C",
+  s: `<p><b>Kuvvet:</b> Zemine uygulanan kuvvet cisimlerin toplam ağırlığıdır. Cisim ters çevrilince ağırlık değişmez (I = II); III’te iki cisim olduğundan kuvvet 2 katına çıkar (II &lt; III).</p><p><b>Basınç:</b> I’den II’ye ağırlık aynıyken zemine değen alan küçülür → basınç artar (I &lt; II). III’te ağırlık 2 kat, zemine değen alan da 2 kat olur (iki dar taban) → basınç II ile aynıdır (II = III).</p><p>A: Yan yana ikinci cisim eklenince toplam kuvvetin arttığı unutulmuştur. B: "Cisim sayısı artınca basınç artar" yanılgısı; alanın da aynı oranda büyüdüğü atlanmıştır. D: Cismin ters çevrilince kuvvetinin arttığı sanılmıştır (kuvvet ile basıncı karıştırma). Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir araştırmacı, katı basıncını etkileyen değişkenleri incelemek için farklı cisimleri kum ve un doldurulmuş havuzlara yavaşça bırakarak cisimlerin oluşturduğu izlerin derinliklerini ölçüyor. Sonuçlar tabloda verilmiştir.</p><table class="rt"><tr><th>Deneme</th><th>Cismin ağırlığı</th><th>Zemine temas eden yüzey alanı</th><th>Zeminin cinsi</th><th>İz derinliği</th></tr><tr><td>1</td><td>20 N</td><td>40 cm²</td><td>Kum</td><td>2 birim</td></tr><tr><td>2</td><td>40 N</td><td>40 cm²</td><td>Un</td><td>6 birim</td></tr><tr><td>3</td><td>40 N</td><td>80 cm²</td><td>Kum</td><td>2 birim</td></tr><tr><td>4</td><td>40 N</td><td>40 cm²</td><td>Kum</td><td>4 birim</td></tr><tr><td>5</td><td>20 N</td><td>20 cm²</td><td>Un</td><td>6 birim</td></tr></table><p><b>Bu tabloya göre aşağıdaki yorumlardan hangisi yanlıştır?</b></p>`,
+  c: ["1 ve 4. denemeler karşılaştırılarak katı basıncının ağırlığa bağlı olduğu sonucuna ulaşılır.", "3 ve 4. denemeler karşılaştırılarak ağırlık sabitken yüzey alanı küçüldükçe basıncın arttığı sonucuna ulaşılır.", "2 ve 4. denemeler, eşit basınç uygulayan cisimlerin farklı zeminlerde farklı derinlikte iz bırakabileceğini gösterir.", "2 ve 5. denemeler karşılaştırılarak katı basıncının yüzey alanına bağlı olmadığı sonucuna ulaşılır."],
+  a: "D",
+  s: `<p>Her şıkta "hangi değişkenler değişti?" sorusunu soralım.</p><p>D ✗ (yanlış yorum): 2 ve 5’te ağırlık (40 N → 20 N) ve alan (40 cm² → 20 cm²) <b>birlikte</b> değişmiştir; ikisi aynı oranda değiştiği için basınç ve iz aynı kalmıştır. İki değişken birden değiştiğinden bu karşılaştırmayla alanın etkisi hakkında karar verilemez. Bu yanılgı, 2020 ve 2021 LGS’de sorulan "iki değişken birden değişti" tuzağıdır.</p><p>A ✓: Alan (40 cm²) ve zemin (kum) aynı, yalnızca ağırlık değişmiş; iz 2’den 4 birime çıkmıştır. B ✓: Ağırlık (40 N) ve zemin aynı, alan 80’den 40 cm²’ye inmiş; iz derinleşmiştir. C ✓: Ağırlık ve alan aynı (basınç aynı), yalnızca zemin farklı; un daha derin iz vermiştir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Yumuşak toprak bir zeminde çalışan mobil vinç, iş sırasında tekerleklerini yerden kaldırıp yalnızca dört destek ayağı üzerinde duruyor. Vinç; I. durumda yük kaldırmadan, II. durumda bir yük kaldırırken, III. durumda ise aynı yükü kaldırırken destek ayaklarının altına ağırlığı önemsenmeyen geniş plakalar konmuş hâlde çalıştırılıyor. Her durumda zeminde oluşan izlerin derinliği ölçülüyor.</p><div class="fig"><svg viewBox="0 0 560 192" width="560" role="img" aria-label="Mobil vincin üç durumu"><rect x="0" y="0" width="560" height="192" fill="#ffffff"/><rect x="0" y="145" width="560" height="20" fill="#d6c39a" stroke="#a1885a" stroke-width="1"/><rect x="30" y="95" width="120" height="30" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><rect x="115" y="72" width="35" height="23" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><circle cx="55" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><circle cx="125" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><line x1="50" y1="95" x2="100" y2="30" stroke="#854d0e" stroke-width="5"/><line x1="22" y1="112" x2="22" y2="140" stroke="#334155" stroke-width="4"/><rect x="17" y="140" width="10" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><line x1="158" y1="112" x2="158" y2="140" stroke="#334155" stroke-width="4"/><rect x="153" y="140" width="10" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><text x="90" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><rect x="220" y="95" width="120" height="30" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><rect x="305" y="72" width="35" height="23" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><circle cx="245" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><circle cx="315" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><line x1="240" y1="95" x2="290" y2="30" stroke="#854d0e" stroke-width="5"/><line x1="212" y1="112" x2="212" y2="140" stroke="#334155" stroke-width="4"/><rect x="207" y="140" width="10" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><line x1="348" y1="112" x2="348" y2="140" stroke="#334155" stroke-width="4"/><rect x="343" y="140" width="10" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><line x1="290" y1="30" x2="290" y2="65" stroke="#1e293b" stroke-width="1.5"/><rect x="278" y="65" width="24" height="18" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/><text x="280" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><rect x="405" y="95" width="120" height="30" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><rect x="490" y="72" width="35" height="23" fill="#facc15" stroke="#854d0e" stroke-width="1.5"/><circle cx="430" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><circle cx="500" cy="130" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><line x1="425" y1="95" x2="475" y2="30" stroke="#854d0e" stroke-width="5"/><line x1="397" y1="112" x2="397" y2="140" stroke="#334155" stroke-width="4"/><rect x="381" y="140" width="32" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><line x1="533" y1="112" x2="533" y2="140" stroke="#334155" stroke-width="4"/><rect x="517" y="140" width="32" height="5" fill="#64748b" stroke="#1e293b" stroke-width="1"/><line x1="475" y1="30" x2="475" y2="65" stroke="#1e293b" stroke-width="1.5"/><rect x="463" y="65" width="24" height="18" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/><text x="465" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text></svg></div><p><b>Buna göre aşağıdakilerden hangisi kesin olarak söylenemez?</b></p>`,
+  c: ["II. durumda oluşan izler, I. durumdakilerden daha derindir.", "III. durumda oluşan izler, I. durumdakilerden daha sığdır.", "III. durumda oluşan izler, II. durumdakilerden daha sığdır.", "Vincin zemine uyguladığı toplam kuvvet II. ve III. durumlarda eşittir."],
+  a: "B",
+  s: `<p>I → II: Alan aynı, ağırlık artmış → basınç artar, izler derinleşir (kesin). II → III: Ağırlık aynı, plakalarla alan büyümüş → basınç azalır, izler sığlaşır (kesin). II ve III’te vinç ve yük aynı, plakaların ağırlığı önemsiz → toplam kuvvet eşit (kesin).</p><p>I ile III karşılaştırıldığında ağırlık artmış, <b>alan da artmıştır</b>. Yükün ne kadar ağır, plakaların ne kadar geniş olduğu bilinmediğinden basınç artmış da olabilir, azalmış da, değişmemiş de. Bu yüzden B şıkkındaki ifade kesin söylenemez ✓.</p><p>Bu soruda öğrencilerin yanılgısı, plakalar "basıncı azaltır" diye III’ün her durumdan sığ olacağını düşünmektir; oysa III’te yük de vardır. Diğer üç ifade tek değişkenli karşılaştırmalara dayandığı için kesindir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Şekil I’de şişirilmiş bir balon tahtaya çakılmış tek bir çivinin sivri ucunun üzerine konup balonun üzerine bir kitap yerleştirildiğinde balon patlıyor. Şekil II’de ise özdeş bir balon, aynı tahtaya sık aralıklarla çakılmış çok sayıda özdeş çivinin uçları üzerine konup üzerine aynı kitap yerleştirildiğinde balonun patlamadığı gözleniyor.</p><div class="fig"><svg viewBox="0 0 560 208" width="560" role="img" aria-label="Tek çivi ve çok çivili tahta üzerindeki balonlar"><rect x="0" y="0" width="560" height="208" fill="#ffffff"/><rect x="40" y="160" width="200" height="12" fill="#e8c48a" stroke="#8a5a2b" stroke-width="1.5"/><line x1="140" y1="160" x2="140" y2="128" stroke="#475569" stroke-width="3"/><polygon points="137,128 143,128 140,120" fill="#475569" stroke="#475569" stroke-width="1"/><ellipse cx="140" cy="98" rx="38" ry="24" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/><rect x="95" y="62" width="90" height="13" fill="#2563eb" stroke="#1e3a8a" stroke-width="1.5"/><text x="140" y="196" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Şekil I: tek çivi</text><rect x="300" y="160" width="230" height="12" fill="#e8c48a" stroke="#8a5a2b" stroke-width="1.5"/><line x1="312" y1="160" x2="312" y2="132" stroke="#475569" stroke-width="2"/><polygon points="310,132 314,132 312,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="326" y1="160" x2="326" y2="132" stroke="#475569" stroke-width="2"/><polygon points="324,132 328,132 326,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="340" y1="160" x2="340" y2="132" stroke="#475569" stroke-width="2"/><polygon points="338,132 342,132 340,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="354" y1="160" x2="354" y2="132" stroke="#475569" stroke-width="2"/><polygon points="352,132 356,132 354,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="368" y1="160" x2="368" y2="132" stroke="#475569" stroke-width="2"/><polygon points="366,132 370,132 368,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="382" y1="160" x2="382" y2="132" stroke="#475569" stroke-width="2"/><polygon points="380,132 384,132 382,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="396" y1="160" x2="396" y2="132" stroke="#475569" stroke-width="2"/><polygon points="394,132 398,132 396,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="410" y1="160" x2="410" y2="132" stroke="#475569" stroke-width="2"/><polygon points="408,132 412,132 410,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="424" y1="160" x2="424" y2="132" stroke="#475569" stroke-width="2"/><polygon points="422,132 426,132 424,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="438" y1="160" x2="438" y2="132" stroke="#475569" stroke-width="2"/><polygon points="436,132 440,132 438,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="452" y1="160" x2="452" y2="132" stroke="#475569" stroke-width="2"/><polygon points="450,132 454,132 452,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="466" y1="160" x2="466" y2="132" stroke="#475569" stroke-width="2"/><polygon points="464,132 468,132 466,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="480" y1="160" x2="480" y2="132" stroke="#475569" stroke-width="2"/><polygon points="478,132 482,132 480,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="494" y1="160" x2="494" y2="132" stroke="#475569" stroke-width="2"/><polygon points="492,132 496,132 494,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="508" y1="160" x2="508" y2="132" stroke="#475569" stroke-width="2"/><polygon points="506,132 510,132 508,126" fill="#475569" stroke="#475569" stroke-width="1"/><line x1="522" y1="160" x2="522" y2="132" stroke="#475569" stroke-width="2"/><polygon points="520,132 524,132 522,126" fill="#475569" stroke="#475569" stroke-width="1"/><ellipse cx="415" cy="102" rx="44" ry="24" fill="#fca5a5" stroke="#b91c1c" stroke-width="2"/><rect x="370" y="66" width="90" height="13" fill="#2563eb" stroke="#1e3a8a" stroke-width="1.5"/><text x="415" y="196" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Şekil II: çok sayıda özdeş çivi</text><text x="200" y="70" font-size="12" text-anchor="start" fill="#1e293b">Kitap</text><text x="475" y="74" font-size="12" text-anchor="start" fill="#1e293b">Kitap</text><text x="40" y="100" font-size="12" text-anchor="start" fill="#1e293b">Balon</text></svg></div><p><b>Buna göre,</b><br>I. Balonun ve kitabın çivilere uyguladığı toplam kuvvet iki şekilde eşittir.<br>II. Şekil II’de çivi uçlarının balona uyguladığı basınç, Şekil I’dekinden küçüktür.<br>III. Şekil II’deki çivilerin uçları daha sivri olsaydı balonun patlama olasılığı azalırdı.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: Çivilere etki eden kuvvet, balonun ve kitabın toplam ağırlığıdır; iki şekilde de aynı balon ve kitap kullanıldığından kuvvet eşittir.</p><p>II ✓: Şekil II’de bu kuvvet çok sayıda çivi ucunun toplam alanına dağılır; alan büyüdüğü için basınç küçülür ve balon patlamaz.</p><p>III ✗: Uçlar daha sivri olursa her ucun alanı, dolayısıyla toplam alan küçülür; basınç <b>artar</b> ve patlama olasılığı artar.</p><p>"Yalnız II" seçen, kuvvetin de değiştiğini sanır (kuvvet–basınç karışıklığı). III’ü içeren şıklar sivri uç ile basınç arasındaki ilişkiyi ters kurar. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Donmuş bir gölde buz çatlamaya başladığında, kurtarma ekipleri mahsur kalan kişiye ayakta yürüyerek değil, buzun üzerine yerleştirdikleri uzun ve geniş bir tahtanın üzerinde yüzükoyun uzanıp sürünerek yaklaşır.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Buz üzerinde tahtaya yüzükoyun uzanarak ilerleyen kurtarıcı"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="0" y="120" width="560" height="30" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.5"/><rect x="0" y="150" width="560" height="45" fill="#93c5fd" stroke="none" stroke-width="0"/><text x="550" y="140" font-size="12" text-anchor="end" fill="#1e3a8a" font-weight="bold">Buz</text><text x="550" y="182" font-size="12" text-anchor="end" fill="#1e3a8a">Göl suyu</text><rect x="60" y="112" width="330" height="8" fill="#e8c48a" stroke="#8a5a2b" stroke-width="1.5"/><line x1="70" y1="112" x2="70" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="100" y1="112" x2="100" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="130" y1="112" x2="130" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="160" y1="112" x2="160" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="190" y1="112" x2="190" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="220" y1="112" x2="220" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="250" y1="112" x2="250" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="280" y1="112" x2="280" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="310" y1="112" x2="310" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="340" y1="112" x2="340" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><line x1="370" y1="112" x2="370" y2="120" stroke="#8a5a2b" stroke-width="1.5"/><text x="180" y="104" font-size="11" text-anchor="middle" fill="#475569">Uzun ve geniş tahta</text><circle cx="370" cy="102" r="9" fill="#fcd34d" stroke="#1e293b" stroke-width="1.5"/><rect x="290" y="100" width="72" height="12" fill="#ef4444" stroke="#7f1d1d" stroke-width="1.5"/><path d="M430,120 L445,108 L460,120 Z" fill="#ffffff" stroke="#0f172a" stroke-width="1.5"/><line x1="420" y1="125" x2="470" y2="140" stroke="#0f172a" stroke-width="1.5" stroke-dasharray="3 3"/><text x="470" y="108" font-size="11" text-anchor="start" fill="#1e293b">Çatlak</text></svg></div><p><b>Bu yöntemle ilgili,</b><br>I. Kurtarıcının yüzükoyun uzanması, buza uyguladığı kuvveti azaltır.<br>II. Kurtarıcının yüzükoyun uzanması, buza temas eden yüzey alanını artırarak buza uyguladığı basıncı azaltır.<br>III. Ağırlığı önemsenmezse tahta, kurtarıcının ağırlığını buzda daha büyük bir alana yayar.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>I ✗: Kurtarıcı ister ayakta dursun ister uzansın, buza uyguladığı dik kuvvet kendi ağırlığıdır; değişmez. "Uzanınca daha hafif basar" düşüncesi kuvvet ile basıncı karıştırır.</p><p>II ✓: Uzanınca buza değen alan büyür; aynı ağırlık daha büyük alana dağıldığından basınç azalır ve buzun kırılma olasılığı düşer.</p><p>III ✓: Tahta, kurtarıcının ağırlığını kendi geniş yüzeyi boyunca buza iletir; temas alanı daha da büyür, basınç daha da azalır.</p><p>I’i içeren şıklar (I ve II; I, II ve III) kuvvetin değiştiğini sanır. "Yalnız II" ise tahtanın da alanı büyüttüğünü gözden kaçırır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Yeni cilalanmış yumuşak ahşap bir salon zeminine bir piyano ile bir sehpa yerleştiriliyor. Eşyaların ağırlıkları, zemine değen kısımları ve zeminde iz oluşup oluşmadığı tabloda verilmiştir. Zemin her yerinde aynı özelliktedir ve zeminde iz oluşması, zemine uygulanan basıncın belirli bir değeri aşmasına bağlıdır.</p><table class="rt"><tr><th>Eşya</th><th>Ağırlık</th><th>Zemine değen kısım</th><th>Yeni cilalı ahşap zeminde</th></tr><tr><td>Piyano</td><td>2000 N</td><td>Geniş tabanlı tekerlekler</td><td>İz oluşmadı</td></tr><tr><td>Sehpa</td><td>200 N</td><td>İnce metal ayaklar</td><td>Ayak izleri oluştu</td></tr></table><p><b>Buna göre,</b><br>I. Sehpanın zemine uyguladığı basınç, piyanonunkinden büyüktür.<br>II. Sehpanın zemine uyguladığı kuvvet, piyanonunkinden küçüktür.<br>III. Sehpa ayaklarının zemine değen toplam yüzey alanı, piyano tekerleklerininkinden küçüktür.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>I ✓: Aynı zeminde yalnızca sehpa iz bırakmıştır; sehpanın basıncı iz oluşma sınırını aşmış, piyanonunki aşmamıştır. Öyleyse sehpanın basıncı daha büyüktür.</p><p>II ✓: Zemine uygulanan kuvvet eşyanın ağırlığıdır: sehpa 200 N, piyano 2000 N. Sehpa daha küçük kuvvet uygular.</p><p>III ✓: Daha küçük kuvvetle daha büyük basınç oluşturabilmek için bu kuvvetin daha küçük bir alana etki etmesi gerekir. Sehpa ayaklarının zemine değen toplam alanı kesinlikle daha küçüktür.</p><p>"I ve II" ya da "I ve III" seçenler III’ün ağırlık ve basınç bilgisinden kesin olarak çıkarılabildiğini görmez. II’yi dışlayanlar "iz bırakan daha büyük kuvvet uygular" yanılgısına düşer. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrencinin yaptığı deneyin raporu aşağıda verilmiştir.</p><div class="box"><b>Hipotez:</b> Ağırlık sabitken zemine temas eden yüzey alanı küçülürse katı basıncı artar.<br><b>Yöntem:</b> Özdeş 6 ahşap küpün <b>tamamı</b> kullanılarak iki farklı dizilim hazırlanır. Her dizilim aynı kum havuzuna yavaşça konur ve kumda oluşan izin derinliği ölçülür.<br><b>Bulgu:</b> Ölçüm sonuçları aşağıdaki grafikte verilmiştir.</div><div class="fig"><svg viewBox="0 0 360 200" width="360" role="img" aria-label="İz derinliği sütun grafiği: I. dizilim 3 birim, II. dizilim 1 birim"><rect x="0" y="0" width="360" height="200" fill="#ffffff"/><defs><marker id="k10" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="70" y1="170" x2="380" y2="170" stroke="#1e293b" stroke-width="2" marker-end="url(#k10)"/><line x1="70" y1="170" x2="70" y2="25" stroke="#1e293b" stroke-width="2" marker-end="url(#k10)"/><text x="380" y="188" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="74" y="19" font-size="12" text-anchor="start" fill="#1e293b">İz derinliği (birim)</text><line x1="70" y1="130.0" x2="370" y2="130.0" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="64" y="134.0" font-size="11" text-anchor="end" fill="#1e293b">1</text><line x1="70" y1="90.0" x2="370" y2="90.0" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="64" y="94.0" font-size="11" text-anchor="end" fill="#1e293b">2</text><line x1="70" y1="50.0" x2="370" y2="50.0" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3"/><text x="64" y="54.0" font-size="11" text-anchor="end" fill="#1e293b">3</text><rect x="130" y="50.0" width="60" height="120.0" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/><text x="160.0" y="186" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">I. dizilim</text><rect x="250" y="130.0" width="60" height="40.0" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/><text x="280.0" y="186" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">II. dizilim</text></svg></div><p><b>Buna göre öğrencinin hazırladığı I. ve II. dizilimler aşağıdakilerden hangisi olabilir?</b></p>`,
+  c: ["I: 6 küp tek sütun hâlinde üst üste — II: Küpler, her birinde 3 küp üst üste olan iki sütun hâlinde yan yana", "I: Küpler, her birinde 3 küp üst üste olan iki sütun hâlinde yan yana — II: 6 küp tek sıra hâlinde yan yana", "I: 3 küp tek sütun hâlinde üst üste — II: 3 küp tek sıra hâlinde yan yana", "I: Küpler, her birinde 2 küp üst üste olan üç sütun hâlinde yan yana — II: Küpler, her birinde 3 küp üst üste olan iki sütun hâlinde yan yana"],
+  a: "B",
+  s: `<p>Bir küpün ağırlığı G, bir yüzünün alanı S olsun. Yönteme göre iki dizilimde de 6 küp kullanılır (ağırlık 6G). Grafiğe göre I’in izi II’ninkinin <b>3 katıdır</b>; yani I’in kuma değen alanı II’ninkinin {{1|3}}’ü olmalıdır.</p><p>B: I’de kuma 2 küp yüzü (2S), II’de 6 küp yüzü (6S) değer. Basınçlar {{6G|2S}} = 3 ve {{6G|6S}} = 1 birimdir; oran 3’tür ✓.</p><p>A: {{6G|S}} = 6 ve {{6G|2S}} = 3; I’in izi II’nin 2 katı olurdu, 3 katı değil. C: Oran 3 tuttuğu hâlde yöntemde 6 küpün tamamının kullanılması istenmiştir; bu dizilimler yönteme uymaz. D: I’de alan 3S, II’de 2S olduğundan II daha derin iz bırakırdı; grafikle çelişir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Fen bilimleri dersinde öğretmen, öğrencilerden katı basıncıyla ilgili birer cümle söylemelerini istiyor.</p><div class="dialog"><div><b>Ali:</b> Basıncın birimi pascaldır (Pa). 1 Pa, 1 m²’lik yüzeye dik olarak etki eden 1 N’luk kuvvetin oluşturduğu basınçtır.</div><div><b>Ece:</b> Katılar, kendilerine uygulanan basıncı aynı büyüklükte iletir; çivinin başındaki basınç ile ucundaki basınç bu yüzden eşittir.</div><div><b>Can:</b> Bir koli yan yatırıldığında zemine uyguladığı kuvvet değişmez ama zemine uyguladığı basınç değişebilir.</div><div><b>Deniz:</b> Bir cismin zemine uyguladığı kuvvet artarsa zemine uyguladığı basınç da kesinlikle artar.</div></div><p><b>Buna göre hangi iki öğrencinin söylediği cümle bilimsel olarak yanlıştır?</b></p>`,
+  c: ["Ali ve Can", "Ece ve Can", "Ali ve Deniz", "Ece ve Deniz"],
+  a: "D",
+  s: `<p>Ali ✓: Pascal biriminin tanımını doğru vermiştir.</p><p>Ece ✗: Katılar kuvveti aynen iletir, <b>basıncı değil</b>. Çivinin başına ve ucuna etki eden kuvvet aynıdır; uçtaki alan çok küçük olduğu için uçtaki basınç çok büyüktür. Basıncı aynen ileten sıvılardır (Pascal prensibi).</p><p>Can ✓: Koli yan yatırılınca ağırlığı (zemine uyguladığı kuvvet) aynı kalır; zemine değen yüz değişirse basınç değişir.</p><p>Deniz ✗: Kuvvet artarken temas alanı da artarsa basınç değişmeyebilir, hatta azalabilir (örneğin aynı tuğladan bir tane daha yan yana konunca basınç değişmez). "Kesinlikle" ifadesi yanlıştır.</p><p>Ali’yi içeren şıklar (A, C) doğru tanımı yanlış sanar; Can’ı içeren şıklar (A, B) kuvvet ile basıncı karıştırır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir futbolcu ıslak çim sahada önce düz tabanlı spor ayakkabıyla, sonra altında sivri dişler (krampon) bulunan ayakkabıyla aynı biçimde duruyor. Kramponlu ayakkabının dişlerinin çime battığı, düz tabanlı ayakkabının ise çimde belirgin bir iz bırakmadığı gözleniyor. İki ayakkabının ağırlıkları eşittir.</p><div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Düz tabanlı ve kramponlu ayakkabı çim üzerinde"><rect x="0" y="0" width="560" height="210" fill="#ffffff"/><rect x="10" y="150" width="540" height="30" fill="#86efac" stroke="#15803d" stroke-width="1.5"/><text x="540" y="172" font-size="11" text-anchor="end" fill="#14532d">Çim</text><path d="M60,150 L60,118 Q60,96 90,96 L190,96 Q230,96 235,125 L235,150 Z" fill="#e2e8f0" stroke="#334155" stroke-width="2"/><text x="148" y="200" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Düz tabanlı ayakkabı</text><path d="M320,140 L320,108 Q320,86 350,86 L450,86 Q490,86 495,115 L495,140 Z" fill="#fde68a" stroke="#334155" stroke-width="2"/><polygon points="329,140 341,140 338,156 332,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><polygon points="359,140 371,140 368,156 362,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><polygon points="389,140 401,140 398,156 392,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><polygon points="419,140 431,140 428,156 422,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><polygon points="449,140 461,140 458,156 452,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><polygon points="479,140 491,140 488,156 482,156" fill="#334155" stroke="#1e293b" stroke-width="1"/><text x="408" y="200" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Kramponlu ayakkabı</text></svg></div><p><b>Buna göre,</b><br>I. Krampon dişlerinin sayısı artırılırsa her bir dişin çime batma miktarı artar.<br>II. Futbolcunun çime uyguladığı toplam kuvvet iki ayakkabıda da eşittir.<br>III. Krampon dişlerinin uçlarında çime uygulanan basınç, düz tabanın çime uyguladığı basınçtan büyüktür.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "Yalnız III", "II ve III", "I ve III"],
+  a: "C",
+  s: `<p>II ✓: Çime uygulanan toplam kuvvet futbolcunun ve ayakkabıların ağırlığıdır; ayakkabıların ağırlıkları eşit olduğundan iki durumda da aynıdır. Katılar kendilerine uygulanan kuvveti aynen iletir.</p><p>III ✓: Kramponlu ayakkabıda bu kuvvet yalnızca diş uçlarının çok küçük toplam alanına etki eder; basınç büyük olur ve dişler çime batar.</p><p>I ✗: Diş sayısı artarsa aynı ağırlık daha çok dişe, yani daha büyük toplam alana dağılır; her dişteki basınç <b>azalır</b> ve dişler daha az batar.</p><p>I’i içeren şık diş sayısı ile basınç arasındaki ilişkiyi ters kurar ("çok diş, çok batma"). "Yalnız II" ve "Yalnız III" ise doğru yargılardan birini atlar; II’yi atlayan öğrenci kramponlu ayakkabının daha büyük kuvvet uyguladığını sanır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Her yerinde aynı özellikte (türdeş) dikdörtgenler prizması biçimindeki bir blok yatay zemin üzerinde durmaktadır. Bloğun ağırlığı G, zemine değen taban alanı S’dir. Blok, şekildeki kesikli çizgilerden birinden ortadan ikiye kesilerek bazı işlemler yapılıyor.</p><div class="fig"><svg viewBox="0 0 340 190" width="340" role="img" aria-label="Türdeş blok ve kesim çizgileri"><rect x="0" y="0" width="340" height="190" fill="#ffffff"/><line x1="10" y1="150" x2="270" y2="150" stroke="#78716c" stroke-width="3"/><polygon points="60,80 84.0,64.0 224.0,64.0 200,80" fill="#fbecd0" stroke="#1e3a8a" stroke-width="1.5"/><polygon points="200,80 224.0,64.0 224.0,134.0 200,150" fill="#d9b97f" stroke="#1e3a8a" stroke-width="1.5"/><rect x="60" y="80" width="140" height="70" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.5"/><line x1="60" y1="115" x2="200" y2="115" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/><line x1="130" y1="150" x2="130" y2="80" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/><text x="130" y="178" font-size="12" text-anchor="middle" fill="#1e293b">Türdeş blok: ağırlık G, taban alanı S</text><text x="232" y="118" font-size="11" text-anchor="start" fill="#dc2626">yatay kesim</text><text x="136" y="56" font-size="11" text-anchor="start" fill="#dc2626">dikey kesim</text></svg></div><p><b>Yapılan işlem ile parçaların zemine uyguladığı toplam kuvvet ve toplam basınçtaki değişim aşağıdakilerin hangisinde doğru verilmiştir?</b></p>`,
+  c: ["Yatay kesilip üst parça alt parçanın yanına zemine konursa: Kuvvet değişmez, basınç değişmez.", "Dikey kesilip parçalardan biri diğerinin tam üstüne konursa: Kuvvet değişmez, basınç 2 katına çıkar.", "Dikey kesilip parçalardan biri atılırsa: Kuvvet yarıya iner, basınç yarıya iner.", "Yatay kesilip üst parça atılırsa: Kuvvet yarıya iner, basınç değişmez."],
+  a: "B",
+  s: `<p>Her işlemde toplam ağırlık ile zemine değen toplam alanı ayrı ayrı izleyelim.</p><p>B ✓: Ağırlık G (iki parça da zeminde duruyor), alan S’den {{S|2}}’ye iner → basınç 2 katına çıkar.</p><p>A ✗: Ağırlık G kalır ama artık iki parça zemine değer; alan 2S olur → basınç <b>yarıya iner</b>. "Parçalar aynı blok, basınç değişmez" düşüncesi alanın büyüdüğünü atlar.</p><p>C ✗: Ağırlık ve alan aynı oranda yarıya iner → basınç <b>değişmez</b>. Kuvvet azalınca basıncın da mutlaka azalacağı sanılmıştır.</p><p>D ✗: Alan S olarak kalır, ağırlık yarıya iner → basınç <b>yarıya iner</b>. Dikey ve yatay kesim karıştırılmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Özdeş silindir biçimli ağırlıklar, her yerinde aynı özellikteki kum zemine şekildeki gibi yerleştiriliyor: I’de tek ağırlık, II’de iki ağırlık üst üste, III’te iki ağırlık yan yana, IV’te üç ağırlık üst üste duruyor. Kumda oluşan izlerin derinlikleri tabloda verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 192" width="560" role="img" aria-label="Kum üzerinde özdeş ağırlıklarla I-IV düzenekleri"><rect x="0" y="0" width="560" height="192" fill="#ffffff"/><rect x="10" y="140" width="540" height="22" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="153" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><rect x="52" y="114" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="64" y="108" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="172" y="114" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="184" y="108" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="172" y="82" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="184" y="76" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="282" y="114" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="294" y="108" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="318" y="114" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="330" y="108" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="442" y="114" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="454" y="108" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="442" y="82" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="454" y="76" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><rect x="442" y="50" width="36" height="26" fill="#64748b" stroke="#0f172a" stroke-width="1.5"/><rect x="454" y="44" width="12" height="6" fill="#64748b" stroke="#0f172a" stroke-width="1"/><text x="70" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><text x="190" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><text x="318" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><text x="460" y="182" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text></svg></div><table class="rt"><tr><th>Düzenek</th><th>I</th><th>II</th><th>III</th><th>IV</th></tr><tr><td>İz derinliği</td><td>1 birim</td><td>2 birim</td><td>1 birim</td><td>3 birim</td></tr></table><p><b>"Temas yüzey alanı aynı iken cismin zemine uyguladığı kuvvet arttıkça basınç artar." sonucuna ulaşmak için karşılaştırılabilecek düzenek ikililerinin tamamı aşağıdakilerin hangisinde verilmiştir?</b></p>`,
+  c: ["Yalnız I – II", "I – II ve II – IV", "I – III, I – II ve II – IV", "I – II, I – IV ve II – IV"],
+  a: "D",
+  s: `<p>Bir ağırlığın ağırlığı G, kuma değen alanı S olsun. I: G, S. II: 2G, S. III: 2G, 2S. IV: 3G, S.</p><p>Kuvvetin etkisi için alanı aynı, kuvveti farklı ikililer gerekir: I, II ve IV’ün hepsinde alan S’dir. I – II (G → 2G; iz 1 → 2), I – IV (G → 3G; iz 1 → 3) ve II – IV (2G → 3G; iz 2 → 3) ikililerinin üçü de bu sonucu verir ✓.</p><p>A ve B eksiktir; alanı aynı olan diğer ikilileri atlar. C şıkkındaki I – III ikilisinde hem kuvvet (G → 2G) hem alan (S → 2S) değişmiştir; izlerin eşit çıkması da bu yüzdendir. III, alanı S olan hiçbir düzenekle kuvvet karşılaştırmasına girmez. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Ağırlıkları eşit olan 3 ayaklı ve 4 ayaklı iki kamp taburesi, her yerinde aynı özellikteki yumuşak toprak bir kamp alanında durmaktadır. Taburelerin bütün ayakları özdeştir. Ahmet sırayla iki tabureye de oturuyor. Her iki durumda da ağırlık, taburenin ayaklarına eşit olarak dağılmaktadır.</p><div class="fig"><svg viewBox="0 0 560 198" width="560" role="img" aria-label="3 ayaklı ve 4 ayaklı kamp taburesi toprak üzerinde"><rect x="0" y="0" width="560" height="198" fill="#ffffff"/><rect x="10" y="150" width="540" height="16" fill="#d6b98c" stroke="#8a6d3b" stroke-width="1.5"/><text x="540" y="162" font-size="11" text-anchor="end" fill="#5b4321">Yumuşak toprak</text><rect x="70" y="80" width="160" height="14" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/><rect x="82" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><rect x="145" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><rect x="208" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><text x="150" y="188" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">3 ayaklı kamp taburesi</text><rect x="320" y="80" width="200" height="14" fill="#60a5fa" stroke="#1e3a8a" stroke-width="1.5"/><rect x="332" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><rect x="387" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><rect x="443" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><rect x="498" y="94" width="10" height="56" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><text x="420" y="188" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">4 ayaklı kamp taburesi</text></svg></div><p><b>Ahmet tabureye oturduğunda oluşan durumla ilgili,</b><br>I. 3 ayaklı taburenin ayakları toprağa daha çok batar.<br>II. İki durumda toprağa etki eden toplam kuvvet eşittir.<br>III. 4 ayaklı taburenin ayak sayısı fazla olduğu için toprağa uyguladığı basınç daha büyüktür.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>II ✓: Toprağa etki eden toplam kuvvet, Ahmet’in ve taburenin toplam ağırlığıdır. Tabureler eşit ağırlıkta olduğundan iki durumda da toplam kuvvet eşittir.</p><p>I ✓: Aynı toplam ağırlık, 3 ayaklıda 3 ayağın, 4 ayaklıda 4 ayağın toplam alanına dağılır. 3 ayaklıda toplam temas alanı daha küçük olduğu için basınç daha büyüktür; ayaklar daha çok batar.</p><p>III ✗: Ayak sayısı arttıkça toplam temas alanı büyür, basınç <b>azalır</b>. "Çok ayak, çok basınç" yanılgısı, tır ve trenlerde çok tekerlek kullanılmasının nedenini ters kurmaktır.</p><p>"Yalnız I" seçen toplam kuvvetin de değiştiğini sanır; III’ü içeren şıklar ayak sayısı ile basınç arasındaki ilişkiyi ters kurar. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Ağırlığı G, taban alanı S olan boş bir kutu kum havuzuna doğrudan konduğunda kumda belirli derinlikte bir iz oluşuyor. Öğrenci, kutunun içine kum koyarak ve kutuyu ağırlığı önemsenmeyen düz tablalar üzerine yerleştirerek izin derinliğini <b>değiştirmeyecek</b> bir düzenek hazırlamak istiyor. Tablalar kumun üzerine tam oturmakta, kutu da tablanın ortasına konmaktadır.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Kum üzerinde kutu ve tabla üzerinde kutu"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="10" y="150" width="540" height="22" fill="#e7d3a1" stroke="#c8a96a" stroke-width="1.5"/><text x="544" y="163" font-size="11" text-anchor="end" fill="#6b4f1d">Kum</text><rect x="90" y="140" width="220" height="10" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/><text x="200" y="136" font-size="11" text-anchor="middle" fill="#1e293b"></text><polygon points="150,80 168.0,68.0 268.0,68.0 250,80" fill="#fbecd0" stroke="#92400e" stroke-width="1.5"/><polygon points="250,80 268.0,68.0 268.0,128.0 250,140" fill="#d9b97f" stroke="#92400e" stroke-width="1.5"/><rect x="150" y="80" width="100" height="60" fill="#fcd34d" stroke="#92400e" stroke-width="1.5"/><text x="200" y="190" font-size="12" text-anchor="middle" fill="#475569">Tabla üzerinde kutu (örnek)</text><polygon points="390,90 408.0,78.0 508.0,78.0 490,90" fill="#fbecd0" stroke="#92400e" stroke-width="1.5"/><polygon points="490,90 508.0,78.0 508.0,138.0 490,150" fill="#d9b97f" stroke="#92400e" stroke-width="1.5"/><rect x="390" y="90" width="100" height="60" fill="#fcd34d" stroke="#92400e" stroke-width="1.5"/><text x="450" y="190" font-size="12" text-anchor="middle" fill="#475569">Başlangıç: kutu kumda</text></svg></div><p><b>Öğrenci aşağıdakilerden hangisini yaparsa amacına ulaşır?</b></p>`,
+  c: ["Kutunun içine kutunun ağırlığı kadar kum koyup kutuyu, taban alanı kutununkinin 2 katı olan tablanın üzerine yerleştirmek", "Kutunun içine kutunun ağırlığının 2 katı kadar kum koyup kutuyu, taban alanı kutununkinin 2 katı olan tablanın üzerine yerleştirmek", "Kutunun içine kutunun ağırlığının yarısı kadar kum koyup kutuyu, taban alanı kutununkinin 2 katı olan tablanın üzerine yerleştirmek", "Kutunun içine kutunun ağırlığı kadar kum koyup kutuyu, taban alanı kutununkinin yarısı olan tablanın üzerine yerleştirmek"],
+  a: "A",
+  s: `<p>Başlangıçta basınç {{G|S}} kadardır. Kuma artık tablanın alanı değer; izin değişmemesi için "toplam ağırlık ÷ tabla alanı" oranı {{G|S}} olmalıdır.</p><p>A: Toplam ağırlık G + G = 2G, alan 2S → {{2G|2S}} = {{G|S}} ✓.</p><p>B: Toplam ağırlık G + 2G = <b>3G</b> olur (kutunun kendi ağırlığı unutulmamalı); {{3G|2S}} = 1,5 × {{G|S}}, iz derinleşir. "Ağırlık 2 kat, alan 2 kat" sanmak bu çeldiricinin tuzağıdır.</p><p>C: {{1,5G|2S}} = 0,75 × {{G|S}}, iz sığlaşır. D: Kutu kendi tabanından küçük tablaya oturur, kuma {{S|2}} alan değer; {{2G|0,5S}} = 4 × {{G|S}}, iz çok derinleşir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Renkleri dışında özdeş olan ve boyutları 30 cm × 20 cm × 5 cm olan ansiklopediler yatay bir rafa üç farklı biçimde diziliyor. K ve M’de ansiklopediler dik durduğunda rafa 20 cm × 5 cm’lik yüzleri, L’de ise üst üste yatık durduklarından en alttakinin 30 cm × 20 cm’lik yüzü değmektedir.</p><div class="fig"><svg viewBox="0 0 560 214" width="560" role="img" aria-label="Raftaki ansiklopedilerin K, L ve M dizilişleri"><rect x="0" y="0" width="560" height="214" fill="#ffffff"/><rect x="10" y="150" width="540" height="12" fill="#e8c48a" stroke="#8a5a2b" stroke-width="1.5"/><text x="545" y="176" font-size="11" text-anchor="end" fill="#475569">Raf (yatay)</text><rect x="40" y="60" width="22" height="90" fill="#2563eb" stroke="#1e293b" stroke-width="1.5"/><rect x="62" y="60" width="22" height="90" fill="#dc2626" stroke="#1e293b" stroke-width="1.5"/><rect x="84" y="60" width="22" height="90" fill="#16a34a" stroke="#1e293b" stroke-width="1.5"/><rect x="106" y="60" width="22" height="90" fill="#f59e0b" stroke="#1e293b" stroke-width="1.5"/><text x="84" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="84" y="206" font-size="11" text-anchor="middle" fill="#475569">4 tanesi dik, yan yana</text><rect x="200" y="132" width="130" height="18" fill="#2563eb" stroke="#1e293b" stroke-width="1.5"/><rect x="200" y="114" width="130" height="18" fill="#dc2626" stroke="#1e293b" stroke-width="1.5"/><rect x="200" y="96" width="130" height="18" fill="#16a34a" stroke="#1e293b" stroke-width="1.5"/><rect x="200" y="78" width="130" height="18" fill="#f59e0b" stroke="#1e293b" stroke-width="1.5"/><text x="265" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="265" y="206" font-size="11" text-anchor="middle" fill="#475569">4 tanesi yatık, üst üste</text><rect x="420" y="60" width="22" height="90" fill="#7c3aed" stroke="#1e293b" stroke-width="1.5"/><rect x="442" y="60" width="22" height="90" fill="#0891b2" stroke="#1e293b" stroke-width="1.5"/><text x="442" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><text x="442" y="206" font-size="11" text-anchor="middle" fill="#475569">2 tanesi dik, yan yana</text></svg></div><p><b>Buna göre ansiklopedilerin rafa uyguladığı kuvvet ve basınçla ilgili aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["L’de en alttaki ansiklopedinin rafa uyguladığı kuvvet, K’deki bir ansiklopedinin rafa uyguladığı kuvvete eşittir.", "Ansiklopedilerin rafa uyguladığı toplam basınç en büyük L’dedir.", "Ansiklopedilerin rafa uyguladığı toplam basınç K ve M’de eşittir.", "Ansiklopedilerin rafa uyguladığı toplam kuvvet K ve M’de eşittir."],
+  a: "C",
+  s: `<p>Bir ansiklopedinin ağırlığı G olsun. Dik duruşta rafa değen alan 20 × 5 = 100 cm², yatık duruşta 30 × 20 = 600 cm²’dir.</p><p>K: 4G, alan 4 × 100 = 400 cm² → {{G|100}}. L: 4G, alan 600 cm² → {{G|150}}. M: 2G, alan 2 × 100 = 200 cm² → {{G|100}}.</p><p>C ✓: K ve M’de basınç eşittir; yan yana dizilen özdeş cisimlerde sayı değişse de ağırlık ve alan aynı oranda değişir.</p><p>A ✗: L’de en alttaki ansiklopedi üstündekilerin ağırlığını da rafa iletir; rafa 4G kuvvet uygular, K’deki tek ansiklopedi ise G. B ✗: Toplam basınç en küçük L’dedir; üst üste koymanın basıncı her zaman artıracağı sanılmıştır, oysa L’de yatık yüz çok geniştir. D ✗: K’de 4G, M’de 2G kuvvet vardır; basınç eşitliği kuvvet eşitliği sanılmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Dikdörtgenler prizması biçimindeki bir tahta blok, üzerine konan cismin uyguladığı basıncı ölçen ve bloktan daha geniş olan yatay bir sensör levhasının üzerine sırasıyla üç farklı yüzü üzerinde konuyor. Ölçümler tabloda verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="Sensör levhası üzerindeki blok"><rect x="0" y="0" width="560" height="170" fill="#ffffff"/><rect x="60" y="130" width="440" height="14" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/><text x="495" y="160" font-size="11" text-anchor="end" fill="#475569">Basınç sensörü levhası</text><polygon points="220,90 250.0,70.0 370.0,70.0 340,90" fill="#fbecd0" stroke="#166534" stroke-width="1.5"/><polygon points="340,90 370.0,70.0 370.0,110.0 340,130" fill="#d9b97f" stroke="#166534" stroke-width="1.5"/><rect x="220" y="90" width="120" height="40" fill="#86efac" stroke="#166534" stroke-width="1.5"/><rect x="420" y="70" width="60" height="34" fill="#0f172a" stroke="#0f172a" stroke-width="1"/><text x="450" y="92" font-size="13" text-anchor="middle" fill="#a7f3d0" font-weight="bold">Pa</text><line x1="450" y1="104" x2="450" y2="130" stroke="#334155" stroke-width="1.5"/></svg></div><table class="rt"><tr><th>Bloğun levhaya değen yüzü</th><th>1. yüz</th><th>2. yüz</th><th>3. yüz</th></tr><tr><td>Ölçülen basınç</td><td>600 Pa</td><td>1200 Pa</td><td>2400 Pa</td></tr></table><p><b>Buna göre,</b><br>I. Blok her üç konumda da levhaya eşit büyüklükte kuvvet uygular.<br>II. Bloğun 3. yüzünün alanı, 1. yüzünün alanının {{1|4}}’ü kadardır.<br>III. Blok 2. yüzü üzerinde dururken yanına özdeş bir blok aynı biçimde levhaya konursa sensör 2400 Pa gösterir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>I ✓: Blok hangi yüzü üzerine konursa konsun levhaya uyguladığı kuvvet ağırlığıdır; değişmez.</p><p>II ✓: Kuvvet aynıyken basınç alanla ters orantılıdır. 3. yüzdeki basınç (2400 Pa), 1. yüzdekinin (600 Pa) 4 katıdır; öyleyse 3. yüzün alanı 1. yüzün alanının {{1|4}}’üdür.</p><p>III ✗: Yan yana konan özdeş blokla toplam ağırlık 2 katına çıkar, levhaya değen toplam alan da 2 katına çıkar; basınç değişmez, sensör yine 1200 Pa gösterir. 2400 Pa, blok <b>üstüne</b> konsaydı görülürdü.</p><p>III’ü içeren şıklar "yan yana" ile "üst üste" koymayı karıştırır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Özdeş deney tüplerinin alt uçları masaya değecek şekilde tutuluyor. I’de dik tutulan tüpte bir miktar su vardır. II’de, I’dekiyle aynı miktarda su bulunan tüp eğik tutulmaktadır. III’te ise II’deki gibi eğik tutulan tüpe, su yüzeyi masadan I’deki su yüzeyi ile aynı yükseklikte olacak kadar su konmuştur.</p><div class="fig"><svg viewBox="0 0 560 242" width="560" role="img" aria-label="Dik ve eğik tutulan özdeş deney tüpleri"><rect x="0" y="0" width="560" height="242" fill="#ffffff"/><line x1="10" y1="210" x2="550" y2="210" stroke="#78716c" stroke-width="3"/><defs><clipPath id="s1a"><polygon points="68.0,210.0 68.0,60.0 92.0,60.0 92.0,210.0"/></clipPath></defs><rect x="-20" y="120.0" width="200" height="120.0" fill="#bfdbfe" clip-path="url(#s1a)"/><polygon points="68.0,210.0 68.0,60.0 92.0,60.0 92.0,210.0" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="40" y1="120.0" x2="190" y2="120.0" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 3"/><text x="100" y="232" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><defs><clipPath id="s1b"><polygon points="222.3,191.6 337.2,95.2 352.6,113.6 237.7,210.0"/></clipPath></defs><rect x="130" y="143.0" width="200" height="87.9" fill="#bfdbfe" clip-path="url(#s1b)"/><polygon points="222.3,191.6 337.2,95.2 352.6,113.6 237.7,210.0" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="190" y1="142.95658181078372" x2="340" y2="142.95658181078372" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 3"/><text x="250" y="232" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><defs><clipPath id="s1c"><polygon points="392.3,191.6 507.2,95.2 522.6,113.6 407.7,210.0"/></clipPath></defs><rect x="300" y="120.0" width="200" height="110.8" fill="#bfdbfe" clip-path="url(#s1c)"/><polygon points="392.3,191.6 507.2,95.2 522.6,113.6 407.7,210.0" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="360" y1="120.0" x2="510" y2="120.0" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 3"/><text x="420" y="232" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><line x1="20" y1="120.0" x2="545" y2="120.0" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2 4"/></svg></div><p><b>Tüplerin en alt noktalarına etki eden sıvı basınçları P<sub>I</sub>, P<sub>II</sub> ve P<sub>III</sub> arasındaki ilişki aşağıdakilerden hangisidir?</b></p>`,
+  c: ["P<sub>I</sub> = P<sub>II</sub> = P<sub>III</sub>", "P<sub>I</sub> = P<sub>III</sub> &gt; P<sub>II</sub>", "P<sub>III</sub> &gt; P<sub>I</sub> &gt; P<sub>II</sub>", "P<sub>II</sub> &gt; P<sub>I</sub> = P<sub>III</sub>"],
+  a: "B",
+  s: `<p>Sıvı basıncı, noktanın sıvının serbest yüzeyine olan <b>dik (düşey) uzaklığına</b> bağlıdır; sıvı sütununun eğik uzunluğuna ya da sıvı miktarına değil.</p><p>II’de su miktarı I’dekiyle aynıdır ama tüp eğilince su yüzeyi alçalır; en alt noktanın düşey derinliği azalır → P<sub>II</sub> &lt; P<sub>I</sub>. III’te su yüzeyi I ile aynı yükseklikte, en alt noktalar da masada olduğundan düşey derinlikler eşittir → P<sub>III</sub> = P<sub>I</sub>.</p><p>A: "Su miktarı aynıysa basınç aynıdır" yanılgısı. C: III’te daha çok su olduğu için basıncın daha büyük olacağı sanılmıştır; oysa düşey derinlik I ile aynıdır. D: Derinlik, eğik sıvı sütununun uzunluğu sanılmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir kapta birbirine karışmayan X sıvısı ve su bulunmaktadır; yoğunluğu suyunkinden küçük olan X sıvısı suyun üstünde, suyla eşit kalınlıkta bir tabaka oluşturmuştur. Yalnızca sıvı basıncını ölçen bir basınçölçer, X sıvısının üst yüzeyinden kabın tabanına kadar yavaşça indiriliyor.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Üstte X sıvısı altta su bulunan kap ve dört basınç-derinlik grafiği"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="30" y="50" width="100" height="60" fill="#fde68a" stroke="none" stroke-width="0"/><rect x="30" y="110" width="100" height="60" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="30,30 30,170 130,170 130,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="30" y1="50" x2="130" y2="50" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="5 3"/><line x1="30" y1="110" x2="130" y2="110" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><text x="80" y="85" font-size="12" text-anchor="middle" fill="#1e293b">X sıvısı</text><text x="80" y="145" font-size="12" text-anchor="middle" fill="#1e293b">Su</text><text x="80" y="192" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Kap</text><defs><marker id="s2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="165" y1="150" x2="257" y2="150" stroke="#1e293b" stroke-width="2" marker-end="url(#s2a)"/><line x1="165" y1="150" x2="165" y2="50" stroke="#1e293b" stroke-width="2" marker-end="url(#s2a)"/><text x="257" y="168" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text><text x="169" y="44" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><line x1="206" y1="150" x2="206" y2="58" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><polyline points="165,150 247,68" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="211" y="184" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><defs><marker id="s2b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="265" y1="150" x2="357" y2="150" stroke="#1e293b" stroke-width="2" marker-end="url(#s2b)"/><line x1="265" y1="150" x2="265" y2="50" stroke="#1e293b" stroke-width="2" marker-end="url(#s2b)"/><text x="357" y="168" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text><text x="269" y="44" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><line x1="306" y1="150" x2="306" y2="58" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><polyline points="265,150 306,90 347,68" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="311" y="184" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><defs><marker id="s2c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="365" y1="150" x2="457" y2="150" stroke="#1e293b" stroke-width="2" marker-end="url(#s2c)"/><line x1="365" y1="150" x2="365" y2="50" stroke="#1e293b" stroke-width="2" marker-end="url(#s2c)"/><text x="457" y="168" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text><text x="369" y="44" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><line x1="406" y1="150" x2="406" y2="58" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><polyline points="365,150 406,110 447,110" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="411" y="184" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><defs><marker id="s2d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="465" y1="150" x2="557" y2="150" stroke="#1e293b" stroke-width="2" marker-end="url(#s2d)"/><line x1="465" y1="150" x2="465" y2="50" stroke="#1e293b" stroke-width="2" marker-end="url(#s2d)"/><text x="557" y="168" font-size="12" text-anchor="end" fill="#1e293b">Derinlik</text><text x="469" y="44" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><line x1="506" y1="150" x2="506" y2="58" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><polyline points="465,150 506,122 547,68" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="511" y="184" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text><text x="355" y="30" font-size="11" text-anchor="middle" fill="#475569">Kesikli dikey çizgi: X – su sınırı</text></svg></div><p><b>Basınçölçerin gösterdiği değerin derinliğe göre değişimi numaralanmış grafiklerden hangisi gibi olabilir?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "D",
+  s: `<p>Basınçölçer aşağı indikçe üzerindeki sıvı sütunu sürekli artar; bu yüzden basınç hem X hem su tabakasında <b>sürekli artar</b>.</p><p>Aynı miktar derinlik artışında, yoğunluğu büyük olan sıvıda basınç daha çok artar. X tabakasında grafik daha az eğimli, su tabakasında daha dik olmalıdır → IV ✓.</p><p>I: Tek eğimli doğru, iki sıvının yoğunluğunu aynı kabul eder. II: X tabakasında daha hızlı artış gösterir; X’in yoğunluğunu sudan büyük sanmaktır. III: Suya geçince basıncın değişmediğini gösterir; oysa daha derine inildikçe basınç artmaya devam eder. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir çiçekçi, yatay bir rafa taban alanları eşit (S), şekilleri farklı ve ağırlıkları önemsenmeyecek kadar hafif K, L ve M cam vazolarını diziyor. K yukarı doğru genişleyen, L düzgün silindir, M ise yukarı doğru daralan biçimdedir. Çiçekçi vazoların her birine <b>eşit hacimde</b> su koyuyor; hiçbir vazodan su taşmıyor.</p><div class="fig"><svg viewBox="0 0 560 196" width="560" role="img" aria-label="Taban alanları eşit, şekilleri farklı K, L, M vazoları"><rect x="0" y="0" width="560" height="196" fill="#ffffff"/><line x1="10" y1="160" x2="550" y2="160" stroke="#78716c" stroke-width="3"/><polyline points="40,50 90,160 150,160 200,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polyline points="250,50 250,160 310,160 310,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><polyline points="415,50 400,160 460,160 445,50" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><text x="120" y="185" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="280" y="185" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="430" y="185" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><text x="120" y="150" font-size="11" text-anchor="middle" fill="#475569">taban S</text><text x="280" y="150" font-size="11" text-anchor="middle" fill="#475569">taban S</text><text x="430" y="150" font-size="11" text-anchor="middle" fill="#475569">taban S</text></svg></div><p><b>Vazoların tabanına etki eden sıvı basınçları ile vazoların rafa uyguladığı katı basınçları için aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["Sıvı basınçları: K = L = M — Katı basınçları: K = L = M", "Sıvı basınçları: M &gt; L &gt; K — Katı basınçları: M &gt; L &gt; K", "Sıvı basınçları: K &gt; L &gt; M — Katı basınçları: K = L = M", "Sıvı basınçları: M &gt; L &gt; K — Katı basınçları: K = L = M"],
+  a: "D",
+  s: `<p><b>Sıvı basıncı</b> derinliğe bağlıdır. Taban alanları eşit vazolara eşit hacimde su konunca, yukarı doğru daralan M’de su en yükseğe, yukarı doğru genişleyen K’de en az yükseğe çıkar. Derinlikler M &gt; L &gt; K olduğundan sıvı basınçları da M &gt; L &gt; K’dir.</p><p><b>Katı basıncı</b> vazonun ve içindekinin toplam ağırlığına ve rafa değen alana bağlıdır. Vazoların ağırlığı önemsiz, su ağırlıkları eşit (eşit hacim), taban alanları eşit → katı basınçları eşittir.</p><p>A: "Su miktarı aynıysa sıvı basıncı aynıdır" yanılgısı. B: Katı basıncı da sıvı derinliğine bağlı sanılmıştır. C: Geniş ağızlı vazoda suyun daha yükseğe çıkacağı düşünülmüş; hacim ile yükseklik ilişkisi ters kurulmuştur. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Selin, "Sıvı basıncı sıvının miktarına bağlıdır." hipotezini test etmek için kenarları dik bir kabın tabanına basınçölçer takıyor ve kaba bir miktar su koyuyor. Daha sonra kaba bir miktar daha su ekleyince basınçölçerdeki değerin arttığını görüyor ve hipotezinin doğrulandığını söylüyor.</p><div class="fig"><svg viewBox="0 0 560 208" width="560" role="img" aria-label="Selin'in deneyi: su eklenince tabandaki basınç artıyor"><rect x="0" y="0" width="560" height="208" fill="#ffffff"/><line x1="10" y1="170" x2="550" y2="170" stroke="#78716c" stroke-width="3"/><rect x="80" y="118" width="120" height="50" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="80" y1="118" x2="200" y2="118" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="80,38 80,168 200,168 200,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="68" cy="158" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="68" y1="158" x2="73" y2="152" stroke="#dc2626" stroke-width="1.8"/><text x="140" y="198" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Önce</text><rect x="340" y="68" width="120" height="100" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="340" y1="68" x2="460" y2="68" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="340,38 340,168 460,168 460,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="328" cy="158" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="328" y1="158" x2="333" y2="152" stroke="#dc2626" stroke-width="1.8"/><text x="400" y="198" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Su eklendikten sonra</text><text x="140" y="110" font-size="11" text-anchor="middle" fill="#1e293b"></text><text x="76" y="138" font-size="11" text-anchor="end" fill="#475569">Basınçölçer</text><text x="40" y="162" font-size="13" text-anchor="middle" fill="#dc2626" font-weight="bold">2 Pa</text><text x="300" y="162" font-size="13" text-anchor="middle" fill="#dc2626" font-weight="bold">4 Pa</text></svg></div><p>Öğretmeni, Selin’in deneyinde sıvı miktarı ile birlikte suyun derinliğinin de değiştiğini, bu yüzden deneyin hipotezi test etmek için uygun olmadığını belirtiyor.</p><p><b>Selin hipotezini doğru biçimde test etmek için aşağıdaki düzeneklerden hangisini kurmalıdır?</b></p>`,
+  c: ["Özdeş iki kaba farklı miktarlarda su koyup basınçölçerleri kapların tabanına takmak", "Taban alanları farklı iki kaba eşit miktarda su koyup basınçölçerleri kapların tabanına takmak", "Taban alanları farklı iki kaba, su yükseklikleri eşit olacak şekilde farklı miktarlarda su koyup basınçölçerleri kapların tabanına takmak", "Aynı kaba su eklemeye devam edip basınçölçeri her seferinde su yüzeyine daha yakın bir noktaya takmak"],
+  a: "C",
+  s: `<p>Miktarın etkisini görmek için iki düzenekte <b>yalnızca sıvı miktarı farklı</b>, ölçüm noktasının derinliği ve sıvının cinsi aynı olmalıdır. Taban alanları farklı kaplara su yükseklikleri eşit olacak şekilde su konursa miktarlar farklı, derinlikler aynı olur ✓. (Bu deneyde iki ölçer de aynı değeri gösterir; böylece sıvı basıncının miktara değil derinliğe bağlı olduğu görülür.)</p><p>A: Özdeş kaplarda farklı miktar su, farklı yükseklik demektir; Selin’in hatası tekrarlanır. B: Bu kez miktar sabit, derinlik değişkendir; hipotezdeki değişken değiştirilmemiştir. D: Ölçerin yeri değiştikçe derinlik de değişir; miktarın etkisi ayrılamaz. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir çiftlikteki sulama için kullanılan, ağzı açık, dikdörtgenler prizması biçimindeki K ve L su depolarının yükseklikleri 2 m, genişlikleri 1 m, uzunlukları ise sırasıyla 6 m ve 2 m’dir. İki depo da ağzına kadar suyla doludur. Ahmet, "K deposunda çok daha fazla su olduğu için K’nin ön duvarının alt kısmına daha büyük sıvı basıncı etki eder." diyor.</p><div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Uzunlukları farklı, yükseklikleri eşit K ve L su depoları"><rect x="0" y="0" width="560" height="206" fill="#ffffff"/><line x1="10" y1="170" x2="550" y2="170" stroke="#78716c" stroke-width="3"/><rect x="30" y="70" width="300" height="98" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/><text x="180" y="195" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">K deposu</text><rect x="400" y="70" width="100" height="98" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/><text x="450" y="195" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">L deposu</text><text x="180" y="60" font-size="11" text-anchor="middle" fill="#475569">uzunluk 6 m</text><text x="450" y="60" font-size="11" text-anchor="middle" fill="#475569">uzunluk 2 m</text><text x="345" y="125" font-size="11" text-anchor="start" fill="#475569">2 m</text><text x="515" y="125" font-size="11" text-anchor="start" fill="#475569">2 m</text></svg></div><p><b>Buna göre,</b><br>I. Ahmet, sıvı basıncının sıvı miktarına bağlı olduğunu düşünmektedir.<br>II. İki deponun ön duvarlarının alt kenarına yakın noktalara etki eden sıvı basınçları eşittir.<br>III. Depoların kendi ağırlıkları önemsenmezse iki deponun zemine uyguladığı katı basınçları eşittir.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>I ✓: Ahmet basınç farkını su miktarına bağlamaktadır; bu, "sıvı basıncı miktara bağlıdır" yanılgısıdır.</p><p>II ✓: Sıvı basıncı yalnızca derinliğe ve sıvının yoğunluğuna bağlıdır. Su yükseklikleri ve sıvının cinsi aynı olduğundan ön duvarların alt kenarındaki basınçlar eşittir.</p><p>III ✓: K’deki su L’dekinin 3 katı (ağırlık 3 kat), K’nin taban alanı da L’ninkinin 3 katıdır (6 m² ve 2 m²). Ağırlık ve alan aynı oranda büyüdüğü için katı basınçları eşittir.</p><p>Ahmet’in düşüncesini doğru bulup I’i dışarıda bırakan ya da III’te "K daha ağır, basıncı büyük" diyen öğrenci kuvvet ile basıncı karıştırır. Üç yargı da doğrudur. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir pet şişenin yan yüzünde farklı yüksekliklerde açılan K, L ve M deliklerine özdeş balonlar takılıyor. Şişe Şekil I’deki gibi su ile doldurulduğunda balonlardan M’nin en çok, K’nin en az şiştiği gözleniyor. Daha sonra şişe boşaltılıp kurutuluyor ve Şekil I’deki su seviyesine kadar zeytinyağı ile dolduruluyor (Şekil II). Zeytinyağının yoğunluğu suyunkinden küçüktür.</p><div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Yan yüzünde K, L, M balonları bulunan su dolu şişe"><rect x="0" y="0" width="560" height="206" fill="#ffffff"/><line x1="10" y1="172" x2="550" y2="172" stroke="#78716c" stroke-width="3"/><rect x="90" y="50" width="70" height="120" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="90,40 90,170 160,170 160,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="90" y1="50" x2="160" y2="50" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="4 3"/><ellipse cx="166" cy="75" rx="6" ry="4.800000000000001" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/><text x="82" y="79" font-size="12" text-anchor="end" fill="#1e293b" font-weight="bold">K</text><ellipse cx="170" cy="110" rx="10" ry="8.0" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/><text x="82" y="114" font-size="12" text-anchor="end" fill="#1e293b" font-weight="bold">L</text><ellipse cx="174" cy="145" rx="14" ry="11.200000000000001" fill="#fca5a5" stroke="#b91c1c" stroke-width="1.5"/><text x="82" y="149" font-size="12" text-anchor="end" fill="#1e293b" font-weight="bold">M</text><text x="130" y="196" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Şekil I: su</text><text x="370" y="120" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Şekil II: aynı seviyeye</text><text x="370" y="138" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">kadar zeytinyağı</text></svg></div><p><b>Şekil II’deki durumla ilgili,</b><br>I. M balonu K balonundan daha çok şişer.<br>II. L balonu, Şekil I’deki K balonu kadar şişer.<br>III. Her balon, Şekil I’de aynı delikteki balondan daha az şişer.</p><p><b>yargılarından hangileri kesinlikle doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>I ✓: Zeytinyağında da M deliği K’ye göre daha derindedir; aynı sıvıda derinlik arttıkça basınç artar.</p><p>III ✓: Her delik Şekil II’de de aynı derinliktedir; ancak zeytinyağının yoğunluğu suyunkinden küçük olduğu için aynı derinlikteki basınç daha küçüktür.</p><p>II ✗ (kesin değil): L’nin zeytinyağındaki derinliği, K’nin sudaki derinliğinden fazladır ama yağın yoğunluğu daha küçüktür. Derinlik artışı ile yoğunluk azalışından hangisinin baskın olduğu verilmediği için bu iki basınç kesin karşılaştırılamaz.</p><p>II’yi içeren şıklar, iki değişkenin ters yönde değiştiği bir karşılaştırmayı kesin sanır. "Yalnız I" ise yoğunluğun etkisini atlar. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, günlük hayattaki bazı durumları açıklayan bilimsel bilgilerle eşleştirerek aşağıdaki şıklarda verilen satırlardan oluşan bir tablo hazırlıyor. Öğretmeni, tablodaki satırlardan yalnızca birinde eşleştirmenin yanlış olduğunu söylüyor.</p><p><b>Buna göre yanlış eşleştirme hangi satırdadır?</b></p>`,
+  c: ["Denizaltıların gövdelerinin çok kalın ve dayanıklı yapılması → Sıvı basıncı derinlik arttıkça artar.", "İş makinelerinin kepçelerinin, içinde yağ bulunan pistonlarla hareket ettirilmesi → Kapalı kaptaki sıvıya uygulanan basınç her yöne aynı büyüklükte iletilir.", "Bir su kulesinin dibindeki vanadan suyun, kulenin yarı yüksekliğindeki vanadan daha hızlı akması → Sıvılar kendilerine uygulanan basıncı her yöne aynen iletir.", "Ağzı dudaklarla tamamen kapatılan plastik şişeden su içilirken şişenin içe doğru büzülmesi → Açık hava basıncı cisimlere her yönden etki eder."],
+  a: "C",
+  s: `<p>A ✓: Denizaltı derine indikçe gövdesine etki eden sıvı basıncı artar; gövde bu yüzden çok dayanıklı yapılır.</p><p>B ✓: Pompanın küçük pistona uyguladığı basınç yağ tarafından büyük pistonlara aynen iletilir (Pascal prensibi); kepçe bu sayede büyük kuvvetle hareket eder.</p><p>D ✓: İçilen su şişeden çıkarken yerine hava giremez; şişenin içindeki basınç azalır ve dışarıdaki açık hava basıncı şişeyi her yönden içe doğru bastırır.</p><p>C ✗: Kulenin dibindeki vana su yüzeyine göre daha derindedir; suyun daha hızlı akmasının nedeni sıvı basıncının <b>derinlikle artmasıdır</b>. Burada sıvıya dışarıdan uygulanan bir basınç yoktur, Pascal prensibi bu durumu açıklamaz. Bu eşleştirme, 2020 LGS’de sorulan derinlik–Pascal karışıklığının tersidir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir zeytinyağı atölyesinde kullanılan hidrolik preste, kesit alanları farklı iki piston içi yağ dolu kapalı bir boruyla birbirine bağlıdır. Pistonlar aynı yükseklikte iken küçük pistona uygulanan F kuvveti ile büyük pistonun üzerindeki zeytin hamuru, sabit üst plakaya doğru çok büyük bir kuvvetle sıkıştırılmaktadır.</p><div class="fig"><svg viewBox="0 0 560 208" width="560" role="img" aria-label="Hidrolik pres: küçük ve büyük piston, zeytin hamuru"><rect x="0" y="0" width="560" height="208" fill="#ffffff"/><rect x="70" y="80" width="50" height="100" fill="#fde68a" stroke="#92400e" stroke-width="2"/><rect x="66" y="74" width="58" height="8" fill="#475569" stroke="#1e293b" stroke-width="1"/><line x1="95" y1="74" x2="95" y2="40" stroke="#1e293b" stroke-width="3"/><rect x="80" y="34" width="30" height="6" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="330" y="100" width="150" height="80" fill="#fde68a" stroke="#92400e" stroke-width="2"/><rect x="326" y="94" width="158" height="8" fill="#475569" stroke="#1e293b" stroke-width="1"/><rect x="340" y="66" width="130" height="28" fill="#86efac" stroke="#166534" stroke-width="1.5"/><text x="405" y="85" font-size="11" text-anchor="middle" fill="#1e293b" font-weight="bold">Zeytin hamuru</text><rect x="326" y="22" width="158" height="12" fill="#334155" stroke="#1e293b" stroke-width="1"/><line x1="335" y1="34" x2="335" y2="66" stroke="#1e293b" stroke-width="3"/><line x1="475" y1="34" x2="475" y2="66" stroke="#1e293b" stroke-width="3"/><text x="405" y="18" font-size="11" text-anchor="middle" fill="#475569">Sabit üst plaka</text><rect x="120" y="160" width="210" height="14" fill="#fde68a" stroke="none" stroke-width="0"/><line x1="120" y1="160" x2="330" y2="160" stroke="#92400e" stroke-width="2"/><line x1="120" y1="174" x2="330" y2="174" stroke="#92400e" stroke-width="2"/><defs><marker id="s8a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs><line x1="125" y1="18" x2="125" y2="46" stroke="#dc2626" stroke-width="2" marker-end="url(#s8a)"/><text x="133" y="28" font-size="13" text-anchor="start" fill="#dc2626" font-weight="bold">F</text><text x="95" y="198" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Küçük piston</text><text x="405" y="198" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Büyük piston</text><text x="225" y="154" font-size="11" text-anchor="middle" fill="#475569">Yağ dolu boru</text></svg></div><p><b>Buna göre,</b><br>I. Pistonlar aynı yükseklikteyken iki pistona etki eden sıvı basınçları eşittir.<br>II. Büyük pistonun zeytin hamurunu büyük kuvvetle sıkıştırabilmesinin nedeni, büyük pistondaki sıvı basıncının küçük pistondakinden büyük olmasıdır.<br>III. Pistonları birbirine bağlayan boru daha uzun ve kıvrımlı olsaydı da küçük pistona uygulanan basınç büyük pistona iletilirdi.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Pascal prensibine göre kapalı kaptaki sıvıya uygulanan basınç, sıvı tarafından her yöne ve her noktaya aynı büyüklükte iletilir.</p><p>I ✓: Küçük pistona uygulanan basınç büyük pistona aynen iletilir; aynı yükseklikteki pistonlara etki eden basınçlar eşittir.</p><p>II ✗: Basınçlar eşittir; büyüyen basınç değil <b>kuvvettir</b>. Aynı basınç daha büyük alana etki ettiği için büyük pistona daha büyük kuvvet etki eder. "Büyük pistonda basınç büyüktür" hidrolik sistemlerdeki en yaygın yanılgıdır.</p><p>III ✓: Basınç sıvı tarafından her yöne iletildiğinden borunun uzunluğu ya da kıvrımları iletimi engellemez; hidrolik frenlerde de borular kıvrımlıdır.</p><p>II’yi içeren şıklar kuvvet ile basıncı karıştırır; "Yalnız I" ise basıncın kıvrımlı yoldan da iletildiğini atlar. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Düzgün silindir biçimli boş bir kabın tabanına yalnızca sıvı basıncını ölçen bir basınçölçer takılıyor ve kaba aşağıdaki işlemler sırasıyla uygulanıyor. Kap hiçbir aşamada taşmıyor.</p><div class="box">0 – 2. dakika: Boş kaba musluktan sabit debiyle su akıtılıyor.<br>2 – 3. dakika: Musluk kapalı, hiçbir işlem yapılmıyor.<br>3 – 5. dakika: Kaba, aynı debiyle suyla karışmayan ve yoğunluğu suyunkinden küçük olan X sıvısı akıtılıyor. X sıvısı suyun üstünde toplanıyor.</div><div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="Dört basınç-zaman grafiği"><rect x="0" y="0" width="560" height="190" fill="#ffffff"/><defs><marker id="s9a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="40" y1="130" x2="152" y2="130" stroke="#1e293b" stroke-width="2" marker-end="url(#s9a)"/><line x1="40" y1="130" x2="40" y2="26" stroke="#1e293b" stroke-width="2" marker-end="url(#s9a)"/><text x="152" y="148" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="44" y="20" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><text x="152" y="158" font-size="11" text-anchor="end" fill="#1e293b">Zaman (dk)</text><line x1="80" y1="130" x2="80" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="80" y="143" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="100" y1="130" x2="100" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="100" y="143" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="140" y1="130" x2="140" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="140" y="143" font-size="11" text-anchor="middle" fill="#1e293b">5</text><polyline points="40,130 80,90 100,90 140,66.0" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="95" y="178" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><defs><marker id="s9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="170" y1="130" x2="282" y2="130" stroke="#1e293b" stroke-width="2" marker-end="url(#s9b)"/><line x1="170" y1="130" x2="170" y2="26" stroke="#1e293b" stroke-width="2" marker-end="url(#s9b)"/><text x="282" y="148" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="174" y="20" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><text x="282" y="158" font-size="11" text-anchor="end" fill="#1e293b">Zaman (dk)</text><line x1="210" y1="130" x2="210" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="210" y="143" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="230" y1="130" x2="230" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="230" y="143" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="270" y1="130" x2="270" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="270" y="143" font-size="11" text-anchor="middle" fill="#1e293b">5</text><polyline points="170,130 210,90 230,90 270,106.0" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="225" y="178" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><defs><marker id="s9c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="300" y1="130" x2="412" y2="130" stroke="#1e293b" stroke-width="2" marker-end="url(#s9c)"/><line x1="300" y1="130" x2="300" y2="26" stroke="#1e293b" stroke-width="2" marker-end="url(#s9c)"/><text x="412" y="148" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="304" y="20" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><text x="412" y="158" font-size="11" text-anchor="end" fill="#1e293b">Zaman (dk)</text><line x1="340" y1="130" x2="340" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="340" y="143" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="360" y1="130" x2="360" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="360" y="143" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="400" y1="130" x2="400" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="400" y="143" font-size="11" text-anchor="middle" fill="#1e293b">5</text><polyline points="300,130 340,90 360,90 400,50" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="355" y="178" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">III</text><defs><marker id="s9d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="430" y1="130" x2="542" y2="130" stroke="#1e293b" stroke-width="2" marker-end="url(#s9d)"/><line x1="430" y1="130" x2="430" y2="26" stroke="#1e293b" stroke-width="2" marker-end="url(#s9d)"/><text x="542" y="148" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="434" y="20" font-size="12" text-anchor="start" fill="#1e293b">Basınç</text><text x="542" y="158" font-size="11" text-anchor="end" fill="#1e293b">Zaman (dk)</text><line x1="470" y1="130" x2="470" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="470" y="143" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="490" y1="130" x2="490" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="490" y="143" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="530" y1="130" x2="530" y2="34" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 3"/><text x="530" y="143" font-size="11" text-anchor="middle" fill="#1e293b">5</text><polyline points="430,130 470,90 490,90 530,90" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="485" y="178" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">IV</text></svg></div><p><b>Basınçölçerin gösterdiği değerin zamana göre değişimi numaralanmış grafiklerden hangisi gibi olabilir?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "A",
+  s: `<p>0 – 2. dk: Su yüksekliği düzgün biçimde artar → basınç doğrusal artar. 2 – 3. dk: Sıvı eklenmez → basınç sabit.</p><p>3 – 5. dk: X sıvısı suyun üstünde toplanır; tabanın üzerindeki toplam sıvı sütunu uzar, bu yüzden tabandaki basınç <b>artmaya devam eder</b>. Kap silindir ve debi aynı olduğundan sıvı yüzeyi su eklerken olduğu hızla yükselir; ancak X’in yoğunluğu sudan küçük olduğu için basınç daha <b>yavaş</b> artar → I ✓.</p><p>II: Hafif sıvı eklenince basıncın azalacağı sanılmıştır. III: X’in yoğunluğu su ile aynı kabul edilmiştir. IV: Üstteki X sıvısının tabana basınç yapmadığı sanılmıştır; oysa üstteki her sıvı tabakası alttaki noktalara basınç uygular. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Ucuna lastik zar gerilmiş bir huni, hortumla içinde renkli su bulunan bir U borusuna bağlanıyor. Huni, özdeş silindir kaplara konan X, Y ve Z sıvılarına farklı derinliklerde daldırılarak U borusunun kolları arasındaki seviye farkı ölçülüyor. Seviye farkı, zara etki eden sıvı basıncı ile doğru orantılıdır.</p><table class="rt"><tr><th>Ölçüm</th><th>Sıvı</th><th>Huninin derinliği</th><th>U borusundaki seviye farkı</th></tr><tr><td>1</td><td>X</td><td>10 cm</td><td>4 birim</td></tr><tr><td>2</td><td>Y</td><td>20 cm</td><td>4 birim</td></tr><tr><td>3</td><td>Z</td><td>10 cm</td><td>6 birim</td></tr><tr><td>4</td><td>X</td><td>20 cm</td><td>8 birim</td></tr></table><p><b>Bu ölçümlere göre aşağıdaki sonuçlardan hangisine ulaşılamaz?</b></p>`,
+  c: ["Sıvı basıncı, sıvının bulunduğu kabın şekline bağlı değildir.", "Aynı sıvıda derinlik arttıkça sıvı basıncı artar.", "X sıvısının yoğunluğu Y sıvısınınkinden büyüktür.", "Aynı derinlikte Z sıvısının basıncı X sıvısınınkinden büyüktür."],
+  a: "A",
+  s: `<p>B ✓ ulaşılır: 1 ve 4. ölçümlerde sıvı (X) aynı, derinlik 10 cm’den 20 cm’ye çıkınca seviye farkı 4’ten 8 birime çıkmıştır.</p><p>C ✓ ulaşılır: 20 cm derinlikte X 8 birim (4. ölçüm), Y 4 birim (2. ölçüm) fark oluşturmuştur; aynı derinlikte basıncı büyük olan X’in yoğunluğu daha büyüktür.</p><p>D ✓ ulaşılır: 10 cm derinlikte Z 6 birim, X 4 birim fark oluşturmuştur.</p><p>A ✗ ulaşılamaz: Bütün ölçümler özdeş silindir kaplarda yapılmıştır; kabın şekli hiç değiştirilmediği için onun etkisi hakkında bu verilerle karar verilemez. Bilgi olarak doğru olsa da bu deneyden çıkmaz. Bu, "doğru ama deneyden çıkarılamayan bilgi" tuzağıdır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Küp biçimli, içi hava dolu bir kutunun altı yüzünün her biri özdeş lastik zarlarla kaplıdır. Kutu, üst yüzü yatay kalacak şekilde iple su dolu bir kabın içine tamamen batırılıyor ve zarların içe doğru çöktüğü gözleniyor.</p><div class="fig"><svg viewBox="0 0 560 212" width="560" role="img" aria-label="Yüzleri lastik zarla kaplı küp kutu su içinde"><rect x="0" y="0" width="560" height="212" fill="#ffffff"/><rect x="140" y="40" width="280" height="160" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="140,25 140,200 420,200 420,25" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="140" y1="40" x2="420" y2="40" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><rect x="235" y="90" width="90" height="90" fill="#f8fafc" stroke="#334155" stroke-width="2"/><path d="M235,90 Q280,100 325,90" fill="none" stroke="#dc2626" stroke-width="3"/><path d="M235,180 Q280,160 325,180" fill="none" stroke="#dc2626" stroke-width="3"/><path d="M235,90 Q247,135 235,180" fill="none" stroke="#dc2626" stroke-width="3"/><path d="M325,90 Q313,135 325,180" fill="none" stroke="#dc2626" stroke-width="3"/><line x1="280" y1="40" x2="280" y2="84" stroke="#1e293b" stroke-width="1.5"/><text x="286" y="66" font-size="11" text-anchor="start" fill="#1e293b">İp</text><text x="470" y="135" font-size="11" text-anchor="middle" fill="#dc2626">Lastik zarlar</text><line x1="440" y1="138" x2="330" y2="160" stroke="#dc2626" stroke-width="1"/><text x="160" y="60" font-size="12" text-anchor="start" fill="#1e3a8a" font-weight="bold">Su</text></svg></div><p><b>Buna göre,</b><br>I. Kutu, yoğunluğu sudan küçük bir sıvıda aynı derinliğe batırılsaydı zarlar daha çok içe çökerdi.<br>II. Alt yüzdeki zar, üst yüzdeki zardan daha çok içe çöker.<br>III. Kutu aynı konumda daha derine indirildiğinde bütün zarların içe çökmesi artar.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve III", "II ve III"],
+  a: "D",
+  s: `<p>Sıvılar temas ettikleri her yüzeye basınç uygular ve bu basınç derinlikle artar.</p><p>II ✓: Alt yüz, üst yüzden daha derindedir; alt zara daha büyük basınç etki eder ve daha çok çöker.</p><p>III ✓: Kutu derine indikçe bütün yüzlerin derinliği artar; her zara etki eden basınç artar.</p><p>I ✗: Aynı derinlikte yoğunluğu küçük sıvının basıncı daha <b>küçüktür</b>; zarlar daha az çöker. Bu yargı yoğunluk–basınç ilişkisini ters kurar.</p><p>I’i içeren şıklar bu ters ilişkiye düşer; "Yalnız II" ise derinlik artınca tüm yüzlerdeki basıncın arttığını atlar. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir tesisteki K, L ve M havuzlarının dibinde, havuzları boşaltmak için kullanılan özdeş tapalar vardır. K ve L havuzlarının su derinliği 2 m, M havuzununki 1 m’dir; M havuzu ise K ve L’den çok daha geniş ve uzundur. K ve M’de tatlı su, L’de deniz suyu bulunmaktadır. Deniz suyunun yoğunluğu tatlı suyunkinden büyüktür. Tapalar yukarı doğru çekilerek açılmaktadır.</p><div class="fig"><svg viewBox="0 0 560 186" width="560" role="img" aria-label="K, L, M havuzları ve dipteki özdeş tapalar"><rect x="0" y="0" width="560" height="186" fill="#ffffff"/><rect x="20" y="40" width="110" height="100" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="20,30 20,140 130,140 130,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="20" y1="40" x2="130" y2="40" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="67.0" y="138" width="16" height="6" fill="#dc2626" stroke="#7f1d1d" stroke-width="1"/><line x1="75.0" y1="138" x2="75.0" y2="122" stroke="#7f1d1d" stroke-width="1.5"/><text x="75.0" y="162" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">K</text><text x="75.0" y="178" font-size="11" text-anchor="middle" fill="#475569">tatlı su, 2 m</text><rect x="180" y="40" width="110" height="100" fill="#93c5fd" stroke="none" stroke-width="0"/><polyline points="180,30 180,140 290,140 290,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="180" y1="40" x2="290" y2="40" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="227.0" y="138" width="16" height="6" fill="#dc2626" stroke="#7f1d1d" stroke-width="1"/><line x1="235.0" y1="138" x2="235.0" y2="122" stroke="#7f1d1d" stroke-width="1.5"/><text x="235.0" y="162" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">L</text><text x="235.0" y="178" font-size="11" text-anchor="middle" fill="#475569">deniz suyu, 2 m</text><rect x="340" y="40" width="200" height="50" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="340,30 340,90 540,90 540,30" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="340" y1="40" x2="540" y2="40" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="4 3"/><rect x="432.0" y="88" width="16" height="6" fill="#dc2626" stroke="#7f1d1d" stroke-width="1"/><line x1="440.0" y1="88" x2="440.0" y2="72" stroke="#7f1d1d" stroke-width="1.5"/><text x="440.0" y="112" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">M</text><text x="440.0" y="128" font-size="11" text-anchor="middle" fill="#475569">tatlı su, 1 m</text></svg></div><p><b>Buna göre,</b><br>I. L havuzundaki tapayı açmak, K havuzundakini açmaktan zordur.<br>II. M havuzunda çok daha fazla su bulunduğu için M’deki tapayı açmak, K’dekini açmaktan zordur.<br>III. K havuzuna su eklenerek su derinliği artırılırsa K’deki tapayı açmak zorlaşır.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "C",
+  s: `<p>Tapalar özdeş olduğundan tapaya etki eden sıvı kuvveti, tapanın bulunduğu yerdeki sıvı basıncı ile birlikte artar; tapayı açmanın zorluğu bu basınca bağlıdır.</p><p>I ✓: K ve L’de derinlik aynı (2 m), L’deki deniz suyunun yoğunluğu büyük → L’deki tapaya daha büyük basınç etki eder.</p><p>II ✗: Sıvı basıncı sıvının miktarına değil derinliğine bağlıdır. M’de su çok olsa da derinlik 1 m’dir; K’dekinden (2 m) azdır. M’deki tapayı açmak daha <b>kolaydır</b>.</p><p>III ✓: Derinlik artınca tapaya etki eden sıvı basıncı artar.</p><p>II’yi içeren şıklar "çok su, büyük basınç" yanılgısına dayanır. "Yalnız I" ise derinliğin etkisini gösteren III’ü atlar. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Yatay zeminde duran, düzgün silindir biçimli bir kabın yarısına kadar su vardır. Kaba aşağıdaki işlemler ayrı ayrı uygulanıyor.</p><div class="fig"><svg viewBox="0 0 320 202" width="320" role="img" aria-label="Yarısına kadar su dolu düzgün silindir kap ve kapağı"><rect x="0" y="0" width="320" height="202" fill="#ffffff"/><line x1="10" y1="170" x2="300" y2="170" stroke="#78716c" stroke-width="3"/><rect x="90" y="103" width="110" height="65" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="90" y1="103" x2="200" y2="103" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="90,38 90,168 200,168 200,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><rect x="84" y="34" width="122" height="6" fill="#94a3b8" stroke="#1e293b" stroke-width="1"/><text x="220" y="40" font-size="11" text-anchor="start" fill="#475569">Kapak (ayrı)</text><text x="145" y="192" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Düzgün silindir kap</text></svg></div><p>I. Kap, taban alanı 2 katı olan başka bir silindir kapla değiştirilip bu kaba su yüksekliği aynı olacak kadar su konuyor.<br>II. Kaptaki suyun yarısı alınıp yerine aynı hacimde tuzlu su eklenerek karıştırılıyor.<br>III. Kap, tabanı yatay kalacak şekilde zeminden alınıp yüksek bir masanın üzerine konuyor.<br>IV. Kabın ağzı sıkıca kapatılıp kap ters çevrilerek kapağı üzerine konuyor.</p><p><b>Bu işlemlerden hangilerinde, kabın en altta kalan yüzeyine etki eden sıvı basıncı ilk duruma göre değişmez?</b></p>`,
+  c: ["I ve III", "I, III ve IV", "II ve IV", "I, II ve III"],
+  a: "B",
+  s: `<p>Sıvı basıncı yalnızca derinliğe (sıvı yüzeyinden düşey uzaklık) ve sıvının yoğunluğuna bağlıdır.</p><p>I ✓ değişmez: Kap genişler, su miktarı artar ama su yüksekliği ve sıvının cinsi aynıdır.</p><p>II ✗ değişir: Su yüksekliği aynı kalır ama karışımın yoğunluğu artar; basınç artar.</p><p>III ✓ değişmez: Kabın yerden yüksekliği, suyun içindeki derinliği değiştirmez. "Yükseğe çıkan kapta basınç değişir" yanılgısı derinliği yerden ölçmektir.</p><p>IV ✓ değişmez: Kap düzgün silindir olduğundan ters çevrilince su yine aynı yükseklikte bir sütun oluşturur; alttaki yüzey (kapak) aynı derinlikte kalır.</p><p>"I ve III" IV’ü, "I, II ve III" yoğunluk değişimini atlar; "II ve IV" ise I ile III’ün değişmediğini görmez. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Boyutları 10 cm × 20 cm × 40 cm olan, dikdörtgenler prizması biçimindeki kapalı bir süt kutusunun içinde 4000 cm³ süt vardır; kutunun kendi ağırlığı önemsenmemektedir. Kutu buzdolabının yatay rafına I. konumda 10 cm × 20 cm’lik yüzü üzerinde dik olarak konuyor, daha sonra II. konumda 20 cm × 40 cm’lik yüzü üzerine yatırılıyor.</p><div class="fig"><svg viewBox="0 0 560 202" width="560" role="img" aria-label="Kapalı süt kutusunun iki konumu"><rect x="0" y="0" width="560" height="202" fill="#ffffff"/><line x1="10" y1="170" x2="550" y2="170" stroke="#78716c" stroke-width="3"/><rect x="97" y="30" width="35" height="140" fill="#fff" stroke="#1e3a8a" stroke-width="2.5"/><rect x="97" y="100" width="35" height="70" fill="#e5e7eb" stroke="none" stroke-width="0"/><rect x="97" y="30" width="35" height="140" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><text x="115" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">I</text><text x="90" y="104" font-size="11" text-anchor="end" fill="#475569">40 cm</text><text x="115" y="24" font-size="11" text-anchor="middle" fill="#475569">10 cm</text><rect x="220" y="135" width="140" height="35" fill="#fff" stroke="#1e3a8a" stroke-width="2.5"/><rect x="220" y="152" width="140" height="18" fill="#e5e7eb" stroke="none" stroke-width="0"/><rect x="220" y="135" width="140" height="35" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><text x="290" y="192" font-size="14" text-anchor="middle" fill="#1e293b" font-weight="bold">II</text><text x="290" y="129" font-size="11" text-anchor="middle" fill="#475569">40 cm</text><text x="368" y="157" font-size="11" text-anchor="start" fill="#475569">10 cm</text><text x="380" y="40" font-size="12" text-anchor="middle" fill="#1e3a8a" font-weight="bold">Süt kutusu: 10 cm × 20 cm × 40 cm</text><text x="380" y="58" font-size="11" text-anchor="middle" fill="#475569">(I’de rafa 10 × 20, II’de 20 × 40 yüzü değiyor)</text></svg></div><p><b>Kutu I. konumdan II. konuma getirildiğinde, kutunun en alttaki yüzeyine etki eden sıvı basıncı ile kutunun rafa uyguladığı katı basıncı nasıl değişir?</b></p>`,
+  c: ["Sıvı basıncı {{1|4}}’üne iner — Katı basıncı {{1|4}}’üne iner", "Sıvı basıncı değişmez — Katı basıncı {{1|4}}’üne iner", "Sıvı basıncı {{1|4}}’üne iner — Katı basıncı değişmez", "Sıvı basıncı {{1|2}}’sine iner — Katı basıncı {{1|4}}’üne iner"],
+  a: "A",
+  s: `<p><b>Sıvı basıncı:</b> I’de taban 10 × 20 = 200 cm², süt yüksekliği 4000 ÷ 200 = 20 cm. II’de taban 20 × 40 = 800 cm², süt yüksekliği 4000 ÷ 800 = 5 cm. Derinlik 20 cm’den 5 cm’ye, yani {{1|4}}’üne iner; sıvı basıncı da {{1|4}}’üne iner.</p><p><b>Katı basıncı:</b> Kutunun rafa uyguladığı kuvvet sütün ağırlığıdır, değişmez. Rafa değen alan 200 cm²’den 800 cm²’ye (4 katına) çıkar; katı basıncı {{1|4}}’üne iner.</p><p>B: Süt miktarı aynı diye sıvı basıncının değişmeyeceği sanılmıştır. C: Ağırlık aynı diye katı basıncının değişmeyeceği sanılmıştır (kuvvet–basınç karışıklığı). D: Kutunun II’deki yüksekliği (20 cm) ile I’deki yüksekliği (40 cm) oranlanmış; sütün yüksekliği yerine kutunun boyutu kullanılmıştır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci özdeş silindir kaplarla şekildeki üç düzeneği kuruyor ve basınçölçerlerle ölçüm yapıyor. Bu düzeneklerle sıvı basıncının derinliğe ve sıvının yoğunluğuna bağlı olduğunu gösteriyor. Öğrenci, kuracağı 4. düzeneği bu üç düzenekten <b>biriyle</b> karşılaştırarak "Sıvı basıncı kabın şekline bağlı değildir." sonucuna da ulaşmak istiyor.</p><div class="fig"><svg viewBox="0 0 560 214" width="560" role="img" aria-label="Özdeş kaplarla kurulan üç düzenek"><rect x="0" y="0" width="560" height="214" fill="#ffffff"/><line x1="10" y1="170" x2="550" y2="170" stroke="#78716c" stroke-width="3"/><rect x="50" y="58" width="110" height="110" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="50" y1="58" x2="160" y2="58" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="50,38 50,168 160,168 160,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="40" cy="98" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="40" y1="98" x2="45" y2="92" stroke="#dc2626" stroke-width="1.8"/><line x1="52" y1="58" x2="52" y2="98" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3 2"/><text x="105" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">1. düzenek</text><text x="105" y="206" font-size="11" text-anchor="middle" fill="#475569">su, ölçer 5 cm derinlikte</text><rect x="225" y="58" width="110" height="110" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="225" y1="58" x2="335" y2="58" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="225,38 225,168 335,168 335,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="215" cy="138" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="215" y1="138" x2="220" y2="132" stroke="#dc2626" stroke-width="1.8"/><line x1="227" y1="58" x2="227" y2="138" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3 2"/><text x="280" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">2. düzenek</text><text x="280" y="206" font-size="11" text-anchor="middle" fill="#475569">su, ölçer 10 cm derinlikte</text><rect x="400" y="58" width="110" height="110" fill="#93c5fd" stroke="none" stroke-width="0"/><line x1="400" y1="58" x2="510" y2="58" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polyline points="400,38 400,168 510,168 510,38" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><circle cx="390" cy="138" r="10" fill="#fff" stroke="#1e293b" stroke-width="1.8"/><line x1="390" y1="138" x2="395" y2="132" stroke="#dc2626" stroke-width="1.8"/><line x1="402" y1="58" x2="402" y2="138" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3 2"/><text x="455" y="190" font-size="13" text-anchor="middle" fill="#1e293b" font-weight="bold">3. düzenek</text><text x="455" y="206" font-size="11" text-anchor="middle" fill="#475569">tuzlu su, ölçer 10 cm derinlikte</text></svg></div><p><b>Buna göre öğrencinin 4. düzeneği aşağıdakilerden hangisi gibi kurması gerekir?</b></p>`,
+  c: ["Yukarı doğru genişleyen bir kaba tuzlu su koyup ölçeri 5 cm derinliğe yerleştirmek", "Yukarı doğru genişleyen bir kaba zeytinyağı koyup ölçeri 10 cm derinliğe yerleştirmek", "Yukarı doğru genişleyen bir kaba tuzlu su koyup ölçeri 10 cm derinliğe yerleştirmek", "1. düzenekteki kapla özdeş bir kaba su koyup ölçeri 15 cm derinliğe yerleştirmek"],
+  a: "C",
+  s: `<p>Kabın şeklinin etkisini görmek için 4. düzenekte <b>yalnızca kabın şekli</b> farklı olmalı; sıvının cinsi ve ölçerin derinliği karşılaştırılan düzenekle aynı kalmalıdır.</p><p>C ✓: Farklı şekilli kap, tuzlu su, 10 cm derinlik → 3. düzenekle yalnızca kap şekli farklıdır.</p><p>A: Tuzlu su ile 5 cm derinlikte ölçüm yapılan bir düzenek yoktur; 1. düzenekle karşılaştırılırsa hem sıvı hem kap şekli değişir. B: Zeytinyağı hiçbir düzenekte kullanılmamıştır; her karşılaştırmada iki değişken birden değişir. D: Kap şekli değişmemiştir; bu düzenek yine derinliğin etkisini gösterir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Ucunda özdeş lastik zarlar bulunan iki huni, hortumlarla içinde renkli sıvı bulunan bir U borusunun iki ayrı koluna bağlanıyor. Huniler havadayken U borusunun kollarındaki sıvı seviyeleri eşittir. Daha sonra huniler su dolu bir kaba, 1. huni 2h, 2. huni h derinliğinde olacak şekilde yerleştiriliyor. (Şekilde başlangıç seviyesi gösterilmiştir; son seviyeler çizilmemiştir.)</p><div class="fig"><svg viewBox="0 0 560 216" width="560" role="img" aria-label="İki huniye bağlı U borusu ve su dolu kap"><rect x="0" y="0" width="560" height="216" fill="#ffffff"/><rect x="20" y="60" width="230" height="120" fill="#bfdbfe" stroke="none" stroke-width="0"/><polyline points="20,40 20,180 250,180 250,40" fill="none" stroke="#1e3a8a" stroke-width="2.5"/><line x1="20" y1="60" x2="250" y2="60" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><polygon points="70,160 110,160 95,140 85,140" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/><text x="90" y="175" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">1</text><polygon points="170,100 210,100 195,80 185,80" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/><text x="190" y="115" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">2</text><path d="M90,140 C90,20 340,20 380,40" fill="none" stroke="#334155" stroke-width="3"/><path d="M190,80 C190,30 470,10 470,40" fill="none" stroke="#334155" stroke-width="3"/><polyline points="372,40 372,170 478,170 478,40" fill="none" stroke="#1e293b" stroke-width="2"/><polyline points="388,40 388,154 462,154 462,40" fill="none" stroke="#1e293b" stroke-width="2"/><rect x="373" y="110" width="14" height="59" fill="#f9a8d4" stroke="none" stroke-width="0"/><rect x="463" y="110" width="14" height="59" fill="#f9a8d4" stroke="none" stroke-width="0"/><rect x="373" y="155" width="104" height="14" fill="#f9a8d4" stroke="none" stroke-width="0"/><line x1="355" y1="110" x2="495" y2="110" stroke="#475569" stroke-width="1" stroke-dasharray="4 3"/><text x="425" y="190" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">U borusu</text><text x="425" y="206" font-size="11" text-anchor="middle" fill="#475569">kesikli çizgi: başlangıç seviyesi</text><text x="30" y="200" font-size="12" text-anchor="start" fill="#1e3a8a" font-weight="bold">Huni 1 derinliği 2h, huni 2 derinliği h</text></svg></div><p><b>Buna göre U borusundaki sıvı seviyeleri ile ilgili aşağıdakilerden hangisi doğrudur?</b></p>`,
+  c: ["1. huniye bağlı koldaki sıvı seviyesi yukarıda olur; çünkü daha derindeki huni sıvıyı kendine doğru çeker.", "1. huniye bağlı koldaki sıvı seviyesi aşağıda, 2. huniye bağlı koldaki yukarıda olur; huniler aynı derinliğe getirilirse seviyeler eşitlenir.", "İki huni de aynı sıvının içinde olduğundan seviyeler eşit kalır; seviye farkı ancak huniler farklı sıvılara konursa oluşur.", "1. huniye bağlı koldaki sıvı seviyesi aşağıda olur; huniler aynı derinliğe getirilse de 1. huni önce daha derinde olduğu için seviye farkı korunur."],
+  a: "B",
+  s: `<p>Daha derindeki 1. huninin zarına daha büyük sıvı basıncı etki eder. Bu zar hortumdaki havayı daha çok sıkıştırır ve bağlı olduğu koldaki sıvıyı daha çok iter; bu koldaki seviye aşağı iner, diğer koldaki yükselir. Huniler aynı derinliğe getirilince zarlara eşit basınç etki eder ve seviyeler eşitlenir ✓.</p><p>A: Sıvının "çektiği" düşüncesi yanlıştır; zara etki eden basınç havayı iter. C: Aynı sıvıda da derinlik farkı basınç farkı oluşturur. D: Basınç o anki derinliğe bağlıdır; önceki konumun etkisi kalmaz. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir noktadaki sıvı basıncının 4 dakika boyunca zamana göre değişimi aşağıdaki grafikte verilmiştir.</p><div class="fig"><svg viewBox="0 0 380 202" width="380" role="img" aria-label="Basınç-zaman grafiği: 2 dakika doğrusal artış, sonra sabit"><rect x="0" y="0" width="380" height="202" fill="#ffffff"/><defs><marker id="s17" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><line x1="80" y1="160" x2="340" y2="160" stroke="#1e293b" stroke-width="2" marker-end="url(#s17)"/><line x1="80" y1="160" x2="80" y2="30" stroke="#1e293b" stroke-width="2" marker-end="url(#s17)"/><text x="340" y="178" font-size="12" text-anchor="end" fill="#1e293b"></text><text x="84" y="24" font-size="12" text-anchor="start" fill="#1e293b">Sıvı basıncı</text><text x="340" y="194" font-size="12" text-anchor="end" fill="#1e293b">Zaman (dk)</text><polyline points="80,160 180,70 300,70" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="130" y="176" font-size="11" text-anchor="middle" fill="#1e293b">1</text><line x1="130" y1="160" x2="130" y2="164" stroke="#1e293b" stroke-width="1.5"/><text x="180" y="176" font-size="11" text-anchor="middle" fill="#1e293b">2</text><line x1="180" y1="160" x2="180" y2="164" stroke="#1e293b" stroke-width="1.5"/><text x="240" y="176" font-size="11" text-anchor="middle" fill="#1e293b">3</text><line x1="240" y1="160" x2="240" y2="164" stroke="#1e293b" stroke-width="1.5"/><text x="300" y="176" font-size="11" text-anchor="middle" fill="#1e293b">4</text><line x1="300" y1="160" x2="300" y2="164" stroke="#1e293b" stroke-width="1.5"/></svg></div><p><b>Bu grafik,</b><br>I. Bir göle sabit hızla indirilen bir sondadaki basınçölçerin, sonda 2. dakikada durdurulup 2 dakika o derinlikte bekletildiği sırada gösterdiği değer<br>II. Boş, düzgün silindir biçimli bir kabın sabit debili bir musluktan doldurulduğu, kabın 2. dakikada dolup taşmaya başladığı ve musluğun açık bırakıldığı sırada kabın tabanındaki basınç<br>III. Yukarı doğru genişleyen boş bir kabın sabit debili bir musluktan 2 dakika doldurulup musluğun kapatıldığı sırada kabın tabanındaki basınç</p><p><b>durumlarından hangilerine ait olabilir?</b></p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Grafikte basınç ilk 2 dakikada <b>düzgün (doğrusal)</b> artıyor, sonra sabit kalıyor.</p><p>I ✓: Sonda sabit hızla indikçe derinlik düzgün artar; durunca derinlik ve basınç sabit kalır.</p><p>II ✓: Silindir kapta su yüksekliği düzgün artar. Kap dolup taşmaya başlayınca musluk açık olsa da su yüksekliği artık değişmez; tabandaki basınç sabit kalır.</p><p>III ✗: Yukarı doğru genişleyen kapta eşit sürelerde eklenen su, yükseldikçe daha geniş bir alana yayılır; su yüksekliği giderek daha <b>yavaş</b> artar. Basınç doğrusal değil, eğimi azalan bir eğri çizerdi.</p><p>"Yalnız I" taşan kapta yüksekliğin sabit kaldığını görmez; III’ü içeren şıklar kap şeklinin dolma hızına etkisini atlar. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Eski köy evlerinde kullanılan emme tulumbalarda, tulumbanın kolu indirilip kaldırıldıkça kuyuya inen borunun içindeki hava dışarı atılır ve kuyudaki su boruda yükselerek dışarı akar. Deniz seviyesine yakın bir köyde, bu tür tulumbalarla derinliği yaklaşık 10 m’den fazla olan kuyulardan su çıkarılamadığı bilinmektedir.</p><div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Emme tulumba ve kuyu kesiti"><rect x="0" y="0" width="560" height="206" fill="#ffffff"/><rect x="10" y="60" width="540" height="16" fill="#a3a3a3" stroke="#525252" stroke-width="1"/><text x="540" y="54" font-size="11" text-anchor="end" fill="#475569">Yer yüzeyi</text><rect x="10" y="76" width="540" height="124" fill="#e7d3a1" stroke="none" stroke-width="0"/><rect x="230" y="76" width="100" height="124" fill="#f8fafc" stroke="#78716c" stroke-width="2"/><rect x="232" y="160" width="96" height="40" fill="#bfdbfe" stroke="none" stroke-width="0"/><line x1="232" y1="160" x2="328" y2="160" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="5 3"/><rect x="272" y="20" width="16" height="165" fill="#e2e8f0" stroke="#334155" stroke-width="2"/><rect x="274" y="120" width="12" height="64" fill="#bfdbfe" stroke="none" stroke-width="0"/><rect x="262" y="4" width="36" height="20" fill="#64748b" stroke="#1e293b" stroke-width="1.5"/><line x1="298" y1="12" x2="340" y2="2" stroke="#1e293b" stroke-width="4"/><text x="346" y="10" font-size="11" text-anchor="start" fill="#1e293b">Kol</text><text x="345" y="140" font-size="12" text-anchor="start" fill="#1e293b" font-weight="bold">Kuyu</text><text x="222" y="100" font-size="11" text-anchor="end" fill="#1e293b">Boru</text><text x="345" y="178" font-size="11" text-anchor="start" fill="#1e3a8a">Kuyudaki su</text></svg></div><p><b>Buna göre,</b><br>I. Tulumbanın borusu daha kalın yapılırsa 10 m’den derin kuyulardan da su çıkarılabilir.<br>II. Kuyudaki suyu boruda yükselten, kuyudaki su yüzeyine etki eden açık hava basıncıdır.<br>III. Aynı tulumbayla, deniz seviyesinden çok yüksekteki bir dağ köyünde su çıkarılabilecek en büyük kuyu derinliği 10 m’den azdır.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız II", "I ve III", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>II ✓: Tulumba borudaki havayı boşaltınca borunun içindeki basınç azalır; kuyudaki su yüzeyine etki eden açık hava basıncı suyu boruda yukarı <b>iter</b>. Tulumba suyu "çekmez".</p><p>Açık hava basıncı, en fazla yaklaşık 10 m yüksekliğindeki bir su sütununu dengeleyebilir (Torricelli deneyinde cıva yerine su kullanılsaydı sütunun yaklaşık 10 m olacağı gibi). Bu yüzden su 10 m’den yükseğe itilemez.</p><p>III ✓: Yükseklere çıkıldıkça açık hava basıncı azalır; dengelenebilecek su sütunu da kısalır.</p><p>I ✗: Sıvı sütununun basıncı borunun kalınlığına (kap şekline) değil, yüksekliğine bağlıdır. Boru kalınlaşsa da açık hava basıncının dengeleyebileceği su yüksekliği değişmez.</p><p>I’i içeren şıklar sıvı basıncının kap genişliğine bağlı olduğunu sanır; "Yalnız II" ise açık hava basıncının yükseklikle azaldığını atlar. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Ev yapımı reçel, kavanozlara konup kapakları sıkıca kapatılıyor. Bir süre sonra kavanozun içindeki havanın basıncının dışarıdaki açık hava basıncından daha düşük olduğu ve kapağın zor açıldığı gözleniyor. Kapağın kenarı bir kaşıkla hafifçe kaldırılıp "tıss" sesiyle kavanozun içine hava girince kapak kolayca açılıyor.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Kapağı sıkıca kapalı reçel kavanozu"><rect x="0" y="0" width="560" height="200" fill="#ffffff"/><rect x="200" y="60" width="160" height="130" fill="#fef3c7" stroke="#92400e" stroke-width="2"/><rect x="192" y="44" width="176" height="18" fill="#dc2626" stroke="#7f1d1d" stroke-width="2"/><rect x="204" y="100" width="152" height="88" fill="#f59e0b" stroke="none" stroke-width="0"/><text x="280" y="150" font-size="13" text-anchor="middle" fill="#78350f" font-weight="bold">Reçel</text><text x="280" y="84" font-size="11" text-anchor="middle" fill="#1e293b">Düşük basınçlı hava</text><defs><marker id="g2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e3a8a"/></marker></defs><line x1="215" y1="10" x2="215" y2="40" stroke="#1e3a8a" stroke-width="2" marker-end="url(#g2a)"/><line x1="250" y1="10" x2="250" y2="40" stroke="#1e3a8a" stroke-width="2" marker-end="url(#g2a)"/><line x1="310" y1="10" x2="310" y2="40" stroke="#1e3a8a" stroke-width="2" marker-end="url(#g2a)"/><line x1="345" y1="10" x2="345" y2="40" stroke="#1e3a8a" stroke-width="2" marker-end="url(#g2a)"/><text x="400" y="24" font-size="11" text-anchor="start" fill="#1e3a8a">Dışarıdaki hava</text><line x1="10" y1="190" x2="550" y2="190" stroke="#78716c" stroke-width="3"/><text x="410" y="54" font-size="11" text-anchor="start" fill="#1e293b">Kapak</text></svg></div><p><b>Bu durumla ilgili,</b><br>I. Kapağın zor açılmasının nedeni, dışarıdaki havanın kapağa uyguladığı basıncın içerideki havanınkinden büyük olmasıdır.<br>II. Kavanozun içindeki düşük basınçlı hava, kapağı içeri doğru çekerek açılmasını zorlaştırır.<br>III. Kavanozun içine hava girince iç ve dış basınçlar arasındaki fark azalır, bu yüzden kapak kolay açılır.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I ve III"],
+  a: "D",
+  s: `<p>Gazlar temas ettikleri her yüzeye basınç uygular. Kapağa dışarıdan açık hava basıncı, içeriden kavanozdaki havanın basıncı etki eder.</p><p>I ✓: Dış basınç iç basınçtan büyük olduğu için kapak kavanoza doğru bastırılır ve zor açılır.</p><p>III ✓: Hava girince iç basınç artar, dış basınçla arasındaki fark azalır; kapağı bastıran etki kalmaz.</p><p>II ✗: Düşük basınçlı hava bir şeyi "çekmez"; kapağı tutan dışarıdaki havanın itmesidir. Bu, vantuz ve pipet örneklerindeki "çekme" yanılgısının aynısıdır.</p><p>II’yi içeren şık "çekme" yanılgısına dayanır. "Yalnız I" ve "Yalnız III" aynı olayın iki yüzünden birini atlar. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Elektrikli süpürgenin içindeki fan çalıştığında süpürgenin içindeki hava dışarı atılır ve süpürgenin içinde basınç düşer. Bu sırada halıdaki tozlar hava ile birlikte süpürgenin ağzına doğru hareket ederek süpürgeye dolar.</p><div class="fig"><svg viewBox="0 0 560 212" width="560" role="img" aria-label="Halıyı süpüren elektrikli süpürge"><rect x="0" y="0" width="560" height="212" fill="#ffffff"/><line x1="10" y1="180" x2="550" y2="180" stroke="#78716c" stroke-width="3"/><text x="545" y="196" font-size="11" text-anchor="end" fill="#475569">Halı</text><rect x="380" y="110" width="140" height="60" fill="#93c5fd" stroke="#1e3a8a" stroke-width="2"/><circle cx="400" cy="172" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><circle cx="500" cy="172" r="9" fill="#334155" stroke="#1e293b" stroke-width="1.5"/><text x="450" y="145" font-size="12" text-anchor="middle" fill="#1e293b" font-weight="bold">Süpürge</text><path d="M380,140 C300,140 240,90 160,120" fill="none" stroke="#334155" stroke-width="10"/><line x1="160" y1="120" x2="120" y2="174" stroke="#334155" stroke-width="8"/><rect x="90" y="172" width="60" height="8" fill="#475569" stroke="#1e293b" stroke-width="1"/><defs><marker id="g3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f59e0b"/></marker></defs><line x1="70" y1="176" x2="95" y2="176" stroke="#f59e0b" stroke-width="2" marker-end="url(#g3a)"/><line x1="170" y1="176" x2="145" y2="176" stroke="#f59e0b" stroke-width="2" marker-end="url(#g3a)"/><text x="120" y="205" font-size="11" text-anchor="middle" fill="#b45309">Hava ve toz</text></svg></div><p><b>Buna göre,</b><br>I. Tozlu havayı süpürgenin içine doğru hareket ettiren, süpürgenin içi ile dışı arasındaki basınç farkıdır.<br>II. Çalışan süpürgenin ağzı düz bir fayansa tamamen kapanacak şekilde değdirilirse ağız fayansa yapışır ve zor ayrılır.<br>III. Süpürge, havası tamamen boşaltılmış bir ortamda çalıştırılsaydı tozları daha iyi toplardı.</p><p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>I ✓: Süpürge tozu "çekmez". İçerideki basınç düşünce dışarıdaki açık hava basıncı daha büyük kalır; dışarıdaki hava, tozlarla birlikte süpürgenin içine doğru itilir.</p><p>II ✓: Ağız fayansa tamamen kapanınca içeriye hava giremez; içerideki basınç düşük, dışarıdaki açık hava basıncı ise ağzı her yönden fayansa bastırır (vantuzdaki gibi).</p><p>III ✗: Havası olmayan bir ortamda tozları itecek açık hava basıncı ve tozları taşıyacak hava yoktur; süpürge toz toplayamaz.</p><p>III’ü içeren şık süpürgenin tozu kendi gücüyle çektiğini sanır. "Yalnız I" ve "Yalnız II" ise aynı basınç farkının iki sonucundan birini atlar. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Fen bilimleri dersinde öğretmen, iş makinelerindeki hidrolik kepçe örneğini verdikten sonra öğrencilerden Pascal prensibiyle ilgili birer cümle kurmalarını istiyor.</p><div class="dialog"><div><b>Ali:</b> Pascal prensibi, kapalı bir kaptaki sıvıya uygulanan basıncın sıvı tarafından her yöne aynı büyüklükte iletildiğini ifade eder.</div><div><b>Buse:</b> Prensip; çok sayıda gözlem ve deneyle desteklenen, doğada değişmeden geçerli olan bir genellemedir.</div><div><b>Cem:</b> Pascal prensibi henüz test edilmemiş bir tahmin olduğu için bir hipotezdir.</div><div><b>Duru:</b> Pascal prensibine göre sıvılar, kendilerine uygulanan kuvveti her yöne aynı büyüklükte iletir; bu yüzden hidrolik bir sistemde iki pistona etki eden kuvvetler eşittir.</div></div><p><b>Buna göre hangi iki öğrencinin cümlesinde bilimsel bir hata vardır?</b></p>`,
+  c: ["Ali ve Buse", "Buse ve Cem", "Cem ve Duru", "Ali ve Duru"],
+  a: "C",
+  s: `<p>Ali ✓: Prensibin ifadesi doğrudur. Buse ✓: Prensip (ilke), bilimsel bilgi türü olarak çok sayıda gözlem ve deneyle desteklenen, doğada değişmeden geçerli olan genellemedir.</p><p>Cem ✗: Pascal prensibi defalarca test edilmiş ve doğrulanmış bir ilkedir; hipotez ise henüz test edilmemiş, sınanabilir bir tahmindir.</p><p>Duru ✗: Sıvılar kuvveti değil <b>basıncı</b> aynen iletir. Hidrolik sistemde iki pistondaki basınçlar eşittir; büyük pistonun alanı büyük olduğu için ona etki eden kuvvet daha büyüktür. Kuvvetleri aynen ileten katılardır.</p><p>A doğru iki cümleyi seçer. B Buse’nin doğru tanımını yanlış sayar ve Duru’nun kuvvet–basınç karışıklığını kaçırır. D Ali’nin doğru cümlesini yanlış sayar ve Cem’in prensip ile hipotezi karıştırdığını görmez. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, basınç konusundaki ifadeleri doğru (D) ya da yanlış (Y) olarak işaretlemiştir. Her doğru işaretleme 10 puan, her yanlış işaretleme 0 puandır.</p><table class="rt"><tr><th></th><th>İfade</th><th>Öğrencinin cevabı</th></tr><tr><td>1</td><td>Aynı derinlikte, yoğunluğu büyük olan sıvının basıncı daha büyüktür.</td><td>D</td></tr><tr><td>2</td><td>Aynı sıvının bulunduğu, şekilleri farklı kaplarda aynı derinlikteki noktalara etki eden sıvı basınçları farklıdır.</td><td>D</td></tr><tr><td>3</td><td>Hidrolik bir sistemde büyük pistona etki eden sıvı basıncı, küçük pistona etki edenden büyüktür.</td><td>Y</td></tr><tr><td>4</td><td>Deniz seviyesinden yükseklere çıkıldıkça açık hava basıncı azalır.</td><td>Y</td></tr><tr><td>5</td><td>Katılar, kendilerine uygulanan kuvveti aynı doğrultuda ve aynı büyüklükte iletir.</td><td>D</td></tr></table><p><b>Buna göre öğrenci bu etkinlikten kaç puan alır?</b></p>`,
+  c: ["20", "30", "40", "50"],
+  a: "B",
+  s: `<p>1. ifade doğrudur; öğrenci D demiş ✓ (10 puan).</p><p>2. ifade <b>yanlıştır</b>: Sıvı basıncı kabın şekline bağlı değildir; aynı sıvıda aynı derinlikteki noktalara etki eden basınçlar eşittir (2024 LGS’de sorulan eğri ve düz kaplar gibi). Öğrenci D demiş ✗ (0 puan).</p><p>3. ifade yanlıştır: Pascal prensibine göre iki pistondaki basınçlar eşittir, büyük pistonda büyüyen kuvvettir. Öğrenci Y demiş ✓ (10 puan).</p><p>4. ifade doğrudur: Yükseldikçe hava tabakası incelir, açık hava basıncı azalır. Öğrenci Y demiş ✗ (0 puan).</p><p>5. ifade doğrudur. Öğrenci D demiş ✓ (10 puan).</p><p>Toplam 3 doğru → 30 puan. Kabın şeklinin basıncı değiştirdiğini düşünen öğrenci 2. ifadeyi de doğru sayıp 40 puan; ayrıca yükseklikle açık hava basıncının azaldığını bilmeyen öğrenci 4. ifadeyi de doğru sayıp 50 puan bulur. 20 puan ise yanlış işaretlenen iki ifadeyi puanlayan, yani doğru ile yanlış işaretlemeleri karıştıran öğrencinin sonucudur. Cevap <b>B</b>.</p>` }
+]
+});
