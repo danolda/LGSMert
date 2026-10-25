@@ -135,25 +135,45 @@
     });
   }
 
+  var LV = [['kolay', 'Kolay', 'ko'], ['orta', 'Orta', 'or'], ['zor', 'Zor', 'zr']];
+  function hasLevels(t) { return (t.qs || []).some(function (q) { return !!q.lv; }); }
   function buildList(t) {
     var list = [];
     var past = [];
     for (var pid in LGS.past) if (LGS.past.hasOwnProperty(pid) && LGS.past[pid].t === t.id) past.push(pid);
     past.sort();
-    past.map(function (pid) { var o = LGS.past[pid]; return { id: pid, a: o.a, s: o.s }; }).forEach(function (p) {
+    past.map(function (pid) { var o = LGS.past[pid]; return { id: pid, a: o.a, s: o.s }; }).forEach(function (p, n) {
       var pr = p.id.split('-');
-      list.push({ key: 'p:' + p.id, past: true, year: pr[0], no: pr[2], img: 'img/past/' + p.id + '.webp', a: p.a, s: p.s });
+      list.push({ key: 'p:' + p.id, past: true, grp: 'past', n: n + 1, year: pr[0], no: pr[2], img: 'img/past/' + p.id + '.webp', a: p.a, s: p.s });
     });
-    (t.qs || []).forEach(function (q, i) {
-      list.push({ key: 'o:' + i, past: false, q: q.q, c: q.c, a: q.a, s: q.s });
-    });
+    if (hasLevels(t)) {
+      LV.forEach(function (lv) {
+        var n = 0;
+        (t.qs || []).forEach(function (q) {
+          if (q.lv !== lv[0]) return;
+          list.push({ key: lv[2] + ':' + n, past: false, grp: lv[0], lvName: lv[1], n: ++n, q: q.q, c: q.c, a: q.a, s: q.s });
+        });
+      });
+    } else {
+      (t.qs || []).forEach(function (q, i) {
+        list.push({ key: 'o:' + i, past: false, grp: 'new', n: i + 1, q: q.q, c: q.c, a: q.a, s: q.s });
+      });
+    }
     return list;
   }
+  var GRP_TITLE = { past: 'Çıkmış LGS Soruları', kolay: 'Yeni Nesil · Kolay', orta: 'Yeni Nesil · Orta', zor: 'Yeni Nesil · Zor' };
 
   function renderTopic(s, meta, t, idx) {
     var list = buildList(t);
-    var ans = load(t.id);
-    if (ans._total !== list.length) { ans._total = list.length; save(t.id, ans); }
+    var ans = load(t.id), keys = {}, dirty = false;
+    list.forEach(function (q) { keys[q.key] = 1; });
+    for (var k in ans) if (ans.hasOwnProperty(k) && k.charAt(0) !== '_' && !keys[k]) { delete ans[k]; dirty = true; }
+    if (dirty || ans._total !== list.length) { ans._total = list.length; save(t.id, ans); }
+    var lvl = hasLevels(t);
+    if (!lvl && (filter === 'kolay' || filter === 'orta' || filter === 'zor')) filter = 'all';
+    if (lvl && filter === 'new') filter = 'all';
+    var fl = lvl ? [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['kolay', 'Kolay'], ['orta', 'Orta'], ['zor', 'Zor'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']]
+                 : [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['new', 'Yeni nesil'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']];
     var prev = s.topics[idx - 1], next = s.topics[idx + 1];
     var nav = '<p class="small" style="display:flex;justify-content:space-between;gap:10px;margin-top:20px">' +
       (prev ? '<a href="#/k/' + prev.id + '">← ' + esc(prev.title) + '</a>' : '<span></span>') +
@@ -165,14 +185,23 @@
       '<div class="qhead"><h2>Sorular</h2><span class="score" id="score"></span>' +
       '<button class="btn red" id="clearBtn" title="Bu konudaki tüm işaretlemeleri sil">Temizle</button></div>' +
       '<div class="filters" id="filters">' +
-      [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['new', 'Yeni nesil'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']].map(function (f) {
+      fl.map(function (f) {
         return '<button data-f="' + f[0] + '"' + (filter === f[0] ? ' class="on"' : '') + '>' + f[1] + '</button>';
       }).join('') + '</div>' +
       '<div id="qs"></div>' + nav + '</div>';
     app.innerHTML = html;
 
     var qsBox = document.getElementById('qs');
-    qsBox.innerHTML = list.map(function (q, i) { return qHtml(q, i); }).join('');
+    var lastG = null;
+    qsBox.innerHTML = list.map(function (q, i) {
+      var h = '';
+      if (lvl && q.grp !== lastG) {
+        var cnt = list.filter(function (x) { return x.grp === q.grp; }).length;
+        h = '<h3 class="grp grp-' + q.grp + '" data-grp="' + q.grp + '">' + GRP_TITLE[q.grp] + ' <small>(' + cnt + ' soru)</small></h3>';
+      }
+      lastG = q.grp;
+      return h + qHtml(q, i);
+    }).join('');
     list.forEach(function (q, i) { paint(t.id, q, i); });
     applyFilter(list, t.id);
     updateScore(t.id, list);
@@ -260,14 +289,19 @@
   }
 
   function applyFilter(list, tid) {
-    var a = load(tid);
+    var a = load(tid), vis = {};
     list.forEach(function (q, i) {
       var st = a[q.key], show = true;
       if (filter === 'past') show = q.past;
       else if (filter === 'new') show = !q.past;
+      else if (filter === 'kolay' || filter === 'orta' || filter === 'zor') show = q.grp === filter;
       else if (filter === 'empty') show = !st;
       else if (filter === 'wrong') show = st && !st.ok;
       document.getElementById('q' + i).style.display = show ? '' : 'none';
+      if (show) vis[q.grp] = 1;
+    });
+    [].forEach.call(document.querySelectorAll('#qs h3.grp'), function (h) {
+      h.style.display = vis[h.getAttribute('data-grp')] ? '' : 'none';
     });
   }
 
