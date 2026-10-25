@@ -1,91 +1,248 @@
 LGS.add({
 id: "fen-elektrik",
-summary: `
-<h3>1. Elektrik Yükleri ve Etkileşim Kuralları</h3>
+summary: `<div class="key"><b>Kazanımlar</b><ul>
+<li><b>F.8.7.1.1</b> Elektriklenmeyi, bazı doğa olayları ve teknolojideki uygulama örnekleri ile açıklar.</li>
+<li><b>F.8.7.1.2</b> Elektrik yüklerini sınıflandırarak aynı ve farklı cins elektrik yüklerinin birbirlerine etkisini açıklar.</li>
+<li><b>F.8.7.1.3</b> Deneyler yaparak elektriklenme çeşitlerini fark eder.</li>
+<li><b>F.8.7.2.1</b> Cisimleri, sahip oldukları elektrik yükleri bakımından sınıflandırır (nötr cisim yüksüz değildir; elektroskop yük tespitinde kullanılır).</li>
+<li><b>F.8.7.2.2</b> Topraklamayı açıklar (can ve mal güvenliği açısından önemi).</li>
+<li><b>F.8.7.3.1</b> Elektrik enerjisinin ısı, ışık ve hareket enerjisine dönüştüğü uygulamalara örnekler verir (elektrik sigortasının önemi; robotlar).</li>
+<li><b>F.8.7.3.2</b> Elektrik enerjisinin ısı, ışık veya hareket enerjisine dönüşümünü temel alan bir model tasarlar.</li>
+<li><b>F.8.7.3.3</b> Güç santrallerinde elektrik enerjisinin nasıl üretildiğini açıklar (hidroelektrik, termik, rüzgâr, jeotermal, nükleer).</li>
+<li><b>F.8.7.3.4</b> Güç santrallerinin avantaj ve dezavantajları konusunda fikirler üretir.</li>
+<li><b>F.8.7.3.5</b> Elektrik enerjisinin bilinçli ve tasarruflu kullanılmasının aile ve ülke ekonomisi bakımından önemini tartışır.</li>
+</ul></div>
+
+<h3>1. Elektrik yükleri: proton, elektron ve nötr cisim (F.8.7.1.2, F.8.7.2.1)</h3>
+<p>Bütün maddeler atomlardan oluşur. Atomun merkezindeki <b>çekirdekte</b> pozitif (+) yüklü <b>protonlar</b>, çekirdeğin çevresinde ise negatif (−) yüklü <b>elektronlar</b> bulunur. Bir protonun yükü ile bir elektronun yükü <b>eşit büyüklükte</b> ama <b>zıt işaretlidir</b>. Bu yüzden bir cismin yük durumu, içindeki (+) ve (−) yüklerin sayısı karşılaştırılarak bulunur.</p>
+<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Nötr, negatif ve pozitif yüklü cisim modelleri: proton sayıları eşit, elektron sayıları farklı"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><text x="95" y="22" fill="#475569" font-weight="bold">NÖTR</text><circle cx="95" cy="88" r="52" fill="#f1f5f9" stroke="#475569"/><g font-size="17" font-weight="bold"><text x="67.5" y="76.0" fill="#dc2626">+</text><text x="95.0" y="76.0" fill="#2563eb">−</text><text x="122.5" y="76.0" fill="#dc2626">+</text><text x="67.5" y="93.0" fill="#2563eb">−</text><text x="95.0" y="93.0" fill="#dc2626">+</text><text x="122.5" y="93.0" fill="#2563eb">−</text><text x="67.5" y="110.0" fill="#dc2626">+</text><text x="95.0" y="110.0" fill="#2563eb">−</text></g><text x="95" y="162">4 (+) = 4 (−)</text><text x="95" y="182" font-size="12" fill="#475569">Net yük: 0</text><text x="280" y="22" fill="#2563eb" font-weight="bold">NEGATİF (−) YÜKLÜ</text><circle cx="280" cy="88" r="52" fill="#dbeafe" stroke="#2563eb"/><g font-size="17" font-weight="bold"><text x="252.5" y="76.0" fill="#dc2626">+</text><text x="270.8" y="76.0" fill="#2563eb">−</text><text x="289.2" y="76.0" fill="#dc2626">+</text><text x="307.5" y="76.0" fill="#2563eb">−</text><text x="252.5" y="93.0" fill="#dc2626">+</text><text x="270.8" y="93.0" fill="#2563eb">−</text><text x="289.2" y="93.0" fill="#dc2626">+</text><text x="307.5" y="93.0" fill="#2563eb">−</text><text x="252.5" y="110.0" fill="#2563eb">−</text><text x="270.8" y="110.0" fill="#2563eb">−</text></g><text x="280" y="162">4 (+) &lt; 6 (−)</text><text x="280" y="182" font-size="12" fill="#475569">Fazla elektron: 2</text><text x="465" y="22" fill="#dc2626" font-weight="bold">POZİTİF (+) YÜKLÜ</text><circle cx="465" cy="88" r="52" fill="#fee2e2" stroke="#dc2626"/><g font-size="17" font-weight="bold"><text x="437.5" y="84.5" fill="#dc2626">+</text><text x="465.0" y="84.5" fill="#2563eb">−</text><text x="492.5" y="84.5" fill="#dc2626">+</text><text x="437.5" y="101.5" fill="#2563eb">−</text><text x="465.0" y="101.5" fill="#dc2626">+</text><text x="492.5" y="101.5" fill="#dc2626">+</text></g><text x="465" y="162">4 (+) &gt; 2 (−)</text><text x="465" y="182" font-size="12" fill="#475569">Eksik elektron: 2</text><text x="280" y="208" font-size="12" fill="#475569">Üç cisimde de proton sayısı aynı (4). Değişen yalnızca elektron sayısıdır.</text></g></svg></div>
+<div class="tbl"><table>
+<tr><th>Yük durumu</th><th>(+) ve (−) yük sayısı</th><th>Nasıl oluşur?</th></tr>
+<tr><td><b>Nötr</b></td><td>(+) sayısı = (−) sayısı</td><td>Cismin doğal hâli; net yük sıfırdır.</td></tr>
+<tr><td><b>Negatif (−) yüklü</b></td><td>(−) sayısı &gt; (+) sayısı</td><td>Cisim dışarıdan <b>elektron almıştır</b>.</td></tr>
+<tr><td><b>Pozitif (+) yüklü</b></td><td>(+) sayısı &gt; (−) sayısı</td><td>Cisim dışarıya <b>elektron vermiştir</b>.</td></tr>
+</table></div>
 <ul>
-<li>Atomun çekirdeğinde <b>proton (+)</b>, katmanlarında ise <b>elektron (−)</b> bulunur[cite: 9]. Bir cisimde proton sayısı elektron sayısına eşitse cisim <b>nötr (yüksüz)</b>; elektron sayısı fazlaysa <b>negatif (−) yüklü</b>; elektron sayısı eksikse (proton sayısı fazlaysa) <b>pozitif (+) yüklü</b>dür[cite: 9].</li>
-<li><b>Altın Kural:</b> Elektriklenme olaylarında atom çekirdeğindeki <b>protonlar (+) KESİNLİKLE HAREKET ETMEZ!</b> Cisimler yüklenirken <b>yalnızca elektronlar (−)</b> alınıp verilir veya yer değiştirir[cite: 9]. Dışarıdan elektron alan cisim (−), elektron kaybeden cisim (+) yüklenir[cite: 9].</li>
-<li><b>İtme ve Çekme Kuralları:</b>
-  <br>• <b>Aynı cins</b> yüklü cisimler (+ ile + veya − ile −) birbirini <b>İTER</b>[cite: 9]. (<i>İki cisim birbirini itiyorsa ikisi de <b>kesinlikle yüklüdür</b> ve yük cinsleri aynıdır!</i>)[cite: 9]
-  <br>• <b>Zıt cins</b> yüklü cisimler (+ ile −) birbirini <b>ÇEKER</b>[cite: 9].
-  <br>• <b>Yüklü bir cisim (+ veya −), nötr (yüksüz) bir cismi de ÇEKER!</b>[cite: 9] (<i>Bu nedenle iki cisim birbirini çekiyorsa; ya zıt yüklüdürler ya da biri yüklü diğeri nötrdür!</i>)</li>
+<li><b>Altın kural:</b> Elektriklenme olaylarında <b>yalnızca elektronlar</b> yer değiştirir. Protonlar çekirdekte sıkıca tutulur, bir cisimden diğerine <b>geçmez</b>.</li>
+<li>“Pozitif yüklü cisim proton almıştır” ifadesi her zaman <b>yanlıştır</b>; doğrusu “elektron vermiştir”.</li>
+<li>Yük miktarı, fazla ya da eksik elektron sayısıyla anlatılır: 10 (+) ve 13 (−) yükü olan cisimde 3 fazla elektron vardır; cisim negatif yüklüdür.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> <b>Nötr cisim yüksüz cisim değildir!</b> Nötr bir cisimde de milyarlarca (+) ve (−) yük vardır; yalnızca sayıları <b>eşittir</b>. LGS’de “nötr cisimde hiç yük yoktur” yargısı yanlış kabul edilir. Bu özette “nötr” kelimesini hep “(+) ve (−) yük sayısı eşit” anlamında kullanıyoruz.</p>
+<p><b>İletken ve yalıtkan.</b> Elektrik yüklerinin kolayca hareket edebildiği maddelere <b>iletken</b> (metaller, insan vücudu, toprak, musluk suyu, grafit), hareket edemediği maddelere <b>yalıtkan</b> (plastik, cam, lastik, kuru tahta, yün, ipek, kâğıt, hava) denir. Yalıtkan bir cisim sürtülünce yük yalnızca <b>sürtülen bölgede</b> kalır; iletkende ise yük tüm yüzeye yayılır.</p>
+<p class="note"><b>Hafıza ipucu:</b> “<b>E</b>lektron <b>E</b>der, <b>P</b>roton <b>P</b>ark eder.” Hareket eden hep elektron; proton yerinden kıpırdamaz.</p>
+
+<h3>2. Yükler arasındaki itme ve çekme (F.8.7.1.2)</h3>
+<p>Elektrik yüklü cisimler birbirine dokunmadan, uzaktan kuvvet uygular. Bu kuvvet cisimler birbirine yaklaştıkça artar, uzaklaştıkça azalır.</p>
+<div class="fig"><svg viewBox="0 0 560 186" width="560" role="img" aria-label="Aynı cins yükler iter, zıt cins yükler çeker, yüklü cisim nötr cismi de çeker"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="etk-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="etk-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="etk-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><rect x="10" y="8" width="174" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="97" y="30" font-weight="bold">Aynı cins yük</text><circle cx="60" cy="92" r="24" fill="#fee2e2" stroke="#dc2626"/><text x="60" y="99" font-size="22" fill="#dc2626" font-weight="bold">+</text><circle cx="134" cy="92" r="24" fill="#fee2e2" stroke="#dc2626"/><text x="134" y="99" font-size="22" fill="#dc2626" font-weight="bold">+</text><line x1="54" y1="132" x2="24" y2="132" stroke="#dc2626" stroke-width="2" marker-end="url(#etk-a)"/><line x1="140" y1="132" x2="170" y2="132" stroke="#dc2626" stroke-width="2" marker-end="url(#etk-a)"/><text x="97" y="162" font-size="12" fill="#475569">ya da (−) ile (−)</text><text x="97" y="56" font-size="16" fill="#dc2626" font-weight="bold">İTER</text><rect x="193" y="8" width="174" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="280" y="30" font-weight="bold">Zıt cins yük</text><circle cx="243" cy="92" r="24" fill="#fee2e2" stroke="#dc2626"/><text x="243" y="99" font-size="22" fill="#dc2626" font-weight="bold">+</text><circle cx="317" cy="92" r="24" fill="#dbeafe" stroke="#2563eb"/><text x="317" y="99" font-size="22" fill="#2563eb" font-weight="bold">−</text><line x1="231" y1="132" x2="261" y2="132" stroke="#16a34a" stroke-width="2" marker-end="url(#etk-g)"/><line x1="329" y1="132" x2="299" y2="132" stroke="#16a34a" stroke-width="2" marker-end="url(#etk-g)"/><text x="280" y="162" font-size="12" fill="#475569">iki cisim de yüklü</text><text x="280" y="56" font-size="16" fill="#16a34a" font-weight="bold">ÇEKER</text><rect x="376" y="8" width="174" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="463" y="30" font-weight="bold">Yüklü + nötr</text><circle cx="426" cy="92" r="24" fill="#fee2e2" stroke="#dc2626"/><text x="426" y="99" font-size="22" fill="#dc2626" font-weight="bold">+</text><circle cx="500" cy="92" r="24" fill="#f1f5f9" stroke="#475569"/><text x="489" y="97" font-size="15" fill="#2563eb" font-weight="bold">−</text><text x="489" y="85" font-size="15" fill="#2563eb" font-weight="bold">−</text><text x="511" y="97" font-size="15" fill="#dc2626" font-weight="bold">+</text><text x="511" y="85" font-size="15" fill="#dc2626" font-weight="bold">+</text><line x1="414" y1="132" x2="444" y2="132" stroke="#16a34a" stroke-width="2" marker-end="url(#etk-g)"/><line x1="512" y1="132" x2="482" y2="132" stroke="#16a34a" stroke-width="2" marker-end="url(#etk-g)"/><text x="463" y="162" font-size="12" fill="#475569">nötr cisim kutuplanır</text><text x="463" y="56" font-size="16" fill="#16a34a" font-weight="bold">ÇEKER</text></g></svg></div>
+<ul>
+<li><b>Aynı cins</b> yükler (+ ile +, − ile −) birbirini <b>iter</b>.</li>
+<li><b>Zıt cins</b> yükler (+ ile −) birbirini <b>çeker</b>.</li>
+<li><b>Yüklü bir cisim nötr bir cismi de çeker.</b> Yüklü cisim, nötr cismin kendisine yakın yüzeyinde zıt yükleri toplar (kutuplanma); yakın olan zıt yükler arasındaki çekim, uzaktaki aynı yükler arasındaki itmeden büyük olduğu için sonuç <b>çekme</b>dir. Saça sürtülen balonun duvara yapışması, tarağın kâğıt parçalarını çekmesi bu yüzdendir.</li>
+<li>İki nötr cisim arasında itme ya da çekme <b>gözlenmez</b>.</li>
+</ul>
+<p><b>Gözlemden sonuç çıkarma tablosu</b> (LGS’nin en çok kullandığı araç):</p>
+<div class="tbl"><table>
+<tr><th>Gözlem</th><th>Kesin söylenebilen</th><th>Kesin söylenemeyen</th></tr>
+<tr><td><b>İki cisim birbirini İTİYOR</b></td><td>İkisi de yüklüdür ve <b>aynı cins</b> yüklüdür.</td><td>Yükün (+) mı (−) mi olduğu (başka bilgi yoksa).</td></tr>
+<tr><td><b>İki cisim birbirini ÇEKİYOR</b></td><td>En az biri yüklüdür.</td><td>Zıt yüklü mü, yoksa biri nötr mü? İki ihtimal de vardır.</td></tr>
+<tr><td><b>Hiç etkileşim YOK</b></td><td>İkisi de nötrdür.</td><td>—</td></tr>
+<tr><td><b>Bir cisim, zıt yüklü iki cismin İKİSİNE DE çekiliyor</b></td><td>Bu cisim <b>nötrdür</b> (yüklü olsaydı birini iterdi).</td><td>—</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> “Birbirini çeken cisimler kesinlikle zıt yüklüdür” <b>yanlıştır</b>. Çekme gördüğünde iki ihtimal yaz: <b>(+, −)</b> ya da <b>(yüklü, nötr)</b>. Yük durumunu kesinleştiren gözlem <b>itme</b>dir; çünkü itme yalnızca iki yüklü ve aynı cins cisim arasında olur.</p>
+<div class="key"><b>Çözümlü örnek 1 (gözlemden yük bulma):</b> Yalıtkan iplerle asılı K, L, M ve N kürelerinden K ile L birbirini <b>itiyor</b>, L ile M birbirini <b>çekiyor</b>, M ile N arasında <b>hiçbir etkileşim olmuyor</b>. Hangisinin yük durumu kesin bilinir?<br>
+<b>Çözüm:</b> M–N arasında etkileşim yoksa ikisi de <b>nötrdür</b>. K ile L birbirini ittiğine göre ikisi de yüklü ve <b>aynı cins</b> yüklüdür; ama (+) mı (−) mi olduğu bilinemez. L’nin nötr M’yi çekmesi bununla uyumludur. Kesin: <b>M ve N nötr; K ve L aynı cins yüklü.</b> Tuzak: “L ile M zıt yüklüdür” demek; M nötr olduğu hâlde de çekme olur.</div>
+
+<h3>3. Elektriklenme, doğa olayları ve teknoloji (F.8.7.1.1)</h3>
+<p>Nötr bir cismin elektron alarak ya da vererek yüklü hâle gelmesine <b>elektriklenme</b> denir. Bir cisim üzerinde biriken ve yerinden akmayan yüklere <b>durgun (statik) elektrik</b> denir.</p>
+<p><b>Doğadan ve günlük yaşamdan örnekler:</b></p>
+<ul>
+<li><b>Şimşek ve yıldırım:</b> Bulutlardaki su damlacıkları ve buz kristalleri sürtünerek yüklenir. Yüklü bulutlar arasındaki elektrik boşalması <b>şimşek</b>, yüklü bulut ile yeryüzü arasındaki boşalma <b>yıldırım</b>dır. Yıldırım genellikle yüksek ve sivri noktalara düşer.</li>
+<li>Yün kazak çıkarılırken duyulan çıtırtılar ve karanlıkta görülen küçük kıvılcımlar.</li>
+<li>Taranan saçın tarağa doğru çekilmesi, kabaran saçlar.</li>
+<li>Halıda yürüdükten sonra kapı koluna dokununca “çarpılmak”; arabadan inerken kapıya dokununca hissedilen küçük şok.</li>
+</ul>
+<p><b>Teknolojideki uygulamalar:</b> Bu uygulamaların neredeyse hepsi “zıt yükler çeker, aynı yükler iter, yüklü cisim nötr cismi çeker” kurallarından birine dayanır.</p>
+<div class="tbl"><table>
+<tr><th>Uygulama</th><th>Nasıl çalışır?</th><th>Kullanılan kural</th></tr>
+<tr><td><b>Elektrostatik boyama</b> (otomobil, beyaz eşya)</td><td>Boya damlacıkları aynı cins yükle yüklenir; boyanacak yüzey zıt yükle yüklenir.</td><td>Damlacıklar birbirini <b>iter</b> → üst üste yığılmaz, düzgün dağılır; yüzeye <b>çekilir</b> → boya israf olmaz.</td></tr>
+<tr><td><b>Baca ve hava filtreleri</b>, hava temizleme cihazları</td><td>Tozlar önce yüklenir, sonra zıt yüklü plakalarda tutulur.</td><td>Zıt yükler çeker; yüklü plaka nötr tozları da bir miktar çeker.</td></tr>
+<tr><td><b>Fotokopi makinesi ve lazer yazıcı</b></td><td>Silindirin yalnız belirli bölgeleri yüklü kalır; yüklü toner tozu bu bölgelere tutunur.</td><td>Zıt yükler çeker.</td></tr>
+<tr><td><b>Parmak izi tespiti</b></td><td>Yüklenmiş ince toz, parmak izindeki yağ ve ter kalıntısına tutunur.</td><td>Yüklü toz nötr izleri çeker.</td></tr>
+<tr><td><b>Elektrostatik toz bezleri</b></td><td>Sürtünmeyle yüklenen bez, tozları çeker.</td><td>Yüklü cisim nötr cismi çeker.</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Bu cihazlarda tozu tutan şey her zaman bir <b>çekme</b>dir. Ama tozlar yüklenmeden geçse bile yüklü plaka bir miktar tozu yine tutar; çünkü <b>yüklü cisim nötr cismi de çeker</b>. 2025 LGS bu ayrıntıyı sordu.</p>
+
+<h3>4. Elektriklenme çeşitleri (F.8.7.1.3)</h3>
+<p>Bir cisim üç farklı yolla elektriklenebilir: <b>sürtünme</b>, <b>dokunma</b> ve <b>etki</b>. Üçünde de hareket eden elektronlardır.</p>
+<p><b>a) Sürtünme ile elektriklenme</b></p>
+<div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Sürtünme ile elektriklenme: elektronlar yünden ebonite geçer, iki cisim zıt cins ve eşit miktarda yüklenir"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="srt-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="srt-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="srt-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><text x="140" y="20" font-weight="bold">Sürtünmeden ÖNCE (ikisi de nötr)</text><text x="420" y="20" font-weight="bold">Sürtünmeden SONRA</text><rect x="20" y="36" width="120" height="70" rx="8" fill="#fef3c7" stroke="#b45309"/><text x="80" y="124" fill="#92400e" font-weight="bold">Yün kumaş</text><g font-size="16" font-weight="bold"><text x="51.2" y="59.0" fill="#dc2626">+</text><text x="80.0" y="59.0" fill="#2563eb">−</text><text x="108.8" y="59.0" fill="#dc2626">+</text><text x="51.2" y="76.0" fill="#2563eb">−</text><text x="80.0" y="76.0" fill="#dc2626">+</text><text x="108.8" y="76.0" fill="#2563eb">−</text><text x="51.2" y="93.0" fill="#dc2626">+</text><text x="80.0" y="93.0" fill="#2563eb">−</text></g><rect x="158" y="36" width="114" height="70" rx="30" fill="#e2e8f0" stroke="#334155"/><text x="215" y="124" fill="#334155" font-weight="bold">Ebonit çubuk</text><g font-size="16" font-weight="bold"><text x="186.2" y="59.0" fill="#dc2626">+</text><text x="215.0" y="59.0" fill="#2563eb">−</text><text x="243.8" y="59.0" fill="#dc2626">+</text><text x="186.2" y="76.0" fill="#2563eb">−</text><text x="215.0" y="76.0" fill="#dc2626">+</text><text x="243.8" y="76.0" fill="#2563eb">−</text><text x="186.2" y="93.0" fill="#dc2626">+</text><text x="215.0" y="93.0" fill="#2563eb">−</text></g><line x1="276" y1="71" x2="300" y2="71" stroke="#1e293b" stroke-width="2" marker-end="url(#srt-k)"/><rect x="305" y="36" width="120" height="70" rx="8" fill="#fef3c7" stroke="#b45309"/><text x="365" y="124" fill="#dc2626" font-weight="bold">Yün: (+)</text><g font-size="16" font-weight="bold"><text x="336.2" y="67.5" fill="#dc2626">+</text><text x="365.0" y="67.5" fill="#2563eb">−</text><text x="393.8" y="67.5" fill="#dc2626">+</text><text x="336.2" y="84.5" fill="#2563eb">−</text><text x="365.0" y="84.5" fill="#dc2626">+</text><text x="393.8" y="84.5" fill="#dc2626">+</text></g><rect x="436" y="36" width="118" height="70" rx="30" fill="#e2e8f0" stroke="#334155"/><text x="495" y="124" fill="#2563eb" font-weight="bold">Ebonit: (−)</text><g font-size="15" font-weight="bold"><text x="463.8" y="59.0" fill="#dc2626">+</text><text x="484.6" y="59.0" fill="#2563eb">−</text><text x="505.4" y="59.0" fill="#dc2626">+</text><text x="526.2" y="59.0" fill="#2563eb">−</text><text x="463.8" y="76.0" fill="#dc2626">+</text><text x="484.6" y="76.0" fill="#2563eb">−</text><text x="505.4" y="76.0" fill="#dc2626">+</text><text x="526.2" y="76.0" fill="#2563eb">−</text><text x="463.8" y="93.0" fill="#2563eb">−</text><text x="484.6" y="93.0" fill="#2563eb">−</text></g><line x1="380" y1="154" x2="470" y2="154" stroke="#2563eb" stroke-width="2" marker-end="url(#srt-k)"/><text x="425" y="146" font-size="12" fill="#2563eb" font-weight="bold">2 elektron</text><text x="280" y="176" font-size="12" fill="#475569">Elektron yünden ebonite geçti. Proton sayıları değişmedi (4 ve 4).</text><text x="280" y="194" font-weight="bold">Sonuç: ZIT cins ve EŞİT miktarda yük (yün +2, ebonit −2).</text></g></svg></div>
+<ul>
+<li>Genellikle iki farklı <b>yalıtkan</b> cisim birbirine sürtülür. Sürtünme sırasında elektronlar bir cisimden diğerine geçer.</li>
+<li>Elektron alan cisim (−), elektron veren cisim (+) yüklenir. Sürtünen nötr cisimler <b>zıt cins</b> ve <b>eşit miktarda</b> yükle yüklenir (biri ne kadar elektron kaybettiyse diğeri o kadar kazanır).</li>
+<li>Sınıfta kullanılan iki klasik çift:</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Sürtünen cisimler</th><th>Elektron nereden nereye?</th><th>Sonuç</th></tr>
+<tr><td>Ebonit (plastik) çubuk + yün kumaş</td><td>Yünden ebonite</td><td>Ebonit <b>(−)</b>, yün <b>(+)</b></td></tr>
+<tr><td>Cam çubuk + ipek kumaş</td><td>Camdan ipeğe</td><td>Cam <b>(+)</b>, ipek <b>(−)</b></td></tr>
+</table></div>
+<p class="note"><b>Hafıza ipucu:</b> “<b>E</b>bonit <b>E</b>ksi, <b>C</b>am <b>C</b>oşkulu artı.” Ebonit (plastik) yünle sürtülünce eksi; cam ipekle sürtülünce artı yüklenir. Kumaşlar her zaman çubuğun tersidir.</p>
+<p class="note"><b>Dikkat!</b> Metal bir çubuk elde tutularak sürtülürse yükler el ve vücut üzerinden toprağa akar; çubuk yüklü <b>görünmez</b>. Aynı çubuk yalıtkan bir sapla ya da yalıtkan eldivenle tutulursa yüklenir. “Metaller sürtünmeyle yüklenemez” demek yanlıştır.</p>
+
+<p><b>b) Dokunma ile elektriklenme</b></p>
+<div class="fig"><svg viewBox="0 0 560 214" width="560" role="img" aria-label="Dokunma ile elektriklenme: −6 yüklü K küresi nötr özdeş L küresine dokununca ikisi de −3 olur"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="dok-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="dok-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="dok-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><text x="95" y="20" font-weight="bold">ÖNCE</text><text x="280" y="20" font-weight="bold">DOKUNURKEN</text><text x="465" y="20" font-weight="bold">AYRILINCA</text><circle cx="62" cy="80" r="30" fill="#dbeafe" stroke="#2563eb"/><text x="62" y="86" font-size="16" fill="#2563eb" font-weight="bold">−6</text><text x="62" y="128" font-size="14" font-weight="bold">K</text><circle cx="130" cy="80" r="30" fill="#f1f5f9" stroke="#475569"/><text x="130" y="86" font-size="16" fill="#475569" font-weight="bold">0</text><text x="130" y="128" font-weight="bold">L (nötr)</text><circle cx="250" cy="80" r="30" fill="#dbeafe" stroke="#2563eb"/><circle cx="310" cy="80" r="30" fill="#dbeafe" stroke="#2563eb"/><text x="250" y="128" font-size="14" font-weight="bold">K</text><text x="310" y="128" font-size="14" font-weight="bold">L</text><line x1="238" y1="80" x2="318" y2="80" stroke="#2563eb" stroke-width="2" marker-end="url(#dok-k)"/><text x="280" y="152" font-size="12" fill="#2563eb">K’den L’ye elektron geçer</text><circle cx="432" cy="80" r="30" fill="#dbeafe" stroke="#2563eb"/><text x="432" y="86" font-size="16" fill="#2563eb" font-weight="bold">−3</text><text x="432" y="128" font-size="14" font-weight="bold">K</text><circle cx="500" cy="80" r="30" fill="#dbeafe" stroke="#2563eb"/><text x="500" y="86" font-size="16" fill="#2563eb" font-weight="bold">−3</text><text x="500" y="128" font-size="14" font-weight="bold">L</text><text x="280" y="182" font-weight="bold">Özdeş iletken küreler toplam yükü EŞİT paylaşır: (−6 + 0) ÷ 2 = −3</text><text x="280" y="202" font-size="12" fill="#475569">Dokunma ile elektriklenmede cisimler AYNI cins yükle yüklenir.</text></g></svg></div>
+<ul>
+<li>Yüklü bir iletken, başka bir iletkene <b>dokundurulur</b>; elektronlar cisimler arasında geçer ve toplam yük iki cisme paylaştırılır.</li>
+<li>Dokunma sonunda cisimler <b>aynı cins</b> yükle yüklenir (ya da toplam yük sıfırsa ikisi de nötr olur).</li>
+<li><b>Özdeş</b> (aynı büyüklükte) iletken küreler toplam yükü <b>eşit</b> paylaşır. Büyüklükleri farklıysa <b>büyük küre daha çok</b> yük alır; yine de ikisi aynı cins yüklüdür.</li>
+<li>Toplam yük korunur: dokunmadan önceki yüklerin toplamı = dokunmadan sonraki yüklerin toplamı.</li>
+</ul>
+<div class="key"><b>Çözümlü örnek 2 (dokunma):</b> Özdeş iletken K küresinin yükü +8, L küresinin yükü −2 birimdir. Küreler dokundurulup ayrılıyor. Son yükler nedir, elektronlar hangi yönde geçmiştir?<br>
+<b>Çözüm:</b> Toplam yük = (+8) + (−2) = +6. Özdeş oldukları için her biri <b>+3</b> olur. L, −2’den +3’e çıktığına göre 5 birim elektron <b>kaybetmiştir</b>; K, +8’den +3’e indiğine göre 5 birim elektron <b>kazanmıştır</b>. Elektronlar <b>L’den K’ye</b> geçmiştir. Tuzak: “K’den L’ye 5 proton geçti” demek; protonlar hareket etmez.</div>
+
+<p><b>c) Etki (tesir) ile elektriklenme</b></p>
+<div class="fig"><svg viewBox="0 0 560 256" width="560" role="img" aria-label="Etki ile elektriklenme: negatif çubuk yakındayken birbirine dokunan küreler ayrılır, yakın küre pozitif uzak küre negatif kalır"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="etki-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="etki-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="etki-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><rect x="8" y="8" width="176" height="196" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="96" y="28" font-size="12" font-weight="bold">1) Çubuk yaklaştırılır</text><rect x="192" y="8" width="176" height="196" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="280" y="28" font-size="12" font-weight="bold">2) Çubuk yakındayken ayır</text><rect x="376" y="8" width="176" height="196" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="464" y="28" font-size="12" font-weight="bold">3) Çubuğu uzaklaştır</text><rect x="14" y="82" width="46" height="18" rx="9" fill="#dbeafe" stroke="#2563eb"/><text x="37" y="96" fill="#2563eb" font-weight="bold">− − −</text><circle cx="90" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="90" y1="116" x2="90" y2="162" stroke="#475569" stroke-width="3"/><text x="81" y="90" font-size="14" fill="#dc2626" font-weight="bold">+</text><text x="81" y="105" font-size="14" fill="#dc2626" font-weight="bold">+</text><circle cx="138" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="138" y1="116" x2="138" y2="162" stroke="#475569" stroke-width="3"/><text x="147" y="90" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="147" y="105" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="90" y="186" font-weight="bold">K</text><text x="138" y="186" font-weight="bold">L</text><rect x="198" y="82" width="46" height="18" rx="9" fill="#dbeafe" stroke="#2563eb"/><text x="221" y="96" fill="#2563eb" font-weight="bold">− − −</text><circle cx="268" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="268" y1="116" x2="268" y2="162" stroke="#475569" stroke-width="3"/><text x="259" y="90" font-size="14" fill="#dc2626" font-weight="bold">+</text><text x="259" y="105" font-size="14" fill="#dc2626" font-weight="bold">+</text><circle cx="334" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="334" y1="116" x2="334" y2="162" stroke="#475569" stroke-width="3"/><text x="343" y="90" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="343" y="105" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="268" y="186" font-weight="bold">K</text><text x="334" y="186" font-weight="bold">L</text><line x1="345" y1="52" x2="362" y2="52" stroke="#1e293b" stroke-width="2" marker-end="url(#etki-k)"/><text x="330" y="56" font-size="12" fill="#475569">ayır</text><circle cx="420" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="420" y1="116" x2="420" y2="162" stroke="#475569" stroke-width="3"/><text x="411" y="90" font-size="14" fill="#dc2626" font-weight="bold">+</text><text x="411" y="105" font-size="14" fill="#dc2626" font-weight="bold">+</text><text x="429" y="90" font-size="14" fill="#dc2626" font-weight="bold">+</text><text x="429" y="105" font-size="14" fill="#dc2626" font-weight="bold">+</text><circle cx="510" cy="92" r="24" fill="#ffffff" stroke="#1e293b"/><line x1="510" y1="116" x2="510" y2="162" stroke="#475569" stroke-width="3"/><text x="501" y="90" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="501" y="105" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="519" y="90" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="519" y="105" font-size="14" fill="#2563eb" font-weight="bold">−</text><text x="420" y="186" fill="#dc2626" font-weight="bold">K: (+)</text><text x="510" y="186" fill="#2563eb" font-weight="bold">L: (−)</text><text x="280" y="226" font-size="12" font-weight="bold">Yakın uç ZIT, uzak uç AYNI cins yüklenir; cisimler arası yük geçişi olmaz.</text><text x="280" y="246" font-size="12" fill="#475569">Çubuk önce uzaklaştırılırsa elektronlar geri döner, küreler yine nötr kalır.</text></g></svg></div>
+<ul>
+<li>Yüklü bir cisim, nötr bir iletkene <b>dokundurulmadan yaklaştırılır</b>. İletkenin içindeki elektronlar yer değiştirir: yüklü cismin <b>yakınındaki uç zıt</b>, <b>uzaktaki uç aynı</b> cins yükle yüklenir.</li>
+<li>Bu sırada yüklü cisim ile iletken arasında <b>yük geçişi olmaz</b>; yükler yalnızca iletkenin içinde yer değiştirir.</li>
+<li>Kalıcı yüklenme için birbirine dokunan iki iletken, yüklü cisim <b>yakındayken</b> ayrılır. Sonra yüklü cisim uzaklaştırılır: yakın küre <b>zıt</b>, uzak küre <b>aynı</b> cins yükle kalır ve ikisinin yük miktarı <b>eşittir</b>.</li>
+<li>Önce yüklü cisim uzaklaştırılır, sonra küreler ayrılırsa elektronlar eski yerine döner; küreler <b>nötr</b> kalır.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th></th><th>Sürtünme</th><th>Dokunma</th><th>Etki</th></tr>
+<tr><td><b>Cisimler</b></td><td>Genellikle iki yalıtkan</td><td>İletkenler</td><td>Yüklü cisim + nötr iletken</td></tr>
+<tr><td><b>Temas</b></td><td>Var (sürtme)</td><td>Var (dokunma)</td><td><b>Yok</b> (yalnızca yaklaştırma)</td></tr>
+<tr><td><b>Cisimler arası elektron geçişi</b></td><td>Var</td><td>Var</td><td><b>Yok</b></td></tr>
+<tr><td><b>Son yük cinsi</b></td><td><b>Zıt</b> ve eşit miktarda</td><td><b>Aynı</b> cins</td><td>Yakın uç <b>zıt</b>, uzak uç <b>aynı</b> (yüklü cisme göre)</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> 2026 LGS’de iki etkinlik karşılaştırıldı: Aynı yüklü çubuk 1. etkinlikte K–L’ye <b>dokunduruldu</b> (K ve L çubukla aynı cins), 2. etkinlikte <b>yaklaştırıldı</b> (K zıt, L aynı cins). Yani <b>L iki etkinlikte de çubukla aynı cins</b>, K ise farklı yüklendi. Çubuğun dokunduğu ya da yaklaştığı küre hangisi, uzak küre hangisi, önce bunu belirle.</p>
+
+<h3>5. Elektroskop: cisim yüklü mü? (F.8.7.2.1)</h3>
+<p><b>Elektroskop</b>, bir cismin yüklü olup olmadığını anlamaya yarayan basit bir araçtır. Metal bir topuz, metal bir çubuk ve ucundaki iki ince metal yapraktan oluşur; bu metal kısım yalıtkan bir tıpa ile cam bir kabın içine yerleştirilir.</p>
+<div class="fig"><svg viewBox="0 0 560 240" width="560" role="img" aria-label="Elektroskobun bölümleri: topuz, metal çubuk, metal yapraklar, cam kap; nötrken yapraklar kapalı, yüklüyken açık"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><path d="M110,70 h80 v110 a8,8 0 0 1 -8,8 h-64 a8,8 0 0 1 -8,-8 z" fill="#ecfeff" stroke="#0e7490"/><circle cx="150" cy="46" r="13" fill="#cbd5e1" stroke="#1e293b"/><line x1="150" y1="59" x2="150" y2="128" stroke="#1e293b" stroke-width="4"/><rect x="138" y="64" width="24" height="12" fill="#a8a29e"/><line x1="148" y1="128" x2="148" y2="168" stroke="#b45309" stroke-width="4"/><line x1="152" y1="128" x2="152" y2="168" stroke="#b45309" stroke-width="4"/><text x="150" y="210" fill="#475569" font-weight="bold">Nötr elektroskop</text><text x="150" y="228" font-size="12" fill="#475569">yapraklar kapalı</text><path d="M370,70 h80 v110 a8,8 0 0 1 -8,8 h-64 a8,8 0 0 1 -8,-8 z" fill="#ecfeff" stroke="#0e7490"/><circle cx="410" cy="46" r="13" fill="#cbd5e1" stroke="#1e293b"/><line x1="410" y1="59" x2="410" y2="128" stroke="#1e293b" stroke-width="4"/><rect x="398" y="64" width="24" height="12" fill="#a8a29e"/><line x1="410" y1="128" x2="390" y2="164" stroke="#b45309" stroke-width="4"/><line x1="410" y1="128" x2="430" y2="164" stroke="#b45309" stroke-width="4"/><text x="410" y="210" fill="#dc2626" font-weight="bold">Yüklü elektroskop</text><text x="410" y="228" font-size="12" fill="#475569">yapraklar açık (+ ya da −)</text><text x="205" y="50" font-size="12" text-anchor="start">← topuz (metal)</text><text x="205" y="104" font-size="12" text-anchor="start">← metal çubuk</text><text x="205" y="158" font-size="12" text-anchor="start">← metal yapraklar</text><text x="30" y="104" font-size="12" text-anchor="start" fill="#0e7490">cam kap</text><text x="380" y="156" font-size="15" fill="#dc2626" font-weight="bold">+</text><text x="440" y="156" font-size="15" fill="#dc2626" font-weight="bold">+</text><text x="410" y="20" font-size="12">Aynı cins yüklü yapraklar birbirini iter</text></g></svg></div>
+<ul>
+<li>Elektroskop <b>nötr</b> iken yapraklar <b>kapalıdır</b>.</li>
+<li>Nötr elektroskobun topuzuna <b>yüklü</b> bir cisim dokundurulursa elektroskop cisimle <b>aynı cins</b> yükle yüklenir; yapraklar aynı cins yüklü olduğundan birbirini <b>iter ve açılır</b>.</li>
+<li>Yapraklar cisim <b>pozitif de olsa negatif de olsa</b> açılır. Yani yaprakların açılması yalnızca cismin <b>yüklü</b> olduğunu gösterir, yükün cinsini tek başına göstermez.</li>
+<li>Yaprakların ne kadar açıldığı yük miktarı hakkında fikir verir: daha çok yük → daha geniş açıklık.</li>
+<li>Yüklü elektroskobun topuzuna parmakla dokunulursa elektroskop <b>topraklanır</b>, nötr olur ve yapraklar kapanır.</li>
+<li>Yüklü elektroskoba nötr bir iletken dokundurulursa yük paylaşılır; elektroskoptaki yük azalır, yapraklar <b>biraz kapanır</b> (2018 LGS).</li>
+</ul>
+<p class="note"><b>Dikkat!</b> Öğretim programına göre elektroskobun yük tespitinde kullanıldığını bilmen yeterlidir; ayrıntılı çalışma prensibine girilmez. Sorular genellikle “yapraklar açıldı → cisim yüklü” ve “yük cinsine karar vermek için ne yapılmalı?” düzeyindedir. 2019 LGS’de bir öğrenci “yapraklar açıldığına göre cisim pozitiftir” dedi; bu iddianın yanlış olduğunu göstermek için <b>negatif yüklü olduğu bilinen</b> bir cisim dokundurulup yaprakların yine açıldığını göstermek gerekiyordu.</p>
+
+<h3>6. Topraklama (F.8.7.2.2)</h3>
+<p>Yüklü bir cismin fazla yükünün iletken bir yol ile toprağa aktarılarak cismin <b>nötr</b> hâle getirilmesine <b>topraklama</b> denir.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Topraklama: negatif cisimden toprağa, topraktan pozitif cisme elektron akar; iki durumda da cisim nötr olur"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="tpr-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="tpr-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="tpr-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><rect x="8" y="8" width="264" height="214" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="140" y="30" fill="#2563eb" font-weight="bold">(−) yüklü cisim topraklanırsa</text><circle cx="140" cy="78" r="32" fill="#dbeafe" stroke="#2563eb"/><text x="130" y="74" font-size="17" fill="#2563eb" font-weight="bold">−</text><text x="150" y="74" font-size="17" fill="#2563eb" font-weight="bold">−</text><text x="140" y="94" font-size="17" fill="#2563eb" font-weight="bold">−</text><line x1="140" y1="110" x2="140" y2="170" stroke="#b45309" stroke-width="3"/><line x1="118" y1="172" x2="162" y2="172" stroke="#1e293b" stroke-width="3"/><line x1="126" y1="179" x2="154" y2="179" stroke="#1e293b" stroke-width="3"/><line x1="134" y1="186" x2="146" y2="186" stroke="#1e293b" stroke-width="3"/><line x1="166" y1="118" x2="166" y2="166" stroke="#2563eb" stroke-width="2.5" marker-end="url(#tpr-k)"/><text x="174" y="146" font-size="12" text-anchor="start" fill="#2563eb" font-weight="bold">elektron</text><text x="140" y="210" font-size="12" font-weight="bold">Fazla elektron toprağa akar → nötr</text><text x="110" y="146" font-size="12" text-anchor="end" fill="#92400e">iletken tel</text><rect x="288" y="8" width="264" height="214" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/><text x="420" y="30" fill="#dc2626" font-weight="bold">(+) yüklü cisim topraklanırsa</text><circle cx="420" cy="78" r="32" fill="#fee2e2" stroke="#dc2626"/><text x="410" y="74" font-size="17" fill="#dc2626" font-weight="bold">+</text><text x="430" y="74" font-size="17" fill="#dc2626" font-weight="bold">+</text><text x="420" y="94" font-size="17" fill="#dc2626" font-weight="bold">+</text><line x1="420" y1="110" x2="420" y2="170" stroke="#b45309" stroke-width="3"/><line x1="398" y1="172" x2="442" y2="172" stroke="#1e293b" stroke-width="3"/><line x1="406" y1="179" x2="434" y2="179" stroke="#1e293b" stroke-width="3"/><line x1="414" y1="186" x2="426" y2="186" stroke="#1e293b" stroke-width="3"/><line x1="446" y1="166" x2="446" y2="118" stroke="#2563eb" stroke-width="2.5" marker-end="url(#tpr-k)"/><text x="454" y="146" font-size="12" text-anchor="start" fill="#2563eb" font-weight="bold">elektron</text><text x="420" y="210" font-size="12" font-weight="bold">Topraktan cisme elektron gelir → nötr</text><text x="390" y="146" font-size="12" text-anchor="end" fill="#92400e">iletken tel</text></g></svg></div>
+<ul>
+<li><b>(−) yüklü</b> cisim topraklanırsa fazla elektronlar cisimden <b>toprağa</b> akar.</li>
+<li><b>(+) yüklü</b> cisim topraklanırsa topraktan cisme <b>elektron gelir</b>. (+) yükler toprağa akmaz!</li>
+<li>Topraklama için <b>kesintisiz bir iletken yol</b> (metal tel, metal zincir, insan vücudu) ve bu yolun <b>toprağa</b> ulaşması gerekir. Yolun herhangi bir yerinde yalıtkan (lastik tekerlek, plastik eldiven, yalıtkan masa) varsa topraklama <b>olmaz</b>.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Topraklama uygulaması</th><th>Neyi önler?</th></tr>
+<tr><td><b>Paratoner (yıldırımsavar):</b> binanın en yüksek noktasındaki sivri metal uç, kalın bir iletkenle toprağa gömülü metal levhaya bağlıdır.</td><td>Yıldırımın yükleri binaya zarar vermeden toprağa aktarılır.</td></tr>
+<tr><td><b>Topraklı priz ve fiş</b> (çamaşır makinesi, buzdolabı, ütü)</td><td>Cihazın metal gövdesine kaçan elektrik toprağa gider; dokunan kişi çarpılmaz.</td></tr>
+<tr><td><b>Akaryakıt tankerlerinde yere değen metal zincir</b>, akaryakıt istasyonlarında topraklama kabloları</td><td>Sürtünmeyle biriken yük kıvılcım çıkarıp yakıtı tutuşturmadan toprağa akar.</td></tr>
+<tr><td><b>Yanıcı madde bulunan metal kapların</b> iletken telle toprağa bağlanması</td><td>Yüklenme sonucu oluşabilecek kıvılcım ve patlama.</td></tr>
+<tr><td><b>Ameliyathane ve elektronik atölyelerde</b> iletken zemin, topraklama bilekliği</td><td>Hassas cihazların ve yanıcı gazların olduğu ortamda kıvılcım.</td></tr>
+</table></div>
+<p class="note"><b>Dikkat!</b> Birbirine iletken telle bağlanan metal kaplar <b>kendi aralarında</b> yükü paylaşır ama toprağa bağlı değilse <b>topraklanmış sayılmaz</b>. 2026 LGS’de yalıtkan masa üzerindeki ve yalıtkan eldivenle tutulan, yalnızca birbirine bağlı kaplar “topraklanmamış” kabul edildi. Kaplardan <b>biri</b> toprağa bağlıysa, iletkenle bağlı olduğu öteki kap da topraklanmış olur.</p>
+<p>2018 LGS’de kaydıraktan kayarken sürtünmeyle yüklenen çocuğun, annesine dokunmadan önce <b>toprağa bağlı demir salıncağa</b> tutunması ya da <b>toprağa dokunması</b> yükünü toprağa aktaran doğru davranışlar olarak verildi; tekrar kaymak ise yükünü artırır.</p>
+
+<h3>7. Elektrik enerjisinin dönüşümü (F.8.7.3.1, F.8.7.3.2)</h3>
+<p>Elektrik enerjisi kolayca taşınabilen ve başka enerji türlerine dönüştürülebilen bir enerjidir. Evlerde ve iş yerlerinde kullandığımız araçlar elektrik enerjisini başlıca <b>ısı</b>, <b>ışık</b> ve <b>hareket</b> enerjisine dönüştürür.</p>
+<div class="fig"><svg viewBox="0 0 560 282" width="560" role="img" aria-label="Elektrik enerjisi ısı, ışık ve hareket enerjisine dönüşür; jeneratör ise hareket enerjisini elektriğe çevirir"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="dns-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="dns-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="dns-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><rect x="200" y="14" width="160" height="44" rx="10" fill="#fef9c3" stroke="#a16207"/><text x="280" y="42" font-size="14" fill="#713f12" font-weight="bold">ELEKTRİK ENERJİSİ</text><rect x="14" y="96" width="160" height="104" rx="10" fill="#fee2e2" stroke="#dc2626"/><text x="94" y="118" font-size="14" fill="#dc2626" font-weight="bold">ISI</text><text x="94" y="142" font-size="12">ütü, su ısıtıcısı</text><text x="94" y="161" font-size="12">elektrikli soba, fırın</text><text x="94" y="180" font-size="12">tost makinesi</text><line x1="280" y1="60" x2="94" y2="92" stroke="#1e293b" stroke-width="2" marker-end="url(#dns-k)"/><rect x="200" y="96" width="160" height="104" rx="10" fill="#fef3c7" stroke="#b45309"/><text x="280" y="118" font-size="14" fill="#b45309" font-weight="bold">IŞIK</text><text x="280" y="142" font-size="12">LED lamba, floresan</text><text x="280" y="161" font-size="12">trafik lambası</text><text x="280" y="180" font-size="12">ekran, el feneri</text><line x1="280" y1="60" x2="280" y2="92" stroke="#1e293b" stroke-width="2" marker-end="url(#dns-k)"/><rect x="386" y="96" width="160" height="104" rx="10" fill="#dcfce7" stroke="#16a34a"/><text x="466" y="118" font-size="14" fill="#16a34a" font-weight="bold">HAREKET</text><text x="466" y="142" font-size="12">vantilatör, mikser</text><text x="466" y="161" font-size="12">çamaşır makinesi</text><text x="466" y="180" font-size="12">robot, asansör</text><line x1="280" y1="60" x2="466" y2="92" stroke="#1e293b" stroke-width="2" marker-end="url(#dns-k)"/><text x="94" y="216" font-size="12" fill="#475569">Isıtıcı tel (rezistans) ısınır</text><text x="466" y="216" font-size="12" fill="#475569">İçinde ELEKTRİK MOTORU var</text><rect x="14" y="232" width="532" height="40" rx="8" fill="#eef2ff" stroke="#4338ca" stroke-width="1.5"/><text x="280" y="257" fill="#3730a3" font-weight="bold">Ters yön: JENERATÖR (dinamo) hareketi → elektriğe çevirir.</text></g></svg></div>
+<div class="tbl"><table>
+<tr><th>Dönüşüm</th><th>Örnek araçlar</th><th>Not</th></tr>
+<tr><td>Elektrik → <b>ısı</b></td><td>Ütü, su ısıtıcısı (kettle), elektrikli soba, fırın, tost makinesi, saç düzleştirici, elektrikli şofben</td><td>İçlerinde akım geçince ısınan rezistans (ısıtıcı tel) vardır.</td></tr>
+<tr><td>Elektrik → <b>ışık</b></td><td>LED lamba, floresan lamba, el feneri, trafik lambası, ekranlar</td><td>Akkor flamanlı ampul ışığın yanında çok ısı da yayar; LED aynı ışık için daha az enerji harcar.</td></tr>
+<tr><td>Elektrik → <b>hareket</b></td><td>Vantilatör, mikser, blender, çamaşır ve bulaşık makinesi, elektrikli süpürge, matkap, asansör, elektrikli araç, robotlar</td><td>İçlerinde <b>elektrik motoru</b> vardır.</td></tr>
+<tr><td>Birden fazla dönüşüm</td><td>Saç kurutma makinesi (ısı + hareket), buzdolabı (hareket + ışık), çamaşır makinesi (hareket + ısı)</td><td>Soruda “en çok / amaçlanan” dönüşüm sorulabilir.</td></tr>
+</table></div>
+<ul>
+<li><b>Elektrik motoru:</b> elektrik enerjisi → hareket enerjisi. <b>Robotlar</b>, elektrik enerjisinin hareket enerjisine dönüşümü temel alınarak geliştirilmiştir.</li>
+<li><b>Jeneratör / dinamo:</b> hareket enerjisi → elektrik enerjisi. Bisiklet dinamosu, santrallerdeki jeneratörler, el ile çevrilen fenerler. Motor ile jeneratör birbirinin <b>tersini</b> yapar.</li>
+</ul>
+<p><b>Elektrik sigortası.</b> Bir devreden normalden çok fazla akım geçerse kablolar aşırı ısınır, yalıtkan kılıf erir ve yangın çıkabilir. <b>Sigorta</b>, aşırı akım geçtiğinde devreyi <b>keserek</b> cihazları ve tesisatı korur. Evlerde kullanılan otomatik sigortalar, akım tehlikeli değere çıkınca “atar”; sorun giderildikten sonra tekrar kaldırılabilir. Eski tip erimeli (buşonlu) sigortalarda ise ince tel eriyerek devreyi keser.</p>
+<ul>
+<li>Bir cihazın sigortası, cihazın normal çalışma akımından <b>biraz büyük</b> değerde olmalıdır. Daha küçük olursa cihaz çalışırken bile sigorta atar; çok büyük olursa koruma işe yaramaz.</li>
+<li>Çok sayıda yüksek güçlü cihazı (ısıtıcı, ütü, kettle) aynı çoklu prize takmak, kablodan aşırı akım geçmesine ve ısınmaya yol açar; sigortanın atmasının en sık nedenidir.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> <b>Model tasarlama</b> sorularında enerjinin <b>nereden başladığına</b> bak. “Güç kaynağı → motor döner → ip sarılır → cisim yükselir” modeli elektriği harekete dönüştürür. “İp çekilir → jeneratör döner → lamba yanar” modeli ise hareketi elektriğe (sonra ışığa) dönüştürür; elektriği harekete dönüştüren model <b>değildir</b>. Üflenen pervanenin silindiri döndürdüğü modelde ise elektrik hiç yoktur (2025 LGS).</p>
+
+<h3>8. Elektrik enerjisinin bilinçli ve tasarruflu kullanımı (F.8.7.3.5)</h3>
+<p>Bir cihazın harcadığı elektrik enerjisi, cihazın <b>gücüne</b> ve <b>çalışma süresine</b> bağlıdır:</p>
+<div class="key"><b>Harcanan enerji = Güç × Süre</b><br>Güç kilovat (kW), süre saat (h) alınırsa enerji <b>kilovatsaat (kWh)</b> çıkar. 1 kW = 1000 W. Faturadaki tüketim kWh ile ölçülür: <b>Fatura = harcanan enerji (kWh) × 1 kWh’in fiyatı</b>.</div>
+<div class="key"><b>Çözümlü örnek 3 (fatura):</b> Gücü 2000 W olan bir ütü her gün 1,5 saat çalıştırılıyor. 1 kWh elektriğin fiyatı 3 TL ise ütünün 30 günlük elektrik bedeli kaç TL’dir?<br>
+<b>Çözüm:</b> 2000 W = 2 kW. Günlük enerji: 2 kW × 1,5 h = 3 kWh. 30 günde: 3 × 30 = 90 kWh. Bedel: 90 × 3 = <b>270 TL</b>. Tuzak: Gücü kW’a çevirmeden 2000 × 1,5 × 30 × 3 hesaplamak.</div>
+<p class="note"><b>Dikkat!</b> Gücü küçük bir cihaz uzun süre çalışırsa, gücü büyük ama kısa süre çalışan bir cihazdan <b>daha çok</b> enerji harcayabilir. Örneğin 150 W’lık buzdolabı 24 saatte 3,6 kWh harcar; 2000 W’lık ütü yarım saatte yalnızca 1 kWh harcar.</p>
+<p><b>Tasarruf için yapılabilecekler:</b></p>
+<ul>
+<li>Akkor ampuller yerine <b>LED</b> lamba kullanmak; boş odalarda ışıkları kapatmak; gün ışığından yararlanmak.</li>
+<li>Beyaz eşya alırken <b>enerji verimliliği sınıfı yüksek</b> (enerji etiketinde en verimli sınıf) ürünleri seçmek.</li>
+<li>Çamaşır ve bulaşık makinelerini <b>tam dolu</b> çalıştırmak; ekonomik program kullanmak.</li>
+<li>Cihazları bekleme (stand-by) modunda bırakmak yerine kapatmak, şarj aletini prizde unutmamak.</li>
+<li>Buzdolabının kapağını gereksiz açık bırakmamak; evi yalıtmak.</li>
+</ul>
+<p><b>Neden önemli?</b> Tasarruf aile bütçesini rahatlatır. Ülke ölçeğinde ise elektrik üretiminde kullanılan, önemli bir kısmı dışarıdan alınan fosil yakıtlara daha az para ödenir; kaynaklar daha uzun süre yeter, çevre kirliliği azalır. Enerji verimliliği konusunda resmî kurumlar ve sivil toplum kuruluşları bilinçlendirme çalışmaları yapar.</p>
+<p class="note"><b>Dikkat!</b> <b>Kaçak elektrik</b> kullanımı (sayaçtan geçmeyen elektrik) hem ülke ekonomisine zarar verir hem de bedeli faturasını ödeyen herkese yansır; ayrıca kurallara uygun yapılmayan bağlantılar yangın ve çarpılma tehlikesi oluşturur.</p>
+
+<h3>9. Güç santralleri, avantaj ve dezavantajları (F.8.7.3.3, F.8.7.3.4)</h3>
+<p>Elektrik enerjisinin büyük miktarda üretildiği tesislere <b>güç santrali</b> denir. Santrallerin çoğunda bir enerji kaynağı <b>türbin</b> denen kanatlı çarkı döndürür; türbine bağlı <b>jeneratör</b> de bu hareket enerjisini elektrik enerjisine dönüştürür.</p>
+<div class="fig"><svg viewBox="0 0 560 272" width="560" role="img" aria-label="Hidroelektrik, rüzgâr, termik, jeotermal ve nükleer santrallerde türbin döndürülür ve jeneratör elektrik üretir"><g font-size="13" text-anchor="middle" fill="#1e293b" stroke-width="2"><defs><marker id="snt-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="snt-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker><marker id="snt-k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e293b"/></marker></defs><text x="280" y="20" font-weight="bold">Çoğu santralde ortak zincir: döndürülen TÜRBİN → JENERATÖR → elektrik</text><rect x="8" y="40" width="300" height="34" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="16" y="55" font-size="12" text-anchor="start" font-weight="bold">Hidroelektrik</text><text x="16" y="69" font-size="11" text-anchor="start" fill="#475569">Baraj suyunun potansiyel enerjisi → akan su</text><line x1="310" y1="57" x2="360" y2="145" stroke="#64748b" stroke-width="1.5" marker-end="url(#snt-k)"/><rect x="8" y="82" width="300" height="34" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="16" y="97" font-size="12" text-anchor="start" font-weight="bold">Rüzgâr</text><text x="16" y="111" font-size="11" text-anchor="start" fill="#475569">Rüzgârın hareket enerjisi pervaneyi döndürür</text><line x1="310" y1="99" x2="360" y2="145" stroke="#64748b" stroke-width="1.5" marker-end="url(#snt-k)"/><rect x="8" y="124" width="300" height="34" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="16" y="139" font-size="12" text-anchor="start" font-weight="bold">Termik</text><text x="16" y="153" font-size="11" text-anchor="start" fill="#475569">Kömür / doğal gaz yakılır → ısı → su buharı</text><line x1="310" y1="141" x2="360" y2="145" stroke="#64748b" stroke-width="1.5" marker-end="url(#snt-k)"/><rect x="8" y="166" width="300" height="34" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="16" y="181" font-size="12" text-anchor="start" font-weight="bold">Jeotermal</text><text x="16" y="195" font-size="11" text-anchor="start" fill="#475569">Yer altındaki sıcak su ve buhar</text><line x1="310" y1="183" x2="360" y2="145" stroke="#64748b" stroke-width="1.5" marker-end="url(#snt-k)"/><rect x="8" y="208" width="300" height="34" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/><text x="16" y="223" font-size="12" text-anchor="start" font-weight="bold">Nükleer</text><text x="16" y="237" font-size="11" text-anchor="start" fill="#475569">Uranyum çekirdeği parçalanır → ısı → su buharı</text><line x1="310" y1="225" x2="360" y2="145" stroke="#64748b" stroke-width="1.5" marker-end="url(#snt-k)"/><rect x="364" y="122" width="78" height="46" rx="8" fill="#e0f2fe" stroke="#0369a1"/><text x="403" y="150" fill="#0369a1" font-weight="bold">TÜRBİN</text><line x1="444" y1="145" x2="458" y2="145" stroke="#1e293b" stroke-width="2" marker-end="url(#snt-k)"/><rect x="460" y="122" width="92" height="46" rx="8" fill="#fef9c3" stroke="#a16207"/><text x="506" y="142" font-size="12" fill="#713f12" font-weight="bold">JENERATÖR</text><text x="506" y="159" font-size="12" fill="#713f12">→ elektrik</text><text x="458" y="200" font-size="12" fill="#475569">hareket → elektrik</text><text x="280" y="262" font-size="12" fill="#475569">Güneş panelleri (fotovoltaik) ise türbin kullanmadan ışığı doğrudan elektriğe çevirir.</text></g></svg></div>
+<div class="tbl"><table>
+<tr><th>Santral</th><th>Enerji dönüşümü</th><th>Avantaj</th><th>Dezavantaj / risk</th></tr>
+<tr><td><b>Hidroelektrik (HES)</b></td><td>Barajda biriken suyun potansiyel enerjisi → akan suyun hareket enerjisi → türbin → elektrik</td><td>Yenilenebilir; yakıt yakmaz, hava kirliliği oluşturmaz; baraj sulama ve taşkın kontrolü sağlar.</td><td>Kuruluşu pahalı; baraj gölü tarım alanlarını, yerleşimleri ve tarihî yerleri su altında bırakabilir; ekosistem ve yerel iklim değişebilir; kuraklıkta üretim düşer.</td></tr>
+<tr><td><b>Termik</b></td><td>Kömür, petrol ya da doğal gazın kimyasal enerjisi → yakılınca ısı → su buharı → türbin → elektrik</td><td>Hava koşullarından bağımsız, sürekli ve yüksek üretim.</td><td>Yenilenemez yakıt; karbondioksit ile sera etkisi, kükürt ve azot oksitleri ile asit yağmuru, kül ve hava kirliliği.</td></tr>
+<tr><td><b>Rüzgâr (RES)</b></td><td>Rüzgârın hareket enerjisi → pervane/türbin → elektrik</td><td>Yenilenebilir, temiz; yakıt gerektirmez.</td><td>Rüzgâr her zaman esmez (kesintili üretim); gürültü, görüntü kirliliği, kuşlar için tehlike; geniş alan ister.</td></tr>
+<tr><td><b>Jeotermal</b></td><td>Yer altındaki sıcak su ve buharın ısı enerjisi → türbin → elektrik</td><td>Yenilenebilir; sürekli üretim; sıcak su ayrıca sera ve konut ısıtmada kullanılır.</td><td>Yalnızca jeotermal kaynağı olan bölgelerde kurulabilir; bazı gazlar ve mineralli atık su çevreye zarar verebilir.</td></tr>
+<tr><td><b>Nükleer</b></td><td>Uranyum gibi atomların çekirdeğinin parçalanmasıyla açığa çıkan ısı → su buharı → türbin → elektrik</td><td>Çok az yakıtla çok büyük miktarda ve sürekli enerji; çalışırken sera gazı salmaz.</td><td>Radyoaktif atıklar uzun süre tehlikeli kalır, güvenli depolanması zordur; kaza ve sızıntı riski; kurulumu pahalıdır.</td></tr>
+<tr><td><b>Güneş (GES)</b></td><td>Güneş ışığı → güneş paneli → doğrudan elektrik</td><td>Yenilenebilir, temiz; çatıya bile kurulabilir.</td><td>Gece ve bulutlu havada üretim azalır; geniş alan ister.</td></tr>
+</table></div>
+<ul>
+<li><b>Yenilenebilir</b> kaynaklar (su, rüzgâr, güneş, jeotermal, biyokütle) doğada kendini yeniler. <b>Yenilenemez</b> kaynaklar (kömür, petrol, doğal gaz, uranyum) tükenebilir.</li>
+<li>Termik ve nükleer santrallerde türbini döndüren, <b>ısıtılan suyun buharı</b>dır. Termikte ısı yakıtın yanmasından, nükleerde atom çekirdeklerinin parçalanmasından gelir.</li>
+</ul>
+<p class="note"><b>Dikkat!</b> “Yenilenebilir” her zaman “hiç çevre etkisi yok” demek değildir: HES’ler doğal yaşam alanlarını değiştirir, rüzgâr türbinleri kuşlara zarar verebilir. Nükleer santral sera gazı salmaz ama yenilenebilir değildir. Santral değerlendirme sorularında avantaj ile dezavantajı <b>doğru santrale</b> bağladığından emin ol.</p>
+
+<h3>LGS'de bu konu nasıl soruluyor?</h3>
+<ul>
+<li><b>İtme-çekme gözlemlerinden yük bulma (en sık):</b> Asılı küreler, kaplardan dökülen plastik parçalar, yaklaştırılan çubuklar. Gözlemler tablo ya da çizimle verilir; “hangisi doğrudur / hangisi gibi olabilir / hangileri kesinlikle doğrudur” sorulur. Şıklarda (+) ve (−) işaretleriyle çizilmiş küre modelleri çıkabilir.</li>
+<li><b>Teknolojik cihaz metni:</b> Hava temizleme cihazı, elektrostatik boyama, güneş paneli temizleme düzeneği, fotokopi makinesi, tüplü televizyon. Uzun metinden çalışma ilkesi çıkarılır: “Bu durum hangi yargılarla açıklanır?” Çoğunlukla I-II-III kalıbındadır.</li>
+<li><b>Aşamalı deney:</b> 1. aşama / 2. aşama ya da 1. etkinlik / 2. etkinlik tabloları. Dokunma ile etkiyi karşılaştırma, bir parçanın önce çekilip sonra itilmesini yorumlama (2024: balon önce parçaları çekti, yük alışverişinden sonra itti).</li>
+<li><b>Elektroskop:</b> Yapraklar açıldı / biraz kapandı gözleminden kürelerin yük durumunu bulma; bir iddiayı çürütmek için hangi deneyin yapılması gerektiği.</li>
+<li><b>Topraklama:</b> Görsellerdeki düzeneklerden hangisinde topraklama olduğu; iletken yol + toprak bağlantısı aranır; yalıtkan tekerlek, masa ve eldiven tuzak olarak konur.</li>
+<li><b>Enerji dönüşümü modeli:</b> Motor-jeneratör ayrımı, hangi modelin elektriği harekete dönüştürdüğü.</li>
+<li><b>Tuzaklar:</b> Çekmeyi her zaman zıt yük sanmak; yaprak açılınca cismin pozitif olduğunu düşünmek; proton hareket ettirmek; dokunmada zıt yük yazmak; birbirine bağlı ama toprağa bağlı olmayan kapları topraklanmış saymak; jeneratörü elektrik → hareket dönüştüren araç sanmak.</li>
+<li><b>Strateji:</b> Önce <b>itme</b> gözlemlerini işaretle (kesin bilgi verir), sonra çekmeleri iki ihtimalle değerlendir. “Kesinlikle” ve “olabilir” kelimelerini ayır: “olabilir” sorusunda tek bir uygun örnek yeter, “kesinlikle” sorusunda bütün ihtimallerde doğru olmalıdır. Uzun metinli cihaz sorularında her bölmenin <b>tek görevini</b> bir kelimeyle yanına yaz (yükle / tut / it).</li>
 </ul>
 
-<h3>2. Elektriklenme (Yüklenme) Çeşitleri</h3>
-<div class="fig"><svg viewBox="0 0 600 165" width="580" role="img" aria-label="Sürtünme, dokunma ve etki ile elektriklenme şeması">
-<g font-size="9.5" text-anchor="middle">
-<rect x="6" y="8" width="188" height="148" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="100" y="25" font-size="10.5" font-weight="bold" fill="#1e40af">1. Sürtünme ile Elektriklenme</text>
-<rect x="20" y="42" width="70" height="32" rx="4" fill="#dbeafe" stroke="#1e40af"/>
-<text x="55" y="56" font-weight="bold" fill="#dc2626">Yün Kumaş</text>
-<text x="55" y="69" font-weight="bold" fill="#dc2626">(+3q olur)</text>
-<rect x="110" y="42" width="70" height="32" rx="4" fill="#e2e8f0" stroke="#475569"/>
-<text x="145" y="56" font-weight="bold" fill="#2563eb">Ebonit (Plastik)</text>
-<text x="145" y="69" font-weight="bold" fill="#2563eb">(−3q olur)</text>
-<text x="100" y="92" fill="#1e293b">• İki yalıtkan sürtülür; elektron geçer[cite: 9].</text>
-<text x="100" y="106" font-weight="bold" fill="#dc2626">• ZIT CİNS ve EŞİT MİKTARDA yüklenirler[cite: 9]!</text>
-<text x="100" y="122" font-weight="bold" fill="#1e40af">• Ebonit (Plastik) → (−), Yün → (+)</text>
-<text x="100" y="138" font-weight="bold" fill="#166534">• Cam Çubuk → (+), İpek Kumaş → (−)</text>
-
-<rect x="206" y="8" width="188" height="148" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="300" y="25" font-size="10.5" font-weight="bold" fill="#166534">2. Dokunma ile Elektriklenme</text>
-<circle cx="265" cy="58" r="18" fill="#dcfce7" stroke="#166534" stroke-width="1.5"/>
-<circle cx="305" cy="58" r="22" fill="#dcfce7" stroke="#166534" stroke-width="1.5"/>
-<text x="265" y="62" font-weight="bold" fill="#2563eb">−2q</text>
-<text x="305" y="62" font-weight="bold" fill="#2563eb">−4q</text>
-<text x="300" y="96" fill="#1e293b">• İletken küreler birbirine dokundurulur[cite: 9].</text>
-<text x="300" y="110" font-weight="bold" fill="#166534">• Toplam net yükü kapasiteleriyle (yarıçap)</text>
-<text x="300" y="124" font-weight="bold" fill="#166534">  orantılı paylaşırlar[cite: 9].</text>
-<text x="300" y="140" font-weight="bold" fill="#dc2626">• Son durumda AYNI CİNS yüklenirler[cite: 9]!</text>
-
-<rect x="406" y="8" width="188" height="148" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="500" y="25" font-size="10.5" font-weight="bold" fill="#92400e">3. Etki (Tesir) ile Elektriklenme</text>
-<rect x="418" y="48" width="38" height="18" rx="4" fill="#7c3aed"/>
-<text x="437" y="61" fill="#fff" font-weight="bold">+ + +</text>
-<rect x="472" y="45" width="105" height="24" rx="4" fill="#f8fafc" stroke="#475569"/>
-<text x="492" y="61" font-weight="bold" fill="#2563eb">− − −</text>
-<text x="555" y="61" font-weight="bold" fill="#dc2626">+ + +</text>
-<text x="500" y="92" fill="#1e293b">• Dokundurulmadan yaklaştırılır[cite: 9].</text>
-<text x="500" y="106">• Cisimler arasında <tspan font-weight="bold" fill="#dc2626">yük geçişi OLMAZ</tspan>;</text>
-<text x="500" y="120">  iletken içindeki elektronlar bir uca toplanır[cite: 9].</text>
-<text x="500" y="138" font-weight="bold" fill="#92400e">• Yakın uç ZIT, uzak uç AYNI cins yüklenir[cite: 9].</text>
-</g>
-</svg></div>
-
-<div class="note"><b>Şifreli Kodlama (Sürtünme ile Elektriklenme):</b>
-<br>• <b>E</b>bonit (plastik) çubuk + <b>Y</b>ün kumaş → <b>E</b>bonit <b>E</b>ksi (<b>−</b>), Yün Artı (<b>+</b>) yüklenir (Elektron yünden ebonite geçer)[cite: 9].
-<br>• <b>C</b>am çubuk + <b>İ</b>pek kumaş → <b>İ</b>pek <b>E</b>ksi (<b>−</b>), Cam Artı (<b>+</b>) yüklenir (Elektron camdan ipeğe geçer).</div>
-
-<h3>3. Elektroskop ve Topraklama Olayı</h3>
-<p>Bir cismin elektrikle yüklü olup olmadığını, yüklüyse yükünün cinsini anlamaya yarayan alete <b>elektroskop</b> denir[cite: 9]. Nötr elektroskobun yaprakları tamamen <b>kapalıdır</b>; elektroskop (+) veya (−) yüklendiğinde yapraklar aynı cins yükle yüklendiği için birbirini iter ve <b>açılır</b>[cite: 9].</p>
-
-<table class="rt">
-<tr><th>Elektroskoba Yapılan İşlem</th><th>Yapraklarda Gözlenen Durum ve Nedeni</th></tr>
-<tr><td><b>1. Yüklü elektroskoba AYNI CİNS yüklü cisim yaklaştırılırsa</b></td><td>Yapraklardaki yük miktarı artar; yapraklar <b>biraz daha açılır</b>[cite: 9].</td></tr>
-<tr><td><b>2. Yüklü elektroskoba ZIT CİNS yüklü cisim yaklaştırılırsa (3 İhtimal!)</b></td><td>• Yaklaştırılan cismin yükü azsa: Yapraklar <b>biraz kapanır (açıklık azalır)</b>[cite: 9].<br>• Yükü elektroskoba eşit etkideyse: Yapraklar <b>tamamen kapanır</b>.<br>• Yükü elektroskoptan çok fazlaysa: Yapraklar <b>ÖNCE TAMAMEN KAPANIR, SONRA TEKRAR AÇILIR!</b> (Zıt işaretle açılır).</td></tr>
-<tr><td><b>3. Yüklü elektroskoba ZIT CİNS yüklü cisim DOKUNDURULURSA (3 İhtimal!)</b></td><td>• Yük miktarları eşitse ($+4q$ ile $-4q$): İkisi de nötrlenir, yapraklar <b>tamamen kapanır</b>.<br>• Elektroskobun yükü büyükse: Yapraklar <b>biraz kapanır</b>.<br>• Dokundurulan cismin zıt yükü büyükse: Yapraklar <b>önce kapanır, sonra zıt yükle tekrar açılır!</b></td></tr>
-</table>
-
-<ul>
-<li><b>Topraklama:</b> Yüklü bir cismin iletken bir telle toprağa bağlanarak <b>nötr (yüksüz)</b> hâle getirilmesidir[cite: 9]:
-  <br>• <b>(−) Yüklü Cisim Topraklanırsa:</b> Cisimdeki fazla elektronlar (−) <b>toprağa akar</b> ve cisim nötr olur[cite: 9].
-  <br>• <b>(+) Yüklü Cisim Topraklanırsa:</b> Artı yükler hareket edemediği için <b>topraktan cisme elektron (−) gelir</b> ve cisim nötr olur[cite: 9].
-  <br>• <b>Günlük Hayat Örnekleri:</b> Yüksek binalardaki <b>paratoner (yıldırımsavar)</b>, akaryakıt tankerlerinin arkasında yere değen zincir, evlerdeki topraklı prizler, ameliyathane zeminlerinin iletken yapılması, cami minareleri[cite: 9].</li>
-</ul>
-
-<h3>4. Elektrik Enerjisinin Dönüşümü ve Güç Santralleri</h3>
-<table class="rt">
-<tr><th>Kavram / Araç</th><th>Enerji Dönüşümü ve Çalışma Prensibi</th></tr>
-<tr><td><b>1. Isı Enerjisine Dönüşüm</b></td><td>Direnci büyük olan <b>nikel-krom</b> tellerden elektrik akımı geçtiğinde tel ısınıp kızarır (<i>Ütü, elektrikli soba, fırın, su ısıtıcısı, tost makinesi, saç kurutma makinesi, akkor flamanlı ampul</i>)[cite: 9].</td></tr>
-<tr><td><b>2. Sigorta (Güvenlik Aracı)</b></td><td>Devreden (kısa devre veya aşırı yüklenme nedeniyle) <b>normalin üzerinde akım geçtiğinde</b> ısınarak eriyen veya atan (manyetik) ve <b>devreyi keserek yangını/cihazların bozulmasını önleyen</b> güvenlik elemanıdır. Sigorta devreye <b>seri</b> bağlanır ve cihazın çalışma akımından <b>biraz büyük</b> değerde seçilir!</td></tr>
-<tr><td><b>3. Işık ve Hareket Enerjisine Dönüşüm</b></td><td>• <b>Işık:</b> <i>Ampul, floresan lamba, LED lamba, neon lamba</i>[cite: 9].<br>• <b>Hareket (Elektrik Motoru Bulunanlar):</b> <i>Vantilatör, çamaşır/bulaşık makinesi, mikser, matkap, elektrikli süpürge, saç kurutma makinesinin pervanesi</i>[cite: 9]. (<b>Jeneratör</b> ise tam tersine hareket enerjisini elektrik enerjisine çevirir!)</td></tr>
-<tr><td><b>4. Tüketilen Elektrik Enerjisi Hesabı</b></td><td><b>Harcanan Enerji (E) = Elektriksel Güç (P) × Çalışma Süresi (t)</b>[cite: 9]<br><i>(1 kilowatt [kW] = 1000 Watt [W]; Fatura birimi = <b>kilowatt-saat [kWh]</b>)</i>[cite: 9].</td></tr>
-<tr><td><b>5. Güç Santralleri</b></td><td>• <b>Yenilenebilir (Çevre Dostu) Santraller:</b> <b>Hidroelektrik</b> (Baraj suyu potansiyel → kinetik → türbin → elektrik), <b>Rüzgâr</b>, <b>Jeotermal</b> (yer altı sıcak su buharı), <b>Güneş</b> ve <b>Biyokütle</b>[cite: 9].<br>• <b>Yenilenemez Santraller:</b> <b>Termik Santral</b> (Kömür, petrol, doğal gaz yakılır → hava kirliliği ve asit yağmuru yapar) ve <b>Nükleer Santral</b> (Uranyum/toryum atomu parçalanır → yüksek enerji üretir ancak radyoaktif atık ve sızıntı riski vardır)[cite: 9].</td></tr>
-</table>
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2018-2026 LGS’lerinde bu üniteden gelen <b>16 sorunun</b> her biri, özetteki alt başlıklardan hangisini ölçtüğüne göre sınıflandırıldı. Teknolojik cihaz soruları (filtre, boyama, fotokopi, panel temizleme) çözümde belirleyici olan kural itme-çekme olduğu için o başlığa yazıldı; birden fazla alt başlık kullanan sorularda belirleyici olan seçildi (bu bir yorumdur).</p>
+<div class="fig"><svg viewBox="0 0 560 280" width="560" role="img" aria-label="Isı haritası: Elektrik Yükleri ve Elektrik Enerjisi çıkmış sorularının alt başlık ve yıllara dağılımı, sağda toplamlar"><text x="8" y="18" font-size="13" font-weight="bold" fill="#1e293b">Alt başlık × yıl (2018-2026)</text><text x="440" y="18" font-size="13" font-weight="bold" fill="#1e293b">Toplam</text><text x="189" y="38" font-size="11" text-anchor="middle" fill="#475569">18</text><text x="217" y="38" font-size="11" text-anchor="middle" fill="#475569">19</text><text x="245" y="38" font-size="11" text-anchor="middle" fill="#475569">20</text><text x="273" y="38" font-size="11" text-anchor="middle" fill="#475569">21</text><text x="301" y="38" font-size="11" text-anchor="middle" fill="#475569">22</text><text x="329" y="38" font-size="11" text-anchor="middle" fill="#475569">23</text><text x="357" y="38" font-size="11" text-anchor="middle" fill="#475569">24</text><text x="385" y="38" font-size="11" text-anchor="middle" fill="#475569">25</text><text x="413" y="38" font-size="11" text-anchor="middle" fill="#475569">26</text><text x="168" y="65" font-size="11.5" text-anchor="end" fill="#1e293b">Yükler arası itme-çekme</text><rect x="176" y="48" width="26" height="26" rx="4" fill="#93c5fd"/><text x="189" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="204" y="48" width="26" height="26" rx="4" fill="#3b82f6"/><text x="217" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text><rect x="232" y="48" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="260" y="48" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="288" y="48" width="26" height="26" rx="4" fill="#3b82f6"/><text x="301" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text><rect x="316" y="48" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="344" y="48" width="26" height="26" rx="4" fill="#3b82f6"/><text x="357" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text><rect x="372" y="48" width="26" height="26" rx="4" fill="#3b82f6"/><text x="385" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">2</text><rect x="400" y="48" width="26" height="26" rx="4" fill="#93c5fd"/><text x="413" y="65" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="440" y="52" width="90" height="18" rx="3" fill="#f59e0b"/><text x="534" y="65" font-size="12" font-weight="bold" fill="#1e293b">10</text><text x="168" y="95" font-size="11.5" text-anchor="end" fill="#1e293b">Elektriklenme çeşitleri</text><rect x="176" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="204" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="232" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="260" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="288" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="316" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="344" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="372" y="78" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="400" y="78" width="26" height="26" rx="4" fill="#93c5fd"/><text x="413" y="95" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="440" y="82" width="9" height="18" rx="3" fill="#64748b"/><text x="453" y="95" font-size="12" font-weight="bold" fill="#1e293b">1</text><text x="168" y="125" font-size="11.5" text-anchor="end" fill="#1e293b">Elektroskop</text><rect x="176" y="108" width="26" height="26" rx="4" fill="#93c5fd"/><text x="189" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="204" y="108" width="26" height="26" rx="4" fill="#93c5fd"/><text x="217" y="125" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="232" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="260" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="288" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="316" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="344" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="372" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="400" y="108" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="440" y="112" width="18" height="18" rx="3" fill="#64748b"/><text x="462" y="125" font-size="12" font-weight="bold" fill="#1e293b">2</text><text x="168" y="155" font-size="11.5" text-anchor="end" fill="#1e293b">Topraklama</text><rect x="176" y="138" width="26" height="26" rx="4" fill="#93c5fd"/><text x="189" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="204" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="232" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="260" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="288" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="316" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="344" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="372" y="138" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="400" y="138" width="26" height="26" rx="4" fill="#93c5fd"/><text x="413" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="440" y="142" width="18" height="18" rx="3" fill="#64748b"/><text x="462" y="155" font-size="12" font-weight="bold" fill="#1e293b">2</text><text x="168" y="185" font-size="11.5" text-anchor="end" fill="#1e293b">Enerji dönüşümü / santral</text><rect x="176" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="204" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="232" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="260" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="288" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="316" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="344" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="372" y="168" width="26" height="26" rx="4" fill="#93c5fd"/><text x="385" y="185" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">1</text><rect x="400" y="168" width="26" height="26" rx="4" fill="#f1f5f9"/><rect x="440" y="172" width="9" height="18" rx="3" fill="#64748b"/><text x="453" y="185" font-size="12" font-weight="bold" fill="#1e293b">1</text><line x1="8" y1="200" x2="552" y2="200" stroke="#cbd5e1" stroke-width="1"/><text x="168" y="219" font-size="11.5" text-anchor="end" font-weight="bold" fill="#1e293b">Yıllık toplam</text><text x="189" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3</text><text x="217" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3</text><text x="245" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#94a3b8">–</text><text x="273" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#94a3b8">–</text><text x="301" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text><text x="329" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#94a3b8">–</text><text x="357" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">2</text><text x="385" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3</text><text x="413" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e293b">3</text><text x="444" y="219" font-size="12" font-weight="bold" fill="#1e293b">16 soru</text><text x="8" y="246" font-size="11" fill="#475569">2020 ve 2023: sınav kapsamı ilk 4 ünite (bu ünite yok). 2021: bu üniteden soru gelmedi.</text><rect x="8" y="258" width="12" height="12" rx="2" fill="#93c5fd"/><text x="24" y="268" font-size="11" fill="#475569">1 soru</text><rect x="80" y="258" width="12" height="12" rx="2" fill="#3b82f6"/><text x="96" y="268" font-size="11" fill="#475569">2 soru</text></svg></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi / bağlam</th></tr>
+<tr><td>2018</td><td>11</td><td>Topraklama</td><td>Kaydıraktan kayarken yüklenen çocuk; annesine dokunmadan önce yükünü toprağa aktaracak davranışlar (I-II-III)</td></tr>
+<tr><td>2018</td><td>12</td><td>Yükler arası itme-çekme</td><td>Hava temizleme cihazının 4 filtresi; çıkan havada (+) parçacık fazlaysa hangi filtre çalışmıyor? (teknoloji bağlamı)</td></tr>
+<tr><td>2018</td><td>13</td><td>Elektroskop ile yük tespiti</td><td>K, L, M kürelerinin (+)/(−) sayıları; elektroskopa dokununca yaprakların açılması / biraz kapanması</td></tr>
+<tr><td>2019</td><td>8</td><td>Yükler arası itme-çekme</td><td>Alüminyum top, ebonit ve cam çubukla iki uygulama; itme-çekmeden yük cinslerini seçme</td></tr>
+<tr><td>2019</td><td>9</td><td>Yükler arası itme-çekme</td><td>Elektrostatik boyama; tanecikler aynı yüklü olunca birbirini iterek düzgün yayılır (teknoloji bağlamı)</td></tr>
+<tr><td>2019</td><td>12</td><td>Elektroskop ile yük tespiti</td><td>“Yapraklar açıldı, cisim pozitiftir” iddiasını çürütecek deney (iddia - karşı deney)</td></tr>
+<tr><td>2022</td><td>14</td><td>Yükler arası itme-çekme</td><td>Tüplü televizyonda yüklü levhalar arasında elektronun sapacağı bölge (teknoloji bağlamı)</td></tr>
+<tr><td>2022</td><td>15</td><td>Yükler arası itme-çekme</td><td>Asılı K-L çekiyor, L-M itiyor; yük modeli şıklarından uygun olanı</td></tr>
+<tr><td>2024</td><td>14</td><td>Yükler arası itme-çekme</td><td>Yüklü balon önce parçaları çekiyor, sonra kalanları itiyor; hangi yük durumu olabilir? (dokunma ile yük aktarımı da var; yorum)</td></tr>
+<tr><td>2024</td><td>15</td><td>Yükler arası itme-çekme</td><td>Güneş paneli temizleme düzeneği; tozlar panelden itilip metal levhaya çekiliyor (I-II-III, “doğru olabilir”)</td></tr>
+<tr><td>2025</td><td>13</td><td>Yükler arası itme-çekme</td><td>Hava temizleyicide ızgara çalışmazsa nötr tozların yüklü çubuğa tutunması: yüklü-nötr çekme (I-II-III)</td></tr>
+<tr><td>2025</td><td>14</td><td>Yükler arası itme-çekme</td><td>Kaplardan dökülen K, L, M parçalarına P ve R çubukları; iki zıt çubuğa da çekilen M nötr</td></tr>
+<tr><td>2025</td><td>15</td><td>Elektrik enerjisinin dönüşümü</td><td>Motor, jeneratör ve pervane modellerinden hangisi elektriği harekete dönüştürür? (model tasarlama)</td></tr>
+<tr><td>2026</td><td>13</td><td>Elektriklenme çeşitleri</td><td>Aynı yüklü iletken çubukla 1. etkinlik dokunma, 2. etkinlik etki; K ve L’nin yük cinsleri (I-II-III)</td></tr>
+<tr><td>2026</td><td>14</td><td>Topraklama</td><td>Metal kaplar, yalıtkan tekerlek / masa / eldiven; hangi düzenekte topraklama sağlanır?</td></tr>
+<tr><td>2026</td><td>15</td><td>Yükler arası itme-çekme</td><td>Fotokopi makinesi; ışık düşmeyen bölge ile toner zıt yüklü (“kesinlikle doğru”, teknoloji bağlamı)</td></tr>
+</table></div>
+<div class="note"><b>Çıkmış analizi</b><ul><li>En çok <b>yükler arası itme-çekme</b> soruluyor (16 sorunun 10’u). Bunların 6’sı bir teknolojik cihaz metni üzerinden (hava temizleyici, boyama, televizyon, panel temizleme, fotokopi) gelir; kilit bilgi çoğu zaman “yüklü cisim nötr cismi de çeker” ve “itme varsa ikisi de aynı cins yüklüdür”.</li><li>Tipik tuzak: çekmeyi kesin zıt yük sanmak ve “kesinlikle” ile “olabilir” kökünü karıştırmak. 2024-2026 sorularının çoğu I-II-III kalıbında.</li><li>Eğilim: 2024’ten beri her yıl 2-3 soru geliyor; 2026’da elektriklenme çeşitleri (dokunma-etki), topraklama ve fotokopi birlikte soruldu. Elektroskop 2019’dan beri sorulmadı; enerji dönüşümü / santral tarafı yalnızca 2025’te (model tasarlama) geldi.</li></ul></div>
 `,
 qs: [
-{
-  q: `<p>Aşağıdaki tabloda <b>K, L ve M</b> cisimlerinin sahip olduğu toplam proton (+) ve elektron (−) sayıları verilmiştir[cite: 9].</p>
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda <b>K, L ve M</b> cisimlerinin sahip olduğu toplam proton (+) ve elektron (−) sayıları verilmiştir.</p>
 <table class="rt">
 <tr><th>Cisim</th><th>Proton Sayısı (+ Yük)</th><th>Elektron Sayısı (− Yük)</th></tr>
 <tr><td><b>K Cismi</b></td><td>10</td><td>12</td></tr>
@@ -93,27 +250,20 @@ qs: [
 <tr><td><b>M Cismi</b></td><td>12</td><td>9</td></tr>
 </table>
 <p>Tablodaki verilere göre;</p>
-<p>I. Negatif yüklü K cismi ile pozitif yüklü M cismi birbirine yaklaştırıldığında birbirini çeker[cite: 9].<br>
-II. Nötr olan L cismi, hem K cismi hem de M cismi tarafından çekilir[cite: 9].<br>
-III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alması gerekir[cite: 9].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `Yalnız I`,
-    `I ve II`,
-    `I ve III`,
-    `I, II ve III`
-  ],
+<p>I. Negatif yüklü K cismi ile pozitif yüklü M cismi birbirine yaklaştırıldığında birbirini çeker.<br>
+II. Nötr olan L cismi, hem K cismi hem de M cismi tarafından çekilir.<br>
+III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alması gerekir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
   a: "B",
-  s: `<p>Cisimlerin yük durumlarını belirleyelim[cite: 9]:</p>
+  s: `<p>Cisimlerin yük durumlarını belirleyelim:</p>
 <ul>
-<li><b>K Cismi:</b> $10(+) < 12(-)$ olduğu için <b>negatif (−) yüklüdür</b>[cite: 9].</li>
-<li><b>L Cismi:</b> $8(+) = 8(-)$ olduğu için <b>nötrdür (yüksüzdür)</b>[cite: 9].</li>
-<li><b>M Cismi:</b> $12(+) > 9(-)$ olduğu için <b>pozitif (+) yüklüdür</b>[cite: 9].</li>
+<li><b>K Cismi:</b> 10(+) &lt; 12(−) olduğu için <b>negatif (−) yüklüdür</b>.</li>
+<li><b>L Cismi:</b> 8(+) = 8(−) olduğu için <b>nötrdür</b>.</li>
+<li><b>M Cismi:</b> 12(+) &gt; 9(−) olduğu için <b>pozitif (+) yüklüdür</b>.</li>
 </ul>
-<p>Zıt yüklü K ve M birbirini çeker (<b>I doğru</b>)[cite: 9]; yüklü cisimler nötr L cismini de çeker (<b>II doğru</b>)[cite: 9]. Ancak protonlar kesinlikle hareket etmez; K’nin nötr olması için proton alması değil, dışarıya <b>2 elektron vermesi</b> gerekir (<b>III yanlış</b>)[cite: 9]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Başlangıçta nötr olan <b>K ve L</b> yalıtkan cisimlerinin birbirine sürtülmeden önceki ve sürtüldükten sonraki yük dağılımları şekildeki gibi modellenmiştir[cite: 9].</p>
+<p>Zıt yüklü K ve M birbirini çeker (<b>I doğru</b>); yüklü cisimler nötr L cismini de çeker (<b>II doğru</b>). Ancak protonlar kesinlikle hareket etmez; K’nin nötr olması için proton alması değil, dışarıya <b>2 elektron vermesi</b> gerekir (<b>III yanlış</b>). Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Başlangıçta nötr olan <b>K ve L</b> yalıtkan cisimlerinin birbirine sürtülmeden önceki ve sürtüldükten sonraki yük dağılımları şekildeki gibi modellenmiştir.</p>
 <div class="fig"><svg viewBox="0 0 500 115" width="480" role="img" aria-label="K ve L cisimlerinin sürtünme öncesi ve sonrası yük dağılımı">
 <rect x="10" y="15" width="90" height="55" rx="8" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
 <text x="24" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="45" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="65" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="86" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text>
@@ -126,7 +276,7 @@ III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alm
 <text x="155" y="86" font-size="12" font-weight="bold" text-anchor="middle">L (Nötr)</text>
 
 <line x1="212" y1="42" x2="268" y2="42" stroke="#dc2626" stroke-width="2.5"/><polygon points="274,42 265,37 265,47" fill="#dc2626"/>
-<text x="242" y="32" font-size="10.5" font-weight="bold" fill="#dc2626" text-anchor="middle">Sürtünme</text>
+<text x="242" y="32" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Sürtünme</text>
 
 <rect x="285" y="15" width="90" height="55" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
 <text x="299" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="320" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="340" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text><text x="361" y="34" font-size="15" font-weight="bold" text-anchor="middle" fill="#dc2626">+</text>
@@ -138,260 +288,119 @@ III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alm
 <text x="404" y="48" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text><text x="425" y="48" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text><text x="445" y="48" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text><text x="466" y="48" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text>
 <text x="404" y="64" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text><text x="425" y="64" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text><text x="445" y="64" font-size="15" font-weight="bold" text-anchor="middle" fill="#2563eb">−</text>
 <text x="437" y="86" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">L (−3q)</text>
-<text x="105" y="106" font-size="10.5" font-weight="bold" text-anchor="middle">Sürtünmeden Önce</text>
-<text x="385" y="106" font-size="10.5" font-weight="bold" text-anchor="middle">Sürtünmeden Sonra</text>
+<text x="105" y="106" font-size="11" font-weight="bold" text-anchor="middle">Sürtünmeden Önce</text>
+<text x="385" y="106" font-size="11" font-weight="bold" text-anchor="middle">Sürtünmeden Sonra</text>
 </svg></div>
-<p>Modellenen bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `Sürtünme sırasında K cisminden L cismine 3 tane elektron (−) geçmiştir; K pozitif (+), L ise negatif (−) yüklenmiştir (K yün kumaş, L ebonit çubuk olabilir).`,
-    `L cisminden K cismine 3 tane proton (+) geçmiştir.`,
-    `K cisminden L cismine 3 elektron geçmiş; K negatif, L pozitif yüklenmiştir.`,
-    `Sürtünme sonucunda her iki cisim de aynı cins yükle yüklenmiştir.`
-  ],
+<p>Modellenen bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Sürtünme sırasında K cisminden L cismine 3 tane elektron (−) geçmiştir; K pozitif (+), L ise negatif (−) yüklenmiştir (K yün kumaş, L ebonit çubuk olabilir).", "L cisminden K cismine 3 tane proton (+) geçmiştir.", "K cisminden L cismine 3 elektron geçmiş; K negatif, L pozitif yüklenmiştir.", "Sürtünme sonucunda her iki cisim de aynı cins yükle yüklenmiştir."],
   a: "A",
-  s: `<p>Her iki cisimde de 4’er tane olan (+) yüklerin sayısı hiç değişmemiştir[cite: 9]. K’deki (−) yük sayısı 4’ten 1’e inerken L’deki (−) yük sayısı 4’ten 7’ye çıkmıştır; yani <b>K’den L’ye 3 elektron (−) geçmiş</b>, K pozitif ($+3q$), L ise negatif ($-3q$) yüklenmiştir[cite: 9]. (Yün kumaş +, ebonit çubuk − yüklenir; Cam çubuk +, ipek kumaş − yüklenir)[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>İpek ipliklerle tavana asılı olan iletken <b>K, L, M ve N</b> küreleri ikişerli olarak birbirine yaklaştırıldığında şekildeki etkileşimler gözleniyor[cite: 9].</p>
+  s: `<p>Her iki cisimde de 4’er tane olan (+) yüklerin sayısı hiç değişmemiştir. K’deki (−) yük sayısı 4’ten 1’e inerken L’deki (−) yük sayısı 4’ten 7’ye çıkmıştır; yani <b>K’den L’ye 3 elektron (−) geçmiş</b>, K pozitif (+3q), L ise negatif (−3q) yüklenmiştir. (Yün kumaş +, ebonit çubuk − yüklenir; Cam çubuk +, ipek kumaş − yüklenir).</p><p>B: Protonlar yer değiştirmez. C: Elektron kaybeden K pozitif, elektron kazanan L negatif olur; tersi yazılmış. D: Sürtünmede cisimler zıt cins yüklenir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>İpek ipliklerle tavana asılı olan iletken <b>K, L, M ve N</b> küreleri ikişerli olarak birbirine yaklaştırıldığında şekildeki etkileşimler gözleniyor.</p>
 <div class="fig"><svg viewBox="0 0 450 130" width="430" role="img" aria-label="İpek iplikle asılı K, L, M, N kürelerinin itme ve çekme durumları">
 <line x1="15" y1="12" x2="95" y2="12" stroke="#475569" stroke-width="3"/>
 <line x1="37" y1="12" x2="22" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="22" cy="88" r="11" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="22" y="92" font-size="11" font-weight="bold" text-anchor="middle">K</text>
 <line x1="73" y1="12" x2="88" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="88" cy="88" r="11" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="88" y="92" font-size="11" font-weight="bold" text-anchor="middle">L</text>
-<text x="55" y="120" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">K–L (İtiyor)</text>
+<text x="55" y="120" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">K–L (İtiyor)</text>
 
 <line x1="125" y1="12" x2="205" y2="12" stroke="#475569" stroke-width="3"/>
 <line x1="147" y1="12" x2="154" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="154" cy="88" r="11" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="154" y="92" font-size="11" font-weight="bold" text-anchor="middle">L</text>
 <line x1="183" y1="12" x2="176" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="176" cy="88" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/><text x="176" y="92" font-size="11" font-weight="bold" text-anchor="middle">M</text>
-<text x="165" y="120" font-size="10" font-weight="bold" fill="#16a34a" text-anchor="middle">L–M (Çekiyor)</text>
+<text x="165" y="120" font-size="11" font-weight="bold" fill="#16a34a" text-anchor="middle">L–M (Çekiyor)</text>
 
 <line x1="235" y1="12" x2="315" y2="12" stroke="#475569" stroke-width="3"/>
 <line x1="257" y1="12" x2="264" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="264" cy="88" r="11" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="264" y="92" font-size="11" font-weight="bold" text-anchor="middle">K</text>
 <line x1="293" y1="12" x2="286" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="286" cy="88" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/><text x="286" y="92" font-size="11" font-weight="bold" text-anchor="middle">N</text>
-<text x="275" y="120" font-size="10" font-weight="bold" fill="#16a34a" text-anchor="middle">K–N (Çekiyor)</text>
+<text x="275" y="120" font-size="11" font-weight="bold" fill="#16a34a" text-anchor="middle">K–N (Çekiyor)</text>
 
 <line x1="345" y1="12" x2="425" y2="12" stroke="#475569" stroke-width="3"/>
 <line x1="367" y1="12" x2="367" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="367" cy="88" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/><text x="367" y="92" font-size="11" font-weight="bold" text-anchor="middle">M</text>
 <line x1="403" y1="12" x2="403" y2="80" stroke="#64748b" stroke-width="1.5"/><circle cx="403" cy="88" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="2"/><text x="403" y="92" font-size="11" font-weight="bold" text-anchor="middle">N</text>
-<text x="385" y="120" font-size="10" font-weight="bold" fill="#475569" text-anchor="middle">M–N (Etkileşim Yok)</text>
+<text x="385" y="120" font-size="11" font-weight="bold" fill="#475569" text-anchor="middle">M–N (Etki yok)</text>
 </svg></div>
-<p>Gözlenen bu durumlara göre K, L, M ve N kürelerinin yük durumlarıyla ilgili aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `M ve N küreleri kesinlikle nötrdür (yüksüzdür); K ve L küreleri ise aynı cins elektrik yüküyle yüklüdür.`,
-    `K küresi kesinlikle pozitif (+), L küresi ise negatif (−) yüklüdür.`,
-    `L ve M küreleri kesinlikle zıt cins elektrik yüküyle yüklüdür.`,
-    `K ve N küreleri kesinlikle zıt cins elektrik yüküyle yüklüdür.`
-  ],
+<p>Gözlenen bu durumlara göre K, L, M ve N kürelerinin yük durumlarıyla ilgili aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["M ve N küreleri kesinlikle nötrdür; K ve L küreleri ise aynı cins elektrik yüküyle yüklüdür.", "K küresi kesinlikle pozitif (+), L küresi ise negatif (−) yüklüdür.", "L ve M küreleri kesinlikle zıt cins elektrik yüküyle yüklüdür.", "K ve N küreleri kesinlikle zıt cins elektrik yüküyle yüklüdür."],
   a: "A",
-  s: `<p>En kritik ipucu 4. düzenekteki <b>M–N</b> çiftidir: İki küre arasında <b>hiçbir itme veya çekme olmaması</b> yalnızca <b>her ikisinin de NÖTR (yüksüz)</b> olmasıyla mümkündür (Eğer birisi bile yüklü olsaydı diğerini çekerdi!)[cite: 9].</p>
-<p><b>K ve L</b> ise birbirini ittiği için ikisi de <b>kesinlikle yüklü ve aynı cins</b> yüklüdür (İkisi de + veya ikisi de − olabilir; bu yüzden kesin işareti bilinemez) ve nötr olan M ile N’yi çekmişlerdir[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Yalıtkan ayaklar üzerinde birbirine temas hâlinde duran nötr ve iletken <b>K ve L kürelerinin</b> yanına, pozitif (+) yüklü bir çubuk <b>K küresine yakın olacak şekilde</b> dokundurulmadan yaklaştırılıyor.</p>
-<div class="fig"><svg viewBox="0 0 480 155" width="460" role="img" aria-label="Birbirine değen K ve L kürelerinde etki ile elektriklenme">
-<rect x="20" y="55" width="75" height="22" rx="6" fill="#dc2626"/>
-<text x="57" y="70" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">+ + + +</text>
-<circle cx="155" cy="66" r="30" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
-<circle cx="215" cy="66" r="30" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
-<rect x="150" y="96" width="10" height="40" fill="#a16207"/><rect x="135" y="136" width="40" height="6" fill="#713f12"/>
-<rect x="210" y="96" width="10" height="40" fill="#a16207"/><rect x="195" y="136" width="40" height="6" fill="#713f12"/>
-<text x="155" y="55" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">− − −</text>
-<text x="155" y="78" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">K</text>
-<text x="215" y="55" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">+ + +</text>
-<text x="215" y="78" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">L</text>
-<rect x="275" y="18" width="195" height="120" rx="8" fill="#f8fafc" stroke="#64748b"/>
-<g font-size="9.5" fill="#1e293b">
-<text x="285" y="38" font-weight="bold" fill="#1e40af">Etki İle Elektriklenme Adımları:</text>
-<text x="285" y="56">1. (+) çubuk elektronları L’den K’ye çeker.</text>
-<text x="285" y="74">2. Çubuk oradayken K ve L ayrılırsa:</text>
-<text x="285" y="90" font-weight="bold" fill="#2563eb">   • K küresi: (−) yüklü kalır.</text>
-<text x="285" y="106" font-weight="bold" fill="#dc2626">   • L küresi: (+) yüklü kalır.</text>
-<text x="285" y="124">   • Yük miktarları birbirine EŞİTTİR!</text>
-</g>
-</svg></div>
-<p>Yüklü çubuk konumunu korurken <b>K ve L küreleri yalıtkan saplarından tutularak birbirinden ayrılıyor</b> ve ardından çubuk uzaklaştırılıyor. Bu olayla ilgili aşağıdakilerden hangisi <b>yanlıştır</b>[cite: 9]?</p>`,
-  c: [
-    `Pozitif (+) yüklü çubuk yaklaştırıldığında L küresinden K küresine negatif (−) yükler (elektronlar) geçmiştir.`,
-    `Son durumda K küresi negatif (−), L küresi ise pozitif (+) yükle yüklenmiştir.`,
-    `K küresinin yarıçapı L küresinden daha büyük olsa bile, etki ile elektriklenmede K ve L kürelerinin son yük miktarları birbirine eşit olur.`,
-    `Önce (+) yüklü çubuk uzaklaştırılıp sonra K ve L küreleri birbirinden ayrılsaydı küreler yine zıt yüklü kalırdı.`
-  ],
+  s: `<p>En kritik ipucu 4. düzenekteki <b>M–N</b> çiftidir: İki küre arasında <b>hiçbir itme veya çekme olmaması</b> yalnızca <b>her ikisinin de NÖTR</b> olmasıyla mümkündür (Eğer birisi bile yüklü olsaydı diğerini çekerdi!).</p>
+<p><b>K ve L</b> ise birbirini ittiği için ikisi de <b>kesinlikle yüklü ve aynı cins</b> yüklüdür (İkisi de + veya ikisi de − olabilir; bu yüzden kesin işareti bilinemez) ve nötr olan M ile N’yi çekmişlerdir.</p><p>B: K ile L aynı cins yüklüdür ama işaretleri bilinemez. C: M nötr olduğu için L ile zıt yüklü değildir. D: N nötrdür. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Yalıtkan ayaklar üzerinde birbirine temas hâlinde duran nötr ve iletken <b>K ve L kürelerinin</b> yanına, pozitif (+) yüklü bir çubuk <b>K küresine yakın olacak şekilde</b> dokundurulmadan yaklaştırılıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="Pozitif yüklü çubuk, birbirine dokunan nötr K ve L kürelerinden K’ye yakın tutuluyor; K’nin yakın yüzünde negatif, L’nin uzak yüzünde pozitif yükler toplanmış"><g font-size="13" text-anchor="middle" fill="#1e293b">
+<rect x="70" y="58" width="90" height="24" rx="8" fill="#dc2626"/><text x="115" y="75" font-weight="bold" fill="#ffffff">+ + + +</text>
+<text x="115" y="104" font-size="12" fill="#475569">(+) yüklü çubuk</text>
+<circle cx="250" cy="70" r="34" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+<circle cx="318" cy="70" r="34" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+<text x="234" y="66" font-weight="bold" fill="#2563eb">− −</text><text x="234" y="84" font-weight="bold" fill="#2563eb">−</text>
+<text x="336" y="66" font-weight="bold" fill="#dc2626">+ +</text><text x="336" y="84" font-weight="bold" fill="#dc2626">+</text>
+<text x="262" y="78" font-size="15" font-weight="bold">K</text><text x="306" y="78" font-size="15" font-weight="bold">L</text>
+<rect x="245" y="104" width="10" height="42" fill="#a16207"/><rect x="225" y="146" width="50" height="7" fill="#713f12"/>
+<rect x="313" y="104" width="10" height="42" fill="#a16207"/><rect x="293" y="146" width="50" height="7" fill="#713f12"/>
+<text x="440" y="124" font-size="12" fill="#475569" text-anchor="start">yalıtkan ayaklar</text>
+<line x1="436" y1="120" x2="330" y2="125" stroke="#475569" stroke-width="1.2"/>
+</g></svg></div>
+<p>Yüklü çubuk konumunu korurken <b>K ve L küreleri yalıtkan saplarından tutularak birbirinden ayrılıyor</b> ve ardından çubuk uzaklaştırılıyor. Bu olayla ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["Pozitif (+) yüklü çubuk yaklaştırıldığında L küresinden K küresine negatif (−) yükler (elektronlar) geçmiştir.", "Son durumda K küresi negatif (−), L küresi ise pozitif (+) yükle yüklenmiştir.", "K küresinin yarıçapı L küresinden daha büyük olsa bile, etki ile elektriklenmede K ve L kürelerinin son yük miktarları birbirine eşit olur.", "Önce (+) yüklü çubuk uzaklaştırılıp sonra K ve L küreleri birbirinden ayrılsaydı küreler yine zıt yüklü kalırdı."],
   a: "D",
-  s: `<p>Etki ile elektriklenmede kalıcı yüklenme sağlanabilmesi için <b>yüklü çubuk uzaklaştırılmadan önce</b> kürelerin birbirinden ayrılması şarttır[cite: 9]! Eğer <b>önce yüklü çubuk uzaklaştırılırsa</b>, K’ye çekilen elektronlar tekrar L’ye geri döner ve her iki küre de <b>nötr (yüksüz)</b> kalır (<b>D yanlıştır</b>)[cite: 9]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Yalıtkan ayak üzerindeki nötr bir metal küreye pozitif (+) yüklü bir çubuk dokundurulmadan yaklaştırılıyor. Çubuk yakında tutulurken küre bir iletken telle toprağa bağlanıyor[cite: 9].</p>
-<div class="fig"><svg viewBox="0 0 360 165" width="340" role="img" aria-label="Etki altında topraklama ve kalıcı yükleme">
-<circle cx="200" cy="68" r="38" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
-<rect x="195" y="106" width="10" height="42" fill="#a16207"/><rect x="170" y="148" width="60" height="8" fill="#713f12"/>
-<line x1="75" y1="68" x2="140" y2="68" stroke="#dc2626" stroke-width="14" stroke-linecap="round"/>
-<text x="107" y="72" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+ + +</text>
-<text x="176" y="72" font-size="13" font-weight="bold" fill="#2563eb" text-anchor="middle">− −</text>
-<path d="M238,68 L295,68 L295,135" fill="none" stroke="#334155" stroke-width="2.5"/>
-<line x1="280" y1="135" x2="310" y2="135" stroke="#334155" stroke-width="3"/>
-<line x1="285" y1="141" x2="305" y2="141" stroke="#334155" stroke-width="2"/>
-<line x1="291" y1="147" x2="299" y2="147" stroke="#334155" stroke-width="2"/>
-<text x="305" y="95" font-size="10" font-weight="bold" fill="#2563eb">↑ Topraktan</text>
-<text x="305" y="108" font-size="10" font-weight="bold" fill="#2563eb">  e⁻ gelir!</text>
-</svg></div>
-<p>Daha sonra çubuk yakında tutulurken <b>önce toprak bağlantısı kesiliyor, ardından (+) yüklü çubuk uzaklaştırılıyor</b>. Bu süreç sonunda metal kürenin yük durumu ne olur[cite: 9]?</p>`,
-  c: [
-    `Nötr (yüksüz) kalır.`,
-    `Pozitif (+) yüklü olur.`,
-    `Topraktan gelen elektronlar kürede hapsolduğu için küre kalıcı olarak negatif (−) yüklenir.`,
-    `Önce pozitif (+), sonra nötr olur.`
-  ],
+  s: `<p>Etki ile elektriklenmede kalıcı yüklenme sağlanabilmesi için <b>yüklü çubuk uzaklaştırılmadan önce</b> kürelerin birbirinden ayrılması şarttır! Eğer <b>önce yüklü çubuk uzaklaştırılırsa</b>, K’ye çekilen elektronlar tekrar L’ye geri döner ve her iki küre de <b>nötr</b> kalır (<b>D yanlıştır</b>).</p><p>A: (+) çubuk elektronları kendine yakın K’ye çeker, yani elektronlar L’den K’ye geçer ✓. B: Ayırma çubuk yakındayken yapıldığı için K (−), L (+) kalır ✓. C: K’ye geçen elektron sayısı L’nin kaybettiği elektron sayısına eşittir; yük miktarları kürelerin büyüklüğünden bağımsız olarak eşittir ✓. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Yalıtkan ayak üzerindeki nötr bir metal küreye pozitif (+) yüklü bir çubuk dokundurulmadan yaklaştırılıyor. Çubuk yakında tutulurken küre bir iletken telle toprağa bağlanıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 180" width="560" role="img" aria-label="Pozitif yüklü çubuk metal küreye yaklaştırılmış, küre iletken telle toprağa bağlı"><g font-size="13" text-anchor="middle" fill="#1e293b">
+<rect x="90" y="62" width="110" height="24" rx="12" fill="#dc2626"/><text x="145" y="79" font-weight="bold" fill="#ffffff">+ + + +</text>
+<text x="145" y="110" font-size="12" fill="#475569">(+) yüklü çubuk</text>
+<circle cx="290" cy="74" r="42" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+<text x="290" y="80" font-size="13" fill="#475569">metal küre</text>
+<rect x="285" y="116" width="10" height="40" fill="#a16207"/><rect x="260" y="156" width="60" height="8" fill="#713f12"/>
+<path d="M332,74 L420,74 L420,140" fill="none" stroke="#b45309" stroke-width="3"/>
+<line x1="400" y1="140" x2="440" y2="140" stroke="#1e293b" stroke-width="3"/><line x1="407" y1="147" x2="433" y2="147" stroke="#1e293b" stroke-width="3"/><line x1="414" y1="154" x2="426" y2="154" stroke="#1e293b" stroke-width="3"/>
+<text x="428" y="64" font-size="12" fill="#92400e" text-anchor="start">iletken tel</text>
+<text x="450" y="152" font-size="12" text-anchor="start">toprak</text>
+</g></svg></div>
+<p>Daha sonra çubuk yakında tutulurken <b>önce toprak bağlantısı kesiliyor, ardından (+) yüklü çubuk uzaklaştırılıyor</b>. Bu süreç sonunda metal kürenin yük durumu ne olur?</p>`,
+  c: ["Nötr kalır.", "Pozitif (+) yüklü olur.", "Topraktan gelen elektronlar kürede hapsolduğu için küre kalıcı olarak negatif (−) yüklenir.", "Önce pozitif (+), sonra nötr olur."],
   a: "C",
-  s: `<p>Pozitif (+) çubuk kürenin sol tarafına (−) yükleri çeker ve onları tutar; sağ tarafta kalan (+) yükleri nötrlemek için ise <b>topraktan küreye elektron (−) gelir</b>[cite: 9]. Çubuk uzaklaştırılmadan önce toprak bağlantısı kesilince topraktan gelen bu fazla elektronlar geri dönemez ve çubuk çekildiğinde tüm küreye yayılarak küreyi <b>negatif (−) yüklü</b> yapar[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Pozitif (+) yüklü özdeş iki elektroskobun yaprakları açıktır. <b>I. elektroskobun</b> topuzuna negatif (−) yüklü, <b>II. elektroskobun</b> topuzuna ise pozitif (+) yüklü bir çubuk <b>dokundurulmadan yaklaştırılıyor</b>[cite: 9].</p>
-<div class="fig"><svg viewBox="0 0 420 180" width="400" role="img" aria-label="Pozitif yüklü iki elektroskoba negatif ve pozitif çubuk yaklaştırılması">
-<path d="M65,160 L65,92 Q65,75 85,75 L135,75 Q155,75 155,92 L155,160 Z" fill="#e0f2fe" fill-opacity=".45" stroke="#0369a1" stroke-width="2"/>
-<rect x="100" y="69" width="20" height="10" fill="#a16207"/>
-<line x1="110" y1="54" x2="110" y2="122" stroke="#64748b" stroke-width="4"/>
-<circle cx="110" cy="44" r="12" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
-<line x1="108" y1="122" x2="91" y2="151" stroke="#f59e0b" stroke-width="4"/>
-<line x1="112" y1="122" x2="129" y2="151" stroke="#f59e0b" stroke-width="4"/>
-<text x="82" y="148" font-size="13" font-weight="bold" fill="#dc2626">+</text><text x="138" y="148" font-size="13" font-weight="bold" fill="#dc2626">+</text>
-<text x="110" y="48" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">+</text>
-<line x1="20" y1="26" x2="85" y2="40" stroke="#2563eb" stroke-width="12" stroke-linecap="round"/>
-<text x="52" y="37" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">− − −</text>
-
-<path d="M265,160 L265,92 Q265,75 285,75 L335,75 Q355,75 355,92 L355,160 Z" fill="#e0f2fe" fill-opacity=".45" stroke="#0369a1" stroke-width="2"/>
-<rect x="300" y="69" width="20" height="10" fill="#a16207"/>
-<line x1="310" y1="54" x2="310" y2="122" stroke="#64748b" stroke-width="4"/>
-<circle cx="310" cy="44" r="12" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
-<line x1="308" y1="122" x2="291" y2="151" stroke="#f59e0b" stroke-width="4"/>
-<line x1="312" y1="122" x2="329" y2="151" stroke="#f59e0b" stroke-width="4"/>
-<text x="282" y="148" font-size="13" font-weight="bold" fill="#dc2626">+</text><text x="338" y="148" font-size="13" font-weight="bold" fill="#dc2626">+</text>
-<text x="310" y="48" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">+</text>
-<line x1="220" y1="26" x2="285" y2="40" stroke="#dc2626" stroke-width="12" stroke-linecap="round"/>
-<text x="252" y="37" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+ + +</text>
-<g font-size="12" font-weight="bold" text-anchor="middle"><text x="110" y="175">I. Elektroskop (+)</text><text x="310" y="175">II. Elektroskop (+)</text></g>
-</svg></div>
-<p>Buna göre I. ve II. elektroskopların yapraklarında gerçekleşebilecek hareketlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `I. elektroskobun yaprakları biraz kapanır (veya önce kapanıp sonra açılır); II. elektroskobun yaprakları ise kesinlikle biraz daha açılır.`,
-    `I. elektroskobun yaprakları biraz daha açılır; II. elektroskobun yaprakları biraz kapanır.`,
-    `Her iki elektroskobun da yaprak açıklığı değişmez.`,
-    `II. elektroskobun yaprakları tamamen kapanır.`
-  ],
+  s: `<p>Pozitif (+) çubuk kürenin sol tarafına (−) yükleri çeker ve onları tutar; sağ tarafta kalan (+) yükleri nötrlemek için ise <b>topraktan küreye elektron (−) gelir</b>. Çubuk uzaklaştırılmadan önce toprak bağlantısı kesilince topraktan gelen bu fazla elektronlar geri dönemez ve çubuk çekildiğinde tüm küreye yayılarak küreyi <b>negatif (−) yüklü</b> yapar.</p><p>A: Topraktan gelen elektronlar bağlantı kesildiği için geri dönemez; küre nötr kalmaz. B: Küreye elektron gelmiştir, elektron kaybetmemiştir. D: Hiçbir aşamada küre pozitif yüklenmez. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Yalıtkan saplı, özdeş büyüklükteki iletken <b>X ve Y kürelerinin</b> başlangıçtaki yük miktarları <b>q<sub>X</sub> = −8q</b> ve <b>q<sub>Y</sub> = +2q</b>’dur. Bu iki küre birbirine dokundurulup yük alışverişi tamamlandıktan sonra birbirinden ayrılıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 150" width="560" role="img" aria-label="Özdeş X küresi −8q, Y küresi +2q yüklü; dokunup ayrıldıktan sonraki yükler soru işaretiyle gösterilmiş"><g font-size="13" text-anchor="middle" fill="#1e293b">
+<text x="140" y="20" font-weight="bold">Dokunmadan önce</text><text x="420" y="20" font-weight="bold">Dokunup ayrıldıktan sonra</text>
+<circle cx="95" cy="70" r="32" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="95" y="76" font-size="15" font-weight="bold" fill="#2563eb">−8q</text>
+<circle cx="185" cy="70" r="32" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text x="185" y="76" font-size="15" font-weight="bold" fill="#dc2626">+2q</text>
+<text x="95" y="124" font-weight="bold">X</text><text x="185" y="124" font-weight="bold">Y</text>
+<line x1="236" y1="70" x2="316" y2="70" stroke="#16a34a" stroke-width="2.5"/><polygon points="326,70 314,64 314,76" fill="#16a34a"/>
+<circle cx="375" cy="70" r="32" fill="#f8fafc" stroke="#475569" stroke-width="2"/><text x="375" y="77" font-size="18" font-weight="bold" fill="#475569">?</text>
+<circle cx="465" cy="70" r="32" fill="#f8fafc" stroke="#475569" stroke-width="2"/><text x="465" y="77" font-size="18" font-weight="bold" fill="#475569">?</text>
+<text x="375" y="124" font-weight="bold">X</text><text x="465" y="124" font-weight="bold">Y</text>
+</g></svg></div>
+<p>Buna göre dokunma sırasında gerçekleşen yük geçişi ve kürelerin son yükleri aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["X küresinden Y küresine −5q elektron geçmiştir; son durumda ikisinin de yükü −3q olmuştur.", "Y küresinden X küresine +5q proton geçmiştir; son durumda ikisinin de yükü −3q olmuştur.", "X küresinden Y küresine −3q elektron geçmiştir; son durumda X’in yükü −5q, Y’nin yükü −1q olmuştur.", "İki küre birbirini tamamen nötrlemiş ve ikisinin de son yükü 0 (nötr) olmuştur."],
   a: "A",
-  s: `<p>Elektroskop kurallarını uygulayalım[cite: 9]:</p>
+  s: `<p>Özdeş iletken küreler birbirine dokundurulduğunda <b>toplam net yükü eşit olarak paylaşırlar</b>:</p>
 <ul>
-<li><b>I. Elektroskop (Zıt cins yaklaştırılıyor):</b> (−) çubuk topuzdaki elektronları yapraklara doğru iter; yapraklardaki (+) yükler nötrlenir ve yapraklar <b>biraz kapanır</b> (çubuk çok güçlüyse tamamen kapanır veya önce kapanıp sonra − yükle tekrar açılır)[cite: 9].</li>
-<li><b>II. Elektroskop (Aynı cins yaklaştırılıyor):</b> (+) çubuk yapraklardaki elektronları topuza çeker; yapraklardaki (+) yük fazlalığı artar ve yapraklar <b>kesinlikle biraz daha açılır</b>[cite: 9]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Yalıtkan saplı, özdeş büyüklükteki iletken <b>X ve Y kürelerinin</b> başlangıçtaki yük miktarları <b>$q_X = -8q$</b> ve <b>$q_Y = +2q$</b>’dur. Bu iki küre birbirine dokundurulup yük alışverişi tamamlandıktan sonra birbirinden ayrılıyor.</p>
-<div class="fig"><svg viewBox="0 0 460 120" width="440" role="img" aria-label="Dokunma ile elektriklenmede yük paylaşımı">
-<circle cx="70" cy="52" r="26" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
-<text x="70" y="48" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">X Küresi</text>
-<text x="70" y="64" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">−8q</text>
-<circle cx="155" cy="52" r="26" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
-<text x="155" y="48" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">Y Küresi</text>
-<text x="155" y="64" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle">+2q</text>
-<text x="112" y="102" font-size="10.5" font-weight="bold" text-anchor="middle">Dokunmadan Önce</text>
-<line x1="205" y1="52" x2="255" y2="52" stroke="#16a34a" stroke-width="2.5"/><polygon points="262,52 252,47 252,57" fill="#16a34a"/>
-<circle cx="315" cy="52" r="26" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
-<text x="315" y="48" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">X Küresi</text>
-<text x="315" y="64" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">? </text>
-<circle cx="400" cy="52" r="26" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
-<text x="400" y="48" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Y Küresi</text>
-<text x="400" y="64" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">? </text>
-<text x="357" y="102" font-size="10.5" font-weight="bold" text-anchor="middle">Dokunup Ayrıldıktan Sonra</text>
-</svg></div>
-<p>Buna göre dokunma sırasında gerçekleşen yük geçişi ve kürelerin son yükleri aşağıdakilerin hangisinde doğru verilmiştir[cite: 9]?</p>`,
-  c: [
-    `X küresinden Y küresine −5q elektron geçmiştir; son durumda ikisinin de yükü −3q olmuştur.`,
-    `Y küresinden X küresine +5q proton geçmiştir; son durumda ikisinin de yükü −3q olmuştur.`,
-    `X küresinden Y küresine −3q elektron geçmiştir; son durumda X’in yükü −5q, Y’nin yükü −1q olmuştur.`,
-    `İki küre birbirini tamamen nötrlemiş ve ikisinin de son yükü 0 (nötr) olmuştur.`
-  ],
-  a: "A",
-  s: `<p>Özdeş iletken küreler birbirine dokundurulduğunda <b>toplam net yükü eşit olarak paylaşırlar</b>[cite: 9]:</p>
-<ul>
-<li><b>Toplam net yük:</b> $q_{\text{toplam}} = (-8q) + (+2q) = \mathbf{-6q}$[cite: 9].</li>
-<li><b>Kürelerin son yükleri:</b> Özdeş oldukları için ikiye bölünür: $q'_X = \mathbf{-3q}$ ve $q'_Y = \mathbf{-3q}$[cite: 9].</li>
-<li><b>Geçen yük:</b> X küresi $-8q$’dan $-3q$’ya düştüğüne göre, <b>X küresinden Y küresine $-5q$ değerinde elektron</b> geçmiştir (Protonlar hareket etmez!)[cite: 9]. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir öğrenci elinde doğrudan tuttuğu demir (metal) bir çubuğu yün kumaşa sürttükten sonra küçük kâğıt parçalarına yaklaştırıyor ve kâğıtların çekilmediğini görüyor. Aynı demir çubuğu yalıtkan plastik bir eldiven giyerek tutup yün kumaşa sürttüğünde ise kâğıt parçalarının çubuğa çekildiğini gözlemliyor[cite: 9].</p>
-<p>İlk denemede demir çubuğun kâğıt parçalarını çekmemesinin nedeni aşağıdakilerden hangisidir[cite: 9]?</p>`,
-  c: [
-    `Metallerin sürtünme ile hiçbir koşulda elektrik yükü kazanamaması`,
-    `Kâğıt parçalarının ilk denemede demir çubukla aynı cins yüklü olması`,
-    `Plastik eldivenin demir çubuğa kendi elektronlarını vermesi`,
-    `İlk denemede demir çubukta biriken elektrik yüklerinin, iletken olan metal ve insan vücudu üzerinden toprağa akması (topraklanması)`
-  ],
+<li><b>Toplam net yük:</b> q<sub>toplam</sub> = (−8q) + (+2q) = <b>−6q</b>.</li>
+<li><b>Kürelerin son yükleri:</b> Özdeş oldukları için ikiye bölünür: q′<sub>X</sub> = <b>−3q</b> ve q′<sub>Y</sub> = <b>−3q</b>.</li>
+<li><b>Geçen yük:</b> X küresi −8q’dan −3q’ya düştüğüne göre, <b>X küresinden Y küresine −5q değerinde elektron</b> geçmiştir (Protonlar hareket etmez!).</li>
+</ul><p>B: Protonlar hareket etmez. C: Özdeş küreler yükü eşit paylaşır; −5q ve −1q eşit değildir. D: Toplam yük sıfır değil −6q olduğu için küreler nötr olamaz. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci elinde doğrudan tuttuğu demir (metal) bir çubuğu yün kumaşa sürttükten sonra küçük kâğıt parçalarına yaklaştırıyor ve kâğıtların çekilmediğini görüyor. Aynı demir çubuğu yalıtkan plastik bir eldiven giyerek tutup yün kumaşa sürttüğünde ise kâğıt parçalarının çubuğa çekildiğini gözlemliyor.</p>
+<p>İlk denemede demir çubuğun kâğıt parçalarını çekmemesinin nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Metallerin sürtünme ile hiçbir koşulda elektrik yükü kazanamaması", "Kâğıt parçalarının ilk denemede demir çubukla aynı cins yüklü olması", "Plastik eldivenin demir çubuğa kendi elektronlarını vermesi", "İlk denemede demir çubukta biriken elektrik yüklerinin, iletken olan metal ve insan vücudu üzerinden toprağa akması (topraklanması)"],
   a: "D",
-  s: `<p>Hem demir çubuk hem de insan vücudu <b>iletkendir</b>[cite: 9]. Çıplak elle tutulan metal çubuk kumaşa sürtüldüğünde oluşan yükler anında <b>insan vücudu üzerinden toprağa akar</b> ve çubuk nötr kalır[cite: 9]. Plastik eldiven ise <b>yalıtkan</b> olduğu için yüklerin toprağa akmasını engeller ve çubuk yüklü kalır[cite: 9]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Nötr bir elektroskoba aşağıdaki işlemler sırasıyla uygulanıyor[cite: 9]:</p>
-<ul>
-<li><b>1. Adım:</b> Negatif (−) yüklü bir çubuk elektroskobun topuzuna dokundurulmadan yaklaştırılıyor; yaprakların açıldığı görülüyor[cite: 9].</li>
-<li><b>2. Adım:</b> (−) yüklü çubuk yakında tutulurken elektroskobun topuzuna parmakla dokunuluyor (topraklanıyor); yaprakların tamamen kapandığı görülüyor[cite: 9].</li>
-<li><b>3. Adım:</b> Önce parmak topuzdan çekiliyor, ardından (−) yüklü çubuk elektroskoptan uzaklaştırılıyor[cite: 9].</li>
-</ul>
-<p>3. adımın sonunda elektroskobun <b>yük cinsi</b> ve <b>yapraklarının durumu</b> aşağıdakilerin hangisinde doğru verilmiştir[cite: 9]?</p>`,
-  c: [
-    `Nötr — Yapraklar kapalı kalır.`,
-    `Pozitif (+) yüklü — Yapraklar tekrar açılır.`,
-    `Negatif (−) yüklü — Yapraklar tekrar açılır.`,
-    `Pozitif (+) yüklü — Yapraklar kapalı kalır.`
-  ],
-  a: "B",
-  s: `<p>Adımları takip edelim[cite: 9]:</p>
-<ol>
-<li>(−) yüklü çubuk yaklaşınca topuzda (+) yükleri tutar, (−) yükleri yapraklara iter ve yapraklar (−) ile açılır[cite: 9].</li>
-<li>Parmakla dokunulunca (topraklama), yapraklara itilen (−) yükler <b>insan vücudu üzerinden toprağa kaçar</b> ve yapraklar kapanır (Topuzda ise çubuğun tuttuğu + yükler kalır)[cite: 9].</li>
-<li>Önce parmak çekilip sonra (−) çubuk uzaklaştırılınca, topuzdaki (+) yükler yapraklara da yayılır; böylece elektroskop <b>pozitif (+) yüklenir ve yapraklar tekrar açılır</b>[cite: 9]. Cevap <b>B</b>.</li>
-</ol>`
-},
-{
-  q: `<p>Aşağıdaki uygulamalardan hangisinde <b>topraklama (elektrik yüklerinin güvenli biçimde toprağa aktarılması)</b> olayından yararlanılmamaktadır[cite: 9]?</p>`,
-  c: [
-    `Patlayıcı yakıt taşıyan tankerlerin arkasında yere değen metal bir zincir bulundurulması`,
-    `Yüksek binaların ve minarelerin tepesine yıldırımdan korunmak için paratoner (yıldırımsavar) takılması`,
-    `Evlerdeki çamaşır ve bulaşık makinelerinin topraklı prizlere takılarak çalıştırılması`,
-    `Fotokopi makinelerinde ve otomobil boyama tabancalarında boya/toner taneciklerinin yüzeye yapıştırılması`
-  ],
+  s: `<p>Hem demir çubuk hem de insan vücudu <b>iletkendir</b>. Çıplak elle tutulan metal çubuk kumaşa sürtüldüğünde oluşan yükler anında <b>insan vücudu üzerinden toprağa akar</b> ve çubuk nötr kalır. Plastik eldiven ise <b>yalıtkan</b> olduğu için yüklerin toprağa akmasını engeller ve çubuk yüklü kalır.</p><p>A: Metaller de sürtünmeyle yüklenebilir; ikinci denemede yüklenmiştir. B: Kâğıt parçaları nötrdür; yüklü çubuk onları çekmeliydi. C: Eldiven yük vermez, yalnızca yüklerin toprağa akmasını önler. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki uygulamalardan hangisinde <b>topraklama (elektrik yüklerinin güvenli biçimde toprağa aktarılması)</b> olayından yararlanılmamaktadır?</p>`,
+  c: ["Patlayıcı yakıt taşıyan tankerlerin arkasında yere değen metal bir zincir bulundurulması", "Yüksek binaların ve minarelerin tepesine yıldırımdan korunmak için paratoner (yıldırımsavar) takılması", "Evlerdeki çamaşır ve bulaşık makinelerinin topraklı prizlere takılarak çalıştırılması", "Fotokopi makinelerinde ve otomobil boyama tabancalarında boya/toner taneciklerinin yüzeye yapıştırılması"],
   a: "D",
-  s: `<p>Tanker zinciri, paratoner ve topraklı priz doğrudan <b>topraklama</b> örnekleridir[cite: 9]. Ancak <b>fotokopi makinelerinde, baca filtrelerinde, parmak izi tespitinde ve otomobil boyamada</b> topraklama değil; <b>zıt elektrik yüklerinin birbirini çekmesi</b> ilkesi kullanılır (örneğin otomobil kaportası −, boya damlacıkları + yüklenerek boyanın düzgün yapışması sağlanır)[cite: 9]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Elektrik enerjisini ısı enerjisine dönüştüren araçlarda (ütü, fırın, elektrikli soba) kullanılan rezistans tellerinin <b>cinsi, uzunluğu ve kesit alanı (kalınlığı)</b> açığa çıkan ısı miktarını etkiler. Özdeş üreteçlere bağlanan aşağıdaki üç kapta eşit kütlede ve aynı sıcaklıkta su bulunmaktadır.</p>
-<div class="fig"><svg viewBox="0 0 520 155" width="500" role="img" aria-label="Rezistans telinin cinsi, boyu ve kalınlığının suyun ısınmasına etkisi">
-<g stroke="#1e3a8a" stroke-width="2" fill="#dbeafe">
-<rect x="35" y="45" width="90" height="75"/><rect x="215" y="45" width="90" height="75"/><rect x="395" y="45" width="90" height="75"/>
-</g>
-<path d="M50,85 L60,75 L70,95 L80,75 L90,95 L100,75 L110,85" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M225,85 L232,75 L239,95 L246,75 L253,95 L260,75 L267,95 L274,75 L281,95 L288,75 L295,85" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<path d="M410,85 L420,75 L430,95 L440,75 L450,95 L460,75 L470,85" fill="none" stroke="#ea580c" stroke-width="4.5"/>
-<g font-size="9.5" font-weight="bold" text-anchor="middle" fill="#1e293b">
-<text x="80" y="34" fill="#1e40af">1. Düzenek (100 g Su)</text>
-<text x="80" y="135" fill="#dc2626">Nikel-krom: Boy L, Kesit S</text>
-<text x="260" y="34" fill="#1e40af">2. Düzenek (100 g Su)</text>
-<text x="260" y="135" fill="#dc2626">Nikel-krom: Boy 2L, Kesit S</text>
-<text x="440" y="34" fill="#1e40af">3. Düzenek (100 g Su)</text>
-<text x="440" y="135" fill="#b45309">Bakır tel: Boy L, Kesit 2S</text>
-</g>
-</svg></div>
+  s: `<p>Tanker zinciri, paratoner ve topraklı priz doğrudan <b>topraklama</b> örnekleridir. Ancak <b>fotokopi makinelerinde, baca filtrelerinde, parmak izi tespitinde ve otomobil boyamada</b> topraklama değil; <b>zıt elektrik yüklerinin birbirini çekmesi</b> ilkesi kullanılır (örneğin otomobil kaportası −, boya damlacıkları + yüklenerek boyanın düzgün yapışması sağlanır).</p><p>A, B ve C’de yükler iletken bir yol (zincir, kalın tel, priz kablosu) ile toprağa aktarılır. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Elektrik enerjisini ısı enerjisine dönüştüren araçlarda (ütü, fırın, elektrikli soba) kullanılan rezistans tellerinin <b>cinsi, uzunluğu ve kesit alanı (kalınlığı)</b> açığa çıkan ısı miktarını etkiler. Özdeş üreteçlere bağlanan aşağıdaki üç kapta eşit kütlede ve aynı sıcaklıkta su bulunmaktadır.</p>
+<div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="Üç kapta eşit kütlede su ve rezistans telleri: 1. nikel-krom boy L kesit S, 2. nikel-krom boy 2L kesit S, 3. bakır boy L kesit 2S"><g font-size="12" text-anchor="middle" fill="#1e293b">
+<g stroke="#1e3a8a" stroke-width="2" fill="#dbeafe"><rect x="45" y="40" width="96" height="78"/><rect x="232" y="40" width="96" height="78"/><rect x="419" y="40" width="96" height="78"/></g>
+<path d="M63,80 L73,70 L83,90 L93,70 L103,90 L113,70 L123,80" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M240,80 L247,70 L254,90 L261,70 L268,90 L275,70 L282,90 L289,70 L296,90 L303,70 L310,90 L317,70 L321,80" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M437,80 L447,70 L457,90 L467,70 L477,90 L487,70 L497,80" fill="none" stroke="#ea580c" stroke-width="5"/>
+<text x="93" y="28" font-weight="bold" fill="#1e40af">1. düzenek</text><text x="280" y="28" font-weight="bold" fill="#1e40af">2. düzenek</text><text x="467" y="28" font-weight="bold" fill="#1e40af">3. düzenek</text>
+<text x="93" y="138" font-weight="bold" fill="#dc2626">Nikel-krom tel</text><text x="93" y="156">boy L, kesit S</text>
+<text x="280" y="138" font-weight="bold" fill="#dc2626">Nikel-krom tel</text><text x="280" y="156">boy 2L, kesit S</text>
+<text x="467" y="138" font-weight="bold" fill="#b45309">Bakır tel</text><text x="467" y="156">boy L, kesit 2S</text>
+</g></svg></div>
 <p>Elektrik enerjisinin ısı enerjisine dönüşümüyle ilgili bu deney düzenekleri için aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `1. ve 2. düzenekler karşılaştırularak “iletken telin uzunluğunun (L → 2L) açığa çıkan ısı enerjisine etkisi” araştırılabilir.`,
-    `1. ve 3. düzenekler karşılaştırılarak telin yalnız cinsinin ısıya etkisi araştırılabilir.`,
-    `Isıtıcı ve ütülerde direnci çok küçük olan bakır teller tercih edilir.`,
-    `Devreden geçen elektrik akımı miktarı arttıkça telde açığa çıkan ısı enerjisi azalır.`
-  ],
+  c: ["1. ve 2. düzenekler karşılaştırularak “iletken telin uzunluğunun (L → 2L) açığa çıkan ısı enerjisine etkisi” araştırılabilir.", "1. ve 3. düzenekler karşılaştırılarak telin yalnız cinsinin ısıya etkisi araştırılabilir.", "Isıtıcı ve ütülerde direnci çok küçük olan bakır teller tercih edilir.", "Devreden geçen elektrik akımı miktarı arttıkça telde açığa çıkan ısı enerjisi azalır."],
   a: "A",
-  s: `<p>Kontrollü deneyde yalnızca <b>tek bir değişken</b> farklı olmalıdır: <b>1. ve 2. düzeneklerde</b> telin cinsi (nikel-krom) ve kesit alanı (S) aynı, yalnızca <b>telin boyu (L ve 2L)</b> farklıdır; dolayısıyla telin uzunluğunun ısıya etkisi araştırılabilir (<b>A doğru</b>). (1 ve 3’te ise hem cins hem kesit alanı farklı olduğu için kontrollü deney olmaz).</p>`
-},
-{
-  q: `<p>Evlerimizdeki elektrik tesisatını ve elektrikli cihazları aşırı akımın yol açabileceği yangın ve arızalardan korumak için <b>sigorta</b> kullanılır. Aşağıdaki tabloda dört farklı ev aletinin çalışırken çektiği normal elektrik akımı değerleri verilmiştir.</p>
+  s: `<p>Kontrollü deneyde yalnızca <b>tek bir değişken</b> farklı olmalıdır: <b>1. ve 2. düzeneklerde</b> telin cinsi (nikel-krom) ve kesit alanı (S) aynı, yalnızca <b>telin boyu (L ve 2L)</b> farklıdır; dolayısıyla telin uzunluğunun ısıya etkisi araştırılabilir (<b>A doğru</b>). (1 ve 3’te ise hem cins hem kesit alanı farklı olduğu için kontrollü deney olmaz).</p><p>B: 1. ve 3. düzeneklerde telin cinsi ile birlikte kesit alanı da farklıdır. C: Isıtıcılarda direnci büyük nikel-krom teller kullanılır; bakır daha çok iletim kablolarında kullanılır. D: Akım arttıkça açığa çıkan ısı artar. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Evlerimizdeki elektrik tesisatını ve elektrikli cihazları aşırı akımın yol açabileceği yangın ve arızalardan korumak için <b>sigorta</b> kullanılır. Aşağıdaki tabloda dört farklı ev aletinin çalışırken çektiği normal elektrik akımı değerleri verilmiştir.</p>
 <table class="rt">
 <tr><th>Elektrikli Cihaz</th><th>Çalışma Akımı (Amper - A)</th><th>Bağlanması Uygun Sigorta Değeri</th></tr>
 <tr><td><b>1. Televizyon</b></td><td>2 A</td><td>3 A veya 5 A</td></tr>
@@ -400,17 +409,10 @@ III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alm
 <tr><td><b>4. Elektrikli Şofben</b></td><td>14 A</td><td>10 A</td></tr>
 </table>
 <p>Tablodaki numaralanmış cihazlardan hangisine seçilen sigorta değeri <b>uygun değildir</b> ve bu durumda ne gerçekleşir?</p>`,
-  c: [
-    `1. Televizyon — Sigorta hemen atar ve televizyon çalışmaz.`,
-    `2. Elektrikli Süpürge — Süpürge hiç çalışmaz.`,
-    `3. Çamaşır Makinesi — Makine yanar.`,
-    `4. Elektrikli Şofben — Şofben normal çalışırken 14 A akım çektiği için 10 A’lik sigorta anında atar (devreyi keser) ve şofben çalıştırılamaz.`
-  ],
+  c: ["1. Televizyon — Sigorta hemen atar ve televizyon çalışmaz.", "2. Elektrikli Süpürge — Süpürge hiç çalışmaz.", "3. Çamaşır Makinesi — Makine yanar.", "4. Elektrikli Şofben — Şofben normal çalışırken 14 A akım çektiği için 10 A’lik sigorta anında atar (devreyi keser) ve şofben çalıştırılamaz."],
   a: "D",
-  s: `<p><b>Sigorta Seçim Kuralı:</b> Bir cihaza takılacak sigortanın akım değeri, cihazın normal çalışma akımından <b>küçük veya ona eşit OLAMAZ</b> (yoksa cihaz normal çalışırken bile sigorta atar!); cihazın çalışma akımından <b>biraz büyük</b> olmalıdır. <b>14 A</b> akım çeken şofbene <b>10 A</b> sigorta takılırsa şofben açıldığı anda sigorta devreyi keser ve şofben çalışmaz (<b>16 A</b> sigorta takılmalıdır). Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bir evde kullanılan dört farklı elektrikli cihazın elektriksel güçleri (Watt) ve günlük ortalama çalıştırılma süreleri aşağıdaki tabloda verilmiştir ($1\text{ kW} = 1000\text{ W}$)[cite: 9].</p>
+  s: `<p><b>Sigorta Seçim Kuralı:</b> Bir cihaza takılacak sigortanın akım değeri, cihazın normal çalışma akımından <b>küçük veya ona eşit OLAMAZ</b> (yoksa cihaz normal çalışırken bile sigorta atar!); cihazın çalışma akımından <b>biraz büyük</b> olmalıdır. <b>14 A</b> akım çeken şofbene <b>10 A</b> sigorta takılırsa şofben açıldığı anda sigorta devreyi keser ve şofben çalışmaz (<b>16 A</b> sigorta takılmalıdır).</p><p>A: 2 A çeken televizyona 3 A ya da 5 A sigorta uygundur, hemen atmaz. B ve C: Seçilen sigortalar çalışma akımından biraz büyüktür, uygundur. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir evde kullanılan dört farklı elektrikli cihazın elektriksel güçleri (Watt) ve günlük ortalama çalıştırılma süreleri aşağıdaki tabloda verilmiştir (1 kW = 1000 W).</p>
 <table class="rt">
 <tr><th>Elektrikli Cihaz</th><th>Elektriksel Gücü (W)</th><th>Günlük Kullanım Süresi (Saat)</th></tr>
 <tr><td><b>Ütü</b></td><td>2000 W</td><td>0,5 saat</td></tr>
@@ -418,206 +420,123 @@ III. K cisminin nötr hâle gelebilmesi için dışarıdan 2 tane proton (+) alm
 <tr><td><b>Televizyon</b></td><td>100 W</td><td>5 saat</td></tr>
 <tr><td><b>Çamaşır Makinesi</b></td><td>2500 W</td><td>1 saat</td></tr>
 </table>
-<p>Buna göre bu evde <b>1 günde en fazla elektrik enerjisi (kWh) tüketen</b> cihaz aşağıdakilerden hangisidir[cite: 9]?</p>`,
-  c: [`Buzdolabı`, `Ütü`, `Televizyon`, `Çamaşır Makinesi`],
+<p>Buna göre bu evde <b>1 günde en fazla elektrik enerjisi (kWh) tüketen</b> cihaz aşağıdakilerden hangisidir?</p>`,
+  c: ["Buzdolabı", "Ütü", "Televizyon", "Çamaşır Makinesi"],
   a: "A",
-  s: `<p>Tüketilen elektrik enerjisi <b>$\text{Enerji} = \text{Güç} \times \text{Süre}$</b> formülüyle hesaplanır[cite: 9]:</p>
+  s: `<p>Tüketilen elektrik enerjisi <b>Enerji = Güç × Süre</b> formülüyle hesaplanır:</p>
 <ul>
-<li><b>Ütü:</b> $2\text{ kW} \times 0,5\text{ saat} = 1\text{ kWh}$[cite: 9]</li>
-<li><b>Buzdolabı:</b> $0,15\text{ kW} \times 24\text{ saat} = \mathbf{3,6\text{ kWh}}$[cite: 9]</li>
-<li><b>Televizyon:</b> $0,1\text{ kW} \times 5\text{ saat} = 0,5\text{ kWh}$[cite: 9]</li>
-<li><b>Çamaşır Makinesi:</b> $2,5\text{ kW} \times 1\text{ saat} = 2,5\text{ kWh}$[cite: 9]</li>
+<li><b>Ütü:</b> 2 kW × 0,5 saat = 1 kWh</li>
+<li><b>Buzdolabı:</b> 0,15 kW × 24 saat = <b>3,6 kWh</b></li>
+<li><b>Televizyon:</b> 0,1 kW × 5 saat = 0,5 kWh</li>
+<li><b>Çamaşır Makinesi:</b> 2,5 kW × 1 saat = 2,5 kWh</li>
 </ul>
-<p>Gücü küçük olmasına rağmen 24 saat kesintisiz çalıştığı için en çok enerjiyi <b>Buzdolabı (3,6 kWh)</b> tüketir[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Elektriksel gücü <b>1500 W</b> olan bir elektrikli ısıtıcı her gün düzenli olarak <b>4 saat</b> çalıştırılıyor. Elektrik enerjisinin <b>1 kWh’lik birim fiyatı 2,5 TL</b>’dir ($1\text{ kW} = 1000\text{ W}$)[cite: 9].</p>
-<p>Buna göre bu ısıtıcının <b>30 günde (1 ayda)</b> tükettiği elektrik enerjisinin faturaya yansıyan bedeli <b>kaç TL</b>’dir[cite: 9]?</p>`,
-  c: [`180`, `270`, `360`, `450`],
+<p>Gücü küçük olmasına rağmen 24 saat kesintisiz çalıştığı için en çok enerjiyi <b>Buzdolabı (3,6 kWh)</b> tüketir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Elektriksel gücü <b>1500 W</b> olan bir elektrikli ısıtıcı her gün düzenli olarak <b>4 saat</b> çalıştırılıyor. Elektrik enerjisinin <b>1 kWh’lik birim fiyatı 2,5 TL</b>’dir (1 kW = 1000 W).</p>
+<p>Buna göre bu ısıtıcının <b>30 günde (1 ayda)</b> tükettiği elektrik enerjisinin faturaya yansıyan bedeli <b>kaç TL</b>’dir?</p>`,
+  c: ["180", "270", "360", "450"],
   a: "D",
-  s: `<p>Adım adım hesaplayalım[cite: 9]:</p>
+  s: `<p>Adım adım hesaplayalım:</p>
 <ul>
-<li><b>Güç (kW):</b> $1500\text{ W} \div 1000 = 1,5\text{ kW}$[cite: 9].</li>
-<li><b>1 günde harcanan enerji:</b> $1,5\text{ kW} \times 4\text{ saat} = 6\text{ kWh}$[cite: 9].</li>
-<li><b>30 günde harcanan enerji:</b> $6\text{ kWh} \times 30\text{ gün} = 180\text{ kWh}$[cite: 9].</li>
-<li><b>Toplam Fatura Bedeli:</b> $180\text{ kWh} \times 2,5\text{ TL} = \mathbf{450\text{ TL}}$[cite: 9]. Cevap <b>D</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir <b>hidroelektrik santralde (HES)</b> baraj gölünde biriktirilen sudan elektrik enerjisi üretilirken gerçekleşen enerji dönüşümü basamakları aşağıdakilerin hangisinde doğru sırayla verilmiştir[cite: 9]?</p>`,
-  c: [
-    `Barajdaki suyun potansiyel enerjisi → Akan suyun kinetik (hareket) enerjisi → Türbinin hareket enerjisi → Jeneratörde elektrik enerjisi`,
-    `Suyun kinetik enerjisi → Suyun potansiyel enerjisi → Elektrik enerjisi → Türbinin hareket enerjisi`,
-    `Elektrik enerjisi → Türbinin hareket enerjisi → Suyun kinetik enerjisi → Suyun potansiyel enerjisi`,
-    `Fosil yakıtın kimyasal enerjisi → Isı enerjisi → Buharın hareket enerjisi → Elektrik enerjisi`
-  ],
+<li><b>Güç (kW):</b> 1500 W ÷ 1000 = 1,5 kW.</li>
+<li><b>1 günde harcanan enerji:</b> 1,5 kW × 4 saat = 6 kWh.</li>
+<li><b>30 günde harcanan enerji:</b> 6 kWh × 30 gün = 180 kWh.</li>
+<li><b>Toplam Fatura Bedeli:</b> 180 kWh × 2,5 TL = <b>450 TL</b>.</li>
+</ul><p>Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir <b>hidroelektrik santralde (HES)</b> baraj gölünde biriktirilen sudan elektrik enerjisi üretilirken gerçekleşen enerji dönüşümü basamakları aşağıdakilerin hangisinde doğru sırayla verilmiştir?</p>`,
+  c: ["Barajdaki suyun potansiyel enerjisi → Akan suyun kinetik (hareket) enerjisi → Türbinin hareket enerjisi → Jeneratörde elektrik enerjisi", "Suyun kinetik enerjisi → Suyun potansiyel enerjisi → Elektrik enerjisi → Türbinin hareket enerjisi", "Elektrik enerjisi → Türbinin hareket enerjisi → Suyun kinetik enerjisi → Suyun potansiyel enerjisi", "Fosil yakıtın kimyasal enerjisi → Isı enerjisi → Buharın hareket enerjisi → Elektrik enerjisi"],
   a: "A",
-  s: `<p>Barajda yüksekte tutulan su <b>çekim potansiyel enerjisine</b> sahiptir; kapaklar açılıp su hızla borulardan aşağı akarken bu enerji <b>kinetik enerjiye</b> dönüşür, ardından su çarklarını (<b>türbini</b>) döndürür ve türbine bağlı <b>jeneratör</b> hareket enerjisini <b>elektrik enerjisine</b> dönüştürür[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir ülkede bir yıl boyunca üretilen toplam elektrik enerjisinin enerji kaynaklarına göre yüzdelik dağılımı aşağıdaki sütun grafiğinde verilmiştir[cite: 9].</p>
-<div class="fig"><svg viewBox="0 0 420 195" width="400" role="img" aria-label="Elektrik üretiminin kaynaklara göre dağılım grafiği">
-<line x1="105" y1="10" x2="105" y2="185" stroke="#334155" stroke-width="2"/>
-<text x="98" y="30" font-size="10.5" font-weight="bold" text-anchor="end">Kömür (Termik)</text><rect x="105" y="16" width="240" height="18" fill="#475569"/><text x="352" y="30" font-size="10.5" font-weight="bold">%36</text>
-<text x="98" y="58" font-size="10.5" font-weight="bold" text-anchor="end">Doğal Gaz</text><rect x="105" y="44" width="146" height="18" fill="#94a3b8"/><text x="258" y="58" font-size="10.5" font-weight="bold">%22</text>
-<text x="98" y="86" font-size="10.5" font-weight="bold" text-anchor="end" fill="#1e40af">Hidroelektrik</text><rect x="105" y="72" width="133" height="18" fill="#3b82f6"/><text x="245" y="86" font-size="10.5" font-weight="bold" fill="#1e40af">%20</text>
-<text x="98" y="114" font-size="10.5" font-weight="bold" text-anchor="end" fill="#166534">Rüzgâr</text><rect x="105" y="100" width="66" height="18" fill="#22c55e"/><text x="178" y="114" font-size="10.5" font-weight="bold" fill="#166534">%10</text>
-<text x="98" y="142" font-size="10.5" font-weight="bold" text-anchor="end" fill="#b45309">Güneş</text><rect x="105" y="128" width="46" height="18" fill="#eab308"/><text x="158" y="142" font-size="10.5" font-weight="bold" fill="#b45309">%7</text>
-<text x="98" y="170" font-size="10.5" font-weight="bold" text-anchor="end" fill="#c2410c">Jeotermal</text><rect x="105" y="156" width="33" height="18" fill="#f97316"/><text x="145" y="170" font-size="10.5" font-weight="bold" fill="#c2410c">%5</text>
-</svg></div>
-<p>Grafiğe göre bu ülkede üretilen elektrik enerjisinin <b>yüzde kaçı yenilenebilir enerji kaynaklarından</b>, <b>yüzde kaçı ise fosil (yenilenemez) kaynaklardan</b> elde edilmiştir[cite: 9]?</p>`,
-  c: [
-    `Yenilenebilir: %42 — Yenilenemez (Fosil): %58`,
-    `Yenilenebilir: %58 — Yenilenemez (Fosil): %42`,
-    `Yenilenebilir: %22 — Yenilenemez (Fosil): %78`,
-    `Yenilenebilir: %37 — Yenilenemez (Fosil): %63`
-  ],
+  s: `<p>Barajda yüksekte tutulan su <b>çekim potansiyel enerjisine</b> sahiptir; kapaklar açılıp su hızla borulardan aşağı akarken bu enerji <b>kinetik enerjiye</b> dönüşür, ardından su çarklarını (<b>türbini</b>) döndürür ve türbine bağlı <b>jeneratör</b> hareket enerjisini <b>elektrik enerjisine</b> dönüştürür.</p><p>B ve C’de enerjinin akış sırası ters verilmiştir. D, hidroelektrik değil termik santralin dönüşümüdür. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir ülkede bir yıl boyunca üretilen toplam elektrik enerjisinin enerji kaynaklarına göre yüzdelik dağılımı aşağıdaki sütun grafiğinde verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Yatay sütun grafiği: kömür yüzde 36, doğal gaz yüzde 22, hidroelektrik yüzde 20, rüzgâr yüzde 10, güneş yüzde 7, jeotermal yüzde 5"><g font-size="12" fill="#1e293b"><line x1="140" y1="10" x2="140" y2="198" stroke="#334155" stroke-width="2"/><text x="132" y="31" text-anchor="end" font-weight="bold">Kömür (termik)</text><rect x="140" y="16" width="360" height="20" fill="#475569"/><text x="508" y="31" font-weight="bold">%36</text><text x="132" y="61" text-anchor="end" font-weight="bold">Doğal gaz</text><rect x="140" y="46" width="220" height="20" fill="#94a3b8"/><text x="368" y="61" font-weight="bold">%22</text><text x="132" y="91" text-anchor="end" font-weight="bold">Hidroelektrik</text><rect x="140" y="76" width="200" height="20" fill="#3b82f6"/><text x="348" y="91" font-weight="bold">%20</text><text x="132" y="121" text-anchor="end" font-weight="bold">Rüzgâr</text><rect x="140" y="106" width="100" height="20" fill="#22c55e"/><text x="248" y="121" font-weight="bold">%10</text><text x="132" y="151" text-anchor="end" font-weight="bold">Güneş</text><rect x="140" y="136" width="70" height="20" fill="#eab308"/><text x="218" y="151" font-weight="bold">%7</text><text x="132" y="181" text-anchor="end" font-weight="bold">Jeotermal</text><rect x="140" y="166" width="50" height="20" fill="#f97316"/><text x="198" y="181" font-weight="bold">%5</text></g></svg></div>
+<p>Grafiğe göre bu ülkede üretilen elektrik enerjisinin <b>yüzde kaçı yenilenebilir enerji kaynaklarından</b>, <b>yüzde kaçı ise fosil (yenilenemez) kaynaklardan</b> elde edilmiştir?</p>`,
+  c: ["Yenilenebilir: %42 — Yenilenemez (Fosil): %58", "Yenilenebilir: %58 — Yenilenemez (Fosil): %42", "Yenilenebilir: %22 — Yenilenemez (Fosil): %78", "Yenilenebilir: %37 — Yenilenemez (Fosil): %63"],
   a: "A",
-  s: `<p>Kaynakları sınıflandırıp toplayalım[cite: 9]:</p>
+  s: `<p>Kaynakları sınıflandırıp toplayalım:</p>
 <ul>
-<li><b>Yenilenebilir Kaynaklar:</b> Hidroelektrik (%20) + Rüzgâr (%10) + Güneş (%7) + Jeotermal (%5) = <b>%42</b>[cite: 9].</li>
-<li><b>Yenilenemez (Fosil) Kaynaklar:</b> Kömür (%36) + Doğal gaz (%22) = <b>%58</b>[cite: 9]. Cevap <b>A</b>.</li>
-</ul>`
-},
-  {
-  q: `<p>Başlangıçta nötr olan bir <b>plastik (ebonit) çubuk</b> nötr bir <b>yün kumaşa</b>; nötr bir <b>cam çubuk</b> ise nötr bir <b>ipek kumaşa</b> birbirine sürtülerek elektriklenmeleri sağlanıyor.</p>
-<div class="fig"><svg viewBox="0 0 520 135" width="500" role="img" aria-label="Ebonit-yün ve cam-ipek sürtünme ile elektriklenme">
-<rect x="10" y="10" width="242" height="115" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="131" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">1. İşlem: Yün Kumaş – Plastik Çubuk</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="22" y="50">• Yün kumaştan plastik çubuğa <tspan font-weight="bold" fill="#2563eb">e⁻ geçer</tspan>[cite: 9].</text>
-<text x="22" y="70">• <tspan font-weight="bold" fill="#dc2626">Yün Kumaş:</tspan> Elektron verdi → <tspan font-weight="bold" fill="#dc2626">Pozitif (+)</tspan>[cite: 9]</text>
-<text x="22" y="90">• <tspan font-weight="bold" fill="#2563eb">Plastik Çubuk:</tspan> Elektron aldı → <tspan font-weight="bold" fill="#2563eb">Negatif (−)</tspan>[cite: 9]</text>
-</g>
-<rect x="268" y="10" width="242" height="115" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="389" y="28" font-size="10.5" font-weight="bold" fill="#92400e" text-anchor="middle">2. İşlem: Cam Çubuk – İpek Kumaş</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="280" y="50">• Cam çubuktan ipek kumaşa <tspan font-weight="bold" fill="#2563eb">e⁻ geçer</tspan>.</text>
-<text x="280" y="70">• <tspan font-weight="bold" fill="#dc2626">Cam Çubuk:</tspan> Elektron verdi → <tspan font-weight="bold" fill="#dc2626">Pozitif (+)</tspan></text>
-<text x="280" y="90">• <tspan font-weight="bold" fill="#2563eb">İpek Kumaş:</tspan> Elektron aldı → <tspan font-weight="bold" fill="#2563eb">Negatif (−)</tspan></text>
-</g>
-</svg></div>
-<p>Bu işlemler sonucunda yüklenen cisimlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `Sürtünme sırasında yün kumaştan plastik çubuğa proton (+) geçmiştir[cite: 9].`,
-    `Sürtünme işleminden sonra plastik çubuk ile yün kumaş birbirine yaklaştırılırsa birbirini iter[cite: 9].`,
-    `Yün kumaş ile cam çubuk aynı cins (pozitif) yükle yüklendiği için birbirine yaklaştırıldığında birbirini iter; plastik çubuk ile cam çubuk ise birbirini çeker[cite: 9].`,
-    `Sürtünmeden sonra yün kumaş ve ipek kumaş nötr kalmıştır[cite: 9].`
-  ],
+<li><b>Yenilenebilir Kaynaklar:</b> Hidroelektrik (%20) + Rüzgâr (%10) + Güneş (%7) + Jeotermal (%5) = <b>%42</b>.</li>
+<li><b>Yenilenemez (Fosil) Kaynaklar:</b> Kömür (%36) + Doğal gaz (%22) = <b>%58</b>.</li>
+</ul><p>Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Başlangıçta nötr olan bir <b>plastik (ebonit) çubuk</b> nötr bir <b>yün kumaşa</b>; nötr bir <b>cam çubuk</b> ise nötr bir <b>ipek kumaşa</b> birbirine sürtülerek elektriklenmeleri sağlanıyor (şekil).</p>
+<div class="fig"><svg viewBox="0 0 560 150" width="560" role="img" aria-label="1. işlemde plastik çubuk yün kumaşa, 2. işlemde cam çubuk ipek kumaşa sürtülüyor"><g font-size="13" text-anchor="middle" fill="#1e293b">
+<rect x="8" y="8" width="266" height="134" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="141" y="30" font-weight="bold" fill="#1e40af">1. işlem</text>
+<rect x="26" y="56" width="170" height="22" rx="11" fill="#cbd5e1" stroke="#334155" stroke-width="2"/><text x="86" y="72" font-size="12">plastik çubuk</text>
+<rect x="160" y="48" width="64" height="40" rx="6" fill="#fde68a" stroke="#b45309" stroke-width="2" opacity="0.9"/><text x="192" y="73" font-size="12" font-weight="bold" fill="#92400e">yün</text>
+<path d="M150,104 h70" stroke="#475569" stroke-width="1.6"/><polygon points="226,104 216,99 216,109" fill="#475569"/><path d="M220,116 h-70" stroke="#475569" stroke-width="1.6"/><polygon points="144,116 154,111 154,121" fill="#475569"/>
+<text x="80" y="114" font-size="12" fill="#475569">sürtülüyor</text>
+<rect x="286" y="8" width="266" height="134" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="419" y="30" font-weight="bold" fill="#92400e">2. işlem</text>
+<rect x="318" y="56" width="150" height="22" rx="11" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/><text x="368" y="72" font-size="12">cam çubuk</text>
+<rect x="428" y="48" width="64" height="40" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="2" opacity="0.9"/><text x="460" y="73" font-size="12" font-weight="bold" fill="#9d174d">ipek</text>
+<path d="M428,104 h70" stroke="#475569" stroke-width="1.6"/><polygon points="504,104 494,99 494,109" fill="#475569"/><path d="M498,116 h-70" stroke="#475569" stroke-width="1.6"/><polygon points="422,116 432,111 432,121" fill="#475569"/>
+<text x="358" y="114" font-size="12" fill="#475569">sürtülüyor</text>
+</g></svg></div>
+<p>Bu işlemler sonucunda yüklenen cisimlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Sürtünme sırasında yün kumaştan plastik çubuğa proton (+) geçmiştir.", "Sürtünme işleminden sonra plastik çubuk ile yün kumaş birbirine yaklaştırılırsa birbirini iter.", "Yün kumaş ile cam çubuk aynı cins (pozitif) yükle yüklendiği için birbirine yaklaştırıldığında birbirini iter; plastik çubuk ile cam çubuk ise birbirini çeker.", "Sürtünmeden sonra yün kumaş ve ipek kumaş nötr kalmıştır."],
   a: "C",
-  s: `<p>Sürtünme sonucunda <b>yün kumaş (+)</b> ve <b>cam çubuk (+)</b> pozitif yüklenirken; <b>plastik çubuk (−)</b> ve <b>ipek kumaş (−)</b> negatif yüklenir[cite: 9]. Dolayısıyla aynı cins yüklü yün kumaş ile cam çubuk birbirini <b>iter</b>, zıt yüklü plastik çubuk ile cam çubuk ise birbirini <b>çeker</b> (<b>C doğru</b>)[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Kuru saçına sürttüğü şişirilmiş esnek balonu odanın duvarına yaklaştıran Elif, balonun düşmeden duvara yapıştığını gözlemlemiştir[cite: 9].</p>
+  s: `<p>Sürtünme sonucunda <b>yün kumaş (+)</b> ve <b>cam çubuk (+)</b> pozitif yüklenirken; <b>plastik çubuk (−)</b> ve <b>ipek kumaş (−)</b> negatif yüklenir. Dolayısıyla aynı cins yüklü yün kumaş ile cam çubuk birbirini <b>iter</b>, zıt yüklü plastik çubuk ile cam çubuk ise birbirini <b>çeker</b> (<b>C doğru</b>).</p><p>A: Protonlar yer değiştirmez; yünden plastik çubuğa elektron geçer. B: Plastik çubuk (−), yün (+) yüklüdür; zıt yüklü oldukları için birbirini çeker. D: Kumaşlar da çubuklarla eşit miktarda zıt yükle yüklenir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Kuru saçına sürttüğü şişirilmiş esnek balonu odanın duvarına yaklaştıran Elif, balonun düşmeden duvara yapıştığını gözlemlemiştir.</p>
 <p>Elif’in gözlemlediği bu olayla ilgili;</p>
-<p>I. Balon saça sürtüldüğünde sürtünme ile elektriklenerek yüklenmiştir[cite: 9].<br>
-II. Duvar nötr (yüksüz) olduğu hâlde, yüklü balon duvar yüzeyini etki ile kutuplayarak çekmiştir[cite: 9].<br>
-III. Sürtünme sonucunda Elif’in saçı ile balon aynı cins elektrik yüküyle yüklenmiştir[cite: 9].</p>
-<p>yargılarından hangileri <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `Yalnız I`,
-    `Yalnız II`,
-    `I ve II`,
-    `I, II ve III`
-  ],
+<p>I. Balon saça sürtüldüğünde sürtünme ile elektriklenerek yüklenmiştir.<br>
+II. Duvar nötr olduğu hâlde, yüklü balon duvar yüzeyini etki ile kutuplayarak çekmiştir.<br>
+III. Sürtünme sonucunda Elif’in saçı ile balon aynı cins elektrik yüküyle yüklenmiştir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
   a: "C",
-  s: `<p>Balon saça sürtüldüğünde <b>sürtünme ile yüklenir (I doğru)</b> ve nötr duvarı etki ile elektrikleyerek çeker (<b>II doğru</b>)[cite: 9]. Ancak sürtünme ile elektriklenmede cisimler aynı cins değil, <b>zıt cins</b> yükle yüklenir (<b>III yanlış</b>)[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Nötr bir elektroskobun topuzuna negatif (−) yüklü bir ebonit çubuk dokundurulup uzaklaştırılıyor ve elektroskobun yapraklarının açıldığı görülüyor. Ardından elektroskobun topuzuna çıplak elle dokunulduğunda yaprakların tamamen kapandığı gözleniyor[cite: 9].</p>
-<p>Topuza elle dokunulduğunda yaprakların kapanmasının bilimsel nedeni aşağıdakilerden hangisidir[cite: 9]?</p>`,
-  c: [
-    `Elektroskoptaki fazla elektronların (−) iletken olan insan vücudu üzerinden toprağa akması (topraklama)[cite: 9]`,
-    `İnsan parmağından elektroskoba pozitif (+) protonların geçmesi[cite: 9]`,
-    `Yaprakların elektron kaybederek pozitif (+) yükle yüklenmesi[cite: 9]`,
-    `Yapraklardaki elektronların topuza çıkıp orada hapsolması[cite: 9]`
-  ],
+  s: `<p>Balon saça sürtüldüğünde <b>sürtünme ile yüklenir (I doğru)</b> ve nötr duvarı etki ile elektrikleyerek çeker (<b>II doğru</b>). Ancak sürtünme ile elektriklenmede cisimler aynı cins değil, <b>zıt cins</b> yükle yüklenir (<b>III yanlış</b>). Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Nötr bir elektroskobun topuzuna negatif (−) yüklü bir ebonit çubuk dokundurulup uzaklaştırılıyor ve elektroskobun yapraklarının açıldığı görülüyor. Ardından elektroskobun topuzuna çıplak elle dokunulduğunda yaprakların tamamen kapandığı gözleniyor.</p>
+<p>Topuza elle dokunulduğunda yaprakların kapanmasının bilimsel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Elektroskoptaki fazla elektronların (−) iletken olan insan vücudu üzerinden toprağa akması (topraklama)", "İnsan parmağından elektroskoba pozitif (+) protonların geçmesi", "Yaprakların elektron kaybederek pozitif (+) yükle yüklenmesi", "Yapraklardaki elektronların topuza çıkıp orada hapsolması"],
   a: "A",
-  s: `<p>Dokunma sonucunda elektroskop negatif (−) yüklenmiştir[cite: 9]. İnsan vücudu iletken olduğu için topuza parmakla dokunulduğunda elektroskoptaki <b>fazla elektronlar (−) vücut üzerinden toprağa akar (topraklama gerçekleşir)</b> ve nötrlenen elektroskobun yaprakları kapanır[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Başlangıçta <b>pozitif (+) yüklü</b> olan bir elektroskobun topuzuna, yük miktarı elektroskobun yükünden <b>çok daha fazla olan negatif (−) yüklü</b> bir K cismi dokunduruluyor.</p>
-<div class="fig"><svg viewBox="0 0 420 155" width="400" role="img" aria-label="Pozitif elektroskoba güçlü negatif cisim dokundurulması">
-<rect x="15" y="12" width="390" height="130" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<line x1="45" y1="45" x2="125" y2="45" stroke="#2563eb" stroke-width="14" stroke-linecap="round"/>
-<text x="85" y="49" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">− − − − − −</text>
-<text x="85" y="72" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">K Cismi (−10q)</text>
-<circle cx="155" cy="45" r="14" fill="#cbd5e1" stroke="#475569" stroke-width="2"/>
-<line x1="155" y1="59" x2="155" y2="100" stroke="#64748b" stroke-width="4"/>
-<line x1="153" y1="100" x2="138" y2="128" stroke="#f59e0b" stroke-width="4"/>
-<line x1="157" y1="100" x2="172" y2="128" stroke="#f59e0b" stroke-width="4"/>
-<text x="155" y="138" font-size="9.5" font-weight="bold" fill="#dc2626" text-anchor="middle">Elektroskop (+2q)</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="205" y="45" font-weight="bold" fill="#991b1b">Ne Gözlenir?</text>
-<text x="205" y="65">1. Önce K’den gelen −2q yük, elektroskobu</text>
-<text x="205" y="79">   nötrler → <tspan font-weight="bold" fill="#dc2626">Yapraklar TAMAMEN KAPANIR!</tspan></text>
-<text x="205" y="99">2. Kalan −8q yük paylaşılır → Elektroskop</text>
-<text x="205" y="113">   (−) yüklenir ve <tspan font-weight="bold" fill="#16a34a">yapraklar TEKRAR AÇILIR!</tspan></text>
-</g>
-</svg></div>
+  s: `<p>Dokunma sonucunda elektroskop negatif (−) yüklenmiştir. İnsan vücudu iletken olduğu için topuza parmakla dokunulduğunda elektroskoptaki <b>fazla elektronlar (−) vücut üzerinden toprağa akar (topraklama gerçekleşir)</b> ve nötrlenen elektroskobun yaprakları kapanır.</p><p>B: Protonlar hareket etmez. C: Elektroskop nötrlenmiştir, pozitif yüklenmemiştir. D: Elektronlar hapsolsaydı elektroskop yüklü kalır, yapraklar kapanmazdı. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Başlangıçta <b>pozitif (+) yüklü</b> olan bir elektroskobun topuzuna, yük miktarı elektroskobun yükünden <b>çok daha fazla olan negatif (−) yüklü</b> bir K cismi dokunduruluyor.</p>
+<div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="Çok fazla negatif yüklü K cismi, yaprakları açık pozitif yüklü elektroskobun topuzuna dokunduruluyor"><g font-size="13" text-anchor="middle" fill="#1e293b">
+<rect x="70" y="44" width="150" height="26" rx="13" fill="#2563eb"/><text x="145" y="62" font-weight="bold" fill="#ffffff">− − − − − − −</text>
+<text x="145" y="94" font-weight="bold" fill="#1e40af">K cismi (−)</text><text x="145" y="112" font-size="12" fill="#475569">yükü çok fazla</text>
+<path d="M300,74 h96 v96 a8,8 0 0 1 -8,8 h-80 a8,8 0 0 1 -8,-8 z" fill="#ecfeff" stroke="#0e7490" stroke-width="2"/>
+<circle cx="348" cy="57" r="15" fill="#cbd5e1" stroke="#1e293b" stroke-width="2"/>
+<line x1="348" y1="72" x2="348" y2="130" stroke="#1e293b" stroke-width="4"/>
+<line x1="348" y1="130" x2="328" y2="164" stroke="#b45309" stroke-width="4"/><line x1="348" y1="130" x2="368" y2="164" stroke="#b45309" stroke-width="4"/>
+<text x="320" y="160" font-weight="bold" fill="#dc2626">+</text><text x="376" y="160" font-weight="bold" fill="#dc2626">+</text>
+<text x="470" y="100" font-weight="bold" fill="#dc2626">Elektroskop (+)</text><text x="470" y="118" font-size="12" fill="#475569">yapraklar açık</text>
+<line x1="226" y1="57" x2="326" y2="57" stroke="#475569" stroke-width="1.6" stroke-dasharray="5 4"/><polygon points="332,57 322,52 322,62" fill="#475569"/>
+<text x="276" y="40" font-size="12" fill="#475569">topuza dokunduruluyor</text>
+</g></svg></div>
 <p>Bu işlem sırasında elektroskobun yapraklarının hareketiyle ilgili aşağıdakilerden hangisi gözlenir?</p>`,
-  c: [
-    `Yapraklar önce tamamen kapanır, hemen ardından negatif (−) yükle yüklenerek tekrar açılır.`,
-    `Yapraklar hiç kapanmadan biraz daha açılır.`,
-    `Yapraklar tamamen kapanır ve kapalı kalır.`,
-    `Yaprakların açıklığında hiçbir değişiklik olmaz.`
-  ],
+  c: ["Yapraklar önce tamamen kapanır, hemen ardından negatif (−) yükle yüklenerek tekrar açılır.", "Yapraklar hiç kapanmadan biraz daha açılır.", "Yapraklar tamamen kapanır ve kapalı kalır.", "Yaprakların açıklığında hiçbir değişiklik olmaz."],
   a: "A",
-  s: `<p>Yüklü bir elektroskoba (Örn: $+2q$), kendisinden <b>daha büyük ve zıt yüklü</b> bir cisim (Örn: $-10q$) dokundurulduğunda (veya yaklaştırıldığında); elektroskop önce nötrlenerek <b>yaprakları tamamen kapanır</b>, ardından zıt cins yükle ($-4q$) yüklenerek <b>yaprakları tekrar açılır</b>. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Yalıtkan ayaklar üzerinde birbirine dokunmakta olan nötr ve iletken <b>X, Y ve Z</b> kürelerinin iki yanına, şekildeki gibi eşit uzaklıkta iki adet <b>pozitif (+) yüklü özdeş çubuk</b> dokundurulmadan yaklaştırılıyor.</p>
+  s: `<p>Elektroskop (+), dokundurulan K cismi ise (−) yüklüdür ve K’nin yükü çok daha fazladır. Dokunma sırasında K’den elektroskoba elektronlar geçer. Gelen elektronlar önce elektroskoptaki (+) yük fazlalığını <b>nötrler</b>; bu anda yapraklar <b>tamamen kapanır</b>. K’nin yükü çok fazla olduğu için elektron geçişi sürer ve elektroskop bu kez <b>negatif (−)</b> yükle yüklenir; yapraklar <b>tekrar açılır</b>. B: Yaprakların daha çok açılması için aynı cins yüklü cisim gerekirdi. C: Yükler eşit olsaydı kapalı kalırdı. D: Yük alışverişi olduğu için açıklık değişir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Yalıtkan saplı, negatif (−) yüklü bir metal küre (<b>K</b>), yalıtkan ayak üzerindeki nötr bir metal küreye (<b>L</b>) dokundurulup ayrılıyor.</p>
+<p>Bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["L küresi pozitif (+) yükle yüklenir.", "Küreler ayrıldıktan sonra K ve L birbirini çeker.", "Dokunma sırasında K küresinden L küresine negatif yük (elektron) geçer ve her iki küre de negatif (−) yüklü olur.", "Dokunma sırasında L küresinden K küresine proton (+) geçer."],
+  a: "C",
+  s: `<p>Dokunma ile elektriklenmede, negatif (−) yüklü K küresindeki fazla elektronların bir kısmı nötr olan L küresine geçer. Son durumda her iki küre de <b>aynı cins (negatif −)</b> yükle yüklenir ve birbirini iter (<b>C doğru</b>).</p><p>A: Dokunmada L, K ile aynı cins (−) yüklenir. B: Aynı cins yüklü küreler birbirini iter. D: Protonlar hareket etmez. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Yalıtkan ayaklar üzerinde birbirine dokunmakta olan nötr ve iletken <b>X, Y ve Z</b> kürelerinin iki yanına, şekildeki gibi eşit uzaklıkta iki adet <b>pozitif (+) yüklü özdeş çubuk</b> dokundurulmadan yaklaştırılıyor.</p>
 <div class="fig"><svg viewBox="0 0 460 125" width="440" role="img" aria-label="Üç bitişik küreye iki yandan pozitif çubuk yaklaştırılması">
 <rect x="20" y="45" width="60" height="18" rx="4" fill="#dc2626"/>
 <text x="50" y="58" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+ + +</text>
-<circle cx="155" cy="54" r="26" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
-<circle cx="207" cy="54" r="26" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
-<circle cx="259" cy="54" r="26" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/>
+<circle cx="155" cy="54" r="26" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+<circle cx="207" cy="54" r="26" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+<circle cx="259" cy="54" r="26" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
 <rect x="335" y="45" width="60" height="18" rx="4" fill="#dc2626"/>
 <text x="365" y="58" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">+ + +</text>
 <g font-size="11" font-weight="bold" text-anchor="middle">
-<text x="155" y="58" fill="#1e40af">X (−)</text>
-<text x="207" y="58" fill="#991b1b">Y (+)</text>
-<text x="259" y="58" fill="#1e40af">Z (−)</text>
-<text x="207" y="105" font-size="10" fill="#1e293b">Çubuklar çekilmeden küreler birbirinden ayrılıyor</text>
+<text x="155" y="59" font-size="14" fill="#1e293b">X</text>
+<text x="207" y="59" font-size="14" fill="#1e293b">Y</text>
+<text x="259" y="59" font-size="14" fill="#1e293b">Z</text>
+<text x="207" y="108" font-size="12" fill="#1e293b">Yalıtkan ayaklı, birbirine dokunan nötr küreler</text>
 </g>
 </svg></div>
-<p>Çubuklar bu konumda tutulurken X, Y ve Z küreleri yalıtkan saplarından tutularak aynı anda birbirinden ayrılıyor. Son durumda <b>X, Y ve Z kürelerinin yük cinsleri</b> aşağıdakilerin hangisinde doğru verilmiştir[cite: 9]?</p>`,
-  c: [
-    `X: Negatif (−) — Y: Pozitif (+) — Z: Negatif (−)`,
-    `X: Pozitif (+) — Y: Negatif (−) — Z: Pozitif (+)`,
-    `X: Negatif (−) — Y: Nötr (0) — Z: Negatif (−)`,
-    `X: Pozitif (+) — Y: Nötr (0) — Z: Negatif (−)`
-  ],
+<p>Çubuklar bu konumda tutulurken X, Y ve Z küreleri yalıtkan saplarından tutularak aynı anda birbirinden ayrılıyor. Son durumda <b>X, Y ve Z kürelerinin yük cinsleri</b> aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["X: Negatif (−) — Y: Pozitif (+) — Z: Negatif (−)", "X: Pozitif (+) — Y: Negatif (−) — Z: Pozitif (+)", "X: Negatif (−) — Y: Nötr (0) — Z: Negatif (−)", "X: Pozitif (+) — Y: Nötr (0) — Z: Negatif (−)"],
   a: "A",
-  s: `<p>Her iki uçtan yaklaştırılan <b>pozitif (+) yüklü çubuklar</b>, ortadaki Y küresinde bulunan serbest elektronları (−) kendilerine yakın olan uçlardaki <b>X ve Z kürelerine</b> çeker[cite: 9]. Böylece uçlardaki <b>X ve Z küreleri negatif (−)</b>, elektron kaybeden ortadaki <b>Y küresi ise pozitif (+)</b> yükle yüklenir[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Yalıtkan saplı, negatif (−) yüklü bir metal küre (<b>K</b>), yalıtkan ayak üzerindeki nötr bir metal küreye (<b>L</b>) dokundurulup ayrılıyor[cite: 9].</p>
-<p>Bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>[cite: 9]?</p>`,
-  c: [
-    `L küresi pozitif (+) yükle yüklenir[cite: 9].`,
-    `Küreler ayrıldıktan sonra K ve L birbirini çeker[cite: 9].`,
-    `Dokunma sırasında K küresinden L küresine negatif yük (elektron) geçer ve her iki küre de negatif (−) yüklü olur[cite: 9].`,
-    `Dokunma sırasında L küresinden K küresine proton (+) geçer[cite: 9].`
-  ],
+  s: `<p>Her iki uçtan yaklaştırılan <b>pozitif (+) yüklü çubuklar</b>, ortadaki Y küresinde bulunan serbest elektronları (−) kendilerine yakın olan uçlardaki <b>X ve Z kürelerine</b> çeker. Böylece uçlardaki <b>X ve Z küreleri negatif (−)</b>, elektron kaybeden ortadaki <b>Y küresi ise pozitif (+)</b> yükle yüklenir.</p><p>B: Çubuklar pozitif olduğu için elektronları kendine yakın X ve Z’ye çeker; tersi olmaz. C ve D: Y’den elektron gittiği için Y nötr kalamaz. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Yıldırım, yüklü bulut ile yeryüzü arasında gerçekleşen yüksek enerjili bir elektrik boşalmasıdır (Bulutlar arasında gerçekleşene ise <b>şimşek</b> denir). Binalara takılan <b>paratonerler (yıldırımsavarlar)</b>, yıldırımın elektrik yüklerini iletken bir telle güvenli biçimde toprağa iletir.</p>
+<p>Buna göre yıldırımlı ve gök gürültülü bir fırtınada aşağıdaki davranışlardan hangisinin yapılması <b>çok tehlikelidir ve yanlıştır</b>?</p>`,
+  c: ["Paratoneri bulunan kapalı bir binanın içine girmek", "Camları kapalı metal gövdeli bir otomobilin içinde beklemek", "Açık arazide tek başına duran yüksek bir ağacın altına veya elektrik direğinin dibine sığınmak", "Deniz, göl ve havuz gibi su ortamlarından hemen uzaklaşmak"],
   a: "C",
-  s: `<p>Dokunma ile elektriklenmede, negatif (−) yüklü K küresindeki fazla elektronların bir kısmı nötr olan L küresine geçer[cite: 9]. Son durumda her iki küre de <b>aynı cins (negatif −)</b> yükle yüklenir ve birbirini iter (<b>C doğru</b>)[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Yıldırım, yüklü bulut ile yeryüzü arasında gerçekleşen yüksek enerjili bir elektrik boşalmasıdır (Bulutlar arasında gerçekleşene ise <b>şimşek</b> denir). Binalara takılan <b>paratonerler (yıldırımsavarlar)</b>, yıldırımın elektrik yüklerini iletken bir telle güvenli biçimde toprağa iletir[cite: 9].</p>
-<p>Buna göre yıldırımlı ve gök gürültülü bir fırtınada aşağıdaki davranışlardan hangisinin yapılması <b>çok tehlikelidir ve yanlıştır</b>[cite: 9]?</p>`,
-  c: [
-    `Paratoneri bulunan kapalı bir binanın içine girmek[cite: 9]`,
-    `Camları kapalı metal gövdeli bir otomobilin içinde beklemek[cite: 9]`,
-    `Açık arazide tek başına duran yüksek bir ağacın altına veya elektrik direğinin dibine sığınmak[cite: 9]`,
-    `Deniz, göl ve havuz gibi su ortamlarından hemen uzaklaşmak[cite: 9]`
-  ],
-  a: "C",
-  s: `<p>Yıldırım her zaman yeryüzündeki <b>en yüksek ve sivri</b> noktalara düşme eğilimindedir[cite: 9]. Açık arazide tek başına duran yüksek bir ağacın altına sığınmak yıldırım çarpması açısından son derece tehlikelidir (<b>C yanlıştır</b>)[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Bir öğrenci evdeki bazı elektrikli cihazlarda elektrik enerjisinin <b>kullanım amacına göre en çok dönüştüğü</b> enerji türünü aşağıdaki tabloya işaretlemiştir[cite: 9].</p>
+  s: `<p>Yıldırım her zaman yeryüzündeki <b>en yüksek ve sivri</b> noktalara düşme eğilimindedir. Açık arazide tek başına duran yüksek bir ağacın altına sığınmak yıldırım çarpması açısından son derece tehlikelidir (<b>C yanlıştır</b>).</p><p>A ve B güvenli davranışlardır: paratonerli bina ve metal gövdeli araç yükleri toprağa iletir. D de doğru bir davranıştır; su iletkendir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir öğrenci evdeki bazı elektrikli cihazlarda elektrik enerjisinin <b>kullanım amacına göre en çok dönüştüğü</b> enerji türünü aşağıdaki tabloya işaretlemiştir.</p>
 <table class="rt">
 <tr><th>Elektrikli Cihaz</th><th>Isı Enerjisi</th><th>Işık Enerjisi</th><th>Hareket Enerjisi</th></tr>
 <tr><td><b>1. Ütü</b></td><td><b>✓</b></td><td></td><td></td></tr>
@@ -626,128 +545,803 @@ III. Sürtünme sonucunda Elif’in saçı ile balon aynı cins elektrik yüküy
 <tr><td><b>4. LED Lamba</b></td><td></td><td><b>✓</b></td><td></td></tr>
 <tr><td><b>5. Mutfak Mikseri</b></td><td></td><td><b>✓</b></td><td></td></tr>
 </table>
-<p>Buna göre öğrenci tablodaki cihazlardan kaç tanesini <b>doğru</b> işaretlemiştir ve hangilerinde hata yapmıştır[cite: 9]?</p>`,
-  c: [
-    `3 cihazı doğru işaretlemiştir; Vantilatör ve Mutfak Mikseri “Hareket Enerjisi” olarak işaretlenmeliydi[cite: 9].`,
-    `2 cihazı doğru işaretlemiştir; Ütü ve Fırın “Hareket Enerjisi” olmalıydı[cite: 9].`,
-    `4 cihazı doğru işaretlemiştir; yalnız LED lamba yanlış işaretlenmiştir[cite: 9].`,
-    `5 cihazın tamamını doğru işaretlemiştir[cite: 9].`
-  ],
+<p>Buna göre öğrenci tablodaki cihazlardan kaç tanesini <b>doğru</b> işaretlemiştir ve hangilerinde hata yapmıştır?</p>`,
+  c: ["3 cihazı doğru işaretlemiştir; Vantilatör ve Mutfak Mikseri “Hareket Enerjisi” olarak işaretlenmeliydi.", "2 cihazı doğru işaretlemiştir; Ütü ve Fırın “Hareket Enerjisi” olmalıydı.", "4 cihazı doğru işaretlemiştir; yalnız LED lamba yanlış işaretlenmiştir.", "5 cihazın tamamını doğru işaretlemiştir."],
   a: "A",
-  s: `<p><b>Ütü (1)</b> ve <b>Elektrikli fırın (3)</b> elektrik enerjisini <b>ısı</b> enerjisine; <b>LED lamba (4)</b> ise <b>ışık</b> enerjisine dönüştürür (3 doğru)[cite: 9]. Ancak yapısında elektrik motoru bulunan <b>Vantilatör (2)</b> ve <b>Mutfak mikseri (5)</b> elektrik enerjisini <b>hareket</b> enerjisine dönüştürür[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aynı iç hacme ve işleve sahip <b>K ve L buzdolaplarının</b> enerji verimliliği sınıfları, yıllık elektrik enerjisi tüketimleri ve satış fiyatları aşağıdaki tabloda verilmiştir[cite: 9].</p>
+  s: `<p><b>Ütü (1)</b> ve <b>Elektrikli fırın (3)</b> elektrik enerjisini <b>ısı</b> enerjisine; <b>LED lamba (4)</b> ise <b>ışık</b> enerjisine dönüştürür (3 doğru). Ancak yapısında elektrik motoru bulunan <b>Vantilatör (2)</b> ve <b>Mutfak mikseri (5)</b> elektrik enerjisini <b>hareket</b> enerjisine dönüştürür.</p><p>B: Ütü ve fırın ısı enerjisi için doğru işaretlenmiştir. C ve D: Vantilatör ile mikser yanlış işaretlenmiştir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aynı iç hacme ve işleve sahip <b>K ve L buzdolaplarının</b> enerji verimliliği sınıfları, yıllık elektrik enerjisi tüketimleri ve satış fiyatları aşağıdaki tabloda verilmiştir.</p>
 <table class="rt">
 <tr><th>Buzdolabı Modeli</th><th>Enerji Verimliliği</th><th>Yıllık Enerji Tüketimi</th><th>Satış Fiyatı</th></tr>
 <tr><td><b>K Buzdolabı</b></td><td>Yüksek (A+++)</td><td>150 kWh</td><td>24 000 TL</td></tr>
 <tr><td><b>L Buzdolabı</b></td><td>Düşük</td><td>300 kWh</td><td>21 000 TL</td></tr>
 </table>
-<p>Elektrik enerjisinin <b>1 kWh’lik birim fiyatı 2,5 TL</b> olduğuna ve sabit kaldığına göre, K buzdolabını satın alan bir aile ödediği <b>3 000 TL’lik fiyat farkını</b> sağladığı elektrik tasarrufuyla <b>kaç yılda</b> geri kazanır (amorti eder)[cite: 9]?</p>`,
-  c: [`6`, `8`, `10`, `12`],
+<p>Elektrik enerjisinin <b>1 kWh’lik birim fiyatı 2,5 TL</b> olduğuna ve sabit kaldığına göre, K buzdolabını satın alan bir aile ödediği <b>3 000 TL’lik fiyat farkını</b> sağladığı elektrik tasarrufuyla <b>kaç yılda</b> geri kazanır (amorti eder)?</p>`,
+  c: ["6", "8", "10", "12"],
   a: "B",
-  s: `<p>Yıllık tasarruf miktarını hesaplayalım[cite: 9]:</p>
+  s: `<p>Yıllık tasarruf miktarını hesaplayalım:</p>
 <ul>
-<li><b>Yıllık enerji tasarrufu:</b> $300\text{ kWh} - 150\text{ kWh} = 150\text{ kWh}$[cite: 9].</li>
-<li><b>Yıllık parasal tasarruf:</b> $150\text{ kWh} \times 2,5\text{ TL} = 375\text{ TL/yıl}$[cite: 9].</li>
-<li><b>Fiyat farkı:</b> $24.000 - 21.000 = 3.000\text{ TL}$[cite: 9].</li>
-<li><b>Karşılanma süresi:</b> $3.000\text{ TL} \div 375\text{ TL/yıl} = \mathbf{8\text{ yıl}}$[cite: 9]. Cevap <b>B</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir ailenin evinde günde ortalama <b>12 kWh</b> elektrik enerjisi tüketilmektedir. Aile, evinin çatısına günde ortalama <b>8 kWh</b> elektrik enerjisi üreten güneş panelleri taktırmıştır. Üretilen elektriğin tamamı evde kullanılmakta, kalan ihtiyaç ise şehir şebekesinden alınmaktadır[cite: 9].</p>
-<p>Elektriğin <b>1 kWh’lik birim fiyatı 3 TL</b> olduğuna göre, ailenin <b>30 günlük</b> elektrik faturası güneş panelleri takılmadan önceki duruma göre <b>kaç TL azalır</b>[cite: 9]?</p>`,
-  c: [`240`, `360`, `720`, `1 080`],
+<li><b>Yıllık enerji tasarrufu:</b> 300 kWh − 150 kWh = 150 kWh.</li>
+<li><b>Yıllık parasal tasarruf:</b> 150 kWh × 2,5 TL = 375 TL/yıl.</li>
+<li><b>Fiyat farkı:</b> 24.000 − 21.000 = 3.000 TL.</li>
+<li><b>Karşılanma süresi:</b> 3.000 TL ÷ 375 TL/yıl = <b>8 yıl</b>.</li>
+</ul><p>Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir ailenin evinde günde ortalama <b>12 kWh</b> elektrik enerjisi tüketilmektedir. Aile, evinin çatısına günde ortalama <b>8 kWh</b> elektrik enerjisi üreten güneş panelleri taktırmıştır. Üretilen elektriğin tamamı evde kullanılmakta, kalan ihtiyaç ise şehir şebekesinden alınmaktadır.</p>
+<p>Elektriğin <b>1 kWh’lik birim fiyatı 3 TL</b> olduğuna göre, ailenin <b>30 günlük</b> elektrik faturası güneş panelleri takılmadan önceki duruma göre <b>kaç TL azalır</b>?</p>`,
+  c: ["240", "360", "720", "1 080"],
   a: "C",
-  s: `<p>Güneş panelleri günde <b>8 kWh</b> elektrik ürettiği için şebekeden her gün 8 kWh daha az elektrik çekilir[cite: 9]:</p>
+  s: `<p>Güneş panelleri günde <b>8 kWh</b> elektrik ürettiği için şebekeden her gün 8 kWh daha az elektrik çekilir:</p>
 <ul>
-<li><b>30 günde üretilen (tasarruf edilen) enerji:</b> $8\text{ kWh} \times 30\text{ gün} = 240\text{ kWh}$[cite: 9].</li>
-<li><b>30 günlük fatura azalması (tasarruf):</b> $240\text{ kWh} \times 3\text{ TL} = \mathbf{720\text{ TL}}$[cite: 9]. (Önceki fatura $12 \times 30 \times 3 = 1080\text{ TL}$ iken yeni fatura $4 \times 30 \times 3 = 360\text{ TL}$’ye düşer)[cite: 9]. Cevap <b>C</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Bir evde aynı uzatma kablosuna (çoklu prize) yüksek güçlü <b>elektrikli ısıtıcı, su ısıtıcısı (kettle) ve ütü</b> aynı anda takılarak çalıştırılmaktadır[cite: 9].</p>
-<p>Bu kullanımın tehlikeli olmasının ve sigortanın atmasına yol açmasının temel nedeni aşağıdakilerden hangisidir[cite: 9]?</p>`,
-  c: [
-    `Çoklu prize takılan cihazların daha az elektrik enerjisi tüketmesi[cite: 9]`,
-    `Yüksek güçlü cihazların aynı anda çalıştırılmasıyla ana kablodan aşırı elektrik akımı geçmesi ve kablonun aşırı ısınarak yangına yol açabilmesi[cite: 9]`,
-    `Cihazların birbirlerinin elektrik yüklerini nötrlemesi[cite: 9]`,
-    `Uzatma kablosunun topraklama görevi görmesi[cite: 9]`
-  ],
+<li><b>30 günde üretilen (tasarruf edilen) enerji:</b> 8 kWh × 30 gün = 240 kWh.</li>
+<li><b>30 günlük fatura azalması (tasarruf):</b> 240 kWh × 3 TL = <b>720 TL</b>. (Önceki fatura 12 × 30 × 3 = 1080 TL iken yeni fatura 4 × 30 × 3 = 360 TL’ye düşer).</li>
+</ul><p>Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Bir evde aynı uzatma kablosuna (çoklu prize) yüksek güçlü <b>elektrikli ısıtıcı, su ısıtıcısı (kettle) ve ütü</b> aynı anda takılarak çalıştırılmaktadır.</p>
+<p>Bu kullanımın tehlikeli olmasının ve sigortanın atmasına yol açmasının temel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Çoklu prize takılan cihazların daha az elektrik enerjisi tüketmesi", "Yüksek güçlü cihazların aynı anda çalıştırılmasıyla ana kablodan aşırı elektrik akımı geçmesi ve kablonun aşırı ısınarak yangına yol açabilmesi", "Cihazların birbirlerinin elektrik yüklerini nötrlemesi", "Uzatma kablosunun topraklama görevi görmesi"],
   a: "B",
-  s: `<p>Gücü yüksek olan ısıtıcı cihazlar aynı anda tek bir uzatma kablosuna takıldığında kablodan <b>aşırı miktarda akım</b> geçer[cite: 9]. Bu aşırı akım kablonun <b>aşırı ısınmasına, plastik yalıtkanın erimesine ve yangın çıkmasına</b> neden olur (Sigorta da bu tehlikeyi önlemek için devreyi keser)[cite: 9]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda elektrik enerjisi üreten güç santralleri ile bu santrallerin çevreye olası etkileri eşleştirilmiştir[cite: 9].</p>
+  s: `<p>Gücü yüksek olan ısıtıcı cihazlar aynı anda tek bir uzatma kablosuna takıldığında kablodan <b>aşırı miktarda akım</b> geçer. Bu aşırı akım kablonun <b>aşırı ısınmasına, plastik yalıtkanın erimesine ve yangın çıkmasına</b> neden olur (Sigorta da bu tehlikeyi önlemek için devreyi keser).</p><p>A: Cihazlar daha az değil, toplamda daha çok enerji harcar. C: Cihazlar birbirinin yükünü nötrlemez. D: Uzatma kablosu topraklama yapmaz; sorun aşırı akımdır. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda elektrik enerjisi üreten güç santralleri ile bu santrallerin çevreye olası etkileri eşleştirilmiştir.</p>
 <table class="rt">
 <tr><th>Seçenek</th><th>Güç Santrali</th><th>Çevreye Olası Etkisi / Özelliği</th></tr>
-<tr><td><b>A</b></td><td><b>Termik Santral</b> (Kömür, petrol)</td><td>Baca gazlarından çıkan kükürt ve azot oksitler hava kirliliğine, sera etkisine ve asit yağmurlarına yol açar[cite: 9].</td></tr>
-<tr><td><b>B</b></td><td><b>Nükleer Santral</b> (Uranyum)</td><td>Yüksek miktarda elektrik üretir ancak radyoaktif atıkların güvenli depolanması ve sızıntı riski önemli bir sorundur[cite: 9].</td></tr>
-<tr><td><b>C</b></td><td><b>Hidroelektrik Santral (HES)</b></td><td>Yenilenebilir kaynaktır ancak baraj gölü altında kalan geniş tarım arazileri ve tarihi alanlar ekosistemi etkileyebilir[cite: 9].</td></tr>
-<tr><td><b>D</b></td><td><b>Güneş Enerjisi Santrali (GES)</b></td><td>Çalışırken fosil yakıt yaktığı için atmosfere yoğun miktarda karbondioksit ve kül salar[cite: 9].</td></tr>
+<tr><td><b>A</b></td><td><b>Termik Santral</b> (Kömür, petrol)</td><td>Baca gazlarından çıkan kükürt ve azot oksitler hava kirliliğine, sera etkisine ve asit yağmurlarına yol açar.</td></tr>
+<tr><td><b>B</b></td><td><b>Nükleer Santral</b> (Uranyum)</td><td>Yüksek miktarda elektrik üretir ancak radyoaktif atıkların güvenli depolanması ve sızıntı riski önemli bir sorundur.</td></tr>
+<tr><td><b>C</b></td><td><b>Hidroelektrik Santral (HES)</b></td><td>Yenilenebilir kaynaktır ancak baraj gölü altında kalan geniş tarım arazileri ve tarihi alanlar ekosistemi etkileyebilir.</td></tr>
+<tr><td><b>D</b></td><td><b>Güneş Enerjisi Santrali (GES)</b></td><td>Çalışırken fosil yakıt yaktığı için atmosfere yoğun miktarda karbondioksit ve kül salar.</td></tr>
 </table>
-<p>Tablodaki eşleştirmelerden hangisi <b>yanlıştır</b>[cite: 9]?</p>`,
-  c: [`A`, `B`, `C`, `D`],
+<p>Tablodaki eşleştirmelerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["A", "B", "C", "D"],
   a: "D",
-  s: `<p><b>Güneş enerjisi santralleri (GES)</b> güneş panelleri (fotovoltaik piller) aracılığıyla ışık enerjisini doğrudan elektrik enerjisine çevirir; çalışırken <b>hiçbir yakıt yakmaz ve atmosfere karbondioksit/kül salmaz</b> (<b>D yanlıştır</b>)[cite: 9]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Evlerde ve iş yerlerinde elektrik enerjisini bilinçli ve tasarruflu kullanmak hem aile bütçesine hem de doğal kaynakların korunmasına katkı sağlar[cite: 9].</p>
-<p>Buna göre aşağıdaki davranışlardan hangisi elektrik enerjisi <b>tasarrufu sağlamaz</b>[cite: 9]?</p>`,
-  c: [
-    `Enerji kaybı yüksek olan akkor flamanlı ampuller yerine LED veya tasarruflu ampuller kullanmak[cite: 9]`,
-    `Kullanılmayan televizyon ve bilgisayarları uyku (bekleme / stand-by) modunda bırakmak yerine fişini prizden çekmek[cite: 9]`,
-    `Çamaşır ve bulaşık makinelerini tam dolmadan, birkaç parça eşyayla sık sık çalıştırmak[cite: 9]`,
-    `Beyaz eşya satın alırken enerji verimliliği sınıfı en yüksek (A+++) olan ürünleri tercih etmek[cite: 9]`
-  ],
+  s: `<p><b>Güneş enerjisi santralleri (GES)</b> güneş panelleri (fotovoltaik piller) aracılığıyla ışık enerjisini doğrudan elektrik enerjisine çevirir; çalışırken <b>hiçbir yakıt yakmaz ve atmosfere karbondioksit/kül salmaz</b> (<b>D yanlıştır</b>).</p><p>A, B ve C’deki etkiler bu santraller için doğrudur. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Evlerde ve iş yerlerinde elektrik enerjisini bilinçli ve tasarruflu kullanmak hem aile bütçesine hem de doğal kaynakların korunmasına katkı sağlar.</p>
+<p>Buna göre aşağıdaki davranışlardan hangisi elektrik enerjisi <b>tasarrufu sağlamaz</b>?</p>`,
+  c: ["Enerji kaybı yüksek olan akkor flamanlı ampuller yerine LED veya tasarruflu ampuller kullanmak", "Kullanılmayan televizyon ve bilgisayarları uyku (bekleme / stand-by) modunda bırakmak yerine fişini prizden çekmek", "Çamaşır ve bulaşık makinelerini tam dolmadan, birkaç parça eşyayla sık sık çalıştırmak", "Beyaz eşya satın alırken enerji verimliliği sınıfı en yüksek (A+++) olan ürünleri tercih etmek"],
   a: "C",
-  s: `<p>Çamaşır ve bulaşık makinelerini tam kapasite dolmadan az çamaşırla sık sık çalıştırmak hem su hem de elektrik tüketimini <b>artırır</b>, tasarruf sağlamaz (<b>C yanlış</b>)[cite: 9]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Günlük hayatta kullandığımız iki önemli araç olan <b>Elektrik Motoru</b> (vantilatör, mikser, elektrikli süpürgede bulunur) ile <b>Jeneratör / Dinamo</b> (güç santrallerinde ve bisiklet farında bulunur) arasındaki enerji dönüşümü farkı aşağıdakilerin hangisinde doğru açıklanmıştır[cite: 9]?</p>`,
-  c: [
-    `Elektrik motoru elektrik enerjisini hareket (kinetik) enerjisine dönüştürürken; jeneratör ve dinamo hareket enerjisini elektrik enerjisine dönüştürür[cite: 9].`,
-    `Elektrik motoru hareket enerjisini elektriğe, jeneratör ise elektriği harekete dönüştürür.`,
-    `Her iki araç da yalnızca ısı enerjisini ışık enerjisine dönüştürür.`,
-    `Jeneratörler yalnızca güneş panellerinde bulunur ve hareketsiz çalışır.`
-  ],
+  s: `<p>Çamaşır ve bulaşık makinelerini tam kapasite dolmadan az çamaşırla sık sık çalıştırmak hem su hem de elektrik tüketimini <b>artırır</b>, tasarruf sağlamaz (<b>C yanlış</b>).</p><p>A, B ve D, aynı işi daha az elektrikle yapmayı sağlayan tasarruflu davranışlardır. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Günlük hayatta kullandığımız iki önemli araç olan <b>Elektrik Motoru</b> (vantilatör, mikser, elektrikli süpürgede bulunur) ile <b>Jeneratör / Dinamo</b> (güç santrallerinde ve bisiklet farında bulunur) arasındaki enerji dönüşümü farkı aşağıdakilerin hangisinde doğru açıklanmıştır?</p>`,
+  c: ["Elektrik motoru elektrik enerjisini hareket (kinetik) enerjisine dönüştürürken; jeneratör ve dinamo hareket enerjisini elektrik enerjisine dönüştürür.", "Elektrik motoru hareket enerjisini elektriğe, jeneratör ise elektriği harekete dönüştürür.", "Her iki araç da yalnızca ısı enerjisini ışık enerjisine dönüştürür.", "Jeneratörler yalnızca güneş panellerinde bulunur ve hareketsiz çalışır."],
   a: "A",
-  s: `<p><b>Elektrik motoru</b> (vantilatör, çamaşır makinesi, matkap) şebekeden aldığı <b>elektrik enerjisini hareket enerjisine</b> çevirir[cite: 9]; santrallerdeki <b>jeneratör (ve bisikletteki dinamo)</b> ise türbinin <b>hareket enerjisini elektrik enerjisine</b> çevirir (birbirinin tam tersidir)[cite: 9]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Fen bilimleri öğretmeni “Elektrik Yükleri ve Elektrik Enerjisi” ünitesi sonunda yaptığı “Doğru (D) – Yanlış (Y)” etkinliğinde her doğru cevaba <b>25 puan</b> vermektedir. Bir öğrencinin verdiği cevaplar tabloda gösterilmiştir[cite: 9].</p>
+  s: `<p><b>Elektrik motoru</b> (vantilatör, çamaşır makinesi, matkap) şebekeden aldığı <b>elektrik enerjisini hareket enerjisine</b> çevirir; santrallerdeki <b>jeneratör (ve bisikletteki dinamo)</b> ise türbinin <b>hareket enerjisini elektrik enerjisine</b> çevirir (birbirinin tam tersidir).</p><p>B: Dönüşümler ters yazılmıştır. C: İki araç da ısıyı ışığa çevirmez. D: Jeneratörler santrallerde türbinle döndürülerek çalışır. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Fen bilimleri öğretmeni “Elektrik Yükleri ve Elektrik Enerjisi” ünitesi sonunda yaptığı “Doğru (D) – Yanlış (Y)” etkinliğinde her doğru cevaba <b>25 puan</b> vermektedir. Bir öğrencinin verdiği cevaplar tabloda gösterilmiştir.</p>
 <table class="rt">
 <tr><th>Bilimsel İfade</th><th>Öğrencinin Cevabı</th></tr>
-<tr><td><b>1.</b> Cisimler elektrikle yüklenirken yalnızca negatif (−) yüklü elektronlar hareket eder, protonlar (+) hareket etmez[cite: 9].</td><td><b>D</b></td></tr>
-<tr><td><b>2.</b> Dokunma ile elektriklenmede son durumda cisimler zıt cins elektrik yüküyle yüklenir[cite: 9].</td><td><b>Y</b></td></tr>
-<tr><td><b>3.</b> Yüklü bir elektroskobun topuzuna aynı cins yüklü bir cisim yaklaştırılırsa yaprakların açıklığı artar[cite: 9].</td><td><b>D</b></td></tr>
-<tr><td><b>4.</b> Rüzgâr, hidroelektrik ve jeotermal santraller yenilenemez enerji kaynakları kullanan santrallerdir[cite: 9].</td><td><b>Y</b></td></tr>
+<tr><td><b>1.</b> Cisimler elektrikle yüklenirken yalnızca negatif (−) yüklü elektronlar hareket eder, protonlar (+) hareket etmez.</td><td><b>D</b></td></tr>
+<tr><td><b>2.</b> Dokunma ile elektriklenmede son durumda cisimler zıt cins elektrik yüküyle yüklenir.</td><td><b>Y</b></td></tr>
+<tr><td><b>3.</b> Yüklü bir elektroskobun topuzuna aynı cins yüklü bir cisim yaklaştırılırsa yaprakların açıklığı artar.</td><td><b>D</b></td></tr>
+<tr><td><b>4.</b> Rüzgâr, hidroelektrik ve jeotermal santraller yenilenemez enerji kaynakları kullanan santrallerdir.</td><td><b>Y</b></td></tr>
 </table>
-<p>Buna göre öğrenci bu etkinlikten toplam <b>kaç puan</b> almıştır[cite: 9]?</p>`,
-  c: [`25`, `50`, `75`, `100`],
+<p>Buna göre öğrenci bu etkinlikten toplam <b>kaç puan</b> almıştır?</p>`,
+  c: ["25", "50", "75", "100"],
   a: "D",
-  s: `<p>Öğrencinin cevaplarını kontrol edelim[cite: 9]:</p>
+  s: `<p>Öğrencinin cevaplarını kontrol edelim:</p>
 <ul>
-<li><b>1. İfade (Doğru):</b> Öğrenci D demiş → <b>+25 puan ✓</b>[cite: 9].</li>
-<li><b>2. İfade (Yanlış):</b> Dokunma ile elektriklenmede cisimler zıt değil, <b>aynı cins</b> yüklenir; öğrenci Y diyerek doğru bilmiş → <b>+25 puan ✓</b>[cite: 9].</li>
-<li><b>3. İfade (Doğru):</b> Öğrenci D demiş → <b>+25 puan ✓</b>[cite: 9].</li>
-<li><b>4. İfade (Yanlış):</b> Rüzgâr, hidroelektrik ve jeotermal <b>yenilenebilir</b> kaynaklardır; öğrenci Y diyerek doğru bilmiş → <b>+25 puan ✓</b>[cite: 9].</li>
+<li><b>1. İfade (Doğru):</b> Öğrenci D demiş → <b>+25 puan ✓</b>.</li>
+<li><b>2. İfade (Yanlış):</b> Dokunma ile elektriklenmede cisimler zıt değil, <b>aynı cins</b> yüklenir; öğrenci Y diyerek doğru bilmiş → <b>+25 puan ✓</b>.</li>
+<li><b>3. İfade (Doğru):</b> Öğrenci D demiş → <b>+25 puan ✓</b>.</li>
+<li><b>4. İfade (Yanlış):</b> Rüzgâr, hidroelektrik ve jeotermal <b>yenilenebilir</b> kaynaklardır; öğrenci Y diyerek doğru bilmiş → <b>+25 puan ✓</b>.</li>
 </ul>
-<p>Öğrenci tüm soruları doğru yanıtlayarak <b>100 tam puan</b> almıştır. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki özet tablosunda “Elektrik Yükleri ve Elektrik Enerjisi” ünitesiyle ilgili dört temel bilimsel kural verilmiştir[cite: 9]:</p>
+<p>Öğrenci tüm soruları doğru yanıtlayarak <b>100 tam puan</b> almıştır. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki özet tablosunda “Elektrik Yükleri ve Elektrik Enerjisi” ünitesiyle ilgili dört temel bilimsel kural verilmiştir:</p>
 <table class="rt">
 <tr><th>Kural No</th><th>Bilimsel Kural</th></tr>
-<tr><td><b>1</b></td><td>Sürtünme ile elektriklenmede birbirine sürtülen iki nötr yalıtkan cisim, eşit miktarda ve zıt cins elektrik yüküyle yüklenir[cite: 9].</td></tr>
-<tr><td><b>2</b></td><td>Birbirini iten iki cisim kesinlikle aynı cins yüklüdür; ancak birbirini çeken iki cisimden biri yüklü, diğeri nötr olabilir[cite: 9].</td></tr>
-<tr><td><b>3</b></td><td>Pozitif (+) yüklü bir cisim topraklandığında, cisimdeki fazla pozitif (+) yükler iletken tel üzerinden toprağa akarak cismi nötrler[cite: 9].</td></tr>
-<tr><td><b>4</b></td><td>Bir elektrikli cihazın harcadığı elektrik enerjisi (kWh), cihazın gücü (kW) ile çalışma süresinin (saat) çarpımına eşittir[cite: 9].</td></tr>
+<tr><td><b>1</b></td><td>Sürtünme ile elektriklenmede birbirine sürtülen iki nötr yalıtkan cisim, eşit miktarda ve zıt cins elektrik yüküyle yüklenir.</td></tr>
+<tr><td><b>2</b></td><td>Birbirini iten iki cisim kesinlikle aynı cins yüklüdür; ancak birbirini çeken iki cisimden biri yüklü, diğeri nötr olabilir.</td></tr>
+<tr><td><b>3</b></td><td>Pozitif (+) yüklü bir cisim topraklandığında, cisimdeki fazla pozitif (+) yükler iletken tel üzerinden toprağa akarak cismi nötrler.</td></tr>
+<tr><td><b>4</b></td><td>Bir elektrikli cihazın harcadığı elektrik enerjisi (kWh), cihazın gücü (kW) ile çalışma süresinin (saat) çarpımına eşittir.</td></tr>
 </table>
-<p>Tablodaki numaralanmış kurallardan hangisi <b>yanlıştır</b>[cite: 9]?</p>`,
-  c: [`1`, `2`, `3`, `4`],
+<p>Tablodaki numaralanmış kurallardan hangisi <b>yanlıştır</b>?</p>`,
+  c: ["1", "2", "3", "4"],
   a: "C",
-  s: `<p>1, 2 ve 4 numaralı kurallar tamamen doğrudur[cite: 9]. Ancak <b>3 numaralı kural yanlıştır</b>; çünkü katı iletkenlerde <b>pozitif (+) yükler (protonlar) kesinlikle hareket etmez!</b> Pozitif (+) yüklü bir cisim topraklandığında cisimden toprağa (+) yük akmaz; tam tersine <b>topraktan cisme elektron (−) gelerek</b> cismi nötrler[cite: 9]! Cevap <b>C</b>.</p>`
-}
+  s: `<p>1, 2 ve 4 numaralı kurallar tamamen doğrudur. Ancak <b>3 numaralı kural yanlıştır</b>; çünkü katı iletkenlerde <b>pozitif (+) yükler (protonlar) kesinlikle hareket etmez!</b> Pozitif (+) yüklü bir cisim topraklandığında cisimden toprağa (+) yük akmaz; tam tersine <b>topraktan cisme elektron (−) gelerek</b> cismi nötrler!</p><p>1: Sürtünen cisimler eşit ve zıt yüklenir ✓. 2: İtme yalnızca aynı cins yüklüler arasında olur ✓. 4: Enerji = güç × süre ✓. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, yüzeyi alüminyum folyo ile kaplanmış ve yalıtkan iplerle asılmış <b>P, R, S ve T</b> toplarıyla bir etkinlik yapıyor. Öğrenci, ipek kumaşa sürtülerek <b>pozitif (+)</b> yüklendiği bilinen bir cam çubuğu ve topları yalıtkan eldiven giyerek ikişerli yaklaştırıyor ve gözlemlerini tabloya yazıyor.</p>
+<table class="rt">
+<tr><th>Yaklaştırılan cisimler</th><th>Gözlem</th></tr>
+<tr><td>Cam çubuk – P topu</td><td>Birbirini itiyor.</td></tr>
+<tr><td>P topu – R topu</td><td>Birbirini çekiyor.</td></tr>
+<tr><td>R topu – S topu</td><td>Birbirini itiyor.</td></tr>
+<tr><td>S topu – T topu</td><td>Birbirini çekiyor.</td></tr>
+</table>
+<p>Buna göre P, R, S ve T toplarının elektriksel yük durumları aşağıdakilerden hangisi <b>gibi olabilir</b>?</p>`,
+  c: ["P: (+), R: (−), S: (−), T: nötr", "P: (+), R: nötr, S: nötr, T: (+)", "P: (+), R: (−), S: (+), T: (−)", "P: (−), R: (+), S: (+), T: (−)"],
+  a: "A",
+  s: `<p>İtme, kesin bilgi verir: Cam çubuk (+) olduğuna ve P'yi ittiğine göre <b>P (+)</b> yüklüdür. R ile S birbirini ittiğine göre ikisi de yüklü ve <b>aynı cins</b> yüklüdür. Yüklü R, (+) yüklü P'ye çekildiğine göre R zıt yüklü yani <b>(−)</b>'dir; o hâlde S de <b>(−)</b>'dir. S ile T birbirini çektiğine göre T ya (+) ya da nötrdür.</p><p>A: P(+), R(−), S(−), T nötr → dört gözlemin hepsi sağlanır ✓. B: R ve S nötr olsaydı birbirini itmezdi ✗. C: R(−) ile S(+) birbirini çekerdi ✗. D: P(−) olsaydı (+) cam çubuğa çekilirdi ✗. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Alt kısmında delik bulunan özdeş kapların içine elektriksel yük durumları bilinmeyen küçük ve hafif <b>K, L ve M</b> plastik parçaları konuluyor. Kaplardan dökülen parçalara önce ipek kumaşa sürtülerek <b>pozitif (+)</b> yüklenmiş <b>X</b> cam çubuğu, sonra yük durumu bilinmeyen <b>Y</b> çubuğu yaklaştırılıyor. Kaplar ile parçalar arasında elektriksel etkileşim olmadığı biliniyor; tüm işlemler yalıtkan eldiven giyilerek yapılıyor.</p>
+<table class="rt">
+<tr><th>Dökülen parçalar</th><th>X çubuğu yaklaştırıldığında</th><th>Y çubuğu yaklaştırıldığında</th></tr>
+<tr><td><b>K</b></td><td>X'ten uzaklaşıyor.</td><td>Y'ye doğru hareket ediyor.</td></tr>
+<tr><td><b>L</b></td><td>X'e doğru hareket ediyor.</td><td>Y'ye doğru hareket ediyor.</td></tr>
+<tr><td><b>M</b></td><td>X'e doğru hareket ediyor.</td><td>Y'den uzaklaşıyor.</td></tr>
+</table>
+<p>Buna göre,</p>
+<p>I. K parçaları pozitif (+) yüklüdür.<br>
+II. Y çubuğu negatif (−) yüklüdür.<br>
+III. L parçaları negatif (−) yüklüdür.</p>
+<p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>K parçaları (+) yüklü X'ten uzaklaştığına göre K <b>(+)</b> yüklüdür (I ✓). M parçaları Y'den uzaklaştığına göre M ile Y yüklü ve aynı cinstir. Yüklü M, (+) yüklü X'e çekildiğine göre M <b>(−)</b>'dir; bu yüzden Y de <b>(−)</b> yüklüdür (II ✓). (+) yüklü K'nin (−) yüklü Y'ye çekilmesi de bununla uyumludur.</p><p>L parçaları hem (+) yüklü X'e hem (−) yüklü Y'ye çekiliyor. L yüklü olsaydı bu iki zıt yüklü çubuktan birini iterdi; bu yüzden L parçaları <b>nötrdür</b> (III ✗). "Çekme varsa zıt yük vardır" diye düşünen öğrenci III'ü de doğru sanar. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Ece, yün kazağına sürttüğü balonu masadaki küçük kâğıt parçalarına yaklaştırıyor. Kâğıt parçalarının balona doğru sıçrayıp balonun yüzeyine tutunduğunu görüyor. Birkaç saniye sonra balona tutunan parçalardan bazılarının balondan fırlayarak uzaklaştığını ve bu parçaların balon yeniden yaklaştırıldığında da balondan kaçtığını gözlemliyor.</p></div>
+<div class="fig"><svg viewBox="0 0 520 190" width="500" role="img" aria-label="Balon ve kâğıt parçaları iki gözlem">
+<rect x="5" y="5" width="250" height="180" fill="#fff" stroke="#94a3b8"/><rect x="265" y="5" width="250" height="180" fill="#fff" stroke="#94a3b8"/>
+<text x="15" y="24" font-size="12" font-weight="bold">İlk anda</text><text x="275" y="24" font-size="12" font-weight="bold">Birkaç saniye sonra</text>
+<ellipse cx="130" cy="62" rx="26" ry="32" fill="#fecdd3" stroke="#be123c" stroke-width="2"/><line x1="130" y1="94" x2="130" y2="117" stroke="#64748b"/>
+<rect x="112" y="92" width="7" height="5" fill="#475569"/><rect x="135" y="93" width="7" height="5" fill="#475569"/>
+<line x1="100" y1="150" x2="112" y2="104" stroke="#16a34a" stroke-width="1.5"/><polygon points="112,100 108,108 115,107" fill="#16a34a"/>
+<line x1="160" y1="150" x2="146" y2="104" stroke="#16a34a" stroke-width="1.5"/><polygon points="146,100 142,107 150,108" fill="#16a34a"/>
+<rect x="60" y="160" width="140" height="8" fill="#d6b48a"/><rect x="85" y="154" width="7" height="5" fill="#475569"/><rect x="165" y="154" width="7" height="5" fill="#475569"/><rect x="125" y="154" width="7" height="5" fill="#475569"/>
+<text x="130" y="182" font-size="11" text-anchor="middle">Parçalar balona sıçrıyor.</text>
+<ellipse cx="390" cy="62" rx="26" ry="32" fill="#fecdd3" stroke="#be123c" stroke-width="2"/><line x1="390" y1="94" x2="390" y2="117" stroke="#64748b"/>
+<rect x="380" y="93" width="7" height="5" fill="#475569"/>
+<rect x="325" y="110" width="7" height="5" fill="#475569"/><line x1="362" y1="90" x2="335" y2="108" stroke="#dc2626" stroke-width="1.5"/><polygon points="331,111 340,109 336,103" fill="#dc2626"/>
+<rect x="452" y="112" width="7" height="5" fill="#475569"/><line x1="416" y1="92" x2="448" y2="110" stroke="#dc2626" stroke-width="1.5"/><polygon points="452,112 442,110 446,104" fill="#dc2626"/>
+<rect x="320" y="160" width="140" height="8" fill="#d6b48a"/>
+<text x="390" y="182" font-size="11" text-anchor="middle">Bazı parçalar balondan fırlıyor.</text>
+</svg></div>
+<p>Ece'nin gözlemleriyle ilgili,</p>
+<p>I. Kâğıt parçaları başlangıçta elektriksel olarak nötrdür.<br>
+II. Balondan fırlayan parçalar, balona dokunduktan sonra balonla aynı cins yükle yüklenmiştir.<br>
+III. Balon, sürtüldüğü yün kazakla aynı cins yükle yüklenmiştir.</p>
+<p>yargılarından hangileri <b>doğru olabilir</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Balon sürtünme ile yüklenmiştir. Yüklü balon nötr cisimleri de çektiği için kâğıt parçalarının başlangıçta nötr olması gözlemle uyumludur (I olabilir ✓).</p><p>Parçalar balona dokununca balonun yükünün bir kısmını alır, balonla <b>aynı cins</b> yükle yüklenir ve aynı cins yükler birbirini ittiği için balondan fırlar; balon tekrar yaklaştırıldığında yine kaçarlar (II ✓).</p><p>Sürtünme ile elektriklenmede birbirine sürtülen cisimler <b>zıt cins</b> yükle yüklenir; balon ile kazak aynı cins yüklü olamaz (III ✗). Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Tarımda kullanılan <b>elektrostatik ilaçlama makinelerinde</b>, püskürtme ucundan çıkan ilaç damlacıkları negatif (−) yükle yüklenir. Bitkiler ise elektriksel olarak nötrdür. Bu makinelerle yapılan ilaçlamada iki durum gözlenir:</p>
+<p><b>1. durum:</b> Damlacıklar havada ilerlerken birbirine yapışıp büyük damlalar oluşturmaz, bitkinin üzerine dağınık ve eşit biçimde yayılır.<br>
+<b>2. durum:</b> Damlacıklar yaprakların yalnız üst yüzeyine değil, makineye bakmayan alt yüzeyine de dolanarak tutunur.</p></div>
+<p>Bu iki durum,</p>
+<p>I. Aynı cins yüklü cisimler birbirini iter.<br>
+II. Yüklü cisimler nötr cisimleri çeker.<br>
+III. Zıt cins yüklü cisimler birbirini çeker.</p>
+<p>yargılarından hangileriyle <b>açıklanır</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>1. durum: Bütün damlacıklar (−) yüklüdür; aynı cins yüklü damlacıklar birbirini ittiği için birleşmez ve dağınık yayılır (I ✓).</p><p>2. durum: Bitki nötrdür. Damlacıkların yaprağa, hatta alt yüzeye dolanarak tutunması <b>yüklü cismin nötr cismi çekmesiyle</b> açıklanır (II ✓).</p><p>III doğru bir bilgidir ama bu uygulamada bitki zıt yüklü değil nötrdür; damlacıklar da birbirleriyle aynı cins yüklüdür. Bu nedenle iki durumu da III açıklamaz (III ✗). Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir termik santralin bacasında, dışarı atılan gazın içindeki küçük kül parçacıklarını tutmak için şekildeki dört bölümlü filtre sistemi kullanılıyor.</p>
+<div class="fig"><svg viewBox="0 0 560 210" width="540" role="img" aria-label="Dört bölümlü baca filtresi">
+<rect x="20" y="30" width="520" height="80" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+<line x1="150" y1="30" x2="150" y2="110" stroke="#334155" stroke-width="1.5"/>
+<line x1="280" y1="30" x2="280" y2="110" stroke="#334155" stroke-width="1.5"/>
+<line x1="410" y1="30" x2="410" y2="110" stroke="#334155" stroke-width="1.5"/>
+<text x="10" y="22" font-size="12" fill="#334155">Kirli gaz girişi →</text>
+<text x="440" y="22" font-size="12" fill="#334155">→ Bacadan çıkış</text>
+<line x1="40" y1="45" x2="40" y2="95" stroke="#64748b" stroke-width="2"/><line x1="55" y1="45" x2="55" y2="95" stroke="#64748b" stroke-width="2"/><line x1="70" y1="45" x2="70" y2="95" stroke="#64748b" stroke-width="2"/><line x1="85" y1="45" x2="85" y2="95" stroke="#64748b" stroke-width="2"/><line x1="100" y1="45" x2="100" y2="95" stroke="#64748b" stroke-width="2"/><line x1="115" y1="45" x2="115" y2="95" stroke="#64748b" stroke-width="2"/><line x1="130" y1="45" x2="130" y2="95" stroke="#64748b" stroke-width="2"/>
+<rect x="165" y="60" width="100" height="40" fill="#bae6fd" stroke="#0369a1"/><text x="215" y="85" font-size="11" text-anchor="middle" fill="#0c4a6e">kireçli su</text>
+<line x1="300" y1="50" x2="390" y2="50" stroke="#7c3aed" stroke-width="2"/><line x1="300" y1="70" x2="390" y2="70" stroke="#7c3aed" stroke-width="2"/><line x1="300" y1="90" x2="390" y2="90" stroke="#7c3aed" stroke-width="2"/>
+<rect x="425" y="40" width="10" height="60" fill="#fecaca" stroke="#b91c1c"/><rect x="465" y="40" width="10" height="60" fill="#fecaca" stroke="#b91c1c"/><rect x="505" y="40" width="10" height="60" fill="#fecaca" stroke="#b91c1c"/>
+<text x="430" y="36" font-size="12" fill="#b91c1c" text-anchor="middle">+</text><text x="470" y="36" font-size="12" fill="#b91c1c" text-anchor="middle">+</text><text x="510" y="36" font-size="12" fill="#b91c1c" text-anchor="middle">+</text>
+<text x="85" y="130" font-size="12" font-weight="bold" text-anchor="middle">1. bölüm</text>
+<text x="215" y="130" font-size="12" font-weight="bold" text-anchor="middle">2. bölüm</text>
+<text x="345" y="130" font-size="12" font-weight="bold" text-anchor="middle">3. bölüm</text>
+<text x="475" y="130" font-size="12" font-weight="bold" text-anchor="middle">4. bölüm</text>
+<text x="85" y="148" font-size="11" text-anchor="middle">Metal ızgara büyük</text><text x="85" y="162" font-size="11" text-anchor="middle">kül parçalarını tutar.</text>
+<text x="215" y="148" font-size="11" text-anchor="middle">Kireçli su kükürtlü</text><text x="215" y="162" font-size="11" text-anchor="middle">gazları tutar.</text>
+<text x="345" y="148" font-size="11" text-anchor="middle">Teller, küçük</text><text x="345" y="162" font-size="11" text-anchor="middle">parçacıkları negatif</text><text x="345" y="176" font-size="11" text-anchor="middle">(−) yükle yükler.</text>
+<text x="475" y="148" font-size="11" text-anchor="middle">Pozitif (+) yüklü</text><text x="475" y="162" font-size="11" text-anchor="middle">plakalar parçacıkları</text><text x="475" y="176" font-size="11" text-anchor="middle">tutar.</text>
+</svg></div>
+<p>Santralde yapılan iki ölçümün sonuçları şöyledir:</p>
+<p><b>Pazartesi:</b> Bacadan çıkan gazda <b>negatif (−) yüklü</b> küçük parçacıklar normalden çok fazladır.<br>
+<b>Perşembe:</b> Bacadan çıkan gazda <b>nötr</b> küçük parçacıklar normalden çok fazladır; yüklü parçacık neredeyse yoktur.</p>
+<p>Diğer bölümlerin sorunsuz çalıştığı bilindiğine göre pazartesi ve perşembe günleri işlevini yeterince yapamayan bölümler hangi seçenekte doğru verilmiştir?</p>`,
+  c: ["Pazartesi: 3. bölüm – Perşembe: 4. bölüm", "Pazartesi: 4. bölüm – Perşembe: 1. bölüm", "Pazartesi: 3. bölüm – Perşembe: 3. bölüm", "Pazartesi: 4. bölüm – Perşembe: 3. bölüm"],
+  a: "D",
+  s: `<p><b>Pazartesi:</b> Çıkan parçacıklar (−) yüklüdür; yani 3. bölüm parçacıkları yüklemiştir. Yüklü parçacıkları zıt yüklü (+) plakalarla tutması gereken <b>4. bölüm</b> işini yapamamıştır.</p><p><b>Perşembe:</b> Çıkan parçacıklar nötrdür ve yüklü parçacık yok gibidir; demek ki parçacıklar yüklenmemiştir. Yükleme görevi <b>3. bölümündür</b>. (+) plakalar nötr parçacıkların ancak bir kısmını çekebildiği için nötr parçacıkların çoğu bacadan çıkar.</p><p>A ve C pazartesi gününü, B perşembe gününü yanlış eşleştirir; 1. ve 2. bölümlerin görevi elektrik yükleriyle ilgili değildir. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bazı mürekkep püskürtmeli yazıcılarda mürekkep damlaları, elektriksel olarak yüklü iki levhanın arasından geçirilerek kâğıdın istenen noktasına yönlendirilir. Bir deneyde levhaların arasından geçirilen <b>X, Y ve Z</b> damlalarının izlediği yollar şekildeki gibidir.</p>
+<div class="fig"><svg viewBox="0 0 520 220" width="500" role="img" aria-label="Yüklü levhalar arasından geçen X, Y ve Z damlalarının yolları">
+<rect x="20" y="95" width="60" height="30" fill="#e2e8f0" stroke="#334155" stroke-width="2"/><text x="50" y="145" font-size="11" text-anchor="middle">Püskürtme</text><text x="50" y="158" font-size="11" text-anchor="middle">ucu</text>
+<rect x="140" y="40" width="200" height="14" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/>
+<text x="240" y="32" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Pozitif (+) yüklü levha</text>
+<rect x="140" y="166" width="200" height="14" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="240" y="200" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Negatif (−) yüklü levha</text>
+<line x1="460" y1="20" x2="460" y2="200" stroke="#334155" stroke-width="4"/><text x="478" y="114" font-size="12">Kâğıt</text>
+<path d="M80 110 L140 110 Q300 105 460 45" fill="none" stroke="#7c3aed" stroke-width="2" stroke-dasharray="5,4"/>
+<path d="M80 110 L460 110" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="5,4"/>
+<path d="M80 110 L140 110 Q300 115 460 175" fill="none" stroke="#ea580c" stroke-width="2" stroke-dasharray="5,4"/>
+<text x="440" y="40" font-size="13" font-weight="bold" fill="#7c3aed">X</text>
+<text x="440" y="104" font-size="13" font-weight="bold" fill="#16a34a">Y</text>
+<text x="440" y="190" font-size="13" font-weight="bold" fill="#ea580c">Z</text>
+</svg></div>
+<p>Buna göre X, Y ve Z damlalarının elektriksel yük durumlarıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["X ve Z damlaları aynı cins yükle yüklüdür.", "X damlası negatif (−) yüklü, Y damlası nötrdür.", "Y damlası pozitif (+) yüklü, Z damlası nötrdür.", "Z damlası negatif (−) yüklüdür."],
+  a: "B",
+  s: `<p>X damlası (+) levhaya doğru sapmıştır: (+) levhaya çekilip (−) levhadan itildiğine göre <b>X (−)</b> yüklüdür. Z damlası (−) levhaya doğru sapmıştır, bu yüzden <b>Z (+)</b> yüklüdür. Y damlası hiç sapmadan düz gitmiştir; yüklü olsaydı levhalardan biri onu çeker, diğeri iterdi. Bu yüzden <b>Y nötrdür</b>.</p><p>A: X ile Z zıt yönlere saptığı için zıt cins yüklüdür ✗. C: Y düz gittiği için yüklü olamaz ✗. D: Z (+) yüklüdür ✗. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Yalıtkan köpük altlıklar üzerinde birbirine temas eden, elektriksel olarak nötr <b>K ve L</b> metal kutularına <b>negatif (−) yüklü</b> bir çubuk, K kutusuna yakın olacak şekilde yaklaştırılıyor. Üç öğrenci yalıtkan eldiven giyerek bu düzenekle farklı işlemler yapıyor.</p>
+<div class="fig"><svg viewBox="0 0 420 130" width="400" role="img" aria-label="Negatif yüklü çubuk ve birbirine temas eden K ve L metal kutuları">
+<rect x="20" y="52" width="100" height="16" rx="8" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="45" y="64" font-size="12" font-weight="bold" fill="#1d4ed8">− − −</text>
+<text x="70" y="40" font-size="11" text-anchor="middle">(−) yüklü çubuk</text>
+<rect x="150" y="30" width="70" height="60" fill="#e5e7eb" stroke="#374151" stroke-width="2"/><text x="185" y="66" font-size="14" font-weight="bold" text-anchor="middle">K</text>
+<rect x="220" y="30" width="70" height="60" fill="#e5e7eb" stroke="#374151" stroke-width="2"/><text x="255" y="66" font-size="14" font-weight="bold" text-anchor="middle">L</text>
+<rect x="155" y="90" width="60" height="14" fill="#fde68a" stroke="#a16207"/><rect x="225" y="90" width="60" height="14" fill="#fde68a" stroke="#a16207"/>
+<text x="330" y="102" font-size="11">Yalıtkan köpük</text>
+<line x1="100" y1="120" x2="400" y2="120" stroke="#94a3b8" stroke-width="2"/>
+</svg></div>
+<table class="rt">
+<tr><th>Öğrenci</th><th>Yapılan işlemler (sırasıyla)</th></tr>
+<tr><td><b>Ayşe</b></td><td>Çubuk yerinde tutulurken kutuları birbirinden ayırıyor, sonra çubuğu uzaklaştırıyor.</td></tr>
+<tr><td><b>Burak</b></td><td>Önce çubuğu uzaklaştırıyor, sonra kutuları birbirinden ayırıyor.</td></tr>
+<tr><td><b>Ceren</b></td><td>Çubuğu K kutusuna dokunduruyor, sonra çubuğu uzaklaştırıp kutuları birbirinden ayırıyor.</td></tr>
+</table>
+<p>Buna göre hangi öğrencilerin işlemleri sonunda <b>L kutusu çubukla aynı cins yükle</b> yüklenmiş olur?</p>`,
+  c: ["Yalnız Ayşe", "Yalnız Ceren", "Ayşe ve Ceren", "Ayşe, Burak ve Ceren"],
+  a: "C",
+  s: `<p><b>Ayşe (etki ile elektriklenme):</b> (−) çubuk yaklaşınca kutulardaki elektronlar itilir ve uzak uca, L'ye toplanır. Çubuk yakındayken kutular ayrılırsa K (+), L <b>(−)</b> kalır; L çubukla aynı cinstir ✓.</p><p><b>Burak:</b> Çubuk önce uzaklaştırılınca elektronlar eski yerlerine döner; kutular sonra ayrılınca ikisi de nötr kalır ✗.</p><p><b>Ceren (dokunma ile elektriklenme):</b> Çubuk dokununca kutulara elektron geçer; birbirine temas eden K ve L, çubukla aynı cins, yani <b>(−)</b> yükle yüklenir ✓.</p><p>D'yi seçen öğrenci işlem sırasının önemini atlar. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Yalıtkan bir masanın üzerinde yatay duran boş ve elektriksel olarak nötr bir alüminyum içecek kutusu ile iki deney yapılıyor.</p>
+<div class="box"><p><b>1. deney:</b> Negatif (−) yüklü bir plastik çubuk kutuya dokundurulmadan yaklaştırılınca kutu çubuğa doğru yuvarlanıyor.<br>
+<b>2. deney:</b> Kutu yerine geri konuyor. Pozitif (+) yüklü bir cam çubuk kutuya dokundurulmadan yaklaştırılınca kutu yine çubuğa doğru yuvarlanıyor.</p></div>
+<div class="fig"><svg viewBox="0 0 520 130" width="500" role="img" aria-label="Kutuya yaklaştırılan negatif ve pozitif yüklü çubuklar">
+<rect x="5" y="5" width="250" height="120" fill="#fff" stroke="#94a3b8"/><rect x="265" y="5" width="250" height="120" fill="#fff" stroke="#94a3b8"/>
+<text x="15" y="24" font-size="12" font-weight="bold">1. deney</text><text x="275" y="24" font-size="12" font-weight="bold">2. deney</text>
+<rect x="20" y="58" width="80" height="14" rx="7" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="2"/><text x="60" y="69" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">− − − −</text>
+<rect x="145" y="50" width="70" height="34" rx="6" fill="#e5e7eb" stroke="#374151" stroke-width="2"/><ellipse cx="215" cy="67" rx="6" ry="17" fill="#d1d5db" stroke="#374151" stroke-width="2"/><line x1="140" y1="100" x2="110" y2="100" stroke="#16a34a" stroke-width="2"/><polygon points="104,100 113,95 113,105" fill="#16a34a"/>
+<line x1="15" y1="86" x2="245" y2="86" stroke="#a16207" stroke-width="3"/><text x="180" y="117" font-size="11" text-anchor="middle">Yalıtkan masa</text>
+<rect x="280" y="58" width="80" height="14" rx="7" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><text x="320" y="69" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">+ + + +</text>
+<rect x="405" y="50" width="70" height="34" rx="6" fill="#e5e7eb" stroke="#374151" stroke-width="2"/><ellipse cx="475" cy="67" rx="6" ry="17" fill="#d1d5db" stroke="#374151" stroke-width="2"/><line x1="400" y1="100" x2="370" y2="100" stroke="#16a34a" stroke-width="2"/><polygon points="364,100 373,95 373,105" fill="#16a34a"/>
+<line x1="275" y1="86" x2="505" y2="86" stroke="#a16207" stroke-width="3"/><text x="440" y="117" font-size="11" text-anchor="middle">Yalıtkan masa</text>
+</svg></div>
+<p>Bu deneylerle ilgili,</p>
+<p>I. Kutu, hem (−) hem (+) yüklü çubuğa çekildiği için elektriksel olarak nötrdür.<br>
+II. Kutuda eşit sayıda pozitif (+) ve negatif (−) yük bulunur.<br>
+III. 1. deneyde plastik çubuktan kutuya elektron geçmiştir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>Kutu, zıt yüklü iki çubuğa da çekiliyor. Kutu yüklü olsaydı bu çubuklardan birini iterdi; bu yüzden kutu <b>nötrdür</b> (I ✓). Yüklü çubuk, nötr kutunun yakın yüzeyinde zıt yükleri toplayarak (kutuplanma) onu çeker.</p><p>Nötr cisimde de çok sayıda (+) ve (−) yük vardır; yalnızca sayıları <b>eşittir</b> (II ✓).</p><p>Çubuklar kutuya dokundurulmamıştır; yükler yalnızca kutunun içinde yer değiştirir, çubuk ile kutu arasında elektron geçişi olmaz (III ✗). Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Akaryakıt tankerlerinde yakıtın çalkalanması ve sürtünmesiyle tankerin metal gövdesi elektriksel olarak yüklenebilir. Bu yükün kıvılcım oluşturmadan toprağa aktarılması için üç farklı uygulama düşünülüyor. Tankerlerin tekerlekleri lastiktir (yalıtkan).</p>
+<div class="fig"><svg viewBox="0 0 560 300" width="540" role="img" aria-label="Üç tanker uygulaması">
+<rect x="5" y="5" width="550" height="92" fill="#fff" stroke="#94a3b8"/>
+<text x="14" y="22" font-size="13" font-weight="bold">I.</text>
+<rect x="30" y="30" width="130" height="38" rx="12" fill="#cbd5e1" stroke="#334155" stroke-width="2"/><rect x="160" y="40" width="34" height="28" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+<circle cx="60" cy="76" r="9" fill="#111827"/><circle cx="175" cy="76" r="9" fill="#111827"/>
+<rect x="104" y="68" width="14" height="8" fill="#fde68a" stroke="#a16207"/>
+<line x1="111" y1="76" x2="113" y2="86" stroke="#475569" stroke-width="2" stroke-dasharray="3,2"/>
+<line x1="20" y1="86" x2="220" y2="86" stroke="#92400e" stroke-width="3"/>
+<text x="240" y="40" font-size="11">Metal zincir yere değmektedir; ancak zincir</text>
+<text x="240" y="55" font-size="11">tankerin gövdesine plastik (yalıtkan) bir</text>
+<text x="240" y="70" font-size="11">bağlantı parçasıyla takılmıştır.</text>
+<rect x="5" y="102" width="550" height="92" fill="#fff" stroke="#94a3b8"/>
+<text x="14" y="119" font-size="13" font-weight="bold">II.</text>
+<rect x="30" y="127" width="130" height="38" rx="12" fill="#cbd5e1" stroke="#334155" stroke-width="2"/><rect x="160" y="137" width="34" height="28" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+<circle cx="60" cy="173" r="9" fill="#111827"/><circle cx="175" cy="173" r="9" fill="#111827"/>
+<line x1="111" y1="165" x2="113" y2="183" stroke="#475569" stroke-width="2" stroke-dasharray="3,2"/>
+<line x1="20" y1="183" x2="220" y2="183" stroke="#92400e" stroke-width="3"/>
+<text x="240" y="137" font-size="11">Metal zincir doğrudan tankerin metal</text>
+<text x="240" y="152" font-size="11">gövdesine bağlıdır ve araç ilerlerken</text>
+<text x="240" y="167" font-size="11">zincirin ucu sürekli yere değmektedir.</text>
+<rect x="5" y="199" width="550" height="96" fill="#fff" stroke="#94a3b8"/>
+<text x="14" y="216" font-size="13" font-weight="bold">III.</text>
+<rect x="30" y="224" width="130" height="38" rx="12" fill="#cbd5e1" stroke="#334155" stroke-width="2"/><rect x="160" y="234" width="34" height="28" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+<circle cx="60" cy="270" r="9" fill="#111827"/><circle cx="175" cy="270" r="9" fill="#111827"/>
+<rect x="205" y="236" width="14" height="36" fill="#e5e7eb" stroke="#334155"/><rect x="198" y="272" width="28" height="8" fill="#fde68a" stroke="#a16207"/>
+<path d="M160 245 Q185 230 205 245" fill="none" stroke="#b45309" stroke-width="2"/>
+<line x1="20" y1="282" x2="230" y2="282" stroke="#92400e" stroke-width="3"/>
+<text x="240" y="232" font-size="11">Tankerin metal gövdesi iletken bir kabloyla</text>
+<text x="240" y="247" font-size="11">istasyondaki metal pompaya bağlanmıştır.</text>
+<text x="240" y="262" font-size="11">Pompa, yalıtkan bir altlık üzerindedir ve</text>
+<text x="240" y="277" font-size="11">toprakla iletken bir bağlantısı yoktur.</text>
+</svg></div>
+<p>Buna göre hangi uygulamalarda tankerin metal gövdesi <b>topraklanmış</b> olur?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+  a: "B",
+  s: `<p>Topraklama için yüklü cisimden toprağa kadar <b>kesintisiz bir iletken yol</b> gerekir.</p><p>I: Zincir yere değse de gövde ile zincir arasındaki plastik parça yolu keser; yük zincire geçemez ✗.<br>II: Gövde → metal zincir → toprak yolu kesintisizdir ✓.<br>III: Tanker iletken kabloyla pompaya bağlıdır; ancak pompa yalıtkan altlık üzerinde ve toprağa bağlı değildir. Tanker ile pompa yalnızca yükü paylaşır, topraklanmış olmaz ✗.</p><p>C'yi seçen öğrenci "zincir yere değiyorsa topraklama vardır" diye düşünür; D'yi seçen ise birbirine bağlı cisimleri topraklanmış sayar. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Yalıtkan ayaklar üzerindeki özdeş metal kürelerden <b>K pozitif (+)</b>, <b>L negatif (−)</b> yüklüdür. Küreler, açık olan anahtarlar ve iletken teller yardımıyla toprağa gömülü metal levhalara şekildeki gibi bağlanmıştır.</p>
+<div class="fig"><svg viewBox="0 0 460 200" width="440" role="img" aria-label="Pozitif yüklü K ve negatif yüklü L kürelerinin anahtarla toprağa bağlanması">
+<circle cx="110" cy="50" r="28" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/><text x="110" y="47" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">+ + +</text><text x="110" y="63" font-size="12" font-weight="bold" text-anchor="middle">K</text>
+<circle cx="330" cy="50" r="28" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/><text x="330" y="47" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">− − −</text><text x="330" y="63" font-size="12" font-weight="bold" text-anchor="middle">L</text>
+<rect x="104" y="78" width="12" height="72" fill="#fde68a" stroke="#a16207"/><rect x="324" y="78" width="12" height="72" fill="#fde68a" stroke="#a16207"/>
+<text x="250" y="140" font-size="11" text-anchor="middle">Yalıtkan ayaklar</text>
+<polyline points="138,50 170,50 170,95" fill="none" stroke="#334155" stroke-width="2"/>
+<line x1="170" y1="95" x2="185" y2="110" stroke="#334155" stroke-width="2"/><circle cx="170" cy="95" r="2.5" fill="#334155"/><circle cx="170" cy="115" r="2.5" fill="#334155"/>
+<text x="190" y="102" font-size="11">Anahtar 1</text>
+<line x1="170" y1="115" x2="170" y2="165" stroke="#334155" stroke-width="2"/>
+<polyline points="358,50 390,50 390,95" fill="none" stroke="#334155" stroke-width="2"/>
+<line x1="390" y1="95" x2="405" y2="110" stroke="#334155" stroke-width="2"/><circle cx="390" cy="95" r="2.5" fill="#334155"/><circle cx="390" cy="115" r="2.5" fill="#334155"/>
+<text x="398" y="130" font-size="11">Anahtar 2</text>
+<line x1="390" y1="115" x2="390" y2="165" stroke="#334155" stroke-width="2"/>
+<rect x="20" y="150" width="420" height="40" fill="#fef3c7" stroke="#92400e"/>
+<rect x="155" y="165" width="30" height="8" fill="#64748b"/><rect x="375" y="165" width="30" height="8" fill="#64748b"/>
+<text x="40" y="182" font-size="12" fill="#92400e">Toprak</text>
+</svg></div>
+<p>Anahtarlar kapatıldığında gerçekleşen olaylarla ilgili,</p>
+<p>I. K küresinden toprağa pozitif (+) yükler akar.<br>
+II. Topraktan K küresine elektron akar.<br>
+III. L küresinden toprağa elektron akar.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "Yalnız II", "II ve III"],
+  a: "D",
+  s: `<p>Topraklamada yalnızca <b>elektronlar</b> hareket eder; protonlar (+ yükler) yerinden ayrılmaz.</p><p>K (+) yüklüdür, yani elektron eksiği vardır. Anahtar kapanınca eksik elektronlar <b>topraktan küreye</b> gelir ve K nötr olur (II ✓, I ✗). L (−) yüklüdür, yani fazla elektronu vardır; fazla elektronlar <b>küreden toprağa</b> akar (III ✓).</p><p>A ve B'yi seçen öğrenci "(+) yükler toprağa akar" yanılgısına düşer. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Kışın kuru bir günde yün halının üzerinde lastik tabanlı terlikle bir süre yürüyen Can, metal kapı koluna elini uzattığında parmağı ile kol arasında küçük bir kıvılcım oluştuğunu görüyor ve hafifçe çarpılıyor. Metal kapı kolu, kapının metal kasası ve duvar içindeki tesisat aracılığıyla toprakla bağlantılıdır.</p></div>
+<p>Bu olayla ilgili,</p>
+<p>I. Can yürürken halıyla sürtünerek elektriklenmiştir.<br>
+II. Terliklerin tabanı yalıtkan olduğu için Can'ın üzerindeki yük yürürken toprağa aktarılamamıştır.<br>
+III. Can kapı koluna dokunduğunda vücudundaki protonlar kola geçmiştir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Can'ın terliği ile halı yürürken birbirine sürtünür; Can <b>sürtünme ile elektriklenir</b> (I ✓). Lastik taban yalıtkan olduğu için bu yük Can'ın üzerinde birikir, toprağa akamaz (II ✓). Elini toprakla bağlantılı metal kola yaklaştırınca biriken yük kıvılcımla kola ve toprağa aktarılır.</p><p>Elektriklenmede ve topraklamada yer değiştiren yükler <b>elektronlardır</b>; protonlar bir cisimden diğerine geçmez (III ✗). Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Farklı maddelerin sürtünme sırasında elektron alma eğilimleri farklıdır. Elektron alma eğilimi fazla olan madde, sürtünmede diğer maddeden elektron alır. <b>K, L, M ve N</b> maddelerinden yapılmış nötr cisimlerin elektron alma eğilimleri tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Madde</th><th>K</th><th>L</th><th>M</th><th>N</th></tr>
+<tr><td>Elektron alma eğilimi</td><td>En az</td><td>Az</td><td>Fazla</td><td>En fazla</td></tr>
+</table>
+<p>Nötr K cismi nötr M cismine, nötr L cismi de nötr N cismine sürtülüyor. Daha sonra bu dört cisim ikişerli olarak birbirine yaklaştırılıyor.</p>
+<p>Buna göre,</p>
+<p>I. K ve L cisimleri birbirini iter.<br>
+II. M ve N cisimleri birbirini iter.<br>
+III. L ve M cisimleri birbirini iter.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>K–M sürtünmesinde elektron alma eğilimi fazla olan M, K'den elektron alır: <b>M (−), K (+)</b>. L–N sürtünmesinde N, L'den elektron alır: <b>N (−), L (+)</b>.</p><p>I: K (+) ve L (+) aynı cins yüklüdür, birbirini iter ✓.<br>II: M (−) ve N (−) aynı cins yüklüdür, birbirini iter ✓.<br>III: L (+) ve M (−) zıt cins yüklüdür, birbirini <b>çeker</b> ✗.</p><p>Tablodaki "az" ifadesini "elektron verir, (−) olur" şeklinde ters okuyan öğrenci yanlış şıklara ulaşır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p><b>1. aşama:</b> Nötr bir plastik boru, nötr bir yün kumaşa sürtülüyor. Bu sürtünmede plastik boru negatif (−), yün kumaş pozitif (+) yükleniyor.<br>
+<b>2. aşama:</b> Plastik boru, yalıtkan iple asılı nötr bir alüminyum topa dokundurulup hemen uzaklaştırılıyor.<br>
+<b>3. aşama:</b> 1. aşamada kullanılan yün kumaş, alüminyum topa dokundurulmadan yaklaştırılıyor.</p></div>
+<div class="fig"><svg viewBox="0 0 540 170" width="520" role="img" aria-label="Plastik boru, yün kumaş ve alüminyum top ile üç aşama">
+<rect x="5" y="5" width="172" height="160" fill="#fff" stroke="#94a3b8"/><rect x="184" y="5" width="172" height="160" fill="#fff" stroke="#94a3b8"/><rect x="363" y="5" width="172" height="160" fill="#fff" stroke="#94a3b8"/>
+<text x="15" y="24" font-size="12" font-weight="bold">1. aşama</text><text x="194" y="24" font-size="12" font-weight="bold">2. aşama</text><text x="373" y="24" font-size="12" font-weight="bold">3. aşama</text>
+<rect x="25" y="70" width="130" height="14" rx="7" fill="#e9d5ff" stroke="#6d28d9" stroke-width="2"/><text x="90" y="62" font-size="11" text-anchor="middle">Plastik boru</text>
+<path d="M60 88 q15 18 30 0 q15 18 30 0" fill="#fde68a" stroke="#a16207" stroke-width="2"/><text x="90" y="125" font-size="11" text-anchor="middle">Yün kumaş</text>
+<text x="90" y="150" font-size="11" text-anchor="middle">Birbirine sürtülüyor.</text>
+<line x1="270" y1="30" x2="270" y2="80" stroke="#64748b"/><circle cx="270" cy="92" r="12" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+<rect x="190" y="85" width="68" height="14" rx="7" fill="#e9d5ff" stroke="#6d28d9" stroke-width="2"/>
+<text x="270" y="125" font-size="11" text-anchor="middle">Boru, alüminyum topa</text><text x="270" y="140" font-size="11" text-anchor="middle">dokundurulup</text><text x="270" y="155" font-size="11" text-anchor="middle">uzaklaştırılıyor.</text>
+<line x1="449" y1="30" x2="449" y2="80" stroke="#64748b"/><circle cx="449" cy="92" r="12" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+<path d="M375 86 q12 14 24 0 q12 14 24 0" fill="#fde68a" stroke="#a16207" stroke-width="2"/>
+<text x="449" y="125" font-size="11" text-anchor="middle">Yün kumaş topa</text><text x="449" y="140" font-size="11" text-anchor="middle">dokundurulmadan</text><text x="449" y="155" font-size="11" text-anchor="middle">yaklaştırılıyor.</text>
+</svg></div>
+<p>Buna göre 3. aşamada alüminyum top ile yün kumaş arasında gözlenecek durum ve bunun nedeni aşağıdakilerden hangisinde <b>doğru</b> verilmiştir?</p>`,
+  c: ["Birbirini iterler; çünkü top ile kumaş aynı cins yükle yüklüdür.", "Etkileşim olmaz; çünkü top boruya dokunduktan sonra nötr kalmıştır.", "Birbirini çekerler; çünkü top nötrdür, yüklü kumaş onu çeker.", "Birbirini çekerler; çünkü top negatif (−), kumaş pozitif (+) yüklüdür."],
+  a: "D",
+  s: `<p>2. aşamada (−) yüklü boru topa dokunur; <b>dokunma ile elektriklenmede</b> top, boruyla aynı cins yükle yani <b>(−)</b> yükle yüklenir.</p><p>Yün kumaş 1. aşamadan beri <b>(+)</b> yüklüdür. 3. aşamada (−) yüklü top ile (+) yüklü kumaş zıt cins yüklü olduğu için birbirini çeker.</p><p>A: Dokunmada topun boruyla zıt yüklendiğini sanmaktan gelir ✗. B: Dokunmada yük geçişini yok saymaktan gelir ✗. C: Gözlem doğru ama neden yanlıştır; top artık nötr değildir ✗. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Yalıtkan iple asılı yüklü bir X topuna, yalıtkan sapla tutulan yüklü bir Y küresi farklı uzaklıklardan yaklaştırılıyor. Her denemede X topunun Y'den <b>uzaklaşacak yönde</b> hareket ettiği ve ipin düşeyle yaptığı açının tablodaki gibi değiştiği gözleniyor. Denemelerde X ve Y'nin yük miktarları değişmiyor.</p>
+<table class="rt">
+<tr><th>Deneme</th><th>X ile Y arasındaki uzaklık (cm)</th><th>İpin düşeyle yaptığı açı</th></tr>
+<tr><td>1</td><td>30</td><td>4°</td></tr>
+<tr><td>2</td><td>20</td><td>9°</td></tr>
+<tr><td>3</td><td>10</td><td>22°</td></tr>
+</table>
+<p>Bu deneyin sonuçlarına göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Yüklü cisimler arasındaki uzaklık azaldıkça aralarındaki elektriksel kuvvet artar.", "Y küresi yaklaştıkça X topunun yük miktarı artar.", "X topu ile Y küresi zıt cins yükle yüklüdür.", "Elektriksel kuvvetin oluşması için cisimlerin birbirine dokunması gerekir."],
+  a: "A",
+  s: `<p>Yük miktarları sabitken uzaklık 30 cm'den 10 cm'ye azaldıkça ipin sapma açısı 4°'den 22°'ye artmıştır. Daha büyük sapma, X'e etki eden itme kuvvetinin arttığını gösterir: <b>uzaklık azaldıkça elektriksel kuvvet artar</b> (A ✓).</p><p>B: Yük miktarlarının değişmediği belirtilmiştir ✗. C: X, Y'den uzaklaştığına göre birbirini iterler; aynı cins yüklüdürler ✗. D: Cisimler hiç dokunmadan etkileşmiştir; elektriksel kuvvet uzaktan etki eder ✗. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Fen bilimleri dersinde öğrenciler, elektrik enerjisinin dönüşümünü gösteren modeller tasarlıyor. Üç öğrencinin modeli tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Model</th><th>Modelin çalışması</th></tr>
+<tr><td><b>I</b></td><td>Bir kol elle çevrilerek küçük bir jeneratör döndürülüyor; jeneratöre bağlı LED yanıyor.</td></tr>
+<tr><td><b>II</b></td><td>Pile bağlı küçük bir elektrik motorunun miline takılı pervane dönüyor ve önündeki kâğıt rüzgâr gülünü döndürüyor.</td></tr>
+<tr><td><b>III</b></td><td>Pile bağlı ince bir rezistans teli, içine sarıldığı deney tüpündeki suyu ısıtıyor.</td></tr>
+</table>
+<p>Buna göre hangi modeller, <b>elektrik enerjisinin</b> ısı ya da hareket enerjisine dönüşümünü temel alan modellerdir?</p>`,
+  c: ["Yalnız II", "II ve III", "I ve II", "I, II ve III"],
+  a: "B",
+  s: `<p>Bir modelin elektrik enerjisini başka bir enerjiye dönüştürmesi için enerjinin <b>elektrik enerjisi olarak başlaması</b> gerekir.</p><p>I: Enerji elle çevrilen kolun hareketiyle başlar; jeneratör <b>hareket enerjisini elektrik enerjisine</b> dönüştürür, sonra LED'de ışık oluşur. Temel dönüşüm elektrikten ısı ya da harekete değildir ✗.<br>II: Pilin elektrik enerjisi motorda <b>hareket enerjisine</b> dönüşür ✓.<br>III: Pilin elektrik enerjisi rezistansta <b>ısı enerjisine</b> dönüşür ✓.</p><p>A, ısı dönüşümünü atlar; C ve D, jeneratörü motorla karıştırır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Elektrikli otomobillerde araç hızlanırken bataryadaki elektrik enerjisi, tekerlekleri döndüren elektrik motorunu çalıştırır. Sürücü fren pedalına bastığında ise aynı motor <b>jeneratör gibi</b> çalışmaya başlar: Dönen tekerlekler motoru döndürür, bu sırada üretilen elektrik enerjisi bataryaya geri gönderilerek bataryanın bir miktar dolması sağlanır.</p></div>
+<p>Buna göre,</p>
+<p>I. Araç hızlanırken elektrik enerjisi hareket enerjisine dönüşür.<br>
+II. Fren sırasında aracın hareket enerjisinin bir kısmı elektrik enerjisine dönüşür.<br>
+III. Fren sırasında batarya motora elektrik enerjisi vererek aracın durmasını sağlar.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Hızlanırken motor çalışır: <b>elektrik → hareket</b> (I ✓). Fren sırasında motor jeneratör gibi çalışır; dönen tekerleklerin <b>hareket enerjisi elektrik enerjisine</b> dönüşür (II ✓).</p><p>Fren sırasında enerji bataryadan motora değil, <b>motordan bataryaya</b> gider; batarya dolar (III ✗). III'ü seçen öğrenci motor ile jeneratörün görevlerini karıştırır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir evin mutfağındaki priz hattının sigortası, aynı anda çalışan cihazların <b>toplam gücü 3600 W'ı aşarsa</b> devreyi kesmektedir (sigorta atmaktadır). Bu hatta kullanılan cihazların güçleri tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Cihaz</th><th>Gücü (W)</th></tr>
+<tr><td>Su ısıtıcısı (kettle)</td><td>2000</td></tr>
+<tr><td>Ütü</td><td>2200</td></tr>
+<tr><td>Saç kurutma makinesi</td><td>1800</td></tr>
+<tr><td>Elektrikli süpürge</td><td>1600</td></tr>
+<tr><td>Televizyon</td><td>150</td></tr>
+</table>
+<p>Buna göre aşağıdaki cihaz gruplarından hangisi bu hatta aynı anda çalıştırıldığında sigorta <b>atmaz</b>?</p>`,
+  c: ["Su ısıtıcısı ve ütü", "Saç kurutma makinesi, elektrikli süpürge ve televizyon", "Ütü ve elektrikli süpürge", "Su ısıtıcısı ve saç kurutma makinesi"],
+  a: "B",
+  s: `<p>Her grubun toplam gücünü 3600 W ile karşılaştıralım:</p><p>A: 2000 + 2200 = 4200 W &gt; 3600 W → atar.<br>B: 1800 + 1600 + 150 = <b>3550 W</b> &lt; 3600 W → atmaz ✓.<br>C: 2200 + 1600 = 3800 W → atar.<br>D: 2000 + 1800 = 3800 W → atar.</p><p>Cihaz sayısına bakıp "üç cihaz iki cihazdan fazla güç çeker" diye düşünen öğrenci B'yi eler; belirleyici olan cihaz sayısı değil <b>toplam güçtür</b>. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ailenin evinde aynı miktarda ışık veren iki lamba türünün güçleri tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Lamba türü</th><th>Gücü (W)</th></tr>
+<tr><td>Akkor flamanlı ampul</td><td>100</td></tr>
+<tr><td>LED lamba</td><td>12</td></tr>
+</table>
+<p>Aile, evdeki <b>5 adet</b> akkor ampulün tamamını LED lamba ile değiştiriyor. Lambaların her biri günde <b>6 saat</b> yanmaktadır ve 1 kWh elektrik enerjisinin fiyatı <b>3 TL</b>'dir (1 kW = 1000 W).</p>
+<p>Buna göre ailenin <b>30 günde</b> aydınlatmadan sağladığı tasarruf kaç TL'dir?</p>`,
+  c: ["32,4", "270", "23,76", "237,6"],
+  a: "D",
+  s: `<p>Bir lambada güç farkı: 100 − 12 = 88 W = 0,088 kW.<br>5 lambada: 5 × 0,088 = 0,44 kW.<br>30 günlük çalışma süresi: 6 × 30 = 180 saat.<br>Tasarruf edilen enerji: 0,44 × 180 = 79,2 kWh.<br>Tasarruf: 79,2 × 3 = <b>237,6 TL</b>.</p><p>A (32,4), LED lambaların harcadığı bedeldir; B (270), akkor ampullerin harcadığı bedeldir; C (23,76), lamba sayısını hesaba katıp 30 günü 3 gün gibi kullanmaktan gelir. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir evde televizyon ve uydu alıcısı kullanılmadıkları zamanlarda kumandayla kapatılıp <b>bekleme (stand-by)</b> modunda bırakılmaktadır. Cihazların bekleme modundaki güçleri ve günlük bekleme süreleri tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Cihaz</th><th>Bekleme modundaki gücü (W)</th><th>Günlük bekleme süresi (saat)</th></tr>
+<tr><td>Televizyon</td><td>5</td><td>20</td></tr>
+<tr><td>Uydu alıcısı</td><td>10</td><td>20</td></tr>
+</table>
+<p>Aile, cihazları bekleme modunda bırakmak yerine fişten çekmeye karar veriyor. 1 kWh elektrik enerjisinin fiyatı <b>3 TL</b> olduğuna göre ailenin <b>12 ayda</b> (her ay 30 gün) sağlayacağı tasarruf kaç TL'dir? (1 kW = 1000 W)</p>`,
+  c: ["324", "27", "388,8", "108"],
+  a: "A",
+  s: `<p>Toplam bekleme gücü: 5 + 10 = 15 W = 0,015 kW.<br>Günlük enerji: 0,015 × 20 = 0,3 kWh.<br>Bir ayda: 0,3 × 30 = 9 kWh; 12 ayda: 9 × 12 = 108 kWh.<br>Tasarruf: 108 × 3 = <b>324 TL</b>.</p><p>B (27 TL) yalnızca bir aylık tasarruftur. C (388,8 TL), bekleme süresini 24 saat almaktan gelir. D (108), harcanan enerjinin kWh değeridir, TL karşılığı değildir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir evdeki dört elektrikli cihazın güçleri grafikte, günlük çalışma süreleri ise grafiğin altında verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 260" width="500" role="img" aria-label="Dört cihazın güç sütun grafiği ve günlük çalışma süreleri">
+<line x1="60" y1="20" x2="60" y2="200" stroke="#334155" stroke-width="2"/>
+<line x1="60" y1="200" x2="500" y2="200" stroke="#334155" stroke-width="2"/>
+<text x="75" y="12" font-size="11">Güç (W)</text>
+<text x="52" y="204" font-size="11" text-anchor="end">0</text>
+<text x="52" y="159" font-size="11" text-anchor="end">500</text>
+<text x="52" y="114" font-size="11" text-anchor="end">1000</text>
+<text x="52" y="69" font-size="11" text-anchor="end">1500</text>
+<text x="52" y="24" font-size="11" text-anchor="end">2000</text>
+<line x1="60" y1="155" x2="500" y2="155" stroke="#e2e8f0"/><line x1="60" y1="110" x2="500" y2="110" stroke="#e2e8f0"/><line x1="60" y1="65" x2="500" y2="65" stroke="#e2e8f0"/><line x1="60" y1="20" x2="500" y2="20" stroke="#e2e8f0"/>
+<rect x="85" y="92" width="60" height="108" fill="#60a5fa"/><text x="115" y="86" font-size="11" text-anchor="middle">1200</text>
+<rect x="195" y="191" width="60" height="9" fill="#60a5fa"/><text x="225" y="185" font-size="11" text-anchor="middle">100</text>
+<rect x="305" y="20" width="60" height="180" fill="#60a5fa"/><text x="335" y="16" font-size="11" text-anchor="middle">2000</text>
+<rect x="415" y="2" width="60" height="198" fill="#60a5fa"/><text x="445" y="14" font-size="11" fill="#ffffff" text-anchor="middle">2200</text>
+<text x="115" y="218" font-size="11" font-weight="bold" text-anchor="middle">Klima</text>
+<text x="225" y="218" font-size="11" font-weight="bold" text-anchor="middle">Akvaryum</text><text x="225" y="231" font-size="11" font-weight="bold" text-anchor="middle">ısıtıcısı</text>
+<text x="335" y="218" font-size="11" font-weight="bold" text-anchor="middle">Su ısıtıcısı</text>
+<text x="445" y="218" font-size="11" font-weight="bold" text-anchor="middle">Çamaşır</text><text x="445" y="231" font-size="11" font-weight="bold" text-anchor="middle">makinesi</text>
+<text x="115" y="250" font-size="11" fill="#b91c1c" text-anchor="middle">5 saat</text>
+<text x="225" y="250" font-size="11" fill="#b91c1c" text-anchor="middle">24 saat</text>
+<text x="335" y="250" font-size="11" fill="#b91c1c" text-anchor="middle">15 dakika</text>
+<text x="445" y="250" font-size="11" fill="#b91c1c" text-anchor="middle">1 saat</text>
+</svg></div>
+<p>Buna göre cihazların <b>bir günde harcadıkları elektrik enerjisinin</b> çoktan aza doğru sıralaması aşağıdakilerden hangisidir?</p>`,
+  c: ["Çamaşır makinesi &gt; Su ısıtıcısı &gt; Klima &gt; Akvaryum ısıtıcısı", "Klima &gt; Akvaryum ısıtıcısı &gt; Çamaşır makinesi &gt; Su ısıtıcısı", "Akvaryum ısıtıcısı &gt; Klima &gt; Çamaşır makinesi &gt; Su ısıtıcısı", "Klima &gt; Çamaşır makinesi &gt; Akvaryum ısıtıcısı &gt; Su ısıtıcısı"],
+  a: "B",
+  s: `<p>Enerji = Güç × Süre (kW × saat):</p><p>Klima: 1,2 kW × 5 h = <b>6 kWh</b><br>Akvaryum ısıtıcısı: 0,1 kW × 24 h = <b>2,4 kWh</b><br>Çamaşır makinesi: 2,2 kW × 1 h = <b>2,2 kWh</b><br>Su ısıtıcısı: 2 kW × 0,25 h = <b>0,5 kWh</b></p><p>Sıralama: Klima &gt; Akvaryum ısıtıcısı &gt; Çamaşır makinesi &gt; Su ısıtıcısı.</p><p>A, yalnızca güçlere göre; C, yalnızca sürelere göre sıralamaktır. D, gücü küçük ama uzun süre çalışan akvaryum ısıtıcısının enerjisini küçümser. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir evin elektrik sayacında okunan değerler tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Okuma tarihi</th><th>Sayaç değeri (kWh)</th></tr>
+<tr><td>1 Ekim</td><td>12 450</td></tr>
+<tr><td>1 Kasım</td><td>12 690</td></tr>
+</table>
+<p>Aile, kasım ayında evdeki diğer tüketimini ekim ayıyla aynı tutarak <b>ek olarak</b> gücü <b>2000 W</b> olan bir elektrikli sobayı her gün <b>3 saat</b> çalıştırıyor. Kasım ayı 30 gündür ve 1 kWh elektriğin fiyatı <b>2,5 TL</b>'dir.</p>
+<p>Buna göre ailenin kasım ayı elektrik bedeli kaç TL olur? (1 kW = 1000 W)</p>`,
+  c: ["450", "600", "1050", "1200"],
+  a: "C",
+  s: `<p>Ekim tüketimi: 12 690 − 12 450 = <b>240 kWh</b>.<br>Sobanın kasım tüketimi: 2 kW × 3 h × 30 gün = <b>180 kWh</b>.<br>Kasım toplam tüketimi: 240 + 180 = 420 kWh.<br>Kasım bedeli: 420 × 2,5 = <b>1050 TL</b>.</p><p>A (450 TL) yalnızca sobanın bedelidir; B (600 TL) yalnızca ekim tüketiminin bedelidir. D (1200 TL), kasım tüketimini ekimin iki katı sanmaktan gelir. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir sınıfta öğrencilere iki güç santrali hakkında ipuçları veriliyor.</p>
+<table class="rt">
+<tr><th>Santral</th><th>İpuçları</th></tr>
+<tr><td><b>X</b></td><td>• Yakıt satın almaya gerek yoktur ve kaynağı yenilenebilirdir.<br>• Gece-gündüz, hava koşullarından bağımsız sürekli üretim yapar.<br>• Yalnızca yer altında sıcak su ve buhar bulunan bölgelerde kurulabilir.<br>• Kullanılan sıcak su seraların ısıtılmasında da değerlendirilebilir.</td></tr>
+<tr><td><b>Y</b></td><td>• Tükenebilir bir yakıt kullanır.<br>• Çok az yakıtla çok büyük miktarda enerji üretir.<br>• Çalışırken sera gazı salmaz.<br>• Atıkları uzun süre tehlikeli kalır ve güvenli depolanması zordur.</td></tr>
+</table>
+<p>Buna göre X ve Y santralleri aşağıdakilerin hangisinde <b>doğru</b> eşleştirilmiştir?</p>`,
+  c: ["X: Termik – Y: Nükleer", "X: Jeotermal – Y: Termik", "X: Hidroelektrik – Y: Nükleer", "X: Jeotermal – Y: Nükleer"],
+  a: "D",
+  s: `<p><b>X:</b> Yer altındaki sıcak su ve buhardan yararlanır, yenilenebilir ve süreklidir, sıcak su seralarda kullanılır → <b>jeotermal santral</b>. Termik santral yakıt yakar ve yakıtı yenilenemez; hidroelektrik santral yer altı sıcak suyuna değil barajdaki suya bağlıdır ve kuraklıkta üretimi düşer.</p><p><b>Y:</b> Tükenebilir yakıt (uranyum), çok az yakıtla çok büyük enerji, çalışırken sera gazı yok, uzun süre tehlikeli kalan radyoaktif atık → <b>nükleer santral</b>. Termik santral çalışırken karbondioksit gibi sera gazları salar; bu yüzden B yanlıştır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Birçok güç santralinde bir enerji kaynağı, türbin adı verilen kanatlı çarkı döndürür; türbine bağlı jeneratör de bu hareket enerjisini elektrik enerjisine dönüştürür. Bazı santrallerde türbini döndüren, ısıtılarak buhar hâline getirilmiş sudur.</p></div>
+<p>I. Termik santral<br>
+II. Rüzgâr santrali<br>
+III. Nükleer santral<br>
+IV. Hidroelektrik santral</p>
+<p>Yukarıdaki santrallerden hangilerinde türbini döndüren <b>su buharıdır</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, III ve IV"],
+  a: "B",
+  s: `<p>I: Termik santralde kömür, petrol ya da doğal gaz yakılır; açığa çıkan ısıyla su buharlaştırılır ve <b>buhar</b> türbini döndürür ✓.<br>III: Nükleer santralde atom çekirdeklerinin parçalanmasıyla açığa çıkan ısı suyu buharlaştırır; türbini yine <b>buhar</b> döndürür ✓.</p><p>II: Rüzgâr santralinde türbini rüzgârın hareket enerjisi döndürür ✗.<br>IV: Hidroelektrik santralde türbini barajdan akan suyun hareketi döndürür; su buhar hâline getirilmez ✗. "Su" kelimesini görüp IV'ü seçen öğrenci D'ye yönelir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir ilçe belediyesi, ilçenin elektrik ihtiyacının bir kısmını karşılamak için bir santral kurmayı planlıyor. Uzmanların ilçe hakkındaki raporu ve belediyenin ölçütleri tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Uzman raporu</th><th>Belediyenin ölçütleri</th></tr>
+<tr><td>• İlçede yüksek debili bir akarsu ve dar, derin bir vadi vardır.<br>• Yer altında sıcak su ve buhar kaynağı bulunmamaktadır.<br>• Rüzgâr yıl boyunca düzensiz ve zayıf esmektedir.</td><td>• Kaynak yenilenebilir olmalıdır.<br>• Santral yakıt gerektirmemelidir.<br>• Kaynak biriktirilebilmeli, ihtiyaç arttığında üretim artırılabilmelidir.</td></tr>
+</table>
+<p>Buna göre belediyenin ölçütlerine ve ilçenin koşullarına <b>en uygun</b> santral aşağıdakilerden hangisidir?</p>`,
+  c: ["Hidroelektrik santral", "Rüzgâr santrali", "Jeotermal santral", "Termik santral"],
+  a: "A",
+  s: `<p>Akarsu ve dar, derin vadi baraj kurmaya uygundur. Hidroelektrik santralde kaynak (su) <b>yenilenebilirdir</b>, yakıt gerekmez ve barajda <b>biriktirilen su</b> ihtiyaç arttığında daha fazla bırakılarak üretim artırılabilir ✓.</p><p>B: Rüzgâr düzensiz ve zayıftır; rüzgâr biriktirilemez ✗. C: İlçede yer altı sıcak su ve buhar kaynağı yoktur ✗. D: Termik santral yakıt kullanır ve yakıtı yenilenemez ✗.</p><p>Not: Barajın tarım alanlarını su altında bırakabilmesi gibi dezavantajlar ayrıca değerlendirilmelidir; ancak verilen ölçütleri karşılayan tek seçenek hidroelektrik santraldir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir rüzgâr santralinin altı aylık elektrik üretimi ve bölgedeki ortalama rüzgâr hızları grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 250" width="500" role="img" aria-label="Rüzgâr santralinin aylık üretimi ve rüzgâr hızları">
+<line x1="70" y1="20" x2="70" y2="200" stroke="#334155" stroke-width="2"/>
+<line x1="70" y1="200" x2="500" y2="200" stroke="#334155" stroke-width="2"/>
+<text x="10" y="14" font-size="11">Üretim (MWh)</text>
+<text x="62" y="204" font-size="11" text-anchor="end">0</text>
+<text x="62" y="164" font-size="11" text-anchor="end">300</text>
+<text x="62" y="124" font-size="11" text-anchor="end">600</text>
+<text x="62" y="84" font-size="11" text-anchor="end">900</text>
+<text x="62" y="44" font-size="11" text-anchor="end">1200</text>
+<line x1="70" y1="160" x2="500" y2="160" stroke="#e2e8f0"/><line x1="70" y1="120" x2="500" y2="120" stroke="#e2e8f0"/><line x1="70" y1="80" x2="500" y2="80" stroke="#e2e8f0"/><line x1="70" y1="40" x2="500" y2="40" stroke="#e2e8f0"/>
+<rect x="85" y="80" width="45" height="120" fill="#34d399"/>
+<rect x="155" y="100" width="45" height="100" fill="#34d399"/>
+<rect x="225" y="120" width="45" height="80" fill="#34d399"/>
+<rect x="295" y="140" width="45" height="60" fill="#34d399"/>
+<rect x="365" y="100" width="45" height="100" fill="#34d399"/>
+<rect x="435" y="60" width="45" height="140" fill="#34d399"/>
+<text x="107" y="74" font-size="11" text-anchor="middle">7 m/s</text>
+<text x="177" y="94" font-size="11" text-anchor="middle">6 m/s</text>
+<text x="247" y="114" font-size="11" text-anchor="middle">5 m/s</text>
+<text x="317" y="134" font-size="11" text-anchor="middle">4 m/s</text>
+<text x="387" y="94" font-size="11" text-anchor="middle">6 m/s</text>
+<text x="457" y="54" font-size="11" text-anchor="middle">8 m/s</text>
+<text x="107" y="217" font-size="11" text-anchor="middle">Ocak</text><text x="177" y="217" font-size="11" text-anchor="middle">Şubat</text><text x="247" y="217" font-size="11" text-anchor="middle">Mart</text><text x="317" y="217" font-size="11" text-anchor="middle">Nisan</text><text x="387" y="217" font-size="11" text-anchor="middle">Mayıs</text><text x="457" y="217" font-size="11" text-anchor="middle">Haziran</text>
+<text x="285" y="242" font-size="11" text-anchor="middle">(Sütunların üzerindeki değerler o ayın ortalama rüzgâr hızıdır.)</text>
+</svg></div>
+<p>Grafiğe ve rüzgâr santralleriyle ilgili bilgilere göre,</p>
+<p>I. Ortalama rüzgâr hızı arttıkça santralin aylık üretimi artmıştır.<br>
+II. Rüzgâr santralinin üretimi hava koşullarına bağlı olarak değişir.<br>
+III. Santral en fazla elektriği ocak ayında üretmiştir.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>Grafikte rüzgâr hızı 4 m/s iken üretim 450 MWh, 5 m/s iken 600, 6 m/s iken 750, 7 m/s iken 900, 8 m/s iken 1050 MWh'tir. Rüzgâr hızı arttıkça üretim artmıştır (I ✓).</p><p>Rüzgâr her zaman aynı hızda esmez; bu yüzden rüzgâr santrallerinin üretimi <b>hava koşullarına bağlıdır</b> ve kesintilidir (II ✓).</p><p>En yüksek sütun ocak değil <b>haziran</b> ayına aittir (1050 MWh) (III ✗). İlk sütunu en büyük sanan öğrenci III'ü doğru kabul eder. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, güç santralleriyle ilgili aşağıdaki tabloyu doldurmuştur.</p>
+<table class="rt">
+<tr><th>Santral</th><th>Kaynağı yenilenebilir mi?</th><th>Çalışırken sera gazı salar mı?</th><th>Elektrik üretiminde türbin kullanılır mı?</th></tr>
+<tr><td>Termik</td><td>Hayır</td><td>Evet</td><td>Evet</td></tr>
+<tr><td>Rüzgâr (RES)</td><td>Evet</td><td>Hayır</td><td>Evet</td></tr>
+<tr><td>Güneş paneli (GES)</td><td>Evet</td><td>Hayır</td><td>Hayır</td></tr>
+<tr><td>Nükleer</td><td>Evet</td><td>Hayır</td><td>Evet</td></tr>
+</table>
+<p>Öğrencinin tablosunda <b>hata yaptığı</b> satır hangi santrale aittir?</p>`,
+  c: ["Termik", "Rüzgâr (RES)", "Güneş paneli (GES)", "Nükleer"],
+  a: "D",
+  s: `<p>Termik: Yakıtı (kömür, petrol, doğal gaz) yenilenemez, sera gazı salar, buharla türbin döner → doğru.<br>RES: Rüzgâr yenilenebilir, sera gazı yok, rüzgâr türbini döndürür → doğru.<br>GES: Güneş paneli ışığı doğrudan elektriğe dönüştürür; türbin yoktur → doğru.</p><p>Nükleer: Çalışırken sera gazı salmaz ve türbini buhar döndürür; ancak yakıtı olan <b>uranyum tükenebilir</b>, yani kaynağı <b>yenilenebilir değildir</b>. "Sera gazı salmıyorsa yenilenebilirdir" yanılgısı bu hatayı doğurur. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir elektrikli otomobil, gücü <b>7 kW</b> olan bir şarj ünitesinde <b>6 saat</b> şarj ediliyor. Bu otomobil her <b>100 km</b>'de <b>15 kWh</b> elektrik enerjisi harcamaktadır.</p>
+<p>Şarj sırasında enerji kaybı olmadığı ve batarya başlangıçta boş olduğu kabul edilirse, otomobil bu şarjla en fazla kaç km yol gidebilir?</p>`,
+  c: ["420", "280", "105", "630"],
+  a: "B",
+  s: `<p>Şarjla bataryaya aktarılan enerji: 7 kW × 6 h = <b>42 kWh</b>.<br>100 km'de 15 kWh harcandığına göre: 42 ÷ 15 = 2,8 → 2,8 × 100 = <b>280 km</b>.</p><p>A (420), 42 kWh'i "100 km'de 10 kWh" gibi hesaplamaktan; C (105), 7 × 15 = 105 işlemi gibi ilgisiz bir çarpmadan; D (630), 42 × 15 işlemini yapıp birimleri karıştırmaktan gelir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Olay yeri inceleme ekipleri, bazı yüzeylerde gözle görülmeyen parmak izlerini belirginleştirmek için çok ince bir toz kullanır. Bir yöntemde toz, özel kıllı bir fırçanın içinde fırça kıllarıyla <b>sürtünerek elektriklenir</b>. Fırça yüzeyde hafifçe gezdirildiğinde yüklü toz parçacıkları, parmak izindeki elektriksel olarak nötr yağ ve ter kalıntılarına tutunur; böylece izin çizgileri görünür hâle gelir.</p></div>
+<p>Bu yöntemle ilgili,</p>
+<p>I. Toz parçacıkları sürtünme ile elektriklenmiştir.<br>
+II. Tozun iz kalıntılarına tutunması, yüklü cisimlerin nötr cisimleri çekmesiyle açıklanır.<br>
+III. Fırça kılları ile toz parçacıkları aynı cins yükle yüklenmiştir.</p>
+<p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Metinde tozun fırça kıllarıyla <b>sürtünerek</b> elektriklendiği belirtilmiştir (I ✓). İz kalıntıları nötrdür; yüklü toz parçacıklarının bu kalıntılara tutunması <b>yüklü cismin nötr cismi çekmesiyle</b> açıklanır (II ✓).</p><p>Sürtünme ile elektriklenmede birbirine sürtülen iki cisim <b>zıt cins</b> ve eşit miktarda yükle yüklenir; fırça kılları ile toz aynı cins yüklü olamaz (III ✗). Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Bir bisiklet fabrikasında metal bisiklet kadroları elektrostatik yöntemle boyanmaktadır. Boya tabancası, püskürttüğü boya damlacıklarını <b>pozitif (+)</b> yükle yükler; boyanacak metal kadro ise <b>negatif (−)</b> yükle yüklenir. Bu yöntemde boya damlacıklarının, kadronun tabancaya bakmayan arka yüzüne de dolanarak ulaştığı ve boyanın kadronun her yerinde yığılma olmadan eşit kalınlıkta dağıldığı gözlenir.</p></div>
+<p>Bu gözlemler,</p>
+<p>I. Zıt cins yüklü cisimler birbirini çeker.<br>
+II. Aynı cins yüklü cisimler birbirini iter.<br>
+III. Elektrik yükleri, iletken bir yolla toprağa aktarılabilir.</p>
+<p>yargılarından hangileriyle <b>açıklanır</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>(+) yüklü damlacıklar (−) yüklü kadro tarafından <b>çekilir</b>; bu çekim damlacıkları kadronun arka yüzüne bile yönlendirir (I ✓).</p><p>Damlacıkların hepsi (+) yüklü olduğu için birbirini <b>iter</b>; üst üste yığılmaz ve eşit kalınlıkta dağılır (II ✓).</p><p>III doğru bir bilgidir ama metinde yüklerin toprağa aktarılmasından söz edilmemektedir; gözlemleri açıklamaz (III ✗). Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Havalimanlarında uçağa yakıt verilirken yakıt hortumun içinde akarken sürtünme nedeniyle elektrik yükleri oluşabilir. Bu nedenle yakıt verilmeye başlanmadan önce yakıt tankerinin metal gövdesi bir iletken kabloyla uçağın metal gövdesine, başka bir iletken kabloyla da tanker yere gömülü topraklama noktasına bağlanır. Tankerin ve uçağın tekerlekleri lastiktir.</p></div>
+<div class="fig"><svg viewBox="0 0 520 170" width="500" role="img" aria-label="Uçak, yakıt tankeri ve topraklama kabloları">
+<rect x="30" y="40" width="250" height="40" rx="20" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+<polygon points="130,60 190,60 230,10 205,10" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
+<polygon points="45,45 30,15 55,15 75,45" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
+<text x="90" y="66" font-size="12" font-weight="bold">Uçak</text>
+<line x1="80" y1="80" x2="80" y2="118" stroke="#334155" stroke-width="3"/><circle cx="80" cy="124" r="8" fill="#111827"/>
+<line x1="230" y1="80" x2="230" y2="118" stroke="#334155" stroke-width="3"/><circle cx="230" cy="124" r="8" fill="#111827"/>
+<rect x="330" y="72" width="120" height="40" rx="10" fill="#cbd5e1" stroke="#334155" stroke-width="2"/><rect x="450" y="82" width="35" height="30" fill="#94a3b8" stroke="#334155" stroke-width="2"/>
+<text x="390" y="97" font-size="12" font-weight="bold" text-anchor="middle">Tanker</text>
+<circle cx="355" cy="120" r="9" fill="#111827"/><circle cx="465" cy="120" r="9" fill="#111827"/>
+<path d="M330 85 Q290 70 270 72" fill="none" stroke="#0f172a" stroke-width="5"/><text x="305" y="50" font-size="11" text-anchor="middle">Yakıt hortumu</text>
+<path d="M335 104 Q300 112 260 80" fill="none" stroke="#dc2626" stroke-width="2"/><text x="262" y="124" font-size="11" fill="#dc2626">1. kablo</text>
+<path d="M410 112 Q410 140 420 150" fill="none" stroke="#dc2626" stroke-width="2"/><text x="430" y="146" font-size="11" fill="#dc2626">2. kablo</text>
+<rect x="410" y="148" width="20" height="8" fill="#64748b"/>
+<line x1="10" y1="132" x2="510" y2="132" stroke="#92400e" stroke-width="3"/>
+<text x="150" y="152" font-size="11" text-anchor="middle">Apron zemini</text><text x="380" y="166" font-size="11" text-anchor="middle">Topraklama noktası</text>
+</svg></div>
+<p>Bu uygulamayla ilgili,</p>
+<p>I. Yakıt akarken uçakta ve tankerde biriken yükler toprağa aktarılır.<br>
+II. Kablo yalnızca uçak ile tanker arasında bağlansaydı ikisi de topraklanmış olurdu.<br>
+III. Bu önlem kıvılcım ve yangın riskini azaltır.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Uçak ve tanker birbirine, tanker de topraklama noktasına iletkenle bağlıdır; böylece iki gövde de toprağa kesintisiz bir iletken yolla bağlanmış olur ve biriken yükler toprağa aktarılır (I ✓). Yük birikmediği için yakıt buharını tutuşturabilecek kıvılcım oluşmaz (III ✓).</p><p>Kablo yalnızca uçak ile tanker arasında olsaydı iki gövde yükü kendi aralarında paylaşırdı; lastik tekerlekler yüzünden toprakla bağlantı olmadığından <b>topraklanmış sayılmazlardı</b> (II ✗). Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Yalıtkan iplerle asılı, yük durumları bilinmeyen hafif <b>X, Y ve Z</b> köpük toplarına; ipek kumaşa sürtülmüş <b>cam çubuk</b> ile yün kumaşa sürtülmüş <b>ebonit çubuk</b> ayrı ayrı yaklaştırılıyor. Gözlemler tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Top</th><th>Cam çubuk yaklaştırıldığında</th><th>Ebonit çubuk yaklaştırıldığında</th></tr>
+<tr><td><b>X</b></td><td>Çubuğa doğru hareket ediyor.</td><td>Çubuğa doğru hareket ediyor.</td></tr>
+<tr><td><b>Y</b></td><td>Çubuktan uzaklaşıyor.</td><td>Çubuğa doğru hareket ediyor.</td></tr>
+<tr><td><b>Z</b></td><td>Çubuğa doğru hareket ediyor.</td><td>Çubuktan uzaklaşıyor.</td></tr>
+</table>
+<p>Bu toplar ikişerli olarak birbirine yaklaştırıldığında hangi ikililer <b>birbirini çeker</b>?</p>`,
+  c: ["Yalnız Y–Z", "X–Y ve X–Z", "X–Y ve Y–Z", "X–Y, X–Z ve Y–Z"],
+  a: "D",
+  s: `<p>İpekle sürtülen cam <b>(+)</b>, yünle sürtülen ebonit <b>(−)</b> yüklenir.</p><p>Y, (+) cam tarafından itildiğine göre <b>Y (+)</b>'dır. Z, (−) ebonit tarafından itildiğine göre <b>Z (−)</b>'dir. X, zıt yüklü iki çubuğa da çekildiğine göre <b>X nötrdür</b>.</p><p>Y–Z: zıt yüklü → çeker. X–Y ve X–Z: yüklü cisim nötr cismi çeker → ikisi de çeker. Üç ikili de birbirini çeker.</p><p>A'yı seçen öğrenci nötr topun yüklü toplara çekilmeyeceğini sanır; B ve C ise Y–Z ya da X'in ikililerinden birini atlar. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Bir saç kurutma makinesinde elektrik motoruna bağlı bir fan ve bir rezistans (ısıtıcı tel) bulunur. Makinenin iki çalışma modu tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Mod</th><th>Çalışan parçalar</th><th>Makinenin toplam gücü (W)</th></tr>
+<tr><td>Soğuk hava</td><td>Yalnızca motor</td><td>400</td></tr>
+<tr><td>Sıcak hava</td><td>Motor ve rezistans</td><td>1800</td></tr>
+</table>
+<p>Motorun gücü iki modda da aynı olduğuna göre makine <b>sıcak hava</b> modunda <b>15 dakika</b> çalıştırıldığında <b>rezistansta</b> ısı enerjisine dönüşen elektrik enerjisi kaç kWh'tir? (1 kW = 1000 W)</p>`,
+  c: ["0,45", "0,1", "0,35", "1,4"],
+  a: "C",
+  s: `<p>Sıcak modda motor yine 400 W çektiğine göre rezistansın gücü: 1800 − 400 = <b>1400 W = 1,4 kW</b>.<br>15 dakika = 0,25 saat.<br>Rezistansta ısıya dönüşen enerji: 1,4 × 0,25 = <b>0,35 kWh</b>.</p><p>A (0,45), makinenin toplam enerjisidir (1,8 × 0,25); motordaki hareket enerjisini de katar. B (0,1), yalnız motorun enerjisidir. D (1,4), süreyi 1 saat almaktan gelir. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Elektriksel olarak nötr bir plastik pipet, nötr bir kâğıt peçeteye sürtülüyor ve yalıtkan bir iple asılıyor. Peçete asılı pipete yaklaştırıldığında pipetin peçeteye doğru hareket ettiği gözleniyor. Daha sonra aynı şekilde peçeteye sürtülmüş ikinci bir plastik pipet asılı pipete yaklaştırıldığında asılı pipetin uzaklaştığı gözleniyor.</p></div>
+<p>Buna göre,</p>
+<p>I. Asılı pipet ile peçete zıt cins yükle yüklüdür.<br>
+II. Asılı pipet negatif (−) yüklüdür.<br>
+III. Sürtünme sırasında pipetin aldığı ya da verdiği elektron sayısı, peçetenin verdiği ya da aldığı elektron sayısına eşittir.</p>
+<p>yargılarından hangileri <b>kesinlikle doğrudur</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Birbirine sürtülen nötr cisimler <b>zıt cins</b> yükle yüklenir; ayrıca peçete ile pipet birbirini çekmektedir (I ✓). Sürtünmede bir cismin kaybettiği elektron sayısı diğerinin kazandığı elektron sayısına <b>eşittir</b>; bu yüzden cisimler eşit miktarda yüklenir (III ✓).</p><p>İki pipet birbirini ittiği için aynı cins yüklüdür; ancak bu yükün (+) mı (−) mi olduğunu gösteren hiçbir bilgi verilmemiştir. II doğru olabilir ama <b>kesin değildir</b> (II ✗). Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir okulda "Enerjini Boşa Harcama" kampanyası başlatılıyor: Boş sınıflarda ışıklar kapatılıyor, akıllı tahtalar teneffüste bekleme moduna değil kapalı konuma alınıyor. Okulun kampanyadan önceki yıl ve kampanyanın yapıldığı yıldaki aylık elektrik tüketimleri grafikte verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 520 250" width="500" role="img" aria-label="Okulun iki yıllık aylık elektrik tüketimi">
+<line x1="70" y1="20" x2="70" y2="200" stroke="#334155" stroke-width="2"/>
+<line x1="70" y1="200" x2="420" y2="200" stroke="#334155" stroke-width="2"/>
+<text x="10" y="14" font-size="11">Tüketim (kWh)</text>
+<text x="62" y="204" font-size="11" text-anchor="end">0</text>
+<text x="62" y="164" font-size="11" text-anchor="end">1000</text>
+<text x="62" y="124" font-size="11" text-anchor="end">2000</text>
+<text x="62" y="84" font-size="11" text-anchor="end">3000</text>
+<text x="62" y="44" font-size="11" text-anchor="end">4000</text>
+<line x1="70" y1="160" x2="420" y2="160" stroke="#e2e8f0"/><line x1="70" y1="120" x2="420" y2="120" stroke="#e2e8f0"/><line x1="70" y1="80" x2="420" y2="80" stroke="#e2e8f0"/><line x1="70" y1="40" x2="420" y2="40" stroke="#e2e8f0"/>
+<rect x="90" y="48" width="40" height="152" fill="#94a3b8"/><rect x="132" y="68" width="40" height="132" fill="#22c55e"/>
+<text x="110" y="44" font-size="11" text-anchor="middle">3800</text><text x="152" y="64" font-size="11" text-anchor="middle">3300</text>
+<rect x="200" y="40" width="40" height="160" fill="#94a3b8"/><rect x="242" y="64" width="40" height="136" fill="#22c55e"/>
+<text x="220" y="36" font-size="11" text-anchor="middle">4000</text><text x="262" y="60" font-size="11" text-anchor="middle">3400</text>
+<rect x="310" y="20" width="40" height="180" fill="#94a3b8"/><rect x="352" y="40" width="40" height="160" fill="#22c55e"/>
+<text x="330" y="16" font-size="11" text-anchor="middle">4500</text><text x="372" y="36" font-size="11" text-anchor="middle">4000</text>
+<text x="131" y="217" font-size="12" font-weight="bold" text-anchor="middle">Ekim</text>
+<text x="241" y="217" font-size="12" font-weight="bold" text-anchor="middle">Kasım</text>
+<text x="351" y="217" font-size="12" font-weight="bold" text-anchor="middle">Aralık</text>
+<rect x="432" y="60" width="14" height="14" fill="#94a3b8"/><text x="450" y="71" font-size="11">Önceki yıl</text>
+<rect x="432" y="85" width="14" height="14" fill="#22c55e"/><text x="450" y="96" font-size="11">Kampanya</text><text x="450" y="109" font-size="11">yılı</text>
+</svg></div>
+<p>1 kWh elektriğin fiyatı <b>3 TL</b> olduğuna göre okulun <b>kasım ayındaki</b> tüketiminin önceki yılın kasım ayına göre yüzde kaç azaldığı ve okulun kasım ayında kaç TL tasarruf ettiği aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["%15 – 600 TL", "%85 – 1800 TL", "%12,5 – 1500 TL", "%15 – 1800 TL"],
+  a: "D",
+  s: `<p>Kasım ayında önceki yıl 4000 kWh, kampanya yılı 3400 kWh tüketilmiştir.<br>Azalma: 4000 − 3400 = <b>600 kWh</b>.<br>Yüzde azalma: 600 ÷ 4000 × 100 = <b>%15</b>.<br>Tasarruf: 600 × 3 = <b>1800 TL</b>.</p><p>A, tasarruf edilen enerjiyi (600 kWh) TL'ye çevirmeyi unutur. B, kampanya yılı tüketiminin önceki yıla oranını (%85) azalma sanar. C, kasım yerine aralık ayının verilerini kullanır ve azalmayı (500 kWh) kampanya yılı tüketimine (4000 kWh) böler (500 ÷ 4000 = %12,5; 500 × 3 = 1500 TL). Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box"><p>Bir bilim merkezinde Deniz, <b>yalıtkan</b> bir platformun üzerine çıkıyor ve elini yüklü büyük bir metal kürenin üzerine koyuyor. Bir süre sonra Deniz'in saç tellerinin dikildiği ve birbirinden uzaklaştığı görülüyor. Görevli, Deniz'e elini küreden çekmesini ve platformdan inip toprakla bağlantılı metal zemine basmasını söylüyor. Deniz zemine basınca saçları eski hâline dönüyor.</p></div>
+<p>Bu etkinlikle ilgili,</p>
+<p>I. Deniz'in saç telleri aynı cins yükle yüklendiği için birbirini itmiştir.<br>
+II. Deniz, küreye dokunarak küreyle aynı cins yükle yüklenmiştir.<br>
+III. Platform iletken bir maddeden yapılsaydı ve toprakla bağlantılı olsaydı Deniz'in saçları yine dikilirdi.</p>
+<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>Deniz yüklü küreye dokununca <b>dokunma ile elektriklenir</b> ve küreyle aynı cins yükle yüklenir (II ✓). Bu yük vücudunun her yerine, saç tellerine de yayılır; aynı cins yüklü saç telleri birbirini <b>iter</b> ve dikilir (I ✓). Metal zemine basınca yükü toprağa aktarılır (topraklanır), saçları iner.</p><p>Platform iletken ve toprağa bağlı olsaydı küreden Deniz'e geçen yük vücudunda birikmeden toprağa akardı; saçlar dikilmezdi (III ✗). Platformun yalıtkan olmasının nedenini atlayan öğrenci III'ü doğru sanar. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir fen kulübünde yalıtkan iplerle asılı, şişirilmiş <b>R, S, T, U ve V</b> balonları (bazıları daha önce kumaşlara sürtülmüştür) ikişer ikişer, birbirine <b>dokundurulmadan</b> yaklaştırılıyor. Her denemeden sonra balonlar eski yerlerine götürülüyor ve denemeler sırasında balonların yük durumu değişmiyor. Gözlemler tabloda verilmiştir.</p><table class="rt"><tr><th>Deneme</th><th>Yaklaştırılan balonlar</th><th>Gözlem</th></tr><tr><td>1</td><td>R – S</td><td>Birbirini itiyor.</td></tr><tr><td>2</td><td>S – T</td><td>Birbirini çekiyor.</td></tr><tr><td>3</td><td>T – U</td><td>Birbirini itiyor.</td></tr><tr><td>4</td><td>U – V</td><td>Birbirini çekiyor.</td></tr><tr><td>5</td><td>R – V</td><td>Birbirini çekiyor.</td></tr></table><p>Buna göre;</p><p>I. R ile U zıt cins elektrik yüküyle yüklüdür.<br>II. V balonu elektriksel olarak nötrdür.<br>III. S balonu pozitif (+) yüklüdür.</p><p>yargılarından hangileri <b>kesinlikle</b> doğrudur?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p>Kesin bilgi veren gözlem <b>itme</b>dir: 1. denemeden R ve S yüklü ve aynı cins, 3. denemeden T ve U yüklü ve aynı cins yüklüdür. 2. denemede S ile T çekiyor; ikisinin de yüklü olduğunu bildiğimiz için bu çekme ancak <b>zıt</b> yüklerle olur. Böylece R = S ve T = U, ama S ile T zıt → <b>R ile U zıt cins</b> yüklüdür (I ✓).</p><p>V: U ile çekiştiği için V, U’ya zıt (yani R ile aynı cins) ya da nötr olabilir. R ile de çekiştiğine göre V, R ile aynı cins olamaz (olsaydı iterdi). Geriye tek ihtimal kalır: <b>V nötrdür</b> (II ✓). Zıt yüklü R ve U’nun ikisine de çekilen balon nötrdür.</p><p>III ✗: Gözlemler yalnızca yüklerin aynı mı zıt mı olduğunu gösterir; S’nin (+) mı (−) mi olduğu bilinemez. “Yalnız I” diyen öğrenci V için “çekiyorsa zıt yüklüdür” yanılgısıyla iki çekmeyi birleştirmemiştir; III’ü ekleyen öğrenci ise cinsi işaret sanmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p>Kurutma makinesinden yeni çıkan çorapları ayıran Zeynep, bazı çorapların birbirine yapıştığını fark ediyor. Çorapları yalıtkan bir askıya ayrı ayrı asıp ikişer ikişer birbirine yaklaştırıyor ve gözlemlerini tabloya yazıyor.</p></div><table class="rt"><tr><th>Yaklaştırılan çoraplar</th><th>Gözlem</th></tr><tr><td>A – B</td><td>Birbirine doğru hareket ediyor.</td></tr><tr><td>A – C</td><td>Birbirinden uzaklaşıyor.</td></tr><tr><td>B – C</td><td>Birbirine doğru hareket ediyor.</td></tr></table><p>Buna göre;</p><p>I. A ve C çorapları aynı cins elektrik yüküyle yüklüdür.<br>II. B çorabı elektriksel olarak nötrdür.<br>III. Çorapların yüklenmesi, sürtünme ile elektriklenmeye bir örnektir.</p><p>yargılarından hangileri <b>kesinlikle</b> doğrudur?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: A ile C birbirini itiyor; itme yalnızca iki yüklü ve aynı cins cisim arasında olur. III ✓: A ve C kesinlikle yüklüdür. Çoraplar başka bir yolla yüklenmemiştir; kurutma makinesinin dönen tamburunda birbirine ve tambura sürtünürler, yani yükler sürtünme ile elektriklenmeyle oluşmuştur.</p><p>II ✗: B, aynı cins yüklü A ve C’nin ikisine de çekiliyor. Bu durum B’nin nötr olmasıyla da, A ve C’ye zıt yüklü olmasıyla da açıklanır; iki ihtimal de mümkündür. “İki cisme de çekiliyorsa nötrdür” kuralı yalnızca bu iki cisim <b>zıt</b> yüklü olduğunda geçerlidir; burada A ile C aynı cins yüklüdür. II’yi seçen öğrenci kuralı koşulsuz uygulamıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Geri dönüşüm tesislerinde öğütülmüş <b>PVC</b> ve <b>PET</b> plastik parçaları elektriksel olarak ayrılabilir. Dönen tamburda yalnızca PVC ve PET parçaları birbirine sürtünerek elektriklenir; sonra parçalar zıt yüklü iki levhanın arasından düşürülür. Bir denemede <b>PVC parçalarının 1. kaba</b>, <b>PET parçalarının 3. kaba</b> doğru saparak düştüğü; sürtünmeye yeterince katılmamış bazı parçaların ise hiçbir levhaya sapmadan <b>2. kaba</b> düştüğü gözleniyor.</p><div class="fig"><svg viewBox="0 0 420 262" width="420" role="img" aria-label="Tamburdan düşen plastik parçalar, solda pozitif sağda negatif yüklü levha ve altta üç kap" font-family="sans-serif"><rect x="160" y="8" width="100" height="34" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/><text x="210" y="23" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">Tambur</text><text x="210" y="37" font-size="11" text-anchor="middle" fill="#1e293b">(PVC + PET)</text><polygon points="190,42 230,42 215,62 205,62" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/><rect x="110" y="70" width="14" height="130" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="117.0" y="95.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="117.0" y="117.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="117.0" y="139.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="117.0" y="161.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="117.0" y="183.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><rect x="296" y="70" width="14" height="130" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="303.0" y="95.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="303.0" y="117.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="303.0" y="139.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="303.0" y="161.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="303.0" y="183.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="117" y="214" font-size="11" text-anchor="middle" fill="#1e293b">Levha 1</text><text x="303" y="214" font-size="11" text-anchor="middle" fill="#1e293b">Levha 2</text><line x1="210" y1="64" x2="150" y2="222" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/><line x1="210" y1="64" x2="210" y2="222" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/><line x1="210" y1="64" x2="270" y2="222" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/><rect x="125" y="224" width="50" height="30" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/><rect x="185" y="224" width="50" height="30" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/><rect x="245" y="224" width="50" height="30" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/><text x="150" y="244" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">1. kap</text><text x="210" y="244" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">2. kap</text><text x="270" y="244" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">3. kap</text></svg></div><p>Buna göre;</p><p>I. PVC parçaları sürtünme sırasında PET parçalarından elektron almıştır.<br>II. PET parçaları sürtünme sırasında proton kazanarak pozitif (+) yüklenmiştir.<br>III. Levhaların yük işaretleri yer değiştirilirse PVC parçaları 3. kaba doğru saparak düşer.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>PVC parçaları (+) yüklü Levha 1’e doğru sapıyor; nötr parçalar iki levhaya da eşit çekildiği için 2. kaba düştüğüne göre sapan PVC <b>yüklüdür</b> ve Levha 1 ile zıt, yani <b>(−)</b> yüklüdür. Sürtünen nötr cisimler zıt cins ve eşit miktarda yüklenir: PVC elektron almış (I ✓), PET elektron vermiş ve (+) yüklenmiştir; bu da PET’in (−) Levha 2’ye sapmasıyla uyumludur.</p><p>II ✗: Elektriklenmede yalnızca elektronlar yer değiştirir; PET proton kazanmamış, <b>elektron kaybetmiştir</b> (proton yanılgısı). III ✓: Levha işaretleri değişince (−) PVC artık sağdaki (+) levhaya çekilir ve 3. kaba düşer. “Yalnız I” diyen öğrenci III’ü düzeneğe bağlı sabit bir durum sanmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan iple asılı <b>yüklü</b> bir K küresine <b>P, R ve S</b> çubukları ayrı ayrı, aynı uzaklığa kadar dokundurulmadan yaklaştırılıyor. Gözlemler şekilde gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 540 162" width="540" role="img" aria-label="Asılı K küresine P, R ve S çubuklarının ayrı ayrı yaklaştırılması; P’de K uzaklaşıyor, R ve S’de yaklaşıyor" font-family="sans-serif"><line x1="40" y1="14" x2="120" y2="14" stroke="#475569" stroke-width="3"/><line x1="80" y1="14" x2="80" y2="96" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="80" y1="14" x2="66" y2="96" stroke="#64748b" stroke-width="1.5"/><circle cx="66" cy="104" r="10" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="66" y="108" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">K</text><rect x="114" y="98" width="52" height="12" rx="3" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/><text x="140" y="130" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">P</text><text x="80" y="152" font-size="11" text-anchor="middle" fill="#334155">K çubuktan uzaklaşıyor</text><line x1="210" y1="14" x2="290" y2="14" stroke="#475569" stroke-width="3"/><line x1="250" y1="14" x2="250" y2="96" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="250" y1="14" x2="264" y2="96" stroke="#64748b" stroke-width="1.5"/><circle cx="264" cy="104" r="10" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="264" y="108" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">K</text><rect x="284" y="98" width="52" height="12" rx="3" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/><text x="310" y="130" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">R</text><text x="250" y="152" font-size="11" text-anchor="middle" fill="#334155">K çubuğa yaklaşıyor</text><line x1="380" y1="14" x2="460" y2="14" stroke="#475569" stroke-width="3"/><line x1="420" y1="14" x2="420" y2="96" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><line x1="420" y1="14" x2="434" y2="96" stroke="#64748b" stroke-width="1.5"/><circle cx="434" cy="104" r="10" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="434" y="108" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">K</text><rect x="454" y="98" width="52" height="12" rx="3" fill="#e9d5ff" stroke="#7e22ce" stroke-width="1.5"/><text x="480" y="130" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">S</text><text x="420" y="152" font-size="11" text-anchor="middle" fill="#334155">K çubuğa yaklaşıyor</text></svg></div><p>Buna göre;</p><p>I. P çubuğu ile K küresi aynı cins elektrik yüküyle yüklüdür.<br>II. P ve R çubukları birbirine yaklaştırılırsa birbirini çeker.<br>III. R ve S çubukları zıt cins elektrik yüküyle yüklüdür.</p><p>yargılarından hangileri <b>kesinlikle</b> doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>I ✓: P ile K birbirini itiyor; itme yalnızca iki yüklü ve aynı cins cisim arasında olur.</p><p>II ✓: K yüklü olduğu için R’nin K’ye çekilmesinin iki açıklaması vardır: R, K ile zıt yüklüdür ya da R nötrdür. P, K ile aynı cins yüklü olduğundan R, P’ye göre de ya zıt yüklüdür ya da nötrdür; <b>iki durumda da</b> P ile R birbirini çeker. Bu yüzden yükü bilinmeyen R için bile sonuç kesindir.</p><p>III ✗: R ve S’nin her biri “K’ye zıt ya da nötr”dür. İkisi de K’ye zıtsa aynı cins olurlar; biri nötrse zıt cins olamazlar. Yani R ile S’nin zıt yüklü olması mümkün bile değildir. “Çekiyorsa zıttır” yanılgısı III’ü seçtirir; II’yi eleyen öğrenci ise R’nin nötr olma ihtimalinde de çekme olacağını görememiştir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan ayaklar üzerindeki metal <b>K</b> levhası pozitif (+), metal <b>L</b> levhası negatif (−) yükle yüklenmiştir; levhalar daha sonra hiçbir kaynağa bağlı değildir. Levhaların arasına, K’ye daha yakın olacak şekilde, yüzeyi metal kaplı ve elektriksel olarak <b>nötr</b> hafif bir top yalıtkan iple asılıyor. Topun önce K’ye gidip ona çarptığı, ardından L’ye gidip çarptığı ve bir süre iki levha arasında gidip geldiği gözleniyor.</p><div class="fig"><svg viewBox="0 0 420 206" width="420" role="img" aria-label="Pozitif K levhası ile negatif L levhası arasında yalıtkan iple asılı top" font-family="sans-serif"><line x1="150" y1="12" x2="270" y2="12" stroke="#475569" stroke-width="3"/><text x="210" y="30" font-size="11" text-anchor="middle" fill="#64748b">yalıtkan ip</text><rect x="110" y="40" width="16" height="140" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="118.0" y="64.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="118.0" y="84.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="118.0" y="104.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="118.0" y="124.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="118.0" y="144.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="118.0" y="164.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><rect x="294" y="40" width="16" height="140" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/><text x="302.0" y="64.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="302.0" y="84.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="302.0" y="104.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="302.0" y="124.5" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="302.0" y="144.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="302.0" y="164.6" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><line x1="190" y1="12" x2="172" y2="110" stroke="#64748b" stroke-width="1.5"/><circle cx="172" cy="118" r="11" fill="#e5e7eb" stroke="#475569" stroke-width="2"/><text x="172" y="148" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Top</text><text x="118" y="198" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">K levhası</text><text x="302" y="198" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">L levhası</text><rect x="98" y="182" width="40" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><rect x="282" y="182" width="40" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/></svg></div><p>Buna göre;</p><p>I. Top, K’ye çarptıktan sonra L’ye doğru giderken pozitif (+) yüklüdür.<br>II. Top L’ye çarptığında L’den topa elektron geçer.<br>III. Top levhalar arasında gidip geldikçe levhaların yük miktarları azalır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Nötr top, yüklü K levhasına çekilir (yüklü cisim nötr cismi çeker). K’ye dokununca <b>dokunma ile</b> K ile aynı cins, yani (+) yüklenir; aynı cins yüklü K tarafından itilir ve zıt yüklü L’ye çekilir (I ✓).</p><p>(+) yüklü top (−) yüklü L’ye dokununca L’deki fazla elektronların bir kısmı topa geçer; top önce nötrleşir, sonra (−) yüklenir (II ✓). Top (−) iken K’ye dokunduğunda bu kez topun elektronları K’ye geçer.</p><p>III ✓: Top her gidişte K’ye elektron götürür (K’nin (+) yükü azalır), L’den elektron alır (L’nin (−) yükü azalır). Levhalar bir kaynağa bağlı olmadığı için hareket bir süre sonra durur. “I ve II” diyen öğrenci topun yük taşıdığını fark etmemiştir; I’i eleyen öğrenci topun ilk çekilmesini “top (−) yüklüydü” diye yorumlamıştır, oysa top başlangıçta nötrdür. Protonlar hiçbir adımda yer değiştirmez. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan iplerle asılı hafif <b>X, Y, Z, W ve V</b> kürelerinden X’in pozitif (+), Y’nin negatif (−) yüklü, Z’nin ise elektriksel olarak nötr olduğu biliniyor. W ve V’nin yük durumları bilinmiyor. Küreler ikişer ikişer, birbirine dokundurulmadan yaklaştırıldığında tablodaki gözlemler yapılıyor.</p><table class="rt"><tr><th>Küre</th><th>X</th><th>Y</th><th>Z</th><th>W</th><th>V</th></tr><tr><td>Yük durumu</td><td>(+)</td><td>(−)</td><td>Nötr</td><td>?</td><td>?</td></tr></table><table class="rt"><tr><th>Yaklaştırılan küreler</th><th>Gözlem</th></tr><tr><td>W – X</td><td>Birbirini itiyor.</td></tr><tr><td>V – X</td><td>Birbirini çekiyor.</td></tr><tr><td>V – Y</td><td>Birbirini çekiyor.</td></tr></table><p>Buna göre aşağıdaki gözlemlerden hangisinin yapılması <b>mümkün değildir</b>?</p>`,
+  c: ["V’nin W’ye doğru çekilmesi", "V ile Z’nin birbirini çekmesi", "W ile Y’nin birbirini çekmesi", "Z’nin W’ye doğru çekilmesi"],
+  a: "B",
+  s: `<p>W, (+) X’i ittiğine göre W <b>(+)</b> yüklüdür. V, zıt yüklü X ve Y’nin ikisine de çekildiğine göre V <b>nötrdür</b> (yüklü olsaydı birini iterdi). Z de nötrdür.</p><p>A: Nötr V, yüklü W’ye çekilir → mümkün. C: (+) W ile (−) Y zıt yüklüdür, çekişirler → mümkün. D: Nötr Z, yüklü W’ye çekilir → mümkün. B ✓: V ve Z’nin ikisi de nötrdür; iki nötr cisim arasında itme de çekme de gözlenmez.</p><p>B’yi mümkün sanan öğrenci “nötr cisimler her cisme çekilir” diye düşünmüştür; oysa çekme için en az bir cismin yüklü olması gerekir. C’yi işaretleyen öğrenci W’nin yükünü bulmadan karar vermiştir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Negatif (−) yüklü bir elektroskobun yaprakları açıktır. Elektroskobun topuzuna yalıtkan saplı, iletken <b>K, L ve M</b> küreleri sırasıyla dokundurulup ayrılıyor ve şu değişimler gözleniyor:</p><p>• K dokundurulunca yaprakların açıklığı <b>artıyor</b>.<br>• Ardından L dokundurulunca yapraklar <b>önce kapanıp sonra yeniden açılıyor</b>.<br>• En son M dokundurulunca yapraklar <b>biraz kapanıyor</b>.</p><p>Bir öğrenci kürelerin elektroskoba dokundurulmadan önceki yüklerini aşağıdaki gibi modelliyor.</p><div class="fig"><svg viewBox="0 0 420 108" width="420" role="img" aria-label="K: 5 artı 3 eksi; L: 2 artı 6 eksi; M: 4 artı 4 eksi yük modelleri" font-family="sans-serif"><circle cx="80" cy="62" r="34" fill="#ffffff" stroke="#334155" stroke-width="2"/><text x="60.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="73.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="86.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="99.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="60.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="73.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="86.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="99.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="80" y="18" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">K</text><circle cx="210" cy="62" r="34" fill="#ffffff" stroke="#334155" stroke-width="2"/><text x="190.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="203.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="216.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="229.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="190.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="203.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="216.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="229.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="210" y="18" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">L</text><circle cx="340" cy="62" r="34" fill="#ffffff" stroke="#334155" stroke-width="2"/><text x="320.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="333.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="346.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="359.5" y="59.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="320.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="333.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="346.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="359.5" y="74.0" font-size="13" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="340" y="18" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">M</text></svg></div><p>Bu öğrenci hangi kürelerin yük durumunu <b>doğru göstermiş olabilir</b>?</p>`,
+  c: ["Yalnız M", "K ve L", "L ve M", "K, L ve M"],
+  a: "A",
+  s: `<p>Modellerde K net (+) (5 (+), 3 (−)), L net (−) (2 (+), 6 (−)), M nötrdür (4 (+), 4 (−)).</p><p>K ✗: Elektroskop (−) yüklüyken açıklığın artması için K’nin de <b>(−)</b> yüklü olması gerekir; (+) yüklü K elektroskobun (−) yükünü azaltır, yapraklar kapanmaya başlar. L ✗: K’den sonra elektroskop hâlâ (−) yüklüdür. Yaprakların önce kapanıp sonra açılması, elektroskobun önce nötrleşip sonra <b>zıt</b> cins yükle yüklenmesi demektir; bunun için L’nin (+) ve fazla yüklü olması gerekir. (−) L ile böyle bir değişim olmaz. M ✓: Yüklü elektroskoba nötr bir iletken dokununca yük ikisi arasında paylaşılır, elektroskobun yükü azalır ve yapraklar biraz kapanır.</p><p>K’yi doğru sanan öğrenci “yaprak açıldıysa (+)” yanılgısına; L’yi doğru sanan öğrenci “kapanıp açılma aynı cins yükle olur” yanılgısına düşmüştür. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan saplı iletken X küresi, yalıtkan iple asılı ve yük durumu bilinmeyen iletken Y küresine dokunduruluyor. Yük alışverişi tamamlandıktan sonra X geri çekilirken <b>Y’nin X’ten uzaklaştığı</b> gözleniyor. X küresinin dokunmadan önce yüklü olduğu biliniyor.</p><div class="fig"><svg viewBox="0 0 500 160" width="500" role="img" aria-label="X küresi asılı Y küresine dokunuyor; ayrılırken Y, X’ten uzaklaşıyor" font-family="sans-serif"><line x1="20" y1="14" x2="120" y2="14" stroke="#475569" stroke-width="3"/><text x="120" y="150" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">1. Dokunma</text><line x1="70" y1="14" x2="70" y2="92" stroke="#64748b" stroke-width="1.5"/><circle cx="70" cy="100" r="12" fill="#e5e7eb" stroke="#475569" stroke-width="2"/><text x="70" y="104" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Y</text><circle cx="96" cy="100" r="12" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="96" y="104" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">X</text><rect x="108" y="96" width="70" height="8" rx="2" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><text x="146" y="124" font-size="11" text-anchor="middle" fill="#57534e">yalıtkan sap</text><line x1="270" y1="14" x2="370" y2="14" stroke="#475569" stroke-width="3"/><text x="370" y="150" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">2. Ayrılma</text><line x1="320" y1="14" x2="304" y2="92" stroke="#64748b" stroke-width="1.5"/><circle cx="304" cy="100" r="12" fill="#e5e7eb" stroke="#475569" stroke-width="2"/><text x="304" y="104" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Y</text><circle cx="386" cy="100" r="12" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="386" y="104" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">X</text><rect x="398" y="96" width="70" height="8" rx="2" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><text x="436" y="124" font-size="11" text-anchor="middle" fill="#57534e">yalıtkan sap</text><line x1="302" y1="76" x2="278" y2="76" stroke="#dc2626" stroke-width="2"/><polygon points="278.0,76.0 285.4,72.9 285.4,79.1" fill="#dc2626"/><line x1="390" y1="76" x2="412" y2="76" stroke="#334155" stroke-width="2"/><polygon points="412.0,76.0 404.6,79.1 404.6,72.9" fill="#334155"/></svg></div><p>Buna göre dokunmadan önceki yük durumlarıyla ilgili;</p><p>I. Y küresi elektriksel olarak nötrdü.<br>II. X ve Y küreleri zıt cins elektrik yüküyle yüklüydü.<br>III. X ve Y küreleri aynı cins elektrik yüküyle yüklüydü.</p><p>yargılarından hangileri <b>doğru olabilir</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>Dokunmadan sonra iki küre birbirini itiyor; demek ki dokunmadan sonra ikisi de yüklü ve <b>aynı cins</b> yüklüdür. Dokunmada toplam yük iki küreye paylaşılır ve küreler toplam yükün işaretini alır. Toplam yük sıfır olmadığı sürece itme gözlenir.</p><p>I ✓: X yüklü, Y nötrse toplam yük X’in işaretindedir; iki küre de X ile aynı cins yüklenir ve iter. II ✓: X ve Y zıt yüklü ama yük miktarları farklıysa toplam yük sıfır olmaz; iki küre de yükü fazla olanın cinsiyle yüklenir ve iter (2024 LGS’deki balon sorusunun mantığı). III ✓: Aynı cins yüklü iki küre dokununca yine aynı cins yüklü kalır ve iter.</p><p>“Yalnız I” diyen öğrenci itmeyi yalnızca “nötr cisim yük aldı” diye açıklamış; II’yi eleyen öğrenci dokunmada zıt yüklerin her zaman nötrleştiğini sanmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan ayaklar üzerindeki özdeş, iletken <b>X, Y ve Z</b> kürelerinin başlangıçtaki yükleri şekilde verilmiştir. Küreler yalıtkan eldivenle şu sırayla birbirine dokundurulup ayrılıyor: <b>1.</b> X ile Y, <b>2.</b> Y ile Z, <b>3.</b> X ile Z.</p><div class="fig"><svg viewBox="0 0 400 122" width="400" role="img" aria-label="X +12q, Y −4q, Z nötr özdeş küreler" font-family="sans-serif"><circle cx="70" cy="50" r="28" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="70" y="46" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">X</text><text x="70" y="64" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+12q</text><circle cx="200" cy="50" r="28" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="200" y="46" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">Y</text><text x="200" y="64" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−4q</text><circle cx="330" cy="50" r="28" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="330" y="46" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">Z</text><text x="330" y="64" font-size="12" text-anchor="middle" font-weight="bold" fill="#475569">nötr</text><line x1="70" y1="78" x2="70" y2="108" stroke="#78716c" stroke-width="4"/><rect x="52" y="108" width="36" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><line x1="200" y1="78" x2="200" y2="108" stroke="#78716c" stroke-width="4"/><rect x="182" y="108" width="36" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><line x1="330" y1="78" x2="330" y2="108" stroke="#78716c" stroke-width="4"/><rect x="312" y="108" width="36" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/></svg></div><p>Buna göre;</p><p>I. 1. dokunmada Y’den X’e 8q’luk yüke karşılık gelen elektron geçmiştir.<br>II. Son durumda küreler ikişer ikişer yaklaştırılırsa her ikili birbirini iter.<br>III. 3. dokunmada X’ten Z’ye elektron geçmiştir.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve III", "I ve II"],
+  a: "D",
+  s: `<p>Özdeş iletken küreler dokununca toplam yük eşit paylaşılır. 1. dokunma: (+12q) + (−4q) = +8q → X = Y = +4q. Y, −4q’dan +4q’ya çıktığına göre <b>8q’luk elektron kaybetmiş</b>, bu elektronlar X’e geçmiştir (I ✓). 2. dokunma: (+4q) + 0 = +4q → Y = Z = +2q. 3. dokunma: (+4q) + (+2q) = +6q → X = Z = +3q. Son yükler: X = +3q, Y = +2q, Z = +3q. Üçü de (+) yüklü olduğundan her ikili birbirini iter (II ✓).</p><p>III ✗: 3. dokunmada X’in yükü +4q’dan +3q’ya <b>azalmıştır</b>; (+) yükün azalması elektron kazanmak demektir. Elektronlar <b>Z’den X’e</b> geçmiştir. “Yükü büyük olan küreden küçüğe elektron akar” ya da “(+) yük X’ten Z’ye geçti” diye düşünen öğrenci III’ü doğru sayar; protonlar yer değiştirmez. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan ayak üzerindeki nötr bir metal küreye, pozitif (+) yüklü bir çubuk soldan <b>dokundurulmadan</b> yaklaştırılıyor. Kürenin çubuk yaklaştırılmadan önce 6 (+) ve 6 (−) yükü olduğu kabul ediliyor. Dört öğrenci, çubuk yakında tutulurken kürenin yük dağılımını aşağıdaki gibi modelliyor (çubuk her modelde kürenin solundadır).</p><div class="fig"><svg viewBox="0 0 520 138" width="520" role="img" aria-label="Pozitif çubuk solda; model I sol yarıda 6 artı sağda 6 eksi; II solda 6 eksi sağda 6 artı; III solda 8 eksi sağda 6 artı; IV solda 6 eksi sağda 8 artı" font-family="sans-serif"><rect x="4" y="62" width="44" height="16" rx="3" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/><text x="15.0" y="73.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="26.0" y="73.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="37.0" y="73.8" font-size="11" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="26" y="100" font-size="11" text-anchor="middle" fill="#1e293b">çubuk</text><circle cx="110" cy="70" r="40" fill="#ffffff" stroke="#334155" stroke-width="2"/><line x1="110" y1="32" x2="110" y2="108" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><text x="86.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="98.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="86.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="98.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="86.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="98.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="122.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="134.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="122.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="134.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="122.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="134.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="110" y="128" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">I</text><circle cx="230" cy="70" r="40" fill="#ffffff" stroke="#334155" stroke-width="2"/><line x1="230" y1="32" x2="230" y2="108" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><text x="206.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="218.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="206.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="218.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="206.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="218.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="242.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="254.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="242.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="254.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="242.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="254.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="230" y="128" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">II</text><circle cx="350" cy="70" r="40" fill="#ffffff" stroke="#334155" stroke-width="2"/><line x1="350" y1="32" x2="350" y2="108" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><text x="326.0" y="53.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="338.0" y="53.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="326.0" y="67.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="338.0" y="67.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="326.0" y="81.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="338.0" y="81.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="326.0" y="95.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="338.0" y="95.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="362.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="374.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="362.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="374.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="362.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="374.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="350" y="128" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">III</text><circle cx="470" cy="70" r="40" fill="#ffffff" stroke="#334155" stroke-width="2"/><line x1="470" y1="32" x2="470" y2="108" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/><text x="446.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="458.0" y="60.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="446.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="458.0" y="74.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="446.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="458.0" y="88.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#1d4ed8">−</text><text x="482.0" y="53.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="494.0" y="53.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="482.0" y="67.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="494.0" y="67.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="482.0" y="81.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="494.0" y="81.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="482.0" y="95.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="494.0" y="95.2" font-size="12" text-anchor="middle" font-weight="bold" fill="#dc2626">+</text><text x="470" y="128" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e293b">IV</text></svg></div><p>Doğru model ve bu sırada çubuğun yük miktarındaki değişim aşağıdakilerin hangisinde birlikte doğru verilmiştir?</p>`,
+  c: ["Model I — Çubuğun yük miktarı değişmez.", "Model II — Çubuğun yük miktarı değişmez.", "Model III — Çubuk elektron vermiş, (+) yükü artmıştır.", "Model IV — Çubuk küreye (+) yük vermiş, yükü azalmıştır."],
+  a: "B",
+  s: `<p>Etki ile elektriklenmede çubuk ile küre arasında <b>yük geçişi olmaz</b>; kürenin içindeki elektronlar yer değiştirir. (+) çubuk elektronları kendine yakın tarafa çeker: sol yarıda (−), sağ yarıda (+) yükler fazlalaşır. Kürenin toplam (+) ve (−) yük sayısı değişmez (6 ve 6). Bu Model II’dir; çubuğun yükü değişmez (B ✓).</p><p>A ✗: Model I, (+) yükleri çubuğa yakın göstermiştir; (+) çubuk (+) yükleri iter, ayrıca hareket eden protonlar değil elektronlardır. C ✗: Model III’te küreye 2 elektron eklenmiş; etkide çubukla küre arasında elektron geçişi yoktur. D ✗: Model IV’te küreye (+) yük (proton) geçtiği varsayılmıştır; protonlar hiçbir elektriklenmede yer değiştirmez. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Beş öğrenci grubu, başlangıçta <b>nötr</b> olan iki yalıtkan cismi yalnızca birbirine sürterek elektrikliyor ve cisimlerin net yüklerini ölçüyor. Sürtünme sırasında cisimler başka hiçbir cisimle yük alışverişi yapmıyor.</p><table class="rt"><tr><th>Grup</th><th>1. cisim</th><th>2. cisim</th></tr><tr><td>1</td><td>Plastik cetvel</td><td>Yün atkı</td></tr><tr><td>2</td><td>Cam şişe</td><td>İpek eşarp</td></tr><tr><td>3</td><td>Balon</td><td>Saç</td></tr><tr><td>4</td><td>Pipet</td><td>Peçete</td></tr><tr><td>5</td><td>Lastik</td><td>Kürk</td></tr></table><div class="fig"><svg viewBox="0 0 560 280" width="560" role="img" aria-label="Beş grubun ölçtüğü net yükler: 1. grup −40 ve +40; 2. grup +25 ve −25; 3. grup −30 ve +20; 4. grup −15 ve −15; 5. grup −18 ve +18" font-family="sans-serif"><line x1="50" y1="130" x2="540" y2="130" stroke="#334155" stroke-width="1.5"/><line x1="50" y1="30" x2="50" y2="230" stroke="#334155" stroke-width="1.5"/><line x1="46" y1="218.0" x2="540" y2="218.0" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="222.0" font-size="11" text-anchor="end" fill="#1e293b">−40</text><line x1="46" y1="174.0" x2="540" y2="174.0" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="178.0" font-size="11" text-anchor="end" fill="#1e293b">−20</text><line x1="46" y1="86.0" x2="540" y2="86.0" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="90.0" font-size="11" text-anchor="end" fill="#1e293b">+20</text><line x1="46" y1="42.0" x2="540" y2="42.0" stroke="#e2e8f0" stroke-width="1"/><text x="42" y="46.0" font-size="11" text-anchor="end" fill="#1e293b">+40</text><text x="42" y="134" font-size="11" text-anchor="end" fill="#1e293b">0</text><text x="14" y="20" font-size="11" text-anchor="start" font-weight="bold" fill="#1e293b">Net yük (birim)</text><rect x="70" y="130.0" width="28" height="88.0" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="84" y="231.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−40</text><rect x="104" y="42.0" width="28" height="88.0" fill="#fca5a5" stroke="#334155" stroke-width="1"/><text x="118" y="38.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">+40</text><text x="101" y="252" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">1. grup</text><rect x="164" y="75.0" width="28" height="55.00000000000001" fill="#fca5a5" stroke="#334155" stroke-width="1"/><text x="178" y="71.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">+25</text><rect x="198" y="130.0" width="28" height="55.00000000000001" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="212" y="198.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−25</text><text x="195" y="252" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">2. grup</text><rect x="258" y="130.0" width="28" height="66.0" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="272" y="209.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−30</text><rect x="292" y="86.0" width="28" height="44.0" fill="#fca5a5" stroke="#334155" stroke-width="1"/><text x="306" y="82.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">+20</text><text x="289" y="252" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">3. grup</text><rect x="352" y="130.0" width="28" height="33.0" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="366" y="176.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−15</text><rect x="386" y="130.0" width="28" height="33.0" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="400" y="176.0" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−15</text><text x="383" y="252" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">4. grup</text><rect x="446" y="130.0" width="28" height="39.6" fill="#93c5fd" stroke="#334155" stroke-width="1"/><text x="460" y="182.6" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">−18</text><rect x="480" y="90.4" width="28" height="39.6" fill="#fca5a5" stroke="#334155" stroke-width="1"/><text x="494" y="86.4" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">+18</text><text x="477" y="252" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">5. grup</text><text x="295" y="272" font-size="11" text-anchor="middle" fill="#475569">Her grupta soldaki sütun 1. cisim, sağdaki sütun 2. cisimdir.</text></svg></div><p>Grafiğe göre hangi grupların ölçüm sonuçları <b>kesinlikle hatalıdır</b>?</p>`,
+  c: ["Yalnız 3", "2 ve 4", "1 ve 3", "3 ve 4"],
+  a: "D",
+  s: `<p>Sürtünen iki nötr cisim arasında yalnızca elektron alışverişi olur: Bir cisim ne kadar elektron kaybederse diğeri o kadar kazanır. Bu yüzden iki cisim <b>zıt cins</b> ve <b>eşit miktarda</b> yükle yüklenmelidir; iki yükün toplamı sıfır olmalıdır.</p><p>1. grup (−40, +40), 2. grup (+25, −25) ve 5. grup (−18, +18) bu kurala uyar. 3. grup (−30, +20): cisimler zıt yüklü ama miktarlar eşit değil ✗. 4. grup (−15, −15): miktarlar eşit ama iki cisim de (−) yüklü; iki cisim aynı anda elektron kazanamaz ✗.</p><p>“Yalnız 3” diyen öğrenci yalnızca miktar eşitliğine bakmış, yük cinsini atlamıştır; 2. grubu hatalı sanan öğrenci camın (+), kumaşın (−) olmasını yadırgamıştır, oysa hangi cismin (+) olacağı madde çiftine bağlıdır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Öğrenciler, negatif (−) yüklü ve yaprakları açık bir elektroskopla maddelerin iletken olup olmadığını test ediyor. Toprak zeminde çıplak ayakla duran bir öğrenci, elinde tuttuğu malzemenin bir ucunu elektroskobun topuzuna değdiriyor. Her denemeden önce elektroskop aynı miktarda (−) yükle yeniden yükleniyor.</p><table class="rt"><tr><th>Malzeme</th><th>Gözlem</th></tr><tr><td>Bakır tel</td><td>Yapraklar hemen kapanıyor.</td></tr><tr><td>Plastik cetvel</td><td>Yaprakların açıklığı değişmiyor.</td></tr><tr><td>Kurşun kalemden çıkarılmış grafit çubuk (kalem içi)</td><td>Yapraklar kapanıyor.</td></tr><tr><td>Kuru tahta çubuk</td><td>Yaprakların açıklığı değişmiyor.</td></tr></table><p>Buna göre;</p><p>I. Bakır ve grafit iletken, plastik ve kuru tahta yalıtkan maddelerdir.<br>II. Deney (+) yüklü bir elektroskopla yapılsaydı, bakır tel denemesinde elektroskoptan toprağa (+) yükler akardı.<br>III. Yaprakların kapanması, elektroskoptaki fazla elektronların malzeme ve öğrencinin vücudu üzerinden toprağa aktarılmasıyla açıklanır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Bakır ve grafit değdirildiğinde elektroskop–malzeme–vücut–toprak arasında iletken bir yol oluşur; fazla elektronlar toprağa akar, elektroskop nötrleşir ve yapraklar kapanır (I ✓, III ✓). Plastik ve kuru tahta yalıtkan olduğu için yol oluşmaz, yapraklar açık kalır.</p><p>II ✗: (+) yüklü bir elektroskop topraklandığında (+) yükler (protonlar) akmaz; topraktan elektroskoba <b>elektron gelir</b> ve elektroskop nötrleşir. II’yi seçen öğrenci “(+) yük toprağa akar” yanılgısına düşmüştür; III’ü eleyen öğrenci insan vücudunun iletken olduğunu ve yolun toprağa kadar uzandığını gözden kaçırmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p>Fırtınalı havalarda bulutlardaki su damlacıkları ve buz kristalleri hava akımlarıyla sürekli hareket eder ve birbirine sürtünür. Bu sırada bulutun bazı bölümlerinde büyük miktarda elektrik yükü birikir. Biriken yük, iki bulut arasında ya da bulut ile yeryüzü arasında ani bir elektrik boşalmasıyla dengelenir. Yeryüzüne yönelen boşalmalar çoğunlukla çevresine göre <b>yüksek ve sivri</b> noktalara ulaşır.</p></div><p>Buna göre;</p><p>I. Bulutların yüklenmesi, sürtünme ile elektriklenmeye bir örnektir.<br>II. Şimşek ile yıldırımı birbirinden ayıran, elektrik boşalmasının gerçekleştiği yerlerdir.<br>III. Fırtınada açık arazide tek başına yükselen bir ağacın altına sığınmak, yıldırımdan korunmak için güvenli bir davranıştır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>I ✓: Damlacıklar ve buz kristalleri birbirine sürtünerek elektron alışverişi yapar; bu sürtünme ile elektriklenmedir. II ✓: Yüklü bulutlar arasındaki boşalma <b>şimşek</b>, bulut ile yeryüzü arasındaki boşalma <b>yıldırım</b>dır; ikisini ayıran boşalmanın nerede olduğudur.</p><p>III ✗: Metinde yeryüzüne yönelen boşalmaların yüksek ve sivri noktalara ulaştığı söyleniyor. Açık arazide tek başına yükselen ağaç tam da böyle bir noktadır; altına sığınmak tehlikelidir. III’ü seçen öğrenci “ağaç korur” günlük inancını metindeki bilgiye tercih etmiştir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Ece, plastik bir çubuğun yalnızca <b>A ucunu</b> yün kumaşa sürtüyor. Ardından yalıtkan sapından tuttuğu metal bir çubuğun yalnızca <b>C ucunu</b> yün kumaşa sürtüyor. Çubukların iki ucunu da ayrı ayrı, yalıtkan iple asılı nötr ve hafif bir küreye dokundurmadan yaklaştırıyor.</p><table class="rt"><tr><th>Çubuk</th><th>Yaklaştırılan uç</th><th>Gözlem</th></tr><tr><td>Plastik</td><td>A (sürtülen uç)</td><td>Küre çubuğa doğru çekiliyor.</td></tr><tr><td>Plastik</td><td>B (sürtülmeyen uç)</td><td>Küre hareket etmiyor.</td></tr><tr><td>Metal (yalıtkan saplı)</td><td>C (sürtülen uç)</td><td>Küre çubuğa doğru çekiliyor.</td></tr><tr><td>Metal (yalıtkan saplı)</td><td>D (sürtülmeyen uç)</td><td>Küre çubuğa doğru çekiliyor.</td></tr></table><p>Buna göre;</p><p>I. Plastik çubukta oluşan yük yalnızca sürtülen bölgede kalmıştır.<br>II. Metal çubuğun iki ucunun da küreyi çekmesi, bu iki ucun zıt cins yükle yüklendiğini gösterir.<br>III. Plastik çubuğun B ucunda hiç (+) ya da (−) elektrik yükü yoktur.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "A",
+  s: `<p>I ✓: Plastik yalıtkandır; yükler sürtülen A ucunda kalır, çubuk boyunca yayılmaz. Bu yüzden B ucu nötr küreyi çekmez.</p><p>II ✗: Metal iletkendir; sürtünmeyle kazanılan yük tüm yüzeye yayılır. C ve D uçları <b>aynı cins</b> yükle yüklüdür; nötr küre her iki uca da bu yüzden çekilir. Nötr cisim (+) yüke de (−) yüke de çekildiği için çekme gözlemi zıt yük göstermez.</p><p>III ✗: B ucu nötrdür; nötr bölgede de çok sayıda (+) ve (−) yük vardır, yalnızca sayıları eşittir. “Nötr = yüksüz” yanılgısı III’ü seçtirir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Ömer, ebonit çubuğu yün kumaşa sürterek <b>negatif (−)</b> yüklüyor ve çubuğu yalıtkan iple asılı plastik bir kaleme dokundurmadan yaklaştırıyor. Kalemin çubuğa doğru çekildiğini görüyor.</p><div class="dialog"><div><b>Ömer:</b> Kalem negatif yüklü çubuğa çekildi. Demek ki kalem kesinlikle pozitif yüklü.</div><div><b>Defne:</b> Bu gözlem kalemin pozitif yüklü olduğunu kanıtlamaz. Bir deney daha yaparsak sonucun yanlış olabileceğini gösterebiliriz.</div></div><p>Defne aşağıdaki deneylerden hangisini yapar ve sonucunu elde ederse Ömer’in vardığı sonucun yanlış olduğunu gösterir?</p>`,
+  c: ["Ebonit çubuğu kaleme daha da yaklaştırır ve çekmenin arttığını görür.", "Pozitif (+) yüklü olduğu bilinen bir cam çubuğu kaleme yaklaştırır ve kalemin bu çubuğa da çekildiğini görür.", "Kalemi nötr bir elektroskobun topuzuna dokundurur ve yaprakların açıldığını görür.", "Yünle sürtülmüş ikinci bir ebonit çubuğu kaleme yaklaştırır ve kalemin bu çubuğa da çekildiğini görür."],
+  a: "B",
+  s: `<p>(−) yüklü çubuğa çekilen kalem ya (+) yüklüdür ya da nötrdür. Kalem (+) olsaydı (+) yüklü cam çubuk tarafından <b>itilirdi</b>. Kalemin (+) cam çubuğa da çekilmesi, onun hem (−) hem (+) yüke çekildiğini, yani <b>nötr</b> olduğunu gösterir; Ömer’in sonucu çürür (B ✓).</p><p>A ✗: Uzaklık azalınca kuvvet artar; bu, kalem (+) da olsa nötr de olsa gözlenir. D ✗: Aynı deneyin tekrarıdır, aynı belirsizliği taşır. C ✗: Yaprakların açılması kalemin yüklü olduğunu gösterir ama cinsini göstermez; kalem gerçekten (+) olsa da yapraklar açılırdı, yani Ömer’in sonucunu çürütmez (2019 LGS’deki “aynı sonucu veren deney” tuzağı). Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir evin akıllı sayacının gün boyunca kaydettiği <b>toplam güç</b> değerleri grafikte verilmiştir. Evdeki buzdolabı gün boyu 0,2 kW güçle sürekli çalışmaktadır.</p><div class="fig"><svg viewBox="0 0 540 244" width="540" role="img" aria-label="Saatlik güç grafiği: 00-06 0,2 kW; 06-08 1,2 kW; 08-17 0,2 kW; 17-19 2,2 kW; 19-23 1,2 kW; 23-24 0,2 kW" font-family="sans-serif"><line x1="56" y1="200" x2="516" y2="200" stroke="#334155" stroke-width="1.5"/><line x1="56" y1="200" x2="56" y2="32" stroke="#334155" stroke-width="1.5"/><line x1="56" y1="168.0" x2="516" y2="168.0" stroke="#e2e8f0" stroke-width="1"/><text x="50" y="172.0" font-size="11" text-anchor="end" fill="#1e293b">0,5</text><line x1="56" y1="136.0" x2="516" y2="136.0" stroke="#e2e8f0" stroke-width="1"/><text x="50" y="140.0" font-size="11" text-anchor="end" fill="#1e293b">1,0</text><line x1="56" y1="104.0" x2="516" y2="104.0" stroke="#e2e8f0" stroke-width="1"/><text x="50" y="108.0" font-size="11" text-anchor="end" fill="#1e293b">1,5</text><line x1="56" y1="72.0" x2="516" y2="72.0" stroke="#e2e8f0" stroke-width="1"/><text x="50" y="76.0" font-size="11" text-anchor="end" fill="#1e293b">2,0</text><line x1="56" y1="40.0" x2="516" y2="40.0" stroke="#e2e8f0" stroke-width="1"/><text x="50" y="44.0" font-size="11" text-anchor="end" fill="#1e293b">2,5</text><text x="50" y="204" font-size="11" text-anchor="end" fill="#1e293b">0</text><text x="10" y="18" font-size="11" text-anchor="start" font-weight="bold" fill="#1e293b">Güç (kW)</text><text x="56.0" y="216" font-size="11" text-anchor="middle" fill="#1e293b">00.00</text><text x="171.0" y="216" font-size="11" text-anchor="middle" fill="#1e293b">06.00</text><text x="209.3" y="216" font-size="11" text-anchor="middle" fill="#1e293b">08.00</text><text x="286.0" y="216" font-size="11" text-anchor="middle" fill="#1e293b">12.00</text><text x="381.8" y="216" font-size="11" text-anchor="middle" fill="#1e293b">17.00</text><text x="420.2" y="216" font-size="11" text-anchor="middle" fill="#1e293b">19.00</text><text x="496.8" y="216" font-size="11" text-anchor="middle" fill="#1e293b">23.00</text><text x="286.0" y="234" font-size="11" text-anchor="middle" fill="#475569">Saat</text><rect x="56.0" y="187.2" width="115.0" height="12.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/><rect x="171.0" y="123.2" width="38.3" height="76.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/><rect x="209.3" y="187.2" width="172.5" height="12.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/><rect x="381.8" y="59.2" width="38.3" height="140.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/><rect x="420.2" y="123.2" width="76.7" height="76.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/><rect x="496.8" y="187.2" width="19.2" height="12.8" fill="#bfdbfe" stroke="#1e40af" stroke-width="1"/></svg></div><p>Buna göre;</p><p>I. Evde bir günde harcanan toplam elektrik enerjisi 14,8 kWh’tir.<br>II. Gün içinde en çok elektrik enerjisi, gücün en büyük olduğu 17.00–19.00 aralığında harcanmıştır.<br>III. 19.00–23.00 aralığında harcanan elektrik enerjisi, 17.00–19.00 aralığında harcanandan fazladır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>Enerji = güç × süre. 00–06: 0,2 × 6 = 1,2 kWh; 06–08: 1,2 × 2 = 2,4 kWh; 08–17: 0,2 × 9 = 1,8 kWh; 17–19: 2,2 × 2 = <b>4,4 kWh</b>; 19–23: 1,2 × 4 = <b>4,8 kWh</b>; 23–24: 0,2 × 1 = 0,2 kWh. Toplam = <b>14,8 kWh</b> (I ✓).</p><p>II ✗: Güç 17–19 aralığında en büyüktür ama süre kısadır; 19–23 aralığında daha düşük güçle daha uzun süre çalışıldığı için daha çok enerji (4,8 &gt; 4,4 kWh) harcanmıştır (III ✓). II’yi seçen öğrenci grafikte en yüksek sütunu en çok enerji sanmıştır; I’i eleyen öğrenci genellikle gece saatlerini “hiç tüketim yok” sayıp buzdolabını unutmuştur. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Pozitif (+) yükle yüklenmiş ve yaprakları açık dört özdeş elektroskopla tablodaki işlemler ayrı ayrı yapılıyor.</p><table class="rt"><tr><th>İşlem</th><th>Yapılan</th></tr><tr><td>I</td><td>Toprak zeminde çıplak ayakla duran bir kişi topuza çıplak eliyle dokunuyor.</td></tr><tr><td>II</td><td>Toprak zeminde duran ve kalın lastik eldiven giyen bir kişi topuza eldivenli eliyle dokunuyor.</td></tr><tr><td>III</td><td>Topuz, bakır telle toprağa çakılı metal bir çubuğa bağlanıyor.</td></tr><tr><td>IV</td><td>Topuz, bakır telle nötr ve özdeş başka bir elektroskobun topuzuna bağlanıyor; iki elektroskop da yalıtkan masa üzerindedir.</td></tr></table><p>Bu işlemlerden hangilerinin sonunda elektroskobun yaprakları <b>tamamen kapanır</b>?</p>`,
+  c: ["Yalnız III", "I ve II", "I ve III", "III ve IV"],
+  a: "C",
+  s: `<p>Yapraklar tamamen kapanması için elektroskobun nötr olması, yani topraklanması gerekir. I ✓: İnsan vücudu iletkendir ve kişi toprağa basmaktadır; topraktan elektroskoba elektron gelir, elektroskop nötrleşir. III ✓: Bakır tel ile toprağa kesintisiz iletken yol vardır.</p><p>II ✗: Lastik eldiven yalıtkandır; yol eldivende kesilir. IV ✗: İki elektroskop yükü paylaşır; ilk elektroskobun yükü azalır ve yaprakları <b>biraz kapanır</b> ama toprak bağlantısı olmadığı için tamamen kapanmaz, iki elektroskop da (+) yüklü kalır (2018 LGS’deki “biraz kapanma”). IV’ü seçen öğrenci başka bir iletkene bağlamayı topraklama sanmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Dört evde kullanılan aynı model çamaşır makinelerinde aynı arıza oluşuyor: Makinenin içindeki bir kablonun yalıtkan kılıfı yıpranıyor ve kablo makinenin <b>metal gövdesine</b> değiyor. Makinelerin fişleri topraklı (üç uçlu) fişlerdir ve fişin toprak ucu normalde bir tel ile makinenin metal gövdesine bağlıdır.</p><table class="rt"><tr><th>Ev</th><th>Bağlantı durumu</th></tr><tr><td>1</td><td>Makine topraklı prize takılı; prizin toprak hattı binanın topraklama tesisatına bağlı.</td></tr><tr><td>2</td><td>Makine topraklı prize takılı; ancak prizin toprak hattı tesisata hiç bağlanmamış.</td></tr><tr><td>3</td><td>Makine topraklı prize takılı ve prizin toprak hattı tesisata bağlı; ancak makinenin içinde fişin toprak ucunu gövdeye bağlayan tel kopmuş.</td></tr><tr><td>4</td><td>Makine topraklı prize takılı ve prizin toprak hattı tesisata bağlı; makine lastik ayaklar üzerinde duruyor.</td></tr></table><p>Buna göre hangi evlerde makinenin gövdesine dokunan bir kişi <b>çarpılma tehlikesiyle</b> karşılaşır?</p>`,
+  c: ["Yalnız 2", "2 ve 3", "3 ve 4", "2, 3 ve 4"],
+  a: "B",
+  s: `<p>Topraklı priz ve fiş, gövdeye kaçan elektriğin iletken bir yolla toprağa gitmesini sağlar; yol <b>gövde → toprak teli → fiş → priz → tesisat → toprak</b> şeklinde kesintisiz olmalıdır.</p><p>Ev 1: Yol tamamdır, kaçak toprağa gider; tehlike yok. Ev 2 ✓: Priz tesisata bağlı değildir, yol prizde kopar; gövdeye kaçan elektrik toprağa gidemez, dokunan kişinin vücudu üzerinden toprağa ulaşabilir. Ev 3 ✓: Yol bu kez makinenin içinde kopmuştur; gövde ile fiş arasında bağlantı yoktur. Ev 4: Lastik ayaklar gövdenin zeminle temasını keser ama topraklama zaten zemin üzerinden değil, toprak teli üzerinden yapılır; yol tamamdır, tehlike yok.</p><p>“Yalnız 2” diyen öğrenci yolun yalnız priz tarafını, “3 ve 4” ya da “2, 3 ve 4” diyen öğrenci lastik ayakları topraklamayı bozan yalıtkan sanmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Elektronik kart tamiri yapılan atölyelerde, çalışanın vücudunda biriken durgun elektrik hassas parçalara zarar verebilir. Bunu önlemek için çalışanlar iç yüzeyi iletken olan ve <b>çıplak bileğe</b> temas edecek şekilde takılan topraklama bileklikleri kullanır. Dört çalışanın düzeneği tabloda verilmiştir.</p><table class="rt"><tr><th>Çalışan</th><th>Bilekliğin takıldığı yer</th><th>Bilekliğin bağlantısı</th></tr><tr><td>I</td><td>Çıplak bilek</td><td>İletken kabloyla duvardaki topraklama noktasına</td></tr><tr><td>II</td><td>Kalın yün kazağın kolunun üzeri</td><td>İletken kabloyla duvardaki topraklama noktasına</td></tr><tr><td>III</td><td>Çıplak bilek</td><td>İletken kabloyla metal masaya; masa, topraklama noktasına naylon iple bağlı</td></tr><tr><td>IV</td><td>Çıplak bilek</td><td>İletken kabloyla metal masaya; masa, topraklama noktasına iletken kabloyla bağlı</td></tr></table><p>Bu çalışanlardan hangilerinin vücudunda biriken yük <b>toprağa aktarılabilir</b>?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve IV", "I ve IV"],
+  a: "D",
+  s: `<p>Vücuttan toprağa kadar kesintisiz bir iletken yol gerekir: vücut → bileklik → kablo → (masa → kablo) → toprak.</p><p>I ✓: Yol doğrudan tamamdır. IV ✓: Masa metal ve toprağa iletken kabloyla bağlı olduğundan vücut–bileklik–masa–toprak yolu kesintisizdir. II ✗: Yün yalıtkandır; bileklik vücuda değmediği için yol en başta kopar. III ✗: Naylon ip yalıtkandır; masa toprağa bağlanmış sayılmaz, vücut ile masa yükü yalnızca paylaşır.</p><p>“Yalnız I” diyen öğrenci masa üzerinden de topraklama yapılabileceğini görememiştir; III’ü seçen öğrenci ipi bağlantı sanmış, II’yi seçen öğrenci kabloyu görmüş ama yalıtkan kazağı atlamıştır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci “akıllı sera” maketi hazırlıyor ve maketteki parçalarda gerçekleşen enerji dönüşümlerini tabloya yazıyor.</p><table class="rt"><tr><th>Satır</th><th>Parça</th><th>Öğrencinin yazdığı dönüşüm</th></tr><tr><td>1</td><td>Havalandırma fanının motoru</td><td>Elektrik → hareket</td></tr><tr><td>2</td><td>Çatıdaki güneş paneli</td><td>Elektrik → ışık</td></tr><tr><td>3</td><td>Rüzgâr gülüne bağlı küçük dinamo</td><td>Hareket → elektrik</td></tr><tr><td>4</td><td>Toprağı ısıtan rezistans teli</td><td>Elektrik → ısı</td></tr><tr><td>5</td><td>Sulama pompasının motoru</td><td>Hareket → elektrik</td></tr></table><p>Öğrenci hangi satırlarda <b>hata</b> yapmıştır?</p>`,
+  c: ["2 ve 5", "3 ve 5", "2 ve 3", "2, 3 ve 5"],
+  a: "A",
+  s: `<p>Satır 2 ✗: Güneş paneli ışık enerjisini elektrik enerjisine dönüştürür; doğrusu <b>ışık → elektrik</b>. Satır 5 ✗: Pompanın motoru da bir elektrik motorudur, suyu hareket ettirir; doğrusu <b>elektrik → hareket</b>.</p><p>Satır 1 (motor: elektrik → hareket), satır 3 (dinamo/jeneratör: hareket → elektrik) ve satır 4 (rezistans: elektrik → ısı) doğrudur. Satır 3’ü hatalı sanan öğrenci dinamoyu motorla karıştırmıştır (2025 LGS’deki model sorusu); satır 2’yi doğru sayan öğrenci panelin “ışıkla ilgili” olmasına bakıp yönü atlamıştır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir evde elektrikli ısıtıcı ile fırın aynı anda çalıştırıldığında mutfak hattının sigortası atıyor. Aile bireyleri bu durumu şöyle yorumluyor:</p><div class="dialog"><div><b>Ayşe:</b> Kabloları değiştirmeden sigortayı daha büyük değerli bir sigortayla değiştirirsek sorun güvenli biçimde çözülür.</div><div><b>Bora:</b> Sigorta sık sık atıyorsa sigortayı devreden çıkarıp hattı doğrudan bağlamak en pratik çözümdür.</div><div><b>Cem:</b> Hattan aynı anda çok yüksek güç çekiliyor. Sigorta, kablolar aşırı ısınıp yalıtkan kılıf eriyerek yangın çıkmadan devreyi kesiyor; bu iki cihazı aynı anda bu hatta çalıştırmamalıyız.</div><div><b>Deniz:</b> Sigortanın atması, ısıtıcının elektrik enerjisini ısıya dönüştüremediğini gösterir; ısıtıcı bozuktur.</div></div><p>Buna göre hangi aile bireyinin yorumu <b>bilimsel olarak doğrudur</b>?</p>`,
+  c: ["Ayşe", "Bora", "Cem", "Deniz"],
+  a: "C",
+  s: `<p>Bir hattan normalden fazla akım geçerse kablolar aşırı ısınır, yalıtkan kılıf erir ve yangın çıkabilir. Sigorta bu durumda devreyi keserek tesisatı korur. Çok sayıda yüksek güçlü cihazın aynı hatta çalıştırılması sigortanın atmasının en sık nedenidir. Cem’in yorumu doğrudur (C ✓).</p><p>A ✗: Sigortanın değeri hattın kablolarına uygun seçilir; daha büyük sigorta kablolar aşırı ısınırken bile devreyi kesmez, koruma işe yaramaz. B ✗: Sigortayı devreden çıkarmak korumayı tamamen kaldırır. D ✗: Sigorta aşırı akımda atar; ısıtıcı tek başına çalıştığında sorun yoksa ısıtıcının bozuk olduğu sonucu çıkmaz. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aynı büyüklükteki iki odada 5 saat boyunca ısıtıcı kullanılıyor. 1. odadaki <b>2000 W</b>’lık ısıtıcı termostatsızdır ve 5 saat boyunca kesintisiz çalışıyor. Isı yalıtımı yapılmış 2. odadaki <b>2500 W</b>’lık ısıtıcı ise termostatlıdır; oda istenen sıcaklığa ulaşınca kapanıp sıcaklık düşünce yeniden çalışıyor ve 5 saatin toplam <b>1,6 saatinde</b> çalışıyor. Elektriğin 1 kWh’i 2,5 TL’dir (1 kW = 1000 W).</p><p>Buna göre;</p><p>I. Gücü büyük olan ısıtıcı daha çok elektrik enerjisi harcamıştır.<br>II. 2. odadaki ısıtıcının harcadığı enerji, 1. odadakinin %40’ı kadardır.<br>III. Isıtıcılar her gün bu şekilde kullanılırsa 30 günde iki oda arasındaki elektrik bedeli farkı 450 TL olur.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız II", "I ve II", "I ve III", "II ve III"],
+  a: "D",
+  s: `<p>1. oda: 2 kW × 5 h = <b>10 kWh</b>. 2. oda: 2,5 kW × 1,6 h = <b>4 kWh</b>.</p><p>I ✗: Gücü büyük olan 2. odadaki ısıtıcı, daha kısa süre çalıştığı için daha az enerji harcamıştır. II ✓: 4 ÷ 10 = 0,4 = %40. III ✓: Günlük fark 10 − 4 = 6 kWh; 30 günde 180 kWh; 180 × 2,5 = 450 TL.</p><p>I’i seçen öğrenci enerjinin yalnızca güce bağlı olduğunu sanmış, süreyi atlamıştır. “Yalnız II” diyen öğrenci genellikle W’ı kW’a çevirmeden hesap yapıp III’ü yanlış bulmuştur. Termostat ve ısı yalıtımı aynı konfor için harcanan enerjiyi azaltan tasarruf önlemleridir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir çamaşır makinesinin bir yıkamada harcadığı elektrik enerjisi tabloda verilmiştir.</p><table class="rt"><tr><th>Yıkama şekli</th><th>Bir yıkamadaki çamaşır</th><th>Bir yıkamada harcanan enerji</th></tr><tr><td>Tam dolu</td><td>8 kg</td><td>1,0 kWh</td></tr><tr><td>Yarı dolu</td><td>4 kg</td><td>0,8 kWh</td></tr></table><p>Bir aile her hafta toplam <b>32 kg</b> çamaşır yıkamaktadır. Elektriğin 1 kWh’i 2,5 TL’dir; 1 yıl 52 hafta kabul edilecektir.</p><p>Aile çamaşırlarını hep yarı dolu yıkamak yerine hep tam dolu yıkarsa bir yılda kaç TL tasarruf eder?</p>`,
+  c: ["208", "312", "520", "832"],
+  a: "B",
+  s: `<p>Tam dolu: 32 ÷ 8 = 4 yıkama → 4 × 1,0 = <b>4 kWh</b>/hafta. Yarı dolu: 32 ÷ 4 = 8 yıkama → 8 × 0,8 = <b>6,4 kWh</b>/hafta. Haftalık tasarruf 2,4 kWh; yıllık 2,4 × 52 = 124,8 kWh; 124,8 × 2,5 = <b>312 TL</b>.</p><p>208: Yıkama başına fark (1,0 − 0,8 = 0,2 kWh) 8 yıkamayla çarpılmıştır (0,2 × 8 × 52 × 2,5); tam dolu yıkamada yıkama sayısının da 8’den 4’e indiği hesaba katılmamıştır. 520: Yalnızca tam dolu yıkamanın yıllık bedeli (4 × 52 × 2,5). 832: Yalnızca yarı dolu yıkamanın yıllık bedeli. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>A ve B evlerinde kullanılan cihazların güçleri ve günlük kullanım süreleri tabloda verilmiştir. Elektriğin 1 kWh’i <b>2,5 TL</b>’dir (1 kW = 1000 W).</p><table class="rt"><tr><th>Ev</th><th>Cihaz</th><th>Güç</th><th>Günlük süre</th></tr><tr><td>A</td><td>Klima</td><td>1200 W</td><td>3 saat</td></tr><tr><td>A</td><td>Buzdolabı</td><td>200 W</td><td>24 saat</td></tr><tr><td>A</td><td>LED aydınlatma (toplam)</td><td>60 W</td><td>5 saat</td></tr><tr><td>B</td><td>Elektrikli ısıtıcı</td><td>2000 W</td><td>2 saat</td></tr><tr><td>B</td><td>Buzdolabı</td><td>100 W</td><td>24 saat</td></tr><tr><td>B</td><td>Akkor aydınlatma (toplam)</td><td>300 W</td><td>5 saat</td></tr></table><p>Buna göre;</p><p>I. Her iki evde de günlük en çok elektrik enerjisi harcayan cihaz, o evdeki gücü en büyük cihazdır.<br>II. A evinin 30 günlük elektrik bedeli B evininkinden 60 TL fazladır.<br>III. B evi akkor aydınlatma yerine aynı ışığı veren toplam 60 W’lık LED aydınlatma kullansaydı 30 günde 90 TL tasarruf ederdi.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız II", "II ve III", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>Enerji = güç (kW) × süre (h). A: klima 1,2 × 3 = 3,6 kWh; buzdolabı 0,2 × 24 = <b>4,8 kWh</b>; LED 0,06 × 5 = 0,3 kWh → toplam 8,7 kWh. B: ısıtıcı 2 × 2 = <b>4 kWh</b>; buzdolabı 0,1 × 24 = 2,4 kWh; akkor 0,3 × 5 = 1,5 kWh → toplam 7,9 kWh.</p><p>I ✗: A evinde en çok enerjiyi gücü en büyük klima değil, uzun süre çalışan buzdolabı harcar. II ✓: Günlük fark 0,8 kWh; 30 günde 24 kWh × 2,5 = 60 TL. III ✓: Günlük tasarruf 1,5 − 0,3 = 1,2 kWh; 30 günde 36 kWh × 2,5 = 90 TL.</p><p>I’i doğru sayan öğrenci “gücü büyük olan çok harcar” yanılgısına düşmüştür (B evinde bu doğru, A evinde yanlış). Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><p>Bir ülkede üretilen elektriğin <b>%40</b>’ı, yakıtı tamamen dışarıdan satın alınan doğal gazla çalışan termik santrallerde üretilmektedir. Bu santrallerde 1 kWh elektrik için yaklaşık <b>0,2 m³</b> doğal gaz yakılmaktadır. Ülkedeki hanelerin elektrik tasarrufu yapması durumunda elektrik üretiminin, tasarruf edilen miktar kadar ve santrallerin üretim payları oranında azalacağı varsayılıyor (1 yıl = 365 gün).</p></div><table class="rt"><tr><th>Veri</th><th>Değer</th></tr><tr><td>Hane sayısı</td><td>20 milyon</td></tr><tr><td>Hane başına günlük tasarruf</td><td>0,5 kWh</td></tr><tr><td>Elektriğin doğal gazdan üretilen payı</td><td>%40</td></tr><tr><td>1 kWh için yakılan doğal gaz</td><td>0,2 m³</td></tr></table><p>Buna göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Hanelerin bir yılda tasarruf ettiği toplam enerji 365 milyon kWh’tir.", "Doğal gazlı santrallerde üretilen elektrik bir yılda 3650 milyon kWh azalır.", "Ülke bir yılda yaklaşık 292 milyon m³ daha az doğal gaz satın alır.", "Bu tasarruf yalnızca hane bütçelerini etkiler; ülkenin yakıt alımını etkilemez."],
+  a: "C",
+  s: `<p>Yıllık toplam tasarruf: 0,5 kWh × 365 × 20 000 000 = <b>3650 milyon kWh</b>. Bunun %40’ı doğal gazlı santrallerden: 3650 × 0,4 = <b>1460 milyon kWh</b>. Gereken doğal gaz: 1460 milyon × 0,2 = <b>292 milyon m³</b> (C ✓).</p><p>A ✗: Bir basamak kaydırılmıştır (doğrusu 3650 milyon kWh). B ✗: Tasarrufun tamamı doğal gazlı santrallere yazılmış, %40 payı unutulmuştur. D ✗: Daha az elektrik üretmek dışarıdan alınan yakıta daha az para ödemek demektir; tasarruf ülke ekonomisini de etkiler. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir enerji raporunda santrallerin bazı sorunları için önlemler önerilmiştir.</p><table class="rt"><tr><th>Seçenek</th><th>Santral</th><th>Sorun</th><th>Önerilen önlem</th></tr><tr><td>A</td><td>Termik</td><td>Yakıtın yanmasıyla açığa çıkan karbondioksidin sera etkisini artırması</td><td>Bacaya kül ve tozları tutan elektrostatik filtre takmak</td></tr><tr><td>B</td><td>Termik</td><td>Bacadan çıkan kül ve toz parçacıklarının havayı kirletmesi</td><td>Bacaya yüklü levhalı elektrostatik filtre takmak</td></tr><tr><td>C</td><td>Rüzgâr</td><td>Rüzgâr kesildiğinde üretimin durması</td><td>Farklı rüzgâr özelliklerine sahip birçok bölgeye santral kurup diğer santrallerle birlikte kullanmak</td></tr><tr><td>D</td><td>Nükleer</td><td>Atıkların uzun süre radyoaktif kalması</td><td>Atıkları özel ve güvenli depolama tesislerinde saklamak</td></tr></table><p>Hangi seçenekte önerilen önlem, belirtilen sorunu gidermeye <b>yönelik değildir</b>?</p>`,
+  c: ["A", "B", "C", "D"],
+  a: "A",
+  s: `<p>Elektrostatik filtre, yüklenen kül ve toz parçacıklarını zıt yüklü levhalarda tutar; yani katı parçacıklara karşı etkilidir (B ✓ uygun önlem). Ancak karbondioksit bir gazdır ve yakıt yandıkça oluşur; kül tutan filtre karbondioksit salımını azaltmaz. A’da önlem soruna yönelik değildir.</p><p>C: Rüzgâr her bölgede aynı anda kesilmeyeceği için farklı bölgelerdeki santraller ve diğer santrallerle birlikte kullanım kesintiyi azaltır. D: Radyoaktif atıkların güvenli depolanması bu sorunun temel önlemidir. A’yı uygun sayan öğrenci “filtre bacadan çıkan her şeyi tutar” diye düşünmüştür; filtrenin çalışma ilkesi (yüklü parçacıkları çekmek) gazları kapsamaz. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir ülkedeki hidroelektrik (HES), güneş (GES) ve rüzgâr (RES) santrallerinin bir yıl boyunca aylara göre ürettiği elektrik enerjisi grafikte verilmiştir.</p><div class="fig"><svg viewBox="0 0 560 254" width="560" role="img" aria-label="HES, GES ve RES santrallerinin aylık üretim grafiği; HES ilkbaharda, GES yazın en yüksek" font-family="sans-serif"><line x1="60" y1="210" x2="500" y2="210" stroke="#334155" stroke-width="1.5"/><line x1="60" y1="210" x2="60" y2="24" stroke="#334155" stroke-width="1.5"/><line x1="60" y1="184.28571428571428" x2="500" y2="184.28571428571428" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="188.28571428571428" font-size="11" text-anchor="end" fill="#1e293b">20</text><line x1="60" y1="158.57142857142858" x2="500" y2="158.57142857142858" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="162.57142857142858" font-size="11" text-anchor="end" fill="#1e293b">40</text><line x1="60" y1="132.85714285714286" x2="500" y2="132.85714285714286" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="136.85714285714286" font-size="11" text-anchor="end" fill="#1e293b">60</text><line x1="60" y1="107.14285714285715" x2="500" y2="107.14285714285715" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="111.14285714285715" font-size="11" text-anchor="end" fill="#1e293b">80</text><line x1="60" y1="81.42857142857142" x2="500" y2="81.42857142857142" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="85.42857142857142" font-size="11" text-anchor="end" fill="#1e293b">100</text><line x1="60" y1="55.71428571428572" x2="500" y2="55.71428571428572" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="59.71428571428572" font-size="11" text-anchor="end" fill="#1e293b">120</text><line x1="60" y1="30.0" x2="500" y2="30.0" stroke="#e2e8f0" stroke-width="1"/><text x="54" y="34.0" font-size="11" text-anchor="end" fill="#1e293b">140</text><text x="54" y="214" font-size="11" text-anchor="end" fill="#1e293b">0</text><text x="12" y="16" font-size="11" text-anchor="start" font-weight="bold" fill="#1e293b">Üretim (GWh)</text><text x="78.0" y="226" font-size="11" text-anchor="middle" fill="#1e293b">O</text><text x="114.7" y="226" font-size="11" text-anchor="middle" fill="#1e293b">Ş</text><text x="151.5" y="226" font-size="11" text-anchor="middle" fill="#1e293b">M</text><text x="188.2" y="226" font-size="11" text-anchor="middle" fill="#1e293b">N</text><text x="224.9" y="226" font-size="11" text-anchor="middle" fill="#1e293b">M</text><text x="261.6" y="226" font-size="11" text-anchor="middle" fill="#1e293b">H</text><text x="298.4" y="226" font-size="11" text-anchor="middle" fill="#1e293b">T</text><text x="335.1" y="226" font-size="11" text-anchor="middle" fill="#1e293b">A</text><text x="371.8" y="226" font-size="11" text-anchor="middle" fill="#1e293b">E</text><text x="408.5" y="226" font-size="11" text-anchor="middle" fill="#1e293b">E</text><text x="445.3" y="226" font-size="11" text-anchor="middle" fill="#1e293b">K</text><text x="482.0" y="226" font-size="11" text-anchor="middle" fill="#1e293b">A</text><text x="280.0" y="244" font-size="11" text-anchor="middle" fill="#475569">Aylar (Ocak → Aralık)</text><polyline points="78.0,132.9 114.7,120.0 151.5,94.3 188.2,55.7 224.9,42.9 261.6,81.4 298.4,120.0 335.1,145.7 371.8,158.6 408.5,158.6 445.3,145.7 482.0,139.3" fill="none" stroke="#2563eb" stroke-width="2.5"/><circle cx="78.0" cy="132.9" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="114.7" cy="120.0" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="151.5" cy="94.3" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="188.2" cy="55.7" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="224.9" cy="42.9" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="261.6" cy="81.4" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="298.4" cy="120.0" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="335.1" cy="145.7" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="371.8" cy="158.6" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="408.5" cy="158.6" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="445.3" cy="145.7" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><circle cx="482.0" cy="139.3" r="2.5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/><polyline points="78.0,184.3 114.7,177.9 151.5,165.0 188.2,152.1 224.9,139.3 261.6,126.4 298.4,120.0 335.1,126.4 371.8,145.7 408.5,165.0 445.3,177.9 482.0,186.9" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 3"/><circle cx="78.0" cy="184.3" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="114.7" cy="177.9" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="151.5" cy="165.0" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="188.2" cy="152.1" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="224.9" cy="139.3" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="261.6" cy="126.4" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="298.4" cy="120.0" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="335.1" cy="126.4" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="371.8" cy="145.7" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="408.5" cy="165.0" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="445.3" cy="177.9" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><circle cx="482.0" cy="186.9" r="2.5" fill="#d97706" stroke="#d97706" stroke-width="1"/><polyline points="78.0,145.7 114.7,152.1 151.5,148.3 188.2,158.6 224.9,161.1 261.6,152.1 298.4,132.9 335.1,130.3 371.8,148.3 408.5,156.0 445.3,150.9 482.0,143.1" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="2 3"/><circle cx="78.0" cy="145.7" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="114.7" cy="152.1" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="151.5" cy="148.3" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="188.2" cy="158.6" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="224.9" cy="161.1" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="261.6" cy="152.1" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="298.4" cy="132.9" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="335.1" cy="130.3" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="371.8" cy="148.3" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="408.5" cy="156.0" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="445.3" cy="150.9" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><circle cx="482.0" cy="143.1" r="2.5" fill="#16a34a" stroke="#16a34a" stroke-width="1"/><line x1="515" y1="50" x2="537" y2="50" stroke="#2563eb" stroke-width="2.5"/><text x="517" y="66" font-size="11" text-anchor="start" font-weight="bold" fill="#2563eb">HES</text><line x1="515" y1="72" x2="537" y2="72" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 3"/><text x="517" y="88" font-size="11" text-anchor="start" font-weight="bold" fill="#d97706">GES</text><line x1="515" y1="94" x2="537" y2="94" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="2 3"/><text x="517" y="110" font-size="11" text-anchor="start" font-weight="bold" fill="#16a34a">RES</text></svg></div><p>Bu grafikteki bilgilere dayanarak aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["GES’in en çok elektrik ürettiği ay Temmuz’dur.", "HES üretimi ilkbahar aylarında yılın en yüksek değerine ulaşmıştır.", "Ağustos ayında GES ve RES’in toplam üretimi, HES üretiminden fazladır.", "RES, yıl boyunca diğer iki santralden daha az çevre kirliliğine yol açmıştır."],
+  a: "D",
+  s: `<p>A: GES en yüksek değeri (70 GWh) Temmuz’da almıştır → ulaşılır. B: HES en yüksek değeri (130 GWh) Mayıs’ta, yani ilkbaharda almıştır → ulaşılır. C: Ağustos’ta GES 65 + RES 62 = 127 GWh, HES 50 GWh → ulaşılır.</p><p>D ✓: Grafik yalnızca üretim miktarlarını gösterir; santrallerin çevreye etkisiyle ilgili hiçbir veri yoktur. Üstelik üç santral de yenilenebilir kaynak kullanır ve her birinin farklı çevresel etkileri (baraj gölü, kuşlar için risk, geniş alan) vardır. Grafikte olmayan bilgiyi genel kanıyla grafikten çıkarılmış sanmak bu sorunun tuzağıdır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir okul projesinde santraller dört ölçüte göre puanlanıyor. Santral bir ölçütü sağlıyorsa <b>1 puan</b>, sağlamıyorsa 0 puan alıyor.</p><p><b>Ölçüt 1:</b> Yenilenebilir enerji kaynağı kullanır.<br><b>Ölçüt 2:</b> Üretimi rüzgâr, yağış, güneş gibi hava koşullarına bağlı değildir.<br><b>Ölçüt 3:</b> Çalışırken sera gazı salmaz.<br><b>Ölçüt 4:</b> Radyoaktif atık oluşturmaz.</p><p>Puanlanan santraller: termik, nükleer, rüzgâr, güneş ve hidroelektrik santralleridir.</p><p>Buna göre;</p><p>I. Termik ve nükleer santraller eşit puan alır.<br>II. En yüksek puanı alan santrallerin hepsi yenilenebilir enerji kaynağı kullanır.<br>III. Üretimi hava koşullarına bağlı olmayan santrallerin hepsi en yüksek puanı alır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>Termik: 0 + 1 + 0 + 1 = <b>2</b> (yenilenemez, sürekli, sera gazı salar, radyoaktif atık yok). Nükleer: 0 + 1 + 1 + 0 = <b>2</b> (yenilenemez, sürekli, sera gazı salmaz, radyoaktif atık var). Rüzgâr: 1 + 0 + 1 + 1 = <b>3</b>. Güneş: 1 + 0 + 1 + 1 = <b>3</b>. Hidroelektrik: 1 + 0 + 1 + 1 = <b>3</b> (yağışa bağlıdır, kuraklıkta üretim düşer).</p><p>I ✓: İkisi de 2 puan. II ✓: En yüksek puan (3) alan rüzgâr, güneş ve HES yenilenebilirdir. III ✗: Hava koşullarına bağlı olmayan termik ve nükleer santraller en düşük puanı almıştır. Nükleeri “sera gazı salmadığı için yenilenebilir” sayan öğrenci nükleere 3 puan verip I’i yanlış bulur; HES’i hava koşullarından bağımsız sanan öğrenci ise HES’e 4 puan verip II’yi yanlış değerlendirir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir robot süpürge, şarj istasyonunda bataryasını doldurduktan sonra evde dolaşarak tozları toplar. Robotun bazı parçaları ve görevleri tabloda verilmiştir.</p><table class="rt"><tr><th>Parça</th><th>Görevi</th></tr><tr><td>Tekerlek motorları</td><td>Robotu ev içinde hareket ettirmek</td></tr><tr><td>Fırça motoru</td><td>Fırçaları döndürüp tozu emiş ağzına süpürmek</td></tr><tr><td>LED ışıklar</td><td>Şarj durumunu ve çalışma modunu göstermek</td></tr><tr><td>Şarjlı batarya</td><td>Robotun çalışması için gereken enerjiyi depolamak</td></tr></table><p>Buna göre;</p><p>I. Tekerlekleri döndüren motorlar hareket enerjisini elektrik enerjisine dönüştürür.<br>II. Fırçaları döndüren motorlar ile LED ışıklar elektrik enerjisini farklı enerji türlerine dönüştürür.<br>III. Robot süpürge, elektrik enerjisinin hareket enerjisine dönüşümünü temel alan bir uygulamadır.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I, II ve III"],
+  a: "C",
+  s: `<p>I ✗: Elektrik motorları elektrik enerjisini <b>hareket</b> enerjisine dönüştürür; hareket enerjisini elektriğe dönüştüren jeneratördür. II ✓: Fırça motorları elektriği hareket enerjisine, LED’ler ise ışık enerjisine dönüştürür; bu iki tür farklıdır. III ✓: Robotlar, elektrik enerjisinin hareket enerjisine dönüşümü temel alınarak geliştirilmiştir; robot süpürge de motorlarıyla hareket eder ve fırçalarını döndürür.</p><p>I’i seçen öğrenci motor ile jeneratörü karıştırmıştır. III’ü eleyen öğrenci robotun asıl işini (hareket ederek temizlemek) görmeyip LED ve batarya gibi yan parçalara odaklanmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci termik ve nükleer santrallerle ilgili aşağıdaki bilgileri Venn şemasında doğru bölgelere yerleştirmek istiyor. (1: yalnız termik, 2: ikisi için ortak, 3: yalnız nükleer)</p><div class="fig"><svg viewBox="0 0 510 196" width="510" role="img" aria-label="Termik ve nükleer santral Venn şeması: 1 yalnız termik, 2 ortak, 3 yalnız nükleer" font-family="sans-serif"><circle cx="190" cy="100" r="88" fill="#fee2e2" fill-opacity="0.6" stroke="#b91c1c" stroke-width="2"/><circle cx="320" cy="100" r="88" fill="#dbeafe" fill-opacity="0.6" stroke="#1d4ed8" stroke-width="2"/><text x="150" y="24" font-size="13" text-anchor="middle" font-weight="bold" fill="#991b1b">Termik santral</text><text x="360" y="24" font-size="13" text-anchor="middle" font-weight="bold" fill="#1e3a8a">Nükleer santral</text><text x="150" y="108" font-size="22" text-anchor="middle" font-weight="bold" fill="#1e293b">1</text><text x="255" y="108" font-size="22" text-anchor="middle" font-weight="bold" fill="#1e293b">2</text><text x="360" y="108" font-size="22" text-anchor="middle" font-weight="bold" fill="#1e293b">3</text></svg></div><p><b>a.</b> Türbini su buharı döndürür.<br><b>b.</b> Yakıt yakıldığı için karbondioksit salınır.<br><b>c.</b> Uzun süre tehlikeli kalan radyoaktif atıklar oluşur.<br><b>d.</b> Yenilenemez bir enerji kaynağı kullanır.<br><b>e.</b> Çok az miktarda yakıtla çok büyük miktarda enerji üretilir.</p><p>Bilgilerin yerleşimi aşağıdakilerin hangisinde <b>doğru</b> verilmiştir?</p>`,
+  c: ["1: a, b — 2: d — 3: c, e", "1: b — 2: a, d, e — 3: c", "1: b, d — 2: a — 3: c, e", "1: b — 2: a, d — 3: c, e"],
+  a: "D",
+  s: `<p>a: İki santralde de ısıtılan suyun buharı türbini döndürür → <b>2</b>. b: Yakıt yakılması yalnızca termik santralde vardır → <b>1</b>. c: Radyoaktif atık yalnızca nükleer santralde oluşur → <b>3</b>. d: Kömür, petrol, doğal gaz da uranyum da yenilenemez → <b>2</b>. e: Çok az yakıtla çok büyük enerji nükleer santralin özelliğidir → <b>3</b>. Doğru yerleşim D’dir.</p><p>A ✗: Su buharı yalnız termiğe yazılmıştır. B ✗: “Az yakıtla çok enerji” ortak sayılmıştır. C ✗: Nükleer santral sera gazı salmadığı için yenilenebilir sanılmış, d yalnız termiğe yazılmıştır; bu en sık yapılan hatadır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Başlangıçta nötr olan bir balonu nötr ve kuru saçına sürten Can, balonu musluktan akan ince su akışına dokundurmadan yaklaştırıyor ve su akışının balona doğru <b>eğildiğini</b> görüyor. Can aynı deneyi, ipekle sürtülerek pozitif (+) yüklendiği bilinen bir cam çubukla da yapıyor ve su akışının bu çubuğa doğru da eğildiğini görüyor.</p><div class="fig"><svg viewBox="0 0 320 196" width="320" role="img" aria-label="Musluktan akan su akışı yaklaştırılan balona doğru eğiliyor" font-family="sans-serif"><rect x="60" y="10" width="90" height="18" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/><rect x="130" y="28" width="18" height="18" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/><text x="100" y="23" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Musluk</text><path d="M139 46 C 139 90, 150 120, 178 170" fill="none" stroke="#38bdf8" stroke-width="4"/><line x1="139" y1="46" x2="139" y2="170" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/><text x="110" y="186" font-size="11" text-anchor="middle" fill="#64748b">balon yokken</text><ellipse cx="235" cy="120" rx="34" ry="42" fill="#fecaca" stroke="#b91c1c" stroke-width="2"/><line x1="235" y1="162" x2="235" y2="190" stroke="#475569" stroke-width="1.5"/><text x="235" y="124" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">Balon</text><text x="178" y="186" font-size="11" text-anchor="middle" fill="#0369a1">akış</text></svg></div><p>Can’ın gözlemleriyle ilgili;</p><p>I. Su akışı, kendisine yaklaştırılan cisim (+) yüklü olsa da (−) yüklü olsa da bu cisme doğru eğilebilir.<br>II. Su akışının balona doğru eğilmesi, suyun balonla zıt cins yüklü olduğunu kesinleştirir.<br>III. Balon ile sürtüldüğü saç, zıt cins ve eşit miktarda elektrik yüküyle yüklenmiştir.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: Yüklü bir cisim nötr bir cismi, kendi yükü (+) da olsa (−) da olsa çeker. Musluktan akan su nötr olduğunda (+) cam çubuğa da, (−) yüklü bir cisme de doğru eğilir; Can’ın gözlemleri de akışın (+) cam çubuğa çekildiğini gösteriyor.</p><p>II ✗: Çekme zıt yükle de, nötr cisimle de olur; tek başına zıt yükü kesinleştirmez. Hatta akış hem balona hem (+) çubuğa çekildiğine göre, balon (−) ise akış ancak nötr olabilir. III ✓: Sürtünen iki nötr cisim arasında elektron alışverişi olur; biri ne kadar elektron kazanırsa diğeri o kadar kaybeder, zıt cins ve eşit miktarda yüklenirler.</p><p>II’yi seçen öğrenci “çekme = zıt yük” yanılgısına düşmüştür. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir şehrin üç ilçesine bir yılda dağıtılan elektrik enerjisi ile abonelere faturalandırılan elektrik enerjisi tabloda verilmiştir. Dağıtılan ama faturalandırılamayan enerji “kayıp-kaçak” olarak adlandırılır; bunun önemli bir kısmı sayaçtan geçmeyen <b>kaçak elektrik</b> kullanımından kaynaklanır.</p><table class="rt"><tr><th>İlçe</th><th>Dağıtılan enerji (milyon kWh)</th><th>Faturalandırılan enerji (milyon kWh)</th></tr><tr><td>X</td><td>200</td><td>180</td></tr><tr><td>Y</td><td>150</td><td>120</td></tr><tr><td>Z</td><td>300</td><td>285</td></tr></table><p>Buna göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Y ilçesinde dağıtılan enerjinin beşte biri faturalandırılamamıştır.", "Faturalandırılamayan enerji miktarı en fazla olan ilçe Z’dir.", "Bir ilçeye dağıtılan enerji arttıkça kayıp-kaçak oranı da artmaktadır.", "Faturalandırılamayan enerjinin bedeli yalnızca kaçak elektrik kullananları etkiler; ülke ekonomisine bir etkisi yoktur."],
+  a: "A",
+  s: `<p>Faturalandırılamayan enerji: X’te 200 − 180 = 20, Y’de 150 − 120 = <b>30</b>, Z’de 300 − 285 = 15 milyon kWh. Oranlar: X 20/200 = %10, Y 30/150 = <b>%20 = beşte bir</b> (A ✓), Z 15/300 = %5.</p><p>B ✗: En fazla kayıp-kaçak Y’dedir; Z en çok enerji dağıtılan ilçe olduğu için seçilir. C ✗: En çok enerji dağıtılan Z’nin oranı en düşüktür. D ✗: Üretilip faturalandırılamayan enerjinin maliyeti tüm topluma ve ülke ekonomisine yansır; kurallara aykırı bağlantılar ayrıca yangın ve çarpılma tehlikesi yaratır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Gücü <b>2000 W</b> olan bir su ısıtıcısında (kettle) farklı miktarlardaki suyun kaynama süreleri tabloda verilmiştir.</p><table class="rt"><tr><th>Su miktarı</th><th>Kaynama süresi</th></tr><tr><td>1,5 L</td><td>5 dakika</td></tr><tr><td>0,5 L</td><td>2 dakika</td></tr></table><p>Bir ailede günde <b>6 kez</b> çay ve kahve için su kaynatılıyor; her seferinde yalnızca 0,5 L su kullanıldığı hâlde ısıtıcı her seferinde 1,5 L su ile dolduruluyor. Elektriğin 1 kWh’i 2,5 TL’dir (1 kW = 1000 W, 1 saat = 60 dakika).</p><p>Aile her seferinde yalnızca ihtiyacı olan 0,5 L suyu kaynatırsa 30 günde kaç TL tasarruf eder?</p>`,
+  c: ["18", "30", "45", "75"],
+  a: "C",
+  s: `<p>Her kaynatmada ısıtıcı 5 − 2 = 3 dakika daha az çalışır: 3 dk = {{1|20}} saat = 0,05 h. Bir seferde tasarruf: 2 kW × 0,05 h = 0,1 kWh. Günde 6 kez, 30 günde 180 kez: 0,1 × 180 = <b>18 kWh</b>. Bedel: 18 × 2,5 = <b>45 TL</b>.</p><p>18: Tasarruf edilen enerji (kWh) TL sanılmıştır. 30: 0,5 L kaynatmanın 30 günlük bedeli hesaplanmıştır (2 dk). 75: 1,5 L kaynatmanın 30 günlük bedelinin tamamı tasarruf sayılmıştır (5 dk); oysa aile yine su kaynatacaktır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Başlangıçta nötr olan K ve L cisimleri yalnızca birbirine sürtülüyor. Bu sırada N cismi de başka bir işlemle elektrikleniyor. İşlemlerden sonra K, M ve N cisimlerindeki (+) ve (−) yük sayıları tabloda verilmiştir.</p><table class="rt"><tr><th>Cisim</th><th>(+) yük sayısı</th><th>(−) yük sayısı</th></tr><tr><td>K</td><td>16</td><td>19</td></tr><tr><td>L</td><td>?</td><td>?</td></tr><tr><td>M</td><td>14</td><td>14</td></tr><tr><td>N</td><td>11</td><td>9</td></tr></table><p>Buna göre;</p><p>I. L cisminde elektron sayısı proton sayısından 3 azdır.<br>II. K ve N cisimleri birbirine yaklaştırılırsa birbirini iter.<br>III. M cismi, K’ye de N’ye de ayrı ayrı yaklaştırıldığında çekilir.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>K’de 19 − 16 = 3 fazla elektron vardır; K (−) yüklüdür. K ve L nötrken yalnızca birbirine sürtüldüğüne göre K’nin aldığı 3 elektronu L vermiştir: L’de elektron sayısı proton sayısından 3 azdır, L (+) yüklüdür (I ✓). L’nin toplam yük sayısı bilinmese de fark kesindir.</p><p>N’de 11 (+), 9 (−) → N (+) yüklüdür. K (−) ile N (+) zıt yüklüdür, birbirini <b>çeker</b> (II ✗). M’de (+) ve (−) sayıları eşittir; M nötrdür ve yüklü K’ye de yüklü N’ye de çekilir (III ✓).</p><p>II’yi seçen öğrenci yükün cinsini yük sayılarının büyüklüğüne göre karşılaştırmıştır; III’ü eleyen öğrenci nötr M’yi “yüksüz, etkileşmez” sanmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan iplerle asılı <b>K, L ve M</b> küreleriyle iki aşamalı bir etkinlik yapılıyor.</p><table class="rt"><tr><th>Aşama</th><th>Yapılan işlem</th><th>Gözlem</th></tr><tr><td>1</td><td>K ve L birbirine dokundurulmadan yaklaştırılıyor.</td><td>K ve L birbirini itiyor.</td></tr><tr><td>2</td><td>M, önce K’ye sonra L’ye ayrı ayrı dokundurulmadan yaklaştırılıyor.</td><td>M hem K’ye hem L’ye doğru çekiliyor.</td></tr></table><p>Bu etkinliğin sonuçlarına dayanarak aşağıdaki yargılardan hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["K ve L küreleri elektrik yüklüdür.", "K ve L küreleri aynı cins elektrik yüküyle yüklüdür.", "M küresi, K küresiyle aynı cins elektrik yüküyle yüklü değildir.", "M küresi elektriksel olarak nötrdür."],
+  a: "D",
+  s: `<p>A ve B: K ile L birbirini itiyor; itme yalnızca iki yüklü ve aynı cins cisim arasında olur → ulaşılır. C: M, yüklü K’ye çekiliyor; M, K ile aynı cins yüklü olsaydı itilirdi → ulaşılır.</p><p>D ✓: M, K ve L’nin ikisine de çekiliyor; ama K ile L <b>aynı cins</b> yüklüdür. M nötr olabileceği gibi K ve L’ye zıt yüklü de olabilir; iki durumda da her ikisine çekilir. “İki cisme de çekilen cisim nötrdür” sonucu ancak bu iki cisim <b>zıt</b> yüklü olduğunda geçerlidir (2025 LGS’de P ve R zıt yüklüydü). Kuralı koşulunu kontrol etmeden uygulamak bu sorunun tuzağıdır. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Başlangıçta nötr olan bir elektroskopla sırasıyla şu adımlar uygulanıyor:</p><p><b>Adım 1:</b> Topuza (+) yüklü X küresi dokundurulup ayrılıyor.<br><b>Adım 2:</b> Topuza nötr ve iletken Y küresi dokundurulup ayrılıyor.<br><b>Adım 3:</b> Topuza, yük miktarı elektroskobunkinden çok fazla olan (−) yüklü Z küresi dokundurulup ayrılıyor.<br><b>Adım 4:</b> Topuza çıplak parmakla dokunulup el çekiliyor.</p><p>Her adımın sonunda elektroskop yapraklarının açıklığı ölçülüp grafiğe işleniyor (Adım 0: başlangıç).</p><div class="fig"><svg viewBox="0 0 560 270" width="560" role="img" aria-label="Dört grafik: I 0,3,2,0,0; II 0,3,3,3,0; III 0,3,2,3,0; IV 0,3,2,3,3" font-family="sans-serif"><text x="18" y="24" font-size="14" text-anchor="start" font-weight="bold" fill="#1e293b">I</text><line x1="50" y1="106" x2="260" y2="106" stroke="#334155" stroke-width="1.5"/><line x1="50" y1="106" x2="50" y2="22" stroke="#334155" stroke-width="1.5"/><text x="44" y="40" font-size="11" text-anchor="end" fill="#1e293b">Açıklık</text><text x="73" y="121" font-size="11" text-anchor="middle" fill="#1e293b">0</text><rect x="102" y="40" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="113" y="121" font-size="11" text-anchor="middle" fill="#1e293b">1</text><rect x="142" y="62" width="22" height="44" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="153" y="121" font-size="11" text-anchor="middle" fill="#1e293b">2</text><text x="193" y="121" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="233" y="121" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="155" y="136" font-size="11" text-anchor="middle" fill="#475569">Adım</text><text x="293" y="24" font-size="14" text-anchor="start" font-weight="bold" fill="#1e293b">II</text><line x1="325" y1="106" x2="535" y2="106" stroke="#334155" stroke-width="1.5"/><line x1="325" y1="106" x2="325" y2="22" stroke="#334155" stroke-width="1.5"/><text x="319" y="40" font-size="11" text-anchor="end" fill="#1e293b">Açıklık</text><text x="348" y="121" font-size="11" text-anchor="middle" fill="#1e293b">0</text><rect x="377" y="40" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="388" y="121" font-size="11" text-anchor="middle" fill="#1e293b">1</text><rect x="417" y="40" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="428" y="121" font-size="11" text-anchor="middle" fill="#1e293b">2</text><rect x="457" y="40" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="468" y="121" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="508" y="121" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="430" y="136" font-size="11" text-anchor="middle" fill="#475569">Adım</text><text x="18" y="154" font-size="14" text-anchor="start" font-weight="bold" fill="#1e293b">III</text><line x1="50" y1="236" x2="260" y2="236" stroke="#334155" stroke-width="1.5"/><line x1="50" y1="236" x2="50" y2="152" stroke="#334155" stroke-width="1.5"/><text x="44" y="170" font-size="11" text-anchor="end" fill="#1e293b">Açıklık</text><text x="73" y="251" font-size="11" text-anchor="middle" fill="#1e293b">0</text><rect x="102" y="170" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="113" y="251" font-size="11" text-anchor="middle" fill="#1e293b">1</text><rect x="142" y="192" width="22" height="44" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="153" y="251" font-size="11" text-anchor="middle" fill="#1e293b">2</text><rect x="182" y="170" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="193" y="251" font-size="11" text-anchor="middle" fill="#1e293b">3</text><text x="233" y="251" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="155" y="266" font-size="11" text-anchor="middle" fill="#475569">Adım</text><text x="293" y="154" font-size="14" text-anchor="start" font-weight="bold" fill="#1e293b">IV</text><line x1="325" y1="236" x2="535" y2="236" stroke="#334155" stroke-width="1.5"/><line x1="325" y1="236" x2="325" y2="152" stroke="#334155" stroke-width="1.5"/><text x="319" y="170" font-size="11" text-anchor="end" fill="#1e293b">Açıklık</text><text x="348" y="251" font-size="11" text-anchor="middle" fill="#1e293b">0</text><rect x="377" y="170" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="388" y="251" font-size="11" text-anchor="middle" fill="#1e293b">1</text><rect x="417" y="192" width="22" height="44" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="428" y="251" font-size="11" text-anchor="middle" fill="#1e293b">2</text><rect x="457" y="170" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="468" y="251" font-size="11" text-anchor="middle" fill="#1e293b">3</text><rect x="497" y="170" width="22" height="66" fill="#93c5fd" stroke="#1e40af" stroke-width="1"/><text x="508" y="251" font-size="11" text-anchor="middle" fill="#1e293b">4</text><text x="430" y="266" font-size="11" text-anchor="middle" fill="#475569">Adım</text></svg></div><p>Bu adımlara ait doğru grafik hangisidir?</p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "C",
+  s: `<p>Adım 1: (+) X dokununca elektroskop (+) yüklenir, yapraklar açılır. Adım 2: Nötr iletken Y yükü paylaşır; elektroskobun yükü azalır, yapraklar <b>biraz kapanır</b> ama kapanmaz. Adım 3: Çok fazla (−) yüklü Z dokununca elektroskobun (+) yükü önce nötrlenir, sonra fazla (−) yük gelir; yapraklar kapanıp <b>yeniden açılır</b>, adım sonunda açıktır. Adım 4: Parmakla dokunmak elektroskobu topraklar; elektroskop nötr olur, yapraklar kapanır. Sıra: 0 → açık → daha az açık → açık → kapalı = III.</p><p>I ✗: Adım 3’te yük cinsi değiştiği hâlde açıklığın sıfırda kaldığı sanılmıştır (“zıt yük yaprakları kapatır”). II ✗: Nötr Y’nin hiçbir etki yapmadığı sanılmıştır. IV ✗: Parmakla dokunmanın topraklama olduğu fark edilmemiştir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Vantilatörlerde kullanılan iki farklı elektrik motoruna verilen her 100 J elektrik enerjisinin dönüştüğü enerji türleri ölçülmüş ve sonuçlar şemada gösterilmiştir.</p><div class="fig"><svg viewBox="0 0 480 290" width="480" role="img" aria-label="Motor A: 100 J elektrik, 60 J hareket, 40 J ısı. Motor B: 100 J elektrik, 80 J hareket, 20 J ısı" font-family="sans-serif"><text x="10" y="68" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">Motor A</text><rect x="90" y="10" width="120" height="110.00000000000001" rx="0" fill="#fde68a" stroke="#b45309" stroke-width="1"/><text x="150" y="65" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Elektrik</text><text x="150" y="79" font-size="11" text-anchor="middle" fill="#1e293b">100 J</text><polygon points="210,10 330,10 330,76.0 210,76.0" fill="#bbf7d0" stroke="#15803d" stroke-width="1"/><polygon points="210,76.0 330,88.0 330,132.0 210,120.0" fill="#fecaca" stroke="#b91c1c" stroke-width="1"/><text x="338" y="47.0" font-size="12" text-anchor="start" font-weight="bold" fill="#15803d">Hareket: 60 J</text><text x="338" y="114.0" font-size="12" text-anchor="start" font-weight="bold" fill="#b91c1c">Isı: 40 J</text><text x="10" y="208" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">Motor B</text><rect x="90" y="150" width="120" height="110.00000000000001" rx="0" fill="#fde68a" stroke="#b45309" stroke-width="1"/><text x="150" y="205" font-size="11" text-anchor="middle" font-weight="bold" fill="#1e293b">Elektrik</text><text x="150" y="219" font-size="11" text-anchor="middle" fill="#1e293b">100 J</text><polygon points="210,150 330,150 330,238.0 210,238.0" fill="#bbf7d0" stroke="#15803d" stroke-width="1"/><polygon points="210,238.0 330,250.0 330,272.0 210,260.0" fill="#fecaca" stroke="#b91c1c" stroke-width="1"/><text x="338" y="198.0" font-size="12" text-anchor="start" font-weight="bold" fill="#15803d">Hareket: 80 J</text><text x="338" y="265.0" font-size="12" text-anchor="start" font-weight="bold" fill="#b91c1c">Isı: 20 J</text></svg></div><p>Buna göre;</p><p>I. Aynı miktarda hareket enerjisi elde etmek için A motoru, B motorunun {{4|3}} katı elektrik enerjisi harcar.<br>II. İki motorda da elektrik enerjisinin yarıdan fazlası hareket enerjisine dönüşür.<br>III. B motoru elektrik enerjisini yalnızca hareket enerjisine dönüştürür.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p>I ✓: 240 J hareket enerjisi için A, 240 ÷ 60 × 100 = 400 J; B, 240 ÷ 80 × 100 = 300 J elektrik harcar. 400 ÷ 300 = {{4|3}}. (Kısaca: 80 ÷ 60 = {{4|3}}.)</p><p>II ✓: A’da 100 J’nin 60 J’si, B’de 80 J’si harekete dönüşür; ikisi de 50 J’den fazladır. III ✗: Şemaya göre B motorunda da 20 J ısı açığa çıkar; motorlar çalışırken ısınır.</p><p>I’i eleyen öğrenci oran yerine farka bakmış (“A, 20 J fazla harcar”) ya da oranı ters kurmuştur ({{3|4}}). III’ü seçen öğrenci verimli motorun hiç ısı üretmediğini sanmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir grup öğrenci, sürtünmeyle elektriklenen çubukların masadaki özdeş kâğıt parçalarından kaçını kaldırabildiğini sayıyor. Her deneyde çubuk kâğıtlara aynı uzaklıktan yaklaştırılıyor.</p><table class="rt"><tr><th>Deney</th><th>Çubuk</th><th>Kumaş</th><th>Sürtme sayısı</th><th>Kaldırılan kâğıt parçası</th></tr><tr><td>1</td><td>Ebonit</td><td>Yün</td><td>10</td><td>4</td></tr><tr><td>2</td><td>Ebonit</td><td>Yün</td><td>20</td><td>9</td></tr><tr><td>3</td><td>Cam</td><td>İpek</td><td>20</td><td>7</td></tr><tr><td>4</td><td>Cam</td><td>Yün</td><td>30</td><td>5</td></tr></table><p>Bu deney sonuçlarıyla ilgili;</p><p>I. 1. ve 2. deneyler karşılaştırılarak aynı çubuk ve kumaşta sürtme sayısı arttıkça kaldırılan kâğıt parçası sayısının arttığı sonucuna ulaşılabilir.<br>II. 2. ve 3. deneyler karşılaştırılarak ebonit ile camın zıt cins elektrik yüküyle yüklendiği sonucuna ulaşılabilir.<br>III. 3. ve 4. deneyler karşılaştırılarak kumaş türünün kaldırılan kâğıt parçası sayısını etkilediği sonucuna ulaşılabilir.</p><p>yargılarından hangileri doğrudur?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "A",
+  s: `<p>I ✓: 1. ve 2. deneylerde çubuk ve kumaş aynı, yalnızca sürtme sayısı farklıdır (10 → 20); kâğıt sayısı 4’ten 9’a çıkmıştır. Tek değişken değiştiği için bu karşılaştırma geçerlidir.</p><p>II ✗: Kâğıt parçaları nötrdür ve (+) çubuğa da (−) çubuğa da çekilir; kaldırılan kâğıt sayısı yükün cinsi hakkında bilgi vermez. III ✗: 3. ve 4. deneylerde hem kumaş türü (ipek → yün) hem sürtme sayısı (20 → 30) değişmiştir; iki değişken birden değiştiği için farkın kumaştan mı sürtme sayısından mı kaynaklandığı söylenemez.</p><p>III’ü seçen öğrenci deneydeki kontrol edilmesi gereken değişkeni gözden kaçırmıştır; II’yi seçen öğrenci ebonit (−), cam (+) bilgisini deneyden çıkmış sanmıştır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Dört santralde elektrik üretilirken gerçekleşen enerji aktarımları şemada verilmiştir. Sarı kutulardaki K, L, M ve N yerine enerji türleri yazılacaktır.</p><div class="fig"><svg viewBox="0 0 560 202" width="560" role="img" aria-label="HES, jeotermal, nükleer ve rüzgâr santrallerinin enerji zincirleri; K, L, M, N boşlukları" font-family="sans-serif"><text x="8" y="31" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">HES</text><rect x="100" y="6" width="136" height="40" rx="4" fill="#fef9c3" stroke="#334155" stroke-width="2"/><text x="168.0" y="23" font-size="11" text-anchor="middle" fill="#1e293b">Barajdaki suyun</text><text x="168.0" y="38" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">K enerjisi</text><line x1="236" y1="26" x2="252" y2="26" stroke="#334155" stroke-width="2"/><polygon points="252.0,26.0 244.6,29.1 244.6,22.9" fill="#334155"/><rect x="252" y="6" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="320.0" y="23" font-size="11" text-anchor="middle" fill="#1e293b">Akan suyun</text><text x="320.0" y="38" font-size="11" text-anchor="middle" fill="#1e293b">hareket enerjisi</text><line x1="388" y1="26" x2="404" y2="26" stroke="#334155" stroke-width="2"/><polygon points="404.0,26.0 396.6,29.1 396.6,22.9" fill="#334155"/><rect x="404" y="6" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="472.0" y="23" font-size="11" text-anchor="middle" fill="#1e293b">Türbin ve jeneratör</text><text x="472.0" y="38" font-size="11" text-anchor="middle" fill="#1e293b">elektrik enerjisi</text><text x="8" y="81" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">Jeotermal</text><rect x="100" y="56" width="136" height="40" rx="4" fill="#fef9c3" stroke="#334155" stroke-width="2"/><text x="168.0" y="73" font-size="11" text-anchor="middle" fill="#1e293b">Sıcak su ve buharın</text><text x="168.0" y="88" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">L enerjisi</text><line x1="236" y1="76" x2="252" y2="76" stroke="#334155" stroke-width="2"/><polygon points="252.0,76.0 244.6,79.1 244.6,72.9" fill="#334155"/><rect x="252" y="56" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="320.0" y="81" font-size="11" text-anchor="middle" fill="#1e293b">Türbin ve jeneratör</text><line x1="388" y1="76" x2="404" y2="76" stroke="#334155" stroke-width="2"/><polygon points="404.0,76.0 396.6,79.1 396.6,72.9" fill="#334155"/><rect x="404" y="56" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="472.0" y="81" font-size="11" text-anchor="middle" fill="#1e293b">Elektrik enerjisi</text><text x="8" y="131" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">Nükleer</text><rect x="100" y="106" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="168.0" y="123" font-size="11" text-anchor="middle" fill="#1e293b">Atom çekirdeklerinin</text><text x="168.0" y="138" font-size="11" text-anchor="middle" fill="#1e293b">parçalanması</text><line x1="236" y1="126" x2="252" y2="126" stroke="#334155" stroke-width="2"/><polygon points="252.0,126.0 244.6,129.1 244.6,122.9" fill="#334155"/><rect x="252" y="106" width="136" height="40" rx="4" fill="#fef9c3" stroke="#334155" stroke-width="2"/><text x="320.0" y="123" font-size="11" text-anchor="middle" fill="#1e293b">Açığa çıkan</text><text x="320.0" y="138" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">M enerjisi</text><line x1="388" y1="126" x2="404" y2="126" stroke="#334155" stroke-width="2"/><polygon points="404.0,126.0 396.6,129.1 396.6,122.9" fill="#334155"/><rect x="404" y="106" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="472.0" y="123" font-size="11" text-anchor="middle" fill="#1e293b">Su buharı → türbin</text><text x="472.0" y="138" font-size="11" text-anchor="middle" fill="#1e293b">ve jeneratör</text><text x="8" y="181" font-size="12" text-anchor="start" font-weight="bold" fill="#1e293b">Rüzgâr</text><rect x="100" y="156" width="136" height="40" rx="4" fill="#fef9c3" stroke="#334155" stroke-width="2"/><text x="168.0" y="173" font-size="11" text-anchor="middle" fill="#1e293b">Rüzgârın</text><text x="168.0" y="188" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">N enerjisi</text><line x1="236" y1="176" x2="252" y2="176" stroke="#334155" stroke-width="2"/><polygon points="252.0,176.0 244.6,179.1 244.6,172.9" fill="#334155"/><rect x="252" y="156" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="320.0" y="181" font-size="11" text-anchor="middle" fill="#1e293b">Pervane ve türbin</text><line x1="388" y1="176" x2="404" y2="176" stroke="#334155" stroke-width="2"/><polygon points="404.0,176.0 396.6,179.1 396.6,172.9" fill="#334155"/><rect x="404" y="156" width="136" height="40" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.2"/><text x="472.0" y="181" font-size="11" text-anchor="middle" fill="#1e293b">Jeneratör → elektrik</text></svg></div><p>Şemadaki boşluklar aşağıdakilerin hangisinde <b>doğru</b> doldurulmuştur?</p>`,
+  c: ["K: Hareket — L: Isı — M: Kimyasal — N: Hareket", "K: Potansiyel — L: Kimyasal — M: Isı — N: Potansiyel", "K: Isı — L: Isı — M: Isı — N: Hareket", "K: Potansiyel — L: Isı — M: Isı — N: Hareket"],
+  a: "D",
+  s: `<p>K: Barajda yüksekte biriken su <b>potansiyel enerjiye</b> sahiptir; su aşağı akarken bu enerji hareket enerjisine dönüşür. L: Jeotermal santral yer altındaki sıcak su ve buharın <b>ısı enerjisini</b> kullanır. M: Nükleer santralde atom çekirdeklerinin parçalanmasıyla <b>ısı enerjisi</b> açığa çıkar ve bu ısı suyu buhara dönüştürür. N: Rüzgâr <b>hareket enerjisine</b> sahiptir. Doğru sıra D’dir.</p><p>A ✗: Barajda duran suyun enerjisi hareket değil potansiyeldir; nükleer santralde yakıt yakılmadığı için “kimyasal” yanlıştır (termik santral ile karıştırma). B ✗: Jeotermalde yanma yoktur; rüzgârın enerjisi potansiyel değildir. C ✗: HES’te ısı enerjisi kullanılmaz. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Yalıtkan ayaklar üzerindeki küçük <b>K</b> küresi negatif (−) yüklü, büyük <b>L</b> küresi ise nötrdür. İki küre de iletkendir. Küreler yalıtkan eldivenle birbirine dokundurulup yük alışverişi tamamlandıktan sonra ayrılıyor.</p><div class="fig"><svg viewBox="0 0 420 156" width="420" role="img" aria-label="Küçük negatif yüklü K küresi ve büyük nötr L küresi" font-family="sans-serif"><circle cx="120" cy="70" r="18" fill="#dbeafe" stroke="#1e40af" stroke-width="2"/><text x="120" y="75" font-size="12" text-anchor="middle" font-weight="bold" fill="#1e293b">K</text><text x="120" y="40" font-size="11" text-anchor="middle" fill="#1d4ed8">(−) yüklü</text><line x1="120" y1="88" x2="120" y2="140" stroke="#78716c" stroke-width="4"/><rect x="100" y="140" width="40" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/><circle cx="300" cy="66" r="46" fill="#e5e7eb" stroke="#475569" stroke-width="2"/><text x="300" y="71" font-size="14" text-anchor="middle" font-weight="bold" fill="#1e293b">L</text><text x="300" y="12" font-size="11" text-anchor="middle" fill="#475569">nötr</text><line x1="300" y1="112" x2="300" y2="140" stroke="#78716c" stroke-width="4"/><rect x="280" y="140" width="40" height="6" rx="1" fill="#a8a29e" stroke="#57534e" stroke-width="1"/></svg></div><p>Bu olayla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Dokunmadan sonra iki küre de (−) yüklüdür ve L’nin yük miktarı K’ninkinden fazladır.", "Dokunmadan sonra iki kürenin yük miktarları birbirine eşittir.", "Dokunma sırasında L’den K’ye proton geçmiştir.", "Dokunmadan sonra K (−), L (+) yüklüdür."],
+  a: "A",
+  s: `<p>Dokunma ile elektriklenmede K’deki fazla elektronların bir kısmı L’ye geçer; iki küre de K ile <b>aynı cins</b>, yani (−) yüklenir. Kürelerin büyüklükleri farklı olduğundan yük eşit paylaşılmaz; <b>büyük küre daha çok yük alır</b>. L’nin yükü K’ninkinden fazla olur (A ✓).</p><p>B ✗: Eşit paylaşım yalnızca özdeş (aynı büyüklükteki) kürelerde olur. C ✗: Elektriklenmede protonlar yer değiştirmez; L’ye geçen K’nin elektronlarıdır. D ✗: Dokunmada cisimler zıt değil aynı cins yüklenir; zıt yüklenme sürtünmede olur. Cevap <b>A</b>.</p>` }
 ]
 });
