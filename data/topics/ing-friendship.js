@@ -460,6 +460,426 @@ qs: [
   ],
   a: "C",
   s: `<p>Robotlara meraklı olan ve harcayacak parası olmayan <b>Deniz</b>, öğrencilere ücretsiz (<i>FREE</i>) olan ve gündüz (10:00–16:00) düzenlenen <b>Ticket 1 (City Exhibition Hall)</b> etkinliğine katılacaktır. Akşam canlı müzik dinlemeyi seven ve 50 doları olan <b>Berk</b> ise ücreti 30 dolar olan akşam (20:00–23:00) konserine (<b>Ticket 2 – Cultural Center</b>) gidecektir. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Selin sent a message to her friend Duru. Read their chat below:</p>
+<div class="fig"><svg viewBox="0 0 520 230" width="500" role="img" aria-label="Selin ve Duru arasındaki mesajlaşma, bir mesaj boş">
+<rect x="10" y="8" width="500" height="214" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<rect x="10" y="8" width="500" height="30" rx="10" fill="#1d4ed8"/>
+<text x="260" y="28" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Chat with Duru</text>
+<rect x="22" y="48" width="420" height="40" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="32" y="64" font-size="10.5" fill="#1e293b"><tspan font-weight="bold" fill="#1d4ed8">Selin:</tspan> Hi Duru! I’m having a birthday party at my place on</text>
+<text x="32" y="80" font-size="10.5" fill="#1e293b">Saturday at 3 p.m. Would you like to come?</text>
+<rect x="150" y="96" width="350" height="28" rx="8" fill="#ffffff" stroke="#16a34a" stroke-dasharray="5 3"/>
+<text x="160" y="115" font-size="10.5" fill="#1e293b"><tspan font-weight="bold" fill="#166534">Duru:</tspan> ______________________________</text>
+<rect x="22" y="132" width="420" height="40" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="32" y="148" font-size="10.5" fill="#1e293b"><tspan font-weight="bold" fill="#1d4ed8">Selin:</tspan> Oh, what a pity! I hope she gets well soon. Maybe</text>
+<text x="32" y="164" font-size="10.5" fill="#1e293b">we can celebrate together next week.</text>
+<rect x="150" y="180" width="350" height="28" rx="8" fill="#ffffff" stroke="#16a34a"/>
+<text x="160" y="199" font-size="10.5" fill="#1e293b"><tspan font-weight="bold" fill="#166534">Duru:</tspan> That would be lovely. Thanks for understanding!</text>
+</svg></div>
+<p>Which of the following best completes Duru’s missing message?</p>`,
+  c: [
+    `Thanks for inviting me! I’ll definitely be there with a nice present.`,
+    `I’m sorry, I can’t. My sister has a piano concert that afternoon.`,
+    `I’d love to, but I’m feeling a bit sick and I have to stay in bed.`,
+    `That’s very kind of you, but I can’t. My grandma is in hospital and we’re visiting her.`
+  ],
+  a: "D",
+  s: `<p>Boşluktan sonraki mesaja dikkat: Selin <i>“Oh, what a pity! I hope <b>she</b> gets well soon.”</i> (Ne yazık! Umarım <b>o</b> çabuk iyileşir.) diyor. Demek ki Duru daveti <b>reddetmiş</b> ve mazeret olarak <b>hasta olan bir kadından</b> (she) bahsetmiştir.</p>
+<ul>
+<li><b>A:</b> Daveti kabul ediyor; “what a pity” ile çelişir ✗</li>
+<li><b>B:</b> Reddediyor ve “sister” (she) geçiyor ama kız kardeş hasta değil, konseri var; “get well soon” uymaz ✗</li>
+<li><b>C:</b> Hasta olan Duru’nun kendisi; Selin bu durumda “I hope <b>you</b> get well soon” derdi ✗ (güçlü çeldirici!)</li>
+<li><b>D:</b> Nazik bir ret + mazeret: büyükannesi hastanede → “I hope <b>she</b> gets well soon” ile tam uyumlu ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>A school counsellor asked <b>200 students</b> the question “<i>Why did you turn down your friend’s last invitation?</i>”. The results are shown in the pie chart below:</p>
+<div class="fig"><svg viewBox="0 0 500 210" width="480" role="img" aria-label="200 öğrencinin daveti reddetme nedenleri pasta grafiği">
+<text x="250" y="16" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Reasons for Refusing an Invitation (200 students)</text>
+<path d="M130,105 L130.0,25.0 A80,80 0 0 1 177.0,169.7 z" fill="#3b82f6" stroke="#ffffff" stroke-width="2"/>
+<text x="177.2" y="93.7" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">%40</text>
+<path d="M130,105 L177.0,169.7 A80,80 0 0 1 65.3,152.0 z" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
+<text x="122.2" y="158.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">%25</text>
+<path d="M130,105 L65.3,152.0 A80,80 0 0 1 65.3,58.0 z" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+<text x="80.4" y="109.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">%20</text>
+<path d="M130,105 L65.3,58.0 A80,80 0 0 1 105.3,28.9 z" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+<text x="100.8" y="68.9" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">%10</text>
+<path d="M130,105 L105.3,28.9 A80,80 0 0 1 130.0,25.0 z" fill="#8b5cf6" stroke="#ffffff" stroke-width="2"/>
+<text x="115.3" y="16.2" font-size="11" font-weight="bold" fill="#5b21b6" text-anchor="middle">%5</text>
+<rect x="270" y="40" width="14" height="12" fill="#3b82f6"/><text x="292" y="50" font-size="11" fill="#1e293b">Homework / an exam (%40)</text>
+<rect x="270" y="64" width="14" height="12" fill="#f59e0b"/><text x="292" y="74" font-size="11" fill="#1e293b">Family plans (%25)</text>
+<rect x="270" y="88" width="14" height="12" fill="#ef4444"/><text x="292" y="98" font-size="11" fill="#1e293b">Feeling ill (%20)</text>
+<rect x="270" y="112" width="14" height="12" fill="#10b981"/><text x="292" y="122" font-size="11" fill="#1e293b">Not interested (%10)</text>
+<rect x="270" y="136" width="14" height="12" fill="#8b5cf6"/><text x="292" y="146" font-size="11" fill="#1e293b">No excuse (%5)</text>
+</svg></div>
+<p>According to the chart, which of the following is <b>NOT</b> correct?</p>`,
+  c: [
+    `School responsibilities were the most common reason for refusing an invitation.`,
+    `Forty students didn’t accept the invitation because they were not feeling well.`,
+    `Fewer students refused because of family plans than because of an illness.`,
+    `Only ten students turned down the invitation without making any excuse.`
+  ],
+  a: "C",
+  s: `<p>Yüzdeleri 200 öğrenciye göre sayıya çevirelim: Homework/exam %40 = <b>80</b>, Family plans %25 = <b>50</b>, Feeling ill %20 = <b>40</b>, Not interested %10 = <b>20</b>, No excuse %5 = <b>10</b>.</p>
+<ul>
+<li><b>A:</b> Ödev/sınav (okul sorumlulukları) %40 ile en yaygın nedendir ✓</li>
+<li><b>B:</b> Kendini iyi hissetmeyen (<i>not feeling well = feeling ill</i>) öğrenci sayısı 40’tır ✓</li>
+<li><b>C:</b> Aile planları (50) hastalıktan (40) <b>daha fazladır</b>; “fewer” (daha az) demek yanlıştır ✗</li>
+<li><b>D:</b> Mazeretsiz reddeden (<i>without making any excuse</i>) 10 öğrencidir ✓</li>
+</ul>
+<p>Doğru olmayan ifade C’dir. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>The sentences of a phone conversation between <b>Arda</b> and <b>Kaya</b> are mixed up:</p>
+<div class="fig"><svg viewBox="0 0 540 200" width="520" role="img" aria-label="Karışık verilmiş telefon konuşması cümleleri">
+<g font-size="10.5" fill="#1e293b">
+<rect x="10" y="8" width="520" height="32" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="20" y="29"><tspan font-weight="bold" fill="#b45309">I. Kaya:</tspan> Sorry, I can’t make it today. I have a dentist appointment at 4.</text>
+<rect x="10" y="46" width="520" height="32" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="20" y="67"><tspan font-weight="bold" fill="#1d4ed8">II. Arda:</tspan> Hi Kaya! Are you free this afternoon? Let’s play basketball in the park.</text>
+<rect x="10" y="84" width="520" height="32" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="20" y="105"><tspan font-weight="bold" fill="#1d4ed8">III. Arda:</tspan> No problem. How about tomorrow after school, then?</text>
+<rect x="10" y="122" width="520" height="32" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="20" y="143"><tspan font-weight="bold" fill="#b45309">IV. Kaya:</tspan> Sounds great! But I don’t have a ball anymore.</text>
+<rect x="10" y="160" width="520" height="32" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="20" y="181"><tspan font-weight="bold" fill="#1d4ed8">V. Arda:</tspan> Don’t worry, I’ll bring mine. See you at the court at 5!</text>
+</g>
+</svg></div>
+<p>Which of the following is the correct order of the conversation?</p>`,
+  c: [
+    `II – III – I – IV – V`,
+    `II – I – IV – III – V`,
+    `I – II – III – V – IV`,
+    `II – I – III – IV – V`
+  ],
+  a: "D",
+  s: `<p>Konuşmanın mantıksal akışı: <b>Davet → Ret + mazeret → Yeni teklif → Kabul + sorun → Çözüm</b>.</p>
+<ul>
+<li><b>II:</b> Arda daveti yapar (basketbol).</li>
+<li><b>I:</b> Kaya dişçi randevusunu mazeret göstererek reddeder.</li>
+<li><b>III:</b> Arda “No problem.” diyerek yarın için yeni teklif yapar.</li>
+<li><b>IV:</b> Kaya kabul eder ama topu olmadığını söyler.</li>
+<li><b>V:</b> Arda kendi topunu getireceğini söyler.</li>
+</ul>
+<p>B’de III ile IV yer değiştirmiştir: Kaya reddettikten hemen sonra “Sounds great!” diyemez. Doğru sıra II – I – III – IV – V. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>The table below shows the personal traits of four girls:</p>
+<div class="fig"><svg viewBox="0 0 520 175" width="500" role="img" aria-label="Dört kızın kişilik özellikleri tablosu">
+<rect x="10" y="8" width="500" height="160" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<rect x="10" y="8" width="500" height="32" rx="8" fill="#0f766e"/>
+<g font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+<text x="65" y="29">Name</text><text x="170" y="29">Keeps secrets</text><text x="275" y="29">Good listener</text><text x="380" y="29">Bad-tempered</text><text x="465" y="29">Generous</text>
+</g>
+<g stroke="#cbd5e1"><line x1="10" y1="72" x2="510" y2="72"/><line x1="10" y1="104" x2="510" y2="104"/><line x1="10" y1="136" x2="510" y2="136"/>
+<line x1="120" y1="8" x2="120" y2="168"/><line x1="225" y1="8" x2="225" y2="168"/><line x1="330" y1="8" x2="330" y2="168"/><line x1="425" y1="8" x2="425" y2="168"/></g>
+<g font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="65" y="61">Lara</text><text x="65" y="93">Mina</text><text x="65" y="125">Nehir</text><text x="65" y="157">Ela</text>
+</g>
+<g font-size="14" font-weight="bold" text-anchor="middle">
+<text x="170" y="62" fill="#16a34a">✓</text><text x="275" y="62" fill="#16a34a">✓</text><text x="380" y="62" fill="#dc2626">✗</text><text x="465" y="62" fill="#dc2626">✗</text>
+<text x="170" y="94" fill="#16a34a">✓</text><text x="275" y="94" fill="#16a34a">✓</text><text x="380" y="94" fill="#16a34a">✓</text><text x="465" y="94" fill="#dc2626">✗</text>
+<text x="170" y="126" fill="#16a34a">✓</text><text x="275" y="126" fill="#16a34a">✓</text><text x="380" y="126" fill="#16a34a">✓</text><text x="465" y="126" fill="#16a34a">✓</text>
+<text x="170" y="158" fill="#dc2626">✗</text><text x="275" y="158" fill="#16a34a">✓</text><text x="380" y="158" fill="#16a34a">✓</text><text x="465" y="158" fill="#dc2626">✗</text>
+</g>
+</svg></div>
+<p><b>Ayşe:</b> “My best friend never tells my secrets to anyone, and she always lends an ear when I have a problem. However, she loses her temper very easily. Also, she isn’t the kind of person who shares her things with others.”</p>
+<p>According to the table, who is Ayşe’s best friend?</p>`,
+  c: [`Mina`, `Lara`, `Nehir`, `Ela`],
+  a: "A",
+  s: `<p>Ayşe’nin anlattığı özellikleri tabloya çevirelim:</p>
+<ul>
+<li><i>never tells my secrets</i> → <b>Keeps secrets ✓</b></li>
+<li><i>lends an ear</i> (dinler) → <b>Good listener ✓</b></li>
+<li><i>loses her temper very easily</i> (çabuk sinirlenir) → <b>Bad-tempered ✓</b></li>
+<li><i>isn’t the kind of person who shares her things</i> → <b>Generous ✗</b></li>
+</ul>
+<p>Lara sinirli değildir (✗); Nehir cömerttir (✓), bu yüzden elenir; Ela sır tutmaz (✗). Dört özelliğe birden uyan tek kişi <b>Mina</b>’dır. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Read the text below.</p>
+<p><i>Last month, Jake and his best friend Owen had a big argument. Owen promised to come to Jake’s football final, but he didn’t show up. Jake was so upset that he didn’t talk to Owen for a whole week. Then, one evening, Owen sent him a long message. He explained that his grandfather became ill on the day of the match, so he stayed with him at the hospital. His phone battery was also dead, so he couldn’t call Jake. He apologized again and again. Jake felt really bad about his behaviour. The next day, he met Owen at their favourite café and said sorry, too. Now, they are closer than ever.</i></p>
+<p>Which of the following can be inferred from the text?</p>`,
+  c: [
+    `Owen missed the final because he forgot about his promise.`,
+    `Jake was the first person to apologize after the argument.`,
+    `Owen refused to apologize because he thought he was right.`,
+    `Jake got angry with Owen before he learned the real reason.`
+  ],
+  a: "D",
+  s: `<p>Metne göre Owen maça gelmeyince Jake bir hafta onunla konuşmamıştır. Gerçek neden (dedesinin hastalanması, telefonun şarjının bitmesi) ancak Owen’ın mesajıyla ortaya çıkmış ve Jake davranışından pişman olmuştur (<i>felt really bad about his behaviour</i>). Yani Jake, <b>gerçek nedeni öğrenmeden önce</b> Owen’a kızmıştır ✓</p>
+<ul>
+<li><b>A:</b> Owen sözünü unutmamış, dedesi hastalanmıştır ✗</li>
+<li><b>B:</b> İlk özür dileyen Owen’dır; Jake “said sorry, <b>too</b>” (o da özür diledi) ✗</li>
+<li><b>C:</b> Owen defalarca özür dilemiştir (<i>apologized again and again</i>) ✗</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Lily shared the post below on her school’s social media page:</p>
+<div class="fig"><svg viewBox="0 0 460 200" width="440" role="img" aria-label="Lily'nin ideal arkadaş özellikleri paylaşımı">
+<rect x="10" y="8" width="440" height="184" rx="12" fill="#fdf2f8" stroke="#db2777" stroke-width="2"/>
+<circle cx="38" cy="34" r="16" fill="#db2777"/><text x="38" y="39" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">L</text>
+<text x="62" y="31" font-size="12" font-weight="bold" fill="#831843">Lily_14</text>
+<text x="62" y="46" font-size="10" fill="#9d174d">My Top 3 in a Friend ♥</text>
+<g font-size="11" fill="#1e293b">
+<text x="30" y="78"><tspan font-weight="bold" fill="#be185d">1.</tspan> Someone who never lets me down</text>
+<text x="30" y="102"><tspan font-weight="bold" fill="#be185d">2.</tspan> Someone with a great sense of humour</text>
+<text x="30" y="126"><tspan font-weight="bold" fill="#be185d">3.</tspan> Someone who enjoys outdoor activities like hiking</text>
+</g>
+<rect x="30" y="140" width="400" height="38" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+<text x="230" y="157" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">NO WAY: People who gossip about others</text>
+<text x="230" y="172" font-size="10" fill="#991b1b" text-anchor="middle">behind their backs!</text>
+</svg></div>
+<p>Which of the following people would be the <b>best</b> friend for Lily?</p>`,
+  c: [
+    `Tom is a funny guy who loves hiking, but he sometimes breaks his promises.`,
+    `Jane is always there for her friends and loves camping, but she rarely tells jokes.`,
+    `Sara always keeps her promises, makes everyone laugh and goes trekking every weekend.`,
+    `Mia is reliable, humorous and keen on nature walks, but she often talks about others.`
+  ],
+  a: "C",
+  s: `<p>Lily’nin istediği üç özellik: <b>1.</b> asla hayal kırıklığına uğratmayan (güvenilir), <b>2.</b> espri anlayışı güçlü (komik), <b>3.</b> doğa yürüyüşü gibi açık hava etkinliklerini seven. Ayrıca <b>dedikodu yapan</b> kişileri hiç istemiyor.</p>
+<ul>
+<li><b>Tom:</b> Bazen sözünü tutmuyor → 1. madde ✗</li>
+<li><b>Jane:</b> Nadiren şaka yapıyor → 2. madde ✗</li>
+<li><b>Sara:</b> Sözünü tutuyor (güvenilir), herkesi güldürüyor (komik), her hafta sonu doğa yürüyüşüne (<i>trekking</i>) gidiyor ✓</li>
+<li><b>Mia:</b> Üç özelliğe de sahip ama başkaları hakkında konuşuyor (dedikodu) → “NO WAY” ✗ (güçlü çeldirici!)</li>
+</ul>
+<p>Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Kerem sent the message below to his friend Batu:</p>
+<div class="fig"><svg viewBox="0 0 500 175" width="480" role="img" aria-label="Kerem'in Batu'ya gönderdiği mesaj">
+<rect x="10" y="8" width="480" height="160" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<rect x="10" y="8" width="480" height="28" rx="10" fill="#334155"/>
+<text x="250" y="27" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Kerem → Batu   (Tuesday, 20:14)</text>
+<rect x="24" y="46" width="452" height="112" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+<g font-size="11" fill="#1e293b">
+<text x="36" y="66">Hey Batu, I’m really sorry I missed your science fair presentation</text>
+<text x="36" y="84">yesterday. The bus broke down on the way, and when I arrived, it</text>
+<text x="36" y="102">was already over. I know how much it meant to you. Let me make it</text>
+<text x="36" y="120">up to you – how about pizza this Friday? My treat!</text>
+<text x="36" y="144" font-weight="bold" fill="#166534">P.S. I’d love to see your project photos, too!</text>
+</g>
+</svg></div>
+<p>Kerem wrote this message to ________.</p>`,
+  c: [
+    `invite Batu to his own science fair presentation on Friday`,
+    `apologize for not being there and offer to buy Batu a meal`,
+    `refuse Batu’s invitation to a pizza party on Friday`,
+    `complain about public transport and ask Batu for help`
+  ],
+  a: "B",
+  s: `<p>Kerem mesajına <i>“I’m really sorry I missed your science fair presentation”</i> diyerek <b>özür diliyor</b>, mazeretini (otobüsün bozulması) açıklıyor ve <i>“Let me make it up to you – how about pizza this Friday? <b>My treat!</b>”</i> (Telafi edeyim, cuma pizza? Benden!) diyerek <b>Batu’ya yemek ısmarlamayı teklif ediyor</b>.</p>
+<ul>
+<li><b>A:</b> Sunum Batu’nundur ve geçmişte kalmıştır ✗</li>
+<li><b>C:</b> Pizza teklifini yapan Kerem’dir, bir daveti reddetmiyor ✗</li>
+<li><b>D:</b> Otobüs sadece mazerettir; şikâyet ya da yardım isteği yok ✗</li>
+</ul>
+<p>Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Read the sentences below.</p>
+<p>I. “Don’t worry about the project. You can always ________ me. I’ll help you.”<br>
+II. “Elif is a true friend. I can ________ her because she never lets me down.”<br>
+III. “Don’t ________ Mert. He makes a lot of promises, but he never keeps them.”</p>
+<p>Which of the following can complete <b>all</b> of the blanks?</p>`,
+  c: [`make fun of`, `hang out with`, `fall out with`, `count on`],
+  a: "D",
+  s: `<p>Üç cümlenin ortak anlamı <b>güvenmek / bel bağlamak</b>tır:</p>
+<ul>
+<li><b>I:</b> “Projeyi dert etme. Bana her zaman <b>güvenebilirsin</b>, sana yardım ederim.”</li>
+<li><b>II:</b> “Elif gerçek bir dost. Ona <b>güvenebilirim</b> çünkü beni asla hayal kırıklığına uğratmaz.”</li>
+<li><b>III:</b> “Mert’e <b>güvenme</b>. Çok söz verir ama hiçbirini tutmaz.”</li>
+</ul>
+<p><i>make fun of</i> (dalga geçmek), <i>hang out with</i> (takılmak) ve <i>fall out with</i> (küsmek, arası bozulmak) özellikle I. ve III. cümlelere uymaz. Üçüne de uyan <b>count on</b>’dur. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Students in classes <b>8-A</b> and <b>8-B</b> (30 students in each class) answered the question “<i>Where do you usually hang out with your friends?</i>”. Each student chose only one place.</p>
+<div class="fig"><svg viewBox="0 0 520 210" width="500" role="img" aria-label="8-A ve 8-B sınıflarının arkadaşlarla takıldıkları yerler sütun grafiği">
+<rect x="150" y="6" width="12" height="11" fill="#2563eb"/><text x="168" y="16" font-size="11" font-weight="bold">8-A</text>
+<rect x="230" y="6" width="12" height="11" fill="#f97316"/><text x="248" y="16" font-size="11" font-weight="bold">8-B</text>
+<line x1="50" y1="170" x2="500" y2="170" stroke="#334155" stroke-width="1.5"/>
+<line x1="50" y1="30" x2="50" y2="170" stroke="#334155" stroke-width="1.5"/>
+<g stroke="#e2e8f0"><line x1="50" y1="140" x2="500" y2="140"/><line x1="50" y1="110" x2="500" y2="110"/><line x1="50" y1="80" x2="500" y2="80"/><line x1="50" y1="50" x2="500" y2="50"/></g>
+<g font-size="10" fill="#475569" text-anchor="end"><text x="44" y="174">0</text><text x="44" y="144">3</text><text x="44" y="114">6</text><text x="44" y="84">9</text><text x="44" y="54">12</text></g>
+<rect x="75" y="50" width="30" height="120" fill="#2563eb"/><rect x="107" y="110" width="30" height="60" fill="#f97316"/>
+<rect x="185" y="110" width="30" height="60" fill="#2563eb"/><rect x="217" y="70" width="30" height="100" fill="#f97316"/>
+<rect x="295" y="130" width="30" height="40" fill="#2563eb"/><rect x="327" y="80" width="30" height="90" fill="#f97316"/>
+<rect x="405" y="90" width="30" height="80" fill="#2563eb"/><rect x="437" y="120" width="30" height="50" fill="#f97316"/>
+<g font-size="10" font-weight="bold" text-anchor="middle">
+<text x="90" y="45">12</text><text x="122" y="105">6</text>
+<text x="200" y="105">6</text><text x="232" y="65">10</text>
+<text x="310" y="125">4</text><text x="342" y="75">9</text>
+<text x="420" y="85">8</text><text x="452" y="115">5</text>
+</g>
+<g font-size="10.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
+<text x="106" y="187">Shopping mall</text><text x="216" y="187">Park</text><text x="326" y="187">Café</text><text x="436" y="187">Each other’s</text><text x="436" y="200">houses</text>
+</g>
+</svg></div>
+<p>According to the chart, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Most students in 8-A prefer meeting their friends outdoors in the park.`,
+    `The café is the least popular place to hang out in both classes.`,
+    `Twice as many students in 8-A as in 8-B like hanging out at the shopping mall.`,
+    `The same number of students in both classes visit each other’s houses.`
+  ],
+  a: "C",
+  s: `<p>Grafikteki değerler: <b>Shopping mall</b> 8-A: 12, 8-B: 6 — <b>Park</b> 6 / 10 — <b>Café</b> 4 / 9 — <b>Houses</b> 8 / 5.</p>
+<ul>
+<li><b>A:</b> 8-A’nın en çok tercih ettiği yer AVM’dir (12); park sadece 6 kişi ✗</li>
+<li><b>B:</b> Kafe 8-A’da en az seçilendir (4) ama 8-B’de en az seçilen evlerdir (5) ✗</li>
+<li><b>C:</b> AVM’yi 8-A’da 12, 8-B’de 6 kişi seçmiştir: 12 = 2 × 6 → <b>iki katı</b> ✓</li>
+<li><b>D:</b> Birbirlerinin evleri 8-A’da 8, 8-B’de 5’tir; eşit değil ✗</li>
+</ul>
+<p>Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Read the dialogue below.</p>
+<p><b>Can:</b> Hey Ece! We’re going to the new escape room on Saturday. Would you like to join us?<br>
+<b>Ece:</b> It sounds really exciting, but I’m afraid I’m up to my ears in homework this weekend. I have two projects to hand in on Monday.<br>
+<b>Can:</b> Never mind. Maybe next time!</p>
+<p>Which of the following is <b>CORRECT</b> according to the dialogue?</p>`,
+  c: [
+    `Ece accepts the invitation because she has already finished her projects.`,
+    `Ece refuses the invitation because escape rooms are not her cup of tea.`,
+    `Ece asks Can to help her with her projects on Saturday.`,
+    `Ece turns down the invitation because she is very busy with her schoolwork.`
+  ],
+  a: "D",
+  s: `<p>Ece önce olumlu bir ifade kullanıyor (<i>It sounds really exciting</i>) ama hemen ardından <i>“but I’m afraid…”</i> diyerek <b>nazikçe reddediyor</b>. <i>“I’m up to my ears in homework”</i> deyimi “ödevlere boğulmuş durumdayım, çok meşgulüm” anlamına gelir; ayrıca pazartesi teslim edeceği iki proje var.</p>
+<ul>
+<li><b>A:</b> Projelerini bitirmemiştir, kabul de etmemiştir ✗</li>
+<li><b>B:</b> Etkinliği beğenmediği için değil, meşgul olduğu için reddediyor (“sounds really exciting” diyor) ✗</li>
+<li><b>C:</b> Can’dan yardım istemiyor ✗</li>
+<li><b>D:</b> Okul ödevleri yüzünden çok meşgul olduğu için reddediyor (<i>turn down = refuse</i>) ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Look at the magazine quiz below.</p>
+<div class="fig"><svg viewBox="0 0 540 250" width="520" role="img" aria-label="İyi bir arkadaş mısın testi ve puan aralıkları">
+<rect x="10" y="8" width="520" height="234" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<rect x="10" y="8" width="520" height="30" rx="8" fill="#16a34a"/>
+<text x="270" y="28" font-size="12.5" font-weight="bold" fill="#ffffff" text-anchor="middle">QUIZ: ARE YOU A GOOD FRIEND?</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="22" y="56" font-weight="bold">1. Your friend tells you a secret.</text>
+<text x="34" y="71">a) I keep it to myself. (3 points)</text><text x="300" y="71">b) I tell it to my sister. (1 point)</text>
+<text x="22" y="91" font-weight="bold">2. Your friend is upset about a bad grade.</text>
+<text x="34" y="106">a) I lend an ear and cheer him/her up. (3)</text><text x="300" y="106">b) I change the subject. (1)</text>
+<text x="22" y="126" font-weight="bold">3. A friend invites you, but you are busy.</text>
+<text x="34" y="141">a) I refuse politely and make an excuse. (3)</text><text x="300" y="141">b) I don’t reply at all. (0)</text>
+<text x="22" y="161" font-weight="bold">4. You break your friend’s pen by accident.</text>
+<text x="34" y="176">a) I apologize and buy a new one. (3)</text><text x="300" y="176">b) I hide it and say nothing. (0)</text>
+</g>
+<rect x="22" y="188" width="160" height="44" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+<text x="102" y="206" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">10 – 12 points</text>
+<text x="102" y="222" font-size="10.5" fill="#166534" text-anchor="middle">TRUE FRIEND</text>
+<rect x="190" y="188" width="160" height="44" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="270" y="206" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">6 – 9 points</text>
+<text x="270" y="222" font-size="10.5" fill="#b45309" text-anchor="middle">GOOD BUDDY</text>
+<rect x="358" y="188" width="160" height="44" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+<text x="438" y="206" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">0 – 5 points</text>
+<text x="438" y="222" font-size="10.5" fill="#991b1b" text-anchor="middle">TIME TO CHANGE</text>
+</svg></div>
+<p><b>Ali:</b> “I never share my friends’ secrets with anyone, and when they feel sad, I always listen to them. But when I’m busy, I just ignore invitations. Last week, I broke my friend’s pen, so I said sorry and bought him a new one.”</p>
+<p>According to the quiz, which of the following is <b>CORRECT</b> about Ali?</p>`,
+  c: [
+    `He gets 9 points, so he is a “Good Buddy”, but he should reply to invitations politely.`,
+    `He gets 12 points because he chooses option “a” for all of the questions.`,
+    `He gets 10 points and becomes a “True Friend” because he apologized for the pen.`,
+    `He gets 6 points because he tells his friends’ secrets to his sister.`
+  ],
+  a: "A",
+  s: `<p>Ali’nin cevaplarını teste yerleştirelim:</p>
+<ul>
+<li><b>1.</b> Sırları kimseyle paylaşmıyor → a) <b>3</b> puan</li>
+<li><b>2.</b> Üzgün arkadaşlarını dinliyor (<i>lend an ear</i>) → a) <b>3</b> puan</li>
+<li><b>3.</b> Meşgulken davetleri görmezden geliyor (<i>ignore = don’t reply at all</i>) → b) <b>0</b> puan</li>
+<li><b>4.</b> Kalemi kırınca özür dileyip yenisini alıyor → a) <b>3</b> puan</li>
+</ul>
+<p>Toplam: 3 + 3 + 0 + 3 = <b>9 puan</b> → <b>GOOD BUDDY</b> (6–9). Puan kaybettiği tek madde davetlere cevap vermemesi olduğu için davetleri kibarca yanıtlamalıdır. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Read what Ece writes about her best friend.</p>
+<p><i>My best friend is Zeynep. We met in the first grade, and since then we have been inseparable. She is easygoing and very understanding. When I make a mistake, she never judges me; she just helps me fix it. We both love painting, so we go to an art course together every Saturday morning. Unfortunately, Zeynep is moving to İzmir next month because of her father’s new job. I’m really sad, but we have promised to video chat every weekend.</i></p>
+<p>Which of the following questions is <b>NOT</b> answered in the text?</p>`,
+  c: [
+    `Why is Zeynep moving to another city?`,
+    `What do the girls do together on Saturdays?`,
+    `What does Zeynep look like?`,
+    `How are they going to keep in touch after Zeynep moves?`
+  ],
+  a: "C",
+  s: `<p>Metinde cevabı olan sorular:</p>
+<ul>
+<li><b>A:</b> Babasının yeni işi yüzünden (<i>because of her father’s new job</i>) ✓</li>
+<li><b>B:</b> Cumartesi sabahları birlikte resim kursuna gidiyorlar ✓</li>
+<li><b>D:</b> Her hafta sonu görüntülü konuşacaklar (<i>video chat every weekend</i>) ✓</li>
+</ul>
+<p><b>C:</b> “What does Zeynep look like?” <b>dış görünüş</b> sorar (uzun boylu, kıvırcık saçlı vb.). Metinde sadece Zeynep’in <b>kişiliği</b> (<i>easygoing, understanding</i>) anlatılıyor, fiziksel görünüşüne dair bilgi yok. <b>LGS Tuzağı:</b> “What is she like?” kişiliği, “What does she look like?” görünüşü sorar! Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Look at the poster for the “Friendship Week” at a school.</p>
+<div class="fig"><svg viewBox="0 0 560 230" width="540" role="img" aria-label="Okul Arkadaşlık Haftası etkinlik programı">
+<rect x="10" y="8" width="540" height="214" rx="10" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+<rect x="10" y="8" width="540" height="30" rx="8" fill="#7c3aed"/>
+<text x="280" y="28" font-size="12.5" font-weight="bold" fill="#ffffff" text-anchor="middle">GÜNEŞ SECONDARY SCHOOL – FRIENDSHIP WEEK</text>
+<g font-size="10.5" font-weight="bold" fill="#5b21b6">
+<text x="22" y="56">Day</text><text x="72" y="56">Activity</text><text x="250" y="56">Place &amp; Time</text><text x="390" y="56">Note</text>
+</g>
+<line x1="15" y1="62" x2="545" y2="62" stroke="#7c3aed"/>
+<g font-size="10.5" fill="#1e293b">
+<text x="22" y="84" font-weight="bold">Mon</text><text x="72" y="84">Compliment Wall</text><text x="250" y="84">Main hall, all day</text><text x="390" y="84">Write kind notes!</text>
+<text x="22" y="114" font-weight="bold">Tue</text><text x="72" y="114">Board Game Tournament</text><text x="250" y="114">Library, 15:30</text><text x="390" y="114">Teams of two</text>
+<text x="22" y="144" font-weight="bold">Wed</text><text x="72" y="144">Friendship Bracelets</text><text x="250" y="144">Art room, 12:30</text><text x="390" y="144">Bring colourful threads</text>
+<text x="22" y="174" font-weight="bold">Thu</text><text x="72" y="174">Movie Day</text><text x="250" y="174">Conference hall, 14:00</text><text x="390" y="174">Free popcorn</text>
+<text x="22" y="204" font-weight="bold">Fri</text><text x="72" y="204">Talent Show</text><text x="250" y="204">School garden, 15:00</text><text x="390" y="204">Sign up by Wednesday</text>
+</g>
+<g stroke="#e9d5ff"><line x1="15" y1="94" x2="545" y2="94"/><line x1="15" y1="124" x2="545" y2="124"/><line x1="15" y1="154" x2="545" y2="154"/><line x1="15" y1="184" x2="545" y2="184"/></g>
+</svg></div>
+<p>According to the poster, which of the following is <b>CORRECT</b>?</p>`,
+  c: [
+    `Students can take part in the board game tournament on their own.`,
+    `The talent show will be held indoors on the last day of the week.`,
+    `Students have to pay for the popcorn on Movie Day.`,
+    `Students who want to perform in the talent show must sign up two days before it.`
+  ],
+  a: "D",
+  s: `<p>Afişteki bilgileri seçeneklerle karşılaştıralım:</p>
+<ul>
+<li><b>A:</b> Turnuva <i>“Teams of two”</i> (ikili takımlar) hâlinde; tek başına (<i>on their own</i>) katılınamaz ✗</li>
+<li><b>B:</b> Yetenek gösterisi cuma (son gün) ama <b>okul bahçesinde</b> (açık alanda), kapalı alanda değil ✗</li>
+<li><b>C:</b> Patlamış mısır <b>ücretsiz</b> (<i>Free popcorn</i>) ✗</li>
+<li><b>D:</b> Gösteri <b>cuma</b>, kayıt son günü <b>çarşamba</b> → gösteriden iki gün önce kayıt olmak gerekir ✓</li>
+</ul>
+<p>Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Complete the dialogue.</p>
+<p><b>Melis:</b> ______________________________<br>
+<b>Arda:</b> Thanks for asking, but I’ve already made plans with my cousins. We’re going to the aquarium.<br>
+<b>Melis:</b> No worries. Have fun, and say hi to them for me!</p>
+<p>Which of the following best completes the dialogue?</p>`,
+  c: [
+    `Have you ever been to the aquarium with your cousins?`,
+    `Would you like to come to the cinema with us this Saturday?`,
+    `What are you going to do with your cousins this weekend?`,
+    `Why didn’t you come to the aquarium with us last Saturday?`
+  ],
+  a: "B",
+  s: `<p>Arda’nın cevabı <i>“Thanks for asking, <b>but</b> I’ve already made plans…”</i> tipik bir <b>daveti nazikçe reddetme</b> kalıbıdır. Demek ki Melis bir <b>davet</b> yapmıştır.</p>
+<ul>
+<li><b>A:</b> Deneyim sorusu; “Thanks for asking, but…” ile cevaplanmaz ✗</li>
+<li><b>B:</b> Bir davet → Arda kuzenleriyle planı olduğu için reddediyor ✓</li>
+<li><b>C:</b> Bilgi sorusu; “but I’ve already made plans” ile başlayan bir ret cevabı gerekmez ✗ (güçlü çeldirici: akvaryum cevabı uyuyor gibi görünür)</li>
+<li><b>D:</b> Geçmişe dair soru; Arda geçmiş zamanla mazeret verirdi ✗</li>
+</ul>
+<p>Cevap <b>B</b>.</p>`
 }
 ]
 });
