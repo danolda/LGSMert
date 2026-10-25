@@ -14,7 +14,8 @@ for (const s of LGS.subjects) for (const t of s.topics) {
   const T = LGS.topics[t.id]; if (!T) { console.log('KAYIT YOK', t.id); problems++; continue; }
   const n = (T.qs || []).length; total += n + past; done++;
   const msg = [];
-  if (n + past !== required(t.id, past)) msg.push('toplam ' + (n + past) + ' (gereken ' + required(t.id, past) + ')');
+  const hasLv = (T.qs || []).some(q => q.lv);
+  if (n + past !== required(t.id, past, hasLv)) msg.push('toplam ' + (n + past) + ' (gereken ' + required(t.id, past, hasLv) + ')');
   if ((T.qs || []).some(q => q.lv)) { for (const lv in LEVELS) { const c = T.qs.filter(q => q.lv === lv).length; if (c !== LEVELS[lv]) msg.push(lv + ' ' + c + ' (gereken ' + LEVELS[lv] + ')'); } }
   if (!T.summary || T.summary.length < 500) msg.push('özet kısa');
   (T.qs || []).forEach((q, i) => {
