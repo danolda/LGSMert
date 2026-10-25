@@ -1,5 +1,5 @@
 window.LGS = {
-  version: 3,
+  version: 4,
   topics: {},
   past: {},
   pastLoaded: {},

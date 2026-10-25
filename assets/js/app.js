@@ -15,11 +15,20 @@
   try { applyTheme(localStorage.getItem(KEY + 'theme')); } catch (e) {}
   themeBtn.addEventListener('click', function () {
     var cur = document.documentElement.getAttribute('data-theme');
-    var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var dark = cur !== 'light';
     var next = dark ? 'light' : 'dark';
     applyTheme(next);
     try { localStorage.setItem(KEY + 'theme', next); } catch (e) {}
   });
+
+  /* ---------- en üste çık ---------- */
+  var toTop = document.getElementById('toTop');
+  if (toTop) {
+    var onScroll = function () { toTop.classList.toggle('show', window.scrollY > 500); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    onScroll();
+  }
 
   /* ---------- kayıt ---------- */
   function load(tid) {
@@ -138,7 +147,7 @@
     }).join('');
     app.innerHTML =
       '<section class="hero"><h1>LGS 2027 Hazırlık</h1>' +
-      '<p>Konu özetleri, çıkmış LGS soruları ve yeni nesil sorular. Her konuda 30–45 soru, ayrıntılı çözümler.</p>' +
+      '<p>Konu özetleri, çıkmış LGS soruları ve kolaydan zora yeni nesil sorular. Her sorunun adım adım çözümü var.</p>' +
       '<div class="count"><div><b>' + LGS.subjects.length + '</b>ders</div><div><b>' + tTopics + '</b>konu</div><div><b>' + tQ + '</b>soru</div><div><b>' + tDone + '</b>çözdüğün</div></div></section>' +
       mebiHtml() +
       '<div class="grid">' + cards + '</div>' +
@@ -358,7 +367,7 @@
 
   function route() {
     var h = location.hash.replace(/^#\/?/, '').split('/');
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'instant' });
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
     else home();
