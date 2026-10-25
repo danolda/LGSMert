@@ -79,6 +79,45 @@
     }).join(' › ');
   }
 
+  /* ---------- MEBİ LGS deneme takvimi 2026-2027 ---------- */
+  var MEBI = [
+    ['2026-11-02', '2026-11-08'], ['2026-12-02', '2026-12-08'], ['2027-01-02', '2027-01-08'],
+    ['2027-02-02', '2027-02-08'], ['2027-03-02', '2027-03-08'], ['2027-04-02', '2027-04-08'],
+    ['2027-04-19', '2027-04-25'], ['2027-05-02', '2027-05-08'], ['2027-05-24', '2027-05-30'],
+    ['2027-06-02', '2027-06-08']
+  ];
+  var AYLAR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+  function dt(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function aralik(r) {
+    var a = dt(r[0]), b = dt(r[1]);
+    return a.getDate() + (a.getMonth() === b.getMonth() ? '' : ' ' + AYLAR[a.getMonth()]) + '–' + b.getDate() + ' ' + AYLAR[b.getMonth()] + ' ' + b.getFullYear();
+  }
+  function mebiHtml() {
+    var now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var cur = -1, nxt = -1;
+    MEBI.forEach(function (r, i) {
+      if (cur < 0 && today >= dt(r[0]) && today <= dt(r[1])) cur = i;
+      if (nxt < 0 && dt(r[0]) > today) nxt = i;
+    });
+    var head;
+    if (cur >= 0) {
+      var kalan = Math.round((dt(MEBI[cur][1]) - today) / 864e5);
+      head = '<b>' + (cur + 1) + '. deneme şu an açık!</b> ' + (kalan === 0 ? 'Bugün son gün.' : 'Son güne ' + kalan + ' gün var (' + aralik(MEBI[cur]) + ').');
+    } else if (nxt >= 0) {
+      var gun = Math.round((dt(MEBI[nxt][0]) - today) / 864e5);
+      head = 'Sıradaki: <b>' + (nxt + 1) + '. deneme</b> · ' + aralik(MEBI[nxt]) + ' · <b>' + gun + ' gün</b> kaldı';
+    } else head = '2026-2027 MEBİ denemeleri tamamlandı.';
+    var rows = MEBI.map(function (r, i) {
+      var past = dt(r[1]) < today, on = i === cur || (cur < 0 && i === nxt);
+      return '<li class="' + (past ? 'done' : '') + (on ? ' on' : '') + '"><span>' + (i + 1) + '. deneme</span><span>' + aralik(r) + '</span></li>';
+    }).join('');
+    return '<details class="mebi"><summary><span class="mebi-t">📅 MEBİ LGS Deneme Takvimi</span><span class="mebi-c">' + head + '</span></summary>' +
+      '<ol>' + rows + '</ol>' +
+      '<p class="small">10 ücretsiz Türkiye geneli deneme; her biri sözel ve sayısal oturumdan oluşur. ' +
+      '<a href="https://mebi.eba.gov.tr" target="_blank" rel="noopener">mebi.eba.gov.tr</a> → Denemeler/Taramalar · ' +
+      '<a href="https://www.meb.gov.tr/mebi-2026-2027-yks-ve-lgs-deneme-takvimi-belli-oldu/haber/41943/tr" target="_blank" rel="noopener">Kaynak: MEB</a></p></details>';
+  }
+
   /* ---------- ana sayfa ---------- */
   function home() {
     setCrumbs([]);
@@ -101,6 +140,7 @@
       '<section class="hero"><h1>LGS 2027 Hazırlık</h1>' +
       '<p>Konu özetleri, çıkmış LGS soruları ve yeni nesil sorular. Her konuda 30–45 soru, ayrıntılı çözümler.</p>' +
       '<div class="count"><div><b>' + LGS.subjects.length + '</b>ders</div><div><b>' + tTopics + '</b>konu</div><div><b>' + tQ + '</b>soru</div><div><b>' + tDone + '</b>çözdüğün</div></div></section>' +
+      mebiHtml() +
       '<div class="grid">' + cards + '</div>' +
       '<p class="small" style="margin-top:18px">İpucu: Bir şıkka dokunduğunda cevabın kaydedilir ve çözüm açılır. Konu sayfasındaki <b>Temizle</b> düğmesi o konudaki tüm işaretlemeleri siler.</p>';
   }
