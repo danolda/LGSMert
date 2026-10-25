@@ -275,7 +275,7 @@
         var pool = [];
         (o.tp || s.topics.map(function (t) { return t.id; })).forEach(function (tid) {
           var t = LGS.topics[tid]; if (!t) return;
-          A.buildList(t).forEach(function (q) { pool.push({ tid: tid, key: q.key, a: q.a, t: o.t, sb: s.id }); });
+          A.buildList(t).forEach(function (q) { if (q.past) return; pool.push({ tid: tid, key: q.key, a: q.a, t: o.t, sb: s.id }); });
         });
         out = out.concat(shuffle(pool).slice(0, o.n));
       });
