@@ -1,642 +1,527 @@
 LGS.add({
 id: "tr-paryapi",
 summary: `
-<h3>1. Paragrafın Yapısı ve Bölümleri (Giriş – Gelişme – Sonuç)</h3>
-<p>Bir düşünceyi, duyguyu veya olayı tam bir bütünlük içinde anlatan cümleler topluluğuna <b>paragraf</b> denir. Her paragraf kendi içinde <b>yapısal (dil bilgisel)</b> ve <b>anlamsal</b> bir zincir oluşturur[cite: 14]:</p>
+<h3>1. Paragraf Nedir? Yapısı ve Bölümleri</h3>
+<p>Bir duyguyu, düşünceyi ya da olayı anlatan; birbirine <b>anlam</b> ve <b>yapı</b> bakımından bağlı cümlelerden oluşan yazı birimine <b>paragraf</b> denir. İyi bir paragrafta her cümle aynı ana düşünceye hizmet eder ve bir öncekine bağlanır. Paragraf genellikle üç bölümden oluşur:</p>
 
-<div class="fig"><svg viewBox="0 0 600 165" width="580" role="img" aria-label="Paragrafın bölümleri giriş gelişme sonuç şeması">
-<defs><marker id="py1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<g font-size="10.5" text-anchor="middle">
-<rect x="8" y="12" width="175" height="95" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-<text x="95" y="32" font-size="12" font-weight="bold" fill="#1e40af">1. GİRİŞ BÖLÜMÜ</text>
-<text x="95" y="50" fill="#1e293b">• Konuyu tanıtan genel yargıdır.</text>
-<text x="95" y="66" fill="#1e293b">• Kendinden önce cümle varmış</text>
-<text x="95" y="80" fill="#1e293b">  izlenimi veren bağlayıcılarla</text>
-<text x="95" y="96" font-weight="bold" fill="#dc2626">  (çünkü, ama, bu yüzden) başlamaz!</text>
+<div class="fig"><svg viewBox="0 0 560 226" width="560" role="img" aria-label="Paragrafın giriş, gelişme ve sonuç bölümleri">
+<defs><marker id="pya1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="8" y="10" width="166" height="140" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="91" y="32" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">GİRİŞ</text>
+<g font-size="11" fill="#1e293b">
+<text x="18" y="54">• Konuyu ortaya koyar.</text>
+<text x="18" y="72">• Genel bir yargıdır.</text>
+<text x="18" y="90">• Başka cümleye</text>
+<text x="18" y="106">  bağlı olmaz.</text>
+<text x="18" y="124" fill="#dc2626" font-weight="bold">• “Bu, çünkü, ama,</text>
+<text x="18" y="140" fill="#dc2626" font-weight="bold">  da” ile başlamaz.</text>
+</g>
+<rect x="197" y="10" width="166" height="140" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="280" y="32" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">GELİŞME</text>
+<g font-size="11" fill="#1e293b">
+<text x="207" y="54">• Konuyu açar,</text>
+<text x="207" y="70">  ayrıntılandırır.</text>
+<text x="207" y="90">• Tanım, örnek,</text>
+<text x="207" y="106">  karşılaştırma, tanık,</text>
+<text x="207" y="122">  sayısal veri burada</text>
+<text x="207" y="138">  kullanılır.</text>
+</g>
+<rect x="386" y="10" width="166" height="140" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="469" y="32" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">SONUÇ</text>
+<g font-size="11" fill="#1e293b">
+<text x="396" y="54">• Anlatılanları</text>
+<text x="396" y="70">  toparlar, yargıya</text>
+<text x="396" y="86">  bağlar.</text>
+<text x="396" y="106" fill="#b45309" font-weight="bold">• “Bu yüzden, kısacası,</text>
+<text x="396" y="122" fill="#b45309" font-weight="bold">  demek ki, böylece”</text>
+<text x="396" y="138">  ile başlayabilir.</text>
+</g>
+<line x1="174" y1="80" x2="195" y2="80" stroke="#475569" stroke-width="2" marker-end="url(#pya1)"/>
+<line x1="363" y1="80" x2="384" y2="80" stroke="#475569" stroke-width="2" marker-end="url(#pya1)"/>
+<rect x="8" y="162" width="544" height="58" rx="6" fill="#f1f5f9" stroke="#64748b"/>
+<text x="280" y="180" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Cümleleri birbirine bağlayan halkalar:</text>
+<text x="280" y="196" font-size="10.5" fill="#334155" text-anchor="middle">gönderme sözcükleri (bu, şu, o, böyle, onlar) · bağlaçlar (çünkü, ama, oysa, ayrıca)</text>
+<text x="280" y="212" font-size="10.5" fill="#334155" text-anchor="middle">tekrarlanan anahtar sözcük</text>
+</svg></div>
 
-<rect x="212" y="12" width="175" height="95" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-<text x="300" y="32" font-size="12" font-weight="bold" fill="#166534">2. GELİŞME BÖLÜMÜ</text>
-<text x="300" y="50" fill="#1e293b">• Girişteki konuyu açar ve</text>
-<text x="300" y="64" fill="#1e293b">  detaylandırır.</text>
-<text x="300" y="80" fill="#1e293b">• <tspan font-weight="bold" fill="#166534">Örnekleme, karşılaştırma,</tspan></text>
-<text x="300" y="96" font-weight="bold" fill="#166534">  tanık gösterme</tspan> burada yer alır.</text>
+<h4>Giriş cümlesinin özellikleri</h4>
+<ul>
+<li>Kendinden önce bir cümle varmış izlenimi vermez; tek başına anlaşılır.</li>
+<li><b>Gönderme sözcüğü</b> (<i>bu, şu, böyle, onlar, söz konusu</i>), <b>bağlayıcı</b> (<i>çünkü, ama, oysa, bu yüzden, üstelik</i>) ya da önceki bir şeye işaret eden <b>“de/da”</b> (<i>“Kuşlar <b>da</b> yıldızlardan yararlanır.”</i>) taşımaz.</li>
+<li>Genellikle konuyu tanıtan, geniş kapsamlı bir yargıdır: <i>“Bir kentin hafızası en çok eski çarşılarında yaşar.”</i></li>
+</ul>
 
-<rect x="416" y="12" width="175" height="95" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="503" y="32" font-size="12" font-weight="bold" fill="#92400e">3. SONUÇ BÖLÜMÜ</text>
-<text x="503" y="50" fill="#1e293b">• Anlatılanları tek bir ana</text>
-<text x="503" y="64" fill="#1e293b">  düşüncede toparlar.</text>
-<text x="503" y="80" fill="#1e293b">• <tspan font-weight="bold" fill="#b45309">“Kısacası, özetle, demek ki,</tspan></text>
-<text x="503" y="96" font-weight="bold" fill="#b45309">  sonuç olarak”</tspan> ile başlayabilir.</text>
+<h3>2. Paragrafta Anlam Bütünlüğü: Soru Tipleri</h3>
+<table>
+<tr><th>Soru tipi</th><th>Nasıl çözülür?</th></tr>
+<tr><td><b>Düşüncenin akışını bozan cümle</b><br><i>“…numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?”</i></td><td>Paragrafın konusunu ve konunun <b>hangi yönünün</b> anlatıldığını bul. Bozan cümle çoğu zaman aynı sözcükleri taşır ama konunun <b>başka bir yönüne</b> kayar. O cümleyi çıkar: önceki ve sonraki cümle birbirine pürüzsüz bağlanıyorsa doğru cümleyi bulmuşsundur.</td></tr>
+<tr><td><b>Cümle ekleme</b><br><i>“…hangisinden sonra … cümlesi getirilirse anlam bütünlüğü bozulmaz?”</i></td><td>Eklenecek cümledeki <b>gönderme sözcüğünü</b> (<i>böyle önemli yapılar, bu yolculuklar</i>) bul ve neye işaret ettiğini metinde ara. Cümle, işaret ettiği şeyin anıldığı cümlenin <b>hemen arkasına</b> gelir. Ardından gelen cümlenin de yeni cümleye bağlandığını kontrol et.</td></tr>
+<tr><td><b>Sıralama</b><br><i>“…dışarıda kalır?” / “…hangi iki cümle yer değiştirmelidir?”</i></td><td>Önce giriş cümlesini bul. Sonra her cümlenin başındaki halkayı (<i>Onlar, Bu ağırlık, Çünkü</i>) önceki cümlenin sonundaki kavrama bağla. Olay metinlerinde <b>zaman sırasını</b> izle.</td></tr>
+<tr><td><b>Paragrafı ikiye bölme</b><br><i>“İkinci paragraf hangi cümleyle başlar?”</i></td><td>Konunun ya da bakış açısının değiştiği, yeni bir giriş cümlesi gibi duran cümleyi seç. <i>“Ne var ki, öte yandan”</i> gibi yön değiştiren ifadeler güçlü ipucudur.</td></tr>
+<tr><td><b>Diyalog / boşluk doldurma</b><br><i>“…boşluklara aşağıdakilerden hangisi getirilemez?”</i></td><td>Her boşluğu sırayla doldur; kimin konuştuğunu ve bir sonraki cümlenin neye cevap verdiğini kontrol et. Getirilemeyen cümle, metindeki bir bilgiyle <b>çelişir</b>.</td></tr>
+</table>
 
-<line x1="183" y1="60" x2="210" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#py1)"/>
-<line x1="387" y1="60" x2="414" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#py1)"/>
-<rect x="15" y="118" width="570" height="36" rx="6" fill="#f1f5f9" stroke="#64748b"/>
-<text x="300" y="134" font-size="10" font-weight="bold" fill="#1e293b">Geçiş ve Bağlantı İfadeleri:</text>
-<text x="300" y="148" font-size="9.5" fill="#334155">• Yön Değiştirenler: ama, fakat, lakin, ancak, oysa, buna karşın, ne var ki · • Destekleyenler: üstelik, ayrıca, hatta, özellikle</text>
+<div class="note"><b>LGS Tuzağı 1 (2022, akışı bozan cümle):</b> “Şairlerin ilk şiir kitapları çok önemlidir.” diye başlayan metinde II. cümle de “şiir kitapları” ve “önemlidir” sözcüklerini taşıyordu; ama <b>ilk</b> kitaptan kitapların <b>sayısına</b> kaymıştı. Ardından gelen “Çünkü onlarda…” cümlesi II’ye değil I’e bağlanıyordu. <b>Aynı sözcükler = aynı yön değildir.</b></div>
+
+<div class="note"><b>LGS Tuzağı 2 (2018, 2023, cümle ekleme):</b> Eklenecek cümlelerde “<b>böyle önemli yapıların</b>” ve “<b>bu yolculukları</b>” gibi gönderme ifadeleri vardı. Bu yapılar ya da yolculuklar henüz anılmadan cümleyi yerleştiren şıklar çeldiriciydi. Ayrıca 2023’te eklenen cümle, kendisinden sonra gelen III. cümledeki “<b>bu yolculukları</b>” ifadesinin dayanağıydı: Cümle iki yöne de bağlanmalıdır.</div>
+
+<div class="note"><b>LGS Tuzağı 3 (2020, sıralama ve diyalog):</b> Dışarıda kalan cümle konu dışı değildi; olayın <b>henüz gelinmemiş bir aşamasını</b> (oduncuların ağaç kesmesi) anlatıyordu. Diyalog sorusunda ise getirilemeyen cümle (“Aslında saati biliyordu.”) anlatıcının önceki sözleriyle <b>çelişiyordu</b>.</div>
+
+<h3>3. Mantıksal Tutarlılık</h3>
+<p>Bir metindeki bilgi, durum ya da olaylar birbiriyle çelişmemelidir. Metnin başında verilen bir <b>kısıt</b> (ışık arkadan vuruyor, elektrik kesik, gözleri iyi görmüyor…) sonraki cümlelerde unutulursa anlatım <b>kusurlu</b> olur.</p>
+<div class="note"><b>LGS Tuzağı 4 (2024, mantıksal tutarlılık):</b> “Arkasından vuran ışık, yüz hatlarını seçmemi engelliyordu.” denen metinde doğru cevap, yüzdeki ifadeyi (gözlerden geçen sevinç, dudaktaki gülümseme) gören şıktı. Çeldiriciler aynı duyguyu <b>sesten</b> ya da <b>ayak sallamaktan</b> çıkarıyordu; bunlar tutarlıdır. Önce kısıtı bul, sonra o kısıtı çiğneyen şıkkı ara.</div>
+
+<h3>4. Anlatım Biçimleri</h3>
+<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Dört anlatım biçimi ve ipuçları">
+<rect x="8" y="8" width="268" height="114" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="142" y="28" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">AÇIKLAYICI</text>
+<g font-size="11" fill="#1e293b">
+<text x="18" y="48">Amaç: bilgi vermek, öğretmek.</text>
+<text x="18" y="66">İpucu: tanım, nesnel yargı, sade dil;</text>
+<text x="18" y="82">ders kitabı, ansiklopedi dili.</text>
+<text x="18" y="100" fill="#dc2626">Bozan: soru, seslenme, öğüt,</text>
+<text x="18" y="116" fill="#dc2626">olay anlatma.</text>
+</g>
+<rect x="284" y="8" width="268" height="114" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="418" y="28" font-size="13" font-weight="bold" fill="#991b1b" text-anchor="middle">TARTIŞMACI</text>
+<g font-size="11" fill="#1e293b">
+<text x="294" y="48">Amaç: okurun görüşünü değiştirmek.</text>
+<text x="294" y="66">İpucu: karşıt görüş verilir ve</text>
+<text x="294" y="82">çürütülür (bazıları… oysa…).</text>
+<text x="294" y="100" fill="#dc2626">Yalnızca “bence” demek ya da soru</text>
+<text x="294" y="116" fill="#dc2626">sormak tartışmacı yapmaz!</text>
+</g>
+<rect x="8" y="130" width="268" height="114" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="142" y="150" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">ÖYKÜLEYİCİ (HİKÂYE EDİCİ)</text>
+<g font-size="11" fill="#1e293b">
+<text x="18" y="170">Amaç: bir olayı anlatmak.</text>
+<text x="18" y="188">İpucu: kişi, zaman, yer, olay akışı;</text>
+<text x="18" y="204">“bir gün, sonra, o sırada”.</text>
+<text x="18" y="222" fill="#dc2626">“-dı/-rdı” eki tek başına olay</text>
+<text x="18" y="238" fill="#dc2626">anlatıldığını göstermez.</text>
+</g>
+<rect x="284" y="130" width="268" height="114" rx="8" fill="#fefce8" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="418" y="150" font-size="13" font-weight="bold" fill="#854d0e" text-anchor="middle">BETİMLEYİCİ (TASVİR)</text>
+<g font-size="11" fill="#1e293b">
+<text x="294" y="170">Amaç: sözle resim çizmek.</text>
+<text x="294" y="188">İpucu: renk, ses, koku, dokunma;</text>
+<text x="294" y="204">niteleyici sözcükler, kişileştirme.</text>
+<text x="294" y="222" fill="#dc2626">Olay akışı yoktur; okur bir anın</text>
+<text x="294" y="238" fill="#dc2626">ya da yerin içinde dolaşır.</text>
 </g>
 </svg></div>
 
-<h4>LGS’de Paragraf Yapısı Soru Tipleri ve Çözüm Taktikleri</h4>
-<table class="rt">
-<tr><th>Soru Tipi</th><th>Pratik Çözüm Taktiği ve Dikkat Noktası</th></tr>
-<tr><td><b>1. Düşüncenin Akışını Bozan Cümle</b></td><td>Paragraftaki cümlelerin tamamı aynı konunun <b>belirli bir yönünü</b> anlatırken, içlerinden biri ya konunun tamamen dışına çıkar ya da aynı konunun <b>farklı bir yönüne</b> geçer[cite: 14]. O cümleyi çıkardığımızda önceki ve sonraki cümle birbirine kenetlenir.</td></tr>
-<tr><td><b>2. Paragrafı İkiye Bölme</b></td><td><i>“İkinci paragraf hangi cümleyle başlar?”</i> sorularında, konunun veya konuya <b>bakış açısının değiştiği</b> ve yeni bir <b>giriş cümlesi</b> niteliği taşıyan cümle seçilir[cite: 14].</td></tr>
-<tr><td><b>3. Cümle Sıralama (Paragraf Oluşturma)</b></td><td>Önce bağlayıcı ifade içermeyen en genel <b>giriş cümlesi (1. cümle)</b> bulunur; ardından her cümlenin sonundaki anahtar kelime bir sonraki cümlenin başında (<i>“bu durum, bunun üzerine, orada”</i> gibi) takip edilerek domino taşı gibi dizilir[cite: 14].</td></tr>
-<tr><td><b>4. Paragrafa Cümle Yerleştirme / Tamamlama</b></td><td>Eklenecek cümledeki işaret sözcükleri (<i>bu kitaplar, söz konusu araştırma, böylece</i>) hangi cümledeki kavramı işaret ediyorsa, hemen o cümlenin arkasına yerleştirilir[cite: 14].</td></tr>
+<ul>
+<li><b>Açıklayıcı:</b> <i>“Uyku, vücudun gün içinde yıpranan hücrelerini onardığı bir dinlenme sürecidir.”</i></li>
+<li><b>Tartışmacı:</b> <i>“Bazıları ödevin tamamen kaldırılmasını savunuyor. Oysa kısa ve düzenli ödevler öğrenmeyi pekiştirir.”</i></li>
+<li><b>Öyküleyici:</b> <i>“Bir akşam donmuş ellerle eve döndüm. Annem beni görünce hemen ocağı yaktı.”</i></li>
+<li><b>Betimleyici:</b> <i>“Fırından taze ekmek kokusu taşıyor, kırmızı kiremitli çatılarda güneş parlıyordu.”</i></li>
+</ul>
+
+<div class="note"><b>LGS Tuzağı 5 (2023 ve 2026, anlatım biçimine dönüştürme):</b> “Hangisiyle devam ettirilirse öyküleyici bir metne dönüşür?” sorusunda bütün şıklar aynı konudaydı (tekerleme). Doğru şıkta “<b>Yine bir gün</b>” diye başlayan bir <b>olay akışı</b> ve ikinci bir kişi (babam) vardı; çeldiriciler yorum, soru ve betimleme içeriyordu. 2026’da “anlatım biçimi <b>değişmez</b>” sorusunda açıklayıcı metni bozan şıklar <b>soru cümlesiyle biten</b> ve okura “siz” diye seslenip “<b>savaşmalısınız</b>” diyen şıklardı. Doğru şık aynı nesnel, bilgi veren tonu sürdürendi.</div>
+
+<h3>5. Düşünceyi Geliştirme Yolları</h3>
+<table>
+<tr><th>Yol</th><th>Nasıl tanınır?</th><th>Örnek</th></tr>
+<tr><td><b>Tanımlama</b></td><td>Bir kavramın <b>ne olduğu</b> söylenir; çoğunlukla “… -dır / … denir” yapısındadır.</td><td>“Mozaik; renkli taş, cam ya da seramik parçalarıyla yapılan bir süsleme sanatıdır.”</td></tr>
+<tr><td><b>Örneklendirme</b></td><td>Genel bir yargı somut bir örnekle açıklanır: “örneğin, mesela, … gibi (örnek anlamında)”.</td><td>“Zeugma’daki ‘Çingene Kızı’, bu sanatın en bilinen örneklerindendir.”</td></tr>
+<tr><td><b>Karşılaştırma</b></td><td>İki varlık, kişi, dönem ya da durumun benzer veya farklı yönleri ortaya konur. Her zaman “daha, göre” geçmez!</td><td>“Basılı kitap, ekranın aksine gözü yormaz.”</td></tr>
+<tr><td><b>Benzetme</b></td><td>Bir varlık, ortak bir özellik bakımından daha güçlü başka bir varlığa benzetilir: “gibi, sanki, kadar, andıran, tıpkı”.</td><td>“Geçmişini bilmeyen toplum, kökleri kesilmiş bir çınar gibidir.”</td></tr>
+<tr><td><b>Tanık gösterme</b></td><td>Düşünceyi desteklemek için <b>adı belli</b> bir kişinin ya da kurumun sözüne başvurulur.</td><td>“Yahya Kemal’in ‘Kökü mazide olan âtiyim.’ dizesi de bu bağı anlatır.”</td></tr>
+<tr><td><b>Sayısal veri</b></td><td>Düşünceyi kanıtlamak için istatistik, oran, ölçüm verilir.</td><td>“Gıda bitkilerinin dörtte üçü tozlaşmaya muhtaçtır.”</td></tr>
 </table>
 
-<h3>2. Anlatım Biçimleri (4 Temel Anlatım Biçimi)</h3>
-<div class="fig"><svg viewBox="0 0 600 185" width="580" role="img" aria-label="Dört temel anlatım biçimi karşılaştırma şeması">
-<g font-size="10">
-<rect x="8" y="10" width="285" height="78" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="150" y="28" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">1. AÇIKLAYICI ANLATIM (Bilgi Verme)</text>
-<text x="18" y="46">• <tspan font-weight="bold">Amacı:</tspan> Okuyucuya bir konu hakkında <tspan font-weight="bold" fill="#1e40af">bilgi vermek</tspan></text>
-<text x="18" y="60">  ve bir şey öğretmektir (Ansiklopedi/ders kitabı dili).</text>
-<text x="18" y="76">• <tspan font-weight="bold">Özelliği:</tspan> Nesnel yargılar, tanımlar ve sade dil.</text>
-
-<rect x="307" y="10" width="285" height="78" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="450" y="28" font-size="11.5" font-weight="bold" fill="#991b1b" text-anchor="middle">2. TARTIŞMACI ANLATIM (Kanı Değiştirme)</text>
-<text x="317" y="46">• <tspan font-weight="bold">Amacı:</tspan> Kendi öznel görüşünü savunup <tspan font-weight="bold" fill="#dc2626">karşıt görüşü</tspan></text>
-<text x="317" y="60">  <tspan font-weight="bold" fill="#dc2626">çürütmek</tspan>, okuyucunun fikrini değiştirmektir.</text>
-<text x="317" y="76">• <tspan font-weight="bold">İpucu:</tspan> “Bence, oysa, kanımca”, soru cümleleri.</text>
-
-<rect x="8" y="98" width="285" height="78" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="150" y="116" font-size="11.5" font-weight="bold" fill="#166534" text-anchor="middle">3. BETİMLEYİCİ ANLATIM (Fotoğraf Karesi)</text>
-<text x="18" y="134">• <tspan font-weight="bold">Amacı:</tspan> Varlıkları veya mekanı <tspan font-weight="bold" fill="#166534">sözcüklerle</tspan></text>
-<text x="18" y="148">  <tspan font-weight="bold" fill="#166534">resmetmek</tspan>, okuyucunun gözünde canlandırmaktır.</text>
-<text x="18" y="164">• <tspan font-weight="bold">Özelliği:</tspan> Zaman akmaz (durağandır), bol sıfat ve 5 duyu.</text>
-
-<rect x="307" y="98" width="285" height="78" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="450" y="116" font-size="11.5" font-weight="bold" fill="#92400e" text-anchor="middle">4. ÖYKÜLEYİCİ ANLATIM (Video / Film Şeridi)</text>
-<text x="317" y="134">• <tspan font-weight="bold">Amacı:</tspan> Yaşanmış veya yaşanabilir bir <tspan font-weight="bold" fill="#b45309">olayı</tspan> yer,</text>
-<text x="317" y="148">  zaman ve kişiler etrafında <tspan font-weight="bold" fill="#b45309">hareket/akış</tspan> içinde anlatmaktır.</text>
-<text x="317" y="164">• <tspan font-weight="bold">Özelliği:</tspan> Zaman ilerler, eylemler birbirini izler.</text>
+<div class="fig"><svg viewBox="0 0 560 196" width="560" role="img" aria-label="Gibi sözcüğünün üç farklı kullanımı">
+<rect x="200" y="8" width="160" height="34" rx="17" fill="#1e40af"/>
+<text x="280" y="30" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">“gibi” gördün mü?</text>
+<line x1="280" y1="42" x2="94" y2="72" stroke="#475569" stroke-width="1.5"/>
+<line x1="280" y1="42" x2="280" y2="72" stroke="#475569" stroke-width="1.5"/>
+<line x1="280" y1="42" x2="466" y2="72" stroke="#475569" stroke-width="1.5"/>
+<rect x="8" y="72" width="172" height="116" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="94" y="92" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">BENZETME</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="16" y="112">Ortak özellikle iki varlık:</text>
+<text x="16" y="130">“Söğütler, saçlarını suya</text>
+<text x="16" y="146">salmış genç kızlar gibi</text>
+<text x="16" y="162">eğilmişti.”</text>
+</g>
+<rect x="194" y="72" width="172" height="116" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="280" y="92" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">ÖRNEK BİLDİRME</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="202" y="112">“örneğin” anlamında:</text>
+<text x="202" y="130">“Arı, kelebek, yarasa gibi</text>
+<text x="202" y="146">canlılar tozlaşmayı</text>
+<text x="202" y="162">sağlar.” → benzetme YOK</text>
+</g>
+<rect x="380" y="72" width="172" height="116" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="466" y="92" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">SANMA / GÖRÜNME</text>
+<g font-size="10.5" fill="#1e293b">
+<text x="388" y="112">“gibi gelmek, gibi</text>
+<text x="388" y="128">görünmek”:</text>
+<text x="388" y="146">“Önemsiz bir alışkanlık</text>
+<text x="388" y="162">gibi gelir.” → benzetme YOK</text>
 </g>
 </svg></div>
 
-<div class="note"><b>LGS Tuzağı 1 (Betimleme ile Öyküleme Nasıl Ayırt Edilir?):</b>
-<br>• <b>Betimleme (Tasvir)</b> bir <b>FOTOĞRAF KARESİ</b> gibidir: Zaman durmuştur; yazar gördüğü manzarayı, odayı veya kişiyi sıfatlarla ve beş duyuyla boyar[cite: 14].
-<br>• <b>Öyküleme (Tahkiye)</b> ise bir <b>VİDEO / FİLM ŞERİDİ</b> gibidir: Zaman akar, <i>“kalktı → kapıyı açtı → sokağa çıktı → arkadaşına seslendi”</i> şeklinde ardışık bir olay zinciri vardır[cite: 14].</div>
+<div class="note"><b>LGS Tuzağı 6 (2023 ve 2026, örtük karşılaştırma):</b> 2023’te müziğin kültürü “<b>diğer sanatlardan farklı olarak</b>” yansıttığı söyleniyordu; 2026’da “içim buz gibi olsa da… orası sıcak geldi” deniyordu. İkisinde de “daha” ya da “göre” yoktu ama <b>karşılaştırma vardı</b>. 2025’te ise Falih Rıfkı’nın yazısının unutulup Haşim’inkinin hatırlanması karşılaştırmaydı.</div>
 
-<h4>Öyküleyici Metinlerde Anlatıcı ve Bakış Açıları</h4>
-<table class="rt">
-<tr><th>Bakış Açısı</th><th>Anlatıcı Kişisi</th><th>Özelliği ve Ayırt Etme Yolu</th></tr>
-<tr><td><b>1. Kahraman Bakış Açısı</b></td><td><b>1. Kişi (Ben / Biz)</b></td><td>Anlatıcı olayın kahramanlarından biridir; kendi yaşadıklarını ve hissettiklerini anlatır: <i>“Kapıyı <b>açtım</b>, içeri <b>girdim</b>, çok <b>şaşırdım</b>.”</i>[cite: 14]</td></tr>
-<tr><td><b>2. Gözlemci (Müşahit) Bakış Açısı</b></td><td><b>3. Kişi (O / Onlar)</b></td><td>Anlatıcı bir <b>kamera</b> gibi olayları sadece dışarıdan gördüğü kadarıyla anlatır; kahramanların <b>içinden geçen düşünceleri bilemez!</b></td></tr>
-<tr><td><b>3. Hâkim (İlahi / Tanrısal) Bakış Açısı</b></td><td><b>3. Kişi (O / Onlar)</b></td><td>Anlatıcı her şeyi bilir; kahramanların <b>kalbinden, zihninden geçen düşünceleri, geçmişlerini ve gelecekte ne yapacaklarını</b> okur (Örn: <i>“Ali pencereden bakarken <b>içinden çocukluk günlerini geçiriyor, kimseye söyleyemediği sırrını düşünüyordu</b>.”</i>).</td></tr>
+<div class="note"><b>LGS Tuzağı 7 (2025, eksik yolu tamamlama):</b> “Dört yolun <b>tamamının</b> kullanıldığını söyleyebilmek için boşluğa hangisi getirilmelidir?” sorusunda önce metinde <b>zaten bulunan</b> yolları (benzetme: kuyumcu titizliğiyle; karşılaştırma; örneklendirme) işaretlemek gerekiyordu. Eksik olan <b>tanımlama</b>ydı. “Tarihî eser gibi” diyen şık benzetme taşıdığı için cazipti ama benzetme zaten vardı. Boşluğa gelecek cümle, sonraki cümledeki “<b>bunu</b> ustaca yapan” sözüne de dayanak olmalıydı.</div>
+
+<div class="note"><b>LGS Tuzağı 8 (2026, tanımlama yok):</b> Şiirsel, duygusal bir betimleme metninde “Tanımlamaya başvurulmuştur.” yargısı söylenemezdi. Metin “Kara bir bulut… susuz toprak…” gibi niteleyicilerle doluydu ama hiçbir kavramın <b>ne olduğu</b> açıklanmıyordu. Niteleme ve benzetme tanım değildir.</div>
+
+<h3>6. Anlatım Özellikleri (Dil ve Anlatım Soruları)</h3>
+<table>
+<tr><th>Özellik</th><th>Ne demek?</th><th>Karıştırılan</th></tr>
+<tr><td>Nesnel yargı</td><td>Doğruluğu kanıtlanabilir (“Proje hayata geçirilmiştir.”).</td><td>Öznel yargı: kişiden kişiye değişir (“Lezzeti güzeldir.”).</td></tr>
+<tr><td>Niteleyici sözcük</td><td>Varlığın nasıl olduğunu bildiren sıfatlar (büyük şair, genç nesiller, kara bulut).</td><td>Niteleyici sözcük olması metni betimleyici yapmaz.</td></tr>
+<tr><td>Farklı duyular</td><td>Görme, işitme, koklama, tatma, dokunma.</td><td>“Sessizce” gibi bir sözcük ses betimlemesi değildir.</td></tr>
+<tr><td>Gözlem</td><td>Anlatıcının gördüğünü, fark ettiğini aktarması.</td><td>Hayalî unsur: gerçekte olmayan, düşsel ögeler.</td></tr>
+<tr><td>Saptama</td><td>Bir durumu kesin biçimde tespit eden yargı (“Çöl böyle bir şey olmalıydı.”).</td><td>Öğüt: okura ne yapması gerektiğini söyleme.</td></tr>
+<tr><td>Seslenme</td><td>Okura ya da birine doğrudan hitap (Değerli arkadaşlar, Ey oğul, siz).</td><td>“Biz, çoğumuz” dili seslenme değildir.</td></tr>
+<tr><td>Özlü söz</td><td>Atasözü, vecize (“Sabırla koruk helva olur.”).</td><td>Tanık gösterme değildir; tanıkta söz <b>adı belli</b> birine dayanır.</td></tr>
 </table>
 
-<h3>3. Düşünceyi Geliştirme Yolları (6 Temel Yol)</h3>
-<table class="rt">
-<tr><th>Düşünceyi Geliştirme Yolu</th><th>Açıklama ve Anahtar İpuçları</th><th>Örnek Cümle</th></tr>
-<tr><td><b>1. Tanımlama</b></td><td>Bir kavramın veya varlığın ne olduğunu açıklamaktır. <b>“... nedir?”</b> veya <b>“... kimdir?”</b> sorusuna cevap verir; genellikle <i>“... denir.”</i> veya <i>“-dır/-dir”</i> ile biter (Öznel ya da nesnel olabilir)[cite: 14].</td><td>• <b>Empati</b>, insanın kendisini karşısındakinin yerine koyarak onun duygularını anlaması<b>dır</b>. (Nesnel)<br>• <b>Şiir</b>, kelimelerin kalpte kanatlanması<b>dır</b>. (Öznel)</td></tr>
-<tr><td><b>2. Karşılaştırma</b></td><td>En az iki varlık, kavram veya durumu benzer ya da farklı yönleriyle kıyaslamaktır. İpuçları: <b>en, daha, kadar, göre, ise, oysa, halbuki</b>[cite: 14].</td><td>• Tiyatroda oyuncu seyirciyle yüz yüzeyken, sinemada <b>ise</b> perde arkasındadır.<br>• Yılın <b>en</b> yağışlı mevsimi ilkbahardır.</td></tr>
-<tr><td><b>3. Örnekleme</b></td><td>Soyut bir düşünceyi somutlaştırmak ve görünür kılmak için örnekler sıralamaktır. İpuçları: <b>örneğin, mesela, söz gelimi</b>[cite: 14].</td><td>• Karadeniz’de gezilecek pek çok yayla vardır; <b>örneğin</b> Ayder, Pokut ve Kümbet bunlardan bazılarıdır.</td></tr>
-<tr><td><b>4. Tanık Gösterme (Alıntı Yapma)</b></td><td>Yazarın kendi görüşünü inandırıcı kılmak için o alanda uzman/ünlü bir kişinin <b>SÖZÜNÜ (doğrudan tırnak içinde veya dolaylı olarak)</b> paylaşmasıdır[cite: 14].</td><td>• Eğitimde sevgi şarttır; <b>Montaigne’in dediği gibi: “Korku üzerine kurulan eğitim ruhu köleleştirir.”</b></td></tr>
-<tr><td><b>5. Sayısal Verilerden Yararlanma</b></td><td>Düşünceyi kanıtlamak için <b>araştırma sonuçları, istatistikler, oranlar (%) ve sayılar</b> kullanmaktır[cite: 14].</td><td>• Araştırmalara göre düzenli spor yapanlarda kalp hastalığı riski <b>%40</b> oranında azalmaktadır.</td></tr>
-<tr><td><b>6. Benzetme</b></td><td>Aralarında ilgi bulunan iki şeyden zayıf olanı güçlü olana benzetmektir (<i>gibi, sanki, tıpkı, misali, andırmak</i>)[cite: 14].</td><td>• Kütüphaneler, toplumun hafızasını koruyan <b>birer hazine sandığı gibidir</b>.</td></tr>
-</table>
+<div class="note"><b>LGS Tuzağı 9 (2018 ve 2026, sözcük var ≠ yapı var):</b> 2018’de metinde bir anket sorusu geçiyordu ama “Yazar düşüncelerini sorular sorarak anlatmıştır.” yargısı <b>yanlıştı</b>. 2026’da “Ey oğul, sorular en önemli yol göstericindir” diyen şıkta “soru” sözcüğü geçiyordu ama <b>soru cümlesi</b> yoktu; bu yüzden “seslenme + soru + öğüt” ölçütlerinin üçünü birden karşılayamıyordu.</div>
 
-<div class="note"><b>LGS Tuzağı 2 (Örnekleme ile Tanık Gösterme Farkı!):</b>
-<br>• Paragrafta ünlü bir yazarın veya bilim insanının <b>SADECE İSMİ</b> geçiyorsa (sözü/cümlesi yoksa) bu <b>ÖRNEKLEMEDİR</b>: <i>“Edebiyatımızda Ömer Seyfettin, Sait Faik gibi büyük öykücüler yetişmiştir.”</i> (Örnekleme!)[cite: 14]
-<br>• Ancak o ünlü kişinin <b>SÖZÜ / GÖRÜŞÜ</b> de verilmişse bu <b>TANIK GÖSTERMEDİR</b>: <i>“Sait Faik: ‘Bir insanı sevmekle başlar her şey.’ der.”</i> (Tanık Gösterme!)[cite: 14]</div>
+<div class="note"><b>LGS Tuzağı 10 (2023, hayalî unsur):</b> Nöbet tutma anısını anlatan metinde olay, gözlem ve saptama vardı; “Hayalî unsurlara yer verilmiştir.” söylenemezdi. Gerçekte yaşanmış bir anı ne kadar duygulu anlatılırsa anlatılsın düşsel değildir.</div>
+
+<h3>7. Soru Köküne Göre Çözüm Haritası</h3>
+<table>
+<tr><th>Soru kökü</th><th>İlk yapacağın iş</th></tr>
+<tr><td>“…anlatımıyla ilgili hangisi <b>söylenemez</b>?”</td><td>Şıkları tek tek metinde ara; bulduğunun yanına ✓ koy. ✓ almayan tek şık cevaptır. Kelimenin geçmesine değil, <b>yapının</b> bulunmasına bak.</td></tr>
+<tr><td>“I–IV yargılarından hangileri doğrudur?”</td><td>Önce en kolay öncülü çöz, şıkları ele. Kalan iki şıkta tek farkı yaratan öncüle odaklan.</td></tr>
+<tr><td>“…düşünceyi geliştirme yollarından hangileri kullanılmıştır?”</td><td>Her cümlenin yanına yolunu yaz (T, Ö, K, B, TG, SV). İkili şıklarda iki yolun <b>ikisi de</b> bulunmalı.</td></tr>
+<tr><td>“…hangisiyle tamamlanırsa anlatım biçimi değişmez?”</td><td>Metnin biçimini belirle; aynı tonu sürdüren şıkkı seç. Soru, seslenme, öğüt, “ben” anısı biçimi değiştirir.</td></tr>
+<tr><td>“…hangisini değerlendirmek için yazılmış olabilir?”</td><td>Değerlendirme metnindeki ölçütleri madde madde çıkar; <b>hepsini</b> karşılayan şıkkı ara.</td></tr>
+</table>
 `,
 qs: [
 {
-  q: `<p>Bir paragrafta <b>“Örnekleme”</b> ile <b>“Tanık Gösterme”</b> arasındaki farkı inceleyen dört öğrenci, hazırladıkları bilgi kartlarına aşağıdaki metinleri yazmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Örnekleme ve tanık gösterme ayrımı öğrenci kartları">
-<rect x="10" y="10" width="252" height="68" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="20" y="28" font-size="10" font-weight="bold" fill="#1e40af">1. Mert’in Kartı:</text>
-<text x="20" y="44" font-size="9.5">“Türk edebiyatında köy hayatını başarıyla</text>
-<text x="20" y="58" font-size="9.5">anlatan Yaşar Kemal, Fakir Baykurt ve</text>
-<text x="20" y="72" font-size="9.5">Talip Apaydın gibi usta yazarlarımız vardır.”</text>
-
-<rect x="278" y="10" width="252" height="68" rx="6" fill="#dcfce7" stroke="#16a34a"/>
-<text x="288" y="28" font-size="10" font-weight="bold" fill="#166534">2. Selin’in Kartı:</text>
-<text x="288" y="44" font-size="9.5">“Dil, bir milletin kalbidir. Konfüçyüs’ün</text>
-<text x="288" y="58" font-size="9.5">‘Bir ülkeyi yönetmeye çağrılsaydım, işe dili</text>
-<text x="288" y="72" font-size="9.5">düzeltmekle başlardım.’ sözü bunu kanıtlar.”</text>
-
-<rect x="10" y="88" width="252" height="68" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="20" y="106" font-size="10" font-weight="bold" fill="#b45309">3. Kaan’ın Kartı:</text>
-<text x="20" y="122" font-size="9.5">“Cemil Meriç de kitapların insan zihnini</text>
-<text x="20" y="136" font-size="9.5">aydınlatan tek liman olduğunu belirterek</text>
-<text x="20" y="150" font-size="9.5">okumanın önemine dikkat çekmiştir.”</text>
-
-<rect x="278" y="88" width="252" height="68" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="288" y="106" font-size="10" font-weight="bold" fill="#991b1b">4. Ece’nin Kartı:</text>
-<text x="288" y="122" font-size="9.5">“Rönesans döneminde Leonardo da Vinci,</text>
-<text x="288" y="136" font-size="9.5">Michelangelo ve Raffaello resim ve heykel</text>
-<text x="288" y="150" font-size="9.5">sanatına ölümsüz eserler kazandırmıştır.”</text>
-</svg></div>
-<p>Buna göre hangi öğrencilerin kartlarında <b>“Tanık Gösterme”</b>, hangilerinde <b>“Örnekleme”</b> kullanılmıştır?</p>`,
-  c: [
-    `Tanık Gösterme: 2 ve 3 (Selin ve Kaan) — Örnekleme: 1 ve 4 (Mert ve Ece)`,
-    `Tanık Gösterme: 1 ve 2 (Mert ve Selin) — Örnekleme: 3 ve 4 (Kaan ve Ece)`,
-    `Tanık Gösterme: Yalnız 2 (Selin) — Örnekleme: 1, 3 ve 4 (Mert, Kaan ve Ece)`,
-    `Tanık Gösterme: 1 ve 4 (Mert ve Ece) — Örnekleme: 2 ve 3 (Selin ve Kaan)`
-  ],
-  a: "A",
-  s: `<p><b>Altın Kural:</b> Bir metinde ünlü kişilerin yalnızca isimleri sıralanıyorsa (sözleri/görüşleri aktarılmamışsa) bu <b>Örneklemedir</b> (<b>1. Mert ve 4. Ece</b>). Ancak ünlü kişinin sözü doğrudan (<b>2. Selin</b> - Konfüçyüs’ün sözü) veya dolaylı olarak (<b>3. Kaan</b> - Cemil Meriç’in görüşü) aktarılmışsa bu <b>Tanık Göstermedir</b>[cite: 14]. Cevap <b>A</b>.</p>`
+  q: `<p>(I) Elle not almak, öğrendiklerimizi kalıcı hâle getirmenin en etkili yollarından biridir. (II) Kalemle yazarken duyduğumuz her sözü aynen aktaramadığımız için bilgiyi süzmek ve kendi cümlelerimizle özetlemek zorunda kalırız. (III) Bu süzme işlemi, beynin bilgiyi yeniden düzenlemesini sağlar. (IV) Kaliteli bir defter ve rahat tutulan bir kalem ise yazma hızını artırır. (V) Böylece elle tutulan notlar, yalnızca kâğıtta değil zihinde de yer edinir.</p>
+<p><b>Bu metindeki numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?</b></p>`,
+  c: ["II", "III", "IV", "V"],
+  a: "C",
+  s: `<p>Metnin konusu, elle not almanın <b>öğrenmeyi kalıcı hâle getirmesi</b>dir. II, bilginin süzülüp özetlendiğini; III, “<b>Bu süzme işlemi</b>” diyerek II’ye bağlanıp beynin bilgiyi düzenlediğini; V de “<b>Böylece</b>” ile bu süreci sonuca bağlar.</p>
+<p>IV. cümle “defter, kalem, yazma” gibi metindeki sözcüklere yakın kavramlar taşıdığı için konuya uygun görünür; ama öğrenmeye etkiden <b>araç gerecin yazma hızına</b> kayar. Üstelik bu cümle metnin düşüncesine ters düşer: Metin hızlı yazmayı değil, süzerek yazmayı öne çıkarır. IV çıkarıldığında III ile V pürüzsüz bağlanır.</p>
+<p>II, III ve V birbirine gönderme sözcükleriyle bağlı olduğu için akışı bozmaz. Cevap <b>C</b>.</p>`
 },
 {
-  q: `<p>Aşağıdaki görselde aynı sahil kasabasını konu alan iki farklı metin (<b>Metin K</b> ve <b>Metin L</b>) verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="Betimleme ve öyküleme karşılaştırma metinleri">
-<rect x="10" y="10" width="252" height="135" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="136" y="28" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">METİN K (Fotoğraf Karesi)</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="20" y="48">Küçük koyun etrafını zümrüt yeşili çam</text>
-<text x="20" y="62">ağaçları çevreliyordu. İskeledeki ahşap</text>
-<text x="20" y="76">bankların mavi boyaları güneşten solmuş,</text>
-<text x="20" y="90">kıyıya bağlı sandalların halatları yosun</text>
-<text x="20" y="104">tutmuştu. Havada keskin bir iyot ve taze</text>
-<text x="20" y="118">çam reçinesi kokusu asılı duruyordu.</text>
-</g>
-<rect x="278" y="10" width="252" height="135" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="404" y="28" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">METİN L (Film Şeridi)</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="288" y="48">İhtiyar balıkçı sabah erkenden iskeleye</text>
-<text x="288" y="62">indi. Sandalının halatını çözüp küreklere</text>
-<text x="288" y="76">asıldı ve koydan açıldı. Öğleye kadar</text>
-<text x="288" y="90">ağlarını denize bıraktı. Akşamüstü kasabaya</text>
-<text x="288" y="104">döndüğünde tuttuğu balıkları kasalara</text>
-<text x="288" y="118">dizerek limandaki tezgâha taşıdı.</text>
-</g>
-</svg></div>
-<p>Bu iki metnin anlatım özellikleriyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Metin K’de olay akışı ve zaman ilerlemesi olmadığı için Betimleyici anlatım; Metin L’de ise zaman akışı içinde birbirini izleyen eylemler anlatıldığı için Öyküleyici anlatım ağır basmaktadır.`,
-    `Metin K’de Tartışmacı anlatım, Metin L’de ise Açıklayıcı anlatım kullanılmıştır.`,
-    `Her iki metinde de kahraman (1. kişi) bakış açısı ve sayısal veriler kullanılmıştır.`,
-    `Metin K’de yalnız işitme duyusu, Metin L’de ise tanımlama kullanılmıştır.`
-  ],
-  a: "A",
-  s: `<p><b>Metin K</b>’de zaman durmuş, koyun görüntüsü ve kokusu sıfatlarla okuyucunun gözünde resmedilmiştir (<b>Betimleyici anlatım</b>)[cite: 14]. <b>Metin L</b>’de ise balıkçının sabahtan akşama kadar yaptığı işler zaman akışı içinde (<i>indi → çözdü → açıldı → döndü → taşıdı</i>) anlatılmıştır (<b>Öyküleyici anlatım</b>)[cite: 14]. Cevap <b>A</b>.</p>`
+  q: `<p>(I) Bir kentin hafızası en çok eski çarşılarında yaşar. (II) Çünkü bu çarşılarda yüzyıllardır aynı zanaatlar, ustadan çırağa geçerek bugüne ulaşmıştır. (III) Günümüzde kentlerde açılan alışveriş merkezlerinin sayısı da her yıl artmaktadır. (IV) Bakırcının çekiç sesi, tabakhanenin kokusu, bir dükkânın kapısındaki yıpranmış tabela kentin geçmişini sessizce anlatır. (V) Bu yüzden eski çarşıları korumak, aslında bir kentin belleğini korumaktır.</p>
+<p><b>Bu metindeki numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?</b></p>`,
+  c: ["II", "III", "IV", "V"],
+  a: "B",
+  s: `<p>Metin, eski çarşıların bir kentin <b>hafızasını</b> taşıdığını anlatır. II, “Çünkü” ile I’in gerekçesini verir; IV, çarşılardaki ses, koku ve tabelalarla bu hafızayı örneklendirir; V, “Bu yüzden” ile sonuca bağlar.</p>
+<p>III. cümle “alışveriş” konusuyla ilgili göründüğü için tuzaktır; ama eski çarşıların kent belleğindeki yerinden <b>yeni alışveriş merkezlerinin sayısına</b> geçer. Aynı alanın farklı bir yönüne kaymıştır (2022 LGS’deki “ilk kitaplar → kitap sayısı” tuzağının benzeri). III çıkarılınca II’deki çarşı ve zanaat anlatımı IV’teki örneklere doğrudan bağlanır.</p>
+<p>II, IV ve V metnin ana düşüncesini sürdürür. Cevap <b>B</b>.</p>`
 },
 {
-  q: `<p>Öyküleyici metinlerde olayların kimin gözünden ve hangi bilgi sınırıyla anlatıldığını gösteren <b>üç temel bakış açısı</b> vardır. Aşağıdaki tabloda üç farklı hikâye kesiti verilmiştir.</p>
-<table class="rt">
-<tr><th>Kesit No</th><th>Hikâye Metni</th></tr>
-<tr><td><b>I</b></td><td>Sınav salonuna girdiğimde kalbim yerinden çıkacak gibi çarpıyordu. Sırama oturup derin bir nefes aldım ve kitapçığın dağıtılmasını bekledim.</td></tr>
-<tr><td><b>II</b></td><td>Genç adam, tren istasyonundaki tahta banka oturdu. Çantasından çıkardığı gazeteyi açtı, birkaç dakika başlıkları inceledikten sonra saatine baktı ve ayağa kalktı.</td></tr>
-<tr><td><b>III</b></td><td>Yaşlı kadın pencereden sokağı izlerken içini derin bir hüzün kapladı. Otuz yıl önce bu evden ayrılan oğlunun sesini zihninde duyuyor, onun yarın sürpriz yapıp geleceğini henüz bilmiyordu.</td></tr>
+  q: `<p>(I) Anadolu’da yüzyıllardır dokunan kilimler, yalnızca yere serilen birer örtü değildir. (II) Kilimi dokuyan kadınlar, dile getiremedikleri duygularını desenlere işlemiştir. (III) Örneğin “eli belinde” motifi annelik ve bereketi, “kurt ağzı” motifi ise sürüyü kötülüklerden koruma isteğini anlatır. (IV) Bu yüzden eski bir kilime bakan kişi, aslında dokuyucusunun yazdığı bir mektubu okur.</p>
+<p><b>Bu parçada numaralanmış cümlelerin hangisinden sonra</b> “Bu sessiz anlatımın harfleri ise motiflerdir; her biri belirli bir dileği ya da duyguyu simgeler.” <b>cümlesi getirilirse metnin anlam bütünlüğü bozulmaz?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "B",
+  s: `<p>Eklenecek cümledeki “<b>Bu sessiz anlatım</b>” ifadesi, öncesinde söze dökülmeden yapılan bir anlatımdan söz edilmesini gerektirir. Bu anlatım II. cümlededir: Kadınlar <b>dile getiremedikleri</b> duygularını desenlere işlemiştir. Ayrıca cümlenin sonundaki “her biri bir dileği simgeler” yargısı, III’teki “<b>Örneğin</b> ‘eli belinde’ motifi…” cümlesiyle örneklendirilir. Yani cümle II ile III arasına tam oturur.</p>
+<p>I’den sonra gelirse “sessiz anlatım” henüz anılmamış olur. III’ten sonra gelirse motif örnekleri genel yargıdan önce verilmiş olur ve IV’teki “Bu yüzden” bağı kopar. IV’ten sonra gelirse metin sonuca ulaştıktan sonra yeniden açıklamaya döner. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>(I) Kutup bölgelerinde yaşayan bazı hayvanlar, aşırı soğuğa karşı ilginç yöntemler geliştirmiştir. (II) Bu tüyler, içlerindeki hava sayesinde vücut ısısının dışarı kaçmasını engeller. (III) Penguenler ise sıkı sıkıya sokularak büyük kümeler oluşturur. (IV) Kümenin ortasındakiler ısındıkça dışa, dıştakiler de içe doğru yer değiştirir.</p>
+<p><b>Bu parçada numaralanmış cümlelerin hangisinden sonra</b> “Örneğin kutup ayısının kalın postu, içi boş tüylerden oluşur.” <b>cümlesi getirilirse metnin anlam bütünlüğü bozulmaz?</b></p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "A",
+  s: `<p>II. cümle “<b>Bu tüyler</b>” diye başlar; ancak metinde öncesinde hiç tüyden söz edilmemiştir. Demek ki tüyleri anan cümle II’den hemen önce, yani <b>I’den sonra</b> gelmelidir. Eklenecek cümledeki “<b>Örneğin</b>” de I’deki genel yargıyı (“ilginç yöntemler geliştirmiştir”) örneklendirir.</p>
+<p>II’den sonra gelirse “Bu tüyler” yine dayanaksız kalır. III’ten ya da IV’ten sonra gelirse penguen örneğinin arasına girer; III’teki “Penguenler <b>ise</b>” ifadesi de önceki bir örnekle karşıtlık kurduğundan, kutup ayısı örneğinin III’ten önce verilmesi gerekir. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Bir günde yaşananları anlatan bir metin oluşturmak için aşağıdaki cümleler kullanılacaktır:</p>
+<p>(I) Kapıyı açtığımda dedem, elinde çapasıyla bahçenin ortasında beni bekliyordu.<br>(II) İlk iş, kışın sertleşen toprağı çapalayıp yumuşatmak oldu.<br>(III) Hasat zamanı geldiğinde sepetler dolusu domates topladık.<br>(IV) Sonra dedemin gösterdiği aralıklarla fideleri tek tek toprağa yerleştirdik.<br>(V) Bahar gelince, söz verdiğim gibi fide dikmek için köye gittim.<br>(VI) Akşam, ellerimiz toprak içinde, dizi dizi uzanan fidelere bakarak eve döndük.</p>
+<p><b>Bu cümleler olay sırasına göre anlamlı bir metin oluşturacak biçimde sıralandığında hangisi dışarıda kalır?</b></p>`,
+  c: ["I", "III", "IV", "VI"],
+  a: "B",
+  s: `<p>Olay sırasını kuralım: <b>V</b> (bahar gelince köye gittim) → <b>I</b> (kapıyı açtığımda dedem bekliyordu) → <b>II</b> (ilk iş toprağı çapalamak) → <b>IV</b> (sonra fideleri yerleştirdik) → <b>VI</b> (akşam eve döndük).</p>
+<p>Bu sıradaki halkalar açıktır: II’deki “İlk iş” ve IV’teki “Sonra” sıralama bildirir; VI’daki “Akşam” günü kapatır.</p>
+<p>III. cümle konu dışı değildir; aynı bahçe ve aynı fidelerle ilgilidir. Ancak hasat, fide dikildiği günden <b>aylar sonra</b> gelecek bir aşamadır ve metin “bir günde yaşananları” anlatmaktadır. 2020 LGS’de de dışarıda kalan cümle, olayın henüz gelinmemiş bir aşamasıydı. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>(I) Yazarın masasında her sabah aynı düzen kurulurdu. (II) Sol tarafta bir gün önce yazdığı taslaklar, sağ tarafta boş kâğıtlar dururdu. (III) Bu taslaklardan beğendiği tek bir cümleyi seçer, gün boyu o cümlenin üzerinde çalışırdı. (IV) Kahvesini bitirince önce sol taraftaki kâğıtları baştan sona okurdu. (V) Akşam olduğunda o tek cümle, bazen bir sayfalık bir öyküye dönüşmüş olurdu.</p>
+<p><b>Bu metnin akışının doğru olması için numaralanmış cümlelerden hangi ikisi yer değiştirmelidir?</b></p>`,
+  c: ["I ile II", "II ile IV", "III ile IV", "IV ile V"],
+  a: "C",
+  s: `<p>Yazarın gününü zaman sırasıyla düşünelim: Masadaki düzen (I) → bu düzenin ayrıntısı: soldaki taslaklar, sağdaki boş kâğıtlar (II) → kahveden sonra <b>önce</b> taslakları okuma (IV) → okuduklarından <b>beğendiği</b> bir cümleyi seçip üzerinde çalışma (III) → akşam bu cümlenin öyküye dönüşmesi (V).</p>
+<p>Doğru sıra I – II – IV – III – V’tir. Bunun için <b>III ile IV</b> yer değiştirmelidir. Tuzak: III’teki “Bu taslaklardan” ifadesi II’deki taslaklara bağlanabildiği için III yerinde duruyor gibi görünür; ama yazar bir cümleyi “beğenebilmek” için önce taslakları okumalıdır. IV’teki “<b>önce</b>” sözcüğü de bu işin seçimden önce yapıldığını gösterir.</p>
+<p>Diğer yer değiştirmeler (I-II, II-IV, IV-V) ya giriş cümlesini ya da akşamla biten zaman çizgisini bozar. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Annem mutfaktan seslendi: “Buzdolabındaki keki kim yedi?” Kardeşim gözlerini televizyondan ayırmadan “- - - -” dedi. Ben de hemen atıldım: “- - - -” Annem bu kez ikimize birden baktı: “- - - -” O an kardeşimin dudağının kenarındaki çikolata lekesini fark ettim ve gülmemek için kendimi zor tuttum.</p>
+<p><b>Bu metindeki boşluklara aşağıdakilerden hangisi getirilemez?</b></p>`,
+  c: ["Ben mutfağa hiç girmedim ki.", "Benim haberim yok, odamda ders çalışıyordum.", "O zaman kek kendi kendine mi kayboldu?", "Keki ben yedim, hem de son dilimine kadar."],
+  a: "D",
+  s: `<p>Boşlukları sırayla dolduralım:</p>
+<ul><li>1. boşluk, kardeşimin cevabıdır: “Ben mutfağa hiç girmedim ki.” (A) Suçu üstlenmeyen bir söz olarak uyar.</li>
+<li>2. boşluk, anlatıcının cevabıdır: “Benim haberim yok, odamda ders çalışıyordum.” (B)</li>
+<li>3. boşluk, ikisinin de inkâr ettiğini gören annenin sorusudur: “O zaman kek kendi kendine mi kayboldu?” (C)</li></ul>
+<p>D’deki itiraf metinle çelişir: Biri keki yediğini söyleseydi annem “ikimize birden” şüpheyle bakmazdı. Ayrıca metnin sonunda anlatıcı, keki kardeşinin yediğini <b>dudağındaki çikolata lekesinden</b> yeni anlamaktadır. 2020 LGS’de de getirilemeyen cümle, anlatılan durumla çelişen cümleydi. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>“Eli kulağında” sözünü bugün çoğumuz “olmak üzere, çok yakında” anlamında kullanıyoruz. Oysa bu deyimin kökü, ezan okumaya hazırlanan müezzinin sesini daha iyi duyabilmek için elini kulağına götürmesine dayanır. Müezzin elini kulağına götürdüyse ezanın okunmasına artık birkaç saniye kalmış demektir. Mahallede bunu gören çocuklar, iftar sofrasına koşma vaktinin geldiğini anlarmış. Ben de bu deyimi her duyduğumda, minarede bekleyen o eli ve sofranın başında sabırsızlanan çocukları düşünüyorum.</p>
+<p><b>Bu metnin anlatımıyla ilgili aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["Açıklamaya başvurulmuştur.", "Tartışmacı bir anlatım vardır.", "Karşılaştırma yapılmıştır.", "Kişisel bir izlenime yer verilmiştir."],
+  a: "B",
+  s: `<p>Şıkları metinde arayalım:</p>
+<ul><li>A ✓: Deyimin nereden geldiği bilgi verilerek açıklanmıştır.</li>
+<li>C ✓: Deyimin <b>bugünkü kullanımı</b> ile <b>kökeni</b> “Oysa” bağlacıyla karşı karşıya konmuştur. 2022 LGS’de de bir sözcüğün iki anlamının ele alınması karşılaştırma sayılmıştı.</li>
+<li>D ✓: “Ben de bu deyimi her duyduğumda… düşünüyorum.” kişisel bir izlenimdir.</li></ul>
+<p>B ✗: “Oysa” sözcüğü tartışmacı anlatımı çağrıştırdığı için tuzaktır. Ancak yazar bir görüşü savunup karşıt bir görüşü <b>çürütmeye</b> çalışmaz; yalnızca deyimin kökenini anlatır. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Konağın ahşap merdivenleri, her adımda başka bir sesle gıcırdıyor; sanki yıllardır kimseyle konuşmamış da şimdi bütün hikâyelerini bir anda anlatmak istiyor. Tavandaki kalem işi çiçeklerin kırmızısı solmuş, mavisi neredeyse griye dönmüş. Pencereden süzülen ışık, tozlu halının üzerine sarı bir yol çiziyor. Odaya yayılan hafif nem kokusu, ıslak toprağı andırıyor. Duvardaki saat çoktan durmuş; bu evde zaman, eski bir pazar sabahında takılıp kalmış.</p>
+<p><b>Bu metinle ilgili aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["Kişileştirmeye başvurulmuştur.", "Benzetme yapılmıştır.", "Karşılaştırmaya yer verilmiştir.", "Görme, işitme ve koklama duyularından yararlanılmıştır."],
+  a: "C",
+  s: `<p>A ✓: Merdivenlerin “konuşmak, hikâyelerini anlatmak istemesi” insana özgü davranışlardır → kişileştirme.</p>
+<p>B ✓: “Sanki… anlatmak istiyor”, “ıslak toprağı <b>andırıyor</b>” → benzetme.</p>
+<p>D ✓: Renkler ve ışık (görme), gıcırtı (işitme), nem kokusu (koklama).</p>
+<p>C ✗: Metinde iki varlığın ya da durumun benzer veya farklı yönleri ortaya konmaz. Tuzak: “sanki” ve “andırıyor” benzetme bildirir, karşılaştırma değil. Benzetmede bir varlık başka bir varlığa <b>benzetilir</b>; karşılaştırmada iki şey <b>tartılır</b>. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Sonbahar geldi mi evlerde bir telaş başlar. Turşular kurulur, salçalar kaynatılır. Kilerler dolar. “Yaz gününün işi, kış gününün aşı.” derler ya, tam da öyle. Ben bu telaşı severim. Mutfaktan yükselen sirke kokusu bile hoşuma gider. Komşular birbirine yardıma koşar. Bir kavanoz turşu, bir kapı ötedeki sofraya kadar gider. “Komşu komşunun külüne muhtaçtır.” sözü boşuna söylenmemiş.</p>
+<p><b>Bu metnin dil ve anlatımıyla ilgili aşağıdakilerden hangisi söylenemez?</b></p>`,
+  c: ["Kısa cümlelerle anlatım sağlanmıştır.", "Özlü sözlerden yararlanılmıştır.", "Kişisel görüşlere yer verilmiştir.", "Tanık göstermeye başvurulmuştur."],
+  a: "D",
+  s: `<p>A ✓: “Kilerler dolar.”, “Ben bu telaşı severim.” gibi kısa cümleler vardır.</p>
+<p>B ✓: “Yaz gününün işi, kış gününün aşı.” ve “Komşu komşunun külüne muhtaçtır.” atasözleridir.</p>
+<p>C ✓: “Ben bu telaşı severim.”, “sirke kokusu bile hoşuma gider” öznel görüşlerdir.</p>
+<p>D ✗: Atasözleri tırnak içinde verildiği için tanık gösterme sanılabilir. Ancak tanık göstermede söz, <b>adı belli</b> bir kişiye ya da kuruma dayandırılır (“Yunus Emre’nin dediği gibi…”). Atasözü ise halkın ortak sözüdür; bu özlü söz kullanımıdır. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Bir ilçe kütüphanesi, “Okuyan Mahalle” adıyla bir kampanya başlatmıştır. Kampanyanın ilk altı ayında kütüphaneye üye olan çocukların sayısı 120’den 450’ye çıkmıştır. Kütüphane müdürü Ayşe Yılmaz, “Çocuklar kitaba değil, kitaplar çocuklara gitmeli.” diyerek gezici kitap otobüsünün bu başarıdaki payına dikkat çekmiştir. Otobüs, her hafta farklı bir mahalleye giderek renkli rafları ve yumuşak minderleriyle çocukları ağırlamaktadır.</p>
+<p><b>Bu parçayla ilgili,</b></p>
+<p>I. Sayısal verilerden yararlanılmıştır.<br>II. Tanık göstermeye başvurulmuştur.<br>III. Benzetme yapılmıştır.<br>IV. Öyküleyici anlatım ağır basmaktadır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "III ve IV"],
+  a: "A",
+  s: `<p>I ✓: Üye sayısının “120’den 450’ye” çıkması, kampanyanın başarısını kanıtlayan sayısal veridir.</p>
+<p>II ✓: Adı belli bir kişinin (kütüphane müdürü Ayşe Yılmaz) sözü, düşünceyi desteklemek için aktarılmıştır.</p>
+<p>III ✗: “Çocuklar kitaba değil, kitaplar çocuklara gitmeli.” bir benzetme değil, bir görüştür; hiçbir varlık başka bir varlığa benzetilmemiştir. “Renkli raflar, yumuşak minderler” de niteleyici sözcüklerdir, benzetme değildir.</p>
+<p>IV ✗: Metin bir kampanya hakkında bilgi verir; kişi, zaman ve yer içinde gelişen bir olay akışı yoktur. Ağır basan anlatım açıklayıcıdır. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Yağmurda yürümeyi hiç sevmeyen insanlar vardır. Şemsiyelerinin altına sığınır, su birikintilerinin etrafından dolaşır, bir an önce eve varmak isterler. Bense yağmuru, şehrin yüzünü yıkayan bir el gibi görürüm. Islanan kaldırım taşları daha parlak, ağaçların yaprakları daha yeşil görünür bana. Siz hiç şemsiyenizi kapatıp yüzünüzü gökyüzüne çevirdiniz mi? Denemeye değer; belki o gün yağmurla aranızdaki küslük biter.</p>
+<p><b>Bu parçayla ilgili,</b></p>
+<p>I. Öznel yargılara yer verilmiştir.<br>II. Okura seslenilmiştir.<br>III. Soru cümlesine yer verilmiştir.<br>IV. Olaylar zaman sırasıyla anlatılmıştır.</p>
+<p><b>yargılarından hangileri doğrudur?</b></p>`,
+  c: ["I ve IV", "II ve III", "I, II ve III", "II, III ve IV"],
+  a: "C",
+  s: `<p>I ✓: “Bense yağmuru… bir el gibi görürüm.”, “Denemeye değer” kişiden kişiye değişen öznel yargılardır.</p>
+<p>II ✓: “<b>Siz</b> hiç şemsiyenizi kapatıp…”, “aranızdaki küslük” ile okura doğrudan seslenilmiştir.</p>
+<p>III ✓: “Siz hiç… çevirdiniz mi?” soru cümlesidir.</p>
+<p>IV ✗: “Sığınır, dolaşır, varmak isterler” bir kerelik olay değil, bazı insanların <b>alışkanlıklarını</b> anlatır. Metinde belirli bir zamanda yaşanmış, birbirini izleyen olaylar yoktur. Bu yüzden I, II ve III doğrudur; IV’ü içeren A ve D ile I’i dışarıda bırakan B elenir. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Mozaik; renkli taş, cam ya da seramik parçalarının harç üzerine yan yana dizilmesiyle oluşturulan bir süsleme sanatıdır. Bu sanatta ustanın en önemli malzemesi sabırdır çünkü küçük bir pano için bile sayısız parça tek tek yerleştirilir. Gaziantep’teki Zeugma Antik Kenti’nde bulunan ve “Çingene Kızı” adıyla tanınan mozaik, bu sanatın ülkemizdeki en bilinen örneklerinden biridir.</p>
+<p><b>Bu metinde aşağıdaki düşünceyi geliştirme yollarından hangileri kullanılmıştır?</b></p>`,
+  c: ["Benzetme - tanımlama", "Karşılaştırma - tanık gösterme", "Örneklendirme - karşılaştırma", "Tanımlama - örneklendirme"],
+  a: "D",
+  s: `<p>İlk cümle mozaiğin <b>ne olduğunu</b> söyler: “Mozaik; … bir süsleme sanatıdır.” → <b>tanımlama</b>.</p>
+<p>Son cümlede Zeugma’daki “Çingene Kızı” mozaiği, bu sanatın somut bir örneği olarak verilir → <b>örneklendirme</b>.</p>
+<p>A’da tanımlama doğru ama metinde benzetme yoktur; “en önemli malzemesi sabırdır” bir yargıdır, iki varlık arasında benzerlik kurulmaz. B ve C’deki karşılaştırma ve tanık gösterme de metinde bulunmaz: Mozaik başka bir sanatla kıyaslanmamış, kimsenin sözü aktarılmamıştır. İkili şıklarda iki yolun <b>ikisinin de</b> bulunması gerekir. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p>Tozlaşmayı sağlayan arı, kelebek, yarasa gibi canlılar olmasaydı sofralarımız bugünkünden çok daha yoksul olurdu. Birleşmiş Milletler Gıda ve Tarım Örgütüne göre dünyadaki gıda bitkilerinin dörtte üçü, ürün verebilmek için tozlaşmaya en azından kısmen ihtiyaç duyar. Rüzgârla tozlaşan buğday ve arpa bu canlıların azalmasından pek etkilenmezken kiraz ve badem büyük ölçüde onlara bağlıdır. Kırk yıldır arıcılık yapan Hasan Usta’nın dediği gibi: “Arı susarsa önce çiçek, sonra sofra susar.”</p>
+<p><b>Bu metinde aşağıdaki düşünceyi geliştirme yollarından hangisi kullanılmamıştır?</b></p>`,
+  c: ["Benzetme", "Sayısal veri", "Tanık gösterme", "Karşılaştırma"],
+  a: "A",
+  s: `<p>B ✓: “Gıda bitkilerinin <b>dörtte üçü</b>” bir kuruma dayandırılmış sayısal veridir.</p>
+<p>C ✓: Hasan Usta’nın sözü (ayrıca Gıda ve Tarım Örgütü) düşünceyi desteklemek için tanık olarak gösterilmiştir.</p>
+<p>D ✓: Rüzgârla tozlaşan tahıllar ile canlılara bağlı meyveler, tozlaşan canlıların azalmasından etkilenme bakımından karşılaştırılmıştır.</p>
+<p>A ✗: Metinde iki kez “gibi” geçer ama ikisi de benzetme değildir. “Arı, kelebek, yarasa <b>gibi</b> canlılar” <b>örnek</b> bildirir; “Hasan Usta’nın dediği <b>gibi</b>” ise söz aktarır. “Sofra susar” bir kişileştirmedir, benzetme değil. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>- - - -. Yahya Kemal’in “Kökü mazide olan âtiyim.” dizesi de bu bağı anlatır. Gerçekten de bir milletin müziği, mutfağı ve mimarisi kuşaktan kuşağa aktarılarak bugüne ulaşır. Örneğin Mimar Sinan’ın kubbe anlayışı, yüzyıllar sonra yapılan pek çok caminin tasarımında yaşamaya devam etmektedir. Geçmişini bilmeyen bir toplum ise kökleri kesilmiş bir çınar gibi ilk fırtınada devrilmeye mahkûmdur.</p>
+<p><b>Bu metinde;</b></p>
+<p>• tanık gösterme,<br>• örneklendirme,<br>• benzetme,<br>• tanımlama</p>
+<p><b>düşünceyi geliştirme yollarının tamamının kullanıldığını söyleyebilmek için boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?</b></p>`,
+  c: ["Kültür, bir milletin geçmişten devralıp geleceğe aktardığı maddi ve manevi değerlerin bütünüdür", "Geçmiş, tıpkı bir pusula gibi milletlere gidecekleri yönü gösterir", "Bazı milletler geçmişine sıkı sıkıya bağlıyken bazıları geçmişini hızla unutur", "Ziya Gökalp de kültürün her milletin kendine özgü olduğunu söyler"],
+  a: "A",
+  s: `<p>Önce metinde <b>zaten bulunan</b> yolları işaretleyelim:</p>
+<ul><li>Yahya Kemal’in dizesi → <b>tanık gösterme</b></li>
+<li>“Örneğin Mimar Sinan’ın kubbe anlayışı…” → <b>örneklendirme</b></li>
+<li>“kökleri kesilmiş bir çınar gibi” → <b>benzetme</b></li></ul>
+<p>Eksik olan <b>tanımlama</b>dır. A, kültürün ne olduğunu söyleyen bir tanım cümlesidir. Ayrıca A’daki “geçmişten devralıp geleceğe aktarma” düşüncesi, ikinci cümledeki “<b>bu bağı</b>” ifadesine dayanak olur.</p>
+<p>B benzetme, D tanık gösterme içerir; bu yollar metinde zaten vardır (2025 LGS’deki “tarihî eser gibi” tuzağı). C ise karşılaştırmadır ve listede istenmez. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Bazı kokular insanı bir anda yıllar öncesine götürür. Benim için o koku, ıhlamurdur. Kış akşamlarında evimizin her köşesine yayılan o tatlı koku, hâlâ çocukluğumun en sıcak hatırasıdır. - - - -</p>
+<p><b>Bu parça aşağıdakilerin hangisiyle devam ettirilirse öyküleyici bir metne dönüşür?</b></p>`,
+  c: ["Ihlamur, ıhlamur ağacının kurutulmuş çiçeklerinden hazırlanır ve soğuk algınlığına iyi geldiği düşünülür. Kurutulmuş çiçekler kaynar suda birkaç dakika demlenerek içilir.", "Bahçemizdeki ağacın sarı çiçekleri, kalp biçimli yaprakların arasında küçük fenerler gibi asılı dururdu. Rüzgâr estiğinde bütün ağaç, bal kokulu bir bulut gibi hafifçe sallanırdı.", "Bir akşam, kartopu oynamaktan donmuş ellerle eve döndüm. Annem beni görünce hemen ocağı yaktı, cezveye bir avuç ıhlamur attı. Biz soba başında ellerimizi ısıtırken babam kapıdan girdi; ilk sözü “Ihlamur mu var?” oldu.", "Kokuların hatıraları neden bu kadar güçlü canlandırdığını hiç düşündünüz mü? Belki de koku, zihnimizin en eski kapılarını açan bir anahtardır. Bence her insanın böyle bir anahtarı vardır."],
+  a: "C",
+  s: `<p>Öyküleyici anlatımda <b>kişi, zaman, yer</b> ve birbirini izleyen bir <b>olay akışı</b> bulunur.</p>
+<p>C’de “Bir akşam” (zaman), ev ve soba başı (yer), anlatıcı, annesi ve babası (kişiler) vardır; eve dönme → ocağı yakma → ıhlamur koyma → babanın gelmesi biçiminde olaylar art arda sıralanır ✓.</p>
+<p>A, ıhlamur hakkında bilgi veren <b>açıklayıcı</b> bir metindir. B, “-rdı” ekleriyle geçmiş zaman kullandığı için öyküleyici sanılabilir ama yalnızca ağacı <b>betimler</b>; ortada bir olay yoktur. D ise soru ve kişisel görüşle okuru düşünmeye yönelten bir yorumdur. 2023 LGS’de de bütün şıklar aynı konudaydı ve yalnızca olay akışı olan şık doğruydu. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Uyku, vücudun gün içinde yıpranan hücrelerini onardığı bir dinlenme sürecidir. Uyku sırasında beyin, gün boyunca öğrenilen bilgileri düzenleyip uzun süreli belleğe aktarır. Bu nedenle yeterince uyumayan öğrencilerin öğrendiklerini hatırlamakta zorlandığı görülür. - - - -</p>
+<p><b>Bu parça aşağıdakilerin hangisiyle tamamlanırsa metnin anlatım biçimi <u>değişmez</u>?</b></p>`,
+  c: ["Peki bu kadar önemli bir ihtiyacı, ekran başında geçirdiğimiz geç saatler uğruna feda etmeye değer mi? Bu soruyu hepimiz kendimize sormalıyız.", "Uzmanlar, 13-18 yaş arasındaki gençlerin günde sekiz ila on saat uyumasını önermektedir. Bu sürenin altında kalan uyku, dikkat ve odaklanma süresini de kısaltır.", "Sevgili gençler, telefonunuzu yatağınızdan uzak tutun ve her gece aynı saatte uyumaya özen gösterin. Yarınınız, bu gecenizin uykusuna bağlıdır.", "Ben de sınav dönemlerinde gece geç saatlere kadar çalışırdım. Bir gün sınavda, ezberlediğim bir tarihi hatırlayamayınca bunun bedelini ağır ödedim."],
+  a: "B",
+  s: `<p>Parça; tanımla başlayan, nesnel bilgiler veren <b>açıklayıcı</b> bir metindir. Okura seslenmez, soru sormaz, olay anlatmaz.</p>
+<p>B, uzmanlara dayanan önerilen uyku süresini ve yetersiz uykunun etkisini aynı nesnel tonla aktarır ✓.</p>
+<p>A, <b>soru cümlesiyle</b> okuru düşünmeye yöneltir ve “sormalıyız” diyerek öğüt verir. C, “Sevgili gençler” diye <b>seslenip</b> öğüt verir. D, anlatıcının başından geçen bir <b>olayı</b> anlatır ve metni öyküleyici yapar. 2026 LGS’de de soruyla biten ve okura seslenerek öğüt veren şıklar, açıklayıcı anlatımı bozan çeldiricilerdi. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Yazar bu metinde okurunun gözünün önüne bir tablo çiziyor. Renkleri, sesleri ve kokuları ustalıkla bir araya getiriyor. Cansız varlıklara insan özellikleri yükleyerek manzarayı canlandırıyor. Bunu yaparken bir olay anlatmıyor; okuru yalnızca bir anın içinde dolaştırıyor.</p>
+<p><b>Bu metin, aşağıdakilerden hangisini değerlendirmek için yazılmış olabilir?</b></p>`,
+  c: ["Sabah güneşi, kırmızı kiremitli çatıların üzerinde ağır ağır yükseliyordu. Uzaktan bir horozun sesi geliyor, fırından taze ekmek kokusu sokağa taşıyordu. Yaşlı çınar, dallarını uzatmış, gelip geçenlere selam veriyordu.", "Yeşil tepelerin ardından mor bir akşam iniyordu. Rüzgâr, kır çiçeklerinin kokusunu köye taşıyordu. Dağlar, sessizce köyün üstüne eğilmiş, onu koruyordu.", "Pazar yerine vardığımızda satıcıların bağırışları birbirine karışıyordu. Turuncu portakalların kokusu bütün tezgâhlara yayılmıştı. Annem elimi bırakıp bir tezgâha yöneldi; ben de kalabalığın içinde onu kaybettim.", "Deniz, maviden laciverde dönen renkleriyle önümüzde uzanıyordu. Martıların çığlıkları dalgaların sesine karışıyordu. İskeledeki yaşlı balıkçı, ağlarını özenle katlıyordu."],
+  a: "A",
+  s: `<p>Değerlendirme metnindeki ölçütler: <b>renk</b>, <b>ses</b>, <b>koku</b>, <b>kişileştirme</b> ve <b>olay olmaması</b>.</p>
+<p>A: kırmızı kiremit (renk), horoz sesi (ses), taze ekmek kokusu (koku), çınarın “selam vermesi” (kişileştirme); olay akışı yok ✓.</p>
+<p>B’de renk, koku ve kişileştirme (dağların köyü koruması) vardır ama <b>ses</b> yoktur. “Sessizce” sözcüğü bir ses betimlemesi değildir; 2026 LGS’de “sorular” sözcüğü geçen ama soru cümlesi olmayan şıkla aynı tuzaktır. C’de anlatıcının annesini kaybetmesiyle bir <b>olay</b> anlatılır ve kişileştirme yoktur. D’de renk ve ses vardır ama koku ve kişileştirme yoktur. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>Bir metinde yer alan bilgi, durum veya olaylar arasında mantıksal tutarlılık bulunmaması anlatım açısından kusur sayılmaktadır.</p>
+<p><b>Bu açıklamaya göre,</b></p>
+<p>Kar, gece boyunca hiç durmadan yağmıştı. Sabah kapıyı açtığımızda dizlerimize kadar gelen beyaz bir örtüyle karşılaştık. Fırtına yüzünden elektrikler de kesilmişti. Dedem sobayı yakmış, sofranın başında bizi bekliyordu. - - - -.</p>
+<p><b>parçası aşağıdakilerden hangisiyle tamamlanırsa metnin anlatımı kusurlu olur?</b></p>`,
+  c: ["Pencereden süzülen loş ışıkta, sobanın üzerindeki çaydanlık hafif hafif tütüyordu", "Annem, peynirleri ve zeytinleri sofraya dizerken bir yandan da televizyondaki hava durumunu dinliyordu", "Kardeşim, eldivenlerini giymiş, kapının önündeki karı küremek için sabırsızlanıyordu", "Dışarıda rüzgâr uğulduyor, pencerenin camına çarpan kar taneleri tıkırdıyordu"],
+  a: "B",
+  s: `<p>Metindeki kısıt: “<b>Elektrikler de kesilmişti.</b>” Elektriğin olmadığı bir evde televizyon çalışmaz; bu yüzden annenin televizyondaki hava durumunu dinlemesi metindeki bilgiyle çelişir ✗.</p>
+<p>A’da ışık pencereden gelir (elektrik gerekmez), çaydanlık sobanın üzerindedir. C’de kardeşin kar küremeye hazırlanması, dizlere kadar yağan karla uyumludur. D’de rüzgâr ve kar, fırtınalı havayla tutarlıdır. 2024 LGS’de de doğru cevap, metnin başında verilen kısıtı (yüzü görememe) unutan şıktı. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>(I) Babaannem, gözleri artık iyi görmediği için gazeteyi bana okuturdu. (II) Her sabah kahvaltıdan sonra balkona çıkar, ben haberleri okurken o da gözlerini kapatıp dinlerdi. (III) Bazen bir haberi beğenmez, başını iki yana sallayarak itiraz ederdi. (IV) Bulmacaya gelince de kalemi elime verir, kareleri benim doldurmamı isterdi. (V) Gazetenin en küçük harflerle yazılmış ilanlarını ise gözlüğüne bile ihtiyaç duymadan bir çırpıda kendisi okurdu.</p>
+<p><b>Bu metindeki numaralanmış cümlelerden hangisi mantıksal tutarlılığı bozmaktadır?</b></p>`,
+  c: ["II", "III", "IV", "V"],
+  a: "D",
+  s: `<p>I. cümlede bir kısıt verilir: Babaanne <b>gözleri iyi görmediği için</b> gazeteyi torununa okutmaktadır.</p>
+<p>II (dinlemesi), III (başını sallayarak itiraz etmesi) ve IV (bulmacayı torununa doldurtması) bu kısıtla uyumludur; babaanne okuma işini hep başkasına yaptırır.</p>
+<p>V ise babaannenin gazetedeki <b>en küçük harfleri</b> gözlüksüz ve kolayca okuduğunu söyler. Gözleri iyi görmeyen birinin bunu yapması I. cümleyle çelişir. Cümlenin başındaki “ise” sözcüğü karşıtlık kurarak doğal bir istisna gibi gösterse de mantıksal tutarlılığı bozar. Cevap <b>D</b>.</p>`
+},
+{
+  q: `<p><b>Aşağıdakilerin hangisinde tartışmacı anlatım kullanılmıştır?</b></p>`,
+  c: ["Bazı insanlar, ödevlerin çocukların oyun zamanını elinden aldığını ve tamamen kaldırılması gerektiğini savunuyor. Oysa kısa ve düzenli ödevler, okulda öğrenilenlerin pekiştirilmesini sağlar; üstelik çocuğa sorumluluk bilinci kazandırır. Öyleyse sorun ödevin kendisinde değil, miktarındadır.", "Bence ödevler, öğrencilerin hafta sonlarını daha verimli geçirmesini sağlıyor. Ben de ödevlerimi cumartesi sabahları yapıyor, öğleden sonra arkadaşlarımla buluşuyorum. Böylece hem derse hem oyuna zaman ayırabiliyorum.", "Ödev, öğretmenin derste işlenen konuyu pekiştirmek amacıyla öğrenciye okul dışında yapması için verdiği çalışmadır. Ödevler araştırma, proje, okuma ve alıştırma gibi farklı türlerde olabilir.", "Ödevlerini hep son geceye bırakan Ali, o pazar akşamı da masasının başına geç oturdu. Saat ilerledikçe göz kapakları ağırlaştı. Sabah uyandığında defterinin yarım kaldığını gördü."],
+  a: "A",
+  s: `<p>Tartışmacı anlatımda yazar bir <b>karşıt görüşü</b> ortaya koyar ve onu kanıtlarla <b>çürütmeye</b> çalışır.</p>
+<p>A’da “Bazı insanlar… savunuyor” ile karşıt görüş verilmiş, “<b>Oysa</b>… <b>üstelik</b>…” ile bu görüş çürütülmüş, “Öyleyse” ile yazarın görüşüne ulaşılmıştır ✓.</p>
+<p>B, “Bence” ile öznel bir görüş bildirir ama ortada çürütülen bir karşıt görüş yoktur; yazar kendi deneyimini anlatır. Yalnızca “bence” demek metni tartışmacı yapmaz. C, ödevin tanımını ve türlerini veren <b>açıklayıcı</b> bir metindir. D, Ali’nin başından geçenleri anlatan <b>öyküleyici</b> bir metindir. Cevap <b>A</b>.</p>`
+},
+{
+  q: `<p>(I) Pamuk, insanlığın binlerce yıldır kullandığı en önemli bitkisel liflerden biridir. (II) Yumuşak, hava geçiren ve teri emen yapısı sayesinde özellikle yaz giysilerinde tercih edilir. (III) Ayrıca kolay boyanabildiği için tekstil sanayisinin vazgeçilmez hammaddesidir. (IV) Ne var ki pamuk üretimi doğaya sanıldığı kadar dost değildir. (V) Tek bir tişört için gereken pamuğun yetişmesi bile binlerce litre su gerektirir. (VI) Tarlalarda kullanılan tarım ilaçları da toprağa ve yeraltı sularına karışır.</p>
+<p><b>Bu metin iki paragrafa ayrılmak istense ikinci paragraf hangi cümleyle başlar?</b></p>`,
+  c: ["III", "IV", "V", "VI"],
+  a: "B",
+  s: `<p>I, II ve III pamuğun <b>yararlarını ve kullanım alanlarını</b> anlatır. IV’teki “<b>Ne var ki</b>” ifadesiyle konuya bakış değişir: Artık pamuk üretiminin <b>doğaya verdiği zarar</b> ele alınır. V (su tüketimi) ve VI (tarım ilaçları) bu yeni düşünceyi destekler.</p>
+<p>III, “Ayrıca” ile başladığı için yeni bir konu açıyor sanılabilir; ama yalnızca pamuğun bir başka yararını ekler. V’teki sayısal ifade dikkat çekici olsa da IV’teki yargının kanıtıdır; tek başına giriş cümlesi olamaz. VI’daki “da” ise kendinden önce başka bir zararın anıldığını gösterir. Cevap <b>B</b>.</p>`
+},
+{
+  q: `<p>Bir öğrenci, kitap okumayla ilgili dört kısa metni okumuş ve her metinde hangi düşünceyi geliştirme yollarının kullanıldığını aşağıdaki tabloya işaretlemiştir.</p>
+<p><b>K:</b> Kitaplar, insanı başka hayatlara taşıyan birer gemi gibidir. Atatürk’ün “Kitapsız yaşayamam.” sözü de okumanın hayatımızdaki yerini gösterir.<br>
+<b>L:</b> Basılı kitap, ekranın aksine gözü yormaz; sayfa çevirmenin verdiği haz da dijital okumada yoktur.<br>
+<b>M:</b> Okumak, zihin için spor gibidir. Kütüphanecimiz Nuri Bey de “Okuyan çocuk soru sorar, soru soran çocuk düşünür.” der.<br>
+<b>N:</b> Çocukluğumda masal, roman gibi kitaplarla aram hiç iyi değildi; şimdi ise çantamda kitapsız dolaşmıyorum.</p>
+<table>
+<tr><th>Metin</th><th>Benzetme</th><th>Karşılaştırma</th><th>Tanık gösterme</th></tr>
+<tr><td>K</td><td>✓</td><td>✗</td><td>✓</td></tr>
+<tr><td>L</td><td>✗</td><td>✓</td><td>✗</td></tr>
+<tr><td>M</td><td>✓</td><td>✗</td><td>✓</td></tr>
+<tr><td>N</td><td>✓</td><td>✓</td><td>✗</td></tr>
 </table>
-<p>Tablodaki I, II ve III numaralı metinlerde kullanılan <b>anlatıcı bakış açıları</b> sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: [
-    `I: Kahraman — II: Gözlemci (Kamera) — III: Hâkim (İlahi)`,
-    `I: Gözlemci — II: Kahraman — III: Hâkim (İlahi)`,
-    `I: Hâkim (İlahi) — II: Gözlemci — III: Kahraman`,
-    `I: Kahraman — II: Hâkim (İlahi) — III: Gözlemci`
-  ],
-  a: "A",
-  s: `<p>Metinleri inceleyelim:</p>
-<ul>
-<li><b>I. Metin:</b> <i>“girdiğimde, aldım, bekledim”</i> (1. tekil kişi / Ben) → <b>Kahraman bakış açısı</b>[cite: 14].</li>
-<li><b>II. Metin:</b> 3. kişi ağzıyla sadece dışarıdan bir <b>kamera</b> gibi görünen hareketler anlatılmış, iç dünyasına girilmemiş → <b>Gözlemci bakış açısı</b>[cite: 14].</li>
-<li><b>III. Metin:</b> 3. kişi ağzıyla yaşlı kadının <b>zihninden geçenler ve gelecekte olacaklar</b> (<i>“yarın sürpriz yapıp geleceğini henüz bilmiyordu”</i>) anlatılmış → <b>Hâkim (İlahi) bakış açısı</b>. Cevap <b>A</b>.</li>
-</ul>`
+<p><b>Buna göre öğrenci, tablodaki işaretlemelerinden hangisinde hata yapmıştır?</b></p>`,
+  c: ["K metninde tanık göstermeyi işaretlemesi", "L metninde karşılaştırmayı işaretlemesi", "M metninde benzetmeyi işaretlemesi", "N metninde benzetmeyi işaretlemesi"],
+  a: "D",
+  s: `<p>Metinleri tek tek kontrol edelim:</p>
+<ul><li><b>K:</b> “birer gemi gibidir” benzetme ✓; Atatürk’ün sözü tanık gösterme ✓; karşılaştırma yok ✗. İşaretleme doğru.</li>
+<li><b>L:</b> Basılı kitap ile ekran “<b>aksine</b>” sözüyle karşılaştırılmıştır ✓. İşaretleme doğru.</li>
+<li><b>M:</b> “zihin için spor gibidir” benzetme ✓; Nuri Bey’in sözü tanık gösterme ✓. İşaretleme doğru.</li>
+<li><b>N:</b> Çocukluk ile bugün karşılaştırılmıştır ✓. Ancak “masal, roman <b>gibi</b> kitaplar” ifadesindeki “gibi”, örnek bildirir; hiçbir varlık başka bir varlığa benzetilmemiştir. Benzetme işareti <b>yanlıştır</b>.</li></ul>
+<p>“Gibi” sözcüğünü gördüğü anda benzetme işaretlemek en sık yapılan hatadır. Cevap <b>D</b>.</p>`
 },
 {
-  q: `<p>Karışık olarak verilen cümlelerle anlamlı bir paragraf oluşturulurken, her cümlenin sonundaki kavram ile bir sonraki cümlenin başındaki <b>bağlayıcı / işaret edici</b> ifade birbirine kenetlenir[cite: 14].</p>
-<div class="fig"><svg viewBox="0 0 540 135" width="520" role="img" aria-label="Domino taşı yöntemiyle cümle sıralama">
-<rect x="10" y="10" width="520" height="115" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-<g font-size="9.5" fill="#1e293b">
-<text x="22" y="32"><tspan font-weight="bold" fill="#dc2626">(I)</tspan> <tspan font-weight="bold" fill="#2563eb">Ancak son yıllarda yapılan deneyler</tspan>, ahtapotların oldukça <tspan font-weight="bold" fill="#16a34a">zeki canlılar</tspan> olduğunu kanıtlamıştır.</text>
-<text x="22" y="56"><tspan font-weight="bold" fill="#dc2626">(II)</tspan> Uzun yıllar boyunca deniz omurgasızlarının sadece <tspan font-weight="bold" fill="#2563eb">basit içgüdülerle hareket ettiği</tspan> düşünülmüştür.</text>
-<text x="22" y="80"><tspan font-weight="bold" fill="#dc2626">(III)</tspan> <tspan font-weight="bold" fill="#16a34a">Örneğin</tspan> bu canlılar kavanoz kapaklarını açabilmekte ve <tspan font-weight="bold" fill="#b45309">karmaşık labirentlerden çıkabilmektedir</tspan>.</text>
-<text x="22" y="104"><tspan font-weight="bold" fill="#dc2626">(IV)</tspan> <tspan font-weight="bold" fill="#b45309">Elde edilen tüm bu şaşırtıcı bulgular</tspan>, ileri düzey zekânın yalnız kara canlılarına özgü olmadığını göstermiştir.</text>
+  q: `<p>Bir öğretmen, anlatım biçimlerini ayırt etmek için aşağıdaki akış şemasını hazırlamıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 300" width="560" role="img" aria-label="Anlatım biçimini belirleme akış şeması">
+<defs><marker id="pyq24" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="10" y="10" width="330" height="54" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="175" y="32" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Kişi, zaman ve yer içinde gelişen,</text>
+<text x="175" y="50" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">birbirini izleyen olaylar var mı?</text>
+<rect x="10" y="102" width="330" height="54" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="175" y="124" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">2. Bir yer ya da varlık, duyulara</text>
+<text x="175" y="142" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">seslenilerek gözde canlandırılıyor mu?</text>
+<rect x="10" y="194" width="330" height="54" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="175" y="216" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">3. Bir görüş savunulup karşıt</text>
+<text x="175" y="234" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">görüş çürütülüyor mu?</text>
+<rect x="400" y="14" width="150" height="46" rx="23" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="475" y="42" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Çıkış 1: Öyküleyici</text>
+<rect x="400" y="106" width="150" height="46" rx="23" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="475" y="134" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Çıkış 2: Betimleyici</text>
+<rect x="400" y="198" width="150" height="46" rx="23" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="475" y="226" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Çıkış 3: Tartışmacı</text>
+<rect x="100" y="262" width="150" height="34" rx="17" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+<text x="175" y="284" font-size="12" font-weight="bold" fill="#334155" text-anchor="middle">Çıkış 4: Açıklayıcı</text>
+<g stroke="#475569" stroke-width="1.5" fill="none">
+<line x1="340" y1="37" x2="398" y2="37" marker-end="url(#pyq24)"/>
+<line x1="340" y1="129" x2="398" y2="129" marker-end="url(#pyq24)"/>
+<line x1="340" y1="221" x2="398" y2="221" marker-end="url(#pyq24)"/>
+<line x1="175" y1="64" x2="175" y2="100" marker-end="url(#pyq24)"/>
+<line x1="175" y1="156" x2="175" y2="192" marker-end="url(#pyq24)"/>
+<line x1="175" y1="248" x2="175" y2="260" marker-end="url(#pyq24)"/>
+</g>
+<g font-size="11" font-weight="bold">
+<text x="350" y="31" fill="#166534">Evet</text>
+<text x="350" y="123" fill="#166534">Evet</text>
+<text x="350" y="215" fill="#166534">Evet</text>
+<text x="182" y="86" fill="#dc2626">Hayır</text>
+<text x="182" y="178" fill="#dc2626">Hayır</text>
+</g>
+<text x="184" y="259" font-size="11" font-weight="bold" fill="#dc2626">Hayır</text>
+</svg></div>
+<p><b>Bu şemaya göre aşağıdaki metinlerden hangisi diğerlerinden farklı bir çıkışa ulaşır?</b></p>`,
+  c: ["Eski çarşının dar sokakları, öğle sıcağında bile serin ve loştu. Bakırcıların çekiç sesleri taş duvarlarda yankılanır, baharatçılardan yayılan tarçın kokusu insanın başını döndürürdü.", "Gölün kıyısındaki söğütler, saçlarını suya salmış genç kızlar gibi eğilmişti. Sabah sisi, suyun üzerinde ince bir tül gibi duruyordu. Uzaktan bir kurbağanın sesi duyuluyordu.", "Yaşlı balıkçı, ağlarını mavi boyası dökülmüş, yorgun kayığına yükledi. Kürekleri birkaç kez suya daldırıp kıyıdan uzaklaştı. Öğleye doğru kayığı balıkla dolu hâlde limana döndüğünde bütün köy onu karşılamaya koşmuştu.", "Kütüphanenin okuma salonu, yüksek tavanı ve uzun ahşap masalarıyla insana huzur veriyordu. Pencerelerden süzülen ışık, raflardaki eski ciltlerin yaldızlı sırtlarında parlıyordu. Salonda yalnızca sayfa hışırtıları duyuluyordu."],
+  a: "C",
+  s: `<p>Şemadaki ilk soru “birbirini izleyen olaylar var mı?” sorusudur.</p>
+<p>C’de balıkçı ağlarını yükler → kıyıdan uzaklaşır → öğleye doğru döner → köy onu karşılamaya koşar. Kişi (balıkçı, köylüler), zaman (öğleye doğru) ve yer (kıyı, liman) içinde gelişen bir olay akışı vardır. Bu metin ilk sorudan “Evet” alarak <b>Çıkış 1: Öyküleyici</b>’ye ulaşır.</p>
+<p>A, B ve D’de olay akışı yoktur; ilk sorudan “Hayır” alırlar. Üçü de renk, ses, koku, ışık gibi duyusal ayrıntılarla bir yeri canlandırdığı için ikinci sorudan “Evet” alır ve <b>Çıkış 2: Betimleyici</b>’ye ulaşır. Tuzak: A’daki “yankılanır, döndürürdü” gibi geçmiş zaman eklerine ve C’deki “mavi boyası dökülmüş, yorgun kayık” gibi niteleyicilere aldanmamak gerekir; betimleyici ayrıntı bulunması, olay akışı olan bir metni betimleyici yapmaz. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Dişlerimizi fırçalarken musluğu açık bırakmak çoğumuza önemsiz bir alışkanlık gibi gelir. Oysa açık bırakılan bir musluktan dakikada yaklaşık altı litre su akar. Günde iki kez, ikişer dakika diş fırçalayan dört kişilik bir aile, bu yüzden bir yılda otuz beş tondan fazla suyu boşa harcar. Musluğu kapatmak birkaç saniyelik bir zahmettir; boşa akan su ise yıllar boyu süren bir kayıptır.</p>
+<p><b>Bu metnin dil ve anlatımıyla ilgili aşağıdakilerden hangisi yanlıştır?</b></p>`,
+  c: ["Sayısal verilerden yararlanılmıştır.", "Karşılaştırmaya başvurulmuştur.", "Okura doğrudan seslenilmiştir.", "Yazarın kişisel yorumuna yer verilmiştir."],
+  a: "C",
+  s: `<p>A ✓: “dakikada yaklaşık altı litre”, “bir yılda otuz beş tondan fazla” düşünceyi kanıtlamak için verilmiş sayısal verilerdir (6 litre × 2 dakika × 2 kez × 4 kişi = günde 96 litre; yılda yaklaşık 35 ton).</p>
+<p>B ✓: “Birkaç saniyelik zahmet” ile “yıllar boyu süren kayıp” karşılaştırılmıştır; “önemsiz gelir… Oysa…” yapısı da iki bakışı karşı karşıya koyar.</p>
+<p>D ✓: “Musluğu kapatmak birkaç saniyelik bir zahmettir; boşa akan su ise… bir kayıptır.” yazarın değerlendirmesidir.</p>
+<p>C ✗: Metinde “siz, sevgili okur” gibi bir seslenme yoktur. “Dişlerimizi, çoğumuza” gibi <b>“biz”</b> dili, yazarın kendisini de içine katan genel bir anlatımdır; seslenme değildir. 2018 LGS’de de metinde bulunan bir unsura benzeyen ama gerçekte olmayan özellik yanlış yargıydı. Cevap <b>C</b>.</p>`
+},
+{
+  q: `<p>Aşağıdaki kartlarda ebru sanatıyla ilgili cümleler karışık olarak verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 290" width="560" role="img" aria-label="Ebru sanatıyla ilgili beş karışık cümle kartı">
+<g font-size="11.5" fill="#1e293b">
+<rect x="8" y="8" width="544" height="48" rx="8" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+<text x="20" y="28"><tspan font-weight="bold" fill="#0369a1">(I)</tspan> Ebru, kitreyle yoğunlaştırılmış suyun yüzeyine boyalar serpilerek</text>
+<text x="44" y="46">yapılan geleneksel bir süsleme sanatıdır.</text>
+<rect x="8" y="64" width="544" height="48" rx="8" fill="#fdf4ff" stroke="#a21caf" stroke-width="1.5"/>
+<text x="20" y="84"><tspan font-weight="bold" fill="#86198f">(II)</tspan> Sanatçı, suyun üzerinde oluşan bu renk lekelerini bir bizle ya da</text>
+<text x="44" y="102">tarakla dolaştırarak desenlere dönüştürür.</text>
+<rect x="8" y="120" width="544" height="48" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="20" y="149"><tspan font-weight="bold" fill="#15803d">(III)</tspan> Desen tamamlanınca su yüzeyine bir kâğıt yavaşça bırakılır.</text>
+<rect x="8" y="176" width="544" height="48" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+<text x="20" y="196"><tspan font-weight="bold" fill="#c2410c">(IV)</tspan> Boyalar, gül dalına at kılı bağlanarak yapılan fırçalarla suya</text>
+<text x="44" y="214">damla damla serpilir.</text>
+<rect x="8" y="232" width="544" height="48" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="20" y="252"><tspan font-weight="bold" fill="#b91c1c">(V)</tspan> Kâğıt kaldırıldığında desen, bir daha aynısı yapılamayacak biçimde</text>
+<text x="44" y="270">ona geçmiş olur.</text>
 </g>
 </svg></div>
-<p>Görseldeki numaralanmış cümlelerle anlamlı ve kurallı bir paragraf oluşturulduğunda doğru sıralama aşağıdakilerden hangisi olur?</p>`,
-  c: [
-    `I – II – III – IV`,
-    `II – I – III – IV`,
-    `II – III – I – IV`,
-    `III – I – II – IV`
-  ],
-  a: "B",
-  s: `<p>Renkli ipuçlarını domino taşı gibi takip edelim[cite: 14]:</p>
-<ol>
-<li><b>Giriş cümlesi (II):</b> Bağlayıcı ifade içermeyen genel yargı (<i>“Uzun yıllar boyunca... basit içgüdülerle hareket ettiği düşünülmüştür.”</i>).</li>
-<li><b>2. cümle (I):</b> <i>“Ancak son yıllarda yapılan deneyler...”</i> diyerek II’deki eski düşünceyi çürütür ve ahtapotların <b>zeki</b> olduğunu söyler.</li>
-<li><b>3. cümle (III):</b> <i>“Örneğin bu canlılar...”</i> diyerek I’deki zekâ iddiasına somut örnek (kavanoz açma, labirent) verir.</li>
-<li><b>Sonuç cümlesi (IV):</b> <i>“Elde edilen tüm bu şaşırtıcı bulgular...”</i> diyerek paragrafı toparlar.</li>
-</ol>
-<p>Doğru sıra: <b>II – I – III – IV</b>[cite: 14]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>(I) Kâğıt, insanlık tarihinin seyrini değiştiren en önemli buluşlardan biridir. (II) İlk kâğıdın MÖ 2. yüzyılda Çin’de, dut ağacı kabukları ve bez parçalarının hamur hâline getirilmesiyle yapıldığı bilinmektedir. (III) Kâğıt yapım tekniği, yüzyıllar içinde İpek Yolu üzerinden Semerkant’a, İslam dünyasına ve oradan Avrupa’ya ulaşmıştır. (IV) Çin, günümüzde de sahip olduğu nüfus ve sanayi gücüyle dünyanın en büyük ekonomilerinden biridir. (V) Kâğıdın yaygınlaşmasıyla birlikte bilimsel bilgi çok daha kolay kaydedilmiş ve kuşaktan kuşağa aktarılmıştır.</p>
-<p>Bu paragrafta numaralanmış cümlelerden hangisi <b>düşüncenin akışını bozmaktadır</b>?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "C",
-  s: `<p>Paragrafın konusu <b>kâğıdın icadı, yayılışı ve bilime katkısıdır</b>[cite: 14]. I, II, III ve V. cümleler kâğıdı anlatırken, <b>IV. cümle</b> “Çin” kelimesinden çağrışım yaparak Çin’in günümüzdeki nüfus ve ekonomisinden söz etmiş ve akışı bozmuştur[cite: 14]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>(I) Göçmen kuşlar, her yıl kıtalar arasında yaptıkları binlerce kilometrelik yolculuklarında yönlerini hiç şaşırmadan hedeflerine ulaşır. (II) Bilim insanları, kuşların bu uzun yolculukta gündüzleri Güneş’in, geceleri ise yıldızların konumundan yararlandığını belirlemiştir. (III) Ayrıca bazı kuş türlerinin gagalarındaki özel mineraller sayesinde Dünya’nın manyetik alanını bir pusula gibi algılayabildiği saptanmıştır. (IV) Göçmen kuşların yolculukları sırasında insan kaynaklı karşılaştığı tehlikeler ise her geçen yıl artmaktadır. (V) Gökdelenler, yüksek gerilim hatları, rüzgâr türbinleri ve ışık kirliliği her yıl milyonlarca göçmen kuşun yaşamını yitirmesine yol açmaktadır.</p>
-<p>Bu parça iki paragrafa ayrılmak istenirse <b>ikinci paragraf</b> numaralanmış cümlelerin hangisiyle başlar?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "C",
-  s: `<p>I, II ve III. cümlelerde göçmen kuşların <b>yönlerini nasıl buldukları</b> (Güneş, yıldızlar, manyetik alan) anlatılmaktadır[cite: 14]. <b>IV. cümleden itibaren</b> ise konu değişerek göç sırasında karşılaşılan <b>insan kaynaklı tehlikelere</b> (gökdelenler, elektrik hatları) geçilmiştir[cite: 14]. Dolayısıyla ikinci paragraf <b>IV. cümleyle</b> başlar. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda dört farklı metin parçası ve bu parçalarda başvurulan <b>düşünceyi geliştirme yolları</b> eşleştirilmiştir.</p>
-<table class="rt">
-<tr><th>No</th><th>Metin Parçası</th><th>Düşünceyi Geliştirme Yolu</th></tr>
-<tr><td><b>I</b></td><td>Empati, bir insanın kendisini karşısındaki kişinin yerine koyarak olaylara onun bakış açısıyla bakabilmesidir.</td><td>Tanımlama</td></tr>
-<tr><td><b>II</b></td><td>Ağaçlar, ormanın sessiz bekçileri gibidir; kökleriyle toprağı bir kalkan misali korurken yapraklarıyla bir akciğer gibi havayı temizler.</td><td>Benzetme</td></tr>
-<tr><td><b>III</b></td><td>Yapılan araştırmaya göre Türkiye’de 2010 yılında kişi başına yılda ortalama 1,5 kitap düşerken bu oran 2024 yılında 4,8’e yükselmiştir.</td><td>Tanık Gösterme</td></tr>
-<tr><td><b>IV</b></td><td>Sesli kitaplar görme ve dinleme duyusuna hitap ederken, basılı kitaplar dokunma ve koklama duyusuyla okura bambaşka bir bağ sunar.</td><td>Karşılaştırma</td></tr>
-</table>
-<p>Tablodaki numaralanmış eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>`,
-  c: [`I`, `II`, `III`, `IV`],
-  a: "C",
-  s: `<p>III numaralı metinde ünlü bir kişinin sözüne (tanık göstermeye) yer verilmemiş; araştırma sonuçları <b>rakamlarla ve istatistiklerle</b> (2010 yılı, 1,5 kitap; 2024 yılı, 4,8 kitap) ortaya konduğu için <b>Sayısal Verilerden Yararlanma</b> (ve yıllar arası karşılaştırma) kullanılmıştır[cite: 14]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>(I) Bu yüzden ertesi gün harçlığımı alıp sahaflar çarşısına gittim ve o yazarın bütün kitaplarını satın aldım.<br>
-(II) Ortaokul yedinci sınıftayken Türkçe öğretmenim bana ince bir öykü kitabı hediye etmişti.<br>
-(III) Eve gider gitmez okumaya başladığım o kitabı tek gecede bitirdim ve yazarın samimi anlatımına hayran kaldım.<br>
-(IV) O günden beri ne zaman canım sıkılsa kitaplığımdan o öyküleri çıkarır, yeniden okurum.</p>
-<p>Numaralanmış cümlelerle olay akışına göre anlamlı bir paragraf oluşturulmak istenirse sıralama nasıl olmalıdır?</p>`,
-  c: [
-    `II – III – I – IV`,
-    `II – I – III – IV`,
-    `III – II – IV – I`,
-    `I – II – III – IV`
-  ],
+<p><b>Bu cümlelerle anlamlı bir paragraf oluşturulduğunda baştan üçüncü cümle hangisi olur?</b></p>`,
+  c: ["II", "III", "IV", "V"],
   a: "A",
-  s: `<p>Kronolojik ve anlamsal olay zinciri: Öğretmenin kitabı hediye etmesi (<b>II</b>) → Kitabı bir gecede okuyup yazarın anlatımına hayran kalması (<b>III</b>) → Hayran kaldığı için (“Bu yüzden”) yazarın bütün kitaplarını satın alması (<b>I</b>) → “O günden beri” bu kitapları tekrar tekrar okuması (<b>IV</b>)[cite: 14]. Sıralama: <b>II – III – I – IV</b>. Cevap <b>A</b>.</p>`
+  s: `<p>Giriş cümlesi, ebrunun ne olduğunu söyleyen ve hiçbir cümleye bağlı olmayan <b>I</b>’dir.</p>
+<p>I’de boyaların suya serpildiği söylenir; <b>IV</b> bu serpme işinin nasıl yapıldığını anlatır. <b>II</b>’deki “<b>bu renk lekeleri</b>” ifadesi, suya serpilen boyalara gönderme yapar ve IV’ten sonra gelir. <b>III</b>’teki “Desen tamamlanınca” II’deki desen oluşturmanın ardından gelir; <b>V</b>’teki “Kâğıt kaldırıldığında” da III’teki kâğıda bağlanır.</p>
+<p>Sıra: I – IV – II – III – V. Baştan üçüncü cümle <b>II</b>’dir. Tuzak: II, “renk lekeleri” sözüyle doğrudan I’e de bağlanabilecek gibi görünür; ancak IV, boyaların serpilme yöntemini anlattığı için desen oluşturmadan önce gelmelidir. Cevap <b>A</b>.</p>`
 },
 {
-  q: `<p>Bir paragrafın <b>giriş cümlesi</b> bağımsız ve genel bir yargı bildirir; kendisinden önce başka bir cümle söylendiğini düşündüren bağlayıcı ifadeler içermez[cite: 14].</p>
-<p>Buna göre aşağıdakilerden hangisi bir paragrafın <b>giriş cümlesi</b> olmaya <b>en uygundur</b>?</p>`,
-  c: [
-    `Çocuk edebiyatı, bireyin duygu ve düşünce dünyasını erken yaşta besleyen en önemli sanat alanıdır.`,
-    `Ayrıca masallar ve fabllar, çocukların hayal gücünü zenginleştirerek empati kurmalarını sağlar.`,
-    `Bu nedenle çocukların nitelikli kitaplarla okul öncesi dönemde tanışması büyük önem taşır.`,
-    `Çünkü bu tür resimli kitaplar, çocukların görsel algısını ve dil gelişimini doğrudan destekler.`
-  ],
-  a: "A",
-  s: `<p>B seçeneği <i>“Ayrıca”</i>, C seçeneği <i>“Bu nedenle”</i>, D seçeneği ise <i>“Çünkü bu tür...”</i> bağlayıcı ifadeleriyle başladığı için kendilerinden önce bir cümle bulunduğunu gösterir ve giriş cümlesi olamaz[cite: 14]. <b>A</b> seçeneği ise konuyu tanıtan bağımsız bir giriş cümlesidir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Odanın tek penceresinden süzülen solgun ikindi güneşi, tozlu ceviz masanın üzerine düşüyordu. Masanın ortasında sararmış sayfalı kalın bir günlük, hemen yanında ucu kırık bir kurşun kalem duruyordu. Duvardaki sarkaçlı saatin tekdüze tıkırtıları odanın ağır sessizliğini bölüyor, içeride nemli kâğıt ve kurumuş lavanta kokusu dolaşıyordu[cite: 14].</p>
-<p>Bu paragrafın anlatımıyla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: [
-    `Varlıkları ayırıcı özellikleriyle tanıtan betimleyici anlatım biçimi kullanılmıştır.`,
-    `Görme, işitme ve koklama duyularına ait ayrıntılara yer verilmiştir.`,
-    `Niteleyici sözcüklerden (sıfatlardan) yararlanılarak mekan okuyucunun zihninde canlandırılmıştır.`,
-    `Bir düşüncenin doğruluğunu kanıtlamak amacıyla tartışmacı anlatım ve tanık göstermeye başvurulmuştur.`
-  ],
+  q: `<p><b>Aşağıdaki cümlelerden hangisi bir paragrafın ilk cümlesi <u>olamaz</u>?</b></p>`,
+  c: ["Göçmen kuşlar her yıl binlerce kilometre yol kat eder.", "Bilim insanları uzun yıllar boyunca kuşların yön bulma yeteneğini merak etmiştir.", "Bazı kuşların yön bulurken Dünya’nın manyetik alanından yararlandığı düşünülmektedir.", "Kuşlar da göç ederken yön bulmak için gece gökyüzündeki yıldızlardan yararlanır."],
   a: "D",
-  s: `<p>Paragrafta bir oda; görme (<i>solgun güneş, sararmış sayfalar</i>), işitme (<i>saatin tıkırtıları</i>) ve koklama (<i>nemli kâğıt ve lavanta kokusu</i>) duyularıyla ve bol sıfatla <b>betimlenmiştir</b>[cite: 14]. Paragrafta bir görüşü çürütmeye çalışan tartışmacı anlatım veya tanık gösterme yoktur. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Bazı eğitimciler, ev ödevlerinin öğrencilerin serbest zamanını çaldığını ve tamamen kaldırılması gerektiğini savunuyor. Peki, ev ödevi olmasaydı öğrenciler okulda öğrendikleri bilgileri kendi başlarına nasıl pekiştirecekti? Bilginin kalıcı davranışa dönüşmesi için bireysel tekrar şarttır ve ödev bu tekrarın en etkili aracıdır. Elbette ödevlerin süresi çocuğu bıktıracak düzeyde olmamalıdır; ancak ödevleri tamamen kaldırmak öğrenme zincirini koparır[cite: 14].</p>
-<p>Bu paragrafta ağırlıklı olarak kullanılan <b>anlatım biçimi</b> aşağıdakilerden hangisidir?</p>`,
-  c: [
-    `Tartışmacı anlatım`,
-    `Öyküleyici anlatım`,
-    `Betimleyici anlatım`,
-    `Destansı anlatım`
-  ],
-  a: "A",
-  s: `<p>Yazar önce karşı çıktığı görüşü (<i>“Bazı eğitimciler ev ödevlerinin kaldırılması gerektiğini savunuyor”</i>) vermiş, ardından <i>“Peki... nasıl pekiştirecekti?”</i> diye soru sorarak karşıt görüşü çürütmüş ve kendi tezini savunmuştur[cite: 14]. Bu yapı doğrudan <b>Tartışmacı anlatımın</b> özelliğidir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Okulumuzun kütüphanesi, binanın en güneş alan ve en sessiz köşesinde yer alır. <b>(I)</b> Ahşap raflarda roman, öykü, bilim ve tarih ansiklopedisi gibi binlerce değerli kitap bulunur. <b>(II)</b> Teneffüslerde ve öğle aralarında pek çok öğrenci burada sessizce araştırma yapar. <b>(III)</b> Kütüphanenin giriş kapısının yanında ise her ay yeni alınan eserlerin tanıtıldığı renkli bir duyuru panosu vardır. <b>(IV)</b></p>
-<p><b><i>“Bu kitapların önemli bir kısmı, okulumuzdan yıllar önce mezun olan öğrencilerin bağışlarıyla bir araya getirilmiştir.”</i></b> cümlesi, düşüncenin akışına göre numaralanmış yerlerden hangisine getirilmelidir?</p>`,
-  c: [`I`, `II`, `III`, `IV`],
-  a: "B",
-  s: `<p>Yerleştirilecek cümle <b>“Bu kitapların önemli bir kısmı...”</b> diye başladığı için, kendisinden hemen önceki cümlede kitaplardan söz edilmiş olmalıdır[cite: 14]. <i>“Ahşap raflarda... binlerce değerli kitap bulunur.”</i> cümlesinin hemen sonrasındaki <b>(II) numaralı</b> yere getirildiğinde anlamsal ve yapısal bağ tam olarak sağlanır[cite: 14]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Fabl; çoğunlukla hayvanların ya da bitkilerin insan gibi konuşturulduğu, sonunda okuyucuya ahlaki bir ders veren kısa ve alegorik öykülerdir. Bu türün dünya edebiyatındaki en ünlü temsilcileri Beydeba, Ezop ve La Fontaine’dir. Fabllarda genellikle çalışkan ile tembel, kurnaz ile saf gibi karşıt karakterler bir araya getirilir. Örneğin “Ağustos Böceği ile Karınca” fablında bütün yaz çalışan karınca ile saz çalıp eğlenen ağustos böceğinin durumu kıyaslanır[cite: 14].</p>
-<p>Bu paragrafta aşağıdaki düşünceyi geliştirme yollarından hangisi <b>kullanılmamıştır</b>?</p>`,
-  c: [
-    `Tanımlama`,
-    `Örnekleme`,
-    `Sayısal verilerden yararlanma`,
-    `Karşılaştırma`
-  ],
-  a: "C",
-  s: `<p>Paragrafın ilk cümlesinde fablın ne olduğu açıklanmıştır (<b>Tanımlama</b>); <i>“en ünlü temsilcileri”</i> ve karınca ile ağustos böceğinin kıyaslanması (<b>Karşılaştırma</b>); Beydeba, Ezop, La Fontaine ve “Ağustos Böceği ile Karınca”nın verilmesi ise (<b>Örnekleme</b>)dir[cite: 14]. Paragrafta <b>sayısal verilerden yararlanma</b> yoktur[cite: 14]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>(I) Mozaik; küçük renkli taş, cam ya da pişmiş toprak parçalarının harç üzerine yan yana dizilmesiyle yapılan köklü bir süsleme sanatıdır. (II) Anadolu coğrafyası, antik dönemden kalan dünyanın en zengin mozaik koleksiyonlarına ev sahipliği yapmaktadır. (III) Gaziantep’te bulunan Zeugma Mozaik Müzesi, sergilediği eşsiz eserlerle dünyanın en büyük mozaik müzelerinden biri kabul edilir. (IV) Müzenin en çok ziyaretçi çeken eseri, gizemli ve hüzünlü bakışlarıyla tanınan “Çingene Kızı” mozaiğidir. (V) Gaziantep, aynı zamanda fıstıklı baklavası ve zengin mutfak kültürüyle UNESCO gastronomi listesine girmiş bir şehrimizdir[cite: 14].</p>
-<p>Bu parçadaki numaralanmış cümlelerden hangisi <b>düşüncenin akışını bozmaktadır</b>?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "D",
-  s: `<p>Paragrafın ilk dört cümlesinde <b>mozaik sanatı ve Gaziantep’teki Zeugma Mozaik Müzesi</b> anlatılmaktadır[cite: 14]. <b>V. cümlede</b> ise konu birden Gaziantep’in <b>baklavasına ve mutfak kültürüne</b> geçerek düşüncenin akışını bozmuştur[cite: 14]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Sonbahar rüzgârı estiğinde bahçemizdeki yaşlı ceviz ağacının sararmış yaprakları hışırdayarak toprağa dökülür. Kuru yapraklar, üzerinde yürüdükçe ayaklarımızın altında çıtır çıtır sesler çıkarır. Yağmur sonrası havada keskin bir ıslak toprak kokusu hissedilir. Annemin fırından yeni çıkardığı sıcak balkabağı tatlısının tarçınlı kokusu ise bütün avluyu sarar[cite: 14].</p>
-<p>Bu metinde aşağıdaki duyulardan hangisine ait bir ayrıntıya <b>yer verilmemiştir</b>?</p>`,
-  c: [
-    `Görme`,
-    `İşitme`,
-    `Koklama`,
-    `Tatma`
-  ],
-  a: "D",
-  s: `<p>Metindeki duyuları eşleştirelim[cite: 14]:</p>
-<ul>
-<li><b>Görme:</b> <i>sararmış yapraklar, toprağa dökülür</i>[cite: 14].</li>
-<li><b>İşitme:</b> <i>hışırdayarak, çıtır çıtır sesler çıkarır</i>[cite: 14].</li>
-<li><b>Koklama:</b> <i>ıslak toprak kokusu, tarçınlı kokusu</i>[cite: 14].</li>
-<li><b>Dokunma:</b> <i>sıcak balkabağı tatlısı, kuru yapraklar</i>.</li>
-</ul>
-<p>Ancak balkabağı tatlısının yalnızca sıcaklığından ve kokusundan söz edilmiş, yenilip <b>tadına</b> bakılmasına (tatma duyusuna) yer verilmemiştir[cite: 14]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>(I) Mantarlar, toprağa bağlı yaşadıkları için uzun yıllar boyunca bitkiler âleminin bir üyesi olarak kabul edilmiştir. (II) Ancak mantarlar yeşil bitkiler gibi klorofil taşımaz ve fotosentez yapamaz; besinlerini dış ortamdan hazır olarak alır. (III) Bu temel farklılık yüzünden bilim insanları mantarları bitkilerden ayırarak başlı başına ayrı bir canlı grubu olarak sınıflandırmıştır. (IV) Mantarlar doğadaki organik atıkları çürüterek toprağın минераl bakımından zenginleşmesini sağlar. (V) Ayrıca bazı maya ve küf mantarları ekmek, peynir yapımında ve antibiyotik ilaçların üretiminde insanlığa büyük fayda sunar[cite: 14].</p>
-<p>Bu parça iki paragrafa ayrılmak istenirse <b>ikinci paragraf</b> hangi cümleyle başlar?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "C",
-  s: `<p>I, II ve III. cümlelerde mantarların <b>neden bitki sayılmadığı ve nasıl sınıflandırıldığı</b> anlatılmıştır[cite: 14]. <b>IV. cümleden itibaren</b> ise mantarların doğadaki madde döngüsüne ve insan hayatına (ekmek, peynir, ilaç) sağladığı <b>faydalara</b> geçilmiştir[cite: 14]. İkinci paragraf <b>IV. cümleyle</b> başlar. Cevap <b>C</b>.</p>`
-},
-  {
-  q: `<p>Bir paragrafın <b>sonuç cümlesi</b>, kendisinden önce anlatılanları özetleyen, toparlayan ve genel bir hükme bağlayan cümledir.</p>
-<p>Buna göre aşağıdakilerden hangisi bir paragrafın <b>sonuç cümlesi</b> olmaya <b>en uygundur</b>?</p>`,
-  c: [
-    `Kısacası, iyi bir dinleyici olmak etkili ve sağlıklı bir iletişim kurmanın ilk koşuludur.`,
-    `İletişim, insanların duygu ve düşüncelerini karşılıklı olarak paylaşma sürecidir.`,
-    `Örneğin, konuşan bir kişinin sözünü sık sık kesmek iletişim kazalarına yol açabilir.`,
-    `Bazı insanlar günlük hayatta konuşmayı dinlemekten çok daha fazla tercih eder.`
-  ],
-  a: "A",
-  s: `<p>Sonuç cümlesi paragrafta anlatılanları tek bir yargıda toparlar ve genellikle <i>“kısacası, özetle, sonuç olarak, bu yüzden”</i> gibi ifadelerle başlar[cite: 14]. <b>A</b> seçeneğindeki <i>“Kısacası...”</i> ifadesi tam bir sonuç cümlesidir[cite: 14]. B giriş (tanım), C ve D ise gelişme cümlesi niteliğindedir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>(I) Düzenli yürüyüş yapmak, sağlıklı ve dinç bir yaşam sürmenin en kolay yollarından biridir. (II) Günde yarım saatlik tempolu bir yürüyüş, kalp ve damar sağlığını önemli ölçüde korur. (III) Yürüyüş aynı zamanda günlük stresi azaltır ve gece uykusunun kalitesini artırır. (IV) Profesyonel koşu ayakkabıları, standart yürüyüş ayakkabılarına göre mağazalarda daha yüksek fiyatlarla satılmaktadır. (V) Üstelik yürüyüş yapmak için özel bir ekipmana ya da pahalı bir spor salonuna ihtiyaç yoktur[cite: 14].</p>
-<p>Bu paragrafta numaralanmış cümlelerden hangisi <b>düşüncenin akışını bozmaktadır</b>?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "C",
-  s: `<p>Paragrafta düzenli yürüyüşün sağlığa faydaları (II ve III) ve masrafsız/kolay bir spor olduğu (I ve V) anlatılmaktadır[cite: 14]. <b>IV. cümlede</b> ise koşu ayakkabıları ile yürüyüş ayakkabılarının fiyatları karşılaştırılarak konunun dışına çıkılmıştır[cite: 14]. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Hoşgörü, birlikte yaşama kültürünün ve toplumsal barışın temelidir. Farklı düşüncelere, inançlara saygı duymayan bir toplumda kalıcı huzurdan söz edilemez. Mevlânâ’nın <i>“Gel, ne olursan ol yine gel!”</i> sözü, yüzyıllar öncesinden insanlığa bu evrensel gerçeği hatırlatır. Bugün de birbirimizi yargılamadan anlamaya çalıştığımız ölçüde daha yaşanabilir bir dünya kurabiliriz[cite: 14].</p>
-<p>Bu paragrafta yazar, düşüncesini inandırıcı kılmak için aşağıdaki yollardan hangisine başvurmuştur?</p>`,
-  c: [
-    `Sayısal verilerden yararlanma`,
-    `Tanık gösterme`,
-    `Benzetme`,
-    `Tanımlama`
-  ],
-  a: "B",
-  s: `<p>Yazar, hoşgörünün önemine ilişkin kendi düşüncesini desteklemek amacıyla <b>Mevlânâ</b>’nın ünlü sözünü (<i>“Gel, ne olursan ol yine gel!”</i>) tırnak içinde doğrudan alıntılamıştır[cite: 14]. Bu yönteme <b>Tanık Gösterme</b> denir[cite: 14]. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Sabah erkenden uyanıp yola çıktık. Köye vardığımızda dedem bizi bahçe kapısının önünde bekliyordu. Hemen çantalarımızı verandaya bırakıp onunla birlikte üzüm bağına gittik. Öğleye kadar sepetlere üzüm topladık, sonra ceviz ağacının gölgesinde annemin hazırladığı börekleri yedik. Akşam olunca yorgun ama mutlu bir şekilde eve döndük[cite: 14].</p>
-<p>Bu paragrafın anlatımıyla ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Bir görüş savunulmuş ve karşıt görüş çürütülmeye çalışılmıştır.`,
-    `Sayısal veriler ve istatistiklerle bir düşünce kanıtlanmıştır.`,
-    `Bir kavramın tanımı yapılarak nesnel bilgiler verilmiştir.`,
-    `Yaşanmış bir olay, kişi, yer ve zaman unsurları etrafında kronolojik sırayla (öyküleyici anlatımla) aktarılmıştır.`
-  ],
-  a: "D",
-  s: `<p>Paragrafta sabah yola çıkma, köye varma, bağa gitme, üzüm toplama, yemek yeme ve akşam eve dönme eylemleri <b>zaman akışı içinde</b> (film şeridi gibi) anlatılmıştır → <b>Öyküleyici anlatım</b>[cite: 14]. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>Cümleler veya paragraf bölümleri arasında anlam akışını sağlayan sözcüklere <b>geçiş ve bağlantı ifadeleri</b> denir. Aşağıdaki şemada bu ifadeler işlevlerine göre iki gruba ayrılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 140" width="520" role="img" aria-label="Geçiş ve bağlantı ifadeleri sınıflandırma şeması">
-<rect x="10" y="10" width="252" height="120" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="136" y="30" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">1. Düşüncenin Yönünü Değiştirenler</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="22" y="50" font-weight="bold">ama, fakat, lakin, ancak, oysa,</text>
-<text x="22" y="64" font-weight="bold">buna karşın, ne var ki, yalnız</text>
-<text x="22" y="86">• Olumlu bir yargıdan olumsuz bir</text>
-<text x="22" y="100">  yargıya (veya tam tersine) geçiş</text>
-<text x="22" y="114">  yapılacağını bildirir.</text>
-</g>
-<rect x="278" y="10" width="252" height="120" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-<text x="404" y="30" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">2. Destekleyici ve Açıklayıcı Olanlar</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="290" y="50" font-weight="bold">yani, başka bir deyişle, üstelik,</text>
-<text x="290" y="64" font-weight="bold">ayrıca, hatta, özellikle, açıkçası</text>
-<text x="290" y="86">• Düşünceyi aynı doğrultuda</text>
-<text x="290" y="100">  güçlendirir veya daha anlaşılır</text>
-<text x="290" y="114">  şekilde yeniden ifade eder.</text>
-</g>
-</svg></div>
-<p>Buna göre aşağıdaki paragrafların hangisinde <b>hem düşüncenin yönünü değiştiren hem de destekleyici/özetleyici</b> bir geçiş ifadesi bir arada kullanılmıştır?</p>`,
-  c: [
-    `Güneş enerjisi çevre dostu ve tükenmez bir kaynaktır. Ne var ki güneş panellerinin ilk kurulum maliyeti oldukça yüksektir. Kısacası bu temiz enerji yaygınlaşmak için devlet teşviklerine ihtiyaç duymaktadır.`,
-    `Sabah erkenden sahile indik. Deniz çarşaf gibi dümdüzdü. Sandala binip açıldık ve öğleye kadar balık tuttuk.`,
-    `Kitap okumak kelime hazinesini geliştirir. Ayrıca insanın farklı hayatları tanımasını ve empati kurmasını sağlar.`,
-    `Kış aylarında bu bölgede yoğun kar yağışı görülür. Hava sıcaklığı sıfırın altına düşer ve göllerin yüzeyi donar.`
-  ],
-  a: "A",
-  s: `<p><b>A</b> seçeneğinde ilk cümlede güneş enerjisinin olumlu yönü söylenmiş, ardından <b>“Ne var ki”</b> (düşüncenin yönünü değiştiren ifade) ile olumsuz yönüne (maliyetine) geçilmiş; son cümlede ise <b>“Kısacası”</b> (özetleyici/sonuç bağlantı ifadesi) kullanılarak her iki grup ifade bir arada örneklendirilmiştir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Bir dergi röportajında gazetecinin yazara yönelttiği iki soru boş bırakılmıştır:</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Gazeteci ve yazar röportajı soru tamamlama">
-<rect x="10" y="10" width="520" height="145" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-<g font-size="9.5" fill="#1e293b">
-<text x="22" y="30" font-weight="bold" fill="#dc2626">Gazeteci: (1) ----?</text>
-<text x="22" y="48"><tspan font-weight="bold" fill="#1e40af">Yazar:</tspan> Ben öykülerimi yazmaya başlamadan önce uzun süre sokağı, pazarı, vapurdaki</text>
-<text x="22" y="62">insanları izlerim. Onların konuşmalarını, sevinçlerini ve dertlerini küçük not defterime</text>
-<text x="22" y="76">kaydederim. Yani öykülerimin ilk tohumları masa başında değil, hayatın tam ortasında atılır.</text>
-<line x1="22" y1="86" x2="518" y2="86" stroke="#cbd5e1"/>
-<text x="22" y="104" font-weight="bold" fill="#dc2626">Gazeteci: (2) ----?</text>
-<text x="22" y="122"><tspan font-weight="bold" fill="#1e40af">Yazar:</tspan> Kesinlikle dilin sadeliği ve samimiyetidir. Bir yazar ne kadar süslü ve karmaşık</text>
-<text x="22" y="136">cümleler kurarsa okurla arasındaki duvar o kadar yükselir. Yalın bir Türkçe, eseri kalıcı kılar.</text>
-</g>
-</svg></div>
-<p>Röportajda <b>(1)</b> ve <b>(2)</b> numaralı yerlere getirilebilecek en uygun sorular aşağıdakilerin hangisinde verilmiştir?</p>`,
-  c: [
-    `(1) Öykülerinizi yazarken konularınızı nasıl belirliyorsunuz ve yazım süreciniz nasıl başlıyor? — (2) Sizce bir edebî eseri başarılı ve kalıcı kılan en önemli unsur nedir?`,
-    `(1) İlk öykü kitabınızı kaç yaşında yayımladınız? — (2) Genç yazarlara hangi klasikleri okumalarını önerirsiniz?`,
-    `(1) Neden roman yerine yalnızca öykü yazmayı tercih ediyorsunuz? — (2) Günümüzde okuma oranlarının düşmesini neye bağlıyorsunuz?`,
-    `(1) Öykülerinizde kendi çocukluk anılar바zdan yararlanır mısınız? — (2) Eleştirmenlerin eserleriniz hakkındaki görüşlerini dikkate alır mısınız?`
-  ],
-  a: "A",
-  s: `<p>Yazar 1. cevabında öykülerini yazmadan önce insanları gözlemleyip not aldığını ve yazım sürecinin hayatın içinde başladığını anlatmaktadır → <b>(1) Konularınızı nasıl belirliyorsunuz ve yazım süreciniz nasıl başlıyor?</b></p>
-<p>2. cevabında ise <i>“Kesinlikle dilin sadeliği ve samimiyetidir... Yalın bir Türkçe, eseri kalıcı kılar.”</i> diyerek eseri kalıcı kılan en önemli unsuru açıklamaktadır → <b>(2) Bir edebî eseri başarılı ve kalıcı kılan en önemli unsur nedir?</b> Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>(I) Arılar, doğadaki çiçekli bitkilerin tozlaşmasını sağlayarak ekosistemin devamlılığında hayati bir rol üstlenir. (II) Bir bal arısı, tek bir günde binlerce çiçeği ziyaret ederek polenlerin bitkiden bitkiye taşınmasını sağlar. (III) Ancak tarımda bilinçsizce kullanılan kimyasal ilaçlar ve iklim değişikliği son yıllarda arı nüfusunu hızla azaltmaktadır. (IV) Bu tozlaşma gerçekleşmezse sofralarımıza gelen meyve ve sebzelerin büyük bir kısmı üretilemez hâle gelir. (V) Bu tehlikenin önüne geçmek için doğa dostu tarım yöntemleri yaygınlaştırılmalı ve arıların yaşam alanları korunmalıdır.</p>
-<p>Yukarıdaki paragrafta anlam akışındaki bozukluğu gidermek için numaralanmış cümlelerden <b>hangileri birbiriyle yer değiştirmelidir</b>?</p>`,
-  c: [
-    `I ile II`,
-    `II ile III`,
-    `III ile IV`,
-    `IV ile V`
-  ],
-  a: "C",
-  s: `<p>II. cümlede arının polenleri taşımasından (<b>tozlaşmadan</b>) söz edilmiş, IV. cümlede ise <i>“<b>Bu tozlaşma</b> gerçekleşmezse...”</i> denmiştir; dolayısıyla IV. cümle II. cümlenin hemen arkasına gelmelidir[cite: 14]. III. cümlede anlatılan <i>“kimyasal ilaçların arıları azaltması”</i> ise V. cümledeki <i>“<b>Bu tehlikenin</b> önüne geçmek için...”</i> ifadesinden hemen önce gelmelidir[cite: 14]. Bu nedenle <b>III ile IV</b> yer değiştirmelidir. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki görselde bir yapbozun başlangıç ve bitiş parçaları verilmiş, ortadaki <b>( ? )</b> parçası ise boş bırakılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 135" width="520" role="img" aria-label="Paragraf ortasını tamamlama yapboz şeması">
-<rect x="10" y="15" width="175" height="105" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
-<text x="97" y="34" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">Giriş Bölümü</text>
-<g font-size="9" fill="#1e293b">
-<text x="20" y="52">Eleştiri, bir sanat veya düşünce</text>
-<text x="20" y="66">eserini hem olumlu hem de</text>
-<text x="20" y="80">eksik yönleriyle değerlendirip</text>
-<text x="20" y="94">okura tanıtma sanatıdır.</text>
-</g>
-<rect x="192" y="15" width="155" height="105" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2" stroke-dasharray="5 3"/>
-<text x="270" y="58" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">Gelişme Bölümü</text>
-<text x="270" y="78" font-size="13" font-weight="bold" fill="#dc2626" text-anchor="middle">( ? )</text>
-<rect x="355" y="15" width="175" height="105" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-<text x="442" y="34" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">Sonuç Bölümü</text>
-<g font-size="9" fill="#1e293b">
-<text x="365" y="52">İşte bu yanlış algı yüzünden</text>
-<text x="365" y="66">yazarlarımız eleştirmenlerden</text>
-<text x="365" y="80">çekinmekte ve her eleştiriyi</text>
-<text x="365" y="94">kişisel bir saldırı sanmaktadır.</text>
-</g>
-</svg></div>
-<p>Paragrafın anlam bütünlüğünün sağlanması için <b>( ? )</b> ile gösterilen yere aşağıdakilerden hangisi getirilmelidir?</p>`,
-  c: [
-    `Ne var ki toplumumuzda eleştiri kavramı çoğu zaman yalnızca bir eserin kusurlarını bulmak ve yazarı acımasızca yermek olarak anlaşılmaktadır.`,
-    `Bu nedenle eleştirmenler eserleri incelerken her zaman yazarın hayatını merkeze alırlar.`,
-    `Ülkemizde son yıllarda yayımlanan eleştiri kitaplarının sayısında büyük bir artış gözlenmektedir.`,
-    `Çünkü sanatçılar olumlu eleştirileri duyduklarında daha verimli eserler ortaya koyarlar.`
-  ],
-  a: "A",
-  s: `<p>Girişte eleştirinin gerçek tanımı (hem olumlu hem eksik yönleri değerlendirme) yapılmış; sonuç bölümünde ise <i>“<b>İşte bu yanlış algı yüzünden</b> yazarlarımız... her eleştiriyi kişisel bir saldırı sanmaktadır.”</i> denmiştir[cite: 14]. Dolayısıyla ortadaki boşluğa bu <b>“yanlış algının”</b> ne olduğunu açıklayan <b>A</b> seçeneği getirilmelidir. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p><b>I. Metin:</b> Karadeniz’in sarp dağlarında sabah sisi yavaşça dağılırken çam ağaçlarının arasından coşkulu bir şelale dökülüyordu. Suyun kayalara çarptığında çıkardığı uğultu, kuş cıvıltılarına karışıyor; serin su damlacıkları yüzümüze çarparak bizi ferahlatıyordu.<br>
-<b>II. Metin:</b> Sahil kasabasının taş döşeli dar sokağında begonviller balkonlardan aşağı sarkmıştı. Köşedeki küçük fırından yayılan taze simit kokusu, denizden gelen yosun kokusuyla birleşiyor; uzaktan geçen balıkçı motorunun sesi sabah sessizliğini bozuyordu.</p>
-<p>Bu iki metnin ortak anlatım özelliği aşağıdakilerden hangisidir?</p>`,
-  c: [
-    `Her iki metinde de betimleyici anlatım kullanılmış ve birden fazla duyuya ait ayrıntılara yer verilmiştir.`,
-    `Her iki metinde de tartışmacı anlatım ve tanık gösterme kullanılmıştır.`,
-    `Her iki metinde de sayısal verilerden ve tanımlamadan yararlanılmıştır.`,
-    `Her iki metinde de bir fikrin doğruluğu bilimsel kanıtlarla açıklanmıştır.`
-  ],
-  a: "A",
-  s: `<p>Her iki metinde de mekanlar sözcüklerle resmedilmiş (<b>Betimleyici anlatım</b>); I. metinde <i>görme, işitme ve dokunma</i> (serin su damlacıkları), II. metinde ise <i>görme, koklama ve işitme</i> olmak üzere <b>birden fazla duyuya</b> yer verilmiştir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Tanımlama cümleleri <b>“... nedir?”</b> sorusuna cevap verir. Eğer tanım herkesçe kabul edilen bilimsel ve kanıtlanabilir bir bilgi içeriyorsa <b>nesnel tanımlama</b>; yazarın kendi kişisel duygu ve yorumunu içeriyorsa <b>öznel tanımlama</b> adını alır[cite: 14].</p>
-<p>Buna göre aşağıdaki cümlelerin hangisinde <b>öznel bir tanımlama</b> yapılmıştır?</p>`,
-  c: [
-    `Dostluk, iki insanın en fırtınalı günlerde bile birbirinin ruhuna sığınabildiği en güvenli limandır.`,
-    `Üçgen, doğrusal olmayan üç noktanın ikişerli olarak birleştirilmesiyle oluşan kapalı geometrik şekildir.`,
-    `Fotosentez, yeşil bitkilerin güneş ışığı yardımıyla su ve karbondioksitten besin ve oksijen üretmesidir.`,
-    `Ada, dört tarafı sularla çevrili olan kara parçasına verilen coğrafi isimdir.`
-  ],
-  a: "A",
-  s: `<p>B, C ve D seçeneklerinde üçgen, fotosentez ve adanın bilimsel, <b>nesnel tanımları</b> yapılmıştır. <b>A</b> seçeneğinde ise “Dostluk nedir?” sorusuna <i>“...birbirinin ruhuna sığınabildiği en güvenli limandır.”</i> şeklinde kişisel ve şairane bir yanıt verilerek <b>öznel tanımlama</b> yapılmıştır. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>(I) Yapay zekâ teknolojileri, günümüzde tıp dünyasında hastalıkların erken teşhis edilmesinde doktorlara büyük kolaylık sağlamaktadır. (II) Binlerce röntgen ve MR görüntüsünü saniyeler içinde tarayan algoritmalar, insan gözünün kaçırabileceği en küçük tümörleri bile tespit edebilmektedir. (III) Bu sayede tedaviye çok daha erken aşamada başlanarak hastaların iyileşme oranı artırılmaktadır. (IV) Yapay zekânın sanat ve edebiyat alanındaki kullanımı ise telif hakları açısından büyük tartışmalara yol açmaktadır. (V) Ressamlar ve yazarlar, kendi eserleriyle eğitilen bu programların insan emeğini taklit ettiğini savunmaktadır.</p>
-<p>Bu parça iki paragrafa ayrılmak istenirse <b>ikinci paragraf</b> numaralanmış cümlelerin hangisiyle başlar[cite: 14]?</p>`,
-  c: [`II`, `III`, `IV`, `V`],
-  a: "C",
-  s: `<p>I, II ve III. cümlelerde yapay zekânın <b>tıp ve sağlık alanındaki faydaları</b> anlatılmaktadır. <b>IV. cümleden itibaren</b> ise konu tamamen değişerek yapay zekânın <b>sanat ve edebiyat alanındaki telif tartışmalarına</b> geçilmiştir[cite: 14]. İkinci paragraf <b>IV. cümleyle</b> başlar. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>İnsana ait özelliklerin (üzülmek, sevinmek, konuşmak, küsmek vb.) insan dışındaki varlıklara aktarılmasına <b>kişileştirme (teşhis)</b>; aralarında ilgi bulunan iki varlıktan zayıf olanın güçlü olana benzetilmesine ise <b>benzetme (teşbih)</b> denir[cite: 14].</p>
-<p>Buna göre aşağıdaki metinlerin hangisinde <b>hem kişileştirme hem de benzetme</b> bir arada kullanılmıştır?</p>`,
-  c: [
-    `Sonbaharın gelişiyle birlikte yalnız kalan yaşlı çınar ağacı, dökülen yapraklarının ardından sessizce ağlıyor; rüzgârda savrulan sarı yapraklar ise altın birer kelebek gibi havada uçuşuyordu.`,
-    `Sabah erkenden kalkan çiftçiler traktörlerine binerek tarlanın yolunu tuttu. Güneş yükselmeden buğday hasadını tamamlamak istiyorlardı.`,
-    `Kütüphanedeki raflarda yaklaşık beş bin kitap alfabetik sıraya göre dizilmişti. Öğrenciler aradıkları kaynağı bilgisayar sisteminden kolayca bulabiliyordu.`,
-    `Bilim insanları, kutuplardaki buzulların son yirmi yılda আগের dönemlere göre iki kat daha hızlı eridiğini açıkladı.`
-  ],
-  a: "A",
-  s: `<p><b>A</b> seçeneğinde yaşlı çınar ağacının <i>“yalnız kalması ve sessizce ağlaması”</i> <b>kişileştirme</b>; sarı yaprakların <i>“altın birer kelebek gibi”</i> uçuşması ise <b>benzetme</b>dir[cite: 14]. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki metni okuyunuz:</p>
-<p><i>“Uyku, beynin gün boyu topladığı bilgileri düzenlediği ve vücudun kendini onardığı biyolojik bir yenilenme sürecidir. Birçok öğrenci sınav dönemlerinde uykudan kısıp daha çok çalışmanın başarıyı artıracağını sanır; oysa uykusuz kalan bir beyin öğrendiklerinin %40’ını ertesi gün unutur. Tıpkı şarjı bitmek üzere olan bir telefonun yavaşlaması gibi, uykusuz kalan insan zihni de dikkatini toplayamaz.”</i></p>
-<p>Bu metnin anlatımıyla ilgili;</p>
-<p>I. İlk cümlede <b>tanımlama</b> yapılmıştır.<br>
-II. <b>Sayısal verilerden</b> yararlanılmıştır.<br>
-III. <b>Benzetme</b> sanatına başvurulmuştur.<br>
-IV. Olay ağırlıklı <b>öyküleyici anlatım</b> ve 1. kişi (kahraman) bakış açısı kullanılmıştır.</p>
-<p>yargılarından hangileri <b>doğrudur</b>?</p>`,
-  c: [
-    `I ve II`,
-    `I, II ve III`,
-    `II, III ve IV`,
-    `I, II, III ve IV`
-  ],
-  a: "B",
-  s: `<p>Metinde: “Uyku nedir?” sorusunun cevabı vardır (<b>I - Tanımlama ✓</b>), “%40’ını unutur” ifadesi vardır (<b>II - Sayısal veri ✓</b>), “Tıpkı şarjı bitmek üzere olan bir telefon gibi...” ifadesi vardır (<b>III - Benzetme ✓</b>)[cite: 14]. Ancak metinde bir olay hikâye edilmemiş, bilgi verilip yanlış bir kanı eleştirilmiştir (<b>IV yanlış</b>). Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki numaralanmış cümlelerle anlamlı bir paragraf oluşturulacaktır:</p>
-<p><b>(I)</b> Bu sayede hem doğadaki ağaçların kesilmesi önlenir hem de enerji tüketimi büyük oranda azaltılır.<br>
-<b>(II)</b> Atık kâğıtların çöpe atılmak yerine geri dönüşüm kutularında toplanması çevre korumanın ilk adımıdır.<br>
-<b>(III)</b> Fabrikalarda yeniden işlenen bu kâğıt hamuru, defter ve karton olarak tekrar kullanıma sunulur.<br>
-<b>(IV)</b> Toplanan bu atık kâğıtlar, ayrıştırma tesislerinde yabancı maddelerden arındırılarak kâğıt hamuru hâline getirilir.</p>
-<p>Bu cümleler düşüncenin akışına göre doğru sıralandığında, <b>baştan üçüncü cümle</b> hangisi olur[cite: 14]?</p>`,
-  c: [`I`, `II`, `III`, `IV`],
-  a: "C",
-  s: `<p>Cümleleri domino taşı yöntemiyle sıralayalım[cite: 14]:</p>
-<ol>
-<li><b>1. Cümle (II):</b> <i>“Atık kâğıtların... geri dönüşüm kutularında toplanması çevre korumanın ilk adımıdır.”</i> (Giriş cümlesi).</li>
-<li><b>2. Cümle (IV):</b> <i>“Toplanan bu atık kâğıtlar... kâğıt hamuru hâline getirilir.”</i></li>
-<li><b>3. Cümle (III):</b> <i>“Fabrikalarda yeniden işlenen bu kâğıt hamuru, defter ve karton olarak tekrar kullanıma sunulur.”</i> (<b>Baştan 3. cümle!</b>)</li>
-<li><b>4. Cümle (I):</b> <i>“Bu sayede hem doğadaki ağaçların kesilmesi önlenir...”</i> (Sonuç).</li>
-</ol>
-<p>Sıralama: <b>II – IV – III – I</b> şeklindedir; baştan üçüncü cümle <b>III</b> olur. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki Venn şemasında <b>Açıklayıcı Anlatım</b> ile <b>Tartışmacı Anlatım</b> karşılaştırılmıştır[cite: 14].</p>
-<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="Açıklayıcı ve tartışmacı anlatım Venn şeması">
-<ellipse cx="185" cy="80" rx="155" ry="62" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
-<ellipse cx="355" cy="80" rx="155" ry="62" fill="#fee2e2" fill-opacity="0.6" stroke="#dc2626" stroke-width="2"/>
-<text x="115" y="34" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">AÇIKLAYICI ANLATIM</text>
-<text x="425" y="34" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">TARTIŞMACI ANLATIM</text>
-<g font-size="9.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
-<text x="105" y="64">• Nesnel yargılar</text>
-<text x="105" y="78">  ağır basar</text>
-<text x="105" y="98">• Temel amaç bilgi</text>
-<text x="105" y="112">  vermektir</text>
-<text x="270" y="70">• Düşünce yazılarında</text>
-<text x="270" y="84">  kullanılır</text>
-<text x="270" y="102" fill="#dc2626">• ( K )</text>
-<text x="435" y="64">• Öznel yargılar</text>
-<text x="435" y="78">  ağır basar</text>
-<text x="435" y="98">• Karşıt bir görüşü</text>
-<text x="435" y="112">  çürütmeyi amaçlar</text>
-</g>
-</svg></div>
-<p>Şemada iki anlatım biçiminin kesişim bölgesinde yer alan <b>( K )</b> yerine aşağıdakilerden hangisi yazılabilir?</p>`,
-  c: [
-    `Örnekleme, karşılaştırma ve tanımlama gibi düşünceyi geliştirme yollarından yararlanılabilir.`,
-    `Olay, yer, zaman ve şahıs kadrosu etrafında kurgulanır.`,
-    `Yalnızca şiir ve masal türündeki metinlerde kullanılır.`,
-    `Okuyucunun fikrini değiştirmek için devrik ve soru cümleleri zorunludur.`
-  ],
-  a: "A",
-  s: `<p>Hem <b>Açıklayıcı</b> hem de <b>Tartışmacı</b> anlatım düşünce (fikir) yazılarında kullanılır ve her ikisinde de düşünceyi somutlaştırmak için <b>örnekleme, karşılaştırma, tanık gösterme, tanımlama</b> gibi düşünceyi geliştirme yollarından yararlanılabilir[cite: 14] (<b>A doğru</b>).</p>`
-},
-{
-  q: `<p>----. Örneğin bir fidan diktiğimizde onun hemen ertesi gün gölgesinde oturabileceğimiz koca bir çınar olmasını bekleyemeyiz; toprağı çapalamak, suyunu vermek ve yıllarca sabırla beklemek gerekir. Yabancı bir dil öğrenmek, bir müzik aletini ustalıkla çalabilmek ya da sporda dereceye girmek de tıpkı bu fidanın büyümesi gibidir. Emek vermeden ve zaman tanımadan kalıcı bir başarıya ulaşmak imkânsızdır.</p>
-<p>Düşüncenin akışına göre bu paragrafın başına (boş bırakılan yere) aşağıdakilerden hangisi getirilmelidir[cite: 14]?</p>`,
-  c: [
-    `Hayatta değerli ve kalıcı olan hiçbir başarı bir gecede kendiliğinden ortaya çıkmaz; sabır ve düzenli emek ister`,
-    `Ormanlarımızı korumak ve her yıl binlerce yeni fidan dikmek iklim değişikliğini önlemenin en etkili yoludur`,
-    `Gençlerin boş zamanlarında bir müzik aleti çalması veya spor yapması zihinsel gelişimlerini hızlandırır`,
-    `Doğa yürüyüşleri yapmak insanın şehir hayatındaki stresini azaltır`
-  ],
-  a: "A",
-  s: `<p>Gelişme bölümünde verilen fidanın çınara dönüşmesi, yabancı dil öğrenme, enstrüman çalma ve sporda başarılı olma örneklerinin tamamı <b>“kalıcı başarının bir anda olmayacağını, sabır ve düzenli emek gerektirdiğini”</b> anlatmaktadır[cite: 14]. Bu nedenle paragrafın giriş cümlesi <b>A</b> seçeneği olmalıdır. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda dört öğrencinin yazdığı kısa paragrafların özellikleri incelenmiştir.</p>
-<table class="rt">
-<tr><th>Öğrenci</th><th>Yazdığı Paragrafın İçeriği</th><th>Belirtilen Özellik</th></tr>
-<tr><td><b>Arda</b></td><td>Antalya’daki Düden Şelalesi’nin suyunun berraklığını, çevresindeki yemyeşil ağaçları ve suyun serinliğini anlattı.</td><td>Betimleyici anlatım kullanmıştır.</td></tr>
-<tr><td><b>Beren</b></td><td>Buharlı trenlerin 19. yüzyılda nasıl icat edildiğini ve kömür enerjisini harekete nasıl dönüştürdüğünü anlattı.</td><td>Açıklayıcı anlatım kullanmıştır.</td></tr>
-<tr><td><b>Cem</b></td><td>“Teknoloji insanları sosyalleştiriyor diyenlere katılmıyorum; aksine aynı odada oturan aile bireyleri bile artık birbiriyle konuşmuyor.” diye yazdı.</td><td>Tartışmacı anlatım kullanmıştır.</td></tr>
-<tr><td><b>Duru</b></td><td>Sabah uyanıp vapura yetişmek için iskeleye koştuğunu, son anda vapura binip arkadaşıyla buluştuğunu anlattı.</td><td>Gözlemci (3. kişi) bakış açısıyla betimleme yapmıştır.</td></tr>
-</table>
-<p>Tabloda hangi öğrencinin yazdığı paragrafla ilgili belirtilen özellik <b>yanlıştır</b>?</p>`,
-  c: [`Arda`, `Beren`, `Cem`, `Duru`],
-  a: "D",
-  s: `<p><b>Duru</b>, kendi başından geçen bir olayı (uyanma → iskeleye koşma → vapura binme → arkadaşıyla buluşma) anlattığı için gözlemci bakış açısıyla betimleme değil, <b>kahraman (1. kişi) bakış açısıyla öyküleyici anlatım</b> kullanmıştır[cite: 14]. Cevap <b>D</b>.</p>`
+  s: `<p>Bir paragrafın ilk cümlesi, kendinden önce başka bir cümle varmış izlenimi vermemelidir.</p>
+<p>D’deki “Kuşlar <b>da</b>” ifadesindeki “da” bağlacı, kendinden önce yıldızlardan yararlanarak yön bulan başka bir varlıktan (örneğin denizcilerden) söz edildiğini gösterir. Bu yüzden D paragrafa giriş olamaz; önceki bir cümleye bağlıdır.</p>
+<p>A, B ve C’de gönderme sözcüğü ya da bağlayıcı yoktur; her biri tek başına anlaşılan, konuyu tanıtan genel yargılardır. C’deki “Bazı kuşların” ifadesi bir gönderme değil, belgisiz bir niteleme olduğundan giriş cümlesi olmasına engel değildir. Cevap <b>D</b>.</p>`
 }
 ]
 });
