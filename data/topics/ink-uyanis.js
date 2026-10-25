@@ -1,7 +1,6 @@
 LGS.add({
 id: "ink-uyanis",
-summary: `
-<h3>1. I. Dünya Savaşı (1914–1918) ve Osmanlı Devleti’nin Cepheleri</h3>
+summary: `<h3>1. I. Dünya Savaşı (1914–1918) ve Osmanlı Devleti’nin Cepheleri</h3>
 <p>I. Dünya Savaşı’nın başlamasında devletler arası ekonomik ve siyasi rekabet etkili olmuştur:</p>
 <ul>
 <li><b>Genel Nedenler:</b> <b>Sanayi İnkılabı</b> sonucu ortaya çıkan <b>ham madde ve pazar arayışı</b>, <b>sömürgecilik</b> yarışı, <b>Fransız İhtilali</b>’nin yaydığı <b>milliyetçilik</b> akımı, silahlanma yarışı ve devletler arası bloklaşma.</li>
@@ -10,15 +9,15 @@ summary: `
 </ul>
 
 <table class="rt">
-<tr><th>Blok</th><th>Savaş Öncesi Üyeler</th><th>Sonradan Katılanlar ve Notlar</th></tr>
-<tr><td><b>İttifak (Bağlaşma) Devletleri</b></td><td>Almanya, Avusturya-Macaristan, İtalya</td><td><b>Osmanlı Devleti</b>, Bulgaristan.<br><i>Not:</i> <b>İtalya</b>, gizli Londra Antlaşması ile kendisine Batı Anadolu vaat edilince taraf değiştirerek <b>İtilaf bloğuna</b> geçmiştir.</td></tr>
+<tr><th>Blok</th><th>Savaş Öncesi Üyeler</th><th>Yanlarında Yer Alan / Sonradan Katılanlar</th></tr>
+<tr><td><b>İttifak (Bağlaşma) Devletleri</b></td><td>Almanya, Avusturya-Macaristan, İtalya</td><td><b>Osmanlı Devleti</b>, Bulgaristan.<br><i>Not:</i> <b>İtalya</b>, gizli Londra Antlaşması (1915) ile kendisine Anadolu’da (Antalya çevresinde) toprak vaat edilince taraf değiştirerek <b>İtilaf bloğuna</b> geçmiştir.</td></tr>
 <tr><td><b>İtilaf (Anlaşma) Devletleri</b></td><td>İngiltere, Fransa, Rusya</td><td>İtalya, ABD, Sırbistan, Yunanistan, Japonya, Romanya.</td></tr>
 </table>
 
 <h4>Osmanlı Devleti Neden Almanya’nın Yanında Savaşa Girdi?</h4>
 <ul>
 <li><b>Osmanlı’nın Amaçları:</b> Son savaşlarda (Trablusgarp, Balkan) kaybettiği toprakları geri almak, <b>siyasi yalnızlıktan kurtulmak</b>, <b>kapitülasyonları ve dış borçları kaldırmak</b>, savaşı Almanya’nın kazanacağına inanmak.</li>
-<li><b>Almanya’nın Osmanlı’yı İsteme Amaçları:</b> Osmanlı’nın <b>jeopolitik konumundan</b> yararlanarak yeni cepheler açıp kendi üzerindeki savaş yükünü hafifletmek, <b>Halifelik</b> makamının gücünü kullanarak İngiliz sömürgelerindeki Müslümanları ayaklandırmak (cihat ilanı), İngiltere’nin sömürgeleriyle bağlantısını kesmek ve <b>Musul–Kerkük (Ortadoğu) petrollerine</b> ulaşmak. *(Not: Almanya, Osmanlı’nın askerî/teknolojik gücünden değil, jeopolitik ve dinî gücünden yararlanmak istemiştir!)*</li>
+<li><b>Almanya’nın Osmanlı’yı İsteme Amaçları:</b> Osmanlı’nın <b>jeopolitik konumundan</b> yararlanarak yeni cepheler açıp kendi üzerindeki savaş yükünü hafifletmek, <b>Halifelik</b> makamının gücünü kullanarak İngiliz sömürgelerindeki Müslümanları ayaklandırmak (cihat ilanı), İngiltere’nin sömürgeleriyle bağlantısını kesmek ve <b>Musul–Kerkük (Ortadoğu) petrollerine</b> ulaşmak. (Not: Almanya, Osmanlı’nın askerî/teknolojik gücünden değil, jeopolitik ve dinî gücünden yararlanmak istemiştir!)</li>
 </ul>
 
 <div class="fig"><svg viewBox="0 0 560 175" width="540" role="img" aria-label="I. Dünya Savaşı'nda Osmanlı Cepheleri Şeması">
@@ -57,59 +56,59 @@ summary: `
 
 <ul>
 <li><b>Kafkas Cephesi:</b> Rusları Doğu Anadolu’dan atmak, <b>Bakü petrollerine</b> ulaşmak ve Orta Asya Türkleriyle birleşmek (<b>Turancılık / Pantürkizm</b>) amacıyla açıldı. Sarıkamış Harekâtı’nda ağır kayıplar verildi. Ruslarla iş birliği yapan Ermeni çetelerine karşı <b>1915 Sevk ve İskân (Tehcir) Kanunu</b> çıkarıldı. Çanakkale’den sonra bölgeye atanan <b>Mustafa Kemal, Muş ve Bitlis’i</b> Ruslardan geri aldı. Rusya’da Bolşevik İhtilali çıkınca <b>Brest-Litowsk Antlaşması (1918)</b> ile Kars, Ardahan ve Batum Osmanlı’ya geri verildi (Toprak kazanılan tek cephe).</li>
-<li><b>Çanakkale Cephesi:</b> İtilaf Devletleri; İstanbul ve Boğazları alıp Osmanlı’yı savaş dışı bırakmak ve müttefikleri <b>Çarlık Rusya’ya yardım götürmek</b> için açtı. Mustafa Kemal’in Arıburnu, Conkbayırı ve Anafartalar’daki ileri görüşlülüğü ve başarısıyla <b>kazanılan tek cephedir</b>. Sonucunda I. Dünya Savaşı <b>en az 2 yıl uzadı</b>, Rusya’da <b>Bolşevik İhtilali</b> çıktı, <b>Bulgaristan</b> İttifak bloğunda savaşa girdi ve Mustafa Kemal tüm yurtta tanınarak <b>Millî Mücadele’nin lideri</b> oldu.</li>
-<li><b>Irak (Basra) ve Hicaz–Yemen Cepheleri:</b> İngilizler Musul–Abadan petrollerini ele geçirmek için Irak’a saldırdı; Halil (Kut) Paşa komutasındaki Türk ordusu <b>Kut’ül Amare</b>’de İngiliz tümenini esir aldıysa da cephe genelinde kaybedildi. Hicaz–Yemen ve Kanal cephelerinde Arap kabilelerinin İngilizlerle iş birliği yapması <b>Ümmetçilik (İslamcılık)</b> fikrinin geçerliliğini yitirdiğini gösterdi.</li>
+<li><b>Çanakkale Cephesi:</b> İtilaf Devletleri; İstanbul ve Boğazları alıp Osmanlı’yı savaş dışı bırakmak ve müttefikleri <b>Çarlık Rusya’ya yardım götürmek</b> için açtı. Mustafa Kemal’in Arıburnu, Conkbayırı ve Anafartalar’daki ileri görüşlülüğü ve başarısıyla <b>kazanılan tek cephedir</b>. Sonucunda I. Dünya Savaşı’nın <b>yaklaşık 2 yıl uzadığı</b> kabul edilir; yardım alamayan Rusya’da <b>Bolşevik İhtilali</b>’nin çıkmasında etkili oldu, <b>Bulgaristan</b> İttifak bloğunda savaşa girdi ve tüm yurtta tanınan Mustafa Kemal’in <b>Millî Mücadele’nin lideri</b> olmasının yolu açıldı.</li>
+<li><b>Irak (Basra) ve Hicaz–Yemen Cepheleri:</b> İngilizler Abadan petrollerini korumak ve Musul petrollerine ulaşmak için Irak’a saldırdı; Halil (Kut) Paşa komutasındaki Türk ordusu <b>Kut’ül Amare</b>’de İngiliz tümenini esir aldıysa da cephe genelinde kaybedildi. Hicaz–Yemen ve Suriye–Filistin cephelerinde bazı Arap kabilelerinin İngilizlerle iş birliği yapması <b>Ümmetçilik (İslamcılık)</b> fikrinin geçerliliğini yitirdiğini gösterdi.</li>
 </ul>
 
 <div class="note"><b>Mustafa Kemal’in I. Dünya Savaşı’nda Savaştığı Cepheler (Kronolojik Sırayla - ÇiKaS):</b>
-<br><b>1. Çanakkale Cephesi</b> (1915) → <b>2. Kafkas Cephesi</b> (1916 - Muş ve Bitlis’i geri aldı, Generalliğe yükseldi) → <b>3. Suriye–Filistin Cephesi</b> (1917–1918 - Yıldırım Orduları Grup Komutanı olarak İngilizleri Halep’in kuzeyinde durdurdu).</div>
+<br><b>1. Çanakkale Cephesi</b> (1915) → <b>2. Kafkas Cephesi</b> (1916 - Muş ve Bitlis’i geri aldı, Generalliğe yükseldi) → <b>3. Suriye–Filistin Cephesi</b> (1917–1918 - 7. Ordu Komutanı olarak İngilizleri Halep’in kuzeyinde durdurdu; Mondros’tan sonra Yıldırım Orduları Grup Komutanı oldu).</div>
 
 <h3>2. Mondros Ateşkes Antlaşması (30 Ekim 1918) ve İşgaller</h3>
 <ul>
 <li>Savaştan çekilen Osmanlı adına Bahriye Nazırı Rauf (Orbay) Bey tarafından Limni Adası’nın Mondros Limanı’nda imzalandı.</li>
 <li><b>Askerî ve Ekonomik Hükümler:</b> Boğazlar açılacak, <b>Osmanlı ordusu terhis edilecek</b> (sınırların korunması hariç), silah ve cephaneler teslim edilecek (<b>Amaç:</b> Osmanlı’yı <b>savunmasız</b> bırakmak), tüm haberleşme istasyonları, demir yolları ve Toros tünelleri İtilaf Devletleri’nin denetimine verilecek (<b>Amaç:</b> İşgallere karşı Türk halkının <b>haberleşmesini ve örgütlenmesini</b> engellemek).</li>
-<li><b>7. Madde (En Tehlikeli Madde):</b> <i>“İtilaf Devletleri, güvenliklerini tehdit edecek bir durum ortaya çıkarsa herhangi bir stratejik noktayı işgal etme hakkına sahip olacaktır.”</i> → Anadolu’nun işgaline <b>hukuki zemin (kılıf)</b> hazırlamıştır[cite: 9].</li>
-<li><b>24. Madde:</b> <i>“Vilâyât-ı Sitte’de (Doğu Anadolu’daki altı il: <b>Erzurum, Van, Harput/Elazığ, Diyarbakır, Bitlis, Sivas</b> – Kodlama: <b>EV HDBS</b>) karışıklık çıkarsa İtilaf Devletleri buraları işgal edebilecektir.”</i> → Doğu Anadolu’da bağımsız bir <b>Ermeni devleti</b> kurmayı amaçlamıştır[cite: 9].</li>
+<li><b>7. Madde (En Tehlikeli Madde, özetle):</b> <i>“İtilaf Devletleri, güvenliklerini tehdit edecek bir durum ortaya çıkarsa herhangi bir stratejik noktayı işgal etme hakkına sahip olacaktır.”</i> → Anadolu’nun işgaline <b>hukuki zemin (kılıf)</b> hazırlamıştır.</li>
+<li><b>24. Madde (özetle):</b> <i>“Vilâyât-ı Sitte’de (Doğu Anadolu’daki altı il: <b>Erzurum, Van, Harput/Elazığ, Diyarbakır, Bitlis, Sivas</b> – Kodlama: <b>EV HDBS</b>) karışıklık çıkarsa İtilaf Devletleri buraları işgal edebilecektir.”</i> → Doğu Anadolu’da bağımsız bir <b>Ermeni devleti</b> kurmayı amaçlamıştır.</li>
 </ul>
 
 <table class="rt">
 <tr><th>Gelişme / Belge</th><th>Önemi ve Yorumu</th></tr>
-<tr><td><b>Wilson İlkeleri</b><br>(ABD Başkanı Wilson)</td><td>“Yenen devletler yenilenlerden toprak ve savaş tazminatı almayacak”, “Osmanlı’da Türklerin çoğunlukta olduğu bölgelere egemenlik verilecek.” maddeleri vardır. İtilaf Devletleri sömürgecilik adını <b>Manda ve Himaye</b> olarak değiştirerek bu ilkeleri delmiştir.</td></tr>
-<tr><td><b>Paris Barış Konferansı</b><br>(18 Ocak 1919)</td><td>Yenilen devletlerle yapılacak barış şartlarını görüşmek için toplandı. İngiltere, Akdeniz’de güçlü bir İtalya yerine <b>zayıf bir Yunanistan</b> istediği için daha önce İtalya’ya vaat edilen <b>İzmir ve çevresini Yunanistan’a</b> verdi (İtilaf Devletleri arasındaki <b>ilk görüş ayrılığı!</b>).</td></tr>
-<tr><td><b>İzmir’in İşgali</b><br>(15 Mayıs 1919)</td><td>Yunanlılar Paris Barış Konferansı’na dayanarak İzmir’i işgal etti. Gazeteci <b>Hasan Tahsin</b> ilk kurşunu atarak milli direnişi başlattı[cite: 9]. İşgal, <b>Kuvâ-yı Milliye</b> ruhunun doğmasını ve <b>Redd-i İlhak</b> cemiyetlerinin kurulmasını hızlandırdı.</td></tr>
-<tr><td><b>Amiral Bristol Raporu</b><br>(Ekim 1919)</td><td>ABD’li Amiral Bristol bölgeyi inceleyerek: “İzmir’de Türkler çoğunluktadır, katliamdan Yunanlılar sorumludur, işgal haksızdır.” raporunu yazdı. <b>Türk milletinin Millî Mücadele’deki haklılığını dünyaya duyuran İLK ULUSLARARASI BELGEDİR!</b></td></tr>
+<tr><td><b>Wilson İlkeleri</b><br>(ABD Başkanı Wilson)</td><td>Özetle “Yenen devletler yenilenlerden toprak ve savaş tazminatı almayacak”, “Osmanlı’da Türklerin çoğunlukta olduğu bölgelere egemenlik verilecek.” anlamında ilkeler içerir. İtilaf Devletleri sömürgecilik adını <b>Manda ve Himaye</b> olarak değiştirerek bu ilkeleri delmiştir.</td></tr>
+<tr><td><b>Paris Barış Konferansı</b><br>(18 Ocak 1919)</td><td>Yenilen devletlerle yapılacak barış şartlarını görüşmek için toplandı. İngiltere, Akdeniz’de güçlü bir İtalya yerine <b>zayıf bir Yunanistan</b> istediği için daha önce İtalya’ya vaat edilen <b>İzmir ve çevresini Yunanistan’a</b> verdi (İtilaf Devletleri arasında <b>görüş ayrılığı!</b>).</td></tr>
+<tr><td><b>İzmir’in İşgali</b><br>(15 Mayıs 1919)</td><td>Yunanlılar Paris Barış Konferansı’nın kararıyla ve Mondros’un 7. maddesine dayanarak İzmir’i işgal etti. Gazeteci <b>Hasan Tahsin</b> ilk kurşunu atarak milli direnişi başlattı. İşgal, <b>Kuvâ-yı Milliye</b> ruhunun doğmasını ve <b>Redd-i İlhak</b> cemiyetlerinin kurulmasını hızlandırdı.</td></tr>
+<tr><td><b>Amiral Bristol Raporu</b><br>(Ekim 1919)</td><td>ABD’li Amiral Bristol başkanlığındaki İtilaf soruşturma heyeti bölgeyi inceledi; raporda işgal bölgesinde Türklerin çoğunlukta olduğu, işgalin haklı gösterilemeyeceği ve olaylarda Yunan tarafının sorumluluğu ortaya kondu. <b>Türk milletinin haklılığını ortaya koyan ilk uluslararası belge olarak kabul edilir.</b></td></tr>
 </table>
 
 <div class="note"><b>Mondros ve İşgaller Karşısında Tutumlar:</b>
 <br>• <b>İstanbul Hükûmeti (Damat Ferit):</b> Teslimiyetçi, pasif ve uzlaşmacı davrandı; işgallere sessiz kaldı, Nasihat Heyetleri göndererek halkı sükûnete çağırdı.
 <br>• <b>Mustafa Kemal:</b> <i>“Geldikleri gibi giderler!”</i> diyerek kararlı, vatansever ve tam bağımsızlıkçı bir tutum sergiledi; teşkilatlanmayı başlattı.
-<br>• <b>Türk Halkı:</b> Müdafaa-i Hukuk cemiyetlerini ve Kuvâ-yı Milliye birliklerini kurarak vatanını savundu[cite: 9].</div>
+<br>• <b>Türk Halkı:</b> Müdafaa-i Hukuk cemiyetlerini ve Kuvâ-yı Milliye birliklerini kurarak vatanını savundu.</div>
 
 <h3>3. Cemiyetler ve Kuvâ-yı Milliye</h3>
 <table class="rt">
 <tr><th>Kategori</th><th>Cemiyet Adı</th><th>Kuruluş Amacı ve Faaliyet Bölgesi</th></tr>
-<tr><td rowspan="6"><b>Yararlı (Millî) Cemiyetler</b><br><i>(Bölgeseldir, milliyetçidir, Sivas Kongresi’nde tek çatı altında birleşmiştir)</i></td><td><b>Trakya-Paşaeli Müdafaa-i Hukuk</b></td><td>Doğu Trakya’nın Yunanistan’a katılmasını (Mavri Mira’yı) önlemek.</td></tr>
+<tr><td rowspan="6"><b>Yararlı (Millî) Cemiyetler</b><br><i>(Bölgeseldir, milliyetçidir, Sivas Kongresi’nde tek çatı altında birleşmiştir)</i></td><td><b>Trakya-Paşaeli Müdafaa-i Hukuk</b></td><td>Doğu Trakya’nın Yunanistan’a katılmasını önlemek.</td></tr>
 <tr><td><b>İzmir Müdafaa-i Hukuk / Redd-i İlhak</b></td><td>İzmir ve Ege’nin Yunanlara verilmesini basın-yayın ve silahla engellemek.</td></tr>
 <tr><td><b>Doğu Anadolu (Şark Vilayetleri) M.H.</b></td><td>Doğu Anadolu’nun Ermenilere verilmesini önlemek; <i>Le Pays, Hadisat, Albayrak</i> gazetelerini çıkardı, Erzurum Kongresi’ni topladı.</td></tr>
 <tr><td><b>Trabzon Muhafaza-i Hukuk-ı Milliye</b></td><td>Karadeniz’de Pontus Rum Devleti kurulmasını engellemek.</td></tr>
-<tr><td><b>Kilikyalılar Cemiyeti</b></td><td><b>Çukurova (Adana ve çevresi)</b> bölgesini Fransız ve Ermeni işgaline karşı savunmak (İsmi yabancı gibi dursa da <b>YARARLIDIR!</b>)[cite: 9].</td></tr>
-<tr><td><b>Millî Kongre Cemiyeti</b></td><td>Doktor Esat Işık kurdu; <b>ulusal</b> çapta basın-yayın yoluyla Türklerin haklılığını dünyaya duyurdu, “<b>Kuvâ-yı Milliye</b>” tabirini ilk kez kullandı.</td></tr>
-<tr><td rowspan="3"><b>Azınlıkların Kurduğu Zararlı Cemiyetler</b></td><td><b>Mavri Mira ve Etnik-i Eterya</b> (Rum)</td><td>Megali İdea (Büyük Yunanistan) ve Bizans’ı yeniden canlandırmak[cite: 9].</td></tr>
+<tr><td><b>Kilikyalılar Cemiyeti</b></td><td><b>Çukurova (Adana ve çevresi)</b> bölgesini Fransız ve Ermeni işgaline karşı savunmak (İsmi yabancı gibi dursa da <b>YARARLIDIR!</b>).</td></tr>
+<tr><td><b>Millî Kongre Cemiyeti</b></td><td>Doktor Esat Işık kurdu; <b>ulusal</b> çapta basın-yayın yoluyla Türklerin haklılığını dünyaya duyurmaya çalıştı.</td></tr>
+<tr><td rowspan="3"><b>Azınlıkların Kurduğu Zararlı Cemiyetler</b></td><td><b>Mavri Mira ve Etnik-i Eterya</b> (Rum)</td><td>Megali İdea (Büyük Yunanistan) ve Bizans’ı yeniden canlandırmak.</td></tr>
 <tr><td><b>Pontus Rum Cemiyeti</b> (Rum)</td><td>Doğu Karadeniz’de Samsun–Trabzon merkezli Rum devleti kurmak.</td></tr>
-<tr><td><b>Taşnak ve Hınçak / Alyans İsrailit</b></td><td>Doğu Anadolu ve Çukurova’da Ermeni devleti; Filistin’de Yahudi devleti kurmak[cite: 9].</td></tr>
-<tr><td rowspan="3"><b>Millî Varlığa Düşman Cemiyetler</b><br><i>(Müslüman/Türklerin kurduğu zararlılar)</i></td><td><b>İngiliz Muhipleri Cemiyeti</b></td><td>Kurtuluşu <b>İngiliz mandasına</b> girmekte gören (Damat Ferit destekli) cemiyet[cite: 9].</td></tr>
-<tr><td><b>Wilson Prensipleri Cemiyeti</b></td><td>Kurtuluşu <b>ABD mandasına</b> girmekte gören cemiyet (Sivas’ta reddedildi)[cite: 9].</td></tr>
+<tr><td><b>Taşnak ve Hınçak / Alyans İsrailit</b></td><td>Doğu Anadolu ve Çukurova’da Ermeni devleti; Filistin’de Yahudi devleti kurmak.</td></tr>
+<tr><td rowspan="3"><b>Millî Varlığa Düşman Cemiyetler</b><br><i>(Müslüman/Türklerin kurduğu zararlılar)</i></td><td><b>İngiliz Muhipleri Cemiyeti</b></td><td>Kurtuluşu <b>İngiliz mandasına</b> girmekte gören (Damat Ferit destekli) cemiyet.</td></tr>
+<tr><td><b>Wilson Prensipleri Cemiyeti</b></td><td>Kurtuluşu <b>ABD mandasına</b> girmekte gören cemiyet (Sivas’ta reddedildi).</td></tr>
 <tr><td><b>Sulh ve Selamet-i Osmaniye / Teali İslam / Kürt Teali</b></td><td>Kurtuluşu padişah ve halifenin emirlerine uymakta gören veya Doğu’da ayrı devlet kurmak isteyen cemiyetler.</td></tr>
 </table>
 
 <ul>
-<li><b>Kuvâ-yı Milliye (Millî Kuvvetler):</b> Osmanlı ordusunun terhis edilmesi ve İstanbul Hükûmeti’nin işgallere sessiz kalması üzerine Türk halkının vatanseverlik duygusuyla kurduğu <b>düzensiz (milis) silahlı direniş birlikleridir</b>[cite: 9].
-<br><b>Olumlu Yönleri:</b> Düzenli ordu kurulana kadar düşmanı oyalayıp ilerleyişini yavaşlattı, TBMM’ye karşı çıkan iç ayaklanmaları bastırdı, ulusal bilinci uyandırdı[cite: 9].
+<li><b>Kuvâ-yı Milliye (Millî Kuvvetler):</b> Osmanlı ordusunun terhis edilmesi ve İstanbul Hükûmeti’nin işgallere sessiz kalması üzerine Türk halkının vatanseverlik duygusuyla kurduğu <b>düzensiz (milis) silahlı direniş birlikleridir</b>.
+<br><b>Olumlu Yönleri:</b> Düzenli ordu kurulana kadar düşmanı oyalayıp ilerleyişini yavaşlattı, TBMM’ye karşı çıkan iç ayaklanmaları bastırdı, ulusal bilinci uyandırdı.
 <br><b>Olumsuz Yönleri (Kaldırılma Nedenleri):</b> Askerî disiplinden yoksun olması, tek merkezden yönetilememesi, halktan zorla malzeme toplaması, suçluları kendi yöntemleriyle cezalandırması (hukuk devleti anlayışına aykırı) ve <b>düşmanı yurttan tamamen atacak güce sahip olmaması</b>.</li>
 </ul>
 
 <h3>4. Millî Mücadele’nin Hazırlık Dönemi (Genelgeler ve Kongreler)</h3>
-<div class="fig"><svg viewBox="0 0 640 190" width="620" role="img" aria-label="Millî Mücadele'nin hazırlık dönemi zaman çizelgesi">
+<div class="fig"><svg viewBox="0 0 640 190" width="560" role="img" aria-label="Millî Mücadele'nin hazırlık dönemi zaman çizelgesi">
 <line x1="20" y1="95" x2="620" y2="95" stroke="#475569" stroke-width="3"/>
 <g font-size="10" text-anchor="middle">
 <g fill="#dc2626"><circle cx="42" cy="95" r="6"/><circle cx="120" cy="95" r="6"/><circle cx="200" cy="95" r="6"/><circle cx="280" cy="95" r="6"/><circle cx="360" cy="95" r="6"/><circle cx="440" cy="95" r="6"/><circle cx="520" cy="95" r="6"/><circle cx="600" cy="95" r="6"/></g>
@@ -125,30 +124,30 @@ summary: `
 </svg></div>
 
 <ul>
-<li><b>Samsun’a Çıkış (19 Mayıs 1919):</b> Mustafa Kemal <b>9. Ordu Müfettişi</b> olarak geniş yetkilerle (sivil ve askerî makamlara emretme yetkisi) Samsun’a çıktı[cite: 9]. <b>Samsun Raporu</b>’nda Karadeniz’deki karışıklıklardan Rumların sorumlu olduğunu, Türk milletinin yabancı mandasına tahammülü olmadığını bildirdi (İstanbul Hükûmeti ile ilk görüş ayrılığı).</li>
-<li><b>Havza Genelgesi (28 Mayıs 1919):</b> Mustafa Kemal’in <b>tek başına</b> yayımladığı ilk genelgedir. İşgallere karşı <b>mitingler düzenlenmesini</b>, İtilaf Devletleri ve İstanbul Hükûmeti’ne <b>protesto telgrafları çekilmesini</b> (<b>Amaç:</b> Millî bilinci uyandırmak ve heyecan yaratmak), mitinglerde <b>Hristiyan azınlıklara kötü davranılmamasını</b> (<b>Amaç:</b> Mondros’un 7. maddesine göre yeni işgallere bahane vermemek) istedi[cite: 9].</li>
+<li><b>Samsun’a Çıkış (19 Mayıs 1919):</b> Mustafa Kemal <b>9. Ordu Müfettişi</b> olarak geniş yetkilerle (sivil ve askerî makamlara emretme yetkisi) Samsun’a çıktı. <b>Samsun Raporu</b>’nda Karadeniz’deki karışıklıklardan Rumların sorumlu olduğunu, Türk milletinin yabancı mandasına tahammülü olmadığını bildirdi (İstanbul Hükûmeti ile ilk görüş ayrılığı).</li>
+<li><b>Havza Genelgesi (28 Mayıs 1919):</b> Mustafa Kemal’in <b>tek başına</b> yayımladığı ilk genelgedir. İşgallere karşı <b>mitingler düzenlenmesini</b>, İtilaf Devletleri ve İstanbul Hükûmeti’ne <b>protesto telgrafları çekilmesini</b> (<b>Amaç:</b> Millî bilinci uyandırmak ve heyecan yaratmak), mitinglerde <b>Hristiyan azınlıklara kötü davranılmamasını</b> (<b>Amaç:</b> Mondros’un 7. maddesine göre yeni işgallere bahane vermemek) istedi.</li>
 </ul>
 
 <h4>Amasya Genelgesi (22 Haziran 1919) – Kurtuluş Savaşı’nın Yol Haritası</h4>
 <p>Mustafa Kemal, kararı kişisellikten çıkarıp <b>halka mal etmek</b> için genelgeyi Rauf Bey, Refet Bele, Ali Fuat Cebesoy ve Kazım Karabekir’e de onaylatmıştır:</p>
 <table class="rt">
 <tr><th>Amasya Genelgesi Maddesi</th><th>LGS Yorumu (Anlamı)</th></tr>
-<tr><td>1. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</td><td>Kurtuluş Savaşı’nın <b>1. GEREKÇESİ</b> (Neden mücadele ediyoruz?)[cite: 9].</td></tr>
-<tr><td>2. İstanbul Hükûmeti üzerine aldığı sorumluluğu yerine getirememektedir. Bu durum milletimizi yok olmuş gibi göstermektedir.</td><td>Kurtuluş Savaşı’nın <b>2. GEREKÇESİ</b> (İlk kez İstanbul Hükûmeti’ne açıkça karşı çıkılmıştır)[cite: 9].</td></tr>
-<tr><td>3. Milletin bağımsızlığını (istiklalini), yine milletin <b>azim ve kararı</b> kurtaracaktır.</td><td><b>AMAÇ</b> (Milletin bağımsızlığı) ve <b>YÖNTEM</b> (Milletin azim ve kararı) belirlenmiştir[cite: 9]. İlk kez <b>Millî Egemenlik (Ulusal İrade)</b> kavramına üstü kapalı vurgu yapılmış, ileride <b>rejimin (yönetim şeklinin) değişeceğinin</b> sinyali verilmiştir!</td></tr>
+<tr><td>1. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</td><td>Kurtuluş Savaşı’nın <b>1. GEREKÇESİ</b> (Neden mücadele ediyoruz?).</td></tr>
+<tr><td>2. İstanbul Hükûmeti üzerine aldığı sorumluluğu yerine getirememektedir. Bu durum milletimizi yok olmuş gibi göstermektedir.</td><td>Kurtuluş Savaşı’nın <b>2. GEREKÇESİ</b> (İlk kez İstanbul Hükûmeti’ne açıkça karşı çıkılmıştır).</td></tr>
+<tr><td>3. Milletin bağımsızlığını (istiklalini), yine milletin <b>azim ve kararı</b> kurtaracaktır.</td><td><b>AMAÇ</b> (Milletin bağımsızlığı) ve <b>YÖNTEM</b> (Milletin azim ve kararı) belirlenmiştir. İlk kez <b>Millî Egemenlik (Ulusal İrade)</b> kavramına üstü kapalı vurgu yapılmış, ileride <b>rejimin (yönetim şeklinin) değişeceğinin</b> sinyali verilmiştir!</td></tr>
 <tr><td>4. Milletin durumunu göz önünde tutmak ve haklarını dünyaya duyurmak için her türlü etki ve denetimden uzak <b>millî bir kurul (Temsil Heyeti)</b> oluşturulmalıdır.</td><td><b>Temsil Heyeti</b> kurma fikri ilk kez ortaya atılmıştır.</td></tr>
-<tr><td>5. Anadolu’nun her bakımdan en güvenli yeri olan <b>Sivas’ta</b> ulusal bir kongre toplanacaktır; her sancaktan <b>halkın güvenini kazanmış</b> 3 delege seçilecektir.</td><td>Kararların <b>millî iradeye</b> dayandırılmak istendiğini gösterir[cite: 9].</td></tr>
+<tr><td>5. Anadolu’nun her bakımdan en güvenli yeri olan <b>Sivas’ta</b> ulusal bir kongre toplanacaktır; her sancaktan <b>halkın güvenini kazanmış</b> 3 delege seçilecektir.</td><td>Kararların <b>millî iradeye</b> dayandırılmak istendiğini gösterir.</td></tr>
 </table>
-<div class="note"><b>Sine-i Millete Dönüş:</b> Amasya Genelgesi’nden sonra (Erzurum Kongresi’nden hemen önce, 7–8 Temmuz 1919 gecesi) Mustafa Kemal, çok sevdiği <b>askerlik görevinden ve 9. Ordu Müfettişliğinden istifa ederek</b> yoluna sivil bir vatandaş olarak devam etmiştir. Bu sırada 15. Kolordu Komutanı <b>Kazım Karabekir</b>, <i>“Ben ve kolordum emrinizdeyiz Paşam!”</i> diyerek Mustafa Kemal’e bağlılığını bildirmiştir.</div>
+<div class="note"><b>Sine-i Millete Dönüş:</b> Amasya Genelgesi’nden sonra (Erzurum Kongresi’nden hemen önce, 7–8 Temmuz 1919 gecesi) Mustafa Kemal, çok sevdiği <b>askerlik görevinden ve 9. Ordu Müfettişliğinden istifa ederek</b> yoluna sivil bir vatandaş olarak devam etmiştir. Bu sırada 15. Kolordu Komutanı <b>Kazım Karabekir</b>, kendisinin ve kolordusunun Mustafa Kemal’in emrinde olduğunu bildirmiştir.</div>
 
 <h4>Erzurum Kongresi (23 Temmuz – 7 Ağustos 1919) ve Sivas Kongresi (4–11 Eylül 1919)</h4>
 <table class="rt">
 <tr><th>Özellik / Karar</th><th>Erzurum Kongresi</th><th>Sivas Kongresi</th></tr>
-<tr><td><b>Toplanış ve Kararlar</b></td><td>Toplanışı <b>bölgesel</b> (Doğu Anadolu ve Trabzon cemiyetleri topladı), aldığı kararlar <b>ulusal</b>dır[cite: 9].</td><td>Hem toplanışı hem de aldığı kararlar <b>ulusal (millî)</b> niteliktedir[cite: 9].</td></tr>
-<tr><td><b>Millî Sınırlar</b></td><td><i>“Millî sınırlar içinde vatan bir bütündür, parçalanamaz.”</i> (İlk kez <b>millî sınırlardan</b> bahsedildi)[cite: 9].</td><td>Erzurum kararları genişletilerek aynen kabul edildi.</td></tr>
-<tr><td><b>Manda ve Himaye</b></td><td><i>“Manda ve himaye kabul edilemez.”</i> (<b>İlk kez</b> reddedildi → Tam bağımsızlık)[cite: 9].</td><td>Manda ve himaye <b>kesin olarak (bir daha gündeme gelmemek üzere)</b> reddedildi[cite: 9].</td></tr>
-<tr><td><b>Temsil Heyeti</b></td><td>Doğu illerini temsil eden 9 kişilik <b>Temsil Heyeti ilk kez kuruldu</b> (Başkanı: Mustafa Kemal)[cite: 9].</td><td>Temsil Heyeti 15 kişiye çıkarıldı ve <b>“bütün vatanı temsil eder”</b> hâle getirildi.</td></tr>
-<tr><td><b>Cemiyetler ve Yürütme</b></td><td>Doğu Anadolu’daki yararlı cemiyetler birleştirildi.</td><td>Tüm yararlı cemiyetler <b>“Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti”</b> adıyla tek çatı altında birleştirildi[cite: 9]. Temsil Heyeti, <b>Ali Fuat Paşa’yı Batı Cephesi Kuvâ-yı Milliye Komutanlığına</b> atayarak <b>ilk kez YÜRÜTME (hükûmet gibi) yetkisini</b> kullandı! Halkı doğru bilgilendirmek için <b>İrade-i Milliye</b> gazetesi çıkarıldı[cite: 9].</td></tr>
+<tr><td><b>Toplanış ve Kararlar</b></td><td>Toplanışı <b>bölgesel</b> (Doğu Anadolu ve Trabzon cemiyetleri topladı), aldığı kararlar <b>ulusal</b>dır.</td><td>Hem toplanışı hem de aldığı kararlar <b>ulusal (millî)</b> niteliktedir.</td></tr>
+<tr><td><b>Millî Sınırlar</b></td><td><i>“Millî sınırlar içinde vatan bir bütündür, parçalanamaz.”</i> (İlk kez <b>millî sınırlardan</b> bahsedildi).</td><td>Erzurum kararları genişletilerek aynen kabul edildi.</td></tr>
+<tr><td><b>Manda ve Himaye</b></td><td><i>“Manda ve himaye kabul edilemez.”</i> (<b>İlk kez</b> reddedildi → Tam bağımsızlık).</td><td>Manda ve himaye <b>kesin olarak (bir daha gündeme gelmemek üzere)</b> reddedildi.</td></tr>
+<tr><td><b>Temsil Heyeti</b></td><td>Doğu illerini temsil eden 9 kişilik <b>Temsil Heyeti ilk kez kuruldu</b> (Başkanı: Mustafa Kemal).</td><td>Temsil Heyeti genişletildi ve <b>“bütün vatanı temsil eder”</b> hâle getirildi.</td></tr>
+<tr><td><b>Cemiyetler ve Yürütme</b></td><td>Doğu Anadolu’daki yararlı cemiyetler birleştirildi.</td><td>Tüm yararlı cemiyetler <b>“Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti”</b> adıyla tek çatı altında birleştirildi. Temsil Heyeti, <b>Ali Fuat Paşa’yı Batı Cephesi Kuvâ-yı Milliye Komutanlığına</b> atayarak <b>yürütmeye yönelik (hükûmet gibi)</b> bir karar aldı. Halkı doğru bilgilendirmek için <b>İrade-i Milliye</b> gazetesi çıkarıldı.</td></tr>
 </table>
 
 <div class="note"><b>Erzurum Kongresi’nin Özel Maddeleri ve Yorumları:</b>
@@ -159,7 +158,7 @@ summary: `
 
 <ul>
 <li><b>Damat Ferit Paşa’nın İstifası (Temsil Heyeti’nin İlk Siyasi Başarısı!):</b> Sivas Kongresi’ni engellemek isteyen Elazığ Valisi <b>Ali Galip</b>’in girişimi başarısız olunca Mustafa Kemal, İstanbul ile tüm haberleşmeyi kesti. Baskıya dayanamayan <b>Damat Ferit Paşa Hükûmeti istifa etti</b> ve yerine Millî Mücadele’ye daha ılımlı bakan <b>Ali Rıza Paşa Hükûmeti</b> kuruldu.</li>
-<li><b>Amasya Görüşmeleri (20–22 Ekim 1919):</b> Ali Rıza Paşa Hükûmeti adına Bahriye Nazırı <b>Salih Paşa</b> ile Temsil Heyeti Başkanı <b>Mustafa Kemal</b> görüştü. Bu görüşme ile <b>İstanbul Hükûmeti, Temsil Heyeti’nin hukuki varlığını resmen tanımış oldu!</b> Görüşmede alınan tek ortak karar olan <b>Osmanlı Mebusan Meclisi’nin açılması</b> kabul edildi.</li>
+<li><b>Amasya Görüşmeleri (20–22 Ekim 1919):</b> Ali Rıza Paşa Hükûmeti adına Bahriye Nazırı <b>Salih Paşa</b> ile Temsil Heyeti Başkanı <b>Mustafa Kemal</b> görüştü. Bu görüşme ile <b>İstanbul Hükûmeti, Temsil Heyeti’ni hukuken tanımış oldu.</b> Alınan kararlardan yalnızca <b>Osmanlı Mebusan Meclisi’nin toplanması</b> uygulandı.</li>
 <li><b>Temsil Heyeti’nin Ankara’ya Gelişi (27 Aralık 1919):</b> Ankara’nın merkez seçilme nedenleri; <b>güvenli ve merkezi konumu</b>, <b>Batı Cephesi’ne yakınlığı</b>, <b>demir yolu ve telgraf (haberleşme) ağına</b> sahip olması, İstanbul’daki Mebusan Meclisi çalışmalarını yakından takip edebilme imkânı ve Ankara halkının Millî Mücadele’yi coşkuyla desteklemesidir.</li>
 </ul>
 
@@ -167,14 +166,14 @@ summary: `
 <ul>
 <li><b>Misak-ı Millî (Millî Yemin - 28 Ocak 1920):</b> Mustafa Kemal, İstanbul’a gidecek milletvekillerinden; kendisini Meclis Başkanı seçmelerini, mecliste <b>Müdafaa-i Hukuk Grubu</b> kurmalarını ve Misak-ı Millî’yi kabul etmelerini istedi. Vekiller padişah baskısından çekinerek Mustafa Kemal’i başkan seçemedi ve Müdafaa-i Hukuk yerine <b>Felah-ı Vatan Grubu</b>’nu kurdu; ancak <b>Misak-ı Millî kararlarını kabul ettiler</b> (Kodlama: <b>K-A-R-A-B-oğaz</b>):
   <ol>
-  <li><b>K - Kapitülasyonlar:</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kaldırılacaktır → <b>Tam bağımsızlık ve ekonomik bağımsızlık</b>[cite: 9].</li>
-  <li><b>A - Azınlıklar:</b> Azınlık hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir → <b>Uluslararası eşitlik (mütekabiliyet)</b>[cite: 9].</li>
-  <li><b>R - Referandum (Halkoylaması):</b> Arap memleketleri, Batı Trakya ve <b>Elviye-i Selase (Kars, Ardahan, Batum)</b> için gerekirse halkoylamasına başvurulacaktır → <b>Halkın iradesine saygı ve bölgedeki Türk nüfus çoğunluğuna güven</b>[cite: 9].</li>
-  <li><b>A - Ateşkes Sınırı:</b> Mondros imzalandığı sırada işgal edilmemiş Türk ve İslam çoğunluğunun bulunduğu topraklar ayrılmaz bir bütündür → <b>Yeni Türk devletinin millî sınırları</b> çizilmiştir[cite: 9].</li>
+  <li><b>K - Kapitülasyonlar:</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kaldırılacaktır → <b>Tam bağımsızlık ve ekonomik bağımsızlık</b>.</li>
+  <li><b>A - Azınlıklar:</b> Azınlık hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir → <b>Uluslararası eşitlik (mütekabiliyet)</b>.</li>
+  <li><b>R - Referandum (Halkoylaması):</b> Arap memleketleri, Batı Trakya ve <b>Elviye-i Selase (Kars, Ardahan, Batum)</b> için gerekirse halkoylamasına başvurulacaktır → <b>Halkın iradesine saygı ve bölgedeki Türk nüfus çoğunluğuna güven</b>.</li>
+  <li><b>A - Ateşkes Sınırı:</b> Mondros imzalandığı sırada işgal edilmemiş Türk ve İslam çoğunluğunun bulunduğu topraklar ayrılmaz bir bütündür → <b>Yeni Türk devletinin millî sınırları</b> çizilmiştir.</li>
   <li><b>Boğazlar:</b> İstanbul ve Marmara’nın güvenliği sağlanırsa Boğazların dünya ticaretine açılmasına karar verilebilir.</li>
   </ol>
 </li>
-<li><b>İstanbul’un Resmen İşgali (16 Mart 1920):</b> Misak-ı Millî’nin kabulüne tepki gösteren İtilaf Devletleri İstanbul’u resmen işgal etti, Mebusan Meclisi’ni dağıttı ve milletvekillerini Malta’ya sürgüne gönderdi. Bu olay <b>millî iradeye darbe</b> vurmuş, ancak Mustafa Kemal’in haklılığını kanıtlayarak <b>Ankara’da TBMM’nin açılmasını hızlandırmıştır</b>[cite: 9].</li>
+<li><b>İstanbul’un Resmen İşgali (16 Mart 1920):</b> Misak-ı Millî’nin kabulüne tepki gösteren İtilaf Devletleri İstanbul’u resmen işgal etti, bazı milletvekillerini tutuklayıp Malta’ya sürgüne gönderdi; çalışamaz hâle gelen Mebusan Meclisi 11 Nisan 1920’de padişah tarafından kapatıldı. Bu olay <b>millî iradeye darbe</b> vurmuş, ancak Mustafa Kemal’in haklılığını kanıtlayarak <b>Ankara’da TBMM’nin açılmasını hızlandırmıştır</b>.</li>
 </ul>
 
 <h4>Büyük Millet Meclisi’nin Açılışı (23 Nisan 1920) ve 24 Nisan Önergesi</h4>
@@ -183,7 +182,7 @@ summary: `
 <tr><td>1. Hükûmet kurmak zorunludur.</td><td><b>Kurucu Meclis</b> niteliği taşır; yeni bir devletin temelleri atılmıştır.</td></tr>
 <tr><td>2. Geçici olarak bir hükûmet başkanı tanımak veya padişah vekili atamak doğru değildir.</td><td>Meclisin <b>sürekli ve bağımsız</b> olacağı, İstanbul’dan bağımsız hareket edeceği vurgulanmıştır.</td></tr>
 <tr><td>3. <b>TBMM’nin üstünde hiçbir güç yoktur.</b></td><td><b>İstanbul Hükûmeti ve Saltanat yok sayılmıştır</b>; <b>Millî Egemenlik</b> ilkesi kurumlaşmıştır.</td></tr>
-<tr><td>4. TBMM, <b>yasama ve yürütme</b> yetkilerini kendinde toplar (İstiklal Mahkemeleri ile <b>yargı</b> da eklendi).</td><td>Savaş ortamında <b>hızlı karar alıp uygulamak</b> için <b>Güçler Birliği</b> ilkesi benimsenmiştir (Demokratik değildir ama <b>olağanüstü meclis</b> şartlarının gereğidir)[cite: 9].</td></tr>
+<tr><td>4. TBMM, <b>yasama ve yürütme</b> yetkilerini kendinde toplar (İstiklal Mahkemeleri ile <b>yargı</b> da eklendi).</td><td>Savaş ortamında <b>hızlı karar alıp uygulamak</b> için <b>Güçler Birliği</b> ilkesi benimsenmiştir (Demokratik değildir ama <b>olağanüstü meclis</b> şartlarının gereğidir).</td></tr>
 <tr><td>5. Meclis içinden seçilen bir kurul hükûmet işlerine bakar; <b>Meclis Başkanı hükûmetin de başkanıdır</b>.</td><td><b>Meclis Hükûmeti Sistemi</b> benimsenmiştir.</td></tr>
 <tr><td>6. Padişah ve Halife, baskıdan kurtulduktan sonra meclisin düzenleyeceği kanun çerçevesinde yerini alır.</td><td><b>Birlik ve beraberliği korumak</b> (saltanat yanlılarının tepkisini çekmemek) amaçlanmış, aynı zamanda Padişah meclis iradesinin altına alınmıştır.</td></tr>
 </table>
@@ -191,427 +190,1870 @@ summary: `
 <h4>TBMM’ye Karşı Çıkan Ayaklanmalar ve Alınan Önlemler</h4>
 <ul>
 <li><b>Ayaklanmalar:</b> Doğrudan İstanbul Hükûmeti’nin çıkardığı (<b>Ahmet Anzavur, Kuvâ-yı İnzibatiye / Halifelik Ordusu</b>), İstanbul Hükûmeti ve İtilaf Devletleri’nin kışkırttığı (Bolu, Düzce, Hendek, Adapazarı, Konya, Yozgat, Milli Aşireti), <b>Eski Kuvâ-yı Milliyecilerin</b> düzenli orduya katılmak istemeyip çıkardığı (<b>Çerkez Ethem, Demirci Mehmet Efe</b>) ve Azınlık ayaklanmaları (Pontus Rum ve Ermeni).</li>
-<li><b>TBMM’nin Aldığı Önlemler (Yetki Eşleştirmesi Çok Sorulur!):</b>
-  <br>1. <b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b> çıkarıldı → TBMM’nin <b>YASAMA</b> yetkisini kullandığını gösterir[cite: 9].
-  <br>2. <b>İstiklal Mahkemeleri</b> kuruldu (Üyeleri milletvekillerinden seçildi) → TBMM’nin <b>YARGI</b> yetkisini kullandığını gösterir[cite: 9].
-  <br>3. İstanbul Şeyhülislamı Dürrizade’nin fetvasına karşı <b>Ankara Müftüsü Rıfat (Börekçi)</b> ve 153 müftüden Millî Mücadele’yi destekleyen <b>karşı fetva</b> alındı (Dinî önlem).
-  <br>4. Halkı doğru bilgilendirmek için <b>Anadolu Ajansı</b> (Halide Edip ve Yunus Nadi) kuruldu ve <b>Hakimiyet-i Milliye</b> gazetesi çıkarıldı (Basın-yayın önlemi).</li>
-<li><b>Sevr Barış Antlaşması (10 Ağustos 1920):</b> Paris’te değil, İtalya’nın <b>San Remo Konferansı</b>’nda taslağı hazırlandı. Osmanlı Saltanat Şûrası imzaladı. Osmanlı Mebusan Meclisi kapalı olduğu için <b>Kanun-i Esasi’ye göre meclis onayından geçmedi</b>; bu yüzden <b>hukuken geçersiz (“ölü doğmuş”)</b> bir antlaşmadır[cite: 9]. TBMM imzalayanları vatan haini ilan etti.</li>
+<li><b>Alınan Önlemler (Yetki Eşleştirmesi Çok Sorulur!):</b>
+  <br>1. <b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b> çıkarıldı → TBMM’nin <b>YASAMA</b> yetkisini kullandığını gösterir.
+  <br>2. <b>İstiklal Mahkemeleri</b> kuruldu (Üyeleri milletvekillerinden seçildi) → TBMM’nin <b>YARGI</b> yetkisini kullandığını gösterir.
+  <br>3. İstanbul Şeyhülislamı Dürrizade’nin fetvasına karşı <b>Ankara Müftüsü Rıfat (Börekçi)</b> ve Anadolu’daki müftülerden Millî Mücadele’yi destekleyen <b>karşı fetva</b> alındı (Dinî önlem; TBMM’nin açılışından önce, Nisan 1920).
+  <br>4. Halkı doğru bilgilendirmek için <b>Anadolu Ajansı</b> (6 Nisan 1920; Halide Edip ve Yunus Nadi) kuruldu, <b>Hakimiyet-i Milliye</b> gazetesi (10 Ocak 1920) çıkarıldı (Basın-yayın önlemi; ikisi de TBMM’den önce).</li>
+<li><b>Sevr Barış Antlaşması (10 Ağustos 1920):</b> Paris’te değil, İtalya’nın <b>San Remo Konferansı</b>’nda taslağı hazırlandı. Saltanat Şûrası onayladı, Osmanlı Hükûmeti’nin temsilcileri imzaladı. Osmanlı Mebusan Meclisi kapalı olduğu için <b>Kanun-i Esasi’ye göre meclis onayından geçmedi</b>; bu yüzden <b>hukuken geçersiz (“ölü doğmuş”)</b> bir antlaşmadır. TBMM, antlaşmayı imzalayanları ve Şûra’da onay verenleri vatan haini ilan etti.</li>
 </ul>
+
+<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
+<p>2018-2026 LGS İnkılap Tarihi testlerinde bu üniteden <b>23 soru</b> çıktı; her yıl en az 1, en fazla 4 soru (2020 ve 2023’te 4’er). Alt başlık sınıflandırması sorunun ölçtüğü ana olaya göre yapılmış bir yorumdur (*); birden fazla olaya dokunan sorular baskın olan başlığa yazıldı.</p>
+<div class="fig"><svg viewBox="0 0 560 312" width="560" role="img" aria-label="Millî Uyanış konusundan 2018-2026 LGS’de alt başlık ve yıllara göre soru sayıları ısı haritası" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="312" fill="#ffffff"/>
+<text x="280" y="18" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Alt başlık × yıl: kaç soru geldi? (2018-2026, toplam 23)*</text>
+<text x="197" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2018</text>
+<text x="234" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2019</text>
+<text x="271" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2020</text>
+<text x="308" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2021</text>
+<text x="345" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2022</text>
+<text x="382" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2023</text>
+<text x="419" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2024</text>
+<text x="456" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2025</text>
+<text x="493" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2026</text>
+<text x="527" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Top.</text>
+<text x="172" y="64" font-size="11" fill="#1e293b" text-anchor="end">Savaşa giriş, Almanya ittifakı</text>
+<rect x="180" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="48" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="234" y="64" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="254" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="291" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="402" y="48" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="419" y="64" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="439" y="48" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="48" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="64" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<text x="527" y="64" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">3</text>
+<text x="172" y="90" font-size="11" fill="#1e293b" text-anchor="end">I. Dünya Savaşı cepheleri</text>
+<rect x="180" y="74" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="74" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="271" y="90" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="291" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="308" y="90" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="328" y="74" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="382" y="90" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="402" y="74" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="74" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="456" y="90" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="476" y="74" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="527" y="90" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">4</text>
+<text x="172" y="116" font-size="11" fill="#1e293b" text-anchor="end">Çanakkale Cephesi</text>
+<rect x="180" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="291" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="100" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="345" y="116" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="365" y="100" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="382" y="116" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="402" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="100" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="456" y="116" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="476" y="100" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="527" y="116" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">3</text>
+<text x="172" y="142" font-size="11" fill="#1e293b" text-anchor="end">Mondros, Paris, işgaller</text>
+<rect x="180" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="126" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="271" y="142" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="291" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="402" y="126" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="419" y="142" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="439" y="126" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="126" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="142" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<text x="527" y="142" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">3</text>
+<text x="172" y="168" font-size="11" fill="#1e293b" text-anchor="end">İşgallere tepki, cemiyetler</text>
+<rect x="180" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="152" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="271" y="168" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="291" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="152" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="382" y="168" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="402" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="152" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="527" y="168" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">2</text>
+<text x="172" y="194" font-size="11" fill="#1e293b" text-anchor="end">Genelgeler ve kongreler</text>
+<rect x="180" y="178" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="178" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="234" y="194" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="254" y="178" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="291" y="178" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="308" y="194" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="328" y="178" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="178" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="382" y="194" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="402" y="178" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="178" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="456" y="194" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="476" y="178" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="493" y="194" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<text x="527" y="194" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">5</text>
+<text x="172" y="220" font-size="11" fill="#1e293b" text-anchor="end">TBMM’nin açılışı, ayaklanmalar</text>
+<rect x="180" y="204" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="197" y="220" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="217" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="204" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="271" y="220" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="291" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="204" width="34" height="24" rx="3" fill="#bfdbfe"/>
+<text x="345" y="220" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
+<rect x="365" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="402" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="204" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="527" y="220" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">3</text>
+<text x="172" y="246" font-size="11" fill="#1e293b" text-anchor="end">Misak-ı Millî, Sevr</text>
+<rect x="180" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="217" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="254" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="291" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="328" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="365" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="402" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="439" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<rect x="476" y="230" width="34" height="24" rx="3" fill="#f1f5f9"/>
+<text x="527" y="246" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">0</text>
+<line x1="10" y1="260" x2="550" y2="260" stroke="#94a3b8"/>
+<text x="172" y="278" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Yıl toplamı</text>
+<text x="197" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1</text>
+<text x="234" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+<text x="271" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
+<text x="308" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+<text x="345" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+<text x="382" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
+<text x="419" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+<text x="456" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">3</text>
+<text x="493" y="278" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">3</text>
+<text x="527" y="278" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">23</text>
+<text x="10" y="302" font-size="11" fill="#475569">Renk:</text>
+<rect x="52" y="291" width="16" height="14" rx="2" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="72" y="302" font-size="11" fill="#475569">0</text>
+<rect x="132" y="291" width="16" height="14" rx="2" fill="#bfdbfe" stroke="#94a3b8"/>
+<text x="152" y="302" font-size="11" fill="#475569">1 soru</text>
+<rect x="212" y="291" width="16" height="14" rx="2" fill="#60a5fa" stroke="#94a3b8"/>
+<text x="232" y="302" font-size="11" fill="#475569">2 soru</text>
+<text x="300" y="302" font-size="11" fill="#475569">I. Dünya Savaşı: 10 · Millî Uyanış: 13</text>
+</svg></div>
+<div class="tbl"><table>
+<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>
+<tr><td>2018</td><td>2</td><td>TBMM’nin açılışı, ayaklanmalar*</td><td>Metin (İlk TBMM’nin üyeleri ve fedakârlığı) → hangisi söylenemez</td></tr>
+<tr><td>2019</td><td>1</td><td>Genelgeler ve kongreler*</td><td>Kısa metin (Erzurum: bölgesel/ulusal) → hangisi kanıt gösterilebilir</td></tr>
+<tr><td>2019</td><td>6</td><td>Savaşa giriş, Almanya ittifakı*</td><td>Savaş başındaki uygulamalar (tarafsızlık, Boğazlar, kapitülasyonlar) → hangi amaç çıkarılamaz</td></tr>
+<tr><td>2020</td><td>4</td><td>İşgallere tepki, cemiyetler*</td><td>Metin (Müdafaa-i Hukuk cemiyetleri) → cemiyetlerin niteliği (bölgesel)</td></tr>
+<tr><td>2020</td><td>5</td><td>TBMM’nin açılışı, ayaklanmalar*</td><td>Metin (TBMM’ye karşı ayaklanmaların sonuçları) → I-IV yargı</td></tr>
+<tr><td>2020</td><td>6</td><td>Mondros, Paris, işgaller*</td><td>Mustafa Kemal’in sözleri (Mondros) → ulaşılamaz (“hukuken sona erdirdi”)</td></tr>
+<tr><td>2020</td><td>8</td><td>I. Dünya Savaşı cepheleri*</td><td>Metin (cepheler ve savaşılan devletler) → I-IV yargı</td></tr>
+<tr><td>2021</td><td>2</td><td>Genelgeler ve kongreler*</td><td>Tablo (Amasya Genelgesi kararları - gelişmeler) → hangi çıkarım yapılabilir</td></tr>
+<tr><td>2021</td><td>3</td><td>I. Dünya Savaşı cepheleri*</td><td>Zaman çizelgesi (Kut’ül-Amare kuşatması) → ulaşılamaz</td></tr>
+<tr><td>2022</td><td>2</td><td>TBMM’nin açılışı, ayaklanmalar*</td><td>Metin (TBMM’nin açılış hazırlıkları) → ulaşılamaz (güçler birliği)</td></tr>
+<tr><td>2022</td><td>3</td><td>Çanakkale Cephesi*</td><td>Metin (Çanakkale Zaferi’nin sonuçları) → uluslararası etki çıkarımı</td></tr>
+<tr><td>2023</td><td>4</td><td>I. Dünya Savaşı cepheleri*</td><td>Şema (taarruz/savunma/yardım cepheleri) → hangi sorunun cevabına ulaşılabilir</td></tr>
+<tr><td>2023</td><td>5</td><td>Çanakkale Cephesi*</td><td>Metin (Çanakkale’nin sonuçları) → I-IV yargı</td></tr>
+<tr><td>2023</td><td>6</td><td>İşgallere tepki, cemiyetler*</td><td>Alıntılar (İzmir’in işgaline karşı mitingler) → I-IV yargı</td></tr>
+<tr><td>2023</td><td>7</td><td>Genelgeler ve kongreler*</td><td>Metin (Rawlinson - Mustafa Kemal, Erzurum Kongresi) → ulaşılamaz</td></tr>
+<tr><td>2024</td><td>3</td><td>Mondros, Paris, işgaller*</td><td>Alıntı (Paris Barış Konferansı kararı) → kavramla ilişkilendirme (manda ve himaye)</td></tr>
+<tr><td>2024</td><td>4</td><td>Savaşa giriş, Almanya ittifakı*</td><td>Osmanlı’nın Almanya’ya yönelme nedenleri → hangisi neden değildir</td></tr>
+<tr><td>2025</td><td>4</td><td>Çanakkale Cephesi*</td><td>Kronolojik akış şeması (Çanakkale) → I-III yargı</td></tr>
+<tr><td>2025</td><td>6</td><td>Genelgeler ve kongreler*</td><td>Metin (Heyet-i Temsiliye’nin faaliyetleri) → çıkarılamaz (Başkomutanlık kronolojisi)</td></tr>
+<tr><td>2025</td><td>7</td><td>I. Dünya Savaşı cepheleri*</td><td>Metin (Mustafa Kemal’in Halep savunma hattı) → I-III yargı</td></tr>
+<tr><td>2026</td><td>2</td><td>Savaşa giriş, Almanya ittifakı*</td><td>Alıntı (Kâzım Karabekir: Almanya’ya yönelme) → çıkarım</td></tr>
+<tr><td>2026</td><td>3</td><td>Genelgeler ve kongreler*</td><td>Metin + gazete (Temsil Heyeti’nin Ankara’ya gelişi) → I-III yargı (TBMM kronoloji tuzağı)</td></tr>
+<tr><td>2026</td><td>4</td><td>Mondros, Paris, işgaller*</td><td>Metin (İstanbul’daki işgal uygulamaları) → ulaşılamaz</td></tr>
+</table></div>
+<div class="note"><b>Çıkmış analizi</b><ul>
+<li>Ünite her yıl soruldu ve 23 sorunun <b>10’u I. Dünya Savaşı</b>ndan (savaşa giriş 3, cepheler 4, Çanakkale 3) geldi. Tek başına en yoğun alt başlık <b>genelgeler ve kongreler</b> (Amasya, Erzurum, Sivas, Temsil Heyeti: 5 soru).</li>
+<li>Baskın tip <b>metin/alıntı okuma</b>: kısa bir metin, belge ya da Mustafa Kemal / Kâzım Karabekir alıntısı verilip “hangisine ulaşılamaz / söylenemez” ya da I-II-III(-IV) yargı soruluyor. Tablo, şema ve zaman çizelgesi 23 sorunun yalnızca 4’ünde var.</li>
+<li>En sık tuzak <b>kronoloji</b>: o tarihte henüz olmayan bir kurum ya da yetki (TBMM 1919’da yok, Başkomutanlık 1921), “fiilen / hukuken” farkı (Mondros) ve metinde geçmeyen genellemeler (“İngiltere savaştan çekildi”).</li>
+<li>Misak-ı Millî ve Sevr şu ana kadar ayrı soru olarak gelmedi; İstanbul’un resmen işgali ve Amasya Görüşmeleri de sorulmadı. Kazanım kapsamında oldukları için hazırlıkta atlanmamalı.</li>
+</ul></div>
 `,
 qs: [
-{
-  q: `<p>Aşağıdaki şemada I. Dünya Savaşı öncesinde Osmanlı Devleti ile Almanya’nın yakınlaşma nedenleri karşılıklı olarak gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Osmanlı ve Almanya'nın I. Dünya Savaşı amaçları şeması">
-<rect x="10" y="12" width="245" height="142" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="132" y="32" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">OSMANLI’NIN AMAÇLARI</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="22" y="54">• Kaybettiği toprakları geri almak</text>
-<text x="22" y="74">• Siyasi yalnızlıktan kurtulmak</text>
-<text x="22" y="94">• Kapitülasyonları ve dış borçları</text>
-<text x="22" y="108">  kaldırarak ekonomik bağımsızlık</text>
-<text x="22" y="128">• İttihatçıların Alman hayranlığı</text>
-</g>
-<rect x="285" y="12" width="245" height="142" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="407" y="32" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">ALMANYA’NIN AMAÇLARI</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="297" y="54">• Yeni cepheler açarak kendi</text>
-<text x="297" y="68">  üzerindeki savaş yükünü azaltmak</text>
-<text x="297" y="88">• Halifelik gücüyle İngiliz sömürgelerini</text>
-<text x="297" y="102">  ayaklandırmak (Dinî güç)</text>
-<text x="297" y="122">• Boğazları kapatıp Rusya’ya yardımı</text>
-<text x="297" y="136">  kesmek ve petrollere ulaşmak</text>
-</g>
+{ lv: "kolay", q: `<p>Bir savaşın çıkmasında, uzun yıllar içinde biriken sorunlar <b>asıl nedenleri</b> oluşturur. Savaşı fiilen başlatan anlık olay ise <b>görünürdeki neden</b> olarak adlandırılır. I. Dünya Savaşı ile ilgili bazı gelişmeler aşağıdaki tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Gelişme</th><th>Açıklama</th></tr>
+<tr><td>Sanayi İnkılabı</td><td>Avrupa devletleri hammadde ve pazar bulmak için sömürge yarışına girdi.</td></tr>
+<tr><td>Milliyetçilik akımı</td><td>Çok uluslu devletlerde bağımsızlık isteyen hareketler güçlendi.</td></tr>
+<tr><td>Bloklaşma</td><td>Avrupa devletleri İtilaf ve İttifak adıyla iki bloğa ayrıldı.</td></tr>
+<tr><td>Saraybosna Suikastı</td><td>28 Haziran 1914’te Avusturya-Macaristan veliahtı, Saraybosna’da bir Sırp milliyetçisi tarafından öldürüldü.</td></tr>
+</table>
+<p>Buna göre I. Dünya Savaşı’nın <b>görünürdeki nedeni</b> aşağıdakilerden hangisidir?</p>`,
+  c: ["Sömürge yarışının artması", "Milliyetçilik akımının yayılması", "Saraybosna Suikastı’nın gerçekleşmesi", "Avrupa’da blokların oluşması"],
+  a: "C",
+  s: `<p>Tanıma göre görünürdeki neden, savaşı başlatan <b>anlık olaydır</b>. Tablodaki gelişmelerden yalnızca Saraybosna Suikastı belirli bir günde yaşanmış tek bir olaydır ve suikasttan sonra Avusturya-Macaristan Sırbistan’a savaş açmıştır (C ✓).</p><p>Sömürge yarışı (A), milliyetçilik (B) ve bloklaşma (D) uzun yıllar içinde oluşmuş sorunlardır; bunlar savaşın <b>asıl nedenleridir</b>. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki şemada I. Dünya Savaşı öncesinde Osmanlı Devleti ile Almanya’yı birbirine yakınlaştıran amaçlar gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 178" width="560" role="img" aria-label="Osmanlı Devleti ve Almanya’nın yakınlaşma nedenleri şeması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="178" fill="#ffffff"/>
+<rect x="6" y="6" width="269" height="164" rx="7" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="140.5" y="26" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">OSMANLI’NIN AMAÇLARI</text>
+<text x="16" y="47" font-size="11" fill="#1e293b">• Kaybettiği toprakları geri almak</text>
+<text x="16" y="68" font-size="11" fill="#1e293b">• Siyasi yalnızlıktan kurtulmak</text>
+<text x="16" y="89" font-size="11" fill="#1e293b">• Kapitülasyonlardan ve dış borçlardan</text>
+<text x="16" y="104" font-size="11" fill="#1e293b">   kurtularak ekonomik bağımsızlık kazanmak</text>
+<text x="16" y="125" font-size="11" fill="#1e293b">• İttihat ve Terakki yöneticilerinin</text>
+<text x="16" y="140" font-size="11" fill="#1e293b">   Almanya’ya duyduğu güven</text>
+<rect x="285" y="6" width="269" height="164" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="419.5" y="26" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">ALMANYA’NIN AMAÇLARI</text>
+<text x="295" y="47" font-size="11" fill="#1e293b">• Yeni cepheler açtırarak kendi üzerindeki</text>
+<text x="295" y="62" font-size="11" fill="#1e293b">   savaş yükünü azaltmak</text>
+<text x="295" y="83" font-size="11" fill="#1e293b">• Halifeliğin dinî gücüyle İngiliz</text>
+<text x="295" y="98" font-size="11" fill="#1e293b">   sömürgelerindeki Müslümanları</text>
+<text x="295" y="113" font-size="11" fill="#1e293b">   ayaklandırmak</text>
+<text x="295" y="134" font-size="11" fill="#1e293b">• Boğazları kapatarak Rusya’ya yardımı</text>
+<text x="295" y="149" font-size="11" fill="#1e293b">   kesmek, Orta Doğu petrollerine ulaşmak</text>
 </svg></div>
 <p>Şemadaki bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: [
-    `Almanya, Osmanlı Devleti’nin gelişmiş sanayisinden ve modern silah teknolojisinden yararlanmak istemiştir.`,
-    `Osmanlı Devleti, savaş öncesinde kendisini ekonomik açıdan kısıtlayan ayrıcalıklardan kurtulmayı hedeflemiştir.`,
-    `Almanya, Osmanlı Devleti’nin hem jeopolitik konumundan hem de İslam dünyası üzerindeki dinî nüfuzundan faydalanmayı amaçlamıştır.`,
-    `İki devletin ittifak kurmasında karşılıklı siyasi ve askerî çıkarlar etkili olmuştur.`
-  ],
+  c: ["Almanya, Osmanlı Devleti’nin gelişmiş sanayisinden ve modern silah teknolojisinden yararlanmak istemiştir.", "Osmanlı Devleti, kendisini ekonomik açıdan kısıtlayan ayrıcalıklardan kurtulmayı hedeflemiştir.", "Almanya, Osmanlı Devleti’nin hem jeopolitik konumundan hem de İslam dünyası üzerindeki dinî etkisinden faydalanmayı amaçlamıştır.", "İki devletin yakınlaşmasında karşılıklı siyasi ve askerî çıkarlar etkili olmuştur."],
   a: "A",
-  s: `<p>Osmanlı Devleti Sanayi İnkılabı’nı gerçekleştirememiş, ekonomik ve teknolojik açıdan zayıf bir durumdaydı. Almanya, Osmanlı’nın teknolojik veya ekonomik gücünden değil; <b>jeopolitik konumundan</b> (Boğazlar, yeni cepheler) ve <b>Halifelik makamının dinî gücünden</b> yararlanmak istemiştir. Dolayısıyla <b>A</b> seçeneğine ulaşılamaz.</p>`
-},
-{
-  q: `<p>Aşağıdaki tabloda Osmanlı Devleti’nin I. Dünya Savaşı’nda mücadele ettiği bazı cepheler ve bu cephelerle ilgili önemli gelişmeler verilmiştir.</p>
+  s: `<p>Şemada Osmanlı’nın kapitülasyonlardan kurtulmak istediği yazıyor (B ✓). Almanya’nın Boğazlar ve yeni cepheler gibi konuma bağlı hedefleri ile halifeliğin dinî gücünü kullanma isteği de var (C ✓). İki taraf da kendi çıkarını gözetmiş (D ✓).</p><p>Şemada Osmanlı’nın sanayisinden ya da silah teknolojisinden hiç söz edilmez. Üstelik Osmanlı Devleti Sanayi İnkılabı’nı gerçekleştirememiş, teknolojide Avrupa’nın gerisinde kalmıştı. Bu yüzden A’ya ulaşılamaz. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">I. Dünya Savaşı başladığında İngiliz donanmasından kaçan Almanya’ya ait <b>Goeben</b> ve <b>Breslau</b> adlı iki savaş gemisi Çanakkale Boğazı’na sığındı. Osmanlı Devleti bu gemileri satın aldığını açıklayarak adlarını <b>Yavuz</b> ve <b>Midilli</b> olarak değiştirdi. Alman Amiral Souchon komutasındaki bu gemiler, Ekim 1914’te Karadeniz’e açılarak Rusya’nın limanlarını bombaladı. Böylece Osmanlı Devleti savaşa fiilen girmiş oldu.</div>
+<p>Bu bilgilere göre Osmanlı Devleti’nin savaşa girişiyle ilgili aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Osmanlı Devleti, Almanya ile aynı safta savaşa dâhil olmuştur.", "Osmanlı Devleti, İtilaf Devletleri’nin saldırısına uğradığı için savaşa girmiştir.", "Savaşa giren gemiler Osmanlı tersanelerinde üretilmiştir.", "Osmanlı Devleti’nin savaştığı ilk cephe Kanal Cephesi olmuştur."],
+  a: "A",
+  s: `<p>Alman gemileri Osmanlı bayrağı altında, Alman bir amiralin komutasında Rusya’ya saldırmıştır. Rusya İtilaf bloğundadır; yani Osmanlı Devleti Almanya’nın yanında (İttifak bloğunda) savaşa girmiştir (A ✓).</p><p>Metinde saldıran taraf Osmanlı donanmasıdır (B ✗). Gemiler Almanya’dan satın alınmıştır (C ✗). İlk çatışma Karadeniz’de Rus limanlarına karşı olmuştur; Kanal Cephesi’nden söz edilmez (D ✗). Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki tabloda Osmanlı Devleti’nin I. Dünya Savaşı’nda mücadele ettiği bazı cepheler ve bu cephelerle ilgili önemli gelişmeler verilmiştir.</p>
 <table class="rt">
 <tr><th>Cephe Adı</th><th>Cephe Türü</th><th>Önemli Gelişme ve Sonuçlar</th></tr>
-<tr><td><b>Kafkas</b></td><td>Taarruz</td><td>Bakü petrollerine ulaşmak ve Orta Asya Türkleriyle birleşmek istendi. Sarıkamış’ta ağır kayıplar verildi. Mustafa Kemal Muş ve Bitlis’i geri aldı. Brest-Litowsk Antlaşması ile Kars, Ardahan ve Batum geri alındı.</td></tr>
+<tr><td><b>Kafkas</b></td><td>Taarruz</td><td>Bakü petrollerine ulaşmak ve Orta Asya Türkleriyle birleşmek istendi. Sarıkamış’ta ağır kayıplar verildi. Mustafa Kemal Muş ve Bitlis’i geri aldı. Brest-Litovsk Antlaşması ile Kars, Ardahan ve Batum geri alındı.</td></tr>
 <tr><td><b>Kanal</b></td><td>Taarruz</td><td>İngiltere’nin sömürgeleriyle bağlantısını kesmek ve Mısır’ı geri almak için açıldı; başarılı olunamadı.</td></tr>
 <tr><td><b>Çanakkale</b></td><td>Savunma</td><td>İtilaf Devletleri İstanbul’u alıp Rusya’ya yardım götürmek istedi. Türk ordusunun zaferiyle savaş uzadı, Rusya’da ihtilal çıktı, Bulgaristan İttifak bloğuna katıldı.</td></tr>
-<tr><td><b>Hicaz–Yemen</b></td><td>Savunma</td><td>Kutsal mekanları korumak için savaşıldı. Bazı Arap kabilelerinin İngilizlerle iş birliği yapması sonucu kaybedildi.</td></tr>
+<tr><td><b>Hicaz-Yemen</b></td><td>Savunma</td><td>Kutsal mekânları korumak için savaşıldı. Bazı Arap kabilelerinin İngilizlerle iş birliği yapması sonucu kaybedildi.</td></tr>
 </table>
 <p>Tablodaki bilgilere göre Osmanlı Devleti’nin savaştığı cephelerle ilgili,</p>
-<p>I. Kafkas Cephesi’nin açılmasında <b>Turancılık (Pantürkizm)</b> fikri etkili olurken, Hicaz–Yemen Cephesi’ndeki gelişmeler <b>Ümmetçilik (İslamcılık)</b> fikrinin zayıfladığını göstermiştir.<br>
-II. Kafkas Cephesi’nde askerî kayıplar yaşanmasına rağmen diplomatik antlaşmayla toprak kazanımı elde edilmiştir.<br>
-III. Çanakkale Cephesi’nde kazanılan zafer, savaşın seyrini ve İttifak bloğunun sınırlarını etkilemiştir.<br>
-IV. Mustafa Kemal tabloda verilen cephelerin tamamında bizzat komutan olarak görev yapmıştır.</p>
+<p>I. Kafkas Cephesi’nin açılmasında <b>Turancılık</b> fikri etkili olurken, Hicaz-Yemen Cephesi’ndeki gelişmeler <b>İslamcılık (Ümmetçilik)</b> fikrinin zayıfladığını göstermiştir.<br>
+II. Kafkas Cephesi’nde askerî kayıplar yaşanmasına rağmen bir antlaşmayla toprak kazanımı elde edilmiştir.<br>
+III. Çanakkale Cephesi’nde kazanılan zafer, savaşın seyrini ve İttifak bloğunun üyelerini etkilemiştir.<br>
+IV. Mustafa Kemal, tabloda verilen cephelerin tamamında komutan olarak görev yapmıştır.</p>
 <p>yargılarından hangilerine ulaşılabilir?</p>`,
-  c: [`I ve II`, `I, II ve III`, `II, III ve IV`, `I, II, III ve IV`],
+  c: ["I ve II", "I, II ve III", "II, III ve IV", "I, II, III ve IV"],
   a: "B",
-  s: `<p>Orta Asya Türkleriyle birleşme ideali <b>Turancılık</b>, Arap liderlerin İngilizlerle iş birliği yapması ise <b>Ümmetçilik</b> fikrinin çöktüğünü gösterir (<b>I doğru</b>). Kafkas Cephesi’nde Brest-Litowsk ile Kars, Ardahan, Batum geri alınmıştır (<b>II doğru</b>). Çanakkale Zaferi savaşı uzatmış ve Bulgaristan’ın savaşa girmesiyle Almanya–Osmanlı kara bağlantısını sağlamıştır (<b>III doğru</b>).</p>
-<p>Ancak Mustafa Kemal I. Dünya Savaşı’nda yalnızca <b>Çanakkale, Kafkas ve Suriye–Filistin (ÇiKaS)</b> cephelerinde görev yapmıştır; Kanal ve Hicaz–Yemen’de görev almamıştır (<b>IV yanlış</b>). Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>30 Ekim 1918’de imzalanan Mondros Ateşkes Antlaşması’nın bazı maddeleri aşağıdaki şemada gruplandırılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 150" width="520" role="img" aria-label="Mondros Ateşkes Antlaşması maddeleri analiz kartları">
-<rect x="10" y="10" width="165" height="130" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="92" y="30" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">7. Madde</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="20" y="50">“İtilaf Devletleri güvenliklerini</text>
-<text x="20" y="64">tehdit eden bir durum olursa</text>
-<text x="20" y="78">herhangi bir stratejik noktayı</text>
-<text x="20" y="92">işgal edebilecektir.”</text>
-<text x="20" y="118" font-weight="bold" fill="#dc2626">→ Hukuki gerekçe / kılıf</text>
-</g>
-<rect x="187" y="10" width="165" height="130" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="270" y="30" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">24. Madde</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="197" y="50">“Vilâyât-ı Sitte’de (Altı Doğu</text>
-<text x="197" y="64">ilinde) karışıklık çıkarsa</text>
-<text x="197" y="78">İtilaf Devletleri bu illeri</text>
-<text x="197" y="92">işgal edebilecektir.”</text>
-<text x="197" y="118" font-weight="bold" fill="#b45309">→ Ermeni devleti planı</text>
-</g>
-<rect x="365" y="10" width="165" height="130" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="447" y="30" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Askerî ve İletişim</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="375" y="50">“Osmanlı ordusu terhis</text>
-<text x="375" y="64">edilecek; telsiz, telgraf ve</text>
-<text x="375" y="78">demir yolları İtilaf denetimine</text>
-<text x="375" y="92">bırakılacaktır.”</text>
-<text x="375" y="118" font-weight="bold" fill="#1e40af">→ Savunmasız bırakma</text>
-</g>
-</svg></div>
-<p>Mondros Ateşkes Antlaşması’nın bu hükümleri dikkate alındığında aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: [
-    `7. madde ile Osmanlı topraklarının tamamı işgale açık hâle getirilmiş ve yapılacak işgallere hukuki dayanak oluşturulmuştur.`,
-    `24. madde, Wilson İlkeleri’ndeki “Türklerin çoğunlukta olduğu bölgelere kesin egemenlik tanınacaktır.” ilkesini korumak amacıyla konulmuştur.`,
-    `Ordunun dağıtılması ve iletişim ağlarına el konulmasıyla Türk halkının işgallere karşı örgütlenip direnmesi engellenmek istenmiştir.`,
-    `Antlaşma, bir ateşkes belgesinden çok Osmanlı Devleti’ni fiilen sona erdiren ağır şartlar içermektedir.`
-  ],
+  s: `<p>Orta Asya Türkleriyle birleşme hedefi <b>Turancılık</b>, Arap kabilelerinin İngilizlerle iş birliği yapması ise <b>İslamcılık</b> fikrinin zayıfladığını gösterir (I ✓). Sarıkamış’taki kayıplara rağmen Brest-Litovsk Antlaşması ile Kars, Ardahan ve Batum geri alınmıştır (II ✓). Çanakkale Zaferi savaşı uzatmış, Rusya’yı etkilemiş ve Bulgaristan’ın İttifak bloğuna katılmasını sağlamıştır (III ✓).</p><p>Tabloda Mustafa Kemal yalnızca Kafkas Cephesi’nde (Muş ve Bitlis) geçer. Gerçekte de Kanal ve Hicaz-Yemen cephelerinde görev almamıştır; Çanakkale, Kafkas ve Suriye-Filistin cephelerinde savaşmıştır (IV ✗). A, doğru olan III’ü dışarıda bırakır; C ve D ise yanlış olan IV’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Enver Paşa komutasındaki Osmanlı ordusu, Aralık 1914’te Kafkas Cephesi’nde Sarıkamış’taki Rus kuvvetlerini kuşatmak için harekâta başladı. Harekât, dağlık ve karla kaplı bir bölgede yapıldı. Askerlerin kışlık giyecekleri yetersizdi ve ikmal yolları çok uzundu. Ağır kış koşulları yüzünden on binlerce asker çatışmaya girmeden donarak şehit oldu.</div>
+<p>Bu metne göre Sarıkamış Harekâtı’nın başarısız olmasında aşağıdakilerden hangisinin etkili olduğu <b>söylenebilir</b>?</p>`,
+  c: ["Osmanlı Devleti’nin Rusya ile gizli bir anlaşma yapması", "İngiliz donanmasının Karadeniz’i kapatması", "Arap kabilelerinin Osmanlı’ya karşı ayaklanması", "Coğrafi koşulların ve kış şartlarının dikkate alınmaması"],
+  a: "D",
+  s: `<p>Metinde harekâtın karlı ve dağlık bir bölgede, yetersiz kışlık giyecekle yapıldığı ve askerlerin donarak şehit olduğu anlatılır. Yani başarısızlığın temel nedeni coğrafya ve iklim koşullarının hesaba katılmamasıdır (D ✓).</p><p>Rusya ile gizli anlaşma (A), İngiliz donanması (B) ve Arap isyanı (C) metinde geçmez; Arap isyanı ayrıca Kafkas Cephesi’yle değil, Hicaz-Yemen ve Suriye-Filistin cepheleriyle ilgilidir. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<div class="box"><b>İtilaf Devletleri’nin Çanakkale Cephesi’ni açma amaçları</b><br>
+• Boğazları ele geçirerek İstanbul’u almak<br>
+• Osmanlı Devleti’ni kısa sürede savaş dışı bırakmak<br>
+• Müttefikleri Rusya’ya Boğazlar yoluyla silah ve erzak yardımı ulaştırmak<br>
+• Savaşı kısa sürede bitirmek</div>
+<p>Buna göre aşağıdakilerden hangisi İtilaf Devletleri’nin Çanakkale Cephesi’ni açma amaçları arasında <b>gösterilemez</b>?</p>`,
+  c: ["İstanbul’u ele geçirmek", "Rusya’ya yardım ulaştırmak", "Osmanlı Devleti’ni savaştan çekilmeye zorlamak", "Kafkasya ve Orta Asya’daki Türklerle birleşmek"],
+  a: "D",
+  s: `<p>İstanbul’u almak (A), Rusya’ya yardım götürmek (B) ve Osmanlı’yı savaş dışı bırakmak (C) kutuda açıkça yer alan amaçlardır.</p><p>Kafkasya ve Orta Asya Türkleriyle birleşmek İtilaf Devletleri’nin değil, Osmanlı Devleti’nin Kafkas Cephesi’ni açma amaçlarından biridir (Turancılık). Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Çanakkale Cephesi’nde yaşanan bazı gelişmeler aşağıda karışık olarak verilmiştir.</p>
+<div class="box">I. İtilaf kuvvetleri Arıburnu ve Seddülbahir’e asker çıkardı.<br>
+II. İtilaf donanması Boğaz’ı zorla geçmeye çalıştı ancak 18 Mart 1915’te ağır kayıplar vererek geri çekildi.<br>
+III. İtilaf kuvvetleri Gelibolu Yarımadası’nı tamamen boşaltarak bölgeden çekildi.<br>
+IV. Anafartalar ve Conkbayırı’nda İngiliz taarruzları durduruldu.</div>
+<p>Bu gelişmelerin <b>oluş sırası</b> aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["I - II - III - IV", "II - I - IV - III", "II - IV - I - III", "I - II - IV - III"],
   a: "B",
-  s: `<p>Mondros’un 24. maddesi Wilson İlkeleri’ni korumak için değil, tam tersine Wilson İlkeleri’ne aykırı olarak Doğu Anadolu’da (Erzurum, Van, Harput, Diyarbakır, Bitlis, Sivas) bir <b>Ermeni devleti kurulmasına zemin hazırlamak</b> amacıyla konulmuştur[cite: 9]. Dolayısıyla <b>B</b> seçeneği söylenemez.</p>`
-},
-{
-  q: `<p>15 Mayıs 1919’da Yunan ordusunun İzmir’i işgal etmesi üzerine bölgede yaşanan olayları incelemek üzere görevlendirilen ABD’li <b>Amiral Bristol</b>’ün hazırladığı raporda yer alan maddeler aşağıda verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="Amiral Bristol Raporu maddeleri">
-<rect x="20" y="10" width="480" height="120" rx="8" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-<rect x="20" y="10" width="480" height="28" rx="6" fill="#334155"/>
-<text x="260" y="28" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">AMİRAL BRİSTOL RAPORU (EKİM 1919)</text>
-<g font-size="10.5" fill="#1e293b">
-<text x="35" y="56">1. İzmir ve çevresinde Hristiyan halkın katledildiği yönündeki haberler tamamen asılsızdır.</text>
-<text x="35" y="78">2. Bölgede nüfus çoğunluğu Rumlarda değil, açık ara Türklerdedir.</text>
-<text x="35" y="100">3. Bölgedeki katliam ve karışıklıklardan Yunan askerleri ve Rum çeteleri sorumludur.</text>
-<text x="35" y="120" font-weight="bold" fill="#dc2626">4. Yunan ordusu bölgeden derhal çekilmeli, yerine İtilaf kuvvetleri gelmelidir.</text>
-</g>
-</svg></div>
-<p>Amiral Bristol Raporu’nun bu maddelerine dayanarak aşağıdaki yargılardan hangisine <b>ulaşılamaz</b>?</p>`,
-  c: [
-    `Yunanların Paris Barış Konferansı’na sunduğu sahte nüfus ve katliam iddialarının gerçeği yansıtmadığı kanıtlanmıştır.`,
-    `Türk milletinin Millî Mücadele’deki haklılığı ilk kez uluslararası bir komisyon raporuyla dünya kamuoyuna duyurulmuştur.`,
-    `Raporun yayımlanmasıyla birlikte İtilaf Devletleri İzmir’in işgaline son vererek Yunan ordusunu Anadolu’dan geri çekmiştir.`,
-    `Raporun 4. maddesi, ABD’nin bölgede Yunan işgaline karşı çıkarken İtilaf Devletleri’nin varlığına tamamen karşı olmadığını göstermektedir.`
-  ],
+  s: `<p>Önce İtilaf donanması Boğaz’ı denizden geçmeye çalışmış ve 18 Mart 1915’te yenilmiştir (II). Bunun üzerine 25 Nisan 1915’te Arıburnu ve Seddülbahir’e asker çıkarılmış, kara savaşları başlamıştır (I). Ağustos 1915’te Anafartalar ve Conkbayırı’nda İngiliz taarruzları durdurulmuştur (IV). Başarı kazanamayan İtilaf kuvvetleri Aralık 1915 - Ocak 1916’da yarımadadan çekilmiştir (III). Doğru sıra II - I - IV - III’tür (B ✓).</p><p>A ve D kara çıkarmasını deniz savaşından önceye koyar; C ise Anafartalar’ı kara çıkarmasından önceye koyar. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>ABD Başkanı Wilson’ın Ocak 1918’de yayımladığı ilkelerden bazıları aşağıda verilmiştir.</p>
+<div class="box">I. Devletler arasında gizli antlaşmalar yapılmayacaktır.<br>
+II. Devletler silahlanmayı azaltacaktır.<br>
+III. Osmanlı Devleti’nin Türk olan bölgelerine kesin egemenlik tanınacaktır.<br>
+IV. Boğazlar, uluslararası güvenceyle bütün devletlerin gemilerine açık olacaktır.</div>
+<p>Mondros Ateşkes Antlaşması’ndan sonra nüfusunun çoğunluğu Türk olan İzmir’in Yunanistan’a işgal ettirilmesi, Wilson İlkeleri’nin hangisiyle <b>doğrudan çelişir</b>?</p>`,
+  c: ["I", "II", "III", "IV"],
   a: "C",
-  s: `<p>Amiral Bristol Raporu, Türklerin Millî Mücadele’deki haklılığını ve Yunan işgalinin haksızlığını dünyaya kanıtlayan <b>ilk uluslararası belgedir</b> (A, B ve D doğrudur).</p>
-<p>Ancak İtilaf Devletleri bu raporu dikkate almamış ve Yunan ordusunu İzmir’den geri çekmemiştir; Yunan ordusu Anadolu’dan ancak Büyük Taarruz zaferiyle atılabilmiştir (<b>C ulaşılamaz</b>).</p>`
-},
-{
-  q: `<p>Mondros Ateşkes Antlaşması sonrasında Anadolu’da kurulan cemiyetlerin sınıflandırma şeması aşağıda verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Cemiyetler sınıflandırma şeması">
-<rect x="10" y="10" width="165" height="145" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="92" y="28" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Azınlık Cemiyetleri</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="20" y="48">• Mavri Mira (Rum)</text>
-<text x="20" y="64">• Etnik-i Eterya (Rum)</text>
-<text x="20" y="80">• Pontus Rum (Karadeniz)</text>
-<text x="20" y="96">• Taşnak ve Hınçak (Ermeni)</text>
-<text x="20" y="122" font-weight="bold" fill="#dc2626">Amaç: Osmanlı topraklarını</text>
-<text x="20" y="136" font-weight="bold" fill="#dc2626">parçalayıp devlet kurmak</text>
-</g>
-<rect x="187" y="10" width="165" height="145" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="270" y="28" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">Millî Varlığa Düşman</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="197" y="48">• İngiliz Muhipleri Cemiyeti</text>
-<text x="197" y="64">• Wilson Prensipleri Cem.</text>
-<text x="197" y="80">• Sulh ve Selamet-i Osm.</text>
-<text x="197" y="96">• Teali İslam / Kürt Teali</text>
-<text x="197" y="122" font-weight="bold" fill="#b45309">Amaç: Manda ve himaye</text>
-<text x="197" y="136" font-weight="bold" fill="#b45309">veya Padişaha bağlılık</text>
-</g>
-<rect x="365" y="10" width="165" height="145" rx="6" fill="#dcfce7" stroke="#16a34a"/>
-<text x="447" y="28" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">Millî (Yararlı) Cemiyetler</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="375" y="48">• Trakya-Paşaeli M.H.C.</text>
-<text x="375" y="64">• İzmir Redd-i İlhak Cem.</text>
-<text x="375" y="80">• Doğu Anadolu M.H.C.</text>
-<text x="375" y="96">• Kilikyalılar / Millî Kongre</text>
-<text x="375" y="122" font-weight="bold" fill="#166534">Amaç: Bölgesel kurtuluş ve</text>
-<text x="375" y="136" font-weight="bold" fill="#166534">tam bağımsızlık</text>
-</g>
+  s: `<p>III. ilke, Türklerin çoğunlukta olduğu bölgelerde Türk egemenliğinin korunacağını söyler. Nüfusunun çoğunluğu Türk olan İzmir’in Yunanistan’a işgal ettirilmesi bu ilkeyle doğrudan çelişir (C ✓).</p><p>Gizli antlaşmalar (I), silahsızlanma (II) ve Boğazlardan serbest geçiş (IV), İzmir’in Yunanistan’a verilmesiyle doğrudan ilgili değildir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>30 Ekim 1918’de imzalanan Mondros Ateşkes Antlaşması’nın bazı maddeleri ve bunların yorumları aşağıdaki şemada verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 172" width="560" role="img" aria-label="Mondros Ateşkes Antlaşması’nın bazı maddeleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="172" fill="#ffffff"/>
+<rect x="6" y="6" width="176" height="158" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="94" y="26" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">7. Madde</text>
+<text x="16" y="47" font-size="11" fill="#1e293b">“İtilaf Devletleri,</text>
+<text x="16" y="62" font-size="11" fill="#1e293b">güvenliklerini tehdit eden</text>
+<text x="16" y="77" font-size="11" fill="#1e293b">bir durum ortaya çıkarsa</text>
+<text x="16" y="92" font-size="11" fill="#1e293b">herhangi bir stratejik</text>
+<text x="16" y="107" font-size="11" fill="#1e293b">noktayı işgal edebilecektir.”</text>
+<text x="16" y="128" font-size="11" font-weight="bold" fill="#dc2626">→ İşgallere hukuki</text>
+<text x="16" y="143" font-size="11" font-weight="bold" fill="#dc2626">dayanak</text>
+<rect x="192" y="6" width="176" height="158" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="26" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">24. Madde</text>
+<text x="202" y="47" font-size="11" fill="#1e293b">“Vilâyât-ı Sitte’de (altı doğu</text>
+<text x="202" y="62" font-size="11" fill="#1e293b">ilinde) karışıklık çıkarsa</text>
+<text x="202" y="77" font-size="11" fill="#1e293b">İtilaf Devletleri bu illerin</text>
+<text x="202" y="92" font-size="11" fill="#1e293b">herhangi bir bölümünü işgal</text>
+<text x="202" y="107" font-size="11" fill="#1e293b">edebilecektir.”</text>
+<text x="202" y="128" font-size="11" font-weight="bold" fill="#b45309">→ Doğuda Ermeni devleti</text>
+<text x="202" y="143" font-size="11" font-weight="bold" fill="#b45309">planı</text>
+<rect x="378" y="6" width="176" height="158" rx="7" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="466" y="26" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Askerî ve İletişim</text>
+<text x="388" y="47" font-size="11" fill="#1e293b">“Osmanlı ordusu terhis</text>
+<text x="388" y="62" font-size="11" fill="#1e293b">edilecek; telsiz, telgraf ve</text>
+<text x="388" y="77" font-size="11" fill="#1e293b">demir yolları İtilaf</text>
+<text x="388" y="92" font-size="11" fill="#1e293b">Devletleri’nin denetimine</text>
+<text x="388" y="107" font-size="11" fill="#1e293b">bırakılacaktır.”</text>
+<text x="388" y="128" font-size="11" font-weight="bold" fill="#2563eb">→ Savunmasız bırakma</text>
 </svg></div>
-<p>Şemadaki cemiyetlerin kuruluş amaçları ve faaliyetleri dikkate alındığında aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Kilikyalılar Cemiyeti, Çukurova (Adana) bölgesinde bir Ermeni devleti kurmak amacıyla azınlıklar tarafından kurulmuştur.`,
-    `Wilson Prensipleri ve İngiliz Muhipleri cemiyetleri, tam bağımsızlık ilkesini savundukları için Millî Mücadele’ye destek vermiştir.`,
-    `Millî Kongre Cemiyeti diğer yararlı cemiyetlerden farklı olarak ulusal çapta basın-yayın yoluyla mücadele etmiş; diğer yararlı cemiyetler ise başlangıçta kendi bölgelerini savunmak için kurulmuştur.`,
-    `Yararlı cemiyetlerin tamamı Erzurum Kongresi’nde “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adıyla birleştirilmiştir.`
-  ],
+<p>Bu maddeler dikkate alındığında aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["7. madde ile Osmanlı topraklarının tamamı işgale açık hâle getirilmiş ve yapılacak işgallere hukuki dayanak oluşturulmuştur.", "24. madde, Wilson İlkeleri’ndeki “Osmanlı Devleti’nin Türk olan bölgelerine kesin egemenlik tanınacaktır.” ilkesini korumak amacıyla konulmuştur.", "Ordunun terhis edilmesi ve iletişim ağlarına el konulmasıyla Türk halkının işgallere karşı örgütlenip direnmesi zorlaştırılmak istenmiştir.", "Antlaşma, bir ateşkes belgesinden çok Osmanlı Devleti’ni fiilen sona erdiren ağır şartlar içermektedir."],
+  a: "B",
+  s: `<p>7. madde, “güvenliği tehdit eden durum” ifadesi belirsiz olduğu için her yerin işgaline bahane olabilecek bir hukuki dayanaktır (A ✓). Ordunun dağıtılması ve haberleşmeye el konulması direnişi zorlaştırmak içindir (C ✓). Bu ağır şartlarla Osmanlı Devleti fiilen sona ermiştir (D ✓).</p><p>24. madde, Türklerin çoğunlukta olduğu altı doğu ilinde (Erzurum, Van, Bitlis, Diyarbakır, Mamuretülaziz/Elazığ, Sivas) bir Ermeni devleti kurulmasına zemin hazırlamak için konulmuştur. Yani Wilson İlkeleri’ndeki Türklere egemenlik ilkesini korumaz, tam tersine bu ilkeyle çelişir. Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Mondros Ateşkes Antlaşması (30 Ekim 1918) imzalandıktan sonra Anadolu’da ve çevresinde gerçekleştirilen bazı işgaller aşağıdaki tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Tarih</th><th>İşgal Edilen Yer</th><th>İşgal Eden</th></tr>
+<tr><td>Kasım 1918</td><td>Musul</td><td>İngiltere</td></tr>
+<tr><td>13 Kasım 1918</td><td>İstanbul (İtilaf donanması Boğaz’a girdi)</td><td>İtilaf Devletleri</td></tr>
+<tr><td>Mart 1919</td><td>Antalya</td><td>İtalya</td></tr>
+<tr><td>15 Mayıs 1919</td><td>İzmir</td><td>Yunanistan</td></tr>
+<tr><td>1919 sonu</td><td>Antep, Maraş, Urfa (İngilizlerden devralındı)</td><td>Fransa</td></tr>
+</table>
+<p>Tabloya göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
+  c: ["İşgallerin tamamı tek bir devlet tarafından yapılmıştır.", "İşgallere farklı İtilaf devletleri katılmıştır.", "İşgaller yalnızca kıyı bölgelerinde gerçekleşmiştir.", "İşgaller Mondros Ateşkes Antlaşması imzalanmadan önce başlamıştır."],
+  a: "B",
+  s: `<p>Tabloda İngiltere, İtalya, Yunanistan ve Fransa gibi farklı devletlerin işgal yaptığı görülür (B ✓).</p><p>İşgal eden devletler farklıdır (A ✗). Musul, Antep, Maraş ve Urfa kıyıda değil iç bölgelerdedir (C ✗). Tablodaki bütün işgaller 30 Ekim 1918’den, yani Mondros’tan sonradır (D ✗). Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Mondros Ateşkes Antlaşması’ndan sonra kurulan bazı cemiyetler, amaçlarına göre aşağıdaki şemada sınıflandırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 226" width="560" role="img" aria-label="Mondros sonrası kurulan cemiyetlerin sınıflandırılması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="226" fill="#ffffff"/>
+<rect x="6" y="6" width="176" height="212" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="94" y="26" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Azınlık Cemiyetleri</text>
+<text x="16" y="47" font-size="11" fill="#1e293b">• Mavri Mira (Rum)</text>
+<text x="16" y="68" font-size="11" fill="#1e293b">• Etnik-i Eterya (Rum)</text>
+<text x="16" y="89" font-size="11" fill="#1e293b">• Pontus Rum Cemiyeti</text>
+<text x="16" y="110" font-size="11" fill="#1e293b">• Taşnak ve Hınçak</text>
+<text x="16" y="125" font-size="11" fill="#1e293b">   (Ermeni)</text>
+<text x="16" y="146" font-size="11" font-weight="bold" fill="#dc2626">Amaç: Osmanlı</text>
+<text x="16" y="161" font-size="11" font-weight="bold" fill="#dc2626">topraklarını parçalayıp</text>
+<text x="16" y="176" font-size="11" font-weight="bold" fill="#dc2626">devlet kurmak</text>
+<rect x="192" y="6" width="176" height="212" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="26" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Millî Varlığa Düşman</text>
+<text x="280" y="41" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Cemiyetler</text>
+<text x="202" y="62" font-size="11" fill="#1e293b">• İngiliz Muhipler Cemiyeti</text>
+<text x="202" y="83" font-size="11" fill="#1e293b">• Wilson Prensipleri</text>
+<text x="202" y="98" font-size="11" fill="#1e293b">   Cemiyeti</text>
+<text x="202" y="119" font-size="11" fill="#1e293b">• Sulh ve Selamet-i</text>
+<text x="202" y="134" font-size="11" fill="#1e293b">   Osmaniye Cemiyeti</text>
+<text x="202" y="155" font-size="11" fill="#1e293b">• Teali İslam Cemiyeti</text>
+<text x="202" y="176" font-size="11" font-weight="bold" fill="#b45309">Amaç: Manda ve himaye</text>
+<text x="202" y="191" font-size="11" font-weight="bold" fill="#b45309">ya da saltanata bağlılık</text>
+<rect x="378" y="6" width="176" height="212" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="466" y="26" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Millî (Yararlı)</text>
+<text x="466" y="41" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Cemiyetler</text>
+<text x="388" y="62" font-size="11" fill="#1e293b">• Trakya-Paşaeli M.H.C.</text>
+<text x="388" y="83" font-size="11" fill="#1e293b">• İzmir Müdafaa-i Hukuk-ı</text>
+<text x="388" y="98" font-size="11" fill="#1e293b">   Osmaniye C.</text>
+<text x="388" y="119" font-size="11" fill="#1e293b">• Vilâyât-ı Şarkiye M.H.C.</text>
+<text x="388" y="140" font-size="11" fill="#1e293b">• Kilikyalılar Cemiyeti</text>
+<text x="388" y="161" font-size="11" fill="#1e293b">• Millî Kongre Cemiyeti</text>
+<text x="388" y="182" font-size="11" font-weight="bold" fill="#16a34a">Amaç: İşgallere karşı</text>
+<text x="388" y="197" font-size="11" font-weight="bold" fill="#16a34a">vatanı savunmak</text>
+</svg></div>
+<p>Şemadaki cemiyetlerle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Kilikyalılar Cemiyeti, Çukurova’da bir Ermeni devleti kurmak amacıyla azınlıklar tarafından kurulmuştur.", "Wilson Prensipleri ve İngiliz Muhipler cemiyetleri, tam bağımsızlığı savundukları için Millî Mücadele’yi desteklemiştir.", "Millî Kongre Cemiyeti bölgesel değil, ulusal nitelikte bir cemiyettir ve Türklerin haklılığını yayın yoluyla duyurmaya çalışmıştır.", "Millî cemiyetlerin tamamı Erzurum Kongresi’nde “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adıyla birleştirilmiştir."],
   a: "C",
-  s: `<p><b>Kilikyalılar Cemiyeti</b> (isminin antik çağdaki Kilikya’dan gelmesi öğrencileri yanıltmak için sıkça sorulur) Adana ve Çukurova’yı Fransız ve Ermeni işgaline karşı savunan <b>yararlı (millî) bir cemiyettir</b>[cite: 9] (A yanlış).</p>
-<p>Wilson Prensipleri ve İngiliz Muhipleri <b>manda ve himayeyi</b> savunduğu için tam bağımsızlığa karşıdır[cite: 9] (B yanlış). Tüm yararlı cemiyetlerin birleştirilmesi Erzurum’da değil, <b>Sivas Kongresi</b>’nde gerçekleşmiştir[cite: 9] (D yanlış).</p>
-<p><b>Millî Kongre Cemiyeti</b> ise bölgesel değil <b>ulusal</b> nitelikte olup basın-yayın yoluyla Türklerin haklılığını dünyaya duyurmaya çalışmıştır (<b>C doğru</b>).</p>`
-},
-{
-  q: `<p>Mondros Ateşkes Antlaşması sonrasında başlayan işgaller karşısında İstanbul Hükûmeti, Mustafa Kemal Paşa ve Türk halkının sergilediği tutumlar aşağıdaki tabloda karşılaştırılmıştır.</p>
+  s: `<p>Millî Kongre Cemiyeti İstanbul’da kurulmuş, belli bir bölgeyi değil bütün yurdu savunmuş ve basın-yayın yoluyla Türklerin haklılığını dünyaya duyurmaya çalışmıştır. Diğer millî cemiyetler ise kendi bölgelerini savunmak için kurulmuştur (C ✓).</p><p>Kilikyalılar Cemiyeti şemada da görüldüğü gibi millî bir cemiyettir; Adana ve çevresini Fransız ve Ermeni işgaline karşı savunmuştur (A ✗). Wilson Prensipleri ve İngiliz Muhipler, manda ve himayeyi savunduğu için tam bağımsızlığa karşıdır (B ✗). Millî cemiyetler Erzurum’da değil, <b>Sivas Kongresi</b>’nde “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adıyla birleştirilmiştir (D ✗). Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Yunanların İzmir’i işgal etmesinden sonra Batı Anadolu’da halk, kendi imkânlarıyla silahlı direniş grupları oluşturdu. Kuvâ-yı Millîye adı verilen bu birlikler, düzenli ordu kuruluncaya kadar Yunan ilerleyişini yavaşlattı ve halkın moralini yükseltti. Ancak birliklerin çoğu tek bir merkeze bağlı değildi; bu nedenle zaman zaman disiplin sorunları yaşandı.</div>
+<p>Bu metne göre Kuvâ-yı Millîye ile ilgili aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Halkın kendi çabasıyla oluşturulmuştur.", "Düzenli ordu kuruluncaya kadar düşmanı oyalamıştır.", "Tek merkezden yönetilmemesi bazı sorunlara yol açmıştır.", "Düzenli ordunun yerini alarak Büyük Taarruz’u gerçekleştirmiştir."],
+  a: "D",
+  s: `<p>Metinde birliklerin halkın kendi imkânlarıyla kurulduğu (A ✓), düzenli ordu kuruluncaya kadar Yunan ilerleyişini yavaşlattığı (B ✓) ve tek merkeze bağlı olmadığı için disiplin sorunları yaşandığı (C ✓) belirtilir.</p><p>Metin Kuvâ-yı Millîye’nin düzenli ordunun yerini aldığını değil, düzenli ordu kuruluncaya kadar görev yaptığını söyler. Büyük Taarruz (1922) da Kuvâ-yı Millîye tarafından değil, düzenli ordu tarafından yapılmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Mondros Ateşkes Antlaşması’ndan sonra başlayan işgaller karşısında İstanbul Hükûmeti, Mustafa Kemal Paşa ve Türk halkının tutumları aşağıdaki tabloda karşılaştırılmıştır.</p>
 <table class="rt">
 <tr><th>İstanbul Hükûmeti</th><th>Mustafa Kemal Paşa</th><th>Türk Halkı</th></tr>
-<tr><td>“İşgallere karşı çıkılmamalı, İtilaf Devletleri kızdırılmamalıdır. Padişahımızın ve saltanatın devamı için sükûnet korunmalıdır.”</td><td>“Geldikleri gibi giderler! Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır. Teşkilatlanmalıyız.”</td><td>“Ordumuz dağıtılmış ve hükûmet sessiz kalmış olsa da vatanımızı Kuvâ-yı Milliye birlikleri ve Müdafaa-i Hukuk cemiyetleriyle koruyacağız.”</td></tr>
+<tr><td>“İşgallere karşı çıkılmamalı, İtilaf Devletleri kızdırılmamalıdır. Padişahımızın ve saltanatın devamı için sükûnet korunmalıdır.”</td><td>“Geldikleri gibi giderler! Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır. Teşkilatlanmalıyız.”</td><td>“Ordumuz dağıtılmış ve hükûmet sessiz kalmış olsa da vatanımızı Kuvâ-yı Millîye birlikleri ve Müdafaa-i Hukuk cemiyetleriyle koruyacağız.”</td></tr>
 </table>
 <p>Tablodaki tutumlar değerlendirildiğinde aşağıdaki çıkarımlardan hangisi <b>yapılamaz</b>?</p>`,
-  c: [
-    `İstanbul Hükûmeti işgaller karşısında teslimiyetçi, pasif ve uzlaşmacı bir politika izlemiştir.`,
-    `Mustafa Kemal Paşa karamsarlığa kapılmamış; ileri görüşlü, kararlı ve vatansever bir liderlik sergilemiştir.`,
-    `Kuvâ-yı Milliye birlikleri, İstanbul Hükûmeti’nin çıkardığı resmî kanun ve emirlerle kurulmuş düzenli ordulardır.`,
-    `Türk halkı bağımsızlığına ve vatan bütünlüğüne düşkün olduğunu kendi imkânlarıyla direnişe geçerek kanıtlamıştır.`
-  ],
+  c: ["İstanbul Hükûmeti işgaller karşısında teslimiyetçi ve pasif bir politika izlemiştir.", "Mustafa Kemal Paşa karamsarlığa kapılmamış; kararlı ve ileri görüşlü bir tutum sergilemiştir.", "Kuvâ-yı Millîye birlikleri, İstanbul Hükûmeti’nin emirleriyle kurulmuş düzenli ordu birlikleridir.", "Türk halkı, bağımsızlığına düşkün olduğunu kendi imkânlarıyla direnişe geçerek göstermiştir."],
   a: "C",
-  s: `<p>Kuvâ-yı Milliye birlikleri İstanbul Hükûmeti’nin emriyle değil, tam tersine <b>İstanbul Hükûmeti’nin işgallere sessiz kalması ve ordunun dağıtılması üzerine</b> Türk halkının kendi imkânlarıyla kurduğu <b>düzensiz (milis)</b> direniş kuvvetleridir[cite: 9]. Dolayısıyla <b>C</b> seçeneği yanlıştır.</p>`
-},
-{
-  q: `<p>22 Haziran 1919’da yayımlanan <b>Amasya Genelgesi</b>’nin bazı maddeleri ve bu maddelerin Millî Mücadele’deki işlevleri aşağıdaki şemada eşleştirilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Amasya Genelgesi maddeleri ve gerekçe amaç yöntem eşleştirmesi">
-<rect x="10" y="10" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
-<text x="20" y="28" font-size="10" font-weight="bold">I. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</text>
-<text x="20" y="43" font-size="9.5" fill="#475569">   İstanbul Hükûmeti sorumluluğunu yerine getirememektedir.</text>
-<rect x="10" y="60" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
-<text x="20" y="78" font-size="10" font-weight="bold">II. Milletin bağımsızlığını, yine milletin azim ve</text>
-<text x="20" y="93" font-size="10" font-weight="bold">    kararı kurtaracaktır.</text>
-<rect x="10" y="110" width="320" height="42" rx="5" fill="#f1f5f9" stroke="#64748b"/>
-<text x="20" y="128" font-size="10" font-weight="bold">III. Her türlü etki ve denetimden uzak millî bir kurul</text>
-<text x="20" y="143" font-size="9.5" fill="#475569">     (Temsil Heyeti) oluşturulmalıdır.</text>
-<rect x="365" y="10" width="165" height="42" rx="5" fill="#dbeafe" stroke="#2563eb"/>
-<text x="447" y="35" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">( K )</text>
-<rect x="365" y="60" width="165" height="42" rx="5" fill="#dcfce7" stroke="#16a34a"/>
-<text x="447" y="85" font-size="10.5" font-weight="bold" fill="#166534" text-anchor="middle">( L )</text>
-<rect x="365" y="110" width="165" height="42" rx="5" fill="#fef3c7" stroke="#d97706"/>
-<text x="447" y="135" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">( M )</text>
-<g stroke="#334155" stroke-width="2"><line x1="330" y1="31" x2="365" y2="31"/><line x1="330" y1="81" x2="365" y2="81"/><line x1="330" y1="131" x2="365" y2="131"/></g>
-</svg></div>
-<p>Şemada <b>K, L ve M</b> kutularına yazılması gereken doğru kavramlar aşağıdakilerin hangisinde verilmiştir?</p>`,
-  c: [
-    `K: Mücadelenin Gerekçesi — L: Amaç, Yöntem ve Millî Egemenlik — M: Kurumsallaşma ve Teşkilatlanma`,
-    `K: Amaç ve Yöntem — L: Mücadelenin Gerekçesi — M: Saltanata Bağlılık`,
-    `K: Dış Politika — L: Ekonomik Bağımsızlık — M: Düzenli Orduya Geçiş`,
-    `K: Mücadelenin Gerekçesi — L: Manda ve Himayenin Reddi — M: Kuvvetler Ayrılığı`
-  ],
+  s: `<p>İstanbul Hükûmeti “işgallere karşı çıkılmamalı” diyerek teslimiyetçi bir tutum izlemiştir (A ✓). Mustafa Kemal “Geldikleri gibi giderler!” diyerek kararlılık göstermiş ve teşkilatlanma çağrısı yapmıştır (B ✓). Halk, ordu dağıtılmış ve hükûmet sessiz kalmışken kendi imkânlarıyla direnmeye karar vermiştir (D ✓).</p><p>Tabloda hükûmetin sessiz kaldığı ve işgallere karşı çıkılmamasını istediği görülür. Kuvâ-yı Millîye, hükûmetin emriyle değil halkın kendi çabasıyla kurulmuş <b>düzensiz</b> birliklerdir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">İstanbul Hükûmeti, İngilizlerin Karadeniz kıyılarındaki asayişsizlikten şikâyet etmesi üzerine Mustafa Kemal Paşa’yı geniş yetkilerle <b>9. Ordu Müfettişi</b> olarak bölgeye gönderdi. Mustafa Kemal Paşa 19 Mayıs 1919’da Samsun’a çıktı. Bölgede yaptığı incelemelerde karışıklıkların asıl sebebinin işgaller ve Rum çetelerinin saldırıları olduğunu tespit etti ve halkı işgallere karşı örgütlemeye başladı.</div>
+<p>Bu bilgilere göre Mustafa Kemal Paşa’nın Samsun’a gidişiyle ilgili aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Resmî bir görevle gönderilmiş, bu görevi Millî Mücadele’yi başlatmak için bir fırsata dönüştürmüştür.", "İtilaf Devletleri adına Samsun’u işgal etmek amacıyla bölgeye gitmiştir.", "TBMM tarafından ordu komutanı olarak bölgeye gönderilmiştir.", "Görevi, bölgedeki Rum çetelerini desteklemek olarak belirlenmiştir."],
   a: "A",
-  s: `<p>Amasya Genelgesi’nde:</p>
-<ul>
-<li><b>I. öncül (K):</b> Vatanın tehlikede olması ve İstanbul Hükûmeti’nin görevini yapamaması Millî Mücadele’nin <b>Gerekçesidir</b> (Neden mücadele ediyoruz?)[cite: 9].</li>
-<li><b>II. öncül (L):</b> “Milletin bağımsızlığı” mücadelenin <b>Amacı</b>, “milletin azim ve kararı” ise <b>Yöntemidir</b>; ayrıca ilk kez <b>Millî Egemenlik</b> (rejimin değişeceği) mesajı verilmiştir[cite: 9].</li>
-<li><b>III. öncül (M):</b> Temsil Heyeti fikrinin ortaya atılması mücadelenin <b>kurumsallaşması ve teşkilatlanması</b> adımıdır. Cevap <b>A</b>.</li>
-</ul>`
-},
-{
-  q: `<p>Mustafa Kemal Paşa, 28 Mayıs 1919’da yayımladığı <b>Havza Genelgesi</b>’nde; işgallere karşı yurdun her yerinde mitingler düzenlenmesini, İtilaf Devletleri ve İstanbul Hükûmeti’ne protesto telgrafları çekilmesini, ancak bu gösteriler sırasında <b>Hristiyan azınlıklara kesinlikle kötü davranılmamasını ve saldırıda bulunulmamasını</b> istemiştir.</p>
-<p>Mustafa Kemal Paşa’nın Havza Genelgesi’nde Hristiyan halka zarar verilmemesini özellikle vurgulamasının temel amacı aşağıdakilerden hangisidir?</p>`,
-  c: [
-    `Azınlık cemiyetlerinin Millî Mücadele’ye katılmasını sağlamak`,
-    `Mondros Ateşkes Antlaşması’nın 7. maddesinin uygulanmasına ve yeni işgallere haklı bir bahane (gerekçe) oluşturulmasını engellemek`,
-    `İstanbul Hükûmeti’nin Anadolu’ya gönderdiği Nasihat Heyetlerine destek vermek`,
-    `Kapitülasyonların kaldırılması için Avrupa devletlerinden ekonomik yardım almak`
-  ],
+  s: `<p>Mustafa Kemal Paşa, İstanbul Hükûmeti’nin verdiği 9. Ordu Müfettişliği göreviyle Samsun’a gitmiş; ancak karışıklıkların asıl nedeninin işgaller olduğunu görünce halkı örgütlemeye başlamıştır. Yani resmî görevi Millî Mücadele için fırsata çevirmiştir (A ✓).</p><p>Metinde bir işgal amacı yoktur; görev asayişi sağlamaktır (B ✗). TBMM 23 Nisan 1920’de açılmıştır; 1919’da henüz yoktur (C ✗). Rum çeteleri karışıklığın sebebi olarak gösterilir, desteklenmeleri söz konusu değildir (D ✗). Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Mustafa Kemal Paşa, 28 Mayıs 1919’da yayımladığı <b>Havza Genelgesi</b>’nde işgallere karşı yurdun her yerinde mitingler düzenlenmesini ve İtilaf Devletleri ile İstanbul Hükûmeti’ne protesto telgrafları çekilmesini istemiştir. Ancak bu gösteriler sırasında <b>Hristiyan azınlıklara kesinlikle kötü davranılmamasını ve saldırıda bulunulmamasını</b> özellikle belirtmiştir.</p>
+<p>Mustafa Kemal Paşa’nın Hristiyan halka zarar verilmemesini özellikle vurgulamasının temel amacı aşağıdakilerden hangisidir?</p>`,
+  c: ["Azınlık cemiyetlerinin Millî Mücadele’ye katılmasını sağlamak", "İtilaf Devletleri’nin Mondros’un 7. maddesini bahane ederek yeni işgaller yapmasını engellemek", "İstanbul Hükûmeti’nin Anadolu’ya gönderdiği nasihat heyetlerine destek vermek", "Kapitülasyonların kaldırılması için Avrupa devletlerinden yardım almak"],
   a: "B",
-  s: `<p>Mondros Ateşkes Antlaşması’nın 7. maddesine göre İtilaf Devletleri, “güvenliklerini tehdit eden bir karışıklık çıkarsa” herhangi bir stratejik yeri işgal etme hakkına sahipti[cite: 9]. Mustafa Kemal, mitingler sırasında Hristiyan azınlıklara zarar verilmesini önleyerek <b>İtilaf Devletleri’nin 7. maddeyi bahane edip yeni işgaller yapmasının önüne geçmek</b> istemiştir. Cevap <b>B</b>.</p>`
-},
-{
-  q: `<p>Aşağıdaki Venn şemasında <b>Erzurum Kongresi</b> ile <b>Sivas Kongresi</b>’nin özellikleri karşılaştırılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 540 165" width="520" role="img" aria-label="Erzurum ve Sivas Kongreleri Venn şeması">
-<ellipse cx="185" cy="85" rx="155" ry="68" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
-<ellipse cx="355" cy="85" rx="155" ry="68" fill="#dcfce7" fill-opacity="0.6" stroke="#16a34a" stroke-width="2"/>
-<text x="115" y="38" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Erzurum Kongresi</text>
-<text x="425" y="38" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">Sivas Kongresi</text>
-<g font-size="9.5" font-weight="bold" fill="#1e293b" text-anchor="middle">
-<text x="105" y="68">• Toplanış şekli</text>
-<text x="105" y="82">  bölgeseldir</text>
-<text x="105" y="102">• Millî sınırlardan</text>
-<text x="105" y="116">  ilk kez bahsedildi</text>
-<text x="270" y="72">• Kararları ulusaldır</text>
-<text x="270" y="92">• Manda ve himaye</text>
-<text x="270" y="106">  reddedilmiştir</text>
-<text x="270" y="126">• Bşk: Mustafa Kemal</text>
-<text x="435" y="68">• Toplanış şekli</text>
-<text x="435" y="82">  ulusaldır</text>
-<text x="435" y="102">• Tüm cemiyetler</text>
-<text x="435" y="116">  birleştirildi</text>
-<text x="435" y="134">• ( ? )</text>
-</g>
+  s: `<p>Mondros’un 7. maddesine göre İtilaf Devletleri, güvenliklerini tehdit eden bir durum olursa istedikleri yeri işgal edebiliyordu. Mitinglerde azınlıklara saldırılması bu maddeye bahane olurdu. Mustafa Kemal bu yüzden azınlıklara zarar verilmemesini istemiştir (B ✓).</p><p>Azınlık cemiyetleri Millî Mücadele’ye karşıydı (A ✗). Nasihat heyetleri halkı İstanbul Hükûmeti’ne itaate çağırıyordu; genelge bunlara destek vermez (C ✗). Genelgede kapitülasyon ya da dış yardımla ilgili bir istek yoktur (D ✗). Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>15 Mayıs 1919’da Yunan ordusunun İzmir’i işgal etmesi üzerine olayları incelemek için ABD’li <b>Amiral Bristol</b> başkanlığında uluslararası bir heyet görevlendirilmiştir. Heyetin hazırladığı raporda yer alan bazı tespitler aşağıda verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 168" width="560" role="img" aria-label="Amiral Bristol başkanlığındaki heyetin raporundan maddeler" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="168" fill="#ffffff"/>
+<rect x="6" y="6" width="548" height="156" rx="8" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+<rect x="6" y="6" width="548" height="28" rx="7" fill="#334155"/>
+<text x="280" y="25" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">AMİRAL BRİSTOL BAŞKANLIĞINDAKİ HEYETİN RAPORU (EKİM 1919)</text>
+<text x="20" y="52" font-size="11" font-weight="bold" fill="#1e293b">1.</text>
+<text x="38" y="52" font-size="11" fill="#1e293b">Yunan işgalinden önce İzmir ve çevresindeki Hristiyan halkın güvenliğinin tehlikede olduğu</text>
+<text x="38" y="68" font-size="11" fill="#1e293b">iddiası doğru değildir.</text>
+<text x="20" y="90" font-size="11" font-weight="bold" fill="#1e293b">2.</text>
+<text x="38" y="90" font-size="11" fill="#1e293b">Bölgede nüfus çoğunluğu Rumlarda değil, Türklerdedir.</text>
+<text x="20" y="112" font-size="11" font-weight="bold" fill="#1e293b">3.</text>
+<text x="38" y="112" font-size="11" fill="#1e293b">İşgal sırasında ve sonrasında yaşanan karışıklıklardan ve can kayıplarından Yunan askerleri</text>
+<text x="38" y="128" font-size="11" fill="#1e293b">ve yerli Rumlar sorumludur.</text>
+<text x="20" y="150" font-size="11" font-weight="bold" fill="#1e293b">4.</text>
+<text x="38" y="150" font-size="11" fill="#1e293b">Yunan askerleri bölgeden çekilmeli, yerine İtilaf Devletleri’nin askerleri gönderilmelidir.</text>
 </svg></div>
-<p>Şemaya göre her iki kongrenin özellikleri ve Sivas Kongresi’ne ait <b>( ? )</b> işaretiyle gösterilen yere yazılabilecek bilgi ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Erzurum Kongresi sadece Doğu Anadolu’yu ilgilendiren bölgesel kararlar almıştır.`,
-    `Her iki kongrede de Amerikan mandası fikri kabul görmüştür.`,
-    `Sivas Kongresi’ndeki ( ? ) yerine “İrade-i Milliye gazetesinin çıkarılması ve Temsil Heyeti’nin tüm vatanı temsil eder hâle getirilmesi” yazılabilir.`,
-    `Erzurum Kongresi’nde Misak-ı Millî kararları son şeklini alarak Osmanlı Mebusan Meclisi’nde onaylanmıştır.`
-  ],
+<p>Bu tespitlere dayanarak aşağıdaki yargılardan hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Yunanların bölgede nüfus çoğunluğuna sahip oldukları iddiasının gerçeği yansıtmadığı ortaya konmuştur.", "İzmir’in işgali konusunda Türklerin haklı olduğu uluslararası bir heyet tarafından da kabul edilmiştir.", "Raporun yayımlanmasıyla İtilaf Devletleri Yunan ordusunu İzmir’den ve Anadolu’dan geri çekmiştir.", "Heyet, Yunan işgaline karşı çıkarken İtilaf Devletleri’nin bölgedeki varlığına karşı çıkmamıştır."],
   a: "C",
-  s: `<p>Erzurum Kongresi toplanış bakımından bölgesel, aldığı kararlar bakımından <b>ulusaldır</b>[cite: 9] (A yanlış). Her iki kongrede de manda ve himaye <b>reddedilmiştir</b>[cite: 9] (B yanlış). Misak-ı Millî, Erzurum’da değil 28 Ocak 1920’de Son Osmanlı Mebusan Meclisi’nde kabul edilmiştir[cite: 9] (D yanlış).</p>
-<p>Sivas Kongresi’nde Temsil Heyeti tüm yurdu temsil eder hâle getirilmiş ve halkı doğru bilgilendirmek için <b>İrade-i Milliye</b> gazetesi çıkarılmıştır[cite: 9] (<b>C doğru</b>).</p>`
-},
-{
-  q: `<p>Sivas Kongresi sonrasında yaşanan iki önemli siyasi gelişme aşağıda verilmiştir:</p>
+  s: `<p>2. tespit Yunanların nüfus iddiasını çürütür (A ✓). Raporun tamamı işgalin haksız, Türklerin haklı olduğunu gösterir. Bu rapor, Türklerin haklılığını kabul eden ilk uluslararası belge olarak bilinir (B ✓). 4. tespitte Yunan askerlerinin yerine İtilaf askerlerinin gönderilmesi önerilir; yani heyet İtilaf varlığına karşı değildir (D ✓).</p><p>Raporda yalnızca Yunan askerlerinin çekilmesi <b>önerilir</b>; bunun uygulandığına dair bilgi yoktur. Gerçekte İtilaf Devletleri raporu dikkate almamış, Yunan ordusu Anadolu’dan ancak 1922’deki Büyük Taarruz ile atılabilmiştir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>22 Haziran 1919’da yayımlanan <b>Amasya Genelgesi</b>’nin bazı maddeleri ve bu maddelerin Millî Mücadele’deki işlevleri aşağıdaki şemada eşleştirilecektir.</p>
+<div class="fig"><svg viewBox="0 0 560 194" width="560" role="img" aria-label="Amasya Genelgesi maddeleri ve K, L, M kutuları" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="194" fill="#ffffff"/>
+<rect x="6" y="8" width="340" height="59" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="16" y="27" font-size="11" fill="#1e293b">I. Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</text>
+<text x="16" y="42" font-size="11" fill="#1e293b">İstanbul Hükûmeti üzerine aldığı sorumluluğun gereğini</text>
+<text x="16" y="57" font-size="11" fill="#1e293b">yerine getirememektedir.</text>
+<line x1="346" y1="37.5" x2="380" y2="37.5" stroke="#334155" stroke-width="2"/>
+<rect x="380" y="8" width="174" height="59" rx="5" fill="#eff6ff" stroke="#2563eb"/>
+<text x="467" y="42.5" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">( K )</text>
+<rect x="6" y="75" width="340" height="44" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="16" y="94" font-size="11" fill="#1e293b">II. Milletin bağımsızlığını yine milletin azim ve kararı</text>
+<text x="16" y="109" font-size="11" fill="#1e293b">kurtaracaktır.</text>
+<line x1="346" y1="97" x2="380" y2="97" stroke="#334155" stroke-width="2"/>
+<rect x="380" y="75" width="174" height="44" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+<text x="467" y="102" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">( L )</text>
+<rect x="6" y="127" width="340" height="59" rx="5" fill="#f1f5f9" stroke="#64748b"/>
+<text x="16" y="146" font-size="11" fill="#1e293b">III. Milletin durumunu ve haklarını dünyaya duyurmak için</text>
+<text x="16" y="161" font-size="11" fill="#1e293b">her türlü etki ve denetimden uzak millî bir kurulun varlığı</text>
+<text x="16" y="176" font-size="11" fill="#1e293b">gereklidir.</text>
+<line x1="346" y1="156.5" x2="380" y2="156.5" stroke="#334155" stroke-width="2"/>
+<rect x="380" y="127" width="174" height="59" rx="5" fill="#fef3c7" stroke="#d97706"/>
+<text x="467" y="161.5" font-size="13" font-weight="bold" fill="#92400e" text-anchor="middle">( M )</text>
+</svg></div>
+<p>Şemadaki <b>K, L ve M</b> kutularına yazılması gereken ifadeler aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["K: Mücadelenin gerekçesi — L: Mücadelenin amacı, yöntemi ve millî egemenlik — M: Teşkilatlanma", "K: Mücadelenin amacı ve yöntemi — L: Mücadelenin gerekçesi — M: Saltanata bağlılık", "K: Dış politika — L: Ekonomik bağımsızlık — M: Düzenli orduya geçiş", "K: Mücadelenin gerekçesi — L: Saltanata bağlılık — M: Kuvvetler ayrılığı"],
+  a: "A",
+  s: `<p><b>I. madde (K):</b> Vatanın tehlikede olması ve İstanbul Hükûmeti’nin görevini yapamaması, Millî Mücadele’nin <b>gerekçesidir</b> (Neden mücadele ediyoruz?).</p><p><b>II. madde (L):</b> “Milletin bağımsızlığı” mücadelenin <b>amacı</b>, “milletin azim ve kararı” ise <b>yöntemidir</b>. Bu maddeyle ilk kez <b>millî egemenlik</b> fikri vurgulanmıştır.</p><p><b>III. madde (M):</b> Millî bir kurulun (Temsil Heyeti) oluşturulması fikri, mücadelenin <b>teşkilatlanmasına</b> yöneliktir.</p><p>B’de gerekçe ile amaç yer değiştirmiştir. C’deki dış politika, ekonomi ve düzenli ordu maddelerde geçmez. D’deki saltanata bağlılık ve kuvvetler ayrılığı da maddelerle ilgisizdir. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Mustafa Kemal Paşa, İstanbul Hükûmeti’nin onu görevden almasından sonra 8-9 Temmuz 1919 gecesi Erzurum’da askerlik görevinden istifa etti ve Millî Mücadele’ye bir sivil olarak devam etti. Bunun üzerine Erzurum’daki 15. Kolordu Komutanı Kâzım Karabekir Paşa, Mustafa Kemal Paşa’ya giderek “Paşam, ben ve kolordum emrinizdeyiz.” dedi.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
+  c: ["Mustafa Kemal Paşa, askerlikten istifa ettikten sonra Millî Mücadele’den uzaklaşmıştır.", "Kâzım Karabekir Paşa, İstanbul Hükûmeti’nin emriyle Mustafa Kemal Paşa’yı görevden almıştır.", "Mustafa Kemal Paşa, Erzurum’da Başkomutan olarak ordunun başına geçmiştir.", "Mustafa Kemal Paşa, resmî görevinden ayrıldıktan sonra da ordudan destek görmüştür."],
+  a: "D",
+  s: `<p>Kâzım Karabekir Paşa’nın “ben ve kolordum emrinizdeyiz” sözü, Mustafa Kemal Paşa’nın istifadan sonra da ordunun desteğini koruduğunu gösterir (D ✓).</p><p>Metne göre Mustafa Kemal mücadeleye sivil olarak devam etmiştir (A ✗). Onu görevden alan Kâzım Karabekir değil, İstanbul Hükûmeti’dir (B ✗). Başkomutanlık yetkisi ona 1921’de, Sakarya Savaşı öncesinde TBMM tarafından verilmiştir (C ✗). Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Sivas Kongresi’nde manda ve himaye konusu tartışılırken iki delege arasında şöyle bir konuşma geçtiği düşünülmüştür:</p>
+<div class="dialog"><div><b>Delege 1:</b> Devletimiz çok yorgun ve güçsüz. Amerika gibi güçlü bir devletin himayesine girersek ülkemizi daha kolay kalkındırırız.</div>
+<div><b>Delege 2:</b> Başka bir devletin denetimine giren bir millet kendi kararlarını kendisi veremez. Bağımsızlığımızdan vazgeçemeyiz; manda ve himaye kabul edilemez!</div></div>
+<p>Kongrede Delege 2’nin görüşü kabul edilmiştir. Bu durum, Millî Mücadele’nin aşağıdaki ilkelerden hangisine dayandığını <b>gösterir</b>?</p>`,
+  c: ["Tam bağımsızlık", "Saltanata bağlılık", "İtilaf Devletleri ile iş birliği", "Kapitülasyonların sürdürülmesi"],
+  a: "A",
+  s: `<p>Delege 2, başka bir devletin denetimine girmeyi reddedip bağımsızlıktan vazgeçilemeyeceğini söyler. Erzurum ve Sivas kongrelerinde alınan “Manda ve himaye kabul edilemez.” kararı <b>tam bağımsızlık</b> ilkesinin göstergesidir (A ✓).</p><p>Konuşmada saltanat (B) ya da İtilaf Devletleri ile iş birliği (C) savunulmaz; kapitülasyonlar ise tam bağımsızlığa aykırı olduğu için Millî Mücadele’de reddedilmiştir (D ✗). Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki Venn şemasında <b>Erzurum Kongresi</b> ile <b>Sivas Kongresi</b>’nin bazı özellikleri karşılaştırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Erzurum ve Sivas kongrelerini karşılaştıran Venn şeması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="250" fill="#ffffff"/>
+<ellipse cx="192" cy="132" rx="182" ry="108" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
+<ellipse cx="368" cy="132" rx="182" ry="108" fill="#dcfce7" fill-opacity="0.6" stroke="#16a34a" stroke-width="2"/>
+<text x="110" y="16" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Erzurum Kongresi</text>
+<text x="450" y="16" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Sivas Kongresi</text>
+<text x="100" y="82" font-size="11" fill="#1e293b" text-anchor="middle">Toplanış şekli bölgeseldir.</text>
+<text x="100" y="105" font-size="11" fill="#1e293b" text-anchor="middle">“Millî sınırlar” kavramı ilk</text>
+<text x="100" y="120" font-size="11" fill="#1e293b" text-anchor="middle">kez kullanıldı.</text>
+<text x="280" y="82" font-size="11" fill="#1e293b" text-anchor="middle">Kararları ulusaldır.</text>
+<text x="280" y="105" font-size="11" fill="#1e293b" text-anchor="middle">Manda ve himaye</text>
+<text x="280" y="120" font-size="11" fill="#1e293b" text-anchor="middle">reddedildi.</text>
+<text x="280" y="143" font-size="11" fill="#1e293b" text-anchor="middle">Başkan: Mustafa Kemal</text>
+<text x="280" y="158" font-size="11" fill="#1e293b" text-anchor="middle">Paşa</text>
+<text x="460" y="82" font-size="11" fill="#1e293b" text-anchor="middle">Toplanış şekli ulusaldır.</text>
+<text x="460" y="105" font-size="11" fill="#1e293b" text-anchor="middle">Millî cemiyetler</text>
+<text x="460" y="120" font-size="11" fill="#1e293b" text-anchor="middle">birleştirildi.</text>
+<text x="460" y="143" font-size="11" fill="#1e293b" text-anchor="middle">( ? )</text>
+</svg></div>
+<p>Şemaya ve kongrelere göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
+  c: ["Erzurum Kongresi yalnızca Doğu Anadolu’yu ilgilendiren bölgesel kararlar almıştır.", "Her iki kongrede de Amerikan mandası kabul edilmiştir.", "Sivas Kongresi’ne ait ( ? ) yerine “İrade-i Millîye gazetesinin çıkarılması” yazılabilir.", "Erzurum Kongresi’nde Misak-ı Millî kararları kabul edilerek Mebusan Meclisi’nde onaylanmıştır."],
+  a: "C",
+  s: `<p>Sivas Kongresi’nde halkı doğru bilgilendirmek ve Millî Mücadele’yi duyurmak için <b>İrade-i Millîye</b> gazetesinin çıkarılmasına karar verilmiştir; bu bilgi ( ? ) yerine yazılabilir (C ✓).</p><p>Şemaya göre Erzurum Kongresi’nin kararları ulusaldır (A ✗). Manda ve himaye her iki kongrede de reddedilmiştir (B ✗). Misak-ı Millî, Erzurum’da değil 28 Ocak 1920’de Son Osmanlı Mebusan Meclisi’nde kabul edilmiştir (D ✗). Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Sivas Kongresi’nden sonra yaşanan iki gelişme aşağıda verilmiştir:</p>
 <ul>
-<li><b>1. Gelişme:</b> Temsil Heyeti, Sivas Kongresi’nden hemen sonra <b>Ali Fuat (Cebesoy) Paşa’yı Batı Cephesi Kuvâ-yı Milliye Genel Komutanlığına</b> atamıştır.</li>
-<li><b>2. Gelişme:</b> Sivas Kongresi’ni engellemeye çalışan Damat Ferit Paşa Hükûmeti, Temsil Heyeti’nin İstanbul ile tüm haberleşmeyi kesmesi üzerine baskılara dayanamayarak <b>istifa etmiş</b> ve yerine Millî Mücadele’ye ılımlı yaklaşan Ali Rıza Paşa Hükûmeti kurulmuştur.</li>
+<li><b>1. Gelişme:</b> Temsil Heyeti, Ali Fuat (Cebesoy) Paşa’yı Batı Anadolu Kuvâ-yı Millîye Komutanlığına atamıştır.</li>
+<li><b>2. Gelişme:</b> Sivas Kongresi’ni engellemeye çalışan Damat Ferit Paşa Hükûmeti, Temsil Heyeti’nin İstanbul ile haberleşmeyi kesmesi üzerine istifa etmiş; yerine Millî Mücadele’ye ılımlı yaklaşan Ali Rıza Paşa Hükûmeti kurulmuştur.</li>
 </ul>
-<p>Bu iki gelişmenin ortak yorumu aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: [
-    `1. gelişme Temsil Heyeti’nin bir hükûmet gibi YÜRÜTME yetkisini kullandığını; 2. gelişme ise Temsil Heyeti’nin İstanbul Hükûmeti karşısında ilk siyasi başarısını kazandığını gösterir.`,
-    `1. gelişme Temsil Heyeti’nin YARGI yetkisini kullandığını; 2. gelişme ise Saltanatın resmen kaldırıldığını gösterir.`,
-    `1. gelişme düzenli ordunun kurulduğunu; 2. gelişme ise İstanbul’un İtilaf Devletleri tarafından boşaltıldığını gösterir.`,
-    `Her iki gelişme de Temsil Heyeti’nin İstanbul Hükûmeti’ne bağlı bir kurum olarak çalıştığını kanıtlar.`
-  ],
+<p>Bu iki gelişmenin yorumu aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["1. gelişme Temsil Heyeti’nin bir hükûmet gibi yürütme yetkisi kullandığını; 2. gelişme ise Temsil Heyeti’nin İstanbul Hükûmeti karşısında siyasi bir başarı kazandığını gösterir.", "1. gelişme Temsil Heyeti’nin yargı yetkisi kullandığını; 2. gelişme ise saltanatın kaldırıldığını gösterir.", "1. gelişme düzenli ordunun kurulduğunu; 2. gelişme ise İstanbul’un işgalden kurtulduğunu gösterir.", "Her iki gelişme de Temsil Heyeti’nin İstanbul Hükûmeti’ne bağlı bir kurum olarak çalıştığını gösterir."],
   a: "A",
-  s: `<p>Bir komutan veya vali atamak devletin <b>yürütme (hükûmet)</b> erkinin görevidir; Temsil Heyeti, Ali Fuat Paşa’yı Batı Cephesi’ne atayarak <b>ilk kez yürütme yetkisini</b> kullanmıştır.</p>
-<p>Damat Ferit Paşa Hükûmeti’nin istifa ettirilmesi ise Temsil Heyeti’nin İstanbul Hükûmeti karşısında elde ettiği <b>ilk siyasi zaferdir</b>. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>Temsil Heyeti, 27 Aralık 1919’da Millî Mücadele’nin yönetim merkezi olarak <b>Ankara’yı</b> seçmiş ve çalışmalarını buradan yürütmeye başlamıştır. Ankara’nın merkez seçilmesinde etkili olan faktörler aşağıdaki harita kartında gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 520 140" width="500" role="img" aria-label="Temsil Heyeti'nin Ankara'yı merkez seçme nedenleri">
-<rect x="15" y="10" width="490" height="120" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
-<circle cx="95" cy="70" r="38" fill="#dc2626"/>
-<text x="95" y="66" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">ANKARA</text>
-<text x="95" y="82" font-size="9.5" fill="#fde047" text-anchor="middle">(27 Aralık 1919)</text>
-<g font-size="10" font-weight="bold" fill="#1e293b">
-<text x="155" y="34">1. Anadolu’nun ortasında işgal edilmemiş güvenli bir konumda olması</text>
-<text x="155" y="56">2. Demir yolu ağı ve telgraf (haberleşme) hatlarının kavşak noktası olması</text>
-<text x="155" y="78">3. Yunanlarla savaşılan Batı Cephesi’ne yakın konumda bulunması</text>
-<text x="155" y="100">4. İstanbul’da toplanacak Mebusan Meclisi’ni yakından izleme imkânı</text>
-<text x="155" y="120">5. Ankara halkının ve 20. Kolordu’nun Millî Mücadele’yi desteklemesi</text>
-</g>
+  s: `<p>Komutan atamak, bir devlette <b>yürütme (hükûmet)</b> yetkisidir; Temsil Heyeti bu atamayla bir hükûmet gibi davranmıştır. Damat Ferit Paşa Hükûmeti’nin istifa etmek zorunda kalması ise Temsil Heyeti’nin İstanbul Hükûmeti’ne karşı kazandığı <b>ilk siyasi başarıdır</b> (A ✓).</p><p>Atama yargı yetkisi değildir; saltanat ise 1 Kasım 1922’de kaldırılmıştır (B ✗). Düzenli ordu TBMM döneminde kurulmuş, İstanbul 1923’e kadar işgal altında kalmıştır (C ✗). Temsil Heyeti’nin İstanbul Hükûmeti’ni istifaya zorlaması, ona bağlı olmadığını gösterir (D ✗). Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Sivas Kongresi’nden sonra kurulan Ali Rıza Paşa Hükûmeti, Temsil Heyeti ile görüşmek için Bahriye Nazırı Salih Paşa’yı Amasya’ya gönderdi. 20-22 Ekim 1919 tarihlerinde yapılan <b>Amasya Görüşmeleri</b>’ne Temsil Heyeti adına Mustafa Kemal Paşa, Rauf Bey ve Bekir Sami Bey katıldı. Görüşmelerde Mebusan Meclisi seçimlerinin yapılması ve Meclis’in toplanacağı yer gibi konular ele alındı.</div>
+<p>İstanbul Hükûmeti’nin Temsil Heyeti ile resmî olarak görüşmesi aşağıdakilerden hangisini <b>gösterir</b>?</p>`,
+  c: ["Temsil Heyeti’nin İstanbul Hükûmeti’ne bağlandığını", "İstanbul Hükûmeti’nin Temsil Heyeti’ni muhatap kabul ederek tanıdığını", "Saltanatın kaldırıldığını", "TBMM’nin açıldığını"],
+  a: "B",
+  s: `<p>Bir hükûmetin bir kurulla resmî görüşme yapması, onu <b>muhatap kabul etmesi</b> yani tanıması anlamına gelir. Amasya Görüşmeleri ile İstanbul Hükûmeti, Temsil Heyeti’ni ve Millî Mücadele’yi hukuken tanımış oldu (B ✓).</p><p>Temsil Heyeti bağımsız hareket etmeyi sürdürmüştür (A ✗). Saltanat 1 Kasım 1922’de kaldırılmıştır (C ✗). TBMM 23 Nisan 1920’de açılmıştır; görüşmeler 1919’dadır (D ✗). Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>Temsil Heyeti, 27 Aralık 1919’da Ankara’ya gelmiş ve Millî Mücadele’yi buradan yönetmeye başlamıştır. Ankara’nın merkez seçilmesinde etkili olan bazı nedenler aşağıdaki kartta gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 206" width="560" role="img" aria-label="Temsil Heyeti’nin Ankara’yı merkez seçme nedenleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="206" fill="#ffffff"/>
+<rect x="6" y="6" width="548" height="194" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<circle cx="76" cy="103" r="52" fill="#dc2626"/>
+<text x="76" y="100" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">ANKARA</text>
+<text x="76" y="117" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">27 Aralık 1919</text>
+<text x="145" y="30" font-size="11" font-weight="bold" fill="#1e293b">1. Anadolu’nun ortasında, işgal edilmemiş güvenli bir</text>
+<text x="145" y="45" font-size="11" font-weight="bold" fill="#1e293b">    konumda olması</text>
+<text x="145" y="67" font-size="11" font-weight="bold" fill="#1e293b">2. Demir yolu ve telgraf (haberleşme) hatlarının üzerinde</text>
+<text x="145" y="82" font-size="11" font-weight="bold" fill="#1e293b">    bulunması</text>
+<text x="145" y="104" font-size="11" font-weight="bold" fill="#1e293b">3. Yunanlarla mücadele edilen Batı Anadolu’ya yakın olması</text>
+<text x="145" y="126" font-size="11" font-weight="bold" fill="#1e293b">4. İstanbul’daki gelişmeleri ve Mebusan Meclisi’ni yakından</text>
+<text x="145" y="141" font-size="11" font-weight="bold" fill="#1e293b">    izleme imkânı</text>
+<text x="145" y="163" font-size="11" font-weight="bold" fill="#1e293b">5. Ankara halkının ve 20. Kolordu’nun Millî Mücadele’yi</text>
+<text x="145" y="178" font-size="11" font-weight="bold" fill="#1e293b">    desteklemesi</text>
 </svg></div>
-<p>Karttaki bilgilere göre Ankara’nın merkez seçilmesinde aşağıdaki alanlardan hangisinin etkisinden <b>söz edilmemiştir</b>?</p>`,
-  c: [
-    `Ulaşım ve iletişim imkânları`,
-    `Askerî ve stratejik güvenlik`,
-    `Zengin yer altı madenleri ve ağır sanayi fabrikaları`,
-    `Siyasi gelişmeleri takip etme kolaylığı`
-  ],
+<p>Karttaki bilgilere göre Ankara’nın merkez seçilmesinde aşağıdakilerden hangisinin etkisinden <b>söz edilmemiştir</b>?</p>`,
+  c: ["Ulaşım ve haberleşme imkânları", "Askerî ve stratejik güvenlik", "Zengin yer altı kaynakları ve sanayi tesisleri", "Siyasi gelişmeleri takip etme kolaylığı"],
   a: "C",
-  s: `<p>Kartta; 2. maddede <b>ulaşım ve iletişim</b>, 1, 3 ve 5. maddelerde <b>askerî ve stratejik güvenlik</b>, 4. maddede ise <b>siyasi gelişmeleri takip etme</b> kolaylığı vurgulanmıştır. Ankara’nın yer altı madenleri veya ağır sanayi tesislerinden söz edilmemiştir. Cevap <b>C</b>.</p>`
-},
-{
-  q: `<p>Son Osmanlı Mebusan Meclisi’nde 28 Ocak 1920’de kabul edilen <b>Misak-ı Millî (Millî Yemin)</b> kararlarının bazıları ve bunların ilgili olduğu temel ilkeler aşağıdaki tabloda verilmiştir.</p>
+  s: `<p>Kartın 2. maddesinde <b>ulaşım ve haberleşme</b> (A), 1, 3 ve 5. maddelerinde <b>askerî ve stratejik güvenlik</b> (B), 4. maddesinde ise <b>siyasi gelişmeleri takip etme</b> kolaylığı (D) yer alır.</p><p>Ankara’nın yer altı kaynaklarından ya da sanayi tesislerinden hiç söz edilmemiştir. Cevap <b>C</b>.</p>` },
+{ lv: "kolay", q: `<p>Son Osmanlı Mebusan Meclisi’nde 28 Ocak 1920’de kabul edilen <b>Misak-ı Millî</b> kararlarından bazıları ve bunların ilişkilendirildiği ilkeler aşağıdaki tabloda verilmiştir.</p>
 <table class="rt">
-<tr><th>Misak-ı Millî Kararı</th><th>İlgili Olduğu Temel İlke / Kavram</th></tr>
-<tr><td><b>I.</b> Mondros Ateşkesi imzalandığında işgal edilmemiş, Türk çoğunluğunun bulunduğu topraklar ayrılmaz bir bütündür.</td><td>Vatanın bütünlüğü ve Millî Sınırlar</td></tr>
-<tr><td><b>II.</b> Kars, Ardahan, Batum (Elviye-i Selase) ve Batı Trakya’nın geleceği gerekirse halkoylamasıyla (referandumla) belirlenecektir.</td><td>Halkın iradesine saygı ve bölgedeki Türk nüfus çoğunluğuna güven</td></tr>
-<tr><td><b>III.</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kabul edilemez.</td><td>Tam bağımsızlık ve Ekonomik bağımsızlık</td></tr>
-<tr><td><b>IV.</b> Azınlıkların hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir.</td><td>Yabancı devletlerin iç işlerimize karışmasını sağlama</td></tr>
+<tr><th>Misak-ı Millî Kararı</th><th>İlişkilendirilen İlke</th></tr>
+<tr><td><b>I.</b> Mondros Ateşkes Antlaşması imzalandığında işgal edilmemiş olan ve Türklerin çoğunlukta yaşadığı topraklar bölünmez bir bütündür.</td><td>Vatanın bütünlüğü ve millî sınırlar</td></tr>
+<tr><td><b>II.</b> Kars, Ardahan, Batum ve Batı Trakya’nın geleceği gerekirse halkoylamasıyla belirlenecektir.</td><td>Halkın iradesine saygı</td></tr>
+<tr><td><b>III.</b> Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar (kapitülasyonlar) kabul edilemez.</td><td>Tam bağımsızlık</td></tr>
+<tr><td><b>IV.</b> Azınlıkların hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla kabul edilecektir.</td><td>Yabancı devletlerin iç işlerimize karışmasına imkân tanıma</td></tr>
 </table>
-<p>Tablodaki numaralandırılmış eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>`,
-  c: [`I`, `II`, `III`, `IV`],
+<p>Tablodaki eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>`,
+  c: ["I", "II", "III", "IV"],
   a: "D",
-  s: `<p>Misak-ı Millî’nin azınlıklarla ilgili <b>IV. maddesi</b>, yabancı devletlerin iç işlerimize karışmasını sağlamak için değil; tam tersine <b>uluslararası eşitlik (mütekabiliyet / karşılıklılık)</b> ilkesini sağlamak ve Avrupalı devletlerin azınlık haklarını bahane ederek iç işlerimize karışmasını engellemek amacıyla alınmıştır. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>23 Nisan 1920’de açılan Türkiye Büyük Millet Meclisi’nin kabul ettiği 24 Nisan Önergesi’ndeki bazı maddeler aşağıdaki diyagramda gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="23 Nisan 1920 TBMM özellikleri diyagramı">
-<rect x="190" y="8" width="160" height="30" rx="6" fill="#dc2626"/>
-<text x="270" y="27" font-size="11.5" font-weight="bold" fill="#ffffff" text-anchor="middle">I. TBMM (23 Nisan 1920)</text>
-<line x1="270" y1="38" x2="270" y2="52" stroke="#475569" stroke-width="2"/>
-<line x1="90" y1="52" x2="450" y2="52" stroke="#475569" stroke-width="2"/>
-<line x1="90" y1="52" x2="90" y2="65" stroke="#475569" stroke-width="2"/>
-<line x1="270" y1="52" x2="270" y2="65" stroke="#475569" stroke-width="2"/>
-<line x1="450" y1="52" x2="450" y2="65" stroke="#475569" stroke-width="2"/>
-<rect x="10" y="65" width="160" height="80" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="90" y="84" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Madde</text>
-<text x="90" y="102" font-size="9.5" text-anchor="middle">“Hükûmet kurmak zorunludur.</text>
-<text x="90" y="116" font-size="9.5" text-anchor="middle">TBMM’nin üstünde hiçbir</text>
-<text x="90" y="130" font-size="9.5" font-weight="bold" fill="#1e40af" text-anchor="middle">güç yoktur.”</text>
-<rect x="190" y="65" width="160" height="80" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<text x="270" y="84" font-size="10" font-weight="bold" fill="#166534" text-anchor="middle">2. Madde</text>
-<text x="270" y="102" font-size="9.5" text-anchor="middle">“TBMM yasama, yürütme ve</text>
-<text x="270" y="116" font-size="9.5" text-anchor="middle">yargı yetkilerini kendinde</text>
-<text x="270" y="130" font-size="9.5" font-weight="bold" fill="#166534" text-anchor="middle">toplamıştır.”</text>
-<rect x="370" y="65" width="160" height="80" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="450" y="84" font-size="10" font-weight="bold" fill="#b45309" text-anchor="middle">3. Madde</text>
-<text x="450" y="102" font-size="9.5" text-anchor="middle">“Meclis Başkanı, meclis</text>
-<text x="450" y="116" font-size="9.5" text-anchor="middle">içinden seçilen hükûmetin</text>
-<text x="450" y="130" font-size="9.5" font-weight="bold" fill="#b45309" text-anchor="middle">de başkanıdır.”</text>
+  s: `<p>I. karar millî sınırları ve vatanın bütünlüğünü belirler (✓). II. kararda halkoylaması, halkın iradesine saygıyı gösterir (✓). III. karar kapitülasyonları reddederek tam bağımsızlığı savunur (✓).</p><p>IV. karar, azınlık haklarını komşu ülkelerdeki Müslümanlara tanınacak haklara bağlar. Bu, <b>karşılıklılık (eşitlik)</b> ilkesidir ve amacı Avrupa devletlerinin azınlıkları bahane ederek iç işlerimize karışmasını <b>engellemektir</b>. Eşleştirme tam tersini söylediği için yanlıştır. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Aşağıdaki akış şemasında İstanbul’un resmen işgal edilmesinden sonra yaşanan bazı gelişmeler sırasıyla verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 224" width="560" role="img" aria-label="İstanbul’un resmen işgalinden sonraki gelişmeler akış şeması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="224" fill="#ffffff"/>
+<rect x="60" y="6" width="440" height="44" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="280" y="25" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">16 Mart 1920: İstanbul, İtilaf Devletleri tarafından resmen işgal</text>
+<text x="280" y="40" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">edildi.</text>
+<line x1="280" y1="50" x2="280" y2="66" stroke="#334155" stroke-width="2"/>
+<polygon points="274,62 286,62 280,70" fill="#334155"/>
+<rect x="60" y="72" width="440" height="44" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="91" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Mebusan Meclisi basıldı; bazı milletvekilleri tutuklanarak Malta’ya</text>
+<text x="280" y="106" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">sürgün edildi.</text>
+<line x1="280" y1="116" x2="280" y2="132" stroke="#334155" stroke-width="2"/>
+<polygon points="274,128 286,128 280,136" fill="#334155"/>
+<rect x="60" y="138" width="440" height="29" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="280" y="157" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">18 Mart 1920: Mebusan Meclisi çalışmalarına ara verdi.</text>
+<line x1="280" y1="167" x2="280" y2="183" stroke="#334155" stroke-width="2"/>
+<polygon points="274,179 286,179 280,187" fill="#334155"/>
+<rect x="60" y="189" width="440" height="29" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="280" y="208" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">( ? )</text>
 </svg></div>
-<p>Diyagramdaki maddelere göre I. TBMM ile ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: [
-    `1. madde ile İstanbul Hükûmeti yok sayılmış ve egemenliğin kayıtsız şartsız millete ait olduğu vurgulanmıştır.`,
-    `2. madde ile olağanüstü savaş koşullarında hızlı karar alıp uygulayabilmek için “Güçler Birliği” ilkesi benimsenmiştir.`,
-    `3. madde ile “Meclis Hükûmeti Sistemi” uygulanmış ve meclis başkanı aynı zamanda yürütmenin başı olmuştur.`,
-    `2. madde ile yasama, yürütme ve yargı güçleri birbirinden tamamen ayrılarak “Kuvvetler Ayrılığı” ilkesi hayata geçirilmiştir.`
-  ],
+<p>Şemada <b>( ? )</b> ile gösterilen yere aşağıdakilerden hangisi yazılabilir?</p>`,
+  c: ["Misak-ı Millî kararları kabul edildi.", "Amasya Genelgesi yayımlandı.", "Mondros Ateşkes Antlaşması imzalandı.", "Ankara’da Büyük Millet Meclisi açıldı."],
   a: "D",
-  s: `<p>Yasama, yürütme ve yargı yetkilerinin tek bir organda (TBMM’de) toplanmasına <b>Güçler (Kuvvetler) Birliği</b> denir[cite: 9]. Bu uygulama savaş döneminde hızlı karar almak için yapılmıştır; kuvvetler ayrılığı ilkesi <b>değildir</b>. Cevap <b>D</b>.</p>`
-},
-{
-  q: `<p>TBMM’nin açılmasından sonra Anadolu’nun çeşitli yerlerinde çıkan ayaklanmalara karşı Meclis’in aldığı önlemler aşağıdaki tabloda gösterilmiştir.</p>
+  s: `<p>İstanbul’un resmen işgali ve Mebusan Meclisi’nin çalışamaz hâle gelmesi üzerine Mustafa Kemal Paşa, Ankara’da yeni bir meclis toplanması için seçim yapılmasını istedi. Bunun sonucunda <b>23 Nisan 1920</b>’de Ankara’da Büyük Millet Meclisi açıldı (D ✓).</p><p>Diğer şıklar şemadaki olaylardan <b>önce</b> yaşanmıştır: Misak-ı Millî 28 Ocak 1920’de (A ✗), Amasya Genelgesi 22 Haziran 1919’da (B ✗), Mondros Ateşkes Antlaşması 30 Ekim 1918’de (C ✗). Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Mustafa Kemal Paşa, 21 Nisan 1920’de yayımladığı genelgede Meclis’in açılışıyla ilgili şunları bildirdi:<br>
+• Meclis, 23 Nisan Cuma günü açılacaktır.<br>
+• Cuma namazı Hacı Bayram Camii’nde kılınacak, ardından dualarla Meclis binasına gidilecektir.<br>
+• Açılıştan önce bütün illerde hatimler okunacak ve dualar edilecektir.<br>
+Meclis, 23 Nisan 1920’de bu şekilde düzenlenen bir törenle açıldı.</div>
+<p>Mustafa Kemal Paşa’nın Meclis’in açılışını bu şekilde planlamasının temel amacı aşağıdakilerden hangisidir?</p>`,
+  c: ["Meclis’in yasama yetkisini padişaha devretmek", "Halkın Meclis’e güvenini sağlamak ve Meclis aleyhine yapılan olumsuz propagandayı etkisiz bırakmak", "Meclis’in İstanbul’da toplanmasını sağlamak", "Kuvvetler ayrılığı ilkesini uygulamak"],
+  a: "B",
+  s: `<p>İstanbul Hükûmeti ve İstanbul basını, Ankara’daki hareketin dine ve padişaha karşı olduğunu yayıyordu. Açılışın Cuma günü, dualar ve hatimlerle yapılması halkın dinî duygularına saygı gösterildiğini kanıtlamak, Meclis’e güveni artırmak ve bu propagandayı boşa çıkarmak içindi (B ✓).</p><p>Meclis yetkiyi kendinde toplamıştır, padişaha devretmemiştir (A ✗). Meclis Ankara’da açılmıştır (C ✗). Açılış töreninin kuvvetler ayrılığıyla ilgisi yoktur; TBMM üstelik güçler birliğini benimsemiştir (D ✗). Cevap <b>B</b>.</p>` },
+{ lv: "kolay", q: `<p>23 Nisan 1920’de açılan Büyük Millet Meclisi’nde, 24 Nisan’da Mustafa Kemal Paşa’nın sunduğu ve Meclis’in kabul ettiği önergenin bazı maddeleri aşağıdaki şemada gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 166" width="560" role="img" aria-label="24 Nisan 1920 önergesinin bazı maddeleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="166" fill="#ffffff"/>
+<rect x="180" y="6" width="200" height="30" rx="6" fill="#dc2626"/>
+<text x="280" y="26" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">TBMM (23 Nisan 1920)</text>
+<line x1="280" y1="36" x2="280" y2="50" stroke="#475569" stroke-width="2"/>
+<line x1="94" y1="50" x2="466" y2="50" stroke="#475569" stroke-width="2"/>
+<line x1="94" y1="50" x2="94" y2="62" stroke="#475569" stroke-width="2"/>
+<rect x="6" y="62" width="176" height="98" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+<text x="94" y="80" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">1. Madde</text>
+<text x="94" y="98" font-size="11" fill="#1e293b" text-anchor="middle">“Hükûmet kurmak</text>
+<text x="94" y="113" font-size="11" fill="#1e293b" text-anchor="middle">zorunludur. TBMM’nin</text>
+<text x="94" y="128" font-size="11" fill="#1e293b" text-anchor="middle">üstünde hiçbir güç yoktur.”</text>
+<line x1="280" y1="50" x2="280" y2="62" stroke="#475569" stroke-width="2"/>
+<rect x="192" y="62" width="176" height="98" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+<text x="280" y="80" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">2. Madde</text>
+<text x="280" y="98" font-size="11" fill="#1e293b" text-anchor="middle">“TBMM, yasama ve yürütme</text>
+<text x="280" y="113" font-size="11" fill="#1e293b" text-anchor="middle">yetkilerini kendinde</text>
+<text x="280" y="128" font-size="11" fill="#1e293b" text-anchor="middle">toplamıştır.”</text>
+<line x1="466" y1="50" x2="466" y2="62" stroke="#475569" stroke-width="2"/>
+<rect x="378" y="62" width="176" height="98" rx="6" fill="#fef3c7" stroke="#d97706"/>
+<text x="466" y="80" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">3. Madde</text>
+<text x="466" y="98" font-size="11" fill="#1e293b" text-anchor="middle">“Meclis içinden seçilecek bir</text>
+<text x="466" y="113" font-size="11" fill="#1e293b" text-anchor="middle">kurul hükûmet işlerine</text>
+<text x="466" y="128" font-size="11" fill="#1e293b" text-anchor="middle">bakar. Meclis Başkanı bu</text>
+<text x="466" y="143" font-size="11" fill="#1e293b" text-anchor="middle">kurulun da başkanıdır.”</text>
+</svg></div>
+<p>Şemadaki maddelere göre TBMM ile ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["1. madde ile İstanbul Hükûmeti yok sayılmış ve millî egemenlik esas alınmıştır.", "2. madde ile olağanüstü savaş koşullarında hızlı karar alabilmek için güçler birliği ilkesi benimsenmiştir.", "3. madde ile Meclis Başkanı aynı zamanda yürütmenin de başı olmuştur.", "2. madde ile yasama ve yürütme güçleri birbirinden ayrılarak kuvvetler ayrılığı ilkesi uygulanmıştır."],
+  a: "D",
+  s: `<p>“Hükûmet kurmak zorunludur” ifadesi İstanbul Hükûmeti’nin tanınmadığını, “TBMM’nin üstünde hiçbir güç yoktur” ifadesi millî egemenliği gösterir (A ✓). Yasama ve yürütmenin Meclis’te toplanması <b>güçler birliği</b>dir ve savaş ortamında hızlı karar almayı sağlar (B ✓). Meclis Başkanı, hükûmet işlerine bakan kurulun da başkanıdır (C ✓).</p><p>Yetkilerin tek bir organda toplanması, kuvvetler ayrılığının tam tersidir. Cevap <b>D</b>.</p>` },
+{ lv: "kolay", q: `<p>Millî Mücadele döneminde Anadolu’daki ayaklanmalara ve olumsuz propagandaya karşı alınan bazı önlemler aşağıdaki tabloda gösterilmiştir.</p>
 <table class="rt">
-<tr><th>Ayaklanma Nedeni / Kışkırtma</th><th>TBMM’nin Aldığı Karşı Önlem</th><th>İlgili Olduğu Alan / Yetki</th></tr>
-<tr><td>Ayaklananların ve bozguncuların hukuki olarak cezalandırılması ihtiyacı</td><td><b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b> çıkarıldı.</td><td><b>( 1 )</b></td></tr>
-<tr><td>Kanunu ihlal edenlerin ve asker kaçaklarının hızla yargılanması ihtiyacı</td><td>Üyeleri milletvekillerinden oluşan <b>İstiklal Mahkemeleri</b> kuruldu.</td><td><b>( 2 )</b></td></tr>
-<tr><td>İstanbul Şeyhülislamı Dürrizade’nin Millî Mücadele aleyhine yayımladığı fetva</td><td>Ankara Müftüsü <b>Rıfat (Börekçi)</b> ve 153 müftüden karşı fetva alındı.</td><td>Dinî Önlem</td></tr>
-<tr><td>İstanbul basınının halkı yanıltan kara propagandası</td><td><b>Anadolu Ajansı</b> kuruldu ve <i>Hakimiyet-i Milliye</i> gazetesi çıkarıldı.</td><td>Basın–Yayın ve İletişim</td></tr>
+<tr><th>Sorun</th><th>Alınan Önlem</th><th>İlgili Alan / Yetki</th></tr>
+<tr><td>Ayaklananların ve bozguncuların cezalandırılması için yasal düzenleme gerekiyordu.</td><td>TBMM, <b>Hıyanet-i Vataniye (Vatana İhanet) Kanunu</b>’nu çıkardı.</td><td><b>( 1 )</b></td></tr>
+<tr><td>Bu kanunu çiğneyenlerin ve asker kaçaklarının hızla yargılanması gerekiyordu.</td><td>TBMM, üyeleri milletvekillerinden oluşan <b>İstiklal Mahkemeleri</b>ni kurdu.</td><td><b>( 2 )</b></td></tr>
+<tr><td>İstanbul’dan Millî Mücadele aleyhine fetva yayımlandı.</td><td>Ankara Müftüsü <b>Rifat (Börekçi) Efendi</b> ve Anadolu müftüleri karşı fetva yayımladı.</td><td>Dinî önlem</td></tr>
+<tr><td>İstanbul basını halkı yanıltan yayınlar yapıyordu.</td><td><b>Anadolu Ajansı</b> kuruldu, <i>Hâkimiyet-i Millîye</i> gazetesi yayımlandı.</td><td>Basın-yayın</td></tr>
 </table>
-<p>Tabloda <b>( 1 )</b> ve <b>( 2 )</b> numaralı yerlere TBMM’nin kullandığı hangi yetkiler yazılmalıdır?</p>`,
-  c: [
-    `1: Yasama Yetkisi — 2: Yargı Yetkisi`,
-    `1: Yargı Yetkisi — 2: Yasama Yetkisi`,
-    `1: Yürütme Yetkisi — 2: Diplomasi Yetkisi`,
-    `1: Yargı Yetkisi — 2: Yürütme Yetkisi`
-  ],
+<p>Tabloda <b>( 1 )</b> ve <b>( 2 )</b> ile gösterilen yerlere TBMM’nin kullandığı hangi yetkiler yazılmalıdır?</p>`,
+  c: ["1: Yasama yetkisi — 2: Yargı yetkisi", "1: Yargı yetkisi — 2: Yasama yetkisi", "1: Yürütme yetkisi — 2: Diplomasi yetkisi", "1: Yargı yetkisi — 2: Yürütme yetkisi"],
   a: "A",
-  s: `<p>Devlette <b>kanun çıkarma</b> yetkisi <b>Yasama</b> erkine aittir; TBMM Hıyanet-i Vataniye Kanunu’nu çıkararak <b>Yasama (1)</b> yetkisini kullanmıştır. Suçluları <b>mahkemelerde yargılama</b> yetkisi ise <b>Yargı</b> erkine aittir; TBMM kendi milletvekillerinden oluşan İstiklal Mahkemeleri’ni kurarak <b>Yargı (2)</b> yetkisini kullanmıştır. Cevap <b>A</b>.</p>`
-},
-{
-  q: `<p>10 Ağustos 1920’de Osmanlı Saltanat Şûrası tarafından imzalanan <b>Sevr Antlaşması</b>’nın bazı maddeleri aşağıdaki şemada verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 540 155" width="520" role="img" aria-label="Sevr Antlaşması maddeleri şeması">
-<rect x="10" y="10" width="165" height="135" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="92" y="28" font-size="10.5" font-weight="bold" fill="#991b1b" text-anchor="middle">Sınırlar ve Boğazlar</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="20" y="48">• Doğu’da Ermeni ve Kürt</text>
-<text x="20" y="62">  devleti kurulacak.</text>
-<text x="20" y="80">• Boğazlar içinde Türk üye</text>
-<text x="20" y="94">  olmayan uluslararası bir</text>
-<text x="20" y="108">  komisyona bırakılacak.</text>
-</g>
-<rect x="187" y="10" width="165" height="135" rx="6" fill="#fef3c7" stroke="#d97706"/>
-<text x="270" y="28" font-size="10.5" font-weight="bold" fill="#b45309" text-anchor="middle">Askerî Hükümler</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="197" y="48">• Zorunlu askerlik</text>
-<text x="197" y="62">  kaldırılacak.</text>
-<text x="197" y="80">• Orduda ağır silah, top ve</text>
-<text x="197" y="94">  uçak bulunmayacak; sadece</text>
-<text x="197" y="108">  50.700 jandarma olacak.</text>
-</g>
-<rect x="365" y="10" width="165" height="135" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="447" y="28" font-size="10.5" font-weight="bold" fill="#1e40af" text-anchor="middle">Ekonomik ve Hukuki</text>
-<g font-size="9.5" fill="#1e293b">
-<text x="375" y="48">• Kapitülasyonlardan tüm</text>
-<text x="375" y="62">  devletler yararlanacak.</text>
-<text x="375" y="80">• Osmanlı maliyesi İtilaf</text>
-<text x="375" y="94">  Devletleri’nin komisyon</text>
-<text x="375" y="108">  denetiminde olacak.</text>
-</g>
+  s: `<p><b>Kanun çıkarmak</b> yasama yetkisidir; TBMM Hıyanet-i Vataniye Kanunu’nu çıkararak <b>yasama (1)</b> yetkisini kullanmıştır. Suçluları <b>mahkemede yargılamak</b> yargı yetkisidir; TBMM İstiklal Mahkemelerini kurarak <b>yargı (2)</b> yetkisini kullanmıştır (A ✓).</p><p>B’de iki yetki yer değiştirmiştir. Kanun çıkarmak yürütme, mahkeme kurmak diplomasi değildir (C ✗). Kanun çıkarmak yargı yetkisi de değildir (D ✗). Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<div class="box">Kuvâ-yı Seyyare (Gezici Kuvvetler) komutanı Çerkez Ethem, Millî Mücadele’nin başında Anadolu’daki bazı ayaklanmaların bastırılmasında görev almıştı. Ancak TBMM düzenli ordu kurma kararı alınca Çerkez Ethem, birliklerinin düzenli orduya katılmasına karşı çıktı ve Meclis’in emirlerine uymadı. Bu ayaklanma 1921 yılının başında bastırıldı ve Çerkez Ethem Yunanlara sığındı.</div>
+<p>Bu metne göre Çerkez Ethem ayaklanmasının temel nedeni aşağıdakilerden hangisidir?</p>`,
+  c: ["Düzenli orduya katılmayı kabul etmemesi", "İstanbul’dan yayımlanan fetvaya uyması", "Bölgede bir azınlık devleti kurmak istemesi", "Sevr Antlaşması’nı uygulamak istemesi"],
+  a: "A",
+  s: `<p>Metinde Çerkez Ethem’in, TBMM’nin düzenli ordu kurma kararından sonra birliklerinin düzenli orduya katılmasına karşı çıktığı açıkça belirtilir. Bu ayaklanma, Kuvâ-yı Millîye kaynaklı ayaklanmalara örnektir (A ✓).</p><p>Fetvaya uyma (B), azınlık devleti kurma (C) ve Sevr’i uygulama (D) metinde geçmez. Fetva etkisi İstanbul Hükûmeti’nin kışkırttığı ayaklanmalarda, azınlık devleti hedefi ise azınlık ayaklanmalarında görülür. Cevap <b>A</b>.</p>` },
+{ lv: "kolay", q: `<p>10 Ağustos 1920’de Osmanlı Hükûmeti’nin temsilcileri tarafından imzalanan <b>Sevr Antlaşması</b>’nın bazı maddeleri aşağıdaki şemada verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 202" width="560" role="img" aria-label="Sevr Antlaşması’nın bazı maddeleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="202" fill="#ffffff"/>
+<rect x="6" y="6" width="176" height="188" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="94" y="26" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Sınırlar ve Boğazlar</text>
+<text x="16" y="47" font-size="11" fill="#1e293b">• Doğu Anadolu’da bir</text>
+<text x="16" y="62" font-size="11" fill="#1e293b">   Ermeni devleti kurulacak,</text>
+<text x="16" y="77" font-size="11" fill="#1e293b">   bir Kürt devletine de yol</text>
+<text x="16" y="92" font-size="11" fill="#1e293b">   açılacak.</text>
+<text x="16" y="113" font-size="11" fill="#1e293b">• Boğazlar, kendi bayrağı</text>
+<text x="16" y="128" font-size="11" fill="#1e293b">   ve bütçesi olan</text>
+<text x="16" y="143" font-size="11" fill="#1e293b">   uluslararası bir</text>
+<text x="16" y="158" font-size="11" fill="#1e293b">   komisyonun yönetimine</text>
+<text x="16" y="173" font-size="11" fill="#1e293b">   bırakılacak.</text>
+<rect x="192" y="6" width="176" height="188" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="26" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Askerî Hükümler</text>
+<text x="202" y="47" font-size="11" fill="#1e293b">• Zorunlu askerlik</text>
+<text x="202" y="62" font-size="11" fill="#1e293b">   kaldırılacak.</text>
+<text x="202" y="83" font-size="11" fill="#1e293b">• Ordunun asker sayısı</text>
+<text x="202" y="98" font-size="11" fill="#1e293b">   50.700’ü geçmeyecek;</text>
+<text x="202" y="113" font-size="11" fill="#1e293b">   orduda ağır silah ve uçak</text>
+<text x="202" y="128" font-size="11" fill="#1e293b">   bulunmayacak.</text>
+<rect x="378" y="6" width="176" height="188" rx="7" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="466" y="26" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Ekonomik ve Mali</text>
+<text x="466" y="41" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Hükümler</text>
+<text x="388" y="62" font-size="11" fill="#1e293b">• Kapitülasyonlar yeniden</text>
+<text x="388" y="77" font-size="11" fill="#1e293b">   yürürlüğe girecek ve</text>
+<text x="388" y="92" font-size="11" fill="#1e293b">   bütün İtilaf Devletleri’ni</text>
+<text x="388" y="107" font-size="11" fill="#1e293b">   kapsayacak.</text>
+<text x="388" y="128" font-size="11" fill="#1e293b">• Osmanlı maliyesi İtilaf</text>
+<text x="388" y="143" font-size="11" fill="#1e293b">   Devletleri’nin denetimine</text>
+<text x="388" y="158" font-size="11" fill="#1e293b">   bırakılacak.</text>
 </svg></div>
 <p>Sevr Antlaşması’nın bu maddeleri ve onaylanma süreci dikkate alındığında aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: [
-    `Boğazlar Komisyonu’nda Türk üyenin bulunmaması egemenlik haklarımızı koruma amacı taşımaktadır.`,
-    `Osmanlı Anayasası’na (Kanun-i Esasi) göre bir antlaşmanın yürürlüğe girmesi için Mebusan Meclisi’nin onayı şart olduğundan, meclis onayından geçmeyen ve TBMM’nin tanımadığı Sevr hukuken geçersiz (“ölü doğmuş”) bir antlaşmadır.`,
-    `Ekonomik hükümlerle Osmanlı Devleti’nin dış borçları tamamen silinmiş ve bağımsız bütçe hakkı tanınmıştır.`,
-    `Sevr Antlaşması, Misak-ı Millî kararlarıyla birebir örtüştüğü için İstanbul Hükûmeti tarafından imzalanmıştır.`
-  ],
+  c: ["Boğazların uluslararası bir komisyona bırakılması Türk egemenliğini güçlendirmiştir.", "Osmanlı Mebusan Meclisi’nde onaylanmayan ve TBMM’nin tanımadığı Sevr, hukuken geçerlilik kazanamamış bir antlaşmadır.", "Ekonomik hükümlerle Osmanlı Devleti’ne tam ekonomik bağımsızlık tanınmıştır.", "Sevr Antlaşması, Misak-ı Millî kararlarıyla örtüştüğü için TBMM tarafından kabul edilmiştir."],
   a: "B",
-  s: `<p>Osmanlı Anayasası (Kanun-i Esasi) gereği uluslararası bir antlaşmanın hukuken geçerli olabilmesi için <b>Mebusan Meclisi tarafından onaylanması</b> zorunluydu. Ancak Mebusan Meclisi dağıtılmış olduğu için Sevr onaylanmamış, ayrıca Türk milletinin tek temsilcisi olan <b>TBMM de bu antlaşmayı reddetmiştir</b>[cite: 9]. Bu nedenle Sevr hukuken geçersiz, <b>“ölü doğmuş”</b> bir antlaşmadır (<b>B doğru</b>).</p>`
-}
+  s: `<p>Osmanlı Anayasası’na (Kanun-i Esasi) göre bir antlaşmanın geçerli olması için Mebusan Meclisi’nin onayı gerekiyordu. Mebusan Meclisi dağıtılmış olduğu için Sevr onaylanamamış; Türk milletinin temsilcisi TBMM de antlaşmayı tanımamıştır. Bu yüzden Sevr, hukuken geçersiz (“ölü doğmuş”) bir antlaşma olarak anılır (B ✓).</p><p>Boğazların bir komisyona bırakılması Türk egemenliğini zayıflatır (A ✗). Kapitülasyonların genişletilmesi ve maliyenin denetime bırakılması ekonomik bağımsızlığı yok eder (C ✗). Sevr, Misak-ı Millî’ye tamamen aykırıdır ve TBMM tarafından reddedilmiştir (D ✗). Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box">İtalya, I. Dünya Savaşı’ndan önce Almanya ve Avusturya-Macaristan ile birlikte Üçlü İttifak’ı kurmuştu. Savaş başladığında ise müttefiklerinin yanında savaşa girmedi ve tarafsız kaldı. İtilaf Devletleri, 1915’te İtalya ile gizli bir antlaşma imzaladı. Bu antlaşmada savaştan sonra Osmanlı topraklarından Antalya ve çevresinin İtalya’ya bırakılması vaat edildi. Bunun üzerine İtalya, 1915’te İtilaf Devletleri’nin yanında savaşa katıldı.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Devletler, savaşta taraf seçerken kendi çıkarlarını göz önünde bulundurmuştur.<br>
+II. Osmanlı toprakları, İtilaf Devletleri’nin paylaşım planlarında yer almıştır.<br>
+III. İtalya, savaşa katıldığı yıl Osmanlı topraklarında işgale başlamıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "I, II ve III"],
+  a: "B",
+  s: `<p>I ✓: İtalya, bağlı olduğu ittifakın yanında savaşa girmemiş, toprak vaadi alınca karşı blokta savaşa katılmıştır; yani taraf seçerken <b>çıkarına</b> bakmıştır.</p><p>II ✓: Gizli antlaşmada Antalya ve çevresinin İtalya’ya bırakılması vaat edilmiştir; Osmanlı toprakları savaş bitmeden <b>paylaşılmaya</b> başlanmıştır.</p><p>III ✗: Metinde yalnızca bir <b>vaat</b> vardır, işgal yoktur. İtalya’nın Antalya’ya asker çıkarması savaş bittikten sonra, 1919’da olmuştur. Vaadi işgalle karıştıran öğrenci III’ü seçer. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki zaman çizelgesinde 1914 yılında yaşanan bazı gelişmeler verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 248" width="560" role="img" aria-label="1914 yılında yaşanan bazı gelişmelerin zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="248" fill="#ffffff"/>
+<line x1="128" y1="10" x2="128" y2="238" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="128" cy="21" r="6" fill="#475569"/>
+<text x="114" y="25" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">28 Haziran 1914</text>
+<rect x="142" y="10" width="412" height="38" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<text x="150" y="25" font-size="11" fill="#1e293b">Avusturya-Macaristan veliahtı, Saraybosna’da bir Sırp milliyetçisi</text>
+<text x="150" y="40" font-size="11" fill="#1e293b">tarafından öldürüldü.</text>
+<circle cx="128" cy="65" r="6" fill="#475569"/>
+<text x="114" y="69" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">28 Temmuz 1914</text>
+<rect x="142" y="54" width="412" height="23" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<text x="150" y="69" font-size="11" fill="#1e293b">Avusturya-Macaristan, Sırbistan’a savaş ilan etti.</text>
+<circle cx="128" cy="94" r="6" fill="#2563eb"/>
+<text x="114" y="98" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">Ağustos 1914</text>
+<text x="114" y="113" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">başı</text>
+<rect x="142" y="83" width="412" height="53" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="98" font-size="11" fill="#1e293b">Osmanlı Devleti ile Almanya arasında gizli bir ittifak antlaşması</text>
+<text x="150" y="113" font-size="11" fill="#1e293b">imzalandı. Ardından Osmanlı Devleti seferberlik ilan etti ve savaşta</text>
+<text x="150" y="128" font-size="11" fill="#1e293b">tarafsız kalacağını açıkladı.</text>
+<circle cx="128" cy="153" r="6" fill="#d97706"/>
+<text x="114" y="157" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">Eylül 1914</text>
+<rect x="142" y="142" width="412" height="23" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<text x="150" y="157" font-size="11" fill="#1e293b">Osmanlı Devleti, kapitülasyonları kaldırdığını ilan etti.</text>
+<circle cx="128" cy="182" r="6" fill="#dc2626"/>
+<text x="114" y="186" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Ekim 1914</text>
+<rect x="142" y="171" width="412" height="38" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="186" font-size="11" fill="#1e293b">Osmanlı donanmasına katılan gemiler, Karadeniz’deki Rus limanlarını</text>
+<text x="150" y="201" font-size="11" fill="#1e293b">bombaladı.</text>
+<circle cx="128" cy="226" r="6" fill="#dc2626"/>
+<text x="114" y="230" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Kasım 1914</text>
+<rect x="142" y="215" width="412" height="23" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="230" font-size="11" fill="#1e293b">Rusya, İngiltere ve Fransa, Osmanlı Devleti’ne savaş ilan etti.</text>
+</svg></div>
+<p>Zaman çizelgesine göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Osmanlı Devleti, tarafsızlığını açıkladığı dönemde gizli bir ittifakın tarafıdır.", "Osmanlı Devleti, savaşın başladığı ilk günlerde fiilen savaşa girmiştir.", "Osmanlı Devleti, savaş ortamından yararlanarak ekonomik bağımsızlığını kısıtlayan ayrıcalıkları kaldırmaya çalışmıştır.", "Başlangıçta iki devlet arasında çıkan savaş, kısa sürede başka devletlere de yayılmıştır."],
+  a: "B",
+  s: `<p>Savaş Temmuz 1914’te başlamış, Osmanlı Devleti ise Ağustos’ta tarafsızlığını açıklamış ve ancak Ekim-Kasım 1914’te Rus limanlarının bombalanması ve ardından gelen savaş ilanlarıyla <b>fiilen</b> savaşa girmiştir. Yani Osmanlı savaşın ilk günlerinde savaşa girmemiştir; “söylenemez” olan B’dir.</p><p>A ✓: Gizli ittifak antlaşması imzalanmışken tarafsızlık açıklanmıştır. C ✓: Kapitülasyonlar, yabancılara tanınan ekonomik ve hukuki ayrıcalıklardır; savaş ortamında kaldırıldıkları ilan edilmiştir. D ✓: Avusturya-Macaristan ile Sırbistan arasında başlayan savaşa kısa sürede Rusya, İngiltere, Fransa ve Osmanlı Devleti de katılmıştır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki krokide Osmanlı Devleti’nin I. Dünya Savaşı’nda mücadele ettiği bazı cephelerin yerleri numaralarla gösterilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 446" width="560" role="img" aria-label="I. Dünya Savaşı’nda Osmanlı Devleti’nin bazı cephelerini numaralarla gösteren ölçeksiz kroki" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="446" fill="#ffffff"/>
+<rect x="0" y="0" width="560" height="446" fill="#fdfaf3"/>
+<polygon points="126.0,8.0 126.0,56.0 148.0,63.0 194.0,66.0 232.0,50.0 268.0,48.0 292.0,62.0 326.0,69.0 360.0,68.0 398.0,56.0 404.0,8.0" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+<polygon points="36.0,76.0 86.0,74.0 94.0,86.0 90.0,100.0 106.0,118.0 94.0,124.0 112.0,148.0 132.0,152.0 148.0,156.0 178.0,151.0 206.0,158.0 244.0,164.0 276.0,156.0 290.0,156.0 284.0,172.0 282.0,192.0 276.0,210.0 266.0,232.0 254.0,258.0 226.0,266.0 186.0,258.0 164.0,264.0 66.0,256.0 36.0,238.0" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+<polygon points="216.0,288.0 238.0,344.0 276.0,418.0 298.0,438.0 344.0,438.0 316.0,388.0 278.0,336.0 264.0,298.0 252.0,328.0" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+<rect x="451.0" y="219.0" width="6" height="6" fill="#334155"/>
+<text x="448" y="226" font-size="11" fill="#334155" text-anchor="end">Bağdat</text>
+<text x="258" y="28" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">KARADENİZ</text>
+<text x="146" y="202" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">AKDENİZ</text>
+<text x="230" y="384" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="end">KIZILDENİZ</text>
+<rect x="142.4" y="64.8" width="6" height="6" fill="#334155"/>
+<text x="149.4" y="61.8" font-size="11" fill="#334155">İstanbul</text>
+<circle cx="418.0" cy="82.0" r="11" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="418" y="86" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<circle cx="94.0" cy="85.0" r="11" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="94" y="89" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<circle cx="214.0" cy="276.0" r="11" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="214" y="280" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<circle cx="482.0" cy="238.0" r="11" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="482" y="242" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<circle cx="358.0" cy="398.0" r="11" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="358" y="402" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<text x="552" y="436" font-size="11" fill="#475569" text-anchor="end">Ölçeksiz kroki</text>
+</svg></div>
+<p>Numaralarla gösterilen cephelerle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
+  c: ["1 numaralı cephede Ruslara karşı savaşılmış, Sarıkamış Harekâtı’nda soğuk ve salgın hastalıklar nedeniyle ağır kayıplar verilmiştir.", "3 numaralı cephede, İngiltere’nin sömürgesi Hindistan ile bağlantısının kesilmesi amaçlanmıştır.", "4 numaralı cephede Osmanlı kuvvetleri, Kut’ül-Amare’de İngilizlere karşı önemli bir zafer kazanmıştır.", "2 ve 5 numaralı cepheler, Osmanlı Devleti’nin başka bir devletin topraklarına saldırmak amacıyla açtığı taarruz cepheleridir."],
+  a: "D",
+  s: `<p>Krokideki cepheler: 1 Kafkas, 2 Çanakkale, 3 Kanal (Süveyş), 4 Irak, 5 Hicaz-Yemen.</p><p>Çanakkale (2) ve Hicaz-Yemen (5) cepheleri, Osmanlı Devleti’nin <b>kendi topraklarını savunduğu</b> savunma cepheleridir: Çanakkale’de İstanbul ve Boğazlar, Hicaz’da kutsal mekânlar korunmuştur. Bu yüzden D yanlıştır.</p><p>A ✓: Kafkas Cephesi’nde Ruslarla savaşılmış, Sarıkamış’ta ağır kayıp verilmiştir. B ✓: Kanal Cephesi, İngilizlerin Hindistan yolunu kesmek ve Mısır’ı geri almak için açılmış bir taarruz cephesidir. C ✓: Irak Cephesi’nde 1916’da Kut’ül-Amare zaferi kazanılmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">25 Nisan 1915’te İtilaf kuvvetleri Gelibolu Yarımadası’nda Arıburnu’na asker çıkarmaya başladı. Bölgedeki 19. Tümen’in komutanı Yarbay Mustafa Kemal, cephanesi biten askerlerin geri çekildiğini görünce onlara süngü takıp yere yatmalarını emretti. Ardından 57. Alay’a şu emri verdi: <i>“Ben size taarruzu emretmiyorum, ölmeyi emrediyorum. Biz ölünceye kadar geçecek zaman zarfında yerimize başka kuvvetler ve kumandanlar geçebilir.”</i></div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Mustafa Kemal, yardımcı kuvvetler gelinceye kadar düşmanı durdurmayı amaçlamıştır.<br>
+II. Çanakkale Cephesi’nde kara savaşları da yapılmıştır.<br>
+III. Bu emir, İtilaf donanmasının Boğaz’ı zorla geçmeye çalıştığı gün verilmiştir.<br>
+IV. Mustafa Kemal, savaşı yönetebilecek tek komutanın kendisi olduğunu düşünmektedir.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, II ve IV"],
+  a: "A",
+  s: `<p>I ✓: “Biz ölünceye kadar geçecek zamanda yerimize başka kuvvetler geçebilir” sözü, amacın <b>zaman kazanarak</b> yardımcı kuvvetler gelene kadar düşmanı durdurmak olduğunu gösterir.</p><p>II ✓: Arıburnu’na asker çıkarılması ve süngüyle karşılık verilmesi, Çanakkale’de <b>kara savaşlarının</b> yapıldığını gösterir.</p><p>III ✗: İtilaf donanmasının Boğaz’ı geçmeye çalıştığı deniz savaşı <b>18 Mart 1915</b>’tedir; emir ise 25 Nisan 1915’teki kara çıkarması sırasında verilmiştir. IV ✗: Mustafa Kemal, kendisinin yerine de “başka kumandanların geçebileceğini” söylemektedir; IV metinle çelişir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Çanakkale’de Boğazlar geçilemeyince Rusya’ya müttefiklerinden yeterli silah ve malzeme ulaştırılamadı. Savaşın getirdiği yoksulluk ve yenilgiler, Rusya’da halkın yönetime tepkisini artırdı. 1917’de Rusya’da çıkan ihtilaller sonucunda Çarlık yönetimi yıkıldı; yönetimi ele geçiren Bolşevikler savaştan çekilmek istedi. Mart 1918’de imzalanan Brest-Litovsk Antlaşması ile Rusya savaştan çekildi ve 1878’de ele geçirdiği Kars, Ardahan ve Batum’dan çekilmeyi kabul etti. Bu bölgeler Osmanlı Devleti’nin denetimine geçti. Kafkas Cephesi’nde ilerleyen Osmanlı kuvvetleri Eylül 1918’de Bakü’ye kadar ulaştı.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Bir cephede yaşanan gelişme, başka bir devletin iç durumunu etkilemiştir.<br>
+II. Osmanlı Devleti, daha önce kaybettiği bazı toprakları yeniden denetimine almıştır.<br>
+III. Kafkas Cephesi’ndeki başarılar, Osmanlı Devleti’nin savaştan galip çıkmasını sağlamıştır.<br>
+IV. Rusya’nın savaştan çekilmesi, Osmanlı kuvvetlerinin Kafkas Cephesi’nde ilerlemesini kolaylaştırmıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, II ve IV"],
+  a: "D",
+  s: `<p>I ✓: Çanakkale geçilemeyince Rusya’ya yardım ulaşmamış; yoksulluk ve tepkiler Rusya’da <b>rejim değişikliğine</b> zemin hazırlamıştır.</p><p>II ✓: 1878’de Rusya’ya bırakılan Kars, Ardahan ve Batum, Brest-Litovsk ile Osmanlı denetimine geçmiştir.</p><p>IV ✓: Rusya Mart 1918’de savaştan çekildikten sonra Osmanlı kuvvetleri Eylül 1918’de Bakü’ye ulaşmıştır.</p><p>III ✗: Metinde böyle bir bilgi yoktur; üstelik Osmanlı Devleti savaştan <b>yenik</b> çıkmış ve Ekim 1918’de Mondros Ateşkes Antlaşması’nı imzalamıştır. Bir cephedeki başarıyı savaşın sonucu sanan öğrenci III’ü ekler. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Osmanlı padişahı, halife sıfatıyla Kasım 1914’te bütün Müslümanları İtilaf Devletleri’ne karşı cihada çağırdı. İngilizler ise Arapları, bağımsız bir Arap devleti kurma vaadiyle Osmanlı Devleti’ne karşı kışkırttı. Mekke Emiri Şerif Hüseyin, 1916’da Osmanlı Devleti’ne karşı ayaklandı. Medine’yi savunan Fahrettin Paşa ise Mondros Ateşkes Antlaşması imzalandıktan sonra da bir süre teslim olmayarak kutsal şehri korumaya çalıştı.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["İngilizler, Osmanlı Devleti’ne karşı milliyetçilik akımından yararlanmıştır.", "Hicaz’daki Osmanlı askerleri, ateşkesten sonra da direnişini sürdürmüştür.", "Halifenin cihat çağrısı, bütün Müslümanları Osmanlı Devleti etrafında birleştirmeyi başarmıştır.", "Osmanlı Devleti, savaşta kutsal mekânların bulunduğu toprakları korumaya çalışmıştır."],
+  a: "C",
+  s: `<p>Halife cihat ilan etmesine rağmen Mekke Emiri Şerif Hüseyin, İngilizlerin kışkırtmasıyla Osmanlı’ya karşı ayaklanmıştır. Bu durum, cihat çağrısının <b>bütün Müslümanları birleştiremediğini</b> gösterir; C’ye ulaşılamaz.</p><p>A ✓: “Bağımsız Arap devleti” vaadi, Arap milliyetçiliğinin kullanıldığını gösterir. B ✓: Fahrettin Paşa, Mondros’tan sonra da Medine’yi teslim etmemiştir. D ✓: Medine’nin savunulması, kutsal mekânların korunma çabasıdır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Mondros Ateşkes Antlaşması imzalandıktan hemen sonra Mustafa Kemal Paşa, Suriye’den çekilen orduları yöneten Yıldırım Orduları Grubu’nun komutanlığına getirildi. İngilizler, antlaşmanın maddelerine dayanarak İskenderun’a asker çıkarmak istedi. Mustafa Kemal Paşa, İstanbul Hükûmeti’ne çektiği telgraflarda maddelerin açık olmadığını, maddeler bu şekilde yorumlanırsa işgallerin önünün alınamayacağını belirtti ve İngilizlerin İskenderun’a çıkmasına karşı çıktı. Kısa süre sonra Yıldırım Orduları Grubu kaldırıldı ve Mustafa Kemal Paşa, 13 Kasım 1918’de İstanbul’a döndü.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Mustafa Kemal Paşa, İstanbul’a dönmeden önce Samsun’a geçerek Millî Mücadele’yi başlatmıştır.", "Mondros Ateşkes Antlaşması’nın bazı maddeleri farklı biçimlerde yorumlanmaya açıktır.", "Mustafa Kemal Paşa, işgal girişimlerine ateşkesin hemen ardından tepki göstermiştir.", "Mustafa Kemal Paşa, ateşkes maddelerinin Osmanlı topraklarının işgaline zemin hazırlayabileceğini öngörmüştür."],
+  a: "A",
+  s: `<p>Metne göre Mustafa Kemal Paşa, 13 Kasım 1918’de <b>İstanbul’a</b> dönmüştür. Samsun’a çıkışı ise yaklaşık altı ay sonra, 19 Mayıs 1919’dadır. Bu kronoloji hatası nedeniyle A’ya ulaşılamaz.</p><p>B ✓: “Maddelerin açık olmadığı” ve İngilizlerin maddelere dayanarak çıkarma istemesi, maddelerin farklı yorumlanabildiğini gösterir. C ✓: Tepki, ateşkesin hemen ardından gösterilmiştir. D ✓: “Maddeler bu şekilde yorumlanırsa işgallerin önü alınamaz” uyarısı bu öngörüyü gösterir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Mondros Ateşkes Antlaşması’ndan sonra Osmanlı Devleti’nde yaşanan bazı gelişmeler aşağıda verilmiştir.</p>
+<div class="box">• Antlaşma gereğince Osmanlı ordusunun büyük bölümü terhis edilmeye, silah ve cephanesi toplanmaya başlandı.<br>
+• İttihat ve Terakki’nin önde gelen liderleri yurt dışına gitti.<br>
+• Padişah Vahdettin, Aralık 1918’de Meclis-i Mebusan’ı kapattı.<br>
+• İtilaf Devletleri, ateşkes maddelerini gerekçe göstererek Osmanlı topraklarının çeşitli yerlerini işgal etti.</div>
+<p>Bu gelişmelere göre,</p>
+<div class="box">I. Osmanlı Devleti fiilen sona ermiştir.<br>
+II. Osmanlı Devleti hukuken sona ermiştir.<br>
+III. Ülke, milletin iradesini temsil eden bir meclisten yoksun kalmıştır.<br>
+IV. Ülkenin savunma gücü zayıflatılmıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "II ve III", "I, III ve IV", "II, III ve IV"],
+  a: "C",
+  s: `<p>Ordusu dağıtılan, meclisi kapatılan ve toprakları işgal edilen devlet, devlet olma özelliklerini kullanamaz hâle gelmiştir; bu yüzden Mondros ile Osmanlı Devleti <b>fiilen</b> sona ermiştir (I ✓). Meclis-i Mebusan’ın kapatılması, milletin temsilcilerinin devre dışı kaldığını gösterir (III ✓). Ordunun terhisi ve silahların toplanması savunma gücünü zayıflatmıştır (IV ✓).</p><p>II ✗: Mondros bir <b>ateşkes</b> antlaşmasıdır; padişah ve hükûmet görevdedir. Osmanlı Devleti hukuken 1 Kasım 1922’de saltanatın kaldırılmasıyla sona ermiştir. “Fiilen” ile “hukuken”i karıştıran öğrenci II’yi seçer. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box">1917’de İtilaf Devletleri arasında yapılan gizli bir antlaşmada İzmir ve çevresi İtalya’ya bırakılmıştı. Savaştan sonra toplanan Paris Barış Konferansı’nda İtalya, istediklerini elde edemeyince Antalya ve çevresine asker çıkardı. İtalya’nın Doğu Akdeniz’de güçlenmesini istemeyen İngiltere, Yunanistan’ın İzmir’e asker çıkarmasını destekledi. Bölgedeki Rumların güvenliğinin tehlikede olduğu ileri sürülerek Yunanistan’a izin verildi ve Yunan ordusu 15 Mayıs 1919’da İzmir’i işgal etti.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
+  c: ["İzmir’in geleceği, bölge halkının oylarıyla belirlenmiştir.", "Savaş sırasında yapılan gizli antlaşmalar, barış konferansında aynen uygulanmıştır.", "İtilaf Devletleri arasında Osmanlı topraklarının paylaşılması konusunda çıkar çatışması yaşanmıştır.", "Yunanistan, İzmir’i İtilaf Devletleri’nin onayı olmadan işgal etmiştir."],
+  a: "C",
+  s: `<p>İzmir önce İtalya’ya vaat edilmiş, sonra İngiltere İtalya’nın güçlenmesini istemediği için Yunanistan’ı desteklemiştir. Bu, İtilaf Devletleri arasında paylaşım konusunda <b>çıkar çatışması</b> olduğunu gösterir (C ✓).</p><p>A ✗: Metinde halk oylaması yoktur; karar galip devletlerce verilmiştir. B ✗: Gizli antlaşmada İzmir İtalya’ya bırakılmışken Yunanistan’a işgal ettirilmiştir; antlaşma aynen uygulanmamıştır. D ✗: Yunanistan’a İtilaf Devletleri tarafından <b>izin verilmiştir</b>. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Mondros Ateşkes Antlaşması’ndan sonra işgallere karşı gösterilen bazı direnişler aşağıdaki tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Yer ve tarih</th><th>Gelişme</th></tr>
+<tr><td>Dörtyol, 19 Aralık 1918</td><td>Bölge halkı, Fransız işgal birliklerine karşı silahlı direniş gösterdi. Bu direniş, Mondros’tan sonra işgalcilere karşı yapılan ilk silahlı direniş olarak kabul edilir.</td></tr>
+<tr><td>İzmir, 15 Mayıs 1919</td><td>Yunan askerleri şehre çıkarken gazeteci Hasan Tahsin işgalcilere ateş açtı.</td></tr>
+<tr><td>Maraş, Antep ve Urfa, 1919-1920</td><td>Bölge halkı, Fransız işgaline karşı Kuvâ-yı Millîye birlikleri oluşturarak direndi.</td></tr>
+</table>
+<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Bu direnişler, TBMM’nin kurduğu düzenli ordu birlikleri tarafından yürütülmüştür.", "İşgallere karşı silahlı direniş, Mustafa Kemal Paşa’nın Samsun’a çıkışından önce başlamıştır.", "İşgallere karşı direniş, yurdun farklı bölgelerinde ortaya çıkmıştır.", "Halk, işgallere karşı kendi imkânlarıyla mücadele etmiştir."],
+  a: "A",
+  s: `<p>Tablodaki direnişler halkın ve gönüllülerin (Kuvâ-yı Millîye) direnişleridir. Üstelik Dörtyol (1918) ve İzmir (Mayıs 1919) direnişleri yaşandığında TBMM henüz açılmamıştı (23 Nisan 1920). Bu yüzden A söylenemez.</p><p>B ✓: Dörtyol direnişi Aralık 1918’dedir; Samsun’a çıkış 19 Mayıs 1919’dadır. C ✓: Güneyde (Dörtyol, Maraş, Antep, Urfa) ve batıda (İzmir) direnişler vardır. D ✓: Kuvâ-yı Millîye birlikleri halkın kendi imkânlarıyla kurulmuştur. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir okul tiyatrosunda, Mondros Ateşkes Antlaşması’ndan sonra kurulan cemiyetlerin üyelerini canlandıran öğrencilere aşağıdaki replikler verilmiştir.</p>
+<div class="dialog"><div><b>Kerem:</b> Trakya’nın Yunanistan’a bırakılmasına izin vermemeliyiz. Bölgenin Türk yurdu olduğunu bütün dünyaya duyuralım.</div>
+<div><b>Elif:</b> Devletimiz çok yıprandı. Bence Amerika’nın himayesine girmekten başka çare yok.</div>
+<div><b>Arda:</b> Adana ve çevresini Fransız işgaline karşı korumalıyız; buranın Türk yurdu olduğunu anlatacağız.</div>
+<div><b>Zeynep:</b> Trabzon ve çevresinde bir Rum devleti kurulmak isteniyor; buna engel olmalıyız.</div></div>
+<p>Öğrencilerin canlandırdığı kişiler ile görüşlerine uygun cemiyetler eşleştirildiğinde aşağıdakilerden hangisi <b>yanlış</b> olur?</p>`,
+  c: ["Zeynep - Mavri Mira Cemiyeti", "Kerem - Trakya-Paşaeli Müdafaa-i Hukuk Cemiyeti", "Elif - Wilson Prensipleri Cemiyeti", "Arda - Kilikyalılar Cemiyeti"],
+  a: "A",
+  s: `<p>Mavri Mira, Rumların kurduğu ve Bizans’ı yeniden canlandırmayı amaçlayan, Millî Mücadele’ye <b>karşı</b> bir cemiyettir. Trabzon’da Rum devleti kurulmasını engellemek isteyen Zeynep’in görüşü ise Trabzon Muhafaza-i Hukuk-u Millîye Cemiyeti’ne uygundur. Bu yüzden A yanlıştır.</p><p>B ✓: Trakya-Paşaeli Müdafaa-i Hukuk Cemiyeti Trakya’yı Yunan ve Bulgar işgaline karşı korumak için kurulmuştur. C ✓: Wilson Prensipleri Cemiyeti Amerikan mandasını savunmuştur. D ✓: Kilikyalılar Cemiyeti Adana ve çevresini (Kilikya) Fransız işgaline karşı savunmuştur. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Yunan ordusunun İzmir’i işgal edip iç bölgelere doğru ilerlemesi üzerine Batı Anadolu’da Balıkesir ve Alaşehir gibi yerlerde kongreler düzenlendi. Bu kongrelerde Yunan işgaline karşı mücadele edilmesi, Kuvâ-yı Millîye birliklerinin düzene sokulması ve bu birliklerin asker ile para ihtiyacının bölge halkından karşılanması kararlaştırıldı. Kongrelerde İzmir’in işgali tanınmadı ve bölge halkının işgal karşısında sessiz kalmayacağı açıklandı.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Kongreler, işgal tehdidi altındaki bölgenin kendini savunma çabasının ürünüdür.", "Kongrelerde alınan kararlar, bütün yurdu ilgilendiren ulusal kararlardır.", "Kuvâ-yı Millîye’nin ihtiyaçları halkın desteğiyle karşılanmaya çalışılmıştır.", "Batı Anadolu halkı, İzmir’in işgalini kabul etmemiştir."],
+  a: "B",
+  s: `<p>Balıkesir ve Alaşehir kongreleri, Yunan işgaline uğrayan <b>Batı Anadolu</b> için toplanmıştır; kararlar bu bölgenin savunmasıyla ilgilidir. Bu kongreler <b>bölgesel</b> niteliktedir; bu yüzden B’ye ulaşılamaz. Bütün yurdu ilgilendiren kararlar Sivas Kongresi gibi ulusal kongrelerde alınmıştır.</p><p>A ✓: Kongreler, Yunan ilerleyişine karşı bölge halkının örgütlenmesidir. C ✓: Asker ve para ihtiyacı halktan karşılanacaktır. D ✓: İzmir’in işgali tanınmamıştır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, Millî Mücadele’nin hazırlık döneminde kurulan Temsil Heyeti ile ilgili aşağıdaki bilgi kartını hazırlamıştır.</p>
+<div class="fig"><svg viewBox="0 0 500 171" width="500" role="img" aria-label="Temsil Heyeti bilgi kartı" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="500" height="171" fill="#ffffff"/>
+<rect x="4" y="4" width="492" height="163" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<rect x="4" y="4" width="492" height="30" rx="10" fill="#2563eb"/>
+<rect x="4" y="24" width="492" height="10" fill="#2563eb"/>
+<text x="250" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">TEMSİL HEYETİ (HEYET-İ TEMSİLİYE)</text>
+<text x="20" y="54" font-size="11" fill="#1e293b">• Kuruluş: Erzurum Kongresi’nde (1919) dokuz kişilik bir kurul olarak seçildi.</text>
+<text x="20" y="74" font-size="11" fill="#1e293b">• Başkan: Mustafa Kemal Paşa</text>
+<text x="20" y="94" font-size="11" fill="#1e293b">• Sivas Kongresi’nde yeni üyelerle genişletildi ve bütün yurdu temsil eden bir</text>
+<text x="20" y="109" font-size="11" fill="#1e293b">   kurul hâline getirildi.</text>
+<text x="20" y="129" font-size="11" fill="#1e293b">• Merkez: Önce Sivas; 27 Aralık 1919’dan itibaren Ankara</text>
+<text x="20" y="149" font-size="11" fill="#1e293b">• Görevinin sona ermesi: Büyük Millet Meclisi’nin açılmasıyla</text>
+</svg></div>
+<p>Bu kartta yer alan bilgiler kullanılarak aşağıdaki sorulardan hangisinin cevabına <b>ulaşılabilir</b>?</p>`,
+  c: ["Temsil Heyeti’nde Mustafa Kemal Paşa dışında hangi kişiler görev almıştır?", "Temsil Heyeti’nin üye sayısı Sivas Kongresi’nde kaça çıkmıştır?", "Temsil Heyeti, Millî Mücadele’yi hangi şehirlerden yönetmiştir?", "Büyük Millet Meclisi hangi tarihte açılmıştır?"],
+  a: "C",
+  s: `<p>Kartta Temsil Heyeti’nin merkezinin önce <b>Sivas</b>, 27 Aralık 1919’dan itibaren <b>Ankara</b> olduğu yazmaktadır; C’deki sorunun cevabı karttadır.</p><p>A ✗: Kartta yalnızca başkanın adı vardır. B ✗: Kartta heyetin Sivas’ta “genişletildiği” yazar ama yeni üye sayısı verilmez. D ✗: Kartta heyetin görevinin Meclis’in açılmasıyla bittiği yazar; açılış tarihi (23 Nisan 1920) kartta yoktur. Bilgiyi bildiği hâlde kartta aramayan öğrenci bu şıkka kayar. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Erzurum Kongresi’nde alınan bazı kararlar ve bu kararlarla ilişkilendirilen ilkeler aşağıdaki tabloda eşleştirilmiştir.</p>
+<table class="rt">
+<tr><th></th><th>Erzurum Kongresi kararı</th><th>İlişkilendirilen ilke</th></tr>
+<tr><td>I</td><td>Millî sınırlar içinde vatan bir bütündür, parçalanamaz.</td><td>Ülke bütünlüğünün korunması</td></tr>
+<tr><td>II</td><td>Manda ve himaye kabul olunamaz.</td><td>Tam bağımsızlık</td></tr>
+<tr><td>III</td><td>Kuvâ-yı Millîye’yi etkin, millî iradeyi hâkim kılmak esastır.</td><td>Millî egemenlik</td></tr>
+<tr><td>IV</td><td>Millî Meclis’in hemen toplanması ve hükûmet işlerinin Meclis’in denetimi altında yürütülmesi için çalışılacaktır.</td><td>Yürütme yetkisinin denetimsiz olarak padişaha bırakılması</td></tr>
+</table>
+<p>Tablodaki eşleştirmelerden hangisi <b>hatalıdır</b>?</p>`,
+  c: ["I", "II", "III", "IV"],
+  a: "D",
+  s: `<p>IV. kararda hükûmet işlerinin <b>Meclis’in denetimi altında</b> yürütülmesi istenmektedir. Bu, yönetimde milletin temsilcilerinin söz sahibi olması yani <b>millî egemenlik</b> anlayışıdır. Yürütmenin denetimsiz biçimde padişaha bırakılması bu kararla <b>çelişir</b>; IV. eşleştirme hatalıdır (D).</p><p>I ✓: Vatanın parçalanamayacağı → ülke bütünlüğü. II ✓: Başka bir devletin denetimine girmeyi reddetmek → tam bağımsızlık. III ✓: Millî iradenin hâkim kılınması → millî egemenlik. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Millî Mücadele yıllarında halkı doğru bilgilendirmek ve İtilaf Devletleri’nin olumsuz propagandasına karşı koymak amacıyla çeşitli yayın organları kurulmuştur. Bu döneme ait bazı gelişmeler aşağıdaki zaman çizelgesinde verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 188" width="560" role="img" aria-label="Millî Mücadele’de basın ve yayın" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="188" fill="#ffffff"/>
+<line x1="128" y1="10" x2="128" y2="178" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="128" cy="21" r="6" fill="#475569"/>
+<text x="114" y="25" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">4-11 Eylül 1919</text>
+<rect x="142" y="10" width="412" height="23" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<text x="150" y="25" font-size="11" fill="#1e293b">Sivas Kongresi toplandı.</text>
+<circle cx="128" cy="50" r="6" fill="#2563eb"/>
+<text x="114" y="54" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">14 Eylül 1919</text>
+<rect x="142" y="39" width="412" height="23" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="54" font-size="11" fill="#1e293b">Sivas’ta İrade-i Millîye gazetesi yayımlanmaya başladı.</text>
+<circle cx="128" cy="79" r="6" fill="#475569"/>
+<text x="114" y="83" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">27 Aralık 1919</text>
+<rect x="142" y="68" width="412" height="23" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<text x="150" y="83" font-size="11" fill="#1e293b">Temsil Heyeti Ankara’ya geldi.</text>
+<circle cx="128" cy="108" r="6" fill="#2563eb"/>
+<text x="114" y="112" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">10 Ocak 1920</text>
+<rect x="142" y="97" width="412" height="23" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="112" font-size="11" fill="#1e293b">Ankara’da Hâkimiyet-i Millîye gazetesi yayımlanmaya başladı.</text>
+<circle cx="128" cy="137" r="6" fill="#2563eb"/>
+<text x="114" y="141" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">6 Nisan 1920</text>
+<rect x="142" y="126" width="412" height="23" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="141" font-size="11" fill="#1e293b">Anadolu Ajansı kuruldu.</text>
+<circle cx="128" cy="166" r="6" fill="#16a34a"/>
+<text x="114" y="170" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">23 Nisan 1920</text>
+<rect x="142" y="155" width="412" height="23" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="150" y="170" font-size="11" fill="#1e293b">Büyük Millet Meclisi Ankara’da açıldı.</text>
+</svg></div>
+<p>Buna göre,</p>
+<div class="box">I. Basın ve yayın, Millî Mücadele’de kamuoyu oluşturmak için kullanılmıştır.<br>
+II. Anadolu Ajansı, Büyük Millet Meclisi’nin kararıyla kurulmuştur.<br>
+III. Hâkimiyet-i Millîye gazetesi, Temsil Heyeti Ankara’ya geldikten sonra yayımlanmaya başlamıştır.<br>
+IV. İrade-i Millîye gazetesi, Sivas Kongresi toplanmadan önce yayımlanmaya başlamıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II, III ve IV"],
+  a: "C",
+  s: `<p>I ✓: Yayın organlarının halkı bilgilendirmek ve propagandaya karşı koymak için kurulduğu metinde belirtilmiştir. III ✓: Temsil Heyeti 27 Aralık 1919’da Ankara’ya gelmiş, gazete 10 Ocak 1920’de çıkmaya başlamıştır.</p><p>II ✗: Anadolu Ajansı 6 Nisan 1920’de, yani Meclis açılmadan (23 Nisan 1920) <b>önce</b> kurulmuştur; Meclis’in kararıyla kurulmuş olamaz. IV ✗: İrade-i Millîye kongre bittikten sonra, 14 Eylül 1919’da çıkmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Sivas Kongresi’nden sonra yaşanan bazı gelişmeler aşağıda <b>karışık</b> olarak verilmiştir.</p>
+<div class="box">I. Son Osmanlı Mebusan Meclisi İstanbul’da toplandı.<br>
+II. Temsil Heyeti Ankara’ya geldi.<br>
+III. Misak-ı Millî kararları kabul edildi.<br>
+IV. İstanbul, İtilaf Devletleri tarafından resmen işgal edildi.<br>
+V. İstanbul Hükûmeti ile Temsil Heyeti arasında Amasya Görüşmeleri yapıldı.</div>
+<p>Bu gelişmelerin oluş sırası aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
+  c: ["II - V - I - III - IV", "V - I - II - IV - III", "V - II - I - III - IV", "I - V - III - II - IV"],
+  a: "C",
+  s: `<p>Tarihler: Amasya Görüşmeleri 20-22 Ekim 1919 (V) → Temsil Heyeti’nin Ankara’ya gelişi 27 Aralık 1919 (II) → Mebusan Meclisi’nin İstanbul’da açılışı 12 Ocak 1920 (I) → Misak-ı Millî’nin kabulü 28 Ocak 1920 (III) → İstanbul’un resmen işgali 16 Mart 1920 (IV). Doğru sıra C’dir.</p><p>Mantık zinciri de bunu doğrular: Mebusan seçimleri Amasya Görüşmeleri’nde kararlaştırılmış, Misak-ı Millî bu Meclis’te kabul edilmiş, İtilaf Devletleri de buna tepki olarak İstanbul’u resmen işgal etmiştir. A seçeneği Amasya Görüşmeleri’ni, B seçeneği Misak-ı Millî ile işgali, D seçeneği Meclis’in açılışını yanlış sıraya koyar. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Amasya Görüşmeleri’nde alınan karar doğrultusunda yapılan Mebusan Meclisi seçimlerinde Mustafa Kemal Paşa, Erzurum milletvekili seçildi. Ancak Meclis’in İtilaf Devletleri’nin denetimindeki İstanbul’da toplanmasını sakıncalı bulduğu için İstanbul’a gitmedi. Milletvekillerinden, Meclis toplanınca kendisini Meclis Başkanı seçmelerini ve Temsil Heyeti’nin görüşlerini savunacak bir grup kurmalarını istedi. Milletvekilleri Felah-ı Vatan adlı grubu kurdu, ancak Mustafa Kemal Paşa’yı Meclis Başkanı seçmedi.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Misak-ı Millî kararları, Meclis Başkanı Mustafa Kemal Paşa’nın yönetiminde alınmıştır.", "Mustafa Kemal Paşa, Meclis’in güvenliği konusunda kaygı taşımaktadır.", "Mustafa Kemal Paşa, Millî Mücadele’nin Meclis’te de desteklenmesini amaçlamıştır.", "Mebusan Meclisi seçimlerinin yapılması, Temsil Heyeti ile İstanbul Hükûmeti arasındaki görüşmelerin sonuçlarındandır."],
+  a: "A",
+  s: `<p>Metne göre Mustafa Kemal Paşa İstanbul’a <b>gitmemiş</b> ve milletvekilleri onu Meclis Başkanı <b>seçmemiştir</b>. Misak-ı Millî bu Meclis’te 28 Ocak 1920’de kabul edilmiştir ama Mustafa Kemal Paşa’nın başkanlığında değil. Bu yüzden A söylenemez.</p><p>B ✓: Meclis’in İtilaf denetimindeki İstanbul’da toplanmasını sakıncalı bulmuştur. C ✓: Temsil Heyeti’nin görüşlerini savunacak bir grup kurulmasını istemiştir. D ✓: Seçimler Amasya Görüşmeleri’nde alınan karar doğrultusunda yapılmıştır. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki tabloda Misak-ı Millî kararları ile Sevr Antlaşması’nın bazı hükümleri karşılaştırılmıştır.</p>
+<table class="rt">
+<tr><th>Konu</th><th>Misak-ı Millî (28 Ocak 1920)</th><th>Sevr Antlaşması (10 Ağustos 1920)</th></tr>
+<tr><td>Boğazlar</td><td>İstanbul ve Marmara Denizi’nin güvenliği sağlanırsa Boğazlar dünya ticaretine açılabilir.</td><td>Boğazlar, bayrağı ve bütçesi olan uluslararası bir komisyonun yönetimine bırakılacak.</td></tr>
+<tr><td>Kapitülasyonlar</td><td>Siyasi, adli ve mali gelişmemizi engelleyen sınırlamalar kaldırılacak.</td><td>Kapitülasyonlar devam edecek ve bütün İtilaf Devletleri bunlardan yararlanacak.</td></tr>
+<tr><td>Doğu Anadolu</td><td>Mondros imzalandığında Türk ve Müslüman çoğunluğun yaşadığı yerler bir bütündür, parçalanamaz.</td><td>Doğu Anadolu’da bir Ermeni devleti kurulacak.</td></tr>
+</table>
+<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Sevr Antlaşması, Misak-ı Millî kararlarıyla çelişen hükümler içermektedir.", "Misak-ı Millî kararları, Sevr Antlaşması’na tepki olarak alınmıştır.", "Misak-ı Millî’de Boğazların ticarete açılması bir şarta bağlanmıştır.", "Misak-ı Millî, tam bağımsızlığı engelleyen ayrıcalıkların kaldırılmasını öngörmüştür."],
+  a: "B",
+  s: `<p>Tablodaki tarihlere göre Misak-ı Millî (28 Ocak 1920), Sevr’den (10 Ağustos 1920) yaklaşık altı buçuk ay <b>önce</b> kabul edilmiştir. Önce alınan bir karar, sonra imzalanan bir antlaşmaya tepki olamaz; B söylenemez. (Tersi doğrudur: Sevr’i TBMM, Misak-ı Millî’ye aykırı olduğu için tanımamıştır.)</p><p>A ✓: Üç konuda da hükümler birbirinin karşıtıdır. C ✓: “Güvenliği sağlanırsa” ifadesi bir şarttır. D ✓: Kapitülasyonlar, tam bağımsızlığı engelleyen sınırlamalardır ve kaldırılması istenmiştir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Misak-ı Millî kararları, son Osmanlı Mebusan Meclisi’nde 28 Ocak 1920’de kabul edildi ve 17 Şubat 1920’de kamuoyuna açıklandı. Bu kararlarla Türk milletinin hangi sınırlar içinde bağımsız yaşamak istediği ilan edildi. Kararlar, yabancı devletlerin meclislerine de bildirildi. Misak-ı Millî’de belirlenen hedefler, Millî Mücadele boyunca Büyük Millet Meclisi’nin dış politikasının temelini oluşturdu.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Misak-ı Millî, Osmanlı Devleti’nin meclisinde alınmış kararlardan oluşur.<br>
+II. Misak-ı Millî ile dünya kamuoyunun Türk milletinin hedeflerinden haberdar edilmesi amaçlanmıştır.<br>
+III. Misak-ı Millî kararları, Büyük Millet Meclisi’nde kabul edilmiştir.<br>
+IV. Misak-ı Millî’de belirlenen sınırların tamamına Millî Mücadele sonunda ulaşılmıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, II ve III"],
+  a: "A",
+  s: `<p>I ✓: Kararlar son Osmanlı Mebusan Meclisi’nde kabul edilmiştir. II ✓: Kararların yabancı devletlerin meclislerine bildirilmesi, dünya kamuoyuna duyurma amacını gösterir.</p><p>III ✗: Büyük Millet Meclisi, Misak-ı Millî’yi dış politikasının temeli yapmıştır ama kararları <b>kabul eden</b> meclis değildir; BMM 23 Nisan 1920’de açılmıştır. İki meclisi karıştıran öğrenci III’ü ekler. IV ✗: Metinde bu konuda bilgi yoktur; ayrıca Musul, Batum ve Batı Trakya gibi yerler Misak-ı Millî sınırlarına katılamamıştır. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki tabloda Mustafa Kemal Paşa’nın 1919-1920 yıllarında üstlendiği bazı görevler ve sıfatlar verilmiştir.</p>
+<table class="rt">
+<tr><th>Tarih</th><th>Görev / sıfat</th></tr>
+<tr><td>30 Nisan 1919</td><td>İstanbul Hükûmeti tarafından 9. Ordu Müfettişi olarak atandı.</td></tr>
+<tr><td>8-9 Temmuz 1919</td><td>Resmî görevinden ve askerlikten istifa etti.</td></tr>
+<tr><td>23 Temmuz 1919</td><td>Erzurum Kongresi’nin başkanlığına seçildi.</td></tr>
+<tr><td>7 Ağustos 1919</td><td>Erzurum Kongresi’nde seçilen Temsil Heyeti’nin başkanı oldu.</td></tr>
+<tr><td>1919 sonu</td><td>Mebusan Meclisi seçimlerinde Erzurum milletvekili seçildi.</td></tr>
+<tr><td>24 Nisan 1920</td><td>Büyük Millet Meclisi Başkanı seçildi.</td></tr>
+</table>
+<p>Tabloya göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Mustafa Kemal Paşa, Sivas Kongresi’ne Büyük Millet Meclisi Başkanı sıfatıyla katılmıştır.", "Mustafa Kemal Paşa, Erzurum Kongresi’ne asker olarak değil sivil olarak katılmıştır.", "Mustafa Kemal Paşa, Temsil Heyeti başkanıyken milletvekili de seçilmiştir.", "Mustafa Kemal Paşa, Anadolu’ya İstanbul Hükûmeti’nin verdiği resmî bir görevle geçmiştir."],
+  a: "A",
+  s: `<p>Sivas Kongresi 4-11 Eylül 1919’da toplanmıştır. Tabloya göre Mustafa Kemal Paşa Meclis Başkanlığına <b>24 Nisan 1920</b>’de seçilmiştir; Büyük Millet Meclisi Sivas Kongresi sırasında henüz yoktur. Bu yüzden A söylenemez. Sivas Kongresi’ne Temsil Heyeti Başkanı olarak katılmıştır.</p><p>B ✓: 8-9 Temmuz’da askerlikten istifa etmiş, 23 Temmuz’da kongre başkanı olmuştur. C ✓: 7 Ağustos 1919’dan beri Temsil Heyeti başkanıdır ve 1919 sonunda milletvekili seçilmiştir. D ✓: 9. Ordu Müfettişliği, İstanbul Hükûmeti’nin verdiği resmî bir görevdir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<div class="box">23 Nisan 1920’de Ankara’da açılan Büyük Millet Meclisi’nin üyelerinin bir kısmı, İstanbul’dan Ankara’ya gelebilen son Osmanlı Mebusan Meclisi üyeleriydi; diğerleri ise yapılan seçimlerle belirlenen yeni üyelerdi. Meclis, yasama ve yürütme yetkilerini kendi üzerinde topladı. Bakanlar, Meclis üyeleri arasından Meclis tarafından tek tek seçildi ve bakanlardan oluşan ilk hükûmet 3 Mayıs 1920’de kuruldu. Bakanlar Meclis’e karşı sorumluydu ve Meclis tarafından görevden alınabiliyordu.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Büyük Millet Meclisi’nde son Osmanlı Mebusan Meclisi’nde görev yapmış üyeler de bulunmaktadır.<br>
+II. Büyük Millet Meclisi’nde Meclis hükûmeti sistemi uygulanmıştır.<br>
+III. Büyük Millet Meclisi, açıldığı gün hükûmetini kurmuştur.<br>
+IV. Büyük Millet Meclisi’nin bütün üyeleri yeni yapılan seçimlerle belirlenmiştir.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p>I ✓: Üyelerin bir kısmı Ankara’ya gelebilen son Osmanlı Mebusan Meclisi üyeleridir. II ✓: Bakanların Meclis tarafından seçilmesi, Meclis’e karşı sorumlu olması ve Meclis tarafından görevden alınabilmesi <b>Meclis hükûmeti sistemidir</b>.</p><p>III ✗: Meclis 23 Nisan’da açılmış, ilk hükûmet 3 Mayıs 1920’de kurulmuştur. IV ✗: Üyelerin bir kısmı eski Mebusan üyeleridir; IV metinle çelişir. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki şemada Büyük Millet Meclisi’ne karşı çıkan bazı ayaklanmalar, çıkış nedenlerine göre sınıflandırılmıştır.</p>
+<div class="fig"><svg viewBox="0 0 560 204" width="560" role="img" aria-label="Büyük Millet Meclisi’ne karşı çıkan bazı ayaklanmaların sınıflandırılması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="204" fill="#ffffff"/>
+<text x="280" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">TBMM’ye karşı çıkan bazı ayaklanmalar</text>
+<rect x="6" y="32" width="176" height="164" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="94" y="52" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">İstanbul Hükûmeti ve</text>
+<text x="94" y="67" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">İtilaf Devletleri’nin</text>
+<text x="94" y="82" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">kışkırtmasıyla çıkanlar</text>
+<text x="16" y="103" font-size="11" fill="#1e293b">• Anzavur Ayaklanması</text>
+<text x="16" y="124" font-size="11" fill="#1e293b">• Bolu, Düzce, Hendek ve</text>
+<text x="16" y="139" font-size="11" fill="#1e293b">   Adapazarı ayaklanmaları</text>
+<text x="16" y="160" font-size="11" fill="#1e293b">• Yozgat Ayaklanması</text>
+<rect x="192" y="32" width="176" height="164" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="52" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Kuvâ-yı Millîye</text>
+<text x="280" y="67" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">birliklerinin</text>
+<text x="280" y="82" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">çıkardıkları</text>
+<text x="202" y="103" font-size="11" fill="#1e293b">• Çerkez Ethem</text>
+<text x="202" y="124" font-size="11" fill="#1e293b">• Demirci Mehmet Efe</text>
+<text x="202" y="145" font-size="11" font-weight="bold" fill="#b45309">Ortak neden: Düzenli</text>
+<text x="202" y="160" font-size="11" font-weight="bold" fill="#b45309">orduya katılmak</text>
+<text x="202" y="175" font-size="11" font-weight="bold" fill="#b45309">istememeleri</text>
+<rect x="378" y="32" width="176" height="164" rx="7" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="466" y="52" font-size="12" font-weight="bold" fill="#5b21b6" text-anchor="middle">Azınlıkların</text>
+<text x="466" y="67" font-size="12" font-weight="bold" fill="#5b21b6" text-anchor="middle">çıkardıkları</text>
+<text x="388" y="88" font-size="11" fill="#1e293b">• Karadeniz’de Pontus</text>
+<text x="388" y="103" font-size="11" fill="#1e293b">   Rumlarının ayaklanması</text>
+<text x="388" y="124" font-size="11" font-weight="bold" fill="#7c3aed">Amaç: Bölgede ayrı bir</text>
+<text x="388" y="139" font-size="11" font-weight="bold" fill="#7c3aed">devlet kurmak</text>
+</svg></div>
+<p>Şemadaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Ayaklanmaların bir kısmı, düzenli ordu kurulmasına tepki olarak ortaya çıkmıştır.", "Bazı ayaklanmalar, Millî Mücadele’yi içeriden zayıflatmak isteyen güçlerce desteklenmiştir.", "Ayaklanmalar, Büyük Millet Meclisi’nin otoritesine yönelik farklı kaynaklardan gelen tehditlerdir.", "Ayaklanmaların tamamı, azınlıkların bağımsız devlet kurma amacına hizmet etmiştir."],
+  a: "D",
+  s: `<p>Şemada ayaklanmalar üç farklı gruba ayrılmıştır; ayrı devlet kurma amacı yalnızca azınlıkların çıkardığı ayaklanmalar için yazılmıştır. Anzavur ya da Çerkez Ethem ayaklanmalarının böyle bir amacı yoktur. “Tamamı” genellemesi yanlıştır; D söylenemez.</p><p>A ✓: Çerkez Ethem ve Demirci Mehmet Efe, düzenli orduya katılmak istemedikleri için ayaklanmıştır. B ✓: İstanbul Hükûmeti ve İtilaf Devletleri, Meclis’i içeriden zayıflatmak için bazı ayaklanmaları kışkırtmıştır. C ✓: Ayaklanmaların farklı nedenleri olsa da hepsi Meclis’in otoritesine karşı çıkmıştır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Nisan 1920’de İstanbul Hükûmeti’nde Şeyhülislam olan Dürrizade Abdullah Efendi, Millî Mücadele’yi yürütenlerin “asi” olduğunu ve öldürülmelerinin dinen uygun olduğunu bildiren bir fetva yayımladı. Bunun üzerine Ankara Müftüsü Rifat (Börekçi) Efendi’nin öncülüğünde Anadolu’daki birçok müftü bir karşı fetva hazırladı. Karşı fetvada, halife düşman esareti altında bulunduğu için İstanbul’dan verilen fetvanın geçersiz olduğu, halifeyi ve vatanı kurtarmak için mücadele etmenin ise dinî bir görev olduğu belirtildi.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["İstanbul Hükûmeti, Millî Mücadele’ye karşı dinî otoriteyi kullanmıştır.", "Karşı fetva, Büyük Millet Meclisi’nin kararıyla İstanbul’daki Şeyhülislamlık makamınca yayımlanmıştır.", "Millî Mücadele yanlıları da halkı etkilemek için din adamlarının desteğine başvurmuştur.", "Dönemin toplumunda dinî kurumların halk üzerindeki etkisi önemlidir."],
+  a: "B",
+  s: `<p>Karşı fetvayı Ankara Müftüsü Rifat Efendi öncülüğünde <b>Anadolu’daki müftüler</b> hazırlamıştır; İstanbul’daki Şeyhülislamlık ise Millî Mücadele’ye <b>karşı</b> fetva veren makamdır. Metinde Meclis’in böyle bir kararından da söz edilmez. Bu yüzden B’ye ulaşılamaz.</p><p>A ✓: Fetva, hükûmetin Şeyhülislamı tarafından verilmiştir. C ✓: Millî Mücadeleciler müftülerin karşı fetvasıyla cevap vermiştir. D ✓: İki tarafın da fetvaya başvurması, halkı etkilemede dinin önemli olduğunu gösterir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Mustafa Kemal Paşa, Nutuk’ta 1919 yılında Samsun’a çıktığı sırada kurtuluş için ileri sürülen görüşleri ve kendi kararını şöyle anlatır (sadeleştirilmiştir):</p>
+<div class="box">Bazıları İngiltere’nin himayesini istemeyi, bazıları Amerika’nın mandasını kabul etmeyi kurtuluş çaresi olarak görüyordu. Bazıları ise her bölgenin kendi başının çaresine bakmasını, yani bölgesel kurtuluşu savunuyordu. <i>“Bu durum karşısında tek bir karar vardı. O da millî egemenliğe dayanan, kayıtsız şartsız bağımsız yeni bir Türk devleti kurmaktı.”</i></div>
+<p>Bu metne göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Dönemin bazı aydınları, kurtuluşu güçlü bir devletin himayesinde aramıştır.", "Mustafa Kemal Paşa’nın hedefi, tam bağımsız bir devlet kurmaktır.", "Mustafa Kemal Paşa, yeni devletin yönetiminde millî egemenliği esas almayı amaçlamıştır.", "Mustafa Kemal Paşa, yeni devlet kurma kararını Samsun’a çıktığı gün yayımladığı bir genelgeyle bütün yurda duyurmuştur."],
+  a: "D",
+  s: `<p>Metinde Mustafa Kemal Paşa’nın bu kararı <b>ne zaman ve nasıl duyurduğuna</b> dair bilgi yoktur. Gerçekte de yeni bir devlet kurma hedefi 1919’da açıkça ilan edilmemiş, şartlar olgunlaştıkça adım adım uygulanmıştır. Bu yüzden D’ye ulaşılamaz.</p><p>A ✓: İngiliz himayesi ve Amerikan mandası görüşleri bunu gösterir. B ✓: “Kayıtsız şartsız bağımsız” ifadesi tam bağımsızlıktır. C ✓: “Millî egemenliğe dayanan” ifadesi bunu gösterir. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Ece, tarih dersinde Temsil Heyeti ile ilgili defterine aşağıdaki notları almıştır.</p>
+<div class="box">I. Erzurum Kongresi’nde dokuz kişilik Temsil Heyeti seçildi; başkanlığına Mustafa Kemal Paşa getirildi.<br>
+II. Sivas Kongresi’nde Temsil Heyeti, Büyük Millet Meclisi’ne bağlı bir yürütme kurulu hâline getirildi.<br>
+III. Amasya Görüşmeleri’nde İstanbul Hükûmeti, Temsil Heyeti’ni resmî olarak muhatap kabul etti.<br>
+IV. Mustafa Kemal Paşa, Temsil Heyeti ile birlikte Ankara’ya Başkomutan sıfatıyla geldi.</div>
+<p>Ece’nin notlarından hangilerinde <b>kronolojik</b> bakımdan hata yapılmıştır?</p>`,
+  c: ["I ve II", "II ve IV", "III ve IV", "I, II ve III"],
+  a: "B",
+  s: `<p>II ✗: Sivas Kongresi Eylül 1919’dadır; Büyük Millet Meclisi ise 23 Nisan 1920’de açılmıştır. Temsil Heyeti, var olmayan bir meclise bağlanamaz.</p><p>IV ✗: Temsil Heyeti 27 Aralık 1919’da Ankara’ya gelmiştir. Başkomutanlık yetkisi ise Mustafa Kemal Paşa’ya Büyük Millet Meclisi tarafından 5 Ağustos 1921’de verilmiştir.</p><p>I ✓ ve III ✓: Temsil Heyeti Erzurum’da seçilmiştir; Amasya Görüşmeleri’nde (Ekim 1919) İstanbul Hükûmeti Temsil Heyeti’ni muhatap almıştır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki akış şemasında Erzurum Kongresi’nin toplanmasına giden süreç verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 248" width="560" role="img" aria-label="Erzurum Kongresi’nin toplanmasına giden süreç akış şeması" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="248" fill="#ffffff"/>
+<rect x="50" y="6" width="460" height="59" rx="7" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="280" y="25" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">Mondros Ateşkes Antlaşması’nın 24. maddesi: Doğu Anadolu’daki altı</text>
+<text x="280" y="40" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">ilde (Vilâyat-ı Sitte) karışıklık çıkarsa İtilaf Devletleri bu illerin</text>
+<text x="280" y="55" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">herhangi bir kısmını işgal edebilecek.</text>
+<line x1="280" y1="65" x2="280" y2="79" stroke="#334155" stroke-width="2"/>
+<polygon points="274,75 286,75 280,83" fill="#334155"/>
+<rect x="50" y="85" width="460" height="44" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="280" y="104" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">Bu maddeye dayanılarak Doğu Anadolu’da bir Ermeni devleti</text>
+<text x="280" y="119" font-size="11" font-weight="bold" fill="#92400e" text-anchor="middle">kurulması tehlikesi ortaya çıktı.</text>
+<line x1="280" y1="129" x2="280" y2="143" stroke="#334155" stroke-width="2"/>
+<polygon points="274,139 286,139 280,147" fill="#334155"/>
+<rect x="50" y="149" width="460" height="29" rx="7" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+<text x="280" y="168" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">( ? )</text>
+<line x1="280" y1="178" x2="280" y2="192" stroke="#334155" stroke-width="2"/>
+<polygon points="274,188 286,188 280,196" fill="#334155"/>
+<rect x="50" y="198" width="460" height="44" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="280" y="217" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">23 Temmuz 1919’da Doğu illerinden gelen delegeler Erzurum’da</text>
+<text x="280" y="232" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">kongre hâlinde toplandı.</text>
+</svg></div>
+<p>Şemada <b>( ? )</b> ile gösterilen yere aşağıdakilerden hangisi yazılabilir?</p>`,
+  c: ["Büyük Millet Meclisi, Doğu’daki işgal tehlikesini görüşmek için bir kongre toplanmasına karar verdi.", "Sivas Kongresi’nde Doğu illeri için ayrı bir kongre yapılması kararlaştırıldı.", "Doğu illerinin haklarını savunmak için kurulan Doğu Anadolu Müdafaa-i Hukuk Cemiyeti, bölgede bir kongre toplanmasını kararlaştırdı.", "İstanbul Hükûmeti, Doğu illerinin işgale karşı savunulması için Erzurum’da kongre toplanmasını istedi."],
+  a: "C",
+  s: `<p>Ermeni devleti kurulması tehlikesine karşı Doğu illerinin haklarını savunmak için <b>Doğu Anadolu Müdafaa-i Hukuk Cemiyeti</b> (Vilâyat-ı Şarkiye Müdafaa-i Hukuk Cemiyeti) kurulmuş ve Erzurum’da bölgesel bir kongre toplanmasını kararlaştırmıştır; C doğrudur.</p><p>A ✗: Büyük Millet Meclisi 1920’de açılmıştır. B ✗: Sivas Kongresi, Erzurum Kongresi’nden sonra (Eylül 1919) toplanmıştır. D ✗: İstanbul Hükûmeti kongreleri desteklememiş, engellemeye çalışmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki krokide Mustafa Kemal Paşa’nın 1919 yılındaki yolculuğunun bazı durakları gösterilmiştir. Numaralı yerlerde yaşanan gelişmeler kroki altında verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Mustafa Kemal Paşa’nın 1919’daki yolculuğunu gösteren ölçeksiz kroki" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="250" fill="#ffffff"/>
+<rect x="0" y="0" width="560" height="250" fill="#fdfaf3"/>
+<polygon points="-1.0,8.0 -1.0,70.5 39.0,43.0 84.0,30.5 174.0,25.5 214.0,43.0 234.0,63.0 294.0,75.5 339.0,80.5 404.0,78.0 444.0,75.5 494.0,55.5 529.0,43.0 529.0,8.0" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+<text x="269" y="35.5" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">KARADENİZ</text>
+<defs><marker id="ardc2626" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker><marker id="ar2563eb" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker><marker id="ar16a34a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#16a34a"/></marker></defs>
+<line x1="235.5" y1="63.5" x2="202.0" y2="79.5" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="202.0" y1="79.5" x2="210.5" y2="95.5" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="210.5" y1="95.5" x2="246.5" y2="112.5" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="246.5" y1="112.5" x2="270.0" y2="140.5" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="270.0" y1="140.5" x2="393.5" y2="140.5" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="393.5" y1="140.5" x2="482.5" y2="133.0" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ardc2626)"/>
+<line x1="472.5" y1="145.0" x2="282.0" y2="152.5" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#ar2563eb)"/>
+<line x1="270.0" y1="140.5" x2="193.0" y2="192.0" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ar16a34a)"/>
+<line x1="193.0" y1="192.0" x2="61.5" y2="131.5" stroke="#16a34a" stroke-width="2.5" marker-end="url(#ar16a34a)"/>
+<circle cx="235.5" cy="63.5" r="9" fill="#1e293b"/>
+<text x="235.5" y="67.5" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<text x="246.7" y="55.5" font-size="11" font-weight="bold" fill="#1e293b">Samsun</text>
+<circle cx="202.0" cy="79.5" r="9" fill="#1e293b"/>
+<text x="202" y="83.5" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<text x="190.8" y="71.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Havza</text>
+<circle cx="210.5" cy="95.5" r="9" fill="#1e293b"/>
+<text x="210.5" y="99.5" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<text x="197.9" y="99.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Amasya</text>
+<circle cx="246.5" cy="112.5" r="4" fill="#475569"/>
+<text x="254.5" y="108.5" font-size="11" fill="#1e293b">Tokat</text>
+<circle cx="270.0" cy="140.5" r="9" fill="#1e293b"/>
+<text x="270" y="144.5" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<text x="256" y="156.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Sivas</text>
+<circle cx="393.5" cy="140.5" r="4" fill="#475569"/>
+<text x="393.5" y="130.5" font-size="11" fill="#1e293b" text-anchor="middle">Erzincan</text>
+<circle cx="482.5" cy="133.0" r="9" fill="#1e293b"/>
+<text x="482.5" y="137" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<text x="482.5" y="121" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Erzurum</text>
+<circle cx="193.0" cy="192.0" r="4" fill="#475569"/>
+<text x="201" y="206" font-size="11" fill="#1e293b">Kayseri</text>
+<circle cx="61.5" cy="131.5" r="9" fill="#1e293b"/>
+<text x="61.5" y="135.5" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<text x="61.5" y="153.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Ankara</text>
+<rect x="294" y="170" width="250" height="58" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+<line x1="300" y1="180" x2="330" y2="180" stroke="#dc2626" stroke-width="2.5"/>
+<text x="338" y="184" font-size="11" fill="#1e293b">Mayıs - Temmuz 1919</text>
+<line x1="300" y1="196" x2="330" y2="196" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="6,4"/>
+<text x="338" y="200" font-size="11" fill="#1e293b">Ağustos - Eylül 1919</text>
+<line x1="300" y1="212" x2="330" y2="212" stroke="#16a34a" stroke-width="2.5"/>
+<text x="338" y="216" font-size="11" fill="#1e293b">Aralık 1919</text>
+<text x="552" y="240" font-size="11" fill="#475569" text-anchor="end">Ölçeksiz kroki; bazı duraklar gösterilmemiştir.</text>
+</svg></div>
+<div class="box">1. Samsun: 19 Mayıs 1919’da karaya çıktı.<br>
+2. Havza: Havza Genelgesi’ni yayımladı.<br>
+3. Amasya: 22 Haziran 1919’da Amasya Genelgesi’ni yayımladı.<br>
+4. Erzurum: 23 Temmuz - 7 Ağustos 1919’da Erzurum Kongresi toplandı.<br>
+5. Sivas: 4-11 Eylül 1919’da Sivas Kongresi toplandı.<br>
+6. Ankara: 27 Aralık 1919’da Temsil Heyeti ile birlikte Ankara’ya geldi.</div>
+<p>Kroki ve verilen bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Mustafa Kemal Paşa, Erzurum Kongresi’nden sonra yeniden batıya doğru yönelmiştir.", "Mustafa Kemal Paşa, Amasya Genelgesi’nde toplanacağı duyurulan Sivas Kongresi’ne katılmadan Ankara’ya geçmiştir.", "Krokide gösterilen genelgeler, kongrelerden önce yayımlanmıştır.", "Temsil Heyeti’nin Ankara’ya gelmesiyle Millî Mücadele’nin yönetim merkezi Sivas’ın batısına taşınmıştır."],
+  a: "B",
+  s: `<p>Krokiye göre Mustafa Kemal Paşa Ağustos-Eylül 1919’da Erzurum’dan Sivas’a gelmiş ve 4-11 Eylül’de Sivas Kongresi toplanmıştır; Ankara’ya ise Aralık 1919’da geçmiştir. Yani Sivas Kongresi’ne katılmıştır; B söylenemez.</p><p>A ✓: Erzurum’dan sonra rota Sivas’a, yani batıya dönmektedir. C ✓: Havza (Mayıs) ve Amasya (22 Haziran) genelgeleri, Erzurum (Temmuz) ve Sivas (Eylül) kongrelerinden öncedir. D ✓: Ankara, Sivas’ın batısındadır. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>I. Dünya Savaşı’ndan sonra toplanan Paris Barış Konferansı’nın ardından galip devletlerin yenilen devletlerle imzaladığı barış antlaşmaları aşağıdaki tabloda verilmiştir.</p>
+<table class="rt">
+<tr><th>Yenilen devlet</th><th>Antlaşma</th><th>İmzalandığı tarih</th></tr>
+<tr><td>Almanya</td><td>Versay</td><td>28 Haziran 1919</td></tr>
+<tr><td>Avusturya</td><td>Saint-Germain (Sen Jermen)</td><td>10 Eylül 1919</td></tr>
+<tr><td>Bulgaristan</td><td>Nöyyi</td><td>27 Kasım 1919</td></tr>
+<tr><td>Macaristan</td><td>Triyanon</td><td>4 Haziran 1920</td></tr>
+<tr><td>Osmanlı Devleti</td><td>Sevr</td><td>10 Ağustos 1920</td></tr>
+</table>
+<p>Tabloya göre,</p>
+<div class="box">I. Yenilen devletlerin her biriyle ayrı bir barış antlaşması imzalanmıştır.<br>
+II. Tablodaki antlaşmalardan en son imzalanan, Osmanlı Devleti ile yapılan antlaşmadır.<br>
+III. Sevr Antlaşması, Osmanlı Devleti’nde onaylanarak yürürlüğe girmiştir.<br>
+IV. Savaş öncesinde tek bir devlet olan Avusturya-Macaristan, savaş sonunda ayrı devletler hâlinde barış imzalamıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve III", "I, II ve IV", "II, III ve IV", "I, II, III ve IV"],
+  a: "B",
+  s: `<p>I ✓: Her yenilen devletin karşısında ayrı bir antlaşma vardır. II ✓: Sevr (10 Ağustos 1920) tablodaki en son tarihtir. IV ✓: Savaşa tek devlet olarak giren Avusturya-Macaristan’ın yerine Avusturya ve Macaristan ayrı ayrı antlaşma imzalamıştır; devlet bölünmüştür.</p><p>III ✗: Tabloda onay bilgisi yoktur. Gerçekte de Sevr, Osmanlı Mebusan Meclisi kapalı olduğu için onaylanamamış, Büyük Millet Meclisi de antlaşmayı tanımamıştır; yürürlüğe girmemiştir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki zaman çizelgesinde I. Dünya Savaşı’nın son dönemine ait bazı gelişmeler verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 218" width="560" role="img" aria-label="1917-1918 yıllarında yaşanan bazı gelişmeler" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="218" fill="#ffffff"/>
+<line x1="128" y1="10" x2="128" y2="208" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="128" cy="21" r="6" fill="#2563eb"/>
+<text x="114" y="25" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">Nisan 1917</text>
+<rect x="142" y="10" width="412" height="23" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="25" font-size="11" fill="#1e293b">ABD, İtilaf Devletleri’nin yanında savaşa girdi.</text>
+<circle cx="128" cy="50" r="6" fill="#d97706"/>
+<text x="114" y="54" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">Eylül 1918</text>
+<rect x="142" y="39" width="412" height="38" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<text x="150" y="54" font-size="11" fill="#1e293b">Bulgaristan ateşkes imzalayarak savaştan çekildi. Böylece Osmanlı</text>
+<text x="150" y="69" font-size="11" fill="#1e293b">Devleti ile Almanya arasındaki kara bağlantısı kesildi.</text>
+<circle cx="128" cy="94" r="6" fill="#475569"/>
+<text x="114" y="98" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Ekim 1918</text>
+<rect x="142" y="83" width="412" height="38" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<text x="150" y="98" font-size="11" fill="#1e293b">Osmanlı Devleti’nde Talat Paşa Hükûmeti istifa etti, yerine Ahmet İzzet</text>
+<text x="150" y="113" font-size="11" fill="#1e293b">Paşa Hükûmeti kuruldu.</text>
+<circle cx="128" cy="138" r="6" fill="#dc2626"/>
+<text x="114" y="142" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">30 Ekim 1918</text>
+<rect x="142" y="127" width="412" height="23" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="142" font-size="11" fill="#1e293b">Osmanlı Devleti, Mondros Ateşkes Antlaşması’nı imzaladı.</text>
+<circle cx="128" cy="167" r="6" fill="#dc2626"/>
+<text x="114" y="171" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">3 Kasım 1918</text>
+<rect x="142" y="156" width="412" height="23" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="171" font-size="11" fill="#1e293b">Avusturya-Macaristan ateşkes imzaladı.</text>
+<circle cx="128" cy="196" r="6" fill="#dc2626"/>
+<text x="114" y="200" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">11 Kasım 1918</text>
+<rect x="142" y="185" width="412" height="23" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="200" font-size="11" fill="#1e293b">Almanya ateşkes imzaladı.</text>
+</svg></div>
+<p>Zaman çizelgesine göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Bir müttefikin savaştan çekilmesi, Osmanlı Devleti’nin Almanya’dan yardım almasını zorlaştırmıştır.", "Osmanlı Devleti, ateşkes imzalamadan önce hükûmet değişikliğine gitmiştir.", "İttifak Devletleri, savaşın sonunda farklı tarihlerde ateşkes imzalamıştır.", "Almanya, ateşkes imzalayarak savaştan çekilen ilk İttifak Devleti’dir."],
+  a: "D",
+  s: `<p>Çizelgeye göre İttifak Devletleri’nden önce Bulgaristan (Eylül 1918), sonra Osmanlı Devleti (30 Ekim) ve Avusturya-Macaristan (3 Kasım) ateşkes imzalamıştır. Almanya (11 Kasım 1918) ateşkes imzalayan <b>son</b> İttifak Devleti’dir; D’ye ulaşılamaz.</p><p>A ✓: Bulgaristan’ın çekilmesiyle kara bağlantısı kesilmiş, Almanya’dan yardım gelmesi zorlaşmıştır. B ✓: Ekim 1918’de hükûmet değişmiş, 30 Ekim’de ateşkes imzalanmıştır. C ✓: Ateşkes tarihleri farklıdır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Osmanlı Devleti, I. Dünya Savaşı’nda Cemal Paşa komutasındaki kuvvetlerle Süveyş Kanalı’na 1915 ve 1916 yıllarında iki saldırı düzenledi. Sina Çölü’nü geçen askerler su ve ikmal sıkıntısı çekti. İngilizlerin kanal boyunca güçlü savunma hatları kurması nedeniyle iki saldırı da başarısız oldu. Bu başarısızlıklardan sonra İngilizler Filistin ve Suriye yönünde ilerlemeye başladı ve bu bölgede yeni bir cephe oluştu.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Coğrafi koşullar, cephedeki askerî harekâtı olumsuz etkilemiştir.<br>
+II. Bir cephedeki başarısızlık, yeni bir cephenin oluşmasına zemin hazırlamıştır.<br>
+III. Osmanlı Devleti, bu cephede kendi topraklarını savunmak amacıyla savunma savaşı yapmıştır.<br>
+IV. Osmanlı Devleti, bu cephedeki harekâtlar sonucunda Mısır’ı geri almıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "III ve IV"],
+  a: "C",
+  s: `<p>I ✓: Çölde su ve ikmal sıkıntısı çekilmesi, coğrafi koşulların olumsuz etkisini gösterir. II ✓: Saldırıların başarısız olmasından sonra İngilizler ilerlemiş ve Suriye-Filistin Cephesi oluşmuştur.</p><p>III ✗: Osmanlı Devleti Süveyş Kanalı’na <b>saldırmıştır</b>; Kanal Cephesi bir <b>taarruz</b> cephesidir. IV ✗: Saldırılar başarısız olmuş, Mısır geri alınamamıştır. Cevap <b>C</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki zaman çizelgesinde Millî Mücadele’nin ilk yıllarında İstanbul’da yaşanan bazı hükûmet değişiklikleri verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 190" width="560" role="img" aria-label="1919-1920 yıllarında İstanbul’daki hükûmet değişiklikleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="190" fill="#ffffff"/>
+<line x1="128" y1="10" x2="128" y2="180" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="128" cy="21" r="6" fill="#dc2626"/>
+<text x="114" y="25" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Mart 1919</text>
+<rect x="142" y="10" width="412" height="23" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="25" font-size="11" fill="#1e293b">Damat Ferit Paşa sadrazam oldu.</text>
+<circle cx="128" cy="50" r="6" fill="#16a34a"/>
+<text x="114" y="54" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">Ekim 1919</text>
+<rect x="142" y="39" width="412" height="53" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="150" y="54" font-size="11" fill="#1e293b">Sivas Kongresi’nden sonra istifa eden Damat Ferit Paşa’nın yerine Ali</text>
+<text x="150" y="69" font-size="11" fill="#1e293b">Rıza Paşa Hükûmeti kuruldu. Bu hükûmet, Temsil Heyeti ile Amasya’da</text>
+<text x="150" y="84" font-size="11" fill="#1e293b">görüşme yaptı.</text>
+<circle cx="128" cy="109" r="6" fill="#d97706"/>
+<text x="114" y="113" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">Mart 1920</text>
+<rect x="142" y="98" width="412" height="38" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<text x="150" y="113" font-size="11" fill="#1e293b">Ali Rıza Paşa, İtilaf Devletleri’nin baskısıyla istifa etti; yerine Salih Paşa</text>
+<text x="150" y="128" font-size="11" fill="#1e293b">Hükûmeti kuruldu.</text>
+<circle cx="128" cy="153" r="6" fill="#dc2626"/>
+<text x="114" y="157" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Nisan 1920</text>
+<rect x="142" y="142" width="412" height="38" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<text x="150" y="157" font-size="11" fill="#1e293b">Damat Ferit Paşa yeniden sadrazam oldu. Millî Mücadele’ye karşı Kuvâ-yı</text>
+<text x="150" y="172" font-size="11" fill="#1e293b">İnzibatiye adlı bir askerî birlik kurdu.</text>
+</svg></div>
+<p>Zaman çizelgesine göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Millî Mücadele’deki gelişmeler, İstanbul’daki hükûmet değişikliklerini etkilemiştir.", "İtilaf Devletleri, İstanbul’daki hükûmetler üzerinde baskı kurabilmiştir.", "Damat Ferit Paşa, Millî Mücadele’ye karşı askerî güç kullanma yoluna gitmiştir.", "İstanbul Hükûmetleri, Millî Mücadele’ye karşı her dönemde aynı tutumu sergilemiştir."],
+  a: "D",
+  s: `<p>Damat Ferit Paşa hükûmetleri Millî Mücadele’ye karşı çıkarken Ali Rıza Paşa Hükûmeti Temsil Heyeti ile <b>görüşme</b> yapmıştır. Yani hükûmetlerin tutumu dönemden döneme değişmiştir; D söylenemez.</p><p>A ✓: Damat Ferit Paşa, Sivas Kongresi’nden sonra istifa etmiştir. B ✓: Ali Rıza Paşa, İtilaf Devletleri’nin baskısıyla istifa etmiştir. C ✓: Kuvâ-yı İnzibatiye, Millî Mücadele’ye karşı kurulmuş bir askerî birliktir. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<p>Aşağıdaki zaman çizelgesinde Mustafa Kemal’in I. Dünya Savaşı’nda görev yaptığı bazı cepheler ve buralardaki başarıları verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 131" width="560" role="img" aria-label="Mustafa Kemal’in I. Dünya Savaşı’ndaki bazı görevleri" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="131" fill="#ffffff"/>
+<line x1="128" y1="10" x2="128" y2="121" stroke="#94a3b8" stroke-width="3"/>
+<circle cx="128" cy="21" r="6" fill="#2563eb"/>
+<text x="114" y="25" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">1915</text>
+<rect x="142" y="10" width="412" height="38" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<text x="150" y="25" font-size="11" fill="#1e293b">Çanakkale Cephesi: Arıburnu ve Anafartalar’da İtilaf kuvvetlerine karşı</text>
+<text x="150" y="40" font-size="11" fill="#1e293b">başarılı savunmalar yaptı.</text>
+<circle cx="128" cy="65" r="6" fill="#16a34a"/>
+<text x="114" y="69" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">1916</text>
+<rect x="142" y="54" width="412" height="23" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="150" y="69" font-size="11" fill="#1e293b">Kafkas Cephesi: Muş ve Bitlis’i Ruslardan geri aldı.</text>
+<circle cx="128" cy="94" r="6" fill="#d97706"/>
+<text x="114" y="98" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">1917-1918</text>
+<rect x="142" y="83" width="412" height="38" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<text x="150" y="98" font-size="11" fill="#1e293b">Suriye-Filistin Cephesi: 7. Ordu komutanı olarak İngilizlere karşı savaştı;</text>
+<text x="150" y="113" font-size="11" fill="#1e293b">Halep’in kuzeyinde bir savunma hattı kurdu.</text>
+</svg></div>
+<p>Buna göre,</p>
+<div class="box">I. Mustafa Kemal, savaş boyunca farklı cephelerde görev yapmıştır.<br>
+II. Mustafa Kemal, savaşta hem İngilizlere hem de Ruslara karşı savaşmıştır.<br>
+III. Mustafa Kemal’in görev yaptığı cephelerin tamamı Osmanlı Devleti’nin taarruz cepheleridir.<br>
+IV. Mustafa Kemal, savaşın ilk yılından itibaren Kafkas Cephesi’nde görev yapmıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, III ve IV"],
+  a: "A",
+  s: `<p>I ✓: Çanakkale, Kafkas ve Suriye-Filistin cephelerinde görev yapmıştır. II ✓: Çanakkale’de İngiliz ve Fransız kuvvetlerine, Suriye-Filistin’de İngilizlere, Kafkasya’da Ruslara karşı savaşmıştır.</p><p>III ✗: Çanakkale ve Suriye-Filistin <b>savunma</b> cepheleridir; çizelgede de “savunma” ifadeleri geçer. IV ✗: Mustafa Kemal 1915’te Çanakkale’dedir; Kafkas Cephesi’ne 1916’da geçmiştir. Cevap <b>A</b>.</p>` },
+{ lv: "orta", q: `<p>Bir öğrenci, Amasya Genelgesi, Erzurum Kongresi ve Sivas Kongresi’nde yer alan bazı kararları karşılaştırmak için aşağıdaki tabloyu hazırlamıştır. Kararın yer aldığı belge veya kongre ✓, yer almadığı “–” ile gösterilmiştir.</p>
+<table class="rt">
+<tr><th>Satır</th><th>Karar / gelişme</th><th>Amasya Genelgesi</th><th>Erzurum Kongresi</th><th>Sivas Kongresi</th></tr>
+<tr><td>1</td><td>Manda ve himaye kabul edilemez.</td><td>–</td><td>✓</td><td>✓</td></tr>
+<tr><td>2</td><td>Kararları uygulamak için bir Temsil Heyeti seçildi.</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>3</td><td>Bütün millî cemiyetler “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adı altında birleştirildi.</td><td>–</td><td>–</td><td>✓</td></tr>
+<tr><td>4</td><td>Toplantıya yalnızca Doğu illerinden gelen delegeler katıldı.</td><td>–</td><td>✓</td><td>–</td></tr>
+</table>
+<p>Öğrencinin tablosunda hangi satırdaki işaretlemede <b>hata</b> vardır?</p>`,
+  c: ["1. satır", "2. satır", "3. satır", "4. satır"],
+  a: "B",
+  s: `<p>Amasya Genelgesi bir <b>kongre değil, genelgedir</b>; bu genelgede Erzurum’da ve Sivas’ta kongre toplanacağı duyurulmuş ama Temsil Heyeti seçilmemiştir. Temsil Heyeti ilk kez Erzurum Kongresi’nde seçilmiş, Sivas Kongresi’nde yeniden oluşturulup genişletilmiştir. Bu yüzden 2. satırdaki Amasya işareti hatalıdır (B).</p><p>1. satır ✓: Manda ve himaye Erzurum ve Sivas kongrelerinde reddedilmiştir. 3. satır ✓: Cemiyetler Sivas Kongresi’nde birleştirilmiştir. 4. satır ✓: Yalnızca Doğu illerinden delegelerin katılması Erzurum Kongresi’ne özgüdür; Sivas’a yurdun her yerinden delege gelmiştir. Cevap <b>B</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Mondros Ateşkes Antlaşması’ndan sonra İstanbul’da gizli olarak Karakol Cemiyeti kuruldu. Cemiyet üyeleri, İtilaf Devletleri’nin denetimindeki depolardan silah ve cephane kaçırarak bunları Anadolu’ya ulaştırdı. Cemiyet ayrıca Millî Mücadele’ye katılmak isteyen subay ve aydınların İstanbul’dan Anadolu’ya gizlice geçmesine yardım etti.</div>
+<p>Bu bilgilere göre,</p>
+<div class="box">I. Millî Mücadele, işgal altındaki İstanbul’dan da desteklenmiştir.<br>
+II. Cemiyetin faaliyetleri İtilaf Devletleri’nden gizli yürütülmüştür.<br>
+III. Millî Mücadele’nin silah ve cephane ihtiyacının bir kısmı İstanbul’dan karşılanmıştır.<br>
+IV. Cemiyet, düzenli ordunun yerini alarak cephede savaşmıştır.</div>
+<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
+  c: ["I ve II", "I ve IV", "II ve III", "I, II ve III"],
+  a: "D",
+  s: `<p>I ✓: Cemiyet İstanbul’da kurulmuş ve Anadolu’daki mücadeleye silah, subay ve aydın göndermiştir. II ✓: Cemiyet gizli kurulmuş, silahlar İtilaf denetimindeki depolardan kaçırılmıştır. III ✓: Kaçırılan silah ve cephane Anadolu’ya ulaştırılmıştır.</p><p>IV ✗: Metinde cemiyetin cephede savaştığına dair bilgi yoktur; cemiyet destek ve ulaştırma faaliyeti yürütmüştür. Yalnızca iki yargıyı seçen öğrenci, III’teki “bir kısmı” ifadesinin metinle uyumunu gözden kaçırır. Cevap <b>D</b>.</p>` },
+{ lv: "orta", q: `<div class="box">Haziran 1919’da Damat Ferit Paşa başkanlığındaki Osmanlı heyeti, Paris Barış Konferansı’na çağrıldı. Heyet, savaşın sorumluluğunun Osmanlı halkına yüklenmemesini ve Osmanlı topraklarının bölünmemesini istedi. Ancak heyetin görüşleri galip devletler tarafından kabul edilmedi ve heyet hiçbir sonuç alamadan İstanbul’a döndü.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
+  c: ["İstanbul Hükûmeti’nin diplomatik girişimleri, Osmanlı topraklarının paylaşılmasını önlemede yetersiz kalmıştır.", "Osmanlı heyetinin girişimleri sonucunda Sevr Antlaşması’nın bazı maddeleri değiştirilmiştir.", "Paris Barış Konferansı’nda galip ve yenik devletler eşit söz hakkına sahip olmuştur.", "Osmanlı heyeti, konferansa Temsil Heyeti’nin temsilcisi olarak katılmıştır."],
+  a: "A",
+  s: `<p>Heyetin istekleri kabul edilmemiş ve heyet sonuç alamadan dönmüştür. Bu durum, İstanbul Hükûmeti’nin diplomasi yoluyla toprakları korumada <b>yetersiz kaldığını</b> gösterir; A’ya ulaşılabilir.</p><p>B ✗: Sevr Antlaşması 10 Ağustos 1920’de imzalanmıştır; Haziran 1919’da henüz yoktur (kronoloji hatası). C ✗: Yenik devletin isteklerinin dinlenip reddedilmesi, kararları galip devletlerin verdiğini gösterir. D ✗: Heyete İstanbul Hükûmeti’nin sadrazamı Damat Ferit Paşa başkanlık etmiştir; Temsil Heyeti Millî Mücadele’nin temsilcisidir ve bu tarihte henüz kurulmamıştır. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Osmanlı Devleti, I. Dünya Savaşı başladığında tarafsız kalacağını açıklamıştı. 29 Ekim 1914’te Osmanlı donanması, Alman Amiral Souchon’un komutasında Karadeniz’deki Rus limanlarını bombaladı. Bu harekât, hükûmetin bütün üyelerinin bilgisi ve onayı alınmadan, Başkomutan Vekili Enver Paşa’nın bilgisi dâhilinde yapıldı. Saldırının ardından savaşa girilmesine karşı çıkan Maliye Nazırı Cavit Bey ile bazı nazırlar görevlerinden istifa etti. Kasım 1914’te Rusya, İngiltere ve Fransa Osmanlı Devleti’ne savaş ilan etti.</div>
+<p>Bu metne göre,</p>
+<p>I. Osmanlı Devleti’nin savaşa girmesi konusunda yönetim içinde görüş birliği yoktu.<br>
+II. Osmanlı Devleti, İtilaf bloğundaki bir devletin topraklarına yönelik bir saldırının ardından savaşa girmiştir.<br>
+III. Tarafsızlık ilanı, Osmanlı Devleti’nin savaş boyunca İtilaf Devletleri ile iyi ilişkilerini sürdürdüğünü gösterir.<br>
+IV. Osmanlı Devleti’nin savaşa girme kararı, Mebusan Meclisi’nde oylanarak alınmıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "I, II ve IV"],
+  a: "A",
+  s: `<p><b>I ✓:</b> Harekâtın hükûmetin bütün üyelerinin onayı alınmadan yapılması ve ardından bazı nazırların istifa etmesi, yönetimde görüş birliği olmadığını gösterir.<br>
+<b>II ✓:</b> Rusya İtilaf bloğundadır; Osmanlı donanması Rus limanlarını bombaladıktan sonra savaş ilanları gelmiştir.<br>
+<b>III ✗:</b> Tarafsızlık ilanından kısa süre sonra Osmanlı Devleti İtilaf Devletleri ile savaşa girmiştir. “Tarafsızlık = İtilaf’la dostluk” yorumu metne aykırıdır.<br>
+<b>IV ✗:</b> Metne göre karar hükûmetin bile tamamının onayı alınmadan uygulanmıştır. Bir meclis oylamasından söz edilmez. Bu çeldirici metin dışı bir varsayımdır.</p>
+<p>B III’ü, C ve D IV’ü içerir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda I. Dünya Savaşı sırasında İtilaf Devletleri arasında yapılan bazı gizli antlaşmalar verilmiştir.</p>
+<table class="rt">
+<tr><th>Antlaşma (Yılı)</th><th>Osmanlı topraklarıyla ilgili öngörülen paylaşım</th></tr>
+<tr><td>İstanbul Antlaşması (1915)</td><td>İstanbul ve Boğazlar Rusya’ya bırakılacak.</td></tr>
+<tr><td>Londra Antlaşması (1915)</td><td>İtalya, İtilaf Devletleri’nin yanında savaşa girecek; Antalya ve çevresi İtalya’ya verilecek.</td></tr>
+<tr><td>Sykes-Picot Antlaşması (1916)</td><td>Irak, Suriye ve Güneydoğu Anadolu İngiltere ile Fransa arasında; Doğu Anadolu’nun bir bölümü Rusya’ya bırakılacak.</td></tr>
+<tr><td>St. Jean de Maurienne Antlaşması (1917)</td><td>İzmir ve çevresi İtalya’ya verilecek.</td></tr>
+</table>
+<div class="box"><b>Not:</b> 1917’de Rusya’da iktidara gelen Bolşevikler, Çarlık döneminde yapılan gizli antlaşmaları açıklamış ve bu antlaşmalarla Rusya’ya tanınan haklardan vazgeçmiştir. 1919’da Paris Barış Konferansı’nda ise İzmir’in Yunanistan tarafından işgal edilmesine izin verilmiştir.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["İtilaf Devletleri, savaş henüz sona ermeden Osmanlı topraklarını aralarında paylaşmayı planlamıştır.", "Rusya’daki rejim değişikliği, Rusya’nın İstanbul ve Boğazlar üzerindeki paylaşım haklarından vazgeçmesine yol açmıştır.", "İzmir ve çevresiyle ilgili paylaşım planları, savaş sırasında ve sonrasında farklı devletler lehine değişmiştir.", "Osmanlı Devleti, kendisini paylaşmayı amaçlayan bu antlaşmalar nedeniyle I. Dünya Savaşı’na girmek zorunda kalmıştır."],
+  a: "D",
+  s: `<p>Tablodaki antlaşmaların hepsi <b>1915 ve sonrasına</b> aittir. Osmanlı Devleti ise savaşa <b>Kasım 1914’te</b> girmişti. Sonradan yapılan antlaşmalar, daha önce gerçekleşen bir olayın nedeni olamaz. Bu yüzden D seçeneğine ulaşılamaz. Bu çeldirici kronoloji tuzağıdır: öğrenci “paylaşım planı → savaşa giriş” diye ters bir neden-sonuç kurar.</p>
+<p>A ✓: Antlaşmalar savaş sürerken (1915-1917) yapılmıştır.<br>
+B ✓: Not kısmına göre Bolşevikler Çarlık dönemindeki haklardan vazgeçmiştir; İstanbul ve Boğazlar Rusya’nın payıydı.<br>
+C ✓: İzmir 1917’de İtalya’ya vaat edilmiş, 1919’da ise Yunanistan’ın işgaline izin verilmiştir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki şematik haritada Doğu Anadolu ve Doğu Karadeniz’deki bazı yerler numaralarla gösterilmiştir. (1: Batum, 2: Kars, 3: Trabzon, 4: Erzurum, 5: Van, 6: Diyarbakır)</p>
+<div class="fig"><svg viewBox="0 0 560 382" width="560" role="img" aria-label="Doğu Anadolu ve Doğu Karadeniz’de numaralarla gösterilmiş altı yer" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="382" fill="#ffffff"/>
+<rect x="4" y="4" width="552" height="374" rx="8" fill="#fefce8" stroke="#94a3b8"/>
+<polygon points="0.9,8 0.9,105.7 34.4,113.6 88.1,122.2 119.2,127.5 156.4,122.2 200.3,122.2 249.1,120.9 304.0,95.8 317.4,80.0 319.3,46.3 308.9,16.6 308.9,8" fill="#dbeafe"/>
+<polyline points="0.9,105.7 34.4,113.6 88.1,122.2 119.2,127.5 156.4,122.2 200.3,122.2 249.1,120.9 304.0,95.8 317.4,80.0 319.3,46.3 308.9,16.6" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="132" y="52.9" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">KARADENİZ</text>
+<ellipse cx="391.2" cy="277.3" rx="30" ry="16" fill="#dbeafe" stroke="#3b82f6"/>
+<circle cx="317.4" cy="80.0" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="317.4" y="85" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<circle cx="406.5" cy="148.6" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="406.5" y="153.6" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<circle cx="200.3" cy="122.2" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="200.3" y="127.2" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<circle cx="294.9" cy="194.8" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="294.9" y="199.8" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<circle cx="423.6" cy="287.2" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="423.6" y="292.2" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<circle cx="230.8" cy="326.1" r="12" fill="#dc2626" stroke="#ffffff" stroke-width="2"/>
+<text x="230.8" y="331.1" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<text x="14" y="370" font-size="11" fill="#64748b">Ölçeksiz şematik harita (Van Gölü mavi ile gösterilmiştir)</text>
+</svg></div>
+<div class="box"><b>K:</b> Mondros Ateşkes Antlaşması’nın 24. maddesinde adı geçen Vilâyât-ı Sitte’ye (altı il) dâhil olan yerler<br>
+<b>L:</b> Misak-ı Millî’de, gerekirse yeniden halkoylamasına başvurulacağı belirtilen yerler<br>
+<b>M:</b> Mondros’tan sonra merkezinde bir Rum (Pontus) devleti kurulmak istenen ve buna karşı bir millî cemiyetin kurulduğu yer</div>
+<p>K, L ve M ile verilen bilgiler haritadaki numaralarla eşleştirildiğinde aşağıdakilerden hangisi doğru olur?</p>`,
+  c: ["K: 4, 5, 6 – L: 1, 2 – M: 3", "K: 2, 4, 5 – L: 1, 6 – M: 3", "K: 4, 5, 6 – L: 1, 3 – M: 2", "K: 3, 4, 5 – L: 1, 2 – M: 6"],
+  a: "A",
+  s: `<p><b>K:</b> Vilâyât-ı Sitte; Erzurum, Van, Bitlis, Diyarbakır, Mamuretülaziz (Elazığ) ve Sivas’tır. Haritada bunlardan Erzurum (4), Van (5) ve Diyarbakır (6) vardır. Kars bu altı il arasında değildir; Kars’ı K’ye katan öğrenci “doğudaki her yer Vilâyât-ı Sitte’dir” diye genelleme yapmıştır.<br>
+<b>L:</b> Misak-ı Millî’de halkoylaması öngörülen doğudaki yerler Elviye-i Selase, yani Kars, Ardahan ve Batum’dur. Haritada Batum (1) ve Kars (2) vardır. Diyarbakır ya da Trabzon için halkoylaması söz konusu değildir.<br>
+<b>M:</b> Pontus Rum devleti Doğu Karadeniz kıyısında, Trabzon (3) merkezli olarak kurulmak istenmiş; buna karşı Trabzon Muhafaza-i Hukuk-ı Millîye Cemiyeti kurulmuştur. Diyarbakır’ı (6) seçen öğrenci Pontus’u Doğu Anadolu’daki Ermeni devleti planıyla karıştırmıştır.</p>
+<p>Doğru eşleştirme K: 4, 5, 6 – L: 1, 2 – M: 3’tür. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki zaman çizelgesinde I. Dünya Savaşı’nda Irak Cephesi’nde yaşanan bazı gelişmeler verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 229" width="560" role="img" aria-label="Irak Cephesi’ndeki bazı gelişmeler zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="229" fill="#ffffff"/>
+<line x1="136" y1="10" x2="136" y2="219" stroke="#94a3b8" stroke-width="3"/>
+<rect x="146" y="10" width="408" height="46" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<circle cx="136" cy="33" r="6" fill="#2563eb"/>
+<text x="122" y="37" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">Kasım 1914</text>
+<text x="156" y="29" font-size="11" fill="#1e293b">İngiliz kuvvetleri, Basra Körfezi’ndeki petrol bölgelerini ve Hindistan</text>
+<text x="156" y="44" font-size="11" fill="#1e293b">yolunu güvence altına almak amacıyla Basra’ya çıktı.</text>
+<rect x="146" y="62" width="408" height="46" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<circle cx="136" cy="85" r="6" fill="#16a34a"/>
+<text x="122" y="89" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">Kasım 1915</text>
+<text x="156" y="81" font-size="11" fill="#1e293b">Bağdat’a doğru ilerleyen İngiliz kuvvetleri Selman-ı Pak’ta durduruldu</text>
+<text x="156" y="96" font-size="11" fill="#1e293b">ve geri çekildi.</text>
+<rect x="146" y="114" width="408" height="31" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<circle cx="136" cy="129.5" r="6" fill="#16a34a"/>
+<text x="122" y="133.5" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">Nisan 1916</text>
+<text x="156" y="133" font-size="11" fill="#1e293b">Kut’ül-Amare’de kuşatılan İngiliz kuvvetleri teslim oldu.</text>
+<rect x="146" y="151" width="408" height="31" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<circle cx="136" cy="166.5" r="6" fill="#dc2626"/>
+<text x="122" y="170.5" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Mart 1917</text>
+<text x="156" y="170" font-size="11" fill="#1e293b">İngilizler Bağdat’ı ele geçirdi.</text>
+<rect x="146" y="188" width="408" height="31" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<circle cx="136" cy="203.5" r="6" fill="#475569"/>
+<text x="122" y="207.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">30 Ekim 1918</text>
+<text x="156" y="207" font-size="11" fill="#1e293b">Mondros Ateşkes Antlaşması imzalandı.</text>
+</svg></div>
+<p>Bu zaman çizelgesine göre,</p>
+<p>I. İngiltere’nin Irak’a asker çıkarmasında ekonomik ve stratejik çıkarları etkili olmuştur.<br>
+II. Osmanlı kuvvetlerinin Irak’taki başarıları, cephenin sonucunu değiştirmeye yetmemiştir.<br>
+III. Bağdat, Osmanlı Devleti ateşkes imzaladıktan sonra kaybedilmiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p><b>I ✓:</b> İngilizlerin Basra’ya çıkma amacı petrol bölgeleri (ekonomik) ve Hindistan yolu (stratejik) olarak verilmiştir.<br>
+<b>II ✓:</b> Selman-ı Pak ve Kut’ül-Amare başarılarına rağmen İngilizler 1917’de Bağdat’ı almıştır.<br>
+<b>III ✗:</b> Bağdat Mart 1917’de, ateşkes ise Ekim 1918’de imzalanmıştır. Bağdat ateşkesten bir buçuk yıl önce kaybedilmiştir. Bu çeldirici, Mondros’tan sonra yaşanan işgallerle (örneğin Musul) savaş sırasında kaybedilen yerleri karıştıran öğrenciyi yakalar.</p>
+<p>A eksiktir; C ve D III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box">16 Mart 1920’de İstanbul’un resmen işgal edilmesi ve Mebusan Meclisi’nin basılmasından sonra İstanbul’daki pek çok aydın, subay ve milletvekili, yakalanma tehlikesine rağmen gizlice Anadolu’ya geçti. Bunlar arasında Halide Edip (Adıvar), Dr. Adnan (Adıvar), İsmet (İnönü) Bey ve Fevzi (Çakmak) Paşa da vardı. Anadolu’ya geçenlerin bir kısmı, Ankara’da açılan Büyük Millet Meclisinde ve Millî Mücadele’nin askerî kadrolarında görev aldı.</div>
+<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Anadolu’ya geçen aydın ve subaylar, Millî Mücadele’nin yönetim merkezinin Ankara’ya taşınmasını sağlamıştır.", "İstanbul’un resmen işgali, Anadolu’daki millî hareketin kadrosunun güçlenmesine katkı sağlamıştır.", "İstanbul, Millî Mücadele yanlıları için güvenli bir yer olmaktan çıkmıştır.", "Millî Mücadele’ye hem askerî hem de sivil kesimlerden katılım olmuştur."],
+  a: "A",
+  s: `<p>Millî Mücadele’nin yönetim merkezi, Temsil Heyeti’nin <b>27 Aralık 1919</b>’da Ankara’ya gelmesiyle zaten Ankara’ya taşınmıştı. Metindeki kişiler ise <b>Mart 1920</b>’den sonra Anadolu’ya geçmiştir. Sonra yaşanan bir olay, önceki bir olaya yol açamaz. A ulaşılamaz. Bu bir kronoloji tuzağıdır.</p>
+<p>B ✓: Anadolu’ya geçenler Meclis’te ve askerî kadrolarda görev almıştır.<br>
+C ✓: Yakalanma tehlikesi ve gizlice kaçış, İstanbul’un güvenli olmadığını gösterir.<br>
+D ✓: Subaylar (askerî) ile aydın ve milletvekilleri (sivil) Anadolu’ya geçmiştir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki zaman çizelgesinde I. Dünya Savaşı öncesinde Avrupa’daki bloklaşma süreci verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 214" width="560" role="img" aria-label="I. Dünya Savaşı öncesinde Avrupa’daki bloklaşma zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="214" fill="#ffffff"/>
+<line x1="136" y1="10" x2="136" y2="204" stroke="#94a3b8" stroke-width="3"/>
+<rect x="146" y="10" width="408" height="31" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<circle cx="136" cy="25.5" r="6" fill="#d97706"/>
+<text x="122" y="29.5" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">1882</text>
+<text x="156" y="29" font-size="11" fill="#1e293b">Almanya, Avusturya-Macaristan ve İtalya, Üçlü İttifak’ı kurdu.</text>
+<rect x="146" y="47" width="408" height="31" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<circle cx="136" cy="62.5" r="6" fill="#2563eb"/>
+<text x="122" y="66.5" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">1894</text>
+<text x="156" y="66" font-size="11" fill="#1e293b">Fransa ile Rusya arasında ittifak yapıldı.</text>
+<rect x="146" y="84" width="408" height="31" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<circle cx="136" cy="99.5" r="6" fill="#2563eb"/>
+<text x="122" y="103.5" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">1904</text>
+<text x="156" y="103" font-size="11" fill="#1e293b">İngiltere ile Fransa anlaştı.</text>
+<rect x="146" y="121" width="408" height="31" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
+<circle cx="136" cy="136.5" r="6" fill="#2563eb"/>
+<text x="122" y="140.5" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="end">1907</text>
+<text x="156" y="140" font-size="11" fill="#1e293b">İngiltere ile Rusya anlaştı; böylece Üçlü İtilaf oluştu.</text>
+<rect x="146" y="158" width="408" height="46" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<circle cx="136" cy="181" r="6" fill="#dc2626"/>
+<text x="122" y="185" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">28 Temmuz 1914</text>
+<text x="156" y="177" font-size="11" fill="#1e293b">Avusturya-Macaristan Sırbistan’a savaş ilan etti; I. Dünya Savaşı</text>
+<text x="156" y="192" font-size="11" fill="#1e293b">başladı.</text>
+</svg></div>
+<p>Bu zaman çizelgesine göre,</p>
+<p>I. Savaş başlamadan önce Avrupa’nın büyük devletleri iki bloka ayrılmıştı.<br>
+II. İtalya, savaş boyunca Üçlü İttifak’taki müttefikleriyle birlikte savaşmıştır.<br>
+III. Avrupa’daki bloklaşma, savaşın başlamasından uzun yıllar önce başlamıştır.<br>
+IV. Üçlü İtilaf, Üçlü İttifak’tan önce oluşmuştur.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve II", "II ve IV", "I ve III", "III ve IV"],
+  a: "C",
+  s: `<p><b>I ✓:</b> 1914’ten önce Üçlü İttifak ve Üçlü İtilaf adlı iki blok oluşmuştu.<br>
+<b>II ✗:</b> Çizelgede İtalya’nın savaştaki tutumuna dair bilgi yoktur. Gerçekte İtalya savaş başında tarafsız kalmış, 1915’te kendisine toprak vaat edilince İtilaf Devletleri’nin yanında savaşa girmiştir. “Üçlü İttifak’ta olan, İttifak bloğunda savaştı” genellemesi yanlıştır.<br>
+<b>III ✓:</b> Bloklaşma 1882’de başlamış, savaş 1914’te çıkmıştır.<br>
+<b>IV ✗:</b> Üçlü İttifak 1882’de, Üçlü İtilaf ise 1907’de tamamlanmıştır. Bu bir kronoloji tuzağıdır.</p>
+<p>A II’yi, B II ve IV’ü, D IV’ü içerir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir tarih dersinde öğretmen, Mondros Ateşkes Antlaşması’nın Osmanlı Devleti açısından anlamını tartışmaya açmış ve dört öğrenciden birer yorum yapmalarını istemiştir.</p>
+<div class="dialog"><div><b>Ece:</b> Mondros’la Osmanlı Devleti savaştan fiilen çekildi ama barış şartları henüz belirlenmemişti. Bu şartları görüşmek için daha sonra bir konferans toplandı.</div>
+<div><b>Arda:</b> Mondros, Osmanlı Devleti’ni hukuken sona erdirdi. Bu yüzden Anadolu’da hemen yeni bir meclis açılması zorunlu hâle geldi.</div>
+<div><b>Defne:</b> Ateşkesten sonra başlayan bazı işgallerde İtilaf Devletleri, antlaşmadaki “güvenliklerini tehdit eden bir durum” ifadesini gerekçe gösterdi.</div>
+<div><b>Kerem:</b> Ordunun terhis edilmesi ve silahların teslimi, Türk milletinin işgallere karşı silahlı direnişini zorlaştıracak hükümlerdi.</div></div>
+<p>Bu öğrencilerden hangisinin yorumu tarihsel olarak <b>hatalıdır</b>?</p>`,
+  c: ["Ece", "Defne", "Kerem", "Arda"],
+  a: "D",
+  s: `<p>Mondros bir <b>ateşkes antlaşmasıdır</b>. Osmanlı Devleti’ni savaştan <b>fiilen</b> çıkarmış ama <b>hukuken</b> sona erdirmemiştir. Osmanlı Devleti hukuken saltanatın kaldırılmasıyla (1 Kasım 1922) sona ermiştir. Ayrıca Mondros’tan (Ekim 1918) sonra Anadolu’da hemen meclis açılmamıştır. Büyük Millet Meclisi, İstanbul’un resmen işgali ve Mebusan Meclisi’nin dağıtılmasından sonra, 23 Nisan 1920’de açılmıştır. Arda’nın yorumu hem “fiilen-hukuken” hem de kronoloji bakımından hatalıdır.</p>
+<p>Ece ✓: Barış şartları Paris Barış Konferansı’nda (Ocak 1919) görüşülmeye başlanmıştır.<br>
+Defne ✓: Bu ifade 7. maddedir ve işgallere dayanak yapılmıştır.<br>
+Kerem ✓: Terhis ve silah teslimi Osmanlı’yı savunmasız bırakmayı amaçlıyordu.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda İstanbul ve Millî Mücadele ile ilgili bazı gelişmeler tarih sırasıyla verilmiştir.</p>
+<table class="rt">
+<tr><th>Tarih</th><th>Gelişme</th></tr>
+<tr><td>30 Ekim 1918</td><td>Mondros Ateşkes Antlaşması imzalandı.</td></tr>
+<tr><td>13 Kasım 1918</td><td>İtilaf Devletleri’nin donanması İstanbul önlerine geldi; şehirde İtilaf askerî denetimi kurulmaya başlandı.</td></tr>
+<tr><td>16 Mayıs 1919</td><td>Mustafa Kemal Paşa İstanbul’dan Samsun’a hareket etti.</td></tr>
+<tr><td>27 Aralık 1919</td><td>Temsil Heyeti Ankara’ya geldi.</td></tr>
+<tr><td>12 Ocak 1920</td><td>Son Osmanlı Mebusan Meclisi İstanbul’da toplandı.</td></tr>
+<tr><td>16 Mart 1920</td><td>İstanbul, İtilaf Devletleri tarafından resmen işgal edildi.</td></tr>
+</table>
+<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["İstanbul’un resmen işgal edilmesi, Temsil Heyeti’nin Ankara’ya gelmesine yol açmıştır.", "Mustafa Kemal Paşa İstanbul’dan ayrıldığında şehir, İtilaf Devletleri’nin fiilî denetimi altındaydı.", "Son Osmanlı Mebusan Meclisi, İstanbul’da İtilaf Devletleri’nin askerî varlığı sürerken toplanmıştır.", "İstanbul’un fiilen işgal altına girmesiyle resmen işgal edilmesi arasında bir yılı aşkın süre vardır."],
+  a: "A",
+  s: `<p>Temsil Heyeti Ankara’ya <b>27 Aralık 1919</b>’da gelmiştir. İstanbul ise <b>16 Mart 1920</b>’de resmen işgal edilmiştir. Sonra gerçekleşen bir olay, önceki olayın nedeni olamaz. Bu yüzden A söylenemez. Bu çeldirici, “İstanbul işgal edildi, merkez Ankara’ya taşındı” şeklindeki yaygın ama kronolojik olarak yanlış neden-sonuç kurgusundan gelir.</p>
+<p>B ✓: 13 Kasım 1918’den beri şehirde İtilaf denetimi vardı; Mustafa Kemal 16 Mayıs 1919’da ayrıldı.<br>
+C ✓: Mebusan Meclisi 12 Ocak 1920’de, yani fiilî işgal sürerken toplandı.<br>
+D ✓: 13 Kasım 1918 ile 16 Mart 1920 arasında yaklaşık 16 ay vardır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, Millî Mücadele’nin hazırlık dönemindeki “ilk”leri defterine aşağıdaki tabloda olduğu gibi not etmiştir.</p>
+<table class="rt">
+<tr><th></th><th>“İlk”</th><th>Öğrencinin yazdığı gelişme</th></tr>
+<tr><td>1</td><td>Temsil Heyeti kurulması fikrinin ilk kez ortaya atıldığı belge</td><td>Amasya Genelgesi</td></tr>
+<tr><td>2</td><td>Manda ve himayenin ilk kez reddedildiği toplantı</td><td>Sivas Kongresi</td></tr>
+<tr><td>3</td><td>“Millî sınırlar” ifadesinin ilk kez kullanıldığı toplantı</td><td>Erzurum Kongresi</td></tr>
+<tr><td>4</td><td>Temsil Heyeti’nin ilk kez yürütme yetkisi kullandığı gelişme</td><td>Ali Fuat Paşa’nın Batı Anadolu Kuvâ-yı Millîye Komutanlığına atanması</td></tr>
+<tr><td>5</td><td>İstanbul Hükûmeti’nin Temsil Heyeti’ni ilk kez resmen muhatap aldığı gelişme</td><td>Amasya Görüşmeleri</td></tr>
+</table>
+<p>Öğrencinin tablosunda hangi satırda <b>hata</b> yapılmıştır?</p>`,
+  c: ["1", "2", "4", "5"],
+  a: "B",
+  s: `<p>Manda ve himaye <b>ilk kez Erzurum Kongresi’nde</b> (Temmuz-Ağustos 1919) reddedilmiştir. Sivas Kongresi’nde (Eylül 1919) bu karar yeniden tartışılmış ve <b>kesin olarak</b> reddedilmiştir. 2. satırda hata vardır. Öğrenci, Sivas’taki manda tartışmalarının ünlü olması nedeniyle “ilk ret” ile “kesin ret”i karıştırmıştır.</p>
+<p>1 ✓: Millî bir kurul kurulması gerektiği ilk kez Amasya Genelgesi’nde belirtilmiş, kurul Erzurum’da kurulmuştur.<br>
+3 ✓: “Millî sınırlar içinde vatan bir bütündür” kararı Erzurum Kongresi’ne aittir.<br>
+4 ✓: Ali Fuat Paşa’nın atanması Temsil Heyeti’nin ilk yürütme işi kabul edilir.<br>
+5 ✓: Salih Paşa ile yapılan Amasya Görüşmeleri’nde İstanbul Hükûmeti Temsil Heyeti’ni muhatap almıştır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda Millî Mücadele dönemine ait bazı gelişmeler neden-sonuç ilişkisi kurularak eşleştirilmiştir.</p>
+<table class="rt">
+<tr><th></th><th>Neden</th><th>Sonuç</th></tr>
+<tr><td>1</td><td>İzmir’in Yunanlar tarafından işgal edilmesi</td><td>Batı Anadolu’da Kuvâ-yı Millîye birliklerinin oluşması</td></tr>
+<tr><td>2</td><td>Misak-ı Millî kararlarının kabul edilmesi</td><td>İtilaf Devletleri’nin İstanbul’u resmen işgal etmesi</td></tr>
+<tr><td>3</td><td>Sivas Kongresi’ni engelleme girişiminin başarısız olması</td><td>Damat Ferit Paşa Hükûmeti’nin istifa etmesi</td></tr>
+<tr><td>4</td><td>Amasya Görüşmeleri’nin yapılması</td><td>Erzurum Kongresi’nin toplanması</td></tr>
+<tr><td>5</td><td>İstanbul’un resmen işgal edilmesi</td><td>Ankara’da Büyük Millet Meclisinin açılması</td></tr>
+</table>
+<p>Tablodaki numaralı satırlardan hangisinde kurulan neden-sonuç ilişkisi <b>yanlıştır</b>?</p>`,
+  c: ["2", "3", "4", "5"],
+  a: "C",
+  s: `<p>Amasya Görüşmeleri <b>20-22 Ekim 1919</b>’da yapılmıştır. Erzurum Kongresi ise <b>23 Temmuz - 7 Ağustos 1919</b>’da toplanmıştı. Sonraki bir olay, önceki bir olayın nedeni olamaz. Erzurum Kongresi’ne giden süreç Amasya <b>Genelgesi</b> (Haziran 1919) ile ilgilidir. Öğrenci adları benzeyen Amasya Genelgesi ile Amasya Görüşmeleri’ni karıştırırsa 4. satırı doğru sanar.</p>
+<p>1 ✓: İzmir’in işgali Kuvâ-yı Millîye’nin doğuşunu hızlandırmıştır.<br>
+2 ✓: Misak-ı Millî’ye tepki gösteren İtilaf Devletleri 16 Mart 1920’de İstanbul’u resmen işgal etmiştir.<br>
+3 ✓: Ali Galip girişiminin başarısız olması ve haberleşmenin kesilmesi Damat Ferit’in istifasını getirmiştir.<br>
+5 ✓: Mebusan Meclisi’nin dağıtılması üzerine Ankara’da yeni bir meclis açılmıştır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda I. Dünya Savaşı öncesinde bazı devletlerin hedefleri verilmiştir.</p>
+<table class="rt">
+<tr><th>Devlet</th><th>Savaş öncesindeki hedefi</th></tr>
+<tr><td>İngiltere</td><td>Sömürge yollarını güvende tutmak; sanayisi ve donanması hızla güçlenen Almanya’yı dengelemek</td></tr>
+<tr><td>Fransa</td><td>1871’de Almanya’ya bıraktığı Alsas-Loren bölgesini geri almak</td></tr>
+<tr><td>Rusya</td><td>Balkan Slavlarını kendi etkisi altında birleştirmek (Panslavizm); Boğazlar yoluyla sıcak denizlere inmek</td></tr>
+<tr><td>Almanya</td><td>Yeni pazar ve ham madde kaynakları edinmek; Berlin-Bağdat Demiryolu ile Orta Doğu’ya ulaşmak</td></tr>
+<tr><td>Avusturya-Macaristan</td><td>Balkanlardaki etkisini artırmak</td></tr>
+</table>
+<p>Tablodaki bilgilere ve devletlerin savaştaki bloklarına göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Rusya’nın hedefleri, Osmanlı Devleti’nin toprak bütünlüğü için doğrudan bir tehdit oluşturuyordu.", "Balkanlar, birden fazla büyük devletin çıkarlarının çatıştığı bir bölgeydi.", "Sanayileşmenin doğurduğu pazar ve ham madde ihtiyacı, devletler arasındaki rekabeti artırmıştır.", "Hedefleri Osmanlı topraklarını ilgilendiren devletlerin hepsi savaşta aynı blokta yer almıştır."],
+  a: "D",
+  s: `<p>Tabloya göre Rusya (Boğazlar) ve İngiltere (sömürge yolları) gibi İtilaf Devletleri’nin yanında <b>Almanya</b>’nın da Osmanlı topraklarıyla ilgili bir hedefi vardır: Berlin-Bağdat Demiryolu ile Orta Doğu’ya ulaşmak. Almanya ise İttifak bloğundadır. Yani bu devletler aynı blokta değildir. D söylenemez. Öğrenci “Osmanlı topraklarında gözü olan devletler = düşmanlar” diye düşünürse bu tuzağa düşer.</p>
+<p>A ✓: Boğazlar Osmanlı toprağıdır; Rusya’nın bu hedefi doğrudan tehdittir.<br>
+B ✓: Rusya ve Avusturya-Macaristan’ın ikisi de Balkanlarda etki peşindedir.<br>
+C ✓: Almanya’nın pazar ve ham madde arayışı ile İngiltere’nin Alman sanayisinden duyduğu kaygı bunu gösterir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıda Millî Mücadele’nin başlangıcında yayımlanan iki genelgeyle ilgili bilgiler verilmiştir.</p>
+<div class="box"><b>Belge 1 – Havza Genelgesi (28 Mayıs 1919)</b><br>Mustafa Kemal Paşa’nın imzasıyla yayımlandı. İşgallerin yurdun her yerinde büyük mitinglerle protesto edilmesi, İtilaf Devletleri’nin temsilcilerine ve İstanbul Hükûmeti’ne protesto telgrafları çekilmesi, gösteriler sırasında Hristiyan halka saldırılmaması istendi.</div>
+<div class="box"><b>Belge 2 – Amasya Genelgesi (22 Haziran 1919)</b><br>Mustafa Kemal Paşa ile birlikte Rauf Bey, Ali Fuat Paşa ve Refet Bey tarafından imzalandı; Kâzım Karabekir Paşa da telgrafla onay verdi. Genelgede “Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir. İstanbul Hükûmeti üzerine aldığı sorumluluğu yerine getirememektedir. Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır. Sivas’ta millî bir kongre toplanacaktır.” denildi <i>(sadeleştirilmiştir)</i>.</div>
+<p>İki belge karşılaştırıldığında aşağıdakilerden hangisi söylenebilir?</p>`,
+  c: ["Her iki belgede de millî bir kongrenin toplanması kararlaştırılmıştır.", "Belge 1, kararların birden fazla komutan tarafından onaylanmasıyla Belge 2’ye göre daha geniş bir katılımla hazırlanmıştır.", "İstanbul Hükûmeti, Belge 1’de protestoların yöneltildiği bir muhatapken Belge 2’de görevini yapamayan bir yönetim olarak nitelendirilmiştir.", "Belge 2’de mücadele yöntemi olarak İtilaf Devletleri’ne protesto telgrafları çekilmesi benimsenmiştir."],
+  a: "C",
+  s: `<p>Belge 1’de İstanbul Hükûmeti’ne protesto telgrafı çekilmesi istenmiştir; hükûmet hâlâ seslenilen bir muhataptır. Belge 2’de ise hükûmetin sorumluluğunu yerine getiremediği açıkça söylenmiş, kurtuluşun “milletin azim ve kararı” ile olacağı belirtilmiştir. C söylenebilir.</p>
+<p>A ✗: Kongre kararı yalnızca Belge 2’de (Sivas) vardır. Havza’da kongre söz konusu değildir.<br>
+B ✗: Tersi doğrudur. Havza yalnızca Mustafa Kemal Paşa’nın imzasını taşır; Amasya Genelgesi ise birden fazla komutanın imzası ve onayıyla yayımlanmıştır. Öğrenci iki belgeyi karıştırırsa bu şıkkı seçer.<br>
+D ✗: Protesto telgrafı Belge 1’in (Havza) yöntemidir. Bu çeldirici de belgelerin yer değiştirmesine dayanır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Amasya Genelgesi’nin yayımlanmasından sonra İstanbul Hükûmeti, Mustafa Kemal Paşa’yı İstanbul’a geri çağırdı. Dâhiliye Nazırı Ali Kemal, valiliklere gönderdiği bir genelgeyle Mustafa Kemal Paşa’nın görevden alındığını ve onun emirlerinin yerine getirilmemesini bildirdi. Mustafa Kemal Paşa ise 8-9 Temmuz 1919 gecesi askerlik görevinden ve müfettişlikten istifa etti. Erzurum delegelerinden ikisinin görevden çekilmesiyle Mustafa Kemal Paşa ve Rauf Bey, Erzurum delegesi olarak kongreye katıldı. 23 Temmuz 1919’da toplanan Erzurum Kongresi’nde Mustafa Kemal Paşa kongre başkanlığına seçildi.</div>
+<p>Bu metne göre,</p>
+<p>I. İstanbul Hükûmeti, Anadolu’da başlayan örgütlenmeyi kendi otoritesine yönelik bir tehdit olarak görmüştür.<br>
+II. Mustafa Kemal Paşa, resmî görevinden ayrıldıktan sonra mücadeleyi seçilmiş bir temsilci sıfatıyla sürdürmüştür.<br>
+III. Ali Kemal’in genelgesi, Erzurum Kongresi’nin toplanmasını engellemiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p><b>I ✓:</b> Mustafa Kemal Paşa’nın geri çağrılması ve emirlerinin dinlenmemesinin istenmesi, İstanbul Hükûmeti’nin bu örgütlenmeyi kendine karşı bir tehdit olarak gördüğünü gösterir.<br>
+<b>II ✓:</b> İstifadan sonra Mustafa Kemal Paşa kongreye Erzurum <b>delegesi</b> olarak katılmış ve kongre başkanı seçilmiştir. Yani mücadeleyi seçilmiş bir temsilci sıfatıyla sürdürmüştür.<br>
+<b>III ✗:</b> Kongre 23 Temmuz 1919’da toplanmıştır. Genelge kongreyi engelleyememiştir. Bu çeldirici, “engelleme girişimi” ile “engellenme” sonucunu karıştıran öğrenciyi yakalar.</p>
+<p>A eksiktir; C ve D yanlış olan III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Almanya, 19. yüzyılın sonlarından itibaren Osmanlı Devleti ile ilişkilerini geliştirdi. Alman İmparatoru II. Wilhelm, 1889 ve 1898’de İstanbul’u ziyaret etti. 1903’te Bağdat Demiryolu’nun yapım imtiyazı bir Alman şirketine verildi. Bu demiryolunun Konya’dan Bağdat’a ve Basra Körfezi’ne kadar uzatılması, böylece Berlin ile Basra Körfezi arasında demiryolu bağlantısı kurulması planlanıyordu. İngiltere ise bu projeyi, Hindistan yolunun ve Basra Körfezi’ndeki çıkarlarının tehlikeye girmesi olarak değerlendirdi.</div>
+<p>Bu metne göre,</p>
+<p>I. Almanya, Osmanlı Devleti’ne yakınlaşırken ekonomik çıkarlarını da gözetmiştir.<br>
+II. Bağdat Demiryolu projesi, İngiltere ile Almanya arasındaki rekabeti artıran etkenlerden biridir.<br>
+III. Osmanlı Devleti, Bağdat Demiryolu’nu yabancı sermaye kullanmadan kendi imkânlarıyla yapmıştır.<br>
+IV. Bağdat Demiryolu’nun tamamlanması, Osmanlı Devleti’nin savaşa girmesinin görünürdeki nedenidir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve III", "II ve IV", "III ve IV", "I ve II"],
+  a: "D",
+  s: `<p><b>I ✓:</b> Yapım imtiyazının bir Alman şirketine verilmesi, Almanya’nın ekonomik çıkarlarını gösterir.<br>
+<b>II ✓:</b> İngiltere projeyi kendi çıkarlarına tehdit olarak görmüştür; bu, iki devlet arasındaki rekabeti artırır.<br>
+<b>III ✗:</b> İmtiyaz bir Alman şirketine verilmiştir; metin bunun tersini söyler.<br>
+<b>IV ✗:</b> Metinde demiryolunun tamamlandığı yazmaz. Ayrıca Osmanlı’nın savaşa girişinde görünürdeki olay, Karadeniz’de Rus limanlarının bombalanmasıdır. “Uzun vadeli neden” ile “görünürdeki neden”i karıştıran öğrenci IV’ü seçer.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Erzurum Kongresi kararlarından bazıları</b> <i>(sadeleştirilmiştir)</i><br>
+1. Millî sınırlar içinde vatan bir bütündür, parçalanamaz.<br>
+2. Osmanlı Hükûmeti dış baskılar sonucu vatanın herhangi bir parçasını bırakmak zorunda kalırsa, vatanı savunmak ve bağımsızlığı korumak için geçici bir hükûmet kurulacaktır. Bu hükûmetin üyeleri millî kongrece seçilecek; kongre toplanmamışsa Temsil Heyeti tarafından seçilecektir.<br>
+3. Kuvâ-yı Millîye’yi etken, millî iradeyi hâkim kılmak esastır.</div>
+<p>Bu kararlara göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["İstanbul Hükûmeti’nin vatanı savunamayacağı ihtimaline karşı önceden önlem düşünülmüştür.", "Kurulması düşünülen yönetimin meşruiyeti, millet temsilcilerine dayandırılmak istenmiştir.", "Erzurum Kongresi’nde İstanbul Hükûmeti’nin yerine geçen geçici bir hükûmet kurulmuştur.", "Temsil Heyeti’ne belirli şartlarda yürütmeyle ilgili önemli bir görev öngörülmüştür."],
+  a: "C",
+  s: `<p>2. kararda geçici hükûmetin ancak <b>bir şart gerçekleşirse</b> (“…bırakmak zorunda kalırsa”) kurulacağı belirtilmiştir. Kongrede böyle bir hükûmet kurulmamıştır. Anadolu’da İstanbul’dan bağımsız bir yönetim ancak 23 Nisan 1920’de Büyük Millet Meclisi ile ortaya çıkmıştır. C söylenemez. Bu çeldirici, “kurulacaktır” ifadesini “kurulmuştur” diye okuyan öğrenciyi yakalar.</p>
+<p>A ✓: Şarta bağlı geçici hükûmet maddesi, önceden düşünülmüş bir önlemdir.<br>
+B ✓: Üyeleri millî kongrenin seçecek olması, yönetimin millet temsilcilerine dayandırılacağını gösterir.<br>
+D ✓: Kongre toplanamazsa hükûmet üyelerini Temsil Heyeti seçecektir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Amasya Genelgesi’nin bazı maddeleri</b> <i>(sadeleştirilmiştir)</i><br>
+– Anadolu’nun her bakımdan en güvenli yeri olan Sivas’ta millî bir kongre en kısa zamanda toplanacaktır.<br>
+– Bunun için her sancaktan halkın güvenini kazanmış üç delege, mümkün olan en kısa sürede yetişmek üzere hemen yola çıkarılmalıdır.<br>
+– Her ihtimale karşı bu konu millî bir sır olarak tutulmalı ve delegeler gerekli yerlerde yolculuklarını kimliklerini gizleyerek yapmalıdır.<br>
+– Doğu illeri adına 10 Temmuz’da Erzurum’da bir kongre toplanacaktır.<br>
+<b>Not:</b> Erzurum Kongresi, delegelerin bir kısmının geç gelmesi nedeniyle 23 Temmuz 1919’da toplanabildi.</div>
+<p>Bu bilgilere göre,</p>
+<p>I. Kongre hazırlıklarının engellenebileceği düşünülmüştür.<br>
+II. Kongrede alınacak kararların millet iradesine dayanması amaçlanmıştır.<br>
+III. Delegelerin İstanbul Hükûmeti tarafından atanması öngörülmüştür.<br>
+IV. Erzurum Kongresi, Amasya Genelgesi’nde belirtilen tarihte toplanmıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve III", "II ve IV", "I ve II"],
+  a: "D",
+  s: `<p><b>I ✓:</b> Konunun “millî bir sır” olarak tutulması ve delegelerin kimliklerini gizleyerek yolculuk etmesi, İtilaf Devletleri ve İstanbul Hükûmeti’nin kongreyi engelleyebileceğinin düşünüldüğünü gösterir.<br>
+<b>II ✓:</b> Delegelerin “halkın güvenini kazanmış” kişilerden olması, kararların millet iradesine dayandırılmak istendiğini gösterir.<br>
+<b>III ✗:</b> Delegeler halkın güvenini kazanmış kişilerden seçilecektir; gizlilik zaten İstanbul Hükûmeti’nden de saklanmak içindir.<br>
+<b>IV ✗:</b> Genelgede 10 Temmuz denmiş, kongre ise 23 Temmuz’da toplanabilmiştir. Bu çeldirici, verilen notu atlayan öğrenciyi yakalar.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box">1916 yılının başında Kafkas Cephesi’nde ilerleyen Ruslar Erzurum’u ele geçirdi. Aynı yıl Avrupa’da müttefiki Avusturya-Macaristan’ın Rus ordularına karşı zor durumda kalması üzerine Osmanlı Devleti, Galiçya’ya bir kolordu gönderdi. Yine 1916’da Romanya ve Makedonya’ya da Osmanlı birlikleri sevk edildi. Bu sırada Irak’ta, Hicaz’da ve Kanal bölgesinde de çatışmalar sürüyordu.</div>
+<p>Bu metne göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Galiçya’ya asker gönderilmesi, Kafkas Cephesi’nde Erzurum’un kaybedilmesine yol açmıştır.", "Osmanlı Devleti, kendi topraklarındaki cepheler sürerken sınırları dışına da asker göndermiştir.", "Osmanlı Devleti’nin askerî yükü, müttefiklerine verdiği destek nedeniyle artmıştır.", "Osmanlı Devleti, 1916’da Ruslarla birden fazla cephede karşı karşıya gelmiştir."],
+  a: "A",
+  s: `<p>Metne göre Erzurum <b>1916’nın başında</b> kaybedilmiştir. Galiçya’ya asker gönderilmesi ise müttefikin zor durumda kalması üzerine, yine 1916’da gerçekleşmiştir. Metinde ikisi arasında bir neden-sonuç ilişkisi kurulmaz; ayrıca Erzurum’un kaybı bu sevkiyattan önce yaşanmıştır. A ulaşılamaz. Çeldirici, “aynı yıl olan iki olay birbirinin nedenidir” yanılgısına dayanır.</p>
+<p>B ✓: Irak, Hicaz, Kanal ve Kafkas’ta çatışma sürerken Galiçya, Romanya ve Makedonya’ya asker gönderilmiştir.<br>
+C ✓: Müttefikler için açılan yardım cepheleri, Osmanlı’nın askerî yükünü artırmıştır.<br>
+D ✓: Ruslarla hem Kafkasya’da hem Galiçya’da savaşılmıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, tarih dersi için <b>Kasım 1919</b> tarihli hayalî bir Anadolu gazetesi hazırlamak istemiş ve aşağıdaki haber başlıklarını yazmıştır.</p>
+<div class="box">1. Amasya’da Temsil Heyeti ile İstanbul Hükûmeti’nin temsilcisi arasındaki görüşmeler tamamlandı<br>
+2. Mebusan Meclisi seçimleri yurdun birçok yerinde sürüyor<br>
+3. Sivas’ta yayımlanan İrade-i Millîye gazetesi, kongre kararlarını duyurmaya devam ediyor<br>
+4. Temsil Heyeti Ankara’ya ulaştı; Ankaralılar heyeti coşkuyla karşıladı</div>
+<p>Bu başlıklardan hangisi, tarihî gerçeklere göre Kasım 1919 tarihli bir gazetede <b>yer alamaz</b>?</p>`,
+  c: ["1", "2", "3", "4"],
+  a: "D",
+  s: `<p>Başlıkları tarihleriyle kontrol edelim:</p>
+<p>1 → Amasya Görüşmeleri 20-22 <b>Ekim</b> 1919’da yapılmıştır. Kasım’da “tamamlandı” diye haber olabilir ✓.<br>
+2 → Mebusan Meclisi seçimleri Amasya Görüşmeleri’nden sonra, 1919’un son aylarında yapılmıştır. Meclis 12 Ocak 1920’de toplanmıştır ✓.<br>
+3 → İrade-i Millîye gazetesi Sivas Kongresi sırasında (Eylül 1919) yayımlanmaya başlamıştır ✓.<br>
+4 → Temsil Heyeti Ankara’ya <b>27 Aralık 1919</b>’da gelmiştir. Kasım 1919’da bu haber yazılamaz ✗.</p>
+<p>4. başlık bir ay sonraki olayı anlattığı için zaman uyumsuzdur. Ankara’nın merkez olması ile Amasya Görüşmeleri’nin sırasını karıştıran öğrenci 1’i işaretleyebilir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<p>Bir öğrenci, Millî Mücadele ile ilgili bazı kurum ve yetkilerin üç farklı tarihte var olup olmadığını aşağıdaki tabloda göstermiştir. (✓: o tarihte var ve faaliyette, –: o tarihte yok ya da faaliyette değil)</p>
+<table class="rt">
+<tr><th>Kurum / yetki</th><th>Eylül 1919</th><th>Şubat 1920</th><th>Haziran 1920</th></tr>
+<tr><td>Temsil Heyeti</td><td>✓</td><td>✓</td><td>–</td></tr>
+<tr><td>Osmanlı Mebusan Meclisi</td><td>✓</td><td>✓</td><td>–</td></tr>
+<tr><td>Büyük Millet Meclisi</td><td>–</td><td>–</td><td>✓</td></tr>
+<tr><td>Mustafa Kemal Paşa’nın Başkomutanlık yetkisi</td><td>–</td><td>–</td><td>–</td></tr>
+</table>
+<p>Tablodaki satırlardan hangisinde <b>hata</b> vardır?</p>`,
+  c: ["Temsil Heyeti", "Osmanlı Mebusan Meclisi", "Büyük Millet Meclisi", "Mustafa Kemal Paşa’nın Başkomutanlık yetkisi"],
+  a: "B",
+  s: `<p>Satırları tek tek kontrol edelim:</p>
+<p>Temsil Heyeti ✓: Erzurum Kongresi’nde (Ağustos 1919) kuruldu; Eylül 1919 ve Şubat 1920’de faaliyetteydi. Büyük Millet Meclisi açılınca (23 Nisan 1920) görevi sona erdi; Haziran 1920 için “–” doğrudur.<br>
+<b>Osmanlı Mebusan Meclisi ✗:</b> Padişah, Mebusan Meclisi’ni Aralık 1918’de kapatmıştı. Meclis, Amasya Görüşmeleri’nden sonra yapılan seçimlerle 12 Ocak 1920’de yeniden toplandı. Eylül 1919’da Mebusan Meclisi faaliyette değildi; bu hücreye “–” yazılmalıydı. Hata bu satırdadır.<br>
+Büyük Millet Meclisi ✓: 23 Nisan 1920’de açıldı; yalnızca Haziran 1920’de vardır.<br>
+Başkomutanlık ✓: Bu yetki 5 Ağustos 1921’de verildi; tablodaki üç tarihte de yoktur. Başkomutanlığı 1920’ye taşıyan öğrenci bu satırı hatalı sanır.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda Millî Mücadele’nin ilk yıllarında etkili olan bazı kurumlar karşılaştırılmıştır.</p>
+<table class="rt">
+<tr><th>Kurum</th><th>Nasıl oluştu?</th><th>Yaptığı bazı işler</th></tr>
+<tr><td>Temsil Heyeti</td><td>Erzurum Kongresi’nde kongre delegelerince seçildi, Sivas Kongresi’nde genişletildi.</td><td>Batı Anadolu Kuvâ-yı Millîye Komutanı atadı; İstanbul Hükûmeti’nin temsilcisiyle görüştü.</td></tr>
+<tr><td>Son Osmanlı Mebusan Meclisi</td><td>Seçilen milletvekilleriyle İstanbul’da toplandı.</td><td>Misak-ı Millî kararlarını kabul etti.</td></tr>
+<tr><td>Büyük Millet Meclisi</td><td>Yeni seçilen milletvekilleri ve İstanbul’dan gelebilen milletvekilleriyle Ankara’da açıldı.</td><td>Yasama ve yürütme yetkilerini üstlendi; Hıyanet-i Vataniye Kanunu’nu çıkardı.</td></tr>
+<tr><td>İstanbul Hükûmeti</td><td>Padişahın atadığı sadrazam ve nazırlardan oluştu.</td><td>Kuvâ-yı İnzibatiye’yi kurdu; temsilcileri Sevr Antlaşması’nı imzaladı.</td></tr>
+</table>
+<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Tabloda varlığını seçime dayandıran birden fazla kurum bulunmaktadır.", "Millî Mücadele’de yürütmeyle ilgili bazı işler, Büyük Millet Meclisi açılmadan önce de bir kurul tarafından yapılmıştır.", "İstanbul Hükûmeti’nin bazı faaliyetleri, millî iradeye dayanan kurumların amaçlarıyla çelişmiştir.", "Misak-ı Millî kararları, Ankara’da toplanan millet temsilcileri tarafından kabul edilmiştir."],
+  a: "D",
+  s: `<p>Tabloya göre Misak-ı Millî’yi <b>İstanbul’da</b> toplanan son Osmanlı Mebusan Meclisi kabul etmiştir. Ankara’daki Büyük Millet Meclisi ise Misak-ı Millî’den (28 Ocak 1920) sonra, 23 Nisan 1920’de açılmıştır. D söylenemez. Bu çeldirici, Misak-ı Millî’yi TBMM’ye mal eden çok yaygın yanılgıdan gelir.</p>
+<p>A ✓: Mebusan Meclisi ve Büyük Millet Meclisi seçimle oluşmuştur. Temsil Heyeti de seçilmiş delegelerce seçilmiştir.<br>
+B ✓: Temsil Heyeti’nin komutan ataması bir yürütme işidir ve TBMM’den öncedir.<br>
+C ✓: Kuvâ-yı İnzibatiye’nin kurulması ve Sevr’in imzalanması millî iradeyle çelişir.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Metin 1 – Milletler Cemiyeti Misakı’nın 22. maddesinden</b> <i>(özet)</i>: Savaştan sonra eski yönetimlerinden ayrılan ve henüz kendi kendini yönetecek durumda olmadığı kabul edilen halkların yönetimi, kendilerini yönetebilecek hâle gelinceye kadar gelişmiş milletlere emanet edilecektir.</div>
+<div class="box"><b>Metin 2:</b> Nisan 1920’de toplanan San Remo Konferansı’nda, savaştan önce Osmanlı topraklarında bulunan Suriye ve Lübnan’ın Fransa’nın; Irak ve Filistin’in ise İngiltere’nin manda yönetimine bırakılması kararlaştırıldı.</div>
+<p>Bu metinlere göre,</p>
+<p>I. Manda sistemi, savaşı kazanan devletlerin yenilen devletlerden ayrılan topraklarda nüfuz kurmasına imkân vermiştir.<br>
+II. Manda yönetimleri, bölge halklarının kendi kararlarıyla belirlenmiştir.<br>
+III. San Remo Konferansı’nda alınan kararlar, Sivas Kongresi’nde manda ve himayenin reddedilmesine yol açmıştır.<br>
+IV. Osmanlı Devleti’nin savaş öncesindeki bazı toprakları, savaştan sonra İtilaf Devletleri’nin denetimine girmiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve IV", "I ve II", "II ve III", "III ve IV"],
+  a: "A",
+  s: `<p><b>I ✓:</b> Osmanlı’dan ayrılan topraklar, “gelişmiş milletlere emanet” adı altında Fransa ve İngiltere’nin yönetimine bırakılmıştır.<br>
+<b>II ✗:</b> Manda yönetimleri bir konferansta galip devletlerce kararlaştırılmıştır; halkın oyuna başvurulmamıştır.<br>
+<b>III ✗:</b> Sivas Kongresi Eylül 1919’da, San Remo Konferansı ise Nisan 1920’dedir. Sonraki bir olay önceki bir kararın nedeni olamaz. Bu bir kronoloji tuzağıdır.<br>
+<b>IV ✓:</b> Suriye, Lübnan, Irak ve Filistin İngiltere ve Fransa’nın denetimine girmiştir.</p>
+<p>B ve C II’yi, D III’ü içerir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Çanakkale Cephesi’nde İngiltere ve Fransa’nın saflarında yalnızca bu ülkelerin askerleri savaşmadı. Avustralya ve Yeni Zelanda askerlerinden oluşan ANZAC Kolordusu, Hindistan’dan getirilen birlikler ve Fransa’nın Afrika’daki sömürgelerinden (örneğin Senegal’den) gelen askerler de cephede yer aldı. Osmanlı ordusunda ise Anadolu’nun yanı sıra Rumeli, Suriye ve Irak gibi farklı bölgelerden gelen askerler görev yaptı. ANZAC askerlerinin Gelibolu’ya çıktığı 25 Nisan, bugün Avustralya ve Yeni Zelanda’da anma günü olarak kabul edilmektedir.</div>
+<p>Bu metne göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Çanakkale Savaşları’nın etkileri, savaşan devletlerin kendi sınırlarının ötesine uzanmıştır.", "İtilaf Devletleri, sömürgelerinin ve dominyonlarının insan gücünden yararlanmıştır.", "Osmanlı ordusu, devletin farklı bölgelerinden gelen askerlerden oluşmuştur.", "İtilaf Devletleri’nin Çanakkale’ye farklı bölgelerden asker getirmesi, cephenin kısa sürede kazanılmasını sağlamıştır."],
+  a: "D",
+  s: `<p>Metinde cephenin sonucuyla ilgili bir bilgi verilmemiştir. Ayrıca İtilaf Devletleri Çanakkale’yi geçememiş, 1915 sonu ile 1916 başında birliklerini geri çekmiştir. D ulaşılamaz. “Çok asker = zafer” şeklindeki aşırı genelleme bu çeldiricinin kaynağıdır.</p>
+<p>A ✓: 25 Nisan’ın bugün Avustralya ve Yeni Zelanda’da anma günü olması bunu gösterir.<br>
+B ✓: ANZAC, Hint ve Senegalli askerler bunun örnekleridir.<br>
+C ✓: Anadolu, Rumeli, Suriye ve Irak’tan askerler vardır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Metin 1:</b> Mart 1918’de imzalanan Brest-Litovsk Antlaşması ile Rusya, Kars, Ardahan ve Batum’dan askerlerini çekti; bu yerlerin geleceğini bölge halkının belirlemesi kabul edildi. Temmuz 1918’de yapılan halkoylamasında bölge halkı büyük çoğunlukla Osmanlı Devleti’ne katılmayı seçti.</div>
+<div class="box"><b>Metin 2 – Misak-ı Millî’den</b> <i>(sadeleştirilmiştir)</i>: Halkı, serbest kaldıkları ilk anda kendi oylarıyla anavatana katılmayı kabul etmiş olan Kars, Ardahan ve Batum için gerekirse yeniden halkoylamasına başvurulmasını kabul ediyoruz.</div>
+<p>Bu metinlere göre,</p>
+<p>I. Misak-ı Millî’de Kars, Ardahan ve Batum’la ilgili tutum, I. Dünya Savaşı sırasında yaşanan bir gelişmeye dayandırılmıştır.<br>
+II. Mondros Ateşkes Antlaşması’ndan sonra bu yerlerin Osmanlı Devleti’ne ait olduğu bütün devletlerce tanınmıştır.<br>
+III. Misak-ı Millî’de bu yerlerin geleceğinin belirlenmesinde halkın iradesi esas alınmıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız II", "I ve II", "II ve III", "I ve III"],
+  a: "D",
+  s: `<p><b>I ✓:</b> Metin 2’deki “ilk anda kendi oylarıyla anavatana katılmayı kabul etmiş” ifadesi, Metin 1’deki 1918 halkoylamasına dayanır. Bu, I. Dünya Savaşı sırasındaki bir gelişmedir.<br>
+<b>II ✗:</b> Metinlerde böyle bir bilgi yoktur. Misak-ı Millî’de “gerekirse yeniden halkoylaması” denmesi, bu yerlerin durumunun tartışmalı olduğunu düşündürür. Bu çeldirici metin dışı bir genellemedir.<br>
+<b>III ✓:</b> İki metinde de çözüm yolu halkoylamasıdır; yani halkın iradesi esas alınmıştır.</p>
+<p>A, B ve C yanlış olan II’yi içerir. Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Mondros Ateşkes Antlaşması’na göre telsiz, telgraf ve kablo hatları İtilaf Devletleri’nin denetimine bırakılacaktı. Buna rağmen Millî Mücadele’nin hazırlık döneminde telgraf yoğun olarak kullanıldı. Havza Genelgesi’nden sonra yurdun dört bir yanından İstanbul Hükûmeti’ne ve İtilaf temsilcilerine protesto telgrafları çekildi. Amasya Genelgesi, telgrafla sivil ve askerî makamlara ulaştırıldı. Sivas Kongresi sırasında Temsil Heyeti padişaha doğrudan ulaşmak istedi; bu girişim İstanbul Hükûmeti tarafından engellenince İstanbul ile bütün telgraf haberleşmesini kesti.</div>
+<p>Bu metne göre,</p>
+<p>I. Mondros’un haberleşmeyle ilgili hükmü, Türk milletinin örgütlenmesini engellemeyi amaçlasa da bu amacına tam olarak ulaşamamıştır.<br>
+II. Telgraf, Millî Mücadele’de hem kamuoyu oluşturmak hem de alınan kararları iletmek için kullanılmıştır.<br>
+III. Temsil Heyeti’nin İstanbul ile haberleşmeyi kesmesi, Amasya Genelgesi’nin yurda duyurulmasını engellemiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p><b>I ✓:</b> Haberleşme hatları İtilaf denetimine verilmesine rağmen telgraf, örgütlenme için yoğun biçimde kullanılmıştır.<br>
+<b>II ✓:</b> Protesto telgrafları kamuoyu oluşturmaya, Amasya Genelgesi’nin telgrafla iletilmesi ise kararları ulaştırmaya örnektir.<br>
+<b>III ✗:</b> Amasya Genelgesi Haziran 1919’da yayımlanıp duyurulmuştur. Haberleşmenin kesilmesi ise Eylül 1919’da, Sivas Kongresi sırasındadır. Sonraki olay öncekini engelleyemez. Bu bir kronoloji tuzağıdır.</p>
+<p>A eksiktir; C ve D III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Metin 1:</b> 16 Mart 1920’de İstanbul, İtilaf Devletleri tarafından resmen işgal edildi. Mebusan Meclisi basıldı; bazı milletvekilleri tutuklanarak Malta’ya sürgün edildi.</div>
+<div class="box"><b>Metin 2 – Mustafa Kemal Paşa’nın 19 Mart 1920 tarihli genelgesinden</b> <i>(sadeleştirilmiştir)</i>: Ankara’da olağanüstü yetkilere sahip bir meclis toplanacaktır. Bu meclise katılmak üzere her sancaktan seçimle beşer üye gönderilecektir. Dağıtılan Mebusan Meclisi’nin üyelerinden İstanbul’dan ayrılabilenler de bu meclise katılabilecektir.</div>
+<p>Bu metinlere göre,</p>
+<p>I. Mustafa Kemal Paşa, millî iradenin temsil edilmesinde bir boşluk oluşmaması için kısa sürede harekete geçmiştir.<br>
+II. Ankara’da toplanacak meclisin, olağan bir meclisten daha geniş yetkilerle çalışması öngörülmüştür.<br>
+III. Yeni meclisin üyeleri yalnızca İstanbul’dan gelen milletvekillerinden oluşacaktır.<br>
+IV. Ankara’daki meclis, Mebusan Meclisi dağıtılmadan önce çalışmalarına başlamıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "III ve IV"],
+  a: "A",
+  s: `<p><b>I ✓:</b> İşgal 16 Mart’ta olmuş, genelge yalnızca üç gün sonra, 19 Mart’ta yayımlanmıştır.<br>
+<b>II ✓:</b> Genelgede meclisin “olağanüstü yetkilere” sahip olacağı açıkça belirtilmiştir.<br>
+<b>III ✗:</b> Her sancaktan <b>seçimle</b> yeni üyeler gelecek, İstanbul’dan ayrılabilen mebuslar da <b>ayrıca</b> katılabilecektir. “Yalnızca” ifadesi metne aykırıdır.<br>
+<b>IV ✗:</b> Genelge Meclis dağıtıldıktan sonra yayımlanmış ve meclisin toplanacağını bildirmiştir. Büyük Millet Meclisi 23 Nisan 1920’de açılmıştır. Bu bir kronoloji tuzağıdır.</p>
+<p>B III’ü, C IV’ü, D her ikisini içerir. Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda İzmir’in işgalinin ardından yaşanan bazı gelişmeler tarih sırasıyla verilmiştir.</p>
+<table class="rt">
+<tr><th>Tarih</th><th>Gelişme</th></tr>
+<tr><td>15 Mayıs 1919</td><td>Yunan ordusu İzmir’i işgal etti.</td></tr>
+<tr><td>19 Mayıs 1919</td><td>İstanbul’da Fatih Mitingi düzenlendi. Aynı gün Mustafa Kemal Paşa Samsun’a çıktı.</td></tr>
+<tr><td>23 Mayıs 1919</td><td>İstanbul’da Sultanahmet Mitingi düzenlendi.</td></tr>
+<tr><td>28 Mayıs 1919</td><td>Mustafa Kemal Paşa, Havza Genelgesi’ni yayımlayarak işgallerin yurdun her yerinde mitinglerle protesto edilmesini istedi.</td></tr>
+<tr><td>Haziran 1919</td><td>Anadolu’nun pek çok yerinde protesto mitingleri düzenlendi; İstanbul Hükûmeti’ne ve İtilaf temsilcilerine protesto telgrafları çekildi.</td></tr>
+</table>
+<p>Bu tabloya göre,</p>
+<p>I. İzmir’in işgaline karşı protestolar, Havza Genelgesi yayımlanmadan önce başlamıştı.<br>
+II. Havza Genelgesi, işgallere karşı tepkinin yurt geneline yayılmasına katkı sağlamıştır.<br>
+III. Sultanahmet Mitingi, Mustafa Kemal Paşa’nın Havza’dan verdiği talimat üzerine düzenlenmiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p><b>I ✓:</b> Fatih (19 Mayıs) ve Sultanahmet (23 Mayıs) mitingleri, Havza Genelgesi’nden (28 Mayıs) önce yapılmıştır. İşgale karşı tepki kendiliğinden başlamıştır.<br>
+<b>II ✓:</b> Genelge yurdun her yerinde miting yapılmasını istemiş; Haziran 1919’da Anadolu’nun pek çok yerinde mitingler düzenlenmiş ve protesto telgrafları çekilmiştir.<br>
+<b>III ✗:</b> Sultanahmet Mitingi 23 Mayıs’ta, Havza Genelgesi ise 28 Mayıs’ta yayımlanmıştır. Önce yapılan bir miting, sonra verilen bir talimatla düzenlenmiş olamaz. “Bütün mitingler Havza Genelgesi’nin sonucudur” genellemesi bu çeldiricinin kaynağıdır.</p>
+<p>A eksiktir; C ve D III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Metin 1 – Wilson İlkeleri’nin 12. maddesi (Ocak 1918)</b> <i>(özet)</i>: Osmanlı Devleti’nin Türk olan kısımlarına güvenli bir egemenlik sağlanmalı, Türk olmayan milletlere de kendilerini geliştirme imkânı verilmelidir. Çanakkale Boğazı, uluslararası güvenceler altında bütün milletlerin gemilerine sürekli olarak açık olmalıdır.</div>
+<div class="box"><b>Metin 2 – Sevr Antlaşması’nın bazı hükümleri (Ağustos 1920)</b>: Doğu Anadolu’da bir Ermeni devleti kurulacak; İzmir ve çevresi Yunanistan’ın yönetimine bırakılacak; Boğazlar kendi bayrağı ve bütçesi olan uluslararası bir komisyon tarafından yönetilecek.</div>
+<p>Bu metinler karşılaştırıldığında aşağıdakilerden hangisi söylenebilir?</p>`,
+  c: ["Sevr Antlaşması, Wilson İlkeleri’nde Türklere tanınan egemenlik hakkını genişletmiştir.", "Wilson İlkeleri, Sevr Antlaşması’nın ağır şartlarına tepki olarak yayımlanmıştır.", "Boğazlar konusunda iki metin de uluslararası bir düzenleme öngörse de Sevr, bu konuda Türk egemenliğini daha fazla sınırlamıştır.", "İki metin de Türklerin yaşadığı toprakların başka devletlere bırakılmasını öngörmüştür."],
+  a: "C",
+  s: `<p>Wilson İlkeleri Boğazlarda uluslararası güvenceli <b>serbest geçişi</b> öngörür. Sevr ise Boğazların <b>yönetimini</b> bayrağı ve bütçesi olan bir komisyona verir; bu Türk egemenliğini çok daha fazla sınırlar. C söylenebilir.</p>
+<p>A ✗: Sevr, Türk egemenliğini genişletmemiş, tersine daraltmıştır (Ermeni devleti, İzmir’in Yunan yönetimine verilmesi).<br>
+B ✗: Wilson İlkeleri Ocak 1918’de, Sevr ise Ağustos 1920’de ortaya çıkmıştır. Kronoloji tuzağıdır.<br>
+D ✗: Wilson İlkeleri tersine Türk kısımlarına güvenli egemenlik öngörür. “İki metin de” genellemesi yanlıştır.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Nisan 1920’de İstanbul Hükûmeti, Millî Mücadele’yi bastırmak amacıyla Kuvâ-yı İnzibatiye adlı bir birlik kurdu; halk arasında bu birliğe “Halifelik Ordusu” da denildi. Bu birlik, İzmit ve çevresinde millî kuvvetlerle çatıştı ve kısa sürede yenilerek dağıldı. Aynı dönemde Bolu, Düzce, Yozgat ve Konya gibi yerlerde de Büyük Millet Meclisine karşı ayaklanmalar çıktı. Bazı ayaklanmalarda halk, İstanbul’dan yayılan fetva ve propagandalarla kışkırtılmıştı.</div>
+<p>Bu metne göre aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
+  c: ["Kuvâ-yı İnzibatiye, Kuvâ-yı Millîye birliklerinin düzenli orduya dönüştürülmesiyle oluşturulmuştur.", "İstanbul Hükûmeti, Millî Mücadele’ye karşı silahlı güç kullanmaya da başvurmuştur.", "Dinî duygular, Millî Mücadele’nin aleyhine kullanılmak istenmiştir.", "Büyük Millet Meclisi, açıldıktan kısa süre sonra iç karışıklıklarla karşı karşıya kalmıştır."],
+  a: "A",
+  s: `<p>Metne göre Kuvâ-yı İnzibatiye’yi <b>İstanbul Hükûmeti</b>, Millî Mücadele’yi <b>bastırmak</b> için kurmuştur. Kuvâ-yı Millîye ise millî direnişin gücüdür. İki ad birbirine benzediği için öğrenciler karıştırabilir; ama amaçları tamamen zıttır. A ulaşılamaz.</p>
+<p>B ✓: İstanbul Hükûmeti silahlı bir birlik kurup millî kuvvetlerle çatışmıştır.<br>
+C ✓: “Halifelik Ordusu” adı ve fetvalarla yapılan kışkırtma, dinî duyguların kullanıldığını gösterir.<br>
+D ✓: Meclis 23 Nisan 1920’de açılmış; aynı dönemde birçok yerde ona karşı ayaklanma çıkmıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki zaman çizelgesinde Kafkas Cephesi’ndeki bazı gelişmeler verilmiştir.</p>
+<div class="fig"><svg viewBox="0 0 560 288" width="560" role="img" aria-label="Kafkas Cephesi’ndeki bazı gelişmeler zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="560" height="288" fill="#ffffff"/>
+<line x1="136" y1="10" x2="136" y2="278" stroke="#94a3b8" stroke-width="3"/>
+<rect x="146" y="10" width="408" height="31" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<circle cx="136" cy="25.5" r="6" fill="#dc2626"/>
+<text x="122" y="29.5" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Şubat 1916</text>
+<text x="156" y="29" font-size="11" fill="#1e293b">Ruslar Erzurum’u ele geçirdi.</text>
+<rect x="146" y="47" width="408" height="31" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+<circle cx="136" cy="62.5" r="6" fill="#dc2626"/>
+<text x="122" y="66.5" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="end">Nisan 1916</text>
+<text x="156" y="66" font-size="11" fill="#1e293b">Ruslar Trabzon’u ele geçirdi.</text>
+<rect x="146" y="84" width="408" height="31" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<circle cx="136" cy="99.5" r="6" fill="#16a34a"/>
+<text x="122" y="103.5" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">Ağustos 1916</text>
+<text x="156" y="103" font-size="11" fill="#1e293b">Mustafa Kemal komutasındaki birlikler Muş ve Bitlis’i geri aldı.</text>
+<rect x="146" y="121" width="408" height="46" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.2"/>
+<circle cx="136" cy="144" r="6" fill="#475569"/>
+<text x="122" y="148" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Aralık 1917</text>
+<text x="156" y="140" font-size="11" fill="#1e293b">Rusya’daki ihtilalden sonra Erzincan Ateşkesi imzalandı; cephede</text>
+<text x="156" y="155" font-size="11" fill="#1e293b">çatışmalar durdu.</text>
+<rect x="146" y="173" width="408" height="31" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<circle cx="136" cy="188.5" r="6" fill="#16a34a"/>
+<text x="122" y="192.5" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">Şubat 1918</text>
+<text x="156" y="192" font-size="11" fill="#1e293b">Osmanlı ordusu Erzincan ve Trabzon’u geri aldı.</text>
+<rect x="146" y="210" width="408" height="31" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<circle cx="136" cy="225.5" r="6" fill="#d97706"/>
+<text x="122" y="229.5" font-size="11" font-weight="bold" fill="#92400e" text-anchor="end">3 Mart 1918</text>
+<text x="156" y="229" font-size="11" fill="#1e293b">Rusya ile Brest-Litovsk Antlaşması imzalandı.</text>
+<rect x="146" y="247" width="408" height="31" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<circle cx="136" cy="262.5" r="6" fill="#16a34a"/>
+<text x="122" y="266.5" font-size="11" font-weight="bold" fill="#166534" text-anchor="end">12 Mart 1918</text>
+<text x="156" y="266" font-size="11" fill="#1e293b">Osmanlı ordusu Erzurum’u geri aldı.</text>
+</svg></div>
+<p>Bu zaman çizelgesine göre,</p>
+<p>I. Rusya’daki ihtilal, Kafkas Cephesi’ndeki dengeyi Osmanlı Devleti lehine değiştirmiştir.<br>
+II. Osmanlı ordusu, Rusların ele geçirdiği bazı şehirleri Brest-Litovsk Antlaşması imzalanmadan önce geri almaya başlamıştır.<br>
+III. Muş ve Bitlis, Rusya savaştan çekildikten sonra geri alınmıştır.<br>
+IV. Erzurum, savaş boyunca Osmanlı Devleti’nin elinden hiç çıkmamıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve III", "II ve IV", "I ve II", "I, II ve III"],
+  a: "C",
+  s: `<p><b>I ✓:</b> İhtilalden sonra çatışmalar durmuş, ardından Osmanlı ordusu kaybedilen şehirleri birer birer geri almıştır.<br>
+<b>II ✓:</b> Erzincan ve Trabzon Şubat 1918’de, yani 3 Mart 1918’deki antlaşmadan önce geri alınmıştır.<br>
+<b>III ✗:</b> Muş ve Bitlis Ağustos 1916’da, Rusya’daki ihtilalden ve Rusya’nın savaştan çekilmesinden önce geri alınmıştır. Mustafa Kemal’in Kafkas’taki başarısını 1918’e taşıyan öğrenci bu tuzağa düşer.<br>
+<b>IV ✗:</b> Erzurum Şubat 1916’da Rusların eline geçmiş, Mart 1918’de geri alınmıştır.</p>
+<p>A ve D III’ü, B IV’ü içerir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Sevr Antlaşması’nın taslağı, Osmanlı Devleti’nin katılmadığı San Remo Konferansı’nda (Nisan 1920) İtilaf Devletleri tarafından hazırlandı. İstanbul’un resmen işgalinden sonra Mebusan Meclisi dağılmış olduğu için padişah, antlaşmayı görüşmek üzere devlet ileri gelenlerinden oluşan Saltanat Şûrası’nı topladı. Şûra antlaşmanın imzalanmasını onayladı ve antlaşma 10 Ağustos 1920’de Osmanlı Hükûmeti’nin temsilcilerince imzalandı. Ancak Kanun-i Esasi’ye göre böyle bir antlaşmanın yürürlüğe girmesi için Mebusan Meclisi’nin onayı gerekiyordu. Büyük Millet Meclisi ise antlaşmayı tanımadı ve imzalayanları vatan haini ilan etti.</div>
+<p>Bu metne göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Sevr Antlaşması, hukuken geçerlilik kazanması için gereken onay sürecini tamamlayamamıştır.", "Saltanat Şûrası’nın onay vermesiyle Sevr Antlaşması, Kanun-i Esasi’ye uygun olarak yürürlüğe girmiştir.", "Antlaşmanın şartları, Osmanlı Devleti’nin katılmadığı bir toplantıda belirlenmiştir.", "Sevr Antlaşması karşısında Ankara’daki ve İstanbul’daki yönetimler farklı tutumlar sergilemiştir."],
+  a: "B",
+  s: `<p>Metne göre antlaşmanın yürürlüğe girmesi için <b>Mebusan Meclisi’nin</b> onayı gerekiyordu. Saltanat Şûrası bir meclis değildir ve Mebusan Meclisi dağılmış olduğu için bu onay alınamamıştır. Bu nedenle Sevr hukuken yürürlüğe girmemiştir. B söylenemez. Bu çeldirici, “imzalandı = yürürlüğe girdi” yanılgısından gelir.</p>
+<p>A ✓: Mebusan Meclisi onayı alınamamıştır.<br>
+C ✓: Taslak, Osmanlı’nın katılmadığı San Remo Konferansı’nda hazırlanmıştır.<br>
+D ✓: İstanbul’daki yönetim antlaşmayı imzalamış, Ankara ise tanımayıp imzalayanları vatan haini ilan etmiştir.</p>
+<p>Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda Millî Mücadele döneminde sık kullanılan bazı kavramlar ve sözlük anlamları verilmiştir.</p>
+<table class="rt">
+<tr><th>Kavram</th><th>Sözlük anlamı</th></tr>
+<tr><td>Müdafaa-i Hukuk</td><td>Hakları savunma</td></tr>
+<tr><td>Redd-i İlhak</td><td>Başka bir devlete katılmayı (bağlanmayı) reddetme</td></tr>
+<tr><td>Misak-ı Millî</td><td>Millî ant, millî yemin</td></tr>
+<tr><td>Heyet-i Temsiliye</td><td>Temsil kurulu</td></tr>
+<tr><td>Kuvâ-yı Millîye</td><td>Millî kuvvetler</td></tr>
+</table>
+<p>Kavramların anlamlarından ve Millî Mücadele’deki kullanımlarından hareketle aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["Müdafaa-i Hukuk cemiyetlerinin adları, direnişin haklılık ve hukuk temeline dayandırılmak istendiğini gösterir.", "Redd-i İlhak adı, İzmir ve çevresinin başka bir devlete bağlanmasına karşı çıkıldığını yansıtır.", "Kuvâ-yı Millîye adı, bu birliklerin devletin düzenli ordusu tarafından kurulduğunu gösterir.", "Misak-ı Millî adı, alınan kararların milletin vazgeçilmez hedefleri olarak benimsendiğini gösterir."],
+  a: "C",
+  s: `<p>Kuvâ-yı Millîye “millî kuvvetler” demektir; bu ad birliklerin milletten doğduğunu anlatır. Gerçekte de bu birlikler, ordunun terhis edildiği ve İstanbul Hükûmeti’nin işgallere sessiz kaldığı ortamda halkın kendi imkânlarıyla kurduğu düzensiz birliklerdir. Düzenli ordu ancak TBMM döneminde kurulmuştur. C söylenemez. Öğrenci adı “Kuvâ-yı İnzibatiye” gibi devlet birlikleriyle ya da sonraki düzenli orduyla karıştırırsa bu şıkka yönelir.</p>
+<p>A ✓: “Hakları savunma” adı, mücadelenin haklılığa dayandırıldığını gösterir.<br>
+B ✓: İzmir’deki Redd-i İlhak hareketi, bölgenin Yunanistan’a bağlanmasına karşı çıkmıştır.<br>
+D ✓: “Ant/yemin” anlamı, kararların vazgeçilmez hedefler olarak görüldüğünü gösterir.</p>
+<p>Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box">4-11 Eylül 1919 tarihleri arasında toplanan Sivas Kongresi’ne yurdun farklı bölgelerinden delegeler katıldı. Kongrede Erzurum Kongresi kararları bütün yurdu kapsayacak şekilde genişletilerek kabul edildi ve manda ve himaye kesin olarak reddedildi. Bütün millî cemiyetler “Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti” adı altında birleştirildi. Temsil Heyeti’nin bütün yurdu temsil ettiği kabul edildi. Kongre kararlarını halka duyurmak için İrade-i Millîye gazetesi çıkarıldı.</div>
+<p>Bu metinden hareketle aşağıdaki sorulardan hangisinin cevabına <b>ulaşılamaz</b>?</p>`,
+  c: ["İstanbul Hükûmeti, Sivas Kongresi’nin toplanmasına nasıl bir tepki göstermiştir?", "Sivas Kongresi’nde hangi kongrenin kararları temel alınmıştır?", "Millî cemiyetler hangi ad altında birleştirilmiştir?", "Kongre kararlarının halka duyurulması için hangi yola başvurulmuştur?"],
+  a: "A",
+  s: `<p>Metinde İstanbul Hükûmeti’nin kongreye tepkisinden hiç söz edilmez. A sorusunun cevabına bu metinden ulaşılamaz. Öğrenci kongre sırasında yaşanan Ali Galip olayını ya da haberleşmenin kesilmesini bildiği için bu soruyu “cevaplanabilir” sanabilir. Ancak soru metne göre sorulmuştur; ön bilgi metinde olmayan bir şeyi metne eklemez.</p>
+<p>B ✓: Erzurum Kongresi kararları.<br>
+C ✓: Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti.<br>
+D ✓: İrade-i Millîye gazetesi çıkarılmıştır.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<div class="box">Mondros Ateşkes Antlaşması’na göre Osmanlı ordusu terhis edilecek, silah ve cephaneler İtilaf Devletleri’ne teslim edilecekti. 1919 baharında Erzurum’daki 15. Kolordu Komutanlığına atanan Kâzım Karabekir Paşa ise İtilaf temsilcilerinin isteklerine rağmen kolordunun silahlarını teslim etmedi ve birliklerini dağıtmadı. Bu kolordu, daha sonra Doğu Cephesi’nde Ermenilere karşı yürütülen harekâtta önemli rol oynadı.</div>
+<p>Bu metne göre,</p>
+<p>I. Mondros’un bazı hükümleri, Anadolu’daki bazı askerî birlikler tarafından uygulanmamıştır.<br>
+II. Doğu Cephesi’nde kullanılan askerî gücün bir kısmı, ateşkes şartlarına rağmen korunmuştur.<br>
+III. Kâzım Karabekir Paşa bu tutumu, Büyük Millet Meclisinin verdiği emir doğrultusunda göstermiştir.<br>
+IV. Mondros’a göre Osmanlı Devleti’nin hiçbir askerî birlik bulundurmaması öngörülmüştür.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["I ve II", "I ve III", "II ve IV", "III ve IV"],
+  a: "A",
+  s: `<p><b>I ✓:</b> 15. Kolordu silahlarını teslim etmemiş, birliklerini dağıtmamıştır.<br>
+<b>II ✓:</b> Korunan bu kolordu daha sonra Doğu Cephesi’nde önemli rol oynamıştır.<br>
+<b>III ✗:</b> Olay 1919’dadır. Büyük Millet Meclisi ancak 23 Nisan 1920’de açılmıştır. Bu bir kronoloji tuzağıdır: “1919’da TBMM yoktur.”<br>
+<b>IV ✗:</b> Metinde “terhis edilecek” denir ama hiçbir askerî birliğin kalmayacağı söylenmez. Gerçekte Mondros, sınırların korunması ve iç güvenlik için gerekli askerin dışındaki birliklerin terhisini öngörüyordu. Bu bir aşırı genelleme çeldiricisidir.</p>
+<p>Cevap <b>A</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Metin 1:</b> İstanbul’daki Divan-ı Harp (askerî mahkeme), Mayıs 1920’de Mustafa Kemal Paşa ve Millî Mücadele’nin bazı önderleri hakkında, yokluklarında idam kararı verdi. Karar padişah tarafından onaylandı.</div>
+<div class="box"><b>Metin 2:</b> Büyük Millet Meclisi ise açılışından kısa süre sonra aldığı bir kararla, İstanbul’un resmen işgal edildiği 16 Mart 1920’den sonra İstanbul Hükûmeti’nin yaptığı bütün antlaşma ve işlemleri geçersiz saydı.</div>
+<p>Bu metinlere göre,</p>
+<p>I. İstanbul Hükûmeti, Millî Mücadele’nin önderlerini meşru kabul etmemiştir.<br>
+II. Büyük Millet Meclisi, İstanbul Hükûmeti’nin işgal altında yaptığı işlemlerin hukuki sonuç doğurmasını engellemek istemiştir.<br>
+III. Divan-ı Harp’in kararı, Büyük Millet Meclisi açılmadan önce verilmiştir.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "Yalnız II", "I ve II", "I ve III"],
+  a: "C",
+  s: `<p><b>I ✓:</b> Önderler hakkında idam kararı verilmesi ve padişahın bunu onaylaması, İstanbul Hükûmeti’nin onları meşru saymadığını gösterir.<br>
+<b>II ✓:</b> İşgal tarihinden sonraki antlaşma ve işlemlerin geçersiz sayılması, bunların hukuki sonuç doğurmasını engelleme amacı taşır. (Bu karar, daha sonra imzalanan Sevr Antlaşması’nın Ankara tarafından tanınmamasının da dayanaklarından biridir.)<br>
+<b>III ✗:</b> Büyük Millet Meclisi 23 Nisan 1920’de açılmıştır; idam kararı ise Mayıs 1920’dedir. Karar Meclis açıldıktan sonra verilmiştir. Bu bir kronoloji tuzağıdır.</p>
+<p>A ve B eksiktir; D III’ü içerir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda I. Dünya Savaşı’nda Osmanlı ordusunda görev yapan bazı Alman komutanlar verilmiştir.</p>
+<table class="rt">
+<tr><th>Alman komutan</th><th>Osmanlı ordusundaki görevi</th></tr>
+<tr><td>Liman von Sanders</td><td>Çanakkale’de 5. Ordu Komutanı (1915)</td></tr>
+<tr><td>Colmar von der Goltz</td><td>Irak’ta 6. Ordu Komutanı (1915-1916)</td></tr>
+<tr><td>Erich von Falkenhayn</td><td>Suriye-Filistin’de Yıldırım Orduları Grubu Komutanı (1917-1918)</td></tr>
+<tr><td>Wilhelm Souchon</td><td>Osmanlı donanmasının komutanı (1914-1917)</td></tr>
+</table>
+<div class="box"><b>Not:</b> Mustafa Kemal, Çanakkale’de 5. Ordu’ya bağlı 19. Tümen’in komutanı olarak savaşmıştı. 1917’de ise Yıldırım Orduları Grubu’na bağlı 7. Ordu’nun komutanlığına atandı.</div>
+<p>Bu bilgilere göre,</p>
+<p>I. Almanya, Osmanlı Devleti’nin farklı cephelerinde askerî yönetimde etkili olmuştur.<br>
+II. Mustafa Kemal, savaş sırasında başında Alman komutanların bulunduğu üst birliklere bağlı olarak görev yapmıştır.<br>
+III. Osmanlı Devleti, Alman komutanların yönettiği bütün cephelerde başarılı olmuştur.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "I ve II", "I ve III", "II ve III"],
+  a: "B",
+  s: `<p><b>I ✓:</b> Alman komutanlar Çanakkale, Irak, Suriye-Filistin ve donanma gibi farklı alanlarda üst düzey görevler almıştır.<br>
+<b>II ✓:</b> Mustafa Kemal’in tümeni Liman von Sanders’in komutasındaki 5. Ordu’ya; 7. Ordu ise Falkenhayn’ın komutasındaki Yıldırım Orduları Grubu’na bağlıydı.<br>
+<b>III ✗:</b> Tabloda cephelerin sonucuna dair bilgi yoktur. Gerçekte Irak ve Suriye-Filistin cepheleri kaybedilmiştir. “Alman komutan = başarı” genellemesi metin dışıdır.</p>
+<p>A eksiktir; C ve D III’ü içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Aşağıdaki tabloda I. Dünya Savaşı’na katılan bazı imparatorlukların savaş sırasındaki ve sonundaki durumları verilmiştir.</p>
+<table class="rt">
+<tr><th>İmparatorluk</th><th>Savaştaki bloku</th><th>Savaş sırasında / sonunda yaşananlar</th></tr>
+<tr><td>Rus Çarlığı</td><td>İtilaf</td><td>1917’deki ihtilallerle Çarlık yönetimi yıkıldı; sonunda Bolşevikler yönetimi ele geçirdi.</td></tr>
+<tr><td>Alman İmparatorluğu</td><td>İttifak</td><td>Kasım 1918’de imparator tahttan çekildi; cumhuriyet ilan edildi.</td></tr>
+<tr><td>Avusturya-Macaristan</td><td>İttifak</td><td>İmparatorluk dağıldı; Avusturya, Macaristan ve Çekoslovakya gibi devletler ortaya çıktı.</td></tr>
+<tr><td>Osmanlı Devleti</td><td>İttifak</td><td>Mondros’tan sonra toprakları işgal edilmeye başlandı; Anadolu’da Millî Mücadele başladı.</td></tr>
+</table>
+<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
+  c: ["I. Dünya Savaşı, birden fazla imparatorluğun yıkılmasına ya da dağılmasına yol açmıştır.", "Savaş sırasında rejim değişikliği yalnızca İttifak bloğundaki devletlerde yaşanmamıştır.", "Savaşın sonunda Avrupa’da yeni devletler ortaya çıkmıştır.", "Tablodaki imparatorlukların hepsi savaşın bitmesiyle birlikte hukuken sona ermiştir."],
+  a: "D",
+  s: `<p>Tabloya göre Osmanlı Devleti’nin toprakları işgal edilmiş ve Millî Mücadele başlamıştır; devletin hukuken sona erdiği söylenmez. Gerçekte Osmanlı Devleti savaşın bitiminde değil, saltanatın kaldırılmasıyla (1 Kasım 1922) hukuken sona ermiştir. D söylenemez. Bu çeldirici, “fiilen yıkılış” ile “hukuken sona eriş”i karıştırma yanılgısına dayanır.</p>
+<p>A ✓: Rus, Alman ve Avusturya-Macaristan yönetimleri yıkılmış ya da dağılmıştır.<br>
+B ✓: İtilaf bloğundaki Rusya’da da rejim değişmiştir.<br>
+C ✓: Avusturya, Macaristan ve Çekoslovakya gibi devletler ortaya çıkmıştır.</p>
+<p>Cevap <b>D</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Misak-ı Millî’nin 1. maddesinden</b> <i>(sadeleştirilmiştir)</i>: Mondros Ateşkes Antlaşması’nın imzalandığı tarihte (30 Ekim 1918) düşman işgali altında bulunan ve halkının çoğunluğu Arap olan yerlerin geleceği halkoylamasıyla belirlenmelidir. Bu çizginin içinde kalan, Türk ve Müslüman çoğunluğun yaşadığı yerler ise hiçbir şekilde birbirinden ayrılamaz bir bütündür.</div>
+<table class="rt">
+<tr><th>Yer</th><th>İşgal edildiği tarih</th></tr>
+<tr><td>Kudüs</td><td>Aralık 1917</td></tr>
+<tr><td>Şam</td><td>1 Ekim 1918</td></tr>
+<tr><td>Halep</td><td>26 Ekim 1918</td></tr>
+<tr><td>Musul</td><td>Kasım 1918</td></tr>
+<tr><td>İzmir</td><td>15 Mayıs 1919</td></tr>
+</table>
+<p>Yalnızca işgal tarihleri dikkate alındığında, tablodaki yerlerden hangileri Misak-ı Millî’deki “ateşkes imzalandığında işgal altında bulunmama” ölçütünü karşılar?</p>`,
+  c: ["Halep ve Musul", "Musul ve İzmir", "Şam, Halep ve İzmir", "Halep, Musul ve İzmir"],
+  a: "B",
+  s: `<p>Ölçüt tarihi <b>30 Ekim 1918</b>’dir. Bu tarihten <b>sonra</b> işgal edilen yerler ölçütü karşılar.</p>
+<p>Kudüs (Aralık 1917) ateşkesten çok önce, Şam (1 Ekim 1918) ise yaklaşık bir ay önce işgal edilmiştir ✗.<br>
+Halep <b>26 Ekim 1918</b>’de, yani ateşkesten dört gün <b>önce</b> işgal edilmiştir ✗. “1918’de işgal edildi, Mondros da 1918” diye ayın gününe bakmayan öğrenci Halep’i dâhil ederek A veya D şıkkına yönelir.<br>
+Musul (Kasım 1918) ve İzmir (Mayıs 1919) ateşkesten sonra işgal edilmiştir ✓. Musul’un Misak-ı Millî sınırları içinde sayılmasının nedenlerinden biri de budur.</p>
+<p>C ✗: Şam ve Halep’i içerir. Cevap <b>B</b>.</p>` },
+{ lv: "zor", q: `<p>Bir müzenin Millî Mücadele salonunda sergilenecek eserler, ilgili oldukları olayların tarihine göre en eskiden en yeniye doğru sıralanacaktır.</p>
+<table class="rt">
+<tr><th>Kart</th><th>Eser</th></tr>
+<tr><td>K</td><td>Mustafa Kemal Paşa’yı İstanbul’dan Samsun’a götüren Bandırma Vapuru’nun maketi</td></tr>
+<tr><td>L</td><td>Mondros Ateşkes Antlaşması’nın imzalandığı Agamemnon zırhlısının fotoğrafı</td></tr>
+<tr><td>M</td><td>Sivas Kongresi’nin toplandığı okul binasının maketi</td></tr>
+<tr><td>N</td><td>Ankara’da yayımlanan Hâkimiyet-i Millîye gazetesinin ilk sayısı</td></tr>
+<tr><td>O</td><td>Büyük Millet Meclisinin açıldığı binanın fotoğrafı</td></tr>
+</table>
+<p>Buna göre <b>dördüncü</b> sırada hangi eser yer alır?</p>`,
+  c: ["K", "M", "N", "O"],
+  a: "C",
+  s: `<p>Olayların tarihleri: L → Mondros, 30 Ekim 1918; K → Samsun’a çıkış, Mayıs 1919; M → Sivas Kongresi, Eylül 1919; N → Hâkimiyet-i Millîye’nin ilk sayısı, 10 Ocak 1920; O → Büyük Millet Meclisinin açılışı, 23 Nisan 1920.</p>
+<p>Sıra L – K – M – N – O’dur; dördüncü sırada N vardır.</p>
+<p>O’yu seçen öğrenci, Hâkimiyet-i Millîye’yi Büyük Millet Meclisinin çıkardığı bir gazete sanıp Meclis’ten sonraya koymuştur. Oysa gazete Temsil Heyeti Ankara’ya geldikten kısa süre sonra, Meclis açılmadan önce yayımlanmaya başlamıştır. M’yi seçen öğrenci Hâkimiyet-i Millîye’yi Sivas’ta çıkarılan İrade-i Millîye ile karıştırıp Sivas Kongresi’nden önceye koymuş; K’yi seçen ise sıralamayı en yeniden en eskiye doğru yapmıştır. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<div class="box"><b>Erzurum Kongresi’nden</b> <i>(sadeleştirilmiştir)</i>: Hristiyan azınlıklara siyasi hâkimiyetimizi ve sosyal dengemizi bozacak ayrıcalıklar verilemez.</div>
+<div class="box"><b>Misak-ı Millî’den</b> <i>(sadeleştirilmiştir)</i>: Azınlıkların hakları, komşu ülkelerdeki Müslüman halkın da aynı haklardan yararlanması şartıyla tarafımızdan sağlanacaktır.</div>
+<p>Bu iki metne göre,</p>
+<p>I. Her iki belgede de azınlıklarla ilgili düzenlemelerde devletin egemenliği ve eşitlik gözetilmiştir.<br>
+II. Misak-ı Millî’de azınlıklara tanınacak haklar, başka devletlerin uygulamalarıyla ilişkilendirilmiştir.<br>
+III. Erzurum Kongresi’nde azınlıkların bütün haklarının kaldırılması kararlaştırılmıştır.</p>
+<p>yargılarından hangilerine ulaşılabilir?</p>`,
+  c: ["Yalnız I", "Yalnız III", "I ve II", "II ve III"],
+  a: "C",
+  s: `<p><b>I ✓:</b> Erzurum metni, egemenliği bozacak <b>ayrıcalıkları</b> reddeder; yani azınlıkların diğer vatandaşlardan üstün tutulmasına karşıdır. Misak-ı Millî ise hakları karşılıklılık esasına bağlar. İki belge de egemenliği ve eşitliği gözetir.<br>
+<b>II ✓:</b> Haklar, komşu ülkelerdeki Müslümanlara tanınan haklara bağlanmıştır.<br>
+<b>III ✗:</b> Erzurum Kongresi yalnızca <b>ayrıcalıkları</b> reddetmiştir; azınlık haklarının kaldırılmasından söz edilmez. “Ayrıcalık” ile “hak” kavramlarını karıştıran öğrenci bu yargıyı seçer.</p>
+<p>B ve D III’ü içerir; A eksiktir. Cevap <b>C</b>.</p>` },
+{ lv: "zor", q: `<p>Bir tarih öğretmeni öğrencilerine şu yargıyı vermiştir:</p>
+<div class="box">“Sivas Kongresi’nden sonra İstanbul Hükûmeti, Anadolu’daki millî hareketin temsilcisini resmî bir muhatap olarak kabul etmek zorunda kalmıştır.”</div>
+<p>Aşağıdakilerden hangisi bu yargıyı destekleyen bir kanıt olarak gösterilebilir?</p>`,
+  c: ["Elazığ Valisi Ali Galip’in Sivas Kongresi’ni dağıtmaya çalışması", "Bahriye Nazırı Salih Paşa’nın Amasya’ya gelerek Temsil Heyeti ile görüşmesi", "Dâhiliye Nazırı Ali Kemal’in, Mustafa Kemal Paşa’nın emirlerinin dinlenmemesini istemesi", "Şeyhülislam Dürrizade Abdullah Efendi’nin Millî Mücadele aleyhine fetva yayımlaması"],
+  a: "B",
+  s: `<p>Kanıtın iki şartı karşılaması gerekir: Sivas Kongresi’nden <b>sonra</b> olmalı ve İstanbul Hükûmeti’nin Temsil Heyeti’ni <b>muhatap aldığını</b> göstermelidir. Ali Rıza Paşa Hükûmeti’nin Bahriye Nazırı Salih Paşa’yı Amasya’ya göndermesi (20-22 Ekim 1919), İstanbul Hükûmeti’nin Temsil Heyeti’ni resmen tanıdığını gösterir. B doğrudur.</p>
+<p>A ✗: Ali Galip girişimi kongre sırasında yaşanmış ve <b>düşmanca</b> bir tavırdır; muhatap kabul etmeyi göstermez.<br>
+C ✗: Ali Kemal’in genelgesi Amasya Genelgesi’nden sonra, Sivas Kongresi’nden <b>önce</b>dir ve Mustafa Kemal Paşa’yı tanımamayı gösterir.<br>
+D ✗: Fetva Nisan 1920’dedir ve Millî Mücadele’ye karşı bir tutumdur. Bu çeldiricilerin ortak özelliği, İstanbul Hükûmeti’nin <b>karşıt</b> tutumlarını göstermeleridir.</p>
+<p>Cevap <b>B</b>.</p>` }
 ]
 });
