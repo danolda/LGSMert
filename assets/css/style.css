@@ -689,3 +689,6 @@ body.vs-on .foot,body.vs-on .totop{display:none}
 .end-hp .b{color:#60a5fa}.end-hp .r{color:#f87171}
 .end-btns{display:flex;gap:10px;justify-content:center}
 @media (max-width:400px){.hp-nm .rtag{display:none}.cd-n{font-size:120px}}
+
+/* çift dokunma yakınlaştırması kapalı, iki parmakla yakınlaştırma açık */
+html,body,*{touch-action:manipulation}
