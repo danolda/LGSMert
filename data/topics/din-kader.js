@@ -12,7 +12,7 @@ LGS.add({
     "I. Tevekkül — II. Rızık"
    ],
    "a": "A",
-   "s": "<p>Her şeyin <b>önceden bilinip planlanması</b> kaderdir (I). Bu planın <b>yeri ve zamanı gelince gerçekleşmesi</b> ise kazadır (II).</p><p>B tanımları ters eşleştirmiştir; 2025 LGS’de de bu ters tanım yanlış öncül olarak verilmiştir. C’deki ömür ve ecel yaşam süresiyle ilgilidir. D’deki tevekkül ve rızık da bu tanımlarla ilgili değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: «önceden bilmesi, … planlaması ve takdir etmesi»</li> <li>II: «yeri ve zamanı geldiğinde bu plana uygun olarak gerçekleşmesi»</li></ul><b>İstenen</b><p>İki tanımın doğru kavram eşleştirmesi.</p></div><ol class=\"sv-s\"><li><b>Kavramları hatırla</b> <b>Kader</b>: Allah’ın her şeyi önceden bilip bir ölçüye göre planlaması. <b>Kaza</b>: Bu planın yeri ve zamanı gelince gerçekleşmesi.</li> <li><b>I. tanımı eşleştir</b> «önceden bilmesi … planlaması» ifadesi planlama aşamasını anlatır. Bu yüzden I = kader.</li> <li><b>II. tanımı eşleştir</b> «zamanı geldiğinde … gerçekleşmesi» ifadesi planın hayata geçmesini anlatır. Bu yüzden II = kaza.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I kader, II kaza → iki eşleştirme de doğru.</td></tr><tr><td>B</td><td>Tanımlar ters çevrilmiş; plan kader, gerçekleşme kazadır.</td></tr><tr><td>C</td><td>Ömür yaşam süresi, ecel bu sürenin bittiği andır; tanımlarla ilgisi yok.</td></tr><tr><td>D</td><td>Tevekkül tedbirden sonra Allah’a güvenmek, rızık nimetlerdir; tanımlarla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader = <b>plan</b> (önce), kaza = <b>uygulama</b> (sonra). Sıra hep kader → kaza.</div><div class=\"sv-w\"><b>Tuzak:</b> Kader ile kazanın yerini değiştiren B şıkkı en sık işaretlenen çeldiricidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -24,7 +24,7 @@ LGS.add({
     "Bu sabah Güneş saat 07.11’de doğdu."
    ],
    "a": "D",
-   "s": "<p>Kaza, planlanan bir olayın zamanı gelince <b>gerçekleşmesidir</b>. “Bu sabah Güneş 07.11’de doğdu.” cümlesi gerçekleşmiş bir olayı anlatır, yani kazadır.</p><p>A henüz gerçekleşmemiş bir olaydır. B ve C ise evrendeki genel ölçü ve kuralları bildirir. Üçü de kaderle ilgilidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kaza: planlanan olayın zamanı gelince <b>gerçekleşmesi</b>.</li> <li>Dört not: gelecek bir olay, iki genel kural, bir gerçekleşmiş olay.</li></ul><b>İstenen</b><p>Kazaya örnek olan not.</p></div><ol class=\"sv-s\"><li><b>Kaza için ölçütü belirle</b> Kazada olay <b>olmuş, gerçekleşmiş</b> olmalıdır. Genel kurallar ve henüz olmamış olaylar kaderle ilgilidir.</li> <li><b>Fiil zamanına bak</b> «doğacak» gelecek zamandır; «kaynar», «tamamlar» genel geçer kural bildirir; «Bu sabah … doğdu» ise geçmişte gerçekleşmiş bir olaydır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«doğacak» → henüz gerçekleşmedi, kaderle (planla) ilgili.</td></tr><tr><td>B</td><td>Suyun kaynama noktası genel bir ölçü/kuraldır → kader.</td></tr><tr><td>C</td><td>Dünya’nın dolanım süresi genel bir ölçüdür → kader.</td></tr><tr class=\"ok\"><td>D</td><td>«Bu sabah … doğdu» → takdir edilen olay gerçekleşti → kaza.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Soru kaza sorarsa geçmiş zamanlı (-di) ve belli bir an/yer bildiren cümleyi ara.</div><div class=\"sv-w\"><b>Tuzak:</b> A’daki saat bilgisi kesin olduğu için kaza sanılabilir; ama olay henüz yaşanmadığı için kaderle ilgilidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -36,7 +36,7 @@ LGS.add({
     "I ile IV"
    ],
    "a": "C",
-   "s": "<p>Evrendeki genel kurallar ve henüz gerçekleşmemiş planlar <b>kader</b>dir. Zamanı gelip gerçekleşmiş olaylar ise <b>kaza</b>dır.</p>\n<ul>\n<li><b>I:</b> Genel bir ölçü ve kural → kader. Eşleştirme doğru.</li>\n<li><b>II:</b> Gerçekleşmiş bir olay (“kaynadı”) → kaza. Eşleştirme doğru.</li>\n<li><b>III:</b> Henüz gerçekleşmemiş (“yarın bekleniyor”) → kader olmalı. Tabloda kaza yazılmış.</li>\n<li><b>IV:</b> Gerçekleşmiş (“tamamlandı”) → kaza olmalı. Tabloda kader yazılmış.</li>\n</ul>\n<p>A ve D, doğru eşleştirilmiş I. cümleyi değiştirir. B ise doğru olan II. cümleyi değiştirir. Yer değişmesi gerekenler III ile IV’tür. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tabloda 4 cümle ve kader/kaza eşleştirmesi var.</li> <li>Kader: genel ölçü ve plan; kaza: zamanı gelip gerçekleşen olay.</li></ul><b>İstenen</b><p>Yer değiştirince tabloyu doğru yapan iki eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Her cümleyi kontrol et</b> I «saf su 100 °C’de kaynar» → genel kural → kader ✓. II «kaynadı» → gerçekleşti → kaza ✓.</li> <li><b>Hatalı satırları bul</b> III «yarın … bekleniyor» → henüz olmadı → <b>kader</b> olmalı, tabloda kaza yazılmış ✗. IV «tamamlandı» → gerçekleşti → <b>kaza</b> olmalı, tabloda kader yazılmış ✗.</li> <li><b>Sonuç</b> Yanlış olan iki satır III ve IV’tür; eşleştirmeleri yer değiştirilince ikisi de düzelir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve II zaten doğru eşleştirilmiş.</td></tr><tr><td>B</td><td>II doğru; yer değiştirirse bozulur.</td></tr><tr class=\"ok\"><td>C</td><td>III kader, IV kaza olmalı → ikisi yer değiştirince tablo doğru olur.</td></tr><tr><td>D</td><td>I doğru; yer değiştirirse bozulur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fiil ipucu: «-ir/-ar» genel kural ve «-ecek/bekleniyor» → kader; «-di/tamamlandı» → kaza.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -48,7 +48,7 @@ LGS.add({
     "K: İrade — L: Kudret — M: İlim"
    ],
    "a": "B",
-   "s": "<p>Ayetlerdeki anahtar ifadelere bakalım:</p>\n<ul>\n<li><b>K:</b> “Bir şeyi <b>dilediği</b> zaman...” → Allah’ın dilemesi <b>irade</b> sıfatıdır.</li>\n<li><b>L:</b> “...ne varsa <b>bilir</b>” → Allah’ın her şeyi bilmesi <b>ilim</b> sıfatıdır.</li>\n<li><b>M:</b> “Allah’ın her şeye <b>gücü yeter</b>” → Allah’ın sınırsız gücü <b>kudret</b> sıfatıdır.</li>\n</ul>\n<p>A, ilim ile iradeyi karıştırmıştır. C, kudret ile iradeyi karıştırmıştır. D ise ilim ile kudreti karıştırmıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>K: «Bir şeyi <b>dilediği</b> zaman … ‘Ol!’ demektir»</li> <li>L: «… ne varsa <b>bilir</b>»</li> <li>M: «Allah’ın her şeye <b>gücü yeter</b>»</li></ul><b>İstenen</b><p>K, L, M yerine gelecek sıfatlar.</p></div><ol class=\"sv-s\"><li><b>Anahtar kelimeyi bul</b> Her ayette sıfatı veren bir fiil var: dilemek, bilmek, gücü yetmek.</li> <li><b>Sıfatlarla eşleştir</b> Dilemek → <b>irade</b>; bilmek → <b>ilim</b>; gücü yetmek → <b>kudret</b>. <span class=\"sv-m\">K = İrade, L = İlim, M = Kudret</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>K ile L ters: «dilediği» irade, «bilir» ilimdir.</td></tr><tr class=\"ok\"><td>B</td><td>K irade, L ilim, M kudret → hepsi doğru.</td></tr><tr><td>C</td><td>K’de «dilemek» kudret değil iradedir; M’de «gücü yeter» kudrettir.</td></tr><tr><td>D</td><td>L «bilir» ilim, M «gücü yeter» kudret olmalı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bilmek → ilim, dilemek → irade, güç → kudret, yoktan var etmek → tekvin.</div><div class=\"sv-w\"><b>Tuzak:</b> «Ol! der, o da oluverir» ifadesi yaratma (tekvin) ve güç de çağrıştırır; ama «dilediği zaman» kelimesi soruda iradeyi işaret eder.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -60,7 +60,7 @@ LGS.add({
     "Bir toplumun durumunu ancak kendisinin değiştirebileceği"
    ],
    "a": "C",
-   "s": "<p>Ayette “her şeyi bir ölçüye (kadere) göre yarattık” denir. Yani evrende rastgelelik yoktur. Her varlık Allah’ın koyduğu bir ölçü ve plana göre yaratılmıştır. Kader kavramının özü de budur.</p><p>A sorumlulukla, B rızıkla, D ise toplumsal yasalarla (Ra’d suresi, 11. ayet) ilgilidir. Bunlar bu ayette geçmez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «Şüphesiz biz her şeyi bir <b>ölçüye (kadere)</b> göre yarattık.» (Kamer, 49)</li></ul><b>İstenen</b><p>Ayette vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>İpucu ifadeyi yakala</b> «her şeyi bir ölçüye göre yarattık» → evrende rastgelelik yoktur.</li> <li><b>Kavrama bağla</b> Kader kelimesi sözlükte «ölçü, plan, düzen» demektir. Ayet, her varlığın Allah’ın belirlediği bir ölçüye göre yaratıldığını söyler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sorumluluk konusu; ayette irade/sorumluluk geçmiyor.</td></tr><tr><td>B</td><td>Rızık konusu; ayette rızıktan söz edilmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>«her şeyi bir ölçüye göre» → ölçü, plan ve düzen vurgusu.</td></tr><tr><td>D</td><td>Toplumsal yasa (Ra’d, 11) konusu; bu ayette yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ayette «ölçü» kelimesi görüyorsan cevap genellikle «evrendeki düzen/plan» olur.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -72,7 +72,7 @@ LGS.add({
     "Hem biyolojik hem toplumsal yasalar"
    ],
    "a": "A",
-   "s": "<p>Güneş ve Ay’ın belli bir hesaba göre hareket etmesi gök cisimleriyle, yani madde ve hareketle ilgilidir. Bu yüzden ayet <b>fiziksel yasalara</b> örnektir.</p><p>Ayette canlıların doğup büyümesinden söz edilmediği için biyolojik yasalarla (B) ilgili değildir. İnsan ilişkilerinden de söz edilmediği için toplumsal yasalarla (C) ilgili değildir. D de bu nedenle yanlıştır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «Güneş ve Ay bir <b>hesaba göre hareket</b> etmektedir.» (Rahmân, 5)</li></ul><b>İstenen</b><p>Ayetin ilgili olduğu yasa türü.</p></div><ol class=\"sv-s\"><li><b>Yasa türlerini hatırla</b> Fiziksel: madde, enerji, gök cisimleri. Biyolojik: canlılar. Toplumsal: insan ilişkileri ve toplumlar.</li> <li><b>Ayeti sınıflandır</b> Güneş ve Ay gök cismidir; hareketleri madde ve hareketle ilgilidir → <b>fiziksel yasa</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Gök cisimlerinin hareketi → fiziksel.</td></tr><tr><td>B</td><td>Ayette canlıdan söz edilmiyor.</td></tr><tr><td>C</td><td>Ayette insan ilişkisi/toplum yok.</td></tr><tr><td>D</td><td>İki yasa da ayette geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Güneş, Ay, yıldız, gece-gündüz, yağmur, su → fiziksel yasa.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -84,7 +84,7 @@ LGS.add({
     "Ayetin iki bölümü de yalnızca fiziksel yasalarla ilgilidir."
    ],
    "a": "B",
-   "s": "<p><b>I. bölüm</b> (“Gökten su indiren O’dur”) yağmurun yağmasını anlatır. Bu, madde ve su döngüsüyle ilgili olduğu için <b>fiziksel yasa</b>dır. <b>II. bölüm</b> bitkilerin çıkıp büyümesini ve ürün vermesini anlatır. Bu da canlılarla ilgili olduğu için <b>biyolojik yasa</b>dır.</p><p>A’da I. bölüm yanlış sınıflandırılmıştır, ayrıca ayette toplumsal yasa geçmez. C’de de ayette insan ilişkileri yer almadığı için yanlıştır. D yanlıştır, çünkü bitkilerin büyümesi biyolojik bir olaydır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I. bölüm: «Gökten su indiren O’dur.»</li> <li>II. bölüm: «Onunla her çeşit bitkiyi çıkarırız …»</li></ul><b>İstenen</b><p>Bölümlerle yasa türleri hakkında doğru ifade.</p></div><ol class=\"sv-s\"><li><b>I. bölümü sınıflandır</b> Yağmurun yağması su döngüsüyle, yani madde ile ilgilidir → <b>fiziksel</b>.</li> <li><b>II. bölümü sınıflandır</b> Bitkilerin çıkması, büyümesi ve ürün vermesi canlıların yaşamıyla ilgilidir → <b>biyolojik</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I. bölüm biyolojik değil fizikseldir; ayette toplumsal yasa da yok.</td></tr><tr class=\"ok\"><td>B</td><td>I fiziksel, II biyolojik → doğru.</td></tr><tr><td>C</td><td>Ayette insan ilişkisi anlatılmıyor.</td></tr><tr><td>D</td><td>II. bölümdeki bitki büyümesi biyolojiktir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Aynı ayette birden fazla yasa türü bulunabilir; her bölümü ayrı ayrı sınıflandır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -96,7 +96,7 @@ LGS.add({
     "Canlılar doğar, büyür ve çoğalır."
    ],
    "a": "C",
-   "s": "<p>“Adaletin olmadığı toplumlarda huzur ve güven azalır.” cümlesi toplumdaki bir sebep-sonuç ilişkisini anlatır. Bu, <b>toplumsal yasa</b>dır.</p><p>A’daki havanın ısınıp yükselmesi fiziksel bir yasadır. B’deki fotosentez ve D’deki doğma, büyüme ve çoğalma ise canlılarla ilgili biyolojik yasalardır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Toplumsal yasalar: insanlar arası ilişkiler ve toplumların yaşayışı.</li></ul><b>İstenen</b><p>Toplumsal yasaya örnek.</p></div><ol class=\"sv-s\"><li><b>Ölçütü uygula</b> Cümlede insan topluluğu ve onun davranışlarının sonucu olmalı.</li> <li><b>Şıkları tara</b> «Adaletin olmadığı toplumlarda huzur ve güven azalır» → toplumda sebep (adaletsizlik) – sonuç (huzursuzluk) ilişkisi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Havanın genleşmesi → fiziksel.</td></tr><tr><td>B</td><td>Fotosentez → biyolojik.</td></tr><tr class=\"ok\"><td>C</td><td>Adalet–huzur ilişkisi toplumda geçer → toplumsal.</td></tr><tr><td>D</td><td>Doğma, büyüme, çoğalma → biyolojik.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «toplum, adalet, güven, millet, yardımlaşma» kelimeleri toplumsal yasayı işaret eder.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -108,7 +108,7 @@ LGS.add({
     "Yalnız II"
    ],
    "a": "A",
-   "s": "<p><b>I:</b> İnsanın yaratılışı canlılarla ilgilidir, yani biyolojik yasadır. Eşleştirme doğru.<br><b>II:</b> Güneş, Ay, gece ve gündüzün yörüngelerdeki hareketi fiziksel yasadır. Öğrenci bunu toplumsal yasa diye eşleştirdiği için bu eşleştirme yanlış.<br><b>III:</b> Adalet, iyilik ve yakınlara bakmak insan ilişkileriyle ilgilidir, yani toplumsal yasadır. Eşleştirme doğru.</p><p>Doğru olanlar I ve III’tür. B, C ve D, yanlış olan II. eşleştirmeyi içerdiği için doğru değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: «insanı alaktan yarattı» → Biyolojik</li> <li>II: «Güneş Ay’a yetişemez … yörüngede yüzmektedir» → Toplumsal</li> <li>III: «adaleti, iyilik yapmayı … emreder» → Toplumsal</li></ul><b>İstenen</b><p>Doğru eşleştirmeler.</p></div><ol class=\"sv-s\"><li><b>I’i kontrol et</b> İnsanın yaratılışı canlıyla ilgilidir → biyolojik ✓.</li> <li><b>II’yi kontrol et</b> Güneş, Ay ve yörüngeler gök cisimleridir → fiziksel olmalı; «toplumsal» yazılmış ✗.</li> <li><b>III’ü kontrol et</b> Adalet ve iyilik insan ilişkilerini düzenler → toplumsal ✓. <span class=\"sv-m\">Doğru olanlar: I ve III</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I ve III doğru eşleştirilmiş.</td></tr><tr><td>B</td><td>II yanlış eşleştirilmiştir (fiziksel olmalı).</td></tr><tr><td>C</td><td>II yanlış eşleştirilmiştir.</td></tr><tr><td>D</td><td>II tek yanlış olan eşleştirmedir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Soru «doğru» olanları soruyor; yanlış olanı (II) bulup cevap sanma.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -120,7 +120,7 @@ LGS.add({
     "“Gece de onlar için bir delildir. Gündüzü ondan çekip çıkarırız, bir de bakarsın karanlık içinde kalmışlardır.” (Yâsîn suresi, 37. ayet)"
    ],
    "a": "C",
-   "s": "<p>Tabloya göre laboratuvarda deney yapılamayan, tarihsel inceleme ve gözleme dayanan yasalar <b>toplumsal yasalardır</b>.</p>\n<ul>\n<li>A ve D: Güneş, Ay, gece ve gündüz → <b>fiziksel yasalar</b>.</li>\n<li>B: Canlıların sudan yaratılması → <b>biyolojik yasalar</b>.</li>\n<li>C: Geçmiş milletlerin başından geçenlere ve yalanlayanların sonuna bakılması → <b>toplumsal yasa</b>.</li>\n</ul>\n<p>Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tabloya göre laboratuvarda deney yapılamayan yasa türü: <b>toplumsal yasalar</b> (tarihsel inceleme ve gözlem).</li></ul><b>İstenen</b><p>Toplumsal yasayla ilgili ayet.</p></div><ol class=\"sv-s\"><li><b>Tablodan türü belirle</b> «laboratuvarda deney yapılamaz» bilgisi yalnızca toplumsal yasalar sütununda var.</li> <li><b>Ayetleri sınıflandır</b> C’deki «Sizden önceki milletlerin başından nice olaylar gelip geçmiştir … yalancıların sonunu görün» ifadesi geçmiş toplumların akıbetini anlatır → toplumsal.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Güneş ve Ay → fiziksel (deneyle incelenebilir).</td></tr><tr><td>B</td><td>Canlıların sudan yaratılması → biyolojik.</td></tr><tr class=\"ok\"><td>C</td><td>Geçmiş milletlerin akıbeti → toplumsal; tarihsel inceleme gerekir.</td></tr><tr><td>D</td><td>Gece ve gündüz → fiziksel.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «milletler, toplum, gezin dolaşın da görün» → toplumsal yasa; araştırma yöntemi tarihtir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -132,7 +132,7 @@ LGS.add({
     "III ve IV"
    ],
    "a": "A",
-   "s": "<p>Evrendeki yasalar <b>Allah tarafından konulmuştur</b> (I ✓). Bu yasalar <b>değişmez ve süreklidir</b> (II ✓). Örneğin su her yerde ve her zaman aynı koşulda kaynar.</p><p>Yasaların zamana ve mekâna göre farklılık göstermesi (III ✗) ya da insanlar tarafından değiştirilmesi (IV ✗) söz konusu değildir. 2024 LGS’de de benzer yanlış öncüller verilmiştir. B, C ve D en az bir yanlış yargı içerir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Sünnetullah (evrendeki yasalar) hakkında I–IV yargıları.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Yasaların özelliklerini hatırla</b> Evrendeki yasaları <b>Allah koymuştur</b>; bu yasalar <b>değişmez, süreklidir</b> ve her yerde aynı işler.</li> <li><b>Yargıları değerlendir</b> I ✓ (Allah koymuştur). II ✓ (değişmez, sürekli). III ✗ (her yerde ve her zaman geçerlidir; su her yerde aynı koşulda kaynar). IV ✗ (insan yasaları değiştiremez, ancak öğrenip kullanır).</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I ve II → ikisi de doğru.</td></tr><tr><td>B</td><td>III yanlış: yasalar evrenseldir.</td></tr><tr><td>C</td><td>IV yanlış: insan yasaları değiştiremez.</td></tr><tr><td>D</td><td>III ve IV ikisi de yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sünnetullah için üç anahtar: Allah koymuştur, değişmez, evrenseldir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -144,7 +144,7 @@ LGS.add({
     "“İnsanların kendi elleriyle yaptıkları yüzünden karada ve denizde düzen bozuldu...” (Rûm suresi, 41. ayet)"
    ],
    "a": "D",
-   "s": "<p>Haberde insanın dikkatsizliği yüzünden ormanın yandığı ve doğal dengenin bozulduğu anlatılıyor. Rûm suresi 41. ayet de insanların kendi yaptıkları yüzünden karada ve denizde düzenin bozulduğunu bildirir. Bu ayet 2025 LGS’de de aynı anlamda sorulmuştur.</p><p>A gök cisimlerinin düzenli hareketini, B insanın yaratılışını, C rızkın Allah’tan olduğunu anlatır. Bunlar haberdeki insan kaynaklı bozulmayla ilgili değildir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Söndürülmeyen ateş → orman yangını → doğal denge bozuldu.</li> <li>Sebep: insanın dikkatsizliği.</li></ul><b>İstenen</b><p>Haberle en ilgili ayet.</p></div><ol class=\"sv-s\"><li><b>Haberin özünü bul</b> Doğal denge, <b>insanın kendi hatası</b> yüzünden bozulmuştur.</li> <li><b>Ayetle eşleştir</b> Rûm 41: «İnsanların <b>kendi elleriyle yaptıkları yüzünden</b> karada ve denizde düzen bozuldu» → aynı mesaj.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Gök cisimlerinin düzeni; insan hatası yok.</td></tr><tr><td>B</td><td>İnsanın yaratılışı; haberle ilgisiz.</td></tr><tr><td>C</td><td>Rızkın Allah’tan olması; haberle ilgisiz.</td></tr><tr class=\"ok\"><td>D</td><td>İnsanın elleriyle düzeni bozması → haberle birebir uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Çevre kirliliği, yangın, erozyon gibi insan kaynaklı bozulmalarda ilk akla gelen ayet Rûm 41’dir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -156,7 +156,7 @@ LGS.add({
     "Rızkının yalnızca çalışmakla elde edileceği"
    ],
    "a": "B",
-   "s": "<p>“Dileyen iman etsin, dileyen inkâr etsin” ifadesi insana inanma konusunda <b>seçme özgürlüğü</b> verildiğini gösterir. Bu, insanın <b>cüz’î iradesidir</b>. İnsan bu seçiminden sorumludur.</p><p>A yanlıştır, çünkü her şeyi önceden bilmek yalnızca Allah’a aittir (ilim sıfatı). C ömür ve ecelle, D rızık ve emekle ilgilidir. Bunlar ayette geçmez. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «Öyle ise <b>dileyen iman etsin, dileyen inkâr etsin</b>.» (Kehf, 29)</li></ul><b>İstenen</b><p>Ayette insanla ilgili vurgulanan özellik.</p></div><ol class=\"sv-s\"><li><b>İpucu ifadeyi yakala</b> «dileyen … dileyen …» kalıbı seçimi insana bırakır.</li> <li><b>Kavrama bağla</b> İnsana verilen bu sınırlı seçme özgürlüğü <b>cüz’î irade</b>dir. İnsan seçiminden sorumludur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Her şeyi önceden bilmek yalnız Allah’a aittir (ilim).</td></tr><tr class=\"ok\"><td>B</td><td>«dileyen iman etsin…» → seçme özgürlüğü (irade).</td></tr><tr><td>C</td><td>Ömür/ecel konusu; ayette yok.</td></tr><tr><td>D</td><td>Rızık konusu; ayette yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Dileyen…, dileyen…», «ister şükredici ister nankör» kalıpları cüz’î iradeyi anlatır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -168,7 +168,7 @@ LGS.add({
     "Kalbinin uyurken de atmaya devam etmesi"
    ],
    "a": "C",
-   "s": "<p>Boş zamanı nasıl değerlendireceğine insan kendisi karar verir. Bu yüzden kitap okuyarak değerlendirmek <b>cüz’î irade</b> alanındadır.</p><p>Göz rengi (A), doğulan yer (B) ve kalbin atması (D) insanın seçimine bağlı değildir. Bunlar Allah’ın <b>küllî iradesi</b> alanındadır ve insan bunlardan sorumlu tutulmaz. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Cüz’î irade: insanın kendi seçimiyle yaptığı ve sorumlu olduğu davranışlar.</li></ul><b>İstenen</b><p>Cüz’î iradeyle ilgili durum.</p></div><ol class=\"sv-s\"><li><b>Ölçütü uygula</b> Kişi bu konuda «yapayım mı, yapmayayım mı» diye karar verebiliyor mu?</li> <li><b>Şıkları tara</b> Göz rengi, doğum yeri, kalbin atması insanın seçimi değildir. Boş zamanı kitapla değerlendirmek ise insanın kararıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Göz rengi seçilemez → küllî irade.</td></tr><tr><td>B</td><td>Doğulan şehir seçilemez → küllî irade.</td></tr><tr class=\"ok\"><td>C</td><td>Boş zamanı nasıl kullanacağına kişi karar verir → cüz’î irade.</td></tr><tr><td>D</td><td>Kalp istemsiz atar → küllî irade.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Seçebiliyorsan cüz’î irade (sorumlusun); seçemiyorsan küllî irade (sorumlu değilsin).</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -180,7 +180,7 @@ LGS.add({
     "3 ile 4 yer değiştirmelidir; insan küllî irade alanındaki durumların hepsinden sorumludur."
    ],
    "a": "B",
-   "s": "<p>Sınavlara çalışıp hazırlanmak (<b>3</b>) insanın kendi seçimidir, yani <b>cüz’î irade</b> alanındadır. Anne-baba ve milliyet (<b>5</b>) ise insanın seçimi dışındadır, yani <b>küllî irade</b> alanındadır. Bu nedenle 3 ile 5 yer değiştirmelidir. İnsan, cüz’î iradesiyle seçtiği davranışlardan sorumludur (B ✓).</p><p>A yanlıştır, çünkü doğulan yer seçilemez. C yanlıştır, çünkü sınırlı seçme özgürlüğü cüz’î iradedir. D yanlıştır, çünkü 4 zaten doğru yerdedir ve insan küllî irade alanından sorumlu değildir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Sol sütun: küllî irade (seçilemez). Sağ sütun: cüz’î irade (seçilir).</li> <li>Soldaki 3 «sınava çalışmak», sağdaki 5 «anne-baba ve milliyet».</li></ul><b>İstenen</b><p>Yer değiştirmesi gereken ikili ve doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Yanlış yerdeki maddeleri bul</b> 3 (sınava çalışmak) kişinin kendi tercihidir → cüz’î olmalı. 5 (anne-baba, milliyet) seçilemez → küllî olmalı. <span class=\"sv-m\">3 ↔ 5</span></li> <li><b>Yargıyı kontrol et</b> «İnsan cüz’î iradesiyle seçtiği davranışlardan sorumludur» doğru bir bilgidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğum yeri seçilemez; 1 zaten doğru yerde.</td></tr><tr class=\"ok\"><td>B</td><td>3 ile 5 yer değiştirmeli; yargı da doğru.</td></tr><tr><td>C</td><td>2 ve 6 doğru yerde; ayrıca sınırlı seçme özgürlüğü küllî değil cüz’î iradedir.</td></tr><tr><td>D</td><td>4 doğru yerde; insan küllî irade alanından sorumlu değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İki şartlı şıklarda iki parçayı da kontrol et; biri yanlışsa şık elenir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -192,7 +192,7 @@ LGS.add({
     "“Bir toplum kendi durumunu değiştirmedikçe Allah onların durumunu değiştirmez.” (Ra’d suresi, 11. ayet)"
    ],
    "a": "A",
-   "s": "<p>İslam’da sorumluluk insanın gücüyle sınırlıdır. Ayakta duramayan bir kişi namazını oturarak kılabilir. Bakara suresi 286. ayet de Allah’ın kimseye gücünün yetmeyeceği bir yük yüklemediğini bildirir.</p><p>B fiziksel yasaları, C biyolojik yasaları, D toplumsal yasaları anlatır. Bunlar sorumluluğun insan gücüyle sınırlı olmasıyla ilgili değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ahmet Bey ayakta duramıyor; namazını oturarak kılıyor.</li></ul><b>İstenen</b><p>Durumla ilişkili ayet.</p></div><ol class=\"sv-s\"><li><b>Durumu kavrama bağla</b> İslam’da sorumluluk insanın <b>gücüyle sınırlıdır</b>. Ayakta duramayan kişi namazı oturarak kılar; din ondan gücünü aşanı istemez.</li> <li><b>Ayeti bul</b> Bakara 286: «Allah hiç kimseye <b>gücünün yetmeyeceği bir yük yüklemez</b>» → birebir uyum.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Sorumluluğun güçle sınırlı olması → durumla uyumlu.</td></tr><tr><td>B</td><td>Fiziksel yasa; namazla ilgisi yok.</td></tr><tr><td>C</td><td>Biyolojik yasa; ruhsatla ilgisi yok.</td></tr><tr><td>D</td><td>Toplumsal yasa; kişisel ruhsatla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hasta, yolcu, engelli kişilerin ibadette kolaylık bulması → Bakara 286.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -204,7 +204,7 @@ LGS.add({
     "Akıl sağlığı yerinde olmayan kişiler de yaptıklarının hepsinden sorumludur."
    ],
    "a": "A",
-   "s": "<p>Çizelgede akıl sağlığı ya da ergenlik çağı şartlarından biri eksik olan kişilerin sorumlu olmadığı görülür (1, 2, 3). İki şartı da taşıyan kişi ise sorumludur (4). Demek ki dinî sorumluluk için <b>akıl sağlığı ve ergenlik çağı</b> gerekir (A ✓).</p><p>Çizelgede zenginlikten söz edilmediği için B’ye ulaşılamaz. C çizelgedeki 1. satırla, D ise 2. satırla çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: akıl var, ergenlik yok → sorumlu değil</li> <li>2: akıl yok, ergenlik var → sorumlu değil</li> <li>3: bilinç yok → o an sorumlu değil</li> <li>4: ikisi de var → sorumlu</li></ul><b>İstenen</b><p>Çizelgeden ulaşılan yargı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Şartlardan biri bile eksikse kişi sorumlu değil (1, 2, 3). İkisi birden varsa sorumlu (4).</li> <li><b>Genelle</b> Dinî sorumluluk için <b>akıl sağlığı + ergenlik çağı</b> birlikte gerekir. <span class=\"sv-m\">akıl ✓ + ergenlik ✓ → sorumlu</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Çizelgenin doğrudan sonucu.</td></tr><tr><td>B</td><td>Çizelgede zenginlikten söz edilmiyor.</td></tr><tr><td>C</td><td>1. satırla çelişir: çocuk sorumlu değil.</td></tr><tr><td>D</td><td>2. satırla çelişir: akıl sağlığı yerinde olmayan sorumlu değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dinî sorumluluğun iki temel şartı: akıllı olmak ve ergenlik çağına girmek (buluğ).</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki zenginlik hac ve zekât için ayrıca aranır; ama bu çizelgeden çıkarılamaz. «Ulaşılabilir» sorularında yalnızca verilen bilgiye bak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -216,7 +216,7 @@ LGS.add({
     "Kan grubunun annesininkiyle aynı olması"
    ],
    "a": "D",
-   "s": "<p>Ayet, insanın emeğinin ve çabasının karşılığını alacağını bildirir. A, B ve C’de kişiler çalışmış ve bunun sonucunu almıştır. Bu durumlar ayetle uyumludur.</p><p>Kan grubu ise çalışmayla kazanılmaz. İnsanın iradesi dışındadır (küllî irade). Bu yüzden ayetle ilişkilendirilemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «İnsan için ancak <b>çalıştığının karşılığı</b> vardır.» (Necm, 39)</li></ul><b>İstenen</b><p>Ayetle ilişkilendirilemeyen durum.</p></div><ol class=\"sv-s\"><li><b>Ayetin mesajı</b> Emek ve çaba → sonuç. İlişkili durumda kişi çalışmalı ve karşılığını almalı.</li> <li><b>Şıkları tara</b> Zeynep, çiftçi ve yüzücü çalışıp sonuç almıştır. Kan grubu ise çalışmayla kazanılmaz, kişinin iradesi dışındadır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Düzenli çalışma → yükselen sonuç: ilişkili.</td></tr><tr><td>B</td><td>Emek → bol ürün: ilişkili.</td></tr><tr><td>C</td><td>Antrenman → derece: ilişkili.</td></tr><tr class=\"ok\"><td>D</td><td>Kan grubu çalışmayla değişmez (küllî irade) → ilişkilendirilemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «ilişkilendirilemez» sorularında emek ve seçim içermeyen şıkkı ara.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -228,7 +228,7 @@ LGS.add({
     "I. Kader — II. Tevekkül"
    ],
    "a": "B",
-   "s": "<p>Doğumdan ölüme kadar geçen yaşam süresi <b>ömür</b>dür (I). Ömrün sona erdiği zaman ise <b>ecel</b>dir (II).</p><p>A kavramları ters vermiştir. C ve D’deki rızık, kaza, kader ve tevekkül bu tanımlarla örtüşmez. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: doğumdan ölüme kadar geçen <b>yaşam süresi</b></li> <li>II: bu sürenin <b>sona erdiği an</b></li></ul><b>İstenen</b><p>Tanımların adı.</p></div><ol class=\"sv-s\"><li><b>Ömür</b> Yaşamın tamamı, yani süre → <b>ömür</b> (I).</li> <li><b>Ecel</b> Sürenin bittiği zaman → <b>ecel</b> (II).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kavramlar ters verilmiş.</td></tr><tr class=\"ok\"><td>B</td><td>I ömür, II ecel → doğru.</td></tr><tr><td>C</td><td>Rızık nimet, kaza gerçekleşmedir; tanımlarla ilgisi yok.</td></tr><tr><td>D</td><td>Kader plan, tevekkül güvenmedir; tanımlarla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ömür bir <b>çizgi</b> (süre), ecel o çizginin <b>son noktası</b>dır.</div><div class=\"sv-w\"><b>Tuzak:</b> İki kavram birbirine çok yakın olduğu için A’daki ters eşleştirme en çok yapılan hatadır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -240,7 +240,7 @@ LGS.add({
     "IV"
    ],
    "a": "C",
-   "s": "<p>Rızık yalnızca yiyecek ve para değildir. Allah’ın verdiği maddi ve manevi her nimet (su, hava, sağlık, akıl, bilgi) rızıktır. Ayrıca insan rızkını kazanmak için çalışmalıdır. Bu yüzden III. bilgi iki yönden yanlıştır.</p><p>I (Allah’ın er-Rezzâk olması), II (sağlık ve bilginin de rızık olması) ve IV (helal yoldan emek harcamak) doğru bilgilerdir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Allah er-Rezzâk’tır.</li> <li>II: Sağlık, akıl, bilgi de rızıktır.</li> <li>III: Rızık yalnızca yiyecek ve para; çalışmaya gerek yok.</li> <li>IV: Rızık helal yoldan, emekle kazanılmalı.</li></ul><b>İstenen</b><p>Yanlış bilgi.</p></div><ol class=\"sv-s\"><li><b>Rızkın kapsamı</b> Rızık; yiyecek ve paranın yanında su, hava, sağlık, akıl, bilgi gibi Allah’ın verdiği <b>maddi ve manevi her nimettir</b>.</li> <li><b>Rızık ve emek</b> İnsan rızkını helal yoldan, çalışarak aramakla sorumludur. III bu iki bilgiyle de çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Allah’ın rızık veren (er-Rezzâk) olması doğru.</td></tr><tr><td>B</td><td>Manevi nimetler de rızıktır; doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Rızkı yalnız maddiye indirger ve çalışmayı gereksiz sayar → iki yönden yanlış.</td></tr><tr><td>D</td><td>Helal kazanç için emek gerekir; doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rızık sorularında iki kural: kapsamı geniştir ve emek ister.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -252,7 +252,7 @@ LGS.add({
     "“Ne Güneş Ay’a yetişebilir ne de gece gündüzü geçebilir...” (Yâsîn suresi, 40. ayet)"
    ],
    "a": "A",
-   "s": "<p>Hasan, hastalığa karşı hiçbir şey yapmadan sonucu kadere bırakıyor. Oysa Hz. Peygamber hastalananların <b>tedavi olmasını</b> istemiş ve Allah’ın her hastalığın şifasını da yarattığını bildirmiştir. Tedavi olmak kadere aykırı değildir, tersine kaderin bir gereğidir. 2019 LGS’de de hasta adama “hekime git” denmesi aynı anlamda sorulmuştur.</p><p>B rızıkla, C ve D ise fiziksel yasalarla ilgilidir. Bunlar tedavi olmanın gerekliliğini göstermez. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hasan: «Kaderimde iyileşmek varsa … doktora gitmeme gerek yok.»</li></ul><b>İstenen</b><p>Hasan’ın yanlışını gösteren söz.</p></div><ol class=\"sv-s\"><li><b>Yanlışı tespit et</b> Hasan tedbiri ve tedaviyi bırakıp sonucu kadere yüklüyor. Bu, kaderi yanlış anlamaktır.</li> <li><b>Doğru bilgiyi bağla</b> Hz. Peygamber «<b>Ey Allah’ın kulları, tedavi olunuz!</b> Çünkü Allah yarattığı her hastalığın şifasını da yaratmıştır» buyurmuştur. Tedavi olmak kaderin dışına çıkmak değil, Allah’ın koyduğu sebebe sarılmaktır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Tedavi olmayı emreder → Hasan’ın yanlışını doğrudan gösterir.</td></tr><tr><td>B</td><td>Rızıkla ilgili; tedaviyle ilgisi yok.</td></tr><tr><td>C</td><td>Fiziksel yasa; tedaviyle ilgisi yok.</td></tr><tr><td>D</td><td>Fiziksel yasa; tedaviyle ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hastalık + «kaderimde varsa» → cevap tedavi hadisidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -264,7 +264,7 @@ LGS.add({
     "Tevekkül eden kişi, hiçbir önlem almadan tehlikenin üzerine gitmelidir."
    ],
    "a": "B",
-   "s": "<p>Hastalığın bulaşması da, insanın aklını ve iradesini kullanıp tedbir alarak hastalıktan korunması da Allah’ın koyduğu yasalar (kader) içindedir. Hz. Ömer bu yüzden salgın bölgesine girmemenin kaderden kaçmak değil, iradeyi doğru kullanmak olduğunu söylemiştir (B ✓).</p><p>A ve C, Hz. Ömer’in tedbir alan tutumuyla çelişir. D yanlıştır, çünkü tevekkül önce tedbir alıp sonra Allah’a güvenmektir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Ömer veba olan Şam’a girmeyip döndü.</li> <li>Soru: «Allah’ın kaderinden mi kaçıyorsun?»</li> <li>Cevap: «Allah’ın kaderinden yine <b>Allah’ın kaderine</b> kaçıyorum.»</li></ul><b>İstenen</b><p>Tutumun gösterdiği kader anlayışı.</p></div><ol class=\"sv-s\"><li><b>Sözü çöz</b> Hastalığın bulaşması da, tedbir alıp korunmak da Allah’ın koyduğu yasalar (kader) içindedir. Kaçılan yer de varılan yer de kaderin içindedir.</li> <li><b>Sonuç</b> Tedbir almak kadere karşı gelmek değildir; insanın aklını ve iradesini doğru kullanmasıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hz. Ömer tedbir almıştır; sözle çelişir.</td></tr><tr class=\"ok\"><td>B</td><td>Tedbir = iradeyi doğru kullanmak → Hz. Ömer’in mesajı.</td></tr><tr><td>C</td><td>Tedavi/tedbir gereksiz değildir; çelişir.</td></tr><tr><td>D</td><td>Tevekkül önce tedbir, sonra güvendir; tehlikeye atılmak değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tedbir de kaderin bir parçasıdır: «kaderden kadere kaçmak».</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -276,7 +276,7 @@ LGS.add({
     "Tarlasına tohum ekmeden “Allah bol ürün verir.” diyen çiftçi"
    ],
    "a": "A",
-   "s": "<p>Ali önce üzerine düşeni yapmış, bisikletini kilitlemiş, sonra Allah’a güvenmiştir. Bu, Hz. Peygamber’in “Önce deveni bağla, sonra Allah’a tevekkül et.” sözüne uygun bir <b>tevekkül</b>dür.</p><p>Ece (B) çalışmamış, Murat (C) tedbir almamış, çiftçi (D) de emek vermemiştir. Çaba göstermeden sonucu Allah’a bırakmak tevekkül değil, tembellik ve yanlış kader anlayışıdır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tevekkül: tedbirleri alıp çaba gösterdikten <b>sonra</b> sonucu Allah’a bırakmak.</li></ul><b>İstenen</b><p>Tevekküle örnek.</p></div><ol class=\"sv-s\"><li><b>Sırayı kontrol et</b> Doğru tevekkülde önce <b>tedbir</b>, sonra <b>güven</b> vardır.</li> <li><b>Şıkları uygula</b> Ali önce bisikletini kilitlemiş (tedbir), sonra Allah’a bırakmış (güven). Bu, «Önce deveni bağla, sonra Allah’a tevekkül et» hadisiyle uyumludur.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Tedbir (kilit) + güven → doğru tevekkül.</td></tr><tr><td>B</td><td>Çalışma yok → tembellik.</td></tr><tr><td>C</td><td>Emniyet kemeri yok → tedbirsizlik.</td></tr><tr><td>D</td><td>Tohum ekilmemiş → emek yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tedbirsiz tevekkül, tevekkül değil tembelliktir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -288,7 +288,7 @@ LGS.add({
     "Mehmet Amca, sonucu tümüyle Allah’a bıraktığı için Ahmet Amca’dan daha doğru bir tevekkül anlayışına sahiptir."
    ],
    "a": "D",
-   "s": "<p>Doğru tevekkül, önce evrendeki yasalara uygun olarak tedbir alıp çalışmak, sonra sonucu Allah’a bırakmaktır. Ahmet Amca böyle davranmıştır (A ✓, C ✓). Mehmet Amca ise hiç çaba göstermeden “tevekkül ettim” demiştir. Bu tembelliktir (B ✓).</p><p>Bu yüzden Mehmet Amca’nın daha doğru bir tevekkül anlayışına sahip olduğu söylenemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ahmet Amca: sürdü, gübreledi, suladı, ilaçladı → «Elimden geleni yaptım … tevekkül ederim.»</li> <li>Mehmet Amca: hiçbir şey yapmadı → «Çalışmasam da olur … tevekkül ettim.»</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Doğru tevekkülü hatırla</b> Önce evrendeki yasalara uygun tedbir ve emek, sonra Allah’a güven.</li> <li><b>İki tutumu karşılaştır</b> Ahmet Amca biyolojik yasaların gereğini yapıp tevekkül etmiştir. Mehmet Amca çaba göstermeden «tevekkül» kelimesini tembelliğine kalkan yapmıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ahmet Amca «deveni bağla» hadisine uygun; söylenebilir.</td></tr><tr><td>B</td><td>Mehmet Amca tembelliğini tevekkülle örtüyor; söylenebilir.</td></tr><tr><td>C</td><td>Ahmet Amca çalışmış, Necm 39 ile uyumlu; söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Mehmet Amca’nınki tevekkül değil tembelliktir; daha doğru olduğu söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Sonucu tümüyle Allah’a bıraktı» ifadesi kulağa dindarca gelir; ama tedbir olmadan bırakmak tevekkül değildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -300,7 +300,7 @@ LGS.add({
     "4"
    ],
    "a": "D",
-   "s": "<p>1. ayet ecelin belirlenmiş olduğunu (ömür ve ecel), 2. ayet rızkın Allah’tan olduğunu, 3. ayet insanın seçiminden kendisinin sorumlu olduğunu anlatır. Bu üç eşleştirme doğrudur.</p><p>4. ayetteki “Kararını verdiğin zaman artık Allah’a dayanıp güven” ifadesi biyolojik yasaları değil, <b>tevekkülü</b> anlatır. Yanlış eşleştirme 4’tür. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: A’râf 34 → ömür ve ecel</li> <li>2: Hûd 6 → rızık</li> <li>3: İsrâ 15 → cüz’î irade ve sorumluluk</li> <li>4: Âl-i İmrân 159 «Kararını verdiğin zaman artık <b>Allah’a dayanıp güven</b>» → biyolojik yasalar</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Her ayetin anahtar ifadesine bak</b> «belirlenmiş bir eceli vardır» → ecel ✓; «rızkı Allah’a aittir» → rızık ✓; «kim doğru yolu seçerse … kendi iyiliği için» → irade ve sorumluluk ✓.</li> <li><b>4’ü kontrol et</b> «Allah’a dayanıp güven» tevekkülün tanımıdır. Ayette canlılardan hiç söz edilmez; «biyolojik yasa» yanlıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ecel ifadesi açık; eşleştirme doğru.</td></tr><tr><td>B</td><td>Rızık ifadesi açık; doğru.</td></tr><tr><td>C</td><td>Seçim ve sonucu; doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Ayet tevekkülü anlatır; biyolojik yasa yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Dayanıp güven» = tevekkül. Ayette canlı yoksa biyolojik yasa olamaz.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -312,7 +312,7 @@ LGS.add({
     "Evrendeki yasaları dikkate alarak tedbirli yaşaması"
    ],
    "a": "C",
-   "s": "<p>“Alın yazım böyleymiş”, “Suçu kaderim işledi” gibi yanlış sözler kişinin iradesini yok saymasına, <b>sorumluluktan kaçmasına ve tembelliğe</b> yol açar (C ✓).</p><p>A, B ve D ise tedbir alan, çalışan ve sorumluluk üstlenen kişilerin davranışlarıdır. Bunlar doğru kader anlayışına uygundur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yanlış sözler: «Alın yazım böyleymiş», «Suçu kaderim işledi», «Çalışsam da çalışmasam da …»</li> <li>Doğru anlayış: insan iradesinden sorumludur; tedbirsizliği kadere yüklemez.</li></ul><b>İstenen</b><p>Yanlış kader anlayışındaki kişide beklenen tutum.</p></div><ol class=\"sv-s\"><li><b>Yanlış sözlerin ortak noktası</b> Üçü de sorumluluğu kişiden alıp kadere yükler; bu da kişiyi tembelliğe ve sorumluluktan kaçmaya iter.</li> <li><b>Uygun tutumu seç</b> Kendi hatasını kadere yükleyip tembelleşmek bu anlayışın doğal sonucudur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tedbir + Allah’a sığınma → doğru anlayış.</td></tr><tr><td>B</td><td>Eksiklerini gidermek → sorumluluk alma, doğru anlayış.</td></tr><tr class=\"ok\"><td>C</td><td>Hatayı kadere yüklemek, tembellik → yanlış anlayışın sonucu.</td></tr><tr><td>D</td><td>Yasaları dikkate alıp tedbirli yaşamak → doğru anlayış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kaderi bahane eden kişi = sorumluluktan kaçan, tembel kişi.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -324,7 +324,7 @@ LGS.add({
     "II, III ve IV"
    ],
    "a": "C",
-   "s": "<p>Âyetel Kürsî, <b>Bakara suresinin 255. ayetidir</b> (I ✓). Allah’ın birliğini (tevhid) ve Hayy, Kayyûm, ilim, kudret gibi sıfatlarını anlatır (II ✓). “O’nun kürsüsü gökleri ve yeri içine almıştır” ifadesi Allah’ın hükümranlığını ve kudretini anlatır (IV ✓).</p><p>Ayette Hz. Musa’nın kıssası yer almaz (III ✗). A, doğru olan IV’ü dışarıda bırakır. B ve D ise yanlış olan III’ü içerir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Âyetel Kürsî ile ilgili I–IV notları.</li></ul><b>İstenen</b><p>Doğru notlar.</p></div><ol class=\"sv-s\"><li><b>Temel bilgiler</b> Âyetel Kürsî <b>Bakara suresi 255. ayettir</b> (I ✓). Allah’ın birliğini ve Hayy, Kayyûm, ilim, kudret gibi sıfatlarını anlatır (II ✓).</li> <li><b>Kürsî kelimesi</b> «O’nun kürsüsü gökleri ve yeri içine almıştır» ifadesi Allah’ın hükümranlığını ve kudretini anlatır (IV ✓).</li> <li><b>III’ü ele</b> Ayette Hz. Musa kıssası yoktur; o kıssa başka surelerde anlatılır (III ✗). <span class=\"sv-m\">Doğrular: I, II, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru olan IV eksik.</td></tr><tr><td>B</td><td>III yanlış; ayrıca II ve IV eksik.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV → hepsi doğru.</td></tr><tr><td>D</td><td>Yanlış olan III’ü içeriyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Âyetel Kürsî = Bakara 255 = tevhid + Allah’ın sıfatları.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -336,7 +336,7 @@ LGS.add({
     "Ayette müminlerin mallarının kırkta birini zekât olarak vermesi emredilmiştir."
    ],
    "a": "D",
-   "s": "<p>Âyetel Kürsî, Allah’ın birliğini ve sıfatlarını anlatan bir inanç ayetidir. Kürsî’nin hükümranlığı ve kudreti anlatması (A), tevhid vurgusu (B) ve Allah’ı uyuklama ile uykunun tutmaması (C) bu ayette yer alır.</p><p>Ayette zekât ibadetinden ya da oranından söz edilmez. Bu yüzden D’ye ulaşılamaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tabloda Âyetel Kürsî’den bölümler: tevhid, Hayy-Kayyûm, ilim, kürsî (hükümranlık-kudret).</li></ul><b>İstenen</b><p>Ayetten ve tablodan ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Ayetin içeriği</b> Âyetel Kürsî bir <b>inanç (iman)</b> ayetidir: Allah’ın birliği ve sıfatları anlatılır; ibadetlerin nasıl yapılacağı anlatılmaz.</li> <li><b>Şıkları tara</b> Kürsî ve kudret (A), tevhid (B), «O’nu ne bir uyuklama tutabilir ne de bir uyku» (C) ayette vardır. Zekât ve oranı ayette geçmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tablonun IV. satırında var; ulaşılır.</td></tr><tr><td>B</td><td>Tablonun I. satırında var; ulaşılır.</td></tr><tr><td>C</td><td>«uyuklama ve uyku tutmaz» ayette geçer; ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Zekâttan ve «kırkta bir»den söz edilmez → ulaşılamaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C tabloda yazmıyor diye «ulaşılamaz» sanılabilir; ama soru ayetin anlamını da dikkate almayı istiyor ve bu ifade ayette vardır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -348,7 +348,7 @@ LGS.add({
     "Hz. Musa, Firavun’dan korktuğu için görevini kardeşine bırakıp Mısır’dan ayrılmıştır."
    ],
    "a": "D",
-   "s": "<p>Hz. Musa duasında Allah’tan yardım istemiş (A ✓) ve kardeşi Harun’un yardımcısı olmasını dilemiştir. Allah da Hz. Harun’u peygamber olarak görevlendirmiştir (B ✓). Bu durum iş birliğinin önemini gösterir (C ✓).</p><p>Hz. Musa görevini bırakmamış, kardeşiyle birlikte Firavun’a giderek tebliğ etmiştir. Bu yüzden D söylenemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Musa görev öncesi dua etti: «İşimi bana kolaylaştır … Kardeşim Harun’u bana yardımcı yap.» (Tâhâ, 25-34)</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Duadan çıkanlar</b> Hz. Musa zor görevden önce Allah’tan yardım istemiş, kardeşinin desteğini dilemiştir → dua ve iş birliği.</li> <li><b>Hayatından bilgi</b> Allah Hz. Harun’u da peygamber yapmış; iki kardeş birlikte Firavun’a gidip tebliğ etmiştir. Hz. Musa görevden kaçmamıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Duasında Allah’tan yardım istiyor; söylenebilir.</td></tr><tr><td>B</td><td>Hz. Harun peygamber olup destek oldu; söylenebilir.</td></tr><tr><td>C</td><td>«Onu işime ortak kıl» → iş birliği; söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Görevini bırakmadı, kardeşiyle birlikte Firavun’a gitti → söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Musa’nın duası: cesaret, kolaylık, güzel ifade ve yardımcı istemek.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -360,7 +360,7 @@ LGS.add({
     "Kur’an-ı Kerim"
    ],
    "a": "B",
-   "s": "<p>Hz. Musa’ya indirilen kutsal kitap <b>Tevrat</b>’tır.</p><p>Zebur (A) Hz. Davud’a, İncil (C) Hz. İsa’ya, Kur’an-ı Kerim (D) ise Hz. Muhammed’e indirilmiştir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Musa’nın hayatı sırasıyla: Nil → saray → Medyen → Tûr’da peygamberlik → Firavun’a gidiş → denizin yarılması → «……» indirildi.</li></ul><b>İstenen</b><p>Hz. Musa’ya indirilen kitap.</p></div><ol class=\"sv-s\"><li><b>Kitap–peygamber eşleşmesi</b> Tevrat → Hz. Musa; Zebur → Hz. Davud; İncil → Hz. İsa; Kur’an-ı Kerim → Hz. Muhammed.</li> <li><b>Boşluğu doldur</b> Hz. Musa’ya indirilen kutsal kitap <b>Tevrat</b>’tır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zebur Hz. Davud’a indirildi.</td></tr><tr class=\"ok\"><td>B</td><td>Tevrat Hz. Musa’ya indirildi.</td></tr><tr><td>C</td><td>İncil Hz. İsa’ya indirildi.</td></tr><tr><td>D</td><td>Kur’an Hz. Muhammed’e indirildi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dört kitap sırası: Tevrat (Musa) → Zebur (Davud) → İncil (İsa) → Kur’an (Muhammed).</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -372,7 +372,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>Kader, Allah’ın her şeyi ezelde bilmesi (ilim) ve dilediği gibi takdir etmesidir (irade); bu yüzden I doğrudur. Kaza, takdir edilenlerin yeri ve zamanı gelince yaratılmasıdır; her şeye gücünün yetmesi (kudret) ve yoktan var etmesi (tekvin) ile ilgilidir; II doğrudur. III yanlıştır: olaylar Allah’ın takdirine göre gerçekleşir, insanların onu önceden bilmesi gerekmez; insan kaderin ayrıntısını zaten bilemez. “Yalnız I” II’yi, III içeren şıklar ise yanlış yargıyı kapsadığı için elenir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Kader → ilim ve irade</li> <li>II: Kaza → kudret ve tekvin</li> <li>III: Kazaya dönüşmesi için insanların önceden bilmesi gerekir.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I’i değerlendir</b> Kader, Allah’ın her şeyi önceden <b>bilmesi</b> (ilim) ve dilediği gibi takdir etmesidir (irade) → I ✓.</li> <li><b>II’yi değerlendir</b> Kaza, takdir edilenin zamanı gelince <b>güçle</b> (kudret) <b>yaratılmasıdır</b> (tekvin) → II ✓.</li> <li><b>III’ü değerlendir</b> Olaylar Allah’ın takdirine göre gerçekleşir; insanın bunu önceden bilmesi şart değildir. İnsan kaderin ayrıntısını zaten bilemez → III ✗. <span class=\"sv-m\">Doğrular: I ve II</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de doğru; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II doğru, III yanlış.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader ↔ ilim + irade (bilme, dileme); kaza ↔ kudret + tekvin (güç, yaratma).</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -384,7 +384,7 @@ LGS.add({
     "Allah’ın bir şeyi önceden bilmesi, insanı o işi yapmaya zorladığı anlamına gelmez."
    ],
    "a": "D",
-   "s": "<p>Zeynep, Allah’ın önceden bilmesini “zorlama” gibi düşünmektedir. Oysa Allah’ın ilmi, insanın ne seçeceğini bilmesidir; seçimi yapan insandır ve insan cüz’î iradesiyle çalışıp çalışmamaktan sorumludur (D). A yanlıştır; kader evrendeki her şeyi kapsar. B yanlıştır; insan kaderin ayrıntısını bilemez. C yanlıştır; ders çalışmak insanın seçimine bağlıdır, yani cüz’î irade alanındadır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zeynep: «Allah her şeyi önceden bildiğine göre … çalışsam da çalışmasam da sonuç değişmez.»</li></ul><b>İstenen</b><p>Öğretmenin vurgulaması beklenen düşünce.</p></div><ol class=\"sv-s\"><li><b>Zeynep’in hatası</b> Allah’ın <b>bilmesini</b>, insanı <b>zorlaması</b> gibi anlıyor.</li> <li><b>Doğru bilgi</b> Allah insanın ne seçeceğini bilir; ama seçimi yapan insandır. Bilmek zorlamak değildir. Çalışıp çalışmamak Zeynep’in cüz’î iradesine bağlıdır ve sonucundan sorumludur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kader evrendeki her şeyi kapsar; yanlış.</td></tr><tr><td>B</td><td>İnsan kaderin ayrıntısını bilemez; yanlış.</td></tr><tr><td>C</td><td>Ders çalışmak seçime bağlıdır → cüz’î irade; yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>Bilmek zorlamak değildir → Zeynep’in hatasını düzeltir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Allah’ın ilmi bir <b>kamera</b> gibidir, <b>itici bir el</b> değil: görür, bilir ama seni iteklemez.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -396,7 +396,7 @@ LGS.add({
     "Tekvin – İrade – Kudret – İlim"
    ],
    "a": "A",
-   "s": "<p>Bilmek ilim (I), dilemek ve seçmek irade (II), her şeye gücü yetmek kudret (III), yoktan var etmek tekvin (IV) sıfatıdır. B’de ilim ile irade, kudret ile tekvin yer değiştirmiştir. C’de irade ile kudret karıştırılmıştır. D’de ilim ile tekvin yer değiştirmiştir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«ezelde <b>bilmiş</b> (I)», «<b>takdir etmiş</b> (II)», «<b>gücü yettiği</b> için (III)», «<b>yoktan var etmiştir</b> (IV)»</li></ul><b>İstenen</b><p>Bölümlerle ilgili sıfatların doğru sırası.</p></div><ol class=\"sv-s\"><li><b>Fiilleri sıfata çevir</b> Bilmek → ilim; dileyip takdir etmek → irade; güç → kudret; yoktan var etmek → tekvin. <span class=\"sv-m\">I İlim – II İrade – III Kudret – IV Tekvin</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Sıralama birebir doğru.</td></tr><tr><td>B</td><td>İlim–irade ve kudret–tekvin yer değiştirmiş.</td></tr><tr><td>C</td><td>İrade ile kudret karışmış.</td></tr><tr><td>D</td><td>İlim ile tekvin yer değiştirmiş.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader/kaza dört sıfatla anlatılır: İlim → İrade → Kudret → Tekvin (bil, dile, güç yetir, yarat).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -408,7 +408,7 @@ LGS.add({
     "Gök cisimlerinin hareketleri belli bir ölçü ve hesaba göredir."
    ],
    "a": "C",
-   "s": "<p>Araç, yasalar değişmeden işlediği için hesaplanan tarihte yörüngeye girmiştir; bu, yasaların düzenli olduğunu (A), bilinen yasalarla plan yapılabildiğini (B) ve gök cisimlerinin bir hesaba göre hareket ettiğini (D) gösterir. Metinde mühendisler yasaları değiştirmemiş, onları bilip uygun hareket etmiştir. Evrendeki yasalar Allah tarafından konulmuştur ve insanlar tarafından değiştirilemez; C’ye ulaşılamaz. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Araç, hesaplanan tarihte planlanan yörüngeye girdi.</li> <li>Başarı, kuralların «değişmeden işlemesine» bağlanıyor.</li></ul><b>İstenen</b><p>Metinden ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metnin mesajı</b> Yasalar değişmeden işlediği için hesap tutmuştur → yasalar düzenli ve kararlıdır, bilinmeleri plan yapmayı sağlar.</li> <li><b>İnsanın rolü</b> Mühendisler yasaları <b>değiştirmemiş</b>, onları <b>bilip kullanmıştır</b>. Evrendeki yasaları Allah koymuştur ve insan değiştiremez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«değişmeden işlemesi» → ulaşılır.</td></tr><tr><td>B</td><td>Önceden tarih açıklanabilmiş → ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Metinde yasalar değiştirilmiyor, kullanılıyor → ulaşılamaz.</td></tr><tr><td>D</td><td>Hareketler hesaplanabiliyor → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bilim yasaları <b>keşfeder ve kullanır</b>, değiştirmez.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -420,7 +420,7 @@ LGS.add({
     "Fiziksel: I ve II | Biyolojik: IV | Toplumsal: III"
    ],
    "a": "C",
-   "s": "<p>I. ayet canlıların sudan yaratılmasını anlattığı için biyolojik yasalarla ilgilidir. II. ayet Güneş’in yörüngesini, IV. ayet göğün (evrenin) kurulup genişlemesini anlattığı için fizikseldir. III. ayet geçmiş milletlerin akıbetinden söz ettiği için toplumsaldır. A’da IV (gök) biyolojiye; B’de II (Güneş) biyolojiye; D’de I (canlılar) fiziksele, IV biyolojiye konmuştur; bunların hepsi yanlış gruplandırmadır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: canlıların sudan yaratılması</li> <li>II: Güneş’in yörüngesi</li> <li>III: geçmiş milletlerin akıbeti</li> <li>IV: göğün kurulup genişlemesi</li></ul><b>İstenen</b><p>Doğru gruplama.</p></div><ol class=\"sv-s\"><li><b>Her ayeti sınıflandır</b> I canlı → biyolojik. II Güneş → fiziksel. III milletler → toplumsal. IV gök/evren → fiziksel. <span class=\"sv-m\">Fiziksel: II, IV | Biyolojik: I | Toplumsal: III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV (gök) biyolojik sayılmış; yanlış.</td></tr><tr><td>B</td><td>II (Güneş) biyolojik sayılmış; yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Gruplama birebir doğru.</td></tr><tr><td>D</td><td>I fiziksel, IV biyolojik sayılmış; yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gök, Güneş, Ay, gece-gündüz → fiziksel; «canlı, insan, bitki» → biyolojik; «toplum, millet» → toplumsal.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -432,7 +432,7 @@ LGS.add({
     "I. ve II. cümlelerde aynı yasa türü vurgulanmaktadır."
    ],
    "a": "A",
-   "s": "<p>Yağmurun yağması bir doğa olayıdır (fiziksel, I); tohumun çimlenip filizlenmesi canlının yaşamıyla ilgilidir (biyolojik, II); imece ile yardımlaşma (III) ve adil paylaşımın huzuru artırması (IV) insan ilişkileriyle ilgilidir (toplumsal). Bu yüzden A doğrudur. B yanlış: II biyolojik, III toplumsal. C yanlış: III de toplumsaldır. D yanlış: I fiziksel, II biyolojiktir; yağmur ile bitkinin büyümesi birlikte anlatıldığında iki farklı yasa türü vurgulanır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: yağmur yağdı</li> <li>II: buğday çimlendi</li> <li>III: imece ile hasat</li> <li>IV: adil paylaşım → huzur</li></ul><b>İstenen</b><p>Söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Cümleleri sınıflandır</b> I fiziksel (hava, yağış). II biyolojik (tohum, çimlenme). III toplumsal (yardımlaşma). IV toplumsal (adalet–huzur).</li> <li><b>Şıklarla karşılaştır</b> Yalnızca A bu sınıflandırmayla tam uyumludur.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I fiziksel, II biyolojik → doğru.</td></tr><tr><td>B</td><td>II biyolojik, III toplumsal; aynı tür değil.</td></tr><tr><td>C</td><td>III de toplumsal; «yalnızca IV» yanlış.</td></tr><tr><td>D</td><td>I fiziksel, II biyolojik; farklı türler.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C’deki «yalnızca» kelimesi şıkkı yanlış yapar; imece de toplumsal bir olaydır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -444,7 +444,7 @@ LGS.add({
     "Ay’ın evreleri, Allah’ın koyduğu fiziksel yasalara göre düzenli olarak tekrar eder."
    ],
    "a": "D",
-   "s": "<p>Tablo, Ay’ın yaklaşık bir ayda aynı evreleri aynı sırayla tamamlayıp yeniden başladığını; ayet de Ay için “konak yerleri” belirlendiğini gösterir. Bu, gök cisimlerinin Allah’ın koyduğu fiziksel yasalara göre düzenli hareket ettiği anlamına gelir (D). A yanlıştır; Ay’ın hareketi canlılarla değil, madde ve uzayla ilgili fiziksel bir yasadır. B bir batıl inançtır. C, tablodaki düzenli sıralamayla çelişir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tablo: Ay 30 günde yeni ay → ilk dördün → dolunay → son dördün → yeni ay.</li> <li>Ayet: «Ay için de birtakım <b>konak yerleri</b> belirledik.» (Yâsîn, 39)</li></ul><b>İstenen</b><p>Gözlem ve ayetten ulaşılan sonuç.</p></div><ol class=\"sv-s\"><li><b>Tabloyu oku</b> Evreler aynı sırayla ilerliyor ve yaklaşık bir ayda başa dönüyor → düzenli tekrar.</li> <li><b>Ayetle birleştir</b> «konak yerleri belirledik» → Ay’ın hareketi Allah’ın belirlediği bir düzene, yani <b>fiziksel yasalara</b> bağlıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ay bir gök cismidir; biyolojik değil fiziksel.</td></tr><tr><td>B</td><td>Evreler insanların başına gelen olaylara bağlı değildir.</td></tr><tr><td>C</td><td>Tablo düzenli ve aynı sırayı gösteriyor.</td></tr><tr class=\"ok\"><td>D</td><td>Düzenli tekrar + Allah’ın belirlediği konaklar → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Düzenli tekrar eden doğa olayları sünnetullahın değişmezliğini gösterir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -456,7 +456,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>Yasak ağlarla ve üreme döneminde avlanmak balıkların azalmasına yol açmıştır; insan ölçüyü aşarak dengeyi bozmuştur (I). Üreme dönemine uygun av yasağı, yani canlıların yaşam düzenine uygun davranmak, dengenin yeniden kurulmasını sağlamıştır (II). Metinde balıklar ve kuşlar geri döndüğü için III’e ulaşılamaz; bu yargı metinle çelişir. “Yalnız I” II’yi eksik bırakır; III’ü içeren şıklar yanlıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yasak ağ ve üreme döneminde av → balık ve kuşlar azaldı.</li> <li>Av yasağı → birkaç yıl sonra denge geri geldi.</li> <li>Ayet: «mizanı (dengeyi) koydu. Sakın <b>ölçüde haddi aşmayın</b>.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> İnsan ölçüyü aşınca balıklar azalmış, denge bozulmuştur → I ✓.</li> <li><b>II</b> Canlıların üreme düzenine uygun davranılınca denge geri gelmiştir → II ✓.</li> <li><b>III</b> Balıklar ve kuşlar geri döndüğüne göre denge düzelebilir → III ✗ (metinle çelişir). <span class=\"sv-m\">Ulaşılan: I ve II</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de ulaşılır; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II ulaşılır, III metinle çelişir.</td></tr><tr><td>C</td><td>III metinle çelişir.</td></tr><tr><td>D</td><td>III metinle çelişir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Bir daha hiçbir şekilde» gibi kesin ifadeler çoğu zaman metinle çelişir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -468,7 +468,7 @@ LGS.add({
     "“O, her şeyi yaratmış ve yarattığı şeye bir ölçü (düzen) vermiştir.” (Furkan suresi, 2. ayet)"
    ],
    "a": "A",
-   "s": "<p>Metinde ilçe halkı kendi tutumunu değiştirmiş (birlik, eğitim, adil paylaşım) ve bunun sonucunda ilçenin durumu değişmiştir. Bu, toplumsal bir yasayı anlatan Ra’d 11 ile doğrudan ilişkilidir (A). B gök cisimleriyle ilgili fiziksel bir yasadır. C rızkın Allah’a ait olduğunu vurgular; metindeki asıl düşünce ise toplumun kendi durumunu değiştirmesidir. D evrendeki genel ölçü ve düzeni anlatır, toplumun değişimini değil. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İlçe halkı kooperatif kurdu, eğitim aldı, kazancı adil paylaştı → göç veren ilçe göç alan hâle geldi.</li></ul><b>İstenen</b><p>Metinle en ilgili ayet.</p></div><ol class=\"sv-s\"><li><b>Sebep–sonuç</b> Önce <b>halk kendi tutumunu değiştirmiş</b> (birlik, eğitim, adalet), sonra ilçenin durumu değişmiştir.</li> <li><b>Ayeti bul</b> Ra’d 11: «Bir toplum <b>kendi durumunu değiştirmedikçe</b> Allah onların durumunu değiştirmez» → toplumsal yasanın tam ifadesi.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Toplumun kendini değiştirmesi → durumunun değişmesi: birebir uyum.</td></tr><tr><td>B</td><td>Gök cisimleri; fiziksel yasa.</td></tr><tr><td>C</td><td>Rızkın Allah’tan olması; metnin asıl vurgusu toplumsal değişim.</td></tr><tr><td>D</td><td>Genel ölçü/düzen; toplumsal değişimi doğrudan anlatmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir topluluğun çabasıyla «kalkınması» → Ra’d 11.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -480,7 +480,7 @@ LGS.add({
     "Geçmiş toplumların yaşadıklarından ders çıkarılabilir."
    ],
    "a": "C",
-   "s": "<p>Tarihçi, adaletsizlik ile çözülme, adalet ile kalıcılık arasında sebep-sonuç ilişkisi kurmuştur (A, B). Geçmiş devletleri inceleyerek bugüne ders çıkarmaktadır (D). Toplumsal yasalar tarihsel inceleme ve gözlemle ortaya konur; insan toplulukları üzerinde laboratuvar deneyi yapılmaz. Metinde de inceleme yöntemi tarih araştırmasıdır. Bu yüzden C söylenemez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tarihçi geçmiş devletleri inceledi: adaletsizlik → çözülme; adalet → kalıcılık.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Yasa türünü belirle</b> Adalet ve toplum düzeni → <b>toplumsal yasa</b>. Toplumsal yasalar sebep-sonuç ilişkisine dayanır.</li> <li><b>Yöntemi belirle</b> Tarihçi kayıtları <b>inceleyerek</b> sonuca varmıştır; toplumsal yasalar laboratuvarda deneyle ispatlanmaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Adaletsizlik → çözülme ilişkisi var; söylenebilir.</td></tr><tr><td>B</td><td>Adaletin kalıcılık sağladığı görülmüş; söylenebilir.</td></tr><tr class=\"ok\"><td>C</td><td>Toplumsal yasalar laboratuvarda denenmez; yöntem tarihsel inceleme → söylenemez.</td></tr><tr><td>D</td><td>Geçmişten ders çıkarılıyor; söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Toplumsal yasaların yöntemi: tarih, gözlem, anket – deney değil.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -492,7 +492,7 @@ LGS.add({
     "“Allah, insanı alaktan yarattı.” (Alak suresi, 2. ayet)"
    ],
    "a": "D",
-   "s": "<p>A’da Ay’ın evreleri, B’de gece-gündüz ve gök cisimlerinin yörüngeleri, C’de gece ile gündüzün birbirini izlemesi anlatılır; üçü de madde, enerji ve uzayla ilgili fiziksel yasalardır. D ise insanın alaktan (embriyodan) yaratılmasını, yani canlının oluşumunu anlattığı için biyolojik yasalarla ilgilidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A: Ay’ın konakları</li> <li>B: gece, gündüz, Güneş, Ay ve yörüngeleri</li> <li>C: gece ile gündüzün birbirini izlemesi</li> <li>D: insanın alaktan yaratılması</li></ul><b>İstenen</b><p>Yasa türü bakımından farklı olan ayet.</p></div><ol class=\"sv-s\"><li><b>Sınıflandır</b> A, B, C gök cisimleri ve gece-gündüzle ilgilidir → fiziksel. D insanın yaratılışıyla ilgilidir → biyolojik.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ay’ın hareketi → fiziksel.</td></tr><tr><td>B</td><td>Gök cisimlerinin yörüngesi → fiziksel.</td></tr><tr><td>C</td><td>Gece–gündüz → fiziksel.</td></tr><tr class=\"ok\"><td>D</td><td>İnsanın (canlının) oluşumu → biyolojik; farklı olan bu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Farklı olan» sorularında önce çoğunluğun ortak türünü bul.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -504,7 +504,7 @@ LGS.add({
     "Yapılan iyilik, öncelikle onu yapan kişinin lehinedir."
    ],
    "a": "B",
-   "s": "<p>Ece, arkadaşının sözüne rağmen doğru olanı seçmiştir; insan iyi ile kötü arasında seçim yapabilir (A). Ayetler, iyiliğin kişinin lehine (D) olduğunu ve insanın yaptığının karşılığını göreceğini (C) bildirir. Zilzâl suresi “zerre ağırlığınca” hayır ve şerrin bile karşılık bulacağını söyler; bu yüzden küçük davranışların önemsiz olduğu yargısına (B) ulaşılamaz, tersine ayetle çelişir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ece cüzdanı «kimse görmedi» telkinine rağmen teslim etti.</li> <li>Fussilet 46: iyilik kişinin lehine, kötülük aleyhine.</li> <li>Zilzâl 7-8: «<b>zerre ağırlığınca</b> hayır … şer işlerse onu görür.»</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden</b> Ece iyi ile kötü arasında seçim yapmış ve doğruyu seçmiştir → irade.</li> <li><b>Ayetlerden</b> İnsan yaptığının karşılığını görür; «zerre ağırlığınca» ifadesi en küçük davranışın bile hesaba katıldığını gösterir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ece seçim yaptı → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>«zerre ağırlığınca» ifadesiyle çelişir → ulaşılamaz.</td></tr><tr><td>C</td><td>Ayetler karşılığın görüleceğini söyler → ulaşılır.</td></tr><tr><td>D</td><td>«iyi bir iş yaparsa kendi lehinedir» → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zilzâl 7-8 = küçük davranış da önemlidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -516,7 +516,7 @@ LGS.add({
     "Ela ve Kaan"
    ],
    "a": "C",
-   "s": "<p>Ela (cüz’î irade ve sorumluluk), Can (küllî irade alanındaki özelliklerden sorumlu olunmaması) ve Selin (Bakara 286) doğru görüşler söylemiştir. Deniz, kaderi bahane ederek suçu üstlenmemektedir; oysa insan özgür iradesiyle yaptığı kötülükten sorumludur. Kaan ise Allah’ın bilmesini zorlama gibi görmektedir; Allah’ın önceden bilmesi insanın seçimini ortadan kaldırmaz. Bu iki görüş yanlıştır. Diğer şıkların her biri doğru görüş bildiren en az bir öğrenciyi içerir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ela: seçimden sorumluluk</li> <li>Can: seçilmeyen özelliklerden sorumsuzluk</li> <li>Deniz: «kaderimde vardı» diyen hırsız kurtulur</li> <li>Selin: güç yetmeyen yük yüklenmez</li> <li>Kaan: Allah bildiği için seçimin anlamı yok</li></ul><b>İstenen</b><p>İslam’ın kader anlayışıyla çelişen görüşler.</p></div><ol class=\"sv-s\"><li><b>Doğru görüşleri ayır</b> Ela (cüz’î irade), Can (küllî irade alanı), Selin (Bakara 286) doğrudur.</li> <li><b>Yanlışları bul</b> Deniz kaderi suçuna bahane ediyor; oysa hırsızlık kendi seçimidir. Kaan Allah’ın bilmesini zorlama sanıyor; oysa bilmek zorlamak değildir. <span class=\"sv-m\">Çelişenler: Deniz ve Kaan</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ela ve Can doğru söylüyor.</td></tr><tr><td>B</td><td>Can ve Selin doğru söylüyor.</td></tr><tr class=\"ok\"><td>C</td><td>Deniz (kaderi bahane) ve Kaan (bilme = zorlama) yanlış.</td></tr><tr><td>D</td><td>Ela doğru söylüyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kaderi bahane etmek ve «Allah bildi, ben mecburdum» demek en bilinen iki yanlış kader anlayışıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -528,7 +528,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "A",
-   "s": "<p>İkizlerin doğum günü, doğduğu şehir ve anne-babası kendi seçimleri değildir; bunlar küllî iradeye bağlıdır (I). Aynı şartlarda büyüyen kardeşler farklı meslekler seçmiştir; ayet de insanın kendi yolunu seçebildiğini vurgular (II). Meslek seçimi insanın kendi tercihidir, yani cüz’î irade alanındadır ve insan bu tercihlerinden sorumludur; III yanlıştır. “Yalnız II” I’i eksik bırakır; III’ü içeren şıklar ise yanlış yargıyı kapsar. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İkizler aynı gün, aynı şehir, aynı anne-baba → farklı meslekler seçtiler.</li> <li>Ayet: «ona doğru yolu gösterdik; <b>ister şükredici olsun ister nankör</b>.» (İnsan, 3)</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Doğum yeri, zamanı, anne-baba seçilemez → küllî irade ✓.</li> <li><b>II</b> Aynı şartlarda farklı tercih → cüz’î irade ✓; ayet de seçimi insana bırakır.</li> <li><b>III</b> Meslek seçimi kişinin kendi tercihidir; iradesi dışında değildir → III ✗. <span class=\"sv-m\">Ulaşılan: I ve II</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I ve II doğru.</td></tr><tr><td>B</td><td>I de ulaşılır; eksik.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Aynı şartlar + farklı sonuç → farkı yaratan cüz’î iradedir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -540,7 +540,7 @@ LGS.add({
     "Yanlıştır; çünkü emniyet kemeri takan bir kişi hiçbir zaman ölmez."
    ],
    "a": "B",
-   "s": "<p>Ölüm her canlı için kesindir; ancak bu, insanın hayatını tehlikeye atabileceği anlamına gelmez. İslam, canı korumayı emreder; insan emniyet kemeri takmak, hız sınırına uymak gibi tedbirleri almakla sorumludur ve tedbirsizliğin sonucundan da sorumludur (B). A ve C sürücüyü haklı çıkarır; oysa tedbir almak kadere imanın gereğidir ve ölüm yalnızca yaşlılıkla sınırlı değildir. D aşırı bir yargıdır; tedbir ölümü tamamen ortadan kaldırmaz, ayet her canlının öleceğini bildirir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Sürücü: «Ecel gelince kemer neyi değiştirir?»</li> <li>Ayet: «Her canlı ölümü tadacaktır.» (Âl-i İmrân, 185)</li></ul><b>İstenen</b><p>Sürücünün düşüncesiyle ilgili doğru değerlendirme.</p></div><ol class=\"sv-s\"><li><b>Ayetin söylediği</b> Ölüm kesindir; ama bu, insanın canını tehlikeye atabileceği anlamına gelmez.</li> <li><b>Sorumluluk</b> İslam canı korumayı emreder. Emniyet kemeri takmak ve hız sınırına uymak insanın yapması gereken tedbirlerdir; tedbirsizliğin sonucundan kişi sorumludur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tedbir ecele imanla çelişmez; sürücü haksız.</td></tr><tr class=\"ok\"><td>B</td><td>Tedbir almak insanın sorumluluğudur → doğru.</td></tr><tr><td>C</td><td>Ölüm her yaşta ve her sebeple olabilir.</td></tr><tr><td>D</td><td>Kemer ölümsüzlük sağlamaz; gerekçe yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ecelin belli olması, tedbirsizliği haklı çıkarmaz.</div><div class=\"sv-w\"><b>Tuzak:</b> D de «yanlıştır» diye başlıyor; ama gerekçesi yanlış. İki parçalı şıkta gerekçeyi de kontrol et.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -552,7 +552,7 @@ LGS.add({
     "I ve II"
    ],
    "a": "D",
-   "s": "<p>Nisâ 78, ölümün insanı nerede olursa olsun bulacağını bildirir; ölümden kaçış yoktur (I). A’râf 34, ecelin belirlenmiş olduğunu ve ne geri ne ileri alınabileceğini söyler (II). III, “sağlam kaleler içinde olsanız bile” ifadesiyle doğrudan çelişir; bu yargıya ulaşılamaz. “Yalnız I” II’yi eksik bırakır; III’ü içeren şıklar yanlıştır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A’râf 34: «Ecelleri geldiğinde ne bir an geri kalabilirler ne de öne geçebilirler.»</li> <li>Nisâ 78: «Nerede olursanız olun, ölüm sizi bulur; <b>sağlam … kaleler içinde olsanız bile</b>.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Nisâ 78: ölüm her yerde insanı bulur → kaçış yok ✓.</li> <li><b>II</b> A’râf 34: ecel belirlenmiştir, ileri-geri alınamaz → Allah’ın belirlediği zaman ✓.</li> <li><b>III</b> «kaleler içinde olsanız bile» ifadesiyle doğrudan çelişir ✗. <span class=\"sv-m\">Ulaşılan: I ve II</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de ulaşılır; eksik.</td></tr><tr><td>B</td><td>III ayetle çelişir.</td></tr><tr><td>C</td><td>III ayetle çelişir.</td></tr><tr class=\"ok\"><td>D</td><td>I ve II doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ecel zamanı Allah’ın takdiridir; ama bu bilgi tedbiri gereksiz kılmaz (insan zamanı bilmez).</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -564,7 +564,7 @@ LGS.add({
     "Evrendeki yasaları bilip bunlara uygun çalışmak verimi artırır."
    ],
    "a": "A",
-   "s": "<p>Hatice Hanım, bereketi önce Allah’ın lütfu olarak görür (C); ayet de rızkın Allah’ın lütfu olduğunu ve onu çalışarak aramak gerektiğini bildirir (B). Arıların çiçeklenme dönemine ve hastalıklarına göre hareket etmesi, biyolojik yasaları bilip ona uygun çalışmanın verimi artırdığını gösterir (D). A ise rızkı veren Allah’ı (er-Rezzâk) yok sayar; hem metinle hem ayetle çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hatice Hanım: arıları çiçekli yaylaya taşır, hastalıklara karşı eğitim almış, helal satar; «bereket önce Allah’ın lütfu, sonra emeğin karşılığı».</li> <li>Ayet: «yeryüzüne dağılın ve Allah’ın lütfundan (rızık) <b>arayın</b>.» (Cuma, 10)</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Rızkın kaynağı</b> Hatice Hanım bereketi önce Allah’a bağlar; ayet de rızkı «Allah’ın lütfu» olarak anar.</li> <li><b>Emek</b> Ayet «arayın» der; Hatice Hanım da biyolojik yasaları bilip (çiçeklenme, hastalık) çalışır.</li> <li><b>Ele</b> «Allah’ın payı yok» demek hem metne hem ayete aykırıdır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Rızkı Allah’tan koparır → metin ve ayetle çelişir, söylenemez.</td></tr><tr><td>B</td><td>Helal kazanç için emek gerekir; söylenebilir.</td></tr><tr><td>C</td><td>Rızık Allah’ın lütfudur; söylenebilir.</td></tr><tr><td>D</td><td>Arıcılıkta biyolojik yasalara uymak verimi artırır; söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rızık dengesi: Allah verir + insan çalışır. İkisinden birini yok sayan şık yanlıştır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -576,7 +576,7 @@ LGS.add({
     "Hastalandığında tedavi olmak yerine iyileşmeyi beklemelisin."
    ],
    "a": "C",
-   "s": "<p>Hadis, insanların çoğunun sağlık ve boş vaktin değerini bilmediğini, bu iki nimette aldandığını bildirir. Berk de düzensiz yaşayarak sağlığını, plansızlıkla vaktini boşa harcamıştır; ona verilecek öğüt bu iki nimeti iyi değerlendirmesidir (C). A ve D, tedbir ve tedaviyi gereksiz gören yanlış kader anlayışıdır. B, vakti verimli kullanmak yerine boşa geçirmeyi önerir; metindeki asıl sorun da budur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Berk düzensiz uyudu, beslendi, spor yapmadı; okumayı planladığı kitapları okuyamadı.</li> <li>Hadis: «İki nimet vardır ki insanların çoğu aldanmıştır: <b>Sağlık ve boş vakit</b>.»</li></ul><b>İstenen</b><p>Berk’e en uygun öğüt.</p></div><ol class=\"sv-s\"><li><b>Hadisin mesajı</b> İnsanlar sağlığın ve boş vaktin değerini bilmeyip bunları boşa harcar.</li> <li><b>Berk’le bağla</b> Berk düzensiz yaşayıp sağlığını, plansızlıkla vaktini harcamıştır. Öğüt: bu iki nimeti kaybetmeden değerlendirmek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sağlığı korumak insanın sorumluluğudur; kaderi bahane etmek yanlış.</td></tr><tr><td>B</td><td>Vakti yalnız dinlenmeye ayırmak hadisin mesajı değil.</td></tr><tr class=\"ok\"><td>C</td><td>Sağlık ve vakti değerlendirmek → hadisle tam uyum.</td></tr><tr><td>D</td><td>Tedaviyi terk etmek yanlış kader anlayışıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sağlık ve boş vakit = değeri kaybedilince anlaşılan iki nimet.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -588,7 +588,7 @@ LGS.add({
     "I ve III"
    ],
    "a": "D",
-   "s": "<p>Efe yıllarca çalışıp tedbir aldıktan sonra sonucu Allah’a bırakmıştır; bu doğru tevekküldür (I). Başarısızlıklara rağmen vazgeçmeyip çalışması emek, sabır ve kararlılığı gösterir (III). II metinle çelişir; Efe engeline rağmen finale kalmıştır. IV de yanlıştır; Efe “Sonuç ne olursa olsun” diyerek sonucu bilmediğini belirtmektedir; tevekkül sonucu bilmek değil, Allah’a güvenmektir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Efe 6 yıl antrenman yaptı, programa uydu, vazgeçmedi.</li> <li>Sözü: «Ben üzerime düşeni yaptım. Sonuç ne olursa olsun Allah’a dayanıp güveniyorum.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Önce çalışma, sonra Allah’a güven → tevekkülün tanımı ✓.</li> <li><b>II</b> Efe engeline rağmen finale kalmış; engel kesin bir engel olmamıştır ✗.</li> <li><b>III</b> Yıllarca vazgeçmemesi emek, sabır, kararlılık gösterir ✓.</li> <li><b>IV</b> «Sonuç ne olursa olsun» diyor; sonucu bilmiyor ✗. <span class=\"sv-m\">Ulaşılan: I ve III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II metinle çelişir.</td></tr><tr><td>B</td><td>II ve IV metinle çelişir.</td></tr><tr><td>C</td><td>IV yanlış: tevekkül eden sonucu bilmez.</td></tr><tr class=\"ok\"><td>D</td><td>I ve III doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül sonucu garanti etmez; kişi sonucu Allah’a bırakır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -600,7 +600,7 @@ LGS.add({
     "Salgın görülen şehirden ayrılarak tedbir almadan başka bir şehre giden hasta kişi"
    ],
    "a": "B",
-   "s": "<p>Hadis, salgın hastalık karşısında iki tedbir öğütler: salgın olan yere girmemek ve salgın olan yerden çıkıp hastalığı yaymamak. Bu, bugünkü karantina uygulamasına karşılık gelir (B). A tedbir ve tedaviyi terk eder. C sağlığı korumayla ilgilidir ama hadisteki salgın tedbiriyle doğrudan ilgili değildir. D, hadisin “oradan çıkmayınız” öğüdünün tam tersidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Bir yerde veba olduğunu duyarsanız <b>oraya girmeyiniz</b>. Bulunduğunuz yerde veba ortaya çıkarsa <b>oradan çıkmayınız</b>.»</li></ul><b>İstenen</b><p>Hadisle en ilgili davranış.</p></div><ol class=\"sv-s\"><li><b>Hadisteki iki tedbir</b> 1) Salgın olan yere girme. 2) Salgın olan yerden çıkıp hastalığı yayma.</li> <li><b>Günümüze bağla</b> Bu iki kural bugünkü <b>karantina</b> uygulamasına karşılık gelir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tedaviyi terk ediyor; hadisle ilgisi yok.</td></tr><tr class=\"ok\"><td>B</td><td>Bölgeye gitmiyor + bulunduğu yerde karantinaya uyuyor → iki tedbir birden.</td></tr><tr><td>C</td><td>Sağlıklı beslenme; salgın tedbiri değil.</td></tr><tr><td>D</td><td>Salgın yerinden çıkıyor → hadisin ikinci emrine aykırı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Veba hadisi = karantina: girme, çıkma.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -612,7 +612,7 @@ LGS.add({
     "Göklerde ve yerde ne varsa hepsinin Allah’a ait olduğuna"
    ],
    "a": "A",
-   "s": "<p>Ayette “kullarının yaptıklarını ve yapacaklarını bilir” (B), “O’nu ne bir uyuklama tutabilir ne de bir uyku… onları görüp gözetmek O’na zor gelmez” (C) ve “Göklerde ve yerde ne varsa hepsi O’nundur” (D) ifadeleri yer alır. Peygamberlere kitap gönderilmesinden ise söz edilmez (A). Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Âyetel Kürsî metni: tevhid, Hayy-Kayyûm, uyuklama/uyku tutmaz, göklerde ve yerde ne varsa O’nun, yaptıklarını ve yapacaklarını bilir, kürsî.</li></ul><b>İstenen</b><p>Ayette değinilmeyen konu.</p></div><ol class=\"sv-s\"><li><b>Ayetteki ifadeleri eşle</b> «kullarının yaptıklarını ve yapacaklarını bilir» → B. «O’nu ne bir uyuklama tutabilir ne de bir uyku … zor gelmez» → C. «Göklerde ve yerde ne varsa hepsi O’nundur» → D.</li> <li><b>Eksik olanı bul</b> Peygamberler ve kitaplar ayette geçmez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Peygamber ve kitap gönderilmesinden söz yok → değinilmemiş.</td></tr><tr><td>B</td><td>Ayette açıkça var.</td></tr><tr><td>C</td><td>Ayette açıkça var.</td></tr><tr><td>D</td><td>Ayette açıkça var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Metin verilen sorularda her şıkkı metindeki bir cümleyle eşle; eşi olmayan şık cevaptır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -624,7 +624,7 @@ LGS.add({
     "Allah’ın evrene koyduğu yasaları değiştirmeye çalışma"
    ],
    "a": "C",
-   "s": "<p>Anne, bebeği sandığa koyarak suda batmasını önlemiş, kızını sandığın peşinden göndererek onu takip ettirmiştir; bunlar alınan tedbirlerdir. Ardından Allah’ın bildirdiğine güvenerek sonucu O’na bırakmıştır. Bu, tevekkülün tam örneğidir (C). A ve B yanlıştır; anne hem sorumluluk almış hem de tedbir almıştır. D’nin metinle ilgisi yoktur; evrendeki yasalar insan tarafından değiştirilemez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Anne bebeği emzirdi, <b>sandığa</b> koyup Nil’e bıraktı, <b>kızını arkasından gönderdi</b>; Allah’ın bildirdiğine güvendi.</li></ul><b>İstenen</b><p>Annenin tutumunda öne çıkan özellik.</p></div><ol class=\"sv-s\"><li><b>Tedbirleri bul</b> Sandık → bebeğin batmasını önlemek. Kızını göndermek → sandığı takip etmek. Bunlar alınan tedbirlerdir.</li> <li><b>Güveni bul</b> Anne Allah’ın bildirdiğine güvenerek sonucu O’na bırakmıştır → <b>tevekkül</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Anne sorumluluk alıp işi bizzat yapmış.</td></tr><tr><td>B</td><td>Anne tedbir almış; yalnızca beklememiş.</td></tr><tr class=\"ok\"><td>C</td><td>Tedbir + Allah’a güven → doğru tevekkül.</td></tr><tr><td>D</td><td>Yasaları değiştirme çabası yok; insan zaten değiştiremez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kıssalarda tevekkülü bulmak için önce «tedbir» sonra «güven» adımını ara.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -636,7 +636,7 @@ LGS.add({
     "Zulüm ve inkârda direnenlerin akıbeti, insanlar için ders alınacak bir örnektir."
    ],
    "a": "D",
-   "s": "<p>Firavun’un zulümde direnip sonunda helak olması, ayetteki “yalancıların sonunun nasıl olduğunu görün” uyarısıyla örtüşür; geçmiş toplumların akıbeti ibret alınacak bir örnektir (D). A metinle çelişir; Hz. Musa asa ve yed-i beyza mucizelerini göstermiştir. B de çelişir; yanında kardeşi Hz. Harun vardır. C yanlıştır; Allah’ın koyduğu yasalar değişmez ve her dönemde geçerlidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Firavun mucizelere rağmen inkâr ve zulümde direndi, sonunda boğuldu.</li> <li>Ayet: «… <b>yalancıların sonunun nasıl olduğunu</b> bir görün!» (Âl-i İmrân, 137)</li></ul><b>İstenen</b><p>Ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Kıssa ile ayeti birleştir</b> Firavun’un helaki, ayetteki «yalancıların sonu»na bir örnektir → geçmiş toplumların akıbeti ibrettir.</li> <li><b>Diğer şıkları metinle sına</b> Metinde mucize var, Hz. Harun yardımcı var; toplumsal yasalar her dönem geçerlidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Asa ve yed-i beyza mucizeleri gösterildi; çelişir.</td></tr><tr><td>B</td><td>Kardeşi Hz. Harun yanındaydı; çelişir.</td></tr><tr><td>C</td><td>Toplumsal yasalar değişmez ve her dönem geçerlidir.</td></tr><tr class=\"ok\"><td>D</td><td>Zalimin akıbeti ibrettir → metin ve ayetle uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Gezin dolaşın da görün» = geçmişten ibret al → toplumsal yasa.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -648,7 +648,7 @@ LGS.add({
     "Toplumların kendi durumlarını değiştirmedikçe durumlarının değişmeyeceği"
    ],
    "a": "B",
-   "s": "<p>Üç ayette de “ölçü” kavramı öne çıkar: Allah her şeyi bir ölçüye göre yaratmış ve takdir etmiştir. Bu, kaderin kelime anlamı olan ölçü, düzen, plan ile örtüşür (B). A irade ve sorumlulukla, C rızık ve emekle, D toplumsal yasalarla (Ra’d 11) ilgilidir; bu ayetlerde bu düşünceler yer almaz. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ra’d 8: «O’nun katında her şey bir <b>ölçü</b> iledir.»</li> <li>Furkan 2: «yarattığı şeye bir <b>ölçü</b> vermiştir.»</li> <li>Talâk 3: «Allah her şey için bir <b>ölçü</b> belirlemiştir.»</li></ul><b>İstenen</b><p>Ayetlerdeki ortak düşünce.</p></div><ol class=\"sv-s\"><li><b>Ortak kelimeyi bul</b> Üç ayette de «ölçü» kelimesi geçiyor.</li> <li><b>Kavrama bağla</b> Kader sözlükte «ölçü, plan, düzen» demektir. Ortak mesaj: her şey Allah’ın belirlediği bir ölçü ve düzene göre vardır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İrade ve sorumluluk; ayetlerde yok.</td></tr><tr class=\"ok\"><td>B</td><td>«ölçü» kelimesinin ortak vurgusu → doğru.</td></tr><tr><td>C</td><td>Rızık ve emek; ayetlerde yok.</td></tr><tr><td>D</td><td>Ra’d 11’in konusu; Ra’d 8 ile karıştırılmamalı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D’deki toplumsal yasa da Ra’d suresindedir (11. ayet); sure adının aynı olması seni yanıltmasın.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -660,7 +660,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "A",
-   "s": "<p>Ekip, virüsün çoğalmasını ve bağışıklık sistemini, yani canlılarla ilgili biyolojik yasaları inceleyerek aşı geliştirmiştir (I). Bilim insanları yasaları yaratmaz, var olan yasaları gözlem ve deneyle keşfeder (III). II yanlıştır; tedbir almak ve tedavi yolu aramak kaderin gereğidir. Hz. Peygamber de “tedavi olunuz” buyurmuştur. “Yalnız I” III’ü eksik bırakır; II’yi içeren şıklar yanlıştır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ekip virüsün yapısını ve bağışıklık sistemini inceleyip aşı geliştirdi; hastalık azaldı.</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Virüs ve bağışıklık → biyolojik yasalar; bunları bilmek aşıyı mümkün kılmış ✓.</li> <li><b>II</b> Tedbir ve tedavi aramak kaderin gereğidir; Hz. Peygamber «tedavi olunuz» buyurmuştur ✗.</li> <li><b>III</b> Bilim insanları yasaları yaratmaz, gözlem ve deneyle <b>keşfeder</b> ✓. <span class=\"sv-m\">Ulaşılan: I ve III</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I ve III doğru.</td></tr><tr><td>B</td><td>III de ulaşılır; eksik.</td></tr><tr><td>C</td><td>II yanlış.</td></tr><tr><td>D</td><td>II yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tedavi geliştirmek de, tedavi olmak da kadere imanla çelişmez.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -672,7 +672,7 @@ LGS.add({
     "Kaderi bahane ederek sorumluluktan kaçma"
    ],
    "a": "D",
-   "s": "<p>Zemin, rüzgâr ve deprem yüklerini hesaplamak fiziksel yasaları dikkate almaktır (A). Depreme dayanıklı proje hazırlamak tedbir almaktır (B). Mühendisin işini özenle yapmayı seçmesi, iradesini sorumlulukla kullandığını gösterir (C). Selim Bey sorumluluktan kaçmamış, tam tersine bütün tedbirleri almıştır; D ile ilişkilendirilemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mühendis zemini inceletti, rüzgâr ve deprem yüklerini hesapladı, yönetmeliğe uydu, yapımı denetledi.</li></ul><b>İstenen</b><p>Davranışla ilişkilendirilemeyen ifade.</p></div><ol class=\"sv-s\"><li><b>Davranışı çözümle</b> Hesaplar → fiziksel yasaları dikkate alma. Depreme dayanıklı proje → tedbir. İşini özenle yapmayı seçmek → iradeyi sorumlulukla kullanma.</li> <li><b>Zıt olanı bul</b> Selim Bey sorumluluktan kaçmamış, tam tersine her tedbiri almıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rüzgâr, deprem, malzeme hesabı → fiziksel yasalar.</td></tr><tr><td>B</td><td>Dayanıklı proje → tedbir.</td></tr><tr><td>C</td><td>Özenli çalışmayı seçmek → sorumlu irade.</td></tr><tr class=\"ok\"><td>D</td><td>Metindeki tutumun tam tersi → ilişkilendirilemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «İlişkilendirilemez» sorularında metindeki tutumun zıddını söyleyen şık genellikle cevaptır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -684,7 +684,7 @@ LGS.add({
     "Toplumsal yasa – Laboratuvar ortamında deney yapılarak ispatlanır."
    ],
    "a": "C",
-   "s": "<p>Metinde adaletsiz görev dağılımı kırgınlığa, adil düzenleme ise güven ve dayanışmaya yol açmıştır. Bu, insan ilişkileriyle ilgili toplumsal bir yasadır. Toplumsal yasalarda sonuç, insanların davranışlarına bağlı sebep-sonuç ilişkisine dayanır (C). A ve B yasa türünü yanlış belirlemiştir. D yasa türünü doğru verse de özelliği yanlıştır; toplumsal yasalar laboratuvarda değil, tarihsel inceleme ve gözlemle ortaya konur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Görevler hep aynı öğrencilere verilince kırgınlık; adil çizelge gelince güven ve dayanışma arttı.</li></ul><b>İstenen</b><p>Yasa türü ve özelliğinin birlikte doğru verildiği şık.</p></div><ol class=\"sv-s\"><li><b>Yasa türünü bul</b> Adalet, kırgınlık, güven, dayanışma → insan ilişkileri → <b>toplumsal yasa</b>.</li> <li><b>Özelliği kontrol et</b> Toplumsal yasalarda sonuç insanların davranışına bağlı sebep-sonuç ilişkisine dayanır; laboratuvarda deney yapılmaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tür yanlış (fiziksel değil).</td></tr><tr><td>B</td><td>Tür yanlış (biyolojik değil).</td></tr><tr class=\"ok\"><td>C</td><td>Tür de özellik de doğru.</td></tr><tr><td>D</td><td>Tür doğru ama toplumsal yasalar laboratuvarda deneyle ispatlanmaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D’de tür doğru olduğu için hemen işaretlenebilir; iki parçalı şıklarda ikinci parçayı da kontrol et.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -696,7 +696,7 @@ LGS.add({
     "İnsan, rızkını kazanmanın yollarını kendi iradesiyle seçebilir."
    ],
    "a": "A",
-   "s": "<p>Zehra Hanım kurslara katılıp bilgisini artırmış ve çalışmıştır (B). İş kurmayı kendi seçmiştir (D). Kazancını paylaşması ve başkalarına iş imkânı sağlaması dayanışmayı güçlendirmiştir (C). Metinde rızkın yalnızca maddi olduğuna dair bir ifade yoktur; ayrıca İslam’a göre bilgi, beceri ve sağlık da rızıktır. Zehra Hanım’ın annesinden öğrendiği bilgi de bir nimettir. Bu yüzden A’ya ulaşılamaz. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zehra Hanım bilgi ve kursla üretimini geliştirdi, iş kurdu, 10 kadına iş verdi, kazancını paylaşıyor.</li></ul><b>İstenen</b><p>Metinden ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Kurs ve emek (B), işi kendi seçmesi (D), paylaşma ve dayanışma (C).</li> <li><b>Rızkın kapsamı</b> İslam’a göre bilgi, beceri, sağlık da rızıktır. Metinde rızkın yalnızca maddi olduğuna dair bir ifade de yoktur.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>«yalnızca maddi» ifadesi hem metinde yok hem bilgiye aykırı → ulaşılamaz.</td></tr><tr><td>B</td><td>Kurslar ve çalışma → ulaşılır.</td></tr><tr><td>C</td><td>Kazancın paylaşılması → ulaşılır.</td></tr><tr><td>D</td><td>İşi kendi kurdu → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «yalnızca, sadece, hiçbir zaman» gibi kesin ifadeli şıkları dikkatle incele.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -708,7 +708,7 @@ LGS.add({
     "Gençlik döneminde yapılan hataların sorumluluk doğurmayacağı"
    ],
    "a": "B",
-   "s": "<p>Hadiste gençlik, sağlık, zenginlik, boş vakit ve hayat sayılmış ve her birinin, kaybedilmeden önce değerinin bilinmesi istenmiştir. Asıl vurgu, ömrün ve nimetlerin fırsat varken iyi değerlendirilmesidir (B). A’da çalışma konusu hadiste yoktur. C yanlıştır; ecelin vakti insanlarca bilinmez. D yanlıştır; ergenlik çağına ulaşmış ve akıl sağlığı yerinde olan genç, yaptıklarından sorumludur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Beş şey gelmeden önce beş şeyin <b>kıymetini bil</b>: … gençliğinin, … sağlığının, … zenginliğinin, … boş vaktinin, … hayatının.»</li></ul><b>İstenen</b><p>Hadiste asıl vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>Listeyi grupla</b> Gençlik, sağlık, zenginlik, boş vakit, hayat → hepsi kaybedilebilecek nimetlerdir.</li> <li><b>Ana fikir</b> «kaybetmeden önce kıymetini bil» → ömrü ve nimetleri fırsat varken iyi değerlendirmek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hadiste çalışmaktan söz edilmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Ömrü ve nimetleri değerlendirme → ana fikir.</td></tr><tr><td>C</td><td>Ecelin vakti insanlarca bilinmez.</td></tr><tr><td>D</td><td>Gençlikteki davranışlar da sorumluluk doğurur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ana fikir sorularında hadisteki tüm maddeleri kapsayan şıkkı seç.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -720,7 +720,7 @@ LGS.add({
     "2, 3 ve 4"
    ],
    "a": "C",
-   "s": "<p>Tevekkül, gerekli tedbirleri alıp çabayı gösterdikten sonra sonucu Allah’a bırakmaktır. Çiftçi (hazırlık ve sigorta), kaptan (fırtınada sefere çıkmama) ve hasta (ilacını kullanma) tedbir almış, ardından dua etmiştir; üçü de tevekküle uygundur. Öğrenci (2) hiçbir hazırlık yapmadan sonucu beklemiştir; bu tevekkül değil tembelliktir. 2’yi içeren şıklar (A, B, D) bu yüzden yanlıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1 Çiftçi: hazırlık + sigorta + dua</li> <li>2 Öğrenci: hazırlık yok, «Allah ne verirse»</li> <li>3 Kaptan: fırtınada çıkmadı + dua</li> <li>4 Hasta: ilacı düzenli + dua</li></ul><b>İstenen</b><p>Doğru tevekkülle örtüşen tutumlar.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> Tevekkül = önce tedbir ve çaba, sonra Allah’a güven.</li> <li><b>Uygula</b> 1 ✓ (hazırlık, sigorta), 3 ✓ (fırtınada sefere çıkmama), 4 ✓ (ilaç). 2 ✗: hiçbir hazırlık yapmadan sonucu beklemek tembelliktir. <span class=\"sv-m\">Doğru tevekkül: 1, 3, 4</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>2 tevekkül değil.</td></tr><tr><td>B</td><td>2 tevekkül değil; 1 ve 4 eksik.</td></tr><tr class=\"ok\"><td>C</td><td>1, 3 ve 4 tedbir + dua içerir.</td></tr><tr><td>D</td><td>2 tevekkül değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dua tek başına değil, tedbirle birlikte tevekküldür.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -732,7 +732,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "D",
-   "s": "<p>Kader, Allah’ın her şeyi önceden bilip bir ölçüye göre takdir etmesidir (I doğru). Kaza, takdir edilenin yeri ve zamanı gelince gerçekleşmesidir; tohumun filizlenmesi buna örnektir (II doğru). Kader ve kaza ilim, irade, kudret ve tekvin sıfatlarıyla ilişkilidir (IV doğru). III yanlıştır; kaza, kaderde belirlenenin plana uygun olarak gerçekleşmesidir, ondan bağımsız değildir. B, I’i; A ve C ise yanlış olan III’ü içerdiği için elenir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: tohumun hangi şartlarda filizleneceğini önceden bilip takdir etmek → kader</li> <li>II: tohumun ilkbaharda filizlenmesi → kaza</li> <li>III: kaza kaderden bağımsız da olabilir</li> <li>IV: kader ve kaza ilim, irade, kudret, tekvin ile ilgilidir</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I ve II</b> Önceden bilip takdir etmek kader ✓; takdir edilenin zamanı gelince gerçekleşmesi kaza ✓.</li> <li><b>III</b> Kaza, kaderde belirlenenin gerçekleşmesidir; kaderin dışında ya da plansız bir kaza olmaz ✗.</li> <li><b>IV</b> Kader ilim-irade, kaza kudret-tekvin ile ilgilidir ✓. <span class=\"sv-m\">Doğrular: I, II, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>I de doğru; eksik.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve IV doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kaza her zaman kadere <b>uygun</b> gerçekleşir; «plan dışı» kaza yoktur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -744,7 +744,7 @@ LGS.add({
     "1, 2 ve 4"
    ],
    "a": "A",
-   "s": "<p>Doğduğu gün (1) ve boyu (3) küllî iradeye bağlıdır; Melis bunları seçmemiştir. Uykudaki konuşma (5) bilinçli bir seçim olmadığı için sorumluluk doğurmaz. Yalan söylemek (2) ve cüzdanı sahibine ulaştırmak (4) ise Melis’in kendi seçimidir; kötü davranışın cezasını, iyi davranışın ödülünü görür. B küllî irade alanını, C bilinçsiz davranışı, D doğum gününü cüz’î iradeye katmıştır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1 doğduğu gün, 3 boyu, 5 uykuda konuşma, 2 yalan söyleme, 4 cüzdanı teslim etme.</li></ul><b>İstenen</b><p>Cüz’î iradeyle yapılan ve karşılığı görülecek davranışlar.</p></div><ol class=\"sv-s\"><li><b>Seçilemeyenleri ayır</b> 1 ve 3 küllî iradeye bağlıdır; Melis bunları seçmemiştir.</li> <li><b>Bilinçsiz davranışı ayır</b> 5: uykudaki konuşma bilinçli seçim değildir; sorumluluk doğurmaz.</li> <li><b>Seçilenleri bul</b> 2 (yalan) ve 4 (cüzdanı teslim) Melis’in kendi seçimidir; kötüsünün cezasını, iyisinin ödülünü görür. <span class=\"sv-m\">Cevap kümesi: 2 ve 4</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yalnızca kendi seçtiği iki davranış.</td></tr><tr><td>B</td><td>1 ve 3 küllî iradedir.</td></tr><tr><td>C</td><td>5 bilinçsizdir, sorumluluk doğurmaz.</td></tr><tr><td>D</td><td>1 küllî iradedir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sorumluluk için iki şart: davranış seçilmiş olmalı ve kişi bilinçli olmalı.</div><div class=\"sv-w\"><b>Tuzak:</b> Uykudaki konuşmayı Melis «yapmış» olsa da iradesiyle yapmamıştır; C bu yüzden çeldiricidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -756,7 +756,7 @@ LGS.add({
     "4"
    ],
    "a": "B",
-   "s": "<p>Geminin yüzmesi suyun kaldırma kuvvetiyle, yani fiziksel bir yasayla ilgilidir (1 doğru). Bağışıklık kazanma canlının vücuduyla ilgili biyolojik bir yasadır (3 doğru). Adaletin güveni artırması toplumsal bir yasadır (4 doğru). Ağaç aşılama ise bitkinin, yani bir canlının yapısı ve gelişimiyle ilgilidir; biyolojik olması gerekirken fiziksel olarak eşleştirilmiştir (2 yanlış). Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1 geminin yüzmesi → fiziksel</li> <li>2 elma ağacının aşılanması → fiziksel</li> <li>3 aşıyla bağışıklık → biyolojik</li> <li>4 adalet ve güven → toplumsal</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Satırları kontrol et</b> 1: kaldırma kuvveti → fiziksel ✓. 3: vücut bağışıklığı → biyolojik ✓. 4: adalet–güven → toplumsal ✓.</li> <li><b>Hatalıyı bul</b> 2: ağaç bir canlıdır; aşılama bitkinin yapısı ve gelişimiyle ilgilidir → <b>biyolojik</b> olmalı ✗.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kaldırma kuvveti fizikseldir; doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Ağaç aşılama biyolojiktir; «fiziksel» yanlış.</td></tr><tr><td>C</td><td>Bağışıklık biyolojiktir; doğru.</td></tr><tr><td>D</td><td>Adalet toplumsaldır; doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Olayın merkezinde canlı (bitki, hayvan, insan vücudu) varsa biyolojik yasadır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -768,7 +768,7 @@ LGS.add({
     "Musibetten sonra tedbiri bırakıp yalnızca sonucu beklemeyi seçmişlerdir."
    ],
    "a": "D",
-   "s": "<p>Aile ümitsizliğe düşmeyip sabırla çalışmıştır (A); ayet de sabredenleri müjdeler. Sigorta ve don koruma sistemi tedbir almaktır (B). İklime dayanıklı fidan seçmek, doğadaki yasaları dikkate almaktır (C). D ise metinle çelişir; aile tedbiri bırakmamış, tersine artırmıştır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zirai don → ürün kaybı → aile sabırla çalıştı.</li> <li>Ertesi yıl: sigorta, dona karşı koruma sistemi, iklime dayanıklı fidan.</li> <li>Ayet: «… ürünlerden biraz eksiltme ile deneriz. <b>Sabredenleri müjdele.</b>» (Bakara, 155)</li></ul><b>İstenen</b><p>Aile için söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Sabır</b> Aile ümitsizliğe kapılmadan çalışmıştır; ayet sabredenleri müjdeler → A ✓.</li> <li><b>Tedbir</b> Sigorta ve koruma sistemi kurmuşlardır → B ✓. İklime uygun fidan, doğa yasalarını dikkate almaktır → C ✓.</li> <li><b>Ele</b> Aile tedbiri bırakmamış, artırmıştır → D metinle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sabırla çalışmaya devam ettiler; söylenebilir.</td></tr><tr><td>B</td><td>Sigorta ve koruma sistemi; söylenebilir.</td></tr><tr><td>C</td><td>İklime dayanıklı fidan; söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Tedbiri bırakmadılar, artırdılar → söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Musibet karşısında doğru tutum: sabır + yeni tedbir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -780,7 +780,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "C",
-   "s": "<p>Hadiste önce deveyi bağlamak, yani tedbir almak; sonra tevekkül etmek istenir (I). Ayet, Allah’a dayanıp güvenen kişiye Allah’ın yeteceğini bildirir; tevekkül Allah’a güvenmektir (II) ve tedbirden sonra Allah’a güvenen kişi O’nun desteğine sığınmış olur (IV). III yanlıştır; tevekkül, istenen sonucun mutlaka gerçekleşeceği garantisi değildir; sonuç Allah’ın takdirine bırakılır. III’ü içeren A, B ve D elenir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Talâk 3: «Kim Allah’a tevekkül ederse <b>O, ona yeter</b>.»</li> <li>Hadis: «<b>Önce deveni bağla</b>, sonra Allah’a tevekkül et.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Hadis önce deveyi bağlamayı, yani tedbiri ister ✓.</li> <li><b>II ve IV</b> Ayet Allah’a güvenene Allah’ın yeteceğini söyler: tevekkül güvenip dayanmaktır ✓; tedbirden sonra güvenen O’nun desteğine sığınmış olur ✓.</li> <li><b>III</b> Tevekkül istenen sonucun mutlaka gerçekleşeceğini garanti etmez; sonuç Allah’a bırakılır ✗. <span class=\"sv-m\">Ulaşılan: I, II, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV doğru.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «her istediği mutlaka olur» → tevekküle aykırı bir garanti beklentisidir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -792,7 +792,7 @@ LGS.add({
     "II, III ve IV"
    ],
    "a": "A",
-   "s": "<p>I doğrudur: Olayların önceden bilinmesi ve bir ölçüye göre planlanması kaderdir. II doğrudur: Takdir edilen olayın yeri ve zamanı gelince gerçekleşmesi kazadır; 12 Kasım’da yaşanan yükselme gerçekleşmiş bir olaydır. III doğrudur: Gelgit, Ay ve Güneş’in çekim etkisiyle oluşan fiziksel bir olaydır; yasalar değişmez olduğu için önceden hesaplanabilir. IV yanlıştır: Liman idaresi gelgiti <b>belirlemez</b>, yalnızca yasaları bilerek onu <b>hesaplar</b>. Suların yükselmesi insanın iradesine bağlı değildir. Bu, “tahmin eden belirler” yanılgısıdır. B ve D bu yanlış yargıyı içerir. C ise doğru olan I’i dışarıda bırakır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Liman çizelgesi: «12 Kasım’da 14.20’de deniz suyu en yüksek seviyeye çıkacak.»</li> <li>Hesap, Ay ve Güneş’in çekiminin hep aynı kurallarla işlemesine dayanıyor.</li> <li>12 Kasım’da su tam o saatte yükseldi.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Olayın gün ve saatinin Allah tarafından önceden bilinip ölçüye bağlanması → kader ✓.</li> <li><b>II</b> Suyun 12 Kasım 14.20’de gerçekten yükselmesi → takdir edilenin gerçekleşmesi → kaza ✓.</li> <li><b>III</b> Gelgit fiziksel bir olaydır; yasalar değişmediği için insan önceden hesaplayabilir ✓.</li> <li><b>IV</b> İnsan çizelgeyi <b>hazırlar</b> ama suyun yükselme zamanını <b>belirlemez</b>; bu olay insanın iradesine bağlı değildir ✗. <span class=\"sv-m\">Doğrular: I, II, III</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, II ve III doğru.</td></tr><tr><td>B</td><td>IV yanlış; ayrıca II ve III eksik.</td></tr><tr><td>C</td><td>I de doğru; eksik.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İnsan yasayı <b>okur ve tahmin eder</b>; olayı yöneten Allah’ın koyduğu yasadır.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’te «çizelgeyi insanlar hazırladı» doğru bir bilgidir; ama bu, olayın insan iradesine bağlı olduğunu göstermez.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -804,7 +804,7 @@ LGS.add({
     "Binanın çizime uygun yapılması, kazanın kadere uygun olarak gerçekleştiğini anlatır."
    ],
    "a": "C",
-   "s": "<p>Benzetmede çizim, önceden yapılan plana yani <b>kadere</b>; binanın zamanı gelince bu plana uygun yapılması da <b>kazaya</b> karşılık gelir (A ve D doğrudur). Öğretmen, mimarın bilgi ve gücünün sınırlı olduğunu söyleyerek Allah’ın ilmi ve kudretinin sınırsızlığına dikkat çekmiştir (B doğrudur). C söylenemez: Kaza, kaderde belirlenen olayların <b>plana uygun</b> olarak gerçekleşmesidir. Rastgele ya da plandan bağımsız değildir. Bu şık, kazayı günlük dildeki “beklenmedik olay” anlamıyla karıştırma yanılgısından gelir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1. aşama: mimar binayı tasarlar → plan</li> <li>2. aşama: bina çizime uygun yapılır → uygulama</li> <li>Uyarı: mimarın bilgisi ve gücü sınırlı, Allah’ınki sınırsız.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Benzetmeyi eşle</b> Çizim/plan → <b>kader</b>; plana uygun inşa → <b>kaza</b>. A ve D söylenebilir.</li> <li><b>Uyarıyı yorumla</b> Öğretmen, Allah’ın ilmi ve kudretinin insanınkiyle kıyaslanamayacağını vurguluyor → B söylenebilir.</li> <li><b>Ele</b> Benzetmede bina <b>çizime uygun</b> yapılıyor; kazanın rastgele ve kaderden bağımsız olduğu söylenemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Plan → kader, uygulama → kaza; söylenebilir.</td></tr><tr><td>B</td><td>Uyarının amacı tam olarak bu; söylenebilir.</td></tr><tr class=\"ok\"><td>C</td><td>Kaza kadere uygun gerçekleşir; «rastgele» söylenemez.</td></tr><tr><td>D</td><td>Çizime uygun inşa = kadere uygun kaza; söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader–kaza benzetmeleri: plan/proje → kader; uygulama/inşa → kaza.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -816,7 +816,7 @@ LGS.add({
     "II, IV ve V"
    ],
    "a": "B",
-   "s": "<p>I’de Güneş ve Ay’ın hesaba göre hareketi, V’te gece ile gündüzün birbirini izlemesi anlatılır. İkisi de gök cisimleri ve madde ile ilgili olduğu için yalnızca <b>fiziksel</b> yasalarla ilgilidir. II biyolojik, III toplumsal yasayla ilgilidir. IV’te iki yasa birlikte vardır: Gökten su inmesi fiziksel, bitkilerin çıkıp ürün vermesi biyolojik yasadır. Bu yüzden IV “yalnızca fiziksel” sayılamaz. A ve C, ayetin sadece “yağmur” kısmına bakıp bitkilerin büyümesini gözden kaçırma yanılgısından gelir. D ise biyolojik yasayı anlatan II’yi fiziksel sanmaktır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I Güneş-Ay hareketi</li> <li>II insanın alaktan yaratılması</li> <li>III toplumun durumunu değiştirmesi</li> <li>IV yağmur + bitkiler</li> <li>V gece–gündüz</li></ul><b>İstenen</b><p>Yalnızca fiziksel yasalarla ilgili ayetler.</p></div><ol class=\"sv-s\"><li><b>Her ayeti sınıflandır</b> I fiziksel. II biyolojik. III toplumsal. IV hem fiziksel (yağmur) hem biyolojik (bitkiler). V fiziksel.</li> <li><b>«Yalnızca» şartını uygula</b> IV iki tür içerdiği için «yalnızca fiziksel» değildir. <span class=\"sv-m\">Yalnızca fiziksel: I ve V</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV biyolojik yasa da içerir.</td></tr><tr class=\"ok\"><td>B</td><td>I ve V yalnızca fizikseldir.</td></tr><tr><td>C</td><td>IV biyolojik yasa da içerir.</td></tr><tr><td>D</td><td>II biyolojik; IV karma.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> IV’ün ilk cümlesi («Gökten su indiren O’dur») fizikseldir; ama devamındaki bitkiler ayeti karma yapar. «Yalnızca» kelimesini kaçırma.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -828,7 +828,7 @@ LGS.add({
     "Allah’ın bir şeyi önceden bilmesi insanı o işi yapmaya zorlamaz; insan cüz’î iradesiyle seçtiği davranıştan sorumludur."
    ],
    "a": "D",
-   "s": "<p>Genç, Allah’ın önceden bilmesini kendi davranışının sebebi sayarak <b>kaderi bahane etmektedir</b>. Allah’ın ilmi, insanın ne seçeceğini bilmesidir; insanı o seçime zorlamaz. Camı kırmak gencin kendi <b>cüz’î iradesiyle</b> yaptığı bir tercihtir; bu yüzden sorumluluk ona aittir (D). A, Allah’ın ilim sıfatını sınırlamaktır ve yanlıştır. B tersini söyler: İnsan, seçme imkânı olmayan küllî irade alanındaki durumlardan sorumlu değildir. C de yanlıştır: Kader iyi-kötü her şeyi kapsar. İnsanın sorumluluğu, kötü davranışın kader dışında olmasından değil, onu kendi iradesiyle seçmesinden doğar. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Genç: «Allah … camları kıracağımı da biliyordu; bu olay benim kaderimde yazılıydı. … beni neden suçluyorsunuz?»</li></ul><b>İstenen</b><p>Gencin yanlışını en iyi açıklayan ifade.</p></div><ol class=\"sv-s\"><li><b>Hatayı adlandır</b> Genç, Allah’ın <b>bilmesini</b> davranışının <b>sebebi</b> sayıyor; kaderi suçuna bahane ediyor.</li> <li><b>Doğru bilgi</b> Allah insanın ne seçeceğini bilir ama onu zorlamaz. Camı kırmak gencin cüz’î iradesiyle seçtiği bir davranıştır; sorumluluk ona aittir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Allah’ın ilmi geçmişi ve geleceği kapsar; bu ifade yanlış.</td></tr><tr><td>B</td><td>İnsan küllî irade alanından sorumlu değildir; yanlış.</td></tr><tr><td>C</td><td>Kader iyi ve kötü her şeyi kapsar; yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>Bilmek zorlamak değildir; seçimden insan sorumludur → doğru açıklama.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Allah biliyordu, o hâlde ben mecburdum» düşüncesinin cevabı: bilmek zorlamak değildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -840,7 +840,7 @@ LGS.add({
     "Kaan’ın tutumu “İnsan için ancak çalıştığının karşılığı vardır.” (Necm suresi, 39. ayet) ayetiyle bağdaşmaz."
    ],
    "a": "C",
-   "s": "<p>İpek önce gereken bütün çabayı göstermiş, sonra dua edip sonucu Allah’a bırakmıştır. Doğru tevekkül budur (A söylenebilir). Kaan ise çalışmayı bırakıp “kaderimizde ne varsa o olur” diyerek kaderi tembelliğine bahane etmiştir (B söylenebilir). Bu tutum, emeğin karşılığını vurgulayan Necm 39 ile bağdaşmaz (D söylenebilir). C söylenemez: Tevekkül sonucu garanti etmez. Sonuç ne olursa olsun, çaba gösterip Allah’a güvenen kişinin tutumu doğrudur. Bu şık, “tevekkül eden mutlaka başarır” yanılgısından gelir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İpek: aylarca çalıştı, deneme yaptı, geri bildirim aldı, dua edip «sonucu Allah’a bırakıyorum» dedi.</li> <li>Kaan: çalışmayı bıraktı, «Kaderimizde ne varsa o olur» dedi.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>İpek</b> Çaba + tedbir + güven → doğru tevekkül. A söylenebilir.</li> <li><b>Kaan</b> Kaderi tembelliğine bahane ediyor; Necm 39 («çalıştığının karşılığı») ile bağdaşmaz. B ve D söylenebilir.</li> <li><b>C’yi incele</b> Tevekkül sonucu garanti etmez. Kazanmasa bile İpek’in tutumu doğrudur; emeği boşa gitmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İpek çaba ve tedbirle tevekkül etti; söylenebilir.</td></tr><tr><td>B</td><td>Kaan kaderi bahane ediyor; söylenebilir.</td></tr><tr class=\"ok\"><td>C</td><td>Tutumun doğruluğu sonuca bağlı değildir → söylenemez.</td></tr><tr><td>D</td><td>Kaan çalışmayı bıraktı; ayetle bağdaşmaz, söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkülün doğruluğu sonuçla değil, tutumla ölçülür.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -852,7 +852,7 @@ LGS.add({
     "I, II, III ve IV"
    ],
    "a": "A",
-   "s": "<p>“O’nu ne bir uyuklama tutabilir ne de bir uyku” ifadesi, Allah’ın evreni her an gözettiğini anlatır (I). “Kullarının yaptıklarını ve yapacaklarını bilir” ifadesi, sonsuz ilim sıfatını gösterir (II). “Onları görüp gözetmek O’na zor gelmez” ifadesi kudreti anlatır (III). IV’e ulaşılamaz: Ayete adını veren Kürsî kelimesi, Allah’ın hükümranlığını, ilmini ve kudretinin gökleri ve yeri kuşattığını anlatır. Allah mekândan ve insani benzetmelerden münezzehtir. Kelimeyi somut bir taht gibi anlamak bir yanılgıdır. B, C ve D bu yanlış yargıyı içerdiği için elenir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Âyetel Kürsî metni verilmiş.</li> <li>IV: «Kürsî, Allah’ın üzerinde oturduğu bir taht … Allah bir mekânla sınırlıdır.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> «O’nu ne bir uyuklama tutabilir ne de bir uyku» → Allah evreni bir an bile gözetimsiz bırakmaz ✓.</li> <li><b>II</b> «kullarının yaptıklarını ve yapacaklarını bilir» → ilmi geçmişi ve geleceği kuşatır ✓.</li> <li><b>III</b> «Onları görüp gözetmek O’na zor gelmez» → kudret ✓.</li> <li><b>IV</b> Kürsî, Allah’ın gökleri ve yeri kuşatan <b>hükümranlığını ve kudretini</b> anlatır. Allah mekândan münezzehtir; bir tahta oturmak gibi insana ait özelliklerle düşünülemez ✗. <span class=\"sv-m\">Ulaşılan: I, II, III</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, II ve III ayetten çıkar.</td></tr><tr><td>B</td><td>IV yanlış.</td></tr><tr><td>C</td><td>IV yanlış.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Allah’ın sıfatları insanınkine benzetilemez; «kürsî» mecazi olarak hükümranlık demektir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -864,7 +864,7 @@ LGS.add({
     "Toplumsal yasalar, fiziksel yasalar gibi laboratuvarda deney yapılarak kanıtlanır."
    ],
    "a": "D",
-   "s": "<p>Hile yapılınca güven kaybolmuş, adalet sağlanınca güven ve canlılık geri gelmiştir. Buradan dürüstlüğün güvene katkısına (A), toplumsal olayların sebep-sonuç ilişkisine bağlı olduğuna (B) ve toplumun kendi davranışını değiştirince durumunun da değiştiğine (C) ulaşılır. C, Ra’d 11 ile de uyumludur. D’ye ulaşılamaz: Metinde laboratuvar ya da deney yoktur. Ayrıca toplumsal yasalar fiziksel yasalar gibi deneyle değil, gözlem ve geçmiş toplumların incelenmesiyle anlaşılır. D, üç yasa türünün araştırma yöntemlerini karıştırma yanılgısından gelir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tartıda hile → güven kayboldu, ticaret azaldı, kavga arttı.</li> <li>Denetim ve adil ceza → güven ve canlılık geri geldi.</li> <li>Ayet: «mizanı koydu. Sakın <b>ölçüde haddi aşmayın</b>.»</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Dürüst ölçü → güven (A). Hile → çöküş, adalet → canlanma: sebep-sonuç (B). Toplum davranışını değiştirince durumu değişti (C, Ra’d 11 ile uyumlu).</li> <li><b>Ele</b> Toplumsal yasalar tarihsel gözlem ve inceleme ile anlaşılır; laboratuvarda deneyle kanıtlanmaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hile güveni bozdu, dürüstlük geri getirdi; ulaşılır.</td></tr><tr><td>B</td><td>Sebep-sonuç zinciri açık; ulaşılır.</td></tr><tr><td>C</td><td>Davranış değişince durum değişti; ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Toplumsal yasalar laboratuvarda denenmez → ulaşılamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Toplumsal yasa = sebep-sonuç + tarihsel gözlem; deney yok.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -876,7 +876,7 @@ LGS.add({
     "II, III ve IV"
    ],
    "a": "B",
-   "s": "<p>II, ecelin Allah’ın takdiri olduğunu kabul edip sağlığı korumanın insanın sorumluluğu olduğunu söyler. III, hadise dayanarak tedavinin sebebe sarılmak olduğunu belirtir. İkisi de doğru kader anlayışıdır. I yanlıştır: Ecelin belirli olması, insanın sağlığını ihmal etmesine gerekçe olamaz; bu, kaderi bahane etmektir. IV de yanlıştır: Şifayı Allah verir ama tedavi olmak O’nun emridir ve kaderin bir gereğidir. Dua tedaviyle birlikte yapılır, onun yerine geçmez. Bu söz, “tedbir almak kadere karşı gelmektir” yanılgısından gelir. A, C ve D bu yanlış sözlerden en az birini içerir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I Rıza Dede: «İlaçlarımı aksatsam da … bir şey değişmez.»</li> <li>II Anne: «Ecel takdirdir; ama sağlığı korumak ve tedavi olmak sorumluluğumuz.»</li> <li>III Torun: tedavi hadisi; «İlaç kullanmak … sebebe sarılmaktır.»</li> <li>IV Amca: «Doktora gitmek kadere karşı gelmektir … dua yeter.»</li></ul><b>İstenen</b><p>Doğru kader anlayışını yansıtan sözler.</p></div><ol class=\"sv-s\"><li><b>Doğruları bul</b> II ecele imanla tedbir sorumluluğunu birleştiriyor ✓. III hadise dayanarak tedaviyi sebebe sarılmak olarak görüyor ✓.</li> <li><b>Yanlışları bul</b> I ecelin belli olmasını sağlığını ihmal etmeye bahane ediyor ✗. IV tedaviyi kadere aykırı sayıyor; dua tedbirin yerine geçmez ✗. <span class=\"sv-m\">Doğru: II ve III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve IV yanlış anlayış.</td></tr><tr class=\"ok\"><td>B</td><td>II ve III doğru anlayış.</td></tr><tr><td>C</td><td>I yanlış.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dua + ilaç birlikte doğru tutumdur; biri diğerinin yerini tutmaz.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -888,7 +888,7 @@ LGS.add({
     "“Kim zerre ağırlığınca bir hayır işlerse onu görür. Kim de zerre ağırlığınca bir şer işlerse onu görür.” (Zilzâl suresi, 7-8. ayetler)"
    ],
    "a": "A",
-   "s": "<p>Fussilet 46, İsrâ 15 ve Zilzâl 7-8, insanın iyi ya da kötü tercihinin sonucunun yine kendisine döneceğini, en küçük davranışın bile karşılık göreceğini anlatır. Üçü de “seçim ve sonucu” yönündedir. Bakara 286 ise Allah’ın insana gücünü aşan bir yük yüklemediğini, yani sorumluluğun insanın gücü ve imkânıyla <b>sınırlı</b> olduğunu bildirir. Bu yüzden diğerlerinden farklıdır. B, C ve D’yi seçen öğrenci “sorumluluk” ortak kelimesine takılıp ayetlerin vurgu farkını gözden kaçırmıştır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Dört ayet de irade ve sorumlulukla ilgili.</li> <li>Üçü «seçimin sonucunun insana dönmesini», biri sorumluluğun <b>sınırını</b> anlatıyor.</li></ul><b>İstenen</b><p>Sorumluluğun sınırını belirten ayet.</p></div><ol class=\"sv-s\"><li><b>Sonuç vurgusu olanlar</b> Fussilet 46 (iyilik lehine, kötülük aleyhine), İsrâ 15 (doğru yolu seçen kendi iyiliği için), Zilzâl 7-8 (zerre kadar hayır/şer görülür) → seçim ve sonucu.</li> <li><b>Sınır vurgusu olan</b> Bakara 286: «Allah hiç kimseye <b>gücünün yetmeyeceği</b> bir yük yüklemez» → sorumluluk insanın gücüyle sınırlı.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Sorumluluğun güçle sınırlı olduğunu anlatır → farklı olan.</td></tr><tr><td>B</td><td>Seçimin sonucu kişiye döner.</td></tr><tr><td>C</td><td>Seçimin sonucu kişiye döner.</td></tr><tr><td>D</td><td>En küçük davranışın bile karşılığı görülür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bakara 286 = sorumluluğun sınırı; Fussilet 46, İsrâ 15, Zilzâl 7-8 = seçimin karşılığı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -900,7 +900,7 @@ LGS.add({
     "Evrendeki yasaları öğrenmek, insanın bilim ve teknolojide ilerlemesini sağlar."
    ],
    "a": "C",
-   "s": "<p>Öğretmen, uçağın yer çekimini ortadan kaldırmadığını, insanın yasaları değiştirmeyip öğrenerek kullandığını ve seçimlerin Allah’ın koyduğu düzen içinde olduğunu söyler. Buna göre B ve D söylenebilir. A da doğru kader anlayışıdır; Allah’ın bilmesi insanı zorlamaz. C kesinlikle söylenemez: İnsan yasaları değiştiremez, kaderin dışına da çıkamaz. Bu şık, öğrencinin baştaki “uçak yer çekimini yener” yanılgısını tekrarlar. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Öğretmen: uçak yer çekimini kaldırmaz; mühendisler <b>başka yasaları bilip kullanır</b>. «İnsan, iradesiyle yasaları değiştirmez; onları öğrenir ve kullanır.»</li></ul><b>İstenen</b><p>Açıklamaya göre kesinlikle söylenemeyecek ifade.</p></div><ol class=\"sv-s\"><li><b>Açıklamanın özü</b> Yasalar değişmez; insan onları öğrenip kullanarak ilerler. İnsanın seçimleri Allah’ın koyduğu düzenin içindedir.</li> <li><b>Şıkları sına</b> B ve D açıklamada doğrudan var. A doğru bir kader bilgisidir. C ise «yasaları değiştirip kaderin dışına çıkabilir» diyerek açıklamayla çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Allah’ın bilmesi zorlamak değildir; doğru bilgi.</td></tr><tr><td>B</td><td>«seçimleri bu düzenin içinde» → söylenebilir.</td></tr><tr class=\"ok\"><td>C</td><td>Açıklamanın tam tersi → kesinlikle söylenemez.</td></tr><tr><td>D</td><td>«öğrenir ve kullanır» → söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Uçmak yer çekimini yenmek değil, kaldırma kuvvetini kullanmaktır: bir yasa başka bir yasayla kullanılır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -912,7 +912,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "D",
-   "s": "<p>Yeraltı suyu bilinçsizce çekilince zemin çökmüştür. Yani yasaları dikkate almayan müdahale dengeyi bozmuştur (I). Kuyu açma ve sulama kararları insanın kendi tercihleridir; sonuçları da bu tercihlere bağlıdır (II). Bu durum, insanın elleriyle düzeni bozmasını anlatan Rûm 41 ile örtüşür (IV). III yanlıştır: Yasalar bozulmamıştır. Tam tersine, suyu çekilen zeminin çökmesi yasaların <b>değişmeden işlediğini</b> gösterir. Bozulan şey yasalar değil, insanın müdahalesiyle doğal dengedir. A, B ve C bu yanılgıyı içerir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bilinçsizce kuyu açıldı, yeraltı suyu aşırı çekildi, uyarılar dinlenmedi → zemin çöktü, obruklar arttı.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Doğa yasaları dikkate alınmadan yapılan müdahale dengeyi bozmuştur ✓.</li> <li><b>II</b> Kuyu açma ve sulama yöntemi insanın kendi tercihidir; sonuçlar bu tercihlere bağlıdır ✓.</li> <li><b>III</b> Yasalar kendiliğinden bozulmamıştır; tam tersine, su çekilince zeminin çökmesi yasaların değişmeden işlediğini gösterir ✗.</li> <li><b>IV</b> Rûm 41 «insanların kendi elleriyle yaptıkları yüzünden … düzen bozuldu» → metinle uyumlu ✓. <span class=\"sv-m\">Doğrular: I, II, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>III yanlış; IV eksik.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve IV doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğal afet ya da çöküş yasaların «bozulması» değil, yasaların işlemesinin sonucudur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -924,7 +924,7 @@ LGS.add({
     "Ömrü ve canı koruma sorumluluğu"
    ],
    "a": "B",
-   "s": "<p>Yusuf Reis ailesinin geçimini helal yoldan, çalışarak sağlar: <b>rızık ve emek</b> (A). Tedbirlerini aldıktan sonra “bereketi verecek olan Allah’tır” diyerek dua eder: <b>tevekkül</b> (C). Can yeleği şartı ve fırtınada denize çıkmaması, <b>ömrü ve canı korumanın</b> sorumluluk olduğunu gösterir (D). Metinde bir hastalıktan, tedaviden ya da sağlığı korumak için yapılan bir davranıştan söz edilmez. Can güvenliğini sağlıkla karıştıran öğrenci D ile B’yi ayırt edemez. Ancak metindeki tedbirler hastalığa değil, kazaya ve tehlikeye karşıdır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yusuf Reis: hava raporunu inceler, motoru ve telsizi kontrol ettirir, can yeleği şart koşar, helal kazanır, «Biz üzerimize düşeni yaptık; bereketi verecek olan Allah’tır» der, fırtınada çıkmaz.</li></ul><b>İstenen</b><p>Metinle ilişkilendirilemeyen kavram.</p></div><ol class=\"sv-s\"><li><b>Metindeki kavramları eşle</b> Helal geçim → rızık ve emek. «Üzerimize düşeni yaptık … bereketi Allah verir» → tevekkül. Can yeleği ve fırtınada çıkmamak → canı koruma sorumluluğu.</li> <li><b>Eksik olanı bul</b> Metinde hastalıktan ya da tedaviden söz edilmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Helal yoldan geçim → var.</td></tr><tr class=\"ok\"><td>B</td><td>Hastalık/tedavi geçmiyor → ilişkilendirilemez.</td></tr><tr><td>C</td><td>Tedbir + Allah’a güven → var.</td></tr><tr><td>D</td><td>Can yeleği, fırtınada çıkmama → var.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Can yeleği «sağlık» gibi görünebilir; ama bu, sağlık-hastalık değil can güvenliği tedbiridir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -936,7 +936,7 @@ LGS.add({
     "“Biz her canlıyı sudan yarattık...” (Enbiyâ suresi, 30. ayet)"
    ],
    "a": "C",
-   "s": "<p>Bakara 20 ve Âl-i İmrân 189, Allah’ın gücünün her şeye yettiğini açıkça söyler: <b>kudret</b>. Enbiyâ 30 ise Allah’ın canlıları sudan yarattığını bildirir: <b>tekvin</b> (yaratma). Bu üç ayet, kazanın “güçle yaratıp gerçekleştirme” yönüyle ilgilidir. En’âm 59 ise Allah’ın karada ve denizde olan her şeyi, düşen bir yaprağı bile <b>bildiğini</b> anlatır: <b>ilim</b>. Kaderin “önceden bilme” yönüyle ilgili olan budur. D’yi seçen öğrenci, ayette biyolojik bir bilginin geçmesini “bilme” yönüyle karıştırmıştır. Oysa ayetteki vurgu Allah’ın yaratmasıdır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kader → Allah’ın her şeyi önceden <b>bilmesi</b> (ilim).</li> <li>Kaza → sınırsız <b>güçle</b> yaratılıp gerçekleşmesi (kudret, tekvin).</li></ul><b>İstenen</b><p>«Bilme» yönüyle ilgili olduğu için farklı olan ayet.</p></div><ol class=\"sv-s\"><li><b>Ayetleri anahtar kelimeyle eşle</b> Bakara 20 ve Âl-i İmrân 189: «gücü her şeye yeter» → kudret. Enbiyâ 30: «her canlıyı sudan yarattık» → tekvin (yaratma).</li> <li><b>Farklı olanı bul</b> En’âm 59: «karada ve denizde ne varsa <b>bilir</b>; O’nun ilmi dışında bir yaprak bile düşmez» → ilim, yani «bilme» yönü.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kudret (güç) → kaza yönü.</td></tr><tr><td>B</td><td>Kudret (güç) → kaza yönü.</td></tr><tr class=\"ok\"><td>C</td><td>İlim (bilme) → kader yönü; farklı olan.</td></tr><tr><td>D</td><td>Tekvin (yaratma) → kaza yönü.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bilmek → ilim → kader; güç ve yaratma → kudret, tekvin → kaza.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -948,7 +948,7 @@ LGS.add({
     "Onur’un tutumu, iradesi dışında olan bir olayda bile ahlaki duyarlılık gösterdiğini ortaya koyar."
    ],
    "a": "A",
-   "s": "<p>Emir dirseği <b>bilerek</b>, yani kendi cüz’î iradesiyle atmıştır. “Kaderde varmış” demesi sorumluluktan kaçmaktır (C ulaşılabilir). Onur’un çarpması ise kayma sonucu, iradesi dışında olmuştur. Buna rağmen yardım edip üzüntüsünü dile getirmesi ahlaki duyarlılıktır (D ulaşılabilir). İki olayın farkı, sorumlulukta niyet ve iradenin önemini gösterir (B ulaşılabilir). A’ya ulaşılamaz: İslam’da sorumluluk, insanın iradesiyle ve gücüyle sınırlıdır. İsteyerek yapılan ile istemeden olan aynı tutulmaz. A, “sonuç aynıysa sorumluluk da aynıdır” yanılgısından gelir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Emir rakibine <b>bilerek</b> dirsek attı; «kaderde varmış» dedi.</li> <li>Onur’un ayağı yağmurda kaydı, <b>istemeden</b> çarptı; yardım etti ve üzüldü.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>İki olayın farkı</b> Emir’in davranışı iradeyle yapılmış, Onur’unki iradesi dışında olmuştur. Fark, <b>niyet ve irade</b>dir.</li> <li><b>Sorumluluk ölçüsü</b> İnsan iradesiyle yaptığından sorumludur. İradesi dışında olan olaydan, bilerek yaptığı kadar sorumlu tutulmaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Metin iki durumun farklı olduğunu gösteriyor; «aynı ölçüde sorumlu» → ulaşılamaz.</td></tr><tr><td>B</td><td>Niyet ve iradenin önemi metnin özüdür; ulaşılır.</td></tr><tr><td>C</td><td>Bilerek yapılanı kadere yüklemek yanlıştır; ulaşılır.</td></tr><tr><td>D</td><td>Onur istemeden olan olayda bile duyarlı davrandı; ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bilerek yapılan → tam sorumluluk; istemeden olan → sorumluluk yok ya da azdır, ama ahlaki duyarlılık beklenir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -960,7 +960,7 @@ LGS.add({
     "İnsan, rızkını elde etmek için başkalarının yardımını beklemelidir."
    ],
    "a": "B",
-   "s": "<p>Adam, rızkın Allah’tan olmasını çalışmayı bırakmaya gerekçe yapmıştır. Bilge dostu ise ona, çalışıp hem kendine hem başkasına yararlı olan kuşu örnek alması gerektiğini hatırlatır. Vurgu, rızık inancının emeği ve yardımlaşmayı gerektirmesidir (B). A, adamın düştüğü yanılgının kendisidir; kıssa bunu eleştirir. C’de toplumsal yasalardan söz edilmez. Kıssadaki kuşlar yalnızca örnektir ve hayvan davranışı bir sonuç olarak sunulmaz. D ise dostun önerdiğinin tam tersidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Adam kanadı kırık kuşun beslendiğini görünce çalışmayı bıraktı.</li> <li>Bilge: «Neden … yiyecek taşıyıp hem kendini hem de çaresiz bir kardeşini besleyen kuş olmayı seçmedin?»</li></ul><b>İstenen</b><p>Kıssada asıl vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>Adamın yanılgısı</b> Rızkın Allah’tan olmasını çalışmamaya gerekçe yapmıştır.</li> <li><b>Bilgenin düzeltmesi</b> Örnek alınacak olan, çalışıp hem kendine hem başkasına yararlı olan kuştur → emek ve yardımlaşma.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Adamın yanılgısının kendisi; kıssa bunu eleştiriyor.</td></tr><tr class=\"ok\"><td>B</td><td>Rızık inancı emek ve başkasına yararlı olmayı gerektirir → ana fikir.</td></tr><tr><td>C</td><td>Kıssanın konusu hayvanlar için toplumsal yasa değil.</td></tr><tr><td>D</td><td>Başkasından yardım beklemek kıssanın eleştirdiği tutuma yakın.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kıssalarda ana fikri «bilgenin sözü» verir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -972,7 +972,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "D",
-   "s": "<p>Farklı ülkelerde aynı koşullarda aynı sonuçların elde edilmesi, yasaların evrensel olduğunu (I) ve deney-gözlemle keşfedilebildiğini (II) gösterir. Sonuçların her yerde aynı çıkması, Allah’ın koyduğu yasaların sürekli ve kararlı olmasının sonucudur (IV). III’e ulaşılamaz: Projede tohumlar üç ülkede de benzer sürede çimlenmiştir. Biyolojik yasalar da fiziksel yasalar gibi evrenseldir. A, yalnızca doğru yargıların bir kısmını içerir. B ve C, III yanılgısını içerir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Türkiye, Japonya, Brezilya: aynı koşullarda fasulye benzer sürede çimlendi, saf su 0 °C’de dondu.</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Üç ülkede aynı koşul → aynı sonuç: yasalar yerden yere değişmez ✓.</li> <li><b>II</b> Sonuçlar deney ve gözlemle elde edildi ✓.</li> <li><b>III</b> Tohumlar üç ülkede de benzer sürede çimlendi; biyolojik yasalar da evrenseldir ✗.</li> <li><b>IV</b> Her yerde aynı sonuç, Allah’ın koyduğu yasaların sürekli ve kararlı olduğunu gösterir ✓. <span class=\"sv-m\">Ulaşılan: I, II, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV de ulaşılır; eksik.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>III yanlış; II eksik.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve IV doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fiziksel ve biyolojik yasalar evrenseldir: aynı koşul → aynı sonuç.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -984,7 +984,7 @@ LGS.add({
     "I, II, III ve IV"
    ],
    "a": "A",
-   "s": "<p>Hz. Musa’ya, Allah’ın onunla konuşması sebebiyle Kelîmullah denir (I doğru). Kardeşi Hz. Harun ile Firavun’a gidip tebliğ yapmıştır (II doğru). Ülü’l-azm peygamberlerdendir (IV doğru). III yanlıştır: Hz. Musa sarayda büyüdükten sonra Medyen’e gitmiş, dönüşte Tûr’da peygamberlik görevi almıştır. Tevrat ise Firavun boğulup İsrailoğulları kurtulduktan sonra indirilmiştir. Sarayda geçen yıllarda henüz peygamber değildir. Olayların sırasını karıştıran öğrenci B, C ya da D’yi seçer. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Kelîmullah</li> <li>II: Hz. Harun ile Firavun’a gitti</li> <li>III: Tevrat, Medyen’den önce sarayda verildi</li> <li>IV: Ülü’l-azm peygamberlerdendir</li></ul><b>İstenen</b><p>Doğru notlar.</p></div><ol class=\"sv-s\"><li><b>Doğruları işaretle</b> Allah onunla konuştuğu için <b>Kelîmullah</b> denir (I ✓). Hz. Harun ile Firavun’a tebliğe gitti (II ✓). Ülü’l-azm (azim sahibi) beş peygamberden biridir (IV ✓).</li> <li><b>III’ü sıraya koy</b> Sıra: saray → Medyen → dönüşte Tûr’da peygamberlik → Firavun’a tebliğ → Mısır’dan çıkış → Tevrat. Tevrat sarayda değil, çok sonra verilmiştir (III ✗). <span class=\"sv-m\">Doğrular: I, II, IV</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, II ve IV doğru.</td></tr><tr><td>B</td><td>III yanlış; II ve IV eksik.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ülü’l-azm peygamberler: Hz. Nuh, Hz. İbrahim, Hz. Musa, Hz. İsa, Hz. Muhammed.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -996,7 +996,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "C",
-   "s": "<p>Ayet, ecelin Allah tarafından belirlendiğini bildirir; insan bu zamanı bilemez (I). Zamanı bilmemek insanı tedbirsiz bırakmaz; tam tersine canını koruma ve ömrünü iyi değerlendirme sorumluluğunu artırır (II). İşçinin yanlışı, ecelin belirli olmasını tedbir almamaya gerekçe yapmasıdır. Bu yanlışı düzelten açıklamalar I ve II’dir. III ise işçinin yanlış düşüncesinin aynısıdır; uzman bunu söyleyemez. A, sorumluluğu vurgulayan II’yi eksik bırakır. B ve D, yanlış düşünceyi açıklama sanmaktır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İşçi: «Eceli gelen her yerde ölür. Kemer takınca ecelim mi değişecek?»</li> <li>Ayet: A’râf 34 (ecel belirlenmiştir).</li></ul><b>İstenen</b><p>Uzmanın işçiyi düzeltmek için yapabileceği açıklamalar.</p></div><ol class=\"sv-s\"><li><b>I</b> Ecel Allah’ın takdiriyle belirlidir ve insan zamanını bilemez ✓ (ayetle uyumlu).</li> <li><b>II</b> Zamanı bilmemek insanı tedbirli olmaya yöneltir; canı korumak sorumluluktur ✓.</li> <li><b>III</b> Bu, işçinin kendi yanlış düşüncesidir; tehlikeli davranış sorumluluğu kaldırmaz ✗. <span class=\"sv-m\">Düzeltici açıklamalar: I ve II</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de düzeltici bir açıklamadır.</td></tr><tr><td>B</td><td>III işçinin yanlışını tekrar eder.</td></tr><tr class=\"ok\"><td>C</td><td>I ve II yanlışı düzeltir.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Ecelimi bilmiyorum» → «o hâlde her an tedbirli olmalıyım» sonucunu doğurur.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1008,7 +1008,7 @@ LGS.add({
     "Uzun süren kuraklık yüzünden geçimini sağlayamayan bir köy halkının şehre göç etmesi"
    ],
    "a": "D",
-   "s": "<p>Leyleklerin göçü, somonların doğdukları nehre dönmesi ve genç ayçiçeklerinin Güneş’e yönelmesi, canlıların yapısı ve yaşayışıyla ilgili <b>biyolojik</b> yasalara örnektir. Kuraklık nedeniyle geçimini sağlayamayan insanların şehre göç etmesi ise insan toplulukları arasındaki sebep-sonuç ilişkisini gösterir. Bu, <b>toplumsal</b> yasaya örnektir. A ile D’deki “göç” kelimesine takılan öğrenci ikisini aynı gruba koyabilir. Ancak hayvan göçü biyolojik, insan toplumunun geçim kaynaklı göçü toplumsaldır. C’deki Güneş’in fiziksel bir varlık olması da yanıltabilir; ancak yönelen şey canlı bir bitkidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A leylek göçü</li> <li>B somonun doğduğu nehre dönmesi</li> <li>C ayçiçeğinin Güneş’e yönelmesi</li> <li>D kuraklık yüzünden köy halkının şehre göçü</li></ul><b>İstenen</b><p>Yasa türü bakımından farklı olan olay.</p></div><ol class=\"sv-s\"><li><b>Sınıflandır</b> A, B, C canlıların yapısı ve yaşayışıyla ilgili içgüdü/tepkilerdir → biyolojik.</li> <li><b>Farklı olanı bul</b> D’de insan topluluğu geçim sıkıntısı yüzünden göç ediyor → toplumsal sebep-sonuç ilişkisi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hayvan göçü → biyolojik.</td></tr><tr><td>B</td><td>Balık davranışı → biyolojik.</td></tr><tr><td>C</td><td>Bitkinin Güneş’e yönelmesi → biyolojik.</td></tr><tr class=\"ok\"><td>D</td><td>İnsan topluluğunun göçü → toplumsal; farklı olan.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> A ile D’de «göç» kelimesi ortak; ama leyleğin göçü biyolojik, köy halkının göçü toplumsal bir olaydır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1020,7 +1020,7 @@ LGS.add({
     "III ve IV"
    ],
    "a": "B",
-   "s": "<p>Defne bir yıl boyunca çalışmıştır (II söylenebilir). Sınava giremeyince ümitsizliğe kapılmamış, seneye yeniden denemeye karar vermiştir (III söylenebilir). I söylenemez: Sınava girememesinin sebebi kendi ihmali değil, elinde olmayan ani bir hastalıktır. Ayrıca sorumluluktan kaçmamış, yeni bir plan yapmıştır. Kişinin iradesi dışındaki bir olayı kabullenmesiyle kendi hatasını kadere yüklemesi farklı şeylerdir. IV de söylenemez: Defne “öğrendiklerim boşa gitmedi” diyerek çalışmanın değerini vurgulamıştır. A, C ve D söylenebilir yargıları da içerdiği için yanlıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Defne bir yıl çalıştı; sınavdan önceki gün hastalandı, giremedi.</li> <li>Sözü: «Elimden geleni yaptım, bunda da bir hayır vardır … Seneye yeniden başvurup daha da iyi hazırlanacağım.»</li></ul><b>İstenen</b><p>Söylenemeyecek yargılar.</p></div><ol class=\"sv-s\"><li><b>Söylenebilenler</b> Bir yıl çalışmış → II ✓. Ümitsizliğe kapılmayıp yeni plan yapmış → III ✓.</li> <li><b>I’i incele</b> Sınava girememesinin sebebi kendi ihmali değil, ani hastalıktır; sorumluluktan kaçmamış, yeniden plan yapmıştır → I söylenemez.</li> <li><b>IV’ü incele</b> «daha da iyi hazırlanacağım» diyor; hazırlığı gereksiz görmüyor → IV söylenemez. <span class=\"sv-m\">Söylenemeyen: I ve IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III söylenebilir.</td></tr><tr class=\"ok\"><td>B</td><td>I ve IV metinle çelişir.</td></tr><tr><td>C</td><td>II ve III söylenebilir.</td></tr><tr><td>D</td><td>III söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Söylenemez» sorularında metinle çelişen yargıları topla.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1032,7 +1032,7 @@ LGS.add({
     "I, II, III ve IV"
    ],
    "a": "C",
-   "s": "<p>1986’da gerçekleşmiş olan görünme, takdir edilenin zamanı gelince meydana gelmesidir: <b>kaza</b> (I). Gök cisimlerinin yörüngede düzenli dolanması <b>fiziksel</b> yasalarla ilgilidir (II). Olayların önceden bilinip takdir edilmesi <b>kader</b>dir (IV). III yanlıştır: Gökbilimciler, Allah’ın koyduğu değişmez yasaları gözlemleyip hesap yaparak tahminde bulunur. Bu, insanın sınırlı bilgisidir. Allah’ın gaybı da kuşatan sonsuz ilmiyle kıyaslanamaz. “Hesaplayabilmek, kaderi bilmektir” yanılgısı D’yi seçtirir. A ve B ise doğru olan IV’ü dışarıda bırakır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Halley ≈ 76 yılda bir dolanır; 1986’da görüldü; 2061’de görülmesi bekleniyor.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> 1986’daki görünme gerçekleşmiş bir olaydır → kaza ✓.</li> <li><b>II</b> Yörüngede düzenli dolanım gök cismi hareketidir → fiziksel yasa ✓.</li> <li><b>III</b> Gökbilimciler Allah’ın koyduğu değişmez yasaları kullanarak <b>tahmin</b> eder; bu, kaderi Allah gibi bilmek değildir ✗.</li> <li><b>IV</b> Hangi yıllarda görüleceğinin Allah tarafından önceden bilinip takdir edilmesi → kader ✓. <span class=\"sv-m\">Doğrular: I, II, IV</span></li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 500 140\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"70\" x2=\"460\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><circle cx=\"110\" cy=\"70\" r=\"7\" fill=\"#16a34a\"/><text x=\"110\" y=\"52\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">1986</text><text x=\"110\" y=\"98\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\">görüldü (gerçekleşti)</text><text x=\"110\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\">→ KAZA</text><circle cx=\"390\" cy=\"70\" r=\"7\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"3\"/><text x=\"390\" y=\"52\" font-size=\"15\" text-anchor=\"middle\" fill=\"#1e293b\" font-weight=\"bold\">2061</text><text x=\"390\" y=\"98\" font-size=\"13\" text-anchor=\"middle\" fill=\"#7c3aed\">henüz olmadı (takdir)</text><text x=\"390\" y=\"116\" font-size=\"13\" text-anchor=\"middle\" fill=\"#7c3aed\">→ KADER</text><text x=\"250\" y=\"62\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\">≈ 76 yıllık yörünge</text></svg><figcaption>Gerçekleşmiş görünme kaza, önceden bilinip takdir edilmiş olan ise kaderle ilgilidir.</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>IV de doğru; eksik.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV doğru.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İnsan yasaları bilerek hesap yapabilir; ama Allah’ın ilmi sınırsız, insanınki yasalarla sınırlı bir tahmindir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1044,7 +1044,7 @@ LGS.add({
     "Küllî irade"
    ],
    "a": "A",
-   "s": "<p>Selin’in doğuştan görme engelli olması ve yeteneğinin verilmiş olması, seçme imkânı olmayan durumlardır: <b>küllî irade</b> (D). Arkadaşları gezerken çalışmayı tercih etmesi kendi seçimidir: <b>cüz’î irade</b> (B). Saatlerce tekrar etmesi <b>emek</b>tir (C). Metinde dua etmekten ya da çaba gösterdikten sonra sonucu Allah’a bırakmaktan söz edilmez; bu yüzden metin <b>tevekkül</b> ile ilişkilendirilemez. “Emanet” ve “sorumluluk” sözcükleri sorumlulukla ilgilidir, tevekkülle değil. Emeği tevekkülle eş tutan öğrenci A’yı eleyebilir. Ancak tevekkül, çabaya ek olarak Allah’a güvenip sonucu O’na bırakmayı gerektirir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Selin doğuştan görme engelli; yeteneği küçükken fark edildi.</li> <li>Arkadaşları gezerken çalışmayı <b>tercih etti</b>, saatlerce tekrar yaptı.</li> <li>«Bu yetenek bana verilmiş bir emanet. Onu güzel kullanmak benim sorumluluğum.»</li></ul><b>İstenen</b><p>Metinle ilişkilendirilemeyen kavram.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Doğuştan engel ve verilen yetenek → küllî irade. Çalışmayı seçmesi → cüz’î irade. Saatlerce tekrar → emek.</li> <li><b>Eksik olanı bul</b> Metinde Selin’in dua edip sonucu Allah’a bıraktığına dair bir ifade yoktur → tevekkül geçmez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Sonucu Allah’a bırakma ifadesi yok → ilişkilendirilemez.</td></tr><tr><td>B</td><td>Gezmek yerine çalışmayı seçti → var.</td></tr><tr><td>C</td><td>Saatlerce çalıştı → var.</td></tr><tr><td>D</td><td>Doğuştan engel ve yetenek → var.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Metin dinî bir duyarlılık («emanet») içerdiği için tevekkül var sanılabilir; ama emanet bilinci sorumlulukla ilgilidir, tevekkül değildir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1056,7 +1056,7 @@ LGS.add({
     "4"
    ],
    "a": "D",
-   "s": "<p>1’de yağmurla bitkilerin çıkması (fiziksel + biyolojik) En’âm 99’la uyumludur. 2’de gece-gündüz oluşumu Yâsîn 37’yle uyumludur. 3’te adalet ve güven ilişkisi Nahl 90’la uyumludur. 4 yanlıştır: Geminin suyun kaldırma kuvvetiyle yüzmesi <b>fiziksel</b> bir yasadır. Enbiyâ 30 ise canlıların sudan yaratılmasını, yani <b>biyolojik</b> yasayı anlatır. Öğrenci “su” kelimesinin ortaklığına aldanmıştır. Bu olay için uygun ayet “Denizde dağlar gibi akıp giden gemiler de O’nun varlığının delillerindendir.” (Şûrâ, 32) olurdu. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1 buğdayın başak vermesi – En’âm 99</li> <li>2 gece-gündüz – Yâsîn 37</li> <li>3 adalet-güven – Nahl 90</li> <li>4 geminin yüzmesi – Enbiyâ 30 («her canlıyı sudan yarattık»)</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Satırları kontrol et</b> 1: yağmur ve bitki ↔ «gökten su indiren … bitkiyi çıkarırız» ✓. 2: gece-gündüz ↔ «gündüzü ondan çekip çıkarırız» ✓. 3: adalet ↔ «Allah adaleti … emreder» ✓.</li> <li><b>Hatalıyı bul</b> 4: geminin yüzmesi kaldırma kuvvetiyle ilgili <b>fiziksel</b> bir olaydır; Enbiyâ 30 ise canlıların sudan yaratılmasını (biyolojik) anlatır ✗.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yağmur ve bitki; uyumlu.</td></tr><tr><td>B</td><td>Gece-gündüz; uyumlu.</td></tr><tr><td>C</td><td>Adalet ve güven; uyumlu.</td></tr><tr class=\"ok\"><td>D</td><td>«su» kelimesi ortak ama konu farklı → yanlış eşleştirme.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Ayette ve olayda «su» kelimesinin geçmesi eşleştirme için yeterli değildir; olayın türüne bak.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1068,7 +1068,7 @@ LGS.add({
     "III ve IV"
    ],
    "a": "B",
-   "s": "<p>Hadis, hastalanan kişinin tedavi olmasını emreder. Ali “şifayı Allah verir” diyerek tedaviyi terk etmiştir. Bu, tevekkülü tedbirsizlik sanma yanılgısıdır (I bağdaşmaz). Elif ise tedavisini yarıda bırakarak tedaviyi gerektiği gibi tamamlamamıştır (III bağdaşmaz). II, ilacı ve duayı birlikte yürüterek doğru tevekkülü gösterir. IV de hekime başvurarak hadise uyar. A ve C, doğru davranış olan II’yi bağdaşmaz sanır; çünkü bu şıkları seçen öğrenci duayı tedaviyle çelişiyor görür. D ise IV’ü yanlış sayar. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Ey Allah’ın kulları, <b>tedavi olunuz</b>!»</li> <li>I Ali diş hekimine gitmiyor.</li> <li>II Kemal Bey ilaç + dua.</li> <li>III Elif ilacı 3. gün bırakıyor.</li> <li>IV Ayşe Hanım uzmana başvuruyor.</li></ul><b>İstenen</b><p>Hadisle bağdaşmayan davranışlar.</p></div><ol class=\"sv-s\"><li><b>Bağdaşanlar</b> II ilaç ve duayı birlikte yürütür ✓. IV tedavi arar ✓.</li> <li><b>Bağdaşmayanlar</b> I «Şifayı Allah verir» deyip tedaviye başvurmuyor ✗. III tedaviyi doktorun dediği gibi tamamlamıyor ✗. <span class=\"sv-m\">Bağdaşmayan: I ve III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II hadisle uyumlu.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III tedaviyi terk ediyor/yarım bırakıyor.</td></tr><tr><td>C</td><td>II ve IV hadisle uyumlu.</td></tr><tr><td>D</td><td>IV hadisle uyumlu.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> III’te Elif tedaviye başlamış olduğu için uyumlu sanılabilir; ama doktorun önerdiği süreyi tamamlamamak da tedaviyi gerektiği gibi yapmamaktır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1080,7 +1080,7 @@ LGS.add({
     "Kerem ve Arda"
    ],
    "a": "A",
-   "s": "<p>Ece haklıdır: Yaptıklarını ve yapacaklarını bilmesi Allah’ın sınırsız <b>ilmi</b>dir; kaderin önceden bilme yönüyle ilgilidir. Kerem haklıdır: Kürsî ifadesi Allah’ın hükümranlığını ve mutlak <b>kudret</b>ini anlatır. Kaza da takdir edilenlerin bu güçle gerçekleşmesidir. Arda haklıdır: Allah’ın uyuklamaktan ve uykudan münezzeh olması, evreni her an gözettiğini gösterir. Kerem’in ilişkilendirmesini fazla uzak bulan öğrenci B ya da C’yi seçer. Ancak kaza, kudret sıfatıyla doğrudan ilgilidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ece: «yaptıklarını ve yapacaklarını bilir» → kaderin bilme yönü</li> <li>Kerem: «kürsüsü gökleri ve yeri kuşatmıştır … zor gelmez» → sınırsız güç → kaza</li> <li>Arda: «uyuklama ve uyku tutmaz» → evreni bir an gözetimsiz bırakmaz</li></ul><b>İstenen</b><p>Doğru ilişkilendirme yapan öğrenciler.</p></div><ol class=\"sv-s\"><li><b>Ece</b> Geçmişi ve geleceği bilmek ilim sıfatıdır → kaderin «önceden bilme» yönü ✓.</li> <li><b>Kerem</b> Kürsî ifadesi hükümranlığı ve kudreti anlatır; kaza takdir edilenlerin bu güçle gerçekleşmesidir ✓.</li> <li><b>Arda</b> Uyku ve uyuklamadan uzak olmak, evreni her an gözetmek demektir ✓. <span class=\"sv-m\">Üçü de doğru</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Üç ilişkilendirme de doğru.</td></tr><tr><td>B</td><td>Kerem ve Arda da doğru.</td></tr><tr><td>C</td><td>Kerem de doğru.</td></tr><tr><td>D</td><td>Ece de doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Âyetel Kürsî’de ilim (bilir), kudret (kürsî, zor gelmez) ve Kayyûm (uyku tutmaz) birlikte anlatılır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1092,7 +1092,7 @@ LGS.add({
     "“Öfkelendiğim için kendimi tutamadım.” diyerek arkadaşına kırıcı sözler söyleyen genç"
    ],
    "a": "C",
-   "s": "<p>Sorumluluk, insanın iradesiyle yaptığı ve gücünün yettiği davranışlar içindir. Baygınlık geçiren garson, tabakları iradesi dışında, bilinci yerinde değilken kırmıştır; bundan sorumlu tutulamaz (C). A’daki öğrenci ısrara rağmen hayır deme imkânına sahipti. “Başkası ısrar etti” demek sorumluluğu kaldırmaz. B’deki bisikletli kuralı bilerek çiğnemiştir. D’deki genç öfkesini bahane etse de sözlerini kendi iradesiyle söylemiştir. Öfke kontrol edilebilir bir duygudur. A ve D, “etki altında kalmak iradeyi ortadan kaldırır” yanılgısına dayanan çeldiricilerdir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «Allah hiç kimseye <b>gücünün yetmeyeceği</b> bir yük yüklemez.» (Bakara, 286)</li> <li>Sorumluluk iradeyle yapılan davranışlar içindir.</li></ul><b>İstenen</b><p>Davranışından sorumlu tutulamayacak kişi.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> Kişi o anda bilinçli mi ve davranışı seçebilir miydi?</li> <li><b>Şıkları uygula</b> Kopya çeken, kırmızıda geçen, kırıcı konuşan kişi «hayır» deme imkânına sahipti. Baygınlık geçiren garsonun ise bilinci yerinde değildi; tabakları iradesi dışında kırdı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Israra rağmen reddedebilirdi → sorumlu.</td></tr><tr><td>B</td><td>Kırmızıyı gördüğü hâlde geçti → sorumlu.</td></tr><tr class=\"ok\"><td>C</td><td>Baygınlık sırasında, iradesi dışında → sorumlu tutulamaz.</td></tr><tr><td>D</td><td>Öfke iradeyi ortadan kaldırmaz → sorumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Başkası ısrar etti», «öfkelendim», «acelem vardı» sorumluluğu kaldırmaz; bilincin yok olması kaldırır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1104,7 +1104,7 @@ LGS.add({
     "Yasaların değişmez olması, insanın önceden hesap yapıp plan kurabilmesini mümkün kılar."
    ],
    "a": "B",
-   "s": "<p>Dalgaların hızı belirli kurallara göre değiştiği için hesaplanabilmektedir. Bu, olayların bir ölçüye göre gerçekleştiğini (A) ve yasaların değişmezliğinin plan yapmayı mümkün kıldığını (D) gösterir. Uyarı sistemleriyle hayat kurtarılması, yasaları bilmenin tedbir almayı kolaylaştırdığını gösterir (C). B’ye ulaşılamaz: Tsunami de yasalara uygun gerçekleşir; bu yüzden hesaplanabilmektedir. Afetleri “düzenin bozulması” sanmak, metindeki hesaplanabilirlik bilgisiyle çelişen bir yanılgıdır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Dalga hızı derinliğe bağlı olarak <b>belirli kurallara göre</b> değişir → varış saati hesaplanır → uyarı → hayat kurtarılır.</li> <li>Ayet: «her şeyi bir <b>ölçüye (kadere)</b> göre yarattık.» (Kamer, 49)</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Olaylar ölçüye göre işler (A). Yasaları bilmek tedbiri kolaylaştırır (C). Yasalar değişmediği için hesap ve plan yapılabilir (D).</li> <li><b>Ele</b> Tsunami bile hesaplanabiliyorsa yasalar bozulmamış, işlemeye devam ediyor demektir. Afetler düzenin ortadan kalktığı anlar değildir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kamer 49 ve metin bunu söylüyor; ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Hesaplanabilen afet yasaların işlediğini gösterir → ulaşılamaz.</td></tr><tr><td>C</td><td>Uyarı sistemleri hayat kurtarıyor; ulaşılır.</td></tr><tr><td>D</td><td>Varış saati önceden hesaplanıyor; ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğal afetler de Allah’ın koyduğu yasalara göre gerçekleşir; bu yüzden önlem alınabilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1116,7 +1116,7 @@ LGS.add({
     "“Yeryüzünde yaşayan bütün canlıların rızkı Allah’a aittir...” (Hûd suresi, 6. ayet)"
    ],
    "a": "D",
-   "s": "<p>Talâk 3 ve “deveni bağla” hadisi “tevekkül” kelimesini açıkça kullanır. Âl-i İmrân 159’daki “Allah’a dayanıp güven” ifadesi de tevekkülün tanımıdır; ayrıca önce karar verip sonra Allah’a güvenmeyi, yani tevekkülün sırasını anlatır. Hûd 6 ise bütün canlıların rızkının Allah’a ait olduğunu bildirir. Bu ayet <b>rızık</b> kavramıyla ve Allah’ın er-Rezzâk oluşuyla ilgilidir; tevekküle doğrudan değinmez. D’yi tevekkül sanan öğrenci, “rızkı Allah verir” bilgisini “öyleyse beklemek yeter” biçiminde yorumlama yanılgısına düşer. B ise “tevekkül” kelimesi geçmediği için yanlışlıkla elenebilir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Talâk 3: «Kim Allah’a <b>tevekkül</b> ederse …»</li> <li>Âl-i İmrân 159: «Kararını verdiğin zaman artık <b>Allah’a dayanıp güven</b>.»</li> <li>Hadis: «Önce deveni bağla, sonra Allah’a <b>tevekkül</b> et.»</li> <li>Hûd 6: «… canlıların <b>rızkı</b> Allah’a aittir.»</li></ul><b>İstenen</b><p>Tevekküle doğrudan değinmeyen söz.</p></div><ol class=\"sv-s\"><li><b>Tevekkülü bul</b> A ve C «tevekkül» kelimesini açıkça kullanır. B’deki «Allah’a dayanıp güven» tevekkülün tanımıdır; ayrıca önce karar, sonra güven sırasını verir.</li> <li><b>Farklı olanı bul</b> Hûd 6 rızkın Allah’tan olduğunu anlatır; tevekküle doğrudan değinmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«tevekkül» kelimesi açık.</td></tr><tr><td>B</td><td>«dayanıp güven» = tevekkül.</td></tr><tr><td>C</td><td>«tevekkül et» açık.</td></tr><tr class=\"ok\"><td>D</td><td>Konu rızık; tevekkül doğrudan geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül = Allah’a dayanmak, güvenmek; kelime geçmese de bu anlam varsa tevekküldür.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1128,7 +1128,7 @@ LGS.add({
     "Allah insana doğru yolu göstermiş, seçimi insanın iradesine bırakmıştır."
    ],
    "a": "C",
-   "s": "<p>Metin 1’deki ayetler, insanın iman-inkâr ve şükür-nankörlük arasında seçim yapabildiğini anlatır (A, D söylenebilir). Metin 2, Allah’ın insana gücünü aşan bir yük yüklemediğini, yani sorumluluğun güçle sınırlı olduğunu bildirir (B söylenebilir). C söylenemez: Metin 2 tam tersini söyler. İnsan, gücü dışındaki ve iradesiyle seçmediği şeylerden sorumlu tutulmaz. Bu şık, “Allah her şeyi bildiğine göre her şeyden sorumluyuz” yanılgısından gelir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Metin 1: «dileyen iman etsin, dileyen inkâr etsin» (Kehf 29); «ister şükredici olsun ister nankör» (İnsan 3).</li> <li>Metin 2: «<b>gücünün yetmeyeceği</b> bir yük yüklemez» (Bakara 286).</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Metin 1</b> İnsan seçme özgürlüğüne sahiptir; Allah doğru yolu göstermiş, seçimi insana bırakmıştır → A ve D söylenebilir.</li> <li><b>Metin 2</b> Sorumluluk insanın gücüyle sınırlıdır → B söylenebilir.</li> <li><b>Ele</b> C, Metin 2’nin tam tersini söyler: insan gücü yetmeyen ve seçmediği şeylerden hesaba çekilmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metin 1’den çıkar.</td></tr><tr><td>B</td><td>Metin 2’den çıkar.</td></tr><tr class=\"ok\"><td>C</td><td>Bakara 286 ile çelişir → söylenemez.</td></tr><tr><td>D</td><td>Metin 1’den çıkar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İrade (seçim özgürlüğü) + güç sınırı = İslam’da sorumluluğun iki ölçüsü.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1140,7 +1140,7 @@ LGS.add({
     "Kazancın miktarı tamamen insanın elindedir; Allah’ın takdirinin rızıkta bir payı yoktur."
    ],
    "a": "A",
-   "s": "<p>Tuncay Bey, rızkın Allah’tan olmasını hileli kazancına <b>bahane</b> etmektedir. Oysa Allah er-Rezzâk’tır; ama insan rızkını helal yoldan, dürüstçe çalışarak aramakla sorumludur. Hile yapmak insanın kendi iradesiyle seçtiği bir davranıştır (A). B, Tuncay Bey’in yanılgısını onaylar ve rızkın manevi yönlerini de yok sayar. C ve D, bu yanılgıya karşı öteki uca kaçar: Rızkın Allah’tan olduğunu inkâr eder. Doğru anlayış, Allah’ın takdiri ile insanın emeğini birlikte kabul eder; Hakan Bey’in sözü de bunu gösterir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hakan Bey: taze ürün, bozuğu ayırır, fiyatı açık; «benim işim helalinden kazanmak».</li> <li>Tuncay Bey: tarihi geçmiş ürünün etiketini değiştirir; «Rızkı veren Allah’tır … <b>Nasıl kazandığımın bir önemi yok</b>.»</li></ul><b>İstenen</b><p>Tuncay Bey’in yanlışını en iyi açıklayan ifade.</p></div><ol class=\"sv-s\"><li><b>Yanlışı adlandır</b> Tuncay Bey rızkın Allah’tan olmasını hilesine <b>bahane</b> ediyor.</li> <li><b>Doğru bilgi</b> Allah er-Rezzâk’tır; ama insan rızkını helal yoldan aramakla sorumludur. Hile insanın kendi iradesiyle seçtiği bir davranıştır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Allah’ın rızık vermesi helal kazanma sorumluluğunu kaldırmaz → doğru açıklama.</td></tr><tr><td>B</td><td>Yanılgıyı onaylar; rızık manevi nimetleri de kapsar.</td></tr><tr><td>C</td><td>Rızkın Allah’tan olduğuna inanmak doğrudur.</td></tr><tr><td>D</td><td>Rızıkta Allah’ın takdiri vardır; bu ifade yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rızık Allah’tandır, kazanma yolu ise insanın sorumluluğudur.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1152,7 +1152,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "B",
-   "s": "<p>I doğrudur: Kader; ölçü, miktar, plan ve düzen demektir. III doğrudur: Kamer 49’da her şeyin bir ölçüye göre yaratıldığı bildirilir. II yanlıştır: Dinî terim olarak kaza, kaderde takdir edilenlerin zamanı gelince gerçekleşmesidir; iyi-kötü bütün olayları kapsar. Kelimeyi günlük dildeki “trafik kazası” anlamıyla karıştırmak tipik bir yanılgıdır. IV de yanlıştır: Kader, Güneş’in, Ay’ın, suyun, kısacası evrendeki her şeyin ölçüsünü kapsar. A ve C, II yanılgısını içerir. C ve D ise IV yanılgısını içerir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: kader = ölçü, miktar, plan, düzen</li> <li>II: kaza = yalnızca kötü olaylar</li> <li>III: Kamer 49 «ölçü» anlamıyla ilişkili</li> <li>IV: kader yalnızca insan hayatıyla ilgili</li></ul><b>İstenen</b><p>Doğru bilgiler.</p></div><ol class=\"sv-s\"><li><b>I ve III</b> Kader sözlükte ölçü, plan, düzen demektir ✓; Kamer 49 «her şeyi bir ölçüye göre yarattık» der ✓.</li> <li><b>II</b> Dinî terim olarak kaza, takdir edilenin gerçekleşmesidir; iyi-kötü bütün olayları kapsar. Günlük dildeki «trafik kazası» anlamıyla karıştırılmamalı ✗.</li> <li><b>IV</b> Kader gök cisimleri ve cansız varlıklar dâhil her şeyi kapsar ✗. <span class=\"sv-m\">Doğrular: I ve III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III doğru.</td></tr><tr><td>C</td><td>II ve IV yanlış.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dinî anlamda kaza «kötü olay» değil, «gerçekleşme»dir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1164,7 +1164,7 @@ LGS.add({
     "Fiziksel: I, IV – Biyolojik: II, VI – Toplumsal: III, V"
    ],
    "a": "D",
-   "s": "<p>I (Güneş’in yörüngesi) ve IV (göğün kurulması ve genişlemesi) gök cisimleri ve evrenle ilgilidir: <b>fiziksel</b>. II (canlıların sudan yaratılması) ve VI (insanın alaktan yaratılması) canlılarla ilgilidir: <b>biyolojik</b>. III (geçmiş milletlerin akıbeti) ve V (toplumun kendi durumunu değiştirmesi) toplumlarla ilgilidir: <b>toplumsal</b>. A, II’deki “su” kelimesine bakıp ayeti fiziksel saymıştır. B, geçmiş milletleri anlatan III’ü biyolojik, insanın yaratılışını anlatan VI’yı toplumsal saymıştır; “insan” kelimesi geçen her ayeti toplumsal sanmak bir yanılgıdır. C, “takdir” kelimesi geçtiği için I’i biyolojik saymıştır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I Güneş’in yörüngesi</li> <li>II canlıların sudan yaratılması</li> <li>III geçmiş milletlerin akıbeti</li> <li>IV göğün kurulup genişlemesi</li> <li>V toplumun durumunu değiştirmesi</li> <li>VI insanın alaktan yaratılması</li></ul><b>İstenen</b><p>Doğru gruplama.</p></div><ol class=\"sv-s\"><li><b>Sınıflandır</b> Gök ve evren: I, IV → fiziksel. Canlılar: II, VI → biyolojik. Toplumlar: III, V → toplumsal. <span class=\"sv-m\">Fiziksel: I, IV | Biyolojik: II, VI | Toplumsal: III, V</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II (canlı) fiziksel, IV (gök) biyolojik sayılmış.</td></tr><tr><td>B</td><td>III ve VI yanlış gruplarda.</td></tr><tr><td>C</td><td>VI fiziksel, I biyolojik sayılmış.</td></tr><tr class=\"ok\"><td>D</td><td>Gruplama birebir doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce kesin olanları (Güneş → fiziksel, millet → toplumsal) yerleştir, sonra şıkları ele.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1176,7 +1176,7 @@ LGS.add({
     "II, III ve IV"
    ],
    "a": "A",
-   "s": "<p>Burak sigaraya başlamayı ve uyarılara rağmen devam etmeyi kendisi seçmiştir: <b>cüz’î irade</b> (I). Kendi tercihinin sonucunu “kaderimde varmış” diyerek kadere yüklemesi kaderi bahane etmektir (III). Defalarca uyarılması, sağlığı korumanın insanın sorumluluğu olduğunu gösterir (IV). II’ye ulaşılamaz: Arkadaş ısrarı bir etkidir, ama Burak’ın seçme özgürlüğünü ortadan kaldırmaz. Üstelik yıllarca devam etmeyi de kendisi seçmiştir. II’yi içeren B, C ve D, “başkalarının etkisi iradeyi yok eder” yanılgısından gelir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Burak arkadaş ısrarıyla sigaraya başladı, uyarılara rağmen devam etti, hastalandı.</li> <li>Sözü: «Kaderimde bu hastalık varmış, elimden bir şey gelmezdi.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I ve III</b> Başlamak ve sürdürmek Burak’ın tercihidir → cüz’î irade ✓. Kendi tercihinin sonucunu kadere yüklemek yanlış kader anlayışıdır ✓.</li> <li><b>IV</b> Defalarca uyarılması, sağlığı korumanın insanın sorumluluğu olduğunu gösterir ✓.</li> <li><b>II</b> Israr sorumluluğu azaltabilir ama «tamamen ortadan kaldırmaz»; Burak hayır diyebilirdi ✗. <span class=\"sv-m\">Ulaşılan: I, III, IV</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, III ve IV doğru.</td></tr><tr><td>B</td><td>II yanlış.</td></tr><tr><td>C</td><td>II yanlış.</td></tr><tr><td>D</td><td>II yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Arkadaş baskısı seçimi zorlaştırır ama seçimi ortadan kaldırmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1188,7 +1188,7 @@ LGS.add({
     "Liderin ekibi geri döndürmesi, Allah’a yeterince güvenmediğini gösterir."
    ],
    "a": "C",
-   "s": "<p>Lider önce bütün hazırlıkları yapmış, sonra Allah’a dayanmıştır. Tehlike belirince de canı korumak için yeni bir tedbir almıştır. Sözü, tevekkülün tedbirle birlikte olduğunu açıkça anlatır (C). A ve D, “devam edelim” diyen dağcıların yanılgısıdır: Tevekkülü tedbirsizlik ve gözü kara davranmak sanmak. Lider bu düşünceyi düzeltmiştir. B ise kaderi “kötü yazılmış alın yazısı” gibi gören yanlış bir anlayıştır. Ekibin geri dönmesi kendi bilinçli tercihidir ve canlarını korumuştur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Lider hazırlık yaptı, «Allah’a dayanıyoruz» dedi.</li> <li>Fırtına uyarısı gelince bazıları «tevekkül edip devam edelim» dedi.</li> <li>Lider: «<b>Tevekkül, tehlikeyi göre göre yürümek değildir.</b> … can ise emanettir.»</li></ul><b>İstenen</b><p>Ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Liderin tutumu</b> Önce tedbir, sonra güven; tehlike belirince de yeni tedbir (geri dönmek).</li> <li><b>Ana fikir</b> Tevekkül tedbirle birliktedir; tedbiri terk etmek tevekkül değildir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«devam edelim» diyenlerin yanılgısı; lider bunu reddediyor.</td></tr><tr><td>B</td><td>Zirveye çıkamamak kötü kader değil, doğru tedbirin sonucudur.</td></tr><tr class=\"ok\"><td>C</td><td>Liderin sözünün özü → doğru.</td></tr><tr><td>D</td><td>Geri dönmek Allah’a güvensizlik değil, tedbirdir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Can emanettir; onu tehlikeye atmak tevekkül değil, gözü karalıktır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1200,7 +1200,7 @@ LGS.add({
     "“Bir şeyi dilediği zaman O’nun emri o şeye ancak ‘Ol!’ demektir. O da hemen oluverir.” (Yâsîn suresi, 82. ayet)"
    ],
    "a": "D",
-   "s": "<p>Metinde insanın kum çekip bitki örtüsünü sökmesiyle kıyıdaki doğal dengenin bozulduğu anlatılır. Rûm 41, insanın elleriyle düzeni bozmasını (A); Rahmân 7-8, Allah’ın koyduğu dengeyi ve ölçüde haddi aşmamayı (B); Şûrâ 30, başa gelen musibetin insanın kendi yaptıkları yüzünden olabileceğini (C) anlatır. Üçü de metinle ilişkilidir. Yâsîn 82 ise Allah’ın irade ve yaratma gücünü, “Ol!” demesiyle her şeyin oluverdiğini anlatır. İnsanın dengeyi bozmasıyla ilgili değildir. C’yi eleyen öğrenci “musibet” kelimesini yalnızca hastalık sanmış olabilir; oysa ayet, insanın kendi yaptıklarının sonucunu vurgular. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İzinsiz kum çekimi, bitki örtüsünün sökülmesi → kıyı aşındı, evler zarar gördü.</li> <li>Yasak ve bitkilendirme → kumullar yeniden oluştu.</li></ul><b>İstenen</b><p>Metinle ilişkilendirilemeyen ayet.</p></div><ol class=\"sv-s\"><li><b>Metnin konusu</b> İnsan eliyle bozulan doğal denge ve bunun insana zarar olarak dönmesi.</li> <li><b>Ayetleri eşle</b> Rûm 41 → insan eliyle bozulan düzen. Rahmân 7-8 → denge ve ölçüde haddi aşmamak. Şûrâ 30 → musibetin insanın kendi yaptıkları yüzünden gelmesi. Yâsîn 82 ise Allah’ın «Ol!» demesiyle yaratmasını (irade/tekvin) anlatır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İnsan eliyle bozulan düzen → ilişkili.</td></tr><tr><td>B</td><td>Denge ve ölçü → ilişkili.</td></tr><tr><td>C</td><td>Kendi yaptıkları yüzünden zarar → ilişkili.</td></tr><tr class=\"ok\"><td>D</td><td>Yaratmada irade ve kudret; doğal dengenin bozulmasıyla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Çevre metinleri: Rûm 41, Rahmân 7-8, Şûrâ 30 üçlüsü.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1212,7 +1212,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "B",
-   "s": "<p>Hz. Musa, ordu yaklaşırken bile “Rabb’im benimledir” diyerek Allah’a güvenmiştir (I). Denizin yarılması, Allah’ın izniyle gerçekleşen ve O’nun mutlak kudretini gösteren bir mucizedir (III). II yanlıştır: Hz. Musa yerinde beklememiş, Allah’ın emriyle halkını Mısır’dan çıkarıp yola koyulmuştur. Güveni, çabasının yanında yer alır. II, tevekkülü pasif beklemek sanma yanılgısıdır. IV de yanlıştır: Hz. Musa peygamberliği Tûr’da almış, Firavun’a tebliğden sonra bu kurtuluş yaşanmıştır. A ve C, II yanılgısını; C ve D, IV’teki sıra hatasını içerir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Önlerinde deniz, arkada Firavun ordusu; bazıları «İşte yakalandık!» dedi.</li> <li>Hz. Musa: «Hayır! Eminim ki <b>Rabb’im benimledir</b>, bana bir çıkış yolu gösterecektir.»</li> <li>Deniz yarıldı.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Zor anda Allah’a güvenmiş, ümitsizliğe düşmemiştir ✓.</li> <li><b>II</b> Hz. Musa oturup beklememiş; Allah’ın emriyle halkını Mısır’dan çıkarıp yola koyulmuştur ✗.</li> <li><b>III</b> Denizin yarılması olağan düzeni aşan, Allah’ın kudretini gösteren bir mucizedir ✓.</li> <li><b>IV</b> Hz. Musa’ya peygamberlik Tûr’da, Firavun’a gitmeden önce verilmişti; bu olay peygamberlikten sonradır ✗. <span class=\"sv-m\">Doğrular: I ve III</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III doğru.</td></tr><tr><td>C</td><td>II ve IV yanlış.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mucize: Allah’ın izniyle olağan düzenin dışında gerçekleşen, peygamberliği destekleyen olay.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1224,7 +1224,7 @@ LGS.add({
     "I, II, III ve V"
    ],
    "a": "C",
-   "s": "<p>Belirlenmiş genel kurallar ve ölçüler kaderle ilgilidir: I (soğukta yağışın kar olması) ve IV (suyun 0 °C’de donması) genel yasalardır. Bu kuralların yeri ve zamanı gelince gerçekleşmiş hâlleri ise kazadır: II (dün gece yağan kar), III (dalların beyaza bürünmesi) ve V (sabah donmuş birikintiler). A, kader örneklerini kaza sanmıştır. B, III’ü gözden kaçırmıştır; çünkü bu cümlede tarih ya da saat yoktur. Ancak cümle o gün gerçekleşmiş bir olayı anlatır. D, genel kural olan I’i de kaza saymıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: soğukta yağış kar olur</li> <li>II: dün gece ilk kar yağdı</li> <li>III: dallar beyaza büründü</li> <li>IV: saf su 0 °C’de donar</li> <li>V: sabah birikintiler donmuştu</li></ul><b>İstenen</b><p>Kazaya örnek cümleler.</p></div><ol class=\"sv-s\"><li><b>Genel kuralları ayır</b> I ve IV genel ölçü ve kural bildirir («-ır/-ar») → kader.</li> <li><b>Gerçekleşmiş olayları bul</b> II («yağdı»), III («büründü»), V («donduğunu gördüm») belli bir zamanda gerçekleşmiş olaylardır → kaza. <span class=\"sv-m\">Kaza: II, III, V</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve IV genel kural → kader.</td></tr><tr><td>B</td><td>III de gerçekleşmiş bir olaydır; eksik.</td></tr><tr class=\"ok\"><td>C</td><td>II, III ve V gerçekleşmiş olaylar → kaza.</td></tr><tr><td>D</td><td>I genel kural → kader.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «-dı/-di» ile biten, belli bir anı anlatan cümle → kaza; «-ır/-ar» ile biten genel kural → kader.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1236,7 +1236,7 @@ LGS.add({
     "“Allah’ın her şeyi önceden bilmesi, insanın seçimlerini zorunlu kılar; bu yüzden insan seçimlerinden sorumlu değildir.”"
    ],
    "a": "A",
-   "s": "<p>A’da kişi önce çalışmış, sonra sonucu Allah’a bırakmış ve sonuç ne olursa olsun çabasını sürdürmeye karar vermiştir. Bu, emek ve tevekkülü birleştiren doğru kader anlayışıdır. B, tevekkülü tedbirsizlik sanma yanılgısıdır; tevekkül tedbirden sonra gelir. C, insan iradesini sınırsız sanma yanılgısıdır; cüz’î irade Allah’ın küllî iradesi ve koyduğu düzen içinde işler. D, Allah’ın bilmesini zorlamak sanıp sorumluluğu reddetme yanılgısıdır; Allah’ın bilmesi insanı zorlamaz ve insan seçimlerinden sorumludur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A: hazırlandım, sonucu Allah’a bırakıyorum, ders çıkarıp devam edeceğim.</li> <li>B: tedbir kadere karşı gelmektir.</li> <li>C: cüz’î irade küllî iradenin dışına çıkabilir.</li> <li>D: Allah’ın bilmesi seçimi zorunlu kılar.</li></ul><b>İstenen</b><p>Doğru kader anlayışını yansıtan söz.</p></div><ol class=\"sv-s\"><li><b>Doğru anlayışın üç unsuru</b> Çaba + tevekkül + sonuçtan ders çıkarıp devam etmek.</li> <li><b>Şıkları değerlendir</b> A üç unsuru da içerir. B, C, D bilinen yanlış kader anlayışlarıdır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Emek + tevekkül + kararlılık → doğru anlayış.</td></tr><tr><td>B</td><td>Tevekkül tedbirden sonra gelir; tedbirsizlik yanlıştır.</td></tr><tr><td>C</td><td>İnsan iradesi Allah’ın küllî iradesinin içinde işler; dışına çıkamaz.</td></tr><tr><td>D</td><td>Bilmek zorlamak değildir; insan seçiminden sorumludur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Üç klasik yanılgı: tedbiri gereksiz saymak, insan iradesini sınırsız sanmak, ilmi zorlama sanmak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1248,7 +1248,7 @@ LGS.add({
     "Üç araştırmacının incelediği düzen de Allah’ın evrene koyduğu yasalara dayanır."
    ],
    "a": "B",
-   "s": "<p>Sesin hızının ölçülmesi fiziksel, ışığın bitki büyümesine etkisi biyolojik yasalarla ilgilidir. İkisi de deney ve gözlemle araştırılabilir (A). Kuraklık sonucu yaşanan göç, toplumsal yasaların sebep-sonuç ilişkisine örnektir (C). Fiziksel, biyolojik ve toplumsal yasaların hepsi sünnetullahın parçasıdır (D). B kesinlikle söylenemez: Tabloda Aslı Hanım’ın laboratuvar deneyi değil, kayıt ve anketlerle inceleme yaptığı görülür. Toplumsal olaylar laboratuvarda deneyle tekrar üretilemez. Bu şık, üç yasa türünün araştırma yöntemlerini aynı sanma yanılgısından gelir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Fizikçi: ses hızı – laboratuvar</li> <li>Biyolog: ışık ve bitki büyümesi – sera deneyi</li> <li>Sosyolog: kuraklık sonrası göç – geçmiş kayıtlar ve anketler</li></ul><b>İstenen</b><p>Kesinlikle söylenemeyecek ifade.</p></div><ol class=\"sv-s\"><li><b>Yasa türlerini belirle</b> Ses hızı → fiziksel; bitki büyümesi → biyolojik; kuraklık sonrası göç → toplumsal.</li> <li><b>Yöntemleri karşılaştır</b> Fiziksel ve biyolojik yasalar deneyle incelenir. Toplumsal yasalar ise kayıt, anket, tarihsel gözlemle incelenir; laboratuvarda tekrar tekrar denenemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İkisi de deney ve gözlemle çalışıyor; söylenebilir.</td></tr><tr class=\"ok\"><td>B</td><td>Toplumsal yasalar laboratuvarda denenmez; metinde de kayıt ve anket kullanılıyor → söylenemez.</td></tr><tr><td>C</td><td>Kuraklık → göç sebep-sonuç ilişkisi; söylenebilir.</td></tr><tr><td>D</td><td>Üç tür yasa da sünnetullahtır; söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fiziksel/biyolojik → deney; toplumsal → kayıt, anket, tarih.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1260,7 +1260,7 @@ LGS.add({
     "I, II, III ve IV"
    ],
    "a": "D",
-   "s": "<p>Kerem’in yüzlerce başvuru yapması ve ayetteki “Allah’ın lütfundan arayın” emri, rızık için çalışmak gerektiğini gösterir (I). Kerem öğrendiği bilgi ve beceriyi de rızık saymıştır (II). Kazancının bir kısmını bir öğrencinin eğitimine ayırması paylaşmanın güzelliğini gösterir (III). Olumsuz cevaplara rağmen ümitsizliğe kapılmadan kendini geliştirmesi de sebatı gösterir (IV). Dört yargıya da ulaşılır. Bu tür sorularda öğrenciler çoğu zaman metnin sonundaki paylaşma bilgisini (III) ya da baştaki ümitsizliğe kapılmama ifadesini (IV) gözden kaçırır. A, B ve C bu eksik okumalardan gelir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kerem 2 yıl iş aradı, ümitsizliğe kapılmadan eksiklerini giderdi, yeni program öğrendi, işe girdi.</li> <li>«Öğrendiğim bilgi ve beceri de bana verilmiş bir rızıktır.»</li> <li>Kazancının bir kısmını bir öğrencinin eğitimine ayırıyor.</li> <li>Ayet: «Allah’ın lütfundan (rızık) <b>arayın</b>.» (Cuma, 10)</li></ul><b>İstenen</b><p>Ulaşılabilen yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Yüzlerce başvuru ve ayetteki «arayın» emri → rızık için emek gerekir ✓.</li> <li><b>II</b> Kerem bilgi ve beceriyi de rızık sayıyor ✓.</li> <li><b>III</b> Kazancını ihtiyaç sahibiyle paylaşıyor ✓.</li> <li><b>IV</b> Olumsuz cevaplara rağmen çalışmayı sürdürmüş ✓. <span class=\"sv-m\">Ulaşılan: I, II, III, IV</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III ve IV de ulaşılır; eksik.</td></tr><tr><td>B</td><td>IV de ulaşılır; eksik.</td></tr><tr><td>C</td><td>I de ulaşılır; eksik.</td></tr><tr class=\"ok\"><td>D</td><td>Dört yargı da metinden çıkar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tüm öncüllerin metinde karşılığı varsa «hepsi» şıkkını seçmekten çekinme.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   }
  ]
 });
