@@ -776,7 +776,7 @@
      EXP · SEVİYE · RÜTBE
      ========================================================= */
   var XKEY = KEY + 'xp';
-  var XPMAX = LGS.xpMax || 502220;            // tüm sorular 4 kez doğru = 100. seviye (sonrası EXP birikmeye devam eder)
+  var XPMAX = LGS.xpMax || 541820;            // tüm sorular 4 kez doğru = 100. seviye (sonrası EXP birikmeye devam eder)
   var XP_BASE = { kolay: 10, orta: 15, zor: 20, past: 20, meb: 20, 'new': 15 };
   var COOL = 7 * 864e5;
   var RANKS = [
