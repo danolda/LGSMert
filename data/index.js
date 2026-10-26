@@ -1,11 +1,15 @@
 window.LGS = {
-  version: 78,
-  xpMax: 422300,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
+  version: 79,
+  xpMax: 461900,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 tahmini tarih; MEB açıklayınca güncelle
   topics: {},
   past: {},
   pastLoaded: {},
+  meb: {},
+  mebLoaded: {},
+  mebSubj: { fen: 1 },          // MEB örnek soruları yüklenen dersler: { fen: 1 }
   add: function (t) { this.topics[t.id] = t; },
+  addMeb: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.meb[k] = obj[k]; },
   addPast: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.past[k] = obj[k]; },
   subjects: [
     {

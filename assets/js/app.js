@@ -108,8 +108,12 @@
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
     };
-    if (LGS.pastLoaded[sid]) pastDone();
-    else loadScript('data/past/' + sid + '.js', function () { LGS.pastLoaded[sid] = true; pastDone(); });
+    var mebDone = function () {
+      if (!LGS.mebSubj[sid] || LGS.mebLoaded[sid]) return pastDone();
+      loadScript('data/meb/' + sid + '.js', function () { LGS.mebLoaded[sid] = true; pastDone(); });
+    };
+    if (LGS.pastLoaded[sid]) mebDone();
+    else loadScript('data/past/' + sid + '.js', function () { LGS.pastLoaded[sid] = true; mebDone(); });
   }
   function stats(tid, total) {
     var a = load(tid), n = 0, ok = 0;
@@ -229,6 +233,13 @@
       var pr = p.id.split('-');
       list.push({ key: 'p:' + p.id, past: true, grp: 'past', n: n + 1, year: pr[0], no: pr[2], img: 'img/past/' + p.id + '.webp', a: p.a, s: p.s });
     });
+    var mb = [];
+    for (var mid in LGS.meb) if (LGS.meb.hasOwnProperty(mid) && LGS.meb[mid].t === t.id) mb.push(mid);
+    mb.sort(function (x, y) { var a = LGS.meb[x], b = LGS.meb[y]; return (a.o || 0) - (b.o || 0) || (x < y ? -1 : 1); });
+    mb.forEach(function (mid, n) {
+      var o = LGS.meb[mid];
+      list.push({ key: 'm:' + mid, past: true, meb: true, grp: 'meb', n: n + 1, no: n + 1, img: 'img/meb/' + mid + '.webp', a: o.a, s: o.s });
+    });
     if (hasLevels(t)) {
       LV.forEach(function (lv) {
         var n = 0;
@@ -244,7 +255,7 @@
     }
     return list;
   }
-  var GRP_TITLE = { past: 'Çıkmış LGS Soruları', kolay: 'Yeni Nesil · Kolay', orta: 'Yeni Nesil · Orta', zor: 'Yeni Nesil · Zor' };
+  var GRP_TITLE = { past: 'Çıkmış LGS Soruları', meb: 'MEB Örnek Soruları', kolay: 'Yeni Nesil · Kolay', orta: 'Yeni Nesil · Orta', zor: 'Yeni Nesil · Zor' };
 
   function renderTopic(s, meta, t, idx) {
     var list = buildList(t);
@@ -255,8 +266,8 @@
     var lvl = hasLevels(t);
     if (!lvl && (filter === 'kolay' || filter === 'orta' || filter === 'zor')) filter = 'all';
     if (lvl && filter === 'new') filter = 'all';
-    var fl = lvl ? [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['kolay', 'Kolay'], ['orta', 'Orta'], ['zor', 'Zor'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']]
-                 : [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['new', 'Yeni nesil'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']];
+    var fl = lvl ? [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['meb', 'MEB'], ['kolay', 'Kolay'], ['orta', 'Orta'], ['zor', 'Zor'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']]
+                 : [['all', 'Tümü'], ['past', 'Çıkmış sorular'], ['meb', 'MEB'], ['new', 'Yeni nesil'], ['empty', 'Boş'], ['wrong', 'Yanlışlarım']];
     var prev = s.topics[idx - 1], next = s.topics[idx + 1];
     var nav = '<p class="small" style="display:flex;justify-content:space-between;gap:10px;margin-top:20px">' +
       (prev ? '<a href="#/k/' + prev.id + '">← ' + esc(prev.title) + '</a>' : '<span></span>') +
@@ -329,10 +340,10 @@
 
   function qHtml(q, i) {
     var head = '<div class="meta"><span class="num">' + (i + 1) + '.</span>' +
-      (q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
+      (q.meb ? '<span class="tag meb">MEB Örnek · ' + q.no + '. soru</span>' : q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
     var body, choices;
     if (q.past) {
-      body = '<img class="past" loading="lazy" src="' + q.img + '" alt="LGS ' + q.year + ' sorusu" onload="this.style.width=Math.round(this.naturalWidth*0.82)+\'px\'">';
+      body = '<img class="past" loading="lazy" src="' + q.img + '" alt="' + (q.meb ? 'MEB örnek sorusu' : 'LGS ' + q.year + ' sorusu') + '" onload="this.style.width=Math.round(this.naturalWidth*0.82)+\'px\'">';
       choices = '<ul class="ch compact">' + LETTERS.map(function (L) {
         return '<li><button data-q="' + i + '" data-ch="' + L + '"><b>' + L + ')</b></button></li>';
       }).join('') + '</ul>';
@@ -378,7 +389,8 @@
     var a = load(tid), vis = {};
     list.forEach(function (q, i) {
       var st = a[q.key], show = true;
-      if (filter === 'past') show = q.past;
+      if (filter === 'past') show = q.past && !q.meb;
+      else if (filter === 'meb') show = !!q.meb;
       else if (filter === 'new') show = !q.past;
       else if (filter === 'kolay' || filter === 'orta' || filter === 'zor') show = q.grp === filter;
       else if (filter === 'empty') show = !st;
@@ -764,8 +776,8 @@
      EXP · SEVİYE · RÜTBE
      ========================================================= */
   var XKEY = KEY + 'xp';
-  var XPMAX = LGS.xpMax || 422300;            // tüm sorular 4 kez doğru = 100. seviye (sonrası EXP birikmeye devam eder)
-  var XP_BASE = { kolay: 10, orta: 15, zor: 20, past: 20, 'new': 15 };
+  var XPMAX = LGS.xpMax || 461900;            // tüm sorular 4 kez doğru = 100. seviye (sonrası EXP birikmeye devam eder)
+  var XP_BASE = { kolay: 10, orta: 15, zor: 20, past: 20, meb: 20, 'new': 15 };
   var COOL = 7 * 864e5;
   var RANKS = [
     { n: 'Çaylak', i: '🔰', c: '#9aa4b8' }, { n: 'Akıncı', i: '🗡️', c: '#c08457' },
@@ -777,7 +789,7 @@
   function istDay(d) {
     try { return (d || new Date()).toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' }); } catch (e) { return ymd(d); }
   }
-  function grpOfKey(k) { return { p: 'past', ko: 'kolay', or: 'orta', zr: 'zor', o: 'new' }[String(k).split(':')[0]] || 'new'; }
+  function grpOfKey(k) { return { p: 'past', m: 'meb', ko: 'kolay', or: 'orta', zr: 'zor', o: 'new' }[String(k).split(':')[0]] || 'new'; }
   function needFor(L) { return L <= 1 ? 0 : Math.round(XPMAX * Math.pow((Math.min(L, 100) - 1) / 99, 1.8)); }
   function levelOf(x) { var L = 1; while (L < 100 && needFor(L + 1) <= x) L++; return L; }
   function rankOf(L) { return RANKS[Math.min(9, Math.floor(L / 10))]; }

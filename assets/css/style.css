@@ -180,6 +180,8 @@ details.sumbox[open]>summary::before{transform:rotate(45deg) translate(-2px,-2px
 .tag.past{background:rgba(250,204,21,.12);color:#facc15;border-color:rgba(250,204,21,.3)}
 .tag.new{background:var(--card2);color:var(--muted);border-color:var(--line)}
 :root[data-theme="light"] .tag.past{background:#fef9c3;color:#854d0e;border-color:#fde68a}
+.tag.meb{background:rgba(244,63,94,.12);color:#fb7185;border-color:rgba(244,63,94,.32)}
+:root[data-theme="light"] .tag.meb{background:#ffe4e6;color:#9f1239;border-color:#fecdd3}
 .q .stem{overflow-wrap:anywhere}
 .q .stem p{margin:6px 0}
 .q .stem .box{border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:10px 0;background:var(--card2)}

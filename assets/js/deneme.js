@@ -149,7 +149,7 @@
         tp.forEach(function (tid) {
           var t = LGS.topics[tid], p = { kolay: [], orta: [], zor: [] };
           if (t) A.buildList(t).forEach(function (q) {
-            var lv = q.grp === 'past' ? 'zor' : q.grp === 'new' ? 'orta' : q.grp; p[lv].push(q.key);
+            var lv = q.grp === 'past' || q.grp === 'meb' ? 'zor' : q.grp === 'new' ? 'orta' : q.grp; p[lv].push(q.key);
           });
           shuffle(p.kolay); shuffle(p.orta); shuffle(p.zor); pools[tid] = p;
         });
@@ -359,7 +359,7 @@
         if (!q) box.innerHTML = '<p class="empty">Soru bulunamadı (soru bankası güncellenmiş olabilir).</p>';
         else {
           var mark = function (L) { return L === q.a ? ' ok' : L === it.c ? ' bad' : ''; };
-          box.innerHTML = '<div class="q">' + (q.past ? '<div class="meta"><span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span></div><img class="past" src="' + q.img + '" alt="">' +
+          box.innerHTML = '<div class="q">' + (q.past ? '<div class="meta"><span class="tag past">' + (q.meb ? 'MEB Örnek' : 'LGS ' + q.year + ' · ' + q.no + '. soru') + '</span></div><img class="past" src="' + q.img + '" alt="">' +
             '<ul class="ch compact">' + LETTERS.map(function (L) { return '<li><button disabled class="' + mark(L) + '"><b>' + L + ')</b></button></li>'; }).join('') + '</ul>'
             : '<div class="stem">' + A.fmt(q.q) + '</div><ul class="ch">' + q.c.map(function (c, k) { var L = LETTERS[k]; return '<li><button disabled class="' + mark(L) + '"><b>' + L + ')</b><span>' + A.fmt(c) + '</span></button></li>'; }).join('') + '</ul>') +
             '<div class="res ' + (it.r === 'ok' ? 'ok' : 'bad') + '">' + (it.r === 'ok' ? '✓ Doğru cevap: ' + q.a : (it.c ? '✗ Senin cevabın: ' + it.c + ' · ' : 'Boş · ') + 'Doğru cevap: ' + q.a) + '</div>' +
