@@ -321,7 +321,7 @@
       applyFilter(list, t.id);
     });
     document.getElementById('clearBtn').addEventListener('click', function () {
-      if (!confirm('"' + meta.title + '" konusundaki tüm işaretlemeler silinsin mi?')) return;
+      if (!confirm('"' + meta.title + '" konusundaki işaretlemeler silinsin mi?\n\nProfildeki istatistiklerin ve Hatırlatıcı’daki yanlışların silinmez.')) return;
       clearTopic(t.id);
       renderTopic(s, meta, t, idx);
     });
