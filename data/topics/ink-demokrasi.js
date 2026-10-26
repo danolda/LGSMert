@@ -1,1226 +1,1266 @@
 LGS.add({
-id: "ink-demokrasi",
-summary: `<h3>1. Çok Partili Siyasi Hayata Geçiş Denemeleri ve Önemi</h3>
-<p>Demokratik yönetimlerde halkın iradesinin meclise tam olarak yansıması (<b>çoğulculuk</b>), farklı fikirlerin temsil edilmesi ve iktidar partisinin yaptığı işlerin <b>denetlenebilmesi</b> için birden fazla siyasi partinin bulunması şarttır.</p>
-
-<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Atatürk dönemi demokratikleşme çabaları ve rejim karşıtı olaylar zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="200" fill="#ffffff"/>
-<line x1="10" y1="92" x2="550" y2="92" stroke="#475569" stroke-width="3"/>
-<circle cx="38" cy="92" r="6" fill="#2563eb"/>
-<text x="38" y="78" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">9 Eyl 1923</text>
-<text x="38" y="44" font-size="11" fill="#1e293b" text-anchor="middle">Halk Fırkası</text>
-<text x="38" y="59" font-size="11" fill="#1e293b" text-anchor="middle">kuruldu</text>
-<circle cx="107" cy="92" r="6" fill="#2563eb"/>
-<text x="107" y="113" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">17 Kas 1924</text>
-<text x="107" y="132" font-size="11" fill="#1e293b" text-anchor="middle">Terakkiperver</text>
-<text x="107" y="147" font-size="11" fill="#1e293b" text-anchor="middle">Cumhuriyet F.</text>
-<circle cx="176" cy="92" r="6" fill="#dc2626"/>
-<text x="176" y="78" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Şub 1925</text>
-<text x="176" y="44" font-size="11" fill="#1e293b" text-anchor="middle">Şeyh Sait</text>
-<text x="176" y="59" font-size="11" fill="#1e293b" text-anchor="middle">İsyanı</text>
-<circle cx="245" cy="92" r="6" fill="#dc2626"/>
-<text x="245" y="113" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">Haz 1926</text>
-<text x="245" y="132" font-size="11" fill="#1e293b" text-anchor="middle">İzmir Suikast</text>
-<text x="245" y="147" font-size="11" fill="#1e293b" text-anchor="middle">Girişimi</text>
-<circle cx="314" cy="92" r="6" fill="#2563eb"/>
-<text x="314" y="78" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">12 Ağu 1930</text>
-<text x="314" y="44" font-size="11" fill="#1e293b" text-anchor="middle">Serbest</text>
-<text x="314" y="59" font-size="11" fill="#1e293b" text-anchor="middle">Cumhuriyet F.</text>
-<circle cx="383" cy="92" r="6" fill="#dc2626"/>
-<text x="383" y="113" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="middle">23 Ara 1930</text>
-<text x="383" y="132" font-size="11" fill="#1e293b" text-anchor="middle">Menemen</text>
-<text x="383" y="147" font-size="11" fill="#1e293b" text-anchor="middle">Olayı</text>
-<circle cx="452" cy="92" r="6" fill="#2563eb"/>
-<text x="452" y="78" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">1930-1934</text>
-<text x="452" y="44" font-size="11" fill="#1e293b" text-anchor="middle">Kadınlara</text>
-<text x="452" y="59" font-size="11" fill="#1e293b" text-anchor="middle">siyasi haklar</text>
-<circle cx="521" cy="92" r="6" fill="#16a34a"/>
-<text x="521" y="113" font-size="11" font-weight="bold" fill="#166534" text-anchor="middle">1945-1946</text>
-<text x="521" y="132" font-size="11" fill="#1e293b" text-anchor="middle">Çok partili</text>
-<text x="521" y="147" font-size="11" fill="#1e293b" text-anchor="middle">hayata geçiş</text>
-<text x="280" y="176" font-size="11" fill="#475569" text-anchor="middle">Mavi: demokratikleşme adımları · Kırmızı: Cumhuriyet rejimine yönelik tehditler</text>
-<text x="280" y="192" font-size="11" fill="#475569" text-anchor="middle">Yeşil: çok partili hayata kalıcı geçiş</text>
-</svg></div>
-
-<h4>Cumhuriyet Döneminde Kurulan İlk Üç Siyasi Partinin Karşılaştırması (Çok Sorulur!)</h4>
-<table class="rt">
-<tr><th>Özellik</th><th>1. Cumhuriyet Halk Fırkası (CHF)</th><th>2. Terakkiperver Cumhuriyet Fırkası (TCF)</th><th>3. Serbest Cumhuriyet Fırkası (SCF)</th></tr>
-<tr><td><b>Kuruluş Tarihi</b></td><td>9 Eylül 1923 (“Halk Fırkası” adıyla; 10 Kasım 1924’te adı Cumhuriyet Halk Fırkası oldu)</td><td>17 Kasım 1924 (<b>İlk muhalefet partisi</b>)</td><td>12 Ağustos 1930 (<b>İkinci muhalefet partisi</b>)</td></tr>
-<tr><td><b>Kurucuları</b></td><td><b>Mustafa Kemal Paşa</b> (Anadolu ve Rumeli Müdafaa-i Hukuk Grubu’nun partiye dönüşmesiyle kuruldu).</td><td><b>Kâzım Karabekir</b> (Başkan), <b>Ali Fuat Cebesoy, Rauf Orbay, Refet Bele, Adnan Adıvar</b> (Kodlama: <b>KA-R-A-R</b>: Karabekir, Ali Fuat, Rauf, Refet; ayrıca Adnan Adıvar).</td><td>Atatürk’ün isteği ve teşvikiyle yakın arkadaşı <b>Ali Fethi (Okyar) Bey</b> tarafından kuruldu (Makbule Hanım da üye oldu).</td></tr>
-<tr><td><b>Ekonomi Politikası</b></td><td>Zamanla <b>devletçiliğe</b> yöneldi (1931’de programına aldı; karma ekonomi)</td><td><b>Liberalizm</b> (Serbest piyasa / Özel girişim)</td><td><b>Liberalizm</b> (Serbest piyasa / Vergilerin düşürülmesi)</td></tr>
-<tr><td><b>Seçim ve Yönetim Anlayışı</b></td><td><b>İki dereceli seçim</b> sistemini sürdürdü (1946’ya kadar), merkeziyetçi yönetim, köklü (radikal) inkılaplar.</td><td><b>Tek dereceli seçim</b> sistemi, yerinden yönetim (adem-i merkeziyet), inkılapların zamana yayılması.</td><td><b>Tek dereceli seçim</b> sistemi, <b>kadınlara siyasi haklar verilmesi</b>, yabancı sermayenin teşviki.</td></tr>
-<tr><td><b>Kapanışı ve Nedeni</b></td><td>1950’ye kadar kesintisiz iktidarda kaldı, günümüzde de varlığını sürdürmektedir.</td><td>Programındaki <i>“Fırka, dinî düşünce ve inançlara saygılıdır.”</i> maddesi rejim karşıtlarınca kullanıldı; <b>Şeyh Sait İsyanı</b> sonrasında <b>Takrir-i Sükûn Kanunu</b>’na dayanılarak <b>Bakanlar Kurulu kararıyla kapatıldı (3 Haziran 1925)</b>.</td><td>1929 Ekonomik Krizi döneminde hükûmeti denetlemek için kuruldu; ancak rejim karşıtlarının partiye doluşması üzerine <b>Ali Fethi Bey tarafından kendi isteğiyle feshedildi (17 Kasım 1930)</b>.</td></tr>
-</table>
-
-<div class="note"><b>LGS Tuzağı 1 (TCF ile SCF’nin Ortak ve Farklı Yönleri):</b>
-<br>• <b>Ortak Yönleri:</b> Her ikisi de <b>Cumhuriyet</b> rejimine bağlıdır, <b>liberal ekonomiyi</b> ve <b>tek dereceli seçimi</b> savunmuştur, her ikisi de <b>rejim ve laiklik karşıtlarının partiye sızması</b> yüzünden kapanmış ve çok partili hayata geçiş denemeleri başarısız olmuştur.
-<br>• <b>Farklı Yönleri:</b> TCF’yi komutanlar kendi iradeleriyle kurmuş ve <b>hükûmet kararıyla kapatılmıştır</b>; SCF ise bizzat <b>Atatürk’ün isteğiyle</b> kurulmuş ve kurucusu Ali Fethi Bey tarafından <b>kendi kendini feshetmiştir</b>!</div>
-
-<h3>2. Cumhuriyet Rejimine Yönelik Tehditler</h3>
-
-<div class="fig"><svg viewBox="0 0 560 236" width="560" role="img" aria-label="Cumhuriyete yönelik üç büyük tehdit şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="236" fill="#ffffff"/>
-<rect x="4" y="4" width="180" height="228" rx="6" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="94" y="24" font-size="11.5" font-weight="bold" fill="#991b1b" text-anchor="middle">1. Şeyh Sait İsyanı (1925)</text>
-<text x="12" y="44" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Neden:</text>
-<text x="12" y="60" font-size="11" fill="#1e293b" text-anchor="start">Cumhuriyeti ve laikliği</text>
-<text x="12" y="76" font-size="11" fill="#1e293b" text-anchor="start">yıkma amacı; Musul sorunu</text>
-<text x="12" y="92" font-size="11" fill="#1e293b" text-anchor="start">sürerken İngiltere’nin</text>
-<text x="12" y="108" font-size="11" fill="#1e293b" text-anchor="start">kışkırtmaları da etkili oldu.</text>
-<text x="12" y="124" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Tedbir:</text>
-<text x="12" y="140" font-size="11" fill="#1e293b" text-anchor="start">Fethi Bey yerine İsmet Paşa</text>
-<text x="12" y="156" font-size="11" fill="#1e293b" text-anchor="start">hükûmeti; Takrir-i Sükûn</text>
-<text x="12" y="172" font-size="11" fill="#1e293b" text-anchor="start">Kanunu, İstiklal Mahkemeleri.</text>
-<text x="12" y="188" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="start">Sonuç: TCF kapatıldı;</text>
-<text x="12" y="204" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="start">Musul’da elimiz zayıfladı.</text>
-<rect x="190" y="4" width="180" height="228" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="280" y="24" font-size="11.5" font-weight="bold" fill="#92400e" text-anchor="middle">2. İzmir Suikastı (1926)</text>
-<text x="198" y="44" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Amaç:</text>
-<text x="198" y="60" font-size="11" fill="#1e293b" text-anchor="start">Mustafa Kemal’i öldürerek</text>
-<text x="198" y="76" font-size="11" fill="#1e293b" text-anchor="start">Cumhuriyeti ve inkılapları</text>
-<text x="198" y="92" font-size="11" fill="#1e293b" text-anchor="start">ortadan kaldırmak.</text>
-<text x="198" y="108" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Gelişme:</text>
-<text x="198" y="124" font-size="11" fill="#1e293b" text-anchor="start">Ziya Hurşit ve arkadaşları,</text>
-<text x="198" y="140" font-size="11" fill="#1e293b" text-anchor="start">Giritli Şevki’nin ihbarıyla</text>
-<text x="198" y="156" font-size="11" fill="#1e293b" text-anchor="start">yakalandı.</text>
-<text x="198" y="172" font-size="11" font-weight="bold" fill="#92400e" text-anchor="start">“Benim naçiz vücudum elbet</text>
-<text x="198" y="188" font-size="11" font-weight="bold" fill="#92400e" text-anchor="start">bir gün toprak olacaktır; fakat</text>
-<text x="198" y="204" font-size="11" font-weight="bold" fill="#92400e" text-anchor="start">Türkiye Cumhuriyeti ilelebet</text>
-<text x="198" y="220" font-size="11" font-weight="bold" fill="#92400e" text-anchor="start">payidar kalacaktır.”</text>
-<rect x="376" y="4" width="180" height="228" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="466" y="24" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="middle">3. Menemen Olayı (1930)</text>
-<text x="384" y="44" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Gelişme:</text>
-<text x="384" y="60" font-size="11" fill="#1e293b" text-anchor="start">SCF’nin kapanmasından</text>
-<text x="384" y="76" font-size="11" fill="#1e293b" text-anchor="start">yaklaşık 1 ay sonra Derviş</text>
-<text x="384" y="92" font-size="11" fill="#1e293b" text-anchor="start">Mehmet ve yandaşları</text>
-<text x="384" y="108" font-size="11" fill="#1e293b" text-anchor="start">Menemen’de ayaklandı.</text>
-<text x="384" y="124" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="start">Şehitler: Öğretmen Asteğmen</text>
-<text x="384" y="140" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="start">Mustafa Fehmi Kubilay, Bekçi</text>
-<text x="384" y="156" font-size="11" font-weight="bold" fill="#b91c1c" text-anchor="start">Hasan ve Bekçi Şevki.</text>
-<text x="384" y="172" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start">Yargılama: Divan-ı Harp</text>
-<text x="384" y="188" font-size="11" fill="#1e293b" text-anchor="start">(İstiklal Mahkemesi değil!)</text>
-</svg></div>
-
-<div class="note"><b>LGS Tuzağı 2 (İç Politika – Dış Politika İlişkisi):</b>
-<br>• 1925’te çıkan <b>Şeyh Sait İsyanı</b> bir <b>iç politika</b> sorunudur; ancak Türk ordusu bu isyanla uğraşırken <b>Musul</b>’a askerî harekât düzenleyememiş ve 1926 Ankara Antlaşması ile <b>Musul İngiltere mandasındaki Irak’a</b> bırakılmıştır (<b>İç sorun → Dış politikada kayba yol açtı!</b>).
-<br>• <b>Dikkat:</b> Şeyh Sait İsyanı ve İzmir Suikastı’nda suçlular <b>İstiklal Mahkemeleri</b>’nde yargılanırken, 1930 Menemen Olayı’nda <b>Divan-ı Harp (Askerî Mahkeme)</b> görev yapmıştır.</div>
-
-<h3>3. Demokratikleşmeye Katkı Sağlayan Diğer Adımlar</h3>
-<ul>
-<li><b>Ordunun Siyasetten Ayrılması (1923-1924):</b> 19 Aralık 1923’te çıkarılan kanunla görevdeki askerlerin milletvekili seçilmesi yasaklandı; 3 Mart 1924’te Erkân-ı Harbiye Vekâleti kaldırılarak Genelkurmay hükûmetin dışına çıkarıldı. Ekim-Kasım 1924’te ise milletvekili olan komutanlardan <b>ya askerliği ya da milletvekilliğini</b> seçmeleri istendi (LGS bu düzenlemeyi tarih vermeden “ordu siyasetin dışında tutulmak istendi” şeklinde sordu). (Kâzım Karabekir, Ali Fuat Paşa gibi isimler askerlikten istifa edip mecliste kaldı; Fevzi Çakmak ve Cevat Çobanlı gibi isimler ise milletvekilliğinden ayrılıp orduda kaldı.)</li>
-<li><b>Kadınlara Siyasi Hakların Verilmesi (1930–1934):</b> Nüfusun yarısını oluşturan kadınların 1930’da belediye, 1933’te muhtarlık, 5 Aralık 1934’te milletvekili seçme ve seçilme hakkını kazanmasıyla <b>millî irade meclise daha güçlü yansımış</b> ve demokrasi güçlenmiştir (<b>Cumhuriyetçilik ve Halkçılık</b>).</li>
-<li><b>Çok Partili Hayata Kalıcı Geçiş (1945–1946):</b> Atatürk döneminde ortam uygun olmadığı için çok partili hayata geçilemedi. II. Dünya Savaşı’ndan sonra 1945’te <b>Nuri Demirağ</b> tarafından <b>Millî Kalkınma Partisi</b>, 1946’da ise Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan tarafından <b>Demokrat Parti</b> kurularak çok partili hayata kalıcı olarak geçildi.</li>
-</ul>
-
-<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
-<p>2018-2026 LGS İnkılap Tarihi testlerinde bu konudan yalnızca <b>6 soru</b> çıktı: 2018, 2019, 2020 ve 2023’te hiç soru yok; 2022’de 2, 2021, 2024, 2025 ve 2026’da 1’er soru var. Alt başlık sınıflandırması yorumdur (*).</p>
-<div class="fig"><svg viewBox="0 0 560 210" width="560" role="img" aria-label="Demokratikleşme Çabaları konusundan 2018-2026 LGS’de alt başlık ve yıllara göre soru sayıları ısı haritası" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="210" fill="#ffffff"/>
-<text x="280" y="18" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Alt başlık × yıl: kaç soru geldi? (2018-2026, toplam 6)*</text>
-<text x="213" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2018</text>
-<text x="249" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2019</text>
-<text x="285" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2020</text>
-<text x="321" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2021</text>
-<text x="357" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2022</text>
-<text x="393" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2023</text>
-<text x="429" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2024</text>
-<text x="465" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2025</text>
-<text x="501" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">2026</text>
-<text x="540" y="40" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Top.</text>
-<text x="188" y="67" font-size="11" fill="#1e293b" text-anchor="end">Çok partili hayat (TCF, SCF)</text>
-<rect x="196" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="232" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="268" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="304" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="340" y="50" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="356" y="67" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<rect x="376" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="412" y="50" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="448" y="50" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="464" y="67" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<rect x="484" y="50" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="500" y="67" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<text x="540" y="67" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">3</text>
-<text x="188" y="95" font-size="11" fill="#1e293b" text-anchor="end">Rejime yönelik tehditler</text>
-<rect x="196" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="232" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="268" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="304" y="78" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="320" y="95" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<rect x="340" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="376" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="412" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="448" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="484" y="78" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<text x="540" y="95" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">1</text>
-<text x="188" y="123" font-size="11" fill="#1e293b" text-anchor="end">Ordunun siyasetten ayrılması</text>
-<rect x="196" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="232" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="268" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="304" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="340" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="376" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="412" y="106" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="428" y="123" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<rect x="448" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="484" y="106" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<text x="540" y="123" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">1</text>
-<text x="188" y="151" font-size="11" fill="#1e293b" text-anchor="end">Kadınlara siyasi haklar</text>
-<rect x="196" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="232" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="268" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="304" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="340" y="134" width="33" height="24" rx="3" fill="#93c5fd"/>
-<text x="356" y="151" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<rect x="376" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="412" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="448" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<rect x="484" y="134" width="33" height="24" rx="3" fill="#f1f5f9"/>
-<text x="540" y="151" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">1</text>
-<line x1="20" y1="164" x2="545" y2="164" stroke="#cbd5e1" stroke-width="1"/>
-<text x="188" y="181" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="end">Yıllık toplam</text>
-<text x="212" y="181" font-size="12" font-weight="bold" fill="#94a3b8" text-anchor="middle">0</text>
-<text x="248" y="181" font-size="12" font-weight="bold" fill="#94a3b8" text-anchor="middle">0</text>
-<text x="284" y="181" font-size="12" font-weight="bold" fill="#94a3b8" text-anchor="middle">0</text>
-<text x="320" y="181" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<text x="356" y="181" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">2</text>
-<text x="392" y="181" font-size="12" font-weight="bold" fill="#94a3b8" text-anchor="middle">0</text>
-<text x="428" y="181" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<text x="464" y="181" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<text x="500" y="181" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">1</text>
-<text x="540" y="181" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">6</text>
-<text x="280" y="202" font-size="11" fill="#475569" text-anchor="middle">* Alt başlıklar sorunun ölçtüğü ana konuya göre yapılmış bir sınıflandırmadır.</text>
-</svg></div>
-<div class="tbl"><table>
-<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>
-<tr><td>2021</td><td>10</td><td>Rejime yönelik tehditler (İzmir Suikastı)*</td><td>Alıntı (Atatürk’ün suikast sonrası Anadolu Ajansına demeci) → hangi sorunun cevabı yoktur</td></tr>
-<tr><td>2022</td><td>7</td><td>Kadınlara siyasi haklar</td><td>Kısa metin (1930 belediye, 1933 muhtarlık, 1934 milletvekilliği) → hangi alanda etkin kılınmak istendi</td></tr>
-<tr><td>2022</td><td>8</td><td>Çok partili hayat (SCF’nin kuruluşu)*</td><td>Alıntı (Mustafa Kemal’in Fethi Bey’e sözü) → vurgu (farklı görüşleri temsil edecek parti)</td></tr>
-<tr><td>2024</td><td>8</td><td>Ordunun siyasetten ayrılması</td><td>Metin (askerlerin milletvekilliği yasağı, komutanların tercihi) → hangisine ulaşılabilir</td></tr>
-<tr><td>2025</td><td>9</td><td>Çok partili hayat (TCF ve SCF)*</td><td>Tablo (iki partinin kuruluş ve kapanış tarihleri) → hangisi söylenebilir</td></tr>
-<tr><td>2026</td><td>9</td><td>Çok partili hayat (SCF’nin programı)*</td><td>Metin (SCF’nin kuruluşu ve programı) → I-IV yargı, hangilerine ulaşılabilir</td></tr>
-</table></div>
-<div class="note"><b>Çıkmış analizi</b><ul>
-<li>Soru sayısı az (6) olduğu için kesin bir eğilim söylemek zor; yine de en sık sorulan alt başlık <b>çok partili hayata geçiş denemeleri</b> (TCF ve SCF: 3 soru, üçü de 2022 ve sonrasında). Son üç yılın her birinde konudan 1 soru geldi.</li>
-<li>Altı sorunun beşi <b>kısa metin ya da alıntı</b>, biri <b>tablo</b>; grafik veya şema hiç yok. Kök çoğunlukla “ulaşılabilir / söylenebilir / vurgu yapılmıştır / hangi sorunun cevabı yoktur”: bilgi ezberinden çok metindeki bilgiyi doğru yorumlama ölçülüyor.</li>
-<li>Çeldiriciler metinde olmayan bilgiyi (suikastçıların yargılandığı yer), kronolojiyi (ilk muhalefet partisi SCF değil TCF’dir) ve ekonomik modeli (SCF devletçi değil liberaldir) karıştırmaya dayanıyor.</li>
-<li>Kadın hakları ve ordunun siyasetten ayrılması birer kez soruldu; Şeyh Sait İsyanı, Menemen Olayı ve Takrir-i Sükûn ise yalnızca başka soruların içinde geçti. Bunlar da özetteki tarih sırasıyla birlikte bilinmeli.</li>
-</ul></div>
-`,
-qs: [
-{ lv: "kolay", q: `<p>Aşağıdaki tabloda Cumhuriyet döneminde kurulan ilk üç siyasi partinin bazı özellikleri karşılaştırılmıştır.</p>
-<table class="rt">
-<tr><th>Özellik</th><th>Cumhuriyet Halk Fırkası (1923)</th><th>Terakkiperver Cumhuriyet Fırkası (1924)</th><th>Serbest Cumhuriyet Fırkası (1930)</th></tr>
-<tr><td><b>Rejim</b></td><td>Cumhuriyetçilik ve millî egemenlik</td><td>Cumhuriyetçilik ve millî egemenlik</td><td>Cumhuriyetçilik ve millî egemenlik</td></tr>
-<tr><td><b>Ekonomi</b></td><td>Zamanla <b>devletçiliğe</b> yöneldi (1931’de programına aldı)</td><td><b>Liberalizm</b> (özel girişimin öncülüğü)</td><td><b>Liberalizm</b> (özel girişimin öncülüğü)</td></tr>
-<tr><td><b>Seçim sistemi</b></td><td>İki dereceli seçim sürdürüldü</td><td>Tek dereceli seçim savunuldu</td><td>Tek dereceli seçim savunuldu</td></tr>
-</table>
-<p>Tablodaki bilgilere göre bu üç siyasi parti hakkında aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Üçü de Cumhuriyet rejimini ve millî egemenliği benimsemiş; ekonomi politikası ve seçim sistemi konusunda farklı görüşler savunmuştur.", "Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası saltanatı geri getirmek amacıyla kurulmuştur.", "Cumhuriyet Halk Fırkası ekonomide devletin hiçbir yatırım yapmamasını savunmuştur.", "Muhalefet partilerinin ikisi de iki dereceli seçim sisteminin sürmesini istemiştir."],
-  a: "A",
-  s: `<p>Tabloda üç partinin de <b>Cumhuriyet rejimi ve millî egemenlik</b> satırında aynı görüşte olduğu görülür. Ekonomide CHF devletçiliğe yönelirken TCF ve SCF liberalizmi; seçimde CHF iki dereceli sistemi sürdürürken muhalefet partileri halkın milletvekilini doğrudan seçtiği <b>tek dereceli seçimi</b> savunmuştur. Yani rejimde birlik, ekonomi ve seçim sisteminde ayrılık vardır (A ✓).</p><p>B ✗: Tabloda iki muhalefet partisi de cumhuriyetçidir; saltanatla ilgili bir bilgi yoktur. C ✗: CHF tam tersine devletçiliğe yönelmiştir. D ✗: Muhalefet partileri tek dereceli seçimi savunmuştur. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>1925 yılında Doğu Anadolu’da çıkan <b>Şeyh Sait İsyanı</b>’nın iç ve dış politikadaki sonuçları aşağıdaki şemada gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Şeyh Sait İsyanı’nın iç ve dış politikadaki sonuçları şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="200" fill="#ffffff"/>
-<rect x="170" y="6" width="220" height="32" rx="6" fill="#dc2626"/>
-<text x="280" y="27" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">ŞEYH SAİT İSYANI (Şubat 1925)</text>
-<line x1="220" y1="38" x2="140" y2="62" stroke="#475569" stroke-width="2"/>
-<line x1="340" y1="38" x2="420" y2="62" stroke="#475569" stroke-width="2"/>
-<rect x="6" y="62" width="268" height="130" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="140" y="82" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">İÇ POLİTİKADAKİ SONUÇLARI</text>
-<text x="16" y="104" font-size="11.5" fill="#1e293b" text-anchor="start">• Ali Fethi Bey Hükûmeti istifa etti,</text>
-<text x="16" y="120" font-size="11.5" fill="#1e293b" text-anchor="start">  yerine İsmet Paşa Hükûmeti kuruldu.</text>
-<text x="16" y="142" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="start">• Takrir-i Sükûn Kanunu çıkarıldı.</text>
-<text x="16" y="164" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="start">• Terakkiperver Cumhuriyet Fırkası</text>
-<text x="16" y="180" font-size="11.5" font-weight="bold" fill="#1e40af" text-anchor="start">  kapatıldı (Haziran 1925).</text>
-<rect x="286" y="62" width="268" height="130" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="420" y="82" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">DIŞ POLİTİKADAKİ SONUCU</text>
-<text x="296" y="104" font-size="11.5" fill="#1e293b" text-anchor="start">• Türk ordusu isyanla uğraştığı için</text>
-<text x="296" y="120" font-size="11.5" fill="#1e293b" text-anchor="start">  Musul’a askerî harekât yapılamadı.</text>
-<text x="296" y="142" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start">• 1926 Ankara Antlaşması ile Musul,</text>
-<text x="296" y="158" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start">  İngiliz mandasındaki Irak’a</text>
-<text x="296" y="174" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="start">  bırakıldı.</text>
-</svg></div>
-<p>Şemadaki bilgilere göre Şeyh Sait İsyanı ile ilgili aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: ["İç politikadaki bu ayaklanma, dış politikada Musul’un kaybedilmesinde etkili olmuştur.", "İsyan, çok partili hayata geçiş denemelerinden birinin sona ermesine yol açmıştır.", "İsyan sonucunda Musul, Türkiye Cumhuriyeti’nin sınırlarına katılmıştır.", "Devlet, kamu düzenini korumak için olağanüstü yasal tedbirlere başvurmuştur."],
-  a: "C",
-  s: `<p>Şemanın dış politika kutusuna göre ordu isyanla uğraştığı için Musul’a harekât yapılamamış ve Musul 1926 Ankara Antlaşması ile <b>İngiliz mandasındaki Irak’a bırakılmıştır</b>. Dolayısıyla Musul’un Türkiye’ye katıldığı söylenemez (C ulaşılamaz).</p><p>A ✓: Bir iç sorun (isyan) dış politikada Musul’un kaybına yol açmıştır. B ✓: İlk muhalefet partisi olan Terakkiperver Cumhuriyet Fırkası kapatılmıştır. D ✓: Takrir-i Sükûn Kanunu olağanüstü bir tedbirdir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdaki Venn şemasında Atatürk döneminde kurulan iki muhalefet partisi, <b>Terakkiperver Cumhuriyet Fırkası (1924)</b> ile <b>Serbest Cumhuriyet Fırkası (1930)</b> karşılaştırılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Terakkiperver ve Serbest Cumhuriyet fırkalarının Venn şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="200" fill="#ffffff"/>
-<ellipse cx="190" cy="108" rx="182" ry="84" fill="#dbeafe" fill-opacity="0.6" stroke="#2563eb" stroke-width="2"/>
-<ellipse cx="370" cy="108" rx="182" ry="84" fill="#dcfce7" fill-opacity="0.6" stroke="#16a34a" stroke-width="2"/>
-<text x="95" y="16" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Terakkiperver C. F. (1924)</text>
-<text x="468" y="16" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">Serbest C. F. (1930)</text>
-<text x="100" y="72" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Kurucusu: Kâzım</text>
-<text x="100" y="88" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Karabekir ve ark.</text>
-<text x="100" y="112" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">İlk muhalefet partisi</text>
-<text x="100" y="136" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">Hükûmet kararıyla</text>
-<text x="100" y="152" font-size="11.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">kapatıldı (1925)</text>
-<text x="280" y="80" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Liberal ekonomi</text>
-<text x="280" y="104" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Tek dereceli seçim</text>
-<text x="280" y="128" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Rejim karşıtlarının</text>
-<text x="280" y="144" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">partiye sızması</text>
-<text x="462" y="72" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Kurucusu: Ali Fethi</text>
-<text x="462" y="88" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">(Okyar) Bey</text>
-<text x="462" y="112" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Atatürk’ün isteğiyle</text>
-<text x="462" y="136" font-size="11.5" font-weight="bold" fill="#166534" text-anchor="middle">Kurucusu tarafından</text>
-<text x="462" y="152" font-size="11.5" font-weight="bold" fill="#166534" text-anchor="middle">feshedildi (1930)</text>
-</svg></div>
-<p>Şemadaki bilgilere göre bu iki parti ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: ["Her iki parti de ekonomide liberalizmi ve tek dereceli seçim sistemini savunmuştur.", "Terakkiperver Cumhuriyet Fırkası hükûmet kararıyla kapatılmış, Serbest Cumhuriyet Fırkası ise kurucusu tarafından feshedilmiştir.", "Her iki partinin de kısa ömürlü olmasında rejim karşıtlarının bu partilere sızması etkili olmuştur.", "Her iki parti de 1946 seçimlerine katılarak iktidar olmuştur."],
-  a: "D",
-  s: `<p>Şemaya göre Terakkiperver Cumhuriyet Fırkası 1925’te kapatılmış, Serbest Cumhuriyet Fırkası 1930’da feshedilmiştir. 1946’da var olmayan partilerin bu seçimlere katılması mümkün değildir (D yanlış).</p><p>A ve C ✓: Ortak kesişim kümesinde liberal ekonomi, tek dereceli seçim ve rejim karşıtlarının sızması yazılıdır. B ✓: Kapanış biçimleri iki partinin kendi kümelerinde verilmiştir. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Haziran 1926’da Cumhurbaşkanı Mustafa Kemal Paşa’nın İzmir ziyareti sırasında Ziya Hurşit ve arkadaşlarının planladığı suikast girişimi, Giritli Şevki’nin ihbarıyla son anda önlenmiştir. Olayın ardından Mustafa Kemal Paşa, Anadolu Ajansına bir demeç vermiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 150" width="560" role="img" aria-label="Mustafa Kemal’in İzmir suikast girişimi sonrasındaki demeci" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="150" fill="#ffffff"/>
-<rect x="6" y="6" width="548" height="138" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
-<text x="280" y="30" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">MUSTAFA KEMAL’İN ANADOLU AJANSINA DEMECİ (HAZİRAN 1926)</text>
-<text x="280" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">“Bu alçakça girişimin benim şahsımdan çok kutsal Cumhuriyetimize</text>
-<text x="280" y="76" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">ve onun dayandığı yüksek ilkelere yönelik olduğuna şüphe yoktur.</text>
-<text x="280" y="100" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat</text>
-<text x="280" y="120" font-size="12" font-weight="bold" fill="#b91c1c" text-anchor="middle">Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”</text>
-<text x="280" y="138" font-size="11" fill="#475569" text-anchor="middle">(sadeleştirilmiştir)</text>
-</svg></div>
-<p>Mustafa Kemal Paşa’nın bu sözlerinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
-  c: ["Suikast girişiminin yalnızca kişisel bir düşmanlıktan kaynaklandığına", "Mustafa Kemal Paşa’nın, Cumhuriyetin kendi varlığından bağımsız olarak sonsuza dek yaşayacağına inandığına", "Suikast girişiminden sonra inkılapların durdurulduğuna", "Mustafa Kemal Paşa’nın bu olay üzerine Cumhurbaşkanlığından ayrıldığına"],
-  a: "B",
-  s: `<p>“Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır” sözü, kendisi hayatta olmasa bile <b>Cumhuriyetin sonsuza dek yaşayacağına</b> olan inancını gösterir (B ✓).</p><p>A ✗: Demeçte girişimin şahsından çok <b>Cumhuriyete ve ilkelerine</b> yönelik olduğu söylenir. C ve D ✗: Demeçte inkılapların durdurulduğuna ya da görevden ayrılmaya dair bir bilgi yoktur; bunlar tarihsel olarak da yanlıştır. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdaki grafikte bazı ülkelerde kadınlara milletvekili seçme ve seçilme hakkının tanındığı yıllar verilmiştir. Türk kadınına bu hak, 1930’da belediye ve 1933’te muhtarlık seçimlerine katılma haklarından sonra, 5 Aralık 1934’te tanınmıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Kadınlara milletvekili seçme ve seçilme hakkının verildiği yıllar grafiği" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
-<text x="280" y="18" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Kadınlara milletvekili seçme ve seçilme hakkının tanındığı yıl</text>
-<line x1="110" y1="32" x2="110" y2="192" stroke="#e2e8f0" stroke-width="1"/>
-<text x="110" y="208" font-size="11" fill="#475569" text-anchor="middle">1930</text>
-<line x1="195" y1="32" x2="195" y2="192" stroke="#e2e8f0" stroke-width="1"/>
-<text x="195" y="208" font-size="11" fill="#475569" text-anchor="middle">1940</text>
-<line x1="280" y1="32" x2="280" y2="192" stroke="#e2e8f0" stroke-width="1"/>
-<text x="280" y="208" font-size="11" fill="#475569" text-anchor="middle">1950</text>
-<line x1="365" y1="32" x2="365" y2="192" stroke="#e2e8f0" stroke-width="1"/>
-<text x="365" y="208" font-size="11" fill="#475569" text-anchor="middle">1960</text>
-<line x1="450" y1="32" x2="450" y2="192" stroke="#e2e8f0" stroke-width="1"/>
-<text x="450" y="208" font-size="11" fill="#475569" text-anchor="middle">1970</text>
-<text x="102" y="55" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">Türkiye</text>
-<rect x="110" y="40" width="34" height="20" rx="3" fill="#dc2626"/>
-<text x="150" y="55" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="start">1934</text>
-<text x="102" y="85" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">Fransa</text>
-<rect x="110" y="70" width="119" height="20" rx="3" fill="#2563eb"/>
-<text x="235" y="85" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="start">1944</text>
-<text x="102" y="115" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">İtalya</text>
-<rect x="110" y="100" width="128" height="20" rx="3" fill="#0d9488"/>
-<text x="244" y="115" font-size="12" font-weight="bold" fill="#0d9488" text-anchor="start">1945</text>
-<text x="102" y="145" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">Japonya</text>
-<rect x="110" y="130" width="128" height="20" rx="3" fill="#7c3aed"/>
-<text x="244" y="145" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="start">1945</text>
-<text x="102" y="175" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">İsviçre</text>
-<rect x="110" y="160" width="348" height="20" rx="3" fill="#475569"/>
-<text x="464" y="175" font-size="12" font-weight="bold" fill="#475569" text-anchor="start">1971</text>
-<text x="280" y="225" font-size="11" fill="#475569" text-anchor="middle">Türkiye’de 1935 seçimleriyle Meclis’e 17 kadın milletvekili girdi.</text>
-</svg></div>
-<p>Bu bilgiler birlikte değerlendirildiğinde aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: ["Türkiye, kadınlara milletvekilliği hakkını grafikteki diğer ülkelerden önce tanımıştır.", "Kadınlara seçme ve seçilme hakkının verilmesi millî egemenliğin güçlenmesine ve kadın-erkek eşitliğine katkı sağlamıştır.", "Medeni Kanun’u İsviçre’den aldığımız için İsviçreli kadınlar siyasi haklarını Türk kadınlarından önce kazanmıştır.", "Türk kadınına siyasi haklar önce yerel, sonra genel seçimlerde aşamalı olarak tanınmıştır."],
-  a: "C",
-  s: `<p>Grafiğe göre Türkiye bu hakkı <b>1934</b>’te, İsviçre ise <b>1971</b>’de, yani 37 yıl sonra tanımıştır. İsviçreli kadınların Türk kadınlarından önce bu hakkı kazandığı söylenemez (C ✗).</p><p>A ✓: Fransa 1944, İtalya ve Japonya 1945, İsviçre 1971 → hepsi Türkiye’den sonradır. B ✓: Yönetime katılan vatandaşların artması millî egemenliği güçlendirir; kadın-erkek eşitliği halkçılığın gereğidir. D ✓: 1930 belediye ve 1933 muhtarlık (yerel), 1934 milletvekilliği (genel). Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Atatürk, Meclis’te farklı görüşlerin temsil edilmesini ve hükûmetin denetlenmesini önemsemiş; bu amaçla 1930’da yeni bir muhalefet partisinin kurulmasını desteklemiştir.</p><p>Bu tutum, Atatürk’ün aşağıdakilerden hangisine önem verdiğini gösterir?</p>`,
-  c: ["Tek parti yönetiminin süresiz devam etmesine", "Çoğulcu ve demokratik bir yönetim anlayışının gelişmesine", "Saltanat ve hilafetin yeniden kurulmasına", "Meclis’in denetim yetkisinin kaldırılmasına"],
-  a: "B",
-  s: `<p>Farklı görüşlerin Meclis’te temsil edilmesi (<b>çoğulculuk</b>) ve muhalefetin hükûmeti denetlemesi demokrasinin temel unsurlarıdır (B ✓).</p><p>A ve D ✗: Muhalefetin desteklenmesi tek parti yönetimini sürdürme ve denetimi kaldırma isteğiyle çelişir. C ✗: Saltanat ve hilafet daha önce kaldırılmıştır; metinle ilgisi yoktur. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>17 Kasım 1924’te Kâzım Karabekir, Ali Fuat Cebesoy, Rauf Orbay, Refet Bele ve Adnan Adıvar gibi Millî Mücadele’nin önemli isimleri <b>Terakkiperver Cumhuriyet Fırkası</b>’nı kurdu. Parti programında liberal ekonomi, tek dereceli seçim ve yerinden yönetim savunuluyor; ayrıca <i>“Fırka, dinî düşünce ve inançlara saygılıdır.”</i> maddesi yer alıyordu.</p><p>Bu bilgiler ve konuyla ilgili bilgilerinize göre Terakkiperver Cumhuriyet Fırkası ile ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: ["Cumhuriyet döneminin ilk muhalefet partisidir.", "Ekonomide serbest piyasa (liberal) anlayışını savunmuştur.", "Programındaki dinî inançlara saygı maddesi, rejim karşıtlarının partiyi kullanmasına zemin hazırlamıştır.", "Cumhuriyetin ilanından önce, Kurtuluş Savaşı sürerken kurulmuştur."],
-  a: "D",
-  s: `<p>Parti <b>17 Kasım 1924</b>’te, yani Kurtuluş Savaşı bittikten ve Cumhuriyet ilan edildikten (29 Ekim 1923) sonra kurulmuştur (D söylenemez).</p><p>A ✓: Cumhuriyet döneminin ilk muhalefet partisidir. B ✓: Programında liberal ekonomi vardır. C ✓: Bu madde rejim karşıtlarınca istismar edilmiş, parti Şeyh Sait İsyanı’ndan sonra kapatılmıştır. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Atatürk, 1930 yılında yakın arkadaşı Paris Büyükelçisi <b>Ali Fethi (Okyar) Bey</b>’den yeni bir parti kurmasını istedi. Atatürk’e göre Meclis’te muhalefet olmadığı için hükûmetin yaptığı işler yeterince tartışılıp denetlenemiyordu. Ayrıca 1929 Dünya Ekonomik Bunalımı’nın yarattığı sıkıntılara karşı farklı ekonomik görüşlerin de dile getirilmesi isteniyordu. Bunun üzerine 12 Ağustos 1930’da <b>Serbest Cumhuriyet Fırkası</b> kuruldu.</p>
-<p>Bu bilgilere göre Serbest Cumhuriyet Fırkası’nın kurulmasında aşağıdakilerden hangisi etkili olmuştur?</p>`,
-  c: ["Yabancı devletlerin Türkiye’ye yaptığı diplomatik baskılar", "Saltanat sistemine geri dönme düşüncesi", "Hükûmetin denetlenmesini sağlamak ve ekonomik bunalıma karşı farklı çözüm önerilerinin ortaya çıkmasını istemek", "Cumhuriyet Halk Fırkası’nın kapatılmak istenmesi"],
-  a: "C",
-  s: `<p>Metinde iki neden açıkça verilmiştir: muhalefetsiz Mecliste <b>hükûmetin denetlenememesi</b> ve 1929 bunalımına karşı <b>farklı ekonomik görüşlere ihtiyaç</b> (C ✓).</p><p>A ✗: Yabancı baskıdan söz edilmez. B ✗: SCF cumhuriyetçi bir partidir. D ✗: CHF’nin kapatılması gündemde değildi; amaç onun yanında bir muhalefet partisi olmasıydı. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Serbest Cumhuriyet Fırkası kısa sürede halktan ilgi gördü. Ancak Ali Fethi Bey’in Eylül 1930’daki İzmir gezisi sırasında Cumhuriyet ve laiklik karşıtlarının partiyi kendi amaçları için kullanmaya çalıştığı görüldü. Ali Fethi Bey, Mustafa Kemal ile siyasi alanda karşı karşıya gelmek istemediğini de belirterek 17 Kasım 1930’da partisini feshetti.</p>
-<p>Bu bilgilere göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: ["Serbest Cumhuriyet Fırkası mahkeme kararıyla kapatılmıştır.", "Parti, rejim karşıtlarının partiyi kullanmaya çalışması üzerine kurucusu tarafından feshedilmiştir.", "Parti halktan hiç destek görmediği için kapanmıştır.", "Partinin kapanmasıyla aynı yıl çok partili hayata kalıcı olarak geçilmiştir."],
-  a: "B",
-  s: `<p>Metne göre SCF mahkeme ya da hükûmet kararıyla değil, rejim karşıtlarının partide toplanması üzerine <b>kurucusu Ali Fethi Bey tarafından</b> feshedilmiştir (B ✓).</p><p>A ✗: Fesih kararını Fethi Bey vermiştir. C ✗: Metinde partinin “kısa sürede halktan ilgi gördüğü” söylenir. D ✗: Çok partili hayata kalıcı geçiş 1945-1946’da olmuştur. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Serbest Cumhuriyet Fırkası’nın kapanmasından yaklaşık bir ay sonra, <b>23 Aralık 1930</b>’da İzmir’in <b>Menemen</b> ilçesinde kendini “mehdi” ilan eden Derviş Mehmet ve yandaşları, Cumhuriyet rejimine karşı ayaklandı. Olayı bastırmaya çalışan öğretmen yedek subay <b>Asteğmen Mustafa Fehmi Kubilay</b> ile <b>Bekçi Hasan ve Bekçi Şevki</b> isyancılar tarafından şehit edildi.</p>
-<p>Menemen Olayı ve sonuçlarıyla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: ["Laik Cumhuriyet rejimine karşı gerici (irticai) bir ayaklanmadır.", "Ülkede henüz çok partili hayat için uygun ortamın oluşmadığını göstermiştir.", "Halk bu olayı mitinglerle kınamış ve Cumhuriyete sahip çıkmıştır.", "Olaydan sonra ülkedeki tüm okullar kapatılmış ve seçimlerden tamamen vazgeçilmiştir."],
-  a: "D",
-  s: `<p>Menemen Olayı’ndan sonra okullar kapatılmamış, seçimler de kaldırılmamıştır; olay yalnızca çok partili hayata geçiş denemelerine bir süre ara verilmesine yol açmıştır (D söylenemez).</p><p>A ✓: Olay, laik Cumhuriyete karşı bir irtica girişimidir. B ✓: SCF’nin kapanmasından hemen sonra yaşanması, ortamın çok partili hayata hazır olmadığını göstermiştir. C ✓: Olay yurt genelinde mitinglerle kınanmıştır. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Aralık 1923’te TBMM’de kabul edilen bir kanunla görevdeki askerlerin milletvekili seçilmesi yasaklandı. 1924 sonbaharında ise milletvekili olan komutanlardan <b>ya askerlik görevini ya da milletvekilliğini</b> seçmeleri istendi.</p><p>Bu düzenlemelerin temel amacı aşağıdakilerden hangisidir?</p>`,
-  c: ["Komutanların tamamını emekliye ayırarak orduyu küçültmek", "Orduyu siyasetten ayırarak vatan savunmasına odaklanmasını sağlamak ve siyasi çekişmelerin orduya yansımasını önlemek", "Ülke yönetimini askerî bir kurula devretmek", "Meclis’in yasama yetkisini sınırlandırmak"],
-  a: "B",
-  s: `<p>Askerlik ile milletvekilliğinin birbirinden ayrılması, <b>ordunun siyasetin dışında tutulması</b> amacını taşır. Mustafa Kemal Paşa, II. Meşrutiyet ve Balkan Savaşları döneminde ordunun siyasete karışmasının zararlarını görmüştü (B ✓).</p><p>A ✗: Komutanlar emekliye ayrılmamış, bir görevi seçmeleri istenmiştir. C ✗: Amaç tam tersine askerin yönetimden uzak tutulmasıdır. D ✗: Düzenleme Meclis’in yetkilerini değil, kimlerin milletvekili olabileceğini ilgilendirir. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>1921 Anayasası’nda yasama ve yürütme yetkileri TBMM’de toplanmış (<b>güçler birliği</b>), yargıya ayrıca yer verilmemişti. 20 Nisan 1924’te kabul edilen <b>1924 Anayasası</b>’nda ise şu hükümler yer aldı:</p>
-<div class="box"><i>“Egemenlik kayıtsız şartsız milletindir. Yasama yetkisi ve yürütme kudreti Meclis’te toplanır. Meclis yasama yetkisini kendisi kullanır; yürütme yetkisini kendi seçtiği Cumhurbaşkanı ve onun atayacağı Bakanlar Kurulu eliyle kullanır. Yargı hakkı, millet adına bağımsız mahkemelerce kullanılır.”</i> (sadeleştirilmiştir)</div>
-<p>Buna göre 1924 Anayasası ile ilgili aşağıdakilerden hangisi söylenebilir?</p>`,
-  c: ["Yargı yetkisinin bağımsız mahkemelere verilmesiyle güçler ayrılığına doğru bir adım atılmıştır.", "Yürütme yetkisi yeniden padişaha devredilmiştir.", "Yasama yetkisi TBMM’den alınarak başka bir kurula verilmiştir.", "Seçimlerin yapılması kaldırılmıştır."],
-  a: "A",
-  s: `<p>1921 Anayasası’nda yargıya ayrıca yer verilmemişken 1924 Anayasası’nda <b>yargı hakkı bağımsız mahkemelere</b> verilmiştir. Yasama ve yürütme Meclis’te toplanmaya devam etse de yargının ayrılması, <b>güçler ayrılığına doğru</b> bir adımdır (A ✓).</p><p>B ✗: Saltanat 1922’de kaldırılmıştır; yürütme Cumhurbaşkanı ve Bakanlar Kurulu eliyle kullanılır. C ✗: Yasama yetkisini Meclis kendisi kullanır. D ✗: Metinde seçimlerin kaldırıldığına dair bilgi yoktur; egemenlik millete aittir. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdakilerden hangisi Atatürk döneminde çok partili hayata geçiş denemelerinin (Terakkiperver ve Serbest Cumhuriyet fırkaları) <b>başarısız olmasının nedenleri</b> arasında <b>gösterilemez</b>?</p>`,
-  c: ["Cumhuriyet rejiminin ve inkılapların henüz tam olarak yerleşmemiş olması", "Toplumda demokrasi ve çok partili siyaset kültürünün yeterince gelişmemiş olması", "Atatürk’ün çok partili hayata ve demokrasiye karşı olması", "Muhalefet partilerine rejim ve laiklik karşıtlarının sızması"],
-  a: "C",
-  s: `<p>Atatürk çok partili hayata karşı değildi; Serbest Cumhuriyet Fırkası’nın kurulmasını <b>bizzat kendisi istemiş ve desteklemiştir</b> (C gösterilemez).</p><p>A, B ve D ✓: İnkılapların yeni olması, demokrasi kültürünün gelişmemiş olması ve rejim karşıtlarının partileri kullanması denemelerin kısa sürmesinin nedenleridir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıda Cumhuriyetin ilk yıllarına ait bazı olaylar verilmiştir.</p>
-<p>I. Serbest Cumhuriyet Fırkası’nın kurulması<br>II. Terakkiperver Cumhuriyet Fırkası’nın kurulması<br>III. Şeyh Sait İsyanı’nın çıkması<br>IV. Menemen Olayı’nın yaşanması</p><p>Bu olayların kronolojik sıralaması aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: ["III – II – I – IV", "II – III – I – IV", "II – I – III – IV", "I – II – III – IV"],
-  a: "B",
-  s: `<p>Sıra: <b>II.</b> Terakkiperver Cumhuriyet Fırkası (17 Kasım 1924) → <b>III.</b> Şeyh Sait İsyanı (Şubat 1925) → <b>I.</b> Serbest Cumhuriyet Fırkası (12 Ağustos 1930) → <b>IV.</b> Menemen Olayı (23 Aralık 1930). Doğru sıralama <b>II – III – I – IV</b>’tür (B ✓).</p><p>A ✗: Şeyh Sait İsyanı TCF kurulduktan sonra çıkmıştır (TCF bu isyandan sonra kapatıldı). C ✗: SCF 1930’da, isyandan beş yıl sonra kurulmuştur. D ✗: İlk muhalefet partisi SCF değil TCF’dir. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Şeyh Sait İsyanı sırasında çıkarılan <b>Takrir-i Sükûn Kanunu</b>, hükûmete rejimi ve iç güvenliği tehdit eden örgütlenmeleri ve yayınları yasaklama yetkisi vermiştir. 4 Mart 1925’te kabul edilen bu kanun, ortam sakinleşince 1929’da yürürlükten kaldırılmıştır.</p>
-<p>Bu bilgilere göre Takrir-i Sükûn Kanunu ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: ["Kadınlara seçme ve seçilme hakkı tanıyan bir seçim kanunudur.", "Cumhuriyet tarihi boyunca süresiz olarak yürürlükte kalmıştır.", "Rejimi tehdit eden olağanüstü bir durum karşısında kamu düzenini sağlamak için geçici olarak uygulanmıştır.", "Sanayi yatırımlarını teşvik etmek amacıyla çıkarılmış bir ekonomi kanunudur."],
-  a: "C",
-  s: `<p>Kanun, Şeyh Sait İsyanı’nın yarattığı <b>olağanüstü durumda</b> iç huzuru sağlamak için çıkarılmış ve 1929’da kaldırılmıştır; yani <b>geçici</b> bir kanundur (C ✓).</p><p>A ve D ✗: Kanunun konusu güvenlik ve kamu düzenidir; seçim ya da ekonomi değildir. B ✗: Metinde 1929’da kaldırıldığı belirtilmiştir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Cumhuriyetin ilk yıllarında yaşanan üç olay aşağıdaki şemada bir arada gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 140" width="560" role="img" aria-label="Şeyh Sait İsyanı, İzmir Suikast Girişimi ve Menemen Olayı ortak özellik şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="140" fill="#ffffff"/>
-<rect x="6" y="8" width="176" height="62" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="94" y="34" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Şeyh Sait İsyanı</text>
-<text x="94" y="54" font-size="11.5" fill="#1e293b" text-anchor="middle">(Şubat 1925)</text>
-<line x1="94" y1="70" x2="280" y2="96" stroke="#475569" stroke-width="1.5"/>
-<rect x="192" y="8" width="176" height="62" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="280" y="34" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">İzmir Suikast Girişimi</text>
-<text x="280" y="54" font-size="11.5" fill="#1e293b" text-anchor="middle">(Haziran 1926)</text>
-<line x1="280" y1="70" x2="280" y2="96" stroke="#475569" stroke-width="1.5"/>
-<rect x="378" y="8" width="176" height="62" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="466" y="34" font-size="12" font-weight="bold" fill="#1e40af" text-anchor="middle">Menemen Olayı</text>
-<text x="466" y="54" font-size="11.5" fill="#1e293b" text-anchor="middle">(Aralık 1930)</text>
-<line x1="466" y1="70" x2="280" y2="96" stroke="#475569" stroke-width="1.5"/>
-<rect x="90" y="96" width="380" height="34" rx="6" fill="#1e293b"/>
-<text x="280" y="118" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">ORTAK ÖZELLİK: ( ? )</text>
-</svg></div>
-<p>Şemada <b>( ? )</b> ile gösterilen yere aşağıdakilerden hangisi yazılmalıdır?</p>`,
-  c: ["Yabancı devletlerle cephede yapılan savaşlar olmaları", "Cumhuriyet rejimini ve inkılapları ortadan kaldırmaya yönelik iç tehditler olmaları", "Kadınlara seçme ve seçilme hakkının verilmesini hızlandırmaları", "Çok partili hayata geçişi başarıya ulaştırmaları"],
-  a: "B",
-  s: `<p>Şeyh Sait İsyanı, İzmir Suikast Girişimi ve Menemen Olayı’nın üçü de ülke içinde ortaya çıkmış, <b>Cumhuriyet rejimini, inkılapları ve rejimin kurucusunu hedef alan</b> iç tehditlerdir (B ✓).</p><p>A ✗: Üçü de iç olaydır, cephe savaşı değildir. C ✗: Kadın haklarıyla ilgileri yoktur. D ✗: Tam tersine çok partili hayata geçiş denemelerini olumsuz etkilemişlerdir. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Atatürk, 1930’da Serbest Cumhuriyet Fırkası kurulurken Cumhurbaşkanı olarak partiler karşısında <b>tarafsız</b> kalacağını açıklamıştır. Kız kardeşi <b>Makbule (Atadan) Hanım</b> da Serbest Cumhuriyet Fırkası’na üye olmuştur.</p>
-<p>Bu bilgiler aşağıdakilerden hangisinin göstergesidir?</p>`,
-  c: ["Atatürk’ün yeni muhalefet partisinin serbestçe çalışmasını ve demokrasinin yerleşmesini istediğinin", "Atatürk’ün Serbest Cumhuriyet Fırkası’nı kısa sürede kapatmak istediğinin", "Atatürk’ün tek partili yönetimin sürmesini savunduğunun", "Makbule Hanım’ın Cumhuriyet rejimine karşı olduğunun"],
-  a: "A",
-  s: `<p>Cumhurbaşkanının partiler karşısında tarafsız kalması ve yakınının muhalefet partisine üye olması, halktaki “Bu parti Atatürk’e karşı mı?” çekincesini gidermeye yöneliktir; Atatürk <b>muhalefetin serbestçe çalışmasını</b> istemiştir (A ✓).</p><p>B ve C ✗: Bu davranışlar partiyi desteklemeye yöneliktir. D ✗: SCF laik Cumhuriyete bağlı bir partidir; üye olmak rejim karşıtlığı anlamına gelmez. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdakilerden hangisi Atatürk döneminde Türk kadınının <b>toplumsal, hukuki veya siyasi</b> hayatta erkekle eşit konuma gelmesi amacıyla yapılan düzenlemelerden biri <b>değildir</b>?</p>`,
-  c: ["1926’da Türk Medeni Kanunu’nun kabul edilmesi", "1930’da kadınlara belediye seçimlerinde seçme ve seçilme hakkı verilmesi", "1934’te kadınlara milletvekili seçme ve seçilme hakkı tanınması", "1926’da Kabotaj Kanunu’nun yürürlüğe girmesi"],
-  a: "D",
-  s: `<p><b>Kabotaj Kanunu</b>, Türk karasularında taşımacılık hakkını yalnızca Türk gemilerine veren ekonomik bir düzenlemedir; kadın haklarıyla ilgisi yoktur (D ✓).</p><p>Diğerleri kadın-erkek eşitliğine yöneliktir: A Medeni Kanun kadına sosyal ve hukuki eşitlik getirmiştir; B 1930 belediye ve C 1934 milletvekilliği hakları siyasi eşitlik sağlamıştır. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>9 Eylül 1923’te kurulan <b>Halk Fırkası</b>, 10 Kasım 1924’te adını <b>Cumhuriyet Halk Fırkası</b> olarak değiştirmiştir.</p><p>Partinin adında yapılan bu değişiklikle öncelikle aşağıdakilerden hangisi vurgulanmak istenmiştir?</p>`,
-  c: ["Partinin Cumhuriyet rejimine ve millî egemenliğe bağlılığı", "Partinin saltanat ve hilafeti koruma amacı", "Partinin devletçilikten vazgeçtiği", "Partinin seçimlere katılmama kararı aldığı"],
-  a: "A",
-  s: `<p>Partinin adına <b>“Cumhuriyet”</b> kelimesinin eklenmesi, 29 Ekim 1923’te ilan edilen <b>Cumhuriyet rejimine bağlılığı</b> vurgulamak içindir (A ✓).</p><p>B ✗: Saltanat 1922’de, hilafet 1924’te kaldırılmıştır. C ✗: Ad değişikliğinin ekonomiyle ilgisi yoktur; devletçilik zaten 1930’larda benimsenmiştir. D ✗: Ad değişikliği seçimlerle ilgili değildir. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Atatürk döneminde yapılan çok partili hayat denemeleri kalıcı olamadı. II. Dünya Savaşı’nın ardından 1945’te Nuri Demirağ <b>Millî Kalkınma Partisi</b>’ni, 1946’da Celâl Bayar ve arkadaşları <b>Demokrat Parti</b>’yi kurdu. 1950 seçimlerinde Demokrat Parti oyların çoğunluğunu alarak iktidara geldi.</p>
-<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
-  c: ["Demokrat Parti 1923’te Atatürk tarafından kurulmuştur.", "1950 seçimlerinden sonra seçimler kaldırılmıştır.", "Çok partili hayata 1945-1946’da geçilmiş, 1950’de iktidar seçim yoluyla barışçıl biçimde el değiştirmiştir.", "Çok partili hayata kalıcı geçiş Kurtuluş Savaşı yıllarında tamamlanmıştır."],
-  a: "C",
-  s: `<p>Metne göre 1945 ve 1946’da yeni partiler kurulmuş, 1950’de iktidar <b>sandık yoluyla</b> Demokrat Parti’ye geçmiştir (C ✓).</p><p>B ✗: Metinde böyle bir bilgi yoktur. A ✗: Demokrat Parti 1946’da Celâl Bayar ve arkadaşlarınca kurulmuştur. D ✗: Kalıcı geçiş II. Dünya Savaşı’ndan sonra olmuştur. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>5 Aralık 1934’te yapılan anayasa değişikliğiyle kadınlara milletvekili seçme ve seçilme hakkı verildi. Böylece nüfusun yaklaşık yarısını oluşturan kadınlar da milletvekili seçimlerinde oy kullanabilir ve aday olabilir hâle geldi.</p><p>Bu gelişmenin demokrasi açısından en önemli sonucu aşağıdakilerden hangisidir?</p>`,
-  c: ["Yönetime katılan vatandaş sayısının artması ve millî iradenin Meclis’e daha tam yansıması", "Seçimlerin yapılma süresinin uzatılması", "Meclis’in yasama yetkisinin azaltılması", "Siyasi partilerin kapatılması"],
-  a: "A",
-  s: `<p>Kadınların da oy kullanıp aday olabilmesi, <b>yönetime katılan vatandaş sayısını artırmış</b> ve Meclis’in tüm milleti temsil gücünü yükseltmiştir (A ✓).</p><p>B, C ve D ✗: Bu değişiklik seçim süresini, Meclis’in yetkilerini ya da partileri etkileyen bir düzenleme değildir. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdaki tabloda Türkiye’de kadınlara tanınan siyasi haklar verilmiştir.</p>
-<table class="rt">
-<tr><th>Tarih</th><th>Tanınan siyasi hak</th><th>İlk temsilciler</th></tr>
-<tr><td><b>3 Nisan 1930</b></td><td>Belediye seçimlerinde seçme ve seçilme hakkı</td><td>İlk kadın belediye başkanı: <b>Sadiye Hanım</b> (Artvin, Kılıçkaya)</td></tr>
-<tr><td><b>26 Ekim 1933</b></td><td>Muhtarlık ve ihtiyar heyeti seçimlerine katılma hakkı</td><td>İlk kadın muhtar: <b>Gül Esin</b> (Aydın, Çine, Demircidere)</td></tr>
-<tr><td><b>5 Aralık 1934</b></td><td>Milletvekili seçme ve seçilme hakkı</td><td>8 Şubat 1935 seçimlerinde TBMM’ye <b>17 kadın milletvekili</b> girdi.</td></tr>
-</table>
-<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>`,
-  c: ["Kadınlar milletvekilliği hakkını belediye ve muhtarlık haklarından önce elde etmiştir.", "Kadınlar seçme hakkının yanında seçilme hakkını da kullanmıştır.", "1935 seçimlerinde TBMM’ye hiçbir kadın milletvekili seçilememiştir.", "Kadınlara tanınan bu haklar yalnızca devletçilik ilkesiyle ilgilidir."],
-  a: "B",
-  s: `<p>Tabloda ilk kadın belediye başkanı, ilk kadın muhtar ve 1935’te Meclis’e giren 17 kadın milletvekili yer alır. Kadınlar yalnızca oy vermemiş, <b>seçilme hakkını da kullanmıştır</b> (B ✓).</p><p>A ✗: Haklar önce yerel (1930, 1933), sonra genel (1934) düzeyde verilmiştir. C ✗: Tabloda 17 kadın milletvekilinin seçildiği yazılıdır. D ✗: Bu haklar millî egemenlik ve eşitlikle (cumhuriyetçilik, halkçılık) ilgilidir; devletçilik ekonomiyle ilgilidir. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Atatürk döneminde uygulanan <b>iki dereceli seçim sistemi</b> ile muhalefet partilerinin savunduğu <b>tek dereceli seçim sistemi</b> aşağıdaki şemada gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 170" width="560" role="img" aria-label="İki dereceli ve tek dereceli seçim sistemlerinin karşılaştırılması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="170" fill="#ffffff"/>
-<rect x="6" y="6" width="268" height="158" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="140" y="28" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">İKİ DERECELİ SEÇİM</text>
-<text x="140" y="44" font-size="11" fill="#92400e" text-anchor="middle">(Türkiye’de 1946’ya kadar)</text>
-<rect x="60" y="56" width="160" height="24" rx="4" fill="#ffffff" stroke="#d97706"/>
-<text x="140" y="73" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Halk (birinci seçmen)</text>
-<text x="140" y="92" font-size="11.5" fill="#475569" text-anchor="middle">↓ seçer</text>
-<rect x="60" y="98" width="160" height="24" rx="4" fill="#ffffff" stroke="#d97706"/>
-<text x="140" y="115" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">İkinci seçmenler</text>
-<text x="140" y="134" font-size="11.5" fill="#475569" text-anchor="middle">↓ seçer</text>
-<rect x="60" y="138" width="160" height="22" rx="4" fill="#ffffff" stroke="#d97706"/>
-<text x="140" y="154" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Milletvekilleri</text>
-<rect x="286" y="6" width="268" height="158" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-<text x="420" y="28" font-size="12" font-weight="bold" fill="#166534" text-anchor="middle">TEK DERECELİ SEÇİM</text>
-<text x="420" y="44" font-size="11" fill="#166534" text-anchor="middle">(Türkiye’de 1946’dan itibaren)</text>
-<rect x="340" y="62" width="160" height="26" rx="4" fill="#ffffff" stroke="#16a34a"/>
-<text x="420" y="80" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Halk (seçmen)</text>
-<text x="420" y="106" font-size="11.5" fill="#475569" text-anchor="middle">↓ doğrudan seçer</text>
-<rect x="340" y="116" width="160" height="26" rx="4" fill="#ffffff" stroke="#16a34a"/>
-<text x="420" y="134" font-size="11.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Milletvekilleri</text>
-</svg></div>
-<p>Şemaya göre tek dereceli seçim sisteminin daha demokratik kabul edilmesinin temel nedeni aşağıdakilerden hangisidir?</p>`,
-  c: ["Oy kullanma hakkını yalnızca devlet memurlarına vermesi", "Seçimlerin on yılda bir yapılmasını öngörmesi", "Halkın araya başka seçmenler girmeden milletvekilini doğrudan belirlemesini sağlaması", "Milletvekillerinin Cumhurbaşkanı tarafından atanmasını sağlaması"],
-  a: "C",
-  s: `<p>Şemada iki dereceli sistemde halk önce ikinci seçmenleri, onlar da milletvekillerini seçer. Tek dereceli sistemde ise halk <b>milletvekilini doğrudan</b> seçer; böylece millî irade Meclis’e aracısız yansır (C ✓).</p><p>B, A ve D ✗: Şemada seçim aralığı, oy hakkının kısıtlanması ya da atama yoluyla milletvekili belirlenmesi gibi bir bilgi yoktur; bunlar demokrasiyi zayıflatır. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>23 Aralık 1930’daki Menemen Olayı’nda Asteğmen Kubilay’ın şehit edilmesinin ardından Mustafa Kemal Atatürk, Genelkurmay Başkanlığına gönderdiği başsağlığı telgrafında şöyle demiştir:</p>
-<div class="box"><i>“Menemen’de meydana gelen gericilik girişimi sırasında Yedek Subay Kubilay Bey’in görevini yaparken uğradığı saldırıdan dolayı Cumhuriyet ordusuna başsağlığı dilerim. … Büyük ordunun kahraman genç subayı ve Cumhuriyetin idealist öğretmen topluluğunun değerli üyesi Kubilay’ın temiz kanı ile Cumhuriyetin hayatiyeti tazelenmiş ve kuvvetlenmiştir.”</i> (sadeleştirilmiştir)</div>
-<p>Bu telgraftan hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: ["Kubilay’ın hem Cumhuriyet subayı hem de öğretmen olduğuna", "Yaşanan olayın Cumhuriyet rejimine karşı gerici bir girişim olduğuna", "Cumhuriyetin bu tür saldırılar karşısında yıkılmayacağına, aksine güçleneceğine", "Menemen Olayı’ndan sonra inkılaplardan vazgeçildiğine"],
-  a: "D",
-  s: `<p>Atatürk, Kubilay’ın kanıyla Cumhuriyetin “tazelendiğini ve kuvvetlendiğini” söyler; telgrafta inkılaplardan vazgeçildiğine dair bir ifade yoktur, tam tersine kararlılık vurgulanır (D ulaşılamaz).</p><p>A ✓: “Kahraman genç subayı” ve “idealist öğretmen topluluğunun değerli üyesi” ifadeleri. B ✓: “Gericilik girişimi” ifadesi. C ✓: “Cumhuriyetin hayatiyeti tazelenmiş ve kuvvetlenmiştir” ifadesi. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>9 Eylül 1923’te Mustafa Kemal Paşa tarafından kurulan <b>Halk Fırkası</b>, I. TBMM’de Millî Mücadele’yi yürüten bir grubun siyasi partiye dönüştürülmesiyle oluşturulmuştur.</p><p>Bu grup aşağıdakilerden hangisidir?</p>`,
-  c: ["Felah-ı Vatan Grubu", "İttihat ve Terakki Cemiyeti", "Anadolu ve Rumeli Müdafaa-i Hukuk Grubu (Birinci Grup)", "İngiliz Muhipleri Cemiyeti"],
-  a: "C",
-  s: `<p>Mustafa Kemal’in Mayıs 1921’de I. TBMM’de kurduğu <b>Anadolu ve Rumeli Müdafaa-i Hukuk Grubu (Birinci Grup)</b>, 9 Eylül 1923’te Halk Fırkası’na dönüştürülmüştür (C ✓).</p><p>B ✗: İttihat ve Terakki, Mondros’tan sonra dağılmış bir Osmanlı dönemi partisidir. A ✗: Felah-ı Vatan Grubu, Misak-ı Millî’yi kabul eden son Osmanlı Mebusan Meclisi’ndeki gruptur. D ✗: İngiliz Muhipleri Cemiyeti Millî Mücadele’ye karşı bir cemiyettir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Fethi Bey, 1930’da laik Cumhuriyete bağlı bir parti kurmak istediğini bildirince Atatürk ona şu cevabı vermiştir:</p>
-<div class="box"><i>“Memnuniyetle tekrar görüyorum ki laik Cumhuriyet esaslarında beraberiz. … Büyük Meclis’te aynı temele dayanan yeni bir partinin faaliyete geçerek millet işlerini serbestçe tartışmasını Cumhuriyetin esaslarından sayarım.”</i></div>
-<p>Atatürk bu sözleriyle aşağıdakilerden hangisine önem verdiğini göstermiştir?</p>`,
-  c: ["Laik Cumhuriyet ilkelerine bağlı kalınarak farklı görüşlerin Meclis’te serbestçe tartışılmasına", "Tek partili yönetimin sürmesine", "Saltanat ve hilafetin yeniden kurulmasına", "Meclis’in kapatılıp yönetimin bir kişiye bırakılmasına"],
-  a: "A",
-  s: `<p>Atatürk, aynı temele (laik Cumhuriyet) dayanan yeni bir partinin Meclis’te millet işlerini <b>serbestçe tartışmasını</b> Cumhuriyetin esaslarından saymıştır. Bu, <b>çoğulculuğa ve düşünce özgürlüğüne</b> verdiği önemi gösterir (A ✓).</p><p>B ✗: Yeni parti kurulmasını desteklemek tek partili yönetimle çelişir. C ✗: Atatürk laik Cumhuriyet esasını vurgular. D ✗: Sözlerde Meclis’in önemi vurgulanır. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Ordunun siyasetten ayrılması amacıyla milletvekili olan komutanlardan bir görevi seçmeleri istenince (1924), <b>Mareşal Fevzi (Çakmak) Paşa</b> milletvekilliğinden ayrılarak Genelkurmay Başkanlığında kalmış; <b>Kâzım (Karabekir) Paşa ve Ali Fuat (Cebesoy) Paşa</b> ise askerlik görevlerinden istifa ederek milletvekilliğini seçmiştir.</p>
-<p>Bu bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Uygulama en üst düzey komutanlara da uygulanmış; hiçbir komutan askerlik ile milletvekilliğini birlikte sürdürememiştir.", "Fevzi Paşa milletvekilliği ile komutanlığı birlikte yürütmeye devam etmiştir.", "Kâzım Karabekir Paşa siyasetten tamamen yasaklanmıştır.", "Ordu mensuplarının siyasi parti kurması zorunlu tutulmuştur."],
-  a: "A",
-  s: `<p>Mareşal Fevzi Paşa gibi en üst düzey komutanlar bile <b>ya askerliği ya da milletvekilliğini</b> seçmiştir; yani kural herkese uygulanmış, iki görev birlikte yürütülememiştir (A ✓).</p><p>B ✗: Fevzi Paşa milletvekilliğinden ayrılmıştır. C ✗: Kâzım Karabekir milletvekilliğini seçerek siyasette kalmıştır. D ✗: Amaç tam tersine askerleri siyasetten uzak tutmaktır. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Serbest Cumhuriyet Fırkası’nın (1930) programında ve vaatlerinde yer alan bazı görüşler şunlardır:</p>
-<ul>
-<li>Cumhuriyetçilik, milliyetçilik ve laiklik ilkelerine bağlı kalınacaktır.</li>
-<li>Vergiler halkın gücünü aşmayacak şekilde hafifletilecektir.</li>
-<li>Özel girişim desteklenecek, yabancı sermayenin ülkeye gelmesinin yolu açılacaktır.</li>
-<li>Seçimler tek dereceli yapılacak, kadınlara da siyasi haklar tanınacaktır.</li>
-</ul>
-<p>Buna göre Serbest Cumhuriyet Fırkası ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>`,
-  c: ["Cumhuriyetçilik ve laiklik konusunda iktidardaki Cumhuriyet Halk Fırkası ile aynı çizgidedir.", "Ekonomide liberal bir politika önermiştir.", "Tek dereceli seçimi ve kadınların siyasete katılmasını savunmuştur.", "Programında halifeliğin ve medreselerin yeniden açılmasını istemiştir."],
-  a: "D",
-  s: `<p>Programın ilk maddesi <b>laiklik</b> ilkesine bağlılıktır; halifeliğin ya da medreselerin geri getirilmesi bu ilkeyle çelişir ve programda böyle bir madde yoktur (D yanlış).</p><p>A ✓: Cumhuriyetçilik ve laiklik maddesi. B ✓: Özel girişim ve yabancı sermaye maddesi. C ✓: Son madde. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Şeyh Sait İsyanı çıkınca isyanı bölgesel sıkıyönetimle bastırmaya çalışan Başbakan <b>Ali Fethi (Okyar) Bey</b> görevinden ayrılmış; yerine daha sert ve kararlı tedbirler alan <b>İsmet (İnönü) Paşa</b> hükûmeti kurarak Takrir-i Sükûn Kanunu’nu çıkarmıştır (Mart 1925).</p>
-<p>Bu hükûmet değişikliğinin temel amacı aşağıdakilerden hangisidir?</p>`,
-  c: ["Ülkenin bütünlüğünü ve Cumhuriyet rejimini tehdit eden isyanı hızlı ve kesin biçimde bastırmak", "İsyancılarla anlaşarak Doğu Anadolu’da ayrı bir yönetim kurmak", "Musul’u İngiltere’ye savaşmadan bırakmak", "Cumhuriyet Halk Fırkası’nı kapatmak"],
-  a: "A",
-  s: `<p>Fethi Bey hükûmetinin önlemleri yayılan isyanı durdurmaya yetmeyince, rejimi ve ülke bütünlüğünü korumak için <b>daha sert ve hızlı tedbirler</b> alacak İsmet Paşa hükûmeti göreve gelmiştir (A ✓).</p><p>B ✗: Amaç isyanı bastırmaktır, isyancılarla anlaşmak değil. C ✗: Hükûmet değişikliğinin amacı Musul’u bırakmak değildir. D ✗: İsmet Paşa CHF’nin önde gelen ismidir; partiyi kapatmak söz konusu değildir. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Aşağıdaki tabloda Cumhuriyet döneminde yaşanan bazı gelişmeler ile bu gelişmelerin demokrasi tarihimizdeki yeri eşleştirilmiştir.</p>
-<table class="rt">
-<tr><th>No</th><th>Gelişme</th><th>Demokrasi tarihimizdeki yeri</th></tr>
-<tr><td><b>1</b></td><td>Terakkiperver Cumhuriyet Fırkası’nın kurulması (1924)</td><td>Cumhuriyet döneminin ilk muhalefet partisidir.</td></tr>
-<tr><td><b>2</b></td><td>Serbest Cumhuriyet Fırkası’nın kurulması (1930)</td><td>Atatürk’ün isteğiyle kurulan muhalefet partisidir.</td></tr>
-<tr><td><b>3</b></td><td>5 Aralık 1934 anayasa değişikliği</td><td>Kadınlara milletvekili seçme ve seçilme hakkı tanınmıştır.</td></tr>
-<tr><td><b>4</b></td><td>Menemen Olayı (23 Aralık 1930)</td><td>Çok partili hayata kalıcı olarak geçilmesini sağlamıştır.</td></tr>
-</table>
-<p>Tablodaki eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>`,
-  c: ["1", "2", "3", "4"],
-  a: "D",
-  s: `<p><b>Menemen Olayı</b> çok partili hayata kalıcı geçişi sağlamamıştır; tam tersine laik Cumhuriyete karşı hâlâ ciddi tehditler olduğunu göstermiş, çok partili hayata geçiş denemelerine 1945’e kadar ara verilmesinde etkili olmuştur (D yanlış).</p><p>A, B ve C doğru eşleştirmelerdir: TCF ilk muhalefet partisidir, SCF Atatürk’ün isteğiyle kurulmuştur, 1934 değişikliğiyle kadınlar milletvekili seçme ve seçilme hakkı kazanmıştır. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki metinde I. TBMM döneminde Meclis’teki grupların durumu anlatılmıştır.</p>
-<div class="box">Millî Mücadele’yi Mustafa Kemal Paşa’nın önderliğinde yürütmek amacıyla Mayıs 1921’de TBMM’de <b>Anadolu ve Rumeli Müdafaa-i Hukuk Grubu</b> (Birinci Grup) kuruldu. 1922’de ise bazı konularda Birinci Grup’tan farklı düşünen milletvekilleri <b>İkinci Grup</b> adıyla bir araya geldi. İkinci Grup, Meclis’teki görüşmelerde hükûmetin bazı uygulamalarını eleştirdi. Meclis, 1 Nisan 1923’te seçimlerin yenilenmesine karar verdi. Yapılan seçimlerde İkinci Grup üyelerinin büyük bölümü yeniden milletvekili seçilemedi.</div>
-<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
-  c: ["I. TBMM’de farklı görüşlerin dile getirilebildiği ve hükûmetin eleştirilebildiği bir ortam vardı.", "İkinci Grup, Cumhuriyet döneminde kurulan ilk muhalefet partisidir.", "1923 seçimlerinden sonra Meclis’teki muhalefet daha da güçlenmiştir.", "İkinci Grup, Millî Mücadele’nin sürdürülmesine karşı çıkmıştır."],
-  a: "A",
-  s: `<p>Metinde İkinci Grup’un Meclis görüşmelerinde hükûmetin bazı uygulamalarını eleştirdiği belirtiliyor. Demek ki I. TBMM’de farklı görüşler açıkça dile getirilebiliyor, hükûmet eleştirilebiliyordu (A ✓).</p><p>B ✗: İkinci Grup bir Meclis grubudur, siyasi parti değildir; ayrıca grup Cumhuriyet’ten önce (1922) oluşmuştur. Cumhuriyet döneminin ilk muhalefet partisi Terakkiperver Cumhuriyet Fırkası’dır (1924). C ✗: Metne göre İkinci Grup üyelerinin çoğu yeniden seçilemediği için muhalefet zayıflamıştır. D ✗: İkinci Grup’un Millî Mücadele’ye karşı çıktığına dair metinde bilgi yoktur; yalnızca bazı konularda farklı düşündükleri söylenmiştir. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Bir öğrenci, Cumhuriyet rejimine yönelik bazı olaylarla ilgili aşağıdaki tabloyu hazırlamıştır.</p>
-<table class="rt">
-<tr><th>Olay</th><th>Tarih</th><th>Amaç</th><th>Suçluların yargılandığı mahkeme</th></tr>
-<tr><td>Şeyh Sait İsyanı</td><td>1925</td><td>Cumhuriyet’i ve laik düzeni yıkmak</td><td>İstiklal Mahkemesi</td></tr>
-<tr><td>İzmir Suikast Girişimi</td><td>1926</td><td>Mustafa Kemal’i öldürerek Cumhuriyet’i ve inkılapları ortadan kaldırmak</td><td>İstiklal Mahkemesi</td></tr>
-<tr><td>Menemen Olayı</td><td>1930</td><td>Laik Cumhuriyet düzenini yıkmak</td><td>Divan-ı Harp (askerî mahkeme)</td></tr>
-</table>
-<p>Tablodaki bilgilere göre;</p>
-<p>I. Üç olay da Cumhuriyet rejimini ve inkılapları hedef almıştır.<br>II. Üç olayın suçluları da aynı mahkemede yargılanmıştır.<br>III. Olayların hepsi Mustafa Kemal’in Cumhurbaşkanlığı döneminde yaşanmıştır.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "Yalnız II", "I ve III", "II ve III"],
-  a: "C",
-  s: `<p>I ✓: “Amaç” sütununda üç olayın da Cumhuriyet’i, laik düzeni ve inkılapları ortadan kaldırmayı hedeflediği görülür. III ✓: Olaylar 1925, 1926 ve 1930 yıllarında yaşanmıştır; Mustafa Kemal 1923’ten 1938’e kadar Cumhurbaşkanıdır. II ✗: Şeyh Sait İsyanı ve İzmir Suikast Girişimi’nin suçluları İstiklal Mahkemesinde, Menemen Olayı’nın suçluları ise Divan-ı Harpte yargılanmıştır; mahkemeler aynı değildir.</p><p>II’yi içeren B ve D şıkları, Menemen’in de İstiklal Mahkemesinde yargılandığını sanan öğrencinin seçeceği yanlışlardır. A ise III’ü atladığı için eksiktir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki zaman çizelgesinde 1924–1931 yılları arasındaki bazı gelişmeler gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 240" width="560" role="img" aria-label="Takrir-i Sükûn Kanunu ve muhalefet partileri zaman çizelgesi" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="240" fill="#ffffff"/>
-<text x="280" y="20" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="middle">Takrir-i Sükûn Kanunu ve muhalefet partileri (1924–1931)</text>
-<rect x="122" y="104" width="280" height="12" fill="#fecaca" stroke="#dc2626"/>
-<text x="262" y="97" font-size="11" fill="#991b1b" text-anchor="middle">Takrir-i Sükûn Kanunu yürürlükte</text>
-<line x1="40" y1="110" x2="530" y2="110" stroke="#334155" stroke-width="2"/>
-<line x1="40" y1="105" x2="40" y2="117" stroke="#334155"/><text x="40" y="132" font-size="11" fill="#334155" text-anchor="middle">1924</text>
-<line x1="110" y1="105" x2="110" y2="117" stroke="#334155"/><text x="110" y="132" font-size="11" fill="#334155" text-anchor="middle">1925</text>
-<line x1="180" y1="105" x2="180" y2="117" stroke="#334155"/><text x="180" y="132" font-size="11" fill="#334155" text-anchor="middle">1926</text>
-<line x1="250" y1="105" x2="250" y2="117" stroke="#334155"/><text x="250" y="132" font-size="11" fill="#334155" text-anchor="middle">1927</text>
-<line x1="320" y1="105" x2="320" y2="117" stroke="#334155"/><text x="320" y="132" font-size="11" fill="#334155" text-anchor="middle">1928</text>
-<line x1="390" y1="105" x2="390" y2="117" stroke="#334155"/><text x="390" y="132" font-size="11" fill="#334155" text-anchor="middle">1929</text>
-<line x1="460" y1="105" x2="460" y2="117" stroke="#334155"/><text x="460" y="132" font-size="11" fill="#334155" text-anchor="middle">1930</text>
-<line x1="530" y1="105" x2="530" y2="117" stroke="#334155"/><text x="530" y="132" font-size="11" fill="#334155" text-anchor="middle">1931</text>
-<line x1="102" y1="79" x2="102" y2="110" stroke="#2563eb"/><circle cx="102" cy="70" r="9" fill="#2563eb"/><text x="102" y="74" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
-<line x1="122" y1="59" x2="122" y2="104" stroke="#dc2626"/><circle cx="122" cy="50" r="9" fill="#dc2626"/><text x="122" y="54" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
-<line x1="139" y1="79" x2="139" y2="104" stroke="#2563eb"/><circle cx="139" cy="70" r="9" fill="#2563eb"/><text x="139" y="74" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
-<line x1="402" y1="59" x2="402" y2="104" stroke="#dc2626"/><circle cx="402" cy="50" r="9" fill="#dc2626"/><text x="402" y="54" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
-<line x1="503" y1="79" x2="503" y2="110" stroke="#2563eb"/><circle cx="503" cy="70" r="9" fill="#2563eb"/><text x="503" y="74" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
-<text x="24" y="158" font-size="11.5" fill="#1e293b"><tspan font-weight="bold">1</tspan>  17 Kasım 1924: Terakkiperver Cumhuriyet Fırkası kuruldu.</text>
-<text x="24" y="175" font-size="11.5" fill="#1e293b"><tspan font-weight="bold">2</tspan>  4 Mart 1925: Takrir-i Sükûn Kanunu kabul edildi.</text>
-<text x="24" y="192" font-size="11.5" fill="#1e293b"><tspan font-weight="bold">3</tspan>  3 Haziran 1925: Terakkiperver Cumhuriyet Fırkası kapatıldı.</text>
-<text x="24" y="209" font-size="11.5" fill="#1e293b"><tspan font-weight="bold">4</tspan>  1929: Takrir-i Sükûn Kanunu yürürlükten kaldırıldı.</text>
-<text x="24" y="226" font-size="11.5" fill="#1e293b"><tspan font-weight="bold">5</tspan>  12 Ağustos 1930: Serbest Cumhuriyet Fırkası kuruldu.</text>
-</svg></div>
-<p>Takrir-i Sükûn Kanunu, Şeyh Sait İsyanı sırasında hükûmete olağanüstü yetkiler veren bir kanundur. Buna göre zaman çizelgesinden hareketle aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Takrir-i Sükûn Kanunu, Serbest Cumhuriyet Fırkası’nın kapanmasına yol açmıştır.", "İkinci muhalefet partisi, olağanüstü yetkiler veren kanun yürürlükten kalktıktan sonra kurulmuştur.", "Terakkiperver Cumhuriyet Fırkası, Takrir-i Sükûn Kanunu kabul edilmeden önce kapatılmıştır.", "Takrir-i Sükûn Kanunu yaklaşık on yıl yürürlükte kalmıştır."],
-  a: "B",
-  s: `<p>Çizelgede Takrir-i Sükûn Kanunu 1929’da yürürlükten kalkmış (4), ikinci muhalefet partisi olan Serbest Cumhuriyet Fırkası ise 1930’da kurulmuştur (5). Yani yeni muhalefet partisi, olağanüstü dönemin bitmesinden sonra kurulmuştur (B ✓).</p><p>A ✗: Kanun 1929’da kalkmıştır; 1930’da kurulan SCF’nin kapanmasıyla bir ilgisi olamaz. C ✗: Kanun 4 Mart 1925’te kabul edilmiş, TCF ise ondan sonra, 3 Haziran 1925’te kapatılmıştır (2025 LGS’deki gibi kanuna dayanılarak). D ✗: Kanun 1925’ten 1929’a kadar, yani yaklaşık dört yıl yürürlükte kalmıştır. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki metinde 1930 yılında yapılan belediye seçimleri anlatılmıştır.</p>
-<div class="box">3 Nisan 1930’da kabul edilen Belediye Kanunu ile kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanındı. Aynı yılın sonbaharında yapılan belediye seçimleri, Türk kadınının oy kullandığı ilk seçim oldu. Ağustos 1930’da kurulan Serbest Cumhuriyet Fırkası da bu seçimlere katıldı ve bazı yerlerde belediye yönetimini kazandı. Seçimlerin ardından Serbest Cumhuriyet Fırkası, bazı yerlerde baskı ve usulsüzlük yapıldığını ileri sürdü ve bu konuyu Meclis’te dile getirdi.</div>
-<p>Bu metne göre 1930 belediye seçimleriyle ilgili;</p>
-<p>I. Kadınlar ilk kez bir seçimde oy kullanmıştır.<br>II. Seçimlerde birden fazla parti yarışmıştır.<br>III. Muhalefet, seçimlerle ilgili şikâyetlerini Meclis’e taşımıştır.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
-  a: "D",
-  s: `<p>I ✓: Metinde bu seçimlerin “Türk kadınının oy kullandığı ilk seçim” olduğu açıkça yazıyor. II ✓: İktidardaki Cumhuriyet Halk Fırkası’nın yanında Serbest Cumhuriyet Fırkası da seçimlere katılmıştır; yani birden fazla parti yarışmıştır. III ✓: SCF, baskı ve usulsüzlük iddialarını Meclis’te dile getirmiştir.</p><p>Üç yargıya da ulaşılabildiği için yalnızca bir ya da iki yargıyı içeren A, B ve C şıkları eksiktir. II’yi kaçıran öğrenci genellikle metinde CHF’nin adının geçmemesine takılır; oysa SCF bir muhalefet partisidir ve iktidar partisiyle yarışmıştır. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda Atatürk döneminde kadınlara tanınan bazı siyasi haklar ve bu hakların tanındığı tarihler verilmiştir.</p>
-<table class="rt">
-<tr><th>Düzenleme</th><th>Tanınan hak</th><th>Tarih</th></tr>
-<tr><td>Belediye Kanunu</td><td>Belediye seçimlerinde seçme ve seçilme</td><td>3 Nisan 1930</td></tr>
-<tr><td>Köy Kanunu’nda yapılan değişiklik</td><td>Muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme</td><td>26 Ekim 1933</td></tr>
-<tr><td>Anayasa değişikliği</td><td>Milletvekili seçme ve seçilme</td><td>5 Aralık 1934</td></tr>
-</table>
-<p>Tablodaki bilgilere göre, yaş vb. diğer şartları taşıyan bir Türk kadını için aşağıdakilerden hangisi <b>yasal olarak mümkündü</b>?</p>`,
-  c: ["1931’de belediye meclisi üyeliğine aday olmak", "1932’de köyünde muhtar adayı olmak", "1933’te bir milletvekili seçiminde oy kullanmak", "1929’da belediye seçiminde oy vermek"],
-  a: "A",
-  s: `<p>Belediye seçimlerinde seçme ve seçilme hakkı 3 Nisan 1930’da tanınmıştır. 1931 bu tarihten sonra olduğu için bir kadının belediye meclisi üyeliğine aday olması mümkündür (A ✓).</p><p>B ✗: Muhtarlık hakkı 26 Ekim 1933’te tanınmıştır; 1932’de henüz yoktur. C ✗: Milletvekili seçme hakkı 5 Aralık 1934’te tanınmıştır; 1933’te yoktur. D ✗: 1929, Belediye Kanunu’ndan öncedir. Bu soruda her şıkta tarih ile hakkın türü birlikte kontrol edilmelidir; hakların yerelden ulusala doğru (belediye → köy → Meclis) aşamalı olarak verildiği unutulmamalıdır. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Terakkiperver Cumhuriyet Fırkası’nın programında <b>“Fırka, dinî düşünce ve inançlara saygılıdır.”</b> maddesi yer alıyordu. Partinin kurucuları Cumhuriyet’e bağlı olduklarını açıklamıştı. Ancak bu madde, inkılaplardan rahatsız olan ve eski düzeni geri getirmek isteyen çevrelerce kendi amaçları için kullanıldı. 1925’te çıkan Şeyh Sait İsyanı’ndan sonra parti, Takrir-i Sükûn Kanunu’na dayanılarak 3 Haziran 1925’te Bakanlar Kurulu kararıyla kapatıldı.</div>
-<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
-  c: ["Terakkiperver Cumhuriyet Fırkası’nın kurucuları Cumhuriyet rejimine karşıydı.", "Bir partinin programındaki ifade, rejim karşıtlarınca istismar edilmiş ve bu durum partinin kapatılmasına giden süreci etkilemiştir.", "Terakkiperver Cumhuriyet Fırkası, kurucularının kendi kararıyla kapanmıştır.", "Terakkiperver Cumhuriyet Fırkası, Şeyh Sait İsyanı başlamadan önce kapatılmıştır."],
-  a: "B",
-  s: `<p>Metne göre programdaki madde iyi niyetle konmuş olsa da eski düzeni geri getirmek isteyenler tarafından kendi amaçları için kullanılmış; isyandan sonra parti kapatılmıştır. Yani programdaki bir ifadenin istismar edilmesi partinin sonunu etkilemiştir (B ✓).</p><p>A ✗: Metinde kurucuların Cumhuriyet’e bağlı olduklarını açıkladıkları yazıyor. C ✗: TCF Bakanlar Kurulu kararıyla kapatılmıştır; kurucusu tarafından feshedilen parti Serbest Cumhuriyet Fırkası’dır (TCF–SCF karışıklığı). D ✗: Parti, isyandan sonra kapatılmıştır. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Cumhuriyet’in ilk yıllarında aşağıdaki düzenlemeler yapılmıştır:</p>
-<div class="box">• Görevdeki askerlerin milletvekili seçilmesi bir kanunla yasaklandı.<br>• Erkân-ı Harbiye Vekâleti kaldırıldı; yerine kurulan Genelkurmay Başkanlığı Bakanlar Kurulunun dışında tutuldu.<br>• Milletvekili olan komutanlardan askerlik ile milletvekilliği arasında bir tercih yapmaları istendi.</div>
-<p>Bu düzenlemelerle ilgili;</p>
-<p>I. Ordunun siyasetin dışında tutulması amaçlanmıştır.<br>II. Siyasi kararların asker olmayan, seçilmiş yöneticilerce alınmasına zemin hazırlanmıştır.<br>III. Askerlerin seçimlerde oy kullanması da yasaklanmıştır.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "Yalnız III", "I ve II", "I, II ve III"],
-  a: "C",
-  s: `<p>I ✓: Üç düzenlemenin ortak noktası askerlerin siyasetle iç içe olmasını önlemek, yani ordunun siyasetin dışında tutulmasıdır (2024 LGS’de de bu sonuç sorulmuştur). II ✓: Görevdeki askerler milletvekili olamayacağı ve Genelkurmay Bakanlar Kurulunda yer almayacağı için siyasi kararları seçilmiş sivil yöneticiler almıştır.</p><p>III ✗: Düzenlemelerde askerlerin <b>milletvekili seçilmesinin</b> yasaklandığı yazıyor; <b>oy kullanma</b> ile ilgili bir bilgi yoktur. “Seçilme” ile “seçme” hakkını karıştıran öğrenci B veya D’yi işaretler. A ise II’yi atladığı için eksiktir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Haziran 1926’da ortaya çıkarılan İzmir suikast girişiminin ardından İstiklal Mahkemesinde geniş kapsamlı bir yargılama yapıldı. Suikastı planlayanların yanı sıra bazı eski Terakkiperver Cumhuriyet Fırkası üyeleri de yargılandı. Suikastı planlayanlar idam edildi; Kâzım Karabekir, Ali Fuat Cebesoy ve Refet Bele gibi isimler ise beraat etti. Bu süreçten sonra 1930 yılına kadar yeni bir muhalefet partisi kurulmadı.</div>
-<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: ["Suikast girişiminin ardından yapılan yargılama, yalnızca olayı planlayanlarla sınırlı kalmamıştır.", "Yargılananların hepsi aynı cezayı almamıştır.", "Suikast girişiminden sonra bir süre yeni bir muhalefet partisi kurulmamıştır.", "Beraat eden isimler daha sonra Serbest Cumhuriyet Fırkası’nı kurmuştur."],
-  a: "D",
-  s: `<p>A’ya ulaşılır: Planlayanların yanında eski TCF üyeleri de yargılanmıştır. B’ye ulaşılır: Bazıları idam edilmiş, bazıları beraat etmiştir. C’ye ulaşılır: Metinde 1930’a kadar yeni bir muhalefet partisi kurulmadığı yazıyor.</p><p>D ✗ (ulaşılamaz): Metinde beraat eden isimlerin sonradan ne yaptığına dair bilgi yoktur. Ayrıca bu bilgi yanlıştır: Serbest Cumhuriyet Fırkası’nı 1930’da Atatürk’ün isteğiyle Ali Fethi (Okyar) Bey kurmuştur. Bu şık, metinde olmayan bilgiyi doğru sanma çeldiricisidir (2021 LGS’deki gibi). Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda Türk siyasi hayatında meclis ve parti deneyimiyle ilgili bazı gelişmeler verilmiştir.</p>
-<table class="rt">
-<tr><th>Yıl</th><th>Gelişme</th></tr>
-<tr><td>1876</td><td>Kanun-i Esasi ilan edildi, Meclis-i Mebusan açıldı (I. Meşrutiyet).</td></tr>
-<tr><td>1878</td><td>II. Abdülhamit, Meclis-i Mebusan’ı kapattı.</td></tr>
-<tr><td>1908</td><td>II. Meşrutiyet ilan edildi; Meclis yeniden açıldı, siyasi partiler kuruldu.</td></tr>
-<tr><td>1920</td><td>23 Nisan’da Türkiye Büyük Millet Meclisi açıldı.</td></tr>
-<tr><td>1924</td><td>Terakkiperver Cumhuriyet Fırkası kuruldu.</td></tr>
-</table>
-<p>Tablodaki bilgilerden hareketle aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Osmanlı Devleti’nde seçimle oluşan bir meclis hiç bulunmamıştır.", "Türk toplumunun meclis ve parti deneyimi Cumhuriyet’ten önce başlamış, Cumhuriyet döneminde de sürmüştür.", "Meclis-i Mebusan, açıldığı günden itibaren hiç kesintiye uğramadan çalışmıştır.", "Türk tarihinde siyasi partiler ilk kez Cumhuriyet döneminde kurulmuştur."],
-  a: "B",
-  s: `<p>Tabloda 1876’da Meclis-i Mebusan’ın açıldığı, 1908’de partilerin kurulduğu, Cumhuriyet döneminde de (1924) yeni bir partinin kurulduğu görülür. Demek ki meclis ve parti deneyimi Cumhuriyet’ten önce başlamış, sonra da sürmüştür (B ✓).</p><p>A ✗: Meclis-i Mebusan bir seçilmiş meclistir. C ✗: Meclis 1878’de kapatılmış, 1908’de yeniden açılmıştır; kesintiye uğramıştır. D ✗: Tabloya göre siyasi partiler 1908’de II. Meşrutiyet döneminde de kurulmuştur. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Mustafa Kemal Paşa, 1923 seçimlerinden önce <b>Dokuz Umde</b> (dokuz ilke) adıyla bir seçim beyannamesi yayımladı. Bu beyannamenin ilk maddesi <b>“Hâkimiyet bilâ kayd ü şart milletindir.”</b> (Egemenlik kayıtsız şartsız milletindir.) ilkesiydi. Seçimlerin ardından toplanan II. TBMM’de çoğunluğu oluşturan milletvekilleri, Eylül 1923’te kurulan Halk Fırkası çatısı altında bir araya geldi.</div>
-<p>Bu metne göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["1923 seçimlerine, millî egemenliği esas alan bir programla girilmiştir.", "Dokuz Umde, Halk Fırkası kurulduktan sonra hazırlanmıştır.", "1923 seçimlerinde birden fazla siyasi parti yarışmıştır.", "Dokuz Umde ile Cumhuriyet’in ilan edildiği halka duyurulmuştur."],
-  a: "A",
-  s: `<p>Metne göre seçimlerden önce bir beyanname yayımlanmış ve bunun ilk maddesi millî egemenlik ilkesi olmuştur. Yani seçimlere millî egemenliği temel alan bir programla girilmiştir (A ✓).</p><p>B ✗: Beyanname seçimlerden önce yayımlanmış, Halk Fırkası ise seçimlerden sonra, Eylül 1923’te kurulmuştur. C ✗: Metinde seçimlere birden fazla partinin katıldığına dair bilgi yoktur. D ✗: Cumhuriyet 29 Ekim 1923’te, yani hem seçimlerden hem de Halk Fırkası’nın kuruluşundan sonra ilan edilmiştir; metinde de böyle bir bilgi yoktur (kronoloji çeldiricisi). Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Serbest Cumhuriyet Fırkası’nın çevresinde rejim karşıtlarının toplanması ve ardından yaşanan Menemen Olayı, inkılapların halkın bir kesimince henüz yeterince benimsenmediğini gösterdi. Bunun üzerine inkılapları halka anlatmak ve benimsetmek amacıyla 1932’den itibaren <b>Halkevleri</b> açıldı. Halkevlerinde dil ve edebiyat, güzel sanatlar, temsil (tiyatro), spor, kütüphane ve yayın, halk dershaneleri gibi şubeler bulunuyordu.</div>
-<p>Bu metne göre Halkevleriyle ilgili aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Çok partili hayata hemen geçebilmek amacıyla kurulmuştur.", "Yalnızca spor faaliyetleri yapmak için açılmıştır.", "Yaşanan olumsuz gelişmeler, inkılapların halka benimsetilmesine yönelik bir çalışmanın başlatılmasında etkili olmuştur.", "Menemen Olayı’ndan önce kurularak bu olayın çıkmasını engellemeye çalışmıştır."],
-  a: "C",
-  s: `<p>Metinde SCF çevresinde rejim karşıtlarının toplanması ve Menemen Olayı’nın inkılapların yeterince benimsenmediğini gösterdiği, bunun üzerine inkılapları halka benimsetmek için Halkevlerinin açıldığı anlatılıyor. Yani olumsuz gelişmeler bu çalışmanın başlatılmasına yol açmıştır (neden → sonuç, C ✓).</p><p>A ✗: Metinde Halkevlerinin amacı inkılapları benimsetmek olarak verilmiştir; çok partili hayata hemen geçmekle ilgili bilgi yoktur. B ✗: Spor, birçok şubeden yalnızca biridir. D ✗: Halkevleri 1932’de, Menemen Olayı (1930) ise daha önce yaşanmıştır. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki şemada 1929–1930 yıllarında yaşanan bazı gelişmeler oluş sırasına göre verilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="1929-1930 gelişmeleri akış şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
-<defs><marker id="ok12" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#475569"/></marker></defs>
-<rect x="10" y="20" width="170" height="64" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
-<text x="95" y="42" font-size="11.5" fill="#0c4a6e" text-anchor="middle">1929 Dünya Ekonomik</text>
-<text x="95" y="57" font-size="11.5" fill="#0c4a6e" text-anchor="middle">Bunalımı Türkiye’yi</text>
-<text x="95" y="72" font-size="11.5" fill="#0c4a6e" text-anchor="middle">de etkiledi.</text>
-<rect x="195" y="20" width="170" height="64" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
-<text x="280" y="42" font-size="11.5" fill="#0c4a6e" text-anchor="middle">Halkta hoşnutsuzluk arttı;</text>
-<text x="280" y="57" font-size="11.5" fill="#0c4a6e" text-anchor="middle">Meclis’te hükûmeti</text>
-<text x="280" y="72" font-size="11.5" fill="#0c4a6e" text-anchor="middle">eleştiren muhalefet yoktu.</text>
-<rect x="380" y="20" width="170" height="64" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-<text x="465" y="42" font-size="11.5" fill="#14532d" text-anchor="middle">Atatürk’ün isteğiyle</text>
-<text x="465" y="57" font-size="11.5" fill="#14532d" text-anchor="middle">Serbest Cumhuriyet F.</text>
-<text x="465" y="72" font-size="11.5" fill="#14532d" text-anchor="middle">kuruldu (12 Ağustos 1930).</text>
-<rect x="380" y="140" width="170" height="64" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-<text x="465" y="162" font-size="11.5" fill="#7f1d1d" text-anchor="middle">Rejim ve laiklik</text>
-<text x="465" y="177" font-size="11.5" fill="#7f1d1d" text-anchor="middle">karşıtları partinin</text>
-<text x="465" y="192" font-size="11.5" fill="#7f1d1d" text-anchor="middle">çevresinde toplandı.</text>
-<rect x="195" y="140" width="170" height="64" rx="8" fill="#fef3c7" stroke="#d97706"/>
-<text x="280" y="162" font-size="11.5" fill="#78350f" text-anchor="middle">Ali Fethi Bey</text>
-<text x="280" y="177" font-size="11.5" fill="#78350f" text-anchor="middle">partiyi feshetti</text>
-<text x="280" y="192" font-size="11.5" fill="#78350f" text-anchor="middle">(17 Kasım 1930).</text>
-<rect x="10" y="140" width="170" height="64" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-<text x="95" y="162" font-size="11.5" fill="#7f1d1d" text-anchor="middle">Menemen Olayı</text>
-<text x="95" y="177" font-size="11.5" fill="#7f1d1d" text-anchor="middle">yaşandı</text>
-<text x="95" y="192" font-size="11.5" fill="#7f1d1d" text-anchor="middle">(23 Aralık 1930).</text>
-<line x1="180" y1="52" x2="193" y2="52" stroke="#475569" stroke-width="1.5" marker-end="url(#ok12)"/>
-<line x1="365" y1="52" x2="378" y2="52" stroke="#475569" stroke-width="1.5" marker-end="url(#ok12)"/>
-<line x1="465" y1="84" x2="465" y2="138" stroke="#475569" stroke-width="1.5" marker-end="url(#ok12)"/>
-<line x1="380" y1="172" x2="367" y2="172" stroke="#475569" stroke-width="1.5" marker-end="url(#ok12)"/>
-<line x1="195" y1="172" x2="182" y2="172" stroke="#475569" stroke-width="1.5" marker-end="url(#ok12)"/>
-</svg></div>
-<p>Şemadaki bilgilerden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: ["Serbest Cumhuriyet Fırkası’nın kapanmasıyla rejim karşıtı hareketler tamamen sona ermiştir.", "Ekonomik sorunlar, yeni bir muhalefet partisinin kurulmasında etkili olmuştur.", "Serbest Cumhuriyet Fırkası bir yıldan kısa süre faaliyette kalmıştır.", "Rejim karşıtlarının partiye yönelmesi, partinin kapanma sürecini etkilemiştir."],
-  a: "A",
-  s: `<p>Şemanın son kutusunda SCF’nin feshinden yaklaşık bir ay sonra Menemen Olayı’nın yaşandığı görülür. Demek ki partinin kapanmasıyla rejim karşıtı hareketler sona ermemiştir; A’ya ulaşılamaz ✓.</p><p>B’ye ulaşılır: Ekonomik bunalım → hoşnutsuzluk ve denetim eksikliği → yeni parti zinciri kurulmuştur. C’ye ulaşılır: Parti 12 Ağustos 1930’da kurulmuş, 17 Kasım 1930’da feshedilmiştir (yaklaşık üç ay). D’ye ulaşılır: Rejim karşıtlarının toplanması ile fesih art arda gelen neden-sonuç adımlarıdır. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box">II. Dünya Savaşı’nı, demokrasiyle yönetilen devletlerin de içinde bulunduğu blok kazandı. Türkiye 1945’te Birleşmiş Milletlerin kurucu üyeleri arasında yer aldı. Savaş sonrasında oluşan bu yeni dünya düzeni, Türkiye’de de demokratikleşme taleplerini güçlendirdi. 1945’te Cumhuriyet Halk Partisi milletvekillerinden Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan, parti grubuna verdikleri ve <b>Dörtlü Takrir</b> olarak bilinen önergeyle demokratik hak ve özgürlüklerin genişletilmesini istedi. Önergenin reddedilmesinin ardından bu isimler 7 Ocak 1946’da Demokrat Parti’yi kurdu.</div>
-<p>Bu metne göre;</p>
-<p>I. Çok partili hayata geçişte dış gelişmeler de etkili olmuştur.<br>II. Demokratikleşme talebi iktidar partisinin içinden de yükselmiştir.<br>III. Demokrat Parti, Dörtlü Takrir kabul edildiği için kurulmuştur.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "Yalnız III", "II ve III", "I ve II"],
-  a: "D",
-  s: `<p>I ✓: Metinde savaş sonrası yeni dünya düzeninin Türkiye’deki demokratikleşme taleplerini güçlendirdiği açıkça belirtilmiştir. II ✓: Dörtlü Takrir’i verenler iktidardaki CHP’nin milletvekilleridir.</p><p>III ✗: Demokrat Parti, önerge <b>reddedildikten</b> sonra kurulmuştur; “kabul edildiği için” ifadesi neden-sonuç ilişkisini tersine çevirir. III’ü içeren B ve C bu yüzden yanlıştır; A ise II’yi atladığı için eksiktir. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda Türkiye’de yapılan iki genel seçimin bazı özellikleri karşılaştırılmıştır.</p>
-<table class="rt">
-<tr><th>Özellik</th><th>1946 Seçimi</th><th>1950 Seçimi</th></tr>
-<tr><td>Seçim sistemi</td><td>Tek dereceli</td><td>Tek dereceli</td></tr>
-<tr><td>Oy verme ve sayım</td><td>Açık oy, gizli sayım</td><td>Gizli oy, açık sayım</td></tr>
-<tr><td>Seçim sonucu</td><td>Cumhuriyet Halk Partisi iktidarda kaldı.</td><td>Demokrat Parti iktidara geldi.</td></tr>
-</table>
-<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Tek dereceli seçim sistemi ilk kez 1950 seçiminde uygulanmıştır.", "1950 seçiminde seçmenin oyunu gizli kullanması sağlanmış ve iktidar seçim yoluyla el değiştirmiştir.", "1946 seçiminde seçmenler oylarını gizli olarak kullanmıştır.", "İki seçimin sonunda da aynı parti iktidara gelmiştir."],
-  a: "B",
-  s: `<p>Tabloda 1950 seçiminde “gizli oy, açık sayım” uygulandığı ve bu seçimin sonunda Demokrat Parti’nin iktidara geldiği görülür. Yani oyun gizli kullanılması sağlanmış ve iktidar seçimle değişmiştir (B ✓).</p><p>A ✗: Tabloya göre tek dereceli seçim 1946’da da uygulanmıştır. C ✗: 1946’da oylar açık verilmiş, sayım gizli yapılmıştır; “gizli oy” ile “gizli sayım” karıştırılmamalıdır. D ✗: 1946’da CHP iktidarda kalmış, 1950’de DP iktidara gelmiştir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Demokratik sistemlerde muhalefet partileri iktidarın çalışmalarını denetler, eksik ya da hatalı gördükleri uygulamaları eleştirir, kendi çözüm önerilerini halka sunar ve seçimlerde iktidar olmak için yarışır. Atatürk de 1930’da, Meclis’te hükûmeti denetleyecek bir muhalefetin bulunmamasını bir eksiklik olarak görmüş ve yeni bir partinin kurulmasını desteklemiştir.</div>
-<p>Bu bilgilere göre aşağıdakilerden hangisi muhalefetin işlevlerine <b>örnek gösterilemez</b>?</p>`,
-  c: ["Bir muhalefet milletvekilinin Meclis’te hükûmetin vergi uygulamalarını eleştirmesi", "Bir muhalefet partisinin seçimlerden önce halka kendi ekonomi programını açıklaması", "Bir muhalefet partisinin hükûmetin bir kararındaki hatayı belgelerle ortaya koyması", "Hükûmetin aldığı bir kararın valiler tarafından illerde uygulanması"],
-  a: "D",
-  s: `<p>Metne göre muhalefet; denetler, eleştirir, çözüm önerisi sunar ve iktidar için yarışır. A eleştiri, B halka çözüm önerisi sunma, C denetleme örneğidir.</p><p>D ✓: Hükûmet kararının valilerce uygulanması yürütmenin (iktidarın) işidir; muhalefetle ilgisi yoktur. Bu şık, “devlet işi” ile “muhalefet işlevi”ni ayırt edemeyen öğrenciyi yakalar. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Tarih dersinde öğrenciler Terakkiperver Cumhuriyet Fırkası hakkında bildiklerini paylaşmıştır.</p>
-<div class="dialog"><div><b>Ali:</b> Cumhuriyet döneminde kurulan ilk muhalefet partisidir.</div><div><b>Elif:</b> Kurucuları arasında Kâzım Karabekir ve Rauf Orbay gibi Millî Mücadele’nin önde gelen isimleri vardı.</div><div><b>Can:</b> Atatürk’ün isteğiyle onun yakın arkadaşı tarafından kurulmuştu.</div><div><b>Deniz:</b> Ekonomide liberal görüşü savunuyordu.</div></div>
-<p>Buna göre hangi öğrencinin verdiği bilgi <b>yanlıştır</b>?</p>`,
-  c: ["Ali", "Elif", "Can", "Deniz"],
-  a: "C",
-  s: `<p>Ali ✓: TCF (17 Kasım 1924) Cumhuriyet döneminin ilk muhalefet partisidir. Elif ✓: Kâzım Karabekir partinin başkanı, Rauf Orbay kurucularındandır. Deniz ✓: TCF ekonomide liberalizmi savunmuştur.</p><p>Can ✗: Atatürk’ün isteğiyle yakın arkadaşı Ali Fethi (Okyar) Bey tarafından kurulan parti <b>Serbest Cumhuriyet Fırkası</b>’dır (1930). TCF ise kurucularının kendi girişimiyle kurulmuştur. Bu, TCF ile SCF’yi karıştırma yanılgısıdır. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="box">7 Ocak 1946’da Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan tarafından kurulan Demokrat Parti, aynı yıl yapılan genel seçime katıldı. Bu seçim, birden fazla partinin katıldığı ilk genel seçimdi ve tek dereceli olarak yapıldı. Demokrat Parti, 1950 seçimlerinde oyların çoğunluğunu alarak iktidara geldi.</div>
-<p>Bu metinde aşağıdaki sorulardan hangisinin <b>cevabı yoktur</b>?</p>`,
-  c: ["Demokrat Parti ekonomide hangi görüşü savunmuştur?", "Demokrat Parti’nin kurucuları kimlerdir?", "1946 genel seçimi hangi seçim sistemiyle yapılmıştır?", "Demokrat Parti hangi seçimin sonunda iktidara gelmiştir?"],
-  a: "A",
-  s: `<p>B’nin cevabı metinde vardır: Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan. C’nin cevabı vardır: Tek dereceli. D’nin cevabı vardır: 1950 seçimleri.</p><p>A ✓: Metinde Demokrat Parti’nin ekonomi politikasıyla ilgili hiçbir bilgi verilmemiştir. Öğrenci bunu başka kaynaktan biliyor olsa bile soru yalnızca metne göre sorulmaktadır (2021 LGS’deki “cevabı yoktur” kalıbı). Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda bazı gelişmeler ile bunların sonuçları eşleştirilmiştir.</p>
-<table class="rt">
-<tr><th>Satır</th><th>Gelişme (neden)</th><th>Sonuç</th></tr>
-<tr><td>I</td><td>Şeyh Sait İsyanı’nın çıkması</td><td>Takrir-i Sükûn Kanunu’nun çıkarılması</td></tr>
-<tr><td>II</td><td>Menemen Olayı’nın yaşanması</td><td>Kadınlara belediye seçimlerinde seçme ve seçilme hakkı verilmesi</td></tr>
-<tr><td>III</td><td>Serbest Cumhuriyet Fırkası’na rejim karşıtlarının yönelmesi</td><td>Partinin kurucusu tarafından feshedilmesi</td></tr>
-<tr><td>IV</td><td>Ordunun siyasetin dışında tutulmak istenmesi</td><td>Komutanlardan askerlik ile milletvekilliği arasında tercih yapmalarının istenmesi</td></tr>
-</table>
-<p>Buna göre hangi satırdaki neden-sonuç ilişkisi <b>hatalıdır</b>?</p>`,
-  c: ["I", "II", "III", "IV"],
-  a: "B",
-  s: `<p>I ✓: Takrir-i Sükûn Kanunu, Şeyh Sait İsyanı üzerine 4 Mart 1925’te çıkarılmıştır. III ✓: SCF, rejim karşıtlarının partiye yönelmesi üzerine Ali Fethi Bey tarafından feshedilmiştir. IV ✓: Komutanlardan tercih istenmesi, ordunun siyasetten ayrılması amacına yöneliktir.</p><p>II ✗: Kadınlara belediye seçimlerinde hak 3 Nisan 1930’da tanınmıştır; Menemen Olayı ise 23 Aralık 1930’da yaşanmıştır. Sonuç, nedenden önce gerçekleşemeyeceği için bu eşleştirme hatalıdır. Ayrıca kadın hakları, bir isyana tepki olarak değil, eşitlik anlayışıyla verilmiştir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Bir öğrenci, 1930 yılında yaşanan gelişmeleri gazete manşeti biçiminde canlandırmıştır (manşetler öğrenci tarafından yazılmıştır).</p>
-<div class="box">• <b>Nisan:</b> “Kadınlarımız belediye seçimlerinde oy verecek!”<br>• <b>Ağustos:</b> “Yeni bir fırka doğdu: Serbest Cumhuriyet Fırkası”<br>• <b>Kasım:</b> “Fethi Bey fırkasını feshetti”<br>• <b>Aralık:</b> “Menemen’de irtica: Kubilay şehit edildi”</div>
-<p>Öğrenci bu listeye aşağıdaki manşetlerden hangisini eklerse <b>yanlış</b> yapmış olur?</p>`,
-  c: ["“Belediye seçimlerinde iki fırka yarıştı”", "“Fethi Bey İzmir’de halkla buluştu”", "“Dünya ekonomik bunalımının etkileri sürüyor”", "“Kadınlara milletvekili seçme ve seçilme hakkı tanındı”"],
-  a: "D",
-  s: `<p>A 1930’a uygundur: Sonbaharda yapılan belediye seçimlerine CHF ile birlikte SCF de katılmıştır. B uygundur: Ali Fethi Bey Eylül 1930’da İzmir’e gitmiştir. C uygundur: 1929’da başlayan dünya ekonomik bunalımının etkileri 1930’da da sürmüştür.</p><p>D ✗: Kadınlara milletvekili seçme ve seçilme hakkı <b>5 Aralık 1934</b>’te tanınmıştır; 1930’da tanınan hak yalnızca belediye seçimleriyle ilgilidir. Bu şık, hakların aşamalı verildiğini unutan öğrenciyi yakalar. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="box">• Şeyh Sait İsyanı’nda dinî duygular kullanılarak halk Cumhuriyet’e karşı ayaklandırılmaya çalışıldı.<br>• Menemen’de kendini “mehdi” ilan eden Derviş Mehmet, halkı laik düzene karşı kışkırtmaya çalıştı.<br>• Serbest Cumhuriyet Fırkası’nın çevresinde laiklik karşıtlarının toplanması partinin kapanmasında etkili oldu.</div>
-<p>Bu gelişmeler, aşağıdaki Atatürk ilkelerinden hangisinin korunmasının önemini <b>en açık</b> biçimde ortaya koymaktadır?</p>`,
-  c: ["Devletçilik", "Milliyetçilik", "Laiklik", "Halkçılık"],
-  a: "C",
-  s: `<p>Üç gelişmenin ortak noktası, dinî duyguların siyasete alet edilerek laik Cumhuriyet düzenine karşı kullanılmasıdır. Din ile devlet işlerinin birbirinden ayrılmasını esas alan ilke <b>laiklik</b>tir (C ✓).</p><p>A ✗: Devletçilik ekonomiyle ilgilidir; metinde ekonomik bir konu yoktur. B ✗: Milliyetçilik millî birlik ve bağımsızlıkla ilgilidir; maddelerde vurgulanan ortak tehdit laik düzene yöneliktir. D ✗: Halkçılık eşitlik ve ayrıcalıkların kaldırılmasıyla ilgilidir; maddelerde bu konuya değinilmemiştir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda Cumhuriyet rejimine yönelik iki olay karşılaştırılmıştır.</p>
-<table class="rt">
-<tr><th>Özellik</th><th>Şeyh Sait İsyanı (1925)</th><th>Menemen Olayı (1930)</th></tr>
-<tr><td>Amaç</td><td>Cumhuriyet’i ve laik düzeni yıkmak</td><td>Laik Cumhuriyet düzenini yıkmak</td></tr>
-<tr><td>Kullanılan yöntem</td><td>Dinî duyguları kullanarak halkı ayaklandırmak</td><td>Kendini “mehdi” ilan eden Derviş Mehmet’in dinî duyguları kullanarak halkı kışkırtması</td></tr>
-<tr><td>Alınan tedbir</td><td>Takrir-i Sükûn Kanunu çıkarıldı.</td><td>Bölgede sıkıyönetim ilan edildi.</td></tr>
-<tr><td>Yargılama</td><td>İstiklal Mahkemesi</td><td>Divan-ı Harp</td></tr>
-</table>
-<p>Tablodaki bilgilere göre iki olay için;</p>
-<p>I. Dinî duygular istismar edilmiştir.<br>II. Hükûmet aynı kanunu çıkararak önlem almıştır.<br>III. Laik Cumhuriyet düzeni hedef alınmıştır.</p>
-<p>yargılarından hangileri <b>ortak olarak söylenebilir</b>?</p>`,
-  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
-  a: "B",
-  s: `<p>I ✓: “Kullanılan yöntem” satırında iki olayda da dinî duyguların kullanıldığı görülür. III ✓: “Amaç” satırında ikisinin de laik Cumhuriyet düzenini yıkmayı hedeflediği yazıyor.</p><p>II ✗: Şeyh Sait İsyanı’nda Takrir-i Sükûn Kanunu çıkarılmış, Menemen Olayı’nda ise bölgede sıkıyönetim ilan edilmiştir; alınan tedbirler aynı değildir. II’yi içeren C ve D, iki olayı tek tip sanan öğrencinin yanlışıdır; A ise III’ü atladığı için eksiktir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><b>Yargı:</b> “Atatürk döneminde Cumhuriyet’e yönelik iç tehditler, çok partili hayata geçiş denemelerini olumsuz etkilemiştir.”</div>
-<p>Aşağıdakilerden hangisi bu yargıyı destekleyen <b>en güçlü kanıt</b>tır?</p>`,
-  c: ["Halk Fırkası’nın 1924’te adını Cumhuriyet Halk Fırkası olarak değiştirmesi", "Kadınlara 1934’te milletvekili seçme ve seçilme hakkı verilmesi", "Türkiye’nin 1932’de Milletler Cemiyetine üye olması", "Şeyh Sait İsyanı’nın ardından Terakkiperver Cumhuriyet Fırkası’nın kapatılması"],
-  a: "D",
-  s: `<p>Yargının iki parçası vardır: bir <b>iç tehdit</b> ve bunun <b>çok partili hayata olumsuz etkisi</b>. Şeyh Sait İsyanı bir iç tehdittir; isyanın ardından ilk muhalefet partisi olan TCF’nin kapatılması da çok partili hayat denemesinin sona ermesidir. İki parça birlikte bulunduğu için D en güçlü kanıttır ✓.</p><p>A ✗: Bir partinin ad değiştirmesi bir tehdit ya da olumsuz etki değildir. B ✗: Kadınlara siyasi hak verilmesi demokrasiyi güçlendiren bir adımdır, yargının tersini çağrıştırır. C ✗: Milletler Cemiyetine üyelik dış politikayla ilgilidir; iç tehditle bağlantısı yoktur. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Bir öğrenci, Cumhuriyet’in ilk yıllarında yaşanan bazı gelişmeleri aşağıdaki gibi iki gruba ayırmıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Olayların iki gruba ayrılması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
-<rect x="8" y="8" width="268" height="214" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="142" y="32" font-size="12.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Demokratikleşme yolunda</text>
-<text x="142" y="48" font-size="12.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">atılan adımlar</text>
-<rect x="22" y="62" width="240" height="30" rx="6" fill="#ffffff" stroke="#93c5fd"/><text x="142" y="82" font-size="11.5" fill="#1e293b" text-anchor="middle">Halk Fırkası’nın kurulması (1923)</text>
-<rect x="22" y="100" width="240" height="30" rx="6" fill="#ffffff" stroke="#93c5fd"/><text x="142" y="120" font-size="11.5" fill="#1e293b" text-anchor="middle">TCF’nin kurulması (1924)</text>
-<rect x="22" y="138" width="240" height="30" rx="6" fill="#ffffff" stroke="#93c5fd"/><text x="142" y="158" font-size="11.5" fill="#1e293b" text-anchor="middle">Menemen Olayı (1930)</text>
-<rect x="22" y="176" width="240" height="30" rx="6" fill="#ffffff" stroke="#93c5fd"/><text x="142" y="196" font-size="11.5" fill="#1e293b" text-anchor="middle">Kadınlara milletvekilliği hakkı (1934)</text>
-<rect x="284" y="8" width="268" height="214" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-<text x="418" y="32" font-size="12.5" font-weight="bold" fill="#7f1d1d" text-anchor="middle">Cumhuriyet rejimine</text>
-<text x="418" y="48" font-size="12.5" font-weight="bold" fill="#7f1d1d" text-anchor="middle">yönelik tehditler</text>
-<rect x="298" y="62" width="240" height="30" rx="6" fill="#ffffff" stroke="#fca5a5"/><text x="418" y="82" font-size="11.5" fill="#1e293b" text-anchor="middle">Şeyh Sait İsyanı (1925)</text>
-<rect x="298" y="100" width="240" height="30" rx="6" fill="#ffffff" stroke="#fca5a5"/><text x="418" y="120" font-size="11.5" fill="#1e293b" text-anchor="middle">İzmir Suikast Girişimi (1926)</text>
-</svg></div>
-<p>Öğrencinin <b>yanlış gruba</b> yerleştirdiği gelişme aşağıdakilerden hangisidir?</p>`,
-  c: ["Menemen Olayı (1930)", "Terakkiperver Cumhuriyet Fırkası’nın kurulması (1924)", "İzmir Suikast Girişimi (1926)", "Kadınlara milletvekili seçme ve seçilme hakkı tanınması (1934)"],
-  a: "A",
-  s: `<p>Menemen Olayı, Derviş Mehmet ve yandaşlarının laik Cumhuriyet düzenine karşı ayaklandığı, Asteğmen Kubilay ile bekçiler Hasan ve Şevki’nin şehit edildiği bir olaydır. Bu nedenle demokratikleşme adımı değil, <b>Cumhuriyet rejimine yönelik bir tehdittir</b>; sağdaki gruba yazılmalıydı (A ✓).</p><p>B ✗: TCF’nin kurulması ilk çok partili hayat denemesidir; doğru gruptadır. C ✗: İzmir Suikast Girişimi Cumhuriyet’e yönelik bir tehdittir; doğru gruptadır. D ✗: Kadınlara milletvekilliği hakkı millî iradenin Meclis’e tam yansımasını sağlayan bir demokratikleşme adımıdır; doğru gruptadır. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box">Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası, programlarında tek dereceli seçim sistemini savunmuştu. Serbest Cumhuriyet Fırkası ayrıca kadınlara siyasi haklar tanınmasını savunmuştu. İki parti de kısa sürede kapandı ve hiçbiri iktidara gelemedi. Kadınlara milletvekili seçme ve seçilme hakkı 1934’te tanındı; tek dereceli seçim sistemine ise 1946’da geçildi.</div>
-<p>Bu metne göre;</p>
-<p>I. Muhalefet partilerinin savunduğu bazı görüşler, bu partiler kapandıktan sonra hayata geçirilmiştir.<br>II. Kadınlara milletvekilliği hakkı, Serbest Cumhuriyet Fırkası iktidara geldiği için tanınmıştır.<br>III. Atatürk döneminde milletvekilleri halk tarafından doğrudan seçilmiştir.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["I ve II", "II ve III", "Yalnız I", "I ve III"],
-  a: "C",
-  s: `<p>I ✓: Tek dereceli seçim ve kadınlara siyasi haklar muhalefet partilerinin programlarında yer almış; partiler kapandıktan sonra, 1934’te ve 1946’da hayata geçmiştir.</p><p>II ✗: Metinde iki partinin de iktidara gelemediği açıkça yazıyor. III ✗: Tek dereceli seçime 1946’da geçildiğine göre Atatürk döneminde (1923–1938) seçimler iki dereceliydi; halk milletvekillerini doğrudan seçmiyordu. II veya III’ü içeren A, B ve D şıkları bu yüzden yanlıştır. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="box">20 Nisan 1924’te kabul edilen 1924 Anayasası’nın 1. maddesi <b>“Türkiye Devleti bir Cumhuriyettir.”</b> hükmünü taşıyordu. Anayasanın 102. maddesinde ise devlet şeklinin Cumhuriyet olduğunu belirten birinci maddenin değiştirilmesinin <b>hiçbir şekilde teklif dahi edilemeyeceği</b> belirtilmişti (sadeleştirilmiştir).</div>
-<p>Aşağıdakilerden hangisi, 102. maddedeki bu hükümle <b>aynı amaca</b> yönelik olarak alınmış bir önlemdir?</p>`,
-  c: ["Şeyh Sait İsyanı sırasında Takrir-i Sükûn Kanunu’nun çıkarılması", "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması", "Serbest Cumhuriyet Fırkası’nın kurulmasının desteklenmesi", "Tek dereceli seçim sistemine geçilmesi"],
-  a: "A",
-  s: `<p>102. maddedeki hüküm, Cumhuriyet rejimini anayasal güvence altına alarak <b>rejimi korumayı</b> amaçlar. Şeyh Sait İsyanı sırasında çıkarılan Takrir-i Sükûn Kanunu da Cumhuriyet’i tehdit eden bir isyan karşısında rejimi korumak için alınmış bir önlemdir (A ✓).</p><p>B, C ve D ✗: Bu üçü rejimi korumaya değil, demokrasinin genişlemesine (katılımın artmasına, çoğulculuğa, halkın temsilcisini doğrudan seçmesine) yönelik adımlardır. Öğrenci “hepsi Cumhuriyet’le ilgili” diye düşünürse yanılır; soru ortak <b>amacı</b> sormaktadır. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıda Türkiye’de demokrasiyle ilgili bazı gelişmeler verilmiştir:</p>
-<div class="box">I. Dörtlü Takrir’in verilmesi<br>II. Serbest Cumhuriyet Fırkası’nın feshedilmesi<br>III. Kadınlara milletvekili seçme ve seçilme hakkı tanınması<br>IV. Takrir-i Sükûn Kanunu’nun kabul edilmesi</div>
-<p>Bu gelişmelerin oluş sırası aşağıdakilerden hangisidir?</p>`,
-  c: ["II – IV – III – I", "IV – III – II – I", "IV – II – I – III", "IV – II – III – I"],
-  a: "D",
-  s: `<p>Tarihler: Takrir-i Sükûn Kanunu 4 Mart 1925 (IV), SCF’nin feshi 17 Kasım 1930 (II), kadınlara milletvekilliği hakkı 5 Aralık 1934 (III), Dörtlü Takrir 1945 (I). Sıra: <b>IV – II – III – I</b> (D ✓).</p><p>A ✗: SCF’nin feshi 1925’ten önce gösterilmiştir. B ✗: Kadın hakları (1934), SCF’nin feshinden (1930) önce gösterilmiştir. C ✗: Dörtlü Takrir (1945), kadınlara milletvekilliği hakkından (1934) önce gösterilmiştir; Dörtlü Takrir’i Atatürk dönemine ait sanmak tipik bir kronoloji yanılgısıdır. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="box">5 Aralık 1934’teki anayasa değişikliğinin ardından yapılan ilk milletvekili genel seçimi 8 Şubat 1935’te tamamlandı. O dönemde seçimler iki dereceliydi: Birinci seçmenler ikinci seçmenleri, ikinci seçmenler de milletvekillerini seçiyordu. Bu seçimin sonunda 17 kadın milletvekili TBMM’ye girdi.</div>
-<p>Bu metne göre 1935 seçimiyle ilgili;</p>
-<p>I. Kadınlar ilk kez bir milletvekili seçimine seçmen olarak katılmıştır.<br>II. Milletvekillerini halk doğrudan seçmiştir.<br>III. Meclis’te kadınlar da temsil edilmeye başlamıştır.</p>
-<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "I ve III", "II ve III", "I, II ve III"],
-  a: "B",
-  s: `<p>I ✓: Kadınlara milletvekili seçme hakkı 5 Aralık 1934’te verilmiş, bu seçim de değişiklikten sonraki <b>ilk</b> genel seçim olmuştur; demek ki kadınlar ilk kez bir milletvekili seçimine katılmıştır. III ✓: 17 kadın milletvekili Meclis’e girmiştir.</p><p>II ✗: Metne göre seçim iki dereceliydi; halk ikinci seçmenleri, ikinci seçmenler milletvekillerini seçmiştir. Kadın hakları ile tek dereceli seçimi aynı döneme ait sanan öğrenci C veya D’yi işaretler. A ise III’ü atladığı için eksiktir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki tabloda Osmanlı Devleti ile Türkiye Cumhuriyeti’nde devlet başkanlığı karşılaştırılmıştır.</p>
-<table class="rt">
-<tr><th>Özellik</th><th>Osmanlı Devleti (saltanat)</th><th>Türkiye Cumhuriyeti (29 Ekim 1923 sonrası)</th></tr>
-<tr><td>Devlet başkanının belirlenmesi</td><td>Hanedan üyeleri arasından, veraset yoluyla</td><td>TBMM tarafından, milletvekilleri arasından seçimle</td></tr>
-<tr><td>Görev süresi</td><td>Belirli bir süre sınırı yoktu.</td><td>Bir seçim dönemi</td></tr>
-<tr><td>Egemenliğin kaynağı</td><td>Hanedan</td><td>Millet</td></tr>
-</table>
-<p>Tablodaki bilgiler, Cumhuriyet’in ilanıyla aşağıdakilerden hangisinin gerçekleştiğini gösterir?</p>`,
-  c: ["Devlet yönetiminde hanedanın yetkileri artırılmıştır.", "Devlet başkanı halk tarafından doğrudan seçilmeye başlanmıştır.", "Devlet başkanlığı, millî egemenliğe dayanan ve seçimle belirlenen bir makam hâline gelmiştir.", "Çok partili siyasi hayata geçilmiştir."],
-  a: "C",
-  s: `<p>Tabloya göre Cumhuriyet’le birlikte devlet başkanı veraset yoluyla değil seçimle belirlenmiş, belirli bir süre için görev yapmış ve egemenliğin kaynağı hanedan değil millet olmuştur. Yani devlet başkanlığı millî egemenliğe dayanan, seçimle belirlenen bir makam olmuştur (C ✓).</p><p>A ✗: Hanedanın yetkileri artmamış, egemenliğin kaynağı millete geçmiştir. B ✗: Tabloya göre Cumhurbaşkanını halk değil <b>TBMM</b> seçmektedir; “seçim” kelimesine takılan öğrenci bu şıkka yönelir. D ✗: Tabloda partilerle ilgili bilgi yoktur; ilk muhalefet partisi ise 1924’te kurulmuştur. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdaki grafikte 1924–1947 yılları arasında TBMM’de temsil edilen siyasi parti sayısı gösterilmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 260" width="560" role="img" aria-label="TBMM’de temsil edilen siyasi parti sayısı 1924-1947" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="260" fill="#ffffff"/>
-<text x="280" y="20" font-size="12.5" font-weight="bold" fill="#1e293b" text-anchor="middle">TBMM’de temsil edilen siyasi parti sayısı (1924–1947)</text>
-<line x1="60" y1="210" x2="540" y2="210" stroke="#e2e8f0"/>
-<text x="52" y="214" font-size="11" fill="#334155" text-anchor="end">0</text>
-<line x1="60" y1="150" x2="540" y2="150" stroke="#e2e8f0"/>
-<text x="52" y="154" font-size="11" fill="#334155" text-anchor="end">1</text>
-<line x1="60" y1="90" x2="540" y2="90" stroke="#e2e8f0"/>
-<text x="52" y="94" font-size="11" fill="#334155" text-anchor="end">2</text>
-<line x1="60" y1="210" x2="540" y2="210" stroke="#334155" stroke-width="1.5"/>
-<line x1="60" y1="210" x2="60" y2="60" stroke="#334155" stroke-width="1.5"/>
-<text x="18" y="135" font-size="11" fill="#334155" text-anchor="middle" transform="rotate(-90 18 135)">Parti sayısı</text>
-<line x1="60.0" y1="210" x2="60.0" y2="215" stroke="#334155"/>
-<text x="60.0" y="228" font-size="11" fill="#334155" text-anchor="middle">1924</text>
-<line x1="101.7" y1="210" x2="101.7" y2="215" stroke="#334155"/>
-<text x="101.7" y="228" font-size="11" fill="#334155" text-anchor="middle">1926</text>
-<line x1="143.5" y1="210" x2="143.5" y2="215" stroke="#334155"/>
-<text x="143.5" y="228" font-size="11" fill="#334155" text-anchor="middle">1928</text>
-<line x1="185.2" y1="210" x2="185.2" y2="215" stroke="#334155"/>
-<text x="185.2" y="228" font-size="11" fill="#334155" text-anchor="middle">1930</text>
-<line x1="227.0" y1="210" x2="227.0" y2="215" stroke="#334155"/>
-<text x="227.0" y="228" font-size="11" fill="#334155" text-anchor="middle">1932</text>
-<line x1="268.7" y1="210" x2="268.7" y2="215" stroke="#334155"/>
-<text x="268.7" y="228" font-size="11" fill="#334155" text-anchor="middle">1934</text>
-<line x1="310.4" y1="210" x2="310.4" y2="215" stroke="#334155"/>
-<text x="310.4" y="228" font-size="11" fill="#334155" text-anchor="middle">1936</text>
-<line x1="352.2" y1="210" x2="352.2" y2="215" stroke="#334155"/>
-<text x="352.2" y="228" font-size="11" fill="#334155" text-anchor="middle">1938</text>
-<line x1="393.9" y1="210" x2="393.9" y2="215" stroke="#334155"/>
-<text x="393.9" y="228" font-size="11" fill="#334155" text-anchor="middle">1940</text>
-<line x1="435.7" y1="210" x2="435.7" y2="215" stroke="#334155"/>
-<text x="435.7" y="228" font-size="11" fill="#334155" text-anchor="middle">1942</text>
-<line x1="477.4" y1="210" x2="477.4" y2="215" stroke="#334155"/>
-<text x="477.4" y="228" font-size="11" fill="#334155" text-anchor="middle">1944</text>
-<line x1="519.1" y1="210" x2="519.1" y2="215" stroke="#334155"/>
-<text x="519.1" y="228" font-size="11" fill="#334155" text-anchor="middle">1946</text>
-<path d="M60.0,150.0 H78.3 V90.0 H89.6 V150.0 H198.0 V90.0 H203.5 V150.0 H519.5 V90.0 H540.0 V90.0 H540.0" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<line x1="78.3" y1="86" x2="78.3" y2="66" stroke="#64748b" stroke-dasharray="3,2"/>
-<text x="74.3" y="60" font-size="11" fill="#1e293b">TCF: 17 Kasım 1924 – 3 Haziran 1925</text>
-<line x1="198.0" y1="86" x2="198.0" y2="76" stroke="#64748b" stroke-dasharray="3,2"/>
-<text x="194.0" y="73" font-size="11" fill="#1e293b">SCF: 12 Ağustos – 17 Kasım 1930</text>
-<text x="540" y="82" font-size="11" fill="#1e293b" text-anchor="end">DP: 7 Ocak 1946</text>
-<text x="370" y="142" font-size="11" fill="#475569" text-anchor="middle">Yalnızca Cumhuriyet Halk Fırkası / Partisi</text>
-<text x="280" y="250" font-size="11" fill="#475569" text-anchor="middle">TCF: Terakkiperver Cumhuriyet F. · SCF: Serbest Cumhuriyet F. · DP: Demokrat Parti</text>
-</svg></div>
-<p>Grafiğe göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>`,
-  c: ["Atatürk döneminde Meclis’te muhalefet partisi bulunan sürelerin toplamı on yılı aşmıştır.", "1925–1930 yılları arasında Meclis’te muhalefet partisi bulunmamıştır.", "Meclis’te muhalefet partisinin bulunduğu ilk dönem, ikinci dönemden daha uzun sürmüştür.", "1946’da Meclis’te yeniden birden fazla parti temsil edilmeye başlanmıştır."],
-  a: "A",
-  s: `<p>Grafikte Atatürk döneminde parti sayısının yalnızca iki kısa aralıkta 2’ye çıktığı görülür: TCF (17 Kasım 1924 – 3 Haziran 1925, yaklaşık 6,5 ay) ve SCF (12 Ağustos – 17 Kasım 1930, yaklaşık 3 ay). Toplam süre bir yılı bile bulmaz; “on yılı aşmıştır” denemez (A ✓).</p><p>B söylenebilir: Haziran 1925 ile Ağustos 1930 arasında sayı 1’dir. C söylenebilir: TCF dönemi (≈ 6,5 ay) SCF döneminden (≈ 3 ay) uzundur. D söylenebilir: 7 Ocak 1946’da DP’nin kurulmasıyla sayı yeniden 2 olmuştur. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Aşağıdakilerin hangisinde verilen neden-sonuç ilişkisi <b>doğru</b> kurulmuştur?</p>`,
-  c: ["Kadınlara milletvekili seçme hakkı verildi → Şeyh Sait İsyanı çıktı.", "Serbest Cumhuriyet Fırkası feshedildi → Takrir-i Sükûn Kanunu çıkarıldı.", "Demokrat Parti kuruldu → Dörtlü Takrir verildi.", "İzmir suikast girişimi ortaya çıkarıldı → İstiklal Mahkemesinde yargılamalar yapıldı."],
-  a: "D",
-  s: `<p>D ✓: 1926’da İzmir suikast girişimi Giritli Şevki’nin ihbarıyla ortaya çıkarılmış, ardından sorumlular İstiklal Mahkemesinde yargılanmıştır; neden önce, sonuç sonra gelir.</p><p>A ✗: Şeyh Sait İsyanı 1925’te, kadınlara milletvekilliği hakkı 1934’te gerçekleşmiştir; sonuç nedenden önce olamaz. B ✗: Takrir-i Sükûn Kanunu 1925’te Şeyh Sait İsyanı üzerine çıkarılmıştır; SCF’nin feshi 1930’dadır. C ✗: İlişki terstir: Dörtlü Takrir (1945) reddedildikten sonra Demokrat Parti (1946) kurulmuştur. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Bir öğretmen, çok partili hayatla ilgili şu açıklamayı yapmıştır:</p>
-<div class="box">“Çok partili bir demokraside partiler, rejimin temel esaslarında uzlaşır; aralarındaki farklılıklar ekonomi, eğitim, yönetim gibi konulardaki politikalarında ortaya çıkar. Bir muhalefet partisi, rejimi yıkmak isteyenlerin sığınağı hâline gelirse çok partili hayat zarar görür.”</div>
-<p>Öğretmenin açıklamasına göre aşağıdaki gelişmelerden hangisi, Atatürk döneminde çok partili hayatın <b>zarar görmesine</b> örnektir?</p>`,
-  c: ["Terakkiperver Cumhuriyet Fırkası’nın ekonomide Cumhuriyet Halk Fırkası’ndan farklı olarak liberalizmi savunması", "Serbest Cumhuriyet Fırkası’nın çevresinde laik Cumhuriyet karşıtlarının toplanmaya başlaması", "Serbest Cumhuriyet Fırkası’nın vergilerin hafifletilmesini önermesi", "Muhalefet partilerinin tek dereceli seçim sistemini savunması"],
-  a: "B",
-  s: `<p>Öğretmene göre çok partili hayat, bir muhalefet partisi rejim karşıtlarının sığınağı olduğunda zarar görür. SCF’nin çevresinde laik Cumhuriyet karşıtlarının toplanması tam olarak bu durumdur; nitekim parti bu yüzden kısa sürede feshedilmiştir (B ✓).</p><p>A, C ve D ✗: Ekonomide liberalizm, vergi indirimi önerisi ve tek dereceli seçim, partilerin <b>politika</b> farklılıklarıdır. Öğretmenin açıklamasına göre bunlar çok partili hayatın doğal ve sağlıklı parçasıdır, zarar örneği değildir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="box">17 Şubat 1926’da kabul edilen Türk Medeni Kanunu ile resmî nikâh zorunlu hâle getirildi ve tek eşle evlilik esas alındı. Kadınlara boşanma hakkı tanındı. Mirasta kadın ile erkek eşit hâle getirildi. Mahkemelerde kadının tanıklığı erkeğinkiyle eşit kabul edildi.</div>
-<p>Bu metinde Türk kadınının kazandığı haklarla ilgili aşağıdakilerden hangisine <b>değinilmemiştir</b>?</p>`,
-  c: ["Aile hayatındaki hakları", "Miras hakkı", "Siyasi hakları", "Mahkemedeki hukuki eşitliği"],
-  a: "C",
-  s: `<p>Metinde resmî nikâh, tek eşle evlilik ve boşanma hakkıyla <b>aile hayatındaki haklara</b> (A), mirasta eşitlikle <b>miras hakkına</b> (B), tanıklıkta eşitlikle <b>mahkemedeki hukuki eşitliğe</b> (D) değinilmiştir.</p><p>C ✓: Metinde seçme ve seçilme gibi <b>siyasi haklardan</b> söz edilmemiştir. Kadınlara siyasi haklar Medeni Kanun’la değil, 1930 (belediye), 1933 (muhtarlık) ve 1934 (milletvekilliği) düzenlemeleriyle tanınmıştır. Medeni Kanun ile siyasi hakları aynı düzenleme sanan öğrenci bu soruda yanılır. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="box">(I) Atatürk, 1930’da yakın arkadaşı Ali Fethi Bey’den yeni bir parti kurmasını istedi. (II) Serbest Cumhuriyet Fırkası 12 Ağustos 1930’da kuruldu. (III) Parti, aynı yılın 17 Kasım’ında kurucusu tarafından feshedildi. (IV) Bu kısa deneyim, Türk demokrasisinin gelişimi açısından son derece değerli bir ders olmuştur.</div>
-<p>Bu metindeki numaralanmış cümlelerden hangisi <b>yorum</b> niteliğindedir?</p>`,
-  c: ["I", "II", "III", "IV"],
-  a: "D",
-  s: `<p>I, II ve III: Kimin ne istediği, partinin hangi tarihte kurulduğu ve hangi tarihte feshedildiği belgelerle kanıtlanabilen <b>bilgi</b>lerdir (olgu).</p><p>IV ✓: “Son derece değerli bir ders olmuştur” ifadesi kişiden kişiye değişebilen bir değerlendirmedir; kanıtlanabilir bir olgu değil, <b>yorum</b>dur. Tarih ve kişi adı içeren cümleleri bilgi, değer yargısı içeren cümleleri yorum olarak ayırmak gerekir. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Bir öğrenci, “demokrasi” kavramıyla ilgili aşağıdaki kavram haritasını hazırlamış ve her kavrama Atatürk döneminden bir örnek yazmıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Demokrasi kavram haritası" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="250" fill="#ffffff"/>
-<line x1="230" y1="60" x2="280" y2="125" stroke="#64748b" stroke-width="1.5"/>
-<line x1="330" y1="60" x2="280" y2="125" stroke="#64748b" stroke-width="1.5"/>
-<line x1="230" y1="190" x2="280" y2="125" stroke="#64748b" stroke-width="1.5"/>
-<line x1="330" y1="190" x2="280" y2="125" stroke="#64748b" stroke-width="1.5"/>
-<ellipse cx="280" cy="125" rx="62" ry="26" fill="#1e3a8a"/>
-<text x="280" y="130" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">DEMOKRASİ</text>
-<rect x="8" y="14" width="222" height="76" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="119" y="36" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Seçme ve seçilme hakkı</text>
-<text x="119" y="56" font-size="11" fill="#1e293b" text-anchor="middle">Örnek: Kadınlara siyasi</text>
-<text x="119" y="72" font-size="11" fill="#1e293b" text-anchor="middle">hakların tanınması (1930–1934)</text>
-<rect x="330" y="14" width="222" height="76" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="441" y="36" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Çoğulculuk</text>
-<text x="441" y="56" font-size="11" fill="#1e293b" text-anchor="middle">Örnek: Takrir-i Sükûn</text>
-<text x="441" y="72" font-size="11" fill="#1e293b" text-anchor="middle">Kanunu’nun çıkarılması (1925)</text>
-<rect x="8" y="160" width="222" height="76" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="119" y="182" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Anayasal düzen</text>
-<text x="119" y="202" font-size="11" fill="#1e293b" text-anchor="middle">Örnek: 1924 Anayasası’nın</text>
-<text x="119" y="218" font-size="11" fill="#1e293b" text-anchor="middle">kabul edilmesi</text>
-<rect x="330" y="160" width="222" height="76" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="441" y="182" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Siyasetin sivil olması</text>
-<text x="441" y="199" font-size="11" fill="#1e293b" text-anchor="middle">Örnek: Komutanlardan askerlik</text>
-<text x="441" y="214" font-size="11" fill="#1e293b" text-anchor="middle">ile milletvekilliği arasında</text>
-<text x="441" y="229" font-size="11" fill="#1e293b" text-anchor="middle">tercih yapmalarının istenmesi</text>
-</svg></div>
-<p>Kavram haritasında hangi kavram ile örneği <b>yanlış eşleştirilmiştir</b>?</p>`,
-  c: ["Çoğulculuk – Takrir-i Sükûn Kanunu’nun çıkarılması", "Seçme ve seçilme hakkı – Kadınlara siyasi hakların tanınması", "Anayasal düzen – 1924 Anayasası’nın kabul edilmesi", "Siyasetin sivil olması – Komutanlardan askerlik ile milletvekilliği arasında tercih istenmesi"],
-  a: "A",
-  s: `<p>Çoğulculuk, farklı görüşlerin özgürce örgütlenip temsil edilmesidir; buna örnek TCF veya SCF gibi muhalefet partilerinin kurulmasıdır. Takrir-i Sükûn Kanunu ise Şeyh Sait İsyanı sırasında hükûmete olağanüstü yetkiler veren, rejimi koruma amaçlı bir kanundur; bu kanuna dayanılarak TCF kapatılmıştır. Bu yüzden çoğulculuğa örnek olamaz (A ✓).</p><p>B ✗: Kadınlara siyasi haklar seçme ve seçilme hakkının genişlemesidir. C ✗: 1924 Anayasası anayasal düzenin temelidir. D ✗: Komutanlardan tercih istenmesi ordunun siyasetten ayrılması, yani siyasetin sivil olması amacına yöneliktir. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box">26 Ekim 1933’te kadınlara muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme hakkı tanındı. Bunun ardından Ankara’ya bağlı Kazan köyünde muhtar seçilen ve çiftçilikle uğraşan <b>Satı Kadın (Hatı Çırpan)</b>, kadınlara milletvekilliği hakkının tanınmasından sonra yapılan 1935 seçimlerinde Ankara milletvekili olarak TBMM’ye girdi. Satı Kadın, Meclis’e giren ilk kadın milletvekilleri arasında yer aldı.</div>
-<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>`,
-  c: ["Kadınlar, milletvekili olabilmek için önce muhtarlık yapmak zorundaydı.", "İlk kadın milletvekillerinin tamamı büyük şehirlerde yaşayan kadınlardan seçilmiştir.", "Yerel yönetimde görev alan bir kadın, ulusal düzeyde de siyasete katılabilmiştir.", "Kadınlara muhtarlık hakkı, milletvekilliği hakkından sonra tanınmıştır."],
-  a: "C",
-  s: `<p>Metinde Satı Kadın’ın önce köyünde muhtar seçildiği (yerel yönetim), ardından 1935’te milletvekili olarak Meclis’e girdiği (ulusal düzey) anlatılıyor. Demek ki yerel yönetimde görev alan bir kadın ulusal siyasete de katılabilmiştir (C ✓).</p><p>A ✗: Tek bir örnekten herkes için geçerli bir zorunluluk çıkarılamaz (aşırı genelleme). B ✗: Metindeki örnek, bir köyde yaşayan ve çiftçilik yapan bir kadındır; “tamamı” ifadesi metinle çelişir. D ✗: Muhtarlık hakkı 1933’te, milletvekilliği hakkı ise 1934’te tanınmıştır; sıra terstir. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda Atatürk döneminde kurulan iki muhalefet partisinin programlarından bazı maddeler verilmiştir (sadeleştirilmiştir).</p>
-<div class="box"><b>Metin I – Terakkiperver Cumhuriyet Fırkası (1924)</b><br>• Fırka, millet egemenliğine dayanan Cumhuriyet yönetimine bağlıdır.<br>• Milletvekili seçimleri tek dereceli olacaktır.<br>• Yönetimde yerinden yönetim (adem-i merkeziyet) esas alınacaktır.<br>• Ekonomide özel girişim desteklenecektir.<br>• Fırka, dinî düşünce ve inançlara saygılıdır.</div>
-<div class="box"><b>Metin II – Serbest Cumhuriyet Fırkası (1930)</b><br>• Fırka, laik Cumhuriyet esaslarına bağlıdır.<br>• Seçimler tek dereceli olacaktır.<br>• Kadınlara siyasi haklar tanınacaktır.<br>• Ekonomide özel girişim desteklenecek, yabancı sermaye ülkeye çekilecektir.<br>• Vergiler, halkın gücünü aşmayacak biçimde hafifletilecektir.</div>
-<p>Bu metinlere göre iki partinin,</p><p>I. seçme hakkının kullanılış biçimi,<br>II. ekonomide özel girişime bakış,<br>III. kadınlara siyasi hak tanınması,<br>IV. din ve devlet işlerinin ilişkisi</p><p>konularından hangilerinde <b>aynı görüşü</b> savunduğu söylenebilir?</p>`,
-  c: ["I ve II", "I ve III", "II ve IV", "I, II ve III"],
-  a: "A",
-  s: `<p>I ✓: İki programda da seçimlerin tek dereceli olacağı yazıyor. II ✓: İki programda da ekonomide özel girişimin destekleneceği yer alıyor (ikisi de liberal ekonomiyi savunur).</p><p>III ✗: Kadınlara siyasi hak tanınması yalnızca Metin II'de vardır; Metin I bu konuda bir şey söylemez. “Söylenmeyeni ortak sayma” yanılgısı B ve D şıklarını doğurur. IV ✗: Metin I “dinî düşüncelere saygı”dan, Metin II ise “laik Cumhuriyet”ten söz eder. Bu iki ifade aynı görüş olarak eşitlenemez. Üstelik TCF'nin bu maddesi rejim karşıtlarınca kullanılmıştır. C şıkkı bu yanılgıdan gelir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Terakkiperver Cumhuriyet Fırkasının kısa ömrü anlatılmıştır.</p>
-<div class="box">17 Kasım 1924'te kurulan Terakkiperver Cumhuriyet Fırkası, Cumhuriyet döneminin ilk muhalefet partisiydi. Partinin programındaki “Fırka, dinî düşünce ve inançlara saygılıdır.” maddesi, inkılaplardan rahatsız olan kesimlerin partiye yönelmesine yol açtı. Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı. Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, hükûmete rejimi tehdit eden örgütleri kapatma yetkisi verdi. İsyanın bastırılmasından sonra, parti programındaki söz konusu maddenin rejim karşıtlarınca kullanıldığı gerekçesiyle Terakkiperver Cumhuriyet Fırkası, bu kanuna dayanılarak 3 Haziran 1925'te Bakanlar Kurulu kararıyla kapatıldı.</div>
-<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>`,
-  c: ["Terakkiperver Cumhuriyet Fırkası ne kadar süre faaliyette kalmıştır?", "Partinin kapatılmasında hangi kanuna dayanılmıştır?", "İsyana katılanlar hangi mahkemede yargılanmıştır?", "Parti programındaki hangi madde rejim karşıtlarınca kullanılmıştır?"],
-  a: "C",
-  s: `<p>A ✓ cevaplanır: Kuruluş (17 Kasım 1924) ve kapanış (3 Haziran 1925) tarihleri verildiği için süre hesaplanabilir (yaklaşık 6,5 ay). B ✓: “Bu kanuna dayanılarak” denmektedir, yani Takrir-i Sükûn Kanunu. D ✓: “Fırka, dinî düşünce ve inançlara saygılıdır.” maddesi metinde açıkça yazıyor.</p><p>C ✗: İsyancıların İstiklal Mahkemesinde yargılandığı doğrudur, ama bu bilgi metinde <b>yoktur</b>. Öğrencinin bildiği doğru bilgiyi metinde varmış gibi kabul etmesi en güçlü çeldiricidir (2021 LGS'de de aynı tuzak kullanılmıştı). Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki şemada 1925–1926 yıllarında yaşanan bazı gelişmeler oluş sırasına göre verilmiş, üç gelişmenin yeri boş bırakılmıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 150" width="560" role="img" aria-label="1925-1926 gelişmeleri sıralama şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="150" fill="#ffffff"/>
-<rect x="4" y="30" width="98" height="84" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-<text x="53" y="56" font-size="11" font-weight="bold" fill="#991b1b" text-anchor="middle">Şubat 1925</text>
-<text x="53" y="74" font-size="11" fill="#1e293b" text-anchor="middle">Şeyh Sait</text>
-<text x="53" y="89" font-size="11" fill="#1e293b" text-anchor="middle">İsyanı</text>
-<text x="53" y="104" font-size="11" fill="#1e293b" text-anchor="middle">başladı</text>
-<rect x="117" y="30" width="98" height="84" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="166" y="80" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">I</text>
-<rect x="230" y="30" width="98" height="84" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="279" y="80" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">II</text>
-<rect x="343" y="30" width="98" height="84" rx="8" fill="#eff6ff" stroke="#2563eb"/>
-<text x="392" y="80" font-size="22" font-weight="bold" fill="#1d4ed8" text-anchor="middle">III</text>
-<rect x="456" y="30" width="100" height="84" rx="8" fill="#f1f5f9" stroke="#475569"/>
-<text x="506" y="50" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Haziran 1926</text>
-<text x="506" y="66" font-size="11" fill="#1e293b" text-anchor="middle">Ankara</text>
-<text x="506" y="80" font-size="11" fill="#1e293b" text-anchor="middle">Antlaşması ile</text>
-<text x="506" y="94" font-size="11" fill="#1e293b" text-anchor="middle">Musul, Irak'a</text>
-<text x="506" y="108" font-size="11" fill="#1e293b" text-anchor="middle">bırakıldı</text>
-<path d="M103 72 L115 72 M110 67 L115 72 L110 77" stroke="#334155" stroke-width="2" fill="none"/>
-<path d="M216 72 L228 72 M223 67 L228 72 L223 77" stroke="#334155" stroke-width="2" fill="none"/>
-<path d="M329 72 L341 72 M336 67 L341 72 L336 77" stroke="#334155" stroke-width="2" fill="none"/>
-<path d="M442 72 L454 72 M449 67 L454 72 L449 77" stroke="#334155" stroke-width="2" fill="none"/>
-<text x="280" y="138" font-size="11" fill="#475569" text-anchor="middle">Kutular soldan sağa oluş sırasına göre dizilmiştir.</text>
-</svg></div>
-<p><b>K:</b> Takrir-i Sükûn Kanunu'nun kabul edilmesi<br><b>L:</b> Terakkiperver Cumhuriyet Fırkasının kapatılması<br><b>M:</b> Ali Fethi Bey hükûmetinin çekilip yerine İsmet Paşa hükûmetinin kurulması</p>
-<p>Şemada I, II ve III ile gösterilen yerlere sırasıyla hangi gelişmeler yazılmalıdır?</p>`,
-  c: ["K – M – L", "M – K – L", "M – L – K", "L – K – M"],
-  a: "B",
-  s: `<p>İsyan başlayınca, bölgesel önlemlerle yetinen Ali Fethi Bey hükûmeti Mart 1925'in başında çekildi ve yerine İsmet Paşa hükûmeti kuruldu (M). Yeni hükûmet hemen ardından, 4 Mart 1925'te Takrir-i Sükûn Kanunu'nu çıkardı (K). İsyan bastırıldıktan sonra TCF, bu kanuna dayanılarak 3 Haziran 1925'te kapatıldı (L). Musul ise Haziran 1926'da Ankara Antlaşması ile Irak'a bırakıldı. Doğru sıra M – K – L'dir.</p><p>A ✗: Kanunu çıkaran sert tedbirler hükûmetidir. “Kanun önce, hükûmet değişikliği sonra” sırası bu yüzden yanlıştır. C ✗: TCF'nin kapatılması kanuna dayanılarak yapılmıştır, dolayısıyla kanundan önce olamaz. D ✗: Partiyi isyanın ilk sonucu sanmaktan kaynaklanan bir kronoloji hatasıdır. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, Serbest Cumhuriyet Fırkası ile ilgili aşağıdaki yargıları yazmıştır.</p>
-<div class="box">I. Serbest Cumhuriyet Fırkası 12 Ağustos 1930'da kurulmuştur.<br>II. Serbest Cumhuriyet Fırkasının kurulması, Atatürk'ün demokrasiye bağlılığının en açık kanıtıdır.<br>III. Atatürk'ün kız kardeşi Makbule Hanım bu partiye üye olmuştur.<br>IV. Parti, 17 Kasım 1930'da kurucusu Ali Fethi Bey tarafından feshedilmiştir.<br>V. Parti biraz daha uzun yaşasaydı Türkiye, çok partili hayata 1930'larda kalıcı olarak geçebilirdi.</div>
-<p>Bu yargılardan hangileri kanıtlanabilir <b>bilgi</b> niteliğindedir?</p>`,
-  c: ["II ve V", "I, II ve IV", "III ve V", "I, III ve IV"],
-  a: "D",
-  s: `<p>Bilgi (olgu), belge ve kaynaklarla doğruluğu kanıtlanabilen ifadedir. Yorum ise kişisel değerlendirme ya da varsayım içerir.</p><p>I, III ve IV tarih, kişi ve olay bildirir. Kaynaklarla doğrulanabildikleri için bilgidir ✓. II ✗: “En açık kanıtıdır” bir değerlendirmedir; başka biri farklı düşünebilir. Bu yüzden yorumdur. V ✗: “Uzun yaşasaydı … geçebilirdi” gerçekleşmemiş bir durum üzerine yapılmış bir varsayımdır, kanıtlanamaz.</p><p>B şıkkı, olumlu ve “doğru gibi duran” bir değerlendirmeyi bilgi sanma yanılgısından gelir. A ve C şıkları yorumları bilgi olarak almıştır. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Atatürk döneminde yaşamış bir kadının günlüğünden bazı notlar, tarih sırasıyla aşağıda verilmiştir (notlar canlandırma amacıyla yazılmıştır).</p>
-<p>Bu notlardan hangisi tarihî gerçeklerle <b>çelişmektedir</b>?</p>`,
-  c: ["<b>Aralık 1930:</b> Bu sonbaharda yapılan belediye seçimlerinde ilk kez oy kullandım.", "<b>Kasım 1933:</b> Bu ay yapılan milletvekili seçiminde ilk kez oy kullandım.", "<b>Aralık 1934:</b> Anayasada yapılan değişiklikle kadınlara milletvekili seçme ve seçilme hakkı tanındı.", "<b>Mart 1935:</b> Gazeteler, Meclis'e 17 kadın milletvekilinin girdiğini yazıyor."],
-  a: "B",
-  s: `<p>Kadınların siyasi hakları üç aşamada tanınmıştır: belediye seçimleri (3 Nisan 1930), muhtarlık ve ihtiyar heyeti seçimleri (26 Ekim 1933), milletvekili seçimleri (5 Aralık 1934). Kadınlar milletvekili seçimlerinde ilk kez Şubat 1935'te oy kullanmıştır.</p><p>B ✗ (çelişki): Kasım 1933'te kadınların milletvekili seçimlerinde oy kullanma hakkı yoktu. 1933'te yalnızca muhtarlık seçimlerine katılma hakkı gelmiştir. 1933 tarihini “muhtarlık” yerine “milletvekilliği” ile eşleştirmek tipik bir sıralama yanılgısıdır.</p><p>A ✓: 1930 sonbaharındaki belediye seçimlerine kadınlar katıldı. C ✓: Hak 5 Aralık 1934'te tanındı. D ✓: Şubat 1935 seçimlerinde 17 kadın milletvekili seçildi ve Meclis Mart 1935'te açıldı. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Tarih dersinde iki öğrenci, Atatürk döneminde çok partili hayata geçiş denemelerinin neden başarısız olduğunu tartışmıştır.</p>
-<div class="dialog"><div><b>Deniz:</b> Bence asıl neden, Cumhuriyet ve laiklik karşıtlarının bu partileri kendi amaçları için kullanmasıydı. Terakkiperver Fırka da Serbest Fırka da bu yüzden kısa ömürlü oldu.</div><div><b>Ece:</b> Bence toplumun bir kesimi inkılapları henüz benimsememişti. Muhalefet partileri bu nedenle kısa sürede inkılap karşıtlarının toplandığı yerler hâline geldi ve kapanmak zorunda kaldı.</div></div>
-<p>Buna göre iki öğrencinin görüşlerinde <b>ortak</b> olan düşünce aşağıdakilerden hangisidir?</p>`,
-  c: ["Muhalefet partilerinin rejim karşıtlarınca kullanılması, denemelerin başarısız olmasında etkili olmuştur.", "Ekonomik bunalım, muhalefet partilerinin kapanmasına yol açmıştır.", "Muhalefet partilerinin ikisi de hükûmet kararıyla kapatılmıştır.", "Toplumun bir kesimi inkılapları henüz benimsememiştir."],
-  a: "A",
-  s: `<p>Deniz, rejim karşıtlarının partileri “kendi amaçları için kullanmasını” temel neden sayar. Ece de partilerin “inkılap karşıtlarının toplandığı yerler hâline geldiğini” söyler. İkisi de partilerin rejim karşıtlarınca kullanılmasını başarısızlığa bağlar (A ✓).</p><p>B ✗: Ekonomik bunalımdan iki öğrenci de söz etmez (1929 bunalımı SCF'nin kurulmasına zemin hazırlamıştır, kapanmasına değil). C ✗: Bu tarihsel olarak da yanlıştır: TCF Bakanlar Kurulu kararıyla kapatıldı, SCF'yi ise kurucusu feshetti. Konuşmalarda da böyle bir bilgi yoktur. D ✗: Bu düşünce yalnızca Ece'nindir. Tek kişinin görüşünü ortak sanmak bu tip sorulardaki en güçlü çeldiricidir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Cumhuriyetin ilk yıllarında ordu ile siyaset arasındaki ilişkiye yönelik bazı gelişmeler anlatılmıştır.</p>
-<div class="box">Aralık 1923'te kabul edilen bir kanunla, görevdeki askerlerin milletvekili seçilebilmesi için önce askerlikten ayrılmaları şartı getirildi. 1924 sonbaharında ise hem orduda görevli hem de milletvekili olan komutanlardan iki görevden birini seçmeleri istendi. Bazı komutanlar milletvekilliğinden ayrılarak orduda kaldı. Kâzım Karabekir ve Ali Fuat Paşalar ise ordudaki görevlerinden ayrılarak milletvekili olarak Meclis'te kaldı. Kısa bir süre sonra bu iki komutan, Rauf Bey ve Refet Paşa gibi Millî Mücadele'nin önde gelen isimleriyle birlikte Terakkiperver Cumhuriyet Fırkasını kurdu.</div>
-<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>`,
-  c: ["Terakkiperver Cumhuriyet Fırkasının kurucuları arasında Millî Mücadele'de görev yapmış komutanlar vardır.", "Ordunun siyasetten ayrılmasına yönelik düzenlemeler birden fazla aşamada yapılmıştır.", "Komutanların bir kısmı siyasi hayatta kalmayı tercih etmiştir.", "Terakkiperver Cumhuriyet Fırkası, ordunun siyasette etkisini artırmak amacıyla kurulmuştur."],
-  a: "D",
-  s: `<p>A ✓: Ordudan ayrılan Kâzım Karabekir ve Ali Fuat Paşalar, Millî Mücadele'nin önde gelen isimleriyle birlikte partiyi kurmuştur. B ✓: Önce 1923'te bir kanun çıkarılmış, sonra 1924'te komutanlardan tercih yapmaları istenmiştir; yani düzenleme aşamalıdır. C ✓: Kâzım Karabekir ve Ali Fuat Paşalar milletvekilliğini seçmiştir.</p><p>D ✗: Metinde böyle bir amaçtan söz edilmez. Tam tersine, kurucular partiyi kurmadan önce askerlikten ayrılmıştır. “Kurucuları komutan olduğuna göre ordu siyasete karıştı” çıkarımı, metnin vurguladığı ordu-siyaset ayrımını ters okumaktan doğan bir yanılgıdır. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, aşağıdaki tabloda verilen yargıları doğru (D) ya da yanlış (Y) olarak işaretlemiştir.</p>
-<table><tr><th>No</th><th>Yargı</th><th>Öğrencinin işareti</th></tr>
-<tr><td>1</td><td>Halk Fırkası, Cumhuriyet'in ilanından önce kurulmuştur.</td><td>Y</td></tr>
-<tr><td>2</td><td>Halk Fırkasının adı, Terakkiperver Cumhuriyet Fırkası kurulmadan önce “Cumhuriyet Halk Fırkası” olmuştur.</td><td>D</td></tr>
-<tr><td>3</td><td>Terakkiperver Cumhuriyet Fırkası, 1924 Anayasası kabul edildikten sonra kurulmuştur.</td><td>Y</td></tr>
-<tr><td>4</td><td>Serbest Cumhuriyet Fırkası, Takrir-i Sükûn Kanunu yürürlükteyken kurulmuştur.</td><td>Y</td></tr>
-<tr><td>5</td><td>Kadınlar, Serbest Cumhuriyet Fırkası kurulmadan önce belediye seçimlerinde seçme ve seçilme hakkı kazanmıştır.</td><td>D</td></tr></table>
-<p>Buna göre öğrencinin yaptığı işaretlemelerden kaç tanesi <b>doğrudur</b>?</p>`,
-  c: ["1", "2", "3", "4"],
-  a: "C",
-  s: `<p>Tarihleri karşılaştıralım:</p><p>1. Halk Fırkası 9 Eylül 1923'te, Cumhuriyet ise 29 Ekim 1923'te ilan edildi. Yargı doğrudur. Öğrenci Y demiş, işaret yanlıştır ✗.<br>2. Ad değişikliği 10 Kasım 1924'te, TCF'nin kuruluşu 17 Kasım 1924'tedir. Yargı doğrudur. Öğrenci D demiş, işaret doğrudur ✓.<br>3. 1924 Anayasası 20 Nisan 1924'te kabul edildi, TCF ise Kasım 1924'te kuruldu. Yargı doğrudur. Öğrenci Y demiş, işaret yanlıştır ✗.<br>4. Takrir-i Sükûn 1929'da kaldırıldı, SCF 1930'da kuruldu. Yargı yanlıştır. Öğrenci Y demiş, işaret doğrudur ✓.<br>5. Belediye Kanunu 3 Nisan 1930'da, SCF 12 Ağustos 1930'da. Yargı doğrudur. Öğrenci D demiş, işaret doğrudur ✓.</p><p>Doğru işaret sayısı 3'tür (2, 4 ve 5). D şıkkı (4), işaretleri değil yargıları değerlendirip doğru yargıları (1, 2, 3, 5) sayan öğrencinin seçimidir. B şıkkı (2), “Cumhuriyet döneminin ilk partisi Cumhuriyetten sonra kurulmuştur” diye düşünüp 1. işareti de doğru sayan ama 5. yargıda Belediye Kanunu'nu SCF'den sonra sanan öğrenciden gelir. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Atatürk döneminde kadınlara siyasi haklar aşamalı olarak tanınmıştır.</p>
-<p>Buna göre <b>1 Haziran 1934</b> tarihinde, seçme ve seçilme şartlarını taşıyan bir Türk kadını için</p>
-<p>I. belediye meclisi üyeliğine aday olmak,<br>II. köyünde muhtar seçilmek,<br>III. milletvekili seçimlerinde oy kullanmak</p>
-<p>durumlarından hangileri yasal olarak <b>mümkündü</b>?</p>`,
-  c: ["I ve II", "Yalnız I", "II ve III", "I, II ve III"],
-  a: "A",
-  s: `<p>Kadınlar belediye seçimlerinde seçme ve seçilme hakkını 3 Nisan 1930'da, muhtarlık ve ihtiyar heyeti seçimlerinde 26 Ekim 1933'te, milletvekili seçme ve seçilme hakkını ise 5 Aralık 1934'te kazandı.</p><p>1 Haziran 1934'te I ✓ (1930'dan beri) ve II ✓ (Ekim 1933'ten beri) mümkündü. III ✗: Milletvekili seçimlerine katılma hakkı bu tarihten yaklaşık 6 ay sonra geldi.</p><p>B şıkkı muhtarlık hakkını 1934 sanan öğrencinin, D şıkkı “1934 yılı içinde” ifadesini tarihten bağımsız düşünen öğrencinin, C şıkkı ise sıralamayı ters kuran öğrencinin seçimidir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Takrir-i Sükûn Kanunu ve sonrasındaki gelişmeler anlatılmıştır.</p>
-<div class="box">Şeyh Sait İsyanı sırasında, 4 Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, hükûmete Cumhuriyet'i ve iç güvenliği tehdit eden her türlü örgütü ve yayını yasaklama yetkisi verdi. Bu kanuna dayanılarak bazı gazeteler kapatıldı. 3 Haziran 1925'te ise Terakkiperver Cumhuriyet Fırkası kapatıldı. Süresi uzatılarak uygulanan kanun, ortam sakinleşince 1929'da yürürlükten kalktı. Bir yıl sonra, 1930'da, Atatürk'ün isteğiyle Serbest Cumhuriyet Fırkası kuruldu.</div>
-<p>Bu metne göre,</p><p>I. olağanüstü dönemde alınan tedbirler basını ve siyasi faaliyetleri kısıtlamıştır,<br>II. olağanüstü yetkiler sona erdikten sonra yeni bir muhalefet denemesi yapılmıştır,<br>III. Serbest Cumhuriyet Fırkası da Takrir-i Sükûn Kanunu'na dayanılarak kapatılmıştır</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
-  a: "B",
-  s: `<p>I ✓: Kanuna dayanılarak gazetelerin ve bir siyasi partinin kapatıldığı belirtiliyor. II ✓: Kanun 1929'da kalktı, SCF 1930'da kuruldu. Yani olağanüstü yetkiler bittikten sonra yeni bir muhalefet partisi kuruldu.</p><p>III ✗: Metinde SCF'nin nasıl kapandığı yazmaz. Ayrıca kanun SCF kurulmadan önce kalkmıştı. SCF, 17 Kasım 1930'da kurucusu Ali Fethi Bey tarafından feshedilmiştir. TCF ile SCF'nin kapanış biçimlerini karıştırmak C ve D şıklarındaki yanılgıyı doğurur. A şıkkını seçen öğrenci ise kanunun kalkış tarihiyle SCF'nin kuruluşunu ilişkilendirememiştir. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Tarih dersinde dört öğrenci, Terakkiperver Cumhuriyet Fırkası (TCF) ile Serbest Cumhuriyet Fırkasını (SCF) karşılaştırmıştır.</p>
-<div class="dialog"><div><b>Arda:</b> İki parti de Cumhuriyet rejimine bağlı olduğunu açıklamış ve ekonomide liberal görüşleri savunmuştur.</div><div><b>Beren:</b> TCF'yi Millî Mücadele'nin önde gelen komutanları kendi istekleriyle kurmuştu. SCF ise Atatürk'ün isteğiyle, yakın arkadaşı Ali Fethi Bey tarafından kuruldu.</div><div><b>Cem:</b> SCF kurulurken Atatürk, Cumhurbaşkanı olarak partiler karşısında tarafsız kalacağını açıkladı. Kız kardeşi Makbule Hanım da bu partiye üye oldu.</div><div><b>Duru:</b> İki parti de rejim karşıtlarının partiye yönelmesi yüzünden kısa ömürlü oldu. TCF kurucusu tarafından feshedildi, SCF ise Bakanlar Kurulu kararıyla kapatıldı.</div></div>
-<p>Bu öğrencilerden hangisinin açıklamasında <b>yanlış</b> bir bilgi vardır?</p>`,
-  c: ["Arda", "Beren", "Cem", "Duru"],
-  a: "D",
-  s: `<p>Duru'nun açıklamasının ilk cümlesi doğrudur, ama ikinci cümlede kapanış biçimleri yer değiştirmiştir. TCF, Takrir-i Sükûn Kanunu'na dayanılarak 3 Haziran 1925'te Bakanlar Kurulu kararıyla kapatıldı. SCF'yi ise kurucusu Ali Fethi Bey 17 Kasım 1930'da feshetti. Bu, iki partinin en çok karıştırılan farkıdır ✗.</p><p>Arda ✓: İki parti de Cumhuriyet'e bağlıdır ve liberal ekonomiyi savunmuştur. Beren ✓: Kuruluş biçimlerindeki fark doğru verilmiştir. Cem ✓: Atatürk'ün tarafsızlık açıklaması da Makbule Hanım'ın üyeliği de doğrudur. Doğru ve yanlış bilginin aynı cümle grubunda verilmesi, “ilk cümle doğruysa hepsi doğrudur” diye düşünen öğrenciyi yanıltır. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde 1930 yılının sonunda yaşanan bir olay anlatılmıştır.</p>
-<div class="box">Serbest Cumhuriyet Fırkasının feshedilmesinden yaklaşık bir ay sonra, 23 Aralık 1930'da İzmir'in Menemen ilçesinde kendini “mehdi” ilan eden Derviş Mehmet ve yandaşları, laik Cumhuriyet düzenine karşı ayaklandı. Olayı yatıştırmak için gelen yedek subay öğretmen Mustafa Fehmi Kubilay şehit edildi. Bekçi Hasan ve Bekçi Şevki de hayatını kaybetti. Bölgede sıkıyönetim ilan edildi ve olayın sorumluları Divan-ı Harpte yargılandı. Olay, inkılapların halka daha iyi anlatılması gerektiğini bir kez daha gösterdi.</div>
-<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>`,
-  c: ["Olay, hangi siyasi gelişmeden kısa süre sonra yaşanmıştır?", "Olayın ardından bölgede nasıl bir yönetim uygulanmıştır?", "Olayın sorumlularına hangi cezalar verilmiştir?", "Olayda kimler hayatını kaybetmiştir?"],
-  a: "C",
-  s: `<p>A ✓: SCF'nin feshinden yaklaşık bir ay sonra yaşandığı yazıyor. B ✓: Bölgede sıkıyönetim ilan edilmiş. D ✓: Kubilay, Bekçi Hasan ve Bekçi Şevki'nin adları veriliyor.</p><p>C ✗: Metin sorumluların Divan-ı Harpte yargılandığını söyler, ama yargılamanın sonucunu ve verilen cezaları söylemez. “Yargılandığı yer” bilgisi metinde olduğu için “cezası da vardır” sanmak, metindeki bilgiyle metin dışı bilgiyi karıştırmaktır. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><b>Çoğulculuk:</b> Toplumdaki farklı siyasi görüşlerin birden fazla siyasi parti aracılığıyla temsil edilmesi ve bu partilerin seçimlerde yarışabilmesidir. Çoğulcu bir yapıda iktidar partisinin icraatı muhalefet tarafından denetlenir.</div>
-<p>Aşağıda Türk siyasi hayatında yaşanan bazı gelişmeler verilmiştir.</p>
-<p>I. Halk Fırkasının kurulması (1923)<br>II. Terakkiperver Cumhuriyet Fırkasının kurulması (1924)<br>III. Takrir-i Sükûn Kanunu'nun kabul edilmesi (1925)<br>IV. Serbest Cumhuriyet Fırkasının kurulması (1930)<br>V. Demokrat Partinin kurulması (1946)</p>
-<p>Verilen tanıma göre bu gelişmelerden hangileri çoğulculuğun sağlanmasına yönelik <b>doğrudan</b> bir adımdır?</p>`,
-  c: ["II, IV ve V", "I, II ve IV", "II ve IV", "I, II, IV ve V"],
-  a: "A",
-  s: `<p>Tanımın ölçütü, iktidar partisinin karşısında başka partilerin de bulunması ve denetim yapabilmesidir. II ✓, IV ✓ ve V ✓, iktidar partisi karşısında kurulan muhalefet partileridir. Hepsi çoğulculuğa yönelik doğrudan adımlardır.</p><p>I ✗: Halk Fırkası kurulduğunda Meclis'te başka parti yoktu. Tek bir partinin kurulması tanımdaki “birden fazla parti” ölçütünü karşılamaz (B ve D şıklarındaki yanılgı, “parti kurmak = çoğulculuk” diye düşünmekten gelir). III ✗: Olağanüstü yetkiler veren bu kanun bir muhalefet partisinin kapatılmasına dayanak olmuştur. C ✗: DP de bir muhalefet partisi olarak kurulmuş, üstelik çok partili hayata kalıcı geçişi sağlamıştır. Onu dışarıda bırakmak, soruyu “yalnızca Atatürk dönemi” diye daraltmaktır. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki tabloda Atatürk döneminde kurulan iki muhalefet partisinin kuruluş ve kapanış tarihleri verilmiştir.</p>
-<table><tr><th>Parti</th><th>Kuruluş</th><th>Kapanış</th></tr>
-<tr><td>Terakkiperver Cumhuriyet Fırkası</td><td>17 Kasım 1924</td><td>3 Haziran 1925</td></tr>
-<tr><td>Serbest Cumhuriyet Fırkası</td><td>12 Ağustos 1930</td><td>17 Kasım 1930</td></tr></table>
-<p>Tablodaki bilgilere göre,</p><p>I. Terakkiperver Cumhuriyet Fırkası, Serbest Cumhuriyet Fırkasından daha uzun süre faaliyette kalmıştır,<br>II. Serbest Cumhuriyet Fırkasının faaliyet süresi bir yılın dörtte birinden biraz fazladır,<br>III. Serbest Cumhuriyet Fırkasının kapanış günü ile Terakkiperver Cumhuriyet Fırkasının kuruluş günü, farklı yıllarda olsa da aynı gün ve aya denk gelir</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
-  c: ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
-  a: "D",
-  s: `<p>I ✓: TCF 17 Kasım 1924'ten 3 Haziran 1925'e kadar, yani yaklaşık 198 gün (6,5 ay) açık kaldı. SCF ise 12 Ağustos'tan 17 Kasım 1930'a kadar yaklaşık 97 gün (3 ay 5 gün) açık kaldı. II ✓: Bir yılın dörtte biri yaklaşık 91 gündür (3 ay). 97 gün bundan biraz fazladır. III ✓: TCF'nin kuruluşu da SCF'nin feshi de 17 Kasım'dır (1924 ve 1930).</p><p>A ve B şıkları, iki tarihin aynı gün olmasını “aynı olay” sanıp yargıyı yanlış bulan ya da süreyi ay adlarına bakarak (Ağustos-Kasım = 3 ay, “dörtte birden az”) hesaplayan öğrenciden gelir. C şıkkı ise TCF'nin daha uzun yaşadığını gözden kaçıran öğrencinin seçimidir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, Cumhuriyetin ilk yıllarında yaşanan bazı gelişmeler arasındaki neden-sonuç ilişkilerini aşağıdaki şemada oklarla göstermiştir. Okların her biri “neden → sonuç” anlamındadır.</p>
-<div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Neden-sonuç okları şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="250" fill="#ffffff"/>
-<g font-size="11" fill="#1e293b">
-<rect x="10" y="12" width="215" height="44" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="117" y="31" text-anchor="middle">Takrir-i Sükûn Kanunu'nun</text><text x="117" y="46" text-anchor="middle">kabul edilmesi (1925)</text>
-<rect x="335" y="12" width="215" height="44" rx="6" fill="#eff6ff" stroke="#2563eb"/>
-<text x="442" y="31" text-anchor="middle">Terakkiperver Cumhuriyet</text><text x="442" y="46" text-anchor="middle">Fırkasının kapatılması</text>
-<rect x="10" y="70" width="215" height="44" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="117" y="89" text-anchor="middle">Menemen Olayı'nın</text><text x="117" y="104" text-anchor="middle">yaşanması (1930)</text>
-<rect x="335" y="70" width="215" height="44" rx="6" fill="#fef2f2" stroke="#dc2626"/>
-<text x="442" y="89" text-anchor="middle">Serbest Cumhuriyet</text><text x="442" y="104" text-anchor="middle">Fırkasının feshedilmesi</text>
-<rect x="10" y="128" width="215" height="44" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<text x="117" y="147" text-anchor="middle">Komutanlardan askerlik ya da</text><text x="117" y="162" text-anchor="middle">milletvekilliğini seçmelerinin istenmesi</text>
-<rect x="335" y="128" width="215" height="44" rx="6" fill="#f0fdf4" stroke="#16a34a"/>
-<text x="442" y="147" text-anchor="middle">Kâzım Karabekir ve Ali Fuat</text><text x="442" y="162" text-anchor="middle">Paşaların askerlikten ayrılması</text>
-<rect x="10" y="186" width="215" height="44" rx="6" fill="#fdf4ff" stroke="#a21caf"/>
-<text x="117" y="205" text-anchor="middle">Kadınlara milletvekili seçme ve</text><text x="117" y="220" text-anchor="middle">seçilme hakkı tanınması (1934)</text>
-<rect x="335" y="186" width="215" height="44" rx="6" fill="#fdf4ff" stroke="#a21caf"/>
-<text x="442" y="205" text-anchor="middle">Meclis'e 17 kadın milletvekilinin</text><text x="442" y="220" text-anchor="middle">girmesi (1935)</text>
-</g>
-<g stroke="#334155" stroke-width="2" fill="none">
-<path d="M228 34 L330 34 M322 28 L330 34 L322 40"/><path d="M228 92 L330 92 M322 86 L330 92 L322 98"/><path d="M228 150 L330 150 M322 144 L330 150 L322 156"/><path d="M228 208 L330 208 M322 202 L330 208 L322 214"/>
-</g>
-<g font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">
-<circle cx="279" cy="34" r="10" fill="#334155"/><text x="279" y="38">1</text>
-<circle cx="279" cy="92" r="10" fill="#334155"/><text x="279" y="96">2</text>
-<circle cx="279" cy="150" r="10" fill="#334155"/><text x="279" y="154">3</text>
-<circle cx="279" cy="208" r="10" fill="#334155"/><text x="279" y="212">4</text>
-</g>
-</svg></div>
-<p>Buna göre öğrencinin numaralandırılmış oklardan hangisinde neden-sonuç ilişkisini <b>yanlış</b> kurduğu söylenebilir?</p>`,
-  c: ["1", "2", "3", "4"],
-  a: "B",
-  s: `<p>2 ✗: SCF 17 Kasım 1930'da feshedildi, Menemen Olayı ise yaklaşık bir ay sonra, 23 Aralık 1930'da yaşandı. Sonra olan bir olay, önceki bir olayın nedeni olamaz. Fesihte asıl etkili olan, rejim karşıtlarının partiye yönelmesidir. İki olayın aynı yılda ve aynı bölgede (İzmir) olması bu kronoloji tuzağını kurar.</p><p>1 ✓: TCF, Takrir-i Sükûn Kanunu'na dayanılarak kapatıldı. 3 ✓: Ordunun siyasetten ayrılması için komutanlardan tercih yapmaları istenince Kâzım Karabekir ve Ali Fuat Paşalar askerlikten ayrılıp Meclis'te kaldı. 4 ✓: 1934'te tanınan hak sayesinde 1935 seçimlerinde 17 kadın milletvekili seçildi. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, çok partili hayata kalıcı geçiş süreciyle ilgili aşağıdaki yargıları yazmıştır.</p>
-<p>I. Cumhuriyet döneminin ilk muhalefet partisi Demokrat Partidir.<br>II. Millî Kalkınma Partisi, Demokrat Partiden önce kurulmuştur.<br>III. 1946 genel seçimi tek dereceli olarak yapılmıştır.<br>IV. 1950 seçimleriyle iktidar, seçim yoluyla el değiştirmiştir.</p>
-<p>Bu yargılardan hangileri <b>doğrudur</b>?</p>`,
-  c: ["I ve II", "I, III ve IV", "II, III ve IV", "I, II, III ve IV"],
-  a: "C",
-  s: `<p>I ✗: Cumhuriyet döneminin ilk muhalefet partisi, 17 Kasım 1924'te kurulan Terakkiperver Cumhuriyet Fırkasıdır. DP, çok partili hayata <b>kalıcı</b> geçişi sağlayan partidir. “İlk muhalefet partisi” ile “kalıcı geçişi sağlayan parti”yi karıştırmak bu soru tipindeki en yaygın kronoloji tuzağıdır (A, B ve D şıkları).</p><p>II ✓: Millî Kalkınma Partisi 1945'te Nuri Demirağ tarafından kuruldu, DP ise 7 Ocak 1946'da. III ✓: 1946 seçimi tek dereceli yapıldı (açık oy, gizli sayım). IV ✓: 1950 seçimlerini DP kazandı ve iktidar ilk kez seçim yoluyla değişti. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde kadınların siyasi haklar için verdiği mücadeleden bir kesit anlatılmıştır.</p>
-<div class="box">1923 yazında Nezihe Muhiddin ve arkadaşları, Kadınlar Halk Fırkası adıyla bir siyasi parti kurmak için başvurdu. Ancak dönemin seçim kanunu kadınlara seçme ve seçilme hakkı tanımadığı için partinin kurulmasına izin verilmedi. Bunun üzerine kurucular, 1924'te Türk Kadınlar Birliği adıyla bir dernek kurarak kadın haklarına yönelik çalışmalarını sürdürdü. Kadınlara 1930'da belediye, 1933'te muhtarlık ve ihtiyar heyeti, 1934'te ise milletvekili seçimlerinde seçme ve seçilme hakkı tanındı.</div>
-<p>Bu metne göre,</p><p>I. kadınlar, siyasi haklarını kazanmak için örgütlü bir çaba içine girmiştir,<br>II. kadınlara siyasi haklar tek bir düzenlemeyle değil, aşamalı olarak tanınmıştır,<br>III. kadınlara milletvekili seçme ve seçilme hakkı, Türk Kadınlar Birliğinin isteği üzerine tanınmıştır</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["I ve II", "Yalnız II", "I ve III", "I, II ve III"],
-  a: "A",
-  s: `<p>I ✓: Kadınlar önce bir parti kurmak için başvurmuş, bu olmayınca bir dernek kurarak çalışmalarını sürdürmüştür. Bu, örgütlü bir çabadır. II ✓: Haklar 1930, 1933 ve 1934'te üç aşamada tanınmıştır.</p><p>III ✗: Metin derneğin çalışmalarından söz eder, ama 1934'teki hakkın bu derneğin <b>isteği üzerine</b> tanındığını söylemez. Zaman bakımından önce gelen bir gelişmeyi sonrakinin nedeni saymak (“önce oldu, öyleyse neden odur”) bir neden-sonuç yanılgısıdır (C ve D şıkları). B şıkkı ise I'deki “örgütlü çaba”yı (parti başvurusu ve dernek) gözden kaçırır. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Atatürk döneminde milletvekili seçimleri <b>iki dereceli</b> yapılıyordu: Birinci seçmenler ikinci seçmenleri, ikinci seçmenler de milletvekillerini seçiyordu. Muhalefet partileri ise seçmenlerin milletvekilini doğrudan seçtiği <b>tek dereceli</b> sistemi savunuyordu.</p>
-<div class="box">Varsayımsal bir seçim bölgesinde 90.000 seçmen vardır ve bu bölgeden 1 milletvekili seçilecektir.<br>• İki dereceli sistemde her 300 seçmen, 1 ikinci seçmen seçmektedir.<br>• Her iki sistemde de seçmenlerin tamamı oy kullanacak ve adayın seçilmesi için verilen oyların <b>yarısından fazlasını</b> alması gerekecektir.</div>
-<p>Buna göre milletvekili adayının seçilebilmesi için iki dereceli ve tek dereceli sistemde alması gereken <b>en az</b> oy sayısı sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?</p>`,
-  c: ["150 – 45.000", "151 – 45.001", "300 – 90.000", "151 – 90.000"],
-  a: "B",
-  s: `<p>İki dereceli sistemde ikinci seçmen sayısı 90.000 ÷ 300 = 300'dür. Milletvekilini bu 300 kişi seçer. Yarısından fazla demek, 150'den fazla, yani en az 151 oy demektir. Tek dereceli sistemde ise 90.000 seçmenin hepsi doğrudan oy verir. Gereken oy en az 45.001'dir.</p><p>A ✗: Tam yarıya eşit oy, “yarısından fazla” şartını karşılamaz. C ✗: Bu sayılar oy kullanacakların toplamıdır, gereken oy sayısı değildir. D ✗: İki sistemin sayıları karışık hesaplanmıştır. Sonuç olarak iki dereceli sistemde milletvekilini 300 kişi, tek dereceli sistemde 90.000 kişi belirler. Tek dereceli sistemin millî iradeyi daha doğrudan yansıtması bu yüzdendir. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Serbest Cumhuriyet Fırkasının kapanış süreci anlatılmıştır.</p>
-<div class="box">Serbest Cumhuriyet Fırkası kurulduğunda Mustafa Kemal Atatürk hem Cumhurbaşkanı hem de Cumhuriyet Halk Fırkasının genel başkanıydı. Atatürk, Cumhurbaşkanı olarak partiler karşısında tarafsız kalacağını açıklamıştı. Ancak yeni partinin hükûmeti eleştirmesi, bazı çevrelerce Atatürk'e karşı yürütülen bir mücadele gibi algılandı. 1930 sonbaharında yapılan belediye seçimleri sert tartışmalara yol açtı. Partinin çevresinde Cumhuriyet ve laiklik karşıtlarının toplandığı da görüldü. Bunun üzerine Ali Fethi Bey, Atatürk'e karşı siyasi mücadele yapamayacağını belirterek 17 Kasım 1930'da partisini feshetti.</div>
-<p>Bu metne göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Serbest Cumhuriyet Fırkası, Atatürk'ün emriyle kapatılmıştır.", "Atatürk, Serbest Cumhuriyet Fırkası kurulurken Cumhuriyet Halk Fırkasını desteklediğini açıklamıştır.", "Serbest Cumhuriyet Fırkası, belediye seçimlerini kazanarak yerel yönetimlerin çoğunu ele geçirmiştir.", "Atatürk'ün aynı zamanda iktidar partisinin genel başkanı olması, muhalefetin hareket alanını daraltmıştır."],
-  a: "D",
-  s: `<p>Metne göre Atatürk iktidar partisinin genel başkanıydı. SCF'nin hükûmete yönelttiği eleştiriler bu yüzden Atatürk'e karşı bir mücadele gibi algılandı. Ali Fethi Bey de Atatürk'e karşı mücadele edemeyeceğini söyleyerek partiyi kapattı. Atatürk'ün bu çift konumu muhalefetin hareket alanını daraltmıştır (D ✓).</p><p>A ✗: Partiyi kurucusu kendi kararıyla feshetmiştir. Metin bir emirden söz etmez. Bu şık, SCF'yi TCF ile karıştıran öğrencinin seçimidir. B ✗: Atatürk tarafsız kalacağını açıklamıştır, metne aykırıdır. C ✗: Metin seçimlerin tartışmalı geçtiğini söyler, ama sonuçlarından söz etmez. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki gruplardan hangisinde verilen üç gelişmenin <b>üçü de aynı yıl</b> içinde gerçekleşmiştir?</p>`,
-  c: ["Halk Fırkasının kurulması – Cumhuriyet'in ilanı – Terakkiperver Cumhuriyet Fırkasının kurulması", "Şeyh Sait İsyanı – Takrir-i Sükûn Kanunu'nun kabulü – İzmir Suikastı girişimi", "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması – Serbest Cumhuriyet Fırkasının kurulması – Menemen Olayı", "Erkân-ı Harbiye Vekâletinin kaldırılması – Görevdeki askerlerin milletvekili seçilmesini yasaklayan kanun – Terakkiperver Cumhuriyet Fırkasının kurulması"],
-  a: "C",
-  s: `<p>C ✓: Belediye Kanunu (3 Nisan 1930), SCF'nin kuruluşu (12 Ağustos 1930) ve Menemen Olayı (23 Aralık 1930) aynı yıl içindedir.</p><p>A ✗: Halk Fırkası (9 Eylül 1923) ve Cumhuriyet'in ilanı (29 Ekim 1923) 1923'te, TCF ise 17 Kasım 1924'tedir. B ✗: Şeyh Sait İsyanı ve Takrir-i Sükûn 1925'te, İzmir Suikastı girişimi Haziran 1926'dadır. D ✗: Erkân-ı Harbiye 3 Mart 1924'te kaldırıldı, TCF 1924'te kuruldu. Askerlerin milletvekili seçilmesini yasaklayan kanun ise 19 Aralık 1923 tarihlidir. Ordunun siyasetten ayrılması sürecinin 1924'te tamamlanması, bu kanunun da 1924'te çıktığı izlenimini verir. Bu şık o tuzağa dayanır. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, Atatürk döneminde yaşanan bazı gelişmeleri hem <b>türüne</b> hem de <b>dönemine</b> göre aşağıdaki tabloya yerleştirmiştir.</p>
-<div class="fig"><svg viewBox="0 0 560 230" width="560" role="img" aria-label="Gelişmelerin tür ve döneme göre sınıflandırıldığı tablo" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="230" fill="#ffffff"/>
-<rect x="10" y="10" width="110" height="34" fill="#f1f5f9" stroke="#475569"/>
-<rect x="120" y="10" width="215" height="34" fill="#dbeafe" stroke="#475569"/>
-<rect x="335" y="10" width="215" height="34" fill="#fee2e2" stroke="#475569"/>
-<text x="227" y="32" font-size="12" font-weight="bold" fill="#1e3a8a" text-anchor="middle">Demokratikleşme adımı</text>
-<text x="442" y="32" font-size="12" font-weight="bold" fill="#991b1b" text-anchor="middle">Cumhuriyet'e yönelik tehdit</text>
-<rect x="10" y="44" width="110" height="88" fill="#f1f5f9" stroke="#475569"/>
-<text x="65" y="85" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1923–1929</text>
-<rect x="10" y="132" width="110" height="88" fill="#f1f5f9" stroke="#475569"/>
-<text x="65" y="173" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1930–1938</text>
-<rect x="120" y="44" width="215" height="88" fill="#ffffff" stroke="#475569"/>
-<rect x="335" y="44" width="215" height="88" fill="#ffffff" stroke="#475569"/>
-<rect x="120" y="132" width="215" height="88" fill="#ffffff" stroke="#475569"/>
-<rect x="335" y="132" width="215" height="88" fill="#ffffff" stroke="#475569"/>
-<g font-size="11" fill="#1e293b">
-<text x="130" y="68">• Terakkiperver Cumhuriyet</text><text x="140" y="83">Fırkasının kurulması</text>
-<text x="130" y="103">• Görevdeki askerlerin milletvekili</text><text x="140" y="118">seçilmesinin yasaklanması</text>
-<text x="345" y="76">• Şeyh Sait İsyanı</text>
-<text x="345" y="104">• İzmir Suikastı girişimi</text>
-<text x="130" y="152">• Serbest Cumhuriyet</text><text x="140" y="166">Fırkasının kurulması</text>
-<text x="130" y="188">• Kadınlara muhtarlık seçimlerinde</text><text x="140" y="203">seçme ve seçilme hakkı tanınması</text>
-<text x="345" y="164">• Menemen Olayı</text>
-<text x="345" y="192">• Takrir-i Sükûn Kanunu</text>
-</g>
-</svg></div>
-<p>Buna göre öğrencinin tabloya <b>yanlış</b> yerleştirdiği gelişme aşağıdakilerden hangisidir?</p>`,
-  c: ["İzmir Suikastı girişimi", "Takrir-i Sükûn Kanunu", "Kadınlara muhtarlık seçimlerinde seçme ve seçilme hakkı tanınması", "Görevdeki askerlerin milletvekili seçilmesinin yasaklanması"],
-  a: "B",
-  s: `<p>B ✗: Takrir-i Sükûn Kanunu iki açıdan yanlış yerdedir. Kanun 4 Mart 1925'te kabul edildiği için 1923–1929 satırında olmalıdır. Ayrıca kanun bir tehdit değil, Şeyh Sait İsyanı'na karşı alınmış bir <b>önlemdir</b>.</p><p>A ✓: İzmir Suikastı girişimi (1926) Cumhuriyet'e yönelik bir tehdittir ve doğru satırdadır. C ✓: Muhtarlık hakkı 26 Ekim 1933'te tanınmıştır, yani 1930–1938 döneminde bir demokratikleşme adımıdır. D ✓: Askerlerin milletvekili seçilmesini yasaklayan kanun 19 Aralık 1923 tarihlidir. Ordunun siyasetten ayrılmasını sağlayan bir adımdır. Bu şık, kanunun yasaklayıcı olması nedeniyle onu “demokrasiye aykırı” sanan öğrenciyi hedefler. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Serbest Cumhuriyet Fırkasının kuruluş süreci anlatılmıştır.</p>
-<div class="box">1929 Dünya Ekonomik Bunalımı Türkiye'de de hissedildi. Tarım ürünlerinin fiyatları düştü, halkın geçim sıkıntısı arttı. Atatürk, Meclis'te hükûmetin uygulamalarını eleştirecek ve denetleyecek bir muhalefet bulunmadığını düşünüyordu. Bu nedenle yakın arkadaşı Paris Büyükelçisi Ali Fethi Bey'den, laik Cumhuriyet esaslarına bağlı yeni bir parti kurmasını istedi. 12 Ağustos 1930'da kurulan Serbest Cumhuriyet Fırkası, vergilerin hafifletilmesini, ekonomide özel girişimin desteklenmesini ve yabancı sermayenin ülkeye çekilmesini savundu.</div>
-<p>Bu metinde aşağıdakilerden hangisine <b>değinilmemiştir</b>?</p>`,
-  c: ["Seçme hakkının kullanılış biçimi", "Liberal ekonomi anlayışı", "Muhalefetin denetim işlevi", "Laiklik"],
-  a: "A",
-  s: `<p>A ✗ (değinilmemiş): SCF'nin tek dereceli seçimi savunduğu doğrudur, ama bu metinde seçim sistemine hiç yer verilmemiştir. Konuyu bilen öğrencinin metne bilgi eklemesi bu sorudaki temel tuzaktır.</p><p>B ✓: “Liberal” kelimesi geçmez, ama vergilerin hafifletilmesi, özel girişim ve yabancı sermaye liberal ekonomi anlayışının göstergeleridir. Kavramın adının geçmemesi, ona değinilmediği anlamına gelmez. C ✓: Hükûmeti “eleştirecek ve denetleyecek bir muhalefet” ifadesi geçiyor. D ✓: “Laik Cumhuriyet esaslarına bağlı” ifadesi geçiyor. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde Musul meselesinin çözüm süreci anlatılmıştır.</p>
-<div class="box">Lozan Barış Konferansı'nda Musul meselesi çözülemedi ve İngiltere ile ikili görüşmelere bırakıldı. Görüşmelerden sonuç alınamayınca sorun Milletler Cemiyetine götürüldü. Bu sırada, Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı. Türk ordusunun önemli bir bölümü isyanı bastırmakla uğraştı. Sonunda 5 Haziran 1926'da İngiltere ve Irak ile imzalanan Ankara Antlaşması ile Musul, Irak'a bırakıldı. Türkiye'ye ise Musul petrollerinden 25 yıl süreyle %10 pay verilmesi kabul edildi.</div>
-<p>Bu metne göre,</p><p>I. Bir iç sorun, dış politikadaki bir meselenin çözüm sürecini olumsuz etkilemiştir.<br>II. Musul meselesi bir antlaşmayla sonuçlandırılmıştır.<br>III. Türkiye, Musul meselesinin sonunda hiçbir kazanç elde edememiştir.<br>IV. Şeyh Sait İsyanı, Milletler Cemiyetinin aldığı kararla bastırılmıştır.</p><p>yargılarından hangileri <b>söylenemez</b>?</p>`,
-  c: ["I ve II", "Yalnız III", "II ve IV", "III ve IV"],
-  a: "D",
-  s: `<p>I ✓ söylenebilir: Ordu iç isyanla uğraşırken Musul meselesi Türkiye'nin aleyhine sonuçlandı. İç sorun, dış meseleyi olumsuz etkiledi. II ✓ söylenebilir: Mesele 1926 Ankara Antlaşması ile çözüldü.</p><p>III ✗ söylenemez: Türkiye'ye 25 yıl süreyle petrol gelirlerinden %10 pay verildi, yani belli bir kazanç vardır. “Musul kaybedildi” bilgisini “hiçbir şey elde edilmedi” diye genişletmek aşırı genellemedir. IV ✗ söylenemez: Milletler Cemiyeti metinde yalnızca Musul meselesiyle ilgili geçer. İsyanı Türk ordusu bastırmıştır. Aynı paragrafta geçen iki olayı birbirine bağlamak bu yanılgıyı doğurur. B şıkkı yalnızca III'ü, C şıkkı ise doğru olan II'yi işaretler. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda Cumhuriyet rejimine yönelik bazı tehditler (1–3) ile bunlara karşı alınan önlemler ya da yapılan uygulamalar (a–d) verilmiştir.</p>
-<table><tr><th>Tehdit</th><th>Önlem / uygulama</th></tr>
-<tr><td>1. Şeyh Sait İsyanı (1925)</td><td>a. Takrir-i Sükûn Kanunu çıkarıldı, İstiklal Mahkemeleri kuruldu.</td></tr>
-<tr><td>2. İzmir Suikastı girişimi (1926)</td><td>b. Bölgede sıkıyönetim ilan edildi, sorumlular Divan-ı Harpte yargılandı.</td></tr>
-<tr><td>3. Menemen Olayı (1930)</td><td>c. Sanıklar İstiklal Mahkemesinde yargılandı. Yargılama, suikastla bağlantılı görülen bazı siyasetçileri de kapsadı.</td></tr>
-<tr><td></td><td>d. Parti, kurucusu tarafından feshedildi.</td></tr></table>
-<p>Tehditlerin her biri, kendisine karşı alınan önlemle eşleştirilirse aşağıdakilerden hangisi elde edilir?</p>`,
-  c: ["1-a, 2-b, 3-c", "1-c, 2-a, 3-b", "1-a, 2-c, 3-b", "1-b, 2-c, 3-d"],
-  a: "C",
-  s: `<p>1-a: Şeyh Sait İsyanı sırasında Takrir-i Sükûn Kanunu çıkarıldı ve İstiklal Mahkemeleri kuruldu. 2-c: İzmir Suikastı girişiminin sanıkları İstiklal Mahkemesinde yargılandı. Yargılama, suikastla ilişkili görülen bazı eski siyasetçileri de kapsadı. 3-b: Menemen Olayı'ndan sonra bölgede sıkıyönetim ilan edildi ve yargılama Divan-ı Harpte yapıldı.</p><p>A ✗: Menemen'i İstiklal Mahkemesiyle eşleştirir. “Bütün tehditler İstiklal Mahkemesinde yargılandı” yanılgısıdır. B ✗: Takrir-i Sükûn'u İzmir Suikastı'na bağlar, oysa kanun 1925'te Şeyh Sait İsyanı sırasında çıktı. D ✗: (d) bir tehdide karşı alınmış önlem değildir. SCF'nin kurucusu tarafından kapatılmasıdır (1930). Menemen Olayı bu fesihten sonra yaşanmıştır. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Atatürk, 1930'da yeni bir parti kurmak isteyen Ali Fethi Bey'e, partinin <b>laik Cumhuriyet esaslarına bağlı</b> olması gerektiğini bildirmiştir. Atatürk'e göre yeni partinin görevi, Meclis'te <b>hükûmetin uygulamalarını eleştirmek ve denetlemekti</b>.</p>
-<p>Aşağıda o yıllarda kurulmak istendiği <b>varsayılan</b> dört partinin programından birer bölüm verilmiştir (hayalî metinler).</p>
-<p>Hangi partinin programı Atatürk'ün bu beklentilerinin <b>tamamını</b> karşılamaktadır?</p>`,
-  c: ["<b>P Partisi:</b> Cumhuriyet rejimini ve laikliği koruyacağız. Hükûmetin vergi politikasını Meclis'te eleştirecek, daha adil bir vergi düzeni önereceğiz.", "<b>R Partisi:</b> Cumhuriyet'e bağlıyız. Ancak devlet işlerinin din kurallarına göre düzenlenmesini savunacak, Meclis'te hükûmeti denetleyeceğiz.", "<b>S Partisi:</b> Cumhuriyet'i ve laikliği koruyacağız. Meclis'teki temel görevimiz, hükûmetin bütün kararlarını desteklemek olacaktır.", "<b>T Partisi:</b> Laik bir düzen istiyoruz. Ancak devlet başkanlığının seçimle değil, bir aile içinde babadan oğula geçmesini savunacak, hükûmeti Meclis'te denetleyeceğiz."],
-  a: "A",
-  s: `<p>Beklentiler üç ölçüt içerir: (1) Cumhuriyet'e bağlılık, (2) laiklik, (3) hükûmeti eleştirip denetleme.</p><p>A ✓: P Partisi üç ölçütü de karşılar. B ✗: R Partisi Cumhuriyet'e bağlıdır ve denetim yapacaktır, ama din kurallarına dayalı yönetim laikliğe aykırıdır. C ✗: S Partisi Cumhuriyet'e ve laikliğe bağlıdır, ama hükûmeti her konuda desteklemek muhalefetin denetim işlevine aykırıdır. Atatürk'ün istediği, iktidarı onaylayan değil, denetleyen bir partiydi. D ✗: T Partisi laiktir ve denetim yapacaktır, ama yönetimin babadan oğula geçmesi saltanat anlayışıdır ve Cumhuriyet'e aykırıdır. Her çeldirici, ölçütlerden yalnızca birini karşılamaz. Bu yüzden şıkkı bütün ölçütlerle tek tek denetlemek gerekir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Bir okulda öğrenci meclisi başkanı önceki yıllarda yalnızca sınıf başkanlarının oylarıyla seçiliyordu. Bu yıl seçim kurallarında şu değişiklikler yapıldı:</p>
-<div class="box">• Başkanı bütün öğrenciler doğrudan oylarıyla seçti.<br>• Önceki yıllarda yalnızca erkek öğrencilerin aday olabildiği bu seçimde, kız öğrencilere de aday olma hakkı tanındı.<br>• Seçilen başkanın çalışmalarını izleyip eleştirecek ve kendi önerilerini sunacak ikinci bir öğrenci grubunun kurulmasına izin verildi.</div>
-<p>Bu değişiklikler, Türkiye'de yaşanan demokratikleşme sürecindeki hangi gelişmelerle <b>sırasıyla</b> benzerlik gösterir?</p>`,
-  c: ["Tek dereceli seçime geçilmesi – Ordunun siyasetten ayrılması – Muhalefet partisi kurulması", "Kadınlara siyasi hak tanınması – Tek dereceli seçime geçilmesi – Muhalefet partisi kurulması", "Tek dereceli seçime geçilmesi – Kadınlara siyasi hak tanınması – Takrir-i Sükûn Kanunu'nun çıkarılması", "Tek dereceli seçime geçilmesi – Kadınlara siyasi hak tanınması – Muhalefet partisi kurulması"],
-  a: "D",
-  s: `<p>1. değişiklik: Sınıf başkanları aracılığıyla seçimden herkesin doğrudan oy verdiği seçime geçilmiştir. Bu, iki dereceli seçimden tek dereceli seçime (1946) geçişe benzer. 2. değişiklik: Kız öğrencilere aday olma hakkının tanınması, kadınlara siyasi hak tanınmasına (1930–1934) benzer. 3. değişiklik: Başkanı izleyip eleştirecek ve öneri sunacak bir grubun kurulması, muhalefet partisinin denetim işlevine benzer.</p><p>A ✗: Okul örneğinde ordu-siyaset ayrımına karşılık gelen bir değişiklik yoktur. B ✗: Doğru kavramlar seçilmiş ama sıralama yanlıştır. Soru “sırasıyla” diye sorar. C ✗: Takrir-i Sükûn, eleştiriyi genişleten değil, olağanüstü yetkilerle kısıtlayan bir kanundur. Üçüncü değişikliğin tam tersidir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda iki partinin programlarıyla ilgili bilgiler verilmiştir.</p>
-<div class="box"><b>Metin I:</b> Cumhuriyet Halk Fırkasının Mayıs 1931'de toplanan kongresinde kabul edilen programda partinin ilkeleri Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik ve İnkılapçılık olarak belirlendi. Programa göre devlet, özel girişimin yetersiz kaldığı alanlarda ekonomik faaliyetlere bizzat katılacaktı.</div>
-<div class="box"><b>Metin II:</b> 1930'da kurulan Serbest Cumhuriyet Fırkası laik Cumhuriyet esaslarına bağlı olduğunu açıkladı. Parti; ekonomide özel girişimin desteklenmesini, yabancı sermayenin ülkeye çekilmesini ve vergilerin hafifletilmesini savundu.</div>
-<p>Bu metinlere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>`,
-  c: ["Cumhuriyet Halk Fırkası, kuruluşundan itibaren devletçi bir ekonomi politikası izlemiştir.", "İki parti laiklik konusunda aynı görüşteyken ekonomide devletin rolü konusunda farklı yaklaşımlara sahiptir.", "Serbest Cumhuriyet Fırkası, Cumhuriyet Halk Fırkasının altı ilkesini programına aynen almıştır.", "Cumhuriyet Halk Fırkasının 1931 programı, Serbest Cumhuriyet Fırkasının kapanmasına yol açmıştır."],
-  a: "B",
-  s: `<p>B ✓: İki metinde de laiklik vardır. Ekonomide ise CHF devletin ekonomiye bizzat katılmasını (devletçilik), SCF özel girişimi ve yabancı sermayeyi (liberalizm) öne çıkarır.</p><p>A ✗: Metin I yalnızca 1931 programını anlatır. CHF devletçiliği 1931'de programına almıştır. “Hep devletçiydi” sanmak yaygın bir yanılgıdır. C ✗: Metin II'de altı ilkenin hepsi geçmez ve SCF'nin ekonomi görüşü devletçilikle bağdaşmaz. D ✗: SCF 17 Kasım 1930'da kapanmıştır. Mayıs 1931'de kabul edilen program, kendisinden önceki bir olayın nedeni olamaz. Bu bir kronoloji tuzağıdır. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Şeyh Sait İsyanı sırasında, 4 Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, süresi uzatılarak uygulanmış ve 1929'da yürürlükten kalkmıştır.</p>
-<p>Buna göre aşağıdaki gelişmelerden hangisi Takrir-i Sükûn Kanunu <b>yürürlükteyken yaşanmamıştır</b>?</p>`,
-  c: ["İzmir Suikastı girişiminin ortaya çıkarılması", "Terakkiperver Cumhuriyet Fırkasının kapatılması", "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması", "Türk Medeni Kanunu'nun kabul edilmesi"],
-  a: "C",
-  s: `<p>Kanunun yürürlükte olduğu dönem 4 Mart 1925 ile 1929 arasıdır.</p><p>C ✓ (yaşanmamış): Belediye Kanunu 3 Nisan 1930'da kabul edildi. Kanun yürürlükten kalktıktan sonradır.</p><p>A ✗: İzmir Suikastı girişimi Haziran 1926'da ortaya çıkarıldı. B ✗: TCF, bu kanuna dayanılarak 3 Haziran 1925'te kapatıldı. D ✗: Türk Medeni Kanunu 17 Şubat 1926'da kabul edildi. D şıkkı, Medeni Kanun'u kadın haklarıyla ilişkilendirip 1930'lara yerleştiren öğrenciyi, B şıkkı ise TCF'nin kapanışını kanunun çıkmasından önceye koyan öğrenciyi yanıltır. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Kadınlara tanınan siyasi haklarla ilgili aşağıdaki ifadelerden hangisi <b>yorum</b> niteliğindedir?</p>`,
-  c: ["Kadınlar, 1930'da kabul edilen Belediye Kanunu ile belediye seçimlerine katılma hakkı kazanmıştır.", "1933'te yapılan düzenlemeyle kadınlara muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme hakkı tanınmıştır.", "1935 seçimlerinde Türkiye Büyük Millet Meclisine 17 kadın milletvekili girmiştir.", "Kadınlara siyasi hakların tanınması, Cumhuriyet döneminde atılan en önemli çağdaşlaşma adımıdır."],
-  a: "D",
-  s: `<p>D ✓ (yorum): “En önemli adım” bir değerlendirmedir. Başka biri, örneğin harf inkılabını ya da Medeni Kanun'u daha önemli bulabilir. Kişiden kişiye değişebilen bir yargı olduğu için yorumdur.</p><p>A, B ve C ✗: Tarih, düzenleme ve sayı bildirir. Belgelerle doğrulanabildikleri için bilgidir. Özellikle C şıkkındaki sayısal ifade, “rakam içeriyor, öyleyse tartışmalıdır” diye düşünen öğrenciyi yanıltabilir. Bu bilgi seçim sonuçlarıyla kanıtlanabilir. Doğru ve olumlu bir yargının bile yorum olabileceğini fark etmek gerekir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdaki metinde çok partili hayata kalıcı geçiş sürecinin başlangıcı anlatılmıştır.</p>
-<div class="box">II. Dünya Savaşı'nın sona erdiği 1945 yılında, 7 Haziran'da Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan, Cumhuriyet Halk Partisi Meclis Grubuna demokratik hak ve özgürlüklerin genişletilmesini isteyen bir önerge verdi. Tarihe “Dörtlü Takrir” adıyla geçen bu önerge reddedildi. Önergeyi verenlerin bir kısmı partiden ihraç edildi, bir kısmı ise partiden ayrıldı. Bu dört isim 7 Ocak 1946'da Demokrat Partiyi kurdu.</div>
-<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>`,
-  c: ["Demokrat Parti, 1946 genel seçiminde kaç milletvekilliği kazanmıştır?", "Dörtlü Takrir'de hangi istek dile getirilmiştir?", "Dörtlü Takrir'i verenler hangi partiyi kurmuştur?", "Dörtlü Takrir hangi partinin Meclis Grubuna verilmiştir?"],
-  a: "A",
-  s: `<p>B ✓: Önergede demokratik hak ve özgürlüklerin genişletilmesi istenmiştir. C ✓: Önergeyi veren dört isim Demokrat Partiyi kurmuştur. D ✓: Önerge Cumhuriyet Halk Partisi Meclis Grubuna verilmiştir.</p><p>A ✗ (cevabı yok): Metin DP'nin kuruluşuyla biter. 1946 seçimine ve sonuçlarına hiç değinmez. Partinin 1946 seçimine katıldığını bilen öğrenci, bu bilgiyi metindeymiş gibi düşünebilir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda Cumhuriyetin ilk yıllarında yaşanan bazı gelişmeler verilmiştir.</p>
-<p>I. Erkân-ı Harbiye Vekâletinin kaldırılması<br>II. Görevdeki askerlerin milletvekili seçilmesini yasaklayan kanunun kabul edilmesi<br>III. Terakkiperver Cumhuriyet Fırkasının kurulması<br>IV. Halk Fırkasının adının Cumhuriyet Halk Fırkası olarak değiştirilmesi<br>V. 1924 Anayasası'nın kabul edilmesi</p>
-<p>Bu gelişmelerin oluş sırası aşağıdakilerin hangisinde <b>doğru</b> verilmiştir?</p>`,
-  c: ["II – V – I – IV – III", "I – II – V – III – IV", "II – I – V – IV – III", "V – II – I – III – IV"],
-  a: "C",
-  s: `<p>Tarihler: II. 19 Aralık 1923 → I. 3 Mart 1924 → V. 20 Nisan 1924 → IV. 10 Kasım 1924 → III. 17 Kasım 1924. Doğru sıra II – I – V – IV – III'tür.</p><p>A ✗: Anayasayı Erkân-ı Harbiye'nin kaldırılmasından önceye koyar, oysa Erkân-ı Harbiye, halifelikle aynı gün (3 Mart 1924) kaldırılmıştır. B ✗: Askerlerle ilgili kanunu Erkân-ı Harbiye'nin kaldırılmasından sonraya koyar. Bu, kanunun 1924'te çıktığını sanan öğrencinin sıralamasıdır (yaygın “19 Aralık 1924” hatası). Ayrıca TCF ile ad değişikliği yer değiştirmiştir. D ✗: Anayasayı en başa alır ve TCF'yi ad değişikliğinden önceye koyar. Oysa CHF adını TCF kurulmadan bir hafta önce almıştır. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda Atatürk döneminde yaşanan bazı gelişmeler verilmiştir.</p>
-<p>I. Şeyh Sait İsyanı<br>II. İzmir Suikastı girişimi<br>III. Menemen Olayı<br>IV. Serbest Cumhuriyet Fırkasının çevresinde Cumhuriyet ve laiklik karşıtlarının toplanması</p>
-<p>Bu gelişmelerden hangileri hem Cumhuriyet rejimini tehdit etmiş <b>hem de</b> bir muhalefet partisinin kapanmasında doğrudan etkili olmuştur?</p>`,
-  c: ["I ve II", "I ve IV", "II ve III", "I, III ve IV"],
-  a: "B",
-  s: `<p>I ✓: Şeyh Sait İsyanı rejime yönelik bir tehditti. İsyanın ardından TCF, Takrir-i Sükûn Kanunu'na dayanılarak kapatıldı (Haziran 1925). IV ✓: Rejim karşıtlarının SCF çevresinde toplanması da bir tehditti. Ali Fethi Bey'in partiyi feshetmesinde doğrudan etkili oldu (17 Kasım 1930).</p><p>II ✗: İzmir Suikastı girişimi (Haziran 1926) bir tehdittir, ama TCF bundan bir yıl önce kapatılmıştı. Yargılananlar arasında eski TCF üyelerinin bulunması, öğrencinin bu olayı parti kapatmayla ilişkilendirmesine yol açar (A ve C şıkları). III ✗: Menemen Olayı (23 Aralık 1930) SCF'nin feshinden sonra yaşanmıştır. Bir partinin kapanmasının nedeni olamaz (C ve D şıkları). İki ölçütün birlikte arandığına dikkat edilmelidir. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><b>Yargı:</b> “Atatürk döneminde (1923–1938) demokrasi alanında hiçbir ilerleme sağlanamamıştır.”</div>
-<p>Aşağıdakilerden hangileri bu yargıyı <b>çürüten</b> kanıtlar olarak kullanılabilir?</p>
-<p>I. Kadınlara belediye, muhtarlık ve milletvekili seçimlerinde seçme ve seçilme hakkı tanınması<br>II. Görevdeki askerlerin milletvekili seçilmesinin yasaklanarak ordunun siyasetin dışında tutulması<br>III. Muhalefet partisi denemelerinin kısa sürede sona ermesi<br>IV. Cumhuriyet'in ilan edilmesi ve 1924 Anayasası'nda egemenliğin kayıtsız şartsız millete ait olduğunun belirtilmesi</p>`,
-  c: ["I ve II", "II ve III", "I, II ve III", "I, II ve IV"],
-  a: "D",
-  s: `<p>Bir yargıyı çürüten kanıt, yargının tersini gösteren bir olgudur. Burada demokrasi alanında bir ilerleme olduğunu göstermelidir.</p><p>I ✓: Kadınların seçme ve seçilme hakkını kazanması millî iradenin daha tam yansımasını sağladı. II ✓: Ordunun siyasetten ayrılması, siyasetin seçilmiş sivillere bırakılmasını sağladı. IV ✓: Cumhuriyet'in ilanı ve egemenliğin millete ait olması demokrasinin temelidir. Hepsi 1923–1938 arasındadır.</p><p>III ✗: Denemelerin kısa sürede sona ermesi yargıyı çürütmez. Tam tersine, yargıyı destekleyen bir olgu gibi kullanılabilir (B ve C şıkları bu ters okumadan gelir). A şıkkı ise IV'ü dışarıda bırakır. “Cumhuriyet'in ilanı ayrı bir konu” diye düşünen öğrenci, egemenliğin millete verilmesinin demokrasiyle ilişkisini gözden kaçırır. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrencinin hazırladığı sunumdaki numaralanmış cümleler aşağıda verilmiştir.</p>
-<div class="box">(I) Terakkiperver Cumhuriyet Fırkası, I. TBMM döneminde kurulmuştur. (II) Partinin kurucuları arasında Kâzım Karabekir, Ali Fuat Cebesoy ve Rauf Orbay gibi Millî Mücadele'nin önde gelen isimleri vardı. (III) Parti, ekonomide liberalizmi ve tek dereceli seçim sistemini savunuyordu. (IV) Şeyh Sait İsyanı'nın ardından Takrir-i Sükûn Kanunu'na dayanılarak Bakanlar Kurulu kararıyla kapatıldı.</div>
-<p>Bu cümlelerden hangisinde tarihî bir <b>yanlışlık</b> yapılmıştır?</p>`,
-  c: ["I", "II", "III", "IV"],
-  a: "A",
-  s: `<p>I ✗: I. TBMM 1920'de açılmış, 1923 seçimlerinden sonra yerini II. TBMM'ye bırakmıştır (Ağustos 1923). TCF ise 17 Kasım 1924'te, yani II. TBMM döneminde kurulmuştur. I. TBMM'deki İkinci Grup ile Cumhuriyet döneminin ilk muhalefet partisini karıştırmak bu yanlışlığı doğurur.</p><p>II ✓: Kurucular doğru verilmiştir. III ✓: TCF liberal ekonomiyi ve tek dereceli seçimi savunmuştur. IV ✓: Parti 3 Haziran 1925'te bu şekilde kapatılmıştır. IV. cümle uzun ve ayrıntılı olduğu için “yanlışlık burada olmalı” diye düşünen öğrenciyi yanıltır. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Bir dede, torununa 1930 yılında yaşadıklarını aşağıdaki gibi anlatmıştır (canlandırma).</p>
-<div class="dialog"><div><b>Dede:</b> 1930 sonbaharında belediye seçimleri yapıldı; annem o seçimde hayatında ilk kez oy kullandı. Serbest Fırka da bu seçimlere katılmıştı. Fethi Bey, aynı yılın Kasım ayında partisini kapattı. Ertesi yıl, yani 1931'de de Menemen'de Kubilay şehit edildi.</div></div>
-<p>Dedenin anlattıklarından hangisi tarihî gerçeklerle <b>çelişmektedir</b>?</p>`,
-  c: ["Annesinin 1930 belediye seçimlerinde ilk kez oy kullanması", "Menemen Olayı'nın 1931'de yaşanması", "Serbest Cumhuriyet Fırkasının belediye seçimlerine katılması", "Ali Fethi Bey'in partisini Kasım 1930'da kapatması"],
-  a: "B",
-  s: `<p>B ✗ (çelişki): Menemen Olayı ertesi yıl değil, aynı yıl içinde, 23 Aralık 1930'da yaşanmıştır. SCF'nin feshinden yaklaşık bir ay sonradır. Olayın yılın son günlerinde olması, “bir sonraki yıl” sanılmasına yol açan bir kronoloji tuzağıdır.</p><p>A ✓: Kadınlar 3 Nisan 1930 tarihli Belediye Kanunu ile bu hakkı kazandı ve 1930 sonbaharındaki seçimlerde ilk kez oy kullandı. C ✓: SCF, 1930 belediye seçimlerine katılmıştır. D ✓: Parti 17 Kasım 1930'da feshedilmiştir. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıda Atatürk döneminde kurulan iki muhalefet partisinin kuruluş ortamı anlatılmıştır.</p>
-<div class="box"><b>Metin I:</b> Kâzım Karabekir, Ali Fuat Cebesoy ve Rauf Orbay gibi isimler 17 Kasım 1924'te Terakkiperver Cumhuriyet Fırkasını kurdu. Muhalefetin ortaya çıkmasından kısa süre sonra İsmet Paşa başbakanlıktan ayrıldı. Yerine daha ılımlı bir yönetim anlayışına sahip olduğu düşünülen Ali Fethi Bey hükûmeti kurdu. Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı.</div>
-<div class="box"><b>Metin II:</b> 1929 Dünya Ekonomik Bunalımı'nın etkilerinin sürdüğü günlerde Atatürk'ün isteğiyle Ali Fethi Bey, 12 Ağustos 1930'da Serbest Cumhuriyet Fırkasını kurdu. Parti 17 Kasım 1930'da feshedildi. 23 Aralık 1930'da ise Menemen'de laik Cumhuriyet'e karşı bir ayaklanma çıktı.</div>
-<p>Bu metinlere göre,</p><p>I. İki dönemde de Ali Fethi Bey siyasi hayatta önemli bir görev üstlenmiştir.<br>II. İki partinin kurucuları da Atatürk'ün isteğiyle hareket etmiştir.<br>III. İki parti de faaliyetini sürdürürken Takrir-i Sükûn Kanunu yürürlükteydi.<br>IV. İki partinin kuruluşundan sonraki birkaç ay içinde rejime karşı ayaklanmalar çıkmıştır.</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>`,
-  c: ["I ve II", "II ve III", "III ve IV", "I ve IV"],
-  a: "D",
-  s: `<p>I ✓: 1924'te Ali Fethi Bey hükûmeti kurmuş (Metin I), 1930'da ise SCF'yi kurmuştur (Metin II). IV ✓: TCF'nin kuruluşundan yaklaşık 3 ay sonra Şeyh Sait İsyanı, SCF'nin kuruluşundan yaklaşık 4,5 ay sonra Menemen Olayı yaşanmıştır.</p><p>II ✗: Atatürk'ün isteği yalnızca Metin II'de, SCF için geçer. TCF'yi komutanlar kendi istekleriyle kurmuştur (A ve B şıkları bu genellemeden gelir). III ✗: Metinlerde Takrir-i Sükûn'dan söz edilmez. Tarihsel olarak da kanun yalnızca TCF'nin son aylarında (Mart–Haziran 1925) yürürlükteydi. SCF kurulduğunda (1930) kanun 1929'da kalkmıştı. C şıkkı bu yanılgıyı içerir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Atatürk dönemi 29 Ekim 1923'ten 10 Kasım 1938'e kadar olan dönemi kapsar.</p>
-<p>Buna göre aşağıdakilerden hangisi Atatürk döneminde <b>gerçekleşmemiştir</b>?</p>`,
-  c: ["Bir muhalefet partisinin belediye seçimlerine katılması", "Kadınların milletvekili seçimlerinde aday olması", "Milletvekili seçimlerinin tek dereceli olarak yapılması", "Görevdeki askerlerin milletvekili seçilmesinin yasaklanması"],
-  a: "C",
-  s: `<p>C ✓ (gerçekleşmemiş): Atatürk döneminde milletvekili seçimleri iki dereceliydi. Tek dereceli seçim TCF ve SCF tarafından savunulmuş, ama ancak 1946 seçiminde uygulanmıştır. Muhalefetin bu isteğini “gerçekleşmiş” sanmak bu sorunun tuzağıdır.</p><p>A ✗: SCF 1930 belediye seçimlerine katılmıştır. B ✗: Kadınlar 1935 seçimlerinde aday olmuş, 17 kadın milletvekili seçilmiştir. D ✗: Bu yasak 19 Aralık 1923 tarihlidir. Cumhuriyet'in ilanından sonradır, yani Atatürk dönemindedir. Cumhuriyet'in ilanından iki ay sonra çıkmasına dikkat edilmelidir. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="box">9 Eylül 1923'te kurulan Halk Fırkası, 10 Kasım 1924'te adının başına “Cumhuriyet” kelimesini ekledi. Bundan bir hafta sonra kurulan ilk muhalefet partisi de adında “Cumhuriyet” kelimesini taşıyordu: Terakkiperver Cumhuriyet Fırkası. 1930'da kurulan ikinci muhalefet partisinin adı da Serbest Cumhuriyet Fırkasıydı.</div>
-<p>Bu durum aşağıdakilerden hangisinin <b>göstergesi</b> olarak yorumlanabilir?</p>`,
-  c: ["Partilerin, rejimin temeli konusunda uzlaştıklarını vurgulamak istedikleri", "Partilerin ekonomi politikalarının aynı olduğu", "Muhalefet partilerinin hepsinin Atatürk'ün isteğiyle kurulduğu", "Çok partili hayata Atatürk döneminde kalıcı olarak geçildiği"],
-  a: "A",
-  s: `<p>İktidar partisi de iki muhalefet partisi de adında “Cumhuriyet” kelimesini kullanmıştır. Bu, aralarındaki ayrılıkların rejimle değil, politikalarla ilgili olduğunu ve hepsinin Cumhuriyet'e bağlılığını öne çıkardığını gösterir (A ✓).</p><p>B ✗: Parti adları ekonomi politikaları hakkında bilgi vermez. Üstelik muhalefet partileri liberal ekonomiyi savunurken CHF zamanla devletçiliğe yönelmiştir. C ✗: TCF komutanların kendi isteğiyle kurulmuştur. Yalnızca SCF Atatürk'ün isteğiyle kurulmuştur. D ✗: Bu iki deneme de kısa sürede sona ermiştir. Kalıcı geçiş 1946'da olmuştur. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Bir öğrenci, “Kadınların siyasi haklarını kazanma basamakları” başlıklı aşağıdaki şemayı hazırlamıştır.</p>
-<div class="fig"><svg viewBox="0 0 560 220" width="560" role="img" aria-label="Kadın hakları basamak şeması" font-family="Arial, Helvetica, sans-serif">
-<rect x="0" y="0" width="560" height="220" fill="#ffffff"/>
-<text x="280" y="20" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Kadınların siyasi haklarını kazanma basamakları</text>
-<rect x="10" y="160" width="130" height="50" fill="#e0e7ff" stroke="#4338ca"/>
-<rect x="145" y="120" width="130" height="90" fill="#dbeafe" stroke="#1d4ed8"/>
-<rect x="280" y="80" width="130" height="130" fill="#cffafe" stroke="#0e7490"/>
-<rect x="415" y="40" width="135" height="170" fill="#dcfce7" stroke="#15803d"/>
-<g font-size="11" fill="#1e293b" text-anchor="middle">
-<text x="75" y="176" font-weight="bold">1. basamak (1926)</text><text x="75" y="191">Türk Medeni</text><text x="75" y="204">Kanunu</text>
-<text x="210" y="136" font-weight="bold">2. basamak (1930)</text><text x="210" y="151">Belediye seçimlerinde</text><text x="210" y="164">seçme ve seçilme</text>
-<text x="345" y="96" font-weight="bold">3. basamak (1933)</text><text x="345" y="111">Muhtarlık seçimlerinde</text><text x="345" y="124">seçme ve seçilme</text>
-<text x="482" y="56" font-weight="bold">4. basamak (1934)</text><text x="482" y="71">Milletvekili seçimlerinde</text><text x="482" y="84">seçme ve seçilme</text>
-</g>
-</svg></div>
-<p>Bu şemayla ilgili,</p><p>I. Basamaklar kronolojik sıraya göre dizilmiştir.<br>II. Basamaklardan biri siyasi değil, hukuki ve toplumsal alanda bir düzenlemedir.<br>III. Son basamaktaki hak, ilk kez 1935 seçimlerinde kullanılmıştır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>`,
-  c: ["Yalnız I", "I ve II", "I, II ve III", "II ve III"],
-  a: "C",
-  s: `<p>I ✓: 1926 → 1930 → 1933 → 1934 sıralaması doğrudur. II ✓: Türk Medeni Kanunu (17 Şubat 1926) resmî nikâh, mirasta eşitlik ve boşanma hakkı gibi hukuki ve toplumsal haklar getirmiştir. Seçme-seçilme hakkı vermemiştir. Bu yüzden başlıktaki “siyasi haklar” kapsamına girmez. III ✓: 5 Aralık 1934'te tanınan milletvekili seçme ve seçilme hakkı, ilk kez Şubat 1935 seçimlerinde kullanılmıştır (17 kadın milletvekili).</p><p>A ✗: Medeni Kanun'un siyasi bir hak olmadığını ve 1935 seçimini gözden kaçırır. B ✗: Hak 1934'te tanındığı için “ilk kullanım da 1934'tedir” diye düşünen öğrencinin seçimidir. D ✗: Şemadaki kronolojinin doğru olduğunu fark etmeyen öğrencinin seçimidir. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Aşağıdakilerin hangisinde verilen neden-sonuç ilişkisi <b>kronolojik olarak mümkündür</b>?</p>`,
-  c: ["İzmir Suikastı girişimi → Terakkiperver Cumhuriyet Fırkasının kapatılması", "Belediye Kanunu'nun kabul edilmesi → Kadınların, Serbest Cumhuriyet Fırkasının da katıldığı belediye seçimlerinde oy kullanması", "Kadınlara milletvekili seçme ve seçilme hakkı tanınması → Kadınların 1930 belediye seçimlerine katılması", "Takrir-i Sükûn Kanunu'nun yürürlükten kalkması → Şeyh Sait İsyanı'nın bastırılması"],
-  a: "B",
-  s: `<p>Neden, sonuçtan önce gerçekleşmelidir.</p><p>B ✓: Belediye Kanunu 3 Nisan 1930'da kabul edildi. Kadınlar, SCF'nin de katıldığı 1930 sonbaharındaki belediye seçimlerinde oy kullandı. Neden önce, sonuç sonradır.</p><p>A ✗: TCF 3 Haziran 1925'te kapatıldı, İzmir Suikastı girişimi Haziran 1926'dadır. Neden sonuçtan sonra gelmiştir. C ✗: Milletvekilliği hakkı 1934'te tanındı. 1930 seçimlerinin nedeni olamaz. Kadınlar o seçimlere Belediye Kanunu sayesinde katıldı. D ✗: İsyan 1925'te bastırıldı, kanun 1929'da kalktı. Ayrıca kanun isyanı bastırmak için çıkarılmıştır, kalkması bastırılmanın nedeni değildir. Cevap <b>B</b>.</p>` }
-]
+ "id": "ink-demokrasi",
+ "summary": "<h3>1. Çok Partili Siyasi Hayata Geçiş Denemeleri ve Önemi</h3>\n<p>Demokratik yönetimlerde halkın iradesinin meclise tam olarak yansıması (<b>çoğulculuk</b>), farklı fikirlerin temsil edilmesi ve iktidar partisinin yaptığı işlerin <b>denetlenebilmesi</b> için birden fazla siyasi partinin bulunması şarttır.</p>\n\n<div class=\"fig\"><svg viewBox=\"0 0 560 200\" width=\"560\" role=\"img\" aria-label=\"Atatürk dönemi demokratikleşme çabaları ve rejim karşıtı olaylar zaman çizelgesi\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"200\" fill=\"#ffffff\"/>\n<line x1=\"10\" y1=\"92\" x2=\"550\" y2=\"92\" stroke=\"#475569\" stroke-width=\"3\"/>\n<circle cx=\"38\" cy=\"92\" r=\"6\" fill=\"#2563eb\"/>\n<text x=\"38\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">9 Eyl 1923</text>\n<text x=\"38\" y=\"44\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Halk Fırkası</text>\n<text x=\"38\" y=\"59\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">kuruldu</text>\n<circle cx=\"107\" cy=\"92\" r=\"6\" fill=\"#2563eb\"/>\n<text x=\"107\" y=\"113\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">17 Kas 1924</text>\n<text x=\"107\" y=\"132\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Terakkiperver</text>\n<text x=\"107\" y=\"147\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Cumhuriyet F.</text>\n<circle cx=\"176\" cy=\"92\" r=\"6\" fill=\"#dc2626\"/>\n<text x=\"176\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">Şub 1925</text>\n<text x=\"176\" y=\"44\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Şeyh Sait</text>\n<text x=\"176\" y=\"59\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">İsyanı</text>\n<circle cx=\"245\" cy=\"92\" r=\"6\" fill=\"#dc2626\"/>\n<text x=\"245\" y=\"113\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">Haz 1926</text>\n<text x=\"245\" y=\"132\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">İzmir Suikast</text>\n<text x=\"245\" y=\"147\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Girişimi</text>\n<circle cx=\"314\" cy=\"92\" r=\"6\" fill=\"#2563eb\"/>\n<text x=\"314\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">12 Ağu 1930</text>\n<text x=\"314\" y=\"44\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Serbest</text>\n<text x=\"314\" y=\"59\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Cumhuriyet F.</text>\n<circle cx=\"383\" cy=\"92\" r=\"6\" fill=\"#dc2626\"/>\n<text x=\"383\" y=\"113\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">23 Ara 1930</text>\n<text x=\"383\" y=\"132\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Menemen</text>\n<text x=\"383\" y=\"147\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Olayı</text>\n<circle cx=\"452\" cy=\"92\" r=\"6\" fill=\"#2563eb\"/>\n<text x=\"452\" y=\"78\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">1930-1934</text>\n<text x=\"452\" y=\"44\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Kadınlara</text>\n<text x=\"452\" y=\"59\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">siyasi haklar</text>\n<circle cx=\"521\" cy=\"92\" r=\"6\" fill=\"#16a34a\"/>\n<text x=\"521\" y=\"113\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">1945-1946</text>\n<text x=\"521\" y=\"132\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Çok partili</text>\n<text x=\"521\" y=\"147\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">hayata geçiş</text>\n<text x=\"280\" y=\"176\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Mavi: demokratikleşme adımları · Kırmızı: Cumhuriyet rejimine yönelik tehditler</text>\n<text x=\"280\" y=\"192\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Yeşil: çok partili hayata kalıcı geçiş</text>\n</svg></div>\n\n<h4>Cumhuriyet Döneminde Kurulan İlk Üç Siyasi Partinin Karşılaştırması (Çok Sorulur!)</h4>\n<table class=\"rt\">\n<tr><th>Özellik</th><th>1. Cumhuriyet Halk Fırkası (CHF)</th><th>2. Terakkiperver Cumhuriyet Fırkası (TCF)</th><th>3. Serbest Cumhuriyet Fırkası (SCF)</th></tr>\n<tr><td><b>Kuruluş Tarihi</b></td><td>9 Eylül 1923 (“Halk Fırkası” adıyla; 10 Kasım 1924’te adı Cumhuriyet Halk Fırkası oldu)</td><td>17 Kasım 1924 (<b>İlk muhalefet partisi</b>)</td><td>12 Ağustos 1930 (<b>İkinci muhalefet partisi</b>)</td></tr>\n<tr><td><b>Kurucuları</b></td><td><b>Mustafa Kemal Paşa</b> (Anadolu ve Rumeli Müdafaa-i Hukuk Grubu’nun partiye dönüşmesiyle kuruldu).</td><td><b>Kâzım Karabekir</b> (Başkan), <b>Ali Fuat Cebesoy, Rauf Orbay, Refet Bele, Adnan Adıvar</b> (Kodlama: <b>KA-R-A-R</b>: Karabekir, Ali Fuat, Rauf, Refet; ayrıca Adnan Adıvar).</td><td>Atatürk’ün isteği ve teşvikiyle yakın arkadaşı <b>Ali Fethi (Okyar) Bey</b> tarafından kuruldu (Makbule Hanım da üye oldu).</td></tr>\n<tr><td><b>Ekonomi Politikası</b></td><td>Zamanla <b>devletçiliğe</b> yöneldi (1931’de programına aldı; karma ekonomi)</td><td><b>Liberalizm</b> (Serbest piyasa / Özel girişim)</td><td><b>Liberalizm</b> (Serbest piyasa / Vergilerin düşürülmesi)</td></tr>\n<tr><td><b>Seçim ve Yönetim Anlayışı</b></td><td><b>İki dereceli seçim</b> sistemini sürdürdü (1946’ya kadar), merkeziyetçi yönetim, köklü (radikal) inkılaplar.</td><td><b>Tek dereceli seçim</b> sistemi, yerinden yönetim (adem-i merkeziyet), inkılapların zamana yayılması.</td><td><b>Tek dereceli seçim</b> sistemi, <b>kadınlara siyasi haklar verilmesi</b>, yabancı sermayenin teşviki.</td></tr>\n<tr><td><b>Kapanışı ve Nedeni</b></td><td>1950’ye kadar kesintisiz iktidarda kaldı, günümüzde de varlığını sürdürmektedir.</td><td>Programındaki <i>“Fırka, dinî düşünce ve inançlara saygılıdır.”</i> maddesi rejim karşıtlarınca kullanıldı; <b>Şeyh Sait İsyanı</b> sonrasında <b>Takrir-i Sükûn Kanunu</b>’na dayanılarak <b>Bakanlar Kurulu kararıyla kapatıldı (3 Haziran 1925)</b>.</td><td>1929 Ekonomik Krizi döneminde hükûmeti denetlemek için kuruldu; ancak rejim karşıtlarının partiye doluşması üzerine <b>Ali Fethi Bey tarafından kendi isteğiyle feshedildi (17 Kasım 1930)</b>.</td></tr>\n</table>\n\n<div class=\"note\"><b>LGS Tuzağı 1 (TCF ile SCF’nin Ortak ve Farklı Yönleri):</b>\n<br>• <b>Ortak Yönleri:</b> Her ikisi de <b>Cumhuriyet</b> rejimine bağlıdır, <b>liberal ekonomiyi</b> ve <b>tek dereceli seçimi</b> savunmuştur, her ikisi de <b>rejim ve laiklik karşıtlarının partiye sızması</b> yüzünden kapanmış ve çok partili hayata geçiş denemeleri başarısız olmuştur.\n<br>• <b>Farklı Yönleri:</b> TCF’yi komutanlar kendi iradeleriyle kurmuş ve <b>hükûmet kararıyla kapatılmıştır</b>; SCF ise bizzat <b>Atatürk’ün isteğiyle</b> kurulmuş ve kurucusu Ali Fethi Bey tarafından <b>kendi kendini feshetmiştir</b>!</div>\n\n<h3>2. Cumhuriyet Rejimine Yönelik Tehditler</h3>\n\n<div class=\"fig\"><svg viewBox=\"0 0 560 236\" width=\"560\" role=\"img\" aria-label=\"Cumhuriyete yönelik üç büyük tehdit şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"236\" fill=\"#ffffff\"/>\n<rect x=\"4\" y=\"4\" width=\"180\" height=\"228\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n<text x=\"94\" y=\"24\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">1. Şeyh Sait İsyanı (1925)</text>\n<text x=\"12\" y=\"44\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Neden:</text>\n<text x=\"12\" y=\"60\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Cumhuriyeti ve laikliği</text>\n<text x=\"12\" y=\"76\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">yıkma amacı; Musul sorunu</text>\n<text x=\"12\" y=\"92\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">sürerken İngiltere’nin</text>\n<text x=\"12\" y=\"108\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">kışkırtmaları da etkili oldu.</text>\n<text x=\"12\" y=\"124\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Tedbir:</text>\n<text x=\"12\" y=\"140\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Fethi Bey yerine İsmet Paşa</text>\n<text x=\"12\" y=\"156\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">hükûmeti; Takrir-i Sükûn</text>\n<text x=\"12\" y=\"172\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Kanunu, İstiklal Mahkemeleri.</text>\n<text x=\"12\" y=\"188\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">Sonuç: TCF kapatıldı;</text>\n<text x=\"12\" y=\"204\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">Musul’da elimiz zayıfladı.</text>\n<rect x=\"190\" y=\"4\" width=\"180\" height=\"228\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n<text x=\"280\" y=\"24\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">2. İzmir Suikastı (1926)</text>\n<text x=\"198\" y=\"44\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Amaç:</text>\n<text x=\"198\" y=\"60\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Mustafa Kemal’i öldürerek</text>\n<text x=\"198\" y=\"76\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Cumhuriyeti ve inkılapları</text>\n<text x=\"198\" y=\"92\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">ortadan kaldırmak.</text>\n<text x=\"198\" y=\"108\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Gelişme:</text>\n<text x=\"198\" y=\"124\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Ziya Hurşit ve arkadaşları,</text>\n<text x=\"198\" y=\"140\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Giritli Şevki’nin ihbarıyla</text>\n<text x=\"198\" y=\"156\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">yakalandı.</text>\n<text x=\"198\" y=\"172\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"start\">“Benim naçiz vücudum elbet</text>\n<text x=\"198\" y=\"188\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"start\">bir gün toprak olacaktır; fakat</text>\n<text x=\"198\" y=\"204\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"start\">Türkiye Cumhuriyeti ilelebet</text>\n<text x=\"198\" y=\"220\" font-size=\"11\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"start\">payidar kalacaktır.”</text>\n<rect x=\"376\" y=\"4\" width=\"180\" height=\"228\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"466\" y=\"24\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">3. Menemen Olayı (1930)</text>\n<text x=\"384\" y=\"44\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Gelişme:</text>\n<text x=\"384\" y=\"60\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">SCF’nin kapanmasından</text>\n<text x=\"384\" y=\"76\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">yaklaşık 1 ay sonra Derviş</text>\n<text x=\"384\" y=\"92\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Mehmet ve yandaşları</text>\n<text x=\"384\" y=\"108\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">Menemen’de ayaklandı.</text>\n<text x=\"384\" y=\"124\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">Şehitler: Öğretmen Asteğmen</text>\n<text x=\"384\" y=\"140\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">Mustafa Fehmi Kubilay, Bekçi</text>\n<text x=\"384\" y=\"156\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">Hasan ve Bekçi Şevki.</text>\n<text x=\"384\" y=\"172\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">Yargılama: Divan-ı Harp</text>\n<text x=\"384\" y=\"188\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"start\">(İstiklal Mahkemesi değil!)</text>\n</svg></div>\n\n<div class=\"note\"><b>LGS Tuzağı 2 (İç Politika – Dış Politika İlişkisi):</b>\n<br>• 1925’te çıkan <b>Şeyh Sait İsyanı</b> bir <b>iç politika</b> sorunudur; ancak Türk ordusu bu isyanla uğraşırken <b>Musul</b>’a askerî harekât düzenleyememiş ve 1926 Ankara Antlaşması ile <b>Musul İngiltere mandasındaki Irak’a</b> bırakılmıştır (<b>İç sorun → Dış politikada kayba yol açtı!</b>).\n<br>• <b>Dikkat:</b> Şeyh Sait İsyanı ve İzmir Suikastı’nda suçlular <b>İstiklal Mahkemeleri</b>’nde yargılanırken, 1930 Menemen Olayı’nda <b>Divan-ı Harp (Askerî Mahkeme)</b> görev yapmıştır.</div>\n\n<h3>3. Demokratikleşmeye Katkı Sağlayan Diğer Adımlar</h3>\n<ul>\n<li><b>Ordunun Siyasetten Ayrılması (1923-1924):</b> 19 Aralık 1923’te çıkarılan kanunla görevdeki askerlerin milletvekili seçilmesi yasaklandı; 3 Mart 1924’te Erkân-ı Harbiye Vekâleti kaldırılarak Genelkurmay hükûmetin dışına çıkarıldı. Ekim-Kasım 1924’te ise milletvekili olan komutanlardan <b>ya askerliği ya da milletvekilliğini</b> seçmeleri istendi (LGS bu düzenlemeyi tarih vermeden “ordu siyasetin dışında tutulmak istendi” şeklinde sordu). (Kâzım Karabekir, Ali Fuat Paşa gibi isimler askerlikten istifa edip mecliste kaldı; Fevzi Çakmak ve Cevat Çobanlı gibi isimler ise milletvekilliğinden ayrılıp orduda kaldı.)</li>\n<li><b>Kadınlara Siyasi Hakların Verilmesi (1930–1934):</b> Nüfusun yarısını oluşturan kadınların 1930’da belediye, 1933’te muhtarlık, 5 Aralık 1934’te milletvekili seçme ve seçilme hakkını kazanmasıyla <b>millî irade meclise daha güçlü yansımış</b> ve demokrasi güçlenmiştir (<b>Cumhuriyetçilik ve Halkçılık</b>).</li>\n<li><b>Çok Partili Hayata Kalıcı Geçiş (1945–1946):</b> Atatürk döneminde ortam uygun olmadığı için çok partili hayata geçilemedi. II. Dünya Savaşı’ndan sonra 1945’te <b>Nuri Demirağ</b> tarafından <b>Millî Kalkınma Partisi</b>, 1946’da ise Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan tarafından <b>Demokrat Parti</b> kurularak çok partili hayata kalıcı olarak geçildi.</li>\n</ul>\n\n<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>\n<p>2018-2026 LGS İnkılap Tarihi testlerinde bu konudan yalnızca <b>6 soru</b> çıktı: 2018, 2019, 2020 ve 2023’te hiç soru yok; 2022’de 2, 2021, 2024, 2025 ve 2026’da 1’er soru var. Alt başlık sınıflandırması yorumdur (*).</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 210\" width=\"560\" role=\"img\" aria-label=\"Demokratikleşme Çabaları konusundan 2018-2026 LGS’de alt başlık ve yıllara göre soru sayıları ısı haritası\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"210\" fill=\"#ffffff\"/>\n<text x=\"280\" y=\"18\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Alt başlık × yıl: kaç soru geldi? (2018-2026, toplam 6)*</text>\n<text x=\"213\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2018</text>\n<text x=\"249\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2019</text>\n<text x=\"285\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2020</text>\n<text x=\"321\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2021</text>\n<text x=\"357\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2022</text>\n<text x=\"393\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2023</text>\n<text x=\"429\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2024</text>\n<text x=\"465\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2025</text>\n<text x=\"501\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">2026</text>\n<text x=\"540\" y=\"40\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Top.</text>\n<text x=\"188\" y=\"67\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">Çok partili hayat (TCF, SCF)</text>\n<rect x=\"196\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"232\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"268\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"304\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"340\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"356\" y=\"67\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<rect x=\"376\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"412\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"448\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"464\" y=\"67\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<rect x=\"484\" y=\"50\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"500\" y=\"67\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<text x=\"540\" y=\"67\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">3</text>\n<text x=\"188\" y=\"95\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">Rejime yönelik tehditler</text>\n<rect x=\"196\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"232\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"268\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"304\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"320\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<rect x=\"340\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"376\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"412\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"448\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"484\" y=\"78\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<text x=\"540\" y=\"95\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">1</text>\n<text x=\"188\" y=\"123\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">Ordunun siyasetten ayrılması</text>\n<rect x=\"196\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"232\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"268\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"304\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"340\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"376\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"412\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"428\" y=\"123\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<rect x=\"448\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"484\" y=\"106\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<text x=\"540\" y=\"123\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">1</text>\n<text x=\"188\" y=\"151\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">Kadınlara siyasi haklar</text>\n<rect x=\"196\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"232\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"268\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"304\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"340\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#93c5fd\"/>\n<text x=\"356\" y=\"151\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<rect x=\"376\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"412\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"448\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<rect x=\"484\" y=\"134\" width=\"33\" height=\"24\" rx=\"3\" fill=\"#f1f5f9\"/>\n<text x=\"540\" y=\"151\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">1</text>\n<line x1=\"20\" y1=\"164\" x2=\"545\" y2=\"164\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n<text x=\"188\" y=\"181\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">Yıllık toplam</text>\n<text x=\"212\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#94a3b8\" text-anchor=\"middle\">0</text>\n<text x=\"248\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#94a3b8\" text-anchor=\"middle\">0</text>\n<text x=\"284\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#94a3b8\" text-anchor=\"middle\">0</text>\n<text x=\"320\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<text x=\"356\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">2</text>\n<text x=\"392\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#94a3b8\" text-anchor=\"middle\">0</text>\n<text x=\"428\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<text x=\"464\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<text x=\"500\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">1</text>\n<text x=\"540\" y=\"181\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">6</text>\n<text x=\"280\" y=\"202\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">* Alt başlıklar sorunun ölçtüğü ana konuya göre yapılmış bir sınıflandırmadır.</text>\n</svg></div>\n<div class=\"tbl\"><table>\n<tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr>\n<tr><td>2021</td><td>10</td><td>Rejime yönelik tehditler (İzmir Suikastı)*</td><td>Alıntı (Atatürk’ün suikast sonrası Anadolu Ajansına demeci) → hangi sorunun cevabı yoktur</td></tr>\n<tr><td>2022</td><td>7</td><td>Kadınlara siyasi haklar</td><td>Kısa metin (1930 belediye, 1933 muhtarlık, 1934 milletvekilliği) → hangi alanda etkin kılınmak istendi</td></tr>\n<tr><td>2022</td><td>8</td><td>Çok partili hayat (SCF’nin kuruluşu)*</td><td>Alıntı (Mustafa Kemal’in Fethi Bey’e sözü) → vurgu (farklı görüşleri temsil edecek parti)</td></tr>\n<tr><td>2024</td><td>8</td><td>Ordunun siyasetten ayrılması</td><td>Metin (askerlerin milletvekilliği yasağı, komutanların tercihi) → hangisine ulaşılabilir</td></tr>\n<tr><td>2025</td><td>9</td><td>Çok partili hayat (TCF ve SCF)*</td><td>Tablo (iki partinin kuruluş ve kapanış tarihleri) → hangisi söylenebilir</td></tr>\n<tr><td>2026</td><td>9</td><td>Çok partili hayat (SCF’nin programı)*</td><td>Metin (SCF’nin kuruluşu ve programı) → I-IV yargı, hangilerine ulaşılabilir</td></tr>\n</table></div>\n<div class=\"note\"><b>Çıkmış analizi</b><ul>\n<li>Soru sayısı az (6) olduğu için kesin bir eğilim söylemek zor; yine de en sık sorulan alt başlık <b>çok partili hayata geçiş denemeleri</b> (TCF ve SCF: 3 soru, üçü de 2022 ve sonrasında). Son üç yılın her birinde konudan 1 soru geldi.</li>\n<li>Altı sorunun beşi <b>kısa metin ya da alıntı</b>, biri <b>tablo</b>; grafik veya şema hiç yok. Kök çoğunlukla “ulaşılabilir / söylenebilir / vurgu yapılmıştır / hangi sorunun cevabı yoktur”: bilgi ezberinden çok metindeki bilgiyi doğru yorumlama ölçülüyor.</li>\n<li>Çeldiriciler metinde olmayan bilgiyi (suikastçıların yargılandığı yer), kronolojiyi (ilk muhalefet partisi SCF değil TCF’dir) ve ekonomik modeli (SCF devletçi değil liberaldir) karıştırmaya dayanıyor.</li>\n<li>Kadın hakları ve ordunun siyasetten ayrılması birer kez soruldu; Şeyh Sait İsyanı, Menemen Olayı ve Takrir-i Sükûn ise yalnızca başka soruların içinde geçti. Bunlar da özetteki tarih sırasıyla birlikte bilinmeli.</li>\n</ul></div>\n",
+ "qs": [
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdaki tabloda Cumhuriyet döneminde kurulan ilk üç siyasi partinin bazı özellikleri karşılaştırılmıştır.</p>\n<table class=\"rt\">\n<tr><th>Özellik</th><th>Cumhuriyet Halk Fırkası (1923)</th><th>Terakkiperver Cumhuriyet Fırkası (1924)</th><th>Serbest Cumhuriyet Fırkası (1930)</th></tr>\n<tr><td><b>Rejim</b></td><td>Cumhuriyetçilik ve millî egemenlik</td><td>Cumhuriyetçilik ve millî egemenlik</td><td>Cumhuriyetçilik ve millî egemenlik</td></tr>\n<tr><td><b>Ekonomi</b></td><td>Zamanla <b>devletçiliğe</b> yöneldi (1931’de programına aldı)</td><td><b>Liberalizm</b> (özel girişimin öncülüğü)</td><td><b>Liberalizm</b> (özel girişimin öncülüğü)</td></tr>\n<tr><td><b>Seçim sistemi</b></td><td>İki dereceli seçim sürdürüldü</td><td>Tek dereceli seçim savunuldu</td><td>Tek dereceli seçim savunuldu</td></tr>\n</table>\n<p>Tablodaki bilgilere göre bu üç siyasi parti hakkında aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Üçü de Cumhuriyet rejimini ve millî egemenliği benimsemiş; ekonomi politikası ve seçim sistemi konusunda farklı görüşler savunmuştur.",
+    "Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası saltanatı geri getirmek amacıyla kurulmuştur.",
+    "Cumhuriyet Halk Fırkası ekonomide devletin hiçbir yatırım yapmamasını savunmuştur.",
+    "Muhalefet partilerinin ikisi de iki dereceli seçim sisteminin sürmesini istemiştir."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo: CHF (1923), TCF (1924), SCF (1930)</li><li>Satırlar: rejim, ekonomi, seçim sistemi</li></ul><b>İstenen</b><p>Tablodan <b>çıkarılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b>Soru, Cumhuriyetin ilk partilerinin <b>görüş farklılıklarını</b> karşılaştırıyor. Tabloyu satır satır okuyacağız.</li><li><b>Benzerliği bul</b>«Cumhuriyetçilik ve millî egemenlik» satırı üç partide de aynıdır → rejimde birlik var.</li><li><b>Farkları bul</b>Ekonomide CHF «devletçiliğe» yönelmiş, TCF ve SCF «liberalizm» demiş. Seçimde CHF «iki dereceli», muhalefet «tek dereceli» seçimi savunmuş → ekonomi ve seçimde ayrılık var.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Rejimde aynı, ekonomi ve seçimde farklı → tabloyla birebir uyumlu.</td></tr><tr><td>B</td><td>Tabloda ikisi de «cumhuriyetçilik» der; saltanat bilgisi yok.</td></tr><tr><td>C</td><td>CHF tam tersine «devletçiliğe» yönelmiştir.</td></tr><tr><td>D</td><td>Muhalefet partileri «tek dereceli» seçimi savunmuştur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tablo sorularında önce “ortak satır”ı, sonra “farklı satır”ları işaretle; doğru şık genellikle ikisini birlikte söyler.</div><div class=\"sv-w\"><b>Tuzak:</b> C’deki “hiçbir” gibi kesin ifadeler, tablodaki bilgiyi abartarak çeldirici yapar.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>1925 yılında Doğu Anadolu’da çıkan <b>Şeyh Sait İsyanı</b>’nın iç ve dış politikadaki sonuçları aşağıdaki şemada gösterilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 200\" width=\"560\" role=\"img\" aria-label=\"Şeyh Sait İsyanı’nın iç ve dış politikadaki sonuçları şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"200\" fill=\"#ffffff\"/>\n<rect x=\"170\" y=\"6\" width=\"220\" height=\"32\" rx=\"6\" fill=\"#dc2626\"/>\n<text x=\"280\" y=\"27\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">ŞEYH SAİT İSYANI (Şubat 1925)</text>\n<line x1=\"220\" y1=\"38\" x2=\"140\" y2=\"62\" stroke=\"#475569\" stroke-width=\"2\"/>\n<line x1=\"340\" y1=\"38\" x2=\"420\" y2=\"62\" stroke=\"#475569\" stroke-width=\"2\"/>\n<rect x=\"6\" y=\"62\" width=\"268\" height=\"130\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"140\" y=\"82\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">İÇ POLİTİKADAKİ SONUÇLARI</text>\n<text x=\"16\" y=\"104\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"start\">• Ali Fethi Bey Hükûmeti istifa etti,</text>\n<text x=\"16\" y=\"120\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"start\">  yerine İsmet Paşa Hükûmeti kuruldu.</text>\n<text x=\"16\" y=\"142\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"start\">• Takrir-i Sükûn Kanunu çıkarıldı.</text>\n<text x=\"16\" y=\"164\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"start\">• Terakkiperver Cumhuriyet Fırkası</text>\n<text x=\"16\" y=\"180\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"start\">  kapatıldı (Haziran 1925).</text>\n<rect x=\"286\" y=\"62\" width=\"268\" height=\"130\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n<text x=\"420\" y=\"82\" font-size=\"12\" font-weight=\"bold\" fill=\"#b45309\" text-anchor=\"middle\">DIŞ POLİTİKADAKİ SONUCU</text>\n<text x=\"296\" y=\"104\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"start\">• Türk ordusu isyanla uğraştığı için</text>\n<text x=\"296\" y=\"120\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"start\">  Musul’a askerî harekât yapılamadı.</text>\n<text x=\"296\" y=\"142\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">• 1926 Ankara Antlaşması ile Musul,</text>\n<text x=\"296\" y=\"158\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">  İngiliz mandasındaki Irak’a</text>\n<text x=\"296\" y=\"174\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"start\">  bırakıldı.</text>\n</svg></div>\n<p>Şemadaki bilgilere göre Şeyh Sait İsyanı ile ilgili aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>",
+   "c": [
+    "İç politikadaki bu ayaklanma, dış politikada Musul’un kaybedilmesinde etkili olmuştur.",
+    "İsyan, çok partili hayata geçiş denemelerinden birinin sona ermesine yol açmıştır.",
+    "İsyan sonucunda Musul, Türkiye Cumhuriyeti’nin sınırlarına katılmıştır.",
+    "Devlet, kamu düzenini korumak için olağanüstü yasal tedbirlere başvurmuştur."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şeyh Sait İsyanı (Şubat 1925)</li><li>İç sonuçlar: Fethi Bey istifası, Takrir-i Sükûn, TCF’nin kapatılması</li><li>Dış sonuç: Musul harekâtı yapılamadı, 1926’da Irak’a bırakıldı</li></ul><b>İstenen</b><p>Şemadan <b>ulaşılamayan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b>Soru, bir iç isyanın hem iç hem dış politikaya etkisini soruyor.</li><li><b>Dış sonucu oku</b>Şemada «Musul, İngiliz mandasındaki Irak’a bırakıldı» yazıyor. Yani Musul Türkiye’ye katılmamış, kaybedilmiştir.</li><li><b>İç sonuçları bağla</b>TCF’nin kapatılması ilk çok partili denemenin bitmesi; Takrir-i Sükûn olağanüstü bir kanundur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ulaşılır: isyan yüzünden harekât yapılamadı, Musul kaybedildi.</td></tr><tr><td>B</td><td>Ulaşılır: ilk muhalefet partisi TCF kapatıldı.</td></tr><tr class=\"ok\"><td>C</td><td>Ulaşılamaz: Musul Türkiye’ye değil, Irak’a bırakıldı.</td></tr><tr><td>D</td><td>Ulaşılır: Takrir-i Sükûn olağanüstü bir tedbirdir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Şeyh Sait İsyanı = iç politikada TCF’nin kapanması + Takrir-i Sükûn; dış politikada Musul’un kaybı.</div><div class=\"sv-w\"><b>Tuzak:</b> “Ulaşılamaz” kökünü gözden kaçırıp doğru bilgiyi (A) işaretleme.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdaki Venn şemasında Atatürk döneminde kurulan iki muhalefet partisi, <b>Terakkiperver Cumhuriyet Fırkası (1924)</b> ile <b>Serbest Cumhuriyet Fırkası (1930)</b> karşılaştırılmıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 200\" width=\"560\" role=\"img\" aria-label=\"Terakkiperver ve Serbest Cumhuriyet fırkalarının Venn şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"200\" fill=\"#ffffff\"/>\n<ellipse cx=\"190\" cy=\"108\" rx=\"182\" ry=\"84\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n<ellipse cx=\"370\" cy=\"108\" rx=\"182\" ry=\"84\" fill=\"#dcfce7\" fill-opacity=\"0.6\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n<text x=\"95\" y=\"16\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Terakkiperver C. F. (1924)</text>\n<text x=\"468\" y=\"16\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">Serbest C. F. (1930)</text>\n<text x=\"100\" y=\"72\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kurucusu: Kâzım</text>\n<text x=\"100\" y=\"88\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Karabekir ve ark.</text>\n<text x=\"100\" y=\"112\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">İlk muhalefet partisi</text>\n<text x=\"100\" y=\"136\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">Hükûmet kararıyla</text>\n<text x=\"100\" y=\"152\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">kapatıldı (1925)</text>\n<text x=\"280\" y=\"80\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Liberal ekonomi</text>\n<text x=\"280\" y=\"104\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Tek dereceli seçim</text>\n<text x=\"280\" y=\"128\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Rejim karşıtlarının</text>\n<text x=\"280\" y=\"144\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">partiye sızması</text>\n<text x=\"462\" y=\"72\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kurucusu: Ali Fethi</text>\n<text x=\"462\" y=\"88\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">(Okyar) Bey</text>\n<text x=\"462\" y=\"112\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Atatürk’ün isteğiyle</text>\n<text x=\"462\" y=\"136\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">Kurucusu tarafından</text>\n<text x=\"462\" y=\"152\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">feshedildi (1930)</text>\n</svg></div>\n<p>Şemadaki bilgilere göre bu iki parti ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>",
+   "c": [
+    "Her iki parti de ekonomide liberalizmi ve tek dereceli seçim sistemini savunmuştur.",
+    "Terakkiperver Cumhuriyet Fırkası hükûmet kararıyla kapatılmış, Serbest Cumhuriyet Fırkası ise kurucusu tarafından feshedilmiştir.",
+    "Her iki partinin de kısa ömürlü olmasında rejim karşıtlarının bu partilere sızması etkili olmuştur.",
+    "Her iki parti de 1946 seçimlerine katılarak iktidar olmuştur."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sadece TCF: Kâzım Karabekir, ilk muhalefet partisi, hükûmet kararıyla kapatıldı (1925)</li><li>Ortak: liberal ekonomi, tek dereceli seçim, rejim karşıtlarının sızması</li><li>Sadece SCF: Ali Fethi Bey, Atatürk’ün isteğiyle, kurucusu feshetti (1930)</li></ul><b>İstenen</b><p>Şemaya göre <b>yanlış</b> olan yargı.</p></div><ol class=\"sv-s\"><li><b>Venn şemasını oku</b>Ortadaki kesişim iki partinin <b>ortak</b> özelliklerini, yan kümeler ise yalnız birine ait özellikleri gösterir.</li><li><b>Kapanış tarihlerini bağla</b>TCF «1925», SCF «1930»da kapanmıştır. 1946’da var olmayan bir parti o yılın seçimine giremez.</li><li><b>Bilgiyle doğrula</b>1946 seçimlerine CHF ve Demokrat Parti katılmış; DP iktidara 1950’de gelmiştir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru: kesişim kümesinde «liberal ekonomi» ve «tek dereceli seçim» var.</td></tr><tr><td>B</td><td>Doğru: kapanış biçimleri yan kümelerde yazılı.</td></tr><tr><td>C</td><td>Doğru: «rejim karşıtlarının sızması» ortak kümede.</td></tr><tr class=\"ok\"><td>D</td><td>Yanlış: iki parti de 1946’dan çok önce kapanmıştır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Venn şemasında ortak bilgi = iki parti için de geçerli; yan kümedeki bilgi sadece o partiye aittir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Haziran 1926’da Cumhurbaşkanı Mustafa Kemal Paşa’nın İzmir ziyareti sırasında Ziya Hurşit ve arkadaşlarının planladığı suikast girişimi, Giritli Şevki’nin ihbarıyla son anda önlenmiştir. Olayın ardından Mustafa Kemal Paşa, Anadolu Ajansına bir demeç vermiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 150\" width=\"560\" role=\"img\" aria-label=\"Mustafa Kemal’in İzmir suikast girişimi sonrasındaki demeci\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"150\" fill=\"#ffffff\"/>\n<rect x=\"6\" y=\"6\" width=\"548\" height=\"138\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#b45309\" stroke-width=\"2\"/>\n<text x=\"280\" y=\"30\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">MUSTAFA KEMAL’İN ANADOLU AJANSINA DEMECİ (HAZİRAN 1926)</text>\n<text x=\"280\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">“Bu alçakça girişimin benim şahsımdan çok kutsal Cumhuriyetimize</text>\n<text x=\"280\" y=\"76\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">ve onun dayandığı yüksek ilkelere yönelik olduğuna şüphe yoktur.</text>\n<text x=\"280\" y=\"100\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat</text>\n<text x=\"280\" y=\"120\" font-size=\"12\" font-weight=\"bold\" fill=\"#b91c1c\" text-anchor=\"middle\">Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”</text>\n<text x=\"280\" y=\"138\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">(sadeleştirilmiştir)</text>\n</svg></div>\n<p>Mustafa Kemal Paşa’nın bu sözlerinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Suikast girişiminin yalnızca kişisel bir düşmanlıktan kaynaklandığına",
+    "Mustafa Kemal Paşa’nın, Cumhuriyetin kendi varlığından bağımsız olarak sonsuza dek yaşayacağına inandığına",
+    "Suikast girişiminden sonra inkılapların durdurulduğuna",
+    "Mustafa Kemal Paşa’nın bu olay üzerine Cumhurbaşkanlığından ayrıldığına"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İzmir Suikast Girişimi (Haziran 1926)</li><li>Demeç: «şahsımdan çok kutsal Cumhuriyetimize», «naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır»</li></ul><b>İstenen</b><p>Demeçten <b>ulaşılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayı belirle</b>Soru, İzmir Suikastı sonrası Mustafa Kemal’in Cumhuriyete bakışını soruyor.</li><li><b>İpucu ifadeyi yorumla</b>«Naçiz vücudum … toprak olacaktır; fakat … Cumhuriyeti ilelebet payidar kalacaktır» → “Ben ölsem de Cumhuriyet sonsuza kadar yaşar.” <i>İlelebet payidar</i> = sonsuza dek ayakta.</li><li><b>Şıkları metinle karşılaştır</b>Metinde olmayan ya da metinle çelişen her şıkkı eleriz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metin tersini söyler: girişim «şahsımdan çok» Cumhuriyete yöneliktir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: Cumhuriyetin kendisinden bağımsız sonsuza dek yaşayacağına inanır.</td></tr><tr><td>C</td><td>Demeçte yok; inkılaplar sürmüştür.</td></tr><tr><td>D</td><td>Demeçte yok; görevini sürdürmüştür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “İlelebet payidar” sözü İzmir Suikastı’ndan sonra söylenmiştir ve Cumhuriyetin kişilere bağlı olmadığını anlatır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdaki grafikte bazı ülkelerde kadınlara milletvekili seçme ve seçilme hakkının tanındığı yıllar verilmiştir. Türk kadınına bu hak, 1930’da belediye ve 1933’te muhtarlık seçimlerine katılma haklarından sonra, 5 Aralık 1934’te tanınmıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 230\" width=\"560\" role=\"img\" aria-label=\"Kadınlara milletvekili seçme ve seçilme hakkının verildiği yıllar grafiği\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"230\" fill=\"#ffffff\"/>\n<text x=\"280\" y=\"18\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kadınlara milletvekili seçme ve seçilme hakkının tanındığı yıl</text>\n<line x1=\"110\" y1=\"32\" x2=\"110\" y2=\"192\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<text x=\"110\" y=\"208\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1930</text>\n<line x1=\"195\" y1=\"32\" x2=\"195\" y2=\"192\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<text x=\"195\" y=\"208\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1940</text>\n<line x1=\"280\" y1=\"32\" x2=\"280\" y2=\"192\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<text x=\"280\" y=\"208\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1950</text>\n<line x1=\"365\" y1=\"32\" x2=\"365\" y2=\"192\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<text x=\"365\" y=\"208\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1960</text>\n<line x1=\"450\" y1=\"32\" x2=\"450\" y2=\"192\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n<text x=\"450\" y=\"208\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">1970</text>\n<text x=\"102\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">Türkiye</text>\n<rect x=\"110\" y=\"40\" width=\"34\" height=\"20\" rx=\"3\" fill=\"#dc2626\"/>\n<text x=\"150\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"start\">1934</text>\n<text x=\"102\" y=\"85\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">Fransa</text>\n<rect x=\"110\" y=\"70\" width=\"119\" height=\"20\" rx=\"3\" fill=\"#2563eb\"/>\n<text x=\"235\" y=\"85\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"start\">1944</text>\n<text x=\"102\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">İtalya</text>\n<rect x=\"110\" y=\"100\" width=\"128\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"244\" y=\"115\" font-size=\"12\" font-weight=\"bold\" fill=\"#0d9488\" text-anchor=\"start\">1945</text>\n<text x=\"102\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">Japonya</text>\n<rect x=\"110\" y=\"130\" width=\"128\" height=\"20\" rx=\"3\" fill=\"#7c3aed\"/>\n<text x=\"244\" y=\"145\" font-size=\"12\" font-weight=\"bold\" fill=\"#7c3aed\" text-anchor=\"start\">1945</text>\n<text x=\"102\" y=\"175\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"end\">İsviçre</text>\n<rect x=\"110\" y=\"160\" width=\"348\" height=\"20\" rx=\"3\" fill=\"#475569\"/>\n<text x=\"464\" y=\"175\" font-size=\"12\" font-weight=\"bold\" fill=\"#475569\" text-anchor=\"start\">1971</text>\n<text x=\"280\" y=\"225\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Türkiye’de 1935 seçimleriyle Meclis’e 17 kadın milletvekili girdi.</text>\n</svg></div>\n<p>Bu bilgiler birlikte değerlendirildiğinde aşağıdakilerden hangisi <b>söylenemez</b>?</p>",
+   "c": [
+    "Türkiye, kadınlara milletvekilliği hakkını grafikteki diğer ülkelerden önce tanımıştır.",
+    "Kadınlara seçme ve seçilme hakkının verilmesi millî egemenliğin güçlenmesine ve kadın-erkek eşitliğine katkı sağlamıştır.",
+    "Medeni Kanun’u İsviçre’den aldığımız için İsviçreli kadınlar siyasi haklarını Türk kadınlarından önce kazanmıştır.",
+    "Türk kadınına siyasi haklar önce yerel, sonra genel seçimlerde aşamalı olarak tanınmıştır."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Türkiye 1934, Fransa 1944, İtalya 1945, Japonya 1945, İsviçre 1971</li><li>Türkiye: 1930 belediye → 1933 muhtarlık → 1934 milletvekilliği</li><li>1935’te 17 kadın milletvekili</li></ul><b>İstenen</b><p>Bilgilerle <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b>Soru, kadınlara siyasi hak verilmesini ülkelerle karşılaştırıyor.</li><li><b>Yılları karşılaştır</b>Türkiye en erken yıldır.<span class=\"sv-m\">İsviçre − Türkiye = 1971 − 1934 = 37 yıl sonra</span></li><li><b>Bilgiyi bağla</b>Medeni Kanun’un İsviçre’den alınması, İsviçreli kadınların siyasi hakları önce aldığı anlamına gelmez; grafik bunun tersini gösterir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Söylenir: diğer bütün ülkeler 1934’ten sonradır.</td></tr><tr><td>B</td><td>Söylenir: oy veren ve seçilen kişi sayısı artar, eşitlik güçlenir.</td></tr><tr class=\"ok\"><td>C</td><td>Söylenemez: İsviçre bu hakkı Türkiye’den 37 yıl <b>sonra</b> tanımıştır.</td></tr><tr><td>D</td><td>Söylenir: önce yerel (1930, 1933), sonra genel (1934).</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C şıkkı doğru bir bilgiyi (Medeni Kanun İsviçre’den alındı) yanlış bir sonuca bağlıyor. Neden-sonuç ilişkisini grafikle kontrol et.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Atatürk, Meclis’te farklı görüşlerin temsil edilmesini ve hükûmetin denetlenmesini önemsemiş; bu amaçla 1930’da yeni bir muhalefet partisinin kurulmasını desteklemiştir.</p><p>Bu tutum, Atatürk’ün aşağıdakilerden hangisine önem verdiğini gösterir?</p>",
+   "c": [
+    "Tek parti yönetiminin süresiz devam etmesine",
+    "Çoğulcu ve demokratik bir yönetim anlayışının gelişmesine",
+    "Saltanat ve hilafetin yeniden kurulmasına",
+    "Meclis’in denetim yetkisinin kaldırılmasına"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk «farklı görüşlerin temsil edilmesini» ve «hükûmetin denetlenmesini» önemsemiş</li><li>1930’da yeni muhalefet partisini (SCF) desteklemiş</li></ul><b>İstenen</b><p>Bu tutumun gösterdiği değer.</p></div><ol class=\"sv-s\"><li><b>Kavramı belirle</b>Farklı görüşlerin bir arada bulunmasına <b>çoğulculuk</b>, iktidarın muhalefetçe kontrolüne <b>denetim</b> denir. İkisi de demokrasinin temel unsurudur.</li><li><b>İpucunu bağla</b>«Farklı görüşlerin temsil edilmesi» + «muhalefet partisinin kurulmasını desteklemek» → Atatürk çoğulcu, demokratik yönetimi istemiştir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Muhalefeti desteklemek tek parti yönetimiyle çelişir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: çoğulculuk ve denetim demokrasinin gereğidir.</td></tr><tr><td>C</td><td>Saltanat ve hilafet kaldırılmıştı; metinle ilgisiz.</td></tr><tr><td>D</td><td>Amaç denetimi kaldırmak değil, sağlamaktır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Muhalefet partisi = çoğulculuk + denetim = demokrasi.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>17 Kasım 1924’te Kâzım Karabekir, Ali Fuat Cebesoy, Rauf Orbay, Refet Bele ve Adnan Adıvar gibi Millî Mücadele’nin önemli isimleri <b>Terakkiperver Cumhuriyet Fırkası</b>’nı kurdu. Parti programında liberal ekonomi, tek dereceli seçim ve yerinden yönetim savunuluyor; ayrıca <i>“Fırka, dinî düşünce ve inançlara saygılıdır.”</i> maddesi yer alıyordu.</p><p>Bu bilgiler ve konuyla ilgili bilgilerinize göre Terakkiperver Cumhuriyet Fırkası ile ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>",
+   "c": [
+    "Cumhuriyet döneminin ilk muhalefet partisidir.",
+    "Ekonomide serbest piyasa (liberal) anlayışını savunmuştur.",
+    "Programındaki dinî inançlara saygı maddesi, rejim karşıtlarının partiyi kullanmasına zemin hazırlamıştır.",
+    "Cumhuriyetin ilanından önce, Kurtuluş Savaşı sürerken kurulmuştur."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF: 17 Kasım 1924, Kâzım Karabekir ve arkadaşları</li><li>Program: liberal ekonomi, tek dereceli seçim, yerinden yönetim, «dinî düşünce ve inançlara saygılıdır» maddesi</li></ul><b>İstenen</b><p>TCF için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Tarihleri sırala</b>Kurtuluş Savaşı 1922’de bitti, Cumhuriyet 29 Ekim 1923’te ilan edildi, TCF 17 Kasım 1924’te kuruldu.</li><li><b>Karşılaştır</b>«1924» tarihi Cumhuriyetin ilanından sonradır. Yani parti Kurtuluş Savaşı sürerken kurulmuş olamaz.</li><li><b>Diğer bilgileri bağla</b>TCF ilk muhalefet partisidir; dinî inançlara saygı maddesi rejim karşıtlarınca istismar edilmiş, parti Şeyh Sait İsyanı’ndan sonra kapatılmıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Söylenir: Cumhuriyet döneminin ilk muhalefet partisidir.</td></tr><tr><td>B</td><td>Söylenir: programda «liberal ekonomi» var.</td></tr><tr><td>C</td><td>Söylenir: bu madde rejim karşıtlarınca kullanılmıştır.</td></tr><tr class=\"ok\"><td>D</td><td>Söylenemez: 1924, Cumhuriyetin ilanından (1923) sonradır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Kurucuların Millî Mücadele komutanları olması, partiyi savaş yıllarına aitmiş gibi gösterebilir; tarihe bak.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Atatürk, 1930 yılında yakın arkadaşı Paris Büyükelçisi <b>Ali Fethi (Okyar) Bey</b>’den yeni bir parti kurmasını istedi. Atatürk’e göre Meclis’te muhalefet olmadığı için hükûmetin yaptığı işler yeterince tartışılıp denetlenemiyordu. Ayrıca 1929 Dünya Ekonomik Bunalımı’nın yarattığı sıkıntılara karşı farklı ekonomik görüşlerin de dile getirilmesi isteniyordu. Bunun üzerine 12 Ağustos 1930’da <b>Serbest Cumhuriyet Fırkası</b> kuruldu.</p>\n<p>Bu bilgilere göre Serbest Cumhuriyet Fırkası’nın kurulmasında aşağıdakilerden hangisi etkili olmuştur?</p>",
+   "c": [
+    "Yabancı devletlerin Türkiye’ye yaptığı diplomatik baskılar",
+    "Saltanat sistemine geri dönme düşüncesi",
+    "Hükûmetin denetlenmesini sağlamak ve ekonomik bunalıma karşı farklı çözüm önerilerinin ortaya çıkmasını istemek",
+    "Cumhuriyet Halk Fırkası’nın kapatılmak istenmesi"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1930: Atatürk, Ali Fethi Bey’den parti kurmasını istedi</li><li>Neden 1: «Meclis’te muhalefet olmadığı için hükûmet … denetlenemiyordu»</li><li>Neden 2: «1929 Dünya Ekonomik Bunalımı» karşısında farklı ekonomik görüşler</li></ul><b>İstenen</b><p>SCF’nin kurulmasında etkili olan etken.</p></div><ol class=\"sv-s\"><li><b>Olayı belirle</b>Soru, Serbest Cumhuriyet Fırkası’nın kuruluş nedenlerini soruyor.</li><li><b>Metindeki iki nedeni çek</b>Metin iki nedeni açıkça söylüyor: hükûmeti <b>denetlemek</b> ve ekonomik bunalıma karşı <b>farklı çözümler</b> duymak.</li><li><b>Şıkla eşleştir</b>Bu iki nedeni birlikte veren şık doğrudur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metinde yabancı baskıdan söz edilmez.</td></tr><tr><td>B</td><td>SCF laik Cumhuriyete bağlı bir partidir.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: metindeki iki neden birlikte verilmiş.</td></tr><tr><td>D</td><td>CHF’nin kapatılması gündemde değildi; SCF onun karşısında muhalefet olacaktı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> SCF’nin kuruluş nedenleri: denetim eksikliği + 1929 Dünya Ekonomik Bunalımı + demokrasiyi geliştirme isteği.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Serbest Cumhuriyet Fırkası kısa sürede halktan ilgi gördü. Ancak Ali Fethi Bey’in Eylül 1930’daki İzmir gezisi sırasında Cumhuriyet ve laiklik karşıtlarının partiyi kendi amaçları için kullanmaya çalıştığı görüldü. Ali Fethi Bey, Mustafa Kemal ile siyasi alanda karşı karşıya gelmek istemediğini de belirterek 17 Kasım 1930’da partisini feshetti.</p>\n<p>Bu bilgilere göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>",
+   "c": [
+    "Serbest Cumhuriyet Fırkası mahkeme kararıyla kapatılmıştır.",
+    "Parti, rejim karşıtlarının partiyi kullanmaya çalışması üzerine kurucusu tarafından feshedilmiştir.",
+    "Parti halktan hiç destek görmediği için kapanmıştır.",
+    "Partinin kapanmasıyla aynı yıl çok partili hayata kalıcı olarak geçilmiştir."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>SCF «kısa sürede halktan ilgi gördü»</li><li>İzmir gezisinde «Cumhuriyet ve laiklik karşıtlarının partiyi … kullanmaya çalıştığı görüldü»</li><li>Ali Fethi Bey 17 Kasım 1930’da partisini feshetti</li></ul><b>İstenen</b><p>Metne göre <b>doğru</b> olan yargı.</p></div><ol class=\"sv-s\"><li><b>Kapanış biçimini bul</b>«Ali Fethi Bey … partisini feshetti» → kapatma kararını kurucusu vermiştir, mahkeme ya da hükûmet değil.</li><li><b>Kapanış nedenini bul</b>Rejim karşıtlarının partiyi kullanmaya çalışması ve Fethi Bey’in Atatürk’le karşı karşıya gelmek istememesi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Mahkeme değil, kurucu feshetmiştir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: rejim karşıtlarının sızması üzerine kurucusu feshetti.</td></tr><tr><td>C</td><td>Metin tersini söyler: «halktan ilgi gördü».</td></tr><tr><td>D</td><td>Kalıcı geçiş 1945-1946’dadır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> TCF → hükûmet kararıyla kapatıldı (1925). SCF → kurucusu feshetti (1930). Bu fark sık sorulur.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Serbest Cumhuriyet Fırkası’nın kapanmasından yaklaşık bir ay sonra, <b>23 Aralık 1930</b>’da İzmir’in <b>Menemen</b> ilçesinde kendini “mehdi” ilan eden Derviş Mehmet ve yandaşları, Cumhuriyet rejimine karşı ayaklandı. Olayı bastırmaya çalışan öğretmen yedek subay <b>Asteğmen Mustafa Fehmi Kubilay</b> ile <b>Bekçi Hasan ve Bekçi Şevki</b> isyancılar tarafından şehit edildi.</p>\n<p>Menemen Olayı ve sonuçlarıyla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>",
+   "c": [
+    "Laik Cumhuriyet rejimine karşı gerici (irticai) bir ayaklanmadır.",
+    "Ülkede henüz çok partili hayat için uygun ortamın oluşmadığını göstermiştir.",
+    "Halk bu olayı mitinglerle kınamış ve Cumhuriyete sahip çıkmıştır.",
+    "Olaydan sonra ülkedeki tüm okullar kapatılmış ve seçimlerden tamamen vazgeçilmiştir."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>23 Aralık 1930, Menemen: Derviş Mehmet kendini «mehdi» ilan etti</li><li>Kubilay, Bekçi Hasan ve Bekçi Şevki şehit edildi</li><li>SCF’nin kapanmasından bir ay sonra</li></ul><b>İstenen</b><p>Menemen Olayı için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayın niteliğini belirle</b>Laik Cumhuriyete karşı din istismarıyla yapılan bir <b>irtica</b> (gericilik) ayaklanmasıdır.</li><li><b>Sonuçlarını hatırla</b>Halk mitinglerle olayı kınadı; çok partili hayat denemelerine 1945’e kadar ara verildi. Okullar kapatılmadı, seçimler sürdü.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Söylenir: laik rejime karşı gerici bir ayaklanmadır.</td></tr><tr><td>B</td><td>Söylenir: SCF’nin hemen ardından yaşanması ortamın hazır olmadığını gösterdi.</td></tr><tr><td>C</td><td>Söylenir: olay yurt genelinde kınandı.</td></tr><tr class=\"ok\"><td>D</td><td>Söylenemez: okullar kapatılmadı, seçimler kaldırılmadı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D’deki “tüm okullar”, “tamamen” gibi abartılı ifadeler genellikle yanlış şıkkın işaretidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aralık 1923’te TBMM’de kabul edilen bir kanunla görevdeki askerlerin milletvekili seçilmesi yasaklandı. 1924 sonbaharında ise milletvekili olan komutanlardan <b>ya askerlik görevini ya da milletvekilliğini</b> seçmeleri istendi.</p><p>Bu düzenlemelerin temel amacı aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Komutanların tamamını emekliye ayırarak orduyu küçültmek",
+    "Orduyu siyasetten ayırarak vatan savunmasına odaklanmasını sağlamak ve siyasi çekişmelerin orduya yansımasını önlemek",
+    "Ülke yönetimini askerî bir kurula devretmek",
+    "Meclis’in yasama yetkisini sınırlandırmak"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Aralık 1923: görevdeki askerlerin milletvekili seçilmesi yasaklandı</li><li>1924: komutan milletvekillerinden «ya askerlik görevini ya da milletvekilliğini» seçmeleri istendi</li></ul><b>İstenen</b><p>Düzenlemelerin temel amacı.</p></div><ol class=\"sv-s\"><li><b>Kavramı belirle</b>Bu düzenleme <b>ordunun siyasetten ayrılması</b> ilkesidir.</li><li><b>Nedeni bağla</b>Mustafa Kemal, II. Meşrutiyet ve Balkan Savaşları döneminde ordunun siyasete karışmasının orduyu böldüğünü ve yenilgilere yol açtığını görmüştü. Ordu vatan savunmasına odaklanmalı, siyasi kavgalar orduya girmemeliydi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Komutanlar emekli edilmedi; bir görevi seçmeleri istendi.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: ordu siyasetten ayrılıp asıl görevine odaklanır.</td></tr><tr><td>C</td><td>Tam tersi: amaç askeri yönetimden uzak tutmaktır.</td></tr><tr><td>D</td><td>Düzenleme Meclis’in yetkisini değil, milletvekili olma şartını ilgilendirir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ordu–siyaset ayrımı demokrasinin ve laik, millî devletin güvencesidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>1921 Anayasası’nda yasama ve yürütme yetkileri TBMM’de toplanmış (<b>güçler birliği</b>), yargıya ayrıca yer verilmemişti. 20 Nisan 1924’te kabul edilen <b>1924 Anayasası</b>’nda ise şu hükümler yer aldı:</p>\n<div class=\"box\"><i>“Egemenlik kayıtsız şartsız milletindir. Yasama yetkisi ve yürütme kudreti Meclis’te toplanır. Meclis yasama yetkisini kendisi kullanır; yürütme yetkisini kendi seçtiği Cumhurbaşkanı ve onun atayacağı Bakanlar Kurulu eliyle kullanır. Yargı hakkı, millet adına bağımsız mahkemelerce kullanılır.”</i> (sadeleştirilmiştir)</div>\n<p>Buna göre 1924 Anayasası ile ilgili aşağıdakilerden hangisi söylenebilir?</p>",
+   "c": [
+    "Yargı yetkisinin bağımsız mahkemelere verilmesiyle güçler ayrılığına doğru bir adım atılmıştır.",
+    "Yürütme yetkisi yeniden padişaha devredilmiştir.",
+    "Yasama yetkisi TBMM’den alınarak başka bir kurula verilmiştir.",
+    "Seçimlerin yapılması kaldırılmıştır."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1921 Anayasası: yasama ve yürütme TBMM’de (güçler birliği), yargıya yer yok</li><li>1924 Anayasası: «Yargı hakkı, millet adına bağımsız mahkemelerce kullanılır»</li></ul><b>İstenen</b><p>1924 Anayasası için <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Kavramları hatırla</b><b>Güçler birliği</b>: yasama, yürütme, yargı tek elde. <b>Güçler ayrılığı</b>: üç güç ayrı organlarda.</li><li><b>İki anayasayı karşılaştır</b>Yasama ve yürütme hâlâ Meclis’te, ama yargı artık «bağımsız mahkemelerde». Bu, güçler ayrılığına doğru atılmış bir adımdır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: yargının bağımsız mahkemelere verilmesi güçler ayrılığına adımdır.</td></tr><tr><td>B</td><td>Saltanat 1922’de kalktı; yürütme Cumhurbaşkanı ve Bakanlar Kurulu eliyle.</td></tr><tr><td>C</td><td>«Meclis yasama yetkisini kendisi kullanır».</td></tr><tr><td>D</td><td>Metinde yok; egemenlik millete aittir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 1924 Anayasası tam güçler ayrılığı değildir: yasama + yürütme Meclis’te, sadece yargı ayrıdır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdakilerden hangisi Atatürk döneminde çok partili hayata geçiş denemelerinin (Terakkiperver ve Serbest Cumhuriyet fırkaları) <b>başarısız olmasının nedenleri</b> arasında <b>gösterilemez</b>?</p>",
+   "c": [
+    "Cumhuriyet rejiminin ve inkılapların henüz tam olarak yerleşmemiş olması",
+    "Toplumda demokrasi ve çok partili siyaset kültürünün yeterince gelişmemiş olması",
+    "Atatürk’ün çok partili hayata ve demokrasiye karşı olması",
+    "Muhalefet partilerine rejim ve laiklik karşıtlarının sızması"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF (1924) ve SCF (1930) denemeleri kısa sürdü</li></ul><b>İstenen</b><p>Başarısızlığın nedenleri arasında <b>gösterilemeyecek</b> olan.</p></div><ol class=\"sv-s\"><li><b>Gerçek nedenleri say</b>İnkılaplar yeniydi, demokrasi kültürü gelişmemişti, rejim karşıtları muhalefet partilerine sızdı.</li><li><b>Atatürk’ün tutumunu bağla</b>Atatürk SCF’nin kurulmasını bizzat istemiş, kardeşi partiye üye olmuştur. Yani o çok partili hayata karşı değildi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Neden: inkılaplar henüz yerleşmemişti.</td></tr><tr><td>B</td><td>Neden: demokrasi kültürü yeterince gelişmemişti.</td></tr><tr class=\"ok\"><td>C</td><td>Gösterilemez: Atatürk SCF’yi bizzat istemiştir.</td></tr><tr><td>D</td><td>Neden: rejim ve laiklik karşıtları partilere sızdı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Atatürk’ün demokrasiye bakışını soran sorularda SCF’yi “kurdurması” en güçlü kanıttır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıda Cumhuriyetin ilk yıllarına ait bazı olaylar verilmiştir.</p>\n<p>I. Serbest Cumhuriyet Fırkası’nın kurulması<br>II. Terakkiperver Cumhuriyet Fırkası’nın kurulması<br>III. Şeyh Sait İsyanı’nın çıkması<br>IV. Menemen Olayı’nın yaşanması</p><p>Bu olayların kronolojik sıralaması aşağıdakilerin hangisinde doğru verilmiştir?</p>",
+   "c": [
+    "III – II – I – IV",
+    "II – III – I – IV",
+    "II – I – III – IV",
+    "I – II – III – IV"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. SCF’nin kuruluşu</li><li>II. TCF’nin kuruluşu</li><li>III. Şeyh Sait İsyanı</li><li>IV. Menemen Olayı</li></ul><b>İstenen</b><p>Olayların doğru kronolojik sırası.</p></div><ol class=\"sv-s\"><li><b>Tarihleri yaz</b><span class=\"sv-m\">II. TCF → 17 Kasım 1924</span><span class=\"sv-m\">III. Şeyh Sait → Şubat 1925</span><span class=\"sv-m\">I. SCF → 12 Ağustos 1930</span><span class=\"sv-m\">IV. Menemen → 23 Aralık 1930</span></li><li><b>Neden-sonuç ile kontrol et</b>TCF, Şeyh Sait İsyanı’ndan <b>sonra</b> kapatıldı → TCF isyandan önce vardı. Menemen, SCF’nin kapanmasından bir ay sonra oldu.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 111\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Kas. 1924</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">II. TCF</text><circle cx=\"198\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"198\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">Şub. 1925</text><text x=\"198\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">III. Şeyh Sait</text><circle cx=\"322\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"322\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Ağu. 1930</text><text x=\"322\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">I. SCF</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">Ara. 1930</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">IV. Menemen</text></svg><figcaption>Olaylar zaman çizelgesinde: II → III → I → IV</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Şeyh Sait İsyanı TCF’den sonra çıktı.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: II – III – I – IV.</td></tr><tr><td>C</td><td>SCF 1930’da, isyandan beş yıl sonra kuruldu.</td></tr><tr><td>D</td><td>İlk muhalefet partisi SCF değil TCF’dir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her muhalefet partisinin ardından bir irtica olayı: TCF → Şeyh Sait; SCF → Menemen.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Şeyh Sait İsyanı sırasında çıkarılan <b>Takrir-i Sükûn Kanunu</b>, hükûmete rejimi ve iç güvenliği tehdit eden örgütlenmeleri ve yayınları yasaklama yetkisi vermiştir. 4 Mart 1925’te kabul edilen bu kanun, ortam sakinleşince 1929’da yürürlükten kaldırılmıştır.</p>\n<p>Bu bilgilere göre Takrir-i Sükûn Kanunu ile ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>",
+   "c": [
+    "Kadınlara seçme ve seçilme hakkı tanıyan bir seçim kanunudur.",
+    "Cumhuriyet tarihi boyunca süresiz olarak yürürlükte kalmıştır.",
+    "Rejimi tehdit eden olağanüstü bir durum karşısında kamu düzenini sağlamak için geçici olarak uygulanmıştır.",
+    "Sanayi yatırımlarını teşvik etmek amacıyla çıkarılmış bir ekonomi kanunudur."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Takrir-i Sükûn: Şeyh Sait İsyanı sırasında, 4 Mart 1925</li><li>Hükûmete rejimi tehdit eden örgüt ve yayınları yasaklama yetkisi</li><li>«ortam sakinleşince 1929’da yürürlükten kaldırılmıştır»</li></ul><b>İstenen</b><p>Kanun hakkında <b>doğru</b> olan yargı.</p></div><ol class=\"sv-s\"><li><b>Kavramı belirle</b><i>Takrir-i Sükûn</i> = “sükûnu (huzuru) sağlama”. Olağanüstü bir güvenlik kanunudur.</li><li><b>Süresini bağla</b>1925’te çıkarılıp 1929’da kaldırılması, kanunun <b>geçici</b> olduğunu gösterir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Konusu seçim değil, güvenliktir.</td></tr><tr><td>B</td><td>Metin tersini söyler: 1929’da kaldırıldı.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: olağanüstü durumda geçici olarak uygulandı.</td></tr><tr><td>D</td><td>Ekonomi kanunu değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kanunun adı konusunu söyler: “sükûn” = huzur, asayiş.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Cumhuriyetin ilk yıllarında yaşanan üç olay aşağıdaki şemada bir arada gösterilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 140\" width=\"560\" role=\"img\" aria-label=\"Şeyh Sait İsyanı, İzmir Suikast Girişimi ve Menemen Olayı ortak özellik şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"140\" fill=\"#ffffff\"/>\n<rect x=\"6\" y=\"8\" width=\"176\" height=\"62\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n<text x=\"94\" y=\"34\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">Şeyh Sait İsyanı</text>\n<text x=\"94\" y=\"54\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">(Şubat 1925)</text>\n<line x1=\"94\" y1=\"70\" x2=\"280\" y2=\"96\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n<rect x=\"192\" y=\"8\" width=\"176\" height=\"62\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n<text x=\"280\" y=\"34\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İzmir Suikast Girişimi</text>\n<text x=\"280\" y=\"54\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">(Haziran 1926)</text>\n<line x1=\"280\" y1=\"70\" x2=\"280\" y2=\"96\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n<rect x=\"378\" y=\"8\" width=\"176\" height=\"62\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"466\" y=\"34\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">Menemen Olayı</text>\n<text x=\"466\" y=\"54\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">(Aralık 1930)</text>\n<line x1=\"466\" y1=\"70\" x2=\"280\" y2=\"96\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n<rect x=\"90\" y=\"96\" width=\"380\" height=\"34\" rx=\"6\" fill=\"#1e293b\"/>\n<text x=\"280\" y=\"118\" font-size=\"13\" font-weight=\"bold\" fill=\"#fde047\" text-anchor=\"middle\">ORTAK ÖZELLİK: ( ? )</text>\n</svg></div>\n<p>Şemada <b>( ? )</b> ile gösterilen yere aşağıdakilerden hangisi yazılmalıdır?</p>",
+   "c": [
+    "Yabancı devletlerle cephede yapılan savaşlar olmaları",
+    "Cumhuriyet rejimini ve inkılapları ortadan kaldırmaya yönelik iç tehditler olmaları",
+    "Kadınlara seçme ve seçilme hakkının verilmesini hızlandırmaları",
+    "Çok partili hayata geçişi başarıya ulaştırmaları"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şeyh Sait İsyanı (1925)</li><li>İzmir Suikast Girişimi (1926)</li><li>Menemen Olayı (1930)</li></ul><b>İstenen</b><p>Üç olayın <b>ortak özelliği</b>.</p></div><ol class=\"sv-s\"><li><b>Her olayın hedefini yaz</b>Şeyh Sait → Cumhuriyet ve laik düzen; İzmir Suikastı → Mustafa Kemal ve inkılaplar; Menemen → laik Cumhuriyet.</li><li><b>Ortak noktayı bul</b>Üçü de ülke <b>içinde</b> çıkmış ve <b>rejimi/inkılapları</b> yıkmayı amaçlamıştır → iç tehdit.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Üçü de iç olaydır; cephe savaşı değildir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: rejime ve inkılaplara yönelik iç tehditlerdir.</td></tr><tr><td>C</td><td>Kadın haklarıyla ilgileri yoktur.</td></tr><tr><td>D</td><td>Tam tersine çok partili hayat denemelerini olumsuz etkilemişlerdir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ortak özellik sorularında her olayın “amacını” tek kelimeyle yaz; tekrar eden kelime cevaptır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Atatürk, 1930’da Serbest Cumhuriyet Fırkası kurulurken Cumhurbaşkanı olarak partiler karşısında <b>tarafsız</b> kalacağını açıklamıştır. Kız kardeşi <b>Makbule (Atadan) Hanım</b> da Serbest Cumhuriyet Fırkası’na üye olmuştur.</p>\n<p>Bu bilgiler aşağıdakilerden hangisinin göstergesidir?</p>",
+   "c": [
+    "Atatürk’ün yeni muhalefet partisinin serbestçe çalışmasını ve demokrasinin yerleşmesini istediğinin",
+    "Atatürk’ün Serbest Cumhuriyet Fırkası’nı kısa sürede kapatmak istediğinin",
+    "Atatürk’ün tek partili yönetimin sürmesini savunduğunun",
+    "Makbule Hanım’ın Cumhuriyet rejimine karşı olduğunun"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk: Cumhurbaşkanı olarak partiler karşısında «tarafsız kalacağını» açıkladı</li><li>Kız kardeşi Makbule Hanım SCF’ye üye oldu</li></ul><b>İstenen</b><p>Bu bilgilerin gösterdiği.</p></div><ol class=\"sv-s\"><li><b>Durumu yorumla</b>Halk, yeni partinin Atatürk’e karşı olduğunu düşünüp çekinebilirdi. Tarafsızlık açıklaması ve kardeşinin üyeliği bu çekinceyi giderir.</li><li><b>Sonucu bağla</b>Atatürk muhalefetin serbestçe çalışmasını, böylece demokrasinin yerleşmesini istemiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: muhalefetin serbest çalışmasını ve demokrasiyi istemiştir.</td></tr><tr><td>B</td><td>Davranışlar partiyi desteklemeye yöneliktir.</td></tr><tr><td>C</td><td>Tek parti yönetimi isteyen biri muhalefeti desteklemez.</td></tr><tr><td>D</td><td>SCF laik Cumhuriyete bağlıdır; üyelik rejim karşıtlığı değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> SCF’ye verilen destek = Atatürk’ün çok partili demokrasiye bakışının kanıtı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdakilerden hangisi Atatürk döneminde Türk kadınının <b>toplumsal, hukuki veya siyasi</b> hayatta erkekle eşit konuma gelmesi amacıyla yapılan düzenlemelerden biri <b>değildir</b>?</p>",
+   "c": [
+    "1926’da Türk Medeni Kanunu’nun kabul edilmesi",
+    "1930’da kadınlara belediye seçimlerinde seçme ve seçilme hakkı verilmesi",
+    "1934’te kadınlara milletvekili seçme ve seçilme hakkı tanınması",
+    "1926’da Kabotaj Kanunu’nun yürürlüğe girmesi"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kadının toplumsal, hukuki veya siyasi eşitliğine yönelik düzenlemeler</li></ul><b>İstenen</b><p>Bu amaca hizmet <b>etmeyen</b> düzenleme.</p></div><ol class=\"sv-s\"><li><b>Her düzenlemenin alanını belirle</b>Medeni Kanun → hukuki/toplumsal eşitlik; 1930 ve 1934 hakları → siyasi eşitlik.</li><li><b>Farklı olanı bul</b><b>Kabotaj Kanunu</b> (1926): Türk karasularında gemi taşımacılığı hakkını Türk gemilerine verir → ekonomik bağımsızlık; kadınla ilgisi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kadına hukuki ve toplumsal eşitlik getirdi.</td></tr><tr><td>B</td><td>Siyasi eşitlik (yerel seçim).</td></tr><tr><td>C</td><td>Siyasi eşitlik (genel seçim).</td></tr><tr class=\"ok\"><td>D</td><td>Değildir: ekonomik bir kanundur.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> A ve D aynı yıl (1926). Tarihe değil düzenlemenin konusuna bak.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>9 Eylül 1923’te kurulan <b>Halk Fırkası</b>, 10 Kasım 1924’te adını <b>Cumhuriyet Halk Fırkası</b> olarak değiştirmiştir.</p><p>Partinin adında yapılan bu değişiklikle öncelikle aşağıdakilerden hangisi vurgulanmak istenmiştir?</p>",
+   "c": [
+    "Partinin Cumhuriyet rejimine ve millî egemenliğe bağlılığı",
+    "Partinin saltanat ve hilafeti koruma amacı",
+    "Partinin devletçilikten vazgeçtiği",
+    "Partinin seçimlere katılmama kararı aldığı"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>9 Eylül 1923: Halk Fırkası</li><li>10 Kasım 1924: adı «Cumhuriyet Halk Fırkası» oldu</li></ul><b>İstenen</b><p>Ad değişikliğiyle vurgulanan.</p></div><ol class=\"sv-s\"><li><b>Eklenen kelimeyi bul</b>Ada eklenen kelime «Cumhuriyet»tir.</li><li><b>Bilgiyi bağla</b>Cumhuriyet 29 Ekim 1923’te ilan edilmişti. Parti, adına bu kelimeyi ekleyerek yeni rejime bağlılığını gösterdi.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: Cumhuriyet rejimine bağlılık vurgulanmıştır.</td></tr><tr><td>B</td><td>Saltanat 1922’de, hilafet 1924’te kaldırıldı.</td></tr><tr><td>C</td><td>Ad değişikliğinin ekonomiyle ilgisi yok.</td></tr><tr><td>D</td><td>Seçimle ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ada eklenen kelime, vurgulanan fikri doğrudan söyler.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Atatürk döneminde yapılan çok partili hayat denemeleri kalıcı olamadı. II. Dünya Savaşı’nın ardından 1945’te Nuri Demirağ <b>Millî Kalkınma Partisi</b>’ni, 1946’da Celâl Bayar ve arkadaşları <b>Demokrat Parti</b>’yi kurdu. 1950 seçimlerinde Demokrat Parti oyların çoğunluğunu alarak iktidara geldi.</p>\n<p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Demokrat Parti 1923’te Atatürk tarafından kurulmuştur.",
+    "1950 seçimlerinden sonra seçimler kaldırılmıştır.",
+    "Çok partili hayata 1945-1946’da geçilmiş, 1950’de iktidar seçim yoluyla barışçıl biçimde el değiştirmiştir.",
+    "Çok partili hayata kalıcı geçiş Kurtuluş Savaşı yıllarında tamamlanmıştır."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1945: Millî Kalkınma Partisi (Nuri Demirağ)</li><li>1946: Demokrat Parti (Celâl Bayar ve arkadaşları)</li><li>1950: DP seçimle iktidara geldi</li></ul><b>İstenen</b><p>Metinden <b>ulaşılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Tarihleri sırala</b>1945 ve 1946’da yeni partiler → çok partili hayata kalıcı geçiş.</li><li><b>1950’yi yorumla</b>İktidarın sandıkla, kavgasız el değiştirmesi demokrasinin en önemli göstergesidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>DP 1946’da Celâl Bayar ve arkadaşlarınca kuruldu.</td></tr><tr><td>B</td><td>Metinde yok; seçimler sürdü.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: 1945-1946 geçiş, 1950 barışçıl iktidar değişimi.</td></tr><tr><td>D</td><td>Kalıcı geçiş II. Dünya Savaşı’ndan sonradır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 1945 MKP → 1946 DP → 1950 iktidar değişimi: çok partili hayatın üç durağı.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>5 Aralık 1934’te yapılan anayasa değişikliğiyle kadınlara milletvekili seçme ve seçilme hakkı verildi. Böylece nüfusun yaklaşık yarısını oluşturan kadınlar da milletvekili seçimlerinde oy kullanabilir ve aday olabilir hâle geldi.</p><p>Bu gelişmenin demokrasi açısından en önemli sonucu aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Yönetime katılan vatandaş sayısının artması ve millî iradenin Meclis’e daha tam yansıması",
+    "Seçimlerin yapılma süresinin uzatılması",
+    "Meclis’in yasama yetkisinin azaltılması",
+    "Siyasi partilerin kapatılması"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>5 Aralık 1934: kadınlara milletvekili seçme ve seçilme hakkı</li><li>Kadınlar «nüfusun yaklaşık yarısı»</li></ul><b>İstenen</b><p>Demokrasi açısından en önemli sonuç.</p></div><ol class=\"sv-s\"><li><b>İpucunu yorumla</b>«Nüfusun yaklaşık yarısı» artık oy verebilir ve aday olabilir → yönetime katılan vatandaş sayısı neredeyse ikiye katlandı.</li><li><b>Kavramı bağla</b>Katılım arttıkça Meclis milletin iradesini daha tam yansıtır → <b>millî egemenlik</b> güçlenir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: katılım arttı, millî irade Meclis’e daha tam yansıdı.</td></tr><tr><td>B</td><td>Seçim süresiyle ilgisi yok.</td></tr><tr><td>C</td><td>Meclis’in yetkisi değişmedi.</td></tr><tr><td>D</td><td>Parti kapatmayla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Seçme-seçilme hakkının genişlemesi = katılımın artması = millî egemenliğin güçlenmesi.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdaki tabloda Türkiye’de kadınlara tanınan siyasi haklar verilmiştir.</p>\n<table class=\"rt\">\n<tr><th>Tarih</th><th>Tanınan siyasi hak</th><th>İlk temsilciler</th></tr>\n<tr><td><b>3 Nisan 1930</b></td><td>Belediye seçimlerinde seçme ve seçilme hakkı</td><td>İlk kadın belediye başkanı: <b>Sadiye Hanım</b> (Artvin, Kılıçkaya)</td></tr>\n<tr><td><b>26 Ekim 1933</b></td><td>Muhtarlık ve ihtiyar heyeti seçimlerine katılma hakkı</td><td>İlk kadın muhtar: <b>Gül Esin</b> (Aydın, Çine, Demircidere)</td></tr>\n<tr><td><b>5 Aralık 1934</b></td><td>Milletvekili seçme ve seçilme hakkı</td><td>8 Şubat 1935 seçimlerinde TBMM’ye <b>17 kadın milletvekili</b> girdi.</td></tr>\n</table>\n<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>doğrudur</b>?</p>",
+   "c": [
+    "Kadınlar milletvekilliği hakkını belediye ve muhtarlık haklarından önce elde etmiştir.",
+    "Kadınlar seçme hakkının yanında seçilme hakkını da kullanmıştır.",
+    "1935 seçimlerinde TBMM’ye hiçbir kadın milletvekili seçilememiştir.",
+    "Kadınlara tanınan bu haklar yalnızca devletçilik ilkesiyle ilgilidir."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1930: belediye seçme-seçilme; ilk kadın belediye başkanı Sadiye Hanım</li><li>1933: muhtarlık; ilk kadın muhtar Gül Esin</li><li>1934: milletvekilliği; 1935’te 17 kadın milletvekili</li></ul><b>İstenen</b><p>Tabloya göre <b>doğru</b> olan yargı.</p></div><ol class=\"sv-s\"><li><b>Son sütunu oku</b>«İlk kadın belediye başkanı», «ilk kadın muhtar», «17 kadın milletvekili» → kadınlar seçilmiş, yani seçilme hakkını kullanmıştır.</li><li><b>Sırayı kontrol et</b>Haklar yerelden (1930, 1933) genele (1934) doğru verilmiştir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sıra tersidir: önce yerel, sonra milletvekilliği.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: kadınlar oy vermenin yanında seçilmiştir de.</td></tr><tr><td>C</td><td>Tabloda 17 kadın milletvekili seçildiği yazılı.</td></tr><tr><td>D</td><td>Bu haklar millî egemenlik ve eşitlikle ilgilidir; devletçilik ekonomidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Seçme” = oy vermek, “seçilme” = aday olup kazanmak. İlk temsilciler sütunu seçilmeyi gösterir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Atatürk döneminde uygulanan <b>iki dereceli seçim sistemi</b> ile muhalefet partilerinin savunduğu <b>tek dereceli seçim sistemi</b> aşağıdaki şemada gösterilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 170\" width=\"560\" role=\"img\" aria-label=\"İki dereceli ve tek dereceli seçim sistemlerinin karşılaştırılması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"170\" fill=\"#ffffff\"/>\n<rect x=\"6\" y=\"6\" width=\"268\" height=\"158\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n<text x=\"140\" y=\"28\" font-size=\"12\" font-weight=\"bold\" fill=\"#92400e\" text-anchor=\"middle\">İKİ DERECELİ SEÇİM</text>\n<text x=\"140\" y=\"44\" font-size=\"11\" fill=\"#92400e\" text-anchor=\"middle\">(Türkiye’de 1946’ya kadar)</text>\n<rect x=\"60\" y=\"56\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#ffffff\" stroke=\"#d97706\"/>\n<text x=\"140\" y=\"73\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Halk (birinci seçmen)</text>\n<text x=\"140\" y=\"92\" font-size=\"11.5\" fill=\"#475569\" text-anchor=\"middle\">↓ seçer</text>\n<rect x=\"60\" y=\"98\" width=\"160\" height=\"24\" rx=\"4\" fill=\"#ffffff\" stroke=\"#d97706\"/>\n<text x=\"140\" y=\"115\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">İkinci seçmenler</text>\n<text x=\"140\" y=\"134\" font-size=\"11.5\" fill=\"#475569\" text-anchor=\"middle\">↓ seçer</text>\n<rect x=\"60\" y=\"138\" width=\"160\" height=\"22\" rx=\"4\" fill=\"#ffffff\" stroke=\"#d97706\"/>\n<text x=\"140\" y=\"154\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Milletvekilleri</text>\n<rect x=\"286\" y=\"6\" width=\"268\" height=\"158\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"420\" y=\"28\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">TEK DERECELİ SEÇİM</text>\n<text x=\"420\" y=\"44\" font-size=\"11\" fill=\"#166534\" text-anchor=\"middle\">(Türkiye’de 1946’dan itibaren)</text>\n<rect x=\"340\" y=\"62\" width=\"160\" height=\"26\" rx=\"4\" fill=\"#ffffff\" stroke=\"#16a34a\"/>\n<text x=\"420\" y=\"80\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Halk (seçmen)</text>\n<text x=\"420\" y=\"106\" font-size=\"11.5\" fill=\"#475569\" text-anchor=\"middle\">↓ doğrudan seçer</text>\n<rect x=\"340\" y=\"116\" width=\"160\" height=\"26\" rx=\"4\" fill=\"#ffffff\" stroke=\"#16a34a\"/>\n<text x=\"420\" y=\"134\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Milletvekilleri</text>\n</svg></div>\n<p>Şemaya göre tek dereceli seçim sisteminin daha demokratik kabul edilmesinin temel nedeni aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Oy kullanma hakkını yalnızca devlet memurlarına vermesi",
+    "Seçimlerin on yılda bir yapılmasını öngörmesi",
+    "Halkın araya başka seçmenler girmeden milletvekilini doğrudan belirlemesini sağlaması",
+    "Milletvekillerinin Cumhurbaşkanı tarafından atanmasını sağlaması"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İki dereceli: halk → ikinci seçmenler → milletvekilleri</li><li>Tek dereceli: halk → milletvekilleri (doğrudan)</li></ul><b>İstenen</b><p>Tek dereceli seçimin daha demokratik olmasının nedeni.</p></div><ol class=\"sv-s\"><li><b>Şemaları karşılaştır</b>İki dereceli sistemde halk ile milletvekili arasında bir <b>aracı</b> (ikinci seçmen) vardır. Tek dereceli sistemde «doğrudan seçer».</li><li><b>Sonucu bağla</b>Aracı kalkınca halkın iradesi Meclis’e değişmeden, doğrudan yansır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Oy hakkını kısıtlamak demokrasiyi zayıflatır; şemada yok.</td></tr><tr><td>B</td><td>Şemada seçim aralığı bilgisi yok.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: halk milletvekilini aracısız seçer.</td></tr><tr><td>D</td><td>Atama, seçimin tersidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tek dereceli seçime Türkiye’de 1946 seçimiyle geçildi.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>23 Aralık 1930’daki Menemen Olayı’nda Asteğmen Kubilay’ın şehit edilmesinin ardından Mustafa Kemal Atatürk, Genelkurmay Başkanlığına gönderdiği başsağlığı telgrafında şöyle demiştir:</p>\n<div class=\"box\"><i>“Menemen’de meydana gelen gericilik girişimi sırasında Yedek Subay Kubilay Bey’in görevini yaparken uğradığı saldırıdan dolayı Cumhuriyet ordusuna başsağlığı dilerim. … Büyük ordunun kahraman genç subayı ve Cumhuriyetin idealist öğretmen topluluğunun değerli üyesi Kubilay’ın temiz kanı ile Cumhuriyetin hayatiyeti tazelenmiş ve kuvvetlenmiştir.”</i> (sadeleştirilmiştir)</div>\n<p>Bu telgraftan hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>",
+   "c": [
+    "Kubilay’ın hem Cumhuriyet subayı hem de öğretmen olduğuna",
+    "Yaşanan olayın Cumhuriyet rejimine karşı gerici bir girişim olduğuna",
+    "Cumhuriyetin bu tür saldırılar karşısında yıkılmayacağına, aksine güçleneceğine",
+    "Menemen Olayı’ndan sonra inkılaplardan vazgeçildiğine"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Menemen Olayı (23 Aralık 1930), Kubilay şehit edildi</li><li>Telgraf: «gericilik girişimi», «kahraman genç subayı», «idealist öğretmen topluluğunun değerli üyesi», «Cumhuriyetin hayatiyeti tazelenmiş ve kuvvetlenmiştir»</li></ul><b>İstenen</b><p>Telgraftan <b>ulaşılamayan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Her şıkkı bir ifadeyle eşleştir</b>Kubilay’ın kimliği, olayın niteliği ve Cumhuriyetin güçlenmesi telgrafta tek tek geçiyor.</li><li><b>Eşleşmeyeni bul</b>Telgraf kararlılık bildirir; «inkılaplardan vazgeçildi» anlamına gelen hiçbir ifade yoktur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ulaşılır: «genç subayı» + «öğretmen topluluğunun üyesi».</td></tr><tr><td>B</td><td>Ulaşılır: «gericilik girişimi».</td></tr><tr><td>C</td><td>Ulaşılır: «hayatiyeti tazelenmiş ve kuvvetlenmiştir».</td></tr><tr class=\"ok\"><td>D</td><td>Ulaşılamaz: telgrafta böyle bir ifade yok; inkılaplar sürdü.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kaynak metin sorularında her doğru şıkkın metinde bir “karşılığı” olmalı; karşılığı olmayan şık cevaptır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>9 Eylül 1923’te Mustafa Kemal Paşa tarafından kurulan <b>Halk Fırkası</b>, I. TBMM’de Millî Mücadele’yi yürüten bir grubun siyasi partiye dönüştürülmesiyle oluşturulmuştur.</p><p>Bu grup aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Felah-ı Vatan Grubu",
+    "İttihat ve Terakki Cemiyeti",
+    "Anadolu ve Rumeli Müdafaa-i Hukuk Grubu (Birinci Grup)",
+    "İngiliz Muhipleri Cemiyeti"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>9 Eylül 1923: Halk Fırkası</li><li>I. TBMM’de Millî Mücadele’yi yürüten grubun partiye dönüşmesi</li></ul><b>İstenen</b><p>Bu grubun adı.</p></div><ol class=\"sv-s\"><li><b>Grubu hatırla</b>Mustafa Kemal, Mayıs 1921’de I. TBMM’de Millî Mücadele’yi yönetmek için <b>Anadolu ve Rumeli Müdafaa-i Hukuk Grubu</b>nu (Birinci Grup) kurdu.</li><li><b>Bağla</b>Bu grup 1923 seçimlerinden sonra Halk Fırkası adıyla siyasi partiye dönüştürüldü.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Felah-ı Vatan, son Osmanlı Mebusan Meclisi’ndeki gruptur.</td></tr><tr><td>B</td><td>İttihat ve Terakki Osmanlı dönemi partisidir; Mondros sonrası dağıldı.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: Birinci Grup, Halk Fırkası’na dönüştü.</td></tr><tr><td>D</td><td>İngiliz Muhipleri, Millî Mücadele karşıtı bir cemiyettir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> A da “Misak-ı Millî” yüzünden Millî Mücadele ile ilişkili görünür, ama Mebusan Meclisi’ne aittir, TBMM’ye değil.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Fethi Bey, 1930’da laik Cumhuriyete bağlı bir parti kurmak istediğini bildirince Atatürk ona şu cevabı vermiştir:</p>\n<div class=\"box\"><i>“Memnuniyetle tekrar görüyorum ki laik Cumhuriyet esaslarında beraberiz. … Büyük Meclis’te aynı temele dayanan yeni bir partinin faaliyete geçerek millet işlerini serbestçe tartışmasını Cumhuriyetin esaslarından sayarım.”</i></div>\n<p>Atatürk bu sözleriyle aşağıdakilerden hangisine önem verdiğini göstermiştir?</p>",
+   "c": [
+    "Laik Cumhuriyet ilkelerine bağlı kalınarak farklı görüşlerin Meclis’te serbestçe tartışılmasına",
+    "Tek partili yönetimin sürmesine",
+    "Saltanat ve hilafetin yeniden kurulmasına",
+    "Meclis’in kapatılıp yönetimin bir kişiye bırakılmasına"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk: «laik Cumhuriyet esaslarında beraberiz»</li><li>«aynı temele dayanan yeni bir partinin … millet işlerini serbestçe tartışmasını Cumhuriyetin esaslarından sayarım»</li></ul><b>İstenen</b><p>Atatürk’ün önem verdiği şey.</p></div><ol class=\"sv-s\"><li><b>İki ipucunu ayır</b>1) Ortak zemin: «laik Cumhuriyet esasları». 2) Bu zeminde: yeni partinin «serbestçe tartışması».</li><li><b>Birleştir</b>Atatürk, laik Cumhuriyete bağlı kalmak şartıyla farklı görüşlerin Meclis’te serbestçe tartışılmasını (çoğulculuk) istemiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: laik Cumhuriyet temelinde serbest tartışma.</td></tr><tr><td>B</td><td>Yeni parti desteği tek parti yönetimiyle çelişir.</td></tr><tr><td>C</td><td>Atatürk «laik Cumhuriyet» vurgusu yapar.</td></tr><tr><td>D</td><td>Sözlerde Meclis’in önemi vurgulanır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Atatürk’e göre muhalefetin sınırı: laik Cumhuriyet esasları. Bu sınır içinde fikir serbesttir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Ordunun siyasetten ayrılması amacıyla milletvekili olan komutanlardan bir görevi seçmeleri istenince (1924), <b>Mareşal Fevzi (Çakmak) Paşa</b> milletvekilliğinden ayrılarak Genelkurmay Başkanlığında kalmış; <b>Kâzım (Karabekir) Paşa ve Ali Fuat (Cebesoy) Paşa</b> ise askerlik görevlerinden istifa ederek milletvekilliğini seçmiştir.</p>\n<p>Bu bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Uygulama en üst düzey komutanlara da uygulanmış; hiçbir komutan askerlik ile milletvekilliğini birlikte sürdürememiştir.",
+    "Fevzi Paşa milletvekilliği ile komutanlığı birlikte yürütmeye devam etmiştir.",
+    "Kâzım Karabekir Paşa siyasetten tamamen yasaklanmıştır.",
+    "Ordu mensuplarının siyasi parti kurması zorunlu tutulmuştur."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1924: komutan milletvekilleri bir görevi seçmeli</li><li>Fevzi Paşa → milletvekilliğinden ayrıldı, Genelkurmay’da kaldı</li><li>Kâzım Karabekir ve Ali Fuat Paşa → askerlikten istifa etti, milletvekili kaldı</li></ul><b>İstenen</b><p>Bilgilere göre <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Seçimleri tabloya dök</b>Fevzi Paşa → asker; Kâzım ve Ali Fuat Paşa → milletvekili. Hiçbiri iki görevi birlikte tutmadı.</li><li><b>Kapsamı yorumla</b>Bir mareşal (en üst rütbe) bile seçim yapmak zorunda kaldı → kural istisnasız uygulandı.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: en üst komutanlar dahil herkes bir görevi seçti.</td></tr><tr><td>B</td><td>Fevzi Paşa milletvekilliğinden ayrıldı.</td></tr><tr><td>C</td><td>Kâzım Karabekir milletvekili olarak siyasette kaldı.</td></tr><tr><td>D</td><td>Amaç askerleri siyasetten uzak tutmaktır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bu uygulama ordu–siyaset ayrımının somut örneğidir; askerliği bırakan paşalar sonra TCF’yi kurdu.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Serbest Cumhuriyet Fırkası’nın (1930) programında ve vaatlerinde yer alan bazı görüşler şunlardır:</p>\n<ul>\n<li>Cumhuriyetçilik, milliyetçilik ve laiklik ilkelerine bağlı kalınacaktır.</li>\n<li>Vergiler halkın gücünü aşmayacak şekilde hafifletilecektir.</li>\n<li>Özel girişim desteklenecek, yabancı sermayenin ülkeye gelmesinin yolu açılacaktır.</li>\n<li>Seçimler tek dereceli yapılacak, kadınlara da siyasi haklar tanınacaktır.</li>\n</ul>\n<p>Buna göre Serbest Cumhuriyet Fırkası ile ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>",
+   "c": [
+    "Cumhuriyetçilik ve laiklik konusunda iktidardaki Cumhuriyet Halk Fırkası ile aynı çizgidedir.",
+    "Ekonomide liberal bir politika önermiştir.",
+    "Tek dereceli seçimi ve kadınların siyasete katılmasını savunmuştur.",
+    "Programında halifeliğin ve medreselerin yeniden açılmasını istemiştir."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>SCF programı: cumhuriyetçilik, milliyetçilik, laiklik</li><li>Vergilerin hafifletilmesi; özel girişim ve yabancı sermaye</li><li>Tek dereceli seçim, kadınlara siyasi haklar</li></ul><b>İstenen</b><p>SCF için <b>yanlış</b> olan yargı.</p></div><ol class=\"sv-s\"><li><b>Programı maddelere ayır</b>Rejim maddesi → laiklik; ekonomi maddesi → liberalizm; seçim maddesi → tek derece ve kadın hakları.</li><li><b>Çelişkiyi bul</b>Halifeliği ve medreseleri geri istemek, programın ilk maddesindeki «laiklik» ile çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru: CHF gibi cumhuriyetçi ve laiktir.</td></tr><tr><td>B</td><td>Doğru: özel girişim, yabancı sermaye → liberalizm.</td></tr><tr><td>C</td><td>Doğru: son madde.</td></tr><tr class=\"ok\"><td>D</td><td>Yanlış: programda yok, laiklikle çelişir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Partinin çevresinde rejim karşıtları toplandı diye programını da rejim karşıtı sanma; program laikti.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Şeyh Sait İsyanı çıkınca isyanı bölgesel sıkıyönetimle bastırmaya çalışan Başbakan <b>Ali Fethi (Okyar) Bey</b> görevinden ayrılmış; yerine daha sert ve kararlı tedbirler alan <b>İsmet (İnönü) Paşa</b> hükûmeti kurarak Takrir-i Sükûn Kanunu’nu çıkarmıştır (Mart 1925).</p>\n<p>Bu hükûmet değişikliğinin temel amacı aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Ülkenin bütünlüğünü ve Cumhuriyet rejimini tehdit eden isyanı hızlı ve kesin biçimde bastırmak",
+    "İsyancılarla anlaşarak Doğu Anadolu’da ayrı bir yönetim kurmak",
+    "Musul’u İngiltere’ye savaşmadan bırakmak",
+    "Cumhuriyet Halk Fırkası’nı kapatmak"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Fethi Bey bölgesel sıkıyönetimle isyanı bastıramadı, ayrıldı</li><li>İsmet Paşa «daha sert ve kararlı tedbirler» aldı, Takrir-i Sükûn’u çıkardı (Mart 1925)</li></ul><b>İstenen</b><p>Hükûmet değişikliğinin temel amacı.</p></div><ol class=\"sv-s\"><li><b>Nedeni bul</b>Fethi Bey’in ılımlı önlemleri yayılan isyanı durdurmaya yetmedi.</li><li><b>Amacı bağla</b>«Sert ve kararlı tedbirler» alacak hükûmet, ülke bütünlüğünü ve rejimi tehdit eden isyanı hızla bastırmak için getirildi.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: isyanı hızlı ve kesin biçimde bastırmak.</td></tr><tr><td>B</td><td>Amaç isyancılarla anlaşmak değil, bastırmaktır.</td></tr><tr><td>C</td><td>Musul’un kaybı sonuçtur, amaç değil.</td></tr><tr><td>D</td><td>İsmet Paşa CHF’nin önde gelen ismidir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C bir sonucu (Musul) amaç gibi sunuyor. Amaç = istenen, sonuç = ortaya çıkan.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Aşağıdaki tabloda Cumhuriyet döneminde yaşanan bazı gelişmeler ile bu gelişmelerin demokrasi tarihimizdeki yeri eşleştirilmiştir.</p>\n<table class=\"rt\">\n<tr><th>No</th><th>Gelişme</th><th>Demokrasi tarihimizdeki yeri</th></tr>\n<tr><td><b>1</b></td><td>Terakkiperver Cumhuriyet Fırkası’nın kurulması (1924)</td><td>Cumhuriyet döneminin ilk muhalefet partisidir.</td></tr>\n<tr><td><b>2</b></td><td>Serbest Cumhuriyet Fırkası’nın kurulması (1930)</td><td>Atatürk’ün isteğiyle kurulan muhalefet partisidir.</td></tr>\n<tr><td><b>3</b></td><td>5 Aralık 1934 anayasa değişikliği</td><td>Kadınlara milletvekili seçme ve seçilme hakkı tanınmıştır.</td></tr>\n<tr><td><b>4</b></td><td>Menemen Olayı (23 Aralık 1930)</td><td>Çok partili hayata kalıcı olarak geçilmesini sağlamıştır.</td></tr>\n</table>\n<p>Tablodaki eşleştirmelerden hangisi <b>yanlış</b> verilmiştir?</p>",
+   "c": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1: TCF → ilk muhalefet partisi</li><li>2: SCF → Atatürk’ün isteğiyle</li><li>3: 1934 → kadınlara milletvekilliği hakkı</li><li>4: Menemen → «çok partili hayata kalıcı olarak geçilmesini sağladı»</li></ul><b>İstenen</b><p><b>Yanlış</b> eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Her satırı bilgiyle kontrol et</b>1, 2 ve 3. satırlar bilinen gerçeklerle uyumlu.</li><li><b>4. satırı yorumla</b>Menemen Olayı rejime yönelik bir tehditti; çok partili hayat denemelerine <b>ara verilmesine</b> yol açtı. Kalıcı geçiş 1945-1946’dadır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru eşleştirme.</td></tr><tr><td>B</td><td>Doğru eşleştirme.</td></tr><tr><td>C</td><td>Doğru eşleştirme.</td></tr><tr class=\"ok\"><td>D</td><td>Yanlış: Menemen çok partili hayatı engelledi, sağlamadı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Menemen Olayı → çok partili hayata 1945’e kadar ara; Halkevlerinin açılmasına (1932) zemin.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki metinde I. TBMM döneminde Meclis’teki grupların durumu anlatılmıştır.</p>\n<div class=\"box\">Millî Mücadele’yi Mustafa Kemal Paşa’nın önderliğinde yürütmek amacıyla Mayıs 1921’de TBMM’de <b>Anadolu ve Rumeli Müdafaa-i Hukuk Grubu</b> (Birinci Grup) kuruldu. 1922’de ise bazı konularda Birinci Grup’tan farklı düşünen milletvekilleri <b>İkinci Grup</b> adıyla bir araya geldi. İkinci Grup, Meclis’teki görüşmelerde hükûmetin bazı uygulamalarını eleştirdi. Meclis, 1 Nisan 1923’te seçimlerin yenilenmesine karar verdi. Yapılan seçimlerde İkinci Grup üyelerinin büyük bölümü yeniden milletvekili seçilemedi.</div>\n<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "I. TBMM’de farklı görüşlerin dile getirilebildiği ve hükûmetin eleştirilebildiği bir ortam vardı.",
+    "İkinci Grup, Cumhuriyet döneminde kurulan ilk muhalefet partisidir.",
+    "1923 seçimlerinden sonra Meclis’teki muhalefet daha da güçlenmiştir.",
+    "İkinci Grup, Millî Mücadele’nin sürdürülmesine karşı çıkmıştır."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mayıs 1921: Birinci Grup kuruldu</li><li>1922: farklı düşünenler «İkinci Grup» oldu, «hükûmetin bazı uygulamalarını eleştirdi»</li><li>1923 seçimlerinde İkinci Grup üyelerinin çoğu seçilemedi</li></ul><b>İstenen</b><p>Metinden <b>ulaşılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b>Soru, I. TBMM’deki görüş ayrılıklarını soruyor.</li><li><b>İpucunu yorumla</b>«Hükûmetin bazı uygulamalarını eleştirdi» → Mecliste muhalif görüşler açıkça dile getirilebiliyordu.</li><li><b>Kavramları ayır</b>İkinci Grup bir <b>Meclis grubudur</b>, parti değildir. Cumhuriyetin ilk muhalefet partisi TCF’dir (1924).</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: eleştiri yapılabilen bir ortam vardı.</td></tr><tr><td>B</td><td>İkinci Grup parti değildir ve Cumhuriyetten önce (1922) oluştu.</td></tr><tr><td>C</td><td>Üyelerin çoğu seçilemediği için muhalefet zayıfladı.</td></tr><tr><td>D</td><td>Metinde Millî Mücadele karşıtlığı yok; sadece bazı konularda farklı düşündüler.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “İlk muhalefet” denince İkinci Grup’u akla getiren öğrenci B’ye kayar; soruda “Cumhuriyet dönemi” ve “parti” kelimelerine dikkat.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bir öğrenci, Cumhuriyet rejimine yönelik bazı olaylarla ilgili aşağıdaki tabloyu hazırlamıştır.</p>\n<table class=\"rt\">\n<tr><th>Olay</th><th>Tarih</th><th>Amaç</th><th>Suçluların yargılandığı mahkeme</th></tr>\n<tr><td>Şeyh Sait İsyanı</td><td>1925</td><td>Cumhuriyet’i ve laik düzeni yıkmak</td><td>İstiklal Mahkemesi</td></tr>\n<tr><td>İzmir Suikast Girişimi</td><td>1926</td><td>Mustafa Kemal’i öldürerek Cumhuriyet’i ve inkılapları ortadan kaldırmak</td><td>İstiklal Mahkemesi</td></tr>\n<tr><td>Menemen Olayı</td><td>1930</td><td>Laik Cumhuriyet düzenini yıkmak</td><td>Divan-ı Harp (askerî mahkeme)</td></tr>\n</table>\n<p>Tablodaki bilgilere göre;</p>\n<p>I. Üç olay da Cumhuriyet rejimini ve inkılapları hedef almıştır.<br>II. Üç olayın suçluları da aynı mahkemede yargılanmıştır.<br>III. Olayların hepsi Mustafa Kemal’in Cumhurbaşkanlığı döneminde yaşanmıştır.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "Yalnız II",
+    "I ve III",
+    "II ve III"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şeyh Sait (1925) → İstiklal Mahkemesi</li><li>İzmir Suikastı (1926) → İstiklal Mahkemesi</li><li>Menemen (1930) → «Divan-ı Harp»</li><li>Amaç sütunu: Cumhuriyeti, laik düzeni, inkılapları yıkmak</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I’i kontrol et</b>«Amaç» sütununda üçü de Cumhuriyeti ve inkılapları hedefliyor → I doğru.</li><li><b>II’yi kontrol et</b>Menemen suçluları «Divan-ı Harp»te yargılandı, diğerleri İstiklal Mahkemesinde → aynı mahkeme değil, II yanlış.</li><li><b>III’ü kontrol et</b>Mustafa Kemal 1923-1938 arası Cumhurbaşkanıydı; 1925, 1926, 1930 bu aralıkta → III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: III de doğrudur.</td></tr><tr><td>B</td><td>II yanlıştır: mahkemeler farklı.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: I ve III.</td></tr><tr><td>D</td><td>II yanlış olduğu için olmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Öncüllü sorularda önce kesin yanlış öncülü bul; onu içeren şıkların hepsi elenir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki zaman çizelgesinde 1924–1931 yılları arasındaki bazı gelişmeler gösterilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 240\" width=\"560\" role=\"img\" aria-label=\"Takrir-i Sükûn Kanunu ve muhalefet partileri zaman çizelgesi\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"240\" fill=\"#ffffff\"/>\n<text x=\"280\" y=\"20\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Takrir-i Sükûn Kanunu ve muhalefet partileri (1924–1931)</text>\n<rect x=\"122\" y=\"104\" width=\"280\" height=\"12\" fill=\"#fecaca\" stroke=\"#dc2626\"/>\n<text x=\"262\" y=\"97\" font-size=\"11\" fill=\"#991b1b\" text-anchor=\"middle\">Takrir-i Sükûn Kanunu yürürlükte</text>\n<line x1=\"40\" y1=\"110\" x2=\"530\" y2=\"110\" stroke=\"#334155\" stroke-width=\"2\"/>\n<line x1=\"40\" y1=\"105\" x2=\"40\" y2=\"117\" stroke=\"#334155\"/><text x=\"40\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1924</text>\n<line x1=\"110\" y1=\"105\" x2=\"110\" y2=\"117\" stroke=\"#334155\"/><text x=\"110\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1925</text>\n<line x1=\"180\" y1=\"105\" x2=\"180\" y2=\"117\" stroke=\"#334155\"/><text x=\"180\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1926</text>\n<line x1=\"250\" y1=\"105\" x2=\"250\" y2=\"117\" stroke=\"#334155\"/><text x=\"250\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1927</text>\n<line x1=\"320\" y1=\"105\" x2=\"320\" y2=\"117\" stroke=\"#334155\"/><text x=\"320\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1928</text>\n<line x1=\"390\" y1=\"105\" x2=\"390\" y2=\"117\" stroke=\"#334155\"/><text x=\"390\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1929</text>\n<line x1=\"460\" y1=\"105\" x2=\"460\" y2=\"117\" stroke=\"#334155\"/><text x=\"460\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1930</text>\n<line x1=\"530\" y1=\"105\" x2=\"530\" y2=\"117\" stroke=\"#334155\"/><text x=\"530\" y=\"132\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1931</text>\n<line x1=\"102\" y1=\"79\" x2=\"102\" y2=\"110\" stroke=\"#2563eb\"/><circle cx=\"102\" cy=\"70\" r=\"9\" fill=\"#2563eb\"/><text x=\"102\" y=\"74\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">1</text>\n<line x1=\"122\" y1=\"59\" x2=\"122\" y2=\"104\" stroke=\"#dc2626\"/><circle cx=\"122\" cy=\"50\" r=\"9\" fill=\"#dc2626\"/><text x=\"122\" y=\"54\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">2</text>\n<line x1=\"139\" y1=\"79\" x2=\"139\" y2=\"104\" stroke=\"#2563eb\"/><circle cx=\"139\" cy=\"70\" r=\"9\" fill=\"#2563eb\"/><text x=\"139\" y=\"74\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">3</text>\n<line x1=\"402\" y1=\"59\" x2=\"402\" y2=\"104\" stroke=\"#dc2626\"/><circle cx=\"402\" cy=\"50\" r=\"9\" fill=\"#dc2626\"/><text x=\"402\" y=\"54\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">4</text>\n<line x1=\"503\" y1=\"79\" x2=\"503\" y2=\"110\" stroke=\"#2563eb\"/><circle cx=\"503\" cy=\"70\" r=\"9\" fill=\"#2563eb\"/><text x=\"503\" y=\"74\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">5</text>\n<text x=\"24\" y=\"158\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\">1</tspan>  17 Kasım 1924: Terakkiperver Cumhuriyet Fırkası kuruldu.</text>\n<text x=\"24\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\">2</tspan>  4 Mart 1925: Takrir-i Sükûn Kanunu kabul edildi.</text>\n<text x=\"24\" y=\"192\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\">3</tspan>  3 Haziran 1925: Terakkiperver Cumhuriyet Fırkası kapatıldı.</text>\n<text x=\"24\" y=\"209\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\">4</tspan>  1929: Takrir-i Sükûn Kanunu yürürlükten kaldırıldı.</text>\n<text x=\"24\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\">5</tspan>  12 Ağustos 1930: Serbest Cumhuriyet Fırkası kuruldu.</text>\n</svg></div>\n<p>Takrir-i Sükûn Kanunu, Şeyh Sait İsyanı sırasında hükûmete olağanüstü yetkiler veren bir kanundur. Buna göre zaman çizelgesinden hareketle aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Takrir-i Sükûn Kanunu, Serbest Cumhuriyet Fırkası’nın kapanmasına yol açmıştır.",
+    "İkinci muhalefet partisi, olağanüstü yetkiler veren kanun yürürlükten kalktıktan sonra kurulmuştur.",
+    "Terakkiperver Cumhuriyet Fırkası, Takrir-i Sükûn Kanunu kabul edilmeden önce kapatılmıştır.",
+    "Takrir-i Sükûn Kanunu yaklaşık on yıl yürürlükte kalmıştır."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>17 Kasım 1924: TCF kuruldu</li><li>4 Mart 1925: Takrir-i Sükûn kabul edildi</li><li>3 Haziran 1925: TCF kapatıldı</li><li>1929: Takrir-i Sükûn kaldırıldı</li><li>12 Ağustos 1930: SCF kuruldu</li></ul><b>İstenen</b><p>Çizelgeden <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Sırayı çıkar</b>TCF kuruluşu → kanun → TCF kapanışı → kanun kalktı → SCF kuruldu.</li><li><b>İkinci muhalefet partisini bul</b>İkinci muhalefet partisi SCF’dir. SCF (1930), kanunun kalkmasından (1929) <b>sonra</b> kuruldu.</li><li><b>Süreyi hesapla</b><span class=\"sv-m\">1929 − 1925 = yaklaşık 4 yıl</span></li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 127\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Kas. 1924</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">TCF kuruldu</text><circle cx=\"168\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"168\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">Mar. 1925</text><text x=\"168\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Takrir-i</text><text x=\"168\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Sükûn</text><circle cx=\"260\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"260\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Haz. 1925</text><text x=\"260\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">TCF</text><text x=\"260\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">kapatıldı</text><circle cx=\"352\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"352\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">1929</text><text x=\"352\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Kanun</text><text x=\"352\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">kalktı</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#16a34a\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\" font-weight=\"bold\">Ağu. 1930</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">SCF kuruldu</text></svg><figcaption>Kanun 1925-1929 arasında yürürlükte; SCF ondan sonra kuruldu</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Kanun 1929’da kalktı; 1930’daki SCF’nin kapanmasıyla ilgisi olamaz.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: SCF, kanun kalktıktan sonra kuruldu.</td></tr><tr><td>C</td><td>TCF, kanun kabul edildikten sonra (Haziran 1925) kapatıldı.</td></tr><tr><td>D</td><td>Yaklaşık 4 yıl yürürlükte kaldı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> TCF Takrir-i Sükûn Kanunu’na dayanılarak kapatıldı; bu yüzden kapanış kanundan sonradır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki metinde 1930 yılında yapılan belediye seçimleri anlatılmıştır.</p>\n<div class=\"box\">3 Nisan 1930’da kabul edilen Belediye Kanunu ile kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanındı. Aynı yılın sonbaharında yapılan belediye seçimleri, Türk kadınının oy kullandığı ilk seçim oldu. Ağustos 1930’da kurulan Serbest Cumhuriyet Fırkası da bu seçimlere katıldı ve bazı yerlerde belediye yönetimini kazandı. Seçimlerin ardından Serbest Cumhuriyet Fırkası, bazı yerlerde baskı ve usulsüzlük yapıldığını ileri sürdü ve bu konuyu Meclis’te dile getirdi.</div>\n<p>Bu metne göre 1930 belediye seçimleriyle ilgili;</p>\n<p>I. Kadınlar ilk kez bir seçimde oy kullanmıştır.<br>II. Seçimlerde birden fazla parti yarışmıştır.<br>III. Muhalefet, seçimlerle ilgili şikâyetlerini Meclis’e taşımıştır.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>3 Nisan 1930: Belediye Kanunu, kadınlara seçme-seçilme hakkı</li><li>Sonbahar 1930 seçimi: «Türk kadınının oy kullandığı ilk seçim»</li><li>SCF seçimlere katıldı, bazı yerleri kazandı</li><li>SCF usulsüzlük iddialarını «Meclis’te dile getirdi»</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>«Türk kadınının oy kullandığı ilk seçim» → I doğru.</li><li><b>II</b>İktidardaki CHF’nin yanında SCF de yarıştı → birden fazla parti, II doğru.</li><li><b>III</b>SCF şikâyetlerini «Meclis’te dile getirdi» → III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II ve III de doğru.</td></tr><tr><td>B</td><td>Eksik: III de doğru.</td></tr><tr><td>C</td><td>Eksik: I de doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: üçüne de ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Metinde CHF’nin adı geçmediği için II’yi atlama: SCF bir muhalefet partisidir, iktidar partisiyle yarışmıştır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda Atatürk döneminde kadınlara tanınan bazı siyasi haklar ve bu hakların tanındığı tarihler verilmiştir.</p>\n<table class=\"rt\">\n<tr><th>Düzenleme</th><th>Tanınan hak</th><th>Tarih</th></tr>\n<tr><td>Belediye Kanunu</td><td>Belediye seçimlerinde seçme ve seçilme</td><td>3 Nisan 1930</td></tr>\n<tr><td>Köy Kanunu’nda yapılan değişiklik</td><td>Muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme</td><td>26 Ekim 1933</td></tr>\n<tr><td>Anayasa değişikliği</td><td>Milletvekili seçme ve seçilme</td><td>5 Aralık 1934</td></tr>\n</table>\n<p>Tablodaki bilgilere göre, yaş vb. diğer şartları taşıyan bir Türk kadını için aşağıdakilerden hangisi <b>yasal olarak mümkündü</b>?</p>",
+   "c": [
+    "1931’de belediye meclisi üyeliğine aday olmak",
+    "1932’de köyünde muhtar adayı olmak",
+    "1933’te bir milletvekili seçiminde oy kullanmak",
+    "1929’da belediye seçiminde oy vermek"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Belediye seçme-seçilme: 3 Nisan 1930</li><li>Muhtarlık: 26 Ekim 1933</li><li>Milletvekilliği: 5 Aralık 1934</li></ul><b>İstenen</b><p>Hangi durum yasal olarak <b>mümkündü</b>.</p></div><ol class=\"sv-s\"><li><b>Yöntemi belirle</b>Her şıkta iki şeyi kontrol ederiz: hakkın <b>türü</b> ve <b>yılı</b>. Yıl, o hakkın tanındığı tarihten sonra olmalı.</li><li><b>Şıkları dene</b><span class=\"sv-m\">A: belediye, 1931 ≥ 1930 → mümkün</span><span class=\"sv-m\">B: muhtarlık, 1932 &lt; 1933 → değil</span><span class=\"sv-m\">C: milletvekili, 1933 &lt; 1934 → değil</span><span class=\"sv-m\">D: belediye, 1929 &lt; 1930 → değil</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Mümkün: belediye hakkı 1930’dan beri var.</td></tr><tr><td>B</td><td>Muhtarlık hakkı 1933 Ekim’de geldi.</td></tr><tr><td>C</td><td>Milletvekili seçme hakkı 1934 Aralık’ta geldi.</td></tr><tr><td>D</td><td>1929, Belediye Kanunu’ndan öncedir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıra: belediye (1930) → köy/muhtarlık (1933) → Meclis (1934). Yerelden genele.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Terakkiperver Cumhuriyet Fırkası’nın programında <b>“Fırka, dinî düşünce ve inançlara saygılıdır.”</b> maddesi yer alıyordu. Partinin kurucuları Cumhuriyet’e bağlı olduklarını açıklamıştı. Ancak bu madde, inkılaplardan rahatsız olan ve eski düzeni geri getirmek isteyen çevrelerce kendi amaçları için kullanıldı. 1925’te çıkan Şeyh Sait İsyanı’ndan sonra parti, Takrir-i Sükûn Kanunu’na dayanılarak 3 Haziran 1925’te Bakanlar Kurulu kararıyla kapatıldı.</div>\n<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Terakkiperver Cumhuriyet Fırkası’nın kurucuları Cumhuriyet rejimine karşıydı.",
+    "Bir partinin programındaki ifade, rejim karşıtlarınca istismar edilmiş ve bu durum partinin kapatılmasına giden süreci etkilemiştir.",
+    "Terakkiperver Cumhuriyet Fırkası, kurucularının kendi kararıyla kapanmıştır.",
+    "Terakkiperver Cumhuriyet Fırkası, Şeyh Sait İsyanı başlamadan önce kapatılmıştır."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF programı: «Fırka, dinî düşünce ve inançlara saygılıdır.»</li><li>Kurucular Cumhuriyete bağlı olduklarını açıkladı</li><li>Madde, eski düzeni isteyenlerce «kendi amaçları için kullanıldı»</li><li>Şeyh Sait’ten sonra Takrir-i Sükûn’a dayanılarak Bakanlar Kurulu kararıyla kapatıldı (3 Haziran 1925)</li></ul><b>İstenen</b><p>Metinden <b>ulaşılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Neden-sonuç zincirini kur</b>Programdaki madde → rejim karşıtlarınca istismar → isyan → partinin kapatılması.</li><li><b>Kurucuların tutumunu ayır</b>Metin, kurucuların Cumhuriyete bağlı olduğunu açıkça söylüyor; sorun maddenin <b>başkalarınca kullanılmasıdır</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metin tersini söyler: kurucular Cumhuriyete bağlıydı.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: istismar edilen ifade kapanış sürecini etkiledi.</td></tr><tr><td>C</td><td>Bakanlar Kurulu kapattı; kurucusu kapatan SCF’dir.</td></tr><tr><td>D</td><td>İsyandan sonra kapatıldı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> TCF ile SCF’nin kapanış biçimini karıştırma: TCF → hükûmet kararı, SCF → kurucunun feshi.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Cumhuriyet’in ilk yıllarında aşağıdaki düzenlemeler yapılmıştır:</p>\n<div class=\"box\">• Görevdeki askerlerin milletvekili seçilmesi bir kanunla yasaklandı.<br>• Erkân-ı Harbiye Vekâleti kaldırıldı; yerine kurulan Genelkurmay Başkanlığı Bakanlar Kurulunun dışında tutuldu.<br>• Milletvekili olan komutanlardan askerlik ile milletvekilliği arasında bir tercih yapmaları istendi.</div>\n<p>Bu düzenlemelerle ilgili;</p>\n<p>I. Ordunun siyasetin dışında tutulması amaçlanmıştır.<br>II. Siyasi kararların asker olmayan, seçilmiş yöneticilerce alınmasına zemin hazırlanmıştır.<br>III. Askerlerin seçimlerde oy kullanması da yasaklanmıştır.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "Yalnız III",
+    "I ve II",
+    "I, II ve III"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görevdeki askerlerin milletvekili «seçilmesi» yasaklandı</li><li>Genelkurmay Başkanlığı Bakanlar Kurulunun dışında tutuldu</li><li>Komutan milletvekilleri bir görevi seçti</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>Ortak amacı bul</b>Üç düzenleme de askerleri siyasetten uzaklaştırıyor → I doğru.</li><li><b>Sonucu yorumla</b>Askerler Meclis’te ve Bakanlar Kurulunda olmayınca siyasi kararları seçilmiş sivil yöneticiler alır → II doğru.</li><li><b>III’ü kontrol et</b>Metinde yasaklanan şey milletvekili <b>seçilmek</b>tir; oy kullanmaktan (seçmek) söz edilmez → III’e ulaşılamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II de doğru.</td></tr><tr><td>B</td><td>III metinde yok.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: I ve II.</td></tr><tr><td>D</td><td>III yüzünden olmaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Seçilme” ile “seçme” hakkını karıştırma: metin yalnızca seçilmeyi yasaklıyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Haziran 1926’da ortaya çıkarılan İzmir suikast girişiminin ardından İstiklal Mahkemesinde geniş kapsamlı bir yargılama yapıldı. Suikastı planlayanların yanı sıra bazı eski Terakkiperver Cumhuriyet Fırkası üyeleri de yargılandı. Suikastı planlayanlar idam edildi; Kâzım Karabekir, Ali Fuat Cebesoy ve Refet Bele gibi isimler ise beraat etti. Bu süreçten sonra 1930 yılına kadar yeni bir muhalefet partisi kurulmadı.</div>\n<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>",
+   "c": [
+    "Suikast girişiminin ardından yapılan yargılama, yalnızca olayı planlayanlarla sınırlı kalmamıştır.",
+    "Yargılananların hepsi aynı cezayı almamıştır.",
+    "Suikast girişiminden sonra bir süre yeni bir muhalefet partisi kurulmamıştır.",
+    "Beraat eden isimler daha sonra Serbest Cumhuriyet Fırkası’nı kurmuştur."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İzmir Suikastı sonrası İstiklal Mahkemesinde geniş yargılama</li><li>Planlayanlar + bazı eski TCF üyeleri yargılandı</li><li>Planlayanlar idam edildi; Kâzım Karabekir, Ali Fuat, Refet Bele beraat etti</li><li>1930’a kadar yeni muhalefet partisi kurulmadı</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki bilgileri işaretle</b>Yargılananların kapsamı, farklı cezalar ve 1930’a kadar parti kurulmaması metinde açıkça var.</li><li><b>Metin dışı bilgiyi bul</b>Beraat edenlerin sonradan ne yaptığı metinde yok. Üstelik SCF’yi Ali Fethi (Okyar) Bey kurmuştur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ulaşılır: eski TCF üyeleri de yargılandı.</td></tr><tr><td>B</td><td>Ulaşılır: kimi idam, kimi beraat.</td></tr><tr><td>C</td><td>Ulaşılır: 1930’a kadar parti kurulmadı.</td></tr><tr class=\"ok\"><td>D</td><td>Ulaşılamaz: metinde yok ve bilgi olarak da yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> SCF’nin kurucusu = Ali Fethi (Okyar) Bey. TCF’nin kurucusu = Kâzım Karabekir ve arkadaşları.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda Türk siyasi hayatında meclis ve parti deneyimiyle ilgili bazı gelişmeler verilmiştir.</p>\n<table class=\"rt\">\n<tr><th>Yıl</th><th>Gelişme</th></tr>\n<tr><td>1876</td><td>Kanun-i Esasi ilan edildi, Meclis-i Mebusan açıldı (I. Meşrutiyet).</td></tr>\n<tr><td>1878</td><td>II. Abdülhamit, Meclis-i Mebusan’ı kapattı.</td></tr>\n<tr><td>1908</td><td>II. Meşrutiyet ilan edildi; Meclis yeniden açıldı, siyasi partiler kuruldu.</td></tr>\n<tr><td>1920</td><td>23 Nisan’da Türkiye Büyük Millet Meclisi açıldı.</td></tr>\n<tr><td>1924</td><td>Terakkiperver Cumhuriyet Fırkası kuruldu.</td></tr>\n</table>\n<p>Tablodaki bilgilerden hareketle aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Osmanlı Devleti’nde seçimle oluşan bir meclis hiç bulunmamıştır.",
+    "Türk toplumunun meclis ve parti deneyimi Cumhuriyet’ten önce başlamış, Cumhuriyet döneminde de sürmüştür.",
+    "Meclis-i Mebusan, açıldığı günden itibaren hiç kesintiye uğramadan çalışmıştır.",
+    "Türk tarihinde siyasi partiler ilk kez Cumhuriyet döneminde kurulmuştur."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1876: Kanun-i Esasi, Meclis-i Mebusan</li><li>1878: Meclis kapatıldı</li><li>1908: II. Meşrutiyet, Meclis açıldı, «siyasi partiler kuruldu»</li><li>1920: TBMM; 1924: TCF</li></ul><b>İstenen</b><p>Tablodan <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Tabloyu ikiye ayır</b>Cumhuriyet öncesi: 1876, 1878, 1908, 1920. Cumhuriyet dönemi: 1924.</li><li><b>Ortak çizgiyi bul</b>Meclis 1876’da, partiler 1908’de başladı; Cumhuriyette de yeni parti kuruldu → deneyim önceden başladı ve sürdü.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Meclis-i Mebusan seçimle oluşan bir meclistir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: deneyim Cumhuriyetten önce başladı, sonra da sürdü.</td></tr><tr><td>C</td><td>1878’de kapatıldı, 1908’de yeniden açıldı.</td></tr><tr><td>D</td><td>Partiler 1908’de de kuruldu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Türk demokrasi tarihi: Sened-i İttifak (1808) → Kanun-i Esasi (1876) → II. Meşrutiyet (1908) → TBMM (1920).</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Mustafa Kemal Paşa, 1923 seçimlerinden önce <b>Dokuz Umde</b> (dokuz ilke) adıyla bir seçim beyannamesi yayımladı. Bu beyannamenin ilk maddesi <b>“Hâkimiyet bilâ kayd ü şart milletindir.”</b> (Egemenlik kayıtsız şartsız milletindir.) ilkesiydi. Seçimlerin ardından toplanan II. TBMM’de çoğunluğu oluşturan milletvekilleri, Eylül 1923’te kurulan Halk Fırkası çatısı altında bir araya geldi.</div>\n<p>Bu metne göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "1923 seçimlerine, millî egemenliği esas alan bir programla girilmiştir.",
+    "Dokuz Umde, Halk Fırkası kurulduktan sonra hazırlanmıştır.",
+    "1923 seçimlerinde birden fazla siyasi parti yarışmıştır.",
+    "Dokuz Umde ile Cumhuriyet’in ilan edildiği halka duyurulmuştur."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1923 seçimlerinden önce «Dokuz Umde» yayımlandı</li><li>İlk madde: «Hâkimiyet bilâ kayd ü şart milletindir.»</li><li>Seçim sonrası çoğunluk, Eylül 1923’te kurulan Halk Fırkası’nda toplandı</li></ul><b>İstenen</b><p>Metne göre <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Sırayı çıkar</b>Dokuz Umde → 1923 seçimleri → Halk Fırkası (9 Eylül 1923) → Cumhuriyet (29 Ekim 1923).</li><li><b>İpucunu yorumla</b>Seçim beyannamesinin ilk maddesi «egemenlik kayıtsız şartsız milletindir» → seçime millî egemenliği esas alan bir programla girildi.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: program millî egemenliği esas alıyordu.</td></tr><tr><td>B</td><td>Dokuz Umde seçimlerden önce, parti ise sonra.</td></tr><tr><td>C</td><td>Metinde birden fazla parti bilgisi yok.</td></tr><tr><td>D</td><td>Cumhuriyet seçimlerden sonra, 29 Ekim 1923’te ilan edildi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D, olayların sırasını karıştıran öğrenciyi yakalar: Dokuz Umde → seçim → parti → Cumhuriyet.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Serbest Cumhuriyet Fırkası’nın çevresinde rejim karşıtlarının toplanması ve ardından yaşanan Menemen Olayı, inkılapların halkın bir kesimince henüz yeterince benimsenmediğini gösterdi. Bunun üzerine inkılapları halka anlatmak ve benimsetmek amacıyla 1932’den itibaren <b>Halkevleri</b> açıldı. Halkevlerinde dil ve edebiyat, güzel sanatlar, temsil (tiyatro), spor, kütüphane ve yayın, halk dershaneleri gibi şubeler bulunuyordu.</div>\n<p>Bu metne göre Halkevleriyle ilgili aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Çok partili hayata hemen geçebilmek amacıyla kurulmuştur.",
+    "Yalnızca spor faaliyetleri yapmak için açılmıştır.",
+    "Yaşanan olumsuz gelişmeler, inkılapların halka benimsetilmesine yönelik bir çalışmanın başlatılmasında etkili olmuştur.",
+    "Menemen Olayı’ndan önce kurularak bu olayın çıkmasını engellemeye çalışmıştır."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>SCF çevresinde rejim karşıtlarının toplanması ve Menemen Olayı, inkılapların «henüz yeterince benimsenmediğini gösterdi»</li><li>«Bunun üzerine» 1932’den itibaren Halkevleri açıldı</li><li>Şubeler: dil-edebiyat, güzel sanatlar, temsil, spor, kütüphane, halk dershaneleri</li></ul><b>İstenen</b><p>Halkevleri için <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Neden-sonuç bağlacını bul</b>«Bunun üzerine» ifadesi: olumsuz gelişmeler (neden) → Halkevleri (sonuç).</li><li><b>Amacı belirle</b>«İnkılapları halka anlatmak ve benimsetmek».</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metinde amaç inkılapları benimsetmektir; hemen çok partiye geçmek değil.</td></tr><tr><td>B</td><td>Spor, birçok şubeden yalnızca biridir.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: olumsuz gelişmeler bu çalışmanın başlamasına yol açtı.</td></tr><tr><td>D</td><td>Halkevleri 1932’de, Menemen ise 1930’da.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Halkevleri (1932) = inkılapların halka benimsetilmesi; Menemen Olayı’nın sonucu.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki şemada 1929–1930 yıllarında yaşanan bazı gelişmeler oluş sırasına göre verilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 230\" width=\"560\" role=\"img\" aria-label=\"1929-1930 gelişmeleri akış şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"230\" fill=\"#ffffff\"/>\n<defs><marker id=\"ok12\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 Z\" fill=\"#475569\"/></marker></defs>\n<rect x=\"10\" y=\"20\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\"/>\n<text x=\"95\" y=\"42\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">1929 Dünya Ekonomik</text>\n<text x=\"95\" y=\"57\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">Bunalımı Türkiye’yi</text>\n<text x=\"95\" y=\"72\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">de etkiledi.</text>\n<rect x=\"195\" y=\"20\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#e0f2fe\" stroke=\"#0284c7\"/>\n<text x=\"280\" y=\"42\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">Halkta hoşnutsuzluk arttı;</text>\n<text x=\"280\" y=\"57\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">Meclis’te hükûmeti</text>\n<text x=\"280\" y=\"72\" font-size=\"11.5\" fill=\"#0c4a6e\" text-anchor=\"middle\">eleştiren muhalefet yoktu.</text>\n<rect x=\"380\" y=\"20\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n<text x=\"465\" y=\"42\" font-size=\"11.5\" fill=\"#14532d\" text-anchor=\"middle\">Atatürk’ün isteğiyle</text>\n<text x=\"465\" y=\"57\" font-size=\"11.5\" fill=\"#14532d\" text-anchor=\"middle\">Serbest Cumhuriyet F.</text>\n<text x=\"465\" y=\"72\" font-size=\"11.5\" fill=\"#14532d\" text-anchor=\"middle\">kuruldu (12 Ağustos 1930).</text>\n<rect x=\"380\" y=\"140\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\"/>\n<text x=\"465\" y=\"162\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">Rejim ve laiklik</text>\n<text x=\"465\" y=\"177\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">karşıtları partinin</text>\n<text x=\"465\" y=\"192\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">çevresinde toplandı.</text>\n<rect x=\"195\" y=\"140\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#fef3c7\" stroke=\"#d97706\"/>\n<text x=\"280\" y=\"162\" font-size=\"11.5\" fill=\"#78350f\" text-anchor=\"middle\">Ali Fethi Bey</text>\n<text x=\"280\" y=\"177\" font-size=\"11.5\" fill=\"#78350f\" text-anchor=\"middle\">partiyi feshetti</text>\n<text x=\"280\" y=\"192\" font-size=\"11.5\" fill=\"#78350f\" text-anchor=\"middle\">(17 Kasım 1930).</text>\n<rect x=\"10\" y=\"140\" width=\"170\" height=\"64\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\"/>\n<text x=\"95\" y=\"162\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">Menemen Olayı</text>\n<text x=\"95\" y=\"177\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">yaşandı</text>\n<text x=\"95\" y=\"192\" font-size=\"11.5\" fill=\"#7f1d1d\" text-anchor=\"middle\">(23 Aralık 1930).</text>\n<line x1=\"180\" y1=\"52\" x2=\"193\" y2=\"52\" stroke=\"#475569\" stroke-width=\"1.5\" marker-end=\"url(#ok12)\"/>\n<line x1=\"365\" y1=\"52\" x2=\"378\" y2=\"52\" stroke=\"#475569\" stroke-width=\"1.5\" marker-end=\"url(#ok12)\"/>\n<line x1=\"465\" y1=\"84\" x2=\"465\" y2=\"138\" stroke=\"#475569\" stroke-width=\"1.5\" marker-end=\"url(#ok12)\"/>\n<line x1=\"380\" y1=\"172\" x2=\"367\" y2=\"172\" stroke=\"#475569\" stroke-width=\"1.5\" marker-end=\"url(#ok12)\"/>\n<line x1=\"195\" y1=\"172\" x2=\"182\" y2=\"172\" stroke=\"#475569\" stroke-width=\"1.5\" marker-end=\"url(#ok12)\"/>\n</svg></div>\n<p>Şemadaki bilgilerden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>",
+   "c": [
+    "Serbest Cumhuriyet Fırkası’nın kapanmasıyla rejim karşıtı hareketler tamamen sona ermiştir.",
+    "Ekonomik sorunlar, yeni bir muhalefet partisinin kurulmasında etkili olmuştur.",
+    "Serbest Cumhuriyet Fırkası bir yıldan kısa süre faaliyette kalmıştır.",
+    "Rejim karşıtlarının partiye yönelmesi, partinin kapanma sürecini etkilemiştir."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1929 bunalımı → hoşnutsuzluk, Meclis’te muhalefet yok</li><li>12 Ağustos 1930: SCF kuruldu</li><li>Rejim karşıtları partinin çevresinde toplandı → 17 Kasım 1930 fesih</li><li>23 Aralık 1930: Menemen Olayı</li></ul><b>İstenen</b><p>Şemadan <b>ulaşılamayan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Son kutuya bak</b>Fesihten yaklaşık bir ay <b>sonra</b> Menemen Olayı yaşandı → rejim karşıtı hareketler bitmedi.</li><li><b>Süreyi hesapla</b><span class=\"sv-m\">12 Ağustos → 17 Kasım 1930 ≈ 3 ay (bir yıldan kısa)</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Ulaşılamaz: fesihten sonra Menemen Olayı yaşandı.</td></tr><tr><td>B</td><td>Ulaşılır: bunalım → hoşnutsuzluk → yeni parti.</td></tr><tr><td>C</td><td>Ulaşılır: yaklaşık 3 ay açık kaldı.</td></tr><tr><td>D</td><td>Ulaşılır: rejim karşıtlarının toplanması → fesih.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Akış şemalarında her ok bir neden-sonuç ilişkisidir; son kutu çoğu zaman “bitti” diyen şıkkı çürütür.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">II. Dünya Savaşı’nı, demokrasiyle yönetilen devletlerin de içinde bulunduğu blok kazandı. Türkiye 1945’te Birleşmiş Milletlerin kurucu üyeleri arasında yer aldı. Savaş sonrasında oluşan bu yeni dünya düzeni, Türkiye’de de demokratikleşme taleplerini güçlendirdi. 1945’te Cumhuriyet Halk Partisi milletvekillerinden Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan, parti grubuna verdikleri ve <b>Dörtlü Takrir</b> olarak bilinen önergeyle demokratik hak ve özgürlüklerin genişletilmesini istedi. Önergenin reddedilmesinin ardından bu isimler 7 Ocak 1946’da Demokrat Parti’yi kurdu.</div>\n<p>Bu metne göre;</p>\n<p>I. Çok partili hayata geçişte dış gelişmeler de etkili olmuştur.<br>II. Demokratikleşme talebi iktidar partisinin içinden de yükselmiştir.<br>III. Demokrat Parti, Dörtlü Takrir kabul edildiği için kurulmuştur.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "Yalnız III",
+    "II ve III",
+    "I ve II"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>II. Dünya Savaşı’nı demokrasilerin de içinde olduğu blok kazandı; Türkiye BM kurucu üyesi (1945)</li><li>Yeni dünya düzeni demokratikleşme taleplerini güçlendirdi</li><li>Dörtlü Takrir: CHP milletvekilleri Bayar, Menderes, Köprülü, Koraltan</li><li>Önerge «reddedilmesinin ardından» 7 Ocak 1946’da DP kuruldu</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>Savaş sonrası dünya düzeni (dış gelişme) talepleri güçlendirdi → I doğru.</li><li><b>II</b>Önergeyi verenler iktidardaki CHP’nin milletvekilleri → talep iktidar partisinin içinden de geldi, II doğru.</li><li><b>III</b>DP, önerge <b>reddedildikten</b> sonra kuruldu; «kabul edildiği için» ifadesi yanlış → III’e ulaşılamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II de doğru.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: I ve II.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> III, olayın nedenini tersine çeviriyor: ret → yeni parti. Neden-sonuç yönüne dikkat.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda Türkiye’de yapılan iki genel seçimin bazı özellikleri karşılaştırılmıştır.</p>\n<table class=\"rt\">\n<tr><th>Özellik</th><th>1946 Seçimi</th><th>1950 Seçimi</th></tr>\n<tr><td>Seçim sistemi</td><td>Tek dereceli</td><td>Tek dereceli</td></tr>\n<tr><td>Oy verme ve sayım</td><td>Açık oy, gizli sayım</td><td>Gizli oy, açık sayım</td></tr>\n<tr><td>Seçim sonucu</td><td>Cumhuriyet Halk Partisi iktidarda kaldı.</td><td>Demokrat Parti iktidara geldi.</td></tr>\n</table>\n<p>Tablodaki bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Tek dereceli seçim sistemi ilk kez 1950 seçiminde uygulanmıştır.",
+    "1950 seçiminde seçmenin oyunu gizli kullanması sağlanmış ve iktidar seçim yoluyla el değiştirmiştir.",
+    "1946 seçiminde seçmenler oylarını gizli olarak kullanmıştır.",
+    "İki seçimin sonunda da aynı parti iktidara gelmiştir."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1946: tek dereceli, «açık oy, gizli sayım», CHP iktidarda kaldı</li><li>1950: tek dereceli, «gizli oy, açık sayım», DP iktidara geldi</li></ul><b>İstenen</b><p>Tablodan <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Sütunları karşılaştır</b>Seçim sistemi iki seçimde aynı (tek dereceli). Fark: oy verme biçimi ve sonuç.</li><li><b>1950’yi yorumla</b>Gizli oy → seçmen baskı hissetmeden oy verir. Sonuçta iktidar sandıkla el değiştirdi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tek dereceli seçim 1946’da da uygulandı.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: gizli oy sağlandı, iktidar seçimle değişti.</td></tr><tr><td>C</td><td>1946’da oy açık, sayım gizliydi.</td></tr><tr><td>D</td><td>1946 → CHP, 1950 → DP.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Gizli sayım” ile “gizli oy”u karıştırma: 1946’daki gizli olan sayımdı, oy açıktı. Demokratik olan “gizli oy, açık sayım”dır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Demokratik sistemlerde muhalefet partileri iktidarın çalışmalarını denetler, eksik ya da hatalı gördükleri uygulamaları eleştirir, kendi çözüm önerilerini halka sunar ve seçimlerde iktidar olmak için yarışır. Atatürk de 1930’da, Meclis’te hükûmeti denetleyecek bir muhalefetin bulunmamasını bir eksiklik olarak görmüş ve yeni bir partinin kurulmasını desteklemiştir.</div>\n<p>Bu bilgilere göre aşağıdakilerden hangisi muhalefetin işlevlerine <b>örnek gösterilemez</b>?</p>",
+   "c": [
+    "Bir muhalefet milletvekilinin Meclis’te hükûmetin vergi uygulamalarını eleştirmesi",
+    "Bir muhalefet partisinin seçimlerden önce halka kendi ekonomi programını açıklaması",
+    "Bir muhalefet partisinin hükûmetin bir kararındaki hatayı belgelerle ortaya koyması",
+    "Hükûmetin aldığı bir kararın valiler tarafından illerde uygulanması"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Muhalefetin işlevleri: «denetler», «eleştirir», «çözüm önerilerini halka sunar», iktidar için «yarışır»</li></ul><b>İstenen</b><p>Muhalefetin işlevine örnek <b>olmayan</b> durum.</p></div><ol class=\"sv-s\"><li><b>İşlevleri listele</b>Denetleme, eleştiri, çözüm sunma, seçimde yarışma.</li><li><b>Şıkları eşleştir</b>Vergi eleştirisi → eleştiri; ekonomi programı → çözüm sunma; hatayı belgelemek → denetim. Valilerin kararı uygulaması ise <b>yürütme</b>nin (iktidarın) işidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Örnek: eleştiri.</td></tr><tr><td>B</td><td>Örnek: halka çözüm sunma.</td></tr><tr><td>C</td><td>Örnek: denetleme.</td></tr><tr class=\"ok\"><td>D</td><td>Örnek değil: kararı uygulamak yürütmenin görevidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Muhalefet karar uygulamaz; denetler ve alternatif sunar. Kararı uygulayan iktidar/yürütmedir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Tarih dersinde öğrenciler Terakkiperver Cumhuriyet Fırkası hakkında bildiklerini paylaşmıştır.</p>\n<div class=\"dialog\"><div><b>Ali:</b> Cumhuriyet döneminde kurulan ilk muhalefet partisidir.</div><div><b>Elif:</b> Kurucuları arasında Kâzım Karabekir ve Rauf Orbay gibi Millî Mücadele’nin önde gelen isimleri vardı.</div><div><b>Can:</b> Atatürk’ün isteğiyle onun yakın arkadaşı tarafından kurulmuştu.</div><div><b>Deniz:</b> Ekonomide liberal görüşü savunuyordu.</div></div>\n<p>Buna göre hangi öğrencinin verdiği bilgi <b>yanlıştır</b>?</p>",
+   "c": [
+    "Ali",
+    "Elif",
+    "Can",
+    "Deniz"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ali: ilk muhalefet partisi</li><li>Elif: kurucular Kâzım Karabekir, Rauf Orbay</li><li>Can: «Atatürk’ün isteğiyle onun yakın arkadaşı tarafından kurulmuştu»</li><li>Deniz: liberal ekonomi</li></ul><b>İstenen</b><p>TCF için <b>yanlış</b> bilgi veren öğrenci.</p></div><ol class=\"sv-s\"><li><b>TCF’nin kimliğini hatırla</b>TCF (17 Kasım 1924): Kâzım Karabekir başkan; Rauf Orbay, Ali Fuat Cebesoy, Refet Bele, Adnan Adıvar kurucular; liberal ekonomi.</li><li><b>Can’ın bilgisini kontrol et</b>«Atatürk’ün isteğiyle, yakın arkadaşı tarafından» kurulan parti <b>SCF</b>’dir (Ali Fethi Bey, 1930). TCF kurucularının kendi girişimidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru bilgi.</td></tr><tr><td>B</td><td>Doğru bilgi.</td></tr><tr class=\"ok\"><td>C</td><td>Yanlış: bu özellik SCF’ye aittir.</td></tr><tr><td>D</td><td>Doğru bilgi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> TCF–SCF karışıklığı bu konunun en sık çeldiricisidir. “Atatürk’ün isteği” = SCF.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">7 Ocak 1946’da Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan tarafından kurulan Demokrat Parti, aynı yıl yapılan genel seçime katıldı. Bu seçim, birden fazla partinin katıldığı ilk genel seçimdi ve tek dereceli olarak yapıldı. Demokrat Parti, 1950 seçimlerinde oyların çoğunluğunu alarak iktidara geldi.</div>\n<p>Bu metinde aşağıdaki sorulardan hangisinin <b>cevabı yoktur</b>?</p>",
+   "c": [
+    "Demokrat Parti ekonomide hangi görüşü savunmuştur?",
+    "Demokrat Parti’nin kurucuları kimlerdir?",
+    "1946 genel seçimi hangi seçim sistemiyle yapılmıştır?",
+    "Demokrat Parti hangi seçimin sonunda iktidara gelmiştir?"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>DP: 7 Ocak 1946, Bayar, Menderes, Köprülü, Koraltan</li><li>1946 seçimi: çok partili ilk genel seçim, tek dereceli</li><li>1950: DP iktidara geldi</li></ul><b>İstenen</b><p>Cevabı metinde <b>olmayan</b> soru.</p></div><ol class=\"sv-s\"><li><b>Metindeki bilgileri işaretle</b>Kurucular ✓, 1946 seçim sistemi ✓, iktidar yılı ✓.</li><li><b>Eksik bilgiyi bul</b>DP’nin ekonomi görüşü metinde hiç geçmiyor. Bunu başka yerden bilsen de soru yalnızca metne göre soruluyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Cevabı yok: ekonomi görüşü metinde geçmez.</td></tr><tr><td>B</td><td>Cevabı var: dört kurucu sayılmış.</td></tr><tr><td>C</td><td>Cevabı var: tek dereceli.</td></tr><tr><td>D</td><td>Cevabı var: 1950 seçimi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Cevabı yoktur” sorularında kendi bilgini değil, yalnızca metni kullan.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda bazı gelişmeler ile bunların sonuçları eşleştirilmiştir.</p>\n<table class=\"rt\">\n<tr><th>Satır</th><th>Gelişme (neden)</th><th>Sonuç</th></tr>\n<tr><td>I</td><td>Şeyh Sait İsyanı’nın çıkması</td><td>Takrir-i Sükûn Kanunu’nun çıkarılması</td></tr>\n<tr><td>II</td><td>Menemen Olayı’nın yaşanması</td><td>Kadınlara belediye seçimlerinde seçme ve seçilme hakkı verilmesi</td></tr>\n<tr><td>III</td><td>Serbest Cumhuriyet Fırkası’na rejim karşıtlarının yönelmesi</td><td>Partinin kurucusu tarafından feshedilmesi</td></tr>\n<tr><td>IV</td><td>Ordunun siyasetin dışında tutulmak istenmesi</td><td>Komutanlardan askerlik ile milletvekilliği arasında tercih yapmalarının istenmesi</td></tr>\n</table>\n<p>Buna göre hangi satırdaki neden-sonuç ilişkisi <b>hatalıdır</b>?</p>",
+   "c": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: Şeyh Sait → Takrir-i Sükûn</li><li>II: Menemen → kadınlara belediye hakkı</li><li>III: Rejim karşıtlarının SCF’ye yönelmesi → fesih</li><li>IV: Ordu siyasetten ayrılsın → komutanlardan tercih</li></ul><b>İstenen</b><p>Neden-sonuç ilişkisi <b>hatalı</b> satır.</p></div><ol class=\"sv-s\"><li><b>Kuralı hatırla</b>Sonuç, nedenden önce olamaz. Önce tarihleri kontrol ederiz.</li><li><b>II’yi kontrol et</b><span class=\"sv-m\">Kadınlara belediye hakkı: 3 Nisan 1930</span><span class=\"sv-m\">Menemen Olayı: 23 Aralık 1930</span>Sonuç, nedenden 8 ay önce → ilişki kurulamaz. Ayrıca hak, eşitlik anlayışıyla verildi.</li><li><b>Diğer satırlar</b>I (1925), III (1930) ve IV (1924) bilinen neden-sonuç ilişkileridir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru ilişki.</td></tr><tr class=\"ok\"><td>B</td><td>Hatalı: sonuç nedenden önce gerçekleşmiş.</td></tr><tr><td>C</td><td>Doğru ilişki.</td></tr><tr><td>D</td><td>Doğru ilişki.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Neden-sonuç sorularında ilk test: tarih sırası. Sonuç her zaman nedenden sonra gelir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bir öğrenci, 1930 yılında yaşanan gelişmeleri gazete manşeti biçiminde canlandırmıştır (manşetler öğrenci tarafından yazılmıştır).</p>\n<div class=\"box\">• <b>Nisan:</b> “Kadınlarımız belediye seçimlerinde oy verecek!”<br>• <b>Ağustos:</b> “Yeni bir fırka doğdu: Serbest Cumhuriyet Fırkası”<br>• <b>Kasım:</b> “Fethi Bey fırkasını feshetti”<br>• <b>Aralık:</b> “Menemen’de irtica: Kubilay şehit edildi”</div>\n<p>Öğrenci bu listeye aşağıdaki manşetlerden hangisini eklerse <b>yanlış</b> yapmış olur?</p>",
+   "c": [
+    "“Belediye seçimlerinde iki fırka yarıştı”",
+    "“Fethi Bey İzmir’de halkla buluştu”",
+    "“Dünya ekonomik bunalımının etkileri sürüyor”",
+    "“Kadınlara milletvekili seçme ve seçilme hakkı tanındı”"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1930 manşetleri: Nisan kadınlara belediye hakkı, Ağustos SCF, Kasım fesih, Aralık Menemen</li></ul><b>İstenen</b><p>1930 listesine eklenirse <b>yanlış</b> olacak manşet.</p></div><ol class=\"sv-s\"><li><b>Her manşetin yılını bul</b>Belediye seçimleri (Ekim 1930, CHF + SCF), Fethi Bey’in İzmir gezisi (Eylül 1930), 1929 bunalımının etkileri (1930’da sürüyor).</li><li><b>Farklı yılı yakala</b>Kadınlara milletvekili seçme-seçilme hakkı <b>5 Aralık 1934</b>’te tanındı; 1930’da yalnızca belediye hakkı vardı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Uygun: 1930 belediye seçimlerine CHF ve SCF katıldı.</td></tr><tr><td>B</td><td>Uygun: Fethi Bey Eylül 1930’da İzmir’deydi.</td></tr><tr><td>C</td><td>Uygun: bunalımın etkileri 1930’da sürüyordu.</td></tr><tr class=\"ok\"><td>D</td><td>Yanlış: bu hak 1934’te tanındı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Nisan manşetindeki “kadınlar” kelimesi D’yi de 1930’a aitmiş gibi gösterir; hakların aşamalı verildiğini unutma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">• Şeyh Sait İsyanı’nda dinî duygular kullanılarak halk Cumhuriyet’e karşı ayaklandırılmaya çalışıldı.<br>• Menemen’de kendini “mehdi” ilan eden Derviş Mehmet, halkı laik düzene karşı kışkırtmaya çalıştı.<br>• Serbest Cumhuriyet Fırkası’nın çevresinde laiklik karşıtlarının toplanması partinin kapanmasında etkili oldu.</div>\n<p>Bu gelişmeler, aşağıdaki Atatürk ilkelerinden hangisinin korunmasının önemini <b>en açık</b> biçimde ortaya koymaktadır?</p>",
+   "c": [
+    "Devletçilik",
+    "Milliyetçilik",
+    "Laiklik",
+    "Halkçılık"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şeyh Sait: «dinî duygular kullanılarak»</li><li>Menemen: «mehdi» ilan eden Derviş Mehmet, «laik düzene karşı»</li><li>SCF: «laiklik karşıtlarının toplanması»</li></ul><b>İstenen</b><p>Korunmasının önemi en açık görülen ilke.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b>Üç maddede de din siyasete alet edilmiş, hedef laik düzen olmuştur.</li><li><b>İlkeyi bağla</b>Din ve devlet işlerinin ayrılmasını, dinin siyasete alet edilmemesini esas alan ilke <b>laiklik</b>tir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Devletçilik ekonomiyle ilgilidir.</td></tr><tr><td>B</td><td>Milliyetçilik millî birlik ve bağımsızlıkla ilgilidir.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: hedef laik düzendir.</td></tr><tr><td>D</td><td>Halkçılık eşitlik ve ayrıcalıkların kalkmasıyla ilgilidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Metinde “dinî duygular, mehdi, irtica, laiklik karşıtı” varsa ilke laikliktir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda Cumhuriyet rejimine yönelik iki olay karşılaştırılmıştır.</p>\n<table class=\"rt\">\n<tr><th>Özellik</th><th>Şeyh Sait İsyanı (1925)</th><th>Menemen Olayı (1930)</th></tr>\n<tr><td>Amaç</td><td>Cumhuriyet’i ve laik düzeni yıkmak</td><td>Laik Cumhuriyet düzenini yıkmak</td></tr>\n<tr><td>Kullanılan yöntem</td><td>Dinî duyguları kullanarak halkı ayaklandırmak</td><td>Kendini “mehdi” ilan eden Derviş Mehmet’in dinî duyguları kullanarak halkı kışkırtması</td></tr>\n<tr><td>Alınan tedbir</td><td>Takrir-i Sükûn Kanunu çıkarıldı.</td><td>Bölgede sıkıyönetim ilan edildi.</td></tr>\n<tr><td>Yargılama</td><td>İstiklal Mahkemesi</td><td>Divan-ı Harp</td></tr>\n</table>\n<p>Tablodaki bilgilere göre iki olay için;</p>\n<p>I. Dinî duygular istismar edilmiştir.<br>II. Hükûmet aynı kanunu çıkararak önlem almıştır.<br>III. Laik Cumhuriyet düzeni hedef alınmıştır.</p>\n<p>yargılarından hangileri <b>ortak olarak söylenebilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Amaç: ikisinde de laik Cumhuriyeti yıkmak</li><li>Yöntem: ikisinde de dinî duyguları kullanmak</li><li>Tedbir: Şeyh Sait → Takrir-i Sükûn; Menemen → sıkıyönetim</li><li>Yargılama: İstiklal Mahkemesi / Divan-ı Harp</li></ul><b>İstenen</b><p>İki olay için <b>ortak</b> söylenebilecek yargılar.</p></div><ol class=\"sv-s\"><li><b>I → yöntem satırı</b>İkisinde de dinî duygular kullanıldı → ortak, I doğru.</li><li><b>II → tedbir satırı</b>Biri kanun, diğeri sıkıyönetim → aynı değil, II yanlış.</li><li><b>III → amaç satırı</b>İkisi de laik Cumhuriyeti hedefledi → III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: III de ortak.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: I ve III.</td></tr><tr><td>C</td><td>II yanlış.</td></tr><tr><td>D</td><td>II yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Karşılaştırma tablosunda her öncülü tek bir satırla eşleştir; satırda iki hücre aynıysa “ortak”tır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><b>Yargı:</b> “Atatürk döneminde Cumhuriyet’e yönelik iç tehditler, çok partili hayata geçiş denemelerini olumsuz etkilemiştir.”</div>\n<p>Aşağıdakilerden hangisi bu yargıyı destekleyen <b>en güçlü kanıt</b>tır?</p>",
+   "c": [
+    "Halk Fırkası’nın 1924’te adını Cumhuriyet Halk Fırkası olarak değiştirmesi",
+    "Kadınlara 1934’te milletvekili seçme ve seçilme hakkı verilmesi",
+    "Türkiye’nin 1932’de Milletler Cemiyetine üye olması",
+    "Şeyh Sait İsyanı’nın ardından Terakkiperver Cumhuriyet Fırkası’nın kapatılması"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yargı: iç tehditler → çok partili hayat denemelerini olumsuz etkiledi</li></ul><b>İstenen</b><p>Yargıyı en güçlü destekleyen kanıt.</p></div><ol class=\"sv-s\"><li><b>Yargıyı parçala</b>Kanıtın iki parçası olmalı: 1) bir <b>iç tehdit</b>, 2) <b>çok partili hayata zarar</b>.</li><li><b>Şıkları test et</b>Şeyh Sait İsyanı (iç tehdit) → ilk muhalefet partisi TCF’nin kapatılması (çok partili hayat denemesinin sona ermesi). İki parça birlikte var.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ad değişikliği tehdit de değil, olumsuz etki de değil.</td></tr><tr><td>B</td><td>Demokrasiyi güçlendiren bir adım; yargının tersi.</td></tr><tr><td>C</td><td>Dış politikayla ilgili.</td></tr><tr class=\"ok\"><td>D</td><td>En güçlü kanıt: iç tehdit + muhalefet partisinin kapanması.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kanıt” sorularında yargının her parçasını karşılayan şıkkı seç.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bir öğrenci, Cumhuriyet’in ilk yıllarında yaşanan bazı gelişmeleri aşağıdaki gibi iki gruba ayırmıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 230\" width=\"560\" role=\"img\" aria-label=\"Olayların iki gruba ayrılması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"230\" fill=\"#ffffff\"/>\n<rect x=\"8\" y=\"8\" width=\"268\" height=\"214\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"142\" y=\"32\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Demokratikleşme yolunda</text>\n<text x=\"142\" y=\"48\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">atılan adımlar</text>\n<rect x=\"22\" y=\"62\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#93c5fd\"/><text x=\"142\" y=\"82\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Halk Fırkası’nın kurulması (1923)</text>\n<rect x=\"22\" y=\"100\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#93c5fd\"/><text x=\"142\" y=\"120\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">TCF’nin kurulması (1924)</text>\n<rect x=\"22\" y=\"138\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#93c5fd\"/><text x=\"142\" y=\"158\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Menemen Olayı (1930)</text>\n<rect x=\"22\" y=\"176\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#93c5fd\"/><text x=\"142\" y=\"196\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Kadınlara milletvekilliği hakkı (1934)</text>\n<rect x=\"284\" y=\"8\" width=\"268\" height=\"214\" rx=\"10\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n<text x=\"418\" y=\"32\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#7f1d1d\" text-anchor=\"middle\">Cumhuriyet rejimine</text>\n<text x=\"418\" y=\"48\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#7f1d1d\" text-anchor=\"middle\">yönelik tehditler</text>\n<rect x=\"298\" y=\"62\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fca5a5\"/><text x=\"418\" y=\"82\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Şeyh Sait İsyanı (1925)</text>\n<rect x=\"298\" y=\"100\" width=\"240\" height=\"30\" rx=\"6\" fill=\"#ffffff\" stroke=\"#fca5a5\"/><text x=\"418\" y=\"120\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">İzmir Suikast Girişimi (1926)</text>\n</svg></div>\n<p>Öğrencinin <b>yanlış gruba</b> yerleştirdiği gelişme aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Menemen Olayı (1930)",
+    "Terakkiperver Cumhuriyet Fırkası’nın kurulması (1924)",
+    "İzmir Suikast Girişimi (1926)",
+    "Kadınlara milletvekili seçme ve seçilme hakkı tanınması (1934)"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Demokratikleşme grubu: Halk Fırkası, TCF, Menemen Olayı, kadınlara milletvekilliği</li><li>Tehdit grubu: Şeyh Sait, İzmir Suikastı</li></ul><b>İstenen</b><p><b>Yanlış gruba</b> yerleştirilen gelişme.</p></div><ol class=\"sv-s\"><li><b>Her gelişmenin niteliğini yaz</b>Halk Fırkası, TCF ve kadın hakları → demokratikleşme. Şeyh Sait, İzmir Suikastı → tehdit.</li><li><b>Menemen’i değerlendir</b>Derviş Mehmet’in laik Cumhuriyete karşı ayaklanması, Kubilay’ın şehit edilmesi → bir <b>tehdit</b>tir; sağ grupta olmalıydı.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yanlış grupta: Menemen bir rejim tehdididir.</td></tr><tr><td>B</td><td>Doğru grupta: ilk çok partili deneme.</td></tr><tr><td>C</td><td>Doğru grupta: rejime tehdit.</td></tr><tr><td>D</td><td>Doğru grupta: demokratikleşme adımı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Şeyh Sait (1925), İzmir Suikastı (1926), Menemen (1930) = Cumhuriyete yönelik üç iç tehdit.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">Terakkiperver Cumhuriyet Fırkası ve Serbest Cumhuriyet Fırkası, programlarında tek dereceli seçim sistemini savunmuştu. Serbest Cumhuriyet Fırkası ayrıca kadınlara siyasi haklar tanınmasını savunmuştu. İki parti de kısa sürede kapandı ve hiçbiri iktidara gelemedi. Kadınlara milletvekili seçme ve seçilme hakkı 1934’te tanındı; tek dereceli seçim sistemine ise 1946’da geçildi.</div>\n<p>Bu metne göre;</p>\n<p>I. Muhalefet partilerinin savunduğu bazı görüşler, bu partiler kapandıktan sonra hayata geçirilmiştir.<br>II. Kadınlara milletvekilliği hakkı, Serbest Cumhuriyet Fırkası iktidara geldiği için tanınmıştır.<br>III. Atatürk döneminde milletvekilleri halk tarafından doğrudan seçilmiştir.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "I ve II",
+    "II ve III",
+    "Yalnız I",
+    "I ve III"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF ve SCF: tek dereceli seçimi savundu; SCF kadınlara siyasi hak da istedi</li><li>İki parti de kapandı, «hiçbiri iktidara gelemedi»</li><li>1934: kadınlara milletvekilliği; 1946: tek dereceli seçim</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>Savunulan görüşler parti kapandıktan sonra (1934, 1946) uygulandı → I doğru.</li><li><b>II</b>Metin «hiçbiri iktidara gelemedi» diyor → II yanlış.</li><li><b>III</b>Tek dereceli seçime 1946’da geçildi; Atatürk dönemi (1923-1938) seçimleri iki dereceliydi → III yanlış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II yanlış.</td></tr><tr><td>B</td><td>II ve III yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: yalnız I.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> III için tarih aralığını unutma: Atatürk 1938’de vefat etti, tek dereceli seçim 1946’da başladı.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">20 Nisan 1924’te kabul edilen 1924 Anayasası’nın 1. maddesi <b>“Türkiye Devleti bir Cumhuriyettir.”</b> hükmünü taşıyordu. Anayasanın 102. maddesinde ise devlet şeklinin Cumhuriyet olduğunu belirten birinci maddenin değiştirilmesinin <b>hiçbir şekilde teklif dahi edilemeyeceği</b> belirtilmişti (sadeleştirilmiştir).</div>\n<p>Aşağıdakilerden hangisi, 102. maddedeki bu hükümle <b>aynı amaca</b> yönelik olarak alınmış bir önlemdir?</p>",
+   "c": [
+    "Şeyh Sait İsyanı sırasında Takrir-i Sükûn Kanunu’nun çıkarılması",
+    "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması",
+    "Serbest Cumhuriyet Fırkası’nın kurulmasının desteklenmesi",
+    "Tek dereceli seçim sistemine geçilmesi"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1924 Anayasası md. 1: «Türkiye Devleti bir Cumhuriyettir.»</li><li>md. 102: bu maddenin değiştirilmesi «teklif dahi edilemez»</li></ul><b>İstenen</b><p>102. madde ile <b>aynı amaca</b> yönelik önlem.</p></div><ol class=\"sv-s\"><li><b>Amacı belirle</b>Değiştirilemez madde, Cumhuriyet rejimini anayasal güvenceye alır → amaç <b>rejimi korumak</b>.</li><li><b>Aynı amaçlı önlemi bul</b>Takrir-i Sükûn Kanunu, Cumhuriyeti tehdit eden Şeyh Sait İsyanı karşısında rejimi korumak için çıkarıldı.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: rejimi korumaya yönelik bir önlem.</td></tr><tr><td>B</td><td>Amaç katılımı artırmak (demokratikleşme).</td></tr><tr><td>C</td><td>Amaç çoğulculuk (demokratikleşme).</td></tr><tr><td>D</td><td>Amaç halkın doğrudan temsil (demokratikleşme).</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Hepsi Cumhuriyetle ilgili görünür; soru “aynı amacı” soruyor: koruma mı, genişletme mi? Ayır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıda Türkiye’de demokrasiyle ilgili bazı gelişmeler verilmiştir:</p>\n<div class=\"box\">I. Dörtlü Takrir’in verilmesi<br>II. Serbest Cumhuriyet Fırkası’nın feshedilmesi<br>III. Kadınlara milletvekili seçme ve seçilme hakkı tanınması<br>IV. Takrir-i Sükûn Kanunu’nun kabul edilmesi</div>\n<p>Bu gelişmelerin oluş sırası aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "II – IV – III – I",
+    "IV – III – II – I",
+    "IV – II – I – III",
+    "IV – II – III – I"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Dörtlü Takrir</li><li>II. SCF’nin feshi</li><li>III. Kadınlara milletvekilliği hakkı</li><li>IV. Takrir-i Sükûn</li></ul><b>İstenen</b><p>Doğru oluş sırası.</p></div><ol class=\"sv-s\"><li><b>Tarihleri yaz</b><span class=\"sv-m\">IV → 4 Mart 1925</span><span class=\"sv-m\">II → 17 Kasım 1930</span><span class=\"sv-m\">III → 5 Aralık 1934</span><span class=\"sv-m\">I → 1945</span></li><li><b>Sırala</b>IV – II – III – I.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 127\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">1925</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">IV. Takrir-i</text><text x=\"75\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Sükûn</text><circle cx=\"198\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"198\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">1930</text><text x=\"198\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">II. SCF feshi</text><circle cx=\"322\" cy=\"70\" r=\"6\" fill=\"#7c3aed\"/><text x=\"322\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#7c3aed\" font-weight=\"bold\">1934</text><text x=\"322\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">III. Kadınlara</text><text x=\"322\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">milletvekilliği</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#16a34a\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\" font-weight=\"bold\">1945</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">I. Dörtlü</text><text x=\"445\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Takrir</text></svg><figcaption>Oluş sırası: IV → II → III → I</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>SCF’nin feshi 1925’ten önce gösterilmiş.</td></tr><tr><td>B</td><td>Kadın hakları (1934), fesihten (1930) önce gösterilmiş.</td></tr><tr><td>C</td><td>Dörtlü Takrir (1945), 1934’ten önce gösterilmiş.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: IV – II – III – I.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Dörtlü Takrir Atatürk döneminden sonradır (1945); onu Atatürk dönemine koyma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">5 Aralık 1934’teki anayasa değişikliğinin ardından yapılan ilk milletvekili genel seçimi 8 Şubat 1935’te tamamlandı. O dönemde seçimler iki dereceliydi: Birinci seçmenler ikinci seçmenleri, ikinci seçmenler de milletvekillerini seçiyordu. Bu seçimin sonunda 17 kadın milletvekili TBMM’ye girdi.</div>\n<p>Bu metne göre 1935 seçimiyle ilgili;</p>\n<p>I. Kadınlar ilk kez bir milletvekili seçimine seçmen olarak katılmıştır.<br>II. Milletvekillerini halk doğrudan seçmiştir.<br>III. Meclis’te kadınlar da temsil edilmeye başlamıştır.</p>\n<p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve III",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>5 Aralık 1934 değişikliğinden sonraki ilk genel seçim: 8 Şubat 1935</li><li>Seçim «iki dereceliydi»</li><li>17 kadın milletvekili TBMM’ye girdi</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>Hak 1934’te verildi, bu seçim sonraki ilk seçim → kadınlar ilk kez milletvekili seçimine katıldı, I doğru.</li><li><b>II</b>«İki dereceliydi» → halk doğrudan seçmedi, II yanlış.</li><li><b>III</b>17 kadın milletvekili → kadınlar Meclis’te temsil edilmeye başladı, III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: III de doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: I ve III.</td></tr><tr><td>C</td><td>II yanlış.</td></tr><tr><td>D</td><td>II yanlış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Kadın hakları (1934) ile tek dereceli seçimi (1946) aynı döneme ait sanma.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki tabloda Osmanlı Devleti ile Türkiye Cumhuriyeti’nde devlet başkanlığı karşılaştırılmıştır.</p>\n<table class=\"rt\">\n<tr><th>Özellik</th><th>Osmanlı Devleti (saltanat)</th><th>Türkiye Cumhuriyeti (29 Ekim 1923 sonrası)</th></tr>\n<tr><td>Devlet başkanının belirlenmesi</td><td>Hanedan üyeleri arasından, veraset yoluyla</td><td>TBMM tarafından, milletvekilleri arasından seçimle</td></tr>\n<tr><td>Görev süresi</td><td>Belirli bir süre sınırı yoktu.</td><td>Bir seçim dönemi</td></tr>\n<tr><td>Egemenliğin kaynağı</td><td>Hanedan</td><td>Millet</td></tr>\n</table>\n<p>Tablodaki bilgiler, Cumhuriyet’in ilanıyla aşağıdakilerden hangisinin gerçekleştiğini gösterir?</p>",
+   "c": [
+    "Devlet yönetiminde hanedanın yetkileri artırılmıştır.",
+    "Devlet başkanı halk tarafından doğrudan seçilmeye başlanmıştır.",
+    "Devlet başkanlığı, millî egemenliğe dayanan ve seçimle belirlenen bir makam hâline gelmiştir.",
+    "Çok partili siyasi hayata geçilmiştir."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Osmanlı: veraset, süre sınırı yok, egemenlik hanedanın</li><li>Cumhuriyet: TBMM milletvekilleri arasından seçer, bir seçim dönemi, egemenlik milletin</li></ul><b>İstenen</b><p>Cumhuriyetin ilanıyla gerçekleşen değişim.</p></div><ol class=\"sv-s\"><li><b>Satırları karşılaştır</b>Belirlenme: veraset → seçim. Süre: sınırsız → bir dönem. Kaynak: hanedan → millet.</li><li><b>Birleştir</b>Devlet başkanlığı, millî egemenliğe dayanan ve seçimle belirlenen bir makam oldu.</li><li><b>Kimin seçtiğine dikkat et</b>Cumhurbaşkanını <b>TBMM</b> seçiyor, halk değil.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Egemenlik hanedandan millete geçti.</td></tr><tr><td>B</td><td>Tabloda Cumhurbaşkanını TBMM seçer, halk değil.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: millî egemenlik + seçimle belirlenen makam.</td></tr><tr><td>D</td><td>Tabloda parti bilgisi yok.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Seçim” kelimesini görüp B’ye kayma; seçen TBMM’dir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdaki grafikte 1924–1947 yılları arasında TBMM’de temsil edilen siyasi parti sayısı gösterilmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 260\" width=\"560\" role=\"img\" aria-label=\"TBMM’de temsil edilen siyasi parti sayısı 1924-1947\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"260\" fill=\"#ffffff\"/>\n<text x=\"280\" y=\"20\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">TBMM’de temsil edilen siyasi parti sayısı (1924–1947)</text>\n<line x1=\"60\" y1=\"210\" x2=\"540\" y2=\"210\" stroke=\"#e2e8f0\"/>\n<text x=\"52\" y=\"214\" font-size=\"11\" fill=\"#334155\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"150\" x2=\"540\" y2=\"150\" stroke=\"#e2e8f0\"/>\n<text x=\"52\" y=\"154\" font-size=\"11\" fill=\"#334155\" text-anchor=\"end\">1</text>\n<line x1=\"60\" y1=\"90\" x2=\"540\" y2=\"90\" stroke=\"#e2e8f0\"/>\n<text x=\"52\" y=\"94\" font-size=\"11\" fill=\"#334155\" text-anchor=\"end\">2</text>\n<line x1=\"60\" y1=\"210\" x2=\"540\" y2=\"210\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"210\" x2=\"60\" y2=\"60\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n<text x=\"18\" y=\"135\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\" transform=\"rotate(-90 18 135)\">Parti sayısı</text>\n<line x1=\"60.0\" y1=\"210\" x2=\"60.0\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"60.0\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1924</text>\n<line x1=\"101.7\" y1=\"210\" x2=\"101.7\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"101.7\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1926</text>\n<line x1=\"143.5\" y1=\"210\" x2=\"143.5\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"143.5\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1928</text>\n<line x1=\"185.2\" y1=\"210\" x2=\"185.2\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"185.2\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1930</text>\n<line x1=\"227.0\" y1=\"210\" x2=\"227.0\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"227.0\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1932</text>\n<line x1=\"268.7\" y1=\"210\" x2=\"268.7\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"268.7\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1934</text>\n<line x1=\"310.4\" y1=\"210\" x2=\"310.4\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"310.4\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1936</text>\n<line x1=\"352.2\" y1=\"210\" x2=\"352.2\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"352.2\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1938</text>\n<line x1=\"393.9\" y1=\"210\" x2=\"393.9\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"393.9\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1940</text>\n<line x1=\"435.7\" y1=\"210\" x2=\"435.7\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"435.7\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1942</text>\n<line x1=\"477.4\" y1=\"210\" x2=\"477.4\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"477.4\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1944</text>\n<line x1=\"519.1\" y1=\"210\" x2=\"519.1\" y2=\"215\" stroke=\"#334155\"/>\n<text x=\"519.1\" y=\"228\" font-size=\"11\" fill=\"#334155\" text-anchor=\"middle\">1946</text>\n<path d=\"M60.0,150.0 H78.3 V90.0 H89.6 V150.0 H198.0 V90.0 H203.5 V150.0 H519.5 V90.0 H540.0 V90.0 H540.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n<line x1=\"78.3\" y1=\"86\" x2=\"78.3\" y2=\"66\" stroke=\"#64748b\" stroke-dasharray=\"3,2\"/>\n<text x=\"74.3\" y=\"60\" font-size=\"11\" fill=\"#1e293b\">TCF: 17 Kasım 1924 – 3 Haziran 1925</text>\n<line x1=\"198.0\" y1=\"86\" x2=\"198.0\" y2=\"76\" stroke=\"#64748b\" stroke-dasharray=\"3,2\"/>\n<text x=\"194.0\" y=\"73\" font-size=\"11\" fill=\"#1e293b\">SCF: 12 Ağustos – 17 Kasım 1930</text>\n<text x=\"540\" y=\"82\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">DP: 7 Ocak 1946</text>\n<text x=\"370\" y=\"142\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Yalnızca Cumhuriyet Halk Fırkası / Partisi</text>\n<text x=\"280\" y=\"250\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">TCF: Terakkiperver Cumhuriyet F. · SCF: Serbest Cumhuriyet F. · DP: Demokrat Parti</text>\n</svg></div>\n<p>Grafiğe göre aşağıdakilerden hangisi <b>söylenemez</b>?</p>",
+   "c": [
+    "Atatürk döneminde Meclis’te muhalefet partisi bulunan sürelerin toplamı on yılı aşmıştır.",
+    "1925–1930 yılları arasında Meclis’te muhalefet partisi bulunmamıştır.",
+    "Meclis’te muhalefet partisinin bulunduğu ilk dönem, ikinci dönemden daha uzun sürmüştür.",
+    "1946’da Meclis’te yeniden birden fazla parti temsil edilmeye başlanmıştır."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Parti sayısı 2 olan aralıklar: TCF 17 Kasım 1924 – 3 Haziran 1925; SCF 12 Ağustos – 17 Kasım 1930; DP 7 Ocak 1946’dan sonra</li><li>Diğer yıllarda yalnız CHF</li></ul><b>İstenen</b><p>Grafiğe göre <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Atatürk dönemindeki muhalefet sürelerini hesapla</b><span class=\"sv-m\">TCF: Kasım 1924 → Haziran 1925 ≈ 6,5 ay</span><span class=\"sv-m\">SCF: Ağustos → Kasım 1930 ≈ 3 ay</span><span class=\"sv-m\">Toplam ≈ 9,5 ay &lt; 1 yıl</span></li><li><b>A’yı değerlendir</b>Toplam bir yılı bile bulmuyor; «on yılı aşmıştır» denemez.</li><li><b>Diğerlerini grafikte kontrol et</b>1925-1930 arası sayı 1; TCF dönemi SCF’den uzun; 1946’da DP ile sayı yeniden 2.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 200\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"50\" y1=\"150\" x2=\"510\" y2=\"150\" stroke=\"#1e293b\"/><line x1=\"50\" y1=\"150\" x2=\"50\" y2=\"30\" stroke=\"#1e293b\"/><text x=\"40\" y=\"104\" font-size=\"13\" text-anchor=\"end\" fill=\"#1e293b\">1</text><text x=\"40\" y=\"64\" font-size=\"13\" text-anchor=\"end\" fill=\"#1e293b\">2</text><text x=\"50\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1924</text><text x=\"128\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1928</text><text x=\"206\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1932</text><text x=\"284\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1936</text><text x=\"362\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1940</text><text x=\"440\" y=\"168\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1944</text><rect x=\"67.6\" y=\"100\" width=\"430.9\" height=\"50\" fill=\"#94a3b8\"/><rect x=\"67.2\" y=\"60\" width=\"10.5\" height=\"40\" fill=\"#0e7490\"/><rect x=\"178.9\" y=\"60\" width=\"5.3\" height=\"40\" fill=\"#7c3aed\"/><rect x=\"479.4\" y=\"60\" width=\"19.1\" height=\"40\" fill=\"#16a34a\"/><text x=\"62\" y=\"52\" font-size=\"13\" fill=\"#0e7490\" font-weight=\"bold\">TCF ≈ 6,5 ay</text><text x=\"190\" y=\"85\" font-size=\"13\" fill=\"#7c3aed\" font-weight=\"bold\">SCF ≈ 3 ay</text><text x=\"498\" y=\"52\" font-size=\"13\" fill=\"#16a34a\" font-weight=\"bold\" text-anchor=\"end\">DP 1946</text><text x=\"196\" y=\"130\" font-size=\"13\" fill=\"#1e293b\" text-anchor=\"middle\">yalnız CHF (1 parti)</text><line x1=\"323\" y1=\"30\" x2=\"323\" y2=\"150\" stroke=\"#dc2626\" stroke-dasharray=\"4 3\"/><text x=\"323\" y=\"190\" font-size=\"13\" fill=\"#dc2626\" text-anchor=\"middle\">1938</text></svg><figcaption>Muhalefetin olduğu dönemler (renkli) çok kısa; Atatürk döneminin (1938’e kadar) büyük kısmında tek parti var</figcaption></figure><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Söylenemez: toplam ≈ 9,5 ay, on yıl değil.</td></tr><tr><td>B</td><td>Söylenir: Haziran 1925 – Ağustos 1930 arası tek parti.</td></tr><tr><td>C</td><td>Söylenir: 6,5 ay &gt; 3 ay.</td></tr><tr><td>D</td><td>Söylenir: DP ile yeniden iki parti.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Atatürk döneminde muhalefet partilerinin ömrü kısaydı: TCF yaklaşık 7 ay, SCF yaklaşık 3 ay.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Aşağıdakilerin hangisinde verilen neden-sonuç ilişkisi <b>doğru</b> kurulmuştur?</p>",
+   "c": [
+    "Kadınlara milletvekili seçme hakkı verildi → Şeyh Sait İsyanı çıktı.",
+    "Serbest Cumhuriyet Fırkası feshedildi → Takrir-i Sükûn Kanunu çıkarıldı.",
+    "Demokrat Parti kuruldu → Dörtlü Takrir verildi.",
+    "İzmir suikast girişimi ortaya çıkarıldı → İstiklal Mahkemesinde yargılamalar yapıldı."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dört neden → sonuç ilişkisi</li></ul><b>İstenen</b><p>Neden-sonuç ilişkisi <b>doğru</b> kurulan şık.</p></div><ol class=\"sv-s\"><li><b>Önce tarih sırasını kontrol et</b>Neden, sonuçtan önce olmalı ve gerçekten onu doğurmuş olmalı.</li><li><b>Şıkları dene</b><span class=\"sv-m\">A: 1934 → 1925 ✗ (sıra ters)</span><span class=\"sv-m\">B: 1930 → 1925 ✗ (sıra ters)</span><span class=\"sv-m\">C: 1946 → 1945 ✗ (ilişki ters)</span><span class=\"sv-m\">D: 1926 suikast → 1926 yargılama ✓</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Şeyh Sait (1925), kadın haklarından (1934) önce.</td></tr><tr><td>B</td><td>Takrir-i Sükûn Şeyh Sait üzerine (1925) çıkarıldı.</td></tr><tr><td>C</td><td>Ters: Dörtlü Takrir reddedilince DP kuruldu.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: suikast ortaya çıkınca İstiklal Mahkemesinde yargılandı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ok yönünü ters çeviren çeldiriciler (C) çok yaygındır; “önce hangisi oldu?” diye sor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bir öğretmen, çok partili hayatla ilgili şu açıklamayı yapmıştır:</p>\n<div class=\"box\">“Çok partili bir demokraside partiler, rejimin temel esaslarında uzlaşır; aralarındaki farklılıklar ekonomi, eğitim, yönetim gibi konulardaki politikalarında ortaya çıkar. Bir muhalefet partisi, rejimi yıkmak isteyenlerin sığınağı hâline gelirse çok partili hayat zarar görür.”</div>\n<p>Öğretmenin açıklamasına göre aşağıdaki gelişmelerden hangisi, Atatürk döneminde çok partili hayatın <b>zarar görmesine</b> örnektir?</p>",
+   "c": [
+    "Terakkiperver Cumhuriyet Fırkası’nın ekonomide Cumhuriyet Halk Fırkası’ndan farklı olarak liberalizmi savunması",
+    "Serbest Cumhuriyet Fırkası’nın çevresinde laik Cumhuriyet karşıtlarının toplanmaya başlaması",
+    "Serbest Cumhuriyet Fırkası’nın vergilerin hafifletilmesini önermesi",
+    "Muhalefet partilerinin tek dereceli seçim sistemini savunması"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Partiler «rejimin temel esaslarında uzlaşır»; farklar politikalarda olur</li><li>«Bir muhalefet partisi, rejimi yıkmak isteyenlerin sığınağı hâline gelirse çok partili hayat zarar görür»</li></ul><b>İstenen</b><p>Çok partili hayatın <b>zarar görmesine</b> örnek.</p></div><ol class=\"sv-s\"><li><b>Ölçütü çıkar</b>Öğretmene göre politika farkları <b>sağlıklıdır</b>; zarar, partinin rejim karşıtlarına <b>sığınak</b> olmasıdır.</li><li><b>Örneği eşleştir</b>SCF’nin çevresinde laik Cumhuriyet karşıtlarının toplanması tam bu durumdur; parti bu yüzden üç ayda feshedildi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ekonomi görüşü farkı → sağlıklı bir politika farkı.</td></tr><tr class=\"ok\"><td>B</td><td>Zarar örneği: parti rejim karşıtlarının sığınağı oldu.</td></tr><tr><td>C</td><td>Vergi önerisi → politika farkı.</td></tr><tr><td>D</td><td>Seçim sistemi önerisi → politika farkı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Muhalefetin farklı ekonomi/seçim görüşü savunması demokrasinin doğal parçasıdır, tehdit değildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">17 Şubat 1926’da kabul edilen Türk Medeni Kanunu ile resmî nikâh zorunlu hâle getirildi ve tek eşle evlilik esas alındı. Kadınlara boşanma hakkı tanındı. Mirasta kadın ile erkek eşit hâle getirildi. Mahkemelerde kadının tanıklığı erkeğinkiyle eşit kabul edildi.</div>\n<p>Bu metinde Türk kadınının kazandığı haklarla ilgili aşağıdakilerden hangisine <b>değinilmemiştir</b>?</p>",
+   "c": [
+    "Aile hayatındaki hakları",
+    "Miras hakkı",
+    "Siyasi hakları",
+    "Mahkemedeki hukuki eşitliği"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Türk Medeni Kanunu (17 Şubat 1926)</li><li>Resmî nikâh, tek eşle evlilik, boşanma hakkı</li><li>Mirasta eşitlik; tanıklıkta eşitlik</li></ul><b>İstenen</b><p>Metinde <b>değinilmeyen</b> hak türü.</p></div><ol class=\"sv-s\"><li><b>Her hakkı bir başlığa yerleştir</b>Nikâh, tek eşlilik, boşanma → aile hayatı. Mirasta eşitlik → miras. Tanıklık → mahkemede hukuki eşitlik.</li><li><b>Eksik başlığı bul</b>Seçme-seçilme gibi <b>siyasi</b> haklardan hiç söz edilmiyor. Bu haklar Medeni Kanun’la değil, 1930-1934 düzenlemeleriyle geldi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Değinilmiş: nikâh, tek eşlilik, boşanma.</td></tr><tr><td>B</td><td>Değinilmiş: mirasta eşitlik.</td></tr><tr class=\"ok\"><td>C</td><td>Değinilmemiş: siyasi haklar metinde yok.</td></tr><tr><td>D</td><td>Değinilmiş: tanıklıkta eşitlik.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Medeni Kanun → toplumsal/hukuki haklar; 1930-1934 düzenlemeleri → siyasi haklar.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">(I) Atatürk, 1930’da yakın arkadaşı Ali Fethi Bey’den yeni bir parti kurmasını istedi. (II) Serbest Cumhuriyet Fırkası 12 Ağustos 1930’da kuruldu. (III) Parti, aynı yılın 17 Kasım’ında kurucusu tarafından feshedildi. (IV) Bu kısa deneyim, Türk demokrasisinin gelişimi açısından son derece değerli bir ders olmuştur.</div>\n<p>Bu metindeki numaralanmış cümlelerden hangisi <b>yorum</b> niteliğindedir?</p>",
+   "c": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: Atatürk Ali Fethi Bey’den parti kurmasını istedi</li><li>II: SCF 12 Ağustos 1930’da kuruldu</li><li>III: 17 Kasım’da feshedildi</li><li>IV: «son derece değerli bir ders olmuştur»</li></ul><b>İstenen</b><p><b>Yorum</b> niteliğindeki cümle.</p></div><ol class=\"sv-s\"><li><b>Bilgi-yorum farkını hatırla</b><b>Bilgi (olgu)</b>: belgeyle kanıtlanabilir (tarih, kişi, olay). <b>Yorum</b>: kişiden kişiye değişen değerlendirme.</li><li><b>Cümleleri sına</b>I, II, III kanıtlanabilir olaylardır. IV’teki «son derece değerli» bir değer yargısıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bilgi: belgelenebilir bir istek.</td></tr><tr><td>B</td><td>Bilgi: tarihli bir olay.</td></tr><tr><td>C</td><td>Bilgi: tarihli bir olay.</td></tr><tr class=\"ok\"><td>D</td><td>Yorum: «değerli bir ders» kişisel değerlendirmedir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Önemli, değerli, en büyük, başarılı” gibi sıfatlar genellikle yorumu işaret eder.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bir öğrenci, “demokrasi” kavramıyla ilgili aşağıdaki kavram haritasını hazırlamış ve her kavrama Atatürk döneminden bir örnek yazmıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 250\" width=\"560\" role=\"img\" aria-label=\"Demokrasi kavram haritası\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"250\" fill=\"#ffffff\"/>\n<line x1=\"230\" y1=\"60\" x2=\"280\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<line x1=\"330\" y1=\"60\" x2=\"280\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<line x1=\"230\" y1=\"190\" x2=\"280\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<line x1=\"330\" y1=\"190\" x2=\"280\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<ellipse cx=\"280\" cy=\"125\" rx=\"62\" ry=\"26\" fill=\"#1e3a8a\"/>\n<text x=\"280\" y=\"130\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">DEMOKRASİ</text>\n<rect x=\"8\" y=\"14\" width=\"222\" height=\"76\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"119\" y=\"36\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Seçme ve seçilme hakkı</text>\n<text x=\"119\" y=\"56\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Örnek: Kadınlara siyasi</text>\n<text x=\"119\" y=\"72\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">hakların tanınması (1930–1934)</text>\n<rect x=\"330\" y=\"14\" width=\"222\" height=\"76\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"441\" y=\"36\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Çoğulculuk</text>\n<text x=\"441\" y=\"56\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Örnek: Takrir-i Sükûn</text>\n<text x=\"441\" y=\"72\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Kanunu’nun çıkarılması (1925)</text>\n<rect x=\"8\" y=\"160\" width=\"222\" height=\"76\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"119\" y=\"182\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Anayasal düzen</text>\n<text x=\"119\" y=\"202\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Örnek: 1924 Anayasası’nın</text>\n<text x=\"119\" y=\"218\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">kabul edilmesi</text>\n<rect x=\"330\" y=\"160\" width=\"222\" height=\"76\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"441\" y=\"182\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Siyasetin sivil olması</text>\n<text x=\"441\" y=\"199\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Örnek: Komutanlardan askerlik</text>\n<text x=\"441\" y=\"214\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">ile milletvekilliği arasında</text>\n<text x=\"441\" y=\"229\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">tercih yapmalarının istenmesi</text>\n</svg></div>\n<p>Kavram haritasında hangi kavram ile örneği <b>yanlış eşleştirilmiştir</b>?</p>",
+   "c": [
+    "Çoğulculuk – Takrir-i Sükûn Kanunu’nun çıkarılması",
+    "Seçme ve seçilme hakkı – Kadınlara siyasi hakların tanınması",
+    "Anayasal düzen – 1924 Anayasası’nın kabul edilmesi",
+    "Siyasetin sivil olması – Komutanlardan askerlik ile milletvekilliği arasında tercih istenmesi"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Seçme-seçilme ↔ kadınlara siyasi haklar</li><li>Çoğulculuk ↔ Takrir-i Sükûn Kanunu</li><li>Anayasal düzen ↔ 1924 Anayasası</li><li>Siyasetin sivil olması ↔ komutanlardan tercih istenmesi</li></ul><b>İstenen</b><p><b>Yanlış</b> eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Çoğulculuğu tanımla</b>Çoğulculuk: farklı görüşlerin özgürce örgütlenip temsil edilmesi. Örneği: TCF, SCF gibi muhalefet partileri.</li><li><b>Takrir-i Sükûn’u değerlendir</b>Bu kanun olağanüstü yetkiler verdi; gazeteler ve TCF bu kanuna dayanılarak kapatıldı. Yani çoğulculuğu <b>kısıtlamıştır</b>, örnek olamaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yanlış: Takrir-i Sükûn çoğulculuğu kısıtlamıştır.</td></tr><tr><td>B</td><td>Doğru: siyasi hakların genişlemesi.</td></tr><tr><td>C</td><td>Doğru: anayasal düzenin temeli.</td></tr><tr><td>D</td><td>Doğru: ordu-siyaset ayrımı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Takrir-i Sükûn rejimi koruma amaçlıdır; demokrasinin genişlemesine değil, olağanüstü önlemlere örnektir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\">26 Ekim 1933’te kadınlara muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme hakkı tanındı. Bunun ardından Ankara’ya bağlı Kazan köyünde muhtar seçilen ve çiftçilikle uğraşan <b>Satı Kadın (Hatı Çırpan)</b>, kadınlara milletvekilliği hakkının tanınmasından sonra yapılan 1935 seçimlerinde Ankara milletvekili olarak TBMM’ye girdi. Satı Kadın, Meclis’e giren ilk kadın milletvekilleri arasında yer aldı.</div>\n<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Kadınlar, milletvekili olabilmek için önce muhtarlık yapmak zorundaydı.",
+    "İlk kadın milletvekillerinin tamamı büyük şehirlerde yaşayan kadınlardan seçilmiştir.",
+    "Yerel yönetimde görev alan bir kadın, ulusal düzeyde de siyasete katılabilmiştir.",
+    "Kadınlara muhtarlık hakkı, milletvekilliği hakkından sonra tanınmıştır."
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>26 Ekim 1933: muhtarlık hakkı</li><li>Satı Kadın: Kazan köyünde muhtar, çiftçi</li><li>1935: Ankara milletvekili, ilk kadın milletvekillerinden</li></ul><b>İstenen</b><p>Metinden <b>ulaşılabilen</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Satı Kadın’ın yolunu izle</b>Köy muhtarı (yerel yönetim) → milletvekili (ulusal düzey).</li><li><b>Genelleme yapma</b>Tek bir örnekten “herkes için zorunlu” ya da “hepsi” sonucu çıkmaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Aşırı genelleme: tek örnekten zorunluluk çıkmaz.</td></tr><tr><td>B</td><td>«Tamamı» ifadesi metinle çelişir: Satı Kadın köylü bir çiftçidir.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: yerelden ulusala siyasete katılmıştır.</td></tr><tr><td>D</td><td>Sıra ters: muhtarlık 1933, milletvekilliği 1934.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Tek örneğe dayanan “herkes, tamamı, zorunlu” şıkları aşırı genellemedir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda Atatürk döneminde kurulan iki muhalefet partisinin programlarından bazı maddeler verilmiştir (sadeleştirilmiştir).</p>\n<div class=\"box\"><b>Metin I – Terakkiperver Cumhuriyet Fırkası (1924)</b><br>• Fırka, millet egemenliğine dayanan Cumhuriyet yönetimine bağlıdır.<br>• Milletvekili seçimleri tek dereceli olacaktır.<br>• Yönetimde yerinden yönetim (adem-i merkeziyet) esas alınacaktır.<br>• Ekonomide özel girişim desteklenecektir.<br>• Fırka, dinî düşünce ve inançlara saygılıdır.</div>\n<div class=\"box\"><b>Metin II – Serbest Cumhuriyet Fırkası (1930)</b><br>• Fırka, laik Cumhuriyet esaslarına bağlıdır.<br>• Seçimler tek dereceli olacaktır.<br>• Kadınlara siyasi haklar tanınacaktır.<br>• Ekonomide özel girişim desteklenecek, yabancı sermaye ülkeye çekilecektir.<br>• Vergiler, halkın gücünü aşmayacak biçimde hafifletilecektir.</div>\n<p>Bu metinlere göre iki partinin,</p><p>I. seçme hakkının kullanılış biçimi,<br>II. ekonomide özel girişime bakış,<br>III. kadınlara siyasi hak tanınması,<br>IV. din ve devlet işlerinin ilişkisi</p><p>konularından hangilerinde <b>aynı görüşü</b> savunduğu söylenebilir?</p>",
+   "c": [
+    "I ve II",
+    "I ve III",
+    "II ve IV",
+    "I, II ve III"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF: millet egemenliğine dayalı Cumhuriyet, tek dereceli seçim, yerinden yönetim, özel girişim, «dinî düşünce ve inançlara saygılıdır»</li><li>SCF: «laik Cumhuriyet», tek dereceli seçim, kadınlara siyasi hak, özel girişim + yabancı sermaye, vergi indirimi</li></ul><b>İstenen</b><p>İki partinin <b>aynı görüşü</b> savunduğu konular.</p></div><ol class=\"sv-s\"><li><b>I – seçim</b>İkisinde de «tek dereceli» → ortak.</li><li><b>II – özel girişim</b>İkisinde de «özel girişim desteklenecek» → ortak.</li><li><b>III – kadın hakları</b>Sadece SCF’de var; TCF programı bu konuda sessiz → ortak değil.</li><li><b>IV – din-devlet</b>TCF «dinî düşüncelere saygı», SCF «laik Cumhuriyet» diyor; aynı görüş sayılamaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: I ve II.</td></tr><tr><td>B</td><td>III yalnız SCF’de var.</td></tr><tr><td>C</td><td>IV’te ifadeler farklıdır.</td></tr><tr><td>D</td><td>III ortak değil.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Bir metinde söylenmeyen görüşü “ortak” sayma; ortak olması için iki metinde de yazmalı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Terakkiperver Cumhuriyet Fırkasının kısa ömrü anlatılmıştır.</p>\n<div class=\"box\">17 Kasım 1924'te kurulan Terakkiperver Cumhuriyet Fırkası, Cumhuriyet döneminin ilk muhalefet partisiydi. Partinin programındaki “Fırka, dinî düşünce ve inançlara saygılıdır.” maddesi, inkılaplardan rahatsız olan kesimlerin partiye yönelmesine yol açtı. Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı. Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, hükûmete rejimi tehdit eden örgütleri kapatma yetkisi verdi. İsyanın bastırılmasından sonra, parti programındaki söz konusu maddenin rejim karşıtlarınca kullanıldığı gerekçesiyle Terakkiperver Cumhuriyet Fırkası, bu kanuna dayanılarak 3 Haziran 1925'te Bakanlar Kurulu kararıyla kapatıldı.</div>\n<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>",
+   "c": [
+    "Terakkiperver Cumhuriyet Fırkası ne kadar süre faaliyette kalmıştır?",
+    "Partinin kapatılmasında hangi kanuna dayanılmıştır?",
+    "İsyana katılanlar hangi mahkemede yargılanmıştır?",
+    "Parti programındaki hangi madde rejim karşıtlarınca kullanılmıştır?"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF: 17 Kasım 1924 kuruldu, 3 Haziran 1925 kapatıldı</li><li>«dinî düşünce ve inançlara saygılıdır» maddesi</li><li>«bu kanuna dayanılarak» (Takrir-i Sükûn) Bakanlar Kurulu kararıyla kapatıldı</li></ul><b>İstenen</b><p>Cevabı metinde <b>olmayan</b> soru.</p></div><ol class=\"sv-s\"><li><b>Her sorunun cevabını metinde ara</b>Süre: iki tarih var → hesaplanır.<span class=\"sv-m\">17 Kasım 1924 → 3 Haziran 1925 ≈ 6,5 ay</span>Kanun: «bu kanuna dayanılarak» → Takrir-i Sükûn. Madde: açıkça yazılı.</li><li><b>Eksik olanı bul</b>İsyancıların hangi mahkemede yargılandığı metinde hiç geçmiyor (gerçekte İstiklal Mahkemesi).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cevabı var: tarihlerden hesaplanır.</td></tr><tr><td>B</td><td>Cevabı var: Takrir-i Sükûn Kanunu.</td></tr><tr class=\"ok\"><td>C</td><td>Cevabı yok: mahkeme metinde geçmez.</td></tr><tr><td>D</td><td>Cevabı var: dinî inançlara saygı maddesi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Bildiğin doğru bilgiyi (İstiklal Mahkemesi) metinde varmış gibi kabul etme.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki şemada 1925–1926 yıllarında yaşanan bazı gelişmeler oluş sırasına göre verilmiş, üç gelişmenin yeri boş bırakılmıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 150\" width=\"560\" role=\"img\" aria-label=\"1925-1926 gelişmeleri sıralama şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"150\" fill=\"#ffffff\"/>\n<rect x=\"4\" y=\"30\" width=\"98\" height=\"84\" rx=\"8\" fill=\"#fee2e2\" stroke=\"#dc2626\"/>\n<text x=\"53\" y=\"56\" font-size=\"11\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">Şubat 1925</text>\n<text x=\"53\" y=\"74\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Şeyh Sait</text>\n<text x=\"53\" y=\"89\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">İsyanı</text>\n<text x=\"53\" y=\"104\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">başladı</text>\n<rect x=\"117\" y=\"30\" width=\"98\" height=\"84\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"166\" y=\"80\" font-size=\"22\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">I</text>\n<rect x=\"230\" y=\"30\" width=\"98\" height=\"84\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"279\" y=\"80\" font-size=\"22\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">II</text>\n<rect x=\"343\" y=\"30\" width=\"98\" height=\"84\" rx=\"8\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"392\" y=\"80\" font-size=\"22\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">III</text>\n<rect x=\"456\" y=\"30\" width=\"100\" height=\"84\" rx=\"8\" fill=\"#f1f5f9\" stroke=\"#475569\"/>\n<text x=\"506\" y=\"50\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\" text-anchor=\"middle\">Haziran 1926</text>\n<text x=\"506\" y=\"66\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Ankara</text>\n<text x=\"506\" y=\"80\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Antlaşması ile</text>\n<text x=\"506\" y=\"94\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Musul, Irak'a</text>\n<text x=\"506\" y=\"108\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">bırakıldı</text>\n<path d=\"M103 72 L115 72 M110 67 L115 72 L110 77\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M216 72 L228 72 M223 67 L228 72 L223 77\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M329 72 L341 72 M336 67 L341 72 L336 77\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n<path d=\"M442 72 L454 72 M449 67 L454 72 L449 77\" stroke=\"#334155\" stroke-width=\"2\" fill=\"none\"/>\n<text x=\"280\" y=\"138\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">Kutular soldan sağa oluş sırasına göre dizilmiştir.</text>\n</svg></div>\n<p><b>K:</b> Takrir-i Sükûn Kanunu'nun kabul edilmesi<br><b>L:</b> Terakkiperver Cumhuriyet Fırkasının kapatılması<br><b>M:</b> Ali Fethi Bey hükûmetinin çekilip yerine İsmet Paşa hükûmetinin kurulması</p>\n<p>Şemada I, II ve III ile gösterilen yerlere sırasıyla hangi gelişmeler yazılmalıdır?</p>",
+   "c": [
+    "K – M – L",
+    "M – K – L",
+    "M – L – K",
+    "L – K – M"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şubat 1925: Şeyh Sait İsyanı → I → II → III → Haziran 1926: Musul Irak’a bırakıldı</li><li>K: Takrir-i Sükûn</li><li>L: TCF’nin kapatılması</li><li>M: Fethi Bey yerine İsmet Paşa hükûmeti</li></ul><b>İstenen</b><p>I, II, III yerine doğru sıra.</p></div><ol class=\"sv-s\"><li><b>Tarihleri yaz</b><span class=\"sv-m\">M → 2-3 Mart 1925 (hükûmet değişti)</span><span class=\"sv-m\">K → 4 Mart 1925 (kanun)</span><span class=\"sv-m\">L → 3 Haziran 1925 (TCF kapatıldı)</span></li><li><b>Mantıkla doğrula</b>Kanunu çıkaran, sert tedbirler alan yeni hükûmettir → M, K’den önce. TCF kanuna dayanılarak kapatıldı → K, L’den önce.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 127\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">Şub. 1925</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Şeyh Sait</text><circle cx=\"168\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"168\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">2-3 Mar.</text><text x=\"168\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">M: İsmet Paşa</text><text x=\"168\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">hükûmeti</text><circle cx=\"260\" cy=\"70\" r=\"6\" fill=\"#7c3aed\"/><text x=\"260\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#7c3aed\" font-weight=\"bold\">4 Mar.</text><text x=\"260\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">K: Takrir-i</text><text x=\"260\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Sükûn</text><circle cx=\"352\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"352\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Haz. 1925</text><text x=\"352\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">L: TCF</text><text x=\"352\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">kapatıldı</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">Haz. 1926</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Musul</text></svg><figcaption>Doğru sıra: M → K → L</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Kanunu yeni hükûmet çıkardı; M önce gelir.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: M – K – L.</td></tr><tr><td>C</td><td>TCF kanuna dayanılarak kapatıldı; L, K’den sonra.</td></tr><tr><td>D</td><td>Parti kapatılması isyanın ilk sonucu değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Şeyh Sait zinciri: hükûmet değişikliği → Takrir-i Sükûn → TCF’nin kapatılması → Musul’un kaybı.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, Serbest Cumhuriyet Fırkası ile ilgili aşağıdaki yargıları yazmıştır.</p>\n<div class=\"box\">I. Serbest Cumhuriyet Fırkası 12 Ağustos 1930'da kurulmuştur.<br>II. Serbest Cumhuriyet Fırkasının kurulması, Atatürk'ün demokrasiye bağlılığının en açık kanıtıdır.<br>III. Atatürk'ün kız kardeşi Makbule Hanım bu partiye üye olmuştur.<br>IV. Parti, 17 Kasım 1930'da kurucusu Ali Fethi Bey tarafından feshedilmiştir.<br>V. Parti biraz daha uzun yaşasaydı Türkiye, çok partili hayata 1930'larda kalıcı olarak geçebilirdi.</div>\n<p>Bu yargılardan hangileri kanıtlanabilir <b>bilgi</b> niteliğindedir?</p>",
+   "c": [
+    "II ve V",
+    "I, II ve IV",
+    "III ve V",
+    "I, III ve IV"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: SCF 12 Ağustos 1930’da kuruldu</li><li>II: «Atatürk’ün demokrasiye bağlılığının en açık kanıtıdır»</li><li>III: Makbule Hanım üye oldu</li><li>IV: 17 Kasım 1930’da feshedildi</li><li>V: «biraz daha uzun yaşasaydı … geçebilirdi»</li></ul><b>İstenen</b><p><b>Kanıtlanabilir bilgi</b> niteliğindeki yargılar.</p></div><ol class=\"sv-s\"><li><b>Ölçütü koy</b>Bilgi = kaynakla doğrulanabilir. Yorum = değerlendirme veya varsayım.</li><li><b>Yargıları ayır</b>I, III, IV → tarih, kişi, olay → bilgi. II → «en açık kanıt» değerlendirmedir → yorum. V → «yaşasaydı» gerçekleşmemiş varsayımdır → yorum.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İkisi de yorumdur.</td></tr><tr><td>B</td><td>II yorumdur.</td></tr><tr><td>C</td><td>V yorumdur.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: I, III ve IV bilgidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “-saydı, -abilirdi” gibi varsayım kalıpları kanıtlanamaz; her zaman yorumdur.</div><div class=\"sv-w\"><b>Tuzak:</b> II olumlu ve doğru gibi durur; ama “en açık” bir değerlendirmedir, olgu değildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Atatürk döneminde yaşamış bir kadının günlüğünden bazı notlar, tarih sırasıyla aşağıda verilmiştir (notlar canlandırma amacıyla yazılmıştır).</p>\n<p>Bu notlardan hangisi tarihî gerçeklerle <b>çelişmektedir</b>?</p>",
+   "c": [
+    "<b>Aralık 1930:</b> Bu sonbaharda yapılan belediye seçimlerinde ilk kez oy kullandım.",
+    "<b>Kasım 1933:</b> Bu ay yapılan milletvekili seçiminde ilk kez oy kullandım.",
+    "<b>Aralık 1934:</b> Anayasada yapılan değişiklikle kadınlara milletvekili seçme ve seçilme hakkı tanındı.",
+    "<b>Mart 1935:</b> Gazeteler, Meclis'e 17 kadın milletvekilinin girdiğini yazıyor."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Belediye: 3 Nisan 1930</li><li>Muhtarlık: 26 Ekim 1933</li><li>Milletvekilliği: 5 Aralık 1934; ilk milletvekili seçimi Şubat 1935</li></ul><b>İstenen</b><p>Tarihî gerçeklerle <b>çelişen</b> not.</p></div><ol class=\"sv-s\"><li><b>Her notun tarihini hakla karşılaştır</b>Notun tarihi, o hakkın tanındığı tarihten sonra olmalı.</li><li><b>Çelişkiyi bul</b><span class=\"sv-m\">B: Kasım 1933 &lt; Aralık 1934</span>Kasım 1933’te kadınların milletvekili seçiminde oy hakkı yoktu; 1933’te gelen hak muhtarlıktı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Uyumlu: 1930 sonbaharı belediye seçimleri.</td></tr><tr class=\"ok\"><td>B</td><td>Çelişir: 1933’te milletvekili seçme hakkı yoktu.</td></tr><tr><td>C</td><td>Uyumlu: hak 5 Aralık 1934’te tanındı.</td></tr><tr><td>D</td><td>Uyumlu: Şubat 1935’te 17 kadın milletvekili seçildi, Meclis Mart’ta açıldı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> 1933’ü milletvekilliğiyle eşleştirme: 1933 = muhtarlık.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Tarih dersinde iki öğrenci, Atatürk döneminde çok partili hayata geçiş denemelerinin neden başarısız olduğunu tartışmıştır.</p>\n<div class=\"dialog\"><div><b>Deniz:</b> Bence asıl neden, Cumhuriyet ve laiklik karşıtlarının bu partileri kendi amaçları için kullanmasıydı. Terakkiperver Fırka da Serbest Fırka da bu yüzden kısa ömürlü oldu.</div><div><b>Ece:</b> Bence toplumun bir kesimi inkılapları henüz benimsememişti. Muhalefet partileri bu nedenle kısa sürede inkılap karşıtlarının toplandığı yerler hâline geldi ve kapanmak zorunda kaldı.</div></div>\n<p>Buna göre iki öğrencinin görüşlerinde <b>ortak</b> olan düşünce aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "Muhalefet partilerinin rejim karşıtlarınca kullanılması, denemelerin başarısız olmasında etkili olmuştur.",
+    "Ekonomik bunalım, muhalefet partilerinin kapanmasına yol açmıştır.",
+    "Muhalefet partilerinin ikisi de hükûmet kararıyla kapatılmıştır.",
+    "Toplumun bir kesimi inkılapları henüz benimsememiştir."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Deniz: karşıtların partileri «kendi amaçları için kullanması»</li><li>Ece: toplumun bir kesimi inkılapları benimsememişti; partiler «inkılap karşıtlarının toplandığı yerler hâline geldi»</li></ul><b>İstenen</b><p>İki görüşte <b>ortak</b> olan düşünce.</p></div><ol class=\"sv-s\"><li><b>Her görüşün özünü yaz</b>Deniz: partiler rejim karşıtlarınca kullanıldı. Ece: inkılaplar benimsenmemişti + partiler karşıtların toplandığı yer oldu.</li><li><b>Kesişimi bul</b>İkisinde de olan: partilerin rejim karşıtlarınca kullanılması. “İnkılapların benimsenmemesi” yalnız Ece’de var.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Ortak: ikisi de rejim karşıtlarının partileri kullanmasını söylüyor.</td></tr><tr><td>B</td><td>İkisi de ekonomik bunalımdan söz etmez.</td></tr><tr><td>C</td><td>Konuşmalarda yok; ayrıca SCF’yi kurucusu feshetti.</td></tr><tr><td>D</td><td>Yalnızca Ece’nin görüşü.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Tek kişinin görüşünü (D) ortak sanmak bu soru tipinin en güçlü çeldiricisidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Cumhuriyetin ilk yıllarında ordu ile siyaset arasındaki ilişkiye yönelik bazı gelişmeler anlatılmıştır.</p>\n<div class=\"box\">Aralık 1923'te kabul edilen bir kanunla, görevdeki askerlerin milletvekili seçilebilmesi için önce askerlikten ayrılmaları şartı getirildi. 1924 sonbaharında ise hem orduda görevli hem de milletvekili olan komutanlardan iki görevden birini seçmeleri istendi. Bazı komutanlar milletvekilliğinden ayrılarak orduda kaldı. Kâzım Karabekir ve Ali Fuat Paşalar ise ordudaki görevlerinden ayrılarak milletvekili olarak Meclis'te kaldı. Kısa bir süre sonra bu iki komutan, Rauf Bey ve Refet Paşa gibi Millî Mücadele'nin önde gelen isimleriyle birlikte Terakkiperver Cumhuriyet Fırkasını kurdu.</div>\n<p>Bu metinden hareketle aşağıdakilerden hangisine <b>ulaşılamaz</b>?</p>",
+   "c": [
+    "Terakkiperver Cumhuriyet Fırkasının kurucuları arasında Millî Mücadele'de görev yapmış komutanlar vardır.",
+    "Ordunun siyasetten ayrılmasına yönelik düzenlemeler birden fazla aşamada yapılmıştır.",
+    "Komutanların bir kısmı siyasi hayatta kalmayı tercih etmiştir.",
+    "Terakkiperver Cumhuriyet Fırkası, ordunun siyasette etkisini artırmak amacıyla kurulmuştur."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Aralık 1923: askerin milletvekili olması için askerlikten ayrılma şartı</li><li>1924: komutanlardan iki görevden birini seçmeleri istendi</li><li>Kâzım Karabekir ve Ali Fuat Paşa ordudan ayrılıp milletvekili kaldı, sonra TCF’yi kurdular</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki bilgileri işaretle</b>Kurucular Millî Mücadele komutanları (A), düzenleme iki aşamalı (B), bazı komutanlar siyaseti seçti (C).</li><li><b>D’yi metinle sına</b>Kurucular partiyi kurmadan <b>önce</b> askerlikten ayrıldılar. Metin ordu-siyaset ayrımını anlatıyor; «ordunun siyasette etkisini artırmak» amacı yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ulaşılır: Kâzım Karabekir, Ali Fuat Paşa vb.</td></tr><tr><td>B</td><td>Ulaşılır: 1923 kanunu + 1924 tercih.</td></tr><tr><td>C</td><td>Ulaşılır: iki paşa milletvekilliğini seçti.</td></tr><tr class=\"ok\"><td>D</td><td>Ulaşılamaz: kurucular ordudan ayrılmıştı; böyle bir amaç yok.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Kurucular eski komutan → ordu siyasete karıştı” çıkarımı metni tersten okumaktır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, aşağıdaki tabloda verilen yargıları doğru (D) ya da yanlış (Y) olarak işaretlemiştir.</p>\n<table><tr><th>No</th><th>Yargı</th><th>Öğrencinin işareti</th></tr>\n<tr><td>1</td><td>Halk Fırkası, Cumhuriyet'in ilanından önce kurulmuştur.</td><td>Y</td></tr>\n<tr><td>2</td><td>Halk Fırkasının adı, Terakkiperver Cumhuriyet Fırkası kurulmadan önce “Cumhuriyet Halk Fırkası” olmuştur.</td><td>D</td></tr>\n<tr><td>3</td><td>Terakkiperver Cumhuriyet Fırkası, 1924 Anayasası kabul edildikten sonra kurulmuştur.</td><td>Y</td></tr>\n<tr><td>4</td><td>Serbest Cumhuriyet Fırkası, Takrir-i Sükûn Kanunu yürürlükteyken kurulmuştur.</td><td>Y</td></tr>\n<tr><td>5</td><td>Kadınlar, Serbest Cumhuriyet Fırkası kurulmadan önce belediye seçimlerinde seçme ve seçilme hakkı kazanmıştır.</td><td>D</td></tr></table>\n<p>Buna göre öğrencinin yaptığı işaretlemelerden kaç tanesi <b>doğrudur</b>?</p>",
+   "c": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>5 yargı ve öğrencinin D/Y işaretleri</li><li>İstenen işaretin doğru olup olmadığı</li></ul><b>İstenen</b><p><b>Doğru işaret</b> sayısı.</p></div><ol class=\"sv-s\"><li><b>Yöntem</b>Önce yargının kendisi doğru mu bulunur, sonra öğrencinin işaretiyle karşılaştırılır.</li><li><b>1-3. yargılar</b><span class=\"sv-m\">1: Halk F. 9 Eyl. 1923 &lt; Cumhuriyet 29 Eki. 1923 → yargı D, işaret Y ✗</span><span class=\"sv-m\">2: Ad 10 Kas. 1924 &lt; TCF 17 Kas. 1924 → yargı D, işaret D ✓</span><span class=\"sv-m\">3: Anayasa 20 Nis. 1924 &lt; TCF Kas. 1924 → yargı D, işaret Y ✗</span></li><li><b>4-5. yargılar</b><span class=\"sv-m\">4: Kanun 1929’da kalktı, SCF 1930 → yargı Y, işaret Y ✓</span><span class=\"sv-m\">5: Belediye K. Nis. 1930 &lt; SCF Ağu. 1930 → yargı D, işaret D ✓</span></li><li><b>Say</b><span class=\"sv-m\">Doğru işaretler: 2, 4, 5 → 3 tane</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Az sayılmış.</td></tr><tr><td>B</td><td>Az sayılmış.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: 3 işaret doğru (2, 4, 5).</td></tr><tr><td>D</td><td>Doğru yargıları (1, 2, 3, 5) saymak bu sonucu verir; soru işaretleri soruyor.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Doğru <b>yargıları</b> değil, doğru <b>işaretleri</b> say.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Atatürk döneminde kadınlara siyasi haklar aşamalı olarak tanınmıştır.</p>\n<p>Buna göre <b>1 Haziran 1934</b> tarihinde, seçme ve seçilme şartlarını taşıyan bir Türk kadını için</p>\n<p>I. belediye meclisi üyeliğine aday olmak,<br>II. köyünde muhtar seçilmek,<br>III. milletvekili seçimlerinde oy kullanmak</p>\n<p>durumlarından hangileri yasal olarak <b>mümkündü</b>?</p>",
+   "c": [
+    "I ve II",
+    "Yalnız I",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Belediye: 3 Nisan 1930</li><li>Muhtarlık: 26 Ekim 1933</li><li>Milletvekilliği: 5 Aralık 1934</li><li>Tarih: 1 Haziran 1934</li></ul><b>İstenen</b><p>Bu tarihte yasal olarak mümkün olanlar.</p></div><ol class=\"sv-s\"><li><b>Tarihi her hakla karşılaştır</b><span class=\"sv-m\">I: 1 Haz. 1934 &gt; 3 Nis. 1930 → mümkün</span><span class=\"sv-m\">II: 1 Haz. 1934 &gt; 26 Eki. 1933 → mümkün</span><span class=\"sv-m\">III: 1 Haz. 1934 &lt; 5 Ara. 1934 → değil</span></li><li><b>Sonuç</b>Milletvekilliği hakkı bu tarihten yaklaşık 6 ay sonra geldi; I ve II mümkündü.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: I ve II.</td></tr><tr><td>B</td><td>Eksik: muhtarlık hakkı 1933’te gelmişti.</td></tr><tr><td>C</td><td>III bu tarihte mümkün değildi.</td></tr><tr><td>D</td><td>III bu tarihte mümkün değildi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “1934” yılını görüp ay ve günü kontrol etmemek D’ye götürür: hak Aralık’ta geldi, Haziran’da yoktu.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Takrir-i Sükûn Kanunu ve sonrasındaki gelişmeler anlatılmıştır.</p>\n<div class=\"box\">Şeyh Sait İsyanı sırasında, 4 Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, hükûmete Cumhuriyet'i ve iç güvenliği tehdit eden her türlü örgütü ve yayını yasaklama yetkisi verdi. Bu kanuna dayanılarak bazı gazeteler kapatıldı. 3 Haziran 1925'te ise Terakkiperver Cumhuriyet Fırkası kapatıldı. Süresi uzatılarak uygulanan kanun, ortam sakinleşince 1929'da yürürlükten kalktı. Bir yıl sonra, 1930'da, Atatürk'ün isteğiyle Serbest Cumhuriyet Fırkası kuruldu.</div>\n<p>Bu metne göre,</p><p>I. olağanüstü dönemde alınan tedbirler basını ve siyasi faaliyetleri kısıtlamıştır,<br>II. olağanüstü yetkiler sona erdikten sonra yeni bir muhalefet denemesi yapılmıştır,<br>III. Serbest Cumhuriyet Fırkası da Takrir-i Sükûn Kanunu'na dayanılarak kapatılmıştır</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Takrir-i Sükûn (4 Mart 1925): örgüt ve yayınları yasaklama yetkisi</li><li>Bazı gazeteler ve TCF (3 Haziran 1925) kapatıldı</li><li>Kanun 1929’da kalktı; «bir yıl sonra» 1930’da SCF kuruldu</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>Gazeteler (basın) ve bir parti (siyasi faaliyet) kapatıldı → I doğru.</li><li><b>II</b>Kanun 1929’da kalktı, SCF 1930’da kuruldu → II doğru.</li><li><b>III</b>Metinde SCF’nin kapanışı yazmıyor; üstelik kanun SCF’den önce kalkmıştı. SCF’yi kurucusu feshetti → III yanlış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II de doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: I ve II.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Takrir-i Sükûn ile kapatılan parti TCF’dir; SCF bu kanun kalktıktan sonra kuruldu.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Tarih dersinde dört öğrenci, Terakkiperver Cumhuriyet Fırkası (TCF) ile Serbest Cumhuriyet Fırkasını (SCF) karşılaştırmıştır.</p>\n<div class=\"dialog\"><div><b>Arda:</b> İki parti de Cumhuriyet rejimine bağlı olduğunu açıklamış ve ekonomide liberal görüşleri savunmuştur.</div><div><b>Beren:</b> TCF'yi Millî Mücadele'nin önde gelen komutanları kendi istekleriyle kurmuştu. SCF ise Atatürk'ün isteğiyle, yakın arkadaşı Ali Fethi Bey tarafından kuruldu.</div><div><b>Cem:</b> SCF kurulurken Atatürk, Cumhurbaşkanı olarak partiler karşısında tarafsız kalacağını açıkladı. Kız kardeşi Makbule Hanım da bu partiye üye oldu.</div><div><b>Duru:</b> İki parti de rejim karşıtlarının partiye yönelmesi yüzünden kısa ömürlü oldu. TCF kurucusu tarafından feshedildi, SCF ise Bakanlar Kurulu kararıyla kapatıldı.</div></div>\n<p>Bu öğrencilerden hangisinin açıklamasında <b>yanlış</b> bir bilgi vardır?</p>",
+   "c": [
+    "Arda",
+    "Beren",
+    "Cem",
+    "Duru"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Arda: ikisi de Cumhuriyete bağlı, liberal</li><li>Beren: TCF komutanların kendi isteğiyle; SCF Atatürk’ün isteğiyle Ali Fethi Bey</li><li>Cem: Atatürk tarafsız; Makbule Hanım üye</li><li>Duru: ikisi de rejim karşıtları yüzünden kısa ömürlü; «TCF kurucusu tarafından feshedildi, SCF … Bakanlar Kurulu kararıyla kapatıldı»</li></ul><b>İstenen</b><p>Açıklamasında <b>yanlış</b> bilgi olan öğrenci.</p></div><ol class=\"sv-s\"><li><b>Kapanış biçimlerini hatırla</b>TCF → Takrir-i Sükûn’a dayanılarak <b>Bakanlar Kurulu kararıyla</b> (3 Haziran 1925). SCF → <b>kurucusu</b> Ali Fethi Bey feshetti (17 Kasım 1930).</li><li><b>Duru’yu kontrol et</b>İlk cümlesi doğru, ama ikinci cümlede kapanış biçimleri <b>yer değiştirmiş</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru: iki parti de cumhuriyetçi ve liberaldir.</td></tr><tr><td>B</td><td>Doğru: kuruluş farkı doğru verilmiş.</td></tr><tr><td>C</td><td>Doğru: tarafsızlık ve Makbule Hanım’ın üyeliği.</td></tr><tr class=\"ok\"><td>D</td><td>Yanlış: kapanış biçimleri ters yazılmış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> İlk cümlesi doğru diye açıklamanın tamamını doğru sanma; her cümleyi ayrı kontrol et.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde 1930 yılının sonunda yaşanan bir olay anlatılmıştır.</p>\n<div class=\"box\">Serbest Cumhuriyet Fırkasının feshedilmesinden yaklaşık bir ay sonra, 23 Aralık 1930'da İzmir'in Menemen ilçesinde kendini “mehdi” ilan eden Derviş Mehmet ve yandaşları, laik Cumhuriyet düzenine karşı ayaklandı. Olayı yatıştırmak için gelen yedek subay öğretmen Mustafa Fehmi Kubilay şehit edildi. Bekçi Hasan ve Bekçi Şevki de hayatını kaybetti. Bölgede sıkıyönetim ilan edildi ve olayın sorumluları Divan-ı Harpte yargılandı. Olay, inkılapların halka daha iyi anlatılması gerektiğini bir kez daha gösterdi.</div>\n<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>",
+   "c": [
+    "Olay, hangi siyasi gelişmeden kısa süre sonra yaşanmıştır?",
+    "Olayın ardından bölgede nasıl bir yönetim uygulanmıştır?",
+    "Olayın sorumlularına hangi cezalar verilmiştir?",
+    "Olayda kimler hayatını kaybetmiştir?"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>SCF’nin feshinden bir ay sonra, 23 Aralık 1930, Menemen</li><li>Kubilay şehit; Bekçi Hasan ve Bekçi Şevki öldü</li><li>Sıkıyönetim ilan edildi; sorumlular «Divan-ı Harpte yargılandı»</li></ul><b>İstenen</b><p>Cevabı metinde <b>olmayan</b> soru.</p></div><ol class=\"sv-s\"><li><b>Cevapları metinde bul</b>Önceki gelişme → SCF’nin feshi. Yönetim → sıkıyönetim. Ölenler → Kubilay, Hasan, Şevki.</li><li><b>Eksik olanı ayır</b>Metin sorumluların <b>nerede</b> yargılandığını söylüyor, ama <b>hangi cezaları</b> aldıklarını söylemiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cevabı var: SCF’nin feshi.</td></tr><tr><td>B</td><td>Cevabı var: sıkıyönetim.</td></tr><tr class=\"ok\"><td>C</td><td>Cevabı yok: cezalar metinde geçmez.</td></tr><tr><td>D</td><td>Cevabı var: üç kişinin adı verilmiş.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Yargılandığı yer” bilgisi, “verilen ceza” bilgisi değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><b>Çoğulculuk:</b> Toplumdaki farklı siyasi görüşlerin birden fazla siyasi parti aracılığıyla temsil edilmesi ve bu partilerin seçimlerde yarışabilmesidir. Çoğulcu bir yapıda iktidar partisinin icraatı muhalefet tarafından denetlenir.</div>\n<p>Aşağıda Türk siyasi hayatında yaşanan bazı gelişmeler verilmiştir.</p>\n<p>I. Halk Fırkasının kurulması (1923)<br>II. Terakkiperver Cumhuriyet Fırkasının kurulması (1924)<br>III. Takrir-i Sükûn Kanunu'nun kabul edilmesi (1925)<br>IV. Serbest Cumhuriyet Fırkasının kurulması (1930)<br>V. Demokrat Partinin kurulması (1946)</p>\n<p>Verilen tanıma göre bu gelişmelerden hangileri çoğulculuğun sağlanmasına yönelik <b>doğrudan</b> bir adımdır?</p>",
+   "c": [
+    "II, IV ve V",
+    "I, II ve IV",
+    "II ve IV",
+    "I, II, IV ve V"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Çoğulculuk: farklı görüşlerin «birden fazla siyasi parti» ile temsili; muhalefetin iktidarı denetlemesi</li><li>I. Halk F. (1923), II. TCF (1924), III. Takrir-i Sükûn (1925), IV. SCF (1930), V. DP (1946)</li></ul><b>İstenen</b><p>Çoğulculuğa yönelik <b>doğrudan</b> adımlar.</p></div><ol class=\"sv-s\"><li><b>Ölçütü uygula</b>İktidar partisi karşısında <b>ikinci bir parti</b> doğuyor mu?</li><li><b>Gelişmeleri sına</b>II, IV, V → iktidar karşısında muhalefet partisi → evet. I → kurulduğunda tek partiydi → hayır. III → muhalefet partisinin kapatılmasına dayanak oldu → hayır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: II, IV ve V muhalefet partileridir.</td></tr><tr><td>B</td><td>I tek parti; V eksik.</td></tr><tr><td>C</td><td>Eksik: DP (V) de muhalefet partisidir.</td></tr><tr><td>D</td><td>I tek parti olduğu için ölçütü karşılamaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Parti kurmak = çoğulculuk” değildir; tek bir partinin kurulması çoğulculuk yaratmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki tabloda Atatürk döneminde kurulan iki muhalefet partisinin kuruluş ve kapanış tarihleri verilmiştir.</p>\n<table><tr><th>Parti</th><th>Kuruluş</th><th>Kapanış</th></tr>\n<tr><td>Terakkiperver Cumhuriyet Fırkası</td><td>17 Kasım 1924</td><td>3 Haziran 1925</td></tr>\n<tr><td>Serbest Cumhuriyet Fırkası</td><td>12 Ağustos 1930</td><td>17 Kasım 1930</td></tr></table>\n<p>Tablodaki bilgilere göre,</p><p>I. Terakkiperver Cumhuriyet Fırkası, Serbest Cumhuriyet Fırkasından daha uzun süre faaliyette kalmıştır,<br>II. Serbest Cumhuriyet Fırkasının faaliyet süresi bir yılın dörtte birinden biraz fazladır,<br>III. Serbest Cumhuriyet Fırkasının kapanış günü ile Terakkiperver Cumhuriyet Fırkasının kuruluş günü, farklı yıllarda olsa da aynı gün ve aya denk gelir</p><p>yargılarından hangileri <b>doğrudur</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve II",
+    "II ve III",
+    "I, II ve III"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>TCF: 17 Kasım 1924 – 3 Haziran 1925</li><li>SCF: 12 Ağustos 1930 – 17 Kasım 1930</li></ul><b>İstenen</b><p>I, II, III’ten hangileri doğru.</p></div><ol class=\"sv-s\"><li><b>Süreleri gün olarak hesapla</b><span class=\"sv-m\">TCF: 13 + 31 + 31 + 28 + 31 + 30 + 31 + 3 = 198 gün</span><span class=\"sv-m\">SCF: 19 + 30 + 31 + 17 = 97 gün</span></li><li><b>I ve II</b>198 &gt; 97 → I doğru.<span class=\"sv-m\">Yılın dörtte biri = 365 ÷ 4 ≈ 91 gün; 97 &gt; 91</span>→ II doğru.</li><li><b>III</b>TCF kuruluşu «17 Kasım» 1924, SCF kapanışı «17 Kasım» 1930 → III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II ve III de doğru.</td></tr><tr><td>B</td><td>Eksik: III de doğru.</td></tr><tr><td>C</td><td>Eksik: I de doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: I, II ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 17 Kasım iki kez karşına çıkar: TCF’nin doğduğu (1924) ve SCF’nin kapandığı (1930) gün.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, Cumhuriyetin ilk yıllarında yaşanan bazı gelişmeler arasındaki neden-sonuç ilişkilerini aşağıdaki şemada oklarla göstermiştir. Okların her biri “neden → sonuç” anlamındadır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 250\" width=\"560\" role=\"img\" aria-label=\"Neden-sonuç okları şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"250\" fill=\"#ffffff\"/>\n<g font-size=\"11\" fill=\"#1e293b\">\n<rect x=\"10\" y=\"12\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"117\" y=\"31\" text-anchor=\"middle\">Takrir-i Sükûn Kanunu'nun</text><text x=\"117\" y=\"46\" text-anchor=\"middle\">kabul edilmesi (1925)</text>\n<rect x=\"335\" y=\"12\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#eff6ff\" stroke=\"#2563eb\"/>\n<text x=\"442\" y=\"31\" text-anchor=\"middle\">Terakkiperver Cumhuriyet</text><text x=\"442\" y=\"46\" text-anchor=\"middle\">Fırkasının kapatılması</text>\n<rect x=\"10\" y=\"70\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#dc2626\"/>\n<text x=\"117\" y=\"89\" text-anchor=\"middle\">Menemen Olayı'nın</text><text x=\"117\" y=\"104\" text-anchor=\"middle\">yaşanması (1930)</text>\n<rect x=\"335\" y=\"70\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#fef2f2\" stroke=\"#dc2626\"/>\n<text x=\"442\" y=\"89\" text-anchor=\"middle\">Serbest Cumhuriyet</text><text x=\"442\" y=\"104\" text-anchor=\"middle\">Fırkasının feshedilmesi</text>\n<rect x=\"10\" y=\"128\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/>\n<text x=\"117\" y=\"147\" text-anchor=\"middle\">Komutanlardan askerlik ya da</text><text x=\"117\" y=\"162\" text-anchor=\"middle\">milletvekilliğini seçmelerinin istenmesi</text>\n<rect x=\"335\" y=\"128\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/>\n<text x=\"442\" y=\"147\" text-anchor=\"middle\">Kâzım Karabekir ve Ali Fuat</text><text x=\"442\" y=\"162\" text-anchor=\"middle\">Paşaların askerlikten ayrılması</text>\n<rect x=\"10\" y=\"186\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#fdf4ff\" stroke=\"#a21caf\"/>\n<text x=\"117\" y=\"205\" text-anchor=\"middle\">Kadınlara milletvekili seçme ve</text><text x=\"117\" y=\"220\" text-anchor=\"middle\">seçilme hakkı tanınması (1934)</text>\n<rect x=\"335\" y=\"186\" width=\"215\" height=\"44\" rx=\"6\" fill=\"#fdf4ff\" stroke=\"#a21caf\"/>\n<text x=\"442\" y=\"205\" text-anchor=\"middle\">Meclis'e 17 kadın milletvekilinin</text><text x=\"442\" y=\"220\" text-anchor=\"middle\">girmesi (1935)</text>\n</g>\n<g stroke=\"#334155\" stroke-width=\"2\" fill=\"none\">\n<path d=\"M228 34 L330 34 M322 28 L330 34 L322 40\"/><path d=\"M228 92 L330 92 M322 86 L330 92 L322 98\"/><path d=\"M228 150 L330 150 M322 144 L330 150 L322 156\"/><path d=\"M228 208 L330 208 M322 202 L330 208 L322 214\"/>\n</g>\n<g font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">\n<circle cx=\"279\" cy=\"34\" r=\"10\" fill=\"#334155\"/><text x=\"279\" y=\"38\">1</text>\n<circle cx=\"279\" cy=\"92\" r=\"10\" fill=\"#334155\"/><text x=\"279\" y=\"96\">2</text>\n<circle cx=\"279\" cy=\"150\" r=\"10\" fill=\"#334155\"/><text x=\"279\" y=\"154\">3</text>\n<circle cx=\"279\" cy=\"208\" r=\"10\" fill=\"#334155\"/><text x=\"279\" y=\"212\">4</text>\n</g>\n</svg></div>\n<p>Buna göre öğrencinin numaralandırılmış oklardan hangisinde neden-sonuç ilişkisini <b>yanlış</b> kurduğu söylenebilir?</p>",
+   "c": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ok 1: Takrir-i Sükûn → TCF’nin kapatılması</li><li>Ok 2: Menemen Olayı (23 Aralık 1930) → SCF’nin feshi</li><li>Ok 3: komutanlardan tercih → Kâzım Karabekir ve Ali Fuat Paşa askerlikten ayrıldı</li><li>Ok 4: 1934 hakkı → 1935’te 17 kadın milletvekili</li></ul><b>İstenen</b><p>Neden-sonuç ilişkisi <b>yanlış</b> kurulan ok.</p></div><ol class=\"sv-s\"><li><b>Tarih testini uygula</b><span class=\"sv-m\">SCF feshi: 17 Kasım 1930</span><span class=\"sv-m\">Menemen: 23 Aralık 1930</span>Menemen fesihten <b>sonra</b> oldu; sonra olan şey öncekinin nedeni olamaz.</li><li><b>Doğru nedeni hatırla</b>SCF’nin feshinde etkili olan, rejim karşıtlarının partiye yönelmesidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru: TCF bu kanuna dayanılarak kapatıldı.</td></tr><tr class=\"ok\"><td>B</td><td>Yanlış: Menemen, fesihten bir ay sonradır.</td></tr><tr><td>C</td><td>Doğru: tercih istenince paşalar askerlikten ayrıldı.</td></tr><tr><td>D</td><td>Doğru: 1934 hakkı 1935’te 17 kadın milletvekilini getirdi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> İki olay aynı yıl ve aynı bölgede (İzmir) olduğu için birbirine bağlanır; ay ve güne bak.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, çok partili hayata kalıcı geçiş süreciyle ilgili aşağıdaki yargıları yazmıştır.</p>\n<p>I. Cumhuriyet döneminin ilk muhalefet partisi Demokrat Partidir.<br>II. Millî Kalkınma Partisi, Demokrat Partiden önce kurulmuştur.<br>III. 1946 genel seçimi tek dereceli olarak yapılmıştır.<br>IV. 1950 seçimleriyle iktidar, seçim yoluyla el değiştirmiştir.</p>\n<p>Bu yargılardan hangileri <b>doğrudur</b>?</p>",
+   "c": [
+    "I ve II",
+    "I, III ve IV",
+    "II, III ve IV",
+    "I, II, III ve IV"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: ilk muhalefet partisi DP</li><li>II: MKP, DP’den önce</li><li>III: 1946 seçimi tek dereceli</li><li>IV: 1950’de iktidar seçimle değişti</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b>İlk muhalefet partisi TCF’dir (1924). DP çok partili hayata <b>kalıcı</b> geçişi sağlayan partidir → I yanlış.</li><li><b>II</b><span class=\"sv-m\">MKP 1945 (Nuri Demirağ) &lt; DP 7 Ocak 1946</span>→ II doğru.</li><li><b>III ve IV</b>1946 seçimi tek dereceli (açık oy, gizli sayım) → III doğru. 1950’de DP kazandı → IV doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I yanlış.</td></tr><tr><td>B</td><td>I yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: II, III ve IV.</td></tr><tr><td>D</td><td>I yanlış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “İlk muhalefet partisi” (TCF) ile “kalıcı geçişi sağlayan parti” (DP) aynı şey değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde kadınların siyasi haklar için verdiği mücadeleden bir kesit anlatılmıştır.</p>\n<div class=\"box\">1923 yazında Nezihe Muhiddin ve arkadaşları, Kadınlar Halk Fırkası adıyla bir siyasi parti kurmak için başvurdu. Ancak dönemin seçim kanunu kadınlara seçme ve seçilme hakkı tanımadığı için partinin kurulmasına izin verilmedi. Bunun üzerine kurucular, 1924'te Türk Kadınlar Birliği adıyla bir dernek kurarak kadın haklarına yönelik çalışmalarını sürdürdü. Kadınlara 1930'da belediye, 1933'te muhtarlık ve ihtiyar heyeti, 1934'te ise milletvekili seçimlerinde seçme ve seçilme hakkı tanındı.</div>\n<p>Bu metne göre,</p><p>I. kadınlar, siyasi haklarını kazanmak için örgütlü bir çaba içine girmiştir,<br>II. kadınlara siyasi haklar tek bir düzenlemeyle değil, aşamalı olarak tanınmıştır,<br>III. kadınlara milletvekili seçme ve seçilme hakkı, Türk Kadınlar Birliğinin isteği üzerine tanınmıştır</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "I ve II",
+    "Yalnız II",
+    "I ve III",
+    "I, II ve III"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1923: Nezihe Muhiddin «Kadınlar Halk Fırkası» için başvurdu, izin verilmedi</li><li>1924: «Türk Kadınlar Birliği» derneği kuruldu</li><li>Haklar: 1930 belediye, 1933 muhtarlık, 1934 milletvekilliği</li></ul><b>İstenen</b><p>I, II, III’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>Parti başvurusu, sonra dernek → örgütlü çaba, I doğru.</li><li><b>II</b>Üç ayrı yılda üç düzenleme → aşamalı, II doğru.</li><li><b>III</b>Metin derneğin çalıştığını söyler, ama 1934 hakkının <b>onun isteği üzerine</b> verildiğini söylemez → III’e ulaşılamaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: I ve II.</td></tr><tr><td>B</td><td>Eksik: I de doğru.</td></tr><tr><td>C</td><td>III metinde yok.</td></tr><tr><td>D</td><td>III metinde yok.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Önce olan bir gelişmeyi sonrakinin nedeni sayma (“önce oldu, öyleyse nedeni odur” yanılgısı).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Atatürk döneminde milletvekili seçimleri <b>iki dereceli</b> yapılıyordu: Birinci seçmenler ikinci seçmenleri, ikinci seçmenler de milletvekillerini seçiyordu. Muhalefet partileri ise seçmenlerin milletvekilini doğrudan seçtiği <b>tek dereceli</b> sistemi savunuyordu.</p>\n<div class=\"box\">Varsayımsal bir seçim bölgesinde 90.000 seçmen vardır ve bu bölgeden 1 milletvekili seçilecektir.<br>• İki dereceli sistemde her 300 seçmen, 1 ikinci seçmen seçmektedir.<br>• Her iki sistemde de seçmenlerin tamamı oy kullanacak ve adayın seçilmesi için verilen oyların <b>yarısından fazlasını</b> alması gerekecektir.</div>\n<p>Buna göre milletvekili adayının seçilebilmesi için iki dereceli ve tek dereceli sistemde alması gereken <b>en az</b> oy sayısı sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?</p>",
+   "c": [
+    "150 – 45.000",
+    "151 – 45.001",
+    "300 – 90.000",
+    "151 – 90.000"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>90.000 seçmen, 1 milletvekili</li><li>İki dereceli: her 300 seçmen 1 ikinci seçmen seçer</li><li>Kazanmak için oyların «yarısından fazlası» gerekir</li></ul><b>İstenen</b><p>İki dereceli ve tek dereceli sistemde gereken en az oy.</p></div><ol class=\"sv-s\"><li><b>İkinci seçmen sayısını bul</b><span class=\"sv-m\">90.000 ÷ 300 = 300 ikinci seçmen</span></li><li><b>İki dereceli sistemde gereken oy</b>Milletvekilini 300 kişi seçer. Yarısı 150; «yarısından fazla» → en az 151.<span class=\"sv-m\">300 ÷ 2 = 150 → 150 + 1 = 151</span></li><li><b>Tek dereceli sistemde gereken oy</b>Milletvekilini 90.000 seçmen doğrudan seçer.<span class=\"sv-m\">90.000 ÷ 2 = 45.000 → 45.000 + 1 = 45.001</span></li><li><b>Demokrasi açısından yorumla</b>İki dereceli sistemde milletvekilini 300 kişi, tek dereceli sistemde 90.000 kişi belirler → tek dereceli sistem millî iradeyi daha doğrudan yansıtır.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 190\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><text x=\"130\" y=\"16\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#0e7490\">İki dereceli</text><text x=\"390\" y=\"16\" font-size=\"14\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#7c3aed\">Tek dereceli</text><rect x=\"40\" y=\"26\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#fff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"130\" y=\"48\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">90.000 seçmen</text><line x1=\"130\" y1=\"60\" x2=\"130\" y2=\"76\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polygon points=\"125,75 135,75 130,82\" fill=\"#1e293b\"/><text x=\"140\" y=\"76\" font-size=\"13\" fill=\"#dc2626\" font-weight=\"bold\">÷ 300</text><rect x=\"40\" y=\"82\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#fff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"130\" y=\"104\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">300 ikinci seçmen</text><line x1=\"130\" y1=\"116\" x2=\"130\" y2=\"134\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polygon points=\"125,133 135,133 130,140\" fill=\"#1e293b\"/><text x=\"140\" y=\"133\" font-size=\"13\" fill=\"#dc2626\" font-weight=\"bold\">en az 151</text><rect x=\"40\" y=\"140\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"130\" y=\"162\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1 milletvekili</text><rect x=\"300\" y=\"26\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#fff\" stroke=\"#7c3aed\" stroke-width=\"2\"/><text x=\"390\" y=\"48\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">90.000 seçmen</text><line x1=\"390\" y1=\"60\" x2=\"390\" y2=\"134\" stroke=\"#1e293b\" stroke-width=\"1.5\"/><polygon points=\"385,133 395,133 390,140\" fill=\"#1e293b\"/><text x=\"400\" y=\"105\" font-size=\"13\" fill=\"#dc2626\" font-weight=\"bold\">en az 45.001</text><rect x=\"300\" y=\"140\" width=\"180\" height=\"34\" rx=\"6\" fill=\"#fff\" stroke=\"#16a34a\" stroke-width=\"2\"/><text x=\"390\" y=\"162\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">1 milletvekili</text></svg><figcaption>Aynı bölgede iki sistem: milletvekilini belirleyen kişi sayısı 300’e karşı 90.000</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Tam yarı, «yarısından fazla» şartını karşılamaz.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: 151 – 45.001.</td></tr><tr><td>C</td><td>Bunlar toplam oy sayısıdır, gereken oy değil.</td></tr><tr><td>D</td><td>Tek dereceli için toplam oy yazılmış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Yarısından fazla” = yarısı + 1. Tam yarı yetmez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Serbest Cumhuriyet Fırkasının kapanış süreci anlatılmıştır.</p>\n<div class=\"box\">Serbest Cumhuriyet Fırkası kurulduğunda Mustafa Kemal Atatürk hem Cumhurbaşkanı hem de Cumhuriyet Halk Fırkasının genel başkanıydı. Atatürk, Cumhurbaşkanı olarak partiler karşısında tarafsız kalacağını açıklamıştı. Ancak yeni partinin hükûmeti eleştirmesi, bazı çevrelerce Atatürk'e karşı yürütülen bir mücadele gibi algılandı. 1930 sonbaharında yapılan belediye seçimleri sert tartışmalara yol açtı. Partinin çevresinde Cumhuriyet ve laiklik karşıtlarının toplandığı da görüldü. Bunun üzerine Ali Fethi Bey, Atatürk'e karşı siyasi mücadele yapamayacağını belirterek 17 Kasım 1930'da partisini feshetti.</div>\n<p>Bu metne göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Serbest Cumhuriyet Fırkası, Atatürk'ün emriyle kapatılmıştır.",
+    "Atatürk, Serbest Cumhuriyet Fırkası kurulurken Cumhuriyet Halk Fırkasını desteklediğini açıklamıştır.",
+    "Serbest Cumhuriyet Fırkası, belediye seçimlerini kazanarak yerel yönetimlerin çoğunu ele geçirmiştir.",
+    "Atatürk'ün aynı zamanda iktidar partisinin genel başkanı olması, muhalefetin hareket alanını daraltmıştır."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk hem Cumhurbaşkanı hem CHF genel başkanı</li><li>Tarafsız kalacağını açıkladı</li><li>SCF’nin eleştirileri «Atatürk’e karşı yürütülen bir mücadele gibi algılandı»</li><li>Fethi Bey «Atatürk’e karşı siyasi mücadele yapamayacağını» belirterek feshetti</li></ul><b>İstenen</b><p>Metne göre <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Neden-sonuç zincirini kur</b>Atatürk iktidar partisinin başında → hükûmete eleştiri = Atatürk’e muhalefet gibi algılandı → Fethi Bey Atatürk’le karşı karşıya gelmek istemedi → fesih.</li><li><b>Sonuç çıkar</b>Atatürk’ün bu çift konumu muhalefetin hareket alanını daraltmıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Partiyi kurucusu kendi kararıyla feshetti; emir yok.</td></tr><tr><td>B</td><td>Metin tersini söyler: Atatürk tarafsız kalacağını açıkladı.</td></tr><tr><td>C</td><td>Metin seçim sonuçlarını vermiyor; sadece tartışmalı geçtiğini söylüyor.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: çift konum muhalefeti zor durumda bıraktı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> SCF’nin kapanışında iki etken: rejim karşıtlarının partiye yönelmesi + Fethi Bey’in Atatürk’e karşı mücadele etmek istememesi.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki gruplardan hangisinde verilen üç gelişmenin <b>üçü de aynı yıl</b> içinde gerçekleşmiştir?</p>",
+   "c": [
+    "Halk Fırkasının kurulması – Cumhuriyet'in ilanı – Terakkiperver Cumhuriyet Fırkasının kurulması",
+    "Şeyh Sait İsyanı – Takrir-i Sükûn Kanunu'nun kabulü – İzmir Suikastı girişimi",
+    "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması – Serbest Cumhuriyet Fırkasının kurulması – Menemen Olayı",
+    "Erkân-ı Harbiye Vekâletinin kaldırılması – Görevdeki askerlerin milletvekili seçilmesini yasaklayan kanun – Terakkiperver Cumhuriyet Fırkasının kurulması"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Her şıkta üç gelişme</li></ul><b>İstenen</b><p>Üçü de <b>aynı yıl</b> gerçekleşen grup.</p></div><ol class=\"sv-s\"><li><b>Tarihleri yaz</b><span class=\"sv-m\">A: 1923 – 1923 – 1924</span><span class=\"sv-m\">B: 1925 – 1925 – 1926</span><span class=\"sv-m\">C: 1930 – 1930 – 1930</span><span class=\"sv-m\">D: 1924 – 1923 – 1924</span></li><li><b>Ayrıntı</b>C: Belediye Kanunu 3 Nisan, SCF 12 Ağustos, Menemen 23 Aralık 1930. D: askerlerin milletvekili seçilmesini yasaklayan kanun Aralık 1923’tür.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>TCF 1924’te kuruldu.</td></tr><tr><td>B</td><td>İzmir Suikastı 1926’dadır.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: üçü de 1930.</td></tr><tr><td>D</td><td>Asker kanunu Aralık 1923’tedir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D’de ordu-siyaset ayrımı 1924’te tamamlandığı için kanun da 1924’e aitmiş gibi görünür.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, Atatürk döneminde yaşanan bazı gelişmeleri hem <b>türüne</b> hem de <b>dönemine</b> göre aşağıdaki tabloya yerleştirmiştir.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 230\" width=\"560\" role=\"img\" aria-label=\"Gelişmelerin tür ve döneme göre sınıflandırıldığı tablo\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"230\" fill=\"#ffffff\"/>\n<rect x=\"10\" y=\"10\" width=\"110\" height=\"34\" fill=\"#f1f5f9\" stroke=\"#475569\"/>\n<rect x=\"120\" y=\"10\" width=\"215\" height=\"34\" fill=\"#dbeafe\" stroke=\"#475569\"/>\n<rect x=\"335\" y=\"10\" width=\"215\" height=\"34\" fill=\"#fee2e2\" stroke=\"#475569\"/>\n<text x=\"227\" y=\"32\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e3a8a\" text-anchor=\"middle\">Demokratikleşme adımı</text>\n<text x=\"442\" y=\"32\" font-size=\"12\" font-weight=\"bold\" fill=\"#991b1b\" text-anchor=\"middle\">Cumhuriyet'e yönelik tehdit</text>\n<rect x=\"10\" y=\"44\" width=\"110\" height=\"88\" fill=\"#f1f5f9\" stroke=\"#475569\"/>\n<text x=\"65\" y=\"85\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1923–1929</text>\n<rect x=\"10\" y=\"132\" width=\"110\" height=\"88\" fill=\"#f1f5f9\" stroke=\"#475569\"/>\n<text x=\"65\" y=\"173\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1930–1938</text>\n<rect x=\"120\" y=\"44\" width=\"215\" height=\"88\" fill=\"#ffffff\" stroke=\"#475569\"/>\n<rect x=\"335\" y=\"44\" width=\"215\" height=\"88\" fill=\"#ffffff\" stroke=\"#475569\"/>\n<rect x=\"120\" y=\"132\" width=\"215\" height=\"88\" fill=\"#ffffff\" stroke=\"#475569\"/>\n<rect x=\"335\" y=\"132\" width=\"215\" height=\"88\" fill=\"#ffffff\" stroke=\"#475569\"/>\n<g font-size=\"11\" fill=\"#1e293b\">\n<text x=\"130\" y=\"68\">• Terakkiperver Cumhuriyet</text><text x=\"140\" y=\"83\">Fırkasının kurulması</text>\n<text x=\"130\" y=\"103\">• Görevdeki askerlerin milletvekili</text><text x=\"140\" y=\"118\">seçilmesinin yasaklanması</text>\n<text x=\"345\" y=\"76\">• Şeyh Sait İsyanı</text>\n<text x=\"345\" y=\"104\">• İzmir Suikastı girişimi</text>\n<text x=\"130\" y=\"152\">• Serbest Cumhuriyet</text><text x=\"140\" y=\"166\">Fırkasının kurulması</text>\n<text x=\"130\" y=\"188\">• Kadınlara muhtarlık seçimlerinde</text><text x=\"140\" y=\"203\">seçme ve seçilme hakkı tanınması</text>\n<text x=\"345\" y=\"164\">• Menemen Olayı</text>\n<text x=\"345\" y=\"192\">• Takrir-i Sükûn Kanunu</text>\n</g>\n</svg></div>\n<p>Buna göre öğrencinin tabloya <b>yanlış</b> yerleştirdiği gelişme aşağıdakilerden hangisidir?</p>",
+   "c": [
+    "İzmir Suikastı girişimi",
+    "Takrir-i Sükûn Kanunu",
+    "Kadınlara muhtarlık seçimlerinde seçme ve seçilme hakkı tanınması",
+    "Görevdeki askerlerin milletvekili seçilmesinin yasaklanması"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo: tür (demokratikleşme / tehdit) × dönem (1923–1929 / 1930–1938)</li><li>Takrir-i Sükûn Kanunu: 1930–1938, tehdit sütununda</li></ul><b>İstenen</b><p><b>Yanlış</b> yerleştirilen gelişme.</p></div><ol class=\"sv-s\"><li><b>Her gelişmeyi iki ölçütle kontrol et</b>Hem <b>yılı</b> hem <b>türü</b> doğru olmalı.</li><li><b>Takrir-i Sükûn’u sına</b>Yıl: 4 Mart 1925 → 1923–1929 olmalı. Tür: tehdit değil, Şeyh Sait İsyanı’na karşı alınan bir <b>önlem</b>. İki açıdan da yanlış yerde.</li><li><b>Diğerleri</b>İzmir Suikastı (1926) tehdit; muhtarlık hakkı (1933) demokratikleşme; asker kanunu (1923) ordu-siyaset ayrımı → doğru yerde.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru yerde: 1926, tehdit.</td></tr><tr class=\"ok\"><td>B</td><td>Yanlış yerde: 1925’tir ve bir önlemdir.</td></tr><tr><td>C</td><td>Doğru yerde: 1933, demokratikleşme.</td></tr><tr><td>D</td><td>Doğru yerde: 1923, siyasetin sivilleşmesi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> D’deki “yasaklama” kelimesi onu antidemokratik gösterir; oysa amaç siyasetin sivil olmasıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Serbest Cumhuriyet Fırkasının kuruluş süreci anlatılmıştır.</p>\n<div class=\"box\">1929 Dünya Ekonomik Bunalımı Türkiye'de de hissedildi. Tarım ürünlerinin fiyatları düştü, halkın geçim sıkıntısı arttı. Atatürk, Meclis'te hükûmetin uygulamalarını eleştirecek ve denetleyecek bir muhalefet bulunmadığını düşünüyordu. Bu nedenle yakın arkadaşı Paris Büyükelçisi Ali Fethi Bey'den, laik Cumhuriyet esaslarına bağlı yeni bir parti kurmasını istedi. 12 Ağustos 1930'da kurulan Serbest Cumhuriyet Fırkası, vergilerin hafifletilmesini, ekonomide özel girişimin desteklenmesini ve yabancı sermayenin ülkeye çekilmesini savundu.</div>\n<p>Bu metinde aşağıdakilerden hangisine <b>değinilmemiştir</b>?</p>",
+   "c": [
+    "Seçme hakkının kullanılış biçimi",
+    "Liberal ekonomi anlayışı",
+    "Muhalefetin denetim işlevi",
+    "Laiklik"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1929 bunalımı; fiyatlar düştü, geçim sıkıntısı</li><li>«eleştirecek ve denetleyecek bir muhalefet» yok</li><li>«laik Cumhuriyet esaslarına bağlı» parti</li><li>Vergi indirimi, özel girişim, yabancı sermaye</li></ul><b>İstenen</b><p>Metinde <b>değinilmeyen</b> konu.</p></div><ol class=\"sv-s\"><li><b>Her kavramın metindeki karşılığını bul</b>Liberal ekonomi → «özel girişim, yabancı sermaye». Denetim → «eleştirecek ve denetleyecek». Laiklik → «laik Cumhuriyet esasları».</li><li><b>Karşılığı olmayanı bul</b>Seçim sistemi (tek/iki dereceli, seçme hakkı) metinde hiç geçmiyor. SCF’nin tek dereceli seçimi savunduğunu bilsen de metinde yok.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Değinilmemiş: seçim sisteminden hiç söz edilmez.</td></tr><tr><td>B</td><td>Değinilmiş: özel girişim, yabancı sermaye.</td></tr><tr><td>C</td><td>Değinilmiş: «eleştirecek ve denetleyecek».</td></tr><tr><td>D</td><td>Değinilmiş: «laik Cumhuriyet esasları».</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Kavramın adı (“liberal”) geçmese de içeriği geçiyorsa ona değinilmiştir. Ama bildiğin bilgiyi metne ekleme.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde Musul meselesinin çözüm süreci anlatılmıştır.</p>\n<div class=\"box\">Lozan Barış Konferansı'nda Musul meselesi çözülemedi ve İngiltere ile ikili görüşmelere bırakıldı. Görüşmelerden sonuç alınamayınca sorun Milletler Cemiyetine götürüldü. Bu sırada, Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı. Türk ordusunun önemli bir bölümü isyanı bastırmakla uğraştı. Sonunda 5 Haziran 1926'da İngiltere ve Irak ile imzalanan Ankara Antlaşması ile Musul, Irak'a bırakıldı. Türkiye'ye ise Musul petrollerinden 25 yıl süreyle %10 pay verilmesi kabul edildi.</div>\n<p>Bu metne göre,</p><p>I. Bir iç sorun, dış politikadaki bir meselenin çözüm sürecini olumsuz etkilemiştir.<br>II. Musul meselesi bir antlaşmayla sonuçlandırılmıştır.<br>III. Türkiye, Musul meselesinin sonunda hiçbir kazanç elde edememiştir.<br>IV. Şeyh Sait İsyanı, Milletler Cemiyetinin aldığı kararla bastırılmıştır.</p><p>yargılarından hangileri <b>söylenemez</b>?</p>",
+   "c": [
+    "I ve II",
+    "Yalnız III",
+    "II ve IV",
+    "III ve IV"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Lozan’da çözülemedi → İngiltere ile görüşme → Milletler Cemiyeti</li><li>Şubat 1925: Şeyh Sait; ordunun önemli bölümü isyanla uğraştı</li><li>5 Haziran 1926 Ankara Antlaşması: Musul Irak’a; Türkiye’ye 25 yıl %10 petrol payı</li></ul><b>İstenen</b><p><b>Söylenemeyecek</b> yargılar.</p></div><ol class=\"sv-s\"><li><b>I ve II</b>İç isyan → Musul aleyhte sonuçlandı → I söylenir. Ankara Antlaşması → II söylenir.</li><li><b>III</b>Türkiye’ye «25 yıl süreyle %10 pay» verildi → bir kazanç var; «hiçbir kazanç» söylenemez.</li><li><b>IV</b>Milletler Cemiyeti metinde yalnız Musul ile ilgili geçiyor; isyanı Türk ordusu bastırdı → IV söylenemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve II söylenebilir.</td></tr><tr><td>B</td><td>Eksik: IV de söylenemez.</td></tr><tr><td>C</td><td>II söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: III ve IV söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Aynı paragrafta geçen iki olayı (Milletler Cemiyeti ve isyan) birbirine bağlama.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda Cumhuriyet rejimine yönelik bazı tehditler (1–3) ile bunlara karşı alınan önlemler ya da yapılan uygulamalar (a–d) verilmiştir.</p>\n<table><tr><th>Tehdit</th><th>Önlem / uygulama</th></tr>\n<tr><td>1. Şeyh Sait İsyanı (1925)</td><td>a. Takrir-i Sükûn Kanunu çıkarıldı, İstiklal Mahkemeleri kuruldu.</td></tr>\n<tr><td>2. İzmir Suikastı girişimi (1926)</td><td>b. Bölgede sıkıyönetim ilan edildi, sorumlular Divan-ı Harpte yargılandı.</td></tr>\n<tr><td>3. Menemen Olayı (1930)</td><td>c. Sanıklar İstiklal Mahkemesinde yargılandı. Yargılama, suikastla bağlantılı görülen bazı siyasetçileri de kapsadı.</td></tr>\n<tr><td></td><td>d. Parti, kurucusu tarafından feshedildi.</td></tr></table>\n<p>Tehditlerin her biri, kendisine karşı alınan önlemle eşleştirilirse aşağıdakilerden hangisi elde edilir?</p>",
+   "c": [
+    "1-a, 2-b, 3-c",
+    "1-c, 2-a, 3-b",
+    "1-a, 2-c, 3-b",
+    "1-b, 2-c, 3-d"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1. Şeyh Sait (1925)</li><li>2. İzmir Suikastı (1926)</li><li>3. Menemen (1930)</li><li>a. Takrir-i Sükûn + İstiklal Mahkemeleri; b. sıkıyönetim + Divan-ı Harp; c. İstiklal Mahkemesi, siyasetçiler de yargılandı; d. parti feshedildi</li></ul><b>İstenen</b><p>Doğru eşleştirme.</p></div><ol class=\"sv-s\"><li><b>1’i eşleştir</b>Takrir-i Sükûn Şeyh Sait sırasında çıktı → 1-a.</li><li><b>2’yi eşleştir</b>Suikast sanıklarıyla birlikte eski TCF’li siyasetçiler de İstiklal Mahkemesinde yargılandı → 2-c.</li><li><b>3’ü eşleştir</b>Menemen’de sıkıyönetim ilan edildi, Divan-ı Harp kuruldu → 3-b. (d) bir tehdide karşı alınmış önlem değildir; açıkta kalır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Menemen İstiklal Mahkemesinde değil, Divan-ı Harpte yargılandı.</td></tr><tr><td>B</td><td>Takrir-i Sükûn İzmir Suikastı’na değil, Şeyh Sait’e bağlı.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: 1-a, 2-c, 3-b.</td></tr><tr><td>D</td><td>(d) bir önlem değildir; 1-b de yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Menemen = Divan-ı Harp; Şeyh Sait ve İzmir Suikastı = İstiklal Mahkemesi.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Atatürk, 1930'da yeni bir parti kurmak isteyen Ali Fethi Bey'e, partinin <b>laik Cumhuriyet esaslarına bağlı</b> olması gerektiğini bildirmiştir. Atatürk'e göre yeni partinin görevi, Meclis'te <b>hükûmetin uygulamalarını eleştirmek ve denetlemekti</b>.</p>\n<p>Aşağıda o yıllarda kurulmak istendiği <b>varsayılan</b> dört partinin programından birer bölüm verilmiştir (hayalî metinler).</p>\n<p>Hangi partinin programı Atatürk'ün bu beklentilerinin <b>tamamını</b> karşılamaktadır?</p>",
+   "c": [
+    "<b>P Partisi:</b> Cumhuriyet rejimini ve laikliği koruyacağız. Hükûmetin vergi politikasını Meclis'te eleştirecek, daha adil bir vergi düzeni önereceğiz.",
+    "<b>R Partisi:</b> Cumhuriyet'e bağlıyız. Ancak devlet işlerinin din kurallarına göre düzenlenmesini savunacak, Meclis'te hükûmeti denetleyeceğiz.",
+    "<b>S Partisi:</b> Cumhuriyet'i ve laikliği koruyacağız. Meclis'teki temel görevimiz, hükûmetin bütün kararlarını desteklemek olacaktır.",
+    "<b>T Partisi:</b> Laik bir düzen istiyoruz. Ancak devlet başkanlığının seçimle değil, bir aile içinde babadan oğula geçmesini savunacak, hükûmeti Meclis'te denetleyeceğiz."
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk’ün beklentileri: 1) Cumhuriyete bağlılık, 2) laiklik, 3) hükûmeti eleştirip denetleme</li></ul><b>İstenen</b><p>Üç beklentinin <b>tamamını</b> karşılayan program.</p></div><ol class=\"sv-s\"><li><b>Ölçütleri listele</b>Her program üç ölçütün hepsini karşılamalı; birini bile karşılamayan elenir.</li><li><b>Programları sına</b><span class=\"sv-m\">P: Cumhuriyet ✓ laiklik ✓ denetim ✓</span><span class=\"sv-m\">R: Cumhuriyet ✓ laiklik ✗ denetim ✓</span><span class=\"sv-m\">S: Cumhuriyet ✓ laiklik ✓ denetim ✗</span><span class=\"sv-m\">T: Cumhuriyet ✗ laiklik ✓ denetim ✓</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: üç ölçütü de karşılar.</td></tr><tr><td>B</td><td>Din kurallarına göre yönetim laikliğe aykırıdır.</td></tr><tr><td>C</td><td>Hükûmetin her kararını desteklemek denetim değildir.</td></tr><tr><td>D</td><td>Babadan oğula yönetim saltanattır, Cumhuriyete aykırıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Muhalefetin görevi onaylamak değil, denetlemektir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir okulda öğrenci meclisi başkanı önceki yıllarda yalnızca sınıf başkanlarının oylarıyla seçiliyordu. Bu yıl seçim kurallarında şu değişiklikler yapıldı:</p>\n<div class=\"box\">• Başkanı bütün öğrenciler doğrudan oylarıyla seçti.<br>• Önceki yıllarda yalnızca erkek öğrencilerin aday olabildiği bu seçimde, kız öğrencilere de aday olma hakkı tanındı.<br>• Seçilen başkanın çalışmalarını izleyip eleştirecek ve kendi önerilerini sunacak ikinci bir öğrenci grubunun kurulmasına izin verildi.</div>\n<p>Bu değişiklikler, Türkiye'de yaşanan demokratikleşme sürecindeki hangi gelişmelerle <b>sırasıyla</b> benzerlik gösterir?</p>",
+   "c": [
+    "Tek dereceli seçime geçilmesi – Ordunun siyasetten ayrılması – Muhalefet partisi kurulması",
+    "Kadınlara siyasi hak tanınması – Tek dereceli seçime geçilmesi – Muhalefet partisi kurulması",
+    "Tek dereceli seçime geçilmesi – Kadınlara siyasi hak tanınması – Takrir-i Sükûn Kanunu'nun çıkarılması",
+    "Tek dereceli seçime geçilmesi – Kadınlara siyasi hak tanınması – Muhalefet partisi kurulması"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1) Başkanı sınıf başkanları yerine «bütün öğrenciler doğrudan» seçti</li><li>2) Kız öğrencilere de aday olma hakkı</li><li>3) Başkanı «izleyip eleştirecek ve kendi önerilerini sunacak ikinci bir öğrenci grubu»</li></ul><b>İstenen</b><p>Değişikliklerin <b>sırasıyla</b> benzediği gelişmeler.</p></div><ol class=\"sv-s\"><li><b>1. değişiklik</b>Aracılı seçimden doğrudan seçime geçiş → iki dereceliden <b>tek dereceli seçime</b> geçiş (1946).</li><li><b>2. değişiklik</b>Kızlara aday olma hakkı → <b>kadınlara siyasi hak</b> tanınması (1930-1934).</li><li><b>3. değişiklik</b>Başkanı denetleyen, öneri sunan grup → <b>muhalefet partisi</b> kurulması.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Okul örneğinde ordu-siyaset ayrımına karşılık gelen bir değişiklik yok.</td></tr><tr><td>B</td><td>Kavramlar doğru ama sıra yanlış.</td></tr><tr><td>C</td><td>Takrir-i Sükûn denetim değil, olağanüstü önlemdir.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: tek derece – kadın hakları – muhalefet.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Sırasıyla” kelimesini atlayan öğrenci doğru kavramları içeren B’yi işaretler.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda iki partinin programlarıyla ilgili bilgiler verilmiştir.</p>\n<div class=\"box\"><b>Metin I:</b> Cumhuriyet Halk Fırkasının Mayıs 1931'de toplanan kongresinde kabul edilen programda partinin ilkeleri Cumhuriyetçilik, Milliyetçilik, Halkçılık, Devletçilik, Laiklik ve İnkılapçılık olarak belirlendi. Programa göre devlet, özel girişimin yetersiz kaldığı alanlarda ekonomik faaliyetlere bizzat katılacaktı.</div>\n<div class=\"box\"><b>Metin II:</b> 1930'da kurulan Serbest Cumhuriyet Fırkası laik Cumhuriyet esaslarına bağlı olduğunu açıkladı. Parti; ekonomide özel girişimin desteklenmesini, yabancı sermayenin ülkeye çekilmesini ve vergilerin hafifletilmesini savundu.</div>\n<p>Bu metinlere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>",
+   "c": [
+    "Cumhuriyet Halk Fırkası, kuruluşundan itibaren devletçi bir ekonomi politikası izlemiştir.",
+    "İki parti laiklik konusunda aynı görüşteyken ekonomide devletin rolü konusunda farklı yaklaşımlara sahiptir.",
+    "Serbest Cumhuriyet Fırkası, Cumhuriyet Halk Fırkasının altı ilkesini programına aynen almıştır.",
+    "Cumhuriyet Halk Fırkasının 1931 programı, Serbest Cumhuriyet Fırkasının kapanmasına yol açmıştır."
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metin I: CHF 1931 programı, altı ilke (laiklik ve devletçilik dahil); devlet ekonomiye «bizzat katılacaktı»</li><li>Metin II: SCF (1930) «laik Cumhuriyet»; özel girişim, yabancı sermaye, vergi indirimi</li></ul><b>İstenen</b><p>Metinlere göre <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Benzerliği bul</b>İki metinde de <b>laiklik</b> var.</li><li><b>Farkı bul</b>CHF: devlet ekonomiye katılır → <b>devletçilik</b>. SCF: özel girişim, yabancı sermaye → <b>liberalizm</b>.</li><li><b>Kronolojiyi kontrol et</b><span class=\"sv-m\">SCF feshi: Kasım 1930 &lt; CHF programı: Mayıs 1931</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metin yalnızca 1931 programını anlatır; “kuruluştan itibaren” denemez.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: laiklikte aynı, ekonomide farklı.</td></tr><tr><td>C</td><td>SCF’nin ekonomi görüşü devletçilikle bağdaşmaz; altı ilke Metin II’de yok.</td></tr><tr><td>D</td><td>1931 programı, 1930’daki kapanışın nedeni olamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> CHF devletçiliği 1931’de programına aldı; 1937’de altı ilke anayasaya girdi.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Şeyh Sait İsyanı sırasında, 4 Mart 1925'te kabul edilen Takrir-i Sükûn Kanunu, süresi uzatılarak uygulanmış ve 1929'da yürürlükten kalkmıştır.</p>\n<p>Buna göre aşağıdaki gelişmelerden hangisi Takrir-i Sükûn Kanunu <b>yürürlükteyken yaşanmamıştır</b>?</p>",
+   "c": [
+    "İzmir Suikastı girişiminin ortaya çıkarılması",
+    "Terakkiperver Cumhuriyet Fırkasının kapatılması",
+    "Kadınlara belediye seçimlerinde seçme ve seçilme hakkı tanınması",
+    "Türk Medeni Kanunu'nun kabul edilmesi"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Takrir-i Sükûn: 4 Mart 1925 – 1929 arası yürürlükte</li></ul><b>İstenen</b><p>Kanun yürürlükteyken <b>yaşanmamış</b> gelişme.</p></div><ol class=\"sv-s\"><li><b>Aralığı belirle</b><span class=\"sv-m\">Yürürlük: Mart 1925 → 1929</span></li><li><b>Her gelişmenin tarihini yerleştir</b><span class=\"sv-m\">A: Haziran 1926 → içinde</span><span class=\"sv-m\">B: 3 Haziran 1925 → içinde</span><span class=\"sv-m\">C: 3 Nisan 1930 → dışında</span><span class=\"sv-m\">D: 17 Şubat 1926 → içinde</span></li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 127\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">3/1925</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Kanun</text><text x=\"75\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">çıktı</text><circle cx=\"149\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"149\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">6/1925</text><text x=\"149\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">B: TCF</text><text x=\"149\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">kapatıldı</text><circle cx=\"223\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"223\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">2/1926</text><text x=\"223\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">D: Medeni</text><text x=\"223\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Kanun</text><circle cx=\"297\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"297\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">6/1926</text><text x=\"297\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">A: İzmir</text><text x=\"297\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Suikastı</text><circle cx=\"371\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"371\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">1929</text><text x=\"371\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Kanun</text><text x=\"371\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">kalktı</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#16a34a\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\" font-weight=\"bold\">4/1930</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">C: Belediye</text><text x=\"445\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Kanunu</text></svg><figcaption>Ay/yıl olarak: C, kanunun yürürlükten kalkmasından sonradır</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Yürürlükteyken: Haziran 1926.</td></tr><tr><td>B</td><td>Yürürlükteyken: kanuna dayanılarak kapatıldı.</td></tr><tr class=\"ok\"><td>C</td><td>Yaşanmamış: 1930, kanun kalktıktan sonra.</td></tr><tr><td>D</td><td>Yürürlükteyken: Şubat 1926.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Medeni Kanun’u kadın haklarıyla ilişkilendirip 1930’lara yerleştirme; 1926’dadır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Kadınlara tanınan siyasi haklarla ilgili aşağıdaki ifadelerden hangisi <b>yorum</b> niteliğindedir?</p>",
+   "c": [
+    "Kadınlar, 1930'da kabul edilen Belediye Kanunu ile belediye seçimlerine katılma hakkı kazanmıştır.",
+    "1933'te yapılan düzenlemeyle kadınlara muhtar ve ihtiyar heyeti seçimlerinde seçme ve seçilme hakkı tanınmıştır.",
+    "1935 seçimlerinde Türkiye Büyük Millet Meclisine 17 kadın milletvekili girmiştir.",
+    "Kadınlara siyasi hakların tanınması, Cumhuriyet döneminde atılan en önemli çağdaşlaşma adımıdır."
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dört ifade: 1930 Belediye Kanunu, 1933 muhtarlık, 1935’te 17 kadın milletvekili, «en önemli çağdaşlaşma adımıdır»</li></ul><b>İstenen</b><p><b>Yorum</b> niteliğindeki ifade.</p></div><ol class=\"sv-s\"><li><b>Bilgi-yorum ayrımı</b>Bilgi: tarih, düzenleme, sayı → belgeyle kanıtlanır. Yorum: kişiden kişiye değişen değerlendirme.</li><li><b>Değer yargısını bul</b>«En önemli» bir karşılaştırmalı değerlendirmedir; biri Harf İnkılabını ya da Medeni Kanun’u daha önemli bulabilir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bilgi: tarihli bir kanun.</td></tr><tr><td>B</td><td>Bilgi: tarihli bir düzenleme.</td></tr><tr><td>C</td><td>Bilgi: seçim sonuçlarıyla kanıtlanabilir.</td></tr><tr class=\"ok\"><td>D</td><td>Yorum: «en önemli adım» kişisel değerlendirmedir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Olumlu ve doğru görünen bir yargı da yorum olabilir; “en” ifadesine dikkat.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdaki metinde çok partili hayata kalıcı geçiş sürecinin başlangıcı anlatılmıştır.</p>\n<div class=\"box\">II. Dünya Savaşı'nın sona erdiği 1945 yılında, 7 Haziran'da Celâl Bayar, Adnan Menderes, Fuat Köprülü ve Refik Koraltan, Cumhuriyet Halk Partisi Meclis Grubuna demokratik hak ve özgürlüklerin genişletilmesini isteyen bir önerge verdi. Tarihe “Dörtlü Takrir” adıyla geçen bu önerge reddedildi. Önergeyi verenlerin bir kısmı partiden ihraç edildi, bir kısmı ise partiden ayrıldı. Bu dört isim 7 Ocak 1946'da Demokrat Partiyi kurdu.</div>\n<p>Bu metinde aşağıdaki sorulardan hangisinin cevabı <b>yoktur</b>?</p>",
+   "c": [
+    "Demokrat Parti, 1946 genel seçiminde kaç milletvekilliği kazanmıştır?",
+    "Dörtlü Takrir'de hangi istek dile getirilmiştir?",
+    "Dörtlü Takrir'i verenler hangi partiyi kurmuştur?",
+    "Dörtlü Takrir hangi partinin Meclis Grubuna verilmiştir?"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>7 Haziran 1945: Dörtlü Takrir CHP Meclis Grubuna verildi</li><li>İstek: «demokratik hak ve özgürlüklerin genişletilmesi»</li><li>Önerge reddedildi; bazıları ihraç edildi, bazıları ayrıldı</li><li>7 Ocak 1946: dört isim DP’yi kurdu</li></ul><b>İstenen</b><p>Cevabı metinde <b>olmayan</b> soru.</p></div><ol class=\"sv-s\"><li><b>Metnin sınırını belirle</b>Metin DP’nin <b>kuruluşuyla</b> bitiyor.</li><li><b>Soruları eşleştir</b>İstek ✓, kurulan parti ✓, grubun partisi (CHP) ✓. 1946 seçim sonuçları metinde hiç yok.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Cevabı yok: 1946 seçimine hiç değinilmez.</td></tr><tr><td>B</td><td>Cevabı var: hak ve özgürlüklerin genişletilmesi.</td></tr><tr><td>C</td><td>Cevabı var: Demokrat Parti.</td></tr><tr><td>D</td><td>Cevabı var: CHP Meclis Grubu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Cevabı yoktur” sorularında metnin nerede bittiğine bak; sonrasıyla ilgili soru genellikle cevaptır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda Cumhuriyetin ilk yıllarında yaşanan bazı gelişmeler verilmiştir.</p>\n<p>I. Erkân-ı Harbiye Vekâletinin kaldırılması<br>II. Görevdeki askerlerin milletvekili seçilmesini yasaklayan kanunun kabul edilmesi<br>III. Terakkiperver Cumhuriyet Fırkasının kurulması<br>IV. Halk Fırkasının adının Cumhuriyet Halk Fırkası olarak değiştirilmesi<br>V. 1924 Anayasası'nın kabul edilmesi</p>\n<p>Bu gelişmelerin oluş sırası aşağıdakilerin hangisinde <b>doğru</b> verilmiştir?</p>",
+   "c": [
+    "II – V – I – IV – III",
+    "I – II – V – III – IV",
+    "II – I – V – IV – III",
+    "V – II – I – III – IV"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Erkân-ı Harbiye’nin kaldırılması</li><li>II. Asker milletvekilliği yasağı</li><li>III. TCF’nin kuruluşu</li><li>IV. CHF ad değişikliği</li><li>V. 1924 Anayasası</li></ul><b>İstenen</b><p>Doğru oluş sırası.</p></div><ol class=\"sv-s\"><li><b>Tarihleri yaz</b><span class=\"sv-m\">II → 19 Aralık 1923</span><span class=\"sv-m\">I → 3 Mart 1924 (halifelikle aynı gün)</span><span class=\"sv-m\">V → 20 Nisan 1924</span><span class=\"sv-m\">IV → 10 Kasım 1924</span><span class=\"sv-m\">III → 17 Kasım 1924</span></li><li><b>Sırala</b>II – I – V – IV – III. CHF adını TCF’den bir hafta önce aldı.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 520 127\" width=\"520\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><line x1=\"30\" y1=\"70\" x2=\"490\" y2=\"70\" stroke=\"#1e293b\" stroke-width=\"2\"/><polygon points=\"490,64 500,70 490,76\" fill=\"#1e293b\"/><circle cx=\"75\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"75\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">Ara. 1923</text><text x=\"75\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">II. Asker</text><text x=\"75\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">yasağı</text><circle cx=\"168\" cy=\"70\" r=\"6\" fill=\"#0e7490\"/><text x=\"168\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0e7490\" font-weight=\"bold\">3 Mar.</text><text x=\"168\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">I. Erkân-ı</text><text x=\"168\" y=\"111\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">Harbiye</text><circle cx=\"260\" cy=\"70\" r=\"6\" fill=\"#7c3aed\"/><text x=\"260\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#7c3aed\" font-weight=\"bold\">20 Nis.</text><text x=\"260\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">V. Anayasa</text><circle cx=\"352\" cy=\"70\" r=\"6\" fill=\"#16a34a\"/><text x=\"352\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#16a34a\" font-weight=\"bold\">10 Kas.</text><text x=\"352\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">IV. CHF adı</text><circle cx=\"445\" cy=\"70\" r=\"6\" fill=\"#dc2626\"/><text x=\"445\" y=\"52\" font-size=\"13\" text-anchor=\"middle\" fill=\"#dc2626\" font-weight=\"bold\">17 Kas.</text><text x=\"445\" y=\"95\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1e293b\">III. TCF</text></svg><figcaption>Aralık 1923, ardından 1924’ün dört gelişmesi: II → I → V → IV → III</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>Anayasa, Erkân-ı Harbiye’den önce gösterilmiş.</td></tr><tr><td>B</td><td>Asker kanunu 1923’tür, ilk sırada olmalı; IV-III de ters.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: II – I – V – IV – III.</td></tr><tr><td>D</td><td>Anayasa başa alınmış; TCF ad değişikliğinden önce gösterilmiş.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Asker kanununu 1924’e ait sanma; Aralık 1923’tür.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda Atatürk döneminde yaşanan bazı gelişmeler verilmiştir.</p>\n<p>I. Şeyh Sait İsyanı<br>II. İzmir Suikastı girişimi<br>III. Menemen Olayı<br>IV. Serbest Cumhuriyet Fırkasının çevresinde Cumhuriyet ve laiklik karşıtlarının toplanması</p>\n<p>Bu gelişmelerden hangileri hem Cumhuriyet rejimini tehdit etmiş <b>hem de</b> bir muhalefet partisinin kapanmasında doğrudan etkili olmuştur?</p>",
+   "c": [
+    "I ve II",
+    "I ve IV",
+    "II ve III",
+    "I, III ve IV"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Şeyh Sait</li><li>II. İzmir Suikastı</li><li>III. Menemen</li><li>IV. Rejim karşıtlarının SCF çevresinde toplanması</li></ul><b>İstenen</b><p>Hem rejimi tehdit eden <b>hem de</b> bir partinin kapanmasında doğrudan etkili olanlar.</p></div><ol class=\"sv-s\"><li><b>İki ölçüt koy</b>1) Rejime tehdit mi? 2) Bir partinin kapanmasından <b>önce</b> olup onu doğrudan etkiledi mi?</li><li><b>Sına</b><span class=\"sv-m\">I: tehdit ✓, TCF kapatıldı (Haz. 1925) ✓</span><span class=\"sv-m\">II: tehdit ✓, TCF zaten bir yıl önce kapanmıştı ✗</span><span class=\"sv-m\">III: tehdit ✓, SCF feshinden sonra (Ara. 1930) ✗</span><span class=\"sv-m\">IV: tehdit ✓, SCF feshi (Kas. 1930) ✓</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II, hiçbir partinin kapanmasına yol açmadı.</td></tr><tr class=\"ok\"><td>B</td><td>Doğru: I ve IV.</td></tr><tr><td>C</td><td>II ve III kapanışlardan sonradır.</td></tr><tr><td>D</td><td>III, SCF’nin feshinden sonradır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> İzmir Suikastı’nda eski TCF’lilerin yargılanması onu TCF’nin kapanmasıyla ilişkilendirir; ama TCF 1925’te kapanmıştı.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><b>Yargı:</b> “Atatürk döneminde (1923–1938) demokrasi alanında hiçbir ilerleme sağlanamamıştır.”</div>\n<p>Aşağıdakilerden hangileri bu yargıyı <b>çürüten</b> kanıtlar olarak kullanılabilir?</p>\n<p>I. Kadınlara belediye, muhtarlık ve milletvekili seçimlerinde seçme ve seçilme hakkı tanınması<br>II. Görevdeki askerlerin milletvekili seçilmesinin yasaklanarak ordunun siyasetin dışında tutulması<br>III. Muhalefet partisi denemelerinin kısa sürede sona ermesi<br>IV. Cumhuriyet'in ilan edilmesi ve 1924 Anayasası'nda egemenliğin kayıtsız şartsız millete ait olduğunun belirtilmesi</p>",
+   "c": [
+    "I ve II",
+    "II ve III",
+    "I, II ve III",
+    "I, II ve IV"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yargı: «Atatürk döneminde demokrasi alanında hiçbir ilerleme sağlanamamıştır.»</li></ul><b>İstenen</b><p>Yargıyı <b>çürüten</b> kanıtlar.</p></div><ol class=\"sv-s\"><li><b>Çürütme ne demek?</b>Yargının tersini göstermek: 1923-1938 arasında demokraside <b>bir ilerleme</b> olduğunu kanıtlamak.</li><li><b>Öncülleri sına</b>I kadın hakları → ilerleme ✓. II ordu-siyaset ayrımı → ilerleme ✓. IV Cumhuriyet + millî egemenlik → ilerleme ✓. III denemelerin sona ermesi → ilerleme değil, yargıyı destekler gibi ✗.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: IV de çürütür.</td></tr><tr><td>B</td><td>III yargıyı çürütmez.</td></tr><tr><td>C</td><td>III yargıyı çürütmez.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: I, II ve IV.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Çürüten kanıt yargının tersini, destekleyen kanıt yargının kendisini gösterir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrencinin hazırladığı sunumdaki numaralanmış cümleler aşağıda verilmiştir.</p>\n<div class=\"box\">(I) Terakkiperver Cumhuriyet Fırkası, I. TBMM döneminde kurulmuştur. (II) Partinin kurucuları arasında Kâzım Karabekir, Ali Fuat Cebesoy ve Rauf Orbay gibi Millî Mücadele'nin önde gelen isimleri vardı. (III) Parti, ekonomide liberalizmi ve tek dereceli seçim sistemini savunuyordu. (IV) Şeyh Sait İsyanı'nın ardından Takrir-i Sükûn Kanunu'na dayanılarak Bakanlar Kurulu kararıyla kapatıldı.</div>\n<p>Bu cümlelerden hangisinde tarihî bir <b>yanlışlık</b> yapılmıştır?</p>",
+   "c": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: TCF «I. TBMM döneminde» kuruldu</li><li>II: kurucular Karabekir, Cebesoy, Orbay</li><li>III: liberalizm ve tek dereceli seçim</li><li>IV: Takrir-i Sükûn’a dayanılarak Bakanlar Kurulu kararıyla kapatıldı</li></ul><b>İstenen</b><p>Tarihî <b>yanlışlık</b> içeren cümle.</p></div><ol class=\"sv-s\"><li><b>Meclis dönemlerini hatırla</b>I. TBMM: 1920 – 1923 seçimleri. II. TBMM: Ağustos 1923’ten itibaren.</li><li><b>TCF’yi yerleştir</b>TCF 17 Kasım 1924’te kuruldu → <b>II. TBMM</b> dönemi. I. TBMM’deki muhalefet bir parti değil, İkinci Grup’tu.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yanlış: TCF II. TBMM döneminde kuruldu.</td></tr><tr><td>B</td><td>Doğru: kurucular doğru verilmiş.</td></tr><tr><td>C</td><td>Doğru: programla uyumlu.</td></tr><tr><td>D</td><td>Doğru: 3 Haziran 1925’te böyle kapatıldı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Uzun ve ayrıntılı cümle (IV) “yanlış burada olmalı” izlenimi verir; kısa cümleleri de dikkatle kontrol et.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir dede, torununa 1930 yılında yaşadıklarını aşağıdaki gibi anlatmıştır (canlandırma).</p>\n<div class=\"dialog\"><div><b>Dede:</b> 1930 sonbaharında belediye seçimleri yapıldı; annem o seçimde hayatında ilk kez oy kullandı. Serbest Fırka da bu seçimlere katılmıştı. Fethi Bey, aynı yılın Kasım ayında partisini kapattı. Ertesi yıl, yani 1931'de de Menemen'de Kubilay şehit edildi.</div></div>\n<p>Dedenin anlattıklarından hangisi tarihî gerçeklerle <b>çelişmektedir</b>?</p>",
+   "c": [
+    "Annesinin 1930 belediye seçimlerinde ilk kez oy kullanması",
+    "Menemen Olayı'nın 1931'de yaşanması",
+    "Serbest Cumhuriyet Fırkasının belediye seçimlerine katılması",
+    "Ali Fethi Bey'in partisini Kasım 1930'da kapatması"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1930 sonbaharı: belediye seçimleri, annesi ilk kez oy kullandı</li><li>SCF seçimlere katıldı</li><li>Fethi Bey Kasım’da partiyi kapattı</li><li>«Ertesi yıl, yani 1931’de» Menemen’de Kubilay şehit edildi</li></ul><b>İstenen</b><p>Tarihî gerçeklerle <b>çelişen</b> bilgi.</p></div><ol class=\"sv-s\"><li><b>Tarihleri karşılaştır</b><span class=\"sv-m\">Belediye Kanunu: 3 Nisan 1930 → seçim sonbahar 1930 ✓</span><span class=\"sv-m\">SCF feshi: 17 Kasım 1930 ✓</span><span class=\"sv-m\">Menemen: 23 Aralık 1930 → «1931» ✗</span></li><li><b>Sonuç</b>Menemen ertesi yıl değil, aynı yılın son günlerinde, fesihten bir ay sonra oldu.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Uyumlu: kadınlar 1930 belediye seçiminde ilk kez oy kullandı.</td></tr><tr class=\"ok\"><td>B</td><td>Çelişir: Menemen 23 Aralık 1930’dadır.</td></tr><tr><td>C</td><td>Uyumlu: SCF 1930 belediye seçimlerine katıldı.</td></tr><tr><td>D</td><td>Uyumlu: 17 Kasım 1930.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Yılın son günlerinde olan olaylar kolayca “ertesi yıl” sanılır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıda Atatürk döneminde kurulan iki muhalefet partisinin kuruluş ortamı anlatılmıştır.</p>\n<div class=\"box\"><b>Metin I:</b> Kâzım Karabekir, Ali Fuat Cebesoy ve Rauf Orbay gibi isimler 17 Kasım 1924'te Terakkiperver Cumhuriyet Fırkasını kurdu. Muhalefetin ortaya çıkmasından kısa süre sonra İsmet Paşa başbakanlıktan ayrıldı. Yerine daha ılımlı bir yönetim anlayışına sahip olduğu düşünülen Ali Fethi Bey hükûmeti kurdu. Şubat 1925'te Doğu Anadolu'da Şeyh Sait İsyanı çıktı.</div>\n<div class=\"box\"><b>Metin II:</b> 1929 Dünya Ekonomik Bunalımı'nın etkilerinin sürdüğü günlerde Atatürk'ün isteğiyle Ali Fethi Bey, 12 Ağustos 1930'da Serbest Cumhuriyet Fırkasını kurdu. Parti 17 Kasım 1930'da feshedildi. 23 Aralık 1930'da ise Menemen'de laik Cumhuriyet'e karşı bir ayaklanma çıktı.</div>\n<p>Bu metinlere göre,</p><p>I. İki dönemde de Ali Fethi Bey siyasi hayatta önemli bir görev üstlenmiştir.<br>II. İki partinin kurucuları da Atatürk'ün isteğiyle hareket etmiştir.<br>III. İki parti de faaliyetini sürdürürken Takrir-i Sükûn Kanunu yürürlükteydi.<br>IV. İki partinin kuruluşundan sonraki birkaç ay içinde rejime karşı ayaklanmalar çıkmıştır.</p><p>yargılarından hangilerine <b>ulaşılabilir</b>?</p>",
+   "c": [
+    "I ve II",
+    "II ve III",
+    "III ve IV",
+    "I ve IV"
+   ],
+   "a": "D",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metin I: TCF 17 Kasım 1924; İsmet Paşa ayrıldı, Ali Fethi Bey hükûmeti kurdu; Şubat 1925 Şeyh Sait</li><li>Metin II: Atatürk’ün isteğiyle Ali Fethi Bey SCF’yi kurdu (12 Ağustos 1930); 17 Kasım fesih; 23 Aralık Menemen</li></ul><b>İstenen</b><p>I-IV’ten hangilerine ulaşılır.</p></div><ol class=\"sv-s\"><li><b>I</b>1924’te hükûmet kurdu, 1930’da parti kurdu → I doğru.</li><li><b>II</b>Atatürk’ün isteği yalnız SCF için geçer; TCF’yi komutanlar kendileri kurdu → II yanlış.</li><li><b>III</b>Metinlerde Takrir-i Sükûn yok; ayrıca kanun 1929’da kalkmıştı, SCF döneminde yürürlükte değildi → III yanlış.</li><li><b>IV</b><span class=\"sv-m\">TCF Kas. 1924 → Şeyh Sait Şub. 1925 ≈ 3 ay</span><span class=\"sv-m\">SCF Ağu. 1930 → Menemen Ara. 1930 ≈ 4,5 ay</span>→ IV doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II yanlış.</td></tr><tr><td>B</td><td>II ve III yanlış.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru: I ve IV.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ali Fethi Bey iki dönemde de karşımıza çıkar: 1924-25’te başbakan, 1930’da SCF’nin kurucusu.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Atatürk dönemi 29 Ekim 1923'ten 10 Kasım 1938'e kadar olan dönemi kapsar.</p>\n<p>Buna göre aşağıdakilerden hangisi Atatürk döneminde <b>gerçekleşmemiştir</b>?</p>",
+   "c": [
+    "Bir muhalefet partisinin belediye seçimlerine katılması",
+    "Kadınların milletvekili seçimlerinde aday olması",
+    "Milletvekili seçimlerinin tek dereceli olarak yapılması",
+    "Görevdeki askerlerin milletvekili seçilmesinin yasaklanması"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atatürk dönemi: 29 Ekim 1923 – 10 Kasım 1938</li></ul><b>İstenen</b><p>Bu dönemde <b>gerçekleşmemiş</b> olan.</p></div><ol class=\"sv-s\"><li><b>Her gelişmenin tarihini bul</b><span class=\"sv-m\">A: SCF 1930 belediye seçimi → içinde</span><span class=\"sv-m\">B: kadın adaylar 1935 seçimi → içinde</span><span class=\"sv-m\">C: tek dereceli seçim 1946 → dışında</span><span class=\"sv-m\">D: asker yasağı 19 Aralık 1923 → içinde</span></li><li><b>Sonuç</b>Tek dereceli seçimi muhalefet savundu, ama ilk kez 1946’da uygulandı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Gerçekleşti: 1930.</td></tr><tr><td>B</td><td>Gerçekleşti: 1935.</td></tr><tr class=\"ok\"><td>C</td><td>Gerçekleşmedi: tek dereceli seçim 1946’dadır.</td></tr><tr><td>D</td><td>Gerçekleşti: Cumhuriyetin ilanından iki ay sonra.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Muhalefetin savunduğu bir görüşü “uygulandı” sanma.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\">9 Eylül 1923'te kurulan Halk Fırkası, 10 Kasım 1924'te adının başına “Cumhuriyet” kelimesini ekledi. Bundan bir hafta sonra kurulan ilk muhalefet partisi de adında “Cumhuriyet” kelimesini taşıyordu: Terakkiperver Cumhuriyet Fırkası. 1930'da kurulan ikinci muhalefet partisinin adı da Serbest Cumhuriyet Fırkasıydı.</div>\n<p>Bu durum aşağıdakilerden hangisinin <b>göstergesi</b> olarak yorumlanabilir?</p>",
+   "c": [
+    "Partilerin, rejimin temeli konusunda uzlaştıklarını vurgulamak istedikleri",
+    "Partilerin ekonomi politikalarının aynı olduğu",
+    "Muhalefet partilerinin hepsinin Atatürk'ün isteğiyle kurulduğu",
+    "Çok partili hayata Atatürk döneminde kalıcı olarak geçildiği"
+   ],
+   "a": "A",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Halk Fırkası → «Cumhuriyet» Halk Fırkası (10 Kasım 1924)</li><li>Bir hafta sonra Terakkiperver «Cumhuriyet» Fırkası</li><li>1930’da Serbest «Cumhuriyet» Fırkası</li></ul><b>İstenen</b><p>Bu durumun göstergesi.</p></div><ol class=\"sv-s\"><li><b>Ortak kelimeyi bul</b>İktidar ve iki muhalefet partisinin hepsinin adında «Cumhuriyet» var.</li><li><b>Yorumla</b>Partiler rejimin temelinde (Cumhuriyet) birleşiyor; ayrılıkları politikalarda. Hepsi Cumhuriyete bağlılığını öne çıkarmak istemiş.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru: rejimin temeli konusunda uzlaşma.</td></tr><tr><td>B</td><td>Ad ekonomi bilgisi vermez; ekonomi görüşleri farklıydı.</td></tr><tr><td>C</td><td>TCF Atatürk’ün isteğiyle kurulmadı.</td></tr><tr><td>D</td><td>İki deneme de kısa sürdü; kalıcı geçiş 1946.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Partilerin adı ortak kelimeyle “rejimde uzlaşma”yı gösterir; farkları programlarındadır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bir öğrenci, “Kadınların siyasi haklarını kazanma basamakları” başlıklı aşağıdaki şemayı hazırlamıştır.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 560 220\" width=\"560\" role=\"img\" aria-label=\"Kadın hakları basamak şeması\" font-family=\"Arial, Helvetica, sans-serif\">\n<rect x=\"0\" y=\"0\" width=\"560\" height=\"220\" fill=\"#ffffff\"/>\n<text x=\"280\" y=\"20\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kadınların siyasi haklarını kazanma basamakları</text>\n<rect x=\"10\" y=\"160\" width=\"130\" height=\"50\" fill=\"#e0e7ff\" stroke=\"#4338ca\"/>\n<rect x=\"145\" y=\"120\" width=\"130\" height=\"90\" fill=\"#dbeafe\" stroke=\"#1d4ed8\"/>\n<rect x=\"280\" y=\"80\" width=\"130\" height=\"130\" fill=\"#cffafe\" stroke=\"#0e7490\"/>\n<rect x=\"415\" y=\"40\" width=\"135\" height=\"170\" fill=\"#dcfce7\" stroke=\"#15803d\"/>\n<g font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">\n<text x=\"75\" y=\"176\" font-weight=\"bold\">1. basamak (1926)</text><text x=\"75\" y=\"191\">Türk Medeni</text><text x=\"75\" y=\"204\">Kanunu</text>\n<text x=\"210\" y=\"136\" font-weight=\"bold\">2. basamak (1930)</text><text x=\"210\" y=\"151\">Belediye seçimlerinde</text><text x=\"210\" y=\"164\">seçme ve seçilme</text>\n<text x=\"345\" y=\"96\" font-weight=\"bold\">3. basamak (1933)</text><text x=\"345\" y=\"111\">Muhtarlık seçimlerinde</text><text x=\"345\" y=\"124\">seçme ve seçilme</text>\n<text x=\"482\" y=\"56\" font-weight=\"bold\">4. basamak (1934)</text><text x=\"482\" y=\"71\">Milletvekili seçimlerinde</text><text x=\"482\" y=\"84\">seçme ve seçilme</text>\n</g>\n</svg></div>\n<p>Bu şemayla ilgili,</p><p>I. Basamaklar kronolojik sıraya göre dizilmiştir.<br>II. Basamaklardan biri siyasi değil, hukuki ve toplumsal alanda bir düzenlemedir.<br>III. Son basamaktaki hak, ilk kez 1935 seçimlerinde kullanılmıştır.</p><p>yargılarından hangileri <b>doğrudur</b>?</p>",
+   "c": [
+    "Yalnız I",
+    "I ve II",
+    "I, II ve III",
+    "II ve III"
+   ],
+   "a": "C",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Şema: 1926 Medeni Kanun → 1930 belediye → 1933 muhtarlık → 1934 milletvekilliği</li><li>Başlık: «siyasi haklarını kazanma basamakları»</li></ul><b>İstenen</b><p>I, II, III’ten hangileri doğru.</p></div><ol class=\"sv-s\"><li><b>I</b><span class=\"sv-m\">1926 &lt; 1930 &lt; 1933 &lt; 1934</span>→ kronolojik, I doğru.</li><li><b>II</b>Medeni Kanun nikâh, miras, boşanma gibi <b>hukuki ve toplumsal</b> haklar getirdi; seçme-seçilme vermedi → II doğru.</li><li><b>III</b>5 Aralık 1934’te tanınan hak ilk kez Şubat 1935 seçimlerinde kullanıldı (17 kadın milletvekili) → III doğru.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eksik: II ve III de doğru.</td></tr><tr><td>B</td><td>Eksik: III de doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Doğru: I, II ve III.</td></tr><tr><td>D</td><td>Eksik: I de doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Hak 1934’te tanındı diye ilk kullanımı da 1934 sanma; ilk seçim 1935’tedir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Aşağıdakilerin hangisinde verilen neden-sonuç ilişkisi <b>kronolojik olarak mümkündür</b>?</p>",
+   "c": [
+    "İzmir Suikastı girişimi → Terakkiperver Cumhuriyet Fırkasının kapatılması",
+    "Belediye Kanunu'nun kabul edilmesi → Kadınların, Serbest Cumhuriyet Fırkasının da katıldığı belediye seçimlerinde oy kullanması",
+    "Kadınlara milletvekili seçme ve seçilme hakkı tanınması → Kadınların 1930 belediye seçimlerine katılması",
+    "Takrir-i Sükûn Kanunu'nun yürürlükten kalkması → Şeyh Sait İsyanı'nın bastırılması"
+   ],
+   "a": "B",
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dört neden → sonuç ilişkisi</li></ul><b>İstenen</b><p>Kronolojik olarak <b>mümkün</b> olan ilişki.</p></div><ol class=\"sv-s\"><li><b>Kural</b>Neden, sonuçtan <b>önce</b> olmalı.</li><li><b>Tarihleri karşılaştır</b><span class=\"sv-m\">A: Haz. 1926 → Haz. 1925 ✗</span><span class=\"sv-m\">B: Nis. 1930 → sonbahar 1930 ✓</span><span class=\"sv-m\">C: 1934 → 1930 ✗</span><span class=\"sv-m\">D: 1929 → 1925 ✗</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>TCF, suikasttan bir yıl önce kapatılmıştı.</td></tr><tr class=\"ok\"><td>B</td><td>Mümkün: Belediye Kanunu (Nisan) → sonbahar 1930 seçimi.</td></tr><tr><td>C</td><td>1934 hakkı, 1930 seçiminin nedeni olamaz.</td></tr><tr><td>D</td><td>İsyan 1925’te bastırıldı; kanun 1929’da kalktı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Neden-sonuç sorularında önce tarihleri yan yana yaz; “sonuç” daha eskiyse ilişki kurulamaz.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
+  }
+ ]
 });
