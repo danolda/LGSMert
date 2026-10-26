@@ -116,7 +116,7 @@
   }
   function cfgCount(cfg) {
     var n = 0, sb = (cfg && cfg.sb) || {};
-    for (var k in sb) if (sb.hasOwnProperty(k)) n += +sb[k].n || 0;
+    for (var k in sb) if (sb.hasOwnProperty(k) && (!sb[k].tp || sb[k].tp.length)) n += +sb[k].n || 0;
     return n;
   }
 
@@ -167,7 +167,7 @@
   /* ---------- bekleme / ayar ---------- */
   function defaultCfg() {
     var sb = {};
-    LGS.subjects.forEach(function (s) { sb[s.id] = { n: s.id === 'mat' || s.id === 'tr' || s.id === 'fen' ? 3 : 0, t: DEF_T[s.id] || 60, tp: null }; });
+    LGS.subjects.forEach(function (s) { sb[s.id] = { n: 0, t: DEF_T[s.id] || 60, tp: [] }; });
     return { sb: sb };
   }
   function drawWait(d, prev) {
@@ -183,13 +183,14 @@
     }
     var body;
     if (host) {
-      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2><p class="small">Her ders için soru sayısını, soru başına süreyi ve konuları seç.</p>' +
+      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2><p class="small">Ders için konuları seç ya da “Tüm konular”ı aç; sonra soru sayısını ve süreyi ayarla. Konusu seçilmeyen ders soruya girmez.</p>' +
         LGS.subjects.map(function (s) {
           var o = c.sb[s.id];
-          return '<div class="vs-sb" data-sb="' + s.id + '" style="--c:' + s.color + '"><div class="vs-sb-h"><span class="vs-sb-n">' + s.icon + ' ' + esc(s.name) + '</span>' +
+          return '<div class="vs-sb' + (o.tp && !o.tp.length ? ' off' : '') + '" data-sb="' + s.id + '" style="--c:' + s.color + '"><div class="vs-sb-h"><span class="vs-sb-n">' + s.icon + ' ' + esc(s.name) + '</span>' +
             '<span class="vs-step"><button data-d="-1">−</button><b>' + o.n + '</b><button data-d="1">+</button></span></div>' +
             '<div class="vs-sb-r"><label>Süre <select data-t>' + TIMES.map(function (t) { return '<option value="' + t + '"' + (t === o.t ? ' selected' : '') + '>' + tLabel(t) + '</option>'; }).join('') + '</select></label>' +
-            '<button class="vs-tp-btn" data-tp>' + (o.tp ? o.tp.length + ' konu' : 'Tüm konular') + ' ▾</button></div>' +
+            '<button class="vs-all' + (allOn(o, s) ? ' on' : '') + '" data-all><span class="vs-sw"><i></i></span>Tüm konular</button>' +
+            '<button class="vs-tp-btn" data-tp>' + tpLabel(o, s) + ' ▾</button></div>' +
             '<div class="vs-tps"' + (openSb === s.id ? '' : ' hidden') + '>' + s.topics.map(function (t) {
               var on = !o.tp || o.tp.indexOf(t.id) >= 0;
               return '<button class="vs-tp' + (on ? ' on' : '') + '" data-tid="' + t.id + '">' + esc(t.title) + '</button>';
@@ -198,7 +199,7 @@
         '<div class="vs-total">Toplam <b id="vsTotal">' + total + '</b> soru</div>' +
         '<button class="btn primary vs-start" id="vsStart">BAŞLA</button><p class="small vs-start-msg" id="vsStartMsg"></p></div>';
     } else {
-      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2>' + (c ? '<ul class="vs-sum">' + LGS.subjects.filter(function (s) { return c.sb[s.id] && c.sb[s.id].n > 0; }).map(function (s) {
+      body = '<div class="card vs-setup"><h2>Düello Ayarları</h2>' + (c ? '<ul class="vs-sum">' + LGS.subjects.filter(function (s) { return c.sb[s.id] && c.sb[s.id].n > 0 && (!c.sb[s.id].tp || c.sb[s.id].tp.length); }).map(function (s) {
         var o = c.sb[s.id];
         return '<li style="--c:' + s.color + '"><span>' + s.icon + ' ' + esc(s.name) + '</span><b>' + o.n + ' soru</b><small>' + tLabel(o.t) + ' / soru' + (o.tp ? ' · ' + o.tp.length + ' konu' : '') + '</small></li>';
       }).join('') + '</ul><div class="vs-total">Toplam <b>' + total + '</b> soru</div>' : '') +
@@ -221,13 +222,22 @@
       if (navigator.vibrate) try { navigator.vibrate(15); } catch (er) {}
     });
   }
+  function allOn(o, s) { return !o.tp || o.tp.length === s.topics.length; }
+  function tpLabel(o, s) { var n = o.tp ? o.tp.length : s.topics.length; return n === s.topics.length ? 'Tüm konular' : n ? n + ' konu' : 'Konu seç'; }
+  function syncRow(row, o, s) {
+    row.querySelector('.vs-step b').textContent = o.n;
+    row.querySelector('[data-all]').classList.toggle('on', allOn(o, s));
+    row.querySelector('[data-tp]').textContent = tpLabel(o, s) + ' ▾';
+    [].forEach.call(row.querySelectorAll('[data-tid]'), function (b) { b.classList.toggle('on', !o.tp || o.tp.indexOf(b.getAttribute('data-tid')) >= 0); });
+    row.classList.toggle('off', !!o.tp && !o.tp.length);
+  }
   function updateStart(d) {
     var b = document.getElementById('vsStart'), m = document.getElementById('vsStartMsg'); if (!b) return;
     var total = cfgCount(cfg);
     var chOk = d.host && d.host.ch && d.guest && d.guest.ch;
     var ok = !!d.guest && total >= 2 && chOk;
     b.disabled = !ok;
-    m.textContent = !d.guest ? 'Başlamak için bir rakibin katılmasını bekle.' : !chOk ? 'İki taraf da dövüşçüsünü seçmeli.' : total < 2 ? 'En az 2 soru seç.' : total > 100 ? 'En fazla 100 soru.' : '';
+    m.textContent = !d.guest ? 'Başlamak için bir rakibin katılmasını bekle.' : !chOk ? 'İki taraf da dövüşçüsünü seçmeli.' : total < 2 ? 'Ders konularını seç ve en az 2 soru belirle.' : total > 100 ? 'En fazla 100 soru.' : '';
     document.getElementById('vsTotal').textContent = total;
   }
   function pushCfg() {
@@ -246,6 +256,12 @@
         row.querySelector('.vs-step b').textContent = o.n;
         pushCfg(); updateStart(cur); return;
       }
+      if (e.target.closest('[data-all]')) {
+        var on = !allOn(o, s);
+        o.tp = on ? s.topics.map(function (t) { return t.id; }) : [];
+        if (on && !o.n) o.n = 3;
+        syncRow(row, o, s); pushCfg(); updateStart(cur); return;
+      }
       if (e.target.closest('[data-tp]')) {
         var tps = row.querySelector('.vs-tps'); tps.hidden = !tps.hidden; openSb = tps.hidden ? null : sid; return;
       }
@@ -253,11 +269,10 @@
       if (tb) {
         var all = s.topics.map(function (t) { return t.id; });
         var sel = o.tp ? o.tp.slice() : all.slice(), tid = tb.getAttribute('data-tid'), k = sel.indexOf(tid);
-        if (k >= 0) { if (sel.length === 1) { A.toast('En az bir konu seçili olmalı.'); return; } sel.splice(k, 1); } else sel.push(tid);
-        o.tp = sel.length === all.length ? null : sel;
-        tb.classList.toggle('on', k < 0);
-        row.querySelector('[data-tp]').textContent = (o.tp ? o.tp.length + ' konu' : 'Tüm konular') + ' ▾';
-        pushCfg();
+        if (k >= 0) sel.splice(k, 1); else sel.push(tid);
+        o.tp = sel;
+        if (sel.length && !o.n) o.n = 3;
+        syncRow(row, o, s); pushCfg(); updateStart(cur);
       }
     });
     box.addEventListener('change', function (e) {
@@ -290,13 +305,13 @@
   function buildQuestions(c, cb) {
     var need = [];
     LGS.subjects.forEach(function (s) {
-      var o = c.sb[s.id]; if (!o || !o.n) return;
+      var o = c.sb[s.id]; if (!o || !o.n || (o.tp && !o.tp.length)) return;
       (o.tp || s.topics.map(function (t) { return t.id; })).forEach(function (tid) { need.push(tid); });
     });
     ensureTopics(need, function () {
       var out = [];
       LGS.subjects.forEach(function (s) {
-        var o = c.sb[s.id]; if (!o || !o.n) return;
+        var o = c.sb[s.id]; if (!o || !o.n || (o.tp && !o.tp.length)) return;
         var pool = [];
         (o.tp || s.topics.map(function (t) { return t.id; })).forEach(function (tid) {
           var t = LGS.topics[tid]; if (!t) return;
