@@ -433,9 +433,10 @@
     } else if (st.ph === 'pk') {
       setHp('h', st.hp.h); setHp('g', st.hp.g);
       var pk = st.pk, list = movesFor(pk.att, pk.tier), att = pk.att === role;
-      var title = pk.tier === 'f' ? 'FATALITY' : pk.tier === 'h' ? 'AĞIR DARBE' : 'İLK KAN';
-      var sub = pk.tier === 'f' ? (att ? 'Kazandın! Bitirici hareketini seç.' : esc(pl(pk.att).name) + ' bitirici hareketini seçiyor…')
-        : (att ? 'Rakibin canı %' + (pk.tier === 'h' ? 30 : 70) + '’in altında! Hareketini seç.' : esc(pl(pk.att).name) + ' hareketini seçiyor…');
+      var title = pk.tier === 'f' ? 'FATALITY' : pk.tier === 'h' ? 'AĞIR DARBE' : 'SALDIRI';
+      var sub = pk.left ? (att ? 'Rakip kaçtı, hükmen kazandın! Bitirici hareketini seç.' : 'Düellodan ayrıldın.')
+        : pk.tier === 'f' ? (att ? 'Kazandın! Bitirici hareketini seç.' : esc(pl(pk.att).name) + ' bitirici hareketini seçiyor…')
+        : (att ? (pk.tier === 'h' ? 'Rakibin canı %30’un altında! Ağır hareketini seç.' : 'Vurdun! Hareketini seç.') : esc(pl(pk.att).name) + ' hareketini seçiyor…');
       if (att && st.mv == null) {
         var o = ov('<div class="pk-box ' + pk.tier + '"><div class="pk-t">' + title + '</div><p>' + sub + '</p><div class="pk-list">' +
           list.map(function (m, k) { return '<button data-m="' + k + '"><span>' + m[1] + '</span><b>' + m[2] + '</b></button>'; }).join('') +
@@ -490,7 +491,6 @@
     }
     if (res.hit) {
       var att = res.hit === 'h' ? 'g' : 'h';
-      G.mini = { name: res.kind === 'crit' ? 'qcrit' : 'qjab', att: att, t0: now() + 500, tl: TL[res.kind === 'crit' ? 'qcrit' : 'qjab'](), fired: {} };
       setTimeout(function () { if (G) { setHp(res.hit, st.hp[res.hit]); var hb = document.querySelector('.hp.' + sideOf(res.hit)); if (hb) { hb.classList.remove('hit'); void hb.offsetWidth; hb.classList.add('hit'); } } }, 800);
       if (navigator.vibrate) setTimeout(function () { try { navigator.vibrate(res.kind === 'crit' ? [30, 20, 60] : 25); } catch (e) {} }, 800);
     }
@@ -522,7 +522,7 @@
         if (G.qi === st.i && !G.myPick) [].forEach.call(document.querySelectorAll('.vs-ch button'), function (x) { x.disabled = false; });
       }
     } else if (clock) { clock.textContent = st.ph === 'end' ? 'K.O.' : '–'; clock.classList.remove('warn'); }
-    if (st.ph === 'pk') { var pt = document.getElementById('pkT'); if (pt) pt.style.width = Math.max(0, Math.min(100, (st.u - n) / 100)) + '%'; }
+    if (st.ph === 'pk') { var pt = document.getElementById('pkT'); if (pt) pt.style.width = Math.max(0, Math.min(100, (st.u - n) / 90)) + '%'; }
     draw(n);
   }
 

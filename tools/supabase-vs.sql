@@ -78,6 +78,14 @@ begin
   return 'ok';
 end $$;
 
+-- terk: terk edenin canı sıfırlanır, kalan oyuncuya fatality seçimi açılır
+create or replace function public.vs_forfeit(x jsonb, p_loser text, n bigint) returns jsonb
+language sql immutable as $$
+  select (x || jsonb_build_object('left', p_loser, 'ph', 'pk', 'u', n + 9000,
+    'hp', jsonb_set(coalesce(x->'hp', '{"h":100,"g":100}'::jsonb), array[p_loser], '0'::jsonb),
+    'pk', jsonb_build_object('att', case when p_loser = 'h' then 'g' else 'h' end, 'def', p_loser, 'tier', 'f', 'left', true))) - 'mv' - 'seen';
+$$;
+
 -- durum makinesi: zamanı gelen geçişleri uygular
 create or replace function public.vs_adv(p_room uuid) returns void
 language plpgsql security definer set search_path = public as $$
@@ -88,11 +96,10 @@ begin
   select * into r from vs_rooms where id = p_room for update;
   if not found or r.status <> 'play' then return; end if;
   x := r.st; n := public.vs_now(); cnt := jsonb_array_length(r.qs);
-  -- terk eden kaybeder
-  if n - r.host_seen > 25000 or n - r.guest_seen > 25000 then
+  -- bağlantısı kopan kaybeder: canı sıfırlanır, kalan oyuncu fatality yapar
+  if not (x ? 'left') and (n - r.host_seen > 25000 or n - r.guest_seen > 25000) then
     win := case when r.host_seen >= r.guest_seen then 'h' else 'g' end;
-    x := x || jsonb_build_object('ph', 'end', 'win', win, 'why', 'left', 'at', n);
-    update vs_rooms set st = x, status = 'end' where id = p_room; return;
+    x := public.vs_forfeit(x, case when win = 'h' then 'g' else 'h' end, n);
   end if;
   loop
     k := k + 1; exit when k > 6;
@@ -115,17 +122,14 @@ begin
           'hok', hok, 'gok', gok, 'hit', hit, 'kind', kind, 'dmg', round(dmg, 2)));
     elsif ph = 'rv' then
       exit when n < (x->>'u')::bigint;
-      def := x->'res'->>'hit'; tier := null; fl := coalesce(x->'fl', '{}'::jsonb);
+      -- her isabette saldıran hareketini seçer
+      def := x->'res'->>'hit'; tier := null;
       if def is not null then
         att := case when def = 'h' then 'g' else 'h' end; hpd := (x->'hp'->>def)::numeric;
-        if hpd <= 0 then tier := 'f';
-        elsif hpd < 30 and not (fl ? (def || '30')) then tier := 'h'; fl := fl || jsonb_build_object(def || '30', true, def || '70', true);
-        elsif hpd < 70 and not (fl ? (def || '70')) then tier := 'l'; fl := fl || jsonb_build_object(def || '70', true);
-        end if;
+        tier := case when hpd <= 0 then 'f' when hpd < 30 then 'h' else 'l' end;
       end if;
-      x := x || jsonb_build_object('fl', fl);
       if tier is not null then
-        x := x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', att, 'def', def, 'tier', tier), 'u', n + 10000) - 'mv';
+        x := x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', att, 'def', def, 'tier', tier), 'u', n + 9000) - 'mv';
       elsif i + 1 >= cnt then
         ph := 'fin';
       else
@@ -141,9 +145,9 @@ begin
     elsif ph = 'an' then
       -- özel hareketi iki oyuncu da sonuna kadar izlemeden devam edilmez (en fazla 15 sn ek bekleme)
       exit when n < (x->>'u')::bigint;
-      exit when not (coalesce(x->'seen' ? 'h', false) and coalesce(x->'seen' ? 'g', false)) and n < (x->>'u')::bigint + 15000;
+      exit when not ((coalesce(x->'seen' ? 'h', false) or x->>'left' = 'h') and (coalesce(x->'seen' ? 'g', false) or x->>'left' = 'g')) and n < (x->>'u')::bigint + 15000;
       if x->'pk'->>'tier' = 'f' then
-        x := x || jsonb_build_object('ph', 'end', 'win', x->'pk'->>'att', 'why', 'ko', 'at', n);
+        x := x || jsonb_build_object('ph', 'end', 'win', x->'pk'->>'att', 'why', case when x ? 'left' then 'left' else 'ko' end, 'at', n);
       elsif i + 1 >= cnt then
         ph := 'fin';
       else
@@ -221,9 +225,8 @@ begin
   if r.status = 'wait' then
     if r.host_hash = h then update vs_rooms set status = 'closed' where id = p_room;
     elsif r.guest_hash = h then update vs_rooms set guest_hash = null, guest = null where id = p_room; end if;
-  elsif r.status = 'play' and (r.host_hash = h or r.guest_hash = h) then
-    update vs_rooms set status = 'end', st = st || jsonb_build_object('ph', 'end', 'why', 'left', 'at', n,
-      'win', case when r.host_hash = h then 'g' else 'h' end) where id = p_room;
+  elsif r.status = 'play' and (r.host_hash = h or r.guest_hash = h) and not (r.st ? 'left') then
+    update vs_rooms set st = public.vs_forfeit(r.st, case when r.host_hash = h then 'h' else 'g' end, n) where id = p_room;
   end if;
   return 'ok';
 end $$;
