@@ -313,12 +313,12 @@
      ========================================================= */
   var G = null;  // istemci oyun durumu
   function sideOf(r) { return r === 'h' ? 'L' : 'R'; }
-  function pl(r) { return r === 'h' ? cur.host : cur.guest; }
+  function pl(r) { var x = r === 'h' ? cur.host : cur.guest; if (G && G.dbgCh && x) { x = JSON.parse(JSON.stringify(x)); x.ch = G.dbgCh[r]; } return x; }
 
   function gameState(d) {
     var st = d.st || {};
     if (!G) {
-      G = { key: '', loaded: false, qi: -1, hpShown: { h: 100, g: 100 }, prevPh: null, revealed: -1, anim: null, mini: null, fx: [], parts: [], shake: 0, text: null, avatars: {} };
+      G = { key: '', loaded: false, qi: -1, hpShown: { h: 100, g: 100 }, prevPh: null, revealed: -1, anim: null, mini: null, fx: [], efx: [], parts: [], shake: 0, text: null, avatars: {} };
       document.body.classList.add('vs-on');
       buildGameDom(d);
       var tids = []; (d.qs || []).forEach(function (q) { if (tids.indexOf(q.tid) < 0) tids.push(q.tid); });
@@ -413,6 +413,7 @@
   };
 
   function phase(d, st, oldPh) {
+    if (G.dbg) return;
     var role = cur.role, opp = role === 'h' ? 'g' : 'h';
     if (st.ph === 'q') {
       if (G.anim && G.anim.done) G.anim = null;
@@ -431,7 +432,7 @@
       reveal(st);
     } else if (st.ph === 'pk') {
       setHp('h', st.hp.h); setHp('g', st.hp.g);
-      var pk = st.pk, list = MOVES[pk.tier], att = pk.att === role;
+      var pk = st.pk, list = movesFor(pk.att, pk.tier), att = pk.att === role;
       var title = pk.tier === 'f' ? 'FATALITY' : pk.tier === 'h' ? 'AĞIR DARBE' : 'İLK KAN';
       var sub = pk.tier === 'f' ? (att ? 'Kazandın! Bitirici hareketini seç.' : esc(pl(pk.att).name) + ' bitirici hareketini seçiyor…')
         : (att ? 'Rakibin canı %' + (pk.tier === 'h' ? 30 : 70) + '’in altında! Hareketini seç.' : esc(pl(pk.att).name) + ' hareketini seçiyor…');
@@ -449,8 +450,9 @@
       }
     } else if (st.ph === 'an') {
       ov(null);
-      var m = MOVES[st.pk.tier][st.mv];
-      G.anim = { name: m[0], label: m[1] + ' ' + m[2], att: st.pk.att, t0: st.as, as: st.as, tl: TL[m[0]](), fired: {}, tier: st.pk.tier, started: false };
+      var tl_ = buildTL(st.pk.att, st.pk.tier, st.mv);
+      G.anim = { name: tl_.name, label: tl_.label, att: st.pk.att, t0: st.as, as: st.as, tl: tl_, fired: {}, tier: st.pk.tier, started: false };
+      G.efx = [];
       G.hold = null;
       G.parts = []; G.text = null; G.quake = null;
       document.getElementById('vsStage').classList.add('big');
@@ -593,6 +595,359 @@
         fx: [[1150, 'hit', 'head', { big: 1 }], [1150, 'shake', 18], [1150, 'flash'], [1150, 'blood', { n: 46 }], [1150, 'quake'], [1300, 'dust'], [1300, 'blood', { n: 18, pool: 1 }], [2100, 'text', 'FATALITY']] };
     }
   };
+  /* ---------- karaktere özel hareketler: 6 karakter × 3 kademe × 3 hareket = 54 ---------- */
+  var AUR = { fatih: '#f5c542', yavuz: '#ff3b3b', alparslan: '#2dd4bf', metehan: '#60a5fa', barbaros: '#38bdf8', osman: '#4ade80' };
+  var CMV = {
+    fatih: {
+      l: [['punch', '👑', 'Sultan Kombosu', {}], ['shot', '💣', 'Şahi Topu', { p: 'ball', boom: '#ff8a1f' }], ['palm', '🔥', 'Kuşatma İtişi', { boom: '#ff6a00' }]],
+      h: [['shotH', '🧨', 'Büyük Top Atışı', { p: 'ball', boom: '#ff7a00' }], ['charge', '🏰', 'Surları Yıkış', {}], ['spin', '🌀', 'Fetih Döneri', { slash: '#f5c542' }]],
+      f: [['meteor', '☄️', 'Topkapı Bombardımanı', { p: 'ball', boom: '#ff7a00' }], ['pillar', '🔥', 'Rum Ateşi', { c: '#ff5a00' }], ['dragon', '🌙', 'Fetih Aparkatı', {}]]
+    },
+    yavuz: {
+      l: [['elbow', '💪', 'Yavuz Dirseği', {}], ['headbutt', '🗿', 'Kudret Kafası', {}], ['kick', '🦵', 'Mercidabık Tekmesi', { slash: '#ff3b3b' }]],
+      h: [['throwH', '🌪️', 'Ridaniye Fırlatışı', {}], ['barrage', '⚡', 'Kudret Saldırısı', {}], ['knee', '💥', 'Yavuz Dizi', {}]],
+      f: [['combo', '💀', 'Hükümdar Kombosu', {}], ['slash', '⚔️', 'Kılıç Hükmü', { c: '#ff3b3b' }], ['tornado', '🏜️', 'Çöl Kasırgası', { c: '#d9b26b' }]]
+    },
+    alparslan: {
+      l: [['shot', '🏹', 'Ok Atışı', { p: 'arrow', boom: '#2dd4bf' }], ['sweep', '🐎', 'Bozkır Çelmesi', {}], ['upper', '🦁', 'Arslan Pençesi', { claw: '#2dd4bf' }]],
+      h: [['shotH', '🎯', 'Ok Yağdırışı', { p: 'arrow', n: 5, boom: '#2dd4bf' }], ['dropkick', '🦅', 'Arslan Atılışı', {}], ['spin', '🐺', 'Bozkurt Döneri', { slash: '#2dd4bf' }]],
+      f: [['wolf', '🐺', 'Bozkurt Pençesi', { c: '#7de8dc' }], ['meteor', '🏹', 'Malazgirt Ok Yağmuru', { p: 'arrow', boom: '#2dd4bf' }], ['ghosts', '🐎', 'Selçuklu Akını', { c: '#2dd4bf' }]]
+    },
+    metehan: {
+      l: [['shot', '⚡', 'Gök Şimşeği', { p: 'bolt', boom: '#93c5fd' }], ['stomp', '🦶', 'Hun Ezmesi', {}], ['punch', '👊', 'Kağan Yumrukları', {}]],
+      h: [['quakeH', '🌩️', 'Tengri Gürlemesi', { sky: 1 }], ['slam', '🏋️', 'Kağan Kaldırışı', {}], ['charge', '🐎', 'Atlı Hücum', {}]],
+      f: [['meteor', '🌩️', 'Tengri’nin Gazabı', { p: 'bolt', boom: '#93c5fd' }], ['ghosts', '🏇', 'Hun Süvarileri', { c: '#93c5fd' }], ['quake', '🌋', 'Bozkır Depremi', {}]]
+    },
+    barbaros: {
+      l: [['shot', '🌊', 'Dalga Yumruğu', { p: 'water', boom: '#38bdf8' }], ['palm', '⚓', 'Çapa Savuruşu', { boom: '#38bdf8', chain: 1 }], ['kick', '🦵', 'Güverte Tekmesi', {}]],
+      h: [['shotH', '🌊', 'Fırtına Dalgası', { p: 'water', boom: '#38bdf8' }], ['throwH', '⛓️', 'Kancalı Fırlatma', { chain: 1 }], ['quakeH', '⚓', 'Gemi Çapası', { anchor: 1 }]],
+      f: [['tidal', '🌊', 'Preveze Dalgası', { c: '#38bdf8' }], ['meteor', '⚓', 'Dev Çapa Düşüşü', { p: 'anchor', n: 1, boom: '#38bdf8' }], ['tornado', '🌀', 'Akdeniz Girdabı', { c: '#38bdf8' }]]
+    },
+    osman: {
+      l: [['upper', '🌿', 'Söğüt Aparkatı', { claw: '#4ade80' }], ['elbow', '🛡️', 'Kayı Dirseği', {}], ['palm', '🍃', 'Ertuğrul İtişi', { boom: '#4ade80' }]],
+      h: [['barrage', '⚔️', 'Kayı Hücumu', {}], ['dropkick', '🦅', 'Uçan Gazi', {}], ['knee', '💥', 'Söğüt Dizi', {}]],
+      f: [['tree', '🌳', 'Rüyadaki Çınar', { c: '#4ade80' }], ['dragon', '☀️', 'Kuruluş Aparkatı', {}], ['combo', '💀', 'Gazi Kombosu', {}]]
+    }
+  };
+  function movesFor(att, tier) { var c = (pl(att) || {}).ch; return (CMV[c] || CMV.fatih)[tier]; }
+  function buildTL(att, tier, mv) {
+    var c = (pl(att) || {}).ch || 'fatih', m = (CMV[c] || CMV.fatih)[tier][mv] || CMV.fatih[tier][0], o = m[3] || {};
+    var col = o.c || AUR[c] || '#f5c542';
+    var tl = TPL[m[0]] ? TPL[m[0]](o, col) : TL[m[0]]();
+    tl.fx = tl.fx.slice();
+    tl.fx.unshift([0, 'efx', 'aura', { c: AUR[c], d: Math.min(tl.d - 400, tier === 'f' ? 2600 : 1500) }]);
+    if (o.slash) tl.fx.push([tl.fx.filter(function (e) { return e[1] === 'hit'; }).map(function (e) { return e[0]; })[0] || 500, 'efx', 'slash', { c: o.slash, d: 320 }]);
+    tl.name = m[0]; tl.label = m[1] + ' ' + m[2];
+    return tl;
+  }
+  var REC = function (D, t, x) { D.push([t, M(LIE, { x: x })], [t + 450, M(UP, { x: x * 0.5 })], [t + 850, { x: 0 }]); };
+  var TPL = {
+    shot: function (o) {
+      return { d: 2600, A: [[0, {}], [320, { tor: -10, ua1: 150, la1: 40, ua2: 40 }], [520, { x: 10, tor: 18, ua1: 92, la1: 0 }], [900, { x: 10, tor: 8 }], [1800, { x: 0 }]],
+        D: [[0, {}], [880, {}], [940, { x: -34, tor: -30, nk: -22, ua1: -10, ua2: -20 }], [1300, { x: -52, tor: -10 }], [2450, { x: 0 }]],
+        fx: [[520, 'efx', 'proj', { p: o.p, d: 380, n: o.n || 1 }], [900, 'efx', 'boom', { c: o.boom, d: 450 }], [900, 'hit', 'body', { big: 1 }], [900, 'shake', 6], [900, 'blood', { n: 5 }]] };
+    },
+    elbow: function () {
+      return { d: 2500, A: [[0, {}], [260, { x: 90, tor: 22, ua1: 96, la1: 165 }], [340, { x: 96, tor: 26, ua1: 100, la1: 165 }], [520, { x: 92, tor: 5 }], [640, { x: 94, tor: -14, ua2: 95, la2: 10, ua1: 30 }], [760, { x: 96, tor: -20, ua2: 100, la2: 0 }], [1000, { x: 92 }], [1800, { x: 0 }]],
+        D: [[0, {}], [340, {}], [390, { tor: -26, nk: -24, x: -10 }], [600, { tor: -6, x: -10 }], [760, {}], [810, { tor: -34, nk: -30, x: -40, ua1: 10 }], [1300, { x: -36, tor: -8 }], [2350, { x: 0 }]],
+        fx: [[340, 'hit', 'head'], [340, 'blood', { n: 3 }], [760, 'hit', 'head', { big: 1 }], [760, 'blood', { n: 6 }], [760, 'shake', 6]] };
+    },
+    headbutt: function () {
+      return { d: 2600, A: [[0, {}], [300, { x: 98, ua1: 75, la1: 20, ua2: 80, la2: 20 }], [520, { x: 98, tor: -16, nk: -28, ua1: 75, la1: 20, ua2: 80, la2: 20 }], [640, { x: 100, tor: 26, nk: 30, ua1: 75, la1: 20, ua2: 80, la2: 20 }], [820, { x: 98, tor: -16, nk: -28, ua1: 75, la1: 20, ua2: 80, la2: 20 }], [940, { x: 100, tor: 28, nk: 32, ua1: 75, la1: 20, ua2: 80, la2: 20 }], [1150, { x: 96 }], [1900, { x: 0 }]],
+        D: [[0, {}], [640, {}], [680, { tor: -30, nk: -34 }], [880, { tor: -5 }], [940, {}], [990, { tor: -38, nk: -36, x: -46, ua1: 20, ua2: -10 }], [1400, { x: -40, tor: -10 }], [2450, { x: 0 }]],
+        fx: [[640, 'hit', 'head'], [640, 'blood', { n: 5 }], [940, 'hit', 'head', { big: 1 }], [940, 'blood', { n: 8 }], [940, 'shake', 7]] };
+    },
+    palm: function (o) {
+      var fx = [[480, 'hit', 'body', { big: 1 }], [480, 'efx', 'boom', { c: o.boom, d: 420 }], [480, 'shake', 7], [480, 'blood', { n: 3 }], [700, 'dust']];
+      if (o.chain) fx.unshift([200, 'efx', 'chain', { d: 900 }]);
+      return { d: 2600, A: [[0, {}], [300, { x: 70, tor: -6, ua1: 60, la1: 120, ua2: 60, la2: 120 }], [480, { x: 90, tor: 20, ua1: 90, la1: 0, ua2: 92, la2: 0 }], [900, { x: 88, tor: 12 }], [1800, { x: 0 }]],
+        D: [[0, {}], [480, {}], [540, { x: -60, tor: -22, y: -8, ua1: -20, ua2: -30 }], [950, { x: -110, tor: -6 }], [1500, { x: -100 }], [2450, { x: 0 }]], fx: fx };
+    },
+    upper: function (o) {
+      return { d: 2600, A: [[0, {}], [280, { x: 88, y: 12, tor: 22, ua1: 30, la1: 120 }], [440, { x: 92, y: -10, tor: -8, ua1: 170, la1: 10 }], [800, { x: 90, tor: 4 }], [1800, { x: 0 }]],
+        D: [[0, {}], [440, {}], [480, { y: -34, rot: 24, x: -22, nk: -30, ua1: 150, ua2: 130 }], [780, { x: -40, y: 0, rot: 8 }], [1200, { x: -40 }], [2450, { x: 0 }]],
+        fx: [[440, 'hit', 'head', { big: 1 }], [440, 'efx', 'claw', { c: o.claw, d: 420 }], [440, 'blood', { n: 7, up: 1 }], [440, 'shake', 6]] };
+    },
+    stomp: function () {
+      return { d: 2600, A: [[0, {}], [300, { x: 60, y: -54, th1: 90, sh1: -90, th2: 20, sh2: -80 }], [520, { x: 86, y: -8, th1: 30, sh1: -10, th2: -30, sh2: -20, ua1: 120, ua2: 120 }], [800, { x: 84, y: 0 }], [1800, { x: 0 }]],
+        D: [[0, {}], [520, {}], [560, { y: 18, tor: 40, nk: 34, th1: 60, sh1: -100, th2: -50, sh2: -70 }], [1300, { y: 10, tor: 20, x: -6 }], [2450, { x: 0 }]],
+        fx: [[520, 'hit', 'head', { big: 1 }], [520, 'shake', 9], [520, 'dust'], [520, 'efx', 'shock', { c: '#cbd5e1', d: 500 }], [520, 'blood', { n: 6 }]] };
+    },
+    charge: function () {
+      var D = [[0, {}], [650, {}], [700, { x: -30, tor: -30, y: -10, ua1: 150, ua2: 140 }], [1000, { x: -110, y: -16, rot: 40 }]];
+      REC(D, 1150, -120); D.push([3300, { x: 0 }]);
+      return { d: 3300, A: [[0, {}], [300, { x: 20, tor: 32, ua1: -20, la1: 60 }], [650, { x: 92, tor: 40, y: 4, ua1: -20 }], [1000, { x: 170, tor: 40, y: 4 }], [1150, { x: 175, tor: 8 }], [2100, { x: 0 }]],
+        D: D, fx: [[650, 'hit', 'body', { big: 1 }], [650, 'shake', 9], [650, 'blood', { n: 6 }], [1150, 'shake', 8], [1150, 'dust'], [1150, 'blood', { n: 6, pool: 1 }]] };
+    },
+    barrage: function () {
+      var A_ = [[0, {}], [260, { x: 92, tor: 12 }]], D_ = [[0, {}], [330, {}]], fx = [];
+      for (var k = 0; k < 8; k++) {
+        var t = 340 + k * 110, f = k % 2 === 0;
+        A_.push([t, f ? { x: 95, tor: 22, ua1: 92 + (k % 3) * 10, la1: 0 } : { x: 95, tor: 24, ua2: 92 + (k % 3) * 8, la2: 0, ua1: 30 }], [t + 55, { x: 93, tor: 12 }]);
+        D_.push([t + 20, { tor: -16 - k * 2, nk: -14, x: -2 - k * 2 }], [t + 80, { tor: -6, x: -2 - k * 2 }]);
+        fx.push([t, 'hit', k % 2 ? 'body' : 'head'], [t, 'blood', { n: 2 }]);
+      }
+      A_.push([1300, { x: 90, th1: 40, sh1: -80 }], [1420, { x: 94, tor: -20, th1: 100, sh1: 0 }], [1650, { x: 90 }], [2300, { x: 0 }]);
+      D_.push([1420, { x: -18 }], [1470, { x: -50, y: -24, rot: 40 }]); REC(D_, 1750, -90); D_.push([3300, { x: 0 }]);
+      fx.push([1420, 'hit', 'body', { big: 1 }], [1420, 'shake', 10], [1420, 'flash'], [1420, 'blood', { n: 10 }], [1750, 'dust']);
+      return { d: 3300, A: A_, D: D_, fx: fx };
+    },
+    throwH: function (o) {
+      var D = [[0, {}], [320, {}], [400, { x: 6, tor: 10, ua1: 120 }], [700, { x: 60, y: -60, rot: -120, ua1: 160, ua2: 150 }], [900, { x: 30, y: -90, rot: -220 }], [1150, { x: -90, y: -30, rot: -300 }]];
+      REC(D, 1300, -110); D.push([3300, { x: 0 }]);
+      var fx = [[700, 'shake', 4], [1300, 'shake', 12], [1300, 'hit', 'body', { big: 1 }], [1300, 'dust'], [1300, 'blood', { n: 12, pool: 1 }], [1300, 'efx', 'shock', { c: '#e5e7eb', d: 500 }]];
+      if (o.chain) fx.unshift([80, 'efx', 'chain', { d: 1100 }]);
+      return { d: 3300, A: [[0, {}], [320, { x: 98, ua1: 85, la1: 10, ua2: 85, la2: 10 }], [700, { x: 98, sx: -1, tor: -20, ua1: 150, la1: 0, ua2: 150, la2: 0 }], [1000, { x: 98, sx: 1, tor: 30, ua1: 100, ua2: 110 }], [1300, { x: 96, tor: 10 }], [2300, { x: 0 }]],
+        D: D, fx: fx };
+    },
+    dropkick: function () {
+      var D = [[0, {}], [560, {}], [600, { x: -40, tor: -40, nk: -30, y: -20, rot: 30 }], [900, { x: -90, y: -6, rot: 70 }]];
+      REC(D, 1000, -100); D.push([3300, { x: 0 }]);
+      return { d: 3300, A: [[0, {}], [300, { x: 30, y: -24, th1: 60, sh1: -90 }], [560, { x: 80, y: -42, rot: 72, th1: 100, sh1: 0, th2: 92, sh2: 0, ua1: 150, ua2: 160 }], [820, { x: 70, y: 32, rot: 90 }], [1300, { x: 70, y: 14, rot: 30 }], [1700, { x: 60 }], [2400, { x: 0 }]],
+        D: D, fx: [[560, 'hit', 'head', { big: 1 }], [560, 'shake', 10], [560, 'blood', { n: 12 }], [560, 'flash'], [820, 'dust'], [1000, 'dust'], [1000, 'shake', 5]] };
+    },
+    shotH: function (o) {
+      var D = [[0, {}], [1050, {}], [1100, { x: -40, y: -40, rot: 50, nk: -30, ua1: 160, ua2: 150 }], [1400, { x: -100, y: -10, rot: 80 }]];
+      REC(D, 1500, -110); D.push([3300, { x: 0 }]);
+      return { d: 3300, A: [[0, {}], [300, { tor: -14, ua1: 160, la1: 30, ua2: 150, la2: 30, y: 6 }], [650, { tor: -18, ua1: 165, la1: 20, ua2: 160, la2: 20, y: 8 }], [750, { x: 12, tor: 22, ua1: 92, la1: 0, ua2: 92, la2: 0 }], [1100, { x: 12, tor: 14 }], [2200, { x: 0 }]],
+        D: D, fx: [[300, 'efx', 'charge', { c: o.boom, d: 450 }], [750, 'efx', 'proj', { p: o.p, d: 330, big: 1, n: o.n || 1 }], [1080, 'efx', 'boom', { c: o.boom, d: 650, big: 1 }], [1080, 'hit', 'body', { big: 1 }], [1080, 'shake', 13], [1080, 'flash'], [1080, 'blood', { n: 12 }], [1500, 'dust']] };
+    },
+    quakeH: function (o) {
+      var D = [[0, {}], [1000, {}], [1050, { x: -20, y: -50, rot: 40, ua1: 160, ua2: 150 }], [1300, { x: -40, y: -10, rot: 75 }]];
+      REC(D, 1380, -50); D.push([3300, { x: 0 }]);
+      var fx = [[900, 'shake', 14], [900, 'dust'], [900, 'quake'], [900, 'efx', 'shock', { c: o.sky ? '#93c5fd' : '#e5e7eb', d: 600, big: 1 }], [1050, 'hit', 'body', { big: 1 }], [1050, 'blood', { n: 10 }], [1380, 'dust']];
+      if (o.sky) fx.push([850, 'efx', 'sky', { d: 400, at: 'a' }], [1050, 'efx', 'sky', { d: 350 }], [1050, 'flash']);
+      if (o.anchor) fx.push([500, 'efx', 'rain', { p: 'anchor', n: 1, d: 450, at: 'mid' }]);
+      return { d: 3300, A: [[0, {}], [300, { y: 22, tor: 22, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [650, { x: 40, y: -90, ua1: 165, la1: 0, ua2: 165, la2: 0, th1: 60, sh1: -120 }], [900, { x: 50, y: 22, tor: 50, ua1: 100, la1: 0, ua2: 100, la2: 0, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [1400, { x: 50, y: 0 }], [2300, { x: 0 }]],
+        D: D, fx: fx };
+    },
+    meteor: function (o) {
+      var D = [[0, {}], [900, { tor: -20, nk: -22 }], [1150, { tor: 6 }], [1400, { tor: -26, x: -10, nk: -24 }], [1650, { tor: 4, x: -10 }], [1900, { y: 12, tor: 32, x: -14 }], [2150, M(LIE, { x: -24 })], [5200, M(LIE, { x: -24 })]];
+      var n = o.n || 6, fx = [[500, 'efx', 'rain', { p: o.p, n: n, d: 1600 }]];
+      for (var k = 0; k < n; k++) { var t = 500 + Math.round((k + 1) * 1600 / (n + 0.6)); fx.push([t, 'efx', 'boom', { c: o.boom, d: 420, big: n === 1 }], [t, 'shake', n === 1 ? 16 : 7], [t, 'blood', { n: n === 1 ? 30 : 6 }]); }
+      if (n === 1) D = [[0, {}], [1300, { nk: -40, ua1: 160, ua2: 160 }], [1500, { y: 30, tor: 50, th1: 80, sh1: -150, th2: -60, sh2: -80 }], [1700, M(LIE, { x: -8 })], [5200, M(LIE, { x: -8 })]];
+      fx.push([2150, 'blood', { n: 20, pool: 1 }], [2150, 'dust'], [2500, 'text', 'FATALITY']);
+      return { d: 5200, A: [[0, {}], [300, { tor: -8, nk: -16, ua1: 168, la1: 0, ua2: 170, la2: 0 }], [2200, { tor: -8, nk: -16, ua1: 168, la1: 0, ua2: 170, la2: 0 }], [2700, M(WIN, {})], [5200, M(WIN, {})]], D: D, fx: fx };
+    },
+    ghosts: function (o) {
+      return { d: 5200, A: [[0, {}], [300, { tor: -6, nk: -22, ua1: 172, la1: 0 }], [1800, { tor: -6, nk: -22, ua1: 172, la1: 0 }], [2400, M(WIN, {})], [5200, M(WIN, {})]],
+        D: [[0, {}], [1050, { tor: -10, nk: -20 }], [1120, { x: -30, y: -40, rot: 60 }], [1500, { x: -120, y: -70, rot: 210 }], [1900, M(LIE, { x: -150, rot: 450 })], [5200, M(LIE, { x: -150, rot: 450 })]],
+        fx: [[400, 'efx', 'ghosts', { c: o.c, d: 1800 }], [1120, 'hit', 'body', { big: 1 }], [1120, 'shake', 12], [1120, 'blood', { n: 22 }], [1300, 'blood', { n: 10 }], [1900, 'shake', 10], [1900, 'dust'], [1900, 'blood', { n: 18, pool: 1 }], [2400, 'text', 'FATALITY']] };
+    },
+    wolf: function (o) {
+      return { d: 5200, A: [[0, {}], [300, { nk: -34, tor: -12, ua1: 120, la1: 40, ua2: 100, la2: 40 }], [1100, { nk: -34, tor: -12, ua1: 120, ua2: 100 }], [1500, { x: 20, tor: 10 }], [2400, M(WIN, { x: 20 })], [5200, M(WIN, { x: 20 })]],
+        D: [[0, {}], [1250, {}], [1300, { x: -20, tor: -34, nk: -30, ua1: 150, ua2: 140 }], [1480, M(LIE, { x: -44 })], [1700, M(LIE, { x: -44, tor: 10 })], [1800, M(LIE, { x: -44 })], [5200, M(LIE, { x: -44 })]],
+        fx: [[400, 'efx', 'wolf', { c: o.c, d: 950 }], [1300, 'hit', 'head', { big: 1 }], [1300, 'efx', 'claw', { c: o.c, d: 450 }], [1300, 'blood', { n: 24 }], [1300, 'shake', 12], [1700, 'efx', 'claw', { c: o.c, d: 450, low: 1 }], [1700, 'blood', { n: 20, pool: 1 }], [1700, 'shake', 8], [2300, 'text', 'FATALITY']] };
+    },
+    tidal: function (o) {
+      return { d: 5200, A: [[0, {}], [400, { x: 10, ua1: 95, la1: 0, ua2: 95, la2: 0, tor: 18 }], [1700, { x: 10, ua1: 95, la1: 0, ua2: 95, la2: 0, tor: 18 }], [2300, M(WIN, {})], [5200, M(WIN, {})]],
+        D: [[0, {}], [880, {}], [920, { x: -10, y: -30, rot: 40, ua1: 160, ua2: 150 }], [1500, { x: -130, y: -60, rot: 160 }], [2000, M(LIE, { x: -150, rot: 450 })], [5200, M(LIE, { x: -150, rot: 450 })]],
+        fx: [[450, 'efx', 'wave', { c: o.c, d: 1700 }], [900, 'shake', 10], [900, 'hit', 'body', { big: 1 }], [900, 'blood', { n: 12 }], [2000, 'shake', 10], [2000, 'dust'], [2000, 'blood', { n: 16, pool: 1 }], [2400, 'text', 'FATALITY']] };
+    },
+    slash: function (o) {
+      return { d: 5200, A: [[0, {}], [300, { tor: -10, ua1: -40, la1: 70, ua2: -30, la2: 70 }], [650, { x: 60, tor: 26, ua1: 130, la1: 0 }], [850, { x: 175, tor: -10, ua1: 30, la1: 0 }], [1700, { x: 175, tor: -4, ua1: 20 }], [2400, M(WIN, { x: 175 })], [5200, M(WIN, { x: 175 })]],
+        D: [[0, {}], [1600, { nk: -6 }], [1700, { y: 10, tor: 34, nk: 34, ua1: 10, ua2: -10 }], [2100, M(LIE, { x: -6 })], [5200, M(LIE, { x: -6 })]],
+        fx: [[780, 'efx', 'slash', { c: o.c, d: 700, big: 1 }], [780, 'flash'], [780, 'shake', 6], [1600, 'blood', { n: 40, up: 1 }], [1600, 'shake', 12], [1700, 'blood', { n: 16 }], [2100, 'blood', { n: 24, pool: 1 }], [2100, 'dust'], [2500, 'text', 'FATALITY']] };
+    },
+    tornado: function (o) {
+      var A_ = [[0, {}]];
+      for (var k = 0; k < 8; k++) A_.push([250 + k * 150, { sx: k % 2 ? 1 : -1, ua1: 100, la1: 0, ua2: 100, la2: 0, tor: -6 }]);
+      A_.push([1500, { sx: 1 }], [2300, M(WIN, {})], [5200, M(WIN, {})]);
+      return { d: 5200, A: A_,
+        D: [[0, {}], [700, { y: -30, rot: 60, ua1: 160, ua2: 150 }], [1100, { y: -120, rot: 300, x: -10 }], [1600, { y: -170, rot: 640, x: -20 }], [2000, M(LIE, { rot: 810, x: -40 })], [5200, M(LIE, { rot: 810, x: -40 })]],
+        fx: [[550, 'efx', 'tornado', { c: o.c, d: 1500 }], [1100, 'blood', { n: 10 }], [1600, 'blood', { n: 12 }], [2000, 'shake', 15], [2000, 'flash'], [2000, 'dust'], [2000, 'blood', { n: 26, pool: 1 }], [2400, 'text', 'FATALITY']] };
+    },
+    pillar: function (o) {
+      return { d: 5200, A: [[0, {}], [300, { y: 20, tor: 22, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [700, { y: 26, tor: 50, ua1: 100, la1: 0, ua2: 100, la2: 0, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [1700, { y: 26, tor: 50, ua1: 100, ua2: 100, th1: 72, sh1: -125, th2: -50, sh2: -60 }], [2300, M(WIN, {})], [5200, M(WIN, {})]],
+        D: [[0, {}], [750, { y: -20, ua1: 170, ua2: 170, la1: 0, la2: 0, nk: -32 }], [1100, { y: -24, ua1: 165, ua2: 172, nk: -36, tor: -6 }], [1500, { y: -20, ua1: 172, ua2: 165, nk: -30, tor: 6 }], [1900, { y: 14, tor: 34 }], [2250, M(LIE, { x: -10 })], [5200, M(LIE, { x: -10 })]],
+        fx: [[700, 'efx', 'pillar', { c: o.c, d: 1600 }], [700, 'shake', 10], [700, 'flash'], [900, 'blood', { n: 8, up: 1 }], [1400, 'blood', { n: 10, up: 1 }], [2250, 'shake', 9], [2250, 'dust'], [2250, 'blood', { n: 18, pool: 1 }], [2600, 'text', 'FATALITY']] };
+    },
+    tree: function (o) {
+      return { d: 5200, A: [[0, {}], [300, { y: 20, tor: 10, th1: 80, sh1: -150, th2: -60, sh2: -30, ua1: 160, la1: 10, ua2: 150, la2: 10, nk: -20 }], [2100, { y: 20, tor: 10, th1: 80, sh1: -150, th2: -60, sh2: -30, ua1: 160, la1: 10, ua2: 150, la2: 10, nk: -20 }], [2600, M(WIN, {})], [5200, M(WIN, {})]],
+        D: [[0, {}], [900, { y: -10 }], [1500, { y: -80, rot: 20, ua1: 150, ua2: 165, nk: -30 }], [2000, { y: -90, rot: 32, ua1: 160, ua2: 150 }], [2150, { y: -60, rot: 70, x: -20 }], [2400, M(LIE, { x: -40 })], [5200, M(LIE, { x: -40 })]],
+        fx: [[500, 'efx', 'tree', { c: o.c, d: 1900 }], [800, 'shake', 6], [1500, 'blood', { n: 10 }], [2400, 'shake', 12], [2400, 'dust'], [2400, 'blood', { n: 22, pool: 1 }], [2700, 'text', 'FATALITY']] };
+    }
+  };
+
+  /* ---------- karakter efektleri ---------- */
+  function efxStart(e, an) {
+    var o = e[3] || {}, pts = G.lastPts; if (!pts) return;
+    var def = an.att === 'h' ? 'g' : 'h', dp = pts[def], ap = pts[an.att];
+    G.efx.push({ k: e[2], t0: now(), d: o.d || 600, o: o, att: an.att, def: def, dir: an.att === 'h' ? 1 : -1,
+      ax: ap.a1h.x, ay: ap.a1h.y, bx: (dp.H.x + dp.N.x) / 2, by: (dp.H.y + dp.N.y) / 2, gx: dp.H.x, cx: (ap.H.x + dp.H.x) / 2, ahx: ap.H.x });
+  }
+  function glow(x, y, r, c, a) {
+    var g = ctx.createRadialGradient(x, y, 0, x, y, r); g.addColorStop(0, hexA(c, a)); g.addColorStop(1, hexA(c, 0));
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill();
+  }
+  function hexA(c, a) { var n = parseInt((c || '#ffffff').slice(1), 16); return 'rgba(' + (n >> 16) + ',' + ((n >> 8) & 255) + ',' + (n & 255) + ',' + a + ')'; }
+  function projShape(p, x, y, dir, big) {
+    var s = big ? 1.6 : 1;
+    if (p === 'arrow') {
+      ctx.strokeStyle = '#d6c7a1'; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(x - 16 * dir, y); ctx.lineTo(x, y); ctx.stroke();
+      ctx.fillStyle = '#cfd6de'; ctx.beginPath(); ctx.moveTo(x + 4 * dir, y); ctx.lineTo(x - 2 * dir, y - 2.4); ctx.lineTo(x - 2 * dir, y + 2.4); ctx.fill();
+      ctx.fillStyle = '#9b1c1c'; ctx.fillRect(x - 17 * dir - (dir < 0 ? 4 : 0), y - 2, 4, 4);
+    } else if (p === 'bolt') {
+      ctx.globalCompositeOperation = 'lighter'; glow(x, y, 16 * s, '#93c5fd', 0.9);
+      ctx.strokeStyle = '#e0f2fe'; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(x - 18 * dir, y - 3);
+      for (var i = 1; i <= 4; i++) ctx.lineTo(x - 18 * dir + i * 4.5 * dir, y + (i % 2 ? 4 : -4)); ctx.stroke(); ctx.globalCompositeOperation = 'source-over';
+    } else if (p === 'water') {
+      ctx.globalCompositeOperation = 'lighter'; glow(x, y, 15 * s, '#38bdf8', 0.8); ctx.globalCompositeOperation = 'source-over';
+      ctx.fillStyle = 'rgba(186,230,253,.9)'; ctx.beginPath(); ctx.ellipse(x, y, 7 * s, 5 * s, 0, 0, 7); ctx.fill();
+      for (var j = 0; j < 4; j++) { ctx.beginPath(); ctx.arc(x - (8 + j * 5) * dir, y + Math.sin(now() / 60 + j) * 3, 2 - j * 0.3, 0, 7); ctx.fill(); }
+    } else if (p === 'anchor') {
+      ctx.save(); ctx.translate(x, y); ctx.scale(2.2, 2.2);
+      ctx.strokeStyle = '#4b5563'; ctx.fillStyle = '#4b5563'; ctx.lineWidth = 2.4;
+      ctx.beginPath(); ctx.moveTo(0, -14); ctx.lineTo(0, 10); ctx.stroke();
+      ctx.beginPath(); ctx.arc(0, -16, 3, 0, 7); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(-7, -8); ctx.lineTo(7, -8); ctx.stroke();
+      ctx.beginPath(); ctx.arc(0, 2, 10, 0.25, Math.PI - 0.25); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(-10, 4); ctx.lineTo(-12, 0); ctx.lineTo(-7, 2); ctx.fill(); ctx.beginPath(); ctx.moveTo(10, 4); ctx.lineTo(12, 0); ctx.lineTo(7, 2); ctx.fill();
+      ctx.restore();
+    } else {
+      // gülle
+      ctx.globalCompositeOperation = 'lighter'; glow(x - 8 * dir, y, 14 * s, '#ff7a00', 0.7); ctx.globalCompositeOperation = 'source-over';
+      var g = ctx.createRadialGradient(x - 1.5, y - 1.5, 0.5, x, y, 5 * s); g.addColorStop(0, '#6b7280'); g.addColorStop(1, '#111');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 5 * s, 0, 7); ctx.fill();
+    }
+  }
+  function drawEfx(n, pts) {
+    G.efx = G.efx.filter(function (e) {
+      var k = (n - e.t0) / e.d; if (k > 1) return false; if (k < 0) return true;
+      var o = e.o, c = o.c || '#fff', dir = e.dir, dp = pts[e.def], ap = pts[e.att];
+      ctx.save();
+      if (e.k === 'aura') {
+        ctx.globalCompositeOperation = 'lighter';
+        var a = Math.sin(k * Math.PI) * 0.55;
+        glow((ap.H.x + ap.N.x) / 2, (ap.H.y + ap.N.y) / 2 - 6, 46, c, a);
+        for (var i = 0; i < 3; i++) { var fy = ap.H.y + 20 - ((n / 6 + i * 40) % 80); glow(ap.H.x + Math.sin(n / 90 + i * 2) * 10, fy, 6, c, a); }
+      } else if (e.k === 'charge') {
+        ctx.globalCompositeOperation = 'lighter'; glow(ap.a1h.x, ap.a1h.y, 8 + k * 22, c, 0.9 * (1 - k * 0.3));
+      } else if (e.k === 'proj') {
+        var cnt = o.n || 1;
+        for (var q = 0; q < cnt; q++) {
+          var kk = Math.max(0, Math.min(1, k * (1 + cnt * 0.12) - q * 0.12)); if (kk <= 0 || kk >= 1) continue;
+          var x = e.ax + (e.bx - e.ax) * kk, y = e.ay + (e.by - e.ay) * kk - Math.sin(kk * Math.PI) * (o.p === 'ball' ? 14 : 3) + (q - (cnt - 1) / 2) * 6;
+          projShape(o.p, x, y, dir, o.big);
+        }
+      } else if (e.k === 'boom') {
+        ctx.globalCompositeOperation = 'lighter';
+        var R = (o.big ? 48 : 28) * (0.4 + k);
+        glow(e.bx, e.by, R, c, 0.95 * (1 - k)); glow(e.bx, e.by, R * 0.5, '#fff7d6', 0.9 * (1 - k));
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.strokeStyle = hexA(c, 1 - k); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(e.bx, e.by, R * 1.1, 0, 7); ctx.stroke();
+        if (k < 0.05 && !e.sp) { e.sp = 1; for (var s = 0; s < 18; s++) G.parts.push({ x: e.bx, y: e.by, vx: (Math.random() - 0.5) * 320, vy: -Math.random() * 260, r: 0.8 + Math.random() * 1.4, c: c, life: 0.5, spark: true }); }
+      } else if (e.k === 'claw') {
+        ctx.globalCompositeOperation = 'lighter'; ctx.strokeStyle = hexA(c, 1 - k); ctx.lineWidth = 2.2;
+        var hx = o.low ? dp.N.x : dp.Hd.x, hy = o.low ? dp.N.y : dp.Hd.y;
+        for (var j = -1; j <= 1; j++) { ctx.beginPath(); ctx.moveTo(hx - 12 * dir + j * 5, hy - 16 + j * 2); ctx.lineTo(hx + (-12 + 26 * Math.min(1, k * 3)) * dir + j * 5, hy - 16 + 30 * Math.min(1, k * 3) + j * 2); ctx.stroke(); }
+      } else if (e.k === 'slash') {
+        ctx.globalCompositeOperation = 'lighter';
+        var r0 = o.big ? 60 : 30, sw = Math.min(1, k * 2.5);
+        ctx.strokeStyle = hexA(c, 1 - k); ctx.lineWidth = o.big ? 7 : 4; ctx.shadowColor = c; ctx.shadowBlur = 14;
+        ctx.beginPath(); ctx.arc(e.gx - 20 * dir, e.by + (o.big ? 10 : 0), r0, -2.4 + (dir < 0 ? 0 : 0), -2.4 + sw * 2.6); ctx.stroke();
+        ctx.lineWidth = 1.5; ctx.strokeStyle = 'rgba(255,255,255,' + (1 - k) + ')'; ctx.stroke();
+      } else if (e.k === 'chain') {
+        var hx2 = ap.a1h.x, hy2 = ap.a1h.y, tx = dp.N.x, ty = dp.N.y, L = Math.min(1, k * 4);
+        ctx.strokeStyle = '#9ca3af'; ctx.lineWidth = 1.4; ctx.setLineDash([3, 2]);
+        ctx.beginPath(); ctx.moveTo(hx2, hy2); ctx.lineTo(hx2 + (tx - hx2) * L, hy2 + (ty - hy2) * L); ctx.stroke(); ctx.setLineDash([]);
+        if (L >= 1) { ctx.fillStyle = '#6b7280'; ctx.beginPath(); ctx.arc(tx, ty, 3, 0, 7); ctx.fill(); }
+      } else if (e.k === 'shock') {
+        ctx.globalCompositeOperation = 'lighter';
+        var sx = e.ahx + (o.big ? 50 : 86) * dir, rr = k * (o.big ? 170 : 70);
+        ctx.strokeStyle = hexA(c, 0.9 * (1 - k)); ctx.lineWidth = 3;
+        ctx.beginPath(); ctx.ellipse(sx, GROUND, rr, rr * 0.16, 0, Math.PI, 0); ctx.stroke();
+        glow(sx + rr * 0.7 * dir, GROUND - 4, 18, c, 0.6 * (1 - k));
+      } else if (e.k === 'sky') {
+        if (Math.floor(n / 50) % 2 || k < 0.2) {
+          var bx = o.at === 'a' ? ap.H.x + 50 * dir : dp.Hd.x, by = o.at === 'a' ? GROUND : dp.Hd.y;
+          ctx.globalCompositeOperation = 'lighter'; ctx.strokeStyle = '#e0f2fe'; ctx.lineWidth = 3; ctx.shadowColor = '#60a5fa'; ctx.shadowBlur = 20;
+          ctx.beginPath(); var yy = by - 320; ctx.moveTo(bx + 10, yy);
+          while (yy < by) { yy += 22; ctx.lineTo(bx + (Math.random() - 0.5) * 22, Math.min(by, yy)); }
+          ctx.stroke(); glow(bx, by, 30, '#93c5fd', 0.7);
+        }
+      } else if (e.k === 'rain') {
+        var nn = o.n || 6;
+        for (var r = 0; r < nn; r++) {
+          var t0 = r / (nn + 0.6), kk2 = (k - t0) * (nn + 0.6) / 1.0; if (kk2 < 0 || kk2 > 1) continue;
+          var tx2 = (o.at === 'mid' ? dp.H.x : dp.H.x + ((r * 37) % 30 - 15)), ty2 = o.p === 'anchor' && nn === 1 ? dp.Hd.y - 20 : dp.N.y - 5;
+          var sx2 = tx2 - 90 * dir * (o.p === 'arrow' ? 1 : 0.3), sy2 = ty2 - 320;
+          var px = sx2 + (tx2 - sx2) * kk2, py = sy2 + (ty2 - sy2) * kk2;
+          if (o.p === 'bolt') { if (kk2 > 0.6) { ctx.globalCompositeOperation = 'lighter'; ctx.strokeStyle = '#e0f2fe'; ctx.lineWidth = 2.6; ctx.shadowColor = '#60a5fa'; ctx.shadowBlur = 16; ctx.beginPath(); ctx.moveTo(tx2, ty2 - 320); var y3 = ty2 - 320; while (y3 < ty2) { y3 += 24; ctx.lineTo(tx2 + (Math.random() - 0.5) * 20, Math.min(ty2, y3)); } ctx.stroke(); ctx.shadowBlur = 0; ctx.globalCompositeOperation = 'source-over'; } }
+          else { ctx.save(); ctx.translate(px, py); if (o.p === 'arrow') if (o.p === 'arrow') ctx.rotate(Math.atan2(ty2 - sy2, tx2 - sx2)); projShape(o.p, 0, 0, 1, nn === 1); ctx.restore(); }
+        }
+      } else if (e.k === 'ghosts') {
+        ctx.globalAlpha = Math.min(1, Math.sin(k * Math.PI) * 1.6) * 0.75;
+        for (var g2 = 0; g2 < 4; g2++) {
+          var gx = e.ahx - 140 * dir + (k * 520 - g2 * 34) * dir, gy = GROUND - (g2 % 2) * 6;
+          rider(gx, gy, dir, c, n + g2 * 90);
+        }
+      } else if (e.k === 'wolf') {
+        var kx = Math.min(1, k * 1.15), wx = ap.H.x + (dp.H.x - ap.H.x) * kx, wy = GROUND - 30 - Math.sin(kx * Math.PI) * 70;
+        ctx.globalAlpha = 0.85 * Math.min(1, (1 - k) * 4); wolfShape(wx, wy, dir, c, kx);
+      } else if (e.k === 'wave') {
+        var wx2 = e.ahx + (k * 300 - 40) * dir, hgt = 70 + Math.sin(k * Math.PI) * 50;
+        ctx.globalAlpha = Math.min(1, (1 - k) * 3);
+        var wg = ctx.createLinearGradient(wx2, GROUND - hgt, wx2, GROUND); wg.addColorStop(0, 'rgba(186,230,253,.95)'); wg.addColorStop(0.3, hexA(c, 0.85)); wg.addColorStop(1, 'rgba(8,47,73,.9)');
+        ctx.fillStyle = wg; ctx.beginPath(); ctx.moveTo(wx2 - 140 * dir, GROUND);
+        ctx.quadraticCurveTo(wx2 - 60 * dir, GROUND - hgt * 0.5, wx2 - 10 * dir, GROUND - hgt);
+        ctx.quadraticCurveTo(wx2 + 22 * dir, GROUND - hgt - 6, wx2 + 26 * dir, GROUND - hgt + 22);
+        ctx.quadraticCurveTo(wx2 + 10 * dir, GROUND - hgt * 0.4, wx2 + 30 * dir, GROUND); ctx.closePath(); ctx.fill();
+        ctx.fillStyle = 'rgba(255,255,255,.8)'; for (var f2 = 0; f2 < 8; f2++) { ctx.beginPath(); ctx.arc(wx2 + (Math.random() * 30 - 10) * dir, GROUND - hgt + Math.random() * 14, 1 + Math.random() * 2, 0, 7); ctx.fill(); }
+      } else if (e.k === 'tornado') {
+        ctx.globalAlpha = Math.min(1, Math.sin(k * Math.PI) * 2) * 0.8; ctx.strokeStyle = c; ctx.lineWidth = 1.6;
+        for (var z = 0; z < 14; z++) { var zy = GROUND - z * 14, zr = 8 + z * 3.2, ph = n / 70 + z; ctx.beginPath(); ctx.ellipse(e.gx + Math.sin(ph * 0.5) * 4, zy, zr, zr * 0.25, 0, ph % 6.28, ph % 6.28 + 4.4); ctx.stroke(); }
+        for (var zz = 0; zz < 3; zz++) G.parts.push({ x: e.gx + (Math.random() - 0.5) * 40, y: GROUND - Math.random() * 150, vx: (Math.random() - 0.5) * 160, vy: -100, r: 0.8 + Math.random(), c: c, life: 0.3 });
+      } else if (e.k === 'pillar') {
+        ctx.globalCompositeOperation = 'lighter';
+        var hh = Math.min(1, k * 4) * 300, wdt = 26 + Math.sin(n / 40) * 3, fade = Math.min(1, (1 - k) * 3);
+        var pg = ctx.createLinearGradient(e.gx - wdt, 0, e.gx + wdt, 0); pg.addColorStop(0, hexA(c, 0)); pg.addColorStop(0.5, hexA(c, 0.9 * fade)); pg.addColorStop(1, hexA(c, 0));
+        ctx.fillStyle = pg; ctx.fillRect(e.gx - wdt, GROUND - hh, wdt * 2, hh);
+        var pg2 = ctx.createLinearGradient(e.gx - 8, 0, e.gx + 8, 0); pg2.addColorStop(0, 'rgba(255,240,200,0)'); pg2.addColorStop(0.5, 'rgba(255,250,220,' + 0.9 * fade + ')'); pg2.addColorStop(1, 'rgba(255,240,200,0)');
+        ctx.fillStyle = pg2; ctx.fillRect(e.gx - 8, GROUND - hh, 16, hh);
+        for (var pp = 0; pp < 3; pp++) G.parts.push({ x: e.gx + (Math.random() - 0.5) * 30, y: GROUND - Math.random() * 40, vx: (Math.random() - 0.5) * 40, vy: -260 - Math.random() * 200, r: 1 + Math.random() * 1.5, c: c, life: 0.45, spark: true });
+      } else if (e.k === 'tree') {
+        var gr = Math.min(1, k * 1.6), tx3 = e.gx, th = 150 * gr;
+        ctx.strokeStyle = '#4a2f1b'; ctx.lineCap = 'round';
+        ctx.lineWidth = 12 * gr + 2; ctx.beginPath(); ctx.moveTo(tx3, GROUND); ctx.quadraticCurveTo(tx3 - 8, GROUND - th * 0.5, tx3, GROUND - th); ctx.stroke();
+        function br(x, y, a, l, d) { if (d === 0 || l < 4) return; var x2 = x + Math.sin(a) * l, y2 = y - Math.cos(a) * l; ctx.lineWidth = d * 1.6; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x2, y2); ctx.stroke(); br(x2, y2, a - 0.5, l * 0.72, d - 1); br(x2, y2, a + 0.45, l * 0.72, d - 1); }
+        if (gr > 0.4) br(tx3, GROUND - th, 0, 40 * (gr - 0.4) / 0.6, 4);
+        if (gr > 0.7) { ctx.globalCompositeOperation = 'lighter'; glow(tx3, GROUND - th - 40, 80 * gr, c, 0.35 * Math.min(1, (1 - k) * 3)); ctx.globalCompositeOperation = 'source-over';
+          for (var lf = 0; lf < 2; lf++) G.parts.push({ x: tx3 + (Math.random() - 0.5) * 120, y: GROUND - th - 40 + (Math.random() - 0.5) * 60, vx: (Math.random() - 0.5) * 40, vy: -20, r: 1.4 + Math.random() * 1.4, c: Math.random() < 0.5 ? '#4ade80' : '#16a34a', life: 0.8 }); }
+      }
+      ctx.restore();
+      return true;
+    });
+  }
+  function rider(x, y, dir, c, n) {
+    ctx.save(); ctx.translate(x, y); ctx.scale(dir, 1);
+    ctx.globalCompositeOperation = 'lighter'; glow(0, -30, 40, c, 0.35); ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = hexA(c, 0.55); ctx.strokeStyle = hexA(c, 0.9); ctx.lineWidth = 2.4;
+    var g = n / 70;
+    // at
+    ctx.beginPath(); ctx.ellipse(0, -26, 22, 9, 0, 0, 7); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(16, -30); ctx.lineTo(28, -48); ctx.lineTo(34, -46); ctx.lineTo(24, -26); ctx.closePath(); ctx.fill();
+    [[-14, 0], [-8, 1.6], [10, 0.8], [16, 2.4]].forEach(function (l) { ctx.beginPath(); ctx.moveTo(l[0], -20); ctx.lineTo(l[0] + Math.sin(g + l[1]) * 8, 0); ctx.stroke(); });
+    ctx.beginPath(); ctx.moveTo(-22, -28); ctx.quadraticCurveTo(-34, -24, -36, -12); ctx.stroke();
+    // süvari
+    ctx.beginPath(); ctx.moveTo(-4, -34); ctx.lineTo(4, -60); ctx.lineTo(10, -34); ctx.closePath(); ctx.fill();
+    ctx.beginPath(); ctx.arc(5, -64, 5, 0, 7); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(6, -52); ctx.lineTo(30, -66); ctx.stroke();
+    ctx.restore();
+  }
+  function wolfShape(x, y, dir, c, k) {
+    ctx.save(); ctx.translate(x, y); ctx.scale(dir * 1.5, 1.5); ctx.rotate(-0.4 + k * 0.8);
+    ctx.globalCompositeOperation = 'lighter'; glow(0, 0, 40, c, 0.5); ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = hexA(c, 0.75);
+    ctx.beginPath();
+    ctx.moveTo(-30, -2); ctx.quadraticCurveTo(-40, -12, -46, -6); ctx.quadraticCurveTo(-38, 0, -30, 4); // kuyruk
+    ctx.quadraticCurveTo(-24, 12, -30, 20); ctx.lineTo(-26, 21); ctx.quadraticCurveTo(-16, 12, -10, 8); // arka bacak
+    ctx.lineTo(10, 8); ctx.quadraticCurveTo(18, 14, 26, 18); ctx.lineTo(28, 15); ctx.quadraticCurveTo(22, 8, 18, 2); // ön bacak
+    ctx.lineTo(24, -2); ctx.lineTo(34, 0); ctx.lineTo(36, -3); ctx.lineTo(26, -8); ctx.lineTo(24, -16); ctx.lineTo(20, -10); // kafa, kulak
+    ctx.quadraticCurveTo(0, -14, -30, -2); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(26, -6, 1.2, 0, 7); ctx.fill();
+    ctx.restore();
+  }
   function ease(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
   function sample(keys, t) {
     if (!keys || !keys.length) return P({});
@@ -698,7 +1053,7 @@
       if (an === G.anim && tt > an.tl.d + 200) {
         an.done = true;
         G.hold = {}; G.hold[an.att] = sample(an.tl.A, an.tl.d); G.hold[an.att === 'h' ? 'g' : 'h'] = sample(an.tl.D, an.tl.d);
-        rpc('vs_seen', { p_room: roomId, p_token: C.token(), p_as: an.as });
+        if (!G.dbg) rpc('vs_seen', { p_room: roomId, p_token: C.token(), p_as: an.as });
       }
     }
     if (G.shake > 0) { shx = (Math.random() - 0.5) * G.shake; shy = (Math.random() - 0.5) * G.shake; G.shake *= 0.88; if (G.shake < 0.3) G.shake = 0; }
@@ -713,6 +1068,7 @@
     var att_ = an ? an.att : null;
     if (att_ === 'h') { fighter(pts.g, 'g', pg_); fighter(pts.h, 'h', ph_); } else { fighter(pts.h, 'h', ph_); fighter(pts.g, 'g', pg_); }
     G.lastPts = pts;
+    if (G.efx && G.efx.length) drawEfx(n, pts);
     // parçacıklar
     G.parts = G.parts.filter(function (p) {
       if (p.pool) return true;
@@ -930,6 +1286,7 @@
     var def = an.att === 'h' ? 'g' : 'h', dp = pts[def], ap = pts[an.att];
     var at = e[2] === 'head' ? dp.Hd : e[2] === 'foot' ? dp.l1h : e[2] === 'body' ? { x: (dp.H.x + dp.N.x) / 2, y: (dp.H.y + dp.N.y) / 2 } : dp.Hd;
     var dir = def === 'h' ? -1 : 1;  // savunanın geri yönü
+    if (type === 'efx') { efxStart(e, an); return; }
     if (type === 'hit') { G.fx.push({ x: at.x, y: at.y, t: now(), big: opt.big }); for (var i = 0; i < (opt.big ? 14 : 7); i++) G.parts.push({ x: at.x, y: at.y, vx: (Math.random() - 0.3) * 220 * dir, vy: -Math.random() * 180, r: 0.8 + Math.random() * 1.2, c: '#ffd27a', life: 0.35, spark: true }); }
     else if (type === 'blood') {
       var b = e[3] && e[3].n ? e[3].n : 8, src = opt.pool ? { x: dp.H.x, y: GROUND - 6 } : dp.Hd;
@@ -946,5 +1303,5 @@
     if (type === 'hit' && navigator.vibrate && an === G.anim) try { navigator.vibrate(opt.big ? 40 : 15); } catch (er) {}
   }
 
-  window.LGSVS = { page: page, stop: stop, _dbg: function () { return { off: off, rtt: bestRtt, now: now(), an: G && G.anim ? now() - G.anim.t0 : null, ph: cur && cur.st && cur.st.ph }; } };
+  window.LGSVS = { page: page, stop: stop, _play: function (ch, oc, tier, mv) { G.dbg = 1; G.dbgCh = { h: ch, g: oc }; var tl = buildTL('h', tier, mv); G.anim = { name: tl.name, label: tl.label, att: 'h', t0: now() + 100, as: 0, tl: tl, fired: {}, tier: tier, started: true }; G.efx = []; G.parts = []; G.text = null; G.quake = null; G.hold = null; G.cam = null; document.getElementById('vsStage').classList.add('big'); return tl.d; }, _dbg: function () { return { off: off, rtt: bestRtt, now: now(), an: G && G.anim ? now() - G.anim.t0 : null, ph: cur && cur.st && cur.st.ph }; } };
 })();
