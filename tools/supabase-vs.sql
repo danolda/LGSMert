@@ -129,7 +129,7 @@ begin
         tier := case when hpd <= 0 then 'f' when hpd < 30 then 'h' else 'l' end;
       end if;
       if tier is not null then
-        x := x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', att, 'def', def, 'tier', tier), 'u', n + 9000) - 'mv';
+        x := (x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', att, 'def', def, 'tier', tier), 'u', n + 9000)) - 'mv';
       elsif i + 1 >= cnt then
         ph := 'fin';
       else
@@ -163,7 +163,7 @@ begin
       if win is null then
         x := x || jsonb_build_object('ph', 'end', 'win', null, 'why', 'draw', 'at', n);
       else
-        x := x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', win, 'def', case when win = 'h' then 'g' else 'h' end, 'tier', 'f', 'fin', true), 'u', n + 10000) - 'mv';
+        x := (x || jsonb_build_object('ph', 'pk', 'pk', jsonb_build_object('att', win, 'def', case when win = 'h' then 'g' else 'h' end, 'tier', 'f', 'fin', true), 'u', n + 10000)) - 'mv';
       end if;
     end if;
   end loop;

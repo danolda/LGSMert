@@ -928,3 +928,35 @@ body.dn-solving .xpbar,body.dn-solving .foot,body.dn-solving .totop{display:none
 .sv-a{justify-self:start;padding:8px 16px;border-radius:12px;background:var(--okbg);border:1px solid color-mix(in srgb,var(--ok) 50%,transparent);color:var(--ok);font:700 16px var(--ff-h)}
 .sv-a b{font-size:19px}
 .sv>*{min-width:0}.sv-g>*{min-width:0}
+/* seviye yol haritası */
+.lvcard{flex-wrap:wrap;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.lvc-hint{font-size:11.5px;opacity:.6;margin-top:6px}
+.lvcard.open .lvc-hint{opacity:.35}
+.rk-road{display:none;list-style:none;margin:6px 0 0;padding:0;width:100%;flex-basis:100%}
+.lvcard.open .rk-road{display:grid;gap:6px;animation:rrIn .35s ease}
+@keyframes rrIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.rr{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}
+.rr-i{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;font-size:20px;clip-path:polygon(50% 0,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%);background:linear-gradient(160deg,color-mix(in srgb,var(--rc) 45%,#151209),#151209)}
+.rr-n{flex:1;min-width:0;display:flex;flex-direction:column}
+.rr-n b{color:var(--rc);font-family:var(--ff-h);letter-spacing:.05em;text-transform:uppercase;font-size:14px}
+.rr-n small{opacity:.65;font-size:11.5px}
+.rr-s{font-size:11.5px;font-weight:700;white-space:nowrap}
+.rr.cur{border-color:var(--rc);box-shadow:0 0 0 1px var(--rc),0 0 18px color-mix(in srgb,var(--rc) 35%,transparent)}
+.rr.cur .rr-s{color:var(--rc)}
+.rr.ok .rr-s{color:#34d399}
+.rr.lock{opacity:.55}.rr.lock .rr-i{filter:grayscale(.6)}
+/* görevler */
+.page-quest h1{margin-bottom:4px}
+.qs{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.qs-ic{font-size:30px;width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:rgba(255,255,255,.05)}
+.qs-b{flex:1;min-width:150px;display:flex;flex-direction:column;gap:4px}
+.qs-b small{opacity:.7;font-size:12.5px}
+.qs-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden}
+.qs-bar i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#22d3ee,#3b82f6)}
+.qs.ok .qs-bar i{background:linear-gradient(90deg,#fbbf24,#f97316)}
+.qs-fl{display:flex;gap:3px;font-size:17px}.qs-fl i{font-style:normal;filter:grayscale(1);opacity:.35}.qs-fl i.on{filter:none;opacity:1}
+.qs-btn{white-space:nowrap}
+.qs.ok .qs-btn.primary{animation:qsP 1.4s ease-in-out infinite}
+@keyframes qsP{50%{transform:scale(1.06);box-shadow:0 0 20px rgba(251,191,36,.5)}}
+.qs-btn.done{opacity:.6}
+@media (max-width:480px){.qs-btn{width:100%}}

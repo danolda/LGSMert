@@ -428,6 +428,8 @@
     var g = s.days[d] || (s.days[d] = { ok: 0, bad: 0 });
     if (ok) { e.ok++; g.ok++; } else { e.bad++; g.bad++; }
     jset(SKEY, s);
+    if (g.ok + g.bad === DAILY_N) setTimeout(function () { toast('🎯 Günün 100 sorusu tamam! Görevler’den ' + BONUS + ' EXP ödülünü al.'); updateBadge(); }, 900);
+    if (g.ok + g.bad === 1) setTimeout(updateBadge, 300);
     if (window.LGSCloud) window.LGSCloud.push();
   }
   function subjectStats(s) {
@@ -467,7 +469,9 @@
     var b = document.getElementById('remBadge'), n = remDue().length;
     if (b) { b.textContent = n; b.hidden = !n; }
     var h = document.getElementById('navBadge');
-    if (h) { h.hidden = !n; }
+    var qn = 0; try { qn = questReady(); } catch (e) {}
+    var qb = document.getElementById('qsBadge'); if (qb) { qb.textContent = qn; qb.hidden = !qn; }
+    if (h) { h.hidden = !(n || qn); }
   }
   function topicMeta(tid) { var i = subjOf(tid); return i ? { s: i.s, t: i.t } : null; }
   function fmtDate(s) { var p = s.split('-'); return +p[2] + ' ' + AYLAR[+p[1] - 1]; }
@@ -648,11 +652,15 @@
   function lvCard(x) {
     var L = levelOf(x), r = rankOf(L), lo = needFor(L), hi = needFor(L + 1), p = L >= 100 ? 100 : (x - lo) * 100 / (hi - lo);
     var nx = RANKS[Math.min(9, Math.floor(L / 10) + 1)], nxL = Math.min(100, (Math.floor(L / 10) + 1) * 10);
-    return '<div class="card lvcard" style="--rc:' + r.c + '"><div class="lvc-emb">' + r.i + '</div>' +
+    var road = RANKS.map(function (k, j) {
+      var from = j === 0 ? 1 : j * 10, to = j === 9 ? 100 : j * 10 + 9, st = L >= from ? (rankOf(L) === k ? 'cur' : 'ok') : 'lock';
+      return '<li class="rr ' + st + '" style="--rc:' + k.c + '"><span class="rr-i">' + k.i + '</span><span class="rr-n"><b>' + k.n + '</b><small>Seviye ' + from + '–' + to + (j === 9 ? '+' : '') + '</small></span><span class="rr-s">' + (st === 'cur' ? 'ŞU AN' : st === 'ok' ? '✓' : '🔒 ' + nf(Math.max(0, needFor(from) - x)) + ' EXP') + '</span></li>';
+    }).join('');
+    return '<div class="card lvcard" role="button" tabindex="0" onclick="this.classList.toggle(\'open\')" style="--rc:' + r.c + '"><div class="lvc-emb">' + r.i + '</div>' +
       '<div class="lvc-b"><div class="lvc-t"><b>' + r.n + '</b><span>Seviye ' + L + '</span></div>' +
       '<div class="lvc-bar"><i style="width:' + p.toFixed(1) + '%"></i></div>' +
       '<div class="small">' + nf(x) + ' toplam EXP' + (L < 100 ? ' · sonraki seviyeye ' + nf(hi - x) : '') +
-      (L < 90 ? ' · ' + nxL + '. seviyede ' + nx.i + ' ' + nx.n : '') + '</div></div></div>';
+      (L < 90 ? ' · ' + nxL + '. seviyede ' + nx.i + ' ' + nx.n : '') + '</div><div class="lvc-hint">Tüm rütbeleri görmek için dokun ▾</div></div><ol class="rk-road">' + road + '</ol></div>';
   }
   function profilePage() {
     setCrumbs([{ text: 'Profil ve İstatistik' }]);
@@ -802,6 +810,58 @@
     jset(XKEY, x);
     if (window.LGSCloud) window.LGSCloud.push();
     return { xp: amt, before: before, after: x.total, rep: r[0] + 1 };
+  }
+  /* ---------- görevler: günlük 100 soru + 7 günlük seri ---------- */
+  var DAILY_N = 100, BONUS = 5 * XP_BASE.zor, STREAK_N = 7;
+  function dayCount(d) { var g = getStats().days[d]; return g ? g.ok + g.bad : 0; }
+  function streakInfo() {
+    var days = getStats().days, d = new Date(), n = 0, today = dayCount(ymd(d)) > 0;
+    if (!today) d.setDate(d.getDate() - 1);
+    while (true) { var k = ymd(d), g = days[k]; if (!g || g.ok + g.bad < 1) break; n++; d.setDate(d.getDate() - 1); }
+    return { n: n, today: today };
+  }
+  function claimed(tag) { var x = xpGet(); return !!(x.cl && x.cl[tag]); }
+  function questState() {
+    var d = ymd(), cnt = dayCount(d), sk = streakInfo();
+    return {
+      d: d, cnt: cnt, sk: sk,
+      dailyOk: cnt >= DAILY_N, dailyCl: claimed('d100:' + d),
+      skOk: sk.today && sk.n >= STREAK_N, skCl: claimed('sk:' + d)
+    };
+  }
+  function questReady() { var q = questState(); return (q.dailyOk && !q.dailyCl ? 1 : 0) + (q.skOk && !q.skCl ? 1 : 0); }
+  function claimBonus(tag, el) {
+    var x = xpGet(); x.cl = x.cl || {};
+    if (x.cl[tag]) return;
+    var before = x.total, d = istDay();
+    x.cl[tag] = Date.now(); x.total += BONUS; x.days[d] = (x.days[d] || 0) + BONUS;
+    // eski ödül kayıtlarını temizle (30 günden eski)
+    var lim = ymd(new Date(Date.now() - 30 * 864e5));
+    for (var k in x.cl) if (k.split(':')[1] < lim) delete x.cl[k];
+    jset(XKEY, x);
+    if (window.LGSCloud) window.LGSCloud.push();
+    gainFx({ xp: BONUS, before: before, after: x.total }, el);
+  }
+  function questPage() {
+    setCrumbs([{ text: 'Görevler' }]);
+    document.title = 'Görevler · LGS Kışlası';
+    var q = questState(), p = Math.min(100, q.cnt * 100 / DAILY_N), sp = Math.min(100, q.sk.n * 100 / STREAK_N);
+    var flames = ''; for (var i = 0; i < STREAK_N; i++) flames += '<i class="' + (i < Math.min(q.sk.n, STREAK_N) ? 'on' : '') + '">🔥</i>';
+    function btn(ok, cl, tag) {
+      return cl ? '<button class="btn qs-btn done" disabled>✓ Alındı</button>' : ok ? '<button class="btn primary qs-btn" data-tag="' + tag + '">🎁 ' + BONUS + ' EXP al</button>' : '<button class="btn qs-btn" disabled>🔒 ' + BONUS + ' EXP</button>';
+    }
+    app.innerHTML = '<div class="page-quest"><h1>🎯 Görevler</h1><p class="small">Her ödül 5 zor soru kadar, yani ' + BONUS + ' EXP. Görevler her gün gece yarısı yenilenir.</p>' +
+      '<div class="card qs' + (q.dailyOk ? ' ok' : '') + '"><div class="qs-ic">📚</div><div class="qs-b"><b>Günün 100 sorusu</b><small>Bugün ' + Math.min(q.cnt, DAILY_N) + ' / ' + DAILY_N + ' soru çözdün' + (q.cnt > DAILY_N ? ' (toplam ' + q.cnt + ')' : '') + '</small>' +
+      '<div class="qs-bar"><i style="width:' + p.toFixed(1) + '%"></i></div></div>' + btn(q.dailyOk, q.dailyCl, 'd100:' + q.d) + '</div>' +
+      '<div class="card qs' + (q.skOk ? ' ok' : '') + '"><div class="qs-ic">🔥</div><div class="qs-b"><b>' + q.sk.n + ' günlük seri</b><small>' +
+      (q.sk.n >= STREAK_N ? (q.sk.today ? 'Seri sürüyor! Her gün en az 1 soru çöz, ödülü her gün al.' : 'Seriyi korumak ve ödülü almak için bugün en az 1 soru çöz.') : 'Her gün en az 1 soru çöz. ' + STREAK_N + '. günden itibaren her gün ödül alırsın.' + (q.sk.today ? '' : ' Bugün henüz soru çözmedin.')) + '</small>' +
+      '<div class="qs-fl">' + flames + '</div><div class="qs-bar"><i style="width:' + sp.toFixed(1) + '%"></i></div></div>' + btn(q.skOk, q.skCl, 'sk:' + q.d) + '</div></div>';
+    app.querySelector('.page-quest').addEventListener('click', function (e) {
+      var b = e.target.closest('[data-tag]'); if (!b) return;
+      claimBonus(b.getAttribute('data-tag'), b);
+      b.outerHTML = '<button class="btn qs-btn done" disabled>✓ Alındı</button>';
+      updateBadge();
+    });
   }
   function nf(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
 
@@ -995,11 +1055,12 @@
     openNav(false);
     if (window.LGSVS) window.LGSVS.stop();
     if (window.LGSDeneme) window.LGSDeneme.stop();
-    var r = h[0] === 'deneme' ? 'dn' : h[0] === 'vs' ? 'vs' : h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
+    var r = h[0] === 'deneme' ? 'dn' : h[0] === 'vs' ? 'vs' : h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : h[0] === 'gorevler' ? 'qs' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
     markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
     else if (h[0] === 'k' && h[1]) topicPage(h[1]);
     else if (h[0] === 'hatirlatici') reminderPage();
+    else if (h[0] === 'gorevler') questPage();
     else if (h[0] === 'profil') profilePage();
     else if (h[0] === 'lider') leaderPage();
     else if (h[0] === 'indir') installPage();

@@ -963,7 +963,7 @@
     ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(26, -6, 1.2, 0, 7); ctx.fill();
     ctx.restore();
   }
-  function ease(t) { return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2; }
+  function ease(t) { return 1 - Math.pow(1 - t, 3); }
   function sample(keys, t) {
     if (!keys || !keys.length) return P({});
     if (t <= keys[0][0]) return P(keys[0][1]);
@@ -1004,7 +1004,7 @@
 
   var cv = null, ctx = null, lastT = 0, BG = new Image(); BG.src = 'img/vs/arena.jpg';
   function poseFor(r, n) {
-    var t = n / 1000, breathe = { y: Math.sin(t * 3 + (r === 'h' ? 0 : 1.3)) * 1.3, la1: 95 + Math.sin(t * 3) * 4 };
+    var t = n / 1000, bb = (Math.sin(t * 4.6 + (r === 'h' ? 0 : 1.3)) + 1) / 2, breathe = { y: bb * 2.6, th1: 18 + bb * 5, sh1: -14 - bb * 9, th2: -16 + bb * 4, sh2: -6 - bb * 8, tor: 6 + bb * 2, la1: 95 + bb * 6, ua2: 22 + bb * 3 };
     var an = G.anim && !G.anim.done ? G.anim : (G.mini && !G.mini.done ? G.mini : null);
     if (an && n >= an.t0 - 50) {
       var tt = n - an.t0;
@@ -1034,7 +1034,7 @@
       var tc = { cx: (x1 + x2) / 2, span: Math.max(190, x2 - x1 + 70) };
       var cam = G.cam || (G.cam = tc);
       cam.cx += (tc.cx - cam.cx) * 0.12; cam.span += (tc.span - cam.span) * 0.08;
-      sc = Math.min(w / cam.span, h * 0.62 / 150);
+      sc = Math.min(w / cam.span, h * 0.62 / 150) * (1 + 0.07 * Math.max(0, 1 - (n - (G.zoom || 0)) / 260));
       ox = w / 2 - cam.cx * sc; oy = h * 0.8 - GROUND * sc;
     } else {
       G.cam = null;
@@ -1079,6 +1079,18 @@
     if (G.quake) { ctx.strokeStyle = 'rgba(0,0,0,.9)'; ctx.lineWidth = 1.6; G.quake.forEach(function (c) { ctx.beginPath(); ctx.moveTo(c[0][0], c[0][1]); for (var i = 1; i < c.length; i++) ctx.lineTo(c[i][0], c[i][1]); ctx.stroke(); }); }
     // kan gölü / parçacıklar (zeminde)
     G.parts.forEach(function (p) { if (p.pool) { ctx.fillStyle = 'rgba(105,0,10,.9)'; ctx.beginPath(); ctx.ellipse(p.x, GROUND + 1, p.r * 2.6, p.r * 0.6, 0, 0, 7); ctx.fill(); ctx.fillStyle = 'rgba(255,120,120,.15)'; ctx.beginPath(); ctx.ellipse(p.x - p.r * 0.6, GROUND + 0.6, p.r * 0.9, p.r * 0.2, 0, 0, 7); ctx.fill(); } });
+    // hareket izleri (hızlı uzuvlarda)
+    G.tr = G.tr || { h: {}, g: {} }; ctx.lineCap = 'round';
+    ['h', 'g'].forEach(function (r) {
+      ['a1h', 'a2h', 'l1h', 'l2h'].forEach(function (k) {
+        var a = G.tr[r][k] || (G.tr[r][k] = []); a.push({ x: pts[r][k].x, y: pts[r][k].y }); if (a.length > 7) a.shift();
+        var sp = 0; for (var i = 1; i < a.length; i++) sp += Math.abs(a[i].x - a[i - 1].x) + Math.abs(a[i].y - a[i - 1].y);
+        if (sp < 22) return;
+        ctx.globalCompositeOperation = 'lighter';
+        for (var j = 1; j < a.length; j++) { var al = j / a.length; ctx.strokeStyle = hexA(r === 'h' ? '#8fd0ff' : '#ff9a85', 0.5 * al); ctx.lineWidth = (k[0] === 'l' ? 10 : 8) * al; ctx.beginPath(); ctx.moveTo(a[j - 1].x, a[j - 1].y); ctx.lineTo(a[j].x, a[j].y); ctx.stroke(); }
+        ctx.globalCompositeOperation = 'source-over';
+      });
+    });
     // dövüşçüler
     var att_ = an ? an.att : null;
     if (att_ === 'h') { fighter(pts.g, 'g', pg_); fighter(pts.h, 'h', ph_); } else { fighter(pts.h, 'h', ph_); fighter(pts.g, 'g', pg_); }
@@ -1143,7 +1155,8 @@
     var g = ctx.createLinearGradient(mx + nx * rm, my + ny * rm, mx - nx * rm, my - ny * rm);
     g.addColorStop(0, shadeC(col, 0.22)); g.addColorStop(0.45, col); g.addColorStop(1, shadeC(col, -0.45));
     ctx.fillStyle = g; ctx.fill();
-    ctx.strokeStyle = 'rgba(10,5,2,.28)'; ctx.lineWidth = 0.6; ctx.stroke();
+    ctx.strokeStyle = 'rgba(6,3,2,.9)'; ctx.lineWidth = 1.25; ctx.stroke();
+    ctx.strokeStyle = 'rgba(255,245,230,.22)'; ctx.lineWidth = 1.1; ctx.beginPath(); ctx.moveTo(a.x + nx * r1 * 0.55, a.y + ny * r1 * 0.55); ctx.quadraticCurveTo(mx + nx * rm * 0.85, my + ny * rm * 0.85, b.x + nx * r2 * 0.5, b.y + ny * r2 * 0.5); ctx.stroke();
   }
   function fighter(p, r, pose) {
     var pp = pl(r) || {}, c = CH[pp.ch] || CH.fatih, f = (r === 'h' ? 1 : -1) * (pose.sx < 0 ? -1 : 1);
@@ -1154,10 +1167,11 @@
     gs.addColorStop(0, 'rgba(0,0,0,.6)'); gs.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = gs; ctx.beginPath(); ctx.ellipse(p.H.x, GROUND + 2, 26, 5, 0, 0, 7); ctx.fill();
     var skin = c.skin, skinB = shadeC(skin, -0.2);
+    ctx.save(); ctx.shadowColor = hexA(tc, 0.7); ctx.shadowBlur = 9;
     function leg(k, back) {
       var pc = back ? shadeC(c.pants, -0.3) : c.pants;
-      limbShape(p.H, p[k + 'e'], 6.6, 5.2, pc, 1.2);
-      limbShape(p[k + 'e'], p[k + 'h'], 5.2, 3.8, pc, 0.6);
+      limbShape(p.H, p[k + 'e'], 8, 5.8, pc, 2.2);
+      limbShape(p[k + 'e'], p[k + 'h'], 5.8, 4, pc, 1.5);
       // çizme
       var e = p[k + 'e'], h = p[k + 'h'], bx = e.x + (h.x - e.x) * 0.55, by = e.y + (h.y - e.y) * 0.55;
       limbShape({ x: bx, y: by }, h, 4.4, 4, back ? '#1a120c' : '#2a1d14', 0);
@@ -1167,15 +1181,18 @@
     }
     function arm(k, back) {
       var sk = back ? skinB : skin;
-      limbShape(p.N, p[k + 'e'], 5.4, 4.2, sk, 1.8);
-      if (c.guard) limbShape(p[k + 'e'], p[k + 'h'], 4.4, 3.8, back ? '#0e0e0e' : c.guard, 0.4);
-      else limbShape(p[k + 'e'], p[k + 'h'], 4.4, 3.6, sk, 0.9);
+      var dg = ctx.createRadialGradient(p.N.x - 1.5, p.N.y - 2, 1, p.N.x, p.N.y, 7.5); dg.addColorStop(0, shadeC(sk, 0.3)); dg.addColorStop(1, shadeC(sk, -0.35));
+      ctx.fillStyle = dg; ctx.beginPath(); ctx.arc(p.N.x, p.N.y + 1, 7, 0, 7); ctx.fill(); ctx.strokeStyle = 'rgba(6,3,2,.9)'; ctx.lineWidth = 1.2; ctx.stroke();
+      limbShape(p.N, p[k + 'e'], 6.4, 4.6, sk, 2.8);
+      if (c.guard) limbShape(p[k + 'e'], p[k + 'h'], 5, 4.2, back ? '#0e0e0e' : c.guard, 1);
+      else limbShape(p[k + 'e'], p[k + 'h'], 5, 3.8, sk, 1.4);
       // sargılı yumruk
       var h = p[k + 'h'];
       var g = ctx.createRadialGradient(h.x - 1.2, h.y - 1.2, 0.5, h.x, h.y, 5);
       g.addColorStop(0, '#fff'); g.addColorStop(0.5, c.wrap); g.addColorStop(1, shadeC(c.wrap, -0.5));
-      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(h.x, h.y, 4.6, 0, 7); ctx.fill();
-      ctx.strokeStyle = 'rgba(0,0,0,.4)'; ctx.lineWidth = 0.6; ctx.stroke();
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(h.x, h.y, 5.6, 0, 7); ctx.fill();
+      ctx.strokeStyle = 'rgba(6,3,2,.9)'; ctx.lineWidth = 1.2; ctx.stroke();
+      ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 0.7; ctx.beginPath(); ctx.arc(h.x, h.y, 3.4, -0.9, 0.9); ctx.stroke();
       if (c.top === 'coat' || c.top === 'vest' && c.n === 'Fatih') {
         // kaftan kolu omuz kısmı
         if (c.top === 'coat') limbShape(p.N, { x: (p.N.x + p[k + 'e'].x) / 2, y: (p.N.y + p[k + 'e'].y) / 2 }, 6.2, 5.6, back ? shadeC(c.tc, -0.35) : c.tc, 0.5);
@@ -1183,7 +1200,7 @@
     }
     // vücut yerel çerçevesi
     var ux = p.N.x - p.H.x, uy = p.N.y - p.H.y, tang = Math.atan2(ux, -uy);
-    function torsoFrame(fn) { ctx.save(); ctx.translate(p.H.x, p.H.y); ctx.rotate(tang); ctx.scale(f, 1); fn(); ctx.restore(); }
+    function torsoFrame(fn) { ctx.save(); ctx.translate(p.H.x, p.H.y); ctx.rotate(tang); ctx.scale(f * 1.22, 1.04); fn(); ctx.restore(); }
     // arkadaki pelerin / kaftan
     if (c.top === 'vest' || c.top === 'coat' || c.top === 'pelt') torsoFrame(function () {
       ctx.fillStyle = shadeC(c.tc, -0.35);
@@ -1202,7 +1219,7 @@
       ctx.closePath();
       var g = ctx.createLinearGradient(12, -T, -10, 0);
       g.addColorStop(0, shadeC(skin, 0.25)); g.addColorStop(0.5, skin); g.addColorStop(1, shadeC(skin, -0.45));
-      ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = 'rgba(10,5,2,.6)'; ctx.lineWidth = 0.7; ctx.stroke();
+      ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = 'rgba(6,3,2,.92)'; ctx.lineWidth = 1.2; ctx.stroke();
       // kas çizgileri
       ctx.strokeStyle = 'rgba(60,25,10,.45)'; ctx.lineWidth = 0.7;
       ctx.beginPath(); ctx.moveTo(1, -T + 2); ctx.quadraticCurveTo(7, -T * 0.62, 11, -T * 0.66); ctx.stroke();
@@ -1232,7 +1249,7 @@
     leg('l1', false);
     // kafa
     var hd = p.Hd, hang = Math.atan2(hd.x - p.N.x, -(hd.y - p.N.y));
-    ctx.save(); ctx.translate(hd.x, hd.y); ctx.rotate(hang); ctx.scale(f, 1);
+    ctx.save(); ctx.translate(hd.x, hd.y); ctx.rotate(hang); ctx.scale(f * 0.92, 0.92);
     var R = 10.5;
     // boyun
     limbShape({ x: -1, y: R + 4 }, { x: 0, y: 4 }, 4.6, 4.2, skinB, 0);
@@ -1282,6 +1299,7 @@
     }
     ctx.restore();
     arm('a1', false);
+    ctx.restore();
     // takım rengi zemin halkası
     ctx.strokeStyle = tc; ctx.globalAlpha = 0.7; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.ellipse(p.H.x, GROUND + 2, 18, 3.2, 0, 0, 7); ctx.stroke(); ctx.globalAlpha = 1;
     // isim / rütbe / seviye
@@ -1302,7 +1320,7 @@
     var at = e[2] === 'head' ? dp.Hd : e[2] === 'foot' ? dp.l1h : e[2] === 'body' ? { x: (dp.H.x + dp.N.x) / 2, y: (dp.H.y + dp.N.y) / 2 } : dp.Hd;
     var dir = def === 'h' ? -1 : 1;  // savunanın geri yönü
     if (type === 'efx') { efxStart(e, an); return; }
-    if (type === 'hit') { G.fx.push({ x: at.x, y: at.y, t: now(), big: opt.big }); for (var i = 0; i < (opt.big ? 14 : 7); i++) G.parts.push({ x: at.x, y: at.y, vx: (Math.random() - 0.3) * 220 * dir, vy: -Math.random() * 180, r: 0.8 + Math.random() * 1.2, c: '#ffd27a', life: 0.35, spark: true }); }
+    if (type === 'hit') { if (an === G.anim || G.dbg) an.t0 += opt.big ? 110 : 60; G.zoom = now(); G.fx.push({ x: at.x, y: at.y, t: now(), big: opt.big }); for (var i = 0; i < (opt.big ? 14 : 7); i++) G.parts.push({ x: at.x, y: at.y, vx: (Math.random() - 0.3) * 220 * dir, vy: -Math.random() * 180, r: 0.8 + Math.random() * 1.2, c: '#ffd27a', life: 0.35, spark: true }); }
     else if (type === 'blood') {
       var b = e[3] && e[3].n ? e[3].n : 8, src = opt.pool ? { x: dp.H.x, y: GROUND - 6 } : dp.Hd;
       for (var j = 0; j < b; j++) G.parts.push({ x: src.x, y: src.y, vx: (Math.random() * 1.2 - 0.2) * (opt.pool ? 70 : 190) * dir, vy: -(opt.up ? 260 : 120) * Math.random() - 40, r: 1 + Math.random() * 2.2, c: Math.random() < 0.5 ? '#b3001b' : '#7a0010', life: 1.6, blood: true });
@@ -1318,5 +1336,5 @@
     if (type === 'hit' && navigator.vibrate && an === G.anim) try { navigator.vibrate(opt.big ? 40 : 15); } catch (er) {}
   }
 
-  window.LGSVS = { page: page, stop: stop, _play: function (ch, oc, tier, mv) { G.dbg = 1; G.dbgCh = { h: ch, g: oc }; var tl = buildTL('h', tier, mv); G.anim = { name: tl.name, label: tl.label, att: 'h', t0: now() + 100, as: 0, tl: tl, fired: {}, tier: tier, started: true }; G.efx = []; G.parts = []; G.text = null; G.quake = null; G.hold = null; G.cam = null; document.getElementById('vsStage').classList.add('big'); return tl.d; }, _dbg: function () { return { off: off, rtt: bestRtt, now: now(), an: G && G.anim ? now() - G.anim.t0 : null, ph: cur && cur.st && cur.st.ph }; } };
+  window.LGSVS = { page: page, stop: stop, _demo: function (a, b) { cur = { role: 'h', host: { name: 'Mert', ch: a || 'fatih' }, guest: { name: 'Ali', ch: b || 'yavuz' }, qs: [], st: { ph: 'x', i: 0, hp: { h: 100, g: 100 } } }; gameState(cur); G.dbg = 1; }, _play: function (ch, oc, tier, mv) { G.dbg = 1; G.dbgCh = { h: ch, g: oc }; var tl = buildTL('h', tier, mv); G.anim = { name: tl.name, label: tl.label, att: 'h', t0: now() + 100, as: 0, tl: tl, fired: {}, tier: tier, started: true }; G.efx = []; G.parts = []; G.text = null; G.quake = null; G.hold = null; G.cam = null; document.getElementById('vsStage').classList.add('big'); return tl.d; }, _dbg: function () { return { off: off, rtt: bestRtt, now: now(), an: G && G.anim ? now() - G.anim.t0 : null, ph: cur && cur.st && cur.st.ph }; } };
 })();
