@@ -12,7 +12,7 @@ LGS.add({
     "Tarım ve ticaret faaliyetlerinin gelişmesine"
    ],
    "a": "B",
-   "s": "<p>Metinde dinin bireyin varoluşsal sorularına cevap verdiği, yalnızlık ve ölüm korkusunu aşmasına yardım ettiği ve iç huzur sağladığı anlatılıyor. Bu, dinin <b>bireyin manevi dünyasına</b> katkısıdır (B).</p><p>A’daki üretim, C’deki mimari ve D’deki tarım-ticaret metinde hiç geçmez. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Din insana «nereden geldiği, niçin yaşadığı ve öldükten sonra nereye gideceği» sorularına cevap verir.</li> <li>İnanan insan «ölüm korkusunu, yalnızlık ve hiçlik duygusunu aşarak iç huzura kavuşur».</li></ul><b>İstenen</b><p>Metinde dinin <b>neye</b> katkı sağladığı anlatılıyor?</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b> Soru, dinin <b>birey</b> üzerindeki etkisini soruyor: hayatın anlamı ve iç huzur.</li> <li><b>İpucu ifadeleri bağla</b> «hayatın anlamını ve amacını sorgulama», «iç huzura kavuşur» ifadeleri insanın iç dünyasıyla, yani <b>manevi</b> yönüyle ilgilidir. Din, varoluş sorularına cevap vererek hayatı anlamlandırır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Üretim, teknoloji metinde hiç geçmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Hayatın anlamı ve iç huzur → bireyin manevi dünyası. Doğru.</td></tr><tr><td>C</td><td>Mimari süsleme metinde yok.</td></tr><tr><td>D</td><td>Tarım ve ticaret metinde yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Metinde «anlam, amaç, huzur, korku, yalnızlık» gibi iç dünya kelimeleri varsa cevap “bireysel/manevi” etkidir.</div><div class=\"sv-w\"><b>Tuzak:</b> Diğer şıklarda da dinin etkileri var gibi görünür (sanat, ticaret), ama metin bunlardan söz etmiyor; metne bağlı kal.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -24,7 +24,7 @@ LGS.add({
     "İnsanı toplumsal sorumluluklarından ve çalışmaktan uzaklaştırması"
    ],
    "a": "D",
-   "s": "<p>Din insana hayatın anlamını (A), güzel ahlakı (B), sabrı, ümidi ve iç huzuru (C) kazandırır. Din insanı sorumluluklarından uzaklaştırmaz; tam tersine ona güçlü bir <b>sorumluluk bilinci</b> kazandırır. Bu yüzden D dinin bireye kazandırdıkları arasında gösterilemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Dinin bireye kazandırdığı olumlu özellikler soruluyor.</li> <li>Soru kökü olumsuz: «gösterilemez».</li></ul><b>İstenen</b><p>Dinin bireye kazandırdıkları arasında <b>olmayan</b> şık.</p></div><ol class=\"sv-s\"><li><b>Dinin bireye etkilerini hatırla</b> Din insana hayatın anlamını, güzel ahlakı, sabır-ümit-iç huzuru ve güçlü bir <b>sorumluluk bilinci</b> kazandırır.</li> <li><b>Şıkları bu bilgiyle karşılaştır</b> Din çalışmayı ve topluma faydalı olmayı teşvik eder; insanı sorumluluktan uzaklaştırması dinin öğretisine terstir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hayata anlam ve amaç katar → doğru bir etki.</td></tr><tr><td>B</td><td>Güzel ahlak kazandırır → doğru bir etki.</td></tr><tr><td>C</td><td>Sabır, ümit, iç huzur verir → doğru bir etki.</td></tr><tr class=\"ok\"><td>D</td><td>Din sorumluluk bilinci kazandırır; sorumluluktan uzaklaştırmaz → gösterilemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Olumsuz soru köklerinde (gösterilemez, söylenemez) dört şıktan üçü doğru bilgidir; “aykırı” olanı ara.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -36,7 +36,7 @@ LGS.add({
     "Sanat ve edebiyat çalışmalarını sınırlandırdığını"
    ],
    "a": "C",
-   "s": "<p>İftar davetleri, bayramlaşma, zekât ve sadaka, cemaatle kılınan namazlar insanları bir araya getirir. Böylece <b>birlik, yardımlaşma ve dayanışma</b> güçlenir (C).</p><p>A ve B bu örneklerin tam tersini söyler; bu uygulamalar bencilliği ve sınıflar arasındaki uçurumu azaltır. D’deki sanat ve edebiyat örneklerde hiç geçmez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«komşuların birbirini iftar sofralarına davet etmesi», bayram ziyaretleri</li> <li>«zekât ve sadakalarla ihtiyaç sahiplerinin gözetilmesi», «omuz omuza saf tutması»</li></ul><b>İstenen</b><p>Bu örneklerin gösterdiği <b>toplumsal</b> işlev.</p></div><ol class=\"sv-s\"><li><b>Örneklerin ortak noktasını bul</b> İftara davet, ziyaret, zekât-sadaka ve cemaatle namaz; hepsi insanları <b>bir araya getiren</b>, birbirini gözettiren davranışlardır.</li> <li><b>Bilgiyle bağla</b> Din toplumda sevgi, saygı, yardımlaşma, birlik ve dayanışmayı güçlendirir. Örnekler tam olarak bunu gösteriyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Örneklerin hepsi başkasını düşünmekle ilgili; bireysel çıkar değil.</td></tr><tr><td>B</td><td>Zekât ve sadaka zengin-fakir uçurumunu azaltır, artırmaz.</td></tr><tr class=\"ok\"><td>C</td><td>Sevgi, yardımlaşma, birlik ve dayanışma → doğru.</td></tr><tr><td>D</td><td>Sanat ve edebiyattan hiç söz edilmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bir araya gelme, paylaşma, ziyaret” örnekleri → dinin toplumsal etkisi: birlik ve dayanışma.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -48,7 +48,7 @@ LGS.add({
     "İbadetleri gizlice yerine getirmek"
    ],
    "a": "A",
-   "s": "<p>Hadiste kişinin kendisi için istediği iyiliği kardeşi için de istemesi öğütlenir. Bu, <b>empati kurmak, bencillikten uzaklaşmak ve kardeşlik ahlakıdır</b> (A).</p><p>B ve C hadisin karşı çıktığı bencil tutumlardır. D’deki ibadetlerin gizli yapılması ise hadiste hiç geçmez. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Sizden biriniz, kendisi için istediğini (mümin) kardeşi için de istemedikçe gerçek anlamda iman etmiş olmaz.»</li></ul><b>İstenen</b><p>Hadiste vurgulanan, toplumsal barışın temeli olan değer.</p></div><ol class=\"sv-s\"><li><b>Hadisin anahtar ifadesi</b> «kendisi için istediğini kardeşi için de istemek» = kendini başkasının yerine koymak, yani <b>empati</b> ve kardeşlik.</li> <li><b>Değerle bağla</b> Hadis bu tutumu imanın olgunluğuna bağlıyor. İnsanlar birbirine iyilik istediğinde sevgi, kardeşlik ve toplumsal barış oluşur.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Empati, sevgi, kardeşlik → hadisin tam mesajı.</td></tr><tr><td>B</td><td>Bireysel kazancı üstün tutmak hadisin tersidir.</td></tr><tr><td>C</td><td>Hadis «kardeşi için» diyor; yalnızca aileyle sınırlı değil.</td></tr><tr><td>D</td><td>İbadetin gizli yapılması hadiste geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kendin için istediğini başkası için de iste” = empati kuralı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -60,7 +60,7 @@ LGS.add({
     "Toplumda bencilliğin, kıskançlığın ve sınıf çatışmalarının artmasını"
    ],
    "a": "D",
-   "s": "<p>Zekât, sadaka ve vakıf gibi yardımlaşma uygulamaları zengin ile fakir arasındaki bağları güçlendirir (A), dayanışma bilincini artırır (B) ve yoksulluktan doğan sorunları azaltır (C).</p><p>Bu uygulamalar kıskançlığı ve sınıf çatışmalarını artırmaz, tersine azaltır. Bu yüzden D bu uygulamaların sonucu olamaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zekât ve sadakanın yaygınlaşması</li> <li>Vakıf ve aşevleriyle yoksul, yetim ve öğrencilerin desteklenmesi</li> <li>Soru kökü olumsuz: «doğurmaz»</li></ul><b>İstenen</b><p>Bu yardımlaşmanın <b>sonucu olamayacak</b> durum.</p></div><ol class=\"sv-s\"><li><b>Yardımlaşmanın sonuçlarını düşün</b> Zekât ve sadaka zengin ile fakir arasında köprü kurar; yoksulluğu azaltır, sevgi ve güveni artırır.</li> <li><b>Ters sonucu bul</b> Yardımlaşma bencilliği ve kıskançlığı <b>azaltır</b>. Bu yüzden “artması” beklenmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zengin-fakir arasındaki sevgi ve güven güçlenir → olur.</td></tr><tr><td>B</td><td>Dayanışma bilinci artar → olur.</td></tr><tr><td>C</td><td>Yoksulluk kaynaklı sorunlar azalır → olur.</td></tr><tr class=\"ok\"><td>D</td><td>Bencillik ve sınıf çatışması azalır, artmaz → doğurmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zekâtın toplumsal faydası: fakirin kıskançlığını, zenginin bencilliğini önler; toplumda “köprü” kurar.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -72,7 +72,7 @@ LGS.add({
     "Geleneklerin dinî inançları ortadan kaldırdığını"
    ],
    "a": "A",
-   "s": "<p>Örneklerdeki ezanla isim koyma, mevlit, bayramlaşma ve mahya, dinin milletimizin <b>örf, âdet ve geleneklerini</b> şekillendirdiğini gösterir (A).</p><p>B yanlıştır, çünkü bu gelenekler farz ibadet değildir. C, örneklerin gösterdiği etkileşimi inkâr ettiği için yanlıştır. D’deki gibi bir bilgi metinde yoktur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bebeğin kulağına ezan-kamet okunması, mevlit okutulması</li> <li>Bayramda el öpme, Ramazan’da mahya kurma</li> <li>«yüzyıllardır yaşatılan geleneklerimiz»</li></ul><b>İstenen</b><p>Bu örneklerin gösterdiği yargı.</p></div><ol class=\"sv-s\"><li><b>Örneklerin türü</b> Hepsi dinî kaynaklı ama toplumda <b>gelenek, örf ve âdet</b> hâline gelmiş uygulamalardır.</li> <li><b>Bilgiyle bağla</b> Din, toplumun kültürünü, örf ve âdetlerini derinden etkiler. Örnekler bu etkiyi gösteriyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Din, örf-âdet ve gelenekleri şekillendirmiştir → doğru.</td></tr><tr><td>B</td><td>Mahya kurmak, el öpmek farz ibadet değildir.</td></tr><tr><td>C</td><td>Örnekler din-kültür etkileşiminin ta kendisi.</td></tr><tr><td>D</td><td>Gelenekler dinî inancı yaşatıyor, ortadan kaldırmıyor.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Bu gelenekler dinî duygudan doğsa da “farz” değildir; gelenek ile farz ibadeti karıştırma.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -84,7 +84,7 @@ LGS.add({
     "Hat ve tezhip sanatları zamanla tamamen terk edilmiştir."
    ],
    "a": "A",
-   "s": "<p>Örnekler mimariden (cami, külliye), süsleme sanatlarından (hat, tezhip, ebru) ve edebiyattan (Mevlid) alınmıştır. Hepsi dinin <b>kültür ve sanatı zenginleştirdiğini</b> gösterir (A).</p><p>B örneklerin gösterdiğinin tersidir. C yanlıştır, çünkü Mevlid bir edebiyat eseridir. D’deki gibi bir bilgi metinde yoktur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mimari: Selimiye Camisi, külliyeler</li> <li>Süsleme: hat, tezhip, ebru</li> <li>Edebiyat: Süleyman Çelebi’nin Mevlid’i</li></ul><b>İstenen</b><p>Örneklerden ulaşılabilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Örnekleri alanlara ayır</b> Örnekler üç alandan: <b>mimari</b> (cami, külliye), <b>süsleme sanatları</b> (hat, tezhip, ebru), <b>edebiyat</b> (Mevlid).</li> <li><b>Ortak yargıyı kur</b> Hepsi dinî duygu ve değerlerden ilham almıştır; demek ki din sanatı ve kültürü zenginleştirmiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Din; mimari, edebiyat ve süsleme sanatlarına ilham vermiştir → doğru.</td></tr><tr><td>B</td><td>Örneklerin hepsi din-sanat bağını gösteriyor.</td></tr><tr><td>C</td><td>Mevlid bir edebiyat eseridir; yanlış.</td></tr><tr><td>D</td><td>Metinde terk edildiğine dair bilgi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Birden çok alandan örnek verildiyse en kapsamlı (hepsini içine alan) yargıyı seç.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -96,7 +96,7 @@ LGS.add({
     "İhtikâr (Malı saklayıp fiyatı yükselince satmak, karaborsacılık)"
    ],
    "a": "D",
-   "s": "<p>Hat ve tezhip süsleme sanatlarıdır (A, B). Külliye ise bir mimari yapı topluluğudur (C).</p><p><b>İhtikâr (karaborsacılık)</b> bir sanat değil, dinin yasakladığı ticari bir haksızlıktır; malın korunması ilkesine aykırıdır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hat, tezhip, külliye, ihtikâr kavramları ve açıklamaları</li></ul><b>İstenen</b><p>Dinin etkisiyle gelişen mimari/süsleme sanatlarıyla <b>ilgili olmayan</b> kavram.</p></div><ol class=\"sv-s\"><li><b>Kavramları sınıflandır</b> Hat ve tezhip <b>süsleme sanatı</b>, külliye <b>mimari</b> yapı topluluğudur.</li> <li><b>Farklı olanı bul</b> İhtikâr, malı saklayıp fiyat artınca satmak yani <b>karaborsacılıktır</b>; bir sanat değil, ticari ahlak ihlalidir (malın korunması konusu).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hat → süsleme sanatı.</td></tr><tr><td>B</td><td>Tezhip → süsleme sanatı.</td></tr><tr><td>C</td><td>Külliye → mimari.</td></tr><tr class=\"ok\"><td>D</td><td>İhtikâr → karaborsacılık; sanatla ilgisi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İhtikâr = karaborsacılık; dinin yasakladığı bir ticari haksızlıktır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -108,7 +108,7 @@ LGS.add({
     "Ağaç dikmenin yalnızca ibadet mekânlarıyla sınırlı tutulmasına"
    ],
    "a": "B",
-   "s": "<p>Fidan dikmeyi teşvik etmek ve akan nehirde bile suyu israf etmemeyi öğütlemek, dinin <b>çevrenin korunmasına ve doğal kaynakların tasarruflu kullanılmasına</b> verdiği önemi gösterir (B).</p><p>A hadislerin amacına ters düşer. C ve D’deki “yalnızca” sınırlamaları hadislerde yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Kıyametin kopacağını bilseniz bile elinizdeki fidanı dikiniz.»</li> <li>«Akan bir nehrin kenarında abdest alıyor olsanız bile suyu israf etmeyiniz.»</li></ul><b>İstenen</b><p>Hadislerde önem verilen konu.</p></div><ol class=\"sv-s\"><li><b>Birinci hadis</b> Son ana kadar fidan dikmeyi öğütler → <b>çevreyi koruma ve geliştirme</b>.</li> <li><b>İkinci hadis</b> Su bol olsa bile israf edilmemeli → <b>doğal kaynakları israf etmeme</b>.</li> <li><b>Birleştir</b> İki hadisin ortak mesajı: çevreyi korumak ve nimetleri israf etmemek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Fidan dikmek orman açmanın tersidir.</td></tr><tr class=\"ok\"><td>B</td><td>Çevrenin korunması ve israf etmeme → doğru.</td></tr><tr><td>C</td><td>Hadis suyun abdestte bile israf edilmemesini söylüyor; tarımla sınırlamıyor.</td></tr><tr><td>D</td><td>«Elinizdeki fidan» her yer içindir; ibadet mekânıyla sınırlı değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bol olsa bile israf etme” ifadesi israfın miktara değil tutuma bağlı olduğunu gösterir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -120,7 +120,7 @@ LGS.add({
     "Canın korunması"
    ],
    "a": "B",
-   "s": "<p>Kökte vurgulanan şey insanın <b>doğru düşünme ve karar verme yeteneğidir</b>. Bu yetenek akıldır; insanı dinen sorumlu kılan da akıldır. İçki ve uyuşturucu aklı örttüğü için bu yasakla öncelikle <b>aklın korunması</b> amaçlanır (B).</p><p>Kumar malla da ilgilidir (A) ve bu maddeler sağlığa da zarar verir (D). Ancak kök bunları değil, düşünme yeteneğinin korunmasını soruyor. C’deki nesille ilgili bir ifade metinde yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mâide 90: içki, kumar, dikili taşlar, fal okları yasak</li> <li>Yasaklanan alışkanlıklar «doğru düşünme, iyiyi kötüden ayırt etme ... yeteneğini ortadan kaldırır»</li></ul><b>İstenen</b><p>Bu yasakla <b>öncelikle</b> korunan temel değer.</p></div><ol class=\"sv-s\"><li><b>Temel değerleri hatırla</b> Beş temel değer (zarûrât-ı dîniyye): <b>can, akıl, mal, nesil, din</b>.</li> <li><b>İpucuyu bağla</b> Soru, zarar verilen yeteneği açıkça söylüyor: «doğru düşünme, iyiyi kötüden ayırt etme». Bunlar <b>aklın</b> işlevidir. İçki ve uyuşturucu aklı örter.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kumar mala zarar verir ama soru “düşünme yeteneği”ni vurguluyor.</td></tr><tr class=\"ok\"><td>B</td><td>Düşünme ve ayırt etme yeteneği → aklın korunması.</td></tr><tr><td>C</td><td>Nesil aile ve soyla ilgilidir.</td></tr><tr><td>D</td><td>Sağlığa zararı var, ama soru öncelikle aklı vurguluyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İçki/uyuşturucu yasağı denince ilk akla gelen değer: <b>akıl</b>.</div><div class=\"sv-w\"><b>Tuzak:</b> Zararlı alışkanlıklar can ve mala da zarar verir; “öncelikle” kelimesi ve metindeki «düşünme» ipucu aklı işaret ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -132,7 +132,7 @@ LGS.add({
     "Canın korunması"
    ],
    "a": "A",
-   "s": "<p>Hırsızlık, rüşvet, faiz, hile ve israf yasaklarının hepsi mülkiyet hakkını ve emeği korur, haksız kazancı ve malın boşa harcanmasını önler. Bunlar <b>malın korunması</b> ilkesiyle doğrudan ilgilidir (A).</p><p>Neslin korunması aile ve iffetle (B), aklın korunması içki ve uyuşturucu gibi zararlı maddelerle (C), canın korunması da yaşama hakkıyla (D) ilgilidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Teşvik: alın teriyle helal kazanç</li> <li>Yasak: hırsızlık, gasp, rüşvet, faiz, kumar, karaborsacılık, ölçü-tartıda hile, israf</li></ul><b>İstenen</b><p>Bu yasakların doğrudan ilgili olduğu temel değer.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Sayılanların hepsi insanların <b>mülkü, parası, emeği</b> ile ilgili haksızlıklar ya da kayıplardır.</li> <li><b>Değerle eşle</b> Mülkü ve emeği güvence altına almak = <b>malın korunması</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hırsızlık, rüşvet, hile, israf → malın korunması.</td></tr><tr><td>B</td><td>Nesil aile ve soyla ilgilidir.</td></tr><tr><td>C</td><td>Akıl içki-uyuşturucu ile ilgilidir.</td></tr><tr><td>D</td><td>Can hayat ve sağlıkla ilgilidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Malın korunması anahtar kelimeleri: hırsızlık, rüşvet, faiz, kumar, hile, israf, karaborsa, helal kazanç.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -144,7 +144,7 @@ LGS.add({
     "Dinin korunması"
    ],
    "a": "C",
-   "s": "<p>İş güvenliği önlemleri almak ve kendini tehlikeye atmamak insan hayatını güvence altına alır. Bu, <b>canın korunması</b> (yaşama hakkı) ile doğrudan ilgilidir (C).</p><p>Metinde mülkiyet (A), aile ve nesil (B) ya da inanç özgürlüğü (D) ile ilgili bir ifade yoktur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İşçilere baret, emniyet kemeri, çelik burunlu ayakkabı</li> <li>Bakara 195: «...Kendi ellerinizle kendinizi tehlikeye atmayın...»</li></ul><b>İstenen</b><p>Bu duyarlılığın ilgili olduğu temel değer.</p></div><ol class=\"sv-s\"><li><b>Davranışın amacı</b> Güvenlik ekipmanları ve iskele kuralı iş kazasını, yani <b>ölüm ve yaralanmayı</b> önler.</li> <li><b>Ayetle bağla</b> «kendinizi tehlikeye atmayın» ayeti insan hayatını korumayı emreder → <b>canın korunması</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Malla ilgili bir ifade yok.</td></tr><tr><td>B</td><td>Aile/soy konusu yok.</td></tr><tr class=\"ok\"><td>C</td><td>Hayatı korumak → canın korunması.</td></tr><tr><td>D</td><td>İnanç özgürlüğü konusu yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Trafik kuralı, emniyet kemeri, iş güvenliği, ilk yardım, kan bağışı → <b>can</b>.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -156,7 +156,7 @@ LGS.add({
     "Neslin korunması"
    ],
    "a": "D",
-   "s": "<p>Ailenin sağlam temellere dayanması, iffetin korunması ve çocukların ahlaklı yetiştirilmesi <b>neslin korunması</b> ilkesiyle ilgilidir (D).</p><p>Metinde yaşama hakkından (A), mülkiyetten (B) ya da aklı örten zararlı maddelerden (C) söz edilmez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Meşru evlilikle aile kurulması</li> <li>Eşler arası sevgi, sadakat; çocuklara güzel isim, ahlaklı yetiştirme</li> <li>«Aile kurumunun ve iffetin korunması»</li></ul><b>İstenen</b><p>Bu öğütlerin hangi temel değer kapsamında olduğu.</p></div><ol class=\"sv-s\"><li><b>Konuyu belirle</b> Öğütlerin hepsi <b>aile</b> ve <b>çocukların yetiştirilmesi</b> ile ilgili.</li> <li><b>Değerle eşle</b> Aileyi, iffeti ve gelecek kuşakları korumak = <b>neslin korunması</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Can hayatla ilgilidir.</td></tr><tr><td>B</td><td>Mal mülkle ilgilidir.</td></tr><tr><td>C</td><td>Akıl düşünme yeteneğiyle ilgilidir.</td></tr><tr class=\"ok\"><td>D</td><td>Aile, iffet, çocuk yetiştirme → neslin korunması.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Aile, evlilik, iffet, çocuk eğitimi → <b>nesil</b>.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -168,7 +168,7 @@ LGS.add({
     "Dinin korunması"
    ],
    "a": "A",
-   "s": "<p>Emanete sahip çıkmak, kul hakkına girmemek ve ticarette dürüst davranarak haksız kazançtan kaçınmak <b>malın korunması</b> ilkesiyle doğrudan ilgilidir (A).</p><p>Ahmet Bey’in davranışlarında aile ve nesil (B), aklı örten maddeler (C) ya da inanç özgürlüğü (D) ile ilgili bir yön yoktur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ahmet Bey «emanet edilen paraları titizlikle korur»</li> <li>«ölçü ve tartıda doğruluktan ayrılmaz», bedeli tam öder</li></ul><b>İstenen</b><p>Bu davranışların ilgili olduğu temel değer.</p></div><ol class=\"sv-s\"><li><b>Davranışları incele</b> Emanet parayı korumak, başkasının hakkına girmemek, doğru tartmak; hepsi <b>başkasının malına</b> saygıdır.</li> <li><b>Değerle eşle</b> Kul hakkına ve mülke saygı = <b>malın korunması</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Para, emanet, ölçü-tartı → malın korunması.</td></tr><tr><td>B</td><td>Aile konusu yok.</td></tr><tr><td>C</td><td>Akılla ilgili bir ifade yok.</td></tr><tr><td>D</td><td>İnanç ya da ibadet konusu yok.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -180,7 +180,7 @@ LGS.add({
     "“Kendileri ile huzur bulasınız diye sizin için türünüzden eşler yaratması O’nun ayetlerindendir...” (Rûm suresi, 21. ayet)"
    ],
    "a": "A",
-   "s": "<p>A’daki ayetler emekle helal kazancı öğütler ve haksız yere mal edinmeyi yasaklar; bu <b>malın korunmasıdır</b>.</p><p>B’deki ayet inanç özgürlüğünü, yani <b>dinin</b> korunmasını anlatır. C’deki ayet yaşama hakkıyla, yani <b>canın</b> korunmasıyla ilgilidir. D’deki ayet ise eşlerden ve aileden söz eder, bu da <b>neslin</b> korunmasıdır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Malın korunması ilkesiyle ilgili ayet soruluyor.</li></ul><b>İstenen</b><p>Malın korunmasıyla <b>doğrudan</b> ilgili ayet.</p></div><ol class=\"sv-s\"><li><b>Şıklardaki ayetlerin konusunu bul</b> Her ayeti hangi temel değerle ilgili olduğuna göre sınıflandır.</li> <li><b>Malla ilgili olanı seç</b> «İnsan için ancak çalıştığının karşılığı vardır» helal kazancı, emeği; «mallarınızı haksız sebeplerle yemeyin» haksız kazancı yasaklar → ikisi de <b>mal</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Çalışma ve haksız kazanç yasağı → malın korunması.</td></tr><tr><td>B</td><td>«Dinde zorlama yoktur» → dinin korunması.</td></tr><tr><td>C</td><td>«Kim bir cana kıyarsa...» → canın korunması.</td></tr><tr><td>D</td><td>Eşlerin yaratılması → neslin korunması.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Necm 39 ve Bakara 188 → mal; Bakara 256 → din; Mâide 32 → can; Rûm 21 → nesil; Mâide 90 → akıl.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -192,7 +192,7 @@ LGS.add({
     "IV"
    ],
    "a": "D",
-   "s": "<p>I. kartta yaşama hakkı (canın korunması), II. kartta inanç özgürlüğü (dinin korunması), III. kartta ticarette dürüstlük ve kul hakkı (malın korunması) doğru eşleştirilmiştir.</p><p>IV. karttaki A’râf 31. ayet ise nimetlerin boşa harcanmasını, yani israfı yasaklar. Bu ayet neslin değil <b>malın korunmasıyla</b> ilgilidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Mâide 32 → can</li> <li>II: Bakara 256 → din</li> <li>III: İsrâ 35 (ölçü-tartı) → mal</li> <li>IV: A’râf 31 «Yiyin, için fakat israf etmeyin» → nesil</li></ul><b>İstenen</b><p>Ayet ile temel değerin <b>yanlış</b> eşleştirildiği kart.</p></div><ol class=\"sv-s\"><li><b>Her ayetin konusunu bul</b> «bir cana kıyarsa» hayat; «dinde zorlama yoktur» inanç özgürlüğü; «ölçüyü tam yapın» ticarette hak; «israf etmeyin» nimetleri boşa harcamamak.</li> <li><b>Kartları kontrol et</b> İsraf yasağı mal ve nimetlerle ilgilidir → <b>malın korunması</b>. Oysa IV. kartta “neslin korunması” yazıyor; yanlış eşleşme budur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I: Can – Mâide 32 → doğru eşleşme.</td></tr><tr><td>B</td><td>II: Din – Bakara 256 → doğru eşleşme.</td></tr><tr><td>C</td><td>III: Mal – İsrâ 35 → doğru eşleşme.</td></tr><tr class=\"ok\"><td>D</td><td>IV: İsraf yasağı mal ile ilgilidir, nesil ile değil → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İsraf yasağı → mal. Nesil için aile/evlilik ayeti (Rûm 21 gibi) gerekir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -204,7 +204,7 @@ LGS.add({
     "4. Çıkış"
    ],
    "a": "A",
-   "s": "<p><b>1. kutu:</b> Trafik kurallarına uymak, emniyet kemeri takmak ve kan davalarını önlemek insan hayatını korur; bu <b>canın korunmasıdır</b>. Sol kola, 2. kutuya gidilir.</p><p><b>2. kutu:</b> Aileye özen göstermek ve çocukları ahlaklı yetiştirmek <b>neslin korunmasıdır</b>. Böylece 1. çıkışa ulaşılır (A).</p><p>2. çıkış, 2. kutuda “aklın korunması” seçilirse; 3. ve 4. çıkışlar ise 1. kutuda yanlış olarak “malın korunması” seçilip sağ kola gidilirse bulunur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1. kutu: trafik kuralı, emniyet kemeri, kan davasını önleme</li> <li>2. kutu: aileye özen, çocukları ahlaklı yetiştirme</li> <li>3. kutu: inanç ve ibadet özgürlüğüne saygı</li></ul><b>İstenen</b><p>Doğru seçimlerle ulaşılan çıkış.</p></div><ol class=\"sv-s\"><li><b>1. kutu</b> Trafik kuralı, emniyet kemeri ve kan davasını önlemek insan hayatını korur → <b>canın korunması</b>. Sol kola, 2. kutuya geçilir.</li> <li><b>2. kutu</b> Aile kurumu ve çocuk yetiştirme → <b>neslin korunması</b>. Sol kol 1. çıkışa iner.</li> <li><b>Sonuç</b> Can → Nesil yolu <b>1. çıkışa</b> ulaşır. 3. kutuya hiç gidilmez.</li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 480 230\" width=\"480\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\" fill=\"#1e293b\" text-anchor=\"middle\"><rect x=\"120\" y=\"8\" width=\"240\" height=\"34\" rx=\"6\" fill=\"#ecfeff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"240\" y=\"30\">1. kutu: trafik, emniyet kemeri</text><line x1=\"200\" y1=\"42\" x2=\"120\" y2=\"92\" stroke=\"#16a34a\" stroke-width=\"3\"/><line x1=\"280\" y1=\"42\" x2=\"360\" y2=\"92\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"130\" y=\"68\" fill=\"#16a34a\" font-weight=\"bold\">Can ✓</text><text x=\"350\" y=\"68\" fill=\"#94a3b8\">Mal ✗</text><rect x=\"20\" y=\"92\" width=\"200\" height=\"34\" rx=\"6\" fill=\"#ecfeff\" stroke=\"#0e7490\" stroke-width=\"2\"/><text x=\"120\" y=\"114\">2. kutu: aile, çocuk</text><rect x=\"260\" y=\"92\" width=\"200\" height=\"34\" rx=\"6\" fill=\"#f8fafc\" stroke=\"#94a3b8\"/><text x=\"360\" y=\"114\" fill=\"#94a3b8\">3. kutu (gidilmez)</text><line x1=\"90\" y1=\"126\" x2=\"60\" y2=\"176\" stroke=\"#16a34a\" stroke-width=\"3\"/><line x1=\"150\" y1=\"126\" x2=\"180\" y2=\"176\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"52\" y=\"152\" fill=\"#16a34a\" font-weight=\"bold\">Nesil ✓</text><text x=\"196\" y=\"152\" fill=\"#94a3b8\">Akıl ✗</text><rect x=\"15\" y=\"176\" width=\"90\" height=\"32\" rx=\"5\" fill=\"#16a34a\"/><text x=\"60\" y=\"197\" fill=\"#ffffff\" font-weight=\"bold\">1. Çıkış</text><rect x=\"135\" y=\"176\" width=\"90\" height=\"32\" rx=\"5\" fill=\"#f1f5f9\" stroke=\"#94a3b8\"/><text x=\"180\" y=\"197\" fill=\"#64748b\">2. Çıkış</text></svg><figcaption>Yeşil yol doğru cevaplarla izlenen yoldur: Can → Nesil → 1. Çıkış.</figcaption></figure><div class=\"sv-t\"><b>Püf nokta:</b> Dallanmış ağaçta her kutuyu ayrı ayrı çöz, sadece gerçekten gittiğin yolu takip et.</div><div class=\"sv-w\"><b>Tuzak:</b> 3. kutu da doğru bilgi içerir (din), ama ilk kutuda “can” seçildiği için o kola hiç geçilmez.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -216,7 +216,7 @@ LGS.add({
     "Dini kendi kişisel çıkarları için kullanan kişilere karşı bilinçli olmak"
    ],
    "a": "B",
-   "s": "<p>Türbelere bez bağlamak, kurşun döktürmek ve fala inanmak İslam’ın özünde yeri olmayan batıl inançlardır, yani <b>hurafedir</b>. Bu davranışlar dinin korunması ilkesine aykırıdır (B).</p><p>A dini doğru kaynaktan öğrenmeyi, C inanç özgürlüğüne saygıyı, D de dinin istismar edilmesine karşı uyanık olmayı anlatır. Üçü de dinin korunması ilkesine uygundur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Dinin korunması: inanç özgürlüğü + dinin «Kur’an ve Sünnet’e dayanmayan batıl inançlardan uzak tutulması»</li> <li>Âlimler bid’at ve hurafeye karşı uyarmıştır.</li></ul><b>İstenen</b><p>Dinin korunması ilkesine <b>aykırı</b> davranış.</p></div><ol class=\"sv-s\"><li><b>İlkeyi iki parçaya ayır</b> 1) Kimse inancından dolayı zorlanmamalı. 2) Din, hurafe ve bid’atlerden arındırılmalı; doğru kaynaktan öğrenilmeli.</li> <li><b>Aykırı olanı bul</b> Türbeye bez bağlamak, kurşun döktürmek, fala inanmak dinde dayanağı olmayan <b>hurafelerdir</b>; dinin özünü bozar.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kur’an ve sahih sünneti rehber edinmek → ilkeye uygun.</td></tr><tr class=\"ok\"><td>B</td><td>Bez bağlama, kurşun, fal → hurafe, ilkeye aykırı.</td></tr><tr><td>C</td><td>İnanç özgürlüğüne saygı → ilkeye uygun.</td></tr><tr><td>D</td><td>İstismarcılara karşı bilinçli olmak → dini korur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hurafe = akla ve dine aykırı batıl inanç (kurşun, çaput, nazar boncuğu, uğursuzluk).</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -228,7 +228,7 @@ LGS.add({
     "4"
    ],
    "a": "D",
-   "s": "<p>1. ilke dinin bireysel ve toplumsal etkilerini, 2. ilke malın korunmasını, 3. ilke de Hz. Yusuf’un örnek erdemlerini doğru anlatır.</p><p>4. ilke yanlıştır. Bakara suresi 256. ayette <i>“Dinde zorlama yoktur”</i> buyrulur. İslam’da inanç özgürlüğü esastır ve dinin korunması zorlamayı değil, bu özgürlüğü güvenceye almayı kapsar. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Din bireye anlam ve huzur, topluma dayanışma kazandırır.</li> <li>2: Hırsızlık, rüşvet, kumar, hile, israf yasağı → mal.</li> <li>3: Hz. Yusuf: sabır, iffet, emanet, tedbir, affedicilik.</li> <li>4: İnsanların bir inancı kabule <b>zorlanması</b> dinin korunmasının gereğidir.</li></ul><b>İstenen</b><p>Yanlış olan ilke.</p></div><ol class=\"sv-s\"><li><b>Her ilkeyi bilgiyle karşılaştır</b> 1, 2 ve 3 ünitede öğrendiğimiz bilgilerle örtüşür.</li> <li><b>Yanlışı yakala</b> Kur’an «Dinde zorlama yoktur» (Bakara 256) der. Dinin korunması inanç <b>özgürlüğünü</b> güvenceye almaktır; zorlama bunun tam tersidir. 4 yanlıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>1 → doğru.</td></tr><tr><td>B</td><td>2 → doğru.</td></tr><tr><td>C</td><td>3 → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>4 → zorlama değil özgürlük; yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dinin korunması = inanç özgürlüğü + dini hurafe/bid’atten korumak. “Zorlama” kelimesi görünce dikkat et.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -240,7 +240,7 @@ LGS.add({
     "Kişisel menfaat ve makam elde etmek için haksız tekliflere boyun eğmek"
    ],
    "a": "D",
-   "s": "<p>A 2. bölümle (iffet ve sabır), B 3. bölümle (tedbirli yönetim), C de 4. bölümle (affedicilik) desteklenir.</p><p>Hz. Yusuf zindana girmeyi göze alarak haksız teklifi reddetmiştir. Bu yüzden D onun hayatıyla çelişir ve bu kıssadan çıkarılamaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kuyu: Allah’a güvenini kaybetmedi</li> <li>Saray-zindan: «çirkin teklifi reddedip iffetini korudu»</li> <li>Hazine: bolluk yıllarında biriktirip kıtlığı tedbirle yönetti</li> <li>Buluşma: «intikam almadı», affetti</li></ul><b>İstenen</b><p>Hz. Yusuf’un hayatından <b>çıkarılamayacak</b> ilke.</p></div><ol class=\"sv-s\"><li><b>Tablodaki erdemleri çıkar</b> Tevekkül, iffet ve doğruluk, tedbirli yönetim, affedicilik.</li> <li><b>Ters olanı bul</b> Hz. Yusuf haksız teklifi <b>reddetmiş</b>, bu yüzden zindana atılmayı bile göze almıştır. “Menfaat için boyun eğmek” onun hayatına tamamen terstir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İffet ve doğruluktan taviz vermemek → 2. bölüm.</td></tr><tr><td>B</td><td>Planlı, tedbirli yönetim → 3. bölüm.</td></tr><tr><td>C</td><td>Güç varken affetmek → 4. bölüm.</td></tr><tr class=\"ok\"><td>D</td><td>Haksız teklife boyun eğmek → Hz. Yusuf reddetti; gösterilemez.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -252,7 +252,7 @@ LGS.add({
     "Kibir ve üstünlük taslama"
    ],
    "a": "B",
-   "s": "<p>Hz. Yusuf, kendisine büyük kötülük yapan kardeşlerini elinde güç varken cezalandırmamış, <i>“Bugün size kınama yok”</i> diyerek onları affetmiştir. Bu tavır en iyi <b>affediciliği ve merhameti</b> yansıtır (B).</p><p>A ve D olumsuz huylardır, Hz. Yusuf’un tavrıyla ilgisi yoktur. C ise tam tersidir; o, intikam alabilecekken almamıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Yusuf «cezalandırma gücüne sahip olduğu hâlde»</li> <li>«Bugün size kınama yok. Allah sizi bağışlasın.» (Yusuf 92)</li></ul><b>İstenen</b><p>Bu tavrın yansıttığı erdem.</p></div><ol class=\"sv-s\"><li><b>İpucu ifade</b> «kınama yok», «bağışlasın» sözleri kardeşlerinin hatasını yüzlerine vurmadığını ve onları affettiğini gösterir.</li> <li><b>Erdemi adlandır</b> Güç elindeyken bile intikam almayıp bağışlamak = <b>affedicilik ve merhamet</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cömertçe davranıyor; cimrilik yok.</td></tr><tr class=\"ok\"><td>B</td><td>Affedicilik ve merhamet → doğru.</td></tr><tr><td>C</td><td>İntikam almıyor.</td></tr><tr><td>D</td><td>Kınamıyor, kibirlenmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gücü varken affetmek, affedicilik erdeminin en olgun hâlidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -264,7 +264,7 @@ LGS.add({
     "Zorluklar karşısında sabırsız ve aceleci bir tutum sergilemiştir."
    ],
    "a": "C",
-   "s": "<p>Hz. Yusuf zindanı göze alarak iffetini korumuş, zindanda da sabırla Allah’a güvenmiştir. Yani zorluklar karşısında <b>iffetinden ve sabrından taviz vermemiştir</b> (C).</p><p>A teklifi reddettiği, B umudunu kaybetmediği, D de sabrettiği bilgisiyle çelişir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«günah teklifine boyun eğmemiş, iffetini korumuş»</li> <li>İftirayla zindana atıldı; «umudunu kaybetmemiş, sabırla Allah’a güvenmeye devam etmiş»</li></ul><b>İstenen</b><p>Hz. Yusuf için söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>İki erdemi çıkar</b> Teklifi reddetmesi → <b>iffet</b>; zindanda ümidini kaybetmemesi → <b>sabır ve tevekkül</b>.</li> <li><b>Şıklarla eşle</b> Bu iki erdemi birlikte veren şık C’dir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Boyun eğmemiştir; metinle çelişir.</td></tr><tr><td>B</td><td>Ümidini kesmemiştir; metinle çelişir.</td></tr><tr class=\"ok\"><td>C</td><td>İffet ve sabırdan taviz vermemiştir → doğru.</td></tr><tr><td>D</td><td>Sabırlıdır; metinle çelişir.</td></tr></table><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -276,7 +276,7 @@ LGS.add({
     "Gelecek için hazırlık yapmadan yalnızca bugünü yaşamaya"
    ],
    "a": "B",
-   "s": "<p>Hz. Yusuf bolluk yıllarında israfı önleyip kıtlık yılları için tahıl biriktirmiştir. Bu, <b>ileriyi düşünerek planlı ve tedbirli davranmanın</b> örneğidir (B).</p><p>A ve D onun yaptığının tam tersidir. C de yanlıştır, çünkü hazinenin yönetimini üstlenerek zor zamanda sorumluluk almıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Rüya yorumu: 7 yıl bolluk, 7 yıl kıtlık</li> <li>Bollukta: ürün israf edilmeden toplandı, başaklarında depolandı</li> <li>Kıtlıkta: halka ölçülü dağıtıldı, halk açlıktan korundu</li></ul><b>İstenen</b><p>Bu yönetimin örnek olduğu davranış.</p></div><ol class=\"sv-s\"><li><b>Bolluk yıllarında ne yaptı?</b> Harcamadı, <b>biriktirdi</b>; ürün bozulmasın diye önlem aldı → tasarruf ve tedbir.</li> <li><b>Kıtlık yıllarında ne yaptı?</b> Biriktirdiğini ölçülü dağıttı → planlı yönetim. Sonuç: halk açlıktan kurtuldu.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bollukta sınırsız harcamadı, biriktirdi.</td></tr><tr class=\"ok\"><td>B</td><td>Planlı, tasarruflu ve tedbirli davranış → doğru.</td></tr><tr><td>C</td><td>Sorumluluğu üstlendi, kaçmadı.</td></tr><tr><td>D</td><td>Gelecek için hazırlık yaptı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Yusuf’un hazine yönetimi = ileriyi görmek + tasarruf + adil dağıtım.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -288,7 +288,7 @@ LGS.add({
     "Mısır hükümdarının gördüğü yedi semiz ve yedi zayıf inek rüyasını yorumlaması"
    ],
    "a": "C",
-   "s": "<p>Hz. Yusuf sarayda kendisine yapılan çirkin teklifi reddetmiş, kendisini evine alan kişinin güvenine ihanet etmemiş ve günah işlemektense zindanı göze almıştır. Bu, <b>iffet ve emanete sadakat</b> erdemini gösterir (C).</p><p>A çocukluğunda gördüğü rüyayla ilgilidir. B onun başına gelen bir olaydır, kendi erdemini göstermez. D ise rüya yorumlama bilgisini ve tedbirliliğini gösterir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İstenen erdem: <b>iffet ve emanete sadakat</b></li></ul><b>İstenen</b><p>Bu erdemi en açık gösteren olay.</p></div><ol class=\"sv-s\"><li><b>İffet ne demek?</b> İffet, insanın namusunu ve ahlakını korumasıdır; emanete sadakat ise kendisine güvenilen evin ve kişilerin hakkına ihanet etmemektir.</li> <li><b>Olayı bul</b> Sarayda yapılan günah çağrısını «Allah’a sığınarak» reddetmek ve günaha girmektense zindanı seçmek bu iki erdemin en açık örneğidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rüyayı babasına anlatma → güven ve aile bağı; iffet değil.</td></tr><tr><td>B</td><td>Kuyuya atılma → kardeşlerin kıskançlığı; onun bir davranışı değil.</td></tr><tr class=\"ok\"><td>C</td><td>Günah çağrısını reddedip zindanı seçmek → iffet ve emanete sadakat.</td></tr><tr><td>D</td><td>Rüya yorumu → bilgi ve yetenek.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Soruda “onun erdemi” isteniyorsa, Hz. Yusuf’un <b>kendi seçimi</b> olan olayı seç; başına gelen olaylar erdem göstermez.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -300,7 +300,7 @@ LGS.add({
     "Üzüntülü durumlarda insanlarla iletişimi tamamen koparmak gerektiği"
    ],
    "a": "B",
-   "s": "<p>Hz. Yakup hem <i>“Gidin, araştırın”</i> diyerek <b>çaba göstermeyi</b> öğütlemiş hem de <i>“Allah’ın rahmetinden ümit kesmeyin”</i> diyerek <b>ümitli olmayı</b> istemiştir (B).</p><p>A ayetteki “ümit kesmeyin” öğüdüne, C “gidin, araştırın” öğüdüne ters düşer. D’deki gibi bir ifade ayette yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Yakup: «Gidin, Yusuf’u ve kardeşini araştırın.»</li> <li>«Allah’ın rahmetinden ümit kesmeyin.» (Yusuf 87)</li></ul><b>İstenen</b><p>Ayetin temel mesajı.</p></div><ol class=\"sv-s\"><li><b>İki ipucu</b> «Gidin, araştırın» → <b>çaba göster</b>. «Ümit kesmeyin» → <b>Allah’ın rahmetine güven</b>.</li> <li><b>Birleştir</b> Mesaj: En ağır kayıpta bile hem çalışmak hem de ümidi korumak gerekir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ayet karamsarlığı yasaklıyor.</td></tr><tr class=\"ok\"><td>B</td><td>Çaba + ümit → doğru.</td></tr><tr><td>C</td><td>Ayet «araştırın» diyerek gayret istiyor.</td></tr><tr><td>D</td><td>İletişimi koparmak ayette yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül = çalış + Allah’a güven. Ayette ikisi de var.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -312,7 +312,7 @@ LGS.add({
     "Yalnızca kendi çıkarını düşünerek çok mal biriktirmek"
    ],
    "a": "D",
-   "s": "<p>Surede ziyandan kurtulmanın dört özelliği sayılır: <b>iman etmek</b> (A), <b>salih amel işlemek</b> (B), <b>hakkı tavsiye etmek</b> ve <b>sabrı tavsiye etmek</b> (C).</p><p>Bencilce mal biriktirmek bunlar arasında yoktur; surenin mesajına da aykırıdır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Asr suresine göre ziyanda olmayanlar: iman edenler, salih amel işleyenler, hakkı tavsiye edenler, sabrı tavsiye edenler</li></ul><b>İstenen</b><p>Ziyandan kurtulma şartları arasında <b>olmayan</b>.</p></div><ol class=\"sv-s\"><li><b>Dört şartı say</b> 1) İman 2) Salih amel 3) Hakkı tavsiye 4) Sabrı tavsiye.</li> <li><b>Listede olmayanı bul</b> Surede mal biriktirmek geçmiyor; üstelik yalnız kendi çıkarını düşünmek “birbirine tavsiye etme” anlayışına terstir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İman → 1. şart.</td></tr><tr><td>B</td><td>Salih amel → 2. şart.</td></tr><tr><td>C</td><td>Hakkı ve sabrı tavsiye → 3. ve 4. şart.</td></tr><tr class=\"ok\"><td>D</td><td>Mal biriktirmek surede yok → yer almaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Asr suresinin dört şartı: <b>iman – salih amel – hak – sabır</b>.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -324,7 +324,7 @@ LGS.add({
     "Zamanın diğer varlıklardan daha önemsiz olduğunu vurgulamak"
    ],
    "a": "B",
-   "s": "<p>Kur’an’da bir şeye yemin edilmesi, o şeyin <b>önemine ve değerine</b> dikkat çeker. Zamana yemin edilmesi, ömrün geri gelmeyen değerli bir nimet olduğunu ve iyi değerlendirilmesi gerektiğini vurgular (B).</p><p>A ve C’deki bilgiler surede yoktur. D ise yeminin amacının tersini söyler. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bazı surelerde Allah varlıklara yemin eder (Şems, Duhâ, Leyl, Tîn, Asr).</li> <li>Asr suresi «Vel asr» diye zamana yeminle başlar.</li></ul><b>İstenen</b><p>Zamana yemin edilmesinin temel amacı.</p></div><ol class=\"sv-s\"><li><b>Yeminin anlamı</b> Kur’an’da yemin edilen varlık, önemine dikkat çekilen bir nimettir.</li> <li><b>Asr ile bağla</b> Asr; zaman, çağ, ömür demektir. Zaman geri gelmez; insanın ömrü onun en değerli sermayesidir. Sure bu yüzden zamana yeminle başlar.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zaman yalnızca dinlenme için değil; ömrü değerlendirmek için.</td></tr><tr class=\"ok\"><td>B</td><td>Geri gelmeyen değerli nimet → doğru.</td></tr><tr><td>C</td><td>Zamanı durdurmaktan söz edilmez.</td></tr><tr><td>D</td><td>Yemin, önemsizliği değil önemi gösterir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Allah bir şeye yemin ediyorsa o şeyin değerine dikkat çekiyordur.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -336,7 +336,7 @@ LGS.add({
     "IV"
    ],
    "a": "D",
-   "s": "<p>I, II ve III’teki açıklamalar doğrudur: asr zaman ve ömür, husr ziyan, salih amel de Allah rızası için yapılan iyi işlerdir.</p><p>“Tevâsav bil-hak” ise haksızlığı değil, <b>birbirine hakkı (doğruyu) tavsiye etmeyi</b> anlatır. IV’ün açıklaması yanlıştır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Asr = zaman, çağ, ömür</li> <li>II: Husr = ziyan, kayıp</li> <li>III: Salih amel = Allah rızası için iyi ve yararlı iş</li> <li>IV: Tevâsav bil-hak = «birbirine haksızlığı ve bencilliği tavsiye etmesi»</li></ul><b>İstenen</b><p>Açıklaması <b>yanlış</b> olan kavram.</p></div><ol class=\"sv-s\"><li><b>Kavramları kontrol et</b> I, II ve III ünitedeki tanımlarla aynıdır.</li> <li><b>Yanlışı yakala</b> Tevâsav bil-hak, birbirine <b>hakkı, doğruluğu</b> tavsiye etmektir. Tabloda tam tersi (haksızlık, bencillik) yazılmıştır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Asr → doğru açıklama.</td></tr><tr><td>B</td><td>Husr → doğru açıklama.</td></tr><tr><td>C</td><td>Salih amel → doğru açıklama.</td></tr><tr class=\"ok\"><td>D</td><td>Tevâsav bil-hak = hakkı tavsiye; tabloda tersi yazılmış → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Tevâsav” = karşılıklı tavsiye etmek; “bil-hak” = hakkı, “bis-sabr” = sabrı.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -348,7 +348,7 @@ LGS.add({
     "Sabrın yalnızca yaşlı insanlara özgü bir erdem olduğunu"
    ],
    "a": "A",
-   "s": "<p>“Birbirlerine tavsiye etmek” ifadesi, kurtuluşun yalnızca bireysel ibadetle sınırlı olmadığını gösterir. Mümin, çevresindekilere de doğruyu ve sabrı öğütleyerek <b>toplumun iyiliği için sorumluluk</b> taşır (A).</p><p>B ve D’deki bilgiler surede yoktur. C ise “birbirine tavsiye etme” ifadesindeki toplumsal yönle çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kurtuluş şartları: iman, salih amel <b>ve</b> «birbirlerine hakkı ve sabrı tavsiye etmek»</li></ul><b>İstenen</b><p>“Birbirine tavsiye” ifadesinin gösterdiği şey.</p></div><ol class=\"sv-s\"><li><b>Şartları ikiye ayır</b> İman ve salih amel <b>kişinin kendisiyle</b> ilgilidir. Hakkı ve sabrı tavsiye etmek ise <b>başkalarıyla</b> ilgilidir.</li> <li><b>Sonuç</b> “Birbirine” kelimesi müminin yalnız kendini değil, toplumun iyiliğini de düşünmesi gerektiğini gösterir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Toplum için de sorumluluk → doğru.</td></tr><tr><td>B</td><td>Gösteriş ibadeti bozar; surede yok.</td></tr><tr><td>C</td><td>“Birbirine” ifadesi toplum içinde yaşamayı gerektirir.</td></tr><tr><td>D</td><td>Sabır herkes içindir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Asr suresi: 2 bireysel şart (iman, salih amel) + 2 toplumsal şart (hak ve sabrı tavsiye).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -360,7 +360,7 @@ LGS.add({
     "100"
    ],
    "a": "D",
-   "s": "<p>1. ifade doğrudur; öğrenci D demiş, 25 puan. 2. ifade yanlıştır, çünkü surede imanla birlikte salih amel, hak ve sabır tavsiyesi de sayılır; öğrenci Y demiş, 25 puan. 3. ifade yanlıştır, çünkü Hz. Yusuf kardeşlerini affetmiştir; öğrenci Y demiş, 25 puan. 4. ifade doğrudur; öğrenci D demiş, 25 puan.</p><p>Öğrenci dört ifadeyi de doğru değerlendirmiştir: 4 × 25 = 100 puan. Bir ifadeyi yanlış değerlendirmiş olsaydı 75, iki ifadeyi yanlış değerlendirmiş olsaydı 50 alırdı. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Her doğru cevap 25 puan</li> <li>1: D, 2: Y, 3: Y, 4: D (öğrencinin cevapları)</li></ul><b>İstenen</b><p>Öğrencinin aldığı toplam puan.</p></div><ol class=\"sv-s\"><li><b>1. ifade</b> Beş temel değer can, akıl, mal, nesil ve din → ifade <b>doğru</b>. Öğrenci D dedi ✓</li> <li><b>2. ifade</b> Asr suresi imanla birlikte salih ameli de şart koşar → ifade <b>yanlış</b>. Öğrenci Y dedi ✓</li> <li><b>3. ifade</b> Hz. Yusuf kardeşlerini cezalandırmadı, affetti → ifade <b>yanlış</b>. Öğrenci Y dedi ✓</li> <li><b>4. ifade</b> Hat, tezhip, ebru, cami mimarisi dinin sanata etkisidir → ifade <b>doğru</b>. Öğrenci D dedi ✓</li> <li><b>Puanı hesapla</b> Dört cevabın dördü de doğru. <span class=\"sv-m\">4 · 25 = 100 puan</span></li></ol><div class=\"sv-t\"><b>Püf nokta:</b> D-Y sorularında önce ifadenin gerçek değerini bul, sonra öğrencinin cevabıyla karşılaştır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Y” cevabını gören öğrenci hatalı sanabilir; ifade gerçekten yanlışsa “Y” doğru cevaptır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -372,7 +372,7 @@ LGS.add({
     "Dinin kişiye kazandırdığı moral, çevresindekilere de olumlu yansıyabilir."
    ],
    "a": "C",
-   "s": "<p>Metinde inancı güçlü hastaların tedaviye <b>sabırla katlandığı</b> (A), doktorların önerilerine <b>titizlikle uyduğu</b> (B) ve odadaki diğer hastalara <b>moral verdiği</b> (D) açıkça söylenmektedir. Ancak tedavinin süresiyle ilgili hiçbir bilgi verilmemiştir; “daha kısa sürede tamamlanır” yargısı metinde yoktur. Bu, metnin söylemediği bir sonucu metne yüklemektir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İnancı güçlü hastalar «hastalığı bir imtihan olarak görüyor», «sabırla katlanıyor»</li> <li>«doktorların önerilerine titizlikle uyuyor», «iç huzur bulduklarını söylüyor»</li> <li>«diğer hastalara da moral veriyor»</li></ul><b>İstenen</b><p>Gözlemlerden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinde olanları işaretle</b> Sabır, tedaviye uyma, iç huzur ve çevreye moral verme açıkça yazıyor.</li> <li><b>Metinde olmayanı bul</b> Elif Hanım tedavinin <b>süresi</b> hakkında hiçbir şey söylemiyor. “Daha kısa sürede tamamlanır” yargısı metinde dayanağı olmayan bir çıkarımdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«sabırla katlanıyor» → ulaşılır.</td></tr><tr><td>B</td><td>«önerilerine titizlikle uyuyor» → ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Tedavi süresinden hiç söz edilmiyor → ulaşılamaz.</td></tr><tr><td>D</td><td>«diğer hastalara da moral veriyor» → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Ulaşılamaz” sorularında metinde hiç geçmeyen bir bilgiyi (süre, sayı, kesin sonuç) ara.</div><div class=\"sv-w\"><b>Tuzak:</b> C mantıklı görünebilir; ama soru metne göre soruyor, metinde böyle bir bilgi yok.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -384,7 +384,7 @@ LGS.add({
     "Sınav gibi dünya işleri, insanın dinî sorumluluklarının önüne geçmemelidir."
    ],
    "a": "A",
-   "s": "<p>Hadiste devenin kaçmaması için önce onu bağlamak (tedbir almak), ardından Allah’a güvenmek öğütlenmektedir. Kerem çalışmadan yalnızca dua etmekte, yani tedbiri terk edip tevekküle sığınmaktadır. Selin’in mesajı, tevekkülün <b>çalışıp tedbir aldıktan sonra sonucu Allah’a bırakmak</b> olduğudur (A).<br>B: Hadis duayı sınırlamıyor. C: Hadis tevekkülü ve Allah’a güveni reddetmiyor, çabayla birlikte istiyor. D: Konuşmada dünya işleriyle dinî sorumluluklar arasında bir çatışma söz konusu değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kerem: «hiç çalışamadım ama her gece dua ediyorum ... tevekkül ettim»</li> <li>Hadis: «Önce deveni bağla, sonra tevekkül et.» (Tirmizî)</li></ul><b>İstenen</b><p>Hadisle Kerem’e verilen mesaj.</p></div><ol class=\"sv-s\"><li><b>Kerem’in hatası</b> Kerem hiçbir çaba göstermeden yalnızca dua ederek sonucu bekliyor. Bu doğru tevekkül değildir.</li> <li><b>Hadisin anlamı</b> «Deveni bağla» = önce gereken tedbiri al, çalış; «sonra tevekkül et» = sonucu Allah’a bırak. Kerem önce ders çalışmalı.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Tevekkül = çaba + tedbir, sonra sonucu Allah’a bırakmak → doğru.</td></tr><tr><td>B</td><td>Hadis duayı sınırlamıyor; çabayı öne alıyor.</td></tr><tr><td>C</td><td>Hadis duayı gereksiz saymıyor; tevekkülü onaylıyor.</td></tr><tr><td>D</td><td>Hadis dünya işi-dinî sorumluluk karşılaştırması yapmıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül tembellik değildir: önce “deveyi bağla”.</div><div class=\"sv-w\"><b>Tuzak:</b> C şıkkı tersi uca gidiyor: Hadis çabayı istiyor ama dua ve tevekkülü de bırakmıyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -396,7 +396,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>I: Hucurât 10’da “kardeşlerinizin arasını düzeltin” denmektedir; küslüklerin giderilmesi istenir (✓).<br>III: Kardeşlik vurgusu ve iyilikte yardımlaşma emri, toplumsal barış ve dayanışmanın güçlendirilmesini amaçlar (✓).<br>II: Mâide 2’de yardımlaşmanın <b>iyilik ve takva</b> üzerinde olması istenir; günah ve düşmanlık üzerinde yardımlaşma yasaklanmıştır. Yani yardımlaşmanın amacı önemlidir; II’ye ulaşılamaz. “I, II ve III” şıkkı, ayetin ikinci kısmını gözden kaçıranları yakalar. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hucurât 10: «Müminler ancak kardeştirler. ... kardeşlerinizin arasını düzeltin.»</li> <li>Mâide 2: «İyilik ve takva üzerinde yardımlaşın, günah ve düşmanlık üzerinde yardımlaşmayın.»</li></ul><b>İstenen</b><p>Ayetlerden ulaşılabilecek yargılar.</p></div><ol class=\"sv-s\"><li><b>I. yargı</b> «arasını düzeltin» → küslükleri gidermek için çaba göstermek gerekir. <b>Ulaşılır.</b></li> <li><b>II. yargı</b> Mâide 2, günah ve düşmanlıkta yardımlaşmayı <b>yasaklar</b>. Yani her yardımlaşma övülmez. <b>Ulaşılamaz.</b></li> <li><b>III. yargı</b> Kardeşlik, barıştırma ve iyilikte yardımlaşma → din toplumda barış ve dayanışmayı amaçlar. <b>Ulaşılır.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnız I → III de doğru, eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III → doğru.</td></tr><tr><td>C</td><td>II yanlış.</td></tr><tr><td>D</td><td>II yanlış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Amacı ne olursa olsun”, “her durumda” gibi kesin ifadeler genellikle yanlış öncülün işaretidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -408,7 +408,7 @@ LGS.add({
     "Din, mimariyi hem işlevsel hem de estetik yönden etkilemiştir."
    ],
    "a": "C",
-   "s": "<p>Kuş köşkleri ve sebiller canlılara duyulan <b>merhametin</b> mimariye yansımasıdır (A, B ✓). Yapıların hem bir işe yaraması (barınak, su) hem de ince taş işçiliğiyle süslenmesi, dinin mimariyi işlevsel ve estetik yönden etkilediğini gösterir (D ✓).<br>Metne göre kuş köşkleri kuşların barınması için yapılmıştır; içinde ibadet edilen yapılar olduğu söylenmez. Duvarına yapıldıkları caminin işlevi ile köşkün işlevi karıştırılmamalıdır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kuş köşkleri: «kuşların barınması için» yapılmış</li> <li>Çeşme ve sebiller: insanların ve hayvanların susuzluğunu gidermiş</li> <li>«ince taş işçiliğiyle süslenmiş»</li></ul><b>İstenen</b><p>Metinden <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki amaçları bul</b> Kuş köşkü kuşları barındırmak için, çeşme-sebil su ikram etmek için yapılmış → canlılara merhamet.</li> <li><b>Ters bilgiyi yakala</b> Kuş köşkleri ibadet yeri değil, <b>kuşların barınağıdır</b>. C, metindeki amaçla çelişiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Merhamet mimariye yansımış → söylenir.</td></tr><tr><td>B</td><td>Hayvanlar da gözetilmiş → söylenir.</td></tr><tr class=\"ok\"><td>C</td><td>Kuş köşkü ibadet için değil, kuşlar için → söylenemez.</td></tr><tr><td>D</td><td>Hem işe yarar hem süslü → söylenir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İşlevsel = bir işe yarar (su, barınak); estetik = güzel görünür (taş işçiliği).</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -420,7 +420,7 @@ LGS.add({
     "Ahilikte mesleki beceri, ahlaki değerlerden daha önemli görülmüştür."
    ],
    "a": "A",
-   "s": "<p>Metinde çırağa meslekle birlikte dürüstlük ve müşteriye saygının öğretildiği, aldatan esnafın uyarılıp meslekten uzaklaştırıldığı ve emeğiyle kazanmayı öven hadisin ilke edinildiği anlatılır. Buna göre dinî değerler ticari hayatta <b>dürüstlük ve güveni</b> güçlendiren bir kurumun oluşmasına katkı sağlamıştır (A).<br>B: Ahilikte meslek öğretilir; yalnızca ibadet öğretilmez. C: Hadis emekle kazanmayı över. D: Aldatan esnafın cezalandırılması, ahlakın en az beceri kadar önemsendiğini gösterir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Çırak, ustadan «dürüstlüğü, cömertliği ve müşteriye saygıyı da öğrenirdi»</li> <li>Kusurlu mal satan esnaf uyarılır, gerekirse meslekten uzaklaştırılırdı.</li> <li>İlke: «elinin emeğiyle kazandığından daha hayırlı bir yemek» yoktur.</li></ul><b>İstenen</b><p>Ahilik hakkında söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Ahiliği tanı</b> Ahilik, esnaf ve sanatkârları meslekle birlikte ahlakla da yetiştiren bir teşkilattır.</li> <li><b>Metinle bağla</b> Hadisi ilke edinmeleri dinî değerlerden beslendiğini; hileli satışın cezalandırılması ticarette <b>dürüstlük ve güven</b> sağladığını gösterir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Dinî değerler ticarette dürüstlük ve güveni güçlendirmiş → doğru.</td></tr><tr><td>B</td><td>Meslek de öğretiliyor; yalnızca ibadet değil.</td></tr><tr><td>C</td><td>Emekle kazanç en hayırlı kazanç sayılmış.</td></tr><tr><td>D</td><td>Ahlak meslekle birlikte, hatta önde tutulmuş.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -432,7 +432,7 @@ LGS.add({
     "Can"
    ],
    "a": "C",
-   "s": "<p>Ali’nin örneği (imece), Ece’nin örneği (kurban etinin paylaşılması) ve Can’ın örneği (caminin yardım merkezi olması) insanların bir arada yardımlaşmasını, yani dinin <b>toplumsal</b> hayata etkisini gösterir.<br>Zeynep’in örneğinde ise ahiret inancının bir kişiye kayıp karşısında sabır, teselli ve iç huzur kazandırması anlatılmaktadır. Bu, dinin <b>bireysel</b> hayata etkisidir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ali: imeceyle okul duvarı</li> <li>Ece: kurban etinin dağıtılması</li> <li>Zeynep: babaannenin «ölümün bir son olmadığına inanması sayesinde» teselli bulması</li> <li>Can: caminin yardım merkezine dönüşmesi</li></ul><b>İstenen</b><p>Dinin <b>bireysel</b> hayata etkisini gösteren örnek.</p></div><ol class=\"sv-s\"><li><b>Bireysel – toplumsal ayrımı</b> Toplumsal etki: insanlar birlikte yardımlaşır. Bireysel etki: kişinin iç dünyası, sabrı, tesellisi.</li> <li><b>Örnekleri ayır</b> Ali, Ece ve Can’ın örneklerinde topluluk bir araya gelip yardım ediyor. Zeynep’in örneğinde ise bir kişinin inancı ona <b>sabır ve teselli</b> veriyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İmece → toplumsal.</td></tr><tr><td>B</td><td>Kurban etini paylaşmak → toplumsal.</td></tr><tr class=\"ok\"><td>C</td><td>Ahiret inancıyla teselli → bireysel.</td></tr><tr><td>D</td><td>Yardım merkezi → toplumsal.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Teselli, sabır, iç huzur, ümit → bireysel etki.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -444,7 +444,7 @@ LGS.add({
     "Apartmanda komşuları rahatsız etmemek için gece geç saatte gürültü yapmamak"
    ],
    "a": "B",
-   "s": "<p>Hadise göre gerçek Müslüman, sözüyle ve davranışıyla başkalarına zarar vermeyen kişidir. Arkadaşının fotoğrafını alaycı yorumlarla paylaşmak, onu sözle (yorumlarla) ve davranışla (paylaşım) incitmek demektir; hadisle çelişir (B).<br>A: Asılsız haber yaymamak dille zarar vermekten kaçınmaktır. C: Özür dilemek verilen zararı onarmaya çalışmaktır. D: Komşuyu rahatsız etmemek davranışla zarar vermekten kaçınmaktır. Bu üçü hadise uygundur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Müslüman, elinden ve dilinden Müslümanların emin olduğu kimsedir.»</li></ul><b>İstenen</b><p>Hadisin mesajıyla <b>çelişen</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Hadisin anlamı</b> Gerçek Müslüman eliyle (davranışıyla) ve diliyle (sözüyle) kimseye zarar vermez. Bugün “dil” sosyal medyadaki yazılarımızı da kapsar.</li> <li><b>Zarar vereni bul</b> Arkadaşının fotoğrafını alaycı yorumlarla paylaşmak onu incitir; hadisteki “dilinden emin olma” ilkesini çiğner.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yanlış haberi paylaşmamak → dilden emin olma, uygun.</td></tr><tr class=\"ok\"><td>B</td><td>Alaycı paylaşım → arkadaşı incitir, çelişir.</td></tr><tr><td>C</td><td>Özür dilemek → hatayı telafi, uygun.</td></tr><tr><td>D</td><td>Gürültü yapmamak → komşuya zarar vermemek, uygun.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sosyal medyada yazmak da “dil” sayılır; alay, iftira, yalan haber hadisle çelişir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -456,7 +456,7 @@ LGS.add({
     "IV"
    ],
    "a": "D",
-   "s": "<p>I: İlahiler dinin edebiyat ve musikiye, yani kültür ve sanata etkisidir (✓). II: Namazla iç huzur bulmak bireysel hayata etkidir (✓). III: Ebru ve tezhip süsleme sanatlarıdır (✓).<br>IV: Vakıf kurmak bir kişinin hayrı olsa da sonucu köydeki herkesin suya ulaşmasıdır; vakıf kültürü dinin <b>toplumsal</b> hayata etkisine örnektir. Eşleştirmenin “bireysel hayat” olması yanlıştır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Yunus Emre ilahileri → kültür-sanat</li> <li>II: Namazdan sonra iç huzur → bireysel hayat</li> <li>III: Ebru-tezhipli kapak → kültür-sanat</li> <li>IV: Vakıfla köydeki herkesin temiz suya ulaşması → bireysel hayat</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Her satırı kontrol et</b> İlahi ve ebru-tezhip sanat; iç huzur bireysel etki. I, II, III doğru.</li> <li><b>Yanlışı bul</b> Vakıf sayesinde <b>köydeki herkesin</b> faydalanması bir kişinin iç dünyası değil, toplumun ihtiyacının karşılanmasıdır → <b>toplumsal hayat</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I → doğru.</td></tr><tr><td>B</td><td>II → doğru.</td></tr><tr><td>C</td><td>III → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Vakıf hizmeti toplumsal hayatla ilgilidir → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Herkes, köy, mahalle” kelimeleri toplumsal etkiyi gösterir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -468,7 +468,7 @@ LGS.add({
     "Din, yalnızca okulları ve sarayları olan gelişmiş toplumlarda ortaya çıkmıştır."
    ],
    "a": "A",
-   "s": "<p>Mabet, bir topluluğun ibadet yeridir. Mabedi olmayan bir topluma rastlanmaması, dinin <b>her toplumda ve her dönemde</b> var olduğunu, yani evrensel bir olgu olduğunu gösterir (A).<br>B: Sözde yapıların hangisinin önce inşa edildiğine dair bilgi yoktur. C: Her toplumda bir mabet bulunması, hepsinin aynı dine inandığı anlamına gelmez. D: Söz tam tersini söyler: okulu, sarayı olmayan toplumlarda bile mabet vardır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Plutarkhos: Şehri, sarayı, okulu olmayan toplum olabilir; «ancak mabedi olmayan bir topluma rastlanmamıştır.»</li></ul><b>İstenen</b><p>Sözden çıkarılabilecek <b>en kapsamlı</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Mabet = din</b> Mabet ibadet yeridir; her toplumda mabet olması her toplumda <b>din</b> olduğunu gösterir.</li> <li><b>Kapsamlı yargı</b> Din, tarih boyunca bütün toplumlarda görülen <b>evrensel</b> bir olgudur. Bu, din duygusunun insanın fıtratında olduğunu da destekler.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Din her toplumda var olmuş evrensel olgu → doğru.</td></tr><tr><td>B</td><td>Sözde “önce/sonra” sıralaması yok.</td></tr><tr><td>C</td><td>Mabet olması aynı dine inanıldığını göstermez.</td></tr><tr><td>D</td><td>Okulu, sarayı olmayan toplumlarda da mabet var; tersine bir yargı.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -480,7 +480,7 @@ LGS.add({
     "İbadetleri vaktinde ve eksiksiz yerine getirmeye"
    ],
    "a": "D",
-   "s": "<p>Ayette adalet (A), yakınlara yardım (B) emredilmiş; çirkin işler, fenalık ve azgınlık yasaklanmıştır (C). Bunlar dinin toplumsal hayatı düzenleyen ilkeleridir.<br>İbadetlerin vaktinde yerine getirilmesinden ise ayette söz edilmez. “İyilik yapmak” ifadesi geniş olsa da ibadetlerin vakti konusunda bir bilgi içermez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Nahl 90: Allah «adaleti, iyilik yapmayı, yakınlara yardım etmeyi emreder»</li> <li>«çirkin işleri, fenalık ve azgınlığı da yasaklar»</li></ul><b>İstenen</b><p>Ayette <b>değinilmeyen</b> konu.</p></div><ol class=\"sv-s\"><li><b>Ayetteki emirler</b> Adalet, iyilik (ihsan), akrabaya yardım.</li> <li><b>Ayetteki yasaklar</b> Çirkin işler, fenalık, azgınlık.</li> <li><b>Eksik olanı bul</b> İbadetlerin vaktinde yapılmasından ayette söz edilmiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«adaleti» → değinilmiş.</td></tr><tr><td>B</td><td>«yakınlara yardım» → değinilmiş.</td></tr><tr><td>C</td><td>«çirkin işleri yasaklar» → değinilmiş.</td></tr><tr class=\"ok\"><td>D</td><td>İbadet vakitleri ayette yok → değinilmemiş.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğru bir bilgi olması yetmez; metinde geçip geçmediğine bak.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -492,7 +492,7 @@ LGS.add({
     "Bireylerin başlattığı bir iyilik, toplumun davranışlarını da olumlu etkileyebilir."
    ],
    "a": "B",
-   "s": "<p>Hadisle desteklenen bir çevre projesi, dinin çevre bilinci kazandırdığını gösterir (A ✓). Hadiste temizlik imanın yarısı sayılmıştır (C ✓). Mahalle sakinlerinin de çöplerini kutulara atmaya başlaması, bireysel bir iyiliğin topluma yayıldığını gösterir (D ✓).<br>Öğrencilerin ibadet alışkanlıklarının değiştiğine dair metinde hiçbir bilgi yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Afiş: «Temizlik imanın yarısıdır.»</li> <li>Öğrenciler okul bahçesini ve sahili temizleyip atıkları ayrıştırdı.</li> <li>Sonunda mahalle sakinleri de çöplerini çöp kutusuna atmaya başladı.</li></ul><b>İstenen</b><p>Projeden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki bilgiler</b> Çevre temizliği, hadiste temizlik-iman ilişkisi ve öğrencilerin davranışının mahalleye örnek olması anlatılıyor.</li> <li><b>Eksik bilgiyi bul</b> Öğrencilerin ibadet alışkanlığında değişiklik olduğuna dair metinde hiçbir bilgi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Çevreyi temizleme → sorumluluk bilinci, ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>İbadetlerden hiç söz edilmiyor → ulaşılamaz.</td></tr><tr><td>C</td><td>Hadis temizliği imanla ilişkilendiriyor → ulaşılır.</td></tr><tr><td>D</td><td>Mahalle sakinleri de etkilendi → ulaşılır.</td></tr></table><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -504,7 +504,7 @@ LGS.add({
     "Çöpe atılan ekmek miktarı değişmemiştir; bu nedenle kampanya amacına ulaşmamıştır."
    ],
    "a": "A",
-   "s": "<p>İlk adım tabloyu okumaktır: 42 kg’dan 18 kg’a, 24 kg azalma olmuştur. 42’nin yarısı 21 kg olduğundan azalma <b>yarıdan fazladır</b>. 42’nin üçte biri 14 kg’dır; 18 kg üçte bire düşmek demek değildir (B yanlış). Miktar değiştiği için D de yanlıştır.<br>İkinci adım değeri belirlemektir: İsraf, Allah’ın verdiği nimetleri boşa harcamaktır ve İslam’da malın korunması kapsamında yasaklanmıştır (A’râf, 31). Akılla ilgisi yoktur (C yanlış). Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ayet: «...Yiyin, için fakat israf etmeyin...» (A’râf 31)</li> <li>Önce: 42 kg, sonra: 18 kg çöpe atılan ekmek</li></ul><b>İstenen</b><p>Bilgilere göre söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Azalmayı hesapla</b> Önceki miktardan sonrakini çıkar, sonra yarıyla karşılaştır. <span class=\"sv-m\">42 − 18 = 24 kg azaldı</span> <span class=\"sv-m\">42’nin yarısı = 21 kg → 24 &gt; 21, yarıdan fazla azalmış</span> <span class=\"sv-m\">42’nin üçte biri = 14 kg ≠ 18 kg</span></li> <li><b>Temel değeri bul</b> Ekmeği israf etmemek nimetleri ve emeği korumaktır → <b>malın korunması</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yarıdan fazla azalma + malın korunması → doğru.</td></tr><tr><td>B</td><td>18 kg üçte bir (14 kg) değil.</td></tr><tr><td>C</td><td>Azalma doğru ama israf akılla değil malla ilgili.</td></tr><tr><td>D</td><td>Miktar değişmiş, 24 kg azalmış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İsraf her zaman <b>malın korunması</b> ile ilgilidir.</div><div class=\"sv-w\"><b>Tuzak:</b> C’de sayısal kısım doğru; iki parçalı şıklarda iki parçayı da kontrol et.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -516,7 +516,7 @@ LGS.add({
     "“...Kim de bir canı kurtarırsa bütün insanları kurtarmış gibi olur...” (Mâide, 32) – Neslin korunması"
    ],
    "a": "C",
-   "s": "<p>Kan bağışı, hastaların ve yaralıların hayatta kalmasına yardım eder; yani bir canı kurtarmaya vesile olur. Buna en uygun ayet “Kim de bir canı kurtarırsa bütün insanları kurtarmış gibi olur” (Mâide, 32) ayetidir ve ilgili değer <b>canın korunmasıdır</b> (C).<br>D’de ayet doğru, değer yanlıştır: Neslin korunması aile ve gelecek kuşaklarla ilgilidir. A’daki ayet inanç özgürlüğünü, B’deki ayet emek ve helal kazancı anlatır; kan bağışıyla ilgili değildir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Konu: kan bağışını teşvik eden afiş</li> <li>Gereken: uygun ayet + ilgili temel değer</li></ul><b>İstenen</b><p>Ayetin ve temel değerin <b>ikisinin de</b> doğru olduğu şık.</p></div><ol class=\"sv-s\"><li><b>Davranışın değeri</b> Kan bağışı hasta ya da yaralı birinin <b>hayatını kurtarır</b> → canın korunması.</li> <li><b>Uygun ayet</b> «Kim de bir canı kurtarırsa bütün insanları kurtarmış gibi olur» (Mâide 32) kan bağışıyla doğrudan ilgilidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ayet inanç özgürlüğü hakkında; kan bağışıyla ilgisiz.</td></tr><tr><td>B</td><td>Ayet emek ve kazanç hakkında; ilgisiz.</td></tr><tr class=\"ok\"><td>C</td><td>Mâide 32 + canın korunması → doğru.</td></tr><tr><td>D</td><td>Ayet doğru ama değer yanlış; can kurtarmak nesil değildir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C ile D aynı ayeti veriyor; fark yalnızca temel değerde. İki parçalı şıklarda iki parçayı da kontrol et.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -528,7 +528,7 @@ LGS.add({
     "Mesajın kaynağını araştırıp bir sağlık uzmanına danışmadan mesajı paylaşmamak"
    ],
    "a": "D",
-   "s": "<p>Ayet, bilgisi olmadan bir şeyin peşine düşmeyi yasaklar; insan duyduğu ve gördüğü şeyden sorumludur. Bu, <b>aklın korunması</b> (doğru bilgiye dayanma) ilkesiyle ilgilidir. Ayrıca doğrulanmamış bir “şifa” bilgisine güvenip tedaviyi bırakmak <b>canı</b> tehlikeye atar.<br>Duru’nun yapması gereken, bilginin kaynağını araştırmak ve uzmana danışmadan paylaşmamaktır (D).<br>A ve B: Doğrulanmamış bilgiyi yaymak ayetin uyarısına aykırıdır. C: Hem bilgisiz bir şeyin ardına düşmek hem de canı tehlikeye atmaktır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İsrâ 36: «Hakkında bilgin olmayan şeyin ardına düşme.»</li> <li>Mesaj: «Şu bitkiyi kaynatıp içen herkes kesin şifa buluyor!»</li></ul><b>İstenen</b><p>Ayete ve temel değerlere en uygun davranış.</p></div><ol class=\"sv-s\"><li><b>Ayetin mesajı</b> Bilgisi olmadan bir şeye inanma ve yayma; kulak, göz ve kalp bundan sorumludur. Yani bilgiyi <b>araştır, doğrula</b>.</li> <li><b>Temel değerle bağla</b> Doğrulanmamış “şifa” bilgisi sağlığa zarar verebilir → canın ve aklın korunması. Doğru davranış: kaynağı araştırmak, uzmana danışmak, paylaşmamak.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğrulamadan herkese iletmek → ayete aykırı.</td></tr><tr><td>B</td><td>Okumadan paylaşmak → ayete aykırı.</td></tr><tr><td>C</td><td>Doktorun ilacını bırakmak → canı tehlikeye atar.</td></tr><tr class=\"ok\"><td>D</td><td>Kaynağı araştırıp uzmana danışmak, paylaşmamak → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kesin şifa”, “herkes” gibi abartılı sözler doğrulanmadan paylaşılmamalı.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -540,7 +540,7 @@ LGS.add({
     "III, IV ve V"
    ],
    "a": "B",
-   "s": "<p>Hurafe; akla ve dine aykırı, bilgi eksikliğinden doğan batıl inançtır.<br>II (kurşun döktürmek), III (ağaca çaput bağlamak) ve V (bir günü uğursuz saymak) dinde dayanağı olmayan batıl inançlardır; hurafedir.<br>I: Besmele çekmek Peygamberimizin öğrettiği bir sünnettir. IV: Tedavi olmak ve dua etmek dinin teşvik ettiği davranışlardır; tedbir ile duayı bir arada yapmaktır. Bu ikisini içeren şıklar (A, C, D) yanlıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hurafe: akla ve dine aykırı, bilgi eksikliğinden doğan batıl inanç</li> <li>I besmele, II kurşun döktürme, III ağaca çaput bağlama, IV doktor + dua, V salıyı uğursuz sayma</li></ul><b>İstenen</b><p>Hurafe olan davranışlar.</p></div><ol class=\"sv-s\"><li><b>Dinde yeri olanlar</b> I: İşe besmeleyle başlamak Peygamberimizin tavsiyesidir. IV: Tedavi olmak ve dua etmek İslam’ın öğrettiği tedbir + tevekküldür.</li> <li><b>Dinde yeri olmayanlar</b> II kurşun döktürmek, III çaput bağlamak, V bir günü uğursuz saymak dinde dayanağı olmayan batıl inançlardır → <b>hurafe</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I hurafe değil.</td></tr><tr class=\"ok\"><td>B</td><td>II, III ve V → doğru.</td></tr><tr><td>C</td><td>IV hurafe değil.</td></tr><tr><td>D</td><td>IV hurafe değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Uğursuzluk, nazar boncuğu, kurşun, çaput, muska → hurafe. Besmele, dua, tedavi → dinin öğrettiği.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -552,7 +552,7 @@ LGS.add({
     "1. durum: hurafe – 2. durum: hurafe"
    ],
    "a": "C",
-   "s": "<p>1. durumda bir nesnenin kazayı önleyeceğine inanılmaktadır. Bu bir ibadet değil, akla ve dine aykırı batıl bir inançtır: <b>hurafe</b>.<br>2. durumda dinde olmayan bir namaz ibadet adı altında, üstelik “farz” denerek dine eklenmek istenmektedir. Bu, sonradan dine eklenen uygulama yani <b>bid’at</b>tır.<br>İki kavramın farkı, uygulamanın “ibadet diye dine eklenmesi”dir; bunu gözden kaçıranlar A, B veya D’yi seçer. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bid’at: dinde olmadığı hâlde sonradan <b>ibadet diye</b> eklenen uygulama</li> <li>Hurafe: akla ve dine aykırı batıl inanç</li> <li>1. durum: «kaza yapmasın» diye nazar boncuğu</li> <li>2. durum: Peygamberimizin öğretmediği bir namazı «farz» diye yaymak</li></ul><b>İstenen</b><p>Durumların kavramlarla doğru eşleşmesi.</p></div><ol class=\"sv-s\"><li><b>Farkı netleştir</b> Bid’at <b>ibadet görünümündedir</b> (namaz, dua şekli…). Hurafe ise ibadet iddiası taşımayan batıl inançtır (uğur, nazar, uğursuzluk).</li> <li><b>1. durum</b> Nazar boncuğunun kazayı önleyeceğine inanmak akla ve dine aykırı bir inançtır → <b>hurafe</b>.</li> <li><b>2. durum</b> Dinde olmayan bir namazı farz diye eklemek → <b>bid’at</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İkisi de ters eşleşmiş.</td></tr><tr><td>B</td><td>1. durum ibadet iddiası taşımıyor; bid’at değil.</td></tr><tr class=\"ok\"><td>C</td><td>1 hurafe – 2 bid’at → doğru.</td></tr><tr><td>D</td><td>2. durum ibadet diye eklenmiş; bid’attir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sorulacak soru: “Bu, ibadet diye mi sunuluyor?” Evet → bid’at; hayır, batıl inanç → hurafe.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -564,7 +564,7 @@ LGS.add({
     "Sosyal medyanın dinî konularda kullanılmasını engellemek"
    ],
    "a": "A",
-   "s": "<p>Levhada para karşılığı muska yazan, bağış karşılığı duanın kabulünü vaat eden, fal bakan ve bilgisizce fetva verenler sayılmıştır. Bunların ortak noktası dini <b>kişisel çıkar</b> için kullanmak ya da yanlış öğretmektir. Son satırda dinin güvenilir kaynaklardan öğrenilmesi istenir. Asıl amaç, insanları din istismarına karşı uyararak <b>dini korumaktır</b> (A).<br>B: Uyarı, çıkar amaçlı bağış isteyenlerle ilgilidir; camide bağışın kendisi yasaklanmaz. C: Dua değil, duayı istismar etmek eleştirilir. D: Sosyal medyanın kendisi değil, bilgisizce fetva verilmesi eleştirilir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Levha: «DİN İSTİSMARINA ALDANMAYALIM»</li> <li>Para karşılığı muska, «Bana bağış yaparsan duan kabul olur», kerametli şeyh, bilgisiz fetva</li> <li>«Dinimizi Kur’an ve Sünnet’ten, güvenilir kaynaklardan öğrenelim.»</li></ul><b>İstenen</b><p>Levhanın asıl amacı.</p></div><ol class=\"sv-s\"><li><b>Örneklerin ortak noktası</b> Hepsi dini kullanarak para ya da itibar kazanmaya çalışan kişilerdir → <b>din istismarı</b>.</li> <li><b>Amacı bağla</b> Levha insanları bu kişilere karşı uyarıp doğru kaynağa yönlendiriyor. Bu, dinin özünü koruma, yani <b>dinin korunması</b> çabasıdır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Bilinçlendirerek dini korumak → doğru.</td></tr><tr><td>B</td><td>Levha bağışı değil, “bağış yaparsan duan kabul olur” diyen istismarı eleştiriyor.</td></tr><tr><td>C</td><td>Dua sınırlanmıyor; istismarcıya itibar edilmemesi isteniyor.</td></tr><tr><td>D</td><td>Sosyal medya değil, bilgisiz fetva eleştiriliyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Din istismarı = dini kişisel çıkar (para, şöhret) için kullanmak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -576,7 +576,7 @@ LGS.add({
     "Neslin korunması"
    ],
    "a": "C",
-   "s": "<p>Her çalışmayı bir değerle eşleştirelim:<br>I. İlk yardım ve iş güvenliği → <b>can</b><br>II. Bağımlılıkla mücadele → <b>akıl</b><br>III. Mirasın hak sahiplerine adil dağıtılması → <b>mal</b><br>IV. Çocukların güzel ahlakla yetiştirilmesi → <b>nesil</b><br>Listede can, akıl, mal ve nesille ilgili çalışmalar vardır; inanç özgürlüğü ya da dini bid’at-hurafeden korumakla ilgili bir çalışma ise listede yer almamaktadır. Bu nedenle doğrudan ilgili olmayan değer <b>dinin korunmasıdır</b>. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: ilk yardım, iş güvenliği</li> <li>II: uyuşturucu ile mücadele</li> <li>III: mirasın adil paylaşımı</li> <li>IV: çocukları güzel ahlakla yetiştirme</li></ul><b>İstenen</b><p>Çalışmaların <b>hiçbiriyle</b> ilgili olmayan temel değer.</p></div><ol class=\"sv-s\"><li><b>Her çalışmayı eşle</b> I → can; II → akıl; III → mal; IV → nesil.</li> <li><b>Eksik olanı bul</b> Beş temel değer (zarûrât-ı dîniyye): <b>can, akıl, mal, nesil, din</b>. Listede can, akıl, mal ve nesil var; <b>din</b> ile ilgili bir çalışma yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I. çalışma → can.</td></tr><tr><td>B</td><td>II. çalışma → akıl.</td></tr><tr class=\"ok\"><td>C</td><td>Hiçbir çalışma inanç/ibadetle ilgili değil → din.</td></tr><tr><td>D</td><td>IV. çalışma → nesil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Beş değeri tek tek işaretle; işaretsiz kalan cevaptır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -588,7 +588,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>I: Müdür “Tedbir almak tevekküle aykırı değildir” demektedir (✓).<br>II: Hayatı korumak dinî bir sorumluluk olarak gösterilmiştir; bu, <b>canın korunması</b> ilkesidir (✓).<br>III: Metinde afetlerin dinî sorumlulukları engellediğine dair bir bilgi yoktur; aksine önlem almak bir sorumluluk olarak sunulmuştur (✗). Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Tedbir almak tevekküle aykırı değildir; önce gereken önlemleri alır, sonra Allah’a güveniriz.»</li> <li>«Kendi hayatımızı ve başkalarının hayatını korumak hem insani hem de dinî bir sorumluluktur.»</li></ul><b>İstenen</b><p>Metinden ulaşılabilecek yargılar.</p></div><ol class=\"sv-s\"><li><b>I. yargı</b> Müdürün ilk cümlesi bunu açıkça söylüyor. <b>Ulaşılır.</b></li> <li><b>II. yargı</b> Hayatı korumak dinî sorumluluk → canın korunması. <b>Ulaşılır.</b></li> <li><b>III. yargı</b> Metinde afetlerin dinî sorumluluğu engellediğine dair bir ifade yok; aksine önlem almak sorumluluk sayılıyor. <b>Ulaşılamaz.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de doğru; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II → doğru.</td></tr><tr><td>C</td><td>III metinde yok.</td></tr><tr><td>D</td><td>III metinde yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül = önlem + Allah’a güven. Deprem hazırlığı bunun güzel bir örneğidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -600,7 +600,7 @@ LGS.add({
     "Kaliteli ve pahalı bir ürünü, özelliklerini ve fiyatını açıkça belirterek satmak"
    ],
    "a": "D",
-   "s": "<p>Ayetlerde, kendi alırken tam alıp başkasına verirken eksik veren, yani ölçü ve tartıda hile yapanlar kınanmaktadır. Bu, haksız kazançla ilgilidir ve <b>malın korunması</b> kapsamındadır.<br>A (eksik gramaj), B (ayarlı terazi) ve C (pompada fazla gösterim), müşteriye ödediğinden daha azını vermenin günümüzdeki örnekleridir.<br>D’de ise ürünün özellikleri ve fiyatı açıkça belirtilmiştir; ürünün pahalı olması hile değildir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mutaffifîn 1-3: «Ölçüde ve tartıda hile yapanların vay hâline!»</li> <li>Alırken tam alıp verirken eksik verenler eleştiriliyor.</li></ul><b>İstenen</b><p>Eleştirilen davranışa günümüzden örnek <b>olmayan</b> şık.</p></div><ol class=\"sv-s\"><li><b>Eleştirilen davranış</b> Ölçü-tartıda hile: müşteriye söylenenden <b>az</b> vermek, onu aldatmak.</li> <li><b>Şıkları tara</b> A, B, C’de müşteri aldatılıyor (eksik gramaj, ayarlı terazi, fazla gösteren pompa). D’de ise ürün ve fiyat açıkça söylenerek satılıyor; hile yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Etiketten az ürün → hile.</td></tr><tr><td>B</td><td>Müşteri aleyhine ayarlı terazi → hile.</td></tr><tr><td>C</td><td>Verilenden fazla gösteren pompa → hile.</td></tr><tr class=\"ok\"><td>D</td><td>Özellik ve fiyatı açıkça belirtmek → dürüst ticaret, örnek olamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Pahalı ürün satmak hile değildir; hile, müşteriyi <b>aldatmaktır</b>.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -612,7 +612,7 @@ LGS.add({
     "Dinî bilgiler yalnızca güvenilir kaynaklardan öğrenilmelidir."
    ],
    "a": "A",
-   "s": "<p>İki ayet de inanç konusunda zorlamanın olmadığını ve herkesin kendi dininden sorumlu olduğunu bildirir. Ortak mesaj <b>inanç özgürlüğüdür</b>; bu da dinin korunması ilkesinin bir parçasıdır (A).<br>B: Ayetler iletişimi yasaklamaz; yalnızca inançta zorlamayı reddeder. C: Ayetlerde dinin toplumda yaşanmasıyla ilgili bir sınırlama yoktur. D: Doğru bir ilkedir ama bu ayetlerin konusu değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Dinde zorlama yoktur...» (Bakara 256)</li> <li>«Sizin dininiz size, benim dinim de banadır.» (Kâfirûn 6)</li></ul><b>İstenen</b><p>İki ayetin ortak mesajı.</p></div><ol class=\"sv-s\"><li><b>Ayetleri yorumla</b> Birincisi kimsenin bir dini kabule zorlanamayacağını, ikincisi herkesin kendi inancından sorumlu olduğunu söyler.</li> <li><b>Ortak mesaj</b> İnanç <b>özgürlüğü</b>: insan dinini kendi özgür iradesiyle seçer.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İnanç özgürlüğü, zorlama yok → doğru.</td></tr><tr><td>B</td><td>Ayetler iletişimi yasaklamıyor.</td></tr><tr><td>C</td><td>Dinin toplumda görünmemesinden söz edilmiyor.</td></tr><tr><td>D</td><td>Kaynak konusu ayetlerde yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bakara 256 ve Kâfirûn 6 → inanç özgürlüğü → dinin korunması.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -624,7 +624,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "C",
-   "s": "<p>Ayet, ibadetin ve duanın yalnızca Allah’a yöneltilmesini ister.<br>III: Dileği türbedeki kişiden istemek, duayı Allah’tan başkasına yöneltmektir; IV: Dileğin kabulü için sandukaya para bırakmak da dinde yeri olmayan bir hurafedir. İkisi de dinin özüne aykırıdır.<br>I: Ölmüş bir kişi için Allah’a dua etmek; II: Ölümü hatırlayıp ibret almak kabir ziyaretinin amacına uygundur. Türbe ziyaretinin kendisini yanlış sanıp I’i işaretleyen D’ye düşer. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zümer 2: «...dini yalnız Allah’a has kılarak O’na ibadet et.»</li> <li>I Fatiha-dua, II ölümü hatırlama, III türbedeki kişiden çocuk dileyip mum yakma, IV dilek için sandukaya para bırakma</li></ul><b>İstenen</b><p>Dinin özüne <b>aykırı</b> davranışlar.</p></div><ol class=\"sv-s\"><li><b>Ayetin ölçüsü</b> Dua ve dilek <b>yalnızca Allah’a</b> yapılır; kimse Allah ile kul arasına aracı konamaz.</li> <li><b>Uygun olanlar</b> I: Ölen için dua etmek, II: ölümü düşünüp ders almak kabir ziyaretinin amacıdır; uygundur.</li> <li><b>Aykırı olanlar</b> III: Dileği türbedeki kişiden istemek, IV: dilek kabulü için para bırakmak Allah’tan başkasından medet ummaktır → aykırı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve II uygun davranışlar.</td></tr><tr><td>B</td><td>II uygun.</td></tr><tr class=\"ok\"><td>C</td><td>III ve IV → doğru.</td></tr><tr><td>D</td><td>I uygun.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Türbe ziyareti dua ve ibret içindir; dilek türbedeki kişiden değil, Allah’tan istenir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -636,7 +636,7 @@ LGS.add({
     "Hz. Yakup, oğlunun gördüğü rüyanın gerçekleşmeyeceğine inanmıştır."
    ],
    "a": "B",
-   "s": "<p>Hz. Yakup, rüya anlatılırsa kardeşlerin kıskanıp tuzak kurabileceğini düşünerek oğlunu uyarmıştır. Bu, <b>kıskançlığa yol açabilecek durumlarda tedbirli olmayı</b> öğütler (B). Nitekim kardeşler daha sonra kıskançlık yüzünden Hz. Yusuf’u kuyuya atmıştır.<br>A: Ayette rüyaların geleceği kesin belirlediği söylenmez. C: Uyarı yalnızca bu rüya ile ilgilidir, genel bir paylaşım yasağı değildir. D: Hz. Yakup rüyayı önemsediği için tedbir almıştır; gerçekleşmeyeceğine inandığına dair bir ifade yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Yusuf rüyasını babasına anlattı.</li> <li>Hz. Yakup: «Rüyanı kardeşlerine anlatma; sonra sana bir tuzak kurarlar.»</li></ul><b>İstenen</b><p>Hz. Yakup’un tavsiyesinden çıkan sonuç.</p></div><ol class=\"sv-s\"><li><b>Tavsiyenin gerekçesi</b> Hz. Yakup, rüyanın kardeşlerde <b>kıskançlık</b> uyandırıp kötülüğe yol açabileceğini düşünüyor.</li> <li><b>Sonuç</b> Kıskançlığa sebep olabilecek durumlarda dikkatli ve tedbirli olmak gerekir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rüyaların geleceği kesin belirlediği söylenmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Kıskançlığa karşı tedbir → doğru.</td></tr><tr><td>C</td><td>Yalnızca bu rüya için uyarı var; “hiçbir konu” genellemesi yanlış.</td></tr><tr><td>D</td><td>Tersine, rüyanın önemli olduğunu düşündüğü için uyarıyor.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C’deki “hiçbir” genellemesi metnin söylediğinden fazlasını iddia ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -648,7 +648,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "C",
-   "s": "<p>“Çok iyi korurum” ifadesi, hazineyi emanet bilip koruyacağını yani <b>güvenilirliğini</b> (I) gösterir. “Bu işi bilirim” ifadesi ise <b>bilgi ve yeterliliğine</b> (II) dikkat çeker.<br>III: Hz. Yusuf köle olarak satılmış, zindanda kalmıştır; ayette soy ya da servetten söz edilmez. Ayetin yalnızca bir yarısına odaklanan A veya B’yi seçer. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yusuf 55: «Beni ülkenin hazinelerine memur et. Çünkü ben onları <b>çok iyi korurum</b> ve <b>bu işi bilirim</b>.»</li></ul><b>İstenen</b><p>Hz. Yusuf’un dikkat çektiği nitelikler.</p></div><ol class=\"sv-s\"><li><b>İki ipucu</b> «çok iyi korurum» → emanete sahip çıkma, <b>güvenilirlik</b>. «bu işi bilirim» → bilgi ve <b>liyakat</b>.</li> <li><b>III. öncül</b> Ayette soy ya da zenginlikten hiç söz edilmiyor. Liyakat, kişinin işe yeterliliğidir; soyla ilgisi yoktur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de var; eksik.</td></tr><tr><td>B</td><td>I de var; eksik.</td></tr><tr class=\"ok\"><td>C</td><td>I ve II → doğru.</td></tr><tr><td>D</td><td>III ayette yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Görev verilecek kişide iki şart: güvenilirlik (emanet) + yeterlilik (liyakat).</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -660,7 +660,7 @@ LGS.add({
     "Hz. Harun – Hz. Yakup – Mısır hükümdarı"
    ],
    "a": "A",
-   "s": "<p>I: Hz. Yusuf’un öz kardeşi <b>Bünyamin</b>’dir. (Hz. Harun, Hz. Musa’nın kardeşidir.)<br>II: Oğlu Yusuf’tan yıllarca ayrı kalan ve “Allah’ın rahmetinden ümit kesmeyin” diyen baba <b>Hz. Yakup</b>’tur.<br>III: Hz. Yusuf’u kervandan satın alıp evine götüren kişi <b>Mısır’ın veziri (Aziz)</b>dir. Mısır hükümdarı ise daha sonra rüyasını Hz. Yusuf’a yorumlatan kişidir; ikisini karıştıran C veya D’ye düşer. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Hz. Yusuf’un öz kardeşi</li> <li>II: oğlundan ayrı kalıp ümidini kesmeyen peygamber</li> <li>III: Hz. Yusuf’u kervandan satın alıp evine götüren kişi</li></ul><b>İstenen</b><p>Kişilerin sırasıyla doğru adları.</p></div><ol class=\"sv-s\"><li><b>I</b> Hz. Yusuf’un öz kardeşi <b>Bünyamin</b>dir.</li> <li><b>II</b> Babası <b>Hz. Yakup</b> yıllarca oğlunu görmediği hâlde Allah’ın rahmetinden ümit kesmedi.</li> <li><b>III</b> Hz. Yusuf’u satın alan kişi Mısır’ın veziri <b>Aziz</b>’dir; eşine ona iyi bakmasını söylemiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Bünyamin – Hz. Yakup – Aziz → doğru.</td></tr><tr><td>B</td><td>İlk iki isim yer değiştirmiş.</td></tr><tr><td>C</td><td>Hz. İbrahim ve hükümdar yanlış.</td></tr><tr><td>D</td><td>Hz. Harun, Hz. Musa’nın kardeşidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kıssanın kişileri: Hz. Yakup (baba), Bünyamin (öz kardeş), Aziz (vezir), hükümdar (rüyayı gören).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -672,7 +672,7 @@ LGS.add({
     "Haksızlığa uğrayan kişi, güç kazandığında hakkını mutlaka almalıdır."
    ],
    "a": "D",
-   "s": "<p>Kardeşlerin kıskançlıkla Hz. Yusuf’u kuyuya atması A’yı; zindanda ümidini yitirmemesi B’yi; bolluk yıllarında ürünü biriktirip halkı kıtlıktan kurtarması C’yi destekler.<br>Hz. Yusuf ise güç kazandığında kardeşlerinden hesap sormamış, onları <b>affetmiştir</b>. Bu nedenle D, kıssanın mesajının tam tersidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kıskançlık → kuyu</li> <li>Teklifi reddetti → zindan, ümidini yitirmedi</li> <li>Rüya yorumu → hazine, bolluk-kıtlık tedbiri</li> <li>Kardeşlerini tanıdığında «onları affetti»</li></ul><b>İstenen</b><p>Metinden <b>çıkarılamayacak</b> sonuç.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkan dersler</b> Kıskançlığın zararı, sabır ve tevekkül, tedbirli yönetim, affedicilik.</li> <li><b>Ters olanı bul</b> Hz. Yusuf güç kazandığında kardeşlerini <b>affetti</b>; “hakkını mutlaka almalı” yargısı metinle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kardeşler kıskançlıkla Yusuf’u kuyuya attı → çıkarılır.</td></tr><tr><td>B</td><td>Ümidini yitirmeyip zorlukları aştı → çıkarılır.</td></tr><tr><td>C</td><td>Kıtlık tedbiri halkı korudu → çıkarılır.</td></tr><tr class=\"ok\"><td>D</td><td>Affetti, hak aramadı → çıkarılamaz.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -684,7 +684,7 @@ LGS.add({
     "Günah çağrısını reddederek iffetini koruması"
    ],
    "a": "B",
-   "s": "<p>Hz. Yusuf haksız yere zindandayken bile, kendisinden yardım isteyen arkadaşlarına önce Allah’ın birliğini (tevhidi) anlatmıştır. Bu, onun zor şartlarda da <b>tebliğ görevini sürdürdüğünü</b> gösterir (B).<br>A, C ve D, Hz. Yusuf’la ilgili doğru bilgilerdir; ancak bu metindeki davranışı değil kıssanın başka bölümlerini (hazine yönetimi, kardeşlerini affetmesi, saraydaki iffeti) anlatır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zindan arkadaşları rüyalarının yorumunu istedi.</li> <li>Hz. Yusuf önce: «Birbirinden ayrı birçok ilah mı daha iyidir, yoksa ... bir tek Allah mı?» (Yusuf 39)</li></ul><b>İstenen</b><p>Bu davranışın gösterdiği özellik.</p></div><ol class=\"sv-s\"><li><b>Davranışı incele</b> Hz. Yusuf, zindanda bile insanlara Allah’ın birliğini (tevhid) anlatıyor.</li> <li><b>Kavramla bağla</b> Peygamberlerin temel görevi <b>tebliğ</b>dir: Allah’ın mesajını insanlara ulaştırmak. Zor şartlar bu görevi durdurmamış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hazine görevi başka bir olay.</td></tr><tr class=\"ok\"><td>B</td><td>Zor şartlarda tevhide çağırma (tebliğ) → doğru.</td></tr><tr><td>C</td><td>Affedicilik kardeşlerle ilgili olay.</td></tr><tr><td>D</td><td>İffet saraydaki olay.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Soruda geçen olaya ait özelliği seç; kıssadaki başka doğru bilgiler çeldiricidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -696,7 +696,7 @@ LGS.add({
     "İman – Salih amel – Sabrı tavsiye – Hakkı tavsiye"
    ],
    "a": "C",
-   "s": "<p>I: Allah’a yürekten inanmak <b>iman</b>dır.<br>II: Komşuya yardım etmek, imanla birlikte yapılan iyi ve yararlı bir iş, yani <b>salih amel</b>dir.<br>III: Arkadaşını yanlıştan vazgeçirip doğruyu söylemek <b>hakkı tavsiye etmek</b>tir.<br>IV: Zorluk yaşayan arkadaşına dayanmasını öğütlemek <b>sabrı tavsiye etmek</b>tir.<br>D, III ile IV’ü; A, II ile III’ü yer değiştirmiştir. B ise iman ile salih ameli karıştırmıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Şartlar: iman, salih amel, hakkı tavsiye, sabrı tavsiye</li> <li>I Allah’a inanmak, II yaşlı komşuya yardım, III kopya çekecek arkadaşını uyarmak, IV ameliyat olacak arkadaşına «Biraz daha dayan» demek</li></ul><b>İstenen</b><p>Davranışların şartlarla sırasıyla eşleşmesi.</p></div><ol class=\"sv-s\"><li><b>I</b> Allah’a yürekten inanmak → <b>iman</b>.</li> <li><b>II</b> Komşuya yardım, iyi ve faydalı iş → <b>salih amel</b>.</li> <li><b>III</b> Arkadaşına doğruyu söyleyip yanlıştan vazgeçirmek → <b>hakkı tavsiye</b>.</li> <li><b>IV</b> Zorlukta dayanmasını öğütlemek → <b>sabrı tavsiye</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II ile III yer değiştirmiş.</td></tr><tr><td>B</td><td>I ile II yer değiştirmiş.</td></tr><tr class=\"ok\"><td>C</td><td>İman – Salih amel – Hak – Sabır → doğru.</td></tr><tr><td>D</td><td>III ile IV yer değiştirmiş.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> III ile IV’ü karıştırma: “doğruyu söylemek” hak, “dayan, ümitli ol” sabırdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -708,7 +708,7 @@ LGS.add({
     "Dinî edebiyat eserleri yalnızca Arapça yazılmıştır."
    ],
    "a": "A",
-   "s": "<p>Bayram tekbiri ve ezan makamları musikiye, Yunus Emre’nin ilahileri edebiyata örnektir. Bunların hepsi dinin <b>kültür ve sanata etkisini</b> gösterir (A).<br>B: Tekbir camilerde, ilahiler Anadolu’nun dört bir yanında okunmuştur; halka ulaşmıştır. C: Ezan bir ibadet çağrısıdır; metinde yalnızca okunuşunun musikiye katkısından söz edilir. D: Yunus Emre’nin ilahileri Türkçedir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Itrî’nin bestelediği bayram tekbiri</li> <li>Ezanın vakte göre farklı makamlarla okunması</li> <li>Yunus Emre’nin Türkçe ilahileri «halkın dinî duygularını dile getirmiş»</li></ul><b>İstenen</b><p>Metinden söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Örnekleri alanlara ayır</b> Tekbir ve ezan makamları → <b>musiki</b>; ilahiler → <b>edebiyat</b> (ve musiki).</li> <li><b>Ortak yargı</b> Din, musiki ve edebiyatta yüzyıllardır yaşayan eserlere kaynaklık etmiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Din, musiki ve edebiyata kaynaklık etmiş → doğru.</td></tr><tr><td>B</td><td>İlahiler «Anadolu’nun dört bir yanında» okunmuş; halka ulaşmış.</td></tr><tr><td>C</td><td>Ezan bir ibadet çağrısıdır; metin yalnızca okunuş geleneğinden söz ediyor.</td></tr><tr><td>D</td><td>Yunus Emre Türkçe yazmış.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -720,7 +720,7 @@ LGS.add({
     "İslam’ın yardımlaşma anlayışı, toplumun geleneklerine yansımıştır."
    ],
    "a": "B",
-   "s": "<p>Alanın kimseye görünmeden gelmesi ihtiyaç sahibinin onurunun korunduğunu (A); verenin kimse görmeden para bırakması gösterişten uzak durulduğunu (C); bu uygulamanın cami avlularında yerleşik bir gelenek olması dinin yardımlaşma anlayışının kültüre yansıdığını (D) gösterir.<br>Metinde sadaka taşına bırakılan paranın zekât yerine geçtiğine dair bir bilgi yoktur; sadaka, zekâttan ayrı, gönüllü bir yardımdır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Sadaka taşına varlıklılar «kimse görmeden» para bırakırdı.</li> <li>İhtiyaç sahibi yalnızca ihtiyacı kadar alırdı.</li> <li>«veren kimin aldığını, alan da kimin verdiğini bilmezdi»</li></ul><b>İstenen</b><p>Sadaka taşı için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki değerler</b> Gizli vermek → gösterişten uzaklık; gizli almak → ihtiyaç sahibinin onuru; geleneğe dönüşmesi → İslam’ın yardımlaşma anlayışı.</li> <li><b>Metinde olmayanı bul</b> Metin sadakadan söz ediyor. <b>Sadaka</b> gönüllü yardımdır; <b>zekât</b> ise belirli şartlarla farz olan ibadettir. Metinde sadaka taşının zekâtın yerine geçtiğine dair bir bilgi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kimse görmeden almak → onur gözetilmiş.</td></tr><tr class=\"ok\"><td>B</td><td>Sadaka ile zekât farklıdır; metinde böyle bir bilgi yok → söylenemez.</td></tr><tr><td>C</td><td>Gizli vermek → gösterişten uzak.</td></tr><tr><td>D</td><td>Yardımlaşma geleneğe yansımış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sadaka = gönüllü yardım. Zekât = şartları taşıyana farz olan mali ibadet.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -732,7 +732,7 @@ LGS.add({
     "Zeynep"
    ],
    "a": "C",
-   "s": "<p>Kardeşlerin kıskançlıkla Hz. Yusuf’u kuyuya atması (Ali), gömleğe yalancı kan sürüp “Onu kurt yedi” demesi (Ece) ve Hz. Yusuf’un bir kervan tarafından bulunup Mısır’a götürülmesi (Zeynep) kıssada yer alır.<br>Can’ın söylediği ise kıssayla uyuşmaz: Hz. Yusuf’u kuyudan kardeşleri değil kervan çıkarmıştır; o, babasına ancak yıllar sonra, Mısır’da yönetici olduktan sonra kavuşmuştur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ali: kıskançlık yüzünden kuyuya attılar</li> <li>Ece: gömleğe yalancı kan sürüp «Onu kurt yedi» dediler</li> <li>Can: «pişman olup ... kuyudan kendileri çıkardılar»</li> <li>Zeynep: bir kervan buldu, Mısır’a götürdü</li></ul><b>İstenen</b><p>Kıssayla <b>uyuşmayan</b> söz.</p></div><ol class=\"sv-s\"><li><b>Kıssadaki gerçek sıra</b> Kardeşler kıskançlıkla Yusuf’u kuyuya attı, babalarına yalan söyledi. Yusuf’u oradan geçen bir <b>kervan</b> buldu ve Mısır’a götürüp sattı.</li> <li><b>Uyuşmayanı bul</b> Kardeşler onu kuyudan çıkarmadı; ancak yıllar sonra Mısır’da karşılaştıklarında pişmanlıklarını itiraf ettiler. Can’ın sözü kıssayla çelişiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kıskançlık → kıssayla uyumlu.</td></tr><tr><td>B</td><td>Yalancı kan ve kurt yalanı → uyumlu.</td></tr><tr class=\"ok\"><td>C</td><td>Kuyudan kervan çıkardı, kardeşler değil → uyuşmaz.</td></tr><tr><td>D</td><td>Kervan buldu → uyumlu.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Kardeşlerin pişmanlığı kıssada var, ama yıllar sonra Mısır’da; Can iki olayı birleştirmiş.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -744,7 +744,7 @@ LGS.add({
     "Hastalığı nedeniyle oruç tutamayan dedesine, dinin hastalara kolaylık tanıdığını anlatmak"
    ],
    "a": "D",
-   "s": "<p>Hadis, dinin anlatılmasında ve yaşanmasında kolaylık gösterilmesini, insanların dinden soğutulmamasını öğütler. Hasta olan dedesine dinin tanıdığı kolaylığı anlatmak, hem kolaylaştırmak hem de müjdelemektir (D).<br>A: Herkesin önünde azarlamak nefret ettirebilir. B: Yalnızca korkutmak müjdelemeyi ihmal eder. C: Hata yüzünden dersi bitirmek öğrenmeyi zorlaştırır. Bu üçü hadisle çelişir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Kolaylaştırınız, zorlaştırmayınız; müjdeleyiniz, nefret ettirmeyiniz.»</li></ul><b>İstenen</b><p>Hadisin mesajına <b>en uygun</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Hadisin anlamı</b> Din anlatılırken ve yaşanırken insanlara güçlük çıkarılmamalı, sevdirilmeli; kimse dinden soğutulmamalı.</li> <li><b>Uygun davranışı bul</b> Dinin hastaya oruç konusunda tanıdığı <b>ruhsatı</b> (kolaylığı) anlatmak tam olarak “kolaylaştırmak” ve “müjdelemektir”.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Herkesin önünde azarlamak → nefret ettirir.</td></tr><tr><td>B</td><td>Yalnız korkutmak → müjdeleme yok.</td></tr><tr><td>C</td><td>Hata yapınca dersi bitirmek → zorlaştırır.</td></tr><tr class=\"ok\"><td>D</td><td>Hastaya dinin kolaylığını anlatmak → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dinde zorunluluk hâllerinde kolaylık (ruhsat) vardır: hasta ve yolcu oruç tutmayıp sonra kaza edebilir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -756,7 +756,7 @@ LGS.add({
     "Din, insanın yalnızca ibadet hayatını düzenler."
    ],
    "a": "A",
-   "s": "<p>“Akıl sahibi” ifadesi, dinî sorumluluğun aklı olan insana yüklendiğini; “özgür iradeleriyle” ifadesi ise insanın dini seçmede ve uygulamada zorlanmadığını vurgular (A). Akıl, bu nedenle korunması gereken temel değerlerden biridir.<br>B: Tanımda “hem dünya hem de ahiret mutluluğu” denmiştir. C: “İlahi kurallar” ifadesi, kuralların Allah’tan geldiğini gösterir. D: “İyiye, doğruya ve güzele yöneltme” hayatın bütününü kapsar. Ayrıca B, C ve D koyu yazılan ifadelerle ilgili değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tanımda koyu yazılanlar: «akıl sahibi» ve «özgür iradeleriyle»</li></ul><b>İstenen</b><p>Koyu ifadelerle vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>«akıl sahibi»</b> Dinî sorumluluk (yükümlülük) aklı olan insana yüklenir. Akıl, dinin muhatap olma şartıdır.</li> <li><b>«özgür iradeleriyle»</b> İnsan dini kendi isteğiyle seçer ve yaşar; din zorlamaya dayanmaz.</li> <li><b>Birleştir</b> İki ifade birlikte: sorumluluk akıl ve özgür irade sahibine yüklenir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Akıl + özgür irade + zorlama yok → doğru.</td></tr><tr><td>B</td><td>Tanım «hem dünya hem de ahiret» diyor; ayrıca koyu ifadelerle ilgisi yok.</td></tr><tr><td>C</td><td>«ilahi kurallar» kuralların Allah’tan geldiğini söyler.</td></tr><tr><td>D</td><td>İyiye, doğruya yöneltmek hayatın bütününü kapsar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Soruda “koyu yazılan ifadeler” deniyorsa yalnızca o ifadelere bak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -768,7 +768,7 @@ LGS.add({
     "4"
    ],
    "a": "B",
-   "s": "<p>1. haber (kitap okuma) ve 4. haber (bilim fuarı) doğru bilgiye ulaşmayı ve düşünmeyi; 3. haber (bağımlılıkla mücadele) aklı örten zararlı maddelerden korunmayı anlatır. Bu üçü <b>aklın korunması</b> ile ilgilidir.<br>2. haberde ise başkasına ait malın sahibine teslim edilmesi, yani emanete sahip çıkıp haksız kazançtan uzak durmak söz konusudur; bu <b>malın korunması</b> ile ilgilidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Her gün 20 dakika kitap</li> <li>2: Taksicinin cüzdanı sahibine teslim etmesi</li> <li>3: Madde bağımlılığıyla mücadele semineri</li> <li>4: Bilim fuarı</li></ul><b>İstenen</b><p>Temel değer açısından <b>diğerlerinden farklı</b> haber.</p></div><ol class=\"sv-s\"><li><b>Her haberi eşle</b> 1 kitap okuma → aklın gelişmesi; 3 bağımlılıkla mücadele → aklın korunması; 4 bilim fuarı → akıl ve bilgi.</li> <li><b>Farklıyı bul</b> 2’de başkasına ait parayı (emaneti) sahibine vermek → <b>malın korunması</b>. Diğer üçü akılla ilgili.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kitap → akıl.</td></tr><tr class=\"ok\"><td>B</td><td>Cüzdanı teslim → mal; farklı.</td></tr><tr><td>C</td><td>Bağımlılık → akıl.</td></tr><tr><td>D</td><td>Bilim fuarı → akıl.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Akıl yalnızca zararlıdan korunarak değil, okuyarak ve öğrenerek de korunur ve geliştirilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -780,7 +780,7 @@ LGS.add({
     "İnanç özgürlüğü, diğer değerler korunmadan da sağlanabilir."
    ],
    "a": "C",
-   "s": "<p>Metinde beş temel değer (can, akıl, mal, nesil, din) sırayla anlatılmış ve bu değerler korunduğunda <b>bireyin huzur bulacağı, toplumda güven ve barışın hâkim olacağı</b> belirtilmiştir. Asıl anlatılan, dinin emir ve yasaklarının bu değerleri koruyarak bireyin ve toplumun huzurunu amaçladığıdır (C).<br>A: Metin değerler arasında bir öncelik sıralaması yapmaz; yalnızca birini anlatan bir şık asıl düşünce olamaz. B: Metin toplumsal barıştan da söz eder. D: Metinde böyle bir yargı yoktur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Her yasak hayati bir değeri korur: can, akıl (düşünme), mal (emek), nesil (aile), din (inanç özgürlüğü).</li> <li>«Bu değerler korunduğunda birey huzur bulur, toplumda güven ve barış hâkim olur.»</li></ul><b>İstenen</b><p>Metnin ana düşüncesi.</p></div><ol class=\"sv-s\"><li><b>Metnin yapısı</b> Metin önce beş temel değeri tek tek örnekliyor, sonunda sonucu söylüyor.</li> <li><b>Ana fikir</b> Son cümle ana fikirdir: Dinin emir ve yasakları temel değerleri koruyarak birey ve toplumun huzurunu amaçlar.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metin değerleri sıralamıyor; biri diğerinden önemli denmiyor.</td></tr><tr><td>B</td><td>Metin «toplumda güven ve barış» diyor; yalnız birey değil.</td></tr><tr class=\"ok\"><td>C</td><td>Temel değerleri koruyup huzuru amaçlamak → doğru.</td></tr><tr><td>D</td><td>Metin değerlerin birlikte korunmasını anlatıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ana fikir genellikle metnin sonuç cümlesindedir: «Bu değerler korunduğunda…»</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -792,7 +792,7 @@ LGS.add({
     "II. metinde dinin kültür ve sanat üzerindeki etkisine örnek verilmiştir."
    ],
    "a": "D",
-   "s": "<p>I. metinde Murat’ın acısını dua ve Allah’ı anmakla hafifletmesi, dinin <b>bireysel hayattaki</b> etkisidir (A doğru). II. metinde imamın öncülüğünde esnafın, ailelerin ve gençlerin bir araya gelmesi <b>toplumsal dayanışmadır</b> (B doğru). Birinde ölüm, ötekinde yangın gibi zor bir durum vardır ve iki metinde de din insanlara destek olur (C doğru).<br>II. metinde mimari, hat, musiki gibi bir sanat ögesi yoktur; caminin adının geçmesi onu kültür-sanat örneği yapmaz (D söylenemez). D’yi seçtiren yanılgı, “cami” kelimesini görünce mimariyi düşünmektir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I. metin: Murat babasını kaybetti; dua ve Kur’an ile «içinin hafiflediğini fark etti»</li> <li>II. metin: Evi yanan aile için cemaat yardımlaştı, ev onarıldı.</li></ul><b>İstenen</b><p>Metinler için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>I. metin</b> Dinin bireye etkisi: zorlukta iç huzur, teselli, ümit.</li> <li><b>II. metin</b> Dinin topluma etkisi: yardımlaşma ve dayanışma.</li> <li><b>Yanlışı bul</b> II. metinde sanat eseri, mimari, musiki gibi bir <b>kültür-sanat</b> örneği yok; yalnızca yardımlaşma var.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I. metin bireysel etki → söylenir.</td></tr><tr><td>B</td><td>II. metin dayanışma → söylenir.</td></tr><tr><td>C</td><td>İki metinde de zor duruma destek → söylenir.</td></tr><tr class=\"ok\"><td>D</td><td>II. metinde sanat yok → söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dinin etki alanları: bireysel hayat, toplumsal hayat, kültür ve sanat. Örneği doğru alana koy.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -804,7 +804,7 @@ LGS.add({
     "I, II, III ve IV"
    ],
    "a": "A",
-   "s": "<p>I: Metin, dinin “Nereden geldim, niçin yaşıyorum…” sorularına cevap verdiğini söyler (ulaşılır). II: “Din, insana bir sorumluluk bilinci kazandırır” denir (ulaşılır). IV: İnanan insanın sözünde durması, kimseyi incitmemesi; inancın davranışlara yön verdiğini gösterir (ulaşılır).<br>III: Metinde din duygusunun nasıl kazanıldığından söz edilmez; üstelik din duygusu insanın doğuştan getirdiği (fıtrî) bir özelliktir. III’ü içeren B, C ve D, “hepsi doğru gibi duruyor” yanılgısının sonucudur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Nereden geldim, niçin yaşıyorum, nereye gideceğim?» sorularına din cevap verir.</li> <li>«davranışlarına daha dikkat eder ... sorumluluk bilinci kazandırır ve onun günlük davranışlarına yön verir»</li></ul><b>İstenen</b><p>Metinden ulaşılabilecek yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Varoluş sorularına cevap → metinde var. <b>Ulaşılır.</b></li> <li><b>II</b> «sorumluluk bilinci kazandırır» → <b>Ulaşılır.</b></li> <li><b>III</b> Din duygusunun nasıl kazanıldığından metinde hiç söz edilmiyor (üstelik din duygusu fıtridir, doğuştandır). <b>Ulaşılamaz.</b></li> <li><b>IV</b> «davranışlarına yön verir» → <b>Ulaşılır.</b></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, II ve IV → doğru.</td></tr><tr><td>B</td><td>III yanlış, II ve IV eksik.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Din duygusu insanda doğuştan (fıtri) vardır; eğitimle sonradan kazanılmaz, eğitimle gelişir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -816,7 +816,7 @@ LGS.add({
     "IV"
    ],
    "a": "C",
-   "s": "<p>I: Hat, güzel yazı sanatıdır (doğru). II: Naat, Peygamberimizi öven şiirdir (doğru). IV: Mevlid, Peygamberimizin doğumunu anlatan ve ezgiyle okunan eserdir (doğru).<br>III’teki açıklama minyatürün değil <b>tezhibin</b> (altınlama) tanımıdır. Minyatür, kitaplardaki olayları küçük boyutlu resimlerle anlatan resim sanatıdır. Öğrenci, ikisi de kitap süslemesi olduğu için tezhip ile minyatürü karıştırmıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I Hat: güzel yazı</li> <li>II Naat: Peygamberimizi öven şiir</li> <li>III Minyatür: «altın varak ve boyalarla süslenmesi (altınlama)»</li> <li>IV Mevlid: Peygamberimizin doğumunu anlatan manzum eser</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Tanımları kontrol et</b> Hat, naat ve mevlid tanımları doğrudur.</li> <li><b>Yanlışı yakala</b> Kitap sayfalarını altın varakla süsleme (altınlama) <b>tezhip</b>tir. Minyatür ise kitaplardaki küçük boyutlu resim sanatıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hat → doğru.</td></tr><tr><td>B</td><td>Naat → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Altınlama tezhiptir, minyatür değil → yanlış.</td></tr><tr><td>D</td><td>Mevlid → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tezhip = altınlama; hat = güzel yazı; ebru = su üzerinde boya; minyatür = küçük resim.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -828,7 +828,7 @@ LGS.add({
     "Vakıflar, yalnızca insanların sorunlarına çözüm üretmeye yönelik kurulmuştur."
    ],
    "a": "D",
-   "s": "<p>Yol, köprü, şifahane, yemek, burs, borç ve çeyiz gibi çok farklı alanlarda hizmet verilmiştir (A). “Padişahlardan sıradan halka kadar” ifadesi B’yi; hizmetin “kendisinden sonra da kesintisiz sürmesinin” şart koşulması C’yi destekler.<br>Metinde sokak hayvanlarının beslenmesi için kurulan vakıflardan da söz edildiği için vakıfların <b>yalnızca</b> insanlara yönelik olduğu söylenemez. D’yi doğru sanmak, metnin son ayrıntısını gözden kaçırmaktan ve “yalnızca” kelimesine dikkat etmemekten kaynaklanır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Padişahtan halka kadar pek çok kişi vakıf kurdu.</li> <li>Yol, köprü, çeşme, şifahane, medrese; borç ödeme, çeyiz</li> <li>«Kimi vakıflar ise kış aylarında sokak hayvanlarının beslenmesi için kurulmuştur.»</li> <li>Vakfiyede hizmetin sürmesi şart koşulurdu.</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Farklı ihtiyaçlara hizmet (A), halktan kişilerin de vakıf kurması (B), iyiliğin sürekliliği (C) metinde açıkça var.</li> <li><b>Çelişeni bul</b> Metin sokak hayvanları için kurulan vakıflardan da söz ediyor. “Yalnızca insanlar için” yargısı metinle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Çok farklı ihtiyaç karşılanmış → ulaşılır.</td></tr><tr><td>B</td><td>«padişahlardan sıradan halka kadar» → ulaşılır.</td></tr><tr><td>C</td><td>«kesintisiz sürmesini ... şart koşardı» → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Hayvanlar için de vakıf var → ulaşılamaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Yalnızca” kelimesi geçen şıkları metindeki karşı örnekle kontrol et.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -840,7 +840,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>Zeynep alayı görünce müdahale edip durdurmuştur; bu, kötülüğü elle ve dille düzeltmeyi öğütleyen hadise (I) uygundur. Küs iki arkadaşı barıştırması ise “kardeşlerinizin arasını düzeltin” emrine (II) uygundur.<br>III. ayet israfla, yani malın korunmasıyla ilgilidir; metinde israfa dair bir durum yoktur. A, yalnızca ilk olayı fark edip barıştırmayı gözden kaçıranların; C ve D ise her ayeti iyi davranışla ilişkilendirmeye çalışanların seçeceği çeldiricidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zeynep alayı gördü, «bu davranışın yanlış olduğunu söyleyerek alayı durdurdu».</li> <li>Küsen iki arkadaşını «konuşturup barıştırdı».</li></ul><b>İstenen</b><p>Zeynep’in davranışlarıyla ilişkilendirilebilecek metinler.</p></div><ol class=\"sv-s\"><li><b>I. hadis</b> Kötülüğü eliyle ya da diliyle düzeltmek → Zeynep alayı sözle durdurdu. <b>İlişkili.</b></li> <li><b>II. ayet</b> «kardeşlerinizin arasını düzeltin» → küsleri barıştırdı. <b>İlişkili.</b></li> <li><b>III. ayet</b> İsraf yasağı; Zeynep’in davranışlarında israfla ilgili bir şey yok. <b>İlişkisiz.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de ilişkili; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II → doğru.</td></tr><tr><td>C</td><td>III ilişkisiz.</td></tr><tr><td>D</td><td>III ilişkisiz.</td></tr></table><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -852,7 +852,7 @@ LGS.add({
     "İbadetlerin belirli vakitlerde ve belirli yerlerde yapılması gerekir."
    ],
    "a": "A",
-   "s": "<p>Metin namaz ve hac örnekleriyle insanların servet, makam, dil ve renk farkı gözetilmeden bir araya geldiğini; üstünlüğün iman ve güzel ahlakla olduğunu anlatır. Ana düşünce, ibadetlerin <b>eşitlik ve kardeşlik</b> bilincini güçlendirmesidir (A).<br>B ve C dinî bakımdan doğru bilgilerdir; ancak metinde bunlardan söz edilmez. “Doğru bilgi = doğru cevap” yanılgısı bu şıkları seçtirir. D’deki vakit ve yer şartı da metnin konusu değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Namazda zengin-yoksul, işçi-işveren «aynı safta omuz omuza»</li> <li>Hacda farklı dil ve renkteki insanlar aynı sade kıyafetle</li> <li>«üstünlüğün mal, mevki ya da soyla değil; iman ve güzel ahlakla olduğunu hatırlatır»</li></ul><b>İstenen</b><p>Metinde asıl vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>Örneklerin ortak noktası</b> Namaz ve hacda insanlar arasındaki zenginlik, makam, renk, dil farkları ortadan kalkıyor.</li> <li><b>Ana düşünce</b> İbadetler insanlar arasında <b>eşitlik ve kardeşlik</b> bilincini güçlendirir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Eşitlik ve kardeşlik → doğru.</td></tr><tr><td>B</td><td>Cemaat namazının fazileti doğru bilgi ama metnin konusu değil.</td></tr><tr><td>C</td><td>Haccın farz olması metinde yok.</td></tr><tr><td>D</td><td>Vakit ve yer metnin ana fikri değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğru bir dinî bilgi, metnin ana fikri olmayabilir; metnin son cümlesine bak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -864,7 +864,7 @@ LGS.add({
     "Defne"
    ],
    "a": "D",
-   "s": "<p>Ali: Bakara 195, insanın kendini tehlikeye atmamasını, yani kendi canına karşı sorumluluğunu anlatır (uygun). Ece: Hadiste kardeşi için de iyiliği istemek imanın olgunluğuna bağlanmıştır (uygun). Can: Metin, çevreyi korumayı emanete sahip çıkmak olarak görür (uygun).<br>Defne’nin yorumu, metnin ilk cümlesiyle (“yalnızca Allah’a karşı olanlarla sınırlı değildir”) doğrudan çelişir; sorumluluklar ibadetlerle sınırlı değildir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Metin: Sorumluluk «yalnızca Allah’a karşı olanlarla sınırlı değildir»; can, aile, komşu, toplum, çevre de var.</li> <li>Defne: «sorumlulukları, ibadetlerini eksiksiz yapmakla tamamlanır»</li></ul><b>İstenen</b><p>Metinle <b>çelişen</b> yorum.</p></div><ol class=\"sv-s\"><li><b>Yorumları metinle karşılaştır</b> Ali (Bakara 195 → kendi canı), Ece (hadis → başkalarına sorumluluk, imanla bağlantı), Can (doğayı korumak emanet) metinle uyumlu.</li> <li><b>Çelişeni bul</b> Metnin ilk cümlesi sorumluluğun ibadetlerle sınırlı olmadığını söylüyor. Defne’nin yorumu bunun tam tersi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ali → metinle uyumlu.</td></tr><tr><td>B</td><td>Ece → uyumlu.</td></tr><tr><td>C</td><td>Can → uyumlu.</td></tr><tr class=\"ok\"><td>D</td><td>Defne → «sınırlı değildir» ifadesiyle çelişir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’da sorumluluk alanları: Allah’a, kendine, ailesine, topluma ve çevreye karşı.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -876,7 +876,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "C",
-   "s": "<p>I: Çevreyi temiz tutmak emanete sahip çıkmaktır. II: Suyu ölçülü kullanmak israftan kaçınmaktır. IV: Canlılara su vermek, emanet olarak görülen canlıları korumaktır. Bu üçü metinle bağdaşır.<br>III: Nesli azalan bitkileri kökleriyle sökmek, doğaya zarar veren ölçüsüz bir kullanımdır; “süs için” olması onu masum kılmaz. A, IV’ü çevreyle ilişkilendirmeyenlerin; B ve D, III’ü “doğadan yararlanma” sananların çeldiricisidir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yeryüzü insana «emanet»; ondan «ölçülü biçimde yararlanmak» gerekir.</li> <li>A’râf 31: «israf etmeyin»</li> <li>I başkalarının çöpünü de toplamak, II suyu boşa akıtmamak, III nesli azalan çiçekleri köküyle sökmek, IV sokak hayvanlarına su koymak</li></ul><b>İstenen</b><p>Metindeki anlayışla <b>bağdaşan</b> davranışlar.</p></div><ol class=\"sv-s\"><li><b>Bağdaşanlar</b> I: Doğayı temiz tutmak → emaneti korumak. II: Suyu israf etmemek → ayetin mesajı. IV: Canlılara merhamet → emanete sahip çıkmak.</li> <li><b>Bağdaşmayan</b> III: Nesli azalan bitkileri sökmek doğaya zarar verir; ölçülü yararlanma değildir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV de bağdaşıyor; eksik.</td></tr><tr><td>B</td><td>III bağdaşmıyor.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV → doğru.</td></tr><tr><td>D</td><td>III bağdaşmıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Emanet bilinci: kullan ama zarar verme, israf etme, başka canlıları da gözet.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -888,7 +888,7 @@ LGS.add({
     "Emir"
    ],
    "a": "B",
-   "s": "<p>Elif: Zamana yemin edilmesi, ömrün değerine dikkat çeker (uygun). Sena: İman, salih amelle birlikte sayılmıştır (uygun). Emir: Hakkı ve sabrı <b>birbirine</b> tavsiye etmek toplumsal bir sorumluluktur (uygun).<br>Kaan’ın yorumu yanlıştır: Surede kurtuluş dört şarta bağlanmıştır; iman ve salih amelin yanında hakkı ve sabrı tavsiye etmek de gerekir. Yani yalnızca bireysel inanç ve ibadetler yeterli gösterilmemiştir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Asr: kurtulanlar iman + salih amel + hakkı tavsiye + sabrı tavsiye</li> <li>Kaan: «kurtuluş için yalnızca kişinin kendi imanının ve ibadetlerinin yeterli olduğu bildiriliyor»</li></ul><b>İstenen</b><p>Surenin mesajıyla <b>çelişen</b> yorum.</p></div><ol class=\"sv-s\"><li><b>Yorumları kontrol et</b> Elif (zamana yemin → ömrün değeri), Sena (iman ve salih amel birlikte), Emir (birbirine tavsiye → topluma sorumluluk) surenin mesajıyla uyumlu.</li> <li><b>Çelişeni bul</b> Sure, hakkı ve sabrı <b>birbirine tavsiye etmeyi</b> de şart koşar. “Yalnızca kendi imanı yeter” yorumu bunu yok sayar.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Elif → uyumlu.</td></tr><tr class=\"ok\"><td>B</td><td>Kaan → toplumsal şartları yok sayıyor, çelişir.</td></tr><tr><td>C</td><td>Sena → uyumlu.</td></tr><tr><td>D</td><td>Emir → uyumlu.</td></tr></table><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -900,7 +900,7 @@ LGS.add({
     "Kardeşlerinin kıskançlığını önceden sezip babasını uyardığına"
    ],
    "a": "D",
-   "s": "<p>Zindanda yıllarca Allah’a güvenini yitirmemesi A’yı, günah çağrısını reddedip zindanı göze alması B’yi, rüya yorumu ve tedbirleriyle halkı kıtlıktan koruması C’yi destekler.<br>Metinde Hz. Yusuf’un kardeşlerinin kıskançlığını sezip babasını uyardığına dair bilgi yoktur. Kıssada durum tam tersidir: Rüyasını kardeşlerine anlatmaması için oğlunu uyaran, babası Hz. Yakup’tur. D, uyaran ile uyarılanı karıştıran öğrencinin çeldiricisidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kıskançlık → kuyu → kervan → saray</li> <li>Günah çağrısını reddetti → iftira, zindan</li> <li>«Allah’a olan güvenini yitirmedi»</li> <li>Rüya yorumu → hazine, halkı kıtlıktan korudu</li></ul><b>İstenen</b><p>Metne göre <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Sabır ve tevekkül (A), iffet için zindanı göze alma (B), bilgisini topluma yararlı kullanma (C).</li> <li><b>Metinde olmayanı bul</b> Hz. Yusuf’un kardeşlerinin kıskançlığını sezip babasını uyardığına dair metinde hiçbir bilgi yok. (Kıssada uyaran, Hz. Yakup’tur.)</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Allah’a güvenini yitirmedi → ulaşılır.</td></tr><tr><td>B</td><td>İffet için zindan → ulaşılır.</td></tr><tr><td>C</td><td>Kıtlık tedbiri → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Metinde yok; kıssada uyaran babasıdır → ulaşılamaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Kıssada «Rüyanı kardeşlerine anlatma» diye uyaran Hz. Yakup’tur; rolleri karıştırma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -912,7 +912,7 @@ LGS.add({
     "IV"
    ],
    "a": "A",
-   "s": "<p>II: Uyuşturucudan uzak durmak düşünme yeteneğini, yani <b>aklı</b> korur (doğru). III: Çocukların ahlaki gelişimiyle ilgilenmek <b>nesli</b> korur (doğru). IV: Fal bir hurafedir; dinî bilgiyi güvenilir kaynaktan öğrenmek <b>dinin</b> korunmasıdır (doğru).<br>I’deki davranış, boğulma tehlikesinden korunmaya, yani <b>canın</b> korunmasına yöneliktir; “yasak levhası” ve ceza ihtimali, öğrenciyi yanlışlıkla mal ya da kurallarla ilişkilendirmeye yöneltebilir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Boğulma tehlikesi olan yerde denize girmemek → malın korunması</li> <li>II: Uyuşturucudan uzak durmak → akıl</li> <li>III: Çocukların ahlaki gelişimiyle ilgilenmek → nesil</li> <li>IV: Falcı yerine güvenilir kaynaktan öğrenmek → din</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Davranışların amacını bul</b> I’de amaç <b>boğulmamak</b>, yani hayatı korumaktır.</li> <li><b>Yanlışı yakala</b> Hayatı korumak <b>canın korunması</b>dır; tabloda “mal” yazılmış. II, III ve IV doğru eşleşmiş.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Boğulma tehlikesi → can; “mal” yanlış.</td></tr><tr><td>B</td><td>Uyuşturucu → akıl, doğru.</td></tr><tr><td>C</td><td>Çocuk ahlakı → nesil, doğru.</td></tr><tr><td>D</td><td>Hurafeden uzak durmak → din, doğru.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -924,7 +924,7 @@ LGS.add({
     "Din istismarı – Bid’at – Hurafe"
    ],
    "a": "B",
-   "s": "<p>1. durum: Akla ve dine aykırı, bilgi eksikliğinden doğan batıl bir inançtır, yani <b>hurafedir</b>.<br>2. durum: Dinin aslında olmadığı hâlde sonradan <b>ibadet diye</b> dine eklenen bir uygulamadır, yani <b>bid’attir</b>. Bid’at ile hurafeyi ayıran ölçüt, uygulamanın ibadet görünümüne sokulmasıdır.<br>3. durum: Kişi dinî duyguları <b>maddi çıkar</b> için kullanmakta, üstelik insanları tedaviden uzaklaştırarak canlarını tehlikeye atmaktadır; bu <b>din istismarıdır</b>.<br>A, 2 ve 3’ün yerini; C, 1 ve 2’nin yerini karıştırır; D ise tamamen ters sıralamadır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Gece tırnak kesmenin uğursuzluk getireceğine inanmak</li> <li>2: Dayanağı olmadan «özel bir namaz» uydurmak, ibadet gibi yaygınlaştırmak</li> <li>3: «manevi şifacı»nın ilacı bıraktırıp yüksek fiyatla «okunmuş su» satması</li></ul><b>İstenen</b><p>Durumların sırasıyla ilgili olduğu kavramlar.</p></div><ol class=\"sv-s\"><li><b>1. durum</b> Akla ve dine aykırı uğursuzluk inancı → <b>hurafe</b>.</li> <li><b>2. durum</b> Dinde olmayan bir uygulamayı ibadet diye eklemek → <b>bid’at</b>.</li> <li><b>3. durum</b> Dini kullanarak para kazanmak, insanların çaresizliğini sömürmek → <b>din istismarı</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>2 ve 3 yer değiştirmiş.</td></tr><tr class=\"ok\"><td>B</td><td>Hurafe – Bid’at – Din istismarı → doğru.</td></tr><tr><td>C</td><td>1 ve 2 yer değiştirmiş.</td></tr><tr><td>D</td><td>Sıra tamamen ters.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Uğursuzluk → hurafe; ibadet uydurma → bid’at; din adına para/çıkar → istismar.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -936,7 +936,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "D",
-   "s": "<p>I: Birinci ayet içki, kumar gibi zararlı şeylerden kaçınmayı; ikinci ayet kendini tehlikeye atmamayı öğütler (doğru). II: Aklı örten içkinin yasaklanması <b>aklın korunmasıdır</b> (doğru). III: Kendini tehlikeye atmamak <b>canın korunmasıdır</b> (doğru).<br>IV: Ayetlerde evlilik ya da aile ile ilgili bir hüküm yoktur; neslin korunmasına dair bir düzenleme bulunmaz (yanlış). IV’ü içeren B ve C, “zararlı alışkanlıklar aileyi de etkiler” diye düşünüp ayette olmayanı ayete yükleyenlerin çeldiricisidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mâide 90: içki, kumar, dikili taşlar, fal okları yasak</li> <li>Bakara 195: «Kendi ellerinizle kendinizi tehlikeye atmayın»</li></ul><b>İstenen</b><p>Ayetlerle ilgili doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> İki ayet de insana zarar veren şeylerden kaçınmayı öğütler. <b>Doğru.</b></li> <li><b>II</b> İçki aklı örter → aklın korunması. <b>Doğru.</b></li> <li><b>III</b> Kendini tehlikeye atmamak → canın korunması. <b>Doğru.</b></li> <li><b>IV</b> Ayetlerde evlilik ya da aile ile ilgili bir düzenleme yok. <b>Yanlış.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III de doğru; eksik.</td></tr><tr><td>B</td><td>IV yanlış.</td></tr><tr><td>C</td><td>IV yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve III → doğru.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -948,7 +948,7 @@ LGS.add({
     "Bir öğrencinin, sırasında unutulan arkadaşının kalemini izinsiz almayıp sahibine ulaştırması"
    ],
    "a": "C",
-   "s": "<p>A: Ölçü ve tartıda doğruluk, insanların hakkını, yani <b>malı</b> korur. B: Gösterişten kaçınmak israfı önler; israfın yasaklanması da <b>malın</b> korunmasıyla ilgilidir. D: Başkasının eşyasını izinsiz almamak <b>malın</b> korunmasıdır.<br>C’de sürücü kendisinin ve yoldakilerin hayatını tehlikeye atmamak için mola verir; bu <b>canın</b> korunmasıdır. B’yi farklı sanmak, israfın da malın korunması kapsamında olduğunu bilmemekten kaynaklanır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A: Terazisini her sabah kontrol ettirmek</li> <li>B: Düğünü gösterişten uzak, sade yapmak</li> <li>C: Uykusu gelen sürücünün mola vermesi</li> <li>D: Unutulan kalemi izinsiz almayıp sahibine ulaştırmak</li></ul><b>İstenen</b><p>Temel değer bakımından <b>farklı</b> olan davranış.</p></div><ol class=\"sv-s\"><li><b>Her davranışı eşle</b> A doğru tartı → mal; B israftan kaçınma → mal; D başkasının eşyasına saygı → mal.</li> <li><b>Farklıyı bul</b> C’de sürücü kazayı önleyerek hayatını korur → <b>can</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru tartı → mal.</td></tr><tr><td>B</td><td>İsrafsız düğün → mal.</td></tr><tr class=\"ok\"><td>C</td><td>Uykulu sürüşten kaçınmak → can; farklı.</td></tr><tr><td>D</td><td>Emaneti sahibine vermek → mal.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> B’de “düğün” görüp nesil sanma; vurgu gösteriş ve israftan kaçınmada → mal.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -960,7 +960,7 @@ LGS.add({
     "Dinî metinleri kendi çıkarlarına göre çarpıtmak"
    ],
    "a": "A",
-   "s": "<p>Metinde istismarcıların çaresiz insanları fırsat bildiği (B), kendilerini olağanüstü güçlere sahip ve gaybı bilen kişiler gibi tanıttığı (C), ayet ve hadisleri bağlamından koparıp çıkarlarına göre yorumladığı (D) açıkça belirtilir.<br>İnsanları camide cemaatle ibadete teşvik etmek, dinin öğütlediği olumlu bir davranıştır; metinde istismar yöntemi olarak geçmez. A’yı istismar sanmak, dinî her tavsiyeyi şüpheyle karşılama yanılgısıdır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İstismarcılar: «çaresiz kaldığı anları fırsat bilir», «olağanüstü güçleri olan ... kişiler gibi tanıtırlar», «Ayet ve hadisleri bağlamından kopararak» yorumlar, para isterler.</li></ul><b>İstenen</b><p>İstismarcıların yöntemleri arasında <b>olmayan</b>.</p></div><ol class=\"sv-s\"><li><b>Metindeki yöntemler</b> Çaresizliği kullanmak, olağanüstü güç iddiası, dinî metinleri çarpıtmak, karşılığında para istemek.</li> <li><b>Olmayanı bul</b> İnsanları camide cemaatle ibadet etmeye teşvik etmek dinin güzel gördüğü bir davranıştır; metinde istismar yöntemi olarak geçmez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Cemaatle ibadete teşvik → istismar yöntemi değil.</td></tr><tr><td>B</td><td>«çaresiz kaldığı anları fırsat bilir» → yöntem.</td></tr><tr><td>C</td><td>«olağanüstü güçleri olan» → yöntem.</td></tr><tr><td>D</td><td>«bağlamından kopararak» → yöntem.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -972,7 +972,7 @@ LGS.add({
     "Neslin korunması"
    ],
    "a": "D",
-   "s": "<p>1. ve 3. kart emeğin karşılığı ve haksız kazanç yasağıyla <b>malın</b>; 2. kart inanç özgürlüğüyle <b>dinin</b>; 4. kart yaşama hakkıyla <b>canın</b>; 5. kart aklı örten içkinin yasaklanmasıyla <b>aklın</b> korunmasıyla ilgilidir.<br>Kartların hiçbiri aile, evlilik ya da çocukların yetiştirilmesiyle ilgili değildir; bu yüzden <b>neslin korunması</b> boş kalır. 5. kartı yasak kelimesi nedeniyle canla ilişkilendiren öğrenci aklı boş sanıp B’yi; Bakara 256’yı “özgürlük” yerine mal ya da can başlığına koyan öğrenci C’yi seçer. Oysa her kart tek bir değere açıkça karşılık gelir ve nesille ilgili kart yoktur. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Necm 39 «çalıştığının karşılığı»</li> <li>2: Bakara 256 «Dinde zorlama yoktur»</li> <li>3: Bakara 188 «mallarınızı haksız sebeplerle yemeyin»</li> <li>4: Mâide 32 «bir cana kıyarsa»</li> <li>5: Mâide 90 «(Aklı örten) içki...»</li></ul><b>İstenen</b><p>Altına <b>hiç kart</b> yerleşmeyen temel değer.</p></div><ol class=\"sv-s\"><li><b>Kartları dağıt</b> 1 → mal; 2 → din; 3 → mal; 4 → can; 5 → akıl. <span class=\"sv-m\">Mal: 1, 3 · Din: 2 · Can: 4 · Akıl: 5 · Nesil: —</span></li> <li><b>Boş kalanı bul</b> Aile, evlilik ya da çocuklarla ilgili bir kart yok → <b>neslin korunması</b> boş kalır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Can → 4. kart.</td></tr><tr><td>B</td><td>Akıl → 5. kart.</td></tr><tr><td>C</td><td>Din → 2. kart.</td></tr><tr class=\"ok\"><td>D</td><td>Nesil → hiç kart yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Nesil için tipik ayet: «...türünüzden eşler yaratması O’nun ayetlerindendir...» (Rûm 21).</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -984,7 +984,7 @@ LGS.add({
     "I, II, IV ve V"
    ],
    "a": "B",
-   "s": "<p>I, III ve V; akla ve dine aykırı, hiçbir dayanağı olmayan, bilgi eksikliğinden doğan batıl inançlardır, yani <b>hurafedir</b>. Bu inanışlar insanın geleceği ve kaderi üzerinde nesnelere ya da hayvanlara güç yükler.<br>II: Yağmur duası, Peygamberimizin de yaptığı meşru bir dua ve ibadettir. IV: Tedbir alıp tedaviyi sürdürerek dua etmek, dinin öğütlediği tutumdur. Bu ikisini hurafe sanan öğrenci C ya da D’yi; V’i gözden kaçıran ise A’yı seçer. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Kapı eşiğine oturmayı uğursuz saymak</li> <li>II: Kuraklıkta yağmur duasına çıkmak</li> <li>III: Nazar boncuğunun koruyacağına inanmak</li> <li>IV: Doktora gidip tedaviyle birlikte dua etmek</li> <li>V: Gece öten kuşu ölüm habercisi saymak</li></ul><b>İstenen</b><p>Hurafe örnekleri.</p></div><ol class=\"sv-s\"><li><b>Dinde yeri olanlar</b> II: Yağmur duası Peygamberimizin sünnetidir. IV: Tedavi + dua, doğru tevekküldür.</li> <li><b>Batıl inançlar</b> I uğursuzluk, III nazar boncuğu, V kuş sesini ölüm habercisi saymak → akla ve dine aykırı → <b>hurafe</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>V de hurafe; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I, III ve V → doğru.</td></tr><tr><td>C</td><td>II ve IV hurafe değil.</td></tr><tr><td>D</td><td>II ve IV hurafe değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dua ibadettir, hurafe değildir. Hurafe; bir nesneye, güne, sese olağanüstü güç yüklemektir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -996,7 +996,7 @@ LGS.add({
     "Kendisine keramet atfeden birinin, ücret karşılığında insanlara “manevi koruma” vaat etmesi"
    ],
    "a": "A",
-   "s": "<p>Din istismarı, dinî duyguların kişisel çıkar için kullanılmasıdır. B’de satıcı “okunmuş, şifalı” sözüyle fiyatı artırır; C’de bağış ile dileğin kabulü arasında dinde olmayan bir bağ kurularak para toplanır; D’de keramet iddiasıyla ücret alınır. Üçü de istismardır.<br>A’da imam, dinî bilgiyi güvenilir bir kaynaktan, çıkar gözetmeden aktarır; bu, insanları istismara karşı korumanın yoludur. A’yı istismar sanmak, dinî bilgi veren herkesin çıkar peşinde olduğu genellemesidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Din istismarı: dini kişisel çıkar (para, itibar) için kullanmak</li></ul><b>İstenen</b><p>Din istismarına örnek <b>olmayan</b> durum.</p></div><ol class=\"sv-s\"><li><b>Ölçüyü koy</b> İstismarda dinî bir görüntü kullanılarak <b>çıkar</b> sağlanır ve insanlar aldatılır.</li> <li><b>Şıkları tara</b> B, C ve D’de “okunmuş ürün”, “bağış yaparsan dileğin olur”, “ücretli manevi koruma” ile para kazanılıyor. A’da ise imam güvenilir kaynaktan doğru bilgi veriyor; çıkar yok.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Güvenilir ilmihalden bilgi vermek → istismar değil.</td></tr><tr><td>B</td><td>“Okunmuş, şifalı” etiketle pahalı satış → istismar.</td></tr><tr><td>C</td><td>Bağış karşılığı dilek vaadi → istismar.</td></tr><tr><td>D</td><td>Ücretli “manevi koruma” → istismar.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1008,7 +1008,7 @@ LGS.add({
     "II – III – I – V – IV"
    ],
    "a": "C",
-   "s": "<p>Hz. Yusuf önce kardeşlerinin kıskançlığıyla <b>kuyuya atıldı</b> (II). Mısır’da satıldığı sarayda vezirin eşinin <b>günah çağrısını reddetti</b> (III) ve bu yüzden iftiraya uğrayıp <b>zindana atıldı</b> (V). Zindandan, hükümdarın <b>rüyasını yorumlayınca</b> çıkıp hazinenin başına geçti (I). Kıtlık yıllarında erzak almaya gelen <b>kardeşlerini affetti</b> (IV).<br>A, zindanı reddetmeden önceye koyar (sebep-sonuç ters); B, saray olayını kuyudan önceye alır; D ise rüya yorumunu zindandan önceye koyar. Oysa hükümdarın rüyasını zindandayken yorumlamıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Karışık olaylar: I rüya yorumu, II kuyu, III günah çağrısını reddetme, IV affetme, V iftira ve zindan</li></ul><b>İstenen</b><p>Olayların kıssadaki oluş sırası.</p></div><ol class=\"sv-s\"><li><b>Başlangıç ve son</b> Kıssa kardeşlerin Yusuf’u kuyuya atmasıyla (II) başlar, kardeşlerini affetmesiyle (IV) biter.</li> <li><b>Sarayda olanlar</b> Önce günah çağrısını reddeder (III), bu yüzden iftiraya uğrayıp zindana atılır (V). Sebep önce, sonuç sonra gelir.</li> <li><b>Zindandan sonra</b> Zindandayken hükümdarın rüyasını yorumlar (I), hazinenin başına geçer; kıtlıkta gelen kardeşlerini affeder (IV). <span class=\"sv-m\">II → III → V → I → IV</span></li></ol><figure class=\"sv-f\"><svg viewBox=\"0 0 500 120\" width=\"500\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\" fill=\"#1e293b\" text-anchor=\"middle\"><line x1=\"20\" y1=\"40\" x2=\"480\" y2=\"40\" stroke=\"#0e7490\" stroke-width=\"3\"/><polygon points=\"480,34 492,40 480,46\" fill=\"#0e7490\"/><circle cx=\"50\" cy=\"40\" r=\"15\" fill=\"#7c3aed\"/><text x=\"50\" y=\"45\" fill=\"#ffffff\" font-weight=\"bold\">II</text><text x=\"50\" y=\"78\">Kuyuya</text><text x=\"50\" y=\"96\">atılma</text><circle cx=\"145\" cy=\"40\" r=\"15\" fill=\"#dc2626\"/><text x=\"145\" y=\"45\" fill=\"#ffffff\" font-weight=\"bold\">III</text><text x=\"145\" y=\"78\">Günah çağrısını</text><text x=\"145\" y=\"96\">reddetme</text><circle cx=\"240\" cy=\"40\" r=\"15\" fill=\"#dc2626\"/><text x=\"240\" y=\"45\" fill=\"#ffffff\" font-weight=\"bold\">V</text><text x=\"240\" y=\"78\">İftira,</text><text x=\"240\" y=\"96\">zindan</text><circle cx=\"335\" cy=\"40\" r=\"15\" fill=\"#0e7490\"/><text x=\"335\" y=\"45\" fill=\"#ffffff\" font-weight=\"bold\">I</text><text x=\"335\" y=\"78\">Hükümdarın</text><text x=\"335\" y=\"96\">rüyasını yorum</text><circle cx=\"440\" cy=\"40\" r=\"15\" fill=\"#16a34a\"/><text x=\"440\" y=\"45\" fill=\"#ffffff\" font-weight=\"bold\">IV</text><text x=\"440\" y=\"78\">Kardeşlerini</text><text x=\"440\" y=\"96\">affetme</text></svg><figcaption>Kıssadaki olayların zaman sırası: II → III → V → I → IV</figcaption></figure><table class=\"sv-c\"><tr><td>A</td><td>V, III’ten önce olamaz; zindan reddetmenin sonucudur.</td></tr><tr><td>B</td><td>Kıssa kuyuyla (II) başlar.</td></tr><tr class=\"ok\"><td>C</td><td>II – III – V – I – IV → doğru.</td></tr><tr><td>D</td><td>Rüya yorumu zindandan sonra değil, zindandayken gelir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sebep-sonuç zincirini kur: Reddetti → iftira → zindan → rüya yorumu → hazine → affetme.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1020,7 +1020,7 @@ LGS.add({
     "IV"
    ],
    "a": "B",
-   "s": "<p>I: Kardeşlerin kıskançlığı onları büyük bir kötülüğe sürüklemiştir (doğru). III: Zindanda Allah’a güvenini yitirmemek sabır ve tevekküldür (doğru). IV: Günah çağrısını reddetmek iffeti korumaktır (doğru).<br>II’deki olaydan çıkan ders <b>affedicilik</b> ve kin tutmamaktır. “Önceden tedbir alma” dersi ise bolluk yıllarında tahıl biriktirmesinden çıkarılır. Öğrenci, iki olay da kıtlık yıllarında geçtiği için onları karıştırmıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Kıskançlık → kuyu: «Kıskançlık, insanı kötülüğe sürükleyebilir.»</li> <li>II: Kardeşlerini affetmesi: «Gelecekteki zor günlere karşı önceden tedbir alınmalıdır.»</li> <li>III: Zindanda güven: sabır ve tevekkül</li> <li>IV: Günah çağrısını reddetme: iffet</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Olay-ders uyumunu kontrol et</b> I, III ve IV’te ders olayla doğrudan örtüşüyor.</li> <li><b>Yanlışı yakala</b> Affetme olayından çıkan ders <b>affedicilik</b>tir. “Önceden tedbir almak” dersi bolluk yıllarında ürün biriktirme olayına aittir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Affetme → affedicilik olmalı; tedbir dersi başka olaya ait → yanlış.</td></tr><tr><td>C</td><td>III → doğru.</td></tr><tr><td>D</td><td>IV → doğru.</td></tr></table><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1032,7 +1032,7 @@ LGS.add({
     "Ağır bir hastalık sürecinde dua ve Kur’an okumakla teselli bulan, bir yandan da tedavisini aksatmadan sürdüren Leyla Hanım"
    ],
    "a": "D",
-   "s": "<p>Ayet, iç huzurun Allah’ı anmakla (dua, zikir, Kur’an okuma) sağlanacağını bildirir. Leyla Hanım hem Allah’ı anarak manevi güç bulmuş hem de tedavisini sürdürerek sorumluluğunu yerine getirmiştir (D).<br>A: İbadeti sorumluluktan kaçmak için bahane etmek, dinin dengeli yaşanması anlayışıyla çelişir. B: Huzuru yalnızca dünyevi eğlencede aramak ayetin mesajına aykırıdır. C: Muskaya güç yüklemek bir hurafedir; huzuru Allah’ı anmakta değil bir nesnede arar. C, “manevi bir şey taşımak”ı Allah’ı anmakla karıştıranların çeldiricisidir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ra’d 28: «Kalpler ancak Allah’ı anmakla huzur bulur.»</li></ul><b>İstenen</b><p>Ayetin mesajını doğru anlayıp uygulayan kişi.</p></div><ol class=\"sv-s\"><li><b>Ayetin mesajı</b> Gerçek huzur Allah’ı anmaktan (zikir, dua, Kur’an) gelir. Ama İslam bu huzuru sorumluluklardan kaçışa dönüştürmez; tedbir de gerekir.</li> <li><b>Doğru örneği bul</b> Leyla Hanım hem dua ve Kur’anla teselli buluyor hem de tedavisini sürdürüyor → ayetin mesajı + tevekkül anlayışı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İbadeti bahane edip görev aksatmak → yanlış anlama.</td></tr><tr><td>B</td><td>Huzuru yalnız eğlencede aramak → ayetin tersi.</td></tr><tr><td>C</td><td>Muskaya bağlanmak → hurafe; huzur Allah’ı anmakla gelir.</td></tr><tr class=\"ok\"><td>D</td><td>Dua + tedavi → doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C’de “huzur” kelimesi var ama muska hurafedir; ayet Allah’ı anmayı söylüyor, nesneye bağlanmayı değil.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1044,7 +1044,7 @@ LGS.add({
     "I, III, IV ve V"
    ],
    "a": "C",
-   "s": "<p>I: Fazla verilen parayı iade etmemek, başkasının malını haksız yere almaktır. II: Elektriği gereksiz harcamak <b>israftır</b>; faturayı başkasının ödemesi bunu değiştirmez. V: Başkasının emeği olan eserleri izinsiz çoğaltıp satmak haksız kazançtır. Bu üçü malın korunmasıyla bağdaşmaz.<br>III: Gereksiz harcamadan kaçınmak, IV: Verilen zararı tazmin etmek malın korunmasına uygundur.<br>A, israfın da malın korunmasıyla ilgili olduğunu bilmeyenlerin; D ise III ve IV’ü de “parayla ilgili” diye olumsuz sayanların çeldiricisidir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Fazla para üstünü söylemedi</li> <li>II: Lambaları, bilgisayarı açık bıraktı («faturayı babam ödüyor»)</li> <li>III: Gereksiz harcamadan kaçınıp biriktirdi</li> <li>IV: Bozduğu hesap makinesinin yenisini aldı</li> <li>V: İzinsiz indirdiği filmleri para karşılığında dağıttı</li></ul><b>İstenen</b><p>Malın korunmasıyla <b>bağdaşmayan</b> davranışlar.</p></div><ol class=\"sv-s\"><li><b>Bağdaşanlar</b> III tasarruf, IV zararı karşılamak (kul hakkını ödemek) malın korunmasına uygundur.</li> <li><b>Bağdaşmayanlar</b> I: Başkasının parasını haksız yere almak → kul hakkı. II: Elektriği boşa harcamak → israf. V: Emeğe (telif hakkına) saygısızlık ve haksız kazanç.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de bağdaşmıyor; eksik.</td></tr><tr><td>B</td><td>IV uygun bir davranış.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve V → doğru.</td></tr><tr><td>D</td><td>III ve IV uygun davranışlar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İsraf, faturayı kimin ödediğinden bağımsızdır; nimeti boşa harcamak her durumda israftır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1056,7 +1056,7 @@ LGS.add({
     "Komşunun önerisine uyulması, çocuğun sağlığını tehlikeye atabilir."
    ],
    "a": "A",
-   "s": "<p>Babaanne doktora gitmeyi ve ilaçları kullanmayı (tedbir) duayla birleştirir (B söylenebilir). Ağaca çaput bağlamakla hastalığın geçeceğine inanmak bir <b>hurafedir</b> (C söylenebilir). Doktora gitmeyip bu yola başvurmak çocuğun sağlığını, yani canını tehlikeye atabilir (D söylenebilir).<br>Komşu tam tersine doktora gitmeye gerek olmadığını söyler; onun önerisi tıbbi tedbirleri önemsizleştirir. Bu yüzden A söylenemez. Konuşmacıları karıştıran öğrenci A’yı doğru sanabilir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Komşu: «Doktora gitmeye gerek yok ... ağaca bir çaput bağlayın»</li> <li>Babaanne: «hemen doktora gidelim ... Ben de şifa vermesi için Allah’a dua edeceğim»</li></ul><b>İstenen</b><p>Konuşmaya göre <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Komşunun önerisi</b> Doktoru reddedip çaput bağlamayı öneriyor → <b>hurafe</b>; çocuğun sağlığını tehlikeye atar.</li> <li><b>Babaannenin tutumu</b> Önce tedavi (tedbir), sonra dua → doğru <b>tevekkül</b>.</li> <li><b>Ters olanı bul</b> Komşu tıbbi tedbiri önemsemiyor, tam tersine «Doktora gitmeye gerek yok» diyor. A bu yüzden söylenemez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Komşu tıbbi tedbiri küçümsüyor → söylenemez.</td></tr><tr><td>B</td><td>Doktor + dua → söylenir.</td></tr><tr><td>C</td><td>Çaput bağlamak hurafe → söylenir.</td></tr><tr><td>D</td><td>Tedaviyi geciktirmek tehlikeli → söylenir.</td></tr></table><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1068,7 +1068,7 @@ LGS.add({
     "Ziyandan kurtulmak, zamanın iman ve salih amelle değerlendirilmesine bağlıdır."
    ],
    "a": "B",
-   "s": "<p>Metinde zamanın “en değerli sermayelerden biri” olduğu söylenir (A). Ömrünü boş işlerle tüketenin ziyana uğradığı belirtilir (C). Kurtuluşun iman, salih amel, hakkı ve sabrı tavsiye etmekle olduğu anlatılır (D).<br>Asr suresinin Mekke döneminde indiği <b>doğru bir bilgidir</b>; ancak bu metinde surenin ne zaman indiğinden hiç söz edilmez. “Bildiğim doğru bilgi metinde de vardır” yanılgısı B’yi elemeye yol açar. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Asr zamana yeminle başlar; «zaman, insana verilmiş en değerli sermayelerden biridir».</li> <li>Ömrünü boşa harcayan ziyana uğrar.</li> <li>Kurtuluş: iman, salih amel, hak ve sabrı tavsiye.</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinde olanlar</b> Zamanın değeri (A), boşa harcayanın zararı (C), kurtuluşun iman ve salih amele bağlı olması (D) metinde açıkça var.</li> <li><b>Metinde olmayan</b> Surenin nerede ve ne zaman indiği metinde hiç geçmiyor. Bilgi olarak doğru olsa da (Asr Mekkî bir suredir) bu metinden çıkarılamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«en değerli sermaye» → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>İniş yeri metinde yok → ulaşılamaz.</td></tr><tr><td>C</td><td>«ziyana uğrar» → ulaşılır.</td></tr><tr><td>D</td><td>Dört özellikle değerlendiren kurtulur → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Metinden ulaşılamaz” sorularında doğru bir bilgi de cevap olabilir; ölçü bilginin metinde olup olmamasıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1080,7 +1080,7 @@ LGS.add({
     "I ve IV"
    ],
    "a": "D",
-   "s": "<p>I: Kusurlu malı gizlememek hileden kaçınmaktır; <b>malın</b> korunmasıdır. IV: İhaleye girecek firmadan hediye kabul etmemek rüşveti reddetmektir; bu da <b>malın</b> korunmasıdır. Aynı değere yönelik ikili I ve IV’tür.<br>II: Çocukların ahlaki gelişimiyle ilgilenmek <b>neslin</b>; III: Dalış güvenliği <b>canın</b> korunmasıdır. IV’teki “hediye” kelimesi masum göründüğü için rüşvet olduğunu fark etmeyen öğrenci doğru eşleştirmeyi bulamaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Çürük meyveyi «indirimli ve kusurludur» diye ayrı satmak</li> <li>II: Çocuklarla sohbet, doğruluk ve saygıyı öğretmek</li> <li>III: Dalış ekipmanını kontrol etmeden öğrenciyi suya sokmamak</li> <li>IV: İhaledeki firmanın pahalı hediyesini geri göndermek</li></ul><b>İstenen</b><p>Aynı temel değere yönelik iki haber.</p></div><ol class=\"sv-s\"><li><b>Her haberi eşle</b> I: Kusurlu malı gizlememek, ticarette dürüstlük → <b>mal</b>. II: Çocukları ahlaklı yetiştirmek → <b>nesil</b>. III: Kazayı önlemek → <b>can</b>. IV: Rüşvet sayılabilecek hediyeyi reddetmek → <b>mal</b>.</li> <li><b>Eşleşeni bul</b> I ve IV ikisi de malın korunmasıyla ilgili.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Mal – nesil, farklı.</td></tr><tr><td>B</td><td>Nesil – can, farklı.</td></tr><tr><td>C</td><td>Can – mal, farklı.</td></tr><tr class=\"ok\"><td>D</td><td>Mal – mal → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rüşvet (ve rüşvet niteliğindeki hediye) yasağı malın korunması kapsamındadır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1092,7 +1092,7 @@ LGS.add({
     "Kendisine iftira atanlardan intikam almayı amaçladığı"
    ],
    "a": "B",
-   "s": "<p>Hz. Yusuf, zindandan çıkma fırsatı doğduğu hâlde önce olayın araştırılmasını istemiş ve masumiyeti herkesçe bilindikten sonra çıkmıştır. Bu, onun <b>suçsuzluğunun ve onurunun</b> açıkça ortaya konmasına önem verdiğini gösterir (B).<br>A: Daha sonra hazinenin yönetimini bizzat istemiştir; görevi reddetmemiştir. C: Metinde çekingenlikten söz edilmez; bekleme bilinçli bir tercihtir. D: Kıssada intikam yoktur; Hz. Yusuf kendisine kötülük edenleri bile affetmiştir. D, “araştırma istemek = hesap sormak” yanılgısından doğar. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hükümdar elçi gönderdi; Hz. Yusuf «hemen dışarı çıkmadı».</li> <li>Zindana atılmasına yol açan olayın araştırılmasını istedi.</li> <li>«Hz. Yusuf’un suçsuz olduğu herkesin önünde ortaya çıktı; o da ancak bundan sonra zindandan çıktı.»</li></ul><b>İstenen</b><p>Bu tutumla ilgili söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Davranışın sebebi</b> Hz. Yusuf, üzerindeki iftira temizlenmeden çıkmak istemedi. Amacı, suçsuz olduğunun <b>herkesin önünde</b> anlaşılmasıydı.</li> <li><b>Sonuç</b> O, masumiyetinin açıkça ortaya çıkmasına ve onurunun (itibarının) korunmasına önem verdi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Daha sonra hazine görevini kendisi istedi.</td></tr><tr class=\"ok\"><td>B</td><td>Masumiyet ve onur → doğru.</td></tr><tr><td>C</td><td>Çıkmaktan çekinmedi; önce gerçeğin ortaya çıkmasını istedi.</td></tr><tr><td>D</td><td>İntikam değil, aklanma istedi.</td></tr></table><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1104,7 +1104,7 @@ LGS.add({
     "Yürümekte zorlanan yaşlı komşusunun pazar alışverişini yapmak"
    ],
    "a": "A",
-   "s": "<p>Ayet, iyilikte yardımlaşmayı emrederken <b>günah ve haksızlıkta</b> yardımlaşmayı yasaklar. Kopya vermek ilk bakışta “arkadaşa yardım” gibi görünse de hile ve haksızlıktır; diğer öğrencilerin hakkını çiğner. Bu yüzden ayette yasaklanan yardımlaşmaya örnektir (A).<br>B, C ve D ise iyilik üzerinde yardımlaşmaya örnektir. Öğrencinin tuzağı, “yardım” kelimesini gördüğü her davranışı iyi saymaktır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mâide 2: «...İyilik ve takva üzerinde yardımlaşın, günah ve düşmanlık üzerinde yardımlaşmayın...»</li></ul><b>İstenen</b><p>Ayette <b>yasaklanan</b> yardımlaşmaya örnek.</p></div><ol class=\"sv-s\"><li><b>İki tür yardımlaşma</b> İyilik ve takvada yardımlaşma emredilir; günahta ve haksızlıkta yardımlaşma yasaklanır.</li> <li><b>Günahta yardımlaşmayı bul</b> Kopya çekmek hile ve haksızlıktır. Cevap kâğıdını çevirmek, arkadaşa bu günahta yardım etmektir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kopyaya yardım → günahta yardımlaşma.</td></tr><tr><td>B</td><td>Ders anlatmak → iyilikte yardımlaşma.</td></tr><tr><td>C</td><td>Sel bölgesine yardım → iyilikte yardımlaşma.</td></tr><tr><td>D</td><td>Yaşlıya yardım → iyilikte yardımlaşma.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her “yardım” iyilik değildir; yardımın konusu günahsa ayet onu yasaklar.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1116,7 +1116,7 @@ LGS.add({
     "Bid’atler, Kur’an ve Sünnet’e dayandığı için dinin bir parçası kabul edilir."
    ],
    "a": "D",
-   "s": "<p>Bid’at “ibadet diye” eklenen uygulamadır (A). Hurafeler “bilgi eksikliğinden doğar” (B). Bunlarla mücadele “dinin korunması kapsamındadır” (C).<br>D tanıma aykırıdır: Bid’at, dinin aslında olmayan, yani Kur’an ve Sünnet’e dayanmayan bir uygulamadır; bu nedenle dinin parçası kabul edilemez. Bid’atin ibadet görünümünde olması, onu dinden sanma yanılgısına yol açar. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bid’at: «Dinin aslında olmadığı hâlde» ibadet diye eklenen uygulama</li> <li>Hurafe: bilgi eksikliğinden doğan batıl inanç</li> <li>Bunlarla mücadele → dinin korunması</li></ul><b>İstenen</b><p>Bilgilere göre <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Tanımları kullan</b> Bid’at ibadet görünümündedir (A), hurafe bilgi eksikliğinden doğar (B), mücadele dinin aslını korur (C).</li> <li><b>Çelişeni bul</b> Bid’at tanım gereği «dinin aslında olmayan» bir şeydir; Kur’an ve Sünnet’e dayanmaz. D, tanımla doğrudan çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«ibadet diye» → söylenir.</td></tr><tr><td>B</td><td>«bilgi eksikliğinden» → söylenir.</td></tr><tr><td>C</td><td>Dinin korunması kapsamında → söylenir.</td></tr><tr class=\"ok\"><td>D</td><td>Bid’at Kur’an-Sünnet’e dayanmaz → söylenemez.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1128,7 +1128,7 @@ LGS.add({
     "Dünyada maddi zenginliğe ulaşan insan, ziyandan kurtulmuş olur."
    ],
    "a": "C",
-   "s": "<p>I. metinde ziyandan kurtuluş iman ve <b>salih amele</b>, yani iyi işler yapmaya bağlanır. II. metinde insanın elde edeceği karşılığın <b>çalışmasına</b> bağlı olduğu bildirilir. Ortak mesaj, insanın kazancının ve kurtuluşunun kendi emeğine ve yaptığı işlere bağlı olmasıdır (C).<br>A yalnızca I. metinde vardır, ortak değildir. B, iman yanında amelin de şart olduğunu söyleyen I. metinle çelişir. D, II. metindeki “çalışma”yı yalnızca maddi kazanç sanma yanılgısıdır; Asr suresinde ziyan, maddi değil ahiret merkezli bir kayıptır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Asr suresi: iman + salih amel + hak ve sabrı tavsiye edenler ziyandan kurtulur.</li> <li>II: Necm 39: «İnsan için ancak çalıştığının karşılığı vardır.»</li></ul><b>İstenen</b><p>İki metnin <b>ortak</b> mesajı.</p></div><ol class=\"sv-s\"><li><b>Her metni özetle</b> I: Kurtuluş insanın <b>yaptıklarına</b> (salih amel, tavsiye) bağlıdır. II: İnsan çalıştığının karşılığını alır.</li> <li><b>Ortak noktayı bul</b> İkisi de insanın kazancının ve kurtuluşunun kendi emeğine ve yaptığı işlere bağlı olduğunu söyler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zamana yemin yalnızca I. metinde var.</td></tr><tr><td>B</td><td>I. metin imanla birlikte ameli de şart koşar.</td></tr><tr class=\"ok\"><td>C</td><td>Emek ve yapılan işler → doğru.</td></tr><tr><td>D</td><td>İki metinde de maddi zenginlik ölçü değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ortak mesaj sorularında, bir metinde olup diğerinde olmayan bilgi elenir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1140,7 +1140,7 @@ LGS.add({
     "Kıskançlık, kardeşlerin Hz. Yusuf’a kötülük yapmasına yol açmıştır."
    ],
    "a": "A",
-   "s": "<p>Kardeşlerin “kendi aralarında konuşup karar vermesi” planlı davrandıklarını (B), yalancı kan ve “Onu kurt yedi.” sözü yalan söylediklerini (C), kıskanmaları da kötülüğün sebebini (D) gösterir.<br>Metne göre kıskançlık duyulan kişiler Yusuf <b>ve Bünyamin’dir</b>; planı yapanlar ise onları kıskanan “diğer kardeşlerdir”. Kıskançlığın hedefi olan Bünyamin’in plana katıldığı kesinlikle söylenemez. “Bütün kardeşler birlikte hareket etti” genellemesi A’yı doğru sandırır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Yusuf ve Bünyamin babalarının en küçük oğulları</li> <li>«Diğer kardeşler» Yusuf’u ve Bünyamin’i kıskanıyordu.</li> <li>«Bu kardeşler, kendi aralarında konuşup» Yusuf’u kuyuya bırakmaya karar verdi; yalancı kanla babalarını kandırdı.</li></ul><b>İstenen</b><p>Metne göre <b>kesinlikle söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Planı kim yaptı?</b> Planı Bünyamin’i de kıskanan <b>“diğer kardeşler”</b> yaptı. Bünyamin kıskanılanlardandır; plana katıldığı söylenemez.</li> <li><b>Diğer şıklar</b> Önceden plan (B), yalan söylemek (C) ve kıskançlığın kötülüğe yol açması (D) metinde açıkça var.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Bünyamin kıskanılan taraftır; plana katılmadı → söylenemez.</td></tr><tr><td>B</td><td>«kendi aralarında konuşup ... karar verdiler» → söylenir.</td></tr><tr><td>C</td><td>«yalancı kan sürüp» → söylenir.</td></tr><tr><td>D</td><td>Kıskançlık kötülüğe yol açtı → söylenir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Metinde “diğer kardeşler” ifadesine dikkat: Bünyamin bu gruba dahil değil.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1152,7 +1152,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>Burak, yaralının hayatını kurtarmak için doğru ilk yardım adımlarını uygulamıştır; bu, bir canı kurtarmayı öven Mâide 32 ile (I) ilişkilidir. Yardım etmeden önce aracını güvenli yere çekip yelek giymesi ve üçgen koyması ise <b>kendini tehlikeye atmamasıdır</b>; Bakara 195 ile (II) ilişkilidir.<br>III. ayet emek ve kazançla, yani malın korunmasıyla ilgilidir; metinde böyle bir durum yoktur. A, Burak’ın kendi güvenliği için aldığı önlemleri gözden kaçıranların; D ise “ilk yardım eğitimi almak çalışmaktır” diye zorlama bağ kuranların çeldiricisidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Burak önce kendi aracını emniyet şeridine çekti, yelek giyip üçgen koydu (kendini korudu).</li> <li>Yaralıyı oynatmadan 112’yi aradı, ekip gelene kadar bilincini açık tuttu (can kurtarma).</li></ul><b>İstenen</b><p>Burak’ın davranışlarıyla ilişkilendirilebilecek ayetler.</p></div><ol class=\"sv-s\"><li><b>I. ayet</b> «bir canı kurtarırsa» → yaralıya ilk yardım yapıp 112’yi araması. <b>İlişkili.</b></li> <li><b>II. ayet</b> «kendinizi tehlikeye atmayın» → önce kendi güvenliğini sağlaması. <b>İlişkili.</b></li> <li><b>III. ayet</b> Çalışma ve emeğin karşılığı; olayda kazanç ya da emek konusu yok. <b>İlişkisiz.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II de ilişkili; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II → doğru.</td></tr><tr><td>C</td><td>III ilişkisiz, I eksik.</td></tr><tr><td>D</td><td>III ilişkisiz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İlk yardımın ilk kuralı: önce kendi güvenliğini sağla. Bu, Bakara 195 ile örtüşür.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1164,7 +1164,7 @@ LGS.add({
     "Metinde anlatılan uygulamaların tamamı, dinin her Müslümana farz kıldığı ibadetlerdendir."
    ],
    "a": "D",
-   "s": "<p>Komşuların yemek götürmesi ve taziyeye gelmesi dayanışmadır (A). “Acı paylaşıldıkça hafifler” cümlesi B’yi destekler. Cenaze namazı, dua ve taziye gibi dinî uygulamaların yerel geleneklerle iç içe geçmesi, dinin gelenekleri şekillendirdiğini gösterir (C).<br>Cenaze evine yemek götürmek gibi uygulamalar, dinin teşvik ettiği <b>geleneklerdir</b>; her Müslümana farz kılınmış ibadetler değildir. Metinde de böyle bir bilgi yoktur. “Dinî kökenli olan her uygulama farzdır” yanılgısı D’yi doğru sandırır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Komşular cenaze evine günlerce yemek götürür.</li> <li>Cenaze namazına mahalle katılır, taziyede sabır ve dua dilenir.</li> <li>«acı paylaşıldıkça hafifler»</li></ul><b>İstenen</b><p>Metin için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Dayanışma (A), acının paylaşılınca hafiflemesi (B), dinin gelenekleri şekillendirmesi (C).</li> <li><b>Abartılı yargıyı bul</b> Yemek götürmek, taziye gibi uygulamalar güzel <b>geleneklerdir</b>, her Müslümana farz ibadet değildir. (Cenaze namazı bile farz-ı kifâyedir.) “Tamamı farz” denemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yardımlaşma → söylenir.</td></tr><tr><td>B</td><td>«acı paylaşıldıkça hafifler» → söylenir.</td></tr><tr><td>C</td><td>Din gelenekleri şekillendirmiş → söylenir.</td></tr><tr class=\"ok\"><td>D</td><td>Uygulamaların tamamı farz değil → söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> “Tamamı”, “her Müslümana farz” gibi kesin ifadeler, gelenek ile ibadeti karıştıran çeldiricidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1176,7 +1176,7 @@ LGS.add({
     "IV"
    ],
    "a": "A",
-   "s": "<p>II: Aklı örten içkinin yasaklanması <b>aklı</b> korur (doğru). III: Fal, geleceği bilme iddiasına dayanan bir hurafedir; ondan kaçınmak <b>dinin</b> korunmasıdır (doğru). IV: Putlara yönelmek tevhide aykırıdır; bundan kaçınmak <b>dinin</b> korunmasıdır (doğru).<br>I: Kumar, emek harcamadan haksız kazanç sağlamaya dayanır ve insanın servetini kaybetmesine yol açar; bu nedenle en çok <b>malın</b> korunmasıyla ilgilidir. Kumarın aileye zarar verebilmesi, onu nesil başlığına koyma yanılgısına yol açar. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mâide 90 yasakları: içki, kumar, dikili taşlar, fal okları</li> <li>I Kumar → nesil, II İçki → akıl, III Fal okları → din, IV Dikili taşlar → din</li></ul><b>İstenen</b><p>Yanlış eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Her yasağı değerle eşle</b> İçki aklı örter → akıl. Fal okları ve dikili taşlar (putlar) batıl inanç ve şirk → din.</li> <li><b>Yanlışı yakala</b> Kumar insanın emeğini ve malını haksız yere kaybettirir → <b>malın korunması</b>. Tabloda “nesil” yazılmış; yanlış.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kumar → mal olmalı; “nesil” yanlış.</td></tr><tr><td>B</td><td>İçki → akıl, doğru.</td></tr><tr><td>C</td><td>Fal okları → din, doğru.</td></tr><tr><td>D</td><td>Putlar → din, doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kumar ile ilgili temel değer: <b>mal</b>.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1188,7 +1188,7 @@ LGS.add({
     "Sosyal medyada karşılaşılan dinî iddiaların doğruluğu araştırılmadan paylaşılmaması"
    ],
    "a": "C",
-   "s": "<p>A, güvenilir kaynaktan öğrenmeyi sağlayarak <b>1. nedeni</b>; B, çaresiz insanları destekleyerek onların kolay ve batıl çözümlere yönelmesini önleyip <b>2. nedeni</b>; D, araştırmadan paylaşmayı engelleyerek <b>3. nedeni</b> ortadan kaldırmaya yöneliktir.<br>C’deki öneri, afişteki nedenlerin hiçbirine çözüm getirmez; üstelik insanları dışlamak, onlara doğru bilgiyi ulaştırma imkânını da ortadan kaldırır. “Hurafeye karşı sert tavır en etkili yoldur” yanılgısı C’yi doğru sandırabilir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Afiş: Hurafeler neden yayılır?</li> <li>1 Dinî bilginin güvenilir kaynaktan öğrenilmemesi</li> <li>2 Çaresizlerin kolay çözüm araması</li> <li>3 Bilginin araştırılmadan yayılması</li></ul><b>İstenen</b><p>Nedenlerden <b>hiçbirini</b> ortadan kaldırmaya yönelik olmayan öneri.</p></div><ol class=\"sv-s\"><li><b>Önerileri nedenlerle eşle</b> A → 1. neden (güvenilir kaynak). B → 2. neden (çaresize destek). D → 3. neden (araştırmadan paylaşmamak).</li> <li><b>Eşleşmeyeni bul</b> Hurafeye inananlarla iletişimi kesmek hiçbir nedeni gidermez; tersine onları doğru bilgiden uzak bırakır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>1. nedeni giderir.</td></tr><tr><td>B</td><td>2. nedeni giderir.</td></tr><tr class=\"ok\"><td>C</td><td>Hiçbir nedeni gidermez; doğru bilgi ulaştırmayı engeller.</td></tr><tr><td>D</td><td>3. nedeni giderir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Bilgi, hurafeye karşı en güçlü kalkandır.» İletişimi kesmek bilgiyi de keser.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1200,7 +1200,7 @@ LGS.add({
     "Kardeşlerin hatalarını itiraf etmesi, Hz. Yusuf’un onları cezalandırmasıyla sonuçlanmıştır."
    ],
    "a": "D",
-   "s": "<p>Hz. Yusuf’un kardeşlerini bağışlaması ve ailenin yeniden bir araya gelmesi A’yı; kardeşlerin hatalarını itiraf ettikten sonra bağışlanması B’yi; Hz. Yakup’un yıllarca ümidini kesmemesi C’yi destekler.<br>Metinde Hz. Yusuf’un kardeşlerini cezalandırdığı değil, tam tersine kınamadan bağışladığı anlatılır. Yönetici olarak cezalandırma gücüne sahip olması, “güçlü olan cezalandırır” yanılgısıyla D’yi seçtirebilir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Yakup yıllarca ümidini kesmedi.</li> <li>Kardeşler «utandılar ve hatalarını itiraf ettiler».</li> <li>Hz. Yusuf «onları kınamadı, bağışladı»; aile yeniden bir araya geldi.</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metinden çıkanlar</b> Affetmek bağları onardı (A), itiraf barışmayı sağladı (B), uzun ayrılıkta ümit kesilmedi (C).</li> <li><b>Çelişeni bul</b> Hz. Yusuf kardeşlerini cezalandırmadı, bağışladı. D metinle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Affetme → aile yeniden birleşti; ulaşılır.</td></tr><tr><td>B</td><td>İtiraf → barış; ulaşılır.</td></tr><tr><td>C</td><td>Hz. Yakup ümit kesmedi; ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Cezalandırma yok, bağışlama var → ulaşılamaz.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1212,7 +1212,7 @@ LGS.add({
     "Sabrı tavsiye etmek"
    ],
    "a": "B",
-   "s": "<p>Kerem’in Allah’a ve ahirete inanması <b>imandır</b> (A var). Namaz kılması ve yaşlılara kitap okuması <b>salih ameldir</b> (C var). Hasta arkadaşına sabrı öğütlemesi <b>sabrı tavsiye etmektir</b> (D var).<br>Yanlış haber yayan arkadaşlarını uyarmaması ve doğruyu söylemekten kaçınması, <b>hakkı (doğruyu) tavsiye etme</b> şartını eksik bırakır. Hasta ziyaretini yalnızca “salih amel” sayıp içindeki sabır tavsiyesini gözden kaçıran öğrenci D’yi seçer. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kerem Allah’a ve ahirete inanır → iman</li> <li>Namaz kılar, yaşlılara kitap okur → salih amel</li> <li>Hasta arkadaşına sabrı öğütler → sabrı tavsiye</li> <li>Yalan haberi görünce «Beni ilgilendirmez» der, «doğruyu söylemekten kaçınır»</li></ul><b>İstenen</b><p>Kerem’de eksik kalan şart.</p></div><ol class=\"sv-s\"><li><b>Şartları tek tek işaretle</b> İman ✓, salih amel ✓, sabrı tavsiye ✓.</li> <li><b>Eksik olanı bul</b> Yanlış haber yayan arkadaşlarını uyarıp doğruyu söylemek <b>hakkı tavsiye etmek</b> olurdu. Kerem bunu yapmıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İman var.</td></tr><tr class=\"ok\"><td>B</td><td>Hakkı tavsiye eksik → doğru.</td></tr><tr><td>C</td><td>Salih amel var.</td></tr><tr><td>D</td><td>Sabrı tavsiye var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Doğruyu söylemek, yanlışı uyarmak” = hakkı tavsiye; “dayan, ümidini kaybetme” = sabrı tavsiye.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1224,7 +1224,7 @@ LGS.add({
     "IV"
    ],
    "a": "C",
-   "s": "<p>I: Zarûrât-ı dîniyye beş temel değerdir (doğru). II: İsraf, nimetleri gereksiz ve aşırı harcamaktır (doğru). IV: Tevekkül, tedbir alıp sonucu Allah’a bırakmaktır; tedbirsiz beklemek değildir (doğru).<br>III’teki açıklama <b>bid’atin</b> tanımıdır. Hurafe ise akla ve dine aykırı, bilgi eksikliğinden doğan batıl inançtır. Bid’at ile hurafe aynı başlık altında (dinin korunması) öğrenildiği için sık karıştırılır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I Zarûrât-ı dîniyye: beş temel değer</li> <li>II İsraf: gereğinden fazla ya da yersiz harcamak</li> <li>III Hurafe: «Dinin aslında olmadığı hâlde sonradan ibadet diye dine eklenen uygulamalar»</li> <li>IV Tevekkül: tedbirden sonra sonucu Allah’a bırakmak</li></ul><b>İstenen</b><p>Yanlış açıklama.</p></div><ol class=\"sv-s\"><li><b>Tanımları kontrol et</b> I, II ve IV ünitedeki tanımlarla aynıdır.</li> <li><b>Yanlışı yakala</b> III’te verilen tanım <b>bid’at</b>ın tanımıdır. Hurafe ise akla ve dine aykırı, bilgi eksikliğinden doğan batıl inançtır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I → doğru.</td></tr><tr><td>B</td><td>II → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Bid’atin tanımı hurafeye yazılmış → yanlış.</td></tr><tr><td>D</td><td>IV → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “İbadet diye eklenen” → bid’at. “Batıl inanç” → hurafe.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1236,7 +1236,7 @@ LGS.add({
     "Din, insanın doğaya karşı duyarlı olmasını sağlar."
    ],
    "a": "A",
-   "s": "<p>Metin; inancın iç dünyaya (sevgi, ahiret bilinci, sabır, şükür) ve dış dünyaya (ticaret, komşuluk, aile, doğa) yansımalarını birlikte anlatır, sonunda da insanın “kendisiyle ve çevresiyle barışık” yaşamasından söz eder. Bunların hepsini kapsayan yargı A’dır.<br>C ve D metinde geçen doğru ama <b>tek bir ayrıntıyı</b> anlatan yargılardır; “en kapsamlı” değildir. B, mutlu anlarda şükürden de söz eden metinle çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Din «yalnızca insanın iç dünyasıyla ilgili bir inanç değildir».</li> <li>İnanan insan ticarette dürüst, komşuya saygılı, aileye merhametli, doğaya duyarlı</li> <li>«hem kendisiyle hem de çevresiyle barışık yaşamasına katkı sağlar»</li></ul><b>İstenen</b><p>Metinden çıkarılabilecek <b>en kapsamlı</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Metnin iki yönü</b> İç dünya: Allah sevgisi, sabır, şükür. Dış dünya: ticaret, komşuluk, aile, doğa.</li> <li><b>Kapsamlı yargı</b> İki yönü birlikte içeren yargı: Din hem iç dünyayı hem çevreyle ilişkileri olumlu etkiler.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İki yönü de kapsıyor → en kapsamlı.</td></tr><tr><td>B</td><td>Metinde mutlu anlarda şükür de var; “yalnızca zor zamanlar” yanlış.</td></tr><tr><td>C</td><td>Doğru ama tek bir örnek (ticaret); dar kalıyor.</td></tr><tr><td>D</td><td>Doğru ama tek bir örnek (doğa); dar kalıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “En kapsamlı” sorularında doğru ama dar şıklar (tek örnek) elenir; hepsini kapsayanı seç.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1248,7 +1248,7 @@ LGS.add({
     "Tebliğ – Adalet – Affedicilik"
    ],
    "a": "D",
-   "s": "<p>1. olayda Hz. Yusuf, zindanda bile Allah’ın birliğini anlatarak peygamberlik görevi olan <b>tebliği</b> yerine getirmiştir. 2. olayda ölçüyü tam tutup herkese hakkını vermesi <b>adalettir</b>. 3. olayda kendisine kötülük yapanları bağışlaması <b>affediciliktir</b>.<br>C, 2 ve 3’ün yerini karıştırır: Kardeşlerine kıtlıkta erzak vermesi “iyilik” olduğu için affedicilikle karıştırılabilir; ancak burada vurgulanan ölçüyü tam tutmaktır. A ve B tamamen yanlış sıralamadır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Zindan arkadaşlarına rüya yorumundan önce Allah’ın birliğini anlatması</li> <li>2: Kıtlıkta «ölçüyü tam tutarak hakları olan payı vermesi»</li> <li>3: Kardeşlerini kınamayıp bağışlaması</li></ul><b>İstenen</b><p>Olaylarda öne çıkan özellikler, sırasıyla.</p></div><ol class=\"sv-s\"><li><b>1. olay</b> Allah’ın birliğini anlatmak → <b>tebliğ</b>.</li> <li><b>2. olay</b> Herkese hakkını tam vermek → <b>adalet</b>.</li> <li><b>3. olay</b> Kötülük edenleri bağışlamak → <b>affedicilik</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sıra tamamen karışık.</td></tr><tr><td>B</td><td>Sıra karışık.</td></tr><tr><td>C</td><td>2 ve 3 yer değiştirmiş.</td></tr><tr class=\"ok\"><td>D</td><td>Tebliğ – Adalet – Affedicilik → doğru.</td></tr></table><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1260,7 +1260,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "B",
-   "s": "<p>I: Din duygusu fıtrîdir; bu nedenle tarih boyunca her toplumda din olmuştur (doğru). II: Bid’at ve hurafelerden korumak, dinin korunmasının bir parçasıdır (doğru). IV: Hz. Yusuf’un babası Hz. Yakup, öz kardeşi Bünyamin’dir (doğru).<br>III: Asr suresi üç ayettir; ancak <b>Mekke</b> döneminde inmiştir (yanlış). Ayet sayısının doğru olması, cümlenin tamamını doğru sandırarak C ve D’yi seçtirir; IV’ü gözden kaçıran ise A’yı seçer. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Din duygusu doğuştandır (fıtrî).</li> <li>II: Bid’at ve hurafeyle mücadele → dinin korunması.</li> <li>III: Asr suresi «Medine döneminde inmiş üç ayetlik» bir sure.</li> <li>IV: Hz. Yusuf’un babası Hz. Yakup, öz kardeşi Bünyamin.</li></ul><b>İstenen</b><p>Doğru olan yargılar.</p></div><ol class=\"sv-s\"><li><b>I</b> Din duygusu insanın yaratılışında vardır. <b>Doğru.</b></li> <li><b>II</b> Dini hurafe ve bid’atlerden korumak dinin korunmasıdır. <b>Doğru.</b></li> <li><b>III</b> Asr suresi üç ayettir ama <b>Mekke</b> döneminde inmiştir. <b>Yanlış.</b></li> <li><b>IV</b> Babası Hz. Yakup, öz kardeşi Bünyamin. <b>Doğru.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV de doğru; eksik.</td></tr><tr class=\"ok\"><td>B</td><td>I, II ve IV → doğru.</td></tr><tr><td>C</td><td>III yanlış, I eksik.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Asr suresi: Mekkî, 3 ayet; adı “zaman, çağ” anlamındaki ilk kelimeden gelir.</div><div class=\"sv-w\"><b>Tuzak:</b> III’te “üç ayetlik” kısmı doğru olduğu için ifadenin tamamı doğru sanılabilir; tek yanlış parça ifadeyi yanlış yapar.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   }
  ]
 });
