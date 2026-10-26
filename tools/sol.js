@@ -5,6 +5,7 @@
 const fs = require('fs'), path = require('path');
 const root = path.join(__dirname, '..');
 const [, , cmd, target] = process.argv;
+const svfix = s => s; // svfix.js ayrıca çalıştırılır
 global.window = {}; require(path.join(root, 'data/index.js')); global.LGS = window.LGS;
 const isPast = target.startsWith('past:'), sid = isPast ? target.slice(5) : null;
 const name = isPast ? 'past-' + sid : target;

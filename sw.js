@@ -1,5 +1,5 @@
 /* LGS Kışlası · servis çalışanı: önce ağ, çevrimdışıysa önbellek */
-var C = 'kisla-v33';
+var C = 'kisla-v34';
 var SHELL = ['./', './index.html', './manifest.webmanifest', './img/icons/icon-192.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
@@ -12,7 +12,7 @@ self.addEventListener('activate', function (e) {
 self.addEventListener('fetch', function (e) {
   var r = e.request;
   if (r.method !== 'GET' || new URL(r.url).origin !== location.origin) return;
-  e.respondWith(fetch(r).then(function (res) {
+  e.respondWith(fetch(r, { cache: 'no-cache' }).then(function (res) {
     if (res && res.ok) { var cp = res.clone(); caches.open(C).then(function (c) { c.put(r, cp); }); }
     return res;
   }).catch(function () {
