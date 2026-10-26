@@ -1,5 +1,5 @@
 /* LGS Kışlası · servis çalışanı: önce ağ, çevrimdışıysa önbellek */
-var C = 'kisla-v49';
+var C = 'kisla-v50';
 var SHELL = ['./', './index.html', './manifest.webmanifest', './img/icons/icon-192.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(C).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));
