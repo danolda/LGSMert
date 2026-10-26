@@ -1,2240 +1,1266 @@
 LGS.add({
-id: "ing-science",
-summary: `<p>8. sınıf 9. ünite <b>Science</b>; icatlar ve keşifler, bilim insanlarının hayatları, deneyler ve laboratuvar, süreç anlatma (edilgen yapı) ve bilimle ilgili görüş bildirme konularını kapsar. LGS’de bu üniteden genellikle <b>biyografi metinleri</b>, <b>icat–tarih tabloları</b>, <b>deney diyalogları</b> ve <b>“metinde hangisi yok?”</b> soruları gelir.</p>
-
-<h3>1. Bilim Dalları ve Bilim İnsanları (Branches of Science)</h3>
-<table class="rt">
-<tr><th>Bilim dalı</th><th>Bilim insanı</th><th>Ne inceler?</th></tr>
-<tr><td><b>biology</b></td><td>biologist</td><td>canlılar, hücreler, bitkiler, hayvanlar</td></tr>
-<tr><td><b>chemistry</b></td><td>chemist</td><td>maddeler, elementler, kimyasal tepkimeler</td></tr>
-<tr><td><b>physics</b></td><td>physicist</td><td>kuvvet, hareket, enerji, ışık, elektrik</td></tr>
-<tr><td><b>astronomy</b></td><td>astronomer</td><td>yıldızlar, gezegenler, uzay</td></tr>
-<tr><td><b>geology</b></td><td>geologist</td><td>kayaçlar, depremler, yer kabuğu</td></tr>
-<tr><td><b>genetics</b></td><td>geneticist</td><td>DNA, genler, kalıtım</td></tr>
-<tr><td><b>medicine</b></td><td>doctor / surgeon</td><td>hastalıklar ve tedavileri (surgery: ameliyat)</td></tr>
-<tr><td><b>mathematics</b></td><td>mathematician</td><td>sayılar, şekiller, formüller</td></tr>
-<tr><td><b>engineering</b> / <b>robotics</b></td><td>engineer</td><td>makine, robot, yapı tasarlama</td></tr>
-</table>
-<div class="note"><b>LGS Tuzağı (bilim dalı ↔ kişi):</b> “-ist / -er / -ian” ekleri kişiyi gösterir: physics → <b>physicist</b> (fizikçi), <b>physician</b> ise “doktor” demektir! Astronomy (gökbilim) ile astrology (burç falı) da farklıdır. “I love watching the stars” diyen biri <b>astronomer</b> olmak ister.</div>
-
-<h3>2. Kelime Aileleri (Word Families)</h3>
-<table class="rt">
-<tr><th>Fiil (verb)</th><th>İsim – şey</th><th>İsim – kişi</th><th>Anlam</th></tr>
-<tr><td><b>invent</b></td><td>invention</td><td>inventor</td><td>icat etmek / icat / mucit</td></tr>
-<tr><td><b>discover</b></td><td>discovery</td><td>discoverer</td><td>keşfetmek / keşif</td></tr>
-<tr><td><b>develop</b></td><td>development</td><td>developer</td><td>geliştirmek / gelişme</td></tr>
-<tr><td><b>achieve</b></td><td>achievement</td><td>achiever</td><td>başarmak / başarı</td></tr>
-<tr><td><b>improve</b></td><td>improvement</td><td>—</td><td>iyileştirmek / iyileşme</td></tr>
-<tr><td><b>observe</b></td><td>observation</td><td>observer</td><td>gözlemlemek / gözlem</td></tr>
-<tr><td><b>research</b></td><td>research</td><td>researcher</td><td>araştırmak / araştırma</td></tr>
-<tr><td><b>explore</b></td><td>exploration</td><td>explorer</td><td>keşif gezisi yapmak / kâşif</td></tr>
-<tr><td><b>experiment</b></td><td>experiment</td><td>—</td><td>deney yapmak / deney</td></tr>
-<tr><td>—</td><td>science</td><td>scientist</td><td>bilim / bilim insanı (sıfat: <b>scientific</b>)</td></tr>
-</table>
-<div class="fig"><svg viewBox="0 0 600 150" width="560" role="img" aria-label="invent ve discover farkı şeması">
-<rect x="10" y="10" width="280" height="130" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<text x="150" y="36" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle">INVENT (icat etmek)</text>
-<text x="150" y="60" font-size="11" fill="#1e293b" text-anchor="middle">Daha önce OLMAYAN bir şeyi yapmak</text>
-<text x="150" y="84" font-size="11" fill="#1e293b" text-anchor="middle">the telephone, the light bulb,</text>
-<text x="150" y="100" font-size="11" fill="#1e293b" text-anchor="middle">the airplane, the printing press</text>
-<text x="150" y="124" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">Bell invented the telephone.</text>
-<rect x="310" y="10" width="280" height="130" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-<text x="450" y="36" font-size="15" font-weight="bold" fill="#166534" text-anchor="middle">DISCOVER (keşfetmek)</text>
-<text x="450" y="60" font-size="11" fill="#1e293b" text-anchor="middle">Doğada ZATEN VAR OLANI ilk kez bulmak</text>
-<text x="450" y="84" font-size="11" fill="#1e293b" text-anchor="middle">gravity, penicillin, X-rays,</text>
-<text x="450" y="100" font-size="11" fill="#1e293b" text-anchor="middle">a new planet, radium, DNA’s shape</text>
-<text x="450" y="124" font-size="11" font-weight="bold" fill="#15803d" text-anchor="middle">Newton discovered gravity.</text>
-</svg></div>
-<div class="note"><b>LGS Tuzağı (invent / discover):</b> “Newton <b>invented</b> gravity” YANLIŞTIR; yer çekimi zaten vardı → <b>discovered</b>. Ateş de icat edilmedi, keşfedildi. Boşluk doldurma sorularında kelime türüne de bak: “a great <b>inventor</b>” (kişi), “his most famous <b>invention</b>” (şey), “a big <b>achievement</b>” (başarı).</div>
-
-<h3>3. Laboratuvar ve Deney Kelimeleri (In the Lab)</h3>
-<table class="rt">
-<tr><td><b>microscope</b></td><td>mikroskop (çok küçük şeyler: hücre, bakteri)</td><td><b>telescope</b></td><td>teleskop (uzaktaki yıldızlar)</td></tr>
-<tr><td><b>test tube</b></td><td>deney tüpü</td><td><b>beaker</b></td><td>beher (ölçekli cam kap)</td></tr>
-<tr><td><b>goggles</b></td><td>koruyucu gözlük</td><td><b>gloves</b></td><td>eldiven</td></tr>
-<tr><td><b>lab coat</b></td><td>laboratuvar önlüğü</td><td><b>dropper</b></td><td>damlalık</td></tr>
-<tr><td><b>thermometer</b></td><td>termometre</td><td><b>magnifying glass</b></td><td>büyüteç</td></tr>
-<tr><td><b>chemicals</b></td><td>kimyasallar</td><td><b>equipment</b></td><td>araç gereç, ekipman</td></tr>
-<tr><td><b>conduct / carry out / do an experiment</b></td><td>deney yapmak</td><td><b>hypothesis</b></td><td>hipotez (akıllıca tahmin)</td></tr>
-<tr><td><b>result / outcome</b></td><td>sonuç</td><td><b>conclusion</b></td><td>vargı, çıkarım</td></tr>
-<tr><td><b>analyse / analyze</b></td><td>çözümlemek, incelemek</td><td><b>measure</b></td><td>ölçmek</td></tr>
-<tr><td><b>prove</b></td><td>kanıtlamak</td><td><b>by accident</b></td><td>tesadüfen</td></tr>
-</table>
-
-<h4>Süreç fiilleri (process verbs)</h4>
-<table class="rt">
-<tr><td><b>pour</b></td><td>dökmek</td><td><b>add</b></td><td>eklemek</td><td><b>mix / stir</b></td><td>karıştırmak</td></tr>
-<tr><td><b>heat</b></td><td>ısıtmak</td><td><b>boil</b></td><td>kaynamak</td><td><b>cool</b></td><td>soğutmak</td></tr>
-<tr><td><b>melt</b></td><td>erimek</td><td><b>freeze</b></td><td>donmak</td><td><b>dissolve</b></td><td>çözünmek</td></tr>
-<tr><td><b>fill</b></td><td>doldurmak</td><td><b>cover</b></td><td>örtmek</td><td><b>wait</b></td><td>beklemek</td></tr>
-</table>
-
-<h3>4. Bilimsel Yöntem (The Scientific Method)</h3>
-<div class="fig"><svg viewBox="0 0 600 136" width="560" role="img" aria-label="Bilimsel yöntem basamakları">
-<defs><marker id="sciA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
-<g fill="#ede9fe" stroke="#7c3aed"><rect x="4" y="20" width="104" height="64" rx="10"/><rect x="127" y="20" width="104" height="64" rx="10"/><rect x="250" y="20" width="104" height="64" rx="10"/><rect x="373" y="20" width="104" height="64" rx="10"/><rect x="496" y="20" width="100" height="64" rx="10"/></g>
-<g font-size="11" text-anchor="middle" fill="#1e293b"><text x="56" y="46" font-weight="bold">1. Ask</text><text x="56" y="64">a question</text><text x="179" y="46" font-weight="bold">2. Make</text><text x="179" y="64">a hypothesis</text><text x="302" y="46" font-weight="bold">3. Do</text><text x="302" y="64">an experiment</text><text x="425" y="46" font-weight="bold">4. Observe</text><text x="425" y="64">&amp; record results</text><text x="546" y="46" font-weight="bold">5. Draw</text><text x="546" y="64">a conclusion</text></g>
-<g stroke="#475569" stroke-width="2"><line x1="108" y1="52" x2="125" y2="52" marker-end="url(#sciA)"/><line x1="231" y1="52" x2="248" y2="52" marker-end="url(#sciA)"/><line x1="354" y1="52" x2="371" y2="52" marker-end="url(#sciA)"/><line x1="477" y1="52" x2="494" y2="52" marker-end="url(#sciA)"/></g>
-<text x="300" y="106" font-size="11" fill="#64748b" text-anchor="middle">Sonuç hipotezi doğrularsa: “The hypothesis was correct / proved.”</text><text x="300" y="124" font-size="11" fill="#64748b" text-anchor="middle">Doğrulamazsa: “The hypothesis was wrong.”</text>
-</svg></div>
-<div class="note"><b>LGS Tuzağı (deney raporu):</b> Hipotez bir <b>tahmindir</b>; deneyden ÖNCE yapılır. Sonuç tahmine uymuyorsa “hypothesis was wrong” denir. Deney sorularında sadece <b>tek bir şeyin</b> değiştiğine dikkat et (ışık mı, su mu?); sonuç o değişkenle ilgili çıkarılır.</div>
-
-<h3>5. Süreç Anlatma: Edilgen Yapı (Passive Voice)</h3>
-<p>Bir deneyin ya da üretimin adımlarını anlatırken <b>işi yapan değil, yapılan iş</b> önemlidir. Bu yüzden edilgen yapı kullanılır: <b>am / is / are + V3</b> (geniş zaman), <b>was / were + V3</b> (geçmiş zaman). İşi yapan söylenecekse <b>by</b> eklenir.</p>
-<div class="fig"><svg viewBox="0 0 600 150" width="560" role="img" aria-label="Etken cümleden edilgen cümleye dönüşüm şeması">
-<rect x="10" y="10" width="580" height="54" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
-<text x="24" y="31" font-size="11" font-weight="bold" fill="#9a3412">ACTIVE:</text>
-<text x="90" y="31" font-size="12" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Fleming</tspan> <tspan font-weight="bold" fill="#dc2626">discovered</tspan> <tspan font-weight="bold" fill="#16a34a">penicillin</tspan> in 1928.</text>
-<text x="24" y="52" font-size="11" fill="#64748b">özne (yapan) + fiil (V2) + nesne</text>
-<rect x="10" y="86" width="580" height="54" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-<text x="24" y="107" font-size="11" font-weight="bold" fill="#166534">PASSIVE:</text>
-<text x="96" y="107" font-size="12" fill="#1e293b"><tspan font-weight="bold" fill="#16a34a">Penicillin</tspan> <tspan font-weight="bold" fill="#dc2626">was discovered</tspan> by <tspan font-weight="bold" fill="#2563eb">Fleming</tspan> in 1928.</text>
-<text x="24" y="128" font-size="11" fill="#64748b">nesne başa geçer + was/were + V3 + (by + yapan)</text>
-<text x="300" y="78" font-size="14" fill="#475569" text-anchor="middle">↓</text>
-</svg></div>
-<table class="rt">
-<tr><th>Zaman</th><th>Yapı</th><th>Örnek</th></tr>
-<tr><td>Simple Present Passive</td><td>am / is / are + V3</td><td>First, the water <b>is heated</b>. Then, salt <b>is added</b>.</td></tr>
-<tr><td>Simple Past Passive</td><td>was / were + V3</td><td>The light bulb <b>was invented</b> in 1879. X-rays <b>were discovered</b> by Röntgen.</td></tr>
-<tr><td>Olumsuz / Soru</td><td>isn’t / wasn’t + V3 · Was … V3?</td><td>Fire <b>wasn’t invented</b>. <b>When was</b> the telephone <b>invented</b>?</td></tr>
-</table>
-<div class="fig"><svg viewBox="0 0 560 174" width="560" role="img" aria-label="Lav lambası yapımı süreç kartı">
-<rect x="4" y="4" width="552" height="166" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#7c3aed"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">How to Make a Lava Lamp (Process)</text>
-<text x="24" y="58" font-size="11" fill="#1e293b">First, a bottle is filled with water (one quarter).</text>
-<text x="24" y="75" font-size="11" fill="#1e293b">Then, vegetable oil is poured into the bottle until it is almost full.</text>
-<text x="24" y="92" font-size="11" fill="#1e293b">Next, a few drops of food colouring are added.</text>
-<text x="24" y="109" font-size="11" fill="#1e293b">After that, half a fizzy tablet is dropped into the bottle.</text>
-<text x="24" y="126" font-size="11" fill="#1e293b">Finally, the coloured bubbles are observed. They move up and down!</text>
-<text x="24" y="151" font-size="11" font-weight="bold" fill="#7c3aed">Sıralama kelimeleri: First → Then / Next → After that → Finally</text>
-</svg></div>
-<div class="note"><b>LGS Tuzağı (edilgen yapı):</b> “Penicillin <b>discovered</b> by Fleming” eksiktir, <b>was</b> gerekir. “by” görürsen ya da özne bir şeyse (water, salt, the telephone) edilgen düşün. Zamanı da kontrol et: geçmiş tarih (1928) → <b>was/were</b>; tarif/talimat → <b>is/are</b>. “Scientists <b>were discovered</b> water” yanlıştır, çünkü bilim insanları keşfedilen değil, keşfedendir.</div>
-
-<h3>6. Büyük İcatlar ve Keşifler (Timeline)</h3>
-<div class="fig"><svg viewBox="0 0 600 190" width="560" role="img" aria-label="İcatlar zaman çizelgesi">
-<line x1="10" y1="95" x2="590" y2="95" stroke="#475569" stroke-width="3"/>
-<g fill="#2563eb"><circle cx="35" cy="95" r="6"/><circle cx="100" cy="95" r="6"/><circle cx="165" cy="95" r="6"/><circle cx="230" cy="95" r="6"/><circle cx="295" cy="95" r="6"/><circle cx="360" cy="95" r="6"/><circle cx="425" cy="95" r="6"/><circle cx="490" cy="95" r="6"/><circle cx="560" cy="95" r="6"/></g>
-<g font-size="11" text-anchor="middle" fill="#1e293b">
-<g font-weight="bold" fill="#1d4ed8"><text x="35" y="122">c. 1440</text><text x="100" y="78">1804</text><text x="165" y="122">1876</text><text x="230" y="78">1879</text><text x="295" y="122">1895</text><text x="360" y="78">1903</text><text x="425" y="122">1928</text><text x="490" y="78">1969</text><text x="560" y="122">1989</text></g>
-<text x="35" y="140">printing</text><text x="35" y="154">press</text><text x="35" y="168" fill="#64748b">Gutenberg</text>
-<text x="100" y="44">steam train</text><text x="100" y="60" fill="#64748b">Trevithick</text>
-<text x="165" y="140">telephone</text><text x="165" y="156" fill="#64748b">Bell</text>
-<text x="230" y="44">light bulb</text><text x="230" y="60" fill="#64748b">Edison</text>
-<text x="295" y="140">X-rays</text><text x="295" y="156" fill="#64748b">Röntgen</text>
-<text x="360" y="44">airplane</text><text x="360" y="60" fill="#64748b">Wright brothers</text>
-<text x="425" y="140">penicillin</text><text x="425" y="156" fill="#64748b">Fleming</text>
-<text x="490" y="44">Moon landing</text><text x="490" y="60" fill="#64748b">Apollo 11</text>
-<text x="560" y="140">World Wide</text><text x="560" y="154">Web</text><text x="560" y="168" fill="#64748b">Berners-Lee</text>
-</g></svg></div>
-<div class="note"><b>LGS Tuzağı (tarih tablosu – “Was it possible?”):</b> 2022 LGS’de çıktı: Bir kişi, ancak <b>yaşadığı yıllar içinde</b> icat edilmiş bir şeyi kullanabilir. Kişinin <b>ölüm yılı &lt; icat yılı</b> ise o icadı kullanamaz. Örnek: Marconi 1937’de öldü, bilgisayar 1938’de icat edildi → Marconi bilgisayar kullanamazdı. Doğum yılı icattan sonraysa da o olayı “canlı” izlemiş olamaz.</div>
-
-<h3>7. Ünlü Bilim İnsanları (Famous Scientists)</h3>
-<table class="rt">
-<tr><th>Bilim insanı</th><th>Neden ünlü?</th></tr>
-<tr><td><b>Al-Jazari (El-Cezerî)</b> (1136–1206)</td><td>Artuklu sarayında mühendis; 1206’da makineleri resimleriyle anlatan bir kitap yazdı; fil saati; “robotiğin babası” denir.</td></tr>
-<tr><td><b>Marie Curie</b> (1867–1934)</td><td>Polonyum ve radyumu keşfetti; Nobel kazanan ilk kadın; iki farklı bilim dalında (fizik 1903, kimya 1911) Nobel alan tek kişi.</td></tr>
-<tr><td><b>Thomas Edison</b> (1847–1931)</td><td>Kullanışlı ampul (1879); 1.000’den fazla patent.</td></tr>
-<tr><td><b>Alexander Fleming</b> (1881–1955)</td><td>Penisilini 1928’de tesadüfen (by accident) keşfetti.</td></tr>
-<tr><td><b>Hulusi Behçet</b> (1889–1948)</td><td>Cildiye (deri) doktoru; 1937’de tanımladığı hastalık dünyada “Behçet hastalığı” olarak bilinir.</td></tr>
-<tr><td><b>Cahit Arf</b> (1910–1997)</td><td>Matematikçi; “Arf değişmezi” (Arf invariant); portresi 10 TL banknotunda.</td></tr>
-<tr><td><b>Gazi Yaşargil</b> (1925–2025, d. Lice / Diyarbakır)</td><td>Mikronöroşirürjinin (mikroskopla beyin cerrahisi) öncüsü; 1999’da “Yüzyılın Beyin Cerrahı” seçildi.</td></tr>
-<tr><td><b>Aziz Sancar</b> (d. 1946, Savur / Mardin)</td><td>Hücrelerin hasarlı DNA’yı nasıl onardığını araştırdı; 2015 Nobel Kimya Ödülü.</td></tr>
-</table>
-
-<h3>8. Biyografi Metni Okuma (Reading a Biography)</h3>
-<p>2019 ve 2025 LGS’de bilim insanı biyografisi çıktı. Paragrafların hangi başlığa ait olduğunu <b>ipucu kelimelerden</b> anla:</p>
-<div class="fig"><svg viewBox="0 0 590 200" width="560" role="img" aria-label="Biyografi başlıkları ve ipucu kelimeler tablosu">
-<rect x="10" y="10" width="570" height="26" fill="#7c3aed"/>
-<text x="75.0" y="27.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Başlık</text>
-<text x="360.0" y="27.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">İpucu kelimeler / sorular</text>
-<rect x="10" y="36" width="570" height="38" fill="#ffffff" stroke="#94a3b8"/>
-<text x="75.0" y="59.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Personal Life</text>
-<text x="360.0" y="52.0" font-size="11" fill="#1e293b" text-anchor="middle">was born in…, his/her parents, brothers, sisters, married, children,</text>
-<text x="360.0" y="66.0" font-size="11" fill="#1e293b" text-anchor="middle">relatives</text>
-<rect x="10" y="74" width="570" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="75.0" y="91.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Education</text>
-<text x="360.0" y="91.0" font-size="11" fill="#1e293b" text-anchor="middle">went to school, graduated from, studied…, university, degree, doctorate</text>
-<rect x="10" y="100" width="570" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="75.0" y="117.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Career</text>
-<text x="360.0" y="117.0" font-size="11" fill="#1e293b" text-anchor="middle">worked as / at…, became a…, moved to…, taught at…</text>
-<rect x="10" y="126" width="570" height="38" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="75.0" y="149.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Achievements</text>
-<text x="360.0" y="142.0" font-size="11" fill="#1e293b" text-anchor="middle">invented, discovered, developed, won a prize / award, wrote articles,</text>
-<text x="360.0" y="156.0" font-size="11" fill="#1e293b" text-anchor="middle">named after</text>
-<rect x="10" y="164" width="570" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="75.0" y="181.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Hobbies</text>
-<text x="360.0" y="181.0" font-size="11" fill="#1e293b" text-anchor="middle">in his/her free time, liked playing / painting / reading…</text>
-<line x1="140" y1="10" x2="140" y2="190" stroke="#94a3b8"/>
-<rect x="10" y="10" width="570" height="180" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div>
-<div class="note"><b>LGS Tuzağı (“Which is NOT mentioned?”):</b> Metinde <b>ima edilen</b> değil, <b>açıkça yazan</b> bilgiyi say. Doğum yılı ve ölüm yılı varsa “ne kadar yaşadı?” sorusu cevaplanabilir (hesapla!). Ama “anne-babası kimdi?”, “hobileri neydi?”, “öğretmeni kimdi?” gibi sorular metinde kelimesi kelimesine yoksa cevaplanamaz.</div>
-
-<h3>9. Soru Sorma ve Görüş Bildirme (Making Inquiries &amp; Giving Opinions)</h3>
-<table class="rt">
-<tr><th>Soru</th><th>Olası cevap</th></tr>
-<tr><td>What is the most important invention in history?</td><td>In my opinion, it’s the printing press.</td></tr>
-<tr><td>Why do you think so?</td><td>Because it helped people share knowledge quickly.</td></tr>
-<tr><td>Do you know who invented it?</td><td>Yes, Johannes Gutenberg. / I have no idea.</td></tr>
-<tr><td>When was it invented / discovered?</td><td>It was invented around 1440.</td></tr>
-<tr><td>What is your project about?</td><td>It’s about renewable energy.</td></tr>
-<tr><td>How does it work?</td><td>It uses a sensor to measure the temperature.</td></tr>
-<tr><td>What’s our next step?</td><td>Now, we have to put salty water in the test tubes.</td></tr>
-<tr><td>What will be the most important invention in the future?</td><td>I believe it will be robots that do surgery.</td></tr>
-</table>
-<p><b>Görüş bildirme:</b> I think… · I believe… · In my opinion… · As far as I know… · <b>Katılma:</b> I agree. / Exactly! · <b>Katılmama:</b> I don’t agree. / I’m not sure about that.</p>
-<div class="note"><b>LGS Tuzağı (diyalog boşluğu):</b> Boşluğun <b>sonrasındaki</b> cümleye bak. Cevap bir isimse (“Johannes Gutenberg.”) soru <b>Who</b>, yıl ise <b>When</b>, gerekçe ise (“Because…”) <b>Why</b> sorusudur. 2026 LGS’de “at the moment” ile soruldu: “I have been busy doing my experiment” geçmişi anlatır; şu anda birlikte deney yapanlar “What is our next step? / Now, we have to…” diyenlerdir.</div>
-
-<h3>10. Bilimin Etkileri (Effects of Science)</h3>
-<table class="rt">
-<tr><th>Olumlu (benefits)</th><th>Olumsuz (drawbacks)</th></tr>
-<tr><td>cure diseases (hastalıkları tedavi etmek), save lives, make life easier, communicate quickly, explore space</td><td>pollute the air / water (kirletmek), damage nature, create waste, make people lazy, harmful chemicals</td></tr>
-</table>
-
-<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
-<p>2018-2026 LGS’lerinde Science ünitesinden <b>6 soru</b> geldi: 2019, 2021, 2022, 2024, 2025 ve 2026’da birer soru; 2018, 2020 ve 2023’te soru yok. Az soru gelen ünitelerden biri (adventures ile eşit). Sorular ölçtüğü beceriye göre beş alt başlıkta sınıflandırıldı.</p>
-<div class="fig"><svg viewBox="0 0 560 218" width="560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isı haritası: 6 çıkmış soru; biyografi 2, icat-tarih tablosu 1, görüş soru-cevap 1, deney mesajlaşması 1, kitap seçimi 1" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="0" y="0" width="560" height="218" fill="#ffffff"/><text x="8" y="18" font-size="13" text-anchor="start" font-weight="bold">Alt başlık × yıl (2018-2026)</text><text x="530" y="18" font-weight="bold">Top.</text><text x="275" y="38" font-size="11" fill="#475569">18</text><text x="303" y="38" font-size="11" fill="#475569">19</text><text x="331" y="38" font-size="11" fill="#475569">20</text><text x="359" y="38" font-size="11" fill="#475569">21</text><text x="387" y="38" font-size="11" fill="#475569">22</text><text x="415" y="38" font-size="11" fill="#475569">23</text><text x="443" y="38" font-size="11" fill="#475569">24</text><text x="471" y="38" font-size="11" fill="#475569">25</text><text x="499" y="38" font-size="11" fill="#475569">26</text><text x="256" y="59" font-size="11.5" text-anchor="end">1. Bilim insanı biyografisi</text><rect x="262" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="290" y="44" width="26" height="22" rx="4" fill="#fdba74"/><text x="303" y="59" font-weight="bold" fill="#7c2d12">1</text><rect x="318" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="346" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="374" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="402" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="430" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="458" y="44" width="26" height="22" rx="4" fill="#fdba74"/><text x="471" y="59" font-weight="bold" fill="#7c2d12">1</text><rect x="486" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><text x="530" y="59" font-weight="bold">2</text><text x="256" y="85" font-size="11.5" text-anchor="end">2. İcat–tarih tablosu (mümkün mü?)</text><rect x="262" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="290" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="318" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="346" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="374" y="70" width="26" height="22" rx="4" fill="#fdba74"/><text x="387" y="85" font-weight="bold" fill="#7c2d12">1</text><rect x="402" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="430" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="458" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="486" y="70" width="26" height="22" rx="4" fill="#f1f5f9"/><text x="530" y="85" font-weight="bold">1</text><text x="256" y="111" font-size="11.5" text-anchor="end">3. Bilim/icat görüşü: soru–cevap</text><rect x="262" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="290" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="318" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="346" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="374" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="402" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="430" y="96" width="26" height="22" rx="4" fill="#fdba74"/><text x="443" y="111" font-weight="bold" fill="#7c2d12">1</text><rect x="458" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="486" y="96" width="26" height="22" rx="4" fill="#f1f5f9"/><text x="530" y="111" font-weight="bold">1</text><text x="256" y="137" font-size="11.5" text-anchor="end">4. Deney-laboratuvar mesajlaşması</text><rect x="262" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="290" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="318" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="346" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="374" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="402" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="430" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="458" y="122" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="486" y="122" width="26" height="22" rx="4" fill="#fdba74"/><text x="499" y="137" font-weight="bold" fill="#7c2d12">1</text><text x="530" y="137" font-weight="bold">1</text><text x="256" y="163" font-size="11.5" text-anchor="end">5. Bilim konulu kitap seçimi (çıkarım)</text><rect x="262" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="290" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="318" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="346" y="148" width="26" height="22" rx="4" fill="#fdba74"/><text x="359" y="163" font-weight="bold" fill="#7c2d12">1</text><rect x="374" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="402" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="430" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="458" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="486" y="148" width="26" height="22" rx="4" fill="#f1f5f9"/><text x="530" y="163" font-weight="bold">1</text><text x="256" y="188" font-size="11.5" text-anchor="end" font-weight="bold">Yıllık toplam</text><text x="275" y="188" font-weight="bold" fill="#94a3b8">0</text><text x="303" y="188" font-weight="bold" fill="#1e293b">1</text><text x="331" y="188" font-weight="bold" fill="#94a3b8">0</text><text x="359" y="188" font-weight="bold" fill="#1e293b">1</text><text x="387" y="188" font-weight="bold" fill="#1e293b">1</text><text x="415" y="188" font-weight="bold" fill="#94a3b8">0</text><text x="443" y="188" font-weight="bold" fill="#1e293b">1</text><text x="471" y="188" font-weight="bold" fill="#1e293b">1</text><text x="499" y="188" font-weight="bold" fill="#1e293b">1</text><text x="530" y="188" font-weight="bold">6</text><text x="8" y="210" font-size="11" text-anchor="start" fill="#475569">2018, 2020 ve 2023’te bu üniteden soru yok; diğer yıllarda 1’er soru.</text></svg></div>
-<div class="tbl"><table><thead><tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr></thead><tbody><tr><td>2019</td><td>8</td><td>Bilim insanı biyografisi</td><td>Nikola Tesla paragrafı: hangi bilgi yok? (akrabaları)</td></tr><tr><td>2021</td><td>6</td><td>Kitap seçimi (çıkarım)*</td><td>Daniel’in okuduğu bilim kitapları → alacağı yeni kitap (History of Modern Physics)</td></tr><tr><td>2022</td><td>9</td><td>İcat–tarih tablosu</td><td>Bilim insanlarının doğum-ölüm yılları × icat yılları: hangisi mümkün değil? (Marconi – bilgisayar)</td></tr><tr><td>2024</td><td>10</td><td>Görüş: soru–cevap*</td><td>Matthew’un en önemli icatla ilgili sorularına verilen cevaplar: hangisi cevap değil?</td></tr><tr><td>2025</td><td>6</td><td>Bilim insanı biyografisi</td><td>Gazi Yaşargil hakkında üç metin + başlık eşleştirme: hangi başlık kullanılmaz? (Hobbies)</td></tr><tr><td>2026</td><td>7</td><td>Deney mesajlaşması*</td><td>Grup mesajları: şu anda Martin’le birlikte deney yapan kim? (Mary)</td></tr></tbody></table></div>
-<p style="font-size:.9em">* 2021-6, 2024-10 ve 2026-7’nin alt başlığı yorumdur: 2021-6 kitap adlarından konu çıkarımı, 2024-10 diyalogda soru–cevap eşleştirme, 2026-7 mesajlaşma ekranında zaman ifadesi (now / have been) okumadır.</p>
-<div class="note"><ul>
-<li><b>En çok sorulan:</b> bilim insanı biyografisi (2019 Tesla, 2025 Gazi Yaşargil). Kök: “Which information is NOT given?” ya da “Which title is NOT used?”; metinde açıkça yazmayan bilgi (akrabalar, hobiler) aranır.</li>
-<li><b>Tarih mantığı:</b> 2022’de doğum-ölüm yılları ile icat yılları karşılaştırıldı; ölüm yılı icat yılından önceyse o icat kullanılamaz.</li>
-<li><b>Diyalog ve mesajlaşma</b> (2024, 2026): soru–cevap eşleştirme ve “şu anda kim ne yapıyor?” sorusu; “Now, we have to…” ile “I have been busy…” ayrımı önemli.</li>
-<li>Çıkmış sayısı az (6) olduğu için alt başlık dağılımı kesin bir eğilim göstermez. Edilgen yapı (passive) çıkmışlarda tek başına dil bilgisi sorusu olarak gelmedi.</li>
-</ul></div>
-`,
-qs: [
-{ lv: "kolay", q: `<p>Emre prepared the table below for his project about famous inventors.</p><div class="fig"><svg viewBox="0 0 550 204" width="550" role="img" aria-label="Mucitler tablosu">
-<text x="275.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Inventors and Their Lives</text>
-<rect x="10" y="38" width="530" height="26" fill="#1d4ed8"/>
-<text x="95.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Inventor</text>
-<text x="285.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Invention / Discovery</text>
-<text x="465.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Born – Died</text>
-<rect x="10" y="64" width="530" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="95.0" y="81.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Wilhelm Röntgen</text>
-<text x="285.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">X-rays (1895)</text>
-<text x="465.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">1845 – 1923</text>
-<rect x="10" y="90" width="530" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="95.0" y="107.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Thomas Edison</text>
-<text x="285.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">light bulb (1879)</text>
-<text x="465.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">1847 – 1931</text>
-<rect x="10" y="116" width="530" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="95.0" y="133.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Alexander Fleming</text>
-<text x="285.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">penicillin (1928)</text>
-<text x="465.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">1881 – 1955</text>
-<rect x="10" y="142" width="530" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="95.0" y="159.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Orville Wright</text>
-<text x="285.0" y="159.0" font-size="11" fill="#1e293b" text-anchor="middle">airplane (1903)</text>
-<text x="465.0" y="159.0" font-size="11" fill="#1e293b" text-anchor="middle">1871 – 1948</text>
-<rect x="10" y="168" width="530" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="95.0" y="185.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Tim Berners-Lee</text>
-<text x="285.0" y="185.0" font-size="11" fill="#1e293b" text-anchor="middle">World Wide Web (1989)</text>
-<text x="465.0" y="185.0" font-size="11" fill="#1e293b" text-anchor="middle">1955 – </text>
-<line x1="180" y1="38" x2="180" y2="194" stroke="#94a3b8"/>
-<line x1="390" y1="38" x2="390" y2="194" stroke="#94a3b8"/>
-<rect x="10" y="38" width="530" height="156" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>According to Emre’s table, which of the following was <b>NOT</b> possible?</p>`,
-  c: ["Thomas Edison read about the first flight of an airplane in a newspaper.", "Orville Wright heard about the discovery of penicillin.", "Alexander Fleming searched for information on the World Wide Web.", "Wilhelm Röntgen worked in a room lit by a light bulb."],
-  a: "C",
-  s: `<p>Bir kişi ancak <b>hayattayken</b> icat edilen bir şeyi kullanabilir ya da duyabilir. Her seçeneği yıllarla kontrol edelim:</p><ul><li>A: Uçak 1903, Edison 1931’de öldü → mümkün ✓</li><li>B: Penisilin 1928, Orville Wright 1948’de öldü → mümkün ✓</li><li>C: World Wide Web <b>1989</b>’da icat edildi, Fleming ise <b>1955</b>’te öldü → <b>mümkün değil</b> ✗</li><li>D: Ampul 1879, Röntgen 1923’te öldü → mümkün ✓</li></ul><p>Tuzak: Berners-Lee’nin doğum yılı (1955) Fleming’in ölüm yılıyla aynıdır; ama önemli olan icadın yılıdır (1989). Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>The members of a school science club are chatting in their group.</p><div class="fig"><svg viewBox="0 0 540 337" width="540" role="img" aria-label="Bilim kulübü grup sohbeti">
-<rect x="4" y="4" width="532" height="329" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="32" rx="12" fill="#0f766e"/>
-<text x="270.0" y="25" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Science Club 8-B</text>
-<rect x="20" y="46" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="62" font-size="11" font-weight="bold" fill="#2563eb">Selin</text>
-<text x="30" y="78" font-size="11" fill="#1e293b">Our experiment is over! The results are on my desk. Who wants to</text>
-<text x="30" y="93" font-size="11" fill="#1e293b">check them?</text>
-<rect x="20" y="106" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="122" font-size="11" font-weight="bold" fill="#dc2626">Kaan</text>
-<text x="30" y="138" font-size="11" fill="#1e293b">Sorry, I can’t. Deniz and I are still measuring the plants in the</text>
-<text x="30" y="153" font-size="11" fill="#1e293b">lab. We need ten more minutes.</text>
-<rect x="20" y="166" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="182" font-size="11" font-weight="bold" fill="#9333ea">Deniz</text>
-<text x="30" y="198" font-size="11" fill="#1e293b">Kaan is right. We are writing down the heights of the plants right</text>
-<text x="30" y="213" font-size="11" fill="#1e293b">now.</text>
-<rect x="20" y="226" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="242" font-size="11" font-weight="bold" fill="#d97706">Ozan</text>
-<text x="30" y="258" font-size="11" fill="#1e293b">I’m going to start my experiment tomorrow, but I still need some</text>
-<text x="30" y="273" font-size="11" fill="#1e293b">test tubes.</text>
-<rect x="110" y="286" width="410" height="37" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-<text x="120" y="302" font-size="11" font-weight="bold" fill="#0f766e">Mira</text>
-<text x="120" y="318" font-size="11" fill="#1e293b">I finished mine yesterday, but I haven’t written my report yet.</text>
-</svg></div><p>According to the messages, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Mira has done her experiment, but her report isn’t ready yet.", "Kaan and Deniz have already finished measuring the plants.", "Ozan has got all the equipment he needs for his experiment.", "Selin is still doing her experiment at the moment."],
-  a: "A",
-  s: `<p>Mira: “I finished mine yesterday, but I haven’t written my report <b>yet</b>.” → Deneyini bitirmiş ama raporunu henüz yazmamış ✓.</p><ul><li>B: Kaan ve Deniz “<b>still</b> measuring… right now” diyor; ölçüm bitmedi ✗</li><li>C: Ozan’ın hâlâ deney tüplerine ihtiyacı var (“I still need some test tubes”) ✗</li><li>D: Selin “Our experiment is <b>over</b>” diyor; deneyi bitti ✗</li></ul><p>Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Look at the experiment card.</p><div class="fig"><svg viewBox="0 0 560 199" width="560" role="img" aria-label="Görünmez mürekkep deney kartı">
-<rect x="4" y="4" width="552" height="191" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#7c3aed"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Science Fun: How to Make Invisible Ink</text>
-<text x="24" y="58" font-size="11" font-weight="bold" fill="#7c3aed">Materials: half a lemon, water, a bowl, a cotton bud, white paper, a lamp</text>
-<text x="24" y="83" font-size="11" fill="#1e293b">1. First, some lemon juice (1) ---- into a bowl.</text>
-<text x="24" y="100" font-size="11" fill="#1e293b">2. Then, a few drops of water (2) ---- to the juice and mixed.</text>
-<text x="24" y="117" font-size="11" fill="#1e293b">3. Next, a secret message is written on the paper with a cotton bud.</text>
-<text x="24" y="134" font-size="11" fill="#1e293b">4. When the paper is dry, it (3) ---- near a warm lamp.</text>
-<text x="24" y="151" font-size="11" fill="#1e293b">5. Finally, the message appears in light brown letters!</text>
-<text x="24" y="176" font-size="11" font-weight="bold" fill="#dc2626">Be careful: Ask an adult to help you with the lamp.</text>
-</svg></div><p>Which of the following best completes the blanks (1), (2) and (3)?</p>`,
-  c: ["squeezes / adds / holds", "is squeezed / added / held", "was squeezed / is adding / is held", "is squeezed / are added / is held"],
-  a: "D",
-  s: `<p>Kartta bir süreç anlatılıyor; 3. ve 5. adımlarda olduğu gibi (“a secret message <b>is written</b>”) <b>Simple Present Passive</b> (am/is/are + V3) kullanılmalı.</p><ul><li>(1) lemon juice tekil → <b>is squeezed</b></li><li>(2) a few drops of water çoğul (drops) → <b>are added</b> (devamında “and mixed” = and are mixed)</li><li>(3) it (the paper) → <b>is held</b></li></ul><p>A etken yapıdadır; B’de “added / held” önünde is/are eksiktir; C’de “was” geçmiş zaman ve “is adding” etken yapıdır. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Students in class 8-A answered the question “Which invention can’t you live without?”. Each student chose only one invention.</p><div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="İcat anketi sütun grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Which invention can’t you live without? (30 students)</text>
-<line x1="50" y1="210.0" x2="520" y2="210.0" stroke="#e2e8f0"/>
-<text x="44" y="214.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="50" y1="181.7" x2="520" y2="181.7" stroke="#e2e8f0"/>
-<text x="44" y="185.7" font-size="11" fill="#475569" text-anchor="end">2</text>
-<line x1="50" y1="153.3" x2="520" y2="153.3" stroke="#e2e8f0"/>
-<text x="44" y="157.3" font-size="11" fill="#475569" text-anchor="end">4</text>
-<line x1="50" y1="125.0" x2="520" y2="125.0" stroke="#e2e8f0"/>
-<text x="44" y="129.0" font-size="11" fill="#475569" text-anchor="end">6</text>
-<line x1="50" y1="96.7" x2="520" y2="96.7" stroke="#e2e8f0"/>
-<text x="44" y="100.7" font-size="11" fill="#475569" text-anchor="end">8</text>
-<line x1="50" y1="68.3" x2="520" y2="68.3" stroke="#e2e8f0"/>
-<text x="44" y="72.3" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="50" y1="40.0" x2="520" y2="40.0" stroke="#e2e8f0"/>
-<text x="44" y="44.0" font-size="11" fill="#475569" text-anchor="end">12</text>
-<text x="14" y="125.0" font-size="11" fill="#475569" text-anchor="middle" transform="rotate(-90 14 125.0)">number of students</text>
-<rect x="74.0" y="96.7" width="44.0" height="113.3" fill="#2563eb"/>
-<text x="97.0" y="226" font-size="11" fill="#1e293b" text-anchor="middle">smartphone</text>
-<rect x="168.0" y="54.2" width="44.0" height="155.8" fill="#f97316"/>
-<text x="191.0" y="226" font-size="11" fill="#1e293b" text-anchor="middle">internet</text>
-<rect x="262.0" y="125.0" width="44.0" height="85.0" fill="#16a34a"/>
-<text x="285.0" y="226" font-size="11" fill="#1e293b" text-anchor="middle">electricity</text>
-<rect x="356.0" y="167.5" width="44.0" height="42.5" fill="#a855f7"/>
-<text x="379.0" y="226" font-size="11" fill="#1e293b" text-anchor="middle">refrigerator</text>
-<rect x="450.0" y="181.7" width="44.0" height="28.3" fill="#dc2626"/>
-<text x="473.0" y="226" font-size="11" fill="#1e293b" text-anchor="middle">airplane</text>
-<line x1="50" y1="40" x2="50" y2="210" stroke="#1e293b"/><line x1="50" y1="210" x2="520" y2="210" stroke="#1e293b"/>
-</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Most of the students can’t live without their smartphones.", "The internet was chosen by more students than electricity and the refrigerator together.", "The airplane and the refrigerator were chosen by the same number of students.", "Exactly half of the class voted for the internet."],
-  a: "B",
-  s: `<p>Grafikteki değerler: smartphone 8, internet 11, electricity 6, refrigerator 3, airplane 2.</p><ul><li>A: En çok seçilen internet (11), akıllı telefon değil ✗</li><li>B: Electricity + refrigerator = 6 + 3 = <b>9</b>; internet 11 &gt; 9 ✓</li><li>C: Airplane 2, refrigerator 3; eşit değil ✗</li><li>D: Sınıfın yarısı 15 kişidir; internet 11 ✗</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Cahit Arf was born in Thessaloniki in 1910. When he was a little boy, his family moved to İzmir. He loved solving difficult problems, so he went to Paris to study mathematics. Later, he completed his doctorate in Göttingen, Germany. After he returned to Türkiye, he worked at İstanbul University for many years and taught thousands of students. He developed a mathematical idea which is called the “Arf invariant” today. Because of his great achievements, his picture was printed on the 10-lira banknote. He died in 1997.</p><p>Which of the following questions <b>CANNOT</b> be answered according to the text?</p>`,
-  c: ["Who was his teacher in Göttingen?", "Where did he study mathematics?", "What is named after him?", "How old was he when he died?"],
-  a: "A",
-  s: `<p>Metinde cevabı olan sorular:</p><ul><li>B: Matematiği <b>Paris</b>’te okudu ✓</li><li>C: “<b>Arf invariant</b>” onun adını taşır ✓</li><li>D: 1910’da doğdu, 1997’de öldü → 1997 − 1910 = <b>87</b> yaşında ✓ (hesap gerektirir ama cevaplanabilir)</li></ul><p>Göttingen’de doktora yaptığı yazıyor; fakat <b>hocasının kim olduğu</b> metinde yoktur. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Elif:</b> Have you finished your project about inventions?<br><b>Can:</b> Almost. I’m writing about the printing press.<br><b>Elif:</b> ----<br><b>Can:</b> Johannes Gutenberg. He developed it around 1440.<br><b>Elif:</b> Why did you choose it?<br><b>Can:</b> Because it helped people share knowledge with many others quickly.</p><p>Which of the following best completes the conversation?</p>`,
-  c: ["When did people start using it?", "Why is it so important for you?", "How does it work exactly?", "Do you know who invented it?"],
-  a: "D",
-  s: `<p>Boşluktan sonraki cevap bir <b>kişi adıyla</b> başlıyor: “Johannes Gutenberg.” Bu, “Kim icat etti?” sorusunun cevabıdır → “Do you know <b>who</b> invented it?” ✓</p><p>A tuzaktır: cevapta yıl (1440) da var, ama cevap önce bir isim veriyor; “When” sorusuna isimle cevap verilmez. B (neden önemli) zaten daha sonra “Why did you choose it?” ile soruluyor. C (nasıl çalışır) için cevapta açıklama yok. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>A reporter is interviewing a young inventor. The sentences are mixed up.</p><div class="fig"><svg viewBox="0 0 560 214" width="560" role="img" aria-label="Karışık röportaj cümleleri">
-<rect x="8" y="8" width="44" height="33" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="30" y="29.5" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">I</text>
-<rect x="52" y="8" width="500" height="33" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="64" y="30" font-size="11" font-weight="bold" fill="#1e293b">Inventor:</text>
-<text x="140" y="30" font-size="11" fill="#1e293b">It’s a smart cup. It changes colour when the drink is too hot.</text>
-<rect x="8" y="51" width="44" height="50" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="30" y="81.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">II</text>
-<rect x="52" y="51" width="500" height="50" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="64" y="73" font-size="11" font-weight="bold" fill="#1e293b">Reporter:</text>
-<text x="140" y="73" font-size="11" fill="#1e293b">Congratulations on winning the Young Inventors Prize! Can you tell</text>
-<text x="140" y="90" font-size="11" fill="#1e293b">us about your invention?</text>
-<rect x="8" y="111" width="44" height="50" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="30" y="141.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">III</text>
-<rect x="52" y="111" width="500" height="50" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="64" y="133" font-size="11" font-weight="bold" fill="#1e293b">Inventor:</text>
-<text x="140" y="133" font-size="11" fill="#1e293b">Last winter, my little brother burned his tongue while he was</text>
-<text x="140" y="150" font-size="11" fill="#1e293b">drinking hot milk.</text>
-<rect x="8" y="171" width="44" height="33" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="30" y="192.5" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">IV</text>
-<rect x="52" y="171" width="500" height="33" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
-<text x="64" y="193" font-size="11" font-weight="bold" fill="#1e293b">Reporter:</text>
-<text x="140" y="193" font-size="11" fill="#1e293b">What a useful idea! How did you come up with it?</text>
-</svg></div><p>Which of the following is the correct order of the conversation?</p>`,
-  c: ["II – IV – I – III", "II – I – IV – III", "II – III – IV – I", "IV – I – II – III"],
-  a: "B",
-  s: `<p>Röportaj tebrik ve icadın ne olduğu sorusuyla başlar (<b>II</b>). Mucit icadını anlatır: akıllı bardak (<b>I</b>). Muhabir fikri beğenip fikrin nasıl aklına geldiğini sorar: “How did you come up with it?” (<b>IV</b>). Mucit, kardeşinin dilini yakmasını anlatır (<b>III</b>).</p><p>Sıra: II – I – IV – III. A’da icat anlatılmadan “What a useful idea!” denmiş olur; bu mantıksızdır. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Read the poster.</p><div class="fig"><svg viewBox="0 0 560 250" width="560" role="img" aria-label="Genç bilim insanları fuarı afişi">
-<rect x="4" y="4" width="552" height="242" rx="12" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#1d4ed8"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">SAMSUN YOUNG SCIENTISTS FAIR 2027</text>
-<text x="280.0" y="58" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Show your talent and change the world!</text>
-<text x="280.0" y="83" font-size="11" fill="#1e293b" text-anchor="middle">Date: 12–14 May   •   Place: Atakum Science Center</text>
-<text x="280.0" y="100" font-size="11" fill="#1e293b" text-anchor="middle">Categories: Robotics • Renewable Energy • Health • Space</text>
-<text x="280.0" y="117" font-size="11" fill="#1e293b" text-anchor="middle">Who can join? Students aged 12–15, in teams of 2 or 3</text>
-<text x="280.0" y="134" font-size="11" fill="#1e293b" text-anchor="middle">Deadline for projects: 20 April</text>
-<text x="280.0" y="151" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">Prizes:</text>
-<text x="280.0" y="168" font-size="11" fill="#1e293b" text-anchor="middle">1st place – a telescope</text>
-<text x="280.0" y="185" font-size="11" fill="#1e293b" text-anchor="middle">2nd place – a microscope</text>
-<text x="280.0" y="202" font-size="11" fill="#1e293b" text-anchor="middle">3rd place – a science kit</text>
-<text x="280.0" y="227" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">Free entry for all visitors!</text>
-</svg></div><p>Which of the following is <b>NOT</b> correct according to the poster?</p>`,
-  c: ["A 14-year-old student can take part in the fair with two friends.", "Visitors don’t have to pay to see the projects.", "Students can send their projects until the first day of the fair.", "The team in second place will win a microscope."],
-  a: "C",
-  s: `<p>Afişe göre:</p><ul><li>A: 12–15 yaş, 2 veya 3 kişilik takım → 14 yaşında bir öğrenci iki arkadaşıyla (3 kişi) katılabilir ✓</li><li>B: “Free entry for all visitors” → ziyaretçiler ücret ödemez ✓</li><li>C: Projeler için son tarih <b>20 April</b>; fuar 12 May’de başlıyor. Yani projeler fuarın ilk gününe kadar gönderilemez ✗</li><li>D: 2nd – a microscope ✓</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Defne wrote some definitions on cards to test her friends.</p><div class="fig"><svg viewBox="0 0 560 167" width="560" role="img" aria-label="Tanım kartları">
-<rect x="10.0" y="8" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
-<text x="22.0" y="26" font-size="11.0" font-weight="bold" fill="#2563eb">Card 1</text>
-<text x="22.0" y="42" font-size="11" fill="#1e293b">a person who studies stars, planets and</text>
-<text x="22.0" y="57" font-size="11" fill="#1e293b">other objects in space</text>
-<rect x="285.0" y="8" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
-<text x="297.0" y="26" font-size="11.0" font-weight="bold" fill="#16a34a">Card 2</text>
-<text x="297.0" y="42" font-size="11" fill="#1e293b">a thin glass container that is open at one</text>
-<text x="297.0" y="57" font-size="11" fill="#1e293b">end; it is used for mixing small amounts of</text>
-<text x="297.0" y="72" font-size="11" fill="#1e293b">liquids</text>
-<rect x="10.0" y="95" width="265.0" height="60" rx="12" fill="#ffffff" stroke="#9333ea" stroke-width="1.8"/>
-<text x="22.0" y="113" font-size="11.0" font-weight="bold" fill="#9333ea">Card 3</text>
-<text x="22.0" y="129" font-size="11" fill="#1e293b">a smart guess that scientists test by doing</text>
-<text x="22.0" y="144" font-size="11" fill="#1e293b">an experiment</text>
-<rect x="285.0" y="95" width="265.0" height="60" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="1.8"/>
-<text x="297.0" y="113" font-size="11.0" font-weight="bold" fill="#ea580c">Card 4</text>
-<text x="297.0" y="129" font-size="11" fill="#1e293b">to find something that already exists in</text>
-<text x="297.0" y="144" font-size="11" fill="#1e293b">nature for the first time</text>
-</svg></div><p>Which of the following words is <b>NOT</b> defined on the cards?</p>`,
-  c: ["invent", "astronomer", "hypothesis", "test tube"],
-  a: "A",
-  s: `<p>Kartları eşleştirelim:</p><ul><li>Card 1: yıldızları ve gezegenleri inceleyen kişi → <b>astronomer</b></li><li>Card 2: bir ucu açık ince cam kap → <b>test tube</b></li><li>Card 3: deneyle test edilen akıllıca tahmin → <b>hypothesis</b></li><li>Card 4: doğada zaten var olan bir şeyi ilk kez bulmak → <b>discover</b> (invent değil!)</li></ul><p>Tuzak: “invent” daha önce olmayan bir şeyi yapmaktır; Card 4’teki tanım “discover”a aittir. Bu yüzden “invent” kartlarda tanımlanmamıştır. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Here is the weekly plan of the school science club.</p><div class="fig"><svg viewBox="0 0 550 228" width="550" role="img" aria-label="Bilim kulübü haftalık plan tablosu">
-<text x="275.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Science Club – Weekly Plan</text>
-<rect x="10" y="38" width="530" height="26" fill="#0f766e"/>
-<text x="55.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Day</text>
-<text x="215.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Activity</text>
-<text x="385.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Place</text>
-<text x="490.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Teacher</text>
-<rect x="10" y="64" width="530" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="55.0" y="81.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Monday</text>
-<text x="215.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">Observing cells with a microscope</text>
-<text x="385.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">Lab 1</text>
-<text x="490.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">Mr. Demir</text>
-<rect x="10" y="90" width="530" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="55.0" y="107.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Tuesday</text>
-<text x="215.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">Building a simple robot</text>
-<text x="385.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">Robotics Room</text>
-<text x="490.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">Ms. Kaya</text>
-<rect x="10" y="116" width="530" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="55.0" y="133.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Wednesday</text>
-<text x="215.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">No club (teachers’ meeting)</text>
-<text x="385.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">—</text>
-<text x="490.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">—</text>
-<rect x="10" y="142" width="530" height="38" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="55.0" y="165.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Thursday</text>
-<text x="215.0" y="158.0" font-size="11" fill="#1e293b" text-anchor="middle">Watching the stars with a telescope</text>
-<text x="215.0" y="172.0" font-size="11" fill="#1e293b" text-anchor="middle">(19:00)</text>
-<text x="385.0" y="165.0" font-size="11" fill="#1e293b" text-anchor="middle">School garden</text>
-<text x="490.0" y="165.0" font-size="11" fill="#1e293b" text-anchor="middle">Mr. Demir</text>
-<rect x="10" y="180" width="530" height="38" fill="#ffffff" stroke="#94a3b8"/>
-<text x="55.0" y="203.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Friday</text>
-<text x="215.0" y="196.0" font-size="11" fill="#1e293b" text-anchor="middle">Mixing chemicals safely (goggles</text>
-<text x="215.0" y="210.0" font-size="11" fill="#1e293b" text-anchor="middle">needed!)</text>
-<text x="385.0" y="203.0" font-size="11" fill="#1e293b" text-anchor="middle">Lab 2</text>
-<text x="490.0" y="203.0" font-size="11" fill="#1e293b" text-anchor="middle">Ms. Aydın</text>
-<line x1="100" y1="38" x2="100" y2="218" stroke="#94a3b8"/>
-<line x1="330" y1="38" x2="330" y2="218" stroke="#94a3b8"/>
-<line x1="440" y1="38" x2="440" y2="218" stroke="#94a3b8"/>
-<rect x="10" y="38" width="530" height="180" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>According to the plan, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Both of Mr. Demir’s activities take place indoors.", "Students need goggles for the robotics activity.", "The club meets on every weekday.", "Students who want to learn about space should come on Thursday evening."],
-  a: "D",
-  s: `<p>Tabloyu kontrol edelim:</p><ul><li>A: Mr. Demir’in perşembe etkinliği <b>okul bahçesinde</b> (school garden), yani dışarıda ✗</li><li>B: Gözlük (goggles) <b>cuma</b> günkü kimyasal etkinliği için gerekli, robotik için değil ✗</li><li>C: Çarşamba kulüp yok ✗</li><li>D: Perşembe 19:00’da teleskopla yıldız gözlemi var → uzayla ilgilenenler perşembe akşamı gelmeli ✓</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Four students are talking about science.</p><div class="fig"><svg viewBox="0 0 560 182" width="560" role="img" aria-label="Bilim hakkında konuşma balonları">
-<rect x="10.0" y="8" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"/>
-<text x="22.0" y="26" font-size="11.0" font-weight="bold" fill="#2563eb">Arda</text>
-<text x="22.0" y="42" font-size="11" fill="#1e293b">Thanks to science, doctors can cure many</text>
-<text x="22.0" y="57" font-size="11" fill="#1e293b">diseases that killed millions of people in</text>
-<text x="22.0" y="72" font-size="11" fill="#1e293b">the past.</text>
-<rect x="285.0" y="8" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#dc2626" stroke-width="1.8"/>
-<text x="297.0" y="26" font-size="11.0" font-weight="bold" fill="#dc2626">Beren</text>
-<text x="297.0" y="42" font-size="11" fill="#1e293b">I think some inventions damage nature.</text>
-<text x="297.0" y="57" font-size="11" fill="#1e293b">Factories pollute the air and plastic fills</text>
-<text x="297.0" y="72" font-size="11" fill="#1e293b">the oceans.</text>
-<rect x="10.0" y="95" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#16a34a" stroke-width="1.8"/>
-<text x="22.0" y="113" font-size="11.0" font-weight="bold" fill="#16a34a">Cem</text>
-<text x="22.0" y="129" font-size="11" fill="#1e293b">Science makes our daily lives easier. Just</text>
-<text x="22.0" y="144" font-size="11" fill="#1e293b">think about washing machines and</text>
-<text x="22.0" y="159" font-size="11" fill="#1e293b">dishwashers!</text>
-<rect x="285.0" y="95" width="265.0" height="75" rx="12" fill="#ffffff" stroke="#9333ea" stroke-width="1.8"/>
-<text x="297.0" y="113" font-size="11.0" font-weight="bold" fill="#9333ea">Duru</text>
-<text x="297.0" y="129" font-size="11" fill="#1e293b">I want to become a geneticist in the</text>
-<text x="297.0" y="144" font-size="11" fill="#1e293b">future, so I read articles about DNA every</text>
-<text x="297.0" y="159" font-size="11" fill="#1e293b">day.</text>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the speech bubbles?</p>`,
-  c: ["Arda believes that medicine hasn’t improved much over the years.", "Beren gives examples of how some inventions harm the environment.", "Cem thinks that machines like washing machines make people lazy.", "Duru has already become a scientist who studies DNA."],
-  a: "B",
-  s: `<ul><li>A: Arda, bilim sayesinde eskiden milyonlarca insanı öldüren hastalıkların tedavi edilebildiğini söylüyor; yani tıp çok gelişmiş ✗</li><li>B: Beren, fabrikaların havayı kirlettiğini ve plastiğin okyanusları doldurduğunu söyleyerek icatların doğaya zararına <b>örnek veriyor</b> ✓</li><li>C: Cem bu makinelerin hayatı <b>kolaylaştırdığını</b> söylüyor, insanları tembelleştirdiğinden bahsetmiyor ✗</li><li>D: Duru gelecekte genetikçi olmak <b>istiyor</b> (“I want to become”); henüz olmadı ✗</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Which of the following sentences uses the verb <b>WRONGLY</b>?</p>`,
-  c: ["Alexander Graham Bell invented the telephone in 1876.", "Marie Curie discovered two new elements, polonium and radium.", "Isaac Newton invented gravity when he saw an apple falling from a tree.", "The Wright brothers invented the first successful airplane."],
-  a: "C",
-  s: `<p><b>Invent</b> = daha önce olmayan bir şeyi yapmak (icat); <b>discover</b> = doğada zaten var olanı ilk kez bulmak (keşif).</p><ul><li>A: Telefon daha önce yoktu → invented ✓</li><li>B: Elementler doğada zaten vardı → discovered ✓</li><li>C: Yer çekimi (gravity) Newton’dan önce de vardı; Newton onu icat etmedi, <b>keşfetti</b> (discovered). “Invented” yanlış kullanılmıştır ✗</li><li>D: Uçak daha önce yoktu → invented ✓</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Mr. Yılmaz was born in 1960. Look at the timeline.</p><div class="fig"><svg viewBox="0 0 560 130" width="560" role="img" aria-label="Bilim ve teknoloji zaman çizelgesi">
-<line x1="20" y1="60" x2="540" y2="60" stroke="#475569" stroke-width="3"/>
-<g fill="#ea580c"><circle cx="70" cy="60" r="7"/><circle cx="170" cy="60" r="7"/><circle cx="270" cy="60" r="7"/><circle cx="370" cy="60" r="7"/><circle cx="470" cy="60" r="7"/></g>
-<g font-size="11" text-anchor="middle" fill="#1e293b"><g font-weight="bold" fill="#c2410c"><text x="70" y="42">1957</text><text x="170" y="42">1969</text><text x="270" y="42">1973</text><text x="370" y="42">1989</text><text x="470" y="42">1998</text></g>
-<text x="70" y="84">first satellite</text><text x="70" y="99">in space</text><text x="170" y="84">first people</text><text x="170" y="99">on the Moon</text><text x="270" y="84">first call on a</text><text x="270" y="99">mobile phone</text><text x="370" y="84">World Wide Web</text><text x="370" y="99">is invented</text><text x="470" y="84">Google search</text><text x="470" y="99">engine starts</text></g>
-</svg></div><p>Which of the following could Mr. Yılmaz do when he was <b>a child under 12</b>?</p>`,
-  c: ["He could watch the first people walking on the Moon on TV.", "He could search for his homework topics on Google.", "He could call his friends on a mobile phone.", "He could watch the first satellite going into space on the news."],
-  a: "A",
-  s: `<p>Mr. Yılmaz 1960’ta doğdu; 12 yaşından küçükken yani <b>1960–1971</b> arasında yaşanan olaylara bakmalıyız.</p><ul><li>A: Aya ilk insan iniş <b>1969</b> → 9 yaşında, mümkün ✓</li><li>B: Google 1998 → 38 yaşında ✗</li><li>C: İlk cep telefonu görüşmesi 1973 → 13 yaşında; üstelik 1973’te cep telefonu herkesin kullanabileceği bir şey değildi ✗</li><li>D: İlk uydu 1957 → o daha <b>doğmamıştı</b> ✗</li></ul><p>Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Al-Jazari lived in the 12th century. He worked as an engineer in the palace of the Artuqids for about 25 years. In 1206, he finished a book which explains how to make about fifty machines. In the book, he drew a detailed picture of every machine and explained each step clearly. One of his most famous inventions is the elephant clock. It worked with water and showed the time with moving figures. Today, many people call him “the father of robotics” because some of his machines could move by themselves.</p><p>We can understand from the text that Al-Jazari ----.</p>`,
-  c: ["invented the first electric clock in history", "kept his ideas secret, so nobody could copy his machines", "worked in many different palaces during his life", "wanted other people to be able to build his machines too"],
-  a: "D",
-  s: `<p>Metinde El-Cezerî’nin kitabında <b>her makinenin ayrıntılı resmini çizdiği</b> ve <b>her adımı açıkça anlattığı</b> söyleniyor. Buradan, başkalarının da makinelerini yapabilmesini istediği çıkarılır ✓.</p><ul><li>A: Fil saati <b>suyla</b> çalışıyordu, elektrikle değil ✗</li><li>B: Fikirlerini gizlemek bir yana, kitap yazıp anlatmıştır ✗</li><li>C: Yaklaşık 25 yıl <b>Artukluların sarayında</b> çalıştı; birçok saraydan söz edilmiyor ✗</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Look at the safety rules in the school laboratory.</p><div class="fig"><svg viewBox="0 0 540 166" width="540" role="img" aria-label="Laboratuvar güvenlik kuralları afişi">
-<rect x="4" y="4" width="532" height="158" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#dc2626"/>
-<text x="270.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">LAB SAFETY RULES</text>
-<text x="24" y="58" font-size="11" fill="#1e293b">1. Wear goggles and gloves during experiments.</text>
-<text x="24" y="75" font-size="11" fill="#1e293b">2. Never taste or smell chemicals directly.</text>
-<text x="24" y="92" font-size="11" fill="#1e293b">3. Tie back long hair.</text>
-<text x="24" y="109" font-size="11" fill="#1e293b">4. Don’t run in the lab.</text>
-<text x="24" y="126" font-size="11" fill="#1e293b">5. Tell your teacher immediately if something breaks.</text>
-<text x="24" y="143" font-size="11" fill="#1e293b">6. Clean your table and wash your hands before you leave.</text>
-</svg></div><p>Which student followed <b>ALL</b> the rules?</p>`,
-  c: ["Ayla wore her goggles, but she touched the chemicals without gloves.", "Berk broke a test tube and told the teacher right away. Then, he cleaned his table and washed his hands.", "Can tied his long hair back and smelled the liquid closely to understand what it was.", "Dila finished her experiment first, so she ran out of the lab to catch the school bus."],
-  a: "B",
-  s: `<ul><li>A: Ayla eldiven giymeden kimyasallara dokundu → 1. kural ihlali ✗</li><li>B: Berk tüpü kırınca öğretmene <b>hemen</b> haber verdi (5. kural), masasını temizleyip ellerini yıkadı (6. kural) → kurallara uydu ✓</li><li>C: Can saçını topladı ama sıvıyı yakından kokladı → 2. kural ihlali ✗</li><li>D: Dila laboratuvardan koşarak çıktı (4. kural) ve masasını temizleyip elini yıkamadı (6. kural) ✗</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Yusuf is interviewing Dr. Ece Tan, a marine biologist, for the school magazine.</p><div class="fig"><svg viewBox="0 0 560 188" width="560" role="img" aria-label="Deniz biyoloğu ile röportaj">
-<rect x="8" y="8" width="44" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="30" y="38.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">1</text>
-<rect x="52" y="8" width="500" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="64" y="30" font-size="11" font-weight="bold" fill="#1e293b">Yusuf:</text>
-<text x="140" y="30" font-size="11" fill="#1e293b">What do you do in your job?</text>
-<text x="64" y="47" font-size="11" font-weight="bold" fill="#1e293b">Dr. Tan:</text>
-<text x="140" y="47" font-size="11" fill="#1e293b">----</text>
-<rect x="8" y="68" width="44" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="30" y="98.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
-<rect x="52" y="68" width="500" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="64" y="90" font-size="11" font-weight="bold" fill="#1e293b">Yusuf:</text>
-<text x="140" y="90" font-size="11" fill="#1e293b">What has been your biggest achievement so far?</text>
-<text x="64" y="107" font-size="11" font-weight="bold" fill="#1e293b">Dr. Tan:</text>
-<text x="140" y="107" font-size="11" fill="#1e293b">----</text>
-<rect x="8" y="128" width="44" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="30" y="158.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">3</text>
-<rect x="52" y="128" width="500" height="50" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="64" y="150" font-size="11" font-weight="bold" fill="#1e293b">Yusuf:</text>
-<text x="140" y="150" font-size="11" fill="#1e293b">What advice would you give to young people who love science?</text>
-<text x="64" y="167" font-size="11" font-weight="bold" fill="#1e293b">Dr. Tan:</text>
-<text x="140" y="167" font-size="11" fill="#1e293b">----</text>
-</svg></div><p>Which of the following is <b>NOT</b> one of Dr. Tan’s answers?</p>`,
-  c: ["I study the oceans and try to protect sea animals from pollution.", "Last year, my team found a new kind of jellyfish in the Black Sea.", "Scientists use special robots to make maps of the Moon.", "Never stop asking questions, and read as much as you can."],
-  a: "C",
-  s: `<ul><li>1. soru (Ne iş yapıyorsunuz?) → A: Okyanusları inceliyorum ve deniz canlılarını kirlilikten koruyorum.</li><li>2. soru (En büyük başarınız?) → B: Geçen yıl ekibim Karadeniz’de yeni bir denizanası türü buldu.</li><li>3. soru (Gençlere tavsiyeniz?) → D: Soru sormayı asla bırakmayın ve çok okuyun.</li></ul><p>C (Bilim insanları Ay’ın haritasını çıkarmak için robot kullanıyor) hiçbir soruya cevap değildir; üstelik bir deniz biyoloğunun işiyle de ilgili değildir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Zeynep sent an e-mail to her science teacher.</p><div class="fig"><svg viewBox="0 0 560 200" width="560" role="img" aria-label="Zeynep’in öğretmenine e-postası">
-<rect x="4" y="4" width="552" height="192" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#475569"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">To: Ms. Arslan   |   Subject: My Solar Energy Project</text>
-<text x="24" y="58" font-size="11" fill="#1e293b">Dear Ms. Arslan,</text>
-<text x="24" y="75" font-size="11" fill="#1e293b">I have finished the first part of my project on solar energy. I built a small solar</text>
-<text x="24" y="92" font-size="11" fill="#1e293b">oven with a pizza box and tested it on Monday. Unfortunately, it was cloudy that day,</text>
-<text x="24" y="109" font-size="11" fill="#1e293b">so the chocolate inside the oven didn’t melt. I’m planning to test it again on</text>
-<text x="24" y="126" font-size="11" fill="#1e293b">Saturday, because the weather forecast says it will be sunny. After that, I will write</text>
-<text x="24" y="143" font-size="11" fill="#1e293b">my report and prepare a poster for the science fair.</text>
-<text x="24" y="160" font-size="11" fill="#1e293b">Best wishes,</text>
-<text x="24" y="177" font-size="11" fill="#1e293b">Zeynep</text>
-</svg></div><p>What is Zeynep going to do <b>next</b>?</p>`,
-  c: ["test her solar oven on a sunny day", "prepare a poster for the science fair", "build a solar oven with a pizza box", "write a report about her results"],
-  a: "A",
-  s: `<p>Zeynep fırını zaten yaptı ve pazartesi denedi (C geçmişte kaldı ✗). Hava bulutlu olduğu için çikolata erimedi; bu yüzden fırını <b>cumartesi</b>, güneşli bir günde <b>tekrar deneyecek</b> ✓.</p><p>“<b>After that</b>” (ondan sonra) ifadesi rapor yazma ve poster hazırlamanın deneyden <b>sonra</b> yapılacağını gösterir (B ve D sonraki adımlar ✗). Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Melis planted four bean plants of the same size and kept them in different conditions for two weeks. Here are her results.</p><div class="fig"><svg viewBox="0 0 560 178" width="560" role="img" aria-label="Bitki deneyi sonuç tablosu">
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">My Bean Plant Experiment</text>
-<rect x="10" y="38" width="540" height="26" fill="#16a34a"/>
-<text x="45.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Plant</text>
-<text x="165.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Sunlight</text>
-<text x="310.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Water</text>
-<text x="460.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Height after 2 weeks</text>
-<rect x="10" y="64" width="540" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="45.0" y="81.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
-<text x="165.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">yes</text>
-<text x="310.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">every day</text>
-<text x="460.0" y="81.0" font-size="11" fill="#1e293b" text-anchor="middle">12 cm – green leaves</text>
-<rect x="10" y="90" width="540" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="45.0" y="107.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
-<text x="165.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">yes</text>
-<text x="310.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">no water</text>
-<text x="460.0" y="107.0" font-size="11" fill="#1e293b" text-anchor="middle">3 cm – dry leaves</text>
-<rect x="10" y="116" width="540" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="45.0" y="133.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
-<text x="165.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">no (in a dark cupboard)</text>
-<text x="310.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">every day</text>
-<text x="460.0" y="133.0" font-size="11" fill="#1e293b" text-anchor="middle">5 cm – yellow leaves</text>
-<rect x="10" y="142" width="540" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="45.0" y="159.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
-<text x="165.0" y="159.0" font-size="11" fill="#1e293b" text-anchor="middle">yes</text>
-<text x="310.0" y="159.0" font-size="11" fill="#1e293b" text-anchor="middle">once a week</text>
-<text x="460.0" y="159.0" font-size="11" fill="#1e293b" text-anchor="middle">8 cm – green leaves</text>
-<line x1="80" y1="38" x2="80" y2="168" stroke="#94a3b8"/>
-<line x1="250" y1="38" x2="250" y2="168" stroke="#94a3b8"/>
-<line x1="370" y1="38" x2="370" y2="168" stroke="#94a3b8"/>
-<rect x="10" y="38" width="540" height="130" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which conclusion can Melis draw from her results?</p>`,
-  c: ["Bean plants grow best in a dark place.", "Water is not necessary for bean plants to grow.", "Plant C grew more than Plant D because it got more water.", "Bean plants need both sunlight and enough water to grow well."],
-  a: "D",
-  s: `<p>En uzun ve sağlıklı bitki, hem güneş ışığı hem de her gün su alan <b>A</b> (12 cm). Işık almayan C sararmış (5 cm), su almayan B kurumuş (3 cm), az su alan D daha kısa kalmış (8 cm). Sonuç: İyi büyümek için hem ışık hem yeterli su gerekir ✓.</p><ul><li>A: Karanlıktaki C sarardı ✗</li><li>B: Su almayan B kurudu ✗</li><li>C: Tuzak! C daha çok su aldı ama D’den (8 cm) <b>kısa</b> kaldı (5 cm) ✗</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Students heated some water in a beaker and measured its temperature every two minutes.</p><div class="fig"><svg viewBox="0 0 560 278" width="560" role="img" aria-label="Suyun ısıtılması çizgi grafiği">
-<text x="280" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Heating Water in a Beaker</text>
-<line x1="60" y1="230" x2="530" y2="230" stroke="#e2e8f0"/><text x="52" y="234" font-size="11" fill="#475569" text-anchor="end">0 °C</text>
-<line x1="60" y1="198" x2="530" y2="198" stroke="#e2e8f0"/><text x="52" y="202" font-size="11" fill="#475569" text-anchor="end">20 °C</text>
-<line x1="60" y1="166" x2="530" y2="166" stroke="#e2e8f0"/><text x="52" y="170" font-size="11" fill="#475569" text-anchor="end">40 °C</text>
-<line x1="60" y1="134" x2="530" y2="134" stroke="#e2e8f0"/><text x="52" y="138" font-size="11" fill="#475569" text-anchor="end">60 °C</text>
-<line x1="60" y1="102" x2="530" y2="102" stroke="#e2e8f0"/><text x="52" y="106" font-size="11" fill="#475569" text-anchor="end">80 °C</text>
-<line x1="60" y1="70" x2="530" y2="70" stroke="#e2e8f0"/><text x="52" y="74" font-size="11" fill="#475569" text-anchor="end">100 °C</text>
-<line x1="60" y1="38" x2="530" y2="38" stroke="#e2e8f0"/><text x="52" y="42" font-size="11" fill="#475569" text-anchor="end">120 °C</text>
-<text x="60" y="246" font-size="11" fill="#1e293b" text-anchor="middle">0</text>
-<text x="152" y="246" font-size="11" fill="#1e293b" text-anchor="middle">2</text>
-<text x="244" y="246" font-size="11" fill="#1e293b" text-anchor="middle">4</text>
-<text x="336" y="246" font-size="11" fill="#1e293b" text-anchor="middle">6</text>
-<text x="428" y="246" font-size="11" fill="#1e293b" text-anchor="middle">8</text>
-<text x="520" y="246" font-size="11" fill="#1e293b" text-anchor="middle">10</text>
-<text x="300" y="266" font-size="11" fill="#475569" text-anchor="middle">time (minutes)</text>
-<polyline points="60,198 152,158 244,118 336,70 428,70 520,70" fill="none" stroke="#dc2626" stroke-width="3"/>
-<circle cx="60" cy="198" r="4.5" fill="#dc2626"/>
-<circle cx="152" cy="158" r="4.5" fill="#dc2626"/>
-<circle cx="244" cy="118" r="4.5" fill="#dc2626"/>
-<circle cx="336" cy="70" r="4.5" fill="#dc2626"/>
-<circle cx="428" cy="70" r="4.5" fill="#dc2626"/>
-<circle cx="520" cy="70" r="4.5" fill="#dc2626"/>
-<line x1="60" y1="36" x2="60" y2="230" stroke="#1e293b"/><line x1="60" y1="230" x2="530" y2="230" stroke="#1e293b"/>
-</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["The water started to boil after two minutes.", "The temperature didn’t change after the sixth minute.", "The water was 70 °C at the beginning of the experiment.", "The temperature rose by 50 degrees in the first two minutes."],
-  a: "B",
-  s: `<p>Grafikteki değerler: 0. dk 20 °C, 2. dk 45 °C, 4. dk 70 °C, 6. dk 100 °C, 8. ve 10. dk 100 °C.</p><ul><li>A: 2. dakikada su 45 °C; kaynama (100 °C) <b>6. dakikada</b> ✗</li><li>B: 6. dakikadan sonra sıcaklık hep 100 °C → değişmedi ✓</li><li>C: Başlangıçta 20 °C ✗</li><li>D: İlk iki dakikada 20 → 45 = <b>25</b> derece arttı; 50 derece artış ilk <b>dört</b> dakikadadır ✗</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>For years, doctors couldn’t understand why some patients had the same strange symptoms. In the end, a team of scientists <u>carried out</u> hundreds of tests in their laboratory and finally found the reason for the disease.</p><p>Which word is closest in meaning to the underlined phrase?</p>`,
-  c: ["avoided", "explained", "conducted", "invented"],
-  a: "C",
-  s: `<p>“<b>Carry out</b> a test / an experiment” = test ya da deney <b>yapmak, gerçekleştirmek</b>. Eş anlamlısı <b>conduct</b>’tır (conducted).</p><p>Avoided = kaçınmak; explained = açıklamak; invented = icat etmek. Bilim insanları testleri icat etmedi, yaptılar. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>She was born in Warsaw in 1867. At that time, women weren’t allowed to study at the university in Warsaw, so she moved to Paris to study physics and mathematics. There, she worked together with her husband, Pierre, and they discovered two new elements, polonium and radium. In 1903, she became the first woman to win a Nobel Prize. Eight years later, she won a second Nobel Prize, this time in chemistry. She is still the only person in history who has won Nobel Prizes in two different sciences.</p><p>Which of the following is the best title for the text?</p>`,
-  c: ["A Scientist Who Invented the X-ray Machine", "Marie Curie: A Woman Who Broke Records in Science", "The Best University in Warsaw", "How Pierre Curie Became a Famous Physicist"],
-  a: "B",
-  s: `<p>Metin Marie Curie’nin hayatını ve <b>rekor kıran başarılarını</b> anlatıyor: Nobel kazanan ilk kadın, iki farklı bilim dalında Nobel alan tek kişi ✓.</p><ul><li>A: X ışınlarını Röntgen keşfetti; metinde X-ray makinesi yok ✗</li><li>C: Metinde Varşova’daki üniversitede kadınların okuyamadığı söyleniyor; konu üniversite değil ✗</li><li>D: Pierre yalnızca eşi olarak geçiyor; metin onun hakkında değil ✗</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Ali:</b> Which invention do you think changed the world the most?<br><b>Mert:</b> (I) ----<br><b>Ali:</b> Really? Why do you think so?<br><b>Mert:</b> (II) ----<br><b>Ali:</b> You’re right. Before that, they had to use candles and oil lamps.</p><p>Which of the following best completes the blanks (I) and (II)?</p>`,
-  c: ["I don’t know who invented it. / Because it is very old.", "In my opinion, it’s the internet. / Because we can chat with friends all over the world.", "I think it’s the light bulb. / Because people can work and study after dark easily.", "Edison was born in 1847. / Because he had more than a thousand inventions."],
-  a: "C",
-  s: `<p>Ali’nin son cümlesi anahtar: “Before that, they had to use <b>candles and oil lamps</b>.” (Ondan önce mum ve gaz lambası kullanmak zorundaydılar.) Bu, konuşulan icadın <b>ampul</b> olduğunu gösterir ✓.</p><ul><li>A: İcat adı verilmiyor; Ali’nin “Why?” sorusu anlamsız kalır ✗</li><li>B: Güçlü çeldirici; diyaloğun ilk kısmına uyar ama mum ve gaz lambasıyla ilgisi yoktur ✗</li><li>D: Ali’nin sorusuna (hangi icat?) cevap değildir ✗</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Look at the experiment card.</p><div class="fig"><svg viewBox="0 0 560 225" width="560" role="img" aria-label="Bardakta gökkuşağı deney kartı">
-<rect x="4" y="4" width="552" height="217" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#7c3aed"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Rainbow in a Glass</text>
-<text x="24" y="58" font-size="11" font-weight="bold" fill="#7c3aed">Time: about 20 minutes</text>
-<text x="24" y="75" font-size="11" fill="#1e293b">You need: 4 small glasses, warm water, sugar, food colouring (red, yellow, green,</text>
-<text x="24" y="92" font-size="11" fill="#1e293b">blue), a spoon, a dropper, a tall clear glass</text>
-<text x="24" y="117" font-size="11" fill="#1e293b">1. Put 1, 2, 3 and 4 spoons of sugar into the four small glasses.</text>
-<text x="24" y="134" font-size="11" fill="#1e293b">2. Add the same amount of warm water to each glass and stir.</text>
-<text x="24" y="151" font-size="11" fill="#1e293b">3. Add a different food colouring to each glass.</text>
-<text x="24" y="168" font-size="11" fill="#1e293b">4. With the dropper, slowly add the liquids into the tall glass, starting with the one</text>
-<text x="24" y="185" font-size="11" fill="#1e293b">with the most sugar.</text>
-<text x="24" y="202" font-size="11" fill="#1e293b">5. Look at the colourful layers!</text>
-</svg></div><p>Which of the following questions can <b>NOT</b> be answered by reading the card?</p>`,
-  c: ["How many small glasses do you need for the experiment?", "What do you do after you stir the sugar and water?", "How long does the experiment take?", "Why do the colours stay in separate layers?"],
-  a: "D",
-  s: `<ul><li>A: 4 small glasses ✓</li><li>B: Karıştırdıktan sonra her bardağa farklı gıda boyası eklenir (3. adım) ✓</li><li>C: Time: about 20 minutes ✓</li><li>D: Kart renklerin <b>neden</b> ayrı katmanlarda kaldığını (şeker miktarının farklı olması / yoğunluk) açıklamıyor; sadece “Look at the colourful layers!” diyor ✗</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Below, there are parts of four different conversations.</p><div class="fig"><svg viewBox="0 0 560 248" width="560" role="img" aria-label="Dört farklı konuşma">
-<rect x="8" y="8" width="44" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="30" y="38.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">I.</text>
-<rect x="52" y="8" width="500" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="64" y="30" font-size="11" font-weight="bold" fill="#1e293b">Ada:</text>
-<text x="140" y="30" font-size="11" fill="#1e293b">Have you seen my goggles? I can’t find them.</text>
-<text x="64" y="47" font-size="11" font-weight="bold" fill="#1e293b">Bora:</text>
-<text x="140" y="47" font-size="11" fill="#1e293b">Yes, they’re next to the microscope.</text>
-<rect x="8" y="68" width="44" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="30" y="98.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">II.</text>
-<rect x="52" y="68" width="500" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="64" y="90" font-size="11" font-weight="bold" fill="#1e293b">Cem:</text>
-<text x="140" y="90" font-size="11" fill="#1e293b">In my opinion, the vaccine is the greatest invention ever.</text>
-<text x="64" y="107" font-size="11" font-weight="bold" fill="#1e293b">Deniz:</text>
-<text x="140" y="107" font-size="11" fill="#1e293b">Exactly! It has saved millions of lives.</text>
-<rect x="8" y="128" width="44" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="30" y="158.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">III.</text>
-<rect x="52" y="128" width="500" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="64" y="150" font-size="11" font-weight="bold" fill="#1e293b">Elif:</text>
-<text x="140" y="150" font-size="11" fill="#1e293b">When was the first computer made?</text>
-<text x="64" y="167" font-size="11" font-weight="bold" fill="#1e293b">Fatih:</text>
-<text x="140" y="167" font-size="11" fill="#1e293b">I’m not sure. Let’s look it up.</text>
-<rect x="8" y="188" width="44" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="30" y="218.0" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">IV.</text>
-<rect x="52" y="188" width="500" height="50" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
-<text x="64" y="210" font-size="11" font-weight="bold" fill="#1e293b">Gül:</text>
-<text x="140" y="210" font-size="11" fill="#1e293b">I think robots will take our jobs in the future.</text>
-<text x="64" y="227" font-size="11" font-weight="bold" fill="#1e293b">Hakan:</text>
-<text x="140" y="227" font-size="11" fill="#1e293b">I don’t agree. They will only help us.</text>
-</svg></div><p>In which conversation do the speakers <b>share the same opinion</b> about an invention?</p>`,
-  c: ["I", "II", "III", "IV"],
-  a: "B",
-  s: `<ul><li>I: Gözlüğün yeri soruluyor; görüş yok ✗</li><li>II: Cem aşının en büyük icat olduğunu düşünüyor, Deniz “<b>Exactly!</b>” diyerek katılıyor ve gerekçe ekliyor ✓</li><li>III: Bilgi sorusu; Fatih bilmiyor ✗</li><li>IV: İki kişi görüş bildiriyor ama Hakan “<b>I don’t agree</b>” diyerek katılmıyor ✗ (en güçlü çeldirici)</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Here are the four finalists of a young inventors competition.</p><div class="fig"><svg viewBox="0 0 580 226" width="560" role="img" aria-label="Genç mucitler yarışması finalistleri tablosu">
-<text x="290.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Young Inventors – Finalists</text>
-<rect x="10" y="38" width="560" height="26" fill="#9333ea"/>
-<text x="55.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Finalist</text>
-<text x="215.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Problem</text>
-<text x="450.0" y="55.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Invention</text>
-<rect x="10" y="64" width="560" height="38" fill="#ffffff" stroke="#94a3b8"/>
-<text x="55.0" y="87.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Lara (13)</text>
-<text x="215.0" y="80.0" font-size="11" fill="#1e293b" text-anchor="middle">Her grandmother often forgets to take</text>
-<text x="215.0" y="94.0" font-size="11" fill="#1e293b" text-anchor="middle">her medicine.</text>
-<text x="450.0" y="80.0" font-size="11" fill="#1e293b" text-anchor="middle">a pill box that beeps and sends</text>
-<text x="450.0" y="94.0" font-size="11" fill="#1e293b" text-anchor="middle">a message to the family’s phones</text>
-<rect x="10" y="102" width="560" height="38" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="55.0" y="125.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Kerem (14)</text>
-<text x="215.0" y="118.0" font-size="11" fill="#1e293b" text-anchor="middle">His school bag is very heavy and the</text>
-<text x="215.0" y="132.0" font-size="11" fill="#1e293b" text-anchor="middle">streets are dark in winter.</text>
-<text x="450.0" y="118.0" font-size="11" fill="#1e293b" text-anchor="middle">a school bag with wheels and a</text>
-<text x="450.0" y="132.0" font-size="11" fill="#1e293b" text-anchor="middle">light that turns on in the dark</text>
-<rect x="10" y="140" width="560" height="38" fill="#ffffff" stroke="#94a3b8"/>
-<text x="55.0" y="163.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Ozan (14)</text>
-<text x="215.0" y="156.0" font-size="11" fill="#1e293b" text-anchor="middle">People waste a lot of water while</text>
-<text x="215.0" y="170.0" font-size="11" fill="#1e293b" text-anchor="middle">brushing their teeth.</text>
-<text x="450.0" y="156.0" font-size="11" fill="#1e293b" text-anchor="middle">a tap that turns off by itself after ten</text>
-<text x="450.0" y="170.0" font-size="11" fill="#1e293b" text-anchor="middle">seconds</text>
-<rect x="10" y="178" width="560" height="38" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="55.0" y="201.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Ela (12)</text>
-<text x="215.0" y="194.0" font-size="11" fill="#1e293b" text-anchor="middle">Blind people find it difficult to walk</text>
-<text x="215.0" y="208.0" font-size="11" fill="#1e293b" text-anchor="middle">safely in the streets.</text>
-<text x="450.0" y="194.0" font-size="11" fill="#1e293b" text-anchor="middle">a smart stick that vibrates near</text>
-<text x="450.0" y="208.0" font-size="11" fill="#1e293b" text-anchor="middle">obstacles</text>
-<line x1="100" y1="38" x2="100" y2="216" stroke="#94a3b8"/>
-<line x1="330" y1="38" x2="330" y2="216" stroke="#94a3b8"/>
-<rect x="10" y="38" width="560" height="178" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Whose invention helps to <b>save natural resources</b>?</p>`,
-  c: ["Lara’s", "Kerem’s", "Ozan’s", "Ela’s"],
-  a: "C",
-  s: `<p>Doğal kaynakları korumak (save natural resources) = su, enerji gibi kaynakları israf etmemek.</p><p><b>Ozan</b>’ın musluğu on saniye sonra kendiliğinden kapanarak diş fırçalarken <b>su israfını</b> önler ✓.</p><p>Lara’nın icadı sağlıkla (ilaç hatırlatma), Kerem’inki taşıma ve güvenlikle, Ela’nınki görme engellilerin güvenliğiyle ilgilidir. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Hulusi Behçet was born in İstanbul in 1889. He graduated from Gülhane Military Medical School in 1910 and became a skin doctor. He worked in several hospitals and also taught at İstanbul University. In 1937, he described a disease that causes painful sores in the mouth and problems in the eyes. Today, this disease is known as “Behçet’s disease” all around the world. He was the first Turkish scientist to have a disease named after him. He died in 1948.</p><p>Which of the following is <b>NOT</b> true according to the text?</p>`,
-  c: ["He finished medical school when he was about 21 years old.", "The disease he described affects the mouth and the eyes.", "He was born in the 19th century.", "He named the disease after one of his teachers."],
-  a: "D",
-  s: `<ul><li>A: 1889’da doğdu, 1910’da mezun oldu → 1910 − 1889 = 21 ✓</li><li>B: Ağızda yaralar ve gözlerde sorunlar ✓</li><li>C: 1889 yılı <b>19. yüzyıldır</b> (1801–1900) ✓</li><li>D: Hastalık <b>onun kendi adıyla</b> anılır (“named after him”); bir öğretmeninin adı verilmedi ✗</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Thomas Edison was a great (1) ----. He had more than 1,000 patents in his life. His most famous (2) ---- is the light bulb. It was a big (3) ---- for humanity because people could easily work and study at night.</p><p>Which of the following best completes the blanks?</p>`,
-  c: ["discovery / invention / scientist", "inventor / invention / achievement", "invention / inventor / achieve", "inventor / invent / achieving"],
-  a: "B",
-  s: `<ul><li>(1) “a great ----” → bir <b>kişi</b> gerekli: <b>inventor</b> (mucit)</li><li>(2) “his most famous ---- is the light bulb” → bir <b>şey</b> (isim) gerekli: <b>invention</b> (icat)</li><li>(3) “a big ---- for humanity” → isim gerekli: <b>achievement</b> (başarı)</li></ul><p>A’da “a great discovery” kişi değil; ampul de keşif değil icattır. C ve D’de “achieve / invent / achieving” fiil biçimleridir; “a big” ve “his most famous” sonrasında isim gelmelidir. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Burak wrote a report about his experiment.</p><div class="fig"><svg viewBox="0 0 560 234" width="560" role="img" aria-label="Burak’ın deney raporu">
-<rect x="4" y="4" width="552" height="226" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="552" height="34" rx="10" fill="#7c3aed"/>
-<text x="280.0" y="26" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">My Experiment Report – Burak</text>
-<text x="24" y="58" font-size="11" font-weight="bold" fill="#7c3aed">Question:</text>
-<text x="24" y="75" font-size="11" fill="#1e293b">Does salt water freeze faster than tap water?</text>
-<text x="24" y="92" font-size="11" font-weight="bold" fill="#7c3aed">Hypothesis:</text>
-<text x="24" y="109" font-size="11" fill="#1e293b">Salt water will freeze faster than tap water.</text>
-<text x="24" y="126" font-size="11" font-weight="bold" fill="#7c3aed">Method:</text>
-<text x="24" y="143" font-size="11" fill="#1e293b">I put two cups in the freezer: one with 100 ml tap water and one with 100 ml water and</text>
-<text x="24" y="160" font-size="11" fill="#1e293b">two spoons of salt. I checked them every 30 minutes.</text>
-<text x="24" y="177" font-size="11" font-weight="bold" fill="#7c3aed">Observation:</text>
-<text x="24" y="194" font-size="11" fill="#1e293b">After 2 hours, the tap water was ice, but the salt water was still liquid. After 4</text>
-<text x="24" y="211" font-size="11" fill="#1e293b">hours, the salt water was only partly frozen.</text>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the report?</p>`,
-  c: ["The experiment proved that Burak’s hypothesis was right.", "Burak put different amounts of water into the two cups.", "The results showed that Burak’s hypothesis was wrong.", "The salt water froze completely in 30 minutes."],
-  a: "C",
-  s: `<p>Burak’ın hipotezi: Tuzlu su musluk suyundan <b>daha hızlı</b> donar. Gözlem: 2 saat sonra musluk suyu buz olmuş, tuzlu su hâlâ sıvı; 4 saat sonra bile tamamen donmamış. Yani sonuç hipotezin tersi → hipotez <b>yanlış</b> çıktı ✓.</p><ul><li>A: Hipotez doğrulanmadı ✗</li><li>B: İki bardakta da <b>100 ml</b> su var ✗</li><li>D: 30 dakika sadece kontrol aralığıdır; tuzlu su 4 saatte bile tamamen donmadı ✗</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Look at the information about two famous Turkish scientists.</p><div class="fig"><svg viewBox="0 0 580 188" width="560" role="img" aria-label="İki Türk bilim insanını karşılaştıran tablo">
-<rect x="10" y="10" width="560" height="26" fill="#b91c1c"/>
-<text x="60.0" y="27.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle"></text>
-<text x="220.0" y="27.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Aziz Sancar</text>
-<text x="450.0" y="27.0" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">Gazi Yaşargil</text>
-<rect x="10" y="36" width="560" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="60.0" y="53.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Born</text>
-<text x="220.0" y="53.0" font-size="11" fill="#1e293b" text-anchor="middle">1946, Savur (Mardin)</text>
-<text x="450.0" y="53.0" font-size="11" fill="#1e293b" text-anchor="middle">1925, Lice (Diyarbakır)</text>
-<rect x="10" y="62" width="560" height="38" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="60.0" y="85.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Education</text>
-<text x="220.0" y="85.0" font-size="11" fill="#1e293b" text-anchor="middle">medicine – İstanbul University</text>
-<text x="450.0" y="78.0" font-size="11" fill="#1e293b" text-anchor="middle">medicine – universities in Germany and</text>
-<text x="450.0" y="92.0" font-size="11" fill="#1e293b" text-anchor="middle">Switzerland</text>
-<rect x="10" y="100" width="560" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="60.0" y="117.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Field</text>
-<text x="220.0" y="117.0" font-size="11" fill="#1e293b" text-anchor="middle">DNA repair (biochemistry)</text>
-<text x="450.0" y="117.0" font-size="11" fill="#1e293b" text-anchor="middle">brain surgery (microsurgery)</text>
-<rect x="10" y="126" width="560" height="26" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="60.0" y="143.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Worked in</text>
-<text x="220.0" y="143.0" font-size="11" fill="#1e293b" text-anchor="middle">the USA</text>
-<text x="450.0" y="143.0" font-size="11" fill="#1e293b" text-anchor="middle">Switzerland and the USA</text>
-<rect x="10" y="152" width="560" height="26" fill="#ffffff" stroke="#94a3b8"/>
-<text x="60.0" y="169.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Award</text>
-<text x="220.0" y="169.0" font-size="11" fill="#1e293b" text-anchor="middle">Nobel Prize in Chemistry (2015)</text>
-<text x="450.0" y="169.0" font-size="11" fill="#1e293b" text-anchor="middle">“Neurosurgeon of the Century” (1999)</text>
-<line x1="110" y1="10" x2="110" y2="178" stroke="#94a3b8"/>
-<line x1="330" y1="10" x2="330" y2="178" stroke="#94a3b8"/>
-<rect x="10" y="10" width="560" height="168" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>What do the two scientists have <b>in common</b>?</p>`,
-  c: ["Both of them studied medicine and worked in the USA.", "Both of them were born in the same city.", "Both of them won a Nobel Prize.", "Both of them studied at universities in Türkiye."],
-  a: "A",
-  s: `<p>Tabloya göre ikisi de <b>tıp</b> (medicine) okumuş ve ikisi de <b>ABD’de</b> çalışmıştır ✓.</p><ul><li>B: Sancar Mardin’de, Yaşargil Diyarbakır’da doğdu ✗</li><li>C: Nobel’i yalnızca Aziz Sancar kazandı ✗</li><li>D: Yaşargil Almanya ve İsviçre’de okudu ✗</li></ul><p>Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Elif:</b> We watched a documentary about future technology in science class today.<br><b>Mert:</b> Oh, I missed it. What was it about?<br><b>Elif:</b> Inventions that will change our lives. So, what do you think will be the most important invention in the next fifty years?<br><b>Mert:</b> ----</p><p>Which of the following best completes the conversation?</p>`,
-  c: ["The telephone was invented by Alexander Graham Bell in 1876.", "Yes, I do. Scientists work really hard in their laboratories.", "I watched a documentary about inventions last week, too.", "I believe it will be robots that can do surgery without doctors."],
-  a: "D",
-  s: `<p>Elif <b>gelecek</b> elli yıldaki en önemli icadı ve Mert’in <b>görüşünü</b> soruyor (“what do you think… will be”). Uygun cevap gelecekle ilgili bir görüş olmalı: “I believe it will be robots…” ✓</p><ul><li>A: Geçmişteki bir icattan bahsediyor ✗</li><li>B: “What” sorusuna “Yes, I do” ile cevap verilmez ✗</li><li>C: Mert belgeseli kaçırdığını söylemişti; ayrıca soruya cevap değil ✗</li></ul><p>Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Read the text about a famous inventor.</p><div class="fig"><svg viewBox="0 0 540 258" width="540" role="img" aria-label="Louis Braille biyografisi">
-<rect x="4" y="4" width="532" height="250" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#7c3aed"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Louis Braille</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Louis Braille was born on 4 January 1809 in a small village near Paris, France.</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">When he was three years old, he hurt his eye with a sharp tool in his father’s</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">workshop. Later, the other eye became ill too, and he was completely blind by the</text>
-<text x="22" y="98" font-size="11" fill="#1e293b">age of five.</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">At the age of ten, he went to a special school for blind children in Paris. The</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">school had only a few books for blind students, and they were very big and heavy.</text>
-<text x="22" y="158" font-size="11" fill="#1e293b">There, he learned about a system of raised dots which soldiers used to read</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">messages at night. He made the system simpler, and by the age of fifteen he had</text>
-<text x="22" y="190" font-size="11" fill="#1e293b">created his own alphabet of six dots. Today, millions of blind people around the</text>
-<text x="22" y="206" font-size="11" fill="#1e293b">world read and write with it.</text>
-<text x="22" y="228" font-size="11" fill="#1e293b">Braille later became a teacher at the same school. He died on 6 January 1852.</text>
-</svg></div><p>Which of the following questions is <b>NOT</b> answered in the text?</p>`,
-  c: ["Who taught him to read when he was a little boy?", "How did he lose his sight?", "How old was he when he died?", "Where did he study when he was ten?"],
-  a: "A",
-  s: `<p>Metinde <b>cevabı olmayan</b> soruyu arıyoruz.</p><p>B: “he hurt his eye with a sharp tool in his father’s workshop … the other eye became ill too” → nasıl kör olduğu anlatılmış ✓. C: 4 Ocak 1809’da doğmuş, 6 Ocak 1852’de ölmüş → doğum gününden 2 gün sonra ölmüş, yani <b>43</b> yaşında; hesapla bulunur ✓. D: “At the age of ten, he went to a special school for blind children in Paris” ✓.</p><p>A: Küçükken ona okumayı <b>kimin öğrettiği</b> metinde hiç geçmiyor. Tuzak: “became a teacher” onun öğretmen olduğunu söyler, öğretmenini değil. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Melis prepared the table below for her presentation.</p><div class="fig"><svg viewBox="0 0 540 174" width="540" role="img" aria-label="Mucitler tablosu">
-<text x="270.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Inventors and Their Inventions</text>
-<rect x="10" y="38" width="520" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Inventor</text>
-<text x="198" y="55" font-size="11" font-weight="bold" fill="#ffffff">Invention (Year)</text>
-<text x="388" y="55" font-size="11" font-weight="bold" fill="#ffffff">Born – Died</text>
-<rect x="10" y="64" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">Alexander Graham Bell</text>
-<text x="198" y="82" font-size="11" fill="#1e293b">telephone (1876)</text>
-<text x="388" y="82" font-size="11" fill="#1e293b">1847 – 1922</text>
-<rect x="10" y="89" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">Karl Benz</text>
-<text x="198" y="107" font-size="11" fill="#1e293b">motor car (1886)</text>
-<text x="388" y="107" font-size="11" fill="#1e293b">1844 – 1929</text>
-<rect x="10" y="114" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">Wilbur Wright</text>
-<text x="198" y="132" font-size="11" fill="#1e293b">airplane (1903)</text>
-<text x="388" y="132" font-size="11" fill="#1e293b">1867 – 1912</text>
-<rect x="10" y="139" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">John Logie Baird</text>
-<text x="198" y="157" font-size="11" fill="#1e293b">television (1926)</text>
-<text x="388" y="157" font-size="11" fill="#1e293b">1888 – 1946</text>
-<line x1="190" y1="38" x2="190" y2="164" stroke="#94a3b8"/>
-<line x1="380" y1="38" x2="380" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="520" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>According to the table, which of the following was <b>NOT</b> possible?</p>`,
-  c: ["Alexander Graham Bell read about the first airplane flight.", "Karl Benz watched a programme on television.", "Wilbur Wright watched a programme on television.", "John Logie Baird talked to his friends on the telephone."],
-  a: "C",
-  s: `<p>Bir kişi ancak <b>hayattayken</b> icat edilen bir şeyi kullanabilir:</p><p>A: uçak 1903, Bell 1922’de öldü → mümkün. B: televizyon 1926, Benz <b>1929</b>’da öldü → 3 yıl farkla mümkün (tuzak: “eski mucit, televizyonu göremez” diye düşünmek). D: telefon 1876, Baird 1888’de doğdu → mümkün.</p><p>C: Wilbur Wright <b>1912</b>’de öldü, televizyon <b>1926</b>’da icat edildi → mümkün değil. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Some students are chatting about their science homework.</p><div class="fig"><svg viewBox="0 0 540 350" width="540" role="img" aria-label="Bilim ödevi mesajlaşması">
-<rect x="4" y="4" width="532" height="342" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="32" rx="12" fill="#0f766e"/>
-<text x="270.0" y="25" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Science Homework 8-D</text>
-<rect x="20" y="46" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="62" font-size="11" font-weight="bold" fill="#2563eb">Nil</text>
-<text x="30" y="78" font-size="11" fill="#1e293b">Hi everyone! Have you finished the balloon experiment with vinegar</text>
-<text x="30" y="93" font-size="11" fill="#1e293b">and baking soda?</text>
-<rect x="20" y="106" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="122" font-size="11" font-weight="bold" fill="#dc2626">Arda</text>
-<text x="30" y="138" font-size="11" fill="#1e293b">Yes, I finished it yesterday, but I haven’t sent my report to Ms.</text>
-<text x="30" y="153" font-size="11" fill="#1e293b">Kaya yet.</text>
-<rect x="20" y="166" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="182" font-size="11" font-weight="bold" fill="#9333ea">Sude</text>
-<text x="30" y="198" font-size="11" fill="#1e293b">Not yet. Efe and I are in the lab now. We are pouring vinegar into</text>
-<text x="30" y="213" font-size="11" fill="#1e293b">the bottles at the moment.</text>
-<rect x="20" y="226" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="242" font-size="11" font-weight="bold" fill="#d97706">Efe</text>
-<text x="30" y="258" font-size="11" fill="#1e293b">That’s right, but I’m only helping Sude. I did my own experiment</text>
-<text x="30" y="273" font-size="11" fill="#1e293b">last Friday.</text>
-<rect x="110" y="286" width="410" height="52" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="120" y="302" font-size="11" font-weight="bold" fill="#0f766e">Can</text>
-<text x="120" y="318" font-size="11" fill="#1e293b">I’ve been ill since Monday, so I haven’t started yet. I’ll do it</text>
-<text x="120" y="333" font-size="11" fill="#1e293b">next week.</text>
-</svg></div><p>According to the messages, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Arda has already sent his report to his teacher.", "Efe has already done his own experiment.", "Can started the experiment last Monday.", "Sude has finished her experiment."],
-  a: "B",
-  s: `<p>Efe: “I’m only helping Sude. I <b>did my own experiment last Friday</b>.” → Efe kendi deneyini zaten yapmış, şu an sadece Sude’ye yardım ediyor ✓.</p><p>A: Arda raporu “haven’t sent … yet” → henüz göndermedi ✗. C: Can “I’ve been ill since Monday … haven’t started yet” → Pazartesiden beri hasta, başlamadı ✗ (tuzak: “since Monday”). D: Sude “Not yet … we are pouring vinegar … at the moment” → deneyi hâlâ sürüyor ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>40 students in class 8-B answered the question “Which branch of science would you like to study in the future?”. Each student chose only one answer.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Bilim dalı anketi">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Which branch of science would you like to study?</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="220.9" x2="520" y2="220.9" stroke="#e2e8f0"/>
-<text x="54" y="224.85714285714286" font-size="11" fill="#1e293b" text-anchor="end">2</text>
-<line x1="60" y1="191.7" x2="520" y2="191.7" stroke="#e2e8f0"/>
-<text x="54" y="195.71428571428572" font-size="11" fill="#1e293b" text-anchor="end">4</text>
-<line x1="60" y1="162.6" x2="520" y2="162.6" stroke="#e2e8f0"/>
-<text x="54" y="166.57142857142856" font-size="11" fill="#1e293b" text-anchor="end">6</text>
-<line x1="60" y1="133.4" x2="520" y2="133.4" stroke="#e2e8f0"/>
-<text x="54" y="137.42857142857144" font-size="11" fill="#1e293b" text-anchor="end">8</text>
-<line x1="60" y1="104.3" x2="520" y2="104.3" stroke="#e2e8f0"/>
-<text x="54" y="108.28571428571428" font-size="11" fill="#1e293b" text-anchor="end">10</text>
-<line x1="60" y1="75.1" x2="520" y2="75.1" stroke="#e2e8f0"/>
-<text x="54" y="79.14285714285714" font-size="11" fill="#1e293b" text-anchor="end">12</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">14</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">number of students</text>
-<rect x="89.0" y="75.1" width="32.0" height="174.9" fill="#2563eb"/>
-<text x="105.0" y="71.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">12</text>
-<text x="106.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">biology</text>
-<rect x="181.0" y="133.4" width="32.0" height="116.6" fill="#2563eb"/>
-<text x="197.0" y="129.4" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">8</text>
-<text x="198.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">physics</text>
-<rect x="273.0" y="162.6" width="32.0" height="87.4" fill="#2563eb"/>
-<text x="289.0" y="158.6" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">6</text>
-<text x="290.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">chemistry</text>
-<rect x="365.0" y="104.3" width="32.0" height="145.7" fill="#2563eb"/>
-<text x="381.0" y="100.3" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
-<text x="382.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">astronomy</text>
-<rect x="457.0" y="191.7" width="32.0" height="58.3" fill="#2563eb"/>
-<text x="473.0" y="187.7" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
-<text x="474.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">geology</text>
-</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Physics is chosen by 25% of the students.", "Half of the students chose biology or chemistry.", "Astronomy is twice as popular as geology.", "30% of the students would like to become biologists."],
-  a: "D",
-  s: `<p>Toplam öğrenci 40. Her seçeneği hesaplayalım:</p><p>A: fizik 8 → 8/40 = %20, %25 değil ✗. B: biyoloji + kimya = 12 + 6 = 18 → 18/40 = %45, yarısı (20) değil ✗. C: astronomi 10, jeoloji 4 → 2,5 katı; tam iki katı değil ✗.</p><p>D: biyoloji 12 → 12/40 = <b>%30</b>; biyoloji okumak isteyen “biologist” olmak ister ✓. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Kaan visited a robot factory and read this sentence on the information board:</p><div class="box"><p>“Engineers test every robot carefully before they send it to schools.”</p></div><p>Which of the following has the <b>SAME</b> meaning?</p>`,
-  c: ["Every robot is tested carefully before it is sent to schools.", "Every robot was tested carefully before it sent to schools.", "Every robot tests carefully before it is sent to schools.", "Every robot is testing carefully before it is sending to schools."],
-  a: "A",
-  s: `<p>Etken cümle geniş zamanda (test / send). Nesne (every robot) özne olunca edilgen yapı <b>is + V3</b> olur: “Every robot <b>is tested</b> … before it <b>is sent</b> …”.</p><p>B: zaman geçmişe kaymış (was) ve “it sent” edilgen değil ✗. C: “Every robot tests” → robot test eden olur, anlam bozulur ✗. D: “is testing / is sending” şimdiki zaman etken yapı; edilgen değil ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>The Demir family is going to visit a science museum. Mr. and Mrs. Demir are going with their children, Mert (14) and Ela (9).</p><div class="fig"><svg viewBox="0 0 540 224" width="540" role="img" aria-label="Müze bilet fiyatları">
-<text x="270.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">SCIENCE MUSEUM – TICKET PRICES</text>
-<rect x="10" y="38" width="520" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Ticket</text>
-<text x="348" y="55" font-size="11" font-weight="bold" fill="#ffffff">Price</text>
-<rect x="10" y="64" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">Adult</text>
-<text x="348" y="82" font-size="11" fill="#1e293b">200 TL</text>
-<rect x="10" y="89" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">Student (12–18)</text>
-<text x="348" y="107" font-size="11" fill="#1e293b">120 TL</text>
-<rect x="10" y="114" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">Child (under 12)</text>
-<text x="348" y="132" font-size="11" fill="#1e293b">60 TL</text>
-<rect x="10" y="139" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">Family ticket (2 adults + 2 children under 18)</text>
-<text x="348" y="157" font-size="11" fill="#1e293b">450 TL</text>
-<rect x="10" y="164" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">Planetarium show (extra)</text>
-<text x="348" y="182" font-size="11" fill="#1e293b">50 TL per person</text>
-<rect x="10" y="189" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="207" font-size="11" font-weight="bold" fill="#1e293b">Robotics workshop (extra, only for ages 10–16)</text>
-<text x="348" y="207" font-size="11" fill="#1e293b">80 TL per person</text>
-<line x1="340" y1="38" x2="340" y2="214" stroke="#94a3b8"/>
-<rect x="10" y="38" width="520" height="176" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>The family buys the <b>cheapest</b> entrance tickets. All of them watch the planetarium show, and the children join the robotics workshop if they can.</p><p> How much does the family pay in total?</p>`,
-  c: ["650 TL", "730 TL", "810 TL", "860 TL"],
-  a: "B",
-  s: `<p>Giriş: Ayrı ayrı 200 + 200 + 120 + 60 = 580 TL; aile bileti 450 TL → en ucuzu <b>450 TL</b>.</p><p>Planetaryum: 4 kişi × 50 = 200 TL. Robotik atölye: sadece 10–16 yaş → Mert (14) katılır, Ela (9) katılamaz → 80 TL.</p><p>Toplam: 450 + 200 + 80 = <b>730 TL</b>. Çeldiriciler: 810 TL (iki çocuk da atölyeye yazıldı sanılırsa), 860 TL (aile bileti yerine ayrı bilet), 650 TL (atölye unutulursa). Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Defne is visiting a science centre. Read the information about the planetarium.</p><div class="fig"><svg viewBox="0 0 540 140" width="540" role="img" aria-label="Planetaryum bilgi kartı">
-<rect x="4" y="4" width="532" height="132" rx="10" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#1d4ed8"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">PLANETARIUM – “A Journey to the Planets”</text>
-<text x="22" y="50" font-size="11" font-weight="bold" fill="#1e293b">Shows start at: 10:00 • 11:30 • 13:00 • 14:30 • 16:00</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">Each show lasts 50 minutes.</text>
-<text x="22" y="94" font-size="11" fill="#1e293b">Visitors must be at the door 10 minutes before the show starts. Late visitors are</text>
-<text x="22" y="110" font-size="11" fill="#1e293b">not allowed in.</text>
-</svg></div><p>Defne arrives at the science centre at 12:40. First, she visits the Inventions Hall, and this takes 1 hour 15 minutes. Then she wants to watch the show. She must leave the centre by 16:30 to catch the bus.</p><p>Which show can Defne watch?</p>`,
-  c: ["11:30", "13:00", "14:30", "16:00"],
-  a: "C",
-  s: `<p>12:40 + 1 sa 15 dk = <b>13:55</b>’te salondan çıkar. Kapıda gösteriden 10 dk önce olmalı → gösteri en erken 14:05’te başlamalı.</p><p>13:00 ve 11:30 çok erken ✗. 14:30 gösterisi: 14:20’de kapıda olur (13:55’ten sonra ✓), 14:30 + 50 dk = 15:20’de biter (16:30’dan önce ✓). 16:00 gösterisi 16:50’de biter, otobüsü kaçırır ✗. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>The graph shows the number of experiments two classes did in the science lab.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Çift sütun grafik">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Experiments in the Science Lab</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="199.0" x2="520" y2="199.0" stroke="#e2e8f0"/>
-<text x="54" y="203.0" font-size="11" fill="#1e293b" text-anchor="end">2</text>
-<line x1="60" y1="148.0" x2="520" y2="148.0" stroke="#e2e8f0"/>
-<text x="54" y="152.0" font-size="11" fill="#1e293b" text-anchor="end">4</text>
-<line x1="60" y1="97.0" x2="520" y2="97.0" stroke="#e2e8f0"/>
-<text x="54" y="101.0" font-size="11" fill="#1e293b" text-anchor="end">6</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">8</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">number of experiments</text>
-<rect x="83.5" y="148.0" width="32.0" height="102.0" fill="#2563eb"/>
-<text x="99.5" y="144.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
-<rect x="117.5" y="122.5" width="32.0" height="127.5" fill="#f59e0b"/>
-<text x="133.5" y="118.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">5</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">September</text>
-<rect x="198.5" y="97.0" width="32.0" height="153.0" fill="#2563eb"/>
-<text x="214.5" y="93.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">6</text>
-<rect x="232.5" y="148.0" width="32.0" height="102.0" fill="#f59e0b"/>
-<text x="248.5" y="144.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">October</text>
-<rect x="313.5" y="173.5" width="32.0" height="76.5" fill="#2563eb"/>
-<text x="329.5" y="169.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3</text>
-<rect x="347.5" y="97.0" width="32.0" height="153.0" fill="#f59e0b"/>
-<text x="363.5" y="93.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">6</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">November</text>
-<rect x="428.5" y="71.5" width="32.0" height="178.5" fill="#2563eb"/>
-<text x="444.5" y="67.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">7</text>
-<rect x="462.5" y="71.5" width="32.0" height="178.5" fill="#f59e0b"/>
-<text x="478.5" y="67.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">7</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">December</text>
-<rect x="70" y="278" width="12" height="12" fill="#2563eb"/>
-<text x="87" y="288" font-size="11" fill="#1e293b">8-A</text>
-<rect x="141" y="278" width="12" height="12" fill="#f59e0b"/>
-<text x="158" y="288" font-size="11" fill="#1e293b">8-B</text>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the graph?</p>`,
-  c: ["In November, class 8-B did twice as many experiments as class 8-A.", "Class 8-A did more experiments than class 8-B in total.", "Class 8-A did the most experiments in October.", "The two classes did the same number of experiments in October."],
-  a: "A",
-  s: `<p>Kasım: 8-A 3, 8-B 6 → 6 = 2 × 3, iki katı ✓.</p><p>B: toplam 8-A = 4+6+3+7 = 20, 8-B = 5+4+6+7 = 22 → 8-B daha fazla ✗. C: 8-A’nın en çok deney yaptığı ay Aralık (7) ✗. D: Ekim’de 6 ve 4, eşit değil (eşit olduğu ay Aralık) ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>A reporter is talking to Zehra at the Young Scientists Fair. Here are the reporter’s questions:</p><div class="dialog"><div><b>Reporter:</b> What is your project about?</div><div><b>Reporter:</b> How long did it take to finish it?</div><div><b>Reporter:</b> What do you want to do in the future?</div></div><p>Which of the following is <b>NOT</b> one of Zehra’s answers?</p>`,
-  c: ["I started it in February and finished it in May, so about three months.", "It’s a small device. It warns farmers when the soil needs water.", "I’d like to study engineering and design robots for hospitals.", "Because I think water is getting more and more valuable every year."],
-  a: "D",
-  s: `<p>A “How long … ?” (ne kadar sürdü) sorusunun cevabı (3 ay) ✓. B “What is your project about?” sorusunun cevabı ✓. C “What do you want to do in the future?” sorusunun cevabı ✓.</p><p>D “Because …” ile başlıyor; bu bir <b>Why …?</b> (neden) sorusunun cevabıdır ama muhabir “neden” diye sormadı. Konuyla ilgili olduğu için güçlü bir çeldiricidir. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Kerem did an experiment and wrote these sentences in his report, but he mixed up the order.</p><div class="fig"><svg viewBox="0 0 540 184" width="540" role="img" aria-label="Deney basamakları">
-<rect x="4" y="4" width="532" height="176" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">My Experiment – Kerem</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">I. I guessed that the thickest paper towel would hold the most water.</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">II. I wondered which brand of paper towel absorbs the most water.</text>
-<text x="22" y="94" font-size="11" fill="#1e293b">III. I saw that my guess was right and shared my results with my class.</text>
-<text x="22" y="116" font-size="11" fill="#1e293b">IV. I put the same size piece of each brand into 100 ml of water and then measured</text>
-<text x="22" y="132" font-size="11" fill="#1e293b">how much water was left.</text>
-<text x="22" y="154" font-size="11" fill="#1e293b">V. I wrote my results in a table and compared them.</text>
-</svg></div><p>Which of the following shows the <b>CORRECT</b> order of the scientific method?</p>`,
-  c: ["I – II – IV – V – III", "II – I – IV – V – III", "II – IV – I – V – III", "II – I – V – IV – III"],
-  a: "B",
-  s: `<p>Bilimsel yöntem: <b>soru</b> (II: “I wondered…”) → <b>hipotez/tahmin</b> (I: “I guessed…”) → <b>deney</b> (IV) → <b>verileri düzenleme ve inceleme</b> (V) → <b>sonuç</b> (III).</p><p>A: tahmin sorudan önce olamaz ✗. C: deney, tahminden önce yapılmış ✗ (hipotez deneyden ÖNCE kurulur). D: sonuçlar deney yapılmadan tabloya yazılmış ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Read the text by a marine biologist.</p><div class="fig"><svg viewBox="0 0 540 210" width="540" role="img" aria-label="Deniz biyoloğu metni">
-<rect x="4" y="4" width="532" height="202" rx="10" fill="#f0f9ff" stroke="#0369a1" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0369a1"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Dr. Deniz Aksu – Life Under the Sea</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">(1) When I was seven, I watched a documentary about dolphins. Since then, I have</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">wanted to work in the sea and learn more about the animals living there.</text>
-<text x="22" y="88" font-size="11" fill="#1e293b">(2) I usually start work at 7 a.m. I dive for about two hours and collect water</text>
-<text x="22" y="104" font-size="11" fill="#1e293b">samples. In the afternoon, I examine them under a microscope in the lab.</text>
-<text x="22" y="126" font-size="11" fill="#1e293b">(3) Plastic waste is a big threat to sea animals. Every year, thousands of turtles</text>
-<text x="22" y="142" font-size="11" fill="#1e293b">and fish are harmed by plastic bags and bottles.</text>
-<text x="22" y="164" font-size="11" fill="#1e293b">(4) If you want to become a marine biologist, read a lot about science, be patient</text>
-<text x="22" y="180" font-size="11" fill="#1e293b">and learn to swim well.</text>
-</svg></div><p>Which of the following headings can <b>NOT</b> be used for any of the paragraphs?</p>`,
-  c: ["A Childhood Dream", "A Typical Day at Work", "Her Favourite Sea Animal", "Tips for Future Scientists"],
-  a: "C",
-  s: `<p>(1) yedi yaşında izlediği belgesel ve o günden beri istediği iş → “A Childhood Dream” ✓. (2) her gün yaptıkları → “A Typical Day at Work” ✓. (4) genç bilim insanlarına öneriler → “Tips for Future Scientists” ✓. (3) için uygun başlık “A Serious Problem in the Seas” olurdu.</p><p>C: Metinde en sevdiği deniz hayvanından hiç söz edilmiyor. Tuzak: (1)’de yunuslar geçiyor ama yalnızca izlediği belgeselin konusu; “favourite” denmiyor. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Arda prepared these two tables for his project “Inventions in My Family’s Life”.</p><div class="fig"><svg viewBox="0 0 480 149" width="480" role="img" aria-label="Aile tablosu">
-<text x="240.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">My Family</text>
-<rect x="10" y="38" width="460" height="26" fill="#0f766e"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Family member</text>
-<text x="278" y="55" font-size="11" font-weight="bold" fill="#ffffff">Born – Died</text>
-<rect x="10" y="64" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">great-grandfather Hasan</text>
-<text x="278" y="82" font-size="11" fill="#1e293b">1902 – 1971</text>
-<rect x="10" y="89" width="460" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">great-grandmother Ayşe</text>
-<text x="278" y="107" font-size="11" fill="#1e293b">1908 – 1995</text>
-<rect x="10" y="114" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">grandfather Ali</text>
-<text x="278" y="132" font-size="11" fill="#1e293b">1936 – 2005</text>
-<line x1="270" y1="38" x2="270" y2="139" stroke="#94a3b8"/>
-<rect x="10" y="38" width="460" height="101" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><div class="fig"><svg viewBox="0 0 480 174" width="480" role="img" aria-label="İcat tablosu">
-<text x="240.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Inventions</text>
-<rect x="10" y="38" width="460" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Invention</text>
-<text x="278" y="55" font-size="11" font-weight="bold" fill="#ffffff">Year</text>
-<rect x="10" y="64" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">television</text>
-<text x="278" y="82" font-size="11" fill="#1e293b">1926</text>
-<rect x="10" y="89" width="460" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">the first mobile phone call</text>
-<text x="278" y="107" font-size="11" fill="#1e293b">1973</text>
-<rect x="10" y="114" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">the World Wide Web</text>
-<text x="278" y="132" font-size="11" fill="#1e293b">1989</text>
-<rect x="10" y="139" width="460" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">the first iPhone</text>
-<text x="278" y="157" font-size="11" fill="#1e293b">2007</text>
-<line x1="270" y1="38" x2="270" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="460" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>According to the tables, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Great-grandmother Ayşe was able to use the World Wide Web.", "Great-grandfather Hasan was able to call someone with a mobile phone.", "Grandfather Ali was able to use the first iPhone.", "Great-grandfather Hasan wasn’t able to watch television in his life."],
-  a: "A",
-  s: `<p>Kişi icadı kullanabilmek için icat yılında hayatta olmalı.</p><p>A: World Wide Web 1989, Ayşe 1995’te öldü → mümkün ✓.</p><p>B: ilk cep telefonu görüşmesi 1973, Hasan 1971’de öldü ✗. C: ilk iPhone 2007, Ali 2005’te öldü ✗. D: televizyon 1926’da icat edildi, Hasan 1902–1971 arasında yaşadı → izleyebilirdi; ifade yanlış ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Look at the table about some important inventions and discoveries.</p><div class="fig"><svg viewBox="0 0 520 174" width="520" role="img" aria-label="İcatlar tablosu">
-<text x="260.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Famous Inventions and Discoveries</text>
-<rect x="10" y="38" width="500" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">What?</text>
-<text x="188" y="55" font-size="11" font-weight="bold" fill="#ffffff">Who?</text>
-<text x="438" y="55" font-size="11" font-weight="bold" fill="#ffffff">When?</text>
-<rect x="10" y="64" width="500" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">stethoscope (invented)</text>
-<text x="188" y="82" font-size="11" fill="#1e293b">René Laennec</text>
-<text x="438" y="82" font-size="11" fill="#1e293b">1816</text>
-<rect x="10" y="89" width="500" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">dynamite (invented)</text>
-<text x="188" y="107" font-size="11" fill="#1e293b">Alfred Nobel</text>
-<text x="438" y="107" font-size="11" fill="#1e293b">1867</text>
-<rect x="10" y="114" width="500" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">insulin (discovered)</text>
-<text x="188" y="132" font-size="11" fill="#1e293b">Frederick Banting and Charles Best</text>
-<text x="438" y="132" font-size="11" fill="#1e293b">1921</text>
-<rect x="10" y="139" width="500" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">Velcro (invented)</text>
-<text x="188" y="157" font-size="11" fill="#1e293b">George de Mestral</text>
-<text x="438" y="157" font-size="11" fill="#1e293b">1955</text>
-<line x1="180" y1="38" x2="180" y2="164" stroke="#94a3b8"/>
-<line x1="430" y1="38" x2="430" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="500" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the following sentences is <b>CORRECT</b> according to the table?</p>`,
-  c: ["Insulin was discovered by Alfred Nobel in 1921.", "Dynamite was invented by Alfred Nobel in 1955.", "Velcro is invented by George de Mestral in 1955.", "The stethoscope was invented by René Laennec in 1816."],
-  a: "D",
-  s: `<p>Hem bilgi hem dil bilgisi doğru olmalı. Geçmişte olan bir olay için edilgen yapı: <b>was/were + V3 + by …</b>.</p><p>D: Stetoskop, 1816’da René Laennec tarafından icat edildi ✓.</p><p>A: insülin Banting ve Best tarafından bulundu, Nobel değil ✗. B: dinamit 1867’de icat edildi, 1955 değil ✗. C: bilgi doğru ama geçmişte olan olay için “<b>is</b> invented” kullanılamaz, “was invented” olmalı ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Some students are in the school lab. Their teacher asks them about their work.</p><div class="fig"><svg viewBox="0 0 540 335" width="540" role="img" aria-label="Laboratuvar mesajlaşması">
-<rect x="4" y="4" width="532" height="327" rx="14" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="32" rx="12" fill="#0f766e"/>
-<text x="270.0" y="25" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Lab Group 8-C</text>
-<rect x="20" y="46" width="410" height="37" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="62" font-size="11" font-weight="bold" fill="#dc2626">Ms. Yılmaz</text>
-<text x="30" y="78" font-size="11" fill="#1e293b">How is everything going? Tell me what you are doing right now.</text>
-<rect x="20" y="91" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="107" font-size="11" font-weight="bold" fill="#2563eb">Ece</text>
-<text x="30" y="123" font-size="11" fill="#1e293b">I haven’t finished yet. I’m still measuring the temperature of the</text>
-<text x="30" y="138" font-size="11" fill="#1e293b">water every two minutes.</text>
-<rect x="20" y="151" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="167" font-size="11" font-weight="bold" fill="#9333ea">Tolga</text>
-<text x="30" y="183" font-size="11" fill="#1e293b">I finished my experiment twenty minutes ago. I’m writing my report</text>
-<text x="30" y="198" font-size="11" fill="#1e293b">in the library now.</text>
-<rect x="20" y="211" width="410" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="30" y="227" font-size="11" font-weight="bold" fill="#d97706">Selin</text>
-<text x="30" y="243" font-size="11" fill="#1e293b">I’m heating the ice in a beaker at the moment. I’m waiting for it to</text>
-<text x="30" y="258" font-size="11" fill="#1e293b">melt.</text>
-<rect x="110" y="271" width="410" height="52" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="120" y="287" font-size="11" font-weight="bold" fill="#0f766e">Mert</text>
-<text x="120" y="303" font-size="11" fill="#1e293b">I finished part one an hour ago. Now I’m mixing salt and water for</text>
-<text x="120" y="318" font-size="11" fill="#1e293b">part two.</text>
-</svg></div><p>Who is <b>NOT</b> doing an experiment at the moment?</p>`,
-  c: ["Ece", "Tolga", "Selin", "Mert"],
-  a: "B",
-  s: `<p>“at the moment / now / still” ifadeleri şu anda yapılan işi gösterir.</p><p>Tolga deneyini 20 dakika önce bitirmiş; şu an kütüphanede rapor yazıyor → deney yapmıyor ✓.</p><p>Ece hâlâ ölçüm yapıyor ✗. Selin şu an buzu ısıtıyor ✗. Mert birinci bölümü bitirmiş ama şimdi ikinci bölüm için tuz ve suyu karıştırıyor ✗ (tuzak: “I finished” ifadesi). Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Zeynep is preparing a project for the science fair. Here is her checklist.</p><div class="fig"><svg viewBox="0 0 470 199" width="470" role="img" aria-label="Kontrol listesi">
-<text x="235.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Science Fair Project – Checklist</text>
-<rect x="10" y="38" width="450" height="26" fill="#7c3aed"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Task</text>
-<text x="348" y="55" font-size="11" font-weight="bold" fill="#ffffff">Done?</text>
-<rect x="10" y="64" width="450" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">choose a topic</text>
-<text x="348" y="82" font-size="11" fill="#1e293b">✔</text>
-<rect x="10" y="89" width="450" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">read three articles about the topic</text>
-<text x="348" y="107" font-size="11" fill="#1e293b">✔</text>
-<rect x="10" y="114" width="450" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">buy the materials</text>
-<text x="348" y="132" font-size="11" fill="#1e293b">✘</text>
-<rect x="10" y="139" width="450" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">build the model</text>
-<text x="348" y="157" font-size="11" fill="#1e293b">✘</text>
-<rect x="10" y="164" width="450" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">prepare the poster</text>
-<text x="348" y="182" font-size="11" fill="#1e293b">✔</text>
-<line x1="340" y1="38" x2="340" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="450" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the following is <b>CORRECT</b> about Zeynep?</p>`,
-  c: ["She has prepared her poster, but she hasn’t built her model yet.", "She hasn’t chosen her topic yet, but she has read three articles.", "She has already bought the materials for her model.", "She has built her model, but she hasn’t read any articles yet."],
-  a: "A",
-  s: `<p>✔ = yapıldı (has + V3), ✘ = henüz yapılmadı (hasn’t + V3 … yet).</p><p>A: poster ✔, model ✘ → “has prepared … hasn’t built … yet” ✓.</p><p>B: konu seçilmiş (✔) ✗. C: malzemeler alınmamış (✘) ✗. D: model yapılmamış, makaleler okunmuş ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>200 students answered the question “How do you learn about science outside school?”. Each student gave only one answer. The graph shows the results in percentages.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Yüzde grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">How do you learn about science outside school? (%)</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="199.0" x2="520" y2="199.0" stroke="#e2e8f0"/>
-<text x="54" y="203.0" font-size="11" fill="#1e293b" text-anchor="end">10</text>
-<line x1="60" y1="148.0" x2="520" y2="148.0" stroke="#e2e8f0"/>
-<text x="54" y="152.0" font-size="11" fill="#1e293b" text-anchor="end">20</text>
-<line x1="60" y1="97.0" x2="520" y2="97.0" stroke="#e2e8f0"/>
-<text x="54" y="101.0" font-size="11" fill="#1e293b" text-anchor="end">30</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">40</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">percentage of students (%)</text>
-<rect x="89.0" y="71.5" width="32.0" height="178.5" fill="#0d9488"/>
-<text x="105.0" y="67.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">35</text>
-<text x="106.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">documentaries</text>
-<rect x="181.0" y="173.5" width="32.0" height="76.5" fill="#0d9488"/>
-<text x="197.0" y="169.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">15</text>
-<text x="198.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">magazines</text>
-<rect x="273.0" y="97.0" width="32.0" height="153.0" fill="#0d9488"/>
-<text x="289.0" y="93.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">30</text>
-<text x="290.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">the Internet</text>
-<rect x="365.0" y="199.0" width="32.0" height="51.0" fill="#0d9488"/>
-<text x="381.0" y="195.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
-<text x="382.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">museums</text>
-<rect x="457.0" y="199.0" width="32.0" height="51.0" fill="#0d9488"/>
-<text x="473.0" y="195.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
-<text x="474.0" y="267" font-size="11" fill="#1e293b" text-anchor="middle">science clubs</text>
-</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["60 students learn about science from science magazines.", "Documentaries are twice as popular as the Internet.", "40 students learn about science in museums or science clubs.", "More than half of the students use the Internet or magazines."],
-  a: "C",
-  s: `<p>Grafik yüzde gösteriyor; 200 öğrencinin %1’i = 2 öğrenci.</p><p>C: müzeler %10 + bilim kulüpleri %10 = %20 → 200’ün %20’si = <b>40</b> öğrenci ✓.</p><p>A: dergiler %15 → 30 öğrenci (60 öğrenci İnternet’tir) ✗. B: belgesel %35, İnternet %30 → iki katı değil ✗. D: İnternet + dergi = %45 → yarıdan az ✗. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>The steps below show how glass bottles are recycled. One step is missing.</p><div class="fig"><svg viewBox="0 0 540 168" width="540" role="img" aria-label="Cam geri dönüşüm basamakları">
-<rect x="4" y="4" width="532" height="160" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#15803d"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">How Is Glass Recycled?</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Step 1: Glass bottles are collected from recycling bins.</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">Step 2: They are taken to a recycling factory.</text>
-<text x="22" y="94" font-size="11" fill="#1e293b">Step 3: ……………………………………………</text>
-<text x="22" y="116" font-size="11" fill="#1e293b">Step 4: The small pieces are melted in a very hot furnace.</text>
-<text x="22" y="138" font-size="11" fill="#1e293b">Step 5: New bottles are made from the melted glass.</text>
-</svg></div><p>Which of the following can be <b>Step 3</b>?</p>`,
-  c: ["The new bottles are sold to shops and supermarkets.", "The bottles are crushing into small pieces by machines.", "The melted glass is poured into bottle shapes.", "The bottles are cleaned and broken into small pieces."],
-  a: "D",
-  s: `<p>3. basamak, fabrikaya gelişten (2) sonra, “küçük parçaların” eritilmesinden (4) önce olmalı ve edilgen yapı (is/are + V3) doğru kurulmalı.</p><p>D: şişeler temizlenir ve küçük parçalara kırılır → 4. adımdaki “the small pieces” ifadesine bağlanır ✓.</p><p>A: satış en sonda olur ✗. B: anlam uygun ama “are crushing” edilgen değil, “are crushed” olmalı ✗. C: erimiş camın kalıba dökülmesi eritmeden (4) sonra gelir ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Kerem wants to borrow a book from the school library. Read his message and the book list.</p><div class="box"><p><b>Kerem:</b> I’m really interested in space, but I don’t enjoy stories. I want a book with real facts and lots of pictures. It should be short, because I have only this weekend to read it.</p></div><div class="fig"><svg viewBox="0 0 530 219" width="530" role="img" aria-label="Kitap listesi">
-<text x="265.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">New Books in the Library</text>
-<rect x="10" y="38" width="510" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Book</text>
-<text x="188" y="55" font-size="11" font-weight="bold" fill="#ffffff">About the book</text>
-<text x="458" y="55" font-size="11" font-weight="bold" fill="#ffffff">Pages</text>
-<rect x="10" y="64" width="510" height="40" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">Our Solar System</text>
-<text x="188" y="82" font-size="11" fill="#1e293b">real facts and colourful photos of the</text>
-<text x="188" y="97" font-size="11" fill="#1e293b">planets</text>
-<text x="458" y="82" font-size="11" fill="#1e293b">64</text>
-<rect x="10" y="104" width="510" height="40" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="122" font-size="11" font-weight="bold" fill="#1e293b">Mission to Mars</text>
-<text x="188" y="122" font-size="11" fill="#1e293b">a science-fiction story about a girl</text>
-<text x="188" y="137" font-size="11" fill="#1e293b">living on Mars</text>
-<text x="458" y="122" font-size="11" fill="#1e293b">320</text>
-<rect x="10" y="144" width="510" height="40" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="162" font-size="11" font-weight="bold" fill="#1e293b">The Story of Space Travel</text>
-<text x="188" y="162" font-size="11" fill="#1e293b">facts about the history of space travel,</text>
-<text x="188" y="177" font-size="11" fill="#1e293b">no pictures</text>
-<text x="458" y="162" font-size="11" fill="#1e293b">410</text>
-<rect x="10" y="184" width="510" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="202" font-size="11" font-weight="bold" fill="#1e293b">Amazing Animals</text>
-<text x="188" y="202" font-size="11" fill="#1e293b">real facts and photos of wild animals</text>
-<text x="458" y="202" font-size="11" fill="#1e293b">48</text>
-<line x1="180" y1="38" x2="180" y2="209" stroke="#94a3b8"/>
-<line x1="450" y1="38" x2="450" y2="209" stroke="#94a3b8"/>
-<rect x="10" y="38" width="510" height="171" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which book is the <b>best</b> for Kerem?</p>`,
-  c: ["Our Solar System", "Mission to Mars", "The Story of Space Travel", "Amazing Animals"],
-  a: "A",
-  s: `<p>Kerem’in koşulları: konu uzay, hikâye değil gerçek bilgi, bol resim, kısa kitap.</p><p>“Our Solar System”: uzay ✓, gerçek bilgi ✓, renkli fotoğraflar ✓, 64 sayfa ✓.</p><p>B: uzayla ilgili ama bilimkurgu hikâyesi ve uzun ✗. C: uzay ve gerçek bilgi ama resim yok ve 410 sayfa ✗. D: kısa ve resimli ama konusu hayvanlar ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Duru put one plant in sunlight and another one in a dark room. She measured their heights every week.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Bitki boyları grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Heights of the Plants</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="224.5" x2="520" y2="224.5" stroke="#e2e8f0"/>
-<text x="54" y="228.5" font-size="11" fill="#1e293b" text-anchor="end">2</text>
-<line x1="60" y1="199.0" x2="520" y2="199.0" stroke="#e2e8f0"/>
-<text x="54" y="203.0" font-size="11" fill="#1e293b" text-anchor="end">4</text>
-<line x1="60" y1="173.5" x2="520" y2="173.5" stroke="#e2e8f0"/>
-<text x="54" y="177.5" font-size="11" fill="#1e293b" text-anchor="end">6</text>
-<line x1="60" y1="148.0" x2="520" y2="148.0" stroke="#e2e8f0"/>
-<text x="54" y="152.0" font-size="11" fill="#1e293b" text-anchor="end">8</text>
-<line x1="60" y1="122.5" x2="520" y2="122.5" stroke="#e2e8f0"/>
-<text x="54" y="126.5" font-size="11" fill="#1e293b" text-anchor="end">10</text>
-<line x1="60" y1="97.0" x2="520" y2="97.0" stroke="#e2e8f0"/>
-<text x="54" y="101.0" font-size="11" fill="#1e293b" text-anchor="end">12</text>
-<line x1="60" y1="71.5" x2="520" y2="71.5" stroke="#e2e8f0"/>
-<text x="54" y="75.5" font-size="11" fill="#1e293b" text-anchor="end">14</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">16</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">height (cm)</text>
-<rect x="83.5" y="224.5" width="32.0" height="25.5" fill="#16a34a"/>
-<text x="99.5" y="220.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
-<rect x="117.5" y="224.5" width="32.0" height="25.5" fill="#64748b"/>
-<text x="133.5" y="220.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Week 1</text>
-<rect x="198.5" y="186.2" width="32.0" height="63.8" fill="#16a34a"/>
-<text x="214.5" y="182.2" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">5</text>
-<rect x="232.5" y="211.8" width="32.0" height="38.2" fill="#64748b"/>
-<text x="248.5" y="207.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Week 2</text>
-<rect x="313.5" y="135.2" width="32.0" height="114.8" fill="#16a34a"/>
-<text x="329.5" y="131.2" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">9</text>
-<rect x="347.5" y="199.0" width="32.0" height="51.0" fill="#64748b"/>
-<text x="363.5" y="195.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Week 3</text>
-<rect x="428.5" y="71.5" width="32.0" height="178.5" fill="#16a34a"/>
-<text x="444.5" y="67.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">14</text>
-<rect x="462.5" y="199.0" width="32.0" height="51.0" fill="#64748b"/>
-<text x="478.5" y="195.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Week 4</text>
-<rect x="70" y="278" width="12" height="12" fill="#16a34a"/>
-<text x="87" y="288" font-size="11" fill="#1e293b">in sunlight</text>
-<rect x="197" y="278" width="12" height="12" fill="#64748b"/>
-<text x="214" y="288" font-size="11" fill="#1e293b">in the dark</text>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the graph?</p>`,
-  c: ["The plant in the dark grew the most in the last week.", "In Week 4, the plant in sunlight was more than three times as tall as the plant in the dark.", "The two plants were the same height in Week 2.", "The plant in sunlight grew the same amount every week."],
-  a: "B",
-  s: `<p>B: 4. hafta güneşteki bitki 14 cm, karanlıktaki 4 cm → 14 ÷ 4 = 3,5 → üç katından fazla ✓.</p><p>A: karanlıktaki bitki son hafta hiç uzamadı (4 → 4) ✗. C: boyları 1. haftada eşitti (2 cm), 2. haftada 5 ve 3 ✗. D: güneşteki bitki 3, 4, 5 cm uzadı; her hafta aynı değil ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Read the conversation between two friends.</p><div class="dialog"><div><b>Ece:</b> Did you know that the microwave oven was invented by accident?</div><div><b>Bora:</b> Really? Who invented it?</div><div><b>Ece:</b> An American engineer, Percy Spencer. In 1945, he was working with radar machines when the chocolate bar in his pocket suddenly melted.</div><div><b>Bora:</b> Wow! So he understood that the waves could heat food.</div><div><b>Ece:</b> Exactly. After that, he tried it with popcorn, and it popped!</div><div><b>Bora:</b> We use our microwave every day, but I’ve never thought about its history before.</div></div><p>Which of the following is <b>CORRECT</b> according to the conversation?</p>`,
-  c: ["Percy Spencer was trying to invent a new oven when he made the discovery.", "Bora has known the history of the microwave oven for a long time.", "Spencer was making popcorn when the chocolate in his pocket melted.", "Spencer noticed the effect of the waves because something in his pocket melted."],
-  a: "D",
-  s: `<p>D: Cebindeki çikolata eriyince dalgaların yiyeceği ısıtabildiğini fark etti ✓.</p><p>A: yeni bir fırın icat etmeye çalışmıyordu; radar makineleriyle çalışırken tesadüfen buldu (“by accident”) ✗. B: Bora “I’ve never thought about its history before” diyor ✗. C: patlamış mısırı çikolata eridikten <b>sonra</b> denedi (“After that”) ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Read the text about a famous scientist.</p><div class="fig"><svg viewBox="0 0 540 220" width="540" role="img" aria-label="Galileo biyografisi">
-<rect x="4" y="4" width="532" height="212" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#7c3aed"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Galileo Galilei (1564 – 1642)</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Galileo Galilei was born in Pisa, Italy, in 1564. His father wanted him to become</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">a doctor, so he started studying medicine at the University of Pisa. However, he</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">was more interested in mathematics, and he left the university without a degree.</text>
-<text x="22" y="98" font-size="11" fill="#1e293b">Later, he became a mathematics teacher.</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">In 1609, he heard about a new Dutch invention, the telescope, and he built a</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">better one himself. With it, he saw mountains on the Moon and four moons around</text>
-<text x="22" y="152" font-size="11" fill="#1e293b">Jupiter.</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">Galileo believed that the Earth moves around the Sun. Many people did not accept</text>
-<text x="22" y="190" font-size="11" fill="#1e293b">this idea at that time, and he had to stay in his house until his death in 1642.</text>
-</svg></div><p>According to the text, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["He invented the first telescope in the world.", "He didn’t finish his medical education.", "He saw four moons around Jupiter after he became a doctor.", "Everybody agreed with his ideas about the Earth and the Sun."],
-  a: "B",
-  s: `<p>B: Tıp okumaya başladı ama “he left the university <b>without a degree</b>” → tıp eğitimini bitirmedi ✓.</p><p>A: teleskop bir Hollanda icadıydı; Galileo daha iyisini yaptı, ilkini icat etmedi ✗. C: doktor olmadı, matematik öğretmeni oldu ✗. D: “Many people did not accept this idea” ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Twins Ada and Arda want to join a summer robotics camp. Read the information.</p><div class="fig"><svg viewBox="0 0 540 199" width="540" role="img" aria-label="Robotik kamp bilgileri">
-<text x="270.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">ROBO-KIDS SUMMER CAMP</text>
-<rect x="10" y="38" width="520" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff"></text>
-<text x="258" y="55" font-size="11" font-weight="bold" fill="#ffffff">Price / Information</text>
-<rect x="10" y="64" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1-week programme</text>
-<text x="258" y="82" font-size="11" fill="#1e293b">1,500 TL per child</text>
-<rect x="10" y="89" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2-week programme</text>
-<text x="258" y="107" font-size="11" fill="#1e293b">2,700 TL per child</text>
-<rect x="10" y="114" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">Early registration (before 1 June)</text>
-<text x="258" y="132" font-size="11" fill="#1e293b">200 TL off for each child</text>
-<rect x="10" y="139" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">Sibling discount</text>
-<text x="258" y="157" font-size="11" fill="#1e293b">The second child pays 500 TL less.</text>
-<rect x="10" y="164" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">Camp bus (optional)</text>
-<text x="258" y="182" font-size="11" fill="#1e293b">300 TL per family</text>
-<line x1="250" y1="38" x2="250" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="520" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Their mother registers both children for the <b>2-week programme</b> on <b>28 May</b>. The family lives next to the camp, so they don’t need the camp bus.</p><p>How much does the family pay?</p>`,
-  c: ["4,500 TL", "4,700 TL", "4,900 TL", "5,400 TL"],
-  a: "A",
-  s: `<p>İki çocuk, 2 haftalık program: 2 × 2.700 = 5.400 TL.</p><p>Erken kayıt: 28 Mayıs, 1 Haziran’dan önce → her çocuk için 200 TL → 400 TL indirim.</p><p>Kardeş indirimi: 500 TL. Servis kullanılmıyor.</p><p>5.400 − 400 − 500 = <b>4.500 TL</b>. Çeldiriciler: 4.700 (erken kayıt indirimi bir kez), 4.900 (erken kayıt unutulursa), 5.400 (hiç indirim yok). Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Mr. Aydın wants to book the science lab on Wednesday for class 8-E. Look at the lab schedule.</p><div class="fig"><svg viewBox="0 0 500 174" width="500" role="img" aria-label="Laboratuvar çizelgesi">
-<text x="250.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Science Lab – Wednesday</text>
-<rect x="10" y="38" width="480" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Time</text>
-<text x="218" y="55" font-size="11" font-weight="bold" fill="#ffffff">Booked by</text>
-<rect x="10" y="64" width="480" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">08:30 – 10:00</text>
-<text x="218" y="82" font-size="11" fill="#1e293b">8-A (Chemistry)</text>
-<rect x="10" y="89" width="480" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">11:00 – 12:30</text>
-<text x="218" y="107" font-size="11" fill="#1e293b">7-C (Physics)</text>
-<rect x="10" y="114" width="480" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">12:30 – 13:30</text>
-<text x="218" y="132" font-size="11" fill="#1e293b">LUNCH BREAK – lab closed</text>
-<rect x="10" y="139" width="480" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">15:30 – 16:30</text>
-<text x="218" y="157" font-size="11" fill="#1e293b">8-D (Biology)</text>
-<line x1="210" y1="38" x2="210" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="480" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><div class="box"><p>The lab is open from 08:30 to 16:30. At other times, it is free.</p></div><p>The experiment of class 8-E takes <b>90 minutes</b>, and the students need <b>15 minutes</b> to clean the lab after it.</p><p>At what time can Mr. Aydın start the experiment?</p>`,
-  c: ["10:00", "12:45", "13:30", "15:00"],
-  a: "C",
-  s: `<p>Gereken süre: 90 + 15 = <b>105 dakika</b> (1 sa 45 dk).</p><p>A: 10:00 + 105 dk = 11:45, ama 11:00’de 7-C geliyor ✗. B: 12:45 öğle arası, laboratuvar kapalı ✗. D: 15:00 + 105 dk = 16:45; 15:30’da 8-D var ve laboratuvar 16:30’da kapanıyor ✗.</p><p>C: 13:30 + 105 dk = <b>15:15</b>; 15:30’dan önce biter ✓. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Ece received an email from her aunt, a geologist.</p><div class="fig"><svg viewBox="0 0 540 232" width="540" role="img" aria-label="Jeolog e-postası">
-<rect x="4" y="4" width="532" height="224" rx="10" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#b45309"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">From: Aunt Leyla   To: Ece   Subject: Greetings from Cappadocia</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Dear Ece,</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">I’m writing to you from Cappadocia. My team and I have been here for ten days.</text>
-<text x="22" y="88" font-size="11" fill="#1e293b">Every morning, we collect rock samples, and in the evenings, we examine them in</text>
-<text x="22" y="104" font-size="11" fill="#1e293b">our tent.</text>
-<text x="22" y="126" font-size="11" fill="#1e293b">Did you know that the fairy chimneys were formed by wind and rain over millions of</text>
-<text x="22" y="142" font-size="11" fill="#1e293b">years? They are made of soft rock, so they change very slowly every year.</text>
-<text x="22" y="164" font-size="11" fill="#1e293b">I haven’t visited the underground cities yet, but I’m going to see Derinkuyu on</text>
-<text x="22" y="180" font-size="11" fill="#1e293b">Saturday. I’ll be back home on 15 July. I can’t wait to show you my photos!</text>
-<text x="22" y="202" font-size="11" fill="#1e293b">Love, Aunt Leyla</text>
-</svg></div><p>Which of the following is <b>NOT</b> true according to the email?</p>`,
-  c: ["She has been in Cappadocia for more than a week.", "She is planning to visit an underground city.", "She and her team collect rock samples in the mornings.", "She has already visited Derinkuyu."],
-  a: "D",
-  s: `<p>A: “have been here for ten days” → bir haftadan fazla ✓ doğru. B: “I’m going to see Derinkuyu on Saturday” → yeraltı şehrini ziyaret etmeyi planlıyor ✓ doğru. C: “Every morning, we collect rock samples” ✓ doğru.</p><p>D: “I <b>haven’t visited</b> the underground cities <b>yet</b>” → Derinkuyu’yu henüz görmedi; ifade <b>yanlış</b>. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Read the sentences from a news report.</p><div class="box"><p>“Scientists built a new weather station on Mount Erciyes last year. They measure the wind speed every hour.”</p></div><p>Which of the following gives the <b>SAME</b> information in the passive voice?</p>`,
-  c: ["A new weather station was built on Mount Erciyes last year, and the wind speed is measured every hour.", "A new weather station was built on Mount Erciyes last year, and the wind speed was measured every hour.", "A new weather station is built on Mount Erciyes last year, and the wind speed is measured every hour.", "A new weather station built on Mount Erciyes last year, and the wind speed is measuring every hour."],
-  a: "A",
-  s: `<p>1. cümle geçmiş zaman (built, last year) → edilgen: <b>was built</b>. 2. cümle geniş zaman (measure, every hour) → edilgen: <b>is measured</b>.</p><p>A her iki zamanı da korur ✓.</p><p>B: ikinci cümle geçmişe kaymış (was measured); ölçüm hâlâ her saat yapılıyor ✗. C: “last year” ile “is built” kullanılamaz ✗. D: “station built” edilgen değil (istasyon bir şey inşa etmiş gibi olur) ve “is measuring” etken yapı ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Read the information about Stephen Hawking.</p><div class="fig"><svg viewBox="0 0 540 200" width="540" role="img" aria-label="Stephen Hawking bilgi kartı">
-<rect x="4" y="4" width="532" height="192" rx="10" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#1d4ed8"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Stephen Hawking</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">• Born: 8 January 1942, Oxford, England   • Died: 14 March 2018</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">• At the age of 21, he learned that he had a serious illness. The doctors said he</text>
-<text x="22" y="88" font-size="11" fill="#1e293b">had only two years to live, but he lived for many more years.</text>
-<text x="22" y="110" font-size="11" fill="#1e293b">• He couldn’t walk or speak in his later life, so he used a wheelchair and spoke</text>
-<text x="22" y="126" font-size="11" fill="#1e293b">with the help of a computer.</text>
-<text x="22" y="148" font-size="11" fill="#1e293b">• He studied black holes and the beginning of the universe.</text>
-<text x="22" y="170" font-size="11" fill="#1e293b">• His famous book, A Brief History of Time, was published in April 1988.</text>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the information?</p>`,
-  c: ["He lived only two years after he learned about his illness.", "He was 46 years old when A Brief History of Time was published.", "He wrote his famous book before he became ill.", "He was 70 years old when he died."],
-  a: "B",
-  s: `<p>B: Ocak 1942’de doğdu, kitap Nisan 1988’de yayımlandı → doğum günü geçmiş, 1988 − 1942 = <b>46</b> ✓.</p><p>A: doktorlar iki yıl ömür biçti ama “he lived for many more years” ✗. C: 21 yaşında (1963) hastalandı; kitap 1988’de, yani hastalıktan sonra ✗. D: Mart 2018’de öldü, doğum günü geçmiş → 2018 − 1942 = 76 ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Selim put four ice cubes of the same size in the same room. He covered three of them with different materials and left one uncovered. Then he recorded the time each ice cube needed to melt completely.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Buz erime deneyi">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Time for the Ice Cubes to Melt</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="224.5" x2="520" y2="224.5" stroke="#e2e8f0"/>
-<text x="54" y="228.5" font-size="11" fill="#1e293b" text-anchor="end">20</text>
-<line x1="60" y1="199.0" x2="520" y2="199.0" stroke="#e2e8f0"/>
-<text x="54" y="203.0" font-size="11" fill="#1e293b" text-anchor="end">40</text>
-<line x1="60" y1="173.5" x2="520" y2="173.5" stroke="#e2e8f0"/>
-<text x="54" y="177.5" font-size="11" fill="#1e293b" text-anchor="end">60</text>
-<line x1="60" y1="148.0" x2="520" y2="148.0" stroke="#e2e8f0"/>
-<text x="54" y="152.0" font-size="11" fill="#1e293b" text-anchor="end">80</text>
-<line x1="60" y1="122.5" x2="520" y2="122.5" stroke="#e2e8f0"/>
-<text x="54" y="126.5" font-size="11" fill="#1e293b" text-anchor="end">100</text>
-<line x1="60" y1="97.0" x2="520" y2="97.0" stroke="#e2e8f0"/>
-<text x="54" y="101.0" font-size="11" fill="#1e293b" text-anchor="end">120</text>
-<line x1="60" y1="71.5" x2="520" y2="71.5" stroke="#e2e8f0"/>
-<text x="54" y="75.5" font-size="11" fill="#1e293b" text-anchor="end">140</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">160</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">time (minutes)</text>
-<rect x="100.5" y="173.5" width="32.0" height="76.5" fill="#0ea5e9"/>
-<text x="116.5" y="169.5" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">60</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">aluminium foil</text>
-<rect x="215.5" y="58.8" width="32.0" height="191.2" fill="#0ea5e9"/>
-<text x="231.5" y="54.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">150</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">wool</text>
-<rect x="330.5" y="109.8" width="32.0" height="140.2" fill="#0ea5e9"/>
-<text x="346.5" y="105.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">110</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">newspaper</text>
-<rect x="445.5" y="192.6" width="32.0" height="57.4" fill="#0ea5e9"/>
-<text x="461.5" y="188.6" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">45</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">no cover</text>
-</svg></div><p>Which conclusion can Selim draw from his experiment?</p>`,
-  c: ["Aluminium foil keeps ice frozen longer than newspaper.", "The uncovered ice cube melted last.", "Wool is the best insulator among these materials.", "All the materials made the ice cubes melt faster."],
-  a: "C",
-  s: `<p>Buz ne kadar geç eriyorsa malzeme ısıyı o kadar az geçirmiş, yani o kadar iyi yalıtım yapmıştır.</p><p>C: yün en uzun sürede (150 dk) eridi → en iyi yalıtkan yün ✓.</p><p>A: folyo 60 dk, gazete 110 dk → gazete daha uzun korudu ✗. B: örtüsüz buz <b>ilk</b> eridi (45 dk) ✗. D: tüm malzemeler erimeyi yavaşlattı, hızlandırmadı ✗. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Complete the text about planets outside our solar system.</p><div class="box"><p>Scientists <b>(I) ……………</b> more than five thousand planets outside our solar system since 1992. Last year, a space telescope <b>(II) ……………</b> a new planet which is a little bigger than the Earth.</p></div><p>Which of the following best completes the gaps?</p>`,
-  c: ["(I) have discovered – (II) found", "(I) discovered – (II) has found", "(I) have discovered – (II) has found", "(I) discovered – (II) found"],
-  a: "A",
-  s: `<p>(I): “since 1992” geçmişte başlayıp bugüne kadar süren bir durumu anlatır → <b>Present Perfect</b>: have discovered.</p><p>(II): “Last year” belirli geçmiş zaman → <b>Simple Past</b>: found. Present Perfect “last year” ile kullanılmaz.</p><p>B ve D’de “since 1992” ile simple past kullanılmış ✗; B ve C’de “last year” ile “has found” kullanılmış ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Read the rules of the Space Camp and the information about three students.</p><div class="box"><p><b>SPACE CAMP – Who can join?</b><br>• Students aged 12–15<br>• Students with a science grade of 80 or higher<br>• Students who have never attended the camp before</p></div><div class="fig"><svg viewBox="0 0 550 149" width="550" role="img" aria-label="Başvuranlar tablosu">
-<text x="275.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Applicants</text>
-<rect x="10" y="38" width="530" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff"></text>
-<text x="58" y="55" font-size="11" font-weight="bold" fill="#ffffff">Student</text>
-<text x="148" y="55" font-size="11" font-weight="bold" fill="#ffffff">Age</text>
-<text x="208" y="55" font-size="11" font-weight="bold" fill="#ffffff">Science grade</text>
-<text x="328" y="55" font-size="11" font-weight="bold" fill="#ffffff">Information</text>
-<rect x="10" y="64" width="530" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">I.</text>
-<text x="58" y="82" font-size="11" fill="#1e293b">Nehir</text>
-<text x="148" y="82" font-size="11" fill="#1e293b">13</text>
-<text x="208" y="82" font-size="11" fill="#1e293b">85</text>
-<text x="328" y="82" font-size="11" fill="#1e293b">attended the camp last year</text>
-<rect x="10" y="89" width="530" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">II.</text>
-<text x="58" y="107" font-size="11" fill="#1e293b">Kaan</text>
-<text x="148" y="107" font-size="11" fill="#1e293b">14</text>
-<text x="208" y="107" font-size="11" fill="#1e293b">90</text>
-<text x="328" y="107" font-size="11" fill="#1e293b">has never been to a camp</text>
-<rect x="10" y="114" width="530" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">III.</text>
-<text x="58" y="132" font-size="11" fill="#1e293b">Elif</text>
-<text x="148" y="132" font-size="11" fill="#1e293b">16</text>
-<text x="208" y="132" font-size="11" fill="#1e293b">95</text>
-<text x="328" y="132" font-size="11" fill="#1e293b">has never attended the camp</text>
-<line x1="50" y1="38" x2="50" y2="139" stroke="#94a3b8"/>
-<line x1="140" y1="38" x2="140" y2="139" stroke="#94a3b8"/>
-<line x1="200" y1="38" x2="200" y2="139" stroke="#94a3b8"/>
-<line x1="320" y1="38" x2="320" y2="139" stroke="#94a3b8"/>
-<rect x="10" y="38" width="530" height="101" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the students can join the Space Camp?</p>`,
-  c: ["I and II", "II and III", "I, II and III", "Only II"],
-  a: "D",
-  s: `<p>Üç koşulun <b>hepsi</b> sağlanmalı.</p><p>I. Nehir: yaş ✓, not ✓, ama kampa geçen yıl katıldı ✗.</p><p>II. Kaan: 14 yaş ✓, 90 ✓, daha önce hiç katılmadı ✓.</p><p>III. Elif: notu en yüksek ama 16 yaşında, yaş sınırı 15 ✗ (tuzak: en yüksek not).</p><p>Yalnızca Kaan katılabilir. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Read the summer science school programmes and Damla’s message.</p><div class="fig"><svg viewBox="0 0 515 174" width="515" role="img" aria-label="Yaz bilim okulu programları">
-<text x="257.5" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">SUMMER SCIENCE SCHOOL</text>
-<rect x="10" y="38" width="495" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Programme</text>
-<text x="168" y="55" font-size="11" font-weight="bold" fill="#ffffff">Subject</text>
-<text x="268" y="55" font-size="11" font-weight="bold" fill="#ffffff">Days</text>
-<text x="363" y="55" font-size="11" font-weight="bold" fill="#ffffff">Month</text>
-<text x="443" y="55" font-size="11" font-weight="bold" fill="#ffffff">Ages</text>
-<rect x="10" y="64" width="495" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">Young Chemists</text>
-<text x="168" y="82" font-size="11" fill="#1e293b">chemistry</text>
-<text x="268" y="82" font-size="11" fill="#1e293b">weekdays</text>
-<text x="363" y="82" font-size="11" fill="#1e293b">July</text>
-<text x="443" y="82" font-size="11" fill="#1e293b">12–14</text>
-<rect x="10" y="89" width="495" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">Lab Explorers</text>
-<text x="168" y="107" font-size="11" fill="#1e293b">chemistry</text>
-<text x="268" y="107" font-size="11" fill="#1e293b">weekends</text>
-<text x="363" y="107" font-size="11" fill="#1e293b">August</text>
-<text x="443" y="107" font-size="11" fill="#1e293b">10–12</text>
-<rect x="10" y="114" width="495" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">Space Lab</text>
-<text x="168" y="132" font-size="11" fill="#1e293b">astronomy</text>
-<text x="268" y="132" font-size="11" fill="#1e293b">weekends</text>
-<text x="363" y="132" font-size="11" fill="#1e293b">August</text>
-<text x="443" y="132" font-size="11" fill="#1e293b">12–15</text>
-<rect x="10" y="139" width="495" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">Chemistry Magic</text>
-<text x="168" y="157" font-size="11" fill="#1e293b">chemistry</text>
-<text x="268" y="157" font-size="11" fill="#1e293b">weekends</text>
-<text x="363" y="157" font-size="11" fill="#1e293b">August</text>
-<text x="443" y="157" font-size="11" fill="#1e293b">13–16</text>
-<line x1="160" y1="38" x2="160" y2="164" stroke="#94a3b8"/>
-<line x1="260" y1="38" x2="260" y2="164" stroke="#94a3b8"/>
-<line x1="355" y1="38" x2="355" y2="164" stroke="#94a3b8"/>
-<line x1="435" y1="38" x2="435" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="495" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><div class="box"><p><b>Damla:</b> I’m 13 years old and I love doing chemistry experiments. I go to a swimming course on weekdays, so I’m only free at weekends. In July, I’m going to visit my grandparents.</p></div><p>Which programme is the most suitable for Damla?</p>`,
-  c: ["Young Chemists", "Chemistry Magic", "Lab Explorers", "Space Lab"],
-  a: "B",
-  s: `<p>Damla’nın koşulları: 13 yaş, kimya, yalnızca hafta sonu, Temmuz’da yok → Ağustos.</p><p>A: kimya ve yaş uygun ama hafta içi ve Temmuz’da ✗. C: kimya, hafta sonu, Ağustos ama yaş aralığı 10–12 ✗. D: hafta sonu ve Ağustos ama konu astronomi ✗.</p><p>B: kimya ✓, hafta sonu ✓, Ağustos ✓, 13–16 yaş ✓. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>A school magazine interviewed an astronomer, Dr. Ayla Yıldız.</p><div class="dialog"><div><b>Reporter:</b> When did you become interested in astronomy?</div><div><b>Dr. Yıldız:</b> When I was nine, my grandfather gave me a small telescope as a present. I have loved the night sky since that day.</div><div><b>Reporter:</b> What do you do at the observatory?</div><div><b>Dr. Yıldız:</b> I usually work at night. I take photos of distant stars, and the next day I study them on my computer.</div><div><b>Reporter:</b> Have you ever discovered anything new?</div><div><b>Dr. Yıldız:</b> Yes. In 2019, my team found a new asteroid, and it was named after my hometown, Sivas.</div><div><b>Reporter:</b> What is your advice for young astronomers?</div><div><b>Dr. Yıldız:</b> Be patient! Sometimes you wait for clear skies for weeks.</div></div><p>Which of the following is <b>CORRECT</b> according to the interview?</p>`,
-  c: ["She bought her first telescope when she was nine.", "She examines the photos of the stars as soon as she takes them.", "An asteroid was named after the city she comes from.", "She thinks it is easy to find clear skies for observation."],
-  a: "C",
-  s: `<p>C: “it was named after my hometown, Sivas” → bir asteroide memleketinin adı verildi ✓.</p><p>A: teleskobu satın almadı; dedesi hediye etti ✗. B: fotoğrafları gece çekiyor, <b>ertesi gün</b> inceliyor ✗. D: “Sometimes you wait for clear skies for weeks” → kolay değil ✗. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>Bulut put one spoon of sugar into the same amount of water at different temperatures. He did not stir the water. He recorded the time the sugar needed to dissolve completely.</p><div class="fig"><svg viewBox="0 0 480 174" width="480" role="img" aria-label="Şeker çözünme tablosu">
-<text x="240.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Sugar Experiment</text>
-<rect x="10" y="38" width="460" height="26" fill="#be185d"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Water temperature</text>
-<text x="248" y="55" font-size="11" font-weight="bold" fill="#ffffff">Time to dissolve</text>
-<rect x="10" y="64" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">10 °C</text>
-<text x="248" y="82" font-size="11" fill="#1e293b">180 seconds</text>
-<rect x="10" y="89" width="460" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">30 °C</text>
-<text x="248" y="107" font-size="11" fill="#1e293b">120 seconds</text>
-<rect x="10" y="114" width="460" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">50 °C</text>
-<text x="248" y="132" font-size="11" fill="#1e293b">60 seconds</text>
-<rect x="10" y="139" width="460" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">70 °C</text>
-<text x="248" y="157" font-size="11" fill="#1e293b">30 seconds</text>
-<line x1="240" y1="38" x2="240" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="460" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the following is <b>CORRECT</b> according to the results?</p>`,
-  c: ["The hotter the water is, the faster the sugar dissolves.", "Sugar doesn’t dissolve in cold water.", "At 50 °C, the sugar dissolved twice as fast as at 10 °C.", "The sugar dissolved in 30 seconds in the 50 °C water."],
-  a: "A",
-  s: `<p>A: sıcaklık arttıkça (10 → 70 °C) süre azalıyor (180 → 30 s) → su ne kadar sıcaksa şeker o kadar hızlı çözünür ✓.</p><p>B: 10 °C’de de çözündü (180 s) ✗. C: 180 ÷ 60 = 3 → üç kat hızlı, iki kat değil ✗. D: 50 °C’de 60 saniye; 30 saniye 70 °C’ye ait ✗. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Complete the conversation.</p><div class="dialog"><div><b>Can:</b> Have you <b>(1) ………</b> seen a solar eclipse?</div><div><b>Eda:</b> No, never. But I have <b>(2) ………</b> read an article about the next one. I finished it five minutes ago.</div><div><b>Can:</b> Our teacher wants to take us to the observatory to watch it. Has the school announced the date <b>(3) ………</b>?</div><div><b>Eda:</b> No, not yet. Maybe tomorrow.</div></div><p>Which of the following completes the gaps <b>CORRECTLY</b>?</p>`,
-  c: ["(1) yet – (2) ever – (3) just", "(1) just – (2) yet – (3) ever", "(1) ever – (2) yet – (3) just", "(1) ever – (2) just – (3) yet"],
-  a: "D",
-  s: `<p>(1) “Have you <b>ever</b> …?” → hayatın boyunca hiç … yaptın mı? (cevap: “No, never”).</p><p>(2) “I finished it five minutes ago” → az önce: <b>just</b>.</p><p>(3) Soru cümlesinin sonunda “henüz / şimdiye kadar” → <b>yet</b> (cevap: “not yet”).</p><p>Diğer şıklarda bu zarflar yanlış yerlerde ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Four people are giving their opinions about artificial intelligence (AI) in medicine.</p><div class="dialog"><div><b>Ahmet:</b> AI can examine thousands of X-rays in a few minutes. It will help hospitals find illnesses much earlier.</div><div><b>Buse:</b> Computers can make mistakes too. I think the results of AI should always be checked by a doctor before a decision is made.</div><div><b>Cem:</b> I don’t trust machines with my health. Hospitals shouldn’t use AI at all.</div><div><b>Dila:</b> In the future, robots will do operations alone, and we won’t need surgeons anymore.</div></div><p>Who thinks that AI results should be checked by a doctor?</p>`,
-  c: ["Ahmet", "Buse", "Cem", "Dila"],
-  a: "B",
-  s: `<p>Buse: “the results of AI should always be checked by a doctor before a decision is made” ✓.</p><p>Ahmet yapay zekânın faydasından söz ediyor ama sonuçların doktor tarafından kontrol edilmesinden bahsetmiyor ✗. Cem hastanelerin yapay zekâyı hiç kullanmamasını istiyor ✗. Dila cerrahlara gerek kalmayacağını düşünüyor ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Read Irmak’s notes about her salt crystal experiment.</p><div class="fig"><svg viewBox="0 0 540 204" width="540" role="img" aria-label="Tuz kristali deneyi">
-<rect x="4" y="4" width="532" height="196" rx="10" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Growing Salt Crystals – Irmak’s Notes</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">First, I measured 200 ml of water with a measuring cup. Then I heated the water in</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">a pan and added salt with a spoon. I kept adding salt until no more salt</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">dissolved.</text>
-<text x="22" y="104" font-size="11" fill="#1e293b">After the water cooled a little, I poured it into a glass jar. I tied a piece of</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">string to a pencil, put the pencil on top of the jar and let the string hang into</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">the salty water.</text>
-<text x="22" y="158" font-size="11" fill="#1e293b">A week later, I saw small crystals on the string, and I looked at them carefully</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">with a magnifying glass.</text>
-</svg></div><p>Which of the following did Irmak <b>NOT</b> use in her experiment?</p>`,
-  c: ["a magnifying glass", "a measuring cup", "a thermometer", "a spoon"],
-  a: "C",
-  s: `<p>Notlarda kullanılanlar: measuring cup (200 ml su), pan, spoon (tuz ekleme), glass jar, string, pencil, magnifying glass (kristalleri inceleme).</p><p>C: Suyu ısıttı ve soğumasını bekledi ama sıcaklığı <b>ölçmedi</b>; termometre geçmiyor ✓ (tuzak: ısıtma/soğuma termometre çağrıştırır). Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Read the text about a famous scientist.</p><div class="fig"><svg viewBox="0 0 540 268" width="540" role="img" aria-label="Louis Pasteur biyografisi">
-<rect x="4" y="4" width="532" height="260" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#7c3aed"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Louis Pasteur (1822 – 1895)</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Louis Pasteur was born in a small town in eastern France in 1822. His father was a</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">tanner, a worker who made leather from animal skins. As a boy, Louis wasn’t one of</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">the top students in his class, but he was very good at drawing and painting.</text>
-<text x="22" y="104" font-size="11" fill="#1e293b">Later, he studied chemistry in Paris and became a professor. At that time, nobody</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">knew why milk and wine went bad so quickly. Pasteur showed that tiny living</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">things, germs, caused the problem. He also found that most of these germs are</text>
-<text x="22" y="152" font-size="11" fill="#1e293b">killed when milk is heated and then cooled quickly. Today this method is called</text>
-<text x="22" y="168" font-size="11" fill="#1e293b">“pasteurisation” after him, and most of the milk in supermarkets is treated in</text>
-<text x="22" y="184" font-size="11" fill="#1e293b">this way.</text>
-<text x="22" y="206" font-size="11" fill="#1e293b">In 1885, a nine-year-old boy was bitten by a dog with rabies, a deadly disease.</text>
-<text x="22" y="222" font-size="11" fill="#1e293b">Pasteur gave the boy his new vaccine, and the boy survived. Pasteur died in 1895,</text>
-<text x="22" y="238" font-size="11" fill="#1e293b">at the age of 72.</text>
-</svg></div><p>Which of the following questions <b>CANNOT</b> be answered according to the text?</p>`,
-  c: ["Why did Pasteur decide to study chemistry?", "What did Pasteur’s father do for a living?", "How is milk made safer to drink?", "How old was the boy who was saved by Pasteur’s vaccine?"],
-  a: "A",
-  s: `<p>Metinde cevabı <b>olmayan</b> soruyu arıyoruz.</p><p>B: “His father was a tanner, a worker who made leather” ✓. C: “germs are killed when milk is heated and then cooled quickly” ✓ (edilgen yapı: <i>is heated / are killed</i>). D: “a nine-year-old boy was bitten…” → 9 yaşında ✓ (tuzak: 72 yaşı Pasteur’ün ölüm yaşıdır, çocuğun değil; ama soru yine cevaplanabilir).</p><p>A: Paris’te kimya okuduğu söyleniyor ama bu bölümü <b>neden</b> seçtiği hiç yazmıyor. “Çizimde iyiydi” bilgisinden sebep çıkarmak yanılgıdır. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>A school magazine interviewed Dr. Selin Kaya, a volcanologist, in 2026.</p><div class="dialog"><div><b>Reporter:</b> How long have you been a volcanologist?</div><div><b>Dr. Kaya:</b> For eighteen years. I started working right after I graduated from university.</div><div><b>Reporter:</b> Have you ever been in danger?</div><div><b>Dr. Kaya:</b> Yes, once. In 2014, we were collecting samples on Mount Etna in Italy when hot rocks suddenly began to fall near us. We ran down the mountain as fast as we could!</div><div><b>Reporter:</b> What do you do with the samples?</div><div><b>Dr. Kaya:</b> We bring gas and rock samples back to Türkiye. They are tested in our laboratory in Ankara, and the results are shared with other scientists.</div><div><b>Reporter:</b> Have you visited any volcanoes this year?</div><div><b>Dr. Kaya:</b> Not yet, but I’m going to Iceland next month.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>`,
-  c: ["Where are the samples tested?", "When did Dr. Kaya graduate from university?", "Which volcano did Dr. Kaya visit first?", "Has Dr. Kaya been to a volcano in 2026?"],
-  a: "C",
-  s: `<p>A: “They are tested in our laboratory in Ankara” ✓. B: Röportaj 2026’da yapıldı, 18 yıldır volkanolog ve mezun olur olmaz başladı → 2026 − 18 = <b>2008</b> ✓ (hesapla bulunur). D: “Not yet” → bu yıl henüz gitmedi ✓ (<i>yet</i> = henüz).</p><p>C: Etna yalnızca <b>tehlike anı</b> olarak anlatılıyor; ilk ziyaret ettiği volkan olduğu söylenmiyor. Tuzak: metinde geçen tek volkan adını “ilk” sanmak. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the timeline in a science museum.</p><div class="fig"><svg viewBox="0 0 540 156" width="540" role="img" aria-label="Zaman çizelgesi">
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Inventions and Discoveries</text>
-<line x1="30" y1="70" x2="510" y2="70" stroke="#334155" stroke-width="3"/>
-<circle cx="90.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="90.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1876</text>
-<text x="90.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the telephone</text>
-<text x="90.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">patented by Bell</text>
-<circle cx="210.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="210.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1879</text>
-<text x="210.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the light bulb</text>
-<text x="210.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">invented by Edison</text>
-<circle cx="330.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="330.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1903</text>
-<text x="330.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the first powered</text>
-<text x="330.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">flight by the</text>
-<text x="330.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Wright brothers</text>
-<circle cx="450.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="450.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1928</text>
-<text x="450.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">penicillin</text>
-<text x="450.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">discovered by</text>
-<text x="450.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Fleming</text>
-</svg></div><p>Which of the following sentences is correct both in <b>grammar</b> and in <b>information</b>?</p>`,
-  c: ["The telephone was patented by Edison in 1876.", "Penicillin was discovered by Fleming 25 years after the first powered flight.", "The light bulb was invent by Edison three years after the telephone.", "The first powered flight was made in 1903, before the light bulb was invented."],
-  a: "B",
-  s: `<p>İki şeyi birlikte denetliyoruz: edilgen yapı (was/were + V3) ve tarih bilgisi.</p><p>B: 1928 − 1903 = <b>25</b> ✓, “was discovered” ✓.</p><p>A: dil bilgisi doğru ama telefonun patenti <b>Bell</b>’e ait (isim karıştırma yanılgısı). C: bilgi doğru (1879 − 1876 = 3) ama “was <b>invent</b>” yanlış; V3 = invented. D: dil bilgisi doğru ama ampul 1879’da, uçuş 1903’te → uçuş ampulden <b>sonra</b>. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Complete Ece’s text for the school science blog.</p><div class="box"><p>Our club has used this microscope (1) ---- 2019. I have (2) ---- looked at onion cells with it, but I haven’t seen any bacteria (3) ----. Today my friend Ali is very happy because he has (4) ---- finished his report about cells. He has been a member of the club (5) ---- three years.</p></div><p>Which of the following completes the text <b>correctly</b>?</p>`,
-  c: ["since – yet – already – for – just", "for – already – yet – just – since", "since – already – ever – just – for", "since – already – yet – just – for"],
-  a: "D",
-  s: `<p>(1) 2019 bir başlangıç noktası → <b>since</b>. (2) olumlu present perfect, “zaten” → <b>already</b>. (3) olumsuz cümle sonu → <b>yet</b>. (4) “Today … very happy” → az önce → <b>just</b>. (5) three years bir süre → <b>for</b>.</p><p>A: (2)’de “have yet looked” olumlu cümlede yanlış. B: “for 2019” / “since three years” yanlış (since–for karışıklığı). C: (3)’te “ever” olumsuz cümle sonunda kullanılmaz; “yet” gerekir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Deniz made paper helicopters and dropped them from the same height. She measured how long each one took to reach the floor.</p><div class="fig"><svg viewBox="0 0 510 199" width="510" role="img" aria-label="Kağıt helikopter deney tablosu">
-<text x="255.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Paper Helicopter Experiment</text>
-<rect x="10" y="38" width="490" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Trial</text>
-<text x="88" y="55" font-size="11" font-weight="bold" fill="#ffffff">Wing length</text>
-<text x="198" y="55" font-size="11" font-weight="bold" fill="#ffffff">Paper</text>
-<text x="288" y="55" font-size="11" font-weight="bold" fill="#ffffff">Paper clips</text>
-<text x="398" y="55" font-size="11" font-weight="bold" fill="#ffffff">Fall time</text>
-<rect x="10" y="64" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1</text>
-<text x="88" y="82" font-size="11" fill="#1e293b">8 cm</text>
-<text x="198" y="82" font-size="11" fill="#1e293b">thin</text>
-<text x="288" y="82" font-size="11" fill="#1e293b">1</text>
-<text x="398" y="82" font-size="11" fill="#1e293b">2.4 s</text>
-<rect x="10" y="89" width="490" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2</text>
-<text x="88" y="107" font-size="11" fill="#1e293b">8 cm</text>
-<text x="198" y="107" font-size="11" fill="#1e293b">thin</text>
-<text x="288" y="107" font-size="11" fill="#1e293b">2</text>
-<text x="398" y="107" font-size="11" fill="#1e293b">1.8 s</text>
-<rect x="10" y="114" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">3</text>
-<text x="88" y="132" font-size="11" fill="#1e293b">10 cm</text>
-<text x="198" y="132" font-size="11" fill="#1e293b">thin</text>
-<text x="288" y="132" font-size="11" fill="#1e293b">1</text>
-<text x="398" y="132" font-size="11" fill="#1e293b">2.9 s</text>
-<rect x="10" y="139" width="490" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">4</text>
-<text x="88" y="157" font-size="11" fill="#1e293b">10 cm</text>
-<text x="198" y="157" font-size="11" fill="#1e293b">thick</text>
-<text x="288" y="157" font-size="11" fill="#1e293b">2</text>
-<text x="398" y="157" font-size="11" fill="#1e293b">2.0 s</text>
-<rect x="10" y="164" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">5</text>
-<text x="88" y="182" font-size="11" fill="#1e293b">6 cm</text>
-<text x="198" y="182" font-size="11" fill="#1e293b">thin</text>
-<text x="288" y="182" font-size="11" fill="#1e293b">1</text>
-<text x="398" y="182" font-size="11" fill="#1e293b">1.9 s</text>
-<line x1="80" y1="38" x2="80" y2="189" stroke="#94a3b8"/>
-<line x1="190" y1="38" x2="190" y2="189" stroke="#94a3b8"/>
-<line x1="280" y1="38" x2="280" y2="189" stroke="#94a3b8"/>
-<line x1="390" y1="38" x2="390" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="490" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the following can be <b>concluded</b> from the results?</p>`,
-  c: ["Helicopters made of thick paper fall more slowly than those made of thin paper.", "When only the wing length is increased, the helicopter falls more slowly.", "Adding one more paper clip always makes the fall time 0.6 seconds shorter.", "Helicopter 4 fell more slowly than helicopter 3 because it was made of thick paper."],
-  a: "B",
-  s: `<p>Bir sonuç çıkarmak için yalnızca <b>tek değişkenin</b> farklı olduğu denemeler karşılaştırılır.</p><p>B: 5 – 1 – 3 denemelerinde kağıt (ince) ve ataş (1) aynı, yalnızca kanat 6 → 8 → 10 cm; süre 1,9 → 2,4 → 2,9 s artıyor → daha yavaş düşüyor ✓.</p><p>A: Kağıt türü dışında her şeyi aynı olan bir çift yok (4. denemede ataş da farklı) → çıkarılamaz. C: Ataş etkisini gösteren tek çift 1–2 (2,4 − 1,8 = 0,6); tek örnekten “always” genellemesi yapılamaz. D: 4’ün süresi 2,0 s &lt; 2,9 s → aslında daha <b>hızlı</b> düştü ve iki değişken birden farklı. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Read the rules of a science competition and the information about four teams.</p><div class="box"><p><b>YOUNG SCIENTISTS 2027 – Who can join the final?</b></p><p>• All team members must be 12–14 years old.</p><p>• A team must have two or three members.</p><p>• The project must be about energy or the environment.</p><p>• Teams that won a prize in 2025 or 2026 can’t join.</p><p>• The project video must be sent before 15 May.</p></div><table><tr><th>Team</th><th>Members (ages)</th><th>Project</th><th>Last prize</th><th>Video sent</th></tr><tr><td>Team Ece</td><td>2 (13, 14)</td><td>a system that saves water in gardens</td><td>2024</td><td>10 May</td></tr><tr><td>Team Bora</td><td>3 (12, 13, 13)</td><td>a bike that charges phones</td><td>—</td><td>16 May</td></tr><tr><td>Team Can</td><td>4 (12, 12, 13, 14)</td><td>a robot that sorts rubbish for recycling</td><td>—</td><td>2 May</td></tr><tr><td>Team Duru</td><td>2 (13, 13)</td><td>a cheap solar oven</td><td>2026</td><td>12 May</td></tr></table><p>Which team can join the final?</p>`,
-  c: ["Team Ece", "Team Bora", "Team Can", "Team Duru"],
-  a: "A",
-  s: `<p>Her takımı beş koşulun hepsiyle denetleriz:</p><p>Team Ece: yaşlar 13–14 ✓, 2 kişi ✓, su tasarrufu = çevre ✓, ödül 2024 (2025/2026 değil) ✓, video 10 Mayıs ✓ → katılabilir.</p><p>Team Bora: video 16 Mayıs → 15 Mayıs’tan önce değil ✗ (enerji konusu uygun olduğu için seçilebilir). Team Can: 4 kişi ✗ (yaşlar ve konu uygun). Team Duru: 2026’da ödül almış ✗. Tuzak: Ece’nin de bir ödülü olduğu için elenmesi gerektiğini sanmak; kural yalnızca 2025 ve 2026’yı kapsıyor. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>The graph shows the number of visitors to a science centre in the first four months of 2025 and 2026.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Ziyaretçi sütun grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Visitors to the Science Centre</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="220.9" x2="520" y2="220.9" stroke="#e2e8f0"/>
-<text x="54" y="224.85714285714286" font-size="11" fill="#1e293b" text-anchor="end">100</text>
-<line x1="60" y1="191.7" x2="520" y2="191.7" stroke="#e2e8f0"/>
-<text x="54" y="195.71428571428572" font-size="11" fill="#1e293b" text-anchor="end">200</text>
-<line x1="60" y1="162.6" x2="520" y2="162.6" stroke="#e2e8f0"/>
-<text x="54" y="166.57142857142856" font-size="11" fill="#1e293b" text-anchor="end">300</text>
-<line x1="60" y1="133.4" x2="520" y2="133.4" stroke="#e2e8f0"/>
-<text x="54" y="137.42857142857144" font-size="11" fill="#1e293b" text-anchor="end">400</text>
-<line x1="60" y1="104.3" x2="520" y2="104.3" stroke="#e2e8f0"/>
-<text x="54" y="108.28571428571428" font-size="11" fill="#1e293b" text-anchor="end">500</text>
-<line x1="60" y1="75.1" x2="520" y2="75.1" stroke="#e2e8f0"/>
-<text x="54" y="79.14285714285714" font-size="11" fill="#1e293b" text-anchor="end">600</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">700</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">number of visitors</text>
-<rect x="83.5" y="133.4" width="32.0" height="116.6" fill="#93c5fd"/>
-<text x="99.5" y="129.4" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">400</text>
-<rect x="117.5" y="118.9" width="32.0" height="131.1" fill="#1d4ed8"/>
-<text x="133.5" y="114.9" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">450</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">January</text>
-<rect x="198.5" y="104.3" width="32.0" height="145.7" fill="#93c5fd"/>
-<text x="214.5" y="100.3" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">500</text>
-<rect x="232.5" y="148.0" width="32.0" height="102.0" fill="#1d4ed8"/>
-<text x="248.5" y="144.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">350</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">February</text>
-<rect x="313.5" y="162.6" width="32.0" height="87.4" fill="#93c5fd"/>
-<text x="329.5" y="158.6" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">300</text>
-<rect x="347.5" y="75.1" width="32.0" height="174.9" fill="#1d4ed8"/>
-<text x="363.5" y="71.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">600</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">March</text>
-<rect x="428.5" y="118.9" width="32.0" height="131.1" fill="#93c5fd"/>
-<text x="444.5" y="114.9" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">450</text>
-<rect x="462.5" y="69.3" width="32.0" height="180.7" fill="#1d4ed8"/>
-<text x="478.5" y="65.3" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">620</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">April</text>
-<rect x="70" y="278" width="12" height="12" fill="#93c5fd"/>
-<text x="87" y="288" font-size="11" fill="#1e293b">2025</text>
-<rect x="148" y="278" width="12" height="12" fill="#1d4ed8"/>
-<text x="165" y="288" font-size="11" fill="#1e293b">2026</text>
-</svg></div><div class="box"><p><b>Manager’s note:</b> In one of these months in 2026, the observatory was closed for repairs, so <u>fewer</u> people visited the centre than in the same month of 2025. In another month, a robot exhibition was opened, and the number of visitors was <u>twice</u> the number in the same month of 2025.</p></div><p>According to the graph and the note, in which months was the observatory <b>closed</b> and the robot exhibition <b>opened</b>?</p>`,
-  c: ["closed: February – opened: April", "closed: March – opened: February", "closed: January – opened: March", "closed: February – opened: March"],
-  a: "D",
-  s: `<p>Her ayı 2025 ile karşılaştırırız: Ocak 400 → 450 (arttı), Şubat 500 → 350 (<b>azaldı</b>), Mart 300 → 600 (<b>2 katı</b>), Nisan 450 → 620 (arttı ama 2 katı 900 olurdu).</p><p>Gözlemevi kapalı: tek düşüş olan <b>Şubat</b>. Robot sergisi: tam 2 katına çıkan <b>Mart</b>.</p><p>A: Nisan 2026’nın en kalabalık ayı ama 2 katı değil (en yüksek değer tuzağı). B: Mart’ta ziyaretçi arttı, azalmadı. C: Ocak’ta ziyaretçi azalmadı. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Read what an engineer says in 2026.</p><div class="box"><p>“My name is Mert Er, and I’m a robotics engineer. I have worked at this company since 2019. Before that, I taught at a university for six years. I have designed three rescue robots so far. The first one was used after an earthquake in 2023, but the other two haven’t been tested in real life yet. I have never worked abroad, but next year I’m going to join a project in Japan.”</p></div><p>I. He started teaching at the university in 2013.</p><p>II. All of his robots have been tested in real situations.</p><p>III. He hasn’t worked in another country yet.</p><p>Which of the statements above is/are <b>TRUE</b>?</p>`,
-  c: ["Only I", "Only II", "I and III", "I, II and III"],
-  a: "C",
-  s: `<p>I: 2019’dan beri şirkette, öncesinde 6 yıl üniversitede → 2019 − 6 = <b>2013</b> ✓.</p><p>II: Yalnızca ilk robot kullanıldı; diğer ikisi “haven’t been tested … yet” ✗ (tuzak: “three robots” ve “was used” bilgisini hepsine genellemek).</p><p>III: “I have never worked abroad” → başka ülkede çalışmadı ✓; Japonya planı gelecek yıl. Doğrular I ve III. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the conversation.</p><div class="dialog"><div><b>Ece:</b> My volcano model didn’t erupt at the science fair yesterday.</div><div><b>Tuna:</b> ----</div><div><b>Ece:</b> I think I didn’t use enough vinegar. I’ll try again with more.</div></div><p>Which of the following <b>CANNOT</b> fill in the blank?</p>`,
-  c: ["How long did it take you to build it?", "What do you think went wrong?", "Why didn’t it work, do you think?", "Have you found out what the problem was?"],
-  a: "A",
-  s: `<p>Ece’nin cevabı bir <b>sebep/tahmin</b> bildiriyor: “I think I didn’t use enough vinegar.” Boşluğa sebebi soran bir soru gelmeli.</p><p>B, C ve D sorunun nedenini soruyor; D present perfect ile “sorunun ne olduğunu buldun mu?” diye soruyor ve “I think …” cevabıyla uyumlu.</p><p>A: Yapımın <b>ne kadar sürdüğünü</b> soruyor; cevap bir süre olmalıydı (ör. “Two days.”). Bu yüzden boşluğa gelemez. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the steps showing how drinking water is cleaned.</p><div class="fig"><svg viewBox="0 0 540 190" width="540" role="img" aria-label="Su arıtma basamakları">
-<rect x="4" y="4" width="532" height="182" rx="10" fill="#f0f9ff" stroke="#0369a1" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0369a1"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">How Is Our Drinking Water Cleaned?</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Step 1: Water is collected from a lake.</text>
-<text x="22" y="72" font-size="11" fill="#1e293b">Step 2: Large pieces such as leaves are removed.</text>
-<text x="22" y="94" font-size="11" fill="#1e293b">Step 3: Chemicals are added, so small dirt particles stick together.</text>
-<text x="22" y="116" font-size="11" fill="#1e293b">Step 4: The water is filtered through sand.</text>
-<text x="22" y="138" font-size="11" fill="#1e293b">Step 5: Chlorine is added to kill germs.</text>
-<text x="22" y="160" font-size="11" fill="#1e293b">Step 6: The clean water is stored and then sent to homes.</text>
-</svg></div><p>Which of the following sentences describes the process correctly in terms of both <b>order</b> and <b>grammar</b>?</p>`,
-  c: ["First, the water is filtered through sand, and then large pieces are removed.", "After chemicals are added, the water is filtered through sand.", "Chlorine is added before the water is filtered through sand.", "The clean water is store first and then it is sent to homes."],
-  a: "B",
-  s: `<p>B: Kimyasallar 3. adımda eklenir, kumdan süzme 4. adımdır → sıra doğru; “are added / is filtered” doğru edilgen ✓.</p><p>A: Dil bilgisi doğru ama sıra ters (büyük parçalar 2. adımda, süzme 4. adımda). C: Dil bilgisi doğru ama klor 5. adımda, süzmeden (4) <b>sonra</b> eklenir. D: Sıra doğru ama “is <b>store</b>” yanlış; doğrusu “is stored”. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Read the text about a famous mathematician.</p><div class="fig"><svg viewBox="0 0 540 268" width="540" role="img" aria-label="Ada Lovelace biyografisi">
-<rect x="4" y="4" width="532" height="260" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#7c3aed"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Ada Lovelace (1815 – 1852)</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Ada Lovelace was born in London in 1815. Her father was the famous poet Lord</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">Byron, but she never really knew him because he left England when she was a baby.</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">Her mother wanted her to study mathematics and science instead of poetry, so Ada</text>
-<text x="22" y="98" font-size="11" fill="#1e293b">had private teachers at home.</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">When she was seventeen, she met Charles Babbage, an inventor who was designing a</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">machine that could do calculations. Ada was very interested in his ideas, and they</text>
-<text x="22" y="152" font-size="11" fill="#1e293b">wrote letters to each other for many years.</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">In 1843, Ada wrote long notes about Babbage’s machine. In these notes, she</text>
-<text x="22" y="190" font-size="11" fill="#1e293b">explained how the machine could follow a set of instructions step by step. Today,</text>
-<text x="22" y="206" font-size="11" fill="#1e293b">many people think these instructions were the first computer program. Sadly, Ada</text>
-<text x="22" y="222" font-size="11" fill="#1e293b">died in 1852, when she was only 36. Years later, a programming language was named</text>
-<text x="22" y="238" font-size="11" fill="#1e293b">“Ada” after her.</text>
-</svg></div><p>Which of the following is <b>NOT</b> mentioned in the text?</p>`,
-  c: ["the reason why Ada didn’t know her father", "the way Ada was educated as a child", "whether Babbage finished building his machine", "Ada’s age when she first met Babbage"],
-  a: "C",
-  s: `<p>A: “he left England when she was a baby” ✓. B: “Ada had private teachers at home” ✓. D: “When she was seventeen, she met Charles Babbage” ✓.</p><p>C: Babbage’in makineyi <b>tasarladığı</b> (was designing) söyleniyor; makineyi bitirip bitirmediği hiç yazmıyor. Tuzak: “Ada wrote notes about Babbage’s machine” cümlesinden makinenin bitmiş olduğunu çıkarmak. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>A reporter is interviewing Zeynep Koç (15), a young inventor.</p><div class="dialog"><div><b>Reporter:</b> When did you get the idea for your invention?</div><div><b>Zeynep:</b> Two years ago. My grandfather lost his sight, and he kept hitting things in the street.</div><div><b>Reporter:</b> So you made a smart walking stick. How does it work?</div><div><b>Zeynep:</b> It has a sensor. When there’s something in front of it, the stick vibrates.</div><div><b>Reporter:</b> Have you sold any sticks?</div><div><b>Zeynep:</b> Not yet. But a company has already contacted us, and we’re going to meet them in June.</div><div><b>Reporter:</b> What are you working on now?</div><div><b>Zeynep:</b> I’m adding GPS, so the stick can show the way home. I’ve been working on it since March.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>`,
-  c: ["Why did Zeynep decide to make the walking stick?", "Has the stick been sold to anyone yet?", "What does the stick do when there is an object in front of it?", "Which company has contacted Zeynep?"],
-  a: "D",
-  s: `<p>A: dedesi görme yetisini kaybetti ve sokakta bir şeylere çarpıyordu ✓. B: “Have you sold any sticks? – Not yet.” → henüz satılmadı ✓ (edilgen soru, etken cevapla karşılanmış). C: “the stick vibrates” ✓.</p><p>D: Bir şirketin iletişime geçtiği (“has already contacted us”) söyleniyor ama <b>şirketin adı</b> verilmiyor. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the timeline and read the riddle from a science quiz.</p><div class="fig"><svg viewBox="0 0 540 156" width="540" role="img" aria-label="Bilim zaman çizelgesi">
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Great Moments in Science</text>
-<line x1="30" y1="70" x2="510" y2="70" stroke="#334155" stroke-width="3"/>
-<circle cx="78.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="78.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1876</text>
-<text x="78.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the telephone</text>
-<text x="78.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">patented</text>
-<circle cx="174.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="174.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1895</text>
-<text x="174.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">X-rays</text>
-<text x="174.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">discovered</text>
-<circle cx="270.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="270.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1903</text>
-<text x="270.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">first powered</text>
-<text x="270.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">flight</text>
-<circle cx="366.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="366.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1928</text>
-<text x="366.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">penicillin</text>
-<text x="366.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">discovered</text>
-<circle cx="462.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="462.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1957</text>
-<text x="462.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">first satellite</text>
-<text x="462.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">sent into space</text>
-</svg></div><div class="box"><p><b>Riddle:</b> “I was <u>discovered</u>, not invented. I was found more than 50 years after the telephone was patented, but more than 20 years before the first satellite was sent into space. What am I?”</p></div><p>What is the answer to the riddle?</p>`,
-  c: ["penicillin", "X-rays", "the first satellite", "the light bulb"],
-  a: "A",
-  s: `<p>Üç koşul: (1) keşif olmalı, (2) 1876 + 50 = 1926’dan sonra, (3) 1957 − 20 = 1937’den önce.</p><p>Penisilin: keşif ✓, 1928 &gt; 1926 ✓, 1957 − 1928 = 29 &gt; 20 ✓.</p><p>B: X ışınları da keşiftir ama 1895 − 1876 = 19 yıl → 50’den az (“discovered” kelimesine takılma tuzağı). C: Uydu bir keşif değil ve “uydudan 20 yıl önce” olamaz. D: Ampul bir icattır (1879) ve çizelgede yok. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Four students wrote sentences in their lab diary.</p><div class="box"><p><b>Aslı:</b> Scientists have discovered a new planet last year.</p><p><b>Berk:</b> We haven’t finished the experiment yet, but we have already collected the data.</p><p><b>Cansu:</b> Our teacher has worked in this lab since five years.</p><p><b>Doruk:</b> Have you ever went to a science museum?</p></div><p>Whose sentence is grammatically <b>correct</b>?</p>`,
-  c: ["Aslı’s", "Berk’s", "Cansu’s", "Doruk’s"],
-  a: "B",
-  s: `<p>Berk: olumsuzda “yet” cümle sonunda, olumluda “already” have ile V3 arasında ✓.</p><p>Aslı: “last year” gibi belirli geçmiş zaman ifadesi present perfect ile kullanılmaz → “discovered … last year” olmalı. Cansu: “five years” bir süre → <b>for</b> five years. Doruk: present perfect’te V3 gerekir → “Have you ever <b>been</b> to…” (went = V2). Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Kerem wants to find out whether the <b>colour of a cup</b> affects how quickly the water in it warms up. He prepared the set-ups below with water at the same starting temperature.</p><div class="fig"><svg viewBox="0 0 540 199" width="540" role="img" aria-label="Deney düzenekleri tablosu">
-<text x="270.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Kerem’s Set-ups</text>
-<rect x="10" y="38" width="520" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Set-up</text>
-<text x="108" y="55" font-size="11" font-weight="bold" fill="#ffffff">Cup colour</text>
-<text x="238" y="55" font-size="11" font-weight="bold" fill="#ffffff">Amount of water</text>
-<text x="388" y="55" font-size="11" font-weight="bold" fill="#ffffff">Place</text>
-<rect x="10" y="64" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1</text>
-<text x="108" y="82" font-size="11" fill="#1e293b">black</text>
-<text x="238" y="82" font-size="11" fill="#1e293b">200 ml</text>
-<text x="388" y="82" font-size="11" fill="#1e293b">in sunlight</text>
-<rect x="10" y="89" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2</text>
-<text x="108" y="107" font-size="11" fill="#1e293b">white</text>
-<text x="238" y="107" font-size="11" fill="#1e293b">200 ml</text>
-<text x="388" y="107" font-size="11" fill="#1e293b">in the shade</text>
-<rect x="10" y="114" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">3</text>
-<text x="108" y="132" font-size="11" fill="#1e293b">white</text>
-<text x="238" y="132" font-size="11" fill="#1e293b">100 ml</text>
-<text x="388" y="132" font-size="11" fill="#1e293b">in sunlight</text>
-<rect x="10" y="139" width="520" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">4</text>
-<text x="108" y="157" font-size="11" fill="#1e293b">white</text>
-<text x="238" y="157" font-size="11" fill="#1e293b">200 ml</text>
-<text x="388" y="157" font-size="11" fill="#1e293b">in sunlight</text>
-<rect x="10" y="164" width="520" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">5</text>
-<text x="108" y="182" font-size="11" fill="#1e293b">black</text>
-<text x="238" y="182" font-size="11" fill="#1e293b">100 ml</text>
-<text x="388" y="182" font-size="11" fill="#1e293b">in the shade</text>
-<line x1="100" y1="38" x2="100" y2="189" stroke="#94a3b8"/>
-<line x1="230" y1="38" x2="230" y2="189" stroke="#94a3b8"/>
-<line x1="380" y1="38" x2="380" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="520" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which two set-ups should Kerem compare?</p>`,
-  c: ["1 and 2", "2 and 5", "3 and 4", "1 and 4"],
-  a: "D",
-  s: `<p>Değişken yalnızca <b>bardak rengi</b> olmalı; su miktarı ve yer aynı kalmalı.</p><p>1 ve 4: siyah – beyaz, ikisi de 200 ml, ikisi de güneşte ✓.</p><p>A (1–2): renk ve yer birlikte değişiyor. B (2–5): renk ve su miktarı birlikte değişiyor. C (3–4): renk aynı (beyaz), yalnızca su miktarı değişiyor → su miktarının etkisini test eder, rengin değil. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Kaan (13) wants to join one workshop at a science festival. Read his message and the programme.</p><div class="box"><p><b>Kaan:</b> I’m only free at weekends after 12:00. I have already done a workshop on robots, so I want a different subject. The workshop shouldn’t be longer than two hours, and of course it must be suitable for my age.</p></div><table><tr><th>Workshop</th><th>Day</th><th>Time</th><th>Ages</th></tr><tr><td>Robot Coding</td><td>Saturday</td><td>13:00 – 14:30</td><td>12 – 15</td></tr><tr><td>Bridges and Forces</td><td>Sunday</td><td>10:00 – 11:30</td><td>11 – 14</td></tr><tr><td>Kitchen Chemistry</td><td>Saturday</td><td>14:00 – 15:30</td><td>10 – 14</td></tr><tr><td>Rocket Building</td><td>Sunday</td><td>13:00 – 15:30</td><td>12 – 16</td></tr><tr><td>Microscope World</td><td>Sunday</td><td>12:30 – 14:00</td><td>14 – 17</td></tr></table><p>Which workshop can Kaan join?</p>`,
-  c: ["Bridges and Forces", "Rocket Building", "Kitchen Chemistry", "Microscope World"],
-  a: "C",
-  s: `<p>Dört koşul: hafta sonu 12:00’den sonra, robot dışı konu, en çok 2 saat, 13 yaşa uygun.</p><p>Kitchen Chemistry: Cumartesi 14:00 ✓, kimya ✓, 1,5 saat ✓, 10–14 ✓.</p><p>A: 10:00’da başlıyor ✗. B: 13:00–15:30 = 2,5 saat ✗ (yalnız başlama saatine bakma tuzağı). D: 14–17 yaş ✗ (Kaan 13). Robot Coding de konu yüzünden elenir. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>The graph shows the number of projects in each category at a school science fair.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Proje sayıları grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Science Fair Projects</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="209.2" x2="520" y2="209.2" stroke="#e2e8f0"/>
-<text x="54" y="213.2" font-size="11" fill="#1e293b" text-anchor="end">5</text>
-<line x1="60" y1="168.4" x2="520" y2="168.4" stroke="#e2e8f0"/>
-<text x="54" y="172.4" font-size="11" fill="#1e293b" text-anchor="end">10</text>
-<line x1="60" y1="127.6" x2="520" y2="127.6" stroke="#e2e8f0"/>
-<text x="54" y="131.6" font-size="11" fill="#1e293b" text-anchor="end">15</text>
-<line x1="60" y1="86.8" x2="520" y2="86.8" stroke="#e2e8f0"/>
-<text x="54" y="90.80000000000001" font-size="11" fill="#1e293b" text-anchor="end">20</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">25</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">number of projects</text>
-<rect x="83.5" y="152.1" width="32.0" height="97.9" fill="#fcd34d"/>
-<text x="99.5" y="148.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">12</text>
-<rect x="117.5" y="103.1" width="32.0" height="146.9" fill="#b45309"/>
-<text x="133.5" y="99.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">18</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Energy</text>
-<rect x="198.5" y="184.7" width="32.0" height="65.3" fill="#fcd34d"/>
-<text x="214.5" y="180.7" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">8</text>
-<rect x="232.5" y="201.0" width="32.0" height="49.0" fill="#b45309"/>
-<text x="248.5" y="197.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">6</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Health</text>
-<rect x="313.5" y="168.4" width="32.0" height="81.6" fill="#fcd34d"/>
-<text x="329.5" y="164.4" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
-<rect x="347.5" y="127.6" width="32.0" height="122.4" fill="#b45309"/>
-<text x="363.5" y="123.6" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">15</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Space</text>
-<rect x="428.5" y="135.8" width="32.0" height="114.2" fill="#fcd34d"/>
-<text x="444.5" y="131.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">14</text>
-<rect x="462.5" y="86.8" width="32.0" height="163.2" fill="#b45309"/>
-<text x="478.5" y="82.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">20</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Robots</text>
-<rect x="70" y="278" width="12" height="12" fill="#fcd34d"/>
-<text x="87" y="288" font-size="11" fill="#1e293b">2025</text>
-<rect x="148" y="278" width="12" height="12" fill="#b45309"/>
-<text x="165" y="288" font-size="11" fill="#1e293b">2026</text>
-</svg></div><div class="box"><p><b>Rule:</b> In 2026, a category had a second judge if its number of projects <u>went up by at least five</u> compared with 2025.</p></div><p>Which categories had a second judge in 2026?</p>`,
-  c: ["Energy and Robots only", "Energy, Space and Robots", "Space and Robots only", "Health, Energy and Space"],
-  a: "B",
-  s: `<p>Artışlar: Energy 12 → 18 (+6) ✓, Health 8 → 6 (−2) ✗, Space 10 → 15 (+5) ✓, Robots 14 → 20 (+6) ✓.</p><p>“at least five” = <b>en az 5</b>, yani 5 de dahil → Energy, Space, Robots.</p><p>A: Space’in +5’ini “5’ten fazla” sanarak dışarıda bırakma yanılgısı. C: Energy’nin artışı atlanmış. D: Health azaldı; Robots dışarıda kalmış. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the conversation in the school laboratory.</p><div class="dialog"><div><b>Ms. Arı:</b> Has anyone seen the thermometer?</div><div><b>Ali:</b> (1) ---- I put it back in the cupboard ten minutes ago.</div><div><b>Ms. Arı:</b> Thank you. And have you written your results in the table yet?</div><div><b>Ali:</b> (2) ---- We’ll finish it after the break.</div></div><p>Which of the following completes the conversation?</p>`,
-  c: ["(1) Yes, I have. – (2) Not completely.", "(1) No, I haven’t. – (2) Yes, we’ve already finished.", "(1) Yes, I have. – (2) We’ve just finished them.", "(1) No, never. – (2) Not completely."],
-  a: "A",
-  s: `<p>(1) Ali termometreyi dolaba kendisi koyduğuna göre onu <b>görmüş</b> → “Yes, I have.” (2) “We’ll finish it after the break” → henüz bitmemiş → “Not completely.”</p><p>B: (1) “No, I haven’t” Ali’nin cevabıyla çelişir; (2) “already finished” ile “after the break” çelişir. C: (1) doğru ama (2) “just finished” yine “bitireceğiz” ile çelişir. D: “No, never” hem soruya uymaz hem çelişkilidir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Pelin put different materials between a magnet and some paper clips. She counted how many paper clips the magnet could pick up through each material.</p><div class="fig"><svg viewBox="0 0 500 199" width="500" role="img" aria-label="Mıknatıs deney tablosu">
-<text x="250.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Magnet Test</text>
-<rect x="10" y="38" width="480" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Material</text>
-<text x="158" y="55" font-size="11" font-weight="bold" fill="#ffffff">Thickness</text>
-<text x="298" y="55" font-size="11" font-weight="bold" fill="#ffffff">Paper clips picked up</text>
-<rect x="10" y="64" width="480" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">paper</text>
-<text x="158" y="82" font-size="11" fill="#1e293b">1 mm</text>
-<text x="298" y="82" font-size="11" fill="#1e293b">8</text>
-<rect x="10" y="89" width="480" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">cardboard</text>
-<text x="158" y="107" font-size="11" fill="#1e293b">1 mm</text>
-<text x="298" y="107" font-size="11" fill="#1e293b">8</text>
-<rect x="10" y="114" width="480" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">cardboard</text>
-<text x="158" y="132" font-size="11" fill="#1e293b">5 mm</text>
-<text x="298" y="132" font-size="11" fill="#1e293b">3</text>
-<rect x="10" y="139" width="480" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">wood</text>
-<text x="158" y="157" font-size="11" fill="#1e293b">5 mm</text>
-<text x="298" y="157" font-size="11" fill="#1e293b">3</text>
-<rect x="10" y="164" width="480" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">glass</text>
-<text x="158" y="182" font-size="11" fill="#1e293b">5 mm</text>
-<text x="298" y="182" font-size="11" fill="#1e293b">3</text>
-<line x1="150" y1="38" x2="150" y2="189" stroke="#94a3b8"/>
-<line x1="290" y1="38" x2="290" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="480" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>I. When the thickness is the same, the type of material doesn’t change the result.</p><p>II. When the cardboard is thicker, the magnet picks up fewer paper clips.</p><p>III. The magnet can’t attract paper clips through glass.</p><p>Which of the statements above can be concluded from the results?</p>`,
-  c: ["Only I", "Only III", "I and II", "II and III"],
-  a: "C",
-  s: `<p>I: 1 mm’de kağıt = karton = 8; 5 mm’de karton = tahta = cam = 3 → aynı kalınlıkta malzeme türü sonucu değiştirmedi ✓.</p><p>II: Karton 1 mm → 5 mm: 8 → 3 ataş ✓ (tek değişken kalınlık).</p><p>III: Cam arkasından da <b>3</b> ataş çekildi ✗ (tuzak: “cam engeller” ön yargısı). Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Read the news report.</p><div class="box"><p>“Last week, a group of students found a dinosaur footprint near Lake Tuz. Experts examined it in a laboratory. Now they believe the footprint is about 70 million years old.”</p></div><p>Which of the following gives the information in the first two sentences <b>correctly</b> in the passive form?</p>`,
-  c: ["A dinosaur footprint is found by a group of students last week, and it is examined in a laboratory.", "A dinosaur footprint was find near Lake Tuz last week, and experts examined it in a laboratory.", "A dinosaur footprint was found near Lake Tuz last week, and it is examined by experts now.", "A dinosaur footprint was found by a group of students last week, and it was examined in a laboratory."],
-  a: "D",
-  s: `<p>Etken cümleler <b>geçmiş zaman</b> (found, examined) → edilgen: <b>was + V3</b>.</p><p>D: was found / was examined ✓, bilgi ✓.</p><p>A: “last week” varken geniş zaman edilgen (is found) yanlış. B: “was <b>find</b>” → V3 found olmalı; ayrıca ikinci yarısı etken kalmış. C: inceleme geçmişte yapıldı, “is examined … now” zamanı ve bilgiyi değiştirir. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Read the interview with Dr. Lale Ören, a scientist who studies ice in Antarctica.</p><div class="dialog"><div><b>Reporter:</b> When did you first go to Antarctica?</div><div><b>Dr. Ören:</b> In 2017. I’ve been there six times since then.</div><div><b>Reporter:</b> What exactly do you study?</div><div><b>Dr. Ören:</b> Ice! We drill deep into the ice and take out long pieces called ice cores. Tiny air bubbles in them show us what the air was like thousands of years ago.</div><div><b>Reporter:</b> What is the hardest part of your job?</div><div><b>Dr. Ören:</b> The cold isn’t really a problem because we have special clothes. The hardest part is being away from my family for months.</div><div><b>Reporter:</b> Have you seen any penguins?</div><div><b>Dr. Ören:</b> Of course! But we aren’t allowed to go closer than five metres to them.</div><div><b>Reporter:</b> Any advice for young scientists?</div><div><b>Dr. Ören:</b> Read a lot and never stop asking questions.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>`,
-  c: ["What do the air bubbles in ice cores tell scientists?", "How cold does it get in Antarctica in winter?", "What is the most difficult thing about Dr. Ören’s job?", "Is there a rule about getting close to penguins?"],
-  a: "B",
-  s: `<p>A: hava kabarcıkları binlerce yıl önceki havanın nasıl olduğunu gösteriyor ✓. C: en zor kısmı ailesinden aylarca uzak kalmak ✓ (tuzak: “soğuk” kelimesi geçtiği için soğuğu en zor şey sanmak; metin tam tersini söylüyor). D: beş metreden fazla yaklaşmak yasak ✓.</p><p>B: Soğuktan söz ediliyor ama <b>kaç derece</b> olduğu hiç verilmiyor. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the text for a science poster.</p><div class="box"><p>In 1876, the telephone (1) ---- by Alexander Graham Bell. Three years later, the light bulb (2) ---- by Thomas Edison. In 1903, the first powered plane (3) ---- by the Wright brothers. Penicillin (4) ---- by Alexander Fleming in 1928.</p></div><p>Which of the following completes the text <b>correctly</b>?</p>`,
-  c: ["was patented – was invented – was flown – was discovered", "was invented – was discovered – was flown – was invented", "patented – invented – flew – discovered", "was patented – was invented – was flown – is discovered"],
-  a: "A",
-  s: `<p>Özne nesnedir (telefon, ampul, uçak, penisilin) ve “by …” var → <b>edilgen</b>; tarihler geçmişte → <b>was + V3</b>. Ayrıca icat (invent) ile keşif (discover) ayrımı: ampul icat edilir, penisilin keşfedilir.</p><p>B: ampul “discovered”, penisilin “invented” → invent/discover karışıklığı. C: etken fiiller; “the telephone patented by Bell” özne-fiil olarak yanlış. D: 1928 geçmiş olduğu hâlde “is discovered” (geniş zaman). Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Arda wrote this text in 2027.</p><div class="box"><p>“I have been a member of the astronomy club since 2023. I have taken photos of the Moon many times, but I have never seen a comet. My sister Ela has been in the club for one year. She has just bought her own telescope, but we haven’t used it yet because it has been cloudy since Monday.”</p></div><p>Which of the following is <b>TRUE</b> according to the text?</p>`,
-  c: ["Arda joined the club for four years.", "Ela has been a club member since 2023.", "Arda and Ela haven’t looked through Ela’s new telescope.", "Arda has already seen a comet."],
-  a: "C",
-  s: `<p>C: “we haven’t used it yet” → yeni teleskopla henüz bakmadılar ✓.</p><p>A: “join” anlık bir eylemdir, “for four years” ile kullanılmaz (doğrusu: has been a member for four years / joined in 2023) → dil bilgisi yanlış. B: Ela “for one year” → 2027’de yazıldığına göre <b>2026’dan beri</b>; 2023 Arda’nın yılı (kişi karıştırma tuzağı). D: “I have never seen a comet” ✗. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Bora put four slices of the same bread in four dark boxes. He recorded the number of days until mould appeared on each slice.</p><div class="fig"><svg viewBox="0 0 520 174" width="520" role="img" aria-label="Ekmek küfü deney tablosu">
-<text x="260.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Bread Mould Experiment</text>
-<rect x="10" y="38" width="500" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Slice</text>
-<text x="88" y="55" font-size="11" font-weight="bold" fill="#ffffff">Place</text>
-<text x="228" y="55" font-size="11" font-weight="bold" fill="#ffffff">Bread</text>
-<text x="318" y="55" font-size="11" font-weight="bold" fill="#ffffff">Days until mould</text>
-<rect x="10" y="64" width="500" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1</text>
-<text x="88" y="82" font-size="11" fill="#1e293b">room (22 °C)</text>
-<text x="228" y="82" font-size="11" fill="#1e293b">dry</text>
-<text x="318" y="82" font-size="11" fill="#1e293b">7</text>
-<rect x="10" y="89" width="500" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2</text>
-<text x="88" y="107" font-size="11" fill="#1e293b">room (22 °C)</text>
-<text x="228" y="107" font-size="11" fill="#1e293b">wet</text>
-<text x="318" y="107" font-size="11" fill="#1e293b">3</text>
-<rect x="10" y="114" width="500" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">3</text>
-<text x="88" y="132" font-size="11" fill="#1e293b">fridge (5 °C)</text>
-<text x="228" y="132" font-size="11" fill="#1e293b">wet</text>
-<text x="318" y="132" font-size="11" fill="#1e293b">9</text>
-<rect x="10" y="139" width="500" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">4</text>
-<text x="88" y="157" font-size="11" fill="#1e293b">fridge (5 °C)</text>
-<text x="228" y="157" font-size="11" fill="#1e293b">dry</text>
-<text x="318" y="157" font-size="11" fill="#1e293b">no mould after 14 days</text>
-<line x1="80" y1="38" x2="80" y2="164" stroke="#94a3b8"/>
-<line x1="220" y1="38" x2="220" y2="164" stroke="#94a3b8"/>
-<line x1="310" y1="38" x2="310" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="500" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Which of the following <b>CANNOT</b> be concluded from this experiment?</p>`,
-  c: ["At the same temperature, mould grows faster on wet bread than on dry bread.", "Mould grows more slowly in a cold place than in a warm place.", "Among these slices, the dry bread in the fridge stayed fresh for the longest time.", "Light makes mould grow faster on bread."],
-  a: "D",
-  s: `<p>A: 22 °C’de ıslak 3 gün &lt; kuru 7 gün; 5 °C’de ıslak 9 &lt; kuru 14+ ✓. B: ıslaklık aynıyken soğukta daha geç küflendi (3 → 9, 7 → 14+) ✓. C: 4. dilim 14 günde bile küflenmedi ✓.</p><p>D: Bütün dilimler <b>karanlık</b> kutularda; ışık hiç değiştirilmedi, yani ışığın etkisi test edilmedi → çıkarılamaz. Tuzak: buzdolabını “karanlık”, odayı “aydınlık” sanmak. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Three friends want to go to the <b>same</b> summer camp. Read their messages and the camp list.</p><div class="dialog"><div><b>Ada (12):</b> I can’t go in July. We’re visiting my grandma for the whole month.</div><div><b>Bora (14):</b> I don’t want to pay more than 3,000 TL.</div><div><b>Cem (13):</b> I want to learn about space or the sea.</div></div><table><tr><th>Camp</th><th>Dates</th><th>Price</th><th>Ages</th><th>Topic</th></tr><tr><td>Ocean Explorers</td><td>10 – 16 August</td><td>2,800 TL</td><td>12 – 15</td><td>sea life</td></tr><tr><td>Star Camp</td><td>20 – 26 July</td><td>2,500 TL</td><td>11 – 14</td><td>space</td></tr><tr><td>Deep Blue</td><td>3 – 9 August</td><td>3,400 TL</td><td>12 – 16</td><td>sea life</td></tr><tr><td>Rocket Lab</td><td>17 – 23 August</td><td>2,900 TL</td><td>13 – 16</td><td>space</td></tr><tr><td>Green Lab</td><td>24 – 30 August</td><td>2,000 TL</td><td>10 – 15</td><td>plants</td></tr></table><p>Which camp can the three friends go to together?</p>`,
-  c: ["Ocean Explorers", "Star Camp", "Deep Blue", "Rocket Lab"],
-  a: "A",
-  s: `<p>Koşullar: Temmuz değil (Ada), en çok 3.000 TL (Bora), uzay ya da deniz (Cem) ve <b>üçünün yaşına</b> (12, 13, 14) uygun.</p><p>Ocean Explorers: Ağustos ✓, 2.800 ✓, 12–15 ✓, deniz ✓.</p><p>B: Temmuz ✗. C: 3.400 TL ✗. D: 13–16 yaş → Ada (12) katılamaz ✗ (yalnız konuşan kişinin koşuluna bakma tuzağı: yaş şartı mesajlarda açıkça yazmıyor, tablodan çıkarılmalı). Green Lab da konu yüzünden elenir. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Read the experiment notes and look at the graph.</p><div class="box"><p>Both cups were filled with 200 ml of water at 80 °C at the same time. <b>Cup A</b> was a metal cup without a lid. <b>Cup B</b> was a foam cup with a lid.</p></div><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Sıcaklık–zaman grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Temperature of the Water</text>
-<line x1="60" y1="240.0" x2="520" y2="240.0" stroke="#e2e8f0"/>
-<text x="54" y="244.0" font-size="11" fill="#1e293b" text-anchor="end">30</text>
-<line x1="60" y1="201.2" x2="520" y2="201.2" stroke="#e2e8f0"/>
-<text x="54" y="205.2" font-size="11" fill="#1e293b" text-anchor="end">40</text>
-<line x1="60" y1="162.4" x2="520" y2="162.4" stroke="#e2e8f0"/>
-<text x="54" y="166.4" font-size="11" fill="#1e293b" text-anchor="end">50</text>
-<line x1="60" y1="123.6" x2="520" y2="123.6" stroke="#e2e8f0"/>
-<text x="54" y="127.6" font-size="11" fill="#1e293b" text-anchor="end">60</text>
-<line x1="60" y1="84.8" x2="520" y2="84.8" stroke="#e2e8f0"/>
-<text x="54" y="88.8" font-size="11" fill="#1e293b" text-anchor="end">70</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">80</text>
-<line x1="60" y1="40" x2="60" y2="240" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="240" x2="520" y2="240" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="143.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 143.0)">temperature (°C)</text>
-<text x="80.0" y="256" font-size="11" fill="#1e293b" text-anchor="middle">0</text>
-<text x="185.0" y="256" font-size="11" fill="#1e293b" text-anchor="middle">5</text>
-<text x="290.0" y="256" font-size="11" fill="#1e293b" text-anchor="middle">10</text>
-<text x="395.0" y="256" font-size="11" fill="#1e293b" text-anchor="middle">15</text>
-<text x="500.0" y="256" font-size="11" fill="#1e293b" text-anchor="middle">20</text>
-<text x="290.0" y="272" font-size="11" fill="#1e293b" text-anchor="middle">time (minutes)</text>
-<polyline points="80.0,46.0 185.0,108.1 290.0,154.6 395.0,189.6 500.0,216.7" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<circle cx="80.0" cy="46.0" r="3.5" fill="#dc2626"/>
-<text x="80.0" y="39.0" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">80</text>
-<circle cx="185.0" cy="108.1" r="3.5" fill="#dc2626"/>
-<text x="185.0" y="101.1" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">64</text>
-<circle cx="290.0" cy="154.6" r="3.5" fill="#dc2626"/>
-<text x="290.0" y="147.6" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">52</text>
-<circle cx="395.0" cy="189.6" r="3.5" fill="#dc2626"/>
-<text x="395.0" y="182.6" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">43</text>
-<circle cx="500.0" cy="216.7" r="3.5" fill="#dc2626"/>
-<text x="500.0" y="209.7" font-size="11" font-weight="bold" fill="#dc2626" text-anchor="middle">36</text>
-<polyline points="80.0,46.0 185.0,61.5 290.0,77.0 395.0,88.7 500.0,100.3" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<circle cx="80.0" cy="46.0" r="3.5" fill="#2563eb"/>
-<text x="80.0" y="39.0" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">80</text>
-<circle cx="185.0" cy="61.5" r="3.5" fill="#2563eb"/>
-<text x="185.0" y="54.5" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">76</text>
-<circle cx="290.0" cy="77.0" r="3.5" fill="#2563eb"/>
-<text x="290.0" y="70.0" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">72</text>
-<circle cx="395.0" cy="88.7" r="3.5" fill="#2563eb"/>
-<text x="395.0" y="81.7" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">69</text>
-<circle cx="500.0" cy="100.3" r="3.5" fill="#2563eb"/>
-<text x="500.0" y="93.3" font-size="11" font-weight="bold" fill="#2563eb" text-anchor="middle">66</text>
-<rect x="70" y="284" width="12" height="12" fill="#dc2626"/>
-<text x="87" y="294" font-size="11" fill="#1e293b">Cup A</text>
-<rect x="155" y="284" width="12" height="12" fill="#2563eb"/>
-<text x="172" y="294" font-size="11" fill="#1e293b">Cup B</text>
-</svg></div><p>Which of the following can be said using <b>both</b> the notes and the graph?</p>`,
-  c: ["After 10 minutes, the water in Cup A was 20 °C cooler than at the start.", "The water in Cup A lost heat more slowly than the water in Cup B.", "The experiment shows that a lid alone keeps water hot for a long time.", "In the first five minutes, the temperature in Cup A fell four times as much as in Cup B."],
-  a: "D",
-  s: `<p>İlk 5 dakika: A 80 → 64 (<b>16 °C</b> düştü), B 80 → 76 (<b>4 °C</b> düştü) → 16 = 4 × 4 ✓.</p><p>A: 80 − 52 = <b>28</b> °C, 20 değil (52’yi 60 gibi okuma hatası). B: A’nın sıcaklığı daha hızlı düştü ✗. C: A ile B arasında hem malzeme (metal/köpük) hem kapak farklı; iki değişken birlikte değiştiği için yalnız kapağın etkisi söylenemez. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the conversation.</p><div class="dialog"><div><b>Mum:</b> Deniz, have you packed your bag for the science trip?</div><div><b>Deniz:</b> ----</div><div><b>Mum:</b> Good. Don’t forget to put it in, then. The weather forecast says it’s going to rain.</div></div><p>Which of the following best completes the conversation?</p>`,
-  c: ["No, I’ve never been on a science trip before.", "Almost. I’ve packed everything except my raincoat.", "Yes, I packed them all last week.", "I haven’t decided yet where we’re going."],
-  a: "B",
-  s: `<p>Annenin cevabındaki “it” tekil bir eşyayı ve “it’s going to rain” ise yağmurluğu işaret ediyor → Deniz yağmurluk dışında her şeyi koymuş olmalı.</p><p>A: soruya cevap vermiyor. C: “them all” ile her şeyin bittiğini söylüyor; “put <b>it</b> in” ile uyuşmuyor. D: gezi yerini öğrencinin seçtiği anlamına geliyor ve çanta sorusuna cevap değil. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Read the text about Albert Einstein.</p><div class="fig"><svg viewBox="0 0 540 204" width="540" role="img" aria-label="Einstein biyografisi">
-<rect x="4" y="4" width="532" height="196" rx="10" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#b45309"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Albert Einstein (1879 – 1955)</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">Albert Einstein was born in Ulm, Germany, in 1879. As a young man, he worked in an</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">office in Switzerland, where he checked other people’s inventions. In his free</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">time, he studied physics.</text>
-<text x="22" y="104" font-size="11" fill="#1e293b">In 1905, he published four important papers. One of them explained his special</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">theory of relativity. Einstein was given the Nobel Prize in Physics for 1921, but</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">not for relativity. The prize was given for his work on light.</text>
-<text x="22" y="158" font-size="11" fill="#1e293b">In 1933, Einstein left Europe and moved to the USA. He lived and worked there</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">until his death in 1955.</text>
-</svg></div><p>I. Einstein won the Nobel Prize for his theory of relativity.</p><p>II. Einstein published his famous papers when he was in his twenties.</p><p>III. Einstein lived in the USA for more than twenty years.</p><p>Which of the statements above is/are <b>TRUE</b> according to the text?</p>`,
-  c: ["Only I", "Only II", "II and III", "I and III"],
-  a: "C",
-  s: `<p>I: “but not for relativity. The prize was given for his work on light.” ✗ (en bilinen çalışmasıyla ödül aldığını sanma yanılgısı).</p><p>II: 1905 − 1879 = 26 → yirmili yaşlarında ✓.</p><p>III: 1933’ten 1955’e kadar → 22 yıl ✓. Doğrular II ve III. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the results of a school’s recycling week and read the report.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Geri dönüşüm sütun grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Recycling Week – What We Collected</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="220.9" x2="520" y2="220.9" stroke="#e2e8f0"/>
-<text x="54" y="224.85714285714286" font-size="11" fill="#1e293b" text-anchor="end">20</text>
-<line x1="60" y1="191.7" x2="520" y2="191.7" stroke="#e2e8f0"/>
-<text x="54" y="195.71428571428572" font-size="11" fill="#1e293b" text-anchor="end">40</text>
-<line x1="60" y1="162.6" x2="520" y2="162.6" stroke="#e2e8f0"/>
-<text x="54" y="166.57142857142856" font-size="11" fill="#1e293b" text-anchor="end">60</text>
-<line x1="60" y1="133.4" x2="520" y2="133.4" stroke="#e2e8f0"/>
-<text x="54" y="137.42857142857144" font-size="11" fill="#1e293b" text-anchor="end">80</text>
-<line x1="60" y1="104.3" x2="520" y2="104.3" stroke="#e2e8f0"/>
-<text x="54" y="108.28571428571428" font-size="11" fill="#1e293b" text-anchor="end">100</text>
-<line x1="60" y1="75.1" x2="520" y2="75.1" stroke="#e2e8f0"/>
-<text x="54" y="79.14285714285714" font-size="11" fill="#1e293b" text-anchor="end">120</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">140</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">kilograms</text>
-<rect x="100.5" y="75.1" width="32.0" height="174.9" fill="#16a34a"/>
-<text x="116.5" y="71.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">120</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Paper</text>
-<rect x="215.5" y="133.4" width="32.0" height="116.6" fill="#16a34a"/>
-<text x="231.5" y="129.4" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">80</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Plastic</text>
-<rect x="330.5" y="177.1" width="32.0" height="72.9" fill="#16a34a"/>
-<text x="346.5" y="173.1" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">50</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Glass</text>
-<rect x="445.5" y="206.3" width="32.0" height="43.7" fill="#16a34a"/>
-<text x="461.5" y="202.3" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">30</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">Metal</text>
-</svg></div><div class="box"><p>All the paper was sent to a paper factory. Half of the plastic was turned into new bottles, and the rest was used to make park benches. The glass was cleaned first and then melted. The metal was sold, and the money was given to the science club.</p></div><p>Which of the following is <b>TRUE</b> in terms of both <b>information</b> and <b>grammar</b>?</p>`,
-  c: ["The paper is sent to a glass factory every week.", "40 kg of plastic was turned into new bottles.", "More metal than glass was collected.", "The glass were melted before it was cleaned."],
-  a: "B",
-  s: `<p>B: Plastik 80 kg, yarısı şişe → <b>40 kg</b> ✓; “was turned” doğru edilgen ✓.</p><p>A: Kağıt <b>kağıt</b> fabrikasına gönderildi ve “every week” bilgisi yok. C: Metal 30 kg &lt; cam 50 kg ✗. D: Hem sıra yanlış (önce temizlendi) hem “The glass <b>were</b>” yanlış; sayılamayan isim → was. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Read the text about Charles Darwin.</p><div class="fig"><svg viewBox="0 0 540 274" width="540" role="img" aria-label="Darwin biyografisi">
-<rect x="4" y="4" width="532" height="266" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#15803d"/>
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Charles Darwin (1809 – 1882)</text>
-<text x="22" y="50" font-size="11" fill="#1e293b">(1) Charles Darwin was born in England in 1809. His father was a doctor and wanted</text>
-<text x="22" y="66" font-size="11" fill="#1e293b">Charles to become a doctor, too. Charles started studying medicine, but he didn’t</text>
-<text x="22" y="82" font-size="11" fill="#1e293b">like it at all and left. He was much more interested in collecting insects and</text>
-<text x="22" y="98" font-size="11" fill="#1e293b">studying plants.</text>
-<text x="22" y="120" font-size="11" fill="#1e293b">(2) In 1831, a teacher suggested him for a journey around the world on a ship</text>
-<text x="22" y="136" font-size="11" fill="#1e293b">called the Beagle. Darwin didn’t join the ship as a doctor; he joined it as a</text>
-<text x="22" y="152" font-size="11" fill="#1e293b">naturalist, a person who studies nature. The journey lasted five years.</text>
-<text x="22" y="174" font-size="11" fill="#1e293b">(3) On the Galápagos Islands, Darwin noticed that the birds called finches had</text>
-<text x="22" y="190" font-size="11" fill="#1e293b">different beaks on different islands. He thought their beaks had changed to suit</text>
-<text x="22" y="206" font-size="11" fill="#1e293b">the food on each island.</text>
-<text x="22" y="228" font-size="11" fill="#1e293b">(4) In 1859, his book On the Origin of Species was published. Many people were</text>
-<text x="22" y="244" font-size="11" fill="#1e293b">shocked by his ideas, but today his work is studied all over the world.</text>
-</svg></div><p>Which of the following headings is <b>NOT</b> suitable for any of the paragraphs?</p>`,
-  c: ["Working as the Ship’s Doctor", "A Medical Student Who Gave Up", "Birds With Different Beaks", "A Book That Surprised Many People"],
-  a: "A",
-  s: `<p>B → (1): tıp okumaya başladı ama sevmedi ve bıraktı ✓. C → (3): Galápagos’taki ispinozların farklı gagaları ✓. D → (4): kitabı yayımlandı ve birçok insan şaşırdı/şok oldu ✓.</p><p>A: (2)’de açıkça “Darwin didn’t join the ship as a doctor; he joined it as a <b>naturalist</b>” deniyor. Tuzak: babasının doktor olması ve tıp okumaya başlaması. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Ece is at a science camp. Read her email to her cousin.</p><div class="box"><p>Hi Selin,</p><p>I’ve been at the science camp since Sunday, and I’m having a great time! On the first day, we made water rockets. Then my team built a small solar car. We haven’t tested it yet because it has rained for two days. Tomorrow we’re visiting the observatory, and if the sky is clear, we’ll watch Saturn through the big telescope. The camp ends on Saturday, so I’ll see you next week.</p><p>Love, Ece</p></div><p>Which of the following questions <b>CANNOT</b> be answered according to the email?</p>`,
-  c: ["How long has it been raining at the camp?", "Has the solar car been tested?", "What did they make before the solar car?", "How many people are there in Ece’s team?"],
-  a: "D",
-  s: `<p>A: “it has rained for two days” ✓. B: “We haven’t tested it yet” → hayır, henüz test edilmedi ✓. C: ilk gün su roketi yaptılar, sonra güneş arabası ✓ (sıra “Then” ile veriliyor).</p><p>D: “my team” ifadesi geçiyor ama takımın <b>kaç kişi</b> olduğu yazmıyor. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the timeline.</p><div class="fig"><svg viewBox="0 0 540 156" width="540" role="img" aria-label="Zaman çizelgesi">
-<text x="270.0" y="24" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">From the Telephone to the Moon</text>
-<line x1="30" y1="70" x2="510" y2="70" stroke="#334155" stroke-width="3"/>
-<circle cx="78.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="78.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1876</text>
-<text x="78.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the telephone</text>
-<text x="78.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">patented by</text>
-<text x="78.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Bell</text>
-<circle cx="174.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="174.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1879</text>
-<text x="174.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">the light bulb</text>
-<text x="174.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">invented by</text>
-<text x="174.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Edison</text>
-<circle cx="270.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="270.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1903</text>
-<text x="270.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">first powered</text>
-<text x="270.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">flight by the</text>
-<text x="270.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Wright brothers</text>
-<circle cx="366.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="366.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1928</text>
-<text x="366.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">penicillin</text>
-<text x="366.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">discovered by</text>
-<text x="366.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Fleming</text>
-<circle cx="462.0" cy="70" r="7" fill="#1d4ed8"/>
-<text x="462.0" y="56" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1969</text>
-<text x="462.0" y="96" font-size="11" fill="#1e293b" text-anchor="middle">first people</text>
-<text x="462.0" y="111" font-size="11" fill="#1e293b" text-anchor="middle">walked on the</text>
-<text x="462.0" y="126" font-size="11" fill="#1e293b" text-anchor="middle">Moon</text>
-</svg></div><p>Which of the following sentences is <b>WRONG</b> according to the timeline?</p>`,
-  c: ["The light bulb was invented three years after the telephone was patented.", "The first people walked on the Moon 66 years after the first powered flight.", "Penicillin was discovered more than 50 years after the light bulb was invented.", "Penicillin was discovered after the first powered flight was made."],
-  a: "C",
-  s: `<p>Farkları hesaplarız: 1879 − 1876 = 3 (A ✓); 1969 − 1903 = 66 (B ✓); 1928 − 1879 = <b>49</b> → 50’den fazla değil, C yanlış; uçuş 1903 &lt; 1928 → penisilin uçuştan sonra keşfedildi (D ✓).</p><p>C’deki tuzak: 1928’i 1876 (telefon) ile karşılaştırmak (52 yıl). Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Read Mert’s diary. One of the numbered parts has a grammar mistake.</p><div class="box"><p>(I) I have joined the robotics club two years ago. (II) Since then, I have met many people who love science. (III) Our team has already built two robots, but we haven’t finished the third one yet. (IV) Our teacher has helped us a lot since the first day.</p></div><p>Which part is grammatically <b>WRONG</b>?</p>`,
-  c: ["I", "II", "III", "IV"],
-  a: "A",
-  s: `<p>(I): “two years <b>ago</b>” belirli geçmiş zamanı gösterir; present perfect ile kullanılmaz → “I <b>joined</b> the robotics club two years ago.” ✗</p><p>(II): “Since then” + present perfect ✓. (III): olumluda already, olumsuzda yet ✓. (IV): “since the first day” + has helped ✓. Tuzak: “since/for” görünce hata aramak; asıl hata ago ile present perfect. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Nehir planted the same kind of seeds in four pots and kept them in different conditions for ten days.</p><div class="fig"><svg viewBox="0 0 530 174" width="530" role="img" aria-label="Tohum çimlenme tablosu">
-<text x="265.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Do the Seeds Germinate?</text>
-<rect x="10" y="38" width="510" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Pot</text>
-<text x="78" y="55" font-size="11" font-weight="bold" fill="#ffffff">Water</text>
-<text x="158" y="55" font-size="11" font-weight="bold" fill="#ffffff">Temperature</text>
-<text x="278" y="55" font-size="11" font-weight="bold" fill="#ffffff">Light</text>
-<text x="358" y="55" font-size="11" font-weight="bold" fill="#ffffff">Result</text>
-<rect x="10" y="64" width="510" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1</text>
-<text x="78" y="82" font-size="11" fill="#1e293b">yes</text>
-<text x="158" y="82" font-size="11" fill="#1e293b">25 °C</text>
-<text x="278" y="82" font-size="11" fill="#1e293b">yes</text>
-<text x="358" y="82" font-size="11" fill="#1e293b">germinated</text>
-<rect x="10" y="89" width="510" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2</text>
-<text x="78" y="107" font-size="11" fill="#1e293b">no</text>
-<text x="158" y="107" font-size="11" fill="#1e293b">25 °C</text>
-<text x="278" y="107" font-size="11" fill="#1e293b">yes</text>
-<text x="358" y="107" font-size="11" fill="#1e293b">didn’t germinate</text>
-<rect x="10" y="114" width="510" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">3</text>
-<text x="78" y="132" font-size="11" fill="#1e293b">yes</text>
-<text x="158" y="132" font-size="11" fill="#1e293b">5 °C</text>
-<text x="278" y="132" font-size="11" fill="#1e293b">yes</text>
-<text x="358" y="132" font-size="11" fill="#1e293b">didn’t germinate</text>
-<rect x="10" y="139" width="510" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">4</text>
-<text x="78" y="157" font-size="11" fill="#1e293b">yes</text>
-<text x="158" y="157" font-size="11" fill="#1e293b">25 °C</text>
-<text x="278" y="157" font-size="11" fill="#1e293b">no</text>
-<text x="358" y="157" font-size="11" fill="#1e293b">germinated</text>
-<line x1="70" y1="38" x2="70" y2="164" stroke="#94a3b8"/>
-<line x1="150" y1="38" x2="150" y2="164" stroke="#94a3b8"/>
-<line x1="270" y1="38" x2="270" y2="164" stroke="#94a3b8"/>
-<line x1="350" y1="38" x2="350" y2="164" stroke="#94a3b8"/>
-<rect x="10" y="38" width="510" height="126" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>According to the results, which of the following is <b>NOT</b> needed for these seeds to germinate?</p>`,
-  c: ["water", "light", "a warm temperature", "water and a warm temperature"],
-  a: "B",
-  s: `<p>1 ile 4 yalnızca ışıkta farklı; ikisi de çimlendi → ışık <b>gerekli değil</b>.</p><p>1–2 karşılaştırması: su yokken çimlenmedi → su gerekli (A ✗). 1–3: 5 °C’de çimlenmedi → sıcaklık gerekli (C ✗). D bu ikisinin birleşimi, ikisi de gerekli ✗. Tuzak: “bitkiler ışık ister” bilgisini çimlenmeye uygulamak. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Read the judging rules of a science fair and the judges’ scores.</p><div class="box"><p><b>Total score</b> = (originality × 2) + presentation + usefulness</p><p>• A project with a score <u>lower than 5</u> in any area can’t win.</p><p>• If two or more projects have the same total, the one with the <u>higher usefulness</u> score wins.</p></div><table><tr><th>Project</th><th>Originality</th><th>Presentation</th><th>Usefulness</th></tr><tr><td>Rain Saver</td><td>10</td><td>4</td><td>9</td></tr><tr><td>Solar Bag</td><td>9</td><td>6</td><td>8</td></tr><tr><td>Plant Doctor</td><td>7</td><td>9</td><td>9</td></tr><tr><td>Smart Bin</td><td>8</td><td>9</td><td>7</td></tr></table><p>Which project wins the science fair?</p>`,
-  c: ["Rain Saver", "Solar Bag", "Plant Doctor", "Smart Bin"],
-  a: "C",
-  s: `<p>Toplamlar: Rain Saver 20 + 4 + 9 = 33; Solar Bag 18 + 6 + 8 = 32; Plant Doctor 14 + 9 + 9 = 32; Smart Bin 16 + 9 + 7 = 32.</p><p>Rain Saver en yüksek toplama sahip ama sunum puanı <b>4 &lt; 5</b> → kazanamaz (A tuzağı). Kalan üçü 32’de eşit → kullanışlılık: Plant Doctor 9, Solar Bag 8, Smart Bin 7 → <b>Plant Doctor</b>.</p><p>B: eşitlikte özgünlüğe bakma yanılgısı. D: eşitlikte sunuma bakma yanılgısı. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Look at the graph and read what the headteacher says.</p><div class="fig"><svg viewBox="0 0 540 300" width="540" role="img" aria-label="Elektrik kullanımı grafiği">
-<text x="270.0" y="22" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Our School’s Electricity Use</text>
-<line x1="60" y1="250.0" x2="520" y2="250.0" stroke="#e2e8f0"/>
-<text x="54" y="254.0" font-size="11" fill="#1e293b" text-anchor="end">0</text>
-<line x1="60" y1="216.0" x2="520" y2="216.0" stroke="#e2e8f0"/>
-<text x="54" y="220.0" font-size="11" fill="#1e293b" text-anchor="end">1000</text>
-<line x1="60" y1="182.0" x2="520" y2="182.0" stroke="#e2e8f0"/>
-<text x="54" y="186.0" font-size="11" fill="#1e293b" text-anchor="end">2000</text>
-<line x1="60" y1="148.0" x2="520" y2="148.0" stroke="#e2e8f0"/>
-<text x="54" y="152.0" font-size="11" fill="#1e293b" text-anchor="end">3000</text>
-<line x1="60" y1="114.0" x2="520" y2="114.0" stroke="#e2e8f0"/>
-<text x="54" y="118.0" font-size="11" fill="#1e293b" text-anchor="end">4000</text>
-<line x1="60" y1="80.0" x2="520" y2="80.0" stroke="#e2e8f0"/>
-<text x="54" y="84.0" font-size="11" fill="#1e293b" text-anchor="end">5000</text>
-<line x1="60" y1="46.0" x2="520" y2="46.0" stroke="#e2e8f0"/>
-<text x="54" y="50.0" font-size="11" fill="#1e293b" text-anchor="end">6000</text>
-<line x1="60" y1="40" x2="60" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<line x1="60" y1="250" x2="520" y2="250" stroke="#1e293b" stroke-width="1.5"/>
-<text x="16" y="148.0" font-size="11" fill="#1e293b" text-anchor="middle" transform="rotate(-90 16 148.0)">electricity (kWh)</text>
-<rect x="100.5" y="80.0" width="32.0" height="170.0" fill="#7c3aed"/>
-<text x="116.5" y="76.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">5000</text>
-<text x="117.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">January</text>
-<rect x="215.5" y="86.8" width="32.0" height="163.2" fill="#7c3aed"/>
-<text x="231.5" y="82.8" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">4800</text>
-<text x="232.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">February</text>
-<rect x="330.5" y="127.6" width="32.0" height="122.4" fill="#7c3aed"/>
-<text x="346.5" y="123.6" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3600</text>
-<text x="347.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">March</text>
-<rect x="445.5" y="148.0" width="32.0" height="102.0" fill="#7c3aed"/>
-<text x="461.5" y="144.0" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">3000</text>
-<text x="462.5" y="267" font-size="11" fill="#1e293b" text-anchor="middle">April</text>
-</svg></div><div class="box"><p><b>Headteacher:</b> “Solar panels were put on our roof at the beginning of March. Since then, our electricity use has been more than 30% lower than in February every month.”</p></div><p>Which of the following is <b>supported</b> by the graph?</p>`,
-  c: ["The headteacher’s claim is true for both March and April.", "The school used more electricity in April than in January.", "The solar panels were put on the roof in April.", "In April, the school used 1,800 kWh less electricity than in February."],
-  a: "D",
-  s: `<p>Şubat 4.800 kWh. Mart: 4.800 − 3.600 = 1.200 → %25 azalma. Nisan: 4.800 − 3.000 = <b>1.800</b> → %37,5 azalma.</p><p>D ✓.</p><p>A: Mart’taki azalma %25 → “%30’dan fazla” iddiası Mart için doğru değil (yalnız son aya bakma tuzağı). B: Nisan 3.000 &lt; Ocak 5.000 ✗. C: Metne göre paneller Mart başında takıldı ✗. Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the interview.</p><div class="dialog"><div><b>Reporter:</b> ----</div><div><b>Dr. Aydın:</b> Since 2015. Before that, I worked in a hospital for ten years.</div><div><b>Reporter:</b> And what do you study here?</div><div><b>Dr. Aydın:</b> We study how new medicines affect the brain.</div></div><p>Which of the following best fills in the blank?</p>`,
-  c: ["How long have you worked at this research centre?", "When did you start working at the hospital?", "Have you ever worked in a hospital?", "How long did you work in the hospital?"],
-  a: "A",
-  s: `<p>“Since 2015” → süre soran present perfect sorusunun cevabı: <b>How long have you worked …?</b> ✓. “here” da şu anki iş yeri olan araştırma merkezini gösteriyor.</p><p>B: hastaneye başlama yılı 2015 değil (2015’ten önce 10 yıl hastanede çalıştı). C: Evet/Hayır sorusu; “Since 2015” cevap olmaz. D: Hastanedeki süre “ten years” olarak sonradan veriliyor; “Since 2015” bunun cevabı değil. Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Read the text from a science magazine published in 2026.</p><div class="box"><p>The Hubble Space Telescope was sent into space in 1990. It travels around the Earth and takes very clear pictures of space because the air around the Earth doesn’t blur its view. Astronauts have visited it five times to repair and improve it. In 2021, a newer and bigger telescope, the James Webb Space Telescope, was launched. However, Hubble is still used by scientists today.</p></div><p>I. Hubble has been in space for more than thirty years.</p><p>II. The James Webb Space Telescope was sent into space before Hubble.</p><p>III. Hubble was repaired by astronauts only once.</p><p>Which of the statements above is/are <b>TRUE</b> according to the text?</p>`,
-  c: ["Only II", "Only I", "I and III", "II and III"],
-  a: "B",
-  s: `<p>I: 2026 − 1990 = 36 yıl &gt; 30 ✓ ve “is still used today” ✓.</p><p>II: James Webb 2021’de, Hubble 1990’da → Webb <b>sonra</b> ✗ (“newer” kelimesi zaten sonra olduğunu gösteriyor).</p><p>III: “Astronauts have visited it <b>five times</b>” ✗. Yalnız I doğru. Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Ela let a toy car roll down a ramp and measured how far it travelled on different surfaces.</p><div class="fig"><svg viewBox="0 0 510 199" width="510" role="img" aria-label="Oyuncak araba deney tablosu">
-<text x="255.0" y="26" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Toy Car Experiment</text>
-<rect x="10" y="38" width="490" height="26" fill="#1d4ed8"/>
-<text x="18" y="55" font-size="11" font-weight="bold" fill="#ffffff">Trial</text>
-<text x="78" y="55" font-size="11" font-weight="bold" fill="#ffffff">Ramp height</text>
-<text x="188" y="55" font-size="11" font-weight="bold" fill="#ffffff">Surface</text>
-<text x="298" y="55" font-size="11" font-weight="bold" fill="#ffffff">Car mass</text>
-<text x="398" y="55" font-size="11" font-weight="bold" fill="#ffffff">Distance</text>
-<rect x="10" y="64" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="82" font-size="11" font-weight="bold" fill="#1e293b">1</text>
-<text x="78" y="82" font-size="11" fill="#1e293b">20 cm</text>
-<text x="188" y="82" font-size="11" fill="#1e293b">carpet</text>
-<text x="298" y="82" font-size="11" fill="#1e293b">100 g</text>
-<text x="398" y="82" font-size="11" fill="#1e293b">60 cm</text>
-<rect x="10" y="89" width="490" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="107" font-size="11" font-weight="bold" fill="#1e293b">2</text>
-<text x="78" y="107" font-size="11" fill="#1e293b">20 cm</text>
-<text x="188" y="107" font-size="11" fill="#1e293b">wood</text>
-<text x="298" y="107" font-size="11" fill="#1e293b">100 g</text>
-<text x="398" y="107" font-size="11" fill="#1e293b">140 cm</text>
-<rect x="10" y="114" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="132" font-size="11" font-weight="bold" fill="#1e293b">3</text>
-<text x="78" y="132" font-size="11" fill="#1e293b">30 cm</text>
-<text x="188" y="132" font-size="11" fill="#1e293b">wood</text>
-<text x="298" y="132" font-size="11" fill="#1e293b">200 g</text>
-<text x="398" y="132" font-size="11" fill="#1e293b">190 cm</text>
-<rect x="10" y="139" width="490" height="25" fill="#eff6ff" stroke="#94a3b8"/>
-<text x="18" y="157" font-size="11" font-weight="bold" fill="#1e293b">4</text>
-<text x="78" y="157" font-size="11" fill="#1e293b">20 cm</text>
-<text x="188" y="157" font-size="11" fill="#1e293b">sandpaper</text>
-<text x="298" y="157" font-size="11" fill="#1e293b">100 g</text>
-<text x="398" y="157" font-size="11" fill="#1e293b">40 cm</text>
-<rect x="10" y="164" width="490" height="25" fill="#ffffff" stroke="#94a3b8"/>
-<text x="18" y="182" font-size="11" font-weight="bold" fill="#1e293b">5</text>
-<text x="78" y="182" font-size="11" fill="#1e293b">20 cm</text>
-<text x="188" y="182" font-size="11" fill="#1e293b">glass</text>
-<text x="298" y="182" font-size="11" fill="#1e293b">100 g</text>
-<text x="398" y="182" font-size="11" fill="#1e293b">210 cm</text>
-<line x1="70" y1="38" x2="70" y2="189" stroke="#94a3b8"/>
-<line x1="180" y1="38" x2="180" y2="189" stroke="#94a3b8"/>
-<line x1="290" y1="38" x2="290" y2="189" stroke="#94a3b8"/>
-<line x1="390" y1="38" x2="390" y2="189" stroke="#94a3b8"/>
-<rect x="10" y="38" width="490" height="151" fill="none" stroke="#1e293b" stroke-width="1.5"/>
-</svg></div><p>Ela compared only trials 1, 2, 4 and 5. Which question was she trying to answer?</p>`,
-  c: ["Does a heavier car travel further?", "Does the height of the ramp affect the distance?", "Does a car go further when both the ramp height and its mass are increased?", "Does the type of surface affect how far the car travels?"],
-  a: "D",
-  s: `<p>1, 2, 4 ve 5’te rampa yüksekliği (20 cm) ve araba kütlesi (100 g) aynı; yalnızca <b>yüzey</b> (halı, tahta, zımpara, cam) değişiyor → yüzeyin etkisi araştırılıyor ✓.</p><p>A, B ve C: kütle ya da yükseklik yalnızca 3. denemede farklı; Ela 3’ü karşılaştırmaya almadı. Ayrıca 3. denemede iki değişken birlikte değiştiği için tek başına bir sonuç vermez (C tuzağı). Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Complete the conversation.</p><div class="dialog"><div><b>Can:</b> (I) ----</div><div><b>Eda:</b> Yes, I have. I watched the Perseids last August.</div><div><b>Can:</b> (II) ----</div><div><b>Eda:</b> For about two hours! We counted forty shooting stars.</div><div><b>Can:</b> Wow! (III) ----</div><div><b>Eda:</b> Not yet. But I’m going to send my photos to the school magazine.</div></div><p>Which of the following completes the conversation?</p>`,
-  c: ["(I) Did you watch a meteor shower last night? (II) How long have you watched it? (III) Have you shared your photos yet?", "(I) Have you ever watched a meteor shower? (II) How long have you been there? (III) Did you take any photos?", "(I) Have you ever watched a meteor shower? (II) How long did you watch it? (III) Have you shared your photos with anyone yet?", "(I) Have you ever watched a meteor shower? (II) How long did you watch it? (III) Have you already taken any photos?"],
-  a: "C",
-  s: `<p>(I) “Yes, I have.” → present perfect soru: Have you ever …? (II) Olay geçen ağustosta bitti → geçmiş zaman: How long <b>did</b> you watch it? (III) “Not yet … going to send my photos” → fotoğraflar var ama henüz paylaşılmadı → Have you shared … yet?</p><p>A: “Did you … last night?” sorusuna “Yes, I have” denmez ve gözlem geçen ağustostaydı. B: “Did you take any photos?” sorusuna “Not yet” denmez; ayrıca fotoğrafları olduğu belli. D: “Not yet” → fotoğraf çekmemiş olur; ama “send my photos” fotoğrafların zaten çekildiğini gösteriyor. Cevap <b>C</b>.</p>` }
-]
+ "id": "ing-science",
+ "summary": "<p>8. sınıf 9. ünite <b>Science</b>; icatlar ve keşifler, bilim insanlarının hayatları, deneyler ve laboratuvar, süreç anlatma (edilgen yapı) ve bilimle ilgili görüş bildirme konularını kapsar. LGS’de bu üniteden genellikle <b>biyografi metinleri</b>, <b>icat–tarih tabloları</b>, <b>deney diyalogları</b> ve <b>“metinde hangisi yok?”</b> soruları gelir.</p><h3>1. Bilim Dalları ve Bilim İnsanları (Branches of Science)</h3><table class=\"rt\">\n<tr><th>Bilim dalı</th><th>Bilim insanı</th><th>Ne inceler?</th></tr>\n<tr><td><b>biology</b></td><td>biologist</td><td>canlılar, hücreler, bitkiler, hayvanlar</td></tr>\n<tr><td><b>chemistry</b></td><td>chemist</td><td>maddeler, elementler, kimyasal tepkimeler</td></tr>\n<tr><td><b>physics</b></td><td>physicist</td><td>kuvvet, hareket, enerji, ışık, elektrik</td></tr>\n<tr><td><b>astronomy</b></td><td>astronomer</td><td>yıldızlar, gezegenler, uzay</td></tr>\n<tr><td><b>geology</b></td><td>geologist</td><td>kayaçlar, depremler, yer kabuğu</td></tr>\n<tr><td><b>genetics</b></td><td>geneticist</td><td>DNA, genler, kalıtım</td></tr>\n<tr><td><b>medicine</b></td><td>doctor / surgeon</td><td>hastalıklar ve tedavileri (surgery: ameliyat)</td></tr>\n<tr><td><b>mathematics</b></td><td>mathematician</td><td>sayılar, şekiller, formüller</td></tr>\n<tr><td><b>engineering</b> / <b>robotics</b></td><td>engineer</td><td>makine, robot, yapı tasarlama</td></tr>\n</table><div class=\"note\"><b>LGS Tuzağı (bilim dalı ↔ kişi):</b> “-ist / -er / -ian” ekleri kişiyi gösterir: physics → <b>physicist</b> (fizikçi), <b>physician</b> ise “doktor” demektir! Astronomy (gökbilim) ile astrology (burç falı) da farklıdır. “I love watching the stars” diyen biri <b>astronomer</b> olmak ister.</div><h3>2. Kelime Aileleri (Word Families)</h3><table class=\"rt\">\n<tr><th>Fiil (verb)</th><th>İsim – şey</th><th>İsim – kişi</th><th>Anlam</th></tr>\n<tr><td><b>invent</b></td><td>invention</td><td>inventor</td><td>icat etmek / icat / mucit</td></tr>\n<tr><td><b>discover</b></td><td>discovery</td><td>discoverer</td><td>keşfetmek / keşif</td></tr>\n<tr><td><b>develop</b></td><td>development</td><td>developer</td><td>geliştirmek / gelişme</td></tr>\n<tr><td><b>achieve</b></td><td>achievement</td><td>achiever</td><td>başarmak / başarı</td></tr>\n<tr><td><b>improve</b></td><td>improvement</td><td>—</td><td>iyileştirmek / iyileşme</td></tr>\n<tr><td><b>observe</b></td><td>observation</td><td>observer</td><td>gözlemlemek / gözlem</td></tr>\n<tr><td><b>research</b></td><td>research</td><td>researcher</td><td>araştırmak / araştırma</td></tr>\n<tr><td><b>explore</b></td><td>exploration</td><td>explorer</td><td>keşif gezisi yapmak / kâşif</td></tr>\n<tr><td><b>experiment</b></td><td>experiment</td><td>—</td><td>deney yapmak / deney</td></tr>\n<tr><td>—</td><td>science</td><td>scientist</td><td>bilim / bilim insanı (sıfat: <b>scientific</b>)</td></tr>\n</table><div class=\"fig\"><svg viewBox=\"0 0 600 150\" width=\"560\" role=\"img\" aria-label=\"invent ve discover farkı şeması\">\n<rect x=\"10\" y=\"10\" width=\"280\" height=\"130\" rx=\"12\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n<text x=\"150\" y=\"36\" font-size=\"15\" font-weight=\"bold\" fill=\"#1e40af\" text-anchor=\"middle\">INVENT (icat etmek)</text>\n<text x=\"150\" y=\"60\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Daha önce OLMAYAN bir şeyi yapmak</text>\n<text x=\"150\" y=\"84\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the telephone, the light bulb,</text>\n<text x=\"150\" y=\"100\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the airplane, the printing press</text>\n<text x=\"150\" y=\"124\" font-size=\"11\" font-weight=\"bold\" fill=\"#1d4ed8\" text-anchor=\"middle\">Bell invented the telephone.</text>\n<rect x=\"310\" y=\"10\" width=\"280\" height=\"130\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n<text x=\"450\" y=\"36\" font-size=\"15\" font-weight=\"bold\" fill=\"#166534\" text-anchor=\"middle\">DISCOVER (keşfetmek)</text>\n<text x=\"450\" y=\"60\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Doğada ZATEN VAR OLANI ilk kez bulmak</text>\n<text x=\"450\" y=\"84\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">gravity, penicillin, X-rays,</text>\n<text x=\"450\" y=\"100\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a new planet, radium, DNA’s shape</text>\n<text x=\"450\" y=\"124\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\" text-anchor=\"middle\">Newton discovered gravity.</text>\n</svg></div><div class=\"note\"><b>LGS Tuzağı (invent / discover):</b> “Newton <b>invented</b> gravity” YANLIŞTIR; yer çekimi zaten vardı → <b>discovered</b>. Ateş de icat edilmedi, keşfedildi. Boşluk doldurma sorularında kelime türüne de bak: “a great <b>inventor</b>” (kişi), “his most famous <b>invention</b>” (şey), “a big <b>achievement</b>” (başarı).</div><h3>3. Laboratuvar ve Deney Kelimeleri (In the Lab)</h3><table class=\"rt\">\n<tr><td><b>microscope</b></td><td>mikroskop (çok küçük şeyler: hücre, bakteri)</td><td><b>telescope</b></td><td>teleskop (uzaktaki yıldızlar)</td></tr>\n<tr><td><b>test tube</b></td><td>deney tüpü</td><td><b>beaker</b></td><td>beher (ölçekli cam kap)</td></tr>\n<tr><td><b>goggles</b></td><td>koruyucu gözlük</td><td><b>gloves</b></td><td>eldiven</td></tr>\n<tr><td><b>lab coat</b></td><td>laboratuvar önlüğü</td><td><b>dropper</b></td><td>damlalık</td></tr>\n<tr><td><b>thermometer</b></td><td>termometre</td><td><b>magnifying glass</b></td><td>büyüteç</td></tr>\n<tr><td><b>chemicals</b></td><td>kimyasallar</td><td><b>equipment</b></td><td>araç gereç, ekipman</td></tr>\n<tr><td><b>conduct / carry out / do an experiment</b></td><td>deney yapmak</td><td><b>hypothesis</b></td><td>hipotez (akıllıca tahmin)</td></tr>\n<tr><td><b>result / outcome</b></td><td>sonuç</td><td><b>conclusion</b></td><td>vargı, çıkarım</td></tr>\n<tr><td><b>analyse / analyze</b></td><td>çözümlemek, incelemek</td><td><b>measure</b></td><td>ölçmek</td></tr>\n<tr><td><b>prove</b></td><td>kanıtlamak</td><td><b>by accident</b></td><td>tesadüfen</td></tr>\n</table><h4>Süreç fiilleri (process verbs)</h4><table class=\"rt\">\n<tr><td><b>pour</b></td><td>dökmek</td><td><b>add</b></td><td>eklemek</td><td><b>mix / stir</b></td><td>karıştırmak</td></tr>\n<tr><td><b>heat</b></td><td>ısıtmak</td><td><b>boil</b></td><td>kaynamak</td><td><b>cool</b></td><td>soğutmak</td></tr>\n<tr><td><b>melt</b></td><td>erimek</td><td><b>freeze</b></td><td>donmak</td><td><b>dissolve</b></td><td>çözünmek</td></tr>\n<tr><td><b>fill</b></td><td>doldurmak</td><td><b>cover</b></td><td>örtmek</td><td><b>wait</b></td><td>beklemek</td></tr>\n</table><h3>4. Bilimsel Yöntem (The Scientific Method)</h3><div class=\"fig\"><svg viewBox=\"0 0 600 136\" width=\"560\" role=\"img\" aria-label=\"Bilimsel yöntem basamakları\">\n<defs><marker id=\"sciA\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#475569\"/></marker></defs>\n<g fill=\"#ede9fe\" stroke=\"#7c3aed\"><rect x=\"4\" y=\"20\" width=\"104\" height=\"64\" rx=\"10\"/><rect x=\"127\" y=\"20\" width=\"104\" height=\"64\" rx=\"10\"/><rect x=\"250\" y=\"20\" width=\"104\" height=\"64\" rx=\"10\"/><rect x=\"373\" y=\"20\" width=\"104\" height=\"64\" rx=\"10\"/><rect x=\"496\" y=\"20\" width=\"100\" height=\"64\" rx=\"10\"/></g>\n<g font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\"><text x=\"56\" y=\"46\" font-weight=\"bold\">1. Ask</text><text x=\"56\" y=\"64\">a question</text><text x=\"179\" y=\"46\" font-weight=\"bold\">2. Make</text><text x=\"179\" y=\"64\">a hypothesis</text><text x=\"302\" y=\"46\" font-weight=\"bold\">3. Do</text><text x=\"302\" y=\"64\">an experiment</text><text x=\"425\" y=\"46\" font-weight=\"bold\">4. Observe</text><text x=\"425\" y=\"64\">&amp; record results</text><text x=\"546\" y=\"46\" font-weight=\"bold\">5. Draw</text><text x=\"546\" y=\"64\">a conclusion</text></g>\n<g stroke=\"#475569\" stroke-width=\"2\"><line x1=\"108\" y1=\"52\" x2=\"125\" y2=\"52\" marker-end=\"url(#sciA)\"/><line x1=\"231\" y1=\"52\" x2=\"248\" y2=\"52\" marker-end=\"url(#sciA)\"/><line x1=\"354\" y1=\"52\" x2=\"371\" y2=\"52\" marker-end=\"url(#sciA)\"/><line x1=\"477\" y1=\"52\" x2=\"494\" y2=\"52\" marker-end=\"url(#sciA)\"/></g>\n<text x=\"300\" y=\"106\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Sonuç hipotezi doğrularsa: “The hypothesis was correct / proved.”</text><text x=\"300\" y=\"124\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"middle\">Doğrulamazsa: “The hypothesis was wrong.”</text>\n</svg></div><div class=\"note\"><b>LGS Tuzağı (deney raporu):</b> Hipotez bir <b>tahmindir</b>; deneyden ÖNCE yapılır. Sonuç tahmine uymuyorsa “hypothesis was wrong” denir. Deney sorularında sadece <b>tek bir şeyin</b> değiştiğine dikkat et (ışık mı, su mu?); sonuç o değişkenle ilgili çıkarılır.</div><h3>5. Süreç Anlatma: Edilgen Yapı (Passive Voice)</h3><p>Bir deneyin ya da üretimin adımlarını anlatırken <b>işi yapan değil, yapılan iş</b> önemlidir. Bu yüzden edilgen yapı kullanılır: <b>am / is / are + V3</b> (geniş zaman), <b>was / were + V3</b> (geçmiş zaman). İşi yapan söylenecekse <b>by</b> eklenir.</p><div class=\"fig\"><svg viewBox=\"0 0 600 150\" width=\"560\" role=\"img\" aria-label=\"Etken cümleden edilgen cümleye dönüşüm şeması\">\n<rect x=\"10\" y=\"10\" width=\"580\" height=\"54\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#ea580c\" stroke-width=\"1.5\"/>\n<text x=\"24\" y=\"31\" font-size=\"11\" font-weight=\"bold\" fill=\"#9a3412\">ACTIVE:</text>\n<text x=\"90\" y=\"31\" font-size=\"12\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Fleming</tspan> <tspan font-weight=\"bold\" fill=\"#dc2626\">discovered</tspan> <tspan font-weight=\"bold\" fill=\"#16a34a\">penicillin</tspan> in 1928.</text>\n<text x=\"24\" y=\"52\" font-size=\"11\" fill=\"#64748b\">özne (yapan) + fiil (V2) + nesne</text>\n<rect x=\"10\" y=\"86\" width=\"580\" height=\"54\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"24\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">PASSIVE:</text>\n<text x=\"96\" y=\"107\" font-size=\"12\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#16a34a\">Penicillin</tspan> <tspan font-weight=\"bold\" fill=\"#dc2626\">was discovered</tspan> by <tspan font-weight=\"bold\" fill=\"#2563eb\">Fleming</tspan> in 1928.</text>\n<text x=\"24\" y=\"128\" font-size=\"11\" fill=\"#64748b\">nesne başa geçer + was/were + V3 + (by + yapan)</text>\n<text x=\"300\" y=\"78\" font-size=\"14\" fill=\"#475569\" text-anchor=\"middle\">↓</text>\n</svg></div><table class=\"rt\">\n<tr><th>Zaman</th><th>Yapı</th><th>Örnek</th></tr>\n<tr><td>Simple Present Passive</td><td>am / is / are + V3</td><td>First, the water <b>is heated</b>. Then, salt <b>is added</b>.</td></tr>\n<tr><td>Simple Past Passive</td><td>was / were + V3</td><td>The light bulb <b>was invented</b> in 1879. X-rays <b>were discovered</b> by Röntgen.</td></tr>\n<tr><td>Olumsuz / Soru</td><td>isn’t / wasn’t + V3 · Was … V3?</td><td>Fire <b>wasn’t invented</b>. <b>When was</b> the telephone <b>invented</b>?</td></tr>\n</table><div class=\"fig\"><svg viewBox=\"0 0 560 174\" width=\"560\" role=\"img\" aria-label=\"Lav lambası yapımı süreç kartı\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"166\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">How to Make a Lava Lamp (Process)</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" fill=\"#1e293b\">First, a bottle is filled with water (one quarter).</text>\n<text x=\"24\" y=\"75\" font-size=\"11\" fill=\"#1e293b\">Then, vegetable oil is poured into the bottle until it is almost full.</text>\n<text x=\"24\" y=\"92\" font-size=\"11\" fill=\"#1e293b\">Next, a few drops of food colouring are added.</text>\n<text x=\"24\" y=\"109\" font-size=\"11\" fill=\"#1e293b\">After that, half a fizzy tablet is dropped into the bottle.</text>\n<text x=\"24\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">Finally, the coloured bubbles are observed. They move up and down!</text>\n<text x=\"24\" y=\"151\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Sıralama kelimeleri: First → Then / Next → After that → Finally</text>\n</svg></div><div class=\"note\"><b>LGS Tuzağı (edilgen yapı):</b> “Penicillin <b>discovered</b> by Fleming” eksiktir, <b>was</b> gerekir. “by” görürsen ya da özne bir şeyse (water, salt, the telephone) edilgen düşün. Zamanı da kontrol et: geçmiş tarih (1928) → <b>was/were</b>; tarif/talimat → <b>is/are</b>. “Scientists <b>were discovered</b> water” yanlıştır, çünkü bilim insanları keşfedilen değil, keşfedendir.</div><h3>6. Büyük İcatlar ve Keşifler (Timeline)</h3><div class=\"fig\"><svg viewBox=\"0 0 600 190\" width=\"560\" role=\"img\" aria-label=\"İcatlar zaman çizelgesi\">\n<line x1=\"10\" y1=\"95\" x2=\"590\" y2=\"95\" stroke=\"#475569\" stroke-width=\"3\"/>\n<g fill=\"#2563eb\"><circle cx=\"35\" cy=\"95\" r=\"6\"/><circle cx=\"100\" cy=\"95\" r=\"6\"/><circle cx=\"165\" cy=\"95\" r=\"6\"/><circle cx=\"230\" cy=\"95\" r=\"6\"/><circle cx=\"295\" cy=\"95\" r=\"6\"/><circle cx=\"360\" cy=\"95\" r=\"6\"/><circle cx=\"425\" cy=\"95\" r=\"6\"/><circle cx=\"490\" cy=\"95\" r=\"6\"/><circle cx=\"560\" cy=\"95\" r=\"6\"/></g>\n<g font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\">\n<g font-weight=\"bold\" fill=\"#1d4ed8\"><text x=\"35\" y=\"122\">c. 1440</text><text x=\"100\" y=\"78\">1804</text><text x=\"165\" y=\"122\">1876</text><text x=\"230\" y=\"78\">1879</text><text x=\"295\" y=\"122\">1895</text><text x=\"360\" y=\"78\">1903</text><text x=\"425\" y=\"122\">1928</text><text x=\"490\" y=\"78\">1969</text><text x=\"560\" y=\"122\">1989</text></g>\n<text x=\"35\" y=\"140\">printing</text><text x=\"35\" y=\"154\">press</text><text x=\"35\" y=\"168\" fill=\"#64748b\">Gutenberg</text>\n<text x=\"100\" y=\"44\">steam train</text><text x=\"100\" y=\"60\" fill=\"#64748b\">Trevithick</text>\n<text x=\"165\" y=\"140\">telephone</text><text x=\"165\" y=\"156\" fill=\"#64748b\">Bell</text>\n<text x=\"230\" y=\"44\">light bulb</text><text x=\"230\" y=\"60\" fill=\"#64748b\">Edison</text>\n<text x=\"295\" y=\"140\">X-rays</text><text x=\"295\" y=\"156\" fill=\"#64748b\">Röntgen</text>\n<text x=\"360\" y=\"44\">airplane</text><text x=\"360\" y=\"60\" fill=\"#64748b\">Wright brothers</text>\n<text x=\"425\" y=\"140\">penicillin</text><text x=\"425\" y=\"156\" fill=\"#64748b\">Fleming</text>\n<text x=\"490\" y=\"44\">Moon landing</text><text x=\"490\" y=\"60\" fill=\"#64748b\">Apollo 11</text>\n<text x=\"560\" y=\"140\">World Wide</text><text x=\"560\" y=\"154\">Web</text><text x=\"560\" y=\"168\" fill=\"#64748b\">Berners-Lee</text>\n</g></svg></div><div class=\"note\"><b>LGS Tuzağı (tarih tablosu – “Was it possible?”):</b> 2022 LGS’de çıktı: Bir kişi, ancak <b>yaşadığı yıllar içinde</b> icat edilmiş bir şeyi kullanabilir. Kişinin <b>ölüm yılı &lt; icat yılı</b> ise o icadı kullanamaz. Örnek: Marconi 1937’de öldü, bilgisayar 1938’de icat edildi → Marconi bilgisayar kullanamazdı. Doğum yılı icattan sonraysa da o olayı “canlı” izlemiş olamaz.</div><h3>7. Ünlü Bilim İnsanları (Famous Scientists)</h3><table class=\"rt\">\n<tr><th>Bilim insanı</th><th>Neden ünlü?</th></tr>\n<tr><td><b>Al-Jazari (El-Cezerî)</b> (1136–1206)</td><td>Artuklu sarayında mühendis; 1206’da makineleri resimleriyle anlatan bir kitap yazdı; fil saati; “robotiğin babası” denir.</td></tr>\n<tr><td><b>Marie Curie</b> (1867–1934)</td><td>Polonyum ve radyumu keşfetti; Nobel kazanan ilk kadın; iki farklı bilim dalında (fizik 1903, kimya 1911) Nobel alan tek kişi.</td></tr>\n<tr><td><b>Thomas Edison</b> (1847–1931)</td><td>Kullanışlı ampul (1879); 1.000’den fazla patent.</td></tr>\n<tr><td><b>Alexander Fleming</b> (1881–1955)</td><td>Penisilini 1928’de tesadüfen (by accident) keşfetti.</td></tr>\n<tr><td><b>Hulusi Behçet</b> (1889–1948)</td><td>Cildiye (deri) doktoru; 1937’de tanımladığı hastalık dünyada “Behçet hastalığı” olarak bilinir.</td></tr>\n<tr><td><b>Cahit Arf</b> (1910–1997)</td><td>Matematikçi; “Arf değişmezi” (Arf invariant); portresi 10 TL banknotunda.</td></tr>\n<tr><td><b>Gazi Yaşargil</b> (1925–2025, d. Lice / Diyarbakır)</td><td>Mikronöroşirürjinin (mikroskopla beyin cerrahisi) öncüsü; 1999’da “Yüzyılın Beyin Cerrahı” seçildi.</td></tr>\n<tr><td><b>Aziz Sancar</b> (d. 1946, Savur / Mardin)</td><td>Hücrelerin hasarlı DNA’yı nasıl onardığını araştırdı; 2015 Nobel Kimya Ödülü.</td></tr>\n</table><h3>8. Biyografi Metni Okuma (Reading a Biography)</h3><p>2019 ve 2025 LGS’de bilim insanı biyografisi çıktı. Paragrafların hangi başlığa ait olduğunu <b>ipucu kelimelerden</b> anla:</p><div class=\"fig\"><svg viewBox=\"0 0 590 200\" width=\"560\" role=\"img\" aria-label=\"Biyografi başlıkları ve ipucu kelimeler tablosu\">\n<rect x=\"10\" y=\"10\" width=\"570\" height=\"26\" fill=\"#7c3aed\"/>\n<text x=\"75.0\" y=\"27.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Başlık</text>\n<text x=\"360.0\" y=\"27.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">İpucu kelimeler / sorular</text>\n<rect x=\"10\" y=\"36\" width=\"570\" height=\"38\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"75.0\" y=\"59.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Personal Life</text>\n<text x=\"360.0\" y=\"52.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">was born in…, his/her parents, brothers, sisters, married, children,</text>\n<text x=\"360.0\" y=\"66.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">relatives</text>\n<rect x=\"10\" y=\"74\" width=\"570\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"75.0\" y=\"91.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Education</text>\n<text x=\"360.0\" y=\"91.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">went to school, graduated from, studied…, university, degree, doctorate</text>\n<rect x=\"10\" y=\"100\" width=\"570\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"75.0\" y=\"117.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Career</text>\n<text x=\"360.0\" y=\"117.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">worked as / at…, became a…, moved to…, taught at…</text>\n<rect x=\"10\" y=\"126\" width=\"570\" height=\"38\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"75.0\" y=\"149.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Achievements</text>\n<text x=\"360.0\" y=\"142.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">invented, discovered, developed, won a prize / award, wrote articles,</text>\n<text x=\"360.0\" y=\"156.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">named after</text>\n<rect x=\"10\" y=\"164\" width=\"570\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"75.0\" y=\"181.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Hobbies</text>\n<text x=\"360.0\" y=\"181.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">in his/her free time, liked playing / painting / reading…</text>\n<line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"190\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"10\" width=\"570\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><div class=\"note\"><b>LGS Tuzağı (“Which is NOT mentioned?”):</b> Metinde <b>ima edilen</b> değil, <b>açıkça yazan</b> bilgiyi say. Doğum yılı ve ölüm yılı varsa “ne kadar yaşadı?” sorusu cevaplanabilir (hesapla!). Ama “anne-babası kimdi?”, “hobileri neydi?”, “öğretmeni kimdi?” gibi sorular metinde kelimesi kelimesine yoksa cevaplanamaz.</div><h3>9. Soru Sorma ve Görüş Bildirme (Making Inquiries &amp; Giving Opinions)</h3><table class=\"rt\">\n<tr><th>Soru</th><th>Olası cevap</th></tr>\n<tr><td>What is the most important invention in history?</td><td>In my opinion, it’s the printing press.</td></tr>\n<tr><td>Why do you think so?</td><td>Because it helped people share knowledge quickly.</td></tr>\n<tr><td>Do you know who invented it?</td><td>Yes, Johannes Gutenberg. / I have no idea.</td></tr>\n<tr><td>When was it invented / discovered?</td><td>It was invented around 1440.</td></tr>\n<tr><td>What is your project about?</td><td>It’s about renewable energy.</td></tr>\n<tr><td>How does it work?</td><td>It uses a sensor to measure the temperature.</td></tr>\n<tr><td>What’s our next step?</td><td>Now, we have to put salty water in the test tubes.</td></tr>\n<tr><td>What will be the most important invention in the future?</td><td>I believe it will be robots that do surgery.</td></tr>\n</table><p><b>Görüş bildirme:</b> I think… · I believe… · In my opinion… · As far as I know… · <b>Katılma:</b> I agree. / Exactly! · <b>Katılmama:</b> I don’t agree. / I’m not sure about that.</p><div class=\"note\"><b>LGS Tuzağı (diyalog boşluğu):</b> Boşluğun <b>sonrasındaki</b> cümleye bak. Cevap bir isimse (“Johannes Gutenberg.”) soru <b>Who</b>, yıl ise <b>When</b>, gerekçe ise (“Because…”) <b>Why</b> sorusudur. 2026 LGS’de “at the moment” ile soruldu: “I have been busy doing my experiment” geçmişi anlatır; şu anda birlikte deney yapanlar “What is our next step? / Now, we have to…” diyenlerdir.</div><h3>10. Bilimin Etkileri (Effects of Science)</h3><table class=\"rt\">\n<tr><th>Olumlu (benefits)</th><th>Olumsuz (drawbacks)</th></tr>\n<tr><td>cure diseases (hastalıkları tedavi etmek), save lives, make life easier, communicate quickly, explore space</td><td>pollute the air / water (kirletmek), damage nature, create waste, make people lazy, harmful chemicals</td></tr>\n</table><h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3><p>2018-2026 LGS’lerinde Science ünitesinden <b>6 soru</b> geldi: 2019, 2021, 2022, 2024, 2025 ve 2026’da birer soru; 2018, 2020 ve 2023’te soru yok. Az soru gelen ünitelerden biri (adventures ile eşit). Sorular ölçtüğü beceriye göre beş alt başlıkta sınıflandırıldı.</p><div class=\"fig\"><svg viewBox=\"0 0 560 218\" width=\"560\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Isı haritası: 6 çıkmış soru; biyografi 2, icat-tarih tablosu 1, görüş soru-cevap 1, deney mesajlaşması 1, kitap seçimi 1\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\"><rect x=\"0\" y=\"0\" width=\"560\" height=\"218\" fill=\"#ffffff\"/><text x=\"8\" y=\"18\" font-size=\"13\" text-anchor=\"start\" font-weight=\"bold\">Alt başlık × yıl (2018-2026)</text><text x=\"530\" y=\"18\" font-weight=\"bold\">Top.</text><text x=\"275\" y=\"38\" font-size=\"11\" fill=\"#475569\">18</text><text x=\"303\" y=\"38\" font-size=\"11\" fill=\"#475569\">19</text><text x=\"331\" y=\"38\" font-size=\"11\" fill=\"#475569\">20</text><text x=\"359\" y=\"38\" font-size=\"11\" fill=\"#475569\">21</text><text x=\"387\" y=\"38\" font-size=\"11\" fill=\"#475569\">22</text><text x=\"415\" y=\"38\" font-size=\"11\" fill=\"#475569\">23</text><text x=\"443\" y=\"38\" font-size=\"11\" fill=\"#475569\">24</text><text x=\"471\" y=\"38\" font-size=\"11\" fill=\"#475569\">25</text><text x=\"499\" y=\"38\" font-size=\"11\" fill=\"#475569\">26</text><text x=\"256\" y=\"59\" font-size=\"11.5\" text-anchor=\"end\">1. Bilim insanı biyografisi</text><rect x=\"262\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"290\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"303\" y=\"59\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><rect x=\"318\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"346\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"374\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"402\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"430\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"458\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"471\" y=\"59\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><rect x=\"486\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><text x=\"530\" y=\"59\" font-weight=\"bold\">2</text><text x=\"256\" y=\"85\" font-size=\"11.5\" text-anchor=\"end\">2. İcat–tarih tablosu (mümkün mü?)</text><rect x=\"262\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"290\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"318\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"346\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"374\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"387\" y=\"85\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><rect x=\"402\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"430\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"458\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"486\" y=\"70\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><text x=\"530\" y=\"85\" font-weight=\"bold\">1</text><text x=\"256\" y=\"111\" font-size=\"11.5\" text-anchor=\"end\">3. Bilim/icat görüşü: soru–cevap</text><rect x=\"262\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"290\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"318\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"346\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"374\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"402\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"430\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"443\" y=\"111\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><rect x=\"458\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"486\" y=\"96\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><text x=\"530\" y=\"111\" font-weight=\"bold\">1</text><text x=\"256\" y=\"137\" font-size=\"11.5\" text-anchor=\"end\">4. Deney-laboratuvar mesajlaşması</text><rect x=\"262\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"290\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"318\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"346\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"374\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"402\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"430\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"458\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"486\" y=\"122\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"499\" y=\"137\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><text x=\"530\" y=\"137\" font-weight=\"bold\">1</text><text x=\"256\" y=\"163\" font-size=\"11.5\" text-anchor=\"end\">5. Bilim konulu kitap seçimi (çıkarım)</text><rect x=\"262\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"290\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"318\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"346\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#fdba74\"/><text x=\"359\" y=\"163\" font-weight=\"bold\" fill=\"#7c2d12\">1</text><rect x=\"374\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"402\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"430\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"458\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"486\" y=\"148\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><text x=\"530\" y=\"163\" font-weight=\"bold\">1</text><text x=\"256\" y=\"188\" font-size=\"11.5\" text-anchor=\"end\" font-weight=\"bold\">Yıllık toplam</text><text x=\"275\" y=\"188\" font-weight=\"bold\" fill=\"#94a3b8\">0</text><text x=\"303\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"331\" y=\"188\" font-weight=\"bold\" fill=\"#94a3b8\">0</text><text x=\"359\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"387\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"415\" y=\"188\" font-weight=\"bold\" fill=\"#94a3b8\">0</text><text x=\"443\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"471\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"499\" y=\"188\" font-weight=\"bold\" fill=\"#1e293b\">1</text><text x=\"530\" y=\"188\" font-weight=\"bold\">6</text><text x=\"8\" y=\"210\" font-size=\"11\" text-anchor=\"start\" fill=\"#475569\">2018, 2020 ve 2023’te bu üniteden soru yok; diğer yıllarda 1’er soru.</text></svg></div><p style=\"font-size:.9em\">* 2021-6, 2024-10 ve 2026-7’nin alt başlığı yorumdur: 2021-6 kitap adlarından konu çıkarımı, 2024-10 diyalogda soru–cevap eşleştirme, 2026-7 mesajlaşma ekranında zaman ifadesi (now / have been) okumadır.</p><div class=\"note\"><ul>\n<li><b>En çok sorulan:</b> bilim insanı biyografisi (2019 Tesla, 2025 Gazi Yaşargil). Kök: “Which information is NOT given?” ya da “Which title is NOT used?”; metinde açıkça yazmayan bilgi (akrabalar, hobiler) aranır.</li>\n<li><b>Tarih mantığı:</b> 2022’de doğum-ölüm yılları ile icat yılları karşılaştırıldı; ölüm yılı icat yılından önceyse o icat kullanılamaz.</li>\n<li><b>Diyalog ve mesajlaşma</b> (2024, 2026): soru–cevap eşleştirme ve “şu anda kim ne yapıyor?” sorusu; “Now, we have to…” ile “I have been busy…” ayrımı önemli.</li>\n<li>Çıkmış sayısı az (6) olduğu için alt başlık dağılımı kesin bir eğilim göstermez. Edilgen yapı (passive) çıkmışlarda tek başına dil bilgisi sorusu olarak gelmedi.</li>\n</ul></div>",
+ "qs": [
+  {
+   "lv": "kolay",
+   "q": "<p>Emre prepared the table below for his project about famous inventors.</p><div class=\"fig\"><svg viewBox=\"0 0 550 204\" width=\"550\" role=\"img\" aria-label=\"Mucitler tablosu\">\n<text x=\"275.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Inventors and Their Lives</text>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"95.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Inventor</text>\n<text x=\"285.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Invention / Discovery</text>\n<text x=\"465.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Born – Died</text>\n<rect x=\"10\" y=\"64\" width=\"530\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"95.0\" y=\"81.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Wilhelm Röntgen</text>\n<text x=\"285.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">X-rays (1895)</text>\n<text x=\"465.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1845 – 1923</text>\n<rect x=\"10\" y=\"90\" width=\"530\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"95.0\" y=\"107.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Thomas Edison</text>\n<text x=\"285.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">light bulb (1879)</text>\n<text x=\"465.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1847 – 1931</text>\n<rect x=\"10\" y=\"116\" width=\"530\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"95.0\" y=\"133.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Alexander Fleming</text>\n<text x=\"285.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">penicillin (1928)</text>\n<text x=\"465.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1881 – 1955</text>\n<rect x=\"10\" y=\"142\" width=\"530\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"95.0\" y=\"159.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Orville Wright</text>\n<text x=\"285.0\" y=\"159.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">airplane (1903)</text>\n<text x=\"465.0\" y=\"159.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1871 – 1948</text>\n<rect x=\"10\" y=\"168\" width=\"530\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"95.0\" y=\"185.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Tim Berners-Lee</text>\n<text x=\"285.0\" y=\"185.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">World Wide Web (1989)</text>\n<text x=\"465.0\" y=\"185.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1955 – </text>\n<line x1=\"180\" y1=\"38\" x2=\"180\" y2=\"194\" stroke=\"#94a3b8\"/>\n<line x1=\"390\" y1=\"38\" x2=\"390\" y2=\"194\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"156\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>According to Emre’s table, which of the following was <b>NOT</b> possible?</p>",
+   "c": [
+    "Thomas Edison read about the first flight of an airplane in a newspaper.",
+    "Orville Wright heard about the discovery of penicillin.",
+    "Alexander Fleming searched for information on the World Wide Web.",
+    "Wilhelm Röntgen worked in a room lit by a light bulb."
+   ],
+   "a": "C",
+   "s": "<p>Bir kişi ancak <b>hayattayken</b> icat edilen bir şeyi kullanabilir ya da duyabilir. Her seçeneği yıllarla kontrol edelim:</p><ul><li>A: Uçak 1903, Edison 1931’de öldü → mümkün ✓</li><li>B: Penisilin 1928, Orville Wright 1948’de öldü → mümkün ✓</li><li>C: World Wide Web <b>1989</b>’da icat edildi, Fleming ise <b>1955</b>’te öldü → <b>mümkün değil</b> ✗</li><li>D: Ampul 1879, Röntgen 1923’te öldü → mümkün ✓</li></ul><p>Tuzak: Berners-Lee’nin doğum yılı (1955) Fleming’in ölüm yılıyla aynıdır; ama önemli olan icadın yılıdır (1989). Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>The members of a school science club are chatting in their group.</p><div class=\"fig\"><svg viewBox=\"0 0 540 337\" width=\"540\" role=\"img\" aria-label=\"Bilim kulübü grup sohbeti\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"329\" rx=\"14\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"32\" rx=\"12\" fill=\"#0f766e\"/>\n<text x=\"270.0\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Science Club 8-B</text>\n<rect x=\"20\" y=\"46\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"62\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">Selin</text>\n<text x=\"30\" y=\"78\" font-size=\"11\" fill=\"#1e293b\">Our experiment is over! The results are on my desk. Who wants to</text>\n<text x=\"30\" y=\"93\" font-size=\"11\" fill=\"#1e293b\">check them?</text>\n<rect x=\"20\" y=\"106\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"122\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Kaan</text>\n<text x=\"30\" y=\"138\" font-size=\"11\" fill=\"#1e293b\">Sorry, I can’t. Deniz and I are still measuring the plants in the</text>\n<text x=\"30\" y=\"153\" font-size=\"11\" fill=\"#1e293b\">lab. We need ten more minutes.</text>\n<rect x=\"20\" y=\"166\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#9333ea\">Deniz</text>\n<text x=\"30\" y=\"198\" font-size=\"11\" fill=\"#1e293b\">Kaan is right. We are writing down the heights of the plants right</text>\n<text x=\"30\" y=\"213\" font-size=\"11\" fill=\"#1e293b\">now.</text>\n<rect x=\"20\" y=\"226\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"242\" font-size=\"11\" font-weight=\"bold\" fill=\"#d97706\">Ozan</text>\n<text x=\"30\" y=\"258\" font-size=\"11\" fill=\"#1e293b\">I’m going to start my experiment tomorrow, but I still need some</text>\n<text x=\"30\" y=\"273\" font-size=\"11\" fill=\"#1e293b\">test tubes.</text>\n<rect x=\"110\" y=\"286\" width=\"410\" height=\"37\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n<text x=\"120\" y=\"302\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Mira</text>\n<text x=\"120\" y=\"318\" font-size=\"11\" fill=\"#1e293b\">I finished mine yesterday, but I haven’t written my report yet.</text>\n</svg></div><p>According to the messages, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Mira has done her experiment, but her report isn’t ready yet.",
+    "Kaan and Deniz have already finished measuring the plants.",
+    "Ozan has got all the equipment he needs for his experiment.",
+    "Selin is still doing her experiment at the moment."
+   ],
+   "a": "A",
+   "s": "<p>Mira: “I finished mine yesterday, but I haven’t written my report <b>yet</b>.” → Deneyini bitirmiş ama raporunu henüz yazmamış ✓.</p><ul><li>B: Kaan ve Deniz “<b>still</b> measuring… right now” diyor; ölçüm bitmedi ✗</li><li>C: Ozan’ın hâlâ deney tüplerine ihtiyacı var (“I still need some test tubes”) ✗</li><li>D: Selin “Our experiment is <b>over</b>” diyor; deneyi bitti ✗</li></ul><p>Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Look at the experiment card.</p><div class=\"fig\"><svg viewBox=\"0 0 560 199\" width=\"560\" role=\"img\" aria-label=\"Görünmez mürekkep deney kartı\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"191\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Science Fun: How to Make Invisible Ink</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Materials: half a lemon, water, a bowl, a cotton bud, white paper, a lamp</text>\n<text x=\"24\" y=\"83\" font-size=\"11\" fill=\"#1e293b\">1. First, some lemon juice (1) ---- into a bowl.</text>\n<text x=\"24\" y=\"100\" font-size=\"11\" fill=\"#1e293b\">2. Then, a few drops of water (2) ---- to the juice and mixed.</text>\n<text x=\"24\" y=\"117\" font-size=\"11\" fill=\"#1e293b\">3. Next, a secret message is written on the paper with a cotton bud.</text>\n<text x=\"24\" y=\"134\" font-size=\"11\" fill=\"#1e293b\">4. When the paper is dry, it (3) ---- near a warm lamp.</text>\n<text x=\"24\" y=\"151\" font-size=\"11\" fill=\"#1e293b\">5. Finally, the message appears in light brown letters!</text>\n<text x=\"24\" y=\"176\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Be careful: Ask an adult to help you with the lamp.</text>\n</svg></div><p>Which of the following best completes the blanks (1), (2) and (3)?</p>",
+   "c": [
+    "squeezes / adds / holds",
+    "is squeezed / added / held",
+    "was squeezed / is adding / is held",
+    "is squeezed / are added / is held"
+   ],
+   "a": "D",
+   "s": "<p>Kartta bir süreç anlatılıyor; 3. ve 5. adımlarda olduğu gibi (“a secret message <b>is written</b>”) <b>Simple Present Passive</b> (am/is/are + V3) kullanılmalı.</p><ul><li>(1) lemon juice tekil → <b>is squeezed</b></li><li>(2) a few drops of water çoğul (drops) → <b>are added</b> (devamında “and mixed” = and are mixed)</li><li>(3) it (the paper) → <b>is held</b></li></ul><p>A etken yapıdadır; B’de “added / held” önünde is/are eksiktir; C’de “was” geçmiş zaman ve “is adding” etken yapıdır. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Students in class 8-A answered the question “Which invention can’t you live without?”. Each student chose only one invention.</p><div class=\"fig\"><svg viewBox=\"0 0 540 260\" width=\"540\" role=\"img\" aria-label=\"İcat anketi sütun grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Which invention can’t you live without? (30 students)</text>\n<line x1=\"50\" y1=\"210.0\" x2=\"520\" y2=\"210.0\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"214.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"50\" y1=\"181.7\" x2=\"520\" y2=\"181.7\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"185.7\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">2</text>\n<line x1=\"50\" y1=\"153.3\" x2=\"520\" y2=\"153.3\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"157.3\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">4</text>\n<line x1=\"50\" y1=\"125.0\" x2=\"520\" y2=\"125.0\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"129.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">6</text>\n<line x1=\"50\" y1=\"96.7\" x2=\"520\" y2=\"96.7\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"100.7\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">8</text>\n<line x1=\"50\" y1=\"68.3\" x2=\"520\" y2=\"68.3\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"72.3\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"50\" y1=\"40.0\" x2=\"520\" y2=\"40.0\" stroke=\"#e2e8f0\"/>\n<text x=\"44\" y=\"44.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">12</text>\n<text x=\"14\" y=\"125.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\" transform=\"rotate(-90 14 125.0)\">number of students</text>\n<rect x=\"74.0\" y=\"96.7\" width=\"44.0\" height=\"113.3\" fill=\"#2563eb\"/>\n<text x=\"97.0\" y=\"226\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">smartphone</text>\n<rect x=\"168.0\" y=\"54.2\" width=\"44.0\" height=\"155.8\" fill=\"#f97316\"/>\n<text x=\"191.0\" y=\"226\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">internet</text>\n<rect x=\"262.0\" y=\"125.0\" width=\"44.0\" height=\"85.0\" fill=\"#16a34a\"/>\n<text x=\"285.0\" y=\"226\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">electricity</text>\n<rect x=\"356.0\" y=\"167.5\" width=\"44.0\" height=\"42.5\" fill=\"#a855f7\"/>\n<text x=\"379.0\" y=\"226\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">refrigerator</text>\n<rect x=\"450.0\" y=\"181.7\" width=\"44.0\" height=\"28.3\" fill=\"#dc2626\"/>\n<text x=\"473.0\" y=\"226\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">airplane</text>\n<line x1=\"50\" y1=\"40\" x2=\"50\" y2=\"210\" stroke=\"#1e293b\"/><line x1=\"50\" y1=\"210\" x2=\"520\" y2=\"210\" stroke=\"#1e293b\"/>\n</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Most of the students can’t live without their smartphones.",
+    "The internet was chosen by more students than electricity and the refrigerator together.",
+    "The airplane and the refrigerator were chosen by the same number of students.",
+    "Exactly half of the class voted for the internet."
+   ],
+   "a": "B",
+   "s": "<p>Grafikteki değerler: smartphone 8, internet 11, electricity 6, refrigerator 3, airplane 2.</p><ul><li>A: En çok seçilen internet (11), akıllı telefon değil ✗</li><li>B: Electricity + refrigerator = 6 + 3 = <b>9</b>; internet 11 &gt; 9 ✓</li><li>C: Airplane 2, refrigerator 3; eşit değil ✗</li><li>D: Sınıfın yarısı 15 kişidir; internet 11 ✗</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Cahit Arf was born in Thessaloniki in 1910. When he was a little boy, his family moved to İzmir. He loved solving difficult problems, so he went to Paris to study mathematics. Later, he completed his doctorate in Göttingen, Germany. After he returned to Türkiye, he worked at İstanbul University for many years and taught thousands of students. He developed a mathematical idea which is called the “Arf invariant” today. Because of his great achievements, his picture was printed on the 10-lira banknote. He died in 1997.</p><p>Which of the following questions <b>CANNOT</b> be answered according to the text?</p>",
+   "c": [
+    "Who was his teacher in Göttingen?",
+    "Where did he study mathematics?",
+    "What is named after him?",
+    "How old was he when he died?"
+   ],
+   "a": "A",
+   "s": "<p>Metinde cevabı olan sorular:</p><ul><li>B: Matematiği <b>Paris</b>’te okudu ✓</li><li>C: “<b>Arf invariant</b>” onun adını taşır ✓</li><li>D: 1910’da doğdu, 1997’de öldü → 1997 − 1910 = <b>87</b> yaşında ✓ (hesap gerektirir ama cevaplanabilir)</li></ul><p>Göttingen’de doktora yaptığı yazıyor; fakat <b>hocasının kim olduğu</b> metinde yoktur. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Elif:</b> Have you finished your project about inventions?<br><b>Can:</b> Almost. I’m writing about the printing press.<br><b>Elif:</b> ----<br><b>Can:</b> Johannes Gutenberg. He developed it around 1440.<br><b>Elif:</b> Why did you choose it?<br><b>Can:</b> Because it helped people share knowledge with many others quickly.</p><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "When did people start using it?",
+    "Why is it so important for you?",
+    "How does it work exactly?",
+    "Do you know who invented it?"
+   ],
+   "a": "D",
+   "s": "<p>Boşluktan sonraki cevap bir <b>kişi adıyla</b> başlıyor: “Johannes Gutenberg.” Bu, “Kim icat etti?” sorusunun cevabıdır → “Do you know <b>who</b> invented it?” ✓</p><p>A tuzaktır: cevapta yıl (1440) da var, ama cevap önce bir isim veriyor; “When” sorusuna isimle cevap verilmez. B (neden önemli) zaten daha sonra “Why did you choose it?” ile soruluyor. C (nasıl çalışır) için cevapta açıklama yok. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>A reporter is interviewing a young inventor. The sentences are mixed up.</p><div class=\"fig\"><svg viewBox=\"0 0 560 214\" width=\"560\" role=\"img\" aria-label=\"Karışık röportaj cümleleri\">\n<rect x=\"8\" y=\"8\" width=\"44\" height=\"33\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"29.5\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">I</text>\n<rect x=\"52\" y=\"8\" width=\"500\" height=\"33\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"30\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Inventor:</text>\n<text x=\"140\" y=\"30\" font-size=\"11\" fill=\"#1e293b\">It’s a smart cup. It changes colour when the drink is too hot.</text>\n<rect x=\"8\" y=\"51\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"81.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">II</text>\n<rect x=\"52\" y=\"51\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"73\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Reporter:</text>\n<text x=\"140\" y=\"73\" font-size=\"11\" fill=\"#1e293b\">Congratulations on winning the Young Inventors Prize! Can you tell</text>\n<text x=\"140\" y=\"90\" font-size=\"11\" fill=\"#1e293b\">us about your invention?</text>\n<rect x=\"8\" y=\"111\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"141.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">III</text>\n<rect x=\"52\" y=\"111\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"133\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Inventor:</text>\n<text x=\"140\" y=\"133\" font-size=\"11\" fill=\"#1e293b\">Last winter, my little brother burned his tongue while he was</text>\n<text x=\"140\" y=\"150\" font-size=\"11\" fill=\"#1e293b\">drinking hot milk.</text>\n<rect x=\"8\" y=\"171\" width=\"44\" height=\"33\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"192.5\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">IV</text>\n<rect x=\"52\" y=\"171\" width=\"500\" height=\"33\" fill=\"#ffffff\" stroke=\"#0f766e\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"193\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Reporter:</text>\n<text x=\"140\" y=\"193\" font-size=\"11\" fill=\"#1e293b\">What a useful idea! How did you come up with it?</text>\n</svg></div><p>Which of the following is the correct order of the conversation?</p>",
+   "c": [
+    "II – IV – I – III",
+    "II – I – IV – III",
+    "II – III – IV – I",
+    "IV – I – II – III"
+   ],
+   "a": "B",
+   "s": "<p>Röportaj tebrik ve icadın ne olduğu sorusuyla başlar (<b>II</b>). Mucit icadını anlatır: akıllı bardak (<b>I</b>). Muhabir fikri beğenip fikrin nasıl aklına geldiğini sorar: “How did you come up with it?” (<b>IV</b>). Mucit, kardeşinin dilini yakmasını anlatır (<b>III</b>).</p><p>Sıra: II – I – IV – III. A’da icat anlatılmadan “What a useful idea!” denmiş olur; bu mantıksızdır. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Read the poster.</p><div class=\"fig\"><svg viewBox=\"0 0 560 250\" width=\"560\" role=\"img\" aria-label=\"Genç bilim insanları fuarı afişi\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"242\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#1d4ed8\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">SAMSUN YOUNG SCIENTISTS FAIR 2027</text>\n<text x=\"280.0\" y=\"58\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Show your talent and change the world!</text>\n<text x=\"280.0\" y=\"83\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Date: 12–14 May   •   Place: Atakum Science Center</text>\n<text x=\"280.0\" y=\"100\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Categories: Robotics • Renewable Energy • Health • Space</text>\n<text x=\"280.0\" y=\"117\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Who can join? Students aged 12–15, in teams of 2 or 3</text>\n<text x=\"280.0\" y=\"134\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Deadline for projects: 20 April</text>\n<text x=\"280.0\" y=\"151\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Prizes:</text>\n<text x=\"280.0\" y=\"168\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1st place – a telescope</text>\n<text x=\"280.0\" y=\"185\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">2nd place – a microscope</text>\n<text x=\"280.0\" y=\"202\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">3rd place – a science kit</text>\n<text x=\"280.0\" y=\"227\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">Free entry for all visitors!</text>\n</svg></div><p>Which of the following is <b>NOT</b> correct according to the poster?</p>",
+   "c": [
+    "A 14-year-old student can take part in the fair with two friends.",
+    "Visitors don’t have to pay to see the projects.",
+    "Students can send their projects until the first day of the fair.",
+    "The team in second place will win a microscope."
+   ],
+   "a": "C",
+   "s": "<p>Afişe göre:</p><ul><li>A: 12–15 yaş, 2 veya 3 kişilik takım → 14 yaşında bir öğrenci iki arkadaşıyla (3 kişi) katılabilir ✓</li><li>B: “Free entry for all visitors” → ziyaretçiler ücret ödemez ✓</li><li>C: Projeler için son tarih <b>20 April</b>; fuar 12 May’de başlıyor. Yani projeler fuarın ilk gününe kadar gönderilemez ✗</li><li>D: 2nd – a microscope ✓</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Defne wrote some definitions on cards to test her friends.</p><div class=\"fig\"><svg viewBox=\"0 0 560 167\" width=\"560\" role=\"img\" aria-label=\"Tanım kartları\">\n<rect x=\"10.0\" y=\"8\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n<text x=\"22.0\" y=\"26\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#2563eb\">Card 1</text>\n<text x=\"22.0\" y=\"42\" font-size=\"11\" fill=\"#1e293b\">a person who studies stars, planets and</text>\n<text x=\"22.0\" y=\"57\" font-size=\"11\" fill=\"#1e293b\">other objects in space</text>\n<rect x=\"285.0\" y=\"8\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n<text x=\"297.0\" y=\"26\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#16a34a\">Card 2</text>\n<text x=\"297.0\" y=\"42\" font-size=\"11\" fill=\"#1e293b\">a thin glass container that is open at one</text>\n<text x=\"297.0\" y=\"57\" font-size=\"11\" fill=\"#1e293b\">end; it is used for mixing small amounts of</text>\n<text x=\"297.0\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">liquids</text>\n<rect x=\"10.0\" y=\"95\" width=\"265.0\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n<text x=\"22.0\" y=\"113\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#9333ea\">Card 3</text>\n<text x=\"22.0\" y=\"129\" font-size=\"11\" fill=\"#1e293b\">a smart guess that scientists test by doing</text>\n<text x=\"22.0\" y=\"144\" font-size=\"11\" fill=\"#1e293b\">an experiment</text>\n<rect x=\"285.0\" y=\"95\" width=\"265.0\" height=\"60\" rx=\"12\" fill=\"#ffffff\" stroke=\"#ea580c\" stroke-width=\"1.8\"/>\n<text x=\"297.0\" y=\"113\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#ea580c\">Card 4</text>\n<text x=\"297.0\" y=\"129\" font-size=\"11\" fill=\"#1e293b\">to find something that already exists in</text>\n<text x=\"297.0\" y=\"144\" font-size=\"11\" fill=\"#1e293b\">nature for the first time</text>\n</svg></div><p>Which of the following words is <b>NOT</b> defined on the cards?</p>",
+   "c": [
+    "invent",
+    "astronomer",
+    "hypothesis",
+    "test tube"
+   ],
+   "a": "A",
+   "s": "<p>Kartları eşleştirelim:</p><ul><li>Card 1: yıldızları ve gezegenleri inceleyen kişi → <b>astronomer</b></li><li>Card 2: bir ucu açık ince cam kap → <b>test tube</b></li><li>Card 3: deneyle test edilen akıllıca tahmin → <b>hypothesis</b></li><li>Card 4: doğada zaten var olan bir şeyi ilk kez bulmak → <b>discover</b> (invent değil!)</li></ul><p>Tuzak: “invent” daha önce olmayan bir şeyi yapmaktır; Card 4’teki tanım “discover”a aittir. Bu yüzden “invent” kartlarda tanımlanmamıştır. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Here is the weekly plan of the school science club.</p><div class=\"fig\"><svg viewBox=\"0 0 550 228\" width=\"550\" role=\"img\" aria-label=\"Bilim kulübü haftalık plan tablosu\">\n<text x=\"275.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Science Club – Weekly Plan</text>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"26\" fill=\"#0f766e\"/>\n<text x=\"55.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Day</text>\n<text x=\"215.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Activity</text>\n<text x=\"385.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Place</text>\n<text x=\"490.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Teacher</text>\n<rect x=\"10\" y=\"64\" width=\"530\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"81.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Monday</text>\n<text x=\"215.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Observing cells with a microscope</text>\n<text x=\"385.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Lab 1</text>\n<text x=\"490.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Mr. Demir</text>\n<rect x=\"10\" y=\"90\" width=\"530\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"107.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Tuesday</text>\n<text x=\"215.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Building a simple robot</text>\n<text x=\"385.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Robotics Room</text>\n<text x=\"490.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Ms. Kaya</text>\n<rect x=\"10\" y=\"116\" width=\"530\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"133.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Wednesday</text>\n<text x=\"215.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">No club (teachers’ meeting)</text>\n<text x=\"385.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">—</text>\n<text x=\"490.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">—</text>\n<rect x=\"10\" y=\"142\" width=\"530\" height=\"38\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"165.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Thursday</text>\n<text x=\"215.0\" y=\"158.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Watching the stars with a telescope</text>\n<text x=\"215.0\" y=\"172.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">(19:00)</text>\n<text x=\"385.0\" y=\"165.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">School garden</text>\n<text x=\"490.0\" y=\"165.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Mr. Demir</text>\n<rect x=\"10\" y=\"180\" width=\"530\" height=\"38\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"203.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Friday</text>\n<text x=\"215.0\" y=\"196.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Mixing chemicals safely (goggles</text>\n<text x=\"215.0\" y=\"210.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">needed!)</text>\n<text x=\"385.0\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Lab 2</text>\n<text x=\"490.0\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Ms. Aydın</text>\n<line x1=\"100\" y1=\"38\" x2=\"100\" y2=\"218\" stroke=\"#94a3b8\"/>\n<line x1=\"330\" y1=\"38\" x2=\"330\" y2=\"218\" stroke=\"#94a3b8\"/>\n<line x1=\"440\" y1=\"38\" x2=\"440\" y2=\"218\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"180\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>According to the plan, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Both of Mr. Demir’s activities take place indoors.",
+    "Students need goggles for the robotics activity.",
+    "The club meets on every weekday.",
+    "Students who want to learn about space should come on Thursday evening."
+   ],
+   "a": "D",
+   "s": "<p>Tabloyu kontrol edelim:</p><ul><li>A: Mr. Demir’in perşembe etkinliği <b>okul bahçesinde</b> (school garden), yani dışarıda ✗</li><li>B: Gözlük (goggles) <b>cuma</b> günkü kimyasal etkinliği için gerekli, robotik için değil ✗</li><li>C: Çarşamba kulüp yok ✗</li><li>D: Perşembe 19:00’da teleskopla yıldız gözlemi var → uzayla ilgilenenler perşembe akşamı gelmeli ✓</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Four students are talking about science.</p><div class=\"fig\"><svg viewBox=\"0 0 560 182\" width=\"560\" role=\"img\" aria-label=\"Bilim hakkında konuşma balonları\">\n<rect x=\"10.0\" y=\"8\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.8\"/>\n<text x=\"22.0\" y=\"26\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#2563eb\">Arda</text>\n<text x=\"22.0\" y=\"42\" font-size=\"11\" fill=\"#1e293b\">Thanks to science, doctors can cure many</text>\n<text x=\"22.0\" y=\"57\" font-size=\"11\" fill=\"#1e293b\">diseases that killed millions of people in</text>\n<text x=\"22.0\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">the past.</text>\n<rect x=\"285.0\" y=\"8\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#dc2626\" stroke-width=\"1.8\"/>\n<text x=\"297.0\" y=\"26\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#dc2626\">Beren</text>\n<text x=\"297.0\" y=\"42\" font-size=\"11\" fill=\"#1e293b\">I think some inventions damage nature.</text>\n<text x=\"297.0\" y=\"57\" font-size=\"11\" fill=\"#1e293b\">Factories pollute the air and plastic fills</text>\n<text x=\"297.0\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">the oceans.</text>\n<rect x=\"10.0\" y=\"95\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#16a34a\" stroke-width=\"1.8\"/>\n<text x=\"22.0\" y=\"113\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#16a34a\">Cem</text>\n<text x=\"22.0\" y=\"129\" font-size=\"11\" fill=\"#1e293b\">Science makes our daily lives easier. Just</text>\n<text x=\"22.0\" y=\"144\" font-size=\"11\" fill=\"#1e293b\">think about washing machines and</text>\n<text x=\"22.0\" y=\"159\" font-size=\"11\" fill=\"#1e293b\">dishwashers!</text>\n<rect x=\"285.0\" y=\"95\" width=\"265.0\" height=\"75\" rx=\"12\" fill=\"#ffffff\" stroke=\"#9333ea\" stroke-width=\"1.8\"/>\n<text x=\"297.0\" y=\"113\" font-size=\"11.0\" font-weight=\"bold\" fill=\"#9333ea\">Duru</text>\n<text x=\"297.0\" y=\"129\" font-size=\"11\" fill=\"#1e293b\">I want to become a geneticist in the</text>\n<text x=\"297.0\" y=\"144\" font-size=\"11\" fill=\"#1e293b\">future, so I read articles about DNA every</text>\n<text x=\"297.0\" y=\"159\" font-size=\"11\" fill=\"#1e293b\">day.</text>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the speech bubbles?</p>",
+   "c": [
+    "Arda believes that medicine hasn’t improved much over the years.",
+    "Beren gives examples of how some inventions harm the environment.",
+    "Cem thinks that machines like washing machines make people lazy.",
+    "Duru has already become a scientist who studies DNA."
+   ],
+   "a": "B",
+   "s": "<ul><li>A: Arda, bilim sayesinde eskiden milyonlarca insanı öldüren hastalıkların tedavi edilebildiğini söylüyor; yani tıp çok gelişmiş ✗</li><li>B: Beren, fabrikaların havayı kirlettiğini ve plastiğin okyanusları doldurduğunu söyleyerek icatların doğaya zararına <b>örnek veriyor</b> ✓</li><li>C: Cem bu makinelerin hayatı <b>kolaylaştırdığını</b> söylüyor, insanları tembelleştirdiğinden bahsetmiyor ✗</li><li>D: Duru gelecekte genetikçi olmak <b>istiyor</b> (“I want to become”); henüz olmadı ✗</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Which of the following sentences uses the verb <b>WRONGLY</b>?</p>",
+   "c": [
+    "Alexander Graham Bell invented the telephone in 1876.",
+    "Marie Curie discovered two new elements, polonium and radium.",
+    "Isaac Newton invented gravity when he saw an apple falling from a tree.",
+    "The Wright brothers invented the first successful airplane."
+   ],
+   "a": "C",
+   "s": "<p><b>Invent</b> = daha önce olmayan bir şeyi yapmak (icat); <b>discover</b> = doğada zaten var olanı ilk kez bulmak (keşif).</p><ul><li>A: Telefon daha önce yoktu → invented ✓</li><li>B: Elementler doğada zaten vardı → discovered ✓</li><li>C: Yer çekimi (gravity) Newton’dan önce de vardı; Newton onu icat etmedi, <b>keşfetti</b> (discovered). “Invented” yanlış kullanılmıştır ✗</li><li>D: Uçak daha önce yoktu → invented ✓</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Mr. Yılmaz was born in 1960. Look at the timeline.</p><div class=\"fig\"><svg viewBox=\"0 0 560 130\" width=\"560\" role=\"img\" aria-label=\"Bilim ve teknoloji zaman çizelgesi\">\n<line x1=\"20\" y1=\"60\" x2=\"540\" y2=\"60\" stroke=\"#475569\" stroke-width=\"3\"/>\n<g fill=\"#ea580c\"><circle cx=\"70\" cy=\"60\" r=\"7\"/><circle cx=\"170\" cy=\"60\" r=\"7\"/><circle cx=\"270\" cy=\"60\" r=\"7\"/><circle cx=\"370\" cy=\"60\" r=\"7\"/><circle cx=\"470\" cy=\"60\" r=\"7\"/></g>\n<g font-size=\"11\" text-anchor=\"middle\" fill=\"#1e293b\"><g font-weight=\"bold\" fill=\"#c2410c\"><text x=\"70\" y=\"42\">1957</text><text x=\"170\" y=\"42\">1969</text><text x=\"270\" y=\"42\">1973</text><text x=\"370\" y=\"42\">1989</text><text x=\"470\" y=\"42\">1998</text></g>\n<text x=\"70\" y=\"84\">first satellite</text><text x=\"70\" y=\"99\">in space</text><text x=\"170\" y=\"84\">first people</text><text x=\"170\" y=\"99\">on the Moon</text><text x=\"270\" y=\"84\">first call on a</text><text x=\"270\" y=\"99\">mobile phone</text><text x=\"370\" y=\"84\">World Wide Web</text><text x=\"370\" y=\"99\">is invented</text><text x=\"470\" y=\"84\">Google search</text><text x=\"470\" y=\"99\">engine starts</text></g>\n</svg></div><p>Which of the following could Mr. Yılmaz do when he was <b>a child under 12</b>?</p>",
+   "c": [
+    "He could watch the first people walking on the Moon on TV.",
+    "He could search for his homework topics on Google.",
+    "He could call his friends on a mobile phone.",
+    "He could watch the first satellite going into space on the news."
+   ],
+   "a": "A",
+   "s": "<p>Mr. Yılmaz 1960’ta doğdu; 12 yaşından küçükken yani <b>1960–1971</b> arasında yaşanan olaylara bakmalıyız.</p><ul><li>A: Aya ilk insan iniş <b>1969</b> → 9 yaşında, mümkün ✓</li><li>B: Google 1998 → 38 yaşında ✗</li><li>C: İlk cep telefonu görüşmesi 1973 → 13 yaşında; üstelik 1973’te cep telefonu herkesin kullanabileceği bir şey değildi ✗</li><li>D: İlk uydu 1957 → o daha <b>doğmamıştı</b> ✗</li></ul><p>Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Al-Jazari lived in the 12th century. He worked as an engineer in the palace of the Artuqids for about 25 years. In 1206, he finished a book which explains how to make about fifty machines. In the book, he drew a detailed picture of every machine and explained each step clearly. One of his most famous inventions is the elephant clock. It worked with water and showed the time with moving figures. Today, many people call him “the father of robotics” because some of his machines could move by themselves.</p><p>We can understand from the text that Al-Jazari ----.</p>",
+   "c": [
+    "invented the first electric clock in history",
+    "kept his ideas secret, so nobody could copy his machines",
+    "worked in many different palaces during his life",
+    "wanted other people to be able to build his machines too"
+   ],
+   "a": "D",
+   "s": "<p>Metinde El-Cezerî’nin kitabında <b>her makinenin ayrıntılı resmini çizdiği</b> ve <b>her adımı açıkça anlattığı</b> söyleniyor. Buradan, başkalarının da makinelerini yapabilmesini istediği çıkarılır ✓.</p><ul><li>A: Fil saati <b>suyla</b> çalışıyordu, elektrikle değil ✗</li><li>B: Fikirlerini gizlemek bir yana, kitap yazıp anlatmıştır ✗</li><li>C: Yaklaşık 25 yıl <b>Artukluların sarayında</b> çalıştı; birçok saraydan söz edilmiyor ✗</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Look at the safety rules in the school laboratory.</p><div class=\"fig\"><svg viewBox=\"0 0 540 166\" width=\"540\" role=\"img\" aria-label=\"Laboratuvar güvenlik kuralları afişi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"158\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#dc2626\"/>\n<text x=\"270.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">LAB SAFETY RULES</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" fill=\"#1e293b\">1. Wear goggles and gloves during experiments.</text>\n<text x=\"24\" y=\"75\" font-size=\"11\" fill=\"#1e293b\">2. Never taste or smell chemicals directly.</text>\n<text x=\"24\" y=\"92\" font-size=\"11\" fill=\"#1e293b\">3. Tie back long hair.</text>\n<text x=\"24\" y=\"109\" font-size=\"11\" fill=\"#1e293b\">4. Don’t run in the lab.</text>\n<text x=\"24\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">5. Tell your teacher immediately if something breaks.</text>\n<text x=\"24\" y=\"143\" font-size=\"11\" fill=\"#1e293b\">6. Clean your table and wash your hands before you leave.</text>\n</svg></div><p>Which student followed <b>ALL</b> the rules?</p>",
+   "c": [
+    "Ayla wore her goggles, but she touched the chemicals without gloves.",
+    "Berk broke a test tube and told the teacher right away. Then, he cleaned his table and washed his hands.",
+    "Can tied his long hair back and smelled the liquid closely to understand what it was.",
+    "Dila finished her experiment first, so she ran out of the lab to catch the school bus."
+   ],
+   "a": "B",
+   "s": "<ul><li>A: Ayla eldiven giymeden kimyasallara dokundu → 1. kural ihlali ✗</li><li>B: Berk tüpü kırınca öğretmene <b>hemen</b> haber verdi (5. kural), masasını temizleyip ellerini yıkadı (6. kural) → kurallara uydu ✓</li><li>C: Can saçını topladı ama sıvıyı yakından kokladı → 2. kural ihlali ✗</li><li>D: Dila laboratuvardan koşarak çıktı (4. kural) ve masasını temizleyip elini yıkamadı (6. kural) ✗</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Yusuf is interviewing Dr. Ece Tan, a marine biologist, for the school magazine.</p><div class=\"fig\"><svg viewBox=\"0 0 560 188\" width=\"560\" role=\"img\" aria-label=\"Deniz biyoloğu ile röportaj\">\n<rect x=\"8\" y=\"8\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"38.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1</text>\n<rect x=\"52\" y=\"8\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"30\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Yusuf:</text>\n<text x=\"140\" y=\"30\" font-size=\"11\" fill=\"#1e293b\">What do you do in your job?</text>\n<text x=\"64\" y=\"47\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Dr. Tan:</text>\n<text x=\"140\" y=\"47\" font-size=\"11\" fill=\"#1e293b\">----</text>\n<rect x=\"8\" y=\"68\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"98.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">2</text>\n<rect x=\"52\" y=\"68\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"90\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Yusuf:</text>\n<text x=\"140\" y=\"90\" font-size=\"11\" fill=\"#1e293b\">What has been your biggest achievement so far?</text>\n<text x=\"64\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Dr. Tan:</text>\n<text x=\"140\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">----</text>\n<rect x=\"8\" y=\"128\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"158.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">3</text>\n<rect x=\"52\" y=\"128\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"150\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Yusuf:</text>\n<text x=\"140\" y=\"150\" font-size=\"11\" fill=\"#1e293b\">What advice would you give to young people who love science?</text>\n<text x=\"64\" y=\"167\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Dr. Tan:</text>\n<text x=\"140\" y=\"167\" font-size=\"11\" fill=\"#1e293b\">----</text>\n</svg></div><p>Which of the following is <b>NOT</b> one of Dr. Tan’s answers?</p>",
+   "c": [
+    "I study the oceans and try to protect sea animals from pollution.",
+    "Last year, my team found a new kind of jellyfish in the Black Sea.",
+    "Scientists use special robots to make maps of the Moon.",
+    "Never stop asking questions, and read as much as you can."
+   ],
+   "a": "C",
+   "s": "<ul><li>1. soru (Ne iş yapıyorsunuz?) → A: Okyanusları inceliyorum ve deniz canlılarını kirlilikten koruyorum.</li><li>2. soru (En büyük başarınız?) → B: Geçen yıl ekibim Karadeniz’de yeni bir denizanası türü buldu.</li><li>3. soru (Gençlere tavsiyeniz?) → D: Soru sormayı asla bırakmayın ve çok okuyun.</li></ul><p>C (Bilim insanları Ay’ın haritasını çıkarmak için robot kullanıyor) hiçbir soruya cevap değildir; üstelik bir deniz biyoloğunun işiyle de ilgili değildir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Zeynep sent an e-mail to her science teacher.</p><div class=\"fig\"><svg viewBox=\"0 0 560 200\" width=\"560\" role=\"img\" aria-label=\"Zeynep’in öğretmenine e-postası\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"192\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#475569\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">To: Ms. Arslan   |   Subject: My Solar Energy Project</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" fill=\"#1e293b\">Dear Ms. Arslan,</text>\n<text x=\"24\" y=\"75\" font-size=\"11\" fill=\"#1e293b\">I have finished the first part of my project on solar energy. I built a small solar</text>\n<text x=\"24\" y=\"92\" font-size=\"11\" fill=\"#1e293b\">oven with a pizza box and tested it on Monday. Unfortunately, it was cloudy that day,</text>\n<text x=\"24\" y=\"109\" font-size=\"11\" fill=\"#1e293b\">so the chocolate inside the oven didn’t melt. I’m planning to test it again on</text>\n<text x=\"24\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">Saturday, because the weather forecast says it will be sunny. After that, I will write</text>\n<text x=\"24\" y=\"143\" font-size=\"11\" fill=\"#1e293b\">my report and prepare a poster for the science fair.</text>\n<text x=\"24\" y=\"160\" font-size=\"11\" fill=\"#1e293b\">Best wishes,</text>\n<text x=\"24\" y=\"177\" font-size=\"11\" fill=\"#1e293b\">Zeynep</text>\n</svg></div><p>What is Zeynep going to do <b>next</b>?</p>",
+   "c": [
+    "test her solar oven on a sunny day",
+    "prepare a poster for the science fair",
+    "build a solar oven with a pizza box",
+    "write a report about her results"
+   ],
+   "a": "A",
+   "s": "<p>Zeynep fırını zaten yaptı ve pazartesi denedi (C geçmişte kaldı ✗). Hava bulutlu olduğu için çikolata erimedi; bu yüzden fırını <b>cumartesi</b>, güneşli bir günde <b>tekrar deneyecek</b> ✓.</p><p>“<b>After that</b>” (ondan sonra) ifadesi rapor yazma ve poster hazırlamanın deneyden <b>sonra</b> yapılacağını gösterir (B ve D sonraki adımlar ✗). Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Melis planted four bean plants of the same size and kept them in different conditions for two weeks. Here are her results.</p><div class=\"fig\"><svg viewBox=\"0 0 560 178\" width=\"560\" role=\"img\" aria-label=\"Bitki deneyi sonuç tablosu\">\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">My Bean Plant Experiment</text>\n<rect x=\"10\" y=\"38\" width=\"540\" height=\"26\" fill=\"#16a34a\"/>\n<text x=\"45.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Plant</text>\n<text x=\"165.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Sunlight</text>\n<text x=\"310.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Water</text>\n<text x=\"460.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Height after 2 weeks</text>\n<rect x=\"10\" y=\"64\" width=\"540\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"45.0\" y=\"81.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">A</text>\n<text x=\"165.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">yes</text>\n<text x=\"310.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">every day</text>\n<text x=\"460.0\" y=\"81.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">12 cm – green leaves</text>\n<rect x=\"10\" y=\"90\" width=\"540\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"45.0\" y=\"107.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">B</text>\n<text x=\"165.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">yes</text>\n<text x=\"310.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">no water</text>\n<text x=\"460.0\" y=\"107.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">3 cm – dry leaves</text>\n<rect x=\"10\" y=\"116\" width=\"540\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"45.0\" y=\"133.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">C</text>\n<text x=\"165.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">no (in a dark cupboard)</text>\n<text x=\"310.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">every day</text>\n<text x=\"460.0\" y=\"133.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">5 cm – yellow leaves</text>\n<rect x=\"10\" y=\"142\" width=\"540\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"45.0\" y=\"159.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">D</text>\n<text x=\"165.0\" y=\"159.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">yes</text>\n<text x=\"310.0\" y=\"159.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">once a week</text>\n<text x=\"460.0\" y=\"159.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">8 cm – green leaves</text>\n<line x1=\"80\" y1=\"38\" x2=\"80\" y2=\"168\" stroke=\"#94a3b8\"/>\n<line x1=\"250\" y1=\"38\" x2=\"250\" y2=\"168\" stroke=\"#94a3b8\"/>\n<line x1=\"370\" y1=\"38\" x2=\"370\" y2=\"168\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"540\" height=\"130\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which conclusion can Melis draw from her results?</p>",
+   "c": [
+    "Bean plants grow best in a dark place.",
+    "Water is not necessary for bean plants to grow.",
+    "Plant C grew more than Plant D because it got more water.",
+    "Bean plants need both sunlight and enough water to grow well."
+   ],
+   "a": "D",
+   "s": "<p>En uzun ve sağlıklı bitki, hem güneş ışığı hem de her gün su alan <b>A</b> (12 cm). Işık almayan C sararmış (5 cm), su almayan B kurumuş (3 cm), az su alan D daha kısa kalmış (8 cm). Sonuç: İyi büyümek için hem ışık hem yeterli su gerekir ✓.</p><ul><li>A: Karanlıktaki C sarardı ✗</li><li>B: Su almayan B kurudu ✗</li><li>C: Tuzak! C daha çok su aldı ama D’den (8 cm) <b>kısa</b> kaldı (5 cm) ✗</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Students heated some water in a beaker and measured its temperature every two minutes.</p><div class=\"fig\"><svg viewBox=\"0 0 560 278\" width=\"560\" role=\"img\" aria-label=\"Suyun ısıtılması çizgi grafiği\">\n<text x=\"280\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Heating Water in a Beaker</text>\n<line x1=\"60\" y1=\"230\" x2=\"530\" y2=\"230\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"234\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0 °C</text>\n<line x1=\"60\" y1=\"198\" x2=\"530\" y2=\"198\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"202\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20 °C</text>\n<line x1=\"60\" y1=\"166\" x2=\"530\" y2=\"166\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"170\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40 °C</text>\n<line x1=\"60\" y1=\"134\" x2=\"530\" y2=\"134\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"138\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">60 °C</text>\n<line x1=\"60\" y1=\"102\" x2=\"530\" y2=\"102\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"106\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">80 °C</text>\n<line x1=\"60\" y1=\"70\" x2=\"530\" y2=\"70\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"74\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">100 °C</text>\n<line x1=\"60\" y1=\"38\" x2=\"530\" y2=\"38\" stroke=\"#e2e8f0\"/><text x=\"52\" y=\"42\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">120 °C</text>\n<text x=\"60\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">0</text>\n<text x=\"152\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">2</text>\n<text x=\"244\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<text x=\"336\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">6</text>\n<text x=\"428\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">8</text>\n<text x=\"520\" y=\"246\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<text x=\"300\" y=\"266\" font-size=\"11\" fill=\"#475569\" text-anchor=\"middle\">time (minutes)</text>\n<polyline points=\"60,198 152,158 244,118 336,70 428,70 520,70\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"3\"/>\n<circle cx=\"60\" cy=\"198\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"152\" cy=\"158\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"244\" cy=\"118\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"336\" cy=\"70\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"428\" cy=\"70\" r=\"4.5\" fill=\"#dc2626\"/>\n<circle cx=\"520\" cy=\"70\" r=\"4.5\" fill=\"#dc2626\"/>\n<line x1=\"60\" y1=\"36\" x2=\"60\" y2=\"230\" stroke=\"#1e293b\"/><line x1=\"60\" y1=\"230\" x2=\"530\" y2=\"230\" stroke=\"#1e293b\"/>\n</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "The water started to boil after two minutes.",
+    "The temperature didn’t change after the sixth minute.",
+    "The water was 70 °C at the beginning of the experiment.",
+    "The temperature rose by 50 degrees in the first two minutes."
+   ],
+   "a": "B",
+   "s": "<p>Grafikteki değerler: 0. dk 20 °C, 2. dk 45 °C, 4. dk 70 °C, 6. dk 100 °C, 8. ve 10. dk 100 °C.</p><ul><li>A: 2. dakikada su 45 °C; kaynama (100 °C) <b>6. dakikada</b> ✗</li><li>B: 6. dakikadan sonra sıcaklık hep 100 °C → değişmedi ✓</li><li>C: Başlangıçta 20 °C ✗</li><li>D: İlk iki dakikada 20 → 45 = <b>25</b> derece arttı; 50 derece artış ilk <b>dört</b> dakikadadır ✗</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>For years, doctors couldn’t understand why some patients had the same strange symptoms. In the end, a team of scientists <u>carried out</u> hundreds of tests in their laboratory and finally found the reason for the disease.</p><p>Which word is closest in meaning to the underlined phrase?</p>",
+   "c": [
+    "avoided",
+    "explained",
+    "conducted",
+    "invented"
+   ],
+   "a": "C",
+   "s": "<p>“<b>Carry out</b> a test / an experiment” = test ya da deney <b>yapmak, gerçekleştirmek</b>. Eş anlamlısı <b>conduct</b>’tır (conducted).</p><p>Avoided = kaçınmak; explained = açıklamak; invented = icat etmek. Bilim insanları testleri icat etmedi, yaptılar. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>She was born in Warsaw in 1867. At that time, women weren’t allowed to study at the university in Warsaw, so she moved to Paris to study physics and mathematics. There, she worked together with her husband, Pierre, and they discovered two new elements, polonium and radium. In 1903, she became the first woman to win a Nobel Prize. Eight years later, she won a second Nobel Prize, this time in chemistry. She is still the only person in history who has won Nobel Prizes in two different sciences.</p><p>Which of the following is the best title for the text?</p>",
+   "c": [
+    "A Scientist Who Invented the X-ray Machine",
+    "Marie Curie: A Woman Who Broke Records in Science",
+    "The Best University in Warsaw",
+    "How Pierre Curie Became a Famous Physicist"
+   ],
+   "a": "B",
+   "s": "<p>Metin Marie Curie’nin hayatını ve <b>rekor kıran başarılarını</b> anlatıyor: Nobel kazanan ilk kadın, iki farklı bilim dalında Nobel alan tek kişi ✓.</p><ul><li>A: X ışınlarını Röntgen keşfetti; metinde X-ray makinesi yok ✗</li><li>C: Metinde Varşova’daki üniversitede kadınların okuyamadığı söyleniyor; konu üniversite değil ✗</li><li>D: Pierre yalnızca eşi olarak geçiyor; metin onun hakkında değil ✗</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Ali:</b> Which invention do you think changed the world the most?<br><b>Mert:</b> (I) ----<br><b>Ali:</b> Really? Why do you think so?<br><b>Mert:</b> (II) ----<br><b>Ali:</b> You’re right. Before that, they had to use candles and oil lamps.</p><p>Which of the following best completes the blanks (I) and (II)?</p>",
+   "c": [
+    "I don’t know who invented it. / Because it is very old.",
+    "In my opinion, it’s the internet. / Because we can chat with friends all over the world.",
+    "I think it’s the light bulb. / Because people can work and study after dark easily.",
+    "Edison was born in 1847. / Because he had more than a thousand inventions."
+   ],
+   "a": "C",
+   "s": "<p>Ali’nin son cümlesi anahtar: “Before that, they had to use <b>candles and oil lamps</b>.” (Ondan önce mum ve gaz lambası kullanmak zorundaydılar.) Bu, konuşulan icadın <b>ampul</b> olduğunu gösterir ✓.</p><ul><li>A: İcat adı verilmiyor; Ali’nin “Why?” sorusu anlamsız kalır ✗</li><li>B: Güçlü çeldirici; diyaloğun ilk kısmına uyar ama mum ve gaz lambasıyla ilgisi yoktur ✗</li><li>D: Ali’nin sorusuna (hangi icat?) cevap değildir ✗</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Look at the experiment card.</p><div class=\"fig\"><svg viewBox=\"0 0 560 225\" width=\"560\" role=\"img\" aria-label=\"Bardakta gökkuşağı deney kartı\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"217\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Rainbow in a Glass</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Time: about 20 minutes</text>\n<text x=\"24\" y=\"75\" font-size=\"11\" fill=\"#1e293b\">You need: 4 small glasses, warm water, sugar, food colouring (red, yellow, green,</text>\n<text x=\"24\" y=\"92\" font-size=\"11\" fill=\"#1e293b\">blue), a spoon, a dropper, a tall clear glass</text>\n<text x=\"24\" y=\"117\" font-size=\"11\" fill=\"#1e293b\">1. Put 1, 2, 3 and 4 spoons of sugar into the four small glasses.</text>\n<text x=\"24\" y=\"134\" font-size=\"11\" fill=\"#1e293b\">2. Add the same amount of warm water to each glass and stir.</text>\n<text x=\"24\" y=\"151\" font-size=\"11\" fill=\"#1e293b\">3. Add a different food colouring to each glass.</text>\n<text x=\"24\" y=\"168\" font-size=\"11\" fill=\"#1e293b\">4. With the dropper, slowly add the liquids into the tall glass, starting with the one</text>\n<text x=\"24\" y=\"185\" font-size=\"11\" fill=\"#1e293b\">with the most sugar.</text>\n<text x=\"24\" y=\"202\" font-size=\"11\" fill=\"#1e293b\">5. Look at the colourful layers!</text>\n</svg></div><p>Which of the following questions can <b>NOT</b> be answered by reading the card?</p>",
+   "c": [
+    "How many small glasses do you need for the experiment?",
+    "What do you do after you stir the sugar and water?",
+    "How long does the experiment take?",
+    "Why do the colours stay in separate layers?"
+   ],
+   "a": "D",
+   "s": "<ul><li>A: 4 small glasses ✓</li><li>B: Karıştırdıktan sonra her bardağa farklı gıda boyası eklenir (3. adım) ✓</li><li>C: Time: about 20 minutes ✓</li><li>D: Kart renklerin <b>neden</b> ayrı katmanlarda kaldığını (şeker miktarının farklı olması / yoğunluk) açıklamıyor; sadece “Look at the colourful layers!” diyor ✗</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Below, there are parts of four different conversations.</p><div class=\"fig\"><svg viewBox=\"0 0 560 248\" width=\"560\" role=\"img\" aria-label=\"Dört farklı konuşma\">\n<rect x=\"8\" y=\"8\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"38.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">I.</text>\n<rect x=\"52\" y=\"8\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"30\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Ada:</text>\n<text x=\"140\" y=\"30\" font-size=\"11\" fill=\"#1e293b\">Have you seen my goggles? I can’t find them.</text>\n<text x=\"64\" y=\"47\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Bora:</text>\n<text x=\"140\" y=\"47\" font-size=\"11\" fill=\"#1e293b\">Yes, they’re next to the microscope.</text>\n<rect x=\"8\" y=\"68\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"98.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">II.</text>\n<rect x=\"52\" y=\"68\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"90\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Cem:</text>\n<text x=\"140\" y=\"90\" font-size=\"11\" fill=\"#1e293b\">In my opinion, the vaccine is the greatest invention ever.</text>\n<text x=\"64\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Deniz:</text>\n<text x=\"140\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">Exactly! It has saved millions of lives.</text>\n<rect x=\"8\" y=\"128\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"158.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">III.</text>\n<rect x=\"52\" y=\"128\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"150\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Elif:</text>\n<text x=\"140\" y=\"150\" font-size=\"11\" fill=\"#1e293b\">When was the first computer made?</text>\n<text x=\"64\" y=\"167\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Fatih:</text>\n<text x=\"140\" y=\"167\" font-size=\"11\" fill=\"#1e293b\">I’m not sure. Let’s look it up.</text>\n<rect x=\"8\" y=\"188\" width=\"44\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"30\" y=\"218.0\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">IV.</text>\n<rect x=\"52\" y=\"188\" width=\"500\" height=\"50\" fill=\"#ffffff\" stroke=\"#7e22ce\" stroke-width=\"1.5\"/>\n<text x=\"64\" y=\"210\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Gül:</text>\n<text x=\"140\" y=\"210\" font-size=\"11\" fill=\"#1e293b\">I think robots will take our jobs in the future.</text>\n<text x=\"64\" y=\"227\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Hakan:</text>\n<text x=\"140\" y=\"227\" font-size=\"11\" fill=\"#1e293b\">I don’t agree. They will only help us.</text>\n</svg></div><p>In which conversation do the speakers <b>share the same opinion</b> about an invention?</p>",
+   "c": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "a": "B",
+   "s": "<ul><li>I: Gözlüğün yeri soruluyor; görüş yok ✗</li><li>II: Cem aşının en büyük icat olduğunu düşünüyor, Deniz “<b>Exactly!</b>” diyerek katılıyor ve gerekçe ekliyor ✓</li><li>III: Bilgi sorusu; Fatih bilmiyor ✗</li><li>IV: İki kişi görüş bildiriyor ama Hakan “<b>I don’t agree</b>” diyerek katılmıyor ✗ (en güçlü çeldirici)</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Here are the four finalists of a young inventors competition.</p><div class=\"fig\"><svg viewBox=\"0 0 580 226\" width=\"560\" role=\"img\" aria-label=\"Genç mucitler yarışması finalistleri tablosu\">\n<text x=\"290.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Young Inventors – Finalists</text>\n<rect x=\"10\" y=\"38\" width=\"560\" height=\"26\" fill=\"#9333ea\"/>\n<text x=\"55.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Finalist</text>\n<text x=\"215.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Problem</text>\n<text x=\"450.0\" y=\"55.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Invention</text>\n<rect x=\"10\" y=\"64\" width=\"560\" height=\"38\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"87.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Lara (13)</text>\n<text x=\"215.0\" y=\"80.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Her grandmother often forgets to take</text>\n<text x=\"215.0\" y=\"94.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">her medicine.</text>\n<text x=\"450.0\" y=\"80.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a pill box that beeps and sends</text>\n<text x=\"450.0\" y=\"94.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a message to the family’s phones</text>\n<rect x=\"10\" y=\"102\" width=\"560\" height=\"38\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"125.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kerem (14)</text>\n<text x=\"215.0\" y=\"118.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">His school bag is very heavy and the</text>\n<text x=\"215.0\" y=\"132.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">streets are dark in winter.</text>\n<text x=\"450.0\" y=\"118.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a school bag with wheels and a</text>\n<text x=\"450.0\" y=\"132.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">light that turns on in the dark</text>\n<rect x=\"10\" y=\"140\" width=\"560\" height=\"38\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"163.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Ozan (14)</text>\n<text x=\"215.0\" y=\"156.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">People waste a lot of water while</text>\n<text x=\"215.0\" y=\"170.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">brushing their teeth.</text>\n<text x=\"450.0\" y=\"156.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a tap that turns off by itself after ten</text>\n<text x=\"450.0\" y=\"170.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">seconds</text>\n<rect x=\"10\" y=\"178\" width=\"560\" height=\"38\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"55.0\" y=\"201.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Ela (12)</text>\n<text x=\"215.0\" y=\"194.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Blind people find it difficult to walk</text>\n<text x=\"215.0\" y=\"208.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">safely in the streets.</text>\n<text x=\"450.0\" y=\"194.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">a smart stick that vibrates near</text>\n<text x=\"450.0\" y=\"208.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">obstacles</text>\n<line x1=\"100\" y1=\"38\" x2=\"100\" y2=\"216\" stroke=\"#94a3b8\"/>\n<line x1=\"330\" y1=\"38\" x2=\"330\" y2=\"216\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"560\" height=\"178\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Whose invention helps to <b>save natural resources</b>?</p>",
+   "c": [
+    "Lara’s",
+    "Kerem’s",
+    "Ozan’s",
+    "Ela’s"
+   ],
+   "a": "C",
+   "s": "<p>Doğal kaynakları korumak (save natural resources) = su, enerji gibi kaynakları israf etmemek.</p><p><b>Ozan</b>’ın musluğu on saniye sonra kendiliğinden kapanarak diş fırçalarken <b>su israfını</b> önler ✓.</p><p>Lara’nın icadı sağlıkla (ilaç hatırlatma), Kerem’inki taşıma ve güvenlikle, Ela’nınki görme engellilerin güvenliğiyle ilgilidir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Hulusi Behçet was born in İstanbul in 1889. He graduated from Gülhane Military Medical School in 1910 and became a skin doctor. He worked in several hospitals and also taught at İstanbul University. In 1937, he described a disease that causes painful sores in the mouth and problems in the eyes. Today, this disease is known as “Behçet’s disease” all around the world. He was the first Turkish scientist to have a disease named after him. He died in 1948.</p><p>Which of the following is <b>NOT</b> true according to the text?</p>",
+   "c": [
+    "He finished medical school when he was about 21 years old.",
+    "The disease he described affects the mouth and the eyes.",
+    "He was born in the 19th century.",
+    "He named the disease after one of his teachers."
+   ],
+   "a": "D",
+   "s": "<ul><li>A: 1889’da doğdu, 1910’da mezun oldu → 1910 − 1889 = 21 ✓</li><li>B: Ağızda yaralar ve gözlerde sorunlar ✓</li><li>C: 1889 yılı <b>19. yüzyıldır</b> (1801–1900) ✓</li><li>D: Hastalık <b>onun kendi adıyla</b> anılır (“named after him”); bir öğretmeninin adı verilmedi ✗</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Thomas Edison was a great (1) ----. He had more than 1,000 patents in his life. His most famous (2) ---- is the light bulb. It was a big (3) ---- for humanity because people could easily work and study at night.</p><p>Which of the following best completes the blanks?</p>",
+   "c": [
+    "discovery / invention / scientist",
+    "inventor / invention / achievement",
+    "invention / inventor / achieve",
+    "inventor / invent / achieving"
+   ],
+   "a": "B",
+   "s": "<ul><li>(1) “a great ----” → bir <b>kişi</b> gerekli: <b>inventor</b> (mucit)</li><li>(2) “his most famous ---- is the light bulb” → bir <b>şey</b> (isim) gerekli: <b>invention</b> (icat)</li><li>(3) “a big ---- for humanity” → isim gerekli: <b>achievement</b> (başarı)</li></ul><p>A’da “a great discovery” kişi değil; ampul de keşif değil icattır. C ve D’de “achieve / invent / achieving” fiil biçimleridir; “a big” ve “his most famous” sonrasında isim gelmelidir. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Burak wrote a report about his experiment.</p><div class=\"fig\"><svg viewBox=\"0 0 560 234\" width=\"560\" role=\"img\" aria-label=\"Burak’ın deney raporu\">\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"226\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"552\" height=\"34\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"280.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">My Experiment Report – Burak</text>\n<text x=\"24\" y=\"58\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Question:</text>\n<text x=\"24\" y=\"75\" font-size=\"11\" fill=\"#1e293b\">Does salt water freeze faster than tap water?</text>\n<text x=\"24\" y=\"92\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Hypothesis:</text>\n<text x=\"24\" y=\"109\" font-size=\"11\" fill=\"#1e293b\">Salt water will freeze faster than tap water.</text>\n<text x=\"24\" y=\"126\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Method:</text>\n<text x=\"24\" y=\"143\" font-size=\"11\" fill=\"#1e293b\">I put two cups in the freezer: one with 100 ml tap water and one with 100 ml water and</text>\n<text x=\"24\" y=\"160\" font-size=\"11\" fill=\"#1e293b\">two spoons of salt. I checked them every 30 minutes.</text>\n<text x=\"24\" y=\"177\" font-size=\"11\" font-weight=\"bold\" fill=\"#7c3aed\">Observation:</text>\n<text x=\"24\" y=\"194\" font-size=\"11\" fill=\"#1e293b\">After 2 hours, the tap water was ice, but the salt water was still liquid. After 4</text>\n<text x=\"24\" y=\"211\" font-size=\"11\" fill=\"#1e293b\">hours, the salt water was only partly frozen.</text>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the report?</p>",
+   "c": [
+    "The experiment proved that Burak’s hypothesis was right.",
+    "Burak put different amounts of water into the two cups.",
+    "The results showed that Burak’s hypothesis was wrong.",
+    "The salt water froze completely in 30 minutes."
+   ],
+   "a": "C",
+   "s": "<p>Burak’ın hipotezi: Tuzlu su musluk suyundan <b>daha hızlı</b> donar. Gözlem: 2 saat sonra musluk suyu buz olmuş, tuzlu su hâlâ sıvı; 4 saat sonra bile tamamen donmamış. Yani sonuç hipotezin tersi → hipotez <b>yanlış</b> çıktı ✓.</p><ul><li>A: Hipotez doğrulanmadı ✗</li><li>B: İki bardakta da <b>100 ml</b> su var ✗</li><li>D: 30 dakika sadece kontrol aralığıdır; tuzlu su 4 saatte bile tamamen donmadı ✗</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Look at the information about two famous Turkish scientists.</p><div class=\"fig\"><svg viewBox=\"0 0 580 188\" width=\"560\" role=\"img\" aria-label=\"İki Türk bilim insanını karşılaştıran tablo\">\n<rect x=\"10\" y=\"10\" width=\"560\" height=\"26\" fill=\"#b91c1c\"/>\n<text x=\"60.0\" y=\"27.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\"></text>\n<text x=\"220.0\" y=\"27.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Aziz Sancar</text>\n<text x=\"450.0\" y=\"27.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Gazi Yaşargil</text>\n<rect x=\"10\" y=\"36\" width=\"560\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"60.0\" y=\"53.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Born</text>\n<text x=\"220.0\" y=\"53.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1946, Savur (Mardin)</text>\n<text x=\"450.0\" y=\"53.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">1925, Lice (Diyarbakır)</text>\n<rect x=\"10\" y=\"62\" width=\"560\" height=\"38\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"60.0\" y=\"85.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Education</text>\n<text x=\"220.0\" y=\"85.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">medicine – İstanbul University</text>\n<text x=\"450.0\" y=\"78.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">medicine – universities in Germany and</text>\n<text x=\"450.0\" y=\"92.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Switzerland</text>\n<rect x=\"10\" y=\"100\" width=\"560\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"60.0\" y=\"117.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Field</text>\n<text x=\"220.0\" y=\"117.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">DNA repair (biochemistry)</text>\n<text x=\"450.0\" y=\"117.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">brain surgery (microsurgery)</text>\n<rect x=\"10\" y=\"126\" width=\"560\" height=\"26\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"60.0\" y=\"143.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Worked in</text>\n<text x=\"220.0\" y=\"143.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the USA</text>\n<text x=\"450.0\" y=\"143.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Switzerland and the USA</text>\n<rect x=\"10\" y=\"152\" width=\"560\" height=\"26\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"60.0\" y=\"169.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Award</text>\n<text x=\"220.0\" y=\"169.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Nobel Prize in Chemistry (2015)</text>\n<text x=\"450.0\" y=\"169.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">“Neurosurgeon of the Century” (1999)</text>\n<line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"178\" stroke=\"#94a3b8\"/>\n<line x1=\"330\" y1=\"10\" x2=\"330\" y2=\"178\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"10\" width=\"560\" height=\"168\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>What do the two scientists have <b>in common</b>?</p>",
+   "c": [
+    "Both of them studied medicine and worked in the USA.",
+    "Both of them were born in the same city.",
+    "Both of them won a Nobel Prize.",
+    "Both of them studied at universities in Türkiye."
+   ],
+   "a": "A",
+   "s": "<p>Tabloya göre ikisi de <b>tıp</b> (medicine) okumuş ve ikisi de <b>ABD’de</b> çalışmıştır ✓.</p><ul><li>B: Sancar Mardin’de, Yaşargil Diyarbakır’da doğdu ✗</li><li>C: Nobel’i yalnızca Aziz Sancar kazandı ✗</li><li>D: Yaşargil Almanya ve İsviçre’de okudu ✗</li></ul><p>Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Elif:</b> We watched a documentary about future technology in science class today.<br><b>Mert:</b> Oh, I missed it. What was it about?<br><b>Elif:</b> Inventions that will change our lives. So, what do you think will be the most important invention in the next fifty years?<br><b>Mert:</b> ----</p><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "The telephone was invented by Alexander Graham Bell in 1876.",
+    "Yes, I do. Scientists work really hard in their laboratories.",
+    "I watched a documentary about inventions last week, too.",
+    "I believe it will be robots that can do surgery without doctors."
+   ],
+   "a": "D",
+   "s": "<p>Elif <b>gelecek</b> elli yıldaki en önemli icadı ve Mert’in <b>görüşünü</b> soruyor (“what do you think… will be”). Uygun cevap gelecekle ilgili bir görüş olmalı: “I believe it will be robots…” ✓</p><ul><li>A: Geçmişteki bir icattan bahsediyor ✗</li><li>B: “What” sorusuna “Yes, I do” ile cevap verilmez ✗</li><li>C: Mert belgeseli kaçırdığını söylemişti; ayrıca soruya cevap değil ✗</li></ul><p>Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the text about a famous inventor.</p><div class=\"fig\"><svg viewBox=\"0 0 540 258\" width=\"540\" role=\"img\" aria-label=\"Louis Braille biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"250\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Louis Braille</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Louis Braille was born on 4 January 1809 in a small village near Paris, France.</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">When he was three years old, he hurt his eye with a sharp tool in his father’s</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">workshop. Later, the other eye became ill too, and he was completely blind by the</text>\n<text x=\"22\" y=\"98\" font-size=\"11\" fill=\"#1e293b\">age of five.</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">At the age of ten, he went to a special school for blind children in Paris. The</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">school had only a few books for blind students, and they were very big and heavy.</text>\n<text x=\"22\" y=\"158\" font-size=\"11\" fill=\"#1e293b\">There, he learned about a system of raised dots which soldiers used to read</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">messages at night. He made the system simpler, and by the age of fifteen he had</text>\n<text x=\"22\" y=\"190\" font-size=\"11\" fill=\"#1e293b\">created his own alphabet of six dots. Today, millions of blind people around the</text>\n<text x=\"22\" y=\"206\" font-size=\"11\" fill=\"#1e293b\">world read and write with it.</text>\n<text x=\"22\" y=\"228\" font-size=\"11\" fill=\"#1e293b\">Braille later became a teacher at the same school. He died on 6 January 1852.</text>\n</svg></div><p>Which of the following questions is <b>NOT</b> answered in the text?</p>",
+   "c": [
+    "Who taught him to read when he was a little boy?",
+    "How did he lose his sight?",
+    "How old was he when he died?",
+    "Where did he study when he was ten?"
+   ],
+   "a": "A",
+   "s": "<p>Metinde <b>cevabı olmayan</b> soruyu arıyoruz.</p><p>B: “he hurt his eye with a sharp tool in his father’s workshop … the other eye became ill too” → nasıl kör olduğu anlatılmış ✓. C: 4 Ocak 1809’da doğmuş, 6 Ocak 1852’de ölmüş → doğum gününden 2 gün sonra ölmüş, yani <b>43</b> yaşında; hesapla bulunur ✓. D: “At the age of ten, he went to a special school for blind children in Paris” ✓.</p><p>A: Küçükken ona okumayı <b>kimin öğrettiği</b> metinde hiç geçmiyor. Tuzak: “became a teacher” onun öğretmen olduğunu söyler, öğretmenini değil. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Melis prepared the table below for her presentation.</p><div class=\"fig\"><svg viewBox=\"0 0 540 174\" width=\"540\" role=\"img\" aria-label=\"Mucitler tablosu\">\n<text x=\"270.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Inventors and Their Inventions</text>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Inventor</text>\n<text x=\"198\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Invention (Year)</text>\n<text x=\"388\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Born – Died</text>\n<rect x=\"10\" y=\"64\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Alexander Graham Bell</text>\n<text x=\"198\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">telephone (1876)</text>\n<text x=\"388\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1847 – 1922</text>\n<rect x=\"10\" y=\"89\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Karl Benz</text>\n<text x=\"198\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">motor car (1886)</text>\n<text x=\"388\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1844 – 1929</text>\n<rect x=\"10\" y=\"114\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Wilbur Wright</text>\n<text x=\"198\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">airplane (1903)</text>\n<text x=\"388\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">1867 – 1912</text>\n<rect x=\"10\" y=\"139\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">John Logie Baird</text>\n<text x=\"198\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">television (1926)</text>\n<text x=\"388\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">1888 – 1946</text>\n<line x1=\"190\" y1=\"38\" x2=\"190\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"380\" y1=\"38\" x2=\"380\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>According to the table, which of the following was <b>NOT</b> possible?</p>",
+   "c": [
+    "Alexander Graham Bell read about the first airplane flight.",
+    "Karl Benz watched a programme on television.",
+    "Wilbur Wright watched a programme on television.",
+    "John Logie Baird talked to his friends on the telephone."
+   ],
+   "a": "C",
+   "s": "<p>Bir kişi ancak <b>hayattayken</b> icat edilen bir şeyi kullanabilir:</p><p>A: uçak 1903, Bell 1922’de öldü → mümkün. B: televizyon 1926, Benz <b>1929</b>’da öldü → 3 yıl farkla mümkün (tuzak: “eski mucit, televizyonu göremez” diye düşünmek). D: telefon 1876, Baird 1888’de doğdu → mümkün.</p><p>C: Wilbur Wright <b>1912</b>’de öldü, televizyon <b>1926</b>’da icat edildi → mümkün değil. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Some students are chatting about their science homework.</p><div class=\"fig\"><svg viewBox=\"0 0 540 350\" width=\"540\" role=\"img\" aria-label=\"Bilim ödevi mesajlaşması\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"342\" rx=\"14\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"32\" rx=\"12\" fill=\"#0f766e\"/>\n<text x=\"270.0\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Science Homework 8-D</text>\n<rect x=\"20\" y=\"46\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"62\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">Nil</text>\n<text x=\"30\" y=\"78\" font-size=\"11\" fill=\"#1e293b\">Hi everyone! Have you finished the balloon experiment with vinegar</text>\n<text x=\"30\" y=\"93\" font-size=\"11\" fill=\"#1e293b\">and baking soda?</text>\n<rect x=\"20\" y=\"106\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"122\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Arda</text>\n<text x=\"30\" y=\"138\" font-size=\"11\" fill=\"#1e293b\">Yes, I finished it yesterday, but I haven’t sent my report to Ms.</text>\n<text x=\"30\" y=\"153\" font-size=\"11\" fill=\"#1e293b\">Kaya yet.</text>\n<rect x=\"20\" y=\"166\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#9333ea\">Sude</text>\n<text x=\"30\" y=\"198\" font-size=\"11\" fill=\"#1e293b\">Not yet. Efe and I are in the lab now. We are pouring vinegar into</text>\n<text x=\"30\" y=\"213\" font-size=\"11\" fill=\"#1e293b\">the bottles at the moment.</text>\n<rect x=\"20\" y=\"226\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"242\" font-size=\"11\" font-weight=\"bold\" fill=\"#d97706\">Efe</text>\n<text x=\"30\" y=\"258\" font-size=\"11\" fill=\"#1e293b\">That’s right, but I’m only helping Sude. I did my own experiment</text>\n<text x=\"30\" y=\"273\" font-size=\"11\" fill=\"#1e293b\">last Friday.</text>\n<rect x=\"110\" y=\"286\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"120\" y=\"302\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Can</text>\n<text x=\"120\" y=\"318\" font-size=\"11\" fill=\"#1e293b\">I’ve been ill since Monday, so I haven’t started yet. I’ll do it</text>\n<text x=\"120\" y=\"333\" font-size=\"11\" fill=\"#1e293b\">next week.</text>\n</svg></div><p>According to the messages, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Arda has already sent his report to his teacher.",
+    "Efe has already done his own experiment.",
+    "Can started the experiment last Monday.",
+    "Sude has finished her experiment."
+   ],
+   "a": "B",
+   "s": "<p>Efe: “I’m only helping Sude. I <b>did my own experiment last Friday</b>.” → Efe kendi deneyini zaten yapmış, şu an sadece Sude’ye yardım ediyor ✓.</p><p>A: Arda raporu “haven’t sent … yet” → henüz göndermedi ✗. C: Can “I’ve been ill since Monday … haven’t started yet” → Pazartesiden beri hasta, başlamadı ✗ (tuzak: “since Monday”). D: Sude “Not yet … we are pouring vinegar … at the moment” → deneyi hâlâ sürüyor ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>40 students in class 8-B answered the question “Which branch of science would you like to study in the future?”. Each student chose only one answer.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Bilim dalı anketi\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Which branch of science would you like to study?</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"220.9\" x2=\"520\" y2=\"220.9\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"224.85714285714286\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">2</text>\n<line x1=\"60\" y1=\"191.7\" x2=\"520\" y2=\"191.7\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"195.71428571428572\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">4</text>\n<line x1=\"60\" y1=\"162.6\" x2=\"520\" y2=\"162.6\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"166.57142857142856\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">6</text>\n<line x1=\"60\" y1=\"133.4\" x2=\"520\" y2=\"133.4\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"137.42857142857144\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">8</text>\n<line x1=\"60\" y1=\"104.3\" x2=\"520\" y2=\"104.3\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"108.28571428571428\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"75.1\" x2=\"520\" y2=\"75.1\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"79.14285714285714\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">12</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">14</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">number of students</text>\n<rect x=\"89.0\" y=\"75.1\" width=\"32.0\" height=\"174.9\" fill=\"#2563eb\"/>\n<text x=\"105.0\" y=\"71.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">12</text>\n<text x=\"106.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">biology</text>\n<rect x=\"181.0\" y=\"133.4\" width=\"32.0\" height=\"116.6\" fill=\"#2563eb\"/>\n<text x=\"197.0\" y=\"129.4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">8</text>\n<text x=\"198.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">physics</text>\n<rect x=\"273.0\" y=\"162.6\" width=\"32.0\" height=\"87.4\" fill=\"#2563eb\"/>\n<text x=\"289.0\" y=\"158.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">6</text>\n<text x=\"290.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">chemistry</text>\n<rect x=\"365.0\" y=\"104.3\" width=\"32.0\" height=\"145.7\" fill=\"#2563eb\"/>\n<text x=\"381.0\" y=\"100.3\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<text x=\"382.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">astronomy</text>\n<rect x=\"457.0\" y=\"191.7\" width=\"32.0\" height=\"58.3\" fill=\"#2563eb\"/>\n<text x=\"473.0\" y=\"187.7\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<text x=\"474.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">geology</text>\n</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Physics is chosen by 25% of the students.",
+    "Half of the students chose biology or chemistry.",
+    "Astronomy is twice as popular as geology.",
+    "30% of the students would like to become biologists."
+   ],
+   "a": "D",
+   "s": "<p>Toplam öğrenci 40. Her seçeneği hesaplayalım:</p><p>A: fizik 8 → 8/40 = %20, %25 değil ✗. B: biyoloji + kimya = 12 + 6 = 18 → 18/40 = %45, yarısı (20) değil ✗. C: astronomi 10, jeoloji 4 → 2,5 katı; tam iki katı değil ✗.</p><p>D: biyoloji 12 → 12/40 = <b>%30</b>; biyoloji okumak isteyen “biologist” olmak ister ✓. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Kaan visited a robot factory and read this sentence on the information board:</p><div class=\"box\"><p>“Engineers test every robot carefully before they send it to schools.”</p></div><p>Which of the following has the <b>SAME</b> meaning?</p>",
+   "c": [
+    "Every robot is tested carefully before it is sent to schools.",
+    "Every robot was tested carefully before it sent to schools.",
+    "Every robot tests carefully before it is sent to schools.",
+    "Every robot is testing carefully before it is sending to schools."
+   ],
+   "a": "A",
+   "s": "<p>Etken cümle geniş zamanda (test / send). Nesne (every robot) özne olunca edilgen yapı <b>is + V3</b> olur: “Every robot <b>is tested</b> … before it <b>is sent</b> …”.</p><p>B: zaman geçmişe kaymış (was) ve “it sent” edilgen değil ✗. C: “Every robot tests” → robot test eden olur, anlam bozulur ✗. D: “is testing / is sending” şimdiki zaman etken yapı; edilgen değil ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>The Demir family is going to visit a science museum. Mr. and Mrs. Demir are going with their children, Mert (14) and Ela (9).</p><div class=\"fig\"><svg viewBox=\"0 0 540 224\" width=\"540\" role=\"img\" aria-label=\"Müze bilet fiyatları\">\n<text x=\"270.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">SCIENCE MUSEUM – TICKET PRICES</text>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Ticket</text>\n<text x=\"348\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Price</text>\n<rect x=\"10\" y=\"64\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Adult</text>\n<text x=\"348\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">200 TL</text>\n<rect x=\"10\" y=\"89\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Student (12–18)</text>\n<text x=\"348\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">120 TL</text>\n<rect x=\"10\" y=\"114\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Child (under 12)</text>\n<text x=\"348\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">60 TL</text>\n<rect x=\"10\" y=\"139\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Family ticket (2 adults + 2 children under 18)</text>\n<text x=\"348\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">450 TL</text>\n<rect x=\"10\" y=\"164\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Planetarium show (extra)</text>\n<text x=\"348\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">50 TL per person</text>\n<rect x=\"10\" y=\"189\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"207\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Robotics workshop (extra, only for ages 10–16)</text>\n<text x=\"348\" y=\"207\" font-size=\"11\" fill=\"#1e293b\">80 TL per person</text>\n<line x1=\"340\" y1=\"38\" x2=\"340\" y2=\"214\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"176\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>The family buys the <b>cheapest</b> entrance tickets. All of them watch the planetarium show, and the children join the robotics workshop if they can.</p><p> How much does the family pay in total?</p>",
+   "c": [
+    "650 TL",
+    "730 TL",
+    "810 TL",
+    "860 TL"
+   ],
+   "a": "B",
+   "s": "<p>Giriş: Ayrı ayrı 200 + 200 + 120 + 60 = 580 TL; aile bileti 450 TL → en ucuzu <b>450 TL</b>.</p><p>Planetaryum: 4 kişi × 50 = 200 TL. Robotik atölye: sadece 10–16 yaş → Mert (14) katılır, Ela (9) katılamaz → 80 TL.</p><p>Toplam: 450 + 200 + 80 = <b>730 TL</b>. Çeldiriciler: 810 TL (iki çocuk da atölyeye yazıldı sanılırsa), 860 TL (aile bileti yerine ayrı bilet), 650 TL (atölye unutulursa). Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Defne is visiting a science centre. Read the information about the planetarium.</p><div class=\"fig\"><svg viewBox=\"0 0 540 140\" width=\"540\" role=\"img\" aria-label=\"Planetaryum bilgi kartı\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"132\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#1d4ed8\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">PLANETARIUM – “A Journey to the Planets”</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Shows start at: 10:00 • 11:30 • 13:00 • 14:30 • 16:00</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">Each show lasts 50 minutes.</text>\n<text x=\"22\" y=\"94\" font-size=\"11\" fill=\"#1e293b\">Visitors must be at the door 10 minutes before the show starts. Late visitors are</text>\n<text x=\"22\" y=\"110\" font-size=\"11\" fill=\"#1e293b\">not allowed in.</text>\n</svg></div><p>Defne arrives at the science centre at 12:40. First, she visits the Inventions Hall, and this takes 1 hour 15 minutes. Then she wants to watch the show. She must leave the centre by 16:30 to catch the bus.</p><p>Which show can Defne watch?</p>",
+   "c": [
+    "11:30",
+    "13:00",
+    "14:30",
+    "16:00"
+   ],
+   "a": "C",
+   "s": "<p>12:40 + 1 sa 15 dk = <b>13:55</b>’te salondan çıkar. Kapıda gösteriden 10 dk önce olmalı → gösteri en erken 14:05’te başlamalı.</p><p>13:00 ve 11:30 çok erken ✗. 14:30 gösterisi: 14:20’de kapıda olur (13:55’ten sonra ✓), 14:30 + 50 dk = 15:20’de biter (16:30’dan önce ✓). 16:00 gösterisi 16:50’de biter, otobüsü kaçırır ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>The graph shows the number of experiments two classes did in the science lab.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Çift sütun grafik\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Experiments in the Science Lab</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"199.0\" x2=\"520\" y2=\"199.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">2</text>\n<line x1=\"60\" y1=\"148.0\" x2=\"520\" y2=\"148.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"152.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">4</text>\n<line x1=\"60\" y1=\"97.0\" x2=\"520\" y2=\"97.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"101.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">6</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">8</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">number of experiments</text>\n<rect x=\"83.5\" y=\"148.0\" width=\"32.0\" height=\"102.0\" fill=\"#2563eb\"/>\n<text x=\"99.5\" y=\"144.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<rect x=\"117.5\" y=\"122.5\" width=\"32.0\" height=\"127.5\" fill=\"#f59e0b\"/>\n<text x=\"133.5\" y=\"118.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">5</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">September</text>\n<rect x=\"198.5\" y=\"97.0\" width=\"32.0\" height=\"153.0\" fill=\"#2563eb\"/>\n<text x=\"214.5\" y=\"93.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">6</text>\n<rect x=\"232.5\" y=\"148.0\" width=\"32.0\" height=\"102.0\" fill=\"#f59e0b\"/>\n<text x=\"248.5\" y=\"144.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">October</text>\n<rect x=\"313.5\" y=\"173.5\" width=\"32.0\" height=\"76.5\" fill=\"#2563eb\"/>\n<text x=\"329.5\" y=\"169.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">3</text>\n<rect x=\"347.5\" y=\"97.0\" width=\"32.0\" height=\"153.0\" fill=\"#f59e0b\"/>\n<text x=\"363.5\" y=\"93.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">6</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">November</text>\n<rect x=\"428.5\" y=\"71.5\" width=\"32.0\" height=\"178.5\" fill=\"#2563eb\"/>\n<text x=\"444.5\" y=\"67.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">7</text>\n<rect x=\"462.5\" y=\"71.5\" width=\"32.0\" height=\"178.5\" fill=\"#f59e0b\"/>\n<text x=\"478.5\" y=\"67.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">7</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">December</text>\n<rect x=\"70\" y=\"278\" width=\"12\" height=\"12\" fill=\"#2563eb\"/>\n<text x=\"87\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">8-A</text>\n<rect x=\"141\" y=\"278\" width=\"12\" height=\"12\" fill=\"#f59e0b\"/>\n<text x=\"158\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">8-B</text>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the graph?</p>",
+   "c": [
+    "In November, class 8-B did twice as many experiments as class 8-A.",
+    "Class 8-A did more experiments than class 8-B in total.",
+    "Class 8-A did the most experiments in October.",
+    "The two classes did the same number of experiments in October."
+   ],
+   "a": "A",
+   "s": "<p>Kasım: 8-A 3, 8-B 6 → 6 = 2 × 3, iki katı ✓.</p><p>B: toplam 8-A = 4+6+3+7 = 20, 8-B = 5+4+6+7 = 22 → 8-B daha fazla ✗. C: 8-A’nın en çok deney yaptığı ay Aralık (7) ✗. D: Ekim’de 6 ve 4, eşit değil (eşit olduğu ay Aralık) ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>A reporter is talking to Zehra at the Young Scientists Fair. Here are the reporter’s questions:</p><div class=\"dialog\"><div><b>Reporter:</b> What is your project about?</div><div><b>Reporter:</b> How long did it take to finish it?</div><div><b>Reporter:</b> What do you want to do in the future?</div></div><p>Which of the following is <b>NOT</b> one of Zehra’s answers?</p>",
+   "c": [
+    "I started it in February and finished it in May, so about three months.",
+    "It’s a small device. It warns farmers when the soil needs water.",
+    "I’d like to study engineering and design robots for hospitals.",
+    "Because I think water is getting more and more valuable every year."
+   ],
+   "a": "D",
+   "s": "<p>A “How long … ?” (ne kadar sürdü) sorusunun cevabı (3 ay) ✓. B “What is your project about?” sorusunun cevabı ✓. C “What do you want to do in the future?” sorusunun cevabı ✓.</p><p>D “Because …” ile başlıyor; bu bir <b>Why …?</b> (neden) sorusunun cevabıdır ama muhabir “neden” diye sormadı. Konuyla ilgili olduğu için güçlü bir çeldiricidir. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Kerem did an experiment and wrote these sentences in his report, but he mixed up the order.</p><div class=\"fig\"><svg viewBox=\"0 0 540 184\" width=\"540\" role=\"img\" aria-label=\"Deney basamakları\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"176\" rx=\"10\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">My Experiment – Kerem</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">I. I guessed that the thickest paper towel would hold the most water.</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">II. I wondered which brand of paper towel absorbs the most water.</text>\n<text x=\"22\" y=\"94\" font-size=\"11\" fill=\"#1e293b\">III. I saw that my guess was right and shared my results with my class.</text>\n<text x=\"22\" y=\"116\" font-size=\"11\" fill=\"#1e293b\">IV. I put the same size piece of each brand into 100 ml of water and then measured</text>\n<text x=\"22\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">how much water was left.</text>\n<text x=\"22\" y=\"154\" font-size=\"11\" fill=\"#1e293b\">V. I wrote my results in a table and compared them.</text>\n</svg></div><p>Which of the following shows the <b>CORRECT</b> order of the scientific method?</p>",
+   "c": [
+    "I – II – IV – V – III",
+    "II – I – IV – V – III",
+    "II – IV – I – V – III",
+    "II – I – V – IV – III"
+   ],
+   "a": "B",
+   "s": "<p>Bilimsel yöntem: <b>soru</b> (II: “I wondered…”) → <b>hipotez/tahmin</b> (I: “I guessed…”) → <b>deney</b> (IV) → <b>verileri düzenleme ve inceleme</b> (V) → <b>sonuç</b> (III).</p><p>A: tahmin sorudan önce olamaz ✗. C: deney, tahminden önce yapılmış ✗ (hipotez deneyden ÖNCE kurulur). D: sonuçlar deney yapılmadan tabloya yazılmış ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the text by a marine biologist.</p><div class=\"fig\"><svg viewBox=\"0 0 540 210\" width=\"540\" role=\"img\" aria-label=\"Deniz biyoloğu metni\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"202\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0369a1\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Dr. Deniz Aksu – Life Under the Sea</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">(1) When I was seven, I watched a documentary about dolphins. Since then, I have</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">wanted to work in the sea and learn more about the animals living there.</text>\n<text x=\"22\" y=\"88\" font-size=\"11\" fill=\"#1e293b\">(2) I usually start work at 7 a.m. I dive for about two hours and collect water</text>\n<text x=\"22\" y=\"104\" font-size=\"11\" fill=\"#1e293b\">samples. In the afternoon, I examine them under a microscope in the lab.</text>\n<text x=\"22\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">(3) Plastic waste is a big threat to sea animals. Every year, thousands of turtles</text>\n<text x=\"22\" y=\"142\" font-size=\"11\" fill=\"#1e293b\">and fish are harmed by plastic bags and bottles.</text>\n<text x=\"22\" y=\"164\" font-size=\"11\" fill=\"#1e293b\">(4) If you want to become a marine biologist, read a lot about science, be patient</text>\n<text x=\"22\" y=\"180\" font-size=\"11\" fill=\"#1e293b\">and learn to swim well.</text>\n</svg></div><p>Which of the following headings can <b>NOT</b> be used for any of the paragraphs?</p>",
+   "c": [
+    "A Childhood Dream",
+    "A Typical Day at Work",
+    "Her Favourite Sea Animal",
+    "Tips for Future Scientists"
+   ],
+   "a": "C",
+   "s": "<p>(1) yedi yaşında izlediği belgesel ve o günden beri istediği iş → “A Childhood Dream” ✓. (2) her gün yaptıkları → “A Typical Day at Work” ✓. (4) genç bilim insanlarına öneriler → “Tips for Future Scientists” ✓. (3) için uygun başlık “A Serious Problem in the Seas” olurdu.</p><p>C: Metinde en sevdiği deniz hayvanından hiç söz edilmiyor. Tuzak: (1)’de yunuslar geçiyor ama yalnızca izlediği belgeselin konusu; “favourite” denmiyor. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Arda prepared these two tables for his project “Inventions in My Family’s Life”.</p><div class=\"fig\"><svg viewBox=\"0 0 480 149\" width=\"480\" role=\"img\" aria-label=\"Aile tablosu\">\n<text x=\"240.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">My Family</text>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"26\" fill=\"#0f766e\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Family member</text>\n<text x=\"278\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Born – Died</text>\n<rect x=\"10\" y=\"64\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">great-grandfather Hasan</text>\n<text x=\"278\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1902 – 1971</text>\n<rect x=\"10\" y=\"89\" width=\"460\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">great-grandmother Ayşe</text>\n<text x=\"278\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1908 – 1995</text>\n<rect x=\"10\" y=\"114\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">grandfather Ali</text>\n<text x=\"278\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">1936 – 2005</text>\n<line x1=\"270\" y1=\"38\" x2=\"270\" y2=\"139\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"101\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><div class=\"fig\"><svg viewBox=\"0 0 480 174\" width=\"480\" role=\"img\" aria-label=\"İcat tablosu\">\n<text x=\"240.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Inventions</text>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Invention</text>\n<text x=\"278\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Year</text>\n<rect x=\"10\" y=\"64\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">television</text>\n<text x=\"278\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1926</text>\n<rect x=\"10\" y=\"89\" width=\"460\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">the first mobile phone call</text>\n<text x=\"278\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1973</text>\n<rect x=\"10\" y=\"114\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">the World Wide Web</text>\n<text x=\"278\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">1989</text>\n<rect x=\"10\" y=\"139\" width=\"460\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">the first iPhone</text>\n<text x=\"278\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">2007</text>\n<line x1=\"270\" y1=\"38\" x2=\"270\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>According to the tables, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Great-grandmother Ayşe was able to use the World Wide Web.",
+    "Great-grandfather Hasan was able to call someone with a mobile phone.",
+    "Grandfather Ali was able to use the first iPhone.",
+    "Great-grandfather Hasan wasn’t able to watch television in his life."
+   ],
+   "a": "A",
+   "s": "<p>Kişi icadı kullanabilmek için icat yılında hayatta olmalı.</p><p>A: World Wide Web 1989, Ayşe 1995’te öldü → mümkün ✓.</p><p>B: ilk cep telefonu görüşmesi 1973, Hasan 1971’de öldü ✗. C: ilk iPhone 2007, Ali 2005’te öldü ✗. D: televizyon 1926’da icat edildi, Hasan 1902–1971 arasında yaşadı → izleyebilirdi; ifade yanlış ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Look at the table about some important inventions and discoveries.</p><div class=\"fig\"><svg viewBox=\"0 0 520 174\" width=\"520\" role=\"img\" aria-label=\"İcatlar tablosu\">\n<text x=\"260.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Famous Inventions and Discoveries</text>\n<rect x=\"10\" y=\"38\" width=\"500\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">What?</text>\n<text x=\"188\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Who?</text>\n<text x=\"438\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">When?</text>\n<rect x=\"10\" y=\"64\" width=\"500\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">stethoscope (invented)</text>\n<text x=\"188\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">René Laennec</text>\n<text x=\"438\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1816</text>\n<rect x=\"10\" y=\"89\" width=\"500\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">dynamite (invented)</text>\n<text x=\"188\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">Alfred Nobel</text>\n<text x=\"438\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1867</text>\n<rect x=\"10\" y=\"114\" width=\"500\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">insulin (discovered)</text>\n<text x=\"188\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">Frederick Banting and Charles Best</text>\n<text x=\"438\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">1921</text>\n<rect x=\"10\" y=\"139\" width=\"500\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Velcro (invented)</text>\n<text x=\"188\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">George de Mestral</text>\n<text x=\"438\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">1955</text>\n<line x1=\"180\" y1=\"38\" x2=\"180\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"430\" y1=\"38\" x2=\"430\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"500\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the following sentences is <b>CORRECT</b> according to the table?</p>",
+   "c": [
+    "Insulin was discovered by Alfred Nobel in 1921.",
+    "Dynamite was invented by Alfred Nobel in 1955.",
+    "Velcro is invented by George de Mestral in 1955.",
+    "The stethoscope was invented by René Laennec in 1816."
+   ],
+   "a": "D",
+   "s": "<p>Hem bilgi hem dil bilgisi doğru olmalı. Geçmişte olan bir olay için edilgen yapı: <b>was/were + V3 + by …</b>.</p><p>D: Stetoskop, 1816’da René Laennec tarafından icat edildi ✓.</p><p>A: insülin Banting ve Best tarafından bulundu, Nobel değil ✗. B: dinamit 1867’de icat edildi, 1955 değil ✗. C: bilgi doğru ama geçmişte olan olay için “<b>is</b> invented” kullanılamaz, “was invented” olmalı ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Some students are in the school lab. Their teacher asks them about their work.</p><div class=\"fig\"><svg viewBox=\"0 0 540 335\" width=\"540\" role=\"img\" aria-label=\"Laboratuvar mesajlaşması\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"327\" rx=\"14\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"32\" rx=\"12\" fill=\"#0f766e\"/>\n<text x=\"270.0\" y=\"25\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Lab Group 8-C</text>\n<rect x=\"20\" y=\"46\" width=\"410\" height=\"37\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"62\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">Ms. Yılmaz</text>\n<text x=\"30\" y=\"78\" font-size=\"11\" fill=\"#1e293b\">How is everything going? Tell me what you are doing right now.</text>\n<rect x=\"20\" y=\"91\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\">Ece</text>\n<text x=\"30\" y=\"123\" font-size=\"11\" fill=\"#1e293b\">I haven’t finished yet. I’m still measuring the temperature of the</text>\n<text x=\"30\" y=\"138\" font-size=\"11\" fill=\"#1e293b\">water every two minutes.</text>\n<rect x=\"20\" y=\"151\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"167\" font-size=\"11\" font-weight=\"bold\" fill=\"#9333ea\">Tolga</text>\n<text x=\"30\" y=\"183\" font-size=\"11\" fill=\"#1e293b\">I finished my experiment twenty minutes ago. I’m writing my report</text>\n<text x=\"30\" y=\"198\" font-size=\"11\" fill=\"#1e293b\">in the library now.</text>\n<rect x=\"20\" y=\"211\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"30\" y=\"227\" font-size=\"11\" font-weight=\"bold\" fill=\"#d97706\">Selin</text>\n<text x=\"30\" y=\"243\" font-size=\"11\" fill=\"#1e293b\">I’m heating the ice in a beaker at the moment. I’m waiting for it to</text>\n<text x=\"30\" y=\"258\" font-size=\"11\" fill=\"#1e293b\">melt.</text>\n<rect x=\"110\" y=\"271\" width=\"410\" height=\"52\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"120\" y=\"287\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f766e\">Mert</text>\n<text x=\"120\" y=\"303\" font-size=\"11\" fill=\"#1e293b\">I finished part one an hour ago. Now I’m mixing salt and water for</text>\n<text x=\"120\" y=\"318\" font-size=\"11\" fill=\"#1e293b\">part two.</text>\n</svg></div><p>Who is <b>NOT</b> doing an experiment at the moment?</p>",
+   "c": [
+    "Ece",
+    "Tolga",
+    "Selin",
+    "Mert"
+   ],
+   "a": "B",
+   "s": "<p>“at the moment / now / still” ifadeleri şu anda yapılan işi gösterir.</p><p>Tolga deneyini 20 dakika önce bitirmiş; şu an kütüphanede rapor yazıyor → deney yapmıyor ✓.</p><p>Ece hâlâ ölçüm yapıyor ✗. Selin şu an buzu ısıtıyor ✗. Mert birinci bölümü bitirmiş ama şimdi ikinci bölüm için tuz ve suyu karıştırıyor ✗ (tuzak: “I finished” ifadesi). Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Zeynep is preparing a project for the science fair. Here is her checklist.</p><div class=\"fig\"><svg viewBox=\"0 0 470 199\" width=\"470\" role=\"img\" aria-label=\"Kontrol listesi\">\n<text x=\"235.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Science Fair Project – Checklist</text>\n<rect x=\"10\" y=\"38\" width=\"450\" height=\"26\" fill=\"#7c3aed\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Task</text>\n<text x=\"348\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Done?</text>\n<rect x=\"10\" y=\"64\" width=\"450\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">choose a topic</text>\n<text x=\"348\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">✔</text>\n<rect x=\"10\" y=\"89\" width=\"450\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">read three articles about the topic</text>\n<text x=\"348\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">✔</text>\n<rect x=\"10\" y=\"114\" width=\"450\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">buy the materials</text>\n<text x=\"348\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">✘</text>\n<rect x=\"10\" y=\"139\" width=\"450\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">build the model</text>\n<text x=\"348\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">✘</text>\n<rect x=\"10\" y=\"164\" width=\"450\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">prepare the poster</text>\n<text x=\"348\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">✔</text>\n<line x1=\"340\" y1=\"38\" x2=\"340\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"450\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the following is <b>CORRECT</b> about Zeynep?</p>",
+   "c": [
+    "She has prepared her poster, but she hasn’t built her model yet.",
+    "She hasn’t chosen her topic yet, but she has read three articles.",
+    "She has already bought the materials for her model.",
+    "She has built her model, but she hasn’t read any articles yet."
+   ],
+   "a": "A",
+   "s": "<p>✔ = yapıldı (has + V3), ✘ = henüz yapılmadı (hasn’t + V3 … yet).</p><p>A: poster ✔, model ✘ → “has prepared … hasn’t built … yet” ✓.</p><p>B: konu seçilmiş (✔) ✗. C: malzemeler alınmamış (✘) ✗. D: model yapılmamış, makaleler okunmuş ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>200 students answered the question “How do you learn about science outside school?”. Each student gave only one answer. The graph shows the results in percentages.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Yüzde grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">How do you learn about science outside school? (%)</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"199.0\" x2=\"520\" y2=\"199.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"148.0\" x2=\"520\" y2=\"148.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"152.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"97.0\" x2=\"520\" y2=\"97.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"101.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">percentage of students (%)</text>\n<rect x=\"89.0\" y=\"71.5\" width=\"32.0\" height=\"178.5\" fill=\"#0d9488\"/>\n<text x=\"105.0\" y=\"67.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">35</text>\n<text x=\"106.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">documentaries</text>\n<rect x=\"181.0\" y=\"173.5\" width=\"32.0\" height=\"76.5\" fill=\"#0d9488\"/>\n<text x=\"197.0\" y=\"169.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">15</text>\n<text x=\"198.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">magazines</text>\n<rect x=\"273.0\" y=\"97.0\" width=\"32.0\" height=\"153.0\" fill=\"#0d9488\"/>\n<text x=\"289.0\" y=\"93.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">30</text>\n<text x=\"290.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the Internet</text>\n<rect x=\"365.0\" y=\"199.0\" width=\"32.0\" height=\"51.0\" fill=\"#0d9488\"/>\n<text x=\"381.0\" y=\"195.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<text x=\"382.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">museums</text>\n<rect x=\"457.0\" y=\"199.0\" width=\"32.0\" height=\"51.0\" fill=\"#0d9488\"/>\n<text x=\"473.0\" y=\"195.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<text x=\"474.0\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">science clubs</text>\n</svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "60 students learn about science from science magazines.",
+    "Documentaries are twice as popular as the Internet.",
+    "40 students learn about science in museums or science clubs.",
+    "More than half of the students use the Internet or magazines."
+   ],
+   "a": "C",
+   "s": "<p>Grafik yüzde gösteriyor; 200 öğrencinin %1’i = 2 öğrenci.</p><p>C: müzeler %10 + bilim kulüpleri %10 = %20 → 200’ün %20’si = <b>40</b> öğrenci ✓.</p><p>A: dergiler %15 → 30 öğrenci (60 öğrenci İnternet’tir) ✗. B: belgesel %35, İnternet %30 → iki katı değil ✗. D: İnternet + dergi = %45 → yarıdan az ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>The steps below show how glass bottles are recycled. One step is missing.</p><div class=\"fig\"><svg viewBox=\"0 0 540 168\" width=\"540\" role=\"img\" aria-label=\"Cam geri dönüşüm basamakları\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"160\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#15803d\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#15803d\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">How Is Glass Recycled?</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Step 1: Glass bottles are collected from recycling bins.</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">Step 2: They are taken to a recycling factory.</text>\n<text x=\"22\" y=\"94\" font-size=\"11\" fill=\"#1e293b\">Step 3: ……………………………………………</text>\n<text x=\"22\" y=\"116\" font-size=\"11\" fill=\"#1e293b\">Step 4: The small pieces are melted in a very hot furnace.</text>\n<text x=\"22\" y=\"138\" font-size=\"11\" fill=\"#1e293b\">Step 5: New bottles are made from the melted glass.</text>\n</svg></div><p>Which of the following can be <b>Step 3</b>?</p>",
+   "c": [
+    "The new bottles are sold to shops and supermarkets.",
+    "The bottles are crushing into small pieces by machines.",
+    "The melted glass is poured into bottle shapes.",
+    "The bottles are cleaned and broken into small pieces."
+   ],
+   "a": "D",
+   "s": "<p>3. basamak, fabrikaya gelişten (2) sonra, “küçük parçaların” eritilmesinden (4) önce olmalı ve edilgen yapı (is/are + V3) doğru kurulmalı.</p><p>D: şişeler temizlenir ve küçük parçalara kırılır → 4. adımdaki “the small pieces” ifadesine bağlanır ✓.</p><p>A: satış en sonda olur ✗. B: anlam uygun ama “are crushing” edilgen değil, “are crushed” olmalı ✗. C: erimiş camın kalıba dökülmesi eritmeden (4) sonra gelir ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Kerem wants to borrow a book from the school library. Read his message and the book list.</p><div class=\"box\"><p><b>Kerem:</b> I’m really interested in space, but I don’t enjoy stories. I want a book with real facts and lots of pictures. It should be short, because I have only this weekend to read it.</p></div><div class=\"fig\"><svg viewBox=\"0 0 530 219\" width=\"530\" role=\"img\" aria-label=\"Kitap listesi\">\n<text x=\"265.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">New Books in the Library</text>\n<rect x=\"10\" y=\"38\" width=\"510\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Book</text>\n<text x=\"188\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">About the book</text>\n<text x=\"458\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Pages</text>\n<rect x=\"10\" y=\"64\" width=\"510\" height=\"40\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Our Solar System</text>\n<text x=\"188\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">real facts and colourful photos of the</text>\n<text x=\"188\" y=\"97\" font-size=\"11\" fill=\"#1e293b\">planets</text>\n<text x=\"458\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">64</text>\n<rect x=\"10\" y=\"104\" width=\"510\" height=\"40\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"122\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Mission to Mars</text>\n<text x=\"188\" y=\"122\" font-size=\"11\" fill=\"#1e293b\">a science-fiction story about a girl</text>\n<text x=\"188\" y=\"137\" font-size=\"11\" fill=\"#1e293b\">living on Mars</text>\n<text x=\"458\" y=\"122\" font-size=\"11\" fill=\"#1e293b\">320</text>\n<rect x=\"10\" y=\"144\" width=\"510\" height=\"40\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"162\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">The Story of Space Travel</text>\n<text x=\"188\" y=\"162\" font-size=\"11\" fill=\"#1e293b\">facts about the history of space travel,</text>\n<text x=\"188\" y=\"177\" font-size=\"11\" fill=\"#1e293b\">no pictures</text>\n<text x=\"458\" y=\"162\" font-size=\"11\" fill=\"#1e293b\">410</text>\n<rect x=\"10\" y=\"184\" width=\"510\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"202\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Amazing Animals</text>\n<text x=\"188\" y=\"202\" font-size=\"11\" fill=\"#1e293b\">real facts and photos of wild animals</text>\n<text x=\"458\" y=\"202\" font-size=\"11\" fill=\"#1e293b\">48</text>\n<line x1=\"180\" y1=\"38\" x2=\"180\" y2=\"209\" stroke=\"#94a3b8\"/>\n<line x1=\"450\" y1=\"38\" x2=\"450\" y2=\"209\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"510\" height=\"171\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which book is the <b>best</b> for Kerem?</p>",
+   "c": [
+    "Our Solar System",
+    "Mission to Mars",
+    "The Story of Space Travel",
+    "Amazing Animals"
+   ],
+   "a": "A",
+   "s": "<p>Kerem’in koşulları: konu uzay, hikâye değil gerçek bilgi, bol resim, kısa kitap.</p><p>“Our Solar System”: uzay ✓, gerçek bilgi ✓, renkli fotoğraflar ✓, 64 sayfa ✓.</p><p>B: uzayla ilgili ama bilimkurgu hikâyesi ve uzun ✗. C: uzay ve gerçek bilgi ama resim yok ve 410 sayfa ✗. D: kısa ve resimli ama konusu hayvanlar ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Duru put one plant in sunlight and another one in a dark room. She measured their heights every week.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Bitki boyları grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Heights of the Plants</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"224.5\" x2=\"520\" y2=\"224.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"228.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">2</text>\n<line x1=\"60\" y1=\"199.0\" x2=\"520\" y2=\"199.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">4</text>\n<line x1=\"60\" y1=\"173.5\" x2=\"520\" y2=\"173.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"177.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">6</text>\n<line x1=\"60\" y1=\"148.0\" x2=\"520\" y2=\"148.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"152.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">8</text>\n<line x1=\"60\" y1=\"122.5\" x2=\"520\" y2=\"122.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"126.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"97.0\" x2=\"520\" y2=\"97.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"101.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">12</text>\n<line x1=\"60\" y1=\"71.5\" x2=\"520\" y2=\"71.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"75.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">14</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">16</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">height (cm)</text>\n<rect x=\"83.5\" y=\"224.5\" width=\"32.0\" height=\"25.5\" fill=\"#16a34a\"/>\n<text x=\"99.5\" y=\"220.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">2</text>\n<rect x=\"117.5\" y=\"224.5\" width=\"32.0\" height=\"25.5\" fill=\"#64748b\"/>\n<text x=\"133.5\" y=\"220.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">2</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Week 1</text>\n<rect x=\"198.5\" y=\"186.2\" width=\"32.0\" height=\"63.8\" fill=\"#16a34a\"/>\n<text x=\"214.5\" y=\"182.2\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">5</text>\n<rect x=\"232.5\" y=\"211.8\" width=\"32.0\" height=\"38.2\" fill=\"#64748b\"/>\n<text x=\"248.5\" y=\"207.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">3</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Week 2</text>\n<rect x=\"313.5\" y=\"135.2\" width=\"32.0\" height=\"114.8\" fill=\"#16a34a\"/>\n<text x=\"329.5\" y=\"131.2\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">9</text>\n<rect x=\"347.5\" y=\"199.0\" width=\"32.0\" height=\"51.0\" fill=\"#64748b\"/>\n<text x=\"363.5\" y=\"195.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Week 3</text>\n<rect x=\"428.5\" y=\"71.5\" width=\"32.0\" height=\"178.5\" fill=\"#16a34a\"/>\n<text x=\"444.5\" y=\"67.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">14</text>\n<rect x=\"462.5\" y=\"199.0\" width=\"32.0\" height=\"51.0\" fill=\"#64748b\"/>\n<text x=\"478.5\" y=\"195.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Week 4</text>\n<rect x=\"70\" y=\"278\" width=\"12\" height=\"12\" fill=\"#16a34a\"/>\n<text x=\"87\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">in sunlight</text>\n<rect x=\"197\" y=\"278\" width=\"12\" height=\"12\" fill=\"#64748b\"/>\n<text x=\"214\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">in the dark</text>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the graph?</p>",
+   "c": [
+    "The plant in the dark grew the most in the last week.",
+    "In Week 4, the plant in sunlight was more than three times as tall as the plant in the dark.",
+    "The two plants were the same height in Week 2.",
+    "The plant in sunlight grew the same amount every week."
+   ],
+   "a": "B",
+   "s": "<p>B: 4. hafta güneşteki bitki 14 cm, karanlıktaki 4 cm → 14 ÷ 4 = 3,5 → üç katından fazla ✓.</p><p>A: karanlıktaki bitki son hafta hiç uzamadı (4 → 4) ✗. C: boyları 1. haftada eşitti (2 cm), 2. haftada 5 ve 3 ✗. D: güneşteki bitki 3, 4, 5 cm uzadı; her hafta aynı değil ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the conversation between two friends.</p><div class=\"dialog\"><div><b>Ece:</b> Did you know that the microwave oven was invented by accident?</div><div><b>Bora:</b> Really? Who invented it?</div><div><b>Ece:</b> An American engineer, Percy Spencer. In 1945, he was working with radar machines when the chocolate bar in his pocket suddenly melted.</div><div><b>Bora:</b> Wow! So he understood that the waves could heat food.</div><div><b>Ece:</b> Exactly. After that, he tried it with popcorn, and it popped!</div><div><b>Bora:</b> We use our microwave every day, but I’ve never thought about its history before.</div></div><p>Which of the following is <b>CORRECT</b> according to the conversation?</p>",
+   "c": [
+    "Percy Spencer was trying to invent a new oven when he made the discovery.",
+    "Bora has known the history of the microwave oven for a long time.",
+    "Spencer was making popcorn when the chocolate in his pocket melted.",
+    "Spencer noticed the effect of the waves because something in his pocket melted."
+   ],
+   "a": "D",
+   "s": "<p>D: Cebindeki çikolata eriyince dalgaların yiyeceği ısıtabildiğini fark etti ✓.</p><p>A: yeni bir fırın icat etmeye çalışmıyordu; radar makineleriyle çalışırken tesadüfen buldu (“by accident”) ✗. B: Bora “I’ve never thought about its history before” diyor ✗. C: patlamış mısırı çikolata eridikten <b>sonra</b> denedi (“After that”) ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the text about a famous scientist.</p><div class=\"fig\"><svg viewBox=\"0 0 540 220\" width=\"540\" role=\"img\" aria-label=\"Galileo biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"212\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Galileo Galilei (1564 – 1642)</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Galileo Galilei was born in Pisa, Italy, in 1564. His father wanted him to become</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">a doctor, so he started studying medicine at the University of Pisa. However, he</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">was more interested in mathematics, and he left the university without a degree.</text>\n<text x=\"22\" y=\"98\" font-size=\"11\" fill=\"#1e293b\">Later, he became a mathematics teacher.</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">In 1609, he heard about a new Dutch invention, the telescope, and he built a</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">better one himself. With it, he saw mountains on the Moon and four moons around</text>\n<text x=\"22\" y=\"152\" font-size=\"11\" fill=\"#1e293b\">Jupiter.</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">Galileo believed that the Earth moves around the Sun. Many people did not accept</text>\n<text x=\"22\" y=\"190\" font-size=\"11\" fill=\"#1e293b\">this idea at that time, and he had to stay in his house until his death in 1642.</text>\n</svg></div><p>According to the text, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "He invented the first telescope in the world.",
+    "He didn’t finish his medical education.",
+    "He saw four moons around Jupiter after he became a doctor.",
+    "Everybody agreed with his ideas about the Earth and the Sun."
+   ],
+   "a": "B",
+   "s": "<p>B: Tıp okumaya başladı ama “he left the university <b>without a degree</b>” → tıp eğitimini bitirmedi ✓.</p><p>A: teleskop bir Hollanda icadıydı; Galileo daha iyisini yaptı, ilkini icat etmedi ✗. C: doktor olmadı, matematik öğretmeni oldu ✗. D: “Many people did not accept this idea” ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Twins Ada and Arda want to join a summer robotics camp. Read the information.</p><div class=\"fig\"><svg viewBox=\"0 0 540 199\" width=\"540\" role=\"img\" aria-label=\"Robotik kamp bilgileri\">\n<text x=\"270.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">ROBO-KIDS SUMMER CAMP</text>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\"></text>\n<text x=\"258\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Price / Information</text>\n<rect x=\"10\" y=\"64\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1-week programme</text>\n<text x=\"258\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1,500 TL per child</text>\n<rect x=\"10\" y=\"89\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2-week programme</text>\n<text x=\"258\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">2,700 TL per child</text>\n<rect x=\"10\" y=\"114\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Early registration (before 1 June)</text>\n<text x=\"258\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">200 TL off for each child</text>\n<rect x=\"10\" y=\"139\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Sibling discount</text>\n<text x=\"258\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">The second child pays 500 TL less.</text>\n<rect x=\"10\" y=\"164\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Camp bus (optional)</text>\n<text x=\"258\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">300 TL per family</text>\n<line x1=\"250\" y1=\"38\" x2=\"250\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Their mother registers both children for the <b>2-week programme</b> on <b>28 May</b>. The family lives next to the camp, so they don’t need the camp bus.</p><p>How much does the family pay?</p>",
+   "c": [
+    "4,500 TL",
+    "4,700 TL",
+    "4,900 TL",
+    "5,400 TL"
+   ],
+   "a": "A",
+   "s": "<p>İki çocuk, 2 haftalık program: 2 × 2.700 = 5.400 TL.</p><p>Erken kayıt: 28 Mayıs, 1 Haziran’dan önce → her çocuk için 200 TL → 400 TL indirim.</p><p>Kardeş indirimi: 500 TL. Servis kullanılmıyor.</p><p>5.400 − 400 − 500 = <b>4.500 TL</b>. Çeldiriciler: 4.700 (erken kayıt indirimi bir kez), 4.900 (erken kayıt unutulursa), 5.400 (hiç indirim yok). Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Mr. Aydın wants to book the science lab on Wednesday for class 8-E. Look at the lab schedule.</p><div class=\"fig\"><svg viewBox=\"0 0 500 174\" width=\"500\" role=\"img\" aria-label=\"Laboratuvar çizelgesi\">\n<text x=\"250.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Science Lab – Wednesday</text>\n<rect x=\"10\" y=\"38\" width=\"480\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Time</text>\n<text x=\"218\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Booked by</text>\n<rect x=\"10\" y=\"64\" width=\"480\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">08:30 – 10:00</text>\n<text x=\"218\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">8-A (Chemistry)</text>\n<rect x=\"10\" y=\"89\" width=\"480\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">11:00 – 12:30</text>\n<text x=\"218\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">7-C (Physics)</text>\n<rect x=\"10\" y=\"114\" width=\"480\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">12:30 – 13:30</text>\n<text x=\"218\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">LUNCH BREAK – lab closed</text>\n<rect x=\"10\" y=\"139\" width=\"480\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">15:30 – 16:30</text>\n<text x=\"218\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">8-D (Biology)</text>\n<line x1=\"210\" y1=\"38\" x2=\"210\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"480\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><div class=\"box\"><p>The lab is open from 08:30 to 16:30. At other times, it is free.</p></div><p>The experiment of class 8-E takes <b>90 minutes</b>, and the students need <b>15 minutes</b> to clean the lab after it.</p><p>At what time can Mr. Aydın start the experiment?</p>",
+   "c": [
+    "10:00",
+    "12:45",
+    "13:30",
+    "15:00"
+   ],
+   "a": "C",
+   "s": "<p>Gereken süre: 90 + 15 = <b>105 dakika</b> (1 sa 45 dk).</p><p>A: 10:00 + 105 dk = 11:45, ama 11:00’de 7-C geliyor ✗. B: 12:45 öğle arası, laboratuvar kapalı ✗. D: 15:00 + 105 dk = 16:45; 15:30’da 8-D var ve laboratuvar 16:30’da kapanıyor ✗.</p><p>C: 13:30 + 105 dk = <b>15:15</b>; 15:30’dan önce biter ✓. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Ece received an email from her aunt, a geologist.</p><div class=\"fig\"><svg viewBox=\"0 0 540 232\" width=\"540\" role=\"img\" aria-label=\"Jeolog e-postası\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"224\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#b45309\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">From: Aunt Leyla   To: Ece   Subject: Greetings from Cappadocia</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Dear Ece,</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">I’m writing to you from Cappadocia. My team and I have been here for ten days.</text>\n<text x=\"22\" y=\"88\" font-size=\"11\" fill=\"#1e293b\">Every morning, we collect rock samples, and in the evenings, we examine them in</text>\n<text x=\"22\" y=\"104\" font-size=\"11\" fill=\"#1e293b\">our tent.</text>\n<text x=\"22\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">Did you know that the fairy chimneys were formed by wind and rain over millions of</text>\n<text x=\"22\" y=\"142\" font-size=\"11\" fill=\"#1e293b\">years? They are made of soft rock, so they change very slowly every year.</text>\n<text x=\"22\" y=\"164\" font-size=\"11\" fill=\"#1e293b\">I haven’t visited the underground cities yet, but I’m going to see Derinkuyu on</text>\n<text x=\"22\" y=\"180\" font-size=\"11\" fill=\"#1e293b\">Saturday. I’ll be back home on 15 July. I can’t wait to show you my photos!</text>\n<text x=\"22\" y=\"202\" font-size=\"11\" fill=\"#1e293b\">Love, Aunt Leyla</text>\n</svg></div><p>Which of the following is <b>NOT</b> true according to the email?</p>",
+   "c": [
+    "She has been in Cappadocia for more than a week.",
+    "She is planning to visit an underground city.",
+    "She and her team collect rock samples in the mornings.",
+    "She has already visited Derinkuyu."
+   ],
+   "a": "D",
+   "s": "<p>A: “have been here for ten days” → bir haftadan fazla ✓ doğru. B: “I’m going to see Derinkuyu on Saturday” → yeraltı şehrini ziyaret etmeyi planlıyor ✓ doğru. C: “Every morning, we collect rock samples” ✓ doğru.</p><p>D: “I <b>haven’t visited</b> the underground cities <b>yet</b>” → Derinkuyu’yu henüz görmedi; ifade <b>yanlış</b>. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the sentences from a news report.</p><div class=\"box\"><p>“Scientists built a new weather station on Mount Erciyes last year. They measure the wind speed every hour.”</p></div><p>Which of the following gives the <b>SAME</b> information in the passive voice?</p>",
+   "c": [
+    "A new weather station was built on Mount Erciyes last year, and the wind speed is measured every hour.",
+    "A new weather station was built on Mount Erciyes last year, and the wind speed was measured every hour.",
+    "A new weather station is built on Mount Erciyes last year, and the wind speed is measured every hour.",
+    "A new weather station built on Mount Erciyes last year, and the wind speed is measuring every hour."
+   ],
+   "a": "A",
+   "s": "<p>1. cümle geçmiş zaman (built, last year) → edilgen: <b>was built</b>. 2. cümle geniş zaman (measure, every hour) → edilgen: <b>is measured</b>.</p><p>A her iki zamanı da korur ✓.</p><p>B: ikinci cümle geçmişe kaymış (was measured); ölçüm hâlâ her saat yapılıyor ✗. C: “last year” ile “is built” kullanılamaz ✗. D: “station built” edilgen değil (istasyon bir şey inşa etmiş gibi olur) ve “is measuring” etken yapı ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the information about Stephen Hawking.</p><div class=\"fig\"><svg viewBox=\"0 0 540 200\" width=\"540\" role=\"img\" aria-label=\"Stephen Hawking bilgi kartı\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"192\" rx=\"10\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#1d4ed8\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Stephen Hawking</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">• Born: 8 January 1942, Oxford, England   • Died: 14 March 2018</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">• At the age of 21, he learned that he had a serious illness. The doctors said he</text>\n<text x=\"22\" y=\"88\" font-size=\"11\" fill=\"#1e293b\">had only two years to live, but he lived for many more years.</text>\n<text x=\"22\" y=\"110\" font-size=\"11\" fill=\"#1e293b\">• He couldn’t walk or speak in his later life, so he used a wheelchair and spoke</text>\n<text x=\"22\" y=\"126\" font-size=\"11\" fill=\"#1e293b\">with the help of a computer.</text>\n<text x=\"22\" y=\"148\" font-size=\"11\" fill=\"#1e293b\">• He studied black holes and the beginning of the universe.</text>\n<text x=\"22\" y=\"170\" font-size=\"11\" fill=\"#1e293b\">• His famous book, A Brief History of Time, was published in April 1988.</text>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the information?</p>",
+   "c": [
+    "He lived only two years after he learned about his illness.",
+    "He was 46 years old when A Brief History of Time was published.",
+    "He wrote his famous book before he became ill.",
+    "He was 70 years old when he died."
+   ],
+   "a": "B",
+   "s": "<p>B: Ocak 1942’de doğdu, kitap Nisan 1988’de yayımlandı → doğum günü geçmiş, 1988 − 1942 = <b>46</b> ✓.</p><p>A: doktorlar iki yıl ömür biçti ama “he lived for many more years” ✗. C: 21 yaşında (1963) hastalandı; kitap 1988’de, yani hastalıktan sonra ✗. D: Mart 2018’de öldü, doğum günü geçmiş → 2018 − 1942 = 76 ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Selim put four ice cubes of the same size in the same room. He covered three of them with different materials and left one uncovered. Then he recorded the time each ice cube needed to melt completely.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Buz erime deneyi\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Time for the Ice Cubes to Melt</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"224.5\" x2=\"520\" y2=\"224.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"228.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"199.0\" x2=\"520\" y2=\"199.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"203.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"173.5\" x2=\"520\" y2=\"173.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"177.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">60</text>\n<line x1=\"60\" y1=\"148.0\" x2=\"520\" y2=\"148.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"152.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">80</text>\n<line x1=\"60\" y1=\"122.5\" x2=\"520\" y2=\"122.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"126.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">100</text>\n<line x1=\"60\" y1=\"97.0\" x2=\"520\" y2=\"97.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"101.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">120</text>\n<line x1=\"60\" y1=\"71.5\" x2=\"520\" y2=\"71.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"75.5\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">140</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">160</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">time (minutes)</text>\n<rect x=\"100.5\" y=\"173.5\" width=\"32.0\" height=\"76.5\" fill=\"#0ea5e9\"/>\n<text x=\"116.5\" y=\"169.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">60</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">aluminium foil</text>\n<rect x=\"215.5\" y=\"58.8\" width=\"32.0\" height=\"191.2\" fill=\"#0ea5e9\"/>\n<text x=\"231.5\" y=\"54.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">150</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">wool</text>\n<rect x=\"330.5\" y=\"109.8\" width=\"32.0\" height=\"140.2\" fill=\"#0ea5e9\"/>\n<text x=\"346.5\" y=\"105.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">110</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">newspaper</text>\n<rect x=\"445.5\" y=\"192.6\" width=\"32.0\" height=\"57.4\" fill=\"#0ea5e9\"/>\n<text x=\"461.5\" y=\"188.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">45</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">no cover</text>\n</svg></div><p>Which conclusion can Selim draw from his experiment?</p>",
+   "c": [
+    "Aluminium foil keeps ice frozen longer than newspaper.",
+    "The uncovered ice cube melted last.",
+    "Wool is the best insulator among these materials.",
+    "All the materials made the ice cubes melt faster."
+   ],
+   "a": "C",
+   "s": "<p>Buz ne kadar geç eriyorsa malzeme ısıyı o kadar az geçirmiş, yani o kadar iyi yalıtım yapmıştır.</p><p>C: yün en uzun sürede (150 dk) eridi → en iyi yalıtkan yün ✓.</p><p>A: folyo 60 dk, gazete 110 dk → gazete daha uzun korudu ✗. B: örtüsüz buz <b>ilk</b> eridi (45 dk) ✗. D: tüm malzemeler erimeyi yavaşlattı, hızlandırmadı ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Complete the text about planets outside our solar system.</p><div class=\"box\"><p>Scientists <b>(I) ……………</b> more than five thousand planets outside our solar system since 1992. Last year, a space telescope <b>(II) ……………</b> a new planet which is a little bigger than the Earth.</p></div><p>Which of the following best completes the gaps?</p>",
+   "c": [
+    "(I) have discovered – (II) found",
+    "(I) discovered – (II) has found",
+    "(I) have discovered – (II) has found",
+    "(I) discovered – (II) found"
+   ],
+   "a": "A",
+   "s": "<p>(I): “since 1992” geçmişte başlayıp bugüne kadar süren bir durumu anlatır → <b>Present Perfect</b>: have discovered.</p><p>(II): “Last year” belirli geçmiş zaman → <b>Simple Past</b>: found. Present Perfect “last year” ile kullanılmaz.</p><p>B ve D’de “since 1992” ile simple past kullanılmış ✗; B ve C’de “last year” ile “has found” kullanılmış ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the rules of the Space Camp and the information about three students.</p><div class=\"box\"><p><b>SPACE CAMP – Who can join?</b><br>• Students aged 12–15<br>• Students with a science grade of 80 or higher<br>• Students who have never attended the camp before</p></div><div class=\"fig\"><svg viewBox=\"0 0 550 149\" width=\"550\" role=\"img\" aria-label=\"Başvuranlar tablosu\">\n<text x=\"275.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Applicants</text>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\"></text>\n<text x=\"58\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Student</text>\n<text x=\"148\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Age</text>\n<text x=\"208\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Science grade</text>\n<text x=\"328\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Information</text>\n<rect x=\"10\" y=\"64\" width=\"530\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">I.</text>\n<text x=\"58\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">Nehir</text>\n<text x=\"148\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">13</text>\n<text x=\"208\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">85</text>\n<text x=\"328\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">attended the camp last year</text>\n<rect x=\"10\" y=\"89\" width=\"530\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">II.</text>\n<text x=\"58\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">Kaan</text>\n<text x=\"148\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">14</text>\n<text x=\"208\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">90</text>\n<text x=\"328\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">has never been to a camp</text>\n<rect x=\"10\" y=\"114\" width=\"530\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">III.</text>\n<text x=\"58\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">Elif</text>\n<text x=\"148\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">16</text>\n<text x=\"208\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">95</text>\n<text x=\"328\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">has never attended the camp</text>\n<line x1=\"50\" y1=\"38\" x2=\"50\" y2=\"139\" stroke=\"#94a3b8\"/>\n<line x1=\"140\" y1=\"38\" x2=\"140\" y2=\"139\" stroke=\"#94a3b8\"/>\n<line x1=\"200\" y1=\"38\" x2=\"200\" y2=\"139\" stroke=\"#94a3b8\"/>\n<line x1=\"320\" y1=\"38\" x2=\"320\" y2=\"139\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"530\" height=\"101\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the students can join the Space Camp?</p>",
+   "c": [
+    "I and II",
+    "II and III",
+    "I, II and III",
+    "Only II"
+   ],
+   "a": "D",
+   "s": "<p>Üç koşulun <b>hepsi</b> sağlanmalı.</p><p>I. Nehir: yaş ✓, not ✓, ama kampa geçen yıl katıldı ✗.</p><p>II. Kaan: 14 yaş ✓, 90 ✓, daha önce hiç katılmadı ✓.</p><p>III. Elif: notu en yüksek ama 16 yaşında, yaş sınırı 15 ✗ (tuzak: en yüksek not).</p><p>Yalnızca Kaan katılabilir. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read the summer science school programmes and Damla’s message.</p><div class=\"fig\"><svg viewBox=\"0 0 515 174\" width=\"515\" role=\"img\" aria-label=\"Yaz bilim okulu programları\">\n<text x=\"257.5\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">SUMMER SCIENCE SCHOOL</text>\n<rect x=\"10\" y=\"38\" width=\"495\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Programme</text>\n<text x=\"168\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Subject</text>\n<text x=\"268\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Days</text>\n<text x=\"363\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Month</text>\n<text x=\"443\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Ages</text>\n<rect x=\"10\" y=\"64\" width=\"495\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Young Chemists</text>\n<text x=\"168\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">chemistry</text>\n<text x=\"268\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">weekdays</text>\n<text x=\"363\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">July</text>\n<text x=\"443\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">12–14</text>\n<rect x=\"10\" y=\"89\" width=\"495\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Lab Explorers</text>\n<text x=\"168\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">chemistry</text>\n<text x=\"268\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">weekends</text>\n<text x=\"363\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">August</text>\n<text x=\"443\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">10–12</text>\n<rect x=\"10\" y=\"114\" width=\"495\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Space Lab</text>\n<text x=\"168\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">astronomy</text>\n<text x=\"268\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">weekends</text>\n<text x=\"363\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">August</text>\n<text x=\"443\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">12–15</text>\n<rect x=\"10\" y=\"139\" width=\"495\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">Chemistry Magic</text>\n<text x=\"168\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">chemistry</text>\n<text x=\"268\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">weekends</text>\n<text x=\"363\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">August</text>\n<text x=\"443\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">13–16</text>\n<line x1=\"160\" y1=\"38\" x2=\"160\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"260\" y1=\"38\" x2=\"260\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"355\" y1=\"38\" x2=\"355\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"435\" y1=\"38\" x2=\"435\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"495\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><div class=\"box\"><p><b>Damla:</b> I’m 13 years old and I love doing chemistry experiments. I go to a swimming course on weekdays, so I’m only free at weekends. In July, I’m going to visit my grandparents.</p></div><p>Which programme is the most suitable for Damla?</p>",
+   "c": [
+    "Young Chemists",
+    "Chemistry Magic",
+    "Lab Explorers",
+    "Space Lab"
+   ],
+   "a": "B",
+   "s": "<p>Damla’nın koşulları: 13 yaş, kimya, yalnızca hafta sonu, Temmuz’da yok → Ağustos.</p><p>A: kimya ve yaş uygun ama hafta içi ve Temmuz’da ✗. C: kimya, hafta sonu, Ağustos ama yaş aralığı 10–12 ✗. D: hafta sonu ve Ağustos ama konu astronomi ✗.</p><p>B: kimya ✓, hafta sonu ✓, Ağustos ✓, 13–16 yaş ✓. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>A school magazine interviewed an astronomer, Dr. Ayla Yıldız.</p><div class=\"dialog\"><div><b>Reporter:</b> When did you become interested in astronomy?</div><div><b>Dr. Yıldız:</b> When I was nine, my grandfather gave me a small telescope as a present. I have loved the night sky since that day.</div><div><b>Reporter:</b> What do you do at the observatory?</div><div><b>Dr. Yıldız:</b> I usually work at night. I take photos of distant stars, and the next day I study them on my computer.</div><div><b>Reporter:</b> Have you ever discovered anything new?</div><div><b>Dr. Yıldız:</b> Yes. In 2019, my team found a new asteroid, and it was named after my hometown, Sivas.</div><div><b>Reporter:</b> What is your advice for young astronomers?</div><div><b>Dr. Yıldız:</b> Be patient! Sometimes you wait for clear skies for weeks.</div></div><p>Which of the following is <b>CORRECT</b> according to the interview?</p>",
+   "c": [
+    "She bought her first telescope when she was nine.",
+    "She examines the photos of the stars as soon as she takes them.",
+    "An asteroid was named after the city she comes from.",
+    "She thinks it is easy to find clear skies for observation."
+   ],
+   "a": "C",
+   "s": "<p>C: “it was named after my hometown, Sivas” → bir asteroide memleketinin adı verildi ✓.</p><p>A: teleskobu satın almadı; dedesi hediye etti ✗. B: fotoğrafları gece çekiyor, <b>ertesi gün</b> inceliyor ✗. D: “Sometimes you wait for clear skies for weeks” → kolay değil ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Bulut put one spoon of sugar into the same amount of water at different temperatures. He did not stir the water. He recorded the time the sugar needed to dissolve completely.</p><div class=\"fig\"><svg viewBox=\"0 0 480 174\" width=\"480\" role=\"img\" aria-label=\"Şeker çözünme tablosu\">\n<text x=\"240.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Sugar Experiment</text>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"26\" fill=\"#be185d\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Water temperature</text>\n<text x=\"248\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Time to dissolve</text>\n<rect x=\"10\" y=\"64\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">10 °C</text>\n<text x=\"248\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">180 seconds</text>\n<rect x=\"10\" y=\"89\" width=\"460\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">30 °C</text>\n<text x=\"248\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">120 seconds</text>\n<rect x=\"10\" y=\"114\" width=\"460\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">50 °C</text>\n<text x=\"248\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">60 seconds</text>\n<rect x=\"10\" y=\"139\" width=\"460\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">70 °C</text>\n<text x=\"248\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">30 seconds</text>\n<line x1=\"240\" y1=\"38\" x2=\"240\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"460\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the following is <b>CORRECT</b> according to the results?</p>",
+   "c": [
+    "The hotter the water is, the faster the sugar dissolves.",
+    "Sugar doesn’t dissolve in cold water.",
+    "At 50 °C, the sugar dissolved twice as fast as at 10 °C.",
+    "The sugar dissolved in 30 seconds in the 50 °C water."
+   ],
+   "a": "A",
+   "s": "<p>A: sıcaklık arttıkça (10 → 70 °C) süre azalıyor (180 → 30 s) → su ne kadar sıcaksa şeker o kadar hızlı çözünür ✓.</p><p>B: 10 °C’de de çözündü (180 s) ✗. C: 180 ÷ 60 = 3 → üç kat hızlı, iki kat değil ✗. D: 50 °C’de 60 saniye; 30 saniye 70 °C’ye ait ✗. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Complete the conversation.</p><div class=\"dialog\"><div><b>Can:</b> Have you <b>(1) ………</b> seen a solar eclipse?</div><div><b>Eda:</b> No, never. But I have <b>(2) ………</b> read an article about the next one. I finished it five minutes ago.</div><div><b>Can:</b> Our teacher wants to take us to the observatory to watch it. Has the school announced the date <b>(3) ………</b>?</div><div><b>Eda:</b> No, not yet. Maybe tomorrow.</div></div><p>Which of the following completes the gaps <b>CORRECTLY</b>?</p>",
+   "c": [
+    "(1) yet – (2) ever – (3) just",
+    "(1) just – (2) yet – (3) ever",
+    "(1) ever – (2) yet – (3) just",
+    "(1) ever – (2) just – (3) yet"
+   ],
+   "a": "D",
+   "s": "<p>(1) “Have you <b>ever</b> …?” → hayatın boyunca hiç … yaptın mı? (cevap: “No, never”).</p><p>(2) “I finished it five minutes ago” → az önce: <b>just</b>.</p><p>(3) Soru cümlesinin sonunda “henüz / şimdiye kadar” → <b>yet</b> (cevap: “not yet”).</p><p>Diğer şıklarda bu zarflar yanlış yerlerde ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Four people are giving their opinions about artificial intelligence (AI) in medicine.</p><div class=\"dialog\"><div><b>Ahmet:</b> AI can examine thousands of X-rays in a few minutes. It will help hospitals find illnesses much earlier.</div><div><b>Buse:</b> Computers can make mistakes too. I think the results of AI should always be checked by a doctor before a decision is made.</div><div><b>Cem:</b> I don’t trust machines with my health. Hospitals shouldn’t use AI at all.</div><div><b>Dila:</b> In the future, robots will do operations alone, and we won’t need surgeons anymore.</div></div><p>Who thinks that AI results should be checked by a doctor?</p>",
+   "c": [
+    "Ahmet",
+    "Buse",
+    "Cem",
+    "Dila"
+   ],
+   "a": "B",
+   "s": "<p>Buse: “the results of AI should always be checked by a doctor before a decision is made” ✓.</p><p>Ahmet yapay zekânın faydasından söz ediyor ama sonuçların doktor tarafından kontrol edilmesinden bahsetmiyor ✗. Cem hastanelerin yapay zekâyı hiç kullanmamasını istiyor ✗. Dila cerrahlara gerek kalmayacağını düşünüyor ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Read Irmak’s notes about her salt crystal experiment.</p><div class=\"fig\"><svg viewBox=\"0 0 540 204\" width=\"540\" role=\"img\" aria-label=\"Tuz kristali deneyi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"196\" rx=\"10\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Growing Salt Crystals – Irmak’s Notes</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">First, I measured 200 ml of water with a measuring cup. Then I heated the water in</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">a pan and added salt with a spoon. I kept adding salt until no more salt</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">dissolved.</text>\n<text x=\"22\" y=\"104\" font-size=\"11\" fill=\"#1e293b\">After the water cooled a little, I poured it into a glass jar. I tied a piece of</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">string to a pencil, put the pencil on top of the jar and let the string hang into</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">the salty water.</text>\n<text x=\"22\" y=\"158\" font-size=\"11\" fill=\"#1e293b\">A week later, I saw small crystals on the string, and I looked at them carefully</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">with a magnifying glass.</text>\n</svg></div><p>Which of the following did Irmak <b>NOT</b> use in her experiment?</p>",
+   "c": [
+    "a magnifying glass",
+    "a measuring cup",
+    "a thermometer",
+    "a spoon"
+   ],
+   "a": "C",
+   "s": "<p>Notlarda kullanılanlar: measuring cup (200 ml su), pan, spoon (tuz ekleme), glass jar, string, pencil, magnifying glass (kristalleri inceleme).</p><p>C: Suyu ısıttı ve soğumasını bekledi ama sıcaklığı <b>ölçmedi</b>; termometre geçmiyor ✓ (tuzak: ısıtma/soğuma termometre çağrıştırır). Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the text about a famous scientist.</p><div class=\"fig\"><svg viewBox=\"0 0 540 268\" width=\"540\" role=\"img\" aria-label=\"Louis Pasteur biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"260\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Louis Pasteur (1822 – 1895)</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Louis Pasteur was born in a small town in eastern France in 1822. His father was a</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">tanner, a worker who made leather from animal skins. As a boy, Louis wasn’t one of</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">the top students in his class, but he was very good at drawing and painting.</text>\n<text x=\"22\" y=\"104\" font-size=\"11\" fill=\"#1e293b\">Later, he studied chemistry in Paris and became a professor. At that time, nobody</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">knew why milk and wine went bad so quickly. Pasteur showed that tiny living</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">things, germs, caused the problem. He also found that most of these germs are</text>\n<text x=\"22\" y=\"152\" font-size=\"11\" fill=\"#1e293b\">killed when milk is heated and then cooled quickly. Today this method is called</text>\n<text x=\"22\" y=\"168\" font-size=\"11\" fill=\"#1e293b\">“pasteurisation” after him, and most of the milk in supermarkets is treated in</text>\n<text x=\"22\" y=\"184\" font-size=\"11\" fill=\"#1e293b\">this way.</text>\n<text x=\"22\" y=\"206\" font-size=\"11\" fill=\"#1e293b\">In 1885, a nine-year-old boy was bitten by a dog with rabies, a deadly disease.</text>\n<text x=\"22\" y=\"222\" font-size=\"11\" fill=\"#1e293b\">Pasteur gave the boy his new vaccine, and the boy survived. Pasteur died in 1895,</text>\n<text x=\"22\" y=\"238\" font-size=\"11\" fill=\"#1e293b\">at the age of 72.</text>\n</svg></div><p>Which of the following questions <b>CANNOT</b> be answered according to the text?</p>",
+   "c": [
+    "Why did Pasteur decide to study chemistry?",
+    "What did Pasteur’s father do for a living?",
+    "How is milk made safer to drink?",
+    "How old was the boy who was saved by Pasteur’s vaccine?"
+   ],
+   "a": "A",
+   "s": "<p>Metinde cevabı <b>olmayan</b> soruyu arıyoruz.</p><p>B: “His father was a tanner, a worker who made leather” ✓. C: “germs are killed when milk is heated and then cooled quickly” ✓ (edilgen yapı: <i>is heated / are killed</i>). D: “a nine-year-old boy was bitten…” → 9 yaşında ✓ (tuzak: 72 yaşı Pasteur’ün ölüm yaşıdır, çocuğun değil; ama soru yine cevaplanabilir).</p><p>A: Paris’te kimya okuduğu söyleniyor ama bu bölümü <b>neden</b> seçtiği hiç yazmıyor. “Çizimde iyiydi” bilgisinden sebep çıkarmak yanılgıdır. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>A school magazine interviewed Dr. Selin Kaya, a volcanologist, in 2026.</p><div class=\"dialog\"><div><b>Reporter:</b> How long have you been a volcanologist?</div><div><b>Dr. Kaya:</b> For eighteen years. I started working right after I graduated from university.</div><div><b>Reporter:</b> Have you ever been in danger?</div><div><b>Dr. Kaya:</b> Yes, once. In 2014, we were collecting samples on Mount Etna in Italy when hot rocks suddenly began to fall near us. We ran down the mountain as fast as we could!</div><div><b>Reporter:</b> What do you do with the samples?</div><div><b>Dr. Kaya:</b> We bring gas and rock samples back to Türkiye. They are tested in our laboratory in Ankara, and the results are shared with other scientists.</div><div><b>Reporter:</b> Have you visited any volcanoes this year?</div><div><b>Dr. Kaya:</b> Not yet, but I’m going to Iceland next month.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>",
+   "c": [
+    "Where are the samples tested?",
+    "When did Dr. Kaya graduate from university?",
+    "Which volcano did Dr. Kaya visit first?",
+    "Has Dr. Kaya been to a volcano in 2026?"
+   ],
+   "a": "C",
+   "s": "<p>A: “They are tested in our laboratory in Ankara” ✓. B: Röportaj 2026’da yapıldı, 18 yıldır volkanolog ve mezun olur olmaz başladı → 2026 − 18 = <b>2008</b> ✓ (hesapla bulunur). D: “Not yet” → bu yıl henüz gitmedi ✓ (<i>yet</i> = henüz).</p><p>C: Etna yalnızca <b>tehlike anı</b> olarak anlatılıyor; ilk ziyaret ettiği volkan olduğu söylenmiyor. Tuzak: metinde geçen tek volkan adını “ilk” sanmak. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the timeline in a science museum.</p><div class=\"fig\"><svg viewBox=\"0 0 540 156\" width=\"540\" role=\"img\" aria-label=\"Zaman çizelgesi\">\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Inventions and Discoveries</text>\n<line x1=\"30\" y1=\"70\" x2=\"510\" y2=\"70\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"90.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"90.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1876</text>\n<text x=\"90.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the telephone</text>\n<text x=\"90.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">patented by Bell</text>\n<circle cx=\"210.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"210.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1879</text>\n<text x=\"210.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the light bulb</text>\n<text x=\"210.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">invented by Edison</text>\n<circle cx=\"330.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"330.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1903</text>\n<text x=\"330.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the first powered</text>\n<text x=\"330.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">flight by the</text>\n<text x=\"330.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Wright brothers</text>\n<circle cx=\"450.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"450.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1928</text>\n<text x=\"450.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">penicillin</text>\n<text x=\"450.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">discovered by</text>\n<text x=\"450.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Fleming</text>\n</svg></div><p>Which of the following sentences is correct both in <b>grammar</b> and in <b>information</b>?</p>",
+   "c": [
+    "The telephone was patented by Edison in 1876.",
+    "Penicillin was discovered by Fleming 25 years after the first powered flight.",
+    "The light bulb was invent by Edison three years after the telephone.",
+    "The first powered flight was made in 1903, before the light bulb was invented."
+   ],
+   "a": "B",
+   "s": "<p>İki şeyi birlikte denetliyoruz: edilgen yapı (was/were + V3) ve tarih bilgisi.</p><p>B: 1928 − 1903 = <b>25</b> ✓, “was discovered” ✓.</p><p>A: dil bilgisi doğru ama telefonun patenti <b>Bell</b>’e ait (isim karıştırma yanılgısı). C: bilgi doğru (1879 − 1876 = 3) ama “was <b>invent</b>” yanlış; V3 = invented. D: dil bilgisi doğru ama ampul 1879’da, uçuş 1903’te → uçuş ampulden <b>sonra</b>. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete Ece’s text for the school science blog.</p><div class=\"box\"><p>Our club has used this microscope (1) ---- 2019. I have (2) ---- looked at onion cells with it, but I haven’t seen any bacteria (3) ----. Today my friend Ali is very happy because he has (4) ---- finished his report about cells. He has been a member of the club (5) ---- three years.</p></div><p>Which of the following completes the text <b>correctly</b>?</p>",
+   "c": [
+    "since – yet – already – for – just",
+    "for – already – yet – just – since",
+    "since – already – ever – just – for",
+    "since – already – yet – just – for"
+   ],
+   "a": "D",
+   "s": "<p>(1) 2019 bir başlangıç noktası → <b>since</b>. (2) olumlu present perfect, “zaten” → <b>already</b>. (3) olumsuz cümle sonu → <b>yet</b>. (4) “Today … very happy” → az önce → <b>just</b>. (5) three years bir süre → <b>for</b>.</p><p>A: (2)’de “have yet looked” olumlu cümlede yanlış. B: “for 2019” / “since three years” yanlış (since–for karışıklığı). C: (3)’te “ever” olumsuz cümle sonunda kullanılmaz; “yet” gerekir. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Deniz made paper helicopters and dropped them from the same height. She measured how long each one took to reach the floor.</p><div class=\"fig\"><svg viewBox=\"0 0 510 199\" width=\"510\" role=\"img\" aria-label=\"Kağıt helikopter deney tablosu\">\n<text x=\"255.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Paper Helicopter Experiment</text>\n<rect x=\"10\" y=\"38\" width=\"490\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Trial</text>\n<text x=\"88\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Wing length</text>\n<text x=\"198\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Paper</text>\n<text x=\"288\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Paper clips</text>\n<text x=\"398\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Fall time</text>\n<rect x=\"10\" y=\"64\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n<text x=\"88\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">8 cm</text>\n<text x=\"198\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">thin</text>\n<text x=\"288\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1</text>\n<text x=\"398\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">2.4 s</text>\n<rect x=\"10\" y=\"89\" width=\"490\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n<text x=\"88\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">8 cm</text>\n<text x=\"198\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">thin</text>\n<text x=\"288\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">2</text>\n<text x=\"398\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1.8 s</text>\n<rect x=\"10\" y=\"114\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n<text x=\"88\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">10 cm</text>\n<text x=\"198\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">thin</text>\n<text x=\"288\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">1</text>\n<text x=\"398\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">2.9 s</text>\n<rect x=\"10\" y=\"139\" width=\"490\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">4</text>\n<text x=\"88\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">10 cm</text>\n<text x=\"198\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">thick</text>\n<text x=\"288\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">2</text>\n<text x=\"398\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">2.0 s</text>\n<rect x=\"10\" y=\"164\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">5</text>\n<text x=\"88\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">6 cm</text>\n<text x=\"198\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">thin</text>\n<text x=\"288\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">1</text>\n<text x=\"398\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">1.9 s</text>\n<line x1=\"80\" y1=\"38\" x2=\"80\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"190\" y1=\"38\" x2=\"190\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"280\" y1=\"38\" x2=\"280\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"390\" y1=\"38\" x2=\"390\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"490\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the following can be <b>concluded</b> from the results?</p>",
+   "c": [
+    "Helicopters made of thick paper fall more slowly than those made of thin paper.",
+    "When only the wing length is increased, the helicopter falls more slowly.",
+    "Adding one more paper clip always makes the fall time 0.6 seconds shorter.",
+    "Helicopter 4 fell more slowly than helicopter 3 because it was made of thick paper."
+   ],
+   "a": "B",
+   "s": "<p>Bir sonuç çıkarmak için yalnızca <b>tek değişkenin</b> farklı olduğu denemeler karşılaştırılır.</p><p>B: 5 – 1 – 3 denemelerinde kağıt (ince) ve ataş (1) aynı, yalnızca kanat 6 → 8 → 10 cm; süre 1,9 → 2,4 → 2,9 s artıyor → daha yavaş düşüyor ✓.</p><p>A: Kağıt türü dışında her şeyi aynı olan bir çift yok (4. denemede ataş da farklı) → çıkarılamaz. C: Ataş etkisini gösteren tek çift 1–2 (2,4 − 1,8 = 0,6); tek örnekten “always” genellemesi yapılamaz. D: 4’ün süresi 2,0 s &lt; 2,9 s → aslında daha <b>hızlı</b> düştü ve iki değişken birden farklı. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the rules of a science competition and the information about four teams.</p><div class=\"box\"><p><b>YOUNG SCIENTISTS 2027 – Who can join the final?</b></p><p>• All team members must be 12–14 years old.</p><p>• A team must have two or three members.</p><p>• The project must be about energy or the environment.</p><p>• Teams that won a prize in 2025 or 2026 can’t join.</p><p>• The project video must be sent before 15 May.</p></div><table><tr><th>Team</th><th>Members (ages)</th><th>Project</th><th>Last prize</th><th>Video sent</th></tr><tr><td>Team Ece</td><td>2 (13, 14)</td><td>a system that saves water in gardens</td><td>2024</td><td>10 May</td></tr><tr><td>Team Bora</td><td>3 (12, 13, 13)</td><td>a bike that charges phones</td><td>—</td><td>16 May</td></tr><tr><td>Team Can</td><td>4 (12, 12, 13, 14)</td><td>a robot that sorts rubbish for recycling</td><td>—</td><td>2 May</td></tr><tr><td>Team Duru</td><td>2 (13, 13)</td><td>a cheap solar oven</td><td>2026</td><td>12 May</td></tr></table><p>Which team can join the final?</p>",
+   "c": [
+    "Team Ece",
+    "Team Bora",
+    "Team Can",
+    "Team Duru"
+   ],
+   "a": "A",
+   "s": "<p>Her takımı beş koşulun hepsiyle denetleriz:</p><p>Team Ece: yaşlar 13–14 ✓, 2 kişi ✓, su tasarrufu = çevre ✓, ödül 2024 (2025/2026 değil) ✓, video 10 Mayıs ✓ → katılabilir.</p><p>Team Bora: video 16 Mayıs → 15 Mayıs’tan önce değil ✗ (enerji konusu uygun olduğu için seçilebilir). Team Can: 4 kişi ✗ (yaşlar ve konu uygun). Team Duru: 2026’da ödül almış ✗. Tuzak: Ece’nin de bir ödülü olduğu için elenmesi gerektiğini sanmak; kural yalnızca 2025 ve 2026’yı kapsıyor. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>The graph shows the number of visitors to a science centre in the first four months of 2025 and 2026.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Ziyaretçi sütun grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Visitors to the Science Centre</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"220.9\" x2=\"520\" y2=\"220.9\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"224.85714285714286\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">100</text>\n<line x1=\"60\" y1=\"191.7\" x2=\"520\" y2=\"191.7\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"195.71428571428572\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">200</text>\n<line x1=\"60\" y1=\"162.6\" x2=\"520\" y2=\"162.6\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"166.57142857142856\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">300</text>\n<line x1=\"60\" y1=\"133.4\" x2=\"520\" y2=\"133.4\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"137.42857142857144\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">400</text>\n<line x1=\"60\" y1=\"104.3\" x2=\"520\" y2=\"104.3\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"108.28571428571428\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">500</text>\n<line x1=\"60\" y1=\"75.1\" x2=\"520\" y2=\"75.1\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"79.14285714285714\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">600</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">700</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">number of visitors</text>\n<rect x=\"83.5\" y=\"133.4\" width=\"32.0\" height=\"116.6\" fill=\"#93c5fd\"/>\n<text x=\"99.5\" y=\"129.4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">400</text>\n<rect x=\"117.5\" y=\"118.9\" width=\"32.0\" height=\"131.1\" fill=\"#1d4ed8\"/>\n<text x=\"133.5\" y=\"114.9\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">450</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">January</text>\n<rect x=\"198.5\" y=\"104.3\" width=\"32.0\" height=\"145.7\" fill=\"#93c5fd\"/>\n<text x=\"214.5\" y=\"100.3\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">500</text>\n<rect x=\"232.5\" y=\"148.0\" width=\"32.0\" height=\"102.0\" fill=\"#1d4ed8\"/>\n<text x=\"248.5\" y=\"144.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">350</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">February</text>\n<rect x=\"313.5\" y=\"162.6\" width=\"32.0\" height=\"87.4\" fill=\"#93c5fd\"/>\n<text x=\"329.5\" y=\"158.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">300</text>\n<rect x=\"347.5\" y=\"75.1\" width=\"32.0\" height=\"174.9\" fill=\"#1d4ed8\"/>\n<text x=\"363.5\" y=\"71.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">600</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">March</text>\n<rect x=\"428.5\" y=\"118.9\" width=\"32.0\" height=\"131.1\" fill=\"#93c5fd\"/>\n<text x=\"444.5\" y=\"114.9\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">450</text>\n<rect x=\"462.5\" y=\"69.3\" width=\"32.0\" height=\"180.7\" fill=\"#1d4ed8\"/>\n<text x=\"478.5\" y=\"65.3\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">620</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">April</text>\n<rect x=\"70\" y=\"278\" width=\"12\" height=\"12\" fill=\"#93c5fd\"/>\n<text x=\"87\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">2025</text>\n<rect x=\"148\" y=\"278\" width=\"12\" height=\"12\" fill=\"#1d4ed8\"/>\n<text x=\"165\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">2026</text>\n</svg></div><div class=\"box\"><p><b>Manager’s note:</b> In one of these months in 2026, the observatory was closed for repairs, so <u>fewer</u> people visited the centre than in the same month of 2025. In another month, a robot exhibition was opened, and the number of visitors was <u>twice</u> the number in the same month of 2025.</p></div><p>According to the graph and the note, in which months was the observatory <b>closed</b> and the robot exhibition <b>opened</b>?</p>",
+   "c": [
+    "closed: February – opened: April",
+    "closed: March – opened: February",
+    "closed: January – opened: March",
+    "closed: February – opened: March"
+   ],
+   "a": "D",
+   "s": "<p>Her ayı 2025 ile karşılaştırırız: Ocak 400 → 450 (arttı), Şubat 500 → 350 (<b>azaldı</b>), Mart 300 → 600 (<b>2 katı</b>), Nisan 450 → 620 (arttı ama 2 katı 900 olurdu).</p><p>Gözlemevi kapalı: tek düşüş olan <b>Şubat</b>. Robot sergisi: tam 2 katına çıkan <b>Mart</b>.</p><p>A: Nisan 2026’nın en kalabalık ayı ama 2 katı değil (en yüksek değer tuzağı). B: Mart’ta ziyaretçi arttı, azalmadı. C: Ocak’ta ziyaretçi azalmadı. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read what an engineer says in 2026.</p><div class=\"box\"><p>“My name is Mert Er, and I’m a robotics engineer. I have worked at this company since 2019. Before that, I taught at a university for six years. I have designed three rescue robots so far. The first one was used after an earthquake in 2023, but the other two haven’t been tested in real life yet. I have never worked abroad, but next year I’m going to join a project in Japan.”</p></div><p>I. He started teaching at the university in 2013.</p><p>II. All of his robots have been tested in real situations.</p><p>III. He hasn’t worked in another country yet.</p><p>Which of the statements above is/are <b>TRUE</b>?</p>",
+   "c": [
+    "Only I",
+    "Only II",
+    "I and III",
+    "I, II and III"
+   ],
+   "a": "C",
+   "s": "<p>I: 2019’dan beri şirkette, öncesinde 6 yıl üniversitede → 2019 − 6 = <b>2013</b> ✓.</p><p>II: Yalnızca ilk robot kullanıldı; diğer ikisi “haven’t been tested … yet” ✗ (tuzak: “three robots” ve “was used” bilgisini hepsine genellemek).</p><p>III: “I have never worked abroad” → başka ülkede çalışmadı ✓; Japonya planı gelecek yıl. Doğrular I ve III. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the conversation.</p><div class=\"dialog\"><div><b>Ece:</b> My volcano model didn’t erupt at the science fair yesterday.</div><div><b>Tuna:</b> ----</div><div><b>Ece:</b> I think I didn’t use enough vinegar. I’ll try again with more.</div></div><p>Which of the following <b>CANNOT</b> fill in the blank?</p>",
+   "c": [
+    "How long did it take you to build it?",
+    "What do you think went wrong?",
+    "Why didn’t it work, do you think?",
+    "Have you found out what the problem was?"
+   ],
+   "a": "A",
+   "s": "<p>Ece’nin cevabı bir <b>sebep/tahmin</b> bildiriyor: “I think I didn’t use enough vinegar.” Boşluğa sebebi soran bir soru gelmeli.</p><p>B, C ve D sorunun nedenini soruyor; D present perfect ile “sorunun ne olduğunu buldun mu?” diye soruyor ve “I think …” cevabıyla uyumlu.</p><p>A: Yapımın <b>ne kadar sürdüğünü</b> soruyor; cevap bir süre olmalıydı (ör. “Two days.”). Bu yüzden boşluğa gelemez. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the steps showing how drinking water is cleaned.</p><div class=\"fig\"><svg viewBox=\"0 0 540 190\" width=\"540\" role=\"img\" aria-label=\"Su arıtma basamakları\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"182\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0369a1\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">How Is Our Drinking Water Cleaned?</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Step 1: Water is collected from a lake.</text>\n<text x=\"22\" y=\"72\" font-size=\"11\" fill=\"#1e293b\">Step 2: Large pieces such as leaves are removed.</text>\n<text x=\"22\" y=\"94\" font-size=\"11\" fill=\"#1e293b\">Step 3: Chemicals are added, so small dirt particles stick together.</text>\n<text x=\"22\" y=\"116\" font-size=\"11\" fill=\"#1e293b\">Step 4: The water is filtered through sand.</text>\n<text x=\"22\" y=\"138\" font-size=\"11\" fill=\"#1e293b\">Step 5: Chlorine is added to kill germs.</text>\n<text x=\"22\" y=\"160\" font-size=\"11\" fill=\"#1e293b\">Step 6: The clean water is stored and then sent to homes.</text>\n</svg></div><p>Which of the following sentences describes the process correctly in terms of both <b>order</b> and <b>grammar</b>?</p>",
+   "c": [
+    "First, the water is filtered through sand, and then large pieces are removed.",
+    "After chemicals are added, the water is filtered through sand.",
+    "Chlorine is added before the water is filtered through sand.",
+    "The clean water is store first and then it is sent to homes."
+   ],
+   "a": "B",
+   "s": "<p>B: Kimyasallar 3. adımda eklenir, kumdan süzme 4. adımdır → sıra doğru; “are added / is filtered” doğru edilgen ✓.</p><p>A: Dil bilgisi doğru ama sıra ters (büyük parçalar 2. adımda, süzme 4. adımda). C: Dil bilgisi doğru ama klor 5. adımda, süzmeden (4) <b>sonra</b> eklenir. D: Sıra doğru ama “is <b>store</b>” yanlış; doğrusu “is stored”. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the text about a famous mathematician.</p><div class=\"fig\"><svg viewBox=\"0 0 540 268\" width=\"540\" role=\"img\" aria-label=\"Ada Lovelace biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"260\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#7c3aed\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#7c3aed\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Ada Lovelace (1815 – 1852)</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Ada Lovelace was born in London in 1815. Her father was the famous poet Lord</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">Byron, but she never really knew him because he left England when she was a baby.</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">Her mother wanted her to study mathematics and science instead of poetry, so Ada</text>\n<text x=\"22\" y=\"98\" font-size=\"11\" fill=\"#1e293b\">had private teachers at home.</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">When she was seventeen, she met Charles Babbage, an inventor who was designing a</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">machine that could do calculations. Ada was very interested in his ideas, and they</text>\n<text x=\"22\" y=\"152\" font-size=\"11\" fill=\"#1e293b\">wrote letters to each other for many years.</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">In 1843, Ada wrote long notes about Babbage’s machine. In these notes, she</text>\n<text x=\"22\" y=\"190\" font-size=\"11\" fill=\"#1e293b\">explained how the machine could follow a set of instructions step by step. Today,</text>\n<text x=\"22\" y=\"206\" font-size=\"11\" fill=\"#1e293b\">many people think these instructions were the first computer program. Sadly, Ada</text>\n<text x=\"22\" y=\"222\" font-size=\"11\" fill=\"#1e293b\">died in 1852, when she was only 36. Years later, a programming language was named</text>\n<text x=\"22\" y=\"238\" font-size=\"11\" fill=\"#1e293b\">“Ada” after her.</text>\n</svg></div><p>Which of the following is <b>NOT</b> mentioned in the text?</p>",
+   "c": [
+    "the reason why Ada didn’t know her father",
+    "the way Ada was educated as a child",
+    "whether Babbage finished building his machine",
+    "Ada’s age when she first met Babbage"
+   ],
+   "a": "C",
+   "s": "<p>A: “he left England when she was a baby” ✓. B: “Ada had private teachers at home” ✓. D: “When she was seventeen, she met Charles Babbage” ✓.</p><p>C: Babbage’in makineyi <b>tasarladığı</b> (was designing) söyleniyor; makineyi bitirip bitirmediği hiç yazmıyor. Tuzak: “Ada wrote notes about Babbage’s machine” cümlesinden makinenin bitmiş olduğunu çıkarmak. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>A reporter is interviewing Zeynep Koç (15), a young inventor.</p><div class=\"dialog\"><div><b>Reporter:</b> When did you get the idea for your invention?</div><div><b>Zeynep:</b> Two years ago. My grandfather lost his sight, and he kept hitting things in the street.</div><div><b>Reporter:</b> So you made a smart walking stick. How does it work?</div><div><b>Zeynep:</b> It has a sensor. When there’s something in front of it, the stick vibrates.</div><div><b>Reporter:</b> Have you sold any sticks?</div><div><b>Zeynep:</b> Not yet. But a company has already contacted us, and we’re going to meet them in June.</div><div><b>Reporter:</b> What are you working on now?</div><div><b>Zeynep:</b> I’m adding GPS, so the stick can show the way home. I’ve been working on it since March.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>",
+   "c": [
+    "Why did Zeynep decide to make the walking stick?",
+    "Has the stick been sold to anyone yet?",
+    "What does the stick do when there is an object in front of it?",
+    "Which company has contacted Zeynep?"
+   ],
+   "a": "D",
+   "s": "<p>A: dedesi görme yetisini kaybetti ve sokakta bir şeylere çarpıyordu ✓. B: “Have you sold any sticks? – Not yet.” → henüz satılmadı ✓ (edilgen soru, etken cevapla karşılanmış). C: “the stick vibrates” ✓.</p><p>D: Bir şirketin iletişime geçtiği (“has already contacted us”) söyleniyor ama <b>şirketin adı</b> verilmiyor. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the timeline and read the riddle from a science quiz.</p><div class=\"fig\"><svg viewBox=\"0 0 540 156\" width=\"540\" role=\"img\" aria-label=\"Bilim zaman çizelgesi\">\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Great Moments in Science</text>\n<line x1=\"30\" y1=\"70\" x2=\"510\" y2=\"70\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"78.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"78.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1876</text>\n<text x=\"78.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the telephone</text>\n<text x=\"78.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">patented</text>\n<circle cx=\"174.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"174.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1895</text>\n<text x=\"174.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">X-rays</text>\n<text x=\"174.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">discovered</text>\n<circle cx=\"270.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"270.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1903</text>\n<text x=\"270.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">first powered</text>\n<text x=\"270.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">flight</text>\n<circle cx=\"366.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"366.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1928</text>\n<text x=\"366.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">penicillin</text>\n<text x=\"366.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">discovered</text>\n<circle cx=\"462.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"462.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1957</text>\n<text x=\"462.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">first satellite</text>\n<text x=\"462.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">sent into space</text>\n</svg></div><div class=\"box\"><p><b>Riddle:</b> “I was <u>discovered</u>, not invented. I was found more than 50 years after the telephone was patented, but more than 20 years before the first satellite was sent into space. What am I?”</p></div><p>What is the answer to the riddle?</p>",
+   "c": [
+    "penicillin",
+    "X-rays",
+    "the first satellite",
+    "the light bulb"
+   ],
+   "a": "A",
+   "s": "<p>Üç koşul: (1) keşif olmalı, (2) 1876 + 50 = 1926’dan sonra, (3) 1957 − 20 = 1937’den önce.</p><p>Penisilin: keşif ✓, 1928 &gt; 1926 ✓, 1957 − 1928 = 29 &gt; 20 ✓.</p><p>B: X ışınları da keşiftir ama 1895 − 1876 = 19 yıl → 50’den az (“discovered” kelimesine takılma tuzağı). C: Uydu bir keşif değil ve “uydudan 20 yıl önce” olamaz. D: Ampul bir icattır (1879) ve çizelgede yok. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Four students wrote sentences in their lab diary.</p><div class=\"box\"><p><b>Aslı:</b> Scientists have discovered a new planet last year.</p><p><b>Berk:</b> We haven’t finished the experiment yet, but we have already collected the data.</p><p><b>Cansu:</b> Our teacher has worked in this lab since five years.</p><p><b>Doruk:</b> Have you ever went to a science museum?</p></div><p>Whose sentence is grammatically <b>correct</b>?</p>",
+   "c": [
+    "Aslı’s",
+    "Berk’s",
+    "Cansu’s",
+    "Doruk’s"
+   ],
+   "a": "B",
+   "s": "<p>Berk: olumsuzda “yet” cümle sonunda, olumluda “already” have ile V3 arasında ✓.</p><p>Aslı: “last year” gibi belirli geçmiş zaman ifadesi present perfect ile kullanılmaz → “discovered … last year” olmalı. Cansu: “five years” bir süre → <b>for</b> five years. Doruk: present perfect’te V3 gerekir → “Have you ever <b>been</b> to…” (went = V2). Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Kerem wants to find out whether the <b>colour of a cup</b> affects how quickly the water in it warms up. He prepared the set-ups below with water at the same starting temperature.</p><div class=\"fig\"><svg viewBox=\"0 0 540 199\" width=\"540\" role=\"img\" aria-label=\"Deney düzenekleri tablosu\">\n<text x=\"270.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Kerem’s Set-ups</text>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Set-up</text>\n<text x=\"108\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Cup colour</text>\n<text x=\"238\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Amount of water</text>\n<text x=\"388\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Place</text>\n<rect x=\"10\" y=\"64\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n<text x=\"108\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">black</text>\n<text x=\"238\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">200 ml</text>\n<text x=\"388\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">in sunlight</text>\n<rect x=\"10\" y=\"89\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n<text x=\"108\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">white</text>\n<text x=\"238\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">200 ml</text>\n<text x=\"388\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">in the shade</text>\n<rect x=\"10\" y=\"114\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n<text x=\"108\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">white</text>\n<text x=\"238\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">100 ml</text>\n<text x=\"388\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">in sunlight</text>\n<rect x=\"10\" y=\"139\" width=\"520\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">4</text>\n<text x=\"108\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">white</text>\n<text x=\"238\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">200 ml</text>\n<text x=\"388\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">in sunlight</text>\n<rect x=\"10\" y=\"164\" width=\"520\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">5</text>\n<text x=\"108\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">black</text>\n<text x=\"238\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">100 ml</text>\n<text x=\"388\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">in the shade</text>\n<line x1=\"100\" y1=\"38\" x2=\"100\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"230\" y1=\"38\" x2=\"230\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"380\" y1=\"38\" x2=\"380\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"520\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which two set-ups should Kerem compare?</p>",
+   "c": [
+    "1 and 2",
+    "2 and 5",
+    "3 and 4",
+    "1 and 4"
+   ],
+   "a": "D",
+   "s": "<p>Değişken yalnızca <b>bardak rengi</b> olmalı; su miktarı ve yer aynı kalmalı.</p><p>1 ve 4: siyah – beyaz, ikisi de 200 ml, ikisi de güneşte ✓.</p><p>A (1–2): renk ve yer birlikte değişiyor. B (2–5): renk ve su miktarı birlikte değişiyor. C (3–4): renk aynı (beyaz), yalnızca su miktarı değişiyor → su miktarının etkisini test eder, rengin değil. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Kaan (13) wants to join one workshop at a science festival. Read his message and the programme.</p><div class=\"box\"><p><b>Kaan:</b> I’m only free at weekends after 12:00. I have already done a workshop on robots, so I want a different subject. The workshop shouldn’t be longer than two hours, and of course it must be suitable for my age.</p></div><table><tr><th>Workshop</th><th>Day</th><th>Time</th><th>Ages</th></tr><tr><td>Robot Coding</td><td>Saturday</td><td>13:00 – 14:30</td><td>12 – 15</td></tr><tr><td>Bridges and Forces</td><td>Sunday</td><td>10:00 – 11:30</td><td>11 – 14</td></tr><tr><td>Kitchen Chemistry</td><td>Saturday</td><td>14:00 – 15:30</td><td>10 – 14</td></tr><tr><td>Rocket Building</td><td>Sunday</td><td>13:00 – 15:30</td><td>12 – 16</td></tr><tr><td>Microscope World</td><td>Sunday</td><td>12:30 – 14:00</td><td>14 – 17</td></tr></table><p>Which workshop can Kaan join?</p>",
+   "c": [
+    "Bridges and Forces",
+    "Rocket Building",
+    "Kitchen Chemistry",
+    "Microscope World"
+   ],
+   "a": "C",
+   "s": "<p>Dört koşul: hafta sonu 12:00’den sonra, robot dışı konu, en çok 2 saat, 13 yaşa uygun.</p><p>Kitchen Chemistry: Cumartesi 14:00 ✓, kimya ✓, 1,5 saat ✓, 10–14 ✓.</p><p>A: 10:00’da başlıyor ✗. B: 13:00–15:30 = 2,5 saat ✗ (yalnız başlama saatine bakma tuzağı). D: 14–17 yaş ✗ (Kaan 13). Robot Coding de konu yüzünden elenir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>The graph shows the number of projects in each category at a school science fair.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Proje sayıları grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Science Fair Projects</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"209.2\" x2=\"520\" y2=\"209.2\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"213.2\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">5</text>\n<line x1=\"60\" y1=\"168.4\" x2=\"520\" y2=\"168.4\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"172.4\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"127.6\" x2=\"520\" y2=\"127.6\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"131.6\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">15</text>\n<line x1=\"60\" y1=\"86.8\" x2=\"520\" y2=\"86.8\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"90.80000000000001\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">25</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">number of projects</text>\n<rect x=\"83.5\" y=\"152.1\" width=\"32.0\" height=\"97.9\" fill=\"#fcd34d\"/>\n<text x=\"99.5\" y=\"148.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">12</text>\n<rect x=\"117.5\" y=\"103.1\" width=\"32.0\" height=\"146.9\" fill=\"#b45309\"/>\n<text x=\"133.5\" y=\"99.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">18</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Energy</text>\n<rect x=\"198.5\" y=\"184.7\" width=\"32.0\" height=\"65.3\" fill=\"#fcd34d\"/>\n<text x=\"214.5\" y=\"180.7\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">8</text>\n<rect x=\"232.5\" y=\"201.0\" width=\"32.0\" height=\"49.0\" fill=\"#b45309\"/>\n<text x=\"248.5\" y=\"197.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">6</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Health</text>\n<rect x=\"313.5\" y=\"168.4\" width=\"32.0\" height=\"81.6\" fill=\"#fcd34d\"/>\n<text x=\"329.5\" y=\"164.4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<rect x=\"347.5\" y=\"127.6\" width=\"32.0\" height=\"122.4\" fill=\"#b45309\"/>\n<text x=\"363.5\" y=\"123.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">15</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Space</text>\n<rect x=\"428.5\" y=\"135.8\" width=\"32.0\" height=\"114.2\" fill=\"#fcd34d\"/>\n<text x=\"444.5\" y=\"131.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">14</text>\n<rect x=\"462.5\" y=\"86.8\" width=\"32.0\" height=\"163.2\" fill=\"#b45309\"/>\n<text x=\"478.5\" y=\"82.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">20</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Robots</text>\n<rect x=\"70\" y=\"278\" width=\"12\" height=\"12\" fill=\"#fcd34d\"/>\n<text x=\"87\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">2025</text>\n<rect x=\"148\" y=\"278\" width=\"12\" height=\"12\" fill=\"#b45309\"/>\n<text x=\"165\" y=\"288\" font-size=\"11\" fill=\"#1e293b\">2026</text>\n</svg></div><div class=\"box\"><p><b>Rule:</b> In 2026, a category had a second judge if its number of projects <u>went up by at least five</u> compared with 2025.</p></div><p>Which categories had a second judge in 2026?</p>",
+   "c": [
+    "Energy and Robots only",
+    "Energy, Space and Robots",
+    "Space and Robots only",
+    "Health, Energy and Space"
+   ],
+   "a": "B",
+   "s": "<p>Artışlar: Energy 12 → 18 (+6) ✓, Health 8 → 6 (−2) ✗, Space 10 → 15 (+5) ✓, Robots 14 → 20 (+6) ✓.</p><p>“at least five” = <b>en az 5</b>, yani 5 de dahil → Energy, Space, Robots.</p><p>A: Space’in +5’ini “5’ten fazla” sanarak dışarıda bırakma yanılgısı. C: Energy’nin artışı atlanmış. D: Health azaldı; Robots dışarıda kalmış. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the conversation in the school laboratory.</p><div class=\"dialog\"><div><b>Ms. Arı:</b> Has anyone seen the thermometer?</div><div><b>Ali:</b> (1) ---- I put it back in the cupboard ten minutes ago.</div><div><b>Ms. Arı:</b> Thank you. And have you written your results in the table yet?</div><div><b>Ali:</b> (2) ---- We’ll finish it after the break.</div></div><p>Which of the following completes the conversation?</p>",
+   "c": [
+    "(1) Yes, I have. – (2) Not completely.",
+    "(1) No, I haven’t. – (2) Yes, we’ve already finished.",
+    "(1) Yes, I have. – (2) We’ve just finished them.",
+    "(1) No, never. – (2) Not completely."
+   ],
+   "a": "A",
+   "s": "<p>(1) Ali termometreyi dolaba kendisi koyduğuna göre onu <b>görmüş</b> → “Yes, I have.” (2) “We’ll finish it after the break” → henüz bitmemiş → “Not completely.”</p><p>B: (1) “No, I haven’t” Ali’nin cevabıyla çelişir; (2) “already finished” ile “after the break” çelişir. C: (1) doğru ama (2) “just finished” yine “bitireceğiz” ile çelişir. D: “No, never” hem soruya uymaz hem çelişkilidir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Pelin put different materials between a magnet and some paper clips. She counted how many paper clips the magnet could pick up through each material.</p><div class=\"fig\"><svg viewBox=\"0 0 500 199\" width=\"500\" role=\"img\" aria-label=\"Mıknatıs deney tablosu\">\n<text x=\"250.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Magnet Test</text>\n<rect x=\"10\" y=\"38\" width=\"480\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Material</text>\n<text x=\"158\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Thickness</text>\n<text x=\"298\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Paper clips picked up</text>\n<rect x=\"10\" y=\"64\" width=\"480\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">paper</text>\n<text x=\"158\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">1 mm</text>\n<text x=\"298\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">8</text>\n<rect x=\"10\" y=\"89\" width=\"480\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">cardboard</text>\n<text x=\"158\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">1 mm</text>\n<text x=\"298\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">8</text>\n<rect x=\"10\" y=\"114\" width=\"480\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">cardboard</text>\n<text x=\"158\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">5 mm</text>\n<text x=\"298\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">3</text>\n<rect x=\"10\" y=\"139\" width=\"480\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">wood</text>\n<text x=\"158\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">5 mm</text>\n<text x=\"298\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">3</text>\n<rect x=\"10\" y=\"164\" width=\"480\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">glass</text>\n<text x=\"158\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">5 mm</text>\n<text x=\"298\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">3</text>\n<line x1=\"150\" y1=\"38\" x2=\"150\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"290\" y1=\"38\" x2=\"290\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"480\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>I. When the thickness is the same, the type of material doesn’t change the result.</p><p>II. When the cardboard is thicker, the magnet picks up fewer paper clips.</p><p>III. The magnet can’t attract paper clips through glass.</p><p>Which of the statements above can be concluded from the results?</p>",
+   "c": [
+    "Only I",
+    "Only III",
+    "I and II",
+    "II and III"
+   ],
+   "a": "C",
+   "s": "<p>I: 1 mm’de kağıt = karton = 8; 5 mm’de karton = tahta = cam = 3 → aynı kalınlıkta malzeme türü sonucu değiştirmedi ✓.</p><p>II: Karton 1 mm → 5 mm: 8 → 3 ataş ✓ (tek değişken kalınlık).</p><p>III: Cam arkasından da <b>3</b> ataş çekildi ✗ (tuzak: “cam engeller” ön yargısı). Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the news report.</p><div class=\"box\"><p>“Last week, a group of students found a dinosaur footprint near Lake Tuz. Experts examined it in a laboratory. Now they believe the footprint is about 70 million years old.”</p></div><p>Which of the following gives the information in the first two sentences <b>correctly</b> in the passive form?</p>",
+   "c": [
+    "A dinosaur footprint is found by a group of students last week, and it is examined in a laboratory.",
+    "A dinosaur footprint was find near Lake Tuz last week, and experts examined it in a laboratory.",
+    "A dinosaur footprint was found near Lake Tuz last week, and it is examined by experts now.",
+    "A dinosaur footprint was found by a group of students last week, and it was examined in a laboratory."
+   ],
+   "a": "D",
+   "s": "<p>Etken cümleler <b>geçmiş zaman</b> (found, examined) → edilgen: <b>was + V3</b>.</p><p>D: was found / was examined ✓, bilgi ✓.</p><p>A: “last week” varken geniş zaman edilgen (is found) yanlış. B: “was <b>find</b>” → V3 found olmalı; ayrıca ikinci yarısı etken kalmış. C: inceleme geçmişte yapıldı, “is examined … now” zamanı ve bilgiyi değiştirir. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the interview with Dr. Lale Ören, a scientist who studies ice in Antarctica.</p><div class=\"dialog\"><div><b>Reporter:</b> When did you first go to Antarctica?</div><div><b>Dr. Ören:</b> In 2017. I’ve been there six times since then.</div><div><b>Reporter:</b> What exactly do you study?</div><div><b>Dr. Ören:</b> Ice! We drill deep into the ice and take out long pieces called ice cores. Tiny air bubbles in them show us what the air was like thousands of years ago.</div><div><b>Reporter:</b> What is the hardest part of your job?</div><div><b>Dr. Ören:</b> The cold isn’t really a problem because we have special clothes. The hardest part is being away from my family for months.</div><div><b>Reporter:</b> Have you seen any penguins?</div><div><b>Dr. Ören:</b> Of course! But we aren’t allowed to go closer than five metres to them.</div><div><b>Reporter:</b> Any advice for young scientists?</div><div><b>Dr. Ören:</b> Read a lot and never stop asking questions.</div></div><p>Which of the following questions <b>CANNOT</b> be answered according to the interview?</p>",
+   "c": [
+    "What do the air bubbles in ice cores tell scientists?",
+    "How cold does it get in Antarctica in winter?",
+    "What is the most difficult thing about Dr. Ören’s job?",
+    "Is there a rule about getting close to penguins?"
+   ],
+   "a": "B",
+   "s": "<p>A: hava kabarcıkları binlerce yıl önceki havanın nasıl olduğunu gösteriyor ✓. C: en zor kısmı ailesinden aylarca uzak kalmak ✓ (tuzak: “soğuk” kelimesi geçtiği için soğuğu en zor şey sanmak; metin tam tersini söylüyor). D: beş metreden fazla yaklaşmak yasak ✓.</p><p>B: Soğuktan söz ediliyor ama <b>kaç derece</b> olduğu hiç verilmiyor. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the text for a science poster.</p><div class=\"box\"><p>In 1876, the telephone (1) ---- by Alexander Graham Bell. Three years later, the light bulb (2) ---- by Thomas Edison. In 1903, the first powered plane (3) ---- by the Wright brothers. Penicillin (4) ---- by Alexander Fleming in 1928.</p></div><p>Which of the following completes the text <b>correctly</b>?</p>",
+   "c": [
+    "was patented – was invented – was flown – was discovered",
+    "was invented – was discovered – was flown – was invented",
+    "patented – invented – flew – discovered",
+    "was patented – was invented – was flown – is discovered"
+   ],
+   "a": "A",
+   "s": "<p>Özne nesnedir (telefon, ampul, uçak, penisilin) ve “by …” var → <b>edilgen</b>; tarihler geçmişte → <b>was + V3</b>. Ayrıca icat (invent) ile keşif (discover) ayrımı: ampul icat edilir, penisilin keşfedilir.</p><p>B: ampul “discovered”, penisilin “invented” → invent/discover karışıklığı. C: etken fiiller; “the telephone patented by Bell” özne-fiil olarak yanlış. D: 1928 geçmiş olduğu hâlde “is discovered” (geniş zaman). Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Arda wrote this text in 2027.</p><div class=\"box\"><p>“I have been a member of the astronomy club since 2023. I have taken photos of the Moon many times, but I have never seen a comet. My sister Ela has been in the club for one year. She has just bought her own telescope, but we haven’t used it yet because it has been cloudy since Monday.”</p></div><p>Which of the following is <b>TRUE</b> according to the text?</p>",
+   "c": [
+    "Arda joined the club for four years.",
+    "Ela has been a club member since 2023.",
+    "Arda and Ela haven’t looked through Ela’s new telescope.",
+    "Arda has already seen a comet."
+   ],
+   "a": "C",
+   "s": "<p>C: “we haven’t used it yet” → yeni teleskopla henüz bakmadılar ✓.</p><p>A: “join” anlık bir eylemdir, “for four years” ile kullanılmaz (doğrusu: has been a member for four years / joined in 2023) → dil bilgisi yanlış. B: Ela “for one year” → 2027’de yazıldığına göre <b>2026’dan beri</b>; 2023 Arda’nın yılı (kişi karıştırma tuzağı). D: “I have never seen a comet” ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Bora put four slices of the same bread in four dark boxes. He recorded the number of days until mould appeared on each slice.</p><div class=\"fig\"><svg viewBox=\"0 0 520 174\" width=\"520\" role=\"img\" aria-label=\"Ekmek küfü deney tablosu\">\n<text x=\"260.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Bread Mould Experiment</text>\n<rect x=\"10\" y=\"38\" width=\"500\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Slice</text>\n<text x=\"88\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Place</text>\n<text x=\"228\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Bread</text>\n<text x=\"318\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Days until mould</text>\n<rect x=\"10\" y=\"64\" width=\"500\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n<text x=\"88\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">room (22 °C)</text>\n<text x=\"228\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">dry</text>\n<text x=\"318\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">7</text>\n<rect x=\"10\" y=\"89\" width=\"500\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n<text x=\"88\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">room (22 °C)</text>\n<text x=\"228\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">wet</text>\n<text x=\"318\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">3</text>\n<rect x=\"10\" y=\"114\" width=\"500\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n<text x=\"88\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">fridge (5 °C)</text>\n<text x=\"228\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">wet</text>\n<text x=\"318\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">9</text>\n<rect x=\"10\" y=\"139\" width=\"500\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">4</text>\n<text x=\"88\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">fridge (5 °C)</text>\n<text x=\"228\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">dry</text>\n<text x=\"318\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">no mould after 14 days</text>\n<line x1=\"80\" y1=\"38\" x2=\"80\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"220\" y1=\"38\" x2=\"220\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"310\" y1=\"38\" x2=\"310\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"500\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Which of the following <b>CANNOT</b> be concluded from this experiment?</p>",
+   "c": [
+    "At the same temperature, mould grows faster on wet bread than on dry bread.",
+    "Mould grows more slowly in a cold place than in a warm place.",
+    "Among these slices, the dry bread in the fridge stayed fresh for the longest time.",
+    "Light makes mould grow faster on bread."
+   ],
+   "a": "D",
+   "s": "<p>A: 22 °C’de ıslak 3 gün &lt; kuru 7 gün; 5 °C’de ıslak 9 &lt; kuru 14+ ✓. B: ıslaklık aynıyken soğukta daha geç küflendi (3 → 9, 7 → 14+) ✓. C: 4. dilim 14 günde bile küflenmedi ✓.</p><p>D: Bütün dilimler <b>karanlık</b> kutularda; ışık hiç değiştirilmedi, yani ışığın etkisi test edilmedi → çıkarılamaz. Tuzak: buzdolabını “karanlık”, odayı “aydınlık” sanmak. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Three friends want to go to the <b>same</b> summer camp. Read their messages and the camp list.</p><div class=\"dialog\"><div><b>Ada (12):</b> I can’t go in July. We’re visiting my grandma for the whole month.</div><div><b>Bora (14):</b> I don’t want to pay more than 3,000 TL.</div><div><b>Cem (13):</b> I want to learn about space or the sea.</div></div><table><tr><th>Camp</th><th>Dates</th><th>Price</th><th>Ages</th><th>Topic</th></tr><tr><td>Ocean Explorers</td><td>10 – 16 August</td><td>2,800 TL</td><td>12 – 15</td><td>sea life</td></tr><tr><td>Star Camp</td><td>20 – 26 July</td><td>2,500 TL</td><td>11 – 14</td><td>space</td></tr><tr><td>Deep Blue</td><td>3 – 9 August</td><td>3,400 TL</td><td>12 – 16</td><td>sea life</td></tr><tr><td>Rocket Lab</td><td>17 – 23 August</td><td>2,900 TL</td><td>13 – 16</td><td>space</td></tr><tr><td>Green Lab</td><td>24 – 30 August</td><td>2,000 TL</td><td>10 – 15</td><td>plants</td></tr></table><p>Which camp can the three friends go to together?</p>",
+   "c": [
+    "Ocean Explorers",
+    "Star Camp",
+    "Deep Blue",
+    "Rocket Lab"
+   ],
+   "a": "A",
+   "s": "<p>Koşullar: Temmuz değil (Ada), en çok 3.000 TL (Bora), uzay ya da deniz (Cem) ve <b>üçünün yaşına</b> (12, 13, 14) uygun.</p><p>Ocean Explorers: Ağustos ✓, 2.800 ✓, 12–15 ✓, deniz ✓.</p><p>B: Temmuz ✗. C: 3.400 TL ✗. D: 13–16 yaş → Ada (12) katılamaz ✗ (yalnız konuşan kişinin koşuluna bakma tuzağı: yaş şartı mesajlarda açıkça yazmıyor, tablodan çıkarılmalı). Green Lab da konu yüzünden elenir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the experiment notes and look at the graph.</p><div class=\"box\"><p>Both cups were filled with 200 ml of water at 80 °C at the same time. <b>Cup A</b> was a metal cup without a lid. <b>Cup B</b> was a foam cup with a lid.</p></div><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Sıcaklık–zaman grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Temperature of the Water</text>\n<line x1=\"60\" y1=\"240.0\" x2=\"520\" y2=\"240.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"244.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"201.2\" x2=\"520\" y2=\"201.2\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"205.2\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"162.4\" x2=\"520\" y2=\"162.4\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"166.4\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">50</text>\n<line x1=\"60\" y1=\"123.6\" x2=\"520\" y2=\"123.6\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"127.6\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">60</text>\n<line x1=\"60\" y1=\"84.8\" x2=\"520\" y2=\"84.8\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"88.8\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">70</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">80</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"240\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"240\" x2=\"520\" y2=\"240\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"143.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 143.0)\">temperature (°C)</text>\n<text x=\"80.0\" y=\"256\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">0</text>\n<text x=\"185.0\" y=\"256\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">5</text>\n<text x=\"290.0\" y=\"256\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">10</text>\n<text x=\"395.0\" y=\"256\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">15</text>\n<text x=\"500.0\" y=\"256\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">20</text>\n<text x=\"290.0\" y=\"272\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">time (minutes)</text>\n<polyline points=\"80.0,46.0 185.0,108.1 290.0,154.6 395.0,189.6 500.0,216.7\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n<circle cx=\"80.0\" cy=\"46.0\" r=\"3.5\" fill=\"#dc2626\"/>\n<text x=\"80.0\" y=\"39.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">80</text>\n<circle cx=\"185.0\" cy=\"108.1\" r=\"3.5\" fill=\"#dc2626\"/>\n<text x=\"185.0\" y=\"101.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">64</text>\n<circle cx=\"290.0\" cy=\"154.6\" r=\"3.5\" fill=\"#dc2626\"/>\n<text x=\"290.0\" y=\"147.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">52</text>\n<circle cx=\"395.0\" cy=\"189.6\" r=\"3.5\" fill=\"#dc2626\"/>\n<text x=\"395.0\" y=\"182.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">43</text>\n<circle cx=\"500.0\" cy=\"216.7\" r=\"3.5\" fill=\"#dc2626\"/>\n<text x=\"500.0\" y=\"209.7\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">36</text>\n<polyline points=\"80.0,46.0 185.0,61.5 290.0,77.0 395.0,88.7 500.0,100.3\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n<circle cx=\"80.0\" cy=\"46.0\" r=\"3.5\" fill=\"#2563eb\"/>\n<text x=\"80.0\" y=\"39.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">80</text>\n<circle cx=\"185.0\" cy=\"61.5\" r=\"3.5\" fill=\"#2563eb\"/>\n<text x=\"185.0\" y=\"54.5\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">76</text>\n<circle cx=\"290.0\" cy=\"77.0\" r=\"3.5\" fill=\"#2563eb\"/>\n<text x=\"290.0\" y=\"70.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">72</text>\n<circle cx=\"395.0\" cy=\"88.7\" r=\"3.5\" fill=\"#2563eb\"/>\n<text x=\"395.0\" y=\"81.7\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">69</text>\n<circle cx=\"500.0\" cy=\"100.3\" r=\"3.5\" fill=\"#2563eb\"/>\n<text x=\"500.0\" y=\"93.3\" font-size=\"11\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">66</text>\n<rect x=\"70\" y=\"284\" width=\"12\" height=\"12\" fill=\"#dc2626\"/>\n<text x=\"87\" y=\"294\" font-size=\"11\" fill=\"#1e293b\">Cup A</text>\n<rect x=\"155\" y=\"284\" width=\"12\" height=\"12\" fill=\"#2563eb\"/>\n<text x=\"172\" y=\"294\" font-size=\"11\" fill=\"#1e293b\">Cup B</text>\n</svg></div><p>Which of the following can be said using <b>both</b> the notes and the graph?</p>",
+   "c": [
+    "After 10 minutes, the water in Cup A was 20 °C cooler than at the start.",
+    "The water in Cup A lost heat more slowly than the water in Cup B.",
+    "The experiment shows that a lid alone keeps water hot for a long time.",
+    "In the first five minutes, the temperature in Cup A fell four times as much as in Cup B."
+   ],
+   "a": "D",
+   "s": "<p>İlk 5 dakika: A 80 → 64 (<b>16 °C</b> düştü), B 80 → 76 (<b>4 °C</b> düştü) → 16 = 4 × 4 ✓.</p><p>A: 80 − 52 = <b>28</b> °C, 20 değil (52’yi 60 gibi okuma hatası). B: A’nın sıcaklığı daha hızlı düştü ✗. C: A ile B arasında hem malzeme (metal/köpük) hem kapak farklı; iki değişken birlikte değiştiği için yalnız kapağın etkisi söylenemez. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the conversation.</p><div class=\"dialog\"><div><b>Mum:</b> Deniz, have you packed your bag for the science trip?</div><div><b>Deniz:</b> ----</div><div><b>Mum:</b> Good. Don’t forget to put it in, then. The weather forecast says it’s going to rain.</div></div><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "No, I’ve never been on a science trip before.",
+    "Almost. I’ve packed everything except my raincoat.",
+    "Yes, I packed them all last week.",
+    "I haven’t decided yet where we’re going."
+   ],
+   "a": "B",
+   "s": "<p>Annenin cevabındaki “it” tekil bir eşyayı ve “it’s going to rain” ise yağmurluğu işaret ediyor → Deniz yağmurluk dışında her şeyi koymuş olmalı.</p><p>A: soruya cevap vermiyor. C: “them all” ile her şeyin bittiğini söylüyor; “put <b>it</b> in” ile uyuşmuyor. D: gezi yerini öğrencinin seçtiği anlamına geliyor ve çanta sorusuna cevap değil. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the text about Albert Einstein.</p><div class=\"fig\"><svg viewBox=\"0 0 540 204\" width=\"540\" role=\"img\" aria-label=\"Einstein biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"196\" rx=\"10\" fill=\"#fffbeb\" stroke=\"#b45309\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#b45309\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Albert Einstein (1879 – 1955)</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">Albert Einstein was born in Ulm, Germany, in 1879. As a young man, he worked in an</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">office in Switzerland, where he checked other people’s inventions. In his free</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">time, he studied physics.</text>\n<text x=\"22\" y=\"104\" font-size=\"11\" fill=\"#1e293b\">In 1905, he published four important papers. One of them explained his special</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">theory of relativity. Einstein was given the Nobel Prize in Physics for 1921, but</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">not for relativity. The prize was given for his work on light.</text>\n<text x=\"22\" y=\"158\" font-size=\"11\" fill=\"#1e293b\">In 1933, Einstein left Europe and moved to the USA. He lived and worked there</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">until his death in 1955.</text>\n</svg></div><p>I. Einstein won the Nobel Prize for his theory of relativity.</p><p>II. Einstein published his famous papers when he was in his twenties.</p><p>III. Einstein lived in the USA for more than twenty years.</p><p>Which of the statements above is/are <b>TRUE</b> according to the text?</p>",
+   "c": [
+    "Only I",
+    "Only II",
+    "II and III",
+    "I and III"
+   ],
+   "a": "C",
+   "s": "<p>I: “but not for relativity. The prize was given for his work on light.” ✗ (en bilinen çalışmasıyla ödül aldığını sanma yanılgısı).</p><p>II: 1905 − 1879 = 26 → yirmili yaşlarında ✓.</p><p>III: 1933’ten 1955’e kadar → 22 yıl ✓. Doğrular II ve III. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the results of a school’s recycling week and read the report.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Geri dönüşüm sütun grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Recycling Week – What We Collected</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"220.9\" x2=\"520\" y2=\"220.9\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"224.85714285714286\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"191.7\" x2=\"520\" y2=\"191.7\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"195.71428571428572\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"162.6\" x2=\"520\" y2=\"162.6\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"166.57142857142856\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">60</text>\n<line x1=\"60\" y1=\"133.4\" x2=\"520\" y2=\"133.4\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"137.42857142857144\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">80</text>\n<line x1=\"60\" y1=\"104.3\" x2=\"520\" y2=\"104.3\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"108.28571428571428\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">100</text>\n<line x1=\"60\" y1=\"75.1\" x2=\"520\" y2=\"75.1\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"79.14285714285714\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">120</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">140</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">kilograms</text>\n<rect x=\"100.5\" y=\"75.1\" width=\"32.0\" height=\"174.9\" fill=\"#16a34a\"/>\n<text x=\"116.5\" y=\"71.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">120</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Paper</text>\n<rect x=\"215.5\" y=\"133.4\" width=\"32.0\" height=\"116.6\" fill=\"#16a34a\"/>\n<text x=\"231.5\" y=\"129.4\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">80</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Plastic</text>\n<rect x=\"330.5\" y=\"177.1\" width=\"32.0\" height=\"72.9\" fill=\"#16a34a\"/>\n<text x=\"346.5\" y=\"173.1\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">50</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Glass</text>\n<rect x=\"445.5\" y=\"206.3\" width=\"32.0\" height=\"43.7\" fill=\"#16a34a\"/>\n<text x=\"461.5\" y=\"202.3\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">30</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Metal</text>\n</svg></div><div class=\"box\"><p>All the paper was sent to a paper factory. Half of the plastic was turned into new bottles, and the rest was used to make park benches. The glass was cleaned first and then melted. The metal was sold, and the money was given to the science club.</p></div><p>Which of the following is <b>TRUE</b> in terms of both <b>information</b> and <b>grammar</b>?</p>",
+   "c": [
+    "The paper is sent to a glass factory every week.",
+    "40 kg of plastic was turned into new bottles.",
+    "More metal than glass was collected.",
+    "The glass were melted before it was cleaned."
+   ],
+   "a": "B",
+   "s": "<p>B: Plastik 80 kg, yarısı şişe → <b>40 kg</b> ✓; “was turned” doğru edilgen ✓.</p><p>A: Kağıt <b>kağıt</b> fabrikasına gönderildi ve “every week” bilgisi yok. C: Metal 30 kg &lt; cam 50 kg ✗. D: Hem sıra yanlış (önce temizlendi) hem “The glass <b>were</b>” yanlış; sayılamayan isim → was. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the text about Charles Darwin.</p><div class=\"fig\"><svg viewBox=\"0 0 540 274\" width=\"540\" role=\"img\" aria-label=\"Darwin biyografisi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"266\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#15803d\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#15803d\"/>\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Charles Darwin (1809 – 1882)</text>\n<text x=\"22\" y=\"50\" font-size=\"11\" fill=\"#1e293b\">(1) Charles Darwin was born in England in 1809. His father was a doctor and wanted</text>\n<text x=\"22\" y=\"66\" font-size=\"11\" fill=\"#1e293b\">Charles to become a doctor, too. Charles started studying medicine, but he didn’t</text>\n<text x=\"22\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">like it at all and left. He was much more interested in collecting insects and</text>\n<text x=\"22\" y=\"98\" font-size=\"11\" fill=\"#1e293b\">studying plants.</text>\n<text x=\"22\" y=\"120\" font-size=\"11\" fill=\"#1e293b\">(2) In 1831, a teacher suggested him for a journey around the world on a ship</text>\n<text x=\"22\" y=\"136\" font-size=\"11\" fill=\"#1e293b\">called the Beagle. Darwin didn’t join the ship as a doctor; he joined it as a</text>\n<text x=\"22\" y=\"152\" font-size=\"11\" fill=\"#1e293b\">naturalist, a person who studies nature. The journey lasted five years.</text>\n<text x=\"22\" y=\"174\" font-size=\"11\" fill=\"#1e293b\">(3) On the Galápagos Islands, Darwin noticed that the birds called finches had</text>\n<text x=\"22\" y=\"190\" font-size=\"11\" fill=\"#1e293b\">different beaks on different islands. He thought their beaks had changed to suit</text>\n<text x=\"22\" y=\"206\" font-size=\"11\" fill=\"#1e293b\">the food on each island.</text>\n<text x=\"22\" y=\"228\" font-size=\"11\" fill=\"#1e293b\">(4) In 1859, his book On the Origin of Species was published. Many people were</text>\n<text x=\"22\" y=\"244\" font-size=\"11\" fill=\"#1e293b\">shocked by his ideas, but today his work is studied all over the world.</text>\n</svg></div><p>Which of the following headings is <b>NOT</b> suitable for any of the paragraphs?</p>",
+   "c": [
+    "Working as the Ship’s Doctor",
+    "A Medical Student Who Gave Up",
+    "Birds With Different Beaks",
+    "A Book That Surprised Many People"
+   ],
+   "a": "A",
+   "s": "<p>B → (1): tıp okumaya başladı ama sevmedi ve bıraktı ✓. C → (3): Galápagos’taki ispinozların farklı gagaları ✓. D → (4): kitabı yayımlandı ve birçok insan şaşırdı/şok oldu ✓.</p><p>A: (2)’de açıkça “Darwin didn’t join the ship as a doctor; he joined it as a <b>naturalist</b>” deniyor. Tuzak: babasının doktor olması ve tıp okumaya başlaması. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Ece is at a science camp. Read her email to her cousin.</p><div class=\"box\"><p>Hi Selin,</p><p>I’ve been at the science camp since Sunday, and I’m having a great time! On the first day, we made water rockets. Then my team built a small solar car. We haven’t tested it yet because it has rained for two days. Tomorrow we’re visiting the observatory, and if the sky is clear, we’ll watch Saturn through the big telescope. The camp ends on Saturday, so I’ll see you next week.</p><p>Love, Ece</p></div><p>Which of the following questions <b>CANNOT</b> be answered according to the email?</p>",
+   "c": [
+    "How long has it been raining at the camp?",
+    "Has the solar car been tested?",
+    "What did they make before the solar car?",
+    "How many people are there in Ece’s team?"
+   ],
+   "a": "D",
+   "s": "<p>A: “it has rained for two days” ✓. B: “We haven’t tested it yet” → hayır, henüz test edilmedi ✓. C: ilk gün su roketi yaptılar, sonra güneş arabası ✓ (sıra “Then” ile veriliyor).</p><p>D: “my team” ifadesi geçiyor ama takımın <b>kaç kişi</b> olduğu yazmıyor. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the timeline.</p><div class=\"fig\"><svg viewBox=\"0 0 540 156\" width=\"540\" role=\"img\" aria-label=\"Zaman çizelgesi\">\n<text x=\"270.0\" y=\"24\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">From the Telephone to the Moon</text>\n<line x1=\"30\" y1=\"70\" x2=\"510\" y2=\"70\" stroke=\"#334155\" stroke-width=\"3\"/>\n<circle cx=\"78.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"78.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1876</text>\n<text x=\"78.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the telephone</text>\n<text x=\"78.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">patented by</text>\n<text x=\"78.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Bell</text>\n<circle cx=\"174.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"174.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1879</text>\n<text x=\"174.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">the light bulb</text>\n<text x=\"174.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">invented by</text>\n<text x=\"174.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Edison</text>\n<circle cx=\"270.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"270.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1903</text>\n<text x=\"270.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">first powered</text>\n<text x=\"270.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">flight by the</text>\n<text x=\"270.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Wright brothers</text>\n<circle cx=\"366.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"366.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1928</text>\n<text x=\"366.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">penicillin</text>\n<text x=\"366.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">discovered by</text>\n<text x=\"366.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Fleming</text>\n<circle cx=\"462.0\" cy=\"70\" r=\"7\" fill=\"#1d4ed8\"/>\n<text x=\"462.0\" y=\"56\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">1969</text>\n<text x=\"462.0\" y=\"96\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">first people</text>\n<text x=\"462.0\" y=\"111\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">walked on the</text>\n<text x=\"462.0\" y=\"126\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">Moon</text>\n</svg></div><p>Which of the following sentences is <b>WRONG</b> according to the timeline?</p>",
+   "c": [
+    "The light bulb was invented three years after the telephone was patented.",
+    "The first people walked on the Moon 66 years after the first powered flight.",
+    "Penicillin was discovered more than 50 years after the light bulb was invented.",
+    "Penicillin was discovered after the first powered flight was made."
+   ],
+   "a": "C",
+   "s": "<p>Farkları hesaplarız: 1879 − 1876 = 3 (A ✓); 1969 − 1903 = 66 (B ✓); 1928 − 1879 = <b>49</b> → 50’den fazla değil, C yanlış; uçuş 1903 &lt; 1928 → penisilin uçuştan sonra keşfedildi (D ✓).</p><p>C’deki tuzak: 1928’i 1876 (telefon) ile karşılaştırmak (52 yıl). Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read Mert’s diary. One of the numbered parts has a grammar mistake.</p><div class=\"box\"><p>(I) I have joined the robotics club two years ago. (II) Since then, I have met many people who love science. (III) Our team has already built two robots, but we haven’t finished the third one yet. (IV) Our teacher has helped us a lot since the first day.</p></div><p>Which part is grammatically <b>WRONG</b>?</p>",
+   "c": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "a": "A",
+   "s": "<p>(I): “two years <b>ago</b>” belirli geçmiş zamanı gösterir; present perfect ile kullanılmaz → “I <b>joined</b> the robotics club two years ago.” ✗</p><p>(II): “Since then” + present perfect ✓. (III): olumluda already, olumsuzda yet ✓. (IV): “since the first day” + has helped ✓. Tuzak: “since/for” görünce hata aramak; asıl hata ago ile present perfect. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Nehir planted the same kind of seeds in four pots and kept them in different conditions for ten days.</p><div class=\"fig\"><svg viewBox=\"0 0 530 174\" width=\"530\" role=\"img\" aria-label=\"Tohum çimlenme tablosu\">\n<text x=\"265.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Do the Seeds Germinate?</text>\n<rect x=\"10\" y=\"38\" width=\"510\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Pot</text>\n<text x=\"78\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Water</text>\n<text x=\"158\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Temperature</text>\n<text x=\"278\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Light</text>\n<text x=\"358\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Result</text>\n<rect x=\"10\" y=\"64\" width=\"510\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n<text x=\"78\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"158\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">25 °C</text>\n<text x=\"278\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"358\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">germinated</text>\n<rect x=\"10\" y=\"89\" width=\"510\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n<text x=\"78\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">no</text>\n<text x=\"158\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">25 °C</text>\n<text x=\"278\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"358\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">didn’t germinate</text>\n<rect x=\"10\" y=\"114\" width=\"510\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n<text x=\"78\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"158\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">5 °C</text>\n<text x=\"278\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"358\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">didn’t germinate</text>\n<rect x=\"10\" y=\"139\" width=\"510\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">4</text>\n<text x=\"78\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">yes</text>\n<text x=\"158\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">25 °C</text>\n<text x=\"278\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">no</text>\n<text x=\"358\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">germinated</text>\n<line x1=\"70\" y1=\"38\" x2=\"70\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"150\" y1=\"38\" x2=\"150\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"270\" y1=\"38\" x2=\"270\" y2=\"164\" stroke=\"#94a3b8\"/>\n<line x1=\"350\" y1=\"38\" x2=\"350\" y2=\"164\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"510\" height=\"126\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>According to the results, which of the following is <b>NOT</b> needed for these seeds to germinate?</p>",
+   "c": [
+    "water",
+    "light",
+    "a warm temperature",
+    "water and a warm temperature"
+   ],
+   "a": "B",
+   "s": "<p>1 ile 4 yalnızca ışıkta farklı; ikisi de çimlendi → ışık <b>gerekli değil</b>.</p><p>1–2 karşılaştırması: su yokken çimlenmedi → su gerekli (A ✗). 1–3: 5 °C’de çimlenmedi → sıcaklık gerekli (C ✗). D bu ikisinin birleşimi, ikisi de gerekli ✗. Tuzak: “bitkiler ışık ister” bilgisini çimlenmeye uygulamak. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the judging rules of a science fair and the judges’ scores.</p><div class=\"box\"><p><b>Total score</b> = (originality × 2) + presentation + usefulness</p><p>• A project with a score <u>lower than 5</u> in any area can’t win.</p><p>• If two or more projects have the same total, the one with the <u>higher usefulness</u> score wins.</p></div><table><tr><th>Project</th><th>Originality</th><th>Presentation</th><th>Usefulness</th></tr><tr><td>Rain Saver</td><td>10</td><td>4</td><td>9</td></tr><tr><td>Solar Bag</td><td>9</td><td>6</td><td>8</td></tr><tr><td>Plant Doctor</td><td>7</td><td>9</td><td>9</td></tr><tr><td>Smart Bin</td><td>8</td><td>9</td><td>7</td></tr></table><p>Which project wins the science fair?</p>",
+   "c": [
+    "Rain Saver",
+    "Solar Bag",
+    "Plant Doctor",
+    "Smart Bin"
+   ],
+   "a": "C",
+   "s": "<p>Toplamlar: Rain Saver 20 + 4 + 9 = 33; Solar Bag 18 + 6 + 8 = 32; Plant Doctor 14 + 9 + 9 = 32; Smart Bin 16 + 9 + 7 = 32.</p><p>Rain Saver en yüksek toplama sahip ama sunum puanı <b>4 &lt; 5</b> → kazanamaz (A tuzağı). Kalan üçü 32’de eşit → kullanışlılık: Plant Doctor 9, Solar Bag 8, Smart Bin 7 → <b>Plant Doctor</b>.</p><p>B: eşitlikte özgünlüğe bakma yanılgısı. D: eşitlikte sunuma bakma yanılgısı. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Look at the graph and read what the headteacher says.</p><div class=\"fig\"><svg viewBox=\"0 0 540 300\" width=\"540\" role=\"img\" aria-label=\"Elektrik kullanımı grafiği\">\n<text x=\"270.0\" y=\"22\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Our School’s Electricity Use</text>\n<line x1=\"60\" y1=\"250.0\" x2=\"520\" y2=\"250.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"254.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"216.0\" x2=\"520\" y2=\"216.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"220.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">1000</text>\n<line x1=\"60\" y1=\"182.0\" x2=\"520\" y2=\"182.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"186.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">2000</text>\n<line x1=\"60\" y1=\"148.0\" x2=\"520\" y2=\"148.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"152.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">3000</text>\n<line x1=\"60\" y1=\"114.0\" x2=\"520\" y2=\"114.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"118.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">4000</text>\n<line x1=\"60\" y1=\"80.0\" x2=\"520\" y2=\"80.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"84.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">5000</text>\n<line x1=\"60\" y1=\"46.0\" x2=\"520\" y2=\"46.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"50.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"end\">6000</text>\n<line x1=\"60\" y1=\"40\" x2=\"60\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<line x1=\"60\" y1=\"250\" x2=\"520\" y2=\"250\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n<text x=\"16\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\" transform=\"rotate(-90 16 148.0)\">electricity (kWh)</text>\n<rect x=\"100.5\" y=\"80.0\" width=\"32.0\" height=\"170.0\" fill=\"#7c3aed\"/>\n<text x=\"116.5\" y=\"76.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">5000</text>\n<text x=\"117.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">January</text>\n<rect x=\"215.5\" y=\"86.8\" width=\"32.0\" height=\"163.2\" fill=\"#7c3aed\"/>\n<text x=\"231.5\" y=\"82.8\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">4800</text>\n<text x=\"232.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">February</text>\n<rect x=\"330.5\" y=\"127.6\" width=\"32.0\" height=\"122.4\" fill=\"#7c3aed\"/>\n<text x=\"346.5\" y=\"123.6\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">3600</text>\n<text x=\"347.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">March</text>\n<rect x=\"445.5\" y=\"148.0\" width=\"32.0\" height=\"102.0\" fill=\"#7c3aed\"/>\n<text x=\"461.5\" y=\"144.0\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">3000</text>\n<text x=\"462.5\" y=\"267\" font-size=\"11\" fill=\"#1e293b\" text-anchor=\"middle\">April</text>\n</svg></div><div class=\"box\"><p><b>Headteacher:</b> “Solar panels were put on our roof at the beginning of March. Since then, our electricity use has been more than 30% lower than in February every month.”</p></div><p>Which of the following is <b>supported</b> by the graph?</p>",
+   "c": [
+    "The headteacher’s claim is true for both March and April.",
+    "The school used more electricity in April than in January.",
+    "The solar panels were put on the roof in April.",
+    "In April, the school used 1,800 kWh less electricity than in February."
+   ],
+   "a": "D",
+   "s": "<p>Şubat 4.800 kWh. Mart: 4.800 − 3.600 = 1.200 → %25 azalma. Nisan: 4.800 − 3.000 = <b>1.800</b> → %37,5 azalma.</p><p>D ✓.</p><p>A: Mart’taki azalma %25 → “%30’dan fazla” iddiası Mart için doğru değil (yalnız son aya bakma tuzağı). B: Nisan 3.000 &lt; Ocak 5.000 ✗. C: Metne göre paneller Mart başında takıldı ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the interview.</p><div class=\"dialog\"><div><b>Reporter:</b> ----</div><div><b>Dr. Aydın:</b> Since 2015. Before that, I worked in a hospital for ten years.</div><div><b>Reporter:</b> And what do you study here?</div><div><b>Dr. Aydın:</b> We study how new medicines affect the brain.</div></div><p>Which of the following best fills in the blank?</p>",
+   "c": [
+    "How long have you worked at this research centre?",
+    "When did you start working at the hospital?",
+    "Have you ever worked in a hospital?",
+    "How long did you work in the hospital?"
+   ],
+   "a": "A",
+   "s": "<p>“Since 2015” → süre soran present perfect sorusunun cevabı: <b>How long have you worked …?</b> ✓. “here” da şu anki iş yeri olan araştırma merkezini gösteriyor.</p><p>B: hastaneye başlama yılı 2015 değil (2015’ten önce 10 yıl hastanede çalıştı). C: Evet/Hayır sorusu; “Since 2015” cevap olmaz. D: Hastanedeki süre “ten years” olarak sonradan veriliyor; “Since 2015” bunun cevabı değil. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Read the text from a science magazine published in 2026.</p><div class=\"box\"><p>The Hubble Space Telescope was sent into space in 1990. It travels around the Earth and takes very clear pictures of space because the air around the Earth doesn’t blur its view. Astronauts have visited it five times to repair and improve it. In 2021, a newer and bigger telescope, the James Webb Space Telescope, was launched. However, Hubble is still used by scientists today.</p></div><p>I. Hubble has been in space for more than thirty years.</p><p>II. The James Webb Space Telescope was sent into space before Hubble.</p><p>III. Hubble was repaired by astronauts only once.</p><p>Which of the statements above is/are <b>TRUE</b> according to the text?</p>",
+   "c": [
+    "Only II",
+    "Only I",
+    "I and III",
+    "II and III"
+   ],
+   "a": "B",
+   "s": "<p>I: 2026 − 1990 = 36 yıl &gt; 30 ✓ ve “is still used today” ✓.</p><p>II: James Webb 2021’de, Hubble 1990’da → Webb <b>sonra</b> ✗ (“newer” kelimesi zaten sonra olduğunu gösteriyor).</p><p>III: “Astronauts have visited it <b>five times</b>” ✗. Yalnız I doğru. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Ela let a toy car roll down a ramp and measured how far it travelled on different surfaces.</p><div class=\"fig\"><svg viewBox=\"0 0 510 199\" width=\"510\" role=\"img\" aria-label=\"Oyuncak araba deney tablosu\">\n<text x=\"255.0\" y=\"26\" font-size=\"13\" font-weight=\"bold\" fill=\"#1e293b\" text-anchor=\"middle\">Toy Car Experiment</text>\n<rect x=\"10\" y=\"38\" width=\"490\" height=\"26\" fill=\"#1d4ed8\"/>\n<text x=\"18\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Trial</text>\n<text x=\"78\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Ramp height</text>\n<text x=\"188\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Surface</text>\n<text x=\"298\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Car mass</text>\n<text x=\"398\" y=\"55\" font-size=\"11\" font-weight=\"bold\" fill=\"#ffffff\">Distance</text>\n<rect x=\"10\" y=\"64\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"82\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">1</text>\n<text x=\"78\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">20 cm</text>\n<text x=\"188\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">carpet</text>\n<text x=\"298\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">100 g</text>\n<text x=\"398\" y=\"82\" font-size=\"11\" fill=\"#1e293b\">60 cm</text>\n<rect x=\"10\" y=\"89\" width=\"490\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"107\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">2</text>\n<text x=\"78\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">20 cm</text>\n<text x=\"188\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">wood</text>\n<text x=\"298\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">100 g</text>\n<text x=\"398\" y=\"107\" font-size=\"11\" fill=\"#1e293b\">140 cm</text>\n<rect x=\"10\" y=\"114\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"132\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">3</text>\n<text x=\"78\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">30 cm</text>\n<text x=\"188\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">wood</text>\n<text x=\"298\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">200 g</text>\n<text x=\"398\" y=\"132\" font-size=\"11\" fill=\"#1e293b\">190 cm</text>\n<rect x=\"10\" y=\"139\" width=\"490\" height=\"25\" fill=\"#eff6ff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"157\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">4</text>\n<text x=\"78\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">20 cm</text>\n<text x=\"188\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">sandpaper</text>\n<text x=\"298\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">100 g</text>\n<text x=\"398\" y=\"157\" font-size=\"11\" fill=\"#1e293b\">40 cm</text>\n<rect x=\"10\" y=\"164\" width=\"490\" height=\"25\" fill=\"#ffffff\" stroke=\"#94a3b8\"/>\n<text x=\"18\" y=\"182\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">5</text>\n<text x=\"78\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">20 cm</text>\n<text x=\"188\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">glass</text>\n<text x=\"298\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">100 g</text>\n<text x=\"398\" y=\"182\" font-size=\"11\" fill=\"#1e293b\">210 cm</text>\n<line x1=\"70\" y1=\"38\" x2=\"70\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"180\" y1=\"38\" x2=\"180\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"290\" y1=\"38\" x2=\"290\" y2=\"189\" stroke=\"#94a3b8\"/>\n<line x1=\"390\" y1=\"38\" x2=\"390\" y2=\"189\" stroke=\"#94a3b8\"/>\n<rect x=\"10\" y=\"38\" width=\"490\" height=\"151\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"1.5\"/>\n</svg></div><p>Ela compared only trials 1, 2, 4 and 5. Which question was she trying to answer?</p>",
+   "c": [
+    "Does a heavier car travel further?",
+    "Does the height of the ramp affect the distance?",
+    "Does a car go further when both the ramp height and its mass are increased?",
+    "Does the type of surface affect how far the car travels?"
+   ],
+   "a": "D",
+   "s": "<p>1, 2, 4 ve 5’te rampa yüksekliği (20 cm) ve araba kütlesi (100 g) aynı; yalnızca <b>yüzey</b> (halı, tahta, zımpara, cam) değişiyor → yüzeyin etkisi araştırılıyor ✓.</p><p>A, B ve C: kütle ya da yükseklik yalnızca 3. denemede farklı; Ela 3’ü karşılaştırmaya almadı. Ayrıca 3. denemede iki değişken birlikte değiştiği için tek başına bir sonuç vermez (C tuzağı). Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Complete the conversation.</p><div class=\"dialog\"><div><b>Can:</b> (I) ----</div><div><b>Eda:</b> Yes, I have. I watched the Perseids last August.</div><div><b>Can:</b> (II) ----</div><div><b>Eda:</b> For about two hours! We counted forty shooting stars.</div><div><b>Can:</b> Wow! (III) ----</div><div><b>Eda:</b> Not yet. But I’m going to send my photos to the school magazine.</div></div><p>Which of the following completes the conversation?</p>",
+   "c": [
+    "(I) Did you watch a meteor shower last night? (II) How long have you watched it? (III) Have you shared your photos yet?",
+    "(I) Have you ever watched a meteor shower? (II) How long have you been there? (III) Did you take any photos?",
+    "(I) Have you ever watched a meteor shower? (II) How long did you watch it? (III) Have you shared your photos with anyone yet?",
+    "(I) Have you ever watched a meteor shower? (II) How long did you watch it? (III) Have you already taken any photos?"
+   ],
+   "a": "C",
+   "s": "<p>(I) “Yes, I have.” → present perfect soru: Have you ever …? (II) Olay geçen ağustosta bitti → geçmiş zaman: How long <b>did</b> you watch it? (III) “Not yet … going to send my photos” → fotoğraflar var ama henüz paylaşılmadı → Have you shared … yet?</p><p>A: “Did you … last night?” sorusuna “Yes, I have” denmez ve gözlem geçen ağustostaydı. B: “Did you take any photos?” sorusuna “Not yet” denmez; ayrıca fotoğrafları olduğu belli. D: “Not yet” → fotoğraf çekmemiş olur; ama “send my photos” fotoğrafların zaten çekildiğini gösteriyor. Cevap <b>C</b>.</p>"
+  }
+ ]
 });

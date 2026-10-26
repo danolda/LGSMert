@@ -1,1735 +1,1266 @@
 LGS.add({
-id: "ing-internet",
-summary: `<h3>1. Internet Words (İnternet Sözcükleri)</h3>
-<p>5. ünitenin (The Internet) LGS sorularının çoğu bu kelimelerin <b>tanımları</b> ya da bir <b>grafik/kart</b> üzerinden sorulur. Kelimeleri gruplar hâlinde öğren:</p>
-<table>
-<tr><th colspan="2">A) Hareketler (Actions)</th><th colspan="2">B) Parçalar ve Araçlar</th></tr>
-<tr><td><b>download</b></td><td>(internetten) indirmek</td><td><b>browser</b></td><td>internet tarayıcısı</td></tr>
-<tr><td><b>upload</b></td><td>(internete) yüklemek</td><td><b>search engine</b></td><td>arama motoru</td></tr>
-<tr><td><b>log in / sign in</b></td><td>giriş yapmak</td><td><b>website / web page</b></td><td>web sitesi / sayfası</td></tr>
-<tr><td><b>log out / sign out</b></td><td>çıkış yapmak</td><td><b>account / profile</b></td><td>hesap / profil</td></tr>
-<tr><td><b>sign up / create an account</b></td><td>kaydolmak, hesap açmak</td><td><b>username / password</b></td><td>kullanıcı adı / şifre</td></tr>
-<tr><td><b>search / look up</b></td><td>aramak, bakmak</td><td><b>attachment</b></td><td>e-posta eki (dosya)</td></tr>
-<tr><td><b>click / type / scroll down</b></td><td>tıklamak / yazmak / aşağı kaydırmak</td><td><b>link</b></td><td>bağlantı</td></tr>
-<tr><td><b>post / share / upload a photo</b></td><td>paylaşmak</td><td><b>Wi-Fi / connection</b></td><td>kablosuz ağ / bağlantı</td></tr>
-<tr><td><b>chat / video chat</b></td><td>sohbet / görüntülü konuşma</td><td><b>device / laptop / tablet</b></td><td>cihaz / dizüstü / tablet</td></tr>
-<tr><td><b>block / report / delete</b></td><td>engellemek / şikâyet etmek / silmek</td><td><b>notification</b></td><td>bildirim</td></tr>
-</table>
-<table>
-<tr><th colspan="2">C) Sosyal Medya</th><th colspan="2">D) Tehlikeler ve Etkiler</th></tr>
-<tr><td><b>follower / follow</b></td><td>takipçi / takip etmek</td><td><b>hacker / virus</b></td><td>bilgisayar korsanı / virüs</td></tr>
-<tr><td><b>like / comment</b></td><td>beğeni / yorum</td><td><b>cyberbullying</b></td><td>siber zorbalık</td></tr>
-<tr><td><b>blog / blogger / vlogger</b></td><td>blog / blog yazarı / video blog yapan</td><td><b>fake news / fake account</b></td><td>sahte haber / sahte hesap</td></tr>
-<tr><td><b>subscriber / channel</b></td><td>abone / kanal</td><td><b>personal information</b></td><td>kişisel bilgi</td></tr>
-<tr><td><b>social networking site</b></td><td>sosyal paylaşım sitesi</td><td><b>addicted / Internet addict</b></td><td>bağımlı (sıfat) / internet bağımlısı (isim)</td></tr>
-<tr><td><b>online / offline</b></td><td>çevrim içi / çevrim dışı</td><td><b>screen time / eye strain</b></td><td>ekran süresi / göz yorgunluğu</td></tr>
-<tr><td><b>keep in touch (with)</b></td><td>iletişimde kalmak</td><td><b>digital footprint</b></td><td>dijital ayak izi</td></tr>
-<tr><td><b>online shopping / e-book</b></td><td>internet alışverişi / e-kitap</td><td><b>scam / stranger</b></td><td>dolandırıcılık / yabancı kişi</td></tr>
-</table>
-
-<div class="note"><b>LGS Tuzağı 1 (download ↔ upload):</b> İnternetten cihazına alıyorsan <b>download</b> (indir), cihazından internete gönderiyorsan <b>upload</b> (yükle). “I uploaded my photos to my blog. My cousin downloaded them to print.” Bir soruda ikisi birlikte geçerse yönü (nereden → nereye) kontrol et.</div>
-<div class="note"><b>LGS Tuzağı 2 (addict ↔ addicted):</b> “She is a real Internet <b>addict</b>.” (isim) ama “She is <b>addicted</b> to the Internet.” (sıfat). 2018 LGS’de, birkaç saat çevrim dışı kalınca endişelenen kişi için “a real Internet addict” cevabı geldi. <i>“feels worried when she is offline / can’t live without her phone / checks messages all the time”</i> = addicted.</div>
-
-<h3>2. What do you use the Internet for? (Ne için kullanırsın?)</h3>
-<p>Amaç bildirirken <b>to + V1</b> ya da <b>for + V-ing / isim</b> kullanılır.</p>
-<ul>
-<li>I use the Internet <b>to do</b> research / <b>to chat</b> with my friends / <b>to download</b> e-books.</li>
-<li>I mostly go online <b>for</b> online games / <b>for</b> shopping / <b>for</b> my homework.</li>
-<li><b>What do you use the Internet for?</b> → To keep in touch with my relatives abroad.</li>
-<li><b>How long do you spend online?</b> → About two hours a day. (süre)</li>
-<li><b>How often do you go online?</b> → Every day / twice a week. (sıklık)</li>
-</ul>
-<div class="note"><b>LGS Tuzağı 3 (How often ↔ How long):</b> Cevapta <i>once / twice / three times a week, every day, rarely</i> varsa soru <b>How often</b>; <i>for two hours, about 30 minutes</i> varsa soru <b>How long</b>. Cevapta amaç (to…, for…) varsa soru <b>What … for?</b></div>
-
-<h3>3. Frequency Adverbs (Sıklık Zarfları)</h3>
-<div class="fig"><svg viewBox="0 0 600 110" width="560" role="img" aria-label="Sıklık zarfları ölçeği">
-<defs><linearGradient id="ii1" x1="0" x2="1"><stop offset="0" stop-color="#e2e8f0"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
-<rect x="25" y="42" width="550" height="16" rx="8" fill="url(#ii1)"/>
-<g font-size="12" text-anchor="middle" fill="#1e293b">
-<g stroke="#1e293b" stroke-width="2"><line x1="33" y1="36" x2="33" y2="64"/><line x1="100" y1="36" x2="100" y2="64"/><line x1="300" y1="36" x2="300" y2="64"/><line x1="410" y1="36" x2="410" y2="64"/><line x1="515" y1="36" x2="515" y2="64"/><line x1="567" y1="36" x2="567" y2="64"/></g>
-<g font-weight="bold"><text x="33" y="28">never</text><text x="100" y="18">rarely /</text><text x="100" y="31">hardly ever</text><text x="300" y="28">sometimes</text><text x="410" y="28">often</text><text x="515" y="28">usually</text><text x="567" y="18">always</text></g>
-<text x="33" y="80">0%</text><text x="100" y="80">10%</text><text x="300" y="80">50%</text><text x="410" y="80">70%</text><text x="515" y="80">90%</text><text x="567" y="80">100%</text>
-<text x="300" y="102" fill="#475569" font-size="11">once a week · twice a day · three times a month · every day · all the time</text>
-</g></svg></div>
-<ul>
-<li>Zarf, <b>ana fiilden önce</b>, <b>am/is/are’den sonra</b> gelir: She <b>usually</b> checks her e-mails. / He is <b>always</b> online.</li>
-<li><b>hardly ever = rarely = seldom</b> (nadiren). <b>never</b> = hiç. “He hardly ever posts photos.” = “He rarely posts photos.”</li>
-</ul>
-
-<h3>4. Reading Survey Results (Anket ve Grafik Okuma)</h3>
-<p>LGS’de neredeyse her yıl bir <b>anket grafiği</b> (bar/pasta) ya da <b>profil kartı</b> gelir (2019, 2020, 2021, 2026). Sayıları <b>miktar kelimelerine</b> çevirebilmen gerekir:</p>
-<div class="fig"><svg viewBox="0 0 600 150" width="560" role="img" aria-label="Miktar ifadeleri ve yüzdeler">
-<g font-size="11.5" fill="#1e293b">
-<rect x="20" y="15" width="560" height="22" rx="5" fill="#1d4ed8"/><text x="30" y="31" fill="#ffffff" font-weight="bold">all / everyone (100%)</text>
-<rect x="20" y="42" width="430" height="22" rx="5" fill="#2563eb"/><text x="30" y="58" fill="#ffffff" font-weight="bold">most / the majority / more than half (51–99%)</text>
-<rect x="20" y="69" width="280" height="22" rx="5" fill="#60a5fa"/><text x="30" y="85" font-weight="bold">half (50%)</text>
-<rect x="20" y="96" width="140" height="22" rx="5" fill="#bfdbfe"/><text x="30" y="112" font-weight="bold">a quarter (25%)</text>
-<rect x="20" y="123" width="60" height="22" rx="5" fill="#dbeafe"/><text x="90" y="139" font-weight="bold">a few / only some (az)  ·  none / nobody (0%)</text>
-<text x="300" y="112">less than half (yarıdan az)</text>
-</g></svg></div>
-<ul>
-<li><b>more / fewer people than</b> (sayılabilen kişiler için), <b>less time than</b>; <b>as popular as</b> = eşit; <b>the most popular</b> = en popüler.</li>
-<li><b>less popular than two of the blogs</b> = kendisinden daha popüler <b>tam iki</b> blog var (2026 LGS’de tam bu yapı soruldu).</li>
-</ul>
-<div class="note"><b>LGS Tuzağı 4 (yüzde ↔ sayı):</b> Grafikte kişi sayısı verildiyse önce toplamı bul. 200 kişiden 60’ı “most” değildir (%30)! “Most / the majority” için yarıdan <b>fazla</b>, “half” için tam yarı gerekir. İki dilimi topluyorsan (games <b>or</b> social media) toplamı yarıyla karşılaştır.</div>
-<div class="note"><b>LGS Tuzağı 5 (NOT correct / FALSE):</b> Soru kökündeki <b>NOT</b>, <b>FALSE</b>, <b>CANNOT</b> kelimelerinin altını çiz. Her şıkkı grafikle tek tek kontrol et; doğru olan üç şıkkı eleyince kalan cevaptır.</div>
-
-<h3>5. Online Safety (İnternet Güvenliği)</h3>
-<div class="fig"><svg viewBox="0 0 600 200" width="560" role="img" aria-label="İnternet güvenliği yapılacaklar ve yapılmayacaklar">
-<rect x="5" y="5" width="290" height="190" rx="12" fill="#dcfce7" stroke="#16a34a"/>
-<rect x="305" y="5" width="290" height="190" rx="12" fill="#fee2e2" stroke="#dc2626"/>
-<g font-size="12" fill="#1e293b">
-<text x="150" y="30" text-anchor="middle" font-weight="bold" fill="#15803d" font-size="14">DO ✓ (You should / must)</text>
-<text x="450" y="30" text-anchor="middle" font-weight="bold" fill="#b91c1c" font-size="14">DON’T ✗ (You shouldn’t / mustn’t)</text>
-<text x="15" y="58">• use strong passwords</text><text x="15" y="83">• log out on shared computers</text><text x="15" y="108">• check the source of the news</text><text x="15" y="133">• block and report bullies</text><text x="15" y="158">• tell a trusted adult</text><text x="15" y="183">• think twice before you post</text>
-<text x="315" y="58">• share your address / password</text><text x="315" y="83">• click links from strangers</text><text x="315" y="108">• open unknown attachments</text><text x="315" y="133">• meet online friends alone</text><text x="315" y="158">• believe every headline</text><text x="315" y="183">• post things you may regret</text>
-</g></svg></div>
-<table>
-<tr><th>A STRONG PASSWORD …</th><th>A WEAK PASSWORD …</th></tr>
-<tr><td>has at least 8–10 characters</td><td>is short (123456, abc)</td></tr>
-<tr><td>mixes capital (A) &amp; small letters (a), numbers (7) and symbols (!, #, @)</td><td>contains your name, your pet’s name or your birthday</td></tr>
-<tr><td>is secret and different for each account</td><td>is shared with friends</td></tr>
-</table>
-<div class="note"><b>LGS Tuzağı 6 (şifre kuralları):</b> 2023 LGS’de “3 harf + 3 rakam, isim yok” kuralı soruldu. Kurallardaki <b>sayıları</b> (at least 10, exactly 3) harf harf say; adının ya da evcil hayvanının adının şifrenin <b>içinde</b> geçmesi de kuralı bozar (Maxi#2012 → “Max” içerir).</div>
-<p><b>Must / mustn’t / should:</b> You <b>must</b> log out. (zorunlu) · You <b>mustn’t</b> share your password. (yasak) · You <b>should</b> tell an adult. (tavsiye) · You <b>don’t have to</b> reply. (gerekli değil, yasak değil!)</p>
-
-<h3>6. Giving Opinions · Agreeing · Disagreeing</h3>
-<table>
-<tr><th>Opinion (Görüş)</th><th>Agree (Katılma)</th><th>Disagree (Katılmama)</th></tr>
-<tr><td>I think / I believe …<br>In my opinion, …<br>As far as I’m concerned, …<br>To me, …</td><td>I agree with you. / You’re right.<br>Absolutely! / Exactly!<br>I feel the same way.<br>Same here! / Totally agree!</td><td>I don’t agree with you.<br>I’m not sure about that.<br>I see your point, but …<br>That’s not true for everyone.</td></tr>
-</table>
-<div class="note"><b>LGS Tuzağı 7 (“I see your point, but…”):</b> Karşı tarafı anladığını söyler ama <b>katılmaz</b>; cümle “but” ile itiraza döner. Boşluktan <b>sonraki</b> cümleye bak: kişi karşı görüşü destekleyen bir örnek veriyorsa boşluğa <b>disagree</b> ifadesi gelir (2024 LGS’de ise boşluğa doğrudan kişinin görüşüne uyan örnek cümle geldi: interneti yararlı bulmayan Mark, olumsuz bir örnek verdi).</div>
-<table>
-<tr><th>Advantages (Avantajlar) 👍</th><th>Disadvantages (Dezavantajlar) 👎</th></tr>
-<tr><td>a huge library, fast research · online courses · keeping in touch with friends abroad · online shopping without leaving home · e-books, maps, news</td><td>addiction · eye strain, headache, back pain · lack of sleep · weight gain (no exercise) · hackers &amp; viruses · fake news · cyberbullying · family arguments about screen time</td></tr>
-</table>
-
-<h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3>
-<p>2018-2026 LGS’lerinde bu üniteden toplam <b>8 soru</b> geldi (2022 ve 2025 hariç her yıl 1, 2023’te 2). Sorular, özetteki alt başlıklardan hangisini ölçtüğüne göre sınıflandırıldı.</p>
-<div class="fig"><svg viewBox="0 0 560 230" width="560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isı haritası: 8 çıkmış sorunun 4’ü anket, profil ve blog verisi okuma; kelime, etkinlikler, şifre güvenliği ve görüş başlıklarından birer soru; 2022 ve 2025’te soru yok" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle"><rect x="0" y="0" width="560" height="230" fill="#ffffff"/><text x="8" y="18" font-size="13" text-anchor="start" font-weight="bold">Alt başlık × yıl (2018-2026)</text><text x="500" y="38" font-size="11" text-anchor="start" font-weight="bold">Toplam</text><g font-size="11" fill="#475569"><text x="257" y="38">18</text><text x="285" y="38">19</text><text x="313" y="38">20</text><text x="341" y="38">21</text><text x="369" y="38">22</text><text x="397" y="38">23</text><text x="425" y="38">24</text><text x="453" y="38">25</text><text x="481" y="38">26</text></g><text x="236" y="59" font-size="11" text-anchor="end">1. İnternet kelimeleri (addict, online…)</text><rect x="244" y="44" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="257" y="59" font-weight="bold" fill="#1e3a8a">1</text><rect x="272" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="328" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="356" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="412" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="440" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="44" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="502" y="47" width="8" height="16" rx="3" fill="#f59e0b"/><text x="515" y="60" text-anchor="start" font-weight="bold">1</text><text x="236" y="84" font-size="11" text-anchor="end">2. What do you use it for? (etkinlikler)</text><rect x="244" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="272" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="328" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="356" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="69" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="397" y="84" font-weight="bold" fill="#1e3a8a">1</text><rect x="412" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="440" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="69" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="502" y="72" width="8" height="16" rx="3" fill="#f59e0b"/><text x="515" y="85" text-anchor="start" font-weight="bold">1</text><text x="236" y="109" font-size="11" text-anchor="end">3. Sıklık zarfları</text><rect x="244" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="272" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="328" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="356" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="412" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="440" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="94" width="26" height="22" rx="4" fill="#f1f5f9"/><text x="506" y="110" text-anchor="start" font-weight="bold">0</text><text x="236" y="134" font-size="11" text-anchor="end">4. Anket / profil / blog verisi okuma</text><rect x="244" y="119" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="272" y="119" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="285" y="134" font-weight="bold" fill="#1e3a8a">1</text><rect x="300" y="119" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="313" y="134" font-weight="bold" fill="#1e3a8a">1</text><rect x="328" y="119" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="341" y="134" font-weight="bold" fill="#1e3a8a">1</text><rect x="356" y="119" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="119" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="412" y="119" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="440" y="119" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="119" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="481" y="134" font-weight="bold" fill="#1e3a8a">1</text><rect x="502" y="122" width="32" height="16" rx="3" fill="#f59e0b"/><text x="539" y="135" text-anchor="start" font-weight="bold">4</text><text x="236" y="159" font-size="11" text-anchor="end">5. Online güvenlik (şifre kuralları)</text><rect x="244" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="272" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="328" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="356" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="144" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="397" y="159" font-weight="bold" fill="#1e3a8a">1</text><rect x="412" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="440" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="144" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="502" y="147" width="8" height="16" rx="3" fill="#f59e0b"/><text x="515" y="160" text-anchor="start" font-weight="bold">1</text><text x="236" y="184" font-size="11" text-anchor="end">6. Görüş · avantaj-dezavantaj</text><rect x="244" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="272" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="300" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="328" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="356" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="384" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="412" y="169" width="26" height="22" rx="4" fill="#bfdbfe"/><text x="425" y="184" font-weight="bold" fill="#1e3a8a">1</text><rect x="440" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="468" y="169" width="26" height="22" rx="4" fill="#f1f5f9"/><rect x="502" y="172" width="8" height="16" rx="3" fill="#f59e0b"/><text x="515" y="185" text-anchor="start" font-weight="bold">1</text><text x="8" y="214" font-size="11" text-anchor="start" fill="#475569">Toplam 8 soru: 2023’te 2, diğer yıllarda 0 ya da 1 (2022 ve 2025’te soru yok).</text></svg></div>
-<div class="tbl"><table><tr><th>Yıl</th><th>Soru no</th><th>Alt başlık</th><th>Soru tipi</th></tr><tr><td>2018</td><td>1</td><td>İnternet kelimeleri (Internet addict)</td><td>Eksik diyalog tamamlama</td></tr><tr><td>2019</td><td>9</td><td>Anket verisi okuma (100 gencin internet etkinlikleri)</td><td>Bar grafik → doğru yorum (many / most)</td></tr><tr><td>2020</td><td>10</td><td>Anket verisi okuma (yetişkin–genç yüzdeleri)</td><td>İki grafik karşılaştırma → doğru cümle</td></tr><tr><td>2021</td><td>10</td><td>Profil verisi okuma (takipçi, video, beğeni)*</td><td>İki profil kartı → NOT correct</td></tr><tr><td>2023</td><td>3</td><td>What do you use the Internet for? (etkinlikler)</td><td>Cevaplardan soruyu bulma</td></tr><tr><td>2023</td><td>8</td><td>Online güvenlik (şifre kuralları)</td><td>Kural tablosu → kurala uyan kişi</td></tr><tr><td>2024</td><td>1</td><td>Görüş · internetin zararları</td><td>Eksik diyalog (görüşe uygun örnek)</td></tr><tr><td>2026</td><td>10</td><td>Blog verisi okuma (içerik + takipçi)*</td><td>Dört kart → FALSE (eş anlamlı ifade)</td></tr></table></div>
-<p style="font-size:.9em">* Profil ve blog kartları anket grafiği değildir ama aynı beceriyi (sayısal veriyi karşılaştırıp cümleye çevirme) ölçtüğü için “veri okuma” başlığına alındı.</p>
-<div class="note"><ul>
-<li><b>En yoğun alt başlık veri okuma:</b> 8 sorunun 4’ü bir grafik, profil ya da blog kartındaki sayıları “most, more/fewer, less popular than, younger” gibi ifadelere çevirmeyi istedi.</li>
-<li>Soru kökleri çoğunlukla <b>NOT correct / FALSE</b> ya da “Which is correct?”; şıklar karttaki bilgiyi eş anlamlılarla (chores, films, buying things on the Internet) yeniden söylüyor.</li>
-<li>Diğer 4 soru tek tek farklı başlıklardan: kelime (Internet addict), “What do you use the Internet for?”, şifre kuralları ve internetin zararlarına dair görüş. Sıklık zarfları tek başına sorulmadı ama veri ve diyalog sorularında geçiyor.</li>
-<li>Soru sayısı az olduğu için yıl bazında kesin bir eğilim söylenemez; yine de <b>görsel veri</b> sorusu 2019-2021’de üst üste üç yıl ve 2026’da yeniden geldi; en olası soru tipi budur.</li>
-</ul></div>
-`,
-qs: [
-{ lv: "kolay", q: `<p>Ela and Tom are texting about their friend Deniz.</p>
-<div class="fig"><svg viewBox="0 0 540 192" width="520" role="img" aria-label="Ela &amp; Tom">
-<rect x="5" y="5" width="530" height="182" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="5" y="5" width="530" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="25" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Ela &amp; Tom</text>
-<rect x="18" y="44" width="450" height="27" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Ela:</tspan> Have you seen Deniz lately? She never comes to the park anymore.</text>
-<rect x="72" y="78" width="450" height="27" rx="7" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="82" y="96" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#16a34a">Tom:</tspan> She’s on her phone at least eight hours a day, even at dinner!</text>
-<rect x="18" y="112" width="450" height="27" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="130" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Ela:</tspan> Really? And she panics when her battery is low or the Wi-Fi is off.</text>
-<rect x="72" y="146" width="450" height="27" rx="7" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="82" y="164" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#16a34a">Tom:</tspan> ----</text>
-</svg></div><p>Which of the following best completes the conversation?</p>`,
-  c: ["I’m afraid she is becoming addicted to the Internet.", "She prefers face-to-face activities to online ones.", "She only goes online when she needs to do homework.", "She is bored with social media, so she rarely logs in."],
-  a: "A",
-  s: `<p>Deniz artık parka gelmiyor, günde en az 8 saat (yemekte bile) telefonda ve şarjı azalınca ya da Wi-Fi kapanınca <b>panikliyor</b>. Bunlar <b>internet bağımlılığının</b> işaretleridir: “I’m afraid she is becoming addicted to the Internet.”</p><p>B (yüz yüze etkinlikleri tercih ediyor), C (sadece ödev için giriyor) ve D (sosyal medyadan sıkıldı, nadiren giriyor) Deniz’in sürekli çevrim içi olmasıyla çelişir. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>200 students answered a question in a school survey. Each student chose only <b>one</b> answer.</p>
-<div class="fig"><svg viewBox="0 0 540 225" width="520" role="img" aria-label="200 öğrencinin internette en çok yaptığı etkinlik">
-<text x="270" y="22" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">What do you mainly do online? (200 students)</text>
-<g font-size="11.5" fill="#1e293b"><text x="160" y="55" text-anchor="end">Playing games</text><rect x="170" y="40" width="300" height="20" rx="3" fill="#3b82f6"/><text x="476" y="55" font-weight="bold">60</text>
-<text x="160" y="83" text-anchor="end">Social media</text><rect x="170" y="68" width="250" height="20" rx="3" fill="#3b82f6"/><text x="426" y="83" font-weight="bold">50</text>
-<text x="160" y="111" text-anchor="end">Homework / research</text><rect x="170" y="96" width="200" height="20" rx="3" fill="#3b82f6"/><text x="376" y="111" font-weight="bold">40</text>
-<text x="160" y="139" text-anchor="end">Watching videos</text><rect x="170" y="124" width="150" height="20" rx="3" fill="#3b82f6"/><text x="326" y="139" font-weight="bold">30</text>
-<text x="160" y="167" text-anchor="end">Online shopping</text><rect x="170" y="152" width="60" height="20" rx="3" fill="#3b82f6"/><text x="236" y="167" font-weight="bold">12</text>
-<text x="160" y="195" text-anchor="end">Reading news</text><rect x="170" y="180" width="40" height="20" rx="3" fill="#3b82f6"/><text x="216" y="195" font-weight="bold">8</text></g>
-<line x1="170" y1="36" x2="170" y2="210" stroke="#64748b"/></svg></div><p>According to the chart, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Doing homework online is as popular as watching videos among the students.", "A quarter of the students mainly read the news or shop online.", "More than half of the students mainly play games or use social media.", "Social media is the most popular online activity among the students."],
-  a: "C",
-  s: `<p>Toplam 200 öğrenci var; her şıkkı sayılarla kontrol edelim.</p><ul><li>A) Ödev/araştırma 40, video izleme 30; eşit değil ✗.</li><li>B) Haber (8) + alışveriş (12) = 20 öğrenci; 200’ün dörtte biri 50’dir. 20 ise yalnızca %10 ✗.</li><li>C) Oyun (60) + sosyal medya (50) = <b>110</b> öğrenci; 110 &gt; 100, yani yarıdan fazla ✓.</li><li>D) En popüler etkinlik sosyal medya (50) değil, oyun (60) ✗.</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Zeynep and Eymen are chatting online.</p>
-<div class="fig"><svg viewBox="0 0 540 192" width="520" role="img" aria-label="Zeynep &amp; Eymen">
-<rect x="5" y="5" width="530" height="182" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="5" y="5" width="530" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="25" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">Zeynep &amp; Eymen</text>
-<rect x="18" y="44" width="450" height="27" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#9333ea">Zeynep:</tspan> I met a girl in an online game. She wants to meet me at the mall!</text>
-<rect x="72" y="78" width="450" height="27" rx="7" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="82" y="96" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#16a34a">Eymen:</tspan> Do you know her in real life?</text>
-<rect x="18" y="112" width="450" height="27" rx="7" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="130" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#9333ea">Zeynep:</tspan> No, but she seems really friendly. She says she’s 14, like me.</text>
-<rect x="72" y="146" width="450" height="27" rx="7" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="82" y="164" font-size="11" fill="#1e293b"><tspan font-weight="bold" fill="#16a34a">Eymen:</tspan> ----</text>
-</svg></div><p>Which of the following best completes the conversation?</p>`,
-  c: ["Be careful! You can’t be sure who she really is. Talk to your parents first.", "Great! Don’t tell anyone and go there alone so that she feels relaxed.", "Why don’t you send her your home address? She can visit you instead.", "I agree. People on the Internet always tell the truth about their age."],
-  a: "A",
-  s: `<p>Zeynep internette tanıştığı ve gerçek hayatta <b>tanımadığı</b> biriyle buluşmak istiyor. Eymen’in “Do you know her in real life?” sorusu endişelendiğini gösteriyor.</p><p>Uygun cevap uyarıdır: “Dikkatli ol! Onun gerçekte kim olduğundan emin olamazsın. Önce ailenle konuş.” ✓</p><p>B (kimseye söylemeden yalnız gitmek), C (ev adresini göndermek) ve D (internetteki insanlar yaşları hakkında hep doğruyu söyler) internet güvenliği kurallarına aykırıdır. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 230" width="520" role="img" aria-label="40 öğrencinin günlük internet süresi pasta grafiği">
-<text x="270" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">How many hours a day are you online? (40 students)</text>
-<path d="M130 120 L130.0 30.0 A90 90 0 0 1 182.9 47.2 Z" fill="#fbbf24" stroke="#ffffff" stroke-width="2"/>
-<path d="M130 120 L182.9 47.2 A90 90 0 0 1 202.8 172.9 Z" fill="#34d399" stroke="#ffffff" stroke-width="2"/>
-<path d="M130 120 L202.8 172.9 A90 90 0 0 1 44.4 92.2 Z" fill="#3b82f6" stroke="#ffffff" stroke-width="2"/>
-<path d="M130 120 L44.4 92.2 A90 90 0 0 1 130.0 30.0 Z" fill="#f87171" stroke="#ffffff" stroke-width="2"/>
-<g font-size="12" fill="#1e293b"><rect x="260" y="70" width="16" height="16" rx="3" fill="#fbbf24"/><text x="284" y="83">less than 1 hour – 4 students</text>
-<rect x="260" y="100" width="16" height="16" rx="3" fill="#34d399"/><text x="284" y="113">1–2 hours – 10 students</text>
-<rect x="260" y="130" width="16" height="16" rx="3" fill="#3b82f6"/><text x="284" y="143">3–4 hours – 18 students</text>
-<rect x="260" y="160" width="16" height="16" rx="3" fill="#f87171"/><text x="284" y="173">more than 4 hours – 8 students</text></g></svg></div><p>According to the pie chart, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["Most of the students spend at least three hours online every day.", "Only a few students are online for less than an hour a day.", "A quarter of the students spend one or two hours online daily.", "More students are online for over four hours than for one or two hours."],
-  a: "D",
-  s: `<p>Toplam 40 öğrenci. A) 3–4 saat (18) + 4 saatten fazla (8) = 26 öğrenci; 40’ın yarısı 20 olduğundan “most” doğrudur ✓. B) 1 saatten az olan 4 öğrenci (%10), “only a few” doğrudur ✓. C) 1–2 saat 10 öğrenci; 10/40 = dörtte bir ✓.</p><p>D) 4 saatten fazla: <b>8</b> öğrenci, 1–2 saat: <b>10</b> öğrenci. 8 &lt; 10 olduğu için “more students … over four hours” <b>yanlıştır</b>. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Four students created passwords for the new school portal.</p><div class="fig"><svg viewBox="0 0 540 250" width="520" role="img" aria-label="Şifre kuralları ve öğrencilerin şifreleri">
-<rect x="10" y="8" width="520" height="92" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-<text x="270" y="28" font-size="13" font-weight="bold" text-anchor="middle" fill="#92400e">SCHOOL PORTAL – PASSWORD RULES</text>
-<g font-size="11.5" fill="#1e293b">
-<text x="24" y="50">✓ at least 10 characters   ✓ at least one capital letter and one number</text>
-<text x="24" y="70">✓ at least one symbol (@, #, !)</text>
-<text x="24" y="90">✗ no names (your own name or your pet’s name)   ✗ no birth year</text>
-</g>
-<g font-size="11.5" fill="#1e293b">
-<rect x="10" y="110" width="520" height="26" fill="#1e40af"/>
-<text x="24" y="128" fill="#ffffff" font-weight="bold">Student</text><text x="130" y="128" fill="#ffffff" font-weight="bold">Born in</text><text x="230" y="128" fill="#ffffff" font-weight="bold">Pet</text><text x="340" y="128" fill="#ffffff" font-weight="bold">Password</text>
-<rect x="10" y="136" width="520" height="26" fill="#f8fafc"/><text x="24" y="154">Ada</text><text x="130" y="154">2012</text><text x="230" y="154">Max (dog)</text><text x="340" y="154">Maxi#2012Go</text>
-<rect x="10" y="162" width="520" height="26" fill="#eef2ff"/><text x="24" y="180">Can</text><text x="130" y="180">2011</text><text x="230" y="180">Pamuk (cat)</text><text x="340" y="180">Blue!Ocean7</text>
-<rect x="10" y="188" width="520" height="26" fill="#f8fafc"/><text x="24" y="206">Ben</text><text x="130" y="206">2012</text><text x="230" y="206">—</text><text x="340" y="206">Summer2024rain</text>
-<rect x="10" y="214" width="520" height="26" fill="#eef2ff"/><text x="24" y="232">Dila</text><text x="130" y="232">2011</text><text x="230" y="232">Boncuk (bird)</text><text x="340" y="232">Kedi!Dila55</text>
-</g></svg></div><p>Whose password follows <b>all</b> the rules?</p>`,
-  c: ["Ada’s", "Can’s", "Ben’s", "Dila’s"],
-  a: "B",
-  s: `<p>Kuralları her şifreye uygulayalım:</p><ul><li><b>Ada</b> – Maxi#2012Go: köpeğinin adı “Max” ve doğum yılı “2012” şifrenin içinde geçiyor ✗.</li><li><b>Ben</b> – Summer2024rain: uzun, büyük harf ve rakam var ama <b>sembol yok</b> ✗.</li><li><b>Dila</b> – Kedi!Dila55: kendi adı “Dila” geçiyor ✗.</li><li><b>Can</b> – Blue!Ocean7: 11 karakter, büyük harf (B, O), rakam (7), sembol (!) var; isim ve doğum yılı yok ✓.</li></ul><p>Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Four friends have video channels. The topics of their videos and their numbers of subscribers are given below.</p><div class="fig"><svg viewBox="0 0 586 200" width="560" role="img" aria-label="Dört video kanalı ve abone sayıları">
-<g font-size="11" fill="#1e293b"><rect x="6" y="8" width="140" height="30" fill="#bae6fd" stroke="#334155"/><text x="14" y="28" font-weight="bold">Mia’s Channel</text>
-<rect x="6" y="42" width="140" height="150" fill="#ffffff" stroke="#334155"/>
-<text x="14" y="62">• Staying safe from</text>
-<text x="23" y="79">hackers online</text>
-<text x="14" y="96">• Tips for strong</text>
-<text x="23" y="113">passwords</text>
-<rect x="78" y="162" width="62" height="22" rx="8" fill="#e2e8f0" stroke="#475569"/><text x="86" y="178" font-weight="bold" font-size="11">▶ 48K</text>
-<rect x="150" y="8" width="140" height="30" fill="#bae6fd" stroke="#334155"/><text x="158" y="28" font-weight="bold">Leo’s Channel</text>
-<rect x="150" y="42" width="140" height="150" fill="#ffffff" stroke="#334155"/>
-<text x="158" y="62">• Unboxing the newest</text>
-<text x="167" y="79">phones, tablets and</text>
-<text x="167" y="96">laptops</text>
-<rect x="222" y="162" width="62" height="22" rx="8" fill="#e2e8f0" stroke="#475569"/><text x="230" y="178" font-weight="bold" font-size="11">▶ 75K</text>
-<rect x="294" y="8" width="140" height="30" fill="#bae6fd" stroke="#334155"/><text x="302" y="28" font-weight="bold">Sara’s Channel</text>
-<rect x="294" y="42" width="140" height="150" fill="#ffffff" stroke="#334155"/>
-<text x="302" y="62">• Daily vlogs with my</text>
-<text x="311" y="79">grandparents</text>
-<text x="302" y="96">• Baking with grandma</text>
-<rect x="366" y="162" width="62" height="22" rx="8" fill="#e2e8f0" stroke="#475569"/><text x="374" y="178" font-weight="bold" font-size="11">▶ 30K</text>
-<rect x="438" y="8" width="140" height="30" fill="#bae6fd" stroke="#334155"/><text x="446" y="28" font-weight="bold">Omar’s Channel</text>
-<rect x="438" y="42" width="140" height="150" fill="#ffffff" stroke="#334155"/>
-<text x="446" y="62">• Coding games for</text>
-<text x="455" y="79">beginners</text>
-<text x="446" y="96">• Making simple</text>
-<text x="455" y="113">websites</text>
-<rect x="510" y="162" width="62" height="22" rx="8" fill="#e2e8f0" stroke="#475569"/><text x="518" y="178" font-weight="bold" font-size="11">▶ 52K</text></g></svg></div><p>According to the information above, which of the following is <b>FALSE</b>?</p>`,
-  c: ["The channel which teaches programming is the least popular one.", "The channel about online safety is less popular than two of the channels.", "Sara’s videos are about her family members and food.", "The most popular channel is about technological devices."],
-  a: "A",
-  s: `<p>Aboneler: Leo 75K, Omar 52K, Mia 48K, Sara 30K.</p><ul><li>B) Online güvenlik (Mia, 48K) kanalından daha popüler tam <b>iki</b> kanal var: Leo ve Omar ✓.</li><li>C) Sara’nın videoları büyükanne-büyükbabası ve yemek pişirme üzerine ✓.</li><li>D) En popüler kanal Leo’nunki; telefon, tablet, laptop (teknolojik cihazlar) tanıtıyor ✓.</li><li>A) Programlama (coding) öğreten kanal Omar’ınki ve 52K ile <b>ikinci</b> en popüler; en az popüler olan Sara’nın kanalı (30K). Bu yüzden A <b>yanlıştır</b>.</li></ul><p>Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Emir ve Lara’nın sosyal medya profilleri">
-<g font-size="12" fill="#1e293b">
-<rect x="10" y="10" width="250" height="155" rx="14" fill="#fff7ed" stroke="#f97316" stroke-width="2.5"/>
-<rect x="10" y="10" width="250" height="34" rx="14" fill="#fed7aa"/>
-<text x="135" y="33" text-anchor="middle" font-weight="bold" font-size="14">@emir_draws (16)</text>
-<text x="26" y="68">★ joined in 2022</text><text x="26" y="92">★ 1,250 followers</text><text x="26" y="116">★ 84 posts</text><text x="26" y="140">★ about 300 likes per post</text>
-<rect x="280" y="10" width="250" height="155" rx="14" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5"/>
-<rect x="280" y="10" width="250" height="34" rx="14" fill="#bbf7d0"/>
-<text x="405" y="33" text-anchor="middle" font-weight="bold" font-size="14">@lara.reads (15)</text>
-<text x="296" y="68">★ joined in 2020</text><text x="296" y="92">★ 980 followers</text><text x="296" y="116">★ 120 posts</text><text x="296" y="140">★ about 410 likes per post</text>
-</g></svg></div><p>According to the profiles above, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Emir has used the platform for a longer time than Lara.", "Lara is older than Emir, and she has more followers.", "Lara has shared more posts, but fewer people follow her.", "On average, Emir’s posts get more likes than Lara’s."],
-  a: "C",
-  s: `<p>A) Emir 2022’de, Lara 2020’de katılmış; platformu <b>daha uzun süredir</b> kullanan Lara ✗.</p><p>B) Lara 15, Emir 16 yaşında; Lara daha genç ve takipçisi (980) daha az ✗.</p><p>D) Gönderi başına beğeni: Emir ~300, Lara ~410; Lara’nınki daha fazla ✗.</p><p>C) Lara 120 gönderi paylaşmış (Emir 84) ama takipçisi 980 (Emir 1.250) yani <b>daha az kişi</b> onu takip ediyor ✓. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="Think before you click güvenlik afişi">
-<rect x="10" y="8" width="520" height="160" rx="12" fill="#eff6ff" stroke="#1d4ed8" stroke-width="2"/>
-<rect x="10" y="8" width="520" height="34" rx="12" fill="#1d4ed8"/>
-<text x="270" y="31" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">THINK BEFORE YOU CLICK!</text>
-<g font-size="12" fill="#1e293b">
-<text x="26" y="66">1. Never share your home address or the name of your school.</text>
-<text x="26" y="92">2. Don’t open attachments from people you don’t know.</text>
-<text x="26" y="118">3. Always log out after you use a shared computer.</text>
-<text x="26" y="144">4. If someone is mean to you online, tell a trusted adult.</text>
-</g></svg></div><p>Which student does <b>NOT</b> follow the advice on the poster?</p>`,
-  c: ["Kerem showed the rude comments under his photo to his teacher.", "Ozan posted a photo of himself in front of his school gate with the school’s name on it.", "Nil deleted an e-mail with a file from an unknown sender without opening it.", "Pelin logged out of her account before leaving the library computer."],
-  a: "B",
-  s: `<p>A) Kerem kaba yorumları öğretmenine (güvenilir bir yetişkin) gösterdi → 4. kurala uyuyor.</p><p>C) Nil bilinmeyen kişiden gelen ekli e-postayı açmadan sildi → 2. kurala uyuyor. D) Pelin kütüphane bilgisayarında hesabından çıkış yaptı → 3. kurala uyuyor.</p><p>B) Ozan okulunun adının göründüğü bir fotoğraf paylaştı; bu, okulunun adını paylaşmak demektir ve <b>1. kuralı</b> çiğner. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Selin:</b> In my opinion, students shouldn’t use the Internet for homework. They just copy and paste everything.<br><b>Barış:</b> ---- When I do research online, I compare different websites and write the information in my own words.</p><p>Which of the following best completes the conversation?</p>`,
-  c: ["You’re right. Copying is the easiest way to finish homework.", "Absolutely! That’s why I never go online for my projects.", "I feel the same way about online research.", "I see your point, but that’s not true for everyone."],
-  a: "D",
-  s: `<p>Barış boşluktan sonra interneti <b>doğru şekilde</b> kullandığını (farklı siteleri karşılaştırıp kendi cümleleriyle yazdığını) anlatıyor. Yani Selin’in “herkes kopyalıyor” görüşüne <b>katılmıyor</b>.</p><p>“I see your point, but that’s not true for everyone.” (Ne demek istediğini anlıyorum ama bu herkes için geçerli değil.) kibarca katılmama ifadesidir ✓.</p><p>A, B ve C katılma (agree) ifadeleridir ve Barış’ın verdiği örnekle çelişir. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Put the sentences in the correct order to make a meaningful conversation.</p><p>I. Sure. First, click “Sign up” and type your e-mail address.<br>II. OK, done. What’s next?<br>III. Could you help me open an account on this learning website?<br>IV. Choose a strong password. Then check your inbox and click the confirmation link.<br>V. Thanks! Now I can log in and start the online lessons.</p>`,
-  c: ["III – I – II – IV – V", "I – III – IV – II – V", "III – IV – II – I – V", "III – I – IV – V – II"],
-  a: "A",
-  s: `<p>Konuşma bir <b>yardım isteğiyle</b> başlar: III (Hesap açmama yardım eder misin?). Cevap I gelir: “Sure. First, click Sign up…” (İlk adım).</p><p>Ardından II: “Tamam, yaptım. Sonra ne?” ve IV: “Güçlü bir şifre seç, sonra gelen kutunu kontrol et.” En son V: “Teşekkürler! Artık giriş yapıp derslere başlayabilirim.”</p><p>Sıra: III – I – II – IV – V. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Last month, some students in Eda’s class started writing unkind comments under her photos. Then they created a fake account with her name and shared embarrassing pictures of her. Eda felt lonely and didn’t want to go to school. In the end, she talked to the school counsellor, who informed the students’ parents. Now Eda only accepts friend requests from people she knows.</p><p>Which of the following is <b>NOT</b> mentioned in the text?</p>`,
-  c: ["Eda’s classmates opened an account pretending to be her.", "Eda didn’t feel like going to school because of what happened.", "Eda deleted all her social media accounts after the problem.", "Eda asked for help from someone at her school."],
-  a: "C",
-  s: `<p>Metin Eda’nın yaşadığı bir <b>siber zorbalık</b> olayını anlatıyor.</p><ul><li>A) “created a fake account with her name” → sahte hesap açtılar, geçiyor.</li><li>B) “didn’t want to go to school” → geçiyor.</li><li>D) “talked to the school counsellor” → okuldan yardım istedi, geçiyor.</li><li>C) Eda hesaplarını <b>silmedi</b>; metinde sadece artık yalnızca tanıdığı kişilerin arkadaşlık isteklerini kabul ettiği yazıyor. Hesaplarını sildiği <b>belirtilmiyor</b>.</li></ul><p>Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 235" width="520" role="img" aria-label="Öğretmenin e-postası">
-<rect x="10" y="8" width="520" height="220" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
-<rect x="10" y="8" width="520" height="70" rx="10" fill="#f1f5f9"/>
-<g font-size="11.5" fill="#1e293b">
-<text x="24" y="28"><tspan font-weight="bold">From:</tspan> Mr. Yılmaz (IT Teacher)</text>
-<text x="24" y="46"><tspan font-weight="bold">To:</tspan> 8-B Students</text>
-<text x="24" y="64"><tspan font-weight="bold">Subject:</tspan> Science Project – Deadline</text>
-<rect x="360" y="40" width="160" height="26" rx="6" fill="#e0e7ff" stroke="#6366f1"/><text x="372" y="57">📎 project_guide.pdf</text>
-<text x="24" y="100">Dear students,</text>
-<text x="24" y="120">I’ve attached the project guide. Please download it and read the rules</text>
-<text x="24" y="138">carefully before you start. Upload your presentations to the school</text>
-<text x="24" y="156">website by Friday, 23:00. Please don’t send them by e-mail because</text>
-<text x="24" y="174">the files are too big. If you can’t log in, use your school number as</text>
-<text x="24" y="192">your username and ask me for a new password.</text>
-<text x="24" y="214">Mr. Yılmaz</text>
-</g></svg></div><p>According to the e-mail, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Students should send their presentations to Mr. Yılmaz as attachments.", "Students need to download a document before they prepare their work.", "Students are expected to upload the file which the teacher attached.", "Students can use their own names as usernames on the school website."],
-  a: "B",
-  s: `<p>A) Öğretmen sunumların e-postayla <b>gönderilmemesini</b> istiyor (dosyalar çok büyük) ✗.</p><p>C) Yüklenecek olan öğretmenin eki değil, öğrencilerin <b>kendi sunumları</b>; ekteki rehber ise <b>indirilecek</b> ✗ (download/upload tuzağı).</p><p>D) Kullanıcı adı olarak <b>okul numarası</b> kullanılacak, isim değil ✗.</p><p>B) “Please download it and read the rules carefully before you start.” → Öğrenciler işe başlamadan önce rehberi indirmeli ✓. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>A student prepared the table below for her presentation, but she made <b>two</b> mistakes.</p><div class="fig"><svg viewBox="0 0 540 175" width="520" role="img" aria-label="İnternetin avantaj ve dezavantaj tablosu">
-<g font-size="11.5" fill="#1e293b">
-<rect x="10" y="8" width="255" height="30" fill="#16a34a"/><text x="137" y="28" text-anchor="middle" fill="#ffffff" font-weight="bold">ADVANTAGES 👍</text>
-<rect x="275" y="8" width="255" height="30" fill="#dc2626"/><text x="402" y="28" text-anchor="middle" fill="#ffffff" font-weight="bold">DISADVANTAGES 👎</text>
-<rect x="10" y="38" width="255" height="130" fill="#f0fdf4" stroke="#16a34a"/>
-<rect x="275" y="38" width="255" height="130" fill="#fef2f2" stroke="#dc2626"/>
-<text x="20" y="62">1. You can do research quickly.</text>
-<text x="20" y="90">2. You can buy things without</text><text x="34" y="104">leaving home.</text>
-<text x="20" y="128">3. It can cause eye strain.</text>
-<text x="20" y="156">4. You can join online courses.</text>
-<text x="285" y="62">5. Hackers can steal your data.</text>
-<text x="285" y="90">6. You may spend too much time</text><text x="299" y="104">online.</text>
-<text x="285" y="128">7. Fake news spreads very fast.</text>
-<text x="285" y="156">8. You can video chat with friends.</text>
-</g></svg></div><p>Which two sentences are in the <b>wrong</b> columns?</p>`,
-  c: ["2 and 7", "3 and 8", "4 and 6", "1 and 5"],
-  a: "B",
-  s: `<p>Avantajlar sütununda 3. madde “It can cause eye strain.” (göz yorgunluğuna sebep olabilir) bir <b>dezavantajdır</b>.</p><p>Dezavantajlar sütununda 8. madde “You can video chat with friends.” (arkadaşlarınla görüntülü konuşabilirsin) bir <b>avantajdır</b>.</p><p>Diğer maddeler (1, 2, 4 avantaj; 5, 6, 7 dezavantaj) doğru yerde. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 160" width="520" role="img" aria-label="Lina’nın internet alışkanlıkları">
-<rect x="10" y="8" width="520" height="145" rx="10" fill="#faf5ff" stroke="#9333ea" stroke-width="1.5"/>
-<text x="270" y="30" font-size="13" font-weight="bold" text-anchor="middle" fill="#6b21a8">LINA’S ONLINE HABITS</text>
-<g font-size="12" fill="#1e293b">
-<text x="30" y="58">📧 check e-mails</text><text x="300" y="58" font-weight="bold">every morning</text>
-<text x="30" y="82">🎥 video chat with grandma</text><text x="300" y="82" font-weight="bold">twice a week</text>
-<text x="30" y="106">⬆ upload videos to her blog</text><text x="300" y="106" font-weight="bold">once a month</text>
-<text x="30" y="130">🛒 shop online</text><text x="300" y="130" font-weight="bold">never</text>
-</g></svg></div><p><b>Reporter:</b> ----<br><b>Lina:</b> Twice a week, usually on Wednesdays and Sundays. She loves hearing about my school day.</p><p>Which question does the reporter ask?</p>`,
-  c: ["How often do you upload videos to your blog?", "What do you usually do every morning?", "How long do you spend shopping online?", "How often do you video chat with your grandmother?"],
-  a: "D",
-  s: `<p>Lina’nın cevabında <b>sıklık</b> var (“Twice a week”), bu yüzden soru <b>How often</b> ile başlamalı. Karta göre haftada iki kez yaptığı şey büyükannesiyle görüntülü konuşmak; cevaptaki “<b>She</b> loves hearing about my school day.” da büyükanneyi gösterir.</p><p>A) Video yükleme ayda bir (once a month) ✗. B) Her sabah e-postalara bakıyor; cevap “Twice a week” olamaz ✗. C) How long süre sorar; ayrıca Lina online alışveriş hiç yapmıyor ✗. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 215" width="520" role="img" aria-label="İnternet alışveriş sitesi ürün sayfası">
-<rect x="10" y="8" width="520" height="200" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
-<rect x="10" y="8" width="520" height="28" rx="10" fill="#f97316"/>
-<text x="24" y="27" font-size="12" font-weight="bold" fill="#ffffff">🛒 www.techshop.com</text>
-<rect x="24" y="48" width="130" height="130" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/>
-<text x="89" y="120" font-size="40" text-anchor="middle">🎧</text>
-<g font-size="12" fill="#1e293b">
-<text x="172" y="64" font-size="14" font-weight="bold">Wireless Headphones X2</text>
-<text x="172" y="86">★★★★☆ 4.5 (320 reviews)</text>
-<text x="172" y="110" fill="#94a3b8">₺1,200</text><line x1="170" y1="106" x2="216" y2="106" stroke="#94a3b8" stroke-width="1.5"/>
-<text x="230" y="110" font-size="15" font-weight="bold" fill="#dc2626">₺900</text>
-<rect x="290" y="96" width="70" height="20" rx="5" fill="#fee2e2"/><text x="298" y="111" fill="#b91c1c" font-weight="bold">25% OFF</text>
-<text x="172" y="134">🚚 Free delivery for orders over ₺1,000</text>
-<text x="172" y="154">📦 Delivery in 3–5 working days</text>
-<text x="172" y="174">↩ You can return it within 14 days.</text>
-<text x="172" y="196" fill="#b91c1c" font-weight="bold">Hurry! Only 3 left in stock.</text>
-</g></svg></div><p>According to the web page, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Customers don’t pay for delivery if they buy only these headphones.", "Customers can send the headphones back a month after they buy them.", "The headphones are 300 liras cheaper than their old price now.", "There are plenty of headphones in the shop’s stock."],
-  a: "C",
-  s: `<p>A) Ücretsiz kargo ₺1.000 üzeri siparişler için; kulaklık tek başına ₺900, yani kargo <b>ücretli</b> ✗.</p><p>B) İade süresi 14 gün; bir ay (30 gün) değil ✗. D) “Only 3 left in stock” → stokta sadece 3 tane var, “plenty” (bol) değil ✗.</p><p>C) Eski fiyat ₺1.200, yeni fiyat ₺900: 1200 − 900 = <b>300</b> lira ucuz (%25 indirim) ✓. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p>Every summer, Mert’s family spends a week in a small village with no Internet connection. At first, Mert hated it because he couldn’t check his messages or play online games. But now he looks forward to it. He goes fishing with his father, reads novels in the garden and sleeps much better. “When I come back home,” he says, “I realise how much time I waste on my phone.”</p><p>We can understand from the text that Mert ----.</p>`,
-  c: ["still can’t stand being away from his phone in the village", "plays online games with his father in the evenings", "has trouble sleeping when he is in the village", "now enjoys spending time offline with his family"],
-  a: "D",
-  s: `<p>Metinde Mert’in köye gitmekten <b>önceden</b> nefret ettiği, ama <b>şimdi</b> bunu dört gözle beklediği (looks forward to it) anlatılıyor. Babasıyla balık tutuyor, roman okuyor ve daha iyi uyuyor; yani internetsiz zamanı ailesiyle geçirmekten keyif alıyor ✓.</p><p>A) “still can’t stand” (hâlâ dayanamıyor) yanlış; bu onun eski duygusu. B) Köyde internet yok, online oyun oynayamaz. C) Köyde “sleeps much better” (çok daha iyi uyuyor). Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>I wanted to share my holiday photos with my family, so I <b>(1)</b> ---- them to my blog. The next day, my aunt <b>(2)</b> ---- them to her laptop because she wanted to print them for her album.</p><p>Which of the following best completes the blanks?</p>`,
-  c: ["(1) downloaded – (2) uploaded", "(1) uploaded – (2) downloaded", "(1) logged in – (2) deleted", "(1) searched – (2) logged out"],
-  a: "B",
-  s: `<p>(1) Fotoğrafları kendi cihazımdan bloguma (internete) gönderiyorum → <b>uploaded</b> (yükledim).</p><p>(2) Teyzem fotoğrafları internetten kendi dizüstü bilgisayarına alıyor ki yazdırabilsin → <b>downloaded</b> (indirdi).</p><p>A şıkkı yönleri ters çevirerek kurulmuş güçlü bir çeldiricidir. C ve D anlamca uymaz (fotoğrafları “giriş yapmak” ya da “silmek” albüm için yazdırma amacıyla uyuşmaz). Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>Defne typed a question into a search engine and got the results below.</p><div class="fig"><svg viewBox="0 0 540 235" width="520" role="img" aria-label="Arama motoru sonuçları">
-<rect x="10" y="8" width="520" height="220" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
-<rect x="24" y="20" width="492" height="32" rx="16" fill="#f8fafc" stroke="#94a3b8"/>
-<text x="40" y="41" font-size="12" fill="#1e293b">🔍 how to stop spending too much time on my phone</text>
-<g font-size="11.5">
-<text x="24" y="78" font-weight="bold" fill="#1d4ed8">1. Try These 5 Apps to Limit Your Daily Screen Time</text>
-<text x="24" y="95" fill="#475569">Set a timer for each app. The app locks itself when the time is up.</text>
-<text x="24" y="122" font-weight="bold" fill="#1d4ed8">2. Turn Off Your Notifications Before Bed</text>
-<text x="24" y="139" fill="#475569">Silence your phone at 9 p.m. and keep it out of your bedroom.</text>
-<text x="24" y="166" font-weight="bold" fill="#1d4ed8">3. Why Do Teenagers Become Addicted to Phones? – A Study</text>
-<text x="24" y="183" fill="#475569">Scientists from 12 countries explain the reasons behind phone addiction.</text>
-<text x="24" y="210" font-weight="bold" fill="#1d4ed8">4. Leave Your Phone in Another Room While You Study</text>
-</g></svg></div><p>Which result does <b>NOT</b> give Defne a solution to her problem?</p>`,
-  c: ["Result 1", "Result 2", "Result 3", "Result 4"],
-  a: "C",
-  s: `<p>Defne’nin sorunu: telefonda çok fazla zaman geçirmek ve bunu <b>nasıl durduracağı</b> (how to stop…).</p><p>1. sonuç (ekran süresini sınırlayan uygulamalar), 2. sonuç (yatmadan önce bildirimleri kapatmak) ve 4. sonuç (ders çalışırken telefonu başka odada bırakmak) doğrudan <b>çözüm</b> önerir.</p><p>3. sonuç ise gençlerin neden telefona bağımlı olduğunu açıklayan bir <b>araştırmadır</b>; sebepleri anlatır ama bir çözüm sunmaz. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 200" width="520" role="img" aria-label="Efe’nin internet sıklık tablosu">
-<text x="270" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#134e4a">EFE: How often do you …?</text>
-<g font-size="12" fill="#1e293b"><rect x="10" y="30" width="520" height="26" fill="#0f766e"/>
-<text x="215" y="48" text-anchor="middle" fill="#ffffff" font-weight="bold">always</text>
-<text x="285" y="48" text-anchor="middle" fill="#ffffff" font-weight="bold">usually</text>
-<text x="355" y="48" text-anchor="middle" fill="#ffffff" font-weight="bold">sometimes</text>
-<text x="425" y="48" text-anchor="middle" fill="#ffffff" font-weight="bold">rarely</text>
-<text x="495" y="48" text-anchor="middle" fill="#ffffff" font-weight="bold">never</text>
-<rect x="10" y="56" width="520" height="28" fill="#f8fafc" stroke="#cbd5e1"/>
-<text x="20" y="74">check notifications</text>
-<text x="215" y="76" text-anchor="middle" font-size="15" fill="#16a34a" font-weight="bold">✓</text>
-<rect x="10" y="84" width="520" height="28" fill="#ecfeff" stroke="#cbd5e1"/>
-<text x="20" y="102">watch tutorials</text>
-<text x="285" y="104" text-anchor="middle" font-size="15" fill="#16a34a" font-weight="bold">✓</text>
-<rect x="10" y="112" width="520" height="28" fill="#f8fafc" stroke="#cbd5e1"/>
-<text x="20" y="130">play online games</text>
-<text x="355" y="132" text-anchor="middle" font-size="15" fill="#16a34a" font-weight="bold">✓</text>
-<rect x="10" y="140" width="520" height="28" fill="#ecfeff" stroke="#cbd5e1"/>
-<text x="20" y="158">post photos</text>
-<text x="425" y="160" text-anchor="middle" font-size="15" fill="#16a34a" font-weight="bold">✓</text>
-<rect x="10" y="168" width="520" height="28" fill="#f8fafc" stroke="#cbd5e1"/>
-<text x="20" y="186">read e-books</text>
-<text x="495" y="188" text-anchor="middle" font-size="15" fill="#16a34a" font-weight="bold">✓</text></g></svg></div><p>According to the chart, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Efe hardly ever shares photos online.", "Efe never misses a chance to read e-books.", "Efe plays online games more often than he watches tutorials.", "Efe seldom checks his notifications."],
-  a: "A",
-  s: `<p>Tabloya göre: notifications → always, tutorials → usually, online games → sometimes, post photos → rarely, e-books → never.</p><ul><li>A) “hardly ever” = rarely (nadiren). Efe fotoğrafları <b>rarely</b> paylaşıyor ✓.</li><li>B) “never misses a chance” (hiç kaçırmaz) = çok sık yapar demektir; oysa Efe e-kitap <b>hiç</b> okumuyor ✗.</li><li>C) Oyun (sometimes) &lt; tutorial (usually) ✗.</li><li>D) “seldom” = nadiren; Efe bildirimlerine <b>her zaman</b> bakıyor ✗.</li></ul><p>Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Ece:</b> Someone I don’t know keeps sending me messages on a game app. Now he’s asking for my address and my school’s name. What should I do?</p><p>Her friends give her advice:</p><p><b>Arda:</b> Don’t reply and block the account immediately.<br><b>Ceren:</b> Take screenshots of the messages and show them to your parents.<br><b>Murat:</b> Report the account to the app so they can check it.<br><b>Yağmur:</b> Agree to meet him in a café so that you can learn who he really is.</p><p>Whose advice is <b>NOT</b> appropriate?</p>`,
-  c: ["Arda’s", "Ceren’s", "Murat’s", "Yağmur’s"],
-  a: "D",
-  s: `<p>Ece’ye tanımadığı biri adresini ve okulunu soruyor; bu tehlikeli bir durumdur.</p><p>Arda (cevap verme, engelle), Ceren (ekran görüntüsü al, ailene göster) ve Murat (hesabı uygulamaya şikâyet et) <b>güvenli</b> tavsiyeler veriyor.</p><p>Yağmur ise internetten tanınan bir yabancıyla <b>yüz yüze buluşmayı</b> öneriyor. Bu, internet güvenliğinin en önemli kurallarından birine (Don’t meet online strangers) aykırıdır. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Look at the notifications on Kerem’s phone this morning.</p><div class="fig"><svg viewBox="0 0 540 250" width="520" role="img" aria-label="Telefon kilit ekranı bildirimleri">
-<rect x="70" y="5" width="400" height="240" rx="26" fill="#0f172a"/>
-<text x="270" y="40" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">07:45</text>
-<g font-size="11">
-<rect x="86" y="54" width="368" height="40" rx="9" fill="#f1f5f9"/><text x="96" y="70" font-weight="bold" fill="#1e293b">🏦 CityBank · 03:12</text><text x="96" y="86" fill="#334155">Your password has been changed. Not you? Call us now.</text>
-<rect x="86" y="100" width="368" height="40" rx="9" fill="#f1f5f9"/><text x="96" y="116" font-weight="bold" fill="#1e293b">❓ Unknown number · 06:30</text><text x="96" y="132" fill="#334155">You won a free phone! Click here: win-prize.xyz</text>
-<rect x="86" y="146" width="368" height="40" rx="9" fill="#f1f5f9"/><text x="96" y="162" font-weight="bold" fill="#1e293b">🎮 GameZone · 07:10</text><text x="96" y="178" fill="#334155">Your friend Arda invited you to play “Space Race”.</text>
-<rect x="86" y="192" width="368" height="40" rx="9" fill="#f1f5f9"/><text x="96" y="208" font-weight="bold" fill="#1e293b">🏫 School App · 07:30</text><text x="96" y="224" fill="#334155">The exam schedule has been updated. Check it.</text>
-</g></svg></div><p>Which of the following can be inferred from the notifications?</p>`,
-  c: ["Kerem’s school has cancelled all the exams for this week.", "Kerem should click the link to get his free phone.", "Someone may have entered Kerem’s bank account during the night.", "Kerem’s friend Arda wants to meet him at the school gate."],
-  a: "C",
-  s: `<p>Banka bildirimi gece <b>03:12</b>’de gelmiş: “Şifreniz değiştirildi. Siz değil misiniz? Hemen bizi arayın.” Kerem gece uyurken şifre değiştiği için birinin (bir hacker’ın) hesabına girmiş <b>olabileceği</b> çıkarılır ✓.</p><p>A) Okul sınavları iptal etmemiş, programı <b>güncellemiş</b> (updated) ✗. B) Bilinmeyen numaradan gelen “ücretsiz telefon kazandınız” mesajı tipik bir <b>dolandırıcılıktır</b>; linke tıklanmamalı ✗. D) Arda onu bir oyuna davet ediyor, buluşmaya değil ✗. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 200" width="520" role="img" aria-label="Üç internet paketi">
-<g font-size="12" fill="#1e293b" text-anchor="middle">
-<rect x="10" y="8" width="165" height="185" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-<rect x="10" y="8" width="165" height="34" rx="12" fill="#94a3b8"/><text x="92" y="31" font-weight="bold" fill="#ffffff" font-size="14">BASIC</text>
-<text x="92" y="66">10 GB per month</text><text x="92" y="90">Speed: 25 Mbps</text><text x="92" y="114">No contract</text><text x="92" y="138">1 user</text><text x="92" y="174" font-size="16" font-weight="bold" fill="#0f766e">₺150 / month</text>
-<rect x="187" y="8" width="165" height="185" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<rect x="187" y="8" width="165" height="34" rx="12" fill="#2563eb"/><text x="269" y="31" font-weight="bold" fill="#ffffff" font-size="14">FAMILY</text>
-<text x="269" y="66">100 GB per month</text><text x="269" y="90">Speed: 100 Mbps</text><text x="269" y="114">12-month contract</text><text x="269" y="138">up to 4 users</text><text x="269" y="174" font-size="16" font-weight="bold" fill="#0f766e">₺400 / month</text>
-<rect x="364" y="8" width="165" height="185" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="1.5"/>
-<rect x="364" y="8" width="165" height="34" rx="12" fill="#9333ea"/><text x="446" y="31" font-weight="bold" fill="#ffffff" font-size="14">GAMER</text>
-<text x="446" y="66">Unlimited data</text><text x="446" y="90">Speed: 200 Mbps</text><text x="446" y="114">24-month contract</text><text x="446" y="138">up to 2 users</text><text x="446" y="174" font-size="16" font-weight="bold" fill="#0f766e">₺550 / month</text>
-</g></svg></div><p>According to the information about the Internet packages, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["The cheapest package doesn’t require a contract.", "Customers have to stay with the Gamer package for one year.", "The Family package offers ten times more data than the Basic one.", "The fastest package is also the most expensive one."],
-  a: "B",
-  s: `<p>A) En ucuz paket Basic (₺150) ve “No contract” ✓. C) Family 100 GB, Basic 10 GB → 10 katı ✓. D) En hızlı paket Gamer (200 Mbps) ve en pahalısı da o (₺550) ✓.</p><p>B) Gamer paketinin sözleşmesi <b>24 ay</b> (iki yıl); bir yıl (12 ay) olan Family paketidir. Bu yüzden B <b>yanlıştır</b>. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<p>A group of teenagers and their parents answered the survey question below.</p><div class="fig"><svg viewBox="0 0 540 250" width="520" role="img" aria-label="Gençler ve ebeveynlerin internet kullanım amaçları grafiği">
-<text x="270" y="18" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">What do you use the Internet for most?</text>
-<g font-size="11.5" fill="#1e293b"><rect x="70" y="40" width="30" height="160" fill="#3b82f6"/><text x="85" y="35" text-anchor="middle" font-weight="bold">40%</text>
-<rect x="102" y="120" width="30" height="80" fill="#f59e0b"/><text x="117" y="115" text-anchor="middle" font-weight="bold">20%</text>
-<text x="101" y="218" text-anchor="middle">Social media</text>
-<rect x="162" y="80" width="30" height="120" fill="#3b82f6"/><text x="177" y="75" text-anchor="middle" font-weight="bold">30%</text>
-<rect x="194" y="180" width="30" height="20" fill="#f59e0b"/><text x="209" y="175" text-anchor="middle" font-weight="bold">5%</text>
-<text x="193" y="218" text-anchor="middle">Games</text>
-<rect x="254" y="140" width="30" height="60" fill="#3b82f6"/><text x="269" y="135" text-anchor="middle" font-weight="bold">15%</text>
-<rect x="286" y="140" width="30" height="60" fill="#f59e0b"/><text x="301" y="135" text-anchor="middle" font-weight="bold">15%</text>
-<text x="285" y="218" text-anchor="middle">School / work</text>
-<rect x="346" y="160" width="30" height="40" fill="#3b82f6"/><text x="361" y="155" text-anchor="middle" font-weight="bold">10%</text>
-<rect x="378" y="100" width="30" height="100" fill="#f59e0b"/><text x="393" y="95" text-anchor="middle" font-weight="bold">25%</text>
-<text x="377" y="218" text-anchor="middle">Shopping</text>
-<rect x="438" y="180" width="30" height="20" fill="#3b82f6"/><text x="453" y="175" text-anchor="middle" font-weight="bold">5%</text>
-<rect x="470" y="60" width="30" height="140" fill="#f59e0b"/><text x="485" y="55" text-anchor="middle" font-weight="bold">35%</text>
-<text x="469" y="218" text-anchor="middle">News</text>
-<line x1="55" y1="200" x2="530" y2="200" stroke="#475569"/>
-<rect x="150" y="232" width="14" height="12" fill="#3b82f6"/><text x="170" y="243">Teens</text><rect x="300" y="232" width="14" height="12" fill="#f59e0b"/><text x="320" y="243">Parents</text></g></svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Parents play online games more than teenagers do.", "Reading the news is the most popular activity for both groups.", "Most of the parents use the Internet for online shopping.", "Teens and parents use the Internet equally for school or work."],
-  a: "D",
-  s: `<p>A) Oyun: gençler %30, ebeveynler %5; gençler daha çok oynuyor ✗.</p><p>B) Haber okuma ebeveynlerde en yüksek (%35) ama gençlerde en düşük (%5); gençlerde en popüler olan sosyal medya (%40) ✗.</p><p>C) Ebeveynlerin sadece %25’i alışveriş yapıyor; “most” için %50’den fazlası gerekir ✗.</p><p>D) Okul/iş için: gençler %15, ebeveynler %15 → eşit ✓. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<p>Spending too much time online can change our lives in many ways. Some people stop doing sports, so they put on weight. Others don’t get enough sleep because they chat with their friends until late at night. Staring at screens for hours can also cause headaches and eye problems. Moreover, teenagers who are addicted to the Internet often argue with their parents about screen time.</p><p>Which of the following is <b>NOT</b> one of the effects mentioned in the text?</p>`,
-  c: ["Gaining weight because of a lack of exercise", "Not sleeping enough because of chatting at night", "Losing real-life friends because of online games", "Having arguments with family members"],
-  a: "C",
-  s: `<p>Metinde sayılan etkiler: spor yapmayı bırakıp kilo almak (put on weight) → A; gece geç saate kadar sohbet edip yeterince uyumamak → B; baş ağrısı ve göz sorunları; ekran süresi yüzünden ailesiyle tartışmak → D.</p><p>Online oyunlar yüzünden <b>gerçek hayattaki arkadaşları kaybetmekten</b> metinde hiç bahsedilmiyor. Cevap <b>C</b>.</p>` },
-{ lv: "kolay", q: `<p><b>Reporter:</b> ----<br><b>Aylin:</b> Mostly to do research for my projects, and sometimes to practise English with online quizzes.</p><p>Which question does the reporter ask?</p>`,
-  c: ["How often do you go online?", "What do you use the Internet for?", "How long do you spend online every day?", "Where do you usually connect to the Internet?"],
-  a: "B",
-  s: `<p>Aylin’in cevabı <b>“to + V1”</b> (to do research, to practise English) ile başlıyor; bu bir <b>amaç</b> bildirir. Amaç soran soru: “What do you use the Internet for?” ✓.</p><p>A) How often sıklık sorar (every day, twice a week…). C) How long süre sorar (two hours…). D) Where yer sorar (at home, at school…). Aylin’in cevabındaki “Mostly” ve “sometimes” kelimeleri seni A’ya çekebilir ama cevabın özü amaçtır. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 215" width="520" role="img" aria-label="Kaan’ın dijital günü zaman çizelgesi">
-<text x="270" y="20" font-size="13" font-weight="bold" text-anchor="middle" fill="#1e3a8a">MY DIGITAL DAY – Kaan’s blog</text>
-<g font-size="12" fill="#1e293b"><line x1="120" y1="40" x2="120" y2="196" stroke="#2563eb" stroke-width="3"/>
-<circle cx="120" cy="40" r="6" fill="#2563eb"/><text x="108" y="44" text-anchor="end" font-weight="bold">07:00</text><text x="134" y="44">checks the weather app</text>
-<circle cx="120" cy="66" r="6" fill="#2563eb"/><text x="108" y="70" text-anchor="end" font-weight="bold">08:30–15:00</text><text x="134" y="70">school – phone switched off</text>
-<circle cx="120" cy="92" r="6" fill="#2563eb"/><text x="108" y="96" text-anchor="end" font-weight="bold">16:00</text><text x="134" y="96">online English lesson (45 min)</text>
-<circle cx="120" cy="118" r="6" fill="#2563eb"/><text x="108" y="122" text-anchor="end" font-weight="bold">17:00</text><text x="134" y="122">football in the park – no phone</text>
-<circle cx="120" cy="144" r="6" fill="#2563eb"/><text x="108" y="148" text-anchor="end" font-weight="bold">19:30</text><text x="134" y="148">video chat with grandma</text>
-<circle cx="120" cy="170" r="6" fill="#2563eb"/><text x="108" y="174" text-anchor="end" font-weight="bold">21:00</text><text x="134" y="174">reads an e-book</text>
-<circle cx="120" cy="196" r="6" fill="#2563eb"/><text x="108" y="200" text-anchor="end" font-weight="bold">22:00</text><text x="134" y="200">leaves his phone in the kitchen</text></g></svg></div><p>According to Kaan’s blog post, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["He uses his phone between his lessons at school.", "He plays an online football game with his friends at 17:00.", "He keeps his phone next to his bed at night.", "His online lesson finishes before he goes to the park."],
-  a: "D",
-  s: `<p>A) 08:30–15:00 arası okuldayken telefon <b>kapalı</b> ✗. B) 17:00’de parkta <b>gerçek</b> futbol oynuyor ve telefonu yanında değil ✗. C) 22:00’de telefonunu <b>mutfakta</b> bırakıyor ✗.</p><p>D) Online İngilizce dersi 16:00’da başlıyor ve 45 dakika sürüyor, yani 16:45’te bitiyor; parka 17:00’de gidiyor ✓. Cevap <b>D</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Sahte haberi fark etme afişi">
-<rect x="10" y="8" width="520" height="175" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
-<rect x="10" y="8" width="520" height="34" rx="12" fill="#d97706"/>
-<text x="270" y="31" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">HOW TO SPOT FAKE NEWS</text>
-<g font-size="12" fill="#1e293b">
-<text x="26" y="66">🔎 Check the source: Is the website reliable?</text>
-<text x="26" y="92">📰 Read the whole story, not only the headline.</text>
-<text x="26" y="118">📅 Check the date. Old news can be shared as new.</text>
-<text x="26" y="144">🌐 Look for the same story on other trusted websites.</text>
-<text x="26" y="170">⏸ Stop and think before you share it with others.</text>
-</g></svg></div><p>Which student does <b>NOT</b> follow the advice on the poster?</p>`,
-  c: ["Deniz read the whole article before forming an opinion about it.", "Can forwarded the story to his class group as soon as he saw its shocking headline.", "Lale noticed that the story was from three years ago, so she didn’t believe it.", "Mert searched for the same story on some well-known news websites."],
-  a: "B",
-  s: `<p>A) Deniz haberin tamamını okudu → “Read the whole story” ✓. C) Lale haberin tarihine baktı ve eski olduğunu fark etti → “Check the date” ✓. D) Mert aynı haberi güvenilir sitelerde aradı → “Look for the same story…” ✓.</p><p>B) Can sadece şok edici <b>başlığı</b> görünce haberi hemen sınıf grubuna gönderdi; hem “sadece başlığı okuma” hem de “paylaşmadan önce dur ve düşün” tavsiyelerine uymadı. Cevap <b>B</b>.</p>` },
-{ lv: "kolay", q: `<div class="fig"><svg viewBox="0 0 540 190" width="520" role="img" aria-label="Bilgisayar laboratuvarı kuralları">
-<rect x="10" y="8" width="520" height="175" rx="10" fill="#f0f9ff" stroke="#0369a1" stroke-width="2"/>
-<rect x="10" y="8" width="520" height="34" rx="10" fill="#0369a1"/>
-<text x="270" y="31" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">💻 COMPUTER LAB RULES</text>
-<g font-size="12" fill="#1e293b">
-<text x="26" y="66">✓ You must log in with your own school account.</text>
-<text x="26" y="92">✗ You mustn’t eat or drink in the lab.</text>
-<text x="26" y="118">✗ You mustn’t download any games or programs.</text>
-<text x="26" y="144">✓ You must save your work on the school drive.</text>
-<text x="26" y="170">✓ You must log out before you leave.</text>
-</g></svg></div><p>Which student follows <b>all</b> the rules?</p>`,
-  c: ["Ece logged in with her own account, saved her work on the school drive and logged out.", "Tarık used his own account but downloaded a free drawing program for his project.", "Sena saved her project on the school drive and drank her juice far from the keyboard.", "Umut used his friend’s account because he forgot his password, but he logged out."],
-  a: "A",
-  s: `<p>B) Tarık program indirdi → “You mustn’t download any games or programs.” kuralını çiğnedi ✗.</p><p>C) Sena içeceğini klavyeden uzakta içse bile laboratuvarda <b>yiyip içmek yasak</b> (“mustn’t eat or drink in the lab”) ✗. D) Umut arkadaşının hesabını kullandı → “own school account” kuralını çiğnedi ✗.</p><p>A) Ece kendi hesabıyla girdi, işini okul sürücüsüne kaydetti ve çıkış yaptı; hiçbir kuralı çiğnemedi ✓. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Which of the following word–definition pairs is <b>NOT</b> correct?</p>`,
-  c: ["attachment – a person who follows your posts on social media", "search engine – a website that helps you find information online", "password – a secret word or code that you use to log in", "hacker – a person who gets into other people’s computers illegally"],
-  a: "A",
-  s: `<p>B) Arama motoru: internette bilgi bulmana yardım eden site ✓. C) Şifre: giriş yapmak için kullanılan gizli kelime ya da kod ✓. D) Hacker: başkalarının bilgisayarlarına yasa dışı yollarla giren kişi ✓.</p><p>A) <b>Attachment</b> e-postaya eklenen <b>dosya</b>dır (e-posta eki). Sosyal medyada paylaşımlarını takip eden kişi <b>follower</b>’dır. Bu eşleşme yanlıştır. Cevap <b>A</b>.</p>` },
-{ lv: "kolay", q: `<p>Everything you post, like or comment on leaves a <b>(1)</b> ---- behind you. Even if you delete a photo, someone may have taken a screenshot of it. Universities and companies can see your posts years later, so you should <b>(2)</b> ---- before you share anything.</p><p>Which of the following best completes the blanks?</p>`,
-  c: ["(1) password – (2) log out", "(1) virus – (2) download it", "(1) follower – (2) upload it", "(1) digital footprint – (2) think twice"],
-  a: "D",
-  s: `<p>(1) İnternette yaptığın her paylaşım, beğeni ve yorum arkanda bir iz bırakır; silsen bile ekran görüntüsü alınmış olabilir. Bu ize <b>digital footprint</b> (dijital ayak izi) denir.</p><p>(2) Paylaşımların yıllar sonra bile görülebileceği için paylaşmadan önce <b>think twice</b> (iki kez düşünmek, iyice düşünmek) gerekir.</p><p>Diğer seçeneklerdeki kelimeler (şifre, virüs, takipçi; çıkış yapmak, indirmek, yüklemek) metnin anlamına uymaz. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Kerem is helping his grandmother with a video chat app.</p>
-<div class="fig"><svg viewBox="0 0 540 294" width="540" role="img" aria-label="Grandma Nur &amp; Kerem">
-<rect x="4" y="4" width="532" height="286" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="24" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Grandma Nur &amp; Kerem</text>
-<rect x="18" y="44" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Grandma Nur:</tspan> Kerem, I want to see your face when we talk, not just</text>
-<text x="28" y="78" font-size="11.5" fill="#1e293b">hear your voice. Can you help me?</text>
-<rect x="92" y="96" width="430" height="44" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="114" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Kerem:</tspan> Of course! You only need a good Wi-Fi connection and the</text>
-<text x="102" y="130" font-size="11.5" fill="#1e293b">app with the camera button.</text>
-<rect x="18" y="148" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="166" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Grandma Nur:</tspan> I have the app, but when I press the camera button,</text>
-<text x="28" y="182" font-size="11.5" fill="#1e293b">the screen goes black.</text>
-<rect x="92" y="200" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="218" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Kerem:</tspan> ----</text>
-<rect x="18" y="236" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="254" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Grandma Nur:</tspan> Oh, you’re right! There was a small sticker on it.</text>
-<text x="28" y="270" font-size="11.5" fill="#1e293b">Now I can see myself!</text>
-</svg></div>
-<p>Which of the following best completes the conversation?</p>`,
-  c: ["Maybe something is covering the camera. Can you check it?", "You should delete the app and create a new account.", "Don’t worry, I’ll send you the photos as an attachment.", "Let’s just talk on the phone. Video chats are boring."],
-  a: "A",
-  s: `<p>Nine Nur’un cevabı ipucudur: “Haklısın! Üzerinde küçük bir <b>çıkartma</b> varmış, şimdi kendimi görebiliyorum.” Demek ki Kerem kameranın önünde bir şey olup olmadığını kontrol etmesini söylemiştir: “Maybe something is covering the camera.”</p><p>Uygulamayı silip yeni hesap açmak, fotoğrafları ek olarak göndermek ya da telefonla konuşmayı önermek “There was a small sticker on it” cevabıyla bağlantılı değildir. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>40 seventh graders and 40 eighth graders answered a survey. Each student chose only <b>one</b> device.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Which device do you use most to go online?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Which device do you use most to go online?</text>
-<rect x="120" y="30" width="12" height="12" fill="#3b82f6"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">Grade 7</text>
-<rect x="205" y="30" width="12" height="12" fill="#f59e0b"/>
-<text x="221" y="40" font-size="11.5" fill="#1e293b">Grade 8</text>
-<line x1="60" y1="200.0" x2="520" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="170.0" x2="520" y2="170.0" stroke="#e2e8f0"/>
-<text x="54" y="174.0" font-size="11" fill="#475569" text-anchor="end">5</text>
-<line x1="60" y1="140.0" x2="520" y2="140.0" stroke="#e2e8f0"/>
-<text x="54" y="144.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="110.0" x2="520" y2="110.0" stroke="#e2e8f0"/>
-<text x="54" y="114.0" font-size="11" fill="#475569" text-anchor="end">15</text>
-<line x1="60" y1="80.0" x2="520" y2="80.0" stroke="#e2e8f0"/>
-<text x="54" y="84.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">25</text>
-<rect x="83.5" y="116.0" width="32.0" height="84.0" fill="#3b82f6"/>
-<text x="99.5" y="112.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">14</text>
-<rect x="117.5" y="68.0" width="32.0" height="132.0" fill="#f59e0b"/>
-<text x="133.5" y="64.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">22</text>
-<text x="117.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Smartphone</text>
-<rect x="198.5" y="128.0" width="32.0" height="72.0" fill="#3b82f6"/>
-<text x="214.5" y="124.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">12</text>
-<rect x="232.5" y="164.0" width="32.0" height="36.0" fill="#f59e0b"/>
-<text x="248.5" y="160.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">6</text>
-<text x="232.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Tablet</text>
-<rect x="313.5" y="152.0" width="32.0" height="48.0" fill="#3b82f6"/>
-<text x="329.5" y="148.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">8</text>
-<rect x="347.5" y="146.0" width="32.0" height="54.0" fill="#f59e0b"/>
-<text x="363.5" y="142.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">9</text>
-<text x="347.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Laptop</text>
-<rect x="428.5" y="164.0" width="32.0" height="36.0" fill="#3b82f6"/>
-<text x="444.5" y="160.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">6</text>
-<rect x="462.5" y="182.0" width="32.0" height="18.0" fill="#f59e0b"/>
-<text x="478.5" y="178.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">3</text>
-<text x="462.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Desktop</text>
-<text x="462.5" y="230" font-size="11.5" fill="#1e293b" text-anchor="middle">computer</text>
-<line x1="60" y1="200" x2="520" y2="200" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<p>According to the graph, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["Smartphones are the most popular device in both grades.", "Desktop computers are the least popular choice in Grade 7, but not in Grade 8.", "More than half of the eighth graders mostly use smartphones.", "Tablets are twice as popular in Grade 7 as in Grade 8."],
-  a: "B",
-  s: `<p>Grafiği adım adım kontrol edelim:</p><ul><li>Akıllı telefon: 7. sınıfta 14 (en yüksek), 8. sınıfta 22 (en yüksek) → iki sınıfta da en popüler ✓.</li><li>8. sınıfta 22/40 = %55 → yarıdan fazla ✓.</li><li>Tablet: 12 ve 6 → 7. sınıfta iki katı ✓.</li><li>Masaüstü bilgisayar: 7. sınıfta 6 (en az), 8. sınıfta da 3 ile <b>yine en az</b>. “ama 8. sınıfta değil” ifadesi yanlıştır ✗.</li></ul><p>Doğru olmayan ifade masaüstü bilgisayarla ilgili olandır. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Look at the information about four podcasts.</p>
-<div class="fig"><svg viewBox="0 0 540 226" width="540" role="img" aria-label="Dört podcast kartı">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Top Podcasts for Teens</text>
-<rect x="10" y="34" width="255" height="86" rx="10" fill="#f8fafc" stroke="#dc2626" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#dc2626" font-weight="bold">Kitchen Chaos</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">Easy and cheap meals you can cook at</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">home</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">Listeners: 12,400</text>
-<rect x="275" y="34" width="255" height="86" rx="10" fill="#f8fafc" stroke="#7c3aed" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#7c3aed" font-weight="bold">Pixel Talk</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">Honest reviews of the newest video</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">games</text>
-<text x="287" y="108" font-size="11.5" fill="#1e293b">Listeners: 8,900</text>
-<rect x="10" y="130" width="255" height="86" rx="10" fill="#f8fafc" stroke="#16a34a" stroke-width="1.5"/>
-<text x="22" y="151" font-size="12.5" fill="#16a34a" font-weight="bold">Green Steps</text>
-<text x="22" y="172" font-size="11.5" fill="#1e293b">Small things we can do to protect</text>
-<text x="22" y="188" font-size="11.5" fill="#1e293b">nature</text>
-<text x="22" y="204" font-size="11.5" fill="#1e293b">Listeners: 15,100</text>
-<rect x="275" y="130" width="255" height="86" rx="10" fill="#f8fafc" stroke="#b45309" stroke-width="1.5"/>
-<text x="287" y="151" font-size="12.5" fill="#b45309" font-weight="bold">Time Travellers</text>
-<text x="287" y="172" font-size="11.5" fill="#1e293b">Exciting stories from the past</text>
-<text x="287" y="188" font-size="11.5" fill="#1e293b">Listeners: 9,700</text>
-</svg></div>
-<p>Which of the following is <b>FALSE</b> according to the information?</p>`,
-  c: ["The podcast about protecting the environment has the most listeners.", "People interested in history can listen to a podcast with fewer listeners than “Kitchen Chaos”.", "The podcast about games is less popular than all the others.", "The cooking podcast is more popular than three of the podcasts."],
-  a: "D",
-  s: `<p>Dinleyici sayılarını sıralayalım: Green Steps 15,100 &gt; Kitchen Chaos 12,400 &gt; Time Travellers 9,700 &gt; Pixel Talk 8,900.</p><ul><li>Doğayı korumayla ilgili podcast (Green Steps) en çok dinlenen ✓.</li><li>Tarih (Time Travellers, “stories from the past”) 9,700 &lt; 12,400 ✓.</li><li>Oyun podcast’i (Pixel Talk) en az dinlenen ✓.</li><li>Yemek podcast’i (Kitchen Chaos) yalnızca <b>iki</b> podcast’ten daha popülerdir; Green Steps ondan daha çok dinleniyor. “Üç podcast’ten daha popüler” ifadesi <b>yanlıştır</b> (2026 LGS’deki “less/more popular than two of…” kalıbı).</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>The school library has a new online system.</p>
-<div class="fig"><svg viewBox="0 0 540 192" width="540" role="img" aria-label="NEW ONLINE LIBRARY ACCOUNT – Password Rules">
-<rect x="4" y="4" width="532" height="184" rx="12" fill="#ecfeff" stroke="#0e7490" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#0e7490"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">NEW ONLINE LIBRARY ACCOUNT – Password Rules</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">Your password must:</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">• have 8–12 characters,</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">• start with a capital letter,</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">• contain exactly two numbers,</text>
-<text x="26" y="142" font-size="11.5" fill="#1e293b">• contain at least one symbol (! ? # @),</text>
-<text x="26" y="163" font-size="11.5" fill="#1e293b">• NOT contain your birth year.</text>
-</svg></div>
-<table><tr><th>Student</th><th>Birth year</th><th>Password</th></tr><tr><td>Berk</td><td>2011</td><td>Tiger@2011</td></tr><tr><td>Can</td><td>2012</td><td>blue@sky47</td></tr><tr><td>Ada</td><td>2012</td><td>Moonlight#25</td></tr><tr><td>Duru</td><td>2011</td><td>Sunflowers!73</td></tr></table>
-<p>Whose password follows <b>all</b> the rules?</p>`,
-  c: ["Ada’s", "Berk’s", "Can’s", "Duru’s"],
-  a: "A",
-  s: `<p>Her şifreyi kurallarla tek tek karşılaştıralım:</p><ul><li><b>Berk</b> – Tiger@2011: 10 karakter, büyük harfle başlıyor, sembol var; ama <b>dört</b> rakam içeriyor ve doğum yılı (2011) var ✗.</li><li><b>Can</b> – blue@sky47: küçük harfle başlıyor ✗.</li><li><b>Ada</b> – Moonlight#25: M-o-o-n-l-i-g-h-t-#-2-5 = 12 karakter (sınır içinde), büyük harfle başlıyor, tam iki rakam (2, 5), sembol (#) var, 2012 yok ✓.</li><li><b>Duru</b> – Sunflowers!73: iki rakam ve sembol var ama <b>13</b> karakter; 12’yi aşıyor ✗ (harf harf sayılmazsa gözden kaçan tuzak).</li></ul> Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Leyla wrote a post on a forum, and four people replied.</p>
-<div class="fig"><svg viewBox="0 0 540 226" width="540" role="img" aria-label="Forum yanıtları">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Leyla: Kids under 13 shouldn’t have social media accounts!</text>
-<rect x="10" y="34" width="255" height="86" rx="10" fill="#f8fafc" stroke="#0369a1" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#0369a1" font-weight="bold">Mete</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">I see what you mean, but my little</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">brother only follows science pages.</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">It’s really useful for him.</text>
-<rect x="275" y="34" width="255" height="86" rx="10" fill="#f8fafc" stroke="#15803d" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#15803d" font-weight="bold">Sena</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">Exactly! Young children believe</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">everything they read online.</text>
-<rect x="10" y="130" width="255" height="86" rx="10" fill="#f8fafc" stroke="#b45309" stroke-width="1.5"/>
-<text x="22" y="151" font-size="12.5" fill="#b45309" font-weight="bold">Ozan</text>
-<text x="22" y="172" font-size="11.5" fill="#1e293b">I don’t think age is the problem.</text>
-<text x="22" y="188" font-size="11.5" fill="#1e293b">Parents should just teach them the</text>
-<text x="22" y="204" font-size="11.5" fill="#1e293b">rules of the Internet.</text>
-<rect x="275" y="130" width="255" height="86" rx="10" fill="#f8fafc" stroke="#be185d" stroke-width="1.5"/>
-<text x="287" y="151" font-size="12.5" fill="#be185d" font-weight="bold">Pelin</text>
-<text x="287" y="172" font-size="11.5" fill="#1e293b">I couldn’t agree more. They should</text>
-<text x="287" y="188" font-size="11.5" fill="#1e293b">play outside instead of scrolling all</text>
-<text x="287" y="204" font-size="11.5" fill="#1e293b">day.</text>
-</svg></div>
-<p>Which people <b>agree</b> with Leyla?</p>`,
-  c: ["Mete and Sena", "Ozan and Pelin", "Sena and Pelin", "Only Sena"],
-  a: "C",
-  s: `<p>Leyla, 13 yaşından küçüklerin sosyal medya hesabı olmaması gerektiğini düşünüyor.</p><ul><li><b>Mete:</b> “I see what you mean, <b>but</b>…” → kardeşi için yararlı olduğunu söylüyor; katılmıyor.</li><li><b>Sena:</b> “Exactly!” → küçük çocuklar internetteki her şeye inanıyor; katılıyor ✓.</li><li><b>Ozan:</b> “I don’t think age is the problem” → katılmıyor.</li><li><b>Pelin:</b> “I couldn’t agree more.” (Daha fazla katılamazdım = tamamen katılıyorum) ✓.</li></ul><p>“I couldn’t agree more” ifadesi olumsuz yapıda olduğu için katılmama sanılabilir; bu yüzden “Only Sena” çeldiricidir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>A reporter is interviewing Ms. Kaya, a travel blogger.</p>
-<div class="dialog"><div><b>Reporter:</b> (I) ----</div><div><b>Ms. Kaya:</b> Three years ago, just after I moved to Japan.</div><div><b>Reporter:</b> (II) ----</div><div><b>Ms. Kaya:</b> Mostly about daily life and Japanese food. My readers love the recipes.</div><div><b>Reporter:</b> (III) ----</div><div><b>Ms. Kaya:</b> Every Friday. I never miss a week.</div></div>
-<p>Which of the following is <b>NOT</b> one of the reporter’s questions?</p>`,
-  c: ["When did you start your blog?", "How long does it take you to write a post?", "What do you write about?", "How often do you post on your blog?"],
-  a: "B",
-  s: `<p>Cevaplardan soruları bulalım:</p><ul><li>(I) “Three years ago…” → zaman: <i>When did you start your blog?</i></li><li>(II) “Mostly about daily life and Japanese food” → konu: <i>What do you write about?</i></li><li>(III) “Every Friday” → sıklık: <i>How often do you post?</i></li></ul><p>“How long does it take…?” bir yazının ne kadar <b>sürede</b> yazıldığını sorar; cevaplarda “two hours” gibi bir süre yoktur. “Every Friday” sıklık bildirir (How often), süre değil. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Four friends recorded their time online. The school counsellor says, “More than <b>16 hours</b> a week is too much.”</p>
-<table><tr><th>Name</th><th>Each weekday (Mon–Fri)</th><th>Each weekend day (Sat–Sun)</th></tr><tr><td>Nil</td><td>2 hours</td><td>4 hours</td></tr><tr><td>Eren</td><td>1 hour</td><td>6 hours</td></tr><tr><td>Sıla</td><td>3 hours</td><td>1 hour</td></tr><tr><td>Tuna</td><td>1 hour</td><td>5 hours</td></tr></table>
-<p>According to the table, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Eren and Sıla spend the same amount of time online at the weekend.", "Only one of the friends spends less time online than the limit in a week.", "Nil spends the most time online on weekdays.", "Tuna spends more time online than Eren in a week."],
-  a: "B",
-  s: `<p>Haftalık toplam = (hafta içi × 5) + (hafta sonu × 2):</p><ul><li>Nil: 10 + 8 = <b>18</b> saat</li><li>Eren: 5 + 12 = <b>17</b> saat</li><li>Sıla: 15 + 2 = <b>17</b> saat</li><li>Tuna: 5 + 10 = <b>15</b> saat</li></ul><p>Sınırın (16) altında kalan yalnızca Tuna’dır ✓. Hafta sonu: Eren 12, Sıla 2 saat (eşit değil) ✗. Hafta içi en çok Sıla (15) çevrim içi, Nil (10) değil ✗. Tuna (15) Eren’den (17) az ✗. Günlük sayıları ×5 ve ×2 ile çarpmadan karşılaştırmak hataya götürür. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 189" width="540" role="img" aria-label="STOP BEFORE YOU SHARE!">
-<rect x="4" y="4" width="532" height="181" rx="12" fill="#fef2f2" stroke="#b91c1c" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#b91c1c"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">STOP BEFORE YOU SHARE!</text>
-<text x="270" y="58" font-size="12" fill="#b91c1c" font-weight="bold" text-anchor="middle">How to spot fake news</text>
-<text x="26" y="76" font-size="11.5" fill="#1e293b">1. Who wrote it? Check the name of the writer or the website.</text>
-<text x="26" y="97" font-size="11.5" fill="#1e293b">2. Look at the date. Old news can look new on social media.</text>
-<text x="26" y="118" font-size="11.5" fill="#1e293b">3. Don’t stop at the headline. Read the whole story.</text>
-<text x="26" y="139" font-size="11.5" fill="#1e293b">4. Search for the same news on other websites you trust.</text>
-<text x="26" y="160" font-size="11.5" fill="#1e293b">5. Does it make you very angry or scared? Wait before you click “share”.</text>
-</svg></div>
-<p>Which of the following is <b>NOT</b> advised in the poster?</p>`,
-  c: ["Comparing the news with reliable sources", "Checking when the news was published", "Not trusting the title of a story alone", "Sending the news only to close friends first"],
-  a: "D",
-  s: `<p>Şıklar afişteki maddeleri eş anlamlı ifadelerle anlatıyor:</p><ul><li>“Comparing the news with reliable sources” = 4. madde (güvendiğin diğer sitelerde ara) ✓.</li><li>“Checking when the news was published” = 2. madde (tarihe bak) ✓.</li><li>“Not trusting the title alone” = 3. madde (başlıkta kalma, tamamını oku) ✓.</li></ul><p>Haberi önce yakın arkadaşlara göndermekten afişte hiç söz edilmez; aksine 5. madde paylaşmadan önce beklemeyi öğütler. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>Defne is reading a product page on a shopping website.</p>
-<div class="fig"><svg viewBox="0 0 540 154" width="540" role="img" aria-label="Ürün sayfası ve yorumlar">
-<rect x="10" y="10" width="520" height="134" rx="10" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
-<text x="22" y="31" font-size="12.5" fill="#0f172a" font-weight="bold">SoundGo Wireless Headphones  ★★★★☆</text>
-<text x="22" y="52" font-size="11.5" fill="#1e293b">Price: 850 TL (before: 1,000 TL)</text>
-<text x="22" y="68" font-size="11.5" fill="#1e293b">Free delivery for orders over 500 TL</text>
-<text x="22" y="84" font-size="11.5" fill="#1e293b"></text>
-<text x="22" y="100" font-size="11.5" fill="#1e293b">@meltem: The sound is great, but the battery lasts only five hours.</text>
-<text x="22" y="116" font-size="11.5" fill="#1e293b">@burak_t: I ordered them on Monday and got them on Wednesday. Fast delivery!</text>
-<text x="22" y="132" font-size="11.5" fill="#1e293b">@aylin: Comfortable, but a bit too big for small heads like my sister’s.</text>
-</svg></div>
-<p>According to the page, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Customers have to pay extra for delivery.", "The headphones are 150 TL cheaper than before.", "All the reviewers are happy with the battery.", "Burak waited for a week to get his headphones."],
-  a: "B",
-  s: `<p>Eski fiyat 1,000 TL, yeni fiyat 850 TL → 1,000 − 850 = <b>150 TL</b> indirim ✓.</p><p>Ürün 850 TL ve 500 TL üzeri siparişlerde kargo ücretsiz → ekstra ödeme yok ✗. Meltem bataryanın yalnızca beş saat dayandığından şikâyet ediyor ✗. Burak pazartesi sipariş edip çarşamba almış, yani iki gün beklemiş, bir hafta değil ✗. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Mina answered an online quiz.</p>
-<div class="box"><p><b>QUIZ: Are you an Internet addict?</b> Score: <b>Often = 2</b>, <b>Sometimes = 1</b>, <b>Never = 0</b><br>0–4 points: You are in control. · 5–8 points: Be careful! · 9–12 points: You need a digital detox!</p></div>
-<table><tr><th>Question</th><th>Mina’s answer</th></tr><tr><td>1. Do you check your phone as soon as you wake up?</td><td>Often</td></tr><tr><td>2. Do you feel nervous when you are offline?</td><td>Sometimes</td></tr><tr><td>3. Do you go online during meals?</td><td>Never</td></tr><tr><td>4. Do you stay up late to chat or play games?</td><td>Often</td></tr><tr><td>5. Do you forget your homework because of the Internet?</td><td>Sometimes</td></tr><tr><td>6. Do your parents complain about your screen time?</td><td>Often</td></tr></table>
-<p>Which of the following is <b>CORRECT</b> about Mina’s result?</p>`,
-  c: ["She gets 9 points, so she needs a digital detox.", "She gets 5 points, so her Internet use is under control.", "She needs a digital detox because she never goes online during meals.", "She gets 8 points, so she should be careful about her Internet use."],
-  a: "D",
-  s: `<p>Puanları toplayalım: Often (1, 4, 6) → 3 × 2 = 6; Sometimes (2, 5) → 2 × 1 = 2; Never (3) → 0. Toplam 6 + 2 + 0 = <b>8</b> → 5–8 aralığı: “Be careful!” ✓.</p><p>9 puan, “Never” cevabına da puan verilirse ya da bir “Sometimes” 2 sayılırsa çıkar ✗. 5 puan, “Often” cevapları 2 yerine 1 sayılırsa çıkar (3 + 2); üstelik 5 puan bile “in control” değil “Be careful!” aralığındadır ✗. Yemekte hiç çevrim içi olmamak puanı düşürür; detoks gerekçesi olamaz ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>A website asked adults and teenagers about the main reason they go online.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Main reason for going online (%)">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Main reason for going online (%)</text>
-<rect x="120" y="30" width="12" height="12" fill="#0891b2"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">Adults</text>
-<rect x="198" y="30" width="12" height="12" fill="#e11d48"/>
-<text x="214" y="40" font-size="11.5" fill="#1e293b">Teenagers</text>
-<line x1="60" y1="200.0" x2="520" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="162.5" x2="520" y2="162.5" stroke="#e2e8f0"/>
-<text x="54" y="166.5" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="125.0" x2="520" y2="125.0" stroke="#e2e8f0"/>
-<text x="54" y="129.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="87.5" x2="520" y2="87.5" stroke="#e2e8f0"/>
-<text x="54" y="91.5" font-size="11" fill="#475569" text-anchor="end">30</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">40</text>
-<rect x="72.0" y="125.0" width="32.0" height="75.0" fill="#0891b2"/>
-<text x="88.0" y="121.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">20</text>
-<rect x="106.0" y="50.0" width="32.0" height="150.0" fill="#e11d48"/>
-<text x="122.0" y="46.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">40</text>
-<text x="106.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Social media</text>
-<rect x="164.0" y="181.2" width="32.0" height="18.8" fill="#0891b2"/>
-<text x="180.0" y="177.2" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">5</text>
-<rect x="198.0" y="87.5" width="32.0" height="112.5" fill="#e11d48"/>
-<text x="214.0" y="83.5" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">30</text>
-<text x="198.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Games</text>
-<rect x="256.0" y="87.5" width="32.0" height="112.5" fill="#0891b2"/>
-<text x="272.0" y="83.5" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">30</text>
-<rect x="290.0" y="181.2" width="32.0" height="18.8" fill="#e11d48"/>
-<text x="306.0" y="177.2" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">5</text>
-<text x="290.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Shopping</text>
-<rect x="348.0" y="68.8" width="32.0" height="131.2" fill="#0891b2"/>
-<text x="364.0" y="64.8" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">35</text>
-<rect x="382.0" y="181.2" width="32.0" height="18.8" fill="#e11d48"/>
-<text x="398.0" y="177.2" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">5</text>
-<text x="382.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">News</text>
-<rect x="440.0" y="162.5" width="32.0" height="37.5" fill="#0891b2"/>
-<text x="456.0" y="158.5" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">10</text>
-<rect x="474.0" y="125.0" width="32.0" height="75.0" fill="#e11d48"/>
-<text x="490.0" y="121.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">20</text>
-<text x="474.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Research</text>
-<line x1="60" y1="200" x2="520" y2="200" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">%</text>
-</svg></div>
-<p>According to the graph, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["Social media is twice as popular among teenagers as among adults.", "Reading the news is the most common reason for adults.", "The same percentage of adults and teenagers go online mainly for research.", "Six times as many teenagers as adults go online mainly for games."],
-  a: "C",
-  s: `<p>Grafiği kontrol edelim:</p><ul><li>Sosyal medya: gençler %40, yetişkinler %20 → iki katı ✓.</li><li>Yetişkinlerde en yüksek değer haber (%35) ✓.</li><li>Oyun: %30 ve %5 → 30 ÷ 5 = 6 kat ✓.</li><li>Araştırma: yetişkinler %10, gençler %20 → <b>aynı değil</b> ✗.</li></ul><p>Yanlış olan ifade araştırma oranının eşit olduğunu söyleyendir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="dialog"><div><b>Ece:</b> My laptop is so slow these days. Web pages take ages to open.</div><div><b>Can:</b> (1) ----</div><div><b>Ece:</b> Well, yes. I downloaded a free game from an unknown website last week.</div><div><b>Can:</b> That might be the problem. (2) ----</div><div><b>Ece:</b> Good idea. My cousin knows a lot about computers. I’ll call him now.</div></div>
-<p>Which of the following best completes the conversation?</p>`,
-  c: ["(1) Do you often use a search engine? – (2) You should buy a new laptop right now.", "(1) Have you downloaded anything strange recently? – (2) Why don’t you download more free games?", "(1) How often do you charge your laptop? – (2) You’d better ask someone to check it for viruses.", "(1) Have you downloaded anything strange recently? – (2) You’d better ask someone to check it for viruses."],
-  a: "D",
-  s: `<p>(1) için ipucu Ece’nin cevabıdır: “Evet, geçen hafta bilinmeyen bir siteden ücretsiz bir oyun indirdim.” → Can bir şey indirip indirmediğini sormuştur: “Have you downloaded anything strange recently?”</p><p>(2) için ipucu: “İyi fikir. Kuzenim bilgisayardan iyi anlar, onu arayacağım.” → Can birine <b>virüs kontrolü</b> yaptırmasını önermiştir.</p><p>Arama motoru ya da şarj sorusu (1)’e uymaz; yeni laptop almak veya daha çok oyun indirmek, kuzeni arama cevabıyla ve sorunun çözümüyle bağdaşmaz. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><p><b>My Grandpa, the YouTuber</b><br>My grandfather, Hasan, is 72 years old, and last year he became a YouTuber! It all started when I recorded him while he was making his famous stuffed peppers. I uploaded the video, and in one week it got 5,000 views. Now he shares a new recipe every Sunday. I film and edit the videos, and he reads all the comments with his glasses on. He says the Internet has given him new friends from all over the world. The only thing he hates is negative comments, but he never replies to them.</p></div>
-<p>Which of the following questions can <b>NOT</b> be answered according to the text?</p>`,
-  c: ["How many subscribers does Hasan’s channel have?", "How often does Hasan share a new video?", "Who edits the videos?", "How does Hasan react to negative comments?"],
-  a: "A",
-  s: `<p>Metinde cevabı olanlar: Ne sıklıkla video paylaşıyor? → “every Sunday” ✓. Videoları kim düzenliyor? → “I film and edit the videos” (torunu) ✓. Olumsuz yorumlara tepkisi? → “he never replies to them” ✓.</p><p>Metinde yalnızca ilk videonun bir haftada <b>5,000 izlenme</b> (views) aldığı söyleniyor; kanalın <b>abone</b> (subscriber) sayısı verilmiyor. “views” ile “subscribers” karıştırılırsa yanlış cevap seçilir. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 188" width="540" role="img" aria-label="Çevrim içi atölye afişi">
-<rect x="4" y="4" width="532" height="180" rx="12" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#6d28d9"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">FREE ONLINE WORKSHOP: Make Your First Website!</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">• For students aged 12–15</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">• Saturdays, 2–4 p.m., for four weeks (starts on 7 November)</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">• You need a laptop and a stable Internet connection. (Tablets are not</text>
-<text x="26" y="117" font-size="11.5" fill="#1e293b">suitable.)</text>
-<text x="26" y="138" font-size="11.5" fill="#1e293b">• Register at www.webkids.org before 1 November.</text>
-<text x="26" y="159" font-size="11.5" fill="#1e293b">• Only 20 places!</text>
-</svg></div>
-<p>Which student can join the workshop?</p>`,
-  c: ["Deniz is 11. He has a fast laptop and registered in October.", "Kaan is 14, but he can only use his tablet at home.", "Sude is 13. She has a laptop and registered on 30 October.", "Arya is 15 and has a laptop, but she has violin lessons every Saturday afternoon."],
-  a: "C",
-  s: `<p>Bütün koşulları sağlayan öğrenciyi arıyoruz: 12–15 yaş, laptop, cumartesi 14.00–16.00 boş, 1 Kasım’dan önce kayıt.</p><ul><li>Sude: 13 yaşında, laptopu var, 30 Ekim’de (1 Kasım’dan önce) kaydolmuş ✓.</li><li>Deniz: 11 yaşında → yaş sınırının altında ✗.</li><li>Kaan: yalnızca tablet kullanabiliyor → “Tablets are not suitable.” ✗</li><li>Arya: cumartesi öğleden sonraları dolu → atölye saatine katılamaz ✗.</li></ul> Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><p><b>hacker · block · attachment · browser · virus</b></p></div>
-<p>(1) a program that can damage the files on your computer<br>(2) to stop someone from sending you messages or seeing your profile<br>(3) a person who gets into other people’s computers without permission<br>(4) a file that you send together with an e-mail</p>
-<p>Which word in the box is <b>NOT</b> defined above?</p>`,
-  c: ["browser", "virus", "block", "attachment"],
-  a: "A",
-  s: `<p>Tanımları eşleştirelim: (1) dosyalara zarar veren program → <b>virus</b>; (2) birinin sana mesaj atmasını/profilini görmesini engellemek → <b>block</b>; (3) izinsiz başkalarının bilgisayarına giren kişi → <b>hacker</b>; (4) e-postayla birlikte gönderilen dosya → <b>attachment</b>.</p><p><b>browser</b> (internet tarayıcısı: web sayfalarını açmaya yarayan program) tanımlanmamıştır. “hacker” ile “virus” birbirine karıştırılabilir: biri kişi, diğeri programdır. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="dialog"><div><b>Teacher:</b> Some people say shopping online isn’t always a good idea. Can anyone give an example?</div><div><b>Ayşe:</b> Sure. ----</div></div>
-<p>Which of the following best completes the dialogue?</p>`,
-  c: ["You can compare the prices on different websites in just a few minutes.", "You don’t have to leave your house, even when it’s raining.", "Many websites offer free delivery for big orders.", "Sometimes the product you get looks very different from the photo on the website."],
-  a: "D",
-  s: `<p>Öğretmen internetten alışverişin <b>her zaman iyi bir fikir olmadığına</b> dair, yani <b>olumsuz</b> bir örnek istiyor (2024 LGS kalıbı: görüşe uygun örnek).</p><p>Gelen ürünün sitedeki fotoğraftan çok farklı görünmesi olumsuz bir durumdur ✓. Fiyat karşılaştırma, evden çıkmadan alışveriş ve ücretsiz kargo ise internetten alışverişin <b>avantajlarıdır</b>; görüşü desteklemez. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<p>100 students answered a survey: 50 of them keep their phone in their bedroom at night, and 50 of them don’t.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="How many hours do you sleep on school nights?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">How many hours do you sleep on school nights?</text>
-<rect x="120" y="30" width="12" height="12" fill="#ea580c"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">Phone in bedroom</text>
-<rect x="268" y="30" width="12" height="12" fill="#2563eb"/>
-<text x="284" y="40" font-size="11.5" fill="#1e293b">No phone in bedroom</text>
-<line x1="60" y1="200.0" x2="520" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="175.0" x2="520" y2="175.0" stroke="#e2e8f0"/>
-<text x="54" y="179.0" font-size="11" fill="#475569" text-anchor="end">5</text>
-<line x1="60" y1="150.0" x2="520" y2="150.0" stroke="#e2e8f0"/>
-<text x="54" y="154.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="125.0" x2="520" y2="125.0" stroke="#e2e8f0"/>
-<text x="54" y="129.0" font-size="11" fill="#475569" text-anchor="end">15</text>
-<line x1="60" y1="100.0" x2="520" y2="100.0" stroke="#e2e8f0"/>
-<text x="54" y="104.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="75.0" x2="520" y2="75.0" stroke="#e2e8f0"/>
-<text x="54" y="79.0" font-size="11" fill="#475569" text-anchor="end">25</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<rect x="102.7" y="75.0" width="32.0" height="125.0" fill="#ea580c"/>
-<text x="118.7" y="71.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">25</text>
-<rect x="136.7" y="175.0" width="32.0" height="25.0" fill="#2563eb"/>
-<text x="152.7" y="171.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">5</text>
-<text x="136.7" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Less than 7 hours</text>
-<rect x="256.0" y="125.0" width="32.0" height="75.0" fill="#ea580c"/>
-<text x="272.0" y="121.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">15</text>
-<rect x="290.0" y="100.0" width="32.0" height="100.0" fill="#2563eb"/>
-<text x="306.0" y="96.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">20</text>
-<text x="290.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">7–8 hours</text>
-<rect x="409.3" y="150.0" width="32.0" height="50.0" fill="#ea580c"/>
-<text x="425.3" y="146.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">10</text>
-<rect x="443.3" y="75.0" width="32.0" height="125.0" fill="#2563eb"/>
-<text x="459.3" y="71.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">25</text>
-<text x="443.3" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">More than 8 hours</text>
-<line x1="60" y1="200" x2="520" y2="200" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<p>Which of the following can be said according to the graph?</p>`,
-  c: ["Half of the students with a phone in their bedroom sleep less than seven hours.", "Most students without a phone in their bedroom sleep seven to eight hours.", "The same number of students in both groups sleep seven to eight hours.", "More students with a phone in their bedroom sleep more than eight hours."],
-  a: "A",
-  s: `<p>Her grup 50 kişi.</p><ul><li>Telefonu yatak odasında olanlar: 7 saatten az uyuyan 25 → 25/50 = yarısı ✓.</li><li>Telefonu olmayanlarda 7–8 saat uyuyan 20 → 20/50 = %40; “most” (çoğu) için yarıdan fazla gerekir ✗.</li><li>7–8 saat: 15 ve 20 → eşit değil ✗.</li><li>8 saatten fazla: telefonu olanlar 10, olmayanlar 25 → telefonu <b>olmayanlar</b> daha fazla ✗.</li></ul> Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Lara, Efe and Nehir are in a group chat.</p>
-<div class="fig"><svg viewBox="0 0 540 278" width="540" role="img" aria-label="Grup sohbeti">
-<rect x="4" y="4" width="532" height="270" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="24" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Science Project 8C</text>
-<rect x="18" y="44" width="430" height="28" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Lara:</tspan> Can we have a video call tonight to finish the slides?</text>
-<text x="442" y="68" font-size="11" fill="#64748b" text-anchor="end">19:02</text>
-<rect x="92" y="80" width="430" height="44" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="98" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Efe:</tspan> I can’t join before 9. My piano lesson finishes at 8:30, and</text>
-<text x="102" y="114" font-size="11.5" fill="#1e293b">then I take the bus home.</text>
-<text x="516" y="120" font-size="11" fill="#64748b" text-anchor="end">19:05</text>
-<rect x="18" y="132" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="150" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Nehir:</tspan> 9 is fine for me, but my Wi-Fi is really slow, so I’ll use</text>
-<text x="28" y="166" font-size="11.5" fill="#1e293b">my mum’s laptop.</text>
-<text x="442" y="172" font-size="11" fill="#64748b" text-anchor="end">19:07</text>
-<rect x="18" y="184" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="202" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Lara:</tspan> Great! Efe, can you upload the photos to our shared folder</text>
-<text x="28" y="218" font-size="11.5" fill="#1e293b">before the call?</text>
-<text x="442" y="224" font-size="11" fill="#64748b" text-anchor="end">19:08</text>
-<rect x="92" y="236" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="254" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Efe:</tspan> Sure, I’ll do it on the bus.</text>
-<text x="516" y="260" font-size="11" fill="#64748b" text-anchor="end">19:10</text>
-</svg></div>
-<p>According to the messages, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["The friends will start the call as soon as Efe’s piano lesson finishes.", "Nehir won’t join the call because her Wi-Fi is too slow.", "Lara wants to finish the slides at school the next day.", "Efe is going to upload the photos before the video call."],
-  a: "D",
-  s: `<p>Lara, Efe’den fotoğrafları görüşmeden önce paylaşılan klasöre yüklemesini istiyor; Efe “Sure, I’ll do it on the bus.” diyor ✓.</p><p>Ders 20.30’da bitiyor ama görüşme saat 9’da (21.00) ✗. Nehir’in Wi-Fi’ı yavaş ama annesinin laptopuyla katılacak ✗. Lara slaytları “tonight” (bu akşam) bitirmek istiyor, okulda değil ✗. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 171" width="540" role="img" aria-label="COMPUTER LAB RULES">
-<rect x="4" y="4" width="532" height="163" rx="12" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#334155"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">COMPUTER LAB RULES</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">1. Log out of your account before you leave.</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">2. Do not download games or music.</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">3. You can print up to 5 pages a day for free.</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">4. You need headphones to watch videos.</text>
-<text x="26" y="142" font-size="11.5" fill="#1e293b">5. Food and drinks are not allowed.</text>
-</svg></div>
-<p>Which of the following is <b>NOT</b> correct according to the rules?</p>`,
-  c: ["Students must sign out when they finish using a computer.", "Students mustn’t save music from the Internet onto the computers.", "Students can watch videos without headphones if the sound is low.", "Students don’t have to pay for printing three pages."],
-  a: "C",
-  s: `<p>Kuralları şıklarla eşleştirelim:</p><ul><li>“must sign out” = 1. kural (log out = sign out) ✓.</li><li>“mustn’t save music from the Internet” = 2. kural (müzik indirmek yasak) ✓.</li><li>“don’t have to pay for three pages” = 3. kural (günde 5 sayfaya kadar ücretsiz) ✓.</li><li>4. kurala göre video izlemek için <b>kulaklık gerekir</b>; sesin kısık olması bir istisna değildir ✗.</li></ul> Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 242" width="540" role="img" aria-label="Forum görüşleri">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">FORUM: Can online friends be real friends?</text>
-<rect x="10" y="34" width="255" height="102" rx="10" fill="#f8fafc" stroke="#0369a1" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#0369a1" font-weight="bold">Irmak</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">I met my best friend in an online book</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">club. We chatted for three years and</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">finally met last summer. Online</text>
-<text x="22" y="124" font-size="11.5" fill="#1e293b">friends can be real friends.</text>
-<rect x="275" y="34" width="255" height="102" rx="10" fill="#f8fafc" stroke="#b91c1c" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#b91c1c" font-weight="bold">Bora</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">How can you trust someone you have</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">never seen? People can easily lie</text>
-<text x="287" y="108" font-size="11.5" fill="#1e293b">about their name or age.</text>
-<rect x="10" y="146" width="255" height="86" rx="10" fill="#f8fafc" stroke="#15803d" stroke-width="1.5"/>
-<text x="22" y="167" font-size="12.5" fill="#15803d" font-weight="bold">Defne</text>
-<text x="22" y="188" font-size="11.5" fill="#1e293b">My online friends support me a lot</text>
-<text x="22" y="204" font-size="11.5" fill="#1e293b">when I’m sad. I just never give them</text>
-<text x="22" y="220" font-size="11.5" fill="#1e293b">my home address.</text>
-<rect x="275" y="146" width="255" height="86" rx="10" fill="#f8fafc" stroke="#b45309" stroke-width="1.5"/>
-<text x="287" y="167" font-size="12.5" fill="#b45309" font-weight="bold">Umut</text>
-<text x="287" y="188" font-size="11.5" fill="#1e293b">To me, a friend is someone who can</text>
-<text x="287" y="204" font-size="11.5" fill="#1e293b">give you a hug when you’re upset. A</text>
-<text x="287" y="220" font-size="11.5" fill="#1e293b">screen can’t do that.</text>
-</svg></div>
-<p>Which two people do <b>NOT</b> believe that online friends can be real friends?</p>`,
-  c: ["Irmak and Defne", "Bora and Umut", "Bora and Defne", "Irmak and Umut"],
-  a: "B",
-  s: `<p><b>Irmak</b> internetten tanıştığı arkadaşıyla yüz yüze de görüşmüş ve “Online friends can be real friends.” diyor (olumlu). <b>Defne</b> internet arkadaşlarının ona destek olduğunu söylüyor; yalnızca ev adresini vermeyerek dikkatli davranıyor (olumlu).</p><p><b>Bora</b> hiç görmediğin birine güvenemeyeceğini, <b>Umut</b> ise ekranın sarılmanın yerini tutamayacağını söylüyor; ikisi de internet arkadaşlığının gerçek arkadaşlık olamayacağını düşünüyor. Defne’nin uyarısı onu olumsuz gösterir sanılabilir; ama bu bir güvenlik önlemidir. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<p>Arda has a 20 GB mobile Internet package. The chart shows how he used all of it last month.</p>
-<div class="fig"><svg viewBox="0 0 540 196" width="540" role="img" aria-label="How Arda used his 20 GB last month">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">How Arda used his 20 GB last month</text>
-<text x="160" y="55" font-size="11.5" fill="#1e293b" text-anchor="end">Watching videos</text>
-<rect x="170" y="40" width="288.0" height="20" rx="3" fill="#0d9488"/>
-<text x="464.0" y="55" font-size="11.5" fill="#1e293b" font-weight="bold">9 GB</text>
-<text x="160" y="85" font-size="11.5" fill="#1e293b" text-anchor="end">Social media</text>
-<rect x="170" y="70" width="160.0" height="20" rx="3" fill="#0d9488"/>
-<text x="336.0" y="85" font-size="11.5" fill="#1e293b" font-weight="bold">5 GB</text>
-<text x="160" y="115" font-size="11.5" fill="#1e293b" text-anchor="end">Music</text>
-<rect x="170" y="100" width="96.0" height="20" rx="3" fill="#0d9488"/>
-<text x="272.0" y="115" font-size="11.5" fill="#1e293b" font-weight="bold">3 GB</text>
-<text x="160" y="145" font-size="11.5" fill="#1e293b" text-anchor="end">Online games</text>
-<rect x="170" y="130" width="64.0" height="20" rx="3" fill="#0d9488"/>
-<text x="240.0" y="145" font-size="11.5" fill="#1e293b" font-weight="bold">2 GB</text>
-<text x="160" y="175" font-size="11.5" fill="#1e293b" text-anchor="end">Other</text>
-<rect x="170" y="160" width="32.0" height="20" rx="3" fill="#0d9488"/>
-<text x="208.0" y="175" font-size="11.5" fill="#1e293b" font-weight="bold">1 GB</text>
-</svg></div>
-<p>According to the chart, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["He used almost half of his data for watching videos.", "A quarter of his data went on social media.", "Online games used twice as much data as “Other”.", "He used more data for music and games together than for social media."],
-  a: "D",
-  s: `<p>Toplam 20 GB:</p><ul><li>Video 9 GB → 9/20 = %45, “almost half” (neredeyse yarısı) ✓.</li><li>Sosyal medya 5 GB → 5/20 = {{1|4}} (a quarter) ✓.</li><li>Oyun 2 GB, diğer 1 GB → iki katı ✓.</li><li>Müzik + oyun = 3 + 2 = 5 GB; sosyal medya da 5 GB → <b>eşit</b>, daha fazla değil ✗.</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 122" width="540" role="img" aria-label="Forum gönderisi">
-<rect x="10" y="10" width="520" height="102" rx="10" fill="#fff7ed" stroke="#9a3412" stroke-width="1.5"/>
-<text x="22" y="31" font-size="12.5" fill="#9a3412" font-weight="bold">HELP! My account was hacked :(  – posted by Ozan_14</text>
-<text x="22" y="52" font-size="11.5" fill="#1e293b">Yesterday, some friends told me that I had sent them strange links. I didn’t</text>
-<text x="22" y="68" font-size="11.5" fill="#1e293b">send anything! When I tried to log in to my account, my password didn’t work. I</text>
-<text x="22" y="84" font-size="11.5" fill="#1e293b">think someone hacked it. I used the same password for all my accounts: my dog’s</text>
-<text x="22" y="100" font-size="11.5" fill="#1e293b">name and my birth year. What should I do now?</text>
-</svg></div>
-<p>Which of the following is <b>NOT</b> true about Ozan?</p>`,
-  c: ["His friends received messages that he didn’t send.", "He can’t sign in to his account at the moment.", "He had a strong password that was different for each account.", "He wants other people to give him advice."],
-  a: "C",
-  s: `<p>Ozan tüm hesaplarında <b>aynı</b> şifreyi kullanmış ve şifresi köpeğinin adı + doğum yılından oluşuyor: bu <b>zayıf</b> bir şifredir. “Güçlü ve her hesapta farklı” ifadesi yanlıştır.</p><p>Arkadaşlarına onun göndermediği garip bağlantılar gitmiş ✓; şifresi çalışmadığı için giriş yapamıyor ✓; “What should I do now?” diyerek tavsiye istiyor ✓. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="dialog"><div><b>Dad:</b> Zehra, why are you still online? It’s almost midnight!</div><div><b>Zehra:</b> ----</div><div><b>Dad:</b> I understand, but you can finish it tomorrow morning. You need to sleep now.</div><div><b>Zehra:</b> OK, Dad. I’ll log out and go to bed.</div></div>
-<p>Which of the following best completes the dialogue?</p>`,
-  c: ["I’m almost done with my online English homework.", "I’m sorry, I’ve already turned off my laptop.", "I never go online at night, you know that.", "All my friends are asleep, so there’s nobody to chat with."],
-  a: "A",
-  s: `<p>Babanın cevabı ipucudur: “Anlıyorum ama onu yarın sabah <b>bitirebilirsin</b>.” Demek ki Zehra bitirmesi gereken bir iş yapıyordur: “I’m almost done with my online English homework.”</p><p>Laptopu çoktan kapattığını ya da gece hiç internete girmediğini söylemesi, babanın “still online” sözüyle ve Zehra’nın sonra “I’ll log out” demesiyle çelişir. Arkadaşlarının uyuduğunu söylemek “finish it tomorrow” ile bağlantılı değildir. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 162" width="540" role="img" aria-label="İki profil kartı">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Two accounts on a photo-sharing app</text>
-<rect x="10" y="34" width="255" height="118" rx="10" fill="#f8fafc" stroke="#2563eb" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#2563eb" font-weight="bold">Leo_Draws</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">Age: 16</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">Joined: 2021</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">Posts: 340</text>
-<text x="22" y="124" font-size="11.5" fill="#1e293b">Followers: 12,500</text>
-<text x="22" y="140" font-size="11.5" fill="#1e293b">Following: 210</text>
-<rect x="275" y="34" width="255" height="118" rx="10" fill="#f8fafc" stroke="#db2777" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#db2777" font-weight="bold">Mia.Bakes</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">Age: 14</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">Joined: 2019</text>
-<text x="287" y="108" font-size="11.5" fill="#1e293b">Posts: 520</text>
-<text x="287" y="124" font-size="11.5" fill="#1e293b">Followers: 9,800</text>
-<text x="287" y="140" font-size="11.5" fill="#1e293b">Following: 450</text>
-</svg></div>
-<p>According to the profiles, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["Leo is older than Mia, but he joined the app later.", "Leo follows more people than Mia does.", "Mia has shared more posts, but she has fewer followers than Leo.", "Mia has been using the app for longer than Leo."],
-  a: "B",
-  s: `<p>Kartları karşılaştıralım:</p><ul><li>Leo 16, Mia 14 yaşında; Leo 2021’de, Mia 2019’da katılmış → Leo daha büyük ama daha geç katılmış ✓.</li><li>Gönderi: Mia 520 &gt; Leo 340; takipçi: Mia 9,800 &lt; Leo 12,500 ✓.</li><li>Mia 2019’dan beri uygulamada → daha uzun süredir kullanıyor ✓.</li><li>“Following” (takip ettiği kişi): Leo 210, Mia 450 → Mia daha çok kişiyi takip ediyor ✗.</li></ul><p>“Followers” (takipçi) ile “Following” (takip edilen) karıştırılmamalıdır. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="dialog"><div><b>Reporter:</b> ----</div><div><b>Selin:</b> Because it saves time. I can compare prices on different websites without leaving home, and things are often cheaper.</div></div>
-<p>Which question does the reporter ask?</p>`,
-  c: ["Why do you prefer shopping online?", "How often do you shop online?", "What do you usually buy on the Internet?", "Which website do you use for shopping?"],
-  a: "A",
-  s: `<p>Selin cevabına “<b>Because</b> it saves time…” diye başlıyor ve nedenler sıralıyor (zaman kazandırıyor, fiyat karşılaştırabiliyor, daha ucuz). Neden soran soru <b>Why</b> ile başlar: “Why do you prefer shopping online?”</p><p>How often sıklık (twice a month gibi), What ne aldığını (clothes, books), Which hangi siteyi sorar; cevapta bunlar yoktur. Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>This is Ahmet’s browser history from yesterday evening.</p>
-<div class="fig"><svg viewBox="0 0 540 138" width="540" role="img" aria-label="Tarayıcı geçmişi">
-<rect x="10" y="10" width="520" height="118" rx="10" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
-<text x="22" y="31" font-size="12.5" fill="#475569" font-weight="bold">History – Yesterday</text>
-<text x="22" y="52" font-size="11.5" fill="#1e293b">18:05  Search: “easy pasta recipes for beginners”</text>
-<text x="22" y="68" font-size="11.5" fill="#1e293b">18:40  Search: “how to remove tomato sauce from a T-shirt”</text>
-<text x="22" y="84" font-size="11.5" fill="#1e293b">19:30  Maths Quiz – Unit 3 · Your score: 9/10</text>
-<text x="22" y="100" font-size="11.5" fill="#1e293b">20:15  Search: “cheap flights Istanbul to Berlin December”</text>
-<text x="22" y="116" font-size="11.5" fill="#1e293b">21:00  Video: “Learn 50 German Words in 10 Minutes”</text>
-</svg></div>
-<p>Which of the following is <b>NOT</b> supported by the browser history?</p>`,
-  c: ["He looked for a recipe before he searched how to clean a stain.", "He did well in an online Maths quiz.", "He has already bought a plane ticket to Berlin.", "He watched a video about a foreign language."],
-  a: "C",
-  s: `<p>Geçmişe göre Ahmet 18.05’te tarif, 18.40’ta leke çıkarma yöntemi aramış (sıra doğru) ✓; Maths testinden 9/10 almış ✓; Almanca kelime videosu izlemiş ✓.</p><p>20.15’te yalnızca ucuz uçuş <b>aramış</b>; bilet satın aldığına dair bir kayıt yok. “Arama yapmak” ile “satın almak” aynı şey değildir. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>The graph shows the number of followers on Ece’s travel blog in the first six months of the year.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Followers of Ece’s blog">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Followers of Ece’s blog</text>
-<line x1="60" y1="200.0" x2="510" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="169.0" x2="510" y2="169.0" stroke="#e2e8f0"/>
-<text x="54" y="173.0" font-size="11" fill="#475569" text-anchor="end">200</text>
-<line x1="60" y1="138.0" x2="510" y2="138.0" stroke="#e2e8f0"/>
-<text x="54" y="142.0" font-size="11" fill="#475569" text-anchor="end">400</text>
-<line x1="60" y1="107.0" x2="510" y2="107.0" stroke="#e2e8f0"/>
-<text x="54" y="111.0" font-size="11" fill="#475569" text-anchor="end">600</text>
-<line x1="60" y1="76.0" x2="510" y2="76.0" stroke="#e2e8f0"/>
-<text x="54" y="80.0" font-size="11" fill="#475569" text-anchor="end">800</text>
-<line x1="60" y1="45.0" x2="510" y2="45.0" stroke="#e2e8f0"/>
-<text x="54" y="49.0" font-size="11" fill="#475569" text-anchor="end">1000</text>
-<text x="80.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">Jan</text>
-<text x="162.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">Feb</text>
-<text x="244.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">Mar</text>
-<text x="326.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">Apr</text>
-<text x="408.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">May</text>
-<text x="490.0" y="218" font-size="11.5" fill="#1e293b" text-anchor="middle">Jun</text>
-<polyline points="80.0,169.0 162.0,145.8 244.0,145.8 326.0,107.0 408.0,122.5 490.0,60.5" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
-<circle cx="80.0" cy="169.0" r="4" fill="#7c3aed"/>
-<text x="80.0" y="160.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">200</text>
-<circle cx="162.0" cy="145.8" r="4" fill="#7c3aed"/>
-<text x="162.0" y="136.8" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">350</text>
-<circle cx="244.0" cy="145.8" r="4" fill="#7c3aed"/>
-<text x="244.0" y="136.8" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">350</text>
-<circle cx="326.0" cy="107.0" r="4" fill="#7c3aed"/>
-<text x="326.0" y="98.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">600</text>
-<circle cx="408.0" cy="122.5" r="4" fill="#7c3aed"/>
-<text x="408.0" y="113.5" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">500</text>
-<circle cx="490.0" cy="60.5" r="4" fill="#7c3aed"/>
-<text x="490.0" y="51.5" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">900</text>
-<line x1="60" y1="200" x2="510" y2="200" stroke="#334155"/>
-</svg></div>
-<p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["The number of followers went up every month.", "The number of followers didn’t change between February and March.", "Ece lost some followers in April.", "Ece had three times as many followers in June as in February."],
-  a: "B",
-  s: `<p>Şubat 350, mart 350 → değişmemiş ✓.</p><p>Mart’ta sabit kalmış, mayısta 600’den 500’e düşmüş; yani her ay artmamış ✗. Takipçi kaybı nisanda değil mayısta ✗ (nisanda 350’den 600’e çıkmış). Haziran 900, şubat 350 → 900 ÷ 350 ≈ 2,6; üç katı değil ✗ (üç katı 1,050 olurdu). Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 189" width="540" role="img" aria-label="OUR FAMILY INTERNET AGREEMENT">
-<rect x="4" y="4" width="532" height="181" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#15803d"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">OUR FAMILY INTERNET AGREEMENT</text>
-<text x="270" y="58" font-size="12" fill="#15803d" font-weight="bold" text-anchor="middle">Signed: Efe</text>
-<text x="26" y="76" font-size="11.5" fill="#1e293b">1. I won’t use my phone after 10 p.m. on school nights.</text>
-<text x="26" y="97" font-size="11.5" fill="#1e293b">2. I’ll ask my parents before I download a new app.</text>
-<text x="26" y="118" font-size="11.5" fill="#1e293b">3. I’ll never share my location with people I don’t know.</text>
-<text x="26" y="139" font-size="11.5" fill="#1e293b">4. At the weekend, I can play online games for up to three hours a day.</text>
-<text x="26" y="160" font-size="11.5" fill="#1e293b">5. I’ll tell my parents if something online makes me feel uncomfortable.</text>
-</svg></div>
-<p>Which of the following situations <b>breaks</b> the agreement?</p>`,
-  c: ["On Saturday, Efe played online games from 2 p.m. to 4:30 p.m.", "Efe asked his mum before he downloaded a drawing app.", "Efe told his dad about a rude message from a stranger.", "On Tuesday night, Efe chatted with his friends on his phone until 10:45 p.m."],
-  a: "D",
-  s: `<p>Salı bir okul gecesidir; Efe telefonu 22.00’den sonra, 22.45’e kadar kullanmış → 1. kuralı <b>bozuyor</b>.</p><p>Cumartesi 14.00–16.30 = 2,5 saat oyun; hafta sonu sınırı 3 saat olduğu için kurala uygun ✓. Uygulama indirmeden önce annesine sorması 2. kurala, kaba mesajı babasına anlatması 5. kurala uygundur ✓. Cevap <b>D</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><p>Never (1) ---- links in messages from people you don’t know, because they may take you to dangerous websites. And when you use a computer at a library or an Internet café, don’t forget to (2) ---- of your accounts before you leave.</p></div>
-<p>Which of the following best completes the text?</p>`,
-  c: ["(1) upload – (2) log in", "(1) click on – (2) log out", "(1) click on – (2) sign up", "(1) share – (2) download"],
-  a: "B",
-  s: `<p>(1) Bilinmeyen kişilerden gelen bağlantılara asla <b>tıklama</b> (click on): tehlikeli sitelere götürebilir. Bağlantı “yüklenmez” (upload) ya da paylaşılmaz; konu ona tıklamaktır.</p><p>(2) Kütüphane ya da internet kafede bilgisayar kullanınca ayrılmadan önce hesaplarından <b>çıkış yap</b> (log out of). “of” edatı da “log out of your accounts” kalıbını gösterir; log in (giriş yap), sign up (kaydol) ve download (indir) anlama da kalıba da uymaz. Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><p>Many parents think online games are a waste of time. However, some games teach children teamwork and problem-solving. In my class, students who play strategy games are often better at planning their projects. Still, I believe games should never take the place of sleep, homework or family time.<br><i>– Ms. Demir, ICT teacher</i></p></div>
-<p>Which of the following best summarises Ms. Demir’s opinion?</p>`,
-  c: ["Online games are harmful, so children should stop playing them.", "Parents are right to think that online games are a waste of time.", "Online games can be useful if children play them in a balanced way.", "Children who play online games always get better marks at school."],
-  a: "C",
-  s: `<p>Ms. Demir oyunların takım çalışması ve problem çözme öğretebildiğini söylüyor (fayda), ama uykunun, ödevin ve aile zamanının yerini asla almaması gerektiğini ekliyor (denge). Özeti: oyunlar dengeli oynanırsa yararlı olabilir.</p><p>Tamamen zararlı demiyor; ebeveynlerin “zaman kaybı” görüşüne “However” ile karşı çıkıyor; “always get better marks” ise metindeki “often better at planning” ifadesini abartır. Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<p>60 sixth graders and 60 eighth graders answered the question below.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Do you check if online news is true before you share it?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Do you check if online news is true before you share it?</text>
-<rect x="120" y="30" width="12" height="12" fill="#8b5cf6"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">Grade 6</text>
-<rect x="205" y="30" width="12" height="12" fill="#10b981"/>
-<text x="221" y="40" font-size="11.5" fill="#1e293b">Grade 8</text>
-<line x1="60" y1="200.0" x2="520" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="175.0" x2="520" y2="175.0" stroke="#e2e8f0"/>
-<text x="54" y="179.0" font-size="11" fill="#475569" text-anchor="end">5</text>
-<line x1="60" y1="150.0" x2="520" y2="150.0" stroke="#e2e8f0"/>
-<text x="54" y="154.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="125.0" x2="520" y2="125.0" stroke="#e2e8f0"/>
-<text x="54" y="129.0" font-size="11" fill="#475569" text-anchor="end">15</text>
-<line x1="60" y1="100.0" x2="520" y2="100.0" stroke="#e2e8f0"/>
-<text x="54" y="104.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="75.0" x2="520" y2="75.0" stroke="#e2e8f0"/>
-<text x="54" y="79.0" font-size="11" fill="#475569" text-anchor="end">25</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<rect x="102.7" y="140.0" width="32.0" height="60.0" fill="#8b5cf6"/>
-<text x="118.7" y="136.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">12</text>
-<rect x="136.7" y="65.0" width="32.0" height="135.0" fill="#10b981"/>
-<text x="152.7" y="61.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">27</text>
-<text x="136.7" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Always</text>
-<rect x="256.0" y="50.0" width="32.0" height="150.0" fill="#8b5cf6"/>
-<text x="272.0" y="46.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">30</text>
-<rect x="290.0" y="80.0" width="32.0" height="120.0" fill="#10b981"/>
-<text x="306.0" y="76.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">24</text>
-<text x="290.0" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Sometimes</text>
-<rect x="409.3" y="110.0" width="32.0" height="90.0" fill="#8b5cf6"/>
-<text x="425.3" y="106.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">18</text>
-<rect x="443.3" y="155.0" width="32.0" height="45.0" fill="#10b981"/>
-<text x="459.3" y="151.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">9</text>
-<text x="443.3" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Never</text>
-<line x1="60" y1="200" x2="520" y2="200" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<p>According to the graph, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Fewer than half of the eighth graders always check the news.", "Half of the sixth graders never check the news.", "The number of students who never check the news is the same in both grades.", "More sixth graders than eighth graders always check the news."],
-  a: "A",
-  s: `<p>Her sınıf 60 kişi, yarısı 30.</p><ul><li>8. sınıfta “Always” 27 → 27 &lt; 30, yani yarıdan az ✓ (en yüksek sütun olduğu için “çoğu” sanılabilir).</li><li>6. sınıfta “Never” 18 → 18/60 = %30, yarısı değil ✗ (yarısı olan 30 kişi “Sometimes”).</li><li>“Never”: 18 ve 9 → eşit değil ✗.</li><li>“Always”: 6. sınıf 12, 8. sınıf 27 → 8. sınıf daha fazla ✗.</li></ul> Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<p>Ali is chatting with an online store’s help assistant.</p>
-<div class="fig"><svg viewBox="0 0 540 262" width="540" role="img" aria-label="Canlı destek sohbeti">
-<rect x="4" y="4" width="532" height="254" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="24" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">ShopEasy – Live Help</text>
-<rect x="18" y="44" width="430" height="28" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Assistant:</tspan> Hello! How can I help you today?</text>
-<rect x="92" y="80" width="430" height="44" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="98" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Ali:</tspan> I ordered a phone case three days ago, but it hasn’t arrived</text>
-<text x="102" y="114" font-size="11.5" fill="#1e293b">yet.</text>
-<rect x="18" y="132" width="430" height="28" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="150" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Assistant:</tspan> ----</text>
-<rect x="92" y="168" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="186" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Ali:</tspan> Sure, it’s 48213.</text>
-<rect x="18" y="204" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="222" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Assistant:</tspan> Thank you. Your package is at the local post office</text>
-<text x="28" y="238" font-size="11.5" fill="#1e293b">now. You’ll get it tomorrow.</text>
-</svg></div>
-<p>Which of the following best completes the conversation?</p>`,
-  c: ["Could you tell me your order number, please?", "How much did you pay for the phone case?", "Would you like to cancel your order?", "When did you order the phone case?"],
-  a: "A",
-  s: `<p>Ali’nin cevabı “Sure, it’s 48213.” bir <b>numara</b>dır ve asistan bu bilgiyle paketin yerini bulur. Demek ki asistan sipariş numarasını sormuştur.</p><p>Fiyat sorusunun cevabı “… TL” olurdu; iptal sorusuna “Yes/No” ile cevap verilirdi; siparişin ne zaman verildiğini Ali zaten söyledi (three days ago). Cevap <b>A</b>.</p>` },
-{ lv: "orta", q: `<div class="box"><p><b>Melis:</b> “I hardly ever post anything on social media, but I scroll through my feed all the time.”</p></div>
-<p>Which of the following is closest in meaning to what Melis says?</p>`,
-  c: ["I never look at social media, but I share a lot of posts.", "I sometimes post photos, and I only scroll down when I’m bored.", "I rarely share things online, but I often look at other people’s posts.", "I share something every day, but I seldom read other people’s posts."],
-  a: "C",
-  s: `<p><b>hardly ever</b> = rarely (nadiren) → nadiren paylaşım yapıyor; <b>all the time</b> = very often (sürekli) → başkalarının gönderilerine sürekli bakıyor (scroll through my feed).</p><p>Diğer şıklar anlamı tersine çeviriyor: “never look … share a lot” ve “share every day … seldom read” iki bilgiyi de değiştiriyor; “sometimes post … only when I’m bored” ise sıklıkları yanlış veriyor (hardly ever ≠ sometimes, all the time ≠ only when bored). Cevap <b>C</b>.</p>` },
-{ lv: "orta", q: `<div class="fig"><svg viewBox="0 0 540 210" width="540" role="img" aria-label="Dört uygulama kartı">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Popular Apps for Students</text>
-<rect x="10" y="34" width="255" height="70" rx="10" fill="#f8fafc" stroke="#2563eb" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#2563eb" font-weight="bold">WordUp  ★ 4.6</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">Learn new English words with fun games</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">Downloads: 2.1 million</text>
-<rect x="275" y="34" width="255" height="70" rx="10" fill="#f8fafc" stroke="#ea580c" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#ea580c" font-weight="bold">FitKid  ★ 4.2</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">Short workouts for teens to do at home</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">Downloads: 850,000</text>
-<rect x="10" y="114" width="255" height="86" rx="10" fill="#f8fafc" stroke="#16a34a" stroke-width="1.5"/>
-<text x="22" y="135" font-size="12.5" fill="#16a34a" font-weight="bold">NoteMate  ★ 4.8</text>
-<text x="22" y="156" font-size="11.5" fill="#1e293b">Take notes and share them with your</text>
-<text x="22" y="172" font-size="11.5" fill="#1e293b">classmates</text>
-<text x="22" y="188" font-size="11.5" fill="#1e293b">Downloads: 1.4 million</text>
-<rect x="275" y="114" width="255" height="86" rx="10" fill="#f8fafc" stroke="#7c3aed" stroke-width="1.5"/>
-<text x="287" y="135" font-size="12.5" fill="#7c3aed" font-weight="bold">SkyWatch  ★ 4.4</text>
-<text x="287" y="156" font-size="11.5" fill="#1e293b">Find stars and planets with your</text>
-<text x="287" y="172" font-size="11.5" fill="#1e293b">phone’s camera</text>
-<text x="287" y="188" font-size="11.5" fill="#1e293b">Downloads: 600,000</text>
-</svg></div>
-<p>According to the information, which of the following is <b>TRUE</b>?</p>`,
-  c: ["The app for exercising at home has the highest rating.", "The app about the night sky has fewer downloads than all the other apps.", "The language app has both the most downloads and the highest rating.", "The note-taking app has more downloads than the language app."],
-  a: "B",
-  s: `<p>İndirme: WordUp 2.1 milyon &gt; NoteMate 1.4 milyon &gt; FitKid 850,000 &gt; SkyWatch 600,000. Puan: NoteMate 4.8 &gt; WordUp 4.6 &gt; SkyWatch 4.4 &gt; FitKid 4.2.</p><ul><li>Gece gökyüzü uygulaması (SkyWatch, “stars and planets”) en az indirilen ✓.</li><li>Evde egzersiz uygulaması (FitKid) en <b>düşük</b> puanlı ✗.</li><li>Dil uygulaması (WordUp) en çok indirilen ama en yüksek puan NoteMate’in ✗.</li><li>Not uygulaması (1.4 milyon) dil uygulamasından (2.1 milyon) az indirilmiş ✗.</li></ul> Cevap <b>B</b>.</p>` },
-{ lv: "orta", q: `<div class="dialog"><div><b>Mr. Aksoy:</b> Should we use tablets instead of printed textbooks at school?</div><div><b>Pınar:</b> Absolutely! Our school bags would be much lighter.</div><div><b>Tolga:</b> I’m not so sure. Looking at a screen all day hurts my eyes.</div><div><b>Nisa:</b> I agree with Tolga. And what if the battery dies in the middle of a lesson?</div><div><b>Emir:</b> You’ve got a point, Nisa, but schools could have charging stations. I’m with Pınar.</div></div>
-<p>Which of the following is <b>CORRECT</b> according to the discussion?</p>`,
-  c: ["Nisa and Emir have the same opinion.", "Emir thinks battery problems can’t be solved.", "Tolga and Nisa are against using tablets instead of textbooks.", "Pınar is worried about eye problems."],
-  a: "C",
-  s: `<p>Pınar “Absolutely!” diyerek tableti destekliyor (hafif çanta). Tolga “I’m not so sure” ile karşı çıkıyor (göz yorgunluğu); Nisa “I agree with Tolga” diyerek ona katılıyor (batarya sorunu). Yani Tolga ve Nisa tablete <b>karşı</b> ✓.</p><p>Emir “You’ve got a point, Nisa, <b>but</b>…” ile Nisa’yı anlıyor ama katılmıyor ve “I’m with Pınar” diyor; dolayısıyla Nisa ile aynı görüşte değil ✗. Emir şarj istasyonlarıyla batarya sorununun <b>çözülebileceğini</b> söylüyor ✗. Göz sorununu dile getiren Tolga’dır, Pınar değil ✗. Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>The same 80 students in a school answered two surveys. Each student chose only <b>one</b> answer for each question.</p>
-<div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="Graph 1: How many hours a day do you spend online?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Graph 1: How many hours a day do you spend online?</text>
-<rect x="120" y="30" width="12" height="12" fill="#94a3b8"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">2023</text>
-<rect x="184" y="30" width="12" height="12" fill="#2563eb"/>
-<text x="200" y="40" font-size="11.5" fill="#1e293b">2026</text>
-<line x1="60" y1="210.0" x2="520" y2="210.0" stroke="#e2e8f0"/>
-<text x="54" y="214.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="170.0" x2="520" y2="170.0" stroke="#e2e8f0"/>
-<text x="54" y="174.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="130.0" x2="520" y2="130.0" stroke="#e2e8f0"/>
-<text x="54" y="134.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="90.0" x2="520" y2="90.0" stroke="#e2e8f0"/>
-<text x="54" y="94.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">40</text>
-<rect x="83.5" y="130.0" width="32.0" height="80.0" fill="#94a3b8"/>
-<text x="99.5" y="126.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">20</text>
-<rect x="117.5" y="178.0" width="32.0" height="32.0" fill="#2563eb"/>
-<text x="133.5" y="174.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">8</text>
-<text x="117.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Less than</text>
-<text x="117.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">1 hour</text>
-<rect x="198.5" y="74.0" width="32.0" height="136.0" fill="#94a3b8"/>
-<text x="214.5" y="70.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">34</text>
-<rect x="232.5" y="106.0" width="32.0" height="104.0" fill="#2563eb"/>
-<text x="248.5" y="102.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">26</text>
-<text x="232.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">1–3</text>
-<text x="232.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">hours</text>
-<rect x="313.5" y="138.0" width="32.0" height="72.0" fill="#94a3b8"/>
-<text x="329.5" y="134.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">18</text>
-<rect x="347.5" y="90.0" width="32.0" height="120.0" fill="#2563eb"/>
-<text x="363.5" y="86.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">30</text>
-<text x="347.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">3–5</text>
-<text x="347.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">hours</text>
-<rect x="428.5" y="178.0" width="32.0" height="32.0" fill="#94a3b8"/>
-<text x="444.5" y="174.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">8</text>
-<rect x="462.5" y="146.0" width="32.0" height="64.0" fill="#2563eb"/>
-<text x="478.5" y="142.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">16</text>
-<text x="462.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">More than</text>
-<text x="462.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">5 hours</text>
-<line x1="60" y1="210" x2="520" y2="210" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<div class="fig"><svg viewBox="0 0 540 166" width="540" role="img" aria-label="Graph 2: What do you mostly do online? (2026)">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Graph 2: What do you mostly do online? (2026)</text>
-<text x="160" y="55" font-size="11.5" fill="#1e293b" text-anchor="end">Social media</text>
-<rect x="170" y="40" width="298.7" height="20" rx="3" fill="#f59e0b"/>
-<text x="474.7" y="55" font-size="11.5" fill="#1e293b" font-weight="bold">28</text>
-<text x="160" y="85" font-size="11.5" fill="#1e293b" text-anchor="end">Watching videos</text>
-<rect x="170" y="70" width="234.7" height="20" rx="3" fill="#f59e0b"/>
-<text x="410.7" y="85" font-size="11.5" fill="#1e293b" font-weight="bold">22</text>
-<text x="160" y="115" font-size="11.5" fill="#1e293b" text-anchor="end">Online games</text>
-<rect x="170" y="100" width="192.0" height="20" rx="3" fill="#f59e0b"/>
-<text x="368.0" y="115" font-size="11.5" fill="#1e293b" font-weight="bold">18</text>
-<text x="160" y="145" font-size="11.5" fill="#1e293b" text-anchor="end">Homework</text>
-<rect x="170" y="130" width="128.0" height="20" rx="3" fill="#f59e0b"/>
-<text x="304.0" y="145" font-size="11.5" fill="#1e293b" font-weight="bold">12</text>
-</svg></div>
-<p>Which of the following can <b>NOT</b> be inferred from the graphs?</p>`,
-  c: ["In 2026, more than half of the students spent at least three hours a day online.", "In 2023, the number of students who spent less than an hour a day online was more than twice the number in 2026.", "Most of the students who spent more than five hours a day online in 2026 mostly used social media.", "In 2026, doing homework was the least common reason for going online."],
-  a: "C",
-  s: `<p>Her şıkkı grafiklerle tek tek kontrol edelim:</p><ul><li>2026’da en az 3 saat: 30 + 16 = 46 öğrenci; 46/80 ≈ %57 → yarıdan fazla ✓.</li><li>1 saatten az: 2023’te 20, 2026’da 8; 20, 8’in iki katından (16) fazla ✓.</li><li>Grafik 2’de en küçük değer Homework (12) → en az tercih edilen ✓.</li><li>Grafik 1 süreyi, Grafik 2 etkinliği gösteriyor ama iki grafik birbirine bağlanmamış: 5 saatten fazla internette kalan 16 öğrencinin <b>hangi etkinliği</b> seçtiği bilinmiyor. Bu yüzden “çoğu sosyal medya kullanıyordu” <b>çıkarılamaz</b>.</li></ul><p>Tuzak: Öğrenci “en uzun süre + en popüler etkinlik” diye iki grafiği kendi kafasında eşleştirir; oysa veriler ayrı sorulardan gelir.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 450" width="540" role="img" aria-label="Forum gönderisi ve dört yanıt">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">FORUM: Should parents check their children’s social media?</text>
-<rect x="10" y="34" width="255" height="134" rx="10" fill="#f8fafc" stroke="#1e40af" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#1e40af" font-weight="bold">Burak (original post)</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">I think parents shouldn’t read their</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">children’s messages or check their</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">social media accounts. We are not</text>
-<text x="22" y="124" font-size="11.5" fill="#1e293b">little kids anymore, and we need</text>
-<text x="22" y="140" font-size="11.5" fill="#1e293b">some privacy. If parents trust us,</text>
-<text x="22" y="156" font-size="11.5" fill="#1e293b">we will be more careful online.</text>
-<rect x="275" y="34" width="255" height="134" rx="10" fill="#f8fafc" stroke="#16a34a" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#16a34a" font-weight="bold">Selin</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">I couldn’t agree more! My parents</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">never check my phone, and I always</text>
-<text x="287" y="108" font-size="11.5" fill="#1e293b">tell them when something strange</text>
-<text x="287" y="124" font-size="11.5" fill="#1e293b">happens online. Trust works better</text>
-<text x="287" y="140" font-size="11.5" fill="#1e293b">than control.</text>
-<rect x="10" y="178" width="255" height="134" rx="10" fill="#f8fafc" stroke="#b45309" stroke-width="1.5"/>
-<text x="22" y="199" font-size="12.5" fill="#b45309" font-weight="bold">Kaan</text>
-<text x="22" y="220" font-size="11.5" fill="#1e293b">I see your point, but it depends on</text>
-<text x="22" y="236" font-size="11.5" fill="#1e293b">the age. Children under 13 can</text>
-<text x="22" y="252" font-size="11.5" fill="#1e293b">easily believe strangers, so their</text>
-<text x="22" y="268" font-size="11.5" fill="#1e293b">parents should check their accounts.</text>
-<text x="22" y="284" font-size="11.5" fill="#1e293b">For teenagers like us, it isn’t</text>
-<text x="22" y="300" font-size="11.5" fill="#1e293b">necessary.</text>
-<rect x="275" y="178" width="255" height="134" rx="10" fill="#f8fafc" stroke="#dc2626" stroke-width="1.5"/>
-<text x="287" y="199" font-size="12.5" fill="#dc2626" font-weight="bold">Ece</text>
-<text x="287" y="220" font-size="11.5" fill="#1e293b">Sorry, but I don’t think so. The</text>
-<text x="287" y="236" font-size="11.5" fill="#1e293b">Internet is full of scams and fake</text>
-<text x="287" y="252" font-size="11.5" fill="#1e293b">accounts. Parents should check</text>
-<text x="287" y="268" font-size="11.5" fill="#1e293b">everything on their children’s</text>
-<text x="287" y="284" font-size="11.5" fill="#1e293b">phones until they are 18.</text>
-<rect x="10" y="322" width="255" height="118" rx="10" fill="#f8fafc" stroke="#7c3aed" stroke-width="1.5"/>
-<text x="22" y="343" font-size="12.5" fill="#7c3aed" font-weight="bold">Arda</text>
-<text x="22" y="364" font-size="11.5" fill="#1e293b">You’re right in a way. Reading</text>
-<text x="22" y="380" font-size="11.5" fill="#1e293b">private messages is too much.</text>
-<text x="22" y="396" font-size="11.5" fill="#1e293b">However, parents should at least</text>
-<text x="22" y="412" font-size="11.5" fill="#1e293b">know which apps we use and who we</text>
-<text x="22" y="428" font-size="11.5" fill="#1e293b">follow.</text>
-</svg></div>
-<p>According to the forum, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Selin and Arda completely agree with Burak.", "Ece and Kaan think parents should check all children’s accounts.", "Kaan and Arda partly agree with Burak.", "Ece is the only person who partly agrees with Burak."],
-  a: "C",
-  s: `<p>Yanıtları görüşe göre ayıralım:</p><ul><li><b>Selin:</b> “I couldn’t agree more!” → tamamen katılıyor.</li><li><b>Kaan:</b> “I see your point, but it depends on the age.” 13 yaş altı için kontrol gerekli, gençler için değil → <b>kısmen</b> katılıyor.</li><li><b>Ece:</b> “Sorry, but I don’t think so.” 18 yaşına kadar her şey kontrol edilmeli → katılmıyor.</li><li><b>Arda:</b> “You’re right in a way… However…” Mesajları okumak fazla ama uygulamaları bilmeliler → <b>kısmen</b> katılıyor.</li></ul><p>Çeldiriciler: Arda’nın “You’re right” ile başlaması onu tamamen katılıyor gibi gösterir ama “However” sonrası farklı düşünce var. Kaan herkesin değil yalnızca 13 yaş altı çocukların hesabının kontrol edilmesini istiyor. Ece kısmen değil tamamen karşı çıkıyor.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Nehir and her two brothers want to share <b>one</b> music plan.</p><div class="box"><p><b>Nehir:</b> We each need our own account, and nobody wants to hear ads. I listen to music on the school bus, but there’s no Internet connection there, so I must save songs to my phone. My older brother listens on his tablet. We can pay 150 TL a month at most.</p></div><table><caption>TuneBox Music Plans</caption><tr><th>Plan</th><th>Accounts</th><th>Price (a month)</th><th>Ads</th><th>Download songs</th><th>Devices</th></tr><tr><td>Duo</td><td>2</td><td>90 TL</td><td>No</td><td>Yes</td><td>Phones only</td></tr><tr><td>Family Lite</td><td>4</td><td>120 TL</td><td>No</td><td>No</td><td>All devices</td></tr><tr><td>Family</td><td>5</td><td>145 TL</td><td>No</td><td>Yes</td><td>All devices</td></tr><tr><td>Family Max</td><td>6</td><td>175 TL</td><td>No</td><td>Yes</td><td>All devices</td></tr></table><p>Which plan meets <b>all</b> their needs?</p>`,
-  c: ["Family Lite", "Duo", "Family Max", "Family"],
-  a: "D",
-  s: `<p>Koşulları sırayla uygulayalım: (1) 3 kişi → en az 3 hesap: Duo (2) elenir. (2) İnternetsiz otobüste dinlemek → şarkı indirebilmeli: Family Lite (No) elenir. (3) Ağabey tablet kullanıyor → “All devices”: Duo zaten elendi. (4) En fazla 150 TL: Family Max (175 TL) elenir. Geriye yalnızca Family (5 hesap, 145 TL, reklamsız, indirme var, tüm cihazlar) kalır.</p><p>Çeldiriciler: Family Lite, hesap sayısı ve fiyatı uygun olduğu için seçilir ama “save songs to my phone” = indirme koşulunu karşılamaz. Duo en ucuz ama hesap sayısı ve cihaz şartı tutmaz. Family Max tüm özelliklere sahip ama bütçeyi aşar.</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Four friends are creating passwords for an online game.</p>
-<div class="fig"><svg viewBox="0 0 540 213" width="540" role="img" aria-label="GAME ZONE – Create Your Password">
-<rect x="4" y="4" width="532" height="205" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#9333ea"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">GAME ZONE – Create Your Password</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">Your password must:</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">• have 10–14 characters,</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">• have at least two capital letters,</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">• have exactly three numbers,</text>
-<text x="26" y="142" font-size="11.5" fill="#1e293b">• have at least one of these symbols: ! ? # *</text>
-<text x="26" y="163" font-size="11.5" fill="#1e293b">• NOT contain your name or nickname (capital or small letters),</text>
-<text x="26" y="184" font-size="11.5" fill="#1e293b">• NOT have the same character twice in a row (for example “aa” or “11”).</text>
-</svg></div>
-<table><tr><th>Player</th><th>Nickname</th><th>Password</th></tr><tr><td>Nil</td><td>Nilo</td><td>StarFox?917Kit</td></tr><tr><td>Arda</td><td>Ardi</td><td>BlueRiver#2024</td></tr><tr><td>Melis</td><td>Mel</td><td>SkyMelody!735</td></tr><tr><td>Tuna</td><td>TT</td><td>GreenApple*482</td></tr></table><p>Whose password follows <b>all</b> the rules?</p>`,
-  c: ["Arda’s", "Melis’s", "Nil’s", "Tuna’s"],
-  a: "C",
-  s: `<p>Her şifreyi tüm kurallarla tek tek deneyelim:</p><ul><li><b>Arda – BlueRiver#2024:</b> 14 karakter, B ve R büyük, # var ama <b>dört</b> rakam (2,0,2,4) var → “exactly three numbers” bozulur.</li><li><b>Melis – SkyMelody!735:</b> 13 karakter, 3 rakam, ! var ama “Melody” kelimesinin içinde takma adı <b>“Mel”</b> geçiyor → kural bozulur.</li><li><b>Tuna – GreenApple*482:</b> uzunluk, büyük harf, rakam, sembol uygun ama “App” içinde <b>“pp”</b> (ayrıca “ee”) yan yana tekrar ediyor → kural bozulur.</li><li><b>Nil – StarFox?917Kit:</b> 14 karakter; S, F, K büyük; 9-1-7 tam üç rakam; ? sembolü; “Nil/Nilo” geçmiyor; yan yana aynı karakter yok → tüm kurallara uyar ✓.</li></ul><p>Tuzaklar: rakamları saymamak (Arda), adın kelime içinde saklanmasını görmemek (Melis), çift harfi gözden kaçırmak (Tuna).</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>My Digital Detox Week</b> – by İpek</p><p>Last month, I decided to take a break from social media for seven days. I deleted two apps from my phone and turned off all my notifications. I only kept my messaging app because my parents wanted to reach me after school.</p><p>The first two days were really hard. I picked up my phone more than 40 times a day without thinking! By Thursday, things were easier. I finished a novel and went to bed earlier, so I felt more energetic in the mornings.</p><p>However, there was one bad moment. My friends planned a picnic on a social media group, and I didn’t see it. I only heard about it on Saturday evening, after the picnic was over. I was a bit upset.</p><p>When the week ended, I downloaded one of the apps again, but now I set a 30-minute daily limit on it.</p></div><p>I. İpek didn’t use her phone at all during the week.<br>II. Staying away from social media caused İpek to miss an event.<br>III. After the detox, İpek stopped using social media completely.</p><p>Which of the statements above can be inferred from the blog?</p>`,
-  c: ["Only II", "I and II", "II and III", "I, II and III"],
-  a: "A",
-  s: `<p><b>I:</b> Yanlış. İpek mesajlaşma uygulamasını tuttu (“I only kept my messaging app”) ve ilk günlerde telefonu günde 40’tan fazla eline aldı.</p><p><b>II:</b> Doğru. Arkadaşları pikniği sosyal medya grubunda planladı; İpek görmediği için pikniği kaçırdı (“after the picnic was over”). “miss an event” bunun eş anlamlı yeniden ifadesidir.</p><p><b>III:</b> Yanlış. Hafta bitince uygulamalardan birini yeniden indirdi, sadece günlük 30 dakika sınır koydu. “Sınırlamak” ile “tamamen bırakmak” aynı şey değildir.</p><p>Yalnızca II çıkarılabilir.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>Yusuf is chatting with the help desk of an online game.</p><div class="dialog"><div><b>Yusuf:</b> Hello. I can’t log in to my game account. It says my password is wrong, but I’m sure it’s correct.</div><div><b>Support:</b> (1) ----</div><div><b>Yusuf:</b> Well, yes. Yesterday I got an e-mail from “the game company”, and I typed my password on the page in the link.</div><div><b>Support:</b> I see. We didn’t send that e-mail, so someone has probably stolen your password. (2) ----</div><div><b>Yusuf:</b> OK, I’ll click “Forgot password” now and create a new one. And I won’t open links like that again.</div></div><p>Which of the following best completes the conversation?</p>`,
-  c: ["(1) Have you shared your password or clicked on a link recently? – (2) You should send your new password to us by e-mail.", "(1) Have you shared your password or clicked on a link recently? – (2) You should change your password and be careful with e-mails from strangers.", "(1) How long have you played this game? – (2) You should delete the game and download it again.", "(1) Did you buy a new computer last week? – (2) You should change your password and be careful with e-mails from strangers."],
-  a: "B",
-  s: `<p>(1) için ipucu Yusuf’un cevabıdır: “Well, yes. … I typed my password on the page in the link.” Cevap “yes” ile başlıyor ve bağlantıya tıklamayı anlatıyor; demek ki soru “Şifreni paylaştın mı ya da bir bağlantıya tıkladın mı?” olmalıdır. “Did you buy a new computer?” sorusu bu cevapla uyuşmaz.</p><p>(2) için ipucu: Yusuf “Forgot password”a tıklayıp yeni şifre oluşturacağını ve bu tür bağlantıları açmayacağını söylüyor → “şifreni değiştir ve yabancı e-postalara dikkat et.”</p><p>Çeldiriciler: Yeni şifreyi e-postayla göndermek, az önce yaşanan dolandırıcılığın aynısıdır; oyunu silip yeniden indirmek şifre çalınması sorununu çözmez. Bir şıkta (1) doğru (2) yanlış, diğerinde (2) doğru (1) yanlış; ikisinin de tutması gerekir.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Ayla wants to work on her school project in a café.</p><div class="box"><p><b>Ayla:</b> This evening I’m going to edit our group video and then upload it to the school website, so I need an upload speed of at least 20 Mbps. I’ll arrive at 7 pm and stay until 10 pm. My laptop battery doesn’t last long, so I need to plug it in. I can’t spend more than 60 TL on a drink.</p></div><table><caption>Table 1: Wi-Fi Speed Test</caption><tr><th>Café</th><th>Download speed</th><th>Upload speed</th></tr><tr><td>Byte Café</td><td>80 Mbps</td><td>25 Mbps</td></tr><tr><td>Cloud Corner</td><td>60 Mbps</td><td>30 Mbps</td></tr><tr><td>Mocha Net</td><td>100 Mbps</td><td>15 Mbps</td></tr><tr><td>The Router</td><td>45 Mbps</td><td>22 Mbps</td></tr></table><table><caption>Table 2: Café Information</caption><tr><th>Café</th><th>Opening hours</th><th>Sockets for laptops</th><th>Cheapest drink</th></tr><tr><td>Byte Café</td><td>8 am – 11 pm</td><td>Yes</td><td>75 TL</td></tr><tr><td>Cloud Corner</td><td>9 am – 9 pm</td><td>Yes</td><td>50 TL</td></tr><tr><td>Mocha Net</td><td>10 am – 12 am</td><td>No</td><td>40 TL</td></tr><tr><td>The Router</td><td>7 am – 10.30 pm</td><td>Yes</td><td>55 TL</td></tr></table><p>Which café is the best choice for Ayla?</p>`,
-  c: ["Byte Café", "The Router", "Cloud Corner", "Mocha Net"],
-  a: "B",
-  s: `<p>İki tabloyu birlikte kullanmalıyız:</p><ul><li><b>Mocha Net:</b> İndirme hızı en yüksek (100) ama Ayla <b>yükleme</b> (upload) yapacak; 15 Mbps &lt; 20 ✗. Ayrıca priz yok.</li><li><b>Cloud Corner:</b> Yükleme 30 ✓, priz ✓, 50 TL ✓ ama 9 pm’de kapanıyor; Ayla 10 pm’e kadar kalacak ✗.</li><li><b>Byte Café:</b> Yükleme 25 ✓, saat ✓, priz ✓ ama en ucuz içecek 75 TL &gt; 60 ✗.</li><li><b>The Router:</b> Yükleme 22 ≥ 20 ✓, 10.30 pm’e kadar açık ✓, priz ✓, 55 TL ✓.</li></ul><p>Tuzak: download ↔ upload karışıklığı (Mocha Net) ve tek tabloya bakıp diğerini unutmak.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>The graph shows the number of subscribers of two video channels in the first six months of the year.</p>
-<div class="fig"><svg viewBox="0 0 540 270" width="540" role="img" aria-label="İki kanalın abone sayısı">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Subscribers (thousands)</text>
-<rect x="150" y="32" width="14" height="4" fill="#dc2626"/>
-<text x="170" y="39" font-size="11.5" fill="#1e293b">Chef Ada</text>
-<rect x="246" y="32" width="14" height="4" fill="#2563eb"/>
-<text x="266" y="39" font-size="11.5" fill="#1e293b">Tech Tolga</text>
-<line x1="60" y1="220.0" x2="510" y2="220.0" stroke="#e2e8f0"/>
-<text x="54" y="224.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="188.0" x2="510" y2="188.0" stroke="#e2e8f0"/>
-<text x="54" y="192.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="156.0" x2="510" y2="156.0" stroke="#e2e8f0"/>
-<text x="54" y="160.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="124.0" x2="510" y2="124.0" stroke="#e2e8f0"/>
-<text x="54" y="128.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<line x1="60" y1="92.0" x2="510" y2="92.0" stroke="#e2e8f0"/>
-<text x="54" y="96.0" font-size="11" fill="#475569" text-anchor="end">40</text>
-<line x1="60" y1="60.0" x2="510" y2="60.0" stroke="#e2e8f0"/>
-<text x="54" y="64.0" font-size="11" fill="#475569" text-anchor="end">50</text>
-<text x="80.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">Jan</text>
-<text x="162.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">Feb</text>
-<text x="244.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">Mar</text>
-<text x="326.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">Apr</text>
-<text x="408.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">May</text>
-<text x="490.0" y="238" font-size="11.5" fill="#1e293b" text-anchor="middle">Jun</text>
-<polyline points="80.0,156.0 162.0,143.2 244.0,124.0 326.0,124.0 408.0,98.4 490.0,76.0" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-<circle cx="80.0" cy="156.0" r="4" fill="#dc2626"/>
-<text x="80.0" y="173.0" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">20</text>
-<circle cx="162.0" cy="143.2" r="4" fill="#dc2626"/>
-<text x="162.0" y="160.2" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">24</text>
-<circle cx="244.0" cy="124.0" r="4" fill="#dc2626"/>
-<text x="244.0" y="141.0" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">30</text>
-<circle cx="326.0" cy="124.0" r="4" fill="#dc2626"/>
-<text x="326.0" y="141.0" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">30</text>
-<circle cx="408.0" cy="98.4" r="4" fill="#dc2626"/>
-<text x="408.0" y="115.4" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">38</text>
-<circle cx="490.0" cy="76.0" r="4" fill="#dc2626"/>
-<text x="490.0" y="67.0" font-size="11" fill="#dc2626" font-weight="bold" text-anchor="middle">45</text>
-<polyline points="80.0,108.0 162.0,111.2 244.0,114.4 326.0,104.8 408.0,92.0 490.0,85.6" fill="none" stroke="#2563eb" stroke-width="2.5"/>
-<circle cx="80.0" cy="108.0" r="4" fill="#2563eb"/>
-<text x="80.0" y="99.0" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">35</text>
-<circle cx="162.0" cy="111.2" r="4" fill="#2563eb"/>
-<text x="162.0" y="102.2" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">34</text>
-<circle cx="244.0" cy="114.4" r="4" fill="#2563eb"/>
-<text x="244.0" y="105.4" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">33</text>
-<circle cx="326.0" cy="104.8" r="4" fill="#2563eb"/>
-<text x="326.0" y="95.8" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">36</text>
-<circle cx="408.0" cy="92.0" r="4" fill="#2563eb"/>
-<text x="408.0" y="83.0" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">40</text>
-<circle cx="490.0" cy="85.6" r="4" fill="#2563eb"/>
-<text x="490.0" y="102.6" font-size="11" fill="#2563eb" font-weight="bold" text-anchor="middle">42</text>
-<line x1="60" y1="220" x2="510" y2="220" stroke="#334155"/>
-</svg></div>
-<div class="box"><p>The video website gives a <b>“Rising Star”</b> badge to a channel for each month in which it gains <b>6,000 or more</b> new subscribers.</p></div><p>According to the information, which of the following is <b>FALSE</b>?</p>`,
-  c: ["Tech Tolga had more subscribers than Chef Ada in each of the first five months.", "The number of Chef Ada’s subscribers stayed the same from March to April.", "Tech Tolga’s channel grew more than Chef Ada’s between April and June.", "Chef Ada got the “Rising Star” badge three times, but Tech Tolga never got it."],
-  a: "C",
-  s: `<p>Aylık artışları hesaplayalım (bin): Chef Ada: +4, +6, 0, +8, +7. Tech Tolga: −1, −1, +3, +4, +2.</p><ul><li>Ocak–Mayıs: 35&gt;20, 34&gt;24, 33&gt;30, 36&gt;30, 40&gt;38 → Tolga her ay önde ✓.</li><li>Mart 30, Nisan 30 → değişmedi ✓.</li><li>6 bin ve üzeri artış: Ada Mart (+6), Mayıs (+8), Haziran (+7) → 3 rozet; Tolga’nın hiçbir artışı 6’ya ulaşmıyor ✓.</li><li>Nisan→Haziran: Tolga 36→42 (+6), Ada 30→45 (+15). Tolga daha <b>az</b> büyüdü → ifade <b>yanlış</b>.</li></ul><p>Tuzak: Haziranda Tolga’nın çizgisi yüksek göründüğü için “daha çok büyüdü” sanmak; büyüme farkla ölçülür. Rozet şıkkında ise “6,000 or more” ifadesindeki eşitliği (Mart +6) kaçıran öğrenci 2 rozet bulur.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p><b>Duru:</b> “I’d rather video chat with my cousins than text them, as long as the connection isn’t too slow.”</p><p>Which of the following is closest in meaning to what Duru says?</p>`,
-  c: ["When the Internet connection is good enough, Duru prefers seeing her cousins on video to sending them messages.", "Duru prefers texting her cousins because video chats are usually too slow.", "Duru never texts her cousins; she only video chats with them, even with a slow connection.", "Duru’s cousins would rather text her than video chat because their connection is slow."],
-  a: "A",
-  s: `<p>“I’d rather A than B” = B yerine A’yı tercih ederim. “as long as” = …olduğu sürece (koşul). Yani Duru, bağlantı çok yavaş <b>olmadığı sürece</b> kuzenleriyle mesajlaşmak yerine görüntülü konuşmayı tercih ediyor.</p><p>Çeldiriciler: Tercihi tersine çeviren şık (texting) “rather … than” yapısını yanlış okuyandan gelir. “never texts … even with a slow connection” koşulu yok sayar ve “never” ile aşırı genelleme yapar. Kuzenlerin tercihinden bahseden şık konuşanı değiştirir.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 167" width="540" role="img" aria-label="Haber paylaşmadan önce dört adım">
-<rect x="4" y="4" width="532" height="159" rx="12" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#0f766e"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">Before You Share a News Story</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">1. Check who wrote it and which website it comes from.</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">2. Check the date. Old news can look new!</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">3. Find the same story on at least two other trusted news websites.</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">4. If there is a photo, search for it online to see if it is really from this</text>
-<text x="26" y="138" font-size="11.5" fill="#1e293b">event.</text>
-</svg></div>
-<table><tr><th>Student</th><th>What he/she did before sharing a story</th></tr><tr><td>Sena</td><td>She checked the writer, the website and the date. The story had no photo. She found it on one other news website.</td></tr><tr><td>Emir</td><td>He checked the writer, the website and the date, and he found the story on three trusted websites. He didn’t search for the story’s photo.</td></tr><tr><td>Ilgaz</td><td>The story had no photo. He checked the writer, the website and the date, and he read the same story on two other trusted news websites.</td></tr><tr><td>Doruk</td><td>He searched for the photo and checked the date. He found the story on two trusted websites, but he didn’t check who wrote it.</td></tr></table><p>Which student followed <b>all</b> the necessary steps on the poster?</p>`,
-  c: ["Sena", "Emir", "Ilgaz", "Doruk"],
-  a: "C",
-  s: `<p>Adımları her öğrenciye uygulayalım:</p><ul><li><b>Sena:</b> Haberi yalnızca <b>bir</b> sitede daha buldu; 3. adım “at least two” istiyor ✗.</li><li><b>Emir:</b> Üç sitede buldu ✓ ama haberde fotoğraf vardı ve aramadı → 4. adım ✗.</li><li><b>Doruk:</b> Yazarı kontrol etmedi → 1. adım ✗.</li><li><b>Ilgaz:</b> Yazar, site ve tarih ✓; iki güvenilir sitede daha okudu ✓; fotoğraf olmadığı için 4. adım gerekmiyor (“If there is a photo”) ✓.</li></ul><p>Tuzak: 4. adımın koşullu olduğunu (“If…”) fark etmeyen öğrenci Ilgaz’ı eler; Emir’in “three” sitesi göz boyar ama fotoğraf adımını atlamıştır.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>Every year, 120 students in a school answer a survey. Each student chooses only <b>one</b> answer.</p>
-<div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="How do you mostly keep in touch with your grandparents?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">How do you mostly keep in touch with your grandparents?</text>
-<rect x="120" y="30" width="12" height="12" fill="#94a3b8"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">2020</text>
-<rect x="184" y="30" width="12" height="12" fill="#0d9488"/>
-<text x="200" y="40" font-size="11.5" fill="#1e293b">2026</text>
-<line x1="60" y1="210.0" x2="520" y2="210.0" stroke="#e2e8f0"/>
-<text x="54" y="214.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="183.3" x2="520" y2="183.3" stroke="#e2e8f0"/>
-<text x="54" y="187.33333333333334" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="156.7" x2="520" y2="156.7" stroke="#e2e8f0"/>
-<text x="54" y="160.66666666666666" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="130.0" x2="520" y2="130.0" stroke="#e2e8f0"/>
-<text x="54" y="134.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<line x1="60" y1="103.3" x2="520" y2="103.3" stroke="#e2e8f0"/>
-<text x="54" y="107.33333333333333" font-size="11" fill="#475569" text-anchor="end">40</text>
-<line x1="60" y1="76.7" x2="520" y2="76.7" stroke="#e2e8f0"/>
-<text x="54" y="80.66666666666666" font-size="11" fill="#475569" text-anchor="end">50</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">60</text>
-<rect x="83.5" y="66.0" width="32.0" height="144.0" fill="#94a3b8"/>
-<text x="99.5" y="62.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">54</text>
-<rect x="117.5" y="130.0" width="32.0" height="80.0" fill="#0d9488"/>
-<text x="133.5" y="126.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">30</text>
-<text x="117.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Phone</text>
-<text x="117.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">calls</text>
-<rect x="198.5" y="162.0" width="32.0" height="48.0" fill="#94a3b8"/>
-<text x="214.5" y="158.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">18</text>
-<rect x="232.5" y="82.0" width="32.0" height="128.0" fill="#0d9488"/>
-<text x="248.5" y="78.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">48</text>
-<text x="232.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Video</text>
-<text x="232.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">chats</text>
-<rect x="313.5" y="178.0" width="32.0" height="32.0" fill="#94a3b8"/>
-<text x="329.5" y="174.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">12</text>
-<rect x="347.5" y="146.0" width="32.0" height="64.0" fill="#0d9488"/>
-<text x="363.5" y="142.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">24</text>
-<text x="347.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Text</text>
-<text x="347.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">messages</text>
-<rect x="428.5" y="114.0" width="32.0" height="96.0" fill="#94a3b8"/>
-<text x="444.5" y="110.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">36</text>
-<rect x="462.5" y="162.0" width="32.0" height="48.0" fill="#0d9488"/>
-<text x="478.5" y="158.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">18</text>
-<text x="462.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Visiting</text>
-<text x="462.5" y="240" font-size="11.5" fill="#1e293b" text-anchor="middle">them</text>
-<line x1="60" y1="210" x2="520" y2="210" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<div class="box"><p><b>School reporter:</b> In 2026, all the students who chose “video chats” told us that they video chat with their grandparents at least three times a week.</p></div><p>I. In 2026, video chats became the most common way of keeping in touch with grandparents.<br>II. From 2020 to 2026, the number of students who mostly visit their grandparents fell by half.<br>III. In 2026, half of the students video chatted with their grandparents at least three times a week.</p><p>Which of the statements above is/are correct according to the graph and the text?</p>`,
-  c: ["Only I", "I and II", "II and III", "I, II and III"],
-  a: "B",
-  s: `<p><b>I:</b> 2026’da video chat 48 ile en yüksek değer ✓.</p><p><b>II:</b> Visiting: 36 → 18; yarıya düştü (“fell by half”) ✓.</p><p><b>III:</b> Metne göre video chat’i seçen 48 öğrencinin hepsi haftada en az üç kez görüşüyor. Ama 48/120 = %40; yarısı (60) değil ✗.</p><p>Çeldiriciler: III’ü doğru sanan öğrenci “video chat en popüler = yarısı” diye düşünür; “most common” ile “half/most of the students” aynı şey değildir. “Only I”, II’deki 36→18 değişimini hesaplamayanın cevabıdır.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>How I Started My Channel</b> – by Elif (14)</p><p>Two years ago, I was bored during the summer holiday, so I started making origami animals. My cousin saw them and said, “You should teach other people!” That’s how my channel began.</p><p>I don’t have expensive equipment. I record everything with my mum’s old phone, and I use a desk lamp for light. I upload a new video every Saturday morning because I’m too busy with school on weekdays.</p><p>Now I have almost 5,000 subscribers. Most of the comments are lovely, but sometimes people write mean things. I never reply to them. I just delete those comments and focus on the nice ones.</p></div><p>Which of the following questions is <b>NOT</b> answered in the text?</p>`,
-  c: ["What does Elif use to film her videos?", "How often does Elif share a new video?", "What does Elif do when people leave unkind comments?", "How much money does Elif earn from her videos?"],
-  a: "D",
-  s: `<p>Soruların cevaplarını metinde arayalım (sorular metindeki ifadelerin eş anlamlılarıyla yazılmış):</p><ul><li>“What does Elif use to <b>film</b>…?” → “I record everything with my mum’s old phone” ✓ (film = record).</li><li>“How often … <b>share</b> a new video?” → “every Saturday morning” ✓ (share = upload).</li><li>“… <b>unkind</b> comments?” → “mean things … I just delete those comments” ✓ (unkind = mean).</li><li>“How much money…?” → Metinde abone sayısı (5,000) var ama kazançtan hiç söz edilmiyor ✗.</li></ul><p>Tuzak: “5,000 subscribers” sayısını kazanç sanmak ya da “expensive equipment” ifadesini para kazanmakla karıştırmak.</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Mrs. Aydın is looking for a parental control app.</p><div class="box"><p><b>Mrs. Aydın:</b> My son has a phone and my daughter has a tablet. I want to set a daily time limit for both of them and block some websites. I don’t need to see where they are because they always go to school with me. I can pay up to 100 TL a month, but I want to try the app for free before I pay.</p></div><table><tr><th>App</th><th>Daily screen-time limit</th><th>Blocks websites</th><th>Shows location</th><th>Works on</th><th>Max. children</th><th>Price (a month)</th><th>Free trial</th></tr><tr><td>KidSafe</td><td>✓</td><td>✓</td><td>✓</td><td>Phones only</td><td>3</td><td>80 TL</td><td>7 days</td></tr><tr><td>NetGuard</td><td>✓</td><td>✓</td><td>✗</td><td>Phones and tablets</td><td>5</td><td>95 TL</td><td>No free trial</td></tr><tr><td>FamilyEye</td><td>✓</td><td>✗</td><td>✓</td><td>Phones and tablets</td><td>4</td><td>60 TL</td><td>14 days</td></tr><tr><td>HappyScreen</td><td>✓</td><td>✓</td><td>✗</td><td>Phones and tablets</td><td>3</td><td>90 TL</td><td>7 days</td></tr></table><p>Which app is the most suitable for Mrs. Aydın?</p>`,
-  c: ["HappyScreen", "KidSafe", "NetGuard", "FamilyEye"],
-  a: "A",
-  s: `<p>Koşulları sırayla uygulayalım:</p><ul><li>Kızı tablet kullanıyor → “Phones only” olan <b>KidSafe</b> elenir (diğer her şeyi uygun olduğu için güçlü çeldiricidir).</li><li>Web sitesi engelleme şart → <b>FamilyEye</b> (✗) elenir; en ucuz ve en uzun deneme süresi göz boyar.</li><li>Önce ücretsiz denemek istiyor → <b>NetGuard</b> (No free trial) elenir.</li><li><b>HappyScreen:</b> süre sınırı ✓, site engelleme ✓, telefon + tablet ✓, 3 çocuk ≥ 2 ✓, 90 TL ≤ 100 ✓, 7 gün deneme ✓.</li></ul><p>Konum özelliği olmaması sorun değil, çünkü Mrs. Aydın “I don’t need to see where they are” diyor.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>A reporter is interviewing Zeynep Arı, a young e-sports player.</p><div class="dialog"><div><b>Reporter:</b> (1) ----</div><div><b>Zeynep Arı:</b> When I was ten. My older brother taught me how to play.</div><div><b>Reporter:</b> (2) ----</div><div><b>Zeynep Arı:</b> About three hours a day, but I never play after 9 pm on school nights.</div><div><b>Reporter:</b> (3) ----</div><div><b>Zeynep Arı:</b> My parents. They have always believed in me, even when I lost.</div></div><p>Which of the following questions is <b>NOT</b> one of the reporter’s questions?</p>`,
-  c: ["When did you start playing online games?", "How long do you practise every day?", "Who supports you the most?", "How often do you take part in tournaments?"],
-  a: "D",
-  s: `<p>Cevaplardan soruları bulalım:</p><ul><li>(1) “When I was ten.” → zaman: “When did you start playing online games?”</li><li>(2) “About three hours a day” → <b>süre</b>: “How long do you practise every day?”</li><li>(3) “My parents. They have always believed in me.” → kişi: “Who supports you the most?”</li></ul><p>“How often…?” sıklık sorar (once a month, twice a year gibi); “three hours a day” bir süre bildirir. Turnuvalardan da hiç söz edilmiyor. Bu yüzden kullanılmayan soru budur (How often ↔ How long tuzağı).</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Four students took an online safety quiz. Their answers are in the table.</p><table><caption>Online Safety Quiz (T = True, F = False)</caption><tr><th></th><th>Statement</th><th>Bora</th><th>Lale</th><th>Ceren</th><th>Umut</th></tr><tr><td>1</td><td>It’s OK to share your password with your best friend.</td><td>F</td><td>F</td><td>T</td><td>F</td></tr><tr><td>2</td><td>You should log out after you use a computer at the library.</td><td>T</td><td>T</td><td>T</td><td>F</td></tr><tr><td>3</td><td>A website with lots of colourful ads is always safe.</td><td>F</td><td>F</td><td>F</td><td>F</td></tr><tr><td>4</td><td>If someone bullies you online, you should save the messages and tell an adult.</td><td>T</td><td>T</td><td>T</td><td>T</td></tr><tr><td>5</td><td>You can believe a news story if a lot of people share it.</td><td>T</td><td>F</td><td>F</td><td>F</td></tr></table><p>Which student answered <b>all</b> the statements correctly?</p>`,
-  c: ["Bora", "Ceren", "Umut", "Lale"],
-  a: "D",
-  s: `<p>Önce doğru cevap anahtarını bulalım: 1. Şifre en yakın arkadaşla bile paylaşılmaz → F. 2. Ortak bilgisayarda çıkış yapılır → T. 3. Çok reklam güvenli olduğunu göstermez, “always safe” yanlış → F. 4. Zorbalık mesajları saklanır, bir yetişkine söylenir → T. 5. Çok paylaşılması bir haberi doğru yapmaz → F. Anahtar: F-T-F-T-F.</p><ul><li>Bora: 5. ifadeye T dedi ✗ (popüler = doğru yanılgısı).</li><li>Ceren: 1. ifadeye T dedi ✗ (“en yakın arkadaş güvenilir” yanılgısı).</li><li>Umut: 2. ifadeye F dedi ✗.</li><li>Lale: F-T-F-T-F → hepsi doğru ✓.</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p><b>Kuzey:</b> “Almost everyone in my class has a social media account, but only a few of them post photos regularly.”</p><p>Which of the following is closest in meaning to what Kuzey says?</p>`,
-  c: ["Most of Kuzey’s classmates are on social media, but most of them don’t share photos very often.", "Only a few of Kuzey’s classmates have social media accounts, and they all post photos.", "All of Kuzey’s classmates post photos regularly on their social media accounts.", "Most of Kuzey’s classmates post photos regularly, but a few of them don’t have accounts."],
-  a: "A",
-  s: `<p>“Almost everyone” = neredeyse herkes = most. “Only a few of them post photos regularly” = çok azı düzenli fotoğraf paylaşıyor → çoğu sık paylaşmıyor.</p><p>Çeldiriciler: “only a few” ifadesini hesap sahipliğine bağlayan şık cümlenin iki parçasını karıştırır; “All … post photos regularly” iki niceliği de abartır; son şık “a few” ile “most” anlamlarını yer değiştirir (az kişi paylaşıyor ↔ çok kişi paylaşıyor).</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 260" width="540" role="img" aria-label="E-book downloads from the school library">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">E-book downloads from the school library</text>
-<rect x="120" y="30" width="12" height="12" fill="#a5b4fc"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">January</text>
-<rect x="205" y="30" width="12" height="12" fill="#4338ca"/>
-<text x="221" y="40" font-size="11.5" fill="#1e293b">April</text>
-<line x1="60" y1="210.0" x2="520" y2="210.0" stroke="#e2e8f0"/>
-<text x="54" y="214.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="170.0" x2="520" y2="170.0" stroke="#e2e8f0"/>
-<text x="54" y="174.0" font-size="11" fill="#475569" text-anchor="end">40</text>
-<line x1="60" y1="130.0" x2="520" y2="130.0" stroke="#e2e8f0"/>
-<text x="54" y="134.0" font-size="11" fill="#475569" text-anchor="end">80</text>
-<line x1="60" y1="90.0" x2="520" y2="90.0" stroke="#e2e8f0"/>
-<text x="54" y="94.0" font-size="11" fill="#475569" text-anchor="end">120</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">160</text>
-<rect x="83.5" y="90.0" width="32.0" height="120.0" fill="#a5b4fc"/>
-<text x="99.5" y="86.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">120</text>
-<rect x="117.5" y="60.0" width="32.0" height="150.0" fill="#4338ca"/>
-<text x="133.5" y="56.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">150</text>
-<text x="117.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Adventure</text>
-<rect x="198.5" y="130.0" width="32.0" height="80.0" fill="#a5b4fc"/>
-<text x="214.5" y="126.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">80</text>
-<rect x="232.5" y="80.0" width="32.0" height="130.0" fill="#4338ca"/>
-<text x="248.5" y="76.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">130</text>
-<text x="232.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Science</text>
-<rect x="313.5" y="60.0" width="32.0" height="150.0" fill="#a5b4fc"/>
-<text x="329.5" y="56.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">150</text>
-<rect x="347.5" y="70.0" width="32.0" height="140.0" fill="#4338ca"/>
-<text x="363.5" y="66.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">140</text>
-<text x="347.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">Comics</text>
-<rect x="428.5" y="150.0" width="32.0" height="60.0" fill="#a5b4fc"/>
-<text x="444.5" y="146.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">60</text>
-<rect x="462.5" y="110.0" width="32.0" height="100.0" fill="#4338ca"/>
-<text x="478.5" y="106.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">100</text>
-<text x="462.5" y="226" font-size="11.5" fill="#1e293b" text-anchor="middle">History</text>
-<line x1="60" y1="210" x2="520" y2="210" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">downloads</text>
-</svg></div>
-<div class="box"><p><b>Library announcement:</b> Next month, we will buy new e-books only in the genre with the <b>biggest increase</b> in downloads from January to April. We will also stop buying e-books in any genre whose downloads <b>went down</b>.</p></div><p>According to the graph and the announcement, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["The library will buy new comics because they were the most downloaded genre in both months.", "History e-books had the biggest increase, so the library will buy new history e-books.", "The library will stop buying adventure e-books because they had fewer downloads in April.", "The library will buy new science e-books, and it will stop buying comics."],
-  a: "D",
-  s: `<p>Artışları hesaplayalım: Adventure 120→150 (+30), Science 80→130 (<b>+50</b>), Comics 150→140 (<b>−10</b>), History 60→100 (+40).</p><ul><li>En büyük artış Science (+50) → yeni bilim e-kitapları alınacak; düşüş yalnızca Comics’te → çizgi roman alımı durdurulacak ✓.</li><li>Comics yalnızca Ocak’ta en çok indirilendi; Nisan’da Adventure (150) daha fazla. Üstelik kural “en çok indirilen” değil “en çok artan” diyor ✗.</li><li>History’nin artışı +40; Science’ınkinden az ✗ (Nisan’daki çubuk boyuna değil farka bakılmalı).</li><li>Adventure Nisan’da arttı (150 &gt; 120) ✗.</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Sude wrote to an online advice forum.</p><div class="box"><p><b>Sude (13):</b> I play an online game every night, usually until midnight, so I’m always tired at school. I can’t delete the game because all my friends play it, and we chat there. I also need my computer for homework every evening. My parents work late and they get home after I go to bed, so they can’t check what I’m doing. What should I do?</p></div><p>Which of the following advice is <b>NOT</b> suitable for Sude’s situation?</p>`,
-  c: ["Ask your parents to check what time you stop playing every evening.", "Set an alarm on your phone to remind you to stop playing at 9.30 pm.", "Play only at the weekends and talk to your friends at school during the week.", "Use an app that blocks the game after 9 pm but still lets you use the computer for homework."],
-  a: "A",
-  s: `<p>Sude’nin koşulları: oyunu silemiyor, bilgisayara ödev için ihtiyacı var, ailesi o yattıktan sonra eve geliyor.</p><ul><li>Alarm kurmak → kendi kendine uygulayabilir, uygun ✓.</li><li>Sadece hafta sonu oynamak → oyunu silmesi gerekmiyor, arkadaşlarıyla okulda konuşabilir, uygun ✓.</li><li>Oyunu 9’dan sonra engelleyip ödeve izin veren uygulama → bilgisayar ihtiyacını da karşılıyor, uygun ✓.</li><li>Ailesinden her akşam kontrol etmesini istemek → “they get home after I go to bed, so they can’t check” cümlesine göre mümkün değil ✗.</li></ul><p>Tuzak: Aile kontrolü genelde iyi bir tavsiyedir; ama soru Sude’nin <b>durumuna</b> uygunluğu soruyor.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 171" width="540" role="img" aria-label="Siber zorbalık bilgi grafiği">
-<rect x="4" y="4" width="532" height="163" rx="12" fill="#fff1f2" stroke="#be123c" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#be123c"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">CYBERBULLYING: What 500 Teenagers Told Us</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">• 2 in 5 teenagers have seen someone being bullied online.</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">• 1 in 5 teenagers have been bullied online themselves.</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">• Only a quarter of the bullied teenagers told an adult about it.</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">• Where did the bullying happen? (bullied teenagers)</text>
-<text x="26" y="142" font-size="11.5" fill="#1e293b">• Group chats 45% · Online games 30% · Social media 25%</text>
-</svg></div>
-<p>According to the information, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["Twice as many teenagers have seen online bullying as have been bullied themselves.", "75 of the bullied teenagers didn’t tell an adult about it.", "Most of the bullying happened in group chats.", "Fewer bullied teenagers had problems on social media than in online games."],
-  a: "C",
-  s: `<p>Sayıları hesaplayalım: 500 gencin 2/5’i = 200 kişi zorbalık görmüş; 1/5’i = 100 kişi zorbalığa uğramış; bunların dörtte biri = 25 kişi bir yetişkine söylemiş.</p><ul><li>200 = 2 × 100 → “twice as many” ✓.</li><li>100 − 25 = 75 kişi söylememiş ✓.</li><li>Sosyal medya %25 &lt; oyunlar %30 ✓.</li><li>Grup sohbetleri %45 ile <b>en sık</b> yer ama “most” (yarıdan fazla) için %50’yi geçmesi gerekirdi ✗.</li></ul><p>Tuzak: “the most common place” (en yaygın yer) ile “most of the bullying” (zorbalığın çoğu) aynı anlama gelmez.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p>When I turned on my laptop this morning, a (1) ---- appeared at the corner of the screen: “You have a new e-mail.” The e-mail had a file with it, but I didn’t open the (2) ---- because I didn’t know the sender. Later, my brother told me it probably had a virus in it. Now I always keep my (3) ---- program up to date, and I never open files from strangers.</p></div><p>Which of the following options fills in the blanks correctly?</p>`,
-  c: ["(1) notification – (2) attachment – (3) antivirus", "(1) notification – (2) browser – (3) antivirus", "(1) password – (2) attachment – (3) search engine", "(1) follower – (2) attachment – (3) antivirus"],
-  a: "A",
-  s: `<p>(1) Ekranın köşesinde “You have a new e-mail.” yazısı çıkıyorsa bu bir <b>notification</b> (bildirim)dir; “password” ya da “follower” ekranda beliren bir uyarı değildir.</p><p>(2) “The e-mail had a file with it” → e-postayla gelen dosya = <b>attachment</b> (ek). “browser” internet tarayıcısıdır, e-postayla gelmez.</p><p>(3) Virüslere karşı güncel tutulan program = <b>antivirus</b>; arama motoru (search engine) virüsü engellemez.</p><p>Her şıkta en az bir boşluk doğru görünecek şekilde hazırlandığından üç boşluğun da tutması gerekir.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>SportyKid</b>, a company that makes trainers for teenagers, is looking for an influencer for its new advert. The influencer must:</p><p>• share content about sports,<br>• have more than 50,000 followers,<br>• post at least three times a week,<br>• have followers who are mostly teenagers.</p></div><div class="fig"><svg viewBox="0 0 540 258" width="540" role="img" aria-label="Dört sosyal medya profili">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Sports Influencers</text>
-<rect x="10" y="34" width="255" height="102" rx="10" fill="#f8fafc" stroke="#db2777" stroke-width="1.5"/>
-<text x="22" y="55" font-size="12.5" fill="#db2777" font-weight="bold">RunWithRüya</text>
-<text x="22" y="76" font-size="11.5" fill="#1e293b">Topic: Running and healthy snacks</text>
-<text x="22" y="92" font-size="11.5" fill="#1e293b">Followers: 48,500</text>
-<text x="22" y="108" font-size="11.5" fill="#1e293b">Posts: 4 times a week</text>
-<text x="22" y="124" font-size="11.5" fill="#1e293b">Most followers are aged 13–17</text>
-<rect x="275" y="34" width="255" height="102" rx="10" fill="#f8fafc" stroke="#16a34a" stroke-width="1.5"/>
-<text x="287" y="55" font-size="12.5" fill="#16a34a" font-weight="bold">Kaan Kicks</text>
-<text x="287" y="76" font-size="11.5" fill="#1e293b">Topic: Football tricks</text>
-<text x="287" y="92" font-size="11.5" fill="#1e293b">Followers: 91,000</text>
-<text x="287" y="108" font-size="11.5" fill="#1e293b">Posts: 2 times a week</text>
-<text x="287" y="124" font-size="11.5" fill="#1e293b">Most followers are aged 13–17</text>
-<rect x="10" y="146" width="255" height="102" rx="10" fill="#f8fafc" stroke="#ea580c" stroke-width="1.5"/>
-<text x="22" y="167" font-size="12.5" fill="#ea580c" font-weight="bold">FitFam Selin</text>
-<text x="22" y="188" font-size="11.5" fill="#1e293b">Topic: Home workouts</text>
-<text x="22" y="204" font-size="11.5" fill="#1e293b">Followers: 63,000</text>
-<text x="22" y="220" font-size="11.5" fill="#1e293b">Posts: 5 times a week</text>
-<text x="22" y="236" font-size="11.5" fill="#1e293b">Most followers are aged 25–40</text>
-<rect x="275" y="146" width="255" height="102" rx="10" fill="#f8fafc" stroke="#2563eb" stroke-width="1.5"/>
-<text x="287" y="167" font-size="12.5" fill="#2563eb" font-weight="bold">Jump with Mina</text>
-<text x="287" y="188" font-size="11.5" fill="#1e293b">Topic: Basketball and stretching</text>
-<text x="287" y="204" font-size="11.5" fill="#1e293b">Followers: 55,200</text>
-<text x="287" y="220" font-size="11.5" fill="#1e293b">Posts: 3 times a week</text>
-<text x="287" y="236" font-size="11.5" fill="#1e293b">Most followers are aged 13–17</text>
-</svg></div><p>Which influencer can the company work with?</p>`,
-  c: ["RunWithRüya", "Kaan Kicks", "FitFam Selin", "Jump with Mina"],
-  a: "D",
-  s: `<p>Dört koşulu her profile uygulayalım:</p><ul><li><b>RunWithRüya:</b> 48,500 takipçi; 50,000’in <b>altında</b> ✗ (diğer koşullar uygun, sayı okuma tuzağı).</li><li><b>Kaan Kicks:</b> en çok takipçiye sahip ama haftada 2 paylaşım &lt; 3 ✗.</li><li><b>FitFam Selin:</b> takipçileri 25–40 yaş arası yetişkinler; “mostly teenagers” koşulu bozulur ✗.</li><li><b>Jump with Mina:</b> spor ✓, 55,200 &gt; 50,000 ✓, haftada 3 paylaşım (“at least three” = 3 de olur) ✓, 13–17 yaş ✓.</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<div class="dialog"><div><b>Ms. Polat:</b> I think our school should have one online-only day every week. On that day, students can stay at home and join their lessons on their computers.</div><div><b>Aras:</b> What a great idea! We wouldn’t waste an hour on the school bus.</div><div><b>Nazlı:</b> I’m afraid I can’t agree with you. Some of us don’t have a fast Internet connection at home, and we would miss our friends.</div><div><b>Efe:</b> Once a month sounds fine, but every week is too much. Lessons like science need a real classroom for experiments.</div><div><b>Pelin:</b> Absolutely! We could also watch the recorded lessons again before exams.</div></div><p>Which of the following groups the students’ opinions about Ms. Polat’s idea correctly?</p>`,
-  c: ["Agree: Aras, Pelin – Partly agree: Efe – Disagree: Nazlı", "Agree: Aras, Pelin – Partly agree: Nazlı – Disagree: Efe", "Agree: Aras, Efe, Pelin – Partly agree: – Disagree: Nazlı", "Agree: Pelin – Partly agree: Aras, Efe – Disagree: Nazlı"],
-  a: "A",
-  s: `<p>Her öğrencinin görüşünü ifadelerden çıkaralım:</p><ul><li><b>Aras:</b> “What a great idea!” → katılıyor.</li><li><b>Nazlı:</b> “I’m afraid I can’t agree with you.” → katılmıyor (yavaş internet, arkadaşları özleme).</li><li><b>Efe:</b> Ayda bir uygun, her hafta fazla → fikrin bir kısmına katılıyor = <b>partly agree</b>. “Once a month sounds fine” cümlesine bakıp tamamen katıldığını sanmak tuzaktır.</li><li><b>Pelin:</b> “Absolutely!” → katılıyor.</li></ul><p>Aras otobüste vakit kaybını gerekçe gösteriyor; bu bir itiraz değil, destektir. Nazlı ise hiçbir şekilde desteklemiyor, kısmen katılmıyor.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 256" width="540" role="img" aria-label="Kodlama kulübü e-postası">
-<rect x="4" y="4" width="532" height="248" rx="12" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#334155"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">E-mail from Mr. Doğan: Online Coding Competition</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">Hi everyone,</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">The online coding competition is on 14 November. Each team must have three</text>
-<text x="26" y="96" font-size="11.5" fill="#1e293b">members, so please choose your teammates and write your team name on the club</text>
-<text x="26" y="113" font-size="11.5" fill="#1e293b">board.</text>
-<text x="26" y="134" font-size="11.5" fill="#1e293b">You must sign up on the competition website before 10 November, and you can</text>
-<text x="26" y="151" font-size="11.5" fill="#1e293b">only use your school e-mail address.</text>
-<text x="26" y="172" font-size="11.5" fill="#1e293b">I’ve attached a practice file to this e-mail. Please download it and finish</text>
-<text x="26" y="189" font-size="11.5" fill="#1e293b">the tasks by Friday.</text>
-<text x="26" y="210" font-size="11.5" fill="#1e293b">If you can’t log in to the website, write to me, not to the website. Good</text>
-<text x="26" y="227" font-size="11.5" fill="#1e293b">luck! – Mr. Doğan</text>
-</svg></div>
-<p>Which of the following can <b>NOT</b> be understood from the e-mail?</p>`,
-  c: ["Students can’t register with their personal e-mail addresses.", "Mr. Doğan will choose the members of each team.", "Students should contact Mr. Doğan if they have problems with logging in.", "The practice file is sent together with the e-mail."],
-  a: "B",
-  s: `<ul><li>“you can only use your school e-mail address” → kişisel e-posta ile kayıt olunamaz ✓ (eş anlamlı yeniden ifade: sign up = register).</li><li>“If you can’t log in…, write to me” → giriş sorununda Mr. Doğan’a yazılmalı ✓.</li><li>“I’ve attached a practice file” → dosya e-postayla birlikte gönderildi ✓.</li><li>“please choose your teammates” → takım arkadaşlarını <b>öğrenciler</b> seçiyor; öğretmenin seçeceği anlaşılamaz, hatta metinle çelişir ✗.</li></ul> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>The Yıldız family made a rule: <b>“Nobody should spend more than 10 hours a week online for fun.”</b> They recorded their time for one week.</p><table><caption>Time online for fun (games, videos, social media)</caption><tr><th>Family member</th><th>Each weekday (Mon–Fri)</th><th>Each weekend day (Sat–Sun)</th></tr><tr><td>Dad</td><td>1 h</td><td>2 h 30 min</td></tr><tr><td>Mum</td><td>30 min</td><td>3 h 30 min</td></tr><tr><td>Bulut</td><td>1 h 30 min</td><td>1 h 30 min</td></tr><tr><td>Gece</td><td>1 h</td><td>3 h</td></tr></table><p>According to the table, which of the following is <b>CORRECT</b>?</p>`,
-  c: ["Only Gece breaks the rule because she spends the most time online at weekends.", "Dad breaks the rule because he spends 10 hours a week online for fun.", "Mum spends more time online for fun than Bulut in a week.", "Two family members break the rule, and Gece spends the most time online for fun."],
-  a: "D",
-  s: `<p>Haftalık toplamlar (5 hafta içi + 2 hafta sonu günü):</p><ul><li>Dad: 5 × 1 h + 2 × 2 h 30 min = 5 + 5 = <b>10 h</b> → “more than 10” değil, kurala uyuyor.</li><li>Mum: 5 × 30 min + 2 × 3 h 30 min = 2.5 + 7 = <b>9.5 h</b> → uyuyor.</li><li>Bulut: 5 × 1 h 30 min + 2 × 1 h 30 min = 7.5 + 3 = <b>10.5 h</b> → kuralı bozuyor.</li><li>Gece: 5 × 1 h + 2 × 3 h = 5 + 6 = <b>11 h</b> → kuralı bozuyor, en fazla.</li></ul><p>Çeldiriciler: “Only Gece” Bulut’un hafta içi süresini 5 ile çarpmayı unutanın cevabıdır; Dad şıkkı “more than 10” ile “10”u karıştırır; Mum şıkkı yalnızca hafta sonu sütununa bakanı yakalar (3.5 h &gt; 1.5 h ama haftalık 9.5 &lt; 10.5).</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 298" width="540" role="img" aria-label="Grup sohbeti">
-<rect x="4" y="4" width="532" height="290" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="24" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Class 8-B Friends</text>
-<rect x="18" y="44" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Melike:</tspan> Guys, someone has made a fake account with my name and</text>
-<text x="28" y="78" font-size="11.5" fill="#1e293b">photo! He’s asking people for money.</text>
-<rect x="92" y="96" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="114" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Baran:</tspan> (1) ----</text>
-<rect x="18" y="132" width="430" height="28" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="150" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Melike:</tspan> Not yet. I don’t know how to do it.</text>
-<rect x="92" y="168" width="430" height="44" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="186" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Baran:</tspan> It’s easy. Go to the profile, tap the three dots and choose</text>
-<text x="102" y="202" font-size="11.5" fill="#1e293b">“Report”. The website usually closes fake accounts quickly.</text>
-<rect x="18" y="220" width="430" height="28" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="238" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Melike:</tspan> Thanks! I’ve just done it. (2) ----</text>
-<rect x="92" y="256" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="274" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Baran:</tspan> Good idea. Then nobody will send money to that account.</text>
-</svg></div>
-<p>Which of the following best completes the conversation?</p>`,
-  c: ["(1) That’s terrible! Have you told your parents about it? – (2) I’ll also post a message to tell my followers that it isn’t me.", "(1) That’s terrible! Have you reported it to the website? – (2) I’ll also post a message to tell my followers that it isn’t me.", "(1) That’s terrible! Have you reported it to the website? – (2) I’ll also send some money to that account to see who it is.", "(1) Your new profile photo looks great! – (2) I’ll also delete all my photos from my computer."],
-  a: "B",
-  s: `<p>(1): Melike “Not yet. I don’t know how to <b>do it</b>.” diyor; Baran da hemen şikâyet etmenin (Report) adımlarını anlatıyor. Demek ki soru “Siteye şikâyet ettin mi?” olmalı. “Have you told your parents?” sorusu “nasıl yapacağımı bilmiyorum” cevabına ve Baran’ın talimatlarına uymaz.</p><p>(2): Baran “Böylece kimse o hesaba para göndermez.” diyor → Melike takipçilerini uyarmalı: “it isn’t me”. O hesaba para göndermek dolandırıcılığa ortak olmaktır; bilgisayardaki fotoğrafları silmek sahte hesabı ve parayı etkilemez.</p><p>İki boşluğun da tutması gerektiği için yalnızca bir yarısı doğru olan şıklar elenir.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>A Short History of the Internet</b></p><p>The Internet didn’t appear overnight. In 1969, scientists in the USA connected computers at two universities with a network called ARPANET. They tried to send the word “LOGIN”, but the system crashed after the first two letters, so the first message was just “LO”. Two years later, in 1971, Ray Tomlinson sent the first e-mail, and he chose the @ symbol to separate the user’s name from the computer’s name. The World Wide Web came much later. A British scientist, Tim Berners-Lee, came up with the idea in 1989, and the first website went online in 1991. Turkey connected to the Internet in 1993, at Middle East Technical University in Ankara.</p></div><p>Which of the following is <b>FALSE</b> according to the text?</p>`,
-  c: ["The first e-mail was sent before the idea of the World Wide Web came up.", "The first message on ARPANET wasn’t complete.", "ARPANET and the idea of the World Wide Web appeared in the same decade.", "Turkey connected to the Internet two years after the first website went online."],
-  a: "C",
-  s: `<ul><li>İlk e-posta 1971, Web fikri 1989 → önce ✓.</li><li>“LOGIN” yerine yalnızca “LO” gidebildi → mesaj eksik ✓.</li><li>İlk web sitesi 1991, Türkiye 1993 → iki yıl sonra ✓.</li><li>ARPANET 1969’da (1960’lar), Web fikri 1989’da (1980’ler) ortaya çıktı → aynı on yılda değiller ✗. Metindeki “The World Wide Web came much later” cümlesi de bunu gösterir.</li></ul><p>Tuzak: Öğrenci internet (ARPANET) ile World Wide Web’i aynı şey sanır.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p>Until last year, the small school in Yukarıköy, a village high in the mountains, didn’t have an Internet connection. Students had to walk to the next town to do research for their projects. Then a satellite connection was set up in the school.</p><p>Now, the twelve students in the village have online English lessons together with a school in Germany every Tuesday. Last month, they made a video about their village traditions and shared it with their German friends, who sent back a video about their own city. In the evenings, older villagers also come to the school and video call their children and grandchildren living in big cities.</p></div><p>Which of the following is the best title for the text?</p>`,
-  c: ["Learning German Online in a Village School", "How the Internet Brought a Village Closer to the World", "A School Trip from Yukarıköy to Germany", "Why Older People in Villages Don’t Use the Internet"],
-  a: "B",
-  s: `<p>Metin, uydu bağlantısıyla köy okulunun hayatının nasıl değiştiğini anlatıyor: öğrenciler Almanya’daki bir okulla ders yapıyor, video paylaşıyor; yaşlılar şehirdeki yakınlarıyla görüntülü konuşuyor. Ana fikir: İnternet köyü dünyaya yaklaştırdı.</p><p>Çeldiriciler: Öğrenciler <b>İngilizce</b> öğreniyor, Almanca değil (Germany kelimesi tuzaktır). Almanya’ya bir gezi yapılmadı, yalnızca videolar paylaşıldı. Yaşlı köylüler interneti kullanıyor (video call), yani son başlık metinle çelişir.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Two-step verification makes your account safer: after your password, you also need a code sent to your phone. Arda’s sister explains how to turn it on.</p><div class="box"><p>I. Type the six-digit code that you receive on your phone.<br>II. Open “Settings” and choose “Security”.<br>III. Turn on “Two-step verification”.<br>IV. Enter your phone number so that the app can send you a code.<br>V. Log in to your account with your username and password.</p></div><p>Which of the following is the correct order of the steps?</p>`,
-  c: ["V – II – III – IV – I", "II – III – V – IV – I", "V – II – III – I – IV", "V – IV – I – II – III"],
-  a: "A",
-  s: `<p>Mantık zinciri: Ayarlara ulaşmak için önce hesaba <b>giriş</b> yapılır (V). Sonra Settings → Security açılır (II), özellik açılır (III). Kodun gönderileceği telefon numarası girilir (IV) ve telefona gelen kod yazılır (I). Sıra: V – II – III – IV – I.</p><p>Çeldiriciler: Giriş yapmadan ayarları açmak mümkün değildir (II ile başlayan sıra). Numara girilmeden kod gelemez, yani I, IV’ten önce olamaz. Son şıkta ise özellik açılmadan kod gönderiliyor.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<p>24 students in a class answered a survey.</p><table><caption>How often do you do these online? (24 students)</caption><tr><th>Activity</th><th>Never</th><th>Sometimes</th><th>Often</th></tr><tr><td>Watch videos</td><td>0</td><td>6</td><td>18</td></tr><tr><td>Post photos</td><td>10</td><td>10</td><td>4</td></tr><tr><td>Read the news</td><td>14</td><td>8</td><td>2</td></tr><tr><td>Play online games</td><td>6</td><td>6</td><td>12</td></tr></table><p>According to the table, which of the following is <b>NOT</b> correct?</p>`,
-  c: ["All the students watch videos online at least sometimes.", "Half of the students often play online games.", "More than half of the students never read the news online.", "Fewer students never post photos than never play online games."],
-  a: "D",
-  s: `<ul><li>Watch videos – Never: 0 → herkes en az “sometimes” izliyor ✓.</li><li>Play online games – Often: 12 = 24’ün yarısı ✓.</li><li>Read the news – Never: 14 &gt; 12 → yarıdan fazla ✓.</li><li>Never post photos: 10, never play games: 6. 10, 6’dan <b>fazladır</b>; “fewer” ifadesi yanlış ✗.</li></ul><p>Tuzak: “Fewer … than” karşılaştırmasında satırları karıştırmak ya da “Often” sütununa bakmak (4 &lt; 12).</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Here is a product page on a shopping website.</p>
-<div class="fig"><svg viewBox="0 0 540 196" width="540" role="img" aria-label="Yıldız dağılımı">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">WiFi Booster Plus – 200 ratings</text>
-<text x="160" y="55" font-size="11.5" fill="#1e293b" text-anchor="end">5 stars</text>
-<rect x="170" y="40" width="295.4" height="20" rx="3" fill="#f59e0b"/>
-<text x="471.4" y="55" font-size="11.5" fill="#1e293b" font-weight="bold">120</text>
-<text x="160" y="85" font-size="11.5" fill="#1e293b" text-anchor="end">4 stars</text>
-<rect x="170" y="70" width="123.1" height="20" rx="3" fill="#f59e0b"/>
-<text x="299.1" y="85" font-size="11.5" fill="#1e293b" font-weight="bold">50</text>
-<text x="160" y="115" font-size="11.5" fill="#1e293b" text-anchor="end">3 stars</text>
-<rect x="170" y="100" width="24.6" height="20" rx="3" fill="#f59e0b"/>
-<text x="200.6" y="115" font-size="11.5" fill="#1e293b" font-weight="bold">10</text>
-<text x="160" y="145" font-size="11.5" fill="#1e293b" text-anchor="end">2 stars</text>
-<rect x="170" y="130" width="19.7" height="20" rx="3" fill="#f59e0b"/>
-<text x="195.7" y="145" font-size="11.5" fill="#1e293b" font-weight="bold">8</text>
-<text x="160" y="175" font-size="11.5" fill="#1e293b" text-anchor="end">1 star</text>
-<rect x="170" y="160" width="29.5" height="20" rx="3" fill="#f59e0b"/>
-<text x="205.5" y="175" font-size="11.5" fill="#1e293b" font-weight="bold">12</text>
-</svg></div><div class="box"><p><b>Gamze (5 stars):</b> So easy to set up. It took only five minutes, and now I have Wi-Fi in my bedroom!</p><p><b>Okan (4 stars):</b> It works well, but its blue light is a bit too bright at night.</p><p><b>Sevgi (1 star):</b> It stopped working after two weeks. I wrote to customer service three times, but nobody answered.</p></div><p>Which of the following can be inferred from the page?</p>`,
-  c: ["Most buyers complained about the product’s bright light.", "More than three quarters of the buyers gave the product four or five stars.", "One in ten buyers gave the product only one star.", "Every customer who had a problem got help from customer service."],
-  a: "B",
-  s: `<ul><li>4 ve 5 yıldız: 120 + 50 = 170; 170/200 = %85 &gt; %75 ✓.</li><li>Parlak ışıktan yalnızca Okan söz ediyor; “most buyers” çıkarılamaz ✗.</li><li>1 yıldız: 12/200 = %6; onda bir (%10 = 20 kişi) değil ✗.</li><li>Sevgi’ye müşteri hizmetleri hiç cevap vermemiş → ifade metinle çelişir ✗.</li></ul><p>Tuzak: “one in ten” kesrini sayıya çevirmeden onaylamak ve tek bir yorumu tüm alıcılara genellemek.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>Grandpa Rıza:</b> Your grandma and I share one tablet. We want to see all five of our grandchildren at the same time, and they all live in different cities, so each of them uses his or her own phone. We don’t have an e-mail address, and we don’t want to pay for an app. Big buttons would be nice, but they aren’t necessary.</p></div><table><tr><th>App</th><th>Max. devices in one call</th><th>Price</th><th>To sign up, you need</th><th>Big buttons</th></tr><tr><td>TalkEasy</td><td>4</td><td>Free</td><td>Phone number</td><td>Yes</td></tr><tr><td>FaceMeet</td><td>8</td><td>Free</td><td>E-mail address</td><td>Yes</td></tr><tr><td>CallHome</td><td>10</td><td>Free</td><td>Phone number</td><td>No</td></tr><tr><td>GroupCam</td><td>6</td><td>50 TL a month</td><td>Phone number</td><td>Yes</td></tr></table><p>I. TalkEasy isn’t suitable because it doesn’t allow enough devices in one call.<br>II. FaceMeet would be suitable if Grandpa Rıza had an e-mail address.<br>III. CallHome is the only free app that doesn’t need an e-mail address.</p><p>Which of the statements above is/are correct?</p>`,
-  c: ["Only I", "II and III", "I and II", "I, II and III"],
-  a: "C",
-  s: `<p>Önce cihaz sayısı: dedeyle babaanne 1 tablet + 5 torun 5 telefon = <b>6 cihaz</b>.</p><p><b>I:</b> TalkEasy en fazla 4 cihaz → yetersiz ✓.</p><p><b>II:</b> FaceMeet 8 ≥ 6 ✓, ücretsiz ✓; tek sorunu e-posta istemesi → e-postaları olsaydı uygun olurdu ✓.</p><p><b>III:</b> TalkEasy de ücretsiz ve telefon numarasıyla kayıt oluyor; yani CallHome “tek” değil ✗.</p><p>Tuzaklar: Kişi sayısını 7 (2 kişi + 5 torun) sayıp tableti tek cihaz saymamak; III’te “uygun olan tek uygulama” ile “ücretsiz ve e-posta istemeyen tek uygulama” ifadelerini karıştırmak. Büyük düğme şartı “not necessary” olduğu için CallHome’u elemez.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p><b>Oya:</b> “Shopping online is much better than shopping in stores.”</p><p>Which of the following replies <b>partly agrees</b> with Oya?</p>`,
-  c: ["I see what you mean about saving time, but I still prefer to try clothes on before I buy them.", "You might be right. Online shops are often cheaper, and I can shop at midnight in my pyjamas.", "I totally disagree. You can never be sure that the photos on websites are real.", "That’s exactly what I think. I haven’t been to a shopping centre for months."],
-  a: "A",
-  s: `<ul><li>“I see what you mean about saving time, <b>but</b> I still prefer to try clothes on…” → zaman kazandırdığını kabul ediyor ama mağazayı tercih ettiği bir durum belirtiyor → <b>kısmen</b> katılıyor ✓.</li><li>“You might be right” ihtiyatlı bir başlangıç ama ardından yalnızca online alışverişin avantajları sayılıyor; karşı görüş yok → tamamen katılıyor (en güçlü çeldirici).</li><li>“I totally disagree” → katılmıyor.</li><li>“That’s exactly what I think” → tamamen katılıyor.</li></ul><p>Kısmi katılımı belirleyen şey, bir noktayı kabul edip “but/however” ile başka bir noktada ayrılmaktır.</p> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p><b>Ask Dr. Net</b></p><p><b>Kemal (14):</b> I spend a lot of time on my laptop for school and games. In the evenings, my eyes feel tired and dry, and sometimes I get a headache. What should I do?</p><p><b>Dr. Net:</b> Dear Kemal, your eyes need a rest. Try the 20-20-20 rule: every 20 minutes, look at something about six metres away for 20 seconds. Keep your screen at arm’s length, a little below your eyes. In the evening, turn on night mode so the screen is softer, and stop using screens an hour before bed. And don’t forget to blink! We blink less when we look at screens, so our eyes get dry.</p></div><p>Which of the following is <b>NOT</b> one of Dr. Net’s suggestions?</p>`,
-  c: ["Take short breaks to look at things that are far away.", "Make your screen brighter at night so that you can see better.", "Don’t sit too close to your screen.", "Avoid using your devices just before you go to sleep."],
-  a: "B",
-  s: `<p>Öneriler eş anlamlı ifadelerle şıklara yerleştirilmiş:</p><ul><li>“every 20 minutes, look at something about six metres away” = uzaktaki şeylere bakmak için kısa molalar ✓.</li><li>“Keep your screen at arm’s length” = ekrana çok yakın oturma ✓.</li><li>“stop using screens an hour before bed” = uyumadan hemen önce cihaz kullanma ✓.</li><li>Dr. Net akşam “night mode” ile ekranı <b>yumuşatmayı</b> (daha az parlak) öneriyor; parlaklığı artırmak bunun tersidir ✗.</li></ul> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>Doğa spends exactly 4 hours online every day. The chart shows how he uses this time.</p>
-<div class="fig"><svg viewBox="0 0 540 196" width="540" role="img" aria-label="Doğa’nın internet süresinin yüzdeleri">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">How Doğa spends his 4 hours online every day</text>
-<text x="160" y="55" font-size="11.5" fill="#1e293b" text-anchor="end">Watching videos</text>
-<rect x="170" y="40" width="280.0" height="20" rx="3" fill="#0ea5e9"/>
-<text x="456.0" y="55" font-size="11.5" fill="#1e293b" font-weight="bold">35%</text>
-<text x="160" y="85" font-size="11.5" fill="#1e293b" text-anchor="end">Messaging friends</text>
-<rect x="170" y="70" width="200.0" height="20" rx="3" fill="#0ea5e9"/>
-<text x="376.0" y="85" font-size="11.5" fill="#1e293b" font-weight="bold">25%</text>
-<text x="160" y="115" font-size="11.5" fill="#1e293b" text-anchor="end">Homework</text>
-<rect x="170" y="100" width="160.0" height="20" rx="3" fill="#0ea5e9"/>
-<text x="336.0" y="115" font-size="11.5" fill="#1e293b" font-weight="bold">20%</text>
-<text x="160" y="145" font-size="11.5" fill="#1e293b" text-anchor="end">Online games</text>
-<rect x="170" y="130" width="120.0" height="20" rx="3" fill="#0ea5e9"/>
-<text x="296.0" y="145" font-size="11.5" fill="#1e293b" font-weight="bold">15%</text>
-<text x="160" y="175" font-size="11.5" fill="#1e293b" text-anchor="end">Reading the news</text>
-<rect x="170" y="160" width="40.0" height="20" rx="3" fill="#0ea5e9"/>
-<text x="216.0" y="175" font-size="11.5" fill="#1e293b" font-weight="bold">5%</text>
-</svg></div>
-<p>According to the chart, which of the following is <b>FALSE</b>?</p>`,
-  c: ["Doğa spends an hour a day messaging his friends.", "Doğa watches videos for 84 minutes a day.", "Doğa spends more time on homework than on online games and the news together.", "Doğa spends three times as much time on online games as on reading the news."],
-  a: "C",
-  s: `<p>4 saat = 240 dakika. Yüzdeleri dakikaya çevirelim: videos %35 = 84 dk, messaging %25 = 60 dk, homework %20 = 48 dk, games %15 = 36 dk, news %5 = 12 dk.</p><ul><li>Mesajlaşma 60 dk = 1 saat ✓.</li><li>Video 84 dk ✓.</li><li>Oyun 36 = 3 × 12 ✓.</li><li>Oyun + haber = 36 + 12 = 48 dk = ödev süresi. Ödeve “daha fazla” değil, <b>aynı</b> süreyi ayırıyor ✗.</li></ul><p>Tuzak: %20 ile %15’i karşılaştırıp haberi eklemeyi unutmak ya da “as much as” (eşit) ile “more than” farkını gözden kaçırmak.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<div class="fig"><svg viewBox="0 0 540 192" width="540" role="img" aria-label="SCHOOL E-SPORTS CUP – Team Rules">
-<rect x="4" y="4" width="532" height="184" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
-<rect x="4" y="4" width="532" height="34" rx="10" fill="#4f46e5"/>
-<text x="270" y="27" font-size="13.5" fill="#ffffff" font-weight="bold" text-anchor="middle">SCHOOL E-SPORTS CUP – Team Rules</text>
-<text x="26" y="58" font-size="11.5" fill="#1e293b">• A team must have exactly three players.</text>
-<text x="26" y="79" font-size="11.5" fill="#1e293b">• All players must be 12, 13 or 14 years old.</text>
-<text x="26" y="100" font-size="11.5" fill="#1e293b">• All players must be from the same school.</text>
-<text x="26" y="121" font-size="11.5" fill="#1e293b">• Every player needs a permission form signed by a parent.</text>
-<text x="26" y="142" font-size="11.5" fill="#1e293b">• The team name can have up to 12 letters. Numbers and symbols aren’t allowed.</text>
-<text x="26" y="163" font-size="11.5" fill="#1e293b">• Teams must register before 15 November.</text>
-</svg></div>
-<table><tr><th>Team name</th><th>Players’ ages</th><th>Same school</th><th>Permission forms</th><th>Registration date</th></tr><tr><td>StarRiders</td><td>12, 14, 13</td><td>Yes</td><td>All three</td><td>12 November</td></tr><tr><td>PixelWolves</td><td>13, 14, 12</td><td>Yes</td><td>All three</td><td>16 November</td></tr><tr><td>Thunder8</td><td>12, 13, 13</td><td>Yes</td><td>All three</td><td>10 November</td></tr><tr><td>NightOwls</td><td>13, 14, 15</td><td>Yes</td><td>All three</td><td>11 November</td></tr></table><p>Which team can take part in the cup?</p>`,
-  c: ["StarRiders", "PixelWolves", "Thunder8", "NightOwls"],
-  a: "A",
-  s: `<p>Her takım kuralların biri hariç hepsine uyuyor; o tek kuralı bulmak gerekir:</p><ul><li><b>PixelWolves:</b> 16 November → kayıt 15 Kasım’dan <b>önce</b> olmalı ✗.</li><li><b>Thunder8:</b> 8 harften kısa ama içinde <b>rakam</b> (8) var ✗.</li><li><b>NightOwls:</b> Bir oyuncu 15 yaşında; 12–14 aralığı dışında ✗.</li><li><b>StarRiders:</b> 3 oyuncu, 12-14-13 yaş, aynı okul, tüm izin formları, 10 harf, 12 Kasım kaydı ✓.</li></ul> Cevap <b>A</b>.</p>` },
-{ lv: "zor", q: `<div class="box"><p>Selim took some photos on the school trip with his phone. In the evening, he put them on the class’s online folder. The next day, Ms. Ay saved the photos from the folder to her laptop and printed them for the classroom wall. Later, Selim’s friend Tan put his favourite photo on his own blog.</p></div><p>I. Selim uploaded the photos to the online folder.<br>II. Ms. Ay downloaded the photos.<br>III. Tan downloaded his favourite photo to his blog.</p><p>Which of the statements above is/are correct?</p>`,
-  c: ["Only I", "Only II", "I and II", "I, II and III"],
-  a: "C",
-  s: `<p>Yön kuralı: cihazdan internete = <b>upload</b>; internetten cihaza = <b>download</b>.</p><p><b>I:</b> Selim telefonundaki fotoğrafları çevrim içi klasöre koydu → upload ✓.</p><p><b>II:</b> Ms. Ay klasördeki fotoğrafları dizüstü bilgisayarına kaydetti → download ✓.</p><p><b>III:</b> Tan fotoğrafı kendi blog’una koydu → bu bir yükleme/paylaşma (upload/post) işlemidir; blog bir internet sayfası olduğu için “download to his blog” yanlıştır ✗.</p><p>Tuzak: Tan’ın önce fotoğrafı indirmiş olabileceğini düşünmek; ifade “downloaded … <b>to his blog</b>” diyor ve bu yön yanlıştır.</p> Cevap <b>C</b>.</p>` },
-{ lv: "zor", q: `<p>60 students answered the question in Graph 1. Then the students who have at least one social media account answered the question in Graph 2.</p>
-<div class="fig"><svg viewBox="0 0 540 250" width="540" role="img" aria-label="Graph 1: How many social media accounts do you have?">
-<text x="270" y="20" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Graph 1: How many social media accounts do you have?</text>
-<rect x="120" y="30" width="12" height="12" fill="#8b5cf6"/>
-<text x="136" y="40" font-size="11.5" fill="#1e293b">Students</text>
-<line x1="60" y1="200.0" x2="520" y2="200.0" stroke="#e2e8f0"/>
-<text x="54" y="204.0" font-size="11" fill="#475569" text-anchor="end">0</text>
-<line x1="60" y1="150.0" x2="520" y2="150.0" stroke="#e2e8f0"/>
-<text x="54" y="154.0" font-size="11" fill="#475569" text-anchor="end">10</text>
-<line x1="60" y1="100.0" x2="520" y2="100.0" stroke="#e2e8f0"/>
-<text x="54" y="104.0" font-size="11" fill="#475569" text-anchor="end">20</text>
-<line x1="60" y1="50.0" x2="520" y2="50.0" stroke="#e2e8f0"/>
-<text x="54" y="54.0" font-size="11" fill="#475569" text-anchor="end">30</text>
-<rect x="100.5" y="170.0" width="32.0" height="30.0" fill="#8b5cf6"/>
-<text x="116.5" y="166.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">6</text>
-<text x="117.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">None</text>
-<rect x="215.5" y="110.0" width="32.0" height="90.0" fill="#8b5cf6"/>
-<text x="231.5" y="106.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">18</text>
-<text x="232.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">One</text>
-<rect x="330.5" y="80.0" width="32.0" height="120.0" fill="#8b5cf6"/>
-<text x="346.5" y="76.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">24</text>
-<text x="347.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Two</text>
-<rect x="445.5" y="140.0" width="32.0" height="60.0" fill="#8b5cf6"/>
-<text x="461.5" y="136.0" font-size="11" fill="#1e293b" font-weight="bold" text-anchor="middle">12</text>
-<text x="462.5" y="216" font-size="11.5" fill="#1e293b" text-anchor="middle">Three or</text>
-<text x="462.5" y="230" font-size="11.5" fill="#1e293b" text-anchor="middle">more</text>
-<line x1="60" y1="200" x2="520" y2="200" stroke="#334155"/>
-<text x="14" y="38" font-size="11" fill="#475569">students</text>
-</svg></div>
-<div class="fig"><svg viewBox="0 0 540 106" width="540" role="img" aria-label="Graph 2: Is your profile private? (students with an account)">
-<text x="270" y="22" font-size="13" fill="#1e3a8a" font-weight="bold" text-anchor="middle">Graph 2: Is your profile private? (students with an account)</text>
-<text x="160" y="55" font-size="11.5" fill="#1e293b" text-anchor="end">Yes, it is private</text>
-<rect x="170" y="40" width="288.0" height="20" rx="3" fill="#10b981"/>
-<text x="464.0" y="55" font-size="11.5" fill="#1e293b" font-weight="bold">36</text>
-<text x="160" y="85" font-size="11.5" fill="#1e293b" text-anchor="end">No, it is public</text>
-<rect x="170" y="70" width="144.0" height="20" rx="3" fill="#10b981"/>
-<text x="320.0" y="85" font-size="11.5" fill="#1e293b" font-weight="bold">18</text>
-</svg></div>
-<p>Which of the following can <b>NOT</b> be inferred from the graphs?</p>`,
-  c: ["Nine out of ten students have at least one social media account.", "All the students who have three or more accounts keep their profiles private.", "Two thirds of the students with an account have a private profile.", "More than half of the students have two or more accounts."],
-  a: "B",
-  s: `<ul><li>En az bir hesabı olan: 60 − 6 = 54; 54/60 = 9/10 ✓.</li><li>Gizli profil: 36/54 = 2/3 ✓ (Grafik 2’nin toplamı 54, yani 60 değil; payda tuzağı).</li><li>İki ya da daha fazla hesap: 24 + 12 = 36; 36/60 = %60 &gt; yarı ✓.</li><li>Grafik 2’de profil durumu hesap sayısına göre ayrılmamış; 3+ hesabı olan 12 öğrencinin profillerinin gizli olup olmadığı bilinemez ✗.</li></ul><p>Tuzak: 36 sayısının iki grafikte de görünmesi (2+ hesap = 36, gizli profil = 36), öğrencinin bunları aynı kişiler sanmasına yol açar.</p> Cevap <b>B</b>.</p>` },
-{ lv: "zor", q: `<p>I. I ---- a lot of science accounts because I’m interested in space.<br>II. Please ---- the instructions carefully when you set up your new modem.<br>III. My account is private, so only my close friends can ---- me.</p><p>Which word can complete <b>all</b> the sentences above?</p>`,
-  c: ["like", "share", "post", "follow"],
-  a: "D",
-  s: `<ul><li><b>follow</b>: I. hesapları takip etmek ✓; II. talimatlara uymak (follow the instructions) ✓; III. gizli hesapta yalnızca yakın arkadaşlar beni takip edebilir ✓.</li><li><b>like</b>: I’e uyabilir ama “like the instructions carefully” anlamsızdır ✗.</li><li><b>share</b>: “share me” (III) ve “share the instructions carefully when you set up” bağlama uymaz ✗.</li><li><b>post</b>: “post a lot of science accounts” ve “post me” yanlıştır ✗.</li></ul><p>“follow” kelimesinin sosyal medya dışındaki “uymak” anlamını bilmek gerekir.</p> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<p>Toprak’s family is chatting in their group.</p>
-<div class="fig"><svg viewBox="0 0 540 294" width="540" role="img" aria-label="Aile grup sohbeti">
-<rect x="4" y="4" width="532" height="286" rx="12" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-<rect x="4" y="4" width="532" height="30" rx="10" fill="#0f766e"/>
-<text x="270" y="24" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Family</text>
-<rect x="18" y="44" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="62" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Mum:</tspan> I’ll be home late tonight. The Wi-Fi password is on the</text>
-<text x="28" y="78" font-size="11.5" fill="#1e293b">fridge if Aunt Nesrin needs it.</text>
-<text x="442" y="84" font-size="11" fill="#64748b" text-anchor="end">18:05</text>
-<rect x="18" y="96" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="114" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Dad:</tspan> I’m stuck in traffic. I’ll be home around 8. Has anyone</text>
-<text x="28" y="130" font-size="11.5" fill="#1e293b">ordered dinner?</text>
-<text x="442" y="136" font-size="11" fill="#64748b" text-anchor="end">18:20</text>
-<rect x="92" y="148" width="430" height="44" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="166" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Toprak:</tspan> Not yet. Aunt Nesrin is here and she wants pizza. I’ll</text>
-<text x="102" y="182" font-size="11.5" fill="#1e293b">order online when you’re home, so you can pay with your card.</text>
-<text x="516" y="188" font-size="11" fill="#64748b" text-anchor="end">18:22</text>
-<rect x="18" y="200" width="430" height="44" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="28" y="218" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#2563eb">Dad:</tspan> No need to wait. I’ve just sent you the money. Please order</text>
-<text x="28" y="234" font-size="11.5" fill="#1e293b">now.</text>
-<text x="442" y="240" font-size="11" fill="#64748b" text-anchor="end">18:25</text>
-<rect x="92" y="252" width="430" height="28" rx="8" fill="#dcfce7" stroke="#cbd5e1"/>
-<text x="102" y="270" font-size="11.5" fill="#1e293b"><tspan font-weight="bold" fill="#15803d">Toprak:</tspan> Done! The app says it’ll arrive in 40 minutes.</text>
-<text x="516" y="276" font-size="11" fill="#64748b" text-anchor="end">18:40</text>
-</svg></div>
-<p>According to the messages, which of the following is <b>TRUE</b>?</p>`,
-  c: ["Toprak paid for the pizza with his dad’s card.", "Aunt Nesrin couldn’t connect to the Wi-Fi.", "Mum will get home before Dad.", "The pizza should arrive before Dad gets home."],
-  a: "D",
-  s: `<ul><li>Sipariş 18:40’ta verildi, 40 dakika sürecek → yaklaşık 19:20. Babası “around 8” (20:00) gelecek → pizza ondan önce gelmeli ✓.</li><li>Babası kartla ödemek yerine Toprak’a para gönderdi (“I’ve just sent you the money”) ✗ (Toprak’ın ilk planı tuzaktır).</li><li>Annesi şifrenin yerini söylüyor; Nesrin Teyze’nin bağlanamadığına dair bilgi yok ✗.</li><li>Annesi yalnızca geç geleceğini söylüyor; saat vermiyor, babasından önce geleceği çıkarılamaz ✗.</li></ul> Cevap <b>D</b>.</p>` },
-{ lv: "zor", q: `<table><caption>Where do you mostly get your news? (400 teens)</caption><tr><th>Main news source</th><th>Number of teens</th></tr><tr><td>Social media</td><td>180</td></tr><tr><td>Video sites</td><td>100</td></tr><tr><td>TV</td><td>60</td></tr><tr><td>News websites</td><td>40</td></tr><tr><td>Newspapers</td><td>20</td></tr></table><div class="box"><p>In the same survey, only <b>one in four</b> of the teens who mostly get their news from social media said they check where a story comes from before they believe it. Experts warn that news on social media is often shared before anyone checks it.</p></div><p>According to the table and the text, which of the following is <b>FALSE</b>?</p>`,
-  c: ["More teens get their news from video sites than from TV and newspapers together.", "The social media users who check the source are more than the teens who mostly watch the news on TV.", "135 of the teens who use social media for news don’t check the source of a story.", "Twice as many teens use news websites as newspapers."],
-  a: "B",
-  s: `<p>Metindeki “one in four” bilgisini tabloya uygulayalım: sosyal medyadan haber alan 180 gencin 1/4’ü = <b>45</b> kişi kaynağı kontrol ediyor, 180 − 45 = 135 kişi etmiyor.</p><ul><li>Video siteleri 100 &gt; TV + gazete = 60 + 20 = 80 ✓.</li><li>135 kişi kontrol etmiyor ✓.</li><li>Haber siteleri 40 = 2 × 20 ✓.</li><li>Kontrol eden sosyal medya kullanıcıları 45, TV izleyenler 60 → 45, 60’tan <b>az</b> ✗.</li></ul><p>Tuzak: 180’i doğrudan TV ile karşılaştırmak ya da “one in four” kesrini uygulamadan karar vermek.</p> Cevap <b>B</b>.</p>` }
-]
+ "id": "ing-internet",
+ "summary": "<h3>1. Internet Words (İnternet Sözcükleri)</h3><p>5. ünitenin (The Internet) LGS sorularının çoğu bu kelimelerin <b>tanımları</b> ya da bir <b>grafik/kart</b> üzerinden sorulur. Kelimeleri gruplar hâlinde öğren:</p><table>\n<tr><th colspan=\"2\">A) Hareketler (Actions)</th><th colspan=\"2\">B) Parçalar ve Araçlar</th></tr>\n<tr><td><b>download</b></td><td>(internetten) indirmek</td><td><b>browser</b></td><td>internet tarayıcısı</td></tr>\n<tr><td><b>upload</b></td><td>(internete) yüklemek</td><td><b>search engine</b></td><td>arama motoru</td></tr>\n<tr><td><b>log in / sign in</b></td><td>giriş yapmak</td><td><b>website / web page</b></td><td>web sitesi / sayfası</td></tr>\n<tr><td><b>log out / sign out</b></td><td>çıkış yapmak</td><td><b>account / profile</b></td><td>hesap / profil</td></tr>\n<tr><td><b>sign up / create an account</b></td><td>kaydolmak, hesap açmak</td><td><b>username / password</b></td><td>kullanıcı adı / şifre</td></tr>\n<tr><td><b>search / look up</b></td><td>aramak, bakmak</td><td><b>attachment</b></td><td>e-posta eki (dosya)</td></tr>\n<tr><td><b>click / type / scroll down</b></td><td>tıklamak / yazmak / aşağı kaydırmak</td><td><b>link</b></td><td>bağlantı</td></tr>\n<tr><td><b>post / share / upload a photo</b></td><td>paylaşmak</td><td><b>Wi-Fi / connection</b></td><td>kablosuz ağ / bağlantı</td></tr>\n<tr><td><b>chat / video chat</b></td><td>sohbet / görüntülü konuşma</td><td><b>device / laptop / tablet</b></td><td>cihaz / dizüstü / tablet</td></tr>\n<tr><td><b>block / report / delete</b></td><td>engellemek / şikâyet etmek / silmek</td><td><b>notification</b></td><td>bildirim</td></tr>\n</table><table>\n<tr><th colspan=\"2\">C) Sosyal Medya</th><th colspan=\"2\">D) Tehlikeler ve Etkiler</th></tr>\n<tr><td><b>follower / follow</b></td><td>takipçi / takip etmek</td><td><b>hacker / virus</b></td><td>bilgisayar korsanı / virüs</td></tr>\n<tr><td><b>like / comment</b></td><td>beğeni / yorum</td><td><b>cyberbullying</b></td><td>siber zorbalık</td></tr>\n<tr><td><b>blog / blogger / vlogger</b></td><td>blog / blog yazarı / video blog yapan</td><td><b>fake news / fake account</b></td><td>sahte haber / sahte hesap</td></tr>\n<tr><td><b>subscriber / channel</b></td><td>abone / kanal</td><td><b>personal information</b></td><td>kişisel bilgi</td></tr>\n<tr><td><b>social networking site</b></td><td>sosyal paylaşım sitesi</td><td><b>addicted / Internet addict</b></td><td>bağımlı (sıfat) / internet bağımlısı (isim)</td></tr>\n<tr><td><b>online / offline</b></td><td>çevrim içi / çevrim dışı</td><td><b>screen time / eye strain</b></td><td>ekran süresi / göz yorgunluğu</td></tr>\n<tr><td><b>keep in touch (with)</b></td><td>iletişimde kalmak</td><td><b>digital footprint</b></td><td>dijital ayak izi</td></tr>\n<tr><td><b>online shopping / e-book</b></td><td>internet alışverişi / e-kitap</td><td><b>scam / stranger</b></td><td>dolandırıcılık / yabancı kişi</td></tr>\n</table><div class=\"note\"><b>LGS Tuzağı 1 (download ↔ upload):</b> İnternetten cihazına alıyorsan <b>download</b> (indir), cihazından internete gönderiyorsan <b>upload</b> (yükle). “I uploaded my photos to my blog. My cousin downloaded them to print.” Bir soruda ikisi birlikte geçerse yönü (nereden → nereye) kontrol et.</div><div class=\"note\"><b>LGS Tuzağı 2 (addict ↔ addicted):</b> “She is a real Internet <b>addict</b>.” (isim) ama “She is <b>addicted</b> to the Internet.” (sıfat). 2018 LGS’de, birkaç saat çevrim dışı kalınca endişelenen kişi için “a real Internet addict” cevabı geldi. <i>“feels worried when she is offline / can’t live without her phone / checks messages all the time”</i> = addicted.</div><h3>2. What do you use the Internet for? (Ne için kullanırsın?)</h3><p>Amaç bildirirken <b>to + V1</b> ya da <b>for + V-ing / isim</b> kullanılır.</p><ul>\n<li>I use the Internet <b>to do</b> research / <b>to chat</b> with my friends / <b>to download</b> e-books.</li>\n<li>I mostly go online <b>for</b> online games / <b>for</b> shopping / <b>for</b> my homework.</li>\n<li><b>What do you use the Internet for?</b> → To keep in touch with my relatives abroad.</li>\n<li><b>How long do you spend online?</b> → About two hours a day. (süre)</li>\n<li><b>How often do you go online?</b> → Every day / twice a week. (sıklık)</li>\n</ul><div class=\"note\"><b>LGS Tuzağı 3 (How often ↔ How long):</b> Cevapta <i>once / twice / three times a week, every day, rarely</i> varsa soru <b>How often</b>; <i>for two hours, about 30 minutes</i> varsa soru <b>How long</b>. Cevapta amaç (to…, for…) varsa soru <b>What … for?</b></div><h3>3. Frequency Adverbs (Sıklık Zarfları)</h3><div class=\"fig\"><svg viewBox=\"0 0 600 110\" width=\"560\" role=\"img\" aria-label=\"Sıklık zarfları ölçeği\">\n<defs><linearGradient id=\"ii1\" x1=\"0\" x2=\"1\"><stop offset=\"0\" stop-color=\"#e2e8f0\"/><stop offset=\"1\" stop-color=\"#2563eb\"/></linearGradient></defs>\n<rect x=\"25\" y=\"42\" width=\"550\" height=\"16\" rx=\"8\" fill=\"url(#ii1)\"/>\n<g font-size=\"12\" text-anchor=\"middle\" fill=\"#1e293b\">\n<g stroke=\"#1e293b\" stroke-width=\"2\"><line x1=\"33\" y1=\"36\" x2=\"33\" y2=\"64\"/><line x1=\"100\" y1=\"36\" x2=\"100\" y2=\"64\"/><line x1=\"300\" y1=\"36\" x2=\"300\" y2=\"64\"/><line x1=\"410\" y1=\"36\" x2=\"410\" y2=\"64\"/><line x1=\"515\" y1=\"36\" x2=\"515\" y2=\"64\"/><line x1=\"567\" y1=\"36\" x2=\"567\" y2=\"64\"/></g>\n<g font-weight=\"bold\"><text x=\"33\" y=\"28\">never</text><text x=\"100\" y=\"18\">rarely /</text><text x=\"100\" y=\"31\">hardly ever</text><text x=\"300\" y=\"28\">sometimes</text><text x=\"410\" y=\"28\">often</text><text x=\"515\" y=\"28\">usually</text><text x=\"567\" y=\"18\">always</text></g>\n<text x=\"33\" y=\"80\">0%</text><text x=\"100\" y=\"80\">10%</text><text x=\"300\" y=\"80\">50%</text><text x=\"410\" y=\"80\">70%</text><text x=\"515\" y=\"80\">90%</text><text x=\"567\" y=\"80\">100%</text>\n<text x=\"300\" y=\"102\" fill=\"#475569\" font-size=\"11\">once a week · twice a day · three times a month · every day · all the time</text>\n</g></svg></div><ul>\n<li>Zarf, <b>ana fiilden önce</b>, <b>am/is/are’den sonra</b> gelir: She <b>usually</b> checks her e-mails. / He is <b>always</b> online.</li>\n<li><b>hardly ever = rarely = seldom</b> (nadiren). <b>never</b> = hiç. “He hardly ever posts photos.” = “He rarely posts photos.”</li>\n</ul><h3>4. Reading Survey Results (Anket ve Grafik Okuma)</h3><p>LGS’de neredeyse her yıl bir <b>anket grafiği</b> (bar/pasta) ya da <b>profil kartı</b> gelir (2019, 2020, 2021, 2026). Sayıları <b>miktar kelimelerine</b> çevirebilmen gerekir:</p><div class=\"fig\"><svg viewBox=\"0 0 600 150\" width=\"560\" role=\"img\" aria-label=\"Miktar ifadeleri ve yüzdeler\">\n<g font-size=\"11.5\" fill=\"#1e293b\">\n<rect x=\"20\" y=\"15\" width=\"560\" height=\"22\" rx=\"5\" fill=\"#1d4ed8\"/><text x=\"30\" y=\"31\" fill=\"#ffffff\" font-weight=\"bold\">all / everyone (100%)</text>\n<rect x=\"20\" y=\"42\" width=\"430\" height=\"22\" rx=\"5\" fill=\"#2563eb\"/><text x=\"30\" y=\"58\" fill=\"#ffffff\" font-weight=\"bold\">most / the majority / more than half (51–99%)</text>\n<rect x=\"20\" y=\"69\" width=\"280\" height=\"22\" rx=\"5\" fill=\"#60a5fa\"/><text x=\"30\" y=\"85\" font-weight=\"bold\">half (50%)</text>\n<rect x=\"20\" y=\"96\" width=\"140\" height=\"22\" rx=\"5\" fill=\"#bfdbfe\"/><text x=\"30\" y=\"112\" font-weight=\"bold\">a quarter (25%)</text>\n<rect x=\"20\" y=\"123\" width=\"60\" height=\"22\" rx=\"5\" fill=\"#dbeafe\"/><text x=\"90\" y=\"139\" font-weight=\"bold\">a few / only some (az)  ·  none / nobody (0%)</text>\n<text x=\"300\" y=\"112\">less than half (yarıdan az)</text>\n</g></svg></div><ul>\n<li><b>more / fewer people than</b> (sayılabilen kişiler için), <b>less time than</b>; <b>as popular as</b> = eşit; <b>the most popular</b> = en popüler.</li>\n<li><b>less popular than two of the blogs</b> = kendisinden daha popüler <b>tam iki</b> blog var (2026 LGS’de tam bu yapı soruldu).</li>\n</ul><div class=\"note\"><b>LGS Tuzağı 4 (yüzde ↔ sayı):</b> Grafikte kişi sayısı verildiyse önce toplamı bul. 200 kişiden 60’ı “most” değildir (%30)! “Most / the majority” için yarıdan <b>fazla</b>, “half” için tam yarı gerekir. İki dilimi topluyorsan (games <b>or</b> social media) toplamı yarıyla karşılaştır.</div><div class=\"note\"><b>LGS Tuzağı 5 (NOT correct / FALSE):</b> Soru kökündeki <b>NOT</b>, <b>FALSE</b>, <b>CANNOT</b> kelimelerinin altını çiz. Her şıkkı grafikle tek tek kontrol et; doğru olan üç şıkkı eleyince kalan cevaptır.</div><h3>5. Online Safety (İnternet Güvenliği)</h3><div class=\"fig\"><svg viewBox=\"0 0 600 200\" width=\"560\" role=\"img\" aria-label=\"İnternet güvenliği yapılacaklar ve yapılmayacaklar\">\n<rect x=\"5\" y=\"5\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#dcfce7\" stroke=\"#16a34a\"/>\n<rect x=\"305\" y=\"5\" width=\"290\" height=\"190\" rx=\"12\" fill=\"#fee2e2\" stroke=\"#dc2626\"/>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"150\" y=\"30\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#15803d\" font-size=\"14\">DO ✓ (You should / must)</text>\n<text x=\"450\" y=\"30\" text-anchor=\"middle\" font-weight=\"bold\" fill=\"#b91c1c\" font-size=\"14\">DON’T ✗ (You shouldn’t / mustn’t)</text>\n<text x=\"15\" y=\"58\">• use strong passwords</text><text x=\"15\" y=\"83\">• log out on shared computers</text><text x=\"15\" y=\"108\">• check the source of the news</text><text x=\"15\" y=\"133\">• block and report bullies</text><text x=\"15\" y=\"158\">• tell a trusted adult</text><text x=\"15\" y=\"183\">• think twice before you post</text>\n<text x=\"315\" y=\"58\">• share your address / password</text><text x=\"315\" y=\"83\">• click links from strangers</text><text x=\"315\" y=\"108\">• open unknown attachments</text><text x=\"315\" y=\"133\">• meet online friends alone</text><text x=\"315\" y=\"158\">• believe every headline</text><text x=\"315\" y=\"183\">• post things you may regret</text>\n</g></svg></div><table>\n<tr><th>A STRONG PASSWORD …</th><th>A WEAK PASSWORD …</th></tr>\n<tr><td>has at least 8–10 characters</td><td>is short (123456, abc)</td></tr>\n<tr><td>mixes capital (A) &amp; small letters (a), numbers (7) and symbols (!, #, @)</td><td>contains your name, your pet’s name or your birthday</td></tr>\n<tr><td>is secret and different for each account</td><td>is shared with friends</td></tr>\n</table><div class=\"note\"><b>LGS Tuzağı 6 (şifre kuralları):</b> 2023 LGS’de “3 harf + 3 rakam, isim yok” kuralı soruldu. Kurallardaki <b>sayıları</b> (at least 10, exactly 3) harf harf say; adının ya da evcil hayvanının adının şifrenin <b>içinde</b> geçmesi de kuralı bozar (Maxi#2012 → “Max” içerir).</div><p><b>Must / mustn’t / should:</b> You <b>must</b> log out. (zorunlu) · You <b>mustn’t</b> share your password. (yasak) · You <b>should</b> tell an adult. (tavsiye) · You <b>don’t have to</b> reply. (gerekli değil, yasak değil!)</p><h3>6. Giving Opinions · Agreeing · Disagreeing</h3><table>\n<tr><th>Opinion (Görüş)</th><th>Agree (Katılma)</th><th>Disagree (Katılmama)</th></tr>\n<tr><td>I think / I believe …<br>In my opinion, …<br>As far as I’m concerned, …<br>To me, …</td><td>I agree with you. / You’re right.<br>Absolutely! / Exactly!<br>I feel the same way.<br>Same here! / Totally agree!</td><td>I don’t agree with you.<br>I’m not sure about that.<br>I see your point, but …<br>That’s not true for everyone.</td></tr>\n</table><div class=\"note\"><b>LGS Tuzağı 7 (“I see your point, but…”):</b> Karşı tarafı anladığını söyler ama <b>katılmaz</b>; cümle “but” ile itiraza döner. Boşluktan <b>sonraki</b> cümleye bak: kişi karşı görüşü destekleyen bir örnek veriyorsa boşluğa <b>disagree</b> ifadesi gelir (2024 LGS’de ise boşluğa doğrudan kişinin görüşüne uyan örnek cümle geldi: interneti yararlı bulmayan Mark, olumsuz bir örnek verdi).</div><table>\n<tr><th>Advantages (Avantajlar) 👍</th><th>Disadvantages (Dezavantajlar) 👎</th></tr>\n<tr><td>a huge library, fast research · online courses · keeping in touch with friends abroad · online shopping without leaving home · e-books, maps, news</td><td>addiction · eye strain, headache, back pain · lack of sleep · weight gain (no exercise) · hackers &amp; viruses · fake news · cyberbullying · family arguments about screen time</td></tr>\n</table><h3>Çıkmışlarda Bu Konudan Nereden Soruldu?</h3><p>2018-2026 LGS’lerinde bu üniteden toplam <b>8 soru</b> geldi (2022 ve 2025 hariç her yıl 1, 2023’te 2). Sorular, özetteki alt başlıklardan hangisini ölçtüğüne göre sınıflandırıldı.</p><div class=\"fig\"><svg viewBox=\"0 0 560 230\" width=\"560\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Isı haritası: 8 çıkmış sorunun 4’ü anket, profil ve blog verisi okuma; kelime, etkinlikler, şifre güvenliği ve görüş başlıklarından birer soru; 2022 ve 2025’te soru yok\" font-family=\"sans-serif\" font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\"><rect x=\"0\" y=\"0\" width=\"560\" height=\"230\" fill=\"#ffffff\"/><text x=\"8\" y=\"18\" font-size=\"13\" text-anchor=\"start\" font-weight=\"bold\">Alt başlık × yıl (2018-2026)</text><text x=\"500\" y=\"38\" font-size=\"11\" text-anchor=\"start\" font-weight=\"bold\">Toplam</text><g font-size=\"11\" fill=\"#475569\"><text x=\"257\" y=\"38\">18</text><text x=\"285\" y=\"38\">19</text><text x=\"313\" y=\"38\">20</text><text x=\"341\" y=\"38\">21</text><text x=\"369\" y=\"38\">22</text><text x=\"397\" y=\"38\">23</text><text x=\"425\" y=\"38\">24</text><text x=\"453\" y=\"38\">25</text><text x=\"481\" y=\"38\">26</text></g><text x=\"236\" y=\"59\" font-size=\"11\" text-anchor=\"end\">1. İnternet kelimeleri (addict, online…)</text><rect x=\"244\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"257\" y=\"59\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"272\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"300\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"328\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"356\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"412\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"440\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"44\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"502\" y=\"47\" width=\"8\" height=\"16\" rx=\"3\" fill=\"#f59e0b\"/><text x=\"515\" y=\"60\" text-anchor=\"start\" font-weight=\"bold\">1</text><text x=\"236\" y=\"84\" font-size=\"11\" text-anchor=\"end\">2. What do you use it for? (etkinlikler)</text><rect x=\"244\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"272\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"300\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"328\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"356\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"397\" y=\"84\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"412\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"440\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"69\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"502\" y=\"72\" width=\"8\" height=\"16\" rx=\"3\" fill=\"#f59e0b\"/><text x=\"515\" y=\"85\" text-anchor=\"start\" font-weight=\"bold\">1</text><text x=\"236\" y=\"109\" font-size=\"11\" text-anchor=\"end\">3. Sıklık zarfları</text><rect x=\"244\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"272\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"300\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"328\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"356\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"412\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"440\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"94\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><text x=\"506\" y=\"110\" text-anchor=\"start\" font-weight=\"bold\">0</text><text x=\"236\" y=\"134\" font-size=\"11\" text-anchor=\"end\">4. Anket / profil / blog verisi okuma</text><rect x=\"244\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"272\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"285\" y=\"134\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"300\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"313\" y=\"134\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"328\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"341\" y=\"134\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"356\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"412\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"440\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"119\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"481\" y=\"134\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"502\" y=\"122\" width=\"32\" height=\"16\" rx=\"3\" fill=\"#f59e0b\"/><text x=\"539\" y=\"135\" text-anchor=\"start\" font-weight=\"bold\">4</text><text x=\"236\" y=\"159\" font-size=\"11\" text-anchor=\"end\">5. Online güvenlik (şifre kuralları)</text><rect x=\"244\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"272\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"300\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"328\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"356\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"397\" y=\"159\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"412\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"440\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"144\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"502\" y=\"147\" width=\"8\" height=\"16\" rx=\"3\" fill=\"#f59e0b\"/><text x=\"515\" y=\"160\" text-anchor=\"start\" font-weight=\"bold\">1</text><text x=\"236\" y=\"184\" font-size=\"11\" text-anchor=\"end\">6. Görüş · avantaj-dezavantaj</text><rect x=\"244\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"272\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"300\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"328\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"356\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"384\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"412\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#bfdbfe\"/><text x=\"425\" y=\"184\" font-weight=\"bold\" fill=\"#1e3a8a\">1</text><rect x=\"440\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"468\" y=\"169\" width=\"26\" height=\"22\" rx=\"4\" fill=\"#f1f5f9\"/><rect x=\"502\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" fill=\"#f59e0b\"/><text x=\"515\" y=\"185\" text-anchor=\"start\" font-weight=\"bold\">1</text><text x=\"8\" y=\"214\" font-size=\"11\" text-anchor=\"start\" fill=\"#475569\">Toplam 8 soru: 2023’te 2, diğer yıllarda 0 ya da 1 (2022 ve 2025’te soru yok).</text></svg></div><p style=\"font-size:.9em\">* Profil ve blog kartları anket grafiği değildir ama aynı beceriyi (sayısal veriyi karşılaştırıp cümleye çevirme) ölçtüğü için “veri okuma” başlığına alındı.</p><div class=\"note\"><ul>\n<li><b>En yoğun alt başlık veri okuma:</b> 8 sorunun 4’ü bir grafik, profil ya da blog kartındaki sayıları “most, more/fewer, less popular than, younger” gibi ifadelere çevirmeyi istedi.</li>\n<li>Soru kökleri çoğunlukla <b>NOT correct / FALSE</b> ya da “Which is correct?”; şıklar karttaki bilgiyi eş anlamlılarla (chores, films, buying things on the Internet) yeniden söylüyor.</li>\n<li>Diğer 4 soru tek tek farklı başlıklardan: kelime (Internet addict), “What do you use the Internet for?”, şifre kuralları ve internetin zararlarına dair görüş. Sıklık zarfları tek başına sorulmadı ama veri ve diyalog sorularında geçiyor.</li>\n<li>Soru sayısı az olduğu için yıl bazında kesin bir eğilim söylenemez; yine de <b>görsel veri</b> sorusu 2019-2021’de üst üste üç yıl ve 2026’da yeniden geldi; en olası soru tipi budur.</li>\n</ul></div>",
+ "qs": [
+  {
+   "lv": "kolay",
+   "q": "<p>Ela and Tom are texting about their friend Deniz.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 192\" width=\"520\" role=\"img\" aria-label=\"Ela &amp; Tom\">\n<rect x=\"5\" y=\"5\" width=\"530\" height=\"182\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"5\" y=\"5\" width=\"530\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"25\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Ela &amp; Tom</text>\n<rect x=\"18\" y=\"44\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Ela:</tspan> Have you seen Deniz lately? She never comes to the park anymore.</text>\n<rect x=\"72\" y=\"78\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"82\" y=\"96\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#16a34a\">Tom:</tspan> She’s on her phone at least eight hours a day, even at dinner!</text>\n<rect x=\"18\" y=\"112\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"130\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Ela:</tspan> Really? And she panics when her battery is low or the Wi-Fi is off.</text>\n<rect x=\"72\" y=\"146\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"82\" y=\"164\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#16a34a\">Tom:</tspan> ----</text>\n</svg></div><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "I’m afraid she is becoming addicted to the Internet.",
+    "She prefers face-to-face activities to online ones.",
+    "She only goes online when she needs to do homework.",
+    "She is bored with social media, so she rarely logs in."
+   ],
+   "a": "A",
+   "s": "<p>Deniz artık parka gelmiyor, günde en az 8 saat (yemekte bile) telefonda ve şarjı azalınca ya da Wi-Fi kapanınca <b>panikliyor</b>. Bunlar <b>internet bağımlılığının</b> işaretleridir: “I’m afraid she is becoming addicted to the Internet.”</p><p>B (yüz yüze etkinlikleri tercih ediyor), C (sadece ödev için giriyor) ve D (sosyal medyadan sıkıldı, nadiren giriyor) Deniz’in sürekli çevrim içi olmasıyla çelişir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>200 students answered a question in a school survey. Each student chose only <b>one</b> answer.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 225\" width=\"520\" role=\"img\" aria-label=\"200 öğrencinin internette en çok yaptığı etkinlik\">\n<text x=\"270\" y=\"22\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1e3a8a\">What do you mainly do online? (200 students)</text>\n<g font-size=\"11.5\" fill=\"#1e293b\"><text x=\"160\" y=\"55\" text-anchor=\"end\">Playing games</text><rect x=\"170\" y=\"40\" width=\"300\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"476\" y=\"55\" font-weight=\"bold\">60</text>\n<text x=\"160\" y=\"83\" text-anchor=\"end\">Social media</text><rect x=\"170\" y=\"68\" width=\"250\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"426\" y=\"83\" font-weight=\"bold\">50</text>\n<text x=\"160\" y=\"111\" text-anchor=\"end\">Homework / research</text><rect x=\"170\" y=\"96\" width=\"200\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"376\" y=\"111\" font-weight=\"bold\">40</text>\n<text x=\"160\" y=\"139\" text-anchor=\"end\">Watching videos</text><rect x=\"170\" y=\"124\" width=\"150\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"326\" y=\"139\" font-weight=\"bold\">30</text>\n<text x=\"160\" y=\"167\" text-anchor=\"end\">Online shopping</text><rect x=\"170\" y=\"152\" width=\"60\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"236\" y=\"167\" font-weight=\"bold\">12</text>\n<text x=\"160\" y=\"195\" text-anchor=\"end\">Reading news</text><rect x=\"170\" y=\"180\" width=\"40\" height=\"20\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"216\" y=\"195\" font-weight=\"bold\">8</text></g>\n<line x1=\"170\" y1=\"36\" x2=\"170\" y2=\"210\" stroke=\"#64748b\"/></svg></div><p>According to the chart, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Doing homework online is as popular as watching videos among the students.",
+    "A quarter of the students mainly read the news or shop online.",
+    "More than half of the students mainly play games or use social media.",
+    "Social media is the most popular online activity among the students."
+   ],
+   "a": "C",
+   "s": "<p>Toplam 200 öğrenci var; her şıkkı sayılarla kontrol edelim.</p><ul><li>A) Ödev/araştırma 40, video izleme 30; eşit değil ✗.</li><li>B) Haber (8) + alışveriş (12) = 20 öğrenci; 200’ün dörtte biri 50’dir. 20 ise yalnızca %10 ✗.</li><li>C) Oyun (60) + sosyal medya (50) = <b>110</b> öğrenci; 110 &gt; 100, yani yarıdan fazla ✓.</li><li>D) En popüler etkinlik sosyal medya (50) değil, oyun (60) ✗.</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Zeynep and Eymen are chatting online.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 192\" width=\"520\" role=\"img\" aria-label=\"Zeynep &amp; Eymen\">\n<rect x=\"5\" y=\"5\" width=\"530\" height=\"182\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"5\" y=\"5\" width=\"530\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"25\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">Zeynep &amp; Eymen</text>\n<rect x=\"18\" y=\"44\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#9333ea\">Zeynep:</tspan> I met a girl in an online game. She wants to meet me at the mall!</text>\n<rect x=\"72\" y=\"78\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"82\" y=\"96\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#16a34a\">Eymen:</tspan> Do you know her in real life?</text>\n<rect x=\"18\" y=\"112\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"130\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#9333ea\">Zeynep:</tspan> No, but she seems really friendly. She says she’s 14, like me.</text>\n<rect x=\"72\" y=\"146\" width=\"450\" height=\"27\" rx=\"7\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"82\" y=\"164\" font-size=\"11\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#16a34a\">Eymen:</tspan> ----</text>\n</svg></div><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "Be careful! You can’t be sure who she really is. Talk to your parents first.",
+    "Great! Don’t tell anyone and go there alone so that she feels relaxed.",
+    "Why don’t you send her your home address? She can visit you instead.",
+    "I agree. People on the Internet always tell the truth about their age."
+   ],
+   "a": "A",
+   "s": "<p>Zeynep internette tanıştığı ve gerçek hayatta <b>tanımadığı</b> biriyle buluşmak istiyor. Eymen’in “Do you know her in real life?” sorusu endişelendiğini gösteriyor.</p><p>Uygun cevap uyarıdır: “Dikkatli ol! Onun gerçekte kim olduğundan emin olamazsın. Önce ailenle konuş.” ✓</p><p>B (kimseye söylemeden yalnız gitmek), C (ev adresini göndermek) ve D (internetteki insanlar yaşları hakkında hep doğruyu söyler) internet güvenliği kurallarına aykırıdır. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 230\" width=\"520\" role=\"img\" aria-label=\"40 öğrencinin günlük internet süresi pasta grafiği\">\n<text x=\"270\" y=\"18\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1e3a8a\">How many hours a day are you online? (40 students)</text>\n<path d=\"M130 120 L130.0 30.0 A90 90 0 0 1 182.9 47.2 Z\" fill=\"#fbbf24\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<path d=\"M130 120 L182.9 47.2 A90 90 0 0 1 202.8 172.9 Z\" fill=\"#34d399\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<path d=\"M130 120 L202.8 172.9 A90 90 0 0 1 44.4 92.2 Z\" fill=\"#3b82f6\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<path d=\"M130 120 L44.4 92.2 A90 90 0 0 1 130.0 30.0 Z\" fill=\"#f87171\" stroke=\"#ffffff\" stroke-width=\"2\"/>\n<g font-size=\"12\" fill=\"#1e293b\"><rect x=\"260\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#fbbf24\"/><text x=\"284\" y=\"83\">less than 1 hour – 4 students</text>\n<rect x=\"260\" y=\"100\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#34d399\"/><text x=\"284\" y=\"113\">1–2 hours – 10 students</text>\n<rect x=\"260\" y=\"130\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#3b82f6\"/><text x=\"284\" y=\"143\">3–4 hours – 18 students</text>\n<rect x=\"260\" y=\"160\" width=\"16\" height=\"16\" rx=\"3\" fill=\"#f87171\"/><text x=\"284\" y=\"173\">more than 4 hours – 8 students</text></g></svg></div><p>According to the pie chart, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "Most of the students spend at least three hours online every day.",
+    "Only a few students are online for less than an hour a day.",
+    "A quarter of the students spend one or two hours online daily.",
+    "More students are online for over four hours than for one or two hours."
+   ],
+   "a": "D",
+   "s": "<p>Toplam 40 öğrenci. A) 3–4 saat (18) + 4 saatten fazla (8) = 26 öğrenci; 40’ın yarısı 20 olduğundan “most” doğrudur ✓. B) 1 saatten az olan 4 öğrenci (%10), “only a few” doğrudur ✓. C) 1–2 saat 10 öğrenci; 10/40 = dörtte bir ✓.</p><p>D) 4 saatten fazla: <b>8</b> öğrenci, 1–2 saat: <b>10</b> öğrenci. 8 &lt; 10 olduğu için “more students … over four hours” <b>yanlıştır</b>. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Four students created passwords for the new school portal.</p><div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"520\" role=\"img\" aria-label=\"Şifre kuralları ve öğrencilerin şifreleri\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"92\" rx=\"10\" fill=\"#fef3c7\" stroke=\"#d97706\" stroke-width=\"1.5\"/>\n<text x=\"270\" y=\"28\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#92400e\">SCHOOL PORTAL – PASSWORD RULES</text>\n<g font-size=\"11.5\" fill=\"#1e293b\">\n<text x=\"24\" y=\"50\">✓ at least 10 characters   ✓ at least one capital letter and one number</text>\n<text x=\"24\" y=\"70\">✓ at least one symbol (@, #, !)</text>\n<text x=\"24\" y=\"90\">✗ no names (your own name or your pet’s name)   ✗ no birth year</text>\n</g>\n<g font-size=\"11.5\" fill=\"#1e293b\">\n<rect x=\"10\" y=\"110\" width=\"520\" height=\"26\" fill=\"#1e40af\"/>\n<text x=\"24\" y=\"128\" fill=\"#ffffff\" font-weight=\"bold\">Student</text><text x=\"130\" y=\"128\" fill=\"#ffffff\" font-weight=\"bold\">Born in</text><text x=\"230\" y=\"128\" fill=\"#ffffff\" font-weight=\"bold\">Pet</text><text x=\"340\" y=\"128\" fill=\"#ffffff\" font-weight=\"bold\">Password</text>\n<rect x=\"10\" y=\"136\" width=\"520\" height=\"26\" fill=\"#f8fafc\"/><text x=\"24\" y=\"154\">Ada</text><text x=\"130\" y=\"154\">2012</text><text x=\"230\" y=\"154\">Max (dog)</text><text x=\"340\" y=\"154\">Maxi#2012Go</text>\n<rect x=\"10\" y=\"162\" width=\"520\" height=\"26\" fill=\"#eef2ff\"/><text x=\"24\" y=\"180\">Can</text><text x=\"130\" y=\"180\">2011</text><text x=\"230\" y=\"180\">Pamuk (cat)</text><text x=\"340\" y=\"180\">Blue!Ocean7</text>\n<rect x=\"10\" y=\"188\" width=\"520\" height=\"26\" fill=\"#f8fafc\"/><text x=\"24\" y=\"206\">Ben</text><text x=\"130\" y=\"206\">2012</text><text x=\"230\" y=\"206\">—</text><text x=\"340\" y=\"206\">Summer2024rain</text>\n<rect x=\"10\" y=\"214\" width=\"520\" height=\"26\" fill=\"#eef2ff\"/><text x=\"24\" y=\"232\">Dila</text><text x=\"130\" y=\"232\">2011</text><text x=\"230\" y=\"232\">Boncuk (bird)</text><text x=\"340\" y=\"232\">Kedi!Dila55</text>\n</g></svg></div><p>Whose password follows <b>all</b> the rules?</p>",
+   "c": [
+    "Ada’s",
+    "Can’s",
+    "Ben’s",
+    "Dila’s"
+   ],
+   "a": "B",
+   "s": "<p>Kuralları her şifreye uygulayalım:</p><ul><li><b>Ada</b> – Maxi#2012Go: köpeğinin adı “Max” ve doğum yılı “2012” şifrenin içinde geçiyor ✗.</li><li><b>Ben</b> – Summer2024rain: uzun, büyük harf ve rakam var ama <b>sembol yok</b> ✗.</li><li><b>Dila</b> – Kedi!Dila55: kendi adı “Dila” geçiyor ✗.</li><li><b>Can</b> – Blue!Ocean7: 11 karakter, büyük harf (B, O), rakam (7), sembol (!) var; isim ve doğum yılı yok ✓.</li></ul><p>Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Four friends have video channels. The topics of their videos and their numbers of subscribers are given below.</p><div class=\"fig\"><svg viewBox=\"0 0 586 200\" width=\"560\" role=\"img\" aria-label=\"Dört video kanalı ve abone sayıları\">\n<g font-size=\"11\" fill=\"#1e293b\"><rect x=\"6\" y=\"8\" width=\"140\" height=\"30\" fill=\"#bae6fd\" stroke=\"#334155\"/><text x=\"14\" y=\"28\" font-weight=\"bold\">Mia’s Channel</text>\n<rect x=\"6\" y=\"42\" width=\"140\" height=\"150\" fill=\"#ffffff\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"62\">• Staying safe from</text>\n<text x=\"23\" y=\"79\">hackers online</text>\n<text x=\"14\" y=\"96\">• Tips for strong</text>\n<text x=\"23\" y=\"113\">passwords</text>\n<rect x=\"78\" y=\"162\" width=\"62\" height=\"22\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"86\" y=\"178\" font-weight=\"bold\" font-size=\"11\">▶ 48K</text>\n<rect x=\"150\" y=\"8\" width=\"140\" height=\"30\" fill=\"#bae6fd\" stroke=\"#334155\"/><text x=\"158\" y=\"28\" font-weight=\"bold\">Leo’s Channel</text>\n<rect x=\"150\" y=\"42\" width=\"140\" height=\"150\" fill=\"#ffffff\" stroke=\"#334155\"/>\n<text x=\"158\" y=\"62\">• Unboxing the newest</text>\n<text x=\"167\" y=\"79\">phones, tablets and</text>\n<text x=\"167\" y=\"96\">laptops</text>\n<rect x=\"222\" y=\"162\" width=\"62\" height=\"22\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"230\" y=\"178\" font-weight=\"bold\" font-size=\"11\">▶ 75K</text>\n<rect x=\"294\" y=\"8\" width=\"140\" height=\"30\" fill=\"#bae6fd\" stroke=\"#334155\"/><text x=\"302\" y=\"28\" font-weight=\"bold\">Sara’s Channel</text>\n<rect x=\"294\" y=\"42\" width=\"140\" height=\"150\" fill=\"#ffffff\" stroke=\"#334155\"/>\n<text x=\"302\" y=\"62\">• Daily vlogs with my</text>\n<text x=\"311\" y=\"79\">grandparents</text>\n<text x=\"302\" y=\"96\">• Baking with grandma</text>\n<rect x=\"366\" y=\"162\" width=\"62\" height=\"22\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"374\" y=\"178\" font-weight=\"bold\" font-size=\"11\">▶ 30K</text>\n<rect x=\"438\" y=\"8\" width=\"140\" height=\"30\" fill=\"#bae6fd\" stroke=\"#334155\"/><text x=\"446\" y=\"28\" font-weight=\"bold\">Omar’s Channel</text>\n<rect x=\"438\" y=\"42\" width=\"140\" height=\"150\" fill=\"#ffffff\" stroke=\"#334155\"/>\n<text x=\"446\" y=\"62\">• Coding games for</text>\n<text x=\"455\" y=\"79\">beginners</text>\n<text x=\"446\" y=\"96\">• Making simple</text>\n<text x=\"455\" y=\"113\">websites</text>\n<rect x=\"510\" y=\"162\" width=\"62\" height=\"22\" rx=\"8\" fill=\"#e2e8f0\" stroke=\"#475569\"/><text x=\"518\" y=\"178\" font-weight=\"bold\" font-size=\"11\">▶ 52K</text></g></svg></div><p>According to the information above, which of the following is <b>FALSE</b>?</p>",
+   "c": [
+    "The channel which teaches programming is the least popular one.",
+    "The channel about online safety is less popular than two of the channels.",
+    "Sara’s videos are about her family members and food.",
+    "The most popular channel is about technological devices."
+   ],
+   "a": "A",
+   "s": "<p>Aboneler: Leo 75K, Omar 52K, Mia 48K, Sara 30K.</p><ul><li>B) Online güvenlik (Mia, 48K) kanalından daha popüler tam <b>iki</b> kanal var: Leo ve Omar ✓.</li><li>C) Sara’nın videoları büyükanne-büyükbabası ve yemek pişirme üzerine ✓.</li><li>D) En popüler kanal Leo’nunki; telefon, tablet, laptop (teknolojik cihazlar) tanıtıyor ✓.</li><li>A) Programlama (coding) öğreten kanal Omar’ınki ve 52K ile <b>ikinci</b> en popüler; en az popüler olan Sara’nın kanalı (30K). Bu yüzden A <b>yanlıştır</b>.</li></ul><p>Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 175\" width=\"520\" role=\"img\" aria-label=\"Emir ve Lara’nın sosyal medya profilleri\">\n<g font-size=\"12\" fill=\"#1e293b\">\n<rect x=\"10\" y=\"10\" width=\"250\" height=\"155\" rx=\"14\" fill=\"#fff7ed\" stroke=\"#f97316\" stroke-width=\"2.5\"/>\n<rect x=\"10\" y=\"10\" width=\"250\" height=\"34\" rx=\"14\" fill=\"#fed7aa\"/>\n<text x=\"135\" y=\"33\" text-anchor=\"middle\" font-weight=\"bold\" font-size=\"14\">@emir_draws (16)</text>\n<text x=\"26\" y=\"68\">★ joined in 2022</text><text x=\"26\" y=\"92\">★ 1,250 followers</text><text x=\"26\" y=\"116\">★ 84 posts</text><text x=\"26\" y=\"140\">★ about 300 likes per post</text>\n<rect x=\"280\" y=\"10\" width=\"250\" height=\"155\" rx=\"14\" fill=\"#f0fdf4\" stroke=\"#22c55e\" stroke-width=\"2.5\"/>\n<rect x=\"280\" y=\"10\" width=\"250\" height=\"34\" rx=\"14\" fill=\"#bbf7d0\"/>\n<text x=\"405\" y=\"33\" text-anchor=\"middle\" font-weight=\"bold\" font-size=\"14\">@lara.reads (15)</text>\n<text x=\"296\" y=\"68\">★ joined in 2020</text><text x=\"296\" y=\"92\">★ 980 followers</text><text x=\"296\" y=\"116\">★ 120 posts</text><text x=\"296\" y=\"140\">★ about 410 likes per post</text>\n</g></svg></div><p>According to the profiles above, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Emir has used the platform for a longer time than Lara.",
+    "Lara is older than Emir, and she has more followers.",
+    "Lara has shared more posts, but fewer people follow her.",
+    "On average, Emir’s posts get more likes than Lara’s."
+   ],
+   "a": "C",
+   "s": "<p>A) Emir 2022’de, Lara 2020’de katılmış; platformu <b>daha uzun süredir</b> kullanan Lara ✗.</p><p>B) Lara 15, Emir 16 yaşında; Lara daha genç ve takipçisi (980) daha az ✗.</p><p>D) Gönderi başına beğeni: Emir ~300, Lara ~410; Lara’nınki daha fazla ✗.</p><p>C) Lara 120 gönderi paylaşmış (Emir 84) ama takipçisi 980 (Emir 1.250) yani <b>daha az kişi</b> onu takip ediyor ✓. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 175\" width=\"520\" role=\"img\" aria-label=\"Think before you click güvenlik afişi\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"160\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#1d4ed8\" stroke-width=\"2\"/>\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"34\" rx=\"12\" fill=\"#1d4ed8\"/>\n<text x=\"270\" y=\"31\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">THINK BEFORE YOU CLICK!</text>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"26\" y=\"66\">1. Never share your home address or the name of your school.</text>\n<text x=\"26\" y=\"92\">2. Don’t open attachments from people you don’t know.</text>\n<text x=\"26\" y=\"118\">3. Always log out after you use a shared computer.</text>\n<text x=\"26\" y=\"144\">4. If someone is mean to you online, tell a trusted adult.</text>\n</g></svg></div><p>Which student does <b>NOT</b> follow the advice on the poster?</p>",
+   "c": [
+    "Kerem showed the rude comments under his photo to his teacher.",
+    "Ozan posted a photo of himself in front of his school gate with the school’s name on it.",
+    "Nil deleted an e-mail with a file from an unknown sender without opening it.",
+    "Pelin logged out of her account before leaving the library computer."
+   ],
+   "a": "B",
+   "s": "<p>A) Kerem kaba yorumları öğretmenine (güvenilir bir yetişkin) gösterdi → 4. kurala uyuyor.</p><p>C) Nil bilinmeyen kişiden gelen ekli e-postayı açmadan sildi → 2. kurala uyuyor. D) Pelin kütüphane bilgisayarında hesabından çıkış yaptı → 3. kurala uyuyor.</p><p>B) Ozan okulunun adının göründüğü bir fotoğraf paylaştı; bu, okulunun adını paylaşmak demektir ve <b>1. kuralı</b> çiğner. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Selin:</b> In my opinion, students shouldn’t use the Internet for homework. They just copy and paste everything.<br><b>Barış:</b> ---- When I do research online, I compare different websites and write the information in my own words.</p><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "You’re right. Copying is the easiest way to finish homework.",
+    "Absolutely! That’s why I never go online for my projects.",
+    "I feel the same way about online research.",
+    "I see your point, but that’s not true for everyone."
+   ],
+   "a": "D",
+   "s": "<p>Barış boşluktan sonra interneti <b>doğru şekilde</b> kullandığını (farklı siteleri karşılaştırıp kendi cümleleriyle yazdığını) anlatıyor. Yani Selin’in “herkes kopyalıyor” görüşüne <b>katılmıyor</b>.</p><p>“I see your point, but that’s not true for everyone.” (Ne demek istediğini anlıyorum ama bu herkes için geçerli değil.) kibarca katılmama ifadesidir ✓.</p><p>A, B ve C katılma (agree) ifadeleridir ve Barış’ın verdiği örnekle çelişir. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Put the sentences in the correct order to make a meaningful conversation.</p><p>I. Sure. First, click “Sign up” and type your e-mail address.<br>II. OK, done. What’s next?<br>III. Could you help me open an account on this learning website?<br>IV. Choose a strong password. Then check your inbox and click the confirmation link.<br>V. Thanks! Now I can log in and start the online lessons.</p>",
+   "c": [
+    "III – I – II – IV – V",
+    "I – III – IV – II – V",
+    "III – IV – II – I – V",
+    "III – I – IV – V – II"
+   ],
+   "a": "A",
+   "s": "<p>Konuşma bir <b>yardım isteğiyle</b> başlar: III (Hesap açmama yardım eder misin?). Cevap I gelir: “Sure. First, click Sign up…” (İlk adım).</p><p>Ardından II: “Tamam, yaptım. Sonra ne?” ve IV: “Güçlü bir şifre seç, sonra gelen kutunu kontrol et.” En son V: “Teşekkürler! Artık giriş yapıp derslere başlayabilirim.”</p><p>Sıra: III – I – II – IV – V. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Last month, some students in Eda’s class started writing unkind comments under her photos. Then they created a fake account with her name and shared embarrassing pictures of her. Eda felt lonely and didn’t want to go to school. In the end, she talked to the school counsellor, who informed the students’ parents. Now Eda only accepts friend requests from people she knows.</p><p>Which of the following is <b>NOT</b> mentioned in the text?</p>",
+   "c": [
+    "Eda’s classmates opened an account pretending to be her.",
+    "Eda didn’t feel like going to school because of what happened.",
+    "Eda deleted all her social media accounts after the problem.",
+    "Eda asked for help from someone at her school."
+   ],
+   "a": "C",
+   "s": "<p>Metin Eda’nın yaşadığı bir <b>siber zorbalık</b> olayını anlatıyor.</p><ul><li>A) “created a fake account with her name” → sahte hesap açtılar, geçiyor.</li><li>B) “didn’t want to go to school” → geçiyor.</li><li>D) “talked to the school counsellor” → okuldan yardım istedi, geçiyor.</li><li>C) Eda hesaplarını <b>silmedi</b>; metinde sadece artık yalnızca tanıdığı kişilerin arkadaşlık isteklerini kabul ettiği yazıyor. Hesaplarını sildiği <b>belirtilmiyor</b>.</li></ul><p>Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 235\" width=\"520\" role=\"img\" aria-label=\"Öğretmenin e-postası\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"220\" rx=\"10\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"70\" rx=\"10\" fill=\"#f1f5f9\"/>\n<g font-size=\"11.5\" fill=\"#1e293b\">\n<text x=\"24\" y=\"28\"><tspan font-weight=\"bold\">From:</tspan> Mr. Yılmaz (IT Teacher)</text>\n<text x=\"24\" y=\"46\"><tspan font-weight=\"bold\">To:</tspan> 8-B Students</text>\n<text x=\"24\" y=\"64\"><tspan font-weight=\"bold\">Subject:</tspan> Science Project – Deadline</text>\n<rect x=\"360\" y=\"40\" width=\"160\" height=\"26\" rx=\"6\" fill=\"#e0e7ff\" stroke=\"#6366f1\"/><text x=\"372\" y=\"57\">📎 project_guide.pdf</text>\n<text x=\"24\" y=\"100\">Dear students,</text>\n<text x=\"24\" y=\"120\">I’ve attached the project guide. Please download it and read the rules</text>\n<text x=\"24\" y=\"138\">carefully before you start. Upload your presentations to the school</text>\n<text x=\"24\" y=\"156\">website by Friday, 23:00. Please don’t send them by e-mail because</text>\n<text x=\"24\" y=\"174\">the files are too big. If you can’t log in, use your school number as</text>\n<text x=\"24\" y=\"192\">your username and ask me for a new password.</text>\n<text x=\"24\" y=\"214\">Mr. Yılmaz</text>\n</g></svg></div><p>According to the e-mail, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Students should send their presentations to Mr. Yılmaz as attachments.",
+    "Students need to download a document before they prepare their work.",
+    "Students are expected to upload the file which the teacher attached.",
+    "Students can use their own names as usernames on the school website."
+   ],
+   "a": "B",
+   "s": "<p>A) Öğretmen sunumların e-postayla <b>gönderilmemesini</b> istiyor (dosyalar çok büyük) ✗.</p><p>C) Yüklenecek olan öğretmenin eki değil, öğrencilerin <b>kendi sunumları</b>; ekteki rehber ise <b>indirilecek</b> ✗ (download/upload tuzağı).</p><p>D) Kullanıcı adı olarak <b>okul numarası</b> kullanılacak, isim değil ✗.</p><p>B) “Please download it and read the rules carefully before you start.” → Öğrenciler işe başlamadan önce rehberi indirmeli ✓. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>A student prepared the table below for her presentation, but she made <b>two</b> mistakes.</p><div class=\"fig\"><svg viewBox=\"0 0 540 175\" width=\"520\" role=\"img\" aria-label=\"İnternetin avantaj ve dezavantaj tablosu\">\n<g font-size=\"11.5\" fill=\"#1e293b\">\n<rect x=\"10\" y=\"8\" width=\"255\" height=\"30\" fill=\"#16a34a\"/><text x=\"137\" y=\"28\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">ADVANTAGES 👍</text>\n<rect x=\"275\" y=\"8\" width=\"255\" height=\"30\" fill=\"#dc2626\"/><text x=\"402\" y=\"28\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">DISADVANTAGES 👎</text>\n<rect x=\"10\" y=\"38\" width=\"255\" height=\"130\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/>\n<rect x=\"275\" y=\"38\" width=\"255\" height=\"130\" fill=\"#fef2f2\" stroke=\"#dc2626\"/>\n<text x=\"20\" y=\"62\">1. You can do research quickly.</text>\n<text x=\"20\" y=\"90\">2. You can buy things without</text><text x=\"34\" y=\"104\">leaving home.</text>\n<text x=\"20\" y=\"128\">3. It can cause eye strain.</text>\n<text x=\"20\" y=\"156\">4. You can join online courses.</text>\n<text x=\"285\" y=\"62\">5. Hackers can steal your data.</text>\n<text x=\"285\" y=\"90\">6. You may spend too much time</text><text x=\"299\" y=\"104\">online.</text>\n<text x=\"285\" y=\"128\">7. Fake news spreads very fast.</text>\n<text x=\"285\" y=\"156\">8. You can video chat with friends.</text>\n</g></svg></div><p>Which two sentences are in the <b>wrong</b> columns?</p>",
+   "c": [
+    "2 and 7",
+    "3 and 8",
+    "4 and 6",
+    "1 and 5"
+   ],
+   "a": "B",
+   "s": "<p>Avantajlar sütununda 3. madde “It can cause eye strain.” (göz yorgunluğuna sebep olabilir) bir <b>dezavantajdır</b>.</p><p>Dezavantajlar sütununda 8. madde “You can video chat with friends.” (arkadaşlarınla görüntülü konuşabilirsin) bir <b>avantajdır</b>.</p><p>Diğer maddeler (1, 2, 4 avantaj; 5, 6, 7 dezavantaj) doğru yerde. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 160\" width=\"520\" role=\"img\" aria-label=\"Lina’nın internet alışkanlıkları\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"145\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n<text x=\"270\" y=\"30\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#6b21a8\">LINA’S ONLINE HABITS</text>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"30\" y=\"58\">📧 check e-mails</text><text x=\"300\" y=\"58\" font-weight=\"bold\">every morning</text>\n<text x=\"30\" y=\"82\">🎥 video chat with grandma</text><text x=\"300\" y=\"82\" font-weight=\"bold\">twice a week</text>\n<text x=\"30\" y=\"106\">⬆ upload videos to her blog</text><text x=\"300\" y=\"106\" font-weight=\"bold\">once a month</text>\n<text x=\"30\" y=\"130\">🛒 shop online</text><text x=\"300\" y=\"130\" font-weight=\"bold\">never</text>\n</g></svg></div><p><b>Reporter:</b> ----<br><b>Lina:</b> Twice a week, usually on Wednesdays and Sundays. She loves hearing about my school day.</p><p>Which question does the reporter ask?</p>",
+   "c": [
+    "How often do you upload videos to your blog?",
+    "What do you usually do every morning?",
+    "How long do you spend shopping online?",
+    "How often do you video chat with your grandmother?"
+   ],
+   "a": "D",
+   "s": "<p>Lina’nın cevabında <b>sıklık</b> var (“Twice a week”), bu yüzden soru <b>How often</b> ile başlamalı. Karta göre haftada iki kez yaptığı şey büyükannesiyle görüntülü konuşmak; cevaptaki “<b>She</b> loves hearing about my school day.” da büyükanneyi gösterir.</p><p>A) Video yükleme ayda bir (once a month) ✗. B) Her sabah e-postalara bakıyor; cevap “Twice a week” olamaz ✗. C) How long süre sorar; ayrıca Lina online alışveriş hiç yapmıyor ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 215\" width=\"520\" role=\"img\" aria-label=\"İnternet alışveriş sitesi ürün sayfası\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"200\" rx=\"10\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"28\" rx=\"10\" fill=\"#f97316\"/>\n<text x=\"24\" y=\"27\" font-size=\"12\" font-weight=\"bold\" fill=\"#ffffff\">🛒 www.techshop.com</text>\n<rect x=\"24\" y=\"48\" width=\"130\" height=\"130\" rx=\"8\" fill=\"#f1f5f9\" stroke=\"#cbd5e1\"/>\n<text x=\"89\" y=\"120\" font-size=\"40\" text-anchor=\"middle\">🎧</text>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"172\" y=\"64\" font-size=\"14\" font-weight=\"bold\">Wireless Headphones X2</text>\n<text x=\"172\" y=\"86\">★★★★☆ 4.5 (320 reviews)</text>\n<text x=\"172\" y=\"110\" fill=\"#94a3b8\">₺1,200</text><line x1=\"170\" y1=\"106\" x2=\"216\" y2=\"106\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n<text x=\"230\" y=\"110\" font-size=\"15\" font-weight=\"bold\" fill=\"#dc2626\">₺900</text>\n<rect x=\"290\" y=\"96\" width=\"70\" height=\"20\" rx=\"5\" fill=\"#fee2e2\"/><text x=\"298\" y=\"111\" fill=\"#b91c1c\" font-weight=\"bold\">25% OFF</text>\n<text x=\"172\" y=\"134\">🚚 Free delivery for orders over ₺1,000</text>\n<text x=\"172\" y=\"154\">📦 Delivery in 3–5 working days</text>\n<text x=\"172\" y=\"174\">↩ You can return it within 14 days.</text>\n<text x=\"172\" y=\"196\" fill=\"#b91c1c\" font-weight=\"bold\">Hurry! Only 3 left in stock.</text>\n</g></svg></div><p>According to the web page, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Customers don’t pay for delivery if they buy only these headphones.",
+    "Customers can send the headphones back a month after they buy them.",
+    "The headphones are 300 liras cheaper than their old price now.",
+    "There are plenty of headphones in the shop’s stock."
+   ],
+   "a": "C",
+   "s": "<p>A) Ücretsiz kargo ₺1.000 üzeri siparişler için; kulaklık tek başına ₺900, yani kargo <b>ücretli</b> ✗.</p><p>B) İade süresi 14 gün; bir ay (30 gün) değil ✗. D) “Only 3 left in stock” → stokta sadece 3 tane var, “plenty” (bol) değil ✗.</p><p>C) Eski fiyat ₺1.200, yeni fiyat ₺900: 1200 − 900 = <b>300</b> lira ucuz (%25 indirim) ✓. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Every summer, Mert’s family spends a week in a small village with no Internet connection. At first, Mert hated it because he couldn’t check his messages or play online games. But now he looks forward to it. He goes fishing with his father, reads novels in the garden and sleeps much better. “When I come back home,” he says, “I realise how much time I waste on my phone.”</p><p>We can understand from the text that Mert ----.</p>",
+   "c": [
+    "still can’t stand being away from his phone in the village",
+    "plays online games with his father in the evenings",
+    "has trouble sleeping when he is in the village",
+    "now enjoys spending time offline with his family"
+   ],
+   "a": "D",
+   "s": "<p>Metinde Mert’in köye gitmekten <b>önceden</b> nefret ettiği, ama <b>şimdi</b> bunu dört gözle beklediği (looks forward to it) anlatılıyor. Babasıyla balık tutuyor, roman okuyor ve daha iyi uyuyor; yani internetsiz zamanı ailesiyle geçirmekten keyif alıyor ✓.</p><p>A) “still can’t stand” (hâlâ dayanamıyor) yanlış; bu onun eski duygusu. B) Köyde internet yok, online oyun oynayamaz. C) Köyde “sleeps much better” (çok daha iyi uyuyor). Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>I wanted to share my holiday photos with my family, so I <b>(1)</b> ---- them to my blog. The next day, my aunt <b>(2)</b> ---- them to her laptop because she wanted to print them for her album.</p><p>Which of the following best completes the blanks?</p>",
+   "c": [
+    "(1) downloaded – (2) uploaded",
+    "(1) uploaded – (2) downloaded",
+    "(1) logged in – (2) deleted",
+    "(1) searched – (2) logged out"
+   ],
+   "a": "B",
+   "s": "<p>(1) Fotoğrafları kendi cihazımdan bloguma (internete) gönderiyorum → <b>uploaded</b> (yükledim).</p><p>(2) Teyzem fotoğrafları internetten kendi dizüstü bilgisayarına alıyor ki yazdırabilsin → <b>downloaded</b> (indirdi).</p><p>A şıkkı yönleri ters çevirerek kurulmuş güçlü bir çeldiricidir. C ve D anlamca uymaz (fotoğrafları “giriş yapmak” ya da “silmek” albüm için yazdırma amacıyla uyuşmaz). Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Defne typed a question into a search engine and got the results below.</p><div class=\"fig\"><svg viewBox=\"0 0 540 235\" width=\"520\" role=\"img\" aria-label=\"Arama motoru sonuçları\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"220\" rx=\"10\" fill=\"#ffffff\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"24\" y=\"20\" width=\"492\" height=\"32\" rx=\"16\" fill=\"#f8fafc\" stroke=\"#94a3b8\"/>\n<text x=\"40\" y=\"41\" font-size=\"12\" fill=\"#1e293b\">🔍 how to stop spending too much time on my phone</text>\n<g font-size=\"11.5\">\n<text x=\"24\" y=\"78\" font-weight=\"bold\" fill=\"#1d4ed8\">1. Try These 5 Apps to Limit Your Daily Screen Time</text>\n<text x=\"24\" y=\"95\" fill=\"#475569\">Set a timer for each app. The app locks itself when the time is up.</text>\n<text x=\"24\" y=\"122\" font-weight=\"bold\" fill=\"#1d4ed8\">2. Turn Off Your Notifications Before Bed</text>\n<text x=\"24\" y=\"139\" fill=\"#475569\">Silence your phone at 9 p.m. and keep it out of your bedroom.</text>\n<text x=\"24\" y=\"166\" font-weight=\"bold\" fill=\"#1d4ed8\">3. Why Do Teenagers Become Addicted to Phones? – A Study</text>\n<text x=\"24\" y=\"183\" fill=\"#475569\">Scientists from 12 countries explain the reasons behind phone addiction.</text>\n<text x=\"24\" y=\"210\" font-weight=\"bold\" fill=\"#1d4ed8\">4. Leave Your Phone in Another Room While You Study</text>\n</g></svg></div><p>Which result does <b>NOT</b> give Defne a solution to her problem?</p>",
+   "c": [
+    "Result 1",
+    "Result 2",
+    "Result 3",
+    "Result 4"
+   ],
+   "a": "C",
+   "s": "<p>Defne’nin sorunu: telefonda çok fazla zaman geçirmek ve bunu <b>nasıl durduracağı</b> (how to stop…).</p><p>1. sonuç (ekran süresini sınırlayan uygulamalar), 2. sonuç (yatmadan önce bildirimleri kapatmak) ve 4. sonuç (ders çalışırken telefonu başka odada bırakmak) doğrudan <b>çözüm</b> önerir.</p><p>3. sonuç ise gençlerin neden telefona bağımlı olduğunu açıklayan bir <b>araştırmadır</b>; sebepleri anlatır ama bir çözüm sunmaz. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 200\" width=\"520\" role=\"img\" aria-label=\"Efe’nin internet sıklık tablosu\">\n<text x=\"270\" y=\"20\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#134e4a\">EFE: How often do you …?</text>\n<g font-size=\"12\" fill=\"#1e293b\"><rect x=\"10\" y=\"30\" width=\"520\" height=\"26\" fill=\"#0f766e\"/>\n<text x=\"215\" y=\"48\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">always</text>\n<text x=\"285\" y=\"48\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">usually</text>\n<text x=\"355\" y=\"48\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">sometimes</text>\n<text x=\"425\" y=\"48\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">rarely</text>\n<text x=\"495\" y=\"48\" text-anchor=\"middle\" fill=\"#ffffff\" font-weight=\"bold\">never</text>\n<rect x=\"10\" y=\"56\" width=\"520\" height=\"28\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/>\n<text x=\"20\" y=\"74\">check notifications</text>\n<text x=\"215\" y=\"76\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16a34a\" font-weight=\"bold\">✓</text>\n<rect x=\"10\" y=\"84\" width=\"520\" height=\"28\" fill=\"#ecfeff\" stroke=\"#cbd5e1\"/>\n<text x=\"20\" y=\"102\">watch tutorials</text>\n<text x=\"285\" y=\"104\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16a34a\" font-weight=\"bold\">✓</text>\n<rect x=\"10\" y=\"112\" width=\"520\" height=\"28\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/>\n<text x=\"20\" y=\"130\">play online games</text>\n<text x=\"355\" y=\"132\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16a34a\" font-weight=\"bold\">✓</text>\n<rect x=\"10\" y=\"140\" width=\"520\" height=\"28\" fill=\"#ecfeff\" stroke=\"#cbd5e1\"/>\n<text x=\"20\" y=\"158\">post photos</text>\n<text x=\"425\" y=\"160\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16a34a\" font-weight=\"bold\">✓</text>\n<rect x=\"10\" y=\"168\" width=\"520\" height=\"28\" fill=\"#f8fafc\" stroke=\"#cbd5e1\"/>\n<text x=\"20\" y=\"186\">read e-books</text>\n<text x=\"495\" y=\"188\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16a34a\" font-weight=\"bold\">✓</text></g></svg></div><p>According to the chart, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Efe hardly ever shares photos online.",
+    "Efe never misses a chance to read e-books.",
+    "Efe plays online games more often than he watches tutorials.",
+    "Efe seldom checks his notifications."
+   ],
+   "a": "A",
+   "s": "<p>Tabloya göre: notifications → always, tutorials → usually, online games → sometimes, post photos → rarely, e-books → never.</p><ul><li>A) “hardly ever” = rarely (nadiren). Efe fotoğrafları <b>rarely</b> paylaşıyor ✓.</li><li>B) “never misses a chance” (hiç kaçırmaz) = çok sık yapar demektir; oysa Efe e-kitap <b>hiç</b> okumuyor ✗.</li><li>C) Oyun (sometimes) &lt; tutorial (usually) ✗.</li><li>D) “seldom” = nadiren; Efe bildirimlerine <b>her zaman</b> bakıyor ✗.</li></ul><p>Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Ece:</b> Someone I don’t know keeps sending me messages on a game app. Now he’s asking for my address and my school’s name. What should I do?</p><p>Her friends give her advice:</p><p><b>Arda:</b> Don’t reply and block the account immediately.<br><b>Ceren:</b> Take screenshots of the messages and show them to your parents.<br><b>Murat:</b> Report the account to the app so they can check it.<br><b>Yağmur:</b> Agree to meet him in a café so that you can learn who he really is.</p><p>Whose advice is <b>NOT</b> appropriate?</p>",
+   "c": [
+    "Arda’s",
+    "Ceren’s",
+    "Murat’s",
+    "Yağmur’s"
+   ],
+   "a": "D",
+   "s": "<p>Ece’ye tanımadığı biri adresini ve okulunu soruyor; bu tehlikeli bir durumdur.</p><p>Arda (cevap verme, engelle), Ceren (ekran görüntüsü al, ailene göster) ve Murat (hesabı uygulamaya şikâyet et) <b>güvenli</b> tavsiyeler veriyor.</p><p>Yağmur ise internetten tanınan bir yabancıyla <b>yüz yüze buluşmayı</b> öneriyor. Bu, internet güvenliğinin en önemli kurallarından birine (Don’t meet online strangers) aykırıdır. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Look at the notifications on Kerem’s phone this morning.</p><div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"520\" role=\"img\" aria-label=\"Telefon kilit ekranı bildirimleri\">\n<rect x=\"70\" y=\"5\" width=\"400\" height=\"240\" rx=\"26\" fill=\"#0f172a\"/>\n<text x=\"270\" y=\"40\" font-size=\"22\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">07:45</text>\n<g font-size=\"11\">\n<rect x=\"86\" y=\"54\" width=\"368\" height=\"40\" rx=\"9\" fill=\"#f1f5f9\"/><text x=\"96\" y=\"70\" font-weight=\"bold\" fill=\"#1e293b\">🏦 CityBank · 03:12</text><text x=\"96\" y=\"86\" fill=\"#334155\">Your password has been changed. Not you? Call us now.</text>\n<rect x=\"86\" y=\"100\" width=\"368\" height=\"40\" rx=\"9\" fill=\"#f1f5f9\"/><text x=\"96\" y=\"116\" font-weight=\"bold\" fill=\"#1e293b\">❓ Unknown number · 06:30</text><text x=\"96\" y=\"132\" fill=\"#334155\">You won a free phone! Click here: win-prize.xyz</text>\n<rect x=\"86\" y=\"146\" width=\"368\" height=\"40\" rx=\"9\" fill=\"#f1f5f9\"/><text x=\"96\" y=\"162\" font-weight=\"bold\" fill=\"#1e293b\">🎮 GameZone · 07:10</text><text x=\"96\" y=\"178\" fill=\"#334155\">Your friend Arda invited you to play “Space Race”.</text>\n<rect x=\"86\" y=\"192\" width=\"368\" height=\"40\" rx=\"9\" fill=\"#f1f5f9\"/><text x=\"96\" y=\"208\" font-weight=\"bold\" fill=\"#1e293b\">🏫 School App · 07:30</text><text x=\"96\" y=\"224\" fill=\"#334155\">The exam schedule has been updated. Check it.</text>\n</g></svg></div><p>Which of the following can be inferred from the notifications?</p>",
+   "c": [
+    "Kerem’s school has cancelled all the exams for this week.",
+    "Kerem should click the link to get his free phone.",
+    "Someone may have entered Kerem’s bank account during the night.",
+    "Kerem’s friend Arda wants to meet him at the school gate."
+   ],
+   "a": "C",
+   "s": "<p>Banka bildirimi gece <b>03:12</b>’de gelmiş: “Şifreniz değiştirildi. Siz değil misiniz? Hemen bizi arayın.” Kerem gece uyurken şifre değiştiği için birinin (bir hacker’ın) hesabına girmiş <b>olabileceği</b> çıkarılır ✓.</p><p>A) Okul sınavları iptal etmemiş, programı <b>güncellemiş</b> (updated) ✗. B) Bilinmeyen numaradan gelen “ücretsiz telefon kazandınız” mesajı tipik bir <b>dolandırıcılıktır</b>; linke tıklanmamalı ✗. D) Arda onu bir oyuna davet ediyor, buluşmaya değil ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 200\" width=\"520\" role=\"img\" aria-label=\"Üç internet paketi\">\n<g font-size=\"12\" fill=\"#1e293b\" text-anchor=\"middle\">\n<rect x=\"10\" y=\"8\" width=\"165\" height=\"185\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"10\" y=\"8\" width=\"165\" height=\"34\" rx=\"12\" fill=\"#94a3b8\"/><text x=\"92\" y=\"31\" font-weight=\"bold\" fill=\"#ffffff\" font-size=\"14\">BASIC</text>\n<text x=\"92\" y=\"66\">10 GB per month</text><text x=\"92\" y=\"90\">Speed: 25 Mbps</text><text x=\"92\" y=\"114\">No contract</text><text x=\"92\" y=\"138\">1 user</text><text x=\"92\" y=\"174\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f766e\">₺150 / month</text>\n<rect x=\"187\" y=\"8\" width=\"165\" height=\"185\" rx=\"12\" fill=\"#eff6ff\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<rect x=\"187\" y=\"8\" width=\"165\" height=\"34\" rx=\"12\" fill=\"#2563eb\"/><text x=\"269\" y=\"31\" font-weight=\"bold\" fill=\"#ffffff\" font-size=\"14\">FAMILY</text>\n<text x=\"269\" y=\"66\">100 GB per month</text><text x=\"269\" y=\"90\">Speed: 100 Mbps</text><text x=\"269\" y=\"114\">12-month contract</text><text x=\"269\" y=\"138\">up to 4 users</text><text x=\"269\" y=\"174\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f766e\">₺400 / month</text>\n<rect x=\"364\" y=\"8\" width=\"165\" height=\"185\" rx=\"12\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"1.5\"/>\n<rect x=\"364\" y=\"8\" width=\"165\" height=\"34\" rx=\"12\" fill=\"#9333ea\"/><text x=\"446\" y=\"31\" font-weight=\"bold\" fill=\"#ffffff\" font-size=\"14\">GAMER</text>\n<text x=\"446\" y=\"66\">Unlimited data</text><text x=\"446\" y=\"90\">Speed: 200 Mbps</text><text x=\"446\" y=\"114\">24-month contract</text><text x=\"446\" y=\"138\">up to 2 users</text><text x=\"446\" y=\"174\" font-size=\"16\" font-weight=\"bold\" fill=\"#0f766e\">₺550 / month</text>\n</g></svg></div><p>According to the information about the Internet packages, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "The cheapest package doesn’t require a contract.",
+    "Customers have to stay with the Gamer package for one year.",
+    "The Family package offers ten times more data than the Basic one.",
+    "The fastest package is also the most expensive one."
+   ],
+   "a": "B",
+   "s": "<p>A) En ucuz paket Basic (₺150) ve “No contract” ✓. C) Family 100 GB, Basic 10 GB → 10 katı ✓. D) En hızlı paket Gamer (200 Mbps) ve en pahalısı da o (₺550) ✓.</p><p>B) Gamer paketinin sözleşmesi <b>24 ay</b> (iki yıl); bir yıl (12 ay) olan Family paketidir. Bu yüzden B <b>yanlıştır</b>. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>A group of teenagers and their parents answered the survey question below.</p><div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"520\" role=\"img\" aria-label=\"Gençler ve ebeveynlerin internet kullanım amaçları grafiği\">\n<text x=\"270\" y=\"18\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1e3a8a\">What do you use the Internet for most?</text>\n<g font-size=\"11.5\" fill=\"#1e293b\"><rect x=\"70\" y=\"40\" width=\"30\" height=\"160\" fill=\"#3b82f6\"/><text x=\"85\" y=\"35\" text-anchor=\"middle\" font-weight=\"bold\">40%</text>\n<rect x=\"102\" y=\"120\" width=\"30\" height=\"80\" fill=\"#f59e0b\"/><text x=\"117\" y=\"115\" text-anchor=\"middle\" font-weight=\"bold\">20%</text>\n<text x=\"101\" y=\"218\" text-anchor=\"middle\">Social media</text>\n<rect x=\"162\" y=\"80\" width=\"30\" height=\"120\" fill=\"#3b82f6\"/><text x=\"177\" y=\"75\" text-anchor=\"middle\" font-weight=\"bold\">30%</text>\n<rect x=\"194\" y=\"180\" width=\"30\" height=\"20\" fill=\"#f59e0b\"/><text x=\"209\" y=\"175\" text-anchor=\"middle\" font-weight=\"bold\">5%</text>\n<text x=\"193\" y=\"218\" text-anchor=\"middle\">Games</text>\n<rect x=\"254\" y=\"140\" width=\"30\" height=\"60\" fill=\"#3b82f6\"/><text x=\"269\" y=\"135\" text-anchor=\"middle\" font-weight=\"bold\">15%</text>\n<rect x=\"286\" y=\"140\" width=\"30\" height=\"60\" fill=\"#f59e0b\"/><text x=\"301\" y=\"135\" text-anchor=\"middle\" font-weight=\"bold\">15%</text>\n<text x=\"285\" y=\"218\" text-anchor=\"middle\">School / work</text>\n<rect x=\"346\" y=\"160\" width=\"30\" height=\"40\" fill=\"#3b82f6\"/><text x=\"361\" y=\"155\" text-anchor=\"middle\" font-weight=\"bold\">10%</text>\n<rect x=\"378\" y=\"100\" width=\"30\" height=\"100\" fill=\"#f59e0b\"/><text x=\"393\" y=\"95\" text-anchor=\"middle\" font-weight=\"bold\">25%</text>\n<text x=\"377\" y=\"218\" text-anchor=\"middle\">Shopping</text>\n<rect x=\"438\" y=\"180\" width=\"30\" height=\"20\" fill=\"#3b82f6\"/><text x=\"453\" y=\"175\" text-anchor=\"middle\" font-weight=\"bold\">5%</text>\n<rect x=\"470\" y=\"60\" width=\"30\" height=\"140\" fill=\"#f59e0b\"/><text x=\"485\" y=\"55\" text-anchor=\"middle\" font-weight=\"bold\">35%</text>\n<text x=\"469\" y=\"218\" text-anchor=\"middle\">News</text>\n<line x1=\"55\" y1=\"200\" x2=\"530\" y2=\"200\" stroke=\"#475569\"/>\n<rect x=\"150\" y=\"232\" width=\"14\" height=\"12\" fill=\"#3b82f6\"/><text x=\"170\" y=\"243\">Teens</text><rect x=\"300\" y=\"232\" width=\"14\" height=\"12\" fill=\"#f59e0b\"/><text x=\"320\" y=\"243\">Parents</text></g></svg></div><p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Parents play online games more than teenagers do.",
+    "Reading the news is the most popular activity for both groups.",
+    "Most of the parents use the Internet for online shopping.",
+    "Teens and parents use the Internet equally for school or work."
+   ],
+   "a": "D",
+   "s": "<p>A) Oyun: gençler %30, ebeveynler %5; gençler daha çok oynuyor ✗.</p><p>B) Haber okuma ebeveynlerde en yüksek (%35) ama gençlerde en düşük (%5); gençlerde en popüler olan sosyal medya (%40) ✗.</p><p>C) Ebeveynlerin sadece %25’i alışveriş yapıyor; “most” için %50’den fazlası gerekir ✗.</p><p>D) Okul/iş için: gençler %15, ebeveynler %15 → eşit ✓. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Spending too much time online can change our lives in many ways. Some people stop doing sports, so they put on weight. Others don’t get enough sleep because they chat with their friends until late at night. Staring at screens for hours can also cause headaches and eye problems. Moreover, teenagers who are addicted to the Internet often argue with their parents about screen time.</p><p>Which of the following is <b>NOT</b> one of the effects mentioned in the text?</p>",
+   "c": [
+    "Gaining weight because of a lack of exercise",
+    "Not sleeping enough because of chatting at night",
+    "Losing real-life friends because of online games",
+    "Having arguments with family members"
+   ],
+   "a": "C",
+   "s": "<p>Metinde sayılan etkiler: spor yapmayı bırakıp kilo almak (put on weight) → A; gece geç saate kadar sohbet edip yeterince uyumamak → B; baş ağrısı ve göz sorunları; ekran süresi yüzünden ailesiyle tartışmak → D.</p><p>Online oyunlar yüzünden <b>gerçek hayattaki arkadaşları kaybetmekten</b> metinde hiç bahsedilmiyor. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p><b>Reporter:</b> ----<br><b>Aylin:</b> Mostly to do research for my projects, and sometimes to practise English with online quizzes.</p><p>Which question does the reporter ask?</p>",
+   "c": [
+    "How often do you go online?",
+    "What do you use the Internet for?",
+    "How long do you spend online every day?",
+    "Where do you usually connect to the Internet?"
+   ],
+   "a": "B",
+   "s": "<p>Aylin’in cevabı <b>“to + V1”</b> (to do research, to practise English) ile başlıyor; bu bir <b>amaç</b> bildirir. Amaç soran soru: “What do you use the Internet for?” ✓.</p><p>A) How often sıklık sorar (every day, twice a week…). C) How long süre sorar (two hours…). D) Where yer sorar (at home, at school…). Aylin’in cevabındaki “Mostly” ve “sometimes” kelimeleri seni A’ya çekebilir ama cevabın özü amaçtır. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 215\" width=\"520\" role=\"img\" aria-label=\"Kaan’ın dijital günü zaman çizelgesi\">\n<text x=\"270\" y=\"20\" font-size=\"13\" font-weight=\"bold\" text-anchor=\"middle\" fill=\"#1e3a8a\">MY DIGITAL DAY – Kaan’s blog</text>\n<g font-size=\"12\" fill=\"#1e293b\"><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"196\" stroke=\"#2563eb\" stroke-width=\"3\"/>\n<circle cx=\"120\" cy=\"40\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"44\" text-anchor=\"end\" font-weight=\"bold\">07:00</text><text x=\"134\" y=\"44\">checks the weather app</text>\n<circle cx=\"120\" cy=\"66\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"70\" text-anchor=\"end\" font-weight=\"bold\">08:30–15:00</text><text x=\"134\" y=\"70\">school – phone switched off</text>\n<circle cx=\"120\" cy=\"92\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"96\" text-anchor=\"end\" font-weight=\"bold\">16:00</text><text x=\"134\" y=\"96\">online English lesson (45 min)</text>\n<circle cx=\"120\" cy=\"118\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"122\" text-anchor=\"end\" font-weight=\"bold\">17:00</text><text x=\"134\" y=\"122\">football in the park – no phone</text>\n<circle cx=\"120\" cy=\"144\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"148\" text-anchor=\"end\" font-weight=\"bold\">19:30</text><text x=\"134\" y=\"148\">video chat with grandma</text>\n<circle cx=\"120\" cy=\"170\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"174\" text-anchor=\"end\" font-weight=\"bold\">21:00</text><text x=\"134\" y=\"174\">reads an e-book</text>\n<circle cx=\"120\" cy=\"196\" r=\"6\" fill=\"#2563eb\"/><text x=\"108\" y=\"200\" text-anchor=\"end\" font-weight=\"bold\">22:00</text><text x=\"134\" y=\"200\">leaves his phone in the kitchen</text></g></svg></div><p>According to Kaan’s blog post, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "He uses his phone between his lessons at school.",
+    "He plays an online football game with his friends at 17:00.",
+    "He keeps his phone next to his bed at night.",
+    "His online lesson finishes before he goes to the park."
+   ],
+   "a": "D",
+   "s": "<p>A) 08:30–15:00 arası okuldayken telefon <b>kapalı</b> ✗. B) 17:00’de parkta <b>gerçek</b> futbol oynuyor ve telefonu yanında değil ✗. C) 22:00’de telefonunu <b>mutfakta</b> bırakıyor ✗.</p><p>D) Online İngilizce dersi 16:00’da başlıyor ve 45 dakika sürüyor, yani 16:45’te bitiyor; parka 17:00’de gidiyor ✓. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 190\" width=\"520\" role=\"img\" aria-label=\"Sahte haberi fark etme afişi\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"175\" rx=\"12\" fill=\"#fffbeb\" stroke=\"#d97706\" stroke-width=\"2\"/>\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"34\" rx=\"12\" fill=\"#d97706\"/>\n<text x=\"270\" y=\"31\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">HOW TO SPOT FAKE NEWS</text>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"26\" y=\"66\">🔎 Check the source: Is the website reliable?</text>\n<text x=\"26\" y=\"92\">📰 Read the whole story, not only the headline.</text>\n<text x=\"26\" y=\"118\">📅 Check the date. Old news can be shared as new.</text>\n<text x=\"26\" y=\"144\">🌐 Look for the same story on other trusted websites.</text>\n<text x=\"26\" y=\"170\">⏸ Stop and think before you share it with others.</text>\n</g></svg></div><p>Which student does <b>NOT</b> follow the advice on the poster?</p>",
+   "c": [
+    "Deniz read the whole article before forming an opinion about it.",
+    "Can forwarded the story to his class group as soon as he saw its shocking headline.",
+    "Lale noticed that the story was from three years ago, so she didn’t believe it.",
+    "Mert searched for the same story on some well-known news websites."
+   ],
+   "a": "B",
+   "s": "<p>A) Deniz haberin tamamını okudu → “Read the whole story” ✓. C) Lale haberin tarihine baktı ve eski olduğunu fark etti → “Check the date” ✓. D) Mert aynı haberi güvenilir sitelerde aradı → “Look for the same story…” ✓.</p><p>B) Can sadece şok edici <b>başlığı</b> görünce haberi hemen sınıf grubuna gönderdi; hem “sadece başlığı okuma” hem de “paylaşmadan önce dur ve düşün” tavsiyelerine uymadı. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 190\" width=\"520\" role=\"img\" aria-label=\"Bilgisayar laboratuvarı kuralları\">\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"175\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#0369a1\" stroke-width=\"2\"/>\n<rect x=\"10\" y=\"8\" width=\"520\" height=\"34\" rx=\"10\" fill=\"#0369a1\"/>\n<text x=\"270\" y=\"31\" font-size=\"14\" font-weight=\"bold\" fill=\"#ffffff\" text-anchor=\"middle\">💻 COMPUTER LAB RULES</text>\n<g font-size=\"12\" fill=\"#1e293b\">\n<text x=\"26\" y=\"66\">✓ You must log in with your own school account.</text>\n<text x=\"26\" y=\"92\">✗ You mustn’t eat or drink in the lab.</text>\n<text x=\"26\" y=\"118\">✗ You mustn’t download any games or programs.</text>\n<text x=\"26\" y=\"144\">✓ You must save your work on the school drive.</text>\n<text x=\"26\" y=\"170\">✓ You must log out before you leave.</text>\n</g></svg></div><p>Which student follows <b>all</b> the rules?</p>",
+   "c": [
+    "Ece logged in with her own account, saved her work on the school drive and logged out.",
+    "Tarık used his own account but downloaded a free drawing program for his project.",
+    "Sena saved her project on the school drive and drank her juice far from the keyboard.",
+    "Umut used his friend’s account because he forgot his password, but he logged out."
+   ],
+   "a": "A",
+   "s": "<p>B) Tarık program indirdi → “You mustn’t download any games or programs.” kuralını çiğnedi ✗.</p><p>C) Sena içeceğini klavyeden uzakta içse bile laboratuvarda <b>yiyip içmek yasak</b> (“mustn’t eat or drink in the lab”) ✗. D) Umut arkadaşının hesabını kullandı → “own school account” kuralını çiğnedi ✗.</p><p>A) Ece kendi hesabıyla girdi, işini okul sürücüsüne kaydetti ve çıkış yaptı; hiçbir kuralı çiğnemedi ✓. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Which of the following word–definition pairs is <b>NOT</b> correct?</p>",
+   "c": [
+    "attachment – a person who follows your posts on social media",
+    "search engine – a website that helps you find information online",
+    "password – a secret word or code that you use to log in",
+    "hacker – a person who gets into other people’s computers illegally"
+   ],
+   "a": "A",
+   "s": "<p>B) Arama motoru: internette bilgi bulmana yardım eden site ✓. C) Şifre: giriş yapmak için kullanılan gizli kelime ya da kod ✓. D) Hacker: başkalarının bilgisayarlarına yasa dışı yollarla giren kişi ✓.</p><p>A) <b>Attachment</b> e-postaya eklenen <b>dosya</b>dır (e-posta eki). Sosyal medyada paylaşımlarını takip eden kişi <b>follower</b>’dır. Bu eşleşme yanlıştır. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "kolay",
+   "q": "<p>Everything you post, like or comment on leaves a <b>(1)</b> ---- behind you. Even if you delete a photo, someone may have taken a screenshot of it. Universities and companies can see your posts years later, so you should <b>(2)</b> ---- before you share anything.</p><p>Which of the following best completes the blanks?</p>",
+   "c": [
+    "(1) password – (2) log out",
+    "(1) virus – (2) download it",
+    "(1) follower – (2) upload it",
+    "(1) digital footprint – (2) think twice"
+   ],
+   "a": "D",
+   "s": "<p>(1) İnternette yaptığın her paylaşım, beğeni ve yorum arkanda bir iz bırakır; silsen bile ekran görüntüsü alınmış olabilir. Bu ize <b>digital footprint</b> (dijital ayak izi) denir.</p><p>(2) Paylaşımların yıllar sonra bile görülebileceği için paylaşmadan önce <b>think twice</b> (iki kez düşünmek, iyice düşünmek) gerekir.</p><p>Diğer seçeneklerdeki kelimeler (şifre, virüs, takipçi; çıkış yapmak, indirmek, yüklemek) metnin anlamına uymaz. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Kerem is helping his grandmother with a video chat app.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 294\" width=\"540\" role=\"img\" aria-label=\"Grandma Nur &amp; Kerem\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"286\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"24\" font-size=\"12\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">Grandma Nur &amp; Kerem</text>\n<rect x=\"18\" y=\"44\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Grandma Nur:</tspan> Kerem, I want to see your face when we talk, not just</text>\n<text x=\"28\" y=\"78\" font-size=\"11.5\" fill=\"#1e293b\">hear your voice. Can you help me?</text>\n<rect x=\"92\" y=\"96\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"114\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Kerem:</tspan> Of course! You only need a good Wi-Fi connection and the</text>\n<text x=\"102\" y=\"130\" font-size=\"11.5\" fill=\"#1e293b\">app with the camera button.</text>\n<rect x=\"18\" y=\"148\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"166\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Grandma Nur:</tspan> I have the app, but when I press the camera button,</text>\n<text x=\"28\" y=\"182\" font-size=\"11.5\" fill=\"#1e293b\">the screen goes black.</text>\n<rect x=\"92\" y=\"200\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Kerem:</tspan> ----</text>\n<rect x=\"18\" y=\"236\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"254\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Grandma Nur:</tspan> Oh, you’re right! There was a small sticker on it.</text>\n<text x=\"28\" y=\"270\" font-size=\"11.5\" fill=\"#1e293b\">Now I can see myself!</text>\n</svg></div>\n<p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "Maybe something is covering the camera. Can you check it?",
+    "You should delete the app and create a new account.",
+    "Don’t worry, I’ll send you the photos as an attachment.",
+    "Let’s just talk on the phone. Video chats are boring."
+   ],
+   "a": "A",
+   "s": "<p>Nine Nur’un cevabı ipucudur: “Haklısın! Üzerinde küçük bir <b>çıkartma</b> varmış, şimdi kendimi görebiliyorum.” Demek ki Kerem kameranın önünde bir şey olup olmadığını kontrol etmesini söylemiştir: “Maybe something is covering the camera.”</p><p>Uygulamayı silip yeni hesap açmak, fotoğrafları ek olarak göndermek ya da telefonla konuşmayı önermek “There was a small sticker on it” cevabıyla bağlantılı değildir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>40 seventh graders and 40 eighth graders answered a survey. Each student chose only <b>one</b> device.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"Which device do you use most to go online?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Which device do you use most to go online?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#3b82f6\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Grade 7</text>\n<rect x=\"205\" y=\"30\" width=\"12\" height=\"12\" fill=\"#f59e0b\"/>\n<text x=\"221\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Grade 8</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"520\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"170.0\" x2=\"520\" y2=\"170.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"174.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">5</text>\n<line x1=\"60\" y1=\"140.0\" x2=\"520\" y2=\"140.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"144.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"110.0\" x2=\"520\" y2=\"110.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"114.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">15</text>\n<line x1=\"60\" y1=\"80.0\" x2=\"520\" y2=\"80.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"84.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">25</text>\n<rect x=\"83.5\" y=\"116.0\" width=\"32.0\" height=\"84.0\" fill=\"#3b82f6\"/>\n<text x=\"99.5\" y=\"112.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">14</text>\n<rect x=\"117.5\" y=\"68.0\" width=\"32.0\" height=\"132.0\" fill=\"#f59e0b\"/>\n<text x=\"133.5\" y=\"64.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">22</text>\n<text x=\"117.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Smartphone</text>\n<rect x=\"198.5\" y=\"128.0\" width=\"32.0\" height=\"72.0\" fill=\"#3b82f6\"/>\n<text x=\"214.5\" y=\"124.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">12</text>\n<rect x=\"232.5\" y=\"164.0\" width=\"32.0\" height=\"36.0\" fill=\"#f59e0b\"/>\n<text x=\"248.5\" y=\"160.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">6</text>\n<text x=\"232.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Tablet</text>\n<rect x=\"313.5\" y=\"152.0\" width=\"32.0\" height=\"48.0\" fill=\"#3b82f6\"/>\n<text x=\"329.5\" y=\"148.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">8</text>\n<rect x=\"347.5\" y=\"146.0\" width=\"32.0\" height=\"54.0\" fill=\"#f59e0b\"/>\n<text x=\"363.5\" y=\"142.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">9</text>\n<text x=\"347.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Laptop</text>\n<rect x=\"428.5\" y=\"164.0\" width=\"32.0\" height=\"36.0\" fill=\"#3b82f6\"/>\n<text x=\"444.5\" y=\"160.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">6</text>\n<rect x=\"462.5\" y=\"182.0\" width=\"32.0\" height=\"18.0\" fill=\"#f59e0b\"/>\n<text x=\"478.5\" y=\"178.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">3</text>\n<text x=\"462.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Desktop</text>\n<text x=\"462.5\" y=\"230\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">computer</text>\n<line x1=\"60\" y1=\"200\" x2=\"520\" y2=\"200\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<p>According to the graph, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "Smartphones are the most popular device in both grades.",
+    "Desktop computers are the least popular choice in Grade 7, but not in Grade 8.",
+    "More than half of the eighth graders mostly use smartphones.",
+    "Tablets are twice as popular in Grade 7 as in Grade 8."
+   ],
+   "a": "B",
+   "s": "<p>Grafiği adım adım kontrol edelim:</p><ul><li>Akıllı telefon: 7. sınıfta 14 (en yüksek), 8. sınıfta 22 (en yüksek) → iki sınıfta da en popüler ✓.</li><li>8. sınıfta 22/40 = %55 → yarıdan fazla ✓.</li><li>Tablet: 12 ve 6 → 7. sınıfta iki katı ✓.</li><li>Masaüstü bilgisayar: 7. sınıfta 6 (en az), 8. sınıfta da 3 ile <b>yine en az</b>. “ama 8. sınıfta değil” ifadesi yanlıştır ✗.</li></ul><p>Doğru olmayan ifade masaüstü bilgisayarla ilgili olandır. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Look at the information about four podcasts.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 226\" width=\"540\" role=\"img\" aria-label=\"Dört podcast kartı\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Top Podcasts for Teens</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#dc2626\" font-weight=\"bold\">Kitchen Chaos</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Easy and cheap meals you can cook at</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">home</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Listeners: 12,400</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#7c3aed\" font-weight=\"bold\">Pixel Talk</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Honest reviews of the newest video</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">games</text>\n<text x=\"287\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Listeners: 8,900</text>\n<rect x=\"10\" y=\"130\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"151\" font-size=\"12.5\" fill=\"#16a34a\" font-weight=\"bold\">Green Steps</text>\n<text x=\"22\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">Small things we can do to protect</text>\n<text x=\"22\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">nature</text>\n<text x=\"22\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">Listeners: 15,100</text>\n<rect x=\"275\" y=\"130\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"151\" font-size=\"12.5\" fill=\"#b45309\" font-weight=\"bold\">Time Travellers</text>\n<text x=\"287\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">Exciting stories from the past</text>\n<text x=\"287\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Listeners: 9,700</text>\n</svg></div>\n<p>Which of the following is <b>FALSE</b> according to the information?</p>",
+   "c": [
+    "The podcast about protecting the environment has the most listeners.",
+    "People interested in history can listen to a podcast with fewer listeners than “Kitchen Chaos”.",
+    "The podcast about games is less popular than all the others.",
+    "The cooking podcast is more popular than three of the podcasts."
+   ],
+   "a": "D",
+   "s": "<p>Dinleyici sayılarını sıralayalım: Green Steps 15,100 &gt; Kitchen Chaos 12,400 &gt; Time Travellers 9,700 &gt; Pixel Talk 8,900.</p><ul><li>Doğayı korumayla ilgili podcast (Green Steps) en çok dinlenen ✓.</li><li>Tarih (Time Travellers, “stories from the past”) 9,700 &lt; 12,400 ✓.</li><li>Oyun podcast’i (Pixel Talk) en az dinlenen ✓.</li><li>Yemek podcast’i (Kitchen Chaos) yalnızca <b>iki</b> podcast’ten daha popülerdir; Green Steps ondan daha çok dinleniyor. “Üç podcast’ten daha popüler” ifadesi <b>yanlıştır</b> (2026 LGS’deki “less/more popular than two of…” kalıbı).</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>The school library has a new online system.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 192\" width=\"540\" role=\"img\" aria-label=\"NEW ONLINE LIBRARY ACCOUNT – Password Rules\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"184\" rx=\"12\" fill=\"#ecfeff\" stroke=\"#0e7490\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#0e7490\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">NEW ONLINE LIBRARY ACCOUNT – Password Rules</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">Your password must:</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">• have 8–12 characters,</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">• start with a capital letter,</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">• contain exactly two numbers,</text>\n<text x=\"26\" y=\"142\" font-size=\"11.5\" fill=\"#1e293b\">• contain at least one symbol (! ? # @),</text>\n<text x=\"26\" y=\"163\" font-size=\"11.5\" fill=\"#1e293b\">• NOT contain your birth year.</text>\n</svg></div>\n<table><tr><th>Student</th><th>Birth year</th><th>Password</th></tr><tr><td>Berk</td><td>2011</td><td>Tiger@2011</td></tr><tr><td>Can</td><td>2012</td><td>blue@sky47</td></tr><tr><td>Ada</td><td>2012</td><td>Moonlight#25</td></tr><tr><td>Duru</td><td>2011</td><td>Sunflowers!73</td></tr></table>\n<p>Whose password follows <b>all</b> the rules?</p>",
+   "c": [
+    "Ada’s",
+    "Berk’s",
+    "Can’s",
+    "Duru’s"
+   ],
+   "a": "A",
+   "s": "<p>Her şifreyi kurallarla tek tek karşılaştıralım:</p><ul><li><b>Berk</b> – Tiger@2011: 10 karakter, büyük harfle başlıyor, sembol var; ama <b>dört</b> rakam içeriyor ve doğum yılı (2011) var ✗.</li><li><b>Can</b> – blue@sky47: küçük harfle başlıyor ✗.</li><li><b>Ada</b> – Moonlight#25: M-o-o-n-l-i-g-h-t-#-2-5 = 12 karakter (sınır içinde), büyük harfle başlıyor, tam iki rakam (2, 5), sembol (#) var, 2012 yok ✓.</li><li><b>Duru</b> – Sunflowers!73: iki rakam ve sembol var ama <b>13</b> karakter; 12’yi aşıyor ✗ (harf harf sayılmazsa gözden kaçan tuzak).</li></ul> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Leyla wrote a post on a forum, and four people replied.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 226\" width=\"540\" role=\"img\" aria-label=\"Forum yanıtları\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Leyla: Kids under 13 shouldn’t have social media accounts!</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#0369a1\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#0369a1\" font-weight=\"bold\">Mete</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">I see what you mean, but my little</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">brother only follows science pages.</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">It’s really useful for him.</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#15803d\" font-weight=\"bold\">Sena</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Exactly! Young children believe</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">everything they read online.</text>\n<rect x=\"10\" y=\"130\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"151\" font-size=\"12.5\" fill=\"#b45309\" font-weight=\"bold\">Ozan</text>\n<text x=\"22\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">I don’t think age is the problem.</text>\n<text x=\"22\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Parents should just teach them the</text>\n<text x=\"22\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">rules of the Internet.</text>\n<rect x=\"275\" y=\"130\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#be185d\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"151\" font-size=\"12.5\" fill=\"#be185d\" font-weight=\"bold\">Pelin</text>\n<text x=\"287\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">I couldn’t agree more. They should</text>\n<text x=\"287\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">play outside instead of scrolling all</text>\n<text x=\"287\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">day.</text>\n</svg></div>\n<p>Which people <b>agree</b> with Leyla?</p>",
+   "c": [
+    "Mete and Sena",
+    "Ozan and Pelin",
+    "Sena and Pelin",
+    "Only Sena"
+   ],
+   "a": "C",
+   "s": "<p>Leyla, 13 yaşından küçüklerin sosyal medya hesabı olmaması gerektiğini düşünüyor.</p><ul><li><b>Mete:</b> “I see what you mean, <b>but</b>…” → kardeşi için yararlı olduğunu söylüyor; katılmıyor.</li><li><b>Sena:</b> “Exactly!” → küçük çocuklar internetteki her şeye inanıyor; katılıyor ✓.</li><li><b>Ozan:</b> “I don’t think age is the problem” → katılmıyor.</li><li><b>Pelin:</b> “I couldn’t agree more.” (Daha fazla katılamazdım = tamamen katılıyorum) ✓.</li></ul><p>“I couldn’t agree more” ifadesi olumsuz yapıda olduğu için katılmama sanılabilir; bu yüzden “Only Sena” çeldiricidir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>A reporter is interviewing Ms. Kaya, a travel blogger.</p>\n<div class=\"dialog\"><div><b>Reporter:</b> (I) ----</div><div><b>Ms. Kaya:</b> Three years ago, just after I moved to Japan.</div><div><b>Reporter:</b> (II) ----</div><div><b>Ms. Kaya:</b> Mostly about daily life and Japanese food. My readers love the recipes.</div><div><b>Reporter:</b> (III) ----</div><div><b>Ms. Kaya:</b> Every Friday. I never miss a week.</div></div>\n<p>Which of the following is <b>NOT</b> one of the reporter’s questions?</p>",
+   "c": [
+    "When did you start your blog?",
+    "How long does it take you to write a post?",
+    "What do you write about?",
+    "How often do you post on your blog?"
+   ],
+   "a": "B",
+   "s": "<p>Cevaplardan soruları bulalım:</p><ul><li>(I) “Three years ago…” → zaman: <i>When did you start your blog?</i></li><li>(II) “Mostly about daily life and Japanese food” → konu: <i>What do you write about?</i></li><li>(III) “Every Friday” → sıklık: <i>How often do you post?</i></li></ul><p>“How long does it take…?” bir yazının ne kadar <b>sürede</b> yazıldığını sorar; cevaplarda “two hours” gibi bir süre yoktur. “Every Friday” sıklık bildirir (How often), süre değil. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Four friends recorded their time online. The school counsellor says, “More than <b>16 hours</b> a week is too much.”</p>\n<table><tr><th>Name</th><th>Each weekday (Mon–Fri)</th><th>Each weekend day (Sat–Sun)</th></tr><tr><td>Nil</td><td>2 hours</td><td>4 hours</td></tr><tr><td>Eren</td><td>1 hour</td><td>6 hours</td></tr><tr><td>Sıla</td><td>3 hours</td><td>1 hour</td></tr><tr><td>Tuna</td><td>1 hour</td><td>5 hours</td></tr></table>\n<p>According to the table, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Eren and Sıla spend the same amount of time online at the weekend.",
+    "Only one of the friends spends less time online than the limit in a week.",
+    "Nil spends the most time online on weekdays.",
+    "Tuna spends more time online than Eren in a week."
+   ],
+   "a": "B",
+   "s": "<p>Haftalık toplam = (hafta içi × 5) + (hafta sonu × 2):</p><ul><li>Nil: 10 + 8 = <b>18</b> saat</li><li>Eren: 5 + 12 = <b>17</b> saat</li><li>Sıla: 15 + 2 = <b>17</b> saat</li><li>Tuna: 5 + 10 = <b>15</b> saat</li></ul><p>Sınırın (16) altında kalan yalnızca Tuna’dır ✓. Hafta sonu: Eren 12, Sıla 2 saat (eşit değil) ✗. Hafta içi en çok Sıla (15) çevrim içi, Nil (10) değil ✗. Tuna (15) Eren’den (17) az ✗. Günlük sayıları ×5 ve ×2 ile çarpmadan karşılaştırmak hataya götürür. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 189\" width=\"540\" role=\"img\" aria-label=\"STOP BEFORE YOU SHARE!\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"181\" rx=\"12\" fill=\"#fef2f2\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#b91c1c\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">STOP BEFORE YOU SHARE!</text>\n<text x=\"270\" y=\"58\" font-size=\"12\" fill=\"#b91c1c\" font-weight=\"bold\" text-anchor=\"middle\">How to spot fake news</text>\n<text x=\"26\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">1. Who wrote it? Check the name of the writer or the website.</text>\n<text x=\"26\" y=\"97\" font-size=\"11.5\" fill=\"#1e293b\">2. Look at the date. Old news can look new on social media.</text>\n<text x=\"26\" y=\"118\" font-size=\"11.5\" fill=\"#1e293b\">3. Don’t stop at the headline. Read the whole story.</text>\n<text x=\"26\" y=\"139\" font-size=\"11.5\" fill=\"#1e293b\">4. Search for the same news on other websites you trust.</text>\n<text x=\"26\" y=\"160\" font-size=\"11.5\" fill=\"#1e293b\">5. Does it make you very angry or scared? Wait before you click “share”.</text>\n</svg></div>\n<p>Which of the following is <b>NOT</b> advised in the poster?</p>",
+   "c": [
+    "Comparing the news with reliable sources",
+    "Checking when the news was published",
+    "Not trusting the title of a story alone",
+    "Sending the news only to close friends first"
+   ],
+   "a": "D",
+   "s": "<p>Şıklar afişteki maddeleri eş anlamlı ifadelerle anlatıyor:</p><ul><li>“Comparing the news with reliable sources” = 4. madde (güvendiğin diğer sitelerde ara) ✓.</li><li>“Checking when the news was published” = 2. madde (tarihe bak) ✓.</li><li>“Not trusting the title alone” = 3. madde (başlıkta kalma, tamamını oku) ✓.</li></ul><p>Haberi önce yakın arkadaşlara göndermekten afişte hiç söz edilmez; aksine 5. madde paylaşmadan önce beklemeyi öğütler. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Defne is reading a product page on a shopping website.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 154\" width=\"540\" role=\"img\" aria-label=\"Ürün sayfası ve yorumlar\">\n<rect x=\"10\" y=\"10\" width=\"520\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"31\" font-size=\"12.5\" fill=\"#0f172a\" font-weight=\"bold\">SoundGo Wireless Headphones  ★★★★☆</text>\n<text x=\"22\" y=\"52\" font-size=\"11.5\" fill=\"#1e293b\">Price: 850 TL (before: 1,000 TL)</text>\n<text x=\"22\" y=\"68\" font-size=\"11.5\" fill=\"#1e293b\">Free delivery for orders over 500 TL</text>\n<text x=\"22\" y=\"84\" font-size=\"11.5\" fill=\"#1e293b\"></text>\n<text x=\"22\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">@meltem: The sound is great, but the battery lasts only five hours.</text>\n<text x=\"22\" y=\"116\" font-size=\"11.5\" fill=\"#1e293b\">@burak_t: I ordered them on Monday and got them on Wednesday. Fast delivery!</text>\n<text x=\"22\" y=\"132\" font-size=\"11.5\" fill=\"#1e293b\">@aylin: Comfortable, but a bit too big for small heads like my sister’s.</text>\n</svg></div>\n<p>According to the page, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Customers have to pay extra for delivery.",
+    "The headphones are 150 TL cheaper than before.",
+    "All the reviewers are happy with the battery.",
+    "Burak waited for a week to get his headphones."
+   ],
+   "a": "B",
+   "s": "<p>Eski fiyat 1,000 TL, yeni fiyat 850 TL → 1,000 − 850 = <b>150 TL</b> indirim ✓.</p><p>Ürün 850 TL ve 500 TL üzeri siparişlerde kargo ücretsiz → ekstra ödeme yok ✗. Meltem bataryanın yalnızca beş saat dayandığından şikâyet ediyor ✗. Burak pazartesi sipariş edip çarşamba almış, yani iki gün beklemiş, bir hafta değil ✗. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Mina answered an online quiz.</p>\n<div class=\"box\"><p><b>QUIZ: Are you an Internet addict?</b> Score: <b>Often = 2</b>, <b>Sometimes = 1</b>, <b>Never = 0</b><br>0–4 points: You are in control. · 5–8 points: Be careful! · 9–12 points: You need a digital detox!</p></div>\n<table><tr><th>Question</th><th>Mina’s answer</th></tr><tr><td>1. Do you check your phone as soon as you wake up?</td><td>Often</td></tr><tr><td>2. Do you feel nervous when you are offline?</td><td>Sometimes</td></tr><tr><td>3. Do you go online during meals?</td><td>Never</td></tr><tr><td>4. Do you stay up late to chat or play games?</td><td>Often</td></tr><tr><td>5. Do you forget your homework because of the Internet?</td><td>Sometimes</td></tr><tr><td>6. Do your parents complain about your screen time?</td><td>Often</td></tr></table>\n<p>Which of the following is <b>CORRECT</b> about Mina’s result?</p>",
+   "c": [
+    "She gets 9 points, so she needs a digital detox.",
+    "She gets 5 points, so her Internet use is under control.",
+    "She needs a digital detox because she never goes online during meals.",
+    "She gets 8 points, so she should be careful about her Internet use."
+   ],
+   "a": "D",
+   "s": "<p>Puanları toplayalım: Often (1, 4, 6) → 3 × 2 = 6; Sometimes (2, 5) → 2 × 1 = 2; Never (3) → 0. Toplam 6 + 2 + 0 = <b>8</b> → 5–8 aralığı: “Be careful!” ✓.</p><p>9 puan, “Never” cevabına da puan verilirse ya da bir “Sometimes” 2 sayılırsa çıkar ✗. 5 puan, “Often” cevapları 2 yerine 1 sayılırsa çıkar (3 + 2); üstelik 5 puan bile “in control” değil “Be careful!” aralığındadır ✗. Yemekte hiç çevrim içi olmamak puanı düşürür; detoks gerekçesi olamaz ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>A website asked adults and teenagers about the main reason they go online.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"Main reason for going online (%)\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Main reason for going online (%)</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#0891b2\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Adults</text>\n<rect x=\"198\" y=\"30\" width=\"12\" height=\"12\" fill=\"#e11d48\"/>\n<text x=\"214\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Teenagers</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"520\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"162.5\" x2=\"520\" y2=\"162.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"166.5\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"125.0\" x2=\"520\" y2=\"125.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"129.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"87.5\" x2=\"520\" y2=\"87.5\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"91.5\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40</text>\n<rect x=\"72.0\" y=\"125.0\" width=\"32.0\" height=\"75.0\" fill=\"#0891b2\"/>\n<text x=\"88.0\" y=\"121.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">20</text>\n<rect x=\"106.0\" y=\"50.0\" width=\"32.0\" height=\"150.0\" fill=\"#e11d48\"/>\n<text x=\"122.0\" y=\"46.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">40</text>\n<text x=\"106.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Social media</text>\n<rect x=\"164.0\" y=\"181.2\" width=\"32.0\" height=\"18.8\" fill=\"#0891b2\"/>\n<text x=\"180.0\" y=\"177.2\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">5</text>\n<rect x=\"198.0\" y=\"87.5\" width=\"32.0\" height=\"112.5\" fill=\"#e11d48\"/>\n<text x=\"214.0\" y=\"83.5\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<text x=\"198.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Games</text>\n<rect x=\"256.0\" y=\"87.5\" width=\"32.0\" height=\"112.5\" fill=\"#0891b2\"/>\n<text x=\"272.0\" y=\"83.5\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<rect x=\"290.0\" y=\"181.2\" width=\"32.0\" height=\"18.8\" fill=\"#e11d48\"/>\n<text x=\"306.0\" y=\"177.2\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">5</text>\n<text x=\"290.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Shopping</text>\n<rect x=\"348.0\" y=\"68.8\" width=\"32.0\" height=\"131.2\" fill=\"#0891b2\"/>\n<text x=\"364.0\" y=\"64.8\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">35</text>\n<rect x=\"382.0\" y=\"181.2\" width=\"32.0\" height=\"18.8\" fill=\"#e11d48\"/>\n<text x=\"398.0\" y=\"177.2\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">5</text>\n<text x=\"382.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">News</text>\n<rect x=\"440.0\" y=\"162.5\" width=\"32.0\" height=\"37.5\" fill=\"#0891b2\"/>\n<text x=\"456.0\" y=\"158.5\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">10</text>\n<rect x=\"474.0\" y=\"125.0\" width=\"32.0\" height=\"75.0\" fill=\"#e11d48\"/>\n<text x=\"490.0\" y=\"121.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">20</text>\n<text x=\"474.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Research</text>\n<line x1=\"60\" y1=\"200\" x2=\"520\" y2=\"200\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">%</text>\n</svg></div>\n<p>According to the graph, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "Social media is twice as popular among teenagers as among adults.",
+    "Reading the news is the most common reason for adults.",
+    "The same percentage of adults and teenagers go online mainly for research.",
+    "Six times as many teenagers as adults go online mainly for games."
+   ],
+   "a": "C",
+   "s": "<p>Grafiği kontrol edelim:</p><ul><li>Sosyal medya: gençler %40, yetişkinler %20 → iki katı ✓.</li><li>Yetişkinlerde en yüksek değer haber (%35) ✓.</li><li>Oyun: %30 ve %5 → 30 ÷ 5 = 6 kat ✓.</li><li>Araştırma: yetişkinler %10, gençler %20 → <b>aynı değil</b> ✗.</li></ul><p>Yanlış olan ifade araştırma oranının eşit olduğunu söyleyendir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"dialog\"><div><b>Ece:</b> My laptop is so slow these days. Web pages take ages to open.</div><div><b>Can:</b> (1) ----</div><div><b>Ece:</b> Well, yes. I downloaded a free game from an unknown website last week.</div><div><b>Can:</b> That might be the problem. (2) ----</div><div><b>Ece:</b> Good idea. My cousin knows a lot about computers. I’ll call him now.</div></div>\n<p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "(1) Do you often use a search engine? – (2) You should buy a new laptop right now.",
+    "(1) Have you downloaded anything strange recently? – (2) Why don’t you download more free games?",
+    "(1) How often do you charge your laptop? – (2) You’d better ask someone to check it for viruses.",
+    "(1) Have you downloaded anything strange recently? – (2) You’d better ask someone to check it for viruses."
+   ],
+   "a": "D",
+   "s": "<p>(1) için ipucu Ece’nin cevabıdır: “Evet, geçen hafta bilinmeyen bir siteden ücretsiz bir oyun indirdim.” → Can bir şey indirip indirmediğini sormuştur: “Have you downloaded anything strange recently?”</p><p>(2) için ipucu: “İyi fikir. Kuzenim bilgisayardan iyi anlar, onu arayacağım.” → Can birine <b>virüs kontrolü</b> yaptırmasını önermiştir.</p><p>Arama motoru ya da şarj sorusu (1)’e uymaz; yeni laptop almak veya daha çok oyun indirmek, kuzeni arama cevabıyla ve sorunun çözümüyle bağdaşmaz. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><p><b>My Grandpa, the YouTuber</b><br>My grandfather, Hasan, is 72 years old, and last year he became a YouTuber! It all started when I recorded him while he was making his famous stuffed peppers. I uploaded the video, and in one week it got 5,000 views. Now he shares a new recipe every Sunday. I film and edit the videos, and he reads all the comments with his glasses on. He says the Internet has given him new friends from all over the world. The only thing he hates is negative comments, but he never replies to them.</p></div>\n<p>Which of the following questions can <b>NOT</b> be answered according to the text?</p>",
+   "c": [
+    "How many subscribers does Hasan’s channel have?",
+    "How often does Hasan share a new video?",
+    "Who edits the videos?",
+    "How does Hasan react to negative comments?"
+   ],
+   "a": "A",
+   "s": "<p>Metinde cevabı olanlar: Ne sıklıkla video paylaşıyor? → “every Sunday” ✓. Videoları kim düzenliyor? → “I film and edit the videos” (torunu) ✓. Olumsuz yorumlara tepkisi? → “he never replies to them” ✓.</p><p>Metinde yalnızca ilk videonun bir haftada <b>5,000 izlenme</b> (views) aldığı söyleniyor; kanalın <b>abone</b> (subscriber) sayısı verilmiyor. “views” ile “subscribers” karıştırılırsa yanlış cevap seçilir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 188\" width=\"540\" role=\"img\" aria-label=\"Çevrim içi atölye afişi\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"180\" rx=\"12\" fill=\"#f5f3ff\" stroke=\"#6d28d9\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#6d28d9\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">FREE ONLINE WORKSHOP: Make Your First Website!</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">• For students aged 12–15</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">• Saturdays, 2–4 p.m., for four weeks (starts on 7 November)</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">• You need a laptop and a stable Internet connection. (Tablets are not</text>\n<text x=\"26\" y=\"117\" font-size=\"11.5\" fill=\"#1e293b\">suitable.)</text>\n<text x=\"26\" y=\"138\" font-size=\"11.5\" fill=\"#1e293b\">• Register at www.webkids.org before 1 November.</text>\n<text x=\"26\" y=\"159\" font-size=\"11.5\" fill=\"#1e293b\">• Only 20 places!</text>\n</svg></div>\n<p>Which student can join the workshop?</p>",
+   "c": [
+    "Deniz is 11. He has a fast laptop and registered in October.",
+    "Kaan is 14, but he can only use his tablet at home.",
+    "Sude is 13. She has a laptop and registered on 30 October.",
+    "Arya is 15 and has a laptop, but she has violin lessons every Saturday afternoon."
+   ],
+   "a": "C",
+   "s": "<p>Bütün koşulları sağlayan öğrenciyi arıyoruz: 12–15 yaş, laptop, cumartesi 14.00–16.00 boş, 1 Kasım’dan önce kayıt.</p><ul><li>Sude: 13 yaşında, laptopu var, 30 Ekim’de (1 Kasım’dan önce) kaydolmuş ✓.</li><li>Deniz: 11 yaşında → yaş sınırının altında ✗.</li><li>Kaan: yalnızca tablet kullanabiliyor → “Tablets are not suitable.” ✗</li><li>Arya: cumartesi öğleden sonraları dolu → atölye saatine katılamaz ✗.</li></ul> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><p><b>hacker · block · attachment · browser · virus</b></p></div>\n<p>(1) a program that can damage the files on your computer<br>(2) to stop someone from sending you messages or seeing your profile<br>(3) a person who gets into other people’s computers without permission<br>(4) a file that you send together with an e-mail</p>\n<p>Which word in the box is <b>NOT</b> defined above?</p>",
+   "c": [
+    "browser",
+    "virus",
+    "block",
+    "attachment"
+   ],
+   "a": "A",
+   "s": "<p>Tanımları eşleştirelim: (1) dosyalara zarar veren program → <b>virus</b>; (2) birinin sana mesaj atmasını/profilini görmesini engellemek → <b>block</b>; (3) izinsiz başkalarının bilgisayarına giren kişi → <b>hacker</b>; (4) e-postayla birlikte gönderilen dosya → <b>attachment</b>.</p><p><b>browser</b> (internet tarayıcısı: web sayfalarını açmaya yarayan program) tanımlanmamıştır. “hacker” ile “virus” birbirine karıştırılabilir: biri kişi, diğeri programdır. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"dialog\"><div><b>Teacher:</b> Some people say shopping online isn’t always a good idea. Can anyone give an example?</div><div><b>Ayşe:</b> Sure. ----</div></div>\n<p>Which of the following best completes the dialogue?</p>",
+   "c": [
+    "You can compare the prices on different websites in just a few minutes.",
+    "You don’t have to leave your house, even when it’s raining.",
+    "Many websites offer free delivery for big orders.",
+    "Sometimes the product you get looks very different from the photo on the website."
+   ],
+   "a": "D",
+   "s": "<p>Öğretmen internetten alışverişin <b>her zaman iyi bir fikir olmadığına</b> dair, yani <b>olumsuz</b> bir örnek istiyor (2024 LGS kalıbı: görüşe uygun örnek).</p><p>Gelen ürünün sitedeki fotoğraftan çok farklı görünmesi olumsuz bir durumdur ✓. Fiyat karşılaştırma, evden çıkmadan alışveriş ve ücretsiz kargo ise internetten alışverişin <b>avantajlarıdır</b>; görüşü desteklemez. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>100 students answered a survey: 50 of them keep their phone in their bedroom at night, and 50 of them don’t.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"How many hours do you sleep on school nights?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">How many hours do you sleep on school nights?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#ea580c\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Phone in bedroom</text>\n<rect x=\"268\" y=\"30\" width=\"12\" height=\"12\" fill=\"#2563eb\"/>\n<text x=\"284\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">No phone in bedroom</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"520\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"175.0\" x2=\"520\" y2=\"175.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"179.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">5</text>\n<line x1=\"60\" y1=\"150.0\" x2=\"520\" y2=\"150.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"154.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"125.0\" x2=\"520\" y2=\"125.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"129.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">15</text>\n<line x1=\"60\" y1=\"100.0\" x2=\"520\" y2=\"100.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"104.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"75.0\" x2=\"520\" y2=\"75.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"79.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">25</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<rect x=\"102.7\" y=\"75.0\" width=\"32.0\" height=\"125.0\" fill=\"#ea580c\"/>\n<text x=\"118.7\" y=\"71.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">25</text>\n<rect x=\"136.7\" y=\"175.0\" width=\"32.0\" height=\"25.0\" fill=\"#2563eb\"/>\n<text x=\"152.7\" y=\"171.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">5</text>\n<text x=\"136.7\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Less than 7 hours</text>\n<rect x=\"256.0\" y=\"125.0\" width=\"32.0\" height=\"75.0\" fill=\"#ea580c\"/>\n<text x=\"272.0\" y=\"121.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">15</text>\n<rect x=\"290.0\" y=\"100.0\" width=\"32.0\" height=\"100.0\" fill=\"#2563eb\"/>\n<text x=\"306.0\" y=\"96.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">20</text>\n<text x=\"290.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">7–8 hours</text>\n<rect x=\"409.3\" y=\"150.0\" width=\"32.0\" height=\"50.0\" fill=\"#ea580c\"/>\n<text x=\"425.3\" y=\"146.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">10</text>\n<rect x=\"443.3\" y=\"75.0\" width=\"32.0\" height=\"125.0\" fill=\"#2563eb\"/>\n<text x=\"459.3\" y=\"71.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">25</text>\n<text x=\"443.3\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">More than 8 hours</text>\n<line x1=\"60\" y1=\"200\" x2=\"520\" y2=\"200\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<p>Which of the following can be said according to the graph?</p>",
+   "c": [
+    "Half of the students with a phone in their bedroom sleep less than seven hours.",
+    "Most students without a phone in their bedroom sleep seven to eight hours.",
+    "The same number of students in both groups sleep seven to eight hours.",
+    "More students with a phone in their bedroom sleep more than eight hours."
+   ],
+   "a": "A",
+   "s": "<p>Her grup 50 kişi.</p><ul><li>Telefonu yatak odasında olanlar: 7 saatten az uyuyan 25 → 25/50 = yarısı ✓.</li><li>Telefonu olmayanlarda 7–8 saat uyuyan 20 → 20/50 = %40; “most” (çoğu) için yarıdan fazla gerekir ✗.</li><li>7–8 saat: 15 ve 20 → eşit değil ✗.</li><li>8 saatten fazla: telefonu olanlar 10, olmayanlar 25 → telefonu <b>olmayanlar</b> daha fazla ✗.</li></ul> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Lara, Efe and Nehir are in a group chat.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 278\" width=\"540\" role=\"img\" aria-label=\"Grup sohbeti\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"270\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"24\" font-size=\"12\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">Science Project 8C</text>\n<rect x=\"18\" y=\"44\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Lara:</tspan> Can we have a video call tonight to finish the slides?</text>\n<text x=\"442\" y=\"68\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">19:02</text>\n<rect x=\"92\" y=\"80\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"98\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Efe:</tspan> I can’t join before 9. My piano lesson finishes at 8:30, and</text>\n<text x=\"102\" y=\"114\" font-size=\"11.5\" fill=\"#1e293b\">then I take the bus home.</text>\n<text x=\"516\" y=\"120\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">19:05</text>\n<rect x=\"18\" y=\"132\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"150\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Nehir:</tspan> 9 is fine for me, but my Wi-Fi is really slow, so I’ll use</text>\n<text x=\"28\" y=\"166\" font-size=\"11.5\" fill=\"#1e293b\">my mum’s laptop.</text>\n<text x=\"442\" y=\"172\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">19:07</text>\n<rect x=\"18\" y=\"184\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"202\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Lara:</tspan> Great! Efe, can you upload the photos to our shared folder</text>\n<text x=\"28\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\">before the call?</text>\n<text x=\"442\" y=\"224\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">19:08</text>\n<rect x=\"92\" y=\"236\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"254\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Efe:</tspan> Sure, I’ll do it on the bus.</text>\n<text x=\"516\" y=\"260\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">19:10</text>\n</svg></div>\n<p>According to the messages, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "The friends will start the call as soon as Efe’s piano lesson finishes.",
+    "Nehir won’t join the call because her Wi-Fi is too slow.",
+    "Lara wants to finish the slides at school the next day.",
+    "Efe is going to upload the photos before the video call."
+   ],
+   "a": "D",
+   "s": "<p>Lara, Efe’den fotoğrafları görüşmeden önce paylaşılan klasöre yüklemesini istiyor; Efe “Sure, I’ll do it on the bus.” diyor ✓.</p><p>Ders 20.30’da bitiyor ama görüşme saat 9’da (21.00) ✗. Nehir’in Wi-Fi’ı yavaş ama annesinin laptopuyla katılacak ✗. Lara slaytları “tonight” (bu akşam) bitirmek istiyor, okulda değil ✗. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 171\" width=\"540\" role=\"img\" aria-label=\"COMPUTER LAB RULES\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"163\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#334155\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">COMPUTER LAB RULES</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">1. Log out of your account before you leave.</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">2. Do not download games or music.</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">3. You can print up to 5 pages a day for free.</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">4. You need headphones to watch videos.</text>\n<text x=\"26\" y=\"142\" font-size=\"11.5\" fill=\"#1e293b\">5. Food and drinks are not allowed.</text>\n</svg></div>\n<p>Which of the following is <b>NOT</b> correct according to the rules?</p>",
+   "c": [
+    "Students must sign out when they finish using a computer.",
+    "Students mustn’t save music from the Internet onto the computers.",
+    "Students can watch videos without headphones if the sound is low.",
+    "Students don’t have to pay for printing three pages."
+   ],
+   "a": "C",
+   "s": "<p>Kuralları şıklarla eşleştirelim:</p><ul><li>“must sign out” = 1. kural (log out = sign out) ✓.</li><li>“mustn’t save music from the Internet” = 2. kural (müzik indirmek yasak) ✓.</li><li>“don’t have to pay for three pages” = 3. kural (günde 5 sayfaya kadar ücretsiz) ✓.</li><li>4. kurala göre video izlemek için <b>kulaklık gerekir</b>; sesin kısık olması bir istisna değildir ✗.</li></ul> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 242\" width=\"540\" role=\"img\" aria-label=\"Forum görüşleri\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">FORUM: Can online friends be real friends?</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#0369a1\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#0369a1\" font-weight=\"bold\">Irmak</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">I met my best friend in an online book</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">club. We chatted for three years and</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">finally met last summer. Online</text>\n<text x=\"22\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">friends can be real friends.</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#b91c1c\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#b91c1c\" font-weight=\"bold\">Bora</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">How can you trust someone you have</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">never seen? People can easily lie</text>\n<text x=\"287\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">about their name or age.</text>\n<rect x=\"10\" y=\"146\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#15803d\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"167\" font-size=\"12.5\" fill=\"#15803d\" font-weight=\"bold\">Defne</text>\n<text x=\"22\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">My online friends support me a lot</text>\n<text x=\"22\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">when I’m sad. I just never give them</text>\n<text x=\"22\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">my home address.</text>\n<rect x=\"275\" y=\"146\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"167\" font-size=\"12.5\" fill=\"#b45309\" font-weight=\"bold\">Umut</text>\n<text x=\"287\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">To me, a friend is someone who can</text>\n<text x=\"287\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">give you a hug when you’re upset. A</text>\n<text x=\"287\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">screen can’t do that.</text>\n</svg></div>\n<p>Which two people do <b>NOT</b> believe that online friends can be real friends?</p>",
+   "c": [
+    "Irmak and Defne",
+    "Bora and Umut",
+    "Bora and Defne",
+    "Irmak and Umut"
+   ],
+   "a": "B",
+   "s": "<p><b>Irmak</b> internetten tanıştığı arkadaşıyla yüz yüze de görüşmüş ve “Online friends can be real friends.” diyor (olumlu). <b>Defne</b> internet arkadaşlarının ona destek olduğunu söylüyor; yalnızca ev adresini vermeyerek dikkatli davranıyor (olumlu).</p><p><b>Bora</b> hiç görmediğin birine güvenemeyeceğini, <b>Umut</b> ise ekranın sarılmanın yerini tutamayacağını söylüyor; ikisi de internet arkadaşlığının gerçek arkadaşlık olamayacağını düşünüyor. Defne’nin uyarısı onu olumsuz gösterir sanılabilir; ama bu bir güvenlik önlemidir. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Arda has a 20 GB mobile Internet package. The chart shows how he used all of it last month.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 196\" width=\"540\" role=\"img\" aria-label=\"How Arda used his 20 GB last month\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">How Arda used his 20 GB last month</text>\n<text x=\"160\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Watching videos</text>\n<rect x=\"170\" y=\"40\" width=\"288.0\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"464.0\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">9 GB</text>\n<text x=\"160\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Social media</text>\n<rect x=\"170\" y=\"70\" width=\"160.0\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"336.0\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">5 GB</text>\n<text x=\"160\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Music</text>\n<rect x=\"170\" y=\"100\" width=\"96.0\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"272.0\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">3 GB</text>\n<text x=\"160\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Online games</text>\n<rect x=\"170\" y=\"130\" width=\"64.0\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"240.0\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">2 GB</text>\n<text x=\"160\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Other</text>\n<rect x=\"170\" y=\"160\" width=\"32.0\" height=\"20\" rx=\"3\" fill=\"#0d9488\"/>\n<text x=\"208.0\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">1 GB</text>\n</svg></div>\n<p>According to the chart, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "He used almost half of his data for watching videos.",
+    "A quarter of his data went on social media.",
+    "Online games used twice as much data as “Other”.",
+    "He used more data for music and games together than for social media."
+   ],
+   "a": "D",
+   "s": "<p>Toplam 20 GB:</p><ul><li>Video 9 GB → 9/20 = %45, “almost half” (neredeyse yarısı) ✓.</li><li>Sosyal medya 5 GB → 5/20 = {{1|4}} (a quarter) ✓.</li><li>Oyun 2 GB, diğer 1 GB → iki katı ✓.</li><li>Müzik + oyun = 3 + 2 = 5 GB; sosyal medya da 5 GB → <b>eşit</b>, daha fazla değil ✗.</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 122\" width=\"540\" role=\"img\" aria-label=\"Forum gönderisi\">\n<rect x=\"10\" y=\"10\" width=\"520\" height=\"102\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#9a3412\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"31\" font-size=\"12.5\" fill=\"#9a3412\" font-weight=\"bold\">HELP! My account was hacked :(  – posted by Ozan_14</text>\n<text x=\"22\" y=\"52\" font-size=\"11.5\" fill=\"#1e293b\">Yesterday, some friends told me that I had sent them strange links. I didn’t</text>\n<text x=\"22\" y=\"68\" font-size=\"11.5\" fill=\"#1e293b\">send anything! When I tried to log in to my account, my password didn’t work. I</text>\n<text x=\"22\" y=\"84\" font-size=\"11.5\" fill=\"#1e293b\">think someone hacked it. I used the same password for all my accounts: my dog’s</text>\n<text x=\"22\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">name and my birth year. What should I do now?</text>\n</svg></div>\n<p>Which of the following is <b>NOT</b> true about Ozan?</p>",
+   "c": [
+    "His friends received messages that he didn’t send.",
+    "He can’t sign in to his account at the moment.",
+    "He had a strong password that was different for each account.",
+    "He wants other people to give him advice."
+   ],
+   "a": "C",
+   "s": "<p>Ozan tüm hesaplarında <b>aynı</b> şifreyi kullanmış ve şifresi köpeğinin adı + doğum yılından oluşuyor: bu <b>zayıf</b> bir şifredir. “Güçlü ve her hesapta farklı” ifadesi yanlıştır.</p><p>Arkadaşlarına onun göndermediği garip bağlantılar gitmiş ✓; şifresi çalışmadığı için giriş yapamıyor ✓; “What should I do now?” diyerek tavsiye istiyor ✓. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"dialog\"><div><b>Dad:</b> Zehra, why are you still online? It’s almost midnight!</div><div><b>Zehra:</b> ----</div><div><b>Dad:</b> I understand, but you can finish it tomorrow morning. You need to sleep now.</div><div><b>Zehra:</b> OK, Dad. I’ll log out and go to bed.</div></div>\n<p>Which of the following best completes the dialogue?</p>",
+   "c": [
+    "I’m almost done with my online English homework.",
+    "I’m sorry, I’ve already turned off my laptop.",
+    "I never go online at night, you know that.",
+    "All my friends are asleep, so there’s nobody to chat with."
+   ],
+   "a": "A",
+   "s": "<p>Babanın cevabı ipucudur: “Anlıyorum ama onu yarın sabah <b>bitirebilirsin</b>.” Demek ki Zehra bitirmesi gereken bir iş yapıyordur: “I’m almost done with my online English homework.”</p><p>Laptopu çoktan kapattığını ya da gece hiç internete girmediğini söylemesi, babanın “still online” sözüyle ve Zehra’nın sonra “I’ll log out” demesiyle çelişir. Arkadaşlarının uyuduğunu söylemek “finish it tomorrow” ile bağlantılı değildir. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 162\" width=\"540\" role=\"img\" aria-label=\"İki profil kartı\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Two accounts on a photo-sharing app</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"118\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#2563eb\" font-weight=\"bold\">Leo_Draws</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Age: 16</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Joined: 2021</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 340</text>\n<text x=\"22\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 12,500</text>\n<text x=\"22\" y=\"140\" font-size=\"11.5\" fill=\"#1e293b\">Following: 210</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"118\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#db2777\" font-weight=\"bold\">Mia.Bakes</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Age: 14</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Joined: 2019</text>\n<text x=\"287\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 520</text>\n<text x=\"287\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 9,800</text>\n<text x=\"287\" y=\"140\" font-size=\"11.5\" fill=\"#1e293b\">Following: 450</text>\n</svg></div>\n<p>According to the profiles, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "Leo is older than Mia, but he joined the app later.",
+    "Leo follows more people than Mia does.",
+    "Mia has shared more posts, but she has fewer followers than Leo.",
+    "Mia has been using the app for longer than Leo."
+   ],
+   "a": "B",
+   "s": "<p>Kartları karşılaştıralım:</p><ul><li>Leo 16, Mia 14 yaşında; Leo 2021’de, Mia 2019’da katılmış → Leo daha büyük ama daha geç katılmış ✓.</li><li>Gönderi: Mia 520 &gt; Leo 340; takipçi: Mia 9,800 &lt; Leo 12,500 ✓.</li><li>Mia 2019’dan beri uygulamada → daha uzun süredir kullanıyor ✓.</li><li>“Following” (takip ettiği kişi): Leo 210, Mia 450 → Mia daha çok kişiyi takip ediyor ✗.</li></ul><p>“Followers” (takipçi) ile “Following” (takip edilen) karıştırılmamalıdır. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"dialog\"><div><b>Reporter:</b> ----</div><div><b>Selin:</b> Because it saves time. I can compare prices on different websites without leaving home, and things are often cheaper.</div></div>\n<p>Which question does the reporter ask?</p>",
+   "c": [
+    "Why do you prefer shopping online?",
+    "How often do you shop online?",
+    "What do you usually buy on the Internet?",
+    "Which website do you use for shopping?"
+   ],
+   "a": "A",
+   "s": "<p>Selin cevabına “<b>Because</b> it saves time…” diye başlıyor ve nedenler sıralıyor (zaman kazandırıyor, fiyat karşılaştırabiliyor, daha ucuz). Neden soran soru <b>Why</b> ile başlar: “Why do you prefer shopping online?”</p><p>How often sıklık (twice a month gibi), What ne aldığını (clothes, books), Which hangi siteyi sorar; cevapta bunlar yoktur. Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>This is Ahmet’s browser history from yesterday evening.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 138\" width=\"540\" role=\"img\" aria-label=\"Tarayıcı geçmişi\">\n<rect x=\"10\" y=\"10\" width=\"520\" height=\"118\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"31\" font-size=\"12.5\" fill=\"#475569\" font-weight=\"bold\">History – Yesterday</text>\n<text x=\"22\" y=\"52\" font-size=\"11.5\" fill=\"#1e293b\">18:05  Search: “easy pasta recipes for beginners”</text>\n<text x=\"22\" y=\"68\" font-size=\"11.5\" fill=\"#1e293b\">18:40  Search: “how to remove tomato sauce from a T-shirt”</text>\n<text x=\"22\" y=\"84\" font-size=\"11.5\" fill=\"#1e293b\">19:30  Maths Quiz – Unit 3 · Your score: 9/10</text>\n<text x=\"22\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">20:15  Search: “cheap flights Istanbul to Berlin December”</text>\n<text x=\"22\" y=\"116\" font-size=\"11.5\" fill=\"#1e293b\">21:00  Video: “Learn 50 German Words in 10 Minutes”</text>\n</svg></div>\n<p>Which of the following is <b>NOT</b> supported by the browser history?</p>",
+   "c": [
+    "He looked for a recipe before he searched how to clean a stain.",
+    "He did well in an online Maths quiz.",
+    "He has already bought a plane ticket to Berlin.",
+    "He watched a video about a foreign language."
+   ],
+   "a": "C",
+   "s": "<p>Geçmişe göre Ahmet 18.05’te tarif, 18.40’ta leke çıkarma yöntemi aramış (sıra doğru) ✓; Maths testinden 9/10 almış ✓; Almanca kelime videosu izlemiş ✓.</p><p>20.15’te yalnızca ucuz uçuş <b>aramış</b>; bilet satın aldığına dair bir kayıt yok. “Arama yapmak” ile “satın almak” aynı şey değildir. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>The graph shows the number of followers on Ece’s travel blog in the first six months of the year.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"Followers of Ece’s blog\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Followers of Ece’s blog</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"510\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"169.0\" x2=\"510\" y2=\"169.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"173.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">200</text>\n<line x1=\"60\" y1=\"138.0\" x2=\"510\" y2=\"138.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"142.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">400</text>\n<line x1=\"60\" y1=\"107.0\" x2=\"510\" y2=\"107.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"111.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">600</text>\n<line x1=\"60\" y1=\"76.0\" x2=\"510\" y2=\"76.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"80.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">800</text>\n<line x1=\"60\" y1=\"45.0\" x2=\"510\" y2=\"45.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"49.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">1000</text>\n<text x=\"80.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Jan</text>\n<text x=\"162.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Feb</text>\n<text x=\"244.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Mar</text>\n<text x=\"326.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Apr</text>\n<text x=\"408.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">May</text>\n<text x=\"490.0\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Jun</text>\n<polyline points=\"80.0,169.0 162.0,145.8 244.0,145.8 326.0,107.0 408.0,122.5 490.0,60.5\" fill=\"none\" stroke=\"#7c3aed\" stroke-width=\"2.5\"/>\n<circle cx=\"80.0\" cy=\"169.0\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"80.0\" y=\"160.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">200</text>\n<circle cx=\"162.0\" cy=\"145.8\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"162.0\" y=\"136.8\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">350</text>\n<circle cx=\"244.0\" cy=\"145.8\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"244.0\" y=\"136.8\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">350</text>\n<circle cx=\"326.0\" cy=\"107.0\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"326.0\" y=\"98.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">600</text>\n<circle cx=\"408.0\" cy=\"122.5\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"408.0\" y=\"113.5\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">500</text>\n<circle cx=\"490.0\" cy=\"60.5\" r=\"4\" fill=\"#7c3aed\"/>\n<text x=\"490.0\" y=\"51.5\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">900</text>\n<line x1=\"60\" y1=\"200\" x2=\"510\" y2=\"200\" stroke=\"#334155\"/>\n</svg></div>\n<p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "The number of followers went up every month.",
+    "The number of followers didn’t change between February and March.",
+    "Ece lost some followers in April.",
+    "Ece had three times as many followers in June as in February."
+   ],
+   "a": "B",
+   "s": "<p>Şubat 350, mart 350 → değişmemiş ✓.</p><p>Mart’ta sabit kalmış, mayısta 600’den 500’e düşmüş; yani her ay artmamış ✗. Takipçi kaybı nisanda değil mayısta ✗ (nisanda 350’den 600’e çıkmış). Haziran 900, şubat 350 → 900 ÷ 350 ≈ 2,6; üç katı değil ✗ (üç katı 1,050 olurdu). Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 189\" width=\"540\" role=\"img\" aria-label=\"OUR FAMILY INTERNET AGREEMENT\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"181\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#15803d\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#15803d\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">OUR FAMILY INTERNET AGREEMENT</text>\n<text x=\"270\" y=\"58\" font-size=\"12\" fill=\"#15803d\" font-weight=\"bold\" text-anchor=\"middle\">Signed: Efe</text>\n<text x=\"26\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">1. I won’t use my phone after 10 p.m. on school nights.</text>\n<text x=\"26\" y=\"97\" font-size=\"11.5\" fill=\"#1e293b\">2. I’ll ask my parents before I download a new app.</text>\n<text x=\"26\" y=\"118\" font-size=\"11.5\" fill=\"#1e293b\">3. I’ll never share my location with people I don’t know.</text>\n<text x=\"26\" y=\"139\" font-size=\"11.5\" fill=\"#1e293b\">4. At the weekend, I can play online games for up to three hours a day.</text>\n<text x=\"26\" y=\"160\" font-size=\"11.5\" fill=\"#1e293b\">5. I’ll tell my parents if something online makes me feel uncomfortable.</text>\n</svg></div>\n<p>Which of the following situations <b>breaks</b> the agreement?</p>",
+   "c": [
+    "On Saturday, Efe played online games from 2 p.m. to 4:30 p.m.",
+    "Efe asked his mum before he downloaded a drawing app.",
+    "Efe told his dad about a rude message from a stranger.",
+    "On Tuesday night, Efe chatted with his friends on his phone until 10:45 p.m."
+   ],
+   "a": "D",
+   "s": "<p>Salı bir okul gecesidir; Efe telefonu 22.00’den sonra, 22.45’e kadar kullanmış → 1. kuralı <b>bozuyor</b>.</p><p>Cumartesi 14.00–16.30 = 2,5 saat oyun; hafta sonu sınırı 3 saat olduğu için kurala uygun ✓. Uygulama indirmeden önce annesine sorması 2. kurala, kaba mesajı babasına anlatması 5. kurala uygundur ✓. Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><p>Never (1) ---- links in messages from people you don’t know, because they may take you to dangerous websites. And when you use a computer at a library or an Internet café, don’t forget to (2) ---- of your accounts before you leave.</p></div>\n<p>Which of the following best completes the text?</p>",
+   "c": [
+    "(1) upload – (2) log in",
+    "(1) click on – (2) log out",
+    "(1) click on – (2) sign up",
+    "(1) share – (2) download"
+   ],
+   "a": "B",
+   "s": "<p>(1) Bilinmeyen kişilerden gelen bağlantılara asla <b>tıklama</b> (click on): tehlikeli sitelere götürebilir. Bağlantı “yüklenmez” (upload) ya da paylaşılmaz; konu ona tıklamaktır.</p><p>(2) Kütüphane ya da internet kafede bilgisayar kullanınca ayrılmadan önce hesaplarından <b>çıkış yap</b> (log out of). “of” edatı da “log out of your accounts” kalıbını gösterir; log in (giriş yap), sign up (kaydol) ve download (indir) anlama da kalıba da uymaz. Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><p>Many parents think online games are a waste of time. However, some games teach children teamwork and problem-solving. In my class, students who play strategy games are often better at planning their projects. Still, I believe games should never take the place of sleep, homework or family time.<br><i>– Ms. Demir, ICT teacher</i></p></div>\n<p>Which of the following best summarises Ms. Demir’s opinion?</p>",
+   "c": [
+    "Online games are harmful, so children should stop playing them.",
+    "Parents are right to think that online games are a waste of time.",
+    "Online games can be useful if children play them in a balanced way.",
+    "Children who play online games always get better marks at school."
+   ],
+   "a": "C",
+   "s": "<p>Ms. Demir oyunların takım çalışması ve problem çözme öğretebildiğini söylüyor (fayda), ama uykunun, ödevin ve aile zamanının yerini asla almaması gerektiğini ekliyor (denge). Özeti: oyunlar dengeli oynanırsa yararlı olabilir.</p><p>Tamamen zararlı demiyor; ebeveynlerin “zaman kaybı” görüşüne “However” ile karşı çıkıyor; “always get better marks” ise metindeki “often better at planning” ifadesini abartır. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>60 sixth graders and 60 eighth graders answered the question below.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"Do you check if online news is true before you share it?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Do you check if online news is true before you share it?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#8b5cf6\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Grade 6</text>\n<rect x=\"205\" y=\"30\" width=\"12\" height=\"12\" fill=\"#10b981\"/>\n<text x=\"221\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Grade 8</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"520\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"175.0\" x2=\"520\" y2=\"175.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"179.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">5</text>\n<line x1=\"60\" y1=\"150.0\" x2=\"520\" y2=\"150.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"154.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"125.0\" x2=\"520\" y2=\"125.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"129.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">15</text>\n<line x1=\"60\" y1=\"100.0\" x2=\"520\" y2=\"100.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"104.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"75.0\" x2=\"520\" y2=\"75.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"79.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">25</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<rect x=\"102.7\" y=\"140.0\" width=\"32.0\" height=\"60.0\" fill=\"#8b5cf6\"/>\n<text x=\"118.7\" y=\"136.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">12</text>\n<rect x=\"136.7\" y=\"65.0\" width=\"32.0\" height=\"135.0\" fill=\"#10b981\"/>\n<text x=\"152.7\" y=\"61.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">27</text>\n<text x=\"136.7\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Always</text>\n<rect x=\"256.0\" y=\"50.0\" width=\"32.0\" height=\"150.0\" fill=\"#8b5cf6\"/>\n<text x=\"272.0\" y=\"46.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<rect x=\"290.0\" y=\"80.0\" width=\"32.0\" height=\"120.0\" fill=\"#10b981\"/>\n<text x=\"306.0\" y=\"76.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">24</text>\n<text x=\"290.0\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Sometimes</text>\n<rect x=\"409.3\" y=\"110.0\" width=\"32.0\" height=\"90.0\" fill=\"#8b5cf6\"/>\n<text x=\"425.3\" y=\"106.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">18</text>\n<rect x=\"443.3\" y=\"155.0\" width=\"32.0\" height=\"45.0\" fill=\"#10b981\"/>\n<text x=\"459.3\" y=\"151.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">9</text>\n<text x=\"443.3\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Never</text>\n<line x1=\"60\" y1=\"200\" x2=\"520\" y2=\"200\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<p>According to the graph, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Fewer than half of the eighth graders always check the news.",
+    "Half of the sixth graders never check the news.",
+    "The number of students who never check the news is the same in both grades.",
+    "More sixth graders than eighth graders always check the news."
+   ],
+   "a": "A",
+   "s": "<p>Her sınıf 60 kişi, yarısı 30.</p><ul><li>8. sınıfta “Always” 27 → 27 &lt; 30, yani yarıdan az ✓ (en yüksek sütun olduğu için “çoğu” sanılabilir).</li><li>6. sınıfta “Never” 18 → 18/60 = %30, yarısı değil ✗ (yarısı olan 30 kişi “Sometimes”).</li><li>“Never”: 18 ve 9 → eşit değil ✗.</li><li>“Always”: 6. sınıf 12, 8. sınıf 27 → 8. sınıf daha fazla ✗.</li></ul> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<p>Ali is chatting with an online store’s help assistant.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 262\" width=\"540\" role=\"img\" aria-label=\"Canlı destek sohbeti\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"254\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"24\" font-size=\"12\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">ShopEasy – Live Help</text>\n<rect x=\"18\" y=\"44\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Assistant:</tspan> Hello! How can I help you today?</text>\n<rect x=\"92\" y=\"80\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"98\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Ali:</tspan> I ordered a phone case three days ago, but it hasn’t arrived</text>\n<text x=\"102\" y=\"114\" font-size=\"11.5\" fill=\"#1e293b\">yet.</text>\n<rect x=\"18\" y=\"132\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"150\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Assistant:</tspan> ----</text>\n<rect x=\"92\" y=\"168\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"186\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Ali:</tspan> Sure, it’s 48213.</text>\n<rect x=\"18\" y=\"204\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"222\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Assistant:</tspan> Thank you. Your package is at the local post office</text>\n<text x=\"28\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\">now. You’ll get it tomorrow.</text>\n</svg></div>\n<p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "Could you tell me your order number, please?",
+    "How much did you pay for the phone case?",
+    "Would you like to cancel your order?",
+    "When did you order the phone case?"
+   ],
+   "a": "A",
+   "s": "<p>Ali’nin cevabı “Sure, it’s 48213.” bir <b>numara</b>dır ve asistan bu bilgiyle paketin yerini bulur. Demek ki asistan sipariş numarasını sormuştur.</p><p>Fiyat sorusunun cevabı “… TL” olurdu; iptal sorusuna “Yes/No” ile cevap verilirdi; siparişin ne zaman verildiğini Ali zaten söyledi (three days ago). Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"box\"><p><b>Melis:</b> “I hardly ever post anything on social media, but I scroll through my feed all the time.”</p></div>\n<p>Which of the following is closest in meaning to what Melis says?</p>",
+   "c": [
+    "I never look at social media, but I share a lot of posts.",
+    "I sometimes post photos, and I only scroll down when I’m bored.",
+    "I rarely share things online, but I often look at other people’s posts.",
+    "I share something every day, but I seldom read other people’s posts."
+   ],
+   "a": "C",
+   "s": "<p><b>hardly ever</b> = rarely (nadiren) → nadiren paylaşım yapıyor; <b>all the time</b> = very often (sürekli) → başkalarının gönderilerine sürekli bakıyor (scroll through my feed).</p><p>Diğer şıklar anlamı tersine çeviriyor: “never look … share a lot” ve “share every day … seldom read” iki bilgiyi de değiştiriyor; “sometimes post … only when I’m bored” ise sıklıkları yanlış veriyor (hardly ever ≠ sometimes, all the time ≠ only when bored). Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 210\" width=\"540\" role=\"img\" aria-label=\"Dört uygulama kartı\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Popular Apps for Students</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"70\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#2563eb\" font-weight=\"bold\">WordUp  ★ 4.6</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Learn new English words with fun games</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Downloads: 2.1 million</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"70\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#ea580c\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#ea580c\" font-weight=\"bold\">FitKid  ★ 4.2</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Short workouts for teens to do at home</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Downloads: 850,000</text>\n<rect x=\"10\" y=\"114\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"135\" font-size=\"12.5\" fill=\"#16a34a\" font-weight=\"bold\">NoteMate  ★ 4.8</text>\n<text x=\"22\" y=\"156\" font-size=\"11.5\" fill=\"#1e293b\">Take notes and share them with your</text>\n<text x=\"22\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">classmates</text>\n<text x=\"22\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Downloads: 1.4 million</text>\n<rect x=\"275\" y=\"114\" width=\"255\" height=\"86\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"135\" font-size=\"12.5\" fill=\"#7c3aed\" font-weight=\"bold\">SkyWatch  ★ 4.4</text>\n<text x=\"287\" y=\"156\" font-size=\"11.5\" fill=\"#1e293b\">Find stars and planets with your</text>\n<text x=\"287\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">phone’s camera</text>\n<text x=\"287\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Downloads: 600,000</text>\n</svg></div>\n<p>According to the information, which of the following is <b>TRUE</b>?</p>",
+   "c": [
+    "The app for exercising at home has the highest rating.",
+    "The app about the night sky has fewer downloads than all the other apps.",
+    "The language app has both the most downloads and the highest rating.",
+    "The note-taking app has more downloads than the language app."
+   ],
+   "a": "B",
+   "s": "<p>İndirme: WordUp 2.1 milyon &gt; NoteMate 1.4 milyon &gt; FitKid 850,000 &gt; SkyWatch 600,000. Puan: NoteMate 4.8 &gt; WordUp 4.6 &gt; SkyWatch 4.4 &gt; FitKid 4.2.</p><ul><li>Gece gökyüzü uygulaması (SkyWatch, “stars and planets”) en az indirilen ✓.</li><li>Evde egzersiz uygulaması (FitKid) en <b>düşük</b> puanlı ✗.</li><li>Dil uygulaması (WordUp) en çok indirilen ama en yüksek puan NoteMate’in ✗.</li><li>Not uygulaması (1.4 milyon) dil uygulamasından (2.1 milyon) az indirilmiş ✗.</li></ul> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "orta",
+   "q": "<div class=\"dialog\"><div><b>Mr. Aksoy:</b> Should we use tablets instead of printed textbooks at school?</div><div><b>Pınar:</b> Absolutely! Our school bags would be much lighter.</div><div><b>Tolga:</b> I’m not so sure. Looking at a screen all day hurts my eyes.</div><div><b>Nisa:</b> I agree with Tolga. And what if the battery dies in the middle of a lesson?</div><div><b>Emir:</b> You’ve got a point, Nisa, but schools could have charging stations. I’m with Pınar.</div></div>\n<p>Which of the following is <b>CORRECT</b> according to the discussion?</p>",
+   "c": [
+    "Nisa and Emir have the same opinion.",
+    "Emir thinks battery problems can’t be solved.",
+    "Tolga and Nisa are against using tablets instead of textbooks.",
+    "Pınar is worried about eye problems."
+   ],
+   "a": "C",
+   "s": "<p>Pınar “Absolutely!” diyerek tableti destekliyor (hafif çanta). Tolga “I’m not so sure” ile karşı çıkıyor (göz yorgunluğu); Nisa “I agree with Tolga” diyerek ona katılıyor (batarya sorunu). Yani Tolga ve Nisa tablete <b>karşı</b> ✓.</p><p>Emir “You’ve got a point, Nisa, <b>but</b>…” ile Nisa’yı anlıyor ama katılmıyor ve “I’m with Pınar” diyor; dolayısıyla Nisa ile aynı görüşte değil ✗. Emir şarj istasyonlarıyla batarya sorununun <b>çözülebileceğini</b> söylüyor ✗. Göz sorununu dile getiren Tolga’dır, Pınar değil ✗. Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>The same 80 students in a school answered two surveys. Each student chose only <b>one</b> answer for each question.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 260\" width=\"540\" role=\"img\" aria-label=\"Graph 1: How many hours a day do you spend online?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Graph 1: How many hours a day do you spend online?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#94a3b8\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">2023</text>\n<rect x=\"184\" y=\"30\" width=\"12\" height=\"12\" fill=\"#2563eb\"/>\n<text x=\"200\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">2026</text>\n<line x1=\"60\" y1=\"210.0\" x2=\"520\" y2=\"210.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"214.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"170.0\" x2=\"520\" y2=\"170.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"174.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"130.0\" x2=\"520\" y2=\"130.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"134.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"90.0\" x2=\"520\" y2=\"90.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"94.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40</text>\n<rect x=\"83.5\" y=\"130.0\" width=\"32.0\" height=\"80.0\" fill=\"#94a3b8\"/>\n<text x=\"99.5\" y=\"126.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">20</text>\n<rect x=\"117.5\" y=\"178.0\" width=\"32.0\" height=\"32.0\" fill=\"#2563eb\"/>\n<text x=\"133.5\" y=\"174.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">8</text>\n<text x=\"117.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Less than</text>\n<text x=\"117.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1 hour</text>\n<rect x=\"198.5\" y=\"74.0\" width=\"32.0\" height=\"136.0\" fill=\"#94a3b8\"/>\n<text x=\"214.5\" y=\"70.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">34</text>\n<rect x=\"232.5\" y=\"106.0\" width=\"32.0\" height=\"104.0\" fill=\"#2563eb\"/>\n<text x=\"248.5\" y=\"102.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">26</text>\n<text x=\"232.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">1–3</text>\n<text x=\"232.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">hours</text>\n<rect x=\"313.5\" y=\"138.0\" width=\"32.0\" height=\"72.0\" fill=\"#94a3b8\"/>\n<text x=\"329.5\" y=\"134.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">18</text>\n<rect x=\"347.5\" y=\"90.0\" width=\"32.0\" height=\"120.0\" fill=\"#2563eb\"/>\n<text x=\"363.5\" y=\"86.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<text x=\"347.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">3–5</text>\n<text x=\"347.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">hours</text>\n<rect x=\"428.5\" y=\"178.0\" width=\"32.0\" height=\"32.0\" fill=\"#94a3b8\"/>\n<text x=\"444.5\" y=\"174.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">8</text>\n<rect x=\"462.5\" y=\"146.0\" width=\"32.0\" height=\"64.0\" fill=\"#2563eb\"/>\n<text x=\"478.5\" y=\"142.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">16</text>\n<text x=\"462.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">More than</text>\n<text x=\"462.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">5 hours</text>\n<line x1=\"60\" y1=\"210\" x2=\"520\" y2=\"210\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<div class=\"fig\"><svg viewBox=\"0 0 540 166\" width=\"540\" role=\"img\" aria-label=\"Graph 2: What do you mostly do online? (2026)\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Graph 2: What do you mostly do online? (2026)</text>\n<text x=\"160\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Social media</text>\n<rect x=\"170\" y=\"40\" width=\"298.7\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"474.7\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">28</text>\n<text x=\"160\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Watching videos</text>\n<rect x=\"170\" y=\"70\" width=\"234.7\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"410.7\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">22</text>\n<text x=\"160\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Online games</text>\n<rect x=\"170\" y=\"100\" width=\"192.0\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"368.0\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">18</text>\n<text x=\"160\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Homework</text>\n<rect x=\"170\" y=\"130\" width=\"128.0\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"304.0\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">12</text>\n</svg></div>\n<p>Which of the following can <b>NOT</b> be inferred from the graphs?</p>",
+   "c": [
+    "In 2026, more than half of the students spent at least three hours a day online.",
+    "In 2023, the number of students who spent less than an hour a day online was more than twice the number in 2026.",
+    "Most of the students who spent more than five hours a day online in 2026 mostly used social media.",
+    "In 2026, doing homework was the least common reason for going online."
+   ],
+   "a": "C",
+   "s": "<p>Her şıkkı grafiklerle tek tek kontrol edelim:</p><ul><li>2026’da en az 3 saat: 30 + 16 = 46 öğrenci; 46/80 ≈ %57 → yarıdan fazla ✓.</li><li>1 saatten az: 2023’te 20, 2026’da 8; 20, 8’in iki katından (16) fazla ✓.</li><li>Grafik 2’de en küçük değer Homework (12) → en az tercih edilen ✓.</li><li>Grafik 1 süreyi, Grafik 2 etkinliği gösteriyor ama iki grafik birbirine bağlanmamış: 5 saatten fazla internette kalan 16 öğrencinin <b>hangi etkinliği</b> seçtiği bilinmiyor. Bu yüzden “çoğu sosyal medya kullanıyordu” <b>çıkarılamaz</b>.</li></ul><p>Tuzak: Öğrenci “en uzun süre + en popüler etkinlik” diye iki grafiği kendi kafasında eşleştirir; oysa veriler ayrı sorulardan gelir.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 450\" width=\"540\" role=\"img\" aria-label=\"Forum gönderisi ve dört yanıt\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">FORUM: Should parents check their children’s social media?</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#1e40af\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#1e40af\" font-weight=\"bold\">Burak (original post)</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">I think parents shouldn’t read their</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">children’s messages or check their</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">social media accounts. We are not</text>\n<text x=\"22\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">little kids anymore, and we need</text>\n<text x=\"22\" y=\"140\" font-size=\"11.5\" fill=\"#1e293b\">some privacy. If parents trust us,</text>\n<text x=\"22\" y=\"156\" font-size=\"11.5\" fill=\"#1e293b\">we will be more careful online.</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#16a34a\" font-weight=\"bold\">Selin</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">I couldn’t agree more! My parents</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">never check my phone, and I always</text>\n<text x=\"287\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">tell them when something strange</text>\n<text x=\"287\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">happens online. Trust works better</text>\n<text x=\"287\" y=\"140\" font-size=\"11.5\" fill=\"#1e293b\">than control.</text>\n<rect x=\"10\" y=\"178\" width=\"255\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#b45309\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"199\" font-size=\"12.5\" fill=\"#b45309\" font-weight=\"bold\">Kaan</text>\n<text x=\"22\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">I see your point, but it depends on</text>\n<text x=\"22\" y=\"236\" font-size=\"11.5\" fill=\"#1e293b\">the age. Children under 13 can</text>\n<text x=\"22\" y=\"252\" font-size=\"11.5\" fill=\"#1e293b\">easily believe strangers, so their</text>\n<text x=\"22\" y=\"268\" font-size=\"11.5\" fill=\"#1e293b\">parents should check their accounts.</text>\n<text x=\"22\" y=\"284\" font-size=\"11.5\" fill=\"#1e293b\">For teenagers like us, it isn’t</text>\n<text x=\"22\" y=\"300\" font-size=\"11.5\" fill=\"#1e293b\">necessary.</text>\n<rect x=\"275\" y=\"178\" width=\"255\" height=\"134\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#dc2626\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"199\" font-size=\"12.5\" fill=\"#dc2626\" font-weight=\"bold\">Ece</text>\n<text x=\"287\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">Sorry, but I don’t think so. The</text>\n<text x=\"287\" y=\"236\" font-size=\"11.5\" fill=\"#1e293b\">Internet is full of scams and fake</text>\n<text x=\"287\" y=\"252\" font-size=\"11.5\" fill=\"#1e293b\">accounts. Parents should check</text>\n<text x=\"287\" y=\"268\" font-size=\"11.5\" fill=\"#1e293b\">everything on their children’s</text>\n<text x=\"287\" y=\"284\" font-size=\"11.5\" fill=\"#1e293b\">phones until they are 18.</text>\n<rect x=\"10\" y=\"322\" width=\"255\" height=\"118\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#7c3aed\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"343\" font-size=\"12.5\" fill=\"#7c3aed\" font-weight=\"bold\">Arda</text>\n<text x=\"22\" y=\"364\" font-size=\"11.5\" fill=\"#1e293b\">You’re right in a way. Reading</text>\n<text x=\"22\" y=\"380\" font-size=\"11.5\" fill=\"#1e293b\">private messages is too much.</text>\n<text x=\"22\" y=\"396\" font-size=\"11.5\" fill=\"#1e293b\">However, parents should at least</text>\n<text x=\"22\" y=\"412\" font-size=\"11.5\" fill=\"#1e293b\">know which apps we use and who we</text>\n<text x=\"22\" y=\"428\" font-size=\"11.5\" fill=\"#1e293b\">follow.</text>\n</svg></div>\n<p>According to the forum, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Selin and Arda completely agree with Burak.",
+    "Ece and Kaan think parents should check all children’s accounts.",
+    "Kaan and Arda partly agree with Burak.",
+    "Ece is the only person who partly agrees with Burak."
+   ],
+   "a": "C",
+   "s": "<p>Yanıtları görüşe göre ayıralım:</p><ul><li><b>Selin:</b> “I couldn’t agree more!” → tamamen katılıyor.</li><li><b>Kaan:</b> “I see your point, but it depends on the age.” 13 yaş altı için kontrol gerekli, gençler için değil → <b>kısmen</b> katılıyor.</li><li><b>Ece:</b> “Sorry, but I don’t think so.” 18 yaşına kadar her şey kontrol edilmeli → katılmıyor.</li><li><b>Arda:</b> “You’re right in a way… However…” Mesajları okumak fazla ama uygulamaları bilmeliler → <b>kısmen</b> katılıyor.</li></ul><p>Çeldiriciler: Arda’nın “You’re right” ile başlaması onu tamamen katılıyor gibi gösterir ama “However” sonrası farklı düşünce var. Kaan herkesin değil yalnızca 13 yaş altı çocukların hesabının kontrol edilmesini istiyor. Ece kısmen değil tamamen karşı çıkıyor.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Nehir and her two brothers want to share <b>one</b> music plan.</p><div class=\"box\"><p><b>Nehir:</b> We each need our own account, and nobody wants to hear ads. I listen to music on the school bus, but there’s no Internet connection there, so I must save songs to my phone. My older brother listens on his tablet. We can pay 150 TL a month at most.</p></div><table><caption>TuneBox Music Plans</caption><tr><th>Plan</th><th>Accounts</th><th>Price (a month)</th><th>Ads</th><th>Download songs</th><th>Devices</th></tr><tr><td>Duo</td><td>2</td><td>90 TL</td><td>No</td><td>Yes</td><td>Phones only</td></tr><tr><td>Family Lite</td><td>4</td><td>120 TL</td><td>No</td><td>No</td><td>All devices</td></tr><tr><td>Family</td><td>5</td><td>145 TL</td><td>No</td><td>Yes</td><td>All devices</td></tr><tr><td>Family Max</td><td>6</td><td>175 TL</td><td>No</td><td>Yes</td><td>All devices</td></tr></table><p>Which plan meets <b>all</b> their needs?</p>",
+   "c": [
+    "Family Lite",
+    "Duo",
+    "Family Max",
+    "Family"
+   ],
+   "a": "D",
+   "s": "<p>Koşulları sırayla uygulayalım: (1) 3 kişi → en az 3 hesap: Duo (2) elenir. (2) İnternetsiz otobüste dinlemek → şarkı indirebilmeli: Family Lite (No) elenir. (3) Ağabey tablet kullanıyor → “All devices”: Duo zaten elendi. (4) En fazla 150 TL: Family Max (175 TL) elenir. Geriye yalnızca Family (5 hesap, 145 TL, reklamsız, indirme var, tüm cihazlar) kalır.</p><p>Çeldiriciler: Family Lite, hesap sayısı ve fiyatı uygun olduğu için seçilir ama “save songs to my phone” = indirme koşulunu karşılamaz. Duo en ucuz ama hesap sayısı ve cihaz şartı tutmaz. Family Max tüm özelliklere sahip ama bütçeyi aşar.</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Four friends are creating passwords for an online game.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 213\" width=\"540\" role=\"img\" aria-label=\"GAME ZONE – Create Your Password\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"205\" rx=\"12\" fill=\"#faf5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#9333ea\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">GAME ZONE – Create Your Password</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">Your password must:</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">• have 10–14 characters,</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">• have at least two capital letters,</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">• have exactly three numbers,</text>\n<text x=\"26\" y=\"142\" font-size=\"11.5\" fill=\"#1e293b\">• have at least one of these symbols: ! ? # *</text>\n<text x=\"26\" y=\"163\" font-size=\"11.5\" fill=\"#1e293b\">• NOT contain your name or nickname (capital or small letters),</text>\n<text x=\"26\" y=\"184\" font-size=\"11.5\" fill=\"#1e293b\">• NOT have the same character twice in a row (for example “aa” or “11”).</text>\n</svg></div>\n<table><tr><th>Player</th><th>Nickname</th><th>Password</th></tr><tr><td>Nil</td><td>Nilo</td><td>StarFox?917Kit</td></tr><tr><td>Arda</td><td>Ardi</td><td>BlueRiver#2024</td></tr><tr><td>Melis</td><td>Mel</td><td>SkyMelody!735</td></tr><tr><td>Tuna</td><td>TT</td><td>GreenApple*482</td></tr></table><p>Whose password follows <b>all</b> the rules?</p>",
+   "c": [
+    "Arda’s",
+    "Melis’s",
+    "Nil’s",
+    "Tuna’s"
+   ],
+   "a": "C",
+   "s": "<p>Her şifreyi tüm kurallarla tek tek deneyelim:</p><ul><li><b>Arda – BlueRiver#2024:</b> 14 karakter, B ve R büyük, # var ama <b>dört</b> rakam (2,0,2,4) var → “exactly three numbers” bozulur.</li><li><b>Melis – SkyMelody!735:</b> 13 karakter, 3 rakam, ! var ama “Melody” kelimesinin içinde takma adı <b>“Mel”</b> geçiyor → kural bozulur.</li><li><b>Tuna – GreenApple*482:</b> uzunluk, büyük harf, rakam, sembol uygun ama “App” içinde <b>“pp”</b> (ayrıca “ee”) yan yana tekrar ediyor → kural bozulur.</li><li><b>Nil – StarFox?917Kit:</b> 14 karakter; S, F, K büyük; 9-1-7 tam üç rakam; ? sembolü; “Nil/Nilo” geçmiyor; yan yana aynı karakter yok → tüm kurallara uyar ✓.</li></ul><p>Tuzaklar: rakamları saymamak (Arda), adın kelime içinde saklanmasını görmemek (Melis), çift harfi gözden kaçırmak (Tuna).</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>My Digital Detox Week</b> – by İpek</p><p>Last month, I decided to take a break from social media for seven days. I deleted two apps from my phone and turned off all my notifications. I only kept my messaging app because my parents wanted to reach me after school.</p><p>The first two days were really hard. I picked up my phone more than 40 times a day without thinking! By Thursday, things were easier. I finished a novel and went to bed earlier, so I felt more energetic in the mornings.</p><p>However, there was one bad moment. My friends planned a picnic on a social media group, and I didn’t see it. I only heard about it on Saturday evening, after the picnic was over. I was a bit upset.</p><p>When the week ended, I downloaded one of the apps again, but now I set a 30-minute daily limit on it.</p></div><p>I. İpek didn’t use her phone at all during the week.<br>II. Staying away from social media caused İpek to miss an event.<br>III. After the detox, İpek stopped using social media completely.</p><p>Which of the statements above can be inferred from the blog?</p>",
+   "c": [
+    "Only II",
+    "I and II",
+    "II and III",
+    "I, II and III"
+   ],
+   "a": "A",
+   "s": "<p><b>I:</b> Yanlış. İpek mesajlaşma uygulamasını tuttu (“I only kept my messaging app”) ve ilk günlerde telefonu günde 40’tan fazla eline aldı.</p><p><b>II:</b> Doğru. Arkadaşları pikniği sosyal medya grubunda planladı; İpek görmediği için pikniği kaçırdı (“after the picnic was over”). “miss an event” bunun eş anlamlı yeniden ifadesidir.</p><p><b>III:</b> Yanlış. Hafta bitince uygulamalardan birini yeniden indirdi, sadece günlük 30 dakika sınır koydu. “Sınırlamak” ile “tamamen bırakmak” aynı şey değildir.</p><p>Yalnızca II çıkarılabilir.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Yusuf is chatting with the help desk of an online game.</p><div class=\"dialog\"><div><b>Yusuf:</b> Hello. I can’t log in to my game account. It says my password is wrong, but I’m sure it’s correct.</div><div><b>Support:</b> (1) ----</div><div><b>Yusuf:</b> Well, yes. Yesterday I got an e-mail from “the game company”, and I typed my password on the page in the link.</div><div><b>Support:</b> I see. We didn’t send that e-mail, so someone has probably stolen your password. (2) ----</div><div><b>Yusuf:</b> OK, I’ll click “Forgot password” now and create a new one. And I won’t open links like that again.</div></div><p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "(1) Have you shared your password or clicked on a link recently? – (2) You should send your new password to us by e-mail.",
+    "(1) Have you shared your password or clicked on a link recently? – (2) You should change your password and be careful with e-mails from strangers.",
+    "(1) How long have you played this game? – (2) You should delete the game and download it again.",
+    "(1) Did you buy a new computer last week? – (2) You should change your password and be careful with e-mails from strangers."
+   ],
+   "a": "B",
+   "s": "<p>(1) için ipucu Yusuf’un cevabıdır: “Well, yes. … I typed my password on the page in the link.” Cevap “yes” ile başlıyor ve bağlantıya tıklamayı anlatıyor; demek ki soru “Şifreni paylaştın mı ya da bir bağlantıya tıkladın mı?” olmalıdır. “Did you buy a new computer?” sorusu bu cevapla uyuşmaz.</p><p>(2) için ipucu: Yusuf “Forgot password”a tıklayıp yeni şifre oluşturacağını ve bu tür bağlantıları açmayacağını söylüyor → “şifreni değiştir ve yabancı e-postalara dikkat et.”</p><p>Çeldiriciler: Yeni şifreyi e-postayla göndermek, az önce yaşanan dolandırıcılığın aynısıdır; oyunu silip yeniden indirmek şifre çalınması sorununu çözmez. Bir şıkta (1) doğru (2) yanlış, diğerinde (2) doğru (1) yanlış; ikisinin de tutması gerekir.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Ayla wants to work on her school project in a café.</p><div class=\"box\"><p><b>Ayla:</b> This evening I’m going to edit our group video and then upload it to the school website, so I need an upload speed of at least 20 Mbps. I’ll arrive at 7 pm and stay until 10 pm. My laptop battery doesn’t last long, so I need to plug it in. I can’t spend more than 60 TL on a drink.</p></div><table><caption>Table 1: Wi-Fi Speed Test</caption><tr><th>Café</th><th>Download speed</th><th>Upload speed</th></tr><tr><td>Byte Café</td><td>80 Mbps</td><td>25 Mbps</td></tr><tr><td>Cloud Corner</td><td>60 Mbps</td><td>30 Mbps</td></tr><tr><td>Mocha Net</td><td>100 Mbps</td><td>15 Mbps</td></tr><tr><td>The Router</td><td>45 Mbps</td><td>22 Mbps</td></tr></table><table><caption>Table 2: Café Information</caption><tr><th>Café</th><th>Opening hours</th><th>Sockets for laptops</th><th>Cheapest drink</th></tr><tr><td>Byte Café</td><td>8 am – 11 pm</td><td>Yes</td><td>75 TL</td></tr><tr><td>Cloud Corner</td><td>9 am – 9 pm</td><td>Yes</td><td>50 TL</td></tr><tr><td>Mocha Net</td><td>10 am – 12 am</td><td>No</td><td>40 TL</td></tr><tr><td>The Router</td><td>7 am – 10.30 pm</td><td>Yes</td><td>55 TL</td></tr></table><p>Which café is the best choice for Ayla?</p>",
+   "c": [
+    "Byte Café",
+    "The Router",
+    "Cloud Corner",
+    "Mocha Net"
+   ],
+   "a": "B",
+   "s": "<p>İki tabloyu birlikte kullanmalıyız:</p><ul><li><b>Mocha Net:</b> İndirme hızı en yüksek (100) ama Ayla <b>yükleme</b> (upload) yapacak; 15 Mbps &lt; 20 ✗. Ayrıca priz yok.</li><li><b>Cloud Corner:</b> Yükleme 30 ✓, priz ✓, 50 TL ✓ ama 9 pm’de kapanıyor; Ayla 10 pm’e kadar kalacak ✗.</li><li><b>Byte Café:</b> Yükleme 25 ✓, saat ✓, priz ✓ ama en ucuz içecek 75 TL &gt; 60 ✗.</li><li><b>The Router:</b> Yükleme 22 ≥ 20 ✓, 10.30 pm’e kadar açık ✓, priz ✓, 55 TL ✓.</li></ul><p>Tuzak: download ↔ upload karışıklığı (Mocha Net) ve tek tabloya bakıp diğerini unutmak.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>The graph shows the number of subscribers of two video channels in the first six months of the year.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 270\" width=\"540\" role=\"img\" aria-label=\"İki kanalın abone sayısı\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Subscribers (thousands)</text>\n<rect x=\"150\" y=\"32\" width=\"14\" height=\"4\" fill=\"#dc2626\"/>\n<text x=\"170\" y=\"39\" font-size=\"11.5\" fill=\"#1e293b\">Chef Ada</text>\n<rect x=\"246\" y=\"32\" width=\"14\" height=\"4\" fill=\"#2563eb\"/>\n<text x=\"266\" y=\"39\" font-size=\"11.5\" fill=\"#1e293b\">Tech Tolga</text>\n<line x1=\"60\" y1=\"220.0\" x2=\"510\" y2=\"220.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"224.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"188.0\" x2=\"510\" y2=\"188.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"192.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"156.0\" x2=\"510\" y2=\"156.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"160.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"124.0\" x2=\"510\" y2=\"124.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"128.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"92.0\" x2=\"510\" y2=\"92.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"96.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"60.0\" x2=\"510\" y2=\"60.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"64.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">50</text>\n<text x=\"80.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Jan</text>\n<text x=\"162.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Feb</text>\n<text x=\"244.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Mar</text>\n<text x=\"326.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Apr</text>\n<text x=\"408.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">May</text>\n<text x=\"490.0\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Jun</text>\n<polyline points=\"80.0,156.0 162.0,143.2 244.0,124.0 326.0,124.0 408.0,98.4 490.0,76.0\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n<circle cx=\"80.0\" cy=\"156.0\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"80.0\" y=\"173.0\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">20</text>\n<circle cx=\"162.0\" cy=\"143.2\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"162.0\" y=\"160.2\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">24</text>\n<circle cx=\"244.0\" cy=\"124.0\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"244.0\" y=\"141.0\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<circle cx=\"326.0\" cy=\"124.0\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"326.0\" y=\"141.0\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<circle cx=\"408.0\" cy=\"98.4\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"408.0\" y=\"115.4\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">38</text>\n<circle cx=\"490.0\" cy=\"76.0\" r=\"4\" fill=\"#dc2626\"/>\n<text x=\"490.0\" y=\"67.0\" font-size=\"11\" fill=\"#dc2626\" font-weight=\"bold\" text-anchor=\"middle\">45</text>\n<polyline points=\"80.0,108.0 162.0,111.2 244.0,114.4 326.0,104.8 408.0,92.0 490.0,85.6\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.5\"/>\n<circle cx=\"80.0\" cy=\"108.0\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"80.0\" y=\"99.0\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">35</text>\n<circle cx=\"162.0\" cy=\"111.2\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"162.0\" y=\"102.2\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">34</text>\n<circle cx=\"244.0\" cy=\"114.4\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"244.0\" y=\"105.4\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">33</text>\n<circle cx=\"326.0\" cy=\"104.8\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"326.0\" y=\"95.8\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">36</text>\n<circle cx=\"408.0\" cy=\"92.0\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"408.0\" y=\"83.0\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">40</text>\n<circle cx=\"490.0\" cy=\"85.6\" r=\"4\" fill=\"#2563eb\"/>\n<text x=\"490.0\" y=\"102.6\" font-size=\"11\" fill=\"#2563eb\" font-weight=\"bold\" text-anchor=\"middle\">42</text>\n<line x1=\"60\" y1=\"220\" x2=\"510\" y2=\"220\" stroke=\"#334155\"/>\n</svg></div>\n<div class=\"box\"><p>The video website gives a <b>“Rising Star”</b> badge to a channel for each month in which it gains <b>6,000 or more</b> new subscribers.</p></div><p>According to the information, which of the following is <b>FALSE</b>?</p>",
+   "c": [
+    "Tech Tolga had more subscribers than Chef Ada in each of the first five months.",
+    "The number of Chef Ada’s subscribers stayed the same from March to April.",
+    "Tech Tolga’s channel grew more than Chef Ada’s between April and June.",
+    "Chef Ada got the “Rising Star” badge three times, but Tech Tolga never got it."
+   ],
+   "a": "C",
+   "s": "<p>Aylık artışları hesaplayalım (bin): Chef Ada: +4, +6, 0, +8, +7. Tech Tolga: −1, −1, +3, +4, +2.</p><ul><li>Ocak–Mayıs: 35&gt;20, 34&gt;24, 33&gt;30, 36&gt;30, 40&gt;38 → Tolga her ay önde ✓.</li><li>Mart 30, Nisan 30 → değişmedi ✓.</li><li>6 bin ve üzeri artış: Ada Mart (+6), Mayıs (+8), Haziran (+7) → 3 rozet; Tolga’nın hiçbir artışı 6’ya ulaşmıyor ✓.</li><li>Nisan→Haziran: Tolga 36→42 (+6), Ada 30→45 (+15). Tolga daha <b>az</b> büyüdü → ifade <b>yanlış</b>.</li></ul><p>Tuzak: Haziranda Tolga’nın çizgisi yüksek göründüğü için “daha çok büyüdü” sanmak; büyüme farkla ölçülür. Rozet şıkkında ise “6,000 or more” ifadesindeki eşitliği (Mart +6) kaçıran öğrenci 2 rozet bulur.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p><b>Duru:</b> “I’d rather video chat with my cousins than text them, as long as the connection isn’t too slow.”</p><p>Which of the following is closest in meaning to what Duru says?</p>",
+   "c": [
+    "When the Internet connection is good enough, Duru prefers seeing her cousins on video to sending them messages.",
+    "Duru prefers texting her cousins because video chats are usually too slow.",
+    "Duru never texts her cousins; she only video chats with them, even with a slow connection.",
+    "Duru’s cousins would rather text her than video chat because their connection is slow."
+   ],
+   "a": "A",
+   "s": "<p>“I’d rather A than B” = B yerine A’yı tercih ederim. “as long as” = …olduğu sürece (koşul). Yani Duru, bağlantı çok yavaş <b>olmadığı sürece</b> kuzenleriyle mesajlaşmak yerine görüntülü konuşmayı tercih ediyor.</p><p>Çeldiriciler: Tercihi tersine çeviren şık (texting) “rather … than” yapısını yanlış okuyandan gelir. “never texts … even with a slow connection” koşulu yok sayar ve “never” ile aşırı genelleme yapar. Kuzenlerin tercihinden bahseden şık konuşanı değiştirir.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 167\" width=\"540\" role=\"img\" aria-label=\"Haber paylaşmadan önce dört adım\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"159\" rx=\"12\" fill=\"#f0fdfa\" stroke=\"#0f766e\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">Before You Share a News Story</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">1. Check who wrote it and which website it comes from.</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">2. Check the date. Old news can look new!</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">3. Find the same story on at least two other trusted news websites.</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">4. If there is a photo, search for it online to see if it is really from this</text>\n<text x=\"26\" y=\"138\" font-size=\"11.5\" fill=\"#1e293b\">event.</text>\n</svg></div>\n<table><tr><th>Student</th><th>What he/she did before sharing a story</th></tr><tr><td>Sena</td><td>She checked the writer, the website and the date. The story had no photo. She found it on one other news website.</td></tr><tr><td>Emir</td><td>He checked the writer, the website and the date, and he found the story on three trusted websites. He didn’t search for the story’s photo.</td></tr><tr><td>Ilgaz</td><td>The story had no photo. He checked the writer, the website and the date, and he read the same story on two other trusted news websites.</td></tr><tr><td>Doruk</td><td>He searched for the photo and checked the date. He found the story on two trusted websites, but he didn’t check who wrote it.</td></tr></table><p>Which student followed <b>all</b> the necessary steps on the poster?</p>",
+   "c": [
+    "Sena",
+    "Emir",
+    "Ilgaz",
+    "Doruk"
+   ],
+   "a": "C",
+   "s": "<p>Adımları her öğrenciye uygulayalım:</p><ul><li><b>Sena:</b> Haberi yalnızca <b>bir</b> sitede daha buldu; 3. adım “at least two” istiyor ✗.</li><li><b>Emir:</b> Üç sitede buldu ✓ ama haberde fotoğraf vardı ve aramadı → 4. adım ✗.</li><li><b>Doruk:</b> Yazarı kontrol etmedi → 1. adım ✗.</li><li><b>Ilgaz:</b> Yazar, site ve tarih ✓; iki güvenilir sitede daha okudu ✓; fotoğraf olmadığı için 4. adım gerekmiyor (“If there is a photo”) ✓.</li></ul><p>Tuzak: 4. adımın koşullu olduğunu (“If…”) fark etmeyen öğrenci Ilgaz’ı eler; Emir’in “three” sitesi göz boyar ama fotoğraf adımını atlamıştır.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Every year, 120 students in a school answer a survey. Each student chooses only <b>one</b> answer.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 260\" width=\"540\" role=\"img\" aria-label=\"How do you mostly keep in touch with your grandparents?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">How do you mostly keep in touch with your grandparents?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#94a3b8\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">2020</text>\n<rect x=\"184\" y=\"30\" width=\"12\" height=\"12\" fill=\"#0d9488\"/>\n<text x=\"200\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">2026</text>\n<line x1=\"60\" y1=\"210.0\" x2=\"520\" y2=\"210.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"214.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"183.3\" x2=\"520\" y2=\"183.3\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"187.33333333333334\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"156.7\" x2=\"520\" y2=\"156.7\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"160.66666666666666\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"130.0\" x2=\"520\" y2=\"130.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"134.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<line x1=\"60\" y1=\"103.3\" x2=\"520\" y2=\"103.3\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"107.33333333333333\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"76.7\" x2=\"520\" y2=\"76.7\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"80.66666666666666\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">50</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">60</text>\n<rect x=\"83.5\" y=\"66.0\" width=\"32.0\" height=\"144.0\" fill=\"#94a3b8\"/>\n<text x=\"99.5\" y=\"62.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">54</text>\n<rect x=\"117.5\" y=\"130.0\" width=\"32.0\" height=\"80.0\" fill=\"#0d9488\"/>\n<text x=\"133.5\" y=\"126.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">30</text>\n<text x=\"117.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Phone</text>\n<text x=\"117.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">calls</text>\n<rect x=\"198.5\" y=\"162.0\" width=\"32.0\" height=\"48.0\" fill=\"#94a3b8\"/>\n<text x=\"214.5\" y=\"158.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">18</text>\n<rect x=\"232.5\" y=\"82.0\" width=\"32.0\" height=\"128.0\" fill=\"#0d9488\"/>\n<text x=\"248.5\" y=\"78.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">48</text>\n<text x=\"232.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Video</text>\n<text x=\"232.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">chats</text>\n<rect x=\"313.5\" y=\"178.0\" width=\"32.0\" height=\"32.0\" fill=\"#94a3b8\"/>\n<text x=\"329.5\" y=\"174.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">12</text>\n<rect x=\"347.5\" y=\"146.0\" width=\"32.0\" height=\"64.0\" fill=\"#0d9488\"/>\n<text x=\"363.5\" y=\"142.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">24</text>\n<text x=\"347.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Text</text>\n<text x=\"347.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">messages</text>\n<rect x=\"428.5\" y=\"114.0\" width=\"32.0\" height=\"96.0\" fill=\"#94a3b8\"/>\n<text x=\"444.5\" y=\"110.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">36</text>\n<rect x=\"462.5\" y=\"162.0\" width=\"32.0\" height=\"48.0\" fill=\"#0d9488\"/>\n<text x=\"478.5\" y=\"158.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">18</text>\n<text x=\"462.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Visiting</text>\n<text x=\"462.5\" y=\"240\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">them</text>\n<line x1=\"60\" y1=\"210\" x2=\"520\" y2=\"210\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<div class=\"box\"><p><b>School reporter:</b> In 2026, all the students who chose “video chats” told us that they video chat with their grandparents at least three times a week.</p></div><p>I. In 2026, video chats became the most common way of keeping in touch with grandparents.<br>II. From 2020 to 2026, the number of students who mostly visit their grandparents fell by half.<br>III. In 2026, half of the students video chatted with their grandparents at least three times a week.</p><p>Which of the statements above is/are correct according to the graph and the text?</p>",
+   "c": [
+    "Only I",
+    "I and II",
+    "II and III",
+    "I, II and III"
+   ],
+   "a": "B",
+   "s": "<p><b>I:</b> 2026’da video chat 48 ile en yüksek değer ✓.</p><p><b>II:</b> Visiting: 36 → 18; yarıya düştü (“fell by half”) ✓.</p><p><b>III:</b> Metne göre video chat’i seçen 48 öğrencinin hepsi haftada en az üç kez görüşüyor. Ama 48/120 = %40; yarısı (60) değil ✗.</p><p>Çeldiriciler: III’ü doğru sanan öğrenci “video chat en popüler = yarısı” diye düşünür; “most common” ile “half/most of the students” aynı şey değildir. “Only I”, II’deki 36→18 değişimini hesaplamayanın cevabıdır.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>How I Started My Channel</b> – by Elif (14)</p><p>Two years ago, I was bored during the summer holiday, so I started making origami animals. My cousin saw them and said, “You should teach other people!” That’s how my channel began.</p><p>I don’t have expensive equipment. I record everything with my mum’s old phone, and I use a desk lamp for light. I upload a new video every Saturday morning because I’m too busy with school on weekdays.</p><p>Now I have almost 5,000 subscribers. Most of the comments are lovely, but sometimes people write mean things. I never reply to them. I just delete those comments and focus on the nice ones.</p></div><p>Which of the following questions is <b>NOT</b> answered in the text?</p>",
+   "c": [
+    "What does Elif use to film her videos?",
+    "How often does Elif share a new video?",
+    "What does Elif do when people leave unkind comments?",
+    "How much money does Elif earn from her videos?"
+   ],
+   "a": "D",
+   "s": "<p>Soruların cevaplarını metinde arayalım (sorular metindeki ifadelerin eş anlamlılarıyla yazılmış):</p><ul><li>“What does Elif use to <b>film</b>…?” → “I record everything with my mum’s old phone” ✓ (film = record).</li><li>“How often … <b>share</b> a new video?” → “every Saturday morning” ✓ (share = upload).</li><li>“… <b>unkind</b> comments?” → “mean things … I just delete those comments” ✓ (unkind = mean).</li><li>“How much money…?” → Metinde abone sayısı (5,000) var ama kazançtan hiç söz edilmiyor ✗.</li></ul><p>Tuzak: “5,000 subscribers” sayısını kazanç sanmak ya da “expensive equipment” ifadesini para kazanmakla karıştırmak.</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Mrs. Aydın is looking for a parental control app.</p><div class=\"box\"><p><b>Mrs. Aydın:</b> My son has a phone and my daughter has a tablet. I want to set a daily time limit for both of them and block some websites. I don’t need to see where they are because they always go to school with me. I can pay up to 100 TL a month, but I want to try the app for free before I pay.</p></div><table><tr><th>App</th><th>Daily screen-time limit</th><th>Blocks websites</th><th>Shows location</th><th>Works on</th><th>Max. children</th><th>Price (a month)</th><th>Free trial</th></tr><tr><td>KidSafe</td><td>✓</td><td>✓</td><td>✓</td><td>Phones only</td><td>3</td><td>80 TL</td><td>7 days</td></tr><tr><td>NetGuard</td><td>✓</td><td>✓</td><td>✗</td><td>Phones and tablets</td><td>5</td><td>95 TL</td><td>No free trial</td></tr><tr><td>FamilyEye</td><td>✓</td><td>✗</td><td>✓</td><td>Phones and tablets</td><td>4</td><td>60 TL</td><td>14 days</td></tr><tr><td>HappyScreen</td><td>✓</td><td>✓</td><td>✗</td><td>Phones and tablets</td><td>3</td><td>90 TL</td><td>7 days</td></tr></table><p>Which app is the most suitable for Mrs. Aydın?</p>",
+   "c": [
+    "HappyScreen",
+    "KidSafe",
+    "NetGuard",
+    "FamilyEye"
+   ],
+   "a": "A",
+   "s": "<p>Koşulları sırayla uygulayalım:</p><ul><li>Kızı tablet kullanıyor → “Phones only” olan <b>KidSafe</b> elenir (diğer her şeyi uygun olduğu için güçlü çeldiricidir).</li><li>Web sitesi engelleme şart → <b>FamilyEye</b> (✗) elenir; en ucuz ve en uzun deneme süresi göz boyar.</li><li>Önce ücretsiz denemek istiyor → <b>NetGuard</b> (No free trial) elenir.</li><li><b>HappyScreen:</b> süre sınırı ✓, site engelleme ✓, telefon + tablet ✓, 3 çocuk ≥ 2 ✓, 90 TL ≤ 100 ✓, 7 gün deneme ✓.</li></ul><p>Konum özelliği olmaması sorun değil, çünkü Mrs. Aydın “I don’t need to see where they are” diyor.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>A reporter is interviewing Zeynep Arı, a young e-sports player.</p><div class=\"dialog\"><div><b>Reporter:</b> (1) ----</div><div><b>Zeynep Arı:</b> When I was ten. My older brother taught me how to play.</div><div><b>Reporter:</b> (2) ----</div><div><b>Zeynep Arı:</b> About three hours a day, but I never play after 9 pm on school nights.</div><div><b>Reporter:</b> (3) ----</div><div><b>Zeynep Arı:</b> My parents. They have always believed in me, even when I lost.</div></div><p>Which of the following questions is <b>NOT</b> one of the reporter’s questions?</p>",
+   "c": [
+    "When did you start playing online games?",
+    "How long do you practise every day?",
+    "Who supports you the most?",
+    "How often do you take part in tournaments?"
+   ],
+   "a": "D",
+   "s": "<p>Cevaplardan soruları bulalım:</p><ul><li>(1) “When I was ten.” → zaman: “When did you start playing online games?”</li><li>(2) “About three hours a day” → <b>süre</b>: “How long do you practise every day?”</li><li>(3) “My parents. They have always believed in me.” → kişi: “Who supports you the most?”</li></ul><p>“How often…?” sıklık sorar (once a month, twice a year gibi); “three hours a day” bir süre bildirir. Turnuvalardan da hiç söz edilmiyor. Bu yüzden kullanılmayan soru budur (How often ↔ How long tuzağı).</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Four students took an online safety quiz. Their answers are in the table.</p><table><caption>Online Safety Quiz (T = True, F = False)</caption><tr><th></th><th>Statement</th><th>Bora</th><th>Lale</th><th>Ceren</th><th>Umut</th></tr><tr><td>1</td><td>It’s OK to share your password with your best friend.</td><td>F</td><td>F</td><td>T</td><td>F</td></tr><tr><td>2</td><td>You should log out after you use a computer at the library.</td><td>T</td><td>T</td><td>T</td><td>F</td></tr><tr><td>3</td><td>A website with lots of colourful ads is always safe.</td><td>F</td><td>F</td><td>F</td><td>F</td></tr><tr><td>4</td><td>If someone bullies you online, you should save the messages and tell an adult.</td><td>T</td><td>T</td><td>T</td><td>T</td></tr><tr><td>5</td><td>You can believe a news story if a lot of people share it.</td><td>T</td><td>F</td><td>F</td><td>F</td></tr></table><p>Which student answered <b>all</b> the statements correctly?</p>",
+   "c": [
+    "Bora",
+    "Ceren",
+    "Umut",
+    "Lale"
+   ],
+   "a": "D",
+   "s": "<p>Önce doğru cevap anahtarını bulalım: 1. Şifre en yakın arkadaşla bile paylaşılmaz → F. 2. Ortak bilgisayarda çıkış yapılır → T. 3. Çok reklam güvenli olduğunu göstermez, “always safe” yanlış → F. 4. Zorbalık mesajları saklanır, bir yetişkine söylenir → T. 5. Çok paylaşılması bir haberi doğru yapmaz → F. Anahtar: F-T-F-T-F.</p><ul><li>Bora: 5. ifadeye T dedi ✗ (popüler = doğru yanılgısı).</li><li>Ceren: 1. ifadeye T dedi ✗ (“en yakın arkadaş güvenilir” yanılgısı).</li><li>Umut: 2. ifadeye F dedi ✗.</li><li>Lale: F-T-F-T-F → hepsi doğru ✓.</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p><b>Kuzey:</b> “Almost everyone in my class has a social media account, but only a few of them post photos regularly.”</p><p>Which of the following is closest in meaning to what Kuzey says?</p>",
+   "c": [
+    "Most of Kuzey’s classmates are on social media, but most of them don’t share photos very often.",
+    "Only a few of Kuzey’s classmates have social media accounts, and they all post photos.",
+    "All of Kuzey’s classmates post photos regularly on their social media accounts.",
+    "Most of Kuzey’s classmates post photos regularly, but a few of them don’t have accounts."
+   ],
+   "a": "A",
+   "s": "<p>“Almost everyone” = neredeyse herkes = most. “Only a few of them post photos regularly” = çok azı düzenli fotoğraf paylaşıyor → çoğu sık paylaşmıyor.</p><p>Çeldiriciler: “only a few” ifadesini hesap sahipliğine bağlayan şık cümlenin iki parçasını karıştırır; “All … post photos regularly” iki niceliği de abartır; son şık “a few” ile “most” anlamlarını yer değiştirir (az kişi paylaşıyor ↔ çok kişi paylaşıyor).</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 260\" width=\"540\" role=\"img\" aria-label=\"E-book downloads from the school library\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">E-book downloads from the school library</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#a5b4fc\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">January</text>\n<rect x=\"205\" y=\"30\" width=\"12\" height=\"12\" fill=\"#4338ca\"/>\n<text x=\"221\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">April</text>\n<line x1=\"60\" y1=\"210.0\" x2=\"520\" y2=\"210.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"214.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"170.0\" x2=\"520\" y2=\"170.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"174.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">40</text>\n<line x1=\"60\" y1=\"130.0\" x2=\"520\" y2=\"130.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"134.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">80</text>\n<line x1=\"60\" y1=\"90.0\" x2=\"520\" y2=\"90.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"94.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">120</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">160</text>\n<rect x=\"83.5\" y=\"90.0\" width=\"32.0\" height=\"120.0\" fill=\"#a5b4fc\"/>\n<text x=\"99.5\" y=\"86.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">120</text>\n<rect x=\"117.5\" y=\"60.0\" width=\"32.0\" height=\"150.0\" fill=\"#4338ca\"/>\n<text x=\"133.5\" y=\"56.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">150</text>\n<text x=\"117.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Adventure</text>\n<rect x=\"198.5\" y=\"130.0\" width=\"32.0\" height=\"80.0\" fill=\"#a5b4fc\"/>\n<text x=\"214.5\" y=\"126.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">80</text>\n<rect x=\"232.5\" y=\"80.0\" width=\"32.0\" height=\"130.0\" fill=\"#4338ca\"/>\n<text x=\"248.5\" y=\"76.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">130</text>\n<text x=\"232.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Science</text>\n<rect x=\"313.5\" y=\"60.0\" width=\"32.0\" height=\"150.0\" fill=\"#a5b4fc\"/>\n<text x=\"329.5\" y=\"56.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">150</text>\n<rect x=\"347.5\" y=\"70.0\" width=\"32.0\" height=\"140.0\" fill=\"#4338ca\"/>\n<text x=\"363.5\" y=\"66.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">140</text>\n<text x=\"347.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Comics</text>\n<rect x=\"428.5\" y=\"150.0\" width=\"32.0\" height=\"60.0\" fill=\"#a5b4fc\"/>\n<text x=\"444.5\" y=\"146.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">60</text>\n<rect x=\"462.5\" y=\"110.0\" width=\"32.0\" height=\"100.0\" fill=\"#4338ca\"/>\n<text x=\"478.5\" y=\"106.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">100</text>\n<text x=\"462.5\" y=\"226\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">History</text>\n<line x1=\"60\" y1=\"210\" x2=\"520\" y2=\"210\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">downloads</text>\n</svg></div>\n<div class=\"box\"><p><b>Library announcement:</b> Next month, we will buy new e-books only in the genre with the <b>biggest increase</b> in downloads from January to April. We will also stop buying e-books in any genre whose downloads <b>went down</b>.</p></div><p>According to the graph and the announcement, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "The library will buy new comics because they were the most downloaded genre in both months.",
+    "History e-books had the biggest increase, so the library will buy new history e-books.",
+    "The library will stop buying adventure e-books because they had fewer downloads in April.",
+    "The library will buy new science e-books, and it will stop buying comics."
+   ],
+   "a": "D",
+   "s": "<p>Artışları hesaplayalım: Adventure 120→150 (+30), Science 80→130 (<b>+50</b>), Comics 150→140 (<b>−10</b>), History 60→100 (+40).</p><ul><li>En büyük artış Science (+50) → yeni bilim e-kitapları alınacak; düşüş yalnızca Comics’te → çizgi roman alımı durdurulacak ✓.</li><li>Comics yalnızca Ocak’ta en çok indirilendi; Nisan’da Adventure (150) daha fazla. Üstelik kural “en çok indirilen” değil “en çok artan” diyor ✗.</li><li>History’nin artışı +40; Science’ınkinden az ✗ (Nisan’daki çubuk boyuna değil farka bakılmalı).</li><li>Adventure Nisan’da arttı (150 &gt; 120) ✗.</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Sude wrote to an online advice forum.</p><div class=\"box\"><p><b>Sude (13):</b> I play an online game every night, usually until midnight, so I’m always tired at school. I can’t delete the game because all my friends play it, and we chat there. I also need my computer for homework every evening. My parents work late and they get home after I go to bed, so they can’t check what I’m doing. What should I do?</p></div><p>Which of the following advice is <b>NOT</b> suitable for Sude’s situation?</p>",
+   "c": [
+    "Ask your parents to check what time you stop playing every evening.",
+    "Set an alarm on your phone to remind you to stop playing at 9.30 pm.",
+    "Play only at the weekends and talk to your friends at school during the week.",
+    "Use an app that blocks the game after 9 pm but still lets you use the computer for homework."
+   ],
+   "a": "A",
+   "s": "<p>Sude’nin koşulları: oyunu silemiyor, bilgisayara ödev için ihtiyacı var, ailesi o yattıktan sonra eve geliyor.</p><ul><li>Alarm kurmak → kendi kendine uygulayabilir, uygun ✓.</li><li>Sadece hafta sonu oynamak → oyunu silmesi gerekmiyor, arkadaşlarıyla okulda konuşabilir, uygun ✓.</li><li>Oyunu 9’dan sonra engelleyip ödeve izin veren uygulama → bilgisayar ihtiyacını da karşılıyor, uygun ✓.</li><li>Ailesinden her akşam kontrol etmesini istemek → “they get home after I go to bed, so they can’t check” cümlesine göre mümkün değil ✗.</li></ul><p>Tuzak: Aile kontrolü genelde iyi bir tavsiyedir; ama soru Sude’nin <b>durumuna</b> uygunluğu soruyor.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 171\" width=\"540\" role=\"img\" aria-label=\"Siber zorbalık bilgi grafiği\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"163\" rx=\"12\" fill=\"#fff1f2\" stroke=\"#be123c\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#be123c\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">CYBERBULLYING: What 500 Teenagers Told Us</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">• 2 in 5 teenagers have seen someone being bullied online.</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">• 1 in 5 teenagers have been bullied online themselves.</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">• Only a quarter of the bullied teenagers told an adult about it.</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">• Where did the bullying happen? (bullied teenagers)</text>\n<text x=\"26\" y=\"142\" font-size=\"11.5\" fill=\"#1e293b\">• Group chats 45% · Online games 30% · Social media 25%</text>\n</svg></div>\n<p>According to the information, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "Twice as many teenagers have seen online bullying as have been bullied themselves.",
+    "75 of the bullied teenagers didn’t tell an adult about it.",
+    "Most of the bullying happened in group chats.",
+    "Fewer bullied teenagers had problems on social media than in online games."
+   ],
+   "a": "C",
+   "s": "<p>Sayıları hesaplayalım: 500 gencin 2/5’i = 200 kişi zorbalık görmüş; 1/5’i = 100 kişi zorbalığa uğramış; bunların dörtte biri = 25 kişi bir yetişkine söylemiş.</p><ul><li>200 = 2 × 100 → “twice as many” ✓.</li><li>100 − 25 = 75 kişi söylememiş ✓.</li><li>Sosyal medya %25 &lt; oyunlar %30 ✓.</li><li>Grup sohbetleri %45 ile <b>en sık</b> yer ama “most” (yarıdan fazla) için %50’yi geçmesi gerekirdi ✗.</li></ul><p>Tuzak: “the most common place” (en yaygın yer) ile “most of the bullying” (zorbalığın çoğu) aynı anlama gelmez.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p>When I turned on my laptop this morning, a (1) ---- appeared at the corner of the screen: “You have a new e-mail.” The e-mail had a file with it, but I didn’t open the (2) ---- because I didn’t know the sender. Later, my brother told me it probably had a virus in it. Now I always keep my (3) ---- program up to date, and I never open files from strangers.</p></div><p>Which of the following options fills in the blanks correctly?</p>",
+   "c": [
+    "(1) notification – (2) attachment – (3) antivirus",
+    "(1) notification – (2) browser – (3) antivirus",
+    "(1) password – (2) attachment – (3) search engine",
+    "(1) follower – (2) attachment – (3) antivirus"
+   ],
+   "a": "A",
+   "s": "<p>(1) Ekranın köşesinde “You have a new e-mail.” yazısı çıkıyorsa bu bir <b>notification</b> (bildirim)dir; “password” ya da “follower” ekranda beliren bir uyarı değildir.</p><p>(2) “The e-mail had a file with it” → e-postayla gelen dosya = <b>attachment</b> (ek). “browser” internet tarayıcısıdır, e-postayla gelmez.</p><p>(3) Virüslere karşı güncel tutulan program = <b>antivirus</b>; arama motoru (search engine) virüsü engellemez.</p><p>Her şıkta en az bir boşluk doğru görünecek şekilde hazırlandığından üç boşluğun da tutması gerekir.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>SportyKid</b>, a company that makes trainers for teenagers, is looking for an influencer for its new advert. The influencer must:</p><p>• share content about sports,<br>• have more than 50,000 followers,<br>• post at least three times a week,<br>• have followers who are mostly teenagers.</p></div><div class=\"fig\"><svg viewBox=\"0 0 540 258\" width=\"540\" role=\"img\" aria-label=\"Dört sosyal medya profili\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Sports Influencers</text>\n<rect x=\"10\" y=\"34\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#db2777\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"55\" font-size=\"12.5\" fill=\"#db2777\" font-weight=\"bold\">RunWithRüya</text>\n<text x=\"22\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Topic: Running and healthy snacks</text>\n<text x=\"22\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 48,500</text>\n<text x=\"22\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 4 times a week</text>\n<text x=\"22\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">Most followers are aged 13–17</text>\n<rect x=\"275\" y=\"34\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"55\" font-size=\"12.5\" fill=\"#16a34a\" font-weight=\"bold\">Kaan Kicks</text>\n<text x=\"287\" y=\"76\" font-size=\"11.5\" fill=\"#1e293b\">Topic: Football tricks</text>\n<text x=\"287\" y=\"92\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 91,000</text>\n<text x=\"287\" y=\"108\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 2 times a week</text>\n<text x=\"287\" y=\"124\" font-size=\"11.5\" fill=\"#1e293b\">Most followers are aged 13–17</text>\n<rect x=\"10\" y=\"146\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#ea580c\" stroke-width=\"1.5\"/>\n<text x=\"22\" y=\"167\" font-size=\"12.5\" fill=\"#ea580c\" font-weight=\"bold\">FitFam Selin</text>\n<text x=\"22\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Topic: Home workouts</text>\n<text x=\"22\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 63,000</text>\n<text x=\"22\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 5 times a week</text>\n<text x=\"22\" y=\"236\" font-size=\"11.5\" fill=\"#1e293b\">Most followers are aged 25–40</text>\n<rect x=\"275\" y=\"146\" width=\"255\" height=\"102\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n<text x=\"287\" y=\"167\" font-size=\"12.5\" fill=\"#2563eb\" font-weight=\"bold\">Jump with Mina</text>\n<text x=\"287\" y=\"188\" font-size=\"11.5\" fill=\"#1e293b\">Topic: Basketball and stretching</text>\n<text x=\"287\" y=\"204\" font-size=\"11.5\" fill=\"#1e293b\">Followers: 55,200</text>\n<text x=\"287\" y=\"220\" font-size=\"11.5\" fill=\"#1e293b\">Posts: 3 times a week</text>\n<text x=\"287\" y=\"236\" font-size=\"11.5\" fill=\"#1e293b\">Most followers are aged 13–17</text>\n</svg></div><p>Which influencer can the company work with?</p>",
+   "c": [
+    "RunWithRüya",
+    "Kaan Kicks",
+    "FitFam Selin",
+    "Jump with Mina"
+   ],
+   "a": "D",
+   "s": "<p>Dört koşulu her profile uygulayalım:</p><ul><li><b>RunWithRüya:</b> 48,500 takipçi; 50,000’in <b>altında</b> ✗ (diğer koşullar uygun, sayı okuma tuzağı).</li><li><b>Kaan Kicks:</b> en çok takipçiye sahip ama haftada 2 paylaşım &lt; 3 ✗.</li><li><b>FitFam Selin:</b> takipçileri 25–40 yaş arası yetişkinler; “mostly teenagers” koşulu bozulur ✗.</li><li><b>Jump with Mina:</b> spor ✓, 55,200 &gt; 50,000 ✓, haftada 3 paylaşım (“at least three” = 3 de olur) ✓, 13–17 yaş ✓.</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"dialog\"><div><b>Ms. Polat:</b> I think our school should have one online-only day every week. On that day, students can stay at home and join their lessons on their computers.</div><div><b>Aras:</b> What a great idea! We wouldn’t waste an hour on the school bus.</div><div><b>Nazlı:</b> I’m afraid I can’t agree with you. Some of us don’t have a fast Internet connection at home, and we would miss our friends.</div><div><b>Efe:</b> Once a month sounds fine, but every week is too much. Lessons like science need a real classroom for experiments.</div><div><b>Pelin:</b> Absolutely! We could also watch the recorded lessons again before exams.</div></div><p>Which of the following groups the students’ opinions about Ms. Polat’s idea correctly?</p>",
+   "c": [
+    "Agree: Aras, Pelin – Partly agree: Efe – Disagree: Nazlı",
+    "Agree: Aras, Pelin – Partly agree: Nazlı – Disagree: Efe",
+    "Agree: Aras, Efe, Pelin – Partly agree: – Disagree: Nazlı",
+    "Agree: Pelin – Partly agree: Aras, Efe – Disagree: Nazlı"
+   ],
+   "a": "A",
+   "s": "<p>Her öğrencinin görüşünü ifadelerden çıkaralım:</p><ul><li><b>Aras:</b> “What a great idea!” → katılıyor.</li><li><b>Nazlı:</b> “I’m afraid I can’t agree with you.” → katılmıyor (yavaş internet, arkadaşları özleme).</li><li><b>Efe:</b> Ayda bir uygun, her hafta fazla → fikrin bir kısmına katılıyor = <b>partly agree</b>. “Once a month sounds fine” cümlesine bakıp tamamen katıldığını sanmak tuzaktır.</li><li><b>Pelin:</b> “Absolutely!” → katılıyor.</li></ul><p>Aras otobüste vakit kaybını gerekçe gösteriyor; bu bir itiraz değil, destektir. Nazlı ise hiçbir şekilde desteklemiyor, kısmen katılmıyor.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 256\" width=\"540\" role=\"img\" aria-label=\"Kodlama kulübü e-postası\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"248\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#334155\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#334155\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">E-mail from Mr. Doğan: Online Coding Competition</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">Hi everyone,</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">The online coding competition is on 14 November. Each team must have three</text>\n<text x=\"26\" y=\"96\" font-size=\"11.5\" fill=\"#1e293b\">members, so please choose your teammates and write your team name on the club</text>\n<text x=\"26\" y=\"113\" font-size=\"11.5\" fill=\"#1e293b\">board.</text>\n<text x=\"26\" y=\"134\" font-size=\"11.5\" fill=\"#1e293b\">You must sign up on the competition website before 10 November, and you can</text>\n<text x=\"26\" y=\"151\" font-size=\"11.5\" fill=\"#1e293b\">only use your school e-mail address.</text>\n<text x=\"26\" y=\"172\" font-size=\"11.5\" fill=\"#1e293b\">I’ve attached a practice file to this e-mail. Please download it and finish</text>\n<text x=\"26\" y=\"189\" font-size=\"11.5\" fill=\"#1e293b\">the tasks by Friday.</text>\n<text x=\"26\" y=\"210\" font-size=\"11.5\" fill=\"#1e293b\">If you can’t log in to the website, write to me, not to the website. Good</text>\n<text x=\"26\" y=\"227\" font-size=\"11.5\" fill=\"#1e293b\">luck! – Mr. Doğan</text>\n</svg></div>\n<p>Which of the following can <b>NOT</b> be understood from the e-mail?</p>",
+   "c": [
+    "Students can’t register with their personal e-mail addresses.",
+    "Mr. Doğan will choose the members of each team.",
+    "Students should contact Mr. Doğan if they have problems with logging in.",
+    "The practice file is sent together with the e-mail."
+   ],
+   "a": "B",
+   "s": "<ul><li>“you can only use your school e-mail address” → kişisel e-posta ile kayıt olunamaz ✓ (eş anlamlı yeniden ifade: sign up = register).</li><li>“If you can’t log in…, write to me” → giriş sorununda Mr. Doğan’a yazılmalı ✓.</li><li>“I’ve attached a practice file” → dosya e-postayla birlikte gönderildi ✓.</li><li>“please choose your teammates” → takım arkadaşlarını <b>öğrenciler</b> seçiyor; öğretmenin seçeceği anlaşılamaz, hatta metinle çelişir ✗.</li></ul> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>The Yıldız family made a rule: <b>“Nobody should spend more than 10 hours a week online for fun.”</b> They recorded their time for one week.</p><table><caption>Time online for fun (games, videos, social media)</caption><tr><th>Family member</th><th>Each weekday (Mon–Fri)</th><th>Each weekend day (Sat–Sun)</th></tr><tr><td>Dad</td><td>1 h</td><td>2 h 30 min</td></tr><tr><td>Mum</td><td>30 min</td><td>3 h 30 min</td></tr><tr><td>Bulut</td><td>1 h 30 min</td><td>1 h 30 min</td></tr><tr><td>Gece</td><td>1 h</td><td>3 h</td></tr></table><p>According to the table, which of the following is <b>CORRECT</b>?</p>",
+   "c": [
+    "Only Gece breaks the rule because she spends the most time online at weekends.",
+    "Dad breaks the rule because he spends 10 hours a week online for fun.",
+    "Mum spends more time online for fun than Bulut in a week.",
+    "Two family members break the rule, and Gece spends the most time online for fun."
+   ],
+   "a": "D",
+   "s": "<p>Haftalık toplamlar (5 hafta içi + 2 hafta sonu günü):</p><ul><li>Dad: 5 × 1 h + 2 × 2 h 30 min = 5 + 5 = <b>10 h</b> → “more than 10” değil, kurala uyuyor.</li><li>Mum: 5 × 30 min + 2 × 3 h 30 min = 2.5 + 7 = <b>9.5 h</b> → uyuyor.</li><li>Bulut: 5 × 1 h 30 min + 2 × 1 h 30 min = 7.5 + 3 = <b>10.5 h</b> → kuralı bozuyor.</li><li>Gece: 5 × 1 h + 2 × 3 h = 5 + 6 = <b>11 h</b> → kuralı bozuyor, en fazla.</li></ul><p>Çeldiriciler: “Only Gece” Bulut’un hafta içi süresini 5 ile çarpmayı unutanın cevabıdır; Dad şıkkı “more than 10” ile “10”u karıştırır; Mum şıkkı yalnızca hafta sonu sütununa bakanı yakalar (3.5 h &gt; 1.5 h ama haftalık 9.5 &lt; 10.5).</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 298\" width=\"540\" role=\"img\" aria-label=\"Grup sohbeti\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"290\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"24\" font-size=\"12\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">Class 8-B Friends</text>\n<rect x=\"18\" y=\"44\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Melike:</tspan> Guys, someone has made a fake account with my name and</text>\n<text x=\"28\" y=\"78\" font-size=\"11.5\" fill=\"#1e293b\">photo! He’s asking people for money.</text>\n<rect x=\"92\" y=\"96\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"114\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Baran:</tspan> (1) ----</text>\n<rect x=\"18\" y=\"132\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"150\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Melike:</tspan> Not yet. I don’t know how to do it.</text>\n<rect x=\"92\" y=\"168\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"186\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Baran:</tspan> It’s easy. Go to the profile, tap the three dots and choose</text>\n<text x=\"102\" y=\"202\" font-size=\"11.5\" fill=\"#1e293b\">“Report”. The website usually closes fake accounts quickly.</text>\n<rect x=\"18\" y=\"220\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"238\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Melike:</tspan> Thanks! I’ve just done it. (2) ----</text>\n<rect x=\"92\" y=\"256\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"274\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Baran:</tspan> Good idea. Then nobody will send money to that account.</text>\n</svg></div>\n<p>Which of the following best completes the conversation?</p>",
+   "c": [
+    "(1) That’s terrible! Have you told your parents about it? – (2) I’ll also post a message to tell my followers that it isn’t me.",
+    "(1) That’s terrible! Have you reported it to the website? – (2) I’ll also post a message to tell my followers that it isn’t me.",
+    "(1) That’s terrible! Have you reported it to the website? – (2) I’ll also send some money to that account to see who it is.",
+    "(1) Your new profile photo looks great! – (2) I’ll also delete all my photos from my computer."
+   ],
+   "a": "B",
+   "s": "<p>(1): Melike “Not yet. I don’t know how to <b>do it</b>.” diyor; Baran da hemen şikâyet etmenin (Report) adımlarını anlatıyor. Demek ki soru “Siteye şikâyet ettin mi?” olmalı. “Have you told your parents?” sorusu “nasıl yapacağımı bilmiyorum” cevabına ve Baran’ın talimatlarına uymaz.</p><p>(2): Baran “Böylece kimse o hesaba para göndermez.” diyor → Melike takipçilerini uyarmalı: “it isn’t me”. O hesaba para göndermek dolandırıcılığa ortak olmaktır; bilgisayardaki fotoğrafları silmek sahte hesabı ve parayı etkilemez.</p><p>İki boşluğun da tutması gerektiği için yalnızca bir yarısı doğru olan şıklar elenir.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>A Short History of the Internet</b></p><p>The Internet didn’t appear overnight. In 1969, scientists in the USA connected computers at two universities with a network called ARPANET. They tried to send the word “LOGIN”, but the system crashed after the first two letters, so the first message was just “LO”. Two years later, in 1971, Ray Tomlinson sent the first e-mail, and he chose the @ symbol to separate the user’s name from the computer’s name. The World Wide Web came much later. A British scientist, Tim Berners-Lee, came up with the idea in 1989, and the first website went online in 1991. Turkey connected to the Internet in 1993, at Middle East Technical University in Ankara.</p></div><p>Which of the following is <b>FALSE</b> according to the text?</p>",
+   "c": [
+    "The first e-mail was sent before the idea of the World Wide Web came up.",
+    "The first message on ARPANET wasn’t complete.",
+    "ARPANET and the idea of the World Wide Web appeared in the same decade.",
+    "Turkey connected to the Internet two years after the first website went online."
+   ],
+   "a": "C",
+   "s": "<ul><li>İlk e-posta 1971, Web fikri 1989 → önce ✓.</li><li>“LOGIN” yerine yalnızca “LO” gidebildi → mesaj eksik ✓.</li><li>İlk web sitesi 1991, Türkiye 1993 → iki yıl sonra ✓.</li><li>ARPANET 1969’da (1960’lar), Web fikri 1989’da (1980’ler) ortaya çıktı → aynı on yılda değiller ✗. Metindeki “The World Wide Web came much later” cümlesi de bunu gösterir.</li></ul><p>Tuzak: Öğrenci internet (ARPANET) ile World Wide Web’i aynı şey sanır.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p>Until last year, the small school in Yukarıköy, a village high in the mountains, didn’t have an Internet connection. Students had to walk to the next town to do research for their projects. Then a satellite connection was set up in the school.</p><p>Now, the twelve students in the village have online English lessons together with a school in Germany every Tuesday. Last month, they made a video about their village traditions and shared it with their German friends, who sent back a video about their own city. In the evenings, older villagers also come to the school and video call their children and grandchildren living in big cities.</p></div><p>Which of the following is the best title for the text?</p>",
+   "c": [
+    "Learning German Online in a Village School",
+    "How the Internet Brought a Village Closer to the World",
+    "A School Trip from Yukarıköy to Germany",
+    "Why Older People in Villages Don’t Use the Internet"
+   ],
+   "a": "B",
+   "s": "<p>Metin, uydu bağlantısıyla köy okulunun hayatının nasıl değiştiğini anlatıyor: öğrenciler Almanya’daki bir okulla ders yapıyor, video paylaşıyor; yaşlılar şehirdeki yakınlarıyla görüntülü konuşuyor. Ana fikir: İnternet köyü dünyaya yaklaştırdı.</p><p>Çeldiriciler: Öğrenciler <b>İngilizce</b> öğreniyor, Almanca değil (Germany kelimesi tuzaktır). Almanya’ya bir gezi yapılmadı, yalnızca videolar paylaşıldı. Yaşlı köylüler interneti kullanıyor (video call), yani son başlık metinle çelişir.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Two-step verification makes your account safer: after your password, you also need a code sent to your phone. Arda’s sister explains how to turn it on.</p><div class=\"box\"><p>I. Type the six-digit code that you receive on your phone.<br>II. Open “Settings” and choose “Security”.<br>III. Turn on “Two-step verification”.<br>IV. Enter your phone number so that the app can send you a code.<br>V. Log in to your account with your username and password.</p></div><p>Which of the following is the correct order of the steps?</p>",
+   "c": [
+    "V – II – III – IV – I",
+    "II – III – V – IV – I",
+    "V – II – III – I – IV",
+    "V – IV – I – II – III"
+   ],
+   "a": "A",
+   "s": "<p>Mantık zinciri: Ayarlara ulaşmak için önce hesaba <b>giriş</b> yapılır (V). Sonra Settings → Security açılır (II), özellik açılır (III). Kodun gönderileceği telefon numarası girilir (IV) ve telefona gelen kod yazılır (I). Sıra: V – II – III – IV – I.</p><p>Çeldiriciler: Giriş yapmadan ayarları açmak mümkün değildir (II ile başlayan sıra). Numara girilmeden kod gelemez, yani I, IV’ten önce olamaz. Son şıkta ise özellik açılmadan kod gönderiliyor.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>24 students in a class answered a survey.</p><table><caption>How often do you do these online? (24 students)</caption><tr><th>Activity</th><th>Never</th><th>Sometimes</th><th>Often</th></tr><tr><td>Watch videos</td><td>0</td><td>6</td><td>18</td></tr><tr><td>Post photos</td><td>10</td><td>10</td><td>4</td></tr><tr><td>Read the news</td><td>14</td><td>8</td><td>2</td></tr><tr><td>Play online games</td><td>6</td><td>6</td><td>12</td></tr></table><p>According to the table, which of the following is <b>NOT</b> correct?</p>",
+   "c": [
+    "All the students watch videos online at least sometimes.",
+    "Half of the students often play online games.",
+    "More than half of the students never read the news online.",
+    "Fewer students never post photos than never play online games."
+   ],
+   "a": "D",
+   "s": "<ul><li>Watch videos – Never: 0 → herkes en az “sometimes” izliyor ✓.</li><li>Play online games – Often: 12 = 24’ün yarısı ✓.</li><li>Read the news – Never: 14 &gt; 12 → yarıdan fazla ✓.</li><li>Never post photos: 10, never play games: 6. 10, 6’dan <b>fazladır</b>; “fewer” ifadesi yanlış ✗.</li></ul><p>Tuzak: “Fewer … than” karşılaştırmasında satırları karıştırmak ya da “Often” sütununa bakmak (4 &lt; 12).</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Here is a product page on a shopping website.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 196\" width=\"540\" role=\"img\" aria-label=\"Yıldız dağılımı\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">WiFi Booster Plus – 200 ratings</text>\n<text x=\"160\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">5 stars</text>\n<rect x=\"170\" y=\"40\" width=\"295.4\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"471.4\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">120</text>\n<text x=\"160\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">4 stars</text>\n<rect x=\"170\" y=\"70\" width=\"123.1\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"299.1\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">50</text>\n<text x=\"160\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">3 stars</text>\n<rect x=\"170\" y=\"100\" width=\"24.6\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"200.6\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">10</text>\n<text x=\"160\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">2 stars</text>\n<rect x=\"170\" y=\"130\" width=\"19.7\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"195.7\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">8</text>\n<text x=\"160\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">1 star</text>\n<rect x=\"170\" y=\"160\" width=\"29.5\" height=\"20\" rx=\"3\" fill=\"#f59e0b\"/>\n<text x=\"205.5\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">12</text>\n</svg></div><div class=\"box\"><p><b>Gamze (5 stars):</b> So easy to set up. It took only five minutes, and now I have Wi-Fi in my bedroom!</p><p><b>Okan (4 stars):</b> It works well, but its blue light is a bit too bright at night.</p><p><b>Sevgi (1 star):</b> It stopped working after two weeks. I wrote to customer service three times, but nobody answered.</p></div><p>Which of the following can be inferred from the page?</p>",
+   "c": [
+    "Most buyers complained about the product’s bright light.",
+    "More than three quarters of the buyers gave the product four or five stars.",
+    "One in ten buyers gave the product only one star.",
+    "Every customer who had a problem got help from customer service."
+   ],
+   "a": "B",
+   "s": "<ul><li>4 ve 5 yıldız: 120 + 50 = 170; 170/200 = %85 &gt; %75 ✓.</li><li>Parlak ışıktan yalnızca Okan söz ediyor; “most buyers” çıkarılamaz ✗.</li><li>1 yıldız: 12/200 = %6; onda bir (%10 = 20 kişi) değil ✗.</li><li>Sevgi’ye müşteri hizmetleri hiç cevap vermemiş → ifade metinle çelişir ✗.</li></ul><p>Tuzak: “one in ten” kesrini sayıya çevirmeden onaylamak ve tek bir yorumu tüm alıcılara genellemek.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>Grandpa Rıza:</b> Your grandma and I share one tablet. We want to see all five of our grandchildren at the same time, and they all live in different cities, so each of them uses his or her own phone. We don’t have an e-mail address, and we don’t want to pay for an app. Big buttons would be nice, but they aren’t necessary.</p></div><table><tr><th>App</th><th>Max. devices in one call</th><th>Price</th><th>To sign up, you need</th><th>Big buttons</th></tr><tr><td>TalkEasy</td><td>4</td><td>Free</td><td>Phone number</td><td>Yes</td></tr><tr><td>FaceMeet</td><td>8</td><td>Free</td><td>E-mail address</td><td>Yes</td></tr><tr><td>CallHome</td><td>10</td><td>Free</td><td>Phone number</td><td>No</td></tr><tr><td>GroupCam</td><td>6</td><td>50 TL a month</td><td>Phone number</td><td>Yes</td></tr></table><p>I. TalkEasy isn’t suitable because it doesn’t allow enough devices in one call.<br>II. FaceMeet would be suitable if Grandpa Rıza had an e-mail address.<br>III. CallHome is the only free app that doesn’t need an e-mail address.</p><p>Which of the statements above is/are correct?</p>",
+   "c": [
+    "Only I",
+    "II and III",
+    "I and II",
+    "I, II and III"
+   ],
+   "a": "C",
+   "s": "<p>Önce cihaz sayısı: dedeyle babaanne 1 tablet + 5 torun 5 telefon = <b>6 cihaz</b>.</p><p><b>I:</b> TalkEasy en fazla 4 cihaz → yetersiz ✓.</p><p><b>II:</b> FaceMeet 8 ≥ 6 ✓, ücretsiz ✓; tek sorunu e-posta istemesi → e-postaları olsaydı uygun olurdu ✓.</p><p><b>III:</b> TalkEasy de ücretsiz ve telefon numarasıyla kayıt oluyor; yani CallHome “tek” değil ✗.</p><p>Tuzaklar: Kişi sayısını 7 (2 kişi + 5 torun) sayıp tableti tek cihaz saymamak; III’te “uygun olan tek uygulama” ile “ücretsiz ve e-posta istemeyen tek uygulama” ifadelerini karıştırmak. Büyük düğme şartı “not necessary” olduğu için CallHome’u elemez.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p><b>Oya:</b> “Shopping online is much better than shopping in stores.”</p><p>Which of the following replies <b>partly agrees</b> with Oya?</p>",
+   "c": [
+    "I see what you mean about saving time, but I still prefer to try clothes on before I buy them.",
+    "You might be right. Online shops are often cheaper, and I can shop at midnight in my pyjamas.",
+    "I totally disagree. You can never be sure that the photos on websites are real.",
+    "That’s exactly what I think. I haven’t been to a shopping centre for months."
+   ],
+   "a": "A",
+   "s": "<ul><li>“I see what you mean about saving time, <b>but</b> I still prefer to try clothes on…” → zaman kazandırdığını kabul ediyor ama mağazayı tercih ettiği bir durum belirtiyor → <b>kısmen</b> katılıyor ✓.</li><li>“You might be right” ihtiyatlı bir başlangıç ama ardından yalnızca online alışverişin avantajları sayılıyor; karşı görüş yok → tamamen katılıyor (en güçlü çeldirici).</li><li>“I totally disagree” → katılmıyor.</li><li>“That’s exactly what I think” → tamamen katılıyor.</li></ul><p>Kısmi katılımı belirleyen şey, bir noktayı kabul edip “but/however” ile başka bir noktada ayrılmaktır.</p> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p><b>Ask Dr. Net</b></p><p><b>Kemal (14):</b> I spend a lot of time on my laptop for school and games. In the evenings, my eyes feel tired and dry, and sometimes I get a headache. What should I do?</p><p><b>Dr. Net:</b> Dear Kemal, your eyes need a rest. Try the 20-20-20 rule: every 20 minutes, look at something about six metres away for 20 seconds. Keep your screen at arm’s length, a little below your eyes. In the evening, turn on night mode so the screen is softer, and stop using screens an hour before bed. And don’t forget to blink! We blink less when we look at screens, so our eyes get dry.</p></div><p>Which of the following is <b>NOT</b> one of Dr. Net’s suggestions?</p>",
+   "c": [
+    "Take short breaks to look at things that are far away.",
+    "Make your screen brighter at night so that you can see better.",
+    "Don’t sit too close to your screen.",
+    "Avoid using your devices just before you go to sleep."
+   ],
+   "a": "B",
+   "s": "<p>Öneriler eş anlamlı ifadelerle şıklara yerleştirilmiş:</p><ul><li>“every 20 minutes, look at something about six metres away” = uzaktaki şeylere bakmak için kısa molalar ✓.</li><li>“Keep your screen at arm’s length” = ekrana çok yakın oturma ✓.</li><li>“stop using screens an hour before bed” = uyumadan hemen önce cihaz kullanma ✓.</li><li>Dr. Net akşam “night mode” ile ekranı <b>yumuşatmayı</b> (daha az parlak) öneriyor; parlaklığı artırmak bunun tersidir ✗.</li></ul> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Doğa spends exactly 4 hours online every day. The chart shows how he uses this time.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 196\" width=\"540\" role=\"img\" aria-label=\"Doğa’nın internet süresinin yüzdeleri\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">How Doğa spends his 4 hours online every day</text>\n<text x=\"160\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Watching videos</text>\n<rect x=\"170\" y=\"40\" width=\"280.0\" height=\"20\" rx=\"3\" fill=\"#0ea5e9\"/>\n<text x=\"456.0\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">35%</text>\n<text x=\"160\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Messaging friends</text>\n<rect x=\"170\" y=\"70\" width=\"200.0\" height=\"20\" rx=\"3\" fill=\"#0ea5e9\"/>\n<text x=\"376.0\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">25%</text>\n<text x=\"160\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Homework</text>\n<rect x=\"170\" y=\"100\" width=\"160.0\" height=\"20\" rx=\"3\" fill=\"#0ea5e9\"/>\n<text x=\"336.0\" y=\"115\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">20%</text>\n<text x=\"160\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Online games</text>\n<rect x=\"170\" y=\"130\" width=\"120.0\" height=\"20\" rx=\"3\" fill=\"#0ea5e9\"/>\n<text x=\"296.0\" y=\"145\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">15%</text>\n<text x=\"160\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Reading the news</text>\n<rect x=\"170\" y=\"160\" width=\"40.0\" height=\"20\" rx=\"3\" fill=\"#0ea5e9\"/>\n<text x=\"216.0\" y=\"175\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">5%</text>\n</svg></div>\n<p>According to the chart, which of the following is <b>FALSE</b>?</p>",
+   "c": [
+    "Doğa spends an hour a day messaging his friends.",
+    "Doğa watches videos for 84 minutes a day.",
+    "Doğa spends more time on homework than on online games and the news together.",
+    "Doğa spends three times as much time on online games as on reading the news."
+   ],
+   "a": "C",
+   "s": "<p>4 saat = 240 dakika. Yüzdeleri dakikaya çevirelim: videos %35 = 84 dk, messaging %25 = 60 dk, homework %20 = 48 dk, games %15 = 36 dk, news %5 = 12 dk.</p><ul><li>Mesajlaşma 60 dk = 1 saat ✓.</li><li>Video 84 dk ✓.</li><li>Oyun 36 = 3 × 12 ✓.</li><li>Oyun + haber = 36 + 12 = 48 dk = ödev süresi. Ödeve “daha fazla” değil, <b>aynı</b> süreyi ayırıyor ✗.</li></ul><p>Tuzak: %20 ile %15’i karşılaştırıp haberi eklemeyi unutmak ya da “as much as” (eşit) ile “more than” farkını gözden kaçırmak.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"fig\"><svg viewBox=\"0 0 540 192\" width=\"540\" role=\"img\" aria-label=\"SCHOOL E-SPORTS CUP – Team Rules\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"184\" rx=\"12\" fill=\"#eef2ff\" stroke=\"#4f46e5\" stroke-width=\"2\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"34\" rx=\"10\" fill=\"#4f46e5\"/>\n<text x=\"270\" y=\"27\" font-size=\"13.5\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">SCHOOL E-SPORTS CUP – Team Rules</text>\n<text x=\"26\" y=\"58\" font-size=\"11.5\" fill=\"#1e293b\">• A team must have exactly three players.</text>\n<text x=\"26\" y=\"79\" font-size=\"11.5\" fill=\"#1e293b\">• All players must be 12, 13 or 14 years old.</text>\n<text x=\"26\" y=\"100\" font-size=\"11.5\" fill=\"#1e293b\">• All players must be from the same school.</text>\n<text x=\"26\" y=\"121\" font-size=\"11.5\" fill=\"#1e293b\">• Every player needs a permission form signed by a parent.</text>\n<text x=\"26\" y=\"142\" font-size=\"11.5\" fill=\"#1e293b\">• The team name can have up to 12 letters. Numbers and symbols aren’t allowed.</text>\n<text x=\"26\" y=\"163\" font-size=\"11.5\" fill=\"#1e293b\">• Teams must register before 15 November.</text>\n</svg></div>\n<table><tr><th>Team name</th><th>Players’ ages</th><th>Same school</th><th>Permission forms</th><th>Registration date</th></tr><tr><td>StarRiders</td><td>12, 14, 13</td><td>Yes</td><td>All three</td><td>12 November</td></tr><tr><td>PixelWolves</td><td>13, 14, 12</td><td>Yes</td><td>All three</td><td>16 November</td></tr><tr><td>Thunder8</td><td>12, 13, 13</td><td>Yes</td><td>All three</td><td>10 November</td></tr><tr><td>NightOwls</td><td>13, 14, 15</td><td>Yes</td><td>All three</td><td>11 November</td></tr></table><p>Which team can take part in the cup?</p>",
+   "c": [
+    "StarRiders",
+    "PixelWolves",
+    "Thunder8",
+    "NightOwls"
+   ],
+   "a": "A",
+   "s": "<p>Her takım kuralların biri hariç hepsine uyuyor; o tek kuralı bulmak gerekir:</p><ul><li><b>PixelWolves:</b> 16 November → kayıt 15 Kasım’dan <b>önce</b> olmalı ✗.</li><li><b>Thunder8:</b> 8 harften kısa ama içinde <b>rakam</b> (8) var ✗.</li><li><b>NightOwls:</b> Bir oyuncu 15 yaşında; 12–14 aralığı dışında ✗.</li><li><b>StarRiders:</b> 3 oyuncu, 12-14-13 yaş, aynı okul, tüm izin formları, 10 harf, 12 Kasım kaydı ✓.</li></ul> Cevap <b>A</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<div class=\"box\"><p>Selim took some photos on the school trip with his phone. In the evening, he put them on the class’s online folder. The next day, Ms. Ay saved the photos from the folder to her laptop and printed them for the classroom wall. Later, Selim’s friend Tan put his favourite photo on his own blog.</p></div><p>I. Selim uploaded the photos to the online folder.<br>II. Ms. Ay downloaded the photos.<br>III. Tan downloaded his favourite photo to his blog.</p><p>Which of the statements above is/are correct?</p>",
+   "c": [
+    "Only I",
+    "Only II",
+    "I and II",
+    "I, II and III"
+   ],
+   "a": "C",
+   "s": "<p>Yön kuralı: cihazdan internete = <b>upload</b>; internetten cihaza = <b>download</b>.</p><p><b>I:</b> Selim telefonundaki fotoğrafları çevrim içi klasöre koydu → upload ✓.</p><p><b>II:</b> Ms. Ay klasördeki fotoğrafları dizüstü bilgisayarına kaydetti → download ✓.</p><p><b>III:</b> Tan fotoğrafı kendi blog’una koydu → bu bir yükleme/paylaşma (upload/post) işlemidir; blog bir internet sayfası olduğu için “download to his blog” yanlıştır ✗.</p><p>Tuzak: Tan’ın önce fotoğrafı indirmiş olabileceğini düşünmek; ifade “downloaded … <b>to his blog</b>” diyor ve bu yön yanlıştır.</p> Cevap <b>C</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>60 students answered the question in Graph 1. Then the students who have at least one social media account answered the question in Graph 2.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 250\" width=\"540\" role=\"img\" aria-label=\"Graph 1: How many social media accounts do you have?\">\n<text x=\"270\" y=\"20\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Graph 1: How many social media accounts do you have?</text>\n<rect x=\"120\" y=\"30\" width=\"12\" height=\"12\" fill=\"#8b5cf6\"/>\n<text x=\"136\" y=\"40\" font-size=\"11.5\" fill=\"#1e293b\">Students</text>\n<line x1=\"60\" y1=\"200.0\" x2=\"520\" y2=\"200.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"204.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">0</text>\n<line x1=\"60\" y1=\"150.0\" x2=\"520\" y2=\"150.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"154.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">10</text>\n<line x1=\"60\" y1=\"100.0\" x2=\"520\" y2=\"100.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"104.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">20</text>\n<line x1=\"60\" y1=\"50.0\" x2=\"520\" y2=\"50.0\" stroke=\"#e2e8f0\"/>\n<text x=\"54\" y=\"54.0\" font-size=\"11\" fill=\"#475569\" text-anchor=\"end\">30</text>\n<rect x=\"100.5\" y=\"170.0\" width=\"32.0\" height=\"30.0\" fill=\"#8b5cf6\"/>\n<text x=\"116.5\" y=\"166.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">6</text>\n<text x=\"117.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">None</text>\n<rect x=\"215.5\" y=\"110.0\" width=\"32.0\" height=\"90.0\" fill=\"#8b5cf6\"/>\n<text x=\"231.5\" y=\"106.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">18</text>\n<text x=\"232.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">One</text>\n<rect x=\"330.5\" y=\"80.0\" width=\"32.0\" height=\"120.0\" fill=\"#8b5cf6\"/>\n<text x=\"346.5\" y=\"76.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">24</text>\n<text x=\"347.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Two</text>\n<rect x=\"445.5\" y=\"140.0\" width=\"32.0\" height=\"60.0\" fill=\"#8b5cf6\"/>\n<text x=\"461.5\" y=\"136.0\" font-size=\"11\" fill=\"#1e293b\" font-weight=\"bold\" text-anchor=\"middle\">12</text>\n<text x=\"462.5\" y=\"216\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">Three or</text>\n<text x=\"462.5\" y=\"230\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"middle\">more</text>\n<line x1=\"60\" y1=\"200\" x2=\"520\" y2=\"200\" stroke=\"#334155\"/>\n<text x=\"14\" y=\"38\" font-size=\"11\" fill=\"#475569\">students</text>\n</svg></div>\n<div class=\"fig\"><svg viewBox=\"0 0 540 106\" width=\"540\" role=\"img\" aria-label=\"Graph 2: Is your profile private? (students with an account)\">\n<text x=\"270\" y=\"22\" font-size=\"13\" fill=\"#1e3a8a\" font-weight=\"bold\" text-anchor=\"middle\">Graph 2: Is your profile private? (students with an account)</text>\n<text x=\"160\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">Yes, it is private</text>\n<rect x=\"170\" y=\"40\" width=\"288.0\" height=\"20\" rx=\"3\" fill=\"#10b981\"/>\n<text x=\"464.0\" y=\"55\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">36</text>\n<text x=\"160\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" text-anchor=\"end\">No, it is public</text>\n<rect x=\"170\" y=\"70\" width=\"144.0\" height=\"20\" rx=\"3\" fill=\"#10b981\"/>\n<text x=\"320.0\" y=\"85\" font-size=\"11.5\" fill=\"#1e293b\" font-weight=\"bold\">18</text>\n</svg></div>\n<p>Which of the following can <b>NOT</b> be inferred from the graphs?</p>",
+   "c": [
+    "Nine out of ten students have at least one social media account.",
+    "All the students who have three or more accounts keep their profiles private.",
+    "Two thirds of the students with an account have a private profile.",
+    "More than half of the students have two or more accounts."
+   ],
+   "a": "B",
+   "s": "<ul><li>En az bir hesabı olan: 60 − 6 = 54; 54/60 = 9/10 ✓.</li><li>Gizli profil: 36/54 = 2/3 ✓ (Grafik 2’nin toplamı 54, yani 60 değil; payda tuzağı).</li><li>İki ya da daha fazla hesap: 24 + 12 = 36; 36/60 = %60 &gt; yarı ✓.</li><li>Grafik 2’de profil durumu hesap sayısına göre ayrılmamış; 3+ hesabı olan 12 öğrencinin profillerinin gizli olup olmadığı bilinemez ✗.</li></ul><p>Tuzak: 36 sayısının iki grafikte de görünmesi (2+ hesap = 36, gizli profil = 36), öğrencinin bunları aynı kişiler sanmasına yol açar.</p> Cevap <b>B</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>I. I ---- a lot of science accounts because I’m interested in space.<br>II. Please ---- the instructions carefully when you set up your new modem.<br>III. My account is private, so only my close friends can ---- me.</p><p>Which word can complete <b>all</b> the sentences above?</p>",
+   "c": [
+    "like",
+    "share",
+    "post",
+    "follow"
+   ],
+   "a": "D",
+   "s": "<ul><li><b>follow</b>: I. hesapları takip etmek ✓; II. talimatlara uymak (follow the instructions) ✓; III. gizli hesapta yalnızca yakın arkadaşlar beni takip edebilir ✓.</li><li><b>like</b>: I’e uyabilir ama “like the instructions carefully” anlamsızdır ✗.</li><li><b>share</b>: “share me” (III) ve “share the instructions carefully when you set up” bağlama uymaz ✗.</li><li><b>post</b>: “post a lot of science accounts” ve “post me” yanlıştır ✗.</li></ul><p>“follow” kelimesinin sosyal medya dışındaki “uymak” anlamını bilmek gerekir.</p> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<p>Toprak’s family is chatting in their group.</p>\n<div class=\"fig\"><svg viewBox=\"0 0 540 294\" width=\"540\" role=\"img\" aria-label=\"Aile grup sohbeti\">\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"286\" rx=\"12\" fill=\"#f1f5f9\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n<rect x=\"4\" y=\"4\" width=\"532\" height=\"30\" rx=\"10\" fill=\"#0f766e\"/>\n<text x=\"270\" y=\"24\" font-size=\"12\" fill=\"#ffffff\" font-weight=\"bold\" text-anchor=\"middle\">Family</text>\n<rect x=\"18\" y=\"44\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"62\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Mum:</tspan> I’ll be home late tonight. The Wi-Fi password is on the</text>\n<text x=\"28\" y=\"78\" font-size=\"11.5\" fill=\"#1e293b\">fridge if Aunt Nesrin needs it.</text>\n<text x=\"442\" y=\"84\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">18:05</text>\n<rect x=\"18\" y=\"96\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"114\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Dad:</tspan> I’m stuck in traffic. I’ll be home around 8. Has anyone</text>\n<text x=\"28\" y=\"130\" font-size=\"11.5\" fill=\"#1e293b\">ordered dinner?</text>\n<text x=\"442\" y=\"136\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">18:20</text>\n<rect x=\"92\" y=\"148\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"166\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Toprak:</tspan> Not yet. Aunt Nesrin is here and she wants pizza. I’ll</text>\n<text x=\"102\" y=\"182\" font-size=\"11.5\" fill=\"#1e293b\">order online when you’re home, so you can pay with your card.</text>\n<text x=\"516\" y=\"188\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">18:22</text>\n<rect x=\"18\" y=\"200\" width=\"430\" height=\"44\" rx=\"8\" fill=\"#ffffff\" stroke=\"#cbd5e1\"/>\n<text x=\"28\" y=\"218\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#2563eb\">Dad:</tspan> No need to wait. I’ve just sent you the money. Please order</text>\n<text x=\"28\" y=\"234\" font-size=\"11.5\" fill=\"#1e293b\">now.</text>\n<text x=\"442\" y=\"240\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">18:25</text>\n<rect x=\"92\" y=\"252\" width=\"430\" height=\"28\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#cbd5e1\"/>\n<text x=\"102\" y=\"270\" font-size=\"11.5\" fill=\"#1e293b\"><tspan font-weight=\"bold\" fill=\"#15803d\">Toprak:</tspan> Done! The app says it’ll arrive in 40 minutes.</text>\n<text x=\"516\" y=\"276\" font-size=\"11\" fill=\"#64748b\" text-anchor=\"end\">18:40</text>\n</svg></div>\n<p>According to the messages, which of the following is <b>TRUE</b>?</p>",
+   "c": [
+    "Toprak paid for the pizza with his dad’s card.",
+    "Aunt Nesrin couldn’t connect to the Wi-Fi.",
+    "Mum will get home before Dad.",
+    "The pizza should arrive before Dad gets home."
+   ],
+   "a": "D",
+   "s": "<ul><li>Sipariş 18:40’ta verildi, 40 dakika sürecek → yaklaşık 19:20. Babası “around 8” (20:00) gelecek → pizza ondan önce gelmeli ✓.</li><li>Babası kartla ödemek yerine Toprak’a para gönderdi (“I’ve just sent you the money”) ✗ (Toprak’ın ilk planı tuzaktır).</li><li>Annesi şifrenin yerini söylüyor; Nesrin Teyze’nin bağlanamadığına dair bilgi yok ✗.</li><li>Annesi yalnızca geç geleceğini söylüyor; saat vermiyor, babasından önce geleceği çıkarılamaz ✗.</li></ul> Cevap <b>D</b>.</p>"
+  },
+  {
+   "lv": "zor",
+   "q": "<table><caption>Where do you mostly get your news? (400 teens)</caption><tr><th>Main news source</th><th>Number of teens</th></tr><tr><td>Social media</td><td>180</td></tr><tr><td>Video sites</td><td>100</td></tr><tr><td>TV</td><td>60</td></tr><tr><td>News websites</td><td>40</td></tr><tr><td>Newspapers</td><td>20</td></tr></table><div class=\"box\"><p>In the same survey, only <b>one in four</b> of the teens who mostly get their news from social media said they check where a story comes from before they believe it. Experts warn that news on social media is often shared before anyone checks it.</p></div><p>According to the table and the text, which of the following is <b>FALSE</b>?</p>",
+   "c": [
+    "More teens get their news from video sites than from TV and newspapers together.",
+    "The social media users who check the source are more than the teens who mostly watch the news on TV.",
+    "135 of the teens who use social media for news don’t check the source of a story.",
+    "Twice as many teens use news websites as newspapers."
+   ],
+   "a": "B",
+   "s": "<p>Metindeki “one in four” bilgisini tabloya uygulayalım: sosyal medyadan haber alan 180 gencin 1/4’ü = <b>45</b> kişi kaynağı kontrol ediyor, 180 − 45 = 135 kişi etmiyor.</p><ul><li>Video siteleri 100 &gt; TV + gazete = 60 + 20 = 80 ✓.</li><li>135 kişi kontrol etmiyor ✓.</li><li>Haber siteleri 40 = 2 × 20 ✓.</li><li>Kontrol eden sosyal medya kullanıcıları 45, TV izleyenler 60 → 45, 60’tan <b>az</b> ✗.</li></ul><p>Tuzak: 180’i doğrudan TV ile karşılaştırmak ya da “one in four” kesrini uygulamadan karar vermek.</p> Cevap <b>B</b>.</p>"
+  }
+ ]
 });
