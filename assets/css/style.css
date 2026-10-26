@@ -899,3 +899,5 @@ body.dn-solving .xpbar,body.dn-solving .foot,body.dn-solving .totop{display:none
 .vs-sw i{position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .2s}
 .vs-all.on .vs-sw{background:var(--c)}.vs-all.on .vs-sw i{transform:translateX(14px)}
 .vs-sb.off .vs-step{opacity:.4}
+.vs-tps[hidden]{display:none}
+.vs-sb-h .vs-sb-n{flex:1;min-width:0}.vs-sb-h .vs-step{flex:none}
