@@ -12,7 +12,7 @@ LGS.add({
     "Allah’a ve ahiret gününe iman eden Müslümanlar, hayatlarında Peygamberimizin ahlakını örnek almalıdır."
    ],
    "a": "C",
-   "s": "<p>Ayet, Allah’a ve ahiret gününe kavuşmayı uman <b>herkes</b> için Peygamberimizde güzel bir örnek olduğunu söyler; bu örneklik belli bir dönem ya da şehirle sınırlı değildir. Bu yüzden C söylenemez. A ve D ayetin doğrudan anlamıdır; B ise sünnetin Kur’an’daki ibadetlerin uygulanışını açıklama görevini anlatır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ahzâb 21: Peygamberimizde «Allah’a ve ahiret gününe kavuşmayı umanlar» için «güzel bir örnek (üsve-i hasene)» vardır.</li> <li>Sünnet: Peygamberimizin sözleri, davranışları ve onayları; İslam’ın ikinci temel kaynağı.</li></ul><b>İstenen</b><p>Bilgilere göre <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Kavramı belirle</b> Soru <b>üsve-i hasene</b> (güzel örnek) ve <b>sünnet</b> kavramlarını soruyor.</li> <li><b>İpucu ifadeyi bul</b> Ayet örnekliği belli bir topluluğa değil, «Allah’a ve ahiret gününe kavuşmayı umanlar»ın tamamına bağlıyor. Bu yüzden örneklik zamanla ya da yerle sınırlı değildir; kıyamete kadar bütün müminleri kapsar.</li> <li><b>Sünnetin görevini hatırla</b> Kur’an namaz, oruç, zekât, hac gibi ibadetleri emreder; nasıl yapılacaklarını ise Peygamberimiz uygulayarak göstermiştir. Sünnet, Kur’an’ı açıklar ve yaşanır hâle getirir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kur’an ilkelerini yaşayarak gösterdiği için «güzel örnek»tir → söylenebilir.</td></tr><tr><td>B</td><td>İbadetlerin uygulanışı sünnetle öğrenilir → söylenebilir.</td></tr><tr class=\"ok\"><td>C</td><td>«yalnızca… Mekke ve Medine» ifadesi ayetteki genel örneklikle çelişir → söylenemez.</td></tr><tr><td>D</td><td>Ayetin doğrudan mesajı → söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Söylenemez» sorularında <b>yalnızca, sadece, hiçbir zaman</b> gibi sınırlayıcı kelimeler çoğu zaman yanlış şıkkı ele verir.</div><div class=\"sv-w\"><b>Tuzak:</b> B şıkkındaki bilgi ayette geçmiyor diye elenmemeli; soru kökü sünnetin ikinci kaynak olduğunu da verdiği için B doğru bir çıkarımdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -24,7 +24,7 @@ LGS.add({
     "I: Hakkı gözetme — II: Güvenilirlik — III: İstişare — IV: Merhamet"
    ],
    "a": "A",
-   "s": "<p>I: Kabileler anlaşamayınca hakemliği herkesin güvendiği “Muhammedü’l-Emin”e bırakmış, o da herkesi memnun eden bir çözüm bulmuştur → <b>güvenilirlik ve uzlaştırıcılık</b>. II: Bir sahabinin önerisini dinleyip uygulaması → <b>istişare</b>. III: Eziyet edenlere beddua etmemesi → <b>sabır ve merhamet</b>. IV: Mazlumların hakkını savunan birliğe katılması → <b>hakkı gözetme</b>. Bu eşleştirme A seçeneğindedir. B, C ve D seçeneklerinde olaylar başka özelliklerle yer değiştirmiştir; örneğin Hendek’teki hendek kazma önerisi güvenilirlik ya da cömertlik değil, danışma örneğidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Kâbe hakemliği – Hacerü’l-Esved’i örtüyle kabile temsilcilerine birlikte taşıtma</li> <li>II: Hendek – Selman-ı Farisi’nin «önerisiyle» hendek kazdırma</li> <li>III: Taif – taşlayanlara «beddua etmeyip» dua etme</li> <li>IV: Hilfu’l-Fudul – «haksızlığa uğrayanların hakkını savunmak» için kurulan birliğe katılma</li></ul><b>İstenen</b><p>Olay – ahlaki özellik eşleştirmesinin doğru olduğu şık.</p></div><ol class=\"sv-s\"><li><b>I. kartı yorumla</b> Kabileler, hakemliği herkesin güvendiği «Muhammedü’l-Emin»e bırakır; o da herkesi işe katan bir çözümle kavgayı önler. <span class=\"sv-m\">I → güvenilirlik ve uzlaştırıcılık</span></li> <li><b>II. kartı yorumla</b> Bir sahabinin fikrini dinleyip uygulamak danışmaktır. <span class=\"sv-m\">II → istişare</span></li> <li><b>III. kartı yorumla</b> Eziyete karşılık dua etmek, öfkeye kapılmamak demektir. <span class=\"sv-m\">III → sabır ve merhamet</span></li> <li><b>IV. kartı yorumla</b> Mazlumun hakkını savunmak için birliğe katılmak adaleti gözetmektir. <span class=\"sv-m\">IV → hakkı gözetme</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Dört eşleştirme de doğru.</td></tr><tr><td>B</td><td>II merhamet değil istişare; IV güvenilirlik değil hakkı gözetme.</td></tr><tr><td>C</td><td>I cesaret, II cömertlik değil; III istişare değil.</td></tr><tr><td>D</td><td>I hakkı gözetme, II güvenilirlik değil; III istişare değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eşleştirme sorularında en emin olduğun kartı (burada II → istişare) şıklarda ara; yalnızca bir şık kalırsa diğerlerini tek tek kontrol etmene gerek kalmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -36,7 +36,7 @@ LGS.add({
     "Çocuklara karşı şefkatli davranmasını"
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz, suçlu kişi soylu bir aileden ya da kendi kızı bile olsa cezanın herkese aynı biçimde uygulanacağını söylemiştir. Bu, <b>hakkı gözetme ve adalette eşitlik</b> ilkesidir (B). Olayda misafirlik ya da cömertlik (A), savaş ve danışma (C), çocuklara şefkat (D) yoktur; Hz. Fatıma’nın adı yalnızca “ayrıcalık yok” anlamını güçlendirmek için geçer. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Soylu bir kadın hırsızlık yapmış, kabile cezasız kalması için aracı göndermiş.</li> <li>Hadis: «Muhammed’in kızı Fatıma hırsızlık yapsaydı onun da cezasını verirdim.»</li></ul><b>İstenen</b><p>Olayın en açık gösterdiği özellik.</p></div><ol class=\"sv-s\"><li><b>Olayı özetle</b> Kabile, soylu olduğu için kadına ayrıcalık istemiştir.</li> <li><b>İpucu ifade</b> Peygamberimiz soyluyu bırakıp zayıfı cezalandıran milletlerin «helak oldu»ğunu söyler ve kendi kızını örnek verir. Yani kural <b>herkese eşit</b> uygulanır.</li> <li><b>Kavramı bağla</b> Bu tutum <b>hakkı gözetme / adalette eşitlik</b> ilkesidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Misafir ağırlama ya da cömertlik yok.</td></tr><tr class=\"ok\"><td>B</td><td>Soylu–zayıf, hatta kendi kızı ayrımı yapılmıyor → doğru.</td></tr><tr><td>C</td><td>Savaş ve danışma konusu yok.</td></tr><tr><td>D</td><td>Çocuklara şefkat konusu yok; Hz. Fatıma’nın adı eşitliği vurgulamak için geçiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir rivayette «kendi yakını bile olsa» vurgusu varsa cevap genellikle <b>adalet / ayrıcalık tanımama</b>dır.</div><div class=\"sv-w\"><b>Tuzak:</b> Hz. Fatıma’nın adını görüp aile sevgisi ya da şefkat (D) seçmek; isim sadece eşitliği güçlendirmek için anılır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -48,7 +48,7 @@ LGS.add({
     "Davasındaki cesaret, azim ve kararlılığını"
    ],
    "a": "D",
-   "s": "<p>Servet ve liderlik gibi büyük tekliflere rağmen tebliğ görevinden geri adım atmaması, Peygamberimizin <b>davasındaki cesaret, azim ve kararlılığını</b> gösterir (D). Metinde ticaret bilgisi (A), ibadette kolaylık (B) ya da komşuluk (C) konusu geçmez; tekliflerin “mal, servet” olması ticaretle ilgili olduğu anlamına gelmez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Müşrikler davadan vazgeçmesi için «mal, servet ve liderlik» teklif ediyor.</li> <li>Cevap: «Güneş’i sağ elime, Ay’ı sol elime verseler yine de vazgeçmem!»</li></ul><b>İstenen</b><p>Tutumun doğrudan yansıttığı özellik.</p></div><ol class=\"sv-s\"><li><b>Durumu belirle</b> Peygamberimize tebliğden vazgeçmesi karşılığında dünyalık teklif ediliyor.</li> <li><b>İpucu ifade</b> «vazgeçmem» ve «ya … üstün kılar ya da canımı veririm» sözleri, hiçbir baskı ve teklifin onu yolundan döndüremeyeceğini gösterir.</li> <li><b>Kavramı bağla</b> Bu, davasındaki <b>cesaret, azim ve kararlılık</b>tır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Teklifler mal içerse de konu ticaret bilgisi değil.</td></tr><tr><td>B</td><td>İbadette kolaylık konusu yok.</td></tr><tr><td>C</td><td>Komşuluk konusu yok.</td></tr><tr class=\"ok\"><td>D</td><td>«vazgeçmem» → kararlılık ve cesaret → doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «mal, servet» kelimelerini görüp ticaretle ilgili şıkka (A) kaymak; teklif reddediliyor, ticaret anlatılmıyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -60,7 +60,7 @@ LGS.add({
     "Toplumu ilgilendiren önemli kararları kimseye danışmadan tek başına almıştır."
    ],
    "a": "D",
-   "s": "<p>Bedir’de Hubab’ın önerisini kabul etmesi bilgi ve tecrübeden yararlandığını (A), Hendek’te İran asıllı Selman’ın fikrini uygulaması fikri söyleyenin kökenine bakmadığını (B), Uhud’da kendi görüşünü bırakıp çoğunluğa uyması çoğunluk görüşüne saygısını (C) gösterir. Üç olayda da kararlar <b>danışılarak</b> alınmıştır; “kimseye danışmadan tek başına almıştır” yargısı tabloyla çelişir. Bu yüzden D ulaşılamaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bedir: Hubab’ın önerisi kabul edildi (su kuyuları).</li> <li>Uhud: Kendi görüşü farklıyken «çoğunluğun görüşüne uyarak» şehir dışında savaşıldı.</li> <li>Hendek: «İran asıllı» Selman-ı Farisi’nin önerisiyle hendek kazıldı.</li></ul><b>İstenen</b><p>Tablodan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Üç olayda da karar <b>danışılarak</b> (istişare) alınmıştır.</li> <li><b>Her olaydan çıkan dersi yaz</b> <span class=\"sv-m\">Bedir → bilgi ve tecrübeden yararlanma</span> <span class=\"sv-m\">Uhud → çoğunluk görüşüne saygı</span> <span class=\"sv-m\">Hendek → fikrin sahibinin kökenine bakmama</span></li> <li><b>Çelişen şıkkı ara</b> Tabloyla çelişen ifade, kararları «kimseye danışmadan» aldığını söyleyen şıktır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bedir’de Hubab’ın tecrübesinden yararlandı → ulaşılır.</td></tr><tr><td>B</td><td>Hendek’te İran asıllı Selman’ın fikri kabul edildi → ulaşılır.</td></tr><tr><td>C</td><td>Uhud’da kendi görüşünü bırakıp çoğunluğa uydu → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Üç olayda da danıştı; «tek başına» yargısı tabloyla çelişir → ulaşılamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İstişare olaylarını hatırla: <b>Bedir</b> (yer seçimi), <b>Uhud</b> (şehir dışı), <b>Hendek</b> (hendek).</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -72,7 +72,7 @@ LGS.add({
     "İlahi mesajları eksiksiz iletme (tebliğ)"
    ],
    "a": "A",
-   "s": "<p>Metinde Peygamberimizin doğru sözlülüğü ve hicret gibi zor bir anda bile emanetleri sahiplerine ulaştırması anlatılır. Bu, onun <b>doğruluğunu ve güvenilirliğini</b> gösterir (A). Metinde zekâ ve ileri görüşlülük (B), günahlardan korunma (C) ya da vahyi insanlara ulaştırma (D) ile ilgili bir bilgi yoktur; bunlar da peygamberlerin sıfatlarıdır ama bu metinde vurgulanmaz. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Peygamberlikten önce «doğru sözlülüğü ve emanete sahip çıkması» nedeniyle «Muhammedü’l-Emin» denirdi.</li> <li>Düşmanları bile eşyalarını ona emanet ederdi; hicrette emanetleri Hz. Ali aracılığıyla sahiplerine verdi.</li></ul><b>İstenen</b><p>Metinde ön plana çıkan özellik.</p></div><ol class=\"sv-s\"><li><b>Anahtar kelimeleri seç</b> «doğru sözlülük», «emanet», «Emin» (güvenilir) kelimeleri metnin merkezindedir.</li> <li><b>Peygamber sıfatlarıyla eşleştir</b> Peygamberlerin sıfatları: sıdk (doğruluk), emanet (güvenilirlik), fetanet (akıllılık), ismet (günahsızlık), tebliğ (vahyi iletme). Metin <b>sıdk ve emanet</b>i anlatır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğru sözlülük + emanetleri teslim etme → doğru.</td></tr><tr><td>B</td><td>Fetanet de peygamber sıfatıdır ama metinde zekâya dair bilgi yok.</td></tr><tr><td>C</td><td>İsmet metinde geçmiyor.</td></tr><tr><td>D</td><td>Tebliğ metinde geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Emin</b> = güvenilir. «Emanet» ve «Emin» kelimeleri aynı kökten gelir; ipucu doğrudan isimde saklı.</div><div class=\"sv-w\"><b>Tuzak:</b> B, C, D de gerçek peygamber sıfatlarıdır; «doğru bilgi» olmaları yetmez, sorunun istediği <b>metinde vurgulanan</b> özelliktir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -84,7 +84,7 @@ LGS.add({
     "Ticarette ortaklık kurmasına"
    ],
    "a": "D",
-   "s": "<p>Ayette “yumuşak davrandın” ifadesiyle nezaket (A), “onları affet” ifadesiyle affedicilik (B), “istişare et… tevekkül et” ifadesiyle danışma ve tevekkül (C) açıkça geçer. Ticaretten ya da ortaklıktan hiç söz edilmez; bu yüzden D değinilmeyen özelliktir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Âl-i İmrân 159: «yumuşak davrandın», «onları affet», «istişare et», «Allah’a tevekkül et».</li></ul><b>İstenen</b><p>Ayette <b>değinilmeyen</b> özellik.</p></div><ol class=\"sv-s\"><li><b>Ayetteki ifadeleri listele</b> <span class=\"sv-m\">«yumuşak davrandın» → nezaket</span> <span class=\"sv-m\">«affet» → affedicilik</span> <span class=\"sv-m\">«istişare et… tevekkül et» → danışma ve tevekkül</span></li> <li><b>Listede olmayanı bul</b> Ayette ticaret ya da ortaklıkla ilgili hiçbir ifade yoktur.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«yumuşak davrandın» → değinilmiş.</td></tr><tr><td>B</td><td>«onları affet» → değinilmiş.</td></tr><tr><td>C</td><td>«istişare et… tevekkül et» → değinilmiş.</td></tr><tr class=\"ok\"><td>D</td><td>Ticaret/ortaklık ayette yok → değinilmemiş.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Değinilmemiştir» sorularında ayetin her ifadesini bir şıkla eşleştir; eşi olmayan şık cevaptır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -96,7 +96,7 @@ LGS.add({
     "Askerî güç gösterisi"
    ],
    "a": "C",
-   "s": "<p>Cezalandırma gücüne sahipken yılların düşmanlarını bağışlaması, Peygamberimizin <b>affediciliğini ve merhametini</b> gösterir (C). Olayda intikam (A) tam tersine reddedilmiştir; ganimet (B) ya da güç gösterisi (D) ile ilgili bir ifade yoktur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mekke’nin fethi (630): Peygamberimiz eziyet edenleri cezalandırabilecek güçteydi.</li> <li>Sözü: «Bugün size kınama yok! Gidiniz, hepiniz serbestsiniz!»</li></ul><b>İstenen</b><p>Bu tavrın en güzel örnek olduğu özellik.</p></div><ol class=\"sv-s\"><li><b>Durumu belirle</b> Güç Peygamberimizdedir; yıllarca eziyet görmüştür. Yani intikam alabilecek durumdadır.</li> <li><b>İpucu ifade</b> «hepiniz serbestsiniz» diyerek herkesi bağışlar; Hz. Yusuf’un kardeşlerini affetmesini örnek gösterir.</li> <li><b>Kavramı bağla</b> Güçlüyken bağışlamak <b>affedicilik ve merhamet</b>tir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İntikam tam tersine reddedildi.</td></tr><tr><td>B</td><td>Ganimetten söz edilmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>«serbestsiniz» → affedicilik ve merhamet → doğru.</td></tr><tr><td>D</td><td>Güç vardı ama gösterilmedi; vurgu bağışlamada.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Affediciliğin değeri, <b>cezalandırma gücü varken</b> bağışlamaktır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -108,7 +108,7 @@ LGS.add({
     "Misafirlere ikramda bulunmasını"
    ],
    "a": "B",
-   "s": "<p>Bir peygamber ve toplumun lideri olduğu hâlde ev işlerine yardım etmesi, kendi işini görmesi ve kendini bir hükümdar gibi görmemesi onun <b>tevazuunu ve sadeliğini</b> gösterir (B). Rivayetlerde savaş ya da cesaret (A) geçmez; ev işleri anlatıldığı için “yalnızca ibadetle meşgul olma” (C) metinle çelişir; misafire ikram (D) da anlatılmaz. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Aişe: «ailesinin işlerine yardım eder, söküğünü diker… kendi işini kendisi görürdü.»</li> <li>«Ben bir hükümdar değilim; … kurutulmuş et yiyen bir kadının oğluyum.»</li></ul><b>İstenen</b><p>İki rivayetin ortak vurguladığı özellik.</p></div><ol class=\"sv-s\"><li><b>Birinci rivayet</b> Toplumun lideri olduğu hâlde ev işine yardım eder, kendi işini görür → sadelik.</li> <li><b>İkinci rivayet</b> Korkan adamı rahatlatıp kendini sıradan bir insan olarak tanıtır → alçakgönüllülük.</li> <li><b>Ortak noktayı birleştir</b> İki rivayet de <b>tevazu ve sadelik</b>i anlatır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Savaş ya da cesaret geçmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Ev işi + «hükümdar değilim» → tevazu ve sadelik → doğru.</td></tr><tr><td>C</td><td>Ev işlerine yardım ettiği için «yalnızca ibadet» metinle çelişir.</td></tr><tr><td>D</td><td>Misafire ikram anlatılmıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «İki rivayetin ortak mesajı» sorularında her iki metinde de bulunan özelliği seç; yalnızca birinde olan şık çeldiricidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -120,7 +120,7 @@ LGS.add({
     "Hz. Muhammed (s.a.v.), inşaat işlerinin yalnızca gençler tarafından yapılmasını istemiştir."
    ],
    "a": "A",
-   "s": "<p>Peygamberimiz emir verip kenarda durmamış, sahabilerle birlikte çalışarak tevazu ve çalışkanlıkta <b>davranışlarıyla örnek</b> olmuştur (A). Metinde sahabiler de çalışmaktadır, bu yüzden B yanlıştır. Kendisi bir yönetici olarak çalıştığı için C metinle çelişir. Gençlerle ilgili bir bilgi de yoktur (D). Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mescid-i Nebevi yapılırken Peygamberimiz de «taş ve kerpiç taşıdı».</li> <li>Sahabiler «bırakın biz taşıyalım» deyince yine de çalışmayı sürdürdü.</li></ul><b>İstenen</b><p>Olaydan çıkarılabilecek <b>en kapsamlı</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayı yorumla</b> Lider olan Peygamberimiz emir verip beklemez, işin içinde bizzat yer alır.</li> <li><b>Kapsamlı yargıyı seç</b> Bu davranış hem tevazuyu hem çalışkanlığı hem de «sözle değil davranışla örnek olmayı» içerir. En geniş ifade A’dır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hem sözle hem bizzat çalışarak örnek liderlik → doğru ve kapsamlı.</td></tr><tr><td>B</td><td>Sahabiler de çalışıyor → metinle çelişir.</td></tr><tr><td>C</td><td>Kendisi yönetici olarak çalıştı → metinle çelişir.</td></tr><tr><td>D</td><td>Gençlerle ilgili bilgi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «En kapsamlı yargı» sorularında olaydaki tüm ayrıntıları içine alan, genel ifadeyi seç.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -132,7 +132,7 @@ LGS.add({
     "Allah katında üstünlüğün takvaya göre olmasını"
    ],
    "a": "C",
-   "s": "<p>Hutbede soy, millet ve renk üstünlüğü açıkça reddedilmiş, tüm insanların aynı anne babadan geldiği vurgulanmıştır. Yani reddedilen <b>ırkçılık ve ayrımcılıktır</b> (C). İnsanların eşit değerde olması (A) ve takvanın üstünlük ölçüsü olması (D) hutbede savunulan düşüncelerdir, reddedilmez. Kardeşlik anlayışı (B) da hutbenin amacıyla uyumludur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Veda Hutbesi: «Rabbiniz birdir, babanız da birdir»</li> <li>«Arap’ın Arap olmayana… beyazın siyaha… üstünlüğü yoktur. Üstünlük ancak takvadadır.»</li></ul><b>İstenen</b><p>Bu sözlerin <b>reddettiği</b> düşünce.</p></div><ol class=\"sv-s\"><li><b>Hutbenin savunduğunu yaz</b> Bütün insanlar Âdem’in çocuklarıdır, eşittir; tek üstünlük ölçüsü takvadır (Allah’a saygı ve sorumluluk bilinci).</li> <li><b>Reddedileni bul</b> Soy, millet ve renge dayalı üstünlük açıkça reddedilir. Bu <b>ırkçılık ve ayrımcılık</b>tır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eşitlik hutbede savunuluyor, reddedilmiyor.</td></tr><tr><td>B</td><td>Barış ve kardeşlik hutbenin amacıyla uyumlu.</td></tr><tr class=\"ok\"><td>C</td><td>Soy ve renk ayrımı açıkça reddediliyor → doğru.</td></tr><tr><td>D</td><td>«Üstünlük ancak takvadadır» → savunuluyor.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Soru kökü «reddetmektedir» diyor; A ve D hutbede geçen fikirler olduğu için dikkatsiz okuyan onları seçebilir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -144,7 +144,7 @@ LGS.add({
     "İnsanlara verdiği değeri ve iletişimdeki nezaketini"
    ],
    "a": "D",
-   "s": "<p>Muhatabını tüm dikkatiyle dinlemesi, çocuklara selam vermesi, elini önce çekmemesi ve başköşeye geçmemesi onun <b>insanlara değer verdiğini ve iletişimde nazik</b> olduğunu gösterir (D). Metindeki davranışlar günlük ilişkilerle ilgilidir; devlet yönetimi (A), ibadet (B) ya da ticaret (C) anlatılmaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Muhatabına «bütün bedeniyle döner», «sözünü kesmez»</li> <li>Tokalaşınca elini önce çekmez, «çocuklara bile selam verir», başköşeye geçmez.</li></ul><b>İstenen</b><p>Bilgilerin doğrudan yansıttığı yön.</p></div><ol class=\"sv-s\"><li><b>Davranışları grupla</b> Tüm örnekler günlük hayatta insanlarla iletişime aittir: dinleme, selamlaşma, tokalaşma, oturma adabı.</li> <li><b>Kavramı bağla</b> Bunlar Peygamberimizin <b>insana verdiği değer ve iletişimdeki nezaket</b>idir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Devlet yönetimi anlatılmıyor.</td></tr><tr><td>B</td><td>İbadet anlatılmıyor.</td></tr><tr><td>C</td><td>Ticaret anlatılmıyor.</td></tr><tr class=\"ok\"><td>D</td><td>Dinleme, selam, tokalaşma → insana değer ve nezaket → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Davranışların hepsinin geçtiği ortamı sor: burada hepsi <b>insanlarla iletişim</b>.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -156,7 +156,7 @@ LGS.add({
     "Merhametin yalnızca yaşlılara gösterilmesi gerektiği"
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz çocukları sevip öpmeyi merhametin bir parçası saymış ve merhamet etmeyenin merhamet görmeyeceğini söylemiştir. Mesaj, <b>çocuklara sevgi ve merhametle yaklaşmaktır</b> (B). A ve C, Akra bin Hâbis’in Peygamberimizin uyardığı tutumudur. Olayda çocuklara merhamet anlatıldığı için D de metinle çelişir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Peygamberimiz torunu Hz. Hasan’ı öperken Akra bin Hâbis: «on çocuğum var, hiçbirini öpmedim.»</li> <li>Hadis: «Merhamet etmeyene merhamet edilmez.»</li></ul><b>İstenen</b><p>Olaydan çıkan en önemli mesaj.</p></div><ol class=\"sv-s\"><li><b>Karşılaştır</b> Akra çocuklarına sevgi göstermemeyi normal sayar; Peygamberimiz ise torununu öperek sevgisini açıkça gösterir.</li> <li><b>Hadisi yorumla</b> «Merhamet etmeyene merhamet edilmez» uyarısıyla çocuklara sevgi göstermenin <b>merhametin ve güzel ahlakın</b> gereği olduğu anlatılır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Akra’nın uyarılan tutumu.</td></tr><tr class=\"ok\"><td>B</td><td>Çocuklara sevgi ve merhamet → doğru.</td></tr><tr><td>C</td><td>Sevgiyi gizlemek de Akra’nın tutumudur; Peygamberimiz sevgisini gösterdi.</td></tr><tr><td>D</td><td>Olayda merhamet çocuğa gösteriliyor; «yalnızca yaşlılar» çelişir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> A ve C, olaydaki eleştirilen kişinin tavrıdır. «Kim konuşuyor?» sorusunu sor: mesaj, Peygamberimizin sözündedir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -168,7 +168,7 @@ LGS.add({
     "Canlıları korumanın yalnızca yöneticilerin görevi olduğunu"
    ],
    "a": "C",
-   "s": "<p>Peygamberimiz kuşun yavrularını geri verdirmiş, köpeğe su veren kişiyi örnek göstermiştir; yani <b>merhameti hayvanları da kuşatır</b> (C). Bu, Enbiyâ suresi 107. ayette bildirilen “âlemlere rahmet” olmasının bir göstergesidir. Hayvanların bakımını önemsememek (A) olaylarla çelişir. Kuş yabani bir hayvandır, bu yüzden B de yanlıştır. Köpeğe su veren kişi sıradan biridir; canlıları korumanın yalnızca yöneticilere ait olduğu (D) söylenemez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yavruları alınan anne kuş için: «Yavrularını ona geri verin!»</li> <li>Susuz köpeğe su veren kişinin Allah tarafından bağışlandığı haberi.</li></ul><b>İstenen</b><p>Örneklerin merhametle ilgili gösterdiği şey.</p></div><ol class=\"sv-s\"><li><b>Örneklerin ortak noktası</b> İkisinde de merhamet <b>hayvanlara</b> yöneliktir: biri yabani bir kuş, diğeri sokakta susamış bir köpek.</li> <li><b>Bilgiyi bağla</b> Bu, Enbiyâ 107’de bildirilen «âlemlere rahmet» olmanın göstergesidir: merhameti insanlarla sınırlı değildir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hayvanlar için uyarıda bulundu → çelişir.</td></tr><tr><td>B</td><td>Kuş yabani hayvan → «yalnızca evcil» yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Merhamet hayvanları da kapsıyor → doğru.</td></tr><tr><td>D</td><td>Köpeğe su veren sıradan biri → «yalnızca yöneticiler» yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Yalnızca» içeren şıklar (B, D) örneklerdeki çeşitlilik nedeniyle kolayca elenir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -180,7 +180,7 @@ LGS.add({
     "Kureyşlilerin yaptığı savaşlar ve ganimet paylaşımı anlatılmıştır."
    ],
    "a": "D",
-   "s": "<p>Surede kış ve yaz yolculukları (A), açlıktan doyurulma ve korkudan emin kılınma nimetleri (B) ve bu nimetlere karşılık Kâbe’nin Rabbine kulluk etme isteği (C) açıkça yer alır. Savaştan ya da ganimetten hiç söz edilmez; “korkudan emin kılma” ifadesi savaş anlatısı değil, güvenlik nimetidir. Bu yüzden D söylenemez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kureyş suresi: «kış ve yaz yolculukları» kolaylaştırıldı</li> <li>«bu Evin Rabbine kulluk etsinler»</li> <li>«açlıktan doyurmuş ve korkudan emin kılmıştır»</li></ul><b>İstenen</b><p>Sure için <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Surenin konularını çıkar</b> <span class=\"sv-m\">1-2 → ticaret yolculukları</span> <span class=\"sv-m\">3 → Kâbe’nin Rabbine kulluk</span> <span class=\"sv-m\">4 → rızık ve güvenlik nimeti</span></li> <li><b>Surede olmayanı bul</b> Savaş ya da ganimet paylaşımından hiç söz edilmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kış ve yaz yolculukları geçiyor → söylenebilir.</td></tr><tr><td>B</td><td>Doyurma ve güvenlik nimeti geçiyor → söylenebilir.</td></tr><tr><td>C</td><td>«kulluk etsinler» → söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Savaş/ganimet yok → söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «korkudan emin kılmıştır» ifadesini savaşla karıştırmak; bu bir savaş anlatısı değil, <b>güvenlik nimeti</b>dir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -192,7 +192,7 @@ LGS.add({
     "Görüş ayrılıklarını ve tartışmaları artırmak"
    ],
    "a": "B",
-   "s": "<p>Hadiste “kolaylaştırınız, müjdeleyiniz” denerek <b>kolaylaştırıcı, sevdirici ve hoşgörülü</b> olmak istenmiştir (B). A, hadisteki “zorlaştırmayınız, nefret ettirmeyiniz” uyarısının tersidir. Kolaylaştırmak, kuralları değiştirmek demek değildir (C). Tartışmaları artırmak (D) da insanları dinden uzaklaştırır, hadisin amacına aykırıdır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Yemen’e giden sahabilere öğüt: «Kolaylaştırınız, zorlaştırmayınız; müjdeleyiniz, nefret ettirmeyiniz.»</li></ul><b>İstenen</b><p>Dini anlatırken benimsenmesi istenen tutum.</p></div><ol class=\"sv-s\"><li><b>Hadisi ikiye ayır</b> Emredilen: kolaylaştırmak, müjdelemek. Yasaklanan: zorlaştırmak, nefret ettirmek.</li> <li><b>Kavramı bağla</b> Bu, dini <b>hoşgörülü, kolaylaştırıcı ve sevdirici</b> bir üslupla anlatmaktır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«zorlaştırmayınız» uyarısının tersi.</td></tr><tr class=\"ok\"><td>B</td><td>Kolaylaştırma + müjdeleme → doğru.</td></tr><tr><td>C</td><td>Kolaylaştırmak kuralları değiştirmek değil, güzel anlatmaktır.</td></tr><tr><td>D</td><td>Tartışmayı artırmak insanları dinden uzaklaştırır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Kolaylaştırınız» sözünü «dinin kurallarını değiştirin» (C) diye anlamak; kolaylık <b>üslupta ve uygulamada</b>dır, hükmü değiştirmek değildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -204,7 +204,7 @@ LGS.add({
     "Önemli konularda kararsız kalmasını"
    ],
    "a": "C",
-   "s": "<p>Şartlar zor olsa bile imzaladığı antlaşmayı bozmaması, Peygamberimizin <b>sözüne sadakatini ve güvenilirliğini</b> gösterir (C). Hudeybiye bir barış antlaşmasıdır; bu yüzden A yanlıştır. Antlaşmaya sonuna kadar uyduğu için B metinle çelişir. Verdiği sözde durması kararlılık gösterir, kararsızlık (D) değil. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hudeybiye Antlaşması (628) maddeleri «ilk bakışta Müslümanların aleyhine» görünüyordu.</li> <li>Peygamberimiz «antlaşmaya sadık kalmış ve verdiği sözü yerine getirmiştir».</li></ul><b>İstenen</b><p>Tutumun doğrudan gösterdiği özellik.</p></div><ol class=\"sv-s\"><li><b>İpucu ifade</b> «sadık kalmış», «sözü yerine getirmiştir»: zor şartlara rağmen söz tutuluyor.</li> <li><b>Kavramı bağla</b> Bu <b>ahde vefa</b>dır: verilen söze ve yapılan antlaşmaya bağlılık; güvenilirliğin bir parçasıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hudeybiye bir barış antlaşmasıdır → yanlış.</td></tr><tr><td>B</td><td>Antlaşmaya sonuna kadar uydu → çelişir.</td></tr><tr class=\"ok\"><td>C</td><td>Söze ve antlaşmaya bağlılık → doğru.</td></tr><tr><td>D</td><td>Sözünde durmak kararlılıktır, kararsızlık değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Ahde vefa</b> = söze sadakat. «Aleyhine olsa bile» vurgusu bu kavramın işaretidir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -216,7 +216,7 @@ LGS.add({
     "Paylaşımın ve ticaretin sınırlandırılması"
    ],
    "a": "A",
-   "s": "<p>Muâhât ile göç edenlerin barınma ve geçim sıkıntısı giderilmiş, <b>yardımlaşma ve kardeşlik</b> güçlenmiştir (A). Amaç iki grubu ayırmak (B) değil, kaynaştırmaktır. Muhacirler Medine’ye yerleşmiştir; geri gönderilmeleri (C) söz konusu değildir. Ensar kazancını paylaştığına göre paylaşımın sınırlandırılması (D) da metinle çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Muhacirler mallarını Mekke’de bırakarak göç etti.</li> <li>Muâhât: Muhacir ile Ensar arasında kardeşlik kuruldu; Ensar «evini ve kazancını… paylaşmıştır».</li></ul><b>İstenen</b><p>Uygulamanın öncelikli amacı.</p></div><ol class=\"sv-s\"><li><b>Sorunu belirle</b> Muhacirler malsız, evsiz kalmıştı; yeni bir şehirde yabancıydılar.</li> <li><b>Çözümü yorumla</b> İki grup kardeş ilan edilip paylaşım sağlandı. Amaç <b>yardımlaşma, dayanışma ve kardeşlik</b>tir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Paylaşım ve kardeşlik → doğru.</td></tr><tr><td>B</td><td>Amaç ayırmak değil kaynaştırmak.</td></tr><tr><td>C</td><td>Muhacirler Medine’ye yerleşti; geri dönüş yok.</td></tr><tr><td>D</td><td>Ensar kazancını paylaştı → çelişir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Muâhât</b> = kardeşleştirme. Kelimenin kökündeki «ah» (kardeş) cevabı hatırlatır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -228,7 +228,7 @@ LGS.add({
     "İnsanları eğiten örnek bir öğretici olmasını"
    ],
    "a": "D",
-   "s": "<p>Soruları sabırla dinlemek, muhatabın seviyesine göre anlatmak, çizim ve benzetmelerle konuyu somutlaştırmak <b>iyi bir öğreticinin</b> özellikleridir (D). Metinde ticaret (A) ya da savaş (B) geçmez. Yere çizgi çizmesi sanat amaçlı değil, anlatılanı açıklamak içindir (C). Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Soruları «sabırla dinler», «anlayabileceği biçimde» cevap verirdi.</li> <li>Anlatırken «yere çizgiler çizer», «günlük hayattan benzetmeler kullanırdı».</li></ul><b>İstenen</b><p>Bilgilerin öne çıkardığı yön.</p></div><ol class=\"sv-s\"><li><b>Davranışları grupla</b> Dinlemek, seviyeye göre anlatmak, çizimle ve benzetmeyle somutlaştırmak: hepsi öğretme yöntemidir.</li> <li><b>Kavramı bağla</b> Bu, Peygamberimizin <b>örnek bir öğretici (muallim)</b> oluşunu gösterir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ticaret geçmiyor.</td></tr><tr><td>B</td><td>Savaş geçmiyor.</td></tr><tr><td>C</td><td>Çizgiler sanat için değil, anlatmak için çiziliyor.</td></tr><tr class=\"ok\"><td>D</td><td>Öğretme yöntemleri → örnek öğretici → doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Yere çizgiler çizer» ifadesini sanat ilgisi (C) sanmak; amaç konuyu daha iyi <b>anlatmak</b>.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -240,7 +240,7 @@ LGS.add({
     "Hz. Muhammed (s.a.v.) insanlara karşı sert ve katı davranmıştır."
    ],
    "a": "B",
-   "s": "<p>“Âlemlere rahmet” ifadesi, Peygamberimizin rahmetinin belli bir topluluk ya da çevreyle sınırlı olmadığını, <b>bütün insanlığı ve varlıkları</b> kapsadığını anlatır (B). A ve C, rahmeti daraltan, “âlemler” ifadesiyle çelişen yargılardır. D ise rahmet kavramının tam tersidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Enbiyâ 107: «Biz seni ancak <b>âlemlere rahmet</b> olarak gönderdik.»</li></ul><b>İstenen</b><p>Ayete göre <b>söylenebilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Anahtar kelime</b> «âlemler» bütün insanları ve varlıkları kapsayan geniş bir ifadedir.</li> <li><b>Sonuç</b> Peygamberimizin mesajı ve merhameti belli bir toplulukla sınırlı değildir; bütün insanlığa ve canlılara yöneliktir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«yalnızca Araplar» → «âlemler» ile çelişir.</td></tr><tr class=\"ok\"><td>B</td><td>Mesaj ve merhamet herkesi kapsar → doğru.</td></tr><tr><td>C</td><td>«yalnızca ailesi» → rahmeti daraltır.</td></tr><tr><td>D</td><td>Sertlik, rahmetin zıddıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Âlemlere rahmet» = herkese ve her şeye merhamet. Kapsamı daraltan şıklar elenir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -252,7 +252,7 @@ LGS.add({
     "Askerî bir komutan olarak bilindiğini"
    ],
    "a": "A",
-   "s": "<p>Mekkelilerin “Senin yalan söylediğini hiç görmedik.” diyerek ona hemen inanacaklarını söylemesi, Peygamberimizin <b>doğruluğunun ve güvenilirliğinin</b> herkesçe bilindiğini gösterir (A). Konuşmada zenginlik (B) geçmez. Seslendiği kişiler bütün Mekkelilerdir, yalnızca akrabaları değil (C). “Düşman ordusu” sözü bir örnektir; onun komutan olduğunu (D) göstermez. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Safa Tepesi’nde soru: «dağın arkasında bir düşman ordusu var… desem inanır mısınız?»</li> <li>Mekkeliler: «Evet… Çünkü senin yalan söylediğini hiç görmedik.»</li></ul><b>İstenen</b><p>Konuşmanın gösterdiği özellik.</p></div><ol class=\"sv-s\"><li><b>İpucu ifade</b> «senin yalan söylediğini hiç görmedik» cümlesi, Mekkelilerin ona kayıtsız şartsız güvendiğini gösterir.</li> <li><b>Kavramı bağla</b> Bu, <b>doğruluk (sıdk) ve güvenilirlik (emanet)</b> özelliğidir; peygamberlikten önce de herkesçe biliniyordu.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>«yalan söylediğini hiç görmedik» → doğru.</td></tr><tr><td>B</td><td>Zenginlikten söz edilmiyor.</td></tr><tr><td>C</td><td>Seslendiği kişiler bütün Mekkeliler.</td></tr><tr><td>D</td><td>«Düşman ordusu» bir örnektir; komutanlığını göstermez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «düşman ordusu» kelimesini görüp askerî bir özellik (D) seçmek; bu yalnızca güvenini sınamak için kurulan bir örnek cümledir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -264,7 +264,7 @@ LGS.add({
     "Hiçbir tedbir almadan yola çıktığını"
    ],
    "a": "C",
-   "s": "<p>Peygamberimiz önce mağaraya saklanarak tedbirini almış, en tehlikeli anda bile paniğe kapılmadan arkadaşını teselli etmiştir. Bu, <b>tevekkülünü, cesaretini ve kararlılığını</b> gösterir (C). Geri dönme isteği (A) ve ümitsizlik (B) onun sakin ve kararlı tavrıyla çelişir. Mağaraya saklanmak bir tedbir olduğu için D de yanlıştır; tevekkül tedbir aldıktan sonra Allah’a güvenmektir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hicrette müşriklerden korunmak için Sevr Mağarası’na saklandılar.</li> <li>Hz. Ebu Bekir endişelenince: «Üzülme! Şüphesiz Allah bizimle beraberdir.» (Tevbe 40)</li></ul><b>İstenen</b><p>Tavrın gösterdiği özellik.</p></div><ol class=\"sv-s\"><li><b>Tedbiri gör</b> Önce mağaraya saklanarak gereken önlemi almıştır.</li> <li><b>Güveni gör</b> Takipçiler yaklaştığında paniğe kapılmamış, arkadaşını sakinleştirmiştir.</li> <li><b>Kavramı bağla</b> Tedbir aldıktan sonra Allah’a güvenmek <b>tevekkül</b>dür; sakinliği <b>cesaret ve kararlılık</b>ını gösterir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Geri dönme isteği yok.</td></tr><tr><td>B</td><td>«Üzülme!» → ümitsizlik yok.</td></tr><tr class=\"ok\"><td>C</td><td>Tevekkül, cesaret, kararlılık → doğru.</td></tr><tr><td>D</td><td>Mağaraya saklanmak bir tedbirdir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül = önce tedbir, sonra Allah’a güven. Tedbirsiz beklemek tevekkül değildir.</div><div class=\"sv-w\"><b>Tuzak:</b> «Allah bizimle» sözünden «hiç tedbir almadı» (D) sonucunu çıkarmak; mağaraya saklanmak tedbirin kendisidir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -276,7 +276,7 @@ LGS.add({
     "Maddi kazancı her şeyin önünde tutma"
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz öz amcasına bile ayrıcalık tanımamış, kuralın <b>herkese eşit</b> uygulanmasını istemiştir (B). Bu, hakkı gözetmenin ve adaletin bir örneğidir. A olaydaki tutumun tam tersidir. Abbas’a diğer esirlerden farklı, sert bir davranış yapılmamıştır (C). Amaç para kazanmak değil, eşitliği korumaktır (D). Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bedir esirleri arasında Peygamberimizin amcası Abbas da var.</li> <li>Sahabiler fidye alınmamasını önerince: «Ondan bir dirhem bile bırakmayın.»</li></ul><b>İstenen</b><p>Olayın gösterdiği ilke.</p></div><ol class=\"sv-s\"><li><b>Durumu belirle</b> Akrabalık nedeniyle bir ayrıcalık teklif edilmiştir.</li> <li><b>Tutumu yorumla</b> Peygamberimiz teklifi reddeder; amcasına da diğer esirlere uygulanan kural uygulanır.</li> <li><b>Kavramı bağla</b> Bu, <b>hakkı gözetme</b> ve kanun önünde eşitliktir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Olaydaki tutumun tam tersi.</td></tr><tr class=\"ok\"><td>B</td><td>Amcasına bile ayrıcalık tanımadı → doğru.</td></tr><tr><td>C</td><td>Abbas’a diğerlerinden sert davranılmadı, aynı davranıldı.</td></tr><tr><td>D</td><td>Amaç para değil, eşitlik.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mahzumlu kadın olayı ile Abbas olayı aynı ilkeyi anlatır: <b>ayrıcalık yok</b>.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -288,7 +288,7 @@ LGS.add({
     "Binaların süslenmesine"
    ],
    "a": "A",
-   "s": "<p>Esirlerin serbest kalma bedelini çocuklara okuma yazma öğretmek olarak belirlemesi ve Suffe’yi kurması, Peygamberimizin <b>ilme ve eğitime</b> verdiği önemi gösterir (A). Fidye olarak para yerine eğitim istendiği için B metinle çelişir. Öğretilen şey okuma yazmadır, askerlik değil (C). Suffe bir eğitim yeridir; süsleme (D) söz konusu değildir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Okuma yazma bilen Bedir esirleri, «on Müslüman çocuğa okuma yazma öğretmeleri karşılığında» serbest bırakıldı.</li> <li>Mescid-i Nebevi’nin yanında <b>Suffe</b> adlı eğitim yeri kuruldu.</li></ul><b>İstenen</b><p>Uygulamaların gösterdiği önem.</p></div><ol class=\"sv-s\"><li><b>Birinci uygulama</b> Fidye olarak para yerine eğitim istendi.</li> <li><b>İkinci uygulama</b> Suffe, İslam’ın ilk eğitim kurumlarından biridir.</li> <li><b>Ortak nokta</b> İkisi de <b>ilme ve eğitime</b> verilen önemi gösterir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Okuma yazma + Suffe → ilim ve eğitim → doğru.</td></tr><tr><td>B</td><td>Para yerine eğitim istendi → çelişir.</td></tr><tr><td>C</td><td>Öğretilen okuma yazma, askerlik değil.</td></tr><tr><td>D</td><td>Suffe süs değil eğitim yeri.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Suffe</b> = Mescid-i Nebevi yanındaki eğitim yeri; orada kalan öğrencilere «Ashab-ı Suffe» denir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -300,7 +300,7 @@ LGS.add({
     "Malların daha yüksek fiyata satılmasını"
    ],
    "a": "A",
-   "s": "<p>Kusurlu malı gizleyerek satmak alıcıyı aldatmaktır ve kul hakkına girer. Peygamberimiz “Bizi aldatan bizden değildir.” diyerek <b>ticarette dürüstlüğü</b> vurgulamıştır (A). Sorun yağmur değil, ıslaklığın gizlenmesidir (B). Hangi malın satılacağı (C) ya da fiyat (D) olayda konu edilmez. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Buğday yığınının alt kısmı ıslak, üstte kuru buğday var.</li> <li>Hadis: «Islak kısmı… üste koyman gerekmez miydi? <b>Bizi aldatan bizden değildir.</b>»</li></ul><b>İstenen</b><p>Korunmak istenen değer.</p></div><ol class=\"sv-s\"><li><b>Hatayı belirle</b> Satıcı kusurlu malı alttan gizlemiş, alıcıyı yanıltmıştır.</li> <li><b>Kavramı bağla</b> Aldatmak <b>kul hakkı</b>na girer. Peygamberimiz ticarette <b>dürüstlüğü</b> korumak istemiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Aldatmama, kul hakkı → doğru.</td></tr><tr><td>B</td><td>Sorun yağmur değil, kusurun gizlenmesi.</td></tr><tr><td>C</td><td>Hangi malın satılacağı konu edilmiyor.</td></tr><tr><td>D</td><td>Fiyattan söz edilmiyor.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Satıcının «Yağmur ıslattı» bahanesine takılıp B’yi seçmek; Peygamberimiz yağmuru değil, gizlemeyi eleştirir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -312,7 +312,7 @@ LGS.add({
     "D"
    ],
    "a": "D",
-   "s": "<p>A’da düşmanlarını bağışlaması affediciliktir, B’de savaşın yerini sahabilerine danışması istişaredir, C’de sahabilerle birlikte çalışması tevazu ve çalışkanlıktır; bu üç eşleştirme doğrudur. D’de ise kendisini taşlayanlar için dua etmesi öfke ve intikamı değil, <b>sabrını ve merhametini</b> gösterir. Yanlış eşleştirme D’dedir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tabloda olay – özellik eşleştirmeleri (A, B, C, D satırları).</li></ul><b>İstenen</b><p><b>Yanlış</b> eşleştirmenin olduğu satır.</p></div><ol class=\"sv-s\"><li><b>Satırları kontrol et</b> Her olayın gerçekte hangi özelliği gösterdiğini düşün ve tablodaki özellikle karşılaştır.</li> <li><b>Uyumsuzu bul</b> Taif’te taşlanmasına rağmen dua etmesi <b>sabır ve merhamet</b>tir; tabloda ise «öfke ve intikam» yazıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Mekke fethinde bağışlama → affedicilik ✔</td></tr><tr><td>B</td><td>Uhud öncesi danışma → istişare ✔</td></tr><tr><td>C</td><td>Kerpiç taşıma → tevazu ve çalışkanlık ✔</td></tr><tr class=\"ok\"><td>D</td><td>Taif’te dua → sabır ve merhamet; «öfke ve intikam» ✘ → yanlış eşleştirme.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peygamberimizin hiçbir olayında «öfke, intikam, kibir» gibi olumsuz bir özellik öne çıkmaz; böyle bir eşleştirme hemen dikkat çekmelidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -324,7 +324,7 @@ LGS.add({
     "Yalnızca gençlerle namaz kılmak istediğinin"
    ],
    "a": "A",
-   "s": "<p>Ağlayan çocuğun annesini ve cemaatteki yaşlı, hasta kişileri düşünmesi Peygamberimizin <b>insanların durumunu gözeten şefkatini</b> gösterir (A). Çocuk mescittedir ve Peygamberimiz namazı onun için kısaltmıştır; yasak (B) söz konusu değildir. Namazı kılmaya ve kıldırmaya devam ettiği için C yanlıştır. Yaşlıları düşündüğüne göre D de metinle çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Çocuk ağlayınca «annesi üzülmesin diye namazı kısa tutardı».</li> <li>İmamlara cemaatteki «yaşlı, hasta ve zayıf» kişiler için namazı uzatmamayı öğütlerdi.</li></ul><b>İstenen</b><p>Davranışların göstergesi.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> İki davranışta da Peygamberimiz ibadet sırasında bile insanların durumunu düşünüyor.</li> <li><b>Kavramı bağla</b> Bu, <b>şefkat ve merhamet</b>tir; din kolaylaştırıcıdır, insanları zora sokmaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İnsanların durumunu gözetme → şefkat ve merhamet → doğru.</td></tr><tr><td>B</td><td>Çocuk mescitte; yasak yok.</td></tr><tr><td>C</td><td>Namazı kıldırmaya devam ediyor; önem veriyor.</td></tr><tr><td>D</td><td>Yaşlıları düşündüğü için çelişir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «namazı kısa tutardı» ifadesini namaza önem vermemek (C) sanmak; kısaltma, cemaate duyulan şefkattendir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -336,7 +336,7 @@ LGS.add({
     "Kazandığını kimseyle paylaşmadan saklamak"
    ],
    "a": "B",
-   "s": "<p>Ayetlerde doyurma ve güvende kılma nimetlerini verenin Allah olduğu hatırlatılıp “bu Evin Rabbine kulluk etsinler” denir. Temel görev <b>nimetleri verene şükretmek ve yalnızca O’na kulluk etmektir</b> (B). Övünmek (A) ve paylaşmamak (D) nimete şükürle bağdaşmaz. Ticaret yolculukları surede bir nimet olarak anılır, bırakılması istenmez (C). Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kureyş 3-4: «bu Evin Rabbine kulluk etsinler. O Rab ki onları açlıktan doyurmuş ve korkudan emin kılmıştır.»</li></ul><b>İstenen</b><p>Rızık ve güvenlik nimetleri karşısındaki temel görev.</p></div><ol class=\"sv-s\"><li><b>Nimetleri belirle</b> Nimetler: doyurulma (rızık) ve korkudan emin olma (güvenlik).</li> <li><b>İstenen karşılığı bul</b> Ayet bu nimetleri verenin Allah olduğunu hatırlatıp «kulluk etsinler» der. Görev: nimeti verene <b>şükür ve kulluk</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Övünmek şükürle bağdaşmaz.</td></tr><tr class=\"ok\"><td>B</td><td>Şükür ve yalnızca Allah’a kulluk → doğru.</td></tr><tr><td>C</td><td>Yolculuklar surede nimet olarak anılır, bırakılması istenmez.</td></tr><tr><td>D</td><td>Paylaşmamak nimete şükürle bağdaşmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kureyş suresinin mesajı: <b>nimet → şükür → kulluk</b>.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -348,7 +348,7 @@ LGS.add({
     "100"
    ],
    "a": "C",
-   "s": "<p>1, 2 ve 3. ifadeler doğrudur ve öğrenci üçüne de D demiştir: 3 × 25 = 75 puan. 4. ifade de doğrudur, çünkü Kureyş suresinde kış ve yaz yolculukları ile korkudan emin kılınma nimeti anılır; öğrenci Y dediği için bu ifadeden puan alamaz. Toplam <b>75 puan</b>. 100 puan için 4. ifadenin de doğru bilinmesi gerekirdi; 25 ve 50 ise doğru bilinen üç ifadeyi eksik saymaktan çıkar. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>4 ifade, her doğru cevap 25 puan.</li> <li>Öğrencinin cevapları: 1-D, 2-D, 3-D, 4-Y.</li></ul><b>İstenen</b><p>Öğrencinin toplam puanı.</p></div><ol class=\"sv-s\"><li><b>İfadelerin doğruluğunu kontrol et</b> 1: Sünnet tanımı ve ikinci kaynak olması → doğru. 2: Hilfu’l-Fudul mazlumu korumak için kuruldu → doğru. 3: Selman’ın önerisini kabul etmek istişaredir → doğru. 4: Kureyş suresinde kış-yaz yolculukları ve güvenlik nimeti geçer → doğru.</li> <li><b>Öğrencinin cevaplarını karşılaştır</b> 1, 2, 3’e «D» demiş → doğru. 4’e «Y» demiş → yanlış. <span class=\"sv-m\">Doğru sayısı = 3</span></li> <li><b>Puanı hesapla</b> <span class=\"sv-m\">3 · 25 = 75 puan</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnızca 1 doğru sayılırsa.</td></tr><tr><td>B</td><td>2 doğru sayılırsa.</td></tr><tr class=\"ok\"><td>C</td><td>3 doğru × 25 = 75 → doğru.</td></tr><tr><td>D</td><td>4. ifade de doğru bilinseydi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> 4. ifadenin doğru olduğunu fark etmeyip öğrencinin «Y» cevabını doğru saymak; o zaman 100 (D) bulunur.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "kolay",
@@ -360,7 +360,7 @@ LGS.add({
     "4"
    ],
    "a": "C",
-   "s": "<p>1, 2 ve 4 numaralı bilgiler doğrudur: Ahzâb 21 üsve-i haseneyi bildirir; Bedir, Uhud ve Hendek’teki danışmalar istişare örneğidir; hakemlik, emanetler ve Hudeybiye güvenilirliği gösterir. 3 numaralı bilgi ise yanlıştır; Peygamberimiz, Mahzumoğullarından soylu kadın olayında “kızım Fatıma bile olsa” demiş, Bedir’de amcası Abbas’tan da fidye almıştır. Yani <b>hiç kimseye ayrıcalık tanımamıştır</b>. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Ahzâb 21 – «güzel bir örnek (üsve-i hasene)»</li> <li>2: Vahiy gelmeyen toplumsal işlerde istişare</li> <li>3: Soylulara ve akrabalarına «ayrıcalık tanımıştır»</li> <li>4: Hakemlik, emanetler, Hudeybiye → güvenilirlik</li></ul><b>İstenen</b><p>Tablodaki <b>yanlış</b> bilgi.</p></div><ol class=\"sv-s\"><li><b>Her bilgiyi bilgiyle karşılaştır</b> 1, 2, 4 konunun temel bilgileriyle uyumludur.</li> <li><b>Yanlışı bul</b> 3. bilgi Peygamberimizin tutumunun tersidir: Mahzumlu kadın olayında «kızım Fatıma bile olsa» demiş, Bedir’de amcası Abbas’tan fidye almıştır. Yani <b>hiç kimseye ayrıcalık tanımamıştır</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ahzâb 21 üsve-i haseneyi bildirir → doğru bilgi.</td></tr><tr><td>B</td><td>Bedir, Uhud, Hendek istişareleri → doğru bilgi.</td></tr><tr class=\"ok\"><td>C</td><td>«ayrıcalık tanımıştır» → yanlış bilgi.</td></tr><tr><td>D</td><td>Hakemlik, emanet, Hudeybiye → doğru bilgi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tek kelimelik değişikliğe dikkat: «tanımamıştır» yerine «tanımıştır» yazılınca bilgi tamamen yanlış olur.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -372,7 +372,7 @@ LGS.add({
     "Yardıma muhtaç insanları gözettiğine"
    ],
    "a": "B",
-   "s": "<p>Hz. Hatice; “doğru söylersin” (A), “akrabanı gözetirsin” (C), “kimsesizlerin yükünü taşırsın, yoksula yardım edersin” (D) diyerek bu özellikleri açıkça sayar. Metinde ticaretten ya da ortaklarla danışmaktan hiç söz edilmez. İstişare onun bilinen bir özelliği olsa da bu sözlerden çıkarılamaz. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Hatice: «akrabanı gözetirsin, doğru söylersin, kimsesizlerin yükünü taşırsın, yoksula yardım edersin, misafiri ağırlarsın ve haklı olanlara yardımcı olursun.»</li></ul><b>İstenen</b><p>Sözlerden <b>ulaşılamayacak</b> bilgi.</p></div><ol class=\"sv-s\"><li><b>Sayılan özellikleri listele</b> <span class=\"sv-m\">«doğru söylersin» → doğruluk</span> <span class=\"sv-m\">«akrabanı gözetirsin» → akrabalık bağı</span> <span class=\"sv-m\">«kimsesiz, yoksul» → muhtaçları gözetme</span></li> <li><b>Listede olmayanı bul</b> Ticaretten ya da ortaklarla danışmaktan hiç söz edilmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>«doğru söylersin» → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Ticaret ve istişare metinde yok → ulaşılamaz.</td></tr><tr><td>C</td><td>«akrabanı gözetirsin» → ulaşılır.</td></tr><tr><td>D</td><td>«yoksula yardım edersin» → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> İstişare Peygamberimizin gerçek bir özelliğidir; ama soru <b>bu sözlerden</b> ulaşılabilecek bilgiyi soruyor. «Doğru ama metinde yok» bilgi, «ulaşılamaz» sorusunun cevabıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -384,7 +384,7 @@ LGS.add({
     "Yumuşak huyluluk insanları kazanır ve bir arada tutar."
    ],
    "a": "D",
-   "s": "<p>Enes'in anlattığı olay Peygamberimizin yumuşak huyluluğunu gösterir. Ayet de kabalığın insanları uzaklaştıracağını bildirir. İkisi birlikte, yumuşak davranışın insanları kazandırdığını gösterir (D). A aşırı genellemedir; Peygamberimiz insanlara her zaman yol göstermiştir. B'ye metinlerden ulaşılamaz. C yanlış bir yorumdur; yumuşaklık yanlışı onaylamak anlamına gelmez. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Enes: «on yıl hizmet ettim. Bana bir kez bile ‘öf’ demedi.»</li> <li>Âl-i İmrân 159: «kaba ve katı yürekli olsaydın, etrafından dağılıp giderlerdi.»</li></ul><b>İstenen</b><p>İki metinden birlikte ulaşılan yargı.</p></div><ol class=\"sv-s\"><li><b>Birinci metin</b> Peygamberimiz küçük bir hizmetçiye bile azarlamadan, yumuşak davranmıştır.</li> <li><b>İkinci metin</b> Ayet, kabalığın insanları uzaklaştıracağını bildirir; demek ki yumuşaklık insanları yakınlaştırır.</li> <li><b>Birleştir</b> <b>Yumuşak huyluluk insanları kazanır ve bir arada tutar.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>«hiçbir durumda» aşırı genelleme; Peygamberimiz her zaman yol gösterdi.</td></tr><tr><td>B</td><td>Metinlerde yaş şartı yok.</td></tr><tr><td>C</td><td>Yumuşaklık yanlışı onaylamak değildir.</td></tr><tr class=\"ok\"><td>D</td><td>İki metnin ortak sonucu → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «İki metin birlikte» sorularında her metnin tek başına söylediğini yaz, sonra ikisini birleştiren genel yargıyı seç.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -396,7 +396,7 @@ LGS.add({
     "Peygamberimiz eğitimde kolaylaştırıcı bir yol izlemiştir."
    ],
    "a": "A",
-   "s": "<p>Peygamberimiz hatayı görmezden gelmemiştir: Önce zararın giderilmesini (su dökülmesini) istemiş, sonra bedeviye doğrusunu öğretmiştir (C). Sahabileri öfkeyle müdahaleden alıkoyması B'yi, “kolaylaştırıcı” sözü D'yi destekler. Yanlışın düzeltilmeden bırakılması ise olayla çelişir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bedevi mescide idrar yaptı; sahabiler üzerine yürüdü.</li> <li>Peygamberimiz: «Onu bırakın, … bir kova su dökün. Siz kolaylaştırıcı olarak gönderildiniz…»</li> <li>Sonra bedeviye mescidin amacını «yumuşak bir dille» anlattı.</li></ul><b>İstenen</b><p>Olaydan <b>çıkarılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayın sırasını gör</b> 1) Sahabileri öfkeli müdahaleden durdurdu. 2) Zararı su dökerek giderdi. 3) Bedeviye doğrusunu öğretti.</li> <li><b>Çıkarımları eşleştir</b> Hata görmezden gelinmedi; yalnızca öfke yerine anlayışla düzeltildi. Yani yanlışı «düzeltilmeden bırakmak» olayla çelişir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hata hem giderildi hem öğretildi → çıkarılamaz.</td></tr><tr><td>B</td><td>Sahabileri öfkeden alıkoydu → çıkarılır.</td></tr><tr><td>C</td><td>Önce su döküldü, sonra öğretildi → çıkarılır.</td></tr><tr><td>D</td><td>«kolaylaştırıcı olarak gönderildiniz» → çıkarılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Onu bırakın» sözünü «yanlışı bırakın» diye anlamak; bırakılan bedevidir, yanlış ise hemen düzeltilmiştir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -408,7 +408,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "C",
-   "s": "<p>I doğrudur: Peygamberimiz durumu Ümmü Seleme'ye danışıp önerisine uymuştur. II doğrudur: Sözlü çağrıya hemen uymayan sahabiler, Peygamberimizi kurbanını keserken görünce harekete geçmiştir. III yanlıştır: Metne göre sahabiler şartlara üzülmüştür. IV yanlıştır: Bu danışma askerî bir konu değildir. İstişarenin her alanda yapılabileceğini gösterir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hudeybiye sonrası sahabiler «şartlarına üzülen» hâlde emri hemen yerine getirmedi.</li> <li>Ümmü Seleme’nin önerisi: önce kendisi kurbanını kessin, tıraş olsun. Peygamberimiz uydu; sahabiler de hemen yaptı.</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Peygamberimiz durumu eşine anlatıp önerisine uydu → istişare ✔</li> <li><b>II</b> Söze hemen uymayanlar, davranışı görünce harekete geçti → davranışla örnek daha etkili ✔</li> <li><b>III</b> Metin «şartlarına üzülen» diyor → sevinmişlerdir ✘</li> <li><b>IV</b> Burada danışılan konu askerî değil → «yalnızca askerî» ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>IV yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I ve II → doğru.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İstişare yalnızca savaşta değil, aile içi ve günlük her konuda yapılır; Peygamberimiz eşlerine de danışmıştır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -420,7 +420,7 @@ LGS.add({
     "Uhud Savaşı öncesinde savaşın nerede yapılacağını sahabilerine danışması"
    ],
    "a": "A",
-   "s": "<p>Huneyn'de Peygamberimiz tehlike anında geri çekilmeyip öne çıkmış, böylece cesaret ve kararlılığıyla sahabilere örnek olmuştur. Medine'de gece duyulan ses üzerine durumu herkesten önce kendisinin kontrol etmesi de aynı cesaretin örneğidir (Buhârî) (A). B kardeşlik ve dayanışmayı, C affediciliği, D istişareyi örnekler. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Huneyn’de Müslümanlar dağılırken Peygamberimiz «geri çekilmedi», düşmana doğru ilerledi.</li> <li>«Ben peygamberim, bunda yalan yok!» diye seslendi; sahabiler toparlandı.</li></ul><b>İstenen</b><p>Aynı özelliğin görüldüğü başka olay.</p></div><ol class=\"sv-s\"><li><b>Öne çıkan özelliği bul</b> Tehlike anında geri çekilmemek, öne atılmak: <b>cesaret ve kararlılık</b>.</li> <li><b>Şıklarda aynı özelliği ara</b> Gece duyulan korkutucu sese herkesten önce gidip «Korkmayın.» demesi de tehlikenin önüne geçen bir cesarettir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Tehlikeye ilk giden o → cesaret → doğru.</td></tr><tr><td>B</td><td>Muâhât → dayanışma.</td></tr><tr><td>C</td><td>Mekke fethi → affedicilik.</td></tr><tr><td>D</td><td>Uhud öncesi danışma → istişare.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Aynı özellik başka hangi olayda?» sorularında önce özelliği tek kelimeyle adlandır, sonra her şıkkı tek kelimeyle etiketle.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -432,7 +432,7 @@ LGS.add({
     "Peygamberimiz liderliği nedeniyle kendisine ayrıcalık tanınmasını istemiştir."
    ],
    "a": "D",
-   "s": "<p>Peygamberimiz arkadaşlarının teklifini kabul etmeyip yürüme sırasını üstlenmiştir. Bu, zorluğu eşit paylaştığını (A) ve sevabı önemsediğini (B) gösterir. Sahabilerin kendi sıralarını ona vermek istemesi saygı ve sevgilerini gösterir (C). Ayrıcalık istediği yargısı ise olaya tamamen terstir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bedir yolunda her deveye üç kişi sırayla biniyor.</li> <li>Arkadaşları «Siz binin, biz yürürüz.» deyince: «Siz yürümekte benden daha güçlü değilsiniz. Ben de sevaba sizden daha az muhtaç değilim.»</li></ul><b>İstenen</b><p>Olaydan <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Tutumu yorumla</b> Peygamberimiz teklifi reddedip yürüme sırasını üstlendi → zorluğu eşit paylaştı, ayrıcalık istemedi.</li> <li><b>Sözü yorumla</b> «sevaba… muhtaç» → sevap fırsatını önemsedi.</li> <li><b>Sahabilerin tavrı</b> Sıralarını ona vermek istemeleri → saygı ve sevgi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sırasını yürüdü → söylenebilir.</td></tr><tr><td>B</td><td>«sevaba muhtaç» → söylenebilir.</td></tr><tr><td>C</td><td>Kendi haklarını ona vermek istediler → söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Ayrıcalığı reddetti → söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Ayrıcalığı <b>teklif eden</b> sahabilerdir, isteyen Peygamberimiz değildir; ikisini karıştırma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -444,7 +444,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "B",
-   "s": "<p>Peygamberimizin toprak taşıması I'i, şiirlerle moral vermesi II'yi destekler. III'ü metin desteklemez. Ayrıca hendek fikri Selman-ı Farisi'nin önerisidir; bu yüzden III aynı zamanda tarihî bir yanılgıdır. IV'e metinde dayanak yoktur, Peygamberimiz de o sırada genç değildi. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hendek kazılırken Peygamberimiz de çalıştı, toprak taşıdı, «üzeri toza toprağa bulanmıştı».</li> <li>Şiirler söyleyerek sahabilerin moralini yüksek tuttu.</li></ul><b>İstenen</b><p>I–IV yargılarından desteklenenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Kendisi de toprak taşıdı → lider beklediği işi kendisi de yapar ✔</li> <li><b>II</b> Şiirlerle moral verdi → dayanışma güçlenir ✔</li> <li><b>III</b> Metin bu konuda bilgi vermez; üstelik hendek fikri Selman-ı Farisi’nin önerisidir ✘</li> <li><b>IV</b> Metinde yaş şartı yok ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III desteklenmez.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II → doğru.</td></tr><tr><td>C</td><td>IV desteklenmez.</td></tr><tr><td>D</td><td>III desteklenmez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hendek fikri <b>vahiy değil, istişare</b> sonucudur: Selman-ı Farisi’nin önerisi.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -456,7 +456,7 @@ LGS.add({
     "Haksızlığa uğrayanların hakkını savunması"
    ],
    "a": "C",
-   "s": "<p>İki olayda da Peygamberimiz Müslüman olmayan kişilere saygı ve ilgi göstermiştir. “O da bir insan değil mi?” sözü, insana insan olduğu için değer verdiğini açıkça gösterir (C). Olaylarda danışma (A), söz verme (B) ya da bir haksızlığa karşı çıkma (D) yoktur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Yahudi cenazesi için ayağa kalktı: «O da bir insan değil mi?»</li> <li>2: Hizmetindeki Yahudi genç hastalanınca onu ziyaret etti.</li></ul><b>İstenen</b><p>İki olayın ortak vurgusu.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> İki olayda da Peygamberimiz <b>Müslüman olmayan</b> kişilere saygı ve ilgi gösteriyor.</li> <li><b>İpucu ifade</b> «O da bir insan değil mi?» → değer, din farkına göre değil insan olmaya göre verilir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Danışma yok.</td></tr><tr><td>B</td><td>Söz verme yok.</td></tr><tr class=\"ok\"><td>C</td><td>Din ayrımı gözetmeden insana değer → doğru.</td></tr><tr><td>D</td><td>Haksızlığa karşı çıkma yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «İnsan olduğu için» değer vermek, İslam ahlakının temel ilkelerindendir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -468,7 +468,7 @@ LGS.add({
     "İnsana değer verirken toplumsal konumu değil, samimiyeti ölçü alınmalıdır."
    ],
    "a": "D",
-   "s": "<p>Ayetlerin inmesi ve Peygamberimizin sonra bu sahabiye sürekli değer vermesi, kişinin makamının değil samimiyetinin ve ihtiyacının önemli olduğunu gösterir (D). A metinle çelişir; davranışı vahiyle uyarılmıştır. B de çelişir; gözleri görmeyen sahabi vekil bırakılmıştır. C de çelişir; uyarı, davetin herkese yapılması gerektiğini gösterir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Peygamberimiz Mekke ileri gelenleriyle konuşurken gözleri görmeyen Abdullah bin Ümmü Mektûm soru sordu; Peygamberimiz yüzünü ekşitti.</li> <li>Abese suresinin ilk ayetleri inerek Peygamberimiz uyarıldı.</li> <li>Sonra ona hep ilgi gösterdi, Medine’de «vekil» bıraktı.</li></ul><b>İstenen</b><p>Bilgilerden <b>ulaşılabilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Uyarının nedenini bul</b> Kur’an, samimiyetle soru soran sahabinin, ileri gelenler yüzünden geri planda bırakılmasını uyarmıştır.</li> <li><b>Sonrasını yorumla</b> Peygamberimiz uyarıyı uygulayıp bu sahabiye önemli görev vermiştir. Ölçü: <b>makam değil, samimiyet</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Abese ayetleriyle uyarılmıştır → çelişir.</td></tr><tr><td>B</td><td>Gözleri görmeyen sahabi vekil bırakıldı → çelişir.</td></tr><tr><td>C</td><td>Uyarı, davetin herkese yapılmasını gösterir → çelişir.</td></tr><tr class=\"ok\"><td>D</td><td>Samimiyet ve ihtiyaç ölçüdür → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peygamberler insandır; vahiy gerektiğinde onları uyarır ve düzeltir. Bu, Kur’an’ın Allah’tan geldiğinin de bir işaretidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -480,7 +480,7 @@ LGS.add({
     "Görev dağılımında yakın akrabalarını öncelikli tutması"
    ],
    "a": "A",
-   "s": "<p>Siyahi ve azatlı bir köle olan Bilal'e, azatlı Zeyd'e ve genç Üsame'ye önemli görevler verilmesi; Peygamberimizin soy, renk, sosyal konum ve yaş ayrımı yapmadan herkese değer verdiğini gösterir (A). Olaylarda affetme yoktur (B). C, Üsame örneğiyle çelişir. D yanlıştır; görev alanlar akrabalık nedeniyle seçilmemiştir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Habeşistan kökenli azatlı köle Bilal → müezzin, fetihte Kâbe üzerinde ezan</li> <li>2: Azatlı köle Zeyd bin Harise → Mute’de komutan</li> <li>3: Yaşça büyükler varken genç Üsame → komutan</li></ul><b>İstenen</b><p>Olayların ortak tutumu.</p></div><ol class=\"sv-s\"><li><b>Kişilerin ortak yönünü bul</b> Bilal siyahi ve azatlı, Zeyd azatlı, Üsame genç. O dönemin toplumunda bu kişiler soy, renk ya da yaş yüzünden geri planda tutulabilirdi.</li> <li><b>Tutumu adlandır</b> Peygamberimiz onlara önemli görevler vererek kişileri <b>soy, renk, yaşa göre değil erdem ve yeteneğe göre</b> değerlendirmiştir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Erdem ve yetenek ölçüsü → doğru.</td></tr><tr><td>B</td><td>Olaylarda affetme yok.</td></tr><tr><td>C</td><td>Genç Üsame örneğiyle çelişir.</td></tr><tr><td>D</td><td>Görevliler akrabalık nedeniyle seçilmedi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Veda Hutbesi’ndeki «Üstünlük ancak takvadadır» ilkesi, bu atamalarda uygulamaya dökülmüştür.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -492,7 +492,7 @@ LGS.add({
     "I. Takrîrî – II. Fiilî – III. Kavlî"
    ],
    "a": "C",
-   "s": "<p>I, Peygamberimizin bir sözüdür: kavlî. II'de Hz. Osman, Peygamberimizin abdest alışını (davranışını) aktarır: fiilî. Sözü söyleyenin sahabi olması onu kavlî sünnet yapmaz. III'te bir sahabinin uygulamasına Peygamberimiz karşı çıkmamış, gülümseyerek onaylamıştır: takrîrî. Diğer şıklar bu türleri karıştırmaktadır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kavlî = söz, fiilî = davranış, takrîrî = sahabinin davranışını onaylama.</li> <li>I: «Namazı benim kıldığım gibi kılın.»</li> <li>II: Hz. Osman «Resulullah’ı benim aldığım gibi abdest alırken gördüm.»</li> <li>III: Amr bin Âs teyemmümle namaz kıldırdı; Peygamberimiz «gülümsemiş ve bir şey dememiştir».</li></ul><b>İstenen</b><p>Örnek – sünnet türü doğru eşleştirmesi.</p></div><ol class=\"sv-s\"><li><b>I</b> Peygamberimizin kendi sözü. <span class=\"sv-m\">I → kavlî</span></li> <li><b>II</b> Aktarılan şey Peygamberimizin abdest alma <b>davranışı</b>. <span class=\"sv-m\">II → fiilî</span></li> <li><b>III</b> Sahabi bir şey yaptı, Peygamberimiz itiraz etmedi. <span class=\"sv-m\">III → takrîrî</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>II takrîrî değil, III fiilî değil.</td></tr><tr><td>B</td><td>I fiilî değil, II kavlî değil.</td></tr><tr class=\"ok\"><td>C</td><td>Kavlî – fiilî – takrîrî → doğru.</td></tr><tr><td>D</td><td>I takrîrî değil, III kavlî değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kime ait olduğunu sor: <b>Peygamberin sözü</b> → kavlî; <b>Peygamberin yaptığı</b> → fiilî; <b>sahabinin yaptığı + Peygamberin sessiz onayı</b> → takrîrî.</div><div class=\"sv-w\"><b>Tuzak:</b> II’de konuşan Hz. Osman olduğu için kavlî sanmak; Hz. Osman’ın sözü, Peygamberimizin <b>davranışını</b> aktarır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -504,7 +504,7 @@ LGS.add({
     "Müminler Peygamberin emir ve yasaklarına uymalıdır."
    ],
    "a": "B",
-   "s": "<p>A Nisâ 80'den, C Âl-i İmrân 31'den, D Haşr 7'den doğrudan çıkar. Ayetler Peygambere uymanın gerekli olduğunu bildirir; ancak sıralama hakkında bilgi vermez. Ayrıca sünnet, Kur'an'dan <b>sonra</b> ikinci temel kaynaktır. B hem ayetlerden çıkarılamaz hem de yanlıştır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Haşr 7: «Peygamber size ne verdiyse onu alın…»</li> <li>Nisâ 80: «Kim Peygambere itaat ederse Allah’a itaat etmiş olur.»</li> <li>Âl-i İmrân 31: «Allah’ı seviyorsanız bana uyun…»</li></ul><b>İstenen</b><p>Ayetlerden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Ayetleri şıklarla eşleştir</b> <span class=\"sv-m\">Nisâ 80 → A</span> <span class=\"sv-m\">Âl-i İmrân 31 → C</span> <span class=\"sv-m\">Haşr 7 → D</span></li> <li><b>Eşi olmayanı incele</b> B’de sıralama yargısı var. Ayetler sünnete uymayı emreder ama sıralama vermez; üstelik bilgi yanlıştır: Kur’an birinci, sünnet <b>ikinci</b> temel kaynaktır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Nisâ 80 → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Ayetlerde yok ve bilgi olarak yanlış → ulaşılamaz.</td></tr><tr><td>C</td><td>Âl-i İmrân 31 → ulaşılır.</td></tr><tr><td>D</td><td>Haşr 7 → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’ın temel kaynakları sırası: <b>1) Kur’an 2) Sünnet</b>.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -516,7 +516,7 @@ LGS.add({
     "Peygamberimiz ahlakı yalnızca sözle anlatmış, uygulamayı başkalarına bırakmıştır."
    ],
    "a": "D",
-   "s": "<p>Hadis, peygamberliğin amaçlarından birinin güzel ahlak olduğunu gösterir (A). “Tamamlamak” sözü, güzel ahlakın daha önce de bilindiğini ima eder (C). Kalem 4 ve Hz. Aişe'nin sözü B'yi destekler. “Onun ahlakı Kur'an'dı” sözü, Peygamberimizin Kur'an'ı yaşayarak gösterdiğini de anlatır. Bu yüzden D'deki “yalnızca sözle anlattı” yargısı bilgilerle çelişir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kalem 4: «Sen elbette yüce bir ahlak üzeresin.»</li> <li>Hadis: «Ben ancak güzel ahlakı <b>tamamlamak</b> için gönderildim.»</li> <li>Hz. Aişe: «Onun ahlakı Kur’an’dı.»</li></ul><b>İstenen</b><p>Bilgilerden <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Hadisi yorumla</b> Peygamberliğin amaçlarından biri güzel ahlaktır (A). «tamamlamak» kelimesi, güzel ahlakın önceden de bilindiğini gösterir (C).</li> <li><b>Hz. Aişe’nin sözünü yorumla</b> «Onun ahlakı Kur’an’dı» → Kur’an’ı yaşayarak gösterdi (B). Yani ahlakı yalnızca sözle anlatmadı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hadisten çıkar → söylenebilir.</td></tr><tr><td>B</td><td>Kalem 4 ve Hz. Aişe’nin sözü → söylenebilir.</td></tr><tr><td>C</td><td>«tamamlamak» kelimesi → söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>«yalnızca sözle» → «Onun ahlakı Kur’an’dı» ile çelişir → söylenemez.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C’yi metinde açık yazmadığı için elemek; «tamamlamak» kelimesi, var olan bir şeyin eksiğini gidermek anlamına gelir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -528,7 +528,7 @@ LGS.add({
     "Yetimleri gözetmeyi öğütleyip onlara şefkatle yaklaşması"
    ],
    "a": "A",
-   "s": "<p>Ayette Peygamberimizin müminlere düşkünlüğü, şefkati ve merhameti vurgulanır. Ümmetine zorluk çıkmasın diye misvakı emretmemesi (Buhârî) (B), hasta ziyareti (C) ve yetimlere şefkat (D) bu özelliğin örnekleridir. Bedir'deki olay ise istişarenin örneğidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Tevbe 128: «sıkıntıya uğramanız ona çok ağır gelir… çok düşkün, … çok şefkatli ve merhametlidir.»</li></ul><b>İstenen</b><p>Bu özelliğe <b>örnek gösterilemeyecek</b> olay.</p></div><ol class=\"sv-s\"><li><b>Vurgulanan özellik</b> Müminlere düşkünlük, <b>şefkat ve merhamet</b>.</li> <li><b>Şıkları etiketle</b> <span class=\"sv-m\">Misvakı zorluk olmasın diye emretmemesi → şefkat</span> <span class=\"sv-m\">Hasta ziyareti → şefkat</span> <span class=\"sv-m\">Yetimlere ilgi → şefkat</span> <span class=\"sv-m\">Bedir’de Hubab’ın önerisi → istişare</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İstişare örneği → şefkate örnek değil.</td></tr><tr><td>B</td><td>Ümmete zorluk vermemek → şefkat.</td></tr><tr><td>C</td><td>Hasta ziyareti → şefkat.</td></tr><tr><td>D</td><td>Yetimlere şefkat → şefkat.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bedir’de yer seçimi her zaman <b>istişare</b> örneğidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -540,7 +540,7 @@ LGS.add({
     "Peygamberimizin güvenilirliği peygamberlikten önce de biliniyordu."
    ],
    "a": "B",
-   "s": "<p>Meysere'nin anlattıkları ve kervanın kazancı A'yı; hadisteki müjde C'yi; olayın gençlik yıllarında geçmesi D'yi destekler. Metin yalnızca bu yolculuğu ve Meysere'nin bu yolculukta ona eşlik ettiğini anlatır. Peygamberimizin onu her yolculukta görevlendirdiğine dair bir bilgi yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Gençliğinde Hz. Hatice’nin kervanını Şam’a götürdü; Meysere eşlik etti ve dürüstlüğünü anlattı.</li> <li>Hadis: «Doğru sözlü, güvenilir tüccar; peygamberler, sıddıklar ve şehitlerle beraberdir.»</li></ul><b>İstenen</b><p>Olay ve hadisten <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Çıkan bilgileri yaz</b> Dürüstlük itibar kazandırdı (A); dürüst ticaret değerlidir (C); olay peygamberlikten önce (D).</li> <li><b>Aşırı genellemeyi bul</b> Metin <b>tek bir</b> yolculuğu anlatıyor; «hep Meysere’yi görevlendirdi» bilgisi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Meysere’nin anlattıkları → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>«hep» yargısı metinde yok → ulaşılamaz.</td></tr><tr><td>C</td><td>Hadisteki müjde → ulaşılır.</td></tr><tr><td>D</td><td>Gençlik yıllarında → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir defalık olaydan «hep, her zaman» genellemesi çıkarılamaz.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -552,7 +552,7 @@ LGS.add({
     "Emir"
    ],
    "a": "C",
-   "s": "<p>Peygamberimiz şakalaşmış fakat şakada bile doğruluktan ayrılmamıştır. Can'ın tutumu buna uygundur (C). Ece ve Emir şaka için yalanı mazur görmüştür; hadis bunu açıkça kınar. Defne ise şakayı tümüyle yasak saymıştır; oysa Peygamberimiz de şakalaşmıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Peygamberimiz şakalaşırdı ama «şakasında bile doğrudan başka bir şey söylemezdi».</li> <li>Hadis: «İnsanları güldürmek için konuşup yalan söyleyene yazıklar olsun!»</li></ul><b>İstenen</b><p>Görüşü Peygamberimizin örnekliğine uygun öğrenci.</p></div><ol class=\"sv-s\"><li><b>İki ilkeyi çıkar</b> 1) Şaka yapmak serbesttir. 2) Şakada yalan söylenmez.</li> <li><b>Öğrencileri ilkelere göre değerlendir</b> İki ilkeye birden uyan yalnızca Can’dır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ece uydurma haber anlattı → 2. ilkeye aykırı.</td></tr><tr><td>B</td><td>Defne şakayı tamamen yasak sanıyor → 1. ilkeye aykırı.</td></tr><tr class=\"ok\"><td>C</td><td>Can şakada yalana kaçmıyor → doğru.</td></tr><tr><td>D</td><td>Emir küçük yalanı mazur görüyor → 2. ilkeye aykırı.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Defne yalan söylemediği için doğru görünebilir; ama Peygamberimiz şaka yaptığından «şaka tamamen yasak» görüşü de yanlıştır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -564,7 +564,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "A",
-   "s": "<p>Birinci hadis I'i, ikinci hadis II'yi doğrudan destekler. III, “alnının teri kurumadan” ifadesiyle çelişir. IV'e ulaşılamaz; hadis el emeğiyle kazanmayı herkes için değerli sayar. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«İşçiye ücretini alnının teri kurumadan veriniz.»</li> <li>«Hiç kimse, elinin emeğinden daha hayırlı bir lokma yememiştir.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> «alnının teri kurumadan» → ücret geciktirilmez ✔</li> <li><b>II</b> «elinin emeğinden hayırlı lokma» → kendi emeğiyle kazanmak değerli ✔</li> <li><b>III</b> Ödeme işverenin keyfine bırakılmamış; hemen verilmeli ✘</li> <li><b>IV</b> Hadis herkese hitap eder, yoksullara değil ✘</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I ve II → doğru.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>IV yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Alnının teri kurumadan» = gecikmeden, hemen. Emeğin hakkı bir <b>kul hakkı</b>dır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -576,7 +576,7 @@ LGS.add({
     "Kendisine bağıran arkadaşına o an cevap vermeyip sakinleşince konuşan Elif"
    ],
    "a": "D",
-   "s": "<p>Hadise göre asıl güç, öfke anında kendini kontrol edebilmektir. Elif öfkesine hâkim olup sakinleştikten sonra konuşmuştur (D). Arda anında karşılık vermiş, Mete sesini yükseltmiştir. Zeynep ise öfkesini başka bir yoldan, dolaylı bir saldırıyla dışa vurmuştur. Bu üç davranışta da öfke kontrol edilmemiştir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Asıl güçlü olan, öfkelendiği zaman kendine hâkim olandır.»</li></ul><b>İstenen</b><p>Davranışı hadisle örtüşen öğrenci.</p></div><ol class=\"sv-s\"><li><b>Ölçütü belirle</b> Güç = öfke anında kendini kontrol etmek.</li> <li><b>Öğrencileri ölçüte göre tara</b> Öfkesini kontrol edip sakinleşince konuşan tek kişi Elif’tir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Arda hemen karşılık verdi → öfke kontrolü yok.</td></tr><tr><td>B</td><td>Zeynep imalı paylaşımla öfkesini dolaylı yoldan kustu.</td></tr><tr><td>C</td><td>Mete sesini yükseltti.</td></tr><tr class=\"ok\"><td>D</td><td>Elif sakinleşince konuştu → doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Zeynep bağırmadığı için sakin görünür; ama imalı paylaşım da öfkeyi kontrol etmek değil, başka yoldan dışa vurmaktır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -588,7 +588,7 @@ LGS.add({
     "Peygamberimiz korunmaya muhtaç kişilere karşı duyarlıdır."
    ],
    "a": "B",
-   "s": "<p>Hadis, yetimi gözeten “herkesi” Peygamberimizle cennette yan yana olmakla müjdeler. Bu, A'yı ve D'yi destekler. İki parmağını göstermesi C'yi destekler. Hadiste sorumluluğu akrabalarla sınırlayan bir ifade yoktur; tam tersine herkes teşvik edilir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>İki parmağını yan yana göstererek: «Ben ve yetimi koruyup gözeten kimse cennette böyle yan yanayız.»</li></ul><b>İstenen</b><p>Hadisten <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Hadisin mesajı</b> Yetimi gözeten <b>herkes</b> büyük bir müjdeyle teşvik ediliyor → yetimi gözetmek değerlidir, Peygamberimiz muhtaçlara duyarlıdır.</li> <li><b>Anlatım yöntemi</b> Parmaklarını yan yana göstermesi, sözünü somut bir işaretle güçlendirmesidir.</li> <li><b>Sınırlamayı kontrol et</b> Hadiste sorumluluğu akrabalara özgü kılan hiçbir ifade yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cennet müjdesi → söylenebilir.</td></tr><tr class=\"ok\"><td>B</td><td>«yalnızca akrabalar» hadiste yok; herkes teşvik ediliyor → söylenemez.</td></tr><tr><td>C</td><td>Parmak işareti → söylenebilir.</td></tr><tr><td>D</td><td>Yetime duyarlılık → söylenebilir.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> C’yi «hadiste söylenmiyor» diye elemek; parmak göstermesi bizzat olayın içinde anlatılıyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -600,7 +600,7 @@ LGS.add({
     "Zorluklar karşısında davasından vazgeçmemesi"
    ],
    "a": "C",
-   "s": "<p>Peygamberimiz soya dayalı ayıplamayı “cahiliye ahlakı” diye nitelemiş, hizmetindekileri de “kardeş” olarak tanımlamıştır. Onlara eşit davranılmasını istemiştir (C). Olayda danışma (B) veya davada kararlılık (D) yoktur. A da yanlıştır; öğüdün konusu din bilgisi değil, eşit ve adil davranıştır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ebu Zer bir adamı «annesinin soyu nedeniyle» ayıpladı.</li> <li>Peygamberimiz: «Sen kendisinde <b>cahiliye ahlakı</b> bulunan birisin. Onlar sizin kardeşlerinizdir. Yediğinizden onlara yedirin…»</li></ul><b>İstenen</b><p>Olayda öne çıkan tutum.</p></div><ol class=\"sv-s\"><li><b>Eleştirilen davranış</b> Soya göre ayıplamak «cahiliye ahlakı» sayılıyor, yani İslam’ın reddettiği bir davranış.</li> <li><b>Önerilen davranış</b> Hizmetindekiler «kardeş»tir; aynı yemek, aynı giyecek, güç yetmeyen işte yardım → <b>eşitlik ve kardeşlik</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Öğüt din bilgisi değil, eşit davranış hakkında.</td></tr><tr><td>B</td><td>Danışma yok.</td></tr><tr class=\"ok\"><td>C</td><td>Soy ayrımını reddedip kardeşliği esas alma → doğru.</td></tr><tr><td>D</td><td>Davada kararlılık konusu yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Cahiliye ahlakı</b>: İslam öncesi Arap toplumundaki soy övünmesi, kabilecilik gibi kötü alışkanlıklar.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -612,7 +612,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "D",
-   "s": "<p>Birinci hadis, kişinin kendisi için istediğini başkası için de istemesini imanın gereği sayar. Bu, I'i destekler. Aynı ilkenin öbür yüzü olarak IV'ü de destekler. İkinci hadis komşunun açlığına duyarsız kalmayı olgun imanla bağdaştırmaz (II). III yanlıştır; hadislerde “kardeş” ve “komşu” geçer, yardımlaşma akrabalarla sınırlanmaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«kendisi için istediğini kardeşi için de istemedikçe… iman etmiş olmaz.»</li> <li>«Komşusu açken tok yatan kimse (olgun) mümin değildir.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Yalnızca kendini düşünmek imanın olgunluğuyla bağdaşmaz (1. hadis) ✔</li> <li><b>II</b> Aç komşuya duyarsız kalmak olgun imanla bağdaşmaz (2. hadis) ✔</li> <li><b>III</b> Hadislerde «kardeş» ve «komşu» geçiyor; akraba sınırı yok ✘</li> <li><b>IV</b> Kendine istediğini başkasına istemek, kendine istemediği kötülüğü de başkasına istememeyi gerektirir (1. hadisin öbür yüzü) ✔</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve IV → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Altın kural: <b>Kendin için ne istiyorsan başkası için de onu iste.</b></div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -624,7 +624,7 @@ LGS.add({
     "Sevr Mağarası'nda endişelenen Hz. Ebu Bekir'i teselli etmesi"
    ],
    "a": "A",
-   "s": "<p>Hadis, Allah katında değer ölçüsünün görünüş ve servet değil, kalp ve ameller olduğunu bildirir. Veda Hutbesi'nde ırk ve renk üstünlüğünü reddedip üstünlüğü takvaya bağlaması aynı ilkenin uygulamasıdır (A). B istişare ve tedbiri, C sözünde durmayı, D Allah'a güveni ve cesareti örnekler. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Allah sizin dış görünüşünüze ve mallarınıza bakmaz; kalplerinize ve amellerinize bakar.»</li></ul><b>İstenen</b><p>Hadisle aynı doğrultudaki uygulama.</p></div><ol class=\"sv-s\"><li><b>Hadisin ilkesi</b> Allah katında değer ölçüsü görünüş ve servet değil, <b>kalp ve ameller</b>dir.</li> <li><b>Şıklarda aynı ilkeyi ara</b> Veda Hutbesi’nde ırk ve renk üstünlüğü reddedilip «üstünlük ancak takvada» denmesi aynı ilkedir: dış özellikler değil, iç dünya ve davranış ölçüdür.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Irk/renk değil takva ölçüsü → aynı doğrultu.</td></tr><tr><td>B</td><td>Hendek → istişare ve tedbir.</td></tr><tr><td>C</td><td>Hudeybiye → ahde vefa.</td></tr><tr><td>D</td><td>Sevr → tevekkül ve cesaret.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Takva</b> = Allah’a saygıyla O’nun emirlerine uyma bilinci; görünüşle değil kalp ve davranışla ilgilidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -636,7 +636,7 @@ LGS.add({
     "Duru"
    ],
    "a": "C",
-   "s": "<p>Hadise göre Müslüman, diliyle ve eliyle kimseye zarar vermeyen, güven veren kişidir. Bora'nın arkadaşıyla alay etmesi dil yoluyla verilen bir zarardır. Bunun yazılı mesajla yapılması da sonucu değiştirmez (C). Selin komşusunu düşünmüş, Kaan sır saklamış, Duru emanete özen göstermiştir. Bu davranışlar hadisle uyumludur. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Müslüman, <b>elinden ve dilinden</b> Müslümanların emin olduğu kimsedir.»</li> <li>Selin komşusunu düşünür; Kaan sır saklar; Bora mesaj grubunda arkadaşıyla alay eder; Duru ödünç kitabı zamanında verir.</li></ul><b>İstenen</b><p>Davranışı hadisle <b>bağdaşmayan</b> öğrenci.</p></div><ol class=\"sv-s\"><li><b>Ölçütü belirle</b> Eliyle ve diliyle kimseye zarar vermemek, güven vermek.</li> <li><b>Öğrencileri tara</b> Alay etmek dil yoluyla verilen bir zarardır; yazılı mesajla yapılması bunu değiştirmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Selin komşuyu rahatsız etmemeye özen gösterir → uyumlu.</td></tr><tr><td>B</td><td>Kaan sır saklar → uyumlu.</td></tr><tr class=\"ok\"><td>C</td><td>Bora alay eder → dil zararı → bağdaşmaz.</td></tr><tr><td>D</td><td>Duru emanete özen gösterir → uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Günümüzde «dil» yalnızca konuşma değil; mesaj, yorum ve paylaşımlar da dilin zararına girer.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -648,7 +648,7 @@ LGS.add({
     "Her birey yalnızca kendi işinden sorumludur."
    ],
    "a": "B",
-   "s": "<p>Hadiste toplum bir bedene, bireyler de organlara benzetilir. Bir organın acısını bütün bedenin paylaşması gibi müminler de birbirinin sıkıntısını paylaşmalıdır (B). A ve C benzetmeyi sözcük anlamıyla yorumlayıp sağlık konusuna kaydırır. D ise hadisteki ortaklık ve dayanışma fikrine terstir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: Müminler «bir vücut gibidir. Vücudun bir organı rahatsızlanınca diğer organlar da uykusuzluk ve ateşle ona ortak olur.»</li></ul><b>İstenen</b><p>Benzetmeyle anlatılmak istenen.</p></div><ol class=\"sv-s\"><li><b>Benzetmeyi çöz</b> <span class=\"sv-m\">vücut → toplum</span> <span class=\"sv-m\">organ → birey</span> <span class=\"sv-m\">organın acısı → bireyin sıkıntısı</span></li> <li><b>Mesajı çıkar</b> Bir organın acısını bütün beden paylaştığı gibi bir kişinin sıkıntısı da toplumun ortak derdidir → <b>dayanışma</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Benzetmeyi sözcük anlamıyla sağlık konusuna kaydırıyor.</td></tr><tr class=\"ok\"><td>B</td><td>Sıkıntıyı paylaşma, dayanışma → doğru.</td></tr><tr><td>C</td><td>Uyku kelimesine takılan yorum.</td></tr><tr><td>D</td><td>Ortaklık fikrinin tersi.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Benzetme sorularında «uykusuzluk, ateş» gibi kelimeleri gerçek anlamıyla almak; asıl anlatılan <b>toplumsal dayanışma</b>dır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -660,7 +660,7 @@ LGS.add({
     "Teşekkürün yalnızca Allah'a edilmesi gerektiğini savunan Baran"
    ],
    "a": "A",
-   "s": "<p>Ayşe hem yemeği ayıplamamış hem de emeğe teşekkür etmiştir. Bu, iki bilgiyle de uyumludur (A). Kerem yemeği ayıplamıştır. Nil teşekkürü beğeniye bağlamıştır; oysa teşekkür emeğe karşılıktır. Baran'ın görüşü ise hadisle çelişir; hadis insanlara teşekkür etmeyi de gerekli görür. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Resulullah hiçbir yemeği ayıplamazdı.»</li> <li>«İnsanlara teşekkür etmeyen Allah’a da şükretmez.»</li></ul><b>İstenen</b><p>İki bilgiyle birlikte uyumlu davranış.</p></div><ol class=\"sv-s\"><li><b>İki ölçütü çıkar</b> 1) Yemeği ayıplamamak. 2) Emeğe teşekkür etmek.</li> <li><b>Öğrencileri ölçütlere göre tara</b> İki ölçüte birden uyan yalnızca Ayşe’dir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Eleştirmiyor + teşekkür ediyor → doğru.</td></tr><tr><td>B</td><td>Kerem yemeği ayıplıyor.</td></tr><tr><td>C</td><td>Nil teşekkürü beğeniye bağlıyor; teşekkür emeğe yapılır.</td></tr><tr><td>D</td><td>Hadis insanlara teşekkürü de gerekli görür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «İki bilgiyle uyumlu» denirse şık iki ölçütü <b>birlikte</b> karşılamalı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -672,7 +672,7 @@ LGS.add({
     "Peygamberimiz kız çocuklarına erkek çocuklarından daha az değer vermiştir."
    ],
    "a": "D",
-   "s": "<p>Kızını ayağa kalkarak karşılaması ve yerine oturtması, sevgi ve saygıyı gösterir (A). Hadis, hayırlı olmanın ölçüsünü aileye davranışa bağlar (B). Peygamberimiz bu sözü kendi davranışıyla da göstermiştir (C). Kızına gösterdiği bu yakınlık, D'deki yargıyla açıkça çelişir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Fatıma gelince Peygamberimiz «ayağa kalkar, onu öper ve kendi yerine oturturdu».</li> <li>Hadis: «Sizin en hayırlınız, ailesine karşı en hayırlı olanınızdır. Ben de aileme karşı en hayırlı olanınızım.»</li></ul><b>İstenen</b><p>Bilgilerden <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Birinci bilgi</b> Kızını ayağa kalkarak karşılamak → sevgi ve saygı (A).</li> <li><b>İkinci bilgi</b> Hayırlı olmanın ölçüsü aileye davranıştır (B); «Ben de…» diyerek sözünü kendisi yaşar (C).</li> <li><b>Çelişeni bul</b> Kızına bu kadar değer vermesi, kız çocuklarına az değer verdiği yargısıyla açıkça çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ayağa kalkıp öpmesi → söylenebilir.</td></tr><tr><td>B</td><td>Hadisin ölçüsü → söylenebilir.</td></tr><tr><td>C</td><td>«Ben de aileme karşı en hayırlınızım» → söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Kızına gösterdiği saygıyla çelişir → söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cahiliye döneminde kız çocukları değersiz görülürdü; Peygamberimizin Hz. Fatıma’ya davranışı bu anlayışa karşı güçlü bir örnektir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -684,7 +684,7 @@ LGS.add({
     "Haksızlığa uğrayanların korunmasını güvence altına aldığına"
    ],
    "a": "C",
-   "s": "<p>Din özgürlüğü ve ortak savunma maddeleri A'yı, anlaşmanın yazılı olması B'yi, zulme uğrayana yardım maddesi D'yi destekler. Metinde maddelerin nasıl hazırlandığına dair bir bilgi yoktur. Bu yüzden C'ye ulaşılamaz. Ayrıca bu yargı, Peygamberimizin istişareye verdiği önemle de bağdaşmaz. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Medine Sözleşmesi maddeleri: din serbestliği, şehri birlikte savunma, «Zulme uğrayana yardım edilir», anlaşmazlıkların Peygamberimize getirilmesi.</li></ul><b>İstenen</b><p>Bilgilerden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Maddeleri şıklarla eşleştir</b> <span class=\"sv-m\">din serbestliği + ortak savunma → A</span> <span class=\"sv-m\">yazılı anlaşma → B</span> <span class=\"sv-m\">zulme uğrayana yardım → D</span></li> <li><b>Bilgi olmayanı bul</b> Metinde maddelerin <b>nasıl hazırlandığı</b> hiç anlatılmıyor; «kimseye danışmadan» yargısına dayanak yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Din serbestliği → ulaşılır.</td></tr><tr><td>B</td><td>Yazılı sözleşme → ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Hazırlanış süreci metinde yok; istişare anlayışıyla da çelişir → ulaşılamaz.</td></tr><tr><td>D</td><td>Zulme uğrayana yardım → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Medine Sözleşmesi</b>: farklı dinden toplulukların bir arada barış içinde yaşamasını sağlayan ilk yazılı anlaşmalardan biri.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -696,7 +696,7 @@ LGS.add({
     "Peygamberimiz yalnızca Müslümanlarla görüşmeyi uygun görmüştür."
    ],
    "a": "B",
-   "s": "<p>Ayet inançta zorlamayı reddeder. Peygamberimiz de Hristiyan heyetin kendi ibadetini yapmasına izin vererek bu ilkeyi uygulamıştır (B). A ve D olayla çelişir; heyet mescitte ağırlanmış ve onlarla görüşülmüştür. C ise ayetle doğrudan çelişir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Necranlı Hristiyan heyet Mescid-i Nebevi’de ağırlandı; ibadet vakti gelince «kendi ibadetlerini yapmasına izin verdi».</li> <li>Bakara 256: «Dinde zorlama yoktur.»</li></ul><b>İstenen</b><p>Olay ve ayetten birlikte ulaşılan yargı.</p></div><ol class=\"sv-s\"><li><b>Ayetin ilkesi</b> İnanç konusunda kimse zorlanamaz → <b>inanç özgürlüğü</b>.</li> <li><b>Olaydaki uygulama</b> Peygamberimiz farklı dinden misafirlerine kendi ibadetlerini yapma imkânı tanıdı → ilkeyi uyguladı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Heyet mescitte ağırlandı → çelişir.</td></tr><tr class=\"ok\"><td>B</td><td>İnanç özgürlüğü hem ayette hem uygulamada → doğru.</td></tr><tr><td>C</td><td>«Dinde zorlama yoktur» ile çelişir.</td></tr><tr><td>D</td><td>Hristiyan heyetle görüştü → çelişir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ayet = ilke, olay = uygulama. Doğru şık ikisini birleştirir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -708,7 +708,7 @@ LGS.add({
     "I ve II"
    ],
    "a": "D",
-   "s": "<p>I'de toplumun en alt kesiminden birine bile vakit ayırması, II'de basit bir daveti de küçümsememesi alçakgönüllülüğünü gösterir. Bu ikisi tevazu örneğidir. III cesaret ve kararlılığa, IV ise istişareye örnektir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Hizmetçi kız bile elinden tutup istediği yere götürebilirdi.</li> <li>II: «Bir paça yemeğine bile davet edilsem icabet ederim.»</li> <li>III: Huneyn’de yerinden ayrılmadı.</li> <li>IV: Bedir’de Hubab’ın önerisiyle ordunun yerini değiştirdi.</li></ul><b>İstenen</b><p><b>Tevazu</b> örneği olanlar.</p></div><ol class=\"sv-s\"><li><b>Her olayı etiketle</b> <span class=\"sv-m\">I → toplumun en alt kesimine vakit ayırma → tevazu</span> <span class=\"sv-m\">II → basit daveti küçümsememe → tevazu</span> <span class=\"sv-m\">III → cesaret ve kararlılık</span> <span class=\"sv-m\">IV → istişare</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>III cesaret.</td></tr><tr><td>B</td><td>IV istişare.</td></tr><tr><td>C</td><td>İkisi de tevazu değil.</td></tr><tr class=\"ok\"><td>D</td><td>I ve II → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Tevazu</b> = kendini başkalarından üstün görmemek; kimseyi ve hiçbir daveti küçümsememek.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -720,7 +720,7 @@ LGS.add({
     "4"
    ],
    "a": "A",
-   "s": "<p>Peygamberimiz vahiyle bildirilmeyen toplumsal işlerde sahabileriyle istişare etmiştir (Bedir, Uhud, Hendek). Kimseye danışmadan karar vermek bu örneklikle bağdaşmaz (1). 2, Mescid-i Nebevi'nin ve hendeğin yapımında bizzat çalışan Peygamberimizin tevazusuna uygundur. 3 hakkı gözetmeye (Mahzumoğulları olayı), 4 emanete sadakate uygundur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Kararları «kimseye danışmadan tek başına» verecek.</li> <li>2: Temizlikte kendisine de görev alacak.</li> <li>3: Kural en yakın arkadaşına da uygulanacak.</li> <li>4: Ödünç kitapları zamanında verecek.</li></ul><b>İstenen</b><p>Peygamberimizin örnekliğiyle <b>bağdaşmayan</b> karar.</p></div><ol class=\"sv-s\"><li><b>Her kararı bir örnekle karşılaştır</b> <span class=\"sv-m\">2 → Mescid ve hendekte çalışması (tevazu) ✔</span> <span class=\"sv-m\">3 → Mahzumlu kadın olayı (hakkı gözetme) ✔</span> <span class=\"sv-m\">4 → emanete sadakat ✔</span></li> <li><b>Uymayanı bul</b> Peygamberimiz toplumu ilgilendiren işlerde Bedir, Uhud ve Hendek’te olduğu gibi <b>istişare</b> etmiştir. 1. karar buna aykırıdır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Danışmadan karar → istişareye aykırı → bağdaşmaz.</td></tr><tr><td>B</td><td>Görev almak → tevazu, uyumlu.</td></tr><tr><td>C</td><td>Ayrıcalık tanımamak → uyumlu.</td></tr><tr><td>D</td><td>Emanete özen → uyumlu.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Zaman kaybı olmasın» gerekçesi mantıklı görünebilir; ama gerekçe, danışmama davranışını Peygamber örnekliğine uygun hâle getirmez.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -732,7 +732,7 @@ LGS.add({
     "Sünnet, Kur'an'daki ibadetlerin nasıl yapılacağını açıklar."
    ],
    "a": "D",
-   "s": "<p>Metne göre Kur'an ibadetleri emreder, Peygamberimiz ise bunların nasıl yapılacağını sözü ve uygulamasıyla göstermiştir. Yani sünnet Kur'an'ı açıklar (D). A ve C metinle çelişir; ayrıntılar Kur'an'da bildirilmemiştir. B de yanlıştır; haccın uygulamalarını Peygamberimiz Veda Haccı'nda bizzat göstermiştir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kur’an namazı ve haccı emreder, ama «rekât sayıları ve haccın bütün uygulamaları ayrıntılı olarak bildirilmez».</li> <li>«Hac ibadetinizi benden alın.»; haccı bizzat yaparak, namazı kıldırarak öğretti.</li></ul><b>İstenen</b><p>Bilgilerden <b>ulaşılan</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Kur’an’ın rolü</b> İbadeti emreder, ana çerçeveyi verir.</li> <li><b>Sünnetin rolü</b> Peygamberimiz ibadetin nasıl yapılacağını sözüyle ve uygulamasıyla gösterir → sünnet Kur’an’ı <b>açıklar</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rekâtlar Kur’an’da ayrıntılı yok → çelişir.</td></tr><tr><td>B</td><td>Haccı Peygamberimiz bizzat gösterdi → çelişir.</td></tr><tr><td>C</td><td>Ayrıntılar sünnetle öğrenilir → çelişir.</td></tr><tr class=\"ok\"><td>D</td><td>Sünnet ibadetlerin nasıl yapılacağını açıklar → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sünnetin görevleri: Kur’an’ı <b>açıklar</b>, ayrıntılandırır ve uygulamalı olarak gösterir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "orta",
@@ -744,7 +744,7 @@ LGS.add({
     "Ticarette dürüst davrandığına"
    ],
    "a": "A",
-   "s": "<p>Bir kişinin ailesine dönme imkânı varken Peygamberimizin yanında kalmayı seçmesi, ondan gördüğü sevgi ve şefkati gösterir (A). B ve D doğru bilgiler olsa da bu olaydan çıkarılamaz. C ise olayla çelişir; Peygamberimiz Zeyd'i serbest bırakmış, seçimi ona bırakmıştır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Zeyd’in ailesi onu almaya geldi; Peygamberimiz «isterse ailesiyle gidebileceğini» söyledi.</li> <li>Zeyd, Peygamberimizin yanında kalmayı seçti; Peygamberimiz onu azat edip evlat edindi.</li></ul><b>İstenen</b><p>Zeyd’in tercihinden ulaşılabilecek bilgi.</p></div><ol class=\"sv-s\"><li><b>Tercihi yorumla</b> Bir çocuğun kendi ailesi yerine Peygamberimizi seçmesi, ondan çok büyük sevgi ve şefkat gördüğünü gösterir.</li> <li><b>Sonucu yaz</b> Peygamberimiz yanındakilere şefkatle davranıp <b>gönüllerini kazanmıştır</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Gönül kazanan şefkat → doğru.</td></tr><tr><td>B</td><td>Hilfu’l-Fudul doğru bilgi ama bu olaydan çıkmaz.</td></tr><tr><td>C</td><td>Seçimi Zeyd’e bıraktı → çelişir.</td></tr><tr><td>D</td><td>Ticaret konusu yok.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> B ve D gerçek bilgilerdir; ama soru «bu tercihinden» ulaşılacak olanı soruyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "orta",
@@ -756,7 +756,7 @@ LGS.add({
     "Nehir"
    ],
    "a": "B",
-   "s": "<p>Ali ayetin anlamını doğru aktarmıştır. Kerem sünnetin yerini, Nehir de takrîrî sünneti doğru açıklamıştır. Zehra'nın ifadesi yanlıştır. Peygamberimiz ibadetlerin yanında aile hayatında, ticarette, komşulukta ve insan ilişkilerinde de örnektir; ahlakı Kur'an'ın yaşanmış hâlidir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Ali: Ahzâb 21 → güzel örnek.</li> <li>Zehra: Örnek almak «yalnızca ibadetlerini» örnek almaktır.</li> <li>Kerem: Sünnet ikinci temel kaynak.</li> <li>Nehir: Onaylama da sünnete dâhil.</li></ul><b>İstenen</b><p>İfadesi <b>yanlış</b> olan öğrenci.</p></div><ol class=\"sv-s\"><li><b>Doğruları onayla</b> Ali ayeti doğru aktarır; Kerem sünnetin yerini, Nehir takrîrî sünneti doğru açıklar.</li> <li><b>Yanlışı bul</b> Zehra örnekliği ibadetle sınırlıyor. Oysa Peygamberimiz aile, ticaret, komşuluk, insan ilişkileri gibi hayatın her alanında örnektir; «Onun ahlakı Kur’an’dı.»</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ayetin anlamı → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>«yalnızca ibadet» → yanlış ifade.</td></tr><tr><td>C</td><td>İkinci temel kaynak → doğru.</td></tr><tr><td>D</td><td>Takrîrî sünnet → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Üsve-i hasene <b>hayatın tamamını</b> kapsar; «yalnızca» kelimesi yine yanlışı işaret ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "orta",
@@ -768,7 +768,7 @@ LGS.add({
     "4"
    ],
    "a": "C",
-   "s": "<p>1 (yumuşak huyluluk), 2 (istişare) ve 4 (eşitlik) doğrudur. 3 yanlıştır. Huneyn'de tehlike anında geri çekilmemesi tevazunun değil, cesaret ve kararlılığın örneğidir. Doğru eşleştirme sayısı 3'tür. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Hz. Enes’e «öf» dememesi → yumuşak huyluluk</li> <li>2: Ümmü Seleme’nin önerisine uyması → istişare</li> <li>3: Huneyn’de yerinden ayrılmaması → tevazu</li> <li>4: Ebu Zer’i uyarması → insanlar arasında eşitlik</li></ul><b>İstenen</b><p>Doğru eşleştirme <b>sayısı</b>.</p></div><ol class=\"sv-s\"><li><b>Satırları kontrol et</b> 1 ✔, 2 ✔, 4 ✔. 3: Tehlike anında geri çekilmemek tevazu değil, <b>cesaret ve kararlılık</b>tır ✘</li> <li><b>Say</b> <span class=\"sv-m\">Doğru eşleştirme = 3</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>1 değil, 3 doğru var.</td></tr><tr><td>B</td><td>2 değil.</td></tr><tr class=\"ok\"><td>C</td><td>3 doğru eşleştirme → doğru.</td></tr><tr><td>D</td><td>3. satır yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Huneyn → <b>cesaret</b>; tevazu örnekleri ise ev işine yardım, kerpiç taşıma, basit davete icabet gibi olaylardır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "orta",
@@ -780,7 +780,7 @@ LGS.add({
     "I, II ve IV"
    ],
    "a": "B",
-   "s": "<p>Üç yıllık açlık ve sıkıntıya katlanması sabrı (I), davetini sürdürüp davasından vazgeçmemesi kararlılığı (II) gösterir. Metinde bir danışma (III) ya da düşmanlarını affetme (IV) anlatılmaz. Affedicilik, Mekke'nin fethinde öne çıkan özelliktir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Üç yıl boykot: alışveriş ve evlilik yasak, «büyük açlık ve sıkıntı».</li> <li>Peygamberimiz «davetini sürdürdü ve davasından vazgeçmedi».</li></ul><b>İstenen</b><p>Öne çıkan özellikler (I sabır, II kararlılık, III istişare, IV affedicilik).</p></div><ol class=\"sv-s\"><li><b>I – Sabır</b> Üç yıl açlığa ve sıkıntıya katlanmak sabırdır ✔</li> <li><b>II – Kararlılık</b> «davasından vazgeçmedi» → kararlılık ✔</li> <li><b>III ve IV</b> Metinde danışma da düşmanları bağışlama da anlatılmıyor ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III metinde yok.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II → doğru.</td></tr><tr><td>C</td><td>IV metinde yok.</td></tr><tr><td>D</td><td>IV metinde yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Affedicilik Mekke’nin fethinde öne çıkar; boykot yıllarında öne çıkan ise <b>sabır ve kararlılık</b>tır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -792,7 +792,7 @@ LGS.add({
     "Suç işleyenler arasında yakınlık ve soy farkı gözetmemesi"
    ],
    "a": "B",
-   "s": "<p>Taif'te dağlar meleği cezalandırma imkânı sunmuş, Peygamberimiz ise Taiflilerin soyundan iman edenlerin çıkmasını umarak bunu reddetmiştir. Sümame olayında da esir üzerinde tam yetkisi varken onu serbest bırakmış, bu güzel davranış Sümame'nin Müslüman olmasına vesile olmuştur. Her ikisinde de güç ve fırsat elindeyken karşısındakinin iyiliğini, hidayetini gözetmiştir (B).<br>A: İstişare özelliği bilinen bir özelliktir, ancak iki metinde de danışmadan söz edilmez; “önemli karar” ifadesine kapılan öğrenci bu çeldiriciye düşer. C: Ortada verilmiş bir söz yoktur. D: Adalet ve eşitlik başka olaylarda (ör. Mahzumoğulları) öne çıkar; bu metinlerde cezalandırma değil, bağışlama vardır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Taif: Dağlar meleği Taiflileri cezalandırmayı teklif etti; Peygamberimiz «Hayır!» deyip soylarından iman edenler çıkmasını umdu.</li> <li>Sümame: Esir üzerinde tam yetkisi varken «Sümame’yi serbest bırakın» dedi; Sümame Müslüman oldu.</li></ul><b>İstenen</b><p>İki olaydaki <b>ortak</b> tutum.</p></div><ol class=\"sv-s\"><li><b>1. olayı çöz</b> Cezalandırma imkânı var (dağlar meleği) → Peygamberimiz reddedip onların hidayetini umuyor.</li> <li><b>2. olayı çöz</b> Esiri öldürme ya da tutma yetkisi var → serbest bırakıyor; bu iyilik Sümame’nin Müslüman olmasına vesile oluyor.</li> <li><b>Ortak noktayı adlandır</b> İki olayda da <b>güç ve fırsat elindeyken karşısındakinin iyiliğini ve hidayetini gözetmek</b> var.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İki metinde de danışma geçmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Zarar verme imkânı varken iyiliği ve hidayeti gözetme → doğru.</td></tr><tr><td>C</td><td>Ortada verilmiş bir söz yok.</td></tr><tr><td>D</td><td>Bu olaylarda ceza değil bağışlama var; eşitlik Mahzumlu kadın olayında öne çıkar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Ortak tutum» sorularında önce her olayın <b>durumunu</b> (güç kimde?) sonra <b>tepkiyi</b> (ne yaptı?) yaz; ortak kalıp cevabı verir.</div><div class=\"sv-w\"><b>Tuzak:</b> «önemli karar» ifadesine kapılıp istişareyi (A) seçmek; metinlerde kimseye danışılmıyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -804,7 +804,7 @@ LGS.add({
     "Güneş tutulmasının nasıl oluştuğunu sahabilere ayrıntılı olarak anlattığına"
    ],
    "a": "D",
-   "s": "<p>İnsanların yorumu Peygamberimizin oğlunu yüceltiyor gibi görünse de o, bu yanlışı hemen düzeltmiştir (A). Bunu evladını kaybettiği gün yapması, acı içindeyken bile doğruluktan ayrılmadığını gösterir (B). “Güneş ve ay Allah'ın ayetlerindendir” sözü C'yi doğrular. Metinde güneş tutulmasının nasıl oluştuğuna dair bir açıklama yoktur; Peygamberimiz yalnızca yanlış inancı düzeltmiş ve dua ile namazı tavsiye etmiştir. Bilimsel bilgisi olan öğrenci bunu metne yükleyerek D'yi “ulaşılır” sanabilir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Oğlu İbrahim’in vefat ettiği gün güneş tutuldu; insanlar «İbrahim’in ölümü sebebiyle tutuldu» dedi.</li> <li>Peygamberimiz: «Güneş ve ay, Allah’ın ayetlerinden iki ayettir. Onlar kimsenin ölümü veya doğumu sebebiyle tutulmaz… dua edin ve namaz kılın.»</li></ul><b>İstenen</b><p>Olaydan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Durumu çöz</b> Yanlış inanç Peygamberimizin oğlunu yüceltiyor gibi görünüyordu; yani susması onun lehine olabilirdi.</li> <li><b>Tepkiyi çöz</b> Evladını kaybettiği acılı günde bile yanlışı hemen düzeltti → doğruluk (A, B). «Allah’ın ayetlerinden» → doğa olayları Allah’ın kudretinin işaretidir (C).</li> <li><b>Metinde olmayanı bul</b> Tutulmanın <b>nasıl oluştuğuna</b> dair bilimsel bir açıklama yok; yalnızca yanlış inanç düzeltilip dua ve namaz tavsiye ediliyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Lehine görünen yanlışı düzeltti → ulaşılır.</td></tr><tr><td>B</td><td>Acılı gününde doğruyu söyledi → ulaşılır.</td></tr><tr><td>C</td><td>«Allah’ın ayetlerinden» → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Tutulmanın oluşumu anlatılmıyor → ulaşılamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peygamberimiz batıl inançlarla (hurafelerle) mücadele etmiştir; doğa olaylarını kişilere bağlamak bir hurafedir.</div><div class=\"sv-w\"><b>Tuzak:</b> Fen bilgini metne yükleyip D’yi «ulaşılır» sanmak; soru yalnızca metindeki bilgiyi soruyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -816,7 +816,7 @@ LGS.add({
     "Kavlî – Kavlî – Fiilî"
    ],
    "a": "A",
-   "s": "<p>I'de Hz. Osman, Peygamberimizin abdest alışını görerek aktarır; bu bir uygulamadır, yani <b>fiilî</b> sünnettir. II'de “görmek” kelimesi geçse de altı çizili kısım Peygamberimizin bir sözüdür; <b>kavlî</b> sünnettir. III'te sahabilerin iki farklı uygulamasını öğrenip hiçbirini kınamaması, onların davranışını onaylaması anlamına gelir; <b>takrîrî</b> sünnettir.<br>B ve C, II'deki “gördüğünüz gibi” ifadesine bakıp onu fiilî sanan ya da III'teki emri (“Kimse … kılmasın”) altı çizili kısım zanneden öğrencinin yanılgısıdır. D, sahabinin aktardığı her bilgiyi “söz” sayan yanılgıdan gelir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kavlî = söz, fiilî = davranış/uygulama, takrîrî = onaylama veya ses çıkarmama.</li> <li>I altı çizili: Hz. Osman «Resulullah’ı … abdest alırken gördüm.»</li> <li>II altı çizili: «Namazı benim kıldığımı gördüğünüz gibi kılın.»</li> <li>III altı çizili: «iki gruptan hiçbirini kınamadı.»</li></ul><b>İstenen</b><p>Altı çizili kısımların sünnet türleri (sırasıyla).</p></div><ol class=\"sv-s\"><li><b>I</b> Aktarılan, Peygamberimizin abdest alma <b>davranışı</b>dır. <span class=\"sv-m\">I → fiilî</span></li> <li><b>II</b> Altı çizili kısım Peygamberimizin <b>kendi sözü</b>dür; içinde «gördüğünüz» kelimesi olması türünü değiştirmez. <span class=\"sv-m\">II → kavlî</span></li> <li><b>III</b> Sahabilerin iki farklı uygulamasını öğrenip kınamaması <b>onay</b>dır. Emir cümlesi altı çizili değildir. <span class=\"sv-m\">III → takrîrî</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Fiilî – kavlî – takrîrî → doğru.</td></tr><tr><td>B</td><td>I takrîrî değil, II fiilî değil.</td></tr><tr><td>C</td><td>II takrîrî, III kavlî değil.</td></tr><tr><td>D</td><td>I kavlî değil, III fiilî değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sünnet türünü bulurken «<b>Kim ne yaptı?</b>» diye sor: Peygamber söyledi → kavlî; Peygamber yaptı → fiilî; sahabi yaptı, Peygamber sustu/onayladı → takrîrî.</div><div class=\"sv-w\"><b>Tuzak:</b> II’deki «gördüğünüz gibi» kelimesine bakıp fiilî demek ya da III’teki emri altı çizili sanıp kavlî demek; yalnızca <b>altı çizili kısma</b> bak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -828,7 +828,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "C",
-   "s": "<p>“Hak sahibinin söz söyleme hakkı vardır.” sözü I'i, “Onu satın alıp verin. Sizin en hayırlınız borcunu en güzel şekilde ödeyeninizdir.” sözü II'yi, “Bırakın onu!” uyarısı IV'ü gösterir. III yanlıştır: Peygamberimiz adamı uyarmamış, borcu hemen ve daha iyisiyle ödetmiştir. A eksik bırakır (IV'ü görmeyen öğrenci); B ve D, “sert sözlere bir karşılık verilmiş olmalı” varsayımından gelen III'ü içerir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Alacaklı sert konuştu; sahabiler karşılık vermek istedi. Peygamberimiz: «Bırakın onu! Hak sahibinin söz söyleme hakkı vardır.»</li> <li>«Ona bir deve satın alın ve verin.» Daha iyisi bulununca: «Onu satın alıp verin. Sizin en hayırlınız, borcunu en güzel şekilde ödeyeninizdir.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> «Hak sahibinin söz söyleme hakkı vardır» → alacaklıyı anlayışla karşıladı ✔</li> <li><b>II</b> «borcunu en güzel şekilde ödeyeninizdir» + daha iyi deve → övülen davranış ✔</li> <li><b>III</b> Adamı uyarmadı, borcu ertelemedi; hemen ve daha iyisiyle ödetti ✘</li> <li><b>IV</b> «Bırakın onu!» → sahabilerin tepkisine izin vermedi ✔</li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV eksik.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV → doğru.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Sert sözlere mutlaka bir karşılık verilmiştir» varsayımıyla III’ü doğru saymak; metinde ne uyarı ne erteleme var.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -840,7 +840,7 @@ LGS.add({
     "Maçta kuralı yanlış uygulayan oyuncusunu maç bitince yanına çağırıp doğrusunu gösteren antrenör"
    ],
    "a": "A",
-   "s": "<p>Peygamberimiz, kuralı bilmeden hata yapan Muaviye'yi azarlamamış, onu kırmadan kuralı ve nedenini açıklamıştır. B, C ve D'deki kişiler de bilmeden yapılan yanlışı yumuşak bir dille ve açıklayarak düzeltir. A'daki öğretmen ise kuralı bilmeyen öğrenciyi herkesin önünde azarlar; bu, metinde açıkça olumsuzlanan (“beni azarlamadı”) tutumdur. D'deki “maç bitince yanına çağırma”, Peygamberimizin namaz bitince Muaviye'yi çağırmasına benzediği için doğru tutumdur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Muaviye namazda konuştu; cemaat ona baktı.</li> <li>Muaviye: «beni azarlamadı, dövmedi, sövmedi.» Peygamberimiz yalnızca kuralı ve namazın ne olduğunu açıkladı; bunu namaz bitince yaptı.</li></ul><b>İstenen</b><p>Bu öğretme tutumuyla <b>bağdaşmayan</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Tutumu özetle</b> Bilmeden hata yapan kişi <b>kırılmadan</b>, sakin bir dille, kuralın nedeni açıklanarak düzeltiliyor.</li> <li><b>Şıkları ölçütle karşılaştır</b> Herkesin önünde azarlamak, metinde açıkça olumsuzlanan («azarlamadı») davranıştır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Herkesin önünde azarlama → bağdaşmaz.</td></tr><tr><td>B</td><td>Sakin dille kuralı açıklama → uyumlu.</td></tr><tr><td>C</td><td>Kuralın nedenini nazikçe anlatma → uyumlu.</td></tr><tr><td>D</td><td>Maç bitince çağırıp doğrusunu gösterme → namaz bitince çağırmaya benzer, uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peygamberimizin öğretme yöntemi: <b>Uygun zamanda, kırmadan, nedenini açıklayarak</b> düzeltmek.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -852,7 +852,7 @@ LGS.add({
     "Karşı taraf düşman olsa bile söze ve antlaşma kurallarına bağlı kalması"
    ],
    "a": "D",
-   "s": "<p>Huzeyfe ve babası müşriklere söz vermişti; Peygamberimiz Bedir öncesinde iki askere ihtiyacı olduğu hâlde onları savaşa katmamış, sözün tutulmasını istemiştir. Ebu Râfi olayında da elçileri alıkoymama kuralına ve antlaşmaya bağlı kalmıştır. Ortak özellik ahde vefa, yani verilen söze ve antlaşmaya sadakattir (D).<br>A tam tersidir: Peygamberimiz asker sayısı yerine sözü öne almıştır. B de tersidir: Ebu Râfi'yi geri göndermiştir. C: Metinlerde danışma yoktur; Peygamberimiz kararı kendisi vermiştir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Huzeyfe ve babası müşriklere Peygamberimizle «savaşmayacağımıza dair» söz verdi. Bedir öncesi Peygamberimiz: «Gidin; onlara verdiğiniz sözü yerine getirin.»</li> <li>2: Elçi Ebu Râfi Müslüman olup kalmak istedi. Peygamberimiz: «Ben antlaşmayı bozmam, elçileri de alıkoymam. Sen şimdi dön…»</li></ul><b>İstenen</b><p>İki olayın <b>ortak</b> özelliği.</p></div><ol class=\"sv-s\"><li><b>1. olay</b> Bedir yaklaşırken askere ihtiyaç vardı; yine de verilen söz tutturuldu.</li> <li><b>2. olay</b> Müslüman olmak isteyen elçi bile kurala uyularak geri gönderildi.</li> <li><b>Ortak nokta</b> Karşı taraf düşman olsa bile <b>söze ve antlaşmaya bağlılık (ahde vefa)</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Asker sayısı yerine söz tercih edildi → tersi.</td></tr><tr><td>B</td><td>Ebu Râfi geri gönderildi → tersi.</td></tr><tr><td>C</td><td>Metinlerde danışma yok.</td></tr><tr class=\"ok\"><td>D</td><td>Düşmana bile ahde vefa → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ahde vefa yalnızca dostlara değil, <b>düşmana verilen söz</b> için de geçerlidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -864,7 +864,7 @@ LGS.add({
     "Bir işin amacının iyi olması kadar, o işe ulaşmak için izlenen yolun da doğru olması önemlidir."
    ],
    "a": "B",
-   "s": "<p>Mescit gibi toplumun yararına bir yapı için bile Peygamberimiz yetimlerin hakkını gözetmiş ve bedel ödemiştir; bu A, C ve D'yi destekler. Yetimler arsayı gönüllü bağışlamak istese de Peygamberimiz onların hakkını korumayı tercih etmiştir. Metne göre yer, devenin çöktüğü arsa olarak belirlenmiştir; sahabilerin oylamasından söz edilmez. Peygamberimizin istişareye önem verdiğini bilen öğrenci bunu metne yükleyerek B'yi seçmekten kaçınabilir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Deve, Sehl ve Süheyl adlı «iki yetim çocuğa ait» arsaya çöktü.</li> <li>Çocuklar arsayı bağışlamak istedi; Peygamberimiz «bağışı kabul etmedi», bedelini ödeyerek satın aldı.</li></ul><b>İstenen</b><p>Olaydan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayı yorumla</b> Mescit toplum yararına bir yapı olduğu hâlde yetimlerin hakkı gözetildi (A, C); iyi bir amaç için de doğru yol izlendi (D).</li> <li><b>Yerin belirlenişi</b> Metne göre yer, devenin çöktüğü arsa oldu; oylamadan hiç söz edilmiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Toplum yararına bile hak gözetildi → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Oylama metinde yok → ulaşılamaz.</td></tr><tr><td>C</td><td>Yetimlerin hakkına özen → ulaşılır.</td></tr><tr><td>D</td><td>Amaç kadar yol da önemli → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Peygamberimizin istişareyi önemsediğini bildiğin için B’yi metne yüklemek; bu olayda yer seçimi danışmayla yapılmamıştır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -876,7 +876,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "C",
-   "s": "<p>“Dinlediğime göre hüküm veririm” ifadesi I'i, “onu almasın… ateşten bir parça” ifadesi II'yi gösterir: Kararın lehine çıkması haksız kişiyi sorumluluktan kurtarmaz. III, “Ben ancak bir insanım” sözüyle çelişir; Peygamberimiz bu davalarda gizli olanı bilmediğini kendisi belirtmiştir. Peygamberliğe saygıdan dolayı “her kararı kesin doğrudur” diye düşünen öğrenci A ya da D'ye yönelir. IV de yanlıştır; hadis tam tersine güzel anlatmanın haklılık anlamına gelmediğini vurgular (B). Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Ben ancak bir insanım… ben de dinlediğime göre hüküm veririm.»</li> <li>«Kime kardeşinin hakkından bir şey verirsem onu almasın. Çünkü ben ona ateşten bir parça vermiş olurum.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> «dinlediğime göre hüküm veririm» → delil ve ifadelere göre ✔</li> <li><b>II</b> «onu almasın… ateşten bir parça» → lehine karar çıksa da haksız kişi sorumlu ✔</li> <li><b>III</b> «Ben ancak bir insanım» → davalarda gizli olanı her zaman bilmez ✘</li> <li><b>IV</b> «biriniz delilini … daha güzel anlatır» uyarısı, güzel anlatmanın haklılık olmadığını gösterir ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III yanlış.</td></tr><tr><td>B</td><td>IV yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I ve II → doğru.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mahkeme kararı insanı <b>Allah katındaki sorumluluktan</b> kurtarmaz; kul hakkı ancak sahibine ödenince düşer.</div><div class=\"sv-w\"><b>Tuzak:</b> Peygamberliğe saygıdan «her kararı kesin doğru» (III) demek; hadiste Peygamberimiz bunun tersini kendisi söylüyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -888,7 +888,7 @@ LGS.add({
     "Mahalle için faydalı gördüğü bir düzenlemeyi, mahalleli henüz buna hazır olmadığı için uygun bir zamana erteleyen muhtar"
    ],
    "a": "D",
-   "s": "<p>Peygamberimiz Kâbe'nin yeniden yapılmasını doğru bulmuş ama toplumun hassasiyetini ve yanlış anlaşılma ihtimalini gözeterek bunu uygulamamıştır. Fikrinden vazgeçmemiş, yalnızca toplumun durumunu dikkate almıştır. D'deki muhtar da doğru bulduğu düzenlemeyi toplum hazır olmadığı için ertelemektedir.<br>A, “uygulamamak = yanlış kabul etmek” yanılgısından gelir; Peygamberimiz fikrinin doğruluğunu açıkça söylemiştir. B, toplumun hassasiyetini hiç dikkate almaz. C'de ise iletişim üslubu sorunu vardır, metinle ilgisi yoktur. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Kavmin inkârdan yeni çıkmış olmasaydı Kâbe’yi yıkar, onu Hz. İbrahim’in attığı temeller üzerine yeniden yapardım.»</li> <li>İnsanların «yanlış anlayabileceklerini düşünerek» bunu uygulamadı.</li></ul><b>İstenen</b><p>Bu tutuma <b>en yakın</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Tutumu iki parçaya ayır</b> 1) Fikrinin doğru olduğunu düşünüyor (vazgeçmiyor). 2) Toplum henüz hazır olmadığı için uygulamayı erteliyor.</li> <li><b>Aynı iki parçayı şıklarda ara</b> Doğru bulduğu düzenlemeyi, mahalleli hazır olmadığı için uygun zamana erteleyen muhtar iki parçayı da taşıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Fikrini yanlış kabul ediyor; Peygamberimiz fikrinden dönmedi.</td></tr><tr><td>B</td><td>Toplumun hassasiyetini hiç dikkate almıyor.</td></tr><tr><td>C</td><td>Üslup sorunu; metinle ilgisi yok.</td></tr><tr class=\"ok\"><td>D</td><td>Doğru fikir + toplumu gözeterek erteleme → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğru bir işte bile <b>toplumun hazır olmasını</b> gözetmek, peygamber ahlakının inceliklerindendir.</div><div class=\"sv-w\"><b>Tuzak:</b> «Uygulamamak = yanlış kabul etmek» (A) sanmak; Peygamberimiz fikrinin doğruluğunu açıkça söylüyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -900,7 +900,7 @@ LGS.add({
     "Yalnızca kendisini ilgilendiren bir haksızlığı bağışlaması"
    ],
    "a": "A",
-   "s": "<p>Metne göre Peygamberimiz kendisine yapılan şeyler için kişisel intikam almaz (D ile uyumlu), günah olmayan işlerde kolay olanı seçer (B ile uyumlu), Allah'ın koyduğu sınırlar çiğnendiğinde ise kim olursa olsun gereğini yapar (C ile uyumlu). Kendisine kaba davranan birini kişisel öfkeyle cezalandırmak, “asla kişisel intikam almadı” ifadesiyle çelişir (A). C'yi “cezalandırmak merhametle çelişir” diye seçen öğrenci, metindeki “Allah'ın yasakladığı bir şey çiğnendiğinde” ayrımını gözden kaçırmış olur. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Aişe: «günah olmadıkça her zaman kolay olanı seçerdi»</li> <li>«kendisine yapılan bir şey için asla kişisel intikam almadı»</li> <li>«Allah’ın yasakladığı bir şey çiğnendiğinde Allah için gereğini yapardı»</li></ul><b>İstenen</b><p>Tutumla <b>bağdaşmayan</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Metindeki üç ilke</b> <span class=\"sv-m\">Günah değilse kolay olanı seç → B</span> <span class=\"sv-m\">Kişisel intikam yok → D</span> <span class=\"sv-m\">Allah’ın sınırı çiğnenirse gereği yapılır → C</span></li> <li><b>Çelişeni bul</b> Kendisine kaba davranan birini <b>kişisel öfkeyle</b> cezalandırmak «asla kişisel intikam almadı» ile çelişir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kişisel öfkeyle ceza → bağdaşmaz.</td></tr><tr><td>B</td><td>Kolay olanı seçme → uyumlu.</td></tr><tr><td>C</td><td>Toplumun hakkında kimliğe bakmadan gereğini yapma → uyumlu.</td></tr><tr><td>D</td><td>Kendine yapılanı bağışlama → uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ayrımı yakala: <b>kendi hakkı</b> → bağışlar; <b>Allah’ın ve toplumun hakkı</b> → gereğini yapar.</div><div class=\"sv-w\"><b>Tuzak:</b> C’yi «cezalandırmak merhametle çelişir» diye seçmek; metin, Allah’ın yasakları çiğnendiğinde gereğinin yapıldığını açıkça söylüyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -912,7 +912,7 @@ LGS.add({
     "Çocukların yetişkinlerle aynı ortamda bulunmasını uygun görmemesi"
    ],
    "a": "C",
-   "s": "<p>Birinci olayda Peygamberimiz küçük bir çocuğun kuşunu soracak kadar onun dünyasıyla ilgilenir. İkinci olayda çocuğa “Evladım!” diye seslenerek yemek adabını sevecen bir dille öğretir. Ortak tutum çocukları önemsemek ve onlarla anlayabilecekleri sıcak bir dille ilgilenmektir (C).<br>A: İkinci olayda hata düzeltilmiştir; yumuşaklığı “hatayı görmezden gelmek” sanan öğrencinin yanılgısıdır. B yalnızca birinci olaya uyar. D: Ömer bin Ebu Seleme Peygamberimizle aynı sofradadır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Küçük Ebu Umeyr’e her gördüğünde gülümseyerek «Nuğayr ne yaptı?» diye sorardı.</li> <li>2: Elini tabakta gezdiren Ömer’e: «Evladım! Besmele çek, sağ elinle ye ve önünden ye.»</li></ul><b>İstenen</b><p>İki olayda çocuklara yönelik <b>ortak</b> tutum.</p></div><ol class=\"sv-s\"><li><b>1. olay</b> Çocuğun kuşunu soracak kadar onun dünyasıyla ilgileniyor.</li> <li><b>2. olay</b> Hatayı «Evladım!» diye sevecen bir dille düzeltip yemek adabını öğretiyor.</li> <li><b>Ortak nokta</b> Çocukları <b>önemsemek</b> ve onlarla anlayabilecekleri <b>sıcak bir dille</b> ilgilenmek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>2. olayda hata düzeltildi → yanlış.</td></tr><tr><td>B</td><td>Yalnızca 1. olaya uyar; 2. olayda öğretim var.</td></tr><tr class=\"ok\"><td>C</td><td>Önemseme + sıcak dil → iki olaya da uyar, doğru.</td></tr><tr><td>D</td><td>Ömer aynı sofrada → çelişir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Ortak tutum» sorularında şık <b>her iki</b> olaya da uymalı; tek olaya uyan şık (B) çeldiricidir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -924,7 +924,7 @@ LGS.add({
     "Peygamberimiz, bir insana değer vermenin onun ölümünden sonra da sürdüğünü göstermiştir."
    ],
    "a": "B",
-   "s": "<p>Peygamberimizin, mescidi temizleyen kadını fark edip araması A'yı; sahabilerin onu önemsiz görüp haber vermemesi C'yi; kabrine gidip namaz kılması D'yi destekler. Metinde mescit temizliğine görevli atanmasıyla ilgili hiçbir bilgi yoktur (B). “Kadın mescidi temizliyordu, demek ki görevliydi” diye metne bilgi ekleyen öğrenci B'yi ulaşılabilir sanabilir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Mescidi temizleyen siyahi kadın vefat etti; sahabiler «durumunu önemsiz görmüşler» ve haber vermemişti.</li> <li>Peygamberimiz: «Bana haber vermeniz gerekmez miydi?» Kabrine gidip cenaze namazı kıldı.</li></ul><b>İstenen</b><p>Olaydan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayı parçala</b> Kadını fark edip araması (A); sahabilerin onu önemsiz görmesi (C); kabrine gidip namaz kılması (D).</li> <li><b>Metinde olmayanı bul</b> Mescit temizliği için ücretli görevli atanmasıyla ilgili hiçbir bilgi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Göz önünde olmayanı önemsedi → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Görevli atama metinde yok → ulaşılamaz.</td></tr><tr><td>C</td><td>Sahabiler önemsiz gördü → ulaşılır.</td></tr><tr><td>D</td><td>Ölümünden sonra da değer → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Kadın mescidi temizliyordu, demek ki görevliydi» diye metne bilgi eklemek.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -936,7 +936,7 @@ LGS.add({
     "I, II ve III"
    ],
    "a": "D",
-   "s": "<p>Hasır üzerinde yatması, odasında az eşya bulunması ve vefatında zırhının arpa karşılığında rehinde olması sade yaşamını gösterir (I). “Dünyanın onların, ahiretin bizim olmasına razı değil misin?” sözü II'yi destekler. Bir Yahudi ile alışveriş yapıp zırhını rehin bırakması III'ü gösterir. IV'e ulaşılamaz: Peygamberimiz kendi sade hayatını yaşamış, ama kimseye hasırda yatmayı emretmemiştir; fiilî bir örneği “herkese emir” sanan öğrenci B ya da C'ye yönelir. A ise III'ü (Metin 2'yi) gözden kaçırır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Metin 1: Hasır üzerinde yatıyor, odada «pek az eşya»; «Dünyanın onların, ahiretin ise bizim olmasına razı değil misin?»</li> <li>Metin 2: Vefatında zırhı «otuz ölçek arpa karşılığında bir Yahudinin yanında rehin» idi.</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Hasır, az eşya, rehindeki zırh → yönetici olduğu hâlde sade hayat ✔</li> <li><b>II</b> «ahiretin bizim olmasına razı değil misin?» → ahireti daha değerli gördü ✔</li> <li><b>III</b> Bir Yahudi ile alışveriş yapıp zırh rehin bıraktı ✔</li> <li><b>IV</b> Kendisi sade yaşadı ama kimseye hasırda yatmayı <b>emretmedi</b> ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III (Metin 2) gözden kaçmış.</td></tr><tr><td>B</td><td>IV yanlış.</td></tr><tr><td>C</td><td>IV yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve III → doğru.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Peygamberimizin kendi yaşayışını (fiilî örnek) herkese verilmiş bir <b>emir</b> sanmak (IV).</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -948,7 +948,7 @@ LGS.add({
     "Deniz"
    ],
    "a": "A",
-   "s": "<p>Takrîrî sünnet, Peygamberimizin sahabilerin bir davranışını görüp ya da öğrenip ses çıkarmaması veya onaylamasıdır. Peygamberimiz Amr'ı dinleyip gülümsemiş ve onu kınamamıştır; bu onay anlamına gelir. Bu yüzden Elif'in yorumu yanlıştır. Berk doğru söyler (takrîrî sünnet). Amr Nisâ suresi 29. ayeti gerekçe gösterdiği için Ceren doğrudur. Sünnet sözlerin yanında davranış ve onayları da kapsar; Deniz de doğrudur. Elif'in yanılgısı “sessizlik onaylamamaktır” düşüncesidir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Amr bin Âs soğuktan ölmekten korkup Nisâ 29’u («Kendinizi öldürmeyin») hatırlayarak teyemmüm etti, namaz kıldırdı.</li> <li>Peygamberimiz sebebini sordu, dinledi, «gülümsedi ve hiçbir şey söylemedi».</li></ul><b>İstenen</b><p>Yorumu <b>yanlış</b> olan öğrenci.</p></div><ol class=\"sv-s\"><li><b>Kavramı belirle</b> Takrîrî sünnet: Peygamberimizin sahabinin davranışını öğrenip ses çıkarmaması / onaylaması.</li> <li><b>Olaya uygula</b> Gerekçeyi dinleyip gülümsemesi ve kınamaması <b>onay</b>dır. Bu yüzden «onaylamadı» diyen Elif yanılıyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Elif: sessizliği onaylamama sanıyor → yanlış yorum.</td></tr><tr><td>B</td><td>Berk: takrîrî sünnet → doğru.</td></tr><tr><td>C</td><td>Ceren: Nisâ 29’u gerekçe gösterdi → doğru.</td></tr><tr><td>D</td><td>Deniz: sünnet söz, davranış ve onayı kapsar → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Takrîrî sünnette <b>sessizlik = onay</b>dır; Peygamberimiz yanlış bir davranışa sessiz kalmazdı.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -960,7 +960,7 @@ LGS.add({
     "Peygamberimiz duygusunu açıkça ifade etmiş, ancak bu duyguyla Vahşi'ye zarar vermemiştir."
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz Vahşi'nin Müslümanlığını kabul edip ona zarar vermemiştir (A). “Yüzünü benden uzak tutabilir misin?” sözü, amcasının acısını hâlâ hissettiğini gösterir; bu yüzden acısını tamamen unuttuğu söylenemez (B). Bu durum affetmenin acıyı yok saymak olmadığını (C) ve duygusunu dürüstçe söyleyip ona zarar vermediğini (D) gösterir. “Affetmek = her şeyi unutmak” yanılgısı B'yi doğru sandırır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Hamza’yı şehit eden Vahşi Müslüman olmaya geldi.</li> <li>Peygamberimiz Müslümanlığını kabul etti, «hiçbir zarar vermedi»; yalnızca «Yüzünü benden uzak tutabilir misin?» dedi.</li></ul><b>İstenen</b><p>Olayla ilgili <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Affı gör</b> Amcasının katilinin Müslümanlığını kabul edip ona zarar vermedi → affetti (A).</li> <li><b>Acıyı gör</b> «Yüzünü benden uzak tutabilir misin?» → acısını hâlâ hissediyor; duygusunu dürüstçe söylüyor ama zarar vermiyor (C, D).</li> <li><b>Çelişeni bul</b> Acısını «tamamen unuttuğu» yargısı bu sözle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Müslümanlığını kabul etti → söylenebilir.</td></tr><tr class=\"ok\"><td>B</td><td>«Yüzünü uzak tut» → acı sürüyor → söylenemez.</td></tr><tr><td>C</td><td>Affetmek acıyı yok saymak değil → söylenebilir.</td></tr><tr><td>D</td><td>Duygusunu söyledi, zarar vermedi → söylenebilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Affetmek = <b>intikam almamak ve zarar vermemek</b>; yaşanan acıyı hiç hissetmemek değildir.</div><div class=\"sv-w\"><b>Tuzak:</b> «Affetmek = her şeyi unutmak» yanılgısı B’yi doğru gösterir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -972,7 +972,7 @@ LGS.add({
     "II, III ve IV"
    ],
    "a": "C",
-   "s": "<p>Önceki inananların ağır işkencelere rağmen dinlerinden dönmediğini anlatması I'i; “Allah bu dini tamamlayacaktır” sözü II'yi; “Fakat siz acele ediyorsunuz” sözü III'ü gösterir. Metinde müşriklerle uzlaşmaya dair bir öneri yoktur; Peygamberimiz tam tersine davasında kararlılığı öğütlemiştir (IV yanlış). B, I'i gözden kaçırır; A ve D, “baskıya karşı çözüm arıyorsa uzlaşma önermiştir” yanılgısıyla IV'ü içerir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Sahabiler baskılar altında dua istedi.</li> <li>Peygamberimiz önceki inananların işkenceye rağmen dinlerinden dönmediğini anlattı; «Allah bu dini tamamlayacaktır… Fakat siz acele ediyorsunuz.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Önceki inananların sabrını örnek göstermesi → sabırla davaya bağlılık öğüdü ✔</li> <li><b>II</b> «Allah bu dini tamamlayacaktır» → başarıya güven ✔</li> <li><b>III</b> «Fakat siz acele ediyorsunuz» → sonucu hemen görmek istemeyi doğru bulmadı ✔</li> <li><b>IV</b> Uzlaşma önerisi yok; tersine kararlılık öğütleniyor ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV yanlış.</td></tr><tr><td>B</td><td>I eksik.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve III → doğru.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mekke döneminin anahtar kavramları: <b>sabır, kararlılık, Allah’a güven</b>.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -984,7 +984,7 @@ LGS.add({
     "Peygamberimiz, din ile ilgili bildirdikleri ile dünya işlerindeki kişisel görüşünü birbirinden ayırmıştır."
    ],
    "a": "A",
-   "s": "<p>“Siz dünya işlerinizi daha iyi bilirsiniz.” sözü B'yi; “Kendi görüşümden bir şey söylediğimde ben de bir insanım” sözü C ve D'yi destekler. Ancak Peygamberimiz “Size dininizle ilgili bir şey emrettiğimde onu alın.” diyerek dinî konularda kendisine uyulması gerektiğini açıkça belirtmiştir. Bu yüzden A'ya ulaşılamaz; “Siz dünya işlerinizi daha iyi bilirsiniz” sözünü her alana genelleyen öğrenci bu çeldiriciye düşer. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hurma aşılama hakkındaki görüşü yanlış sonuç verdi.</li> <li>«Size dininizle ilgili bir şey emrettiğimde onu alın. Kendi görüşümden bir şey söylediğimde… ben de bir insanım. … Siz dünya işlerinizi daha iyi bilirsiniz.»</li></ul><b>İstenen</b><p>Olaydan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>İki alanı ayır</b> <span class=\"sv-m\">Din konusu → «onu alın» (uyulmalı)</span> <span class=\"sv-m\">Dünya işi / kişisel görüş → «siz daha iyi bilirsiniz»</span></li> <li><b>Çelişeni bul</b> «Dinî konularda da herkes kendi görüşüne göre» yargısı, «dininizle ilgili bir şey emrettiğimde onu alın» sözüyle çelişir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Dinde «onu alın» denmiş → ulaşılamaz.</td></tr><tr><td>B</td><td>«Siz dünya işlerinizi daha iyi bilirsiniz» → ulaşılır.</td></tr><tr><td>C</td><td>Görüşünün yanlış sonuç verdiğini kabul etti → ulaşılır.</td></tr><tr><td>D</td><td>Din ile kişisel görüşü ayırdı → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Siz dünya işlerinizi daha iyi bilirsiniz» sözünü din dâhil her alana genellemek.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -996,7 +996,7 @@ LGS.add({
     "Bir karardan doğrudan etkilenecek ve sorumluluk üstlenecek kişilerin görüşü mutlaka alınmalıdır."
    ],
    "a": "D",
-   "s": "<p>Muhacirlerin desteği alındığı hâlde Peygamberimiz soruyu tekrarlamış, sözleri Medine ile sınırlı olan ve savaşta büyük sorumluluk üstlenecek Ensar'ın görüşünü özellikle beklemiştir. Bu, karardan etkilenecek kişilerin görüşünün alınması gerektiğini gösterir (D).<br>A tam tersidir: Peygamberimiz yalnızca eski arkadaşlarının (Muhacirlerin) görüşüyle yetinmemiştir. B: Danışma, karar verilmeden önce yapılmıştır. C: Olay savaşla ilgili olsa da istişarenin yalnızca savaşta yapılacağı sonucu çıkmaz; olayın konusunu genel kurala dönüştüren aşırı genellemedir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Bedir öncesi Muhacirler destek verdi; Peygamberimiz yine de «Bana görüşünüzü bildirin ey insanlar!» demeyi sürdürdü.</li> <li>Ensar’ın Akabe sözü yalnızca Medine’de korumayı kapsıyordu.</li> <li>Ensar «Bizi denize dalmaya götürsen seninle birlikte dalarız» deyince Peygamberimiz sevindi.</li></ul><b>İstenen</b><p>Olaydan istişare ile ilgili <b>ulaşılabilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Soruyu neden tekrarladı?</b> Muhacirlerin görüşü alınmıştı ama savaşın yükünü büyük ölçüde taşıyacak ve sözleri Medine ile sınırlı olan Ensar henüz konuşmamıştı.</li> <li><b>Kuralı çıkar</b> Karardan <b>doğrudan etkilenecek ve sorumluluk üstlenecek</b> kişilerin görüşü mutlaka alınmalıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnızca eski arkadaşlarla (Muhacirler) yetinmedi → tersi.</td></tr><tr><td>B</td><td>Danışma karardan önce yapıldı.</td></tr><tr><td>C</td><td>Tek olaydan «yalnızca savaşta» genellemesi çıkmaz.</td></tr><tr class=\"ok\"><td>D</td><td>Etkilenecek Ensar’ın görüşü özellikle beklendi → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir sorunun neden <b>tekrarlandığını</b> sor; cevap, kimin henüz konuşmadığındadır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1008,7 +1008,7 @@ LGS.add({
     "Rızık ve güvenlik, insan hayatı için temel ihtiyaçlar olarak hatırlatılmıştır."
    ],
    "a": "C",
-   "s": "<p>Surede kış ve yaz yolculuklarının kolaylaştırılması bir nimet olarak anılır (A); bu nimetlere karşılık Kâbe'nin Rabbine kulluk etmeleri istenir (B); “açlıktan doyurmuş, korkudan emin kılmıştır” ifadesi rızık ve güvenliği hatırlatır (D). Surede ticaretin bırakılması emredilmez; tam tersine ticaret yolculukları bir nimet olarak sunulur. “Kulluk etsinler” emrini “işi bırakıp yalnızca ibadet etsinler” diye anlayan öğrenci C'ye ulaşılabileceğini sanır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kureyş 1-4: kış ve yaz yolculukları, «bu Evin Rabbine kulluk etsinler», «açlıktan doyurmuş ve korkudan emin kılmıştır».</li> <li>Mekke kurak bir vadi; geçim kışın Yemen’e, yazın Şam’a giden ticaret kervanlarıyla.</li></ul><b>İstenen</b><p>Sure ve açıklamadan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Surenin bakışı</b> Ticaret yolculukları bir <b>nimet</b> olarak sunuluyor; karşılığında Allah’a kulluk isteniyor.</li> <li><b>Şıkları kontrol et</b> Ticaretin bırakılmasını emreden hiçbir ifade yok; nimet olarak anılan bir şeyin terk edilmesi istenmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Güvenli ticaret bir nimet → ulaşılır.</td></tr><tr><td>B</td><td>«kulluk etsinler» → ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Ticareti bırakma emri yok → ulaşılamaz.</td></tr><tr><td>D</td><td>Doyurma ve güvenlik → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’da kulluk, çalışmayı bırakmak değil; çalışırken de Allah’ı unutmamaktır.</div><div class=\"sv-w\"><b>Tuzak:</b> «Kulluk etsinler» emrini «işi bırakıp yalnızca ibadet» diye anlamak.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1020,7 +1020,7 @@ LGS.add({
     "Kendisine iyilik yapan komşusuna hemen aynı değerde bir hediye götürüp borcunu kapattığını düşünen kişi"
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz, vefatından yıllar sonra bile Hz. Hatice'yi anmış, onun dostlarına ikramda bulunmuştur. Bu, vefa yani iyilikleri ve sevdiklerini unutmama özelliğidir. B'deki genç de vefat eden dedesinin dostlarını ziyaret ederek aynı vefayı gösterir.<br>A'da ilişki çıkara bağlıdır; C vefasızlıktır. D'de iyilik bir “borç” gibi görülüp hemen kapatılmakta, ilişki sürdürülmemektedir; hediye vermeyi gördüğü için D'yi seçen öğrenci, olaydaki ikramın süreklilik ve sevgi içerdiğini gözden kaçırır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hz. Aişe: Peygamberimiz Hz. Hatice’yi «çok anardı»; «bir koyun keser… Hatice’nin dostlarına gönderirdi».</li> <li>Hz. Hatice hicretten önce vefat etmişti.</li></ul><b>İstenen</b><p>Öne çıkan özelliğe <b>en uygun</b> davranış.</p></div><ol class=\"sv-s\"><li><b>Özelliği adlandır</b> Vefatından yıllar sonra bile eşini anmak ve onun dostlarına ikram etmek <b>vefa</b>dır: iyilikleri ve sevdiklerini unutmamak.</li> <li><b>Aynı yapıyı ara</b> Vefat eden bir yakının dostlarını ziyaret etmek, olaydaki davranışın birebir benzeridir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Çıkar ilişkisi; vefa değil.</td></tr><tr class=\"ok\"><td>B</td><td>Vefat eden dedenin dostlarını ziyaret → vefa → doğru.</td></tr><tr><td>C</td><td>Eskileri unutmak → vefasızlık.</td></tr><tr><td>D</td><td>İyiliği «borç» gibi kapatıp ilişkiyi bitiriyor; süreklilik yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Vefa</b> = sürekli hatırlamak ve ilişkiyi sürdürmek; tek seferlik karşılık vermek değildir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de «hediye» kelimesini görüp olaydaki ikramla eşlemek; olaydaki ikram yıllarca süren bir sevginin ifadesidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1032,7 +1032,7 @@ LGS.add({
     "Sınıf başkanının, yeni kuralı yalnızca sınıfa sonradan katılan öğrencilere uygulaması"
    ],
    "a": "A",
-   "s": "<p>Peygamberimiz haksızlığa yol açan cahiliye uygulamalarını kaldırırken işe kendi ailesinden ve amcasından başlamıştır. Böylece kuralın herkes için geçerli olduğunu ve önce kuralı koyanın yakınlarına uygulandığını göstermiştir. A'daki müdür de kuralı önce kendi çocuğunun sınıfında uygular.<br>B'de kuralı koyan kendini ayrı tutar; C'de yakınlarına ayrıcalık tanınır. Bu ikisi metindeki tutumun tam tersidir. D'de kural bir gruba uygulanmaktadır ama ölçüt adil değildir; “kuralı uygulamak” ifadesine kapılan öğrenci D'yi seçebilir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Veda Hutbesi: «Kaldırdığım ilk kan davası, bizim ailemizden … kan davasıdır.»</li> <li>«Kaldırdığım ilk faiz, amcam Abbas bin Abdülmuttalib’in faizidir.»</li></ul><b>İstenen</b><p>Bu tutuma <b>en uygun</b> örnek.</p></div><ol class=\"sv-s\"><li><b>Tutumu çöz</b> Peygamberimiz haksız uygulamaları kaldırırken işe <b>kendi ailesinden</b> başladı.</li> <li><b>Mesajı yaz</b> Kural herkes için geçerlidir ve önce kuralı koyanın yakınlarına uygulanır.</li> <li><b>Aynı yapıyı ara</b> Yeni kuralı önce kendi çocuğunun sınıfında uygulatan müdür aynı yapıdadır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kuralı önce kendi yakınına uygulama → doğru.</td></tr><tr><td>B</td><td>Kuralı koyan kendini ayrı tutuyor → tersi.</td></tr><tr><td>C</td><td>Yakınlara ayrıcalık → tersi.</td></tr><tr><td>D</td><td>Kural uygulanıyor ama adaletsiz bir ölçütle.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Lider, koyduğu kurala <b>önce kendisi ve yakınları</b> uyarsa kural güç kazanır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1044,7 +1044,7 @@ LGS.add({
     "Peygamberimiz anahtarı, Osman bin Talha'nın bir daha görevini başkasına bırakmaması şartıyla vermiştir."
    ],
    "a": "D",
-   "s": "<p>Fetihten sonra bütün güç Peygamberimizin elindeydi; buna rağmen anahtarı görevin asıl sahibine vermiştir (A). Yakınlarının isteğine rağmen görevi ehline teslim etmesi B'yi gösterir. Ayette “emanetleri ehline vermek” ve “adaletle hükmetmek” birlikte geçer (C). Metinde anahtarın herhangi bir şarta bağlı olarak verildiğine dair bilgi yoktur; D metne dışarıdan eklenmiş bir yargıdır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Fetihten sonra Kâbe’nin anahtarı Osman bin Talha’dan alınmıştı; Peygamberimizin bazı yakınları görevi istedi.</li> <li>Peygamberimiz anahtarı Osman bin Talha’ya geri verdi.</li> <li>Nisâ 58: «emanetleri ehline vermenizi ve … adaletle hükmetmenizi emreder».</li></ul><b>İstenen</b><p>Olay ve ayetle ilgili <b>söylenemeyecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayı yorumla</b> Bütün güç elindeyken bile görevi asıl sahibine verdi (A); yakınlarının isteği onu haktan ayırmadı (B).</li> <li><b>Ayeti yorumla</b> Emanete riayet ve adalet birlikte emredilmiş (C).</li> <li><b>Metinde olmayanı bul</b> Anahtarın bir şarta bağlı verildiğine dair hiçbir bilgi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Güçlüyken emaneti ehline verdi → söylenebilir.</td></tr><tr><td>B</td><td>Yakınlarına rağmen hak gözetildi → söylenebilir.</td></tr><tr><td>C</td><td>Ayette ikisi birlikte → söylenebilir.</td></tr><tr class=\"ok\"><td>D</td><td>Şart metinde yok → söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Emaneti ehline vermek</b>: bir görevi, ona en layık ve hakkı olan kişiye vermektir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1056,7 +1056,7 @@ LGS.add({
     "Peygamberimiz, sahabisine karşı cömert davranmıştır."
    ],
    "a": "B",
-   "s": "<p>Peygamberimiz deveyi satın alıp parasını ödemiş, ardından deveyi de geri vermiştir. Doğrudan bağış yerine bu yolu seçmesi, yardımı Cabir'i mahcup etmeden yaptığını gösterir (A). Cabir'in “Medine'ye kadar binme” şartına uymuştur (C). Hem parayı hem deveyi vermesi cömertliktir (D). Cabir şartı gereği deveye Medine'ye kadar kendisi bindiği için Peygamberimizin onu bineği olarak kullandığı söylenemez (B). “Satın alan malı hemen kullanır” varsayımı B'yi doğru sandırır. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Cabir’in yorgun devesi Peygamberimiz dürtünce hızlandı.</li> <li>Peygamberimiz deveyi «Medine’ye kadar ona binmem şartıyla» satın aldı.</li> <li>Medine’de parasını ödetti, sonra «Deveni de al, parası da senin olsun» dedi.</li></ul><b>İstenen</b><p>Olaydan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Yardımın şekli</b> Doğrudan bağış yerine alışveriş yapıp sonra hem parayı hem deveyi vermek → Cabir’i mahcup etmeden yardım (A), cömertlik (D).</li> <li><b>Şarta uyma</b> Cabir deveye Medine’ye kadar kendisi bindi → şarta uyuldu (C).</li> <li><b>Çelişeni bul</b> Deveyi yolda Cabir kullandığına göre Peygamberimizin onu bineği olarak kullandığı söylenemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Alışveriş yoluyla mahcup etmeden yardım → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Deveye Cabir bindi → ulaşılamaz.</td></tr><tr><td>C</td><td>«binme şartı»na uyuldu → ulaşılır.</td></tr><tr><td>D</td><td>Hem para hem deve → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Satın alan malı hemen kullanır» varsayımıyla B’yi doğru sanmak; şart gereği deveyi Medine’ye kadar Cabir kullandı.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1068,7 +1068,7 @@ LGS.add({
     "Yardım edilen kişiden karşılığında bir hizmet beklenmelidir."
    ],
    "a": "C",
-   "s": "<p>Birinci metinde Peygamberimiz, istemeye gelen adama doğrudan para vermek yerine çalışarak kazanmasının yolunu açmıştır. İkinci metinde emekle kazanmanın istemekten daha hayırlı olduğu ve kişinin onurunu koruduğu belirtilir. Ortak mesaj C'dir.<br>A aşırı genellemedir; Peygamberimiz adama yardım etmiş, sadece yardımın şeklini değiştirmiştir. B: Metinlerde ticaret “tek yol” olarak sunulmaz; konu emektir. D: Peygamberimiz adamdan kendisi için bir hizmet beklememiştir. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: İstemeye gelen adamın eşyaları satıldı; parayla yiyecek ve balta alındı; «Git, odun topla, sat»; adam on dirhem kazandı.</li> <li>2: «ipini alıp sırtında bir bağ odun getirip satması… insanlardan bir şey istemesinden daha hayırlıdır.»</li></ul><b>İstenen</b><p>İki metnin <b>ortak</b> mesajı.</p></div><ol class=\"sv-s\"><li><b>1. metin</b> Peygamberimiz para vermek yerine adamın çalışarak kazanmasının yolunu açtı.</li> <li><b>2. metin</b> Emekle kazanmak, istemekten daha hayırlıdır ve onuru korur.</li> <li><b>Ortak mesaj</b> <b>Kendi emeğiyle kazanmak, başkasından istemekten daha onurludur.</b></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yardım yapıldı, yalnızca şekli değişti → aşırı genelleme.</td></tr><tr><td>B</td><td>Konu ticaret değil emek; «tek yol» da yok.</td></tr><tr class=\"ok\"><td>C</td><td>Emekle kazanmanın onuru → doğru.</td></tr><tr><td>D</td><td>Peygamberimiz kendisi için hizmet beklemedi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> En iyi yardım, kişinin <b>kendi ayakları üzerinde durmasını</b> sağlayan yardımdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1080,7 +1080,7 @@ LGS.add({
     "Peygamberimiz, haksızlığı önlemeyi amaçlayan iş birliklerini, kimler tarafından kurulduğuna bakmadan değerli görmüştür."
    ],
    "a": "D",
-   "s": "<p>Hilfu'l-Fudul, İslam'dan önce, Müslüman olmayan kişilerce kurulmuş bir birliktir. Peygamberimiz buna gençliğinde katılmış ve “İslam döneminde de çağrılsam katılırdım” diyerek amacın haksızlığı önlemek olduğu bu tür iş birliklerini değerli gördüğünü göstermiştir (D).<br>A aşırı genellemedir; övülen yalnızca bu antlaşmadır, “bütün antlaşmalar” değil. B, birliği kuranların Müslüman olmadığı bilgisiyle çelişir. C: Bir birliğe katılmak yöneticilik anlamına gelmez; metinde böyle bir bilgi yoktur. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hilfu’l-Fudul: haksızlığa uğrayan «kim olursa olsun» hakkı alınana kadar yanında olma sözü; İslam’dan önce kuruldu.</li> <li>Peygamberimiz: «İslam döneminde de böyle bir antlaşmaya çağrılsam yine katılırdım.»</li></ul><b>İstenen</b><p>Bilgilerden <b>ulaşılabilecek</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Birliğin özelliği</b> İslam’dan önce, Müslüman olmayan Mekkelilerce kuruldu; amacı haksızlığı önlemekti.</li> <li><b>Peygamberimizin değerlendirmesi</b> «yine katılırdım» → amacı iyi olan iş birliğini, <b>kurucusuna bakmadan</b> değerli gördü.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Övülen yalnızca bu antlaşma; «bütün antlaşmalar» aşırı genelleme.</td></tr><tr><td>B</td><td>Kurucular Müslüman değildi → çelişir.</td></tr><tr><td>C</td><td>Birliğe katılmak yöneticilik demek değil.</td></tr><tr class=\"ok\"><td>D</td><td>Haksızlığı önleyen iş birliğini değerli gördü → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hilfu’l-Fudul = <b>Erdemliler Birliği</b>; Peygamberimizin gençliğinde hakkı gözetme özelliğinin göstergesidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1092,7 +1092,7 @@ LGS.add({
     "Aile ve akrabalık bağlarının güçlendirilmesi"
    ],
    "a": "A",
-   "s": "<p>“Selamı yayınız” öğüdü insanlar arasında güven ve barış ortamı kurmaya (B), “yemek yediriniz” öğüdü ihtiyaç sahiplerini gözetmeye (C), “akrabalarınızı gözetiniz” öğüdü akrabalık bağlarını güçlendirmeye (D) yöneliktir. Gece namazı ise kişinin Allah ile bağını ifade eder. Anlaşmazlıkların hakem yoluyla çözülmesi Medine'de önemli bir konu olsa da bu hadiste geçmez. Medine dönemini bilen öğrenci bu bilgiyi hadise yükleyerek A'yı elemeyebilir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Medine’deki ilk sözleri: «Selamı yayınız, yemek yediriniz, akrabalarınızı gözetiniz, insanlar uyurken gece namaz kılınız…»</li></ul><b>İstenen</b><p>Hadiste öğüdü <b>bulunmayan</b> hedef.</p></div><ol class=\"sv-s\"><li><b>Öğütleri hedeflerle eşleştir</b> <span class=\"sv-m\">selamı yayınız → güven ve barış (B)</span> <span class=\"sv-m\">yemek yediriniz → ihtiyaç sahiplerini gözetme (C)</span> <span class=\"sv-m\">akrabalarınızı gözetiniz → akrabalık bağları (D)</span> <span class=\"sv-m\">gece namazı → Allah ile bağ</span></li> <li><b>Eşi olmayanı bul</b> Anlaşmazlıkların hakemle çözülmesi hadiste geçmiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hakem konusu hadiste yok → cevap.</td></tr><tr><td>B</td><td>«Selamı yayınız» → var.</td></tr><tr><td>C</td><td>«yemek yediriniz» → var.</td></tr><tr><td>D</td><td>«akrabalarınızı gözetiniz» → var.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> Peygamberimizin Medine’de hakemlik yaptığını bildiğin için A’yı hadise yüklemek; soru yalnızca bu hadisteki öğütleri soruyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1104,7 +1104,7 @@ LGS.add({
     "D"
    ],
    "a": "C",
-   "s": "<p>A: Küçük ve sade bir davete bile katılacağını söylemesi tevazudur. B: Hediyeye hediyeyle karşılık vermesi iyiliğe karşılık vermedir. D: Torununu namazda bile kucağında taşıması çocuklara sevgi ve şefkatidir. C'deki söz, zorluklara rağmen davasından vazgeçmeme ve sabır, yani davasında kararlılıkla ilgilidir; ortada bir danışma yoktur. Peygamberimizin sahabileriyle konuştuğu her olayı istişare sanan öğrenci C'yi doğru eşleştirme kabul eder. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>A: Paça yemeğine davete icabet → tevazu</li> <li>B: Hediyeye hediyeyle karşılık → iyiliğe karşılık verme</li> <li>C: «Allah bu dini tamamlayacaktır, fakat siz acele ediyorsunuz» → istişare</li> <li>D: Torunu Ümame’yi namazda taşıma → çocuklara şefkat</li></ul><b>İstenen</b><p><b>Yanlış</b> eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Satırları kontrol et</b> A ✔, B ✔, D ✔.</li> <li><b>C’yi incele</b> Bu sözde kimseye danışılmıyor; baskılara karşı sabır ve davadan vazgeçmeme öğütleniyor → <b>davasında kararlılık</b>. «İstişare» eşleştirmesi yanlış ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Basit davete icabet → tevazu ✔</td></tr><tr><td>B</td><td>Hediyeye karşılık → iyiliğe karşılık ✔</td></tr><tr class=\"ok\"><td>C</td><td>Danışma yok; kararlılık ve sabır → yanlış eşleştirme.</td></tr><tr><td>D</td><td>Torununu taşıma → şefkat ✔</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İstişare için olayda <b>birinin görüşünün sorulması</b> gerekir; sahabilerle konuşmak tek başına istişare değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1116,7 +1116,7 @@ LGS.add({
     "III ve IV"
    ],
    "a": "B",
-   "s": "<p>I ve IV, Peygamberimizin sözleridir; bu yüzden kavlî sünnettir. IV'teki “benden öğreniniz” ifadesi, Peygamberimizin uygulamalarını işaret etse de cümlenin kendisi bir sözdür. II'de Peygamberimiz Halid'in davranışına engel olmayarak onu onaylamıştır (takrîrî). III'te Peygamberimizin bir davranışı anlatılır (fiilî). D, IV'teki “öğreniniz” sözünü fiilî sanan öğrencinin; A ve C, “sahabinin anlattığı her şey söz sayılır” ya da “yemek yemek bir davranıştır, öyleyse fiilîdir” yanılgısının sonucudur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: «Sahur yapınız, çünkü sahurda bereket vardır.»</li> <li>II: Halid’in keler yemesine engel olmaması</li> <li>III: Hz. Aişe’nin misvak kullanımını anlatması</li> <li>IV: «Hac ibadetinizi benden öğreniniz.»</li></ul><b>İstenen</b><p><b>Kavlî</b> sünnet örnekleri.</p></div><ol class=\"sv-s\"><li><b>Her örneği sınıflandır</b> <span class=\"sv-m\">I → Peygamberimizin sözü → kavlî</span> <span class=\"sv-m\">II → sahabinin davranışı + engel olmama → takrîrî</span> <span class=\"sv-m\">III → Peygamberimizin davranışı (anlatan Hz. Aişe) → fiilî</span> <span class=\"sv-m\">IV → Peygamberimizin sözü → kavlî</span></li> <li><b>Kavlî olanları seç</b> I ve IV.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II takrîrî.</td></tr><tr class=\"ok\"><td>B</td><td>I ve IV → doğru.</td></tr><tr><td>C</td><td>II takrîrî, III fiilî.</td></tr><tr><td>D</td><td>III fiilî.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cümle Peygamberimizin <b>ağzından çıkan bir söz</b> ise, konusu bir uygulama olsa bile kavlîdir.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’teki «benden öğreniniz» ifadesi uygulamayı işaret ettiği için fiilî sanmak; cümlenin kendisi bir sözdür.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1128,7 +1128,7 @@ LGS.add({
     "Peygamberimiz, sahabisinin aklına takılan soruyu kavramı açıklayarak cevaplamıştır."
    ],
    "a": "A",
-   "s": "<p>Sahabi, güzel giyinmenin kibir olup olmadığını merak etmiş; Peygamberimiz “Allah güzeldir, güzeli sever.” diyerek güzel giyinmenin kibir olmadığını belirtmiştir (B). Ardından kibri “hakkı kabul etmemek ve insanları küçük görmek” diye tanımlamıştır; bu, kibrin bir tutum olduğunu gösterir (C). Soruya kavramı tanımlayarak cevap vermesi D'yi destekler. Metinde güzelliğin pahalılıkla ilişkisinden söz edilmez; “güzel = pahalı” varsayımı A'yı doğru sandırır. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«Kalbinde zerre kadar kibir bulunan kimse cennete giremez.»</li> <li>Sahabi: «İnsan elbisesinin ve ayakkabısının güzel olmasını ister.»</li> <li>Cevap: «Allah güzeldir, güzeli sever. Kibir; hakkı kabul etmemek ve insanları küçük görmektir.»</li></ul><b>İstenen</b><p>Konuşmadan <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Güzel giyinme</b> «Allah güzeldir, güzeli sever» → güzel giyinmek kibir değildir (B).</li> <li><b>Kibrin tanımı</b> «hakkı kabul etmemek ve insanları küçük görmek» → kibir bir tutumdur, görünüş değil (C); soruya kavramı tanımlayarak cevap verildi (D).</li> <li><b>Metinde olmayanı bul</b> Pahalılıktan hiç söz edilmiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>«mutlaka pahalı» metinde yok → ulaşılamaz.</td></tr><tr><td>B</td><td>«güzeli sever» → ulaşılır.</td></tr><tr><td>C</td><td>Kibrin tanımı → ulaşılır.</td></tr><tr><td>D</td><td>Kavramı tanımlayarak cevapladı → ulaşılır.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «Güzel = pahalı» varsayımı A’yı doğru gösterir; güzellik temizlik ve özenle de sağlanır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1140,7 +1140,7 @@ LGS.add({
     "Hayvanlara gösterilen merhamet de yapılan eziyet de Allah katında karşılıksız kalmaz."
    ],
    "a": "D",
-   "s": "<p>Birinci hadiste susamış köpeğe su veren adam bağışlanmış, ikinci hadiste kediye eziyet eden kadın cezalandırılmıştır. İkisi birlikte, hayvanlara yapılan iyilik ve kötülüğün Allah katında karşılık bulduğunu gösterir (D).<br>A: Birinci hadis ibadet dışındaki bir iyiliğin de bağışlanmaya vesile olduğunu gösterir; A bununla çelişir. B: Hadislerde insanlarla karşılaştırma yoktur; abartılı bir çıkarımdır. C: Kediyi besleme sorumluluğu, onu hapseden kişiyle ilgilidir; herkes için hayvan besleme emri çıkmaz. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Susamış köpeğe su veren adam bağışlandı; «Her canlıya yapılan iyilikte sevap vardır.»</li> <li>2: Kediyi hapsedip aç bırakan kadın cehenneme girdi.</li></ul><b>İstenen</b><p>İki hadisin <b>ortak</b> sonucu.</p></div><ol class=\"sv-s\"><li><b>1. hadis</b> Hayvana iyilik → Allah’ın rızası ve bağışlanma.</li> <li><b>2. hadis</b> Hayvana eziyet → ceza.</li> <li><b>Birleştir</b> Hayvana yapılan iyilik de kötülük de <b>Allah katında karşılıksız kalmaz</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İbadet dışı bir iyilik bağışlanmaya vesile oldu → çelişir.</td></tr><tr><td>B</td><td>İnsanlarla karşılaştırma yok → abartı.</td></tr><tr><td>C</td><td>Herkese hayvan besleme emri yok.</td></tr><tr class=\"ok\"><td>D</td><td>İyilik ödüllendi, eziyet cezalandırıldı → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Biri <b>ödül</b>, biri <b>ceza</b> anlatan iki metnin ortak sonucu genellikle «yapılan karşılıksız kalmaz»dır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1152,7 +1152,7 @@ LGS.add({
     "Ailesine ait işleri sahabilerine devretmesi"
    ],
    "a": "B",
-   "s": "<p>Birinci olayda Peygamberimiz kızının maddi isteğine karşılık ona ve eşine manevi bir değeri, zikri öğretmiştir. İkinci olayda küçük torununa bile sadaka malıyla ilgili ilkeyi öğretmiştir. Ortak tutum ailesini dinî ilke ve değerler doğrultusunda eğitmesidir (B).<br>A: Birinci olayda istek doğrudan yerine getirilmemiştir. C: “At onu!” uyarısını sertlik sanan öğrencinin yanılgısıdır; uyarı bir öğretme amacı taşır ve tek bir olaydan “sert ve katı” sonucu çıkmaz. D: Metinlerde böyle bir bilgi yoktur. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Hz. Fatıma hizmetçi istedi; Peygamberimiz «istediğinizden daha hayırlısını» (33 Sübhânallah, 33 Elhamdülillah, 34 Allahu ekber) öğretti.</li> <li>2: Hz. Hasan sadaka hurmasını ağzına aldı: «Bırak onu, at! Bizim sadaka yemediğimizi bilmiyor musun?»</li></ul><b>İstenen</b><p>İki olayın <b>ortak</b> tutumu.</p></div><ol class=\"sv-s\"><li><b>1. olay</b> Maddi isteğe karşılık manevi bir değer (zikir) öğretti.</li> <li><b>2. olay</b> Küçük torununa bile sadaka malıyla ilgili ilkeyi öğretti.</li> <li><b>Ortak nokta</b> Kendi ailesini de <b>dinî ilke ve değerler doğrultusunda eğitip yönlendirmek</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hizmetçi isteği doğrudan yerine getirilmedi.</td></tr><tr class=\"ok\"><td>B</td><td>Aileyi dinî değerlerle eğitme → doğru.</td></tr><tr><td>C</td><td>«At onu!» bir öğretme uyarısıdır; tek olaydan «sert ve katı» çıkmaz.</td></tr><tr><td>D</td><td>Metinlerde böyle bilgi yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peygamberimiz öğrettiklerini önce <b>kendi ailesine</b> uygulamıştır; ailesine ayrıcalık tanımamıştır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1164,7 +1164,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "C",
-   "s": "<p>Peygamberimiz hem ibadet ettiğini hem de uyuduğunu, oruç tutmadığı günlerin olduğunu ve evlendiğini söyleyerek dengeli bir yaşamı örnek göstermiştir (I). “Bazı kimselere ne oluyor ki…” diyerek kişileri teşhir etmeden uyarmıştır (II). “Kim benim sünnetimden yüz çevirirse benden değildir.” sözü, onun yaşayışının ölçü olduğunu gösterir (IV). III yanlıştır: Peygamberimiz ibadeti bırakmayı değil, aşırılıktan kaçınmayı istemiştir; “aşırılık doğru değil” ifadesini “ibadet gereksiz” diye yanlış anlayan öğrenci III'ü seçer. A, IV'ü gözden kaçırır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Üç kişi: «hiç uyumadan namaz», «her gün oruç», «hiç evlenmeyeceğim».</li> <li>Peygamberimiz: «Bazı kimselere ne oluyor ki…? Ben ise namaz kılarım, uyurum da; oruç tutarım, tutmadığım günler de olur; evlenirim de. Kim benim sünnetimden yüz çevirirse benden değildir.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> Kılar–uyur, tutar–tutmaz, evlenir → aşırılık yok, denge var ✔</li> <li><b>II</b> «Bazı kimselere ne oluyor ki» → isim vermeden genel uyarı ✔</li> <li><b>III</b> İbadeti bırakmayı değil, aşırılıktan kaçınmayı istedi ✘</li> <li><b>IV</b> «sünnetimden yüz çevirirse benden değildir» → yaşayışı ölçü ✔</li></ol><table class=\"sv-c\"><tr><td>A</td><td>IV eksik.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I, II ve IV → doğru.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’da ibadet anlayışı <b>itidal</b>dir: ne ihmal ne aşırılık.</div><div class=\"sv-w\"><b>Tuzak:</b> «Aşırılık doğru değil» sözünü «ibadet gereksiz» (III) diye anlamak.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1176,7 +1176,7 @@ LGS.add({
     "Dilan"
    ],
    "a": "A",
-   "s": "<p>Hadiste ölçü, yapılan işin miktarı değil sürekliliğidir: “az da olsa devamlı olan”. Ayşe'nin planı en az toplam süreye sahip olsa da her gün düzenli olarak sürmektedir (A). Burak tek seferde, Cem yalnızca ilk hafta, Dilan ise rastgele bir günde okumaktadır; bu planlar devamlı değildir. Aylık toplam süreye bakarak en çok okuyanı seçen öğrenci D'ye, en uzun süreli “düzenli” dönemi olanı seçen öğrenci C'ye yönelir. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Hadis: «Amellerin Allah katında en sevimlisi, <b>az da olsa devamlı</b> olanıdır.»</li> <li>Ayşe: her gün 10 dk (~300 dk) · Burak: ilk gün 6 saat (360 dk) · Cem: ilk hafta her gün 1 saat (420 dk) · Dilan: bir gün 8 saat (480 dk)</li></ul><b>İstenen</b><p>Hadisteki ölçüye <b>en uygun</b> plan.</p></div><ol class=\"sv-s\"><li><b>Ölçütü belirle</b> Ölçüt <b>miktar değil süreklilik</b>tir: az da olsa her gün düzenli yapılan.</li> <li><b>Planları ölçüte göre tara</b> <span class=\"sv-m\">Ayşe → 30 günün 30’unda okuyor → devamlı</span> <span class=\"sv-m\">Burak → 1 gün</span> <span class=\"sv-m\">Cem → 7 gün, sonra bırakıyor</span> <span class=\"sv-m\">Dilan → 1 gün, rastgele</span></li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Her gün az ama sürekli → doğru.</td></tr><tr><td>B</td><td>Tek seferlik.</td></tr><tr><td>C</td><td>İlk haftadan sonra bırakıyor.</td></tr><tr><td>D</td><td>En uzun süre ama tek gün.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tablodaki «aylık toplam süre» sütunu çeldiricidir; hadis <b>ne kadar</b> değil <b>ne kadar düzenli</b> diye sorar.</div><div class=\"sv-w\"><b>Tuzak:</b> En çok dakikayı (D) ya da en uzun süren yoğun dönemi (C) seçmek.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1188,7 +1188,7 @@ LGS.add({
     "Medine'ye askerî bir güçle girmeyi planlamıştır."
    ],
    "a": "D",
-   "s": "<p>Gizli davet, açık davet, panayırlarda kabilelere tebliğ gibi farklı yöntemler A'yı; kabilelerin geri çevirmesine rağmen davete devam etmesi B'yi (davasında kararlılık); Mus'ab bin Umeyr'i Medine'ye öğretmen olarak göndermesi C'yi gösterir. Metne göre Medine'ye geçiş, Medinelilerin Akabe'deki bağlılık ve koruma sözüyle mümkün olmuştur; askerî bir güçle girme planından söz edilmez. “Koruma sözü” ifadesini askerî plan sanan öğrenci D'yi ulaşılabilir sayabilir. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Üç yıl gizli davet → açık davet → hac mevsiminde ve Ukaz panayırında kabilelere tebliğ; «Birçok kabile onu geri çevirdi».</li> <li>Akabe’de bağlılık sözü; Mus’ab bin Umeyr Medine’ye öğretici gönderildi; ertesi yıl koruma sözü ve 622’de hicret.</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Yöntemleri gör</b> Gizli, açık, panayırda tebliğ → şartlara göre farklı yöntemler (A).</li> <li><b>Kararlılığı gör</b> Geri çevrilmesine rağmen sürdürdü (B); Mus’ab’ı öğretmen olarak gönderdi (C).</li> <li><b>Metinde olmayanı bul</b> Medine’ye geçiş Medinelilerin <b>bağlılık ve koruma sözüyle</b> oldu; askerî güçle girme planı yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Farklı davet yöntemleri → ulaşılır.</td></tr><tr><td>B</td><td>Geri çevrilse de vazgeçmedi → ulaşılır.</td></tr><tr><td>C</td><td>Mus’ab bin Umeyr’in görevlendirilmesi → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Askerî plan metinde yok → ulaşılamaz.</td></tr></table><div class=\"sv-w\"><b>Tuzak:</b> «koruma sözü» ifadesini askerî bir plan sanmak; bu, Medinelilerin Peygamberimizi kendi şehirlerinde koruma taahhüdüdür.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1200,7 +1200,7 @@ LGS.add({
     "III ve IV"
    ],
    "a": "C",
-   "s": "<p>Sure, Kureyşlilere verilen ticaret kolaylığı, rızık ve güven nimetlerini hatırlatıp bunlara karşılık “bu Evin Rabbine kulluk etsinler” der (I doğru). “O Rab ki onları açlıktan doyurmuş…” ifadesi, Kâbe'nin Rabbi ile nimetleri verenin aynı olduğunu bildirir (III doğru). II yanlıştır: Kureyşliler Kâbe'ye saygı gösterdiği hâlde putlara tapıyordu; sure onları tevhide, yalnızca Allah'a kulluğa çağırır. “Kâbe'ye saygı = Allah'a kulluk” yanılgısı II'yi doğru sandırır. IV de yanlıştır; sure Mekke döneminde inmiştir ve savaştan söz etmez. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kureyş suresi: «bu Evin Rabbine kulluk etsinler. O Rab ki onları açlıktan doyurmuş ve korkudan emin kılmıştır.» (Mekke’de indi)</li> <li>Kureyşliler Kâbe’ye saygı gösterir ama «putlara tapıyorlardı».</li></ul><b>İstenen</b><p>I–IV yorumlarından doğru olanlar.</p></div><ol class=\"sv-s\"><li><b>I</b> Nimetler hatırlatılıp «kulluk etsinler» deniyor → şükür kullukla yapılır ✔</li> <li><b>II</b> Kâbe’ye saygı gösterdikleri hâlde putlara tapıyorlardı; sure onları yalnızca Allah’a kulluğa (tevhide) çağırıyor → «yeterli görülür» ✘</li> <li><b>III</b> «O Rab ki onları doyurmuş…» → Kâbe’nin Rabbi = nimeti veren ✔</li> <li><b>IV</b> Sure Mekke’de indi ve savaştan söz etmiyor ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II yanlış.</td></tr><tr><td>B</td><td>II ve IV yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>I ve III → doğru.</td></tr><tr><td>D</td><td>IV yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kureyş suresinin özü <b>tevhid</b>: nimeti veren tek Rab’dir, kulluk da yalnızca O’na yapılır.</div><div class=\"sv-w\"><b>Tuzak:</b> «Kâbe’ye saygı = Allah’a kulluk» sanmak; putlara tapan biri Kâbe’ye saygı gösterse de tevhide uymuş olmaz.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1212,7 +1212,7 @@ LGS.add({
     "IV ve V"
    ],
    "a": "B",
-   "s": "<p>I: Dosdoğru olmak doğruluktur. III: Ayette emaneti ehline vermek ve adaletle hükmetmek emredilir. V: Peygamberimizin yüce ahlakını bildirir. Bu üçü doğrudur. II yanlıştır: “işlerin aralarında danışma ile” olması istişareyi anlatır; ayet adalet kavramını içermez. IV de yanlıştır: “Kolaylaştırınız, zorlaştırmayınız…” öğüdü hoşgörü ve merhameti anlatır; tebliğle ilgili olduğu için kararlılıkla karıştırılabilir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Hûd 112 «dosdoğru ol» → doğruluk</li> <li>II: Şûrâ 38 «işleri aralarında danışma iledir» → adalet</li> <li>III: Nisâ 58 → emanete riayet ve adalet</li> <li>IV: «Kolaylaştırınız, zorlaştırmayınız…» → davasında kararlılık</li> <li>V: Kalem 4 → örnek ahlak</li></ul><b>İstenen</b><p><b>Yanlış</b> eşleştirmeler.</p></div><ol class=\"sv-s\"><li><b>Doğruları onayla</b> I: dosdoğru olmak doğruluktur ✔. III: emanet ve adalet ayette birlikte geçer ✔. V: yüce ahlak ✔.</li> <li><b>II’yi incele</b> «danışma ile» → <b>istişare</b>; adalet değil ✘</li> <li><b>IV’ü incele</b> Kolaylaştırma ve müjdeleme → <b>hoşgörü ve merhamet</b>; kararlılık değil ✘</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve III doğru eşleştirme.</td></tr><tr class=\"ok\"><td>B</td><td>II ve IV yanlış → doğru cevap.</td></tr><tr><td>C</td><td>V doğru.</td></tr><tr><td>D</td><td>V doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Şûrâ suresi adını da danışmadan alır: <b>şûra = istişare</b>.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1224,7 +1224,7 @@ LGS.add({
     "Peygamberimiz hırkayı, adamın onu kefen yapmak istediğini öğrendiği için vermiştir."
    ],
    "a": "D",
-   "s": "<p>Peygamberimiz hediyeyi kabul edip hemen giymiş (A), ihtiyacı olduğu hâlde isteyene vermiştir (B). Sahabilerin “Onun isteyeni geri çevirmediğini biliyorsun.” demesi C'yi gösterir. Adam hırkayı neden istediğini Peygamberimize değil, hırkayı aldıktan sonra kendisini eleştiren sahabilere söylemiştir. Peygamberimiz hırkayı bir sebep sormadan vermiştir; bu yüzden D'ye ulaşılamaz. Metnin son cümlesini olayların sırasını gözetmeden okuyan öğrenci D'yi doğru sanır. Cevap <b>D</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>Kadın kendi dokuduğu hırkayı getirdi; Peygamberimiz «ihtiyacı olduğu için» alıp giydi.</li> <li>Bir sahabi isteyince hırkayı çıkarıp verdi.</li> <li>Sahabiler adamı eleştirdi; adam onlara «Onu kefenim olsun diye istedim.» dedi.</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Olayları sırala</b> 1) Hediye kabul edildi (A). 2) İhtiyacı olduğu hâlde isteyene verildi (B). 3) Sahabiler onun cömertliğini biliyordu (C). 4) Adam nedenini <b>sonra</b>, sahabilere söyledi.</li> <li><b>Çelişeni bul</b> Peygamberimiz hırkayı sebep sormadan verdi; «kefen» açıklaması verilişten sonra geldi. Yani «kefen olacağını öğrendiği için verdi» denemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hediyeyi kabul edip giydi → ulaşılır.</td></tr><tr><td>B</td><td>İhtiyacı varken verdi → ulaşılır.</td></tr><tr><td>C</td><td>«isteyeni geri çevirmediğini biliyorsun» → ulaşılır.</td></tr><tr class=\"ok\"><td>D</td><td>Kefen açıklaması sonra ve başkalarına yapıldı → ulaşılamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Neden–sonuç sorularında <b>olayların sırasına</b> dikkat et: sonra öğrenilen bir bilgi, önceki kararın nedeni olamaz.</div><div class=\"sv-w\"><b>Tuzak:</b> Metnin son cümlesini sırayı gözetmeden okuyup D’yi doğru sanmak.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1236,7 +1236,7 @@ LGS.add({
     "I, III ve IV"
    ],
    "a": "A",
-   "s": "<p>“Birbirinizi seveceğiniz bir şey… selamı yayınız” ifadesi I'i gösterir. Peygamberimizin çocuklara da selam vermesi II'yi destekler. Enes'in “Peygamberimiz de böyle yapardı.” diyerek aynı davranışı yapması, sahabilerin onun fiilî sünnetini örnek aldığını gösterir (IV). III'e ulaşılamaz; hadis selamın yayılmasını ister, tanıdıklarla sınırlamaz. Hadisteki “aranızda” kelimesini “yalnızca tanıdıklar” diye yorumlayan öğrenci B ya da D'yi seçer. Cevap <b>A</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>1: Hz. Enes oyun oynayan çocuklara selam verip «Peygamberimiz de böyle yapardı» dedi.</li> <li>2: «Birbirinizi sevmedikçe … iman etmiş olmazsınız… Aranızda selamı yayınız.»</li></ul><b>İstenen</b><p>I–IV yargılarından ulaşılabilenler.</p></div><ol class=\"sv-s\"><li><b>I</b> «birbirinizi seveceğiniz bir şey… selamı yayınız» → selam sevgiyi artırır ✔</li> <li><b>II</b> Peygamberimiz çocuklara da selam verirdi → yaş ayrımı yok ✔</li> <li><b>III</b> Hadis selamı «yaymayı» ister, tanıdıklarla sınırlamaz ✘</li> <li><b>IV</b> Enes aynı davranışı «Peygamberimiz de böyle yapardı» diyerek yapıyor → örnek alma ✔</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I, II ve IV → doğru.</td></tr><tr><td>B</td><td>III yanlış.</td></tr><tr><td>C</td><td>III yanlış.</td></tr><tr><td>D</td><td>III yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Selamı yaymak</b> = tanıdık–tanımadık, büyük–küçük ayırmadan selamlaşmak.</div><div class=\"sv-w\"><b>Tuzak:</b> «aranızda» kelimesini «yalnızca tanıdıklar» diye yorumlamak.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1248,7 +1248,7 @@ LGS.add({
     "IV"
    ],
    "a": "C",
-   "s": "<p>I, II ve IV'te Peygamberimiz, kendisine ya da Müslümanlara zarar veren veya zarar verme gücüne sahip olduğu kişilere karşı merhamet ve affedicilik göstermiştir. III'te ise baskılar karşısında sabrı ve davadan vazgeçmemeyi öğütlemiş, davanın sonunda başarıya ulaşacağına güvenmiştir; bu, davasında kararlılık özelliğidir. II'yi “acısını dile getirdiği için af değildir” diye ayıran öğrenci, Peygamberimizin Vahşi'ye hiçbir zarar vermediğini ve Müslümanlığını kabul ettiğini gözden kaçırır. Cevap <b>C</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>I: Taif’te azap yerine hidayet umması</li> <li>II: Vahşi’nin Müslümanlığını kabul edip zarar vermemesi</li> <li>III: «Allah bu dini tamamlayacaktır, fakat siz acele ediyorsunuz»</li> <li>IV: Sümame’yi karşılık beklemeden serbest bırakması</li></ul><b>İstenen</b><p>Diğerlerinden <b>farklı</b> bir özelliği öne çıkaran olay.</p></div><ol class=\"sv-s\"><li><b>Her olayı etiketle</b> <span class=\"sv-m\">I → zarar verenlere merhamet / affedicilik</span> <span class=\"sv-m\">II → amcasının katilini affetme</span> <span class=\"sv-m\">III → sabır, davasında kararlılık</span> <span class=\"sv-m\">IV → esire merhamet / affedicilik</span></li> <li><b>Farklı olanı seç</b> I, II, IV aynı grupta (merhamet ve affedicilik); III ise <b>davasında kararlılık</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Merhamet ve affedicilik grubunda.</td></tr><tr><td>B</td><td>Merhamet ve affedicilik grubunda.</td></tr><tr class=\"ok\"><td>C</td><td>Kararlılık ve sabır → farklı olan.</td></tr><tr><td>D</td><td>Merhamet ve affedicilik grubunda.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> «Hangisi farklı?» sorularında her şıkka tek kelimelik etiket ver; üçü aynı etiketi alır.</div><div class=\"sv-w\"><b>Tuzak:</b> II’yi «acısını dile getirdi, af değildir» diye ayırmak; Peygamberimiz Vahşi’ye hiç zarar vermemiş, Müslümanlığını kabul etmiştir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>"
   },
   {
    "lv": "zor",
@@ -1260,7 +1260,7 @@ LGS.add({
     "Hicret yolculuğu, ayrıntıları önceden düşünülerek planlanmıştır."
    ],
    "a": "B",
-   "s": "<p>Yolları çok iyi bilen birinin kılavuz tutulması A'yı; kılavuzun müşrik olduğu hâlde güvenilip develerin ona teslim edilmesi C'yi; buluşma yerinin ve zamanın (üç gece sonra, Sevr Mağarası) önceden kararlaştırılması D'yi gösterir. Metin hazırlık yapıldığını açıkça anlattığı için B'ye ulaşılamaz. Tevekkülü “hiçbir önlem almadan beklemek” sanan öğrenci B'yi doğru kabul edebilir; oysa Peygamberimiz önce gerekli tedbirleri almış, sonra Allah'a güvenmiştir. Cevap <b>B</b>.</p>"
+   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b> <ul><li>«yolları çok iyi bilen bir adamı ücretle kılavuz olarak tuttular. Bu adam, Kureyşli müşriklerin dinindeydi.»</li> <li>«Ona güvenip develerini teslim ettiler ve üç gece sonra … Sevr Mağarası’na gelmesi için onunla sözleştiler.»</li></ul><b>İstenen</b><p>Metinden <b>ulaşılamayacak</b> yargı.</p></div><ol class=\"sv-s\"><li><b>Hazırlıkları listele</b> <span class=\"sv-m\">işi bilen kılavuz → A</span> <span class=\"sv-m\">farklı inançtan güvenilir biriyle iş birliği → C</span> <span class=\"sv-m\">yer ve zaman önceden kararlaştırıldı → D</span></li> <li><b>Çelişeni bul</b> Metin ayrıntılı hazırlıkları anlatıyor; «hiçbir hazırlık yapmadan» yargısı metinle çelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İşi en iyi bilene verdi → ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Hazırlık açıkça anlatılıyor → ulaşılamaz.</td></tr><tr><td>C</td><td>Müşrik kılavuza güvendi → ulaşılır.</td></tr><tr><td>D</td><td>Plan önceden yapıldı → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> <b>Tevekkül</b> = önce bütün tedbirleri almak, sonra sonucu Allah’a bırakmak.</div><div class=\"sv-w\"><b>Tuzak:</b> Tevekkülü «hiçbir önlem almadan beklemek» sanıp B’yi doğru kabul etmek.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>"
   }
  ]
 });
