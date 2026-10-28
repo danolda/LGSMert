@@ -312,7 +312,7 @@
         save(t.id, a);
         logAnswer(t.id, pick === q.a);
         if (pick !== q.a) remAdd(t.id, q.key);
-        else onCorrect(t.id, q.key, b);
+        else onCorrect(t.id, q.key, b, true);
         paint(t.id, q, i);
         updateScore(t.id, list);
         return;
@@ -813,9 +813,25 @@
     }
     return x;
   }
-  function awardXP(tid, key) {
+  // x.f: konu sayfasında ilk kez doğru çözülüp EXP almış sorular.
+  // Konu sayfasındaki ilk doğru çözüm, soru daha önce denemede/hatırlatıcıda EXP vermiş olsa bile anında EXP verir;
+  // işaretlemeler silinip tekrar çözülürse 7 gün kuralı geçerli olur.
+  function topicFirstMap(x, skip) {
+    if (x.f) return x.f;
+    x.f = {};
+    LGS.subjects.forEach(function (sb) {
+      sb.topics.forEach(function (tp) {
+        var a = load(tp.id);
+        for (var k in a) if (a.hasOwnProperty(k) && k.charAt(0) !== '_' && a[k].ok && tp.id + '|' + k !== skip) x.f[tp.id + '|' + k] = 1;
+      });
+    });
+    return x.f;
+  }
+  function awardXP(tid, key, fromTopic) {
     var x = xpGet(), id = tid + '|' + key, r = x.q[id] || [0, 0], now = Date.now();
-    if (r[1] && now - r[1] < COOL) return { xp: 0, why: 'cool', wait: Math.ceil((r[1] + COOL - now) / 864e5) };
+    var first = false;
+    if (fromTopic) { var f = topicFirstMap(x, id); first = !f[id]; f[id] = 1; }
+    if (!first && r[1] && now - r[1] < COOL) { if (fromTopic) jset(XKEY, x); return { xp: 0, why: 'cool', wait: Math.ceil((r[1] + COOL - now) / 864e5) }; }
     var amt = XP_BASE[grpOfKey(key)];
     var before = x.total, d = istDay();
     x.q[id] = [r[0] + 1, now]; x.total += amt; x.days[d] = (x.days[d] || 0) + amt;
@@ -942,8 +958,8 @@
     var t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.appendChild(t);
     setTimeout(function () { t.classList.add('out'); setTimeout(function () { t.remove(); }, 400); }, 2600);
   }
-  function onCorrect(tid, key, el) {
-    var res = awardXP(tid, key);
+  function onCorrect(tid, key, el, fromTopic) {
+    var res = awardXP(tid, key, fromTopic);
     if (res.xp) gainFx(res, el);
     else if (res.why === 'cool') toast('Bu soru ' + res.wait + ' gün sonra tekrar EXP verir.');
   }
