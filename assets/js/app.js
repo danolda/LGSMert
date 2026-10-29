@@ -228,7 +228,7 @@
     var list = [];
     var past = [];
     for (var pid in LGS.past) if (LGS.past.hasOwnProperty(pid) && LGS.past[pid].t === t.id) past.push(pid);
-    past.sort();
+    past.sort(function (x, y) { var a = x.split('-'), b = y.split('-'); return (+a[0] - +b[0]) || (a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : 0) || (+a[2] - +b[2]); });
     past.map(function (pid) { var o = LGS.past[pid]; return { id: pid, a: o.a, s: o.s }; }).forEach(function (p, n) {
       var pr = p.id.split('-');
       list.push({ key: 'p:' + p.id, past: true, grp: 'past', n: n + 1, year: pr[0], no: pr[2], img: 'img/past/' + p.id + '.webp', a: p.a, s: p.s });
