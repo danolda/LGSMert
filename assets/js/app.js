@@ -1025,7 +1025,7 @@
       var now = new Date(), ex = dt(EXAM), days = Math.max(0, Math.ceil((ex - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5));
       box.innerHTML = '<div class="card champ"><div class="champ-h">👑 Sezon Şampiyonluğu</div>' +
         '<p>Genel sıralamanın birincisi <b>LGS günü</b> sezon şampiyonu ilan edilecek.</p>' +
-        '<div class="cd"><b>' + days + '</b><span>gün kaldı · ' + perLabel(EXAM) + ' ' + ex.getFullYear() + ' (tahmini)</span></div></div>';
+        '<div class="cd"><b>' + days + '</b><span>gün kaldı · ' + perLabel(EXAM) + ' ' + ex.getFullYear() + ' · <a href="https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr" target="_blank" rel="noopener">MEB duyurusu</a></span></div></div>';
       return;
     }
     window.LGSCloud.champions(tab, function (c) {
