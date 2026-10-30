@@ -1,5 +1,5 @@
 window.LGS = {
-  version: 91,
+  version: 92,
   xpMax: 600540,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 resmi tarih: 13 Haziran 2027 Pazar (MEB, 30.10.2026) https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr
   topics: {},

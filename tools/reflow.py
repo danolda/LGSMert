@@ -63,12 +63,22 @@ def ocr_label(crop, kind='opt'):
         big.paste(crop.resize((w * 3, h * 3), Image.LANCZOS), (20, 20))
         with tempfile.NamedTemporaryFile(suffix='.png', dir=os.environ.get('RF_TMP', '/workspace/work/reflow/aud_tmp'), delete=True) as tf:
             big.save(tf.name)
-            wl = {'opt': 'ABCDE)', 'qnum': '0123456789.', 'roman': 'IVX.'}[kind]
-            args = ['tesseract', tf.name, 'stdout', '--psm', '8', '-l', 'eng', '-c', 'tessedit_char_whitelist=' + wl]
+            if kind == 'word':
+                args = ['tesseract', tf.name, 'stdout', '--psm', '8', '-l', 'tur']
+            else:
+                wl = {'opt': 'ABCDE)', 'qnum': '0123456789.', 'roman': 'IVX.'}[kind]
+                args = ['tesseract', tf.name, 'stdout', '--psm', '8', '-l', 'eng', '-c', 'tessedit_char_whitelist=' + wl]
             if os.path.isdir(TESSDIR):
                 args[1:1] = ['--tessdata-dir', TESSDIR]
             out = subprocess.run(args, capture_output=True, text=True, timeout=20).stdout.strip()
         import re as _re
+        if kind == 'word':
+            # sıradan sözcük mü ("Bu", "ve", "dir,")? etiket (A) I. 1. a)) değil
+            m = _re.match(r'^([a-zçğıöşüâîûA-ZÇĞİÖŞÜ]{2,}[,;:.]?|\d{2,4}[,;:]?)$', out)
+            if m and _re.match(r'^[IVX]{1,4}\.?$', out):
+                m = None
+            _OCRC[key] = out if m else None
+            return _OCRC[key]
         m = _re.match({'opt': r'^([A-E])\)$', 'qnum': r'^(\d{1,2})\.$', 'roman': r'^([IVX]{1,4})\.$'}[kind], out)
         res = m.group(1) if m else None
     except Exception:
@@ -217,6 +227,19 @@ def analyse(rgb, hmed_force=None):
     changed = True
     while changed:
         changed = False
+        # etiket satırı katıldıktan sonra şekle bitişik hale gelen formül bandı (iki satırlı şık başlığı vb.)
+        for i in range(len(bands)):
+            b = bands[i]
+            if b['kind'] != 'formula':
+                continue
+            for j in (i - 1, i + 1):
+                if 0 <= j < len(bands) and bands[j]['kind'] == 'block' and '+etiket' in bands[j]['why']:
+                    o = bands[j]
+                    gap = (b['y0'] - o['y1']) if j < i else (o['y0'] - b['y1'])
+                    if gap <= 1.0 * hmed and min(o['x1'], b['x1']) - max(o['x0'], b['x0']) >= 0.7 * (b['x1'] - b['x0']):
+                        b['kind'], b['why'] = 'block', 'formül+şekil'
+                        changed = True
+                        break
         for i in range(len(bands) - 1):
             a, c = bands[i], bands[i + 1]
             aligned = ((a['x0'] - 0.5 * hmed <= c['x0'] and c['x1'] <= a['x1'] + 0.5 * hmed)
@@ -328,7 +351,9 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
     texts = [b for b in bands if b['kind'] == 'text']
     if len(texts) < 1:
         raise Skip('metin satırı yok')
-    Xmin = min(b['x0'] for b in bands)
+    # sol hiza: kenardaki ince süs/kenar şeritleri (sayfa kenarı işaretleri) hizayı bozmasın
+    Xmin = min([b['x0'] for b in bands if b['kind'] == 'text' or b['x1'] - b['x0'] >= 0.6 * hmed]
+               or [b['x0'] for b in bands])
     # hedef: telefonda punto = referans (satır yüksekliği / görsel genişliği = REF)
     pad = 0 if inner else 10
     Wtot = hmed / REF                  # hedef toplam genişlik
@@ -444,8 +469,8 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
     pre = [(b, segments(nw, b, word)) for b in texts if not b.get('ftext')]
     cand_ = []
     for b, ws in pre:
-        for k_ in (1, 2, 3):
-            if k_ < len(ws) and ws[k_][0] - b['x0'] <= 6 * hmed and ws[k_][0] - ws[k_ - 1][1] >= 0.2 * hmed:
+        for k_ in (1, 2, 3, 4):
+            if k_ < len(ws) and ws[k_][0] - b['x0'] <= (6 if k_ < 4 else 10) * hmed and ws[k_][0] - ws[k_ - 1][1] >= 0.2 * hmed:
                 cand_.append((ws[k_][0], b, ws, k_))
     for xc, b, ws, k_ in cand_:
         grp = [c for c in cand_ if abs(c[0] - xc) <= 3 and abs(c[1]['x0'] - b['x0']) <= 3]
@@ -458,6 +483,7 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
             for c in grp:
                 if 0.8 <= _dk(c[1]) / max(1e-6, md_) <= 1.25:      # kalın soru satırı konuşmacı sütununa girmez
                     spk[id(c[1])] = max(spk.get(id(c[1]), 0), c[0])
+    _optprev = [False]
     for b in texts:
         ws = segments(nw, b, max(word, int(round(0.35 * hmed))) if b.get('ftext') else word)
         if b.get('ftext') and any(c_ - a_ > 0.6 * T for a_, c_ in ws):
@@ -540,6 +566,16 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
         cont_line = (pv0 is not None and pv0['kind'] == 'text' and not pv0.get('label')
                      and abs(pv0['x0'] - b['x0']) < 0.5 * hmed and pv0['x1'] >= max(o['x1'] for o in texts) - 2 * hmed
                      and b['y0'] - pv0['y1'] < 0.6 * hmed)      # tam dolu paragraf satırının devamı etiket değildir
+        # soru numaralı (etiketli) tam satırın devamı, numaradan sonraki gövde hizasında başlıyorsa etiket değildir
+        # (gerçek iç etiket "14. I. ..." / "II. ..." ise OCR bunu ayırır)
+        if (not cont_line and pv0 is not None and pv0['kind'] == 'text' and pv0.get('label') and not pv0.get('dash')
+                and abs(pv0.get('body', pv0['x0']) - b['x0']) < 0.5 * hmed and b['x0'] > pv0['x0'] + 0.5 * hmed
+                and pv0['x1'] >= max(o['x1'] for o in texts) - 2 * hmed and b['y0'] - pv0['y1'] < 0.6 * hmed
+                and len(ws) >= 2 and ws[0][1] - ws[0][0] <= 1.6 * hmed):
+            rr_ = np.where(nw[b['y0']:b['y1'], ws[0][0]:ws[0][1]].any(1))[0]
+            crop_ = rgb.crop((ws[0][0], b['y0'] + int(rr_[0]), ws[0][1], b['y0'] + int(rr_[-1]) + 1)) if len(rr_) else None
+            if crop_ is not None and not ocr_label(crop_, 'opt') and not ocr_label(crop_, 'roman'):
+                cont_line = True
         if not b['label'] and not cont_line and len(ws) >= 2 and ws[0][1] - ws[0][0] <= 1.6 * hmed and ws[1][0] - ws[0][1] >= 0.25 * hmed:
             same = 0
             for o in texts:
@@ -551,6 +587,10 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
                         and abs((ow[0][1] - ow[0][0]) - (ws[0][1] - ws[0][0])) <= 0.35 * hmed
                         and 0.8 <= _dk(b) / max(1e-6, _dk(o)) <= 1.25):
                     same += 1
+            if same >= 2:
+                rr_ = np.where(nw[b['y0']:b['y1'], ws[0][0]:ws[0][1]].any(1))[0]
+                if len(rr_) and ocr_label(rgb.crop((ws[0][0], b['y0'] + int(rr_[0]), ws[0][1], b['y0'] + int(rr_[-1]) + 1)), 'word'):
+                    same = 0            # sıradan sözcükle başlayan satır ("Bu firma", "ve 4000"): etiket sütunu değil
             if same >= 2:
                 b['label'] = ws[0]
                 b['body'] = ws[1][0]
@@ -580,15 +620,22 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
             return ocr_label(rgb.crop((w[0], b['y0'] + int(rr_[0]), w[1], b['y0'] + int(rr_[-1]) + 1)))
         wide_ = ws[-1][1] - ws[0][0] > P
         olab = {}
-        if wide_ and not b.get('ftext') and len(ws) >= 3:
+        # yan yana şıklar (A) ...   B) ...): satır sığsa bile her şık ayrı satıra, A)'nın x'ine (dikey akış tutarlı)
+        biggap_ = any(ws[j_][0] - ws[j_ - 1][1] >= 0.8 * hmed for j_ in range(2, len(ws)))
+        if (wide_ or biggap_ or b['label'] or _optprev[0]) and len(ws) >= 3:
             l0 = optlab(ws[0], True) if ws[1][0] - ws[0][1] >= 0.2 * hmed else None
             if l0:
                 olab[0] = l0
+                last_ = l0
                 for j_ in range(2, len(ws)):
-                    if ws[j_][0] - ws[j_ - 1][1] >= 0.8 * hmed and j_ + 1 < len(ws) and ws[j_ + 1][0] - ws[j_][1] >= 0.2 * hmed:
-                        lj = optlab(ws[j_])
-                        if lj and lj > l0:
+                    g_ = ws[j_][0] - ws[j_ - 1][1]
+                    if g_ >= 0.25 * hmed and j_ + 1 < len(ws) and ws[j_ + 1][0] - ws[j_][1] >= 0.2 * hmed:
+                        lj = optlab(ws[j_]) if (g_ >= 0.8 * hmed or 0.5 * hmed <= ws[j_][1] - ws[j_][0] <= 1.7 * hmed) else None
+                        # sıkışık yazılmış ikinci şık ("yasaları D)"): yalnız sıradaki harf kabul
+                        if lj and (lj == chr(ord(last_) + 1) or (g_ >= 0.8 * hmed and lj > last_)):
                             olab[j_] = lj
+                            last_ = lj
+        _optprev[0] = bool(olab)
         groups = [[ws[0]]]
         gopt = [0 in olab]
         for i_, w in enumerate(ws[1:]):
@@ -739,6 +786,9 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
             if (abs(o['x0'] - b['x0']) <= 3 and abs(b['words'][1][0] - o['cont']) <= 0.3 * hmed
                     and abs(w0 - ow0) <= 0.3 * hmed and w0 <= 1.4 * hmed
                     and 0.8 <= dk(b) / max(1e-6, dk(o)) <= 1.25):
+                rr_ = np.where(nw[b['y0']:b['y1'], b['words'][0][0]:b['words'][0][1]].any(1))[0]
+                if len(rr_) and ocr_label(rgb.crop((b['words'][0][0], b['y0'] + int(rr_[0]), b['words'][0][1], b['y0'] + int(rr_[-1]) + 1)), 'word'):
+                    break           # "Bu torbadan ...": sıradan sözcük, şık etiketi değil
                 b['cont'] = o['cont']
                 break
     for b in texts:
@@ -751,6 +801,10 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
                         and abs(texts.index(o) - texts.index(b)) <= 3 and abs(o['y0'] - b['y0']) <= 6 * hmed
                         and any(abs(w[0] - o['cont']) <= 0.2 * hmed for w in b['words'][1:3])
                         and 0.8 <= dk(b) / max(1e-6, dk(o)) <= 1.25):
+                    if o['label'] and ocr_label(rgb.crop((o['label'][0], o['y0'], o['label'][1], o['y1'])), 'opt'):
+                        rr_ = np.where(nw[b['y0']:b['y1'], b['words'][0][0]:b['words'][0][1]].any(1))[0]
+                        if len(rr_) and ocr_label(rgb.crop((b['words'][0][0], b['y0'] + int(rr_[0]), b['words'][0][1], b['y0'] + int(rr_[-1]) + 1)), 'word'):
+                            break       # şık satırının hizası sıradan bir cümleye ("Bu torbadan ...") geçmesin
                     b['cont'] = o['cont']
                     break
 
@@ -966,12 +1020,12 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
             for gi, grp in enumerate(b['groups']):
                 gx = None
                 Pg = Pb
-                if gopt[gi] and gopt[0] and lim is not None and not flat:
+                if (gopt[gi] or gi > 0) and gopt[0] and lim is not None and not flat:
                     Pg = max(min(P, lim - (b['words'][0][0] - Xmin)), 3 * hmed)
                 for pi, p in enumerate(balanced(grp, Pg)):
                     if gi == 0 and pi == 0:
                         xpos = p[0][0]
-                    elif pi == 0 and gopt[gi] and gopt[0]:     # şık etiketiyle başlayan parça: şık sütunu
+                    elif pi == 0 and gopt[0] and (gopt[gi] or gi > 0):     # şık etiketiyle başlayan parça / şık satırındaki büyük boşluk sonrası ("C ) ..."): şık sütunu
                         xpos = b['words'][0][0]
                     elif pi == 0:          # şık / büyük boşluktan sonra
                         xpos = b.get('body', b['x0'])
@@ -1029,10 +1083,130 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
     blocks = [b for b in bands if b['kind'] != 'text']
     Wcap = int(max(textW, T * (1.0 if inner else 1.12)))
 
+    def tight(x0, x1, y0, y1):
+        sub = nw[y0:y1, x0:x1]
+        rr = np.where(sub.any(1))[0]
+        cc = np.where(sub.any(0))[0]
+        if not len(rr):
+            return None
+        return (x0 + int(cc[0]), x0 + int(cc[-1]) + 1, y0 + int(rr[0]), y0 + int(rr[-1]) + 1)
+
+    def col_label(p):
+        # parçanın sol üstündeki ilk küme şık etiketi mi?
+        x0, x1, y0, y1 = p
+        rws = [(a_, c_) for a_, c_ in runs(nw[y0:y1, x0:x1].any(1)) if c_ - a_ >= 0.4 * hmed]
+        if not rws:
+            return None
+        a_, c_ = rws[0]
+        if c_ - a_ > 1.6 * hmed:
+            return None
+        cl = nw[y0 + a_:y0 + c_, x0:x1].any(0)
+        ws_ = []
+        for s_, e_ in runs(cl):
+            if ws_ and s_ - ws_[-1][1] < max(4, 0.22 * hmed):
+                ws_[-1] = (ws_[-1][0], e_)
+            else:
+                ws_.append((s_, e_))
+        if not ws_ or not (0.5 * hmed <= ws_[0][1] - ws_[0][0] <= 1.7 * hmed) or ws_[0][0] > 1.0 * hmed:
+            return None
+        return ocr_label(rgb.crop((x0 + ws_[0][0], y0 + a_, x0 + ws_[0][1], y0 + c_)))
+
+    def optgrid(x0, x1, y0, y1, limit):
+        # satırlara (yatay beyaz boşluk) böl; etiketli satırları sütun koridorlarından şıklara ayır
+        rw_ = nw[y0:y1, x0:x1].any(1)
+        cuts = [y0]
+        for s_, e_ in runs(~rw_):
+            if e_ - s_ >= 0.5 * hmed and s_ > 0 and e_ < y1 - y0:
+                cuts += [y0 + s_, y0 + e_]
+        cuts.append(y1)
+        rows_ = [tight(x0, x1, cuts[i], cuts[i + 1]) for i in range(0, len(cuts), 2)]
+        rows_ = [r_ for r_ in rows_ if r_]
+        # etiket satırı + altındaki şekil satırı aynı sütunlarda: önce etiketli satırı bul, alttaki etiketsiz satırları ona kat
+        out, labs, got = [], [], False
+        grp = []
+        for r_ in rows_:
+            col = nw[r_[2]:r_[3], r_[0]:r_[1]].any(0)
+            cors = [(r_[0] + s_, r_[0] + e_) for s_, e_ in runs(~col) if e_ - s_ >= max(10, 0.5 * hmed)]
+            ps = []
+            xa = r_[0]
+            for s_, e_ in cors:
+                ps.append((xa, s_))
+                xa = e_
+            ps.append((xa, r_[1]))
+            parts_ = [tight(a_, c_, r_[2], r_[3]) for a_, c_ in ps]
+            parts_ = [p for p in parts_ if p]
+            ls_ = [col_label(p) for p in parts_]
+            grp.append((r_, parts_, ls_))
+        # şık etiketiyle başlayan sütun başları: etiket olmayan küçük parçaları (ör. "Sıvı basıncı" yanındaki) soldaki etikete kat
+        res = []
+        i = 0
+        while i < len(grp):
+            r_, parts_, ls_ = grp[i]
+            if sum(1 for l in ls_ if l) >= 2:
+                # etiketli parçalardan sütun aralıkları
+                starts = [p[0] for p, l in zip(parts_, ls_) if l]
+                if ls_[0] is None:
+                    return None
+                bounds = starts[1:] + [r_[1] + 1]
+                # bu satır ve alttaki etiketsiz satırlar (aynı sütun aralıklarında) birlikte
+                ye = r_[3]
+                j = i + 1
+                while j < len(grp) and sum(1 for l in grp[j][2] if l) == 0:
+                    rj = grp[j][0]
+                    # alt satır sütun sınırlarını kesmemeli
+                    okc = all(not nw[rj[2]:rj[3], max(rj[0], bx - 3):min(rj[1], bx)].any() for bx in starts[1:])
+                    if not okc or rj[2] - ye > 1.5 * hmed:
+                        break
+                    ye = rj[3]
+                    j += 1
+                lsq = [l for l in ls_ if l]
+                if lsq != sorted(lsq):
+                    return None
+                for k_, sx in enumerate(starts):
+                    p = tight(sx, bounds[k_] - 1, r_[2], ye)
+                    if p is None or p[1] - p[0] > limit * 1.02:
+                        return None
+                    res.append(p)
+                got = True
+                i = j
+            else:
+                res.append(r_)
+                i += 1
+        if not got:
+            return None
+        cov_ = np.zeros((y1 - y0, x1 - x0), bool)
+        for p in res:
+            cov_[p[2] - y0:p[3] - y0, p[0] - x0:p[1] - x0] = True
+        if ((g[y0:y1, x0:x1] < WHITE) & ~cov_).sum() > 3:
+            return None          # bölme mürekkep dışarıda bırakıyor: güvensiz
+        tot = sum((p[1] - p[0]) * (p[3] - p[2]) for p in res)
+        if tot != int(cov_.sum()):
+            return None          # parçalar örtüşüyor
+        return res
+
     def gutter_split(x0, x1, y0, y1, limit):
         """geniş şekli tam boy beyaz dikey koridordan böl (A) şekil  B) şekil -> alt alta)"""
         if x1 - x0 <= limit:
             return [(x0, x1, y0, y1)]
+        # ızgara (2x2 şekilli şıklar A B / C D): önce satırlara böl ki okuma sırası satır satır kalsın
+        def vgut(a_, c_, p_, q_):
+            cl_ = nw[p_:q_, a_:c_].any(0)
+            return any(e_ - s_ >= max(20, 1.2 * hmed) and s_ >= 0.15 * (c_ - a_) and e_ <= 0.85 * (c_ - a_) for s_, e_ in runs(~cl_))
+        rw_ = nw[y0:y1, x0:x1].any(1)
+        hg = [(s_, e_) for s_, e_ in runs(~rw_) if e_ - s_ >= 0.6 * hmed and s_ >= 2.5 * hmed and (y1 - y0) - e_ >= 2.5 * hmed]
+        if hg and not vgut(x0, x1, y0, y1) is False:
+            for s_, e_ in sorted(hg, key=lambda t: -(t[1] - t[0])):
+                ya, yb = y0 + s_, y0 + e_
+                if vgut(x0, x1, y0, ya) and vgut(x0, x1, yb, y1):
+                    out = []
+                    for p_, q_ in ((y0, ya), (yb, y1)):
+                        sub = nw[p_:q_, x0:x1]
+                        rr = np.where(sub.any(1))[0]
+                        cc = np.where(sub.any(0))[0]
+                        out += gutter_split(x0 + int(cc[0]), x0 + int(cc[-1]) + 1, p_ + int(rr[0]), p_ + int(rr[-1]) + 1, limit)
+                    if len(out) >= 4 and not any(p[3] - p[2] < 2.5 * hmed for p in out):
+                        return out
+                    break
         col = nw[y0:y1, x0:x1].any(0)
         best = None
         for s_, e_ in runs(~col):
@@ -1058,6 +1232,11 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
                       else [(b['x0'], b['x1'], b['y0'], b['y1'])] if b.get('nosplit')
                       else [(p[0], p[1], p[2], p[3]) for p in b['forced_parts']] if b.get('forced_parts')
                       else gutter_split(b['x0'], b['x1'], b['y0'], b['y1'], Wcap))
+        # yan yana şık ızgarası (A) şekil  B) şekil ... / tablo gibi dizilmiş çok satırlı şıklar): her şık ayrı parça, alt alta
+        if b['kind'] != 'formula' and not b.get('forced_parts') and b['x1'] - b['x0'] > Wcap and len(b['parts']) == 1:
+            og = optgrid(b['x0'], b['x1'], b['y0'], b['y1'], Wcap)
+            if og:
+                b['parts'] = og
     if os.environ.get('RFDBG'):
         for b in blocks:
             print('BLOCK', b['kind'], b['x0'], b['x1'], b['y0'], b['y1'], b['parts'], file=sys.stderr)
@@ -1129,13 +1308,42 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
         b['lead'] = int(max(3, round(pitch - h_))) if h_ <= pitch - 3 else 3
         if b.get('ftext'):
             b['lead'] = max(b['lead'], int(0.4 * hmed))
+    # yanında şekil olan metin sütunu (bölünmüş blok: [metin sütunu, şekil]): blok altındaki aynı sütunun devam
+    # satırları (ör. şeklin altına düşen D) şıkkı) şekilden önce, metin sütununun hemen ardından gelsin
+    if not inner:
+        bi_ = 0
+        while bi_ < len(bands):
+            b = bands[bi_]
+            if (b['kind'] == 'block' and len(b.get('parts', [])) >= 2 and 0 in b.get('pre', {})
+                    and not any(j_ in b['pre'] for j_ in range(1, len(b['parts'])))):
+                p0 = b['parts'][0]
+                fol, k_, lasty = [], bi_ + 1, p0[3]
+                while (k_ < len(bands) and bands[k_]['kind'] == 'text' and bands[k_]['x0'] >= p0[0] - hmed
+                       and bands[k_]['x1'] <= p0[1] + hmed and bands[k_]['y0'] - lasty <= 1.5 * hmed):
+                    fol.append(bands[k_])
+                    lasty = bands[k_]['y1']
+                    k_ += 1
+                if fol and not fol[0].get('inpara'):
+                    w_pre = b['pre'][0].size[0]
+                    dx_ = max(0, min(p0[0] - Xmin, Wout - w_pre)) - (p0[0] - Xmin)
+                    for f_ in fol:
+                        f_['_dx'] = dx_          # metin sütunuyla aynı sola kayma
+                    bA = dict(b, parts=[p0], pre={0: b['pre'][0]}, _side=True)
+                    bB = dict(b, parts=b['parts'][1:], pre={}, _gapov=int(0.8 * hmed))
+                    fol[0]['_gapov'] = max(0, fol[0]['y0'] - p0[3])
+                    if k_ < len(bands):
+                        bands[k_]['_gapov'] = bands[k_]['y0'] - b['y1']
+                    bands[bi_:k_] = [bA] + fol + [bB]
+                    bi_ = k_ + 1
+                    continue
+            bi_ += 1
     ops = []   # (src box, dst xy, dst size | None)
     y = pad + 0
     for i, b in enumerate(bands):
         if b.get('inpara'):
             continue
         if i > 0:
-            y += b['y0'] - bands[i - 1]['y1']
+            y += b['_gapov'] if '_gapov' in b else b['y0'] - bands[i - 1]['y1']
         if b['kind'] == 'text':
             # her parça kendi mürekkebine sıkı kırpılır; satırlar sabit taban çizgisi aralığıyla (bp) dizilir,
             # yalnız uzun harf/kesir taşarsa aralık açılır (satır aralığı dalgalanmasın)
@@ -1166,9 +1374,9 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
                 else:
                     bl = max(prev_bl + bp, prev_bot + mingap + asc)
                 for sb, x0, x1, dx, t0, t1 in tight:
-                    ops.append(((x0, t0, x1, t1), (pad + xp - Xmin + dx, bl - (sb['base'] - t0)), None))
+                    ops.append(((x0, t0, x1, t1), (pad + xp - Xmin + dx + b.get('_dx', 0), bl - (sb['base'] - t0)), None))
                 for sb, x0, x1, dx, t0, t1 in numt:
-                    ops.append(((x0, t0, x1, t1), (pad + xp - Xmin + dx, bl + sb['ntext_y1'] - sb['base'] + gN), None))
+                    ops.append(((x0, t0, x1, t1), (pad + xp - Xmin + dx + b.get('_dx', 0), bl + sb['ntext_y1'] - sb['base'] + gN), None))
                 prev_bl, prev_bot = bl, bl + dsc
                 if numt:
                     prev_bot += int(0.35 * hmed)        # numaralı satırın altında pay
@@ -1185,9 +1393,9 @@ def plan_img(rgb, hmed_force=None, T_force=None, depth=0):
                 elif w > Wout:
                     sz = (Wout, max(1, int(round(h * Wout / w))))
                     w, h = sz
-                xp = max(0, min(x0 - Xmin, Wout - w)) if len(b['parts']) == 1 else 0
+                xp = max(0, min(x0 - Xmin, Wout - w)) if (len(b['parts']) == 1 or j in b['pre']) else 0
                 cx = (Xmin + max(t['x1'] for t in texts)) / 2
-                if len(b['parts']) == 1 and abs((x0 + x1) / 2 - cx) < 0.06 * W and x0 - Xmin > 2 * hmed:
+                if len(b['parts']) == 1 and abs((x0 + x1) / 2 - cx) < 0.06 * W and x0 - Xmin > 2 * hmed and not b.get('_side'):
                     xp = max(0, (Wout - w) // 2)     # ortalı şekli ortalı tut
                 ops.append(((x0, y0, x1, y1), (pad + xp, y), sz))
                 y += h
