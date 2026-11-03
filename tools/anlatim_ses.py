@@ -10,6 +10,9 @@ Kullanım (ağ vekili edge-tts'i bozar, ortamdan çıkar):
   env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy python3 tools/anlatim_ses.py [konuId ...]
   --check   : yalnızca okunuş metinlerini yazdır (ses üretmez)
   --force   : değişmemiş parçaları da yeniden üret
+İngilizce bölümler: altyazıda <i lang="en">…</i> içine alınan metin en-US-AndrewNeural ile okunur,
+geri kalanı AhmetNeural ile; parçalar aynı biçimde (24 kHz mono 48 kbps) olduğu için tek mp3'e art arda eklenir.
+İngilizce işareti olmayan adımlar eskisiyle bire bir aynı üretilir (aynı okunuş, aynı ses özeti).
 Değişmeyen metin (aynı okunuş + ses ayarı) atlanır; yarıda kalırsa yeniden çalıştırmak kaldığı yerden sürer.
 """
 import asyncio, hashlib, json, os, re, subprocess, sys, time, unicodedata
@@ -20,6 +23,11 @@ RATE = '+5%'
 PITCH = '+0Hz'
 KBPS = 48            # edge-tts çıktısı: 24 kHz mono 48 kbps mp3
 CONC = 6
+FRAME, FRAME_MS = 144, 24   # MPEG-2 L3 24 kHz 48 kbps: kare 144 bayt = 576 örnek = 24 ms
+EN_VOICE = 'en-US-AndrewNeural'
+EN_RATE = '+0%'
+# İngilizce bölüm işareti: <i lang="en">…</i> (ya da lang="en" taşıyan herhangi bir etiket: <em lang="en">, <b lang="en">)
+EN_RE = re.compile(r'<(i|em|b|u|strong)\s+lang=["\']en["\'][^>]*>(.*?)</\1>', re.S | re.I)
 
 # ---------------------------------------------------------------- ders verisini oku (node)
 DUMP_JS = r"""
@@ -113,7 +121,17 @@ def locative(word):
     return d + a
 
 SUP = {'⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9', '⁻': '−', '⁺': '+', 'ⁿ': 'n', 'ˣ': 'x'}
-ABBR = [(r"\bLGS[’']?", 'le ge se'), (r'\bMEB\b', 'meb'), (r'\bTDK\b', 'te de ka'), (r'\bEXP\b', 'eksp'),
+ABBR = [(r"\bHz\.\s*", 'Hazreti '), (r'\s*\((?:a\.s|s\.a\.v|s\.a\.s|c\.c|r\.a|r\.anh)\.?\)', ''),
+        # LGS/TDK + ek: ek ayrı hece kalsın (le ge se'de, le ge se'nin; "senin" gibi okunmasın)
+        (r"(?:(?<=[.!?] )|^)LGS(?=[’'\s,.;:!?]|$)", 'Le ge se'), (r"(?:(?<=[.!?] )|^)TDK(?=[’'\s,.;:!?]|$)", 'Te de ke'),
+        (r"\b([Ll]e ge se|[Tt]e de ke)[’']([a-zçğıöşü]+)", r"\1'\2"),
+        (r"\bLGS[’']([a-zçğıöşü]+)", r"le ge se'\1"), (r'\bLGS\b', 'le ge se'),
+        (r"\b[Ll]e ge se(?=[a-zçğıöşü])", lambda m: m.group(0) + "'"),
+        (r"\bTDK[’']([a-zçğıöşü]+)", r"te de ke'\1"), (r'\bTDK\b', 'te de ke'),
+        # cümle başındakini büyük harfle yaz: "72. ebob" sıra sayısı sanılmasın
+        (r"(?:(?<=[.!?] )|^)EBOB[’']?", 'Ebob'), (r"(?:(?<=[.!?] )|^)EKOK[’']?", 'Ekok'),
+        (r"\bEBOB[’']?", 'ebob'), (r"\bEKOK[’']?", 'ekok'),
+        (r'\bMEB\b', 'meb'), (r'\bEXP\b', 'eksp'),
         (r'\bvb\.', 've benzeri'), (r'\bvs\.', 've saire'), (r'\börn\.', 'örneğin'), (r'\bsn\b', 'saniye'),
         (r'\bdk\b', 'dakika'), (r'\bkg\b', 'kilogram'), (r'\bcm\b', 'santimetre'), (r'\bkm\b', 'kilometre')]
 
@@ -152,6 +170,9 @@ def normalize(seg):
            ('…', ', '), ('...', ', '), ('π', ' pi ')]
     for a, b in rep:
         t = t.replace(a, b)
+    # tırnak içi soru/ünlem: "…?” diye / dedi / sorusu" → ardından gelen sözcük büyütülmez (\u2063 = işaret, sonda silinir)
+    t = re.sub(r"([?!])[”\"»']+", '\\1\u2063', t)
+    t = re.sub(r"([?!])\s+(?=(?:diye|dedi|der|de|demek|diyen|sor)[a-zçğıöşü]*\b)", '\\1\u2063 ', t)
     t = re.sub(r'[“”"«»]', '', t)
     # ek örnekleri: "-ınca", "-ken" → ek olarak okunur (kısa çizgi okunmaz)
     t = re.sub(r"(^|[\s(/,;:])-(?=[a-zçğıöşü])", r'\1', t, flags=re.I)
@@ -191,15 +212,75 @@ def normalize(seg):
     # cümle başını büyüt (Türkçe i → İ)
     up = lambda c: 'İ' if c == 'i' else ('I' if c == 'ı' else c.upper())
     t = re.sub(r'(^|[.!?]\s+)([a-zçğıöşü])', lambda m: m.group(1) + up(m.group(2)), t)
+    return t.replace('\u2063', '')
+
+# ---------------------------------------------------------------- İngilizce bölümler
+def en_clean(t):
+    t = re.sub(r'<br\s*/?>', ' ', t, flags=re.I)
+    t = re.sub(r'<[^>]+>', '', t)
+    t = t.replace('&nbsp;', ' ').replace('&lt;', '<').replace('&gt;', '>').replace('&amp;', '&')
+    t = t.replace('’', "'").replace('‘', "'").replace('…', ', ').replace('...', ', ')
+    t = re.sub(r'[“”"«»]', '', t)
+    t = t.replace('/', ' or ').replace('_', ' ')
+    t = re.sub(r'\s+', ' ', t).strip()
     return t
+
+def parts(seg):
+    """[(dil, metin), ...]. İngilizce işareti yoksa tek Türkçe parça: normalize(seg) (eski davranış)."""
+    src = seg['v'] or seg['s']
+    if not EN_RE.search(src):
+        return [('tr', normalize(seg))]
+    out = []; pos = 0
+    for m in EN_RE.finditer(src):
+        out.append(('tr', src[pos:m.start()])); out.append(('en', m.group(2))); pos = m.end()
+    out.append(('tr', src[pos:]))
+    res = []
+    for lang, chunk in out:
+        if lang == 'tr':
+            # İngilizce bölümün hemen ardındaki noktalama (, . ? :) o bölüme eklenir: doğal duraklama
+            raw = re.sub(r'<[^>]+>', '', chunk).replace('&nbsp;', ' ')
+            lead = re.match(r"^[\s,.;:!?)]*", raw).group(0).strip()
+            lead = re.sub(r'\s+', '', lead)[:1]
+            txt = normalize({'s': chunk, 'v': ''})
+            txt = re.sub(r"^[\s,.;:!?')]+", '', txt).strip()
+            if lead and res and res[-1][0] == 'en' and not re.search(r'[.!?,;:]$', res[-1][1]):
+                res[-1] = ('en', res[-1][1] + lead)
+            if not re.search(r'[0-9A-Za-zÇĞİÖŞÜçğıöşüâîû]', txt):
+                continue
+            tail = re.search(r'([,.;:!?])[\s"”’)]*$', raw)
+            if tail and not re.search(r'[,.;:!?]$', txt):
+                txt += tail.group(1)                  # İngilizceden önceki virgül/nokta: duraklama kalsın
+            rest = re.sub(r"^[\s,.;:!?')“”‘’\"«»]+", '', raw)
+            if res and rest[:1].islower() and txt[:1].isupper():
+                txt = ('i' if txt[0] == 'İ' else 'ı' if txt[0] == 'I' else txt[0].lower()) + txt[1:]   # cümle ortası
+        else:
+            txt = en_clean(chunk)
+            if not re.search(r'[0-9A-Za-z]', txt):
+                continue
+        if res and res[-1][0] == lang:
+            res[-1] = (lang, res[-1][1] + ' ' + txt)
+        else:
+            res.append((lang, txt))
+    return res
+
+def show(ps):
+    if len(ps) == 1 and ps[0][0] == 'tr':
+        return ps[0][1]
+    return ' '.join(('[EN: %s]' % t) if l == 'en' else t for l, t in ps)
 
 # ---------------------------------------------------------------- üretim
 def audio_hash(text):
     return hashlib.sha1(('%s|%s|%s|%s' % (VOICE, RATE, PITCH, text)).encode()).hexdigest()[:12]
 
-async def synth(text, path):
+def parts_hash(ps):
+    if len(ps) == 1 and ps[0][0] == 'tr':
+        return audio_hash(ps[0][1])           # eski derslerle aynı özet
+    key = '||'.join('%s|%s|%s|%s|%s' % (((VOICE, RATE) if l == 'tr' else (EN_VOICE, EN_RATE)) + (PITCH, l, t)) for l, t in ps)
+    return hashlib.sha1(('mix|' + key).encode()).hexdigest()[:12]
+
+async def synth1(text, voice, rate):
     import edge_tts
-    c = edge_tts.Communicate(text, VOICE, rate=RATE, pitch=PITCH, boundary='WordBoundary')
+    c = edge_tts.Communicate(text, voice, rate=rate, pitch=PITCH, boundary='WordBoundary')
     buf = bytearray(); words = []
     async for ch in c.stream():
         if ch['type'] == 'audio':
@@ -208,6 +289,22 @@ async def synth(text, path):
             words.append((round(ch['offset'] / 1e4), round((ch['offset'] + ch['duration']) / 1e4), ch['text']))
     if not buf:
         raise RuntimeError('boş ses')
+    return buf, words
+
+async def synth(ps, path):
+    if isinstance(ps, str):
+        ps = [('tr', ps)]
+    buf = bytearray(); words = []
+    for j, (lang, text) in enumerate(ps):
+        b, w = await synth1(text, VOICE if lang == 'tr' else EN_VOICE, RATE if lang == 'tr' else EN_RATE)
+        if j < len(ps) - 1 and w and len(b) % FRAME == 0:
+            # ara parçanın sondaki uzun sessizliğini kes (yalnız kuyruk; kare sınırında, kayıpsız)
+            keep = w[-1][1] + (380 if re.search(r'[.!?:]\s*$', text) else 260 if re.search(r'[,;]\s*$', text) else 160)
+            nf = -(-keep // FRAME_MS)
+            b = b[:nf * FRAME]
+        off = round(len(buf) * 8 / KBPS)    # ms (CBR, aynı biçim: kareler art arda eklenir)
+        words += [(a + off, e + off, x) for a, e, x in w]
+        buf += b
     tmp = path + '.part'
     with open(tmp, 'wb') as f:
         f.write(buf)
@@ -231,8 +328,9 @@ async def run(ids, force, deadline):
         new = {}; review = []
 
         async def one(seg):
-            text = normalize(seg)
-            ah = audio_hash(text)
+            ps = parts(seg)
+            text = show(ps)
+            ah = parts_hash(ps)
             f = os.path.join(out, seg['key'] + '.mp3')
             o = old.get(seg['key'])
             if not force and o and o.get('a') == ah and os.path.exists(f):
@@ -241,13 +339,13 @@ async def run(ids, force, deadline):
             if time.time() > deadline:
                 total['fail'] += 1; return
             async with sem:
-                for att in range(3):
+                for att in range(5):
                     try:
-                        size, words = await synth(text, f); break
+                        size, words = await synth(ps, f); break
                     except Exception as e:
-                        if att == 2:
+                        if att == 4 or time.time() > deadline:
                             print('HATA', lid, seg['key'], e, flush=True); total['fail'] += 1; return
-                        await asyncio.sleep(1.5)
+                        await asyncio.sleep(1.5 * (att + 1))
             d = round(size * 8 / KBPS)          # ms (CBR)
             wt = ' '.join(w[2] for w in words)
             new[seg['key']] = {'src': src_hash(seg), 'a': ah, 'd': max(d, words[-1][1] if words else 0),
@@ -274,7 +372,7 @@ def main():
     if '--check' in sys.argv:
         for lid, segs in lessons(args).items():
             for s in segs:
-                print(lid, s['key'], '|', normalize(s))
+                print(lid, s['key'], '|', show(parts(s)))
         return
     budget = 100
     for a in sys.argv:

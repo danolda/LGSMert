@@ -86,7 +86,20 @@ Konu sayfasında başlığın altına **▶ Adım Adım Anlatım** düğmesi, `d
   altyazı sözcük sözcük vurgulanır, duraklatınca kaldığı yerden sürer). Metin değişmiş ama ses üretilmemişse ya da mp3 yüklenemezse
   o adım Web Speech (tr-TR) ile okunur; o da yoksa ya da 🔇 ise altyazı okuma süresiyle ilerler. Tercih `lgs2027:anlatimPref`.
   iOS: ▶ Başlat dokunuşu ses öğesini sessiz bir parçayla açar; sonraki tüm parçalar aynı öğede çalar.
-  `sw.js` sesleri istendikçe `kisla-ses-v1` önbelleğine alır (toplu ön yükleme yok, Range isteğine 206 döner, en fazla ~600 dosya).
+  `sw.js` sesleri istendikçe `kisla-ses-v1` önbelleğine alır (toplu ön yükleme yok, Range isteğine 206 döner; ders bazında LRU: en fazla ~1500 dosya / ~80 MB, aşılınca en uzun süredir açılmayan dersin tüm sesleri silinir, çalan ders korunur; kullanım kaydı `kisla-ses-lru`).
+- **İngilizce bölümler (İngilizce dersleri):** altyazıda (`s`, ara soruda `why` / `hint`) İngilizce sözcük ve cümleleri
+  `<i lang="en">…</i>` içine al (ya da `lang="en"` taşıyan `<em>/<b>/<u>/<strong>`). `anlatim_ses.py` adımı parçalara böler:
+  işaretli bölümler **en-US-AndrewNeural** (hız +0%), geri kalanı **tr-TR-AhmetNeural** ile okunur; parçalar aynı biçimde
+  (24 kHz mono 48 kbps CBR, kare = 144 bayt / 24 ms) olduğundan tek mp3'e art arda eklenir, ara parçaların sondaki uzun sessizliği
+  kare sınırında kesilir (nokta/soru işaretinden sonra ~380 ms, virgülden sonra ~260 ms, yoksa ~160 ms duraklama kalır);
+  `w` sözcük zamanları parça başlangıçlarına göre kaydırılır. İşareti olmayan adımlar eskisiyle bire bir aynı üretilir
+  (aynı okunuş, aynı ses özeti; mat-uslu ve tr-fiilimsi ile doğrulandı). `--check` İngilizce parçaları `[EN: …]` diye gösterir.
+  Yazım kuralları: İngilizce sözcüğe Türkçe ek yapıştırma (`<i lang="en">skiing</i>de` ✗ → “skiing sporunda” ✓); İngilizce
+  bölümleri `v` alanına koyma (Web Speech yedeği `v`'yi olduğu gibi okur), altyazı = okunuş olsun. Dersler kısa yazım için
+  `[[…]]` kullanıp dosya sonunda `<i lang="en">…</i>`'ye çevirebilir (bkz. `data/anlatim/ing-*.js`). Web Speech yedeğinde
+  İngilizce bölümler de tr-TR sesle okunur (yalnız mp3 yüklenemezse).
 - Okunuş: `anlatim_ses.py` metni Türkçe okunuşa çevirir: sayılar yazıyla ve ekiyle (`4’te 1` → dörtte bir, `4’e` → dörde, `4.` → dördüncü,
   `0,25` → sıfır virgül yirmi beş), `<sup>`/² ³ ⁻ → "üssü (eksi) …", `{{1|8}}` → sekizde 1, `· × ÷ = < > ≤ ≠ √ % ±` sözle,
-  `-ken` gibi ek örnekleri tiresiz, `isim-fiil` → isim fiil, `2x` → iki iks, LGS → le ge se. Yine de belirsiz her matematik adımına `v` yaz.
+  `-ken` gibi ek örnekleri tiresiz, `isim-fiil` → isim fiil, `2x` → iki iks, LGS → le ge se (ek ayrı kalır: `LGS’de` → le ge se'de,
+  `LGS’nin` → le ge se'nin; "senin" gibi okunmasın), TDK → te de ke, EBOB/EKOK → ebob/ekok (ekleriyle), `Hz.` → Hazreti,
+  (a.s.)/(s.a.v.)/(c.c.)/(r.a.) okunmaz; tırnak içindeki `?`/`!`'ten sonra gelen sözcük (“…?” diye, dedi, sorusu) büyütülmez. Yine de belirsiz her matematik adımına `v` yaz.
