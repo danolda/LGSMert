@@ -1,6 +1,6 @@
 window.LGS = {
-  version: 95,
-  xpMax: 616220,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
+  version: 96,
+  xpMax: 684460,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 resmi tarih: 13 Haziran 2027 Pazar (MEB, 30.10.2026) https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr
   topics: {},
   past: {},
@@ -9,7 +9,7 @@ window.LGS = {
   mebLoaded: {},
   mebSubj: { fen: 1, mat: 1, tr: 1, ink: 1, din: 1, ing: 1 }, // MEB LGS Çalışma Kitabı soruları yüklenen dersler
   mebiLoaded: {},
-  mebiSubj: { din: 1, ink: 1 }, // MEBİ yaprak test soruları (data/meb/mebi-<ders>.js) yüklenen dersler; node tools/meb.js apply mebi-<ders> günceller
+  mebiSubj: { din: 1, ink: 1, fen: 1, mat: 1, ing: 1, tr: 1 }, // MEBİ yaprak test soruları (data/meb/mebi-<ders>.js) yüklenen dersler; node tools/meb.js apply mebi-<ders> günceller
   add: function (t) { this.topics[t.id] = t; },
   addMeb: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.meb[k] = obj[k]; },
   addPast: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.past[k] = obj[k]; },
