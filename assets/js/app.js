@@ -288,6 +288,7 @@
       }).join('') + '</div>' +
       '<div id="qs"></div>' + nav + '</div>';
     app.innerHTML = html;
+    if (window.LGSAnlatim) window.LGSAnlatim.hook(t.id);
 
     var qsBox = document.getElementById('qs');
     var lastG = null;
@@ -1105,6 +1106,7 @@
     if (window.LGSVS) window.LGSVS.stop();
     if (window.LGSDeneme) window.LGSDeneme.stop();
     if (window.LGSYazili) window.LGSYazili.stop();
+    if (window.LGSAnlatim) window.LGSAnlatim.stop();
     var r = h[0] === 'deneme' ? 'dn' : h[0] === 'yazili' ? 'yz' : h[0] === 'vs' ? 'vs' : h[0] === 'indir' ? 'dl' : h[0] === 'lider' ? 'lb' : h[0] === 'hatirlatici' ? 'rem' : h[0] === 'gorevler' ? 'qs' : (h[0] === 'profil' || h[0] === 'u') ? 'prof' : 'home';
     markNav(r);
     if (h[0] === 'd' && h[1]) subjectPage(h[1]);
@@ -1116,6 +1118,7 @@
     else if (h[0] === 'indir') installPage();
     else if (h[0] === 'deneme') { if (window.LGSDeneme) window.LGSDeneme.page(h[1], h[2]); }
     else if (h[0] === 'yazili') { if (window.LGSYazili) window.LGSYazili.page(h[1], h[2]); }
+    else if (h[0] === 'anlatim') { if (window.LGSAnlatim) window.LGSAnlatim.page(h[1]); }
     else if (h[0] === 'vs') { if (window.LGSVS) window.LGSVS.page(h[1]); else app.innerHTML = '<p class="empty">VS modu için internet bağlantısı gerekli.</p>'; }
     else if (h[0] === 'u' && h[1]) userPage(h.slice(1).join('/'));
     else home();
