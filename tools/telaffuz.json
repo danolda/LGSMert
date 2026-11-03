@@ -1,0 +1,263 @@
+{
+  "_aciklama": [
+    "Adım Adım Anlatım okunuş sözlüğü. tools/anlatim_ses.py (sesli metin) ve tools/validate.js (altyazı yazımı) okur.",
+    "Yalnızca SESLİ metni değiştirir; altyazı (s/why/hint) TDK yazımıyla kalır. Ayrıntı ve deney sonuçları: tools/ANLATIM.md › Okunuş sözlüğü.",
+    "edge-tts özel SSML kabul etmiyor (phoneme, sub, emphasis, break, iç içe prosody: hepsi 'No audio'), tek araç yeniden yazım.",
+    "Ses (tr-TR-AhmetNeural) şapkayı sözcüğe göre farklı işliyor: sözlüğünde olan sözcüklerde yok sayıyor (hikâye=hikaye, rüzgâr, dâhil, âşık, millî, resmî),",
+    "k/g sonrası â'yı ince (palatal) okuyor (kâr, kâğıt, zekât, Kâzım, Kâbe: doğru), birkaç sözcükte uzatıyor (hâlâ, dâhi, dinî),",
+    "ama başka yerlerde â/û'yu öne kaydırıp yanlış ünlüye çeviriyor (âlem, âdet, âmâ, yâr, Mâide, Sâbit, Nâs, İmrân, Şifâ, Tûr, Nûr). Bu yüzden kural:",
+    "  1) 'sapka.koru' listesindeki sözcükler olduğu gibi okunur; 2) k/g/K/G'den sonraki â korunur; 3) kalan â → a, û → u; î korunur (zararsız ya da uzatıyor).",
+    "  4) 'yeniden_yaz' girdileri uygulanır (uzun ünlü için çift ünlü: maazeret, aamaa; âdet için a'adet).",
+    "Eşleşme: anahtar sözcük başında aranır, ardındaki ekler korunur (mazeretin → maazeretin); büyük harf korunur; tam:true → yalnız ek almamış/kesmeli biçim."
+  ],
+  "sapka": {
+    "koru": [
+      "hâl",
+      "dâhi",
+      "kuvâ",
+      "isrâ"
+    ],
+    "_not": "Önek eşleşir (hâl → hâlâ, hâlde, hâlbuki; dâhi → dâhil). hâlâ ve dâhi şapkayla uzun okunuyor; hâl, dâhil, Kuvâyı, İsrâ şapkalı/şapkasız aynı ses veriyor (gereksiz yeniden üretim olmasın diye korunur)."
+  },
+  "yeniden_yaz": [
+    {
+      "k": "mazeret",
+      "v": "maazeret",
+      "not": "TDK [ma:zeret]; ses ilk a'yı kısa okuyor (80 ms → 130 ms)"
+    },
+    {
+      "k": "âdet",
+      "v": "a'adet",
+      "not": "görenek, TDK [a:det]; âdet ön ünlüye kayıyor, aadet = adet (sayı) ile aynı; a'adet tek hece boyunca uzun a"
+    },
+    {
+      "k": "âmâ",
+      "v": "aamaa",
+      "not": "görme engelli, TDK [a:ma:]; âmâ bozuk okunuyor"
+    },
+    {
+      "k": "Nâs",
+      "v": "Naas",
+      "tam": true,
+      "not": "Nâs suresi; Nâs ön ünlüye kayıyor"
+    },
+    {
+      "k": "İmrân",
+      "v": "İmraan",
+      "not": "Âl-i İmrân; â kayıyor"
+    },
+    {
+      "k": "şûra",
+      "v": "şuura",
+      "not": "danışma kurulu, TDK [şu:ra:]; şura (orası) ile karışmasın"
+    },
+    {
+      "k": "Şûra",
+      "v": "Şuura"
+    }
+  ],
+  "harf": {
+    "_not": "Tek başına büyük harf (nokta/köşe/şık adı) Türkçe harf adıyla okunur; ses K'yı 'ka' diyor (K'nin → ka'nın), TDK harf adı 'ke'.",
+    "K": "ke"
+  },
+  "vurgu_uyari": [
+    {
+      "re": "\\b[Yy]azın\\b",
+      "not": "yazın (yaz mevsiminde, YAzın) / yazın (emir, yaZIN): ses bağlamdan seçiyor, zorlanamaz. Belirsizse 'yaz mevsiminde' ya da 'yazınız' yaz."
+    },
+    {
+      "re": "\\b(okuma|yazma|gelme|bakma|gitme|sorma|koşma)\\b(?![a-zçğıöşü])",
+      "not": "-ma/-me: isim-fiil (okuMA) mı olumsuz emir (OKUma) mı? Ses bağlamdan seçiyor; emirse ünlem koy ('Okuma!'), isim-fiilse cümle içinde kullan ('okuma alışkanlığı')."
+    }
+  ],
+  "yazim": {
+    "_not": "validate.js altyazı denetimi. Her girdi sozluk.gov.tr (Güncel Türkçe Sözlük, Kasım 2026) ile doğrulandı. 'hata': yazım TDK'ya aykırı (sorun sayılır). 'bak': anlama göre değişir, uyarı verilir (sorun sayılmaz).",
+    "hata": [
+      {
+        "y": "hikaye",
+        "d": "hikâye"
+      },
+      {
+        "y": "kağıt",
+        "d": "kâğıt"
+      },
+      {
+        "y": "kağıd",
+        "d": "kâğıd"
+      },
+      {
+        "y": "rüzgar",
+        "d": "rüzgâr"
+      },
+      {
+        "y": "dükkan",
+        "d": "dükkân"
+      },
+      {
+        "y": "zekat",
+        "d": "zekât"
+      },
+      {
+        "y": "şikayet",
+        "d": "şikâyet"
+      },
+      {
+        "y": "imkan",
+        "d": "imkân"
+      },
+      {
+        "y": "nikah",
+        "d": "nikâh"
+      },
+      {
+        "y": "tezgah",
+        "d": "tezgâh"
+      },
+      {
+        "y": "fedakar",
+        "d": "fedakâr"
+      },
+      {
+        "y": "hükumet",
+        "d": "hükûmet"
+      },
+      {
+        "y": "kase",
+        "d": "kâse",
+        "tam": true
+      },
+      {
+        "y": "katip",
+        "d": "kâtip"
+      },
+      {
+        "y": "kainat",
+        "d": "kâinat"
+      },
+      {
+        "y": "mahkum",
+        "d": "mahkûm"
+      },
+      {
+        "y": "sükun",
+        "d": "sükûn"
+      },
+      {
+        "y": "halen",
+        "d": "hâlen",
+        "tam": true
+      },
+      {
+        "y": "halbuki",
+        "d": "hâlbuki"
+      },
+      {
+        "y": "hakimiyet",
+        "d": "hâkimiyet"
+      },
+      {
+        "y": "milli",
+        "d": "millî",
+        "not": "milli = 'mil içeren'; 'ulusal' anlamında millî",
+        "tam": true
+      },
+      {
+        "y": "dahil",
+        "d": "dâhil",
+        "not": "'iç, içinde' anlamında dâhil"
+      },
+      {
+        "y": "halde",
+        "d": "hâlde",
+        "tam": true
+      },
+      {
+        "y": "hal eki",
+        "d": "hâl eki"
+      },
+      {
+        "y": "kâtil",
+        "d": "katil",
+        "not": "TDK 'katil' [ka:til], şapkasız"
+      },
+      {
+        "y": "ilân",
+        "d": "ilan"
+      },
+      {
+        "y": "lâzım",
+        "d": "lazım"
+      },
+      {
+        "y": "kelâm",
+        "d": "kelam"
+      },
+      {
+        "y": "âhiret",
+        "d": "ahiret"
+      },
+      {
+        "y": "mâzeret",
+        "d": "mazeret"
+      },
+      {
+        "y": "lâle",
+        "d": "lale"
+      },
+      {
+        "y": "siyasî",
+        "d": "siyasi"
+      },
+      {
+        "y": "iktisadî",
+        "d": "iktisadi"
+      },
+      {
+        "y": "insanî",
+        "d": "insani"
+      },
+      {
+        "y": "ahlakî",
+        "d": "ahlaki"
+      },
+      {
+        "y": "ahlâkî",
+        "d": "ahlaki"
+      }
+    ],
+    "bak": [
+      {
+        "re": "\\b[Hh]ala\\b",
+        "not": "hala = babanın kız kardeşi; 'şimdiye kadar' anlamında hâlâ"
+      },
+      {
+        "re": "\\b[Aa]şık\\b",
+        "not": "aşık = aşık kemiği; 'seven' anlamında âşık"
+      },
+      {
+        "re": "\\b[Aa]lem(?:i|in|de|ler)?\\b",
+        "not": "alem = bayrak/minare tepeliği; 'evren, dünya' anlamında âlem"
+      },
+      {
+        "re": "\\b(?:örf ve |gelenek ve )adet|\\badet(?:ler)?i\\b",
+        "not": "adet = sayı; 'görenek' anlamında âdet"
+      },
+      {
+        "re": "\\bkar(?: payı| etmek| etti| zarar|-zarar| amacı|lı\\b| elde)",
+        "not": "kar = yağış; 'kazanç' anlamında kâr"
+      },
+      {
+        "re": "\\b[Dd]ahi\\b(?= (?:bir|olan|biri|bilim|ressam|matematikçi))",
+        "not": "dahi = da/de; 'olağanüstü yetenekli' anlamında dâhi"
+      },
+      {
+        "re": "\\b[Hh]al(?:i|ini|inde|ine|ler|leri)?\\b(?! ?(?:binası|esnafı|de satılan))",
+        "not": "hal = çözme / sebze hâli / tahttan indirme; 'durum' anlamında hâl"
+      },
+      {
+        "re": "\\b[Kk]üllî|\\b[Cc]üzî|\\b[Ff]ıtrî",
+        "not": "Güncel Türkçe Sözlük: külli, cüzi, fıtri (şapkasız). MEB din kitabı şapkalı yazabiliyor; kitaba uymak bilinçli bir tercihse kalsın."
+      }
+    ]
+  }
+}

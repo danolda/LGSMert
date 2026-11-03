@@ -1,8 +1,8 @@
 /* Adım Adım Anlatım listesi · konuId: { n: sahne sayısı, dk: yaklaşık süre (dakika) } · biçim: tools/ANLATIM.md */
-window.LGS_AN_V = 2;   // ders dosyası değişince 1 artır (önbellek)
+window.LGS_AN_V = 3;   // ders dosyası değişince 1 artır (önbellek)
 window.LGS_AN_INDEX = {
-  'mat-uslu': { n: 15, dk: 14 },
-  'tr-fiilimsi': { n: 13, dk: 12 },
+  'mat-uslu': { n: 21, dk: 18 },
+  'tr-fiilimsi': { n: 20, dk: 17 },
   'tr-sozcuk': { n: 15, dk: 12 },
   'tr-cumle': { n: 15, dk: 12 },
   'tr-paragraf': { n: 15, dk: 11 },

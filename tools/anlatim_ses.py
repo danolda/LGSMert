@@ -37,8 +37,9 @@ const ids=process.argv.slice(2).length?process.argv.slice(2):Object.keys(window.
 const out={};
 for(const id of ids){require(R+'/data/anlatim/'+id+'.js');const L=window.LGS_AN[id];const a=[];
  L.scenes.forEach((sc,i)=>{(sc.steps||[]).forEach((st,k)=>a.push({key:i+'-'+k,s:st.s||'',v:st.v||''}));
-  if(sc.cp){ if(sc.cp.why) a.push({key:i+'-why',s:sc.cp.why,v:sc.cp.whyV||''});
-             if(sc.cp.hint) a.push({key:i+'-hint',s:'İpucu: '+sc.cp.hint,v:sc.cp.hintV?'İpucu: '+sc.cp.hintV:''}); }});
+  const X=sc.cp||sc.ia;   // ara soru ya da etkileşimli sahne: açıklama (why) ve ipucu (hint) seslendirilir
+  if(X){ if(X.why) a.push({key:i+'-why',s:X.why,v:X.whyV||''});
+         if(X.hint) a.push({key:i+'-hint',s:'İpucu: '+X.hint,v:X.hintV?'İpucu: '+X.hintV:''}); }});
  out[id]=a;}
 process.stdout.write(JSON.stringify(out));
 """
@@ -142,6 +143,65 @@ def frac(a, b):
         return ' %s%s %s ' % (w, locative(w), a)          # {{1|8}} → sekizde 1
     return ' %s bölü %s ' % (a, b)
 
+# ---------------------------------------------------------------- okunuş sözlüğü (tools/telaffuz.json)
+# Yalnızca sesli metni değiştirir; altyazı TDK yazımıyla kalır. Kurallar ve deney sonuçları telaffuz.json › _aciklama.
+TLF = json.load(open(os.path.join(ROOT, 'tools', 'telaffuz.json'), encoding='utf-8'))
+LEX_ON = True                        # rapor için kapatılabilir (tools/telaffuz_rapor.py)
+LET = 'a-zçğıöşüâîûA-ZÇĞİÖŞÜÂÎÛ'
+_UP = {'i': 'İ', 'ı': 'I'}
+_LO = {'İ': 'i', 'I': 'ı'}
+
+def _tr_up(c):
+    return _UP.get(c, c.upper())
+
+def _tr_lo(c):
+    return _LO.get(c, c.lower())
+
+def _key_re(k, tam):
+    first = re.escape(k[0])
+    alt = '[%s%s]' % (re.escape(_tr_up(k[0])), re.escape(_tr_lo(k[0])))
+    tail = r"(?![a-zçğıöşüâîû])" if tam else ''
+    return re.compile(r"(?<![%s])%s%s%s" % (LET, alt, re.escape(k[1:]), tail))
+
+LEX = [(_key_re(e['k'], e.get('tam')), e['v']) for e in TLF.get('yeniden_yaz', [])]
+KORU = [w.lower() for w in TLF['sapka']['koru']]
+KORU_TAM = set(w.lower() for w in TLF['sapka'].get('koru_tam', []))
+HARF = {k: v for k, v in TLF.get('harf', {}).items() if not k.startswith('_')}
+ROMA = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10, 'XI': 11, 'XII': 12,
+        'XIII': 13, 'XIV': 14, 'XV': 15, 'XVI': 16, 'XVII': 17, 'XVIII': 18, 'XIX': 19, 'XX': 20}
+ROMA_RE = '(?:XX|XIX|XVIII|XVII|XVI|XV|XIV|XIII|XII|XI|X|IX|VIII|VII|VI|V|IV|III|II|I)'
+
+def _sapka(word):
+    """â/û okunuşu: koru listesi aynen; k/g'den sonraki â korunur (ince okunuş); kalan â→a, û→u; î korunur."""
+    lw = ''.join(_tr_lo(c) for c in word)
+    if lw in KORU_TAM or any(lw.startswith(k) for k in KORU if k not in KORU_TAM):
+        return word
+    out = []
+    for j, ch in enumerate(word):
+        prev = word[j - 1] if j else ''
+        if ch in 'âÂ' and not (prev and prev in 'kgKG'):
+            ch = 'a' if ch == 'â' else 'A'
+        elif ch in 'ûÛ':
+            ch = 'u' if ch == 'û' else 'U'
+        out.append(ch)
+    return ''.join(out)
+
+def telaffuz(t):
+    """Okunuş sözlüğünü uygula (sesli metin). Sözcük başı eşleşir, ekler korunur, ilk harfin büyüklüğü korunur."""
+    if not LEX_ON:
+        return t
+    for rx, v in LEX:
+        t = rx.sub(lambda m: (_tr_up(v[0]) if m.group(0)[0].isupper() else _tr_lo(v[0])) + v[1:], t)
+    t = re.sub(r"[%s]*[âûÂÛ][%s]*" % (LET, LET), lambda m: _sapka(m.group(0)), t)
+    for k, v in HARF.items():          # tek başına büyük harf: K → ke (K'nin → ke'nin)
+        t = re.sub(r"(?<![%s’'])%s(?![%s])" % (LET, re.escape(k), LET), v, t)
+    # Romen rakamı + nokta: "III. Selim" → üçüncü Selim, "I. ve II. öncül" → birinci ve ikinci öncül
+    t = re.sub(r"(?<![%s])(%s)\.(?=\s+[%s])" % (LET, ROMA_RE, LET), lambda m: ordinal(say_int(ROMA[m.group(1)])), t)
+    # noktasız Romen dizisi: "I, II ve III" → bir, iki ve üç (en az iki Romen rakamı yan yana)
+    t = re.sub(r"(?<![%s])%s(?:(?:\s*,\s*|\s+(?:ve|ile|ya da|veya)\s+)%s)+(?![%s])" % (LET, ROMA_RE, ROMA_RE, LET),
+               lambda m: re.sub(ROMA_RE, lambda r: say_int(ROMA[r.group(0)]), m.group(0)), t)
+    return t
+
 def normalize(seg):
     """Altyazı/okunuş metnini Türkçe seslendirmeye uygun düz metne çevirir."""
     t = seg['v'] or seg['s']
@@ -153,6 +213,7 @@ def normalize(seg):
     t = re.sub(r'<br\s*/?>|</(p|div|li|td|tr)>', ' ', t, flags=re.I)
     t = re.sub(r'<[^>]+>', '', t)
     t = t.replace('&nbsp;', ' ').replace('&lt;', '<').replace('&gt;', '>').replace('&amp;', ' ve ')
+    t = telaffuz(t)
     # Unicode üsler: 2³ → 2 üssü 3, 10⁻² → 10 üssü eksi 2
     t = re.sub('[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺ⁿˣ]+', lambda m: ' üssü ' + ''.join(SUP[c] for c in m.group(0)).replace('−', 'eksi ').replace('+', 'artı ') + ' ', t)
     # kısaltmalar
@@ -326,6 +387,13 @@ async def run(ids, force, deadline):
             except Exception:
                 old = {}
         new = {}; review = []
+        # aynı ses özeti (a) başka anahtarda varsa yeniden üretme, kopyala (sahne eklenip anahtarlar kayınca)
+        pool = {}
+        for k0, o0 in old.items():
+            f0 = os.path.join(out, k0 + '.mp3')
+            if o0.get('a') and o0['a'] not in pool and os.path.exists(f0):
+                with open(f0, 'rb') as fh0:
+                    pool[o0['a']] = (fh0.read(), o0)
 
         async def one(seg):
             ps = parts(seg)
@@ -336,6 +404,13 @@ async def run(ids, force, deadline):
             if not force and o and o.get('a') == ah and os.path.exists(f):
                 new[seg['key']] = dict(o, src=src_hash(seg)); total['skip'] += 1
                 review.append((seg['key'], text, o.get('wt', ''))); return
+            if not force and ah in pool:
+                data0, o0 = pool[ah]
+                with open(f + '.part', 'wb') as fh1:
+                    fh1.write(data0)
+                os.replace(f + '.part', f)
+                new[seg['key']] = dict(o0, src=src_hash(seg)); total['copy'] = total.get('copy', 0) + 1
+                review.append((seg['key'], text, o0.get('wt', ''))); return
             if time.time() > deadline:
                 total['fail'] += 1; return
             async with sem:
@@ -364,7 +439,8 @@ async def run(ids, force, deadline):
                 os.remove(os.path.join(out, fn))
         size = sum(os.path.getsize(os.path.join(out, x)) for x in os.listdir(out))
         print('%s: %d parça, %.1f KB' % (lid, len(meta['seg']), size / 1024), flush=True)
-    print('üretilen %(made)d, atlanan %(skip)d, eksik %(fail)d' % total, flush=True)
+    total.setdefault('copy', 0)
+    print('üretilen %(made)d, kopyalanan %(copy)d, atlanan %(skip)d, eksik %(fail)d' % total, flush=True)
     return total['fail']
 
 def main():

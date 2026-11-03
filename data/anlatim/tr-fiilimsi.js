@@ -54,6 +54,15 @@
         { s: 'Cümlede isim gibi hâl eki ve iyelik eki alabilir.', h: '<div class="an-ex"><span class="an-l"><span class="an-w">Yüzmeyi</span> çok severim.</span><span class="an-l">Annemin <span class="an-w">bakışı</span> her şeyi anlattı.</span><span class="an-l">Erken <span class="an-w">kalkmak</span> zor geliyor.</span></div>' }
       ] },
 
+    { t: 'İsim-fiil ekini yerleştir',
+      steps: [{ s: 'Her boşluğa fiile isim görevi kazandıran eki yerleştir. Ünlü uyumuna da dikkat!' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri <b>isim-fiil ekleriyle</b> tamamla.</p>',
+        metin: 'Kitap oku[_] çok severim.<br>Onun bak[_] bana güven verdi.<br>Yüz[_] bu yaz öğreneceğim.',
+        secenek: ['mayı', 'ışı', 'meyi', 'an', 'arak', 'unca'], cevap: ['mayı', 'ışı', 'meyi'],
+        hint: 'İsim-fiil ekleri -ma/-me, -ış/-iş, -mak/-mek; arkasından iyelik ya da hâl eki gelebilir. -an sıfat-fiil, -arak ve -ınca zarf-fiil ekidir.',
+        hintV: 'İsim fiil ekleri ma, me; ış, iş; mak, mek. Arkasından iyelik ya da hâl eki gelebilir. An sıfat fiil, arak ve ınca zarf fiil ekidir.',
+        why: 'okumayı (-ma + -yı), bakışı (-ış + -ı), yüzmeyi (-me + -yi): üçü de isim gibi hâl ve iyelik eki almış isim-fiil.',
+        whyV: 'Okumayı, bakışı, yüzmeyi: üçü de isim gibi hâl ya da iyelik eki almış isim fiillerdir.' } },
     { t: 'Tuzak: kalıcı isim',
       steps: [
         { s: 'Bazı sözcükler isim-fiil eki taşır ama zamanla bir nesnenin adı olmuştur. Bunlara <b>kalıcı isim</b> denir.',
@@ -68,6 +77,13 @@
         { s: '“dolmasın” emir kipinde çekimli fiildir. Buradaki -ma olumsuzluk ekidir.', v: 'Dolmasın, emir kipinde çekimli fiildir. Buradaki ma, olumsuzluk ekidir.', on: '.d3' }
       ] },
 
+    { t: 'Kalıcı isimleri ele',
+      steps: [{ s: 'Şimdi uygulama: kalıcı isim olan, yani fiilimsi sayılmayan sözcükleri ele.' }],
+      ia: { tip: 'eleme', q: '<p>Koyu yazılan sözcüklerden <b>kalıcı isim olanları</b> (fiilimsi olmayanları) ele.</p>',
+        ogeler: ['<b>Koşmak</b> beni dinlendirir.', 'Annem <b>dolma</b> yaptı.', 'Sıcakta <b>dondurma</b> eridi.', 'Onun <b>bakışı</b> değişti.', '<b>Çakmak</b> masada duruyor.', '<b>Gülmek</b> insana iyi gelir.'],
+        ele: [1, 2, 4],
+        hint: 'Olumsuzunu dene: “dondurmama” diye bir yiyecek, “çakmamak” diye bir eşya yoktur.',
+        why: 'Dolma, dondurma ve çakmak birer nesnenin adı olmuş: kalıcı isim. Koşmak, bakış ve gülmek hâlâ eylem bildirir: isim-fiil.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde altı çizili sözcük <b>isim-fiildir</b>?</p>',
         c: ['Annem akşama <span class="an-w">sarma</span> hazırladı.', 'Kardeşimin <span class="an-w">gülmesi</span> hepimizi neşelendirdi.', 'Kapıyı bu kadar sert <span class="an-w">kapatma</span>!', 'Mahallede en sevdiğimiz tatlı <span class="an-w">dondurma</span>ydı.'], a: 'B',
@@ -97,6 +113,20 @@
         { s: 'Devrik cümlede yüklem başa da gelebilir; ekin kip-kişi bildirip bildirmediğine bak.', v: 'Devrik cümlede yüklem başa da gelebilir; ekin kip ve kişi bildirip bildirmediğine bak.' }
       ] },
 
+    { t: 'Sıfat-fiile dokun',
+      steps: [{ s: 'Bu cümlede iki sıfat-fiil var. İkisine de dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>Cümledeki <b>sıfat-fiillere</b> dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 112" role="group" aria-label="Dün gelen misafirler annemin pişirdiği yemeği beğenecek.">' +
+          '<g data-b="w1"><rect x="13" y="8" width="44" height="40" rx="9" class="box"/><text x="35" y="33" text-anchor="middle" font-size="15">Dün</text></g>' +
+          '<g data-b="w2"><rect x="65" y="8" width="62" height="40" rx="9" class="box"/><text x="96" y="33" text-anchor="middle" font-size="15">gelen</text></g>' +
+          '<g data-b="w3"><rect x="135" y="8" width="104" height="40" rx="9" class="box"/><text x="187" y="33" text-anchor="middle" font-size="15">misafirler</text></g>' +
+          '<g data-b="w4"><rect x="247" y="8" width="80" height="40" rx="9" class="box"/><text x="287" y="33" text-anchor="middle" font-size="15">annemin</text></g>' +
+          '<g data-b="w5"><rect x="25" y="62" width="96" height="40" rx="9" class="box"/><text x="73" y="87" text-anchor="middle" font-size="15">pişirdiği</text></g>' +
+          '<g data-b="w6"><rect x="129" y="62" width="76" height="40" rx="9" class="box"/><text x="167" y="87" text-anchor="middle" font-size="15">yemeği</text></g>' +
+          '<g data-b="w7"><rect x="213" y="62" width="106" height="40" rx="9" class="box"/><text x="266" y="87" text-anchor="middle" font-size="15">beğenecek.</text></g></svg>',
+        dogru: ['w2', 'w5'],
+        hint: 'Sözcükten sonra gelen isme “hangi?” diye sor. Cümle sonundaki çekimli fiil sıfat-fiil olmaz.',
+        why: '“gelen misafirler”, “pişirdiği yemek”: ismin önünde onu niteliyorlar. “beğenecek” cümle sonunda yargı bildiriyor, çekimli fiildir.' } },
     { t: 'Adlaşmış sıfat-fiil',
       steps: [
         { s: 'Sıfat-fiilin nitelediği isim düşerse, ismin ekleri sıfat-fiile geçer.', h: '<div class="an-ex"><span class="an-l">Kitap okuyan <b>öğrenciler</b> başarılı olur.</span><span class="an-l">Kitap <span class="an-w">okuyanlar</span> başarılı olur.</span></div>' },
@@ -106,6 +136,17 @@
           h: '<div class="an-trap">Durakta <span class="an-w">dolmuş</span> bekledik. → taşıt adı, kalıcı isim<br>Sepetteki <span class="an-w">dolmuş</span> şişeleri boşalttık. → sıfat-fiil</div>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“<b>Okuyanlar</b> ödül aldı.” cümlesinde koyu sözcük adlaşmış sıfat-fiildir.', d: true, a: '“Okuyan öğrenciler”den isim düştü, ekler sıfat-fiile geçti.' },
+          { m: '“Misafirler yarın <b>gelecek</b>.” cümlesinde “gelecek” sıfat-fiildir.', d: false, a: 'Cümle sonunda kip ve kişi bildiriyor: çekimli fiil.' },
+          { m: '“<b>Dolmuş</b> durağa yanaştı.” cümlesinde “dolmuş” fiilimsidir.', d: false, a: 'Bir taşıtın adı olmuş: kalıcı isim.' },
+          { m: '“<b>Kırılan</b> camı değiştirdik.” cümlesinde “kırılan” sıfat-fiildir.', d: true, a: '“Hangi cam?” Kırılan cam: ismi niteliyor.' }],
+        hint: 'Sözcüğün yerine bak: ismin önündeyse sıfat-fiil, cümle sonunda yargı bildiriyorsa çekimli fiil, bir nesnenin adıysa kalıcı isim.',
+        why: 'Aynı ek üç kılıkta gelebilir: sıfat-fiil (gelecek misafir), çekimli fiil (yarın gelecek), kalıcı isim (dolmuş). Yerine ve anlamına bak.',
+        whyV: 'Aynı ek üç kılıkta gelebilir: gelecek misafirde sıfat fiil, yarın gelecekte çekimli fiil, dolmuşta kalıcı isim. Yerine ve anlamına bak.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>sıfat-fiil yoktur</b>?</p>',
         c: ['Bahçede koşan çocuklar bize el salladı.', 'Bu romanı tatilde mutlaka okuyacağım.', 'Okunmuş gazeteleri kapının önüne koydu.', 'Yarışmayı kazananlar sahneye çağrıldı.'], a: 'B',
@@ -129,6 +170,14 @@
           h: '<div class="an-tip">Ona beş <span class="an-w">kala</span> geldi. · Sekizi çeyrek <span class="an-w">geçe</span> çıktık. · <span class="an-w">Ölesiye</span> çalıştı.</div>' }
       ] },
 
+    { t: 'Zarf-fiil hangi soruya cevap verir?',
+      steps: [{ s: 'Her zarf-fiili cevap verdiği soruyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Koyu zarf-fiili, yükleme sorulan soruyla eşleştir.</p>', solBaslik: 'Zarf-fiil', sagBaslik: 'Sorusu',
+        sol: ['Eve <b>gelince</b> ara.', 'Merdivenleri <b>koşarak</b> çıktı.', 'Okul <b>açılalı</b> iki ay oldu.', '<b>Okudukça</b> ufkun genişler.'],
+        sag: ['Ne zaman?', 'Nasıl?', 'Ne zamandan beri?', 'Ne ölçüde, hangi koşulda?'],
+        hint: 'Zarf-fiili yüklemle birlikte sorgula: “ne zaman ara?”, “nasıl çıktı?”',
+        why: '-ınca zaman, -arak durum (nasıl), -alı “-dığından beri”, -dıkça zamanla birlikte ölçü bildirir.',
+        whyV: 'Eklere bak: ınca zaman, arak durum yani nasıl, alı dığından beri, dıkça ise zamanla birlikte ölçü bildirir.' } },
     { t: 'Zarf-fiil tuzakları',
       steps: [
         { s: '-ken ve -casına isme gelirse fiilimsi olmaz!', v: 'ken ve casına ekleri isme gelirse fiilimsi olmaz!',
@@ -140,6 +189,14 @@
         { s: 'Nasıl çıktı? Konuşmadan: zarf-fiil.', v: 'Nasıl çıktı? Konuşmadan. Bu zarf fiildir.', on: '.m2' }
       ] },
 
+    { t: 'Fiilimsileri sınıflandır',
+      steps: [{ s: 'Dokuz fiilimsiyi üç kutuya ayır: önce öğeye, sonra kutusuna dokun.' }],
+      ia: { tip: 'grup', q: '<p>Koyu sözcükleri türüne göre kutulara yerleştir.</p>',
+        gruplar: ['İsim-fiil', 'Sıfat-fiil', 'Zarf-fiil'],
+        ogeler: [{ m: 'kitap <b>okumak</b>', g: 0 }, { m: '<b>koşan</b> çocuk', g: 1 }, { m: 'eve <b>gelince</b>', g: 2 }, { m: '<b>yanmış</b> ekmek', g: 1 },
+          { m: 'onun <b>bakışı</b>', g: 0 }, { m: '<b>gülerek</b> anlattı', g: 2 }, { m: '<b>okunası</b> bir kitap', g: 1 }, { m: '<b>ağlamaya</b> başladı', g: 0 }, { m: '<b>bakmadan</b> geçti', g: 2 }],
+        hint: 'İsim gibi ek alıyorsa isim-fiil, ismin önünde onu niteliyorsa sıfat-fiil, yüklemin nasıl ya da ne zaman yapıldığını söylüyorsa zarf-fiil.',
+        why: 'İsim-fiil: okumak, bakışı, ağlamaya. Sıfat-fiil: koşan, yanmış, okunası. Zarf-fiil: gelince, gülerek, bakmadan.' } },
     { t: 'Olumsuzluk -ma mı, isim-fiil -ma mı?',
       steps: [
         { s: 'Olumsuzluk ekinden sonra kip ve kişi eki gelir: çekimli fiil.', v: 'Olumsuzluk ekinden sonra kip ve kişi eki gelir: çekimli fiil.',
@@ -150,6 +207,14 @@
         { s: 'LGS’de sorular genelde numaralı cümleler içinden bir türü seçtirir; çeldiriciler isimden türeyen sözcükler ve çekimli fiillerdir.', v: 'LGS’de sorular genelde numaralı cümleler içinden bir türü seçtirir; çeldiriciler, isimden türeyen sözcükler ve çekimli fiillerdir.' }
       ] },
 
+    { t: 'Ekleri sırala: yapmamasına',
+      steps: [{ s: 'Parçalara sözcüğün başından sonuna doğru sırayla dokun.' }],
+      ia: { tip: 'sirala', q: '<p>“Ödevini <b>yapmamasına</b> şaşırdım.” Sözcüğü oluşturan parçaları baştan sona sırala.</p>', ust: 'sözcüğün başı', alt: 'sözcüğün sonu',
+        ogeler: ['yap- (fiil kökü)', '-ma (olumsuzluk eki)', '-ma (isim-fiil eki)', '-sı (iyelik eki)', '-na (yönelme hâli eki)'],
+        hint: 'Olumsuzluk eki fiil kökünün hemen ardından gelir; isim çekim ekleri (iyelik, hâl) en sona.',
+        hintV: 'Olumsuzluk eki fiil kökünün hemen ardından gelir; isim çekim ekleri, yani iyelik ve hâl ekleri, en sona gelir.',
+        why: 'yap + ma (olumsuzluk) + ma (isim-fiil) + sı (iyelik) + na (yönelme). İlk -ma olumsuzluk, ikinci -ma isim-fiil ekidir.',
+        whyV: 'Yap, sonra olumsuzluk eki ma, sonra isim fiil eki ma, sonra iyelik eki sı, en sonda yönelme hâli eki na. İlk ma olumsuzluk, ikinci ma isim fiil ekidir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>zarf-fiil kullanılmamıştır</b>?</p>',
         c: ['Çocukken bu sokakta saatlerce top oynardık.', 'Kapıyı açınca içeriye serin bir rüzgâr doldu.', 'Ödevini bitirmeden televizyonun başına geçti.', 'Kardeşim ağlaya ağlaya odasına koştu.'], a: 'A',

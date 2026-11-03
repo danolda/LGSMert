@@ -42,6 +42,14 @@
         { s: 'Üs, tabanın kaç kez çarpıldığını söyler; üsle taban çarpılmaz.' }
       ] },
 
+    { t: 'Eşleştir: kuvvetin değeri',
+      steps: [{ s: 'Şimdi sen dene: her üslü ifadeyi değeriyle eşleştir. Önce birine, sonra eşine dokun.' }],
+      ia: { tip: 'eslestir', q: '<p>Her üslü ifadeyi değeriyle eşleştir.</p>', solBaslik: 'İfade', sagBaslik: 'Değer',
+        sol: ['2<sup>5</sup>', '5<sup>2</sup>', '3<sup>3</sup>', '4<sup>3</sup>', '10<sup>1</sup>'],
+        sag: ['32', '25', '27', '64', '10'],
+        hint: 'Üs, tabanın kaç kez kendisiyle çarpılacağını söyler. Taban ile üssü çarpma!',
+        why: '2<sup>5</sup> = 2 · 2 · 2 · 2 · 2 = 32; 10 değil! 4<sup>3</sup> = 4 · 4 · 4 = 64; 12 değil.',
+        whyV: '2 üssü 5, beş tane ikinin çarpımıdır: otuz iki eder, on değil! 4 üssü 3 de 4 çarpı 4 çarpı 4, altmış dört eder; on iki değil.' } },
     { t: 'Sıfırıncı ve negatif kuvvet',
       base: '<table class="an-tbl"><tr><th>İfade</th><th>Değer</th><th></th></tr>' +
         '<tr class="rv r1"><td>2<sup>3</sup></td><td><b>8</b></td><td></td></tr>' +
@@ -70,6 +78,15 @@
           h: '<div class="an-trap">2<sup>−3</sup> = <span class="an-ok-t">{{1|8}}</span> &nbsp; <span class="an-bad-t">−8</span> &nbsp; <span class="an-bad-t">−6</span></div>' }
       ] },
 
+    { t: 'Sayı doğrusunda göster',
+      steps: [{ s: 'Kaydırıcıyı sürükle ya da − ve + düğmelerine dokun. Sayıyı yerine koyunca Kontrol et’e bas.',
+                v: 'Kaydırıcıyı sürükle ya da eksi ve artı düğmelerine dokun. Sayıyı yerine koyunca Kontrol et\'e bas.' }],
+      ia: { tip: 'kaydir', q: '<p>2<sup>−1</sup> + 2<sup>−2</sup> sayısını sayı doğrusunda işaretle.</p>',
+        min: -1, max: 2, adim: 0.05, cevap: 0.75, tol: 0, etiket: [-1, -0.5, 0, 0.5, 1, 1.5, 2],
+        hint: 'Negatif üs ters çevirir: 2<sup>−1</sup> = {{1|2}}, 2<sup>−2</sup> = {{1|4}}. Sonuç pozitif!',
+        hintV: 'Negatif üs ters çevirir. 2 üssü eksi 1, ikide bir; 2 üssü eksi 2, dörtte bir. Sonuç pozitif!',
+        why: '{{1|2}} + {{1|4}} = {{3|4}} = 0,75. Negatif üs sayıyı negatif yapmaz; sonuç 0 ile 1 arasına düşer.',
+        whyV: 'İkide bir artı dörtte bir, dörtte üç eder; yani sıfır virgül yetmiş beş. Negatif üs sayıyı negatif yapmaz, sonuç sıfır ile bir arasına düşer.' } },
     { t: 'Ara soru', cp: {
         q: '<p><b>3<sup>−2</sup></b> ifadesinin değeri aşağıdakilerden hangisidir?</p>',
         c: ['−9', '−6', '{{1|9}}', '{{1|6}}'], a: 'C',
@@ -94,6 +111,18 @@
           h: '<div class="an-trap">−3<sup>2</sup> = <b>−9</b> &nbsp;&nbsp;ama&nbsp;&nbsp; (−3)<sup>2</sup> = <b>9</b></div>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Her ifadeyi oku. Doğruysa Doğru’ya, yanlışsa Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '(−2)<sup>4</sup> = 16', d: true, a: 'Çift üs: dört eksi çarpılır, sonuç artı.' },
+          { m: '−2<sup>4</sup> = 16', d: false, a: 'Parantez yok: üs yalnız 2’ye ait. −(2<sup>4</sup>) = −16.' },
+          { m: '(−1)<sup>101</sup> = 1', d: false, a: 'Tek üs işareti korur: sonuç −1.' },
+          { m: '(−3)<sup>3</sup> negatif bir sayıdır.', d: true, a: 'Negatif taban, tek üs: (−3)<sup>3</sup> = −27.' },
+          { m: '2<sup>−3</sup> negatif bir sayıdır.', d: false, a: 'Negatif üs ters çevirir: 2<sup>−3</sup> = {{1|8}}, pozitif.' }],
+        hint: 'Önce parantez var mı bak. Varsa eksi de üsse girer; sonra üssün tek mi çift mi olduğuna bak.',
+        why: 'Parantez, eksinin üsse girip girmediğini belirler: (−2)<sup>4</sup> = 16 ama −2<sup>4</sup> = −16. Negatif üs ise işaret değil, ters çevirme demektir.',
+        whyV: 'Parantez, eksinin de üsse girip girmediğini belirler. Parantezli eksi 2\'nin dördüncü kuvveti artı on altı; parantezsiz eksi 2 üssü 4 ise eksi on altıdır. Negatif üs ise işaret değil, ters çevirme demektir.' } },
     { t: 'Çarpma, bölme, kuvvetin kuvveti',
       steps: [
         { s: 'Tabanlar aynıysa çarparken <b>üsler toplanır</b>.', h: '<div class="an-rule"><b>a<sup>m</sup> · a<sup>n</sup> = a<sup>m+n</sup></b></div>', v: 'Tabanlar aynıysa çarparken üsler toplanır: a üssü m çarpı a üssü n, a üssü m artı n.' },
@@ -131,6 +160,15 @@
           h: '<div class="an-ex"><span class="an-l">9<sup>x</sup> · 27 = 3<sup>11</sup></span><span class="an-l">3<sup>2x</sup> · 3<sup>3</sup> = 3<sup>11</sup> ⇒ 2x + 3 = 11 ⇒ <b>x = 4</b></span></div>' }
       ] },
 
+    { t: 'Boşlukları doldur',
+      steps: [{ s: 'Her sayıyı 2’nin kuvveti olarak yaz. Önce bir boşluğa, sonra doğru karta dokun.' }],
+      ia: { tip: 'bosluk', q: '<p>4<sup>3</sup> · 8<sup>−1</sup> ÷ 2<sup>5</sup> işlemini tabanı 2 yaparak çöz.</p>',
+        metin: '4<sup>3</sup> = 2[^_]<br>8<sup>−1</sup> = 2[^_]<br>4<sup>3</sup> · 8<sup>−1</sup> ÷ 2<sup>5</sup> = 2[^_]',
+        secenek: ['6', '−3', '−2', '5', '3', '−8', '2'], cevap: ['6', '−3', '−2'],
+        hint: '4 = 2<sup>2</sup>, 8 = 2<sup>3</sup>. Kuvvetin kuvvetinde üsler çarpılır; çarpmada toplanır, bölmede çıkarılır.',
+        hintV: '4, 2 üssü 2; 8, 2 üssü 3. Kuvvetin kuvvetinde üsler çarpılır; çarpmada toplanır, bölmede çıkarılır.',
+        why: '4<sup>3</sup> = 2<sup>6</sup>, 8<sup>−1</sup> = 2<sup>−3</sup>. Üsler: 6 + (−3) − 5 = −2. Sonuç 2<sup>−2</sup> = {{1|4}}.',
+        whyV: '4 üssü 3, 2 üssü 6 eder; 8 üssü eksi 1, 2 üssü eksi 3. Üsler: altı, eksi üç, eksi beş; toplam eksi iki. Sonuç 2 üssü eksi 2, yani dörtte bir.' } },
     { t: 'Toplamada üsler toplanmaz!',
       steps: [
         { s: 'Aynı ifadeler toplanırken <b>kaç tane olduğu</b> sayılır.', h: '<div class="an-ex"><span class="an-l">2<sup>5</sup> + 2<sup>5</sup> = 2 · 2<sup>5</sup> = 2<sup>6</sup></span></div>', v: 'Aynı ifadeler toplanırken kaç tane olduğu sayılır. 2 üssü 5 artı 2 üssü 5: iki tane 2 üssü 5, yani 2 üssü 6.' },
@@ -141,6 +179,15 @@
           h: '<div class="an-ex"><span class="an-l">2<sup>7</sup> − 2<sup>6</sup> = 2<sup>6</sup> · (2 − 1) = 2<sup>6</sup></span><span class="an-l">3<sup>5</sup> + 3<sup>4</sup> = 3<sup>4</sup> · (3 + 1) = 4 · 3<sup>4</sup></span></div>' }
       ] },
 
+    { t: 'Hangileri 2⁶ değil?',
+      steps: [{ s: '2 üssü 6’ya eşit olmayanlara dokunarak ele, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'eleme', q: '<p>Aşağıdakilerden <b>2<sup>6</sup>’ya eşit olmayanları</b> ele.</p>',
+        ogeler: ['2<sup>5</sup> + 2<sup>5</sup>', '2<sup>3</sup> · 2<sup>3</sup>', '(2<sup>3</sup>)<sup>2</sup>', '2<sup>3</sup> + 2<sup>3</sup>', '4<sup>3</sup>', '8<sup>2</sup>', '2<sup>2</sup> · 2<sup>3</sup>', '6<sup>2</sup>'],
+        ele: [3, 6, 7],
+        hint: 'Toplamada üsler toplanmaz, kaç tane olduğu sayılır: 2<sup>3</sup> + 2<sup>3</sup> = 2 · 2<sup>3</sup>.',
+        hintV: 'Toplamada üsler toplanmaz, kaç tane olduğu sayılır: 2 üssü 3 artı 2 üssü 3, iki tane 2 üssü 3 demektir.',
+        why: '2<sup>3</sup> + 2<sup>3</sup> = 2<sup>4</sup>, 2<sup>2</sup> · 2<sup>3</sup> = 2<sup>5</sup>, 6<sup>2</sup> = 36. Kalanların hepsi 64, yani 2<sup>6</sup>.',
+        whyV: '2 üssü 3 artı 2 üssü 3, 2 üssü 4 eder. 2 üssü 2 çarpı 2 üssü 3, 2 üssü 5. 6\'nın karesi otuz altı. Kalanların hepsi altmış dört, yani 2 üssü 6.' } },
     { t: 'Ara soru', cp: {
         q: '<p><b>4<sup>7</sup> + 4<sup>7</sup> + 4<sup>7</sup> + 4<sup>7</sup></b> toplamı aşağıdakilerden hangisine eşittir?</p>',
         c: ['4<sup>8</sup>', '16<sup>7</sup>', '4<sup>28</sup>', '16<sup>28</sup>'], a: 'A',
@@ -187,6 +234,13 @@
           h: '<div class="an-trap"><span class="an-bad-t">37 · 10<sup>4</sup></span> &nbsp; <span class="an-bad-t">0,37 · 10<sup>6</sup></span> &nbsp; → &nbsp;<span class="an-ok-t">3,7 · 10<sup>5</sup></span></div>' }
       ] },
 
+    { t: 'Küçükten büyüğe sırala',
+      steps: [{ s: 'Kartlara en küçükten başlayarak sırayla dokun. Yanlış yere koyduğuna dokunursan geri gelir.' }],
+      ia: { tip: 'sirala', q: '<p>Sayıları <b>küçükten büyüğe</b> sırala.</p>', ust: 'en küçük', alt: 'en büyük',
+        ogeler: ['4 · 10<sup>−5</sup>', '9 · 10<sup>−5</sup>', '3,2 · 10<sup>−4</sup>', '2,1 · 10<sup>−3</sup>', '1,5 · 10<sup>−2</sup>'],
+        hint: 'Önce 10’un kuvvetine bak: üs ne kadar küçükse (daha negatif) sayı o kadar küçüktür. Üsler eşitse katsayıya bak.',
+        why: '10<sup>−5</sup> < 10<sup>−4</sup> < 10<sup>−3</sup> < 10<sup>−2</sup>. Üsleri aynı olan 4 · 10<sup>−5</sup> ile 9 · 10<sup>−5</sup> arasında katsayı karar verir.',
+        whyV: '10 üssü eksi 5, 10 üssü eksi 4\'ten küçüktür; o da 10 üssü eksi 3\'ten, o da 10 üssü eksi 2\'den küçüktür. Üsleri aynı olan iki sayıda ise katsayı karar verir: dört, dokuzdan küçük.' } },
     { t: 'Bilimsel gösterimle işlem',
       steps: [
         { s: 'Çarparken katsayılar çarpılır, üsler toplanır; sonra katsayı düzeltilir.', h: '<div class="an-ex"><span class="an-l">(4 · 10<sup>5</sup>) · (5 · 10<sup>3</sup>) = 20 · 10<sup>8</sup> = 2 · 10<sup>9</sup></span></div>', v: 'Çarparken katsayılar çarpılır, üsler toplanır; sonra katsayı düzeltilir. 4 çarpı 5, 20; üsler 5 artı 3, 8. 20 çarpı 10 üssü 8, düzeltilince 2 çarpı 10 üssü 9.' },
