@@ -136,3 +136,8 @@ body.an-on{padding-bottom:0}
 .an-end .an-go{justify-content:center}
 .an-cool{margin-top:-6px}
 @media (prefers-reduced-motion:reduce){.an-stage *,.an-blk,.an-stage{animation:none!important;transition:none!important}}
+/* hazır seslendirme: altyazıda konuşulan sözcük vurgusu */
+.an-cap span.wd{display:inline;animation:none}
+.an-cap.kar span.wd{opacity:.5;transition:opacity .18s,color .18s}
+.an-cap.kar span.wd.sd{opacity:1}
+.an-cap.kar span.wd.nw{color:var(--c,var(--accent))}

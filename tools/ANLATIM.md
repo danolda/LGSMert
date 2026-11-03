@@ -8,7 +8,10 @@ Konu sayfasında başlığın altına **▶ Adım Adım Anlatım** düğmesi, `d
 1. `data/anlatim/<konuId>.js` dosyasını yaz (aşağıdaki biçim). `konuId`, `data/index.js`'teki konu kimliğidir (ör. `fen-dna`).
 2. `data/anlatim/index.js` içine `'<konuId>': { n: <sahne sayısı>, dk: <yaklaşık dakika> }` ekle.
    Mevcut bir dersi değiştirdiysen aynı dosyadaki `LGS_AN_V` değerini 1 artır (tarayıcı önbelleği).
-3. `node tools/validate.js` → 0 sorun; ders kontrolü için
+3. **Seslendirme:** `env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy python3 tools/anlatim_ses.py <konuId>`
+   (konuId vermezsen tüm dersler). Önce `python3 tools/anlatim_ses.py --check <konuId>` ile okunuş metinlerine göz at.
+   Değişmeyen metinler atlanır; ders metnini her değiştirdiğinde yeniden çalıştır (yarıda kalırsa aynı komut kaldığı yerden sürer).
+4. `node tools/validate.js` → 0 sorun; ders kontrolü için
    `node -e "global.window={};require('./data/anlatim/<konuId>.js');const L=window.LGS_AN['<konuId>'];console.log(L.scenes.length, L.scenes.filter(s=>s.cp).length)"`.
    Sonra `sw.js` önbellek adını ve `index.html` `?v=` değerini bir artır.
 
@@ -76,4 +79,14 @@ Konu sayfasında başlığın altına **▶ Adım Adım Anlatım** düğmesi, `d
 - Anlatımı bitirme: 10 zor soru EXP'si (200), anahtarlar `an-<konuId>|zr:bitir1..10`.
 - Her anahtar sitenin 7 gün kuralına tabidir (`LGSApp.awardXP`); EXP bulut profiline `LGSCloud.push` ile gider.
 - İlerleme `localStorage['lgs2027:anlatim'][konuId] = { far, i, cp, done, pass, fin }`. `far`: izlenen en ileri sahne (ileri atlama sınırı). Yeniden izlemede `far` sıfırlanır.
-- Ses: Web Speech API, tr-TR sesi; ses yoksa ya da 🔇 ise altyazı okuma süresiyle ilerler. Tercih `lgs2027:anlatimPref`.
+- Ses: hazır mp3 (Microsoft nöral ses **tr-TR-AhmetNeural**, edge-tts, hız +5%, 24 kHz mono 48 kbps), `tools/anlatim_ses.py` üretir:
+  `audio/anlatim/<konuId>/<sahne>-<adım>.mp3` (0'dan sayılır; ara soruda `<sahne>-why.mp3`, `<sahne>-hint.mp3`) ve `meta.json`
+  (`src`: adımın `s`+`v` FNV özeti, `a`: ses özeti → mp3 adresine `?h=` olarak eklenir, `d`: süre ms, `w`: sözcük başlangıçları ms, `wt`: okunan sözcükler).
+  Oynatıcı adımın özeti `meta.json`'dakiyle eşleşirse mp3'ü çalar (sonraki parçayı önceden indirir, 1x/1.25x `playbackRate`,
+  altyazı sözcük sözcük vurgulanır, duraklatınca kaldığı yerden sürer). Metin değişmiş ama ses üretilmemişse ya da mp3 yüklenemezse
+  o adım Web Speech (tr-TR) ile okunur; o da yoksa ya da 🔇 ise altyazı okuma süresiyle ilerler. Tercih `lgs2027:anlatimPref`.
+  iOS: ▶ Başlat dokunuşu ses öğesini sessiz bir parçayla açar; sonraki tüm parçalar aynı öğede çalar.
+  `sw.js` sesleri istendikçe `kisla-ses-v1` önbelleğine alır (toplu ön yükleme yok, Range isteğine 206 döner, en fazla ~600 dosya).
+- Okunuş: `anlatim_ses.py` metni Türkçe okunuşa çevirir: sayılar yazıyla ve ekiyle (`4’te 1` → dörtte bir, `4’e` → dörde, `4.` → dördüncü,
+  `0,25` → sıfır virgül yirmi beş), `<sup>`/² ³ ⁻ → "üssü (eksi) …", `{{1|8}}` → sekizde 1, `· × ÷ = < > ≤ ≠ √ % ±` sözle,
+  `-ken` gibi ek örnekleri tiresiz, `isim-fiil` → isim fiil, `2x` → iki iks, LGS → le ge se. Yine de belirsiz her matematik adımına `v` yaz.
