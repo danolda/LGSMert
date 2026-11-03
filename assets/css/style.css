@@ -1039,3 +1039,9 @@ img.yz-simg{display:block;max-width:100%;height:auto;margin:8px 0;background:#ff
 .yz-busy[hidden]{display:none}
 .yz-spinner{flex:none;width:18px;height:18px;border:2.5px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
 .yz-qimg[hidden],.yz-simg[hidden]{display:none}
+
+/* konu soruları: şık seç, İşaretle ile kilitle */
+.q .btn.mark{display:block;width:100%;min-height:48px;margin-top:10px;font-size:16px;font-weight:700;letter-spacing:.2px}
+.q .btn.mark:disabled{opacity:.4;cursor:not-allowed;filter:none;box-shadow:none;transform:none}
+#qs .ch button{min-height:48px}
+.q .btn.mark[hidden]{display:none}

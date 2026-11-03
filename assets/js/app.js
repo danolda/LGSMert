@@ -108,9 +108,13 @@
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
     };
+    var mebiDone = function () {
+      if (!(LGS.mebiSubj || {})[sid] || LGS.mebiLoaded[sid]) return pastDone();
+      loadScript('data/meb/mebi-' + sid + '.js', function () { LGS.mebiLoaded[sid] = true; pastDone(); });
+    };
     var mebDone = function () {
-      if (!LGS.mebSubj[sid] || LGS.mebLoaded[sid]) return pastDone();
-      loadScript('data/meb/' + sid + '.js', function () { LGS.mebLoaded[sid] = true; pastDone(); });
+      if (!LGS.mebSubj[sid] || LGS.mebLoaded[sid]) return mebiDone();
+      loadScript('data/meb/' + sid + '.js', function () { LGS.mebLoaded[sid] = true; mebiDone(); });
     };
     if (LGS.pastLoaded[sid]) mebDone();
     else loadScript('data/past/' + sid + '.js', function () { LGS.pastLoaded[sid] = true; mebDone(); });
@@ -238,7 +242,7 @@
     mb.sort(function (x, y) { var a = LGS.meb[x], b = LGS.meb[y]; return (a.o || 0) - (b.o || 0) || (x < y ? -1 : 1); });
     mb.forEach(function (mid, n) {
       var o = LGS.meb[mid];
-      list.push({ key: 'm:' + mid, past: true, meb: true, grp: 'meb', n: n + 1, no: n + 1, img: 'img/meb/' + mid + '.webp', a: o.a, s: o.s });
+      list.push({ key: 'm:' + mid, past: true, meb: true, grp: 'meb', n: n + 1, no: n + 1, img: 'img/meb/' + mid + '.webp', a: o.a, s: o.s, lb: o.lb });
     });
     if (hasLevels(t)) {
       LV.forEach(function (lv) {
@@ -294,19 +298,33 @@
         h = '<h3 class="grp grp-' + q.grp + '" data-grp="' + q.grp + '">' + GRP_TITLE[q.grp] + ' <small>(' + cnt + ' soru)</small></h3>';
       }
       lastG = q.grp;
-      return h + qHtml(q, i);
+      return h + qHtml(q, i, true);
     }).join('');
     list.forEach(function (q, i) { paint(t.id, q, i); });
     applyFilter(list, t.id);
     updateScore(t.id, list);
 
+    var picked = {};   // şık seçimi kilitlemez; İşaretle ile cevap verilir
     qsBox.addEventListener('click', function (e) {
       var b = e.target.closest('button[data-ch]');
       if (b) {
         var i = +b.getAttribute('data-q'), q = list[i];
+        if (load(t.id)[q.key]) return;
+        picked[i] = b.getAttribute('data-ch');
+        var art = document.getElementById('q' + i);
+        [].forEach.call(art.querySelectorAll('button[data-ch]'), function (x) {
+          var on = x === b; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        var mk = art.querySelector('button[data-mark]'); mk.disabled = false; mk.textContent = 'İşaretle (' + picked[i] + ')';
+        return;
+      }
+      var mb = e.target.closest('button[data-mark]');
+      if (mb) {
+        var i = +mb.getAttribute('data-mark'), q = list[i];
         var a = load(t.id);
-        if (a[q.key]) return;
-        var pick = b.getAttribute('data-ch');
+        if (a[q.key] || !picked[i]) return;
+        var pick = picked[i]; delete picked[i];
+        b = document.querySelector('#q' + i + ' button[data-ch="' + pick + '"]');
         a[q.key] = { c: pick, ok: pick === q.a };
         a._total = list.length;
         save(t.id, a);
@@ -338,9 +356,9 @@
     });
   }
 
-  function qHtml(q, i) {
+  function qHtml(q, i, mark) {
     var head = '<div class="meta"><span class="num">' + (i + 1) + '.</span>' +
-      (q.meb ? '<span class="tag meb">MEB Örnek · ' + q.no + '. soru</span>' : q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
+      (q.meb ? '<span class="tag meb">' + esc(q.lb || 'MEB Örnek · ' + q.no + '. soru') + '</span>' : q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
     var body, choices;
     if (q.past) {
       body = '<img class="past" loading="lazy" src="' + q.img + '" alt="' + (q.meb ? 'MEB örnek sorusu' : 'LGS ' + q.year + ' sorusu') + '" onload="this.style.width=Math.round(this.naturalWidth*0.82)+\'px\'">';
@@ -354,6 +372,7 @@
       }).join('') + '</ul>';
     }
     return '<article class="q" id="q' + i + '">' + head + body + choices +
+      (mark ? '<button class="btn mark" data-mark="' + i + '" disabled>İşaretle</button>' : '') +
       '<div class="res" id="res' + i + '"></div>' +
       '<button class="btn ghost" style="margin-top:8px" data-show="' + i + '">Çözümü göster</button>' +
       '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + fmt(q.s) + '</div></article>';
@@ -366,9 +385,11 @@
     var res = document.getElementById('res' + i);
     var sol = document.getElementById('sol' + i);
     var sb = art.querySelector('button[data-show]');
+    var mk = art.querySelector('button[data-mark]');
+    if (mk) { mk.hidden = !!a; mk.disabled = true; mk.textContent = 'İşaretle'; }
     [].forEach.call(btns, function (b) {
       var L = b.getAttribute('data-ch');
-      b.classList.remove('ok', 'bad');
+      b.classList.remove('ok', 'bad', 'sel'); b.removeAttribute('aria-pressed');
       b.disabled = !!a;
       if (a) {
         if (L === q.a) b.classList.add('ok');
