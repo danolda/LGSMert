@@ -300,78 +300,132 @@
     x.open('POST', FN);
     x.setRequestHeader('Content-Type', 'application/json');
     if ((window.LGS_CLOUD || {}).key) x.setRequestHeader('apikey', window.LGS_CLOUD.key);
-    x.timeout = 150000;   // sunucu yoğunlukta kendi içinde ~2 dk deneyip "busy" dönebilir
+    x.timeout = 170000;   // tüm sınav tek istekte; sunucu yoğunlukta kendi içinde ~2 dk deneyip "busy" dönebilir
     x.onload = function () {
       var d = null; try { d = JSON.parse(x.responseText); } catch (e) {}
-      if (x.status >= 200 && x.status < 300 && d && Array.isArray(d.parts)) cb(null, d);
+      if (x.status >= 200 && x.status < 300 && d && Array.isArray(d.questions)) cb(null, d);
       else cb({ status: x.status, code: d && d.error, up: d && d.status, after: d && d.retry_after }, null);
     };
     x.onerror = x.ontimeout = function () { cb({ status: 0, code: 'ağ' }, null); };
     x.send(JSON.stringify(body));
   }
+  /* gönderim için fotoğrafı küçült (kayıtlı kopya 1600 px kalır, ekranda büyütme için) */
+  function shrinkData(d, max, qual, cb) {
+    var img = new Image();
+    img.onload = function () {
+      var w = img.naturalWidth, h = img.naturalHeight, k = Math.min(1, max / Math.max(w, h));
+      var c = document.createElement('canvas'); c.width = Math.max(1, Math.round(w * k)); c.height = Math.max(1, Math.round(h * k));
+      var g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
+      var o = c.toDataURL('image/jpeg', qual);
+      cb(o.length < d.length || max < 1280 ? o : d);
+    };
+    img.onerror = function () { cb(d); };
+    img.src = d;
+  }
+  var SEND_MAX = 16000000, SHRINK = [[1280, 0.7], [1024, 0.6], [800, 0.5]];
+  function packImages(todo, lvl, cb) {   // → { no: [dataURL…] }, toplam boyut
+    var out = {}, jobs = [], size = 0;
+    todo.forEach(function (q) { (photos[q.no] || []).forEach(function (d, k) { jobs.push([q.no, k, d]); }); out[q.no] = []; });
+    var n = jobs.length; if (!n) return cb(out, 0);
+    jobs.forEach(function (j) {
+      shrinkData(j[2], SHRINK[lvl][0], SHRINK[lvl][1], function (o) {
+        out[j[0]][j[1]] = o; size += o.length;
+        if (--n === 0) cb(out, size);
+      });
+    });
+  }
   function grade(pend, ex) {
     var my = ++gradingRun;
-    var todo = pend.q.filter(function (q) { return q.st === 'wait'; }), total = todo.length, done = 0, okN = 0, failN = 0, aborted = false, active = 0, qi = 0;
-    app.innerHTML = '<div class="page-dn yz-grade"><div class="dn-hero"><div class="dn-hero-ic yz-spin">🧠</div><h1>Yazılın değerlendiriliyor</h1><p id="yzGmsg">Cevapların MEB cevap anahtarına göre puanlanıyor. Bu biraz sürebilir; sayfadan ayrılma.</p>' +
+    var todo = pend.q.filter(function (q) { return q.st === 'wait'; }), total = todo.length, okN = 0;
+    app.innerHTML = '<div class="page-dn yz-grade"><div class="dn-hero"><div class="dn-hero-ic yz-spin">🧠</div><h1>Yazılın değerlendiriliyor</h1><p id="yzGmsg">Cevapların MEB cevap anahtarına göre puanlanıyor. Bu 1-2 dakika sürebilir; sayfadan ayrılma.</p>' +
       '<p class="yz-busy" id="yzBusy" hidden><span class="yz-spinner"></span>Yoğunluk var, cevabın kaliteli değerlendirilmesi için biraz bekliyoruz…</p>' +
       '<div class="yz-prog"><i id="yzGbar"></i></div><p class="small" id="yzGn"></p></div></div>';
-    function prog() {
+    var t0 = Date.now(), pt = null, doneQ = 0;
+    function prog(fin) {   // tek istek: süreye göre yavaşça dolan çubuk, bitince tam
       var b = document.getElementById('yzGbar'), n = document.getElementById('yzGn');
-      if (b) b.style.width = (total ? done * 100 / total : 100) + '%';
-      if (n) n.textContent = done + ' / ' + total + ' soru';
+      if (!b) { if (pt) clearInterval(pt); return; }
+      var f = fin || !total ? 1 : Math.min(0.92, 1 - Math.exp(-(Date.now() - t0) / 40000));
+      b.style.width = Math.round(f * 100) + '%';
+      if (n) n.textContent = fin || !total ? doneQ + ' / ' + total + ' soru' : total + ' soru tek seferde değerlendiriliyor…';
     }
     prog();
     if (!total) return after();
-    function hard(err) { return err && (err.code === 'no_key' || err.code === 'gemini' || err.status === 0 || err.status >= 500); }
-    function one(q, cb) {
-      var eq = qById(ex, q.no);
-      var body = { subject: SNAME[ex.sid], question: eq ? eq.text : '', parts: q.parts.map(function (p, k) { return { label: p.l || 'cevap', key: eq ? eq.parts[k].k : '', answer: p.a }; }), images: photos[q.no] || [] };
+    pt = setInterval(function () { if (my !== gradingRun) return clearInterval(pt); prog(); }, 700);
+    function body(qs, imgs) {
+      return { subject: SNAME[ex.sid], questions: qs.map(function (q) {
+        var eq = qById(ex, q.no);
+        return { id: String(q.no), question: eq ? eq.text : '', parts: q.parts.map(function (p, k) { return { label: p.l || 'cevap', key: eq && eq.parts[k] ? eq.parts[k].k : '', answer: p.a }; }), images: imgs[q.no] || [] };
+      }) };
+    }
+    function send(b, cb) {   // yoğunlukta (busy) 3 kez bekleyip dener; kota dolduysa hemen bırakır
       var busyLeft = 3, otherLeft = 1;
       (function attempt() {
-        post(body, function (err, d) {
+        post(b, function (err, d) {
           if (my !== gradingRun) return;
-          if (!err) { busy(-1); return cb(null, d); }
-          if (err.code === 'busy' && busyLeft > 0) {   // sunucu yoğun: sakin bekle, sonra tekrar dene
-            busyLeft--; busy(1);
-            return setTimeout(function () { if (my !== gradingRun) return; busy(-1); attempt(); }, Math.max(5, Math.min(60, +err.after || 15)) * 1000);
+          if (!err) { busy(false); return cb(null, d); }
+          if (err.code === 'busy' && busyLeft > 0) {
+            busyLeft--; busy(true);
+            return setTimeout(function () { if (my !== gradingRun) return; attempt(); }, Math.max(5, Math.min(60, +err.after || 15)) * 1000);
           }
-          if (err.code !== 'busy' && otherLeft > 0) { otherLeft--; return setTimeout(function () { if (my !== gradingRun) return; attempt(); }, 1500); }
-          busy(-1); cb(err, null);
+          if (err.code !== 'busy' && err.code !== 'quota' && err.status !== 413 && otherLeft > 0) { otherLeft--; return setTimeout(function () { if (my !== gradingRun) return; attempt(); }, 1500); }
+          busy(false); cb(err, null);
         });
       })();
     }
-    var waiting = 0;
-    function busy(dlt) {
-      waiting = Math.max(0, waiting + (dlt > 0 ? 1 : dlt < 0 && waiting ? -1 : 0));
-      var m = document.getElementById('yzGmsg'), w = document.getElementById('yzBusy');
-      if (w) w.hidden = !waiting;
-      if (m) m.hidden = !!waiting;
+    function apply(qs, err, d) {
+      var by = {};
+      if (d) d.questions.forEach(function (r) { if (r && !r.missing && Array.isArray(r.parts) && r.parts.length) by[String(r.id)] = r; });
+      qs.forEach(function (q) {
+        var r = by[String(q.no)];
+        if (!r) { q.st = 'self'; q.err = err ? (err.code || err.up || err.status || 'hata') : 'eksik'; if (err && err.code === 'quota') pend.quota = 1; return; }
+        okN++; q.st = 'ai'; q.sum = r.summary || ''; delete q.err;
+        q.parts.forEach(function (p, k) {   // sıraya göre eşle (etiket değil)
+          var x = r.parts[k] || {};
+          p.ok = !!x.result_correct; p.sc = Math.max(0, Math.min(100, x.score | 0)); p.fb = x.feedback || ''; p.sa = x.student_answer || ''; p.src = 'ai';
+        });
+      });
+      doneQ += qs.length; A.jset(PEND, pend);
     }
-    function next() {
-      if (my !== gradingRun) return;
-      while (active < 2 && qi < todo.length && !aborted) {
-        (function (q) {
-          active++;
-          one(q, function (err, d) {
-            active--; if (my !== gradingRun) return;
-            if (err || !d) { failN++; q.st = 'self'; q.err = (err && (err.up || err.code || err.status)) || 'hata'; }
-            else {
-              okN++; q.st = 'ai'; q.sum = d.summary || '';
-              q.parts.forEach(function (p, k) {
-                var r = d.parts.filter(function (x) { return x.label === (p.l || 'cevap'); })[0] || d.parts[k] || {};
-                p.ok = !!r.result_correct; p.sc = Math.max(0, Math.min(100, r.score | 0)); p.fb = r.feedback || ''; p.sa = r.student_answer || ''; p.src = 'ai';
-              });
-            }
-            done++; prog(); A.jset(PEND, pend);
-            // hiç başarı yokken iki soru da sunucu/anahtar hatası verdiyse kalanları bekletme
-            if (!okN && failN >= 2 && hard(err)) aborted = true;
-            if (aborted) { todo.forEach(function (x) { if (x.st === 'wait') { x.st = 'self'; x.err = 'iptal'; } }); A.jset(PEND, pend); if (!active) after(); return; }
-            if (qi >= todo.length && !active) after(); else next();
+    function bySize(qs, imgs) { return qs.reduce(function (m, q) { return m + (imgs[q.no] || []).reduce(function (n, d) { return n + d.length; }, 0); }, 0); }
+    function split(qs, imgs) {   // son çare: fotoğraf boyutu dengeli iki parça
+      var half = bySize(qs, imgs) / 2, acc = 0, i = 0;
+      for (; i < qs.length - 1; i++) { acc += bySize([qs[i]], imgs); if (acc >= half) { i++; break; } }
+      i = Math.max(1, Math.min(qs.length - 1, i));
+      return [qs.slice(0, i), qs.slice(i)];
+    }
+    function chunk(qs, imgs) {   // genelde tek parça; yalnızca sunucu sınırı aşılırsa (40 soru / 80 madde / 40 foto / 16 MB) bölünür
+      var out = [[]], c = { n: 0, p: 0, i: 0, b: 0 };
+      qs.forEach(function (q) {
+        var im = imgs[q.no] || [], b = im.reduce(function (m, d) { return m + d.length; }, 0);
+        if (out[out.length - 1].length && (c.n + 1 > 40 || c.p + q.parts.length > 80 || c.i + im.length > 40 || c.b + b > SEND_MAX)) { out.push([]); c = { n: 0, p: 0, i: 0, b: 0 }; }
+        out[out.length - 1].push(q); c.n++; c.p += q.parts.length; c.i += im.length; c.b += b;
+      });
+      return out;
+    }
+    (function pack(lvl) {
+      packImages(todo, lvl, function (imgs, size) {
+        if (my !== gradingRun) return;
+        if (size > SEND_MAX && lvl < SHRINK.length - 1) return pack(lvl + 1);
+        var groups = chunk(todo, imgs);
+        (function run(gi) {
+          if (gi >= groups.length) { if (pt) clearInterval(pt); prog(true); return after(); }
+          var g = groups[gi];
+          send(body(g, imgs), function (err, d) {
+            if (my !== gradingRun) return;
+            if (err && err.status === 413 && groups.length === 1 && g.length > 1) { groups = split(g, imgs); return run(0); }
+            apply(g, err, d);
+            if (err && err.code === 'quota') groups.slice(gi + 1).forEach(function (r) { apply(r, err, null); });
+            if (err && err.code === 'quota') { A.toast('Bugünkü otomatik puanlama hakkı doldu, yarın 11:00\'de yenilenir.'); if (pt) clearInterval(pt); prog(true); return after(); }
+            run(gi + 1);
           });
-        })(todo[qi++]);
-      }
+        })(0);
+      });
+    })(0);
+    function busy(on) {
+      var m = document.getElementById('yzGmsg'), w = document.getElementById('yzBusy');
+      if (w) w.hidden = !on;
+      if (m) m.hidden = !!on;
     }
-    next();
     function after() {
       if (my !== gradingRun) return;
       pend.q.forEach(function (q) { if (q.st === 'empty') q.parts.forEach(function (p) { p.ok = false; p.sc = 0; p.fb = 'Boş bıraktın.'; p.src = 'empty'; }); });
@@ -384,7 +438,7 @@
   /* ---------- öz değerlendirme (otomatik puanlama yoksa) ---------- */
   function selfPage(pend, ex) {
     var sq = pend.q.filter(function (q) { return q.st === 'self'; }), allFail = !pend.q.some(function (q) { return q.st === 'ai'; });
-    var html = '<div class="page-dn yz-self"><div class="card yz-warn"><b>⚠️ ' + (allFail ? 'Otomatik puanlama şu an kullanılamıyor.' : sq.length + ' soru otomatik puanlanamadı.') + '</b>' +
+    var html = '<div class="page-dn yz-self"><div class="card yz-warn"><b>⚠️ ' + (pend.quota ? 'Bugünkü otomatik puanlama hakkı doldu, yarın 11:00\'de yenilenir.' : allFail ? 'Otomatik puanlama şu an kullanılamıyor.' : sq.length + ' soru otomatik puanlanamadı.') + '</b>' +
       '<span>Cevabını MEB cevabı ve çözümüyle karşılaştır, her madde için <b>Doğru</b> ya da <b>Yanlış</b> seç. Sonuç doğruysa yol farklı olsa da doğru say. EXP buna göre verilir; dürüst ol, kendini kandırma! 💪</span></div>';
     sq.forEach(function (q) {
       var eq = qById(ex, q.no) || { parts: [] };
