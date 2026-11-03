@@ -40,6 +40,13 @@
         { s: 'Bu, “benim, buyurun” demek. Yani aranan kişi telefonu açan kişinin ta kendisi.' }
       ] },
 
+    { t: 'Görüşmeyi sırala',
+      steps: [{ s: 'Bir telefon görüşmesinin satırları karışmış. Akışı hatırla ve satırları baştan sona sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Telefon görüşmesini baştan sona sırala.</p>', ust: 'ilk satır', alt: 'son satır',
+        ogeler: ['Hello, Green Hotel.', 'Hi. Can I speak to Ms. Ak?', 'Who’s calling, please?', 'This is Ece Demir.', 'Hold on. I’ll put you through.'],
+        hint: 'Telefonu önce açan konuşur. [[This is]] cümlesi neye cevap veriyor? Bağlama işi de en sonda gelir.',
+        why: 'Önce açan kişi kurumun adını söyler. Arayan birini ister, açan kişi kimin aradığını sorar, arayan [[This is]] ile kendini tanıtır ve en sonda bağlanır.' } },
+
     { t: 'Müsait mi, değil mi?',
       base: '<table class="an-tbl"><tr><th>✅ Müsait</th><th>❌ Müsait değil</th></tr>' +
         '<tr class="rv y1"><td>Hold on, please.</td><td>I’m afraid he’s out.</td></tr>' +
@@ -53,6 +60,14 @@
         { s: '[[I’ll get him for you]], onu çağırıyorum. Ama [[Can I take a message?]] diyorsa kişi orada değildir.', on: '.y3' },
         { s: 'Kısacası mesaj teklifi geliyorsa kişi müsait değil. Mesaj teklifi hep “orada değil” cümlesinden sonra gelir.', on: '.y4', mk: '.y4 td' }
       ] },
+
+    { t: 'Müsait mi? Kutulara ayır',
+      steps: [{ s: 'Arayan biri, Bay Kaya’yı istedi. Telefonu açan kişinin cevaplarını iki kutuya ayır: Bay Kaya müsait mi, değil mi?' }],
+      ia: { tip: 'grup', q: '<p>“Can I speak to Mr. Kaya?” Cevaba göre Mr. Kaya müsait mi?</p>', gruplar: ['Müsait ✓', 'Müsait değil ✗'],
+        ogeler: [{ m: 'Hold on, please.', g: 0 }, { m: 'I’ll put you through.', g: 0 }, { m: 'I’ll get him for you.', g: 0 }, { m: 'Speaking.', g: 0 },
+          { m: 'I’m afraid he’s out.', g: 1 }, { m: 'He’s in a meeting.', g: 1 }, { m: 'Can I take a message?', g: 1 }, { m: 'He isn’t available.', g: 1 }],
+        hint: 'Mesaj teklifi geliyorsa kişi orada değildir. [[Speaking]] ise telefonu açanın kim olduğunu söyler.',
+        why: 'Bekletmek, bağlamak, çağırmak ve [[Speaking]] müsait demek; [[Speaking]] “benim” anlamına gelir. Dışarıda, toplantıda ya da mesaj teklifi ise müsait değil.' } },
 
     { t: 'Mesaj bırakmak',
       steps: [
@@ -80,6 +95,14 @@
         { s: 'Ve şarj biterse: [[My phone ran out of battery.]]' }
       ] },
 
+    { t: 'Kalıp fiili anlamıyla eşleştir',
+      steps: [{ s: 'Telefon kalıp fiillerini Türkçe anlamlarıyla eşleştir. Önce fiile, sonra anlamına dokun.' }],
+      ia: { tip: 'eslestir', q: '<p>Her kalıp fiili anlamıyla eşleştir.</p>', solBaslik: 'Phrasal verb', sagBaslik: 'Anlam',
+        sol: ['pick up', 'hang up', 'hold on', 'call back', 'put through', 'speak up'],
+        sag: ['telefonu açmak', 'telefonu kapatmak', 'beklemek', 'geri aramak', 'bağlamak', 'sesini yükseltmek'],
+        hint: '[[Hang up]] ile [[hold on]] karışmasın: biri görüşmeyi bitirir, öteki beklemeyi ister. [[Up]] her zaman yukarı demek değil.',
+        why: '[[Pick up]] açmak, [[hang up]] kapatmak, [[hold on]] beklemek, [[call back]] geri aramak, [[put through]] bağlamak, [[speak up]] daha yüksek sesle konuşmak.' } },
+
     { t: 'Tuzak: hang up mı, hang on mu?',
       steps: [
         { s: 'Şimdi çok dikkat. Tek kelime fark, anlam tam ters.',
@@ -101,6 +124,14 @@
         { s: 'Şarj azsa: [[My battery is low. Let me call you later.]]', on: '.s3' },
         { s: 'Yanlış numarayı arayan birine de: [[Sorry, I think you’ve got the wrong number.]]', on: '.s4' }
       ] },
+
+    { t: 'Sorunlu bir görüşme',
+      steps: [{ s: 'Ada ile Mert telefonda konuşuyor ama ses kötü. Diyaloğu doğru kelimelerle tamamla.' }],
+      ia: { tip: 'bosluk', q: '<p>Diyaloğu tamamla.</p>',
+        metin: '<b>Ada:</b> I can’t hear you well. Could you [_] up, please?<br><b>Mert:</b> Sorry, you’re [_] up. I’ll call you back.<br><b>Ada:</b> OK. My battery is [_] anyway.',
+        secenek: ['speak', 'hang', 'breaking', 'picking', 'low', 'busy'], cevap: ['speak', 'breaking', 'low'],
+        hint: 'Sesi duyamayan kişi ne ister? Ses kesik kesik geliyorsa hangi kalıp fiil kullanılır? Şarj için hangi sıfat?',
+        why: '[[Could you speak up?]] daha yüksek sesle konuş demek. [[You’re breaking up]] sesin kesik geliyor demek. [[My battery is low]] şarjım az demek.' } },
 
     { t: 'Mesaj notunu okumak',
       base: '<svg class="an-svg" viewBox="0 0 340 222" role="img" aria-label="While You Were Out mesaj notu">' +
@@ -129,6 +160,19 @@
         { s: 'En altta da notu alan kişi: Can. Can arayan değil, telefonu açan kişi.', on: '.w5' }
       ] },
 
+    { t: 'Kim yeniden arayacak?',
+      steps: [{ s: 'Yeni bir mesaj notu. Kutucuklara dikkat et ve yeniden arayacak kişinin satırına dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Nota göre <b>yeniden arayacak kişi</b> kim? O kişinin satırına dokun.</p>', dogru: ['n2'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 262" role="img" aria-label="Mesaj notu">' +
+          '<text x="170" y="22" text-anchor="middle" font-size="15" font-weight="700" class="acc">WHILE YOU WERE OUT</text>' +
+          '<g data-b="n1" aria-label="To"><rect x="10" y="34" width="320" height="38" rx="9" class="box"/><text x="22" y="58" font-size="14">To: Mr. Arı</text></g>' +
+          '<g data-b="n2" aria-label="From"><rect x="10" y="78" width="320" height="38" rx="9" class="box"/><text x="22" y="102" font-size="14">From: Ms. Tan (City Bank)</text></g>' +
+          '<text x="22" y="140" font-size="14">☐ Please call back    ☑ Will call again</text>' +
+          '<g data-b="n3" aria-label="Message"><rect x="10" y="154" width="320" height="38" rx="9" class="box"/><text x="22" y="178" font-size="14">Message: Your new card is ready.</text></g>' +
+          '<g data-b="n4" aria-label="Taken by"><rect x="10" y="198" width="320" height="38" rx="9" class="box"/><text x="22" y="222" font-size="14">Taken by: Elif</text></g></svg>',
+        hint: 'Hangi kutucuk işaretli? [[Will call again]] işaretliyse kim arar: notun sahibi mi, arayan kişi mi?',
+        why: '[[Will call again]] işaretli, yani arayan kişi yine arayacak: bankadan Bayan Tan. Bay Arı notun sahibi, Elif ise notu alan kişi.' } },
+
     { t: 'Ara soru', cp: {
         q: '<p><b>WHILE YOU WERE OUT</b><br>To: Ms. Er · From: Mr. Uslu (Star Travel)<br>Time: Monday, 10:15 a.m.<br>☑ Please call back &nbsp; ☐ Will call again<br>Message: Your tickets are ready. Bring your passport.<br>Taken by: Can</p><p>Which of the following is <b>correct</b>?</p>',
         c: ['Ms. Er talked to Mr. Uslu on Monday.', 'Ms. Er should call Mr. Uslu back.', 'Mr. Uslu will call Ms. Er again.', 'Can called Star Travel at 10:15.'], a: 'B',
@@ -146,6 +190,16 @@
         { s: 'Numaralar tek tek okunur. Sıfır [[oh]] diye, yan yana iki aynı rakam [[double]] diye söylenir. Dinle: [[oh five three two, double four seven.]]',
           h: '<div class="an-big" style="font-size:22px">0532 447 → oh-five-three-two, double-four-seven</div>' }
       ] },
+
+    { t: 'Rica ve numara tuzakları',
+      steps: [{ s: 'Rica kalıpları ve numara okumayla ilgili her ifadeye karar ver: doğru mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: '“Would you mind calling back later?” — “Not at all.” → Kabul etti.', d: true, a: 'Not at all = hiç sakıncası yok.' },
+          { m: '“Would you mind waiting?” — “Yes, I do.” → Kabul etti.', d: false, a: 'Yes, I do = sakıncası var, yani ret.' },
+          { m: '0533 numarası “oh five double three” diye okunur.', d: true, a: 'Sıfır oh, iki aynı rakam double.' },
+          { m: '“Shall I take a message?” bir izin isteğidir.', d: false, a: 'Shall I…? bir tekliftir.' }],
+        hint: '[[Would you mind]] “sakıncası var mı” diye sorar. Sakıncası yoksa kişi ne der? [[Shall I]] ile ne yapılıyordu?',
+        why: '[[Not at all]] kabul, [[Yes, I do]] ise ret. Sıfır [[oh]], yan yana iki rakam [[double]] diye okunur. [[Shall I]] ise teklif bildirir.' } },
 
     { t: 'Müşteri hizmetleri ve arama amacı',
       steps: [
@@ -177,6 +231,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

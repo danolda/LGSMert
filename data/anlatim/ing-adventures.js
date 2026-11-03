@@ -38,6 +38,14 @@
         { s: '[[Scuba diving]] oksijen tüpüyle, [[free diving]] ise nefes tutarak yapılan dalıştır.', on: '.c4' }
       ] },
 
+    { t: 'Sporu tarifinden tanı',
+      steps: [{ s: 'LGS sporu adıyla değil, tarifiyle verir. Her tarifi doğru sporla eşleştir. Karıştırılan ikililere dikkat!' }],
+      ia: { tip: 'eslestir', q: '<p>Her tarifi sporuyla eşleştir.</p>', solBaslik: 'Tarif', sagBaslik: 'Spor',
+        sol: ['two skis and poles', 'one board, both feet', 'a group, a rubber boat', 'jump from a plane', 'run off a hill', 'hold your breath'],
+        sag: ['skiing', 'snowboarding', 'rafting', 'skydiving', 'paragliding', 'free diving'],
+        hint: 'İkilileri ayır: iki kayak mı, tek tahta mı? Uçaktan mı atlıyor, yamaçtan mı koşuyor? Tüp var mı, nefes mi tutuyor?',
+        why: 'İki kayak ve baton [[skiing]], tek tahta [[snowboarding]]. Grup ve şişme bot [[rafting]]. Uçaktan atlamak [[skydiving]], yamaçtan koşmak [[paragliding]]. Nefes tutarak dalmak [[free diving]].' } },
+
     { t: 'Ekipman',
       base: '<table class="an-tbl"><tr><th>Equipment</th><th>Hangi spor?</th></tr>' +
         '<tr class="rv e1"><td><b>helmet</b> kask</td><td>climbing, rafting, caving</td></tr>' +
@@ -54,6 +62,13 @@
         { s: '[[Wetsuit]] dalış elbisesi, [[oxygen tank]] oksijen tüpü, [[fins]] palet: tüplü dalış.', on: '.e5' },
         { s: 'Ve [[headlamp]], kafa lambası. Karanlık mağaralar için, yani [[caving]].', on: '.e6' }
       ] },
+
+    { t: 'Ekipmanı sporuna yerleştir',
+      steps: [{ s: 'Altı ekipmanı ait olduğu sporun kutusuna yerleştir. Önce ekipmana, sonra kutusuna dokun.' }],
+      ia: { tip: 'grup', q: '<p>Her ekipmanı sporunun kutusuna koy.</p>', gruplar: ['rafting', 'scuba diving', 'skydiving', 'caving'],
+        ogeler: [{ m: 'paddle', g: 0 }, { m: 'life jacket', g: 0 }, { m: 'oxygen tank', g: 1 }, { m: 'fins', g: 1 }, { m: 'parachute', g: 2 }, { m: 'headlamp', g: 3 }],
+        hint: '[[Paddle]] kürek, [[fins]] palet, [[headlamp]] kafa lambası demek. Karanlık bir yerde hangisine ihtiyaç duyarsın?',
+        why: 'Kürek ve can yeleği [[rafting]]. Oksijen tüpü ve palet tüplü dalış. Paraşüt [[skydiving]]. Kafa lambası da karanlık mağaralar için, yani [[caving]].' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>Burak:</b> Before we start, everyone needs a <b>helmet</b>, a <b>life jacket</b> and a <b>paddle</b>. We will go down the river together in a big rubber boat.</p><p>Which activity is Burak talking about?</p>',
@@ -73,6 +88,14 @@
         { s: 'Kişi duyguları için şunlar da çok geçer: [[nervous]] gergin, [[scared]] korkmuş, [[brave]] cesur, [[proud]] gururlu.' }
       ] },
 
+    { t: '-ing mi, -ed mi?',
+      steps: [{ s: 'Üç boşluğu doldur. Sıfat etkinliği mi anlatıyor, kişinin duygusunu mu? Cümlenin devamına da bak.' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri doğru sıfatla tamamla.</p>',
+        metin: 'Bungee jumping is really [_]. I want to do it again!<br>I was so [_] before the jump that I couldn’t sleep.<br>I felt [_] of myself when I reached the top.',
+        secenek: ['exciting', 'excited', 'boring', 'bored', 'proud', 'brave'], cevap: ['exciting', 'excited', 'proud'],
+        hint: 'Etkinliği anlatan sıfat ing ile, kişinin duygusu ed ile biter. Son cümlede [[of myself]] ifadesiyle hangi duygu kullanılır?',
+        why: '[[Bungee jumping is exciting]]: etkinlik. [[I was excited]]: kişinin duygusu. [[Proud of myself]]: kendimle gurur duydum. [[Brave]] cesur demek ama [[of myself]] ile kullanılmaz.' } },
+
     { t: 'Karşılaştırma',
       base: '<svg class="an-svg" viewBox="0 0 340 150" role="img" aria-label="Tehlike puanı: hiking 2, rafting 6, skydiving 9">' +
         '<text x="6" y="16" font-size="12" class="mut">Danger (1–10)</text>' +
@@ -80,13 +103,23 @@
         '<rect x="96" y="66" width="144" height="24" rx="4" class="box rv k1"/><text x="6" y="83" font-size="13" font-weight="700" class="rv k1">rafting</text><text x="246" y="83" font-size="13" class="rv k1">6</text>' +
         '<rect x="96" y="102" width="216" height="24" rx="4" class="boxa rv k1"/><text x="6" y="119" font-size="13" font-weight="700" class="rv k1">skydiving</text><text x="318" y="119" font-size="13" class="rv k1">9</text></svg>',
       steps: [
-        { s: 'Üç etkinliğin tehlike puanına bakalım: yürüyüş iki, rafting altı, skydiving dokuz.', on: '.k1' },
+        { s: 'Üç etkinliğin tehlike puanına bakalım: yürüyüş iki, [[rafting]] altı, [[skydiving]] dokuz.', on: '.k1' },
         { s: '[[Rafting is more dangerous than hiking.]] Uzun sıfatlarda [[more]] ve [[than]] kullanılır.',
           h: '<div class="an-ex"><span class="an-l">Rafting is <b>more dangerous than</b> hiking.</span><span class="an-l">Skydiving is <b>the most dangerous</b> of the three.</span><span class="an-l">Hiking is <b>the safest</b>.</span><span class="an-l">Hiking is <b>not as dangerous as</b> rafting.</span></div>' },
         { s: 'En tehlikelisi: [[Skydiving is the most dangerous.]] En güvenlisi: [[Hiking is the safest.]]' },
         { s: 'Ve tuzaklı yapı: [[Hiking is not as dangerous as rafting.]] Bu, yürüyüş daha az tehlikeli demek.' },
         { s: 'Eşitlik için [[as tiring as]], iki kat için [[twice as long as]]. Grafik sorularında [[twice]] ve [[the most]] kelimelerini sayıyla kontrol et.' }
       ] },
+
+    { t: 'Puanlarla karşılaştırma',
+      steps: [{ s: 'Tehlike puanlarına bakarak her cümleye karar ver: doğru mu, yanlış mı? Sayıları tek tek kontrol et.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Danger points: <b>hiking 2</b> · <b>rafting 6</b> · <b>skydiving 9</b></p>', ifadeler: [
+          { m: 'Hiking is not as dangerous as rafting.', d: true, a: '2 < 6: yürüyüş daha az tehlikeli.' },
+          { m: 'Rafting is the most dangerous of the three.', d: false, a: 'En tehlikelisi skydiving (9).' },
+          { m: 'Rafting is three times as dangerous as hiking.', d: true, a: '6 = 3 × 2.' },
+          { m: 'Hiking is as dangerous as skydiving.', d: false, a: 'as … as eşitlik bildirir; 2 ≠ 9.' }],
+        hint: '[[Not as dangerous as]] daha az tehlikeli demek, [[as dangerous as]] ise eşit derecede tehlikeli. [[Three times]] için puanları birbirine böl.',
+        why: 'Yürüyüş [[rafting]] kadar tehlikeli değil; [[rafting]] ise yürüyüşün tam üç katı tehlikeli. En tehlikelisi [[skydiving]]; yürüyüşle eşit de değil.' } },
 
     { t: 'Tercih kalıpları',
       steps: [
@@ -96,6 +129,13 @@
         { s: 'Yapmak istemediğimizi de şöyle söyleriz: [[I’d rather not try bungee jumping.]]' },
         { s: 'Ve unutma, her iki kalıpta da ilk söylenen tercih edilendir.' }
       ] },
+
+    { t: 'Hatalı tercih cümleleri',
+      steps: [{ s: 'Altı tercih cümlesinden yanlış kurulanları ele. [[Prefer]] ile hangi kelime, [[would rather]] ile hangi kelime geliyordu?' }],
+      ia: { tip: 'eleme', q: '<p>Yanlış kurulan cümleleri <b>ele</b>.</p>',
+        ogeler: ['I prefer rafting to caving.', 'I prefer caving than diving.', 'I’d rather climb than dive.', 'I’d rather climbing than diving.', 'I’d rather not try it.', 'She prefers skiing to skating.'], ele: [1, 3],
+        hint: '[[Prefer]] yanında [[than]] kullanılmaz. Peki [[would rather]] kalıbından sonra fiil hangi biçimde kalıyordu?',
+        why: '[[Prefer]] ile [[to]] gelir, [[than]] gelmez. [[Would rather]] ise [[than]] ister ve fiil yalın kalır: [[climb than dive]], ing takısı almaz.' } },
 
     { t: 'Dolaylı görüş ifadeleri',
       base: '<table class="an-tbl"><tr><th>İfade</th><th>Anlamı</th></tr>' +
@@ -135,6 +175,17 @@
         { s: 'Eşleşmeyen tek soru, cevabın ta kendisi.' }
       ] },
 
+    { t: 'Hangi cevap “How long?”',
+      steps: [{ s: 'Bir dağcıyla röportajdan dört cevap var. [[How long do you climb each time?]] sorusunun cevabına dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>“How long do you climb each time?”</b> Bu sorunun cevabına dokun.</p>', dogru: ['r2'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 196" role="img" aria-label="Röportaj cevapları">' +
+          '<g data-b="r1" aria-label="Twice a week"><rect x="10" y="8" width="320" height="40" rx="9" class="box"/><text x="22" y="33" font-size="14">— Twice a week, at weekends.</text></g>' +
+          '<g data-b="r2" aria-label="For about three hours"><rect x="10" y="54" width="320" height="40" rx="9" class="box"/><text x="22" y="79" font-size="14">— For about three hours.</text></g>' +
+          '<g data-b="r3" aria-label="Because"><rect x="10" y="100" width="320" height="40" rx="9" class="box"/><text x="22" y="125" font-size="14">— Because it’s so thrilling!</text></g>' +
+          '<g data-b="r4" aria-label="Two years ago"><rect x="10" y="146" width="320" height="40" rx="9" class="box"/><text x="22" y="171" font-size="14">— I started two years ago.</text></g></svg>',
+        hint: '[[How long]] süreyi sorar. Sıklık, sebep ve başlama zamanı bildiren cevaplar başka soruların cevabıdır.',
+        why: '[[For about three hours]] bir süre, yani [[How long]]. [[Twice a week]] sıklık, [[because]] sebep, [[two years ago]] ise başlama zamanı bildirir.' } },
+
     { t: 'Ara soru', cp: {
         q: '<p><b>Interview with a caver</b></p><p>— I go caving twice a month.<br>— Because I love exploring places that nobody has seen.<br>— A helmet with a headlamp, gloves and strong boots.</p><p>Which question is <b>NOT</b> answered in the interview?</p>',
         c: ['How often do you go caving?', 'Why do you like caving?', 'What equipment do you need?', 'When did you start caving?'], a: 'D',
@@ -154,7 +205,7 @@
 
     { t: 'Akılda kalsın',
       steps: [
-        { s: 'Toparlayalım. Sporu tarifinden ve ekipmanından tanı: kürek ve can yeleği rafting, paraşüt skydiving, kafa lambası caving.' },
+        { s: 'Toparlayalım. Sporu tarifinden ve ekipmanından tanı: kürek ve can yeleği [[rafting]], paraşüt [[skydiving]], kafa lambası [[caving]].' },
         { s: 'ing ile biten sıfat etkinliği, ed ile biten kişinin duygusunu anlatır. [[Breathtaking]] çok güzel demek.' },
         { s: '[[Prefer]] ile [[to]], [[would rather]] ile [[than]]. Röportajda her cevabı bir soruya bağla.' },
         { s: '[[Nothing beats]] çok sevmek, [[Never again]] pişmanlık. Bu macerayı da tamamladın, tebrikler!' }
@@ -165,6 +216,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

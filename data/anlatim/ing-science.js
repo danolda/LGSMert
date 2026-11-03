@@ -37,6 +37,14 @@
         { s: 'Yıldızları izlemeyi seven biri [[astronomer]] olmak ister. Kişiyi gösteren ekler: [[ist]], [[er]], [[ian]].' }
       ] },
 
+    { t: 'Kim, ne iş yapar?',
+      steps: [{ s: 'Bilim insanlarını Türkçe karşılıklarıyla eşleştir. Benzer yazılan iki kelimeye çok dikkat!' }],
+      ia: { tip: 'eslestir', q: '<p>Her kelimeyi Türkçe karşılığıyla eşleştir.</p>', solBaslik: 'Kelime', sagBaslik: 'Türkçesi',
+        sol: ['physicist', 'physician', 'chemist', 'astronomer', 'biologist'],
+        sag: ['fizikçi', 'doktor', 'kimyager', 'gökbilimci', 'biyolog'],
+        hint: '[[Physicist]] ile [[physician]] benzer yazılır ama biri fizikle uğraşır, öteki hasta tedavi eder.',
+        why: '[[Physicist]] fizikçi, [[physician]] doktor, [[chemist]] kimyager, [[astronomer]] gökbilimci, [[biologist]] biyolog.' } },
+
     { t: 'invent mi, discover mı?',
       base: '<svg class="an-svg" viewBox="0 0 340 196" role="img" aria-label="Invent: olmayanı yapmak; discover: var olanı bulmak">' +
         '<rect x="4" y="6" width="160" height="184" rx="12" class="boxa rv i1"/>' +
@@ -57,6 +65,14 @@
         { s: 'Yani [[Newton invented gravity]] yanlıştır. Yer çekimi zaten vardı. Ateş de icat edilmedi, keşfedildi.' }
       ] },
 
+    { t: 'İcat mı, keşif mi?',
+      steps: [{ s: 'Dokuz şeyi iki kutuya ayır: insanlar onu icat mi etti, yoksa doğada zaten vardı da keşif mi edildi?' }],
+      ia: { tip: 'grup', q: '<p>Her birini doğru kutuya yerleştir.</p>', gruplar: ['invented', 'discovered'],
+        ogeler: [{ m: 'the telephone', g: 0 }, { m: 'the light bulb', g: 0 }, { m: 'the airplane', g: 0 }, { m: 'the printing press', g: 0 },
+          { m: 'gravity', g: 1 }, { m: 'penicillin', g: 1 }, { m: 'X-rays', g: 1 }, { m: 'radium', g: 1 }, { m: 'fire', g: 1 }],
+        hint: 'Kendine sor: bu şey insanlardan önce de doğada var mıydı? Varsa bulunmuştur; yoksa yapılmıştır.',
+        why: 'Telefon, ampul, uçak ve matbaa daha önce yoktu: [[invented]]. Yer çekimi, penisilin, röntgen ışınları, radyum ve ateş zaten vardı: [[discovered]].' } },
+
     { t: 'Kelime aileleri',
       steps: [
         { s: 'Boşluk doldurmada kelimenin türüne de bakılır. Fiil, şey ve kişi hâllerini öğrenelim.',
@@ -71,6 +87,14 @@
         { s: '[[achieve]], [[achievement]]: başarmak, başarı. [[research]], [[researcher]]: araştırma, araştırmacı. [[science]], [[scientist]].', on: '.w3' },
         { s: 'Örnek: [[a great inventor]] bir kişi, [[his most famous invention]] bir şey, [[a big achievement]] bir başarı.' }
       ] },
+
+    { t: 'Kelime ailesini tamamla',
+      steps: [{ s: 'Üç boşluğu doldur. Boşluğa bir kişi mi, bir şey mi, yoksa bir fiil mi gelmeli? Ona bak.' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri doğru kelimeyle tamamla.</p>',
+        metin: 'Edison was a great [_].<br>The light bulb was his most famous [_].<br>Winning the Nobel Prize is a big [_].',
+        secenek: ['inventor', 'invention', 'invent', 'achievement', 'achieve', 'discover'], cevap: ['inventor', 'invention', 'achievement'],
+        hint: '[[A great]] ve [[his most famous]] ifadelerinden sonra fiil gelmez. Kişi bildiren ek hangisi, şey bildiren ek hangisi?',
+        why: 'Edison bir kişi: [[inventor]], yani mucit. Ampul bir şey: [[invention]], yani icat. Nobel kazanmak bir başarı: [[achievement]].' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Alexander Graham Bell ______ the telephone in 1876, and Marie Curie ______ radium in 1898.</p><p>Which words complete the sentence?</p>',
@@ -95,6 +119,13 @@
         { s: 'Deney sorularında tek bir şeyin değiştiğine dikkat et; ışık mı, su mu? Sonuç o değişkenle ilgilidir.' }
       ] },
 
+    { t: 'Bilimsel yöntemi sırala',
+      steps: [{ s: 'Bilimsel yöntemin beş adımını doğru sıraya koy. Hipotez deneyden önce mi, sonra mı?' }],
+      ia: { tip: 'sirala', q: '<p>Bilimsel yöntemin adımlarını baştan sona sırala.</p>', ust: 'ilk adım', alt: 'son adım',
+        ogeler: ['Ask a question.', 'Make a hypothesis.', 'Carry out an experiment.', 'Record the results.', 'Draw a conclusion.'],
+        hint: 'Hipotez bir tahmindir; tahmin deneyden önce yapılır. Sonuca varmak için de önce sonuçları kaydetmek gerekir.',
+        why: 'Önce soru sorulur, sonra tahmin yapılır, deney yapılır, sonuçlar kaydedilir ve en sonda bir sonuca varılır.' } },
+
     { t: 'Edilgen yapı: is / was + V3',
       steps: [
         { s: 'Bir deneyi ya da icadı anlatırken işi yapan değil, yapılan iş önemlidir. Bu yüzden edilgen yapı kullanılır.',
@@ -106,6 +137,16 @@
         { s: 'Tuzaklara dikkat. [[Penicillin discovered by Fleming]] eksik, [[was]] gerekir. [[Scientists were discovered]] ise yanlış; bilim insanları keşfeden kişilerdir.',
           h: '<div class="an-trap">“Penicillin <span class="an-bad-t">discovered</span> by Fleming” ✗ → <b>was discovered</b> ✓<br>“Scientists <span class="an-bad-t">were discovered</span> water” ✗ → Scientists <b>discovered</b> water ✓</div>' }
       ] },
+
+    { t: 'Edilgen cümle doğru mu?',
+      steps: [{ s: 'Her edilgen cümleye karar ver: doğru kurulmuş mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Cümleler doğru kurulmuş mu?</p>', ifadeler: [
+          { m: 'Penicillin was discovered by Fleming in 1928.', d: true, a: 'was + V3 + by: doğru.' },
+          { m: 'The telephone invented by Bell in 1876.', d: false, a: 'was eksik: The telephone was invented…' },
+          { m: 'First, the water is heated. Then, salt is added.', d: true, a: 'Süreç anlatımı: is + V3.' },
+          { m: 'Scientists were discovered the vaccine.', d: false, a: 'Bilim insanları keşfeden kişiler: Scientists discovered…' }],
+        hint: 'Edilgende [[is]], [[are]], [[was]] ya da [[were]] ile fiilin üçüncü hâli birlikte gelir. Bir de şunu sor: işi yapan mı özne, yapılan mı?',
+        why: 'Penisilin cümlesi ve süreç cümlesi doğru. Telefon cümlesinde [[was]] eksik. Aşı cümlesinde ise işi yapanlar bilim insanları, yani etken olmalı: [[Scientists discovered the vaccine]].' } },
 
     { t: 'İcat tarihleri ve “mümkün mü?” mantığı',
       base: '<table class="an-tbl"><tr><th>Yıl</th><th>İcat / keşif</th></tr>' +
@@ -122,6 +163,14 @@
           h: '<div class="an-rule">Ölüm yılı <b>&lt;</b> icat yılı → o icadı <b>kullanamazdı</b>.<br><small>Örnek: 1937’de ölen biri 1938’de icat edilen bir şeyi kullanamaz.</small></div>' },
         { s: 'Yani kişinin ölüm yılı icat yılından önceyse, o icadı kullanmış olamaz. Tarihleri tek tek karşılaştır.' }
       ] },
+
+    { t: 'Ali Bey hangilerini duyamazdı?',
+      steps: [{ s: 'Ali Bey bin sekiz yüz seksen ile bin dokuz yüz yirmi beş arasında yaşadı. Duymuş olamayacağı icat ve keşifleri ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Ali Bey (1880–1925)</b> hangilerini <b>duymuş olamaz</b>? Onları ele.</p>',
+        ogeler: ['the telephone (1876)', 'the light bulb (1879)', 'the airplane (1903)', 'television (1927)', 'penicillin (1928)', 'the Moon landing (1969)'], ele: [3, 4, 5],
+        hint: 'Ölüm yılından sonraki tarihlere bak. Doğumundan önce yapılan bir icadı ise sonradan duyabilir.',
+        why: 'Ali Bey 1925’te öldü. Televizyon, penisilin ve Ay’a iniş ondan sonra. Telefon ve ampul doğumundan önce icat edildi ama onları elbette duymuş ve kullanmış olabilir.',
+        whyV: 'Ali Bey bin dokuz yüz yirmi beşte öldü. Televizyon, penisilin ve Ay’a iniş ondan sonra. Telefon ve ampul doğumundan önce icat edildi ama onları elbette duymuş ve kullanmış olabilir.' } },
 
     { t: 'Ara soru', cp: {
         q: '<table class="an-tbl"><tr><th>Scientist</th><th>Lived</th></tr><tr><td>Alexander Graham Bell</td><td>1847–1922</td></tr><tr><td>Thomas Edison</td><td>1847–1931</td></tr><tr><td>Nikola Tesla</td><td>1856–1943</td></tr></table>' +
@@ -191,6 +240,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

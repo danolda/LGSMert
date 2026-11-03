@@ -50,6 +50,17 @@
           h: '<div class="an-rule"><b>Kısa test:</b> Somut bir nesnenin bölümünü mü adlandırıyor? → <b>yan anlam</b>. Soyut bir duruma mı aktarılmış? → <b>mecaz</b></div>' }
       ] },
 
+    { t: 'Anlam türlerini ayır',
+      steps: [{ s: 'Koyu sözcükleri anlam türüne göre kutulara yerleştir. Önce cümleye, sonra kutusuna dokun.' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Koyu sözcük bu cümlede hangi anlamda kullanılmış?</p>',
+        gruplar: ['Gerçek', 'Yan', 'Mecaz', 'Terim'],
+        ogeler: [{ m: 'Kapının <b>kolu</b> kırıldı.', g: 1 }, { m: 'Çocuğun <b>kolu</b> alçıya alındı.', g: 0 }, { m: '<b>Taş</b> yürekli bir adam', g: 2 }, { m: 'Bahçeye <b>taş</b> döşendi.', g: 0 }, { m: 'Şişenin <b>boğazı</b> dar.', g: 1 }, { m: '<b>Sıcak</b> bir karşılama', g: 2 }, { m: 'Üçgenin iç <b>açıları</b>', g: 3 }, { m: 'Oyuncu <b>ofsayta</b> düştü.', g: 3 }, { m: '<b>Ağır</b> bir söz söyledi.', g: 2 }],
+        hint: 'Somut bir nesnenin bir bölümünü adlandırıyorsa yan anlam, soyut bir duruma aktarılmışsa mecaz, bir bilim ya da spor dalına özgüyse terim anlamdır.',
+        why: 'Kolu alçıya alınan çocuk ve döşenen taş gerçek anlamda. Kapının kolu, şişenin boğazı yan anlamda. Taş yürek, sıcak karşılama, ağır söz mecaz. Açı ve ofsayt terim. Aynı “kol” ve “taş”, cümleye göre tür değiştirdi.'
+      } },
+
     { t: 'Çok anlamlılık: “tutmak”',
       base: '<table class="an-tbl"><tr><th>Cümle</th><th>Anlamı</th></tr>' +
         '<tr class="rv t1"><td>Yaşlı adamın elini sıkıca <span class="an-w">tuttu</span>.</td><td>elle kavramak <small>(gerçek)</small></td></tr>' +
@@ -75,6 +86,17 @@
           h: '<div class="an-ex"><span class="an-l"><b>Yöntem:</b></span><span class="an-l">1. Her cümleyi tek tek oku, anlamını kendi sözünle söyle.</span><span class="an-l">2. O anlamı şıklardan biriyle eşleştir, eşleşeni çiz.</span><span class="an-l">3. Elde kalan şık cevaptır.</span></div>' },
         { s: 'Şunu da bil: Bazen bir cümlenin anlamı şıklarda hiç yoktur. “Tamir etmeyi bıraktı” ara vermek demektir, ertelemek değil. Zorla eşleştirme.' }
       ] },
+
+    { t: '“Bırakmak”: kullanılmayan anlam',
+      steps: [{ s: 'Üç anlam verildi. Bu anlamların hiçbirini karşılamayan cümleye dokun.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>“Bırakmak” için verilen anlamlar: <b>1)</b> terk etmek, ayrılmak <b>2)</b> emanet etmek <b>3)</b> bir alışkanlığa son vermek. Bu anlamların <b>hiçbiriyle</b> kullanılmamış cümleye dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 214" role="group" aria-label="Dört cümle"><g data-b="r1" aria-label="Babam yıllar önce sigarayı bıraktı."><rect x="4" y="6" width="332" height="44" rx="9" class="box"/><text x="14" y="32" font-size="14">Babam yıllar önce sigarayı bıraktı.</text></g><g data-b="r2" aria-label="Anahtarı komşumuza bıraktık."><rect x="4" y="58" width="332" height="44" rx="9" class="box"/><text x="14" y="84" font-size="14">Anahtarı komşumuza bıraktık.</text></g><g data-b="r3" aria-label="Kalemi masanın üstüne bıraktı."><rect x="4" y="110" width="332" height="44" rx="9" class="box"/><text x="14" y="136" font-size="14">Kalemi masanın üstüne bıraktı.</text></g><g data-b="r4" aria-label="Köyünü bırakıp şehre göç etti."><rect x="4" y="162" width="332" height="44" rx="9" class="box"/><text x="14" y="188" font-size="14">Köyünü bırakıp şehre göç etti.</text></g></svg>',
+        dogru: ['r3'],
+        hint: 'Her cümleyi kendi sözünle anlat ve numaralı anlamlardan biriyle eşleştir. Eşleşmeyen cümle cevaptır; gerçek anlamı unutma.',
+        why: 'Kalemi masaya bırakmak, onu elden bir yere koymaktır; bu gerçek anlam listede yok. Sigarayı bırakmak alışkanlığa son vermek, anahtarı bırakmak emanet etmek, köyü bırakmak da terk etmektir.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>“Kırmak” sözcüğü aşağıdakilerin hangisinde <b>“gücendirmek, üzmek”</b> anlamında kullanılmıştır?</p>',
@@ -107,6 +129,16 @@
           h: '<div class="an-trap"><b>3. Çift altı çizili söz:</b> Şık “anlam 1 · anlam 2” biçimindeyse ikisini <b>ayrı ayrı</b> denetle.</div>' },
         { s: 'Yarısı doğru olan şık, yanlış şıktır. Bunu hiç unutma.' }
       ] },
+
+    { t: 'Altı çizili söz: tuzak taraması',
+      steps: [{ s: 'Altı çizili söz sorularıyla ilgili dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [{ m: 'Şıktaki bilgi metnin başka bir cümlesinde geçiyorsa, altı çizili sözün anlamı odur.', d: false, a: 'Metinde doğru olan her bilgi, o ifadenin anlamı değildir.' }, { m: 'Şık, ifadenin yerine konunca anlam korunuyorsa güçlü bir adaydır.', d: true, a: 'Altın kural: yerine koy, yeniden oku.' }, { m: 'İki ifade birlikte sorulduğunda birinin anlamını doğrulamak yeterlidir.', d: false, a: 'Yarısı doğru olan şık yanlıştır; ikisini de denetle.' }, { m: '“Çocukların arasından çıkamadım.” sözü, eserlerinin hep çocuklara yönelik olduğunu anlatabilir.', d: true, a: 'Altı çizili söz çoğunlukla mecazlıdır.' }],
+        hint: 'Soru metnin genelini değil, yalnızca o ifadenin anlamını sorar. İfade de çoğu zaman mecazlıdır.',
+        why: 'Yerine koyma yöntemi güvenlidir. Metinden ödünç alınmış bilgi ve yarısı doğru şık ise en bilinen iki çeldiricidir.'
+      } },
 
     { t: '“Olamaz” ve “değildir” soruları',
       steps: [
@@ -158,6 +190,17 @@
         { s: 'Son olarak, deyimi metnin konusuyla değil, anlatılan durumla eşleştir. Gurbet anlatılıyor diye her zaman “burnunda tütmek” cevap olmaz.' }
       ] },
 
+    { t: 'Üzüntü bildirmeyenleri ele',
+      steps: [{ s: 'Bu deyimlerin bazıları üzüntü bildirmiyor. Onları bul ve ele.' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>Aşağıdaki deyimlerden <b>üzüntü bildirmeyenleri</b> ele.</p>',
+        ogeler: ['kendini yiyip bitirmek', 'kendini paralamak', 'içi kan ağlamak', 'parmak ısırmak', 'yüreği parçalanmak', 'dizini dövmek', 'kendini harap etmek'],
+        ele: [1, 3, 5],
+        hint: 'Ortak sözcüğe aldanma. Her deyimi bir cümlede kullanıp ne anlattığını düşün.',
+        why: 'Kendini paralamak çok çabalamak, parmak ısırmak şaşırıp hayran kalmak, dizini dövmek de pişmanlıktır. Kalan dört deyim derin bir üzüntü bildirir.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>pişmanlık</b> anlamı taşıyan bir deyim kullanılmıştır?</p>',
         c: ['Gösteriyi izleyenler, çocuğun yeteneğine parmak ısırdı.', 'Eline geçen fırsatı kaçırınca dizini dövdü.', 'Bursu kazandığını duyunca etekleri zil çaldı.', 'Yıllardır uzakta olan dedesinin köyü burnunda tütüyordu.'], a: 'B',
@@ -178,6 +221,19 @@
           h: '<div class="an-tip">İkilemeyi <b>yüklemle birlikte</b> oku: “okudu” ile “anlatıyor” aynı ikilemeye başka anlam verir.</div>' }
       ] },
 
+    { t: 'İkilemeyi anlamıyla eşleştir',
+      steps: [{ s: 'Her ikilemeyi cümledeki anlamıyla eşleştir. Önce cümleye, sonra anlamına dokun.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>Koyu ikilemeyi bu cümlede kazandığı anlamla eşleştir.</p>',
+        solBaslik: 'Cümle',
+        sagBaslik: 'Anlamı',
+        sol: ['Bizi <b>sık sık</b> arar.', 'Yol <b>aşağı yukarı</b> iki saat sürdü.', '<b>Ufak tefek</b> eşyaları topladı.', '<b>Er geç</b> gerçeği öğrenecek.', 'Kitabın <b>orasından burasından</b> okudu.'],
+        sag: ['çoğu zaman', 'yaklaşık', 'küçük, önemsiz', 'eninde sonunda', 'sıra gözetmeden'],
+        hint: 'İkilemeyi yüklemle birlikte düşün: ne kadar sürdü, ne zaman öğrenecek, nasıl okudu?',
+        why: 'Sık sık çoğu zaman, aşağı yukarı yaklaşık, ufak tefek küçük ve önemsiz, er geç eninde sonunda demektir. Orasından burasından ise sıra gözetmeden anlamı taşır.'
+      } },
+
     { t: 'Boşluk doldurma',
       steps: [
         { s: 'Son yıllarda yeni bir kalıp geldi: Metinde iki boşluk var, şıklar “sözcük, sözcük” biçiminde.' },
@@ -192,6 +248,18 @@
         { s: 'Ve en önemlisi: Bir boşluğa uyan şık, öbür boşluğu bozuyor olabilir. İki boşluğu da doğrulamadan işaretleme.',
           h: '<div class="an-trap">Yarısı doğru şık: Birinci sözcük uyar, ikincisi metnin akışını bozar. <b>İkisini de</b> denetle.</div>' }
       ] },
+
+    { t: 'İki boşluğu birlikte doldur',
+      steps: [{ s: 'İki boşluğu da doldur. Önce boşluğun arkasındaki açıklamaya, sonra bağlaca bak.' }],
+      ia: {
+        tip: 'bosluk',
+        q: '<p>Boşluklara düşüncenin akışına uygun sözcükleri yerleştir.</p>',
+        metin: 'Dedem çok [_] biridir; kimse istemeden komşularının yardımına koşar. [_] bu iyiliği yüzünden bazen kendi işlerini aksatır.',
+        secenek: ['yardımsever', 'eli açık', 'meraklı', 'Fakat', 'Çünkü', 'Örneğin'],
+        cevap: ['yardımsever', 'Fakat'],
+        hint: 'Birinci boşluğu hemen arkasındaki açıklama söyler. İkinci boşlukta iyi bir özellikten olumsuz bir sonuca geçiliyor; bu hangi bağlacı ister?',
+        why: 'Açıklama, komşularının yardımına koştuğunu söylüyor: yardımsever. “Eli açık” parayla cömertliktir, açıklamaya uymaz. İyi bir özellikten olumsuz sonuca geçiş karşıtlık ister: Fakat.'
+      } },
 
     { t: 'Anlam ilişkileri ve kapanış',
       steps: [

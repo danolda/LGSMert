@@ -42,6 +42,12 @@
           h: '<div class="an-trap">Toprak ürünleri (öşür) → <b>1 yıl şartı yok</b>, hasatta verilir.</div>' }
       ] },
 
+    { t: 'Kavramları eşleştir',
+      steps: [{ s: 'Dört temel kavramı öğrendik. Her kavramı anlamıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her kavramı <b>anlamıyla</b> eşleştir.</p>', solBaslik: 'Kavram', sagBaslik: 'Anlamı',
+        sol: ['İnfak', 'Zekât', 'Nisap', 'Öşür'], sag: ['Allah rızası için harcamak', 'Artma, arınma', 'En az zenginlik ölçüsü', 'Toprak ürününün zekâtı'],
+        hint: 'Biri hem zekâtı hem sadakayı kapsayan genel kavram, biri kelime anlamı bereket olan ibadet, biri ölçü, biri de hasatta verilen pay.',
+        why: 'İnfak Allah rızası için harcamaktır; zekât kelime olarak artma ve arınmadır. Nisap en az zenginlik ölçüsü, öşür ise hasatta verilen toprak ürünü zekâtıdır.' } },
     { t: 'Temel ihtiyaçlar ve oranlar',
       steps: [
         { s: 'Peki hangi malların zekâtı verilmez? Kişinin oturduğu ev, bindiği araba, ev eşyası, giysisi ve mesleğinde kullandığı aletler.',
@@ -53,6 +59,12 @@
         { s: 'Toprak ürünlerinde sulama önemli: yağmurla sulanıyorsa onda bir, emek ve masrafla sulanıyorsa yirmide bir.', on: '.o3,.o4' }
       ] },
 
+    { t: 'Zekâtı hesapla',
+      steps: [{ s: 'Hadi bir hesap yapalım. Ayşe Hanım’ın bankada bir yıldır duran ve nisabı aşan sekiz bin lirası var. Zekâtı kaç lira eder? Kaydırıcıyla işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p>Bir yıldır bankada duran <b>8.000 lira</b> birikimin zekâtı kaç liradır?</p>', min: 0, max: 800, adim: 50, cevap: 200, tol: 0, bas: 400, birim: ' lira',
+        etiket: [0, 200, 400, 600, 800],
+        hint: 'Parada oran kırkta birdir, yani yüzde iki buçuk. Sekiz bini kırka böl.', hintV: 'Parada oran kırkta birdir, yani yüzde iki buçuk. Sekiz bini kırka böl.',
+        why: 'Sekiz binin kırkta biri iki yüz liradır. Onda bir ya da yirmide bir oranları yalnızca toprak ürünleri içindir.', whyV: 'Sekiz binin kırkta biri iki yüz liradır. Onda bir ya da yirmide bir oranları yalnızca toprak ürünleri içindir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Ahmet Bey’in oturduğu bir evi, işine gidip geldiği bir arabası, marangoz atölyesindeki makineleri ve bankada bir yıldır duran, nisap miktarını aşan birikimi vardır.</p><p>Ahmet Bey bu mallardan hangisinin zekâtını <b>vermekle yükümlüdür</b>?</p>',
         c: ['Oturduğu evin', 'İşine gidip geldiği arabanın', 'Atölyedeki makinelerin', 'Bankadaki birikiminin'], a: 'D',
@@ -70,6 +82,15 @@
         { s: 'Kalbi İslam’a ısındırılmak istenenler ve özgürlüğüne kavuşturulacak köleler.', on: '.v4' }
       ] },
 
+    { t: 'Sekiz grupta tuzak',
+      steps: [{ s: 'Zekât verilecek gruplarla ilgili dört ifade var. Doğru mu, yanlış mı, karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Miskin, fakirden daha yoksuldur.', d: true, a: 'Fakirin biraz malı vardır, miskinin hiçbir şeyi yoktur.' },
+          { m: 'Zekâtı toplamakla görevli memura zekâttan pay verilemez.', d: false, a: 'Zekât memurları sekiz grubun içindedir.' },
+          { m: 'Memleketinden uzakta parası biten yolcuya zekât verilebilir.', d: true, a: 'Yolda kalmışlar da sekiz gruptadır.' },
+          { m: 'Zekât verilecek gruplar Bakara suresinde sayılır.', d: false, a: 'Tevbe suresi, 60. ayet.' }],
+        hint: 'Sekiz grubu hatırla ve ayetin hangi surede olduğunu düşün.',
+        why: 'Miskin fakirden yoksuldur; zekât memurları ve yolda kalmışlar da zekât alabilir. Sekiz grup Tevbe suresinin 60. ayetinde sayılır.' } },
     { t: 'Kimlere verilmez? Akraba tuzağı',
       steps: [
         { s: 'Şimdi en çok sorulan kısım. Zekât kimlere verilmez?',
@@ -112,6 +133,13 @@
         { s: 'Zekâtın zamanı ve oranı bellidir. Sadakada ise zaman ve miktar sınırı yoktur.', on: '.x4' }
       ] },
 
+    { t: 'Zekât mı, sadaka mı?',
+      steps: [{ s: 'Her özelliği zekâta mı, sadakaya mı ait, karar ver ve kutusuna yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her özelliği <b>ait olduğu kavrama</b> yerleştir.</p>', gruplar: ['Zekât', 'Sadaka'],
+        ogeler: [{ m: 'Farzdır', g: 0 }, { m: 'Gönüllülüğe dayanır', g: 1 }, { m: 'Yalnızca malla verilir', g: 0 }, { m: 'Güler yüz bile olur', g: 1 },
+          { m: 'Yılda bir, belli oranda', g: 0 }, { m: 'Zenginlik şartı yok', g: 1 }, { m: 'Nisap şartı var', g: 0 }, { m: 'Zaman ve miktar sınırı yok', g: 1 }],
+        hint: 'Kuralları belli olan, farz ibadet hangisi? Herkesin her an yapabileceği iyilik hangisi?',
+        why: 'Zekât farzdır; yalnız malla, nisabı olan zengin tarafından yılda bir ve belli oranda verilir. Sadaka gönüllüdür; manevi de olabilir, herkes her zaman verebilir.' } },
     { t: 'Yardımlaşmanın adabı',
       steps: [
         { s: 'Yardım ederken nasıl davrandığımız da çok önemli. Kur’an bunu açıkça söyler.',
@@ -140,6 +168,13 @@
         { s: 'Uyarılara kulak asmayan Medyen halkı korkunç bir sarsıntıyla helak oldu. Ders açık: dürüstlük ve kul hakkı.' }
       ] },
 
+    { t: 'Kimden söz ediliyor?',
+      steps: [{ s: 'Bu bilgilerden bazıları Hazreti Şuayb’a değil, başka bir peygambere ait. Onları bul ve ele.' }],
+      ia: { tip: 'eleme', q: '<p>Hz. Şuayb ile <b>ilgili olmayanları</b> ele.</p>',
+        ogeler: ['Medyen ve Eyke halkına gönderildi', 'Tûr’da Allah ile konuştu', '“Peygamberlerin hatibi” denir', 'Bebekken Nil’e bırakıldı', 'Hz. Musa’nın kayınpederidir', 'Ölçü ve tartıda hileye karşı çıktı', 'Ona Tevrat indirildi'],
+        ele: [1, 3, 6],
+        hint: 'Hazreti Musa da Medyen’e gitmişti; bu yüzden iki peygamberin bilgileri karışabiliyor. Nil, Tûr ve Tevrat kimin hikâyesindeydi?',
+        why: 'Hazreti Şuayb Medyen ve Eyke halkına gönderildi, peygamberlerin hatibidir, Hazreti Musa’nın kayınpederidir ve ölçüde hileye karşı çıktı. Nil, Tûr ve Tevrat Hazreti Musa’ya aittir.' } },
     { t: 'Bir sure tanıyorum: Maûn',
       base: '<table class="an-tbl"><tr><th>Ayetler (anlamı)</th><th>Kınanan davranış</th></tr>' +
         '<tr class="rv m1"><td>1–3: Dini yalanlayan, yetimi itip kakar, yoksulu doyurmaya teşvik etmez.</td><td>merhametsizlik, yetim hakkı</td></tr>' +
@@ -152,6 +187,13 @@
         { s: 'Son ayet ise ufacık bir yardımı bile esirgeyenleri kınar. Sure bize merhameti, samimiyeti ve paylaşmayı öğütler.', on: '.m3' }
       ] },
 
+    { t: 'Maûn suresinin kimliği',
+      steps: [{ s: 'Maûn suresinin kimlik kartını tamamla.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Maûn, Kur’an’ın [_]. suresidir.<br>[_] döneminde indi ve [_] ayettir.<br>Maûn: yardım ve ödünç verilen küçük [_].',
+        secenek: ['107', '105', 'Mekke', 'Medine', 'yedi', 'beş', 'ev eşyası', 'tarla'], cevap: ['107', 'Mekke', 'yedi', 'ev eşyası'],
+        hint: 'Kısa surelerin çoğu Mekke’de indi. Son ayet ufacık bir yardımı bile esirgeyenleri kınar.',
+        why: 'Maûn Kur’an’ın 107. suresidir; Mekke’de indi ve yedi ayettir. Adı, ödünç verilen küçük ev eşyası ve yardım anlamına gelir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Maûn suresinde aşağıdaki davranışlardan hangisi <b>kınanmamıştır</b>?</p>',
         c: ['Yetimi itip kakmak', 'Yoksulu doyurmaya teşvik etmemek', 'İbadetlerde gösteriş yapmak', 'Ticarette ölçü ve tartıda hile yapmak'], a: 'D',

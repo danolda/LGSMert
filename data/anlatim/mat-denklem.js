@@ -34,6 +34,10 @@
           h: '<div class="an-trap">Paydası olmayan terimi de çarp! −{{x + 2|4}} · 12 = <span class="an-ok-t">−3x − 6</span> &nbsp; <span class="an-bad-t">−3x + 6</span></div>' }
       ] },
 
+    { t: 'Boşluk doldur: kesirli denklem',
+      steps: [{ s: 'Paydalardan kurtul, parantezi dikkatle aç ve denklemi çöz. Boşluklara doğru kartları yerleştir.' }],
+      ia: { tip: 'bosluk', q: '<p>{{x|2}} − {{x − 1|3}} = 2 denklemini çöz.</p>', metin: 'Her terimi 6 ile çarp: [_]x − [_](x − 1) = 12<br>x = [_]', secenek: ['3', '2', '10', '6', '14', '4'], cevap: ['3', '2', '10'], hint: 'Paydaların EKOK’u 6. Her terimi, sağdaki 2’yi de, 6 ile çarp. Eksi, parantezin içindeki iki terime de dağılır.', hintV: 'Paydaların ekoku 6. Her terimi, sağdaki 2’yi de, 6 ile çarp. Eksi, parantezin içindeki iki terime de dağılır.', why: '3x − 2(x − 1) = 12 → 3x − 2x + 2 = 12 → x = 10. Kontrol: 5 − 3 = 2. Eksiyi yalnız x’e dağıtıp −2 yazarsan 14 bulursun; tuzak bu.', whyV: 'Üç iks eksi iki çarpı iks eksi bir, on iki eder. Parantez açılınca üç iks eksi iki iks artı iki, on iki; yani iks eşittir on. Kontrol: beş eksi üç, iki. Eksiyi yalnız ikse dağıtırsan on dört bulursun; tuzak bu.' } },
+
     { t: 'Problemi denkleme çevirmek',
       base: '<table class="an-tbl"><tr><th>Sözel</th><th>Cebirsel</th></tr>' +
         '<tr><td>bir sayının 3 katının 5 fazlası</td><td>3x + 5</td></tr>' +
@@ -46,6 +50,10 @@
         { s: 'Bir bilinmeyeni x seç. Diğer bütün büyüklükleri x cinsinden yaz. Sonra metnin söylediği eşitliği kur.', v: 'Bir bilinmeyeni iks seç. Diğer bütün büyüklükleri iks cinsinden yaz. Sonra metnin söylediği eşitliği kur.' },
         { s: 'Yaş sorularında herkesin yaşı aynı miktarda artar. İndirimde de yüzde 20 indirim, fiyatın 0,8 katı demek.', v: 'Yaş sorularında herkesin yaşı aynı miktarda artar. İndirimde de, yüzde yirmi indirim, fiyatın sıfır virgül sekiz katı demek.' }
       ] },
+
+    { t: 'Eşleştir: problemden ifadeye',
+      steps: [{ s: 'Fiyat ya da yaş x olsun. Her durumu x cinsinden ifadesiyle eşleştir.', v: 'Fiyat ya da yaş iks olsun. Her durumu iks cinsinden ifadesiyle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Fiyat ya da yaş <b>x</b> olsun. Her durumu ifadesiyle eşleştir.</p>', solBaslik: 'Durum', sagBaslik: 'İfade', sol: ['%20 indirimli fiyat', '%25 zamlı fiyat', '5 yıl önceki yaş', 'yarısının 3 fazlası', 'önce %20, sonra %10 indirim'], sag: ['0,8x', '1,25x', 'x − 5', '{{x|2}} + 3', '0,72x'], hint: '%20 indirimde fiyatın %80’i kalır. Art arda iki indirimde indirimler toplanmaz, katsayılar çarpılır.', hintV: 'Yüzde yirmi indirimde fiyatın yüzde sekseni kalır. Art arda iki indirimde indirimler toplanmaz, katsayılar çarpılır.', why: '%20 indirim 0,8x, %25 zam 1,25x. Art arda indirimde 0,8 · 0,9 = 0,72: toplam indirim %30 değil, %28. 5 yıl önce herkes 5 yaş küçüktür.', whyV: 'Yüzde yirmi indirim, sıfır virgül sekiz iks; yüzde yirmi beş zam, bir virgül yirmi beş iks. Art arda indirimde sıfır virgül sekiz çarpı sıfır virgül dokuz, sıfır virgül yetmiş iki eder: toplam indirim yüzde otuz değil, yüzde yirmi sekiz. Beş yıl önce de herkes beş yaş küçüktür.' } },
 
     { t: 'Çözümlü örnek: kiraz ve çilek',
       steps: [
@@ -77,6 +85,10 @@
         { s: 'E ile F hiçbir bölgede değil, eksenlerin üzerinde. x ekseni üzerindeki noktanın y’si 0’dır.', v: 'E ile F hiçbir bölgede değil, eksenlerin üzerinde. İks ekseni üzerindeki noktanın y’si sıfırdır.', on: '.r4' }
       ] },
 
+    { t: 'Dokun: doğru nokta',
+      steps: [{ s: 'Sıralı ikilide önce x, sonra y okunur. Eksi işaretlerine de dikkat ederek doğru noktayı bul.', v: 'Sıralı ikilide önce iks, sonra ye okunur. Eksi işaretlerine de dikkat ederek doğru noktayı bul.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>(−3, 2)</b> noktasına dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 220" role="img" aria-label="Koordinat düzleminde A, B, C, D, E noktaları"><path class="ln" d="M20 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M50 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M80 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M110 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M140 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M170 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M200 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M230 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M260 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M290 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M320 16 V204" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 20 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 50 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 80 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 110 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 140 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 170 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M14 200 H326" style="stroke-width:.6;opacity:.5"/><path class="ln" d="M10 110 H330 M170 212 V6" style="stroke-width:1.6"/><text x="326" y="104" font-size="14" text-anchor="end" class="mut">x</text><text x="176" y="18" font-size="14" class="mut">y</text><text x="50" y="125" font-size="12" text-anchor="middle" class="mut">-4</text><text x="110" y="125" font-size="12" text-anchor="middle" class="mut">-2</text><text x="230" y="125" font-size="12" text-anchor="middle" class="mut">2</text><text x="290" y="125" font-size="12" text-anchor="middle" class="mut">4</text><text x="165" y="174" font-size="12" text-anchor="end" class="mut">-2</text><text x="165" y="54" font-size="12" text-anchor="end" class="mut">2</text><text x="158" y="125" font-size="12" class="mut">0</text><g data-b="a" aria-label="A noktası"><circle cx="230" cy="200" r="16" class="box"/><text x="230" y="205" text-anchor="middle" font-size="15" font-weight="700">A</text></g><g data-b="b" aria-label="B noktası"><circle cx="80" cy="50" r="16" class="box"/><text x="80" y="55" text-anchor="middle" font-size="15" font-weight="700">B</text></g><g data-b="c" aria-label="C noktası"><circle cx="260" cy="50" r="16" class="box"/><text x="260" y="55" text-anchor="middle" font-size="15" font-weight="700">C</text></g><g data-b="d" aria-label="D noktası"><circle cx="110" cy="20" r="16" class="box"/><text x="110" y="25" text-anchor="middle" font-size="15" font-weight="700">D</text></g><g data-b="e" aria-label="E noktası"><circle cx="80" cy="170" r="16" class="box"/><text x="80" y="175" text-anchor="middle" font-size="15" font-weight="700">E</text></g></svg>', dogru: ['b'], hint: 'Önce x: başlangıç noktasından 3 birim sola git. Sonra y: 2 birim yukarı çık.', hintV: 'Önce iks: başlangıç noktasından 3 birim sola git. Sonra ye: 2 birim yukarı çık.', why: '(−3, 2): 3 birim sola, 2 birim yukarı, yani II. bölgedeki B. A(2, −3)’te sayıların yeri değişmiş, D(−2, 3) de öyle; C(3, 2)’de eksi unutulmuş.', whyV: 'Eksi üç, iki noktası için 3 birim sola, 2 birim yukarı gideriz: ikinci bölgedeki B noktası. A ile D’de sayıların yeri değişmiş; C’de ise eksi unutulmuş.' } },
+
     { t: 'Eksenlere uzaklık',
       steps: [
         { s: 'B(−4, 1) noktası x eksenine kaç birim uzak? Burada çok dikkat et: x eksenine uzaklık y’ye bakılarak bulunur. 1 birim.', v: 'B noktası, eksi dört virgül bir. İks eksenine kaç birim uzak? Burada çok dikkat et: iks eksenine uzaklık, y’ye bakılarak bulunur. Bir birim.',
@@ -85,6 +97,14 @@
         { s: 'K(2m − 6, m + 1) x ekseni üzerindeyse y’si 0: m + 1 = 0, m = −1, K(−8, 0).', v: 'K noktası, iki m eksi altı virgül m artı bir, iks ekseni üzerindeyse y’si sıfır: m artı bir sıfır, m eksi bir. K noktası eksi sekiz virgül sıfır.',
           h: '<div class="an-tip">Sağa-sola kaydırma yalnız x’i, yukarı-aşağı kaydırma yalnız y’yi değiştirir.</div>' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Eksenlere uzaklık ve bölgeler en çok karıştırılan konulardır. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'A(−4, 3) noktasının x eksenine uzaklığı 4 birimdir.', d: false, a: 'x eksenine uzaklık y’ye bakılarak bulunur: 3 birim.' },
+            { m: '(0, −5) noktası y ekseni üzerindedir.', d: true, a: 'x’i 0 olan her nokta y ekseni üzerindedir.' },
+            { m: '(2, −1) noktası IV. bölgededir.', d: true, a: 'x artı, y eksi: IV. bölge.' },
+            { m: '(−2, 5) ile (−2, −1) noktaları arası 4 birimdir.', d: false, a: 'Aynı dikey doğru üzerinde: 5 − (−1) = 6 birim.' }], hint: 'x eksenine uzaklık için y’ye, y eksenine uzaklık için x’e bak. Aynı x’e sahip noktalar dikey bir doğru üzerindedir.', hintV: 'İks eksenine uzaklık için yeye, ye eksenine uzaklık için ikse bak. Aynı ikse sahip noktalar dikey bir doğru üzerindedir.', why: 'Bir noktanın x eksenine uzaklığı y’nin, y eksenine uzaklığı x’in mutlak değeridir. Eksi ile artı arasındaki fark bulunurken eksi çıkarılır: 5 − (−1) = 6.', whyV: 'Bir noktanın iks eksenine uzaklığı yenin, ye eksenine uzaklığı iksin mutlak değeridir. Eksiyle artı arasındaki farkta eksi çıkarılır: beş eksi eksi bir, altı eder.' } },
 
     { t: 'Doğrusal ilişki',
       base: '<table class="an-tbl" style="text-align:center"><tr><th>x (km)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>' +
@@ -141,6 +161,10 @@
           h: '<div class="an-trap"><span class="an-bad-t">7,5 saat</span> → 5 + 7,5 = <span class="an-ok-t">12,5 saat</span></div>' }
       ] },
 
+    { t: 'Kaydır: depo ne zaman biter?',
+      steps: [{ s: 'Benzer bir depo sorusu. İki noktadan saatlik değişimi bul, başlangıcı hesapla ve bitiş anını göster.' }],
+      ia: { tip: 'kaydir', q: '<p>Sabit hızla boşalan bir depoda 1. saatte 450 L, 4. saatte 270 L su var. Depo başladıktan kaç saat sonra tamamen boşalır?</p>', min: 0, max: 12, adim: 0.5, cevap: 8.5, birim: 'saat', etiket: [0, 2, 4, 6, 8, 10, 12], hint: '3 saatte kaç litre azalmış? Saatlik azalmayı bul, sonra başlangıçtaki suyu hesapla.', why: '3 saatte 180 L azalmış: saatte 60 L. Başta 450 + 60 = 510 L. 510 ÷ 60 = 8,5 saat. 270 ÷ 60 = 4,5 cevabı, 4. saatten sonra geçen süredir.', whyV: '3 saatte 180 litre azalmış, yani saatte 60 litre. Başta 450 artı 60, 510 litre vardı. 510 bölü 60, sekiz buçuk saat. Dört buçuk saat ise 4. saatten sonra geçen süredir.' } },
+
     { t: 'Eğim',
       steps: [
         { s: 'Eğim, bir doğrunun ne kadar dik olduğunun ölçüsü. Dikey değişimi yatay değişime böleriz.',
@@ -151,6 +175,18 @@
           h: '<div class="an-grid"><div><b>↗ +</b>yükselen</div><div><b>↘ −</b>alçalan</div><div><b>→ 0</b>yatay</div></div>' },
         { s: 'Eğimleri eşit doğrular paraleldir. Sayısal büyüklük arttıkça doğru dikleşir: −4, −1’den daha diktir.', v: 'Eğimleri eşit doğrular paraleldir. Sayısal büyüklük arttıkça doğru dikleşir: eksi dört, eksi birden daha diktir.' }
       ] },
+
+    { t: 'Grupla: eğimin işareti',
+      steps: [{ s: 'Her doğrunun eğimini düşün: artı mı, eksi mi, sıfır mı, yoksa tanımsız mı? Gerekirse önce y’yi yalnız bırak.', v: 'Her doğrunun eğimini düşün: artı mı, eksi mi, sıfır mı, yoksa tanımsız mı? Gerekirse önce yeyi yalnız bırak.' }],
+      ia: { tip: 'grup', q: '<p>Her doğruyu eğimine göre yerleştir.</p>', gruplar: ['Pozitif', 'Negatif', 'Sıfır', 'Tanımsız'], ogeler: [
+            { m: 'y = 3x − 1', g: 0 },
+            { m: 'x − y = 3', g: 0 },
+            { m: 'y = −{{1|2}}x + 4', g: 1 },
+            { m: '2x + y = 6', g: 1 },
+            { m: 'y = −2', g: 2 },
+            { m: 'y − 4 = 0', g: 2 },
+            { m: 'x = 5', g: 3 },
+            { m: 'x + 1 = 0', g: 3 }], hint: 'y’yi yalnız bırak: x’in katsayısı eğimdir. Yalnız y = sayı ise yatay, yalnız x = sayı ise dikey doğrudur.', hintV: 'Yeyi yalnız bırak: iksin katsayısı eğimdir. Yalnız ye eşittir sayı ise yatay, yalnız iks eşittir sayı ise dikey doğrudur.', why: 'x − y = 3 → y = x − 3, eğim 1. 2x + y = 6 → y = −2x + 6, eğim −2. y = sayı yatay doğrudur, eğimi 0; x = sayı dikey doğrudur, eğimi tanımsız. x + 1 = 0 da x = −1 demektir.', whyV: 'İks eksi ye eşittir üç ise ye, iks eksi üç olur: eğim bir. İki iks artı ye eşittir altı ise ye, eksi iki iks artı altı: eğim eksi iki. Ye eşittir sayı yatay doğrudur, eğimi sıfır; iks eşittir sayı dikey doğrudur, eğimi tanımsız. İks artı bir eşittir sıfır da iks eşittir eksi bir demektir.' } },
 
     { t: 'Günlük hayatta eğim: rampa',
       base: '<svg class="an-svg" viewBox="0 0 330 150" role="img" aria-label="Rampa: dikey 5k, yatay 12k, eğik uzunluk 13k"><path class="boxa" d="M30 120 H300 V8 Z" style="stroke-width:2"/><path class="st dr e1" d="M300 120 V8" style="stroke-width:4"/><path class="st2 dr e2" d="M30 120 H300" style="stroke-width:4"/><path class="ln" d="M288 120 V108 H300" style="stroke-width:1.5"/><text x="292" y="72" font-size="14" text-anchor="end" font-weight="700" class="acc rv e1">dikey</text><text x="292" y="90" font-size="13" text-anchor="end" class="acc rv e1">5k</text><text x="165" y="140" font-size="14" text-anchor="middle" font-weight="700" class="rv e2" style="fill:var(--noteline)">yatay 12k</text><text x="150" y="52" font-size="14" text-anchor="middle" font-weight="700" class="rv e3" transform="rotate(-22.5 150 52)">eğik uzunluk 13k</text></svg>',

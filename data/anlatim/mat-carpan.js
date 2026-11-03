@@ -46,6 +46,10 @@
           h: '<div class="an-tip">Çarpan sayısı <b>tek</b> ⇔ sayı <b>tam kare</b> (1, 4, 9, 16, 25, 36, …)</div>' }
       ] },
 
+    { t: 'Dokun: çarpan sayısı tek olanlar',
+      steps: [{ s: 'Çarpanları çift çift yazdığını düşün. Çarpan sayısı tek olan sayıları bul ve hepsine dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Pozitif çarpan sayısı <b>tek</b> olan sayıların hepsine dokun, sonra Kontrol et’e bas.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 102" role="img" aria-label="12, 16, 18, 25, 32, 49, 50 ve 100 sayıları"><g data-b="a" aria-label="12"><rect x="8" y="6" width="75" height="40" rx="9" class="box"/><text x="46" y="32" text-anchor="middle" font-size="17">12</text></g><g data-b="b" aria-label="16"><rect x="91" y="6" width="75" height="40" rx="9" class="box"/><text x="128" y="32" text-anchor="middle" font-size="17">16</text></g><g data-b="c" aria-label="18"><rect x="174" y="6" width="75" height="40" rx="9" class="box"/><text x="212" y="32" text-anchor="middle" font-size="17">18</text></g><g data-b="d" aria-label="25"><rect x="257" y="6" width="75" height="40" rx="9" class="box"/><text x="294" y="32" text-anchor="middle" font-size="17">25</text></g><g data-b="e" aria-label="32"><rect x="8" y="54" width="75" height="40" rx="9" class="box"/><text x="46" y="80" text-anchor="middle" font-size="17">32</text></g><g data-b="f" aria-label="49"><rect x="91" y="54" width="75" height="40" rx="9" class="box"/><text x="128" y="80" text-anchor="middle" font-size="17">49</text></g><g data-b="g" aria-label="50"><rect x="174" y="54" width="75" height="40" rx="9" class="box"/><text x="212" y="80" text-anchor="middle" font-size="17">50</text></g><g data-b="h" aria-label="100"><rect x="257" y="54" width="75" height="40" rx="9" class="box"/><text x="294" y="80" text-anchor="middle" font-size="17">100</text></g></svg>', dogru: ['b', 'd', 'f', 'h'], hint: 'Çarpanları çift çift yaz. Bir çiftin iki sayısı aynı çıkıyorsa, yani sayı tam kareyse, o sayı eşsiz kalır.', why: '16, 25, 49 ve 100 tam kare: 4 · 4, 5 · 5, 7 · 7, 10 · 10. Ortadaki çarpan eşsiz kalır, çarpan sayısı tek olur. 32 ile 50 tam kare değil, ikisinin de 6 çarpanı var.', whyV: '16, 25, 49 ve 100 tam karedir: 4 çarpı 4, 5 çarpı 5, 7 çarpı 7, 10 çarpı 10. Ortadaki çarpan eşsiz kalır, bu yüzden çarpan sayısı tek olur. 32 ile 50 tam kare değil; ikisinin de 6 çarpanı var.' } },
+
     { t: 'Asal sayılar',
       steps: [
         { s: 'Asal sayı, 1’den büyük olup yalnızca 1’e ve kendisine bölünen sayıdır. Yani tam iki çarpanı vardır.', v: 'Asal sayı, birden büyük olup yalnızca bire ve kendisine bölünen sayıdır. Yani tam iki çarpanı vardır.',
@@ -105,6 +109,10 @@
           h: '<div class="an-trap">72 = 2<sup>3</sup> · 3<sup>2</sup> → asal çarpanları <b>2 ve 3</b> (2 tane), çarpan sayısı 4 · 3 = <b>12</b></div>' }
       ] },
 
+    { t: 'Boşluk doldur: 72’nin çarpanları',
+      steps: [{ s: 'Şimdi sıra sende. Önce 72’yi asal çarpanlarına ayır, sonra çarpan sayısını hesapla. Bir boşluğa, sonra doğru karta dokun.' }],
+      ia: { tip: 'bosluk', q: '<p>72’yi asal çarpanlarına ayır ve pozitif çarpan sayısını bul.</p>', metin: '72 = 2[^_] · 3[^_]<br>Pozitif çarpan sayısı = [_]', secenek: ['3', '2', '4', '12', '6', '5'], cevap: ['3', '2', '12'], hint: '72’yi önce 2’ye, bitince 3’e böl. Çarpan sayısı için her üsse 1 ekle ve sonuçları çarp.', why: '72 = 2<sup>3</sup> · 3<sup>2</sup>. Çarpan sayısı (3 + 1) · (2 + 1) = 12. Üsleri doğrudan çarpıp 6 demek ya da yalnız 2 asal çarpanı saymak tuzak.', whyV: '72, 2 küp çarpı 3 kare. Çarpan sayısı, 3 artı 1 ile 2 artı 1’in çarpımı: 12. Üsleri doğrudan çarpıp 6 demek ya da yalnızca 2 asal çarpanı saymak tuzaktır.' } },
+
     { t: 'EBOB: en büyük ortak bölen',
       base: '<svg class="an-svg" viewBox="0 0 330 200" role="img" aria-label="24 ve 36 sayılarının asal çarpanlarının Venn şeması">' +
         '<circle cx="128" cy="92" r="72" class="st"/><circle cx="202" cy="92" r="72" class="st2"/>' +
@@ -140,6 +148,10 @@
           h: '<div class="an-rule"><b>EKOK</b>: bütün asal çarpanların <b>en büyük</b> üslüleri<br><small>24 = 2<sup>3</sup> · 3, 36 = 2<sup>2</sup> · 3<sup>2</sup> → EKOK = 2<sup>3</sup> · 3<sup>2</sup> = 72</small></div>' }
       ] },
 
+    { t: 'Eşleştir: EBOB ve EKOK',
+      steps: [{ s: 'Her ifadeyi değeriyle eşleştir. EBOB sayılardan büyük olamaz, EKOK da küçük olamaz; bunu bir kontrol gibi kullan.' }],
+      ia: { tip: 'eslestir', q: '<p>Her ifadeyi değeriyle eşleştir.</p>', solBaslik: 'İfade', sagBaslik: 'Değer', sol: ['EBOB(12, 18)', 'EKOK(12, 18)', 'EBOB(8, 15)', 'EKOK(8, 15)', 'EKOK(9, 27)'], sag: ['6', '36', '1', '120', '27'], hint: 'Sayıları asal çarpanlarına ayır. EBOB’da ortak asalların küçük üslüsü, EKOK’ta bütün asalların büyük üslüsü alınır.', why: '12 = 2<sup>2</sup> · 3, 18 = 2 · 3<sup>2</sup>: EBOB 6, EKOK 36. 8 ile 15’in ortak asalı yok: EBOB 1, EKOK 8 · 15 = 120. 27, 9’un katı olduğu için EKOK 27.', whyV: '12, 2 kare çarpı 3; 18, 2 çarpı 3 kare. ebob 6, ekok 36. 8 ile 15’in ortak asalı yok: ebob 1, ekok 8 çarpı 15, yani 120. 27, 9’un katı olduğu için ekok 27’dir.' } },
+
     { t: 'EBOB ve EKOK’un özellikleri',
       steps: [
         { s: 'Önce bir mantık kontrolü: EBOB sayıların küçüğünü geçemez, EKOK da büyüğünden küçük olamaz.', v: 'Önce bir mantık kontrolü: ebob, sayıların küçüğünü geçemez. Ekok da, büyüğünden küçük olamaz.' },
@@ -149,6 +161,14 @@
         { s: 'Ama bu eşitlik yalnızca iki sayı içindir. Üç sayıda genelde tutmaz.', v: 'Ama bu eşitlik yalnızca iki sayı içindir. Üç sayıda genelde tutmaz.' },
         { s: 'Bir de: EBOB her zaman EKOK’u böler. 72 bölü 12, tam 6.', v: 'Bir de şunu bil: ebob her zaman ekoku böler. Yetmiş iki bölü on iki, tam altı.' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Bu özellikleri LGS hep çeldirici yapar. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'EBOB(a, b) = 6 ve EKOK(a, b) = 72 ise a · b = 432’dir.', d: true, a: 'İki sayıda a · b = EBOB · EKOK = 6 · 72 = 432.' },
+            { m: 'İki sayının EBOB’u, küçük sayıdan büyük olabilir.', d: false, a: 'EBOB iki sayıyı da böler; küçük sayıyı geçemez.' },
+            { m: '4 · 6 · 8 = EBOB(4, 6, 8) · EKOK(4, 6, 8)', d: false, a: 'EBOB 2, EKOK 24: çarpım 48, oysa 4 · 6 · 8 = 192. Kural yalnız iki sayı için.' },
+            { m: 'EKOK(a, b), EBOB(a, b)’ye her zaman tam bölünür.', d: true, a: 'EBOB iki sayıyı da böler, onların ortak katını da böler.' }], hint: 'Çarpım kuralı kaç sayı için geçerliydi? EBOB’un sayıları bölmesi gerektiğini de hatırla.', why: '“Çarpım = EBOB · EKOK” yalnız iki sayıda tutar. EBOB küçük sayıyı geçemez, EKOK büyük sayıdan küçük olamaz ve EBOB, EKOK’u her zaman böler.', whyV: 'Sayıların çarpımının ebob çarpı ekoka eşit olması yalnız iki sayıda tutar. ebob küçük sayıyı geçemez, ekok büyük sayıdan küçük olamaz ve ebob, ekoku her zaman böler.' } },
 
     { t: 'Aralarında asal sayılar',
       base: '<table class="an-tbl"><tr><th>Sayılar</th><th>Ortak asal</th><th>Sonuç</th></tr>' +
@@ -163,6 +183,10 @@
           h: '<div class="an-tip">Aralarında asal iki sayının EBOB’u 1, EKOK’u çarpımlarıdır: EKOK(8, 15) = 120. Kesir {{8|15}} de sadeleşmez.</div>' }
       ] },
 
+    { t: 'Ele: aralarında asal olmayanlar',
+      steps: [{ s: 'Aralarında asal olmayan çiftleri bul ve üstlerini çiz. Sayıların kendisinin asal olup olmadığına aldanma.' }],
+      ia: { tip: 'eleme', q: '<p>Aralarında asal <b>olmayan</b> çiftleri ele.</p>', ogeler: ['8 ve 15', '14 ve 21', '25 ve 36', '27 ve 28', '33 ve 55', '12 ve 35', '1 ve 50', '18 ve 45'], ele: [1, 4, 7], hint: 'Her çiftte 1’den başka ortak bölen ara: 3’e, 7’ye, 11’e bölünebiliyorlar mı?', hintV: 'Her çiftte 1’den başka ortak bölen ara: üçe, yediye, on bire bölünebiliyorlar mı?', why: '14 ile 21’in ortak böleni 7, 33 ile 55’in 11, 18 ile 45’in 9. Kalanlarda ortak asal yok: 8 ile 15 asal değil ama aralarında asal; ardışık 27 ile 28 de, 1 ile 50 de öyle.' } },
+
     { t: 'EBOB mu, EKOK mu?',
       base: '<table class="an-tbl"><tr><th>Sorudaki durum</th><th>Kullan</th></tr>' +
         '<tr class="rv m1"><td>Eşit parçalara ayır, en büyük parça, en az paket, artmadan paylaştır</td><td><b>EBOB</b></td></tr>' +
@@ -176,6 +200,18 @@
         { s: 'Ve en önemlisi: “en az” kelimesine aldanma! “En az kaç paket” aslında EBOB sorusudur.', v: 'Ve en önemlisi: en az kelimesine aldanma! En az kaç paket sorusu, aslında ebob sorusudur.',
           h: '<div class="an-trap">Kelimeye değil, durumun yapısına bak. Sonunda da istenen şeyi kontrol et: parça sayısı mı, parça uzunluğu mu?</div>' }
       ] },
+
+    { t: 'Grupla: EBOB mu, EKOK mu?',
+      steps: [{ s: 'Her problemi oku ve hangi yöntemle çözüleceğine karar ver. Kelimelere değil, durumun kendisine bak.' }],
+      ia: { tip: 'grup', q: '<p>Her problemi çözüm yöntemine göre yerleştir.</p>', gruplar: ['EBOB', 'EKOK'], ogeler: [
+            { m: 'Çıtaları eşit, en uzun parçalara kes', g: 0 },
+            { m: 'İki zil ilk kez ne zaman birlikte çalar?', g: 1 },
+            { m: 'Tarlanın çevresine eşit aralıkla en az ağaç', g: 0 },
+            { m: 'Eşit kütleli iki torba, en az kütle', g: 1 },
+            { m: 'Kumaşı en büyük eş karelere böl', g: 0 },
+            { m: 'Fayanslarla en küçük kare zemin', g: 1 },
+            { m: '48 kalem, 60 silgi: en az kaç eş paket?', g: 0 },
+            { m: 'İki otobüs yeniden ne zaman birlikte kalkar?', g: 1 }], hint: 'Büyük bir şey eşit parçalara bölünüyorsa EBOB, küçük şeyler birikip bir yerde buluşuyorsa EKOK. “En az” sözü tek başına karar verdirmez.', why: 'Kesmek, bölmek, paketlemek EBOB’dur: “en az ağaç, en az paket” aslında parçaları en büyük yapmaktır. Zil, otobüs, torba ve fayansla kare kurmakta ise katlar buluşur: EKOK.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Mavi boncukların her biri 12 g, kırmızı boncukların her biri 18 g’dır. Bir torbaya yalnız mavi, diğerine yalnız kırmızı boncuk konarak iki torbanın kütlesi <b>eşit</b> yapılacaktır. Bir torbadaki boncukların kütlesi <b>en az</b> kaç gram olur?</p>',
@@ -206,6 +242,10 @@
         { s: 'Tuzak burada: 96’yı cevap yazmak. 96, n değil n + 1’dir.', v: 'Tuzak burada: doksan altıyı cevap yazmak. Doksan altı, n değil, n artı bir.',
           h: '<div class="an-trap"><span class="an-bad-t">96</span> → bu n + 1. Cevap <span class="an-ok-t">95</span></div>' }
       ] },
+
+    { t: 'Sayı doğrusunda bul: kalan bir eksik',
+      steps: [{ s: 'Aynı fikirle yeni bir soru. Cevabı kaydırıcıyla bul, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'kaydir', q: '<p>Bir sepetteki yumurtalar 4’er sayılınca 3, 6’şar sayılınca 5 artıyor. Yumurta sayısı 50’den az ise <b>en fazla</b> kaçtır?</p>', min: 0, max: 50, adim: 1, cevap: 47, etiket: [0, 10, 20, 30, 40, 50], hint: '3, 4’ten bir eksik; 5 de 6’dan. Bir yumurta daha olsaydı ne olurdu?', why: 'n + 1 hem 4’ün hem 6’nın katı: EKOK 12, katları 12, 24, 36, 48. 50’den küçük en büyük n = 48 − 1 = 47. 48, n değil n + 1’dir.', whyV: 'n artı 1, hem 4’ün hem 6’nın katı. ekok 12; katları 12, 24, 36, 48. 50’den küçük en büyük n, 48 eksi 1, yani 47. 48 ise n değil, n artı 1’dir.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Alanları 48 cm² ve 72 cm² olan iki dikdörtgen, birer kenarları <b>ortak</b> olacak biçimde yan yana konuyor. Kenar uzunlukları santimetre cinsinden doğal sayıdır. Ortak kenar <b>en fazla</b> kaç cm olabilir?</p>',

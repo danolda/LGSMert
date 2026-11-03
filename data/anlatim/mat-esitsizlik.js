@@ -37,6 +37,10 @@
         { s: 'Eşitsizlik iki yönden de okunur: 7 > x ile x < 7 aynı şey. Sivri uç hep küçük tarafı gösterir.', v: 'Eşitsizlik iki yönden de okunur: yedi iksten büyük ile iks yediden küçük, aynı şey. Sivri uç hep küçük tarafı gösterir.' }
       ] },
 
+    { t: 'Eşleştir: cümleden sembole',
+      steps: [{ s: 'Günlük dildeki her ifadeyi doğru eşitsizlikle eşleştir. Sınırın dâhil olup olmadığına dikkat et.' }],
+      ia: { tip: 'eslestir', q: '<p>Her ifadeyi eşitsizliğiyle eşleştir.</p>', solBaslik: 'Söyleniş', sagBaslik: 'Eşitsizlik', sol: ['en az 18 yaş', '15 kg’ı geçmemeli', '90’dan fazla puan', 'en az 2, en çok 5 kişi', '3 TL’den az'], sag: ['x ≥ 18', 'x ≤ 15', 'x > 90', '2 ≤ x ≤ 5', 'x < 3'], hint: '“En az” ve “en çok”, “geçmemeli” sınırı kapsar. “Fazla” ve “az” kapsamaz.', why: 'En az 18: 18 de olur, x ≥ 18. 15’i geçmemeli: 15 olabilir, x ≤ 15. 90’dan fazla ve 3’ten az ise sınırı kapsamaz: x > 90, x < 3.', whyV: 'En az 18 dendiğinde 18 de olur: iks büyük ya da eşittir 18. 15’i geçmemeli dendiğinde 15 olabilir: iks küçük ya da eşittir 15. 90’dan fazla ve 3’ten az ise sınırı kapsamaz.' } },
+
     { t: 'Günlük hayattan matematik cümlesine',
       steps: [
         { s: 'Şu levhalara bakalım. Kuralı, kurala uyan kişi ya da araç için yazıyoruz.',
@@ -45,6 +49,14 @@
         { s: 'Cümle kurarken: bilinmeyeni seç, anahtar kelimeyi sembole çevir, iki tarafı yaz, gizli koşulları ekle.',
           h: '<div class="an-rule"><b>1.</b> bilinmeyeni seç · <b>2.</b> kelime → sembol · <b>3.</b> iki tarafı yaz · <b>4.</b> gizli koşullar (pozitif, doğal sayı)</div>' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Levhaları ve kuralları matematik cümlesine çevirirken yapılan hatalara bak. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her çeviri için karar ver.</p>', ifadeler: [
+            { m: '“Azami hız 50 km/sa” levhasına uyan sürücü için: v ≤ 50', d: true, a: 'Sınır dâhil: 50 ile giden kurala uyar.' },
+            { m: '“13 yaşından küçükler giremez” → girebilenler: y > 13', d: false, a: '13 yaşındaki girebilir: y ≥ 13.' },
+            { m: '“Tanesi 4 TL, harcama 30 TL’yi geçmesin” → 4n < 30', d: false, a: 'Tam 30 TL de olur: 4n ≤ 30.' },
+            { m: '−3 > x eşitsizliği, x < −3 ile aynıdır.', d: true, a: 'Sivri uç küçük olanı gösterir: x, −3’ten küçük.' }], hint: 'Her kuralda sınır değerini dene: o değer kurala uyuyor mu? Uyuyorsa eşittir de olmalı.', why: 'Sınır değeri kurala uyuyorsa ≤ ya da ≥ kullanılır: 50 ile giden, 13 yaşındaki, 30 TL harcayan kurala uyar. Eşitsizlik iki yönden de okunabilir.', whyV: 'Sınır değeri kurala uyuyorsa küçük ya da eşittir, büyük ya da eşittir kullanılır: 50 ile giden, 13 yaşındaki, 30 lira harcayan kurala uyar. Eşitsizlik iki yönden de okunabilir.' } },
 
     { t: 'Durumdan eşitsizliğe',
       base: '<table class="an-tbl"><tr><th>Durum</th><th>Cümle</th></tr>' +
@@ -78,6 +90,10 @@
         { s: 'Değişken tam sayıysa çizgi boyanmaz, sadece o sayılara nokta konur: −1, 0, 1, 2, 3.', v: 'Değişken tam sayıysa çizgi boyanmaz; sadece o sayılara nokta konur: eksi bir, sıfır, bir, iki, üç.', on: '.n4' }
       ] },
 
+    { t: 'Dokun: doğru gösterim',
+      steps: [{ s: 'Dört gösterimi karşılaştır: dairelerin dolu ya da boş olmasına ve boyanan bölgeye bak.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>−2 < x ≤ 3</b> eşitsizliğinin sayı doğrusundaki gösterimine dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 206" role="img" aria-label="Dört sayı doğrusu gösterimi"><g data-b="a" aria-label="1. gösterim"><rect x="4" y="4" width="332" height="44" rx="10" class="box"/><text x="22" y="31" font-size="15" font-weight="700" text-anchor="middle">1</text><path class="ln" d="M42 26 H332" style="stroke-width:1.4"/><path class="ln" d="M52 22 V30" style="stroke-width:1"/><text x="52" y="44" font-size="12" text-anchor="middle" class="mut">-4</text><path class="ln" d="M82 22 V30" style="stroke-width:1"/><path class="ln" d="M112 22 V30" style="stroke-width:1"/><text x="112" y="44" font-size="12" text-anchor="middle" class="mut">-2</text><path class="ln" d="M142 22 V30" style="stroke-width:1"/><path class="ln" d="M172 22 V30" style="stroke-width:1"/><text x="172" y="44" font-size="12" text-anchor="middle" class="mut">0</text><path class="ln" d="M202 22 V30" style="stroke-width:1"/><path class="ln" d="M232 22 V30" style="stroke-width:1"/><path class="ln" d="M262 22 V30" style="stroke-width:1"/><text x="262" y="44" font-size="12" text-anchor="middle" class="mut">3</text><path class="ln" d="M292 22 V30" style="stroke-width:1"/><path class="ln" d="M322 22 V30" style="stroke-width:1"/><text x="322" y="44" font-size="12" text-anchor="middle" class="mut">5</text><path class="st" d="M112 26 H262" style="stroke-width:4"/><circle cx="112" cy="26" r="6" style="fill:var(--c);stroke:var(--c);stroke-width:2.5"/><circle cx="262" cy="26" r="6" style="fill:var(--card2);stroke:var(--c);stroke-width:2.5"/></g><g data-b="b" aria-label="2. gösterim"><rect x="4" y="54" width="332" height="44" rx="10" class="box"/><text x="22" y="81" font-size="15" font-weight="700" text-anchor="middle">2</text><path class="ln" d="M42 76 H332" style="stroke-width:1.4"/><path class="ln" d="M52 72 V80" style="stroke-width:1"/><text x="52" y="94" font-size="12" text-anchor="middle" class="mut">-4</text><path class="ln" d="M82 72 V80" style="stroke-width:1"/><path class="ln" d="M112 72 V80" style="stroke-width:1"/><text x="112" y="94" font-size="12" text-anchor="middle" class="mut">-2</text><path class="ln" d="M142 72 V80" style="stroke-width:1"/><path class="ln" d="M172 72 V80" style="stroke-width:1"/><text x="172" y="94" font-size="12" text-anchor="middle" class="mut">0</text><path class="ln" d="M202 72 V80" style="stroke-width:1"/><path class="ln" d="M232 72 V80" style="stroke-width:1"/><path class="ln" d="M262 72 V80" style="stroke-width:1"/><text x="262" y="94" font-size="12" text-anchor="middle" class="mut">3</text><path class="ln" d="M292 72 V80" style="stroke-width:1"/><path class="ln" d="M322 72 V80" style="stroke-width:1"/><text x="322" y="94" font-size="12" text-anchor="middle" class="mut">5</text><path class="st" d="M112 76 H262" style="stroke-width:4"/><circle cx="112" cy="76" r="6" style="fill:var(--card2);stroke:var(--c);stroke-width:2.5"/><circle cx="262" cy="76" r="6" style="fill:var(--c);stroke:var(--c);stroke-width:2.5"/></g><g data-b="c" aria-label="3. gösterim"><rect x="4" y="104" width="332" height="44" rx="10" class="box"/><text x="22" y="131" font-size="15" font-weight="700" text-anchor="middle">3</text><path class="ln" d="M42 126 H332" style="stroke-width:1.4"/><path class="ln" d="M52 122 V130" style="stroke-width:1"/><text x="52" y="144" font-size="12" text-anchor="middle" class="mut">-4</text><path class="ln" d="M82 122 V130" style="stroke-width:1"/><path class="ln" d="M112 122 V130" style="stroke-width:1"/><text x="112" y="144" font-size="12" text-anchor="middle" class="mut">-2</text><path class="ln" d="M142 122 V130" style="stroke-width:1"/><path class="ln" d="M172 122 V130" style="stroke-width:1"/><text x="172" y="144" font-size="12" text-anchor="middle" class="mut">0</text><path class="ln" d="M202 122 V130" style="stroke-width:1"/><path class="ln" d="M232 122 V130" style="stroke-width:1"/><path class="ln" d="M262 122 V130" style="stroke-width:1"/><text x="262" y="144" font-size="12" text-anchor="middle" class="mut">3</text><path class="ln" d="M292 122 V130" style="stroke-width:1"/><path class="ln" d="M322 122 V130" style="stroke-width:1"/><text x="322" y="144" font-size="12" text-anchor="middle" class="mut">5</text><path class="st" d="M44 126 H112 M262 126 H330" style="stroke-width:4"/><circle cx="112" cy="126" r="6" style="fill:var(--card2);stroke:var(--c);stroke-width:2.5"/><circle cx="262" cy="126" r="6" style="fill:var(--c);stroke:var(--c);stroke-width:2.5"/></g><g data-b="d" aria-label="4. gösterim"><rect x="4" y="154" width="332" height="44" rx="10" class="box"/><text x="22" y="181" font-size="15" font-weight="700" text-anchor="middle">4</text><path class="ln" d="M42 176 H332" style="stroke-width:1.4"/><path class="ln" d="M52 172 V180" style="stroke-width:1"/><text x="52" y="194" font-size="12" text-anchor="middle" class="mut">-4</text><path class="ln" d="M82 172 V180" style="stroke-width:1"/><path class="ln" d="M112 172 V180" style="stroke-width:1"/><text x="112" y="194" font-size="12" text-anchor="middle" class="mut">-2</text><path class="ln" d="M142 172 V180" style="stroke-width:1"/><path class="ln" d="M172 172 V180" style="stroke-width:1"/><text x="172" y="194" font-size="12" text-anchor="middle" class="mut">0</text><path class="ln" d="M202 172 V180" style="stroke-width:1"/><path class="ln" d="M232 172 V180" style="stroke-width:1"/><path class="ln" d="M262 172 V180" style="stroke-width:1"/><text x="262" y="194" font-size="12" text-anchor="middle" class="mut">3</text><path class="ln" d="M292 172 V180" style="stroke-width:1"/><path class="ln" d="M322 172 V180" style="stroke-width:1"/><text x="322" y="194" font-size="12" text-anchor="middle" class="mut">5</text><path class="st" d="M112 176 H262" style="stroke-width:4"/><circle cx="112" cy="176" r="6" style="fill:var(--card2);stroke:var(--c);stroke-width:2.5"/><circle cx="262" cy="176" r="6" style="fill:var(--card2);stroke:var(--c);stroke-width:2.5"/></g></svg>', dogru: ['b'], hint: 'Hangi sınır dâhil? Dâhil olan uçta dolu, olmayanda boş daire olmalı. x iki sayının arasında.', hintV: 'Hangi sınır dâhil? Dâhil olan uçta dolu, olmayanda boş daire olmalı. İks iki sayının arasında.', why: '−2 dâhil değil: boş daire. 3 dâhil: dolu daire. x ikisinin arasında, yani arası boyanır. 1. gösterimde daireler ters, 3.’de dışarısı boyalı, 4.’de iki uç da boş.', whyV: 'Eksi 2 dâhil değil, boş daire. 3 dâhil, dolu daire. İks ikisinin arasında olduğu için arası boyanır. Birinci gösterimde daireler ters, üçüncüde dışarısı boyalı, dördüncüde iki uç da boş.' } },
+
     { t: 'Kaç tam sayı var?',
       base: '<table class="an-tbl"><tr><th>Çözüm</th><th>Tam sayılar</th><th>Kaç?</th></tr>' +
         '<tr class="rv i1"><td>2 ≤ x ≤ 9</td><td>2, 3, …, 9</td><td>8</td></tr>' +
@@ -102,6 +118,18 @@
           h: '<div class="an-rule"><b>× (−) ya da ÷ (−) → sembol ters döner</b><br><small>−2x ≥ −6 → x ≤ 3 &nbsp;·&nbsp; −x < 4 → x > −4</small></div>' }
       ] },
 
+    { t: 'Grupla: yön değişir mi?',
+      steps: [{ s: 'Bir eşitsizliğin iki tarafına bu işlemleri yaptığını düşün. Sembolün yönü değişir mi, yoksa aynı mı kalır?' }],
+      ia: { tip: 'grup', q: '<p>Her işlemi, sembolün yönüne etkisine göre yerleştir.</p>', gruplar: ['Yön değişmez', 'Yön değişir'], ogeler: [
+            { m: 'İki tarafa 5 eklemek', g: 0 },
+            { m: 'İki taraftan −4 çıkarmak', g: 0 },
+            { m: 'İki tarafı 3 ile çarpmak', g: 0 },
+            { m: 'İki tarafa −6 eklemek', g: 0 },
+            { m: 'İki tarafı {{1|2}} ile çarpmak', g: 0 },
+            { m: 'İki tarafı −2 ile çarpmak', g: 1 },
+            { m: 'İki tarafı −1’e bölmek', g: 1 },
+            { m: 'İki tarafı −{{1|3}} ile çarpmak', g: 1 }], hint: 'Toplama ve çıkarma, sayı negatif olsa bile yönü değiştirmez. Yalnız negatif bir sayıyla çarpmak ya da bölmek yönü çevirir.', why: 'Eklemek ve çıkarmak, sayı negatif olsa da yönü korur. Pozitif sayıyla çarpıp bölmek de korur. Yalnız negatifle çarpma ve bölmede sembol ters döner.' } },
+
     { t: 'Eşitsizlik çözmek',
       steps: [
         { s: 'Eşitsizlik, denklem gibi çözülür. Tek fark, negatife bölünce sembolü çevirmek.',
@@ -110,6 +138,10 @@
         { s: 'Şimdi −2’ye bölüyoruz. Negatife böldüğümüz için sembol döner: x > 6.', v: 'Şimdi eksi ikiye bölüyoruz. Negatife böldüğümüz için sembol döner: iks altıdan büyük.', on: '.z2', mk: '.z2' },
         { s: 'En küçük tam sayı 7. Kontrol: 6 için 5 − 12 = −7, −7 < −7 yanlış. 7 için −9 < −7 doğru.', v: 'En küçük tam sayı yedi. Kontrol edelim: altı için, beş eksi on iki, eksi yedi; eksi yedi eksi yediden küçük, yanlış. Yedi için eksi dokuz, doğru.', on: '.z3' }
       ] },
+
+    { t: 'Boşluk doldur: negatife bölme',
+      steps: [{ s: 'Eşitsizliği adım adım çöz. Negatif bir sayıya böldüğün anda sembole dikkat et.' }],
+      ia: { tip: 'bosluk', q: '<p>7 − 3x ≥ 19 eşitsizliğini çöz.</p>', metin: '−3x ≥ [_]<br>x [_] −4', secenek: ['12', '26', '−12', '≤', '≥', '<'], cevap: ['12', '≤'], hint: 'Önce 7’yi karşıya at. Sonra iki tarafı −3’e böl: negatife bölmek sembolü ne yapar?', why: '−3x ≥ 19 − 7 = 12. −3’e bölünce sembol döner: x ≤ −4. Kontrol: x = −4 için 7 + 12 = 19 ≥ 19 doğru.', whyV: 'Eksi üç iks, büyük ya da eşittir 19 eksi 7, yani 12. Eksi üçe bölünce sembol döner: iks, küçük ya da eşittir eksi dört. Kontrol: iks eksi dört için 7 artı 12, 19 eder; 19 büyük ya da eşittir 19 doğru.' } },
 
     { t: 'Bileşik eşitsizlik çözmek',
       steps: [
@@ -140,6 +172,10 @@
           h: '<div class="an-ex"><span class="an-l">160 + 45n ≤ 630 → n ≤ 10,4 → seferde <b>en fazla 10</b> koli ↓</span><span class="an-l">10s ≥ 46 → s ≥ 4,6 → <b>en az 5</b> sefer ↑</span></div>' },
         { s: 'Bir seferde en fazla 10 koli: aşağı yuvarladık. 46 koli için en az 5 sefer: yukarı yuvarladık. Aynı soruda iki farklı yuvarlama!', v: 'Bir seferde en fazla on koli: aşağı yuvarladık. Kırk altı koli için en az beş sefer: yukarı yuvarladık. Aynı soruda iki farklı yuvarlama!' }
       ] },
+
+    { t: 'Kaydır: en az kaç gün?',
+      steps: [{ s: 'Yuvarlama kuralını uygula: “en az” sorusunda hangi yöne yuvarlıyorduk? Cevabı kaydırıcıyla göster.' }],
+      ia: { tip: 'kaydir', q: '<p>Ece her gün 12 sayfa kitap okuyor. 250 sayfalık kitabı <b>en az</b> kaç günde bitirir?</p>', min: 0, max: 30, adim: 1, cevap: 21, birim: 'gün', etiket: [0, 5, 10, 15, 20, 25, 30], hint: '12n ≥ 250 eşitsizliğini kur. n tam sayı olmalı; 20 gün yeter mi, dene.', hintV: '12 n, büyük ya da eşittir 250 eşitsizliğini kur. n doğal sayı olmalı; 20 gün yeter mi, dene.', why: '12n ≥ 250 → n ≥ 20,8… Gün sayısı doğal sayı olduğundan yukarı yuvarlanır: 21. 20 günde yalnız 240 sayfa okunur.', whyV: '12 n, büyük ya da eşittir 250; yani n, yirmi virgül sekizden büyük. Gün sayısı doğal sayı olduğu için yukarı yuvarlanır: 21. 20 günde yalnızca 240 sayfa okunur.' } },
 
     { t: 'Çözümlü örnek: otopark',
       steps: [

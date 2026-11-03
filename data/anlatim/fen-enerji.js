@@ -47,6 +47,13 @@
         { s: 'Ayrıştırıcılar sayesinde madde döngüsü tamamlanır, üreticiler o maddeleri yeniden kullanır. Ayrıştırıcılar zincirin bütün halkalarıyla ilişkilidir.' }
       ] },
 
+    { t: 'Grupla: üretici, tüketici, ayrıştırıcı',
+      steps: [{ s: 'Şimdi sen ayır. Her canlıyı besin zincirindeki görevine göre doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her canlıyı görevine göre yerleştir.</p>', gruplar: ['Üretici', 'Tüketici', 'Ayrıştırıcı'],
+        ogeler: [{ m: 'Buğday', g: 0 }, { m: 'Su yosunu (alg)', g: 0 }, { m: 'Tavşan', g: 1 }, { m: 'Kartal', g: 1 },
+          { m: 'Ölü kütükteki mantar', g: 2 }, { m: 'Çürükçül bakteri', g: 2 }, { m: 'Ayı', g: 1 }],
+        hint: 'Kendi besinini fotosentezle üreten mi, hazır alan mı, yoksa ölüleri parçalayıp toprağa mineral kazandıran mı?',
+        why: 'Buğday ve su yosunu fotosentez yapar: üretici. Tavşan, kartal ve ayı hazır besin alır: tüketici. Ölü canlıları parçalayan mantar ve bakteri ayrıştırıcıdır.' } },
     { t: 'Besin ağı nasıl okunur?',
       steps: [
         { s: 'Bir ekosistemde pek çok besin zinciri birbirine bağlanır; buna besin ağı denir.' },
@@ -58,6 +65,14 @@
         { s: 'Bir canlının birden çok besini varsa, biri azalınca diğerine yönelebilir. Bu yüzden besin ağları tek zincirlerden daha dengelidir.' }
       ] },
 
+    { t: 'Dokun: besin ağında hepçil',
+      steps: [{ s: 'Harflerle verilmiş bir besin ağı. K üretici, oklar enerjinin aktarıldığı yönü gösteriyor. Hepçil olan canlıya dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Oklar enerjinin aktarıldığı yönü gösterir; K üreticidir. <b>Hepçil</b> olan canlıya dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 214" role="group" aria-label="Harflerle verilmiş bir besin ağı; oklar enerjinin aktarıldığı yönü gösterir"><defs><marker id="okE" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" class="acc"/></marker></defs><line x1="151.0" y1="175.0" x2="91.6" y2="140.5" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="189.0" y1="175.0" x2="248.4" y2="140.5" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="170.0" y1="164.0" x2="170.0" y2="133.0" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="91.6" y1="123.7" x2="145.5" y2="112.9" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="70.0" y1="106.0" x2="70.0" y2="61.0" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="270.0" y1="106.0" x2="270.0" y2="61.0" class="st" stroke-width="2.5" marker-end="url(#okE)"/><line x1="92.0" y1="36.0" x2="245.0" y2="36.0" class="st" stroke-width="2.5" marker-end="url(#okE)"/><g data-b="nK" aria-label="K canlısı"><circle cx="170" cy="186" r="22" class="box"/><text x="170" y="192" text-anchor="middle" font-size="18" font-weight="700">K</text></g><g data-b="nL" aria-label="L canlısı"><circle cx="70" cy="128" r="22" class="box"/><text x="70" y="134" text-anchor="middle" font-size="18" font-weight="700">L</text></g><g data-b="nM" aria-label="M canlısı"><circle cx="270" cy="128" r="22" class="box"/><text x="270" y="134" text-anchor="middle" font-size="18" font-weight="700">M</text></g><g data-b="nP" aria-label="P canlısı"><circle cx="170" cy="108" r="22" class="box"/><text x="170" y="114" text-anchor="middle" font-size="18" font-weight="700">P</text></g><g data-b="nN" aria-label="N canlısı"><circle cx="70" cy="36" r="22" class="box"/><text x="70" y="42" text-anchor="middle" font-size="18" font-weight="700">N</text></g><g data-b="nR" aria-label="R canlısı"><circle cx="270" cy="36" r="22" class="box"/><text x="270" y="42" text-anchor="middle" font-size="18" font-weight="700">R</text></g><text x="12" y="206" font-size="14" class="mut">K: üretici</text></svg>', dogru: ['nP'],
+        hint: 'Bir canlının ne yediğini ona gelen oklar söyler. Hem üreticiden hem bir tüketiciden ok gelen canlıyı ara.',
+        hintV: 'Bir canlının ne yediğini ona gelen oklar söyler. Hem üreticiden hem de bir tüketiciden ok gelen canlıyı ara.',
+        why: 'P’ye hem üretici K’den hem otçul L’den ok geliyor: hepçil. R’ye gelen iki ok da tüketicilerden geliyor, o etçildir. L ve M yalnızca K’yi yer, otçuldur.',
+        whyV: 'Pe canlısına hem üreticiden hem de otçul bir canlıdan ok geliyor; bu yüzden hepçildir. Re canlısına gelen iki ok da tüketicilerden geliyor, o etçildir. Yalnızca üreticiyi yiyenler ise otçuldur.' } },
     { t: 'Ekoloji piramidi ve biyolojik birikim',
       base: '<svg class="an-svg" viewBox="0 0 340 215" role="img" aria-label="Ekoloji piramidi: yukarı çıktıkça enerji azalır, biyolojik birikim artar">' +
         '<polygon points="30,170 310,170 277.3,135 62.7,135" fill="#22c55e" fill-opacity=".55" class="rv y1"/><text x="170" y="158" font-size="12" text-anchor="middle" font-weight="700" class="rv y1">üreticiler</text>' +
@@ -76,6 +91,16 @@
           h: '<div class="an-tip">Hafıza ipucu: <b>Yukarı çık, enerji kaçar, zehir birikir.</b> Soruda farklı bir oran verilirse yüzde on yerine onu kullan.</div>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı: piramit',
+      steps: [{ s: 'Piramidin iki zıt yönünü karıştırmayalım. Her ifadeye doğru ya da yanlış de.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Ekoloji piramidi için her ifadeye karar ver.</p>',
+        ifadeler: [
+          { m: 'Piramitte yukarı çıktıkça aktarılan enerji azalır.', d: true, a: 'Her basamak enerjinin çoğunu kullanır, ısı olarak kaybeder.' },
+          { m: 'Piramitte yukarı çıktıkça birey sayısı artar.', d: false, a: 'Birey sayısı ve biyokütle azalır; vücut büyüklüğü genellikle artar.' },
+          { m: 'Tarım ilacı en çok üreticilerin vücudunda birikir.', d: false, a: 'En az üreticide, en çok son halkada birikir.' },
+          { m: 'Zincirin son halkası en çok ağır metal biriktiren canlıdır.', d: true, a: 'Yediği çok sayıda canlının zehrini toplar.' }],
+        hint: 'Enerji ve birikim zıt yönlerde değişir. Hangisi yukarı doğru azalıyordu?',
+        why: 'Enerji, birey sayısı ve biyokütle yukarı doğru azalır; biyolojik birikim ise yukarı doğru artar. İkisini aynı yönde düşünmek klasik tuzaktır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Bir besin zincirinde üreticilerdeki enerji <b>50 000 kJ</b>’dür ve her basamağa bir öncekinin <b>%10</b>’u aktarılmaktadır. Buna göre <b>2. tüketicilere</b> kaç kJ enerji aktarılır?</p>',
         c: ['50 kJ', '500 kJ', '5 000 kJ', '45 000 kJ'], a: 'B',
@@ -102,6 +127,13 @@
         { s: 'Fotosentez yalnızca Güneş ışığında olmaz; lamba gibi yapay ışıkta da gerçekleşir. Fotosentez olmasaydı besin zincirleri hiç başlayamazdı.' }
       ] },
 
+    { t: 'Boşluk: fotosentezin denklemi',
+      steps: [{ s: 'Fotosentezi bir denklem olarak yazalım. Boşluklara doğru kartları yerleştir.' }],
+      ia: { tip: 'bosluk', q: '<p>Fotosentezin denklemini tamamla.</p>',
+        metin: 'karbondioksit + [_]  —ışık, klorofil→  [_] + oksijen',
+        secenek: ['su', 'glikoz', 'azot', 'mineral', 'ATP'], cevap: ['su', 'glikoz'],
+        hint: 'Bitki bir maddeyi havadan yapraklarıyla, diğerini topraktan kökleriyle alıyordu. Ürettiği besinin adı ne?',
+        why: 'Bitki karbondioksit ve suyu ışık enerjisiyle glikoz ve oksijene çevirir. Glikozun fazlası nişasta olarak depolanır; ATP ise solunumda oluşur.' } },
     { t: 'Fotosentez deneylerinin araçları',
       steps: [
         { s: 'LGS fotosentezi neredeyse hep bir deney düzeneğiyle sorar. Önce kullanılan araçların ne anlama geldiğini bilmelisin.',
@@ -118,6 +150,14 @@
           h: '<div class="an-trap">Yapay ışık deneyine <b>KOH konmaz</b>. Ayrıca tek düzenek yetmez: test edilen değişkenin olmadığı bir <b>kontrol düzeneği</b> de gerekir.</div>' }
       ] },
 
+    { t: 'Eşleştir: deney araçları',
+      steps: [{ s: 'Deney araçlarını tanıyalım. Her aracı ya da gözlemi, deneydeki anlamıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her aracı deneydeki anlamıyla eşleştir.</p>', solBaslik: 'Araç / gözlem', sagBaslik: 'Anlamı',
+        sol: ['İyot çözeltisi', 'KOH', 'Kireç suyu', 'Su bitkisinde kabarcık', 'Lambayı yaklaştırmak'],
+        sag: ['Nişasta var mı?', 'Karbondioksiti tutar', 'Karbondioksitle bulanır', 'Çıkan oksijen', 'Işık şiddeti artar'],
+        hint: 'İki araç karbondioksitle ilgili: biri onu ortamdan çeker, öbürü varlığını gösterir.',
+        why: 'İyot nişastada mavi-mor olur; KOH karbondioksiti tutar, kireç suyu onunla bulanır. Kabarcıklar oksijendir, lambayı yaklaştırmak ışık şiddetini artırır.',
+        whyV: 'İyot nişastada mavi mor renk alır. Ka o ha karbondioksiti tutar, kireç suyu ise onunla bulanır. Kabarcıklar oksijendir; lambayı yaklaştırmak ışık şiddetini artırır.' } },
     { t: 'Fotosentez hızını ne etkiler?',
       base: '<svg class="an-svg" viewBox="0 0 340 175" role="img" aria-label="Işık şiddeti arttıkça fotosentez hızı bir noktaya kadar artar sonra sabit kalır">' +
         '<line x1="40" y1="150" x2="325" y2="150" class="ln" stroke-width="2"/><line x1="40" y1="20" x2="40" y2="150" class="ln" stroke-width="2"/>' +
@@ -158,6 +198,13 @@
           h: '<div class="an-trap">Hamuru kabartan: <b>CO₂</b> (oksijen değil). Laktik asit fermantasyonu: <b>gaz yok</b>. Solunum bütün canlılarda, <b>gece ve gündüz</b> sürer.</div>' }
       ] },
 
+    { t: 'Ele: fermantasyon tuzakları',
+      steps: [{ s: 'Fermantasyonla ilgili yanlış bilgileri ayıklayalım. Yanlış olanları ele.' }],
+      ia: { tip: 'eleme', q: '<p>Fermantasyon için <b>yanlış</b> olanları ele.</p>',
+        ogeler: ['Oksijensiz gerçekleşir', 'Hamuru kabartan gaz karbondioksittir', 'Maya fotosentez yapar', 'Laktik asit fermantasyonunda gaz çıkar', 'Oksijenli solunumdan az enerji verir', 'Yoğurt bakterileri yapar'],
+        ele: [2, 3],
+        hint: 'Maya bir mantar mıdır, bitki mi? Laktik asit fermantasyonunun ürünlerini düşün.',
+        why: 'Maya bir mantardır, fotosentez yapmaz. Laktik asit fermantasyonunda gaz çıkmaz; hamuru kabartan karbondioksit maya fermantasyonundan gelir.' } },
     { t: 'Fotosentez ve solunum birlikte',
       steps: [
         { s: 'Şimdi iki olayı yan yana koyalım.',
@@ -205,6 +252,12 @@
         { s: 'Tuzaklar: bağlayıcı ve ayrıştırıcı bakterilerin görevi birbirinin tersidir. Yıldırım azotu bağlar ama mikroorganizma değildir. Baklagil ekmek toprağı azotça zenginleştirir.' }
       ] },
 
+    { t: 'Sırala: azot döngüsü',
+      steps: [{ s: 'Azotun yolculuğunu baştan sona kur. Adımları havadaki azot gazından başlayarak sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Azot döngüsünün adımlarını sırala.</p>', ust: 'başlangıç', alt: 'havaya dönüş',
+        ogeler: ['Havadaki azot gazı', 'Bağlayıcı bakteri bileşiğe çevirir', 'Bitki kökleriyle alır', 'Hayvan bitkiyi yer', 'Ayrıştırıcılar ölüleri parçalar', 'Azot ayrıştırıcı bakteri gaza çevirir'],
+        hint: 'Bitkiler azotu havadan doğrudan alamıyordu. Önce onu kullanılabilir yapan kim? Döngü nerede kapanıyor?',
+        why: 'Bağlayıcı bakteriler havadaki azotu bileşiğe çevirir, bitki kökleriyle alır, hayvana geçer. Ölüler ayrışınca azot toprağa döner; azot ayrıştırıcı bakteriler de onu gaz olarak havaya verir.' } },
     { t: 'Küresel iklim değişikliği ve sürdürülebilirlik',
       steps: [
         { s: 'Atmosferdeki karbondioksit, metan ve su buharı yeryüzünün yaydığı ısının bir kısmını tutar. Buna sera etkisi denir; olmasaydı Dünya çok soğuk olurdu.' },

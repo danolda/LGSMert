@@ -51,6 +51,21 @@
           h: '<div class="an-tip">Söylediklerime <span class="an-w">kulak asmadı</span>. · Bize <span class="an-w">yardım etti</span>. → tek yüklem</div>' }
       ] },
 
+    { t: 'Devrik cümlede yüklem',
+      steps: [{ s: 'Bu cümle devrik: yüklem sonda değil. Yüklemi oluşturan bütün sözcüklere dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>“Bize yardım etti dün akşam komşumuz.” Cümlenin <b>yüklemini</b> oluşturan sözcüklerin hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 112" role="group" aria-label="Bize yardım etti dün akşam komşumuz.">' +
+          '<g data-b="w1"><rect x="10" y="8" width="56" height="40" rx="9" class="box"/><text x="38" y="33" text-anchor="middle" font-size="15">Bize</text></g>' +
+          '<g data-b="w2"><rect x="74" y="8" width="78" height="40" rx="9" class="box"/><text x="113" y="33" text-anchor="middle" font-size="15">yardım</text></g>' +
+          '<g data-b="w3"><rect x="160" y="8" width="56" height="40" rx="9" class="box"/><text x="188" y="33" text-anchor="middle" font-size="15">etti</text></g>' +
+          '<g data-b="w4"><rect x="224" y="8" width="46" height="40" rx="9" class="box"/><text x="247" y="33" text-anchor="middle" font-size="15">dün</text></g>' +
+          '<g data-b="w5"><rect x="278" y="8" width="56" height="40" rx="9" class="box"/><text x="306" y="33" text-anchor="middle" font-size="15">akşam</text></g>' +
+          '<g data-b="w6"><rect x="118" y="62" width="104" height="40" rx="9" class="box"/><text x="170" y="87" text-anchor="middle" font-size="15">komşumuz.</text></g>' + '</svg>',
+        dogru: ['w2', 'w3'],
+        hint: 'Yargı hangi sözcüklerde? “yardım” ve “et-” gibi yardımcı eylemle kurulan birleşik fiiller bölünmez.',
+        hintV: 'Yargı hangi sözcüklerde? Yardım etmek gibi yardımcı eylemle kurulan birleşik fiiller bölünmez.',
+        why: 'Yüklem “yardım etti”: birleşik fiil tek yüklemdir. Devrik cümlede yüklem ortada olabilir; yerine değil, yargıya bak.',
+        whyV: 'Yüklem, yardım etti. Birleşik fiil tek yüklemdir. Devrik cümlede yüklem ortada olabilir; yerine değil, yargıya bak.' } },
     { t: 'Özne: işi kim yapıyor?',
       base: '<table class="an-tbl"><tr><th>Özne türü</th><th>Örnek</th></tr>' +
         '<tr class="rv z1"><td><b>Gerçek özne</b></td><td><span class="an-w">Küçük kedi</span> sütü içti.</td></tr>' +
@@ -67,6 +82,18 @@
           v: 'Son olarak sözde özne. Temizlendi dediğimizde temizleyen belli değil. İşten etkilenen sınıflar, öznenin yerine geçmiş.', on: '.z3' }
       ] },
 
+    { t: 'Özne tuzakları',
+      steps: [{ s: 'Özneyle ilgili dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“Yarın sinemaya gideceğiz.” cümlesinde özne yoktur.', d: false, a: 'Gizli özne var: biz. Yüklemdeki kişi ekinden anlaşılır.' },
+          { m: '“Sınıflar güzelce temizlendi.” cümlesinde “sınıflar” sözde öznedir.', d: true, a: 'Temizleyen belli değil; işten etkilenen öge özne yerine geçmiş.' },
+          { m: 'Gizli özne, cümlenin öge sayısına katılır.', d: false, a: 'Cümlede yazılı olmadığı için sayılmaz, sıraya da girmez.' },
+          { m: '“Ağaçlar sonbaharda yapraklarını döker.” cümlesinde özne “yapraklarını” sözcüğüdür.', d: false, a: 'Döken ne? Ağaçlar. “Yapraklarını” neyi? sorusunun cevabı: nesne.' }],
+        hint: 'Yükleme “…an kim, …an ne?” diye sor. Yazılı olmayan özne yüklemin kişi ekinden çıkar.',
+        hintV: 'Yükleme an kim, an ne, diye sor. Yazılı olmayan özne yüklemin kişi ekinden çıkar.',
+        why: 'Gizli özne vardır ama sayılmaz; edilgen yüklemde işten etkilenen öge sözde öznedir; -ı ekli öbek özne değil, nesnedir.',
+        whyV: 'Gizli özne vardır ama öge sayısına katılmaz. Edilgen yüklemde işten etkilenen öge sözde öznedir. Sonu ı ekiyle biten öbek ise özne değil, nesnedir.' } },
     { t: 'Nesne: işten etkilenen',
       steps: [
         { s: 'Nesne, öznenin yaptığı işten etkilenen ögedir. İki türlüdür, ikisine de bakalım.',
@@ -82,6 +109,16 @@
         { s: 'Bir de şu: isim cümlesinde nesne olmaz. Nesne yalnızca nesne alabilen fiillerle kurulan cümlelerde bulunur.' }
       ] },
 
+    { t: 'Özne mi, nesne mi?',
+      steps: [{ s: 'Koyu yazılan her öbeği doğru kutuya yerleştir. Önce özneyi bulmayı unutma!' }],
+      ia: { tip: 'grup', q: '<p>Koyu öbekleri görevlerine göre kutulara yerleştir.</p>',
+        gruplar: ['Özne', 'Belirtili nesne', 'Belirtisiz nesne'],
+        ogeler: [{ m: 'Babam <b>saat</b> aldı.', g: 2 }, { m: '<b>Kırılan vazoyu</b> attı.', g: 1 }, { m: '<b>Kedi</b> süt içti.', g: 0 }, { m: 'Kedi <b>süt</b> içti.', g: 2 },
+          { m: '<b>Kapıyı</b> kapattı.', g: 1 }, { m: '<b>Rüzgâr</b> camı kırdı.', g: 0 }, { m: 'Annem <b>çay</b> demledi.', g: 2 }, { m: '<b>Öğretmenimizi</b> sevdik.', g: 1 }, { m: '<b>Çocuklar</b> top oynadı.', g: 0 }],
+        hint: 'Önce “…an kim, …an ne?” ile özneyi bul. Kalan öbek -ı, -i ekliyse belirtili, eksizse belirtisiz nesnedir.',
+        hintV: 'Önce an kim, an ne sorusuyla özneyi bul. Kalan öbek ı, i ekliyse belirtili, eksizse belirtisiz nesnedir.',
+        why: 'Özne: kedi, rüzgâr, çocuklar. Belirtili nesne: kırılan vazoyu, kapıyı, öğretmenimizi. Belirtisiz nesne: saat, süt, çay. Özne ve belirtisiz nesnenin ikisi de eksizdir; sıra kurtarır.',
+        whyV: 'Özne: kedi, rüzgâr, çocuklar. Belirtili nesne: kırılan vazoyu, kapıyı, öğretmenimizi. Belirtisiz nesne: saat, süt, çay. Özne de belirtisiz nesne de eksizdir; onları ayıran, bulma sırasıdır.' } },
     { t: 'Bir cümleyi birlikte ayıralım',
       base: '<div class="an-big rv c0" style="font-size:19px">Dün akşam annem bize güzel bir masal anlattı.</div>' +
         '<table class="an-tbl"><tr><th>Öge</th><th>Soru</th><th>Cevap</th></tr>' +
@@ -140,6 +177,15 @@
         { s: 'Bu sonuncusu LGS’de soruldu: “saatte” bir yer bildirmiyor, hız ve ölçü bildiriyor. Yine zarf tamlayıcısı.', v: 'Bu sonuncusu LGS’de soruldu: saatte, bir yer bildirmiyor; hız ve ölçü bildiriyor. Yine zarf tamlayıcısı.', on: '.t4' }
       ] },
 
+    { t: 'Ekli ama yer değil',
+      steps: [{ s: 'Koyu sözcüklerin hepsi -e, -de, -den eki almış. Yer tamlayıcısı olmayanları ele.', v: 'Koyu sözcüklerin hepsi e, de, den eki almış. Yer tamlayıcısı olmayanları ele.' }],
+      ia: { tip: 'eleme', q: '<p>Koyu sözcüklerden <b>yer tamlayıcısı olmayanları</b> ele.</p>',
+        ogeler: ['<b>Korkudan</b> titriyordu.', '<b>Mutfaktan</b> ses geldi.', '<b>Sonbaharda</b> yapraklar döküldü.', 'Mektubu <b>dedeme</b> verdim.', '<b>Dakikada</b> elli sözcük yazar.', 'Bütün gün <b>evde</b> kaldık.'],
+        ele: [0, 2, 4],
+        hint: 'Her birini ana yükleme sor: cevap “nereye, nerede, nereden, kime” mi, yoksa “niçin, ne zaman, ne kadar” mı?',
+        hintV: 'Her birini ana yükleme sor: cevap nereye, nerede, nereden, kime mi; yoksa niçin, ne zaman, ne kadar mı?',
+        why: 'Korkudan (niçin?), sonbaharda (ne zaman?), dakikada (ne kadar?) zarf tamlayıcısıdır. Mutfaktan, dedeme, evde yer ve yön bildirir: yer tamlayıcısı.',
+        whyV: 'Korkudan niçin sorusuna, sonbaharda ne zaman sorusuna, dakikada ne kadar sorusuna cevap verir: üçü de zarf tamlayıcısı. Mutfaktan, dedeme ve evde ise yer ve yön bildirir: yer tamlayıcısı.' } },
     { t: 'İçeri mi, içeriye mi?',
       base: '<table class="an-tbl"><tr><th>Ek yok → zarf tamlayıcısı</th><th>Ek var → yer tamlayıcısı</th></tr>' +
         '<tr class="rv i1"><td>Çocuk hızla <span class="an-w">içeri</span> girdi.</td><td>Çocuk hızla <span class="an-w">içeriye</span> girdi.</td></tr>' +
@@ -167,6 +213,15 @@
         { s: 'LGS’de yer tamlayıcısı soruları tam olarak bu noktadan geldi. Soruyu hep ana yükleme sor, fiilimsiye değil.', v: 'LGS’de yer tamlayıcısı soruları tam olarak bu noktadan geldi. Soruyu hep ana yükleme sor, fiilimsiye değil.' }
       ] },
 
+    { t: 'Öbekleri görevleriyle eşleştir',
+      steps: [{ s: 'Bu cümlenin her öbeğini görevine bağla. Fiilimsi grubunu bölmemeye dikkat!', v: 'Bu cümlenin her öbeğini görevine bağla. Fiilimsi grubunu bölmemeye dikkat!' }],
+      ia: { tip: 'eslestir', q: '<p>“Geçen yaz köyde yaşayan dedem bize eski fotoğrafları gösterdi.” Her öbeği görevine bağla.</p>', solBaslik: 'Öbek', sagBaslik: 'Görevi',
+        sol: ['geçen yaz', 'köyde yaşayan dedem', 'bize', 'eski fotoğrafları', 'gösterdi'],
+        sag: ['Zarf tamlayıcısı', 'Özne', 'Yer tamlayıcısı', 'Belirtili nesne', 'Yüklem'],
+        hint: 'Soruları ana yükleme sor: gösteren kim, neyi gösterdi, kime gösterdi, ne zaman gösterdi? “köyde” kime bağlı?',
+        hintV: 'Soruları ana yükleme sor: gösteren kim, neyi gösterdi, kime gösterdi, ne zaman gösterdi? Köyde sözcüğü hangi sözcüğe bağlı?',
+        why: '“köyde” -de eki alsa da “yaşayan”a bağlı; grubun içinde kalır. Gösteren kim? Köyde yaşayan dedem: özne. Kime? Bize: yer tamlayıcısı.',
+        whyV: 'Köyde, de eki alsa da yaşayan sözcüğüne bağlı; grubun içinde kalır. Gösteren kim? Köyde yaşayan dedem: özne. Kime? Bize: yer tamlayıcısı.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>yer tamlayıcısı vardır</b>?</p>',
         c: ['Kütüphanede çalışan öğrenciler sessizce kitap okuyordu.', 'Tren saatte yüz kilometre hızla ilerliyordu.', 'Denizden esen serin rüzgâr yüzümüzü okşuyordu.', 'Kardeşim yeni aldığı kitabı çantasına koydu.'], a: 'D',
@@ -200,6 +255,14 @@
         { s: 'Bunlara cümle dışı unsur deriz. Öge sayarken bunları hesaba katmazsın.' }
       ] },
 
+    { t: 'Kaç öge var?',
+      steps: [{ s: 'Bu cümlede kaç öge var? Hitabı ve ara cümleyi hesaba katmadan say, sonra kaydırıcıyla sayıyı seç.' }],
+      ia: { tip: 'kaydir', q: '<p>“Arkadaşlar, eminim, yarın sabah hepiniz okulun bahçesinde toplanacaksınız.” Bu cümle <b>kaç ögeden</b> oluşur?</p>',
+        min: 1, max: 8, adim: 1, cevap: 4, tol: 0, birim: 'öge', etiket: [1, 2, 3, 4, 5, 6, 7, 8],
+        hint: 'Önce yüklemi bul, sonra yükleme soru sor. “Arkadaşlar” ve “eminim” bir soruya cevap veriyor mu? Tamlamayı bölme.',
+        hintV: 'Önce yüklemi bul, sonra yükleme soru sor. Arkadaşlar ve eminim sözleri bir soruya cevap veriyor mu? Tamlamayı da bölme.',
+        why: 'Dört öge: yarın sabah (zarf tamlayıcısı), hepiniz (özne), okulun bahçesinde (yer tamlayıcısı), toplanacaksınız (yüklem). Hitap ve ara cümle cümle dışıdır.',
+        whyV: 'Dört öge var: yarın sabah zarf tamlayıcısı, hepiniz özne, okulun bahçesinde yer tamlayıcısı, toplanacaksınız yüklem. Arkadaşlar hitap, eminim ara cümle; ikisi de cümle dışı unsurdur.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinin ögeleri <b>zarf tamlayıcısı – özne – yer tamlayıcısı – yüklem</b> sırasıyla dizilmiştir?</p>',
         c: ['Akşamüstü bütün mahalleli meydanda toplandı.', 'Bütün mahalleli akşamüstü meydanda toplandı.', 'Meydanda toplanan mahalleliler akşamüstü dağıldı.', 'Akşamüstü köyden gelen misafirleri karşıladık.'], a: 'A',

@@ -42,6 +42,17 @@
           h: '<div class="an-rule"><b>Konu</b> = neyden söz ediliyor? &nbsp;·&nbsp; <b>Ana düşünce</b> = bu konuda ne söyleniyor?</div>' }
       ] },
 
+    { t: 'Konu ve ana düşünceyi ayır',
+      steps: [{ s: 'Sekiz ifadeyi konu ve ana düşünce olarak ayır. Önce ifadeye, sonra kutusuna dokun.' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Her ifade bir <b>konu</b> mu, yoksa bir <b>ana düşünce</b> mi?</p>',
+        gruplar: ['Konu', 'Ana düşünce'],
+        ogeler: [{ m: 'Kitap sevgisi', g: 0 }, { m: 'Kitap sevgisi küçük yaşta kazanılır.', g: 1 }, { m: 'Şehirlerdeki hava kirliliği', g: 0 }, { m: 'Toplu taşıma hava kirliliğini azaltır.', g: 1 }, { m: 'Çocuklukta oyunun önemi', g: 0 }, { m: 'Oyun, çocuğun dünyayı tanıma yoludur.', g: 1 }, { m: 'Teknolojinin aile ilişkilerine etkisi', g: 0 }, { m: 'Ekranlar aile sohbetlerini azaltıyor.', g: 1 }],
+        hint: 'Kendine sor: Bu ifade bir yargı bildiriyor mu? Bir yüklemle bir şey söylüyorsa ana düşüncedir; yalnızca neyden söz edildiğini gösteriyorsa konudur.',
+        why: 'İsim tamlaması hâlindeki ifadeler yalnızca neyden söz edildiğini gösterir: konu. Yüklemi olan, bir yargı kuran cümleler ana düşüncedir. “Teknolojinin etkisi” bile, etkinin ne olduğunu söylemedikçe konudur.'
+      } },
+
     { t: 'Dört adımda çözüm',
       base: '<div class="an-ex"><span class="an-l rv a1"><b>1. Kökü oku:</b> Olumlu mu, olumsuz mu? “değildir, çıkarılamaz” sözünü işaretle.</span>' +
         '<span class="an-l rv a2"><b>2. Metni oku:</b> Ne arayacağını bilerek. Son cümleye ve “ama, fakat, -medikçe” sözlerine dikkat.</span>' +
@@ -64,6 +75,17 @@
         { s: 'Son cümle “olmadıkça” gibi bir koşul kuruyorsa, ana düşünce o koşulu da içermelidir.' },
         { s: 'Kısa bir öykü ya da anekdot varsa olayın kendisini değil, olaydan çıkan dersi ara.' }
       ] },
+
+    { t: 'Ana düşünce cümlesine dokun',
+      steps: [{ s: 'Paragrafın dört cümlesi var. Ana düşünceyi taşıyan cümleye dokun.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>Bu paragrafta <b>ana düşünceyi</b> taşıyan cümleye dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 244" role="group" aria-label="Dört cümlelik paragraf"><g data-b="r1" aria-label="Bazı insanlar yeteneği doğuştan gelen bir şey sanır."><rect x="4" y="6" width="332" height="44" rx="9" class="box"/><text x="14" y="32" font-size="14">Bazı insanlar yeteneği doğuştan gelen bir şey sanır.</text></g><g data-b="r2" aria-label="Gerçekten de bazı çocuklar müziğe yatkın doğar."><rect x="4" y="58" width="332" height="54" rx="9" class="box"/><text x="14" y="80" font-size="14">Gerçekten de bazı çocuklar müziğe</text><text x="14" y="100" font-size="14">yatkın doğar.</text></g><g data-b="r3" aria-label="Fakat düzenli çalışmayan hiç kimse yeteneğini geliştiremez."><rect x="4" y="120" width="332" height="54" rx="9" class="box"/><text x="14" y="142" font-size="14">Fakat düzenli çalışmayan hiç kimse</text><text x="14" y="162" font-size="14">yeteneğini geliştiremez.</text></g><g data-b="r4" aria-label="Ünlü piyanistler bile her gün saatlerce çalışır."><rect x="4" y="182" width="332" height="54" rx="9" class="box"/><text x="14" y="204" font-size="14">Ünlü piyanistler bile her gün saatlerce</text><text x="14" y="224" font-size="14">çalışır.</text></g></svg>',
+        dogru: ['r3'],
+        hint: 'Metin bir yerde yön değiştiriyor. Yön değiştiren sözü bul; ondan sonraki yargı bütün metni kapsar mı?',
+        why: 'Metin “Fakat” ile yön değiştiriyor: Yeteneği geliştiren düzenli çalışmadır. İlk iki cümle karşı görüşü verir, piyanist örneği de bu yargıyı destekleyen bir yardımcı düşüncedir.'
+      } },
 
     { t: 'Ana düşünce tuzakları',
       steps: [
@@ -94,6 +116,16 @@
         { s: 'Bir de eleştiren yazarlar var. Yazar bir şeyi eleştirse bile olumlu yönlerini kabul edebilir. Bu olumlu noktaları atlama.' }
       ] },
 
+    { t: 'Çıkarılabilir mi?',
+      steps: [{ s: 'Metne göre dört yargıyı değerlendir. Metinden çıkarılabiliyorsa Doğru, çıkarılamıyorsa Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>“Sesli kitaplar, son yıllarda özellikle yolda vakit geçiren gençler arasında yaygınlaştı. Ancak bazı öğretmenler, dinlemenin bir metni üzerine düşünerek incelemenin yerini tutamayacağını söylüyor.”</p>',
+        ifadeler: [{ m: 'Sesli kitapların gençler arasında yaygınlaştığı söylenmiştir.', d: true, a: 'İlk cümle bunu açıkça söylüyor.' }, { m: 'Sesli kitaplar artık basılı kitaplardan daha çok tercih edilmektedir.', d: false, a: 'Metinde böyle bir karşılaştırma yok: derece kayması.' }, { m: 'Bazı öğretmenler sesli kitaplara çekinceyle yaklaşmaktadır.', d: true, a: 'İkinci cümlenin başka sözcüklerle söylenişi.' }, { m: 'Öğretmenlerin hepsi sesli kitapları faydasız bulmaktadır.', d: false, a: 'Metin “bazı öğretmenler” diyor; “hepsi” ve “faydasız” metni büyütür.' }],
+        hint: 'Her yargıyı metindeki bir cümleye dayandır. “Daha çok”, “hepsi” gibi derece sözcükleri metinde var mı?',
+        why: 'Birinci ve üçüncü yargının dayanağı metinde var. “Basılı kitaplardan daha çok” ve “öğretmenlerin hepsi” ise metnin söylediğini büyütüyor; bu bir derece kaymasıdır.'
+      } },
+
     { t: 'Öncüllü sorular',
       steps: [
         { s: 'Bazen soru I, II, III, IV diye öncüllerle gelir ve “hangilerine ulaşılabilir?” diye sorar.', v: 'Bazen soru bir, iki, üç, dört diye öncüllerle gelir ve hangilerine ulaşılabilir diye sorar.' },
@@ -103,6 +135,17 @@
         { s: 'Ve şu tuzağı unutma: Metin bir şeyleri sadece sıralıyorsa, şık bunlara bir başlama sırası ya da neden ekleyemez.',
           h: '<div class="an-trap">Metin “otomobil, telefon, beyaz eşya” diye sayıyor → “Otomobille <b>başlayıp</b> diğerlerine yayıldı.” öncülüne <b>ulaşılamaz</b>.</div>' }
       ] },
+
+    { t: 'Ulaşılamayan yargıları ele',
+      steps: [{ s: 'Metinde dayanağı olmayan yargıları bul ve ele. Sıra ya da neden uyduran şıklara dikkat!' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>“Festivalde halk dansları, yöresel yemekler ve el sanatları sergilendi. En kalabalık alan, el sanatlarının bulunduğu çadırdı.”<br>Bu metinden <b>ulaşılamayan</b> yargıları ele.</p>',
+        ogeler: ['Festivalde birden fazla etkinlik vardı.', 'Festival halk danslarıyla başladı.', 'El sanatları çadırı ilgi gördü.', 'Yemekler pahalı olduğu için yemek alanı tenhaydı.', 'Festivalin en kalabalık alanında el sanatları vardı.', 'Festival bu yıl ilk kez düzenlendi.'],
+        ele: [1, 3, 5],
+        hint: 'Metin etkinlikleri yalnızca sayıyor. Bir başlama sırası, bir neden ya da metinde hiç olmayan bir bilgi ekleyen yargıları bul.',
+        why: 'Sayılan şeylere sıra eklenemez; “pahalı olduğu için” uydurma bir neden; “ilk kez” bilgisi de metinde yok. Kalan üç yargının dayanağı metinde açıkça var.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Kütüphanemizin sesli kitap bölümü geçen yıl açıldı. Başta yalnızca görme engelli okurlar için düşünülen bu bölüm, kısa sürede yolda kitap dinlemek isteyen öğrencilerin de ilgisini çekti. Bugün bölümdeki kitap sayısı, açıldığı günün üç katına ulaştı.</p><p>Bu metinden aşağıdakilerin hangisi <b>çıkarılamaz</b>?</p>',
@@ -143,6 +186,19 @@
         { s: 'İkincisi: Geleceğe yönelik iki zıt duyguyu, umutla kaygıyı karıştırma. Metin geleceğe kaygıyla bakıyorsa şıktaki umut yanlıştır.' }
       ] },
 
+    { t: 'Duyguyu davranıştan tanı',
+      steps: [{ s: 'Duygular adıyla verilmedi. Her davranışı sezdirdiği duyguyla eşleştir.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>Her cümleyi sezdirdiği duyguyla eşleştir.</p>',
+        solBaslik: 'Davranış',
+        sagBaslik: 'Duygu',
+        sol: ['Yumruklarını sıkıp kapıyı çarptı.', 'Sırası gelsin diye yerinde duramıyordu.', '“Neden onu dinlemedim?” diye hayıflandı.', 'Ağzı açık kalakaldı.', 'Kırılan vazoya bakıp “Önemli değil.” dedi.', 'Sınav sonucunu düşündükçe uykusu kaçıyordu.'],
+        sag: ['Öfke', 'Sabırsızlık', 'Pişmanlık', 'Şaşkınlık', 'Hoşgörü', 'Kaygı'],
+        hint: 'Davranışı gözünün önüne getir: Kişi geçmişe mi yanıyor, gelecekten mi korkuyor, yoksa o an bir şeye mi kızıyor?',
+        why: 'Kapıyı çarpmak öfke, yerinde duramamak sabırsızlık, hayıflanmak pişmanlık, ağzı açık kalmak şaşkınlıktır. Kırılan vazoyu önemsememek hoşgörü, sonucu düşünüp uyuyamamak da geleceğe dair kaygıdır.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Otobüs yine gecikmişti. Ayşe durakta bir o yana bir bu yana yürüyor, durmadan saatine bakıyordu. Yanındaki yaşlı adam bu telaşı görünce anlayışla gülümsedi ve ona oturması için yer açtı.</p><p>Bu metne göre <b>Ayşe’nin</b> duygu durumu aşağıdakilerden hangisidir?</p>',
         c: ['Sabırsızlık', 'Hoşgörü', 'Özlem', 'Pişmanlık'], a: 'A',
@@ -160,6 +216,18 @@
              '<span class="an-l"><span class="an-ok-t">Çocukluğunuzun geçtiği yer eserlerinizi nasıl etkiledi?</span> ✓</span></div>' },
         { s: 'Gördüğün gibi ilk soru sadece metnin girişine uyuyor. Son cümledeki eserlere etkiyi karşılamıyor, yani eksik kalıyor.' }
       ] },
+
+    { t: 'Boşluğu sonraki cümle belirler',
+      steps: [{ s: 'İki boşluğu doldur. Her boşluk için hemen arkasındaki cümleye bak.' }],
+      ia: {
+        tip: 'bosluk',
+        q: '<p>Boşluklara metnin akışına uygun ifadeleri yerleştir.</p>',
+        metin: 'Bir ağacın gücü, gözle görülmeyen [_] gizlidir. Fırtınada dimdik durabilmesini, toprağın derinlerine uzanan bu yapıya borçludur. İnsan da böyledir: Onu ayakta tutan, [_].',
+        secenek: ['köklerinde', 'dallarında', 'yapraklarında', 'içindeki değerlerdir', 'giydiği kıyafetlerdir', 'çevresindeki övgülerdir'],
+        cevap: ['köklerinde', 'içindeki değerlerdir'],
+        hint: 'Birinci boşluğu arkasındaki cümle açıklıyor: Toprağın derinlerine uzanan yapı nedir? İkinci boşlukta bu görünmeyen gücün insandaki karşılığını bul.',
+        why: 'Toprağın derinlerine uzanan yapı köklerdir. İnsanı da dışarıdan görünmeyen bir güç ayakta tutar: içindeki değerler. Kıyafet ve övgü ise görünen, dıştan gelen şeylerdir.'
+      } },
 
     { t: 'Yazarın amacı, görüşü, iki metin',
       steps: [

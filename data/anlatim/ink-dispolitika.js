@@ -33,6 +33,13 @@
           h: '<div class="an-trap">Hatay → <b>1921 Ankara Antlaşması</b>’ndan kalan sorun (Lozan’dan değil)</div>' }
       ] },
 
+    { t: 'Hangi evre?',
+      steps: [{ s: 'Her sorunu ya da adımı ait olduğu evrenin kutusuna yerleştir. Biri Lozan’ın ardından, öbürü yeni bir savaş tehlikesi karşısında.' }],
+      ia: { tip: 'grup', q: '<p>Her gelişmeyi ait olduğu <b>evreye</b> yerleştir.</p>', gruplar: ['1923–1930 · Lozan’dan kalanlar', '1930–1939 · güvenlik ve barış'],
+        ogeler: [{ m: 'Yabancı okullar', g: 0 }, { m: 'Balkan Antantı', g: 1 }, { m: 'Musul sorunu', g: 0 }, { m: 'Montrö Sözleşmesi', g: 1 },
+          { m: 'Osmanlı borçları', g: 0 }, { m: 'Sadabat Paktı', g: 1 }, { m: 'Nüfus mübadelesi', g: 0 }, { m: 'Milletler Cemiyeti üyeliği', g: 1 }],
+        hint: 'Lozan’da yarım kalan konular birinci evrede. İtalya ve Almanya’nın tehdidine karşı atılan adımlar ikinci evrede.',
+        why: 'Okullar, Musul, borçlar ve mübadele Lozan’dan kalan sorunlardır. Milletler Cemiyeti üyeliği, Balkan Antantı, Montrö ve Sadabat ise 1930’ların güvenlik ve barış adımlarıdır.' } },
     { t: 'Yabancı okullar sorunu (1924)',
       steps: [
         { s: 'Tevhid-i Tedrisat’tan sonra Türkiye yabancı okullara yeni kurallar getirdi.', v: 'Tevhidi Tedrisat’tan sonra Türkiye yabancı okullara yeni kurallar getirdi.',
@@ -61,6 +68,16 @@
         { s: 'Burada çok dikkat et: güney sınırı 1926’da tamamlanmadı. Hatay 1939’da katılınca bugünkü şeklini aldı.', v: 'Burada çok dikkat et: güney sınırı bin dokuz yüz yirmi altıda tamamlanmadı. Hatay bin dokuz yüz otuz dokuzda katılınca bugünkü şeklini aldı.', on: '.h2' }
       ] },
 
+    { t: 'Musul tuzakları',
+      steps: [{ s: 'Musul sorunuyla ilgili beş ifade var. Her biri için karar ver; sınavın sevdiği iki tuzak burada.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Musul sorunu Lozan’da çözüldü.', d: false, a: 'Çözülemedi; ikili görüşmelere bırakıldı.' },
+          { m: 'Şeyh Sait İsyanı Musul’da askerî adım atmayı engelledi.', d: true, a: 'İç sorun dış politikada kayba yol açtı.' },
+          { m: 'Musul, 1926 Ankara Antlaşması ile Irak’a bırakıldı.', d: true, a: 'Misak-ı Millî’den taviz verildi.' },
+          { m: '1926’da güney sınırımız bugünkü şeklini aldı.', d: false, a: 'Hatay 1939’da katılınca tamamlandı.' },
+          { m: 'Konu çözüm için Milletler Cemiyeti’ne taşındı.', d: true, a: 'Haliç Konferansı sonuçsuz kalınca.' }],
+        hint: 'Musul’un Lozan’daki durumunu ve güney sınırının hangi yıl tamamlandığını hatırla.',
+        why: 'Musul Lozan’da çözülemedi, Milletler Cemiyeti’ne gitti; Şeyh Sait İsyanı yüzünden 1926’da Irak’a bırakıldı. Güney sınırı ise 1939’da Hatay’la tamamlandı.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Tevhid-i Tedrisat Kanunu’ndan sonra yabancı okullarda Türkçe, Tarih ve Coğrafya derslerinin Türk öğretmenler tarafından okutulması zorunlu tutulmuştur. Bazı devletlerin bu konuda görüşme isteği, konunun Türkiye’nin iç meselesi olduğu belirtilerek reddedilmiştir.</p><p>Türkiye’nin bu tutumunda aşağıdaki ilkelerden hangisinin <b>öncelikle</b> dikkate alındığı söylenebilir?</p>',
         c: ['Tam bağımsızlık', 'Karşılıklılık', 'Hukuka bağlılık', 'Barışçılık'], a: 'A',
@@ -78,6 +95,13 @@
           h: '<div class="an-grid"><div><b>Bozkurt-Lotus (1926)</b>Lahey’de kazanıldı · hukuki bağımsızlık</div><div><b>Vagon-Li (1933)</b>Türkçe konuşana ceza → gençlerin tepkisi</div><div><b>Razgrad (1933)</b>Türk mezarlığına saldırı → tepki</div></div>' }
       ] },
 
+    { t: 'Olay ve sonucu',
+      steps: [{ s: 'Her olayı sonucuyla ya da ne olduğuyla eşleştir. İsimler birbirine benziyor, dikkatli oku.' }],
+      ia: { tip: 'eslestir', q: '<p>Her olayı <b>sonucuyla</b> eşleştir.</p>', solBaslik: 'Olay', sagBaslik: 'Ne oldu?',
+        sol: ['Bozkurt-Lotus', 'Vagon-Li', 'Razgrad', '1930 Ankara Antlaşması', 'Osmanlı borçları'],
+        sag: ['Lahey’de kazanıldı', 'Türkçe konuşana ceza', 'Mezarlığa saldırı', 'Etabli sorunu çözüldü', 'Son taksit 1954’te'],
+        hint: 'Biri Ege’de bir gemi çarpışması, biri bir şirketin yasağı, biri Bulgaristan’da bir saldırı. Yunanistan’la dostluğu hangi antlaşma başlattı?',
+        why: 'Bozkurt-Lotus davası Lahey’de kazanıldı. Vagon-Li’de Türkçe konuşana ceza verildi, Razgrad’da Türk mezarlığına saldırıldı. 1930 Ankara Antlaşması etabli sorununu çözdü; borçların son taksiti 1954’te ödendi.' } },
     { t: '1930’lar: barış için ittifaklar',
       base: '<svg class="an-svg" viewBox="0 0 330 280" role="img" aria-label="Balkan Antantı ve Sadabat Paktı temsilî şema">' +
       '<polygon transform="translate(0,58)" points="16,12 39,20 56,30 76,31 96,29 116,15 139,11 157,10 170,18 179,29 199,34 218,36 235,36 248,34 263,24 282,21 296,34 300,51 318,68 311,86 310,111 311,126 293,129 278,134 258,134 238,139 215,141 199,144 184,141 179,156 172,164 169,154 175,144 165,146 149,141 137,154 119,160 106,149 89,140 81,151 66,156 57,146 43,142 29,136 26,114 16,104 21,89 18,76 9,71 9,59 18,51 6,45 9,31" fill="none" class="ln" stroke-width="1.6"/>' +
@@ -99,6 +123,22 @@
         { s: 'İtalya Habeşistan’a saldırınca 1937’de İran, Irak ve Afganistan ile Sadabat Paktı imzalandı: doğu ve güney sınırları güvencede.', v: 'İtalya Habeşistan’a saldırınca bin dokuz yüz otuz yedide İran, Irak ve Afganistan ile Sadabat Paktı imzalandı: doğu ve güney sınırları güvencede.', on: '.a2' }
       ] },
 
+    { t: 'Sadabat haritası',
+      steps: [{ s: 'Bu şemada Türkiye’nin komşuları var. Sadabat Paktı’nda Türkiye’nin yanında yer alan üç devlete dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>Sadabat Paktı</b>’nın Türkiye dışındaki üyelerine dokun.</p>', dogru: ['ir', 'iq', 'af'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 196" role="group" aria-label="Türkiye ve çevresindeki devletler, temsilî şema">' +
+          '<text x="170" y="192" font-size="10" text-anchor="middle" class="mut">temsilî şema · ölçekli değildir</text>' +
+          '<rect x="116" y="76" width="112" height="40" rx="9" class="boxa"/><text x="172" y="101" text-anchor="middle" font-size="15" font-weight="700">TÜRKİYE</text>' +
+          '<g data-b="yu" aria-label="Yugoslavya"><rect x="4" y="8" width="104" height="38" rx="9" class="box"/><text x="56" y="32" text-anchor="middle" font-size="14">Yugoslavya</text></g>' +
+          '<g data-b="ro" aria-label="Romanya"><rect x="116" y="8" width="90" height="38" rx="9" class="box"/><text x="161" y="32" text-anchor="middle" font-size="14">Romanya</text></g>' +
+          '<g data-b="af" aria-label="Afganistan"><rect x="236" y="8" width="100" height="38" rx="9" class="box"/><text x="286" y="32" text-anchor="middle" font-size="14">Afganistan</text></g>' +
+          '<g data-b="yn" aria-label="Yunanistan"><rect x="4" y="77" width="104" height="38" rx="9" class="box"/><text x="56" y="101" text-anchor="middle" font-size="14">Yunanistan</text></g>' +
+          '<g data-b="ir" aria-label="İran"><rect x="256" y="77" width="80" height="38" rx="9" class="box"/><text x="296" y="101" text-anchor="middle" font-size="14">İran</text></g>' +
+          '<g data-b="mi" aria-label="Mısır"><rect x="20" y="146" width="80" height="38" rx="9" class="box"/><text x="60" y="170" text-anchor="middle" font-size="14">Mısır</text></g>' +
+          '<g data-b="sy" aria-label="Suriye"><rect x="116" y="146" width="80" height="38" rx="9" class="box"/><text x="156" y="170" text-anchor="middle" font-size="14">Suriye</text></g>' +
+          '<g data-b="iq" aria-label="Irak"><rect x="212" y="146" width="72" height="38" rx="9" class="box"/><text x="248" y="170" text-anchor="middle" font-size="14">Irak</text></g></svg>',
+        hint: 'Sadabat doğu ve güney sınırlarını güvenceye aldı. Batıdakiler başka bir ittifakta, Balkan Antantı’ndaydı.',
+        why: 'Sadabat Paktı 1937’de İran, Irak ve Afganistan ile imzalandı. Yunanistan, Yugoslavya ve Romanya Balkan Antantı üyesiydi; Suriye ve Mısır ikisinde de yoktu.' } },
     { t: 'Montrö: Boğazlar bizim',
       steps: [
         { s: 'Lozan’da Boğazlar uluslararası bir komisyona bırakılmış, iki yakası askerden arındırılmıştı. Bu, egemenliğimize aykırıydı.' },
@@ -108,6 +148,13 @@
         { s: 'Dikkat et, Türkiye bunu savaşarak değil, uluslararası hukuk yoluyla elde etti. Yani barışçılık ve hukuka bağlılık da burada var.' }
       ] },
 
+    { t: 'Lozan’dan Montrö’ye',
+      steps: [{ s: 'Boğazlardaki değişimi tamamla. Lozan’da ne vardı, Montrö’de ne değişti?' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Lozan’da Boğazlar [_] bırakıldı.<br>Montrö’de (1936) komisyon [_].<br>Boğazları silahlandırma hakkı [_] geçti.',
+        secenek: ['uluslararası bir komisyona', 'Türkiye’ye', 'kaldırıldı', 'güçlendirildi', 'İngiltere’ye', 'Milletler Cemiyeti’ne'], cevap: ['uluslararası bir komisyona', 'kaldırıldı', 'Türkiye’ye'],
+        hint: 'Lozan’da Boğazlarda tam egemenlik yoktu; Montrö bunu lehimize düzeltti.',
+        why: 'Lozan Boğazları uluslararası bir komisyona bırakmıştı. Montrö komisyonu kaldırdı, denetim ve silahlandırma hakkını Türkiye’ye verdi; savaşla değil, hukuk yoluyla.' } },
     { t: 'Hatay: “şahsi meselem”',
       base: '<svg class="an-svg" viewBox="0 0 340 184" role="img" aria-label="Hatay sorununun çözüm süreci zaman şeridi">' +
       '<path class="st dr y1" d="M96 12 L96 176"/>' +
@@ -137,6 +184,12 @@
         { s: '29 Haziran 1939’da Hatay Meclisi Türkiye’ye katılma kararı aldı. Bu, Atatürk’ün vefatından sonradır.', v: 'Yirmi dokuz Haziran bin dokuz yüz otuz dokuzda Hatay Meclisi Türkiye’ye katılma kararı aldı. Bu, Atatürk’ün vefatından sonradır.', on: '.y5' }
       ] },
 
+    { t: 'Hatay’ın yolculuğu',
+      steps: [{ s: 'Hatay’ın anavatana katılma sürecini sırala. Araya Atatürk’ün vefatını da koydum; nereye düştüğüne dikkat et.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Ankara Antlaşması (Fransa)', 'Fransa Suriye’ye bağımsızlık kararı', 'Milletler Cemiyeti kararı', 'Hatay Devleti kuruldu', 'Atatürk’ün vefatı', 'Hatay Türkiye’ye katıldı'],
+        hint: 'Süreç 1921’de başlar. Hatay Devleti Eylül 1938’de kuruldu; Atatürk ise Kasım 1938’de vefat etti.',
+        why: '1921 Ankara Antlaşması, 1936 Fransa’nın kararı, 1937 Milletler Cemiyeti kararı, 2 Eylül 1938 Hatay Devleti, 10 Kasım 1938 Atatürk’ün vefatı, 29 Haziran 1939 katılım.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki gelişmelerden hangisiyle Türkiye’nin güney sınırı <b>bugünkü şeklini</b> almıştır?</p>',
         c: ['Musul’un 1926 Ankara Antlaşması ile Irak’a bırakılması', 'Montrö Boğazlar Sözleşmesi’nin imzalanması', 'Sadabat Paktı’nın imzalanması', 'Hatay’ın 1939’da Türkiye’ye katılması'], a: 'D',

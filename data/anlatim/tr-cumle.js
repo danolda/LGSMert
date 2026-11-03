@@ -24,7 +24,7 @@
         { s: 'Merhaba! Bu konuda metinler kısa olur ama şıklar birbirine çok benzer. Zorluk metinde değil, şıklarda.', on: '.c1' },
         { s: 'Şıklar hep tam cümledir ve metindeki anahtar sözcükleri tekrar eder.', on: '.c2' },
         { s: 'O yüzden şıkkı metinle karşılaştırırken tek bir soru sor.', on: '.c3' },
-        { s: 'Şıktaki sözcük metinde geçiyor mu diye bakma. Aynı sözcükler başka bir yargı kurabilir.', on: '.c4' },
+        { s: 'Şıktaki sözcüğün metinde geçmesi tek başına bir şey kanıtlamaz. Aynı sözcükler başka bir yargı kurabilir.', on: '.c4' },
         { s: 'Asıl soru şu: Şık, metindeki yargının aynısını mı söylüyor? Bütün konunun altın kuralı bu.', on: '.c5' }
       ] },
 
@@ -41,6 +41,16 @@
         { s: '“Bir kez daha gezmek istiyorum” diyorsa daha önce gezmiştir. Ama kaç kez gezdiğini bilemeyiz.', on: '.e3' },
         { s: '“Şehirlerden biri” diyorsa sevdiği başka şehirler de vardır. O şehirleri gezmiş mi? Bunu bilemeyiz.', on: '.e4' }
       ] },
+
+    { t: 'Kesin mi, tahmin mi?',
+      steps: [{ s: 'Cümleye göre dört yargıyı değerlendir. Kesin olarak çıkıyorsa Doğru, yalnızca bir tahminse Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>“Kütüphanemdeki kitaplardan biri olan bu romanı bir kez daha okumak istiyorum.”<br>Bu cümleye göre yargı <b>kesin olarak</b> doğru mu?</p>',
+        ifadeler: [{ m: 'Bu romanı daha önce en az bir kez okumuştur.', d: true, a: '“Bir kez daha” sözü, romanın daha önce okunduğunu kesinleştirir.' }, { m: 'Bu romanı daha önce yalnızca bir kez okumuştur.', d: false, a: 'Kaç kez okunduğu cümlede yok.' }, { m: 'Kütüphanesinde başka kitaplar da vardır.', d: true, a: '“Kitaplardan biri” başka kitapların da olduğunu gösterir.' }, { m: 'Bu roman, kütüphanesindeki en sevdiği kitaptır.', d: false, a: 'Cümlede karşılaştırma yok; bu bir tahmin.' }],
+        hint: 'Yalnızca cümlenin açıkça söylediğini ya da zorunlu olarak çıkanı kabul et. Kaç kez, en sevdiği gibi ayrıntılar cümlede var mı?',
+        why: '“Bir kez daha” romanın önceden okunduğunu, “kitaplardan biri” başka kitapların varlığını kesinleştirir. Kaç kez okunduğu ve en sevilen kitap olup olmadığı ise tahmindir.'
+      } },
 
     { t: 'Tuzak: daha geniş söyleyen şık',
       steps: [
@@ -85,6 +95,20 @@
           h: '<div class="an-rule"><b>İki kontrol:</b> 1. “-an, -en, -dığı” kimi niteliyor? 2. Zaman ve yer sözü hangi yükleme bağlı?</div>' }
       ] },
 
+    { t: 'Birleştirme hatasını adlandır',
+      steps: [{ s: 'İki cümle beş biçimde birleştirildi. Her birleştirmeyi, taşıdığı hatayla ya da doğru oluşuyla eşleştir.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p><b>1.</b> Ahmet, köyde büyüyen bir çocuktu. <b>2.</b> Ahmet, lise yıllarında şehre taşındı.<br>Her birleştirmeyi doğru etiketle eşleştir.</p>',
+        solBaslik: 'Birleştirme',
+        sagBaslik: 'Değerlendirme',
+        sol: ['Köyde büyüdüğü için Ahmet, şehre taşındı.', 'Lise yıllarında köyde büyüyen Ahmet, şehre taşındı.', 'Köyde büyüyen Ahmet, lise yıllarında ailesiyle şehre taşındı.', 'Ahmet, lise yıllarında şehre taşındı.', 'Köyde büyüyen Ahmet, lise yıllarında şehre taşındı.'],
+        sag: ['Uydurma neden', 'Zaman kayması', 'Bilgi ekleme', 'Bilgi düşürme', 'Doğru birleştirme'],
+        hint: 'Her cümlede üç şeyi denetle: yeni bir “için” eklenmiş mi, “lise yıllarında” hangi yükleme bağlı, eksik ya da fazla bilgi var mı?',
+        why: '“-dığı için” metinde olmayan bir neden kurar. “Lise yıllarında” büyümeye bağlanınca zaman kayar. “Ailesiyle” metinde yok. Köy bilgisinin düşmesi eksiltmedir. Yalnızca bilgiyi aynen taşıyan cümle doğrudur.',
+        whyV: 'Dığı için eki metinde olmayan bir neden kurar. Lise yıllarında sözü büyümeye bağlanınca zaman kayar. Ailesiyle sözü metinde yok. Köy bilgisinin düşmesi eksiltmedir. Yalnızca bilgiyi aynen taşıyan cümle doğrudur.'
+      } },
+
     { t: 'Anlatılmak istenen: benzetmeyi çöz',
       steps: [
         { s: 'Çıkmışlarda en kalabalık grup bu: Bir cümleyle ya da altı çizili bir sözle anlatılmak istenen ne?' },
@@ -110,6 +134,17 @@
           h: '<div class="an-trap"><b>3. Metinde olmayan alan:</b> “gerçek hayat”, “üzücü anılar” gibi metinde hiç geçmeyen konular eklenir.</div>' }
       ] },
 
+    { t: 'Yargıyı bozan şıkları ele',
+      steps: [{ s: 'Cümleyle aynı yargıyı taşımayan şıkları bul ve ele. Şıkları cümleyle parça parça karşılaştır.' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>“Usta yazar, halk hikâyelerini kendi üslubuyla yeniden yorumlayarak çocuklara sevdirdi.”<br>Bu cümlenin yargısını <b>bozan</b> şıkları ele.</p>',
+        ogeler: ['Halk hikâyelerini kendine özgü anlatımıyla çocuklara sevdirmiştir.', 'Halk hikâyelerini aslına sadık kalarak aktarmıştır.', 'Halk hikâyelerini kendi üslubuyla yetişkinlere sevdirmiştir.', 'Halk hikâyelerini yeniden yorumlayıp çocukların ilgisini çekmiştir.', 'Halk hikâyelerindeki üzücü anıları çocuklara anlatmıştır.', 'Çocukların halk hikâyelerini sevmesinde onun yorumu etkili olmuştur.'],
+        ele: [1, 2, 4],
+        hint: 'Şıkkı parça parça karşılaştır: kim, kime, nasıl? Tek bir parça bile değişmişse o şık elenir.',
+        why: '“Aslına sadık kalarak” üslubun tersini söylüyor, “yetişkinlere” kişiyi değiştiriyor, “üzücü anılar” ise cümlede hiç yok. Kalan üç şık aynı yargıyı başka sözcüklerle kuruyor.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>“Okunmayan bir kitap, hiç açılmamış bir pencere gibidir.”</p><p>Bu cümleyle anlatılmak istenen aşağıdakilerden hangisidir?</p>',
         c: ['Kitaplar, ancak okunduğunda insana yeni dünyaların kapısını açar.', 'Kitaplar, evlerin vazgeçilmez eşyaları arasında yer alır.', 'Pencereler gibi kitaplar da özenle korunmalıdır.', 'Okunan kitap sayısı arttıkça insan daha çok yorulur.'], a: 'A',
@@ -134,6 +169,18 @@
         { s: 'Örtülü anlamda söylenmeyen ama sezdirilen bir yargı vardır. “Bu kez de” diyorsa daha önce de geç kalmıştır.', on: '.m6' },
         { s: 'Kanıksama da önceden rahatsız eden bir şeye zamanla alışmaktır.', on: '.m7' }
       ] },
+
+    { t: 'Anlam özelliğini bul',
+      steps: [{ s: 'Sekiz cümleyi anlam özelliklerine göre kutulara yerleştir. Önce cümleye, sonra kutusuna dokun.' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Her cümle hangi anlam özelliğini taşıyor?</p>',
+        gruplar: ['Koşul', 'Öneri', 'Tahmin', 'Ön yargı'],
+        ogeler: [{ m: 'Hava açarsa pikniğe gideriz.', g: 0 }, { m: 'Unutmamak için not almayı deneyebilirsin.', g: 1 }, { m: 'Bulutlar karardı, birazdan yağmur yağar.', g: 2 }, { m: 'Bu yazarın kitabını hiç açmadım ama kesin sıkıcıdır.', g: 3 }, { m: 'Biletler tükenmezse konsere gideceğiz.', g: 0 }, { m: 'Bu gidişle takım şampiyon olacak.', g: 2 }, { m: 'Yeni komşusunu tanımadan kaba biri sandı.', g: 3 }, { m: 'Dersi kaçırdıysan arkadaşının notlarına bakabilirsin.', g: 1 }],
+        hint: '“-sa” görünce hemen koşul deme: Okura yol gösteriyorsa öneridir. Tahmin bir gerekçeye dayanır; ön yargı ise tanımadan hüküm verir.',
+        hintV: 'Sa ekini görünce hemen koşul deme: Okura yol gösteriyorsa öneridir. Tahmin bir gerekçeye dayanır; ön yargı ise tanımadan hüküm verir.',
+        why: 'Koşul: hava açarsa, biletler tükenmezse. Öneri: not almayı dene, notlara bak; “kaçırdıysan” sözü koşul gibi görünse de yol gösteriyor. Tahmin: kararan bulutlar, takımın gidişi. Ön yargı: açılmamış kitap, tanınmayan komşu.'
+      } },
 
     { t: 'Neden mi, amaç mı?',
       steps: [
@@ -171,6 +218,18 @@
         { s: 'Kolay bir deneme yöntemi: Boşluğun önündeki ve arkasındaki cümleyi “ama” ile mi, “bu yüzden” ile mi bağlayabiliyorsun, bir dene.' }
       ] },
 
+    { t: 'Bağlacı yerleştir',
+      steps: [{ s: 'Her boşluğa, iki düşünce arasındaki ilişkiyi kuran bağlacı yerleştir.' }],
+      ia: {
+        tip: 'bosluk',
+        q: '<p>Boşluklara uygun bağlaçları yerleştir.</p>',
+        metin: 'Çok çalıştı, [_] istediği puanı alamadı.<br>Bu kitabı herkese öneririm; [_] hem sürükleyici hem öğretici.<br>Yağmur bütün gece yağdı; [_] maç ertelendi.',
+        secenek: ['ama', 'çünkü', 'bu yüzden', 'yani', 'örneğin'],
+        cevap: ['ama', 'çünkü', 'bu yüzden'],
+        hint: 'Önce iki parça arasındaki ilişkiyi adlandır: Düşünce yön mü değiştiriyor, bir neden mi veriliyor, yoksa bir sonuç mu söyleniyor?',
+        why: 'Çalışmaya rağmen puan gelmedi: karşıtlık, ama. Öneriyi gerekçelendiriyor: neden, çünkü. Yağmurun sonucu ertelenen maç: bu yüzden.'
+      } },
+
     { t: 'Yakın anlam, çelişki, örnek olamaz',
       steps: [
         { s: 'Anlamca en yakın cümleler, konusu aynı olanlar değil, yargısı aynı olanlardır.',
@@ -181,6 +240,17 @@
         { s: '“Örnek olamaz” sorularında üç şık metindeki kavrama uyar, biri uymaz. “Seviyormuş gibi yapmak” anlatılıyorsa, gerçekten keyif alan kişi örnek olamaz.',
           h: '<div class="an-tip">Örnek olamaz sorularında cevap çoğunlukla <b>içtenlik</b> ya da <b>gerçek bir ihtiyaç</b> taşıyan şıktır.</div>' }
       ] },
+
+    { t: 'Anlamca en yakın cümleler',
+      steps: [{ s: 'Verilen cümleye anlamca en yakın iki cümleyi bul. İkisine de dokun, sonra Kontrol et’e bas.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>“Çok mutluluk beklemek, mutluluğu engeller.” cümlesine anlamca <b>en yakın</b> iki cümleye dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 234" role="group" aria-label="Dört cümle"><g data-b="r1" aria-label="Mutlu olmak için çok çalışmak gerekir."><rect x="4" y="6" width="332" height="44" rx="9" class="box"/><text x="14" y="32" font-size="14">Mutlu olmak için çok çalışmak gerekir.</text></g><g data-b="r2" aria-label="İnsan, az şey beklediğinde daha kolay mutlu olur."><rect x="4" y="58" width="332" height="54" rx="9" class="box"/><text x="14" y="80" font-size="14">İnsan, az şey beklediğinde</text><text x="14" y="100" font-size="14">daha kolay mutlu olur.</text></g><g data-b="r3" aria-label="Mutluluk, paylaşıldıkça çoğalır."><rect x="4" y="120" width="332" height="44" rx="9" class="box"/><text x="14" y="146" font-size="14">Mutluluk, paylaşıldıkça çoğalır.</text></g><g data-b="r4" aria-label="Beklentisi büyük olan, küçük sevinçleri göremez."><rect x="4" y="172" width="332" height="54" rx="9" class="box"/><text x="14" y="194" font-size="14">Beklentisi büyük olan,</text><text x="14" y="214" font-size="14">küçük sevinçleri göremez.</text></g></svg>',
+        dogru: ['r2', 'r4'],
+        hint: 'Konusu mutluluk olan her cümle yakın anlamlı değildir. Yargıya bak: Beklenti mutluluğu nasıl etkiliyor?',
+        why: 'Asıl yargı şu: Beklentiyi azaltmak insanı mutlu eder. İkinci ve dördüncü cümle bunu söylüyor; öbür ikisi aynı konuda başka yargılar kuruyor.'
+      } },
 
     { t: 'Çözüm stratejisi',
       steps: [

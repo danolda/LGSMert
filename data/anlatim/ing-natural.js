@@ -45,6 +45,14 @@
         { s: '[[An avalanche]]: büyük bir kar kütlesinin dağdan aşağı kayması.', on: '.d5' }
       ] },
 
+    { t: 'Tanımdan afeti bul',
+      steps: [{ s: 'Her tanımı doğru afetle eşleştir. Önce tanıma, sonra afetin adına dokun.' }],
+      ia: { tip: 'eslestir', q: '<p>Her tanımı afetiyle eşleştir.</p>', solBaslik: 'Tanım', sagBaslik: 'Afet',
+        sol: ['sudden shaking of ground', 'huge sea waves', 'no rain for months', 'snow slides down', 'mud and rocks slide', 'water covers dry land'],
+        sag: ['earthquake', 'tsunami', 'drought', 'avalanche', 'landslide', 'flood'],
+        hint: 'Kayan şey kar mı, toprak mı? Su çok mu fazla, yoksa hiç mi yok? Böyle düşünerek eşleştir.',
+        why: 'Yerin aniden sarsılması [[earthquake]], dev dalgalar [[tsunami]], aylarca yağmur yağmaması [[drought]]. Kar kayarsa [[avalanche]], toprak ve kaya kayarsa [[landslide]]. Kuru karayı su kaplarsa [[flood]].' } },
+
     { t: 'Karıştırılan ikililer',
       steps: [
         { s: 'Şimdi dikkat. Çığ ve heyelan karışır. [[Avalanche]] karın kaymasıdır, [[landslide]] ise toprak, çamur ve kayanın.',
@@ -55,6 +63,16 @@
         { s: '[[Flood]] çok fazla su, [[drought]] ise susuzluk. [[The river dried up]] ya da [[crops died]] görürsen bu kuraklık.', on: '.k3' },
         { s: 'Ve [[tsunami]] bir sonuçtur. Sebebi genellikle deniz altındaki depremdir.' }
       ] },
+
+    { t: 'İkilileri ayırt et',
+      steps: [{ s: 'Karıştırılan afetlerle ilgili her ifadeye karar ver: doğru mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'A hurricane usually forms over land and lasts a few minutes.', d: false, a: 'Bu tornado; hurricane sıcak okyanusta oluşur, günlerce sürer.' },
+          { m: 'In an avalanche, snow slides down a mountain.', d: true, a: 'avalanche = çığ.' },
+          { m: 'A tsunami is usually caused by an earthquake under the sea.', d: true, a: 'Tsunami bir sonuçtur.' },
+          { m: '“The river dried up and crops died.” → a flood', d: false, a: 'Susuzluk: drought.' }],
+        hint: 'Kasırga ile hortumun yerini ve süresini düşün. Nehir kuruduysa su fazla mı, az mı?',
+        why: 'Karada oluşan kısa süreli fırtına [[hurricane]] değil, [[tornado]] olur. Çığda kar kayar, tsunamiye çoğunlukla deniz altı depremi yol açar. Nehrin kuruması ise [[drought]].' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>News:</b> There has been no rain in the region for eight months. The rivers dried up and most of the crops died. Farmers are worried about the coming year.</p><p>Which natural disaster is the news about?</p>',
@@ -73,6 +91,14 @@
         { s: 'Düzensiz geçmiş hâller: [[shake, shook]], [[strike, struck]], [[fall, fell]], [[blow, blew]].' }
       ] },
 
+    { t: 'Düzensiz geçmiş hâller',
+      steps: [{ s: 'Afet haberlerinden üç cümle. Boşlukları fiillerin doğru geçmiş hâlleriyle doldur. Düzensiz fiillere dikkat!' }],
+      ia: { tip: 'bosluk', q: '<p>Haber cümlelerini tamamla.</p>',
+        metin: 'The ground [_] for forty seconds.<br>Lightning [_] an old tree in the village.<br>A strong wind [_] all night.',
+        secenek: ['shook', 'shaked', 'struck', 'striked', 'blew', 'blowed', 'fell'], cevap: ['shook', 'struck', 'blew'],
+        hint: '[[Shake]], [[strike]] ve [[blow]] düzensiz fiillerdir. Sonuna [[ed]] eklenen biçimler yanlış.',
+        why: '[[Shake]] fiili [[shook]], [[strike]] fiili [[struck]], [[blow]] fiili de [[blew]] olur. [[Shaked]], [[striked]] ve [[blowed]] diye kelimeler yok.' } },
+
     { t: 'Depremden önce, sırasında, sonra',
       base: '<table class="an-tbl"><tr><th>BEFORE</th><th>DURING</th><th>AFTER</th></tr>' +
         '<tr><td class="rv e1">Prepare an emergency kit.<br>Fix heavy furniture to the walls.<br>Learn your assembly area.</td>' +
@@ -86,6 +112,15 @@
         { s: 'Burada tuzak: “hemen merdivenden aşağı koş” gibi aceleci şıklar yanlıştır. Sarsıntı bitene kadar [[Drop, Cover, Hold on.]]',
           h: '<div class="an-trap">Sarsıntı sürerken <span class="an-bad-t">Run outside!</span> ✗ · <span class="an-bad-t">Use the lift!</span> ✗ → <b>Drop, Cover, Hold on</b> ✓</div>' }
       ] },
+
+    { t: 'Önce, sırasında, sonra',
+      steps: [{ s: 'Yedi davranışı depremden önce mi, deprem sırasında mı, yoksa sonra mı yapılır? Doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her davranışı doğru zamana yerleştir.</p>', gruplar: ['Before', 'During', 'After'],
+        ogeler: [{ m: 'Prepare an emergency kit.', g: 0 }, { m: 'Fix furniture to walls.', g: 0 },
+          { m: 'Drop, cover, hold on.', g: 1 }, { m: 'Stay away from windows.', g: 1 },
+          { m: 'Check for injured people.', g: 2 }, { m: 'Use the stairs carefully.', g: 2 }, { m: 'Go to the assembly area.', g: 2 }],
+        hint: 'Sarsıntı sürerken yerinden kalkıp koşulmaz. Merdivenle inmek ve toplanma alanına gitmek ne zaman yapılır?',
+        why: 'Önce: afet çantası ve eşyaları duvara sabitlemek. Sırasında: [[Drop, cover, hold on]] ve pencerelerden uzak durmak. Sonra: yaralılara bakmak, merdivenle dikkatlice inmek ve toplanma alanına gitmek.' } },
 
     { t: 'Afet çantası',
       steps: [
@@ -123,6 +158,13 @@
           h: '<div class="an-trap"><b>probably</b> olumluda will’den sonra (will probably), olumsuzda won’t’tan önce gelir (probably won’t).</div>' }
       ] },
 
+    { t: 'Ne kadar emin?',
+      steps: [{ s: 'Beş hava tahmini var. En emin olandan, kesinlikle olmayacak diyene doğru sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Tahminleri en emin “evet” ifadesinden kesin “hayır” ifadesine doğru sırala.</p>', ust: '%100 evet', alt: '%100 hayır',
+        ogeler: ['It will definitely rain.', 'It will probably rain.', 'It might rain.', 'It probably won’t rain.', 'It definitely won’t rain.'],
+        hint: '[[Might]] yarı yarıya, yani belki demek; tam ortadadır. [[Probably]] olumlu cümlede yüksek, olumsuz cümlede düşük ihtimal.',
+        why: '[[Definitely]] yüzde yüz, [[probably]] yaklaşık yüzde seksen, [[might]] belki. [[Probably won’t]] pek sanmıyorum, [[definitely won’t]] ise kesinlikle hayır.' } },
+
     { t: 'Neden ve sonuç',
       steps: [
         { s: 'Neden bildirirken [[because]] ve arkasından bir cümle: [[The roads were closed because it snowed heavily.]]',
@@ -136,6 +178,13 @@
         { s: 'Kısacası boşluktan sonra cümle mi var, isim mi? Buna bak.',
           h: '<div class="an-trap">Boşluktan sonra <b>isim</b> (the storm, the flood) → <b>because of / due to</b>, “because” değil!</div>' }
       ] },
+
+    { t: 'because mı, because of mu?',
+      steps: [{ s: 'Altı neden sonuç cümlesinden yanlış kurulanları ele. Boşluktan sonra bir cümle mi var, bir isim mi?' }],
+      ia: { tip: 'eleme', q: '<p>Yanlış kurulan cümleleri <b>ele</b>.</p>',
+        ogeler: ['The roads were closed because it snowed.', 'The roads were closed because of it snowed.', 'Flights were cancelled due to the fog.', 'It rained a lot, so the river flooded.', 'We stayed home because the storm.', 'Heavy rain can cause floods.'], ele: [1, 4],
+        hint: '[[Because]] arkasından özne ve fiil ister. Sadece bir isim geliyorsa hangisi kullanılmalıydı?',
+        why: '[[Because of it snowed]] yanlış, çünkü arkasında bir cümle var: [[because it snowed]] olmalı. [[Because the storm]] cümlesi de yanlış; isimden önce [[because of the storm]] gelir.' } },
 
     { t: 'Küresel ısınma zinciri',
       base: '<svg class="an-svg" viewBox="0 0 340 222" role="img" aria-label="İklim değişikliği neden sonuç zinciri">' +
@@ -175,6 +224,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

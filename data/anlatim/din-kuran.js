@@ -52,6 +52,13 @@
           h: '<div class="an-rule">“Şüphesiz o Zikr’i (Kur’an’ı) biz indirdik, onun koruyucusu da elbette biziz.” <small>Hicr, 9</small></div>' }
       ] },
 
+    { t: 'İlk vahyi tamamla',
+      steps: [{ s: 'İlk vahyin bilgilerini tamamla. Çeldiricilerden biri hicret yolculuğundan, dikkat et.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'İlk vahiy [_] yılında, Ramazan ayında, Kadir Gecesi’nde [_] Mağarası’nda geldi.<br>Vahiy meleği [_] idi.',
+        secenek: ['610', '622', 'Hira', 'Sevr', 'Cebrail', 'Mikail'], cevap: ['610', 'Hira', 'Cebrail'],
+        hint: 'Hicret 622’dedir ve Sevr Mağarası hicret yolculuğunda saklanılan yerdir. İlk vahiy daha öncedir.',
+        why: 'İlk vahiy 610’da, Kadir Gecesi’nde Hira Mağarası’nda Cebrail aracılığıyla geldi. 622 hicret yılı, Sevr ise hicrette sığınılan mağaradır.' } },
     { t: 'Temel kavramlar',
       base: '<div class="an-grid"><div class="rv t1"><b>Ayet</b>surelerin her bir cümlesi · 6236</div><div class="rv t1"><b>Sure</b>ayetlerden oluşan bölüm · 114</div><div class="rv t1"><b>Cüz</b>yaklaşık 20 sayfalık bölüm · 30</div></div>',
       steps: [
@@ -61,6 +68,15 @@
           h: '<table class="an-tbl"><tr><td>İlk sure</td><td><b>Fâtiha</b></td></tr><tr><td>Son sure</td><td><b>Nâs</b></td></tr><tr><td>En uzun sure</td><td><b>Bakara</b> (286 ayet)</td></tr><tr><td>En kısa sure</td><td><b>Kevser</b> (3 ayet)</td></tr></table>' }
       ] },
 
+    { t: 'Kur’an bilgilerinde tuzak',
+      steps: [{ s: 'Kur’an’ın inişi ve yapısıyla ilgili dört ifade var. Her biri için karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Kur’an yaklaşık 23 yılda, olaylara göre parça parça indi.', d: true, a: '610’dan 632’ye kadar.' },
+          { m: 'Mushaf’ın ilk suresi, “Oku!” emrinin geçtiği suredir.', d: false, a: 'İlk sure Fâtiha’dır; “Oku!” Alak suresindedir.' },
+          { m: 'Kur’an’ı ilk kez iki kapak arasında Hz. Osman topladı.', d: false, a: 'Hz. Ebubekir döneminde toplandı; Hz. Osman çoğalttı.' },
+          { m: 'En uzun sure Bakara, en kısa sure Kevser’dir.', d: true, a: 'Bakara 286, Kevser 3 ayettir.' }],
+        hint: 'İlk inen ayetler ile Mushaf’taki ilk sure aynı şey değildir. Toplama ile çoğaltma da farklı dönemlerdedir.',
+        why: 'Kur’an 23 yılda parça parça indi; en uzun sure Bakara, en kısa Kevser. Mushaf Fâtiha ile başlar ve Hazreti Ebubekir döneminde toplandı, Hazreti Osman döneminde çoğaltıldı.' } },
     { t: 'Mekki ve Medeni sureler',
       steps: [
         { s: 'Sureler indikleri döneme göre ikiye ayrılır. Ayrım çizgisi hicrettir.',
@@ -70,6 +86,13 @@
         { s: 'Mantığı şöyle düşün: önce inanç sağlamlaştırıldı, sonra toplum düzenlendi.' }
       ] },
 
+    { t: 'Mekki surelerin konuları',
+      steps: [{ s: 'Mekke’de inen surelerin daha çok işlediği konuları düşün. Bu listede Medine dönemine ait olanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Mekki surelerin</b> ağırlıklı konusu olmayanları ele.</p>',
+        ogeler: ['Allah’ın birliği', 'Miras hükümleri', 'Ahiret inancı', 'Ticaret ve borç kuralları', 'Peygamberlik', 'Aile hukuku'],
+        ele: [1, 3, 5],
+        hint: 'Mekke’de önce inanç sağlamlaştırıldı. Toplum düzeni ve hukuk hicretten sonra geldi.',
+        why: 'Mekki sureler tevhid, ahiret ve peygamberlik gibi inanç konularını işler. Miras, ticaret, borç ve aile hukuku Medeni surelerde, toplum kurulduktan sonra ağırlık kazanır.' } },
     { t: 'Meal, tefsir, hatim, mukabele',
       base: '<table class="an-tbl"><tr><th>Kavram</th><th>Anlamı</th></tr>' +
         '<tr class="rv w1"><td><b>Meal</b></td><td>Kur’an’ın başka bir dile yaklaşık anlamıyla çevirisi</td></tr>' +
@@ -84,6 +107,13 @@
         { s: 'Ramazan’da camilerde biri okurken diğerlerinin takip etmesine de mukabele denir.', on: '.w4' }
       ] },
 
+    { t: 'Kavramı eşleştir',
+      steps: [{ s: 'Kur’an’la ilgili beş kavramı anlamlarıyla eşleştir. Meal ile tefsiri karıştırma.' }],
+      ia: { tip: 'eslestir', q: '<p>Her kavramı <b>anlamıyla</b> eşleştir.</p>', solBaslik: 'Kavram', sagBaslik: 'Anlamı',
+        sol: ['Meal', 'Tefsir', 'Hatim', 'Hafız', 'Mukabele'],
+        sag: ['Yaklaşık anlam çevirisi', 'Geniş açıklama', 'Baştan sona okumak', 'Tamamını ezberleyen', 'Biri okur, diğerleri takip eder'],
+        hint: 'Çeviri ile açıklama farklıdır: biri yaklaşık anlam verir, öbürü iniş sebepleriyle açıklar.',
+        why: 'Meal yaklaşık anlam çevirisi, tefsir iniş sebepleriyle geniş açıklamadır. Hatim baştan sona okumak, hafız tamamını ezberleyen, mukabele Ramazan’da biri okurken diğerlerinin takip etmesidir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Hicretten önce inen sureler daha çok Allah’ın birliği, ahiret ve peygamberlik konularını işler. Hicretten sonra inen sureler ise ibadetler, aile, ticaret ve toplumsal düzenle ilgili hükümleri içerir.</p><p>Bu bilgilere göre aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>',
         c: ['Kur’an’ın konuları, inişindeki dönemin ihtiyaçlarıyla ilişkilidir.', 'Kur’an tek seferde indirilmiştir.', 'Medeni surelerde inanç konusu hiç geçmez.', 'Mekki sureler daha uzundur.'], a: 'A',
@@ -125,6 +155,13 @@
           h: '<div class="an-trap">“Borç verdiğinizde onu yazın”, mirasın paylaşımı, evlilik hükümleri → insanlar arası hukuki düzen: <b>muamelat</b> · doğruluk, sabır, merhamet → kişisel erdem: <b>ahlak</b></div>' }
       ] },
 
+    { t: 'Ana konuya yerleştir',
+      steps: [{ s: 'Her örneği Kur’an’ın ana konularından birine yerleştir. Ahlak ile muamelatı karıştırma.' }],
+      ia: { tip: 'grup', q: '<p>Her örneği <b>ana konusuna</b> yerleştir.</p>', gruplar: ['İnanç', 'İbadet', 'Ahlak', 'Muamelat'],
+        ogeler: [{ m: 'Meleklere iman', g: 0 }, { m: 'Oruç', g: 1 }, { m: 'Gıybet yasağı', g: 2 }, { m: 'Mirasın paylaşımı', g: 3 },
+          { m: 'Ahiret', g: 0 }, { m: 'Hac', g: 1 }, { m: 'Sabırlı olmak', g: 2 }, { m: 'Borcu yazıya geçirmek', g: 3 }],
+        hint: 'Kişisel erdemler ahlak, insanlar arası hukuki düzen muamelattır. İman edilenler inanç, Allah’a kulluk biçimleri ibadettir.',
+        why: 'Melekler ve ahiret inanç; oruç ve hac ibadet; gıybetten uzak durmak ve sabır ahlak; miras ve borcu yazmak muamelattır.' } },
     { t: 'Bir peygamber tanıyorum: Hz. Nuh',
       steps: [
         { s: 'Bu ünitenin peygamberi Hazreti Nuh. Putlara tapan kavmini yaklaşık dokuz yüz elli yıl boyunca bıkmadan tek Allah inancına çağırdı.' },
@@ -136,6 +173,12 @@
           h: '<div class="an-rule">Hûd, 46 → soy bağı değil, <b>iman ve salih amel</b> belirleyicidir.</div>' }
       ] },
 
+    { t: 'Nuh kıssası sırayla',
+      steps: [{ s: 'Hazreti Nuh’un kıssasındaki olayları yaşandığı sıraya koy.' }],
+      ia: { tip: 'sirala', q: '<p>Olayları <b>yaşandığı sıraya</b> koy.</p>', ust: 'ilk', alt: 'son',
+        ogeler: ['Kavmini tek Allah’a çağırdı', 'İleri gelenler müminleri küçümsedi', 'Allah’ın emriyle gemi yapıldı', 'Tufan başladı', 'Oğlu dağa sığınmak istedi', 'Oğlunun aileden sayılmadığı bildirildi'],
+        hint: 'Önce uzun bir davet ve alay dönemi var. Gemi tufandan önce hazırlandı; oğlunun durumu tufan sırasında ortaya çıktı.',
+        why: 'Uzun davet, küçümseme, geminin yapımı, tufan, oğlunun dağa sığınmak isteyip boğulması ve Hûd suresi 46. ayetteki bildiri: soy değil, iman belirleyicidir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Tufan sırasında Hz. Nuh, oğlunu gemiye çağırmış; oğlu ise “Beni sudan koruyacak bir dağa sığınacağım.” diyerek gemiye binmemiş ve boğulmuştur. Allah, Hz. Nuh’a inanmayan oğlunun onun ailesinden sayılmadığını bildirmiştir.</p><p>Bu kıssadan aşağıdakilerden hangisi <b>çıkarılabilir</b>?</p>',
         c: ['Kurtuluşta soy bağı değil, iman ve salih amel belirleyicidir.', 'Peygamberlerin çocukları da mutlaka peygamber olur.', 'Tufandan yalnızca Hz. Nuh kurtulmuştur.', 'Hz. Nuh kavmini yalnızca kısa bir süre tebliğ etmiştir.'], a: 'A',

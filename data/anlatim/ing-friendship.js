@@ -37,7 +37,7 @@
         { s: 'Daha samimi hâli [[Do you want to play chess?]] Yani “satranç oynamak ister misin?”', on: '.d2' },
         { s: '[[Let’s]] “hadi yapalım” demek. [[Shall we]] ise “yapalım mı” diye sorar.', on: '.d3' },
         { s: '[[Why don’t we have a picnic?]] Bu soru gibi görünür ama aslında bir öneridir: “Hadi piknik yapalım.”', on: '.d4' },
-        { s: '[[How about going bowling?]] Yani “bowlinge gitmeye ne dersin?” Bunun fiil biçimine birazdan çok dikkat edeceğiz.', on: '.d5' },
+        { s: '[[How about going bowling?]] Yani “[[bowling]] oynamaya gitsek mi, ne dersin?” Bunun fiil biçimine birazdan çok dikkat edeceğiz.', on: '.d5' },
         { s: 'Bir de önce müsait mi diye sorarız: [[Are you free on Saturday?]]', on: '.d6' }
       ] },
 
@@ -51,6 +51,14 @@
         { s: 'Yani [[How about going to the cinema?]] doğru; ama [[how about go]] yanlış olur.',
           h: '<div class="an-ex"><span class="an-l"><span class="an-ok-t">How about going to the cinema?</span> ✓</span><span class="an-l"><span class="an-bad-t">How about go to the cinema?</span> ✗</span></div>' }
       ] },
+
+    { t: 'Kalıbı tamamla: yalın mı, -ing mi?',
+      steps: [{ s: 'Üç davet cümlesini tamamla. Önce boşluğa, sonra karta dokun. Kalıba bak: fiil yalın mı kalıyor, ing takısı mı alıyor?' }],
+      ia: { tip: 'bosluk', q: '<p>Davet cümlelerini doğru fiil biçimiyle tamamla.</p>',
+        metin: 'How about [_] to the cinema?<br>Would you like to [_] a film?<br>Why don’t we [_] a picnic?',
+        secenek: ['going', 'go', 'watch', 'watching', 'have', 'having'], cevap: ['going', 'watch', 'have'],
+        hint: 'Üç kalıptan yalnızca biri ing takısı istiyordu. Hangisiydi? Diğer ikisinde fiil yalın kalır.',
+        why: '[[How about going]] doğru, çünkü [[How about]] ing ister. [[Would you like to watch]] ve [[Why don’t we have]] ise yalın fiille kurulur.' } },
 
     { t: 'Daveti kabul etmek',
       base: '<div class="an-grid"><div class="rv k1"><b>Sure!</b>Tabii!</div><div class="rv k1"><b>Of course!</b>Elbette!</div><div class="rv k1"><b>I’d love to.</b>Çok isterim.</div>' +
@@ -74,6 +82,15 @@
         { s: 'Burada [[I’d love to]] ile başlıyor diye kabul sanma. Arkasından [[but]] geliyorsa bu bir ret.',
           h: '<div class="an-trap"><b>I’d love to, but…</b> = RET + mazeret<br><b>Yeah, why not?</b> · <b>I can’t refuse!</b> = KABUL</div>' }
       ] },
+
+    { t: 'Kabul mü, ret mi?',
+      steps: [{ s: 'Sekiz cevabı iki kutuya ayır: daveti kabul edenler ve reddedenler. Önce cevaba, sonra kutusuna dokun.' }],
+      ia: { tip: 'grup', q: '<p>“Would you like to come to my party?” sorusuna verilen cevapları ayır.</p>',
+        gruplar: ['Kabul ✓', 'Ret ✗'],
+        ogeler: [{ m: 'Count me in!', g: 0 }, { m: 'Yeah, why not?', g: 0 }, { m: 'I can’t refuse!', g: 0 }, { m: 'Nothing better to do!', g: 0 },
+          { m: 'I’d love to, but…', g: 1 }, { m: 'I’m afraid I can’t.', g: 1 }, { m: 'Maybe another time.', g: 1 }, { m: 'My parents won’t let me.', g: 1 }],
+        hint: 'İçinde [[not]] ya da [[can’t]] geçiyor diye hemen ret deme. Arkasından [[but]] gelen cevaba da dikkat et.',
+        why: '[[Why not?]], [[I can’t refuse]] ve [[nothing better to do]] olumsuz görünür ama kabuldür. [[I’d love to, but]] ise mazeretli bir ret.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>Ece:</b> Would you like to come to my birthday party on Saturday?</p>' +
@@ -100,6 +117,14 @@
         { s: 'Bir de [[laid-back]] yani rahat ve sakin; [[tactful]] yani kimseyi kırmamaya özen gösteren; [[determined]] yani asla pes etmeyen.', on: '.p5' }
       ] },
 
+    { t: 'Sıfatı tanımıyla eşleştir',
+      steps: [{ s: 'LGS gibi düşün: tanımı oku, sıfatı bul. Her sıfatı onu anlatan tanımla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her sıfatı LGS’deki tanımıyla eşleştir.</p>', solBaslik: 'Sıfat', sagBaslik: 'Tanım',
+        sol: ['trustworthy', 'supportive', 'generous', 'tactful', 'determined'],
+        sag: ['keeps my secrets', 'always backs me up', 'loves sharing', 'never hurts feelings', 'never gives up'],
+        hint: '[[Back up]] arka çıkmak, [[share]] paylaşmak demek. Kimseyi kırmamaya özen gösteren kişiyi anlatan sıfat hangisiydi?',
+        why: '[[Trustworthy]] sır tutar, [[supportive]] arka çıkar, [[generous]] paylaşır, [[tactful]] kimseyi kırmaz, [[determined]] asla pes etmez.' } },
+
     { t: 'Kötü arkadaşın sıfatları',
       base: '<div class="an-grid"><div class="rv n1"><b>selfish</b>only thinks about himself</div><div class="rv n1"><b>stubborn</b>never changes his mind</div><div class="rv n1"><b>arrogant</b>thinks he is better than others</div>' +
         '<div class="rv n2"><b>two-faced</b>does things behind your back</div><div class="rv n2"><b>bad-tempered</b>gets angry easily</div><div class="rv n2"><b>jealous</b>unhappy when friends succeed</div>' +
@@ -109,6 +134,13 @@
         { s: '[[Two-faced]]: ikiyüzlü, arkandan iş çevirir. [[Bad-tempered]]: çabuk sinirlenir. [[Jealous]]: kıskanç.', on: '.n2' },
         { s: '[[Mean]]: cimri ya da kaba. [[Unreliable]]: güvenilmez, sırlarını başkasına anlatır.', on: '.n3' }
       ] },
+
+    { t: 'Kötü arkadaşı ele',
+      steps: [{ s: 'Sekiz sıfattan kötü arkadaşı anlatanları ele. Geriye yalnızca iyi bir arkadaşın sıfatları kalsın.' }],
+      ia: { tip: 'eleme', q: '<p>Kötü arkadaşı anlatan sıfatları <b>ele</b>.</p>',
+        ogeler: ['reliable', 'selfish', 'laid-back', 'two-faced', 'honest', 'stubborn', 'generous', 'mean'], ele: [1, 3, 5, 7],
+        hint: 'Emin olamadığın sıfatın tanımını hatırla: [[laid-back]] sakin ve rahat biri, [[mean]] ise paylaşmayı sevmeyen biri.',
+        why: '[[Selfish]] bencil, [[two-faced]] ikiyüzlü, [[stubborn]] inatçı, [[mean]] cimri. Kalanlar güvenilir, rahat, dürüst ve cömert arkadaşlar.' } },
 
     { t: 'Tuzak: olumsuz cümle, olumlu anlam',
       steps: [
@@ -122,6 +154,16 @@
         { s: '[[She never gives up.]] Asla pes etmiyor. Bu da kararlı, yani [[determined]].', on: '.t3' },
         { s: 'Ama [[He never keeps his promises.]] Sözünü hiç tutmuyor. İşte bu olumsuz. Kelimeye değil, anlamın tamamına bak.', on: '.t4', mk: '.t4 td' }
       ] },
+
+    { t: 'Olumsuz cümle tuzağı',
+      steps: [{ s: 'Her cümle için yorumun doğru olup olmadığına karar ver. Kelimeye değil, anlamın tamamına bak.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Cümle ile yorumu uyuşuyor mu?</p>', ifadeler: [
+          { m: '“He never lies to me.” → Arkadaşı dürüst.', d: true, a: 'Asla yalan söylemiyor: honest 👍' },
+          { m: '“She doesn’t forget my birthday.” → Olumsuz bir özellik.', d: false, a: 'Doğum gününü unutmuyor: ilgili, yani olumlu.' },
+          { m: '“She never shares her snacks.” → Arkadaşı cömert.', d: false, a: 'Paylaşmıyor: mean ya da selfish 👎' },
+          { m: '“He always talks behind my back.” → Arkadaşı ikiyüzlü.', d: true, a: 'Arkandan konuşuyor: two-faced 👎' }],
+        hint: '[[Never]] ya da [[doesn’t]] görünce hemen olumsuz deme. Yapılmayan şey iyi bir şey mi, kötü bir şey mi?',
+        why: 'Yalan söylememek ve doğum gününü unutmamak olumlu. Atıştırmalığını paylaşmamak ve arkadan konuşmak ise olumsuz. Anlamın tamamına baktın, aferin!' } },
 
     { t: 'Eş anlamlı ifadeler',
       steps: [
@@ -166,10 +208,23 @@
         { s: 'Son konumuz davetiye kartı. Bir kartın her satırı bir soru kelimesine cevap verir. Bakalım.' },
         { s: 'Kart Selin’e yazılmış; onu davet eden de Mert. Yani kime ve kimden sorusu [[Who]] ile sorulur.', on: '.c1' },
         { s: 'Tarih ve saat [[When]] sorusunun cevabı: 24 Mayıs Pazar, akşam altıdan ona kadar.', on: '.c2' },
-        { s: 'Yer [[Where]] sorusunun cevabı: Atakum’daki bowling salonu.', on: '.c3' },
+        { s: 'Yer [[Where]] sorusunun cevabı: Atakum’daki [[Star Bowling]] salonu.', on: '.c3' },
         { s: 'Ücret [[How much]] ile sorulur: kişi başı iki yüz lira.', on: '.c4' },
         { s: 'Ve [[Please reply by May 20]]: en geç 20 Mayıs’a kadar cevap ver demek. Bu, partinin tarihi değil!', on: '.c5', mk: '.c5' }
       ] },
+
+    { t: 'Kartta “When?” sorusunun cevabı',
+      steps: [{ s: 'Kerem kartı okuyor ve soruyor: parti ne zaman? Cevabı veren satırlara dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>Kerem soruyor: <b>“When is the movie night?”</b> Cevabı veren satırlara dokun.</p>', dogru: ['m1', 'm2'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 252" role="img" aria-label="Film gecesi davetiyesi">' +
+          '<text x="170" y="22" text-anchor="middle" font-size="16" font-weight="700" class="acc">MOVIE NIGHT!</text>' +
+          '<g data-b="m0" aria-label="Dear Kerem"><rect x="10" y="34" width="320" height="36" rx="9" class="box"/><text x="22" y="57" font-size="14">Dear Kerem, join my movie night!</text></g>' +
+          '<g data-b="m1" aria-label="Date"><rect x="10" y="76" width="320" height="36" rx="9" class="box"/><text x="22" y="99" font-size="14">Date: Friday, March 7</text></g>' +
+          '<g data-b="m2" aria-label="Time"><rect x="10" y="118" width="320" height="36" rx="9" class="box"/><text x="22" y="141" font-size="14">Time: 7 p.m. – 10 p.m.</text></g>' +
+          '<g data-b="m3" aria-label="Place"><rect x="10" y="160" width="320" height="36" rx="9" class="box"/><text x="22" y="183" font-size="14">Place: Ada’s house, Bornova</text></g>' +
+          '<g data-b="m4" aria-label="Reply"><rect x="10" y="202" width="320" height="36" rx="9" class="box"/><text x="22" y="225" font-size="14">Please reply by March 3. — Ada</text></g></svg>',
+        hint: 'Kartta iki ayrı tarih var. Biri partinin günü, diğeri en son cevap verme günü. [[When]] sorusu hangisini sorar? Saati de unutma.',
+        why: 'Film gecesi 7 Mart Cuma, akşam yedide. [[Please reply by March 3]] ise son cevap günü; partinin tarihi değil.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>BEACH PICNIC!</b><br>Dear friends, join us for a picnic at Kordon Beach on Saturday, June 14, from 11 a.m. to 4 p.m. We will play volleyball and have a barbecue. It is free! Please reply by June 10. — Selin</p>' +
@@ -192,6 +247,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

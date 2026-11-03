@@ -54,6 +54,15 @@
         { s: 'İkincisinde ise “varmak”, yani ulaşmak eylemi var. Bu bir fiil cümlesi.', v: 'İkincisinde ise varmak, yani ulaşmak eylemi var. Bu bir fiil cümlesi.', on: '.s2' }
       ] },
 
+    { t: 'İsim cümlelerini ele',
+      steps: [{ s: 'Yalnızca fiil cümleleri kalsın. Yüklemi isim ya da fiilimsi olan cümleleri ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>İsim cümlelerini</b> ele; fiil cümleleri kalsın.</p>',
+        ogeler: ['Kuşlar güneye göç etti.', 'Hayali doktor olmaktı.', 'Sepette elma vardı.', 'Yolcular köye vardı.', 'Onu görmek mümkün.', 'Annem çay demledi.', 'Bizi karşılayan muhtardı.'],
+        ele: [1, 2, 4, 6],
+        hint: 'Yüklemin sonuna “-dır” getirmeyi dene. “vardı” sözcüğünde anlama bak: bulunmak mı, ulaşmak mı?',
+        hintV: 'Yüklemin sonuna dır getirmeyi dene. Vardı sözcüğünde anlama bak: bulunmak mı, ulaşmak mı?',
+        why: 'olmaktı (isim-fiil + ek-fiil), vardı (bulunmak), mümkün, muhtardı: isim cümlesi. Göç etti, köye vardı (ulaştı), demledi: fiil cümlesi.',
+        whyV: 'Olmaktı, ek fiil almış bir isim fiildir. Sepette elma vardı cümlesinde var, bulunmak anlamında bir isim; mümkün ve muhtardı da isim. Bunlar isim cümlesi. Göç etti, köye vardı yani ulaştı, ve demledi ise fiil cümlesi.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdakilerden hangisi <b>fiil cümlesidir</b>?</p>',
         c: ['En büyük hayali bir gün pilot olmaktı.', 'Bizi kapıda karşılayan, köyün muhtarıydı.', 'Yolcular akşamüstü köye vardı.', 'Bu sorunu çözmek hiç de kolay değil.'], a: 'C',
@@ -78,6 +87,19 @@
         { s: 'Ama üç nokta her zaman eksiltili demek değil. “Bahçede elma, armut, erik vardı…” cümlesinde yüklem yerinde duruyor.', v: 'Ama üç nokta her zaman eksiltili demek değil. Bahçede elma, armut, erik vardı, cümlesinde yüklem yerinde duruyor.' }
       ] },
 
+    { t: 'Devrik cümlelere dokun',
+      steps: [{ s: 'Devrik olan cümlelerin hepsine dokun. Son sözcüğe değil, yargıya bak!' }],
+      ia: { tip: 'gorselsec', q: '<p>Yüklemine göre <b>devrik</b> olan cümlelerin hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 240" role="group" aria-label="Beş cümle">' +
+          '<g data-b="c1"><rect x="10" y="8" width="320" height="40" rx="9" class="box"/><text x="170" y="33" text-anchor="middle" font-size="15">Bitirdim sonunda o kitabı.</text></g>' +
+          '<g data-b="c2"><rect x="10" y="54" width="320" height="40" rx="9" class="box"/><text x="170" y="79" text-anchor="middle" font-size="15">Annem dün pazardan döndü.</text></g>' +
+          '<g data-b="c3"><rect x="10" y="100" width="320" height="40" rx="9" class="box"/><text x="170" y="125" text-anchor="middle" font-size="15">Çok yorulmuştu o gün dedem.</text></g>' +
+          '<g data-b="c4"><rect x="10" y="146" width="320" height="40" rx="9" class="box"/><text x="170" y="171" text-anchor="middle" font-size="15">Tam kapıdan çıkıyordum ki…</text></g>' +
+          '<g data-b="c5"><rect x="10" y="192" width="320" height="40" rx="9" class="box"/><text x="170" y="217" text-anchor="middle" font-size="15">Sepette elma, armut vardı…</text></g>' + '</svg>',
+        dogru: ['c1', 'c3'],
+        hint: 'Önce yargıyı bildiren sözcüğü bul, sonra arkasında öge var mı bak. Üç nokta tek başına eksiltili demek değildir.',
+        why: '“Bitirdim” ve “yorulmuştu” yüklemlerinden sonra öge geliyor: devrik. “döndü” sonda: kurallı. “Çıkıyordum ki…” yüklemsiz: eksiltili. “vardı…” yüklem sonda: kurallı.',
+        whyV: 'Bitirdim ve yorulmuştu yüklemlerinden sonra öge geliyor: devrik. Döndü sonda: kurallı. Tam kapıdan çıkıyordum ki cümlesinde yüklem söylenmemiş: eksiltili. Sepette elma, armut vardı cümlesinde yüklem sonda: kurallı.' } },
     { t: 'Olumlu mu, olumsuz mu?',
       steps: [
         { s: 'Üçüncü açı anlam. Yüklemdeki iş gerçekleşiyorsa cümle olumlu, gerçekleşmiyorsa olumsuz.',
@@ -114,6 +136,19 @@
           h: '<div class="an-tip">Bahçeleri güzel <span class="an-w">mi</span> güzel. → pekiştirme, soru cümlesi değil</div>' }
       ] },
 
+    { t: 'Anlam tuzakları',
+      steps: [{ s: 'Beş ifade var. Görünüşe değil, anlama ve yüklemdeki eke bakarak karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“Dedem dün çok hastaydı.” cümlesi anlamca olumsuzdur.', d: false, a: 'Üzücü ama hastalık gerçekleşmiş: olumlu.' },
+          { m: '“Bitmez tükenmez bir sabrı var.” cümlesi olumludur.', d: true, a: '-mez sıfat-fiilde; yüklem “var” olumlu.' },
+          { m: '“Ne arıyor ne soruyor.” cümlesi biçimce olumsuzdur.', d: false, a: 'Olumsuzluk eki yok: biçimce olumlu, anlamca olumsuz.' },
+          { m: '“Seni anlamıyor değilim.” cümlesi anlamca olumludur.', d: true, a: 'İki olumsuz birbirini götürür: anlıyorum.' },
+          { m: '“Ödevini bitirdin mi?” cümlesi biçimce olumsuzdur.', d: false, a: '“mi” soru ekidir, olumsuzluk eki değil.' }],
+        hint: 'Olumsuzluk unsuru (-ma, -maz, yok, değil) yüklemde mi? Sonra cümlenin gerçekte ne demek istediğini düşün.',
+        hintV: 'Olumsuzluk unsuru, yani ma, maz, yok, değil, yüklemde mi? Sonra cümlenin gerçekte ne demek istediğini düşün.',
+        why: 'Biçime yüklemdeki ek karar verir; anlama ise kastedilen. Üzücü olay, fiilimsideki -mez ve “mi” eki cümleyi olumsuz yapmaz.',
+        whyV: 'Biçime yüklemdeki ek karar verir; anlama ise kastedilen şey. Üzücü bir olay, fiilimsideki mez eki ve mi soru eki cümleyi olumsuz yapmaz.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisi <b>biçimce olumsuz, anlamca olumludur</b>?</p>',
         c: ['Aylardır ne arıyor ne soruyor.', 'Bu kasabada onu tanımayan yoktur.', 'Bugün hava hiç soğuk değil.', 'Ben bu kadar zor bir soruyu nasıl çözerim?'], a: 'B',
@@ -134,6 +169,15 @@
           h: '<div class="an-tip">Diğer birleşik türleri: şartlı (Çalışırsan kazanırsın.) · ki’li (Duydum ki gelmişsin.) · iç içe (“Yarın gel.” dedi.)</div>' }
       ] },
 
+    { t: 'Birleşik cümlenin türleri',
+      steps: [{ s: 'Her cümleyi yapısıyla eşleştir. Aralarında birleşik olmayan bir tane de var!' }],
+      ia: { tip: 'eslestir', q: '<p>Her cümleyi <b>yapısına göre</b> türüyle eşleştir.</p>', solBaslik: 'Cümle', sagBaslik: 'Yapısı',
+        sol: ['Eve gelince uyudu.', 'Çalışırsan kazanırsın.', 'Duydum ki gelmişsin.', '“Yarın gel.” dedi.', 'Annem dolma yaptı.'],
+        sag: ['Fiilimsili birleşik', 'Şartlı birleşik', 'ki’li birleşik', 'İç içe birleşik', 'Basit cümle'],
+        hint: 'Fiilimsi, -sa eki, “ki” bağlacı ve alıntı cümle ara. Kalıcı isim fiilimsi sayılmaz.',
+        hintV: 'Fiilimsi, sa eki, ki bağlacı ve alıntı cümle ara. Kalıcı isim fiilimsi sayılmaz.',
+        why: 'gelince zarf-fiil; çalışırsan şart; “ki” iki cümleyi bağlıyor; alıntı cümle “dedi”nin içinde. “dolma” kalıcı isim, fiilimsi değil: basit cümle.',
+        whyV: 'Gelince zarf fiildir; çalışırsan şart bildirir; ki bağlacı iki cümleyi bağlıyor; yarın gel cümlesi dedi yükleminin içinde bir alıntı. Dolma ise kalıcı isim, fiilimsi değil; o cümle basit.' } },
     { t: 'Sıralı, bağlı ve yalancısı',
       steps: [
         { s: 'Birden fazla yüklem virgülle ya da noktalı virgülle bağlanmışsa sıralı cümle olur. “Güneş doğdu, kuşlar öttü.”',
@@ -148,6 +192,15 @@
           h: '<div class="an-rule">Gerçek sıralı/bağlı: <b>yüklem</b> , <b>yüklem</b> · <b>yüklem</b> ve <b>yüklem</b></div>' }
       ] },
 
+    { t: 'Yapısına göre ayır',
+      steps: [{ s: 'Sekiz cümleyi dört kutuya ayır. Virgül ve bağlacın iki yüklemi bağlayıp bağlamadığına bak.' }],
+      ia: { tip: 'grup', q: '<p>Cümleleri <b>yapılarına</b> göre kutulara yerleştir.</p>',
+        gruplar: ['Basit', 'Birleşik', 'Sıralı', 'Bağlı'],
+        ogeler: [{ m: 'Ali ve Ayşe elma aldı.', g: 0 }, { m: 'Elma, armut, erik aldık.', g: 0 }, { m: 'Eve gelince uyudu.', g: 1 }, { m: 'Okumayı çok severim.', g: 1 },
+          { m: 'Kapıyı açtı, içeri girdi.', g: 2 }, { m: 'Güneş doğdu; kuşlar öttü.', g: 2 }, { m: 'Yorgundu ama çalıştı.', g: 3 }, { m: 'Koştu fakat yetişemedi.', g: 3 }],
+        hint: 'Önce yüklemleri say. Tek yüklem varsa fiilimsi ara; iki yüklem varsa onları virgül mü, bağlaç mı bağlıyor?',
+        why: '“Ali ve Ayşe”, “elma, armut” eş görevli sözcükler: tek yüklem, basit. Fiilimsililer birleşik; virgül ya da noktalı virgülle bağlı yüklemler sıralı; “ama, fakat” ile bağlananlar bağlı.',
+        whyV: 'Ali ve Ayşe, elma armut erik: bunlar eş görevli sözcükler, yüklem tek; cümle basit. Fiilimsi olanlar birleşik. Virgül ya da noktalı virgülle bağlanan yüklemler sıralı; ama, fakat bağlaçlarıyla bağlananlar ise bağlı.' } },
     { t: 'Dört açıyı birden uygulayalım',
       base: '<div class="an-big" style="font-size:18px">Bu güzel kasabada yaşamak bir ayrıcalıktı.</div>' +
         '<table class="an-tbl"><tr class="rv d1"><td><b>Türü</b></td><td>yüklem “ayrıcalıktı” isim → <b>isim cümlesi</b></td></tr>' +
@@ -162,6 +215,14 @@
         { s: 'Ve “yaşamak” bir isim-fiil. Cümlede fiilimsi var, yapısına göre birleşik. İşte cümlenin tam kimliği!', v: 'Ve yaşamak bir isim fiil. Cümlede fiilimsi var, yapısına göre birleşik. İşte cümlenin tam kimliği!', on: '.d4' }
       ] },
 
+    { t: 'Kaç yüklem var?',
+      steps: [{ s: 'Bu cümlede kaç yüklem var? Fiilimsileri yüklem sayma. Sayıyı kaydırıcıyla seç.' }],
+      ia: { tip: 'kaydir', q: '<p>“Yağmur dinince çocuklar sokağa koştu, top oynadı ve akşama kadar eve dönmedi.” Bu cümlede <b>kaç yüklem</b> var?</p>',
+        min: 1, max: 6, adim: 1, cevap: 3, tol: 0, birim: 'yüklem', etiket: [1, 2, 3, 4, 5, 6],
+        hint: 'Kip ve kişi eki alan çekimli fiilleri say. “dinince” bir zarf-fiildir.',
+        hintV: 'Kip ve kişi eki alan çekimli fiilleri say. Dinince bir zarf fiildir.',
+        why: 'Üç yüklem: koştu, oynadı, dönmedi. “dinince” zarf-fiil, yüklem değildir. Yüklemler virgülle ve “ve” bağlacıyla bağlanmış.',
+        whyV: 'Üç yüklem var: koştu, oynadı, dönmedi. Dinince bir zarf fiil, yüklem değildir. Yüklemler hem virgülle hem de ve bağlacıyla bağlanmış.' } },
     { t: 'Ara soru', cp: {
         q: '<p>“Yıllardır görmediğim arkadaşımla karşılaşmak beni çok mutlu etti.”</p><p>Bu cümleyle ilgili aşağıdakilerden hangisi <b>yanlıştır</b>?</p>',
         c: ['Yüklemi çekimli bir fiildir.', 'Yüklemi sonda olduğu için kurallıdır.', '“görmediğim” sözcüğü cümleyi olumsuz yapmıştır.', 'Fiilimsi bulunmaktadır.'], a: 'C',

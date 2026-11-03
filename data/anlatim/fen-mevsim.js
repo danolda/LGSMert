@@ -33,9 +33,17 @@
           h: '<table class="an-tbl"><tr><th></th><th>Dönme</th><th>Dolanma</th></tr><tr><td>Süre</td><td>24 saat</td><td>365 gün 6 saat</td></tr><tr><td>Sonuç</td><td>gece-gündüz, gün içinde gölge değişimi</td><td>eğiklikle birlikte mevsimler</td></tr></table>' }
       ] },
 
+    { t: 'Grupla: dönme mi, dolanma mı?',
+      steps: [{ s: 'Şimdi sen dene. Her sonucu, onu oluşturan harekete yerleştir. Önce karta, sonra kutusuna dokun.' }],
+      ia: { tip: 'grup', q: '<p>Her sonucu oluşturan harekete yerleştir.</p>', gruplar: ['Dönme (24 saat)', 'Dolanma + eğiklik'],
+        ogeler: [{ m: 'Gece ile gündüzün oluşması', g: 0 }, { m: 'Mevsimlerin oluşması', g: 1 },
+          { m: 'Güneş’in doğudan doğar gibi görünmesi', g: 0 }, { m: 'Gündüz süresinin aylara göre değişmesi', g: 1 },
+          { m: 'Gün içinde gölgenin yön ve boy değiştirmesi', g: 0 }, { m: 'Kuzey ile Güney’de zıt mevsimler', g: 1 }],
+        hint: 'Kendine sor: bu olay bir gün içinde mi tekrarlanıyor, yoksa yıl boyunca mı değişiyor?',
+        why: 'Bir gün içinde olanlar dönmeden; yıl içinde değişenler dolanma ve eksen eğikliğinden gelir. Gölgenin gün içindeki değişimi dönmeden, öğle gölgesinin aylara göre değişimi ise dolanmadandır.' } },
     { t: 'Mevsimler uzaklıktan olmaz',
       steps: [
-        { s: 'Şimdi çok yaygın bir yanlış inanışı bozalım. Pek çok kişi yazın Güneş’e yaklaştığımızı sanır. Öyle değil!' },
+        { s: 'Şimdi çok yaygın bir yanlış inanışı bozalım. Pek çok kişi yaz mevsiminde Güneş’e yaklaştığımızı sanır. Öyle değil!' },
         { s: 'Dünya Güneş’e en yakın konuma 3 Ocak civarında gelir. Tam o sırada bizim yarım kürede kış vardır.',
           h: '<div class="an-trap"><span class="an-l">3 Ocak: Güneş’e <b>en yakın</b> (≈ 147 milyon km) → Kuzey’de <b>kış</b></span><br><span class="an-l">4 Temmuz: Güneş’e <b>en uzak</b> (≈ 152 milyon km) → Kuzey’de <b>yaz</b></span></div>',
           v: 'Dünya Güneş’e en yakın konuma 3 Ocak civarında gelir. Tam o sırada bizim yarım kürede kış vardır.' },
@@ -75,6 +83,13 @@
           h: '<div class="an-trap">Türkiye dönencelerin dışında: ışınlar Türkiye’ye <b>hiçbir zaman</b> 90° ile gelmez, öğle gölgesi hep kuzeye düşer.</div>' }
       ] },
 
+    { t: 'Kaydır: eğiklik değişseydi',
+      steps: [{ s: 'Bir düşünce deneyi yapalım. Eksen eğikliği 23,5 derece değil de 30 derece olsaydı, Kuzey Kutup Dairesi hangi enleme kayardı? Sayı doğrusunda işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p>Eksen eğikliği <b>30°</b> olsaydı Kuzey Kutup Dairesi kaç derece enlemde olurdu?</p>',
+        min: 0, max: 90, adim: 0.5, cevap: 60, tol: 0, birim: '°', bas: 45, etiket: [0, 15, 30, 45, 60, 75, 90],
+        hint: 'Gerçek değeri nasıl bulmuştuk? Kutbun enleminden eğikliği çıkarmıştık.',
+        why: '90 − 30 = 60. Kutup dairesi her zaman 90’dan eğikliğin çıkarılmasıyla bulunur; dönence ise eğikliğe eşit olur, yani 30 derecede.',
+        whyV: 'Doksandan otuzu çıkarırız, altmış derece eder. Kutup dairesi her zaman doksandan eğikliğin çıkarılmasıyla bulunur. Dönence ise eğikliğe eşit olur, yani otuz derecede.' } },
     { t: 'Işının geliş açısı ve enerji',
       base: '<svg class="an-svg" viewBox="0 0 340 190" role="img" aria-label="Dik gelen demet dar alanı, eğik gelen demet geniş alanı aydınlatır">' +
         '<polygon points="40,20 90,20 90,120 40,120" fill="#f5b301" fill-opacity=".35" class="rv a1"/>' +
@@ -97,6 +112,13 @@
           h: '<div class="an-tip">Hafıza ipucu: <b>Dik → Dar alan → Dolu enerji</b> · <b>Eğik → Engin alan → Eksik enerji</b></div>' }
       ] },
 
+    { t: 'Boşluk: dik ışının sonucu',
+      steps: [{ s: 'Kuralı kendi elinle tamamla. Boşluğa, sonra doğru karta dokun.' }],
+      ia: { tip: 'bosluk', q: '<p>Dik gelen ışın için kuralı tamamla.</p>',
+        metin: 'Işın dik gelir → [_] alan aydınlanır → birim yüzeye [_] enerji düşer → öğle gölgesi [_] olur.',
+        secenek: ['dar', 'geniş', 'çok', 'az', 'kısa', 'uzun'], cevap: ['dar', 'çok', 'kısa'],
+        hint: 'Aynı miktarda ışığı küçük bir alana mı, büyük bir alana mı topladığını düşün.',
+        why: 'Dik ışın enerjiyi dar alana toplar; birim yüzeye çok enerji düşer, gölge kısalır. Toplam enerji değişmez, değişen dağıldığı alandır.' } },
     { t: 'Fener deneyi ve büyük tuzak',
       steps: [
         { s: 'LGS bu kuralı çoğu zaman bir deneyle sorar: özdeş fenerler, aynı uzaklıktan, farklı açılarla levhalara tutulur.' },
@@ -150,6 +172,13 @@
           v: 'Güzel bir ipucu: 21 Haziran’da gündüzü on iki saatten uzun olan şehir Kuzey’de, kısa olan Güney’dedir; tam on iki saatse Ekvator üzerindedir.' }
       ] },
 
+    { t: 'Eşleştir: tarih ve olay',
+      steps: [{ s: 'Tarihleri yerine oturtalım. Her tarihi, Kuzey Yarım Küre için doğru olayla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her tarihi Kuzey Yarım Küre’deki olayla eşleştir.</p>', solBaslik: 'Tarih', sagBaslik: 'Olay',
+        sol: ['21 Haziran', '21 Aralık', '21 Mart', '23 Eylül', '3 Ocak'],
+        sag: ['En uzun gündüz', 'En uzun gece', 'İlkbahar başlar', 'Sonbahar başlar', 'Güneş’e en yakın'],
+        hint: 'Kuzey Kutbu Güneş’e dönükken yaz başlar. Ekinokslardan hangisinden sonra gündüzler uzamaya devam eder?',
+        why: '21 Haziran en uzun gündüz, 21 Aralık en uzun gece. 21 Mart’ta ilkbahar, 23 Eylül’de sonbahar başlar. 3 Ocak’ta Güneş’e en yakınız ama Kuzey’de kış var.' } },
     { t: 'Gündüz uzuyor mu, uzun mu?',
       base: '<table class="an-tbl"><tr><th>Aralık</th><th>Kuzey’de gündüz</th></tr>' +
         '<tr class="rv u1"><td>21 Mart → 21 Haziran</td><td>uzar; gündüz &gt; gece</td></tr>' +
@@ -166,6 +195,16 @@
           h: '<div class="an-trap">“Gündüz uzuyor” ≠ “gündüz geceden uzun”. Ocak ayında Türkiye’de gündüzler uzar ama geceler hâlâ daha uzundur.</div>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı: tarih aralıkları',
+      steps: [{ s: 'Şimdi en sinsi tuzağı tarayalım. Kuzey Yarım Küre için her ifadeye doğru ya da yanlış de.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Kuzey Yarım Küre için her ifadeye karar ver.</p>',
+        ifadeler: [
+          { m: '21 Aralık – 21 Mart arasında gündüzler uzar.', d: true, a: 'Evet, 21 Aralık’tan sonra gündüz her gün biraz uzar.' },
+          { m: '21 Aralık – 21 Mart arasında gündüz geceden uzundur.', d: false, a: 'Uzuyor ama hâlâ kısa; gece 21 Mart’a kadar uzundur.' },
+          { m: '21 Haziran – 23 Eylül arasında gündüzler kısalır ama geceden uzundur.', d: true, a: 'Kısalma başlar, eşitlik 23 Eylül’de gelir.' },
+          { m: '23 Eylül – 21 Aralık arasında gündüzler uzar.', d: false, a: 'Bu aralıkta gündüz kısalmaya devam eder.' }],
+        hint: 'İki soruyu ayrı sor: gündüz uzuyor mu kısalıyor mu? Gündüz 12 saatten uzun mu kısa mı?',
+        why: 'Uzama yönü gündönümlerinde, uzunluk ise ekinokslarda değişir. Bu ikisini karıştırmak LGS’nin en sık tuzağıdır.' } },
     { t: 'Gölge boyu ve dik gelme',
       base: '<svg class="an-svg" viewBox="0 0 340 170" role="img" aria-label="Türkiye’de öğle vakti gölge haziranda kısa, aralıkta uzun">' +
         '<line x1="10" y1="130" x2="330" y2="130" class="ln" stroke-width="2"/>' +
@@ -185,6 +224,12 @@
         { s: 'Grafikte gölge sıfıra iniyorsa şehir kesinlikle iki dönence arasındadır. Hiç sıfır olmuyorsa dönencelerin dışındadır.' }
       ] },
 
+    { t: 'Dokun: gölgenin kaybolduğu kuşaklar',
+      steps: [{ s: 'Haritada düşünelim. Öğle vakti gölgenin yılda en az bir gün tamamen kaybolabildiği kuşakların hepsine dokun, sonra kontrol et.' }],
+      ia: { tip: 'gorselsec', q: '<p>Öğle gölgesinin yılda <b>en az bir gün sıfır</b> olabildiği kuşakların hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 272" role="group" aria-label="Dünya’nın kuzeyden güneye altı kuşağı"><g data-b="z0" aria-label="Kuzey Kutup Dairesi’nin içi"><rect x="10" y="8" width="320" height="38" rx="8" class="box"/><text x="170" y="33" text-anchor="middle" font-size="14">Kuzey Kutup Dairesi’nin içi</text></g><g data-b="z1" aria-label="Kutup Dairesi – Yengeç (Türkiye)"><rect x="10" y="52" width="320" height="38" rx="8" class="box"/><text x="170" y="77" text-anchor="middle" font-size="14">Kutup Dairesi – Yengeç (Türkiye)</text></g><g data-b="z2" aria-label="Yengeç Dönencesi – Ekvator"><rect x="10" y="96" width="320" height="38" rx="8" class="box"/><text x="170" y="121" text-anchor="middle" font-size="14">Yengeç Dönencesi – Ekvator</text></g><g data-b="z3" aria-label="Ekvator – Oğlak Dönencesi"><rect x="10" y="140" width="320" height="38" rx="8" class="box"/><text x="170" y="165" text-anchor="middle" font-size="14">Ekvator – Oğlak Dönencesi</text></g><g data-b="z4" aria-label="Oğlak – Güney Kutup Dairesi"><rect x="10" y="184" width="320" height="38" rx="8" class="box"/><text x="170" y="209" text-anchor="middle" font-size="14">Oğlak – Güney Kutup Dairesi</text></g><g data-b="z5" aria-label="Güney Kutup Dairesi’nin içi"><rect x="10" y="228" width="320" height="38" rx="8" class="box"/><text x="170" y="253" text-anchor="middle" font-size="14">Güney Kutup Dairesi’nin içi</text></g></svg>', dogru: ['z2', 'z3'],
+        hint: 'Gölgenin sıfır olması için ışın tam tepeden, yani dik gelmeli. Işınlar hangi iki çizgi arasına dik gelebiliyordu?',
+        why: 'Işınlar yalnızca Yengeç ile Oğlak dönenceleri arasına dik gelir; gölge de yalnızca orada sıfır olabilir. Türkiye bu kuşağın kuzeyinde, bu yüzden bizde gölge hiç kaybolmaz.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Bir şekilde Güneş solda çizilmiş, Dünya’nın Kuzey Kutbu ise Güneş’ten <b>uzağa</b> eğik görünüyor. Dünya’nın bu konumda olduğu gün için hangisi <b>doğrudur</b>?</p>',
         c: ['Türkiye’de yaz mevsimi başlar.', 'Güneş ışınları Oğlak Dönencesi’ne dik gelir.', 'Ekvator’da gündüz 12 saatten uzundur.', 'Kuzey Kutup Dairesi’nde 24 saat gündüz yaşanır.'], a: 'B',
@@ -211,6 +256,13 @@
         { s: 'Sorularda geçen “eş yükseltide” ifadesi de boşuna değil; yükseltinin sıcaklığa etkisini ortadan kaldırmak için yazılır.' }
       ] },
 
+    { t: 'Ele: Kuzey Yarım Küre kesin değil',
+      steps: [{ s: 'Dört şehrin eş yükseltideki ortalama sıcaklıkları verildi. Kuzey Yarım Küre’de olduğu kesin söylenemeyenleri ele.' }],
+      ia: { tip: 'eleme', q: '<p>Eş yükseltideki şehirler. <b>Kuzey Yarım Küre’de olduğu kesin söylenemeyenleri</b> ele.</p>',
+        ogeler: ['Ocak 3 °C · Temmuz 25 °C', 'Ocak 28 °C · Temmuz 15 °C', 'Yalnızca temmuz: 30 °C', 'Ocak −6 °C · Temmuz 19 °C', 'Ocak 21 °C · Temmuz 11 °C'],
+        ele: [1, 2, 4],
+        hint: 'Tek bir değere değil, ocaktan temmuza sıcaklığın arttığına mı azaldığına mı bak.',
+        why: 'Ocaktan temmuza ısınan şehirler Kuzey’dedir. Temmuzu soğuk olanlar Güney’de; tek bir sıcaklık değeri ise yarım küre söylemez.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Eş yükseltideki X şehrinde ocak ayı ortalama sıcaklığı <b>27 °C</b>, temmuz ayı ortalama sıcaklığı <b>14 °C</b>’tur. Buna göre hangisi <b>kesinlikle doğrudur</b>?</p>',
         c: ['X şehri Güney Yarım Küre’dedir.', 'X şehri Ekvator üzerindedir.', 'X şehrinde temmuz ayında yaz yaşanır.', 'X şehrine ışınlar hiç dik gelmez.'], a: 'A',

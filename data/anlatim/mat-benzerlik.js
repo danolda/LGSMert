@@ -33,6 +33,10 @@
           h: '<div class="an-trap">Kenarı 3 cm kare ile kenarı 3 cm, açıları 60°-120° eşkenar dörtgen <b>eş değildir</b>. Alanları eşit iki şekil de eş olmayabilir.</div>' }
       ] },
 
+    { t: 'Eşleştir: harf sırası',
+      steps: [{ s: 'Eş şekillerde karşılıkları harf sırası belirler. ABC ≅ FDE eşliğine göre her elemanı eşiyle eşleştir.', v: 'Eş şekillerde karşılıkları harf sırası belirler. A B C üçgeni, F D E üçgenine eş. Bu eşliğe göre her elemanı eşiyle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p><b>ABC ≅ FDE</b> olduğuna göre karşılık gelen elemanları eşleştir.</p>', solBaslik: 'ABC', sagBaslik: 'FDE', sol: ['[AB]', '[BC]', '[AC]', '∠B', '∠C'], sag: ['[FD]', '[DE]', '[FE]', '∠D', '∠E'], hint: 'Harfleri alt alta yaz: A ↔ F, B ↔ D, C ↔ E. Bir kenar, iki ucunun eşlerini birleştirir.', hintV: 'Harfleri alt alta yaz: A’nın eşi F, B’nin eşi D, C’nin eşi E. Bir kenar, iki ucunun eşlerini birleştirir.', why: 'Sıra A–F, B–D, C–E. Bu yüzden AB ↔ FD, BC ↔ DE, AC ↔ FE; B açısı D’ye, C açısı E’ye eş. Şekle değil, yazılıştaki harf sırasına bakılır.', whyV: 'Sıra A ile F, B ile D, C ile E. Bu yüzden A B’nin eşi F D, B C’nin eşi D E, A C’nin eşi F E; B açısı D’ye, C açısı E’ye eş. Şekle değil, yazılıştaki harf sırasına bakılır.' } },
+
     { t: 'Benzer şekiller',
       base: '<svg class="an-svg" viewBox="0 0 330 120" role="img" aria-label="4 e 6 ile 6 ya 9 dikdörtgenleri benzer; 6 ya 8 dikdörtgeni benzer değil"><rect x="10" y="24" width="72" height="48" class="boxa "/><path class="ln " d="M22 24v48M34 24v48M46 24v48M58 24v48M70 24v48M10 36h72M10 48h72M10 60h72"/><rect x="102" y="0" width="108" height="72" class="boxa rv r1"/><path class="ln rv r1" d="M114 0v72M126 0v72M138 0v72M150 0v72M162 0v72M174 0v72M186 0v72M198 0v72M102 12h108M102 24h108M102 36h108M102 48h108M102 60h108"/><rect x="226" y="0" width="96" height="72" class="boxa rv r2"/><path class="ln rv r2" d="M238 0v72M250 0v72M262 0v72M274 0v72M286 0v72M298 0v72M310 0v72M226 12h96M226 24h96M226 36h96M226 48h96M226 60h96"/><text x="46" y="94" font-size="13" text-anchor="middle" font-weight="700">4 × 6</text><text x="156" y="94" font-size="13" text-anchor="middle" font-weight="700" class="rv r1">6 × 9</text><text x="156" y="112" font-size="12" text-anchor="middle" class="rv r1" style="fill:var(--ok)">4/6 = 6/9 ✓</text><text x="274" y="94" font-size="13" text-anchor="middle" font-weight="700" class="rv r2">6 × 8</text><text x="274" y="112" font-size="12" text-anchor="middle" class="rv r2" style="fill:var(--bad)">4/6 ≠ 6/8 ✗</text></svg>',
       steps: [
@@ -55,6 +59,19 @@
         { s: 'Benzerlik için kenarlar eklenmez, aynı sayıyla çarpılır. Unutma: eş olan her şekil benzerdir, oranları 1’dir.', v: 'Benzerlik için kenarlar eklenmez, aynı sayıyla çarpılır. Unutma: eş olan her şekil benzerdir; oranları birdir.' }
       ] },
 
+    { t: 'Grupla: her zaman benzer mi?',
+      steps: [{ s: 'Bazı şekil çiftleri büyüklükleri ne olursa olsun benzerdir, bazıları değil. Açılar sabit mi, kenar oranları sabit mi, düşün.' }],
+      ia: { tip: 'grup', q: '<p>Her şekil çiftini yerleştir.</p>', gruplar: ['Her zaman benzer', 'Benzer olmayabilir'], ogeler: [
+            { m: 'İki kare', g: 0 },
+            { m: 'İki çember', g: 0 },
+            { m: 'İki eşkenar üçgen', g: 0 },
+            { m: 'İki ikizkenar dik üçgen', g: 0 },
+            { m: 'İki düzgün altıgen', g: 0 },
+            { m: 'İki dikdörtgen', g: 1 },
+            { m: 'İki eşkenar dörtgen', g: 1 },
+            { m: 'İki dik üçgen', g: 1 },
+            { m: 'İki ikizkenar üçgen', g: 1 }], hint: 'Hem açıları hem kenar oranları her zaman aynı kalıyor mu? Biri değişebiliyorsa benzer olmayabilir.', why: 'Kare, eşkenar üçgen, düzgün altıgen ve çemberde biçim tek türlüdür. İkizkenar dik üçgenin açıları hep 45°, 45°, 90°: her zaman benzer. Dikdörtgende oran, eşkenar dörtgende açı, dik ve ikizkenar üçgende diğer açılar değişebilir.', whyV: 'Kare, eşkenar üçgen, düzgün altıgen ve çemberde biçim tek türlüdür. İkizkenar dik üçgenin açıları hep 45, 45 ve 90 derece; bu yüzden her zaman benzer. Dikdörtgende kenar oranı, eşkenar dörtgende açılar, dik üçgende ve ikizkenar üçgende de diğer açılar değişebilir.' } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Kenar uzunlukları 4 cm ve 10 cm olan bir dikdörtgene <b>benzer</b> olan dikdörtgen aşağıdakilerden hangisidir?</p>',
         c: ['6 cm × 12 cm', '8 cm × 14 cm', '5 cm × 11 cm', '6 cm × 15 cm'], a: 'D',
@@ -75,6 +92,14 @@
         { s: 'Fotokopide %150 büyütme k = 1,5, %80 küçültme k = 0,8 demek. Art arda iki kopyada oranlar çarpılır.', v: 'Fotokopide yüzde yüz elli büyütme, k bir buçuk; yüzde seksen küçültme, k sıfır virgül sekiz demek. Art arda iki kopyada oranlar çarpılır.' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Benzerlik oranının uzunluklara, açılara ve alana etkisini sına. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'Kenarları 2 katına çıkan karenin alanı da 2 katına çıkar.', d: false, a: 'Alan k · k ile çarpılır: 4 katı.' },
+            { m: 'Benzerlik oranı 3 ise çevreler oranı da 3’tür.', d: true, a: 'Bütün uzunluklar, çevre de, k katıdır.' },
+            { m: 'Benzer üçgenlerden büyük olanın açıları da daha büyüktür.', d: false, a: 'Açılar hiç değişmez.' },
+            { m: '%150 büyütülen bir fotokopi %50’ye küçültülürse ilk boyut elde edilmez.', d: true, a: '1,5 · 0,5 = 0,75: ilk boyutun %75’i.' }], hint: 'Uzunluklar k ile, alan k · k ile çarpılır, açılar değişmez. Art arda kopyalarda oranlar çarpılır.', why: 'Benzerlikte bütün uzunluklar k katı, alan k<sup>2</sup> katıdır, açılar aynı kalır. Art arda iki kopyada oranlar çarpılır: 1,5 · 0,5 = 0,75.', whyV: 'Benzerlikte bütün uzunluklar k katı, alan k kare katıdır; açılar aynı kalır. Art arda iki kopyada oranlar çarpılır: bir buçuk çarpı sıfır virgül beş, sıfır virgül yetmiş beş eder.' } },
+
     { t: 'Oranla eksik kenarı bulmak',
       base: '<table class="an-tbl"><tr><th>Bilinen</th><th>k</th><th>Sonuç</th></tr>' +
         '<tr class="rv o1"><td>küçük: 4, 6, 7 · büyüğün en kısası 10</td><td>{{10|4}} = 2,5</td><td>en uzun: 7 · 2,5 = <b>17,5</b></td></tr>' +
@@ -84,6 +109,10 @@
         { s: 'En kısa kenar en kısayla eşleşir: 10 bölü 4, 2,5. En uzun kenar 7 çarpı 2,5 = 17,5 cm.', v: 'En kısa kenar en kısayla eşleşir: on bölü dört, iki buçuk. En uzun kenar, yedi çarpı iki buçuk; on yedi buçuk santimetre.', on: '.o1' },
         { s: 'Çevreler de aynı oranda: 45 bölü 30, {{3|2}}. 8 cm’lik kenarın karşılığı 12 cm.', v: 'Çevreler de aynı oranda: kırk beş bölü otuz, ikide üç. Sekiz santimetrelik kenarın karşılığı on iki santimetre.', on: '.o2' }
       ] },
+
+    { t: 'Boşluk doldur: benzerlik oranı',
+      steps: [{ s: 'Önce karşılık gelen iki kenardan benzerlik oranını bul, sonra eksik kenarı hesapla.' }],
+      ia: { tip: 'bosluk', q: '<p>ABC ∼ DEF; |AB| = 6 cm, |BC| = 9 cm, |DE| = 10 cm.</p>', metin: 'k = |DE| ÷ |AB| = [_]<br>|EF| = [_] cm', secenek: ['{{5|3}}', '{{3|5}}', '15', '13', '5,4', '4'], cevap: ['{{5|3}}', '15'], hint: 'DE, AB’nin karşılığı. Büyüğün küçüğe oranını bul, sonra BC’yi bu oranla çarp.', hintV: 'D E, A B’nin karşılığı. Büyüğün küçüğe oranını bul, sonra B C’yi bu oranla çarp.', why: 'k = {{10|6}} = {{5|3}}. |EF| = 9 · {{5|3}} = 15 cm. Kenara 4 ekleyip 13 demek tuzak: benzerlikte kenarlar eklenmez, aynı oranla çarpılır.', whyV: 'k, altıda on, yani üçte beş. E F, 9 çarpı üçte beş, 15 santimetre. Kenara 4 ekleyip 13 demek tuzaktır: benzerlikte kenarlar eklenmez, aynı oranla çarpılır.' } },
 
     { t: 'Çözümlü örnek: hangi kenar?',
       steps: [
@@ -102,6 +131,10 @@
         { s: 'Mesela “1 sağ, 2 aşağı” giden eğik kenar, büyüğünde “2 sağ, 4 aşağı” gidiyor. İki adım da 2 ile çarpıldı, açı korundu.', v: 'Mesela bir sağ, iki aşağı giden eğik kenar, büyüğünde iki sağ, dört aşağı gidiyor. İki adım da ikiyle çarpıldı; açı korundu.', on: '.b2' },
         { s: 'Kâğıt kesmede de aynı fikir: 12 × 18’lik kâğıttan kısa kenarı 8 olan benzer parça, 8 × 12 olur.', v: 'Kâğıt kesmede de aynı fikir: on ikiye on sekizlik kâğıttan, kısa kenarı sekiz olan benzer parça, sekize on iki olur.' }
       ] },
+
+    { t: 'Dokun: benzer dikdörtgenler',
+      steps: [{ s: 'Her dikdörtgenin yatay ve dikey kare sayısı üstünde yazıyor. Kenar oranlarını karşılaştır; döndürülmüş bir dikdörtgen de benzer olabilir.' }],
+      ia: { tip: 'gorselsec', q: '<p>Yatayda 3, dikeyde 2 kare olan bir dikdörtgene <b>benzer</b> olanların hepsine dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 116" role="img" aria-label="Kareli zeminde beş dikdörtgen: 6 ye 4, 5 e 3, 4 e 6, 4 e 3, 9 a 6 kare"><g data-b="a" aria-label="1. dikdörtgen"><rect x="3" y="4" width="66" height="108" rx="8" class="box"/><rect x="9" y="42" width="54" height="36" class="boxa" style="stroke-width:1.5"/><path class="ln" d="M18 42 V78 M27 42 V78 M36 42 V78 M45 42 V78 M54 42 V78 M9 51 H63 M9 60 H63 M9 69 H63" style="stroke-width:.8"/><text x="36" y="24" text-anchor="middle" font-size="14" class="mut">6 × 4</text><text x="36" y="106" text-anchor="middle" font-size="14" font-weight="700">1</text></g><g data-b="b" aria-label="2. dikdörtgen"><rect x="73" y="4" width="57" height="108" rx="8" class="box"/><rect x="79" y="46" width="45" height="27" class="boxa" style="stroke-width:1.5"/><path class="ln" d="M88 46 V73 M97 46 V73 M106 46 V73 M115 46 V73 M79 55 H124 M79 64 H124" style="stroke-width:.8"/><text x="101" y="24" text-anchor="middle" font-size="14" class="mut">5 × 3</text><text x="101" y="106" text-anchor="middle" font-size="14" font-weight="700">2</text></g><g data-b="c" aria-label="3. dikdörtgen"><rect x="134" y="4" width="48" height="108" rx="8" class="box"/><rect x="140" y="33" width="36" height="54" class="boxa" style="stroke-width:1.5"/><path class="ln" d="M149 33 V87 M158 33 V87 M167 33 V87 M140 42 H176 M140 51 H176 M140 60 H176 M140 69 H176 M140 78 H176" style="stroke-width:.8"/><text x="158" y="24" text-anchor="middle" font-size="14" class="mut">4 × 6</text><text x="158" y="106" text-anchor="middle" font-size="14" font-weight="700">3</text></g><g data-b="d" aria-label="4. dikdörtgen"><rect x="186" y="4" width="48" height="108" rx="8" class="box"/><rect x="192" y="46" width="36" height="27" class="boxa" style="stroke-width:1.5"/><path class="ln" d="M201 46 V73 M210 46 V73 M219 46 V73 M192 55 H228 M192 64 H228" style="stroke-width:.8"/><text x="210" y="24" text-anchor="middle" font-size="14" class="mut">4 × 3</text><text x="210" y="106" text-anchor="middle" font-size="14" font-weight="700">4</text></g><g data-b="e" aria-label="5. dikdörtgen"><rect x="238" y="4" width="93" height="108" rx="8" class="box"/><rect x="244" y="33" width="81" height="54" class="boxa" style="stroke-width:1.5"/><path class="ln" d="M253 33 V87 M262 33 V87 M271 33 V87 M280 33 V87 M289 33 V87 M298 33 V87 M307 33 V87 M316 33 V87 M244 42 H325 M244 51 H325 M244 60 H325 M244 69 H325 M244 78 H325" style="stroke-width:.8"/><text x="284" y="24" text-anchor="middle" font-size="14" class="mut">9 × 6</text><text x="284" y="106" text-anchor="middle" font-size="14" font-weight="700">5</text></g></svg>', dogru: ['a', 'c', 'e'], hint: 'Her dikdörtgende uzun kenarı kısa kenara böl. Oran {{3|2}} mi?', hintV: 'Her dikdörtgende uzun kenarı kısa kenara böl. Oran ikide üç mü?', why: '6 × 4, 9 × 6 ve dik duran 4 × 6’da uzun kenar kısanın 1,5 katı: benzerler. 5 × 3’te oran {{5|3}}, 4 × 3’te {{4|3}}. Dönmüş olması benzerliği bozmaz.', whyV: '6’ya 4’lük, 9’a 6’lık ve dik duran 4’e 6’lık dikdörtgenlerde uzun kenar kısanın bir buçuk katı: hepsi benzer. 5’e 3’lükte oran üçte beş, 4’e 3’lükte üçte dört. Dikdörtgenin dönmüş olması benzerliği bozmaz.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Benzer iki üçgenin çevreleri 24 cm ve 36 cm’dir. Küçük üçgenin 6 cm’lik kenarına karşılık gelen, büyük üçgenin kenarı kaç cm’dir?</p>',
@@ -122,6 +155,10 @@
         { s: 'Kural: kısa kenar kısa kenara, uzun kenar uzun kenara karşılık gelir. Oranları hep aynı sırayla yaz.',
           h: '<div class="an-trap">Oranı yazarken iki kesri de aynı sırayla kur: {{küçük|büyük}} = {{küçük|büyük}}</div>' }
       ] },
+
+    { t: 'Kaydır: kelebekte kesişim',
+      steps: [{ s: 'Kelebek kalıbını kullan: paralel kenarların oranı, kesişim noktasının çapraz doğru parçalarını hangi oranda böldüğünü de verir.' }],
+      ia: { tip: 'kaydir', q: '<p>[AB] ∥ [CD], |AB| = 3 cm, |CD| = 6 cm. [AD] ile [BC], P noktasında kesişiyor ve |AD| = 12 cm. <b>|AP|</b> kaç cm’dir?</p>', min: 0, max: 12, adim: 0.5, cevap: 4, birim: 'cm', etiket: [0, 2, 4, 6, 8, 10, 12], hint: 'PAB ile PDC benzer üçgenler. Benzerlik oranı {{3|6}} ise AP ile PD hangi oranda?', hintV: 'P A B ile P D C benzer üçgenler. Benzerlik oranı altıda üç ise A P ile P D hangi oranda?', why: 'Oran {{3|6}} = {{1|2}}: AP ile PD 1’e 2 oranında. 12 cm 3 parçaya bölünür, her parça 4 cm: |AP| = 4 cm, |PD| = 8 cm. 6 cm demek P’yi orta nokta sanmaktır.', whyV: 'Oran yarım, yani A P ile P D, 1’e 2 oranında. 12 santimetre 3 eş parçaya bölünür, her parça 4 santimetre: A P 4, P D 8 santimetre. 6 demek P’yi orta nokta sanmaktır.' } },
 
     { t: 'Gölge ve ışık',
       base: '<svg class="an-svg" viewBox="0 0 330 150" role="img" aria-label="Güneş ışınları paralel: Ali ile gölgesi ve ağaç ile gölgesi benzer dik üçgenler oluşturur"><path class="ln" d="M8 130H322" style="stroke-width:2"/><path d="M40 130V98" style="stroke:var(--c);stroke-width:5;stroke-linecap:round"/><circle cx="40" cy="94" r="5" style="fill:var(--c)"/><path class="st2 dr s1" d="M40 92L80 130" style="stroke-dasharray:5 4"/><path class="rv s1" d="M40 130H80" style="stroke:var(--muted);stroke-width:5;opacity:.6"/><text x="34" y="116" font-size="12" text-anchor="end" class="acc">1,6</text><text x="60" y="145" font-size="12" text-anchor="middle" class="rv s1">2</text><path d="M170 130V40" style="stroke:var(--ok);stroke-width:6;stroke-linecap:round"/><circle cx="170" cy="40" r="20" style="fill:var(--ok);fill-opacity:.6"/><path class="st2 dr s2" d="M170 34L290 130" style="stroke-dasharray:5 4"/><path class="rv s2" d="M170 130H290" style="stroke:var(--muted);stroke-width:5;opacity:.6"/><text x="160" y="96" font-size="13" text-anchor="end" font-weight="700" style="fill:var(--ok)">h = ?</text><text x="230" y="145" font-size="12" text-anchor="middle" class="rv s2">15</text><text x="320" y="24" font-size="12" text-anchor="end" class="rv s3" style="fill:var(--noteline)">paralel ışınlar</text></svg>',

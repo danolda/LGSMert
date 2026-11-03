@@ -36,6 +36,10 @@
         { s: '“Yan ayrıt” ile “taban ayrıtı”nı karıştırma: n-gen prizmada 2n taban ayrıtı, n yan ayrıt var.', v: 'Yan ayrıt ile taban ayrıtını karıştırma: n kenarlı prizmada iki n taban ayrıtı, n tane yan ayrıt var.' }
       ] },
 
+    { t: 'Eşleştir: yüz ve ayrıt sayıları',
+      steps: [{ s: 'Prizmada ve piramitte yüz, köşe, ayrıt sayılarının kurallarını kullan. Her cismi doğru sayılarla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her cismi yüz ve ayrıt sayısıyla eşleştir.</p>', solBaslik: 'Cisim', sagBaslik: 'Yüz · ayrıt', sol: ['Beşgen prizma', 'Kare piramit', 'Altıgen piramit', 'Üçgen prizma', 'Sekizgen prizma'], sag: ['7 yüz, 15 ayrıt', '5 yüz, 8 ayrıt', '7 yüz, 12 ayrıt', '5 yüz, 9 ayrıt', '10 yüz, 24 ayrıt'], hint: 'n-gen prizma: n + 2 yüz, 3n ayrıt. n-gen piramit: n + 1 yüz, 2n ayrıt. Yüz sayısı aynı çıkanları ayrıtla ayır.', hintV: 'Tabanı n kenarlı prizmada n artı 2 yüz, 3 n ayrıt var. Piramitte n artı 1 yüz, 2 n ayrıt. Yüz sayısı aynı çıkanları ayrıt sayısıyla ayır.', why: 'Beşgen prizma 5 + 2 = 7 yüz, 15 ayrıt; altıgen piramit de 7 yüzlü ama 12 ayrıtlı. Üçgen prizma ile kare piramit 5 yüzlü: ayrıtları 9 ve 8. Sekizgen prizma 10 yüz, 24 ayrıt.', whyV: 'Beşgen prizmanın 7 yüzü, 15 ayrıtı var; altıgen piramit de 7 yüzlü ama 12 ayrıtlı. Üçgen prizma ile kare piramidin ikisi de 5 yüzlü: ayrıtları 9 ve 8. Sekizgen prizmanın 10 yüzü, 24 ayrıtı var.' } },
+
     { t: 'Prizmanın açınımı ve ölçüleri',
       base: '<svg class="an-svg" viewBox="0 0 330 182" role="img" aria-label="Tabanı 3-4-5 cm dik üçgen, yüksekliği 6 cm olan prizmanın açınımı: iki üçgen ve üç dikdörtgen"><rect x="20" y="48" width="42" height="84" class="rv a1" style="fill:var(--c);fill-opacity:.35;stroke:var(--c);stroke-width:2"/><text x="41" y="95" font-size="14" text-anchor="middle" font-weight="700" class="rv a1">3</text><rect x="62" y="48" width="56" height="84" class="rv a1" style="fill:var(--noteline);fill-opacity:.35;stroke:var(--noteline);stroke-width:2"/><text x="90" y="95" font-size="14" text-anchor="middle" font-weight="700" class="rv a1">4</text><rect x="118" y="48" width="70" height="84" class="rv a1" style="fill:var(--ok);fill-opacity:.35;stroke:var(--ok);stroke-width:2"/><text x="153" y="95" font-size="14" text-anchor="middle" font-weight="700" class="rv a1">5</text><path class="boxa rv a2" d="M62 48L118 48L62 6Z" style="stroke-width:2"/><path class="boxa rv a2" d="M62 132L118 132L62 174Z" style="stroke-width:2"/><text x="8" y="94" font-size="12" class="mut">6</text><path class="st dr a3" d="M20 48H188" style="stroke-width:3.5"/><text x="200" y="48" font-size="12.5" class="acc rv a3">çevre = 3 + 4 + 5 = 12</text><text x="200" y="72" font-size="12.5" class="rv a4">yanal = 12 · 6 = 72</text><text x="200" y="94" font-size="12.5" class="rv a4">taban = 3 · 4 ÷ 2 = 6</text><text x="200" y="116" font-size="12.5" font-weight="700" class="acc rv a4">yüzey = 2 · 6 + 72 = 84</text><text x="200" y="138" font-size="12.5" font-weight="700" class="rv a4" style="fill:var(--noteline)">hacim = 6 · 6 = 36</text></svg>',
       steps: [
@@ -47,6 +51,10 @@
           h: '<div class="an-tip">Küp: ayrıtlar 12a, yüzey 6a<sup>2</sup>, hacim a<sup>3</sup> &nbsp;·&nbsp; Dikdörtgenler prizması: 4(a + b + c), 2(ab + ac + bc), abc</div>' }
       ] },
 
+    { t: 'Boşluk doldur: kare prizma',
+      steps: [{ s: 'Açınımı aklında canlandır: iki kare taban ve yan yana dört dikdörtgen. Yanal alanı, yüzey alanını ve hacmi bul.' }],
+      ia: { tip: 'bosluk', q: '<p>Taban ayrıtı 3 cm, yüksekliği 5 cm olan kare dik prizma.</p>', metin: 'Yanal alan = [_] cm²<br>Yüzey alanı = [_] cm²<br>Hacim = [_] cm³', secenek: ['60', '78', '45', '69', '75', '15'], cevap: ['60', '78', '45'], hint: 'Yanal yüzler birlikte tek bir dikdörtgen: bir kenarı taban çevresi, diğeri yükseklik. Yüzey alanına iki tabanı ekle.', why: 'Yanal alan 12 · 5 = 60 cm². İki taban 2 · 9 = 18, yüzey alanı 78 cm². Hacim 9 · 5 = 45 cm³. Tek taban ekleyip 69 demek tipik hata.', whyV: 'Taban çevresi 12, yanal alan 12 çarpı 5, yani 60 santimetrekare. İki taban 18 santimetrekare eder; yüzey alanı 78. Hacim, taban alanı 9 çarpı 5, yani 45 santimetreküp. Tek taban ekleyip 69 demek tipik hatadır.' } },
+
     { t: 'Küp açınımı',
       base: '<svg class="an-svg" viewBox="0 0 330 156" role="img" aria-label="Küp açınımı: 1 ile 3, 2 ile 4, 5 ile 6 karşılıklı yüzler"><rect x="106" y="6" width="36" height="36" class="box" style="stroke-width:2"/><rect x="108" y="8" width="32" height="32" class="rv k1" style="fill:var(--c);fill-opacity:.45"/><text x="124" y="30" font-size="17" text-anchor="middle" font-weight="700">1</text><rect x="70" y="42" width="36" height="36" class="box" style="stroke-width:2"/><rect x="72" y="44" width="32" height="32" class="rv k2" style="fill:var(--noteline);fill-opacity:.45"/><text x="88" y="66" font-size="17" text-anchor="middle" font-weight="700">2</text><rect x="106" y="42" width="36" height="36" class="box" style="stroke-width:2"/><rect x="108" y="44" width="32" height="32" class="rv k3" style="fill:var(--ok);fill-opacity:.45"/><text x="124" y="66" font-size="17" text-anchor="middle" font-weight="700">5</text><rect x="142" y="42" width="36" height="36" class="box" style="stroke-width:2"/><rect x="144" y="44" width="32" height="32" class="rv k2" style="fill:var(--noteline);fill-opacity:.45"/><text x="160" y="66" font-size="17" text-anchor="middle" font-weight="700">4</text><rect x="106" y="78" width="36" height="36" class="box" style="stroke-width:2"/><rect x="108" y="80" width="32" height="32" class="rv k1" style="fill:var(--c);fill-opacity:.45"/><text x="124" y="102" font-size="17" text-anchor="middle" font-weight="700">3</text><rect x="106" y="114" width="36" height="36" class="box" style="stroke-width:2"/><rect x="108" y="116" width="32" height="32" class="rv k3" style="fill:var(--ok);fill-opacity:.45"/><text x="124" y="138" font-size="17" text-anchor="middle" font-weight="700">6</text><text x="200" y="40" font-size="13" class="acc rv k1">1 ↔ 3</text><text x="200" y="62" font-size="13" class="rv k2" style="fill:var(--noteline)">2 ↔ 4</text><text x="200" y="84" font-size="13" class="rv k3" style="fill:var(--ok)">5 ↔ 6</text><text x="200" y="110" font-size="11.5" class="mut">arada bir kare olan</text><text x="200" y="125" font-size="11.5" class="mut">iki kare karşılıklıdır</text></svg>',
       steps: [
@@ -55,6 +63,10 @@
         { s: '2 ile 4 de aynı sırada, araları bir kare. Karşılıklı!', v: 'İki ile dört de aynı sırada, araları bir kare. Karşılıklı!', on: '.k2' },
         { s: 'Geriye 5 ile 6 kalıyor. Kenarı ortak iki kare ise asla karşılıklı olamaz, onlar komşudur.', v: 'Geriye beş ile altı kalıyor. Kenarı ortak iki kare ise asla karşılıklı olamaz; onlar komşudur.', on: '.k3' }
       ] },
+
+    { t: 'Dokun: karşılıklı yüz',
+      steps: [{ s: 'Bu açınımı katladığını düşün. 4 numaralı yüzün karşısına hangi yüz gelir? Önce komşu yüzleri ele.' }],
+      ia: { tip: 'gorselsec', q: '<p>Açınım katlanıp küp yapılınca <b>4 numaralı</b> yüzün karşısına gelen yüze dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 160" role="img" aria-label="Küp açınımı: üst sırada 1 ve 2, orta sırada 3, 4, 5, alt sırada 6 numaralı kareler, merdiven biçiminde"><g data-b="f1" aria-label="1 numaralı yüz"><rect x="70" y="5" width="50" height="50" class="box"/><text x="95" y="37" text-anchor="middle" font-size="20" font-weight="700">1</text></g><g data-b="f2" aria-label="2 numaralı yüz"><rect x="120" y="5" width="50" height="50" class="box"/><text x="145" y="37" text-anchor="middle" font-size="20" font-weight="700">2</text></g><g data-b="f3" aria-label="3 numaralı yüz"><rect x="120" y="55" width="50" height="50" class="box"/><text x="145" y="87" text-anchor="middle" font-size="20" font-weight="700">3</text></g><g data-b="f4" aria-label="4 numaralı yüz"><rect x="170" y="55" width="50" height="50" class="box"/><text x="195" y="87" text-anchor="middle" font-size="20" font-weight="700">4</text></g><g data-b="f5" aria-label="5 numaralı yüz"><rect x="220" y="55" width="50" height="50" class="box"/><text x="245" y="87" text-anchor="middle" font-size="20" font-weight="700">5</text></g><g data-b="f6" aria-label="6 numaralı yüz"><rect x="220" y="105" width="50" height="50" class="box"/><text x="245" y="137" text-anchor="middle" font-size="20" font-weight="700">6</text></g></svg>', dogru: ['f1'], hint: 'Kenarı ortak kareler komşudur. Köşeleri değen kareler de katlanınca komşu olur. 3 ile 5 ise aynı sırada, arada bir kare: karşılıklı.', why: '3 ve 5, 4 ile kenar paylaşıyor; 2 ve 6 da 4 ile köşe paylaşıyor ve katlanınca komşu oluyor. Geriye 1 kalıyor: 1 ile 4 karşılıklı. Z biçiminin iki ucu karşılıklıdır.', whyV: '3 ve 5, 4 ile kenar paylaşıyor; 2 ve 6 da 4 ile köşe paylaşıyor, katlanınca komşu oluyor. Geriye 1 kalıyor: 1 ile 4 karşılıklı yüzlerdir. Z biçimindeki dört karenin iki ucu karşılıklıdır.' } },
 
     { t: 'Çözümlü örnek: şerit',
       steps: [
@@ -98,6 +110,18 @@
           h: '<div class="an-trap">2πr<sup>2</sup> iki tabanın alanıdır; tek taban πr<sup>2</sup>. Yanal alanda r’nin karesi alınmaz: 2πr · h</div>' }
       ] },
 
+    { t: 'Grupla: kaç taban var?',
+      steps: [{ s: 'Gerçek hayattaki silindir biçimli nesnelere bak. Yüzey alanına kaç taban girer, ona göre yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her nesneyi, yüzey alanına giren taban sayısına göre yerleştir.</p>', gruplar: ['Taban yok', 'Tek taban', 'İki taban'], ogeler: [
+            { m: 'Su borusu', g: 0 },
+            { m: 'Konserve kutusunun etiketi', g: 0 },
+            { m: 'Rulo kâğıdın kartonu', g: 0 },
+            { m: 'Bardak', g: 1 },
+            { m: 'Kova', g: 1 },
+            { m: 'Üstü açık kalemlik', g: 1 },
+            { m: 'Kapaklı konserve kutusu', g: 2 },
+            { m: 'Kapalı su deposu', g: 2 }], hint: 'Nesnenin hangi yüzleri gerçekten var? Açık uçlar daire olarak sayılmaz.', why: 'Boru, etiket ve karton yalnızca yanal yüzeydir. Bardak, kova ve kalemlikte alt taban var, üst açık. Kapaklı kutu ve kapalı depoda iki taban da yüzey alanına girer.' } },
+
     { t: 'Silindirin hacmi',
       steps: [
         { s: 'Silindiri üst üste konmuş ince madeni paralar gibi düşün. Prizmadaki gibi: taban alanı çarpı yükseklik.',
@@ -107,6 +131,14 @@
         { s: 'Birimler: 1 cm³ = 1 mL, 1 dm³ = 1 L = 1000 cm³.', v: 'Birimler: bir santimetreküp, bir mililitre. Bir desimetreküp, bir litre, yani bin santimetreküp.' },
         { s: 'Suya batan cismin hacmi, yükselen suyun hacmine eşittir: πr² çarpı yükselme miktarı.', v: 'Suya batan cismin hacmi, yükselen suyun hacmine eşittir: pi r kare, çarpı yükselme miktarı.' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Silindirin hacmiyle ilgili tuzakları yakala. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'Silindirin yarıçapı 2 katına çıkarsa hacmi de 2 katına çıkar.', d: false, a: 'Hacimde r’nin karesi var: 4 katına çıkar.' },
+            { m: 'Yükseklik 3 katına çıkarsa hacim 3 katına çıkar.', d: true, a: 'Taban alanı aynı, yükseklik 3 katı.' },
+            { m: 'Çapı 10 cm olan silindirin taban alanı 100π cm²’dir.', d: false, a: 'Önce çapı ikiye böl: r = 5, taban alanı 25π.' },
+            { m: '1 L su 1000 cm³ yer kaplar.', d: true, a: '1 L = 1 dm³ = 1000 cm³.' }], hint: 'Hacim = taban alanı · yükseklik ve taban alanı πr<sup>2</sup>. Hangi ölçünün karesi alınıyor?', hintV: 'Hacim, taban alanı çarpı yüksekliktir; taban alanı da pi r kare. Hangi ölçünün karesi alınıyor?', why: 'Hacim πr<sup>2</sup>h olduğu için yarıçaptaki değişim karesiyle, yükseklikteki değişim aynen yansır. Çap verilirse önce yarıçapı bul.', whyV: 'Hacim pi r kare h olduğu için yarıçaptaki değişim karesiyle, yükseklikteki değişim ise aynen hacme yansır. Çap verilirse önce yarıçapı bul.' } },
 
     { t: 'Çözümlü örnek: su aktarma',
       steps: [
@@ -136,6 +168,10 @@
         { s: 'Açınım: bir kare ve dört eş ikizkenar üçgen. Piramitte bu sınıfta alan ve hacim hesabı yapılmaz; sorular eleman, açınım ve görünüm üzerine.' }
       ] },
 
+    { t: 'Sırala: piramitteki uzunluklar',
+      steps: [{ s: 'Kare dik piramitte dik üçgenleri bul ve Pisagor’u kullan. Uzunlukları kısadan uzuna sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Taban ayrıtı 6 cm, yüksekliği 4 cm olan kare dik piramitte uzunlukları <b>kısadan uzuna</b> sırala.</p>', ust: 'en kısa', alt: 'en uzun', ogeler: ['Yükseklik', 'Yan yüz yüksekliği', 'Yan ayrıt', 'Taban ayrıtı', 'Taban köşegeni'], hint: 'Yükseklik, taban ayrıtının yarısı ve yan yüz yüksekliği bir dik üçgen oluşturur. Yan ayrıt için yan yüz yüksekliğini ve ayrıtın yarısını kullan.', why: 'Yükseklik 4. Yan yüz yüksekliği: 3-4-5 üçgeni, 5. Yan ayrıt √(25 + 9) = √34 ≈ 5,8. Taban ayrıtı 6, taban köşegeni 6√2 ≈ 8,5.', whyV: 'Yükseklik 4. Yan yüz yüksekliği 3, 4, 5 üçgeninden 5. Yan ayrıt kök 34, yaklaşık beş virgül sekiz. Taban ayrıtı 6, taban köşegeni de 6 kök 2, yaklaşık sekiz buçuk.' } },
+
     { t: 'Dik koni',
       base: '<svg class="an-svg" viewBox="0 0 330 165" role="img" aria-label="Dik koni: yükseklik h, yarıçap r ve ana doğru l bir dik üçgen oluşturur; açınım bir daire ve bir daire dilimi"><path class="box" d="M30 136L90 18L150 136A60 15 0 0 1 30 136Z" style="stroke-width:0"/><path class="ln" d="M30 136L90 18L150 136 M30 136A60 15 0 0 0 150 136" style="stroke-width:2.2"/><path class="ln" d="M30 136A60 15 0 0 1 150 136" style="stroke-width:1.5;stroke-dasharray:4 3"/><path class="dr n1" d="M90 18V136" style="stroke:var(--ok);stroke-width:2.5;stroke-dasharray:5 3"/><text x="78" y="92" font-size="13" font-weight="700" class="rv n1" style="fill:var(--ok)">h</text><path class="dr n1" d="M90 136H150" style="stroke:var(--bad);stroke-width:2.5"/><text x="118" y="152" font-size="13" font-weight="700" class="rv n1" style="fill:var(--bad)">r</text><path class="dr n2" d="M90 18L150 136" style="stroke:var(--c);stroke-width:3.5"/><text x="128" y="70" font-size="13" font-weight="700" class="acc rv n2">ℓ</text><path class="ln rv n1" d="M90 126h10v10" style="stroke-width:1.5"/><path class="boxa rv n3" d="M252 26L314.4 62.0A72 72 0 0 1 189.6 62.0Z" style="stroke-width:2"/><circle cx="252" cy="122" r="24" class="boxa rv n3" style="stroke-width:2"/><text x="274" y="56" font-size="12" class="acc rv n3">ℓ</text><text x="252" y="48" font-size="11.5" text-anchor="middle" class="rv n3">120°</text></svg>',
       steps: [
@@ -145,6 +181,10 @@
         { s: 'Açınım: bir daire ve bir daire dilimi. Dilimin yarıçapı ana doğrudur, yarıçap değil! r = 3, ℓ = 9 ise dilim 120°.', v: 'Açınım: bir daire ve bir daire dilimi. Dilimin yarıçapı ana doğrudur, koninin yarıçapı değil! R üç, el dokuz ise dilim yüz yirmi derece.', on: '.n3',
           h: '<div class="an-rule">{{α|360°}} = {{r|ℓ}} &nbsp;·&nbsp; dik üçgen bir dik kenarı etrafında dönerse dik koni oluşur</div>' }
       ] },
+
+    { t: 'Kaydır: koninin açınımı',
+      steps: [{ s: 'Önce Pisagor’la ana doğruyu bul. Sonra açınımdaki daire diliminin açısını hesapla.' }],
+      ia: { tip: 'kaydir', q: '<p>Taban yarıçapı 6 cm, yüksekliği 8 cm olan dik koninin açınımında yan yüzey bir daire dilimidir. Bu dilimin merkez açısı kaç derecedir?</p>', min: 0, max: 360, adim: 6, cevap: 216, birim: '°', etiket: [0, 90, 180, 270, 360], hint: 'Ana doğru ℓ<sup>2</sup> = r<sup>2</sup> + h<sup>2</sup>. Dilimin yarıçapı ℓ’dir; açı = 360° · {{r|ℓ}}.', hintV: 'Ana doğrunun karesi, yarıçapın karesi ile yüksekliğin karesinin toplamıdır. Dilimin yarıçapı ana doğrudur; açı, 360 derece çarpı yarıçap bölü ana doğru.', why: 'ℓ = √(36 + 64) = 10 cm. Açı 360° · {{6|10}} = 216°. Dilimin yarıçapına 8 ya da 6 almak tuzaktır; dilimin yarıçapı ana doğrudur.', whyV: 'Ana doğru, kök 36 artı 64, yani 10 santimetre. Açı, 360 çarpı onda altı, 216 derece. Dilimin yarıçapını 8 ya da 6 almak tuzaktır; dilimin yarıçapı ana doğrudur.' } },
 
     { t: 'Görünümler ve iki aile',
       base: '<table class="an-tbl"><tr><th>Cisim</th><th>Önden</th><th>Üstten</th></tr>' +

@@ -25,6 +25,15 @@
           v: 'En büyük hayali birinci olmaktı cümlesi de öyle. Olmaktı, fiile benziyor ama aslında isim fiil. Yine çatı aranmaz.' }
       ] },
 
+    { t: 'Çatı aranır mı?',
+      steps: [{ s: 'Yüklemi çekimli fiil olmayan cümlelerde çatı aranmaz. Bu cümleleri bul ve ele.' }],
+      ia: { tip: 'eleme', q: '<p>Yüklemi fiil olmadığı için <b>çatı aranmayan</b> cümleleri ele.</p>',
+        ogeler: ['Bahçedeki çiçekler soldu.', 'Tek hayali pilot olmaktı.', 'Hava bugün çok sıcak.', 'Dedem bize masal anlattı.', 'Okul yarın açılacak.', 'Kardeşim çok çalışkandır.'],
+        ele: [1, 2, 5],
+        hint: 'Her cümlenin yüklemine bak: çekimli bir fiil mi, yoksa isim ya da ek-fiil almış bir fiilimsi mi?',
+        hintV: 'Her cümlenin yüklemine bak: çekimli bir fiil mi, yoksa isim ya da ek fiil almış bir fiilimsi mi?',
+        why: '“olmaktı” isim-fiil + ek-fiil, “sıcak” ve “çalışkandır” isim: bu cümlelerde çatı aranmaz. Soldu, anlattı, açılacak çekimli fiildir.',
+        whyV: 'Olmaktı, ek fiil almış bir isim fiildir; sıcak ve çalışkandır ise isim. Bu cümlelerde çatı aranmaz. Soldu, anlattı ve açılacak çekimli fiildir.' } },
     { t: 'İki ayrı soru, iki ayrı çatı',
       base: '<svg class="an-svg" viewBox="0 0 340 184" role="img" aria-label="Çatı iki açıdan incelenir: öznesine göre ve nesnesine göre">' +
         '<rect x="100" y="6" width="140" height="36" rx="10" class="boxa rv k1"/><text x="170" y="30" font-size="15" text-anchor="middle" font-weight="700" class="rv k1">Fiilde çatı</text>' +
@@ -78,6 +87,16 @@
         { s: '“Kardeşim birileri tarafından sevindi.” Kulağa çok tuhaf geliyor, değil mi? Sevinen belli, fiil etken.', v: 'Kardeşim birileri tarafından sevindi. Kulağa çok tuhaf geliyor, değil mi? Sevinen belli, fiil etken.', on: '.b2' }
       ] },
 
+    { t: 'Etken mi, edilgen mi?',
+      steps: [{ s: 'Her yüklemi doğru kutuya koy. Testini yanından ayırma: birileri tarafından.', v: 'Her yüklemi doğru kutuya koy. Testini yanından ayırma: birileri tarafından.' }],
+      ia: { tip: 'grup', q: '<p>Yüklemin <b>öznesine göre çatısına</b> bakarak cümleleri ayır.</p>',
+        gruplar: ['Etken', 'Edilgen'],
+        ogeler: [{ m: 'Çocuk güldü.', g: 0 }, { m: 'Kapı açıldı.', g: 1 }, { m: 'Annem sevindi.', g: 0 }, { m: 'Bulaşıklar yıkandı.', g: 1 },
+          { m: 'Dersi dinledik.', g: 0 }, { m: 'Kitap okundu.', g: 1 }, { m: 'Konuyu anladı.', g: 0 }, { m: 'Halılar silindi.', g: 1 }, { m: 'Buzlar eridi.', g: 0 }],
+        hint: 'Yüklemin önüne “birileri tarafından” getir. Anlamlıysa edilgen. Kökteki l, n sesine aldanma.',
+        hintV: 'Yüklemin önüne, birileri tarafından, getir. Anlamlıysa edilgen. Kökteki le ve ne sesine aldanma.',
+        why: 'Gül-, sevin-, dinle-, anla- köklerindeki l, n ek değildir: etken. “Halılar silindi”de kök sil- ama arkasından -in eki gelmiş: edilgen.',
+        whyV: 'Gül, sevin, dinle, anla köklerindeki le ve ne sesleri ek değildir; bu fiiller etken. Halılar silindi cümlesinde kök sil, ama arkasından in eki gelmiş: edilgen.' } },
     { t: '“Tarafından” ve öznesiz edilgen',
       steps: [
         { s: 'Bazen edilgen cümlede işi yapan da söylenir: “Sınav kâğıtları öğretmenimiz tarafından okundu.”',
@@ -92,6 +111,17 @@
           v: 'Çıkmak zaten nesne almayan bir fiil. Edilgen yapınca özneye dönüşecek bir nesne kalmıyor, cümle öznesiz kalıyor.' }
       ] },
 
+    { t: 'Sözde özne tuzakları',
+      steps: [{ s: 'Dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“Kâğıtlar öğretmenimiz tarafından okundu.” cümlesinde özne “öğretmenimiz”dir.', d: false, a: '“Tarafından” sözü özne olmaz; sözde özne: kâğıtlar.' },
+          { m: '“Yarın erkenden yola çıkılacak.” cümlesinde özne yoktur.', d: true, a: 'Çıkmak nesne almaz; edilgen yapılınca özne kalmaz.' },
+          { m: '“Ayşe kahkahayla güldü.” cümlesinin yüklemi edilgendir.', d: false, a: 'l sesi kökte; gülen belli: etken.' },
+          { m: '“Kitapları teslim ettik.” cümlesinin yüklemi etkendir.', d: true, a: 'Gizli özne “biz” işi yapıyor: etken.' }],
+        hint: 'Edilgen yüklemde işi yapan özne olamaz; işten etkilenen sözde öznedir. Gizli özne de gerçek öznedir.',
+        why: '“… tarafından” sözü özne sayılmaz; geçişsiz fiilden edilgen yapılınca cümle öznesiz kalır; gizli özne varsa fiil etkendir.',
+        whyV: 'Tarafından ile kurulan söz özne sayılmaz. Geçişsiz fiilden edilgen yapılınca cümle öznesiz kalır. Gizli özne varsa fiil etkendir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde yüklem <b>edilgen</b> çatılıdır?</p>',
         c: ['Çocuklar bahçede neşeyle güldü.', 'Annem misafirlerin gelmesine çok sevindi.', 'Yeni kütüphane geçen hafta hizmete açıldı.', 'Öğrenciler konuyu kısa sürede anladı.'], a: 'C',
@@ -128,6 +158,19 @@
         { s: '“Dışarı çıktı” cümlesinde ise “neyi?” sorusunun cevabı yok. Burada geçişsiz.', v: 'Dışarı çıktı cümlesinde ise neyi sorusunun cevabı yok. Burada geçişsiz.', on: '.q2' }
       ] },
 
+    { t: 'Geçişli yüklemlere dokun',
+      steps: [{ s: 'Yüklemi geçişli olan cümlelere dokun. Nesne yazılmasa da fiil geçişli olabilir, unutma!' }],
+      ia: { tip: 'gorselsec', q: '<p>Yüklemi <b>geçişli</b> olan cümlelerin hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 194" role="group" aria-label="Dört cümle">' +
+          '<g data-b="c1"><rect x="10" y="8" width="320" height="40" rx="9" class="box"/><text x="170" y="33" text-anchor="middle" font-size="15">Durakta iki saat bekledik.</text></g>' +
+          '<g data-b="c2"><rect x="10" y="54" width="320" height="40" rx="9" class="box"/><text x="170" y="79" text-anchor="middle" font-size="15">Yemekten sonra dışarı çıktık.</text></g>' +
+          '<g data-b="c3"><rect x="10" y="100" width="320" height="40" rx="9" class="box"/><text x="170" y="125" text-anchor="middle" font-size="15">Yokuşu güçlükle çıktık.</text></g>' +
+          '<g data-b="c4"><rect x="10" y="146" width="320" height="40" rx="9" class="box"/><text x="170" y="171" text-anchor="middle" font-size="15">Bebek erkenden uyudu.</text></g>' + '</svg>',
+        dogru: ['c1', 'c3'],
+        hint: 'Her yüklemin önüne “onu” getir ya da “neyi?” diye sor. Aynı fiil anlamına göre değişebilir.',
+        hintV: 'Her yüklemin önüne onu sözcüğünü getir ya da neyi diye sor. Aynı fiil anlamına göre değişebilir.',
+        why: '“Onu bekledik” olur: nesne yazılmasa da geçişli. Neyi çıktık? Yokuşu: geçişli. “Dışarı çıktık” ve “uyudu” nesne alamaz: geçişsiz.',
+        whyV: 'Onu bekledik denebilir: nesne yazılmasa da geçişli. Neyi çıktık? Yokuşu: geçişli. Dışarı çıktık ve uyudu ise nesne alamaz: geçişsiz.' } },
     { t: 'Ekle geçişli yapmak',
       base: '<div class="an-grid"><div class="rv x1"><b>uyu- → uyut-</b>bebeği uyuttu</div><div class="rv x2"><b>piş- → pişir-</b>yemeği pişirdi</div><div class="rv x3"><b>gül- → güldür-</b>bizi güldürdü</div></div>',
       steps: [
@@ -137,6 +180,15 @@
         { s: 'Güldük, geçişsiz. “Palyaço bizi güldürdü”, geçişli. Ek gelince fiil nesne almaya başladı.', v: 'Güldük, geçişsiz. Palyaço bizi güldürdü, geçişli. Ek gelince fiil nesne almaya başladı.', on: '.x3' }
       ] },
 
+    { t: 'Geçişli yapan eki seç',
+      steps: [{ s: 'Her boşluğa geçişsiz fiili geçişli yapan eki yerleştir. Edilgenlik eklerine dikkat!' }],
+      ia: { tip: 'bosluk', q: '<p>Fiilleri <b>geçişli</b> yapacak ekleri yerleştir.</p>',
+        metin: 'Annem bebeği uyu[_]tu.<br>Aşçı yemeği piş[_]di.<br>Palyaço bizi gül[_]dü.',
+        secenek: ['t', 'ir', 'dür', 'ül', 'ün', 'il'], cevap: ['t', 'ir', 'dür'],
+        hint: 'Nesne alabilmesi için geçişlilik eki gerekir: -t, -ir, -dür. -l ve -n edilgenlik ekidir, nesneyi kaldırır.',
+        hintV: 'Nesne alabilmesi için geçişlilik eki gerekir: t, ır, dür. Edilgenlik ekleri olan ıl ve ın ise nesneyi ortadan kaldırır.',
+        why: 'uyuttu, pişirdi, güldürdü: üçü de artık nesne alıyor (bebeği, yemeği, bizi). -ül, -ün, -il edilgen yapar, nesne alamaz.',
+        whyV: 'Uyuttu, pişirdi, güldürdü: üçü de artık nesne alıyor; bebeği, yemeği, bizi. Ül, ün, il ekleri ise fiili edilgen yapar; edilgen fiil nesne alamaz.' } },
     { t: 'Altın kural: edilgen = geçişsiz',
       steps: [
         { s: 'Şimdi iki açıyı birleştiriyoruz. Bu kural LGS sorularında çözümün anahtarı oldu, çok iyi dinle.', v: 'Şimdi iki açıyı birleştiriyoruz. Bu kural LGS sorularında çözümün anahtarı oldu, çok iyi dinle.',
@@ -148,6 +200,13 @@
           h: '<div class="an-trap">“edilgen + geçişli” olamaz! · edilgen ise geçişsiz</div>' }
       ] },
 
+    { t: 'Ekleri sırala: geliştirilmiştir',
+      steps: [{ s: 'Bu uzun sözcüğün parçalarına baştan sona doğru sırayla dokun.' }],
+      ia: { tip: 'sirala', q: '<p>“Eğitim sistemimiz zamanla <b>geliştirilmiştir</b>.” Sözcüğün parçalarını baştan sona sırala.</p>', ust: 'sözcüğün başı', alt: 'sözcüğün sonu',
+        ogeler: ['geliş- (fiil gövdesi)', '-tir (geçişli yapan)', '-il (edilgenlik eki)', '-miş (kip eki)', '-tir (ek-fiil)'],
+        hint: 'Önce fiil geçişli olur, ancak ondan sonra edilgen yapılır. Kip eki ve ek-fiil en sona gelir.',
+        why: 'geliş + tir (geçişli) + il (edilgen) + miş + tir. Fiil önce geçişli olmuş, sonra edilgen olmuş; edilgen olduğu için artık geçişsiz.',
+        whyV: 'Geliş, sonra geçişli yapan tir, sonra edilgenlik eki il, sonra miş, en sonda ek fiil tir. Fiil önce geçişli olmuş, sonra edilgen olmuş; edilgen olduğu için artık geçişsiz.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde yüklem hem <b>etken</b> hem <b>geçişsizdir</b>?</p>',
         c: ['Bu konu derste ayrıntılı biçimde anlatıldı.', 'Dedem her sabah gazetesini okur.', 'Yorgun yolcular otelde erkenden uyudu.', 'Eski evler tek tek yıkıldı.'], a: 'C',

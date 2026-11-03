@@ -34,6 +34,14 @@
           h: '<div class="an-trap"><span class="an-bad-t">do the bed</span> ✗ → <b>make the bed</b> ✓</div>' }
       ] },
 
+    { t: 'do ya da make: kutulara ayır',
+      steps: [{ s: 'Sekiz ev işini fiiline göre iki kutuya ayır: [[do]] ile mi kurulur, [[make]] ile mi?' }],
+      ia: { tip: 'grup', q: '<p>Her ifade hangi fiille kurulur?</p>', gruplar: ['do', 'make'],
+        ogeler: [{ m: '… the dishes', g: 0 }, { m: '… the laundry', g: 0 }, { m: '… the ironing', g: 0 }, { m: '… the shopping', g: 0 },
+          { m: '… the bed', g: 1 }, { m: '… breakfast', g: 1 }, { m: '… a mess', g: 1 }, { m: '… a cake', g: 1 }],
+        hint: 'Bulaşık, çamaşır, ütü ve alışveriş bir fiille kurulur. Yatak, yemek hazırlamak ve ortalığı dağıtmak ise öteki fiille.',
+        why: '[[Do the dishes]], [[do the laundry]], [[do the ironing]], [[do the shopping]]. Ama [[make the bed]], [[make breakfast]], [[make a mess]] ve [[make a cake]].' } },
+
     { t: 'Karşıt ikililer',
       base: '<table class="an-tbl">' +
         '<tr class="rv c1"><td><b>set / lay the table</b><br><small>yemekten önce kurmak</small></td><td><b>clear the table</b><br><small>yemekten sonra toplamak</small></td></tr>' +
@@ -45,6 +53,16 @@
         { s: '[[Hang out the washing]] ıslak çamaşırı ipe asmak. [[Hang up the clothes]] ise kıyafeti askıya, dolaba asmak.', on: '.c3' },
         { s: 'Bir de çöp: [[take out the rubbish]]. Amerikan İngilizcesinde [[garbage]] ya da [[trash]] de denir.' }
       ] },
+
+    { t: 'Karşıt ikililer tuzağı',
+      steps: [{ s: 'Benzer ev işleriyle ilgili her ifadeye karar ver: doğru mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: '“Clear the table” = yemekten önce sofrayı kurmak.', d: false, a: 'Kurmak set the table; clear yemekten sonra toplamak.' },
+          { m: '“Unload the dishwasher” = temiz tabakları makineden çıkarmak.', d: true, a: 'unload = empty: boşaltmak.' },
+          { m: '“Hang out the washing” = kıyafeti dolaba asmak.', d: false, a: 'Islak çamaşırı ipe asmak; dolaba asmak hang up.' },
+          { m: '“Take out the rubbish” = çöpü dışarı çıkarmak.', d: true, a: 'rubbish = garbage = trash.' }],
+        hint: '[[Set]] ile [[clear]] zıt işlerdir. [[Hang out]] ile [[hang up]] arasında da fark var: biri ipe, öteki askıya.',
+        why: '[[Clear the table]] yemekten sonra toplamaktır. [[Unload]] makineyi boşaltmak, [[hang out the washing]] ıslak çamaşırı ipe asmak, [[take out the rubbish]] çöpü çıkarmaktır.' } },
 
     { t: 'Araç ve gereçler',
       base: '<table class="an-tbl"><tr><th>Alet</th><th>İş</th></tr>' +
@@ -64,6 +82,14 @@
           h: '<div class="an-trap"><b>do the laundry</b> = çamaşır yıkamak ≠ <b>do the ironing</b> = ütü yapmak</div>' }
       ] },
 
+    { t: 'Aleti adıyla eşleştir',
+      steps: [{ s: 'Ev işi aletlerini Türkçe adlarıyla eşleştir. Önce alete, sonra adına dokun.' }],
+      ia: { tip: 'eslestir', q: '<p>Her aleti Türkçe adıyla eşleştir.</p>', solBaslik: 'Alet', sagBaslik: 'Türkçesi',
+        sol: ['vacuum cleaner', 'broom', 'mop', 'duster', 'watering can', 'ironing board'],
+        sag: ['elektrik süpürgesi', 'çalı süpürgesi', 'paspas', 'toz bezi', 'sulama kabı', 'ütü masası'],
+        hint: 'İki süpürgeyi karıştırma: biri elektrikle halıyı çeker, öteki ile yer süpürülür. [[Watering]] sulamak demek.',
+        why: '[[Vacuum cleaner]] elektrik süpürgesi, [[broom]] çalı süpürgesi, [[mop]] paspas, [[duster]] toz bezi, [[watering can]] sulama kabı, [[ironing board]] ütü masası.' } },
+
     { t: 'Ara soru', cp: {
         q: '<p><b>Lily:</b> Every Sunday I use a hot tool on a special board to make my school shirts smooth.</p><p>Which chore is Lily talking about?</p>',
         c: ['Doing the laundry', 'Doing the ironing', 'Hanging out the washing', 'Folding the clothes'], a: 'B',
@@ -81,6 +107,13 @@
         { s: '[[Can’t stand]] ise “hiç dayanamam”, yani nefret. “Ayakta duramıyorum” sanma!' }
       ] },
 
+    { t: 'Sevmeyenleri ele',
+      steps: [{ s: 'Altı kişinin ev işi yorumu var. İşi sevmediğini söyleyenleri ele. Dikkat: [[don’t mind]] sevmemek değildir!' }],
+      ia: { tip: 'eleme', q: '<p>Ev işini <b>sevmediğini</b> söyleyen cümleleri ele.</p>',
+        ogeler: ['I don’t mind ironing.', 'I can’t stand dusting.', 'I enjoy cooking.', 'I hate mopping the floor.', 'I’m keen on gardening.', 'I’m not into tidying up.'], ele: [1, 3, 5],
+        hint: '[[Don’t mind]] olumsuz görünür ama “fark etmez, yaparım” demek. [[Not into]] ve [[can’t stand]] ne anlama geliyordu?',
+        why: '[[Can’t stand]] hiç dayanamam, [[hate]] nefret ederim, [[not into]] ilgimi çekmez. [[Don’t mind]] ise nötr: sevmese de yapıyor.' } },
+
     { t: 'Sorumluluk ve zorunluluk',
       base: '<table class="an-tbl"><tr><th>Kalıp</th><th>Anlam</th><th>Örnek</th></tr>' +
         '<tr class="rv r1"><td><b>have to / must</b></td><td>zorunlu</td><td>I have to feed the cat.</td></tr>' +
@@ -94,6 +127,14 @@
         { s: '[[You mustn’t leave dirty dishes in the sink]]: yasak.', on: '.r3' },
         { s: 'Sorumluluk için [[be responsible for]] ve ing takısı. Sırayla yapmak için [[take turns]].', on: '.r4' }
       ] },
+
+    { t: 'have to, don’t have to, mustn’t',
+      steps: [{ s: 'Üç cümleyi bağlamına göre tamamla. Zorunlu mu, yasak mı, yoksa gerek mi yok?' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri tamamla.</p>',
+        metin: 'It’s Sunday. You [_] get up early. Sleep as long as you want!<br>It’s a house rule: you [_] leave dirty dishes in the sink.<br>Nobody else feeds the cat, so I [_] feed it every morning.',
+        secenek: ['have to', 'has to', 'don’t have to', 'doesn’t have to', 'mustn’t'], cevap: ['don’t have to', 'mustn’t', 'have to'],
+        hint: 'İstediğin kadar uyuyabiliyorsan erken kalkmak zorunlu mu? Kural bir şeyi yasaklıyorsa hangi kalıp? [[I]] ile [[has to]] kullanılır mı?',
+        why: 'Pazar günü erken kalkmaya gerek yok: [[don’t have to]]. Kural yasaklıyor: [[mustn’t]]. Kediyi besleyen tek kişi benim: [[I have to]].' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>Mom:</b> It’s Sunday today. You <b>don’t have to</b> make your bed early.</p><p>What does Mom mean?</p>',
@@ -110,6 +151,13 @@
         { s: 'Soru: [[How often do you do the shopping?]] Cevap: [[Once a week, on Saturdays.]]' }
       ] },
 
+    { t: 'Gün aşırı kaç kez?',
+      steps: [{ s: 'Ela bitkileri gün aşırı suluyor. İki haftada kaç kez sular? Hesapla ve kaydırıcıyla işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p><b>Ela:</b> I water the plants <b>every other day</b>. I started on Monday.</p><p>How many times does Ela water the plants in <b>two weeks</b> (14 days)?</p>',
+        min: 0, max: 14, adim: 1, cevap: 7, tol: 0, etiket: [0, 2, 4, 6, 8, 10, 12, 14],
+        hint: '[[Every other day]] her gün değil, gün aşırı demek. On dört günün kaçında sulama yapılır?',
+        why: 'Gün aşırı, yani iki günde bir. On dört gün içinde birinci, üçüncü, beşinci günler derken yedi kez sular.' } },
+
     { t: 'Rica, teklif ve cevaplar',
       steps: [
         { s: 'Rica: [[Could you set the table, please?]] Kabul: [[Sure. No problem.]] Ret: [[Sorry, I can’t. I’m busy with my homework.]]',
@@ -122,6 +170,13 @@
         { s: 'Teklif ederken [[Shall I help you with the dishes?]] ya da [[I’ll take it out.]] Teşekkür: [[That’s very kind of you.]]' },
         { s: 'Diyalogda boşluktan sonra [[Then you can do it later]] geliyorsa, boşlukta mutlaka bir ret ve mazeret vardır.' }
       ] },
+
+    { t: 'Rica diyaloğunu sırala',
+      steps: [{ s: 'Annesiyle Can arasındaki kısa diyaloğun satırları karıştı. Baştan sona sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Diyaloğu baştan sona sırala.</p>', ust: 'ilk satır', alt: 'son satır',
+        ogeler: ['Could you set the table, please?', 'Sorry, I’m busy with my homework.', 'OK. Then you can do it later.', 'Thanks, Mom. I’ll do it soon.'],
+        hint: 'Diyalog bir ricayla başlar. [[Then you can do it later]] cümlesinden önce mutlaka bir ret ve mazeret gelir.',
+        why: 'Önce rica, sonra mazeretli ret. Anne [[Then you can do it later]] der, Can da teşekkür eder. Bu kalıp LGS’de çok çıkar.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Four friends talk about their chores at home.</p><p><b>Lily:</b> I load the dishwasher and set the table.<br><b>Tom:</b> I walk the dog and make my bed.<br><b>Sue:</b> I water the plants and hang out the washing.<br><b>Ben:</b> I cook the meals and clear the table.</p><p>Who does <b>only kitchen chores</b>?</p>',
@@ -143,6 +198,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

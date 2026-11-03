@@ -35,6 +35,15 @@
           h: '<div class="an-trap">Van <b>G</b>ölü ✓ · Van <b>k</b>edisi ✓ · Van <span class="an-bad-t">K</span>edisi ✗</div>' }
       ] },
 
+    { t: 'Büyük mü, küçük mü?',
+      steps: [{ s: 'Koyu sözcük büyük harfle mi başlamalı, küçük harfle mi? Her birini doğru kutuya koy.' }],
+      ia: { tip: 'grup', q: '<p>Koyu sözcüğün <b>ilk harfi</b> nasıl yazılmalı?</p>',
+        gruplar: ['Büyük harfle', 'Küçük harfle'],
+        ogeler: [{ m: 'Erciyes <b>dağı</b>', g: 0 }, { m: 'Atakum <b>ilçesi</b>', g: 1 }, { m: 'Amasya <b>elması</b>', g: 1 }, { m: 'Van <b>gölü</b>', g: 0 },
+          { m: 'Rize <b>ili</b>', g: 1 }, { m: 'Atatürk <b>bulvarı</b>', g: 0 }, { m: 'Malatya <b>kayısısı</b>', g: 1 }, { m: 'Bafra <b>ovası</b>', g: 0 }],
+        hint: 'Dağ, göl, ova, bulvar özel adın parçasıdır. İl, ilçe ve yöre adıyla anılan yiyecek, hayvan türleri ise öyle değildir.',
+        why: 'Erciyes Dağı, Van Gölü, Atatürk Bulvarı, Bafra Ovası: büyük. Atakum ilçesi, Rize ili, Amasya elması, Malatya kayısısı: küçük.',
+        whyV: 'Erciyes Dağı, Van Gölü, Atatürk Bulvarı ve Bafra Ovası büyük harfle yazılır. Atakum ilçesi, Rize ili, Amasya elması ve Malatya kayısısı ise küçük harfle.' } },
     { t: 'Unvan, lakap, akrabalık',
       steps: [
         { s: 'Bu başlık LGS’de dört ayrı soruda yoklandı, o yüzden kulağını iyice aç.', v: 'Bu başlık LGS’de dört ayrı soruda yoklandı, o yüzden kulağını iyice aç.' },
@@ -46,6 +55,22 @@
         { s: 'Bir de unvanlara gelen ekler kesmeyle ayrılır: Selim Bey’e, Ayşe Hanım’dan.', v: 'Bir de unvanlara gelen ekler kesmeyle ayrılır: Selim Bey’e, Ayşe Hanım’dan.' }
       ] },
 
+    { t: 'Yanlış yazılanlara dokun',
+      steps: [{ s: 'Bu cümlede iki sözcük yanlış yazılmış. İkisini de bul ve dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Büyük ya da küçük harf bakımından <b>yanlış yazılmış</b> sözcüklere dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 112" role="group" aria-label="Dün Fatma Teyze ile Doktor Ahmet bey’e gittik.">' +
+          '<g data-b="w1"><rect x="10" y="8" width="50" height="40" rx="9" class="box"/><text x="35" y="33" text-anchor="middle" font-size="15">Dün</text></g>' +
+          '<g data-b="w2"><rect x="68" y="8" width="72" height="40" rx="9" class="box"/><text x="104" y="33" text-anchor="middle" font-size="15">Fatma</text></g>' +
+          '<g data-b="w3"><rect x="148" y="8" width="70" height="40" rx="9" class="box"/><text x="183" y="33" text-anchor="middle" font-size="15">Teyze</text></g>' +
+          '<g data-b="w4"><rect x="226" y="8" width="44" height="40" rx="9" class="box"/><text x="248" y="33" text-anchor="middle" font-size="15">ile</text></g>' +
+          '<g data-b="w5"><rect x="20" y="62" width="80" height="40" rx="9" class="box"/><text x="60" y="87" text-anchor="middle" font-size="15">Doktor</text></g>' +
+          '<g data-b="w6"><rect x="108" y="62" width="72" height="40" rx="9" class="box"/><text x="144" y="87" text-anchor="middle" font-size="15">Ahmet</text></g>' +
+          '<g data-b="w7"><rect x="188" y="62" width="64" height="40" rx="9" class="box"/><text x="220" y="87" text-anchor="middle" font-size="15">bey’e</text></g>' +
+          '<g data-b="w8"><rect x="260" y="62" width="70" height="40" rx="9" class="box"/><text x="295" y="87" text-anchor="middle" font-size="15">gittik.</text></g>' + '</svg>',
+        dogru: ['w3', 'w7'],
+        hint: 'Akrabalık sözü mü, unvan mı? Unvan ve saygı sözleri büyük, akrabalık sözleri küçük yazılır.',
+        why: '“teyze” akrabalık sözü, küçük olmalı: Fatma teyze. “Bey” saygı sözü, büyük olmalı: Ahmet Bey’e. “Doktor” unvan olarak doğru yazılmış.',
+        whyV: 'Teyze bir akrabalık sözü, küçük yazılmalı: Fatma teyze. Bey ise saygı sözü, büyük yazılmalı: Ahmet Bey’e. Doktor unvan olarak doğru yazılmış.' } },
     { t: 'Ay, gün ve gök cisimleri',
       steps: [
         { s: 'Ay ve gün adları belirli bir tarih bildiriyorsa büyük harfle başlar: 29 Ekim 1923 Pazartesi.',
@@ -58,6 +83,17 @@
           h: '<div class="an-ex"><span class="an-l"><b>A</b>y, <b>D</b>ünya’nın uydusudur. → gök cismi, büyük</span><span class="an-l">Odaya <b>g</b>üneş doldu, <b>d</b>ünyalar benim oldu. → küçük</span></div>' }
       ] },
 
+    { t: 'Tarih mi, değil mi?',
+      steps: [{ s: 'Dört ifade var. Ay, gün ve gök cisimlerinin yazımına bakarak karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“19 Mayıs 1919 Pazartesi” yazımı doğrudur.', d: true, a: 'Belirli tarih: ay da gün de büyük.' },
+          { m: '“Her yıl Nisan ayında şenlik yapılır.” yazımı doğrudur.', d: false, a: 'Belirli bir tarih yok: nisan küçük yazılır.' },
+          { m: '“Güneş, Dünya’ya en yakın yıldızdır.” cümlesinde büyük harfler doğrudur.', d: true, a: 'Gök cismi anlamında: büyük.' },
+          { m: '“Bütün Dünya bu haberi konuşuyor.” yazımı doğrudur.', d: false, a: 'Gök cismi değil, insanlar anlamında: dünya.' }],
+        hint: 'Ay ve gün adı belirli bir tarih mi bildiriyor? Dünya, Güneş, Ay gerçekten gök cismi olarak mı geçiyor?',
+        why: 'Ay ve gün adları yalnızca belirli tarihte büyük yazılır. Dünya, Güneş, Ay da yalnızca gök cismi anlamında büyük başlar.',
+        whyV: 'Ay ve gün adları yalnızca belirli bir tarih bildirdiğinde büyük yazılır. Dünya, Güneş ve Ay da yalnızca gök cismi anlamında büyük harfle başlar.' } },
     { t: 'Kesme işaretinin konmadığı özel adlar',
       steps: [
         { s: 'Özel adlara gelen ekler genellikle kesmeyle ayrılır: Ankara’ya, Ali’nin. Ama iki önemli istisna var.', v: 'Özel adlara gelen ekler genellikle kesmeyle ayrılır: Ankara’ya, Ali’nin. Ama iki önemli istisna var.' },
@@ -103,6 +139,15 @@
           h: '<div class="an-rule">Geliyor <b>musunuz</b>? · Güzel <b>mi</b> güzel bir gün! · Okuyor <b>muymuş</b>?</div>' }
       ] },
 
+    { t: 'de, ki, mi: yanlışları ele',
+      steps: [{ s: 'Bu cümlelerin bazısında de, ki ya da mi yanlış yazılmış. Yanlış olanları ele.', v: 'Bu cümlelerin bazısında de, ki ya da mi yanlış yazılmış. Yanlış olanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Yazım yanlışı olan</b> cümleleri ele.</p>',
+        ogeler: ['Kardeşimde bu filmi izledi.', 'Masadaki kitapları aldım.', 'Duydumki taşınıyorsunuz.', 'Belki yarın uğrarım.', 'Yarın geliyormusunuz?', 'Sokakta kimse yoktu.', 'Ayşe’de bizimle gelecek.'],
+        ele: [0, 2, 4, 6],
+        hint: 'de ve ki sözcüklerini çıkarıp oku: cümle bozulmuyorsa bağlaçtır, ayrı yazılır. “mi” her zaman ayrı yazılır.',
+        hintV: 'De ve ki sözcüklerini çıkarıp oku: cümle bozulmuyorsa bağlaçtır, ayrı yazılır. Mi soru eki ise her zaman ayrı yazılır.',
+        why: 'Doğruları: Kardeşim de, Duydum ki, geliyor musunuz, Ayşe de. “Masadaki” ek, “belki” kalıplaşmış, “sokakta” bulunma eki: bitişik ve doğru.',
+        whyV: 'Doğrusu şöyle: kardeşim de, duydum ki, geliyor musunuz, Ayşe de; hepsi ayrı. Masadaki ek, belki kalıplaşmış, sokakta ise bulunma eki aldığı için bitişik ve doğru yazılmış.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>yazım yanlışı</b> yapılmıştır?</p>',
         c: ['Bu akşam sinemaya sen de gel.', 'Duydum ki yarın yola çıkıyormuşsunuz.', 'Masadaki kitapları rafa kaldırdım.', 'Annemde bu habere çok sevindi.'], a: 'D',
@@ -139,6 +184,15 @@
           h: '<div class="an-rule">kg’<b>dan</b> (kilogramdan) · cm’<b>yi</b> (santimetreyi) · mm’<b>den</b></div>' }
       ] },
 
+    { t: 'Doğru eki seç',
+      steps: [{ s: 'Her boşluğa doğru eki yerleştir. Eki, sayıyı ya da kısaltmayı nasıl okuduğuna göre seç.' }],
+      ia: { tip: 'bosluk', q: '<p>Ekleri <b>okunuşa göre</b> doğru biçimde yerleştir.</p>',
+        metin: 'Dilekçemizi TDK’[_] gönderdik.<br>Yarışmada 6’[_] olduk.<br>Toplantı 13.00’[_] başlıyor.<br>Paket 5 kg’[_] ağır geldi.',
+        secenek: ['ye', 'ya', 'ncı', 'ıncı', 'te', 'de', 'dan', 'tan'], cevap: ['ye', 'ncı', 'te', 'dan'],
+        hint: 'Kısaltmayı harf harf oku (te de ke), sayıyı yazıyla oku (altıncı, on üçte), ölçüyü açılımıyla oku (kilogramdan).',
+        hintV: 'Kısaltmayı harf harf oku: te de ke. Sayıyı yazıyla oku: altıncı, on üçte. Ölçüyü de açılımıyla oku: kilogramdan.',
+        why: 'TDK “te de ke” okunur: TDK’ye. Altı ünlüyle biter: 6’ncı. “On üçte” okunur: 13.00’te. Kilogramdan: kg’dan.',
+        whyV: 'Kısaltmanın son harfi ke diye okunur; bu yüzden ye eki gelir. Altı ünlüyle biter; kesmeden sonra yalnızca ncı yazılır. Saat on üçte diye okunur; te eki gelir. Kilogram da kilogramdan diye okunur; dan eki gelir.' } },
     { t: 'Birleşik sözcükler: bitişik mi, ayrı mı?',
       base: '<table class="an-tbl"><tr><th>Bitişik</th><th>Ayrı</th></tr>' +
         '<tr class="rv c1"><td>kaybolmak · hissetmek · affetmek · sabretmek</td><td>fark etmek · terk etmek · hak etmek · var olmak</td></tr>' +
@@ -163,6 +217,14 @@
         { s: 'Bir püf noktası daha: “-ıver, -ebil, -akal” ile kurulan fiiller bitişik yazılır. Gidiverdi, okuyabilmek, bakakaldı.', v: 'Bir püf noktası daha: ıver, ebil, akal ile kurulan fiiller bitişik yazılır. Gidiverdi, okuyabilmek, bakakaldı.' }
       ] },
 
+    { t: 'Kaç yazım yanlışı var?',
+      steps: [{ s: 'Bu iki cümlede kaç yazım yanlışı var? Bitişik ve ayrı yazılan sözlere dikkat. Sayıyı kaydırıcıyla seç.' }],
+      ia: { tip: 'kaydir', q: '<p>“Herşey birden bire değişti; hiçbir şey eskisi gibi değildi. Birkaç arkadaşım fark etti ama kimse birşey demedi.”</p><p>Bu metinde <b>kaç yazım yanlışı</b> vardır?</p>',
+        min: 0, max: 6, adim: 1, cevap: 3, tol: 0, birim: 'yanlış', etiket: [0, 1, 2, 3, 4, 5, 6],
+        hint: '“şey” sözcüğü nasıl yazılır? “birdenbire” bitişik mi? “fark etmek”te ses olayı var mı?',
+        hintV: 'Şey sözcüğü nasıl yazılır? Birdenbire bitişik mi yazılır? Fark etmek sözünde ses olayı var mı?',
+        why: 'Üç yanlış: “Her şey” ve “bir şey” ayrı, “birdenbire” bitişik yazılır. “hiçbir şey”, “Birkaç” ve “fark etti” doğru yazılmış.',
+        whyV: 'Üç yanlış var. Her şey ve bir şey ayrı yazılır; birdenbire ise bitişik. Hiçbir şey, birkaç ve fark etti doğru yazılmış.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>yazım yanlışı yoktur</b>?</p>',
         c: ['Yarışmada okulumuz 2’inci oldu.', 'Bu konuyu Türk Dil Kurumu’na sorduk.', 'Öğretmenimiz herkese ikişer kalem dağıttı.', 'Herşeyi zamanında yapmayı sever.'], a: 'C',

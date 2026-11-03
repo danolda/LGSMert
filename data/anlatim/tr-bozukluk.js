@@ -38,6 +38,21 @@
         { s: 'Test basit: sözcüğü çıkar. Anlam hiç eksilmiyorsa o sözcük gereksizdir.' }
       ] },
 
+    { t: 'Fazlalığı bul',
+      steps: [{ s: 'Bu cümlede bir sözcük fazlalık. Onu bul ve dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Cümlede <b>gereksiz kullanılan</b> sözcüğe dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 112" role="group" aria-label="Bu konudaki görüşlerimi size kısaca özetlemek istiyorum.">' +
+          '<g data-b="w1"><rect x="10" y="8" width="40" height="40" rx="9" class="box"/><text x="30" y="33" text-anchor="middle" font-size="15">Bu</text></g>' +
+          '<g data-b="w2"><rect x="58" y="8" width="92" height="40" rx="9" class="box"/><text x="104" y="33" text-anchor="middle" font-size="15">konudaki</text></g>' +
+          '<g data-b="w3"><rect x="158" y="8" width="112" height="40" rx="9" class="box"/><text x="214" y="33" text-anchor="middle" font-size="15">görüşlerimi</text></g>' +
+          '<g data-b="w4"><rect x="278" y="8" width="52" height="40" rx="9" class="box"/><text x="304" y="33" text-anchor="middle" font-size="15">size</text></g>' +
+          '<g data-b="w5"><rect x="20" y="62" width="78" height="40" rx="9" class="box"/><text x="59" y="87" text-anchor="middle" font-size="15">kısaca</text></g>' +
+          '<g data-b="w6"><rect x="106" y="62" width="104" height="40" rx="9" class="box"/><text x="158" y="87" text-anchor="middle" font-size="15">özetlemek</text></g>' +
+          '<g data-b="w7"><rect x="218" y="62" width="104" height="40" rx="9" class="box"/><text x="270" y="87" text-anchor="middle" font-size="15">istiyorum.</text></g>' + '</svg>',
+        dogru: ['w5'],
+        hint: 'Hangi sözcüğün anlamı başka bir sözcüğün içinde zaten var? Çıkar ve anlam eksiliyor mu, bak.',
+        why: 'Özetlemek zaten kısaca anlatmaktır. “kısaca” çıkarılınca anlam hiç eksilmiyor: gereksiz sözcük.',
+        whyV: 'Özetlemek zaten kısaca anlatmak demektir. Kısaca sözcüğü çıkarılınca anlam hiç eksilmiyor: gereksiz sözcük.' } },
     { t: 'Yanlış anlamda sözcük',
       steps: [
         { s: 'İkinci bozukluk: anlamı birbirine yakın sözcükleri birbirinin yerine kullanmak. Gel, birkaç ünlü örneğe bakalım.',
@@ -52,6 +67,15 @@
         { s: 'Küçümsemek değer vermemektir, azımsamak ise miktarı az bulmaktır. Harçlık için azımsamak doğru olan.', on: '.w4' }
       ] },
 
+    { t: 'Doğru sözcüğü yerleştir',
+      steps: [{ s: 'Her boşluğa anlamca doğru sözcüğü yerleştir. Yakın anlamlı çeldiricilere dikkat!' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri <b>anlatım bozukluğu olmayacak</b> biçimde tamamla.</p>',
+        metin: 'Bu ürünlerin fiyatı çok [_].<br>Okulun bahçesine üç fidan [_].<br>Bu buluş bilimin gelişmesine [_].<br>Garson aldığı bahşişi [_].',
+        secenek: ['yüksek', 'pahalı', 'diktik', 'ektik', 'katkı sağladı', 'neden oldu', 'azımsadı', 'küçümsedi'], cevap: ['yüksek', 'diktik', 'katkı sağladı', 'azımsadı'],
+        hint: 'Fiyat ve ürün aynı sözcükle nitelenmez; tohum ile fidan için farklı fiiller kullanılır; olumlu bir sonuç “neden olmak” ile anlatılmaz.',
+        hintV: 'Fiyat ile ürün aynı sözcükle nitelenmez. Tohum ile fidan için farklı fiiller kullanılır. Olumlu bir sonuç da neden olmak ile anlatılmaz.',
+        why: 'Fiyat yüksek olur, ürün pahalı olur. Fidan dikilir. İyi sonuç için “katkı sağladı”. Miktarı az bulmak “azımsamak”tır; küçümsemek değer vermemektir.',
+        whyV: 'Fiyat yüksek olur, ürün pahalı olur. Fidan dikilir, tohum ekilir. İyi bir sonuç için katkı sağladı denir. Miktarı az bulmak azımsamaktır; küçümsemek ise değer vermemektir.' } },
     { t: 'Çelişen sözler, yanlış yer, belirsizlik',
       steps: [
         { s: 'Kesinlik bildiren bir sözle olasılık bildiren bir söz aynı cümlede olmaz. Bu kalıp LGS’de soruldu.', v: 'Kesinlik bildiren bir sözle olasılık bildiren bir söz aynı cümlede olmaz. Bu kalıp LGS’de soruldu.',
@@ -88,6 +112,19 @@
           v: 'Herkes, hepsi olumlu yükleme; kimse, hiçbiri olumsuz yükleme uyar. İçeride kalmadı cümlesinin öznesi yok, kimse sözcüğü gelmeli.', on: '.u3' }
       ] },
 
+    { t: 'Uyum doğru mu?',
+      steps: [{ s: 'Beş ifade var. Her birinde özne ile yüklemin uyumuna bak ve karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“O ve ben bu işi başaracağız.” cümlesinde uyum doğrudur.', d: true, a: 'O ve ben → biz: başaracağız.' },
+          { m: '“Kitaplar raftan düştüler.” cümlesinde uyum bozukluğu vardır.', d: true, a: 'Cansız çoğul özne tekil yüklem ister: düştü.' },
+          { m: '“Hiçbiri toplantıya katıldı.” cümlesi doğrudur.', d: false, a: '“Hiçbiri” olumsuz yüklem ister: katılmadı.' },
+          { m: '“Çocuklar bahçede oynadılar.” cümlesi bozuktur.', d: false, a: 'İnsan bildiren çoğul özne çoğul yüklem alabilir.' },
+          { m: '“Sen ve o yarın sinemaya gideceksin.” cümlesi doğrudur.', d: false, a: 'Sen ve o → siz: gideceksiniz.' }],
+        hint: 'Kişi zamirlerini birleştir (sen ve o → siz). Özne cansız mı, insan mı? “Kimse, hiçbiri” hangi yüklemi ister?',
+        hintV: 'Kişi zamirlerini birleştir: sen ve o, siz eder. Özne cansız mı, insan mı? Kimse ve hiçbiri hangi yüklemi ister?',
+        why: 'Kişi uyumu: o + ben = biz, sen + o = siz. Cansız çoğul özne tekil yüklem alır; insan çoğulu çoğul yüklem alabilir. “Hiçbiri” olumsuz yüklem ister.',
+        whyV: 'Kişi uyumu: o ve ben biz eder, sen ve o siz eder. Cansız çoğul özne tekil yüklem alır; insan bildiren çoğul özne ise çoğul yüklem alabilir. Hiçbiri sözcüğü olumsuz yüklem ister.' } },
     { t: 'LGS’nin gözdesi: ortak öge eksikliği',
       steps: [
         { s: 'Ve geldik en önemli başlığa. İki yüklem bir ögeyi ortak kullanıyorsa, o öge her iki yükleme de uymak zorunda.', v: 'Ve geldik en önemli başlığa. İki yüklem bir ögeyi ortak kullanıyorsa, o öge her iki yükleme de uymak zorunda.',
@@ -103,6 +140,16 @@
           h: '<div class="an-trap">…tedavisi bulunmalı, <span class="an-ok-t">hastalık</span> insanlığa tehdit olmaktan çıkarılmalı. → özne eklendi</div>' }
       ] },
 
+    { t: 'Hangi öge eksik?',
+      steps: [{ s: 'Her cümlede ortak kullanılan bir öge ikinci yükleme uymuyor. Eksik ögeyi bul ve doğru kutuya koy.' }],
+      ia: { tip: 'grup', q: '<p>Her cümlede <b>eksik olan ögeyi</b> bul ve kutusuna yerleştir.</p>',
+        gruplar: ['Özne eksik', 'Nesne eksik', 'Yer tamlayıcısı eksik'],
+        ogeler: [{ m: 'Ona güveniyorum ve seviyorum.', g: 1 }, { m: 'Çocukları sever, iyi davranır.', g: 2 }, { m: 'Bu şehre hayranım ve ziyaret ederim.', g: 1 },
+          { m: 'Bitkileri sular, özen gösterir.', g: 2 }, { m: 'Evin çatısı onarıldı, artık satılacak.', g: 0 }, { m: 'Müziğe ilgi duyar ve çok sever.', g: 1 }, { m: 'Fidanın bakımı yapıldı, hızla büyüdü.', g: 0 }],
+        hint: 'İkinci yükleme ortak ögeyle soru sor: “onu seviyorum”, “onlara davranır”, “satılacak olan ne?”',
+        hintV: 'İkinci yükleme ortak ögeyle soru sor: onu seviyorum mu, onlara mı davranır, satılacak olan ne?',
+        why: 'Seviyorum, ziyaret ederim, sever: “onu” (nesne) eksik. Davranır, özen gösterir: “onlara” (yer tamlayıcısı) eksik. Satılacak olan çatı değil ev, büyüyen bakım değil fidan: özne eksik.',
+        whyV: 'Seviyorum, ziyaret ederim ve sever yüklemlerinde onu, yani nesne eksik. Davranır ve özen gösterir yüklemlerinde onlara, yani yer tamlayıcısı eksik. Satılacak olan çatı değil ev; büyüyen bakım değil fidan. Bu ikisinde özne eksik.' } },
     { t: 'Adım adım bir örnek',
       base: '<div class="an-big" style="font-size:18px">Kardeşim müziği çok seviyor ve her gün ilgileniyor.</div>' +
         '<table class="an-tbl"><tr class="rv h1"><td><b>1. yüklem</b> seviyor</td><td>Neyi? → müziği ✓</td></tr>' +
@@ -148,6 +195,14 @@
         { s: 'Kim teslim etti? Belli değil. İkinci yüklem de edilgen olmalı: “teslim edildi.”', v: 'Kim teslim etti? Belli değil. İkinci yüklem de edilgen olmalı: teslim edildi.' }
       ] },
 
+    { t: 'Bozuk cümleleri ele',
+      steps: [{ s: 'Anlatım bozukluğu olan cümleleri ele. Yalnızca kusursuz olanlar kalsın.' }],
+      ia: { tip: 'eleme', q: '<p><b>Anlatım bozukluğu olan</b> cümleleri ele.</p>',
+        ogeler: ['Özel ve devlet okulları açıldı.', 'Bina boyandı ve sahibine teslim etti.', 'Kahvaltıda peynir ve çay içtik.', 'Boyu uzundu, saçları kıvırcıktı.', 'Kitaplar okundu ve rafa kondu.', 'Özel okullar ve devlet okulları açıldı.'],
+        ele: [0, 1, 2],
+        hint: 'Tamlamada sıfat ile isim aynı tamlanana bağlanmış mı? İki yargının çatısı aynı mı? Yüklem her ögeye uyuyor mu?',
+        why: '“özel okulları” olmaz (tamlama); boyandı edilgen, teslim etti etken (çatı); peynir içilmez (yüklem eksik). Kalanlar düzgün: ek-fiil ve çatı uyumlu.',
+        whyV: 'Özel okulları denmez, bu tamlama yanlışı. Boyandı edilgen, teslim etti etken: çatı uyumsuzluğu. Peynir içilmez: yüklem eksik. Kalan cümlelerde ek fiil ve çatı uyumlu.' } },
     { t: 'Ek, karşılaştırma, bağlaç',
       base: '<table class="an-tbl"><tr><th>Bozuk</th><th>Doğru</th></tr>' +
         '<tr class="rv k1"><td>Birçok kitap<span class="an-bad-t">lar</span> okudu.</td><td>Birçok kitap okudu.</td></tr>' +
@@ -163,6 +218,14 @@
           v: 'Ne, ne bağlacı zaten olumsuzluk katar, yüklem olumlu kalmalı. Fakat ise karşıtlık ister; aynı yöndeki iki yargıyı bağlayamaz.', on: '.k3' }
       ] },
 
+    { t: 'Kaç cümle bozuk?',
+      steps: [{ s: 'Beş numaralı cümleyi tek tek oku. Kaç tanesinde anlatım bozukluğu var? Sayıyı kaydırıcıyla seç.' }],
+      ia: { tip: 'kaydir', q: '<p>(I) Birkaç arkadaşlarım bize geldi. (II) Onun sesi seninkinden daha güzel. (III) Ne telefon açtı ne mesaj atmadı. (IV) Yaklaşık iki saat yürüdük. (V) Çok çalışıyor fakat her gün kitap okuyor.</p><p>Kaç cümlede <b>anlatım bozukluğu</b> vardır?</p>',
+        min: 0, max: 5, adim: 1, cevap: 3, tol: 0, birim: 'cümle', etiket: [0, 1, 2, 3, 4, 5],
+        hint: '“birkaç” sonrası çoğul eki, “ne… ne…” ile olumsuz yüklem ve “fakat” bağlacının karşıtlık isteyip istemediğine bak.',
+        hintV: 'Birkaç sözcüğünden sonra çoğul eki, ne ne bağlacıyla olumsuz yüklem ve fakat bağlacının karşıtlık isteyip istemediğine bak.',
+        why: 'Üç bozuk cümle: I (birkaç arkadaşım), III (ne mesaj attı), V (fakat yerine “ve”). II doğru karşılaştırma (seninkinden), IV’te gereksiz sözcük yok.',
+        whyV: 'Üç cümle bozuk. Birincide birkaç arkadaşım olmalı. Üçüncüde ne mesaj attı olmalı. Beşincide fakat yerine ve gelmeli. İkinci cümlede karşılaştırma doğru, dördüncüde de gereksiz sözcük yok.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>anlatım bozukluğu yoktur</b>?</p>',
         c: ['Sen ve kardeşin yarın bize gelecek.', 'Ağaçlar ilkbaharda çiçek açtılar.', 'Hem çok çalışıyor hem de derslerini düzenli tekrar ediyor.', 'Boyu kısa, bedeni de pek güçlü değildi.'], a: 'C',

@@ -39,6 +39,19 @@
         { s: 'Dördüncüsü de zaman: Ne zaman oldu? Bu dört soru, hikâye unsuru sorularının anahtarı.', on: '.u4' }
       ] },
 
+    { t: 'Unsurları bul',
+      steps: [{ s: 'Cümledeki hikâye unsurlarını bul: Her soruyu, cevap olan parçayla eşleştir.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>“Ezan sesleri yükselirken Ayşe, babaannesinin avlusunda ilk kardan adamını yaptı.”<br>Her soruyu cümledeki cevabıyla eşleştir.</p>',
+        solBaslik: 'Soru',
+        sagBaslik: 'Cümledeki cevap',
+        sol: ['Ne oldu?', 'Kim yaşadı?', 'Nerede geçti?', 'Ne zaman oldu?'],
+        sag: ['kardan adam yaptı', 'Ayşe', 'babaannesinin avlusunda', 'ezan sesleri yükselirken'],
+        hint: 'Zaman her zaman saat ya da tarihle verilmez. Olayın hangi an yaşandığını sezdiren parçayı ara.',
+        why: 'Olay kardan adam yapmak, kişi Ayşe, yer babaannesinin avlusu. Zaman açıkça söylenmemiş ama “ezan sesleri yükselirken” sözüyle sezdirilmiş.'
+      } },
+
     { t: 'Tuzak: sezdirilen zaman ve yer',
       steps: [
         { s: 'Burada çok dikkat et, son yıllarda LGS sınavında tam olarak bu soruldu.',
@@ -63,6 +76,16 @@
           h: '<div class="an-tip">Anı ve otobiyografi <b>1. kişili</b>, biyografi <b>3. kişili</b> anlatılır.</div>' }
       ] },
 
+    { t: 'Anlatıcı tuzakları',
+      steps: [{ s: 'Anlatıcıyla ilgili dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [{ m: '“Selim, ‘Ben yarın gelirim.’ dedi ve yürüyüp gitti.” cümlesinde anlatıcı birinci kişilidir.', d: false, a: '“Ben” tırnak içinde; anlatma fiilleri “dedi, gitti”: üçüncü kişili.' }, { m: 'Üçüncü kişili anlatıcı, kişilerin içinden geçenleri de anlatabilir.', d: true, a: 'Olayın dışındadır ama her şeyi bilebilir.' }, { m: 'Biyografi genellikle birinci kişili anlatıcıyla yazılır.', d: false, a: 'Biyografiyi başkası yazar: üçüncü kişili.' }, { m: '“Bahçeye çıkınca annemin beni çağırdığını duydum.” cümlesinde anlatıcı olayın içindedir.', d: true, a: '“Duydum”: birinci kişili, olayın içinde.' }],
+        hint: 'Tırnak içindeki konuşmalara değil, tırnak dışındaki anlatma cümlelerinin fiil çekimine bak.',
+        why: 'Konuşmalar anlatıcıyı değiştirmez; “dedi, gitti” diyen anlatıcı üçüncü kişilidir. Biyografi başkasının hayatını anlattığı için üçüncü kişili, anı ve otobiyografi ise birinci kişilidir.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdakilerin hangisinde hikâyenin <b>zaman</b> unsuru yoktur?</p>',
         c: ['Bayram sabahı Elif, dedesinin köydeki bahçesinde ağaçları suluyordu.', 'Akşam güneşi batarken Mehmet, iskelede oltasını denize salladı.', 'Kemal, Kapalıçarşı’nın taş döşeli dar sokaklarında, bakır tepsilerin parıltısı arasında dedesine hediye arıyordu.', 'Bir kış gecesi Zeynep, mutfakta annesiyle birlikte çorba pişirdi.'], a: 'C',
@@ -84,6 +107,17 @@
         { s: 'Destan ise bir milletin hayatını derinden etkileyen olayları anlatır. Oğuz Kağan, Ergenekon gibi.', on: '.o4' }
       ] },
 
+    { t: 'Efsaneyi bul',
+      steps: [{ s: 'Dört parçadan biri efsaneden alınmış. Ona dokun.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>Hangi parça bir <b>efsaneden</b> alınmış olabilir?</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 254" role="group" aria-label="Dört metin parçası"><g data-b="r1" aria-label="Bir varmış bir yokmuş, padişahın üç oğlu varmış."><rect x="4" y="6" width="332" height="54" rx="9" class="box"/><text x="14" y="28" font-size="14">Bir varmış bir yokmuş, padişahın</text><text x="14" y="48" font-size="14">üç oğlu varmış.</text></g><g data-b="r2" aria-label="Karga, ağzındaki peyniri tilkiye kaptırınca ders aldı."><rect x="4" y="68" width="332" height="54" rx="9" class="box"/><text x="14" y="90" font-size="14">Karga, ağzındaki peyniri tilkiye</text><text x="14" y="110" font-size="14">kaptırınca ders aldı.</text></g><g data-b="r3" aria-label="Kızın gözyaşları göl olmuş; o günden beri bu göle Gözyaşı Gölü denir."><rect x="4" y="130" width="332" height="54" rx="9" class="box"/><text x="14" y="152" font-size="14">Kızın gözyaşları göl olmuş; o günden</text><text x="14" y="172" font-size="14">beri bu göle Gözyaşı Gölü denir.</text></g><g data-b="r4" aria-label="Bozkurt, Türkleri Ergenekon’dan çıkarıp yeni yurda ulaştırdı."><rect x="4" y="192" width="332" height="54" rx="9" class="box"/><text x="14" y="214" font-size="14">Bozkurt, Türkleri Ergenekon’dan</text><text x="14" y="234" font-size="14">çıkarıp yeni yurda ulaştırdı.</text></g></svg>',
+        dogru: ['r3'],
+        hint: 'Efsane, olağanüstü bir olayı gerçek bir yerin ya da adın ortaya çıkışına bağlar.',
+        why: 'Göl parçası, bir yerin adını olağanüstü bir olaya bağlıyor: efsane. Padişahlı parça masal, ders veren karga ile tilki fabl, Ergenekon’dan çıkış ise bir milletin hayatını anlatan destandır.'
+      } },
+
     { t: 'Gerçek hayattan türler',
       base: '<table class="an-tbl"><tr><th>Tür</th><th>İpucu</th></tr>' +
         '<tr class="rv r1"><td><b>Anı</b></td><td>yazarın yaşadığı, üzerinden zaman geçmiş olay; “yıllar önce”</td></tr>' +
@@ -99,6 +133,17 @@
         { s: 'Biyografide bir kişinin hayatını başkası yazar. Otobiyografide ise kişi kendi hayatını kendisi yazar.', on: '.r4,.r5' },
         { s: 'Mektupta da bir hitap, bir tarih ve bir imza bulunur.', on: '.r6' }
       ] },
+
+    { t: 'Hangi tür?',
+      steps: [{ s: 'Sekiz metin parçasını türlerine göre kutulara yerleştir. Önce parçaya, sonra kutusuna dokun.' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Her parça hangi türden alınmış olabilir?</p>',
+        gruplar: ['Anı', 'Günlük', 'Gezi yazısı', 'Biyografi'],
+        ogeler: [{ m: '3 Ocak. Bugün kar yağdı, okullar tatil edildi.', g: 1 }, { m: 'Yıllar önce mahallemizdeki bakkala her sabah ekmek almaya giderdim.', g: 0 }, { m: 'Safranbolu’ya varınca ilk iş eski konakların arasında dolaştık.', g: 2 }, { m: 'Mimar Sinan, Kayseri’nin Ağırnas köyünde doğdu.', g: 3 }, { m: '12 Mart, Perşembe. Tiyatro provası bugün çok uzun sürdü.', g: 1 }, { m: 'Çocukluğumun geçtiği köye otuz yıl sonra dönünce gözlerim doldu.', g: 0 }, { m: 'Kapadokya’da balonla süzülürken peri bacalarını kuşbakışı gördük.', g: 2 }, { m: 'Cahit Arf, matematik çalışmalarıyla dünyaca tanındı.', g: 3 }],
+        hint: 'Tarih atılmış mı? Yazar kendi yaşadığını mı anlatıyor, yoksa başkasının hayatını mı? Bir yeri gezip görüyor mu?',
+        why: 'Tarihli kayıtlar günlüktür. Yazarın yıllar sonra anlattığı kendi yaşantısı anı, gezip görülen yerler gezi yazısı, başka birinin hayatı ise biyografidir.'
+      } },
 
     { t: 'Tuzak: yer var diye gezi yazısı olmaz',
       steps: [
@@ -135,6 +180,18 @@
         { s: 'Haber yorum katmadan bilgi verir. Röportajda görüşme ve gözlem, mülakatta uzmanla soru-cevap vardır.', on: '.b5,.b6' }
       ] },
 
+    { t: 'Türün adını yerleştir',
+      steps: [{ s: 'Her boşluğa uygun türün adını yerleştir. Benzer türlere dikkat!' }],
+      ia: {
+        tip: 'bosluk',
+        q: '<p>Boşluklara uygun tür adlarını yerleştir.</p>',
+        metin: 'Gazetedeki köşesinde dünkü maçı yorumlayan yazar bir [_] yazmıştır.<br>Bir uzmanla soru-cevap biçiminde yapılan görüşme [_] adını alır.<br>Bir düşünceyi verilerle kanıtlamaya çalışan yazı ise [_] olur.',
+        secenek: ['fıkra', 'haber', 'mülakat', 'röportaj', 'makale', 'deneme'],
+        cevap: ['fıkra', 'mülakat', 'makale'],
+        hint: 'Yorum katılıyorsa haber değildir. Uzmanla soru-cevap ile görüşme ve gözlemi ayır. Kanıt ve veri varsa deneme değildir.',
+        why: 'Güncel bir olayı yorumlayan köşe yazısı fıkradır; haber yorum katmaz. Uzmanla soru-cevap mülakattır; röportajda görüşmenin yanında gözlem de vardır. Verilerle kanıtlama ise makalenin işidir.'
+      } },
+
     { t: 'Denemeyi komşularından ayır',
       base: '<svg class="an-svg" viewBox="0 0 340 214" role="img" aria-label="Deneme ayırt etme akışı">' +
         '<rect x="10" y="4" width="262" height="30" rx="8" class="box rv a1"/><text x="141" y="24" font-size="12" text-anchor="middle" font-weight="700" class="rv a1">Kanıt, veri, araştırma var mı?</text>' +
@@ -165,6 +222,17 @@
         { s: 'Üçüncüsü: Soru soran deneme. Yazar soruları kendi kendine soruyor, okura seslenmiyorsa bu söyleşi değil, denemedir.',
           h: '<div class="an-trap"><b>3. Soru soran deneme:</b> “Korku mu? Alışkanlık mı?” Yazar <b>kendine</b> soruyor, “kanımca” diyor → deneme. Söyleşi için okura hitap gerekir.</div>' }
       ] },
+
+    { t: 'Denemede olmayanları ele',
+      steps: [{ s: 'Denemenin taşımadığı özellikleri bul ve ele.' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>Aşağıdakilerden <b>denemede bulunmayan</b> özellikleri ele.</p>',
+        ogeler: ['Samimi, içten bir dil', 'Kişisel düşünce', 'Veri ve istatistik', 'Kanıtlama çabası', 'Kendi kendine soru sorma', 'Okura “siz” diye seslenme'],
+        ele: [2, 3, 5],
+        hint: 'Denemenin komşularını düşün: Kanıt ve veri hangi türün, okurla sohbet hangi türün işidir?',
+        why: 'Veri ve kanıtlama çabası makaleye, okura “siz” diye seslenmek söyleşiye aittir. Deneme samimi bir dille kişisel düşünce anlatır ve yazar soruları kendi kendine sorabilir.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Bana öyle geliyor ki insan, en çok yalnız kaldığında kendini tanır. Kalabalıklar içinde başkalarının sesine o kadar alışırız ki kendi sesimizi duymaz oluruz. Belki de bu yüzden yalnızlıktan korkarız; kim bilir?</p><p>Bu metnin türüyle ilgili aşağıdakilerden hangisi <b>doğrudur</b>?</p>',

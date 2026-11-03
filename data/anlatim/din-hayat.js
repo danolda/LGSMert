@@ -32,6 +32,13 @@
         { s: 'Doğayı Allah’ın emaneti gördüğü için çevre bilinci de kazandırır.' }
       ] },
 
+    { t: 'Dinin etkisi nerede?',
+      steps: [{ s: 'Her örneği dinin etkilediği alanın kutusuna yerleştir: kişinin iç dünyası mı, toplum mu, kültür ve sanat mı?' }],
+      ia: { tip: 'grup', q: '<p>Her örneği <b>etkilendiği alana</b> yerleştir.</p>', gruplar: ['Bireysel hayat', 'Toplumsal hayat', 'Kültür ve sanat'],
+        ogeler: [{ m: 'İç huzur', g: 0 }, { m: 'Bayramlaşma', g: 1 }, { m: 'Ebru sanatı', g: 2 }, { m: 'Hayata anlam katmak', g: 0 },
+          { m: 'Hasta ziyareti', g: 1 }, { m: 'Külliyeler', g: 2 }, { m: 'Zorlukta sabır, ümit', g: 0 }, { m: 'İftar sofraları', g: 1 }],
+        hint: 'Kişinin kendi içinde hissettikleri bireysel; insanlar arasındaki ilişkiler toplumsal; eserler ve sanat dalları kültürdür.',
+        why: 'Huzur, anlam, sabır ve ümit bireysel; bayramlaşma, hasta ziyareti ve iftar sofraları toplumsal; ebru ve külliyeler kültür ve sanat alanındadır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Ramazan ayında mahallemizdeki aileler sırayla birbirini iftara davet eder, yalnız yaşayan yaşlılar da bu sofralarda unutulmaz. Bayram sabahları ise küçük büyük herkes birbirinin elini öper, küs olanlar barışır.</p><p>Bu metinde asıl olarak aşağıdakilerden hangisi <b>anlatılmaktadır</b>?</p>',
         c: ['Dinin toplumsal dayanışmayı ve kardeşliği güçlendirdiği', 'Dinin mimariyi ve sanatı etkilediği', 'Dinî duygunun doğuştan geldiği', 'İbadetlerin yalnızca bireysel olduğu'], a: 'A',
@@ -49,6 +56,13 @@
         { s: 'Dördüncüsü nesil, yani aile ve çocuklar. Beşincisi de dinin kendisi: inancı doğru kaynaktan öğrenmek ve hurafelerden korumak.', on: '.d4,.d5' }
       ] },
 
+    { t: 'Yasak ve koruduğu değer',
+      steps: [{ s: 'Her yasak ya da emir bir değeri korur. Hangisi hangi değeri koruyor, eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her yasağı ya da emri <b>koruduğu değerle</b> eşleştir.</p>', solBaslik: 'Yasak / emir', sagBaslik: 'Korunan değer',
+        sol: ['İçki ve uyuşturucu yasağı', 'Rüşvet ve kumar yasağı', 'Kendine zarar verme yasağı', 'Hurafelerden uzak durmak', 'Nikâh ve aileye önem'],
+        sag: ['Akıl', 'Mal', 'Can', 'Din', 'Nesil'],
+        hint: 'Neyi bozuyor ya da neye zarar veriyor, ona bak. Aklı bozan, malı haksızca el değiştiren, canı tehlikeye atan…',
+        why: 'İçki aklı, rüşvet ve kumar malı, kendine zarar verme yasağı canı korur. Hurafelerden uzak durmak dini, nikâh ve aileye verilen önem nesli korur.' } },
     { t: 'Ayet ile değeri eşleştirmek',
       steps: [
         { s: 'Bu konunun en sık soru tipi: ayet verilir, hangi değerin korunduğu sorulur. Örneklere bakalım.',
@@ -75,6 +89,15 @@
           h: '<div class="an-trap">Türbe ziyareti ve dua → kendi başına hurafe değildir. Türbeden medet ummak, bez bağlamak, mum yakmak → <b>hurafe</b>.</div>' }
       ] },
 
+    { t: 'Bid’at, hurafe, ziyaret',
+      steps: [{ s: 'Bid’at ve hurafe sık karıştırılır. Dört ifadeye bak ve her biri için karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Türbe ziyareti ve orada dua etmek kendi başına hurafedir.', d: false, a: 'Ziyaret ve dua hurafe değildir; medet ummak hurafedir.' },
+          { m: 'Kurşun döktürmek ve fala inanmak hurafedir.', d: true, a: 'Akla ve dine aykırı batıl inançlardır.' },
+          { m: 'Hurafe, sonradan ibadet diye dine eklenen uygulamadır.', d: false, a: 'Bu bid’attır; hurafe batıl inançtır.' },
+          { m: 'Hurafelerle mücadele dinin korunması kapsamındadır.', d: true, a: 'Din beş temel değerden biridir.' }],
+        hint: 'Bid’at “ibadet diye eklenen”, hurafe “batıl inanç”. Ziyaret ile medet ummak arasındaki farkı düşün.',
+        why: 'Ziyaret ve dua hurafe değildir, ama bez bağlamak, kurşun döktürmek, fala inanmak hurafedir. Sonradan ibadet diye eklenen uygulamanın adı bid’attır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Bir türbenin girişine şu levha asılmıştır: “Türbelere mum yakmak, bez bağlamak, taşlara para yapıştırmak ve ölülerden medet ummak dinimizde yoktur.”</p><p>Bu uyarı ile aşağıdakilerden hangisinin <b>amaçlandığı</b> söylenebilir?</p>',
         c: ['Malın israftan korunması', 'Dinin hurafelerden korunması', 'Canın tehlikelerden korunması', 'Neslin korunması'], a: 'B',
@@ -120,6 +143,12 @@
         { s: 'Erzak almaya gelen kardeşlerini tanıdı ve onları affetti: “Bugün size kınama yok, Allah sizi bağışlasın.”', v: 'Erzak almaya gelen kardeşlerini tanıdı ve onları affetti: Bugün size kınama yok, Allah sizi bağışlasın.', on: '.y6' }
       ] },
 
+    { t: 'Hazreti Yusuf’un kıssası',
+      steps: [{ s: 'Kıssaların en güzelini baştan sona sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Olayları <b>yaşandığı sıraya</b> koy.</p>', ust: 'ilk', alt: 'son',
+        ogeler: ['Yıldızların secde ettiği rüya', 'Kardeşleri kuyuya attı', 'Mısır’da saraya satıldı', 'İftiraya uğrayıp zindana atıldı', 'Hükümdarın rüyasını yorumladı', 'Hazinenin başına geçti', 'Kardeşlerini affetti'],
+        hint: 'Zindandan, hükümdarın rüyasını yorumlayınca çıktı. Kardeşleri kıtlık yıllarında erzak almaya geldi.',
+        why: 'Rüya, kuyu, saray, iftira ve zindan, hükümdarın rüyasının yorumu, hazinenin yönetimi ve kıtlıkta gelen kardeşlerini affetmesi.' } },
     { t: 'Bir sure tanıyorum: Asr',
       steps: [
         { s: 'Asr suresi Mekke’de inmiş, üç ayetlik kısa bir suredir. Önce anlamını okuyalım.',
@@ -130,6 +159,13 @@
         { s: 'İman etmek, iyi ve yararlı işler yapmak, birbirine doğruyu tavsiye etmek ve sabrı tavsiye etmek.' }
       ] },
 
+    { t: 'Asr suresini tamamla',
+      steps: [{ s: 'Asr suresine göre ziyandan kurtulmanın dört şartını tamamla.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Ziyandan kurtulanlar: iman edenler, [_] işleyenler,<br>birbirine [_] ve [_] tavsiye edenler.',
+        secenek: ['salih amel', 'hakkı', 'sabrı', 'serveti', 'gösterişi', 'uykuyu'], cevap: ['salih amel', 'hakkı', 'sabrı'],
+        hint: 'Sure zamana yemin eder. Kurtuluş iman, iyi iş ve iki güzel tavsiyeyle gelir: doğruyu ve dayanmayı tavsiye etmek.',
+        why: 'Asr suresinin üçüncü ayetine göre iman edip salih amel işleyen, birbirine hakkı ve sabrı tavsiye edenler ziyanda değildir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Hz. Yusuf, Mısır hükümdarının rüyasını yedi yıl bolluk ve ardından yedi yıl kıtlık olacağı şeklinde yorumlamıştır. Hazinenin başına geçince bolluk yıllarında ürünün bir kısmını başaklarıyla saklatmış, kıtlık yıllarında da halkı ve komşu toplulukları açlıktan kurtarmıştır.</p><p>Bu kıssadan aşağıdakilerden hangisine <b>ulaşılabilir</b>?</p>',
         c: ['Geleceği planlamak ve tedbirli olmak önemlidir.', 'Kardeşler arasında kıskançlık olmamalıdır.', 'İffeti korumak için zindanı göze almak gerekir.', 'Bütün rüyalar mutlaka gerçekleşir.'], a: 'A',

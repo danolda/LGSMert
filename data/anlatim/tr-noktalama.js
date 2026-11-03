@@ -35,6 +35,17 @@
         { s: 'Tarihlerde gün, ay ve yılı; saatlerde de saat ile dakikayı nokta ayırır. Saat “13.30” diye yazılır.', v: 'Tarihlerde gün, ay ve yılı; saatlerde de saat ile dakikayı nokta ayırır. Saat on üç otuz, araya nokta konarak yazılır.', on: '.p4' }
       ] },
 
+    { t: 'Nokta ve büyük harf',
+      steps: [{ s: 'Dört ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [
+          { m: '“19. yüzyıl” yazılışı “on dokuzuncu yüzyıl” diye okunur.', d: true, a: 'Rakamdan sonraki nokta -ıncı ekinin yerini tutar.' },
+          { m: 'Virgülden sonra gelen sözcük büyük harfle başlar.', d: false, a: 'Virgül ve noktalı virgülden sonra küçük harf gelir.' },
+          { m: 'Tarihte gün, ay ve yıl noktayla ayrılabilir: 23.04.1920', d: true, a: 'Tarih ve saatte nokta ayırıcıdır.' },
+          { m: 'Soru işaretinden sonra yeni cümle küçük harfle başlar.', d: false, a: 'Nokta, soru, ünlem ve üç noktadan sonra büyük harf.' }],
+        hint: 'Hangi işaretlerden sonra büyük, hangilerinden sonra küçük harfle başladığımızı hatırla.',
+        why: 'Rakamdan sonraki nokta sıra bildirir; tarih ve saatte ayırıcıdır. Virgülden sonra küçük, soru işaretinden sonra büyük harfle başlanır.',
+        whyV: 'Rakamdan sonraki nokta sıra bildirir; tarih ve saatte ise ayırıcıdır. Virgülden sonra küçük, soru işaretinden sonra büyük harfle başlanır.' } },
     { t: 'Virgül: en çok sorulan işaret',
       base: '<table class="an-tbl"><tr><th>Görev</th><th>Örnek</th></tr>' +
         '<tr class="rv v1"><td>Eş görevli sözcükler</td><td>Pazardan elma<b>,</b> armut<b>,</b> kiraz aldık.</td></tr>' +
@@ -63,6 +74,14 @@
         { s: 'Ve tırnak içine alınmayan alıntı cümlelerin sonuna konur: “Yarın erken gel, dedi.”', v: 'Ve tırnak içine alınmayan alıntı cümlelerin sonuna konur: Yarın erken gel, dedi.', on: '.y4' }
       ] },
 
+    { t: 'Virgülün görevini eşleştir',
+      steps: [{ s: 'Her cümledeki virgülü görevine bağla. Önce virgülü kafanda kaldırıp ne değiştiğine bak.' }],
+      ia: { tip: 'eslestir', q: '<p>Her cümlede virgülün <b>görevini</b> bul ve eşleştir.</p>', solBaslik: 'Cümle', sagBaslik: 'Görevi',
+        sol: ['Kitap, defter, kalem aldım.', 'Kar yağdı, yollar kapandı.', 'Küçük, kediyi kucağına aldı.', 'Ayşe, sınıf başkanımız, söz aldı.', 'Hayır, gelmeyeceğim.', 'Arkadaşlar, toplanalım.'],
+        sag: ['Eş görevli sözcükler', 'Sıralı cümleler', 'Anlam karışıklığı', 'Ara söz', 'Ret sözü', 'Hitap'],
+        hint: 'Virgülü kaldır: iki sözcük tamlamaya mı dönüşüyor, iki yargı mı birleşiyor, yoksa bir söz açıklanıyor mu?',
+        why: '“Küçük kedi” tamlaması sanılmasın diye virgül konmuş. “sınıf başkanımız” Ayşe’yi açıklayan ara söz; “Arkadaşlar” bir seslenme, yani hitap.',
+        whyV: 'Küçük kedi tamlaması sanılmasın diye virgül konmuş. Sınıf başkanımız, Ayşe’yi açıklayan bir ara söz. Arkadaşlar ise bir seslenme, yani hitap.' } },
     { t: 'Virgül konmayan yerler',
       steps: [
         { s: 'Şimdi tuzak kısmına geldik. Bazı yerlere virgül koymak yanlıştır. Çok dikkat et.',
@@ -73,6 +92,24 @@
         { s: 'İkilemelerin ve tamlamaların arasına da virgül girmez. “Yavaş yavaş” yazarız, araya virgül koymayız.', v: 'İkilemelerin ve tamlamaların arasına da virgül girmez. Yavaş yavaş yazarız, araya virgül koymayız.' }
       ] },
 
+    { t: 'Yanlış virgülleri bul',
+      steps: [{ s: 'Bu cümlede bazı virgüller yanlış yere konmuş. Yanlış olan virgüllerin hepsine dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Cümledeki <b>yanlış konmuş virgüllere</b> dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 104" role="group" aria-label="Ders bitince, Ali, Ayşe, ve ben yavaş, yavaş eve döndük.">' +
+          '<text x="8" y="34" font-size="16">Ders bitince</text>' +
+          '<g data-b="k1" aria-label="virgül"><rect x="116" y="8" width="34" height="40" rx="9" class="box"/><text x="133" y="36" text-anchor="middle" font-size="24" font-weight="700">,</text></g>' +
+          '<text x="156" y="34" font-size="16">Ali</text>' +
+          '<g data-b="k2" aria-label="virgül"><rect x="186" y="8" width="34" height="40" rx="9" class="box"/><text x="203" y="36" text-anchor="middle" font-size="24" font-weight="700">,</text></g>' +
+          '<text x="226" y="34" font-size="16">Ayşe</text>' +
+          '<g data-b="k3" aria-label="virgül"><rect x="268" y="8" width="34" height="40" rx="9" class="box"/><text x="285" y="36" text-anchor="middle" font-size="24" font-weight="700">,</text></g>' +
+          '<text x="8" y="82" font-size="16">ve ben yavaş</text>' +
+          '<g data-b="k4" aria-label="virgül"><rect x="124" y="56" width="34" height="40" rx="9" class="box"/><text x="141" y="84" text-anchor="middle" font-size="24" font-weight="700">,</text></g>' +
+          '<text x="166" y="82" font-size="16">yavaş eve döndük.</text>' + '</svg>',
+        dogru: ['k1', 'k3', 'k4'],
+        hint: 'Tek zarf-fiilden sonra, “ve” bağlacının önünde ve ikilemenin arasında virgül olur mu?',
+        hintV: 'Tek zarf fiilden sonra, ve bağlacının önünde ve ikilemenin arasında virgül olur mu?',
+        why: '“bitince” tek zarf-fiil, “ve”nin önüne virgül konmaz, “yavaş yavaş” ikilemesi bölünmez. Yalnızca Ali ile Ayşe arasındaki virgül doğru: eş görevli sözcükler.',
+        whyV: 'Bitince tek zarf fiil, ondan sonra virgül konmaz. Ve bağlacının önüne de virgül konmaz. Yavaş yavaş ikilemesi de bölünmez. Yalnızca Ali ile Ayşe arasındaki virgül doğru: eş görevli sözcükleri ayırıyor.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde virgül, <b>anlam karışıklığını önlemek</b> için kullanılmıştır?</p>',
         c: ['Evet, bu akşam size geleceğiz.', 'Genç, kadına yardım etmek için koştu.', 'Pazardan elma, armut ve kiraz aldık.', 'Hava karardı, sokak lambaları yandı.'], a: 'B',
@@ -105,6 +142,15 @@
         { s: '“şöyle dedi, şunu söyledi” gibi sözlerden sonra aktarılan konuşmanın önüne de iki nokta konur.', v: 'Şöyle dedi, şunu söyledi gibi sözlerden sonra aktarılan konuşmanın önüne de iki nokta konur.' }
       ] },
 
+    { t: 'Hangi işaret gelmeli?',
+      steps: [{ s: 'Her cümledeki kare boşluğa hangi işaret gelmeli? Cümleleri doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>▢ yerine gelmesi gereken işarete göre cümleleri ayır.</p>',
+        gruplar: ['Virgül ( , )', 'Noktalı virgül ( ; )', 'İki nokta ( : )'],
+        ogeler: [{ m: 'Güneş doğdu▢ kuşlar öttü.', g: 0 }, { m: 'Evet▢ geliyorum.', g: 0 }, { m: 'Elma, armut▢ pırasa, ıspanak aldık.', g: 1 },
+          { m: 'Kızlar, erkekler▢ öğretmenler, veliler geldi.', g: 1 }, { m: 'Tek isteği vardı▢ Başarmak.', g: 2 }, { m: 'Şunları al▢ süt, ekmek, peynir.', g: 2 }],
+        hint: 'İçinde virgül olan kümeler mi ayrılıyor? Arkasından açıklama ya da örnek mi geliyor? Yoksa basit bir sıralama mı?',
+        why: 'Virgül sıralı cümleyi ve onay sözünü ayırır. İçinde virgül olan kümeleri noktalı virgül ayırır. Açıklama (Başarmak) ve örnek listesi (süt, ekmek) öncesinde iki nokta.',
+        whyV: 'Virgül sıralı cümleleri ve evet gibi onay sözlerini ayırır. İçinde virgül olan kümeleri noktalı virgül ayırır. Açıklamadan ya da örnek listesinden önce ise iki nokta gelir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Dedemin bir öğüdü vardı<b>&nbsp;(I)</b> Dürüst ol<b>&nbsp;(II)</b> gerisi kendiliğinden gelir. Ben de bu sözü defterime<b>&nbsp;(III)</b> hem de büyük harflerle<b>&nbsp;(IV)</b> yazdım.</p><p>Numaralı yerlere sırasıyla hangi işaretler getirilmelidir?</p>',
         c: ['( : ) ( , ) ( , ) ( , )', '( ; ) ( , ) ( : ) ( , )', '( , ) ( ; ) ( , ) ( . )', '( : ) ( ; ) ( , ) ( ! )'], a: 'A',
@@ -138,6 +184,14 @@
           h: '<div class="an-ex"><span class="an-l">Yunus Emre 1240 (?) yılında doğdu. → bilgi kesin değil</span><span class="an-l">Çok çalışkanmış (!) hiç test çözmüyor. → alay</span></div>' }
       ] },
 
+    { t: 'Soru işareti mi, nokta mı?',
+      steps: [{ s: 'Bu cümlelerin bazısında soru sözcüğü var ama soru sormuyorlar. Sonuna soru işareti gelmeyenleri ele.' }],
+      ia: { tip: 'eleme', q: '<p>Sonuna <b>soru işareti konmayacak</b> cümleleri ele.</p>',
+        ogeler: ['Neden geldiğini bilmiyorum', 'Yarın bize gelecek misin', 'Kimin aradığını sordu', 'Bu kitabı kim yazdı', 'Ne zaman döneceğini merak ediyorum', 'Saat kaç oldu'],
+        ele: [0, 2, 4],
+        hint: 'Soru sözcüğü var diye karar verme. Cümle birinden cevap bekliyor mu, yoksa bir durumu mu bildiriyor?',
+        why: '“bilmiyorum, sordu, merak ediyorum” yüklemleri bir durum bildiriyor; soru sözcüğü yan cümlede kalıyor. Sonlarına nokta gelir.',
+        whyV: 'Bilmiyorum, sordu ve merak ediyorum yüklemleri bir durum bildiriyor; soru sözcüğü yan cümlede kalıyor. Bu cümlelerin sonuna nokta gelir.' } },
     { t: 'Tırnak, kesme ve çizgiler',
       steps: [
         { s: 'Tırnak işareti, başkasından aynen aktarılan sözleri ve eser adlarını gösterir.',
@@ -149,6 +203,14 @@
           h: '<div class="an-tip">Ankara<b>-</b>İstanbul treni · 1914<b>-</b>1918 yılları · <b>—</b> Nereye gidiyorsun?</div>' }
       ] },
 
+    { t: 'Kesmeli mi, kesmesiz mi?',
+      steps: [{ s: 'Her boşluğa doğru eki yerleştir. Kesme işaretine ve tırnağa dikkat!' }],
+      ia: { tip: 'bosluk', q: '<p>Ekleri <b>kesme işareti kuralına</b> uygun biçimde yerleştir.</p>',
+        metin: '“Nutuk”[_] bir solukta okudum.<br>Yarın Ankara[_] gidiyoruz.<br>Türk Dil Kurumu[_] mektup yazdık.',
+        secenek: ['u', '’u', '’ya', 'ya', 'na', '’na'], cevap: ['u', '’ya', 'na'],
+        hint: 'Tırnaktan sonra gelen ek nasıl yazılır? Kesme hangi özel adlarda kullanılmaz?',
+        why: 'Tırnaktan sonra gelen ek kesmesiz yazılır: “Nutuk”u. Yer adına gelen ek kesmeyle ayrılır: Ankara’ya. Kurum adına gelen ek kesmesiz: Türk Dil Kurumuna.',
+        whyV: 'Tırnaktan sonra gelen ek kesmesiz yazılır. Yer adına gelen ek kesmeyle ayrılır: Ankara’ya. Kurum adına gelen ek ise kesmesiz yazılır: Türk Dil Kurumuna.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde üç nokta, <b>sayılabilecek örneklerin sürdüğünü</b> göstermek için kullanılmıştır?</p>',
         c: ['Tam kapıdan çıkıyordum ki…', 'Bahçede gül, lale, menekşe… her çiçek vardı.', 'Kılavuzu karga olanın burnu b…tan çıkmaz.', 'Karşıda yemyeşil bir orman…'], a: 'B',

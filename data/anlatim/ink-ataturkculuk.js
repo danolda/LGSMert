@@ -72,6 +72,15 @@
           h: '<div class="an-trap">“Devletçilik özel girişimi ortadan kaldırmıştır.” → <span class="an-bad-t">yanlış</span>. Devlet, özel sermayenin yetmediği alanlarda yatırım yapar.</div>' }
       ] },
 
+    { t: 'Dört ilkede dört tuzak',
+      steps: [{ s: 'Şimdiye kadar dört ilke gördük. Bu ifadelerin her biri bir sınav çeldiricisi olabilir. Doğru mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Devletçilik ilkesi özel girişimi yasaklar.', d: false, a: 'Özel sermayenin yetmediği yerde devlet yatırım yapar.' },
+          { m: 'Atatürk milliyetçiliği ırka değil, kültür ve ülkü birliğine dayanır.', d: true, a: 'Kendini Türk hisseden herkesi kapsar.' },
+          { m: 'Aşar vergisinin kaldırılması Cumhuriyetçilikle ilgilidir.', d: false, a: 'Köylünün yükü hafifledi: Halkçılık.' },
+          { m: 'Kadınlara siyasi hak verilmesi Cumhuriyetçilikle ilgilidir.', d: true, a: 'Seçme ve seçilme, millî egemenliğin genişlemesidir.' }],
+        hint: 'Seçim ve oy Cumhuriyetçilik, eşitlik ve vergide adalet Halkçılık. Devletçilik özel girişimi reddeder mi?',
+        why: 'Devletçilik özel girişimi yasaklamaz; Aşar’ın kaldırılması Halkçılıktır. Milliyetçilik kültür birliğine dayanır, siyasi haklar ise millî egemenliği, yani Cumhuriyetçiliği güçlendirir.' } },
     { t: 'Laiklik ve İnkılapçılık',
       steps: [
         { s: 'Laiklik, devlet düzeninin ve hukukun dine değil akla ve bilime dayanmasıdır. Aynı zamanda herkesin din ve vicdan özgürlüğünü güvenceye alır.',
@@ -82,6 +91,13 @@
         { s: '“Sürekli yenilik”, “durmak yok” gibi ifadeler gördüğünde İnkılapçılığı düşün.', v: 'Sürekli yenilik, durmak yok gibi ifadeler gördüğünde İnkılapçılığı düşün.' }
       ] },
 
+    { t: 'Anahtar kelime avı',
+      steps: [{ s: 'Altı ilkenin hepsini gördük. Her anahtar kelime grubunu ilkesiyle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Anahtar kelimeleri <b>ilkeleriyle</b> eşleştir.</p>', solBaslik: 'Anahtar kelime', sagBaslik: 'İlke',
+        sol: ['millî irade, seçim', 'ortak kültür, ülkü', 'ayrıcalık yok, eşitlik', 'sermaye, yatırım', 'akıl, inanç özgürlüğü', 'durmak yok, yenilik'],
+        sag: ['Cumhuriyetçilik', 'Milliyetçilik', 'Halkçılık', 'Devletçilik', 'Laiklik', 'İnkılapçılık'],
+        hint: 'Yönetim ve seçim bir ilke, ekonomi bir ilke, sürekli değişim bir başka ilke. İnanç özgürlüğünü hangi ilke güvenceye alır?',
+        why: 'Seçim Cumhuriyetçilik, kültür birliği Milliyetçilik, eşitlik Halkçılık, yatırım Devletçilik, akıl ve inanç özgürlüğü Laiklik, durmadan yenilenmek İnkılapçılıktır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>“Toplumda hiçbir sınıfa, aileye ya da zümreye ayrıcalık tanınmamalı; herkes kanun önünde eşit olmalı ve devlet halkın refahını gözetmelidir.”</p><p>Bu anlayış Atatürk ilkelerinden hangisiyle <b>doğrudan</b> ilişkilidir?</p>',
         c: ['Devletçilik', 'Halkçılık', 'Laiklik', 'İnkılapçılık'], a: 'B',
@@ -101,6 +117,13 @@
           h: '<div class="an-trap">Önce sözün <b>asıl</b> vurgusunu bul. “Kendi içimizden”, “hiç kimseye bağlı kalmamak” → bağımsızlık; “birlikte”, “hep beraber” → millî birlik.</div>' }
       ] },
 
+    { t: 'Tam bağımsızlık hangisi?',
+      steps: [{ s: 'Bu gelişmelerden bazıları tam bağımsızlığın örneği, bazıları değil. Tam bağımsızlıkla ilgisi olmayanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Tam bağımsızlıkla ilgili olmayanları</b> ele.</p>',
+        ogeler: ['Kapitülasyonların kaldırılması', 'Soyadı Kanunu', 'Kabotaj Kanunu', 'Miladi takvime geçiş', 'Yabancı okulların Türk yasalarına bağlanması', 'Hafta tatilinin Pazar olması'],
+        ele: [1, 3, 5],
+        hint: 'Tam bağımsızlık, başka bir devletin ekonomimize ya da hukukumuza karışamamasıdır. Günlük hayatı düzenleyen yenilikler başka bir amaca hizmet eder.',
+        why: 'Kapitülasyonların kalkması, kıyı taşımacılığının Türk gemilerine verilmesi ve yabancı okulların yasalarımıza bağlanması tam bağımsızlıktır. Soyadı, takvim ve hafta tatili toplumsal düzen ve çağdaşlaşma içindir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Atatürk: “Dünyada her şey için, medeniyet için, hayat için, muvaffakiyet için en hakiki mürşit ilimdir, fendir.”</p><p>Bu sözde aşağıdakilerden hangisine <b>vurgu yapılmıştır</b>?</p>',
         c: ['Millî egemenliğe', 'Tam bağımsızlığa', 'Akılcılık ve bilimselliğe', 'Millî birlik ve beraberliğe'], a: 'C',
@@ -141,6 +164,12 @@
         { s: 'Kadınlar 1930’da belediye, 1933’te muhtarlık, 1934’te milletvekilliği seçimlerine katılma hakkı kazandı.', v: 'Kadınlar bin dokuz yüz otuzda belediye, bin dokuz yüz otuz üçte muhtarlık, bin dokuz yüz otuz dörtte milletvekilliği seçimlerine katılma hakkı kazandı.', on: '.p5' }
       ] },
 
+    { t: 'Siyasi inkılapları sırala',
+      steps: [{ s: 'Tarihleri kapattım. Bu gelişmeleri eskiden yeniye sırala. Araya bir antlaşma da karıştırdım.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Saltanat kaldırıldı', 'Lozan imzalandı', 'Ankara başkent oldu', 'Cumhuriyet ilan edildi', 'Halifelik kaldırıldı', 'Kadınlara belediye seçimi hakkı', 'Kadınlara milletvekilliği hakkı'],
+        hint: 'Saltanat, Lozan’a davet yüzünden, yani antlaşmadan önce kalktı. Başkent Cumhuriyet’ten iki hafta önce belirlendi. Kadınların hakları basamak basamak geldi.',
+        why: 'Kasım 1922 saltanat, Temmuz 1923 Lozan, 13 Ekim 1923 Ankara, 29 Ekim 1923 Cumhuriyet, Mart 1924 halifelik; kadınlar 1930’da belediye, 1934’te milletvekilliği hakkı aldı.' } },
     { t: '3 Mart 1924: aynı gün dört karar',
       base: '<table class="an-tbl"><tr><th>Karar</th><th>İlişkili ilke</th></tr>' +
         '<tr class="rv d1"><td>Halifelik kaldırıldı, hanedan yurt dışına çıkarıldı</td><td>Cumhuriyetçilik · Laiklik</td></tr>' +
@@ -155,6 +184,21 @@
         { s: 'Dördüncüsü Genelkurmay Başkanlığı’nın kurulması. Böylece ordu siyasetin dışına çıkarıldı.', on: '.d4' }
       ] },
 
+    { t: '3 Mart 1924 takvim yaprağı',
+      steps: [{ s: 'Bu takvim yaprağında aynı gün alınan dört kararı bul. Dördüne de dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>3 Mart 1924’te</b> alınan dört karara dokun.</p>', dogru: ['k1', 'k3', 'k5', 'k7'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 226" role="group" aria-label="3 Mart 1924 takvim yaprağı, dokunulabilir kararlar">' +
+          '<rect x="6" y="4" width="328" height="30" rx="8" class="boxa"/><text x="170" y="25" text-anchor="middle" font-size="15" font-weight="700">3 Mart 1924</text>' +
+          '<g data-b="k1" aria-label="Halifelik kaldırıldı"><rect x="6" y="42" width="160" height="40" rx="9" class="box"/><text x="86" y="67" text-anchor="middle" font-size="14">Halifelik kaldırıldı</text></g>' +
+          '<g data-b="k2" aria-label="Saltanat kaldırıldı"><rect x="174" y="42" width="160" height="40" rx="9" class="box"/><text x="254" y="67" text-anchor="middle" font-size="14">Saltanat kaldırıldı</text></g>' +
+          '<g data-b="k3" aria-label="Tevhid-i Tedrisat"><rect x="6" y="88" width="160" height="40" rx="9" class="box"/><text x="86" y="113" text-anchor="middle" font-size="14">Tevhid-i Tedrisat</text></g>' +
+          '<g data-b="k4" aria-label="Şapka Kanunu"><rect x="174" y="88" width="160" height="40" rx="9" class="box"/><text x="254" y="113" text-anchor="middle" font-size="14">Şapka Kanunu</text></g>' +
+          '<g data-b="k5" aria-label="Diyanet İşleri kuruldu"><rect x="6" y="134" width="160" height="40" rx="9" class="box"/><text x="86" y="159" text-anchor="middle" font-size="14">Diyanet kuruldu</text></g>' +
+          '<g data-b="k6" aria-label="Cumhuriyet ilan edildi"><rect x="174" y="134" width="160" height="40" rx="9" class="box"/><text x="254" y="159" text-anchor="middle" font-size="14">Cumhuriyet ilanı</text></g>' +
+          '<g data-b="k7" aria-label="Genelkurmay kuruldu"><rect x="6" y="180" width="160" height="40" rx="9" class="box"/><text x="86" y="205" text-anchor="middle" font-size="14">Genelkurmay kuruldu</text></g>' +
+          '<g data-b="k8" aria-label="Medeni Kanun"><rect x="174" y="180" width="160" height="40" rx="9" class="box"/><text x="254" y="205" text-anchor="middle" font-size="14">Medeni Kanun</text></g></svg>',
+        hint: 'O gün din, eğitim ve ordu siyasetten ayrıldı. Saltanat ve Cumhuriyet daha önceydi; Şapka Kanunu ve Medeni Kanun daha sonra.',
+        why: 'Halifelik kaldırıldı, okullar Tevhid-i Tedrisat ile tek çatıya bağlandı, Diyanet İşleri Başkanlığı ve Genelkurmay Başkanlığı kuruldu. Saltanat 1922, Cumhuriyet 1923, Şapka Kanunu 1925, Medeni Kanun 1926.' } },
     { t: 'Hukuk: Medeni Kanun ve büyük tuzak',
       steps: [
         { s: 'Osmanlı’da şer’i mahkemeler, cemaat mahkemeleri ve konsolosluk mahkemeleri bir aradaydı. Yani hukuk birliği yoktu.' },
@@ -189,8 +233,8 @@
       '</svg>',
       steps: [
         { s: 'Eğitimde ilk büyük adım 1924’teki Tevhid-i Tedrisat’tı. Eğitimdeki ikilik bitti, okullar tek çatıda toplandı.', v: 'Eğitimde ilk büyük adım bin dokuz yüz yirmi dörtteki Tevhidi Tedrisat’tı. Eğitimdeki ikilik bitti, okullar tek çatıda toplandı.', on: '.k1' },
-        { s: '1 Kasım 1928’de yeni Türk harfleri kabul edildi. Okuma yazmayı kolaylaştırmak ve yaygınlaştırmak amaçlandı.', v: 'Bir Kasım bin dokuz yüz yirmi sekizde yeni Türk harfleri kabul edildi. Okuma yazmayı kolaylaştırmak ve yaygınlaştırmak amaçlandı.', on: '.k2' },
-        { s: 'Millet Mektepleri’nde yetişkinlere okuma yazma öğretildi; Atatürk bu okulların Başöğretmeni kabul edildi.' },
+        { s: '1 Kasım 1928’de yeni Türk harfleri kabul edildi. Okuyup yazmayı kolaylaştırmak ve okuryazarlığı yaygınlaştırmak amaçlandı.', v: 'Bir Kasım bin dokuz yüz yirmi sekizde yeni Türk harfleri kabul edildi. Okuyup yazmayı kolaylaştırmak ve okuryazarlığı yaygınlaştırmak amaçlandı.', on: '.k2' },
+        { s: 'Millet Mektepleri’nde yetişkinler yeni harflerle okuyup yazmayı öğrendi; Atatürk bu okulların Başöğretmeni kabul edildi.' },
         { s: 'Türk Tarih Kurumu ve Türk Dil Kurumu kuruldu. Tarihimizi ve dilimizi bilimsel olarak araştırmak için: Milliyetçilik.', on: '.k3,.k4' },
         { s: '1933’te Darülfünun kapatıldı, yerine modern İstanbul Üniversitesi kuruldu.', v: 'Bin dokuz yüz otuz üçte Darülfünun kapatıldı, yerine modern İstanbul Üniversitesi kuruldu.', on: '.k5' }
       ] },
@@ -205,6 +249,13 @@
           h: '<table class="an-tbl"><tr><td>Uluslararası saat</td><td>1925</td></tr><tr><td>Miladi takvim</td><td>1926</td></tr><tr><td>Uluslararası rakamlar</td><td>1928</td></tr><tr><td>Metre ve kilogram</td><td>1931</td></tr><tr><td>Hafta tatili Pazar</td><td>1935</td></tr></table>' }
       ] },
 
+    { t: 'İnkılap hangi alanda?',
+      steps: [{ s: 'Her inkılabı yapıldığı alanın kutusuna yerleştir. Bir tanesi iki alanı da ilgilendiriyor gibi görünebilir, asıl amacına bak.' }],
+      ia: { tip: 'grup', q: '<p>Her inkılabı <b>alanına</b> yerleştir.</p>', gruplar: ['Hukuk', 'Eğitim ve kültür', 'Toplumsal hayat'],
+        ogeler: [{ m: 'Türk Medeni Kanunu', g: 0 }, { m: 'Harf İnkılabı', g: 1 }, { m: 'Şapka Kanunu', g: 2 }, { m: 'Millet Mektepleri', g: 1 },
+          { m: 'Soyadı Kanunu', g: 2 }, { m: 'Türk Dil Kurumu', g: 1 }, { m: 'Lakap ve unvanlar kalktı', g: 2 }],
+        hint: 'Soyadı Kanunu bir kanun ama amacı resmî işlerdeki karışıklığı bitirmek, yani gündelik hayatı düzenlemek. Medeni Kanun ise hukuk birliğini sağladı.',
+        why: 'Medeni Kanun hukuk; harfler, Millet Mektepleri ve Türk Dil Kurumu eğitim ve kültür; şapka, soyadı ve unvanların kaldırılması toplumsal hayat alanındadır.' } },
     { t: 'Ekonomi: millî ekonomiden Devletçiliğe',
       steps: [
         { s: 'Ekonomide ilk adım daha Cumhuriyet ilan edilmeden geldi: 1923 İzmir İktisat Kongresi. Millî ekonomi ve yerli malı esas alındı.', v: 'Ekonomide ilk adım daha Cumhuriyet ilan edilmeden geldi: bin dokuz yüz yirmi üç İzmir İktisat Kongresi. Millî ekonomi ve yerli malı esas alındı.' },
@@ -215,6 +266,13 @@
         { s: 'Sağlıkta da devlet sorumluluk aldı: sıtmayla mücadele, Hıfzıssıhha Enstitüsü, aşı ve serum üretimi. Bu sosyal devlet, yani Halkçılık.' }
       ] },
 
+    { t: 'Ekonomide boşlukları doldur',
+      steps: [{ s: 'Ekonomideki üç adımı tamamla. Her kartın hangi yıla ve hangi ilkeye uyduğunu düşün.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: '1925: [_] vergisi kaldırıldı → Halkçılık<br>1926: [_] Kanunu, kıyı taşımacılığı Türk gemilerine → Milliyetçilik<br>1927: [_] Kanunu ile özel girişim desteklendi',
+        secenek: ['Aşar', 'Kabotaj', 'Teşvik-i Sanayi', 'Soyadı', 'Şapka', 'Medeni'], cevap: ['Aşar', 'Kabotaj', 'Teşvik-i Sanayi'],
+        hint: 'Köylünün sırtındaki vergi bir kart, denizle ilgili kanun bir kart, sanayiyi teşvik eden kanun bir kart.',
+        why: 'Aşar’ın kaldırılması köylüyü rahatlattı, Kabotaj Kanunu denizde egemenlik sağladı, Teşvik-i Sanayi Kanunu özel girişime destek verdi. Sonuç alınamayınca Devletçiliğe geçildi.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Cumhuriyet’in ilk yıllarında sanayiyi geliştirmek için özel girişimcilere arazi, vergi muafiyeti ve kredi gibi destekler sağlanmış; ancak 1929 Dünya Ekonomik Bunalımı da etkisini gösterince beklenen sonuç alınamamıştır. Bunun üzerine fabrikaların devlet eliyle kurulmasına karar verilmiştir.</p><p>Bu bilgilere göre devlet eliyle sanayileşmeye geçilmesinin <b>nedenleri</b> arasında hangisi gösterilebilir?</p>',
         c: ['Özel girişimin yasaklanmak istenmesi', 'Özel sermayenin yetersiz kalması ve ekonomik bunalım', 'Yabancı sermayenin ülkeye çok fazla girmesi', 'Tarımın tamamen terk edilmek istenmesi'], a: 'B',

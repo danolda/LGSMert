@@ -34,6 +34,16 @@
           h: '<table class="an-tbl"><tr><th>Durum</th><th>Ne olur?</th><th>Örnek</th></tr><tr><td>Kuvvet &lt; yük</td><td>kuvvetten kazanç, yoldan kayıp</td><td>hareketli makara, eğik düzlem, çıkrık</td></tr><tr><td>Kuvvet = yük</td><td>yalnız yön değişir</td><td>sabit makara</td></tr><tr><td>Kuvvet &gt; yük</td><td>yoldan kazanç, kuvvetten kayıp</td><td>cımbız, maşa, olta kamışı</td></tr></table>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı: altın kural',
+      steps: [{ s: 'Altın kuralı sağlamlaştıralım. Her ifadeye doğru ya da yanlış de.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Basit makineler için her ifadeye karar ver.</p>',
+        ifadeler: [
+          { m: 'Rampa kullanınca kuvvet azaldığı için yapılan iş de azalır.', d: false, a: 'Kuvvet azalır ama yol uzar; iş aynı kalır.' },
+          { m: 'Kuvvetten 3 kat kazandıran bir makine yoldan 3 kat kaybettirir.', d: true, a: 'Altın kural: kazanç ve kayıp aynı oranda.' },
+          { m: 'Bazı basit makineler yalnızca kuvvetin yönünü değiştirir.', d: true, a: 'Örneğin sabit makara.' },
+          { m: 'İyi tasarlanmış bir basit makine işten kazanç sağlar.', d: false, a: 'Hiçbir basit makine işten kazanç sağlamaz.' }],
+        hint: 'İş, kuvvet ile yolun birlikte sonucu. Biri azalırsa öbürüne ne olmalı?',
+        why: 'Basit makine kuvvetten kazandırırsa yoldan aynı oranda kaybettirir; iş değişmez. İşten kazanç diyen yargı LGS’de her zaman yanlıştır.' } },
     { t: 'Kaldıraç: destek, yük, kuvvet',
       base: '<svg class="an-svg" viewBox="0 0 340 190" role="img" aria-label="Eşit bölmeli kaldıraç: yük kolu 3, kuvvet kolu 8 bölme">' +
         '<line x1="20" y1="100" x2="317" y2="100" stroke="#94a3b8" stroke-width="7" stroke-linecap="round"/>' +
@@ -55,6 +65,14 @@
           h: '<div class="an-trap">Kollar <b>destek noktasından</b> ölçülür, çubuğun ucundan değil.</div>' }
       ] },
 
+    { t: 'Kaydır: dengede kuvvet',
+      steps: [{ s: 'Denge kuralını kendin uygula. Destekten 3 bölme uzakta 120 newtonluk bir yük var. Kuvvet desteğin öbür tarafında, 4 bölme uzaktan uygulanıyor. Kaç newton gerekir?' }],
+      ia: { tip: 'kaydir', q: '<p>Yük 120 N, yük kolu 3 bölme. Kuvvet kolu 4 bölme. Dengeyi sağlayan kuvvet kaç N?</p>',
+        min: 0, max: 160, adim: 10, cevap: 90, tol: 0, birim: ' N', etiket: [0, 40, 80, 120, 160],
+        hint: 'Kuvvet çarpı kuvvet kolu, yük çarpı yük koluna eşit. Önce 120 ile 3’ü çarp.',
+        hintV: 'Kuvvet çarpı kuvvet kolu, yük çarpı yük koluna eşittir. Önce yüz yirmi ile üçü çarp.',
+        why: '120 · 3 = F · 4 → 360 = 4F → F = 90 N. Kuvvet kolu daha uzun olduğu için kuvvet yükten küçük çıktı.',
+        whyV: 'Yüz yirmi çarpı üç, kuvvet çarpı dörde eşit. Üç yüz altmış, dört kuvvete eşit; kuvvet doksan newton. Kuvvet kolu daha uzun olduğu için kuvvet yükten küçük çıktı.' } },
     { t: 'Kaldıraç çeşitleri',
       base: '<table class="an-tbl"><tr><th>Ortada ne var?</th><th>Kuvvet kazancı</th><th>Örnek</th></tr>' +
         '<tr class="rv t1"><td><b>Destek</b><br><small>yük · destek · kuvvet</small></td><td>kollara bağlı: var, yok ya da kayıp</td><td>tahterevalli, makas, pense</td></tr>' +
@@ -67,6 +85,13 @@
         { s: 'Kuvvet ortadaysa kuvvet kolu hep kısadır; kuvvetten kayıp, yoldan kazanç vardır. Cımbız ve maşa böyle çalışır.', on: '.t3' }
       ] },
 
+    { t: 'Grupla: ortada ne var?',
+      steps: [{ s: 'Kaldıraç türlerini ayıralım. Her aracı, ortada ne olduğuna göre doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her aracı, ortada bulunan noktaya göre yerleştir.</p>', gruplar: ['Destek ortada', 'Yük ortada', 'Kuvvet ortada'],
+        ogeler: [{ m: 'Tahterevalli', g: 0 }, { m: 'Makas', g: 0 }, { m: 'El arabası', g: 1 }, { m: 'Ceviz kıracağı', g: 1 },
+          { m: 'Cımbız', g: 2 }, { m: 'Maşa', g: 2 }, { m: 'Pense', g: 0 }, { m: 'Gazoz açacağı', g: 1 }],
+        hint: 'Aracı kullanırken düşün: nereden tutuyorsun, ezilen ya da kaldırılan şey nerede, dönme noktası nerede?',
+        why: 'Tahterevalli, makas, pense destek ortada; el arabası, ceviz kıracağı, gazoz açacağı yük ortada, bunlar hep kuvvetten kazandırır. Cımbız ve maşada kuvvet ortada: kuvvetten kayıp, yoldan kazanç.' } },
     { t: 'Bir şey kayınca kuvvet nasıl değişir?',
       steps: [
         { s: 'Çıkmışlarda kaldıraç çoğu zaman bir şey kayarken sorulur. Hepsini aynı mantıkla çözersin: hangi kol uzadı, hangisi kısaldı?' },
@@ -127,6 +152,13 @@
           h: '<div class="an-trap"><span class="an-bad-t">Makara sayısını say.</span> → <span class="an-ok-t">Hareketli kısmı taşıyan ip kollarını say.</span><br>Sabit makaranın tavana askısı ip kolu sayılmaz. Sabit makara eklemek kuvveti azaltmaz.</div>' }
       ] },
 
+    { t: 'Dokun: yükü taşıyan ip kolları',
+      steps: [{ s: 'Palangada ip kolunu sayma sırası sende. Kesikli çizgiyi kesen ve hareketli makarayı taşıyan ip kollarının hepsine dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Hareketli makarayı ve yükü <b>taşıyan</b> ip kollarının hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 236" role="group" aria-label="Tavana bağlı bir sabit makara ve yükü taşıyan bir hareketli makaradan oluşan palanga; üç ip parçası numaralı"><line x1="60" y1="10" x2="280" y2="10" class="st" stroke-width="4"/><line x1="160" y1="10" x2="160" y2="50" class="st" stroke-width="3"/><path d="M180 202 l-7 -12 m7 12 l7 -12" class="st2" stroke-width="3" fill="none"/><text x="180" y="226" text-anchor="middle" font-size="14" class="acc">F</text><circle cx="160" cy="50" r="20" fill="none" class="st" stroke-width="3"/><circle cx="160" cy="50" r="4" class="st"/><circle cx="120" cy="160" r="20" fill="none" class="st" stroke-width="3"/><circle cx="120" cy="160" r="4" class="st"/><line x1="120" y1="164" x2="120" y2="192" class="st" stroke-width="3"/><rect x="96" y="192" width="48" height="34" rx="4" fill="#f59e0b" opacity="0.8"/><text x="120" y="215" text-anchor="middle" font-size="14">yük</text><text x="270" y="56" font-size="14" class="mut" text-anchor="middle">sabit</text><text x="270" y="166" font-size="14" class="mut" text-anchor="middle">hareketli</text><line x1="60" y1="105" x2="300" y2="105" stroke-dasharray="5 5" class="st2" stroke-width="1.5"/><g data-b="k1" aria-label="1 numaralı ip"><rect x="89" y="14" width="22" height="146" rx="8" class="box"/><line x1="100" y1="10" x2="100" y2="160" class="st" stroke-width="3"/><text x="78" y="92" text-anchor="middle" font-size="15" font-weight="700">1</text></g><g data-b="k2" aria-label="2 numaralı ip"><rect x="129" y="54" width="22" height="106" rx="8" class="box"/><line x1="140" y1="50" x2="140" y2="160" class="st" stroke-width="3"/><text x="162" y="112" text-anchor="middle" font-size="15" font-weight="700">2</text></g><g data-b="k3" aria-label="3 numaralı ip, çekilen uç"><rect x="169" y="54" width="22" height="146" rx="8" class="box"/><line x1="180" y1="50" x2="180" y2="200" class="st" stroke-width="3"/><text x="202" y="132" text-anchor="middle" font-size="15" font-weight="700">3</text></g></svg>', dogru: ['k1', 'k2'],
+        hint: 'Kesikli çizginin altında yükle birlikte hareket eden parça hangisi? Ona hangi ip parçaları bağlı?',
+        why: '1 ve 2 hareketli makarayı taşır; yük iki kol arasında paylaşılır, kuvvet yükün yarısıdır. 3 senin çektiğin uç; sabit makaradan geçip aşağı iner, yükü taşımaz.',
+        whyV: 'Bir ve iki numaralı ip kolları hareketli makarayı taşır; yük iki kol arasında paylaşılır, kuvvet yükün yarısı olur. Üç numara senin çektiğin uç; sabit makaradan geçip aşağı iner, yükü taşımaz.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Bir palangada yük, hareketli kısma bağlı <b>3 ip koluyla</b> taşınmaktadır. <b>300 N</b>’luk yükü <b>2 m</b> yükseltmek için (sürtünme ve makara ağırlıkları önemsiz) ip ne kadar çekilmeli ve en az kaç N kuvvet uygulanmalıdır?</p>',
         c: ['2 m · 300 N', '6 m · 100 N', '6 m · 300 N', '2 m · 100 N'], a: 'B',
@@ -152,6 +184,13 @@
         { s: 'Deney tasarlarken yine tek değişken: yüksekliğin etkisi için boyu aynı, uzunluğun etkisi için yüksekliği aynı düzenekler seçilir. Vida ve kama da eğik düzlemin akrabalarıdır.' }
       ] },
 
+    { t: 'Sırala: hangi rampa daha kolay?',
+      steps: [{ s: 'Aynı yük, sürtünmesiz dört rampadan çıkarılacak. Rampaları gereken kuvvete göre en azdan en çoğa sırala. Uzunluğa değil, eğime bak!' }],
+      ia: { tip: 'sirala', q: '<p>Aynı yük için gereken kuvvete göre <b>en azdan en çoğa</b> sırala.</p>', ust: 'en az kuvvet', alt: 'en çok kuvvet',
+        ogeler: ['Boy 6 m · yükseklik 1 m', 'Boy 4 m · yükseklik 1 m', 'Boy 3 m · yükseklik 1 m', 'Boy 6 m · yükseklik 3 m'],
+        hint: 'Her rampada yüksekliği boya böl. Bu oran küçüldükçe eğim azalır, kuvvet de azalır.',
+        why: 'Yükseklik bölü boy: 1/6 < 1/4 < 1/3 < 1/2. En uzun rampalardan biri en çok kuvveti istiyor, çünkü yüksekliği de büyük. Kuvveti eğim belirler.',
+        whyV: 'Yüksekliği boya bölelim: altıda bir, dörtte birden; dörtte bir, üçte birden; üçte bir de ikide birden küçük. En uzun rampalardan biri en çok kuvveti istiyor, çünkü yüksekliği de büyük. Kuvveti eğim belirler.' } },
     { t: 'Çıkrık',
       base: '<svg class="an-svg" viewBox="0 0 340 180" role="img" aria-label="Çıkrık: büyük kol ile küçük silindir aynı eksende döner">' +
         '<circle cx="110" cy="80" r="62" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 5"/>' +
@@ -190,6 +229,13 @@
           h: '<div class="an-trap">Sabit makara (ya da sabit noktaya bağlı halka, ağaç) <b>kuvvet kazancı sağlamaz</b>, yalnızca yönü değiştirir.</div>' }
       ] },
 
+    { t: 'Ele: kuvvetten kazanç yok',
+      steps: [{ s: 'Son etkinlik. Aşağıdakilerden kuvvetten kazanç sağlamayanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Kuvvetten kazanç sağlamayanları</b> ele.</p>',
+        ogeler: ['Sabit makara', 'Hareketli makara', 'Cımbız', 'El arabası', 'Özdeş iki dişli', 'Kuyu çıkrığı', 'Sürtünmesiz rampa'],
+        ele: [0, 2, 4],
+        hint: 'Üç tanesi ya yalnızca yönü değiştirir ya da kuvvet kolu kısa olduğu için yoldan kazandırır.',
+        why: 'Sabit makara ve özdeş dişliler yalnızca yönü değiştirir; cımbızda kuvvet ortada, kuvvetten kayıp vardır. Hareketli makara, el arabası, çıkrık ve rampa kuvveti küçültür.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aynı yük, sürtünmesiz iki eğik düzlemden çıkarılıyor. <b>P</b> düzeneğinin boyu <b>6 m</b>, yüksekliği <b>2 m</b>; <b>S</b> düzeneğinin boyu <b>3 m</b>, yüksekliği <b>1 m</b>’dir. Buna göre hangisi <b>doğrudur</b>?</p>',
         c: ['P daha uzun olduğu için P’de daha az kuvvet gerekir.', 'S daha kısa olduğu için S’de daha az kuvvet gerekir.', 'İki düzenekte gereken kuvvet eşittir.', 'P’de işten kazanç sağlanır.'], a: 'C',

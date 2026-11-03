@@ -24,6 +24,13 @@
           h: '<div class="an-tip"><b>İtalya’ya dikkat:</b> önce İttifak’taydı; 1915’te Anadolu’dan toprak vaat edilince İtilaf’a geçti.</div>' }
       ] },
 
+    { t: 'Hangi blokta savaştı?',
+      steps: [{ s: 'Her devleti savaş boyunca hangi blokta savaştıysa o kutuya koy. Bir tanesinde dikkatli ol, saf değiştirdi.' }],
+      ia: { tip: 'grup', q: '<p>Her devleti <b>savaştığı bloğa</b> yerleştir.</p>', gruplar: ['İttifak', 'İtilaf'],
+        ogeler: [{ m: 'Almanya', g: 0 }, { m: 'İngiltere', g: 1 }, { m: 'Avusturya-Macaristan', g: 0 }, { m: 'Rusya', g: 1 },
+          { m: 'Osmanlı Devleti', g: 0 }, { m: 'İtalya', g: 1 }, { m: 'Bulgaristan', g: 0 }, { m: 'Fransa', g: 1 }],
+        hint: 'İtalya savaştan önce hangi bloktaydı, 1915’te ne oldu? Bulgaristan ise Çanakkale’den sonra hangi tarafa katıldı?',
+        why: 'Almanya, Avusturya-Macaristan, Osmanlı ve Bulgaristan İttifak’ta; İngiltere, Fransa ve Rusya İtilaf’ta savaştı. İtalya önce İttifak’taydı ama 1915’te İtilaf’a geçti.' } },
     { t: 'Osmanlı neden savaşa girdi?',
       steps: [
         { s: 'Osmanlı Almanya’nın yanında savaşa girdi. Peki ne umuyordu? Kaybettiği toprakları geri almak ve yalnızlıktan kurtulmak.',
@@ -73,6 +80,22 @@
           h: '<div class="an-rule"><b>Çi</b>-<b>Ka</b>-<b>S</b>: Çanakkale (1915) → Kafkas (1916, Muş ve Bitlis geri alındı) → Suriye-Filistin (1917–1918)</div>' }
       ] },
 
+    { t: 'Mustafa Kemal hangi cephelerde?',
+      steps: [{ s: 'Haritada Mustafa Kemal’in Birinci Dünya Savaşı’nda görev yaptığı bütün cepheleri bul, hepsine dokun ve Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>Mustafa Kemal’in Birinci Dünya Savaşı’nda <b>görev yaptığı cephelere</b> dokun.</p>', dogru: ['ca', 'ka', 'sf'],
+        svg: '<svg class="an-svg" viewBox="0 0 330 222" role="group" aria-label="Birinci Dünya Savaşında Osmanlı cepheleri, dokunulabilir temsilî harita">' +
+          '<polygon points="16,12 39,20 56,30 76,31 96,29 116,15 139,11 157,10 170,18 179,29 199,34 218,36 235,36 248,34 263,24 282,21 296,34 300,51 318,68 311,86 310,111 311,126 293,129 278,134 258,134 238,139 215,141 199,144 184,141 179,156 172,164 169,154 175,144 165,146 149,141 137,154 119,160 106,149 89,140 81,151 66,156 57,146 43,142 29,136 26,114 16,104 21,89 18,76 9,71 9,59 18,51 6,45 9,31" fill="none" class="ln" stroke-width="1.6"/>' +
+          '<ellipse cx="43" cy="42" rx="20" ry="6" fill="none" class="ln" stroke-width="1.2"/>' +
+          '<text x="165" y="96" font-size="11" text-anchor="middle" class="mut">ANADOLU</text>' +
+          '<text x="165" y="14" font-size="10" text-anchor="middle" class="mut">temsilî harita</text>' +
+          '<g data-b="ca" aria-label="Çanakkale"><rect x="4" y="62" width="100" height="38" rx="9" class="box"/><text x="54" y="86" text-anchor="middle" font-size="14">Çanakkale</text></g>' +
+          '<g data-b="ka" aria-label="Kafkas"><rect x="236" y="62" width="86" height="38" rx="9" class="box"/><text x="279" y="86" text-anchor="middle" font-size="14">Kafkas</text></g>' +
+          '<g data-b="ir" aria-label="Irak"><rect x="262" y="176" width="62" height="38" rx="9" class="box"/><text x="293" y="200" text-anchor="middle" font-size="14">Irak</text></g>' +
+          '<g data-b="sf" aria-label="Suriye-Filistin"><rect x="132" y="176" width="124" height="38" rx="9" class="box"/><text x="194" y="200" text-anchor="middle" font-size="14">Suriye-Filistin</text></g>' +
+          '<g data-b="hy" aria-label="Hicaz-Yemen"><rect x="8" y="176" width="116" height="38" rx="9" class="box"/><text x="66" y="200" text-anchor="middle" font-size="14">Hicaz-Yemen</text></g>' +
+          '</svg>',
+        hint: 'Kısa şifreyi hatırla: Çi, Ka, S. Üç cephe, üç harf.',
+        why: 'Çanakkale 1915, Kafkas 1916, Suriye-Filistin 1917 ile 1918 arası. Irak ve Hicaz-Yemen cephelerinde Mustafa Kemal görev yapmadı.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Birinci Dünya Savaşı’nda Almanya, Osmanlı Devleti’nin kendi yanında savaşa girmesini istemiştir.</p><p>Aşağıdakilerden hangisi Almanya’nın bu isteğinin nedenleri arasında <b>gösterilemez</b>?</p>',
         c: ['Yeni cepheler açtırarak kendi üzerindeki savaş yükünü hafifletmek', 'Halifeliğin etkisiyle İngiliz sömürgelerindeki Müslümanları ayaklandırmak', 'Osmanlı ordusunun üstün silah ve teknolojisinden yararlanmak', 'İngiltere’nin sömürgeleriyle bağlantısını kesmek'], a: 'C',
@@ -90,6 +113,13 @@
         { s: 'Yirmi dördüncü madde de Doğu Anadolu’daki altı ili hedef alıyordu: Erzurum, Van, Elazığ, Diyarbakır, Bitlis, Sivas.', on: '.o4' }
       ] },
 
+    { t: 'Madde ve amacı',
+      steps: [{ s: 'Mondros’un her maddesinin bir amacı vardı. Maddeleri amaçlarıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Mondros Ateşkesi’nin maddelerini <b>amaçlarıyla</b> eşleştir.</p>', solBaslik: 'Madde', sagBaslik: 'Amacı',
+        sol: ['Ordu terhis edilecek', 'Haberleşme denetimde', '7. madde', '24. madde'],
+        sag: ['Savunmasız bırakmak', 'Örgütlenmeyi önlemek', 'Her yeri işgale bahane', 'Doğuda Ermeni devleti'],
+        hint: 'Silahsız kalan savunamaz; haberleşemeyen örgütlenemez. Yedinci madde her yere, yirmi dördüncü madde altı ile bakar.',
+        why: 'Terhis ve silah teslimi ülkeyi savunmasız bıraktı; haberleşme denetimi örgütlenmeyi engelledi. Yedinci madde her yeri işgal bahanesi, yirmi dördüncü madde ise altı ilde Ermeni devletine zemin hazırladı.' } },
     { t: 'İşgaller ve tepkiler',
       steps: [
         { s: 'Paris Barış Konferansı’nda İngiltere, Akdeniz’de güçlü bir İtalya istemediği için İzmir’i Yunanistan’a verdirdi.',
@@ -111,6 +141,13 @@
         { s: 'Düzenli ordu kurulana kadar düşmanı oyaladı. Ama disiplinsizdi ve düşmanı yurttan atacak güçte değildi; bu yüzden yerini düzenli orduya bıraktı.' }
       ] },
 
+    { t: 'Zararlı cemiyetleri ayıkla',
+      steps: [{ s: 'Bu listede yararlı ve zararlı cemiyetler karışık. Zararlı olanların hepsini ele. Adına aldanma!' }],
+      ia: { tip: 'eleme', q: '<p><b>Zararlı cemiyetlerin</b> hepsini ele.</p>',
+        ogeler: ['Kilikyalılar Cemiyeti', 'Mavri Mira', 'Redd-i İlhak Cemiyeti', 'Taşnak Cemiyeti', 'Trabzon Muhafaza-i Hukuk', 'İngiliz Muhipleri', 'Trakya-Paşaeli Cemiyeti', 'Wilson Prensipleri'],
+        ele: [1, 3, 5, 7],
+        hint: 'Kendi bölgesini savunan cemiyet yararlıdır. Azınlıkların cemiyetleri ve kurtuluşu mandada görenler zararlıdır.',
+        why: 'Mavri Mira ve Taşnak azınlık cemiyetleri; İngiliz Muhipleri ve Wilson Prensipleri kurtuluşu mandada gördü. Kilikyalılar adı yabancı gibi dursa da Çukurova’yı savunan yararlı bir cemiyettir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Mondros Ateşkesi’nden sonra Doğu Anadolu’da kurulan bir cemiyet, bölgenin Ermenilere verilmesini engellemek için gazeteler çıkarmış ve bir kongre toplamıştır. Batı Anadolu’da kurulan bir başka cemiyet ise İzmir ve çevresinin Yunanlılara verilmesine karşı çıkmıştır.</p><p>Bu bilgilere göre yararlı cemiyetlerle ilgili hangisi <b>söylenebilir</b>?</p>',
         c: ['Tek merkezden yönetildikleri', 'Bölgesel amaçlarla kuruldukları', 'Kurtuluşu manda yönetiminde gördükleri', 'İstanbul Hükûmeti’nin emriyle kuruldukları'], a: 'B',
@@ -149,6 +186,15 @@
         { s: 'Erzurum’dan sonra Sivas’ta kongre yapıldı; 27 Aralık 1919’da da Temsil Heyeti Ankara’ya geldi.', v: 'Erzurum’dan sonra Sivas’ta kongre yapıldı; yirmi yedi Aralık bin dokuz yüz on dokuzda da Temsil Heyeti Ankara’ya geldi.', on: '.r5,.r6' }
       ] },
 
+    { t: 'Yolculukta tuzak var',
+      steps: [{ s: 'Samsun’dan Ankara’ya uzanan yolculukla ilgili bu ifadelere bak. Hangisi doğru, hangisi yanlış?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Mustafa Kemal Samsun’a 9. Ordu Müfettişi olarak çıktı.', d: true, a: 'Geniş yetkili bir görevle, 19 Mayıs 1919’da.' },
+          { m: 'Havza Genelgesi’nde azınlıklara karşı silahlı direniş istendi.', d: false, a: 'Tersine: azınlıklara kötü davranılmasın, yeni işgale bahane olmasın.' },
+          { m: 'Mustafa Kemal askerlikten Sivas Kongresi’nden sonra istifa etti.', d: false, a: 'Erzurum Kongresi’nden önce, Erzurum’da istifa etti.' },
+          { m: 'Kurtuluş Savaşı’nın yol haritası Amasya’da yayımlandı.', d: true, a: 'Amasya Genelgesi: neden, ne için, nasıl.' }],
+        hint: 'Havza’da hedef yeni işgallere bahane vermemekti. İstifa, kongrelerin hangisinden önceydi?',
+        why: 'Havza Genelgesi azınlıklara kötü davranılmamasını istedi; istifa Erzurum Kongresi’nden önce, Erzurum’da oldu. Samsun’a müfettiş olarak çıkış ve Amasya’daki yol haritası doğrudur.' } },
     { t: 'Amasya Genelgesi: yol haritası',
       base: '<table class="an-tbl"><tr><th>Madde (özetle)</th><th>Ne anlama gelir?</th></tr>' +
         '<tr class="rv g1"><td>Vatanın bütünlüğü, milletin bağımsızlığı tehlikededir.</td><td><b>Gerekçe</b></td></tr>' +
@@ -177,6 +223,13 @@
         { s: 'Sivas’ta bütün yararlı cemiyetler tek çatıda birleşti. Temsil Heyeti, Ali Fuat Paşa’yı Batı Cephesi komutanı atayarak hükûmet gibi davrandı.', on: '.z4' }
       ] },
 
+    { t: 'Erzurum mu, Sivas mı?',
+      steps: [{ s: 'Şimdi iki kongreyi ayıralım. Her bilgiyi ait olduğu kongrenin kutusuna yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her bilgiyi ait olduğu <b>kongreye</b> yerleştir.</p>', gruplar: ['Erzurum Kongresi', 'Sivas Kongresi'],
+        ogeler: [{ m: 'Toplanışı bölgesel', g: 0 }, { m: 'Cemiyetler tek çatıda', g: 1 }, { m: 'Manda ilk kez reddedildi', g: 0 },
+          { m: 'Ali Fuat Paşa atandı', g: 1 }, { m: 'Temsil Heyeti kuruldu', g: 0 }, { m: 'Toplanışı da ulusal', g: 1 }],
+        hint: '“İlk kez” olanlar genellikle Erzurum’dadır. Bütün yurdu birleştiren adımlar Sivas’tadır.',
+        why: 'Erzurum bölgesel toplandı; manda ilk kez orada reddedildi, Temsil Heyeti orada kuruldu. Sivas hem toplanışıyla hem kararlarıyla ulusaldı; cemiyetleri birleştirdi, Ali Fuat Paşa’yı atadı.' } },
     { t: 'Ara soru', cp: {
         q: '<p>“Milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır.”</p><p>Amasya Genelgesi’ndeki bu maddeyle ilgili olarak aşağıdakilerden hangisi <b>söylenebilir</b>?</p>',
         c: ['Kurtuluş Savaşı’nın gerekçesi açıklanmıştır.', 'Millî Mücadele’nin amacı ve yöntemi belirlenmiştir.', 'Manda ve himaye ilk kez reddedilmiştir.', 'Bütün cemiyetler tek çatı altında birleştirilmiştir.'], a: 'B',
@@ -194,6 +247,13 @@
         { s: 'Aklında kalsın diye kısa bir şifre: kapitülasyonlar, azınlıklar, referandum, ateşkes sınırı ve Boğazlar.' }
       ] },
 
+    { t: 'Misak-ı Millî’yi tamamla',
+      steps: [{ s: 'Misak-ı Millî’nin üç kararını tamamla. Çeldiricilere dikkat, biri çok tanıdık gelecek.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Mondros günü işgal edilmemiş Türk toprakları [_].<br>Batı Trakya, Kars-Ardahan-Batum ve [_] için halk oylaması yapılır.<br>Kapitülasyonlar kaldırılır, çünkü amaç tam [_].',
+        secenek: ['bölünmez', 'Arap toprakları', 'bağımsızlıktır', 'mandaya verilir', 'İzmir', 'özerkliktir'], cevap: ['bölünmez', 'Arap toprakları', 'bağımsızlıktır'],
+        hint: 'Misak-ı Millî manda kabul etmez. Halk oylaması Türk çoğunluğu kesin olmayan yerler içindir; İzmir ateşkes sınırının içindedir.',
+        why: 'Ateşkes sınırı içindeki Türk toprakları bölünmez; Arap topraklarında halk oylaması istenir; kapitülasyonların kaldırılması tam bağımsızlık demektir.' } },
     { t: '1920: Meclis açılıyor',
       base: '<svg class="an-svg" viewBox="0 0 340 150" role="img" aria-label="1920 yılı İstanbul’un işgalinden Sevr’e zaman şeridi">' +
       '<path class="st dr i1" d="M118 12 L118 142"/>' +
@@ -222,6 +282,12 @@
         { s: '10 Ağustos 1920’de Sevr imzalandı. Ama Mebusan Meclisi kapalıydı ve onaylamadı; bu yüzden Sevr hukuken geçersiz, ölü doğmuş bir antlaşmadır.', v: 'On Ağustos bin dokuz yüz yirmide Sevr imzalandı. Ama Mebusan Meclisi kapalıydı ve onaylamadı; bu yüzden Sevr hukuken geçersiz, ölü doğmuş bir antlaşmadır.', on: '.i4' }
       ] },
 
+    { t: 'Kronoloji: genelgeden Sevr’e',
+      steps: [{ s: 'Son bir kronoloji. Bu yedi gelişmeyi eskiden yeniye sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Amasya Genelgesi', 'Erzurum Kongresi', 'Sivas Kongresi', 'Misak-ı Millî kabul edildi', 'İstanbul resmen işgal edildi', 'TBMM açıldı', 'Sevr imzalandı'],
+        hint: 'Genelge kongrelerden önce gelir. İstanbul’un işgali Misak-ı Millî’ye tepkidir ve meclisin Ankara’da açılmasına yol açar.',
+        why: 'Haziran 1919 Amasya, Temmuz Erzurum, Eylül Sivas; Ocak 1920 Misak-ı Millî, 16 Mart İstanbul’un işgali, 23 Nisan TBMM, 10 Ağustos Sevr.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Mustafa Kemal, Haziran 1919’da yayımladığı bir genelgede askerî birliklerin hiçbir şekilde dağıtılmamasını, silah ve cephanenin teslim edilmemesini istemiştir.</p><p>Bu bilgiyi değerlendiren bir öğrencinin aşağıdaki yorumlarından hangisi <b>yanlıştır</b>?</p>',
         c: ['Mondros’un silah teslimi hükmüne karşı çıkılmıştır.', 'İşgallere karşı direnme hazırlığı yapılmıştır.', 'Bu istek TBMM’nin yürütme yetkisine dayanılarak yapılmıştır.', 'Mustafa Kemal’in kararlı ve bağımsızlıkçı bir tutum sergilediği görülmektedir.'], a: 'C',

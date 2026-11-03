@@ -58,6 +58,15 @@
           h: '<div class="an-rule"><b>G – M – K:</b> Gümrü (1920, Ermenistan) → Moskova (1921, Sovyet Rusya) → Kars (1921, Kafkas cumhuriyetleri: doğu sınırı kesinleşti)</div>' }
       ] },
 
+    { t: 'Doğu Cephesi tuzakları',
+      steps: [{ s: 'Doğu Cephesi’yle ilgili dört ifade var. Sınavda en çok karıştırılan bilgilere dikkat ederek karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Gümrü, TBMM’nin imzaladığı ilk uluslararası antlaşmadır.', d: true, a: '3 Aralık 1920, Ermenistan ile; ilk siyasi başarı.' },
+          { m: 'Doğu sınırımız Moskova Antlaşması ile kesinleşti.', d: false, a: 'Kesinleşme Kars Antlaşması ile oldu (1921).' },
+          { m: 'Doğu Cephesi Kuvâ-yı Milliye birlikleriyle kazanıldı.', d: false, a: 'Kâzım Karabekir’in düzenli kolordusuyla kazanıldı.' },
+          { m: 'Doğu Cephesi kapanınca birlikler Batı’ya kaydırılabildi.', d: true, a: 'Gümrü’nün askerî sonucu budur.' }],
+        hint: 'Sırayı hatırla: Gümrü, Moskova, Kars. Hangisi sınırı kesinleştirdi? Kâzım Karabekir kolordusunu dağıtmış mıydı?',
+        why: 'Gümrü ilk antlaşmadır ve Doğu Cephesi kapanınca birlikler Batı’ya geçti. Sınırı Kars kesinleştirdi; Doğu’da düzenli ordu savaştı.' } },
     { t: 'Güney Cephesi: halkın direnişi',
       base: '<table class="an-tbl"><tr><th>Şehir</th><th>Sembol kahraman</th><th>Unvan</th></tr>' +
         '<tr class="rv u1"><td><b>Maraş</b></td><td>Sütçü İmam, Rıdvan Hoca</td><td>Kahraman</td></tr>' +
@@ -71,6 +80,37 @@
         { s: 'Güney Cephesi, Sakarya’dan sonra Fransa ile imzalanan Ankara Antlaşması’yla kapandı. Bunu birazdan ayrıntılı göreceğiz.' }
       ] },
 
+    { t: 'Haritada unvanlı şehirler',
+      steps: [{ s: 'Haritada düzenli ordu gelmeden halkın kendi gücüyle kurtardığı ve unvan alan şehirleri bul. Hepsine dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>Halkın kendi gücüyle kurtarıp <b>unvan aldığı</b> şehirlere dokun.</p>', dogru: ['mr', 'ap', 'ur'],
+        svg: '<svg class="an-svg" viewBox="0 0 330 226" role="group" aria-label="Kurtuluş Savaşında bazı şehirler, dokunulabilir temsilî harita">' +
+          '<polygon points="16,12 39,20 56,30 76,31 96,29 116,15 139,11 157,10 170,18 179,29 199,34 218,36 235,36 248,34 263,24 282,21 296,34 300,51 318,68 311,86 310,111 311,126 293,129 278,134 258,134 238,139 215,141 199,144 184,141 179,156 172,164 169,154 175,144 165,146 149,141 137,154 119,160 106,149 89,140 81,151 66,156 57,146 43,142 29,136 26,114 16,104 21,89 18,76 9,71 9,59 18,51 6,45 9,31" fill="none" class="ln" stroke-width="1.6"/>' +
+          '<ellipse cx="43" cy="42" rx="20" ry="6" fill="none" class="ln" stroke-width="1.2"/>' +
+          '<text x="165" y="14" font-size="10" text-anchor="middle" class="mut">temsilî harita</text>' +
+          '<circle cx="25" cy="101" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M25 101 L37 150" stroke-dasharray="3 3"/>' +
+          '<g data-b="iz" aria-label="İzmir"><rect x="4" y="150" width="66" height="38" rx="9" class="box"/><text x="37" y="174" text-anchor="middle" font-size="14">İzmir</text></g>' +
+          '<circle cx="120" cy="63" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M120 63 L120 10" stroke-dasharray="3 3"/>' +
+          '<g data-b="an" aria-label="Ankara"><rect x="84" y="10" width="72" height="38" rx="9" class="box"/><text x="120" y="34" text-anchor="middle" font-size="14">Ankara</text></g>' +
+          '<circle cx="290" cy="46" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M290 46 L293 64" stroke-dasharray="3 3"/>' +
+          '<g data-b="ks" aria-label="Kars"><rect x="262" y="64" width="62" height="38" rx="9" class="box"/><text x="293" y="88" text-anchor="middle" font-size="14">Kars</text></g>' +
+          '<circle cx="161" cy="136" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M161 136 L107 180" stroke-dasharray="3 3"/>' +
+          '<g data-b="ad" aria-label="Adana"><rect x="74" y="180" width="66" height="38" rx="9" class="box"/><text x="107" y="204" text-anchor="middle" font-size="14">Adana</text></g>' +
+          '<circle cx="187" cy="122" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M187 122 L177 180" stroke-dasharray="3 3"/>' +
+          '<g data-b="mr" aria-label="Maraş"><rect x="146" y="180" width="62" height="38" rx="9" class="box"/><text x="177" y="204" text-anchor="middle" font-size="14">Maraş</text></g>' +
+          '<circle cx="195" cy="134" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M195 134 L242 180" stroke-dasharray="3 3"/>' +
+          '<g data-b="ap" aria-label="Antep"><rect x="214" y="180" width="56" height="38" rx="9" class="box"/><text x="242" y="204" text-anchor="middle" font-size="14">Antep</text></g>' +
+          '<circle cx="218" cy="132" r="3.5" class="boxa"/>' +
+          '<path class="st2" d="M218 132 L301 180" stroke-dasharray="3 3"/>' +
+          '<g data-b="ur" aria-label="Urfa"><rect x="276" y="180" width="50" height="38" rx="9" class="box"/><text x="301" y="204" text-anchor="middle" font-size="14">Urfa</text></g>' +
+          '</svg>',
+        hint: 'Unvanlı şehirler Güney Cephesi’ndedir. Güneydeki şehirlerden biri ise Fransa ile yapılan antlaşmayla kurtuldu.',
+        why: 'Maraş Kahraman, Antep Gazi, Urfa Şanlı unvanını aldı. Adana direnişle değil, Ankara Antlaşması’yla kurtuldu; İzmir, Ankara ve Kars Güney Cephesi’nde değildir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Maraş, Antep ve Urfa’da Fransız işgaline karşı çarşı esnafı, din adamları ve köylüler bir araya gelerek direniş örgütlemiş, bu şehirler düzenli ordu bölgeye gelmeden önce kendi imkânlarıyla mücadele etmiştir.</p><p>Bu bilgilere göre aşağıdakilerden hangisi <b>söylenebilir</b>?</p>',
         c: ['Güney Cephesi’nde Kuvâ-yı Milliye etkili olmuştur.', 'Güney Cephesi Gümrü Antlaşması ile kapanmıştır.', 'Fransa, TBMM’yi tanıyan ilk Müslüman devlettir.', 'Bu bölgede Yunan ordusuyla savaşılmıştır.'], a: 'A',
@@ -154,6 +194,12 @@
         { s: 'Bu, topyekûn seferberlik demektir: bütün millet savaşın içindeydi.' }
       ] },
 
+    { t: 'Zor günlerin sırası',
+      steps: [{ s: 'Şimdi bu yedi gelişmeyi yaşandıkları sıraya koy. Yenilgiden sonra alınan kararlara özellikle dikkat et.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['I. İnönü Savaşı', 'İstiklal Marşı kabul edildi', 'Kütahya-Eskişehir Savaşları', 'Başkomutanlık Kanunu', 'Tekâlif-i Millîye emirleri', 'Sakarya Meydan Muharebesi', 'Büyük Taarruz'],
+        hint: 'İstiklal Marşı iki İnönü arasında kabul edildi. Önce yetki verilir, sonra o yetkiyle emirler çıkar.',
+        why: 'Ocak 1921 Birinci İnönü, 12 Mart İstiklal Marşı, Temmuz Kütahya-Eskişehir, 5 Ağustos Başkomutanlık Kanunu, 7 ve 8 Ağustos Tekâlif-i Millîye, Ağustos sonu Sakarya, 1922’de Büyük Taarruz.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Kütahya-Eskişehir Savaşları’ndan sonra yayımlanan emirlerle her aile orduya bir kat çamaşır ve bir çift çarık vermiş, halkın elindeki silah ve cephane toplanmış, taşıtların bir kısmı ordunun hizmetine verilmiştir.</p><p>Bu uygulamayla ilgili aşağıdakilerden hangisi <b>söylenemez</b>?</p>',
         c: ['Ordunun ihtiyaçları halkın desteğiyle karşılanmaya çalışılmıştır.', 'Mustafa Kemal, Başkomutan olarak meclisten aldığı yetkiyi kullanmıştır.', 'Millî Mücadele’de topyekûn bir seferberlik yaşanmıştır.', 'Bu emirler Büyük Taarruz kazanıldıktan sonra yayımlanmıştır.'], a: 'D',
@@ -200,6 +246,13 @@
         { s: 'Saltanat, İtilaf Devletleri Lozan’a iki hükûmeti birden çağırınca kaldırıldı. Amaçları ikilik çıkarmaktı, ama oyun bozuldu.' }
       ] },
 
+    { t: 'Mudanya’nın sonucu mu?',
+      steps: [{ s: 'Bu listede Mudanya Ateşkesi’nin sonucu olmayanlar da var. Onları bul ve ele.' }],
+      ia: { tip: 'eleme', q: '<p>Mudanya Ateşkesi’nin <b>sonucu olmayanları</b> ele.</p>',
+        ogeler: ['Doğu Trakya savaşmadan alındı', 'Saltanat kaldırıldı', 'İstanbul kurtarıldı', 'Kapitülasyonlar kaldırıldı', 'Boğazlar kurtarıldı', 'Hatay anavatana katıldı', 'Diplomasi dönemi başladı'],
+        ele: [1, 3, 5],
+        hint: 'Mudanya bir ateşkestir: toprakları diplomasiyle kurtarır. Saltanatın kaldırılmasına Lozan daveti yol açtı.',
+        why: 'Mudanya Doğu Trakya’yı, İstanbul’u ve Boğazları savaşmadan kurtardı, diplomasi dönemini başlattı. Saltanat Lozan daveti yüzünden, kapitülasyonlar Lozan’da kaldırıldı; Hatay 1939’da katıldı.' } },
     { t: 'Lozan Barış Antlaşması (24 Temmuz 1923)',
       base: '<table class="an-tbl"><tr><th>Konu</th><th>Karar</th></tr>' +
         '<tr class="rv l1"><td><b>Kapitülasyonlar</b></td><td>tamamen kaldırıldı → ekonomik ve hukuki bağımsızlık</td></tr>' +
@@ -216,6 +269,13 @@
         { s: 'Musul meselesi İngiltere ile çözülemedi, sonraya bırakıldı. Hatay da sınırın dışında kaldı ve 1939’da anavatana katıldı.', v: 'Musul meselesi İngiltere ile çözülemedi, sonraya bırakıldı. Hatay da sınırın dışında kaldı ve bin dokuz yüz otuz dokuzda anavatana katıldı.', on: '.l5' }
       ] },
 
+    { t: 'Lozan’ı tamamla',
+      steps: [{ s: 'Lozan’ın iki kararını tamamla. Mübadelenin dışında kalanlara dikkat et.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Nüfus mübadelesinin dışında kalanlar: [_] Rumları ve [_] Türkleri.<br>Musul sorunu [_] ile çözülemedi, sonraya kaldı.',
+        secenek: ['İstanbul', 'Batı Trakya', 'İzmir', 'Girit', 'İngiltere', 'Fransa'], cevap: ['İstanbul', 'Batı Trakya', 'İngiltere'],
+        hint: 'Mübadele dışında kalanlar, İstanbul ile Yunanistan sınırındaki bölgede yaşıyordu. Musul’un yönetimi o gün hangi devletin elindeydi?',
+        why: 'İstanbul Rumları ile Batı Trakya Türkleri yerinde kaldı. Musul İngiltere ile çözülemedi ve sonradan, 1926’da ele alındı.' } },
     { t: 'Destanın izleri: İstiklal Yolu ve sanat',
       steps: [
         { s: 'Cephede savaşanlar kadar cephaneyi taşıyanlar da kahramandı. İstanbul’dan kaçırılan silahlar önce deniz yoluyla İnebolu’ya geldi.',
@@ -225,6 +285,13 @@
           h: '<div class="an-grid"><div><b>Halide Edip</b>Ateşten Gömlek</div><div><b>Yakup Kadri</b>Yaban</div><div><b>Tarık Buğra</b>Küçük Ağa</div></div>' }
       ] },
 
+    { t: 'Kim, ne yaptı?',
+      steps: [{ s: 'Destanın kahramanlarını tanıyalım. Her kişiyi adının geçtiği olay ya da eserle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her kişiyi <b>olay ya da eseriyle</b> eşleştir.</p>', solBaslik: 'Kişi', sagBaslik: 'Olay / eser',
+        sol: ['Kâzım Karabekir', 'Sütçü İmam', 'İsmet Paşa', 'Mehmet Akif', 'Halide Edip', 'Şerife Bacı'],
+        sag: ['Gümrü Antlaşması', 'Maraş direnişi', 'Mudanya ve Lozan', 'İstiklal Marşı', 'Ateşten Gömlek', 'İstiklal Yolu'],
+        hint: 'Doğu Cephesi’nin komutanı, Maraş’ın sembolü, masadaki diplomat, şiirin şairi, romanın yazarı ve cephane taşıyan kahraman kadın.',
+        why: 'Kâzım Karabekir Doğu’da zafer kazanıp Gümrü’ye ulaştı; Sütçü İmam Maraş’ın, Şerife Bacı İstiklal Yolu’nun simgesidir. İsmet Paşa Mudanya ve Lozan’da, Mehmet Akif İstiklal Marşı’nda, Halide Edip Ateşten Gömlek’te.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Lozan Barış Antlaşması’nın aşağıdaki kararlarından hangisi, Türkiye’nin <b>tam bağımsızlık</b> anlayışıyla en az bağdaşır?</p>',
         c: ['Kapitülasyonların tamamen kaldırılması', 'Azınlıkların Türk vatandaşı sayılması', 'Boğazların uluslararası bir komisyona bırakılması', 'Yabancı okulların Türk yasalarına bağlı olması'], a: 'C',

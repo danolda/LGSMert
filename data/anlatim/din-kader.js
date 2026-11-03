@@ -43,6 +43,19 @@
           h: '<div class="an-tip"><b>Kısa yol:</b> genel kural / gelecek → <b>kader</b> · yaşanmış olay → <b>kaza</b></div>' }
       ] },
 
+    { t: 'Kaza cümlesini bul',
+      steps: [{ s: 'Bu altı cümleden yaşanmış, gerçekleşmiş bir olayı anlatanları bul. Hepsine dokun, sonra Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>Kaza</b> kavramına örnek olan cümlelere dokun.</p>', dogru: ['s2', 's4', 's5'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 268" role="group" aria-label="Altı cümle: kader mi kaza mı">' +
+          '<g data-b="s1" aria-label="Demir, nemli havada paslanır."><rect x="6" y="4" width="328" height="38" rx="9" class="box"/><text x="18" y="28" font-size="14">Demir, nemli havada paslanır.</text></g>' +
+          '<g data-b="s2" aria-label="Bahçe kapısı yağmurdan paslandı."><rect x="6" y="48" width="328" height="38" rx="9" class="box"/><text x="18" y="72" font-size="14">Bahçe kapısı yağmurdan paslandı.</text></g>' +
+          '<g data-b="s3" aria-label="Mevsimler sırayla birbirini izler."><rect x="6" y="92" width="328" height="38" rx="9" class="box"/><text x="18" y="116" font-size="14">Mevsimler sırayla birbirini izler.</text></g>' +
+          '<g data-b="s4" aria-label="Dün akşam gökyüzünde dolunay vardı."><rect x="6" y="136" width="328" height="38" rx="9" class="box"/><text x="18" y="160" font-size="14">Dün akşam gökyüzünde dolunay vardı.</text></g>' +
+          '<g data-b="s5" aria-label="Ağaçtaki olgun elma yere düştü."><rect x="6" y="180" width="328" height="38" rx="9" class="box"/><text x="18" y="204" font-size="14">Ağaçtaki olgun elma yere düştü.</text></g>' +
+          '<g data-b="s6" aria-label="Yarın sabah güneş yine doğacak."><rect x="6" y="224" width="328" height="38" rx="9" class="box"/><text x="18" y="248" font-size="14">Yarın sabah güneş yine doğacak.</text></g>' +
+          '</svg>',
+        hint: 'Fiilin zamanına bak. Genel kural ya da gelecek plan kaderdir; yaşanıp bitmiş olay kazadır.',
+        why: 'Kapının paslanması, dünkü dolunay ve elmanın düşmesi gerçekleşmiş olaylardır: kaza. Demirin paslanması, mevsimlerin düzeni ve yarın doğacak güneş ise genel kural ve plandır: kader.' } },
     { t: 'Allah’ın kaderle ilgili sıfatları',
       base: '<table class="an-tbl"><tr><th>Sıfat</th><th>Anlamı</th><th>Ayet</th></tr>' +
         '<tr class="rv f1"><td><b>İlim</b></td><td>her şeyi, geçmişi ve geleceği bilmesi</td><td>“O’nun ilmi dışında bir yaprak bile düşmez.” En’âm, 59</td></tr>' +
@@ -57,6 +70,12 @@
         { s: 'Soruda ayet verilip sıfat soruluyorsa anahtar kelimeyi yakala: bilmek ilim, dilemek irade, güç kudret, yaratmak tekvin.' }
       ] },
 
+    { t: 'Sıfat ve anahtar kelime',
+      steps: [{ s: 'Her sıfatı, ayetlerdeki anahtar anlamıyla eşleştir. Bilmek, dilemek, güç ve yaratmak kelimelerini hatırla.' }],
+      ia: { tip: 'eslestir', q: '<p>Her sıfatı <b>anlamıyla</b> eşleştir.</p>', solBaslik: 'Sıfat', sagBaslik: 'Anlamı',
+        sol: ['İlim', 'İrade', 'Kudret', 'Tekvin'], sag: ['Düşen yaprağı bilir', '“Ol!” der, o da olur', 'Gücü her şeye yeter', 'Yoktan var eder'],
+        hint: 'Bilmek ilim, dilemek irade, güç kudret, yaratmak tekvin.',
+        why: 'En’âm suresinin 59. ayeti ilmi, Yâsîn suresinin 82. ayeti iradeyi anlatır. Gücün her şeye yetmesi kudret, yoktan var etmek tekvindir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdakilerin hangisinde <b>kaza</b> kavramına örnek verilmiştir?</p>',
         c: ['Dünya kendi ekseni etrafında dönerek gece ve gündüzü oluşturur.', 'Meteoroloji yarın kar yağışı beklendiğini açıkladı.', 'Dün gece şehrimize mevsimin ilk karı yağdı.', 'Isıtılan metaller genleşir.'], a: 'C',
@@ -86,6 +105,13 @@
           h: '<div class="an-trap">Sadece yağmurun yağması, rüzgâr, gece-gündüz → <b>fiziksel</b><br>Yağmurla toprağın canlanıp bitkilerin büyümesi → <b>fiziksel + biyolojik</b></div>' }
       ] },
 
+    { t: 'Hangi yasa?',
+      steps: [{ s: 'Her örneği ait olduğu yasa türünün kutusuna yerleştir. Madde mi, canlı mı, toplum mu, buna bak.' }],
+      ia: { tip: 'grup', q: '<p>Her örneği <b>yasa türüne</b> yerleştir.</p>', gruplar: ['Fiziksel', 'Biyolojik', 'Toplumsal'],
+        ogeler: [{ m: 'Gezegenlerin yörüngesi', g: 0 }, { m: 'Fotosentez', g: 1 }, { m: 'Adaletin huzur getirmesi', g: 2 }, { m: 'Suyun kaldırma kuvveti', g: 0 },
+          { m: 'Kalıtım', g: 1 }, { m: 'Haksızlığın çöküş getirmesi', g: 2 }, { m: 'Gece ile gündüzün oluşumu', g: 0 }, { m: 'Canlının büyümesi', g: 1 }],
+        hint: 'Madde, enerji ve gök cisimleri fiziksel; canlılar biyolojik; insan ve toplum toplumsal yasadır.',
+        why: 'Yörünge, kaldırma kuvveti ve gece ile gündüz fiziksel; fotosentez, kalıtım ve büyüme biyolojik; adaletin huzur, haksızlığın çöküş getirmesi toplumsal yasadır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>“…Sizden önceki milletlerin başından nice olaylar gelip geçmiştir. Yeryüzünde gezin dolaşın da yalanlayanların sonunun nasıl olduğunu görün!” (Âl-i İmrân suresi, 137. ayet)</p><p>Bu ayette öncelikle hangi tür yasaya <b>dikkat çekilmektedir</b>?</p>',
         c: ['Fiziksel yasalara', 'Biyolojik yasalara', 'Toplumsal yasalara', 'Fiziksel ve biyolojik yasalara'], a: 'C',
@@ -105,6 +131,15 @@
         { s: 'İşte kritik nokta: insan yalnızca kendi seçtiklerinden sorumludur. Seçemediği şeylerden hesaba çekilmez.', on: '.r3', mk: '.r3 td' }
       ] },
 
+    { t: 'İrade tuzakları',
+      steps: [{ s: 'İrade ve sorumlulukla ilgili dört ifade var. Hangisi doğru, hangisi yanlış, karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'İnsan göz renginden ve doğduğu yerden sorumludur.', d: false, a: 'Bunları seçmedik; seçemediğimizden sorumlu değiliz.' },
+          { m: 'Meslek seçimi insanın cüz’î iradesiyle olur.', d: true, a: 'Seçme özgürlüğümüzle yaptığımız bir tercihtir.' },
+          { m: 'Kalp atışımız bizim seçimimize bağlıdır.', d: false, a: 'Kalp atışı Allah’ın iradesine bağlıdır.' },
+          { m: 'İnsan yalnızca kendi seçtiklerinden hesaba çekilir.', d: true, a: 'Sorumluluk seçme özgürlüğüyle sınırlıdır.' }],
+        hint: 'Kendin seçebildiğin şey senin sorumluluğundadır. Göz rengini ya da kalp atışını sen mi seçtin?',
+        why: 'Göz rengi, doğum yeri ve kalp atışı bizim seçimimiz değildir, bunlardan sorumlu değiliz. Meslek seçmek gibi tercihler cüz’î iradeyle olur ve sorumluluk buradan doğar.' } },
     { t: 'İrade ve sorumluluk ayetleri',
       steps: [
         { s: 'Kur’an insana seçme özgürlüğü verildiğini açıkça söyler.',
@@ -134,6 +169,13 @@
           h: '<div class="an-trap">Sınava çalışmadan “nasılsa kaderimde ne yazıyorsa o” demek → <span class="an-bad-t">tevekkül değil</span></div>' }
       ] },
 
+    { t: 'Tevekkül mü, tembellik mi?',
+      steps: [{ s: 'Bu davranışlardan hangileri tevekkül değil? Tedbir almadan sonucu beklemek olanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Tevekküle uygun olmayan</b> davranışları ele.</p>',
+        ogeler: ['Emniyet kemerini takıp yola çıkmak', 'Çalışmadan “Ne olacaksa olur” demek', 'Hastalanınca tedavi olup dua etmek', 'Kapıyı kilitlemeden “Allah korur” demek', 'Tarlayı sürüp ekip ürünü beklemek', 'Salgın olan şehre bile bile girmek'],
+        ele: [1, 3, 5],
+        hint: 'Tevekkül önce tedbir ve çaba, sonra sonucu Allah’a bırakmaktır. Hangi davranışta tedbir yok?',
+        why: 'Kemer takmak, tedavi olmak ve tarlayı ekmek tedbirdir; ardından sonucu Allah’a bırakmak tevekküldür. Çalışmamak, kapıyı açık bırakmak ve salgına bile bile girmek tembellik ve tedbirsizliktir.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Elif, LGS’ye aylarca düzenli çalışmış, deneme sınavlarındaki yanlışlarını tek tek gözden geçirmiştir. Sınav sabahı erkenden kalkıp kahvaltısını yapmış, dua ederek sınava girmiş ve “Ben elimden geleni yaptım, gerisini Allah’a bırakıyorum.” demiştir.</p><p>Elif’in bu davranışı en çok hangi kavramla <b>ilişkilendirilebilir</b>?</p>',
         c: ['Tevekkül', 'Ecel', 'Kaza', 'Küllî irade'], a: 'A',
@@ -174,6 +216,12 @@
         { s: 'Sonunda deniz yarıldı, inananlar kurtuldu, Firavun boğuldu. Hazreti Musa’ya Tevrat indirildi.', on: '.u5' }
       ] },
 
+    { t: 'Hazreti Musa’nın hayatı',
+      steps: [{ s: 'Hazreti Musa’nın hayatındaki olayları yaşandığı sıraya koy.' }],
+      ia: { tip: 'sirala', q: '<p>Olayları <b>yaşandığı sıraya</b> koy.</p>', ust: 'ilk', alt: 'son',
+        ogeler: ['Sandıkla Nil’e bırakıldı', 'Firavun’un sarayında büyüdü', 'Medyen’de Hz. Şuayb’ın yanında kaldı', 'Tûr’da peygamberlik verildi', 'Hz. Harun ile Firavun’a gitti', 'Deniz yarıldı, Firavun boğuldu'],
+        hint: 'Peygamberlik Medyen’den dönüş yolunda verildi. Firavun’a ancak peygamber olduktan sonra, kardeşiyle gitti.',
+        why: 'Nil, saray, Medyen, Tûr Dağı yakınında peygamberlik, Hazreti Harun ile Firavun’a davet ve sonunda denizin yarılması. Firavun’un boğulmasıyla inananlar kurtuldu.' } },
     { t: 'Bir ayet tanıyorum: Âyetel Kürsî',
       base: '<table class="an-tbl"><tr><th>Ayetteki ifade</th><th>Vurgu</th></tr>' +
         '<tr class="rv s1"><td>“Allah, O’ndan başka ilah yoktur.”</td><td><b>Tevhid</b></td></tr>' +
@@ -189,6 +237,13 @@
         { s: 'Kullarının önündekini ve arkasındakini bilir; bu ilim sıfatıdır. Kürsüsünün gökleri ve yeri kaplaması ise hükümranlığını ve kudretini anlatır.', on: '.s4,.s5' }
       ] },
 
+    { t: 'Âyetel Kürsî’nin yeri',
+      steps: [{ s: 'Âyetel Kürsî’nin Kur’an’daki yerini tamamla. Derste geçen öbür ayet numaralarına dikkat et.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları uygun kartlarla doldur.</p>',
+        metin: 'Âyetel Kürsî, [_] suresinin [_]. ayetidir.<br>Adını ayetteki “[_]” kelimesinden alır.',
+        secenek: ['Bakara', 'Kamer', '255', '286', 'kürsî', 'Hayy'], cevap: ['Bakara', '255', 'kürsî'],
+        hint: 'Bakara suresinin 286. ayeti sorumluluğu anlatıyordu. Âyetel Kürsî daha önce gelir; adı da kendi içindeki bir kelimeden.',
+        why: 'Âyetel Kürsî Bakara suresinin 255. ayetidir ve adını “kürsî” kelimesinden alır. Bakara suresinin 286. ayeti sorumluluğun güçle sınırlı olduğunu, Kamer suresinin 49. ayeti ise her şeyin bir ölçüyle yaratıldığını anlatır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Âyetel Kürsî’deki “…O’nu ne bir uyuklama tutabilir ne de bir uyku…” ifadesiyle aşağıdakilerden hangisi <b>vurgulanmaktadır</b>?</p>',
         c: ['Allah’ın her şeyi yoktan var ettiği', 'Allah’ın evreni her an gözetip koruduğu', 'İnsanın seçme özgürlüğüne sahip olduğu', 'Evrendeki toplumsal yasaların değişmediği'], a: 'B',

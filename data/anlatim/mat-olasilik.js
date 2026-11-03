@@ -38,6 +38,10 @@
           h: '<div class="an-trap">“3 kırmızı, 5 mavi top: olası durumlar kırmızı ve mavi, yani 2” → <span class="an-bad-t">yanlış</span>. Doğrusu <span class="an-ok-t">8</span>.</div>' }
       ] },
 
+    { t: 'Eşleştir: tüm durumların sayısı',
+      steps: [{ s: 'Paydayı doğru bulmak işin yarısıydı. Her deneyi, tüm olası durumların sayısıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her deneyde <b>tüm olası durumların</b> sayısını eşleştir.</p>', solBaslik: 'Deney', sagBaslik: 'Tüm durumlar', sol: ['KELEBEK harf kartları', 'İki basamaklı doğal sayılar', '20’den 45’e sayılar (dâhil)', '3 kırmızı, 5 mavi, 4 sarı top', 'ANKARA harf kartları'], sag: ['7', '90', '26', '12', '6'], hint: 'Paydaya renk ya da harf çeşidi değil, tek tek nesneler yazılır. Ardışık sayıları sayarken son eksi ilk, artı 1.', hintV: 'Paydaya renk ya da harf çeşidi değil, tek tek nesneler yazılır. Ardışık sayıları sayarken son sayıdan ilk sayıyı çıkar, 1 ekle.', why: 'KELEBEK 7, ANKARA 6 karttır; tekrar eden harfler ayrı kartlardır. 99 − 10 + 1 = 90, 45 − 20 + 1 = 26. Toplar 3 + 5 + 4 = 12; 3 renk değil.', whyV: 'KELEBEK 7, ANKARA 6 karttır; tekrar eden harfler ayrı kartlara yazılır. 99 eksi 10 artı 1, 90; 45 eksi 20 artı 1, 26. Toplar da 3 artı 5 artı 4, yani 12; renk sayısı olan 3 değil.' } },
+
     { t: 'Daha olası, eşit olası, daha az olası',
       steps: [
         { s: 'Aynı deneyde iki olayı karşılaştırırken çoğu zaman hesaba gerek yok: hangi olayın durumu çoksa o daha olası.' },
@@ -46,6 +50,14 @@
           h: '<div class="an-trap">P(6) = P(1) = {{1|6}}. Ama P(6’dan küçük) = {{5|6}} > P(6) = {{1|6}}.</div>' },
         { s: 'Bir şey daha: daha olası olması, kesinlikle olacağı anlamına gelmez. Sadece şansı daha yüksektir.' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Hesap yapmadan önce düşün. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'Zarda 6 gelmesi, 1 gelmesinden daha zordur.', d: false, a: 'Her yüzün olasılığı {{1|6}}: eşit olasılıklı.' },
+            { m: 'Daha olası olan olay kesinlikle gerçekleşir.', d: false, a: 'Yalnızca şansı daha yüksektir; kesin olay değildir.' },
+            { m: '12 kız, 15 erkek arasından seçilen birinin erkek olması daha olasıdır.', d: true, a: 'Erkek durum sayısı daha fazla: 15 > 12.' },
+            { m: 'KİTAP kartlarından sesli harf çekmek, sessiz harf çekmekten daha olasıdır.', d: false, a: 'Sesli İ, A: 2 kart. Sessiz K, T, P: 3 kart.' }], hint: 'Aynı deneyde iki olayı karşılaştırırken her olayın kaç durumu olduğunu say.', why: 'Aynı deneyde durumu çok olan olay daha olasıdır, ama bu onun mutlaka olacağı anlamına gelmez. Zarın her yüzü eşit şanslıdır; büyük sayı gelmesi zor değildir.' } },
 
     { t: 'Farklı torbalar: orana bak',
       steps: [
@@ -76,9 +88,13 @@
           h: '<div class="an-tip">“Hileli olmayan”, “eş dilimli”, “renkleri dışında özdeş” ifadeleri çıktıların eşit şanslı olduğunu söyler.</div>' }
       ] },
 
+    { t: 'Dokun: doğru çark',
+      steps: [{ s: 'Çarkların dilimlerine dikkatle bak. Kırmızı gelme olasılığı üçte bir olan çarkı bul ve ona dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Okun kırmızıda durma olasılığı <b>{{1|3}}</b> olan çarka dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 150" role="img" aria-label="Üç çark. 1: yarısı mavi, çeyreği kırmızı, çeyreği sarı. 2: 6 eş dilim, 2 kırmızı. 3: 8 eş dilim, 3 kırmızı"><g data-b="w1" aria-label="1. çark"><rect x="6" y="4" width="104" height="142" rx="12" class="box"/><path d="M58 62 L58.0 16.0 A46 46 0 0 1 58.0 108.0 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M58 62 L58.0 108.0 A46 46 0 0 1 12.0 62.0 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M58 62 L12.0 62.0 A46 46 0 0 1 58.0 16.0 Z" style="fill:var(--noteline);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><text x="58" y="134" text-anchor="middle" font-size="15" font-weight="700">1. çark</text></g><g data-b="w2" aria-label="2. çark"><rect x="118" y="4" width="104" height="142" rx="12" class="box"/><path d="M170 62 L170.0 16.0 A46 46 0 0 1 209.8 39.0 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M170 62 L209.8 39.0 A46 46 0 0 1 209.8 85.0 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M170 62 L209.8 85.0 A46 46 0 0 1 170.0 108.0 Z" style="fill:var(--noteline);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M170 62 L170.0 108.0 A46 46 0 0 1 130.2 85.0 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M170 62 L130.2 85.0 A46 46 0 0 1 130.2 39.0 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M170 62 L130.2 39.0 A46 46 0 0 1 170.0 16.0 Z" style="fill:var(--noteline);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><text x="170" y="134" text-anchor="middle" font-size="15" font-weight="700">2. çark</text></g><g data-b="w3" aria-label="3. çark"><rect x="230" y="4" width="104" height="142" rx="12" class="box"/><path d="M282 62 L282.0 16.0 A46 46 0 0 1 314.5 29.5 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L314.5 29.5 A46 46 0 0 1 328.0 62.0 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L328.0 62.0 A46 46 0 0 1 314.5 94.5 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L314.5 94.5 A46 46 0 0 1 282.0 108.0 Z" style="fill:var(--noteline);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L282.0 108.0 A46 46 0 0 1 249.5 94.5 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L249.5 94.5 A46 46 0 0 1 236.0 62.0 Z" style="fill:var(--bad);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L236.0 62.0 A46 46 0 0 1 249.5 29.5 Z" style="fill:var(--noteline);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><path d="M282 62 L249.5 29.5 A46 46 0 0 1 282.0 16.0 Z" style="fill:var(--c);fill-opacity:.85;stroke:var(--card2);stroke-width:2"/><text x="282" y="134" text-anchor="middle" font-size="15" font-weight="700">3. çark</text></g></svg>', dogru: ['w2'], hint: 'Bölge sayısına değil, eş parçalara bak. Bölgeler eş değilse çarkı eş parçalara böl.', why: '2. çarkta 6 eş dilimin 2’si kırmızı: {{2|6}} = {{1|3}}. 1. çarkta 3 bölge var ama eş değil: kırmızı çeyrek, yani {{1|4}}. 3. çarkta 8 dilimin 3’ü kırmızı: {{3|8}}.', whyV: '2. çarkta 6 eş dilimin 2’si kırmızı: altıda iki, yani üçte bir. 1. çarkta 3 bölge var ama bölgeler eş değil; kırmızı bir çeyrek, yani dörtte bir. 3. çarkta 8 dilimin 3’ü kırmızı: sekizde üç.' } },
+
     { t: 'Para hafızasızdır',
       steps: [
-        { s: 'Hileli olmayan bir para art arda 5 kez yazı geldi. Şimdi tura gelme şansı arttı mı? Hayır!', v: 'Hileli olmayan bir para art arda beş kez yazı geldi. Şimdi tura gelme şansı arttı mı? Hayır!',
+        { s: 'Hileli olmayan bir para art arda 5 kez yazı geldi. Şimdi tura gelmesi daha mı olası oldu? Hayır!', v: 'Hileli olmayan bir para art arda beş kez yazı geldi. Şimdi tura gelmesi daha mı olası oldu? Hayır!',
           h: '<div class="an-trap">Önceki sonuçlar ne olursa olsun, bir sonraki atışta P(yazı) = P(tura) = {{1|2}}</div>' },
         { s: 'Para önceki atışları hatırlamaz. Her atış yepyeni bir deneydir.' },
         { s: 'Ama kurada bir kişinin adı iki karta yazılırsa eşitlik bozulur. 20 kişiden birinin şansı {{2|21}} olur.', v: 'Ama kurada bir kişinin adı iki karta yazılırsa eşitlik bozulur. Yirmi kişiden birinin şansı, yirmi birde iki olur.' },
@@ -97,6 +113,10 @@
         { s: 'Hesabın {{5|4}} gibi 1’den büyük bir sonuç verdiyse dur; bir yerde fazla saymışsın.', v: 'Hesabın, dörtte beş gibi birden büyük bir sonuç verdiyse dur; bir yerde fazla saymışsın.' }
       ] },
 
+    { t: 'Sırala: olasılık ölçeği',
+      steps: [{ s: 'Bir zar atılıyor. Olayları olasılıklarına göre imkânsızdan kesine doğru sırala.' }],
+      ia: { tip: 'sirala', q: '<p>Bir zar atılıyor. Olayları olasılığı <b>küçükten büyüğe</b> sırala.</p>', ust: 'imkânsız', alt: 'kesin', ogeler: ['7 gelmesi', '6 gelmesi', '3’ün katı gelmesi', 'Çift sayı gelmesi', '1’den büyük gelmesi', '7’den küçük gelmesi'], hint: 'Her olay için istenen durumları say ve 6’ya böl. Hiç durumu olmayan 0, her durumu kapsayan 1’dir.', why: '7 gelmesi 0, 6 gelmesi {{1|6}}, 3’ün katı (3, 6) {{2|6}}, çift sayı {{3|6}}, 1’den büyük {{5|6}}, 7’den küçük 1. İmkânsızdan kesine.', whyV: '7 gelmesi imkânsız, sıfır. 6 gelmesi altıda bir. 3’ün katı, yani 3 ve 6, altıda iki. Çift sayı altıda üç. 1’den büyük gelmesi altıda beş. 7’den küçük gelmesi ise kesin, 1.' } },
+
     { t: 'Olasılığı hesaplamak',
       base: '<table class="an-tbl"><tr><th>Zarda olay</th><th>İstenenler</th><th>P</th></tr>' +
         '<tr class="rv h1"><td>tek sayı</td><td>1, 3, 5</td><td>{{3|6}} = {{1|2}}</td></tr>' +
@@ -110,6 +130,10 @@
         { s: '4’ten büyük: 5 ve 6, üçte bir. 6’nın bölenleri: 1, 2, 3, 6, üçte iki.', v: 'Dörtten büyük: beş ve altı; üçte bir. Altının bölenleri: bir, iki, üç, altı; üçte iki.', on: '.h3,.h4' },
         { s: 'Şıklarda kesir sadeleşmiş verilebilir, sen de sadeleştirmeyi unutma.' }
       ] },
+
+    { t: 'Kaydır: olasılığı işaretle',
+      steps: [{ s: 'Dört adımı uygula: tüm durumlar, istenenler, kesir ve kontrol. Sonucu 0 ile 1 arasında işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p>1’den 20’ye kadar numaralı kartlardan biri rastgele çekiliyor. Kartın <b>asal sayı</b> olma olasılığını işaretle.</p>', min: 0, max: 1, adim: 0.05, cevap: 0.4, etiket: [0, 0.25, 0.5, 0.75, 1], hint: '20’ye kadar asalları tek tek yaz. 1’in asal olmadığını unutma.', hintV: '20’ye kadar asal sayıları tek tek yaz. 1’in asal olmadığını unutma.', why: 'Asallar: 2, 3, 5, 7, 11, 13, 17, 19, yani 8 tane. Olasılık {{8|20}} = {{2|5}} = 0,4. 1 sayısını da asal saymak 0,45 verir; tuzak bu.', whyV: 'Asallar 2, 3, 5, 7, 11, 13, 17 ve 19; yani 8 tane. Olasılık yirmide sekiz, beşte iki, yani sıfır virgül dört. 1 sayısını da asal saymak sıfır virgül kırk beş verir; tuzak bu.' } },
 
     { t: 'Çözümlü örnek: payda değişiyor',
       steps: [
@@ -150,6 +174,10 @@
         { s: '5 pay 10 top, demek ki 1 pay 2 top. Kırmızı 4 tane.', v: 'Beş pay on top; demek ki bir pay iki top. Kırmızı dört tane.', on: '.n2,.n3' },
         { s: '“Olasılık değişmedi” diyorsa renk oranı korunur: 3 K, 5 M’ye 6 K eklenirse 10 M de eklenmeli.', v: 'Olasılık değişmedi diyorsa renk oranı korunur: üç kırmızı, beş mavi topa altı kırmızı eklenirse, on mavi de eklenmeli.' }
       ] },
+
+    { t: 'Boşluk doldur: olasılıktan sayıya',
+      steps: [{ s: 'Olasılığı bir oran gibi düşün. Payları bul, sonra bir payın kaç top olduğunu hesapla.' }],
+      ia: { tip: 'bosluk', q: '<p>Torbada yalnız kırmızı ve mavi toplar var. Mavi top çekme olasılığı <b>{{3|5}}</b>, kırmızı top sayısı <b>12</b>. Mavi top kaç tane?</p>', metin: 'Kırmızı [_] pay, toplam 5 pay<br>1 pay = [_] top<br>Mavi top sayısı = [_]', secenek: ['2', '3', '6', '4', '18', '30', '8'], cevap: ['2', '6', '18'], hint: 'Mavi 5 payın 3’ü ise kırmızı kaç pay? 12 topu o paya böl.', why: 'Mavi 3 pay, kırmızı 5 − 3 = 2 pay. 2 pay 12 top, 1 pay 6 top. Mavi 3 · 6 = 18 top; toplam 30. Kontrol: {{18|30}} = {{3|5}}.', whyV: 'Mavi 3 pay, kırmızı 5 eksi 3, 2 pay. 2 pay 12 top ise 1 pay 6 top. Mavi 3 çarpı 6, 18 top; torbada toplam 30 top var. Kontrol: otuzda on sekiz, beşte üçe eşit.' } },
 
     { t: 'İki torbayı birleştirmek',
       steps: [

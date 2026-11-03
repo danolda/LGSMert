@@ -46,6 +46,13 @@
         { s: '[[Your meal is ready]] ya da [[Enjoy your meal!]] gördüğün an, o adım en sondadır.' }
       ] },
 
+    { t: 'Patates kızartması: adımları sırala',
+      steps: [{ s: 'Tarifin adımları karışmış. Sıralama sözcüklerine ve mutfak mantığına bakarak adımları baştan sona diz.' }],
+      ia: { tip: 'sirala', q: '<p><b>How to make chips</b>: adımları baştan sona sırala.</p>', ust: 'ilk adım', alt: 'son adım',
+        ogeler: ['First, peel the potatoes.', 'Then, slice them.', 'Fry them in hot oil.', 'When they are golden, take them out.', 'Sprinkle salt and enjoy!'],
+        hint: '[[First]] en başta, [[enjoy]] en sondadır. Arada şunu düşün: bir şey kızartılmadan önce dilimlenir; altın rengi olmadan da tavadan çıkmaz.',
+        why: 'Önce soy, sonra dilimle, sonra kızart. [[When they are golden]] kızartmadan sonra gelir. Tuz ve afiyet olsun en sonda.' } },
+
     { t: 'Pişirme fiilleri',
       base: '<div class="an-grid"><div class="rv v1"><b>chop</b>doğramak</div><div class="rv v1"><b>slice</b>dilimlemek</div><div class="rv v1"><b>grate</b>rendelemek</div>' +
         '<div class="rv v2"><b>boil</b>kaynatmak</div><div class="rv v2"><b>fry</b>kızartmak</div><div class="rv v2"><b>bake</b>fırında pişirmek</div>' +
@@ -57,6 +64,14 @@
         { s: '[[stir]] kaşıkla karıştırmak, [[pour]] dökmek, [[beat]] ya da [[whisk]] yumurtayı çırpmak.', on: '.v3' },
         { s: '[[peel]] kabuğunu soymak, [[squeeze]] limonu sıkmak, [[sprinkle]] de üstüne serpmek.', on: '.v4' }
       ] },
+
+    { t: 'Fiili anlamıyla eşleştir',
+      steps: [{ s: 'Pişirme fiillerini Türkçe anlamlarıyla eşleştir. Önce fiile, sonra anlamına dokun.' }],
+      ia: { tip: 'eslestir', q: '<p>Her fiili anlamıyla eşleştir.</p>', solBaslik: 'Fiil', sagBaslik: 'Anlam',
+        sol: ['grate', 'stir', 'peel', 'squeeze', 'sprinkle', 'bake'],
+        sag: ['rendelemek', 'karıştırmak', 'kabuğunu soymak', 'sıkmak', 'üstüne serpmek', 'fırında pişirmek'],
+        hint: 'Limonla ne yaparız? Peynirle ne yaparız? Kek nerede pişer? Böyle düşünerek eşleştir.',
+        why: '[[Grate]] rendelemek, [[stir]] karıştırmak, [[peel]] kabuğunu soymak, [[squeeze]] sıkmak, [[sprinkle]] serpmek, [[bake]] fırında pişirmek.' } },
 
     { t: 'Mutfak aletleri ve iki tuzak',
       steps: [
@@ -71,6 +86,13 @@
         { s: '2025 LGS’de [[bowl]] ile [[boil]] yer değiştirmiş olarak soruldu. Yazılışları benzer, ama biri kâse, biri kaynatmak.',
           h: '<div class="an-trap"><b>bowl</b> = kâse (alet) &nbsp;·&nbsp; <b>boil</b> = kaynatmak (yöntem)</div>' }
       ] },
+
+    { t: 'Alet mi, fiil mi?',
+      steps: [{ s: 'Sekiz kelimeden yalnızca mutfak aletleri kalsın. Eylem bildiren kelimeleri ele. Benzer yazılışlara dikkat!' }],
+      ia: { tip: 'eleme', q: '<p>Mutfak aleti <b>olmayanları</b> (fiilleri) ele.</p>',
+        ogeler: ['pot', 'grate', 'pan', 'boil', 'grater', 'bowl', 'slice', 'kettle'], ele: [1, 3, 6],
+        hint: '[[Grate]] ile [[grater]], [[bowl]] ile [[boil]] çok benzer. Hangisi bir eşya, hangisi bir eylem?',
+        why: '[[Grate]] rendelemek, [[boil]] kaynatmak, [[slice]] dilimlemek: üçü de fiil. [[Pot]], [[pan]], [[grater]], [[bowl]] ve [[kettle]] ise alet.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>How to make menemen</b></p><p>I. Chop the onions and peppers.<br>II. Add the tomatoes and eggs and stir.<br>III. Fry the onions and peppers in a pan with some oil.<br>IV. Serve it hot with fresh bread.</p><p>Which <b>two steps should change places</b> to make the recipe correct?</p>',
@@ -108,6 +130,15 @@
         { s: 'Bir de cevapta zaten verilmiş bilgiyi yeniden soran şık yanlıştır. Bunu da unutma.' }
       ] },
 
+    { t: 'Cevaba göre soru kelimesi',
+      steps: [{ s: 'Sekiz cevap var. Her birinin sorusu hangi kalıpla başlar? Cevabı doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Cevapları sorusuna göre yerleştir.</p>', gruplar: ['How many…?', 'How much…?', 'How long…?'],
+        ogeler: [{ m: 'Three eggs.', g: 0 }, { m: 'Two cloves of garlic.', g: 0 }, { m: 'Four tomatoes.', g: 0 },
+          { m: 'Two cups of milk.', g: 1 }, { m: 'A pinch of salt.', g: 1 }, { m: 'Some flour.', g: 1 },
+          { m: 'About 20 minutes.', g: 2 }, { m: 'For an hour.', g: 2 }],
+        hint: 'Sayılabilen şeyler [[How many]], sayılamayanlar [[How much]], süre ise [[How long]]. [[Cloves]] ve [[cups]] sayılır mı?',
+        why: 'Yumurta, domates ve sarımsak dişleri sayılır: [[How many]]. Süt, tuz, un sayılamaz: [[How much]]. Süreler: [[How long]].' } },
+
     { t: 'Ara soru', cp: {
         q: '<p><b>Ayşe:</b> I’m making a carrot cake for the party. ______?<br><b>Emre:</b> About forty minutes. Don’t open the oven before that!</p><p>Which question completes the dialogue?</p>',
         c: ['How much flour do you need', 'How long does it take to bake', 'What does it taste like', 'How many carrots do you use'], a: 'B',
@@ -124,6 +155,16 @@
         { s: 'Ve genel yorumlar: [[delicious]] ya da [[tasty]] lezzetli, [[disgusting]] iğrenç.', on: '.z3' }
       ] },
 
+    { t: 'İki “acı” tuzağı',
+      steps: [{ s: 'Tat kelimeleriyle ilgili her ifadeye karar ver: doğru mu, yanlış mı?' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Acı biber için “bitter” kullanılır.', d: false, a: 'Biber acısı spicy ya da hot.' },
+          { m: 'Şekersiz kahve “bitter” olur.', d: true, a: 'Kahve ve ilaç acısı bitter.' },
+          { m: 'Çok ekşi bir limonata “sour” olur.', d: true, a: 'Ekşi = sour.' },
+          { m: '“Disgusting” lezzetli demektir.', d: false, a: 'Disgusting iğrenç; lezzetli delicious ya da tasty.' }],
+        hint: 'Türkçedeki “acı” İngilizcede ikiye ayrılır. Biberin yaktığı acı ile kahvenin acısı aynı kelime değil.',
+        why: 'Biber [[spicy]], kahve [[bitter]], limon [[sour]]. [[Disgusting]] ise iğrenç demek; lezzetli olan [[delicious]].' } },
+
     { t: 'Edilgen yapı ile süreç',
       steps: [
         { s: 'Tarif anlatırken işi kimin yaptığı önemli değildir. Bu yüzden edilgen yapı kullanılır.',
@@ -138,6 +179,14 @@
           h: '<div class="an-trap">“Some cheese <span class="an-bad-t">are</span> put…” ✗ → cheese sayılamaz → <b>is</b> ✓</div>' }
       ] },
 
+    { t: 'Edilgen cümleyi tamamla',
+      steps: [{ s: 'Tarif cümlelerini edilgen yapıyla tamamla. İsim tekil mi, çoğul mu, sayılabilir mi? Ona bak.' }],
+      ia: { tip: 'bosluk', q: '<p>Edilgen tarif cümlelerini tamamla.</p>',
+        metin: 'The tomatoes [_] washed.<br>Some sugar [_] added.<br>The cake is [_] for forty minutes.',
+        secenek: ['are', 'is', 'am', 'baked', 'bake', 'baking'], cevap: ['are', 'is', 'baked'],
+        hint: 'Çoğul isim [[are]], sayılamayan isim [[is]] alır. Edilgende [[is]] ya da [[are]] kelimesinden sonra fiilin üçüncü hâli gelir.',
+        why: '[[The tomatoes are washed]], çünkü domatesler çoğul. [[Some sugar is added]], çünkü şeker sayılamaz. [[The cake is baked]]: fiilin üçüncü hâli.' } },
+
     { t: 'Tarif kartı hesapları',
       steps: [
         { s: 'Son olarak tarif kartı hesapları. [[Serves 4]] dört kişilik demek. Sekiz kişi için her şey iki katına çıkar.',
@@ -147,6 +196,13 @@
         { s: 'Ama metin [[While the oven is preheating]] diyorsa iki iş aynı anda yapılıyordur. O süreler toplanmaz.',
           h: '<div class="an-trap"><b>While…</b> = aynı anda → süreleri toplama!</div>' }
       ] },
+
+    { t: 'Kaç yumurta gerekir?',
+      steps: [{ s: 'Tarif dört kişilik, ama Selin altı kişiye pişirecek. Gereken yumurta sayısını kaydırıcıyla bul.' }],
+      ia: { tip: 'kaydir', q: '<p><b>Pancakes</b> — <b>Serves 4</b>: 2 eggs, 1 cup of milk, 1 cup of flour.</p><p>Selin is cooking for <b>6 people</b>. How many eggs does she need?</p>',
+        min: 0, max: 12, adim: 1, cevap: 3, tol: 0, birim: 'eggs', etiket: [0, 2, 4, 6, 8, 10, 12],
+        hint: '[[Serves 4]] dört kişilik demek. Önce iki kişiye kaç yumurta düştüğünü bul; altı kişi bunun kaç katı?',
+        why: 'Dört kişiye iki yumurta, yani iki kişiye bir yumurta. Altı kişi için üç yumurta gerekir.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>Apple Pie</b> — Serves 6<br>Prep time: 15 minutes · Baking time: 30 minutes<br>Let it cool for 10 minutes before serving.</p><p>Selin starts preparing the pie at <b>4:00 p.m.</b> When can she serve it?</p>',
@@ -168,6 +224,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

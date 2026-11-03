@@ -51,6 +51,14 @@
         { s: 'Soruda ikisi birlikte geçerse yönü kontrol et: nereden, nereye?' }
       ] },
 
+    { t: 'İnternet sözcüklerini eşleştir',
+      steps: [{ s: 'Altı internet sözcüğünü Türkçe anlamlarıyla eşleştir. İndirmek ile yüklemenin yönüne dikkat!' }],
+      ia: { tip: 'eslestir', q: '<p>Her sözcüğü anlamıyla eşleştir.</p>', solBaslik: 'Sözcük', sagBaslik: 'Anlam',
+        sol: ['log in', 'sign up', 'look up', 'upload', 'download', 'block'],
+        sag: ['hesaba girmek', 'yeni hesap açmak', 'bir şey aramak', 'internete yüklemek', 'internetten indirmek', 'engellemek'],
+        hint: 'Yönü düşün: [[upload]] senin cihazından internete, [[download]] internetten senin cihazına. [[Sign up]] ilk kez kayıt olmaktır.',
+        why: '[[Log in]] hesaba gir, [[sign up]] yeni hesap aç, [[look up]] ara, [[upload]] yükle, [[download]] indir, [[block]] engelle.' } },
+
     { t: 'Tuzak: addict mi, addicted mı?',
       steps: [
         { s: 'Bağımlılık kelimesinin iki hâli var. [[She is a real Internet addict.]] Burada [[addict]] bir isim: internet bağımlısı biri.',
@@ -69,6 +77,14 @@
         { s: 'Amacı soran soru da şu: [[What do you use the Internet for?]] Cevap: [[To keep in touch with my relatives abroad.]]' }
       ] },
 
+    { t: 'addict, addicted, to, for',
+      steps: [{ s: 'Dört boşluğu doldur. Kelime isim mi olmalı, sıfat mı? Amaç bildirirken [[to]] mu gelir, [[for]] mu?' }],
+      ia: { tip: 'bosluk', q: '<p>Cümleleri tamamla.</p>',
+        metin: 'She can’t live without her phone. She is a real Internet [_].<br>He is [_] to online games.<br>I use the Internet [_] do research.<br>I go online [_] shopping.',
+        secenek: ['addict', 'addicted', 'addiction', 'to', 'for', 'with', 'by'], cevap: ['addict', 'addicted', 'to', 'for'],
+        hint: '“[[A real Internet]]” ifadesinden sonra bir kişi gelir. [[Is]] ile [[to]] arasına ise bir sıfat gelir. Yalın fiilden önce hangisi, isimden önce hangisi geliyordu?',
+        why: '[[A real Internet addict]] bir kişi, yani isim. [[Addicted to]] ise sıfat. Yalın fiilden önce [[to]] gelir; [[shopping]] gibi bir isimden önce ise [[for]] gelir.' } },
+
     { t: 'How often, How long, What for?',
       base: '<table class="an-tbl"><tr><th>Soru</th><th>Cevapta ne var?</th></tr>' +
         '<tr class="rv h1"><td><b>How often</b> do you go online?</td><td>every day · twice a week · rarely</td></tr>' +
@@ -80,6 +96,15 @@
         { s: 'Cevapta [[for two hours]], [[about 30 minutes]] gibi bir süre varsa soru [[How long]].', on: '.h2' },
         { s: 'Cevapta bir amaç varsa, yani [[to]] ya da [[for]] ile başlıyorsa, soru [[What for]].', on: '.h3' }
       ] },
+
+    { t: 'Cevaba göre soruyu bul',
+      steps: [{ s: 'Sekiz cevabı sorusuna göre üç kutuya ayır. Dikkat: [[for]] ile başlayan her cevap aynı soruya gitmiyor!' }],
+      ia: { tip: 'grup', q: '<p>Her cevabı sorusunun kutusuna yerleştir.</p>', gruplar: ['How often?', 'How long?', 'What for?'],
+        ogeler: [{ m: 'Every day.', g: 0 }, { m: 'Twice a week.', g: 0 }, { m: 'Once a month.', g: 0 },
+          { m: 'For two hours.', g: 1 }, { m: 'About 30 minutes.', g: 1 },
+          { m: 'To do my homework.', g: 2 }, { m: 'For shopping.', g: 2 }, { m: 'To chat with friends.', g: 2 }],
+        hint: '[[For]] ile başlayan iki cevap var. Birinin arkasında bir süre, ötekinin arkasında bir amaç var. Hangisi hangisi?',
+        why: 'Sıklık [[How often]]: [[every day]], [[twice a week]], [[once a month]]. Süre [[How long]]: [[for two hours]], [[about 30 minutes]]. Amaç [[What for]]: [[to]] ya da [[for shopping]].' } },
 
     { t: 'Ara soru', cp: {
         q: '<p><b>Reporter:</b> ______?<br><b>Lena:</b> To keep in touch with my cousins in Germany. We video chat every weekend.</p><p>Which question completes the dialogue?</p>',
@@ -113,6 +138,13 @@
           h: '<div class="an-trap">Kökte <b>NOT correct / FALSE</b> varsa doğru üç şıkkı ele, kalan cevaptır.</div>' }
       ] },
 
+    { t: 'Kişi sayısından yüzdeye',
+      steps: [{ s: 'Grafik sorularındaki en önemli adım: kişi sayısını yüzdeye çevirmek. Hesapla ve kaydırıcıyla işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p><b>80 students</b> answered a survey. <b>20 of them</b> mostly use the Internet for homework.</p><p>What percentage of the students is this?</p>',
+        min: 0, max: 100, adim: 5, cevap: 25, tol: 0, birim: '%', etiket: [0, 25, 50, 75, 100],
+        hint: 'Önce toplamı bul: seksen öğrenci. Yirmi, seksenin kaçta kaçı? Sonra bunu yüzdeye çevir.',
+        why: 'Yirmi bölü seksen, dörtte bir eder; yani yüzde yirmi beş. İngilizcesi [[a quarter]]. Bu [[most]] değil, yarıdan çok az.' } },
+
     { t: 'Ara soru', cp: {
         q: '<p>40 students answered the question “What do you mostly use the Internet for?”</p>' +
            '<svg class="an-svg" viewBox="0 0 320 132" role="img" aria-label="Anket: oyun 16, sosyal medya 10, ödev 10, alışveriş 4">' +
@@ -135,9 +167,16 @@
         { s: 'Güçlü bir şifre en az sekiz, on karakterdir. Bir iki üç dört beş altı gibi kısa şifreler zayıftır.', on: '.p1' },
         { s: 'Büyük ve küçük harf, rakam ve simge karışık olmalı. Adın, evcil hayvanının adı ya da doğum günün içinde olmamalı.', on: '.p2' },
         { s: 'Ve gizli olmalı, her hesapta farklı olmalı.', on: '.p3' },
-        { s: '2023 LGS’de şifre kuralı soruldu. Kurallardaki sayıları harf harf say. Mesela “Maxi” kelimesinin içinde “Max” adı gizli olabilir!',
+        { s: '2023 LGS’de şifre kuralı soruldu. Kurallardaki sayıları harf harf say. Mesela “[[Maxi]]” kelimesinin içinde “[[Max]]” adı gizli olabilir!',
           h: '<div class="an-trap">Kural: “Don’t use your pet’s name (Max).” → <b>Maxi#2012</b> ✗ çünkü içinde <b>Max</b> var.</div>' }
       ] },
+
+    { t: 'Kurala uymayan şifreler',
+      steps: [{ s: 'Şifre kurallarını oku. Kurallardan en az birine uymayan şifreleri ele. Harfleri ve rakamları tek tek say!' }],
+      ia: { tip: 'eleme', q: '<p><b>Rules:</b> at least <b>10 characters</b> · at least one <b>number</b> · at least one <b>symbol</b> (! # @) · don’t use your pet’s name (<b>Max</b>).</p><p>Kurallara <b>uymayan</b> şifreleri ele.</p>',
+        ogeler: ['Maxi#2024ab', 'Sun#flower7', 'sunflower2024', 'Tree!7', 'Blue@Sky99', 'Rock#Star!'], ele: [0, 2, 3, 5],
+        hint: 'Her şifre için dört soru sor: on karakter var mı, rakam var mı, simge var mı, içinde [[Max]] geçiyor mu?',
+        why: '[[Maxi]] ile başlayan şifrede [[Max]] adı gizli. [[Sunflower]] şifresinde simge yok, [[Tree]] şifresi çok kısa, [[Rock Star]] şifresinde rakam yok. Geriye iki güçlü şifre kalıyor.' } },
 
     { t: 'must, mustn’t, should, don’t have to',
       steps: [
@@ -150,6 +189,16 @@
         { s: '[[You should tell an adult]]: tavsiye.', on: '.r3' },
         { s: 'Ve tuzak olan: [[You don’t have to reply]]. Bu “cevap verme” demek değil, “cevap vermek zorunda değilsin” demek.', on: '.r4', mk: '.r4 td' }
       ] },
+
+    { t: 'Zorunlu mu, yasak mı, gerek yok mu?',
+      steps: [{ s: 'Her açıklama doğru mu, yanlış mı? Özellikle [[don’t have to]] ile [[mustn’t]] farkına dikkat et.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: '“You don’t have to reply.” = Cevap vermen yasak.', d: false, a: 'Gerek yok demek; istersen cevap verebilirsin.' },
+          { m: '“You mustn’t share your password.” bir yasaktır.', d: true, a: 'mustn’t = yasak.' },
+          { m: '“You should tell an adult.” bir tavsiyedir.', d: true, a: 'should = tavsiye.' },
+          { m: '“You must log out.” = Çıkış yapman gerekmez.', d: false, a: 'must = zorunlu.' }],
+        hint: '[[Must]] zorunlu, [[mustn’t]] yasak, [[should]] tavsiye. Peki [[don’t have to]] yasak mı, yoksa gerekli değil mi?',
+        why: '[[Don’t have to]] “zorunda değilsin” demek, yasak değil. [[Mustn’t]] yasak, [[should]] tavsiye, [[must]] ise zorunluluk bildirir.' } },
 
     { t: 'Görüş bildirmek',
       steps: [
@@ -181,6 +230,7 @@
   L.scenes.forEach(function (sc) {
     (sc.steps || []).forEach(function (st) { st.s = en(st.s); });
     if (sc.cp) { sc.cp.why = en(sc.cp.why); sc.cp.hint = en(sc.cp.hint); }
+    if (sc.ia) { sc.ia.q = en(sc.ia.q); sc.ia.why = en(sc.ia.why); sc.ia.hint = en(sc.ia.hint); }
   });
   // son “Akılda kalsın” sahnesi: özet maddeleri adım adım belirir
   var last = L.scenes[L.scenes.length - 1];

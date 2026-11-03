@@ -42,6 +42,19 @@
         { s: 'Son cümle ise tek başına anlaşılıyor ve konuyu geniş bir yargıyla tanıtıyor. İşte giriş cümlesi bu.', on: '.i4', mk: '.i4 td' }
       ] },
 
+    { t: 'Giriş cümlesine dokun',
+      steps: [{ s: 'Dört cümleden yalnızca biri bir paragrafa giriş olabilir. Ona dokun.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>Hangi cümle bir paragrafın <b>giriş cümlesi</b> olabilir?</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 234" role="group" aria-label="Dört cümle"><g data-b="r1" aria-label="Bu nedenle her sonbahar yola çıkarlar."><rect x="4" y="6" width="332" height="44" rx="9" class="box"/><text x="14" y="32" font-size="14">Bu nedenle her sonbahar yola çıkarlar.</text></g><g data-b="r2" aria-label="Leylekler de bu yolculuğa katılır."><rect x="4" y="58" width="332" height="44" rx="9" class="box"/><text x="14" y="84" font-size="14">Leylekler de bu yolculuğa katılır.</text></g><g data-b="r3" aria-label="Göçmen kuşlar, her yıl binlerce kilometre yol aşar."><rect x="4" y="110" width="332" height="54" rx="9" class="box"/><text x="14" y="132" font-size="14">Göçmen kuşlar, her yıl binlerce</text><text x="14" y="152" font-size="14">kilometre yol aşar.</text></g><g data-b="r4" aria-label="Üstelik yönlerini bulmak için yıldızlardan yararlanırlar."><rect x="4" y="172" width="332" height="54" rx="9" class="box"/><text x="14" y="194" font-size="14">Üstelik yönlerini bulmak için</text><text x="14" y="214" font-size="14">yıldızlardan yararlanırlar.</text></g></svg>',
+        dogru: ['r3'],
+        hint: 'Kendinden önce bir cümle varmış izlenimi veren sözleri ara: bir bağlayıcı, bir “de” ya da kimi gösterdiği belli olmayan bir kişi eki.',
+        hintV: 'Kendinden önce bir cümle varmış izlenimi veren sözleri ara: bir bağlayıcı, bir de bağlacı ya da kimi gösterdiği belli olmayan bir kişi eki.',
+        whyV: 'Bu nedenle bağlayıcısı bir sonucu, de bağlacı önceden anlatılan başka kuşları, üstelik sözü de bir eklemeyi gösterir. Yalnızca göçmen kuşlarla ilgili cümle tek başına anlaşılır ve konuyu tanıtır.',
+        why: '“Bu nedenle” bir sonucu, “de” önceden anlatılan başka kuşları, “üstelik” de bir eklemeyi gösterir. Yalnızca göçmen kuşlarla ilgili cümle tek başına anlaşılır ve konuyu tanıtır.'
+      } },
+
     { t: 'Düşüncenin akışını bozan cümle',
       steps: [
         { s: 'Akışı bozan cümle sorusunda önce paragrafın konusunu, sonra konunun hangi yönünün anlatıldığını bul.' },
@@ -62,6 +75,18 @@
           h: '<div class="an-tip">Halka sözcükleri: <b>Onlar</b>, <b>Bu ağırlık</b>, <b>Çünkü</b>… Olay metinlerinde zaman sırasını izle.</div>' },
         { s: 'Bir de dışarıda kalan cümle sorusu var. Dışarıda kalan cümle her zaman konu dışı değildir; olayın henüz gelinmemiş bir aşamasını anlatıyor olabilir.' }
       ] },
+
+    { t: 'Cümleleri sırala',
+      steps: [{ s: 'Cümleleri paragraftaki sırasına göre diz. İlk cümleden başlayarak dokun.' }],
+      ia: {
+        tip: 'sirala',
+        q: '<p>Cümleleri anlamlı bir paragraf oluşturacak biçimde sırala.</p>',
+        ust: 'ilk cümle',
+        alt: 'son cümle',
+        ogeler: ['Dedem, kırk yıl önce bahçeye bir çınar fidanı dikti.', 'Bu fidan, yıllar içinde koca bir ağaca dönüştü.', 'Şimdi o ağacın gölgesinde torunları oyun oynuyor.', 'Dedem de onları izlerken çocukluğunu hatırlıyor.'],
+        hint: 'Önce tek başına anlaşılan giriş cümlesini bul. Sonra her cümlenin başındaki halkayı, önceki cümledeki kavrama bağla.',
+        why: 'Giriş cümlesi fidanı tanıtır. “Bu fidan” ona, “o ağacın” fidanın dönüştüğü ağaca, “onları” da torunlara bağlanır. Zaman da kırk yıl önceden bugüne doğru akar.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>(I) Arılar, doğadaki dengenin en önemli bekçilerindendir. (II) Çiçekten çiçeğe dolaşırken bitkilerin tozlaşmasını sağlarlar. (III) Bal, eski çağlardan beri tatlandırıcı olarak kullanılan değerli bir besindir. (IV) Bu tozlaşma sayesinde pek çok meyve ve sebze ürün verir.</p><p>Bu metinde numaralanmış cümlelerden hangisi düşüncenin akışını <b>bozmaktadır</b>?</p>',
@@ -86,6 +111,16 @@
           h: '<div class="an-rule"><b>1.</b> Metindeki kısıtı bul. <b>2.</b> Kısıtı çiğneyen şıkkı ara.</div>' }
       ] },
 
+    { t: 'Kısıtı çiğneyen cümleler',
+      steps: [{ s: 'Metnin başındaki kısıtı aklında tut. Dört devam cümlesinin tutarlılığı koruyup korumadığına karar ver.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>“Gözlerim bağlıydı; arkadaşlarım beni bilmediğim bir yere götürüyordu.”<br>Metin bu cümleyle sürdürülürse <b>tutarlılık korunur</b> mu? Korunuyorsa Doğru, bozuluyorsa Yanlış seç.</p>',
+        ifadeler: [{ m: 'Ayaklarımın altında kuru yaprakların hışırtısını duydum.', d: true, a: 'Gözü bağlı biri sesleri duyabilir.' }, { m: 'Yolun iki yanındaki renk renk çiçekler dikkatimi çekti.', d: false, a: 'Gözleri bağlıyken çiçekleri göremez.' }, { m: 'Burnuma taze ekmek kokusu geldi.', d: true, a: 'Koku almak görmeye bağlı değil.' }, { m: 'Arkadaşımın yüzündeki gizli gülümsemeyi fark ettim.', d: false, a: 'Bir yüz ifadesini görmesi gerekir; kısıt çiğneniyor.' }],
+        hint: 'Önce kısıtı bul: Gözleri bağlı biri hangi duyularını kullanabilir, hangisini kullanamaz?',
+        why: 'Gözleri bağlı biri duyabilir, koku alabilir; ama çiçekleri ya da bir gülümsemeyi göremez. Görmeye dayanan cümleler kısıtı çiğner.'
+      } },
+
     { t: 'Anlatım biçimleri',
       base: '<div class="an-grid" style="grid-template-columns:repeat(2,1fr)"><div class="rv b1"><b>Açıklayıcı</b>bilgi verir, öğretir<br><small>Uyku, hücrelerin onarıldığı bir dinlenme sürecidir.</small></div>' +
         '<div class="rv b2"><b>Tartışmacı</b>karşı görüşü çürütür<br><small>Bazıları ödevi kaldırmak istiyor. Oysa…</small></div>' +
@@ -108,6 +143,17 @@
           h: '<div class="an-trap">Açıklayıcı metni bozanlar: soru cümlesiyle bitmek, “siz” diye seslenmek, “-malısınız” diye öğüt vermek. Doğru şık <b>aynı nesnel, bilgi veren tonu</b> sürdürür.</div>' },
         { s: 'Kısacası metnin biçimini belirle, aynı tonu sürdüren şıkkı seç.' }
       ] },
+
+    { t: 'Anlatım biçimini tanı',
+      steps: [{ s: 'Sekiz cümleyi anlatım biçimine göre kutulara yerleştir. Önce cümleye, sonra kutusuna dokun.' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Her cümlede hangi anlatım biçimi ağır basıyor?</p>',
+        gruplar: ['Açıklayıcı', 'Tartışmacı', 'Öyküleyici', 'Betimleyici'],
+        ogeler: [{ m: 'Arılar, bir kilo bal için milyonlarca çiçeği dolaşır.', g: 0 }, { m: 'Bazıları oyunu zaman kaybı sanar; oysa oyun çocuğun okuludur.', g: 1 }, { m: 'Sabah erkenden kalktım, çantamı alıp yola koyuldum.', g: 2 }, { m: 'Gri bulutların altında deniz, kurşun rengi bir ayna gibiydi.', g: 3 }, { m: 'Depremler, yer kabuğundaki kırılmalarla oluşur.', g: 0 }, { m: 'Kimileri kitabın öldüğünü söylüyor; ama kitap satışları artıyor.', g: 1 }, { m: 'O gün dedem bana ilk kez balık tutmayı öğretti.', g: 2 }, { m: 'Mutfaktan yayılan tarçın kokusu, odayı sıcacık bir havayla doldurdu.', g: 3 }],
+        hint: 'Bilgi mi veriyor, bir görüşü mü savunuyor, bir olay mı anlatıyor, yoksa sözcüklerle resim mi çiziyor? “Oysa, ama” karşı görüşü işaret eder.',
+        why: 'Arılar ve deprem bilgi verir: açıklayıcı. Oyun ve kitap cümleleri karşı görüşü çürütür: tartışmacı. Yola koyulmak ve balık tutmayı öğrenmek birer olaydır: öyküleyici. Kurşun rengi deniz ve tarçın kokusu duyulara seslenir: betimleyici.'
+      } },
 
     { t: 'Düşünceyi geliştirme yolları',
       base: '<table class="an-tbl"><tr><th>Yol</th><th>Örnek</th></tr>' +
@@ -136,6 +182,19 @@
         { s: 'Eksik yolu bulma sorularında da önce metinde zaten olan yolları işaretle. Eksik olan yol cevaptır.' }
       ] },
 
+    { t: 'Düşünceyi geliştirme yolunu bul',
+      steps: [{ s: 'Her cümleyi kullandığı düşünceyi geliştirme yoluyla eşleştir.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>Her cümleyi düşünceyi geliştirme yoluyla eşleştir.</p>',
+        solBaslik: 'Cümle',
+        sagBaslik: 'Yol',
+        sol: ['Empati, kendini başkasının yerine koyabilmektir.', 'Kitap, insanı uzak diyarlara taşıyan bir gemi gibidir.', 'Köy hayatı, şehrin aksine sakin ve yavaştır.', 'Yunus Emre’nin dediği gibi, sevelim, sevilelim.', 'Araştırmaya göre gençlerin yüzde altmışı her gün kitap okuyor.', 'Mesela Mimar Sinan, ardında yüzlerce eser bıraktı.'],
+        sag: ['Tanımlama', 'Benzetme', 'Karşılaştırma', 'Tanık gösterme', 'Sayısal veri', 'Örneklendirme'],
+        hint: '“Gibi” her zaman benzetme değildir: adı belli birinin sözüne başvuruluyorsa tanıktır. “Aksine, farklı olarak” ise “daha” olmadan karşılaştırma kurar.',
+        why: 'Empati cümlesi kavramın ne olduğunu söylüyor: tanım. Gemi, “gibi” ile kurulan bir benzetme. “Şehrin aksine” sözü karşılaştırma yapıyor. Yunus Emre’nin sözü tanık, yüzde altmış sayısal veri, Mimar Sinan da genel bir yargıya örnek.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdakilerin hangisinde <b>karşılaştırmaya</b> başvurulmuştur?</p>',
         c: ['Mozaik, renkli taş ya da cam parçalarıyla yapılan bir süsleme sanatıdır.', 'Basılı kitap, ekranın aksine gözü yormaz.', 'Geçmişini bilmeyen toplum, kökleri kesilmiş bir çınar gibidir.', 'Gıda bitkilerinin dörtte üçü tozlaşmaya muhtaçtır.'], a: 'B',
@@ -156,6 +215,18 @@
         { s: 'Bir de hayalî unsur tuzağı. Gerçekte yaşanmış bir anı, ne kadar duygulu anlatılırsa anlatılsın hayalî değildir.' },
         { s: 'Ve şunu da unutma: Bir metinde niteleyici sözcükler olması onu betimleyici yapmaz. “Sessizce” sözcüğü de ses betimlemesi değildir.' }
       ] },
+
+    { t: 'Metinde olmayanları ele',
+      steps: [{ s: 'Metinde bulunmayan anlatım özelliklerini bul ve ele. Sözcüğün geçmesine değil, yapının varlığına bak.' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>“Ey genç dostum, sorular bilginin anahtarıdır. Ben de çocukken her şeyi merak eder, durmadan sorardım.”<br>Bu metinde <b>bulunmayan</b> özellikleri ele.</p>',
+        ogeler: ['Seslenme', 'Soru cümlesi', 'Birinci kişili anlatım', 'Sayısal veri', 'Kişisel yaşantı', 'Tanık gösterme'],
+        ele: [1, 3, 5],
+        hint: 'Metinde soru işaretiyle biten bir cümle var mı? Bir sayı ya da adı belli birinin sözü geçiyor mu?',
+        whyV: 'Ey genç dostum sözü seslenme, ben sözü birinci kişili anlatım, çocukluk anısı da kişisel yaşantıdır. Soru sözcüğü geçse de soru cümlesi yok; sayı ve adı belli birinin sözü de yok.',
+        why: '“Ey genç dostum” seslenme, “Ben” birinci kişili anlatım, çocukluk anısı da kişisel yaşantıdır. “Soru” sözcüğü geçse de soru cümlesi yok; sayı ve adı belli birinin sözü de yok.'
+      } },
 
     { t: 'Anlatımın nitelikleri',
       steps: [

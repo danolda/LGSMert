@@ -29,6 +29,13 @@
         { s: 'Yük miktarı fazla ya da eksik elektron sayısıyla anlatılır. Mesela 10 artı ve 13 eksi yükü olan cismin 3 fazla elektronu vardır; cisim negatiftir.' }
       ] },
 
+    { t: 'Kaydır: net yük',
+      steps: [{ s: 'Yük saymayı deneyelim. Bir cisimde 9 artı ve 14 eksi yük var. Bu cismin net yükü kaç birim? Sayı doğrusunda işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p>Bir cisimde <b>9 artı (+)</b> ve <b>14 eksi (−)</b> yük var. Cismin net yükü kaç birimdir?</p>',
+        min: -10, max: 10, adim: 1, cevap: -5, tol: 0, birim: ' birim', etiket: [-10, -5, 0, 5, 10],
+        hint: 'Hangi yük fazla? Fazla olan yükün cinsi, cismin yük cinsidir; fark da yük miktarıdır.',
+        why: '14 − 9 = 5 fazla elektron var; net yük −5 birim, cisim negatiftir. 5 elektron verirse nötr olur.',
+        whyV: 'On dörtten dokuzu çıkarınca beş fazla elektron kalır; net yük eksi beş birim, cisim negatiftir. Beş elektron verirse nötr olur.' } },
     { t: 'Hareket eden hep elektron',
       steps: [
         { s: 'Şimdi bu konunun altın kuralı: elektriklenme olaylarında yalnızca elektronlar yer değiştirir. Protonlar çekirdekte sıkıca tutulur, bir cisimden diğerine geçmez.',
@@ -42,6 +49,16 @@
         { s: 'Yalıtkan bir cisim sürtülünce yük yalnızca sürtülen bölgede kalır. İletkende ise yük bütün yüzeye yayılır.' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı: yük tuzakları',
+      steps: [{ s: 'Altın kuralı sınayalım. Her ifadeye doğru ya da yanlış de.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifadeye karar ver.</p>',
+        ifadeler: [
+          { m: 'Pozitif yüklenen cisim proton almıştır.', d: false, a: 'Proton hareket etmez; cisim elektron vermiştir.' },
+          { m: 'Nötr cisimde hiç yük yoktur.', d: false, a: 'Artı ve eksi yük vardır, sayıları eşittir.' },
+          { m: 'Negatif yüklenen cisim elektron almıştır.', d: true, a: 'Eksi yükleri fazlalaşmıştır.' },
+          { m: 'Sürtülen yalıtkanda yük yalnızca sürtülen bölgede kalır.', d: true, a: 'İletkende ise bütün yüzeye yayılır.' }],
+        hint: 'Elektriklenmede hangi tanecik yer değiştiriyordu? Nötr ile yüksüzün farkını düşün.',
+        why: 'Yalnızca elektronlar yer değiştirir: elektron alan negatif, veren pozitif olur. Nötr cisim yüksüz değil, artı ve eksi yükleri eşittir.' } },
     { t: 'İtme ve çekme',
       base: '<svg class="an-svg" viewBox="0 0 340 190" role="img" aria-label="Aynı yükler iter, zıt yükler çeker, yüklü cisim nötr cismi çeker">' +
         '<g class="rv i1"><circle cx="120" cy="30" r="16" fill="#ef4444" fill-opacity=".8"/><text x="120" y="36" font-size="16" text-anchor="middle" font-weight="700" fill="#fff">+</text>' +
@@ -101,6 +118,13 @@
           h: '<div class="an-trap"><span class="an-bad-t">Metaller sürtünmeyle yüklenemez.</span> → Yalıtkan sapla tutulan metal çubuk yüklenir.</div>' }
       ] },
 
+    { t: 'Boşluk: cam ve ipek',
+      steps: [{ s: 'Sürtünme kuralını yeni bir çiftte uygula. Cam çubuk ipek kumaşla sürtülüyor. Boşlukları doldur.' }],
+      ia: { tip: 'bosluk', q: '<p>Cam çubuk ipek kumaşla sürtülüyor.</p>',
+        metin: 'Elektronlar [_] [_] geçer.<br>Cam [_] yüklenir; iki cismin yük miktarı [_] olur.',
+        secenek: ['camdan', 'ipekten', 'ipeğe', 'cama', 'pozitif', 'negatif', 'eşit', 'farklı'], cevap: ['camdan', 'ipeğe', 'pozitif', 'eşit'],
+        hint: 'Cam ile ipekte ebonit ile yünün tersi oluyordu. Elektron veren cisim hangi yükle kalır?',
+        why: 'Elektronlar camdan ipeğe geçer; elektron veren cam pozitif, alan ipek negatif yüklenir. Biri ne kadar verdiyse öbürü o kadar alır: yükler zıt ve eşittir.' } },
     { t: 'Doğada ve teknolojide elektriklenme',
       steps: [
         { s: 'Bir cisim üzerinde biriken ve akmayan yüklere durgun elektrik denir. Doğada en büyük örneği şimşek ve yıldırım.' },
@@ -129,6 +153,14 @@
           h: '<div class="an-trap">Dokunmada geçen her zaman <b>elektrondur</b>. Sonunda iki cisim <b>aynı cins</b> yüklü olur (ya da toplam sıfırsa ikisi de nötr).</div>' }
       ] },
 
+    { t: 'Eşleştir: dokunmadan sonra',
+      steps: [{ s: 'Dokunma kuralını hızlıca uygula. Özdeş iletken küreler dokundurulup ayrılıyor. Her başlangıç durumunu son yük durumuyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Özdeş iletken küreler dokundurulup ayrılıyor. Başlangıç yüklerini son durumla eşleştir.</p>', solBaslik: 'Önce', sagBaslik: 'Sonra',
+        sol: ['+8 ve −2', '+6 ve +2', '−6 ve +2', '+5 ve −5', '−10 ve 0'],
+        sag: ['ikisi de +3', 'ikisi de +4', 'ikisi de −2', 'ikisi de nötr', 'ikisi de −5'],
+        hint: 'Önce toplam yükü bul, sonra özdeş küreler arasında eşit paylaştır. Toplamın işaretine dikkat!',
+        why: 'Toplam korunur ve eşit paylaşılır: 6 ÷ 2 = +3, 8 ÷ 2 = +4, −4 ÷ 2 = −2, 0 ÷ 2 = nötr, −10 ÷ 2 = −5. Son durumda iki küre hep aynı cins yüklüdür.',
+        whyV: 'Toplam yük korunur ve eşit paylaşılır: artı altıdan artı üçer, artı sekizden artı dörder, eksi dörtten eksi ikişer, sıfırdan nötr, eksi ondan eksi beşer. Son durumda iki küre hep aynı cins yüklüdür.' } },
     { t: 'Etki ile elektriklenme',
       base: '<svg class="an-svg" viewBox="0 0 340 175" role="img" aria-label="Negatif çubuk yaklaşınca yakın küre pozitif, uzak küre negatif olur">' +
         '<g class="rv e1"><rect x="8" y="50" width="70" height="20" rx="10" fill="#475569"/><g font-size="14" font-weight="700" fill="#93c5fd" text-anchor="middle"><text x="25" y="65">−</text><text x="43" y="65">−</text><text x="61" y="65">−</text></g><text x="43" y="40" font-size="11" text-anchor="middle">(−) çubuk</text></g>' +
@@ -173,6 +205,12 @@
           h: '<div class="an-trap"><span class="an-bad-t">Yapraklar açıldığına göre cisim pozitiftir.</span><br>Açılma yalnızca <b>yüklü</b> olduğunu gösterir. Bu iddiayı çürütmek için negatif olduğu bilinen bir cisimle de yaprakların açıldığı gösterilir.</div>' }
       ] },
 
+    { t: 'Dokun: etkiyle yüklenen elektroskop',
+      steps: [{ s: 'Etki ile elektriklenmeyi elektroskopta düşünelim. Negatif yüklü çubuk topuza dokundurulmadan yaklaştırılıyor. Pozitif yüklenen bölgeye dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Negatif yüklü çubuk nötr elektroskobun topuzuna <b>dokundurulmadan</b> yaklaştırılıyor. <b>Pozitif</b> yüklenen bölgeye dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 250" role="group" aria-label="Nötr bir elektroskop; negatif yüklü bir çubuk topuzuna dokundurulmadan yaklaştırılmış"><rect x="20" y="14" width="96" height="30" rx="8" fill="#64748b" opacity="0.85"/><text x="68" y="35" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">− − − −</text><text x="68" y="62" text-anchor="middle" font-size="14" class="mut">çubuk</text><path d="M110 124 L110 236 L230 236 L230 124" fill="none" class="st2" stroke-width="2"/><line x1="170" y1="62" x2="170" y2="168" class="st" stroke-width="5"/><g data-b="topuz" aria-label="topuz"><circle cx="170" cy="40" r="24" class="box"/><text x="170" y="45" text-anchor="middle" font-size="14">topuz</text></g><g data-b="cubuk" aria-label="metal çubuk"><rect x="150" y="66" width="40" height="40" rx="8" class="box"/></g><g data-b="tipa" aria-label="yalıtkan tıpa"><rect x="120" y="110" width="100" height="26" rx="6" class="box"/></g><g data-b="y1" aria-label="sol yaprak"><polygon points="166,168 150,168 122,224 140,230" class="box"/></g><g data-b="y2" aria-label="sağ yaprak"><polygon points="174,168 190,168 218,224 200,230" class="box"/></g><text x="290" y="208" text-anchor="middle" font-size="14" class="mut">yapraklar</text><text x="250" y="92" text-anchor="middle" font-size="14">metal çubuk</text><text x="280" y="129" text-anchor="middle" font-size="14">yalıtkan tıpa</text></svg>', dogru: ['topuz'],
+        hint: 'Çubuktaki eksi yükler elektroskobun elektronlarını iter. Elektronlar en uzağa kaçar; geride hangi bölge elektron eksiği ile kalır?',
+        why: 'Elektronlar çubuktan uzağa, yapraklara itilir: yapraklar negatif olup açılır, topuz pozitif kalır. Tıpa yalıtkandır, yük geçişine katılmaz.' } },
     { t: 'Topraklama',
       base: '<svg class="an-svg" viewBox="0 0 340 185" role="img" aria-label="Negatif cisimden toprağa, topraktan pozitif cisme elektron akar">' +
         '<g class="rv g1"><circle cx="80" cy="45" r="28" class="box" stroke-width="2"/><g font-size="14" font-weight="700" fill="#3b82f6" text-anchor="middle"><text x="68" y="44">−</text><text x="86" y="44">−</text><text x="77" y="60">−</text></g><text x="80" y="10" font-size="11" text-anchor="middle">(−) cisim</text>' +
@@ -191,6 +229,14 @@
         { s: 'Bir tuzak daha: birbirine iletken telle bağlanan metal kaplar yükü paylaşır, ama toprağa bağlı değilse topraklanmış sayılmaz.' }
       ] },
 
+    { t: 'Grupla: topraklama olur mu?',
+      steps: [{ s: 'Kesintisiz iletken yol var mı? Her durumu topraklama olup olmamasına göre yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Hangi durumlarda yüklü cisim topraklanır?</p>', gruplar: ['Topraklanır', 'Topraklanmaz'],
+        ogeler: [{ m: 'Bakır telle toprağa bağlı küre', g: 0 }, { m: 'Binadaki paratoner', g: 0 }, { m: 'Tankerin yere değen zinciri', g: 0 },
+          { m: 'Topuza parmakla dokunmak', g: 0 }, { m: 'Plastik eldivenle tutulan küre', g: 1 }, { m: 'Lastik tekerlek üstündeki metal', g: 1 },
+          { m: 'Telle birbirine bağlı iki metal kap', g: 1 }],
+        hint: 'Cisimden toprağa kadar giden yolun her parçası iletken mi? Yol toprağa ulaşıyor mu?',
+        why: 'Tel, paratoner, zincir ve insan vücudu yükü toprağa iletir. Eldiven ve lastik yalıtkandır; iki kabı birbirine bağlamak ise yükü paylaştırır, toprağa ulaştırmaz.' } },
     { t: 'Ara soru', cp: {
         q: '<p><b>Pozitif (+) yüklü</b> metal bir küre, iletken bir telle toprağa bağlanıyor. Bu sırada ne olur?</p>',
         c: ['Küredeki protonlar toprağa akar.', 'Topraktan küreye elektron gelir ve küre nötr olur.', 'Küredeki elektronlar toprağa akar.', 'Küre negatif yüklü hâle gelir.'], a: 'B',
@@ -210,6 +256,13 @@
         { s: 'Sigorta, devreden aşırı akım geçince devreyi keserek kabloları ve cihazları korur. Güçlü cihazları aynı çoklu prize takmak sigortanın atmasının en sık nedenidir.' }
       ] },
 
+    { t: 'Ele: harekete çevirmeyenler',
+      steps: [{ s: 'Enerji dönüşümlerini ayıralım. Elektrik enerjisini harekete çevirmeyenleri ele.' }],
+      ia: { tip: 'eleme', q: '<p>Elektrik enerjisini <b>harekete çevirmeyenleri</b> ele.</p>',
+        ogeler: ['Vantilatör', 'Ütü', 'Mikser', 'LED lamba', 'Asansör', 'Jeneratör', 'Saç kurutma makinesi'],
+        ele: [1, 3, 5],
+        hint: 'İçinde elektrik motoru olanlar harekete çevirir. Biri ise tam tersini yapar.',
+        why: 'Ütü ısıya, LED lamba ışığa çevirir. Jeneratör tam tersini yapar: hareketi elektriğe çevirir. Saç kurutma makinesi hem ısı hem hareket üretir, motoru vardır.' } },
     { t: 'Tasarruf, fatura ve santraller',
       steps: [
         { s: 'Bir cihazın harcadığı enerji, gücüne ve çalışma süresine bağlıdır. Güç kilovat, süre saat alınırsa enerji kilovatsaat çıkar.',

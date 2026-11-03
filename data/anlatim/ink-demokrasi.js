@@ -22,6 +22,13 @@
         { s: 'Atatürk döneminde çok partili hayata iki kez geçilmeye çalışıldı. İkisi de kısa sürdü. Neden? Şimdi göreceğiz.' }
       ] },
 
+    { t: 'Çok partinin katkısı',
+      steps: [{ s: 'Çok partili hayatın demokrasiye ne kattığını düşün. Bu listede katkı olmayanlar da var; onları ele.' }],
+      ia: { tip: 'eleme', q: '<p>Çok partili hayatın demokrasiye <b>katkısı olmayanları</b> ele.</p>',
+        ogeler: ['Farklı görüşler temsil edilir', 'Muhalefet ortadan kalkar', 'İktidar denetlenir', 'Millî irade meclise yansır', 'Kararları tek kişi alır', 'Halk seçim yaparken seçeneği olur'],
+        ele: [1, 4],
+        hint: 'Demokrasi denetim ve seçenek ister. Hangi maddeler denetimi ve seçeneği azaltıyor?',
+        why: 'Çok parti; farklı görüşlerin temsilini, iktidarın denetlenmesini, millî iradenin meclise yansımasını ve halka seçenek sunar. Muhalefetin kalkması ve tek kişinin karar vermesi demokrasiye aykırıdır.' } },
     { t: 'Zaman şeridi',
       base: '<svg class="an-svg" viewBox="0 0 340 265" role="img" aria-label="Demokratikleşme çabaları ve rejim karşıtı olaylar zaman şeridi">' +
       '<path class="st dr t1" d="M100 12 L100 257"/>' +
@@ -88,6 +95,15 @@
         { s: 'O gün Atatürk şu ünlü sözü söyledi.', h: '<div class="an-big" style="font-size:16px">“Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”</div>', v: 'O gün Atatürk şu ünlü sözü söyledi: Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır.' }
       ] },
 
+    { t: 'Tehditlerde tuzak',
+      steps: [{ s: 'İsyan ve suikast girişimi sınavda sık karıştırılır. Her ifade için doğru mu, yanlış mı, karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Şeyh Sait İsyanı, Musul sorununun aleyhimize çözülmesinde etkili oldu.', d: true, a: 'Ordu isyanla uğraşırken Musul’a harekât yapılamadı.' },
+          { m: 'Takrir-i Sükûn Kanunu İzmir Suikastı girişiminden sonra çıkarıldı.', d: false, a: 'Şeyh Sait İsyanı üzerine, 1925’te çıkarıldı.' },
+          { m: 'İzmir Suikastı girişiminin suçluları İstiklal Mahkemesi’nde yargılandı.', d: true, a: 'Menemen’de ise Divan-ı Harp yargıladı.' },
+          { m: 'Terakkiperver Fırka Menemen Olayı’ndan sonra kapatıldı.', d: false, a: 'Şeyh Sait İsyanı’ndan sonra, 1925’te kapatıldı.' }],
+        hint: 'Takrir-i Sükûn ve Terakkiperver’in kapanışı aynı isyana bağlı. Menemen hangi yıldaydı?',
+        why: 'Şeyh Sait İsyanı Musul’da elimizi zayıflattı, Takrir-i Sükûn’u ve Terakkiperver’in kapanışını getirdi. İzmir Suikastı İstiklal Mahkemesi’nde yargılandı; Menemen 1930’dadır.' } },
     { t: 'Serbest Cumhuriyet Fırkası ve Menemen',
       steps: [
         { s: '1929 Dünya Ekonomik Bunalımı ülkeyi de sarstı. Hükûmeti denetleyecek bir muhalefet gerekiyordu.', v: 'Bin dokuz yüz yirmi dokuz Dünya Ekonomik Bunalımı ülkeyi de sarstı. Hükûmeti denetleyecek bir muhalefet gerekiyordu.' },
@@ -98,6 +114,12 @@
           h: '<div class="an-trap">Menemen Olayı’nda suçlular <b>Divan-ı Harp</b>’te (askerî mahkeme) yargılandı, İstiklal Mahkemesi’nde değil!</div>' }
       ] },
 
+    { t: 'Kronoloji: 1923–1930',
+      steps: [{ s: 'Bu altı gelişmeyi yaşandıkları sıraya koy. Partilerle tehditlerin nasıl birbirini izlediğine dikkat et.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Halk Fırkası kuruldu', 'Terakkiperver Fırka kuruldu', 'Şeyh Sait İsyanı', 'İzmir Suikastı girişimi', 'Serbest Fırka kuruldu', 'Menemen Olayı'],
+        hint: 'Her deneme partisinin ardından bir tehdit geldi. İlk parti 1923’te, ikinci deneme 1930’da.',
+        why: '1923 Halk Fırkası, 1924 Terakkiperver, 1925 Şeyh Sait, 1926 İzmir Suikastı, 1930 Serbest Fırka ve aynı yılın sonunda Menemen.' } },
     { t: 'İki parti, yan yana',
       base: '<table class="an-tbl"><tr><th></th><th>Terakkiperver C.F.</th><th>Serbest C.F.</th></tr>' +
         '<tr class="rv c1"><td><b>Kuruluş</b></td><td>1924 · komutanlar kendi isteğiyle</td><td>1930 · Atatürk’ün isteğiyle, Ali Fethi Bey</td></tr>' +
@@ -111,6 +133,13 @@
         { s: 'Ama kapanmalarının ortak nedeni aynıydı: rejim karşıtlarının partiye sızması. Ortam henüz çok partili hayata hazır değildi.', on: '.c4' }
       ] },
 
+    { t: 'Hangi parti?',
+      steps: [{ s: 'Her bilgiyi ait olduğu partinin kutusuna yerleştir. İki partide ortak olan bilgileri buraya koymadım.' }],
+      ia: { tip: 'grup', q: '<p>Her bilgiyi ait olduğu <b>partiye</b> yerleştir.</p>', gruplar: ['Terakkiperver C.F.', 'Serbest C.F.'],
+        ogeler: [{ m: 'Başkanı Kâzım Karabekir', g: 0 }, { m: 'Ali Fethi Bey kurdu', g: 1 }, { m: 'Hükûmet kararıyla kapandı', g: 0 },
+          { m: 'Kurucusu kendisi feshetti', g: 1 }, { m: 'Atatürk’ün isteğiyle kuruldu', g: 1 }, { m: 'Takrir-i Sükûn’la kapandı', g: 0 }],
+        hint: 'Biri komutanların kendi isteğiyle kuruldu ve bir isyandan sonra kapatıldı. Öbürünü Atatürk istedi ve üç ay sonra kendini kapattı.',
+        why: 'Terakkiperver’in başında Kâzım Karabekir vardı ve Takrir-i Sükûn’a dayanılarak hükûmet kararıyla kapatıldı. Serbest Fırka’yı Atatürk’ün isteğiyle Ali Fethi Bey kurdu ve kendisi feshetti.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Terakkiperver Cumhuriyet Fırkası ile Serbest Cumhuriyet Fırkası’nın <b>ortak</b> özellikleri arasında aşağıdakilerden hangisi gösterilebilir?</p>',
         c: ['Atatürk’ün isteğiyle kurulmaları', 'Ekonomide devletçiliği savunmaları', 'Kurucuları tarafından kapatılmaları', 'Rejim karşıtlarının partiye sızması nedeniyle kapanmaları'], a: 'D',
@@ -128,6 +157,12 @@
         { s: 'Kalıcı geçiş ise İkinci Dünya Savaşı’ndan sonra geldi: 1945’te Millî Kalkınma Partisi, 1946’da Demokrat Parti kuruldu.', v: 'Kalıcı geçiş ise İkinci Dünya Savaşı’ndan sonra geldi: bin dokuz yüz kırk beşte Millî Kalkınma Partisi, bin dokuz yüz kırk altıda Demokrat Parti kuruldu.' }
       ] },
 
+    { t: 'Kalıcı geçiş yılı',
+      steps: [{ s: 'Çok partili hayata kalıcı geçiş Demokrat Parti ile tamamlandı. Kaydırıcıyla bu partinin kurulduğu yılı işaretle.' }],
+      ia: { tip: 'kaydir', q: '<p>Demokrat Parti’nin kurulduğu <b>yılı</b> işaretle.</p>', min: 1920, max: 1950, adim: 1, cevap: 1946, tol: 0, bas: 1923,
+        etiket: [1920, 1930, 1940, 1950],
+        hint: 'Kalıcı geçiş Atatürk’ten sonra, İkinci Dünya Savaşı bittikten sonra oldu. Millî Kalkınma Partisi’nden bir yıl sonra.',
+        why: 'Savaş 1945’te bitti; aynı yıl Millî Kalkınma Partisi, 1946’da Demokrat Parti kuruldu. Atatürk dönemindeki iki deneme 1924 ve 1930’dadır.' } },
     { t: 'Ara soru', cp: {
         q: '<p>1924 yılında milletvekili olan komutanlardan ya askerlik görevini ya da milletvekilliğini seçmeleri istenmiştir. Bazı komutanlar askerlikten istifa ederek mecliste kalmış, bazıları ise milletvekilliğinden ayrılıp orduda görevine devam etmiştir.</p><p>Bu düzenlemeyle aşağıdakilerden hangisinin amaçlandığı <b>söylenebilir</b>?</p>',
         c: ['Ordunun siyasetin dışında tutulması', 'Kadınların siyasi haklar kazanması', 'Çok partili hayata kalıcı olarak geçilmesi', 'Meclisin yargı yetkisini kullanması'], a: 'A',

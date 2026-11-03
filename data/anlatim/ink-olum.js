@@ -57,6 +57,15 @@
         { s: 'Manevi mirasını ise tek cümleyle anlattı.', h: '<div class="an-big" style="font-size:20px">“Benim manevi mirasım ilim ve akıldır.”</div>', v: 'Manevi mirasını ise tek cümleyle anlattı: Benim manevi mirasım ilim ve akıldır.' }
       ] },
 
+    { t: 'Son günlerde tuzak',
+      steps: [{ s: 'Atatürk’ün son günleri ve vasiyetiyle ilgili dört ifade var. Doğru mu, yanlış mı, tek tek karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Atatürk vasiyetinde mal varlığını Cumhuriyet Halk Partisi’ne bıraktı.', d: true, a: 'Gelirden yakınlarına pay ayrılmasını istedi.' },
+          { m: 'Gelirin kalanı Türk Tarih ve Türk Dil kurumlarına verilecekti.', d: true, a: 'Millî kültüre ve bilime verdiği önem.' },
+          { m: 'İsmet İnönü, Atatürk’ün vefatından bir hafta sonra seçildi.', d: false, a: 'Ertesi gün, 11 Kasım 1938’de seçildi.' },
+          { m: 'Atatürk’ün naaşı vefatından hemen sonra Anıtkabir’e kondu.', d: false, a: 'Önce Etnografya Müzesi’ne, 1953’te Anıtkabir’e.' }],
+        hint: 'Devlette boşluk oluştu mu? Anıtkabir’in tamamlandığı yıl ile vefat yılı aynı mı?',
+        why: 'Mal varlığı partiye, gelirin kalanı iki kuruma bırakıldı. İnönü ertesi gün seçildi; naaş on beş yıl Etnografya Müzesi’nde kaldı ve 1953’te Anıtkabir’e taşındı.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Doktorlar Atatürk’e kesin dinlenmesini söylemiştir. Ancak o, Hatay sorununun çözümü için Türkiye’nin gücünü göstermek amacıyla Mayıs 1938’de hasta hâliyle Mersin ve Adana’ya giderek askerî birlikleri denetlemiştir.</p><p>Bu bilgiler Atatürk’ün hangi özelliğine <b>örnektir</b>?</p>',
         c: ['Sanatseverliğine', 'Vatanseverliğine', 'Çok yönlülüğüne', 'Alçakgönüllülüğüne'], a: 'B',
@@ -74,6 +83,12 @@
         { s: 'Nutuk 19 Mayıs 1919’da başlar, 1927’de biter. Daha önceki savaşlar ve 1927’den sonraki inkılaplar Nutuk’ta yoktur.', v: 'Nutuk on dokuz Mayıs bin dokuz yüz on dokuzda başlar, bin dokuz yüz yirmi yedide biter. Daha önceki savaşlar ve bin dokuz yüz yirmi yediden sonraki inkılaplar Nutuk’ta yoktur.' }
       ] },
 
+    { t: 'Eser ve içeriği',
+      steps: [{ s: 'Atatürk’ün eserlerini ve ünlü sözünü, içerikleriyle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her eseri ya da sözü <b>içeriğiyle</b> eşleştir.</p>', solBaslik: 'Eser / söz', sagBaslik: 'İçerik',
+        sol: ['Nutuk', 'Geometri', 'Medeni Bilgiler', '“Manevi mirasım”'], sag: ['1919–1927 olayları', 'Türkçe terimler', 'Yurttaşlık, demokrasi', 'İlim ve akıl'],
+        hint: 'Biri 19 Mayıs 1919’dan başlayan bir anlatı, biri matematik kitabı, biri yurttaşlık kitabı. Manevi mirasını iki kelimeyle anlattı.',
+        why: 'Nutuk 1919–1927 olaylarını birinci ağızdan anlatır; Geometri üçgen, açı gibi Türkçe terimler türetir; Medeni Bilgiler yurttaşlığı anlatır. “Benim manevi mirasım ilim ve akıldır.”' } },
     { t: 'Ara soru', cp: {
         q: '<p>Bir öğrenci Nutuk’u okuyarak bir sunum hazırlamaktadır.</p><p>Öğrenci aşağıdaki konulardan hangisi hakkında Nutuk’tan <b>bilgi edinemez</b>?</p>',
         c: ['Kongrelerin toplanma süreci', 'TBMM’nin açılışı', 'Harf İnkılabı’nın yapılması', 'Saltanatın kaldırılması'], a: 'C',
@@ -92,6 +107,12 @@
         { s: 'Savaş 1945’te Hiroşima ve Nagazaki’ye atılan atom bombalarıyla, Müttefiklerin zaferiyle sona erdi.', v: 'Savaş bin dokuz yüz kırk beşte Hiroşima ve Nagazaki’ye atılan atom bombalarıyla, Müttefiklerin zaferiyle sona erdi.' }
       ] },
 
+    { t: 'İki blok',
+      steps: [{ s: 'İkinci Dünya Savaşı’nda iki blok vardı. Her devleti bloğuna yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her devleti <b>bloğuna</b> yerleştir.</p>', gruplar: ['Mihver', 'Müttefikler'],
+        ogeler: [{ m: 'Almanya', g: 0 }, { m: 'İngiltere', g: 1 }, { m: 'Japonya', g: 0 }, { m: 'SSCB', g: 1 }, { m: 'İtalya', g: 0 }, { m: 'ABD', g: 1 }, { m: 'Fransa', g: 1 }],
+        hint: 'Yayılmacı üç devlet bir blokta. Sovyetler Birliği’nin hangi tarafta savaştığını düşün.',
+        why: 'Mihver’de Almanya, İtalya ve Japonya; Müttefiklerde İngiltere, Fransa, Sovyetler Birliği ve ABD vardı. Savaşı Müttefikler kazandı.' } },
     { t: 'Türkiye’nin denge politikası',
       base: '<svg class="an-svg" viewBox="0 0 340 218" role="img" aria-label="İkinci Dünya Savaşı’nda Türkiye’nin denge politikası zaman şeridi">' +
       '<path class="st dr d1" d="M100 12 L100 210"/>' +
@@ -128,6 +149,12 @@
         { s: 'Savaşın sonunda, 23 Şubat 1945’te Almanya ve Japonya’ya kâğıt üzerinde savaş ilan etti. Neden? Birleşmiş Milletler’e kurucu üye olabilmek için.', v: 'Savaşın sonunda, yirmi üç Şubat bin dokuz yüz kırk beşte Almanya ve Japonya’ya kâğıt üzerinde savaş ilan etti. Neden? Birleşmiş Milletler’e kurucu üye olabilmek için.', on: '.d5,.d6' }
       ] },
 
+    { t: 'Denge politikası adım adım',
+      steps: [{ s: 'Türkiye’nin savaş boyunca attığı adımları ve savaşın önemli olaylarını sıraya koy.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Almanya Polonya’ya saldırdı', 'İngiltere-Fransa ile yardım antlaşması', 'Almanya ile saldırmazlık paktı', 'Adana ve Kahire görüşmeleri', 'Almanya ve Japonya’ya savaş ilanı', 'Atom bombaları atıldı'],
+        hint: 'Türkiye önce bir bloğa, Alman orduları sınıra gelince öbürüne yaklaştı. Savaş ilanı Birleşmiş Milletler için, savaşın sonuna doğru yapıldı.',
+        why: 'Eylül 1939 saldırı, Ekim 1939 İngiltere ve Fransa, Haziran 1941 Almanya, 1943 görüşmeler, Şubat 1945 savaş ilanı, Ağustos 1945 atom bombaları.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Yalta Konferansı’nda, belirli bir tarihe kadar Mihver Devletleri’ne savaş ilan etmeyen devletlerin savaştan sonra kurulacak uluslararası teşkilata alınmayacağı açıklanmıştır. Türkiye de 23 Şubat 1945’te Almanya ve Japonya’ya savaş ilan etmiş, ancak hiçbir cephede savaşmamıştır.</p><p>Türkiye’nin bu kararı almasındaki <b>temel amaç</b> aşağıdakilerden hangisidir?</p>',
         c: ['Savaştan toprak kazanmak', 'Savaş sonrası kurulacak uluslararası düzende yer almak', 'Almanya’dan savaş tazminatı almak', 'Mihver Devletleri’nin yanında savaşa katılmak'], a: 'B',
@@ -166,6 +193,13 @@
         { s: 'Dışarıda ise yeni bir tehdit vardı: Sovyetler Birliği Kars, Ardahan ve Boğazlar üzerinde hak iddia etti. Türkiye Batı’ya yaklaştı.' },
         { s: 'ABD’nin Truman ve Marshall yardımları alındı. Kore’ye asker gönderen Türkiye, 1952’de NATO’ya üye oldu.', v: 'ABD’nin Truman ve Marshall yardımları alındı. Kore’ye asker gönderen Türkiye, bin dokuz yüz elli ikide NATO’ya üye oldu.',
           h: '<div class="an-rule">SSCB tehdidi → Truman Doktrini (1947, askerî) · Marshall Planı (1948, ekonomik) → Kore Savaşı (1950) → <b>NATO (18 Şubat 1952)</b></div>' }
-      ] }
+      ] },
+    { t: 'Sovyet tehdidine karşı',
+      steps: [{ s: 'Savaştan sonra Sovyet tehdidine karşı Türkiye Batı’ya yaklaştı. Bu dönemin adımı olmayanları ele.' }],
+      ia: { tip: 'eleme', q: '<p>Savaş sonrası <b>Batı’ya yaklaşma adımı olmayanları</b> ele.</p>',
+        ogeler: ['Truman Doktrini', 'Sadabat Paktı', 'Marshall Planı', 'Balkan Antantı', 'Kore’ye asker gönderme', 'Almanya ile saldırmazlık paktı', 'NATO üyeliği'],
+        ele: [1, 3, 5],
+        hint: 'Savaştan sonraki adımlar ABD ile ilgilidir. Savaştan önce ya da savaş sırasında imzalananları ayıkla.',
+        why: 'Truman askerî, Marshall ekonomik yardımdı; Kore’ye asker gönderen Türkiye 1952’de NATO’ya girdi. Sadabat 1937, Balkan Antantı 1934, saldırmazlık paktı 1941’dedir.' } },
   ]
 };

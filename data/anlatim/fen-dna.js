@@ -39,6 +39,12 @@
           h: '<div class="an-tip">Hafıza ipucu: <b>Ke-Di-Ge-Ni</b> → Kromozom › DNA › Gen › Nükleotit</div>' }
       ] },
 
+    { t: 'Sırala: büyükten küçüğe',
+      steps: [{ s: 'Hadi paketi kendin aç. Bu yapıları en büyükten en küçüğe doğru sırala. Dikkat, iki yeni misafir var: hücre ve çekirdek.' }],
+      ia: { tip: 'sirala', q: '<p>Yapıları <b>büyükten küçüğe</b> sırala.</p>', ust: 'en büyük', alt: 'en küçük',
+        ogeler: ['Hücre', 'Çekirdek', 'Kromozom', 'DNA', 'Gen', 'Nükleotit'],
+        hint: 'Kalıtım bilgisi hücrenin hangi bölümünde saklanıyordu? Sonra Ke-Di-Ge-Ni ipucunu hatırla.',
+        why: 'Hücrenin çekirdeğinde kromozomlar var; kromozom paketlenmiş DNA’dır. DNA’nın bir bölümü gen, en küçük birim de nükleotittir.' } },
     { t: 'Canlıları farklı yapan ne?',
       steps: [
         { s: 'Şimdi iki önemli tuzağa bakalım. Birincisi kromozom sayısı. İnsanın vücut hücresinde 46 kromozom var, peki daha fazlası daha gelişmiş mi demek?',
@@ -68,6 +74,13 @@
         { s: 'LGS’de sana çoğu zaman sembollerle bir model verilir. Hangisinin şeker olduğunu bulmanın yolu basit: ortadaki, diğer ikisine bağlanan parça şekerdir.', on: '.n4' }
       ] },
 
+    { t: 'Dokun: modeldeki şekerler',
+      steps: [{ s: 'Şimdi bir model okuyalım. Sembollerle çizilmiş bu DNA ipliğinde şekeri gösteren parçaların hepsine dokun, sonra kontrol et.' }],
+      ia: { tip: 'gorselsec', q: '<p>Tek iplikli modelde <b>şekeri</b> gösteren parçaların hepsine dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 150" role="group" aria-label="Sembollerle çizilmiş tek bir DNA ipliği modeli"><line x1="52" y1="40" x2="290" y2="40" class="st" stroke-width="3"/><line x1="110" y1="66" x2="110" y2="96" class="st" stroke-width="3"/><line x1="230" y1="66" x2="230" y2="96" class="st" stroke-width="3"/><g data-b="a" aria-label="1 numaralı parça"><circle cx="30" cy="40" r="22" class="box"/><text x="30" y="45" text-anchor="middle" font-size="15">1</text></g><g data-b="s1" aria-label="2 numaralı parça"><polygon points="110,14 138,40 110,66 82,40" class="box"/><text x="110" y="45" text-anchor="middle" font-size="15">2</text></g><g data-b="b1" aria-label="3 numaralı parça"><rect x="82" y="96" width="56" height="44" rx="6" class="box"/><text x="110" y="123" text-anchor="middle" font-size="15">3</text></g><g data-b="c" aria-label="4 numaralı parça"><circle cx="170" cy="40" r="22" class="box"/><text x="170" y="45" text-anchor="middle" font-size="15">4</text></g><g data-b="s2" aria-label="5 numaralı parça"><polygon points="230,14 258,40 230,66 202,40" class="box"/><text x="230" y="45" text-anchor="middle" font-size="15">5</text></g><g data-b="b2" aria-label="6 numaralı parça"><rect x="202" y="96" width="56" height="44" rx="6" class="box"/><text x="230" y="123" text-anchor="middle" font-size="15">6</text></g><g data-b="d" aria-label="7 numaralı parça"><circle cx="310" cy="40" r="22" class="box"/><text x="310" y="45" text-anchor="middle" font-size="15">7</text></g></svg>', dogru: ['s1', 's2'],
+        hint: 'Her nükleotitte fosfat da baz da aynı parçaya bağlanır. Hem omurgaya hem de dışarıdaki bir parçaya bağlı olan hangisi?',
+        why: '2 ve 5 hem fosfatlara hem de bazlara bağlı; bu yüzden şekerdir. Yuvarlaklar fosfat, alttaki kutular bazdır. Bazlar şekere bağlanır, fosfata değil.',
+        whyV: 'İki ve beş numaralı parçalar hem fosfatlara hem de bazlara bağlı; bu yüzden şekerdir. Yuvarlaklar fosfat, alttaki kutular bazdır. Bazlar şekere bağlanır, fosfata değil.' } },
     { t: 'İkili sarmal ve eşleşme kuralı',
       base: '<svg class="an-svg" viewBox="0 0 340 180" role="img" aria-label="DNA merdiveni: adenin timinle, guanin sitozinle eşleşir">' +
         '<line x1="20" y1="40" x2="320" y2="40" class="st rv m1" stroke-width="5"/><line x1="20" y1="140" x2="320" y2="140" class="st rv m1" stroke-width="5"/>' +
@@ -88,12 +101,20 @@
         { s: 'Nükleotitler art arda bağlanınca bir iplik oluşur. DNA’da böyle iki iplik var. Kenarlar şeker ve fosfattan oluşan omurga.', on: '.m1' },
         { s: 'Bazlar ise içe doğru bakar ve karşı iplikteki bazla eşleşir. Tıpkı bir merdivenin basamakları gibi.', on: '.m2' },
         { s: 'Kural çok net: adenin yalnızca timinle, guanin yalnızca sitozinle eşleşir. Bu kural bütün canlılarda aynıdır.', on: '.m3' },
-        { s: 'Bu merdiven kendi etrafında burulunca ikili sarmal oluşur. Modeli 1953’te Watson ve Crick ortaya koydu.', v: 'Bu merdiven kendi etrafında burulunca ikili sarmal oluşur. Modeli bin dokuz yüz elli üçte Watson ve Crick ortaya koydu.' },
+        { s: 'Bu merdiven kendi etrafında burulunca ikili sarmal oluşur. Modeli 1953’te <i lang="en">Watson</i> ve <i lang="en">Crick</i> ortaya koydu.' },
         { s: 'Bir ipucu: karşı ipliği yazmak için her bazın karşısına eşini yazman yeterli. T A C G G A T dizisinin karşısı A T G C C T A olur.',
           v: 'Bir ipucu: karşı ipliği yazmak için her bazın karşısına eşini yazman yeterli. Timinin karşısına adenin, adeninin karşısına timin, sitozinin karşısına guanin gelir.',
           h: '<div class="an-ex"><span class="an-l">İplik: &nbsp;T A C G G A T</span><span class="an-l">Karşısı: <b class="an-ek">A T G C C T A</b></span></div>' }
       ] },
 
+    { t: 'Boşluk: karşı ipliği yaz',
+      steps: [{ s: 'Eşleşme kuralını uygulama zamanı. Üstteki ipliğin karşısına gelecek bazları sırayla yerleştir.' }],
+      ia: { tip: 'bosluk', q: '<p>Eşleşme kuralına göre karşı ipliği tamamla.</p>',
+        metin: '1. iplik:  G  A  T  C<br>2. iplik:  [_]  [_]  [_]  [_]',
+        secenek: ['A', 'T', 'G', 'C', 'U'], cevap: ['C', 'T', 'A', 'G'],
+        hint: 'Adenin yalnızca timinle, guanin yalnızca sitozinle eşleşir. Her bazın karşısına eşini koy.',
+        why: 'G’nin karşısı C, A’nın karşısı T, T’nin karşısı A, C’nin karşısı G. U harfi DNA’da bulunmaz.',
+        whyV: 'Guaninin karşısına sitozin, adeninin karşısına timin, timinin karşısına adenin, sitozinin karşısına guanin gelir. U harfiyle gösterilen urasil, DNA’da bulunmaz.' } },
     { t: 'DNA’da sayma kuralları',
       base: '<table class="an-tbl"><tr><th>Her zaman doğru</th><th>Örnek: 100 nükleotit, 30 A</th></tr>' +
         '<tr class="rv c1"><td>A sayısı = T sayısı</td><td>T = 30</td></tr>' +
@@ -143,6 +164,16 @@
           h: '<table class="an-tbl"><tr><th>Eşlenme sayısı</th><th>1</th><th>2</th><th>3</th><th>n</th></tr><tr><td>Oluşan DNA</td><td>2</td><td>4</td><td>8</td><td>2<sup>n</sup></td></tr><tr><td>Eski iplik taşıyan DNA</td><td>2</td><td>2</td><td>2</td><td>hep 2</td></tr></table>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı: eşlenme',
+      steps: [{ s: 'Eşlenmenin tuzaklarını tarayalım. Her ifadeye doğru ya da yanlış de.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>DNA’nın kendini eşlemesi için her ifadeye karar ver.</p>',
+        ifadeler: [
+          { m: 'Yeni iplik, kalıp aldığı eski ipliğin aynısıdır.', d: false, a: 'Tamamlayıcısıdır; aynısı karşıdaki eski ipliktir.' },
+          { m: 'Oluşan iki DNA’nın her birinde bir eski, bir yeni iplik vardır.', d: true, a: 'Eski iplikler parçalanmaz, kalıp olur.' },
+          { m: 'Eşlenme sırasında sitoplazmadaki serbest nükleotit sayısı azalır.', d: true, a: 'Yeni iplikler bu nükleotitlerle yapılır.' },
+          { m: 'Eşlenme bittiğinde çekirdekteki DNA miktarı değişmez.', d: false, a: 'DNA iki katına çıkar, yani artar.' }],
+        hint: 'Fermuar açılınca her eski iplik ne oluyor: kalıp mı, atık mı? Yeni iplikler neyle yapılıyor?',
+        why: 'Her eski iplik kalıp olur, karşısına tamamlayıcı yeni iplik dizilir. Serbest nükleotitler azalır, DNA miktarı artar; iki DNA da ilkinin aynısıdır.' } },
     { t: 'Kalıtımın dili',
       base: '<table class="an-tbl"><tr><th>Kavram</th><th>Anlamı</th><th>Örnek</th></tr>' +
         '<tr class="rv l1"><td><b>Alel</b></td><td>gen çiftinin her biri; biri anneden, biri babadan</td><td>M ve m</td></tr>' +
@@ -162,6 +193,14 @@
           h: '<div class="an-trap">Çekinik fenotip → genotip <b>kesin</b> (mm). Baskın fenotip → MM <b>ya da</b> Mm, tek başına bilinemez. Baskın “daha sık görülen” ya da “daha iyi” demek değildir.</div>' }
       ] },
 
+    { t: 'Eşleştir: genotip ve görünüş',
+      steps: [{ s: 'Yeni kavramları pekiştirelim. Bezelyede büyük M mor, küçük m beyaz. Her terimi ya da genotipi doğru karşılığıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Bezelyede M mor, m beyaz. Her soldakini karşılığıyla eşleştir.</p>', solBaslik: 'Terim / genotip', sagBaslik: 'Karşılığı',
+        sol: ['MM', 'Mm', 'mm', 'Fenotip', 'Alel'],
+        sag: ['Saf döl mor', 'Melez mor', 'Saf döl beyaz', 'Gözle görülen özellik', 'Gen çiftinin her biri'],
+        hint: 'Bir büyük harf varsa görünüş baskın olur. İki harf aynıysa saf döl, farklıysa melezdir.',
+        why: 'MM ve Mm ikisi de mor görünür; MM saf döl, Mm melezdir. Beyaz görünmek için iki küçük m gerekir. Fenotip görünüş, alel gen çiftinin her biridir.',
+        whyV: 'Büyük M büyük M ile büyük M küçük m, ikisi de mor görünür; birincisi saf döl, ikincisi melezdir. Beyaz görünmek için iki küçük m gerekir. Fenotip görünüştür, alel ise gen çiftinin her biridir.' } },
     { t: 'Olasılık tablosu: melez × melez',
       base: '<table class="an-tbl" style="text-align:center;max-width:260px;margin:8px auto"><tr><th></th><th style="text-align:center">M</th><th style="text-align:center">m</th></tr>' +
         '<tr><th style="text-align:center">M</th><td class="rv q1" style="text-align:center"><b>MM</b><br><small>mor</small></td><td class="rv q2" style="text-align:center"><b>Mm</b><br><small>mor</small></td></tr>' +
@@ -176,6 +215,14 @@
         { s: 'Şunu unutma: bu tablo bir tahmin. Dört yavru doğarsa tam üç mor bir beyaz çıkmak zorunda değil. Her doğum da öncekilerden bağımsızdır.' }
       ] },
 
+    { t: 'Kaydır: kaç beyaz beklenir?',
+      steps: [{ s: 'Tabloyu yeni bir çaprazlamada kullan. Melez mor bir bezelye, beyaz çiçekli bir bezelyeyle çaprazlanıyor ve 20 yavru oluşuyor. Yaklaşık kaçının beyaz olmasını bekleriz?' }],
+      ia: { tip: 'kaydir', q: '<p><b>Mm × mm</b> çaprazlamasında 20 yavru oluşuyor. Yaklaşık kaçı <b>beyaz</b> beklenir?</p>',
+        min: 0, max: 20, adim: 1, cevap: 10, tol: 0, birim: ' yavru', etiket: [0, 5, 10, 15, 20],
+        hint: 'İki satır, iki sütunlu tabloyu kur: bir ebeveyn M ya da m verir, beyaz olan yalnızca m verir. Kaç kutuda iki küçük m var?',
+        hintV: 'İki satır, iki sütunlu tabloyu kur: melez ebeveyn büyük M ya da küçük m verir, beyaz olan yalnızca küçük m verir. Kaç kutuda iki küçük m var?',
+        why: 'Tablonun 4 kutusundan 2’si mm, yani yarısı beyaz: 20’nin yarısı 10. Bu bir olasılıktır; gerçek sayı biraz farklı çıkabilir.',
+        whyV: 'Tablonun dört kutusundan ikisinde iki küçük m var, yani yavruların yarısı beyaz: yirminin yarısı on. Bu bir olasılıktır; gerçek sayı biraz farklı çıkabilir.' } },
     { t: 'Yavrudan ebeveyne: ters düşünme',
       steps: [
         { s: 'Çıkmış sorularda genelde tersi sorulur: yavrulara bakıp ebeveynlerin genotipini bulursun. Bunun için birkaç altın kural var.' },
@@ -215,6 +262,15 @@
         { s: 'Deney sorularında, farkın çevreden geldiğini göstermek için genetik yapısı aynı bireyler kullanılır: aynı bitkinin çelikleri ya da tek yumurta ikizleri gibi.' }
       ] },
 
+    { t: 'Grupla: mutasyon mu, modifikasyon mu?',
+      steps: [{ s: 'Ayırt etme sorusunu sen sor: DNA dizilimi değişti mi? Her örneği doğru kutuya yerleştir.' }],
+      ia: { tip: 'grup', q: '<p>Her değişimi doğru kutuya yerleştir.</p>', gruplar: ['Mutasyon', 'Modifikasyon'],
+        ogeler: [{ m: 'Radyasyonla oluşan altı parmaklılık', g: 0 }, { m: 'Soğukta kararan tavşan kulağı', g: 1 },
+          { m: 'Güneşte bronzlaşan ten', g: 1 }, { m: 'Albinizm (renk maddesi yok)', g: 0 },
+          { m: 'Sporla büyüyen kas', g: 1 }, { m: 'Eşlenme hatasıyla baz değişimi', g: 0 },
+          { m: 'Toprak pH’sine göre ortanca rengi', g: 1 }],
+        hint: 'Etken çevresel olsa bile karar veren soru şu: bu özellik DNA’ya yazıldı mı, yavruya geçer mi?',
+        why: 'Radyasyon da çevresel bir etken ama DNA’yı değiştirdiği için mutasyondur. Kas, bronz ten, tavşan kulağı ve ortanca rengi çevreyle oluşur, DNA değişmez: modifikasyon.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Aynı bitkiden alınan çelikler 18 °C’de ve 32 °C’de yetiştiriliyor. 18 °C’dekiler <b>kırmızı</b>, 32 °C’dekiler <b>beyaz</b> çiçek açıyor. Beyaz çiçekli bitkinin tohumları 18 °C’de ekilince kırmızı çiçekli bitkiler oluşuyor. Bu durum için hangisi <b>doğrudur</b>?</p>',
         c: ['Yüksek sıcaklık DNA’nın nükleotit dizilimini değiştirmiştir.', 'Çiçek rengindeki değişim bir modifikasyondur.', 'Beyaz çiçek özelliği yavrulara aktarılmıştır.', 'Bitki ortama uymak için genlerini değiştirmiştir.'], a: 'B',
@@ -252,6 +308,13 @@
         { s: 'Biyoteknolojinin yararları var: verimli ve dayanıklı bitkiler, ilaç ve hormon üretimi. Ama biyolojik çeşitliliğin azalması ve etik sorunlar gibi riskleri de var.' }
       ] },
 
+    { t: 'Ele: biyoteknoloji değil',
+      steps: [{ s: 'Son etkinlik: aşağıdakilerden biyoteknoloji uygulaması olmayanları ele.' }],
+      ia: { tip: 'eleme', q: '<p><b>Biyoteknoloji uygulaması olmayanları</b> ele.</p>',
+        ogeler: ['İnsülin üreten bakteri', 'Klonlanan koyun', 'Kuraklığa dayanıklı gen aktarılmış buğday', 'İlaca dirençli böceklerin çoğalması', 'Soğukta kararan tavşan kürkü', 'Gen tedavisi'],
+        ele: [3, 4],
+        hint: 'Biyoteknolojide insan bir amaç için canlıyı ya da genlerini kullanır. Hangilerinde insan müdahalesi yok?',
+        why: 'Böceklerin dirençli hâle gelmesi doğal seçilim, tavşan kürkü modifikasyondur; ikisinde de insan genlere müdahale etmez. Diğer dördü biyoteknoloji uygulamasıdır.' } },
     { t: 'Ara soru', cp: {
         q: '<p><b>Siyah</b> bir koyunun vücut hücresinden alınan çekirdek, <b>beyaz</b> bir koyunun çekirdeği çıkarılmış yumurta hücresine aktarılıyor. Oluşan hücre <b>kahverengi</b> bir koyunun rahmine yerleştiriliyor. Doğan kuzu ile ilgili hangisi <b>doğrudur</b>?</p>',
         c: ['Kuzu, yumurtayı veren beyaz koyunun genetik kopyasıdır.', 'Kuzu, kahverengi koyunun genlerini taşır.', 'Kuzu, siyah koyunla aynı genetik yapıya sahiptir.', 'Kuzu, döllenme sonucu oluşmuştur.'], a: 'C',

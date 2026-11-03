@@ -36,6 +36,10 @@
           h: '<div class="an-ex"><span class="an-l">2 kare ↔ 10 kg &nbsp;⇒&nbsp; 1 kare ↔ 5 kg</span></div>' }
       ] },
 
+    { t: 'Dokun: grafikten iki sütun',
+      steps: [{ s: 'Ölçeği okuyarak kare sayısını kitaba çevir. Toplamı 40 kitap olan iki şubeyi bul ve ikisine de dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>Okudukları kitapların toplamı <b>40</b> olan <b>iki</b> şubeye dokun, sonra Kontrol et’e bas.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 196" role="img" aria-label="Şubelerin okuduğu kitap sayıları sütun grafiği: 8A 5 kare, 8B 3 kare, 8C 4 kare, 8D 7 kare; bir kare 4 kitap"><path class="ln" d="M44 168 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 151 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 134 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 117 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 100 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 83 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 66 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 49 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 32 H330" style="stroke-width:.7;opacity:.6"/><path class="ln" d="M44 168 V20" style="stroke-width:1.4"/><path class="ln" d="M44 168 H330" style="stroke-width:1.4"/><text x="4" y="16" font-size="13" class="mut">kitap</text><text x="330" y="16" font-size="14" text-anchor="end" class="acc" font-weight="700">1 kare = 4 kitap</text><g data-b="8a" aria-label="8A sütunu"><rect x="64" y="83" width="44" height="85" rx="3" class="boxa"/><text x="86" y="188" text-anchor="middle" font-size="15" font-weight="700">8A</text></g><g data-b="8b" aria-label="8B sütunu"><rect x="132" y="117" width="44" height="51" rx="3" class="boxa"/><text x="154" y="188" text-anchor="middle" font-size="15" font-weight="700">8B</text></g><g data-b="8c" aria-label="8C sütunu"><rect x="200" y="100" width="44" height="68" rx="3" class="boxa"/><text x="222" y="188" text-anchor="middle" font-size="15" font-weight="700">8C</text></g><g data-b="8d" aria-label="8D sütunu"><rect x="268" y="49" width="44" height="119" rx="3" class="boxa"/><text x="290" y="188" text-anchor="middle" font-size="15" font-weight="700">8D</text></g></svg>', dogru: ['8b', '8d'], hint: '40 kitap kaç kare eder? Ölçeğe böl, sonra kare sayıları o toplamı veren iki sütunu ara.', why: '40 ÷ 4 = 10 kare. 8B 3 kare, 8D 7 kare: 3 + 7 = 10 kare, yani 12 + 28 = 40 kitap. 8A ile 8C 9 kare, yani 36 kitap eder.', whyV: '40 bölü 4, 10 kare eder. sekiz B 3 kare, sekiz D 7 kare; toplam 10 kare, yani 12 artı 28, 40 kitap. sekiz A ile sekiz C ise 9 kare, 36 kitap eder.' } },
+
     { t: 'Sütun grafiği soru kalıpları',
       base: '<table class="an-tbl"><tr><th>Soru</th><th>Ne yaparız?</th></tr>' +
         '<tr class="rv k1"><td>“kaç kg fazla?”</td><td>iki değeri bul, çıkar</td></tr>' +
@@ -50,6 +54,10 @@
         { s: 'Ortalama verilmiş, bir sütun silinmişse: toplamı bul, bilinenleri çıkar, kalan değeri ölçeğe böl.', on: '.k4' },
         { s: 'Sıcaklık gibi verilerde sütun sıfırın altına inebilir. 6 ile −8 arasındaki fark 14 derecedir.', v: 'Sıcaklık gibi verilerde sütun sıfırın altına inebilir. Altı ile eksi sekiz arasındaki fark, on dört derecedir.' }
       ] },
+
+    { t: 'Kaydır: silinen sütun',
+      steps: [{ s: 'Ortalaması verilen bir grafikte bir sütun silinmiş. Eksik değeri hesapla ve kaydırıcıyla göster.' }],
+      ia: { tip: 'kaydir', q: '<p>Bir sınıfın 4 haftada topladığı kâğıtların ortalaması <b>30 kg</b>. İlk üç hafta 24, 35 ve 28 kg toplandı. 4. haftada kaç kg toplandı?</p>', min: 0, max: 60, adim: 1, cevap: 33, birim: 'kg', etiket: [0, 10, 20, 30, 40, 50, 60], hint: 'Önce toplamı bul: ortalama çarpı hafta sayısı. Sonra bilinen haftaları çıkar.', why: 'Toplam 30 · 4 = 120 kg. Bilinenler 24 + 35 + 28 = 87 kg. Kalan 120 − 87 = 33 kg.', whyV: 'Toplam, 30 çarpı 4, yani 120 kilogram. Bilinen üç hafta 87 kilogram eder. Kalan 120 eksi 87, yani 33 kilogram.' } },
 
     { t: 'Çizgi grafiği: değişimi okumak',
       base: '<svg class="an-svg" viewBox="0 0 330 185" role="img" aria-label="İki çizgili grafik: K ve L barajlarının doluluk oranları; Nisan ayında çizgiler kesişiyor"><text x="165" y="12" font-size="13" text-anchor="middle" font-weight="700">Grafik: Baraj doluluk oranı (%)</text><path class="ln" d="M40 116H320M40 92H320M40 68H320M40 44H320M40 20H320" stroke-width=".6" opacity=".6"/><path class="ln" d="M40 14V140H324" stroke-width="1.6"/><text x="36" y="144" font-size="10.5" text-anchor="end" class="mut">0</text><text x="36" y="120" font-size="10.5" text-anchor="end" class="mut">20</text><text x="36" y="96" font-size="10.5" text-anchor="end" class="mut">40</text><text x="36" y="72" font-size="10.5" text-anchor="end" class="mut">60</text><text x="36" y="48" font-size="10.5" text-anchor="end" class="mut">80</text><text x="36" y="24" font-size="10.5" text-anchor="end" class="mut">100</text><text x="60" y="156" font-size="11.5" text-anchor="middle">Oca</text><text x="110" y="156" font-size="11.5" text-anchor="middle">Şub</text><text x="160" y="156" font-size="11.5" text-anchor="middle">Mar</text><text x="210" y="156" font-size="11.5" text-anchor="middle">Nis</text><text x="260" y="156" font-size="11.5" text-anchor="middle">May</text><text x="310" y="156" font-size="11.5" text-anchor="middle">Haz</text><path class="st dr l1" d="M60 98 L110 80 L160 68 L210 44 L260 38 L310 50"/><circle cx="60" cy="98" r="3.5" class="rv l1" style="fill:var(--c)"/><circle cx="110" cy="80" r="3.5" class="rv l1" style="fill:var(--c)"/><circle cx="160" cy="68" r="3.5" class="rv l1" style="fill:var(--c)"/><circle cx="210" cy="44" r="3.5" class="rv l1" style="fill:var(--c)"/><circle cx="260" cy="38" r="3.5" class="rv l1" style="fill:var(--c)"/><circle cx="310" cy="50" r="3.5" class="rv l1" style="fill:var(--c)"/><path class="st2 dr l2" d="M60 68 L110 68 L160 62 L210 44 L260 50 L310 56" stroke-dasharray="6 4"/><circle cx="60" cy="68" r="3.5" class="rv l2" style="fill:var(--noteline)"/><circle cx="110" cy="68" r="3.5" class="rv l2" style="fill:var(--noteline)"/><circle cx="160" cy="62" r="3.5" class="rv l2" style="fill:var(--noteline)"/><circle cx="210" cy="44" r="3.5" class="rv l2" style="fill:var(--noteline)"/><circle cx="260" cy="50" r="3.5" class="rv l2" style="fill:var(--noteline)"/><circle cx="310" cy="56" r="3.5" class="rv l2" style="fill:var(--noteline)"/><text x="46" y="102" font-size="12" font-weight="700" class="acc rv l1">K</text><text x="46" y="72" font-size="12" font-weight="700" class="rv l2" style="fill:var(--noteline)">L</text><circle cx="210" cy="44" r="9" class="st dr l3"/><path class="st dr l4" d="M160 68 L210 44" style="stroke-width:7;opacity:.45"/><text x="180" y="172" font-size="11" text-anchor="middle" class="mut">aylar</text></svg>',
@@ -71,6 +79,14 @@
         { s: 'Bazı grafikler “o güne kadarki toplamı” gösterir. Bu birikimli grafikte çizgi hiç inmez. O günkü miktar, iki noktanın farkıdır.',
           h: '<div class="an-tip">Birikimli grafikte yatay parça “o gün hiç yapılmadı” demektir.</div>' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Çizgi grafiklerinde en çok yapılan okuma hataları bunlar. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Çizgi grafikleri için her ifadeye karar ver.</p>', ifadeler: [
+            { m: 'Çizginin en yüksek olduğu ay, en çok artışın olduğu aydır.', d: false, a: 'Değer başka, değişim başka: en çok artış en dik çıkan parçadadır.' },
+            { m: 'İki çizginin kesiştiği ayda iki değer birbirine eşittir.', d: true, a: 'Kesişim noktası iki çizgide de aynı değeri gösterir.' },
+            { m: 'Yatay bir parça, o aralıkta hiç değişim olmadığını gösterir.', d: true, a: 'Değer aynı kaldıysa çizgi ne çıkar ne iner.' },
+            { m: '“O güne kadarki toplam” grafiğinde çizgi aşağı inebilir.', d: false, a: 'Birikimli toplam azalmaz; çizgi ya çıkar ya yatay kalır.' }], hint: 'Bir noktanın yüksekliği değeri, iki nokta arasındaki diklik ise değişimi gösterir. Birikimli grafikte neler toplanıyor, düşün.', why: 'Çizgide yükseklik değeri, eğiklik değişimi anlatır. Kesişimde değerler eşit, yatay parçada değişim yoktur. Birikimli grafik toplamı gösterdiği için hiç inmez.' } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Bir fidanın boyu her hafta sonunda ölçülmüştür:</p><table class="an-tbl" style="text-align:center"><tr><th>Hafta</th><th>1.</th><th>2.</th><th>3.</th><th>4.</th><th>5.</th></tr><tr><td>Boy (cm)</td><td>12</td><td>15</td><td>21</td><td>24</td><td>25</td></tr></table><p>Fidan en çok <b>hangi hafta</b> uzamıştır?</p>',
@@ -99,6 +115,10 @@
         { s: 'Toplam verilmezse de bulunur. 150° ile 90° arasında 24 kişi fark varsa, 60° = 24 kişi, 360° = 144 kişi.', v: 'Toplam verilmezse de bulunur. Yüz elli derece ile doksan derece arasında yirmi dört kişi fark varsa; altmış derece yirmi dört kişi, üç yüz altmış derece de yüz kırk dört kişi.',
           h: '<div class="an-ex"><span class="an-l">150° − 90° = 60° ↔ 24 kişi</span><span class="an-l">360° = 6 · 60° ↔ 6 · 24 = <b>144 kişi</b></span></div>' }
       ] },
+
+    { t: 'Eşleştir: açıdan kişiye',
+      steps: [{ s: 'Önce bir kişinin kaç derece olduğunu bul. Sonra her dilimi kişi sayısıyla eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>90 kişilik bir anketin daire grafiğinde her dilimi kişi sayısıyla eşleştir.</p>', solBaslik: 'Dilim', sagBaslik: 'Kişi', sol: ['120°', '36°', '80°', '72°', '52°'], sag: ['30', '9', '20', '18', '13'], hint: '360 derece 90 kişiyse 1 kişi kaç derece? Her açıyı bu sayıya böl.', why: '360 ÷ 90 = 4, yani 1 kişi 4°. 120 ÷ 4 = 30, 36 ÷ 4 = 9, 80 ÷ 4 = 20, 72 ÷ 4 = 18, 52 ÷ 4 = 13. Toplam 90, kontrol tamam.', whyV: '360 bölü 90, 4 eder; yani 1 kişi 4 derece. 120 bölü 4, 30; 36 bölü 4, 9; 80 bölü 4, 20; 72 bölü 4, 18; 52 bölü 4, 13. Hepsinin toplamı 90, kontrol tamam.' } },
 
     { t: 'Çözümlü örnek: farktan toplama',
       steps: [
@@ -140,6 +160,10 @@
         { s: 'Tersine, sırası olmayan anket seçeneklerini çizgiyle göstermek de yanlış bir artış-azalış izlenimi verir.' }
       ] },
 
+    { t: 'Boşluk doldur: tablodan daireye',
+      steps: [{ s: 'Tablodaki veriyi daire grafiğine çevir. Önce bir kişinin kaç derece ettiğini bul, sonra her dilimin açısını yerleştir.' }],
+      ia: { tip: 'bosluk', q: '<p>30 öğrencinin sevdiği renk: <b>kırmızı 15, mavi 6, yeşil 9</b>. Daire grafiğindeki açıları bul.</p>', metin: 'Kırmızı: [_]°<br>Mavi: [_]°<br>Yeşil: [_]°', secenek: ['180', '72', '108', '150', '60', '90', '36'], cevap: ['180', '72', '108'], hint: '360 dereceyi 30 öğrenciye böl: bir öğrenci kaç derece? Sonra her rengin öğrenci sayısıyla çarp.', why: '360 ÷ 30 = 12, yani 1 öğrenci 12°. Kırmızı 15 · 12 = 180°, mavi 6 · 12 = 72°, yeşil 9 · 12 = 108°. Toplam 360°.', whyV: '360 bölü 30, 12 eder; bir öğrenci 12 derece. Kırmızı 15 çarpı 12, 180 derece; mavi 6 çarpı 12, 72 derece; yeşil 9 çarpı 12, 108 derece. Toplam 360.' } },
+
     { t: 'Güçlü yönler ve yanıltıcı grafikler',
       base: '<table class="an-tbl"><tr><th>Gösterim</th><th>En iyi yaptığı iş</th></tr>' +
         '<tr><td><b>Tablo</b></td><td>kesin değerler</td></tr><tr><td><b>Sütun</b></td><td>kategorileri karşılaştırmak</td></tr>' +
@@ -150,6 +174,18 @@
         { s: 'Eksen 50’den başlayınca L, K’nin üç katı gibi duruyor. Oysa fark sadece 4 birim.', v: 'Eksen elliden başlayınca L, K’nin üç katı gibi duruyor. Oysa fark sadece dört birim.',
           h: '<div class="an-trap">Eksen 0’dan başlamıyorsa sütun boylarının oranı, değerlerin oranı <b>değildir</b>. Farklı ölçekli iki grafiği de boyla karşılaştırma.</div>' }
       ] },
+
+    { t: 'Grupla: hangi gösterim uygun?',
+      steps: [{ s: 'Her veri için en uygun gösterimi seç. Karşılaştırma mı, zamanla değişim mi, yoksa bütünün parçaları mı, ona bak.' }],
+      ia: { tip: 'grup', q: '<p>Her veriyi en uygun grafik türüne yerleştir.</p>', gruplar: ['Sütun', 'Çizgi', 'Daire'], ogeler: [
+            { m: 'Bir fidanın 8 haftalık boyu', g: 1 },
+            { m: 'Dört ilin nüfusu', g: 0 },
+            { m: 'Aile bütçesinin harcama payları', g: 2 },
+            { m: 'Gün boyunca saat saat sıcaklık', g: 1 },
+            { m: 'Şubelerin topladığı atık kâğıt', g: 0 },
+            { m: 'Bir günün 24 saatinin dağılımı', g: 2 },
+            { m: 'Sınıftaki göz renklerinin yüzdesi', g: 2 },
+            { m: 'Takımların attığı gol sayısı', g: 0 }], hint: 'Sütun karşılaştırır, çizgi zamanla değişimi gösterir, daire ise bir bütünün paylarını gösterir.', why: 'Ayrı grupları karşılaştırmak sütunun işi. Zaman içindeki değişim çizgiyle, bir bütünün payları da daire grafiğiyle gösterilir: bütçe, 24 saat ve yüzdeler bir bütün oluşturur.' } },
 
     { t: 'LGS’nin favorisi: iki grafik birlikte',
       steps: [

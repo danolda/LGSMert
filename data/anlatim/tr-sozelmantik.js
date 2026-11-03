@@ -53,6 +53,17 @@
         { s: 'Bir hat açıldığında yalnızca bir hat varsa, o hat ikinci sıradadır. Birinci değil! “Önce ve sonra hat vardı” sözü ise sadece uçları eler.' }
       ] },
 
+    { t: 'Koşul sözlerini doğru oku',
+      steps: [{ s: 'Koşul ifadeleriyle ilgili dört yorum var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>Her yorum için karar ver.</p>',
+        ifadeler: [{ m: '“Ece, Fatih’ten öndedir.” bilgisi, Ece ile Fatih’in yan yana olduğunu gösterir.', d: false, a: '“Hemen” yok; araya başkaları girebilir.' }, { m: '“Gül ile Can yan yanadır.” bilgisinde iki sıra da denenmelidir: Gül-Can ya da Can-Gül.', d: true, a: 'Yan yana olmak sırayı belirlemez.' }, { m: '“Bu hat açıldığında yalnızca bir hat vardı.” bilgisi, hattın ikinci sırada açıldığını gösterir.', d: true, a: 'Önceden bir hat varmış: bu hat ikinci.' }, { m: '“Öncesinde ve sonrasında açılan hatlar vardı.” bilgisi, hattın tam ortada olduğunu gösterir.', d: false, a: 'Yalnızca ilk ve son sırayı eler.' }],
+        hint: 'Her sözcüğü tart: “hemen” var mı, “yan yana” sırayı söylüyor mu, “yalnızca bir hat vardı” sözü kendisini de sayıyor mu?',
+        whyV: 'Önündedir sözü bitişiklik bildirmez, yan yana sözü de sırayı belirlemez. Açıldığında bir hat bulunan hat ikincidir; önce ve sonra hat bulunması ise yalnızca iki ucu eler.',
+        why: '“Önündedir” bitişiklik bildirmez, “yan yana” sırayı belirlemez. Açıldığında bir hat bulunan hat ikincidir; önce ve sonra hat bulunması ise yalnızca iki ucu eler.'
+      } },
+
     { t: 'Sıralama: zinciri kur',
       base: '<svg class="an-svg" viewBox="0 0 340 130" role="img" aria-label="Dört kişilik sıralama: Ali, Defne, Can, Banu">' +
         '<text x="50" y="18" font-size="12" text-anchor="middle" class="mut">1.</text><text x="130" y="18" font-size="12" text-anchor="middle" class="mut">2.</text><text x="210" y="18" font-size="12" text-anchor="middle" class="mut">3.</text><text x="290" y="18" font-size="12" text-anchor="middle" class="mut">4.</text>' +
@@ -70,6 +81,18 @@
         { s: 'Ali ikinci olsaydı Defne üçüncü olurdu ve Can’a, Ali’den sonra yer kalmazdı. O hâlde Ali birinci, Defne ikinci.', on: '.q3' },
         { s: 'Geriye üçüncü sıra kalıyor, orası da Can’ın. Bütün koşulları bir kez daha denetle: hepsi sağlanıyor.', on: '.q4' }
       ] },
+
+    { t: 'Zinciri kur ve sırala',
+      steps: [{ s: 'Koşullara göre beş kişiyi baştan sona sırala. Kesin bilgiden başla.' }],
+      ia: {
+        tip: 'sirala',
+        q: '<p>Ayşe, Burak, Cansu, Deniz ve Emre bir sırada bekliyor.<br>· Emre en öndedir.<br>· Cansu, Burak’ın hemen ardındadır.<br>· Deniz, Ayşe’den sonradır ama en sonda değildir.<br>· Burak, Deniz’den sonradır.</p>',
+        ust: 'en önde',
+        alt: 'en sonda',
+        ogeler: ['Emre', 'Ayşe', 'Deniz', 'Burak', 'Cansu'],
+        hint: 'Önce Emre’yi yerleştir. Sonra “hemen ardında” olan çifti tek bir blok gibi düşün ve “sonradır” bilgileriyle bir zincir kur.',
+        why: 'Ayşe, Deniz’den; Deniz de Burak’tan önce geliyor. Cansu, Burak’ın hemen ardında. Zincir Ayşe, Deniz, Burak, Cansu; başa Emre gelince sıra tamamlanır. Deniz sonda olmadığı için bu koşul da sağlanıyor.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Ece, Fatih, Gül ve Halil bir sırada bekliyor.</p><p>· Gül, Fatih’in hemen önündedir.<br>· Halil ilk sırada değildir.<br>· Ece, Halil’den sonradır.</p><p>Bu bilgilere göre aşağıdakilerden hangisi <b>kesinlikle doğrudur</b>?</p>',
@@ -93,6 +116,19 @@
         { s: 'Kesin soruluyorsa olabilir olan şık elenir. Ve dikkat: Yargının bir parçası doğru diye tamamı kesin olmaz.', on: '.m4',
           h: '<div class="an-trap">Puan tablosu tuzağı: Tablo maç sonuçlarını tek tek vermez. Berabere biten maç sayısı = toplam beraberlik ÷ 2.</div>' }
       ] },
+
+    { t: 'Tablosuz eşleştirme',
+      steps: [{ s: 'Bilgileri kullanarak her kişiyi uğraştığı etkinlikle eşleştir. Tek seçeneği kalan kişiden başla.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>Kerem, Lale, Mert ve Nil’in her biri resim, müzik, dans ve tiyatrodan farklı birine katılıyor.<br>· Lale; resim, müzik ve dansa katılmıyor.<br>· Mert ne dansa ne de resme katılıyor.<br>· Nil dansa katılmıyor.</p>',
+        solBaslik: 'Kişi',
+        sagBaslik: 'Etkinlik',
+        sol: ['Kerem', 'Lale', 'Mert', 'Nil'],
+        sag: ['dans', 'tiyatro', 'müzik', 'resim'],
+        hint: 'Lale’nin tek seçeneği kalıyor. Onu yerleştirince Mert’e kaç seçenek kalır? Sonra Nil’e geç.',
+        why: 'Lale yalnızca tiyatroya katılabilir. Mert dans ve resme katılmıyor, tiyatro da dolu: Mert müzik. Nil dansa katılmıyor, geriye resim kalıyor. Kerem’e de dans düşüyor.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Ada, Barış ve Cem’in her biri yüzme, tenis ve satrançtan farklı birini yapıyor.</p><p>· Ada yüzme yapmıyor.<br>· Barış tenis oynamıyor.<br>· Cem satranç oynamıyor.</p><p>Bu bilgilere göre aşağıdakilerden hangisi <b>kesinlikle yanlıştır</b>?</p>',
@@ -131,6 +167,17 @@
           h: '<div class="an-trap">Tek zamanlı oran grafiği → “yıldan yıla azalıyor” denemez.</div>' }
       ] },
 
+    { t: 'Değişim grafiğini oku',
+      steps: [{ s: 'Grafik, ağaç sayısının geçen yıla göre değişimini gösteriyor. Ağaç sayısı artan ilçelerin hepsine dokun, sonra Kontrol et’e bas.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p>Grafik, dört ilçedeki ağaç sayısının <b>geçen yıla göre değişimini</b> gösteriyor. Ağaç sayısı <b>artan</b> ilçelere dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 214" role="group" aria-label="Dört ilçede ağaç sayısının geçen yıla göre değişimi"><text x="10" y="16" font-size="13" class="mut">değişim (bin ağaç)</text><path class="ln" d="M28 30 H332"/><text x="24" y="34" font-size="12" text-anchor="end" class="mut">+40</text><path class="ln" d="M28 70 H332"/><text x="24" y="74" font-size="12" text-anchor="end" class="mut">+20</text><path class="ln" d="M28 150 H332"/><text x="24" y="154" font-size="12" text-anchor="end" class="mut">−20</text><path class="ln" d="M28 190 H332"/><text x="24" y="194" font-size="12" text-anchor="end" class="mut">−40</text><text x="24" y="114" font-size="12" text-anchor="end" class="mut">0</text><path class="st2" d="M28 110 H332" pointer-events="none"/><g data-b="ova" aria-label="Ova ilçesi, değişim +30"><rect x="34" y="26" width="64" height="168" rx="9" class="box" fill-opacity="0.55"/><rect x="46" y="50" width="40" height="60" rx="3" class="acc"/><text x="66" y="44" font-size="14" text-anchor="middle">+30</text><text x="66" y="186" font-size="15" text-anchor="middle" font-weight="700">Ova</text></g><g data-b="dere" aria-label="Dere ilçesi, değişim −20"><rect x="110" y="26" width="64" height="168" rx="9" class="box" fill-opacity="0.55"/><rect x="122" y="110" width="40" height="40" rx="3" class="acc"/><text x="142" y="167" font-size="14" text-anchor="middle">−20</text><text x="142" y="186" font-size="15" text-anchor="middle" font-weight="700">Dere</text></g><g data-b="tepe" aria-label="Tepe ilçesi, değişim +10"><rect x="186" y="26" width="64" height="168" rx="9" class="box" fill-opacity="0.55"/><rect x="198" y="90" width="40" height="20" rx="3" class="acc"/><text x="218" y="84" font-size="14" text-anchor="middle">+10</text><text x="218" y="186" font-size="15" text-anchor="middle" font-weight="700">Tepe</text></g><g data-b="kaya" aria-label="Kaya ilçesi, değişim 0"><rect x="262" y="26" width="64" height="168" rx="9" class="box" fill-opacity="0.55"/><rect x="274" y="108" width="40" height="4" rx="2" class="acc"/><text x="294" y="102" font-size="14" text-anchor="middle">0</text><text x="294" y="186" font-size="15" text-anchor="middle" font-weight="700">Kaya</text></g><path class="st2" d="M28 110 H332" pointer-events="none"/></svg>',
+        dogru: ['ova', 'tepe'],
+        hint: 'Sıfır çizgisinin üstü artış, altı azalış demek. Değişmeyen bir değer ne artıştır ne azalış.',
+        why: 'Ova ve Tepe’de çubuk sıfırın üstünde: artış. Dere’de azalış var, Kaya’da ise değişim yok. Grafik değişimi gösterir; hangi ilçede daha çok ağaç olduğunu buradan söyleyemeyiz.'
+      } },
+
     { t: 'Oran, yüzde, başına düşen',
       steps: [
         { s: 'Yüzde gördüğünde onu sayıya çevir. Çünkü yüzdeler farklı olsa da sayılar eşit çıkabilir.', v: 'Yüzde gördüğünde onu sayıya çevir. Çünkü yüzdeler farklı olsa da sayılar eşit çıkabilir.',
@@ -141,6 +188,22 @@
         { s: 'Toplamı büyük olanın oranı da büyük olmak zorunda değil. “Alan büyüdükçe ürün artar” gibi bir genellemeyi tablodaki tek bir ters örnek çürütür.' },
         { s: 'Bir de şuna dikkat: İki tabloda aynı sayının görünmesi, bunların aynı kişiler olduğunu göstermez.' }
       ] },
+
+    { t: 'Dekar başına farkı bul',
+      steps: [{ s: 'İki köyde dekar başına alınan ürünü hesapla ve farkı sayı doğrusunda işaretle.' }],
+      ia: {
+        tip: 'kaydir',
+        q: '<p>Çamlı köyünde 40 dekar seradan 200 ton, Pınarlı köyünde 30 dekar seradan 210 ton ürün alındı. Pınarlı’da dekar başına alınan ürün, Çamlı’dakinden <b>kaç ton fazladır</b>?</p>',
+        min: 0,
+        max: 5,
+        adim: 0.5,
+        cevap: 2,
+        tol: 0,
+        birim: 'ton',
+        etiket: [0, 1, 2, 3, 4, 5],
+        hint: 'Başına düşen bölme demektir: Önce her köyde ürünü alana böl, sonra iki sonucu karşılaştır.',
+        why: 'Çamlı’da 200 bölü 40, dekar başına 5 ton. Pınarlı’da 210 bölü 30, dekar başına 7 ton. Fark 2 ton. Toplam ürün yakın görünse de dekar başına düşen ürün çok farklı.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<table class="an-tbl"><tr><th>Köy</th><th>Sera alanı (dekar)</th><th>Ürün (ton)</th></tr><tr><td>K</td><td>40</td><td>200</td></tr><tr><td>L</td><td>50</td><td>150</td></tr><tr><td>M</td><td>20</td><td>120</td></tr></table><p>Bu tabloya göre aşağıdaki yargılardan hangisine <b>ulaşılabilir</b>?</p>',
@@ -176,6 +239,17 @@
           h: '<div class="an-trap">Flok doğru, ana yelken yanlış → şık <b>yanlış</b>. Görselin her parçasını ayrı denetle.</div>' },
         { s: 'Afiş ve kural soruları da böyle çözülür. Ölçütleri tek tek işaretle. “Korumak için” amaç, “kolaylaştırdığı için” sebep bildirir; ikisini karıştırma.' }
       ] },
+
+    { t: 'Değeri aralığına yerleştir',
+      steps: [{ s: 'Kurala göre her saatteki rüzgâr değerini doğru uygulamanın kutusuna yerleştir. Sınır değerlere dikkat!' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Kural: <b>0–20 knot</b> yelken tam açık · <b>21–25 knot</b> ana yelken yarım · <b>26–30 knot</b> ana yelken tam kapalı. Her ölçümü uygun kutuya yerleştir.</p>',
+        gruplar: ['Tam açık', 'Yarım', 'Tam kapalı'],
+        ogeler: [{ m: '09.00 · 18 knot', g: 0 }, { m: '10.00 · 25 knot', g: 1 }, { m: '11.00 · 26 knot', g: 2 }, { m: '12.00 · 21 knot', g: 1 }, { m: '13.00 · 30 knot', g: 2 }, { m: '14.00 · 20 knot', g: 0 }, { m: '15.00 · 29 knot', g: 2 }],
+        hint: 'Her değeri tek tek aralığına yerleştir: 25 hangi aralığın içinde, 26 hangisinin? 20 ile 21’i de karıştırma.',
+        why: '18 ve 20 tam açık; 21 ve 25 yarım; 26, 29 ve 30 tam kapalı. Farklı değerler aynı aralığa düşebilir; sınırdaki 25 ile 26 ise farklı uygulamalara gider.'
+      } },
 
     { t: 'Şifre, hareket ve son kontrol',
       steps: [

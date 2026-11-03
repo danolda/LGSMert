@@ -41,6 +41,19 @@
         { s: 'Edat ya da yön söylenmeyebilir. Ama benzeyen ve benzetilen olmadan benzetme olmaz.', on: '.b5' }
       ] },
 
+    { t: 'Benzetmenin unsurlarını eşleştir',
+      steps: [{ s: 'Cümle devrik kurulmuş, dikkat! Her unsuru cümledeki karşılığıyla eşleştir.' }],
+      ia: {
+        tip: 'eslestir',
+        q: '<p>“Bahar yağmuru gibi yumuşacıktı annemin sesi.”<br>Benzetmenin unsurlarını cümledeki karşılıklarıyla eşleştir.</p>',
+        solBaslik: 'Unsur',
+        sagBaslik: 'Cümlede',
+        sol: ['Benzeyen', 'Benzetilen', 'Benzetme edatı', 'Benzetme yönü'],
+        sag: ['annemin sesi', 'bahar yağmuru', 'gibi', 'yumuşacık'],
+        hint: 'Sözcüklerin sırasına aldanma. Özelliği daha zayıf olan, yani asıl anlatılan varlık hangisi? Hangisine benzetiliyor?',
+        why: 'Asıl anlatılan annenin sesi: benzeyen. Yumuşaklığı daha güçlü olan bahar yağmuru: benzetilen. Gibi edat, yumuşacık ise ortak özellik, yani benzetme yönü. Devrik cümle sırayı değiştirse de unsurlar değişmez.'
+      } },
+
     { t: 'Tuzak: “gibi”siz benzetme',
       steps: [
         { s: 'Unsurlar eksildikçe benzetme daha güçlü olur. Şimdi şuna bir bakalım.',
@@ -67,6 +80,17 @@
         { s: 'Kural şu: Benzetmede iki farklı türden varlık arasında ilgi kurulur. İnsan ile ayna, toprak ile çini gibi.',
           h: '<div class="an-rule">Benzetme = <b>iki farklı türden</b> varlık arasında ortak özellik ilgisi.</div>' }
       ] },
+
+    { t: 'Benzetme mi, değil mi?',
+      steps: [{ s: 'Sekiz cümleyi iki kutuya ayır: benzetme olanlar ve olmayanlar. Gibili ve gibisiz cümlelere dikkat!' }],
+      ia: {
+        tip: 'grup',
+        q: '<p>Hangi cümlelerde <b>benzetme</b> var?</p>',
+        gruplar: ['Benzetme var', 'Benzetme yok'],
+        ogeler: [{ m: 'Kar, pamuk gibi yağıyordu.', g: 0 }, { m: 'Senin gibi dostlar az bulunur.', g: 1 }, { m: 'Hayat uzun bir yolculuktur.', g: 0 }, { m: 'Öğle gibi yola çıkarız.', g: 1 }, { m: 'Ağabeyi gibi o da futbolcu oldu.', g: 1 }, { m: 'Gözleri iki zümrüttü.', g: 0 }, { m: 'Hava kararacak gibi.', g: 1 }, { m: 'Bu çocuk aslan gibi güçlü.', g: 0 }],
+        hint: '“Gibi” görünce hemen benzetme deme; gibi olmadan da benzetme olur. Farklı türden iki varlık arasında ortak bir özellik kuruluyor mu?',
+        why: 'Kar ile pamuk, hayat ile yolculuk, göz ile zümrüt, çocuk ile aslan farklı türden varlıklar: benzetme. “Senin gibi” örnek, “öğle gibi” yaklaşık zaman, “ağabeyi gibi” aynı türden karşılaştırma, “kararacak gibi” de tahmin bildirir.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>benzetme</b> yapılmıştır?</p>',
@@ -103,6 +127,16 @@
         { s: '“Dercesine” ise sözün gerçekte söylenmediğini gösterir. Konuşma olmadığı için konuşturma da yok.', on: '.c4' }
       ] },
 
+    { t: 'Konuşturma mı, kişileştirme mi?',
+      steps: [{ s: 'Beş ifade var. Her biri için Doğru ya da Yanlış seç.' }],
+      ia: {
+        tip: 'dogruyanlis',
+        q: '<p>Her ifade için karar ver.</p>',
+        ifadeler: [{ m: '“Ey bulutlar, bu topraklara bol bol yağın!” dizesinde konuşturma vardır.', d: false, a: 'Bulutlara seslenilmiş ama bulutlar konuşmuyor: kişileştirme.' }, { m: '“Güneş doğdu, kuşlar uyandı.” cümlesinde kişileştirme vardır.', d: false, a: 'İkisi de gerçekte olur; kalıplaşmış kullanım.' }, { m: 'Karınca, “Bütün yaz ne yaptın?” diye sordu. Bu cümlede konuşturma vardır.', d: true, a: 'İnsan dışı bir varlığın sözü aktarılmış.' }, { m: '“Rüzgâr, ‘Gel!’ dercesine kapıyı çaldı.” cümlesinde konuşturma vardır.', d: false, a: '“Dercesine”: söz söylenmedi. Kişileştirme var.' }, { m: '“Kırlar, yağmuru sabırla bekliyordu.” cümlesinde kişileştirme vardır.', d: true, a: 'Sabırla beklemek insana özgü bir davranış.' }],
+        hint: 'Konuşturma için insan dışı bir varlığın söylediği söz aktarılmalı. Seslenmek ya da “dercesine” yetmez. Gerçekte olabilen bir eylemde de kişileştirme yoktur.',
+        why: 'Yalnızca karıncanın sözü aktarıldığı için orada konuşturma var. Bulutlara seslenmek ve dercesine kapı çalan rüzgâr kişileştirmedir. Doğan güneş, uyanan kuşlar gerçektir. Sabırla bekleyen kırlar ise kişileştirmedir.'
+      } },
+
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>konuşturma</b> sanatı vardır?</p>',
         c: ['Ey dağlar, selamımı sılaya götürün!', 'Rüzgâr kulağıma eski bir masal fısıldadı.', 'Annem kapıdan, “Akşam erken dön.” dedi.', 'Yaşlı çınar, “Bu köyün bütün çocukları gölgemde büyüdü.” dedi.'], a: 'D',
@@ -121,6 +155,17 @@
         { s: 'Bir fuarda binlerce kitap olabilir. Bir kibrit gerçekten bir ormanı yakabilir. Bunlar olabilecek şeyler, yani abartma yok.' }
       ] },
 
+    { t: 'Abartma olmayanları ele',
+      steps: [{ s: 'Yedi cümleden gerçekte olabilecek olanları, yani abartma taşımayanları bul ve ele.' }],
+      ia: {
+        tip: 'eleme',
+        q: '<p>Aşağıdaki cümlelerden <b>abartma bulunmayanları</b> ele.</p>',
+        ogeler: ['Öyle yorgundum ki yüz yıl uyuyabilirdim.', 'Konserde binlerce kişi vardı.', 'Sesini duyunca yer yerinden oynadı.', 'Küçük bir ihmal büyük bir kazaya yol açabilir.', 'Bu çantada dünyanın yükü var.', 'Bu çınar yüz yılda ancak bu boya ulaşmış.', 'Gözyaşları sel olup aktı.'],
+        ele: [1, 3, 5],
+        hint: 'Altın kuralı uygula: Bu gerçekte olabilir mi? Büyük bir sayı ya da güçlü bir söz tek başına abartma değildir.',
+        why: 'Bir konserde binlerce kişi olabilir, küçük bir ihmal kazaya yol açabilir, bir çınar yüz yılda büyüyebilir: gerçekçi büyüklükler. Yüz yıl uyumak, yerin oynaması, dünyanın yükü ve sel olan gözyaşı ise abartmadır.'
+      } },
+
     { t: 'Karşıtlık',
       steps: [
         { s: 'Beşinci sanatımız karşıtlık. Anlamca zıt kavramları bir arada kullanarak anlatımı güçlendirmektir.',
@@ -131,6 +176,18 @@
           h: '<div class="an-trap"><b>Zıt değil, sadece farklı:</b> sabah ve öğle · sonbahar ve kış · elma ve armut<br><b>Gerçek zıt:</b> sabah ve akşam · yaz ve kış · siyah ve beyaz</div>' },
         { s: 'Sonbahar ile kış farklıdır ama birbirinin tersi değildir. Karşıtlık için anlamca ters iki uç gerekir: yaz ile kış gibi.' }
       ] },
+
+    { t: 'Zıt eşini tamamla',
+      steps: [{ s: 'Her boşluğa, karşıtlık kuracak sözcüğü yerleştir. Farklı ama zıt olmayan sözcüklere dikkat!' }],
+      ia: {
+        tip: 'bosluk',
+        q: '<p>Boşlukları <b>karşıtlık</b> oluşturacak biçimde doldur.</p>',
+        metin: 'Kalabalıklar içinde [_] kaldım.<br>[_] demeden kış demeden çalıştı.<br>Bir gülüyor, bir [_].',
+        secenek: ['yapayalnız', 'yorgun', 'Yaz', 'Sonbahar', 'ağlıyordu', 'koşuyordu'],
+        cevap: ['yapayalnız', 'Yaz', 'ağlıyordu'],
+        hint: 'Karşıtlık için anlamca ters iki uç gerekir. Sonbahar ile kış farklıdır ama birbirinin tersi midir?',
+        why: 'Kalabalığın karşıtı yalnızlık, kışın karşıtı yaz, gülmenin karşıtı ağlamaktır. Sonbahar kıştan farklıdır ama zıttı değildir; yorgunluk ve koşmak da karşıtlık kurmaz.'
+      } },
 
     { t: 'Ara soru', cp: {
         q: '<p>Aşağıdaki cümlelerin hangisinde <b>abartma</b> vardır?</p>',
@@ -152,6 +209,17 @@
           h: '<div class="an-tip">“Rüzgâr <span class="an-w">hırçındı</span>… bütün şehri <span class="an-w">tek nefeste yerinden sökecekti</span>.” → <b>kişileştirme + abartma</b></div>' },
         { s: 'Yani bir cümlede bir sanatı bulunca durma. Başka sanat var mı, ona da bak.' }
       ] },
+
+    { t: 'İki sanatı birden bul',
+      steps: [{ s: 'Hem kişileştirme hem abartma taşıyan iki cümle var. İkisine de dokun, sonra Kontrol et’e bas.' }],
+      ia: {
+        tip: 'gorselsec',
+        q: '<p><b>Hem kişileştirme hem abartma</b> bulunan cümlelere dokun.</p>',
+        svg: '<svg class="an-svg" viewBox="0 0 340 286" role="group" aria-label="Beş cümle"><g data-b="r1" aria-label="Deniz, ayna gibi parlıyordu."><rect x="4" y="6" width="332" height="44" rx="9" class="box"/><text x="14" y="32" font-size="14">Deniz, ayna gibi parlıyordu.</text></g><g data-b="r2" aria-label="Dağlar, öfkesinden bütün dünyayı titretti."><rect x="4" y="58" width="332" height="54" rx="9" class="box"/><text x="14" y="80" font-size="14">Dağlar, öfkesinden bütün dünyayı</text><text x="14" y="100" font-size="14">titretti.</text></g><g data-b="r3" aria-label="Kahkahamız bütün sokağı inletti."><rect x="4" y="120" width="332" height="44" rx="9" class="box"/><text x="14" y="146" font-size="14">Kahkahamız bütün sokağı inletti.</text></g><g data-b="r4" aria-label="Ay, pencereden bize gülümsüyordu."><rect x="4" y="172" width="332" height="44" rx="9" class="box"/><text x="14" y="198" font-size="14">Ay, pencereden bize gülümsüyordu.</text></g><g data-b="r5" aria-label="Fırtına, köyü tek soluğunda yutacak kadar öfkeliydi."><rect x="4" y="224" width="332" height="54" rx="9" class="box"/><text x="14" y="246" font-size="14">Fırtına, köyü tek soluğunda yutacak</text><text x="14" y="266" font-size="14">kadar öfkeliydi.</text></g></svg>',
+        dogru: ['r2', 'r5'],
+        hint: 'Bir sanatı bulunca durma. İnsan dışı bir varlığa insanca bir duygu verilmiş mi, aynı cümlede olamayacak kadar büyük bir durum da var mı?',
+        why: 'Öfkelenen dağlar ve öfkeli fırtına kişileştirme; dünyayı titretmek ve köyü tek soluk yutmak abartma. Ayna gibi deniz benzetme, sokağı inleten kahkaha yalnız abartma, gülümseyen ay ise yalnız kişileştirmedir.'
+      } },
 
     { t: 'Şiirde duygu',
       base: '<table class="an-tbl"><tr><th>Duygu</th><th>Örnek ifade</th></tr>' +

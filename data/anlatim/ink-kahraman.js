@@ -34,6 +34,13 @@
           h: '<div class="an-trap"><b>Milliyetçilik:</b> parçalı İtalya (1870) ve Almanya (1871) için <b>birleştirici</b>; Osmanlı ve Avusturya-Macaristan gibi çok uluslu devletler için <b>parçalayıcı</b>.</div>' }
       ] },
 
+    { t: 'Hangi gelişmenin etkisi?',
+      steps: [{ s: 'Şimdi sıra sende. Her sonucu doğuran gelişmenin kutusuna yerleştir. Siyasi mi, ekonomik mi, önce bunu düşün.' }],
+      ia: { tip: 'grup', q: '<p>Her sonucu, onu doğuran gelişmenin kutusuna yerleştir.</p>', gruplar: ['Fransız İhtilali', 'Sanayi İnkılabı'],
+        ogeler: [{ m: 'Sırp isyanı (1804)', g: 0 }, { m: 'Yerli dokumacılık geriledi', g: 1 }, { m: 'Yunanistan bağımsız oldu', g: 0 },
+          { m: 'Ham madde ve pazar arayışı', g: 1 }, { m: 'Almanya’nın birliği (1871)', g: 0 }, { m: 'Osmanlı açık pazar oldu', g: 1 }],
+        hint: 'Milliyetçilik ve bağımsızlık siyasi bir sonuçtur; üretim, ticaret ve pazar ise ekonomiktir.',
+        why: 'İsyanlar, bağımsızlıklar ve birleşmeler milliyetçiliğin, yani Fransız İhtilali’nin sonucudur. Ham madde arayışı, açık pazar ve gerileyen yerli üretim ise Sanayi İnkılabı’nın.' } },
     { t: 'Ara soru', cp: {
         q: '<p>19. yüzyılda Osmanlı limanlarından Avrupa’ya ham ipek, yün ve tütün gönderilirken Avrupa fabrikalarında üretilen ucuz kumaşlar Osmanlı çarşılarında yerli kumaşların yerini almıştır.</p><p>Bu durum aşağıdakilerden hangisinin <b>Osmanlı ekonomisine etkisini</b> gösterir?</p>',
         c: ['Fransız İhtilali’nin yaydığı milliyetçilik fikrinin', 'Sanayi İnkılabı’nın ortaya çıkardığı ham madde ve pazar arayışının', 'Tanzimat Fermanı ile getirilen kanun önünde eşitliğin', 'Balkan Savaşları’ndan sonra yaşanan göçlerin'], a: 'B',
@@ -87,6 +94,12 @@
         { s: 'Ama dikkat: Meşrutiyette egemenlik tamamen millete geçmedi. Padişah vardı ve son söz yine ondaydı.' }
       ] },
 
+    { t: 'Yenileşme sırası',
+      steps: [{ s: 'Tarihleri saklıyorum. Bu gelişmeleri yaşandıkları sıraya koyabilir misin? En eskiden başla.' }],
+      ia: { tip: 'sirala', q: '<p>Gelişmeleri <b>eskiden yeniye</b> sırala.</p>', ust: 'en eski', alt: 'en yeni',
+        ogeler: ['Tanzimat Fermanı', 'Islahat Fermanı', 'Kanun-i Esasi ilan edildi', 'Meclis kapatıldı', 'II. Meşrutiyet ilan edildi', '31 Mart Olayı'],
+        hint: 'İki ferman anayasadan önce gelir. Meclis 93 Harbi yüzünden kapandı; 31 Mart Olayı ise İkinci Meşrutiyet’e karşı çıktı.',
+        why: 'Tanzimat 1839, Islahat 1856, Kanun-i Esasi 1876, meclisin kapanması 1878, İkinci Meşrutiyet 1908, 31 Mart Olayı 1909. Fermanlar anayasadan önce gelir; ferman anayasa değildir.' } },
     { t: 'Devleti kurtarma fikirleri',
       base: '<div class="an-grid" style="grid-template-columns:1fr 1fr"><div class="rv f1"><b>Osmanlıcılık</b>din, dil, soy ayırmadan herkesi birleştir</div><div class="rv f2"><b>İslamcılık</b>bütün Müslümanları halife etrafında topla</div><div class="rv f3"><b>Türkçülük</b>Türklerin dil, tarih, kültür birliği</div><div class="rv f4"><b>Batıcılık</b>Batı’nın bilim ve kurumlarını örnek al</div></div>',
       steps: [
@@ -120,6 +133,12 @@
         { s: 'Almanya ve İtalya ise birliklerini geç kurmuştu; sömürge ve pazar arıyorlardı. İtalya’nın gözü Trablusgarp’taydı, bunu birazdan göreceğiz.', on: '.d4' }
       ] },
 
+    { t: 'Kim ne istiyordu?',
+      steps: [{ s: 'Büyük devletlerin her birinin başka bir hedefi vardı. Her devleti hedefiyle eşleştir.' }],
+      ia: { tip: 'eslestir', q: '<p>Her devleti, 20. yüzyıl başındaki <b>hedefiyle</b> eşleştir.</p>', solBaslik: 'Devlet', sagBaslik: 'Hedefi',
+        sol: ['İngiltere', 'Fransa', 'Rusya', 'İtalya'], sag: ['Hindistan yolunu korumak', 'Alsas-Loren’i geri almak', 'Boğazlara inmek', 'Trablusgarp’ı almak'],
+        hint: 'Sömürgesi en büyük olan, yolunu korur. Toprak kaybeden, geri almak ister. Sıcak denizleri isteyen kuzeydeki devlettir.',
+        why: 'İngiltere Hindistan yolunu, Fransa Almanya’ya kaptırdığı Alsas-Loren’i, Rusya Boğazları ve sıcak denizleri, birliğini geç kuran İtalya ise Trablusgarp’ı istiyordu.' } },
     { t: 'Mustafa Kemal’in çocukluğu ve okulları',
       base: '<svg class="an-svg" viewBox="0 0 340 184" role="img" aria-label="Mustafa Kemal’in 1881-1905 öğrenim yılları zaman şeridi">' +
       '<path class="st dr m1" d="M92 12 L92 176"/>' +
@@ -153,6 +172,12 @@
         { s: 'İstanbul’da Harbiye’yi teğmen, Harp Akademisini 1905’te kurmay yüzbaşı olarak bitirdi.', v: 'İstanbul’da Harbiye’yi teğmen, Harp Akademisini bin dokuz yüz beşte kurmay yüzbaşı olarak bitirdi.', on: '.m4,.m5' }
       ] },
 
+    { t: 'Okul okul Mustafa Kemal',
+      steps: [{ s: 'Mustafa Kemal’in okullarını sırayla diz. Önce mahalle mektebi, en sonda kurmay olduğu okul.' }],
+      ia: { tip: 'sirala', q: '<p>Mustafa Kemal’in okullarını <b>okuduğu sıraya</b> koy.</p>', ust: 'ilk okul', alt: 'son okul',
+        ogeler: ['Şemsi Efendi Okulu', 'Mülkiye Rüştiyesi', 'Selanik Askerî Rüştiyesi', 'Manastır Askerî İdadisi', 'İstanbul Harbiye', 'Harp Akademisi'],
+        hint: 'Kaymak Hafız olayı askerî okuldan önce yaşandı. İdadi rüştiyeden sonra gelir; kurmaylık en son okulda kazanılır.',
+        why: 'Şemsi Efendi, Mülkiye Rüştiyesi, Askerî Rüştiye, Manastır Askerî İdadisi, Harbiye ve Harp Akademisi. “Kemal” adı Askerî Rüştiyede, kurmay yüzbaşılık 1905’te Harp Akademisinde.' } },
     { t: 'Fikirlerini besleyen kişiler ve olaylar',
       steps: [
         { s: 'Gençliğinde okuduğu yazarlar onun düşünce dünyasını şekillendirdi.',
@@ -187,6 +212,20 @@
         { s: 'Son durak Sofya. Askerî ataşe olarak Bulgar Meclisi’ni ve operayı izledi; Bulgaristan Türklerinin sorunlarıyla ilgilendi.', on: '.k5' }
       ] },
 
+    { t: 'Haritada cephe bul',
+      steps: [{ s: 'Haritaya dikkatli bak. Mustafa Kemal’in 1911 ile 1913 arasında savaştığı iki yeri bul, ikisine de dokun ve Kontrol et’e bas.' }],
+      ia: { tip: 'gorselsec', q: '<p>Mustafa Kemal’in <b>1911–1913 arasında savaştığı</b> iki yere dokun.</p>', dogru: ['tr', 'bo'],
+        svg: '<svg class="an-svg" viewBox="0 0 340 214" role="group" aria-label="Mustafa Kemal’in 1905-1915 arasında bulunduğu yerler, temsilî şema">' +
+          '<text x="170" y="12" font-size="11" text-anchor="middle" class="mut">temsilî konumlar · ölçekli değildir</text>' +
+          '<path class="ln" d="M20 150 Q90 136 150 150 T250 160 L330 170" stroke-dasharray="4 4"/>' +
+          '<g data-b="se" aria-label="Selanik"><rect x="12" y="44" width="92" height="40" rx="9" class="box"/><text x="58" y="69" text-anchor="middle" font-size="15">Selanik</text></g>' +
+          '<g data-b="so" aria-label="Sofya"><rect x="118" y="20" width="84" height="40" rx="9" class="box"/><text x="160" y="45" text-anchor="middle" font-size="15">Sofya</text></g>' +
+          '<g data-b="bo" aria-label="Gelibolu, Bolayır"><rect x="150" y="76" width="96" height="40" rx="9" class="box"/><text x="198" y="101" text-anchor="middle" font-size="15">Bolayır</text></g>' +
+          '<g data-b="sa" aria-label="Şam"><rect x="262" y="96" width="68" height="40" rx="9" class="box"/><text x="296" y="121" text-anchor="middle" font-size="15">Şam</text></g>' +
+          '<g data-b="tr" aria-label="Trablusgarp, Tobruk ve Derne"><rect x="60" y="162" width="150" height="40" rx="9" class="box"/><text x="135" y="187" text-anchor="middle" font-size="15">Tobruk · Derne</text></g>' +
+          '<g data-b="mi" aria-label="Mısır"><rect x="232" y="162" width="88" height="40" rx="9" class="box"/><text x="276" y="187" text-anchor="middle" font-size="15">Mısır</text></g></svg>',
+        hint: 'Biri İtalya’ya karşı Kuzey Afrika’daydı, öbürü Balkan Savaşları sırasında Gelibolu’daydı. Mısır yalnızca geçiş yoluydu.',
+        why: 'Trablusgarp Savaşı’nda Tobruk ve Derne’de, Balkan Savaşları’nda Gelibolu’da Bolayır’da görev yaptı. Şam ve Selanik savaş değil görev yeri, Sofya ise ataşelik yeriydi.' } },
     { t: 'Trablusgarp Savaşı (1911–1912)',
       steps: [
         { s: 'Neden çıktı bu savaş? Birliğini geç kuran İtalya sömürge arıyordu ve gözünü Trablusgarp’a dikti.',
@@ -211,6 +250,16 @@
         { s: 'Bir de kişisel kayıp var: Selanik kaybedildi, Mustafa Kemal’in ailesi İstanbul’a göç etti.' }
       ] },
 
+    { t: 'Balkan tuzakları',
+      steps: [{ s: 'Balkan Savaşları’nda sınavın sevdiği tuzaklar var. Her ifade için doğru mu, yanlış mı, karar ver.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+          { m: 'Edirne, Birinci Balkan Savaşı’nda geri alındı.', d: false, a: 'Edirne, İkinci Balkan Savaşı’nda Bulgaristan’dan geri alındı.' },
+          { m: 'Balkan Savaşları Osmanlıcılık fikrinin iflasını gösterdi.', d: true, a: 'Gayrimüslim Balkan milletleri ayrıldı; Osmanlıcılık çöktü.' },
+          { m: 'Uşi Antlaşması ile Balkan Savaşları sona erdi.', d: false, a: 'Uşi, Trablusgarp Savaşı’nı bitirdi (1912).' },
+          { m: 'Savaşlardan sonra Anadolu’ya büyük bir göç dalgası geldi.', d: true, a: 'Balkanlardaki Türkler Anadolu’ya göç etti.' },
+          { m: 'İkinci Balkan Savaşı’nda Balkan devletleri Bulgaristan’a saldırdı.', d: true, a: 'Osmanlı bu fırsatla Edirne ve Kırklareli’ni aldı.' }],
+        hint: 'Hangi savaşta kimin kime saldırdığını hatırla. Uşi Antlaşması hangi savaşın sonundaydı?',
+        why: 'Edirne ikinci savaşta geri alındı; Uşi ise Trablusgarp Savaşı’nın antlaşmasıdır. Göç, Osmanlıcılığın çöküşü ve Bulgaristan’a saldırı doğru bilgilerdir.' } },
     { t: 'Metinden kişilik özelliği çıkarmak',
       base: '<table class="an-tbl"><tr><th>Özellik</th><th>Metinde nasıl görünür?</th></tr>' +
         '<tr class="rv p1"><td><b>Teşkilatçılık</b></td><td>dağınık insanları bir amaç için örgütlemek: Vatan ve Hürriyet, Trablusgarp</td></tr>' +
@@ -226,6 +275,13 @@
           h: '<div class="an-trap">Biri doğru, biri dayanaksız olan şık <b>yanlıştır</b>. Başka döneme ait bilgiler (ör. Anafartalar, Cumhuriyet inkılapları) de çeldiricidir.</div>' }
       ] },
 
+    { t: 'Davranıştan özelliğe',
+      steps: [{ s: 'Her davranışı gösterdiği kişilik özelliğinin kutusuna koy. Metindeki dayanağa bak, ezbere değil.' }],
+      ia: { tip: 'grup', q: '<p>Her davranışı gösterdiği <b>kişilik özelliğine</b> yerleştir.</p>', gruplar: ['Teşkilatçılık', 'İleri görüşlülük', 'Kararlılık', 'Çok yönlülük'],
+        ogeler: [{ m: 'Vatan ve Hürriyet’i kurdu', g: 0 }, { m: '“Ordu siyasete karışmasın”', g: 1 }, { m: 'Sofya’da operayı izledi', g: 3 },
+          { m: 'Trablusgarp’ta halkı örgütledi', g: 0 }, { m: 'Habersiz askerî okula girdi', g: 2 }, { m: 'Edebiyat ve hitabetle ilgilendi', g: 3 }],
+        hint: 'İnsanları bir amaçla bir araya getirmek, bugünden geleceği görmek, engele rağmen vazgeçmemek ve askerlik dışı ilgiler: dördü ayrı özelliktir.',
+        why: 'Cemiyet kurmak ve halkı örgütlemek teşkilatçılık; ordunun siyasetten uzak durmasını istemek ileri görüşlülük; ailesine rağmen askerî okula girmek kararlılık; sanat ve edebiyat ilgisi çok yönlülüktür.' } },
     { t: 'Ara soru', cp: {
         q: '<p>Mustafa Kemal, Şam’da görevliyken arkadaşlarıyla gizli bir cemiyet kurmuş, şube açmak için gizlice Selanik’e gitmiştir. Trablusgarp’ta ise dağınık yerli halkı bir araya getirip eğiterek düzenli birlikler oluşturmuştur.</p><p>Bu bilgiler Mustafa Kemal’in hangi özelliğini <b>ortak olarak</b> göstermektedir?</p>',
         c: ['Teşkilatçılık', 'Sanatseverlik', 'İnkılapçılık', 'Alçakgönüllülük'], a: 'A',

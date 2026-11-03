@@ -42,6 +42,10 @@
           h: '<div class="an-trap">√25 = <span class="an-ok-t">5</span> &nbsp; <span class="an-bad-t">±5</span> &nbsp;·&nbsp; √(−4) bu sınıfta yok</div>' }
       ] },
 
+    { t: 'Dokun: tam kare sayılar',
+      steps: [{ s: 'Hepsi tam kare gibi görünebilir. Asal çarpanlara ayırmayı ve birler basamağı kuralını kullan, tam kare olanların hepsine dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p><b>Tam kare</b> olan sayıların hepsine dokun, sonra Kontrol et’e bas.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 102" role="img" aria-label="196, 288, 324, 1000, 2025, 243, 360 ve 225 sayıları"><g data-b="a" aria-label="196"><rect x="8" y="6" width="75" height="40" rx="9" class="box"/><text x="46" y="32" text-anchor="middle" font-size="17">196</text></g><g data-b="b" aria-label="288"><rect x="91" y="6" width="75" height="40" rx="9" class="box"/><text x="128" y="32" text-anchor="middle" font-size="17">288</text></g><g data-b="c" aria-label="324"><rect x="174" y="6" width="75" height="40" rx="9" class="box"/><text x="212" y="32" text-anchor="middle" font-size="17">324</text></g><g data-b="d" aria-label="1000"><rect x="257" y="6" width="75" height="40" rx="9" class="box"/><text x="294" y="32" text-anchor="middle" font-size="17">1000</text></g><g data-b="e" aria-label="2025"><rect x="8" y="54" width="75" height="40" rx="9" class="box"/><text x="46" y="80" text-anchor="middle" font-size="17">2025</text></g><g data-b="f" aria-label="243"><rect x="91" y="54" width="75" height="40" rx="9" class="box"/><text x="128" y="80" text-anchor="middle" font-size="17">243</text></g><g data-b="g" aria-label="360"><rect x="174" y="54" width="75" height="40" rx="9" class="box"/><text x="212" y="80" text-anchor="middle" font-size="17">360</text></g><g data-b="h" aria-label="225"><rect x="257" y="54" width="75" height="40" rx="9" class="box"/><text x="294" y="80" text-anchor="middle" font-size="17">225</text></g></svg>', dogru: ['a', 'c', 'e', 'h'], hint: 'Birler basamağı 2, 3, 7, 8 olanı hemen ele. Kalanları asal çarpanlarına ayır: bütün üsler çift mi?', why: '196 = 14<sup>2</sup>, 324 = 18<sup>2</sup>, 2025 = 45<sup>2</sup>, 225 = 15<sup>2</sup>. 288 = 2<sup>5</sup> · 3<sup>2</sup> ve 360 = 2<sup>3</sup> · 3<sup>2</sup> · 5: tek üs var. 1000’in üsleri 3; 243 de 3 ile bitiyor.', whyV: '196, 14’ün karesi; 324, 18’in karesi; 2025, 45’in karesi; 225 de 15’in karesi. 288 ile 360’ta tek üs var, 1000’in üsleri 3. 243 ise 3 ile bitiyor, tam kare olamaz.' } },
+
     { t: 'Hangi iki doğal sayı arasında?',
       base: '<svg class="an-svg" viewBox="0 0 340 130" role="img" aria-label="5 ile 7 arasındaki sayı doğrusu; karekök 31, 5 ile 6 arasında ve 6 ya daha yakın">' +
         '<path class="ln" d="M16 70H326M30 62v16M170 62v16M310 62v16"/><path class="ln" d="M100 66v8M240 66v8" stroke-dasharray="3 3"/>' +
@@ -59,6 +63,10 @@
         { s: 'Doğal sayılar için kısa yol da var: 25’ten 30’a kadarının kökü 5’e, 31’den 36’ya kadarının kökü 6’ya yakın.', v: 'Doğal sayılar için kısa yol da var: yirmi beşten otuza kadarının kökü beşe, otuz birden otuz altıya kadarının kökü altıya yakın.',
           h: '<div class="an-tip">n<sup>2</sup> … n<sup>2</sup> + n → n’ye yakın &nbsp;·&nbsp; n<sup>2</sup> + n + 1 … (n + 1)<sup>2</sup> → n + 1’e yakın</div>' }
       ] },
+
+    { t: 'Sayı doğrusunda tahmin: √40',
+      steps: [{ s: 'Şimdi kestirme zamanı. √40’ı sayı doğrusunda yaklaşık yerine koy. Önce iki tam kare arasını bul, sonra hangisine yakın olduğuna bak.', v: 'Şimdi kestirme zamanı. Karekök 40’ı sayı doğrusunda yaklaşık yerine koy. Önce iki tam kare arasını bul, sonra hangisine yakın olduğuna bak.' }],
+      ia: { tip: 'kaydir', q: '<p>√40 sayısını sayı doğrusunda <b>yaklaşık</b> yerine koy.</p>', min: 4, max: 8, adim: 0.1, cevap: 6.3, tol: 0.15, bas: 4, etiket: [4, 5, 6, 7, 8], hint: '40’ın altındaki ve üstündeki tam kareleri bul. Sonra orta noktanın karesine bak: 6,5 · 6,5 = 42,25.', hintV: '40’ın hemen altındaki ve üstündeki tam kareleri bul. Sonra orta noktanın karesine bak: altı buçuğun karesi kırk iki virgül yirmi beş.', why: '36 < 40 < 49, yani √40, 6 ile 7 arasında. 6,5<sup>2</sup> = 42,25 > 40, o hâlde 6’ya daha yakın: √40 ≈ 6,3.', whyV: '36, 40’tan küçük; 49 büyük. Yani karekök 40, 6 ile 7 arasında. Altı buçuğun karesi kırk iki virgül yirmi beş, 40’ı geçiyor. O hâlde 6’ya daha yakın: yaklaşık altı virgül üç.' } },
 
     { t: 'Kaç sayı var, kaç parça lazım?',
       steps: [
@@ -91,6 +99,10 @@
         { s: 'Bir püf noktası: √72’yi 2√18 yazmak yanlış değil ama en sade hâl değil. 18’in içinde hâlâ 9 var.', v: 'Bir püf noktası: karekök yetmiş ikiyi iki kök on sekiz yazmak yanlış değil, ama en sade hâl değil. On sekizin içinde hâlâ dokuz var.' }
       ] },
 
+    { t: 'Boşluk doldur: a√b biçimi',
+      steps: [{ s: 'Kökün içindeki en büyük tam kare çarpanı bul. Ters yönde de çalış: katsayıyı kökün içine al.' }],
+      ia: { tip: 'bosluk', q: '<p>Boşlukları doldur. Kökü <b>en sade</b> biçimde yaz.</p>', metin: '√180 = [_]√[_]<br>2√7 = √[_]', secenek: ['6', '5', '3', '20', '28', '14', '10'], cevap: ['6', '5', '28'], hint: '180’in içindeki en büyük tam kare çarpanı ara: 4 mü, 9 mu, 36 mı? İçeri alırken katsayının karesi girer.', hintV: '180’in içindeki en büyük tam kare çarpanı ara: 4 mü, 9 mu, 36 mı? Kökün içine alırken katsayının karesi girer.', why: '180 = 36 · 5, yani √180 = 6√5. 3√20 de doğru ama sade değil, 20’nin içinde 4 var. 2√7 = √(4 · 7) = √28; √14 değil.', whyV: '180, 36 çarpı 5; yani kök 180, 6 kök 5. 3 kök 20 de doğru ama en sade hâli değil, 20’nin içinde hâlâ 4 var. 2 kök 7 ise kök içinde 4 çarpı 7, yani kök 28; kök 14 değil.' } },
+
     { t: 'Karşılaştırma ve sıralama',
       base: '<table class="an-tbl"><tr><th>Sayı</th><th>Kök içine al</th></tr>' +
         '<tr class="rv o1"><td>2√7</td><td>√28</td></tr><tr class="rv o1"><td>3√3</td><td>√27</td></tr>' +
@@ -102,6 +114,10 @@
           h: '<div class="an-rule"><b>5 < 3√3 < 2√7 < 4√2</b></div>' },
         { s: 'LGS’de “4√5 mi büyük, 9 mu?” gibi sorular da gelir. √80 ile √81: 9 biraz daha büyük.', v: 'Le ge se’de, dört kök beş mi büyük, dokuz mu, gibi sorular da gelir. Karekök seksen ile karekök seksen bir: dokuz biraz daha büyük.' }
       ] },
+
+    { t: 'Sırala: köklü sayılar',
+      steps: [{ s: 'Katsayılı kökleri karşılaştırmanın hilesini kullan. Sayıları küçükten büyüğe diz.' }],
+      ia: { tip: 'sirala', q: '<p>Küçükten büyüğe sırala.</p>', ust: 'en küçük', alt: 'en büyük', ogeler: ['2√3', '4', '3√2', '√19', '2√5'], hint: 'Hepsini kök içine al: katsayının karesi içeri girer. 4 de bir kök olarak yazılabilir.', why: '2√3 = √12, 4 = √16, 3√2 = √18, √19, 2√5 = √20. İçler 12 < 16 < 18 < 19 < 20.', whyV: '2 kök 3, kök 12; 4, kök 16; 3 kök 2, kök 18; sonra kök 19; 2 kök 5 de kök 20. İçleri sıralamak yeter.' } },
 
     { t: 'Çarpma ve bölme',
       steps: [
@@ -125,6 +141,15 @@
         { s: 'Ve en büyük tuzak: kökleri toplayıp içleri birleştirmek. √9 + √16, √25 değildir!', v: 'Ve en büyük tuzak: kökleri toplarken içleri birleştirmek. Karekök dokuz artı karekök on altı, karekök yirmi beş değildir!',
           h: '<div class="an-trap">√9 + √16 = 3 + 4 = <span class="an-ok-t">7</span> &nbsp; <span class="an-bad-t">√25 = 5</span><br>√80 + √80 = 2√80 = 8√5, √160 değil</div>' }
       ] },
+
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Köklerle işlemde en çok yapılan hatalar bunlar. Her ifade için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: '√16 + √9 = √25', d: false, a: '√16 + √9 = 4 + 3 = 7, oysa √25 = 5. Kök içleri toplanmaz.' },
+            { m: '√12 + √27 = 5√3', d: true, a: 'Önce sadeleştir: 2√3 + 3√3 = 5√3.' },
+            { m: '(3√2)<sup>2</sup> = 18', d: true, a: 'Katsayının da karesi alınır: 9 · 2 = 18.' },
+            { m: '√8 + √2 = √10', d: false, a: '√8 = 2√2, toplam 2√2 + √2 = 3√2.' },
+            { m: '√50 ÷ √2 = 25', d: false, a: 'Kökleri birleştir: √(50 ÷ 2) = √25 = 5.' }], hint: 'Çarpma ve bölmede kökler birleşir. Toplamada yalnız içi aynı olan terimler toplanır, önce sadeleştir.', why: 'Kök içleri toplanmaz: √16 + √9 = 7. Çarpma ve bölmede kökler birleşir, toplamada yalnız benzer kökler toplanır. Katsayılı kökün karesinde katsayının da karesi alınır.', whyV: 'Kök içleri toplanmaz: kök 16 artı kök 9, 7 eder. Çarpma ve bölmede kökler birleşir; toplamada yalnız benzer kökler toplanır. Katsayılı kökün karesinde katsayının da karesi alınır.' } },
 
     { t: 'Çözümlü örnek: yan yana kareler',
       base: '<svg class="an-svg" viewBox="0 0 300 165" role="img" aria-label="Alanı 50 ve 18 santimetrekare olan iki kare yan yana yapıştırılmış">' +
@@ -163,6 +188,10 @@
         { s: '√72 = 6√2, yani x = 2 çarpı bir tam kare olmalı: 18, 32, 50, 72, 98. Tam 5 değer.', v: 'Karekök yetmiş iki, altı kök iki. Yani x, iki çarpı bir tam kare olmalı: on sekiz, otuz iki, elli, yetmiş iki, doksan sekiz. Tam beş değer.' }
       ] },
 
+    { t: 'Ele: doğal sayı vermeyenler',
+      steps: [{ s: 'Önce √18’i sadeleştir. Sonra, √18 ile çarpınca doğal sayı vermeyen çarpanların üstünü çiz.', v: 'Önce kök 18’i sadeleştir. Sonra, kök 18 ile çarpınca doğal sayı vermeyen çarpanların üstünü çiz.' }],
+      ia: { tip: 'eleme', q: '<p>√18 ile çarpıldığında sonucu <b>doğal sayı yapmayan</b> çarpanları ele.</p>', ogeler: ['√2', '√8', '√12', '√32', '√6', '√50', '√20', '√72'], ele: [2, 4, 6], hint: '√18 = 3√2. Kökten kurtulmak için çarpan da sadeleşince yalnız √2 içermeli.', hintV: 'Kök 18, 3 kök 2’ye eşit. Kökten kurtulmak için çarpan da sadeleşince yalnızca kök 2 içermeli.', why: '√18 = 3√2 olduğundan çarpan k√2 olmalı: √2, √8 = 2√2, √32 = 4√2, √50 = 5√2, √72 = 6√2. √12 = 2√3, √6 ve √20 = 2√5 kökten kurtaramaz.', whyV: 'Kök 18, 3 kök 2 olduğundan çarpan da kök 2’nin bir katı olmalı: kök 2, kök 8, kök 32, kök 50 ve kök 72 öyle. Kök 12, 2 kök 3; kök 6 ve kök 20 de kökten kurtaramaz.' } },
+
     { t: 'Ondalık sayıların karekökü',
       steps: [
         { s: 'Ondalık sayının kökünü almak için önce kesre çevir. √0,49 = √({{49|100}}) = {{7|10}} = 0,7.', v: 'Ondalık sayının kökünü almak için önce kesre çevir. Karekök sıfır virgül kırk dokuz; yüzde kırk dokuzun kökü, onda yedi, yani sıfır virgül yedi.',
@@ -172,6 +201,10 @@
         { s: 'Ve şu tuzağa düşme: √0,4, 0,2 değildir! Çünkü 0,2’nin karesi 0,04.', v: 'Ve şu tuzağa düşme: karekök sıfır virgül dört, sıfır virgül iki değildir! Çünkü sıfır virgül ikinin karesi, sıfır virgül sıfır dört.',
           h: '<div class="an-trap"><span class="an-bad-t">√0,4 = 0,2</span> &nbsp; <span class="an-bad-t">√0,9 = 0,3</span><br>0,4 = {{4|10}}: payda 10 tam kare değil, √0,4 irrasyoneldir.</div>' }
       ] },
+
+    { t: 'Eşleştir: ondalık sayıların kökü',
+      steps: [{ s: 'Her ondalık sayıyı karekökü ile eşleştir. Virgülden sonraki basamak sayısının yarıya indiğini unutma.' }],
+      ia: { tip: 'eslestir', q: '<p>Her ifadeyi değeriyle eşleştir.</p>', solBaslik: 'Kök', sagBaslik: 'Değer', sol: ['√0,49', '√0,04', '√1,44', '√0,09', '√2,25'], sag: ['0,7', '0,2', '1,2', '0,3', '1,5'], hint: 'Kesre çevir: 0,04 = {{4|100}}. Pay ve paydanın kökünü ayrı ayrı al. Kontrol için sonucun karesini hesapla.', hintV: 'Kesre çevir: sıfır virgül sıfır dört, yüzde dört demektir. Pay ve paydanın kökünü ayrı ayrı al. Kontrol için sonucun karesini hesapla.', why: '0,2 · 0,2 = 0,04 ve 0,3 · 0,3 = 0,09; 1,5 · 1,5 = 2,25. Basamak sayısı yarıya iner: iki basamaklı 0,04’ün kökü tek basamaklı 0,2.', whyV: 'Sıfır virgül iki çarpı sıfır virgül iki, sıfır virgül sıfır dört; sıfır virgül üçün karesi sıfır virgül sıfır dokuz; bir buçuğun karesi iki virgül yirmi beş. Virgülden sonraki basamak sayısı kökte yarıya iner.' } },
 
     { t: 'Rasyonel mi, irrasyonel mi?',
       base: '<svg class="an-svg" viewBox="0 0 330 170" role="img" aria-label="Gerçek sayılar: rasyonel sayılar içinde tam sayılar ve doğal sayılar; yanında irrasyonel sayılar">' +

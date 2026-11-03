@@ -24,6 +24,10 @@
           h: '<div class="an-trap">Kenarortay her zaman dik değildir; yükseklik her zaman ortalamaz.</div>' }
       ] },
 
+    { t: 'Dokun: açıortay hangisi?',
+      steps: [{ s: 'Şekildeki işaretleri oku: dik açı işareti, eş kenar çentikleri ve eş açı yayları. Açıortayı bul ve numarasına dokun.' }],
+      ia: { tip: 'gorselsec', q: '<p>A köşesinden çizilen doğru parçalarından <b>açıortay</b> olanın numarasına dokun.</p>', svg: '<svg class="an-svg" viewBox="0 0 340 196" role="img" aria-label="ABC üçgeninde A köşesinden BC kenarına çizilmiş 1, 2 ve 3 numaralı üç doğru parçası"><path class="ln" d="M92 16 L12 150 L328 150 Z" style="stroke-width:2"/><text x="92" y="13" font-size="15" font-weight="700" text-anchor="middle">A</text><text x="6" y="168" font-size="15" font-weight="700">B</text><text x="334" y="168" font-size="15" font-weight="700" text-anchor="end">C</text><path class="ln" d="M92 140 H102 V150" style="stroke-width:1.5"/><path class="ln" d="M60 144 V156 M248 144 V156" style="stroke-width:2"/><path class="st2" d="M102.7 56.6 A42 42 0 0 1 70.5 52.1" style="stroke-width:2"/><path class="st2" d="M87.0 51.6 L85.3 63.5" style="stroke-width:2"/><path class="st2" d="M128.5 36.7 A42 42 0 0 1 102.7 56.6" style="stroke-width:2"/><path class="st2" d="M114.0 44.5 L121.3 54.0" style="stroke-width:2"/><path class="st" d="M92 16 L170.0 150.0"/><g data-b="m" aria-label="1 numaralı doğru parçası"><rect x="153" y="158" width="34" height="34" rx="8" class="box"/><text x="170" y="182" font-size="16" font-weight="700" text-anchor="middle">1</text></g><path class="st" d="M92 16 L92.0 150.0"/><g data-b="h" aria-label="2 numaralı doğru parçası"><rect x="75" y="158" width="34" height="34" rx="8" class="box"/><text x="92" y="182" font-size="16" font-weight="700" text-anchor="middle">2</text></g><path class="st" d="M92 16 L127.4 150.0"/><g data-b="d" aria-label="3 numaralı doğru parçası"><rect x="110" y="158" width="34" height="34" rx="8" class="box"/><text x="127" y="182" font-size="16" font-weight="700" text-anchor="middle">3</text></g></svg>', dogru: ['d'], hint: 'Açıortay A açısını iki eş parçaya böler. A köşesindeki yaylara bak.', why: '3 numara A açısını iki eş açıya bölüyor: açıortay. 2 numara BC’ye dik: yükseklik. 1 numara BC’nin orta noktasına gidiyor, çentikler bunu gösteriyor: kenarortay.', whyV: '3 numara A açısını iki eş açıya bölüyor; açıortay odur. 2 numara B C kenarına dik iniyor, yani yükseklik. 1 numara B C’nin orta noktasına gidiyor, çentikler de bunu gösteriyor: kenarortay.' } },
+
     { t: 'Yükseklik ve alan',
       steps: [
         { s: 'Yükseklik dar açılı üçgende içeride, dik üçgende dik kenarların üzerinde, geniş açılı üçgende ise bazen dışarıdadır.' },
@@ -64,6 +68,10 @@
           h: '<div class="an-trap">4 + 6 = 10 → üçgen <b>oluşmaz</b>. Eşitsizlikler kesindir: <, ≤ değil.</div>' }
       ] },
 
+    { t: 'Ele: üçgen olmayanlar',
+      steps: [{ s: 'Her üçlüde en uzun kenarı, diğer ikisinin toplamıyla karşılaştır. Üçgen oluşturamayan üçlülerin üstünü çiz.' }],
+      ia: { tip: 'eleme', q: '<p>Kenar uzunlukları (cm) verilen üçlülerden <b>üçgen oluşturamayanları</b> ele.</p>', ogeler: ['2, 5, 6', '4, 5, 9', '6, 6, 11', '3, 7, 11', '5, 12, 13', '1, 10, 10', '7, 8, 16'], ele: [1, 3, 6], hint: 'En uzun kenar, diğer iki kenarın toplamından küçük olmalı. Toplam eşit çıkarsa ne olur?', why: '4 + 5 = 9: çubuklar üst üste yatar, üçgen olmaz. 3 + 7 = 10 < 11 ve 7 + 8 = 15 < 16. 1, 10, 10 ise üçgen: 1 + 10 > 10.', whyV: '4 artı 5, tam 9 eder: çubuklar üst üste yatar, üçgen olmaz. 3 artı 7, 10; 11’den küçük. 7 artı 8, 15; 16’dan küçük. 1, 10, 10 ise üçgen oluşturur, çünkü 1 artı 10, 10’dan büyük.' } },
+
     { t: 'Üçüncü kenar kaç olabilir?',
       steps: [
         { s: 'İki kenarı 5 ve 9 olan üçgenin üçüncü kenarı x olsun. Fark ile toplam arasında: 4 < x < 14.', v: 'İki kenarı beş ve dokuz olan üçgenin üçüncü kenarı iks olsun. Fark ile toplam arasında: iks, dört ile on dört arasında.',
@@ -73,6 +81,10 @@
         { s: 'Ortak kenarlı iki üçgende ortak kenar için iki aralık bulunur; ikisini birden sağlayan değerler alınır.',
           h: '<div class="an-tip">4 < x < 14 ve 3 < x < 11 → ikisi birden: <b>4 < x < 11</b></div>' }
       ] },
+
+    { t: 'Kaydır: üçüncü kenar',
+      steps: [{ s: 'Önce üçgen eşitsizliğinden aralığı bul, sonra ek koşulu uygula. Cevabı kaydırıcıyla göster.' }],
+      ia: { tip: 'kaydir', q: '<p>İki kenarı 6 cm ve 10 cm olan bir üçgende üçüncü kenar <b>en uzun kenardır</b> ve uzunluğu tam sayıdır. Üçüncü kenar <b>en az</b> kaç cm’dir?</p>', min: 0, max: 20, adim: 1, cevap: 11, birim: 'cm', etiket: [0, 4, 8, 12, 16, 20], hint: 'Önce fark ile toplam arasını yaz. Sonra “en uzun kenar” koşulu bu aralığın hangi kısmını bırakır?', why: '10 − 6 < x < 10 + 6, yani 4 < x < 16. En uzun kenar olması için x > 10. Tam sayı olarak en az 11. 5 cevabı ek koşulu unutmaktır.', whyV: 'Üçüncü kenar 10 eksi 6 ile 10 artı 6 arasında, yani 4 ile 16 arasında. En uzun kenar olması için 10’dan büyük olmalı. Tam sayı olarak en az 11. 5 cevabı ek koşulu unutmaktır.' } },
 
     { t: 'Çözümlü örnek: ikizkenar üçgen',
       steps: [
@@ -92,6 +104,10 @@
         { s: 'Eşleştirme hilesi: köşe harfi, karşı kenarın adında bulunmaz. A’nın karşısı BC.', v: 'Eşleştirme hilesi: köşe harfi, karşı kenarın adında bulunmaz. A’nın karşısı B C.',
           h: '<div class="an-trap">Komşu açıyı değil, <b>karşı</b> açıyı kullan. Dik üçgende hipotenüs, geniş açılıda geniş açının karşısı en uzundur.</div>' }
       ] },
+
+    { t: 'Sırala: kenarları',
+      steps: [{ s: 'Açıları kullanarak kenarları sırala. Üçüncü açıyı da bulmayı unutma.' }],
+      ia: { tip: 'sirala', q: '<p>ABC üçgeninde m(A) = 50°, m(B) = 75°. Kenarları <b>kısadan uzuna</b> sırala.</p>', ust: 'en kısa', alt: 'en uzun', ogeler: ['BC', 'AB', 'AC'], hint: 'Önce m(C)’yi bul: iç açılar toplamı 180°. Küçük açının karşısında kısa kenar bulunur.', hintV: 'Önce C açısını bul: iç açılar toplamı 180 derece. Küçük açının karşısında kısa kenar bulunur.', why: 'm(C) = 180° − 125° = 55°. En küçük açı A (50°), karşısı BC en kısa. Sonra C (55°), karşısı AB. En büyük B (75°), karşısı AC en uzun.', whyV: 'C açısı 180 eksi 125, yani 55 derece. En küçük açı A, 50 derece; karşısındaki B C en kısa kenar. Sonra 55 derecelik C, karşısı A B. En büyük açı 75 derecelik B; karşısındaki A C en uzun kenar.' } },
 
     { t: 'Ortak kenarlı iki üçgen',
       steps: [
@@ -123,6 +139,14 @@
           h: '<div class="an-trap">Üç açı → biçim belli, <b>büyüklük belli değil</b>. Eşitsizliği sağlamayan kenarlarla yaylar hiç kesişmez.</div>' }
       ] },
 
+    { t: 'Doğru mu, yanlış mı?',
+      steps: [{ s: 'Üçgen çizimi ve yardımcı elemanlarla ilgili ifadeleri sına. Her biri için Doğru ya da Yanlış’a dokun.' }],
+      ia: { tip: 'dogruyanlis', q: '<p>Her ifade için karar ver.</p>', ifadeler: [
+            { m: 'Üç açısı verilen bir üçgen tek türlü çizilir.', d: false, a: 'Aynı biçimde, farklı büyüklükte sonsuz üçgen çizilebilir.' },
+            { m: 'İki kenarı ve aradaki açısı verilen üçgen tek türlü çizilir.', d: true, a: 'Kenar–açı–kenar üçgeni tek türlü belirler.' },
+            { m: 'Kenarları 4, 5 ve 9 cm olan üçgen pergelle çizilebilir.', d: false, a: '4 + 5 = 9: yaylar BC üzerinde buluşur, üçgen oluşmaz.' },
+            { m: 'Geniş açılı üçgende bir yükseklik üçgenin dışına düşebilir.', d: true, a: 'Geniş açının yanındaki köşelerden inen yükseklikler dışarıda kalır.' }], hint: 'Tek türlü çizim için ne yeter, hatırla. Kenarlar üçgen eşitsizliğini sağlıyor mu, kontrol et.', why: 'Üç kenar, iki kenar ve aradaki açı ya da bir kenar ve iki açı tek türlü çizim sağlar; üç açı sağlamaz. Eşitsizliği sağlamayan kenarlarla pergel yayları kesişmez.' } },
+
     { t: 'Pisagor bağıntısı',
       base: '<svg class="an-svg" viewBox="0 0 330 192" role="img" aria-label="Kenarları 3, 4, 5 olan dik üçgenin kenarlarına çizilen kareler: 9 artı 16 eşittir 25"><rect x="62" y="74" width="48" height="48" class="rv q1" style="fill:var(--noteline);fill-opacity:.6;stroke:var(--card2)"/><text x="86" y="104" font-size="15" text-anchor="middle" font-weight="700" class="rv q1">9</text><rect x="110" y="122" width="64" height="64" class="rv q1" style="fill:var(--ok);fill-opacity:.6;stroke:var(--card2)"/><text x="142" y="160" font-size="15" text-anchor="middle" font-weight="700" class="rv q1">16</text><path class="rv q2" d="M110 74L174 122L222 58L158 10Z" style="fill:var(--c);fill-opacity:.55;stroke:var(--card2)"/><text x="166" y="72" font-size="17" text-anchor="middle" font-weight="700" class="rv q2">25</text><path class="ln" d="M110 74V122H174Z" style="stroke-width:2.5;fill:var(--card2)"/><path class="ln" d="M110 112h10v10" style="stroke-width:1.5"/><text x="116" y="104" font-size="12" class="mut">3</text><text x="142" y="118" font-size="12" text-anchor="middle" class="mut">4</text><text x="148" y="104" font-size="12" class="mut">5</text><text x="236" y="120" font-size="14" font-weight="700" class="rv q3">9 + 16 = 25</text><text x="236" y="142" font-size="14" font-weight="700" class="acc rv q3">a² + b² = c²</text></svg>',
       steps: [
@@ -133,6 +157,10 @@
           h: '<div class="an-rule"><b>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></b> &nbsp; c = √(a<sup>2</sup> + b<sup>2</sup>) &nbsp;·&nbsp; a = √(c<sup>2</sup> − b<sup>2</sup>)</div>' },
         { s: 'Karıştırma: a² + b² ile (a + b)² aynı şey değil. 9 + 16 = 25, ama 7’nin karesi 49.', v: 'Karıştırma: a kare artı b kare ile, a artı b’nin karesi aynı şey değil. Dokuz artı on altı yirmi beş, ama yedinin karesi kırk dokuz.' }
       ] },
+
+    { t: 'Boşluk doldur: Pisagor',
+      steps: [{ s: 'Hipotenüsü ve bir dik kenarı verilen dik üçgende diğer dik kenarı bul. Hangi kenarın karesinin tek başına kaldığına dikkat et.' }],
+      ia: { tip: 'bosluk', q: '<p>Hipotenüsü 13 cm, bir dik kenarı 5 cm olan dik üçgende diğer dik kenar x olsun.</p>', metin: 'x<sup>2</sup> + 5<sup>2</sup> = 13<sup>2</sup><br>x<sup>2</sup> = [_]<br>x = [_]', secenek: ['144', '194', '64', '12', '8', '13'], cevap: ['144', '12'], hint: '13’ün karesinden 5’in karesini çıkar. Hipotenüs her zaman eşitliğin tek başına kalan tarafıdır.', why: 'x<sup>2</sup> = 169 − 25 = 144, x = 12. 5-12-13 bir Pisagor üçlüsüdür. Kareleri toplayıp 194 demek hipotenüsü dik kenar sanmaktır.', whyV: 'İks kare, 169 eksi 25, yani 144; iks de 12. 5, 12, 13 bir Pisagor üçlüsüdür. Kareleri toplayıp 194 demek, hipotenüsü dik kenar sanmaktır.' } },
 
     { t: 'Pisagor üçlüleri ve hazır sonuçlar',
       steps: [
@@ -152,6 +180,10 @@
         { s: 'Bu farklar bir dik üçgenin dik kenarları. 3-4-5 üçlüsü: |AB| = 5.', v: 'Bu farklar bir dik üçgenin dik kenarları. Üç, dört, beş üçlüsü: A B, beş birim.', on: '.d3' },
         { s: 'Negatif koordinatlarda farka dikkat: −2 ile 4 arası 6 birim.', v: 'Negatif koordinatlarda farka dikkat: eksi iki ile dört arası, altı birim.' }
       ] },
+
+    { t: 'Eşleştir: iki nokta arası uzaklık',
+      steps: [{ s: 'Her nokta çiftini aralarındaki uzaklıkla eşleştir. Yatay ve dikey farkları bul, sonra Pisagor’u kullan.' }],
+      ia: { tip: 'eslestir', q: '<p>Her nokta çiftini aralarındaki uzaklıkla eşleştir.</p>', solBaslik: 'Noktalar', sagBaslik: 'Uzaklık', sol: ['(1, 2) ve (4, 6)', '(−2, 1) ve (4, 9)', '(0, 0) ve (5, 12)', '(2, −3) ve (2, 4)', '(−1, 3) ve (2, 0)'], sag: ['5', '10', '13', '7', '3√2'], hint: 'Yatay farkı ve dikey farkı bul. Biri 0 ise uzaklık doğrudan diğeridir; değilse dik üçgen kur.', why: '(1, 2)–(4, 6): 3 ve 4 → 5. (−2, 1)–(4, 9): 6 ve 8 → 10. (0, 0)–(5, 12): 13. (2, −3)–(2, 4): aynı dikey doğru, 7. (−1, 3)–(2, 0): 3 ve 3 → 3√2.', whyV: 'Birinci çiftte farklar 3 ve 4, uzaklık 5. İkincide 6 ve 8, uzaklık 10. Üçüncüde 5 ve 12, uzaklık 13. Dördüncüde noktalar aynı dikey doğruda, uzaklık 7. Sonuncuda farklar 3 ve 3, uzaklık 3 kök 2.' } },
 
     { t: 'Gerçek hayatta Pisagor',
       steps: [
