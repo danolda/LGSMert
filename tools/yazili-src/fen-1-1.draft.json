@@ -1,0 +1,157 @@
+{
+ "id": "fen-1-1",
+ "sid": "fen",
+ "donem": 1,
+ "yazili": 1,
+ "q": [
+  {
+   "no": 1,
+   "text": "Güneş ışınlarının dönencelere ve Ekvator’a dik açıyla geldiği tarihlerdeki konumlar numaralarla, bu tarih\naralıklarında yaşanan mevsimler harflerle gösterilmiştir.\n4\nL\nK\n1\n3\nM N\n2\nGörselde verilenlere göre aşağıdaki soruları cevaplayınız.\na) Güneş ışınları verilen konumlardan hangilerinde dönencelere, hangilerinde Ekvator’a dik\naçıyla gelir? Yazınız.\nb) 2 ve 4 konumlarında tüm Dünya’da gece ve gündüz eşitliği yaşanır. Bu durumun nedenini\nkısaca açıklayınız.\nFEN BİLİMLERİ\nc) Kuzey yarım kürede gündüz sürelerinin giderek uzadığı ve gündüzlerin gecelerden daha uzun\nolduğu aralık hangisidir? Yazınız.",
+   "parts": [
+    {
+     "label": "a",
+     "key": ""
+    },
+    {
+     "label": "b",
+     "key": ""
+    },
+    {
+     "label": "c",
+     "key": ""
+    }
+   ],
+   "sol_text": "a)\nYengeç Dönencesi’ne dik açıyla geldiği tarihteki konum: 1\nOğlak Dönencesi’ne dik açıyla geldiği tarihteki konum: 3\nEkvator’a dik açıyla geldiği tarihteki konumlar: 2 ve 4\nb)\n2 ve 4 konumlarında Güneş ışınları Ekvator’a dik düşer ve eksen eğikliğinin etkisi ortadan kalkar. Güneş\nışınları iki yarım küredeki dönencelere eşit açıyla ulaşır. Bu nedenle tüm Dünya’da gece-gündüz eşitliği\nyaşanır.\nc)\nKuzey yarım kürede K ve L aralıklarında gündüzler uzar, geceler kısalır. K aralığında gündüzler uzar\nfakat gündüz süresi gece süresinden azdır. L aralığında ise gündüzler uzar, geceler kısalır, gündüz\nsüresi gece süresinden fazladır.\nveya\nGündüz süresinin uzuyor olması ve gündüz süresinin gece süresinden fazla olması, ilkbahar mevsiminin\nyaşandığı aralıkta gerçekleşir. Bu özelliklere sahip olan aralık kuzey yarım kürede ilkbaharın yaşandığı\nL aralığı olmalıdır.\nFEN BİLİMLERİ"
+  },
+  {
+   "no": 2,
+   "text": "Aşağıdaki tabloda Dünya üzerinde hangi yarım kürede olduğu bilinmeyen K şehrinde birbirini takip eden\n3 gün için gece ve gündüz süreleri verilmiştir.\nK Şehri Gündüz Süresi Gece Süresi\n1. gün 12 saat 2 dakika 11 saat 58 dakika\n2. gün 12 saat 12 saat\n3. gün 11 saat 58 dakika 12 saat 2 dakika\nBuna göre tabloda verilen bilgilerle birlikte hangi bilgi verilirse K şehrinin bulunduğu yarım küre\ntespit edilebilir? Açıklayınız.",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Tabloya bakıldığında birbirini takip eden 3 günlük sürede gündüzlerin kısaldığı ve 2. günde\ngece-gündüz eşitliği yaşandığı görülmektedir. Gündüzlerin kısalması sonucu ulaşılan ekinoks, gece ve\ngündüz sürelerinin verildiği yarım kürede sonbahar mevsiminin yaşandığı tarihtir. Kuzey yarım kürede\n23 Eylül’de, güney yarım kürede 21 Mart’ta sonbahar ekinoksu yaşanır. Bu nedenle tabloda\ngece-gündüz süreleri verilen günlerden herhangi birinin tarihi verilirse K şehrinin bulunduğu yarım küre\ntespit edilebilir."
+  },
+  {
+   "no": 3,
+   "text": "Aşağıdaki görselde hücre çekirdeğinde bulunan kalıtsal yapılar numaralandırılarak gösterilmiştir.\nI\nII\nIII\nIV\nVerilen yapılarla ilgili aşağıdaki soruları cevaplayınız.\na) DNA üzerinde bulunan ve belirli FEN bir özellikten BİLİMLERİ sorumlu yapı hangisidir?\nb) DNA molekülünün yapı birimi hangisidir?\nc) Verilen yapıları karmaşıktan (büyükten) basite (küçüğe) doğru sıralayınız.",
+   "parts": [
+    {
+     "label": "a",
+     "key": ""
+    },
+    {
+     "label": "b",
+     "key": ""
+    },
+    {
+     "label": "c",
+     "key": ""
+    }
+   ],
+   "sol_text": "a)\nGen (III)\nb)\nNükleotid (IV)\nc)\nKromozom > DNA > Gen > Nükleotid veya I > II > III > IV"
+  },
+  {
+   "no": 4,
+   "text": "Aşağıda adenin ve guanin nükleotidlerine ait görsel verilmiştir.\nAdenin Guanin\norganik bazı organik bazı\nFosfat Fosfat\nP P\nD D\nA G\nŞeker Şeker\nAdenin nükleotidi Guanin nükleotidi\nGörselde verilenlere göre soruları cevaplayınız.\na) Nükleotidlerde ortak olan yapılar hangileridir? Yazınız.\nb) Nükleotidin adını belirleyen yapı hangisidir? Yazınız.\nc) Aşağıda verilen görselleri kullanarak timin ve sitozin nükleotidlerini çiziniz.\nP T C\nD",
+   "parts": [
+    {
+     "label": "a",
+     "key": ""
+    },
+    {
+     "label": "b",
+     "key": ""
+    },
+    {
+     "label": "c",
+     "key": ""
+    }
+   ],
+   "sol_text": "a)\nFosfat ve şeker\nb)\nOrganik baz\nc)\nSitozin\nTimin\nFosfat Fosfat organik bazı\norganik bazı\nP P\nT C\nD D\nŞeker Şeker\nTimin nükleotidi Sitozin nükleotidi"
+  },
+  {
+   "no": 5,
+   "text": "Bir öğrenci DNA eşlenmesindeki olayları eşleme sırasına göre maddeler hâlinde aşağıdaki gibi\nsıralamıştır.\n1. DNA molekülünde karşılıklı zincirlere dizilmiş olan nükleotidlerin arasındaki bağlar kopmaya başlar.\nFEN BİLİMLERİ\n2. DNA’nın iki zinciri birbirinden tamamen ayrılır.\n3. Çekirdeği olan hücrelerde çekirdekte serbest hâlde bulunan nükleotidler, sitoplazmaya geçerek\naçılan zincirlerdeki uygun nükleotidlerin karşısına bağlanır.\n4. Birbirinin aynısı iki DNA molekülü oluşur.\nÖğrenci, DNA eşlenmesinde iki maddede hatalı ifadeler kullanmıştır. Bu maddeleri tespit ederek\nhatalı ifadeleri düzeltip yeniden yazınız.",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "2 ve 3. maddelerde hata yapılmıştır. Hatalar aşağıdaki gibi düzeltilmelidir:\n2. DNA’nın iki zinciri bir fermuar gibi açılmaya başlar.\n3. Çekirdeği olan hücrelerde sitoplazmada serbest hâlde bulunan nükleotidler, çekirdeğe geçerek açılan\nzincirlerdeki uygun nükleotidlerin karşısına bağlanır.\nFEN BİLİMLERİ"
+  },
+  {
+   "no": 6,
+   "text": "Aşağıdaki görselde bir DNA molekülünün kendini hatasız eşlemesi modellenmiştir.\nI II\nYeni zincir\nI. zincir\nA G T G G A\nAG T A A C\nII. zincir\nYeni zincir\nBuna göre I ve II numaralı zincirlerin nükleotid dizilimlerini bulunuz.\nI numaralı zincir:\nII numaralı zincir:",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Oluşan DNA’lar birbirinin ve ana DNA’nın kopyasıdır. Bu nedenle oluşan DNA’ların verilen nükleotid\ndiziliminden eksik kısımları tamamlanabilir.\nI numaralı zincir: AGACCTTCATAC\nII numaralı zincir: TCTGGAAGTATG"
+  },
+  {
+   "no": 7,
+   "text": "Dünya üzerindeki konumu bilinmeyen bir elektrik direğinin gölgesi, 21 Haziran tarihinde Güneş\nışınlarının en tepede olduğu saatte güney yönünde 2 metre olarak ölçülmüştür. Aynı elektrik direğinin\ngölgesinin, 21 Aralık tarihinde Güneş ışınlarının en tepede olduğu saatte kuzey yönünde 2 metre olduğu\nbelirlenmiştir.\nElektrik direğinin Dünya üzerindeki konumunu verilen bilgilerden yararlanarak belirleyiniz ve bu\nsonuca nasıl ulaştığınızı açıklayınız.",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Cisim Ekvator üzerinde yer alır. Çünkü Güneş ışınlarının dönencelere dik düştüğü tarihlerde cismin\ngölgesi farklı yönlerde ve eşit uzunlukta ölçülmüştür. Yani 21 Haziran ve 21 Aralık tarihlerinde Güneş’in\nen tepede olduğu saatte ışınlar, cismin bulunduğu yere aynı açıyla ulaşmıştır."
+  },
+  {
+   "no": 8,
+   "text": "Bezelyelerde sarı tohum özelliğinden sorumlu alel, yeşil tohum özelliğinden sorumlu alele baskındır.\nFEN BİLİMLERİ\nTohum rengi bakımından heterozigot bir bezelye ile yeşil tohumlu bir bezelyeyi çaprazlayarak\noluşabilecek bezelyelerin genotip ve fenotip oranlarını bulup aşağıya yazınız.",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Sarı tohum: A Yeşil tohum: a\nA a\nHeterozigot X Homozigot çekinik\nAa aa\nAa X aa a\nSarı tohum Yeşil tohum\nGenotip:\nAa aa\n%50 Heterozigot (Aa) a\nSarı tohum Yeşil tohum\n%50 Homozigot çekinik (aa)\nFenotip:\n%50 Sarı\n%50 Yeşil"
+  },
+  {
+   "no": 9,
+   "text": "Aşağıdaki tabloda çiçek rengi bakımından genotipleri verilen bezelye bitkilerinin genotiplerini\nharflerle belirtiniz ve fenotiplerini yazınız. (Bezelyelerde mor çiçek özelliğinden sorumlu alel, beyaz\nçiçek özelliğinden sorumlu alele baskındır.)\nGenotip Fenotip\nHeterozigot\nHomozigot baskın\nHomozigot çekinik",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Genotip Fenotip\nHeterozigot Aa Mor\nHomozigot baskın AA Mor\nHomozigot çekinik aa Beyaz"
+  },
+  {
+   "no": 10,
+   "text": "Tohum rengi bakımından fenotipleri farklı iki bezelyenin çaprazlanması sonucunda oluşabilecek tüm\nbezelyelerin aynı fenotipte olacağı görülmüştür.\na) Çaprazlanan bezelyelerin genotiplerini yazınız.\nb) Çaprazlama sonucunda oluşabilecek bezelyelerde çekinik özellikten sorumlu alelin bulunma\nihtimali yüzde kaçtır?",
+   "parts": [
+    {
+     "label": "a",
+     "key": ""
+    },
+    {
+     "label": "b",
+     "key": ""
+    }
+   ],
+   "sol_text": "a)\nHomozigot baskın : AA\nHomozigot çekinik : aa\nb)\nÇaprazlama sonucu oluşabilecek tüm FEN bezelyelerde BİLİMLERİ çekinik özellikten sorumlu alel bulunur. Çekinik\nözellikten sorumlu alelin bulunma ihtimali %100’dür."
+  },
+  {
+   "no": 11,
+   "text": "Bezelyelerde mor çiçek özelliğinden sorumlu alel, beyaz çiçek özelliğinden sorumlu alele baskındır.\nYapılan bir çaprazlamada mor çiçekli K bezelyesi ile beyaz çiçekli L bezelyesi çaprazlanmış, mor ve\nbeyaz çiçekli bezelyeler oluşmuştur.\nBuna göre çaprazlamada kullanılan K bezelyesinin genotipini belirleyerek bu sonuca ulaşma\nnedeninizi açıklayınız.\nFEN BİLİMLERİ",
+   "parts": [
+    {
+     "label": "",
+     "key": ""
+    }
+   ],
+   "sol_text": "Mor çiçekli olma özelliğinden sorumlu alel baskın olduğu ve K bezelyesi mor çiçekli olduğu için\nK bezelyesinin çiçek rengini belirleyen alellerden en az biri mor çiçek özelliğini belirleyen alel olmalıdır.\nK ile beyaz çiçekli L’nin çaprazlanmasından beyaz çiçekli bezelye oluşabilmesi için mor çiçekli\nK bezelyesinden beyaz çiçek aleli gelmelidir. Buna göre K bezelyesinde hem mor çiçek özelliğini\nbelirleyen alel hem de beyaz çiçek özelliğini belirleyen alel birlikte bulunmalıdır. K bezelyesinin genotipi\nheterozigottur."
+  }
+ ]
+}

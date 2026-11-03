@@ -1,0 +1,219 @@
+{
+ "id": "mat-1-2",
+ "sid": "mat",
+ "donem": 1,
+ "yazili": 2,
+ "min": 40,
+ "q": [
+  {
+   "no": 1,
+   "text": "Şekilde A, C, B noktaları doğrusaldır (sırasıyla A, C, B). |AC| = √48 cm, |AB| = √300 cm. Buna göre |CB| kaç santimetredir?",
+   "parts": [
+    {
+     "label": "",
+     "key": "6√3 cm (|AC| = 4√3, |AB| = 10√3; 10√3 – 4√3 = 6√3)"
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "text": "Mor küpün ayrıt uzunluğu √1,44 dm, turuncu küpün ayrıt uzunluğu √2,25 dm'dir. Buna göre turuncu renkli küp ile mor renkli küpün yükseklikleri farkı kaç desimetredir?",
+   "parts": [
+    {
+     "label": "",
+     "key": "0,3 dm (√1,44 = 1,2; √2,25 = 1,5; 1,5 – 1,2 = 0,3)"
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "text": "Aşağıda verilen sayıları, rasyonel ve irrasyonel sayıları gösteren tabloya doğru şekilde yazınız: √81, 8/20, 5√6, 4,8̄ (8 devirli), –9, π, √21, √14, 0,32, –7√7\nRasyonel sayılar: ...\nİrrasyonel sayılar: ...",
+   "parts": [
+    {
+     "label": "Rasyonel",
+     "key": "0,32; √81; –9; 8/20; 4,8̄"
+    },
+    {
+     "label": "İrrasyonel",
+     "key": "5√6; π; √14; –7√7; √21"
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "text": "Grafikte iki arkadaşın üç günde çözdüğü soru sayıları verilmiştir. Ali: Pazartesi 50, Salı 25, Çarşamba 20. Yusuf: Pazartesi 30, Salı 40, Çarşamba 15. Ali'nin 3 günde çözdüğü toplam soru sayısını ve Yusuf'un 3 günde çözdüğü toplam soru sayısını ayrı ayrı hesaplayınız.",
+   "parts": [
+    {
+     "label": "Ali",
+     "key": "95 soru (50 + 25 + 20)"
+    },
+    {
+     "label": "Yusuf",
+     "key": "85 soru (30 + 40 + 15)"
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "text": "30 kişilik bir sınıfta başkanlık oylamasında öğrencilerin aldığı oy sayıları: Arda 3, Ayşe 12, Kaan 6, Gül 9. Bu bilgilere göre oluşturulan daire grafiğinde Ayşe'nin aldığı oyların merkez açısı kaç derecedir?",
+   "parts": [
+    {
+     "label": "",
+     "key": "144° (360 · 12 / 30)"
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "text": "1'den 12'ye kadar olan sayılar, eş büyüklükteki kartlara yazılarak bir torbaya atılıyor. Torbadan rastgele çekilen bir kartın üzerinde asal sayı yazması olayının olası durum sayısı kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "5 (2, 3, 5, 7, 11)"
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "text": "I. 3√27 · 7√3\nII. 6√8 · 3√2\nIII. 5√3 · √2\nIV. 2√12 · 3√3\nYukarıdaki çarpma işlemlerinin sonuçlarını hesaplayınız ve sonuçların tam sayı olup olmadıklarını belirtiniz.",
+   "parts": [
+    {
+     "label": "I",
+     "key": "189, tam sayıdır"
+    },
+    {
+     "label": "II",
+     "key": "72, tam sayıdır"
+    },
+    {
+     "label": "III",
+     "key": "5√6, tam sayı değildir"
+    },
+    {
+     "label": "IV",
+     "key": "36, tam sayıdır"
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "text": "Alanı 45 cm² olan bir karenin kenar uzunluğu santimetre cinsinden hangi ardışık tam sayılar arasındadır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "6 ile 7 arasındadır (√36 < √45 < √49)"
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "text": "Bir mahallenin 3⁴ sokağı vardır. Her bir sokakta ortalama 2⁴ bina bulunduğuna göre bu mahallede toplam kaç bina vardır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "6⁴ = 1296 bina (3⁴ · 2⁴ = (3 · 2)⁴)"
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "text": "Ardışık iki doğal sayının EBOB'u ile EKOK'unun toplamı 111 ise bu sayıların toplamı kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "21 (EBOB = 1, EKOK = 110 = 10 · 11; 10 + 11)"
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "text": "1673 · 10⁻³⁰ = 16,73 · 10^x eşitliğini sağlayan x değeri kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "–28"
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "text": "5√7 = √b olduğuna göre b sayısı kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "175 (√(25 · 7))"
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "text": "İçerisinde 5 kırmızı, 8 yeşil, 4 mavi, 5 mor renkte özdeş topların bulunduğu torbadan rastgele bir top çekiliyor. Aşağıdaki boşluklara \"daha fazla\", \"daha az\" veya \"eşit\" ifadelerinden uygun olanı yazınız.\na) Yeşil top çekme olasılığı ...\nb) Mavi top çekme olasılığı ...\nc) Kırmızı ve mor top çekme olasılığı ...",
+   "parts": [
+    {
+     "label": "a",
+     "key": "daha fazla"
+    },
+    {
+     "label": "b",
+     "key": "daha az"
+    },
+    {
+     "label": "c",
+     "key": "eşit"
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "text": "45 sayısının pozitif tam sayı çarpanları ayrı ayrı eşit büyüklükteki kartlara yazılıp bir torbaya atılıyor. Torbadan rastgele çekilen bir kartta 5 sayısının yazma olasılığı kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "1/6 (çarpanlar 1, 3, 5, 9, 15, 45)"
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "text": "Hedef tahtası eş parçalara ayrılmıştır; parçalardaki sayılar: 5, 15, 12, 20, 18, 27, 32, 14. Leyla'nın isabet ettirdiği sayının 5'in katı olma olasılığı kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "3/8 (5, 15, 20)"
+    }
+   ]
+  },
+  {
+   "no": 16,
+   "text": "3√3 · (8/√6) / (6/√2) işleminin sonucu kaçtır?",
+   "parts": [
+    {
+     "label": "",
+     "key": "4"
+    }
+   ]
+  },
+  {
+   "no": 17,
+   "text": "9x² + 5y – 1 cebirsel ifadesindeki terimleri, değişkenleri, katsayıları ve sabit terimi yazınız.",
+   "parts": [
+    {
+     "label": "Terimler",
+     "key": "9x², 5y, –1"
+    },
+    {
+     "label": "Değişkenler",
+     "key": "x ve y"
+    },
+    {
+     "label": "Katsayılar",
+     "key": "9, 5, –1 (MEB cevabı; –1 aynı zamanda sabit terimdir)"
+    },
+    {
+     "label": "Sabit terim",
+     "key": "–1"
+    }
+   ]
+  }
+ ]
+}

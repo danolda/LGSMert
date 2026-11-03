@@ -1,0 +1,8 @@
+# id  kaynak PDF (MEB/MEBİ Yazılıya Hazırlanıyorum, 8. sınıf)
+mat-1-1 mat1.pdf (Matematik 1. Dönem 1. Yazılı)
+mat-1-2 Matematik 1. Dönem 2. Yazılı
+fen-1-1 fen1.pdf (Fen Bilimleri 1. Dönem 1. Yazılı)
+tr-1-1 Türkçe 1. Dönem 1. Yazılı
+ink-1-1 T.C. İnkılap Tarihi ve Atatürkçülük 1. Dönem 1. Yazılı
+din-1-1 Din Kültürü ve Ahlak Bilgisi 1. Dönem 1. Yazılı
+ing-1-1 İngilizce 1. Dönem 1. Yazılı

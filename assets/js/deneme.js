@@ -50,7 +50,7 @@
       if (err || !Array.isArray(rows)) return;
       var seen = {}, all = [];
       loc.forEach(function (h) { if (h.id) seen[h.id] = 1; all.push({ lid: h.lid, id: h.id, at: h.at, summary: h.summary }); });
-      rows.forEach(function (r) { if (!seen[r.id]) all.push({ id: r.id, at: new Date(r.at).getTime(), summary: r.summary }); });
+      rows.forEach(function (r) { if (r.summary && r.summary.kind === 'yazili') return; if (!seen[r.id]) all.push({ id: r.id, at: new Date(r.at).getTime(), summary: r.summary }); });
       all.sort(function (a, b) { return b.at - a.at; });
       if (location.hash.indexOf('#/deneme') === 0 && document.getElementById('dnList')) draw(all);
     });
