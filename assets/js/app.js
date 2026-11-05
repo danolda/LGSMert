@@ -108,9 +108,13 @@
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
     };
+    var mebidDone = function () { // MEBİ LGS denemeleri 2025-26 (data/meb/mebid-<ders>.js)
+      if (!(LGS.mebidSubj || {})[sid] || LGS.mebidLoaded[sid]) return pastDone();
+      loadScript('data/meb/mebid-' + sid + '.js', function () { LGS.mebidLoaded[sid] = true; pastDone(); });
+    };
     var mebiDone = function () {
-      if (!(LGS.mebiSubj || {})[sid] || LGS.mebiLoaded[sid]) return pastDone();
-      loadScript('data/meb/mebi-' + sid + '.js', function () { LGS.mebiLoaded[sid] = true; pastDone(); });
+      if (!(LGS.mebiSubj || {})[sid] || LGS.mebiLoaded[sid]) return mebidDone();
+      loadScript('data/meb/mebi-' + sid + '.js', function () { LGS.mebiLoaded[sid] = true; mebidDone(); });
     };
     var mebDone = function () {
       if (!LGS.mebSubj[sid] || LGS.mebLoaded[sid]) return mebiDone();
@@ -227,6 +231,7 @@
   }
 
   var LV = [['kolay', 'Kolay', 'ko'], ['orta', 'Orta', 'or'], ['zor', 'Zor', 'zr']];
+  function ansOnly(a) { return '<div class="sv"><p class="small">Bu soru için MEB yalnızca cevap anahtarını yayımladı; ayrıntılı çözüm yok.</p><div class="sv-a">Cevap <b>' + a + '</b></div></div>'; }
   function hasLevels(t) { return (t.qs || []).some(function (q) { return !!q.lv; }); }
   function buildList(t) {
     var list = [];
@@ -242,7 +247,7 @@
     mb.sort(function (x, y) { var a = LGS.meb[x], b = LGS.meb[y]; return (a.o || 0) - (b.o || 0) || (x < y ? -1 : 1); });
     mb.forEach(function (mid, n) {
       var o = LGS.meb[mid];
-      list.push({ key: 'm:' + mid, past: true, meb: true, grp: 'meb', n: n + 1, no: n + 1, img: 'img/meb/' + mid + '.webp', a: o.a, s: o.s, lb: o.lb });
+      list.push({ key: 'm:' + mid, past: true, meb: true, grp: 'meb', n: n + 1, no: n + 1, img: 'img/meb/' + mid + '.webp', a: o.a, s: o.s || ansOnly(o.a), lb: o.lb });
     });
     if (hasLevels(t)) {
       LV.forEach(function (lv) {
@@ -1130,7 +1135,7 @@
   getStats(); xpBarSet(xpGet().total); drawNavUser();
   window.LGSApp.route = route;
   var A_ = window.LGSApp;
-  A_.buildList = buildList; A_.loadTopic = loadTopic; A_.subjOf = subjOf; A_.fmt = fmt; A_.esc = esc; A_.avatarHtml = avatarHtml;
+  A_.buildList = buildList; A_.loadTopic = loadTopic; A_.loadScript = loadScript; A_.subjOf = subjOf; A_.fmt = fmt; A_.esc = esc; A_.avatarHtml = avatarHtml;
   A_.levelOf = levelOf; A_.rankOf = rankOf; A_.rankTag = rankTag; A_.setCrumbs = setCrumbs; A_.fitSvgs = fitSvgs; A_.toast = toast; A_.nf = nf; A_.awardXP = awardXP; A_.gainFx = gainFx; A_.logAnswer = logAnswer; A_.xpBarSet = xpBarSet;
   setTimeout(route, 0);
 })();
