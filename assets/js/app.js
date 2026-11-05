@@ -708,6 +708,7 @@
       '<div class="name-row"><input id="nameIn" maxlength="24" autocomplete="nickname" placeholder="Adını yaz" value="' + esc(p.name || '') + '">' +
       '<button class="btn" id="nameSave">Kaydet</button></div><p class="small" id="nameMsg"></p>' +
       '<p class="small">Adın, fotoğrafın ve istatistiklerin diğer kullanıcılara görünür. Gerçek soyadını yazmamanı öneririz.</p></div></div>' +
+      '<div id="acctBox"></div>' +
       '<div class="card find"><label for="findIn"><b>🔎 Diğer kullanıcılar</b></label>' +
       '<input id="findIn" placeholder="Kullanıcı adı ara" autocomplete="off"><ul id="findList" class="find-list"></ul>' +
       '<p class="small" id="findMsg"></p></div>' +
@@ -715,6 +716,7 @@
       '<h1 class="st-h">📊 İstatistiklerim</h1>' +
       statsBlock(summaryFor(getStats())) +
       '<p class="small">Bu kayıt konu sayfalarındaki “Temizle” düğmesiyle silinmez; çözdüğün her soru buraya eklenir.</p></div>';
+    if (window.LGSCloud && window.LGSCloud.renderAcct) window.LGSCloud.renderAcct(document.getElementById('acctBox'));
     var nameIn = document.getElementById('nameIn'), msg = document.getElementById('nameMsg');
     document.getElementById('nameSave').addEventListener('click', function () {
       var n = nameIn.value.trim().replace(/\s+/g, ' ');
@@ -1129,6 +1131,6 @@
   window.LGSApp.route = route;
   var A_ = window.LGSApp;
   A_.buildList = buildList; A_.loadTopic = loadTopic; A_.subjOf = subjOf; A_.fmt = fmt; A_.esc = esc; A_.avatarHtml = avatarHtml;
-  A_.levelOf = levelOf; A_.rankOf = rankOf; A_.rankTag = rankTag; A_.setCrumbs = setCrumbs; A_.fitSvgs = fitSvgs; A_.toast = toast; A_.nf = nf; A_.awardXP = awardXP; A_.gainFx = gainFx; A_.logAnswer = logAnswer;
+  A_.levelOf = levelOf; A_.rankOf = rankOf; A_.rankTag = rankTag; A_.setCrumbs = setCrumbs; A_.fitSvgs = fitSvgs; A_.toast = toast; A_.nf = nf; A_.awardXP = awardXP; A_.gainFx = gainFx; A_.logAnswer = logAnswer; A_.xpBarSet = xpBarSet;
   setTimeout(route, 0);
 })();
