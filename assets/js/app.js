@@ -108,9 +108,13 @@
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
     };
+    var ornekDone = function () { // MEB LGS örnek soru kitapçıkları 2024-25 (data/meb/ornek24-<ders>.js)
+      if (!(LGS.ornek24Subj || {})[sid] || LGS.ornek24Loaded[sid]) return pastDone();
+      loadScript('data/meb/ornek24-' + sid + '.js', function () { LGS.ornek24Loaded[sid] = true; pastDone(); });
+    };
     var mebidDone = function () { // MEBİ LGS denemeleri 2025-26 (data/meb/mebid-<ders>.js)
-      if (!(LGS.mebidSubj || {})[sid] || LGS.mebidLoaded[sid]) return pastDone();
-      loadScript('data/meb/mebid-' + sid + '.js', function () { LGS.mebidLoaded[sid] = true; pastDone(); });
+      if (!(LGS.mebidSubj || {})[sid] || LGS.mebidLoaded[sid]) return ornekDone();
+      loadScript('data/meb/mebid-' + sid + '.js', function () { LGS.mebidLoaded[sid] = true; ornekDone(); });
     };
     var mebiDone = function () {
       if (!(LGS.mebiSubj || {})[sid] || LGS.mebiLoaded[sid]) return mebidDone();

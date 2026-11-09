@@ -33,14 +33,24 @@
   }
   function qOf(it) { var t = LGS.topics[it.tid]; if (!t) return null; return A.buildList(t).filter(function (q) { return q.key === it.key; })[0] || null; }
   function hist() { return A.jget(HIST, []); }
-  /* MEBİ LGS Denemeleri 2025-26: gerçek LGS düzeni, iki oturum */
+  /* Resmî deneme serileri (gerçek LGS düzeni, iki oturum): MEBİ Denemeleri 2025-26 ve MEB Örnek Soru Kitapçıkları 2024-25.
+     Kayıtta cur.mebi / summary.mebi = { n, parts, v, s } (s yoksa 'mebi': eski kayıtlarla uyumlu) */
   var MS = { soz: { n: 'Sözel', min: 75, subs: ['tr', 'ink', 'din', 'ing'], q: 50 }, say: { n: 'Sayısal', min: 80, subs: ['mat', 'fen'], q: 40 } };
-  function mebiIdx(cb) { if (LGS.mebid) return cb(LGS.mebid); A.loadScript('data/meb/mebid.js', function () { cb(LGS.mebid || null); }); }
-  function mebiTitle(m) { return 'MEBİ Deneme ' + m.n + ' · ' + m.parts.map(function (k) { return MS[k].n; }).join(' + '); }
+  // örnek kitapçıklar 25 + 20 soru; süre LGS hızıyla orantılı (Sözel 50 soru/75 dk → 25 soru 38 dk, Sayısal 40 soru/80 dk → 20 soru 40 dk)
+  var OS = { soz: { n: 'Sözel', min: 38, subs: ['tr', 'ink', 'din', 'ing'], q: 25 }, say: { n: 'Sayısal', min: 40, subs: ['mat', 'fen'], q: 20 } };
+  var MAY = ['Kasım 2025', 'Aralık 2025', 'Ocak 2026', 'Şubat 2026', 'Mart 2026', 'Nisan 2026', 'Nisan sonu 2026', 'Mayıs ortası 2026', 'Mayıs sonu 2026', 'Haziran 2026', 'Haziran 2026', 'Haziran 2026'];
+  var SER = {
+    mebi: { n: 12, name: 'MEBİ Deneme', icon: '🏛️', v: '2025-26', file: 'data/meb/mebid.js', g: 'mebid', ms: MS, may: MAY, cnt: { tr: 20, ink: 10, din: 10, ing: 10, mat: 20, fen: 20 } },
+    ornek: { n: 3, name: 'MEB Örnek', icon: '📘', v: '2024-25', file: 'data/meb/ornek24.js', g: 'ornek24', ms: OS, may: ['Kasım 2024', 'Şubat 2025', 'Nisan 2025'], cnt: { tr: 10, ink: 5, din: 5, ing: 5, mat: 10, fen: 10 } }
+  };
+  function skOf(m) { return (m && m.s) || 'mebi'; }
+  function serIdx(sk, cb) { var S = SER[sk]; if (LGS[S.g]) return cb(LGS[S.g]); A.loadScript(S.file, function () { cb(LGS[S.g] || null); }); }
+  function serName(sk, n) { return sk === 'ornek' ? 'MEB Örnek ' + SER.ornek.may[n - 1] : SER[sk].name + ' ' + n; }
+  function mebiTitle(m) { var sk = skOf(m); return serName(sk, m.n) + ' · ' + m.parts.map(function (k) { return SER[sk].ms[k].n; }).join(' + '); }
   function partNet(S, k) { var ok = 0, bad = 0, has = 0; MS[k].subs.forEach(function (sid) { var b = S.by && S.by[sid]; if (b) { ok += b.ok; bad += b.bad; has = 1; } }); return has ? net(ok, bad) : null; }
-  function mebiBest(rows) { // deneme no → {soz: en iyi net, say: …, c: çözülme sayısı}
+  function mebiBest(rows, sk) { // deneme no → {soz: en iyi net, say: …, c: çözülme sayısı} (yalnız bu seri)
     var o = {}; rows.forEach(function (r) {
-      var S = r.summary || {}, m = S.mebi; if (!m) return;
+      var S = r.summary || {}, m = S.mebi; if (!m || skOf(m) !== (sk || 'mebi')) return;
       var b = o[m.n] || (o[m.n] = { c: 0 }); b.c++;
       m.parts.forEach(function (k) { var v = partNet(S, k); if (v != null && (b[k] == null || v > b[k])) b[k] = v; });
     }); return o;
@@ -57,6 +67,8 @@
       (cur ? '<a class="card dn-resume" href="#/deneme/coz"><b>⏱ Yarım kalan denemen var</b><span>' + cur.items.length + ' soru · kalan süre ' + mmss(cur.end - Date.now()) + '</span><em>Devam et →</em></a>' : '') +
       '<h2 class="dn-h2">🏛️ MEBİ Denemeleri 2025-26</h2><p class="small dn-mb-note">MEB\'in 12 LGS denemesi, gerçek sınav düzeninde: Sözel oturum 50 soru / 75 dk, Sayısal oturum 40 soru / 80 dk. Bir oturumu ya da ikisini birden seç.</p>' +
       '<div class="dn-mb-g" id="dnMebi">' + mebiCards({}) + '</div>' +
+      '<h2 class="dn-h2">📘 MEB Örnek Sorular 2024-25</h2><p class="small dn-mb-note">MEB\'in 2024-25 örnek soru kitapçıkları (Kasım, Şubat, Nisan), her biri 45 soru. Süreler gerçek LGS hızıyla orantılı: Sözel oturum 25 soru / 38 dk, Sayısal oturum 20 soru / 40 dk. Bir oturumu ya da ikisini birden seç.</p>' +
+      '<div class="dn-mb-g" id="dnOrnek">' + mebiCards({}, 'ornek') + '</div>' +
       '<h2 class="dn-h2">Geçmiş Denemelerim</h2><div id="dnList"><p class="loading">Yükleniyor…</p></div></div>';
     var loc = hist();
     draw(loc.map(function (h) { return { lid: h.lid, id: h.id, at: h.at, summary: h.summary }; }));
@@ -70,6 +82,7 @@
     });
     function draw(rows) {
       var mb = document.getElementById('dnMebi'); if (mb) mb.innerHTML = mebiCards(mebiBest(rows));
+      var ob = document.getElementById('dnOrnek'); if (ob) ob.innerHTML = mebiCards(mebiBest(rows, 'ornek'), 'ornek');
       var box = document.getElementById('dnList'); if (!box) return;
       if (!rows.length) { box.innerHTML = '<p class="empty">Henüz deneme çözmedin. İlk denemeni oluştur!</p>'; return; }
       var trend = rows.length >= 2 ? trendSvg(rows.slice(0, 12).reverse()) : '';
@@ -84,49 +97,58 @@
     }
   }
 
-  var MAY = ['Kasım 2025', 'Aralık 2025', 'Ocak 2026', 'Şubat 2026', 'Mart 2026', 'Nisan 2026', 'Nisan sonu 2026', 'Mayıs ortası 2026', 'Mayıs sonu 2026', 'Haziran 2026', 'Haziran 2026', 'Haziran 2026'];
-  function mebiScope(n, cb) { // denemede çıkan konular, derslere göre müfredat sırasıyla
-    mebiIdx(function (ix) {
+  function mebiScope(sk, n, cb) { // denemede çıkan konular, derslere göre müfredat sırasıyla
+    var SR = SER[sk];
+    serIdx(sk, function (ix) {
       var d = ix && ix[n]; if (!d) return cb('');
-      var by = {}; ['soz', 'say'].forEach(function (k) { (d[k] || []).forEach(function (p) { var sid = p[0].split('-')[1]; (by[sid] = by[sid] || {})[p[1]] = (by[sid][p[1]] || 0) + 1; }); });
+      var cnt = function (dd) { var by = {}; ['soz', 'say'].forEach(function (k) { (dd[k] || []).forEach(function (p) { var sid = p[0].split('-')[1]; (by[sid] = by[sid] || {})[p[1]] = (by[sid][p[1]] || 0) + 1; }); }); return by; };
+      var by = cnt(d), upto = {};
+      // örnek kitapçıklar birikimli: ünite sınırı bu ve önceki kitapçıklarda çıkan en ileri üniteden
+      for (var j = (sk === 'ornek' ? 1 : n); j <= n; j++) if (ix[j]) { var c2 = cnt(ix[j]); for (var s2 in c2) upto[s2] = Object.assign(upto[s2] || {}, c2[s2]); }
       var h = ['tr', 'mat', 'fen', 'ink', 'din', 'ing'].map(function (sid) {
-        var s = subj(sid), c = by[sid]; if (!s || !c) return '';
+        var s = subj(sid), c = by[sid], u = upto[sid] || c; if (!s || !c) return '';
         var ts = s.topics.filter(function (t) { return c[t.id]; }), last = -1;
-        s.topics.forEach(function (t, i) { if (c[t.id]) last = i; });
-        var upto = sid === 'tr' ? 'Paragraf ve anlam soruları her denemede var' : (last + 1) + '. üniteye kadar';
-        return '<details class="dn-kap-d"><summary><b>' + s.icon + ' ' + esc(s.name) + '</b><span>' + upto + '</span></summary><ul>' +
+        s.topics.forEach(function (t, i) { if (u[t.id]) last = i; });
+        var ut = sid === 'tr' ? (sk === 'ornek' ? 'Paragraf ve anlam soruları her kitapçıkta var' : 'Paragraf ve anlam soruları her denemede var') : (last + 1) + '. üniteye kadar';
+        return '<details class="dn-kap-d"><summary><b>' + s.icon + ' ' + esc(s.name) + '</b><span>' + ut + '</span></summary><ul>' +
           ts.map(function (t) { return '<li>' + esc(t.title) + ' <small>' + c[t.id] + ' soru</small></li>'; }).join('') + '</ul></details>';
       }).join('');
-      cb('<h3>📚 Bu denemenin konuları</h3><p class="small">' + MAY[n - 1] + ' denemesi. MEBİ denemeleri birikimlidir: her deneme o aya kadar işlenen tüm konuları kapsar' + (n === 1 ? ' (1. deneme Ekim sonuna kadarki konular)' : '') + '. Henüz işlemediğin ünite varsa daha önceki bir denemeyi seç. Derse dokununca konular açılır.</p>' + h);
+      var p = sk === 'ornek' ? SR.may[n - 1] + ' örnek soru kitapçığı. Kitapçıklar birikimlidir: her biri yayımlandığı aya kadar işlenen konulardan sorular içerir (ünite sınırı bu ve önceki kitapçıklardaki sorulara göre). Henüz işlemediğin ünite varsa daha önceki bir kitapçığı seç. Derse dokununca konular açılır.'
+        : MAY[n - 1] + ' denemesi. MEBİ denemeleri birikimlidir: her deneme o aya kadar işlenen tüm konuları kapsar' + (n === 1 ? ' (1. deneme Ekim sonuna kadarki konular)' : '') + '. Henüz işlemediğin ünite varsa daha önceki bir denemeyi seç. Derse dokununca konular açılır.';
+      cb('<h3>📚 Bu ' + (sk === 'ornek' ? 'kitapçığın' : 'denemenin') + ' konuları</h3><p class="small">' + p + '</p>' + h);
     });
   }
-  function mebiCards(best) {
-    var h = ''; for (var n = 1; n <= 12; n++) {
+  function mebiCards(best, sk) {
+    sk = sk || 'mebi'; var SR = SER[sk], h = '';
+    for (var n = 1; n <= SR.n; n++) {
       var b = best[n] || {}, done = b.soz != null || b.say != null;
-      h += '<a class="card dn-mb' + (done ? ' done' : '') + '" href="#/deneme/mebi/' + n + '"><span class="dn-mb-n"><small>Deneme</small><b>' + n + '</b><small class="dn-mb-ay">' + MAY[n - 1].replace(/ 20\d\d$/, '') + '</small></span><span class="dn-mb-s">' +
-        ['soz', 'say'].map(function (k) { return '<span class="' + (b[k] != null ? 'on' : '') + '">' + MS[k].n + ' <b>' + (b[k] != null ? fnet(b[k]) + '<small>/' + MS[k].q + '</small>' : '—') + '</b></span>'; }).join('') +
+      var ay = sk === 'ornek' ? SR.may[n - 1].replace(' ', '<br>') : SR.may[n - 1].replace(/ 20\d\d$/, '');
+      h += '<a class="card dn-mb' + (done ? ' done' : '') + '" href="#/deneme/' + sk + '/' + n + '"><span class="dn-mb-n"><small>' + (sk === 'ornek' ? 'Kitapçık' : 'Deneme') + '</small><b>' + n + '</b><small class="dn-mb-ay">' + ay + '</small></span><span class="dn-mb-s">' +
+        ['soz', 'say'].map(function (k) { return '<span class="' + (b[k] != null ? 'on' : '') + '">' + SR.ms[k].n + ' <b>' + (b[k] != null ? fnet(b[k]) + '<small>/' + SR.ms[k].q + '</small>' : '—') + '</b></span>'; }).join('') +
         '</span>' + (done ? '<i class="dn-mb-ok">✓</i>' : '') + '</a>';
     }
     return h;
   }
-  function mebiPage(n) {
-    n = +n; A.setCrumbs([{ text: 'Deneme', href: '#/deneme' }, { text: 'MEBİ Deneme ' + n }]); document.title = 'MEBİ Deneme ' + n + ' · LGS Kışlası';
-    if (!(n >= 1 && n <= 12)) { location.hash = '#/deneme'; return; }
+  function mebiPage(n, sk) {
+    sk = sk || 'mebi'; var SR = SER[sk], M = SR.ms, nm = serName(sk, +n);
+    n = +n; A.setCrumbs([{ text: 'Deneme', href: '#/deneme' }, { text: nm }]); document.title = nm + ' · LGS Kışlası';
+    if (!(n >= 1 && n <= SR.n)) { location.hash = '#/deneme'; return; }
     var pick = { soz: 1, say: 0 };
-    app.innerHTML = '<div class="page-dn"><div class="dn-hero"><div class="dn-hero-ic">🏛️</div><h1>MEBİ Deneme ' + n + '</h1><p>2025-26 MEBİ LGS denemesi, resmî cevap anahtarıyla. Çözerken doğru/yanlış gösterilmez; net = doğru − yanlış ÷ 4.</p></div>' +
+    var lead = sk === 'ornek' ? 'MEB\'in ' + SR.may[n - 1] + ' LGS örnek soru kitapçığı (45 soru), resmî cevap anahtarıyla. Süreler gerçek LGS hızıyla orantılı.' : '2025-26 MEBİ LGS denemesi, resmî cevap anahtarıyla.';
+    app.innerHTML = '<div class="page-dn"><div class="dn-hero"><div class="dn-hero-ic">' + SR.icon + '</div><h1>' + esc(nm) + '</h1><p>' + lead + ' Çözerken doğru/yanlış gösterilmez; net = doğru − yanlış ÷ 4.</p></div>' +
       '<div class="card dn-kap" id="dnKap"></div>' +
       '<div class="dn-mb-pick" id="dnPick">' + ['soz', 'say'].map(function (k) {
-        var m = MS[k]; return '<button class="card dn-mb-o" data-k="' + k + '"><span class="dn-sw"><i></i></span><b>' + m.n + ' Oturum</b><small>' +
-          m.subs.map(function (sid) { var s = subj(sid); return s ? s.icon + ' ' + esc(s.name) + ' ' + (sid === 'tr' || sid === 'mat' || sid === 'fen' ? 20 : 10) : ''; }).join(' · ') + '</small><em>' + m.q + ' soru · ' + m.min + ' dk</em></button>';
+        var m = M[k]; return '<button class="card dn-mb-o" data-k="' + k + '"><span class="dn-sw"><i></i></span><b>' + m.n + ' Oturum</b><small>' +
+          m.subs.map(function (sid) { var s = subj(sid); return s ? s.icon + ' ' + esc(s.name) + ' ' + SR.cnt[sid] : ''; }).join(' · ') + '</small><em>' + m.q + ' soru · ' + m.min + ' dk</em></button>';
       }).join('') + '</div><div class="card dn-foot"><p class="small" id="dnPs"></p><button class="btn dn-go" id="dnGo">Denemeyi Başlat</button></div>' +
       '<p class="small dn-mb-note" id="dnPh"></p></div>';
-    mebiScope(n, function (h) { var el = document.getElementById('dnKap'); if (el) { if (h) el.innerHTML = h; else el.remove(); } });
+    mebiScope(sk, n, function (h) { var el = document.getElementById('dnKap'); if (el) { if (h) el.innerHTML = h; else el.remove(); } });
     var root = app.querySelector('.page-dn');
-    mebiBestFor(n, function (b) { var el = document.getElementById('dnPh'); if (el && b && b.c) el.innerHTML = 'Bu denemeyi ' + b.c + ' kez çözdün. En iyi netlerin: ' + ['soz', 'say'].map(function (k) { return MS[k].n + ' ' + (b[k] != null ? '<b>' + fnet(b[k]) + '</b>' : '—'); }).join(' · ') + '.'; });
+    mebiBestFor(n, function (b) { var el = document.getElementById('dnPh'); if (el && b && b.c) el.innerHTML = (sk === 'ornek' ? 'Bu kitapçığı ' : 'Bu denemeyi ') + b.c + ' kez çözdün. En iyi netlerin: ' + ['soz', 'say'].map(function (k) { return M[k].n + ' ' + (b[k] != null ? '<b>' + fnet(b[k]) + '</b>' : '—'); }).join(' · ') + '.'; }, sk);
     function refresh() {
       [].forEach.call(root.querySelectorAll('.dn-mb-o'), function (b) { b.classList.toggle('on', !!pick[b.getAttribute('data-k')]); });
-      var ks = ['soz', 'say'].filter(function (k) { return pick[k]; }), q = 0, m = 0; ks.forEach(function (k) { q += MS[k].q; m += MS[k].min; });
-      document.getElementById('dnPs').innerHTML = ks.length ? '<b>' + q + ' soru</b> · ' + m + ' dakika' + (ks.length === 2 ? '<br>Oturumlar arka arkaya: önce Sözel (75 dk), sonra Sayısal (80 dk). Bitirilen oturuma geri dönülmez.' : '') : 'En az bir oturum seç.';
+      var ks = ['soz', 'say'].filter(function (k) { return pick[k]; }), q = 0, m = 0; ks.forEach(function (k) { q += M[k].q; m += M[k].min; });
+      document.getElementById('dnPs').innerHTML = ks.length ? '<b>' + q + ' soru</b> · ' + m + ' dakika' + (ks.length === 2 ? '<br>Oturumlar arka arkaya: önce Sözel (' + M.soz.min + ' dk), sonra Sayısal (' + M.say.min + ' dk). Bitirilen oturuma geri dönülmez.' : '') : 'En az bir oturum seç.';
       document.getElementById('dnGo').disabled = !ks.length;
     }
     root.addEventListener('click', function (e) {
@@ -134,7 +156,7 @@
       if (b.hasAttribute('data-k')) { var k = b.getAttribute('data-k'); pick[k] = pick[k] ? 0 : 1; return refresh(); }
       if (b.id === 'dnGo') {
         var ks = ['soz', 'say'].filter(function (k) { return pick[k]; });
-        var start = function () { b.disabled = true; b.textContent = 'Sorular hazırlanıyor…'; mebiStart(n, ks, function (err) { if (err) { A.toast(err); b.disabled = false; b.textContent = 'Denemeyi Başlat'; } }); };
+        var start = function () { b.disabled = true; b.textContent = 'Sorular hazırlanıyor…'; mebiStart(n, ks, function (err) { if (err) { A.toast(err); b.disabled = false; b.textContent = 'Denemeyi Başlat'; } }, sk); };
         if (A.jget(CUR, null)) {
           var o = document.createElement('div'); o.className = 'dn-modal';
           o.innerHTML = '<div class="dn-modal-in"><div class="dn-modal-ic">⚠️</div><h2>Yarım kalan denemen var</h2><p>Yeni deneme başlarsa yarım kalan deneme silinir.</p><div class="dn-modal-b"><button class="btn ghost" data-no>Vazgeç</button><button class="btn" data-yes>Yine de başlat</button></div></div>';
@@ -145,35 +167,37 @@
     });
     refresh();
   }
-  function mebiBestFor(n, cb) {
+  function mebiBestFor(n, cb, sk) {
+    sk = sk || 'mebi';
     var loc = hist().map(function (h) { return { id: h.id, summary: h.summary }; });
-    cb(mebiBest(loc)[n]);
+    cb(mebiBest(loc, sk)[n]);
     cloud('deneme_list', { p_token: window.LGSCloud ? window.LGSCloud.token() : '' }, function (err, rows) {
       if (err || !Array.isArray(rows)) return;
       var seen = {}, all = loc.slice(); loc.forEach(function (h) { if (h.id) seen[h.id] = 1; });
       rows.forEach(function (r) { if (!seen[r.id]) all.push({ id: r.id, summary: r.summary }); });
-      if (location.hash === '#/deneme/mebi/' + n) cb(mebiBest(all)[n]);
+      if (location.hash === '#/deneme/' + sk + '/' + n) cb(mebiBest(all, sk)[n]);
     });
   }
-  function mebiStart(n, ks, cb) {
-    mebiIdx(function (ix) {
+  function mebiStart(n, ks, cb, sk) {
+    sk = sk || 'mebi'; var M = SER[sk].ms;
+    serIdx(sk, function (ix) {
       var d = ix && ix[n]; if (!d) return cb('Deneme verisi yüklenemedi.');
       var items = [], parts = [], tids = [];
       ks.forEach(function (k) {
         var from = items.length;
         d[k].forEach(function (p) { var m = A.subjOf(p[1]); items.push({ tid: p[1], key: 'm:' + p[0], sid: m ? m.s.id : p[0].split('-')[1], lv: 'zor' }); if (tids.indexOf(p[1]) < 0) tids.push(p[1]); });
-        parts.push({ k: k, from: from, to: items.length, min: MS[k].min });
+        parts.push({ k: k, from: from, to: items.length, min: M[k].min });
       });
       loadTopics(tids, function () {
         var miss = items.filter(function (it) { return !qOf(it); }).length;
         if (miss) return cb(miss + ' soru yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.');
         var now = Date.now(), tot = 0; parts.forEach(function (p) { tot += p.min; });
-        A.jset(CUR, { v: 1, start: now, end: now + parts[0].min * 60000, min: tot, items: items, ans: {}, tm: {}, i: 0, mebi: { n: n, parts: ks }, parts: parts, p: 0, pStart: now, used: 0 });
+        var mb = { n: n, parts: ks }; if (sk !== 'mebi') mb.s = sk;
+        A.jset(CUR, { v: 1, start: now, end: now + parts[0].min * 60000, min: tot, items: items, ans: {}, tm: {}, i: 0, mebi: mb, parts: parts, p: 0, pStart: now, used: 0 });
         location.hash = '#/deneme/coz';
       });
     });
   }
-
   /* ================= OLUŞTURUCU ================= */
   function builderPage() {
     A.setCrumbs([{ text: 'Deneme', href: '#/deneme' }, { text: 'Yeni' }]); document.title = 'Yeni Deneme · LGS Kışlası';
@@ -309,7 +333,7 @@
       function dots() {
         var h = ''; for (var j = lo; j <= hi; j++) h += '<i data-j="' + j + '" style="--sc:' + HEX[cur.items[j].sid] + '"></i>';
         document.getElementById('dnDots').innerHTML = h;
-        if (P) document.getElementById('dnPart').innerHTML = '🏛️ MEBİ Deneme ' + cur.mebi.n + ' · <b>' + MS[P[cur.p].k].n + ' Oturum</b>' + (P.length > 1 ? ' <small>(' + (cur.p + 1) + '/' + P.length + ')</small>' : '');
+        if (P) document.getElementById('dnPart').innerHTML = SER[skOf(cur.mebi)].icon + ' ' + esc(serName(skOf(cur.mebi), cur.mebi.n)) + ' · <b>' + MS[P[cur.p].k].n + ' Oturum</b>' + (P.length > 1 ? ' <small>(' + (cur.p + 1) + '/' + P.length + ')</small>' : '');
         document.getElementById('dnFin').textContent = lastPart() ? 'Sınavı Bitir' : MS[P[cur.p].k].n + ' Oturumunu Bitir';
       }
       function spend() { var n = Date.now(), k = cur.i; cur.tm[k] = (cur.tm[k] || 0) + (n - shownAt); shownAt = n; A.jset(CUR, cur); }
@@ -416,7 +440,7 @@
     });
     for (var k in S.by) if (S.by.hasOwnProperty(k)) S.by[k].net = net(S.by[k].ok, S.by[k].bad);
     S.net = net(S.ok, S.bad);
-    if (cur.mebi) S.mebi = { n: cur.mebi.n, parts: cur.mebi.parts.slice(), v: '2025-26' };
+    if (cur.mebi) { S.mebi = { n: cur.mebi.n, parts: cur.mebi.parts.slice(), v: SER[skOf(cur.mebi)].v }; if (cur.mebi.s) S.mebi.s = cur.mebi.s; }
     var rec = { lid: 'L' + Date.now(), id: null, at: Date.now(), summary: S, data: { items: items } };
     var h = hist(); h.unshift(rec); while (h.length > 40) h.pop(); A.jset(HIST, h);
     localStorage.removeItem(CUR);
@@ -446,7 +470,7 @@
     loadTopics(tids, function () {
       var p = S.n ? Math.max(0, Math.round(S.net * 100 / S.n)) : 0, rc = p >= 70 ? '#22c55e' : p >= 40 ? '#f59e0b' : '#f43f5e';
       var verdict = p >= 85 ? 'Muhteşem! Kışlanın yıldızısın.' : p >= 70 ? 'Çok iyi! Böyle devam.' : p >= 50 ? 'İyi gidiyorsun, yanlışlarına odaklan.' : p >= 30 ? 'Temelini güçlendir, konu özetlerine dön.' : 'Zorlu bir deneme oldu. Pes etmek yok!';
-      var html = '<div class="page-dn dn-rep">' + (S.mebi ? '<div class="dn-rep-tt">🏛️ ' + esc(mebiTitle(S.mebi)) + '</div>' : '') +
+      var html = '<div class="page-dn dn-rep">' + (S.mebi ? '<div class="dn-rep-tt">' + SER[skOf(S.mebi)].icon + ' ' + esc(mebiTitle(S.mebi)) + '</div>' : '') +
         '<div class="dn-score" style="--rc:' + rc + '"><div class="dn-score-ring">' + ringSvg(p, rc, 150, true) + '<div class="dn-score-c"><b>' + fnet(S.net) + '</b><small>NET</small></div></div>' +
         '<div class="dn-score-m"><div class="dn-verdict">' + verdict + '</div><div class="dn-kpis">' +
         kpi('✓', S.ok, 'Doğru', 'ok') + kpi('✗', S.bad, 'Yanlış', 'bad') + kpi('○', S.empty, 'Boş', 'e') + '</div>' +
@@ -454,7 +478,7 @@
         '<div class="dn-xp card"><span class="dn-xp-n">+' + A.nf(S.xp || 0) + ' <small>EXP</small></span><span class="small">' +
         (S.xp ? 'Daha önce çözmediğin ya da 7 günden uzun süredir çözmediğin doğrular için kazandın.' : 'Bu denemeden EXP kazanılmadı.') +
         (S.cool ? ' ' + S.cool + ' doğru soruyu son 7 gün içinde çözdüğün için EXP vermedi.' : '') + '</span></div>' +
-        (S.mebi ? '<div class="dn-subs dn-mb-pn">' + S.mebi.parts.map(function (k) { var v = partNet(S, k); return '<div class="card dn-sr"><div class="dn-sr-h"><span>🏛️ ' + MS[k].n + ' oturum</span><b>' + fnet(v) + ' <small>/ ' + MS[k].q + ' net</small></b></div></div>'; }).join('') + '</div>' : '') +
+        (S.mebi ? '<div class="dn-subs dn-mb-pn">' + S.mebi.parts.map(function (k) { var v = partNet(S, k); var SR = SER[skOf(S.mebi)]; return '<div class="card dn-sr"><div class="dn-sr-h"><span>' + SR.icon + ' ' + SR.ms[k].n + ' oturum</span><b>' + fnet(v) + ' <small>/ ' + SR.ms[k].q + ' net</small></b></div></div>'; }).join('') + '</div>' : '') +
         '<div class="small dn-netnote">Net = doğru − yanlış ÷ 4 (4 yanlış 1 doğruyu götürür).</div>';
       // ders kartları
       html += '<h2 class="dn-h2">Ders Ders Sonuç</h2><div class="dn-subs">' + ORDER.filter(function (s) { return S.by[s]; }).map(function (sid) {
@@ -472,7 +496,7 @@
       // yanlış / boş
       var wr = items.filter(function (x) { return x.r === 'bad'; }), em = items.filter(function (x) { return x.r === 'e'; });
       html += '<h2 class="dn-h2">Sorularım</h2><div class="dn-qtabs" id="dnQt"><button data-f="bad" class="on">Yanlış (' + wr.length + ')</button><button data-f="e">Boş (' + em.length + ')</button><button data-f="ok">Doğru (' + S.ok + ')</button></div>' +
-        '<div id="dnQl"></div><div class="dn-end">' + (S.mebi ? '<a class="btn" href="#/deneme/mebi/' + S.mebi.n + '">↻ MEBİ Deneme ' + S.mebi.n + '</a>' : '<a class="btn" href="#/deneme/yeni">＋ Yeni Deneme</a>') + '<a class="btn ghost" href="#/deneme">Tüm Denemelerim</a></div></div>';
+        '<div id="dnQl"></div><div class="dn-end">' + (S.mebi ? '<a class="btn" href="#/deneme/' + skOf(S.mebi) + '/' + S.mebi.n + '">↻ ' + esc(serName(skOf(S.mebi), S.mebi.n)) + '</a>' : '<a class="btn" href="#/deneme/yeni">＋ Yeni Deneme</a>') + '<a class="btn ghost" href="#/deneme">Tüm Denemelerim</a></div></div>';
       app.innerHTML = html;
       var ql = document.getElementById('dnQl');
       function drawQ(f) {
@@ -578,7 +602,7 @@
       stop();
       if (a === 'yeni') builderPage();
       else if (a === 'coz') solvePage();
-      else if (a === 'mebi' && b) mebiPage(b);
+      else if (SER[a] && b) mebiPage(b, a);
       else if (a === 'r' && b) reportPage(decodeURIComponent(b));
       else listPage();
     }

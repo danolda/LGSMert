@@ -1,0 +1,16 @@
+/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; çözümler yalnız video) — tools/ornek24.py üretir */
+LGS.addMeb({"ornek24-ink-s1-1":{"t":"ink-uyanis","a":"B","o":150101,"lb":"MEB Örnek 2024-25 Kasım · 1. soru"},
+"ornek24-ink-s1-2":{"t":"ink-dispolitika","a":"A","o":150102,"lb":"MEB Örnek 2024-25 Kasım · 2. soru"},
+"ornek24-ink-s1-3":{"t":"ink-destan","a":"D","o":150103,"lb":"MEB Örnek 2024-25 Kasım · 3. soru"},
+"ornek24-ink-s1-4":{"t":"ink-ataturkculuk","a":"B","o":150104,"lb":"MEB Örnek 2024-25 Kasım · 4. soru"},
+"ornek24-ink-s1-5":{"t":"ink-ataturkculuk","a":"A","o":150105,"lb":"MEB Örnek 2024-25 Kasım · 5. soru"},
+"ornek24-ink-s2-1":{"t":"ink-kahraman","a":"C","o":150201,"lb":"MEB Örnek 2024-25 Şubat · 1. soru"},
+"ornek24-ink-s2-2":{"t":"ink-destan","a":"B","o":150202,"lb":"MEB Örnek 2024-25 Şubat · 2. soru"},
+"ornek24-ink-s2-3":{"t":"ink-ataturkculuk","a":"D","o":150203,"lb":"MEB Örnek 2024-25 Şubat · 3. soru"},
+"ornek24-ink-s2-4":{"t":"ink-demokrasi","a":"C","o":150204,"lb":"MEB Örnek 2024-25 Şubat · 4. soru"},
+"ornek24-ink-s2-5":{"t":"ink-dispolitika","a":"A","o":150205,"lb":"MEB Örnek 2024-25 Şubat · 5. soru"},
+"ornek24-ink-s3-1":{"t":"ink-kahraman","a":"C","o":150301,"lb":"MEB Örnek 2024-25 Nisan · 1. soru"},
+"ornek24-ink-s3-2":{"t":"ink-uyanis","a":"D","o":150302,"lb":"MEB Örnek 2024-25 Nisan · 2. soru"},
+"ornek24-ink-s3-3":{"t":"ink-ataturkculuk","a":"D","o":150303,"lb":"MEB Örnek 2024-25 Nisan · 3. soru"},
+"ornek24-ink-s3-4":{"t":"ink-dispolitika","a":"B","o":150304,"lb":"MEB Örnek 2024-25 Nisan · 4. soru"},
+"ornek24-ink-s3-5":{"t":"ink-kahraman","a":"A","o":150305,"lb":"MEB Örnek 2024-25 Nisan · 5. soru"}});

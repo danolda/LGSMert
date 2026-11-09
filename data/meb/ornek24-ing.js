@@ -1,0 +1,16 @@
+/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; çözümler yalnız video) — tools/ornek24.py üretir */
+LGS.addMeb({"ornek24-ing-s1-1":{"t":"ing-friendship","a":"A","o":150101,"lb":"MEB Örnek 2024-25 Kasım · 1. soru"},
+"ornek24-ing-s1-2":{"t":"ing-internet","a":"D","o":150102,"lb":"MEB Örnek 2024-25 Kasım · 2. soru"},
+"ornek24-ing-s1-3":{"t":"ing-kitchen","a":"B","o":150103,"lb":"MEB Örnek 2024-25 Kasım · 3. soru"},
+"ornek24-ing-s1-4":{"t":"ing-tourism","a":"C","o":150104,"lb":"MEB Örnek 2024-25 Kasım · 4. soru"},
+"ornek24-ing-s1-5":{"t":"ing-science","a":"C","o":150105,"lb":"MEB Örnek 2024-25 Kasım · 5. soru"},
+"ornek24-ing-s2-1":{"t":"ing-teen","a":"A","o":150201,"lb":"MEB Örnek 2024-25 Şubat · 1. soru"},
+"ornek24-ing-s2-2":{"t":"ing-phone","a":"C","o":150202,"lb":"MEB Örnek 2024-25 Şubat · 2. soru"},
+"ornek24-ing-s2-3":{"t":"ing-adventures","a":"C","o":150203,"lb":"MEB Örnek 2024-25 Şubat · 3. soru"},
+"ornek24-ing-s2-4":{"t":"ing-chores","a":"D","o":150204,"lb":"MEB Örnek 2024-25 Şubat · 4. soru"},
+"ornek24-ing-s2-5":{"t":"ing-natural","a":"B","o":150205,"lb":"MEB Örnek 2024-25 Şubat · 5. soru"},
+"ornek24-ing-s3-1":{"t":"ing-phone","a":"B","o":150301,"lb":"MEB Örnek 2024-25 Nisan · 1. soru"},
+"ornek24-ing-s3-2":{"t":"ing-internet","a":"A","o":150302,"lb":"MEB Örnek 2024-25 Nisan · 2. soru"},
+"ornek24-ing-s3-3":{"t":"ing-adventures","a":"B","o":150303,"lb":"MEB Örnek 2024-25 Nisan · 3. soru"},
+"ornek24-ing-s3-4":{"t":"ing-tourism","a":"C","o":150304,"lb":"MEB Örnek 2024-25 Nisan · 4. soru"},
+"ornek24-ing-s3-5":{"t":"ing-kitchen","a":"D","o":150305,"lb":"MEB Örnek 2024-25 Nisan · 5. soru"}});

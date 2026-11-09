@@ -1,0 +1,16 @@
+/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; çözümler yalnız video) — tools/ornek24.py üretir */
+LGS.addMeb({"ornek24-din-s1-1":{"t":"din-kader","a":"A","o":150101,"lb":"MEB Örnek 2024-25 Kasım · 1. soru"},
+"ornek24-din-s1-2":{"t":"din-zekat","a":"C","o":150102,"lb":"MEB Örnek 2024-25 Kasım · 2. soru"},
+"ornek24-din-s1-3":{"t":"din-hayat","a":"D","o":150103,"lb":"MEB Örnek 2024-25 Kasım · 3. soru"},
+"ornek24-din-s1-4":{"t":"din-ornek","a":"C","o":150104,"lb":"MEB Örnek 2024-25 Kasım · 4. soru"},
+"ornek24-din-s1-5":{"t":"din-kuran","a":"B","o":150105,"lb":"MEB Örnek 2024-25 Kasım · 5. soru"},
+"ornek24-din-s2-1":{"t":"din-kuran","a":"A","o":150201,"lb":"MEB Örnek 2024-25 Şubat · 1. soru"},
+"ornek24-din-s2-2":{"t":"din-ornek","a":"B","o":150202,"lb":"MEB Örnek 2024-25 Şubat · 2. soru"},
+"ornek24-din-s2-3":{"t":"din-hayat","a":"D","o":150203,"lb":"MEB Örnek 2024-25 Şubat · 3. soru"},
+"ornek24-din-s2-4":{"t":"din-zekat","a":"A","o":150204,"lb":"MEB Örnek 2024-25 Şubat · 4. soru"},
+"ornek24-din-s2-5":{"t":"din-kader","a":"C","o":150205,"lb":"MEB Örnek 2024-25 Şubat · 5. soru"},
+"ornek24-din-s3-1":{"t":"din-zekat","a":"A","o":150301,"lb":"MEB Örnek 2024-25 Nisan · 1. soru"},
+"ornek24-din-s3-2":{"t":"din-kader","a":"C","o":150302,"lb":"MEB Örnek 2024-25 Nisan · 2. soru"},
+"ornek24-din-s3-3":{"t":"din-ornek","a":"B","o":150303,"lb":"MEB Örnek 2024-25 Nisan · 3. soru"},
+"ornek24-din-s3-4":{"t":"din-hayat","a":"C","o":150304,"lb":"MEB Örnek 2024-25 Nisan · 4. soru"},
+"ornek24-din-s3-5":{"t":"din-ornek","a":"D","o":150305,"lb":"MEB Örnek 2024-25 Nisan · 5. soru"}});
