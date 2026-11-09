@@ -2,7 +2,7 @@
    Anlatım sesleri (audio/…mp3?h=…) içerik özetli adreslerdir: istendikçe ayrı önbelleğe alınır, sonra önbellekten çalar
    (Safari'nin Range isteklerine 206 parça yanıtı verilir). Toplu ön yükleme yok.
    Ses önbelleği ders bazında LRU: en fazla ~1500 dosya / ~80 MB; aşılınca en uzun süredir açılmayan dersin tüm sesleri silinir. */
-var C = 'kisla-v96';
+var C = 'kisla-v97';
 var AU = 'kisla-ses-v1';
 var AUL = 'kisla-ses-lru';            // ders → { t: son kullanım, b: bayt } (JSON)
 var LIM_N = 1500, LIM_B = 80 * 1024 * 1024, AVG_B = 46000;

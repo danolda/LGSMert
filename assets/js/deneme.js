@@ -84,10 +84,26 @@
     }
   }
 
+  var MAY = ['Kasım 2025', 'Aralık 2025', 'Ocak 2026', 'Şubat 2026', 'Mart 2026', 'Nisan 2026', 'Nisan sonu 2026', 'Mayıs ortası 2026', 'Mayıs sonu 2026', 'Haziran 2026', 'Haziran 2026', 'Haziran 2026'];
+  function mebiScope(n, cb) { // denemede çıkan konular, derslere göre müfredat sırasıyla
+    mebiIdx(function (ix) {
+      var d = ix && ix[n]; if (!d) return cb('');
+      var by = {}; ['soz', 'say'].forEach(function (k) { (d[k] || []).forEach(function (p) { var sid = p[0].split('-')[1]; (by[sid] = by[sid] || {})[p[1]] = (by[sid][p[1]] || 0) + 1; }); });
+      var h = ['tr', 'mat', 'fen', 'ink', 'din', 'ing'].map(function (sid) {
+        var s = subj(sid), c = by[sid]; if (!s || !c) return '';
+        var ts = s.topics.filter(function (t) { return c[t.id]; }), last = -1;
+        s.topics.forEach(function (t, i) { if (c[t.id]) last = i; });
+        var upto = sid === 'tr' ? 'Paragraf ve anlam soruları her denemede var' : (last + 1) + '. üniteye kadar';
+        return '<details class="dn-kap-d"><summary><b>' + s.icon + ' ' + esc(s.name) + '</b><span>' + upto + '</span></summary><ul>' +
+          ts.map(function (t) { return '<li>' + esc(t.title) + ' <small>' + c[t.id] + ' soru</small></li>'; }).join('') + '</ul></details>';
+      }).join('');
+      cb('<h3>📚 Bu denemenin konuları</h3><p class="small">' + MAY[n - 1] + ' denemesi. MEBİ denemeleri birikimlidir: her deneme o aya kadar işlenen tüm konuları kapsar' + (n === 1 ? ' (1. deneme Ekim sonuna kadarki konular)' : '') + '. Henüz işlemediğin ünite varsa daha önceki bir denemeyi seç. Derse dokununca konular açılır.</p>' + h);
+    });
+  }
   function mebiCards(best) {
     var h = ''; for (var n = 1; n <= 12; n++) {
       var b = best[n] || {}, done = b.soz != null || b.say != null;
-      h += '<a class="card dn-mb' + (done ? ' done' : '') + '" href="#/deneme/mebi/' + n + '"><span class="dn-mb-n"><small>Deneme</small><b>' + n + '</b></span><span class="dn-mb-s">' +
+      h += '<a class="card dn-mb' + (done ? ' done' : '') + '" href="#/deneme/mebi/' + n + '"><span class="dn-mb-n"><small>Deneme</small><b>' + n + '</b><small class="dn-mb-ay">' + MAY[n - 1].replace(/ 20\d\d$/, '') + '</small></span><span class="dn-mb-s">' +
         ['soz', 'say'].map(function (k) { return '<span class="' + (b[k] != null ? 'on' : '') + '">' + MS[k].n + ' <b>' + (b[k] != null ? fnet(b[k]) + '<small>/' + MS[k].q + '</small>' : '—') + '</b></span>'; }).join('') +
         '</span>' + (done ? '<i class="dn-mb-ok">✓</i>' : '') + '</a>';
     }
@@ -98,11 +114,13 @@
     if (!(n >= 1 && n <= 12)) { location.hash = '#/deneme'; return; }
     var pick = { soz: 1, say: 0 };
     app.innerHTML = '<div class="page-dn"><div class="dn-hero"><div class="dn-hero-ic">🏛️</div><h1>MEBİ Deneme ' + n + '</h1><p>2025-26 MEBİ LGS denemesi, resmî cevap anahtarıyla. Çözerken doğru/yanlış gösterilmez; net = doğru − yanlış ÷ 4.</p></div>' +
+      '<div class="card dn-kap" id="dnKap"></div>' +
       '<div class="dn-mb-pick" id="dnPick">' + ['soz', 'say'].map(function (k) {
         var m = MS[k]; return '<button class="card dn-mb-o" data-k="' + k + '"><span class="dn-sw"><i></i></span><b>' + m.n + ' Oturum</b><small>' +
           m.subs.map(function (sid) { var s = subj(sid); return s ? s.icon + ' ' + esc(s.name) + ' ' + (sid === 'tr' || sid === 'mat' || sid === 'fen' ? 20 : 10) : ''; }).join(' · ') + '</small><em>' + m.q + ' soru · ' + m.min + ' dk</em></button>';
       }).join('') + '</div><div class="card dn-foot"><p class="small" id="dnPs"></p><button class="btn dn-go" id="dnGo">Denemeyi Başlat</button></div>' +
       '<p class="small dn-mb-note" id="dnPh"></p></div>';
+    mebiScope(n, function (h) { var el = document.getElementById('dnKap'); if (el) { if (h) el.innerHTML = h; else el.remove(); } });
     var root = app.querySelector('.page-dn');
     mebiBestFor(n, function (b) { var el = document.getElementById('dnPh'); if (el && b && b.c) el.innerHTML = 'Bu denemeyi ' + b.c + ' kez çözdün. En iyi netlerin: ' + ['soz', 'say'].map(function (k) { return MS[k].n + ' ' + (b[k] != null ? '<b>' + fnet(b[k]) + '</b>' : '—'); }).join(' · ') + '.'; });
     function refresh() {

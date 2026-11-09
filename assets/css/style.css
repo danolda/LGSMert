@@ -1080,3 +1080,9 @@ img.yz-simg{display:block;max-width:100%;height:auto;margin:8px 0;background:#ff
 .dn-hi-tt{display:block;font-style:normal;font-size:12px;font-weight:600;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dn-rep-tt{text-align:center;font-family:var(--ff-h);font-weight:600;font-size:17px;margin:0 0 10px;color:var(--accent)}
 .dn-mb-pn{margin-top:12px}
+
+.dn-kap{margin-bottom:14px}.dn-kap h3{margin:0 0 4px;font-size:1.05rem}.dn-kap>p{margin:0 0 8px}
+.dn-kap-d{border-top:1px solid rgba(127,127,127,.18);padding:8px 0}.dn-kap-d summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}
+.dn-kap-d summary::-webkit-details-marker{display:none}.dn-kap-d summary span{font-size:.85rem;opacity:.75;text-align:right}
+.dn-kap-d ul{margin:6px 0 0;padding-left:20px}.dn-kap-d li{margin:3px 0;font-size:.9rem}.dn-kap-d li small{opacity:.6}
+.dn-mb-n .dn-mb-ay{display:block;font-size:9px;text-transform:none;letter-spacing:0;text-align:center;line-height:1.15;max-width:58px;margin-top:2px}
