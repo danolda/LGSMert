@@ -1,5 +1,5 @@
 window.LGS = {
-  version: 99,
+  version: 100,
   xpMax: 781740,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 resmi tarih: 13 Haziran 2027 Pazar (MEB, 30.10.2026) https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr
   topics: {},
@@ -16,6 +16,10 @@ window.LGS = {
   ornek25Subj: { ink: 1 }, // MEB LGS örnek soru kitapçıkları 2025-26: yalnız sitede olmayan sorular (data/meb/ornek25-<ders>.js); kitapçık dizini data/meb/ornek25.js; python3 tools/ornek25.py üretir
   ornek24Subj: { tr: 1, ink: 1, din: 1, ing: 1, mat: 1, fen: 1 }, // MEB LGS örnek soru kitapçıkları 2024-25 (data/meb/ornek24-<ders>.js, data/meb/ornek24.js); python3 tools/ornek24.py üretir
   mebiSubj: { din: 1, ink: 1, fen: 1, mat: 1, ing: 1, tr: 1 }, // MEBİ yaprak test soruları (data/meb/mebi-<ders>.js) yüklenen dersler; node tools/meb.js apply mebi-<ders> günceller
+  alt: {},
+  altLoaded: {},
+  altSubj: { mat: 1 }, // alt konu etiketleri (data/altkonu/<ders>.js): konu → { s: [[id, ad]…] müfredat sırasıyla, q: { soruAnahtarı: 's indeksleri' } }; üretici /workspace/work/altkonu/build.py
+  addAlt: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.alt[k] = obj[k]; },
   add: function (t) { this.topics[t.id] = t; },
   addMeb: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.meb[k] = obj[k]; },
   addPast: function (obj) { for (var k in obj) if (obj.hasOwnProperty(k)) this.past[k] = obj[k]; },

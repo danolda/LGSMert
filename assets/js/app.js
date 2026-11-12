@@ -104,9 +104,13 @@
     document.head.appendChild(sc);
   }
   function loadTopic(sid, tid, cb) {
-    var pastDone = function () {
+    var topicDone = function () {
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
+    };
+    var pastDone = function () { // alt konu etiketleri (data/altkonu/<ders>.js); yüklenemezse filtre gizlenir
+      if (!LGS.altSubj || !LGS.altSubj[sid] || LGS.altLoaded[sid]) return topicDone();
+      loadScript('data/altkonu/' + sid + '.js', function () { LGS.altLoaded[sid] = true; topicDone(); });
     };
     var ornek25Done = function () { // MEB LGS örnek soru kitapçıkları 2025-26, sitede olmayan sorular (data/meb/ornek25-<ders>.js)
       if (!(LGS.ornek25Subj || {})[sid] || LGS.ornek25Loaded[sid]) return pastDone();
@@ -274,8 +278,32 @@
   }
   var GRP_TITLE = { past: 'Çıkmış LGS Soruları', meb: 'MEB Örnek Soruları', kolay: 'Yeni Nesil · Kolay', orta: 'Yeni Nesil · Orta', zor: 'Yeni Nesil · Zor' };
 
+  /* ---- Alt konu filtresi: çoklu seçim, konu başına hatırlanır (lgs2027:altk). Mevcut filtrelerle AND'lenir.
+     Varsayılan: seçili alt konulardan herhangi birine ait sorular; "Yalnız seçtiklerim" açıkken yalnız tüm alt konuları seçili olan sorular. */
+  var AKEY = KEY + 'altk';
+  function altSel(tid) { var o = jget(AKEY, {})[tid] || {}; return { s: o.s || [], x: !!o.x }; }
+  function altSave(tid, v) { var o = jget(AKEY, {}); if (!v.s.length && !v.x) delete o[tid]; else o[tid] = v; jset(AKEY, o); }
+  function altTag(t, list) {
+    var A = LGS.alt && LGS.alt[t.id];
+    if (!A) return null;
+    list.forEach(function (q) {
+      var v = A.q[q.key];
+      q.alt = v ? v.split('').map(function (n) { return A.s[+n] && A.s[+n][0]; }).filter(Boolean) : [];
+    });
+    return A;
+  }
+  function altHtml(A, sel) {
+    return '<div class="altk" id="altk"><div class="altk-h"><span class="altk-t">🎯 Alt konu</span>' +
+      '<label class="altk-x" title="Açıkken yalnız tüm alt konuları seçtiklerinin içinde olan sorular gelir"><input type="checkbox" id="altkX"' + (sel.x ? ' checked' : '') + '> Yalnız seçtiklerimden oluşanlar</label></div>' +
+      '<div class="altk-c"><button data-a="*"' + (sel.s.length ? '' : ' class="on"') + '>Hepsi <small data-n="*"></small></button>' +
+      A.s.map(function (x) {
+        return '<button data-a="' + x[0] + '"' + (sel.s.indexOf(x[0]) >= 0 ? ' class="on"' : '') + '>' + esc(x[1]) + ' <small data-n="' + x[0] + '"></small></button>';
+      }).join('') + '</div></div>';
+  }
+
   function renderTopic(s, meta, t, idx) {
     var list = buildList(t);
+    var altA = altTag(t, list);
     var ans = load(t.id), keys = {}, dirty = false;
     list.forEach(function (q) { keys[q.key] = 1; });
     for (var k in ans) if (ans.hasOwnProperty(k) && k.charAt(0) !== '_' && !keys[k]) { delete ans[k]; dirty = true; }
@@ -295,6 +323,7 @@
       '<details class="sumbox" open><summary>Konu Özeti</summary><div class="sum">' + (t.summary ? fmt(t.summary) : '<p class="empty">Özet hazırlanıyor.</p>') + '</div></details>' +
       '<div class="qhead"><h2>Sorular</h2><span class="score" id="score"></span>' +
       '<button class="btn red" id="clearBtn" title="Bu konudaki tüm işaretlemeleri sil">Temizle</button></div>' +
+      (altA ? altHtml(altA, altSel(t.id)) : '') +
       '<div class="filters" id="filters">' +
       fl.map(function (f) {
         return '<button data-f="' + f[0] + '"' + (filter === f[0] ? ' class="on"' : '') + '>' + f[1] + '</button>';
@@ -350,7 +379,7 @@
         return;
       }
       var sb = e.target.closest('button[data-show]');
-      if (sb) {
+      if (sb && load(t.id)[list[+sb.getAttribute('data-show')].key]) {   // işaretlenmemiş soruda çözüm açılmaz
         var el = document.getElementById('sol' + sb.getAttribute('data-show'));
         el.hidden = !el.hidden;
         sb.textContent = el.hidden ? 'Çözümü göster' : 'Çözümü gizle';
@@ -363,6 +392,24 @@
       [].forEach.call(this.children, function (x) { x.classList.toggle('on', x === b); });
       applyFilter(list, t.id);
     });
+    if (altA) {
+      document.querySelector('#altk .altk-c').addEventListener('click', function (e) {
+        var b = e.target.closest('button[data-a]');
+        if (!b) return;
+        var v = altSel(t.id), a = b.getAttribute('data-a');
+        if (a === '*') v.s = [];
+        else { var k = v.s.indexOf(a); if (k >= 0) v.s.splice(k, 1); else v.s.push(a); }
+        if (v.s.length === altA.s.length) v.s = [];   // hepsi seçildiyse "Hepsi"
+        altSave(t.id, v);
+        [].forEach.call(this.children, function (x) {
+          var id = x.getAttribute('data-a'); x.classList.toggle('on', id === '*' ? !v.s.length : v.s.indexOf(id) >= 0);
+        });
+        applyFilter(list, t.id);
+      });
+      document.getElementById('altkX').addEventListener('change', function () {
+        var v = altSel(t.id); v.x = this.checked; altSave(t.id, v); applyFilter(list, t.id);
+      });
+    }
     document.getElementById('clearBtn').addEventListener('click', function () {
       if (!confirm('"' + meta.title + '" konusundaki işaretlemeler silinsin mi?\n\nProfildeki istatistiklerin ve Hatırlatıcı’daki yanlışların silinmez.')) return;
       clearTopic(t.id);
@@ -388,7 +435,7 @@
     return '<article class="q" id="q' + i + '">' + head + body + choices +
       (mark ? '<button class="btn mark" data-mark="' + i + '" disabled>İşaretle</button>' : '') +
       '<div class="res" id="res' + i + '"></div>' +
-      '<button class="btn ghost" style="margin-top:8px" data-show="' + i + '">Çözümü göster</button>' +
+      '<button class="btn ghost" style="margin-top:8px" data-show="' + i + '" hidden>Çözümü göster</button>' +   // kopya olmasın: işaretlenmeden görünmez
       '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + fmt(q.s) +
       (window.LGSAi && tid ? window.LGSAi.btn(q, { tid: tid, pick: function () { var a = load(tid)[q.key]; return a ? a.c : ''; } }) : '') + '</div></article>';
   }
@@ -414,15 +461,18 @@
     if (a) {
       res.className = 'res ' + (a.ok ? 'ok' : 'bad');
       res.textContent = a.ok ? '✓ Doğru!' : '✗ Yanlış. Senin cevabın: ' + a.c + ' · Doğru cevap: ' + q.a;
-      sol.hidden = false; sb.textContent = 'Çözümü gizle';
+      sol.hidden = false; sb.hidden = false; sb.textContent = 'Çözümü gizle';
     } else {
       res.className = 'res'; res.textContent = '';
-      sol.hidden = true; sb.textContent = 'Çözümü göster';
+      sol.hidden = true; sb.hidden = true; sb.textContent = 'Çözümü göster';
     }
   }
 
   function applyFilter(list, tid) {
     var a = load(tid), vis = {};
+    var A = LGS.alt && LGS.alt[tid] && document.getElementById('altk') ? LGS.alt[tid] : null;
+    var sel = A ? altSel(tid) : { s: [], x: false }, cnt = { '*': 0 };
+    if (A) sel.s = sel.s.filter(function (id) { return A.s.some(function (x) { return x[0] === id; }); });
     list.forEach(function (q, i) {
       var st = a[q.key], show = true;
       if (filter === 'past') show = q.past && !q.meb;
@@ -431,12 +481,27 @@
       else if (filter === 'kolay' || filter === 'orta' || filter === 'zor') show = q.grp === filter;
       else if (filter === 'empty') show = !st;
       else if (filter === 'wrong') show = st && !st.ok;
+      if (A && show) {
+        var tg = q.alt || [];
+        cnt['*']++; tg.forEach(function (id) { cnt[id] = (cnt[id] || 0) + 1; });
+        if (sel.s.length) show = sel.x ? tg.length > 0 && tg.every(function (id) { return sel.s.indexOf(id) >= 0; })
+                                       : tg.some(function (id) { return sel.s.indexOf(id) >= 0; });
+      }
       document.getElementById('q' + i).style.display = show ? '' : 'none';
       if (show) vis[q.grp] = 1;
     });
     [].forEach.call(document.querySelectorAll('#qs h3.grp'), function (h) {
       h.style.display = vis[h.getAttribute('data-grp')] ? '' : 'none';
     });
+    if (A) {
+      [].forEach.call(document.querySelectorAll('#altk small[data-n]'), function (el) { el.textContent = cnt[el.getAttribute('data-n')] || 0; });
+      var shown = 0; list.forEach(function (q, i) { if (document.getElementById('q' + i).style.display !== 'none') shown++; });
+      var em = document.getElementById('altkEmpty');
+      if (!shown && sel.s.length) {
+        if (!em) { em = document.createElement('p'); em.id = 'altkEmpty'; em.className = 'empty'; document.getElementById('qs').appendChild(em); }
+        em.textContent = 'Bu seçimle eşleşen soru yok. Alt konu ya da üstteki filtreyi değiştir.'; em.hidden = false;
+      } else if (em) em.hidden = true;
+    }
   }
 
   function updateScore(tid, list) {
@@ -609,11 +674,11 @@
           logAnswer(it.r.tid, ok);
           updateBadge();
           var sol = document.getElementById('sol' + (9000 + i)); sol.hidden = false;
-          var sb = art.querySelector('button[data-show]'); if (sb) sb.textContent = 'Çözümü gizle';
+          var sb = art.querySelector('button[data-show]'); if (sb) { sb.hidden = false; sb.textContent = 'Çözümü gizle'; }
           return;
         }
         var sb2 = e.target.closest('button[data-show]');
-        if (sb2) {
+        if (sb2 && (items[+sb2.getAttribute('data-show') - 9000] || {}).done) {   // cevaplanmadan çözüm açılmaz
           var el = document.getElementById('sol' + sb2.getAttribute('data-show'));
           el.hidden = !el.hidden; sb2.textContent = el.hidden ? 'Çözümü göster' : 'Çözümü gizle';
         }
