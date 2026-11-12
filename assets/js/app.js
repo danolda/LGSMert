@@ -312,7 +312,7 @@
         h = '<h3 class="grp grp-' + q.grp + '" data-grp="' + q.grp + '">' + GRP_TITLE[q.grp] + ' <small>(' + cnt + ' soru)</small></h3>';
       }
       lastG = q.grp;
-      return h + qHtml(q, i, true);
+      return h + qHtml(q, i, true, t.id);
     }).join('');
     list.forEach(function (q, i) { paint(t.id, q, i); });
     applyFilter(list, t.id);
@@ -370,7 +370,7 @@
     });
   }
 
-  function qHtml(q, i, mark) {
+  function qHtml(q, i, mark, tid) {
     var head = '<div class="meta"><span class="num">' + (i + 1) + '.</span>' +
       (q.meb ? '<span class="tag meb">' + esc(q.lb || 'MEB Örnek · ' + q.no + '. soru') + '</span>' : q.past ? '<span class="tag past">LGS ' + q.year + ' · ' + q.no + '. soru</span>' : '<span class="tag new">Yeni nesil</span>') + '</div>';
     var body, choices;
@@ -389,7 +389,8 @@
       (mark ? '<button class="btn mark" data-mark="' + i + '" disabled>İşaretle</button>' : '') +
       '<div class="res" id="res' + i + '"></div>' +
       '<button class="btn ghost" style="margin-top:8px" data-show="' + i + '">Çözümü göster</button>' +
-      '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + fmt(q.s) + '</div></article>';
+      '<div class="sol" id="sol' + i + '" hidden><span class="st">Çözüm — Doğru cevap: ' + q.a + '</span>' + fmt(q.s) +
+      (window.LGSAi && tid ? window.LGSAi.btn(q, { tid: tid, pick: function () { var a = load(tid)[q.key]; return a ? a.c : ''; } }) : '') + '</div></article>';
   }
 
   function paint(tid, q, i) {
@@ -576,7 +577,7 @@
       });
       if (!items.length) { box.innerHTML = '<p class="empty">Bugün tekrar edilecek soru yok.</p>'; return; }
       box.innerHTML = items.map(function (it, i) {
-        var h = qHtml(it.q, 9000 + i);
+        var h = qHtml(it.q, 9000 + i, false, it.r.tid);
         h = h.replace('<span class="num">' + (9001 + i) + '.</span>', '<span class="num">' + (i + 1) + '.</span>');
         var tag = '<a class="tag topic" style="--c:' + it.m.s.color + '" href="#/k/' + it.r.tid + '">' + it.m.s.icon + ' ' + esc(it.m.t.title) + '</a>' +
           (it.r.n ? '<span class="tag again">' + (it.r.n + 1) + '. tekrar</span>' : '');

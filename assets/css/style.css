@@ -1086,3 +1086,37 @@ img.yz-simg{display:block;max-width:100%;height:auto;margin:8px 0;background:#ff
 .dn-kap-d summary::-webkit-details-marker{display:none}.dn-kap-d summary span{font-size:.85rem;opacity:.75;text-align:right}
 .dn-kap-d ul{margin:6px 0 0;padding-left:20px}.dn-kap-d li{margin:3px 0;font-size:.9rem}.dn-kap-d li small{opacity:.6}
 .dn-mb-n .dn-mb-ay{display:block;font-size:9px;text-transform:none;letter-spacing:0;text-align:center;line-height:1.15;max-width:58px;margin-top:2px}
+
+/* ===== 🤖 AI açıklama (aiacikla.js; yalnız izinli profil) ===== */
+.ai-btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:12px;padding:10px 12px;font-size:14px;background:linear-gradient(135deg,rgba(34,211,238,.16),rgba(99,102,241,.18));color:var(--text);border:1px solid rgba(34,211,238,.45)}
+.ai-btn:hover{border-color:var(--accent)}
+body.ai-lock{overflow:hidden}
+.ai-ov{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.66);display:flex;align-items:flex-end;justify-content:center;padding:12px;animation:fadeIn .2s}
+@media(min-width:560px){.ai-ov{align-items:center}}
+.ai-box{width:100%;max-width:460px;max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;background:var(--card);border:1px solid var(--line2);border-radius:20px;padding:16px;box-shadow:var(--shadow)}
+.ai-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.ai-h b{font:600 18px var(--ff-h)}
+.ai-x{background:none;border:0;color:var(--muted);font-size:20px;width:40px;height:40px;cursor:pointer;border-radius:10px}.ai-x:hover{color:var(--text);background:var(--card2)}
+.ai-sum{display:flex;flex-direction:column;gap:2px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:12px}
+.ai-sum small{color:var(--muted);font-size:12.5px}
+.ai-thumb{display:block;max-width:100%;max-height:150px;object-fit:contain;object-position:left top;margin:6px 0 2px;border-radius:8px;background:#fff}
+.ai-stem{margin:6px 0 2px;font-size:14px;line-height:1.45}
+.ai-ans{margin:4px 0 0;font-size:14px}.ai-ans b{color:var(--ok)}.ai-ans b.bad{color:var(--bad)}
+.ai-lb{display:block;font-weight:600;font-size:14px;margin-bottom:6px}.ai-lb small{color:var(--muted);font-weight:400}
+#aiNote{width:100%;resize:vertical;min-height:72px;background:var(--bg2);color:var(--text);border:1px solid var(--line2);border-radius:12px;padding:10px 12px;font:15px/1.45 var(--ff)}
+#aiNote:focus{outline:none;border-color:var(--accent)}
+.ai-cache{margin:8px 0 0;font-size:13px;color:var(--ok)}
+.ai-load{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;align-items:center;margin-top:12px;padding:12px;border-radius:14px;background:var(--card2);border:1px solid var(--line)}
+.ai-load b{display:block;font-size:14px}.ai-load small{color:var(--muted);font-size:12px}
+.ai-spin{width:30px;height:30px;border-radius:50%;border:3px solid var(--line2);border-top-color:var(--accent);animation:aiSpin .9s linear infinite}
+@keyframes aiSpin{to{transform:rotate(360deg)}}
+.ai-bar{grid-column:1/-1;height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin-top:6px}.ai-bar i{display:block;height:100%;width:0;background:var(--grad);transition:width .5s}
+.ai-err{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:var(--badbg);color:var(--bad);font-size:14px}
+.ai-b{display:grid;grid-template-columns:1fr 1.5fr;gap:8px;margin-top:14px}.ai-b .btn{padding:12px 8px}
+.ai-b .btn:disabled{opacity:.6}
+.ai-regen{display:block;margin:10px auto 0;background:none;border:0;color:var(--accent);font:500 14px var(--ff);cursor:pointer;padding:8px}
+.ai-view{position:fixed;inset:0;z-index:100;background:#0b0f19;display:flex;flex-direction:column;animation:fadeIn .2s}
+.ai-vh{flex:none;display:flex;align-items:center;gap:10px;padding:8px 10px;padding-top:max(8px,env(safe-area-inset-top));background:#0b0f19;border-bottom:1px solid #232b3b;color:#e8ecf4}
+.ai-vh span{flex:1;min-width:0;font:600 15px var(--ff-h);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ai-close{flex:none;background:#f43f5e;color:#fff;border:0;border-radius:12px;padding:10px 14px;font:700 15px var(--ff);cursor:pointer;min-height:44px}
+.ai-view iframe{flex:1;width:100%;border:0;background:#0b0f19}
+.ai-load[hidden],.ai-regen[hidden],.ai-err[hidden],.ai-cache[hidden]{display:none}

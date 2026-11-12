@@ -524,7 +524,7 @@
             '<ul class="ch compact">' + LETTERS.map(function (L) { return '<li><button disabled class="' + mark(L) + '"><b>' + L + ')</b></button></li>'; }).join('') + '</ul>'
             : '<div class="stem">' + A.fmt(q.q) + '</div><ul class="ch">' + q.c.map(function (c, k) { var L = LETTERS[k]; return '<li><button disabled class="' + mark(L) + '"><b>' + L + ')</b><span>' + A.fmt(c) + '</span></button></li>'; }).join('') + '</ul>') +
             '<div class="res ' + (it.r === 'ok' ? 'ok' : 'bad') + '">' + (it.r === 'ok' ? '✓ Doğru cevap: ' + q.a : (it.c ? '✗ Senin cevabın: ' + it.c + ' · ' : 'Boş · ') + 'Doğru cevap: ' + q.a) + '</div>' +
-            '<div class="sol"><span class="st">Çözüm</span>' + A.fmt(q.s || '') + '</div></div>';
+            '<div class="sol"><span class="st">Çözüm</span>' + A.fmt(q.s || '') + (window.LGSAi ? window.LGSAi.btn(q, { tid: it.tid, pick: it.c || '' }) : '') + '</div></div>';
           A.fitSvgs(box);
         }
         box.hidden = false; b.querySelector('.dn-wq-go').textContent = 'Gizle ˄';
