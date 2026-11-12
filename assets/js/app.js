@@ -108,9 +108,13 @@
       if (LGS.topics[tid]) return cb(LGS.topics[tid]);
       loadScript('data/topics/' + tid + '.js', function () { cb(LGS.topics[tid] || null); });
     };
+    var ornek25Done = function () { // MEB LGS örnek soru kitapçıkları 2025-26, sitede olmayan sorular (data/meb/ornek25-<ders>.js)
+      if (!(LGS.ornek25Subj || {})[sid] || LGS.ornek25Loaded[sid]) return pastDone();
+      loadScript('data/meb/ornek25-' + sid + '.js', function () { LGS.ornek25Loaded[sid] = true; pastDone(); });
+    };
     var ornekDone = function () { // MEB LGS örnek soru kitapçıkları 2024-25 (data/meb/ornek24-<ders>.js)
-      if (!(LGS.ornek24Subj || {})[sid] || LGS.ornek24Loaded[sid]) return pastDone();
-      loadScript('data/meb/ornek24-' + sid + '.js', function () { LGS.ornek24Loaded[sid] = true; pastDone(); });
+      if (!(LGS.ornek24Subj || {})[sid] || LGS.ornek24Loaded[sid]) return ornek25Done();
+      loadScript('data/meb/ornek24-' + sid + '.js', function () { LGS.ornek24Loaded[sid] = true; ornek25Done(); });
     };
     var mebidDone = function () { // MEBİ LGS denemeleri 2025-26 (data/meb/mebid-<ders>.js)
       if (!(LGS.mebidSubj || {})[sid] || LGS.mebidLoaded[sid]) return ornekDone();

@@ -1,6 +1,6 @@
 window.LGS = {
-  version: 97,
-  xpMax: 781660,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
+  version: 98,
+  xpMax: 781740,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 resmi tarih: 13 Haziran 2027 Pazar (MEB, 30.10.2026) https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr
   topics: {},
   past: {},
@@ -12,6 +12,8 @@ window.LGS = {
   mebidLoaded: {},
   mebidSubj: { tr: 1, ink: 1, din: 1, ing: 1, mat: 1, fen: 1 }, // MEBİ LGS denemeleri 2025-26 (data/meb/mebid-<ders>.js, data/meb/mebid.js); python3 tools/mebid.py üretir
   ornek24Loaded: {},
+  ornek25Loaded: {},
+  ornek25Subj: { ink: 1 }, // MEB LGS örnek soru kitapçıkları 2025-26: yalnız sitede olmayan sorular (data/meb/ornek25-<ders>.js); kitapçık dizini data/meb/ornek25.js; python3 tools/ornek25.py üretir
   ornek24Subj: { tr: 1, ink: 1, din: 1, ing: 1, mat: 1, fen: 1 }, // MEB LGS örnek soru kitapçıkları 2024-25 (data/meb/ornek24-<ders>.js, data/meb/ornek24.js); python3 tools/ornek24.py üretir
   mebiSubj: { din: 1, ink: 1, fen: 1, mat: 1, ing: 1, tr: 1 }, // MEBİ yaprak test soruları (data/meb/mebi-<ders>.js) yüklenen dersler; node tools/meb.js apply mebi-<ders> günceller
   add: function (t) { this.topics[t.id] = t; },
