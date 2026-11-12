@@ -1,6 +1,6 @@
-// LGS Kışlası — Yazılı cevap puanlama (Gemini 3.8 Flash)
+// LGS Kışlası — Yazılı cevap puanlama (Gemini 4 Hydrogen, kota dolunca 3.8 Flash)
 // Anahtar: Supabase secret GEMINI_API_KEY (sitede yok).
-const MODELS = ["gemini-3.8-flash"];
+const MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash"];   // kota modele özel: Hydrogen 429 verirse 3.8 Flash denenir
 const CORS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
@@ -127,14 +127,16 @@ ${partLines(q.parts)}` });
   const contents = [{ role: "user", parts }];
   const SCHEMA = single ? SCHEMA_ONE : SCHEMA_EXAM;
 
-  let r: Response | null = null, t = "";
+  let r: Response | null = null, t = "", used = MODELS[0];
   const T0 = Date.now(), BUDGET = 135_000;   // edge function duvar saati ~150 sn
   for (const MODEL of MODELS) {
+    used = MODEL;
     for (let att = 0; att < 4; att++) {
       const left = BUDGET - (Date.now() - T0);
       if (att > 0 && left < 30_000) break;   // yeniden denemeye vakit yok → istemci "busy" ile bekleyip tekrar dener
-      const gc: any = { responseMimeType: "application/json", responseSchema: SCHEMA, temperature: 0.2 };
-      if (MODEL.startsWith("gemini-3")) gc.thinkingConfig = { thinkingLevel: "low" };
+      const gc: any = { responseMimeType: "application/json", responseSchema: SCHEMA };
+      if (MODEL.startsWith("gemini-3")) gc.temperature = 0.2;   // Gemini 4 sampling parametresi kabul etmez
+      if (/^gemini-[34]/.test(MODEL)) gc.thinkingConfig = { thinkingLevel: "low" };
       r = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
         { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key },
@@ -154,7 +156,7 @@ ${partLines(q.parts)}` });
   if (!r.ok) return json({ error: "gemini", status: r.status, detail: t.slice(0, 500) }, 502);
   try {
     const d = JSON.parse(t);
-    const txt = d.candidates?.[0]?.content?.parts?.map((p: any) => p.text || "").join("") || "";
+    const txt = d.candidates?.[0]?.content?.parts?.map((p: any) => (p.thought ? "" : p.text || "")).join("") || "";
     const out = JSON.parse(txt);
     if (single) {
       const op = Array.isArray(out.parts) ? out.parts : [];
@@ -168,7 +170,7 @@ ${partLines(q.parts)}` });
       if (!g || !Array.isArray(g.parts)) return { id: q.id, missing: true, parts: [], total: 0, summary: "" };
       return { id: q.id, parts: q.parts.map((p: any, k: number) => normPart(g.parts[k], p)), total: clamp(g.total), summary: String(g.summary || "") };
     });
-    return json({ questions: res, total: clamp(out.total), summary: String(out.summary || ""), model: MODELS[0] });
+    return json({ questions: res, total: clamp(out.total), summary: String(out.summary || ""), model: used });
   } catch (e) {
     return json({ error: "parse", detail: t.slice(0, 500) }, 502);
   }
