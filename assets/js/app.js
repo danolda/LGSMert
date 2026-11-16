@@ -266,7 +266,7 @@
         var n = 0;
         (t.qs || []).forEach(function (q) {
           if (q.lv !== lv[0]) return;
-          list.push({ key: lv[2] + ':' + n, past: false, grp: lv[0], lvName: lv[1], n: ++n, q: q.q, c: q.c, a: q.a, s: q.s });
+          list.push({ key: lv[2] + ':' + n, past: false, grp: lv[0], lvName: lv[1], n: ++n, q: q.q, c: q.c, a: q.a, s: q.s, rev: q.r || 0 });
         });
       });
     } else {
@@ -307,6 +307,8 @@
     var ans = load(t.id), keys = {}, dirty = false;
     list.forEach(function (q) { keys[q.key] = 1; });
     for (var k in ans) if (ans.hasOwnProperty(k) && k.charAt(0) !== '_' && !keys[k]) { delete ans[k]; dirty = true; }
+    // q.r: soru aynı konumda yenisiyle değiştirildiyse (sürüm numarası) eski soruya verilmiş cevap silinir
+    list.forEach(function (q) { var o = ans[q.key]; if (q.rev && o && o.r !== q.rev) { delete ans[q.key]; dirty = true; } });
     if (dirty || ans._total !== list.length) { ans._total = list.length; save(t.id, ans); }
     var lvl = hasLevels(t);
     if (!lvl && (filter === 'kolay' || filter === 'orta' || filter === 'zor')) filter = 'all';
@@ -369,6 +371,7 @@
         var pick = picked[i]; delete picked[i];
         b = document.querySelector('#q' + i + ' button[data-ch="' + pick + '"]');
         a[q.key] = { c: pick, ok: pick === q.a };
+        if (q.rev) a[q.key].r = q.rev;
         a._total = list.length;
         save(t.id, a);
         logAnswer(t.id, pick === q.a);
