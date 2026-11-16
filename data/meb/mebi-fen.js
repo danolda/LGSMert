@@ -677,5 +677,383 @@ LGS.addMeb({
   "o": 100096,
   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zararlı böceklere karşı koruma sağlayan bir bakteri geni mısır DNA’sına eklenmiş; mısır böceklerin sindirimini bozan bir protein üreterek dayanıklı hâle gelmiş.</li></ul><b>İstenen</b><p>Bu çalışmanın doğrudan örneği olduğu kavram.</p></div><ol class=\"sv-s\"><li><b>Yöntemi tanı</b> Başka bir canlının (bakterinin) geni mısıra eklenmiş ve mısır yeni bir özellik kazanmış → gen aktarımı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Klonlama aynı genetik yapıda canlı üretmektir.</td></tr><tr><td>B</td><td>Gen tedavisi hastalığa yol açan hatalı genin düzeltilmesidir.</td></tr><tr class=\"ok\"><td>C</td><td>Bakteri geni mısıra aktarıldı → gen aktarımı.</td></tr><tr><td>D</td><td>Geleneksel ıslah çaprazlama ile yapılır; gen aktarılmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Farklı canlıdan gen eklenmesi → gen aktarımı (transgenik canlı).</div><div class=\"sv-w\"><b>Tuzak:</b> B’yi seçme: mısırda düzeltilen hatalı bir gen yok, yeni bir gen ekleniyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
   "lb": "MEB Yaprak Test 7 · 12. soru"
+ },
+ "mebit-fen-f1-1": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150001,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yapımcı, gündüzlerin uzadığı ve gündüzün geceden uzun olduğu bir tarihte çekim yapmak istiyor.</li></ul><b>İstenen</b><p>Doğru konum ve tarih.</p></div><ol class=\"sv-s\"><li><b>Kuzey yarım küre</b> 21 Mart’tan sonra gündüz geceden uzundur; 21 Haziran’a kadar gündüz uzamaya devam eder → 21 Mart – 21 Haziran arası.</li><li><b>Güney yarım küre</b> Aynı durum 23 Eylül – 21 Aralık arasında yaşanır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kuzeyde 20 Nisan → 21 Mart – 21 Haziran aralığında. Doğru.</td></tr><tr><td>B</td><td>Kuzeyde 15 Ekim → gece gündüzden uzun ve gündüz kısalıyor.</td></tr><tr><td>C</td><td>Güneyde 10 Ağustos → gündüz uzuyor ama gece hâlâ daha uzun (kış).</td></tr><tr><td>D</td><td>Güneyde 21 Mayıs → gündüz kısalıyor ve gece daha uzun (sonbahar).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir yarım kürede gündüz 21 Mart’tan (güneyde 23 Eylül’den) itibaren geceden uzun olur; en uzun gün 21 Haziran’dır (güneyde 21 Aralık).</div><div class=\"sv-w\"><b>Tuzak:</b> C’de gündüz uzuyor ama gündüzün geceden uzun olma şartı sağlanmıyor; iki şartı da kontrol et.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 1. soru"
+ },
+ "mebit-fen-f1-2": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150002,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Grafik: K ve L şehirlerindeki eşit boylu çubukların gölge boylarının I–V tarihleri arasındaki değişimi.</li><li>L’nin gölgesi II ve IV’te sıfır, III’te en uzun. K’nin gölgesi II–III ve III–IV arasında iki kez sıfır, III’te küçük bir tepe yapıyor.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>K’yi yorumla</b> Gölgenin yılda iki kez sıfır olması → Güneş ışınları iki kez dik geliyor → K dönenceler arasında. III’teki küçük tepe, Güneş’in K’nin bulunduğu yarım kürenin dönencesine ulaştığı tarih.</li><li><b>D’yi sına</b> II = 23 Eylül ise L’nin gölgesi 23 Eylül’de ve IV’te sıfır → IV = 21 Mart → III = 21 Aralık. K’nin küçük tepesi 21 Aralık’ta → Güneş Oğlak’ta, K Oğlak’a yakın değil ama arada → K güney yarım kürede.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>III = 21 Haziran ise küçük tepe Güneş Yengeç’teyken → K kuzeyde (Ekvator–Yengeç arası).</td></tr><tr><td>B</td><td>IV = 21 Mart ise yukarıdaki gibi III = 21 Aralık → K güneyde.</td></tr><tr><td>C</td><td>II = 10 Nisan ise L Ekvator’da değildir; zaten gece-gündüz eşitliği yıl boyu yalnız Ekvator’da olur.</td></tr><tr class=\"ok\"><td>D</td><td>K güney yarım kürede → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gölge yılda iki kez sıfırsa yer dönenceler arasındadır; Güneş kendi yarım küresinin dönencesine geçerken gölge yeniden biraz uzar.</div><div class=\"sv-w\"><b>Tuzak:</b> L’nin II ve IV’teki sıfırları gece-gündüz eşitliği tarihleri olunca L Ekvator’dadır; tarihleri buna göre yerleştir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 2. soru"
+ },
+ "mebit-fen-f1-3": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150003,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Grafik (öğle gölge boyu): 21 Aralık’ta sıfır, 21 Mart’ta orta, 21 Haziran’da en uzun, 23 Eylül’de orta.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Konumu bul</b> Gölge yalnız 21 Aralık’ta sıfır → Güneş ışınları yalnız o gün dik → yer tam Oğlak Dönencesi üzerinde (güney yarım küre).</li><li><b>Öncülleri sına</b> I: Dik ışın → birim yüzeye en çok enerji 21 Aralık’ta ✓. II: Tam Oğlak üzerinde ✓. III: Güneyde geceler 21 Aralık’tan beri uzuyor; 21 Mart’ta uzamaya başlamaz, gece gündüzden uzun olmaya başlar ✗.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Doğru.</td></tr><tr><td>III</td><td>Yanlış.</td></tr><tr class=\"ok\"><td>A</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gölgenin sıfır olduğu tek tarih 21 Aralık → Oğlak; 21 Haziran → Yengeç; iki tarih → dönenceler arası.</div><div class=\"sv-w\"><b>Tuzak:</b> “Geceler uzamaya başlar” ile “gece gündüzden uzun olur” farklıdır; güneyde geceler 21 Aralık’tan itibaren uzar.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 3. soru"
+ },
+ "mebit-fen-f1-4": {
+  "t": "fen-mevsim",
+  "a": "C",
+  "o": 150004,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>K noktası (deniz seviyesi) için mevsim başlangıçlarında öğle gölgesi: 21 Haziran en uzun, 23 Eylül ve 21 Mart eşit, 21 Aralık en kısa.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Öncülleri sına</b> I: En uzun gölge 21 Haziran’da → Güneş ışınları o gün en eğik → K güney yarım kürede ✓. II: Gölgenin uzunluğu ışınların geliş açısına bağlıdır; Dünya-Güneş uzaklığına değil ✗. III: 21 Mart ve 23 Eylül’de ışınlar Ekvator’a dik, K’ye aynı açıyla gelir → gölgeler eşit ✓.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Yanlış; sebep uzaklık değil, eksen eğikliği ve geliş açısı.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>C</td><td>I ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mevsimleri ve gölge boyunu belirleyen eksen eğikliği ve ışınların geliş açısıdır, Güneş’e uzaklık değildir.</div><div class=\"sv-w\"><b>Tuzak:</b> Dünya Temmuz başında Güneş’e en uzak konumdadır; ama bu gölge boyunun sebebi değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 4. soru"
+ },
+ "mebit-fen-f1-5": {
+  "t": "fen-mevsim",
+  "a": "B",
+  "o": 150005,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görsel: Dünya’nın dönme ekseni dolanma düzlemine dik doğrultuyla 23°27′ açı yapıyor.</li></ul><b>İstenen</b><p>Eksen eğikliği ve dolanma hareketinin sonucu.</p></div><ol class=\"sv-s\"><li><b>Sonuçları hatırla</b> Eksen eğikliği + dolanma → ışınların geliş açısı yıl içinde değişir → mevsimler oluşur ve iki yarım kürede zıt mevsimler yaşanır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Gölgenin gün içinde değişmesi Dünya’nın kendi ekseni etrafında dönmesindendir.</td></tr><tr class=\"ok\"><td>B</td><td>Aynı tarihte iki yarım kürede farklı mevsim → doğru.</td></tr><tr><td>C</td><td>Mesafe değişimi yörüngenin elips olmasından kaynaklanır.</td></tr><tr><td>D</td><td>Eksen eğikliği yüzünden ışınlar Ekvator’a yalnızca 21 Mart ve 23 Eylül’de dik gelir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Günlük olaylar (gece-gündüz, gölgenin gün içindeki değişimi) → dönme. Yıllık olaylar (mevsimler) → eksen eğikliği + dolanma.</div><div class=\"sv-w\"><b>Tuzak:</b> D eksen eğikliği olmasaydı doğru olurdu; eğiklik tam tersine bunu engeller.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 5. soru"
+ },
+ "mebit-fen-f1-6": {
+  "t": "fen-mevsim",
+  "a": "B",
+  "o": 150006,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>21 Haziran; Güneş ışınları Yengeç Dönencesi’ndeki K noktasına dik geliyor. L, K’nin kuzeyinde; M, Ekvator’un güneyinde. Noktalar aynı yükseltide.</li></ul><b>İstenen</b><p>Kesinlikle doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Öncülleri sına</b> I: K’ye ışın dik → öğlen gölge oluşmaz; L ve M’ye eğik → gölge oluşur ✓. II: 21 Haziran’da kuzeye gidildikçe gündüz uzar: L &gt; K &gt; M ✓. III: Gölge boyu, ışının dik geldiği Yengeç’e uzaklığa bağlı; L ve M’nin Yengeç’e uzaklıkları kesin bilinmediği için hangisinin gölgesinin uzun olduğu kesin değil.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Kesin doğru.</td></tr><tr><td>II</td><td>Kesin doğru.</td></tr><tr><td>III</td><td>Kesin değil.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 21 Haziran’da kuzey kutbuna yaklaştıkça gündüz uzar; gölge boyu ise dik ışının düştüğü enleme uzaklıkla artar.</div><div class=\"sv-w\"><b>Tuzak:</b> III görselde doğru gibi görünebilir; “kesinlikle” sorusunda ölçü verilmeyen karşılaştırmalara güvenme.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 6. soru"
+ },
+ "mebit-fen-f1-8": {
+  "t": "fen-mevsim",
+  "a": "C",
+  "o": 150008,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Eşit enerji taşıyan K, L, M ışın demetleri; K kutba yakın, L orta, M Ekvator’a yakın bölgeye düşüyor. Aydınlanan alanlar K’de en büyük, M’de en küçük.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Enerji dağılımı</b> Aynı enerji daha küçük alana düşerse birim yüzeye düşen enerji artar. M’nin alanı en küçük → birim yüzeye en çok enerji M’de.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Demetler eşit enerji taşıyor; toplam enerji eşittir.</td></tr><tr><td>B</td><td>Açı küçüldükçe alan büyür ama birim yüzeye düşen enerji azalır.</td></tr><tr class=\"ok\"><td>C</td><td>M’de birim yüzeye düşen enerji K’den fazla → doğru.</td></tr><tr><td>D</td><td>Ekvator’dan uzaklaştıkça açı küçülür, alan büyür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Dik ışın → küçük alan → birim yüzeye çok enerji → sıcak. Eğik ışın → geniş alan → az enerji.</div><div class=\"sv-w\"><b>Tuzak:</b> B’nin ilk yarısı doğrudur; ikinci yarısındaki “artmasına” sözcüğü yanlıştır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 8. soru"
+ },
+ "mebit-fen-f1-9": {
+  "t": "fen-mevsim",
+  "a": "B",
+  "o": 150009,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görsel: 21 Aralık; Güneş ışınları Oğlak Dönencesi’ne dik.</li></ul><b>İstenen</b><p>Yanlış yargılar.</p></div><ol class=\"sv-s\"><li><b>Öncülleri sına</b> I: Kuzeyde kış başlıyor; birim yüzeye düşen enerjinin en az olduğu mevsim ✓ (doğru). II: Işınlar güneye daha dik gelir → güneydeki gölge daha kısa ✓ (doğru). III: 21 Aralık’tan sonra kuzeyde geceler <b>kısalmaya</b> başlar → “uzamaya başlar” yanlış.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Doğru.</td></tr><tr><td>III</td><td>Yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>Yalnız III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 21 Aralık kuzeyde en uzun gecedir; ondan sonra geceler kısalır, gündüzler uzar.</div><div class=\"sv-w\"><b>Tuzak:</b> Soru “yanlış” olanları soruyor; doğru olan I ve II’yi işaretleme.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 9. soru"
+ },
+ "mebit-fen-f1-10": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150010,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>21 Haziran; L noktası Yengeç Dönencesi’nin kuzeyinde, M noktası Ekvator’un güneyinde (deniz seviyesi).</li></ul><b>İstenen</b><p>L ve M için yanlış olan yargı.</p></div><ol class=\"sv-s\"><li><b>Mümkün olanları düşün</b> L ve M, Yengeç’e eşit uzaklıktaysa öğle açıları ve gölge boyları eşit olabilir (A, B). L ve M Ekvator’a göre simetrikse M’nin gecesi L’nin gündüzüne eşit olur (C).</li><li><b>Gündüz süreleri</b> 21 Haziran’da kuzey yarım kürede gündüz 12 saatten uzun, güney yarım kürede 12 saatten kısadır → L ve M’nin gündüzleri eşit olamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eşit uzaklıkta olabilirler → olabilir.</td></tr><tr><td>B</td><td>Eşit açı → olabilir.</td></tr><tr><td>C</td><td>Simetrik konumda → olabilir.</td></tr><tr class=\"ok\"><td>D</td><td>Gündüzler eşit olamaz → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gölge ve açı, ışının dik geldiği yere (Yengeç) uzaklığa; gündüz süresi ise hangi yarım kürede olduğuna bağlıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> A ve B gerçek konumlarda farklı görünse de “olabilir” denildiği için mümkündür.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 10. soru"
+ },
+ "mebit-fen-f1-11": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150011,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görselde Dünya Güneş’in çevresinde 1 → 2 → 3 → 4 yönünde dolanıyor; 1 numaralı konumda kuzey yarım küre Güneş’e dönük (21 Haziran).</li><li>Buna göre 2 = 23 Eylül, 3 = 21 Aralık, 4 = 21 Mart.</li></ul><b>İstenen</b><p>Doğru çıkarım.</p></div><ol class=\"sv-s\"><li><b>Aralıkları yorumla</b> 1 → 2 (21 Haziran – 23 Eylül): kuzeyde yaz, güneyde kış.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>1 → 2 arası kuzeyde yaz → doğru.</td></tr><tr><td>B</td><td>3 = 21 Aralık; Yengeç’te en kısa gölge 21 Haziran’dadır.</td></tr><tr><td>C</td><td>4 → 1 (21 Mart – 21 Haziran) güneyde sonbahardır.</td></tr><tr><td>D</td><td>2 (23 Eylül) güneyde kış biter, ilkbahar başlar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir konum belirlenince diğerleri dolanma yönünde sırayla gelir: 21 Haziran → 23 Eylül → 21 Aralık → 21 Mart.</div><div class=\"sv-w\"><b>Tuzak:</b> Güney yarım kürede mevsimler kuzeyin tam tersidir; C ve D bu yüzden yanlıştır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 11. soru"
+ },
+ "mebit-fen-f1-12": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150012,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>K: Yörünge düzlemi ile Ekvator düzlemi arasındaki açı 23°27′ → öğrenci D. L: Güneş’e yaklaşıp uzaklaşma mevsimlerde etkili → Y. M: Açı büyüdükçe gölge uzar → Y. N: Işınlar Ekvator’a yıl boyu öğlen dik düşer → D.</li></ul><b>İstenen</b><p>Hatalı değerlendirme.</p></div><ol class=\"sv-s\"><li><b>Bilgileri doğrula</b> K doğru (D ✓). L yanlış (Y ✓). M yanlış; açı büyüdükçe gölge kısalır (Y ✓). N yanlış; Ekvator’a dik ışın yalnızca 21 Mart ve 23 Eylül’de → öğrenci D yazmış ✗.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>K’nin değerlendirmesi doğru.</td></tr><tr><td>B</td><td>L’nin değerlendirmesi doğru.</td></tr><tr><td>C</td><td>M’nin değerlendirmesi doğru.</td></tr><tr class=\"ok\"><td>D</td><td>N yanlış bir bilgi; öğrenci “D” yazmış → hatalı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eksen eğikliği = dönme ekseninin dik doğrultuyla yaptığı açı = Ekvator düzlemi ile yörünge düzlemi arasındaki açı (23°27′).</div><div class=\"sv-w\"><b>Tuzak:</b> “Öğrencinin değerlendirmesi hatalı” = bilginin kendisi değil, D/Y işareti yanlış olan satır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 12. soru"
+ },
+ "mebit-fen-f1-13": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150013,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>21 Mart; Güneş ışınları Ekvator’a dik. K kuzey, L güney yarım kürede, Ekvator’a eşit uzaklıkta ve deniz seviyesinde.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Eşit uzaklık</b> Işınlar Ekvator’a dikken Ekvator’a eşit uzaklıktaki noktalara aynı açıyla gelir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Aynı açı → doğru.</td></tr><tr><td>B</td><td>21 Mart’tan sonra güneyde (L) gece gündüzden uzun olur.</td></tr><tr><td>C</td><td>21 Mart’ta her yerde gece = gündüz = 12 saat; fazla değil.</td></tr><tr><td>D</td><td>Aynı açı → gölgeler eşit.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 21 Mart ve 23 Eylül’de tüm Dünya’da gece-gündüz eşittir ve Ekvator’a simetrik noktalar aynı ışın açısını alır.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de yarım küreler karıştırılmış; 21 Mart’tan sonra gündüzün uzun olduğu yer kuzeydir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 13. soru"
+ },
+ "mebit-fen-f1-14": {
+  "t": "fen-mevsim",
+  "a": "C",
+  "o": 150014,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görselde ışınlar Ekvator’daki L’ye dik geliyor; K kuzeyde, M güneyde. Dünya’nın ekseni ışınlara dik (gece-gündüz eşitliği tarihi: 21 Mart ya da 23 Eylül).</li></ul><b>İstenen</b><p>Kesinlikle doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Tarih belirsiz</b> Görsel 21 Mart da olabilir 23 Eylül de; hangi mevsimin başladığı kesin değil.</li><li><b>Ortak sonuç</b> Bu iki tarihten sonra her iki yarım kürede de gece ile gündüz arasındaki fark artmaya başlar.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>23 Eylül ise K’de sonbahar, M’de ilkbahar başlar → kesin değil.</td></tr><tr><td>B</td><td>Bu tarihte her yerde gündüz 12 saat → eşit.</td></tr><tr class=\"ok\"><td>C</td><td>K ve M’de gece-gündüz farkı artacak → kesin doğru.</td></tr><tr><td>D</td><td>En uzun gündüz/gece 21 Haziran ve 21 Aralık’tadır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ekinokslarda (21 Mart, 23 Eylül) gece = gündüz; sonrasında fark büyür, gündönümlerinde (21 Haziran, 21 Aralık) en büyük olur.</div><div class=\"sv-w\"><b>Tuzak:</b> Görseli 21 Mart sanıp A’yı işaretleme; görsel hangi ekinoks olduğunu göstermiyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 14. soru"
+ },
+ "mebit-fen-f1-15": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150015,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Öğle gölge boyları: 21 Mart, 23 Eylül ve 21 Aralık’ta eşit; 21 Haziran’da en uzun.</li></ul><b>İstenen</b><p>Öğrencinin yaşadığı şehirle ilgili doğru yargı.</p></div><ol class=\"sv-s\"><li><b>En uzun gölge</b> 21 Haziran’da en uzun → ışınlar en eğik o gün gelir → şehir güney yarım kürede.</li><li><b>Eşitlik</b> 21 Aralık’taki gölge ekinokstakine eşit → Oğlak’taki dik ışına uzaklık, Ekvator’daki dik ışına uzaklığa eşit → şehir Ekvator ile Oğlak’ın tam ortasında.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Ekvator ile Oğlak arası → doğru.</td></tr><tr><td>B</td><td>Yengeç üzerinde 21 Haziran’da gölge olmazdı.</td></tr><tr><td>C</td><td>Oğlak üzerinde 21 Aralık’ta gölge sıfır olurdu.</td></tr><tr><td>D</td><td>Kuzeyde 21 Haziran’da gölge en kısa olurdu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gölge, ışının dik geldiği enleme uzaklıkla uzar; iki tarihte eşitse şehir iki dik ışın enleminin ortasındadır.</div><div class=\"sv-w\"><b>Tuzak:</b> 21 Aralık’ta gölge sıfır değil; bu yüzden şehir Oğlak üzerinde değildir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 15. soru"
+ },
+ "mebit-fen-f1-16": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150016,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Model: Alçak basınçta yerden çevreden merkeze akan ve yükselen hava, üstte bulut. Yüksek basınçta inen ve çevreye dağılan hava, üstte açık gökyüzü (Güneş).</li></ul><b>İstenen</b><p>Yalnızca modele göre yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Modelde gösterilenler</b> Oklar: yüksek basınçta alçalma (A) ✓; alçak basınçta çevreden merkeze akış (B) ✓; bulut yalnız alçak basınçta (C) ✓.</li><li><b>Gösterilmeyen</b> Hava moleküllerinin aralarındaki mesafe modelde yok; bu yargıya “sadece model” ile ulaşılamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Aşağı oklar → alçalıcı hava. Doğru.</td></tr><tr><td>B</td><td>Yan oklar merkeze → doğru.</td></tr><tr><td>C</td><td>Bulut yalnız alçak basınçta → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Molekül aralığı modelde gösterilmemiş → bu modele göre söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Sadece model incelendiğinde” sorularında bilgi doğru olsa bile görselde yoksa kabul edilmez.</div><div class=\"sv-w\"><b>Tuzak:</b> Alçak basınçta havanın seyrek olduğu bilgisi gerçekte doğrudur; ama bu modelde molekül çizilmemiştir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 16. soru"
+ },
+ "mebit-fen-f1-17": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150017,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>K’de alçalıcı, L’de yükselici hava hareketi. M’nin hava yoğunluğu K’den az, L’den fazla. N, M’den sıcak.</li><li>Rüzgâr, yüksek basınçtan alçak basınca eser.</li></ul><b>İstenen</b><p>Oluşabilecek rüzgâr yönleri.</p></div><ol class=\"sv-s\"><li><b>Basınçları sırala</b> Alçalıcı → yüksek basınç (K). Yükselici → alçak basınç (L). Yoğunluk K &gt; M &gt; L → basınç K &gt; M &gt; L. N, M’den sıcak → N’de basınç M’den düşük.</li><li><b>Rüzgârlar</b> K → L, K → M, M → L, M → N.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>N’den M’ye ok var; M → N olmalı.</td></tr><tr><td>B</td><td>N → M var; yanlış yön.</td></tr><tr><td>C</td><td>N → M var; yanlış yön.</td></tr><tr class=\"ok\"><td>D</td><td>M → N, M → L, K → L, K → N → tüm oklar yüksekten alçağa. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıcak hava → genleşir, yoğunluk azalır → alçak basınç. Soğuk hava → yüksek basınç.</div><div class=\"sv-w\"><b>Tuzak:</b> N’nin basıncı yalnızca M ile karşılaştırılmış; K ile N arasındaki rüzgâr ancak K &gt; M &gt; N zincirinden çıkar.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 17. soru"
+ },
+ "mebit-fen-f1-18": {
+  "t": "fen-mevsim",
+  "a": "C",
+  "o": 150018,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1. Konya Ovası’nda kışlar soğuk ve kar yağışlı geçer. 2. Yıllık yağış ortalaması en fazla il Rize’dir. 3. Yarın sabah İstanbul’da yoğun sis bekleniyor. 4. Şiddetli rüzgâr nedeniyle bugün feribot seferleri iptal edildi. 5. Ege’de yazın sıcaklıklar genellikle yüksektir.</li></ul><b>İstenen</b><p>Cevap sütununun doğru hâli.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> Uzun yıllar, genellikle, ortalama → iklim. Bugün, yarın, kısa süre → hava olayı.<span class=\"sv-m\">1 iklim, 2 iklim, 3 hava olayı, 4 hava olayı, 5 iklim</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>İlk iki ifade iklim olmalı; 5 hava olayı değil.</td></tr><tr><td>B</td><td>1, 2, 3’ü hava olayı saymış; yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>İklim-İklim-Hava-Hava-İklim → doğru.</td></tr><tr><td>D</td><td>3 iklim değil, hava olayıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Genellikle, her yıl, ortalama” → iklim; “bugün, yarın, şu an, bu hafta” → hava olayı.</div><div class=\"sv-w\"><b>Tuzak:</b> 1’deki “kar yağışlı” sözcüğü hava olayını çağrıştırır; ama “kışlar … geçer” genel bir durumdur.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 18. soru"
+ },
+ "mebit-fen-f1-19": {
+  "t": "fen-mevsim",
+  "a": "C",
+  "o": 150019,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hava olayı: kısa süreli. İklim: uzun yılların ortalaması.</li><li>I. Bugün şiddetli fırtına bekleniyor. II. Bu yaz çok sıcak geçti. III. Yaşadığım şehir bol yağış alan bir bölgede.</li></ul><b>İstenen</b><p>Hava olayıyla ilgili olanlar.</p></div><ol class=\"sv-s\"><li><b>Süreye bak</b> I: bugün → kısa süre → hava olayı. II: tek bir yaz (bu yaz) → kısa süre, ortalama değil → hava olayı. III: bölgenin genel özelliği → iklim.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Hava olayı.</td></tr><tr><td>II</td><td>Hava olayı (yalnız bu yaz).</td></tr><tr><td>III</td><td>İklim.</td></tr><tr class=\"ok\"><td>C</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tek bir mevsim ya da yıl ortalama değildir; iklim için uzun yıllar gerekir.</div><div class=\"sv-w\"><b>Tuzak:</b> II’deki “yaz” sözcüğü mevsim/iklim gibi görünür; ama “bu yaz” tek bir dönemdir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 19. soru"
+ },
+ "mebit-fen-f1-20": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150020,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sanayi ve fosil yakıtlar sera gazlarını artırıp küresel ısınmaya, iklim değişikliğine yol açar.</li></ul><b>İstenen</b><p>Küresel iklim değişikliğinin nedenleri ve sonuçlarıyla ilgili yanlış ifade.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> B: Buzul erimesi → deniz seviyesi yükselir ✓. C: Aşırı hava olayları sıklaşır ✓. D: Sera gazları ısıyı tutar ✓.</li><li><b>Yanlışı bul</b> Deprem ve volkanlar yer kabuğunun iç hareketlerinden kaynaklanır; küresel ısınma bunların sayısını artırmaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Deprem ve volkan sayısı artmaz → yanlış.</td></tr><tr><td>B</td><td>Doğru.</td></tr><tr><td>C</td><td>Doğru.</td></tr><tr><td>D</td><td>Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Küresel ısınmanın sonuçları atmosfer ve su ile ilgilidir: sıcaklık, buzullar, deniz seviyesi, kuraklık, sel.</div><div class=\"sv-w\"><b>Tuzak:</b> Deprem de bir doğal afettir; ama iklimle değil yer kabuğu hareketleriyle ilgilidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 20. soru"
+ },
+ "mebit-fen-f1-21": {
+  "t": "fen-mevsim",
+  "a": "B",
+  "o": 150021,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İklim: geniş bölgede uzun yılların ortalaması. Hava olayı: dar alanda kısa süreli olaylar.</li></ul><b>İstenen</b><p>İklim özelliği hakkında bilgi vermeyen ifade.</p></div><ol class=\"sv-s\"><li><b>Süreye bak</b> “Önümüzdeki üç gün boyunca sağanak” → kısa süreli tahmin → hava olayı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sivas’ın yaz ve kışlarının genel özelliği → iklim.</td></tr><tr class=\"ok\"><td>B</td><td>Üç günlük yağış tahmini → hava olayı; iklim bilgisi vermez.</td></tr><tr><td>C</td><td>Artvin’in her mevsim bol yağış alması → iklim.</td></tr><tr><td>D</td><td>Çöllerin genel özellikleri → iklim.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hava durumu tahminleri (yarın, üç gün) her zaman hava olayıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de “günlük sıcaklık farkı” geçse de bu, çöllerin sürekli (iklimsel) özelliğidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 21. soru"
+ },
+ "mebit-fen-f1-22": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150022,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Haber: Nepal’de buzulların hızla erimesi ve şiddetli yağışlar sel ve heyelana yol açtı. Sera gazı artışıyla oluşan küresel ısınma buzulları eritiyor; iklim değişikliği aşırı hava olaylarını artırıyor.</li></ul><b>İstenen</b><p>Habere göre yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Neden-sonuç zinciri</b> Sera gazı artışı → küresel ısınma → buzul erimesi ve aşırı hava olayları → sel. Sel bir <b>sonuçtur</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Küresel ısınma aşırı hava olaylarını artırır → doğru.</td></tr><tr><td>B</td><td>Sel, iklim değişikliğinin sonucu → doğru.</td></tr><tr><td>C</td><td>Sera gazı azalırsa ısınma ve afetler azalabilir → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Sel sera gazını artırmaz; neden-sonuç ters kurulmuş → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Neden-sonuç sorularında okların yönünü kontrol et: sera gazı → ısınma → sel.</div><div class=\"sv-w\"><b>Tuzak:</b> D, haberdeki iki kavramı doğru alır ama ilişkiyi tersine çevirir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 22. soru"
+ },
+ "mebit-fen-f1-23": {
+  "t": "fen-mevsim",
+  "a": "D",
+  "o": 150023,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo: İklim sütununda 1 tanım, 2 klimatolog, 3 değişkenlik az, 4 “güneşli, rüzgârlı, karlı”. Hava olayı sütununda a tanım, b meteorolog, c değişkenlik fazla, d “kurak, yağışlı, sıcak”.</li></ul><b>İstenen</b><p>Hangi satırlar yer değiştirirse hata düzelir.</p></div><ol class=\"sv-s\"><li><b>Satırları sına</b> 1-a, 2-b, 3-c doğru yerde.</li><li><b>4. satır</b> “Güneşli, rüzgârlı, karlı” anlık hava durumunu anlatır → hava olayı. “Kurak, yağışlı, sıcak” bir bölgenin genel özelliği → iklim. Yerleri karışmış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>1 ve a doğru yerde.</td></tr><tr><td>B</td><td>Klimatolog iklimi, meteorolog hava olaylarını inceler; doğru yerde.</td></tr><tr><td>C</td><td>Doğru yerde.</td></tr><tr class=\"ok\"><td>D</td><td>4 ile d yer değiştirmeli → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Klimatoloji = iklim bilimi; meteoroloji = hava olaylarını inceleyen bilim.</div><div class=\"sv-w\"><b>Tuzak:</b> “Yağışlı” sözcüğü hava olayı gibi görünür; ama “kurak, yağışlı, sıcak” iklim tipleri için kullanılır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 23. soru"
+ },
+ "mebit-fen-f1-24": {
+  "t": "fen-mevsim",
+  "a": "B",
+  "o": 150024,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Deniz seviyesinde komşu K, L, M bölgelerinde hava yoğunlukları: L &gt; K &gt; M.</li></ul><b>İstenen</b><p>Doğru ifadeler.</p></div><ol class=\"sv-s\"><li><b>Yoğunluk → sıcaklık ve basınç</b> Sıcak hava seyrek (az yoğun) → sıcaklık M &gt; K &gt; L. Yoğun hava yüksek basınç → basınç L &gt; K &gt; M.</li><li><b>Öncülleri sına</b> I: M &gt; K &gt; L ✓. II: Rüzgâr yüksek basınçtan alçağa → L’den K’ye ✓. III: L yüksek basınç → alçalıcı; M alçak basınç → yükselici. Verilen tersi ✗.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Doğru.</td></tr><tr><td>III</td><td>Tersi doğru.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yoğunluk ↑ → basınç ↑ → alçalıcı hava, açık hava. Yoğunluk ↓ → sıcak → yükselici hava, bulut.</div><div class=\"sv-w\"><b>Tuzak:</b> III’te hava hareketleri yer değiştirmiş; yüksek basınçta hava alçalır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 24. soru"
+ },
+ "mebit-fen-f1-25": {
+  "t": "fen-mevsim",
+  "a": "A",
+  "o": 150025,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Saat 09.00’da bayrak denizden karaya doğru, 22.00’de karadan denize doğru dalgalanıyor.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Rüzgâr yönü</b> Rüzgâr yüksek basınçtan alçak basınca eser. 09.00’da denizden karaya → deniz yüksek basınç, kara alçak basınç (kara daha sıcak, havası seyrek).</li><li><b>22.00</b> Karadan denize → kara yüksek basınç (soğumuş, havası yoğun, alçalıcı), deniz alçak basınç (daha sıcak, yükselici).</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>09.00’da kara havası daha az yoğundur → “fazladır” yanlış.</td></tr><tr><td>B</td><td>22.00’de karada alçalıcı, denizde yükselici → doğru.</td></tr><tr><td>C</td><td>09.00’da deniz basıncı fazla → doğru.</td></tr><tr><td>D</td><td>22.00’de deniz daha sıcak → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kara çabuk ısınır, çabuk soğur. Gündüz deniz meltemi (denizden karaya), gece kara meltemi (karadan denize).</div><div class=\"sv-w\"><b>Tuzak:</b> Bayrak rüzgârın estiği yöne dalgalanır; “denizden karaya” = rüzgâr denizden esiyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 25. soru"
+ },
+ "mebit-fen-f1-26": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150026,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görselde eşlenme sonucu oluşan DNA’nın eski ve yeni zincirleri var; harfler eski zincirdeki nükleotidleri gösteriyor (zincirler sarmal olduğu için eski zincir bazı yerlerde üstte, bazı yerlerde altta).</li><li>Eski zincir: A, T, C, C, G, C, T, A, C, G, T, A (12 nükleotid).</li></ul><b>İstenen</b><p>Yeni zincir oluşurken nükleotid sayılarının doğru değişimi.</p></div><ol class=\"sv-s\"><li><b>Eski zincirde say</b> A 3, T 3, C 4, G 2.</li><li><b>Yeni zincir eski zincirin tamamlayıcısıdır</b> A ↔ T, G ↔ C. Yeni zincir: T 3, A 3, G 4, C 2.</li><li><b>Molekülde başlangıç ve son</b> Guanin 2 → 2 + 4 = 6. Timin 3 → 6. Sitozin 4 → 6. Adenin 3 → 6.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Timin 3 → 6 olmalı; 5 değil.</td></tr><tr class=\"ok\"><td>B</td><td>Guanin 2 → 6 → doğru.</td></tr><tr><td>C</td><td>Sitozin 4 → 6 olmalı; 7 değil.</td></tr><tr><td>D</td><td>Adenin 3’ten başlar; 2 değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eşlenmiş DNA’da A = T ve G = C’dir; tamamlanınca her baz çiftinin sayısı eşitlenir.</div><div class=\"sv-w\"><b>Tuzak:</b> Sarmalın kesiştiği yerlerde eski zincir üste geçer; harflerin hangi zincire ait olduğunu çizgiyi izleyerek bul.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 26. soru"
+ },
+ "mebit-fen-f1-27": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150027,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I: Tek zincirde iki nükleotid eksik (karşısında A ve C var). II: Karşılıklı bazlar uyumsuz (C-G, T-A, T-A, A-G). III: Tek zincirde eksik nükleotidler (karşı zincirde T, T var).</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Onarım mekanizması</b> DNA’daki hasarlar, sağlam karşı zincir kalıp alınarak onarım enzimleriyle düzeltilebilir. Onarılamayan kalıcı değişiklikler mutasyona dönüşür.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hasarların hepsi mutasyona dönüşmez; çoğu onarılır.</td></tr><tr><td>B</td><td>Tek zincirdeki hasar karşı zincire bakılarak düzeltilebilir.</td></tr><tr class=\"ok\"><td>C</td><td>III’teki eksikler karşı zincirdeki T’lere bakılarak (A ile) tamamlanabilir → doğru.</td></tr><tr><td>D</td><td>I’deki eksikler de karşı zincire (A, C) bakılarak tamamlanabilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Karşı zincir sağlamsa hasar onarılabilir: A’nın karşısına T, G’nin karşısına C konur.</div><div class=\"sv-w\"><b>Tuzak:</b> “Mutlaka, hiçbiri” gibi kesin ifadeler genellikle yanlıştır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 27. soru"
+ },
+ "mebit-fen-f1-28": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150028,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görsel: I kromozom, II nükleotidler, III gen (DNA’nın bir bölümü), IV DNA.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> Kromozom sayısı türe özgüdür ama gelişmişliği göstermez (ör. patates 48, insan 46).</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kromozom sayısı ile gelişmişlik arasında ilişki yok → doğru.</td></tr><tr><td>B</td><td>Organik bazlar (A, T, G, C) tüm canlılarda aynıdır.</td></tr><tr><td>C</td><td>Genlerin dizilimi türden türe (hatta bireyden bireye) farklıdır.</td></tr><tr><td>D</td><td>Bakteri gibi çekirdeksiz canlılarda DNA çekirdekte değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Nükleotid çeşitleri bütün canlılarda aynı; sayıları ve dizilişleri farklıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> D “tüm canlı hücreleri” diyor; çekirdeksiz (prokaryot) hücreleri unutma.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 28. soru"
+ },
+ "mebit-fen-f1-29": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150029,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Eşlenmekte olan DNA: G–C, ●–C, T–▲ eşleşmeleri; çatalda sol yeni zincirde ★, sağ yeni zincirde ■ var.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Sembolleri bul</b> ● C ile eşleşiyor → ● = G. ▲ T ile eşleşiyor → ▲ = A. Çataldaki eşleşmelerden ★ = G (karşısında C), ■ = A (karşısında T).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>★ = G, sitozinle eşleşir → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>■ = A ve ▲ = A; A ile A eşleşmez → yanlış.</td></tr><tr><td>C</td><td>▲ ve ■ ikisi de A → doğru.</td></tr><tr><td>D</td><td>● ve ★ ikisi de G → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eşleşme kuralı: A–T, G–C. Sembolün karşısındaki harfe bakarak sembolü bul.</div><div class=\"sv-w\"><b>Tuzak:</b> Aynı nükleotidi gösteren iki sembol hiçbir zaman karşılıklı bağlanamaz.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 29. soru"
+ },
+ "mebit-fen-f1-30": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150030,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>K ve L canlılarının kromozom sayıları eşit.</li></ul><b>İstenen</b><p>Kesinlikle doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> Bütün canlıların DNA’sı aynı 4 çeşit nükleotidden (A, T, G, C) oluşur → kesin.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Nükleotid çeşitleri aynı → kesin doğru.</td></tr><tr><td>B</td><td>Kromozom sayısı eşit olsa da kromozomların uzunluğu, dolayısıyla nükleotid sayısı farklı olabilir.</td></tr><tr><td>C</td><td>Aynı türün bireylerinde (tek yumurta ikizleri hariç) nükleotid dizilimi farklıdır.</td></tr><tr><td>D</td><td>Farklı türlerin kromozom sayısı eşit olabilir (ör. patates ve şempanze 48).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kromozom sayısı tür belirlemez; tür belirleyen gen dizilimidir.</div><div class=\"sv-w\"><b>Tuzak:</b> C’de “aynı tür” ifadesi aynı dizilim anlamına gelmez; bireyler arasında farklılık (varyasyon) vardır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 30. soru"
+ },
+ "mebit-fen-f1-31": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150031,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Benzetim: K kitaptaki harfler, N harflerin oluşturduğu kelimeler, M kelimelerden oluşan kitap, L kitabın ciltlenmiş hâli.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Harf → nükleotid (K). Kelime → gen (N). Kitap → DNA (M). Ciltli kitap → kromozom (L).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Görev birimi gendir (N), nükleotid (K) değil.</td></tr><tr><td>B</td><td>Kromozom (L) DNA, gen ve nükleotidleri içerir.</td></tr><tr class=\"ok\"><td>C</td><td>DNA (M) hücre bölünmesinden önce kendini eşler → doğru.</td></tr><tr><td>D</td><td>Organik baza göre adlandırılan nükleotiddir (K), gen değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Büyüklük sırası: nükleotid &lt; gen &lt; DNA &lt; kromozom.</div><div class=\"sv-w\"><b>Tuzak:</b> Benzetimde harflerin kelimeleri, kelimelerin kitabı oluşturduğunu takip et; ciltli kitap en büyük yapıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 31. soru"
+ },
+ "mebit-fen-f1-32": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150032,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görsel: I kromozom, II DNA, III gen (DNA’nın bir bölümü), IV nükleotid.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Kromozomun görünürlüğü</b> Kromozomlar yalnızca hücre bölünmesi sırasında kısalıp kalınlaşarak belirgin hâle gelir; diğer zamanlarda kromatin ipliği hâlindedir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kromozom tüm yaşam döngüsü boyunca belirgin değildir → yanlış.</td></tr><tr><td>B</td><td>DNA hücrenin yönetim molekülüdür → doğru.</td></tr><tr><td>C</td><td>Gen, belirli bir kalıtsal özellikten sorumludur → doğru.</td></tr><tr><td>D</td><td>Nükleotid, taşıdığı baza göre adlandırılır (adenin nükleotidi vb.) → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bölünme dışında DNA kromatin ipliği olarak dağınık durur.</div><div class=\"sv-w\"><b>Tuzak:</b> Görseldeki X şeklindeki kromozom hücrenin her anını göstermez; yalnızca bölünme anını gösterir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 32. soru"
+ },
+ "mebit-fen-f1-33": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150033,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ataşlar: siyah 250, beyaz 180, kırmızı 60, mavi 60, sarı 40, mor 30. Her nükleotid = 1 fosfat + 1 şeker + 1 baz. Öğrenci en fazla sayıda nükleotid modeli yapıyor.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Renkleri ata</b> 4 baz çeşidi için 4 renk, fosfat ve şeker için 2 renk gerekir. En fazla model için fosfat ve şeker en çok sayıdaki iki renk (siyah, beyaz) olmalı; bazlar kırmızı, mavi, sarı, mor (toplam 190).<span class=\"sv-m\">Model sayısı = en küçük(250, 180, 190) = 180</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>Her modelde fosfat ve şeker vardır; siyah ve beyaz her modelde bulunur.</td></tr><tr class=\"ok\"><td>B</td><td>Siyah şekerse beyaz fosfattır → doğru.</td></tr><tr><td>C</td><td>Kullanılan siyah + beyaz = 360; diğer renkler = 180 → eşit değil.</td></tr><tr><td>D</td><td>Tek tek nükleotid modellerinde G ile C sayısının eşit olma zorunluluğu yok; sitozinin hangi renk olduğu kesin değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Nükleotid sayısı, en az bulunan yapı tarafından sınırlanır.</div><div class=\"sv-w\"><b>Tuzak:</b> G = C eşitliği çift zincirli DNA içindir; ayrı ayrı nükleotid modellerinde geçerli değildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 33. soru"
+ },
+ "mebit-fen-f1-34": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150034,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görsel: I deoksiriboz şekeri (beşgen), II fosfat (sarı daire), III organik baz, IV nükleotid (fosfat + şeker + baz).</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Bazlar</b> Tüm canlılarda aynı dört baz (A, T, G, C) bulunur; farklı olan bazların sayısı ve dizilişidir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Baz çeşidi türlere göre farklı değildir → yanlış.</td></tr><tr><td>B</td><td>Şeker-fosfat bağları zincirin omurgasını oluşturur, nükleotidleri alt alta dizer → doğru.</td></tr><tr><td>C</td><td>Deoksiriboz şekeri DNA’ya adını verir → doğru.</td></tr><tr><td>D</td><td>Nükleotid fosfat, şeker ve bazdan oluşur → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> DNA = DeoksiriboNükleik Asit; adını şekerinden alır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Çeşit” ile “dizilim” farklıdır: çeşit aynı, dizilim türe özgü.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 34. soru"
+ },
+ "mebit-fen-f1-35": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150035,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kromozom sayıları: soğan 16, su samuru 38, moli balığı 46, eğrelti otu 500, kanguru 16, insan 46.</li><li>Hipotezler: 1. Kromozom sayısı arttıkça vücut büyür. 2. Kromozom sayısı aynı olanlar aynı türdür. 3. Suda yaşayanların kromozom sayısı karada yaşayanlardan fazladır.</li></ul><b>İstenen</b><p>Üç hipotezi de çürüten karşılaştırmalar.</p></div><ol class=\"sv-s\"><li><b>Hipotez 1</b> Eğrelti otu (500) ile insan (46): kromozomu çok olan, vücudu küçük olandır → çürür.</li><li><b>Hipotez 2</b> İnsan ile moli balığı (46, 46): farklı türler → çürür.</li><li><b>Hipotez 3</b> Su samuru (38, suda) ile insan (46, karada): suda yaşayanın kromozomu daha az → çürür.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eğrelti otu ile su samurunun büyüklük ilişkisi açık değil; karşılaştırma kesin çürütmez.</td></tr><tr><td>B</td><td>Soğan-insan (16 &lt; 46, insan büyük) 1. hipotezi destekler.</td></tr><tr class=\"ok\"><td>C</td><td>Üç karşılaştırma da çürütüyor → doğru.</td></tr><tr><td>D</td><td>Kanguru-moli balığı (16 &lt; 46, kanguru daha büyük) 1. hipotezi çürütse de su samuru-kanguru (38 &gt; 16) 3. hipotezi destekler.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir hipotezi çürütmek için tek bir karşı örnek yeter; örnek hipotezin tersini açıkça göstermeli.</div><div class=\"sv-w\"><b>Tuzak:</b> B ve D’deki bazı çiftler hipotezi destekliyor; her çifti hipotezin yönüyle karşılaştır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 35. soru"
+ },
+ "mebit-fen-f1-36": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150036,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yanda çiçek (A) baskın, uçta çiçek (a) çekinik.</li><li>1. çaprazlama: 3 genotip, 2 fenotip. 2. çaprazlama: 1 genotip, 1 fenotip. 3. çaprazlama: 2 genotip, 2 fenotip.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Çaprazlamaları bul</b> 1 → Aa × Aa (AA, Aa, aa). 2 → AA × AA, aa × aa ya da AA × aa (tek genotip). 3 → Aa × aa (Aa, aa).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>1’de ikisi de heterozigot → doğru.</td></tr><tr><td>B</td><td>1 ve 3’te en az biri heterozigot → doğru.</td></tr><tr><td>C</td><td>2’de ikisi de homozigot → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>3’te (Aa × aa) aa oluşur; 2’de aa × aa ise aa oluşabilir → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 3 genotip → Aa × Aa. 2 genotip-2 fenotip → Aa × aa. 1 genotip → iki ata da homozigot.</div><div class=\"sv-w\"><b>Tuzak:</b> 2. çaprazlama aa × aa da olabilir; “oluşmaz” demek kesin yanlıştır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 36. soru"
+ },
+ "mebit-fen-f1-37": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150037,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Uzun boy (A) baskın. P, R, S’den ikisi uzun, biri kısa.</li><li>P × R yavrularında genotip: %50 heterozigot, %50 homozigot. R × S yavrularında fenotip: %50 uzun, %50 kısa.</li></ul><b>İstenen</b><p>Yanlış yargılar.</p></div><ol class=\"sv-s\"><li><b>R × S</b> %50 – %50 fenotip → Aa × aa.</li><li><b>İki ihtimal</b> (1) R = aa, S = Aa → P uzun ve P × aa’dan %50 Aa, %50 aa çıkmalı → P = Aa. (2) R = Aa, S = aa → P uzun ve P × Aa’dan %50 AA/%50 Aa çıkmalı → P = AA.</li><li><b>Öncülleri sına</b> I: 1. durumda P × S = Aa × Aa → kısa oluşabilir ✗. II: R, 1. durumda aa olabilir; kesin melez değil ✗. III: P saf baskınsa 2. durum → R = Aa ✓.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Yanlış.</td></tr><tr><td>II</td><td>Yanlış.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fenotip %50-%50 → melez × saf çekinik. Genotip %50 homozigot-%50 heterozigot → AA × Aa ya da Aa × aa.</div><div class=\"sv-w\"><b>Tuzak:</b> Her ihtimali ayrı ayrı yaz; tek ihtimalde doğru olan bir yargı “kesin” değildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 37. soru"
+ },
+ "mebit-fen-f1-38": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150038,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Düzgün (A) baskın, buruşuk (a) çekinik.</li><li>K × L: %50 Aa, %25 AA, %25 aa. L × M: %50 düzgün, %50 buruşuk.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>K × L</b> 1 : 2 : 1 oranı → Aa × Aa → K = Aa, L = Aa.</li><li><b>L × M</b> %50 – %50 → Aa × aa → M = aa.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>L heterozigot → doğru.</td></tr><tr><td>B</td><td>M homozigot çekinik → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>K × M = Aa × aa → %50 buruşuk oluşur → yanlış.</td></tr><tr><td>D</td><td>Aa × aa’nın düzgünleri hep Aa (melez) → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> %25 AA – %50 Aa – %25 aa oranı yalnızca Aa × Aa’dan çıkar.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de “tamamı melez” kesin ifadesi korkutabilir; Aa × aa’dan AA oluşamaz.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 38. soru"
+ },
+ "mebit-fen-f1-39": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150039,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mor (M) baskın, beyaz (m) çekinik. Genotipi bilinmeyen iki saf döl bezelye çaprazlanıyor; F1’in tamamı mor.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Olası atalar</b> Saf döl = homozigot (MM ya da mm). Tamamı mor → MM × MM ya da MM × mm.</li><li><b>Öncülleri sına</b> I: MM × MM ise F1’in hepsi MM ✓. II: MM × mm olabilir ✓. III: MM × mm ise F1 = Mm; Mm × Mm → %25 beyaz ✓.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru (olabilir).</td></tr><tr><td>II</td><td>Doğru (olabilir).</td></tr><tr><td>III</td><td>Doğru (olabilir).</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Saf döl” = homozigot. “Olabilir” sorularında bir ihtimalin bile uyması yeterlidir.</div><div class=\"sv-w\"><b>Tuzak:</b> I ve III birbirine zıt görünür; ama ikisi farklı ihtimallerde doğrudur ve sorular “olabilir” diyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 39. soru"
+ },
+ "mebit-fen-f1-40": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150040,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mor (M) baskın. K × L: mor ve beyaz oluşabilir. L × M: yalnız mor. K × M: yalnız mor.</li></ul><b>İstenen</b><p>Genotiplerle ilgili yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>K ve L</b> Beyaz oluşabildiğine göre ikisi de m taşır → (Mm × Mm) ya da (Mm × mm).</li><li><b>M</b> K ve L’nin ikisi de m taşıdığı hâlde M ile beyaz çıkmıyor → M = MM.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>K = Mm ise Mm × MM → %50 melez → olabilir.</td></tr><tr><td>B</td><td>K = mm ise mm × MM → %100 melez → olabilir.</td></tr><tr class=\"ok\"><td>C</td><td>L × M’den saf baskın en çok %50 (Mm × MM) çıkar; %75 olamaz → yanlış.</td></tr><tr><td>D</td><td>K × L = Mm × Mm → %50 melez → olabilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Beyaz çıkıyorsa iki atada da çekinik alel vardır; hiç beyaz çıkmıyorsa atalardan biri MM’dir.</div><div class=\"sv-w\"><b>Tuzak:</b> L = mm ise L × M’den hiç MM çıkmaz; her durumda %75 imkânsızdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 40. soru"
+ },
+ "mebit-fen-f1-41": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150041,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mor (M) baskın. K × L: mor ve beyaz oluşabilir. L × M: yalnız mor. K × M: yalnız mor.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Genotipler</b> K ve L’nin ikisi de m taşır → (Mm, Mm), (Mm, mm) ya da (mm, Mm). M = MM.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>K saf baskın olsaydı K × L’den beyaz çıkmazdı.</td></tr><tr class=\"ok\"><td>B</td><td>L = mm, K = Mm olabilir → doğru.</td></tr><tr><td>C</td><td>M saf çekinik olsaydı K × M’den beyaz çıkabilirdi.</td></tr><tr><td>D</td><td>M melez olsaydı K × M’den beyaz çıkabilirdi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hiç çekinik fenotip vermeyen ata, çekinik alel taşıyan bir eşle çaprazlanınca saf baskın olmak zorundadır.</div><div class=\"sv-w\"><b>Tuzak:</b> A’da “olabilir” denmiş; K × L’de beyaz oluştuğu için K kesinlikle m taşır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 41. soru"
+ },
+ "mebit-fen-f1-42": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150042,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Soy ağacında koyu bireyler çekinik fenotipli (aa): 2, 3, 5. Ebeveynler: 1 × 2 → 5, 6, 7; 3 × 4 → 8, 9, 10; 7 × 8 → 11, 12, 13.</li></ul><b>İstenen</b><p>Kesinlikle doğru ifade.</p></div><ol class=\"sv-s\"><li><b>1 ve 2’nin çocukları</b> 2 = aa, çocuk 5 = aa → 1 = Aa. 6 ve 7 baskın fenotipli ve annesi/babası aa → 6 = Aa, 7 = Aa.</li><li><b>3 ve 4’ün çocukları</b> 3 = aa → 8, 9, 10 baskın → Aa. 4 = AA ya da Aa (kesin değil).</li><li><b>7 × 8</b> Aa × Aa → 11, 12, 13 AA ya da Aa (kesin değil).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>4 saf da melez de olabilir.</td></tr><tr class=\"ok\"><td>B</td><td>6 = Aa → kesin melez. Doğru.</td></tr><tr><td>C</td><td>11 AA ya da Aa → kesin değil.</td></tr><tr><td>D</td><td>13 AA ya da Aa → kesin değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ebeveynlerinden biri aa olan baskın fenotipli birey kesinlikle melezdir (bir a alelini o ebeveynden alır).</div><div class=\"sv-w\"><b>Tuzak:</b> 4’ün bütün çocukları baskın olsa da 4 melez olabilir; bu kesinlik vermez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 42. soru"
+ },
+ "mebit-fen-f1-43": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150043,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1. kart: Tüm yavrular heterozigot. 2. kart: Çekinik fenotip oluşma ihtimali yok. 3. kart: AA, Aa ve aa genotipleri oluşmuş.</li></ul><b>İstenen</b><p>Hakkında hiçbir kartta ipucu olmayan çaprazlama.</p></div><ol class=\"sv-s\"><li><b>Kartları eşleştir</b> 1 → AA × aa. 2 → AA × AA, AA × Aa ya da AA × aa. 3 → Aa × Aa.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Aa × Aa → 3. kart.</td></tr><tr><td>B</td><td>Aa × AA → 2. kart.</td></tr><tr><td>C</td><td>AA × aa → 1. ve 2. kart.</td></tr><tr class=\"ok\"><td>D</td><td>Aa × aa → %50 Aa, %50 aa; çekinik oluşur, yalnız iki genotip → hiçbir karta uymaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her çaprazlamanın sonuçlarını (genotip/fenotip) yazıp kartlarla karşılaştır.</div><div class=\"sv-w\"><b>Tuzak:</b> Aa × aa’nın yavrularının yarısı heterozigottur ama “tümü” değildir; 1. karta uymaz.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 43. soru"
+ },
+ "mebit-fen-f1-44": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150044,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İki bezelyenin çaprazlamasında 3 genotip, 2 fenotip oluşabiliyor.</li></ul><b>İstenen</b><p>Doğru ifadeler.</p></div><ol class=\"sv-s\"><li><b>Çaprazlama</b> 3 genotip → Aa × Aa → %25 AA, %50 Aa, %25 aa.</li><li><b>Öncülleri sına</b> I: İkisi de heterozigot ✓. II: AA olasılığı %25 ✓. III: Çekinik alel taşıyanlar (Aa + aa) %75; baskın alel taşıyanlar (AA + Aa) %75 → eşit ✓.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Doğru.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Aa × Aa → 1 AA : 2 Aa : 1 aa (genotip), 3 baskın : 1 çekinik (fenotip).</div><div class=\"sv-w\"><b>Tuzak:</b> III’te “alel bulunma” sorulduğu için Aa her iki gruba da girer.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 44. soru"
+ },
+ "mebit-fen-f1-45": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150045,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Farklı yapraklılık: Aynı su bitkisinin su altındaki yaprakları ince ve şeritli, su üstündeki yaprakları geniş ve kalın.</li><li>Su altı ve su üstü yapraklardan alınan parçalar aynı ortamda yetiştirilince su altında kalan yapraklar ince, su üstündekiler geniş oluyor.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Deneyi yorumla</b> Parçanın nereden alındığı önemli değil; yaprağın şekli o an bulunduğu ortama göre belirleniyor → çevrenin etkisi → modifikasyon.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Genin ifadesi çevreye göre değişiyor → doğru.</td></tr><tr><td>B</td><td>Mutasyon DNA’yı değiştirir; burada aynı bitki ortama göre değişiyor.</td></tr><tr><td>C</td><td>Aynı genler sorumludur; yalnızca ifadesi farklıdır.</td></tr><tr><td>D</td><td>Aynı bitkinin hücrelerinde DNA aynıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ortam değişince geri dönebilen, DNA’yı değiştirmeyen farklılık → modifikasyon.</div><div class=\"sv-w\"><b>Tuzak:</b> “Farklı formlar” farklı genler demek değildir; aynı gen farklı çevrede farklı ifade edilir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 45. soru"
+ },
+ "mebit-fen-f1-46": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150046,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Mutasyona neden olmayan durum.</p></div><ol class=\"sv-s\"><li><b>Mutasyon tanımı</b> DNA’nın yapısında ve nükleotid diziliminde kalıcı değişiklik.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Diziliş değişmesi → mutasyon.</td></tr><tr><td>B</td><td>Nükleotid sayısının değişmesi → mutasyon.</td></tr><tr><td>C</td><td>Parça eklenmesi/kopması → mutasyon.</td></tr><tr class=\"ok\"><td>D</td><td>A ile T’nin eşleşmesi normal eşlenme kuralıdır → mutasyon değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> DNA eşlenmesinde A–T ve G–C eşleşmesi kuraldır; hata ancak kural bozulursa olur.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de “eşlenme” sözcüğü hata çağrıştırabilir; eşleşme doğru yapıldığı için sorun yoktur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 46. soru"
+ },
+ "mebit-fen-f1-47": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150047,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>pH 7 toprağındaki bitkiden alınan dallar pH 5 ve pH 9 topraklarında farklı renkte çiçek açıyor.</li></ul><b>İstenen</b><p>Değişimin mutasyon mu modifikasyon mu olduğunu kanıtlayacak çalışma.</p></div><ol class=\"sv-s\"><li><b>Fikir</b> Modifikasyonsa, renk değişmiş bitki başka pH’ye taşınınca rengi de değişir. Mutasyonsa (DNA değişmişse) ortam değişse de renk aynı kalır.</li><li><b>Doğru deney</b> Rengi değişmiş bitkiyi (pH 9) alıp farklı pH’lerde (5 ve 7) yetiştirmek.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>pH 9 bitkisinden dalları pH 5 ve 7’ye koymak → renk değişirse modifikasyon. Doğru.</td></tr><tr><td>B</td><td>Aynı ortamda (pH 9) yetiştirmek bir şey kanıtlamaz.</td></tr><tr><td>C</td><td>pH 7 bitkisinden pH 9’a → ilk deneyin tekrarı.</td></tr><tr><td>D</td><td>İlk deneyin aynısı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Modifikasyon ortama bağlıdır ve geri dönüşlüdür; ortam değişince özellik de değişir.</div><div class=\"sv-w\"><b>Tuzak:</b> D zaten yapılmış deneydir; yeni bir bilgi vermez.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 47. soru"
+ },
+ "mebit-fen-f1-48": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150048,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>pH 7 bitkisinin dalları pH 5, 6, 7, 8, 9 topraklarında farklı renkte çiçek açıyor.</li><li>pH 9’daki bitkiden alınan dal pH 5’te mavi çiçek açıyor (pH 5’teki ilk bitkiyle aynı renk).</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Yorumla</b> Bitki eski ortama dönünce o ortamın rengini alıyor → renk değişimi geri dönüşlü → modifikasyon.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Gen yapısı değişmedi; yeni tür oluşmadı.</td></tr><tr class=\"ok\"><td>B</td><td>Genin ifadesi pH’ye göre değişiyor → doğru.</td></tr><tr><td>C</td><td>Mavi çiçek gen değişimiyle değil ortamla açıklanır.</td></tr><tr><td>D</td><td>Aynı bitkiden alınan dallar aynı DNA’ya sahiptir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Modifikasyon: çevre etkisiyle oluşan, kalıtsal olmayan değişiklik; DNA aynı kalır.</div><div class=\"sv-w\"><b>Tuzak:</b> A, C ve D “gen/DNA değişti” der; modifikasyonda DNA değişmez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 48. soru"
+ },
+ "mebit-fen-f1-49": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150049,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kimyasal ortamda bölünen bakterilerden birinin DNA’sında yüksek sıcaklığa dayanıklılık sağlayan mutasyon oluşuyor.</li><li>Yüksek sıcaklıkta bir bakteri ölüyor, diğeri çoğalıyor.</li></ul><b>İstenen</b><p>Kesinlikle doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Yorumla</b> Çoğalan bakteri yüksek sıcaklıkta yaşayabiliyor → onun DNA’sında dayanıklılık sağlayan değişiklik (mutasyon) olmuş.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bakterilerden biri öldü, biri yaşadı; değişiklikler aynı değil.</td></tr><tr class=\"ok\"><td>B</td><td>Çoğalan bakterinin DNA’sında dayanıklılık değişikliği var → doğru.</td></tr><tr><td>C</td><td>Ölen bakterinin DNA’sında başka bir değişiklik olmuş olabilir; kesin değil.</td></tr><tr><td>D</td><td>DNA değişikliği mutasyondur, modifikasyon değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> DNA’daki kalıcı değişiklik → mutasyon; yeni nesillere aktarılır (bakteri çoğaldı).</div><div class=\"sv-w\"><b>Tuzak:</b> C’de “değişime neden olmamıştır” kesin bir ifadedir; ölen bakteri hakkında bilgi yok.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 49. soru"
+ },
+ "mebit-fen-f1-50": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150050,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yeşil bitki örtüsünde yeşil böcekler çoğunlukta. Kuraklıkla otlar sararınca kahverengi böcekler çoğunluğa geçiyor.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Yorumla</b> Yeni ortamda kahverengi böcekler daha iyi gizlenip daha az avlanır, daha çok ürer → doğal seçilim.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İki renk de hâlâ var; varyasyon azalmadı.</td></tr><tr><td>B</td><td>Yeşiller yok olmadı; sayıları azaldı.</td></tr><tr class=\"ok\"><td>C</td><td>Doğal seçilim ile kahverengiler arttı → doğru.</td></tr><tr><td>D</td><td>Kahverengi böcekler zaten vardı; kuraklık mutasyon oluşturmadı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Doğal seçilim: Ortama uygun özellikteki bireyler daha çok yaşar ve ürer.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “mutasyon” cazip ama metne göre kahverengi böcekler kuraklıktan önce de vardı.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 50. soru"
+ },
+ "mebit-fen-f1-51": {
+  "t": "fen-dna",
+  "a": "C",
+  "o": 150051,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Mutasyonla ilgili doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> Mutasyonlar zararlı, zararsız ya da yararlı olabilir; üreme hücrelerindeki mutasyonlar yavrulara aktarılır; bazı hatalar onarım mekanizmalarıyla düzeltilir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnızca zararlı değildir.</td></tr><tr><td>B</td><td>Üreme hücresindeki mutasyon yavrulara aktarılır.</td></tr><tr class=\"ok\"><td>C</td><td>Eşlenme sırasında oluşan bazı hatalar onarılabilir → doğru.</td></tr><tr><td>D</td><td>Yaşama ve üreme şansını artıran mutasyon yararlıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Vücut (somatik) hücresindeki mutasyon kalıtsal değildir; üreme hücresindeki kalıtsaldır.</div><div class=\"sv-w\"><b>Tuzak:</b> A’daki “sadece” kesin ifadesi yanlış olduğunu gösterir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 51. soru"
+ },
+ "mebit-fen-f1-52": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150052,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Bir hücrenin DNA’sından bir bölge çıkarılıp yerine başka hücreden alınan parça yerleştiriliyor ve hücreye yeni özellik kazandırılıyor.</li></ul><b>İstenen</b><p>Bu işlemin girdiği alan.</p></div><ol class=\"sv-s\"><li><b>Tanımla</b> Bir canlıdan alınan geni başka bir canlının DNA’sına aktarmak → gen aktarımı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Aşılama, hastalığa karşı bağışıklık kazandırma ya da bitkilerde aşı yöntemidir.</td></tr><tr><td>B</td><td>Gen tedavisi, hastalığa neden olan hatalı geni düzeltmeye/değiştirmeye yöneliktir.</td></tr><tr><td>C</td><td>Klonlama, genetik olarak aynı canlı elde etmektir.</td></tr><tr class=\"ok\"><td>D</td><td>Gen aktarımı → yeni özellik kazandırma. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Yeni özellik kazandırma” → gen aktarımı (GDO); “hastalık iyileştirme” → gen tedavisi.</div><div class=\"sv-w\"><b>Tuzak:</b> Gen tedavisinde de gen değiştirilir; ama amaç hastalığı tedavi etmektir, yeni özellik vermek değil.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 52. soru"
+ },
+ "mebit-fen-f1-53": {
+  "t": "fen-dna",
+  "a": "B",
+  "o": 150053,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. İnsülinin bakterilere ürettirilmesi. II. Zararlı böceklere dirençli bitkiler geliştirilmesi. III. Düşük verimli bitkilerin neslinin tükettirilmesi.</li></ul><b>İstenen</b><p>Olumlu biyoteknolojik uygulamalar.</p></div><ol class=\"sv-s\"><li><b>Değerlendir</b> I: İnsan sağlığına yarar ✓. II: Tarımda verim artışı ✓. III: Bir türün neslini tüketmek biyolojik çeşitliliği azaltır → olumsuz ✗.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Olumlu.</td></tr><tr><td>II</td><td>Olumlu.</td></tr><tr><td>III</td><td>Olumsuz.</td></tr><tr class=\"ok\"><td>B</td><td>I ve II.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Biyolojik çeşitliliği azaltan uygulamalar olumsuz kabul edilir.</div><div class=\"sv-w\"><b>Tuzak:</b> III “yüksek verim” vurgusuyla olumlu görünür; ama nesil tüketmek kabul edilemez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 53. soru"
+ },
+ "mebit-fen-f1-54": {
+  "t": "fen-dna",
+  "a": "D",
+  "o": 150054,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>K ve L hücrelerinin kromozom sayıları eşit.</li></ul><b>İstenen</b><p>Doğru yargılar.</p></div><ol class=\"sv-s\"><li><b>Öncülleri sına</b> I: Aynı canlının vücut hücrelerinde kromozom sayısı aynıdır → olabilir ✓. II: Farklı türlerin kromozom sayısı eşit olabilir (insan-moli 46) → olabilir ✓. III: Aynı canlının vücut hücrelerinin DNA’ları aynıdır → olabilir ✓.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Doğru.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>D</td><td>I, II ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bir canlının bütün vücut hücreleri tek bir hücreden (zigot) geldiği için aynı DNA’yı taşır.</div><div class=\"sv-w\"><b>Tuzak:</b> Eşit kromozom sayısı tek başına ne aynı türü ne de farklı türü kanıtlar.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 54. soru"
+ },
+ "mebit-fen-f1-55": {
+  "t": "fen-dna",
+  "a": "A",
+  "o": 150055,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kutup ayısının kılları şeffaf ve içi boş: ışığı yansıtıp beyaz görünmesini (kamuflaj) ve suda batmamasını sağlar.</li><li>Şeffaf kılların altındaki siyah deri Güneş ışığını soğurup vücut ısısını korur.</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Adaptasyon</b> Canlının ortama uyum sağlayan kalıtsal özellikleri adaptasyondur; siyah deri ısının korunmasını sağlar.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Siyah deri ısı korumaya yönelik adaptasyon → doğru.</td></tr><tr><td>B</td><td>Şeffaf kıl kalıtsal bir özelliktir; modifikasyon değil adaptasyondur.</td></tr><tr><td>C</td><td>Kıllar gizlenmenin yanı sıra suda batmamayı da sağlar; ayrıca adaptasyondur.</td></tr><tr><td>D</td><td>Isıyı koruyan siyah deridir; şeffaf kıllar kamuflaj ve yüzme içindir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Adaptasyon kalıtsaldır ve türün tüm bireylerinde görülür; modifikasyon çevreye bağlı, kalıtsal olmayan değişimdir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de kıllar ile derinin görevleri karıştırılmış.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 55. soru"
  }
 });

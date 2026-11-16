@@ -2518,5 +2518,586 @@ LGS.addMeb({
   "o": 100359,
   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Altı çizili sözcükler: A) dün, B) köyde, C) yarın, D) sessizdi.</li></ul><b>İstenen</b><p>Altı çizili sözcüğün vurgulanan öge <b>olmadığı</b> cümle.</p></div><ol class=\"sv-s\"><li><b>Fiil yüklemlilerde yüklemden önceki ögeye bak</b> A: “dün bitirdim” → vurgulu öge “dün” ✓. B: “köyde gördüm” → vurgulu öge “köyde” ✓. C: “yarın buraya gelecek” → yükleme en yakın öge “buraya”dır; “yarın” vurgulanan öge değil.</li><li><b>D’yi incele</b> “Mahalle oldukça sessizdi.” → yüklem isim soylu; vurgu yüklemde (sessizdi) ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Vurgulanan öge.</td></tr><tr><td>B</td><td>Vurgulanan öge.</td></tr><tr class=\"ok\"><td>C</td><td>“Yarın” vurgulanmamış; vurgu “buraya”da → doğru.</td></tr><tr><td>D</td><td>İsim soylu yüklemde vurgu yüklemde → vurgulanan.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yükleme en yakın öge vurguludur; iki zarf tamlayıcısı yan yanaysa (yarın, buraya) yükleme bitişik olanı seç.</div><div class=\"sv-w\"><b>Tuzak:</b> C’de “yarın” zaman bildirdiği için dikkat çeker; ama yüklemle arasında “buraya” vardır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
   "lb": "MEB Yaprak Test 19 · 9. soru"
+ },
+ "mebit-tr-f1-1": {
+  "t": "tr-sozcuk",
+  "a": "B",
+  "o": 150001,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>A) canlıları – “yaşamakta olan, yaşayan” B) (iklim) değişikliği – “bir bütünün bir bölümünün değişmesiyle ortaya çıkan yeni durum” C) korumak – “dış etkilerden, tehlikeden uzak tutmak” D) özgün – “yalnız kendine özgü nitelik taşıyan”</li></ul><b>İstenen</b><p>Verilen anlama uygun kullanılmayan sözcük.</p></div><ol class=\"sv-s\"><li><b>Her sözcüğü cümlede dene</b> “İklim değişikliği” iklimin bütünüyle değişmesi, yani <b>değişme işi</b>dir; bir bütünün bir parçasının değişmesiyle oluşan yeni durum anlamında kullanılmamış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Deniz altındaki canlılar → yaşayan varlıklar. Uygun.</td></tr><tr class=\"ok\"><td>B</td><td>“Değişiklik” burada “değişme, başkalaşma” anlamında. Uygun değil.</td></tr><tr><td>C</td><td>Tarihî yapıları tehlikeden uzak tutmak. Uygun.</td></tr><tr><td>D</td><td>Kendine özgü tarz. Uygun.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bu tür sorularda verilen anlamı sözcüğün yerine koyup cümleyi yeniden oku: “iklimin bir bölümünün değişmesiyle oluşan yeni durumu” anlamsızdır.</div><div class=\"sv-w\"><b>Tuzak:</b> A’da sözcük ad olarak (canlılar = yaşayan varlıklar) kullanılmış; anlam yine “yaşayan” olduğu için uygun sayılır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 1. soru"
+ },
+ "mebit-tr-f1-2": {
+  "t": "tr-sozcuk",
+  "a": "D",
+  "o": 150002,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nicel anlam: ölçülebilir, sayılabilir özellik (sıcaklık derecesi, hız, alan). Nitel anlam: ölçülemeyen, niteliği anlatan kullanım (sıcak anlatım, derin anlam).</li></ul><b>İstenen</b><p>Altı çizili sözcüğün hem nicel hem nitel anlamda kullanılmadığı şık.</p></div><ol class=\"sv-s\"><li><b>Her şıkta iki kullanımı ayır</b> A: sıcak anlatım (nitel) – sıcak hava (nicel). B: hızlı karar (nitel) – hızlı kullanmak (nicel). C: geniş alan (nicel) – geniş bakış açısı (nitel). D: derin anlam (nitel) – derin iz (nitel).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Nitel + nicel → ikisi de var.</td></tr><tr><td>B</td><td>Nitel + nicel → ikisi de var.</td></tr><tr><td>C</td><td>Nicel + nitel → ikisi de var.</td></tr><tr class=\"ok\"><td>D</td><td>İki kullanım da nitel; nicel anlam yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kaç derece, kaç metre, kaç km/sa” diye ölçebiliyorsan nicel; ölçemiyorsan nitel.</div><div class=\"sv-w\"><b>Tuzak:</b> “Derin iz” ilk bakışta ölçülebilir bir derinlik gibi gelir; burada “güçlü etki” anlamında mecazdır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 2. soru"
+ },
+ "mebit-tr-f1-3": {
+  "t": "tr-sozcuk",
+  "a": "A",
+  "o": 150003,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Enfeksiyonun hızla yayılması vücudun direncini azaltmış. II. Muhabir ani bir sesle irkildi. III. Öfkeliyken anlamakta güçlük çekiyorum. IV. Yelkovan bir an hareket etmeyince saatin arızalandığını düşündük.</li></ul><b>İstenen</b><p>Terim anlamlı sözcük bulunan cümle.</p></div><ol class=\"sv-s\"><li><b>Terimi tanımla</b> Terim, bir bilim, sanat ya da meslek dalına özgü kavramı karşılayan sözcüktür.</li><li><b>Cümleleri tara</b> “Enfeksiyon” tıp terimidir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Enfeksiyon → tıp terimi.</td></tr><tr><td>B</td><td>Muhabir bir meslek adıdır; ses, irkilmek günlük sözcüklerdir.</td></tr><tr><td>C</td><td>Öfke, anlamak günlük sözcüklerdir.</td></tr><tr><td>D</td><td>Yelkovan saatin parçasının günlük adıdır; arıza da genel bir sözcüktür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tıp, hukuk, fizik, spor, müzik gibi alanlara özgü sözcükleri ara: enfeksiyon, ameliyat, kalori, ofsayt, nota…</div><div class=\"sv-w\"><b>Tuzak:</b> “Muhabir” bir mesleğe ait olsa da meslek adıdır, o mesleğin terimi değildir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 3. soru"
+ },
+ "mebit-tr-f1-4": {
+  "t": "tr-sozcuk",
+  "a": "B",
+  "o": 150004,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Her şıkta “kalem” sözcüğü geçiyor.</li></ul><b>İstenen</b><p>“Kalem”in diğerlerinden farklı anlamda kullanıldığı cümle.</p></div><ol class=\"sv-s\"><li><b>Genel-özel ayrımı</b> A, C, D’de “kalem” bütün kalemleri, bir tür olarak kalemi anlatır (genel anlam). B’de belirli bir yazarın kullandığı <b>belirli bir kalem</b> kastediliyor (özel anlam).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İnsanlığın buluşu olarak kalem → genel.</td></tr><tr class=\"ok\"><td>B</td><td>Yazarın romanını yazdığı kalem, müzeye bağışlanan tek bir kalem → özel.</td></tr><tr><td>C</td><td>Kalemin eğitimdeki yeri → genel.</td></tr><tr><td>D</td><td>Sanat aracı olarak kalem → genel.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sözcük bir türün tamamını karşılıyorsa genel, o türden tek bir varlığı gösteriyorsa özel anlamlıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de “usta bir çizerin elinde” ifadesi özel gibi görünür; ama kalem yine bir araç türü olarak anılıyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 4. soru"
+ },
+ "mebit-tr-f1-5": {
+  "t": "tr-sozcuk",
+  "a": "D",
+  "o": 150005,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Bakmak” sözcüğünün verilen anlamları: özen göstermek; yapılabilmesi bir şeye bağlı bulunmak; bir iş birinden beklenmek.</li></ul><b>İstenen</b><p>Bu anlamlardan biriyle kullanılmayan cümle.</p></div><ol class=\"sv-s\"><li><b>Her cümlede anlamı bul</b> A: Onarım izne bağlı → “bir şeye bağlı bulunmak”. B: Dükkânı açıp kapamak bana kalıyor → “bir iş birinden beklenmek”. C: Vaktini iyi değerlendirmeye özen göster → “özen göstermek”. D: Doktorun dize bakması → “muayene etmek, incelemek”.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bağlı bulunmak. Verilmiş.</td></tr><tr><td>B</td><td>İş birinden beklenmek. Verilmiş.</td></tr><tr><td>C</td><td>Özen göstermek. Verilmiş.</td></tr><tr class=\"ok\"><td>D</td><td>Muayene etmek → listede yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Çok anlamlı sözcükte her cümlede sözcüğün yerine verilen anlamı koy; hiçbiri oturmuyorsa cevap odur.</div><div class=\"sv-w\"><b>Tuzak:</b> D “bakmak”ın en yaygın anlamına yakın olduğu için gözden kaçar; listede “görmek, incelemek” anlamı yok.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 5. soru"
+ },
+ "mebit-tr-f1-6": {
+  "t": "tr-sozcuk",
+  "a": "C",
+  "o": 150006,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sanatçı: Yazmaya yeni başlayanlar sözcüklerin çekiciliğine kapılıp anlatmak istediklerini ikinci plana atmamalı. Metni etkileyici kılan düşünce ve duyguların içtenliğidir. İçtenlik yoksa yalnızca <b>vitrine oynamış</b> olursunuz.</li></ul><b>İstenen</b><p>Altı çizili sözle anlatılmak istenen.</p></div><ol class=\"sv-s\"><li><b>Deyimi yorumla</b> Vitrine oynamak = gerçek değeri değil, görünüşü öne çıkarmak; gösteriş yapmak.</li><li><b>Bağlamla doğrula</b> İçtenlik yerine yalnızca güzel sözcüklerle göz boyamak → başkalarının beğenisi için gösteriş.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Alışılmışın dışına çıkmak özgünlüktür; metin bunu eleştirmiyor.</td></tr><tr><td>B</td><td>Yüzeysellik yakın görünür ama sözün özü “gösteriş”tir.</td></tr><tr class=\"ok\"><td>C</td><td>Beğeni kazanmak için gösterişe yönelmek → doğru.</td></tr><tr><td>D</td><td>Okur beklentisi metnin konusu değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Vitrin” = sergilenen, gösterilen şey. Deyim gösterişi anlatır.</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki “yüzeysel düşünce” içerikle ilgilidir; metindeki sorun ise sözcüklerle yapılan süslemedir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 6. soru"
+ },
+ "mebit-tr-f1-7": {
+  "t": "tr-sozcuk",
+  "a": "C",
+  "o": 150007,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Somut: Duyularla algılanan. Soyut: Duyularla algılanamayan.</li><li>Altı çizili sözcükler: A) acıları B) anılarını C) renklerle D) karanlığı (ruhundaki)</li></ul><b>İstenen</b><p>Anlam özelliği bakımından farklı olan sözcük.</p></div><ol class=\"sv-s\"><li><b>Her birini sına</b> Acı (üzüntü) → soyut. Anı → soyut. Renk → gözle görülür, somut. Ruhundaki karanlık (kötümserlik) → soyut.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Acılar (üzüntüler) → soyut.</td></tr><tr><td>B</td><td>Anılar → soyut.</td></tr><tr class=\"ok\"><td>C</td><td>Renkler → görülür, somut.</td></tr><tr><td>D</td><td>Ruhtaki karanlık → mecaz, soyut.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sözcüğü bağlamında değerlendir: “karanlık” normalde somuttur ama “ruhundaki karanlık” soyuttur.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de “karanlık” sözcüğünü tek başına düşünüp somut sanma.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 7. soru"
+ },
+ "mebit-tr-f1-8": {
+  "t": "tr-sozcuk",
+  "a": "B",
+  "o": 150008,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>A) eski püskü B) ıvır zıvır C) ufak tefek D) eğri büğrü</li></ul><b>İstenen</b><p>Farklı yolla oluşturulmuş ikileme.</p></div><ol class=\"sv-s\"><li><b>Sözcüklerin anlamına bak</b> eski + püskü, ufak + tefek, eğri + büğrü → birincisi anlamlı, ikincisi anlamsız. ıvır + zıvır → <b>ikisi de anlamsız</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Anlamlı + anlamsız.</td></tr><tr class=\"ok\"><td>B</td><td>Anlamsız + anlamsız → farklı.</td></tr><tr><td>C</td><td>Anlamlı + anlamsız.</td></tr><tr><td>D</td><td>Anlamlı + anlamsız.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İkileme türleri: aynı sözcük (yavaş yavaş), eş/yakın anlamlı (eş dost), zıt anlamlı (aşağı yukarı), biri anlamsız (eski püskü), ikisi anlamsız (ıvır zıvır), yansıma (şırıl şırıl).</div><div class=\"sv-w\"><b>Tuzak:</b> “Tefek”, “püskü”, “büğrü” tek başına kullanılmaz; bu yüzden anlamsız sayılır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 8. soru"
+ },
+ "mebit-tr-f1-9": {
+  "t": "tr-sozcuk",
+  "a": "D",
+  "o": 150009,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Peş” ile kurulan deyimler: bir şeyi elde etmek için uğraşmak → ?; birini yanında götürmek → ?; kişilerin kendi arkasından gelmesini sağlamak → ?</li></ul><b>İstenen</b><p>Boşluklardan hiçbirine getirilemeyecek deyim.</p></div><ol class=\"sv-s\"><li><b>Anlamları eşleştir</b> Elde etmek için uğraşmak → <b>peşine düşmek</b>. Yanında götürmek → <b>peşine takmak</b>. Arkasından gelmesini sağlamak → <b>peşinden sürüklemek</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Peşine düşmek → 1. boşluk.</td></tr><tr><td>B</td><td>Peşine takmak → 2. boşluk.</td></tr><tr><td>C</td><td>Peşinden sürüklemek → 3. boşluk.</td></tr><tr class=\"ok\"><td>D</td><td>Peşinden yürümek = birine uymak, onu izlemek; hiçbir boşluğa uymaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Deyimdeki öznenin rolüne dikkat et: “sürüklemek” başkasını getirir, “yürümek” kişinin kendisi izler.</div><div class=\"sv-w\"><b>Tuzak:</b> C ve D birbirine yakın görünür; 3. boşluk “kendi arkasından gelmesini sağlamak” diyor, yani özne önde gidiyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 9. soru"
+ },
+ "mebit-tr-f1-10": {
+  "t": "tr-sozcuk",
+  "a": "C",
+  "o": 150010,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dizeler: “Yerin seni çektiği kadar <b>ağır</b>sın / Kanatların çırpındığı kadar <b>hafif</b>”</li></ul><b>İstenen</b><p>Aynı anlam ilişkisi (zıt anlam) bulunan cümle.</p></div><ol class=\"sv-s\"><li><b>İlişkiyi bul</b> ağır ↔ hafif → gerçek anlamlarıyla kullanılmış <b>zıt anlamlı</b> iki sözcük.</li><li><b>Şıkları tara</b> C’de “biraz” (az) ve “oldukça” (çok) miktar bakımından zıt anlamlıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Soğuk hava” gerçek, “sıcak gülümseme” mecaz (samimi); farklı anlamlarda olduğu için gerçek bir zıtlık yok.</td></tr><tr><td>B</td><td>Eski ve büyük zıt değildir.</td></tr><tr class=\"ok\"><td>C</td><td>Biraz (az) ↔ oldukça (çok) → zıt anlam.</td></tr><tr><td>D</td><td>Susmak ve sessizlik yakın anlamlıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zıt anlamlı sözcükler aynı anlam düzleminde (ikisi de gerçek ya da ikisi de mecaz) karşıt olmalıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> A, soğuk-sıcak çiftiyle en çekici şıktır; ama “sıcak gülümseme” sıcaklık değil samimiyet bildirir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 10. soru"
+ },
+ "mebit-tr-f1-11": {
+  "t": "tr-sozcuk",
+  "a": "B",
+  "o": 150011,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yansıma sözcük: Canlı ya da cansız varlıkların çıkardığı seslerin taklidiyle oluşan sözcük.</li></ul><b>İstenen</b><p>Yansıma sözcük kullanılan cümle.</p></div><ol class=\"sv-s\"><li><b>Sesi taklit eden sözcüğü ara</b> “Hışır hışır” yaprakların çıkardığı sesin taklididir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Pırıl pırıl” parlaklık anlatır; bir ses değildir.</td></tr><tr class=\"ok\"><td>B</td><td>“Hışır hışır” → ses taklidi, yansıma.</td></tr><tr><td>C</td><td>“Ötüşmek” kuşun ses çıkarma eylemidir; sesin kendisini taklit etmez.</td></tr><tr><td>D</td><td>“Kişneme” atın ses çıkarmasının adıdır; ses taklidi değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yansıma sözcükler genellikle ikileme hâlinde gelir: şırıl şırıl, hışır hışır, tık tık, horul horul.</div><div class=\"sv-w\"><b>Tuzak:</b> “Pırıl pırıl” yansımaya benzer bir ikilemedir ama sesi değil görüntüyü anlatır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 11. soru"
+ },
+ "mebit-tr-f1-12": {
+  "t": "tr-sozcuk",
+  "a": "A",
+  "o": 150012,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Atasözleri: Ağaca dayanma kurur, adama dayanma ölür. Komşu komşunun külüne muhtaçtır. Dost bin ise azdır, düşman bir ise çoktur. Boyumca boy buldum, huyumca huy bulamadım.</li></ul><b>İstenen</b><p>Bu atasözlerinden hiçbirinin açıklaması olmayan.</p></div><ol class=\"sv-s\"><li><b>Açıklamaları eşleştir</b> B → komşu atasözü. C → ağaca dayanma atasözü. D → dost-düşman atasözü.</li><li><b>Kalanı sına</b> “Boyumca boy buldum…” = Kendine uygun huyda insan bulmak zordur; yüz güzelliği ile huy güzelliğini karşılaştırmaz.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Huy-güzellik karşılaştırması hiçbir atasözünde yok → açıklama değil.</td></tr><tr><td>B</td><td>Komşuların birbirine muhtaçlığı → “külüne muhtaçtır”.</td></tr><tr><td>C</td><td>Kendine güvenmek → “ağaca dayanma…”.</td></tr><tr><td>D</td><td>Dost çok, düşman az olmalı → “dost bin ise azdır…”.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Atasözünün mecaz anlamını bul: kül = en küçük, değersiz şey.</div><div class=\"sv-w\"><b>Tuzak:</b> A, “huy” sözcüğü yüzünden son atasözüyle eşleşiyor sanılabilir; ama o atasözü “uyumlu insan bulmanın zorluğunu” anlatır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 12. soru"
+ },
+ "mebit-tr-f1-13": {
+  "t": "tr-sozcuk",
+  "a": "C",
+  "o": 150013,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Yay ayraçtaki deyimin anlatılan durumla ilgili olmadığı metin.</p></div><ol class=\"sv-s\"><li><b>Her metni deyimle karşılaştır</b> A: İki başarısızlıktan sonra antrenmanı bırakmak → havlu atmak (vazgeçmek) ✓. B: Üzüntüden kimseyle konuşmamak → ağzını bıçak açmamak ✓. C: Zeynep kitabı kaybetti, arkadaşı önemli olmadığını söyleyince rahatladı → içine dert olmadı ✗. D: Masayı her yönüyle inceleyip seçmek → ince eleyip sık dokumak ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Havlu atmak = yenilgiyi kabul edip vazgeçmek. İlişkili.</td></tr><tr><td>B</td><td>Ağzını bıçak açmamak = üzüntüden konuşmamak. İlişkili.</td></tr><tr class=\"ok\"><td>C</td><td>İçine dert olmak = bir şeyi sürekli üzüntüyle düşünmek; Zeynep rahatladı. İlişkisiz.</td></tr><tr><td>D</td><td>İnce eleyip sık dokumak = çok titiz davranmak. İlişkili.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Metnin sonucuna bak: “Zeynep rahatladı” cümlesi deyimin anlamını çürütüyor.</div><div class=\"sv-w\"><b>Tuzak:</b> Zeynep birkaç gün kitabı aradı ve üzüldü; ama sonunda rahatladığı için durum “içine dert olmak” değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 13. soru"
+ },
+ "mebit-tr-f1-14": {
+  "t": "tr-sozcuk",
+  "a": "C",
+  "o": 150014,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Köydeki arsayı oyun alanı yapmak isteyenler haftalarca konuştu, her ayrıntıyı planladı; ama aylar geçmesine rağmen kimse harekete geçmedi.</li></ul><b>İstenen</b><p>Boşluğa gelecek atasözü.</p></div><ol class=\"sv-s\"><li><b>Durumu özetle</b> Çok konuşmak, hiç iş yapmamak → sözle iş yürümez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Susmanın değerini anlatır.</td></tr><tr><td>B</td><td>Düşünüp az konuşmayı öğütler.</td></tr><tr class=\"ok\"><td>C</td><td>“Lafla peynir gemisi yürümez” → sadece konuşmakla iş olmaz. Doğru.</td></tr><tr><td>D</td><td>Danışmanın önemini anlatır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Atasözünün durumdaki “konuşma var – eylem yok” çelişkisini karşılaması gerekir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “danışmak” metindeki konuşmalara benzer; ama metin danışmanın yararını değil, eyleme geçilmemesini eleştiriyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 14. soru"
+ },
+ "mebit-tr-f1-15": {
+  "t": "tr-sanat",
+  "a": "D",
+  "o": 150015,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Sis ince bir örtü gibi yayılmıştı. II. Sert rüzgâr dalları neredeyse kıracaktı. III. Dere gümüş bir şerit gibi parlıyordu. IV. Zeytin ağacı, çevresini saran <b>mağrur</b> binaların arasında tek başına kalmıştı.</li></ul><b>İstenen</b><p>Kişileştirme yapılan cümle.</p></div><ol class=\"sv-s\"><li><b>İnsana özgü özellik ara</b> “Mağrur” (kibirli, gururlu) insana özgü bir özelliktir; binalara verilmiş.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Örtü gibi” → benzetme.</td></tr><tr><td>B</td><td>Rüzgârın dalları kırması doğal bir olaydır; sanat yok.</td></tr><tr><td>C</td><td>“Şerit gibi” → benzetme.</td></tr><tr class=\"ok\"><td>D</td><td>Mağrur binalar → kişileştirme.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kişileştirme = insan dışı varlığa insana özgü duygu, düşünce, davranış vermek (mağrur, küsmek, gülmek, ağlamak).</div><div class=\"sv-w\"><b>Tuzak:</b> “Gibi” geçen cümleler benzetmedir; kişileştirmeyle karıştırma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 15. soru"
+ },
+ "mebit-tr-f1-16": {
+  "t": "tr-sanat",
+  "a": "B",
+  "o": 150016,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dizeler: Tüyden hafif olurum böyle sabahlar / Karşı damda bir güneş parçası / İçimde kuş cıvıltıları, şarkılar / Bağıra çağıra düşerim yollara / Döner döner durur başım havalarda.</li></ul><b>İstenen</b><p>Kullanılan söz sanatı.</p></div><ol class=\"sv-s\"><li><b>Abartmayı bul</b> “Tüyden hafif olurum”, “başım döner döner durur havalarda” → mutluluğu olduğundan çok büyük gösterme.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Karşıt kavramlar bir arada değil.</td></tr><tr class=\"ok\"><td>B</td><td>Abartma → doğru.</td></tr><tr><td>C</td><td>Bir varlığa insan özelliği verilmemiş; şair kendini anlatıyor.</td></tr><tr><td>D</td><td>İnsan dışı varlık konuşturulmamış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Tüyden hafif”, “dünyalar benim oldu”, “bir ton yük” gibi gerçek dışı büyütmeler abartmadır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Kuş cıvıltıları” kişileştirmeyi çağrıştırır; ama kuşlar zaten cıvıldar, insan özelliği yoktur.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 16. soru"
+ },
+ "mebit-tr-f1-17": {
+  "t": "tr-sanat",
+  "a": "C",
+  "o": 150017,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dizeler: Bahar bayırları süsler; zümrüt gibi çayırlar; yüze gülen nazenin, gelin yüzlü, altın gözlü papatyalar.</li><li>Kullanılan sanatlar: <b>kişileştirme</b> (baharın süslemesi, papatyaların gülmesi) ve <b>benzetme</b> (zümrüt gibi, gelin yüzlü, altın gözlü).</li></ul><b>İstenen</b><p>Bu sanatlardan hiçbirinin kullanılmadığı dizeler.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> A: Deniz uslu, gürültü etmeden durur → kişileştirme. B: Her şey eğlenir (kişileştirme), ömür deniz gibi (benzetme). C: Sabahlar, geceler, çocukluk günleri anılıyor → benzetme ve kişileştirme yok. D: Gül yetiştirir gibi → benzetme.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kişileştirme var.</td></tr><tr><td>B</td><td>Kişileştirme ve benzetme var.</td></tr><tr class=\"ok\"><td>C</td><td>Hiçbiri yok.</td></tr><tr><td>D</td><td>Benzetme var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce verilen dizelerdeki sanatları belirle, sonra her şıkta bunlardan birini ara.</div><div class=\"sv-w\"><b>Tuzak:</b> C’deki “gelmez günler” bir özlem bildirir; günlere insan davranışı verilmemiştir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 17. soru"
+ },
+ "mebit-tr-f1-18": {
+  "t": "tr-sanat",
+  "a": "A",
+  "o": 150018,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Dizeler: Mahallemizde senden başka ağaç olsaydı seni bu kadar sevmezdim. Fakat sen bizimle kaydırak oynamasını bilseydin seni daha çok severdim.</li></ul><b>İstenen</b><p>Kullanılan sanatın tanımı.</p></div><ol class=\"sv-s\"><li><b>Sanatı belirle</b> Ağaca “kaydırak oynamayı bilmek” gibi insana özgü bir davranış yükleniyor → kişileştirme.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İnsan dışındaki varlığa insana özgü özellik → kişileştirme. Doğru.</td></tr><tr><td>B</td><td>Benzetmenin tanımıdır.</td></tr><tr><td>C</td><td>Abartmanın tanımıdır.</td></tr><tr><td>D</td><td>Karşıtlığın tanımıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Sen” diye seslenilen ağaç, oyun oynayabilecek bir arkadaş gibi düşünülüyor.</div><div class=\"sv-w\"><b>Tuzak:</b> Şiirde ağaç konuşmadığı için konuşturma yoktur; kişileştirme vardır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 18. soru"
+ },
+ "mebit-tr-f1-19": {
+  "t": "tr-cumle",
+  "a": "D",
+  "o": 150019,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Toplantının verimli geçeceğini umuyorum. (II) Sunuma kısa bir özet eklemeniz konunun daha iyi anlaşılmasını sağlayabilir. (III) Çalışmalarınızı son ana bırakmayın, aksi takdirde proje yetişmeyebilir. (IV) Bu kadar kısa sürede yapılan bir çalışmada hatalar çıkabilir.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Cümlelerin anlamını bul</b> I “umuyorum” → beklenti. II “eklemeniz … sağlayabilir” → öneri. III “bırakmayın, aksi takdirde” → uyarı. IV “çıkabilir” → olasılık.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Umut → beklenti. Söylenir.</td></tr><tr><td>B</td><td>Öneri. Söylenir.</td></tr><tr><td>C</td><td>Uyarı. Söylenir.</td></tr><tr class=\"ok\"><td>D</td><td>Küçümseme yok; olasılık (ihtimal) ve anlayış var. Söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “-abilir/-ebilir” çoğunlukla olasılık bildirir. Küçümseme için “ne olacak ki, bu da iş mi” gibi değer düşürücü bir ifade gerekir.</div><div class=\"sv-w\"><b>Tuzak:</b> “Bu kadar kısa sürede” ifadesi küçümseme gibi okunabilir; ama cümle hataları olağan karşılıyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 19. soru"
+ },
+ "mebit-tr-f1-20": {
+  "t": "tr-cumle",
+  "a": "B",
+  "o": 150020,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İlk kitabından sonra uzun süre eser yayımlamayan yazar, son romanında çocukluğunun geçtiği kasabayı ve orada tanıdığı insanları <b>kurguladığı karakterler aracılığıyla</b> anlatmıştır.</li></ul><b>İstenen</b><p>Kesin olarak çıkarılabilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Cümledeki bilgiyi şıklarla karşılaştır</b> Tanıdığı insanlar kurgu karakterlerle anlatılmış → karakterlerde tanıdıklarının izleri vardır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kurgu karakterler kullandığı için “olduğu gibi aktarmıştır” denemez.</td></tr><tr class=\"ok\"><td>B</td><td>Tanıdığı insanlar karakterlerle anlatıldı → izler taşır. Kesin.</td></tr><tr><td>C</td><td>“Eser yayımlamadı” demek “edebiyat çalışmalarına ara verdi” demek değildir; yazıyor olabilir.</td></tr><tr><td>D</td><td>Anlatım anlayışının farklı olduğu cümlede yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kesin olarak” sorularında cümlenin söylediğinden bir adım bile ileri gitme.</div><div class=\"sv-w\"><b>Tuzak:</b> C çok yakındır; ama yayımlamamak ile yazmamak farklıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 20. soru"
+ },
+ "mebit-tr-f1-21": {
+  "t": "tr-cumle",
+  "a": "C",
+  "o": 150021,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Çatal yükleyiciler depolarda ağır malzeme taşır. (II) Önünde iki çatal ve kaldırma düzeneği vardır. (III) Ancak yüksek katlı binaların yapımında yeterince yararlanılamaz. (IV) Kaldırma yükseklikleri üst katlara ulaştırmaya yetmez. (V) Kule vinçler uzun kolları sayesinde yüksek noktalara taşır.</li></ul><b>İstenen</b><p>Kendinden önceki cümlenin gerekçesi olan cümle.</p></div><ol class=\"sv-s\"><li><b>“Neden?” sorusunu sor</b> III: Neden yararlanılamaz? → IV: Çünkü kaldırma yüksekliği yetmez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II, I’i açıklar (yapısını anlatır); gerekçe değil.</td></tr><tr><td>B</td><td>III, II’ye karşıtlık bildirir (“Ancak”).</td></tr><tr class=\"ok\"><td>C</td><td>IV, III’ün nedenidir → doğru.</td></tr><tr><td>D</td><td>V yeni bir araçla karşılaştırma yapar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önceki cümleyle arasına “çünkü” koyabiliyorsan gerekçedir: “Yararlanılamaz, çünkü yüksekliği yetmez.”</div><div class=\"sv-w\"><b>Tuzak:</b> V de bir sebep içerir (“uzun kolları sayesinde”); ama bu sebep kendi cümlesine aittir, IV’ün gerekçesi değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 21. soru"
+ },
+ "mebit-tr-f1-22": {
+  "t": "tr-cumle",
+  "a": "B",
+  "o": 150022,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Hangi limana gideceğini bilmeyen gemiye hiçbir rüzgâr yardım edemez. II. Planların kendisi değersiz olabilir ama planlama her şeydir. III. Belirli bir amaç ve yön olmadan gösterilen çaba ve cesaret yeterli değildir. IV. Önemli olan işi doğru yapmak değil, doğru işi seçmektir.</li></ul><b>İstenen</b><p>Anlamca birbirine en yakın sözler.</p></div><ol class=\"sv-s\"><li><b>Her sözün özü</b> I: Hedefsiz kişiye hiçbir imkân yetmez. II: Planlama süreci önemlidir. III: Amaçsız çaba yetmez. IV: Doğru işi seçmek önemlidir.</li><li><b>Eşleştir</b> I ve III aynı fikri söylüyor: amaç/yön yoksa güç ve çaba işe yaramaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II planlamadan söz eder; I hedeften.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III → hedefsiz çaba boşunadır. En yakın.</td></tr><tr><td>C</td><td>II plan, IV iş seçimi; farklı.</td></tr><tr><td>D</td><td>III amaç, IV öncelik seçimi; yakın ama I-III kadar değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Mecazlı sözü (gemi, liman, rüzgâr) önce düz anlama çevir: liman = hedef, rüzgâr = imkân.</div><div class=\"sv-w\"><b>Tuzak:</b> IV de “doğru yön” fikrine yakındır; ama I ile III neredeyse aynı cümlenin mecazlı ve düz hâlidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 22. soru"
+ },
+ "mebit-tr-f1-23": {
+  "t": "tr-cumle",
+  "a": "A",
+  "o": 150023,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Tarihî yapıların korunmasına yönelik son yıllarda yürütülen çalışmalar, - - - -”</li></ul><b>İstenen</b><p>Nesnel yargı oluşturan tamamlama.</p></div><ol class=\"sv-s\"><li><b>Nesneli tanımla</b> Nesnel yargı kanıtlanabilir, kişiden kişiye değişmeyen bilgidir; “anlamlı, önemli, en büyük” gibi değerlendirme içermez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Projelerin yerel yönetim ve kurumlarca ortaklaşa yürütülmesi → doğrulanabilir bilgi. Nesnel.</td></tr><tr><td>B</td><td>“Anlamlı girişimler” → değerlendirme. Öznel.</td></tr><tr><td>C</td><td>“Önemli adımlardan biri” → değerlendirme. Öznel.</td></tr><tr><td>D</td><td>“Diğer bütün girişimlerden daha büyük değer” → kişisel kanaat. Öznel.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Güzel, önemli, anlamlı, değerli, en…” sözcükleri öznelliğin işaretidir.</div><div class=\"sv-w\"><b>Tuzak:</b> C’deki “değerlendirilmektedir” edilgen yapısı nesnel gibi gösterir; ama “önemli” sözcüğü yargıyı öznel yapar.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 23. soru"
+ },
+ "mebit-tr-f1-24": {
+  "t": "tr-cumle",
+  "a": "D",
+  "o": 150024,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Çocukluk sokaklarındaki yaz akşamları gözümde tütüyor. II. İlk romanını yayımlamamış yazarın büyük ses getireceğini düşünüyorum. III. İnsan her sıkıntısında yanında olan dostunu zor günde yalnız bırakır mı? IV. Serginin açılışına erken gidersek eserleri inceleme fırsatı bulabiliriz.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Anlamları bul</b> I “gözümde tütüyor” → özlem. II eser yayımlanmadan olumlu tahmin → olumlu ön yargı. III kırgınlıkla soru → yakınma (sitem). IV “-sek… -abiliriz” → koşul ve olasılık.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Özlem → doğru.</td></tr><tr><td>B</td><td>Olumlu ön yargı → doğru.</td></tr><tr><td>C</td><td>Yakınma → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>IV’te gerçekleşmemiş beklenti (hayal kırıklığı) yok; koşula bağlı bir olasılık var. Yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gerçekleşmemiş beklenti: “Gelir diye bekledim ama gelmedi.” gibi; IV henüz yaşanmamış bir plandır.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’teki “-bilir” ile gelecekte olabilecek bir durum anlatılıyor; geçmişte boşa çıkan bir beklenti değil.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 24. soru"
+ },
+ "mebit-tr-f1-25": {
+  "t": "tr-paragraf",
+  "a": "B",
+  "o": 150025,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ömer Seyfettin iyi bir gözlemcidir. Çocukken yazdığı hikâyeler anılarına dayanır, yaşamına dair içerik barındırır.</li><li>Hikâyelerinde Gönen, gerçek mekânlarla anlatılır. “Her yazar bir parça kendini anlatır eserlerinde.”</li></ul><b>İstenen</b><p>Bu sözlerin karşılık olduğu soru.</p></div><ol class=\"sv-s\"><li><b>Cevabın ana fikri</b> Hikâyeler yazarın kendi yaşamından (anılar, büyüdüğü yer) izler taşır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Mekânların bugün var olup olmadığı anlatılmıyor.</td></tr><tr class=\"ok\"><td>B</td><td>Hikâyelerin yazarın yaşamından izler taşıması → cevabın tamamıyla uyumlu.</td></tr><tr><td>C</td><td>Başarısının nedeni sorulmuyor; cevap yaşamın hikâyelere yansımasını anlatıyor.</td></tr><tr><td>D</td><td>Gerçek mekânların anlatıma katkısı cevapta açıklanmıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Son cümle (“Her yazar bir parça kendini anlatır”) cevabın özüdür; soruyu ona göre seç.</div><div class=\"sv-w\"><b>Tuzak:</b> D, Gönen’deki mekânlar yüzünden çekicidir; ama cevap mekânların “katkısını” değil, yazarın yaşamını yansıttığını söylüyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 25. soru"
+ },
+ "mebit-tr-f1-26": {
+  "t": "tr-cumle",
+  "a": "D",
+  "o": 150026,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yavrular ay ışığından faydalanıp aydınlık yöne ilerler; bu yöntem denize ulaşmalarını kolaylaştırır - - - - sahildeki güçlü yapay ışıklar yönlerini şaşırtabilir.</li></ul><b>İstenen</b><p>Boşluğa gelecek bağlaç.</p></div><ol class=\"sv-s\"><li><b>İki cümlenin ilişkisi</b> Birinci cümle: doğal yöntem işe yarar. İkinci cümle: yapay ışıklar bu yöntemi bozar → <b>karşıtlık</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Bu yüzden” sonuç bildirir; ikinci cümle birincinin sonucu değil.</td></tr><tr><td>B</td><td>“Üstelik” ekleme yapar; ikinci cümle olumlu bir ekleme değil.</td></tr><tr><td>C</td><td>“Çünkü” neden bildirir; uymuyor.</td></tr><tr class=\"ok\"><td>D</td><td>“Ancak” karşıtlık bildirir → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Olumlu bir durumdan sonra olumsuz bir durum geliyorsa “ancak, fakat, ama” kullanılır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Bu yüzden” de akıcı okunabilir; ama yapay ışıklar doğal yön bulmanın sonucu değildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 26. soru"
+ },
+ "mebit-tr-f1-27": {
+  "t": "tr-paragraf",
+  "a": "A",
+  "o": 150027,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yazar toplumsal sorunlara kayıtsız değil; ama kitleleri yönlendiren bir söylem yerine bu sorunların insanın iç dünyasında yarattığı kırılmaları anlatıyor.</li><li>Kahramanları büyük davaların temsilcileri değil, çağın yükünü içlerinde taşıyan kişilerdir.</li></ul><b>İstenen</b><p>Yazarın edebiyat anlayışıyla ilgili söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Ana fikri özetle</b> Toplumsal sorunlar → bireyin iç dünyasındaki yansımalarıyla anlatılıyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Toplumsal sorunları bireyin yaşantısındaki yansımalarıyla ele almak → doğru.</td></tr><tr><td>B</td><td>Edebiyatı toplumu değiştirme aracı görmüyor; yönlendirici söylemden kaçınıyor.</td></tr><tr><td>C</td><td>Okuru belli düşüncede birleştirmek istemiyor.</td></tr><tr><td>D</td><td>Bireyi toplumdan bağımsız işlemiyor; toplumsal sorunlar bireye yansıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Yerine” sözcüğü yazarın neyi seçtiğini, neyi seçmediğini gösterir.</div><div class=\"sv-w\"><b>Tuzak:</b> D, “iç dünya” vurgusuyla çekicidir; ama metin toplumla bağı açıkça kurar (“kayıtsız değildir”).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 27. soru"
+ },
+ "mebit-tr-f1-28": {
+  "t": "tr-paryapi",
+  "a": "C",
+  "o": 150028,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Ahtapotlar çeviktir, sinir sistemleri karmaşıktır. (II) Esnek kolları vardır. (III) Sekiz kolları sayesinde iletişim kurar, keşfeder, avlanır.</li><li>(IV) Dünya genelindeki tüm tuzlu sularda yaşarlar. (V) Sığ kıyılarda, mercanlarda, kaya kovuklarında barınırlar.</li></ul><b>İstenen</b><p>İkinci paragrafın ilk cümlesi.</p></div><ol class=\"sv-s\"><li><b>Konuları ayır</b> I-III: ahtapotların özellikleri (beden, kollar). IV-V: yaşam alanları.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II kollara geçiş yapar ama hâlâ özellikleri anlatır.</td></tr><tr><td>B</td><td>III kolların işlevidir; aynı konu.</td></tr><tr class=\"ok\"><td>C</td><td>IV yaşam alanına geçer → yeni paragraf.</td></tr><tr><td>D</td><td>V, IV’ün devamıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Paragrafa ayırırken konunun değiştiği cümleyi bul (özellikler → yaşam alanı).</div><div class=\"sv-w\"><b>Tuzak:</b> II’de yeni bir özellik (kollar) gelir ama konu hâlâ “ahtapotun özellikleri”dir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 28. soru"
+ },
+ "mebit-tr-f1-29": {
+  "t": "tr-paragraf",
+  "a": "A",
+  "o": 150029,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1. cevap: Türkçeye merakı ilkokulda dublajlı Türk dizilerini izlerken başladı; “Bu dili ne yapıp edip öğreneceğim!” düşüncesi o zaman doğdu.</li><li>2. cevap: Türkiye Türkçesini en zarif ve melodik Türk dili buluyor; çok kültürlülükten beslenmesi ve “mihmandar” gibi kelimelerle uyumu onu hayran bırakıyor.</li></ul><b>İstenen</b><p>Boşluklara sırasıyla gelecek sorular.</p></div><ol class=\"sv-s\"><li><b>Cevaplardan soruya git</b> 1. cevap “ne zaman, nasıl” başladığını anlatıyor. 2. cevap Türkçenin onu etkileyen özelliğini anlatıyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Ne zaman-nasıl karar verdi? / En çok etkileyen yönü? → iki cevaba da uyar.</td></tr><tr><td>B</td><td>1. cevap dizilerin genel rolünü değil kendi hikâyesini anlatıyor; 2. cevap farkı değil hayranlığı anlatıyor.</td></tr><tr><td>C</td><td>Ailenin etkisi sorulmuyor; yabancı kelimelerin melodiye katkısı cevabın yalnızca bir parçası.</td></tr><tr><td>D</td><td>Dizilerdeki Türkçenin güzelliği ve dilin bugünkü durumu sorulmuyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Röportaj sorularında cevabın ilk ve son cümlesi sorunun özünü verir.</div><div class=\"sv-w\"><b>Tuzak:</b> C’nin 2. sorusu “mihmandar” örneğiyle ilgili gibi görünür; ama cevabın ana fikri hayranlıktır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 29. soru"
+ },
+ "mebit-tr-f1-30": {
+  "t": "tr-paragraf",
+  "a": "C",
+  "o": 150030,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Robotlar insan dokunuşunun yumuşaklığını taklit edemiyor; bu eksiklik “yumuşak robot bilimi” alanını doğurdu.</li><li>Araştırmacılar önemli ilerlemeler kaydetti; Zhan Shi ve arkadaşları ultrasonla çalışan yapay kaslar geliştirdi.</li></ul><b>İstenen</b><p>Metnin konusu.</p></div><ol class=\"sv-s\"><li><b>Metnin tamamını kapsayan şık</b> Alanın doğuşu + alandaki ilerleme + örnek çalışma → yumuşak robot bilimindeki çalışmalar ve gelişmeler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kasları taklit etme yalnızca örnek çalışmayla ilgilidir; dar.</td></tr><tr><td>B</td><td>Geleneksel robotların sınırları yalnızca girişte geçer.</td></tr><tr class=\"ok\"><td>C</td><td>Yumuşak robot bilimindeki çalışmalar ve gelişmeler → bütünü kapsar.</td></tr><tr><td>D</td><td>Ultrason yalnızca bir örnek; dar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Konu sorularında metnin tamamını kapsayan en geniş (ama metin dışına taşmayan) şıkkı seç.</div><div class=\"sv-w\"><b>Tuzak:</b> A ve D metnin sonundaki somut örnekten alınmıştır; tüm metni kapsamaz.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 30. soru"
+ },
+ "mebit-tr-f1-31": {
+  "t": "tr-paryapi",
+  "a": "A",
+  "o": 150031,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Önceki gün bulunan seramik parçaları çalışma odasına taşındı. II. Sabah kazı alanına gelip hazırlıkları tamamladık. III. Toprağı temizlerken ortaya çıkan mermer yüzey heyecanlandırdı. IV. Antik tapınağın bölgesine o sabah büyük merakla gitmiştik. V. İşlemeler belirginleşince sıradan bir taş olmadığını anladık. VI. Kazı başkanının işaretiyle yerlerimizi alıp çalışmaya başladık.</li></ul><b>İstenen</b><p>Anlamlı metinde dışarıda kalan cümle.</p></div><ol class=\"sv-s\"><li><b>Akışı kur</b> IV (yola çıkış) → II (hazırlık) → VI (çalışmaya başlama) → III (mermer yüzey) → V (sıradan taş değil).</li><li><b>Dışarıda kalanı bul</b> I, “önceki gün” bulunan seramiklerden ve edilgen bir anlatımla bahsediyor; bu sabahın olay zincirine girmiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>I → zaman (önceki gün) ve anlatıcı (biz yok) farklı. Dışarıda kalır.</td></tr><tr><td>B</td><td>II hazırlık aşaması; metne girer.</td></tr><tr><td>C</td><td>III buluşun başlangıcı; metne girer.</td></tr><tr><td>D</td><td>V buluşun sonucu; metne girer.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zaman ifadelerine (o sabah, sabahın erken saatlerinde, bir süre sonra) ve anlatıcıya (biz) dikkat et.</div><div class=\"sv-w\"><b>Tuzak:</b> I de kazıyla ilgilidir; ama olay zincirinde yeri yoktur.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 31. soru"
+ },
+ "mebit-tr-f1-32": {
+  "t": "tr-paryapi",
+  "a": "C",
+  "o": 150032,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Geleneksel mimari barınmanın yanında kültürel kimliği yansıtır. (II) Malzemeler coğrafyaya ve iklime göre belirlenir. (III) Bu seçim doğayla uyum çabasının sonucudur.</li><li>(IV) Malzemelerin maddi değeri binaların estetiğini belirlemede temel ölçüt sayılmıştır. (V) Bu yapılar yaşayan birer bellektir.</li></ul><b>İstenen</b><p>Düşüncenin akışını bozan cümle.</p></div><ol class=\"sv-s\"><li><b>Akışı izle</b> Metin; malzemenin coğrafya ve doğayla uyumunu, kültürel kimliği anlatıyor. IV ise “maddi değer” ve “estetik ölçüt”e geçip bu çizgiden sapıyor; ayrıca III’ün “doğayla uyum” fikriyle çelişiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>II, malzemeyi coğrafyaya bağlar; akışa uygun.</td></tr><tr><td>B</td><td>III, II’nin nedenini açıklar; uygun.</td></tr><tr class=\"ok\"><td>C</td><td>IV maddi değerden söz eder; akışı bozar.</td></tr><tr><td>D</td><td>V, I’deki kültürel kimlik fikriyle metni bağlar; uygun.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Akışı bozan cümle genellikle konuyla ilgili ama farklı bir yöne giden cümledir.</div><div class=\"sv-w\"><b>Tuzak:</b> IV de “malzeme” sözcüğünü içerdiği için uyumlu görünür; içerdiği fikir farklıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 32. soru"
+ },
+ "mebit-tr-f1-33": {
+  "t": "tr-paryapi",
+  "a": "C",
+  "o": 150033,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Tren hızı insanın önemli kazanımlarındandır. (II) Bu da gösteriyor ki trenin hızı daha büyük amaçları olan insanlar için yalnızca bir araçtır. (III) Çinlinin “Geri kalan saatleri ne yapacağız?” sözü hatırlanmalı. (IV) Fakat hız daha büyük amaçların hizmetine verilmeseydi kazanılan zamanın ne değeri kalırdı? (V) Böyle bir amacı olmayan Çinlinin bu araca ihtiyaç duymamasına niçin gülüyoruz?</li></ul><b>İstenen</b><p>Yer değiştirince akışı sağlayan cümleler.</p></div><ol class=\"sv-s\"><li><b>Bağlantı sözcüklerine bak</b> II’deki “Bu da gösteriyor ki” bir sonuç çıkarır; bu, önceki cümlelerde bir kanıt (Çinlinin sözü) bulunmasını gerektirir. IV’teki “Fakat” ise I’deki “kazanım” fikrine karşı çıkar; I’den hemen sonra gelmelidir.</li><li><b>Yeni sıra</b> I → IV (fakat amaç yoksa değeri ne?) → III (Çinlinin sözü) → II (bu da gösteriyor ki…) → V.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ile III değişirse metin Çinliyle başlar; “bu kazanımlar” bağlantısı kopar.</td></tr><tr><td>B</td><td>II ile III değişirse IV’teki “Fakat” III’e bağlanır; anlam kopar.</td></tr><tr class=\"ok\"><td>C</td><td>II ile IV değişince akış sağlanır.</td></tr><tr><td>D</td><td>III ile V değişirse “Bu da gösteriyor ki” kanıttan önce gelir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Fakat, bu da gösteriyor ki, bu nedenle” gibi bağlayıcılar cümlenin nereye ait olduğunu söyler.</div><div class=\"sv-w\"><b>Tuzak:</b> Seçenekleri tek tek yerine koyup baştan sona oku; sadece bir cümleyi değil tüm akışı kontrol et.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 33. soru"
+ },
+ "mebit-tr-f1-34": {
+  "t": "tr-paryapi",
+  "a": "B",
+  "o": 150034,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Göz kırpmak gözyaşını yayar; kornea (“gözün ön bölümünü örten saydam doku”) nemli kalır; toz, polen, kirpik parçası gibi maddeler uzaklaşır.</li><li>Ekrana odaklanınca daha seyrek göz kırparız; göz kurur; kuruluk sulanmaya yol açabilir.</li></ul><b>İstenen</b><p>Metinle ilgili yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Düşünceyi geliştirme yollarını ara</b> Tanımlama → kornea “saydam doku” diye açıklanmış. Örnekleme → toz, polen, kirpik. Karşılaştırma → normalde ve ekrana bakarken göz kırpma sıklığı.</li><li><b>Benzetme ara</b> “Gibi, sanki” ile kurulan ya da bir şeyi başka bir şeye benzeten ifade yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kornea tanımlanmış → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Benzetme yok → yanlış.</td></tr><tr><td>C</td><td>Toz, polen, kirpik → örnek → doğru.</td></tr><tr><td>D</td><td>Ekranda daha seyrek kırpma → karşılaştırma → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tanım cümlesi genellikle “… olan … dır” kalıbındadır: “gözün ön bölümünü örten saydam doku olan kornea”.</div><div class=\"sv-w\"><b>Tuzak:</b> “İnce bir tabaka” bir benzetme gibi düşünülebilir; ama gerçek anlamlı bir betimlemedir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 34. soru"
+ },
+ "mebit-tr-f1-35": {
+  "t": "tr-paragraf",
+  "a": "D",
+  "o": 150035,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Altı çizili cümle: “Bir eserin yazıldığı dönemi aşarak varlığını sürdürebilmesinde, farklı çağlarda ve toplumlarda yaşayan insanların duygu ve düşüncelerine seslenmesinin de payı vardır.”</li></ul><b>İstenen</b><p>Cümlede ilişkisi vurgulanan kavramlar.</p></div><ol class=\"sv-s\"><li><b>İki parçayı kavramlaştır</b> “Dönemi aşarak varlığını sürdürmek” → <b>kalıcılık</b>. “Farklı çağ ve toplumlardaki insanlara seslenmek” → <b>evrensellik</b>.</li><li><b>İlişki</b> Evrensellik kalıcılığın nedenlerinden biridir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Özgünlük (benzersizlik) cümlede yok.</td></tr><tr><td>B</td><td>Özgünlük yok.</td></tr><tr><td>C</td><td>Yalınlık (sade anlatım) yok.</td></tr><tr class=\"ok\"><td>D</td><td>Kalıcılık – evrensellik → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Evrensel = her yerde ve her zaman insanlara hitap eden. Kalıcı = zamana direnen.</div><div class=\"sv-w\"><b>Tuzak:</b> “Farklı” sözcüğü özgünlüğü çağrıştırır; burada farklı toplumlara ulaşmak, yani evrensellik anlatılıyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 35. soru"
+ },
+ "mebit-tr-f1-36": {
+  "t": "tr-paragraf",
+  "a": "A",
+  "o": 150036,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yönetmenler çekimde konuşmaları değiştirebilir, yeni sahne ekleyebilir; kurguda sahne çıkarabilir; ilk gösterimden sonra seyirci tepkisine göre düzenleme yapabilir.</li><li>Bu yüzden filmin ilk ve sonraki sürümleri farklı olabilir. Değişiklikleri <b>belirlemek için</b> kimi zaman çekim kayıtları ve önceki kurgular incelenir.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Son cümleye dikkat et</b> Çekim kayıtları, değişikliklerin ne olduğunu sonradan <b>belirlemek</b> için incelenir; yönetmenin değişiklik kararında kullandığı söylenmiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Kayıtların karar verirken kullanıldığı bilgisi yok. Ulaşılamaz.</td></tr><tr><td>B</td><td>Senaryo ve sahne planının dışına çıkılabilir. Ulaşılır.</td></tr><tr><td>C</td><td>Seyirci tepkisine göre düzenleme. Ulaşılır.</td></tr><tr><td>D</td><td>İlk ve sonraki sürümler arasında farklar. Ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kim, ne amaçla” sorularını metindeki asıl ifadeyle karşılaştır: kayıtları inceleyen, değişiklikleri belirlemek isteyenlerdir.</div><div class=\"sv-w\"><b>Tuzak:</b> A metindeki sözcükleri (çekim kayıtları, değişiklik) kullanıyor ama ilişkiyi değiştiriyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 36. soru"
+ },
+ "mebit-tr-f1-37": {
+  "t": "tr-paragraf",
+  "a": "C",
+  "o": 150037,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kanlıca mantarı: Çam ormanlarında, sonbaharda; şapkası gençken dışbükey, gelişince ortası çukurlaşır; bazı yörelerde melki, çıntar denir.</li><li>Sezar mantarı: Meşe ve kestane ormanlarında, yaz sonundan sonbahara; şapkası önce yarım küre, sonra düzleşir; literatürde duvak mantarı.</li></ul><b>İstenen</b><p>Ortak yön.</p></div><ol class=\"sv-s\"><li><b>İkisini karşılaştır</b> Gelişme → ikisinde de şapka biçim değiştiriyor (dışbükey → çukur; yarım küre → düz).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yöresel ad yalnızca kanlıcada; Sezar’ınki “literatürde” verilen ad.</td></tr><tr><td>B</td><td>Sonbaharda “daha sık” görüldükleri söylenmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>Gelişimde farklı görünüm kazanmaları → ortak.</td></tr><tr><td>D</td><td>Ağaç türleri farklı (çam / meşe-kestane).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ortak yön sorularında her özelliği iki metinde de ara.</div><div class=\"sv-w\"><b>Tuzak:</b> A’da Sezar mantarının da ikinci adı vardır; ama bu yöresel değil, literatürdeki adıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 37. soru"
+ },
+ "mebit-tr-f1-38": {
+  "t": "tr-paragraf",
+  "a": "C",
+  "o": 150038,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) El yazmaları dönemin düşünce dünyasına açılan penceredir. (II) Kenar notları ve düzeltmeler müstensihin zihin dünyasını, dikkatini, estetik anlayışını yansıtır. (III) Bu yüzden farklı yüzyıllardaki kopyalar arasında farklılıklar görülmesi doğaldır. (IV) Araştırmacılar bu değişimleri hata değil, kültür tarihinin zenginliği olarak görmelidir.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>III’ü dikkatle oku</b> Farklılıkların “doğal” olduğunu söylüyor; eserin değerini kaybettiğinden söz etmiyor. IV ise bunları zenginlik sayıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I’in yorumu → doğru.</td></tr><tr><td>B</td><td>II’nin yorumu → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>III’te “değerini kaybetti” yargısı yok; tersine farklılık doğal sayılıyor. Söylenemez.</td></tr><tr><td>D</td><td>IV’ün yorumu → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cümle yorumlama sorularında şıktaki değerlendirmenin (olumlu/olumsuz) cümleyle aynı yönde olup olmadığına bak.</div><div class=\"sv-w\"><b>Tuzak:</b> “Belirgin farklılıklar” ifadesi olumsuz bir yargı gibi okunabilir; cümle bunu “doğal” sayıyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 38. soru"
+ },
+ "mebit-tr-f1-39": {
+  "t": "tr-paragraf",
+  "a": "D",
+  "o": 150039,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Romanda olaylar yalnız zaman sırasıyla değil, anlamlı bağlantılarla bir bütün olarak ele alınır. Kahramanların kararları, durumlar ve sonuçları olay örgüsünü belirler.</li><li>Bu nedenle olayların sırası kadar birbirini nasıl etkilediği de önemlidir; bir olayın diğerine zemin hazırlaması tutarlılık ve inandırıcılığı güçlendirir.</li></ul><b>İstenen</b><p>Metnin ana düşüncesi.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Romanda olaylar arasındaki neden-sonuç bağı anlatının bütünlüğü için önemlidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kahramanların davranışını olaylardan üstün tutmak metinde yok.</td></tr><tr><td>B</td><td>Gerçek hayattan seçme ölçütü metinde yok.</td></tr><tr><td>C</td><td>Sırayı değiştirmenin etkisi metinde yok.</td></tr><tr class=\"ok\"><td>D</td><td>Olayların neden-sonuç ilişkisi içinde gelişmesi → ana düşünce.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bu nedenle” ile başlayan cümle çoğu zaman ana düşünceyi verir.</div><div class=\"sv-w\"><b>Tuzak:</b> B “inandırıcılık” sözcüğünü kullanır ama metindeki inandırıcılık nedenini (olaylar arası bağ) değiştirir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 39. soru"
+ },
+ "mebit-tr-f1-40": {
+  "t": "tr-paryapi",
+  "a": "D",
+  "o": 150040,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Metin: Kitap sayfalarının sararmasının kimyasal nedeni ve korunma yolu. II. Metin: Kitabın değeri okur sayısıyla ölçülmez; soru sorup görüş savunuyor.</li><li>III. Metin: Saatçi dükkânının vitrini, rafları, lambası. IV. Metin: Köy girişindeki köprü, dere, söğütler, gelincikler, çatılar.</li></ul><b>İstenen</b><p>Kullanılmayan anlatım biçimi.</p></div><ol class=\"sv-s\"><li><b>Her metni sınıflandır</b> I → bilgi veriyor → açıklayıcı. II → bir düşünceyi savunup karşı görüşü çürütüyor → tartışmacı. III ve IV → görüntüyü sözle resmediyor → betimleyici.</li><li><b>Eksik olanı bul</b> Hiçbir metinde zaman içinde gelişen bir olay (olay örgüsü) yok → öyküleyici yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I’de açıklayıcı var.</td></tr><tr><td>B</td><td>II’de tartışmacı var.</td></tr><tr><td>C</td><td>III ve IV’te betimleyici var.</td></tr><tr class=\"ok\"><td>D</td><td>Öyküleyici anlatım yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Öyküleyici anlatımda kişi, zaman, yer ve <b>olay</b> birlikte bulunur; betimlemede ise durağan bir görüntü çizilir.</div><div class=\"sv-w\"><b>Tuzak:</b> III’teki “ışık düşüyordu” bir eylem gibi görünse de olay değil, görüntü betimlemesidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 40. soru"
+ },
+ "mebit-tr-f1-41": {
+  "t": "tr-metin",
+  "a": "B",
+  "o": 150041,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metin; Cumhuriyetin ilk yıllarında devlet adamlarının öz Türkçe kelimeler kullanmasını belgeleriyle (Atatürk’ün bildirisi, İnönü’nün yazısı, Saffet Ziya’nın telgrafı) anlatıyor ve bir sonuca varıyor.</li></ul><b>İstenen</b><p>Metnin türü.</p></div><ol class=\"sv-s\"><li><b>Türün özelliklerini ara</b> Bilgi veriyor, bir düşünceyi kanıtlarla destekliyor, nesnel ve ciddi bir dille yazılmış → <b>makale</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Deneme kişisel ve samimi düşünce yazısıdır; burada kanıt ve belge var.</td></tr><tr class=\"ok\"><td>B</td><td>Makale → belgeye dayalı, düşünceyi kanıtlayan yazı. Doğru.</td></tr><tr><td>C</td><td>Fıkra güncel bir konuda kısa, esprili köşe yazısıdır.</td></tr><tr><td>D</td><td>Eleştiri bir eseri değerlendirir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Belge, tarih, alıntı, bilimsel veri → makale. “Ben” ağırlıklı, kanıtsız kişisel düşünce → deneme.</div><div class=\"sv-w\"><b>Tuzak:</b> Konunun tarihî olması türü belirlemez; anlatımın kanıta dayalı olması belirler.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 41. soru"
+ },
+ "mebit-tr-f1-42": {
+  "t": "tr-metin",
+  "a": "A",
+  "o": 150042,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Hayatı iyi karşılamanın sırrı için gülümsemeyi öğrenmeli. Belki siz de bilirsiniz… ‘Güldüğüm için hayata muvaffak oluyorum.’ demiş. Bu söz boşuna söylenmiş değildir.”</li></ul><b>İstenen</b><p>Metnin türü.</p></div><ol class=\"sv-s\"><li><b>Anlatımın özelliğine bak</b> Yazar okura doğrudan sesleniyor (“Belki siz de bilirsiniz”), bir fıkra/anekdot anlatıyor, karşısında biri varmış gibi sohbet havası var → <b>söyleşi (sohbet)</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Söyleşi → okurla konuşur gibi, samimi, anekdotlu. Doğru.</td></tr><tr><td>B</td><td>Deneme de kişiseldir ama okura doğrudan seslenme ve karşılıklı konuşma havası söyleşinin ayırt edici özelliğidir.</td></tr><tr><td>C</td><td>Makale kanıta dayalıdır.</td></tr><tr><td>D</td><td>Eleştiri eser değerlendirir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sohbet (söyleşi) = okurla konuşur gibi yazılan, “siz” diye seslenen, kısa anekdotlar içeren yazı.</div><div class=\"sv-w\"><b>Tuzak:</b> Deneme ile sohbet karışır: denemede yazar kendi kendine konuşur, sohbette okurla konuşur.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 42. soru"
+ },
+ "mebit-tr-f1-43": {
+  "t": "tr-metin",
+  "a": "D",
+  "o": 150043,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Basına gün doğacak” sözünü güneşle esprili biçimde birleştiriyor; vapurda bir muhabirle konuşup gazetecilerin maaş beklentilerini mizahi bir dille aktarıyor.</li></ul><b>İstenen</b><p>Metnin türü.</p></div><ol class=\"sv-s\"><li><b>İpuçlarını topla</b> Güncel bir konu (yeni gazete, basın maaşları), kısa, esprili ve eleştirel üslup, gazete yazısı havası → <b>fıkra</b> (köşe yazısı).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Deneme kişisel düşünce yazısıdır; esprili, güncel olay anlatımı değildir.</td></tr><tr><td>B</td><td>Sohbet okura seslenen düşünce yazısıdır.</td></tr><tr><td>C</td><td>Röportaj bir kişiyle yapılan görüşmenin aktarılmasıdır; burada kısa bir konuşma mizah için kullanılmış.</td></tr><tr class=\"ok\"><td>D</td><td>Fıkra → güncel konu, kısa, esprili, gazete yazısı. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fıkra (gazete fıkrası) = güncel bir olayı kısa, esprili ve eleştirel biçimde ele alan köşe yazısı.</div><div class=\"sv-w\"><b>Tuzak:</b> Metinde diyalog olduğu için C seçilebilir; ama amaç bir kişiyi tanıtmak değil, güncel durumu mizahla eleştirmek.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 43. soru"
+ },
+ "mebit-tr-f1-44": {
+  "t": "tr-metin",
+  "a": "C",
+  "o": 150044,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metin, “Yaban” romanını içerik (aydın-köylü kopukluğu, Anadolu gerçekliği) ve anlatım (keskin dil, mesafeli üslup) bakımından değerlendirip “değerlidir” yargısına varıyor.</li></ul><b>İstenen</b><p>Metnin türüyle ilgili söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Türü belirle</b> Bir edebî eserin olumlu ve olumsuz yönlerini değerlendirmek → <b>eleştiri</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bilimsel kanıt yok; makale değil.</td></tr><tr><td>B</td><td>Yazarın hayatı anlatılmıyor; biyografi değil.</td></tr><tr class=\"ok\"><td>C</td><td>Eser içerik ve anlatım bakımından değerlendirilmiş → eleştiri. Doğru.</td></tr><tr><td>D</td><td>Güncel bir konu değil; fıkra değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eleştiride bir eser (kitap, film, tablo) ele alınır, güçlü ve zayıf yönleri tartılır.</div><div class=\"sv-w\"><b>Tuzak:</b> Yazarın adının geçmesi biyografi demek değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 44. soru"
+ },
+ "mebit-tr-f1-45": {
+  "t": "tr-metin",
+  "a": "D",
+  "o": 150045,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Deneme: Kişisel görüşlerin kanıtlama amacı gütmeden, samimi üslupla yazıldığı tür. Makale: Bir düşüncenin nesnel veri ve kanıtlarla savunulduğu inceleme yazısı.</li></ul><b>İstenen</b><p>Deneme ya da makale örneği olmayan metin.</p></div><ol class=\"sv-s\"><li><b>Metinleri sına</b> A: Kitaplarla ilgili kişisel, samimi düşünceler → deneme. B: Sanatı çeşmeye benzeten kişisel bir düşünce yazısı → deneme. C: Yapay zekânın etkileri, nesnel ve terimli dil → makale.</li><li><b>D’yi incele</b> “Bugünkü yazımda…”, güncel bir konu, kısa ve kişisel köşe yazısı üslubu → <b>fıkra (köşe yazısı)</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Deneme.</td></tr><tr><td>B</td><td>Deneme.</td></tr><tr><td>C</td><td>Makale.</td></tr><tr class=\"ok\"><td>D</td><td>Güncel konuda köşe yazısı → deneme ya da makale değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bugünkü yazımda, geçen gün” gibi ifadeler gazete köşe yazısının (fıkranın) işaretidir.</div><div class=\"sv-w\"><b>Tuzak:</b> D kişisel görüş içerdiği için deneme sanılabilir; ama güncel bir konuyu gazete yazısı hâlinde ele alıyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 45. soru"
+ },
+ "mebit-tr-f1-46": {
+  "t": "tr-yazim",
+  "a": "B",
+  "o": 150046,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Numaralı sözcükler: (I) için de (II) yemekte (III) gezilerde (IV) ya da</li></ul><b>İstenen</b><p>Yazım yanlışı olan sözcük.</p></div><ol class=\"sv-s\"><li><b>Bağlaç “de”yi sına</b> Cümleden çıkarınca anlam bozulmuyorsa “de” bağlaçtır ve ayrı yazılır.</li><li><b>II’yi incele</b> “Domatesin girmediği yemek de yoktur.” → “de” çıkarılınca “yemek yoktur” anlamlı kalır → bağlaçtır, <b>ayrı</b> yazılmalı. Metinde “yemekte” bitişik yazılmış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“için de” → bağlaç, ayrı yazılmış. Doğru.</td></tr><tr class=\"ok\"><td>B</td><td>“yemekte” → “yemek de” olmalı. Yanlış.</td></tr><tr><td>C</td><td>“gezilerde” → bulunma eki (nerede?), bitişik. Doğru.</td></tr><tr><td>D</td><td>“ya da” → her zaman ayrı. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Bulunma eki (-de/-da/-te/-ta) “nerede?” sorusuna cevap verir; bağlaç “de” ise “dahi, bile, da” anlamı katar.</div><div class=\"sv-w\"><b>Tuzak:</b> “Yemekte” ilk okumada “yemekte (sofrada)” gibi anlamlı görünür; cümlenin anlamı ise “hiçbir yemek yoktur ki domates girmesin”dir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 46. soru"
+ },
+ "mebit-tr-f1-47": {
+  "t": "tr-yazim",
+  "a": "A",
+  "o": 150047,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Yazım yanlışı olan cümle.</p></div><ol class=\"sv-s\"><li><b>Birleşik fiilleri kontrol et</b> “Başvurmak” kalıplaşmış birleşik fiildir ve bitişik yazılır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>“baş vurmak” → “başvurmak” olmalı. Yanlış.</td></tr><tr><td>B</td><td>“Şuayip, tebrik” → doğru.</td></tr><tr><td>C</td><td>“Hafta sonu” → ayrı yazılır. Doğru.</td></tr><tr><td>D</td><td>“Yüksek lisans”, “gece gündüz” → ayrı yazılır. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ses düşmesi, kaynaşma ya da anlam kayması olan birleşik fiiller bitişik yazılır: başvurmak, vazgeçmek, kaybolmak.</div><div class=\"sv-w\"><b>Tuzak:</b> “Hafta sonu” ve “yüksek lisans” bitişik sanılabilir; ikisi de TDK’ye göre ayrı yazılır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 47. soru"
+ },
+ "mebit-tr-f1-48": {
+  "t": "tr-yazim",
+  "a": "B",
+  "o": 150048,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Birleşik fiillerin yazımında yanlışlık yapılan cümle.</p></div><ol class=\"sv-s\"><li><b>Birleşik fiilleri bul</b> A: seyretmek; B: vazgeçmek, ulaşıvermek; C: kaybetmek; D: varsaymak.</li><li><b>Kuralı uygula</b> “Vazgeçmek” kaynaşmış birleşik fiildir, bitişik yazılır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“seyrediyordu” → bitişik, doğru.</td></tr><tr class=\"ok\"><td>B</td><td>“vaz geçmeyip” → “vazgeçmeyip” olmalı. Yanlış.</td></tr><tr><td>C</td><td>“kaybetti” → bitişik, doğru.</td></tr><tr><td>D</td><td>“varsayarak” → bitişik, doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ses türemesi/düşmesi olanlar bitişik: seyretmek, kaybetmek, affetmek, vazgeçmek, varsaymak.</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki “ulaşıverdi” (tezlik fiili) doğru yazılmıştır; yanlış olan “vaz geçmeyip”tir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 48. soru"
+ },
+ "mebit-tr-f1-49": {
+  "t": "tr-yazim",
+  "a": "C",
+  "o": 150049,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kurallar: Satır sonunda kelime bölünebilir ama hece bölünemez. Satır sonunda ve başında tek harf bırakılmaz. Kesme işareti satır sonuna gelince yalnız kesme konur.</li></ul><b>İstenen</b><p>Satır sonunda yanlış bölünen kelime.</p></div><ol class=\"sv-s\"><li><b>Her bölünmeyi sına</b> A: Ankara’ / dan → kesme kuralı uygulanmış ✓. B: Türk- / çe → hece doğru ✓. C: müdafa- / a → satır başında tek harf “a” kalmış ✗. D: olağa- / nüstü → hece doğru ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kesme işaretiyle doğru bölünmüş.</td></tr><tr><td>B</td><td>Türk-çe → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Satır başında tek harf (a) kalmış → yanlış.</td></tr><tr><td>D</td><td>o-la-ğa-nüs-tü → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tek harflik hecesi olan kelimeyi o harften bölme: “müda-faa” gibi bölünmelidir.</div><div class=\"sv-w\"><b>Tuzak:</b> “Müdafaa” iki “a” ile yazılır; heceleri mü-da-fa-a’dır, son hece tek harftir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 49. soru"
+ },
+ "mebit-tr-f1-50": {
+  "t": "tr-yazim",
+  "a": "C",
+  "o": 150050,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Numaralı sözler: (I) MEB’in (II) Geleceğin Mucitleri Teknoloji Tasarım Sergisi (III) 23 Mayıs 2025’de (IV) yirmi yedi</li></ul><b>İstenen</b><p>Yazım yanlışı yapılan söz.</p></div><ol class=\"sv-s\"><li><b>Ek uyumunu kontrol et</b> Sayılara gelen ek, sayının okunuşuna göre getirilir: 2025 = “iki bin yirmi beş” → son ses “ş” (sert) → ek “-te” olmalı: <b>2025’te</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>MEB’in → kısaltmanın okunuşu “meb”; ek uygun. Doğru.</td></tr><tr><td>B</td><td>Sergi adı özel addır, her sözcük büyük harfle. Doğru.</td></tr><tr class=\"ok\"><td>C</td><td>2025’de → 2025’te olmalı. Yanlış.</td></tr><tr><td>D</td><td>“yirmi yedi” → sayılar ayrı yazılır. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sayıya ek getirmeden önce sayıyı yüksek sesle oku: beş’te, üç’te, dört’te; ama iki’de, yedi’de.</div><div class=\"sv-w\"><b>Tuzak:</b> “2025” yazılınca sona “5” görünür; ek, rakama değil okunuşa (beş) göre gelir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 50. soru"
+ },
+ "mebit-tr-f1-51": {
+  "t": "tr-yazim",
+  "a": "A",
+  "o": 150051,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Yazım yanlışı olan cümle.</p></div><ol class=\"sv-s\"><li><b>Büyük harf kuralı</b> Dil adlarında yalnızca özel ad olan kısım büyük yazılır: “Türk dili”, “Türk dilleri”. “Dili” sözcüğü özel adın parçası değildir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>“Türk Dili konuşan” → “Türk dili konuşan” olmalı. Yanlış.</td></tr><tr><td>B</td><td>İstanbul’dadır → doğru.</td></tr><tr><td>C</td><td>Ülke adları ve Türkiye’dir → doğru.</td></tr><tr><td>D</td><td>“Gayriresmî Budapeşte Zirvesi” özel ad (tırnak içinde), 20-21 Mayıs’ta → belirli tarih büyük harfle ve kesmeyle. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Türk Dil Kurumu” kurum adıdır (her sözcük büyük); “Türk dili” ise genel bir dil adıdır.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki büyük harfli “Zirvesi” özel bir toplantı adının parçasıdır, doğrudur.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 51. soru"
+ },
+ "mebit-tr-f1-52": {
+  "t": "tr-yazim",
+  "a": "C",
+  "o": 150052,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metinde: “…gönül de var”, “baş başa”, “az sayıda ki bu yerlerden birinde”, “yeryüzünde”</li></ul><b>İstenen</b><p>Yazım yanlışını giderecek düzeltme.</p></div><ol class=\"sv-s\"><li><b>“ki”yi sına</b> “Az sayıdaki bu yerler” → “ki” burada bir isme “-ki” ilgi eki olarak gelmiş (sayıda + ki = sayıdaki), sıfat yapıyor → <b>bitişik</b> yazılmalı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“gönül de” bağlaçtır (gönül dahi), ayrı yazımı doğru.</td></tr><tr><td>B</td><td>“baş başa” ayrı yazılır; doğru.</td></tr><tr class=\"ok\"><td>C</td><td>“az sayıda ki” → “az sayıdaki” olmalı. Düzeltme budur.</td></tr><tr><td>D</td><td>“yeryüzü” bitişik yazılır; doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “-ki” bulunma ekinden sonra gelip sıfat yapıyorsa bitişik: evdeki, sayıdaki, yarınki. Bağlaç “ki” ayrı: “Öyle yorgun ki…”.</div><div class=\"sv-w\"><b>Tuzak:</b> A’daki “gönül de” bağlaç olarak doğrudur; “Zihin ve gönül de var” = gönül dahi var.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 52. soru"
+ },
+ "mebit-tr-f1-53": {
+  "t": "tr-noktalama",
+  "a": "D",
+  "o": 150053,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Çiçeklerin solmasına kimin yüreği dayanır ( ) II. Sen mi kazandın birincilik ödülünü ( ) III. Genç adam şehir dışına mı çıkacakmış ( ) IV. Güneş dağların arkasından doğdu mu buralarda hayatın ritmi hemen değişir ( )</li></ul><b>İstenen</b><p>Sonuna soru işareti getirilemeyecek cümle.</p></div><ol class=\"sv-s\"><li><b>Soru anlamını ara</b> I “kimin” (soru sözcüğü, cevap beklemeyen soru) → ?. II “mi” → ?. III “mı” → ?. IV’teki “mu” soru bildirmiyor; “doğunca, doğduğunda” anlamında <b>zaman/koşul</b> bildiriyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Soru sözcüğü “kimin” → soru işareti.</td></tr><tr><td>B</td><td>Soru eki “mi” → soru işareti.</td></tr><tr><td>C</td><td>Soru eki “mı” → soru işareti.</td></tr><tr class=\"ok\"><td>D</td><td>“Doğdu mu” = doğunca → soru değil, nokta konur.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “mi” eki “-ınca/-dığında” anlamı katıyorsa soru işareti konmaz: “Yağmur yağdı mı sokaklar göl olur.”</div><div class=\"sv-w\"><b>Tuzak:</b> IV’te “mu” eki gördüğün için hemen soru işareti koyma; cümleye soru sorulmuyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 53. soru"
+ },
+ "mebit-tr-f1-54": {
+  "t": "tr-noktalama",
+  "a": "A",
+  "o": 150054,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Metindeki işaretler: “…oldukça ilginç bir yöntem kullanırlar<b>:</b> çevrelerine kimyasal maddeler salgılayarak…”, “…düşük kalır<b>;</b> bakteri sayısı arttığında…”, “<b>“</b>çoğunluğu algılama<b>”</b>”, “…nasıl gerçekleştirebiliyor<b>?</b>”</li></ul><b>İstenen</b><p>Kullanım amacıyla ilgili yanlış açıklama.</p></div><ol class=\"sv-s\"><li><b>İki noktanın görevi</b> İki noktadan sonra “ilginç yöntem”in ne olduğu <b>açıklanıyor</b>; örnek verilmiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İki nokta örnek için değil açıklama için kullanılmış → yanlış.</td></tr><tr><td>B</td><td>Noktalı virgül, içinde virgül bulunan sıralı cümleleri ayırmış → doğru.</td></tr><tr><td>C</td><td>Tırnak, özel olarak adlandırılan terimi vurgulamış → doğru.</td></tr><tr><td>D</td><td>Soru işareti soru sözü (nasıl) içeren cümlenin sonunda → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İki nokta: açıklama, örnek ya da aktarılan söz öncesi konur. Hangisi olduğunu iki noktadan sonrasına bakarak anla.</div><div class=\"sv-w\"><b>Tuzak:</b> Açıklama ile örnek karışır: “yöntem: salgılamak” bir tanımdır, “meyveler: elma, armut” bir örnektir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 54. soru"
+ },
+ "mebit-tr-f1-55": {
+  "t": "tr-noktalama",
+  "a": "C",
+  "o": 150055,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Örnek cümle: “Sabahın erken saatlerinde sis dağıldı<b>,</b> vadinin karşı yamacındaki köy evleri yavaş yavaş görünmeye başladı.”</li></ul><b>İstenen</b><p>Virgülün aynı görevde kullanıldığı cümle.</p></div><ol class=\"sv-s\"><li><b>Görevi bul</b> Virgül iki ayrı yargıyı (sis dağıldı / evler görünmeye başladı) birbirinden ayırıyor → <b>sıralı cümleleri ayırma</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Virgül, aynı ismi niteleyen sıfat öbeklerini ayırıyor.</td></tr><tr><td>B</td><td>Virgül, özneyi belirtmek için konmuş.</td></tr><tr class=\"ok\"><td>C</td><td>“Yağmur hafifliyor, tezgâhlar açılmaya başlanıyordu” → sıralı cümleleri ayırma. Aynı görev.</td></tr><tr><td>D</td><td>Virgül, hitaptan sonra konmuş.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Virgülden önce de sonra da çekimli bir yüklem varsa virgül sıralı cümleleri ayırıyordur.</div><div class=\"sv-w\"><b>Tuzak:</b> A’da da iki çekimli görünen yapı var gibidir; ama “çıkarılan” ve “görmediği” fiilimsidir, yüklem değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 55. soru"
+ },
+ "mebit-tr-f1-56": {
+  "t": "tr-noktalama",
+  "a": "B",
+  "o": 150056,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kural: Özel adlara getirilen yapım ekleri ve sonrasındaki ekler kesmeyle ayrılmaz.</li></ul><b>İstenen</b><p>Kesme işaretinin yanlış kullanıldığı cümle.</p></div><ol class=\"sv-s\"><li><b>B’yi incele</b> “Türkçe” = Türk + -çe (yapım eki). Yapım ekinden sonra gelen ekler kesmeyle ayrılmaz → <b>Türkçenin</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Türk Dil Kurumunun” → kurum adına gelen ek kesmesiz. Doğru.</td></tr><tr class=\"ok\"><td>B</td><td>“Türkçe’nin” → “Türkçenin” olmalı. Yanlış.</td></tr><tr><td>C</td><td>“Amik Ovamızın” → 3. kişi iyelik ekli özel ada başka iyelik eki gelince kesme konmaz. Doğru.</td></tr><tr><td>D</td><td>“Genç’in” → kişi adına gelen ek kesmeyle ayrılır. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Türkçe, Türkçenin, Türkçeyi, Türklük, Türkler → kesme yok (yapım ve çokluk eki).</div><div class=\"sv-w\"><b>Tuzak:</b> “Türkçe” özel bir ad gibi büyük harfle başlar; ama “-çe” yapım eki olduğu için kesme gelmez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 56. soru"
+ },
+ "mebit-tr-f1-57": {
+  "t": "tr-fiilimsi",
+  "a": "A",
+  "o": 150057,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“-ma, -ış, -mak” ekli bazı sözcükler zamanla kalıcı ad olur ve fiilimsi sayılmaz (ör. dondurma).</li></ul><b>İstenen</b><p>Kalıcı ad olmuş sözcüğün bulunduğu cümle.</p></div><ol class=\"sv-s\"><li><b>Kalıcı adı bul</b> “Yağış” → yağmur, kar gibi olayların adı; bir eylemi değil bir kavramı karşılıyor → kalıcı ad.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>“Yağış” → kalıcı ad. Örnek kullanım.</td></tr><tr><td>B</td><td>“Görüş” burada “görme” eylemini anlatıyor (görüş mesafesi = görebilme mesafesi) → fiilimsi.</td></tr><tr><td>C</td><td>“Geçiş” → kuşların geçmesi eylemi → fiilimsi; “gözleme” → gözlemleme işi (isim-fiil).</td></tr><tr><td>D</td><td>“Danışmaya” → danışma eylemi → isim-fiil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sözcük bir eylemi değil, bir nesne ya da kavramın adını karşılıyorsa kalıcı addır: dondurma, yağış, kazma, çakmak, giriş (kapı anlamında).</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki “görüş” bazen “düşünce” anlamında kalıcı addır; ama burada “görmek” eylemini bildirir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 57. soru"
+ },
+ "mebit-tr-f1-58": {
+  "t": "tr-fiilimsi",
+  "a": "D",
+  "o": 150058,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) nefesimizi tazele<b>me</b>nin (II) geliştir<b>me</b>ye (III) em<b>me</b>ye (IV) bulunup bulun<b>ma</b>dığı</li></ul><b>İstenen</b><p>“-ma/-me”nin farklı görevde kullanıldığı cümle.</p></div><ol class=\"sv-s\"><li><b>Eki sına</b> I, II, III’te ek fiilden isim yapıyor (tazeleme, geliştirme, emme) → isim-fiil eki. IV’te “bulunmadığı” = bulunmamak → olumsuzluk eki.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>tazeleme → isim-fiil.</td></tr><tr><td>B</td><td>geliştirme → isim-fiil.</td></tr><tr><td>C</td><td>emme → isim-fiil.</td></tr><tr class=\"ok\"><td>D</td><td>bulunmadığı → olumsuzluk eki. Farklı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ekten sonra cümleyi olumluya çevir: “bulunduğu” anlamca karşıt olursa ek olumsuzluk ekidir.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’teki sözcük de bir fiilimsidir (sıfat-fiil “-dığı”); ama “-ma” orada fiilimsi eki değil olumsuzluk ekidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 58. soru"
+ },
+ "mebit-tr-f1-59": {
+  "t": "tr-fiilimsi",
+  "a": "B",
+  "o": 150059,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>İsim-fiil kullanılan cümle.</p></div><ol class=\"sv-s\"><li><b>İsim-fiil eklerini ara</b> -ma/-me, -ış/-iş, -mak/-mek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“oynayan” (sıfat-fiil), “başlayınca” (zarf-fiil).</td></tr><tr class=\"ok\"><td>B</td><td>“buluşması” → buluş + ma + sı → isim-fiil.</td></tr><tr><td>C</td><td>“çalıştığı” (sıfat-fiil), “inceleyerek” (zarf-fiil).</td></tr><tr><td>D</td><td>“omuzlayıp”, “söylemeden” (zarf-fiil).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İsim-fiil eylemin adıdır: “buluşma” = buluşmak eylemi.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “söylemeden” içinde “-me” var ama “-meden” zarf-fiil ekidir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 59. soru"
+ },
+ "mebit-tr-f1-60": {
+  "t": "tr-fiilimsi",
+  "a": "B",
+  "o": 150060,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Geziye <b>gidecek</b> öğrenciler… II. Kelebeklerin <b>uçuşması</b>… III. Kendisine <b>sunulan</b> güzellikler… IV. Sınıfa <b>girer girmez</b>…</li></ul><b>İstenen</b><p>Fiilimsileri türce aynı olan cümleler.</p></div><ol class=\"sv-s\"><li><b>Türleri belirle</b> I: gidecek (-ecek) → sıfat-fiil. II: uçuşma → isim-fiil. III: sunulan (-an) → sıfat-fiil. IV: girer girmez → zarf-fiil.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sıfat-fiil / isim-fiil → farklı.</td></tr><tr class=\"ok\"><td>B</td><td>Sıfat-fiil / sıfat-fiil → özdeş.</td></tr><tr><td>C</td><td>İsim-fiil / zarf-fiil → farklı.</td></tr><tr><td>D</td><td>Sıfat-fiil / zarf-fiil → farklı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıfat-fiil ekleri: -an, -ası, -mez, -ar, -dik, -ecek, -miş. Arkasından gelen ismi niteler (gidecek öğrenciler).</div><div class=\"sv-w\"><b>Tuzak:</b> “Girer girmez” içindeki -ar/-mez sıfat-fiil eki gibi görünür; kalıp olarak “-ar -maz” zarf-fiildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 60. soru"
+ },
+ "mebit-tr-f1-62": {
+  "t": "tr-fiilimsi",
+  "a": "A",
+  "o": 150062,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Üç fiilimsi türünün bir arada kullanıldığı cümle.</p></div><ol class=\"sv-s\"><li><b>A’yı incele</b> anlamlandır<b>ma</b>ya → isim-fiil; çalış<b>ırken</b> → zarf-fiil; karşılaş<b>tığı</b> zorluklar → sıfat-fiil. Üçü de var.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>İsim-fiil + zarf-fiil + sıfat-fiil → doğru.</td></tr><tr><td>B</td><td>düşündüren, götüren (sıfat-fiil), yazmak (isim-fiil); zarf-fiil yok.</td></tr><tr><td>C</td><td>çıktığında, görünce (zarf-fiil), alkışlayan (sıfat-fiil); isim-fiil yok.</td></tr><tr><td>D</td><td>bakınca (zarf-fiil), yaşadığı (sıfat-fiil), değiştiğini (sıfat-fiil adlaşmış); isim-fiil yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her şıkta üç türü tek tek işaretle; eksik olan türü bul.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “değiştiğini” isim gibi kullanılmıştır ama eki “-dik” olduğu için sıfat-fiildir, isim-fiil değil.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 62. soru"
+ },
+ "mebit-tr-f1-63": {
+  "t": "tr-fiilimsi",
+  "a": "D",
+  "o": 150063,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Gelecek hafta düzenlenecek festival için hazırlıklar sürüyor. (II) Görevliler, sergilenecek ürünleri kontrol edip yerleştiriyor. (III) Katılacakların listesi açıklanınca heyecan yaşandı. (IV) Organizasyon ekibine göre bu festival ziyaretçilerin ilgisini çekecek.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Fiilimsileri bul</b> I: gelecek (hafta), düzenlenecek → iki sıfat-fiil. II: sergilenecek (sıfat-fiil), edip (zarf-fiil). III: katılacakların (adlaşmış sıfat-fiil), açıklanınca (zarf-fiil). IV: “çekecek” yüklemdir (çekimli fiil); başka fiilimsi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>gelecek, düzenlenecek → doğru.</td></tr><tr><td>B</td><td>sergilenecek + edip → doğru.</td></tr><tr><td>C</td><td>açıklanınca + katılacaklar → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>IV’te sıfat-fiil yok; “çekecek” çekimli yüklemdir. Söylenemez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cümlenin sonundaki “-ecek” ekli sözcük yüklemse fiilimsi değildir.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’teki “çekecek” fiilimsi ekine benzer; ama cümleyi bitiren çekimli fiildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 63. soru"
+ },
+ "mebit-tr-f1-64": {
+  "t": "tr-fiilimsi",
+  "a": "D",
+  "o": 150064,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Ağaç dikme etkinliği. (II) Önceden belirlenen alana gittiler. (III) Fidan dikimi için belirlenen bölgeye çukur açtılar. (IV) Fidanları açılan çukurlara yerleştirerek can suyu verdiler.</li></ul><b>İstenen</b><p>Zarf-fiil kullanılan cümle.</p></div><ol class=\"sv-s\"><li><b>Fiilimsileri bul</b> I: dikme → isim-fiil. II: belirlenen → sıfat-fiil. III: belirlenen → sıfat-fiil (dikim kalıcı addır). IV: açılan (sıfat-fiil), yerleştir<b>erek</b> → zarf-fiil.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnızca isim-fiil.</td></tr><tr><td>B</td><td>Yalnızca sıfat-fiil.</td></tr><tr><td>C</td><td>Sıfat-fiil.</td></tr><tr class=\"ok\"><td>D</td><td>“yerleştirerek” → zarf-fiil. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zarf-fiil ekleri: -ıp, -arak, -madan, -ınca, -ken, -dıkça, -alı, -r…-mez, -casına.</div><div class=\"sv-w\"><b>Tuzak:</b> “Dikim” sözcüğü fiilden türese de “-im” ekiyle kalıcı ad olmuştur; fiilimsi değildir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 64. soru"
+ },
+ "mebit-tr-f1-65": {
+  "t": "tr-fiilimsi",
+  "a": "B",
+  "o": 150065,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. işini yap<b>arken</b>…, hata yap<b>maktan</b> kaçınmalı. II. kitabı oku<b>yup</b> bitir<b>diğinde</b> … keşfetmiş gibi hissederdi. III. hava karar<b>madan</b> … dön<b>meyi</b> düşünüyorduk. IV. sen gid<b>erken</b> … gemiler kalkar.</li></ul><b>İstenen</b><p>Birden fazla zarf-fiil kullanılan cümle.</p></div><ol class=\"sv-s\"><li><b>Zarf-fiilleri say</b> I: yaparken (1); yapmaktan isim-fiil. II: okuyup, bitirdiğinde (2). III: kararmadan (1); dönmeyi isim-fiil. IV: giderken (1).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bir zarf-fiil.</td></tr><tr class=\"ok\"><td>B</td><td>İki zarf-fiil → doğru.</td></tr><tr><td>C</td><td>Bir zarf-fiil.</td></tr><tr><td>D</td><td>Bir zarf-fiil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “-dığında” (bitirdiğinde) “-dık + iyelik + bulunma eki” ile kurulur ve zarf-fiil gibi zaman bildirir.</div><div class=\"sv-w\"><b>Tuzak:</b> III’teki “dönmeyi” isim-fiildir; “-madan” ile karıştırma.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 65. soru"
+ },
+ "mebit-tr-f1-66": {
+  "t": "tr-fiilimsi",
+  "a": "C",
+  "o": 150066,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zarf-fiil cümleye zaman veya durum anlamı katabilir.</li></ul><b>İstenen</b><p>Zarf-fiilin farklı bir anlam kattığı cümle.</p></div><ol class=\"sv-s\"><li><b>Her zarf-fiile soru sor</b> A: çalınca → ne zaman? (zaman). B: çıkar çıkmaz → ne zaman? (zaman). C: konuşarak → nasıl? (durum). D: danıştı danışalı → ne zamandan beri? (zaman).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zaman.</td></tr><tr><td>B</td><td>Zaman.</td></tr><tr class=\"ok\"><td>C</td><td>Durum (nasıl?) → farklı.</td></tr><tr><td>D</td><td>Zaman.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Ne zaman?” → zaman; “Nasıl?” → durum. -arak, -ıp, -madan çoğu zaman durum bildirir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “-dı -alı” kalıbı seyrek görülür; anlamı “-dığından beri”dir, yani zamandır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 66. soru"
+ },
+ "mebit-tr-f1-68": {
+  "t": "tr-fiilimsi",
+  "a": "C",
+  "o": 150068,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zarf-fiil: Cümlede durum veya zaman bildiren fiilimsi.</li><li>(I) …uzaklaşmak için orman yoluna gir<b>ince</b>… (II) …ağır ağır yürü<b>yerek</b>… (III) Yaprakların arasından süzül<b>en</b> güneş ışınları beni takip ediyordu. (IV) Ormanda ilerle<b>rken</b>…</li></ul><b>İstenen</b><p>Zarf-fiil olmayan cümle.</p></div><ol class=\"sv-s\"><li><b>Fiilimsileri bul</b> I: uzaklaşmak (isim-fiil), girince (zarf-fiil). II: yürüyerek (zarf-fiil), karşılaştığım (sıfat-fiil). III: süzülen (sıfat-fiil), “ferahlatıcı” yok; zarf-fiil yok. IV: ilerlerken (zarf-fiil).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>girince → zarf-fiil var.</td></tr><tr><td>B</td><td>yürüyerek → zarf-fiil var.</td></tr><tr class=\"ok\"><td>C</td><td>Yalnızca sıfat-fiil (süzülen) → zarf-fiil yok.</td></tr><tr><td>D</td><td>ilerlerken → zarf-fiil var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “-an/-en” ekli sözcük arkasındaki ismi niteliyorsa (süzülen ışınlar) sıfat-fiildir.</div><div class=\"sv-w\"><b>Tuzak:</b> III’teki “şeklinde” bir zarf gibi görünür; ama fiilimsi değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 68. soru"
+ },
+ "mebit-tr-f1-69": {
+  "t": "tr-ogeler",
+  "a": "B",
+  "o": 150069,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zarf tamlayıcısı (zarf tümleci): Yüklemi zaman, durum, miktar, sebep, amaç, yön gibi anlamlarla tamamlayan öge.</li></ul><b>İstenen</b><p>Zarf tamlayıcısı olmayan cümle.</p></div><ol class=\"sv-s\"><li><b>Ögelere ayır</b> I: Mahallemizdeki parkta (DT) / gönüllülerin desteğiyle (ZT, nasıl?) / fidan dikme etkinliği (Ö) / düzenlendi. II: Belediye ekipleri (Ö) / dün akşamdan hazırladıkları fidanları (N) / parkın girişine (DT) / getirdi. III: Gönüllüler (Ö) / gün doğarken (ZT) / … alanda (DT) / toplandı. IV: Herkes (Ö) / … fidanları (N) / dikkatlice (ZT) / toprağa (DT) / yerleştirdi.</li><li><b>II’ye dikkat</b> “dün akşamdan” tek başına zaman bildirir ama “hazırladıkları fidanları” nesnesinin içinde kalıyor; yüklemi değil fiilimsiyi niteliyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“desteğiyle” → zarf tümleci var.</td></tr><tr class=\"ok\"><td>B</td><td>Zarf tümleci yok.</td></tr><tr><td>C</td><td>“gün doğarken” → zarf tümleci var.</td></tr><tr><td>D</td><td>“dikkatlice” → zarf tümleci var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zaman sözcüğü bir sıfat-fiil grubunun içindeyse ayrı öge olamaz; grubun tamamı tek öge sayılır.</div><div class=\"sv-w\"><b>Tuzak:</b> II’deki “dün akşamdan” seni zarf tümleci var sanmaya iter; yükleme “ne zaman getirdi?” diye sor: cevap yok.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 69. soru"
+ },
+ "mebit-tr-f1-70": {
+  "t": "tr-ogeler",
+  "a": "C",
+  "o": 150070,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ara söz: Bir ögeyi açıklamak için iki virgül ya da iki kısa çizgi arasında kullanılan söz.</li></ul><b>İstenen</b><p>Ara sözün farklı ögeyi açıkladığı cümle.</p></div><ol class=\"sv-s\"><li><b>Ara sözün hangi ögeyi açıkladığını bul</b> A: “bu eski konağı” (nesne) → çocukluğunun geçtiği ev. B: “çiçekleri” (nesne) → kırmızı güller. C: “Matematik öğretmenimiz” (özne) → okulun en sevilen eğitimcisi. D: “belgeyi” (nesne) → hastane raporu.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Nesneyi açıklıyor.</td></tr><tr><td>B</td><td>Nesneyi açıklıyor.</td></tr><tr class=\"ok\"><td>C</td><td>Özneyi açıklıyor → farklı.</td></tr><tr><td>D</td><td>Nesneyi açıklıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ara söz kendinden önceki ögeyi açıklar; açıklanan sözcüğe yükleme göre “kim/ne?” sorusunu sor.</div><div class=\"sv-w\"><b>Tuzak:</b> Ara söz kendi başına öge sayılmaz; açıkladığı ögenin parçasıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 70. soru"
+ },
+ "mebit-tr-f1-71": {
+  "t": "tr-ogeler",
+  "a": "D",
+  "o": 150071,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Temel ögeler: yüklem ve özne.</li></ul><b>İstenen</b><p>Yalnızca temel ögelerden oluşan cümle.</p></div><ol class=\"sv-s\"><li><b>Ögelere ayır</b> A: kişi (Ö), 1 saniyede… alarak (ZT), hattı (N), tamamlıyor. B: (özne gizli “onlar”), parkurlar (N), inşa ettiler. C: (biz), süzülmeye… ulaşmaya (DT), hazırdık. D: Mağaracılık deneyimi yaşamak, dalış yapmak ya da yüzmek (Ö) / etkinliklerden birkaçıdır (Y).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Zarf tümleci ve nesne var.</td></tr><tr><td>B</td><td>Nesne var.</td></tr><tr><td>C</td><td>Dolaylı tümleç var.</td></tr><tr class=\"ok\"><td>D</td><td>Yalnızca özne + yüklem.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İsim cümlelerinde (-dır/-dir) çoğu zaman yalnızca özne ve yüklem bulunur.</div><div class=\"sv-w\"><b>Tuzak:</b> D çok uzun olduğu için çok ögeli sanılabilir; uzun bölüm tek bir öznedir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 71. soru"
+ },
+ "mebit-tr-f1-72": {
+  "t": "tr-ogeler",
+  "a": "A",
+  "o": 150072,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Genellikle gece çalışmayı severdi. (II) Sessizlik, çalışırken ihtiyaç duyduğu en önemli şeydi. (III) Ev halkının uyumasını fırsat bilerek çalışmaya koyulurdu. (IV) Birçok eser ortaya çıkarmasının sırrı buydu.</li></ul><b>İstenen</b><p>Nesne bulunan cümle.</p></div><ol class=\"sv-s\"><li><b>Yükleme “neyi?” sor</b> I: neyi severdi? → “gece çalışmayı” → belirtili nesne.</li><li><b>Diğerleri</b> II ve IV isim cümlesidir (Ö + Y). III: “ev halkının uyumasını fırsat bilerek” bir zarf-fiil grubu (ZT); “çalışmaya” dolaylı tümleç.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>“gece çalışmayı” → nesne.</td></tr><tr><td>B</td><td>Özne + yüklem.</td></tr><tr><td>C</td><td>Grup içinde “uyumasını” var ama öge olarak ZT’nin parçası; nesne yok.</td></tr><tr><td>D</td><td>Özne + yüklem.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fiilimsi grubunun içindeki nesne cümlenin nesnesi sayılmaz.</div><div class=\"sv-w\"><b>Tuzak:</b> III’teki “-ı” hâl ekli sözcüğü nesne sanma; o, “bilerek” zarf-fiilinin nesnesidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 72. soru"
+ },
+ "mebit-tr-f1-73": {
+  "t": "tr-ogeler",
+  "a": "B",
+  "o": 150073,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Örnek cümle: Yazar (Ö) / … yazarların asıl yüzünü (BN) / en gerçekçi biçimde (ZT) / gözler önüne serer (Y).</li></ul><b>İstenen</b><p>Öge sıralaması aynı olan cümle.</p></div><ol class=\"sv-s\"><li><b>Diziliş</b> Özne – Nesne – Zarf tümleci – Yüklem.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yönetmen (Ö) / adaletsizliği (N) / son kısa filminde (DT) / çarpıcı bir şekilde (ZT) / anlatıyor → Ö-N-DT-ZT-Y.</td></tr><tr class=\"ok\"><td>B</td><td>Ünlü ressam (Ö) / … renkleri (N) / büyük bir ustalıkla (ZT) / harmanlamış → Ö-N-ZT-Y. Aynı.</td></tr><tr><td>C</td><td>… dağlar (Ö) / … çiçeği (N) / bağrına (DT) / basar → Ö-N-DT-Y.</td></tr><tr><td>D</td><td>Nurullah Genç (Ö) / şiirlerinde (DT) / … sokakları (N) / sıkça (ZT) / dile getirirdi → Ö-DT-N-ZT-Y.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce yüklemi bul, sonra sırayla “kim, neyi, nerede/nereye, nasıl/ne zaman” sor.</div><div class=\"sv-w\"><b>Tuzak:</b> “Gözler önüne serer” deyim olduğu için “gözler önüne” ayrı bir dolaylı tümleç değildir; yüklemin parçasıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 73. soru"
+ },
+ "mebit-tr-f1-74": {
+  "t": "tr-ogeler",
+  "a": "D",
+  "o": 150074,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Bölgedeki sessizlik (Ö) / uzaktan gelen tren sesiyle (ZT) / bir anda (ZT) / bozuldu.</li><li>II. … girdikten sonra (ZT) / yolcular (Ö) / hızlıca (ZT) / gişeye (DT) / yöneldi. III. Soğuk kış günleri (Ö) / … parkını (N) / tamamen (ZT) / ıssızlaştırdı. IV. Akarsular (Ö) / yeryüzünü (N) / milyonlarca yıldır (ZT) / aşındırıyor.</li></ul><b>İstenen</b><p>Öge dizilişi aynı olan cümleler.</p></div><ol class=\"sv-s\"><li><b>Dizilişleri yaz</b> I: Ö-ZT-ZT-Y. II: ZT-Ö-ZT-DT-Y. III: Ö-N-ZT-Y. IV: Ö-N-ZT-Y.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I ve II farklı.</td></tr><tr><td>B</td><td>I ve III farklı.</td></tr><tr><td>C</td><td>II ve IV farklı.</td></tr><tr class=\"ok\"><td>D</td><td>III ve IV → Ö-N-ZT-Y, aynı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Öge dizilişi karşılaştırırken sıfat tamlamalarını (soğuk kış günleri, dünyamızdaki akarsular) tek öge olarak al.</div><div class=\"sv-w\"><b>Tuzak:</b> I’de “tren sesiyle” vasıta bildirir ve zarf tümlecidir; dolaylı tümleç sanma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 74. soru"
+ },
+ "mebit-tr-f1-75": {
+  "t": "tr-ogeler",
+  "a": "D",
+  "o": 150075,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(IV) Su kemerleri / nehirlerin veya göllerin suyunu şehirlere ve kasabalara taşıyan / taştan yapılmış uzun su yollarıydı.</li></ul><b>İstenen</b><p>Ögelere ayırmada yanlışlık yapılan cümle.</p></div><ol class=\"sv-s\"><li><b>IV’ü incele</b> Yüklem “su yollarıydı”dır. “Nehirlerin… taşıyan taştan yapılmış uzun su yolları” bütünüyle bir sıfat tamlamasıdır; tamamı yükleme aittir, bölünemez.</li><li><b>Doğru ayırma</b> Su kemerleri (Ö) / nehirlerin veya göllerin suyunu… taşıyan taştan yapılmış uzun su yollarıydı (Y).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Romalılar (Ö) / … konusunda (ZT) / uzmandı (Y) → doğru.</td></tr><tr><td>B</td><td>İmparatorluklarında (DT) / binlerce kilometre yol (N) / inşa ettiler → doğru.</td></tr><tr><td>C</td><td>… dönemde (ZT) / büyük su kemerleri (N) / yaptılar → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Sıfat-fiil grubu yüklemden ayrılmış → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıfat-fiil grubu, nitelediği isimle birlikte tek öge olur.</div><div class=\"sv-w\"><b>Tuzak:</b> IV’teki uzun grup ayrı bir öge gibi görünür; ama “su yolları” ismini nitelediği için yüklemin parçasıdır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 75. soru"
+ },
+ "mebit-tr-f1-76": {
+  "t": "tr-ogeler",
+  "a": "A",
+  "o": 150076,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Vurgulanan öge: Kurallı cümlede yüklemden hemen önceki, devrik cümlede de yüklemden hemen önceki öge.</li></ul><b>İstenen</b><p>Vurgulanan ögesi farklı olan cümle.</p></div><ol class=\"sv-s\"><li><b>Yüklemden önceki ögeyi bul</b> A: “en güzel giysilerini” (kuşanırlardı) → nesne. B: “kapıya” (taktı) → dolaylı tümleç. C (devrik): “eski taş köprünün yanında” (buluşurdu) → dolaylı tümleç. D: “kalabalıktan” (sıyrıldım) → dolaylı tümleç.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Nesne → farklı.</td></tr><tr><td>B</td><td>Dolaylı tümleç.</td></tr><tr><td>C</td><td>Dolaylı tümleç.</td></tr><tr><td>D</td><td>Dolaylı tümleç.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Devrik cümlede yüklemden sonraki ögeler vurguyu almaz; yüklemden önceki öge vurgulanır.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de “büyük bir dikkatle” de yükleme yakındır; ama yüklemden hemen önce “kapıya” gelir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 76. soru"
+ },
+ "mebit-tr-f1-77": {
+  "t": "tr-sozelmantik",
+  "a": "B",
+  "o": 150077,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ali, Burcu, Cem, Deniz, Ece; yerler: bilim merkezi, tarih müzesi, akvaryum, botanik bahçesi, hayvanat bahçesi (herkes farklı).</li><li>Ali akvaryum ve hayvanat bahçesine gitmedi. Burcu ile Cem’den biri tarih müzesi, diğeri botanik bahçesi. Ece akvaryuma gitmedi.</li></ul><b>İstenen</b><p>Kesin olarak söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Ali</b> Tarih ve botanik Burcu-Cem’in; akvaryum ve hayvanat yasak → Ali = <b>bilim merkezi</b>.</li><li><b>Kalanlar</b> Akvaryum ve hayvanat Deniz ile Ece’ye kalır. Ece akvaryuma gitmedi → Ece = <b>hayvanat</b>, Deniz = <b>akvaryum</b>.</li><li><b>Burcu-Cem</b> Hangisinin tarih, hangisinin botanik olduğu belirsiz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ali bilim merkezi → kesin.</td></tr><tr class=\"ok\"><td>B</td><td>Cem botanik olabilir de olmayabilir de → kesin değil.</td></tr><tr><td>C</td><td>Deniz akvaryum → kesin.</td></tr><tr><td>D</td><td>Ece hayvanat → kesin.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce en çok kısıtlanan kişiyi (Ali) yerleştir; gerisi kendiliğinden çözülür.</div><div class=\"sv-w\"><b>Tuzak:</b> “Kesin söylenemez” sorusunda iki ihtimalli kalan bilgiyi ara.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 77. soru"
+ },
+ "mebit-tr-f1-78": {
+  "t": "tr-sozelmantik",
+  "a": "A",
+  "o": 150078,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>8 çiçek: gül, karanfil, lale, menekşe, nergis, orkide, papatya, sümbül.</li><li>Lale 5. sırada. Orkide ile karanfil arasında yalnızca sümbül var. Gül, menekşeden hemen sonra. Papatya karanfilden sonra, menekşeden önce. Nergis son sırada değil.</li></ul><b>İstenen</b><p>Art arda tanıtılmış olamayacak çiçekler.</p></div><ol class=\"sv-s\"><li><b>Sonu yerleştir</b> Menekşe-gül ikilisi papatyadan sonra gelmeli ve nergis sonda olamaz → menekşe 7, gül 8.</li><li><b>Kalan yerler</b> 1-4 ve 6. sıralar; papatya karanfilden sonra, orkide-sümbül-karanfil üçlüsü art arda (1-2-3 ya da 2-3-4). Örnek dizilişler: karanfil-sümbül-orkide-nergis-<b>lale</b>-papatya-menekşe-gül; orkide-sümbül-karanfil-papatya-<b>lale</b>-nergis-menekşe-gül.</li><li><b>Şıkları sına</b> Lale 5, menekşe 7 → aralarında hep bir çiçek (6. sıra) var; asla art arda olamazlar.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Lale (5) ile menekşe (7) → art arda olamaz.</td></tr><tr><td>B</td><td>Lale-nergis → nergis 4 ya da 6 olabilir; olabilir.</td></tr><tr><td>C</td><td>Karanfil 3 – papatya 4 olabilir.</td></tr><tr><td>D</td><td>Orkide 4 – lale 5 olabilir: nergis-karanfil-sümbül-orkide-lale-papatya-menekşe-gül.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kesin konumları (lale 5, menekşe 7, gül 8) önce sabitle.</div><div class=\"sv-w\"><b>Tuzak:</b> Menekşe-gülü 6-7’ye koyarsan nergis 8’e düşer; bu yasak olduğu için menekşe 7 olmak zorunda.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 78. soru"
+ },
+ "mebit-tr-f1-79": {
+  "t": "tr-sozelmantik",
+  "a": "C",
+  "o": 150079,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo (başlangıç, 1. saat bırakılan/alınan, 2. saat bırakılan/alınan): Akdeğirmen 18, 12/7, 6/11; Kazancılar 24, 8/14, 10/5; Kümbet 15, 13/4, 5/12; Mevlana 21, 7/9, 11/6.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>1. saat sonu</b> Akdeğirmen 18+12−7 = 23; Kazancılar 24+8−14 = 18; Kümbet 15+13−4 = 24; Mevlana 21+7−9 = 19.</li><li><b>2. saat sonu</b> Akdeğirmen 23+6−11 = 18; Kazancılar 18+10−5 = 23; Kümbet 24+5−12 = 17; Mevlana 19+11−6 = 24.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Başta en az Kümbet (15), sonda da en az Kümbet (17) → doğru.</td></tr><tr><td>B</td><td>Akdeğirmen + Kümbet = 35; Kazancılar + Mevlana = 47 → 35 &lt; 47, doğru.</td></tr><tr class=\"ok\"><td>C</td><td>1. saat sonunda en fazla Kümbet (24), 2. saat sonunda Mevlana (24) → aynı değil. Yanlış.</td></tr><tr><td>D</td><td>1. saatte azalan: Kazancılar, Mevlana; 2. saatte ikisi de arttı (23, 24) → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her saat için “önceki + bırakılan − alınan” hesabını tabloya yazarak ilerle.</div><div class=\"sv-w\"><b>Tuzak:</b> C’de iki istasyon da 24’e ulaştığı için “aynı” sanılabilir; sayı aynı, istasyon farklı.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 79. soru"
+ },
+ "mebit-tr-f1-80": {
+  "t": "tr-sozelmantik",
+  "a": "D",
+  "o": 150080,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>1. soru (basılı/elektronik): Ortaokul %64 / %36; lise %58 / %42.</li><li>2. soru (çalışma saatleri yeterli mi?): Ortaokul evet %46, hayır %54; lise evet %57, hayır %43.</li></ul><b>İstenen</b><p>Sonuçları doğru yansıtan yargı.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> A: Basılı farkı 64−58 = 6 ✓; “hayır” farkı 54−43 = 11 ✗. B: Elektronik lisede yüksek ✓; ama öğrenci <b>sayısı</b> verilmemiş, yalnızca yüzde var ✗. C: Kitap farkı ortaokul 28, lise 16 ✓; evet-hayır farkı ortaokul 8, lise 14 ✗. D: Basılı her iki grupta çoğunluk ✓; yeterli bulanlar yalnız lisede %50’nin üstünde ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İkinci kısım yanlış (fark 11).</td></tr><tr><td>B</td><td>Yüzdeden sayı çıkmaz.</td></tr><tr><td>C</td><td>İkinci kısım yanlış (lisede fark daha büyük).</td></tr><tr class=\"ok\"><td>D</td><td>İki kısım da doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yüzde grafiklerinden kişi sayısı karşılaştırılamaz; grupların büyüklüğü bilinmez.</div><div class=\"sv-w\"><b>Tuzak:</b> B’nin ilk yarısı doğrudur; ikinci yarısı “sayı” dediği için yanlıştır.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 80. soru"
+ },
+ "mebit-tr-f1-81": {
+  "t": "tr-sozelmantik",
+  "a": "A",
+  "o": 150081,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tabloda 9 atölyenin 12 ay boyunca temel program (turuncu), yoğunlaştırılmış program (yeşil) ya da program yok (−) durumu var.</li></ul><b>İstenen</b><p>Ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Eylül sütununa bak</b> Robotik, masal anlatıcılığı ve resim üçü de Eylül’de turuncu (temel program).</li><li><b>Diğerlerini sına</b> B: Tiyatroda temel program 3 ayda (Ocak, Mayıs, Ekim) → uygulanmayan 9 ay; seramikte temel program 2 ayda (Mart, Temmuz) → uygulanmayan 10 ay. 9 &gt; 10 değil ✗. C: Yoğunlaştırılmış: Ocak 4 (robotik, müzik, resim, satranç), Şubat 5, Mart 5 → düzenli artış yok ✗. D: Yoğunlaştırılmış aylar fotoğrafçılık Mart-Nisan-Mayıs, seramik Nisan-Mayıs-Haziran, dans Mayıs-Haziran-Temmuz → ortak yalnız Mayıs ✗.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Eylül’de üçü de temel program → doğru.</td></tr><tr><td>B</td><td>Tiyatro 9 &lt; seramik 10.</td></tr><tr><td>C</td><td>4 → 5 → 5; düzenli artmıyor.</td></tr><tr><td>D</td><td>Ortak ay yalnızca Mayıs.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tablo sorularında her şık için ilgili satır ve sütunları tek tek say.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de “temel program uygulanmayan” aylara yoğunlaştırılmış ve boş aylar birlikte girer.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 81. soru"
+ },
+ "mebit-tr-f1-82": {
+  "t": "tr-sozelmantik",
+  "a": "B",
+  "o": 150082,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Gün başı stok; öğleye kadar satılan/getirilen; akşama kadar satılan/getirilen: A 50; 20/30; 50/20 — B 40; 15/25; 30/10 — C 60; 30/10; 20/40 — Ç 45; 20/30; 15/10.</li></ul><b>İstenen</b><p>Gün sonunda kalan ürün sayılarını doğru gösteren grafik.</p></div><ol class=\"sv-s\"><li><b>Hesapla</b> A: 50 − 20 + 30 − 50 + 20 = <b>30</b>. B: 40 − 15 + 25 − 30 + 10 = <b>30</b>. C: 60 − 30 + 10 − 20 + 40 = <b>60</b>. Ç: 45 − 20 + 30 − 15 + 10 = <b>50</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>B ürünü 40 gösterilmiş; yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>30 – 30 – 60 – 50 → doğru.</td></tr><tr><td>C</td><td>C 50, Ç 60 gösterilmiş; yanlış.</td></tr><tr><td>D</td><td>A 40 gösterilmiş; yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Stok = başlangıç − satılan + getirilen. Her ürün için tek satırda hesapla.</div><div class=\"sv-w\"><b>Tuzak:</b> “Satıldı” azaltır, “getirildi” artırır; yönleri karıştırma.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 82. soru"
+ },
+ "mebit-tr-f1-83": {
+  "t": "tr-sozelmantik",
+  "a": "B",
+  "o": 150083,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Bir önceki aya göre: defter %5, kalem −%6, çanta %12. Bir önceki yıla göre: defter %60, kalem %40, çanta %85.</li></ul><b>İstenen</b><p>Yanlış değerlendirme.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> A: Yıllık en fazla artış çanta (%85) ✓. B: Kalemin aylık düşüşü %6, defterin aylık artışı %5 → 6 &gt; 5; “azdır” yanlış ✗. C: Aylık en fazla artış çanta (%12) ✓. D: Defter %60 &gt; kalem %40 ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru.</td></tr><tr class=\"ok\"><td>B</td><td>6 &gt; 5 olduğu için yanlış.</td></tr><tr><td>C</td><td>Doğru.</td></tr><tr><td>D</td><td>Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Eksi değer düşüş demektir; düşüş “oranı” karşılaştırılırken mutlak değerine (6) bak.</div><div class=\"sv-w\"><b>Tuzak:</b> −6 sayısı 5’ten küçüktür; ama düşüş oranı 6’dır ve 5’ten büyüktür.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 83. soru"
+ },
+ "mebit-tr-f1-84": {
+  "t": "tr-sozelmantik",
+  "a": "D",
+  "o": 150084,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Grafikte her türün nemli (mavi) ve kuru (turuncu) ortamdaki gelişim süresi dağılımı var; renkli alanın en geniş noktası, en çok örneğin gelişimini tamamladığı süredir.</li><li>En geniş noktalar (yaklaşık): K nemli 18, kuru 14; L nemli 10, kuru 20; M nemli 15, kuru 15; N nemli 20, kuru 10 gün.</li></ul><b>İstenen</b><p>Kesinlikle ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Şıkları sına</b> A: K’de kuru (14) nemliden (18) kısa ✗. B: L kuru (20) &gt; K nemli (18) ✗. C: M’de süreler eşit ama başka türlerden hızlı değil (ör. L nemli 10, N kuru 10) ✗. D: Nemlide en uzun N (20); kuruda en kısa da N (10) ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>K için yanlış.</td></tr><tr><td>B</td><td>L’nin kuru süresi daha uzun.</td></tr><tr><td>C</td><td>“Eşit” doğru ama “daha hızlı” yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>N türü → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her türün mavi ve turuncu alanının en şişkin noktasını y ekseninde oku, küçük bir tablo yap.</div><div class=\"sv-w\"><b>Tuzak:</b> Grafikte alanın uzunluğu değil, en geniş noktası önemlidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 84. soru"
+ },
+ "mebit-tr-f1-85": {
+  "t": "tr-sozelmantik",
+  "a": "D",
+  "o": 150085,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>15 alan; komşuluk: aynı sütunda ardışık, aynı satırda yan yana alanlar ve çaprazlar (15-9, 10-4, 14-8, 9-3, 13-7, 8-2, 12-6, 7-1).</li><li>3 kayısı (7, 8, 14), 3 armut, 2 kiraz, 4 erik, 3 elma. Komşu olamaz: elma-erik, elma-kiraz, erik-kayısı.</li></ul><b>İstenen</b><p>Yanlış yargı.</p></div><ol class=\"sv-s\"><li><b>Eriği yerleştir</b> Erik, kayısıya (7, 8, 14) komşu olamaz. 7, 8, 14’e komşu olmayan alanlar: 4, 5, 10, 11 (ve armut gerektiren yerler). 4 erik → <b>4, 5, 10, 11</b>.</li><li><b>Elma ve kiraz</b> Elma eriğe ve kiraza komşu olamaz → elma 1, 2, 13. Kiraz eriğe komşu olabilir, elmaya olamaz → kiraz 9 ve 15. Kalan 3, 6, 12 → armut.</li><li><b>Şıkları sına</b> A: 4 ve 10 erik ✓. B: Kirazlar 9 ve 15, çaprazla komşu ✓. C: 1, 2, 13 elma ✓. D: 3 ve 12 ikisi de armut → “farklı” yanlış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Doğru.</td></tr><tr><td>B</td><td>Doğru.</td></tr><tr><td>C</td><td>Doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Aynı tür (armut) → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> En çok kısıtlanan fidanı (erik: hem elma hem kayısıyla komşu olamaz) önce yerleştir.</div><div class=\"sv-w\"><b>Tuzak:</b> Çapraz çizgileri unutursan 9 ile 15’in komşu olduğunu kaçırırsın.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 85. soru"
  }
 });
