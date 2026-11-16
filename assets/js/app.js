@@ -569,7 +569,9 @@
      HATIRLATICI (aralıklı tekrar kuyruğu)
      ========================================================= */
   function remDays() { var n = +jget(RDKEY, 3); return n >= 1 && n <= 60 ? n : 3; }
-  function remList() { return jget(RKEY, []); }
+  // Kapsam dışı olduğu için siteden çıkarılan çıkmış sorular (LGS.pastDrop): hatırlatıcı kuyruğunda kaldıysa sessizce düşer (EXP'ye dokunulmaz)
+  var PDROP = {}; (LGS.pastDrop || []).forEach(function (id) { PDROP['p:' + id] = 1; });
+  function remList() { var l = jget(RKEY, []), m = l.filter(function (x) { return !PDROP[x.key]; }); if (m.length !== l.length) jset(RKEY, m); return m; }
   function remAdd(tid, key) {
     var l = remList();
     for (var i = 0; i < l.length; i++) if (l[i].tid === tid && l[i].key === key) return;

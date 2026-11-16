@@ -1,9 +1,10 @@
 window.LGS = {
-  version: 102,
-  xpMax: 781740,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
+  version: 103,
+  xpMax: 781420,          // tüm sorular 4 kez doğru çözülünce toplanan EXP (100. seviye)
   examDate: '2027-06-13', // LGS 2027 resmi tarih: 13 Haziran 2027 Pazar (MEB, 30.10.2026) https://www.meb.gov.tr/lgs-kapsamindaki-merkezi-sinavin-tarihi-belli-oldu/haber/42348/tr
   topics: {},
   past: {},
+  pastDrop: ['2018-fen-2', '2018-fen-9', '2018-fen-10', '2018-din-6'], // güncel 8. sınıf programında olmadığı için çıkarılan çıkmışlar (2018 LGS eski 2010-2013 programıyla yapıldı); app.js hatırlatıcıdan temizler
   pastLoaded: {},
   meb: {},
   mebLoaded: {},
