@@ -132,6 +132,12 @@ if (cmd === 'list') {
 } else if (cmd === 'apply') {
   const force = args.includes('--force'); let nOk = 0, bad = 0;
   global.m = t => '<span class="sv-m">' + t + '</span>';
+  global.ms = (...a) => a.map(global.m).join('');
+  // Yeni çözüm kalıbı: SV({ given: [..], asked, idea, steps: [[başlık, içerik], ..], figs: [[svg, alt yazı], ..], tip, trap, ans })
+  global.SV = o => '<div class="sv"><div class="sv-g"><b>Verilen</b> <ul>' + o.given.map(g => '<li>' + g + '</li>').join(' ') + '</ul><b>İstenen</b><p>' + o.asked + '</p></div>' +
+    '<div class="sv-i"><b>Ana fikir:</b> ' + o.idea + '</div><ol class="sv-s">' + o.steps.map(s => '<li><b>' + s[0] + '</b> ' + s[1] + '</li>').join(' ') + '</ol>' +
+    (o.figs || []).map(f => '<figure class="sv-f">' + f[0] + '<figcaption>' + f[1] + '</figcaption></figure>').join('') +
+    (o.tip ? '<div class="sv-t"><b>Püf nokta:</b> ' + o.tip + '</div>' : '') + '<div class="sv-w"><b>Tuzak:</b> ' + o.trap + '</div><div class="sv-a">Cevap <b>' + o.ans + '</b></div></div>';
   global.P = (konu, cat, obj) => {
     const st = store(konu, cat), alt = {};
     for (const id in obj) {
