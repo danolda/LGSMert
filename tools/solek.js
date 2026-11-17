@@ -133,6 +133,8 @@ if (cmd === 'list') {
   const force = args.includes('--force'); let nOk = 0, bad = 0;
   global.m = t => '<span class="sv-m">' + t + '</span>';
   global.ms = (...a) => a.map(global.m).join('');
+  // MEB anahtarları için kısayol: X('meb-mat-u3-', { 12: 'ana fikir', ... }) → { 'meb-mat-u3-12': { i: ... } }
+  global.X = (pre, o) => { const r = {}; for (const k in o) r[pre + k] = typeof o[k] === 'string' ? { i: o[k] } : o[k]; return r; };
   // Yeni çözüm kalıbı: SV({ given: [..], asked, idea, steps: [[başlık, içerik], ..], figs: [[svg, alt yazı], ..], tip, trap, ans })
   global.SV = o => '<div class="sv"><div class="sv-g"><b>Verilen</b> <ul>' + o.given.map(g => '<li>' + g + '</li>').join(' ') + '</ul><b>İstenen</b><p>' + o.asked + '</p></div>' +
     '<div class="sv-i"><b>Ana fikir:</b> ' + o.idea + '</div><ol class="sv-s">' + o.steps.map(s => '<li><b>' + s[0] + '</b> ' + s[1] + '</li>').join(' ') + '</ol>' +
