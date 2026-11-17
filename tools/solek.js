@@ -135,10 +135,11 @@ if (cmd === 'list') {
   global.ms = (...a) => a.map(global.m).join('');
   // MEB anahtarları için kısayol: X('meb-mat-u3-', { 12: 'ana fikir', ... }) → { 'meb-mat-u3-12': { i: ... } }
   global.X = (pre, o) => { const r = {}; for (const k in o) r[pre + k] = typeof o[k] === 'string' ? { i: o[k] } : o[k]; return r; };
-  // Yeni çözüm kalıbı: SV({ given: [..], asked, idea, steps: [[başlık, içerik], ..], figs: [[svg, alt yazı], ..], tip, trap, ans })
+  // Yeni çözüm kalıbı: SV({ given: [..], asked, idea, steps: [[başlık, içerik], ..], figs: [[svg, alt yazı], ..], ch: [A, B, C, D açıklamaları], tip, trap, ans })
   global.SV = o => '<div class="sv"><div class="sv-g"><b>Verilen</b> <ul>' + o.given.map(g => '<li>' + g + '</li>').join(' ') + '</ul><b>İstenen</b><p>' + o.asked + '</p></div>' +
     '<div class="sv-i"><b>Ana fikir:</b> ' + o.idea + '</div><ol class="sv-s">' + o.steps.map(s => '<li><b>' + s[0] + '</b> ' + s[1] + '</li>').join(' ') + '</ol>' +
     (o.figs || []).map(f => '<figure class="sv-f">' + f[0] + '<figcaption>' + f[1] + '</figcaption></figure>').join('') +
+    (o.ch ? '<table class="sv-c">' + o.ch.map((t, j) => '<tr' + ('ABCD'[j] === o.ans ? ' class="ok"' : '') + '><td>' + 'ABCD'[j] + '</td><td>' + t + '</td></tr>').join('') + '</table>' : '') +   // ch: şık şık kısa değerlendirme (fen)
     (o.tip ? '<div class="sv-t"><b>Püf nokta:</b> ' + o.tip + '</div>' : '') + '<div class="sv-w"><b>Tuzak:</b> ' + o.trap + '</div><div class="sv-a">Cevap <b>' + o.ans + '</b></div></div>';
   global.P = (konu, cat, obj) => {
     const st = store(konu, cat), alt = {};
