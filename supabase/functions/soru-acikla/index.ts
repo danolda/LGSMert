@@ -2,7 +2,8 @@
 // Gemini 4 Hydrogen, kota dolunca 3.8 Flash. Anahtar: Supabase secret GEMINI_API_KEY.
 // Yalnız izinli profil(ler) kullanabilir: istemci cihaz/hesap token'ını gönderir (profiles.token_hash = sha256(token))
 // ya da Google oturum JWT'si (e-posta izin listesinde).
-const MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash"];
+// Google "yoğun" (503) dediğinde sıradaki modele geçilir; zincir bitince kısa bekleyip baştan denenir.
+const MODELS = ["gemini-4-hydrogen", "gemini-3.8-flash", "gemini-3-flash-preview", "gemini-3.5-flash-lite", "gemini-3.7-flash", "gemini-3.5-flash", "gemini-3.6-flash"];
 const ALLOWED_IDS = [20];                                   // Mertbabaking
 const ALLOWED_EMAILS = ["merterenkarakose@gmail.com"];
 const CORS = {
@@ -10,8 +11,9 @@ const CORS = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
-const json = (o: unknown, s = 200) =>
-  new Response(JSON.stringify(o), { status: s, headers: { ...CORS, "Content-Type": "application/json" } });
+let DIAG: any[] = [];
+const json = (o: any, s = 200) =>
+  new Response(JSON.stringify(s === 200 ? o : { ...o, diag: DIAG }), { status: s, headers: { ...CORS, "Content-Type": "application/json" } });
 const LIM = { images: 4, bytes: 6_000_000 };                // base64 uzunluğu (~4,5 MB ikili)
 
 async function sha256hex(s: string) {
@@ -93,7 +95,24 @@ Deno.serve(async (req) => {
   if (!key) return json({ error: "no_key" }, 500);
   let b: any;
   try { b = await req.json(); } catch { return json({ error: "bad_json" }, 400); }
-  if (!(await allowed(b))) return json({ error: "forbidden" }, 403);
+  const dbg = Deno.env.get("DEBUG_KEY") || "";
+  const isDbg = !!dbg && req.headers.get("x-debug-key") === dbg;
+  if (!isDbg && !(await allowed(b))) return json({ error: "forbidden" }, 403);
+  if (isDbg && b.probe) {
+    const out = await Promise.all((b.probe as string[]).map(async (m) => {
+      const t = Date.now();
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`, { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+        body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: "Bir cümleyle fotosentezi anlat." }] }] }), signal: AbortSignal.timeout(60000) }).catch((e) => new Response(String(e), { status: 599 }));
+      const x = await r.text();
+      return { m, st: r.status, ms: Date.now() - t, d: r.ok ? "" : x.slice(0, 120) };
+    }));
+    return json({ out });
+  }
+  if (isDbg && b.listModels) {
+    const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200", { headers: { "x-goog-api-key": key } });
+    const d = await r.json().catch(() => ({}));
+    return json({ models: (d.models || []).filter((m: any) => (m.supportedGenerationMethods || []).includes("generateContent")).map((m: any) => m.name) });
+  }
 
   const images: string[] = Array.isArray(b.images) ? b.images.filter((s: any) => typeof s === "string").slice(0, LIM.images) : [];
   const size = images.reduce((n, s) => n + s.length, 0);
@@ -120,63 +139,89 @@ ${b.solution ? `\nSitedeki mevcut çözüm (öğrenci bunu okudu ama anlamadı; 
 ${pick ? `\nÖğrencinin işaretlediği şık: ${pick}${pick === ans ? " (doğru)" : " (yanlış)"}` : ""}
 ${note ? `\nÖĞRENCİNİN NOTU (nereye takıldığı): "${note}"\nBu notta bir takılma/sorun/hatalı düşünce varsa çözümde ayrı bir "🧩 Takıldığın yer" adımıyla ele al ve açıkla.` : ""}
 \nŞimdi HTML'yi yaz.` });
-  const contents = [{ role: "user", parts }];
+  const contents: any[] = [{ role: "user", parts }];
 
-  // Hızlı yanıt: Hydrogen (düşünme low) başlar; 70 sn'de bitmezse ya da hata verirse 3.8 Flash paralel başlar,
-  // önce biten kazanır. Toplam bütçe 140 sn (edge function duvar saati ~150 sn).
-  const T0 = Date.now(), BUDGET = 140_000, HEDGE = 70_000;
-  const ctl = new AbortController();
-  const kill = setTimeout(() => ctl.abort(), BUDGET);
-  type Res = { model: string; status: number; text: string };
-  const run = async (MODEL: string): Promise<Res> => {
-    for (let att = 0; att < 2; att++) {
-      const gc: any = { maxOutputTokens: 24000, thinkingConfig: { thinkingLevel: "low" } };
+  // Akışlı üretim + devam: Gemini çıktısı akış (SSE) ile okunur. Duvar saati (~150 sn) dolmadan
+  // biten kısım istemciye "partial" olarak döner; istemci aynı isteği cont ile yeniden gönderir ve
+  // model kaldığı yerden sürdürür. Böylece yanıt ne kadar uzun sürerse sürsün zaman aşımı olmaz.
+  const T0 = Date.now(), BUDGET = 120_000, FIRST = 25_000;
+  const diag: any[] = []; DIAG = diag;
+  const cont = b.cont && typeof b.cont.text === "string" ? { model: String(b.cont.model || ""), text: cut(b.cont.text, 200_000) } : null;
+  if (cont && cont.text) {
+    contents.push({ role: "model", parts: [{ text: cont.text }] } as any);
+    contents.push({ role: "user", parts: [{ text: "Yanıtın yarıda kaldı. Tam olarak kaldığın karakterden devam et; önceki kısmı tekrar etme, açıklama ekleme, yalnız devamını yaz." }] });
+  }
+  type Out = { st: number; text: string; finish: string; partial: boolean; usage?: any; err?: string };
+  const stream = async (MODEL: string, untilMs: number): Promise<Out> => {
+    const ctl = new AbortController();
+    let got = false, text = "", finish = "", usage: any = null;
+    const firstT = setTimeout(() => { if (!got) ctl.abort(); }, Math.min(FIRST, untilMs));
+    const endT = setTimeout(() => ctl.abort(), untilMs);
+    const gc: any = { maxOutputTokens: 24000, thinkingConfig: /^gemini-2\./.test(MODEL) ? { thinkingBudget: 1024 } : { thinkingLevel: "low" } };
+    try {
       const r = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:streamGenerateContent?alt=sse`,
         { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key },
           body: JSON.stringify({ contents, generationConfig: gc }), signal: ctl.signal },
-      ).catch((e) => new Response(String(e), { status: ctl.signal.aborted ? 504 : 503 }));
-      const text = await r.text().catch(() => "");
-      if ((r.status === 503 || r.status === 500) && BUDGET - (Date.now() - T0) > 60_000) { await new Promise((z) => setTimeout(z, 2000)); continue; }
-      return { model: MODEL, status: r.status, text };
-    }
-    return { model: MODEL, status: 503, text: "" };
+      );
+      if (!r.ok || !r.body) { const e = await r.text().catch(() => ""); return { st: r.status, text: "", finish: "", partial: false, err: e.slice(0, 300) }; }
+      const rd = r.body.getReader(), dec = new TextDecoder(); let buf = "";
+      try {
+        for (;;) {
+          const { value, done } = await rd.read();
+          if (done) break;
+          buf += dec.decode(value, { stream: true });
+          let i;
+          while ((i = buf.indexOf("\n")) >= 0) {
+            const line = buf.slice(0, i).trim(); buf = buf.slice(i + 1);
+            if (!line.startsWith("data:")) continue;
+            try {
+              const d = JSON.parse(line.slice(5));
+              const c = d.candidates?.[0];
+              for (const p of c?.content?.parts || []) if (!p.thought && p.text) { text += p.text; got = true; }
+              if (c?.content?.parts?.length) got = true;
+              if (c?.finishReason) finish = c.finishReason;
+              if (d.usageMetadata) usage = d.usageMetadata;
+            } catch { /* yarım satır */ }
+          }
+        }
+      } catch { /* süre doldu: elde olanla dön */ }
+      return { st: 200, text, finish, partial: !finish, usage };
+    } catch (e) {
+      return { st: got ? 200 : (ctl.signal.aborted ? 504 : 503), text, finish, partial: true, err: String(e).slice(0, 200) };
+    } finally { clearTimeout(firstT); clearTimeout(endT); }
   };
-  const results: Res[] = [];
-  const win: Res | null = await new Promise((done) => {
-    let started = 0, finished = 0, settled = false, hedge: number | undefined;
-    const start = (m: string) => {
-      started++;
-      run(m).then((x) => {
-        finished++; results.push(x);
-        if (settled) return;
-        if (x.status === 200) { settled = true; done(x); return; }
-        if (m === MODELS[0] && started < 2) { clearTimeout(hedge); start(MODELS[1]); return; }
-        if (finished >= started) { settled = true; done(null); }
-      });
-    };
-    start(MODELS[0]);
-    hedge = setTimeout(() => { if (!settled && started < 2) start(MODELS[1]); }, HEDGE);
-  });
-  clearTimeout(kill); ctl.abort();
-  const pickRes = win || results.find((x) => x.status === 429) || results.find((x) => x.status === 504) || results[results.length - 1] || null;
-  const r = pickRes ? new Response(null, { status: pickRes.status === 200 ? 200 : pickRes.status }) : null;
-  const t = pickRes ? pickRes.text : "", used = pickRes ? pickRes.model : MODELS[0];
-  const ms = Date.now() - T0;
-  if (!r) return json({ error: "busy", retry_after: 15 }, 503);
-  if (!r.ok && r.status === 429) return json({ error: "quota", status: 429, detail: t.slice(0, 300) }, 503);
-  if (!r.ok && r.status === 504) return json({ error: "timeout", status: 504, ms }, 504);
-  if (!r.ok && (r.status === 503 || r.status === 500)) return json({ error: "busy", status: r.status, retry_after: 15 }, 503);
-  if (!r.ok) return json({ error: "gemini", status: r.status, detail: t.slice(0, 500) }, 502);
-  try {
-    const d = JSON.parse(t);
-    const c = d.candidates?.[0];
-    const txt = c?.content?.parts?.map((p: any) => (p.thought ? "" : p.text || "")).join("") || "";
-    const html = extractHtml(txt);
-    if (!html) return json({ error: "empty", finish: c?.finishReason, detail: txt.slice(0, 300) }, 502);
-    const title = (/<title>([\s\S]*?)<\/title>/i.exec(html)?.[1] || "").trim().slice(0, 120);
-    return json({ html, title, model: used, ms, finish: c?.finishReason || "", usage: d.usageMetadata || null });
-  } catch {
-    return json({ error: "parse", detail: t.slice(0, 500) }, 502);
+
+  const order = cont && MODELS.includes(cont.model) ? [cont.model, ...MODELS.filter((m) => m !== cont.model)] : MODELS;
+  let out: Out | null = null, used = order[0];
+  const quota = new Set<string>();
+  chain: for (let pass = 0; pass < 4; pass++) {
+    for (const MODEL of order) {
+      if (quota.has(MODEL)) continue;
+      const left = BUDGET - (Date.now() - T0);
+      if (left < 20_000) break chain;
+      used = MODEL;
+      out = await stream(MODEL, left);
+      diag.push({ m: MODEL, st: out.st, ms: Date.now() - T0, n: out.text.length, f: out.finish, e: (out.err || "").slice(0, 80) });
+      if (out.st === 200 && (out.text || out.finish)) break chain;
+      if (out.st === 429) quota.add(MODEL);
+    }
+    if (quota.size === order.length) break;
+    await new Promise((z) => setTimeout(z, 3000 + pass * 2000));
   }
+  if (out && out.st !== 200 && quota.size && quota.size < order.length) out = { ...out, st: 503 };
+  const ms = Date.now() - T0;
+  if (!out) return json({ error: "busy", retry_after: 15 }, 503);
+  if (out.st === 429) return json({ error: "quota", status: 429 }, 503);
+  if (out.st === 504) return json({ error: "timeout", status: 504, ms }, 504);
+  if (out.st !== 200) return json({ error: out.st >= 500 ? "busy" : "gemini", status: out.st, detail: out.err }, out.st >= 500 ? 503 : 502);
+  const full = (cont ? cont.text : "") + out.text;
+  if (out.partial || out.finish === "MAX_TOKENS") {
+    if (out.finish === "MAX_TOKENS" && !/<\/html>/i.test(full)) { /* devam ettir */ }
+    if (!/<\/html>\s*(```)?\s*$/i.test(full.trim())) return json({ partial: true, model: used, text: full, n: full.length, ms, diag });
+  }
+  const html = extractHtml(full);
+  if (!html) return json({ error: "empty", finish: out.finish, detail: full.slice(0, 300) }, 502);
+  const title = (/<title>([\s\S]*?)<\/title>/i.exec(html)?.[1] || "").trim().slice(0, 120);
+  return json({ html, title, model: used, ms, finish: out.finish, usage: out.usage || null, diag });
 });

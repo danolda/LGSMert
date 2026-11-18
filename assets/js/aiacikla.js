@@ -88,7 +88,7 @@
     x.open('POST', FN);
     x.setRequestHeader('Content-Type', 'application/json');
     if (CFG.key) x.setRequestHeader('apikey', CFG.key);
-    x.timeout = 170000;
+    x.timeout = 160000;
     x.onload = function () { var d = null; try { d = JSON.parse(x.responseText); } catch (e) {} if (x === xhr) xhr = null; cb(x.status, d || {}); };
     x.onerror = function () { if (x === xhr) xhr = null; cb(0, { error: 'net' }); };
     x.ontimeout = function () { if (x === xhr) xhr = null; cb(504, { error: 'timeout' }); };
@@ -184,7 +184,7 @@
           question: q.past ? '' : (q.q || ''), choices: q.past ? [] : (q.c || []),
           answer: q.a, solution: sol, images: imgs, pick: pk, note: n,
         };
-        var tries = 0;
+        var tries = 0, rounds = 0;
         (function send() {
           call(body, function (st, d) {
             if (document.getElementById('aiOv') !== o) return;
@@ -194,7 +194,8 @@
               busy(false); syncBtns(); view(res);
               return;
             }
-            if (d.error === 'busy' && tries++ < 1) { setTimeout(send, 8000); return; }
+            if (st === 200 && d.partial && d.text && rounds++ < 6) { body.cont = { model: d.model || '', text: d.text }; send(); return; }
+            if ((d.error === 'busy' || d.error === 'timeout' || st === 546 || st === 0) && tries++ < 2) { setTimeout(send, 4000); return; }
             busy(false); err(errText(st, d));
           });
         })();
