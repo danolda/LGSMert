@@ -1314,5 +1314,425 @@ LGS.addMeb({
   "o": 100187,
   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Arda’nın ailesinin yemek tercihleri: Baba → <b>ızgara</b> et. Anne → <b>haşlanmış</b> sebze. Arda → <b>fırında</b> patates. Kız kardeş → <b>kızarmış</b> tavuk.</li></ul><b>İstenen</b><p>Tabloya göre <b>doğru</b> cümle.</p></div><ol class=\"sv-s\"><li><b>Yöntemleri say</b> grilled, boiled, baked, fried → dört kişi dört <b>farklı</b> pişirme yöntemi tercih ediyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Aile yağda pişen yemeği sevmiyor → kız kardeş kızarmış tavuk seviyor; yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>Aile farklı pişirme yöntemlerini tercih ediyor → doğru.</td></tr><tr><td>C</td><td>Aile deniz ürünü yemeyi tercih ediyor → tabloda deniz ürünü yok; yanlış.</td></tr><tr><td>D</td><td>Aile yalnızca fırında yemeği seviyor → yalnızca Arda fırın; yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> -ed sıfatları yöntemi gösterir: grilled, boiled, baked, fried, roasted, steamed.</div><div class=\"sv-w\"><b>Tuzak:</b> “only” ve “dislikes” gibi kesin ifadeler tek bir karşı örnekle çürür.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
   "lb": "MEB Yaprak Test 12 · 17. soru"
+ },
+ "mebit-ing-f1-1": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150001,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mark: “I’d love to come, but I have to help my father in the garden then.” Jane: “…but I’m going to go to the cinema with my friends.” Kevin: “I must finish my science project for Monday.”</li><li>Reasons: I. To celebrate someone’s birthday II. To study for a lesson III. To support his/her dad IV. To see a new movie</li></ul><b>İstenen</b><p>Arkadaşlar ile mazeretlerin doğru eşleşmesi.</p></div><ol class=\"sv-s\"><li><b>Her mazeretin anahtar sözcüğü</b> Mark → help my father (babasına yardım) → III. Jane → go to the cinema (film izlemek) → IV. Kevin → finish my science project (ders çalışmak) → II.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Mark III, Jane IV, Kevin II → doğru.</td></tr><tr><td>B</td><td>Mark I olamaz; doğum günü Sarah’ın partisi, mazeret değil.</td></tr><tr><td>C</td><td>Mark II, Jane I yanlış.</td></tr><tr><td>D</td><td>Jane I yanlış; Jane sinemaya gidecek.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fazladan verilen seçenek (I) davetin kendisidir; mazeret olarak eşleşmez.</div><div class=\"sv-w\"><b>Tuzak:</b> “Science project” bir ödevdir → “study for a lesson” ile eşleşir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 1. soru"
+ },
+ "mebit-ing-f1-2": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150002,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Rachel: “We are organising a picnic in the park… Would you like to join us?” Tina: “Thanks for inviting me, but I have to visit my grandparents until 4 p.m.”</li></ul><b>İstenen</b><p>Tina’nın yaptığı.</p></div><ol class=\"sv-s\"><li><b>Tina’nın cevabı</b> “Thanks for inviting me, but…” → teşekkür + reddetme; “I have to visit my grandparents” → mazeret.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Daveti kabul etmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Mazeret göstererek reddediyor → doğru.</td></tr><tr><td>C</td><td>Davet eden Rachel’dır.</td></tr><tr><td>D</td><td>Tina etkinlikle ilgili ayrıntı sormuyor; yalnızca “Why are you asking?” diyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Thanks, but…”, “I’d love to, but…” kalıpları kibarca reddetmedir; “but”tan sonra mazeret gelir.</div><div class=\"sv-w\"><b>Tuzak:</b> D cazip olabilir; ama “Why are you asking?” etkinlik hakkında ayrıntı değil, neden sorulduğunu soruyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 2. soru"
+ },
+ "mebit-ing-f1-3": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150003,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>David, John’un bowling davetine katılmak istiyor ama aynı gün büyükanne ve büyükbabasını ziyaret etmesi gerekiyor. Özür dileyip nedenini açıklayan bir mesaj gönderiyor.</li></ul><b>İstenen</b><p>David’in mesajı olabilecek seçenek.</p></div><ol class=\"sv-s\"><li><b>Mesajın şartları</b> (1) Reddetmeli, (2) nedeni (akraba ziyareti) belirtmeli.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>“I can’t make it because I will visit my relatives.” → reddediyor ve nedeni (relatives = akrabalar) söylüyor. Doğru.</td></tr><tr><td>B</td><td>Reddediyor ama neden yok.</td></tr><tr><td>C</td><td>Neden yanlış (sınav).</td></tr><tr><td>D</td><td>Daveti kabul ediyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Relatives” = akrabalar; grandparents (büyükanne-büyükbaba) da akrabadır.</div><div class=\"sv-w\"><b>Tuzak:</b> B kibar bir ret ama soru “explain the reason” diyor; neden olmadığı için olmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 3. soru"
+ },
+ "mebit-ing-f1-4": {
+  "t": "ing-friendship",
+  "a": "D",
+  "o": 150004,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sam: “I can’t join you because I will visit my aunt.” Emma: “Great idea! I will be there.” Daisy: “I don’t have anything to do. I’d love to come.” Andrew: “…but I have a football match at that time.”</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Kabul ve retleri ayır</b> Kabul: Emma, Daisy. Ret: Sam (teyzesini ziyaret), Andrew (futbol maçı).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Daisy daveti kabul ediyor.</td></tr><tr><td>B</td><td>Andrew’un mazereti futbol maçı, dışarıda yemek değil.</td></tr><tr><td>C</td><td>Emma katılacak.</td></tr><tr class=\"ok\"><td>D</td><td>Sam’in başka planı (teyze ziyareti) var → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “I will be there”, “I’d love to come” → kabul; “I can’t”, “That sounds great, but…” → ret.</div><div class=\"sv-w\"><b>Tuzak:</b> Andrew “That sounds great” ile başlıyor ama “but” sonrası reddediyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 4. soru"
+ },
+ "mebit-ing-f1-5": {
+  "t": "ing-friendship",
+  "a": "D",
+  "o": 150005,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Amy: “We are organising a slumber party on Saturday night. Would you like to join us?” Clara: “I’d love to, but I can’t. My cousins are coming over that night.”</li></ul><b>İstenen</b><p>Doğru yargı.</p></div><ol class=\"sv-s\"><li><b>Kim ne yapıyor</b> Davet eden Amy, reddeden Clara; mazeret kuzenlerin gelmesi; parti “Saturday night”.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Amy daveti yapan kişi; kabul etmiyor.</td></tr><tr><td>B</td><td>Davet eden Clara değil, Amy.</td></tr><tr><td>C</td><td>Parti akşam (night), öğleden sonra değil.</td></tr><tr class=\"ok\"><td>D</td><td>Clara mazeret göstererek reddediyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Slumber party” = pijama partisi; geceleyin yapılır.</div><div class=\"sv-w\"><b>Tuzak:</b> “I’d love to” sevinçle kabul gibi başlar; “but I can’t” cümlesi reddi gösterir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 5. soru"
+ },
+ "mebit-ing-f1-6": {
+  "t": "ing-friendship",
+  "a": "C",
+  "o": 150006,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mandy’nin kartı: Party on Sunday, April 18, at Moon Cafe. Activities: eat snacks, play games, watch a movie. For more information, call or text Mandy (9876 1234780).</li></ul><b>İstenen</b><p>Kartta cevabı olmayan soru.</p></div><ol class=\"sv-s\"><li><b>Her soruyu kartta ara</b> Yer → Moon Cafe ✓. Bilgi alma → arayın/mesaj atın ✓. Etkinlikler → snacks, games, movie ✓. Kaç kişi katılacak → yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Moon Cafe → cevabı var.</td></tr><tr><td>B</td><td>Call or text → cevabı var.</td></tr><tr class=\"ok\"><td>C</td><td>Katılacak kişi sayısı kartta yok → doğru.</td></tr><tr><td>D</td><td>Eat snacks, play games, watch a movie → cevabı var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Davetiye sorularında 5N1K’yi tek tek ara: where, when, what, how.</div><div class=\"sv-w\"><b>Tuzak:</b> Telefon numarası “kaç kişi” sorusunun cevabı değildir; iletişim bilgisidir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 6. soru"
+ },
+ "mebit-ing-f1-7": {
+  "t": "ing-friendship",
+  "a": "D",
+  "o": 150007,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“To be a good friend, you should always tell the truth and keep your friends’ secrets. You should also support them… you should talk and solve it together instead of arguing.”</li></ul><b>İstenen</b><p>Metnin konusu.</p></div><ol class=\"sv-s\"><li><b>Tekrar eden yapı</b> “You should…” cümleleri tavsiye verir → iyi arkadaş olmanın yolları.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hobilerden söz edilmiyor.</td></tr><tr><td>B</td><td>Tartışmanın nedenleri değil, tartışmak yerine konuşmak öneriliyor.</td></tr><tr><td>C</td><td>Parti düzenlemek yok.</td></tr><tr class=\"ok\"><td>D</td><td>İyi arkadaş olmak için ipuçları → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “should” = -meli/-malı; metin “tips” (öneriler) veriyor.</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki “arguing” metinde geçiyor ama yalnızca bir öneri içinde.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 7. soru"
+ },
+ "mebit-ing-f1-8": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150008,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nina: likes doing sports, enjoys being with friends outdoors, dislikes watching movies at home, hates going to shopping malls.</li></ul><b>İstenen</b><p>Nina’nın kabul edeceği öneri.</p></div><ol class=\"sv-s\"><li><b>Tercihlerle karşılaştır</b> Spor + açık havada arkadaşlarla → parkta voleybol.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Parkta voleybol → spor + açık hava. Doğru.</td></tr><tr><td>B</td><td>Alışveriş merkezi → nefret ediyor.</td></tr><tr><td>C</td><td>Evde film → sevmiyor.</td></tr><tr><td>D</td><td>Evde video oyunu → açık hava değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> like/enjoy = sever; dislike/hate = sevmez/nefret eder.</div><div class=\"sv-w\"><b>Tuzak:</b> D sevmediği bir etkinlik olarak açıkça verilmemiş ama “stay home” açık havayı seven Nina’ya uymaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 8. soru"
+ },
+ "mebit-ing-f1-9": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150009,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tony likes chatting online. Dennis enjoys going to concerts. Andy loves playing board games. Chris prefers watching movies at home.</li><li>Görseller: A) satranç (masa oyunu) B) sinemada film C) bisiklet D) evde tek başına müzik dinleme.</li></ul><b>İstenen</b><p>Clara’nın arkadaşlarından biriyle yapabileceği etkinliğin görseli.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Board game → Andy → A’daki satranç.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Masa oyunu → Andy. Doğru.</td></tr><tr><td>B</td><td>Sinema; Chris evde film izlemeyi tercih ediyor.</td></tr><tr><td>C</td><td>Bisiklet kimsenin hobisi değil.</td></tr><tr><td>D</td><td>Evde müzik dinlemek; Dennis konsere gitmeyi seviyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Board games” = masa oyunları (satranç, dama, kutu oyunları).</div><div class=\"sv-w\"><b>Tuzak:</b> B, Chris ile eşleşir gibi görünür; ama Chris filmleri “at home” (evde) izlemeyi seviyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 9. soru"
+ },
+ "mebit-ing-f1-10": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150010,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>100 genç: Yarısı “reliable”; çok azı “generous”; “supportive” ve “honest” diyenler eşit sayıda.</li></ul><b>İstenen</b><p>Doğru grafik.</p></div><ol class=\"sv-s\"><li><b>Şartları sırayla uygula</b> Reliable tam yarım daire. Generous en küçük dilim. Honest ve supportive eşit dilimler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Reliable yarımdan küçük.</td></tr><tr class=\"ok\"><td>B</td><td>Reliable yarım, generous küçük, honest = supportive → doğru.</td></tr><tr><td>C</td><td>Supportive, honest’tan büyük.</td></tr><tr><td>D</td><td>Reliable yarımdan küçük; honest ve supportive eşit değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Half” = %50 → daire grafiğinde tam yarım.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de reliable yarıma yakın ama tam yarım değil; çizgiyi dikkatle incele.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 10. soru"
+ },
+ "mebit-ing-f1-11": {
+  "t": "ing-friendship",
+  "a": "D",
+  "o": 150011,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Oliver: sinemaya davetini reddediyor, İngilizce sınavına çalışmalı. Harry: rock konserine gitmeyi öneriyor. Emily: daveti kabul ediyor, açık havada vakit geçirmek istiyor. Sophie: arkadaşlarını tiyatroya davet ediyor.</li></ul><b>İstenen</b><p>Doğru eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Planları bul</b> Oliver → study English. Harry → attend a concert. Emily → have a picnic (outdoors). Sophie → watch a play (theatre).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Harry picnic, Emily concert yanlış.</td></tr><tr><td>B</td><td>Emily “see a movie” açık hava değil.</td></tr><tr><td>C</td><td>Oliver sinemayı reddetti; “see a movie” yanlış.</td></tr><tr class=\"ok\"><td>D</td><td>Hepsi doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Theatre → play (oyun). Cinema → movie (film). Outdoors → picnic.</div><div class=\"sv-w\"><b>Tuzak:</b> Oliver’ın cümlesinde “cinema” geçiyor ama o daveti reddediyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 11. soru"
+ },
+ "mebit-ing-f1-12": {
+  "t": "ing-friendship",
+  "a": "C",
+  "o": 150012,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Emma: “I’m having a movie night at my house on Sunday at 8 p.m. Would you like to join?”</li><li>Eric’in pazar planı: 10–11 a.m. music lesson; 12–2 p.m. lunch with mom and dad; 2.30–4 p.m. study for science exam; 5–7 p.m. go to the cinema.</li></ul><b>İstenen</b><p>Eric’in cevabı.</p></div><ol class=\"sv-s\"><li><b>Saati kontrol et</b> Davet 8 p.m.; Eric’in son işi 7 p.m.’de bitiyor → saat 8’de boş → kabul edebilir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Müzik dersi sabah; 8 p.m.’de yok.</td></tr><tr><td>B</td><td>Öğle yemeği 12–2; 8 p.m.’de yok.</td></tr><tr class=\"ok\"><td>C</td><td>Sinemadan sonra katılabilir → doğru.</td></tr><tr><td>D</td><td>Sınav için çalışma 2.30–4’te bitiyor; 8 p.m.’de engel değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zaman tablosu sorularında davet saatini tabloda ara; çakışma yoksa kabul.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de mazeret gerçek bir plandan alınmış ama saati davetle çakışmıyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 12. soru"
+ },
+ "mebit-ing-f1-13": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150013,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Friends like spending time together… watching films or playing games at home… having a picnic or meeting at a café… studying together… organise activities for weekends.</li></ul><b>İstenen</b><p>Paragrafa göre arkadaşlar - - - -.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Bütün örnekler birlikte yapılan etkinliklerdir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tartışmaktan söz edilmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Birlikte etkinlik yapıyorlar → doğru.</td></tr><tr><td>C</td><td>Gelecek planları değil, hafta sonu etkinlikleri.</td></tr><tr><td>D</td><td>Yalnız vakit geçirmek metnin tersi.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Paragrafın ilk cümlesi (“spending time together”) çoğu zaman ana fikri verir.</div><div class=\"sv-w\"><b>Tuzak:</b> C’deki “make plans” cazip ama metin geleceğe dair planlardan değil, etkinlik düzenlemekten söz ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 13. soru"
+ },
+ "mebit-ing-f1-14": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150014,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Alex: reliable, fond of camping, action movies exciting, prefers rock music. Clara: honest, enjoys outdoor activities like trekking, doesn’t like horror or comedies, interested in classical music.</li></ul><b>İstenen</b><p>İkisi için söylenebilecek yargı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Camping (Alex) ve trekking (Clara) → ikisi de doğada vakit geçirmeyi seviyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Doğada vakit geçirmek → doğru.</td></tr><tr><td>B</td><td>Müzik tercihleri farklı (rock / classical).</td></tr><tr><td>C</td><td>Clara komedi sevmiyor.</td></tr><tr><td>D</td><td>İkisinin de olumlu özellikleri var (reliable, honest).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kamp, trekking, piknik → “spending time in nature / outdoor activities”.</div><div class=\"sv-w\"><b>Tuzak:</b> “Funny movies” = comedies; Clara bunlardan hoşlanmıyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 14. soru"
+ },
+ "mebit-ing-f1-15": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150015,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Susan, Betty’nin film gecesi davetini kabul edemiyor; ailesi yokken küçük kardeşine bakması gerekiyor.</li></ul><b>İstenen</b><p>Susan’ın mesajı OLAMAYACAK seçenek.</p></div><ol class=\"sv-s\"><li><b>Mesajın şartı</b> Reddetmeli ve kardeşine bakma nedenini söylemeli.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Reddediyor ve kardeşine bakacağını söylüyor → olabilir.</td></tr><tr class=\"ok\"><td>B</td><td>“I will join with my brother” → daveti kabul ediyor → olamaz.</td></tr><tr><td>C</td><td>Kardeşiyle evde olmalı → olabilir.</td></tr><tr><td>D</td><td>Kardeşiyle evde kalmalı → olabilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “CANNOT” sorularında durumla çelişen tek seçeneği ara.</div><div class=\"sv-w\"><b>Tuzak:</b> B kardeşten söz ettiği için uyuyor gibi görünür; ama daveti kabul ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 15. soru"
+ },
+ "mebit-ing-f1-16": {
+  "t": "ing-friendship",
+  "a": "C",
+  "o": 150016,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sıradaki cümleler: 1. Hi, Betty! I’m having a party… Why don’t you join us? 2. That sounds fantastic! … Who else is coming? 3. Sure, I can bring some snacks and drinks for everyone. 4. Zack and Tom will be there, too. Would you like to bring something for the party? 5. Great! It’s going to be a lot of fun.</li></ul><b>İstenen</b><p>Yer değiştirmesi gereken cümleler.</p></div><ol class=\"sv-s\"><li><b>Soru-cevap bağı</b> 2’deki “Who else is coming?” sorusunun cevabı 4’teki “Zack and Tom will be there” → 4, 2’den hemen sonra gelmeli. 4’teki “Would you like to bring something?” sorusunun cevabı 3 → 3, 4’ten sonra gelmeli.<span class=\"sv-m\">Doğru sıra: 1 – 2 – 4 – 3 – 5 → 3 ile 4 yer değiştirir.</span></li></ol><table class=\"sv-c\"><tr><td>A</td><td>1 ile 2 değişirse diyalog davetsiz başlar.</td></tr><tr><td>B</td><td>2 ile 3 değişirse sorular cevapsız kalır.</td></tr><tr class=\"ok\"><td>C</td><td>3 ile 4 → doğru.</td></tr><tr><td>D</td><td>4 ile 5 değişirse diyalog soruyla biter.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Diyalog sıralamada her sorunun cevabını hemen arkasında ara.</div><div class=\"sv-w\"><b>Tuzak:</b> 3’teki “Sure” bir sorunun cevabıdır; önünde mutlaka bir soru olmalı.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 16. soru"
+ },
+ "mebit-ing-f1-17": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150017,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Laura thinks scary movies are exciting. Neil is fond of funny movies. Stacy prefers learning about nature and wild life.</li><li>Tablo: 1 → Horror Movie ✓; 2 → Comedy ✓; 3 → Documentary ✓.</li></ul><b>İstenen</b><p>Eksik isimlerin sırası.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Horror (scary) → Laura. Comedy (funny) → Neil. Documentary (nature) → Stacy.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>1 Stacy yanlış; korku filmi Laura’nın.</td></tr><tr class=\"ok\"><td>B</td><td>Laura – Neil – Stacy → doğru.</td></tr><tr><td>C</td><td>1 Neil yanlış.</td></tr><tr><td>D</td><td>2 Stacy yanlış; komedi Neil’in.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Scary = horror; funny = comedy; nature and wild life = documentary.</div><div class=\"sv-w\"><b>Tuzak:</b> Tablodaki satır sırası (comedy, documentary, horror) ile sütun sırası (1, 2, 3) farklı; işaretleri takip et.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 17. soru"
+ },
+ "mebit-ing-f1-18": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150018,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görseller: (1) Birine merdiven çıkarken yardım eden çocuk → supportive. (2) Hediye veren kız → generous. (3) Birlikte gülen çocuklar → cheerful. (4) Saate ve takvime göre zamanında gelen arkadaş → reliable/punctual.</li></ul><b>İstenen</b><p>Hiçbir görselle ilişkili olmayan özellik.</p></div><ol class=\"sv-s\"><li><b>Özellikleri görsellerle eşleştir</b> generous → 2. supportive → 1. cheerful → 3. honest (doğruyu söylemek) → yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Generous → hediye görseli.</td></tr><tr class=\"ok\"><td>B</td><td>Honest → görsel yok. Doğru.</td></tr><tr><td>C</td><td>Supportive → yardım görseli.</td></tr><tr><td>D</td><td>Cheerful → gülen çocuklar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Honest = dürüst; never tells lies. Generous = cömert; buying presents.</div><div class=\"sv-w\"><b>Tuzak:</b> Son görsel (saat-takvim) dürüstlük değil, güvenilirlik ve dakikliktir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 18. soru"
+ },
+ "mebit-ing-f1-19": {
+  "t": "ing-friendship",
+  "a": "A",
+  "o": 150019,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Reliable never tells your secrets. Supportive always backs you up. Honest never tells lies. Generous likes sharing and buying presents.</li><li>Amy always tells the truth. Jack helps friends with problems. Celine keeps secrets. Tom buys small gifts.</li></ul><b>İstenen</b><p>Doğru tablo.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Amy → honest. Jack → supportive. Celine → reliable. Tom → generous.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hepsi doğru.</td></tr><tr><td>B</td><td>Amy generous, Tom honest yanlış.</td></tr><tr><td>C</td><td>Jack generous, Celine supportive, Tom reliable yanlış.</td></tr><tr><td>D</td><td>Amy generous, Celine honest, Tom reliable yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Keep secrets → reliable; tell the truth → honest; help/back up → supportive; gifts → generous.</div><div class=\"sv-w\"><b>Tuzak:</b> Dürüstlük (honest) ile güvenilirlik (reliable) karışır: sır tutmak güvenilirliktir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 19. soru"
+ },
+ "mebit-ing-f1-20": {
+  "t": "ing-friendship",
+  "a": "B",
+  "o": 150020,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Harry seni cumartesi akşamı caz konserine davet ediyor; cazı “unbearable and boring” buluyorsun. Kibarca ve bir neden göstererek reddetmek istiyorsun.</li></ul><b>İstenen</b><p>Harry’ye cevabın.</p></div><ol class=\"sv-s\"><li><b>Şartlar</b> Kibar ret + neden (cazı sevmemek).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kabul ediyor.</td></tr><tr class=\"ok\"><td>B</td><td>“Thanks for your invitation, but I’m not fond of jazz.” → kibar ret + neden. Doğru.</td></tr><tr><td>C</td><td>Kabul ediyor.</td></tr><tr><td>D</td><td>Ret var ama neden yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “not fond of” = pek sevmemek; kibar bir ret nedeni.</div><div class=\"sv-w\"><b>Tuzak:</b> D kibar ama “by giving a reason” şartını karşılamıyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 20. soru"
+ },
+ "mebit-ing-f1-21": {
+  "t": "ing-friendship",
+  "a": "C",
+  "o": 150021,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>School Picnic Day: City Park, Sunday 15th June; barbecue, volleyball, music; 10 a.m. – 4 p.m.; £15 per person, including food and drinks; inform by 12th June.</li></ul><b>İstenen</b><p>Davetiyeye göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri kartla karşılaştır</b> Volleyball → spor ✓. 10–4 → 6 saat ✓. Sunday → hafta sonu ✓. £15 yiyecek ve içecek dâhil → fazladan ödeme yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Voleybol oynanabilir → doğru.</td></tr><tr><td>B</td><td>6 saat sürer → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Yemek için £15’ten fazla ödemek gerekmez → yanlış.</td></tr><tr><td>D</td><td>Pazar hafta sonudur → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Including” = dâhil; fiyatın içinde.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de süreyi hesapla: 10 a.m.’den 4 p.m.’ye 6 saattir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 21. soru"
+ },
+ "mebit-ing-f1-22": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150022,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nancy: “Hello, Julian. - - - -?” Julian: “I enjoy listening to music and reading books.” Nancy: “- - - -?” Julian: “Usually after school and before going to bed.” Nancy: “Nice! - - - -?” Julian: “No, I don’t. I prefer listening to music at home.”</li></ul><b>İstenen</b><p>Nancy’nin SORMADIĞI soru.</p></div><ol class=\"sv-s\"><li><b>Cevaplardan soruya git</b> 1. cevap boş zaman etkinlikleri → C. 2. cevap ne zaman → D. 3. cevap “No, I don’t… at home” → A (konsere gider misin?).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>3. boşluk.</td></tr><tr class=\"ok\"><td>B</td><td>Film türü sorulmamış → doğru.</td></tr><tr><td>C</td><td>1. boşluk.</td></tr><tr><td>D</td><td>2. boşluk.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Do you…?” sorusu “Yes/No” ile; “When…?” sorusu zaman ifadesiyle cevaplanır.</div><div class=\"sv-w\"><b>Tuzak:</b> “I prefer listening to music at home” cevabı konsere gitmeyi tercih etmediğini gösterir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 22. soru"
+ },
+ "mebit-ing-f1-23": {
+  "t": "ing-teen",
+  "a": "D",
+  "o": 150023,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Leo – going to the gym – every day. Mia – watching videos about foreign countries – twice a week. Kirk – playing computer games – three times a week. Eva – trekking in nature – only at weekends.</li></ul><b>İstenen</b><p>Tabloya göre doğru olan.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri tabloyla karşılaştır</b> Mia’nın izlediği videolar yabancı ülkeler hakkında → farklı yerleri öğrenmeyi seviyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Leo her gün spor yapıyor, haftada bir değil.</td></tr><tr><td>B</td><td>Kirk’ün hangi günler oynadığı belli değil.</td></tr><tr><td>C</td><td>Eva açık hava etkinliği yapıyor (trekking).</td></tr><tr class=\"ok\"><td>D</td><td>Mia farklı yerleri öğrenmeyi seviyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Foreign countries” = yabancı ülkeler → “different places around the world”.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de “never… on weekdays” kesin bir ifade; tablo günleri vermiyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 23. soru"
+ },
+ "mebit-ing-f1-24": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150024,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sally wakes up early on weekdays, goes to school by bike, takes cooking classes, often prepares dinner, does homework and joins online courses, rarely watches TV, never eats junk food.</li></ul><b>İstenen</b><p>Metinde SÖZÜ EDİLMEYEN.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri ara</b> Günlük rutin → var. Okula ulaşım → by bike. Yeme alışkanlığı → never eats junk food. En sevdiği tarif → yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Günlük rutin anlatılıyor.</td></tr><tr class=\"ok\"><td>B</td><td>Favori tarif verilmiyor → doğru.</td></tr><tr><td>C</td><td>Yeme alışkanlıkları (junk food) var.</td></tr><tr><td>D</td><td>Okula bisikletle gidiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Learning new recipes” tariflere ilgiyi gösterir; belirli bir tarif adı vermez.</div><div class=\"sv-w\"><b>Tuzak:</b> “Cooking classes” ve “recipes” sözcükleri B’yi var sandırabilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 24. soru"
+ },
+ "mebit-ing-f1-25": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150025,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“It is important to have interests that make you feel happy… you should always choose activities that you find fascinating, not the ones that others think are trendy. Remember, your activities should reflect your own personality.”</li></ul><b>İstenen</b><p>Metnin konusu.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Gençlere, kişiliklerine uygun ve keyif aldıkları hobileri seçmeleri öneriliyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ödevden yalnızca girişte söz ediliyor.</td></tr><tr><td>B</td><td>Müzik türleri konu değil.</td></tr><tr class=\"ok\"><td>C</td><td>Kişisel hobi seçimi için öneriler → doğru.</td></tr><tr><td>D</td><td>Okul başarısı konu değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “should” cümleleri öneri verir; metnin konusu bu önerilerin neyle ilgili olduğudur.</div><div class=\"sv-w\"><b>Tuzak:</b> A, metnin ilk cümlesindeki “homework” sözcüğüyle çeldirir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 25. soru"
+ },
+ "mebit-ing-f1-26": {
+  "t": "ing-teen",
+  "a": "A",
+  "o": 150026,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Cooking 4:00, soccer 5:30, music 6:00, online Chinese 7:00 p.m.</li><li>Sally loves recipes. Brian dislikes team sports, fond of classical music. Wendy takes a language course in the evening. Mike is in the school football team.</li></ul><b>İstenen</b><p>Doğru tablo.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Sally → cooking 4:00. Brian → music 6:00. Wendy → Chinese 7:00. Mike → soccer 5:30.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Hepsi doğru.</td></tr><tr><td>B</td><td>Sally 5:30, Mike 7:00 yanlış.</td></tr><tr><td>C</td><td>Brian 7:00, Wendy 6:00 yanlış.</td></tr><tr><td>D</td><td>Wendy 5:30, Mike 7:00 yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Football = soccer; language course = Chinese course.</div><div class=\"sv-w\"><b>Tuzak:</b> Brian’ın “doesn’t like team sports” bilgisi onu futboldan eler.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 26. soru"
+ },
+ "mebit-ing-f1-27": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150027,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Paul: energetic, loves nature/outdoor activities, finds rock music impressive, can’t stand jazz, a bookworm, goes to the library.</li><li>Liam: keen on trekking and camping, thinks rock music is terrific, loves reading books.</li></ul><b>İstenen</b><p>Paul ile en çok ortak ilgisi olan kişi.</p></div><ol class=\"sv-s\"><li><b>Karşılaştır</b> Liam: doğa ✓, rock ✓, kitap ✓ → üç ortak nokta.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Alice doğayı sevmiyor, klasik müzik seviyor.</td></tr><tr class=\"ok\"><td>B</td><td>Liam → üç ortak ilgi. Doğru.</td></tr><tr><td>C</td><td>Susan kütüphaneye nadiren gidiyor, rock’ı sevmiyor.</td></tr><tr><td>D</td><td>Kendall caz seviyor, kitap okumuyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bookworm” = kitap kurdu; “terrific” = harika; “can’t stand” = katlanamamak.</div><div class=\"sv-w\"><b>Tuzak:</b> Kendall müzik grubunda; ama Paul’ün sevmediği cazı seviyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 27. soru"
+ },
+ "mebit-ing-f1-28": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150028,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Rock &amp; Fun Youth Camp: archery, trekking, swimming, rock concerts; 15th–22nd July; £150 per person (all equipment included); age 13–18.</li></ul><b>İstenen</b><p>Afişe göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri kontrol et</b> Yaş 13–18 → 20 yaşındaki katılamaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Farklı açık hava etkinlikleri var → doğru.</td></tr><tr><td>B</td><td>15–22 Temmuz → bir hafta → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>20 yaş sınırın dışında → yanlış.</td></tr><tr><td>D</td><td>Ekipman dâhil → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “All equipment included” = tüm ekipman fiyata dâhil.</div><div class=\"sv-w\"><b>Tuzak:</b> B’de tarihleri say: 15’ten 22’ye 7 gün = bir hafta.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 28. soru"
+ },
+ "mebit-ing-f1-29": {
+  "t": "ing-teen",
+  "a": "A",
+  "o": 150029,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Rylie hafta içi 5 p.m.’den sonra ve cumartesi sabahları boş; bütçesi ₺2800.</li></ul><b>İstenen</b><p>Seçmesi gereken kurs.</p></div><ol class=\"sv-s\"><li><b>İki şartı kontrol et</b> Saat/gün uygun mu? Fiyat ≤ ₺2800 mü?</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Guitar, Mon–Wed 6–8 p.m., ₺2700 → uygun. Doğru.</td></tr><tr><td>B</td><td>3–5 p.m. hafta içi → boş değil.</td></tr><tr><td>C</td><td>₺3000 → bütçeyi aşıyor; pazar da uygun değil.</td></tr><tr><td>D</td><td>Cumartesi 2–4 p.m. → sabah değil öğleden sonra.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her seçenekte gün, saat ve fiyatı tek tek eşleştir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’nin fiyatı tam ₺2800 ve gün cumartesi; ama saat sabah değil.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 29. soru"
+ },
+ "mebit-ing-f1-30": {
+  "t": "ing-teen",
+  "a": "D",
+  "o": 150030,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nora: Internet unbearable, reading impressive, team sports amazing, fashion terrible. Terry: Internet ridiculous, reading great, team sports unbearable, fashion terrific. Zack: Internet awesome, reading boring, team sports fun, fashion awful.</li></ul><b>İstenen</b><p>Tabloya göre doğru olan.</p></div><ol class=\"sv-s\"><li><b>Olumlu-olumsuz ayır</b> Reading: Nora impressive (+), Terry great (+) → ikisi de seviyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Nora internet’i sevmiyor (unbearable).</td></tr><tr><td>B</td><td>Nora ve Zack modayı sevmiyor.</td></tr><tr><td>C</td><td>Zack modayı “awful” buluyor.</td></tr><tr class=\"ok\"><td>D</td><td>Nora ve Terry hikâye okumayı seviyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Olumlu: impressive, great, amazing, terrific, awesome, fun. Olumsuz: unbearable, ridiculous, terrible, boring, awful.</div><div class=\"sv-w\"><b>Tuzak:</b> “Terrific” olumlu, “terrible” olumsuzdur; benzer yazımlarına aldanma.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 30. soru"
+ },
+ "mebit-ing-f1-31": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150031,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Etkinlikler: concert, theatre (comedy), nature walk, shopping.</li><li>Dennis doesn’t like being indoors. Mary wants to see a play and laugh. Edgar has an invitation for a rock band’s performance. Elisa is looking for a new dress.</li></ul><b>İstenen</b><p>Doğru tablo.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Mary → theatre. Edgar → concert. Elisa → shopping. Dennis → nature walk (açık hava).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Dennis concert, Edgar shopping, Elisa nature walk yanlış.</td></tr><tr><td>B</td><td>Mary shopping, Edgar theatre yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Hepsi doğru.</td></tr><tr><td>D</td><td>Dennis shopping, Mary nature walk yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce en net ipuçlarını (play, rock band, dress) eşleştir; kalan seçenek kendiliğinden çıkar.</div><div class=\"sv-w\"><b>Tuzak:</b> Dennis için yalnız “indoors sevmiyor” bilgisi var; tek açık hava etkinliği nature walk.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 31. soru"
+ },
+ "mebit-ing-f1-32": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150032,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo (☺ seviyor, ☹ sevmiyor): Lily – hiking ☺, live music ☹, blog ☹, Internet ☺. Sam – hiking ☹, live music ☺, blog ☺, Internet ☹.</li></ul><b>İstenen</b><p>Tabloya göre doğru olan.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri sına</b> Lily internet’i seviyor, Sam sevmiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Lily konseri ve blogu sevmiyor.</td></tr><tr><td>B</td><td>Sam doğa yürüyüşünü sevmiyor, konseri seviyor.</td></tr><tr class=\"ok\"><td>C</td><td>Lily online olmayı seviyor, Sam sevmiyor → doğru.</td></tr><tr><td>D</td><td>Lily blog yazmayı sevmiyor; Sam online olmayı sevmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Going online” = surfing the Internet; “keeping a blog” = writing a blog.</div><div class=\"sv-w\"><b>Tuzak:</b> Seçeneklerde tablodaki ifadelerin eş anlamlıları kullanılmış; eşleştirerek oku.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 32. soru"
+ },
+ "mebit-ing-f1-33": {
+  "t": "ing-teen",
+  "a": "A",
+  "o": 150033,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Liam: hangs out with friends, hiking, camping, fishing. Abby: spends time at home, reads, watches TV, plays online games; friends come over to watch movies. Helen: teenagers should do sports regularly and read every day.</li></ul><b>İstenen</b><p>Konuşmalara göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Helen’ı incele</b> Spor ve kitap okumayı öneriyor; tüm boş zamanı internette geçirmeyi önermiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Helen tüm boş zamanın online geçirilmesini istemiyor → yanlış.</td></tr><tr><td>B</td><td>Abby okul olmayınca evde → doğru.</td></tr><tr><td>C</td><td>Liam arkadaşlarıyla açık hava etkinlikleri → doğru.</td></tr><tr><td>D</td><td>Abby bazen arkadaşlarıyla film izliyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “NOT correct” sorularında her konuşmacının söylediğini seçenekle birebir karşılaştır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Online games” Abby’nin konuşmasında geçer; Helen’ınkinde değil.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 33. soru"
+ },
+ "mebit-ing-f1-34": {
+  "t": "ing-teen",
+  "a": "D",
+  "o": 150034,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Bratt: arrives home, chats online, has a rest; friends come over and watch movies; doesn’t like cycling or skating, prefers staying at home.</li></ul><b>İstenen</b><p>Konuşmada cevabı OLMAYAN soru.</p></div><ol class=\"sv-s\"><li><b>Soruları ara</b> Evde ne yapıyor → var. Arkadaşlarıyla nasıl vakit geçiriyor → film izliyor. Açık hava sever mi → “Not really”. Ne sıklıkla bisiklete biniyor → yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cevabı var.</td></tr><tr><td>B</td><td>Cevabı var.</td></tr><tr><td>C</td><td>Cevabı var.</td></tr><tr class=\"ok\"><td>D</td><td>Bisiklet sıklığı söylenmiyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “How often…?” sorusu sıklık zarfı (always, sometimes, twice a week) ister.</div><div class=\"sv-w\"><b>Tuzak:</b> Konuşmada “cycling” geçtiği için D’nin cevabı var sanılabilir; ama sıklık verilmemiş.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 34. soru"
+ },
+ "mebit-ing-f1-35": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150035,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>David en çok ders çalışıyor; ikinci sırada spor; online oyunlara spordan az zaman ayırıyor; kitap okumaya çok az zaman ayırıyor.</li></ul><b>İstenen</b><p>Doğru grafik.</p></div><ol class=\"sv-s\"><li><b>Sıralamayı kur</b> Studying &gt; Sports &gt; Online games &gt; Reading.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Reading en yüksek → yanlış.</td></tr><tr><td>B</td><td>Sports en yüksek → yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Studying 50, sports 25, games 15, reading 10 → doğru.</td></tr><tr><td>D</td><td>Reading (20) games’ten (10) fazla → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Grafik sorularında önce sıralamayı yaz, sonra grafiklerle karşılaştır.</div><div class=\"sv-w\"><b>Tuzak:</b> D’de ilk iki sıra doğru; son iki sıra ters.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 35. soru"
+ },
+ "mebit-ing-f1-36": {
+  "t": "ing-teen",
+  "a": "C",
+  "o": 150036,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görseller: karate ✓, sushi ✓, çamaşır makinesi ✗, elektro gitar (rock) ✗.</li></ul><b>İstenen</b><p>Görsellere göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Karate ve sushi seviyor; çamaşır ve rock müziği sevmiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Dövüş sporlarını seviyor → doğru.</td></tr><tr><td>B</td><td>Sushi seviyor → doğru.</td></tr><tr class=\"ok\"><td>C</td><td>Rock müziği seviyor → yanlış (gitar ✗).</td></tr><tr><td>D</td><td>Çamaşır yıkamayı sevmiyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Görselin yanındaki işaret (✓/✗) beğeniyi belirler.</div><div class=\"sv-w\"><b>Tuzak:</b> C’deki “trendy” sözcüğü olumlu bir gerekçe ekliyor; ama Jack rock sevmiyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 36. soru"
+ },
+ "mebit-ing-f1-37": {
+  "t": "ing-teen",
+  "a": "D",
+  "o": 150037,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Some of them find rock music terrific, while others think it is unbearable… Tom loves hip-hop… Diana prefers classical music… Katy is fond of rock… teenagers choose their music according to their own styles.”</li></ul><b>İstenen</b><p>Paragrafa göre gençler - - - -.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Gençlerin müzik zevkleri farklıdır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnız klasik müzik değil.</td></tr><tr><td>B</td><td>Aynı türleri dinlemiyorlar.</td></tr><tr><td>C</td><td>Enstrüman çalmaktan söz edilmiyor.</td></tr><tr class=\"ok\"><td>D</td><td>Farklı müzik türlerine ilgi duyuyorlar → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Son cümle (“In short…”) özet verir.</div><div class=\"sv-w\"><b>Tuzak:</b> B, D’nin tam tersidir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 37. soru"
+ },
+ "mebit-ing-f1-38": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150038,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Toby: kamp yaptı; ekran yok, internet yok, temiz hava ve kamp ateşi; açık havada vakit geçirmeyi seviyor.</li><li>Carrie: “I agree… spending the night outdoors sounds peaceful.” David: yürüyüşü sever ama çadırda kalmak ona göre değil. Sam: internetsiz bir yerde kalmak istemiyor. Elena: “That sounds like my kind of weekend! I love sleeping outdoors…”</li></ul><b>İstenen</b><p>Toby ile benzer görüşteki iki kullanıcı.</p></div><ol class=\"sv-s\"><li><b>Destekleyenleri bul</b> Carrie (I agree) ve Elena (my kind of weekend).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>David çadırda kalmak istemiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Carrie ve Elena → doğru.</td></tr><tr><td>C</td><td>David ve Sam katılmıyor.</td></tr><tr><td>D</td><td>Sam internetsiz yerde kalmak istemiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “I agree”, “That sounds like my kind of…” → aynı görüş; “not for me”, “I don’t want” → farklı görüş.</div><div class=\"sv-w\"><b>Tuzak:</b> David ve Sam doğayı tamamen reddetmiyor; ama Toby’nin asıl dediği (internetsiz, dışarıda gece) ile çelişiyorlar.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 38. soru"
+ },
+ "mebit-ing-f1-39": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150039,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Lenard gets up at 6 a.m., has a healthy breakfast, swims two hours; goes to the gym on Tuesdays and Thursdays; on Sundays rests with his family.</li></ul><b>İstenen</b><p>Metne göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Spor salonu günleri</b> Yalnızca salı ve perşembe.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sabah 6’da kalkıyor → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Her gün spor salonuna gitmiyor → yanlış.</td></tr><tr><td>C</td><td>Yüzmeden önce sağlıklı kahvaltı → doğru.</td></tr><tr><td>D</td><td>Pazar günleri ailesiyle dinleniyor → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıklık bilgisini (every day, on Tuesdays) dikkatle eşleştir.</div><div class=\"sv-w\"><b>Tuzak:</b> Lenard her gün yüzüyor ama spor salonuna her gün gitmiyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 39. soru"
+ },
+ "mebit-ing-f1-40": {
+  "t": "ing-teen",
+  "a": "B",
+  "o": 150040,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Teenagers: going online %55, doing sports %25, reading books %16, watching TV %4. Adults: going online %45, watching TV %30, reading books %20, doing sports %5.</li></ul><b>İstenen</b><p>Grafiklere göre doğru olan.</p></div><ol class=\"sv-s\"><li><b>Karşılaştır</b> Spor: gençler %25, yetişkinler %5 → gençlerde daha popüler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yetişkinler TV’yi daha çok tercih ediyor (%30 &gt; %4).</td></tr><tr class=\"ok\"><td>B</td><td>Spor gençlerde daha popüler → doğru.</td></tr><tr><td>C</td><td>Gençler en çok internette (%55).</td></tr><tr><td>D</td><td>İnternet ikisinde de en popüler etkinlik.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Relaxing in front of the TV” = watching TV; “exercising” = doing sports.</div><div class=\"sv-w\"><b>Tuzak:</b> D tam tersini söylüyor: internet en az değil, en çok tercih edilen.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 40. soru"
+ },
+ "mebit-ing-f1-41": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150041,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mia: “- - - -, Tina?” Tina: “It is baked chicken.” Mia: “- - - -?” Tina: “We need some chicken, potatoes, tomatoes, mushrooms, and peppers.” Mia: “- - - -?” Tina: “First, dice the vegetables. Then… Finally, bake the chicken in the oven.”</li></ul><b>İstenen</b><p>Mia’nın sorularından biri OLAMAYACAK seçenek.</p></div><ol class=\"sv-s\"><li><b>Cevaplardan soruya git</b> 1 → What is your favourite food? 2 → What are the ingredients? 3 → How do you prepare it?</li></ol><table class=\"sv-c\"><tr><td>A</td><td>3. soru.</td></tr><tr><td>B</td><td>1. soru.</td></tr><tr class=\"ok\"><td>C</td><td>Servis etmekten söz edilmiyor → doğru.</td></tr><tr><td>D</td><td>2. soru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Malzemeler sayılıyorsa soru “ingredients”; adımlar sıralanıyorsa “How do you prepare/make it?”.</div><div class=\"sv-w\"><b>Tuzak:</b> C de bir hazırlık sorusu gibi görünür; ama cevap servis değil pişirme adımlarıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 41. soru"
+ },
+ "mebit-ing-f1-42": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150042,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“First, she chops all the vegetables. Then, she puts the meat on a baking sheet and adds the vegetables. After that, she pours some oil… Finally, she bakes the meal…”</li></ul><b>İstenen</b><p>Fiona eti tepsiye neyi yaptıktan sonra koyuyor?</p></div><ol class=\"sv-s\"><li><b>Sırayı izle</b> Önce sebzeleri doğruyor (chop), sonra eti tepsiye koyuyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tuz ve baharat sonra ekleniyor.</td></tr><tr class=\"ok\"><td>B</td><td>Sebzeleri küçük parçalara kesmek (chop) → doğru.</td></tr><tr><td>C</td><td>Yağ eti koyduktan sonra dökülüyor.</td></tr><tr><td>D</td><td>Pişirmek en son adım.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Chop = küçük parçalara doğramak = cutting into small pieces.</div><div class=\"sv-w\"><b>Tuzak:</b> “after - - - -” boşluğu eti koymadan ÖNCEKİ adımı ister.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 42. soru"
+ },
+ "mebit-ing-f1-43": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150043,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Linda: always drinks milk and eats cheese for breakfast. Gloria: likes grilled fish with salad. Philip: never eats food with sugar. Roy: usually has a hamburger for lunch because he doesn’t have much time.</li></ul><b>İstenen</b><p>YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Philip</b> Şekerli yiyecekleri hiç yemiyor → tatlı yemesi yanlış.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Süt sağlıklı içecek → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Philip yemekten sonra hep tatlı yiyor → yanlış.</td></tr><tr><td>C</td><td>Balık (seafood) ve salata (vegetables) → doğru.</td></tr><tr><td>D</td><td>Hamburger fast food, zaman yok → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sweet things = şekerli şeyler; never = asla.</div><div class=\"sv-w\"><b>Tuzak:</b> B’deki “always” Philip’in “never”ı ile çelişir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 43. soru"
+ },
+ "mebit-ing-f1-44": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150044,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Diana doesn’t like fast food. Wilma is crazy about red meat. Paige dislikes spicy food and never eats vegetables. They all love desserts.</li></ul><b>İstenen</b><p>Hepsine uygun restoran.</p></div><ol class=\"sv-s\"><li><b>Şartlar</b> Fast food yok + kırmızı et var + baharatsız ve sebzesiz seçenek var + tatlı var.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Kırmızı et yok (balık).</td></tr><tr><td>B</td><td>Fast food menü (hamburger, fries).</td></tr><tr class=\"ok\"><td>C</td><td>Grilled beef (kırmızı et), pasta, soup, chocolate cake → doğru.</td></tr><tr><td>D</td><td>Meatballs kırmızı et ama tatlı (waffle) ve yoğurt var; menüde Paige’in yiyebileceği sebzesiz bir garnitür yok (mashed potatoes); resmî cevap C.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Her kişinin şartını ayrı ayrı menüde ara.</div><div class=\"sv-w\"><b>Tuzak:</b> D de kırmızı et ve tatlı içerdiği için çekicidir; menüdeki patates püresi sebze sayılır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 44. soru"
+ },
+ "mebit-ing-f1-45": {
+  "t": "ing-kitchen",
+  "a": "A",
+  "o": 150045,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Yol: START → “Carla uses a spoon…” → Kitchen Tool → “She adds some butter to the mixture.” → Ingredient → “She fries some potatoes in a pan.”</li></ul><b>İstenen</b><p>Oyunun sonunda ulaşılan cümlenin görseli.</p></div><ol class=\"sv-s\"><li><b>Yolu izle</b> Spoon = mutfak aracı → sol yol. Butter = malzeme (ingredient) → sol alt → “She fries some potatoes in a pan.”</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Tavada kızartılan patates → doğru.</td></tr><tr><td>B</td><td>Rende (grater) → “Cooking Method” yolunun sonu.</td></tr><tr><td>C</td><td>Şeker ekleme → sağ yol.</td></tr><tr><td>D</td><td>Tencerede kaynayan sebze → sağ yol.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kitchen tool = spoon, grater, pan; ingredient = butter, sugar; cooking method = fry, boil.</div><div class=\"sv-w\"><b>Tuzak:</b> Rende bir araçtır; ama yol butter’dan sonra “Ingredient” dalına gider.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 45. soru"
+ },
+ "mebit-ing-f1-46": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150046,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Italian cooking course: 4-hour; fresh pasta, vegetable soup with carrots and tomatoes, pudding; Sunday, April 12th; ₺450 per person (Everything is included!).</li></ul><b>İstenen</b><p>Afişe göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Fiyatı incele</b> “Everything is included” → malzemeler dâhil, fazladan ödeme yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>4 saat, pazar (hafta sonu) → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Malzemeler için fazladan ödeme → yanlış.</td></tr><tr><td>C</td><td>Puding (tatlı) yapılacak → doğru.</td></tr><tr><td>D</td><td>Çorbada havuç ve domates (iki sebze) → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Pudding = tatlı (dessert).</div><div class=\"sv-w\"><b>Tuzak:</b> Domatesin sebze sayılması D’yi doğru yapar.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 46. soru"
+ },
+ "mebit-ing-f1-47": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150047,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ally: fresh vegetables because they are - - - -. Kate: chocolate cakes and ice cream → crazy about - - - -. Bella: cumin and black pepper → love - - - - dishes.</li></ul><b>İstenen</b><p>Hiçbir cümleyi tamamlamayan sözcük.</p></div><ol class=\"sv-s\"><li><b>Boşlukları doldur</b> Ally → healthy. Kate → desserts. Bella → spicy.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Spicy → Bella.</td></tr><tr class=\"ok\"><td>B</td><td>Cuisine (mutfak, yemek kültürü) hiçbir boşluğa uymaz → doğru.</td></tr><tr><td>C</td><td>Healthy → Ally.</td></tr><tr><td>D</td><td>Desserts → Kate.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cumin ve black pepper baharattır → spicy.</div><div class=\"sv-w\"><b>Tuzak:</b> “Cuisine” yemekle ilgili olduğu için uyuyor gibi görünür; ama anlamı “bir ülkenin mutfağı”dır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 47. soru"
+ },
+ "mebit-ing-f1-48": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150048,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Emily: desserts (chocolate cake, baklava). Max: a lot of red pepper. Mother: salads with plenty of lemon juice. Father: never eats anything with too much salt.</li></ul><b>İstenen</b><p>Metinde SÖZÜ EDİLMEYEN tat.</p></div><ol class=\"sv-s\"><li><b>Tatları bul</b> Desserts → sweet. Red pepper → spicy. Lemon juice → sour. Salt → salty.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Spicy → Max.</td></tr><tr><td>B</td><td>Sour → limon.</td></tr><tr class=\"ok\"><td>C</td><td>Oily (yağlı) → yok. Doğru.</td></tr><tr><td>D</td><td>Sweet → tatlılar.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Lemon → sour (ekşi); red pepper → spicy (acı).</div><div class=\"sv-w\"><b>Tuzak:</b> Babanın tuzla ilgili tercihi “salty” tadını anlatır, “oily” değil.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 48. soru"
+ },
+ "mebit-ing-f1-49": {
+  "t": "ing-kitchen",
+  "a": "D",
+  "o": 150049,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Chef Alice: “…first wash the onions, carrots, and potatoes. Second, peel the vegetables. Then, chop them into small pieces. Finally, boil all the ingredients in a large pot.”</li><li>Görseller: A) tencerede kaynatma B) patates soyma C) havuç doğrama D) ızgara.</li></ul><b>İstenen</b><p>Chef Alice’in söz etmediği etkinlik.</p></div><ol class=\"sv-s\"><li><b>Eylemleri eşleştir</b> boil → A. peel → B. chop → C. grill → yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Boil → var.</td></tr><tr><td>B</td><td>Peel → var.</td></tr><tr><td>C</td><td>Chop → var.</td></tr><tr class=\"ok\"><td>D</td><td>Grill (ızgara) → yok. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Peel = soymak; chop = doğramak; boil = kaynatmak; grill = ızgarada pişirmek.</div><div class=\"sv-w\"><b>Tuzak:</b> Yıkama (wash) görsellerde yok; ama soru görsellerden hangisinin anlatılmadığını soruyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 49. soru"
+ },
+ "mebit-ing-f1-50": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150050,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Cameron: cake, mixture ready, oven hot. Tucker: pasta cooked, pour the hot water out. Linda: mix eggs and milk. Myra: chop carrots and onions on the cutting board.</li><li>Araçlar: I çırpma teli ve kâse, II kesme tahtası ve bıçak, III fırın, IV süzgeç.</li></ul><b>İstenen</b><p>Doğru eşleştirme.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Cameron → oven (III). Tucker → colander (IV). Linda → whisk (I). Myra → cutting board (II).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Cameron II, Myra III yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>III – IV – I – II → doğru.</td></tr><tr><td>C</td><td>Linda II, Myra I yanlış.</td></tr><tr><td>D</td><td>Cameron II yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Suyu süzmek → colander (süzgeç); karıştırmak → whisk (çırpma teli).</div><div class=\"sv-w\"><b>Tuzak:</b> Myra’nın cümlesinde “cutting board” açıkça geçer; II ile eşleşir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 50. soru"
+ },
+ "mebit-ing-f1-51": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150051,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Liam: desserts and sweet snacks. Oliver: healthy cooking methods, rarely fries or grills. Sophia: preparation like cutting and dicing.</li><li>Tablo: 1 → baking a strawberry cake. 2 → peeling the potatoes, chopping the onions. 3 → steaming the vegetables, boiling the chicken.</li></ul><b>İstenen</b><p>Eksik isimlerin doğru sırası.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Cake → Liam (1). Peeling, chopping → Sophia (2). Steaming, boiling → Oliver (3).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>2 Oliver yanlış.</td></tr><tr><td>B</td><td>1 Sophia yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>Liam – Sophia – Oliver → doğru.</td></tr><tr><td>D</td><td>1 Oliver yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Steaming ve boiling sağlıklı pişirme yöntemleridir.</div><div class=\"sv-w\"><b>Tuzak:</b> Sophia’nın görevleri hazırlıktır (peel, chop); pişirme değildir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 51. soru"
+ },
+ "mebit-ing-f1-52": {
+  "t": "ing-kitchen",
+  "a": "D",
+  "o": 150052,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Scott: prefers nutritious food, never eats fried dishes, likes making desserts, interested in new recipes from different countries.</li><li>Grant: prefers steamed vegetables, enjoys baking strawberry cakes, follows popular food blogs for new recipes.</li></ul><b>İstenen</b><p>Scott ile ortak ilgileri olan kişi.</p></div><ol class=\"sv-s\"><li><b>Karşılaştır</b> Grant: sağlıklı yemek ✓, tatlı yapma ✓, yeni tarifler ✓.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Fred fast food sever, yeni yemek denemez.</td></tr><tr><td>B</td><td>Kylie geleneksel yemekler, acı yemek; tatlı ve yeni tarif yok.</td></tr><tr><td>C</td><td>Hazel tatlıyı sağlıksız buluyor, geleneksel Türk yemeği tercih ediyor.</td></tr><tr class=\"ok\"><td>D</td><td>Grant → üç ortak nokta. Doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Steamed vegetables → nutritious food; baking cakes → making desserts; food blogs → new recipes.</div><div class=\"sv-w\"><b>Tuzak:</b> Hazel’ın ızgara balığı sağlıklıdır ama tatlı ve yeni tarif konusunda Scott’la çelişir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 52. soru"
+ },
+ "mebit-ing-f1-53": {
+  "t": "ing-kitchen",
+  "a": "A",
+  "o": 150053,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Cooking at home is a great hobby… homemade food is healthier… learn how to use kitchen tools… trying new recipes… spend time with family or friends… cooking at home is both healthy and fun.”</li></ul><b>İstenen</b><p>Metnin konusu.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Evde yemek yapmanın yararları sıralanıyor → evde yemek yapmak için nedenler.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Evde yemek yapmanın nedenleri → doğru.</td></tr><tr><td>B</td><td>Tarif öğrenme yolları ayrıntıdır.</td></tr><tr><td>C</td><td>Dışarıda yemekten söz edilmiyor.</td></tr><tr><td>D</td><td>Fast food yalnızca bir karşılaştırmada geçiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “First of all, Also, In short” sözcükleri gerekçeleri sıralar.</div><div class=\"sv-w\"><b>Tuzak:</b> D, metindeki bir cümleyi (homemade vs fast food) genel konu gibi gösterir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 53. soru"
+ },
+ "mebit-ing-f1-54": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150054,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Station 1 baking a cake, 2 frying meatballs, 3 steaming vegetables, 4 roasting beef.</li><li>Max: broccoli and carrots over boiling water. Emma: dessert. Nelson: meat in the oven. Allison: meat with oil in a pan.</li></ul><b>İstenen</b><p>Doğru tablo.</p></div><ol class=\"sv-s\"><li><b>Eşleştir</b> Max → steaming (3). Emma → cake (1). Nelson → roasting beef (4). Allison → frying (2).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Max 4 yanlış.</td></tr><tr><td>B</td><td>Max 4, Nelson 3 yanlış.</td></tr><tr class=\"ok\"><td>C</td><td>3 – 1 – 4 – 2 → doğru.</td></tr><tr><td>D</td><td>Nelson 2, Allison 4 yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Over boiling water → steam; oil in a pan → fry; oven → roast/bake.</div><div class=\"sv-w\"><b>Tuzak:</b> Nelson ve Allison ikisi de et pişiriyor; fırın (roast) ile tava (fry) farkına bak.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 54. soru"
+ },
+ "mebit-ing-f1-55": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150055,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“First, you should read the recipe and check the ingredients. Then, you should prepare the kitchen tools… you must wash the vegetables… you have to follow the process carefully…”</li></ul><b>İstenen</b><p>Paragrafa göre - - - -.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Mutfakta adımları dikkatle ve düzenli takip etmek gerekir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rende, çırpma teli gibi araçlar gerekiyor.</td></tr><tr><td>B</td><td>Fast food’dan söz edilmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>Mutfakta dikkatli ve düzenli olmalısın → doğru.</td></tr><tr><td>D</td><td>Yemek yapmanın birçok adımı var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “should, must, have to” cümleleri öneri ve zorunluluk bildirir.</div><div class=\"sv-w\"><b>Tuzak:</b> D metnin ilk cümlesiyle (“has many steps”) çelişir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 55. soru"
+ },
+ "mebit-ing-f1-56": {
+  "t": "ing-kitchen",
+  "a": "B",
+  "o": 150056,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Pasta grafiği: Grilling %45, Baking %30, Boiling %15, Steaming %10.</li></ul><b>İstenen</b><p>Sonuçlara göre doğru olan.</p></div><ol class=\"sv-s\"><li><b>Seçenekleri sına</b> Sıcak suda pişirme (boiling + steaming) = %25 → yarıdan az. En popüler grilling (%45).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sıcak suda pişirme %25 → yarıdan fazla değil.</td></tr><tr class=\"ok\"><td>B</td><td>Grilling en popüler → doğru.</td></tr><tr><td>C</td><td>Steaming (%10) en az popüler.</td></tr><tr><td>D</td><td>Fırında pişirme (baking) %30.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Boiling ve steaming suyla pişirmedir; baking fırında pişirmedir.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “never use the oven” baking’in %30 olmasıyla çelişir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 56. soru"
+ },
+ "mebit-ing-f1-57": {
+  "t": "ing-kitchen",
+  "a": "D",
+  "o": 150057,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Görseller: Vincent tencerede makarna kaynatıyor; Rose hamur yoğuruyor; Taylor kâsede yumurta çırpıyor; Vivian ocakta tavada yemek kızartıyor.</li></ul><b>İstenen</b><p>Görsellere göre YANLIŞ olan.</p></div><ol class=\"sv-s\"><li><b>Vivian</b> Fırında değil, ocakta tavada pişiriyor (fry).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Rose hamur yoğuruyor → doğru.</td></tr><tr><td>B</td><td>Vincent makarna kaynatıyor → doğru.</td></tr><tr><td>C</td><td>Taylor çırpma teliyle yumurta çırpıyor → doğru.</td></tr><tr class=\"ok\"><td>D</td><td>Vivian fırında tavuk pişirmiyor → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Knead = yoğurmak; whisk = çırpmak; fry = kızartmak; bake = fırında pişirmek.</div><div class=\"sv-w\"><b>Tuzak:</b> Vivian’ın görselinde ocak var ama fırın kapağı kapalı; tava ocağın üstünde.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 57. soru"
+ },
+ "mebit-ing-f1-58": {
+  "t": "ing-kitchen",
+  "a": "C",
+  "o": 150058,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mary: “Grandma, I want to make your special meatballs, but I don’t know the process. Can you help me?”</li></ul><b>İstenen</b><p>Konuşmayı tamamlayan cevap.</p></div><ol class=\"sv-s\"><li><b>İsteğe uygun cevap</b> Yardım isteniyor ve süreç soruluyor → kabul + ilk adım.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yardımı reddediyor ve süreçten söz etmiyor.</td></tr><tr><td>B</td><td>Aç olmadığını söylüyor; ilgisiz.</td></tr><tr class=\"ok\"><td>C</td><td>“Sure, dear. First, put the minced meat into a large bowl” → doğru.</td></tr><tr><td>D</td><td>Teşekkür eden Mary olmalı; büyükanne değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Can you help me?” → “Sure” + ilk adım (First, …).</div><div class=\"sv-w\"><b>Tuzak:</b> D kibar bir cümle ama konuşanlar ters.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 58. soru"
+ },
+ "mebit-ing-f1-59": {
+  "t": "ing-kitchen",
+  "a": "A",
+  "o": 150059,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nearly half prefer grilling. Baking is the second most popular. The same number prefer boiling and steaming.</li></ul><b>İstenen</b><p>Sonuçları gösteren grafik.</p></div><ol class=\"sv-s\"><li><b>Şartları uygula</b> Grilling ≈ 45 (yarıya yakın). Baking ikinci. Boiling = steaming.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Grilling 45, baking 25, boiling 15, steaming 15 → doğru.</td></tr><tr><td>B</td><td>Baking en yüksek.</td></tr><tr><td>C</td><td>Boiling ikinci; boiling ≠ steaming.</td></tr><tr><td>D</td><td>Grilling yarıdan fazla (55); boiling ≠ steaming.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Nearly half” = yarıya yakın ama yarıdan az (%40–49).</div><div class=\"sv-w\"><b>Tuzak:</b> D’de grilling “yarıdan fazla”; “nearly half” değil.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 59. soru"
+ },
+ "mebit-ing-f1-60": {
+  "t": "ing-kitchen",
+  "a": "D",
+  "o": 150060,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Arthur never eats chicken or seafood. Mina prefers vegetables and always chooses cold beverages. Luis always has a dessert after his meal. Sylvia always chooses white meat and a warm drink on cold days.</li></ul><b>İstenen</b><p>Doğru OLAMAYACAK seçenek.</p></div><ol class=\"sv-s\"><li><b>Sylvia</b> Beyaz et ve sıcak içecek seçer; dana burger (kırmızı et) ve buzlu meyve suyu ikisi de uymaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Arthur dana biftek → olabilir.</td></tr><tr><td>B</td><td>Mina yeşil salata ve soğuk limonata → olabilir.</td></tr><tr><td>C</td><td>Luis makarnadan sonra çikolatalı kek → olabilir.</td></tr><tr class=\"ok\"><td>D</td><td>Sylvia dana burger ve buzlu içecek → olamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> White meat = tavuk, balık; red meat = dana, kuzu.</div><div class=\"sv-w\"><b>Tuzak:</b> Hava soğuk; ama Mina “always” soğuk içecek seçiyor, bu yüzden B olabilir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 60. soru"
  }
 });

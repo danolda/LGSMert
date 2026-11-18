@@ -740,5 +740,425 @@ LGS.addMeb({
   "o": 100105,
   "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zekâtla yükümlü olmak için gereken asgari zenginlik ölçüsü soruluyor.</li></ul><b>İstenen</b><p>Bu ölçünün adı.</p></div><ol class=\"sv-s\"><li><b>Kavramlar</b> <b>Nisap:</b> zekât için gereken asgari zenginlik (ör. 80,18 g altın). Öşür: toprak ürünlerinin zekâtı. İnfak: Allah yolunda harcama. Sadaka: her türlü iyilik.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İnfak harcamadır.</td></tr><tr class=\"ok\"><td>B</td><td>Nisap → asgari zenginlik ölçüsü.</td></tr><tr><td>C</td><td>Öşür toprak ürünü zekâtıdır.</td></tr><tr><td>D</td><td>Sadaka her türlü iyiliktir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Nisap = zekâtın alt sınırı.</div><div class=\"sv-w\"><b>Tuzak:</b> Öşür de zekâtla ilgili bir terim olduğu için karıştırılabilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
   "lb": "MEB Yaprak Test 7 · 19. soru"
+ },
+ "mebit-din-f1-1": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150001,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Anlamlar: I. Hükmetmek II. Planlamak III. Ölçüyle yapmak IV. Yaratmak V. Gerçekleştirmek</li></ul><b>İstenen</b><p>Kader ve kaza anlamlarının doğru gruplanması.</p></div><ol class=\"sv-s\"><li><b>Tanımları hatırla</b> Kader = Allah’ın her şeyi ezelde bilip bir ölçüye göre <b>planlaması</b>. Kaza = planlananın zamanı gelince <b>yaratılması, gerçekleşmesi</b>, Allah’ın hükmünü uygulaması.</li><li><b>Grupla</b> Plan aşaması → II, III (kader). Uygulama aşaması → I, IV, V (kaza).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I (hükmetmek) kazadır; III kaderdir.</td></tr><tr class=\"ok\"><td>B</td><td>Kader II-III, kaza I-IV-V → doğru.</td></tr><tr><td>C</td><td>I ve V kazadır; II kaderdir.</td></tr><tr><td>D</td><td>IV ve V kazadır; I ve III karışmış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader = plan, ölçü, takdir. Kaza = hüküm, yaratma, gerçekleştirme.</div><div class=\"sv-w\"><b>Tuzak:</b> “Hükmetmek” karar vermek gibi göründüğü için kader sanılabilir; kazanın sözlük anlamı “hüküm vermek, yerine getirmek”tir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 1. soru"
+ },
+ "mebit-din-f1-2": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150002,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Kader: Allah’ın ezelde her şeyi bilip belirlemesi. Kaza: Belirlenenlerin zamanı gelince gerçekleşmesi.</li></ul><b>İstenen</b><p>Kader-kaza ilişkisine doğru örnek.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> Kural, düzen, koşul → kader (önceden belirlenen). O kurala göre olan olay → kaza (gerçekleşen).</li><li><b>Şıkları sına</b> C’de donma sıcaklığı koşulları (belirlenmiş ölçü) → kader; gölün donması (gerçekleşen) → kaza.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ters: Yasa kaderdir, düşme kazadır.</td></tr><tr><td>B</td><td>Ters: Düzen kaderdir, olgunlaşma kazadır.</td></tr><tr class=\"ok\"><td>C</td><td>Koşullar kader, donma olayı kaza → doğru.</td></tr><tr><td>D</td><td>Ters: Mevsim düzeni kaderdir, ilkbaharın gelmesi kazadır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yasa/düzen/koşul = kader; o yasanın sonucu olan olay = kaza.</div><div class=\"sv-w\"><b>Tuzak:</b> Üç şıkta ifadeler yer değiştirilmiş; sadece hangi kelimenin “kural”, hangisinin “olay” olduğuna bak.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 2. soru"
+ },
+ "mebit-din-f1-3": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150003,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayet: “Şüphesiz biz her şeyi bir ölçüye göre yarattık.” (Kamer 49)</li><li>Hadis: Bütün varlıklar sana yarar ya da zarar vermek için toplansa, ancak Allah yazmışsa yarar ya da zarar verebilirler.</li></ul><b>İstenen</b><p>Metinden ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Ortak mesaj</b> Her şey Allah’ın ölçüsüne ve takdirine (planına) göre olur.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Gelişmelerin Allah’ın planı çerçevesinde olması → doğru.</td></tr><tr><td>B</td><td>İrade ve sorumluluk doğru bir bilgidir ama metinde yoktur.</td></tr><tr><td>C</td><td>Hadis tam tersini söyler: herkes toplansa da Allah yazmadıkça olmaz.</td></tr><tr><td>D</td><td>Metinde olayların sebebi olarak insanın hatası geçmez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kamer 49 kader konusunun temel ayetidir: “her şey bir ölçüye göre”.</div><div class=\"sv-w\"><b>Tuzak:</b> B kader konusuyla ilgili doğru bir bilgi olduğu için çekicidir; ama bu metinden çıkmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 3. soru"
+ },
+ "mebit-din-f1-4": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150004,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mühendis köprüyü tasarlarken yer çekimi, rüzgâr, malzeme dayanıklılığı, suyun akış kuvveti gibi verileri dikkate aldı.</li></ul><b>İstenen</b><p>Yapılamayacak yorum.</p></div><ol class=\"sv-s\"><li><b>Metni yorumla</b> Mühendis Allah’ın koyduğu fiziksel yasalardan yararlanıyor, tedbir alıyor, insanlara kolaylık sağlıyor.</li><li><b>Aşırı yorumu bul</b> Bir köprü tasarımı bilimin tamamlandığını göstermez; bilim sürekli gelişir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yer çekimi, rüzgâr → fiziksel yasalar. Yapılır.</td></tr><tr><td>B</td><td>Verileri dikkate alma → tedbir. Yapılır.</td></tr><tr><td>C</td><td>Köprü → insanların hizmetine. Yapılır.</td></tr><tr class=\"ok\"><td>D</td><td>“Bilimsel çalışmalar tamamlandı” aşırı bir yargıdır. Yapılamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Evrendeki yasalar keşfedildikçe teknoloji gelişir; keşif hiç bitmez.</div><div class=\"sv-w\"><b>Tuzak:</b> “Tamamlandı, kesinlikle, her zaman” gibi kesin ifadeler genellikle yanlış yorumdur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 4. soru"
+ },
+ "mebit-din-f1-5": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150005,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Cebrail hadisi: Hz. Peygamber İslam’ın şartlarını, imanın şartlarını (Allah, melekler, kitaplar, peygamberler, ahiret, kader) ve ihsanı (“Allah’ı görüyormuş gibi ibadet etmen”) anlattı; Cebrail dini öğretmek için gelmişti.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>İhsanı tanımla</b> İhsan, ibadetin Allah’ı görüyormuş gibi <b>bilinçle ve içtenlikle</b> yapılmasıdır; ibadetlerin şeklini belirlemez.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İmanın şartları arasında kader sayılmış. Ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>İhsan ibadetin şeklini değil, içtenliğini anlatır. Ulaşılamaz.</td></tr><tr><td>C</td><td>Cebrail dini öğretmek için gelmişti. Ulaşılır.</td></tr><tr><td>D</td><td>“Allah’ı görüyormuş gibi” → bilinçli ibadet. Ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam = ibadetler (şekil), iman = inanç esasları, ihsan = ibadetteki içtenlik ve bilinç.</div><div class=\"sv-w\"><b>Tuzak:</b> İhsan ibadetle ilgili olduğu için “şekil” ile karıştırılabilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 5. soru"
+ },
+ "mebit-din-f1-6": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150006,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Feyza’nın işaretleri: I ✓, II ✗, III ✗, IV ✓, V ✓.</li></ul><b>İstenen</b><p>Feyza’nın doğru işaretlediği ifadeler.</p></div><ol class=\"sv-s\"><li><b>Her ifadenin gerçek durumunu bul</b> I doğru (düzen Allah’ın yasalarına bağlı). II doğru (kaza tanımı). III yanlış (kadere iman <b>iman</b> esasıdır, ibadet esası değil). IV doğru. V doğru.</li><li><b>Karşılaştır</b> I: doğru-✓ uyumlu. II: doğru ama ✗ → yanlış işaret. III: yanlış-✗ uyumlu. IV, V: doğru-✓ uyumlu.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru işaretlenmiş.</td></tr><tr><td>II</td><td>Yanlış işaretlenmiş (kaza tanımı doğrudur).</td></tr><tr><td>III</td><td>Doğru işaretlenmiş (✗).</td></tr><tr class=\"ok\"><td>D</td><td>I, III, IV ve V.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Doğru işaretlemek” = doğruya ✓, yanlışa ✗ koymak. ✗ konmuş bir yanlış ifade de doğru işaretlenmiş sayılır.</div><div class=\"sv-w\"><b>Tuzak:</b> Yalnızca ✓ olanları saymak (I, IV, V) en sık hatadır; III’ün ✗’i de doğrudur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 6. soru"
+ },
+ "mebit-din-f1-7": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150007,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Renkler: Fiziksel yasalar yeşil, biyolojik yasalar gri, toplumsal yasalar turuncu.</li><li>I. Önceki toplumların sonuna bakın (Fatır 44). II. Topraktan, nutfeden yaratma; gebelik, doğum (Fatır 11). III. Yedi göğün uyum içinde yaratılması (Mülk 3).</li></ul><b>İstenen</b><p>Ayetlerle renklerin doğru eşleşmesi.</p></div><ol class=\"sv-s\"><li><b>Ayetleri yasalarla eşleştir</b> I toplumların sonu → toplumsal → turuncu. II yaratılış, gebelik → biyolojik → gri. III gökler, evrendeki uyum → fiziksel → yeşil.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Turuncu-Gri-Yeşil → doğru.</td></tr><tr><td>B</td><td>II biyolojiktir (gri), III fizikseldir (yeşil); yer değiştirmiş.</td></tr><tr><td>C</td><td>I toplumsaldır, gri değil.</td></tr><tr><td>D</td><td>I yeşil değil, III turuncu değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Toplum, kavim, millet → toplumsal yasa; doğum, büyüme, beslenme → biyolojik; gök, yer çekimi, hareket → fiziksel.</div><div class=\"sv-w\"><b>Tuzak:</b> Renk tablosunu ayetle değil yasa adıyla eşle; önce yasayı bul, sonra rengi.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 7. soru"
+ },
+ "mebit-din-f1-8": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150008,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>F Grubu (fiziksel yasalar): Elif, Sevde, Muhammet. B Grubu (biyolojik): Eslem, Ayşe, İbrahim. T Grubu (toplumsal): Yusuf, Ahmet, Ömer.</li></ul><b>İstenen</b><p>Yanlış öğrenci-konu eşleştirmesi.</p></div><ol class=\"sv-s\"><li><b>Konuları yasaya göre ayır</b> Anne karnında yaratılış → biyolojik. Gece-gündüz → fiziksel. Dağların işlevi → fiziksel. Komşuluk hakları → toplumsal.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ayşe (B) – yaratılış evreleri (biyolojik) → uyumlu.</td></tr><tr class=\"ok\"><td>B</td><td>Yusuf (T) – gece ve gündüz (fiziksel) → uyumsuz.</td></tr><tr><td>C</td><td>Sevde (F) – dağlar (fiziksel) → uyumlu.</td></tr><tr><td>D</td><td>Ahmet (T) – komşuluk (toplumsal) → uyumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Önce öğrencinin grubunu, sonra konunun yasa türünü bul; ikisi aynı değilse eşleştirme yanlıştır.</div><div class=\"sv-w\"><b>Tuzak:</b> Gece-gündüzün düzeni insanların hayatını etkiler; ama Dünya’nın hareketiyle ilgili olduğu için fiziksel yasadır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 8. soru"
+ },
+ "mebit-din-f1-9": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150009,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Hükümranlık elinde olan Allah… her şeye <b>hakkıyla gücü yetendir</b>.” (Mülk 1)</li><li>“Allah’ın <b>dilemesi</b> olmadıkça siz dileyemezsiniz.” (İnsan 30) · “O, kulların yaptıklarını ve yapacaklarını <b>bilir</b>.” (Bakara 255)</li></ul><b>İstenen</b><p>Yer verilmeyen sıfat.</p></div><ol class=\"sv-s\"><li><b>Sıfatları eşleştir</b> Gücü yetmek → <b>Kudret</b>. Dilemek → <b>İrade</b>. Bilmek → <b>İlim</b>.</li><li><b>Eksik olanı bul</b> Tekvin (yaratma) ifadesi yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İlim → “bilir” var.</td></tr><tr><td>B</td><td>İrade → “dilemesi” var.</td></tr><tr><td>C</td><td>Kudret → “gücü yeten” var.</td></tr><tr class=\"ok\"><td>D</td><td>Tekvin (yaratmak) ayetlerde yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader ve kaza bu dört sıfatla ilgilidir: İlim (bilir), İrade (diler), Kudret (gücü yeter), Tekvin (yaratır).</div><div class=\"sv-w\"><b>Tuzak:</b> “Hükümranlık” sözcüğü yaratma (tekvin) sanılabilir; ama altı çizili kısım “gücü yetendir”dir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 9. soru"
+ },
+ "mebit-din-f1-10": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150010,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hz. Ömer veba olan bölgeye gitmekten vazgeçti. “Allah’ın kaderinden mi kaçıyorsun?” sorusuna “Allah’ın kaderinden yine Allah’ın kaderine kaçıyoruz.” dedi.</li><li>Verimli araziyi seçen çobanın da Allah’ın kaderiyle hareket ettiğini söyledi.</li></ul><b>İstenen</b><p>Metinde vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>Ana fikri bul</b> Tehlikeden korunmak için tedbir almak kadere aykırı değildir; tedbir de kaderin içindedir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İstişare metinde geçer ama ana vurgu değildir.</td></tr><tr class=\"ok\"><td>B</td><td>Tedbirli davranmak inanca uygundur → ana vurgu.</td></tr><tr><td>C</td><td>Önlem salgına özel değil; çoban örneği genel bir ilke verir.</td></tr><tr><td>D</td><td>Yöneticinin sorumluluğu metnin ana fikri değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader anlayışı tedbiri dışlamaz: “Deveni bağla, sonra tevekkül et.”</div><div class=\"sv-w\"><b>Tuzak:</b> Salgın geçtiği için C cazip görünür; ama çoban örneği mesajın genel olduğunu gösterir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 10. soru"
+ },
+ "mebit-din-f1-11": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150011,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayten Hanım doğuştan görme engelli; bunun kendi iradesiyle olmadığını, Allah’ın takdiri olduğunu söylüyor.</li><li>Eğitimini, mesleğini kendisi seçti; zorlandı ama vazgeçmedi; bugün çalışıyor ve gençlere tercihlerinin hayatlarını değiştirebileceğini anlatıyor.</li></ul><b>İstenen</b><p>Yaşamıyla ilgili doğru değerlendirme.</p></div><ol class=\"sv-s\"><li><b>Metnin vurgusu</b> İradesi dışındaki bir durum (engel) olsa da, iradesiyle yaptığı seçimlerle hayatına yön vermiş.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Metinde geçen bir bilgidir; ama yaşamının değerlendirmesi değil, yalnızca başlangıç durumudur.</td></tr><tr><td>B</td><td>Tersi: Zorluklara rağmen tercihler yaptı.</td></tr><tr class=\"ok\"><td>C</td><td>Engellere rağmen tercihleriyle hayatına yön verdi → metnin ana değerlendirmesi.</td></tr><tr><td>D</td><td>Çevreden destek metinde geçmez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İnsanın iradesi dışındakiler (doğum yeri, göz rengi, engel) ile iradesiyle yaptıkları (eğitim, meslek) ayrımı kader konusunun özüdür.</div><div class=\"sv-w\"><b>Tuzak:</b> A metindeki bir cümleyi tekrarlar; soru Ayten Hanım’ın yaşamının bütününe dair değerlendirmeyi istiyor. Resmî anahtar C’dir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 11. soru"
+ },
+ "mebit-din-f1-12": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150012,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“İnsan için ancak çalıştığının karşılığı vardır.” (Necm 39)</li><li>“Bir toplum kendi durumunu değiştirmedikçe Allah onların durumunu değiştirmez.” (Rad 11)</li></ul><b>İstenen</b><p>Ayetlerin ortak mesajı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Birinci ayet bireyin çalışmasını, ikinci ayet toplumun çabasını vurgular. Ortak mesaj: Sonucu elde etmede insanın gayreti önemlidir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ahiret karşılığı ayetlerde açıkça yok.</td></tr><tr><td>B</td><td>Yalnızca ikinci ayetle ilgilidir.</td></tr><tr><td>C</td><td>Güç yetecek kadar sorumluluk başka bir ayetin (Bakara 286) konusudur.</td></tr><tr class=\"ok\"><td>D</td><td>Kendi gayreti → iki ayetin ortak mesajı.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Ortak mesaj” sorularında her iki metne de uyan şıkkı seç.</div><div class=\"sv-w\"><b>Tuzak:</b> B ikinci ayete çok yakındır; ama birinci ayetle ilgisi yoktur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 12. soru"
+ },
+ "mebit-din-f1-13": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150013,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ses sanatçısı: Sesimin güzelliği bana verilmiş bir nimet. Yıllarca ders alıp çalışmak benim gayretimle oldu. Bana düşen yeteneğimin hakkını vermekti; değerlendirmeseydim bugün burada olmayabilirdim.</li></ul><b>İstenen</b><p>Vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>İki unsuru ayır</b> Yetenek → Allah’ın verdiği nimet (iradesi dışında). Gelişme → kendi emeği (iradesiyle). Sonuç → İkisi birlikte başarıyı getirdi.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Yetenek emekle değer kazanır → ana vurgu.</td></tr><tr><td>B</td><td>Yeteneğin küçük yaşta fark edilmesi metinde yok.</td></tr><tr><td>C</td><td>Rehberlik önemli olsa da metnin konusu değildir.</td></tr><tr><td>D</td><td>Nimet geçer ama vurgu şükür değil, nimeti emekle değerlendirmektir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Verilen yetenek + gösterilen emek = başarı. Kader anlayışı tembelliği değil çalışmayı teşvik eder.</div><div class=\"sv-w\"><b>Tuzak:</b> “Nimet” sözcüğü D’yi çekici yapar; metnin ağırlığı “çalışmak, hakkını vermek” üzerindedir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 13. soru"
+ },
+ "mebit-din-f1-14": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150014,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sorumluluk şartları: akıllı olmak, işi bilerek yapmak, işi kendi tercihiyle yapmak.</li></ul><b>İstenen</b><p>Kişinin sorumluluğundan söz edilemeyecek örnek.</p></div><ol class=\"sv-s\"><li><b>Şartları her örnekte sına</b> Narkoz etkisindeki hasta ne yaptığını bilmez ve iradesini kullanamaz → şartlar eksik.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Narkoz → bilinç ve irade yok → sorumlu değil.</td></tr><tr><td>B</td><td>Bilerek ve isteyerek eksik yapıyor → sorumlu.</td></tr><tr><td>C</td><td>Uyarılmasına rağmen ihmal ediyor → sorumlu.</td></tr><tr><td>D</td><td>Kuralı bilip uygulamıyor → sorumlu.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Akıl + bilgi + irade (tercih) = sorumluluk. Biri yoksa sorumluluk düşer.</div><div class=\"sv-w\"><b>Tuzak:</b> B, C, D’de kişi hata yapıyor ama bilerek ve isteyerek yapıyor; bu sorumluluğu kaldırmaz.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 14. soru"
+ },
+ "mebit-din-f1-15": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150015,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İnsan akıl ve iradesiyle seçim yapar. Allah sonsuz ilmiyle insanın ne seçeceğini ezelde bilir; bu bilgi bir zorlama değildir.</li><li>İnsan iradesiyle yaptığı tercihlerden sorumludur ve hesaba çekilecektir.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki fikirler</b> Allah’ın bilmesi zorlama değil → insan özgür (A). Hesap iradeye bağlı (B). Allah olmuş ve olacak her şeyi bilir (D).</li><li><b>Fazlalığı bul</b> Vahiyden ve rehberliğinden metinde hiç söz edilmiyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bilgi zorlama değildir → insan seçiminde özgürdür. Ulaşılır.</td></tr><tr><td>B</td><td>İradesiyle yaptığından sorumlu. Ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Vahiy metinde yok. Ulaşılamaz.</td></tr><tr><td>D</td><td>“Olmuş ve olacak her şeyi bilir.” Ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Allah’ın bilmesi, insanı zorlamak değildir: Öğretmenin öğrencinin sınav sonucunu tahmin etmesi o sonucu belirlemez.</div><div class=\"sv-w\"><b>Tuzak:</b> C doğru bir dinî bilgidir ama bu metinde geçmez.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 15. soru"
+ },
+ "mebit-din-f1-16": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150016,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Cüzi irade kapsamında değerlendirilemeyecek örnek.</p></div><ol class=\"sv-s\"><li><b>Cüzi iradeyi tanımla</b> Cüzi irade = insanın seçim yapma gücü; kendi tercihiyle yaptığı davranışlar.</li><li><b>Şıkları sına</b> Göz rengi genetikle belirlenir; insanın seçimi değildir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Göz rengi kişinin tercihi değil → cüzi irade dışında.</td></tr><tr><td>B</td><td>Spor yapmaya karar vermek → tercih.</td></tr><tr><td>C</td><td>Boş vakitte kitap okumak → tercih.</td></tr><tr><td>D</td><td>Özür dilemek → tercih.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İradesi dışında olanlar: doğum yeri, anne-baba, göz rengi, boy. İradesiyle olanlar: çalışmak, okumak, davranışlar.</div><div class=\"sv-w\"><b>Tuzak:</b> Hepsi “Rümeysa, Ahmet…” diye kişiyle başlar; fiile bak: “belirlemesi” ile “başlaması” farklıdır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 16. soru"
+ },
+ "mebit-din-f1-17": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150017,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Maddi ve manevi nimetler. II. Doğumdan ölüme kadarki sınırlı süre. III. Sorumluluğu yerine getirdikten sonra Allah’a güvenmek. IV. Hayat süresinin sona erdiği an.</li></ul><b>İstenen</b><p>Açıklamaların doğru kavramlarla eşleşmesi.</p></div><ol class=\"sv-s\"><li><b>Kavramları tanımla</b> Rızık = nimetler. Ömür = hayat süresi. Tevekkül = tedbirden sonra Allah’a güvenmek. Ecel = ömrün bittiği an.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Rızık-Ömür-Tevekkül-Ecel → doğru.</td></tr><tr><td>B</td><td>I ecel değil rızıktır.</td></tr><tr><td>C</td><td>I ömür değil rızıktır.</td></tr><tr><td>D</td><td>II ecel değil ömürdür; IV ömür değil eceldir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ömür bir “süre”, ecel bir “an”dır.</div><div class=\"sv-w\"><b>Tuzak:</b> Ömür ve ecel en çok karıştırılan çifttir (D şıkkı).</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 17. soru"
+ },
+ "mebit-din-f1-18": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150018,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Ömür ve ecel arasındaki ilişkinin doğru açıklaması.</p></div><ol class=\"sv-s\"><li><b>Tanımlar</b> Ömür = insanın hayat süresi. Ecel = bu sürenin sona erdiği an.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Geçim imkânları rızıktır, ömür değil.</td></tr><tr class=\"ok\"><td>B</td><td>Ömür süre, ecel bitiş anı → doğru.</td></tr><tr><td>C</td><td>Tedbir ve sonuç tevekkülle ilgilidir.</td></tr><tr><td>D</td><td>Allah’a güvenmek tevekküldür; çalışmanın karşılığı rızıktır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ecel kesin olarak gelir; sağlığa dikkat etmek ise ömrü verimli yaşamanın gereğidir.</div><div class=\"sv-w\"><b>Tuzak:</b> A, C, D başka kavramların (rızık, tevekkül) tanımlarını ömür ve ecele yüklüyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 18. soru"
+ },
+ "mebit-din-f1-19": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150019,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>“Her can ölümü tadacaktır. Sonunda bize döndürüleceksiniz.” (Ankebut 57)</li></ul><b>İstenen</b><p>Ayetten ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Ayetin iki mesajı</b> Ölüm kesindir (ömür geçicidir). Allah’a dönülecek, yani hesap verilecektir → sorumlu davranmak gerekir.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Geçicilik + dönüş (hesap) → sorumlu davranış → doğru.</td></tr><tr><td>B</td><td>Ömürlerin farklı olduğu ayette yok.</td></tr><tr><td>C</td><td>Ecelin tanımı doğru ama ayetten çıkmaz.</td></tr><tr><td>D</td><td>Ömrün Allah’ın takdiriyle belirlenmesi doğru bir bilgidir; bu ayette ifade edilmez.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Bize döndürüleceksiniz” → ahiret ve hesap → sorumluluk.</div><div class=\"sv-w\"><b>Tuzak:</b> C ve D doğru bilgilerdir; soru “bu ayete göre” diyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 19. soru"
+ },
+ "mebit-din-f1-20": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150020,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Rızık, insanın yararlandığı maddi ve manevi nimetlerdir. II. Rızık, insanın çalışması oranında artar ya da azalır. III. Rızık elde edilirken helal yollar gözetilmelidir.</li></ul><b>İstenen</b><p>Doğru kader anlayışıyla uyumlu yargılar.</p></div><ol class=\"sv-s\"><li><b>Öncülleri sına</b> I rızkın tanımıdır ✓. III helal kazanç şartı ✓. II rızkı yalnızca çalışmaya bağlar; oysa rızkı veren Allah’tır, çalışmak rızka ulaşmanın yoludur ama miktarını tek başına belirlemez ✗.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru tanım.</td></tr><tr><td>II</td><td>Rızık yalnızca çalışma oranında artıp azalmaz.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>D</td><td>I ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rızık için çalışmak gerekir; ama sonuç yalnızca emeğe bağlanmaz, rızkı veren Allah’tır (Rezzak).</div><div class=\"sv-w\"><b>Tuzak:</b> II, “çalışmak gerekir” bilgisine benzediği için doğru sanılır; “oranında” kelimesi onu kesin ve yanlış bir kurala çeviriyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 20. soru"
+ },
+ "mebit-din-f1-21": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150021,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hz. Muhammed baskı döneminde Medinelilerle Mekke dışında görüştü; hicrette rehberle önceden anlaştı, doğrudan Medine yoluna çıkmadı, Sevr Mağarası’nda kaldı.</li><li>Medine’de düşmana karşı hendek kazdırdı.</li></ul><b>İstenen</b><p>Tevekkülün ortaya konan yönü.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Her olayda önce plan ve tedbir var, sonra Allah’a güven.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Allah’a güven + tedbir birlikte → doğru.</td></tr><tr><td>B</td><td>Başarıyı yalnızca tedbire bağlamak tevekküle aykırıdır.</td></tr><tr><td>C</td><td>Tevekkül sonucu garanti etmez; sonuç Allah’a bırakılır.</td></tr><tr><td>D</td><td>Sonucu Allah belirler; tedbir sonucu belirleyen unsur sayılmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Tevekkül = elinden geleni yapıp sonucu Allah’a bırakmak. “Deveni bağla, sonra tevekkül et.”</div><div class=\"sv-w\"><b>Tuzak:</b> B ve D tedbiri sonucun tek belirleyicisi yapar; C tevekkülü bir garantiye çevirir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 21. soru"
+ },
+ "mebit-din-f1-22": {
+  "t": "din-kader",
+  "a": "D",
+  "o": 150022,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Sonucu Allah’ın takdirine bırakmak. II. Planlayıp tedbir almak. III. Üzerine düşen görevi yapmak. IV. Sonucu sabır ve teslimiyetle karşılamak.</li></ul><b>İstenen</b><p>Davranışların uygulama sırası.</p></div><ol class=\"sv-s\"><li><b>Tevekkülün aşamaları</b> Önce planla ve tedbir al (II) → görevini yap (III) → sonucu Allah’a bırak (I) → sonucu sabırla karşıla (IV).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Sonucu bırakmak işin başında olmaz.</td></tr><tr><td>B</td><td>Görevi yapmak (III) sona kalamaz.</td></tr><tr><td>C</td><td>Plan yapmadan görevlere başlanmaz.</td></tr><tr class=\"ok\"><td>D</td><td>II-III-I-IV → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sıra: Plan → Çalışma → Güven → Sabır.</div><div class=\"sv-w\"><b>Tuzak:</b> I (Allah’a bırakmak) tevekkülün tanımı olduğu için başa konabilir; ama tevekkül çalışmadan sonra gelir.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 22. soru"
+ },
+ "mebit-din-f1-23": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150023,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İş kazasından sonra sorumlu kişi “Kaderde varmış, yapacak bir şey yok.” dedi.</li><li>İncelemede koruyucu kapağın takılmadığı, güvenlik ekipmanının takip edilmediği, iş güvenliği eğitiminin ertelendiği ortaya çıktı.</li></ul><b>İstenen</b><p>Kaderle ilgili asıl eleştirilen anlayış.</p></div><ol class=\"sv-s\"><li><b>Yanlış anlayışı bul</b> İhmaller yapılmış ama sonuç “kader” denerek açıklanmış; sorumluluk kadere yüklenmiş.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eğitimin ertelenmesi bir ihmaldir, ama soru kaderle ilgili anlayışı soruyor.</td></tr><tr class=\"ok\"><td>B</td><td>İhmali kaderle açıklayıp sorumluluktan kaçmak → asıl eleştirilen.</td></tr><tr><td>C</td><td>Ekipman konusu kaderle ilgili değildir.</td></tr><tr><td>D</td><td>Çalışanları suçlamak bir yanlıştır ama kader anlayışıyla ilgili değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kendi ihmalini kadere yüklemek yanlış kader anlayışıdır; İslam’da insan iradesiyle yaptığından sorumludur.</div><div class=\"sv-w\"><b>Tuzak:</b> A, C, D olaydaki gerçek ihmallerdir; ama soru “kaderle ilgili” anlayışı soruyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 23. soru"
+ },
+ "mebit-din-f1-24": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150024,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Mesut Bey iş başvuruları yapar, beceri edinir, haksız kazançtan kaçınır.</li><li>Arkadaşı “Kısmetinde varsa çalışmadan da gelir.” deyince Mesut Bey rızık konusunda insanın da sorumluluğu olduğunu anlatır.</li></ul><b>İstenen</b><p>Rızıkla ilgili vurgulanan düşünce.</p></div><ol class=\"sv-s\"><li><b>Mesut Bey’in davranışları</b> Çalışmak, emek vermek, helal yolu gözetmek.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Helal yolla, çalışarak aranır → doğru.</td></tr><tr><td>B</td><td>Rızığın tanımıdır; metnin vurgusu değil.</td></tr><tr><td>C</td><td>Rızığın kapsamıdır; metnin vurgusu değil.</td></tr><tr><td>D</td><td>Tersi: Kazanç yolu (helal) önemlidir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Rızık Allah’tandır ama insan helal yoldan çalışarak onu aramakla sorumludur.</div><div class=\"sv-w\"><b>Tuzak:</b> B ve C doğru tanımlardır; soru metindeki davranışın vurgusunu soruyor.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 24. soru"
+ },
+ "mebit-din-f1-25": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150025,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>(I) Halil çok soru çözdüğü için yüksek not bekliyordu. (II) Süreyi iyi kullanamadığını anladı.</li><li>(III) Yeterince çalışmadığı konuların ve aceleyle okumasının düşük notta etkili olduğunu fark etti. (IV) Sonraki sınav için plan yaptı.</li></ul><b>İstenen</b><p>Başarısızlığın kaderle ilişkisini doğru yansıtan cümle.</p></div><ol class=\"sv-s\"><li><b>Doğru anlayışı belirle</b> Başarısızlığın sebebini kadere, şansa yüklemek yerine kendi eksiklerinde (iradesiyle yaptıklarında) aramak.</li><li><b>Cümleleri sına</b> III, düşük notun nedenini açıkça kendi eksiklerine bağlıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yalnızca beklentiyi anlatır.</td></tr><tr><td>B</td><td>Bir eksikliği fark ettiğini söyler ama sonuçla ilişkisini kurmaz.</td></tr><tr class=\"ok\"><td>C</td><td>Düşük notu kendi eksiklerine bağlıyor → doğru kader anlayışı.</td></tr><tr><td>D</td><td>Gelecek planıdır; başarısızlığın nedenini açıklamaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Başarısızlığın kaderle ilişkisi” sorusunda doğru cevap: sonucu iradeyle yapılan davranışlara bağlamak.</div><div class=\"sv-w\"><b>Tuzak:</b> IV de doğru bir davranıştır; ama başarısızlığın nedenini değil, çözümü anlatır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 25. soru"
+ },
+ "mebit-din-f1-26": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150026,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hasan: Alın yazısı, tercihlerin iradeden bağımsız olduğu demek. Meryem: Başarısızlığı kara talihle açıklamak kişinin gayretini sorgulamasını engelleyebilir.</li><li>Osman: Çalışmanın sonuca etkisi baht açıklığına bağlı. Zeynep: Kısmetsizlik az emeği haklı çıkarır.</li></ul><b>İstenen</b><p>İslam’ın kader anlayışına uygun değerlendirme.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> İslam’a göre insan iradesiyle yaptığından sorumludur; “alın yazısı, kara talih, baht” gibi sözler sorumluluğu kadere yükler.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hasan iradeyi yok sayıyor → yanlış.</td></tr><tr class=\"ok\"><td>B</td><td>Meryem bu sözlerin sorumluluktan kaçmaya yol açtığını söylüyor → doğru.</td></tr><tr><td>C</td><td>Osman sonucu bahta bağlıyor → yanlış.</td></tr><tr><td>D</td><td>Zeynep tembelliği haklı çıkarıyor → yanlış.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Kader yanlış anlaşılırsa tembelliğe ve sorumluluktan kaçmaya yol açar.</div><div class=\"sv-w\"><b>Tuzak:</b> Meryem’in cümlesi de bu sözleri içerir; ama onları eleştirmektedir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 26. soru"
+ },
+ "mebit-din-f1-27": {
+  "t": "din-kader",
+  "a": "B",
+  "o": 150027,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hz. Musa, Firavun’a gitmeden önce dua etti: Kardeşim Harun’un dili daha düzgün, onu da yardımcı olarak gönder; beni yalanlamalarından korkuyorum.</li><li>Allah: Seni kardeşinle destekleyeceğiz, size kudret vereceğiz; siz ve size tabi olanlar üstün geleceksiniz.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Metindeki bilgileri eşleştir</b> Yardımcı istemek → tedbir (A). Yalnız kalmamak için dua (C). “Üstün geleceksiniz” → müjde (D).</li><li><b>Fazlalığı bul</b> Halkın desteğinden söz edilmiyor; destek Harun’dan ve Allah’tan.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yardımcı istemek → tedbir. Ulaşılır.</td></tr><tr class=\"ok\"><td>B</td><td>Halk desteği metinde yok. Ulaşılamaz.</td></tr><tr><td>C</td><td>Harun’un yardımcı olması için dua. Ulaşılır.</td></tr><tr><td>D</td><td>“Üstün geleceksiniz” → müjde. Ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Musa’nın duası tevekkülde tedbirin örneğidir: Görev zor → yardımcı ister, sonra Allah’a güvenir.</div><div class=\"sv-w\"><b>Tuzak:</b> “Size tabi olanlar” ifadesi halk desteği sanılabilir; ama bu, gelecekteki üstünlüğün müjdesidir, Firavun’a karşı alınmış bir destek değildir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 27. soru"
+ },
+ "mebit-din-f1-28": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150028,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Allah, Hz. Musa’yı mucizelerle destekledi. Firavun sihirbazları topladı; Hz. Musa’nın asası onların yaptığı her şeyi yuttu.</li><li>Sihirbazlar “Âlemlerin Rabbine, Musa ve Harun’un Rabbine iman ettik.” diyerek secdeye kapandı.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Bilgileri eşleştir</b> Asanın sihirleri yutması → hak-batıl mücadelesinde üstünlük (A). Mucizelerle destek (B). Sihirbazların iman etmesi → inançta değişim (D).</li><li><b>Fazlalığı bul</b> Kavmini kurtarma görevi bu metinde yok.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Asa sihirleri yuttu → üstünlük. Söylenir.</td></tr><tr><td>B</td><td>Mucizeler → ilahi delillerle destek. Söylenir.</td></tr><tr class=\"ok\"><td>C</td><td>Kavmini kurtarma görevi metinde geçmez. Söylenemez.</td></tr><tr><td>D</td><td>Sihirbazlar iman etti. Söylenir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Musa’nın İsrailoğullarını Mısır’dan çıkarma görevi doğrudur, ama bu metinde anlatılmaz.</div><div class=\"sv-w\"><b>Tuzak:</b> Bilgiye göre doğru olan C’yi “metne göre” sorusunda seçme.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 28. soru"
+ },
+ "mebit-din-f1-29": {
+  "t": "din-kader",
+  "a": "C",
+  "o": 150029,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayetelkürsi’den: “Allah’tan başka ilah yoktur.” → Tevhit. “Onu uyuklama ve uyku tutmaz.” → sürekli diri, her an haberdar. “Önlerindekini ve arkalarındakini bilir.” → sonsuz ilim. “Kürsüsü gökleri ve yeri kaplar.” → sınırsız kudret.</li></ul><b>İstenen</b><p>Tabloya göre ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Anlamları grupla</b> Tevhit → Allah’ın birliği. Hayat, ilim, kudret → Allah’ın sıfatları.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Manevi güven doğru bilinen bir etkisidir ama tabloda yok.</td></tr><tr><td>B</td><td>Davranışların kaydı tabloda yok.</td></tr><tr class=\"ok\"><td>C</td><td>Birlik (tevhit) ve sıfatlar (hayat, ilim, kudret) → doğru.</td></tr><tr><td>D</td><td>Ahiret hesabı tabloda yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ayetelkürsi Allah’ın birliğini ve sıfatlarını anlatan ayettir (Bakara 255).</div><div class=\"sv-w\"><b>Tuzak:</b> Ayetelkürsi’nin koruyucu olduğuna inanılır (A); ama soru tabloya göre soruyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 29. soru"
+ },
+ "mebit-din-f1-30": {
+  "t": "din-kader",
+  "a": "A",
+  "o": 150030,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İsimler: 1. Aliyy 2. Azîm 3. Hayy 4. Kayyum</li><li>Anlamlar: a. Varlığı devamlı, ölmeyen diri. b. Varlığı kendinden, yarattıklarını koruyup gözeten. c. İzzet ve hükümranlıkta en yüce. d. Zatı ve sıfatları anlaşılamayacak kadar ulu.</li></ul><b>İstenen</b><p>Doğru eşleştirme.</p></div><ol class=\"sv-s\"><li><b>İsimleri anlamlarıyla eşle</b> Aliyy (yüce) → c. Azîm (ulu) → d. Hayy (diri) → a. Kayyum (kendi kendine var olan, gözeten) → b.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>1-c, 2-d, 3-a, 4-b → doğru.</td></tr><tr><td>B</td><td>Azîm “diri” değil, “ulu”dur.</td></tr><tr><td>C</td><td>Aliyy “ulu” değil, “yüce”dir; Hayy “diri”dir.</td></tr><tr><td>D</td><td>Aliyy “diri” değil; Kayyum “yüce” değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Ayetelkürsi’nin sonu: “O yücedir (Aliyy), uludur (Azîm).” Başı: “Hayy ve Kayyum’dur.”</div><div class=\"sv-w\"><b>Tuzak:</b> Aliyy (yüce) ile Azîm (ulu) anlamca yakındır; “yüce” makam, “ulu” büyüklük anlatır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 30. soru"
+ },
+ "mebit-din-f1-31": {
+  "t": "din-zekat",
+  "a": "D",
+  "o": 150031,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: “Kim kardeşinin ihtiyacını giderirse Allah da onun ihtiyacını giderir.”</li><li>Karda evden çıkamayan yaşlılar için muhtar görev paylaştırdı: Bazıları yiyecek hazırladı, bazıları ilaç aldı, bazıları yakacak taşıdı.</li></ul><b>İstenen</b><p>Hadis ile olayın ortak mesajı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Hadis: ihtiyacı gidermek. Olay: herkes elinden gelenle (yemek, ilaç, yakacak) yardım ediyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Plan olayda var ama hadiste yok.</td></tr><tr><td>B</td><td>Dayanışma olağanüstü durumlarla sınırlı değildir; hadis her zaman geçerlidir.</td></tr><tr><td>C</td><td>Meslekî yeterlilikten söz edilmiyor.</td></tr><tr class=\"ok\"><td>D</td><td>Herkes imkânı ölçüsünde destek oluyor → ortak mesaj.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Ortak mesaj” = hem hadiste hem olayda bulunan fikir.</div><div class=\"sv-w\"><b>Tuzak:</b> Görev paylaşımı geçtiği için A çekicidir; ama hadiste plan yoktur.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 31. soru"
+ },
+ "mebit-din-f1-32": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150032,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: “Sizden biri kendisi için istediğini kardeşi için de istemedikçe (gerçek anlamda) iman etmiş olamaz.”</li></ul><b>İstenen</b><p>Öne çıkarılan tutum.</p></div><ol class=\"sv-s\"><li><b>Hadisin özü</b> Başkası için de kendin için istediğin iyiliği istemek → başkasının iyiliğine kendi iyiliğin kadar değer vermek (diğerkâmlık).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Karşılık beklemek hadiste yok.</td></tr><tr class=\"ok\"><td>B</td><td>Başkasının iyiliğine aynı ölçüde değer vermek → doğru.</td></tr><tr><td>C</td><td>İmkâna göre dengeleme hadiste yok.</td></tr><tr><td>D</td><td>Yakınlık sırası hadiste yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Kendin için istediğini kardeşin için de iste” = empati ve diğerkâmlık.</div><div class=\"sv-w\"><b>Tuzak:</b> “Kardeş” sözcüğü D’deki yakınlık önceliğini çağrıştırır; hadis bir sıralama yapmaz.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 32. soru"
+ },
+ "mebit-din-f1-33": {
+  "t": "din-zekat",
+  "a": "D",
+  "o": 150033,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: İki kişinin arasını düzeltmek, güzel söz, yoldan rahatsız eden şeyi kaldırmak sadakadır.</li></ul><b>İstenen</b><p>Ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Örneklerin ortak özelliği</b> Hiçbirinde para ya da mal verilmiyor; hepsi davranışla yapılan iyilik.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Değeri ölçen bir “çevre genişliği” ölçütü yok.</td></tr><tr><td>B</td><td>Doğrudan-dolaylı yardım karşılaştırması yok.</td></tr><tr><td>C</td><td>Görev paylaşımı yok.</td></tr><tr class=\"ok\"><td>D</td><td>Maddi yardım içermeyen davranışlar da sadaka (iyilik) sayılır → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’da sadaka yalnız mal değildir: tebessüm, güzel söz, yol temizlemek de sadakadır.</div><div class=\"sv-w\"><b>Tuzak:</b> Hadisin hiçbir örneğinde para geçmediğine dikkat et.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 33. soru"
+ },
+ "mebit-din-f1-34": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150034,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayet: “Siz hayır işlerinde yarışın.” (Bakara 148)</li><li>Öğrenciler ihtiyaç sahipleri için gönüllü oldu ve daha çok kişiye ulaşmanın yollarını aradı.</li></ul><b>İstenen</b><p>Ayet ve olayın ortak mesajı.</p></div><ol class=\"sv-s\"><li><b>Ortak noktayı bul</b> Yarışmak → daha çok çaba. Öğrenciler → daha çok kişiye ulaşmaya çalışıyor.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Eşit dağıtım ikisinde de yok.</td></tr><tr class=\"ok\"><td>B</td><td>İyilikte daha çok gayret → ortak mesaj.</td></tr><tr><td>C</td><td>Önceliklendirme ve plan yok.</td></tr><tr><td>D</td><td>Bireysel imkânlara göre görev yok.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> “Hayırda yarışmak” = iyiliği çoğaltmak için çaba göstermek.</div><div class=\"sv-w\"><b>Tuzak:</b> C mantıklı bir yardım ilkesidir ama ayette de olayda da geçmez.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 34. soru"
+ },
+ "mebit-din-f1-35": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150035,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Nisa 36: Ana-babaya, akrabaya, yetimlere, yoksullara, yakın ve uzak komşuya, arkadaşa, yolcuya iyilik edin.</li><li>Hadis: “Yeryüzündekilere merhamet edin ki göktekiler de size merhamet etsin.” Görsel: Aile → Mahalle → Toplum → Yeryüzündekiler (iç içe halkalar).</li></ul><b>İstenen</b><p>Ulaşılabilen sonuç.</p></div><ol class=\"sv-s\"><li><b>Görseli oku</b> Halkalar aileden başlayıp genişliyor; en dışta tüm yeryüzündekiler (bütün canlılar) var.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Tersi: Duyarlılık aileden (bireysel ilişkilerden) başlayıp büyüyor.</td></tr><tr><td>B</td><td>Ayet uzak komşu ve yolcuyu da sayar; yardım yakınlıkla sınırlanmaz.</td></tr><tr class=\"ok\"><td>C</td><td>Aileden başlayıp bütün canlılara uzanan duyarlılık → doğru.</td></tr><tr><td>D</td><td>Değerin ölçüsü “genişlik” değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Merhamet halkası: aile → komşu → toplum → tüm canlılar.</div><div class=\"sv-w\"><b>Tuzak:</b> Görsel bir sıralama yapıyor gibi göründüğü için B seçilebilir; ama mesaj “genişleme”dir, “sınırlama” değil.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 35. soru"
+ },
+ "mebit-din-f1-36": {
+  "t": "din-zekat",
+  "a": "D",
+  "o": 150036,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayet: “İyilik ve takva üzere yardımlaşın; günah ve düşmanlık üzere yardımlaşmayın.” (Maide 2)</li><li>Ece: “Birlikte hareket etmek, yapılan işin kendiliğinden doğru olduğu anlamına gelmez.”</li></ul><b>İstenen</b><p>Ece’nin öne çıkardığı ölçüt.</p></div><ol class=\"sv-s\"><li><b>Ayetin ölçütü</b> Yardımlaşmanın değeri amacına bağlıdır: iyilik ve takva → evet; günah ve düşmanlık → hayır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ortak istek yetmez; amaç iyi olmalı.</td></tr><tr><td>B</td><td>Çoğunluğun kabulü ölçüt değildir (Ece tam bunu reddediyor).</td></tr><tr><td>C</td><td>İmkânlar konusu değil.</td></tr><tr class=\"ok\"><td>D</td><td>Ortak çabanın ahlaken doğru bir amaca yönelmesi → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yardımlaşma kendi başına değil, iyiliğe yöneldiğinde değerlidir.</div><div class=\"sv-w\"><b>Tuzak:</b> A ve B “birlikte olmanın” kendisini ölçüt yapıyor; Ece’nin sözü bunu reddediyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 36. soru"
+ },
+ "mebit-din-f1-37": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150037,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: “Yarım hurmayla bile olsa kendinizi ateşten koruyun; bunu da bulamayan güzel bir sözle korusun.”</li><li>Ece 150 TL’den 100 TL; Kerem 50 TL’den 40 TL + 2 saat paketleme; Mert 2.000 TL’den 200 TL; Sude parası yok, 3 saat ders desteği.</li></ul><b>İstenen</b><p>Hadis ve tablodan ulaşılabilen sonuç.</p></div><ol class=\"sv-s\"><li><b>Tabloyu yorumla</b> Herkes kendi imkânına göre farklı biçimde katkı veriyor: para, emek, bilgi.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Hadis tersine, farklı katkıların her birinin değerli olduğunu söyler; aynı ölçütle karşılaştırma yapmaz.</td></tr><tr class=\"ok\"><td>B</td><td>Yardım biçimi kişinin imkânına göre değişir → doğru.</td></tr><tr><td>C</td><td>Hadiste güzel söz bile değerlidir; para öncelikli değildir.</td></tr><tr><td>D</td><td>Kerem hem para hem emek vermiş; ek destek gereksiz sayılmaz.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Yardım için zengin olmak gerekmez: yarım hurma, güzel söz, emek de yardımdır.</div><div class=\"sv-w\"><b>Tuzak:</b> Mert’in 200 TL’si en büyük miktar olduğu için C çekicidir; hadis miktarı değil niyeti ve imkânı öne çıkarır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 37. soru"
+ },
+ "mebit-din-f1-38": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150038,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: Müminler sevgi, merhamet ve şefkatte bir organı rahatsızlanınca diğer organları da bu acıyı paylaşan bir bedene benzer.</li></ul><b>İstenen</b><p>Hadisin mesajını en iyi yansıtan mısralar.</p></div><ol class=\"sv-s\"><li><b>Hadisin özü</b> Birinin acısını hep birlikte hissetmek ve paylaşmak; kardeşlik ve dayanışma.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Paylaşmayı yalnız maddi güce bağlıyor; hadiste duygu ortaklığı var.</td></tr><tr><td>B</td><td>Karşılık beklemek hadisin ruhuna aykırı.</td></tr><tr class=\"ok\"><td>C</td><td>“Bir gönül incinse bin yürekte sızı olsun” → bir organın acısını bütün bedenin duyması; kardeşlik, dert paylaşmak → doğru.</td></tr><tr><td>D</td><td>Herkesin aynı yükü alması (eşitlik) hadisin konusu değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Beden benzetmesi = ortak acı, ortak duygu, dayanışma.</div><div class=\"sv-w\"><b>Tuzak:</b> D’deki “birlik” sözcüğü çekicidir; ama hadis tek biçimlilikten değil, birbirinin acısını paylaşmaktan söz eder.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 38. soru"
+ },
+ "mebit-din-f1-39": {
+  "t": "din-zekat",
+  "a": "A",
+  "o": 150039,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Zekât verilmesi uygun olmayan kişi.</p></div><ol class=\"sv-s\"><li><b>Zekât verilemeyenleri hatırla</b> Kişi zekâtını kendi anne-babasına, dedesine, çocuklarına, torunlarına ve eşine veremez; çünkü onların geçimi zaten onun sorumluluğundadır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Anne-baba → zekât verilemez (onlara zekâttan değil, nafaka olarak bakılır).</td></tr><tr><td>B</td><td>Borçlu (garimin) → zekât verilebilir.</td></tr><tr><td>C</td><td>Yolda kalmış (ibnüssebil) → verilebilir.</td></tr><tr><td>D</td><td>İhtiyaç sahibi öğrenci → verilebilir (fakir, Allah yolunda).</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Usul (anne, baba, dede) ve füru (çocuk, torun) ile eşe zekât verilmez.</div><div class=\"sv-w\"><b>Tuzak:</b> A’daki kişiler gerçekten ihtiyaç içinde; ama onlara bakmak zaten evladın görevidir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 39. soru"
+ },
+ "mebit-din-f1-40": {
+  "t": "din-zekat",
+  "a": "A",
+  "o": 150040,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ramazan Bayramı’na ulaşan, temel ihtiyaçları dışında nisap miktarı mala sahip her Müslüman kendisi ve bakmakla yükümlü olduğu kişiler adına verir; bayram namazından önce verilmelidir.</li></ul><b>İstenen</b><p>Özellikleri verilen ibadet.</p></div><ol class=\"sv-s\"><li><b>İpuçlarını eşleştir</b> Ramazan Bayramı + aile bireyleri adına + bayram namazından önce → <b>fıtır sadakası (fitre)</b>.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Fıtır sadakası → doğru.</td></tr><tr><td>B</td><td>İnfak genel harcamadır; belli bir zamanı yoktur.</td></tr><tr><td>C</td><td>Sadaka-i cariye kalıcı hayırdır (çeşme, okul).</td></tr><tr><td>D</td><td>Zekât yılda bir, malın 1/40’ıdır; bayram namazına bağlı değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Fitre = Ramazan + bayram namazından önce + kişi başı.</div><div class=\"sv-w\"><b>Tuzak:</b> “Nisap” sözcüğü zekâtı çağrıştırır; ama bayram ve kişi başına verilmesi fitreyi gösterir.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 40. soru"
+ },
+ "mebit-din-f1-41": {
+  "t": "din-zekat",
+  "a": "D",
+  "o": 150041,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>I. Allah rızası için yapılan her türlü iyilik ve yardım. II. Allah rızası için sahip olunan mallardan harcama yapmak. III. Dinen zengin sayılanların arınmak için malının belli bir miktarını belli kişilerle paylaşması.</li></ul><b>İstenen</b><p>Tanımların doğru sıralaması.</p></div><ol class=\"sv-s\"><li><b>Kavramları tanımla</b> Her türlü iyilik → <b>sadaka</b>. Mallardan Allah yolunda harcamak → <b>infak</b>. Belli oran, belli kişi, zengine farz → <b>zekât</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>I zekât değildir (zekât belli oranlıdır).</td></tr><tr><td>B</td><td>I infak değil (infak mal harcamasıdır), II sadaka değil.</td></tr><tr><td>C</td><td>II zekât değil, III infak değil.</td></tr><tr class=\"ok\"><td>D</td><td>Sadaka-infak-zekât → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> En geniş kavram sadaka (her iyilik), sonra infak (mal harcama), en belirli olan zekât (oran ve kişi belli, farz).</div><div class=\"sv-w\"><b>Tuzak:</b> “Her türlü iyilik” = sadaka; “mal” geçince infak; “belirli miktar, belirli kişi” geçince zekât.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 41. soru"
+ },
+ "mebit-din-f1-42": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150042,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Zekât verilirken uygulanacak ölçünün (nisabın) yanlış belirtildiği şık.</p></div><ol class=\"sv-s\"><li><b>Nisapları hatırla</b> Altın 80,18 g; para 80,18 g altın değeri; küçükbaş 40 hayvan; deve <b>5</b> deve.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Altın 80,18 g → doğru.</td></tr><tr class=\"ok\"><td>B</td><td>Devede nisap 5 devedir; 10 değil → yanlış.</td></tr><tr><td>C</td><td>Para, 80,18 g altına denk → doğru.</td></tr><tr><td>D</td><td>Küçükbaş 40 hayvan → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Nisap = zekât için gereken en az miktar: altın 80,18 g, küçükbaş 40, büyükbaş 30, deve 5.</div><div class=\"sv-w\"><b>Tuzak:</b> Şıklar “oran” der ama aslında nisap miktarlarıdır; sayıları ezberle karşılaştır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 42. soru"
+ },
+ "mebit-din-f1-43": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150043,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tablo: I. Büyükbaş hayvanlar 1/20. II. Madenler 1/5. III. Altın 1/40. IV. Toprak ürünleri 1/15.</li></ul><b>İstenen</b><p>Doğru bilgiler.</p></div><ol class=\"sv-s\"><li><b>Oranları hatırla</b> Altın, gümüş, para, ticaret malı → 1/40. Madenler ve define → 1/5. Toprak ürünleri → 1/10 (emeksiz sulanan) ya da 1/20 (emekle sulanan). Hayvanlar → sayıya göre (ör. 40 koyuna 1 koyun), 1/20 değil.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Yanlış; hayvanlarda sayıya göre belirlenir.</td></tr><tr><td>II</td><td>Doğru (1/5).</td></tr><tr><td>III</td><td>Doğru (1/40).</td></tr><tr><td>IV</td><td>Yanlış; 1/10 ya da 1/20.</td></tr><tr class=\"ok\"><td>C</td><td>II ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> 1/40 = %2,5 (para, altın), 1/5 = %20 (maden), 1/10–1/20 (toprak ürünü).</div><div class=\"sv-w\"><b>Tuzak:</b> Toprak ürünlerinde 1/15 diye bir oran yoktur; 1/10 ile 1/20’yi karıştırma.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 43. soru"
+ },
+ "mebit-din-f1-44": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150044,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayet: Sadakaları açık verirseniz ne güzel! Gizleyerek fakirlere verirseniz bu sizin için daha hayırlıdır ve günahlarınıza kefaret olur. (Bakara 271)</li></ul><b>İstenen</b><p>Ayetin mesajına uygun olmayan yargı.</p></div><ol class=\"sv-s\"><li><b>Ayeti çözümle</b> Açık sadaka güzel; gizli sadaka <b>daha</b> hayırlı; günahlara kefaret (arınma).</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Günahlarınıza kefaret” → manevi arınma. Uygun.</td></tr><tr><td>B</td><td>“Açık olarak verirseniz bu ne güzel” → açık yardım da değerli. Uygun.</td></tr><tr class=\"ok\"><td>C</td><td>Tersi: Gizli olan daha hayırlıdır. Uygun değil.</td></tr><tr><td>D</td><td>Gizlilik ihtiyaç sahibini mahcup etmez → onuru korur. Uygun.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Açık sadaka başkalarını teşvik eder; gizli sadaka riyadan korur ve alanı incitmez.</div><div class=\"sv-w\"><b>Tuzak:</b> B ve C birbirine çok benzer; C “daha değerli” diyerek ayeti tersine çeviriyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 44. soru"
+ },
+ "mebit-din-f1-45": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150045,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Ayet: “Allah yolunda sevdiğiniz şeylerden harcamadıkça iyiliğe asla eremezsiniz. Ne harcarsanız Allah onu hakkıyla bilir.” (Al-i İmran 92)</li></ul><b>İstenen</b><p>Vurgulanan kavram.</p></div><ol class=\"sv-s\"><li><b>Anahtar ifade</b> “Allah yolunda harcamak” = <b>infak</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Adalet ayette geçmiyor.</td></tr><tr class=\"ok\"><td>B</td><td>Allah yolunda harcama → infak.</td></tr><tr><td>C</td><td>Sabır geçmiyor.</td></tr><tr><td>D</td><td>Şükür geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İnfak = Allah rızası için maldan harcamak. Bu ayet “sevdiğin şeyden” vermeyi öğütler.</div><div class=\"sv-w\"><b>Tuzak:</b> Ayet sevgi ve iyilikten söz ettiği için başka değerler akla gelebilir; anahtar fiil “harcamak”tır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 45. soru"
+ },
+ "mebit-din-f1-46": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150046,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Muaz bin Cebel Yemen’e zekât toplamaya gönderildi. Yemenliler dokumacıydı ve ellerinde çok elbise vardı.</li><li>Muaz, toprak ürünlerinin zekâtını elbise olarak istedi; bunun hem alan hem veren için daha uygun olduğunu söyledi.</li></ul><b>İstenen</b><p>Uygulamada esas alınan temel ilke.</p></div><ol class=\"sv-s\"><li><b>Amacı bul</b> Zekâtın miktarı azaltılmadı; yalnızca veriliş biçimi herkesin işine yarayacak şekilde değiştirildi → kolaylık.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Yükümlülük hafifletilmedi; aynı değerde verildi.</td></tr><tr><td>B</td><td>Onurdan söz edilmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>Uygulamayı alan ve veren için kolaylaştırmak → doğru.</td></tr><tr><td>D</td><td>Yalnızca verenlerin değil, iki tarafın da işine yarıyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> İslam’da “kolaylaştırınız, zorlaştırmayınız” ilkesi ibadetlerin uygulanışında da geçerlidir.</div><div class=\"sv-w\"><b>Tuzak:</b> D yalnızca bir tarafı düşünür; metin “alacak ve verecek kimseler için” diyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 46. soru"
+ },
+ "mebit-din-f1-47": {
+  "t": "din-zekat",
+  "a": "A",
+  "o": 150047,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Sadaka taşı: Yardım edenler oyuk taşa sadaka bırakır; ihtiyaç sahibi yalnızca ihtiyacı kadar alır; alan ve veren birbirini görmez, kimse incinmez.</li></ul><b>İstenen</b><p>Uygulamanın amaçlarından olmayan.</p></div><ol class=\"sv-s\"><li><b>Amaçları bul</b> Alanın onuru korunur (B). Veren görünmediği için gösteriş (riya) olmaz (C). Alanın kim olduğu bilinmez (D).</li><li><b>Fazlalık</b> Bereketi artırmak metinde bir amaç olarak geçmez.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Bereket metinde yok → amaçlardan değil.</td></tr><tr><td>B</td><td>Alan incinmez → amaç.</td></tr><tr><td>C</td><td>Veren görünmez → riyadan uzak → amaç.</td></tr><tr><td>D</td><td>Alanın kimliği gizli kalır → amaç.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sadaka taşı = gizli sadaka: veren riyadan, alan mahcubiyetten korunur.</div><div class=\"sv-w\"><b>Tuzak:</b> D ile B birbirine yakındır; ikisi de metinde vardır.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 47. soru"
+ },
+ "mebit-din-f1-48": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150048,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul></ul><b>İstenen</b><p>Okul, cami, köprü gibi kalıcı eserlerin yapılmasının ibadet karşılığı.</p></div><ol class=\"sv-s\"><li><b>Kavramı bul</b> Sürekli fayda sağlayan, yapan öldükten sonra da sevabı devam eden hayır → <b>sadaka-i cariye</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Fidye, yapılamayan ibadetin karşılığı olarak verilen bedeldir.</td></tr><tr><td>B</td><td>Fitre, Ramazan’da verilen fıtır sadakasıdır.</td></tr><tr class=\"ok\"><td>C</td><td>Kalıcı, sürekli fayda → sadaka-i cariye.</td></tr><tr><td>D</td><td>Zekât, belli malın belli oranıdır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Cariye = akan, süren. Çeşme, okul, kütüphane, köprü, ağaç dikmek sadaka-i cariyedir.</div><div class=\"sv-w\"><b>Tuzak:</b> Vakıf eserleri genelde zekâtla karıştırılır; sürekliliği gösteren kavram sadaka-i cariyedir.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 48. soru"
+ },
+ "mebit-din-f1-49": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150049,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Tevbe 103: “Onların mallarından onları kendisiyle <b>arındıracağın ve temizleyeceğin</b> bir sadaka (zekât) al…”</li></ul><b>İstenen</b><p>Altı çizili ifadenin vurguladığı yön.</p></div><ol class=\"sv-s\"><li><b>“Arındırmak”</b> Kişiyi kötü huylardan (cimrilik, mal hırsı) temizlemek → ahlaki ve manevi yön.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Ekonomik fayda (yoksula) vurgulanmıyor.</td></tr><tr class=\"ok\"><td>B</td><td>Cimrilikten koruma, ahlaki ve ruhi gelişim → doğru.</td></tr><tr><td>C</td><td>Malın sayıca artması değil, temizlenmesi söz konusu.</td></tr><tr><td>D</td><td>Toplumsal fayda bu ifadede değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zekât sözlükte “artma” ve “temizlenme” demektir; bu ayet temizlenme (arınma) yönünü vurgular.</div><div class=\"sv-w\"><b>Tuzak:</b> A ve D zekâtın doğru faydalarıdır; ama altı çizili kısım vereni arındırmaktan söz ediyor.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 49. soru"
+ },
+ "mebit-din-f1-50": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150050,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Merhamet, kalpteki duygunun ötesinde hayatın her alanına yansıtılması gereken bir sorumluluktur.</li><li>Hadis: “Merhamet edene Rahman da merhamet eder. Siz yerdekilere merhamet edin ki gökteki de size merhamet etsin.”</li></ul><b>İstenen</b><p>Vurgulanan ahlaki ilke.</p></div><ol class=\"sv-s\"><li><b>Anahtar kavram</b> Merhamet = acımak, şefkat göstermek.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Saygı konusu değil.</td></tr><tr><td>B</td><td>Adalet konusu değil.</td></tr><tr class=\"ok\"><td>C</td><td>Merhamet → şefkatli olmak.</td></tr><tr><td>D</td><td>Güvenilirlik konusu değil.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Merhamet ve şefkat eş anlamlı ahlaki değerlerdir.</div><div class=\"sv-w\"><b>Tuzak:</b> Bütün şıklar güzel ahlak örnekleridir; hadisteki kelimeyle eşleşeni seç.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 50. soru"
+ },
+ "mebit-din-f1-51": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150051,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zimem defteri: veresiye borçların yazıldığı defter. Ramazanda zenginler borçları öderdi; esnaf, ödeyenin kim olduğunu söylemezdi.</li></ul><b>İstenen</b><p>Yardım edenin kimliğinin gizlenmesinin gösterdiği.</p></div><ol class=\"sv-s\"><li><b>Gizliliğin amacı</b> Borçlu, kime minnet edeceğini bilmez, mahcup olmaz; veren de gösterişten uzak kalır.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Borçluya öncelik metinde var ama soru “kimliğin gizlenmesini” soruyor.</td></tr><tr class=\"ok\"><td>B</td><td>İhtiyaç sahibinin onurunu korumak → doğru.</td></tr><tr><td>C</td><td>Tersi: Yardım görünür değil, gizli tutuluyor.</td></tr><tr><td>D</td><td>Gelir adaletsizliğinin giderilmesi gizlilikle ilgili değildir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Gizli yardım: alan incinmez, veren riyadan korunur.</div><div class=\"sv-w\"><b>Tuzak:</b> A metindeki bir bilgidir; ama sorulan, kimliğin gizlenmesinin anlamıdır.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 51. soru"
+ },
+ "mebit-din-f1-52": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150052,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Bakara 264: Sadakalarınızı başa kakmak ve incitmekle boşa çıkarmayın; malını insanlara gösteriş için harcayan gibi olmayın. Onun misali, üzerindeki toprağı yağmurun silip götürdüğü kayadır.</li></ul><b>İstenen</b><p>Yardımların değerini düşüren olumsuz tutum.</p></div><ol class=\"sv-s\"><li><b>Anahtar ifade</b> “Gösteriş yapmak için harcayan” → <b>riyakârlık</b>.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Bencillik yardım etmemektir; burada yardım ediliyor.</td></tr><tr><td>B</td><td>Kararsızlık geçmiyor.</td></tr><tr class=\"ok\"><td>C</td><td>Gösteriş için harcamak → riya.</td></tr><tr><td>D</td><td>Savurganlık (israf) geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Riya = iyiliği Allah rızası için değil, insanlara göstermek için yapmak. Sevabı yok eder (kayanın üzerindeki toprak gibi).</div><div class=\"sv-w\"><b>Tuzak:</b> “Malını harcayan” ifadesi D’yi (savurganlık) çağrıştırır; asıl sorun amacın gösteriş olmasıdır.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 52. soru"
+ },
+ "mebit-din-f1-53": {
+  "t": "din-zekat",
+  "a": "D",
+  "o": 150053,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Hadis: İslam’da güzel bir gelenek başlatan, hem kendi ecrini hem ondan sonra onu yapanların ecrini kazanır. Kötü bir gelenek başlatan, hem kendi günahını hem onu yapanların günahını yüklenir.</li></ul><b>İstenen</b><p>İnsanın sorumluluğu hakkında ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Hadisin özü</b> Başlatılan iyi ya da kötü bir davranış, başkaları onu yaptıkça devam eden sonuçlar doğurur → öncülük zincirleme sorumluluk getirir.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Alışkanlık değiştirme hadiste yok.</td></tr><tr><td>B</td><td>Tersi: Tercih yalnız kişiyi değil, onu izleyenleri de etkiliyor.</td></tr><tr><td>C</td><td>Kuralların esnemesi konusu yok.</td></tr><tr class=\"ok\"><td>D</td><td>Öncülüğün zincirleme sonuçları → doğru.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Sadaka-i cariye ile benzer mantık: sevap (ya da günah) kişi öldükten sonra da sürebilir.</div><div class=\"sv-w\"><b>Tuzak:</b> B “kişisel sorumluluk” dediği için çekicidir; hadis sorumluluğun başkalarına uzanan etkisini anlatıyor.</div><div class=\"sv-a\">Cevap <b>D</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 53. soru"
+ },
+ "mebit-din-f1-54": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150054,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Öğretmen: “Zekât ve sadaka toplumda yalnız ekonomik transfer sağlamaz; asıl olarak kardeşlik bilincini inşa eder.”</li></ul><b>İstenen</b><p>Kardeşlik vurgusuna örnek olan yorum.</p></div><ol class=\"sv-s\"><li><b>Ölçüt</b> Ekonomik sonuç değil, insanları birbirine bağlayan sevgi ve dostluk.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>İhtiyaç sahiplerinin azalması ekonomik sonuçtur.</td></tr><tr><td>B</td><td>Empati kurmak güzel bir tutumdur; ama sonuç kardeşlik bağı değil, yardımın biçimidir.</td></tr><tr class=\"ok\"><td>C</td><td>Zengin-yoksul arasındaki duvarların yıkılması, sevgi ve dostluk bağı → kardeşlik.</td></tr><tr><td>D</td><td>Sorumluluğun yerine getirilmesi ibadet yönüdür.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zekâtın toplumsal faydası: kıskançlık ve kini azaltır, zengin ile yoksulu kaynaştırır.</div><div class=\"sv-w\"><b>Tuzak:</b> “Sadece ekonomik transfer değil” diyen cümlede A ve D ekonomik/görev yönünü anlatır, kardeşliği değil.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 54. soru"
+ },
+ "mebit-din-f1-55": {
+  "t": "din-zekat",
+  "a": "A",
+  "o": 150055,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>İslam’a göre insan malın mutlak sahibi değil, emanetçisidir.</li></ul><b>İstenen</b><p>Zekât veren Müslümanın tutumu hakkında ulaşılabilen yargı.</p></div><ol class=\"sv-s\"><li><b>Emanet bilinci</b> Mal Allah’ın emanetiyse insan ona aşırı bağlanmaz; paylaşmak kolaylaşır.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Mal düşkünlüğü azalır, paylaşım kolaylaşır → doğru.</td></tr><tr><td>B</td><td>Malın tamamını başkaları için harcamak beklenmez.</td></tr><tr><td>C</td><td>Tersi: Emanet bilinci dünya kazancını öncelik yapmaz.</td></tr><tr><td>D</td><td>Aşırı cömertlik (israf) istenmez; ölçü gözetilir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Emanet bilinci → hırs azalır → zekât ve sadaka gönülden verilir.</div><div class=\"sv-w\"><b>Tuzak:</b> B ve D aşırılık içerir; İslam paylaşımda da ölçülü olmayı öğütler.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 55. soru"
+ },
+ "mebit-din-f1-56": {
+  "t": "din-zekat",
+  "a": "A",
+  "o": 150056,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Zenginlerin malının bir kısmını paylaşması dünya malına aşırı bağlanmayı önler, iç huzuru artırır.</li><li>Toplumsal birlikteliği güçlendirir, gelir dağılımını dengeler, ekonomiye katkı sağlar.</li></ul><b>İstenen</b><p>Söylenemeyecek yargı.</p></div><ol class=\"sv-s\"><li><b>Aşırı ifadeyi bul</b> Metin “dengeler” diyor; “ortadan kaldırır” demiyor.</li></ol><table class=\"sv-c\"><tr class=\"ok\"><td>A</td><td>Ekonomik farkları tamamen ortadan kaldırmak → aşırı yorum. Söylenemez.</td></tr><tr><td>B</td><td>İhtiyaç sahipleriyle paylaşmak → destek. Söylenir.</td></tr><tr><td>C</td><td>Paylaşmak, iç huzur → ahlaki görev bilinci. Söylenir.</td></tr><tr><td>D</td><td>Aşırı bağlanmayı önler → mal hırsını zayıflatır. Söylenir.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Zekât gelir farkını azaltır, dengeler; farkı yok etmez.</div><div class=\"sv-w\"><b>Tuzak:</b> “Dengelemek” ile “ortadan kaldırmak” arasındaki farkı yakala.</div><div class=\"sv-a\">Cevap <b>A</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 56. soru"
+ },
+ "mebit-din-f1-57": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150057,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Panoda Hz. Şuayb için: I. Toplumunu yalnız Allah’a kulluğa çağırdı. II. Kavmine kralları Firavun’un zulmüne karşı sabretmeyi öğütledi. III. Kavmini önceki toplumların başına gelenlerle uyardı.</li></ul><b>İstenen</b><p>Hz. Şuayb’ın tebliğ ettiği mesajlar.</p></div><ol class=\"sv-s\"><li><b>Hz. Şuayb’ı hatırla</b> Medyen halkına gönderildi; tevhide çağırdı, ölçü ve tartıda hileyi yasakladı, Nuh, Hud, Salih ve Lut kavimlerinin başına gelenleri hatırlatarak uyardı.</li></ol><table class=\"sv-c\"><tr><td>I</td><td>Doğru.</td></tr><tr><td>II</td><td>Firavun, Hz. Musa’nın muhatabıdır; Hz. Şuayb’la ilgisi yok.</td></tr><tr><td>III</td><td>Doğru.</td></tr><tr class=\"ok\"><td>B</td><td>I ve III.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Şuayb → Medyen, ölçü-tartı dürüstlüğü. Hz. Musa → Firavun.</div><div class=\"sv-w\"><b>Tuzak:</b> Hz. Musa, Medyen’de Hz. Şuayb’ın yanında kalmıştır; bu bağlantı II’yi doğru sandırabilir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 57. soru"
+ },
+ "mebit-din-f1-58": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150058,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Medyen ticaret yolu üzerindeydi; halk alışverişte hileyi olağan sayıyordu.</li><li>Hz. Şuayb kulluğa ve ölçü-tartıda dürüstlüğe çağırınca, haksız kazançlarını kaybetmek istemeyen Medyenliler çağrıyı reddetti.</li></ul><b>İstenen</b><p>Karşı çıkmalarının nedeni.</p></div><ol class=\"sv-s\"><li><b>Anahtar ifade</b> “Elde ettikleri haksız menfaati kaybetmek istemeyen” → ekonomik çıkar kaygısı.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Konum kaybı kaygısı metinde yok.</td></tr><tr class=\"ok\"><td>B</td><td>Ekonomik çıkarlarının zarar görmesinden endişe → doğru.</td></tr><tr><td>C</td><td>Refah düzeyi bir neden olarak söylenmiyor.</td></tr><tr><td>D</td><td>Ataların inancı metinde geçmiyor.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Hz. Şuayb’ın mücadelesi: tevhit + ticari ahlak (ölçü ve tartıda adalet).</div><div class=\"sv-w\"><b>Tuzak:</b> “Ticaret yolları üzerinde” bilgisi A’yı çekici yapar; ama gerekçe “haksız menfaat”tir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 58. soru"
+ },
+ "mebit-din-f1-59": {
+  "t": "din-zekat",
+  "a": "B",
+  "o": 150059,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Maun suresinde: ibadetleri samimiyetle yapmak, yardımlaşmak ve başkalarını teşvik etmek, küçük yardımları bile esirgememek.</li></ul><b>İstenen</b><p>Surede verilen mesajlardan olmayan.</p></div><ol class=\"sv-s\"><li><b>Mesajları eşleştir</b> Teşvik → A. Samimiyet, riyadan uzaklık → C. Küçük yardımlar → D.</li><li><b>Fazlalık</b> Şükür surede vurgulanmaz.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>“Yoksulu doyurmaya teşvik” → duyarlılığı yaymak. Var.</td></tr><tr class=\"ok\"><td>B</td><td>Nimetlere şükür Maun’da geçmez. Mesajlardan değil.</td></tr><tr><td>C</td><td>Gösteriş yapan namaz kılanlar eleştirilir → samimiyet. Var.</td></tr><tr><td>D</td><td>“Hayra (küçük yardımlara) engel olurlar” → cömertlik. Var.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Maun = “hayır, yardım, küçük eşya”. Sure; yetimi itenleri, yoksulu doyurmaya teşvik etmeyenleri, riyakârları eleştirir.</div><div class=\"sv-w\"><b>Tuzak:</b> Şükür de güzel bir kavramdır; ama Maun’un konuları yardım ve samimiyettir.</div><div class=\"sv-a\">Cevap <b>B</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 59. soru"
+ },
+ "mebit-din-f1-60": {
+  "t": "din-zekat",
+  "a": "C",
+  "o": 150060,
+  "s": "<div class=\"sv\"><div class=\"sv-g\"><b>Verilen</b><ul><li>Maun suresi: dini yalanlayan yetimi iter, yoksulu doyurmaya teşvik etmez; namazlarının özünden uzak olanlar gösteriş yapar, hayra engel olur.</li><li>Açıklamalar: ahireti yok sayanlar eleştirilir; inanç-davranış tutarlı olmalı; ibadet samimi olmalı; Rabbe karşı görevler kadar çevreye karşı görevler de önemlidir.</li></ul><b>İstenen</b><p>Ulaşılamayan yargı.</p></div><ol class=\"sv-s\"><li><b>Son açıklamaya dikkat et</b> “Rabbiyle ilişkisi <b>kadar</b> çevresine karşı yükümlülükleri de önem taşır” → ikisi eşit önemde.</li></ol><table class=\"sv-c\"><tr><td>A</td><td>Samimiyet → ulaşılır.</td></tr><tr><td>B</td><td>Yetim, yoksul → sosyal sorumluluk dinin parçası → ulaşılır.</td></tr><tr class=\"ok\"><td>C</td><td>Bireysel ibadeti toplumsal görevden üstün tutmak → tabloya ters. Ulaşılamaz.</td></tr><tr><td>D</td><td>İnanç-davranış tutarlılığı → ulaşılır.</td></tr></table><div class=\"sv-t\"><b>Püf nokta:</b> Maun’da namaz kıldığı hâlde yardımı engelleyen kişi eleştirilir: ibadet ile sosyal sorumluluk birbirinden ayrılmaz.</div><div class=\"sv-w\"><b>Tuzak:</b> “Kadar” sözcüğü eşitlik bildirir; C bir üstünlük sıralaması yapıyor.</div><div class=\"sv-a\">Cevap <b>C</b></div></div>",
+  "lb": "MEB Tekrar Fasikülü 1 · 60. soru"
  }
 });

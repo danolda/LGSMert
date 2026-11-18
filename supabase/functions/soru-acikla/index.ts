@@ -52,7 +52,7 @@ Görevin: aşağıdaki soruyu ADIM ADIM, görsel ve etkileşimli bir mini ders o
 - Dil: sade, samimi Türkçe; öğrenciye "sen" diye hitap et. Kısa cümleler. Terimleri ilk geçtiği yerde bir cümleyle açıkla.
 - Verilen resmî doğru cevap KESİNLİKLE doğrudur; çözümün o şıkka varmalı. Başka bir şıkkı doğru gösterme.
 - Sorunun görseli verildiyse önce görseli dikkatle oku (metin, tablo, grafik, şekil, şıklar); soruda ne verildiğini ve ne istendiğini kendi cümlelerinle özetle.
-- Adımlar: 1) Soruyu anlayalım (verilen / istenen), 2..n) çözüm adımları (her adımda tek fikir), sonra şıkların tek tek değerlendirilmesi (doğru şık neden doğru, yanlışlar neden yanlış — kısa), en son "Akılda kalsın" özeti (1-3 madde: püf nokta / tuzak). Toplam 5-9 adım.
+- Adımlar: 1) Soruyu anlayalım (verilen / istenen), 2..n) çözüm adımları (her adımda tek fikir), sonra şıkların tek tek değerlendirilmesi (doğru şık neden doğru, yanlışlar neden yanlış — kısa), en son "Akılda kalsın" özeti (1-3 madde: püf nokta / tuzak). Toplam 5-7 adım.
 - Öğrencinin işaretlediği şık verildiyse ve yanlışsa, o şıkkı neden seçmiş olabileceğini ve hatanın nerede olduğunu nazikçe açıkla.
 - ÖĞRENCİNİN NOTU verildiyse ve içinde bir soru, takılma ya da hatalı bir düşünce varsa: ayrı bir "🧩 Takıldığın yer" adımı ekle; notunu kısaca alıntıla, yanlış düşünceyi düzelt, doğru yolu göster. Not boşsa ya da anlamsızsa bu adımı ekleme.
 - Matematik/fen ifadeleri için LaTeX, $…$, \\frac, MathJax KULLANMA. Düz metin ve HTML kullan: × ÷ − ± √ ² ³ ≤ ≥ ≠ π °, <sup>, <sub>, kesir için küçük bir CSS kesir kutusu (pay üstte, çizgi, payda altta).
@@ -66,7 +66,7 @@ TEKNİK KURALLAR (çok önemli)
 - Üstte başlık ve "Adım 2 / 7" gibi ilerleme çubuğu; ekranda aynı anda TEK adım; altta sabit "◀ Önceki adım" ve "Sonraki adım ▶" düğmeleri (ilk adımda Önceki pasif, son adımda Sonraki yerine "Baştan izle"). Adım değişince yumuşak geçiş animasyonu. Klavye ok tuşları da çalışsın.
 - Her adımda mümkünse görsel kullan: SVG çizim (şekil, sayı doğrusu, grafik, tablo, deney düzeneği, harita, akış oku), CSS/SVG animasyonu (adım açılınca çizilen çizgiler, beliren etiketler, hareket eden nesneler, vurgulanan sayılar). En az 2 adımda bir etkileşim olsun: kaydırıcı (input range) ile değer değiştirip sonucu canlı görmek, "İpucunu göster" ile açılan kutu, şıklara dokununca neden doğru/yanlış olduğunu gösteren kart, sürükle-bırak yerine dokun-seç vb.
 - JavaScript sade ve hatasız olsun (ES2017, tüm öğeler DOMContentLoaded'dan sonra seçilsin, null kontrolü). Konsola hata düşmemeli. alert/confirm/prompt kullanma.
-- Toplam boyut 60 KB'ı geçmesin.
+- KISA TUT: toplam boyut 25 KB'ı geçmesin; 5-7 adım; CSS ve JS'yi tekrarsız, kompakt yaz (yorum satırı yok). Hızlı yanıt önemli.
 - Yanıtına açıklama yazma; yalnızca \`\`\`html ile başlayan tek bir kod bloğu ver.`;
 
 function extractHtml(t: string): string {
@@ -122,28 +122,46 @@ ${note ? `\nÖĞRENCİNİN NOTU (nereye takıldığı): "${note}"\nBu notta bir 
 \nŞimdi HTML'yi yaz.` });
   const contents = [{ role: "user", parts }];
 
-  let r: Response | null = null, t = "", used = MODELS[0];
-  const T0 = Date.now(), BUDGET = 135_000;     // edge function duvar saati ~150 sn
-  for (const MODEL of MODELS) {
-    used = MODEL;
-    for (let att = 0; att < 3; att++) {
-      const left = BUDGET - (Date.now() - T0);
-      if (left < 25_000) break;
-      const gc: any = { maxOutputTokens: 32768 };   // Gemini 4: temperature gönderilmez
-      if (/^gemini-[34]/.test(MODEL)) gc.thinkingConfig = { thinkingLevel: "medium" };
-      r = await fetch(
+  // Hızlı yanıt: Hydrogen (düşünme low) başlar; 70 sn'de bitmezse ya da hata verirse 3.8 Flash paralel başlar,
+  // önce biten kazanır. Toplam bütçe 140 sn (edge function duvar saati ~150 sn).
+  const T0 = Date.now(), BUDGET = 140_000, HEDGE = 70_000;
+  const ctl = new AbortController();
+  const kill = setTimeout(() => ctl.abort(), BUDGET);
+  type Res = { model: string; status: number; text: string };
+  const run = async (MODEL: string): Promise<Res> => {
+    for (let att = 0; att < 2; att++) {
+      const gc: any = { maxOutputTokens: 24000, thinkingConfig: { thinkingLevel: "low" } };
+      const r = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
         { method: "POST", headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-          body: JSON.stringify({ contents, generationConfig: gc }), signal: AbortSignal.timeout(left) },
-      ).catch((e) => new Response(String(e), { status: String(e).includes("imeout") ? 504 : 503 }));
-      t = await r.text();
-      if (r.ok) break;
-      if ((r.status === 503 || r.status === 500) && BUDGET - (Date.now() - T0) > 60_000) { await new Promise((z) => setTimeout(z, 1500 * (att + 1))); continue; }
-      break;
+          body: JSON.stringify({ contents, generationConfig: gc }), signal: ctl.signal },
+      ).catch((e) => new Response(String(e), { status: ctl.signal.aborted ? 504 : 503 }));
+      const text = await r.text().catch(() => "");
+      if ((r.status === 503 || r.status === 500) && BUDGET - (Date.now() - T0) > 60_000) { await new Promise((z) => setTimeout(z, 2000)); continue; }
+      return { model: MODEL, status: r.status, text };
     }
-    if (r && r.ok) break;
-    if (r && ![404, 429, 500, 503].includes(r.status)) break;
-  }
+    return { model: MODEL, status: 503, text: "" };
+  };
+  const results: Res[] = [];
+  const win: Res | null = await new Promise((done) => {
+    let started = 0, finished = 0, settled = false, hedge: number | undefined;
+    const start = (m: string) => {
+      started++;
+      run(m).then((x) => {
+        finished++; results.push(x);
+        if (settled) return;
+        if (x.status === 200) { settled = true; done(x); return; }
+        if (m === MODELS[0] && started < 2) { clearTimeout(hedge); start(MODELS[1]); return; }
+        if (finished >= started) { settled = true; done(null); }
+      });
+    };
+    start(MODELS[0]);
+    hedge = setTimeout(() => { if (!settled && started < 2) start(MODELS[1]); }, HEDGE);
+  });
+  clearTimeout(kill); ctl.abort();
+  const pickRes = win || results.find((x) => x.status === 429) || results.find((x) => x.status === 504) || results[results.length - 1] || null;
+  const r = pickRes ? new Response(null, { status: pickRes.status === 200 ? 200 : pickRes.status }) : null;
+  const t = pickRes ? pickRes.text : "", used = pickRes ? pickRes.model : MODELS[0];
   const ms = Date.now() - T0;
   if (!r) return json({ error: "busy", retry_after: 15 }, 503);
   if (!r.ok && r.status === 429) return json({ error: "quota", status: 429, detail: t.slice(0, 300) }, 503);
