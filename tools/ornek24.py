@@ -3,7 +3,7 @@
 kullanım: python3 tools/ornek24.py [--img] [--q 55]
   Kaynak: /workspace/work/ornek24 (README.md: indirme, filigran temizleme, kırpma, akıtma, elle yerleşim, konu)
           meta/questions.json (id, ders, set, tur, no, a resmî cevap, lb), topic/final.json, görsel: fix/<id>.png varsa o, yoksa rf/<id>.png
-  Çıktı : data/meb/ornek24-<ders>.js  (LGS.addMeb: t konu, a resmî cevap, o sıra 150000+set*100+no, lb etiket; çözüm yok)
+  Çıktı : data/meb/ornek24-<ders>.js  (LGS.addMeb: t konu, a resmî cevap, o sıra 150000+set*100+no, lb etiket; s site için yazılan çözüm, yeniden üretimde korunur)
           data/meb/ornek24.js         (LGS.ornek24: set → {soz:[[id,konu]…25], say:[[id,konu]…20]})
           --img: img/meb/<id>.webp    (WebP q55, renksiz görseller gri)
   data/index.js: ornek24Subj elle eklendi; xpMax farka göre (soru başı 80) bu betik günceller."""
@@ -31,6 +31,17 @@ def enc(i):
     return os.path.getsize(p)
 
 
+def keep_sol(f, o):
+    """Mevcut dosyadaki adım adım çözümleri (s) yeni üretilen kayıtlara taşır; yeniden üretim çözümleri silmez."""
+    if not os.path.exists(f):
+        return
+    t = open(f, encoding='utf8').read()
+    old = json.loads(t[t.index('LGS.addMeb(') + 11:t.rindex(');')])
+    for k, v in o.items():
+        if old.get(k, {}).get('s'):
+            v['s'] = old[k]['s']
+
+
 def main():
     qs = json.load(open(SRC + '/meta/questions.json'))
     tp = json.load(open(SRC + '/topic/final.json'))
@@ -42,7 +53,8 @@ def main():
         f = os.path.join(ROOT, 'data/meb/ornek24-%s.js' % d)
         if os.path.exists(f):
             prev += len(re.findall(r'"ornek24-[a-z]+-s\d-\d+":', open(f, encoding='utf8').read()))
-        open(f, 'w', encoding='utf8').write('/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; çözümler yalnız video) — tools/ornek24.py üretir */\nLGS.addMeb(' + json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('},"', '},\n"') + ');\n')
+            keep_sol(f, o)
+        open(f, 'w', encoding='utf8').write('/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; MEB çözümü yalnız video, adım adım çözümler site için yazıldı) — tools/ornek24.py üretir, mevcut çözümleri korur */\nLGS.addMeb(' + json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('},"', '},\n"') + ');\n')
         print(d, len(o))
     idx = {}
     for s in (1, 2, 3):

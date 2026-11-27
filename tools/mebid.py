@@ -2,7 +2,7 @@
 """MEBİ LGS Denemeleri 2025-26 → site verisi.
 kullanım: python3 tools/mebid.py [--img] [--q 55]
   Kaynak: /workspace/work/mebid/out/questions.json (img: akıtılmış rf/ varsa o), topic/final.json, out/denemeler.json
-  Çıktı : data/meb/mebid-<ders>.js  (LGS.addMeb: t konu, a resmî cevap, o sıra 200000+deneme*100+no, lb etiket; çözüm yok)
+  Çıktı : data/meb/mebid-<ders>.js  (LGS.addMeb: t konu, a resmî cevap, o sıra 200000+deneme*100+no, lb etiket; s site için yazılan çözüm, yeniden üretimde korunur)
           data/meb/mebid.js         (LGS.mebid: deneme → {soz:[[id,konu]…50], say:[[id,konu]…40]})
           --img: img/meb/<id>.webp  (WebP q55, renksiz görseller gri; ort. ~32 KB)
   Sonra data/index.js'te mebidSubj ve xpMax (soru başı 80) elle/otomatik: bu betik xpMax'ı farka göre günceller."""
@@ -25,6 +25,17 @@ def enc(x):
     return os.path.getsize(p)
 
 
+def keep_sol(f, o):
+    """Mevcut dosyadaki adım adım çözümleri (s) yeni üretilen kayıtlara taşır; yeniden üretim çözümleri silmez."""
+    if not os.path.exists(f):
+        return
+    t = open(f, encoding='utf8').read()
+    old = json.loads(t[t.index('LGS.addMeb(') + 11:t.rindex(');')])
+    for k, v in o.items():
+        if old.get(k, {}).get('s'):
+            v['s'] = old[k]['s']
+
+
 def main():
     qs = json.load(open(SRC + '/out/questions.json'))
     tp = json.load(open(SRC + '/topic/final.json'))
@@ -40,7 +51,8 @@ def main():
         f = os.path.join(ROOT, 'data/meb/mebid-%s.js' % d)
         if os.path.exists(f):
             prev += len(re.findall(r'"mebi-[a-z]+-d\d+-\d+":', open(f, encoding='utf8').read()))
-        open(f, 'w', encoding='utf8').write('/* MEBİ LGS Denemeleri 2025-26 (resmî cevap anahtarı; çözüm yayımlanmadı) — tools/mebid.py üretir */\nLGS.addMeb(' + json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('},"', '},\n"') + ');\n')
+            keep_sol(f, o)
+        open(f, 'w', encoding='utf8').write('/* MEBİ LGS Denemeleri 2025-26 (resmî cevap anahtarı; MEB çözüm yayımlamadı, adım adım çözümler site için yazıldı) — tools/mebid.py üretir, mevcut çözümleri korur */\nLGS.addMeb(' + json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('},"', '},\n"') + ');\n')
         print(d, len(o))
     idx = {}
     for k, v in sorted(dn.items(), key=lambda kv: int(kv[0])):
