@@ -1,4 +1,4 @@
-/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; çözümler yalnız video) — tools/ornek24.py üretir */
+/* MEB LGS Örnek Soru Kitapçıkları 2024-25 (resmî cevap anahtarı kitapçıkların son sayfasından; MEB çözümü yalnız video, adım adım çözümler site için yazıldı) — tools/ornek24.py üretir, mevcut çözümleri korur */
 LGS.addMeb({"ornek24-ink-s1-1":{"t":"ink-uyanis","a":"B","o":150101,"lb":"MEB Örnek 2024-25 Kasım · 1. soru"},
 "ornek24-ink-s1-2":{"t":"ink-dispolitika","a":"A","o":150102,"lb":"MEB Örnek 2024-25 Kasım · 2. soru"},
 "ornek24-ink-s1-3":{"t":"ink-destan","a":"D","o":150103,"lb":"MEB Örnek 2024-25 Kasım · 3. soru"},

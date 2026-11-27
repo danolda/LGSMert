@@ -1,4 +1,4 @@
-/* MEBİ LGS Denemeleri 2025-26 (resmî cevap anahtarı; çözüm yayımlanmadı) — tools/mebid.py üretir */
+/* MEBİ LGS Denemeleri 2025-26 (resmî cevap anahtarı; MEB çözüm yayımlamadı, adım adım çözümler site için yazıldı) — tools/mebid.py üretir, mevcut çözümleri korur */
 LGS.addMeb({"mebi-din-d01-1":{"t":"din-kader","a":"B","o":200101,"lb":"MEBİ Deneme 1 · 1. soru"},
 "mebi-din-d01-2":{"t":"din-kader","a":"C","o":200102,"lb":"MEBİ Deneme 1 · 2. soru"},
 "mebi-din-d01-3":{"t":"din-kader","a":"A","o":200103,"lb":"MEBİ Deneme 1 · 3. soru"},
